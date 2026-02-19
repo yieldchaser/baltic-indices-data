@@ -188,26 +188,19 @@ def process_etf(df, etf_code, output_file):
             'Shares': 'Lots',
             'Price': 'Price',
             'MarketValue': 'Market_Value',
-            'Weightings': 'Weightings',
-            'NetAssets': 'Net_Assets',
-            'SharesOutstanding': 'Shares_Outstanding',
-            'CreationUnits': 'Creation_Units',
-            'MoneyMarketFlag': 'Money_Market_Flag'
+            'Weightings': 'Weightings'
         }
         
         etf_df = etf_df.rename(columns=column_mapping)
         
-        # Add metadata
-        etf_df['Last_Updated'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        
-        # Select and reorder columns (keep only relevant ones)
+        # Select ONLY the columns you want (REMOVED Last_Updated)
         desired_cols = ['ETF', 'Date', 'Name', 'Ticker', 'CUSIP', 'Lots', 'Price', 
-                       'Market_Value', 'Weightings', 'Last_Updated']
+                       'Market_Value', 'Weightings']
         available_cols = [c for c in desired_cols if c in etf_df.columns]
         etf_df = etf_df[available_cols]
         
         # Sort holdings
-        print(f"  Sorting holdings (by category and month)...")
+        print(f"  Sorting holdings...")
         etf_df = sort_holdings(etf_df, etf_code)
         
         # Save to CSV
