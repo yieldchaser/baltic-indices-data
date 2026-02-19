@@ -193,8 +193,8 @@ def process_etf(df, etf_code, output_file):
         
         etf_df = etf_df.rename(columns=column_mapping)
         
-        # Select ONLY the columns you want (REMOVED Last_Updated)
-        desired_cols = ['ETF', 'Date', 'Name', 'Ticker', 'CUSIP', 'Lots', 'Price', 
+        # Select ONLY the columns you want
+        desired_cols = ['Name', 'Ticker', 'CUSIP', 'Lots', 'Price', 
                        'Market_Value', 'Weightings']
         available_cols = [c for c in desired_cols if c in etf_df.columns]
         etf_df = etf_df[available_cols]
