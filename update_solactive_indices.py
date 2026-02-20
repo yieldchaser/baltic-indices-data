@@ -1,109 +1,145 @@
-import requests
-from bs4 import BeautifulSoup
-import re
+import pandas as pd
 from datetime import datetime
+import json
+import re
 
-# Test URLs
-urls = {
-    'BDRY': 'https://www.solactive.com/Indices/?index=DE000SLA4BY3',
-    'BWET': 'https://www.solactive.com/Indices/?index=DE000SL0HLG3'
+# For Selenium
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+# Indices to scrape
+INDICES = {
+    'BDRY': {
+        'url': 'https://www.solactive.com/Indices/?index=DE000SLA4BY3',
+        'output': 'solactive_bdry.csv'
+    },
+    'BWET': {
+        'url': 'https://www.solactive.com/Indices/?index=DE000SL0HLG3',
+        'output': 'solactive_bwet.csv'
+    }
 }
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-}
-
-def test_scrape(name, url):
-    print(f"\n{'='*60}")
-    print(f"Testing {name}: {url}")
-    print('='*60)
+def setup_driver():
+    """Setup headless Chrome driver"""
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--window-size=1920,1080')
+    chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
     
+    # For GitHub Actions
     try:
-        response = requests.get(url, headers=headers, timeout=30)
-        print(f"Status Code: {response.status_code}")
-        print(f"Content Length: {len(response.text)} characters")
+        driver = webdriver.Chrome(options=chrome_options)
+    except:
+        # Try with chromedriver path for Linux
+        service = Service('/usr/bin/chromedriver')
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+    
+    return driver
+
+def scrape_index(name, config):
+    """Scrape index data using Selenium"""
+    driver = None
+    try:
+        print(f"\nProcessing {name}...")
+        driver = setup_driver()
         
-        soup = BeautifulSoup(response.content, 'html.parser')
-        page_text = soup.get_text()
+        # Load page
+        driver.get(config['url'])
         
-        # Check if CURRENT QUOTES exists
-        if 'CURRENT QUOTES' not in page_text:
-            print("✗ 'CURRENT QUOTES' not found in page")
-            return False
+        # Wait for CURRENT QUOTES section to load
+        wait = WebDriverWait(driver, 10)
         
-        print("✓ Found 'CURRENT QUOTES' section")
+        # Try to find the CURRENT QUOTES heading or data
+        try:
+            # Wait for any of these elements
+            wait.until(EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'CURRENT QUOTES')]")))
+        except:
+            print(f"  Warning: CURRENT QUOTES not found, continuing anyway...")
         
-        # Extract snippet around CURRENT QUOTES
-        idx = page_text.find('CURRENT QUOTES')
-        snippet = page_text[idx:idx+1000]
+        # Get page source after JavaScript execution
+        page_source = driver.page_source
         
-        print(f"\n--- Raw Snippet ---\n{snippet}\n--- End Snippet ---\n")
-        
-        # Try to extract values
-        data = {}
+        # Parse with regex
+        data = {
+            'Index': name,
+            'Last_Updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        }
         
         # Last quote (format: "Last quote (19 Feb 2026): 2376.36")
-        match = re.search(r'Last quote\s*\(([^)]+)\):\s*([\d.,]+)', snippet)
+        match = re.search(r'Last quote\s*\(([^)]+)\):\s*([\d.,]+)', page_source)
         if match:
             data['Last_Quote_Date'] = match.group(1).strip()
-            data['Last_Quote_Value'] = match.group(2).strip()
-            print(f"✓ Last Quote: {data['Last_Quote_Date']} = {data['Last_Quote_Value']}")
+            data['Last_Quote_Value'] = float(match.group(2).replace(',', ''))
+            print(f"  ✓ Last Quote: {data['Last_Quote_Value']}")
         else:
-            print("✗ Could not parse Last quote")
+            print(f"  ✗ Last Quote not found")
         
-        # Day range (format: "Day range: 2376.36 / 2384.78")
-        match = re.search(r'Day range:\s*([\d.,]+)\s*/\s*([\d.,]+)', snippet)
+        # Day range
+        match = re.search(r'Day range:\s*([\d.,]+)\s*/\s*([\d.,]+)', page_source)
         if match:
-            data['Day_Range'] = f"{match.group(1)} / {match.group(2)}"
-            print(f"✓ Day Range: {data['Day_Range']}")
+            data['Day_Range_Low'] = float(match.group(1).replace(',', ''))
+            data['Day_Range_High'] = float(match.group(2).replace(',', ''))
+            print(f"  ✓ Day Range: {data['Day_Range_Low']} / {data['Day_Range_High']}")
         else:
-            print("✗ Could not parse Day range")
+            print(f"  ✗ Day Range not found")
         
-        # Change abs./rel. (format: "Change abs./rel.: -0.32 / -0.01%" or "191.58 / 7.43%")
-        match = re.search(r'Change abs\./rel\.:\s*([-\d.,]+)\s*/\s*([-\d.,]+)%?', snippet)
+        # Change abs./rel.
+        match = re.search(r'Change abs\./rel\.:\s*([-\d.,]+)\s*/\s*([-\d.,]+)%?', page_source)
         if match:
-            data['Change_Abs'] = match.group(1).strip()
-            data['Change_Rel'] = match.group(2).strip()
-            print(f"✓ Change: {data['Change_Abs']} / {data['Change_Rel']}%")
+            data['Change_Abs'] = float(match.group(1).replace(',', ''))
+            data['Change_Rel'] = float(match.group(2).replace(',', ''))
+            print(f"  ✓ Change: {data['Change_Abs']} / {data['Change_Rel']}%")
         else:
-            print("✗ Could not parse Change abs./rel.")
+            print(f"  ✗ Change not found")
         
-        # Year range (format: "Year range: 1333.82 / 2384.78")
-        match = re.search(r'Year range:\s*([\d.,]+)\s*/\s*([\d.,]+)', snippet)
+        # Year range
+        match = re.search(r'Year range:\s*([\d.,]+)\s*/\s*([\d.,]+)', page_source)
         if match:
-            data['Year_Range'] = f"{match.group(1)} / {match.group(2)}"
-            print(f"✓ Year Range: {data['Year_Range']}")
+            data['Year_Range_Low'] = float(match.group(1).replace(',', ''))
+            data['Year_Range_High'] = float(match.group(2).replace(',', ''))
+            print(f"  ✓ Year Range: {data['Year_Range_Low']} / {data['Year_Range_High']}")
         else:
-            print("✗ Could not parse Year range")
+            print(f"  ✗ Year Range not found")
         
-        return len(data) > 0
+        # Save to CSV
+        df = pd.DataFrame([data])
+        df.to_csv(config['output'], index=False)
+        print(f"  ✓ Saved to {config['output']}")
+        
+        return True
         
     except Exception as e:
-        print(f"✗ Error: {str(e)}")
+        print(f"  ✗ Error: {str(e)}")
         import traceback
         traceback.print_exc()
         return False
+    finally:
+        if driver:
+            driver.quit()
 
 def main():
-    print(f"Solactive Index Scraper Test")
+    print(f"Starting Solactive Indices Update")
     print(f"Time: {datetime.now()}")
+    print("=" * 60)
     
-    results = {}
-    for name, url in urls.items():
-        results[name] = test_scrape(name, url)
+    success_count = 0
+    for name, config in INDICES.items():
+        if scrape_index(name, config):
+            success_count += 1
     
-    print(f"\n{'='*60}")
-    print("SUMMARY")
-    print('='*60)
-    for name, success in results.items():
-        status = "✓ SUCCESS" if success else "✗ FAILED"
-        print(f"{name}: {status}")
+    print("\n" + "=" * 60)
+    print(f"Completed: {success_count}/{len(INDICES)} indices updated")
     
-    if all(results.values()):
-        print("\n🎉 All tests passed! Ready to deploy to GitHub.")
-    else:
-        print("\n⚠️  Some tests failed. Check the output above.")
+    if success_count < len(INDICES):
+        return 1
+    return 0
 
 if __name__ == "__main__":
-    main()
+    exit(main())
