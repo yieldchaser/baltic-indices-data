@@ -2,7 +2,7 @@ name: Solactive Indices Update
 
 on:
   schedule:
-    - cron: '30 6 * * *'  # 6:30 AM UTC, Every Day
+    - cron: '0 6 * * 1-5'  # 6:00 AM UTC, Monday-Friday
   workflow_dispatch:  # Manual trigger
 
 permissions:
@@ -21,9 +21,14 @@ jobs:
       with:
         python-version: '3.11'
         
-    - name: Install dependencies
+    - name: Install Python dependencies
       run: |
-        pip install requests beautifulsoup4 pandas
+        pip install pandas selenium
+        
+    - name: Install Chrome and ChromeDriver
+      uses: browser-actions/setup-chrome@v1
+      with:
+        chrome-version: stable
         
     - name: Run Solactive scraper
       run: python update_solactive_indices.py
