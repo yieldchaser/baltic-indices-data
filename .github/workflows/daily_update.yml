@@ -2,7 +2,8 @@ name: Daily Baltic Index Update
 
 on:
   schedule:
-    - cron: '0 14,19 * * *'  # 2 PM UTC (after BDI ~12:00 UTC publish) and 7 PM UTC
+    - cron: '30 10 * * *'    # 10:30 UTC — catches index updates
+    - cron: '0 14,19,22 * * *'  # 2 PM, 7 PM UTC (BDI), 10 PM UTC (after Solactive/Amplify update)
   workflow_dispatch:
 
 permissions:
@@ -36,6 +37,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add bdiy_historical.csv cape_historical.csv panama_historical.csv suprama_historical.csv cleantanker_historical.csv dirtytanker_historical.csv
+        git add bdiy_historical.csv cape_historical.csv panama_historical.csv suprama_historical.csv cleantanker_historical.csv dirtytanker_historical.csv bdryff_history.csv bwetff_history.csv BDRY_Daily.csv BWET_Daily.csv
         git diff --quiet && git diff --staged --quiet || git commit -m "Update indices $(date +'%Y-%m-%d %H:%M UTC')"
         git push
