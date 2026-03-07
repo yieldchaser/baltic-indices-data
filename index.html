@@ -3953,7 +3953,7 @@ function rebuildYDHistChart(productKey) {
   var labels = rows.map(function(r){ return r.date.toISOString().split('T')[0]; });
   var values = rows.map(function(r){ return r[productKey]; });
 
-  // Rolling avg — O(n) prefix sum approach (replaces O(n²) slice+reduce)
+  // Rolling avg — O(n) prefix sum approach computed at FULL resolution
   var winDays = _ydHistAvgWindow > 0 ? _ydHistAvgWindow * 252 : values.length;
   var pSum = [0], pCnt = [0];
   for (var pi = 0; pi < values.length; pi++) {
@@ -3965,6 +3965,25 @@ function rebuildYDHistChart(productKey) {
     var cnt = pCnt[i+1] - pCnt[st];
     return cnt > 0 ? (pSum[i+1] - pSum[st]) / cnt : null;
   });
+
+  // Display decimation — only reduce points fed to Chart.js, never the underlying data.
+  // Step=1 (no decimation) when range is <= 800 points (~3 years).
+  // At full history (~4500 points) step≈8, giving ~560 real data points to paint.
+  // Download button always uses the full-resolution arrays (rows/labels/values/rollingAvg).
+  var DISPLAY_TARGET = 600;
+  var step = Math.max(1, Math.round(rows.length / DISPLAY_TARGET));
+  var dispLabels = [], dispValues = [], dispAvg = [];
+  for (var di = 0; di < rows.length; di += step) {
+    dispLabels.push(labels[di]);
+    dispValues.push(values[di]);
+    dispAvg.push(rollingAvg[di]);
+  }
+  // Always include the last point so the line doesn't fall short
+  if (rows.length > 0 && dispLabels[dispLabels.length - 1] !== labels[labels.length - 1]) {
+    dispLabels.push(labels[labels.length - 1]);
+    dispValues.push(values[values.length - 1]);
+    dispAvg.push(rollingAvg[rollingAvg.length - 1]);
+  }
 
   var avgLabel = _ydHistAvgWindow > 0 ? (_ydHistAvgWindow + 'Y Rolling Avg') : 'All-Time Avg';
   var prod = PRODUCTS[productKey];
@@ -3983,9 +4002,9 @@ function rebuildYDHistChart(productKey) {
   if (!canvas) return;
   chartRegistry['yearlyHistChart'] = new Chart(canvas.getContext('2d'), {
     type: 'line',
-    data: { labels: labels, datasets: [
-      { label: prod.label,  data: values,     borderColor: prod.color,  backgroundColor: prod.color + '33', borderWidth: 1.5, pointRadius: 0, fill: true,  tension: 0.1, hidden: histHiddenByLabel[prod.label] || false },
-      { label: avgLabel,    data: rollingAvg, borderColor: '#e3b341',   backgroundColor: 'transparent',     borderWidth: 1.5, borderDash: [5,3], pointRadius: 0, fill: false, tension: 0.1, hidden: histHiddenByLabel[avgLabel] || false },
+    data: { labels: dispLabels, datasets: [
+      { label: prod.label,  data: dispValues, borderColor: prod.color,  backgroundColor: prod.color + '33', borderWidth: 1.5, pointRadius: 0, fill: true,  tension: 0.1, hidden: histHiddenByLabel[prod.label] || false },
+      { label: avgLabel,    data: dispAvg,    borderColor: '#e3b341',   backgroundColor: 'transparent',     borderWidth: 1.5, borderDash: [5,3], pointRadius: 0, fill: false, tension: 0.1, hidden: histHiddenByLabel[avgLabel] || false },
     ]},
     options: {
       responsive: true, maintainAspectRatio: false,
@@ -3995,13 +4014,13 @@ function rebuildYDHistChart(productKey) {
         tooltip: { callbacks: { label: function(c){ return ' ' + c.dataset.label + ': ' + fmt(c.parsed.y); } } }
       },
       scales: {
-        x: { grid: { color: '#151a22' }, ticks: { maxTicksLimit: 10, font: { size: 11 }, callback: function(_, i){ return labels[i] ? labels[i].slice(0,7) : ''; } } },
+        x: { grid: { color: '#151a22' }, ticks: { maxTicksLimit: 10, font: { size: 11 }, callback: function(_, i){ return dispLabels[i] ? dispLabels[i].slice(0,7) : ''; } } },
         y: { grid: { color: '#151a22' }, ticks: { font: { size: 11 }, callback: function(v){ return fmt(v); } } },
       },
     },
   });
 
-  // Wire download button
+  // Download always uses full-resolution data — decimation is display-only
   var btn = document.getElementById('ydHistDlBtn');
   if (btn) btn.onclick = function() {
     downloadCSV('hist_' + productKey + '.csv', ['Date', prod.label, avgLabel],
