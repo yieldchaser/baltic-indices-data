@@ -1,9 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, date, timedelta
 import os
 import time
+
+try:
+    import holidays as _holidays_lib
+    _HAS_HOLIDAYS = True
+except ImportError:
+    _HAS_HOLIDAYS = False
+    print("WARNING: 'holidays' library not installed — expiry skipping disabled. Run: pip install holidays")
 
 # Index mapping: URL code → filename
 INDEXES = {
@@ -219,6 +226,34 @@ def update_amplify_csv(filename, latest_row):
 
 # ── SGX FFA FUTURES ───────────────────────────────────────────────────────────
 
+def get_expiry(month, year):
+    """
+    Return the last UK business day for a given month/year.
+    For December: last UK business day on or before Dec 24
+    (Baltic Exchange stops publishing Dec 25-31).
+    Returns a datetime.date object.
+    """
+    if month == 12:
+        d = date(year, 12, 24)
+    else:
+        # Last calendar day of month
+        if month == 12:
+            d = date(year, 12, 31)
+        else:
+            d = date(year, month + 1, 1) - timedelta(days=1)
+
+    # Walk back to last UK business day
+    if _HAS_HOLIDAYS:
+        uk_hols = _holidays_lib.UnitedKingdom(years=year)
+        while d.weekday() >= 5 or d in uk_hols:
+            d -= timedelta(days=1)
+    else:
+        # Fallback: weekdays only (no holiday check)
+        while d.weekday() >= 5:
+            d -= timedelta(days=1)
+    return d
+
+
 SGX_PRODUCTS = {
     'CWF': 'sgx_cape_futures.csv',
     'PWF': 'sgx_panamax_futures.csv',
@@ -251,15 +286,19 @@ def generate_sgx_tickers(product_code):
     """
     Generate all possible tickers from current month to Dec 2032.
     e.g. CWF + J + 26 = CWFJ26 (Capesize Apr 2026)
+    Returns list of (ticker, month_num, year, month_name, expiry_date_str)
     """
     now = datetime.now()
+    today = date.today()
     tickers = []
     for year in range(now.year, 2033):
         year2 = str(year)[-2:]
         for code, (month_num, month_name) in CME_MONTHS.items():
             if year == now.year and month_num < now.month:
                 continue
-            tickers.append((f"{product_code}{code}{year2}", month_num, year, month_name))
+            expiry = get_expiry(month_num, year)
+            expiry_str = expiry.strftime('%d-%m-%Y')
+            tickers.append((f"{product_code}{code}{year2}", month_num, year, month_name, expiry_str, expiry))
     return tickers
 
 
@@ -291,20 +330,31 @@ def fetch_sgx_latest(ticker):
 def update_sgx_csv(filename, product_code):
     """
     Fetch latest price for all active contracts and append new rows to CSV.
-    CSV schema: contract, expiry_month, expiry_year, date, price, volume
-    A contract is 'active' if the API returns any data for it.
+    CSV schema: contract, expiry_month, expiry_year, date, price, volume, expiry_date
+    A contract is 'active' if today <= expiry date AND the API returns data for it.
     """
+    today = date.today()
+
     if os.path.exists(filename):
         existing = pd.read_csv(filename)
         existing['date'] = pd.to_datetime(existing['date'], format='%d-%m-%Y')
+        # Back-fill expiry_date column if it was added after initial creation
+        if 'expiry_date' not in existing.columns:
+            existing['expiry_date'] = ''
     else:
-        existing = pd.DataFrame(columns=['contract','expiry_month','expiry_year','date','price','volume'])
+        existing = pd.DataFrame(columns=['contract','expiry_month','expiry_year','date','price','volume','expiry_date'])
 
     tickers = generate_sgx_tickers(product_code)
     new_rows = []
     active_count = 0
+    skipped_expired = 0
 
-    for ticker, month_num, year, month_name in tickers:
+    for ticker, month_num, year, month_name, expiry_str, expiry_date in tickers:
+        # Skip contracts that have already expired
+        if today > expiry_date:
+            skipped_expired += 1
+            continue
+
         result = fetch_sgx_latest(ticker)
         if result is None:
             continue  # not active — skip silently
@@ -327,9 +377,13 @@ def update_sgx_csv(filename, product_code):
             'date':         date_str,
             'price':        price,
             'volume':       volume,
+            'expiry_date':  expiry_str,
         })
-        print(f"  {ticker} ({month_name} {year}): {price}  vol={volume}")
+        print(f"  {ticker} ({month_name} {year}, exp {expiry_str}): {price}  vol={volume}")
         time.sleep(0.15)  # polite delay between calls
+
+    if skipped_expired:
+        print(f"  Skipped {skipped_expired} already-expired contracts")
 
     if new_rows:
         new_df = pd.DataFrame(new_rows)
