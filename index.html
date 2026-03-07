@@ -2154,10 +2154,15 @@ function renderDashboard(productKey) {
   }
 
   renderOverlayChart(productKey);
-  renderDrawdownChart(productKey);
-  renderYearlyPerfTable(productKey);
-  renderCorrMatrix(currentCorrTimeframe);
-  renderRecentChanges(productKey);
+  var dashCharts = [
+    function(){ renderDrawdownChart(productKey); },
+    function(){ renderYearlyPerfTable(productKey); },
+    function(){ renderCorrMatrix(currentCorrTimeframe); },
+    function(){ renderRecentChanges(productKey); },
+  ];
+  dashCharts.forEach(function(fn, i){
+    setTimeout(function(){ try { fn(); } catch(e) { console.error('[Dashboard]', e); } }, i * 16);
+  });
 }
 
 // =====================================================================
@@ -2747,17 +2752,23 @@ function downloadMonthlyHeatmap(productKey) {
 // QUARTERLY TAB
 // =====================================================================
 function renderQuarterlyTab(productKey) {
-  renderWinRateCards(productKey);
-  renderQuarterlyHeatmap(productKey);
-  renderSpaghettiChart(productKey);
-  renderQDAreaComp1(productKey);
-  renderQDTrend(productKey);
-  renderQDBarChart(productKey);
-  renderQDAreaComp2(productKey);
-  renderQDDataGrid(productKey);
-
+  // Wire download buttons immediately — no dependency on chart render
   document.getElementById('quarterlyDlBtn').onclick = () => downloadQuarterlyHeatmapCSV(productKey);
   document.getElementById('quarterlyHeatmapDlBtn').onclick = () => downloadQuarterlyHeatmapCSV(productKey);
+
+  var fns = [
+    function(){ renderWinRateCards(productKey); },
+    function(){ renderQuarterlyHeatmap(productKey); },
+    function(){ renderSpaghettiChart(productKey); },
+    function(){ renderQDAreaComp1(productKey); },
+    function(){ renderQDTrend(productKey); },
+    function(){ renderQDBarChart(productKey); },
+    function(){ renderQDAreaComp2(productKey); },
+    function(){ renderQDDataGrid(productKey); },
+  ];
+  fns.forEach(function(fn, i){
+    setTimeout(function(){ try { fn(); } catch(e) { console.error('[QuarterlyTab]', e); } }, i * 16);
+  });
 }
 
 // ---- CHANGE 6: Win-Rate KPI Cards ----
@@ -3859,8 +3870,8 @@ function renderYearlyDash(productKey) {
     function(){ renderYDRatesOverlay('yearlyRatesChart'); },
     function(){ renderYDDrawdown(productKey, 'yearlyDrawdownChart'); },
   ];
-  fns.forEach(function(fn){
-    try { fn(); } catch(e) { console.error('[YearlyDash]', e); }
+  fns.forEach(function(fn, i){
+    setTimeout(function(){ try { fn(); } catch(e) { console.error('[YearlyDash]', e); } }, i * 16);
   });
 }
 
@@ -4295,10 +4306,15 @@ function renderYDDrawdown(productKey, canvasId) {
 // MONTHLY DASHBOARD TAB
 // =====================================================================
 function renderMonthlyDash(productKey) {
-  renderMDBarChart(productKey);
-  renderMDTrendChart(productKey);
-  renderMDAreaComp(productKey);
-  renderMDDataGrid(productKey);
+  var fns = [
+    function(){ renderMDBarChart(productKey); },
+    function(){ renderMDTrendChart(productKey); },
+    function(){ renderMDAreaComp(productKey); },
+    function(){ renderMDDataGrid(productKey); },
+  ];
+  fns.forEach(function(fn, i){
+    setTimeout(function(){ try { fn(); } catch(e) { console.error('[MonthlyDash]', e); } }, i * 16);
+  });
 }
 
 function renderMDBarChart(productKey) {
@@ -4522,8 +4538,8 @@ function renderSignalsTab(productKey) {
     function(){ renderPDZscoreChart(); },
     function(){ renderFFAForwardCurve(); },
   ];
-  fns.forEach(function(fn){
-    try { fn(); } catch(e) { console.error('[SignalsTab]', e); }
+  fns.forEach(function(fn, i){
+    setTimeout(function(){ try { fn(); } catch(e) { console.error('[SignalsTab]', e); } }, i * 16);
   });
 }
 
