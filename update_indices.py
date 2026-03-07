@@ -217,6 +217,132 @@ def update_amplify_csv(filename, latest_row):
     combined.to_csv(filename, index=False)
     print(f"{filename}: Appended {latest_date.date()} → P/D {latest_row['Premium/Discount'].iloc[0]}")
 
+# ── SGX FFA FUTURES ───────────────────────────────────────────────────────────
+
+SGX_PRODUCTS = {
+    'CWF': 'sgx_cape_futures.csv',
+    'PWF': 'sgx_panamax_futures.csv',
+    'SWF': 'sgx_supramax_futures.csv',
+    'HWF': 'sgx_handysize_futures.csv',
+}
+
+# CME month codes → (month_index 1-12, name)
+CME_MONTHS = {
+    'F': (1,  'Jan'), 'G': (2,  'Feb'), 'H': (3,  'Mar'),
+    'J': (4,  'Apr'), 'K': (5,  'May'), 'M': (6,  'Jun'),
+    'N': (7,  'Jul'), 'Q': (8,  'Aug'), 'U': (9,  'Sep'),
+    'V': (10, 'Oct'), 'X': (11, 'Nov'), 'Z': (12, 'Dec'),
+}
+
+SGX_HISTORY_URL = (
+    "https://api.sgx.com/derivatives/v1.0/history/symbol/{ticker}"
+    "?days=5d&category=futures"
+    "&params=base-date%2Ctotal-volume%2Cdaily-settlement-price-abs"
+)
+
+SGX_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+    'Referer': 'https://www.sgx.com/',
+    'Origin': 'https://www.sgx.com',
+}
+
+
+def generate_sgx_tickers(product_code):
+    """
+    Generate all possible tickers from current month to Dec 2032.
+    e.g. CWF + J + 26 = CWFJ26 (Capesize Apr 2026)
+    """
+    now = datetime.now()
+    tickers = []
+    for year in range(now.year, 2033):
+        year2 = str(year)[-2:]
+        for code, (month_num, month_name) in CME_MONTHS.items():
+            if year == now.year and month_num < now.month:
+                continue
+            tickers.append((f"{product_code}{code}{year2}", month_num, year, month_name))
+    return tickers
+
+
+def fetch_sgx_latest(ticker):
+    """
+    Fetch last 5 days for ticker. Returns (date DD-MM-YYYY, price, volume)
+    for the most recent day, or None if contract has no data.
+    """
+    url = SGX_HISTORY_URL.format(ticker=ticker)
+    try:
+        r = requests.get(url, headers=SGX_HEADERS, timeout=20)
+        r.raise_for_status()
+        data = r.json().get('data', [])
+        if not data:
+            return None
+        latest = data[-1]
+        price  = latest.get('daily-settlement-price-abs')
+        volume = latest.get('total-volume')
+        base_date = latest.get('base-date')  # "20260303"
+        if price is None or base_date is None:
+            return None
+        d = datetime.strptime(str(base_date), '%Y%m%d')
+        return d.strftime('%d-%m-%Y'), float(price), float(volume or 0)
+    except Exception as e:
+        print(f"  {ticker}: error — {e}")
+        return None
+
+
+def update_sgx_csv(filename, product_code):
+    """
+    Fetch latest price for all active contracts and append new rows to CSV.
+    CSV schema: contract, expiry_month, expiry_year, date, price, volume
+    A contract is 'active' if the API returns any data for it.
+    """
+    if os.path.exists(filename):
+        existing = pd.read_csv(filename)
+        existing['date'] = pd.to_datetime(existing['date'], format='%d-%m-%Y')
+    else:
+        existing = pd.DataFrame(columns=['contract','expiry_month','expiry_year','date','price','volume'])
+
+    tickers = generate_sgx_tickers(product_code)
+    new_rows = []
+    active_count = 0
+
+    for ticker, month_num, year, month_name in tickers:
+        result = fetch_sgx_latest(ticker)
+        if result is None:
+            continue  # not active — skip silently
+
+        active_count += 1
+        date_str, price, volume = result
+        date_dt = pd.Timestamp(datetime.strptime(date_str, '%d-%m-%Y'))
+
+        already = (
+            not existing.empty and
+            ((existing['contract'] == ticker) & (existing['date'] == date_dt)).any()
+        )
+        if already:
+            continue
+
+        new_rows.append({
+            'contract':     ticker,
+            'expiry_month': f"{month_name} {year}",
+            'expiry_year':  year,
+            'date':         date_str,
+            'price':        price,
+            'volume':       volume,
+        })
+        print(f"  {ticker} ({month_name} {year}): {price}  vol={volume}")
+        time.sleep(0.15)  # polite delay between calls
+
+    if new_rows:
+        new_df = pd.DataFrame(new_rows)
+        combined = pd.concat(
+            [existing.assign(date=existing['date'].dt.strftime('%d-%m-%Y')), new_df],
+            ignore_index=True
+        )
+        combined.to_csv(filename, index=False)
+        print(f"{filename}: +{len(new_rows)} new rows ({active_count} active contracts)")
+    else:
+        print(f"{filename}: nothing new ({active_count} active contracts checked)")
+
+
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -245,6 +371,12 @@ def main():
         print(f"\nProcessing {ticker}...")
         latest = fetch_latest_amplify(ticker)
         update_amplify_csv(filename, latest)
+
+    # New: SGX FFA Futures (Capesize, Panamax, Supramax)
+    print("\n── SGX FFA Futures ──")
+    for product_code, filename in SGX_PRODUCTS.items():
+        print(f"\nProcessing {product_code}...")
+        update_sgx_csv(filename, product_code)
 
     print(f"\nCompleted at {datetime.now()}")
 
