@@ -1882,6 +1882,33 @@ function buildMaster() {
   }
   DATA.byYear = byYear;
 
+  // Per-product trading days — only count days where that product has actual data.
+  // This prevents "foreign" trading days from other products inflating the TD counter.
+  // row[key+'_td'] = the Nth day that specific product had a value in that year.
+  DATA.byYearProduct = {};
+  for (const key of PRODUCT_KEYS) {
+    if (PRODUCTS[key].computed) continue;
+    DATA.byYearProduct[key] = {};
+    for (const row of DATA.master) {
+      if (row[key] == null) continue;
+      if (!DATA.byYearProduct[key][row.year]) DATA.byYearProduct[key][row.year] = [];
+      DATA.byYearProduct[key][row.year].push(row);
+    }
+    for (const year in DATA.byYearProduct[key]) {
+      DATA.byYearProduct[key][year].forEach((row, i) => { row[key + '_td'] = i + 1; });
+    }
+  }
+  // bdry_spot is computed — build its per-product byYear too
+  DATA.byYearProduct['bdry_spot'] = {};
+  for (const row of DATA.master) {
+    if (row.bdry_spot == null) continue;
+    if (!DATA.byYearProduct['bdry_spot'][row.year]) DATA.byYearProduct['bdry_spot'][row.year] = [];
+    DATA.byYearProduct['bdry_spot'][row.year].push(row);
+  }
+  for (const year in DATA.byYearProduct['bdry_spot']) {
+    DATA.byYearProduct['bdry_spot'][year].forEach((row, i) => { row['bdry_spot_td'] = i + 1; });
+  }
+
   for (const row of DATA.master) {
     DATA.masterByDate[row.ts] = row;
   }
@@ -1917,10 +1944,15 @@ function computeStats(productKey) {
   const pctl10y     = percentileRank(vals10y, currentPrice);
   const pctl5y      = percentileRank(vals5y, currentPrice);
 
-  const currentTradingDay = latest.tradingDay;
-  const sameDayVals = DATA.master
-    .filter(r => r.tradingDay === currentTradingDay && r.year < now.getFullYear() && r[productKey] != null)
-    .map(r => r[productKey]);
+  // Use per-product trading day for same-day comparison — avoids pollution from other products' calendars
+  const tdKey = productKey + '_td';
+  const currentTradingDay = latest[tdKey] ?? latest.tradingDay;
+  const sameDayVals = (DATA.byYearProduct[productKey]
+    ? Object.entries(DATA.byYearProduct[productKey])
+        .filter(([y]) => parseInt(y) < now.getFullYear())
+        .flatMap(([, rows]) => rows.filter(r => r[tdKey] === currentTradingDay && r[productKey] != null).map(r => r[productKey]))
+    : DATA.master.filter(r => r.tradingDay === currentTradingDay && r.year < now.getFullYear() && r[productKey] != null).map(r => r[productKey])
+  );
   const allMean   = mean(sameDayVals.length >= 3 ? sameDayVals : allVals);
   const allStdDev = stddev(sameDayVals.length >= 3 ? sameDayVals : allVals);
   const zScore    = allStdDev ? (currentPrice - allMean) / allStdDev : 0;
@@ -2109,16 +2141,18 @@ function buildOverlayChart(productKey) {
   const datasets = [];
   const prod = PRODUCTS[productKey];
 
+  // Use per-product rows so x-axis = this product's own trading days, not master union calendar
+  const prodByYear = (DATA.byYearProduct && DATA.byYearProduct[productKey]) || DATA.byYear;
+
   let maxDays = 0;
   for (const y of [...selectedYears, currentYear]) {
-    const yr = DATA.byYear[y];
+    const yr = prodByYear[y];
     if (yr) maxDays = Math.max(maxDays, yr.length);
   }
   const labels = Array.from({ length: maxDays }, (_, i) => i + 1);
 
-  const curYearRows = DATA.byYear[currentYear] || [];
+  const curYearRows = prodByYear[currentYear] || [];
   const curYearData = curYearRows.map(r => r[productKey] ?? null);
-  // Pad to maxDays so all arrays are same length — trailing nulls end the line cleanly
   while (curYearData.length < maxDays) curYearData.push(null);
   datasets.push({
     label: String(currentYear),
@@ -2135,12 +2169,11 @@ function buildOverlayChart(productKey) {
   const checkboxEls = document.querySelectorAll('#yearCheckboxes input[type=checkbox]');
 
   selectedYears.sort((a, b) => b - a).forEach((y, idx) => {
-    const rows = DATA.byYear[y] || [];
+    const rows = prodByYear[y] || [];
     const checkEl = Array.from(checkboxEls).find(cb => parseInt(cb.value) === y);
     const colorIdx = checkEl ? Array.from(checkboxEls).indexOf(checkEl) : idx;
     const color = YEAR_COLORS[colorIdx % YEAR_COLORS.length];
     const yData = rows.map(r => r[productKey] ?? null);
-    // Pad to maxDays — line ends at last real point, no mid-chart fracture
     while (yData.length < maxDays) yData.push(null);
     datasets.push({
       label: String(y),
@@ -4149,8 +4182,9 @@ function renderYDShippingRates(productKey, canvasId) {
 function renderYDRatesOverlay(canvasId) {
   var cy=new Date().getFullYear(), yrs=4, ops=['ff','bb','77','44'], datasets=[], maxDays=0;
   PRODUCT_KEYS.forEach(function(key){
+    var prodByYear = (DATA.byYearProduct && DATA.byYearProduct[key]) || DATA.byYear;
     for(var yo=0;yo<yrs;yo++){
-      var y=cy-yo, rows=DATA.byYear[y]||[];
+      var y=cy-yo, rows=(prodByYear[y]||[]);
       if(rows.length>maxDays)maxDays=rows.length;
       datasets.push({label:PRODUCTS[key].label.split(' ')[0]+' '+y,
         data:rows.map(function(r){return r[key]!=null?r[key]:null;}),
@@ -4677,39 +4711,48 @@ function renderSeasonalChart(productKey) {
   _currentSeasonalProduct = productKey;
   var prod = PRODUCTS[productKey];
 
-  // Build day-of-year average and stddev across all years
-  // Use trading day of year (1..252) — already computed in DATA.byYear
-  var maxTD = 0;
-  var years = Object.keys(DATA.byYear).map(Number);
-  years.forEach(function(y){ if (DATA.byYear[y].length > maxTD) maxTD = DATA.byYear[y].length; });
+  // Use per-product byYear — only days this product actually traded, no calendar pollution from others
+  var prodByYear = (DATA.byYearProduct && DATA.byYearProduct[productKey]) || DATA.byYear;
+  var tdKey = productKey + '_td';
 
-  // For each trading day slot, collect all historical values (excluding current year)
+  var maxTD = 0;
+  var years = Object.keys(prodByYear).map(Number);
+  years.forEach(function(y){ if ((prodByYear[y]||[]).length > maxTD) maxTD = (prodByYear[y]||[]).length; });
+
+  // For each per-product trading day slot, collect all historical values (excluding current year)
   var currentYear = new Date().getFullYear();
-  var byTD = {}; // td -> [values]
+  var byTD = {};
   years.forEach(function(y) {
-    if (y === currentYear) return; // exclude current year from seasonal baseline
-    DATA.byYear[y].forEach(function(r) {
-      var td = r.tradingDay;
+    if (y === currentYear) return;
+    (prodByYear[y]||[]).forEach(function(r) {
+      var td = r[tdKey] != null ? r[tdKey] : r.tradingDay;
       if (r[productKey] == null) return;
       if (!byTD[td]) byTD[td] = [];
       byTD[td].push(r[productKey]);
     });
   });
 
-  // Build seasonal average and ±1σ bands, normalised as % of annual mean so all products are comparable
-  // Actually keep absolute values — more useful for reading entry points
   var labels = [], avgLine = [], upperBand = [], lowerBand = [], currentYearLine = [];
-  var curYearRows = DATA.byYear[currentYear] || [];
+  var curYearRows = (prodByYear[currentYear] || []);
   var curYearByTD = {};
-  curYearRows.forEach(function(r){ curYearByTD[r.tradingDay] = r[productKey]; });
-
-  // Build td→month from actual dates so month markers are always accurate regardless of maxTD
-  var tdToMonth = {};
-  var refYears = years.filter(function(y){ return y < currentYear && (DATA.byYear[y]||[]).length > 100; });
-  refYears.forEach(function(y){
-    (DATA.byYear[y]||[]).forEach(function(r){ if (tdToMonth[r.tradingDay] === undefined) tdToMonth[r.tradingDay] = r.date.getMonth(); });
+  curYearRows.forEach(function(r){
+    var td = r[tdKey] != null ? r[tdKey] : r.tradingDay;
+    curYearByTD[td] = r[productKey];
   });
-  if (curYearRows.length > 20) curYearRows.forEach(function(r){ tdToMonth[r.tradingDay] = r.date.getMonth(); });
+
+  // Build td→month from per-product actual dates
+  var tdToMonth = {};
+  var refYears = years.filter(function(y){ return y < currentYear && (prodByYear[y]||[]).length > 100; });
+  refYears.forEach(function(y){
+    (prodByYear[y]||[]).forEach(function(r){
+      var td = r[tdKey] != null ? r[tdKey] : r.tradingDay;
+      if (tdToMonth[td] === undefined) tdToMonth[td] = r.date.getMonth();
+    });
+  });
+  if (curYearRows.length > 20) curYearRows.forEach(function(r){
+    var td = r[tdKey] != null ? r[tdKey] : r.tradingDay;
+    tdToMonth[td] = r.date.getMonth();
+  });
 
   // First trading day of each month
   var monthFirstTD = {};
