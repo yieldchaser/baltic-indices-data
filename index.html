@@ -4206,14 +4206,37 @@ function _buildZscoreChart(productKey, canvasId, allZData, masterLabels, s, e) {
     });
   }
 
-  var datasets = PRODUCT_KEYS.map(function(key) {
+  // Build full-resolution aligned data per product first
+  var fullDatasets = PRODUCT_KEYS.map(function(key) {
     var zByDate = {};
     allZData[key].forEach(function(d){ zByDate[d.dateStr] = d.z; });
-    var aligned = slicedLabels.map(function(lbl){ var v = zByDate[lbl]; return (v != null) ? v : null; });
+    return slicedLabels.map(function(lbl){ var v = zByDate[lbl]; return (v != null) ? v : null; });
+  });
+
+  // Display decimation — same principle as Historical Price chart.
+  // Step=1 (no decimation) when range <= 800 points. At all-time (~4500pts) step≈8.
+  // Each dataset picks every Nth real data point — no interpolation, no averaging.
+  // Slider still operates on full-resolution slicedLabels; decimation is display-only.
+  var DISPLAY_TARGET = 600;
+  var step = Math.max(1, Math.round(slicedLabels.length / DISPLAY_TARGET));
+  var dispLabels = [];
+  for (var di = 0; di < slicedLabels.length; di += step) dispLabels.push(slicedLabels[di]);
+  // Always include last point so lines reach the right edge
+  if (slicedLabels.length > 0 && dispLabels[dispLabels.length - 1] !== slicedLabels[slicedLabels.length - 1]) {
+    dispLabels.push(slicedLabels[slicedLabels.length - 1]);
+  }
+
+  var datasets = PRODUCT_KEYS.map(function(key, ki) {
+    var fullAligned = fullDatasets[ki];
+    var dispData = [];
+    for (var di = 0; di < slicedLabels.length; di += step) dispData.push(fullAligned[di]);
+    if (slicedLabels.length > 0 && dispData.length < dispLabels.length) {
+      dispData.push(fullAligned[fullAligned.length - 1]);
+    }
     var lbl = PRODUCTS[key].label;
     return {
       label: lbl,
-      data: aligned,
+      data: dispData,
       borderColor: PRODUCTS[key].color, backgroundColor: 'transparent',
       borderWidth: key === productKey ? 2.5 : 1, pointRadius: 0, tension: 0.1, spanGaps: true,
       hidden: hiddenByLabel[lbl] || false
@@ -4224,7 +4247,7 @@ function _buildZscoreChart(productKey, canvasId, allZData, masterLabels, s, e) {
   var canvas = document.getElementById(canvasId); if (!canvas) return;
   chartRegistry[canvasId] = new Chart(canvas.getContext('2d'), {
     type: 'line',
-    data: { labels: slicedLabels, datasets: datasets },
+    data: { labels: dispLabels, datasets: datasets },
     options: {
       responsive: true, maintainAspectRatio: false,
       interaction: { mode: 'index', intersect: false },
@@ -4239,7 +4262,7 @@ function _buildZscoreChart(productKey, canvasId, allZData, masterLabels, s, e) {
         x: {
           type: 'category',
           grid: { color: '#151a22' },
-          ticks: { font: { size: 11 }, maxTicksLimit: 12, callback: function(val, idx){ return slicedLabels[idx] ? slicedLabels[idx].slice(0,7) : ''; } }
+          ticks: { font: { size: 11 }, maxTicksLimit: 12, callback: function(val, idx){ return dispLabels[idx] ? dispLabels[idx].slice(0,7) : ''; } }
         },
         y: {
           grid: { color: '#151a22' },
