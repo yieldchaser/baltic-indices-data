@@ -3871,7 +3871,7 @@ function renderYearlyDash(productKey) {
     function(){ renderYDDrawdown(productKey, 'yearlyDrawdownChart'); },
   ];
   fns.forEach(function(fn, i){
-    setTimeout(function(){ try { fn(); } catch(e) { console.error('[YearlyDash]', e); } }, i * 16);
+    setTimeout(function(){ try { fn(); } catch(e) { console.error('[YearlyDash]', e); } }, i * 150);
   });
 }
 
