@@ -2128,6 +2128,7 @@ function buildOverlayChart(productKey) {
     borderWidth: 3,
     pointRadius: 0,
     tension: 0.2,
+    spanGaps: true,
     order: 0,
   });
 
@@ -4702,13 +4703,28 @@ function renderSeasonalChart(productKey) {
   var curYearByTD = {};
   curYearRows.forEach(function(r){ curYearByTD[r.tradingDay] = r[productKey]; });
 
-  var MONTH_STARTS = [1, 22, 42, 63, 83, 104, 124, 145, 165, 186, 206, 227]; // approx trading day each month starts
+  // Build td→month from actual dates so month markers are always accurate regardless of maxTD
+  var tdToMonth = {};
+  var refYears = years.filter(function(y){ return y < currentYear && (DATA.byYear[y]||[]).length > 100; });
+  refYears.forEach(function(y){
+    (DATA.byYear[y]||[]).forEach(function(r){ if (tdToMonth[r.tradingDay] === undefined) tdToMonth[r.tradingDay] = r.date.getMonth(); });
+  });
+  if (curYearRows.length > 20) curYearRows.forEach(function(r){ tdToMonth[r.tradingDay] = r.date.getMonth(); });
+
+  // First trading day of each month
+  var monthFirstTD = {};
+  Object.keys(tdToMonth).forEach(function(td){
+    var m = tdToMonth[td], t = parseInt(td);
+    if (monthFirstTD[m] === undefined || t < monthFirstTD[m]) monthFirstTD[m] = t;
+  });
   var MONTH_NAMES_SHORT = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
   for (var td = 1; td <= maxTD; td++) {
-    // Label only at month boundaries, empty string otherwise
-    var monthIdx = MONTH_STARTS.indexOf(td);
-    labels.push(monthIdx >= 0 ? MONTH_NAMES_SHORT[monthIdx] : '');
+    var label = '';
+    for (var mi = 0; mi < 12; mi++) {
+      if (monthFirstTD[mi] === td) { label = MONTH_NAMES_SHORT[mi]; break; }
+    }
+    labels.push(label);
     var vals = byTD[td] || [];
     if (vals.length < 2) {
       avgLine.push(null); upperBand.push(null); lowerBand.push(null);
@@ -4728,7 +4744,7 @@ function renderSeasonalChart(productKey) {
     type: 'line',
     data: { labels: labels, datasets: [
       { label: String(currentYear),  data: currentYearLine, borderColor: prod.color,   backgroundColor: 'transparent',         borderWidth: 2.5, pointRadius: 0, fill: false, tension: 0.2, spanGaps: true, order: 1 },
-      { label: 'Seasonal Avg',        data: avgLine,         borderColor: '#e3b341',   backgroundColor: 'rgba(227,179,65,0.12)', borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.3, order: 2, borderDash: [5,3] },
+      { label: 'Seasonal Avg',        data: avgLine,         borderColor: '#e3b341',   backgroundColor: 'rgba(227,179,65,0.12)', borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.3, order: 2 },
       { label: '+1σ',                 data: upperBand,       borderColor: '#484f58',   backgroundColor: 'rgba(72,79,88,0.15)',  borderWidth: 1,   pointRadius: 0, fill: '+1',  tension: 0.3, order: 3 },
       { label: '−1σ',                 data: lowerBand,       borderColor: '#484f58',   backgroundColor: 'transparent',         borderWidth: 1,   pointRadius: 0, fill: false, tension: 0.3, order: 4 },
     ]},
