@@ -4086,6 +4086,7 @@ function computeRollingZscoreArr(values, windowSize) {
 // ── Rolling Z-Score window state ─────────────────────────────────────────────
 var _ydZscoreWindow = 252;      // active rolling window (trading days)
 var _ydZscoreProductKey = null; // cached so setYDZscoreWindow can re-render
+var _ydZscoreCache = {};        // lazy cache keyed by windowSize — computed once per window, reused forever
 
 var _ydZscoreWindowLabels = {
   63:  '3M (63-Day)',
@@ -4113,15 +4114,22 @@ function renderYDZscore(productKey, allTime, canvasId) {
   var windowSize = allTime ? 252 : _ydZscoreWindow;
   if (!allTime) _ydZscoreProductKey = productKey;
 
-  // Pre-compute z-scores for all products with the chosen window
-  var allZData = {};
-  PRODUCT_KEYS.forEach(function(key) {
-    var allRows = DATA.master.filter(function(r){ return r[key] != null && r.date >= cutoff2008; });
-    var zAll = computeRollingZscoreArr(allRows.map(function(r){ return r[key]; }), windowSize);
-    allZData[key] = allRows.map(function(r, i){ return { dateStr: r.date.toISOString().split('T')[0], z: zAll[i] }; });
-  });
-
-  var masterLabels = allZData[productKey].map(function(d){ return d.dateStr; });
+  // Lazy cache — compute all 9 products for this windowSize once, reuse forever.
+  // Cache key is windowSize only (product switching only changes highlight thickness, not values).
+  if (!_ydZscoreCache[windowSize]) {
+    var allZData = {};
+    PRODUCT_KEYS.forEach(function(key) {
+      var allRows = DATA.master.filter(function(r){ return r[key] != null && r.date >= cutoff2008; });
+      var zAll = computeRollingZscoreArr(allRows.map(function(r){ return r[key]; }), windowSize);
+      allZData[key] = allRows.map(function(r, i){ return { dateStr: r.date.toISOString().split('T')[0], z: zAll[i] }; });
+    });
+    _ydZscoreCache[windowSize] = {
+      allZData: allZData,
+      masterLabels: allZData[productKey].map(function(d){ return d.dateStr; })
+    };
+  }
+  var allZData     = _ydZscoreCache[windowSize].allZData;
+  var masterLabels = _ydZscoreCache[windowSize].masterLabels;
   var total = masterLabels.length;
   if (!total) return;
 
