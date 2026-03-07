@@ -1751,12 +1751,13 @@ function parsePDCsv(rows) {
   for (const row of rows) {
     const raw = (row['Rate Date'] || '').trim();
     if (!raw) continue;
-    const d = new Date(raw); // MM/DD/YYYY parses natively
-    const pd = parseVal(row['Premium/Discount']);
-    const nav = parseVal(row['NAV']);
-    const mp  = parseVal(row['Market Price']);
-    if (d && !isNaN(d.getTime()) && pd != null) {
-      out.push({ date: d, pd, nav, mp });
+    // Date is DD-MM-YYYY format
+    const d = parseDate(raw);
+    // Premium/Discount may have % sign e.g. "0.74%" or plain "-2.92"
+    const pdRaw = (row['Premium/Discount'] || '').trim().replace('%', '');
+    const pd = parseFloat(pdRaw);
+    if (d && !isNaN(d.getTime()) && !isNaN(pd)) {
+      out.push({ date: d, pd });
     }
   }
   out.sort((a, b) => a.date - b.date);
@@ -1784,13 +1785,12 @@ async function loadAllData() {
     const rows = await fetchCSV(PRODUCTS[key].file);
     const parsed = [];
     if (PRODUCTS[key].solactive) {
-      // Solactive format: columns are 'date' (ISO datetime) and 'value'
+      // Solactive CSVs now use DD-MM-YYYY format (same as other index CSVs)
       for (const row of rows) {
-        const raw = (row['date'] || '').trim().split(' ')[0]; // strip time part
-        const d = raw ? new Date(raw + 'T00:00:00') : null;
+        const d = parseDate((row['date'] || '').trim());
         const v = parseVal(row['value']);
         if (d && !isNaN(d.getTime()) && v != null) {
-          parsed.push({ date: d, dateStr: raw, value: v, change: null });
+          parsed.push({ date: d, dateStr: row['date'], value: v, change: null });
         }
       }
     } else {
