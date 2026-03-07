@@ -1,36 +1,42 @@
-name: Daily Data Update
+name: Daily Baltic Index Update
 
 on:
   schedule:
-    - cron: '0 5 * * 1-5'   # 10:30 IST — catches early index updates
-    - cron: '0 14 * * 1-5'  # 14:00 UTC — BDI publishes ~12:00 UTC, buffer included
-    - cron: '0 19 * * 1-5'  # 19:00 UTC — second BDI check in case of delays
-    - cron: '0 22 * * 1-5'  # 22:00 UTC — after Solactive (~21:29 UTC) & US close (~21:00 UTC)
-  workflow_dispatch:          # Allow manual runs
+    - cron: '30 10 * * *'
+    - cron: '0 14,19,22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4 pandas
+    - name: Install dependencies
+      run: pip install requests beautifulsoup4 pandas lxml
 
-      - name: Run update script
-        run: python update_indices.py
+    - name: Pull latest before run
+      run: git pull --rebase origin main
 
-      - name: Commit and push updated CSVs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add *.csv
-          git diff --cached --quiet || git commit -m "Daily data update $(date +'%Y-%m-%d')"
-          git push
+    - name: Run scraper
+      run: python update_indices.py
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add bdiy_historical.csv cape_historical.csv panama_historical.csv suprama_historical.csv cleantanker_historical.csv dirtytanker_historical.csv bdryff_history.csv bwetff_history.csv BDRY_Daily.csv BWET_Daily.csv sgx_cape_futures.csv sgx_panamax_futures.csv sgx_supramax_futures.csv sgx_handysize_futures.csv
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update indices $(date +'%Y-%m-%d %H:%M UTC')"
+        git push
