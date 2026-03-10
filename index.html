@@ -1909,7 +1909,8 @@
               is derived from a combination of Z-score level, percentile rank, and recent rate of change. <em>GOLDEN
                 DIP</em> and <em>ACCUMULATE</em> indicate statistically low or improving conditions; <em>SELL</em> and
               <em>CATCHING KNIFE</em> indicate elevated or rapidly deteriorating conditions; <em>WAIT</em> and <em>VALUE
-                TRAP</em> indicate ambiguous or transitioning conditions.</p>
+                TRAP</em> indicate ambiguous or transitioning conditions.
+            </p>
           </div>
         </div>
       </div>
@@ -3849,9 +3850,17 @@
 
         // Stats strip values
         const allVals = rows.map(r => r.value);
-        const ath = Math.max(...allVals);
-        const atl = Math.min(...allVals);
-        const vsAth = ((latest.value - ath) / ath * 100).toFixed(1) + '%';
+
+        // 1. 52W High - Low
+        const vals52w = allVals.slice(-252);
+        const w52High = Math.max(...vals52w);
+        const w52Low = Math.min(...vals52w);
+        const w52RangeStr = `${fmt(w52High)} — ${fmt(w52Low)}`;
+
+        // 2. 52W Position
+        const w52PosNum = ((latest.value - w52Low) / (w52High - w52Low) * 100);
+        const w52PosStr = w52PosNum.toFixed(1) + '%';
+        const w52PosCls = w52PosNum < 25 ? 'val-red' : (w52PosNum > 60 ? 'val-green' : 'val-yellow');
 
         // YTD %: compare to last value of prior year
         const currentYear = latest.date.getFullYear();
@@ -3864,7 +3873,13 @@
           ytdStr = (ytd >= 0 ? '+' : '') + ytd.toFixed(1) + '%';
           ytdCls = ytd >= 0 ? 'val-green' : 'val-red';
         }
-        const vsCls = parseFloat(vsAth) >= 0 ? 'val-green' : (parseFloat(vsAth) < -30 ? 'val-red' : 'val-yellow');
+
+        // 4. From Last Trough
+        const vals365 = allVals.slice(-365);
+        const trough = Math.min(...vals365);
+        const troughNum = ((latest.value - trough) / trough * 100);
+        const troughStr = (troughNum >= 0 ? '+' : '') + troughNum.toFixed(1) + '%';
+        const troughCls = troughNum >= 0 ? 'val-green' : 'val-red';
 
         const cardId = `idxCard_${key}`;
         const canvasId = `idxChart_${key}`;
@@ -3903,20 +3918,20 @@
       </div>
       <div class="index-stats-strip">
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label">All-Time High</div>
-          <div class="index-stat-mini-val val-white">${fmt(ath)}</div>
+          <div class="index-stat-mini-label">52W High — Low</div>
+          <div class="index-stat-mini-val val-white">${w52RangeStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label">All-Time Low</div>
-          <div class="index-stat-mini-val val-white">${fmt(atl)}</div>
-        </div>
-        <div class="index-stat-mini">
-          <div class="index-stat-mini-label">Current vs ATH</div>
-          <div class="index-stat-mini-val ${vsCls}">${vsAth}</div>
+          <div class="index-stat-mini-label">52W Position</div>
+          <div class="index-stat-mini-val ${w52PosCls}">${w52PosStr}</div>
         </div>
         <div class="index-stat-mini">
           <div class="index-stat-mini-label">YTD %</div>
           <div class="index-stat-mini-val ${ytdCls}">${ytdStr}</div>
+        </div>
+        <div class="index-stat-mini">
+          <div class="index-stat-mini-label">From Last Trough</div>
+          <div class="index-stat-mini-val ${troughCls}">${troughStr}</div>
         </div>
       </div>`;
         grid.appendChild(card);
