@@ -8,8 +8,8 @@
   <!-- Pirate ship favicon — inline SVG as data URI, works in all browsers -->
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏴‍☠️%3C/text%3E%3C/svg%3E">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" defer></script>
   <style>
     *,
     *::before,
@@ -2430,7 +2430,11 @@
       if (!_statsCache[productKey]) _statsCache[productKey] = computeStats(productKey);
       return _statsCache[productKey];
     }
-    function invalidateStatsCache() { for (const k in _statsCache) delete _statsCache[k]; }
+    function invalidateStatsCache() {
+      for (const k in _statsCache) delete _statsCache[k];
+      for (const k in _qAvgCache) delete _qAvgCache[k];
+      for (const k in _mAvgCache) delete _mAvgCache[k];
+    }
 
     // Correlation cache { key: value } keyed by "A:B:tf"
     const _corrCache = {};
@@ -2454,6 +2458,17 @@
       const vals = DATA.master.filter(r => r.year === year && r.quarter === quarter && r[productKey] != null).map(r => r[productKey]);
       const v = vals.length ? mean(vals) : null;
       _qAvgCache[k] = v;
+      return v;
+    }
+
+    // mAvg cache keyed by "productKey:year:month"
+    const _mAvgCache = {};
+    function getMAvgCached(productKey, year, month) {
+      const k = productKey + ':' + year + ':' + month;
+      if (k in _mAvgCache) return _mAvgCache[k];
+      const vals = DATA.master.filter(r => r.year === year && r.month === month && r[productKey] != null).map(r => r[productKey]);
+      const v = vals.length ? mean(vals) : null;
+      _mAvgCache[k] = v;
       return v;
     }
 
@@ -3459,8 +3474,7 @@
       for (const y of years) {
         matrix[y] = {};
         for (let m = 0; m < 12; m++) {
-          const vals = DATA.master.filter(r => r.year === y && r.month === m && r[productKey] != null).map(r => r[productKey]);
-          matrix[y][m] = vals.length ? mean(vals) : null;
+          matrix[y][m] = getMAvgCached(productKey, y, m);
         }
       }
 
@@ -3502,8 +3516,7 @@
       for (const y of years) {
         matrix[y] = {};
         for (let m = 0; m < 12; m++) {
-          const vals = DATA.master.filter(r => r.year === y && r.month === m && r[productKey] != null).map(r => r[productKey]);
-          matrix[y][m] = vals.length ? mean(vals) : null;
+          matrix[y][m] = getMAvgCached(productKey, y, m);
         }
       }
 
@@ -3556,8 +3569,7 @@
       for (const y of years) {
         matrix[y] = {};
         for (let m = 0; m < 12; m++) {
-          const vals = DATA.master.filter(r => r.year === y && r.month === m && r[productKey] != null).map(r => r[productKey]);
-          matrix[y][m] = vals.length ? mean(vals) : null;
+          matrix[y][m] = getMAvgCached(productKey, y, m);
         }
       }
 
@@ -3596,8 +3608,7 @@
       for (const y of years) {
         matrix[y] = {};
         for (let m = 0; m < 12; m++) {
-          const vals = DATA.master.filter(r => r.year === y && r.month === m && r[productKey] != null).map(r => r[productKey]);
-          matrix[y][m] = vals.length ? mean(vals) : null;
+          matrix[y][m] = getMAvgCached(productKey, y, m);
         }
       }
       const headers = ['Year', ...MONTH_NAMES];
@@ -3697,8 +3708,7 @@
       for (const y of years) {
         matrix[y] = {};
         for (const q of quarters) {
-          const vals = DATA.master.filter(r => r.year === y && r.quarter === q && r[productKey] != null).map(r => r[productKey]);
-          matrix[y][q] = vals.length ? mean(vals) : null;
+          matrix[y][q] = getQAvgCached(productKey, y, q);
         }
       }
 
@@ -3757,8 +3767,7 @@
       for (const y of years) {
         matrix[y] = {};
         for (const q of quarters) {
-          const vals = DATA.master.filter(r => r.year === y && r.quarter === q && r[productKey] != null).map(r => r[productKey]);
-          matrix[y][q] = vals.length ? mean(vals) : null;
+          matrix[y][q] = getQAvgCached(productKey, y, q);
         }
       }
       const headers = ['Year', ...quarters];
@@ -4803,16 +4812,16 @@
         rebuildYDHistChart(productKey);
       }
 
-      // Remove old listeners by cloning
-      var newStart = startEl.cloneNode(true);
-      var newEnd = endEl.cloneNode(true);
-      startEl.parentNode.replaceChild(newStart, startEl);
-      endEl.parentNode.replaceChild(newEnd, endEl);
-      newStart.addEventListener('input', onSlide);
-      newEnd.addEventListener('input', onSlide);
+      // Use named reference to remove stale listeners
+      if (startEl._onSlide) startEl.removeEventListener('input', startEl._onSlide);
+      if (endEl._onSlide) endEl.removeEventListener('input', endEl._onSlide);
+      startEl._onSlide = onSlide;
+      endEl._onSlide = onSlide;
+      startEl.addEventListener('input', onSlide);
+      endEl.addEventListener('input', onSlide);
 
       // Initial render
-      onSlide.call(newStart);
+      onSlide.call(startEl);
     }
 
     function rebuildYDHistChart(productKey) {
@@ -5053,26 +5062,28 @@
         if (labelEl) labelEl.textContent = masterLabels[s].slice(0, 7) + ' \u2192 ' + masterLabels[e].slice(0, 7);
       }
 
-      // Clone first, then define closure over ns/ne (live nodes) — fixes detached-ref bug
-      var ns = startEl.cloneNode(true); startEl.parentNode.replaceChild(ns, startEl);
-      var ne = endEl.cloneNode(true); endEl.parentNode.replaceChild(ne, endEl);
+      // Use named reference to remove stale listeners
+      if (startEl._onSlide) startEl.removeEventListener('input', startEl._onSlide);
+      if (endEl._onSlide) endEl.removeEventListener('input', endEl._onSlide);
 
       function onSlide() {
-        var s = parseInt(ns.value);
-        var e = parseInt(ne.value);
+        var s = parseInt(startEl.value);
+        var e = parseInt(endEl.value);
         if (s > e) {
-          if (document.activeElement === ns) { ns.value = e; s = e; }
-          else { ne.value = s; e = s; }
+          if (document.activeElement === startEl) { startEl.value = e; s = e; }
+          else { endEl.value = s; e = s; }
         }
         updateFillAndLabel(s, e);
         _buildZscoreChart(productKey, canvasId, allZData, masterLabels, s, e);
       }
 
-      ns.addEventListener('input', onSlide);
-      ne.addEventListener('input', onSlide);
+      startEl._onSlide = onSlide;
+      endEl._onSlide = onSlide;
+      startEl.addEventListener('input', onSlide);
+      endEl.addEventListener('input', onSlide);
 
-      var initS = parseInt(ns.value);
-      var initE = parseInt(ne.value);
+      var initS = parseInt(startEl.value);
+      var initE = parseInt(endEl.value);
       updateFillAndLabel(initS, initE);
       _buildZscoreChart(productKey, canvasId, allZData, masterLabels, initS, initE);
     }
@@ -6164,17 +6175,16 @@
       startEl.max = total - 1; endEl.max = total - 1;
       startEl.value = 0; endEl.value = total - 1;
 
-      // Clone first to remove any stale listeners, THEN wire update so the
-      // closure captures the live DOM nodes (ns/ne), not the detached originals
-      var ns = startEl.cloneNode(true); startEl.parentNode.replaceChild(ns, startEl);
-      var ne = endEl.cloneNode(true); endEl.parentNode.replaceChild(ne, endEl);
+      // Use named reference to remove stale listeners
+      if (startEl._onSlide) startEl.removeEventListener('input', startEl._onSlide);
+      if (endEl._onSlide) endEl.removeEventListener('input', endEl._onSlide);
 
       function update() {
-        var s = parseInt(ns.value);
-        var e = parseInt(ne.value);
+        var s = parseInt(startEl.value);
+        var e = parseInt(endEl.value);
         if (s > e) {
-          if (document.activeElement === ns) { ns.value = e; s = e; }
-          else { ne.value = s; e = s; }
+          if (document.activeElement === startEl) { startEl.value = e; s = e; }
+          else { endEl.value = s; e = s; }
         }
         _bdryLiqRangeS = s; _bdryLiqRangeE = e;
         var pctS = (s / (total - 1)) * 100;
@@ -6189,8 +6199,10 @@
         wireBdryLiqDownload(allRows, s, e);
       }
 
-      ns.addEventListener('input', update);
-      ne.addEventListener('input', update);
+      startEl._onSlide = update;
+      endEl._onSlide = update;
+      startEl.addEventListener('input', update);
+      endEl.addEventListener('input', update);
       update();  // initial render
     }
 
@@ -6537,15 +6549,16 @@
       startEl.max = total - 1; endEl.max = total - 1;
       startEl.value = 0; endEl.value = total - 1;
 
-      var ns = startEl.cloneNode(true); startEl.parentNode.replaceChild(ns, startEl);
-      var ne = endEl.cloneNode(true); endEl.parentNode.replaceChild(ne, endEl);
+      // Use named reference to remove stale listeners
+      if (startEl._onSlide) startEl.removeEventListener('input', startEl._onSlide);
+      if (endEl._onSlide) endEl.removeEventListener('input', endEl._onSlide);
 
       function update() {
-        var s = parseInt(ns.value);
-        var e = parseInt(ne.value);
+        var s = parseInt(startEl.value);
+        var e = parseInt(endEl.value);
         if (s > e) {
-          if (document.activeElement === ns) { ns.value = e; s = e; }
-          else { ne.value = s; e = s; }
+          if (document.activeElement === startEl) { startEl.value = e; s = e; }
+          else { endEl.value = s; e = s; }
         }
         _bwetLiqRangeS = s; _bwetLiqRangeE = e;
         var pctS = (s / (total - 1)) * 100;
@@ -6560,8 +6573,10 @@
         wireWwetLiqDownload(allRows, s, e);
       }
 
-      ns.addEventListener('input', update);
-      ne.addEventListener('input', update);
+      startEl._onSlide = update;
+      endEl._onSlide = update;
+      startEl.addEventListener('input', update);
+      endEl.addEventListener('input', update);
       update();
     }
 
