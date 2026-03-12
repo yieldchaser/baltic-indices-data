@@ -24,7 +24,7 @@ jobs:
         python-version: '3.11'
 
     - name: Install dependencies
-      run: pip install pandas requests
+      run: pip install pandas requests yfinance
 
     - name: Pull latest before run
       run: git pull --rebase origin main
@@ -36,7 +36,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add bdry_holdings.csv bwet_holdings.csv
+        git add bdry_holdings.csv bwet_holdings.csv bdry_liquidity.csv bwet_liquidity.csv
         git diff --quiet && git diff --staged --quiet || git commit -m "Update ETF holdings $(date +'%Y-%m-%d %H:%M UTC')"
         git pull --rebase origin main || echo "Nothing to pull or pull failed"
         git push
