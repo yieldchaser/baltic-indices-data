@@ -2686,7 +2686,7 @@
       const overlay = document.getElementById('loadingOverlay');
       const progress = document.getElementById('loadingProgress');
       let loaded = 0;
-      const total = PRODUCT_KEYS.length + 8; // +2 holdings, +2 P/D files, +4 SGX FFA
+      const total = PRODUCT_KEYS.length + 10; // +2 holdings, +2 P/D files, +4 SGX FFA, +2 Liq data
 
       function tick(label) {
         loaded++;
@@ -2729,6 +2729,8 @@
       const bwetPromise = fetchCSV('bwet_holdings.csv').then(r => { DATA.bwetHoldings = r; tick('BWET Holdings'); });
       const bdryPdPromise = fetchCSV('BDRY_Daily.csv').then(r => { DATA.bdryPD = parsePDCsv(r); tick('BDRY P/D'); });
       const bwetPdPromise = fetchCSV('BWET_Daily.csv').then(r => { DATA.bwetPD = parsePDCsv(r); tick('BWET P/D'); });
+      const bdryLiqPromise = fetchCSV('bdry_liquidity.csv').then(r => { DATA.bdryLiquidity = r; tick('BDRY Liquidity'); });
+      const bwetLiqPromise = fetchCSV('bwet_liquidity.csv').then(r => { DATA.bwetLiquidity = r; tick('BWET Liquidity'); });
 
       // SGX FFA Futures — non-blocking; dashboard renders even if these fail
       const sgxFiles = {
@@ -2748,7 +2750,7 @@
         tick('SGX ' + key.charAt(0).toUpperCase() + key.slice(1));
       });
 
-      await Promise.all([...indexPromises, bdryPromise, bwetPromise, bdryPdPromise, bwetPdPromise, ...sgxPromises]);
+      await Promise.all([...indexPromises, bdryPromise, bwetPromise, bdryPdPromise, bwetPdPromise, bdryLiqPromise, bwetLiqPromise, ...sgxPromises]);
 
       buildMaster();
 
@@ -6094,7 +6096,7 @@
       var allRows = [];
 
       try {
-        var rawRows = await fetchCSV('bdry_liquidity.csv');
+        var rawRows = DATA.bdryLiquidity;
         allRows = rawRows
           .filter(function(r) { return r.date && r.close && r.volume; })
           .map(function(r) {
@@ -6472,7 +6474,7 @@
       var allRows = [];
 
       try {
-        var rawRows = await fetchCSV('bwet_liquidity.csv');
+        var rawRows = DATA.bwetLiquidity;
         allRows = rawRows
           .filter(function(r) { return r.date && r.close && r.volume; })
           .map(function(r) {
