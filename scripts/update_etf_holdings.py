@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import datetime
 import os
 import re
+import yfinance as yf
 
 # Direct CSV feed URL (contains all Amplify ETF holdings)
 CSV_URL = 'https://amplifyetfs.com/wp-content/uploads/feeds/AmplifyWeb.40XL.XL_Holdings.csv'
@@ -255,6 +256,39 @@ def main():
     if success_count < len(TARGET_ETFS):
         print("WARNING: Some updates failed")
         return 1
+
+    # --- NEW: Fetch 10-year history for BDRY & BWET using yfinance ---
+    print("\n--- Fetching ETF Historical Data (yfinance) ---")
+    try:
+        # BDRY
+        print("Fetching BDRY history...")
+        bdry_hist = yf.Ticker('BDRY').history(period='10y')
+        if not bdry_hist.empty:
+            bdry_hist.reset_index(inplace=True)
+            bdry_csv = bdry_hist[['Date', 'Close', 'Volume']].copy()
+            bdry_csv.rename(columns={'Date': 'date', 'Close': 'close', 'Volume': 'volume'}, inplace=True)
+            bdry_csv['date'] = bdry_csv['date'].dt.strftime('%Y-%m-%d')
+            bdry_csv.to_csv('bdry_liquidity.csv', index=False)
+            print("Successfully saved bdry_liquidity.csv")
+        else:
+            print("No data returned for BDRY.")
+
+        # BWET
+        print("Fetching BWET history...")
+        bwet_hist = yf.Ticker('BWET').history(period='10y')
+        if not bwet_hist.empty:
+            bwet_hist.reset_index(inplace=True)
+            bwet_csv = bwet_hist[['Date', 'Close', 'Volume']].copy()
+            bwet_csv.rename(columns={'Date': 'date', 'Close': 'close', 'Volume': 'volume'}, inplace=True)
+            bwet_csv['date'] = bwet_csv['date'].dt.strftime('%Y-%m-%d')
+            bwet_csv.to_csv('bwet_liquidity.csv', index=False)
+            print("Successfully saved bwet_liquidity.csv")
+        else:
+            print("No data returned for BWET.")
+
+    except Exception as e:
+        print(f"Error fetching historical data: {e}")
+
     return 0
 
 if __name__ == "__main__":
