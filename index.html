@@ -4343,12 +4343,18 @@
         } else {
           priceHTML = liqFallbackHTML(etfKey);
         }
-        if (meta) {
-          const navEl = card.querySelector(`#etfNav_${etfKey}`);
-          if (navEl) {
-            const nav = meta.navPrice ?? meta.regularMarketPrice;
-            navEl.textContent = nav != null ? '$' + nav.toFixed(2) : '—';
+        const navEl = card.querySelector(`#etfNav_${etfKey}`);
+        if (navEl) {
+          let nav = null;
+          if (meta) {
+            nav = meta.navPrice ?? meta.regularMarketPrice;
+          } else {
+            const liqRows = etfKey === 'bdry' ? DATA.bdryLiquidity : DATA.bwetLiquidity;
+            if (liqRows && liqRows.length) {
+              nav = parseFloat(liqRows[liqRows.length - 1].close);
+            }
           }
+          navEl.textContent = nav != null ? '$' + nav.toFixed(2) : '—';
         }
       } catch (e) {
         priceHTML = liqFallbackHTML(etfKey);
