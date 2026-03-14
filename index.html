@@ -2141,6 +2141,19 @@
         </div>
       </div>
 
+      <!-- NEW: Cross-Asset Correlation Section -->
+      <div class="chart-container mb-20" style="margin-top:24px;">
+        <div class="chart-header">
+          <div class="chart-title">Cross-Asset Correlation (ETF vs Indices)</div>
+          <div class="flex-row" style="gap:6px;align-items:center;">
+            <button class="corr-btn active" id="etfCorrBtnAll" onclick="renderETFCorrMatrix('all')">All Time</button>
+            <button class="corr-btn" id="etfCorrBtn5y" onclick="renderETFCorrMatrix('5y')">5Y</button>
+            <button class="corr-btn" id="etfCorrBtn1y" onclick="renderETFCorrMatrix('1y')">1Y</button>
+          </div>
+        </div>
+        <div id="etfCorrMatrix" style="overflow-x:auto;margin-top:14px;"></div>
+      </div>
+
     </div>
     <div class="tab-panel" id="tab-yearly-dash">
       <div id="yd-kpi-row" class="dashboard-hero mb-20"></div>
@@ -2536,6 +2549,13 @@
       return new Date(parseInt(y), parseInt(m) - 1, parseInt(d));
     }
 
+    function parseDateISO(str) {
+      if (!str) return null;
+      const [y, m, d] = str.split('-');
+      if (!y || !m || !d) return null;
+      return new Date(parseInt(y), parseInt(m) - 1, parseInt(d));
+    }
+
     function parseVal(str) {
       if (!str || str === '' || str === 'N/A') return null;
       return parseFloat(String(str).replace(/,/g, '').replace(/%/, ''));
@@ -2785,6 +2805,22 @@
         }
       }
 
+      // Maps for ETF price data (from liquidity CSVs)
+      const bdryPriceMap = {};
+      if (DATA.bdryLiquidity) {
+        DATA.bdryLiquidity.forEach(r => {
+          const d = parseDateISO(r.date);
+          if (d) bdryPriceMap[d.getTime()] = parseFloat(r.close);
+        });
+      }
+      const bwetPriceMap = {};
+      if (DATA.bwetLiquidity) {
+        DATA.bwetLiquidity.forEach(r => {
+          const d = parseDateISO(r.date);
+          if (d) bwetPriceMap[d.getTime()] = parseFloat(r.close);
+        });
+      }
+
       DATA.master = allDates.map(ts => {
         const d = new Date(ts);
         const month = d.getMonth();
@@ -2809,6 +2845,10 @@
           row.bdry_spot = null;
           row.bdry_spot_change = null;
         }
+
+        row.bdry_price = bdryPriceMap[ts] || null;
+        row.bwet_price = bwetPriceMap[ts] || null;
+
         return row;
       });
 
@@ -3422,6 +3462,32 @@
             const textCol = r != null && Math.abs(r) > 0.4 ? '#fff' : '#e6edf3';
             html += `<td style="background:${bg};color:${textCol}">${r != null ? r.toFixed(2) : '—'}</td>`;
           }
+        }
+        html += '</tr>';
+      }
+      html += '</tbody></table>';
+      container.innerHTML = html;
+    }
+
+    function renderETFCorrMatrix(tf) {
+      ['all', '5y', '1y'].forEach(x => {
+        const el = document.getElementById('etfCorrBtn' + x);
+        if (el) el.classList.toggle('active', x === tf);
+      });
+      const container = document.getElementById('etfCorrMatrix');
+      if (!container) return;
+      const etfKeys = ['bdry_price', 'bwet_price'];
+      const etfLabels = ['BDRY Price', 'BWET Price'];
+      let html = `<table class="corr-table"><thead><tr><th></th>`;
+      for (const lbl of CORR_LABELS) html += `<th>${lbl}</th>`;
+      html += '</tr></thead><tbody>';
+      for (let i = 0; i < etfKeys.length; i++) {
+        html += `<tr><th style="text-align:left;background:var(--bg);color:var(--text-muted);font-size:11px;padding:8px 10px">${etfLabels[i]}</th>`;
+        for (let j = 0; j < PRODUCT_KEYS.length; j++) {
+          const r = getCorrCached(etfKeys[i], PRODUCT_KEYS[j], tf);
+          const bg = corrColor(r);
+          const textCol = r != null && Math.abs(r) > 0.4 ? '#fff' : '#e6edf3';
+          html += `<td style="background:${bg};color:${textCol}">${r != null ? r.toFixed(2) : '—'}</td>`;
         }
         html += '</tr>';
       }
@@ -4744,7 +4810,10 @@
       if (tabId === 'heatmaps') renderHeatmaps(currentProduct);
       if (tabId === 'quarterly') renderQuarterlyTab(currentProduct);
       if (tabId === 'indices' && !indicesRendered) { renderIndicesTab(); indicesRendered = true; }
-      if (tabId === 'etfs') renderETFTab();
+      if (tabId === 'etfs') {
+        renderETFTab();
+        renderETFCorrMatrix('all');
+      }
       if (tabId === 'yearly-dash') renderYearlyDash(currentProduct);
       if (tabId === 'monthly-dash') renderMonthlyDash(currentProduct);
       if (tabId === 'signals') renderSignalsTab(currentProduct);
