@@ -1299,6 +1299,79 @@
       margin-bottom: 20px;
     }
 
+    /* REGIME BADGES */
+    .regime-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 12px;
+      vertical-align: middle;
+      cursor: help;
+    }
+
+    .regime-expansion {
+      background: rgba(63, 185, 80, 0.15);
+      color: var(--green);
+      border: 1px solid rgba(63, 185, 80, 0.4);
+    }
+
+    .regime-distribution {
+      background: rgba(227, 179, 65, 0.15);
+      color: var(--yellow);
+      border: 1px solid rgba(227, 179, 65, 0.4);
+    }
+
+    .regime-accumulation {
+      background: rgba(88, 166, 255, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(88, 166, 255, 0.4);
+    }
+
+    .regime-contraction {
+      background: rgba(248, 81, 73, 0.15);
+      color: var(--red);
+      border: 1px solid rgba(248, 81, 73, 0.4);
+    }
+
+    /* SIGNALS CONTROLS */
+    .signals-controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .signals-select {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: 12px;
+      outline: none;
+    }
+
+    .signals-select:focus {
+      border-color: var(--accent);
+    }
+
+    .lead-lag-info {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    .lead-lag-peak {
+      color: var(--accent);
+      border-bottom: 1px dashed var(--accent);
+    }
+
     .flex-row {
       display: flex;
       align-items: center;
@@ -1775,6 +1848,7 @@
           <div class="current-price-change" id="dashPriceChange">—</div>
         </div>
         <div id="dashSignal" class="signal-badge signal-wait">⏳ WAIT</div>
+        <div id="dashRegimeBadge" class="regime-badge" style="display:none;" title="Momentum Regime based on MA200 and ROC60"></div>
       </div>
 
       <div class="stats-row mb-20">
@@ -2410,6 +2484,53 @@
         <div class="chart-canvas-wrap" style="height:280px"><canvas id="ffaHistoryChart"></canvas></div>
       </div>
 
+      <!-- 9. Futures vs Spot Basis (Premium) -->
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title">Futures vs Spot Basis — BDRYFF vs Synthetic Spot</div>
+          <div class="flex-row" style="gap:6px;align-items:center;">
+            <button class="toggle-btn" id="basisBtn3m" onclick="setBasisWindow('3m')">3M</button>
+            <button class="toggle-btn active" id="basisBtn1y" onclick="setBasisWindow('1y')">1Y</button>
+            <button class="toggle-btn" id="basisBtnAll" onclick="setBasisWindow('all')">All</button>
+          </div>
+        </div>
+        <div class="chart-canvas-wrap" style="height:320px"><canvas id="basisChart"></canvas></div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
+          Basis % = (Front Month FFA − Combined Spot Index) / Combined Spot × 100.
+        </div>
+      </div>
+
+      <!-- 10. Vessel-Class Contribution to BDI -->
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title">BDI Daily Change — Vessel Class Contribution</div>
+        </div>
+        <div class="chart-canvas-wrap" style="height:320px"><canvas id="bdiContribChart"></canvas></div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
+          Approximate decomposition: 50% Capesize, 40% Panamax, 10% Supramax.
+        </div>
+      </div>
+
+      <!-- 11. Lead–Lag Correlation Analysis -->
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title">Lead–Lag Correlation (Cross-Correlation of Log Returns)</div>
+        </div>
+        <div class="signals-controls">
+          <label for="leadLagPair" class="context-label" style="margin-bottom:0">Pairs:</label>
+          <select id="leadLagPair" class="signals-select" onchange="renderLeadLagChart()">
+            <option value="cape:bdiy">Capesize leads BDI</option>
+            <option value="panama:bdiy">Panamax leads BDI</option>
+            <option value="suprama:bdiy">Supramax leads BDI</option>
+            <option value="dirtytanker:cleantanker">BDTI leads BCTI</option>
+            <option value="bdiy:bdryff">BDI leads BDRYFF</option>
+            <option value="bdry_spot:bdryff">BDRY Spot leads BDRYFF</option>
+          </select>
+        </div>
+        <div class="chart-canvas-wrap" style="height:320px"><canvas id="leadLagChart"></canvas></div>
+        <div id="leadLagInfo" class="lead-lag-info"></div>
+      </div>
+
     </div>
 
   </div><!-- /main -->
@@ -2612,6 +2733,95 @@
       const m = mean(vals);
       const variance = vals.reduce((s, v) => s + (v - m) ** 2, 0) / vals.length;
       return Math.sqrt(variance);
+    }
+
+    // =====================================================================
+    // ADVANCED ANALYTICS UTILITIES
+    // =====================================================================
+    function calculateLogReturns(series) {
+      const returns = [null];
+      for (let i = 1; i < series.length; i++) {
+        const curr = series[i];
+        const prev = series[i - 1];
+        if (curr != null && prev != null && prev > 0) {
+          returns.push(Math.log(curr / prev));
+        } else {
+          returns.push(null);
+        }
+      }
+      return returns;
+    }
+
+    function computeCrossCorrelation(seriesA, seriesB, maxLag = 30) {
+      const results = [];
+      const n = seriesA.length;
+      for (let lag = -maxLag; lag <= maxLag; lag++) {
+        const pairsA = [];
+        const pairsB = [];
+        for (let i = 0; i < n; i++) {
+          const j = i + lag;
+          if (j >= 0 && j < n) {
+            if (seriesA[i] != null && seriesB[j] != null) {
+              pairsA.push(seriesA[i]);
+              pairsB.push(seriesB[j]);
+            }
+          }
+        }
+        const count = pairsA.length;
+        if (count < 10) {
+          results.push({ lag, corr: null });
+          continue;
+        }
+        const mA = pairsA.reduce((s, v) => s + v, 0) / count;
+        const mB = pairsB.reduce((s, v) => s + v, 0) / count;
+        let num = 0, dA = 0, dB = 0;
+        for (let k = 0; k < count; k++) {
+          const da = pairsA[k] - mA;
+          const db = pairsB[k] - mB;
+          num += da * db;
+          dA += da * da;
+          dB += db * db;
+        }
+        const denom = Math.sqrt(dA * dB);
+        results.push({ lag, corr: denom === 0 ? 0 : num / denom });
+      }
+      return results;
+    }
+
+    function movingAverage(series, window) {
+      const result = [];
+      let sum = 0;
+      let count = 0;
+      for (let i = 0; i < series.length; i++) {
+        if (series[i] != null) {
+          sum += series[i];
+          count++;
+        }
+        if (i >= window) {
+          const oldVal = series[i - window];
+          if (oldVal != null) {
+            sum -= oldVal;
+            count--;
+          }
+        }
+        // Require at least 80% of window to be non-null for a valid SMA
+        result.push(count >= window * 0.8 ? sum / count : null);
+      }
+      return result;
+    }
+
+    function rateOfChange(series, window) {
+      const result = [];
+      for (let i = 0; i < series.length; i++) {
+        const curr = series[i];
+        const past = i >= window ? series[i - window] : null;
+        if (curr != null && past != null && past !== 0) {
+          result.push(((curr - past) / past) * 100);
+        } else {
+          result.push(null);
+        }
+      }
+      return result;
     }
 
     // =====================================================================
@@ -3010,6 +3220,9 @@
       const sigEl = document.getElementById('dashSignal');
       sigEl.textContent = sig.text;
       sigEl.className = 'signal-badge ' + sig.cls;
+
+      // MOMENTUM REGIME (NEW)
+      renderRegimeBadge(productKey, stats.currentPrice);
 
       // Alerts banner
       const bullishEl = document.getElementById('alertBullish');
@@ -5714,6 +5927,9 @@
         function () { renderTermStructure(); },
         function () { renderPDZscoreChart(); },
         function () { renderFFAForwardCurve(); },
+        function () { renderBasisChart(); },
+        function () { renderBDIContributionChart(); },
+        function () { renderLeadLagChart(); },
       ];
       fns.forEach(function (fn, i) {
         setTimeout(function () { try { fn(); } catch (e) { console.error('[SignalsTab]', e); } }, i * 16);
@@ -7394,10 +7610,283 @@
 
       panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
+    // -------------------------------------------------------
+    // FREIGHT MOMENTUM REGIME
+    // -------------------------------------------------------
+    function renderRegimeBadge(productKey, currentPrice) {
+      const el = document.getElementById('dashRegimeBadge');
+      if (!el) return;
 
+      const rows = getRows(productKey);
+      if (rows.length < 200) {
+        el.style.display = 'none';
+        return;
+      }
 
+      const series = rows.map(r => r[productKey]);
+      const ma200Arr = movingAverage(series, 200);
+      const roc60Arr = rateOfChange(series, 60);
 
+      const ma200 = ma200Arr[ma200Arr.length - 1];
+      const roc60 = roc60Arr[roc60Arr.length - 1];
 
+      if (ma200 == null || roc60 == null) {
+        el.style.display = 'none';
+        return;
+      }
+
+      let label = '', cls = '';
+      if (currentPrice > ma200 && roc60 > 0) {
+        label = 'EXPANSION'; cls = 'regime-expansion';
+      } else if (currentPrice > ma200 && roc60 <= 0) {
+        label = 'DISTRIBUTION'; cls = 'regime-distribution';
+      } else if (currentPrice <= ma200 && roc60 > 0) {
+        label = 'ACCUMULATION'; cls = 'regime-accumulation';
+      } else {
+        label = 'CONTRACTION'; cls = 'regime-contraction';
+      }
+
+      el.textContent = label;
+      el.className = 'regime-badge ' + cls;
+      el.style.display = 'inline-block';
+      el.title = `Regime: ${label}\nMA200: ${fmt(ma200)}\nROC60: ${roc60.toFixed(1)}%\nLogic: Expansion (>MA200, ROC>0), Distribution (>MA200, ROC<0), Accumulation (<MA200, ROC>0), Contraction (<MA200, ROC<0)`;
+    }
+
+    // -------------------------------------------------------
+    // 9. FUTURES VS SPOT BASIS
+    // -------------------------------------------------------
+    var _basisWindow = '1y';
+    function setBasisWindow(w) {
+      _basisWindow = w;
+      ['3m', '1y', 'all'].forEach(x => {
+        const el = document.getElementById('basisBtn' + x);
+        if (el) el.classList.toggle('active', x === w);
+      });
+      renderBasisChart();
+    }
+
+    function renderBasisChart() {
+      const bdrySpotRows = DATA.master.filter(r => r.bdry_spot != null);
+      const bdryffRows = DATA.master.filter(r => r.bdryff != null);
+      if (!bdrySpotRows.length || !bdryffRows.length) return;
+
+      const spotMap = new Map();
+      bdrySpotRows.forEach(r => spotMap.set(r.date.getTime(), r.bdry_spot));
+
+      const basisSeries = [];
+      bdryffRows.forEach(r => {
+        const spot = spotMap.get(r.date.getTime());
+        if (spot != null && spot > 0) {
+          basisSeries.push({ date: r.date, value: ((r.bdryff - spot) / spot) * 100 });
+        }
+      });
+
+      if (!basisSeries.length) return;
+
+      let cutoff = new Date();
+      if (_basisWindow === '3m') cutoff.setMonth(cutoff.getMonth() - 3);
+      else if (_basisWindow === '1y') cutoff.setFullYear(cutoff.getFullYear() - 1);
+      else cutoff = new Date(0);
+
+      const filtered = basisSeries.filter(r => r.date >= cutoff);
+      const labels = filtered.map(r => r.date.toISOString().split('T')[0]);
+      const data = filtered.map(r => r.value);
+
+      destroyChart('basisChart');
+      const canvas = document.getElementById('basisChart'); if (!canvas) return;
+      chartRegistry['basisChart'] = new Chart(canvas.getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Basis % (BDRYFF vs Spot)',
+            data: data,
+            borderColor: '#58a6ff',
+            backgroundColor: 'rgba(88, 166, 255, 0.1)',
+            borderWidth: 2,
+            pointRadius: 0,
+            fill: true,
+            tension: 0.1
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { display: false },
+            tooltip: { callbacks: { label: c => ' Basis: ' + c.parsed.y.toFixed(2) + '%' } }
+          },
+          scales: {
+            x: { grid: { color: '#151a22' }, ticks: { maxTicksLimit: 10, font: { size: 11 } } },
+            y: { 
+              grid: { color: '#151a22' }, 
+              ticks: { font: { size: 11 }, callback: v => v.toFixed(1) + '%' },
+              title: { display: true, text: 'Basis %', color: '#8b949e', font: { size: 11 } }
+            }
+          }
+        },
+        plugins: [{
+          beforeDraw: chart => {
+            const { ctx, chartArea: { left, right, top, bottom }, scales: { y } } = chart;
+            const zeroY = y.getPixelForValue(0);
+            if (zeroY >= top && zeroY <= bottom) {
+              ctx.save();
+              ctx.strokeStyle = '#f0c040';
+              ctx.lineWidth = 1.5;
+              ctx.setLineDash([5, 5]);
+              ctx.beginPath();
+              ctx.moveTo(left, zeroY);
+              ctx.lineTo(right, zeroY);
+              ctx.stroke();
+              ctx.restore();
+            }
+          }
+        }]
+      });
+    }
+
+    // -------------------------------------------------------
+    // 10. BDI CONTRIBUTION
+    // -------------------------------------------------------
+    function renderBDIContributionChart() {
+      const rows = DATA.master.filter(r => r.bdry_spot_change != null && r.cape_change != null && r.panama_change != null && r.suprama_change != null);
+      if (rows.length < 2) return;
+
+      const displayRows = rows.slice(-60);
+      const labels = displayRows.map(r => r.date.toISOString().split('T')[0]);
+      
+      const capeContrib = displayRows.map(r => r.cape_change * BDRY_WEIGHTS.cape);
+      const panaContrib = displayRows.map(r => r.panama_change * BDRY_WEIGHTS.panama);
+      const supraContrib = displayRows.map(r => r.suprama_change * BDRY_WEIGHTS.suprama);
+
+      destroyChart('bdiContribChart');
+      const canvas = document.getElementById('bdiContribChart'); if (!canvas) return;
+      chartRegistry['bdiContribChart'] = new Chart(canvas.getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [
+            { label: 'Capesize', data: capeContrib, backgroundColor: '#3fb950' },
+            { label: 'Panamax', data: panaContrib, backgroundColor: '#d29922' },
+            { label: 'Supramax', data: supraContrib, backgroundColor: '#f0883e' }
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { position: 'top', labels: { usePointStyle: true, font: { size: 11 } } },
+            tooltip: {
+              callbacks: {
+                label: c => {
+                  const r = displayRows[c.dataIndex];
+                  const total = r.bdry_spot_change;
+                  if (c.datasetIndex === 0) return ' Cape Contrib: ' + c.parsed.y.toFixed(2);
+                  if (c.datasetIndex === 1) return ' Pana Contrib: ' + c.parsed.y.toFixed(2);
+                  return ' Supra Contrib: ' + c.parsed.y.toFixed(2) + ' (Total BDI Δ: ' + total.toFixed(2) + ')';
+                }
+              }
+            }
+          },
+          scales: {
+            x: { stacked: true, grid: { color: '#151a22' }, ticks: { maxTicksLimit: 12, font: { size: 11 } } },
+            y: { stacked: true, grid: { color: '#151a22' }, ticks: { font: { size: 11 } } }
+          }
+        }
+      });
+    }
+
+    // -------------------------------------------------------
+    // 11. LEAD-LAG CORRELATION
+    // -------------------------------------------------------
+    function renderLeadLagChart() {
+      const pair = document.getElementById('leadLagPair').value;
+      const [keyA, keyB] = pair.split(':');
+      
+      const rowsA = getRows(keyA);
+      const rowsB = getRows(keyB);
+      if (rowsA.length < 50 || rowsB.length < 50) return;
+
+      const mapB = new Map();
+      rowsB.forEach(r => mapB.set(r.date.getTime(), r[keyB]));
+      
+      const alignedA = [], alignedB = [];
+      rowsA.forEach(r => {
+        const valB = mapB.get(r.date.getTime());
+        if (valB != null) {
+          alignedA.push(r[keyA]);
+          alignedB.push(valB);
+        }
+      });
+
+      const returnsA = calculateLogReturns(alignedA);
+      const returnsB = calculateLogReturns(alignedB);
+
+      const crossCorr = computeCrossCorrelation(returnsA, returnsB, 30);
+      
+      const labels = crossCorr.map(x => x.lag);
+      const data = crossCorr.map(x => x.corr);
+
+      let maxAbsCorr = -1, peakLag = 0, peakVal = 0;
+      crossCorr.forEach(x => {
+        if (x.corr != null && Math.abs(x.corr) > maxAbsCorr) {
+          maxAbsCorr = Math.abs(x.corr);
+          peakLag = x.lag;
+          peakVal = x.corr;
+        }
+      });
+
+      const infoEl = document.getElementById('leadLagInfo');
+      if (infoEl) {
+        const labelA = PRODUCTS[keyA].label.split('(')[0].trim();
+        const labelB = PRODUCTS[keyB].label.split('(')[0].trim();
+        let interpretation = '';
+        if (peakLag > 0) interpretation = `${labelA} leads ${labelB} by ${peakLag} trading days`;
+        else if (peakLag < 0) interpretation = `${labelB} leads ${labelA} by ${Math.abs(peakLag)} trading days`;
+        else interpretation = `Coincident correlation (0 lag)`;
+        
+        infoEl.innerHTML = `Peak Correlation: <span class="lead-lag-peak">${peakVal.toFixed(3)}</span> at lag <span class="lead-lag-peak">${peakLag}</span>. <br/> ${interpretation}`;
+      }
+
+      destroyChart('leadLagChart');
+      const canvas = document.getElementById('leadLagChart'); if (!canvas) return;
+      chartRegistry['leadLagChart'] = new Chart(canvas.getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Cross-Correlation',
+            data: data,
+            borderColor: '#a371f7',
+            backgroundColor: 'rgba(163, 113, 247, 0.1)',
+            borderWidth: 2,
+            pointRadius: 3,
+            pointBackgroundColor: x => x.raw === peakVal ? '#f0c040' : '#a371f7',
+            fill: true,
+            tension: 0.1
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { display: false },
+            tooltip: { callbacks: { label: c => ' Lag ' + c.label + ': ' + c.parsed.y.toFixed(3) } }
+          },
+          scales: {
+            x: { 
+              grid: { color: '#151a22' }, 
+              title: { display: true, text: 'Lag (Days) — Positive = A leads B', color: '#8b949e', font: { size: 10 } },
+              ticks: { font: { size: 10 } }
+            },
+            y: { 
+              grid: { color: '#151a22' }, 
+              ticks: { font: { size: 11 } }
+            }
+          }
+        }
+      });
+    }
 
   </script>
 </body>
