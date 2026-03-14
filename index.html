@@ -1711,6 +1711,7 @@
         <option value="cape">Capesize</option>
         <option value="panama">Panamax</option>
         <option value="suprama">Supramax</option>
+        <option value="handysize">Handysize</option>
         <option value="cleantanker">Clean Tanker (BCTI)</option>
         <option value="dirtytanker">Dirty Tanker (BDTI)</option>
         <option value="bdry_spot">BDRY Spot Composite</option>
@@ -2479,6 +2480,7 @@
       cape: { label: 'Capesize', file: 'cape_historical.csv', color: '#3fb950' },
       panama: { label: 'Panamax', file: 'panama_historical.csv', color: '#d29922' },
       suprama: { label: 'Supramax', file: 'suprama_historical.csv', color: '#f0883e' },
+      handysize: { label: 'Handysize', file: 'handysize_historical.csv', color: '#7ee787' },
       cleantanker: { label: 'Clean Tanker (BCTI)', file: 'cleantanker_historical.csv', color: '#a371f7' },
       dirtytanker: { label: 'Dirty Tanker (BDTI)', file: 'dirtytanker_historical.csv', color: '#e3b341' },
       bdry_spot: { label: 'BDRY Spot Composite', file: null, color: '#f0c040', computed: true },
@@ -3359,7 +3361,7 @@
     // =====================================================================
     // CHANGE 3 — Correlation Matrix
     // =====================================================================
-    const CORR_LABELS = ['BDI', 'Cape', 'Panama', 'Supra', 'CleanT', 'DirtyT', 'BDRY Spot', 'BDRYFF', 'BWETFF'];
+    const CORR_LABELS = ['BDI', 'Cape', 'Panama', 'Supra', 'Handy', 'CleanT', 'DirtyT', 'BDRY Spot', 'BDRYFF', 'BWETFF'];
 
     function setCorrTimeframe(el, tf) {
       currentCorrTimeframe = tf;

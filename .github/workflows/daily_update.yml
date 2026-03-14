@@ -37,7 +37,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add bdiy_historical.csv cape_historical.csv panama_historical.csv suprama_historical.csv cleantanker_historical.csv dirtytanker_historical.csv bdryff_history.csv bwetff_history.csv BDRY_Daily.csv BWET_Daily.csv sgx_cape_futures.csv sgx_panamax_futures.csv sgx_supramax_futures.csv sgx_handysize_futures.csv
+        git add bdiy_historical.csv cape_historical.csv panama_historical.csv suprama_historical.csv handysize_historical.csv cleantanker_historical.csv dirtytanker_historical.csv bdryff_history.csv bwetff_history.csv BDRY_Daily.csv BWET_Daily.csv sgx_cape_futures.csv sgx_panamax_futures.csv sgx_supramax_futures.csv sgx_handysize_futures.csv
         git diff --quiet && git diff --staged --quiet || git commit -m "Update indices $(date +'%Y-%m-%d %H:%M UTC')"
         git pull --rebase origin main || echo "Nothing to pull or pull failed"
         git push
