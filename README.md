@@ -123,7 +123,7 @@ Shipping/
 
 Built on **Chart.js 4.4.0** and **PapaParse 5.4.1**. All data fetched client-side — no backend. The global **Index:** dropdown in the header switches the active product across all tabs instantly.
 
-**10 products available:** BDI · Capesize · Panamax · Supramax · Handysize · Clean Tanker · Dirty Tanker · BDRY Spot Composite · BDRYFF · BWETFF
+**12 products available:** BDI · Capesize · Panamax · Supramax · Handysize · Clean Tanker · Dirty Tanker · BDRY Spot Composite · BDRYFF · BWETFF · BDRY Stock Price · BWET Stock Price
 
 ---
 
@@ -244,11 +244,14 @@ Five analytical charts:
 
 | Chart | Description |
 |---|---|
-| **Bollinger Bands (20D, 2σ)** | Price + upper/SMA/lower bands. Window: 1Y / 3Y / 5Y |
+| **Bollinger Bands (20D, 2σ)** | Price + upper/SMA/lower bands. Dual-handle date range slider. |
 | **Cape / Panamax Ratio** | Ratio time series + all-time mean + rolling 252D percentile. Window: 3Y / 5Y / All |
 | **Rate-of-Change Heatmap** | 7 products × 6 timeframes (5D / 10D / 20D / 60D / 90D / 1Y) divergent colour scale |
 | **Seasonal Decomposition** | Historical avg intra-year pattern ± 1σ with current year overlaid |
 | **FFA Term Structure** | Forward curves from live holdings CSVs. Slope labels: 📉 Backwardation / 📈 Contango / ➡️ Flat |
+| **Futures vs Spot Premium** | Basis tracking between front-month futures and spot index. Dual-handle range slider. |
+| **BDI Contribution** | Decomposition of BDI daily change by vessel class (Cape/Pana/Supra). Range slider. |
+| **Lead–Lag Correlation** | Log-return cross-correlation (-30 to +30 days) to detect leads. Categorized: Financial Speed (ETF vs Index), Vessel Rotation (Cape vs Panamax), and Basis Discovery. |
 
 ---
 
@@ -266,6 +269,7 @@ Five analytical charts:
 | **Seasonal Avg** | Mean of `value[trading_day_N]` across all historical years except current |
 | **FFA Slope** | `(back_month − front_month) / front_month × 100` |
 | **BDRY Spot** | `0.50 × BCI + 0.40 × BPI + 0.10 × BSI` |
+| **Lead–Lag Corr** | `corr(log_returns_A_t, log_returns_B_t+lag)` for lag ‐30 to +30 days |
 | **Range %** | `(yearly_max − yearly_min) / yearly_avg × 100` *(uses avg denominator — handles years where min ≤ 0 correctly)* |
 | **Leverage / Exposure** | `(Total Exposure / Collateral Cash) − 1` expressed as % |
 | **52W Position** | Relative position within the trailing 252-day price range (0% = low, 100% = high) |
