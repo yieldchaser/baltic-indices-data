@@ -4649,6 +4649,11 @@
       var bdryMap = {}; bdryFilt.forEach(function (r) { bdryMap[r.date.toISOString().split('T')[0]] = r.z; });
       var bwetMap = {}; bwetFilt.forEach(function (r) { bwetMap[r.date.toISOString().split('T')[0]] = r.z; });
 
+      var pdzHidden = {};
+      var prevPdzChart = chartRegistry['pdZscoreChart'];
+      if (prevPdzChart && prevPdzChart.data && prevPdzChart.data.datasets) {
+        prevPdzChart.data.datasets.forEach(function (ds, i) { pdzHidden[ds.label] = !prevPdzChart.isDatasetVisible(i); });
+      }
       destroyChart('pdZscoreChart');
       chartRegistry['pdZscoreChart'] = new Chart(canvas.getContext('2d'), {
         type: 'line',
@@ -4659,17 +4664,17 @@
               label: 'BDRY Z-Score',
               data: allLabels.map(function (l) { return bdryMap[l] != null ? bdryMap[l] : null; }),
               borderColor: '#00bfff', backgroundColor: 'rgba(0,191,255,0.07)',
-              borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.1, spanGaps: true,
+              borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.1, spanGaps: true, hidden: pdzHidden['BDRY Z-Score'] || false,
             },
             {
               label: 'BWET Z-Score',
               data: allLabels.map(function (l) { return bwetMap[l] != null ? bwetMap[l] : null; }),
               borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,0.07)',
-              borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.1, spanGaps: true,
+              borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.1, spanGaps: true, hidden: pdzHidden['BWET Z-Score'] || false,
             },
-            { label: '+2σ', data: allLabels.map(function () { return 2; }), borderColor: 'rgba(248,81,73,0.5)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0 },
-            { label: '−2σ', data: allLabels.map(function () { return -2; }), borderColor: 'rgba(63,185,80,0.5)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0 },
-            { label: 'Zero', data: allLabels.map(function () { return 0; }), borderColor: 'rgba(139,148,158,0.3)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0 },
+            { label: '+2σ', data: allLabels.map(function () { return 2; }), borderColor: 'rgba(248,81,73,0.5)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0, hidden: pdzHidden['+2σ'] || false },
+            { label: '−2σ', data: allLabels.map(function () { return -2; }), borderColor: 'rgba(63,185,80,0.5)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0, hidden: pdzHidden['−2σ'] || false },
+            { label: 'Zero', data: allLabels.map(function () { return 0; }), borderColor: 'rgba(139,148,158,0.3)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0, hidden: pdzHidden['Zero'] || false },
           ],
         },
         options: {
@@ -6369,16 +6374,21 @@
       });
 
       var prod = PRODUCTS[productKey];
+      var bbHidden = {};
+      var prevBbChart = chartRegistry['bbChart'];
+      if (prevBbChart && prevBbChart.data && prevBbChart.data.datasets) {
+        prevBbChart.data.datasets.forEach(function (ds, i) { bbHidden[ds.label] = !prevBbChart.isDatasetVisible(i); });
+      }
       destroyChart('bbChart');
       var canvas = document.getElementById('bbChart'); if (!canvas) return;
       chartRegistry['bbChart'] = new Chart(canvas.getContext('2d'), {
         type: 'line',
         data: {
           labels: labels, datasets: [
-            { label: prod.label, data: prices, borderColor: prod.color, backgroundColor: prod.color + '22', borderWidth: 2, pointRadius: 0, fill: false, tension: 0.1, order: 1 },
-            { label: 'Upper Band', data: upper, borderColor: '#f85149', backgroundColor: 'rgba(248,81,73,0.08)', borderWidth: 1, pointRadius: 0, fill: '+1', tension: 0.1, order: 2, borderDash: [3, 3] },
-            { label: '20D SMA', data: mid, borderColor: '#e3b341', backgroundColor: 'transparent', borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.1, order: 3, borderDash: [5, 3] },
-            { label: 'Lower Band', data: lower, borderColor: '#3fb950', backgroundColor: 'rgba(63,185,80,0.08)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0.1, order: 4, borderDash: [3, 3] },
+            { label: prod.label, data: prices, borderColor: prod.color, backgroundColor: prod.color + '22', borderWidth: 2, pointRadius: 0, fill: false, tension: 0.1, order: 1, hidden: bbHidden[prod.label] || false },
+            { label: 'Upper Band', data: upper, borderColor: '#f85149', backgroundColor: 'rgba(248,81,73,0.08)', borderWidth: 1, pointRadius: 0, fill: '+1', tension: 0.1, order: 2, borderDash: [3, 3], hidden: bbHidden['Upper Band'] || false },
+            { label: '20D SMA', data: mid, borderColor: '#e3b341', backgroundColor: 'transparent', borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.1, order: 3, borderDash: [5, 3], hidden: bbHidden['20D SMA'] || false },
+            { label: 'Lower Band', data: lower, borderColor: '#3fb950', backgroundColor: 'rgba(63,185,80,0.08)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0.1, order: 4, borderDash: [3, 3], hidden: bbHidden['Lower Band'] || false },
           ]
         },
         options: {
@@ -8238,6 +8248,11 @@
       const panaContrib = displayRows.map(r => r.panama_change * BDRY_WEIGHTS.panama);
       const supraContrib = displayRows.map(r => r.suprama_change * BDRY_WEIGHTS.suprama);
 
+      var bdiHidden = {};
+      var prevBdiChart = chartRegistry['bdiContribChart'];
+      if (prevBdiChart && prevBdiChart.data && prevBdiChart.data.datasets) {
+        prevBdiChart.data.datasets.forEach(function (ds, i) { bdiHidden[ds.label] = !prevBdiChart.isDatasetVisible(i); });
+      }
       destroyChart('bdiContribChart');
       const canvas = document.getElementById('bdiContribChart'); if (!canvas) return;
       chartRegistry['bdiContribChart'] = new Chart(canvas.getContext('2d'), {
@@ -8245,9 +8260,9 @@
         data: {
           labels: labels,
           datasets: [
-            { label: 'Capesize', data: capeContrib, backgroundColor: '#3fb950' },
-            { label: 'Panamax', data: panaContrib, backgroundColor: '#d29922' },
-            { label: 'Supramax', data: supraContrib, backgroundColor: '#f0883e' }
+            { label: 'Capesize', data: capeContrib, backgroundColor: '#3fb950', hidden: bdiHidden['Capesize'] || false },
+            { label: 'Panamax', data: panaContrib, backgroundColor: '#d29922', hidden: bdiHidden['Panamax'] || false },
+            { label: 'Supramax', data: supraContrib, backgroundColor: '#f0883e', hidden: bdiHidden['Supramax'] || false }
           ]
         },
         options: {
