@@ -205,14 +205,19 @@ All 6 base indices as individual chart cards:
 Each card contains:
 1. **Live price + day change** — Yahoo Finance v8 API via CORS proxy; NAV populated from the same response (`meta.navPrice`)
 2. **Metrics row 1:** Total Futures · Collateral Cash · Futures/AUM %
-3. **Metrics row 2:** NAV · Expense Ratio (3.50%) · Leverage = (Total Exposure / Cash) − 1 expressed as %
-4. **Holdings table** — FFA contracts sorted by vessel class → expiry month (nearest first). Scrollable, fixed-height.
-5. **Futures Allocation donut** — normalised to 100% of futures notional (cash excluded)
-6. **Trade route map** — with inline legend (exporting nations / importing nations / routes / BWET focused routes)
-7. **Fundamentals / Data Sources** — sector-specific data links:
+3. **Metrics row 2:** NAV · Expense Ratio (3.50%) · Exposure Ratio
+4. **Metrics row 3:** 52W High — Low · 52W Position (%) · From Last Trough (%)
+5. **Holdings table** — FFA contracts sorted by vessel class → expiry month (nearest first). Scrollable, fixed-height.
+6. **Futures Allocation donut** — normalised to 100% of futures notional (cash excluded)
+7. **Trade route map** — with inline legend (exporting nations / importing nations / routes / BWET focused routes)
+8. **Fundamentals / Data Sources** — sector-specific data links:
    - BDRY: China Steel & Bulk Demand + Export Flow Indicators (macromicro.me)
    - BWET: Crude & Product Demand (Trading Economics, EIA) + Key Trade Routes (TradingView: TD3C / TD20)
-8. **Market Outlook & Research Sources** — Athenia S.A. · Breakwave Advisors · BIMCO · Amplify ETFs official page
+9. **Market Outlook & Research Sources** — categorized market intelligence:
+   - **Research & Insights**: Breakwave Advisors (Research & Insights), BIMCO
+   - **Weekly Market Reports**: Fearnleys Weekly Pulse, Baltic Exchange Weekly Roundup
+   - **Charter Rate Estimates**: Hellenic Shipping News (Weekly dry/tanker charter estimates)
+   - **ETF Data**: Official Amplify and Solactive pages
 
 #### BDRY & BWET Liquidity Tracker *(below the ETF cards)*
 
@@ -225,7 +230,7 @@ Position-sizing model applied to BDRY's full daily history (~1,994 days), fetche
 | Possible Shares | `floor(Volume × Tier%)` |
 | Safe Liquidity | `Possible Shares × Close` |
 
-- **KPI strip** — today's values for all fields
+- **KPI strip** — current session values for all fields + **Total Safe Liquidity (1M)** (rolling 21-day sum)
 - **Safe Liquidity chart** — historical $ tradeable per day
 - **Volume chart** — daily bars coloured by tier, with 50K / 100K / 500K threshold lines
 - **Rolling Averages chart** — 7 windows (10D / 20D / 1M / 3M / 6M / 12M / 24M)
@@ -262,8 +267,11 @@ Five analytical charts:
 | **FFA Slope** | `(back_month − front_month) / front_month × 100` |
 | **BDRY Spot** | `0.50 × BCI + 0.40 × BPI + 0.10 × BSI` |
 | **Range %** | `(yearly_max − yearly_min) / yearly_avg × 100` *(uses avg denominator — handles years where min ≤ 0 correctly)* |
-| **Leverage** | `(Total Exposure / Collateral Cash) − 1` expressed as % |
+| **Leverage / Exposure** | `(Total Exposure / Collateral Cash) − 1` expressed as % |
+| **52W Position** | Relative position within the trailing 252-day price range (0% = low, 100% = high) |
+| **From Last Trough** | Percentage increase from the lowest price reached in the last 365 calendar days |
 | **Safe Liquidity** | `floor(Volume × tier%) × Close` |
+| **Total Safe Liquidity (1M)** | Sum of `Safe Liquidity` over the trailing 21 trading days (approx. one month) |
 
 ---
 
