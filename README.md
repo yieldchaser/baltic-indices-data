@@ -141,6 +141,11 @@ Main overview for the selected index.
   | ⚠️ VALUE TRAP | 5Y pctl < 30%, all-time pctl < 30% |
   | 🔹 ACCUMULATE | 5Y pctl < 40% |
   | ⏳ WAIT | all other |
+| **MOMENTUM REGIME** | Computed via `MA(200)` and `ROC(60)`: |
+| 🟢 EXPANSION | Price > MA200, ROC60 > 0 |
+| 🟡 DISTRIBUTION | Price > MA200, ROC60 ≤ 0 |
+| 🔵 ACCUMULATION | Price ≤ MA200, ROC60 > 0 |
+| 🔴 CONTRACTION | Price ≤ MA200, ROC60 ≤ 0 |
 
 - **6 stat cards:** All-Time Pctl · 10Y Pctl · 5Y Pctl · Z-Score · 52-Week Drawdown · 20D RoC
 - **Historical Context Strip:** 5Y avg, current vs 5Y avg %, current vs 10Y avg %
@@ -194,7 +199,7 @@ Main overview for the selected index.
 All 6 base indices as individual chart cards:
 - Current value, day change %
 - Dual-handle date range slider — zoom to any window, defaults to last 5 years
-- Stats strip: All-Time High · All-Time Low · Current vs ATH · YTD %
+- Stats strip: 52W High — Low · 52W Position · YTD % · From Last Trough
 
 ---
 
@@ -251,7 +256,7 @@ Five analytical charts:
 | **FFA Term Structure** | Forward curves from live holdings CSVs. Slope labels: 📉 Backwardation / 📈 Contango / ➡️ Flat |
 | **Futures vs Spot Premium** | Basis tracking between front-month futures and spot index. Dual-handle range slider. |
 | **BDI Contribution** | Decomposition of BDI daily change by vessel class (Cape/Pana/Supra). Range slider. |
-| **Lead–Lag Correlation** | Log-return cross-correlation (-30 to +30 days) to detect leads. Categorized: Financial Speed (ETF vs Index), Vessel Rotation (Cape vs Panamax), and Basis Discovery. |
+| **Lead–Lag Correlation** | Log-return cross-correlation (-30 to +30 days) to detect leads. Categorized: **Financial Speed** (ETF vs Index/Futures), **Vessel Rotation** (Ripple Effects: Cape vs Pana/Supra), and **Basis & Indices** (Spot vs Futures). |
 
 ---
 
@@ -271,11 +276,29 @@ Five analytical charts:
 | **BDRY Spot** | `0.50 × BCI + 0.40 × BPI + 0.10 × BSI` |
 | **Lead–Lag Corr** | `corr(log_returns_A_t, log_returns_B_t+lag)` for lag ‐30 to +30 days |
 | **Range %** | `(yearly_max − yearly_min) / yearly_avg × 100` *(uses avg denominator — handles years where min ≤ 0 correctly)* |
+| **Momentum Regime** | Classification based on long-term trend (`MA200`) and mid-term momentum (`ROC60`) |
 | **Leverage / Exposure** | `(Total Exposure / Collateral Cash) − 1` expressed as % |
+| **52W High — Low** | Highest and lowest price reached in the trailing 52 weeks |
 | **52W Position** | Relative position within the trailing 252-day price range (0% = low, 100% = high) |
 | **From Last Trough** | Percentage increase from the lowest price reached in the last 365 calendar days |
 | **Safe Liquidity** | `floor(Volume × tier%) × Close` |
 | **Total Safe Liquidity (1M)** | Sum of `Safe Liquidity` over the trailing 21 trading days (approx. one month) |
+
+---
+
+## Engineering & Performance
+
+As a zero-infrastructure platform processing thousands of data points client-side, the dashboard implements several custom engineering optimizations to ensure sub-100ms render times:
+
+### ⚡ Client-Side Optimizations
+
+| Optimization | Implementation | Purpose |
+|---|---|---|
+| **O(n) Rolling Max** | Monotonic Deque (Sliding Window) | Calculates 365-day rolling drawdown in constant time per point, replacing nested loops. |
+| **Chart Decimation** | LTTB (Largest Triangle Three Buckets) | Reduces point count to 120 samples for high-density charts without losing visual significance. |
+| **Render Throttling** | Async `setTimeout` chains | staggers chart initialization at 50ms intervals to prevent UI thread blocking. |
+| **Animation Zeroing** | Config-level disable | Eliminates per-frame repaints and transition overhead for all 20+ charts. |
+| **Calculation Caching** | Memoized Correlation Pairs | Caches expensive cross-correlation results (O(n * maxLag)) to avoid re-computation on tab switch. |
 
 ---
 

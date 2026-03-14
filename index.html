@@ -5659,7 +5659,7 @@
       var seen = {}, years = [];
       DATA.master.forEach(function (r) { if (!seen[r.year]) { seen[r.year] = 1; years.push(r.year); } });
       years.sort(function (a, b) { return a - b; });
-      var datasets = PRODUCT_KEYS.map(function (key) {
+      var datasets = PRODUCT_KEYS.filter(function (k) { return k !== 'bdry' && k !== 'bwet'; }).map(function (key) {
         return {
           label: PRODUCTS[key].label,
           data: years.map(function (y) { var v = DATA.master.filter(function (r) { return r.year === y && r[key] != null; }).map(function (r) { return r[key]; }); return v.length ? mean(v) : null; }),
@@ -5698,7 +5698,7 @@
 
     function renderYDRatesOverlay(canvasId) {
       var cy = new Date().getFullYear(), yrs = 4, ops = ['ff', 'bb', '77', '44'], datasets = [], maxDays = 0;
-      PRODUCT_KEYS.forEach(function (key) {
+      PRODUCT_KEYS.filter(function (k) { return k !== 'bdry' && k !== 'bwet'; }).forEach(function (key) {
         var prodByYear = (DATA.byYearProduct && DATA.byYearProduct[key]) || DATA.byYear;
         for (var yo = 0; yo < yrs; yo++) {
           var y = cy - yo, rows = (prodByYear[y] || []);
@@ -6262,7 +6262,7 @@
       ];
 
       // For each product, get latest value and value N days ago
-      var prodLabels = { bdiy: 'BDI', cape: 'Capesize', panama: 'Panamax', suprama: 'Supramax', handysize: 'Handysize', cleantanker: 'Clean Tanker', dirtytanker: 'Dirty Tanker', bdry_spot: 'BDRY Spot', bdryff: 'BDRYFF', bwetff: 'BWETFF' };
+      var prodLabels = { bdiy: 'BDI', cape: 'Capesize', panama: 'Panamax', suprama: 'Supramax', handysize: 'Handysize', cleantanker: 'Clean Tanker', dirtytanker: 'Dirty Tanker', bdry_spot: 'BDRY Spot', bdryff: 'BDRYFF', bwetff: 'BWETFF', bdry: 'BDRY Stock', bwet: 'BWET Stock' };
 
       var html = '<table class="heatmap-table" style="min-width:520px;width:100%"><thead><tr>';
       html += '<th style="text-align:left">Product</th>';
