@@ -3804,7 +3804,7 @@
       });
       const container = document.getElementById('etfCorrMatrix');
       if (!container) return;
-      const etfKeys = ['bdry_price', 'bwet_price'];
+      const etfKeys = ['bdry', 'bwet'];
       const etfLabels = ['BDRY Price', 'BWET Price'];
       let html = `<table class="corr-table"><thead><tr><th></th>`;
       for (const lbl of CORR_LABELS) html += `<th>${lbl}</th>`;
