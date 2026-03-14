@@ -2379,6 +2379,38 @@
         <div class="chart-canvas-wrap" style="height:320px"><canvas id="bbChart"></canvas></div>
       </div>
 
+      <!-- 1b. Historical Volatility -->
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title">Historical Volatility — Annualized (Log-Return Std Dev × √252)</div>
+          <div class="flex-row" style="gap:6px;align-items:center;">
+            <button class="toggle-btn active" id="hvBtn3y" onclick="setHVWindow('3y')">3Y</button>
+            <button class="toggle-btn" id="hvBtn5y" onclick="setHVWindow('5y')">5Y</button>
+            <button class="toggle-btn" id="hvBtnAll" onclick="setHVWindow('all')">All</button>
+          </div>
+        </div>
+        <div id="hvKpiStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;"></div>
+        <div class="index-range-wrap" style="padding: 2px 0 6px;">
+          <div class="index-range-label">
+            <span>Range:</span>
+            <span id="hvRangeLabel">Loading…</span>
+          </div>
+          <div class="dual-range-track" id="hvRangeTrack">
+            <div class="dual-range-fill" id="hvRangeFill"></div>
+            <input type="range" id="hvRangeStart" min="0" max="100" value="0" step="1">
+            <input type="range" id="hvRangeEnd" min="0" max="100" value="100" step="1">
+          </div>
+        </div>
+        <div class="chart-canvas-wrap" style="height:320px"><canvas id="hvChart"></canvas></div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
+          Annualized HV = rolling std dev of log returns × √252. Regimes based on 1Y HV vs all-time percentile: &nbsp;
+          <span style="color:#58a6ff">■ Low</span> (&lt;25th) &nbsp;
+          <span style="color:#3fb950">■ Normal</span> (25–75th) &nbsp;
+          <span style="color:#e3b341">■ Elevated</span> (75–90th) &nbsp;
+          <span style="color:#f85149">■ Spike</span> (&gt;90th)
+        </div>
+      </div>
+
       <!-- 2. Cape/Panamax Spread -->
       <div class="chart-container mb-20">
         <div class="chart-header">
@@ -6044,7 +6076,22 @@
       if (document.getElementById('basisRangeStart')) initBasisRange();
       if (document.getElementById('bdiContribRangeStart')) initBDIContribRange();
 
+      // HV: set 3Y default on first load, then preserve user position on product switch
+      if (document.getElementById('hvRangeStart')) {
+        const hvStartEl = document.getElementById('hvRangeStart');
+        if (!hvStartEl._allRows) {
+          const hvRows = getRows(productKey);
+          const hvCutoff = new Date(); hvCutoff.setFullYear(hvCutoff.getFullYear() - 3);
+          let hvS = hvRows.findIndex(function (r) { return r.date >= hvCutoff; });
+          if (hvS < 0) hvS = 0;
+          hvStartEl.value = hvS;
+          document.getElementById('hvRangeEnd').value = hvRows.length - 1;
+        }
+        initHVRange(productKey);
+      }
+
       var fns = [
+        function () { renderHVChart(productKey); },
         function () { renderBollingerBands(productKey); },
         function () { renderCapeSpread(); },
         function () { renderROCHeatmap(); },
@@ -6058,6 +6105,178 @@
       ];
       fns.forEach(function (fn, i) {
         setTimeout(function () { try { fn(); } catch (e) { console.error('[SignalsTab]', e); } }, i * 16);
+      });
+    }
+
+    // -------------------------------------------------------
+    // 1b. HISTORICAL VOLATILITY
+    // -------------------------------------------------------
+    var _hvWindow = '3y';
+    var _currentHVProduct = 'bdiy';
+    var _hvAll252Cache = {};  // memoized all-time 252D HV series per product
+
+    function setHVWindow(w) {
+      _hvWindow = w;
+      ['3y', '5y', 'all'].forEach(function (x) {
+        const el = document.getElementById('hvBtn' + x);
+        if (el) el.classList.toggle('active', x === w);
+      });
+      const rows = getRows(_currentHVProduct);
+      const startEl = document.getElementById('hvRangeStart');
+      const endEl = document.getElementById('hvRangeEnd');
+      if (rows.length && startEl && endEl) {
+        const cutoff = new Date();
+        if (w === '3y') cutoff.setFullYear(cutoff.getFullYear() - 3);
+        else if (w === '5y') cutoff.setFullYear(cutoff.getFullYear() - 5);
+        else cutoff.setFullYear(2000);
+        let sIdx = rows.findIndex(function (r) { return r.date >= cutoff; });
+        if (sIdx === -1 || w === 'all') sIdx = 0;
+        startEl.value = sIdx;
+        endEl.value = rows.length - 1;
+        initHVRange(_currentHVProduct);
+      } else {
+        renderHVChart(_currentHVProduct);
+      }
+    }
+
+    function initHVRange(productKey) {
+      const rows = getRows(productKey);
+      initDualRangeSlider('hvRange', rows, function () {
+        clearTimeout(renderHVChart._t);
+        renderHVChart._t = setTimeout(function () { renderHVChart(productKey); }, 60);
+      });
+    }
+
+    function renderHVChart(productKey) {
+      _currentHVProduct = productKey;
+      const allRows = getRows(productKey);
+      if (allRows.length < 30) return;
+
+      const startEl = document.getElementById('hvRangeStart');
+      const endEl = document.getElementById('hvRangeEnd');
+      const s = startEl ? parseInt(startEl.value) : 0;
+      const e = endEl ? parseInt(endEl.value) : allRows.length - 1;
+      const rows = allRows.slice(s, e + 1);
+      if (rows.length < 10) return;
+
+      const SQRT252 = Math.sqrt(252);
+
+      // Pre-compute log returns for entire allRows
+      const logRets = [];
+      for (let i = 0; i < allRows.length; i++) {
+        const cur = allRows[i][productKey];
+        const prev = i > 0 ? allRows[i - 1][productKey] : null;
+        if (cur != null && cur > 0 && prev != null && prev > 0) {
+          logRets.push(Math.log(cur / prev));
+        } else {
+          logRets.push(null);
+        }
+      }
+
+      // Build index map once — O(1) lookup of global index for each visible row
+      const allRowsMap = new Map();
+      allRows.forEach(function (r, i) { allRowsMap.set(r, i); });
+
+      const labels = [], hv20 = [], hv60 = [], hv252 = [];
+
+      rows.forEach(function (r) {
+        labels.push(r.date.toISOString().split('T')[0]);
+        const gi = allRowsMap.get(r);
+        [[20, hv20], [60, hv60], [252, hv252]].forEach(function (pair) {
+          const win = pair[0], arr = pair[1];
+          const slice = [];
+          for (let j = Math.max(0, gi - win + 1); j <= gi; j++) {
+            if (logRets[j] != null) slice.push(logRets[j]);
+          }
+          if (slice.length < Math.ceil(win * 0.6)) { arr.push(null); return; }
+          const m = slice.reduce(function (a, b) { return a + b; }, 0) / slice.length;
+          const variance = slice.reduce(function (a, b) { return a + (b - m) * (b - m); }, 0) / slice.length;
+          arr.push(Math.sqrt(variance) * SQRT252 * 100);
+        });
+      });
+
+      // Compute all-time 252D HV for regime percentile — memoized per product
+      if (!_hvAll252Cache[productKey]) {
+        const all252 = [];
+        // Re-compute logRets for full allRows (already done above, reuse logRets)
+        for (let gi = 0; gi < allRows.length; gi++) {
+          const slice = [];
+          for (let j = Math.max(0, gi - 251); j <= gi; j++) {
+            if (logRets[j] != null) slice.push(logRets[j]);
+          }
+          if (slice.length < 100) { all252.push(null); continue; }
+          const m = slice.reduce(function (a, b) { return a + b; }, 0) / slice.length;
+          const variance = slice.reduce(function (a, b) { return a + (b - m) * (b - m); }, 0) / slice.length;
+          all252.push(Math.sqrt(variance) * SQRT252 * 100);
+        }
+        _hvAll252Cache[productKey] = all252.filter(function (v) { return v != null; });
+      }
+      const validAll252 = _hvAll252Cache[productKey];
+
+      // KPI: latest non-null values
+      const cur20 = hv20.slice().reverse().find(function (v) { return v != null; });
+      const cur60 = hv60.slice().reverse().find(function (v) { return v != null; });
+      const cur252 = hv252.slice().reverse().find(function (v) { return v != null; });
+
+      let regimeLabel = '—', regimeColor = 'var(--text-muted)';
+      if (cur252 != null && validAll252.length > 50) {
+        const pctl = percentileRank(validAll252, cur252) * 100;
+        if (pctl > 90) { regimeLabel = '🔴 SPIKE'; regimeColor = '#f85149'; }
+        else if (pctl > 75) { regimeLabel = '🟡 ELEVATED'; regimeColor = '#e3b341'; }
+        else if (pctl > 25) { regimeLabel = '🟢 NORMAL'; regimeColor = '#3fb950'; }
+        else { regimeLabel = '🔵 LOW'; regimeColor = '#58a6ff'; }
+      }
+
+      const kpiEl = document.getElementById('hvKpiStrip');
+      if (kpiEl) {
+        kpiEl.innerHTML = [
+          { label: '20D HV', val: cur20 != null ? cur20.toFixed(1) + '%' : '—', color: '#58a6ff' },
+          { label: '60D HV', val: cur60 != null ? cur60.toFixed(1) + '%' : '—', color: '#3fb950' },
+          { label: '1Y HV', val: cur252 != null ? cur252.toFixed(1) + '%' : '—', color: '#a371f7' },
+          { label: 'Vol Regime', val: regimeLabel, color: regimeColor },
+        ].map(function (k) {
+          return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 14px;min-width:100px;">' +
+            '<div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;">' + k.label + '</div>' +
+            '<div style="font-size:15px;font-weight:700;color:' + k.color + '">' + k.val + '</div></div>';
+        }).join('');
+      }
+
+      destroyChart('hvChart');
+      const canvas = document.getElementById('hvChart'); if (!canvas) return;
+      chartRegistry['hvChart'] = new Chart(canvas.getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            { label: '20D HV', data: hv20, borderColor: '#58a6ff', backgroundColor: 'transparent', borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.1 },
+            { label: '60D HV', data: hv60, borderColor: '#3fb950', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 0, fill: false, tension: 0.1 },
+            { label: '1Y HV', data: hv252, borderColor: '#a371f7', backgroundColor: 'rgba(163,113,247,0.07)', borderWidth: 2.5, pointRadius: 0, fill: true, tension: 0.1 },
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          animation: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { position: 'top', labels: { usePointStyle: true, font: { size: 11 } } },
+            tooltip: {
+              callbacks: {
+                label: function (c) {
+                  if (c.parsed.y == null) return null;
+                  return ' ' + c.dataset.label + ': ' + c.parsed.y.toFixed(1) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: { grid: { color: '#151a22' }, ticks: { maxTicksLimit: 10, font: { size: 11 } } },
+            y: {
+              grid: { color: '#151a22' },
+              ticks: { font: { size: 11 }, callback: function (v) { return v.toFixed(0) + '%'; } },
+              title: { display: true, text: 'Annualized HV (%)', color: '#8b949e', font: { size: 11 } }
+            }
+          }
+        }
       });
     }
 
