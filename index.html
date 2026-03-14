@@ -2215,6 +2215,38 @@
         </div>
       </div>
 
+      <!-- ETF Historical Volatility -->
+      <div class="chart-container mb-20" style="margin-top:24px;">
+        <div class="chart-header">
+          <div class="chart-title">Historical Volatility — BDRY &amp; BWET (Annualized, Log-Return Std Dev × √252)</div>
+          <div class="flex-row" style="gap:6px;align-items:center;">
+            <button class="toggle-btn active" id="etfHvBtn3y" onclick="setETFHVWindow('3y')">3Y</button>
+            <button class="toggle-btn" id="etfHvBtn5y" onclick="setETFHVWindow('5y')">5Y</button>
+            <button class="toggle-btn" id="etfHvBtnAll" onclick="setETFHVWindow('all')">All</button>
+          </div>
+        </div>
+        <div id="etfHvKpiStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;"></div>
+        <div class="index-range-wrap" style="padding:2px 0 6px;">
+          <div class="index-range-label">
+            <span>Range:</span>
+            <span id="etfHvRangeLabel">Loading…</span>
+          </div>
+          <div class="dual-range-track" id="etfHvRangeTrack">
+            <div class="dual-range-fill" id="etfHvRangeFill"></div>
+            <input type="range" id="etfHvRangeStart" min="0" max="100" value="0" step="1">
+            <input type="range" id="etfHvRangeEnd" min="0" max="100" value="100" step="1">
+          </div>
+        </div>
+        <div class="chart-canvas-wrap" style="height:320px"><canvas id="etfHvChart"></canvas></div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
+          Annualized HV = rolling std dev of log returns × √252. Computed from daily close prices (bdry_liquidity.csv / bwet_liquidity.csv). Regimes based on 1Y HV vs all-time percentile: &nbsp;
+          <span style="color:#58a6ff">■ Low</span> (&lt;25th) &nbsp;
+          <span style="color:#3fb950">■ Normal</span> (25–75th) &nbsp;
+          <span style="color:#e3b341">■ Elevated</span> (75–90th) &nbsp;
+          <span style="color:#f85149">■ Spike</span> (&gt;90th)
+        </div>
+      </div>
+
       <!-- NEW: Cross-Asset Correlation Section -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
@@ -4696,6 +4728,261 @@
       });
     }
 
+    // -------------------------------------------------------
+    // ETF HISTORICAL VOLATILITY
+    // -------------------------------------------------------
+    var _etfHvWindow = '3y';
+    var _etfHvAll252Cache = {};  // memoized all-time 1Y HV per ETF key
+
+    function _buildETFHVRows(etfKey) {
+      // Build sorted { date, close } array from liquidity CSV (already loaded at startup)
+      var liqRaw = etfKey === 'bdry' ? DATA.bdryLiquidity : DATA.bwetLiquidity;
+      if (!liqRaw || !liqRaw.length) return [];
+      var out = [];
+      liqRaw.forEach(function (r) {
+        var d = parseDateISO(r.date);
+        var c = parseFloat(r.close);
+        if (d && !isNaN(c) && c > 0) out.push({ date: d, close: c });
+      });
+      out.sort(function (a, b) { return a.date - b.date; });
+      return out;
+    }
+
+    function setETFHVWindow(w) {
+      _etfHvWindow = w;
+      ['3y', '5y', 'all'].forEach(function (x) {
+        var el = document.getElementById('etfHvBtn' + x);
+        if (el) el.classList.toggle('active', x === w);
+      });
+      var allRows = _buildETFHVRows('bdry');  // use bdry length for slider (both similar)
+      var startEl = document.getElementById('etfHvRangeStart');
+      var endEl = document.getElementById('etfHvRangeEnd');
+      if (allRows.length && startEl && endEl) {
+        var cutoff = new Date();
+        if (w === '3y') cutoff.setFullYear(cutoff.getFullYear() - 3);
+        else if (w === '5y') cutoff.setFullYear(cutoff.getFullYear() - 5);
+        else cutoff.setFullYear(2000);
+        var sIdx = allRows.findIndex(function (r) { return r.date >= cutoff; });
+        if (sIdx < 0) sIdx = 0;
+        startEl.value = sIdx;
+        endEl.value = allRows.length - 1;
+        startEl.dispatchEvent(new Event('input'));
+      }
+    }
+
+    function initETFHVRange() {
+      var allRows = _buildETFHVRows('bdry');
+      if (!allRows.length) return;
+      var startEl = document.getElementById('etfHvRangeStart');
+      var isFirst = startEl && !startEl._etfHvInited;
+      initDualRangeSlider('etfHvRange', allRows, function () {
+        clearTimeout(renderETFHVChart._t);
+        renderETFHVChart._t = setTimeout(renderETFHVChart, 60);
+      });
+      if (isFirst && startEl && allRows.length) {
+        var endEl = document.getElementById('etfHvRangeEnd');
+        var cutoff = new Date(); cutoff.setFullYear(cutoff.getFullYear() - 3);
+        var sIdx = allRows.findIndex(function (r) { return r.date >= cutoff; });
+        if (sIdx < 0) sIdx = 0;
+        startEl.value = sIdx;
+        endEl.value = allRows.length - 1;
+        startEl._etfHvInited = true;
+        startEl.dispatchEvent(new Event('input'));
+      }
+    }
+
+    function renderETFHVChart() {
+      var SQRT252 = Math.sqrt(252);
+      var ETF_KEYS = ['bdry', 'bwet'];
+      var ETF_COLORS = { bdry: '#00bfff', bwet: '#ff6b6b' };
+      var ETF_LABELS = { bdry: 'BDRY', bwet: 'BWET' };
+      var HV_WINDOWS = [20, 60, 252];
+
+      // Build aligned date union from both ETFs
+      var allRowsMap = {};
+      ETF_KEYS.forEach(function (k) {
+        var rows = _buildETFHVRows(k);
+        rows.forEach(function (r) {
+          var ds = r.date.toISOString().split('T')[0];
+          if (!allRowsMap[ds]) allRowsMap[ds] = {};
+          allRowsMap[ds][k] = r.close;
+        });
+      });
+
+      var allDates = Object.keys(allRowsMap).sort();
+      var startEl = document.getElementById('etfHvRangeStart');
+      var endEl = document.getElementById('etfHvRangeEnd');
+
+      // Slider is keyed to bdry rows for index mapping
+      var bdryRows = _buildETFHVRows('bdry');
+      var s = startEl ? parseInt(startEl.value) : 0;
+      var e = endEl ? parseInt(endEl.value) : bdryRows.length - 1;
+      var sDate = bdryRows[s] ? bdryRows[s].date.toISOString().split('T')[0] : allDates[0];
+      var eDate = bdryRows[e] ? bdryRows[e].date.toISOString().split('T')[0] : allDates[allDates.length - 1];
+      var visibleDates = allDates.filter(function (d) { return d >= sDate && d <= eDate; });
+      if (visibleDates.length < 5) return;
+
+      // Pre-compute log returns per ETF over full date range
+      var logRetsMap = {};
+      ETF_KEYS.forEach(function (k) {
+        var rets = {};
+        var prev = null;
+        allDates.forEach(function (ds) {
+          var cur = allRowsMap[ds] ? allRowsMap[ds][k] : null;
+          if (cur != null && prev != null && prev > 0 && cur > 0) {
+            rets[ds] = Math.log(cur / prev);
+          }
+          if (cur != null) prev = cur;
+        });
+        logRetsMap[k] = rets;
+      });
+
+      // Compute rolling HV for each ETF × window over visible dates
+      // We need lookback before visibleDates[0] so slice from allDates
+      var labels = visibleDates;
+      var datasets = [];
+
+      // Preserve legend toggle state
+      var etfHvHidden = {};
+      var prevEtfHvChart = chartRegistry['etfHvChart'];
+      if (prevEtfHvChart && prevEtfHvChart.data && prevEtfHvChart.data.datasets) {
+        prevEtfHvChart.data.datasets.forEach(function (ds, i) {
+          etfHvHidden[ds.label] = !prevEtfHvChart.isDatasetVisible(i);
+        });
+      }
+
+      // For each ETF, compute 20D / 60D / 1Y HV series
+      // Only show 1Y by default for cleanliness (other two togglable)
+      var winStyles = {
+        20:  { dash: [3,3], width: 1.5 },
+        60:  { dash: [6,3], width: 1.5 },
+        252: { dash: [],    width: 2.5 },
+      };
+      var winLabels = { 20: '20D', 60: '60D', 252: '1Y' };
+
+      ETF_KEYS.forEach(function (k) {
+        var rets = logRetsMap[k];
+        HV_WINDOWS.forEach(function (win) {
+          var hvSeries = labels.map(function (ds) {
+            // collect up to `win` returns ending at ds
+            var dsIdx = allDates.indexOf(ds);
+            var slice = [];
+            for (var j = Math.max(0, dsIdx - win + 1); j <= dsIdx; j++) {
+              var v = rets[allDates[j]];
+              if (v != null) slice.push(v);
+            }
+            if (slice.length < Math.ceil(win * 0.6)) return null;
+            var m = slice.reduce(function (a, b) { return a + b; }, 0) / slice.length;
+            var variance = slice.reduce(function (a, b) { return a + (b - m) * (b - m); }, 0) / slice.length;
+            return Math.sqrt(variance) * SQRT252 * 100;
+          });
+          var dsLabel = ETF_LABELS[k] + ' ' + winLabels[win] + ' HV';
+          var style = winStyles[win];
+          datasets.push({
+            label: dsLabel,
+            data: hvSeries,
+            borderColor: ETF_COLORS[k],
+            backgroundColor: win === 252 ? ETF_COLORS[k] + '12' : 'transparent',
+            borderWidth: style.width,
+            borderDash: style.dash,
+            pointRadius: 0,
+            fill: win === 252,
+            tension: 0.1,
+            hidden: etfHvHidden.hasOwnProperty(dsLabel) ? etfHvHidden[dsLabel] : (win !== 252),
+          });
+        });
+      });
+
+      // KPI strip — latest 1Y HV + regime for each ETF
+      var kpiEl = document.getElementById('etfHvKpiStrip');
+      if (kpiEl) {
+        var kpiHtml = '';
+        ETF_KEYS.forEach(function (k) {
+          var rets = logRetsMap[k];
+          // Current 1Y HV
+          var lastDate = allDates[allDates.length - 1];
+          var lastIdx = allDates.length - 1;
+          var slice = [];
+          for (var j = Math.max(0, lastIdx - 251); j <= lastIdx; j++) {
+            var v = rets[allDates[j]];
+            if (v != null) slice.push(v);
+          }
+          var cur1y = null;
+          if (slice.length >= 100) {
+            var m = slice.reduce(function (a, b) { return a + b; }, 0) / slice.length;
+            var variance = slice.reduce(function (a, b) { return a + (b - m) * (b - m); }, 0) / slice.length;
+            cur1y = Math.sqrt(variance) * SQRT252 * 100;
+          }
+          // All-time 1Y HV for regime (memoized)
+          var cacheKey = k;
+          if (!_etfHvAll252Cache[cacheKey]) {
+            var all1y = [];
+            allDates.forEach(function (ds, di) {
+              var sl = [];
+              for (var j = Math.max(0, di - 251); j <= di; j++) {
+                var v = rets[allDates[j]];
+                if (v != null) sl.push(v);
+              }
+              if (sl.length < 100) { all1y.push(null); return; }
+              var mm = sl.reduce(function (a, b) { return a + b; }, 0) / sl.length;
+              var vv = sl.reduce(function (a, b) { return a + (b - mm) * (b - mm); }, 0) / sl.length;
+              all1y.push(Math.sqrt(vv) * SQRT252 * 100);
+            });
+            _etfHvAll252Cache[cacheKey] = all1y.filter(function (v) { return v != null; });
+          }
+          var validAll = _etfHvAll252Cache[cacheKey];
+          var regimeLabel = '—', regimeColor = 'var(--text-muted)';
+          if (cur1y != null && validAll.length > 50) {
+            var pctl = percentileRank(validAll, cur1y) * 100;
+            if (pctl > 90)      { regimeLabel = '🔴 SPIKE';    regimeColor = '#f85149'; }
+            else if (pctl > 75) { regimeLabel = '🟡 ELEVATED'; regimeColor = '#e3b341'; }
+            else if (pctl > 25) { regimeLabel = '🟢 NORMAL';   regimeColor = '#3fb950'; }
+            else                { regimeLabel = '🔵 LOW';       regimeColor = '#58a6ff'; }
+          }
+          kpiHtml += [
+            { label: ETF_LABELS[k] + ' 1Y HV', val: cur1y != null ? cur1y.toFixed(1) + '%' : '—', color: ETF_COLORS[k] },
+            { label: ETF_LABELS[k] + ' Regime', val: regimeLabel, color: regimeColor },
+          ].map(function (item) {
+            return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 14px;min-width:110px;">' +
+              '<div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;">' + item.label + '</div>' +
+              '<div style="font-size:15px;font-weight:700;color:' + item.color + '">' + item.val + '</div></div>';
+          }).join('');
+        });
+        kpiEl.innerHTML = kpiHtml;
+      }
+
+      destroyChart('etfHvChart');
+      var canvas = document.getElementById('etfHvChart'); if (!canvas) return;
+      chartRegistry['etfHvChart'] = new Chart(canvas.getContext('2d'), {
+        type: 'line',
+        data: { labels: labels, datasets: datasets },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          animation: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { position: 'top', labels: { usePointStyle: true, font: { size: 11 } } },
+            tooltip: {
+              callbacks: {
+                label: function (c) {
+                  if (c.parsed.y == null) return null;
+                  return ' ' + c.dataset.label + ': ' + c.parsed.y.toFixed(1) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: { grid: { color: '#151a22' }, ticks: { maxTicksLimit: 10, font: { size: 11 } } },
+            y: {
+              grid: { color: '#151a22' },
+              ticks: { font: { size: 11 }, callback: function (v) { return v.toFixed(0) + '%'; } },
+              title: { display: true, text: 'Annualized HV (%)', color: '#8b949e', font: { size: 11 } }
+            }
+          }
+        }
+      });
+    }
+
     async function renderETFTab() {
       const grid = document.getElementById('etfGrid');
       if (grid.dataset.rendered) return;
@@ -4712,6 +4999,9 @@
 
       // P/D history chart
       try { renderPDHistoryChart(); } catch (e) { console.error('[ETFTab P/D]', e); }
+
+      // ETF HV chart
+      try { initETFHVRange(); } catch (e) { console.error('[ETFTab HV]', e); }
     }
 
     function classifyHolding(name, ticker, etf) {
