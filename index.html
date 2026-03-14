@@ -2748,7 +2748,7 @@
       for (let i = 1; i < series.length; i++) {
         const curr = series[i];
         const prev = series[i - 1];
-        if (curr != null && prev != null && prev > 0) {
+        if (curr != null && curr > 0 && prev != null && prev > 0) {
           returns.push(Math.log(curr / prev));
         } else {
           returns.push(null);
@@ -7856,6 +7856,7 @@
       
       const rowsA = getRows(keyA);
       const rowsB = getRows(keyB);
+
       if (rowsA.length < 50 || rowsB.length < 50) return;
 
       const mapB = new Map();
@@ -7870,9 +7871,11 @@
         }
       });
 
+      if (alignedA.length < 50) return;
+
       const returnsA = calculateLogReturns(alignedA);
       const returnsB = calculateLogReturns(alignedB);
-
+      
       const crossCorr = computeCrossCorrelation(returnsA, returnsB, 30);
       
       const labels = crossCorr.map(x => x.lag);
@@ -7880,7 +7883,7 @@
 
       let maxAbsCorr = -1, peakLag = 0, peakVal = 0;
       crossCorr.forEach(x => {
-        if (x.corr != null && Math.abs(x.corr) > maxAbsCorr) {
+        if (x.corr != null && !isNaN(x.corr) && Math.abs(x.corr) > maxAbsCorr) {
           maxAbsCorr = Math.abs(x.corr);
           peakLag = x.lag;
           peakVal = x.corr;
