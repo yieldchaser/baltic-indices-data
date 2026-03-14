@@ -2968,6 +2968,9 @@
       Chart.defaults.plugins.tooltip.titleColor = '#e6edf3';
       Chart.defaults.plugins.tooltip.bodyColor = '#8b949e';
       Chart.defaults.plugins.tooltip.padding = 10;
+      // Perf: disable all chart animations — eliminates per-frame repaints on every render
+      Chart.defaults.animation = false;
+      Chart.defaults.transitions = {};
     });
 
     const chartRegistry = {};
@@ -3547,24 +3550,35 @@
       cutoff3y.setFullYear(cutoff3y.getFullYear() - 3);
       const filtered = rows.filter(r => r.date >= cutoff3y);
 
-      // Rolling 365-day max for each point
+      // O(n) rolling 365-day max using a monotonic deque (sliding window maximum)
       const ddData = [];
       const labels = [];
+      const W = 365 * 24 * 60 * 60 * 1000; // 365 days in ms
+      // deque holds indices into `rows` (not filtered) — values are non-increasing
+      const deque = [];
+      let lo = 0; // left pointer into rows
+      let fi = 0; // pointer into rows for the current filtered[i]
 
       for (let i = 0; i < filtered.length; i++) {
-        const current = filtered[i];
-        const cutoff365 = new Date(current.date);
-        cutoff365.setDate(cutoff365.getDate() - 365);
-        // find max in last 365 days from the full rows array
-        let maxVal = current[productKey];
-        for (let j = rows.length - 1; j >= 0; j--) {
-          if (rows[j].date > current.date) continue;
-          if (rows[j].date < cutoff365) break;
-          if (rows[j][productKey] > maxVal) maxVal = rows[j][productKey];
-        }
-        const dd = maxVal > 0 ? ((current[productKey] - maxVal) / maxVal) * 100 : 0;
+        const cur = filtered[i];
+        const curTs = cur.date.getTime();
+        const windowStart = curTs - W;
+
+        // Advance fi to the position in rows matching cur
+        while (fi < rows.length - 1 && rows[fi].date < cur.date) fi++;
+
+        // Advance lo: remove elements outside 365-day window from front
+        while (deque.length > 0 && rows[deque[0]].date.getTime() < windowStart) deque.shift();
+
+        // Remove from back any indices with values <= current value (maintain decreasing order)
+        const curVal = cur[productKey];
+        while (deque.length > 0 && rows[deque[deque.length - 1]][productKey] <= curVal) deque.pop();
+        deque.push(fi);
+
+        const maxVal = rows[deque[0]][productKey];
+        const dd = maxVal > 0 ? ((curVal - maxVal) / maxVal) * 100 : 0;
         ddData.push(dd);
-        labels.push(current.date.toISOString().split('T')[0]);
+        labels.push(cur.date.toISOString().split('T')[0]);
       }
 
       destroyChart('drawdownChart');
@@ -5254,7 +5268,7 @@
         function () { renderYDDrawdown(productKey, 'yearlyDrawdownChart'); },
       ];
       fns.forEach(function (fn, i) {
-        setTimeout(function () { try { fn(); } catch (e) { console.error('[YearlyDash]', e); } }, i * 150);
+        setTimeout(function () { try { fn(); } catch (e) { console.error('[YearlyDash]', e); } }, i * 50);
       });
     }
 
@@ -5700,6 +5714,7 @@
         options: {
           responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false },
           plugins: {
+            decimation: { enabled: true, algorithm: 'lttb', samples: 120 },
             legend: { position: 'top', labels: { usePointStyle: true, font: { size: 9 }, boxWidth: 10, padding: 6 } },
             tooltip: { callbacks: { title: function (c) { return 'Day ' + c[0].label; }, label: function (c) { return ' ' + c.dataset.label + ': ' + fmt(c.parsed.y); } } }
           },
@@ -5715,12 +5730,25 @@
       var rows = getRows(productKey);
       if (!rows.length) return;
       var cut5 = new Date(); cut5.setFullYear(cut5.getFullYear() - 5);
-      var filtered = rows.filter(function (r) { return r.date >= cut5; }), labels = [], ddData = [];
+      var filtered = rows.filter(function (r) { return r.date >= cut5; });
+      var labels = [], ddData = [];
+      var W = 365 * 24 * 60 * 60 * 1000;
+      // O(n) sliding-window maximum via monotonic deque
+      var deque = [], fi = 0;
       for (var i = 0; i < filtered.length; i++) {
-        var cur = filtered[i], c365 = new Date(cur.date); c365.setDate(c365.getDate() - 365);
-        var maxVal = cur[productKey];
-        for (var j = rows.length - 1; j >= 0; j--) { if (rows[j].date > cur.date) continue; if (rows[j].date < c365) break; if (rows[j][productKey] > maxVal) maxVal = rows[j][productKey]; }
-        ddData.push(maxVal > 0 ? ((cur[productKey] - maxVal) / maxVal) * 100 : 0);
+        var cur = filtered[i];
+        var curTs = cur.date.getTime();
+        var windowStart = curTs - W;
+        // advance fi to match cur in rows
+        while (fi < rows.length - 1 && rows[fi].date < cur.date) fi++;
+        // evict expired entries from front
+        while (deque.length > 0 && rows[deque[0]].date.getTime() < windowStart) deque.shift();
+        // maintain decreasing order in deque
+        var curVal = cur[productKey];
+        while (deque.length > 0 && rows[deque[deque.length - 1]][productKey] <= curVal) deque.pop();
+        deque.push(fi);
+        var maxVal = rows[deque[0]][productKey];
+        ddData.push(maxVal > 0 ? ((curVal - maxVal) / maxVal) * 100 : 0);
         labels.push(cur.date.toISOString().split('T')[0]);
       }
       destroyChart(canvasId);
@@ -7930,7 +7958,10 @@
 
     function initBDIContribRange() {
       const rows = DATA.master.filter(r => r.bdry_spot_change != null && r.cape_change != null && r.panama_change != null && r.suprama_change != null);
-      initDualRangeSlider('bdiContribRange', rows, renderBDIContributionChart);
+      initDualRangeSlider('bdiContribRange', rows, function () {
+        clearTimeout(renderBDIContributionChart._t);
+        renderBDIContributionChart._t = setTimeout(renderBDIContributionChart, 60);
+      });
     }
 
     function renderBDIContributionChart() {
@@ -8023,7 +8054,13 @@
       const returnsA = calculateLogReturns(alignedA);
       const returnsB = calculateLogReturns(alignedB);
       
-      const crossCorr = computeCrossCorrelation(returnsA, returnsB, 30);
+      // Cache cross-correlation — expensive O(n*maxLag) calc; reuse if pair+data unchanged
+      const _ccKey = pair + ':' + returnsA.length + ':' + returnsB.length;
+      if (!renderLeadLagChart._cache) renderLeadLagChart._cache = {};
+      if (!renderLeadLagChart._cache[_ccKey]) {
+        renderLeadLagChart._cache[_ccKey] = computeCrossCorrelation(returnsA, returnsB, 30);
+      }
+      const crossCorr = renderLeadLagChart._cache[_ccKey];
       
       const labels = crossCorr.map(x => x.lag);
       const data = crossCorr.map(x => x.corr);
