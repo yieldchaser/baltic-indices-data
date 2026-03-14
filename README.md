@@ -33,7 +33,7 @@ The dashboard itself fetches everything client-side at page load — no backend,
 
 ## What This Tracks
 
-### Freight Indices — 6 series, daily since Dec 2007
+### Freight Indices — 7 series, daily since Dec 2007
 
 | File | Index | Code | Vessel / Cargo |
 |---|---|---|---|
@@ -41,12 +41,13 @@ The dashboard itself fetches everything client-side at page load — no backend,
 | `cape_historical.csv` | Baltic Capesize Index | BCI | 180,000 DWT — iron ore, coal |
 | `panama_historical.csv` | Baltic Panamax Index | BPI | 82,000 DWT — grain, coal |
 | `suprama_historical.csv` | Baltic Supramax Index | BSI | 58,000 DWT — minor bulk |
+| `handysize_historical.csv` | Baltic Handysize Index | BHSI | 28,000 DWT — minor bulk |
 | `cleantanker_historical.csv` | Baltic Clean Tanker Index | BCTI | Refined products |
 | `dirtytanker_historical.csv` | Baltic Dirty Tanker Index | BDTI | Crude oil |
 
 CSV schema: `Date (DD-MM-YYYY), Index, % Change`
 
-### BDRY Spot Composite — 7th product, computed client-side
+### BDRY Spot Composite — Computed client-side
 
 Replicates the **Solactive Breakwave Dry Freight Futures Index** methodology using daily spot values:
 
@@ -54,7 +55,7 @@ Replicates the **Solactive Breakwave Dry Freight Futures Index** methodology usi
 BDRY_Spot(t) = 0.50 × BCI(t) + 0.40 × BPI(t) + 0.10 × BSI(t)
 ```
 
-Available from October 2008 (~4,200 data points). Computed in the browser on every page load from the three existing CSVs — no extra file. Selectable as a 7th product across all tabs. Useful for comparing against the BDRY ETF market price to monitor premium/discount to spot.
+Available from October 2008 (~4,200 data points). Computed in the browser on every page load from the three existing CSVs — no extra file. Selectable across all tabs. Useful for comparing against the BDRY ETF market price to monitor premium/discount to spot.
 
 ### ETF Holdings — updated each market day
 
@@ -122,7 +123,7 @@ Shipping/
 
 Built on **Chart.js 4.4.0** and **PapaParse 5.4.1**. All data fetched client-side — no backend. The global **Index:** dropdown in the header switches the active product across all tabs instantly.
 
-**7 products available:** BDI · Capesize · Panamax · Supramax · Clean Tanker · Dirty Tanker · BDRY Spot Composite
+**10 products available:** BDI · Capesize · Panamax · Supramax · Handysize · Clean Tanker · Dirty Tanker · BDRY Spot Composite · BDRYFF · BWETFF
 
 ---
 
