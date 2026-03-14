@@ -4670,15 +4670,24 @@
     <div class="etf-research-section">
       <div class="etf-research-title">📰 Market Outlook &amp; Research Sources</div>
       <div class="research-group">
-        <div class="research-group-label">Monthly &amp; Weekly Market Outlooks</div>
-        <div class="research-link"><span class="research-link-icon">🏛️</span><a href="https://www.atheniansa.com/reports" target="_blank" rel="noopener">Athenia S.A. — Reports &amp; Market Outlooks</a></div>
-        <div class="research-link"><span class="research-link-icon">📋</span><a href="https://www.breakwaveadvisors.com/publications" target="_blank" rel="noopener">Breakwave Advisors — Research (New report every 2nd &amp; 4th Tuesday)</a></div>
-        <div class="research-link"><span class="research-link-icon">🔗</span><a href="https://www.bimco.org/news-and-trends/market-analysis" target="_blank" rel="noopener">BIMCO — Market Analysis</a></div>
+        <div class="research-group-label">Research &amp; Insights</div>
+        <div class="research-link"><span class="research-link-icon">📋</span><a href="https://www.breakwaveadvisors.com/publications" target="_blank" rel="noopener">Breakwave Advisors — Research</a></div>
+        <div class="research-link"><span class="research-link-icon">💡</span><a href="https://www.breakwaveadvisors.com/insights" target="_blank" rel="noopener">Breakwave Advisors — Insights</a></div>
+        <div class="research-link"><span class="research-link-icon">🔗</span><a href="https://www.bimco.org/news-insights/market-analysis/" target="_blank" rel="noopener">BIMCO — Market Analysis</a></div>
+      </div>
+      <div class="research-group">
+        <div class="research-group-label">Weekly Market Reports</div>
+        <div class="research-link"><span class="research-link-icon">⚡</span><a href="${etfKey === 'bdry' ? 'https://fearnpulse.com/#2' : 'https://fearnpulse.com/#1'}" target="_blank" rel="noopener">Fearnleys — Weekly Market Pulse</a></div>
+        <div class="research-link"><span class="research-link-icon">🏛️</span><a href="${etfKey === 'bdry' ? 'https://www.balticexchange.com/en/data-services/WeeklyRoundup.html#dry%20' : 'https://www.balticexchange.com/en/data-services/WeeklyRoundup.html#tanker'}" target="_blank" rel="noopener">Baltic Exchange — Weekly Roundup</a></div>
+      </div>
+      <div class="research-group">
+        <div class="research-group-label">Charter Rate Estimates</div>
+        <div class="research-link"><span class="research-link-icon">📅</span><a href="${etfKey === 'bdry' ? 'https://www.hellenicshippingnews.com/category/report-analysis/weekly-dry-time-charter-estimates/' : 'https://www.hellenicshippingnews.com/category/report-analysis/weekly-tanker-time-charter-estimates/'}" target="_blank" rel="noopener">Weekly Charter Rates (Hellenic)</a></div>
       </div>
       <div class="research-group">
         <div class="research-group-label">ETF Data</div>
         <div class="research-link"><span class="research-link-icon">📈</span><a href="${etfKey === 'bdry' ? 'https://amplifyetfs.com/bdry/' : 'https://amplifyetfs.com/bwet/'}" target="_blank" rel="noopener">Amplify ETFs — ${ticker} Official Page</a></div>
-        <div class="research-link"><span class="research-link-icon">📐</span><a href="${etfKey === 'bdry' ? 'https://www.solactive.com/index/DE000SLA4BY3/' : 'https://www.solactive.com/index/DE000SL0HLG3/'}" target="_blank" rel="noopener">Solactive — ${etfKey === 'bdry' ? 'Breakwave Dry Freight Futures Index' : 'Breakwave Wet Freight Futures Index'}</a></div>
+        <div class="research-link"><span class="research-link-icon">📐</span><a href="${etfKey === 'bdry' ? 'https://www.solactive.com/index/DE000SLA4BY3/' : 'https://www.solactive.com/index/DE000SL0HLG3/'}" target="_blank" rel="noopener">Solactive — Index Page</a></div>
       </div>
     </div>
 `;
