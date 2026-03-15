@@ -6070,6 +6070,7 @@
           var shortLbl = PRODUCTS[key].label.split(' ')[0];
           if (key === 'bdryff') shortLbl = 'BDRYFF';
           if (key === 'bwetff') shortLbl = 'BWETFF';
+          if (key === 'bdry_spot') shortLbl = 'BDRY Spot';
           datasets.push({
             label: shortLbl + ' ' + y,
             data: rows.map(function (r) { return r[key] != null ? r[key] : null; }),
