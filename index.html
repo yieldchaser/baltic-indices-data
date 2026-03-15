@@ -54,6 +54,22 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      overflow: hidden;
+    }
+    #pirateShip {
+      position: absolute;
+      bottom: 2px;
+      pointer-events: none;
+      opacity: 0.62;
+      animation: ship-sail 55s linear infinite, ship-bob 2.8s ease-in-out infinite;
+    }
+    @keyframes ship-sail {
+      0%   { left: 100vw; }
+      100% { left: -180px; }
+    }
+    @keyframes ship-bob {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-3px); }
     }
 
     .header h1 {
@@ -1842,6 +1858,61 @@
 
   <!-- HEADER -->
   <div class="header">
+    <!-- Pirate ship sailing across the header -->
+    <svg id="pirateShip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 52" width="165" height="52" aria-hidden="true">
+      <!-- Bowsprit (forward diagonal spar) -->
+      <line x1="138" y1="29" x2="164" y2="16" stroke="#7a6340" stroke-width="2.2"/>
+      <!-- Fore staysail -->
+      <path d="M138,29 L163,17 L138,32 Z" fill="rgba(218,205,175,0.82)" stroke="#7a6340" stroke-width="0.5"/>
+      <!-- Main mast -->
+      <line x1="82" y1="29" x2="82" y2="1" stroke="#7a6340" stroke-width="2.5"/>
+      <!-- Main yard (horizontal spar) -->
+      <line x1="59" y1="8" x2="105" y2="8" stroke="#7a6340" stroke-width="1.8"/>
+      <!-- Main sail (billowed) -->
+      <path d="M61,8 Q85,20 103,8 L99,29 Q80,23 65,29 Z" fill="rgba(218,205,175,0.88)" stroke="#7a6340" stroke-width="0.6"/>
+      <!-- Crow's nest -->
+      <rect x="76" y="-2" width="12" height="6" rx="1.5" fill="#1e2535" stroke="#7a6340" stroke-width="1.2"/>
+      <!-- Pirate flag -->
+      <rect x="82" y="-14" width="20" height="13" rx="1" fill="#111519" stroke="#444" stroke-width="0.8"/>
+      <!-- Skull on flag -->
+      <circle cx="91" cy="-9" r="3.2" fill="#e8e8e8" opacity="0.9"/>
+      <circle cx="89.5" cy="-8.2" r="0.9" fill="#111519"/>
+      <circle cx="92.5" cy="-8.2" r="0.9" fill="#111519"/>
+      <path d="M89,-6.5 Q91,-5.5 93,-6.5" fill="none" stroke="#111519" stroke-width="0.8"/>
+      <!-- Crossbones -->
+      <line x1="88" y1="-5" x2="94" y2="-3" stroke="#e8e8e8" stroke-width="1" opacity="0.85"/>
+      <line x1="94" y1="-5" x2="88" y2="-3" stroke="#e8e8e8" stroke-width="1" opacity="0.85"/>
+      <!-- Hull body -->
+      <path d="M22,29 L140,29 L148,37 L136,47 L24,47 L16,37 Z" fill="#1a2235" stroke="#f0c040" stroke-width="1.2"/>
+      <!-- Gold hull rail -->
+      <line x1="22" y1="29" x2="140" y2="29" stroke="#f0c040" stroke-width="2" opacity="0.9"/>
+      <!-- Gold lower stripe -->
+      <path d="M24,43 L136,43" stroke="#f0c040" stroke-width="1" opacity="0.45"/>
+      <!-- Cannon ports (gold) -->
+      <rect x="42" y="34" width="9" height="6" rx="1.2" fill="#f0c040" opacity="0.75"/>
+      <rect x="66" y="34" width="9" height="6" rx="1.2" fill="#f0c040" opacity="0.75"/>
+      <rect x="90" y="34" width="9" height="6" rx="1.2" fill="#f0c040" opacity="0.75"/>
+      <rect x="114" y="34" width="9" height="6" rx="1.2" fill="#f0c040" opacity="0.75"/>
+      <!-- Stern lantern (gold) -->
+      <rect x="17" y="31" width="5" height="7" rx="1" fill="#f0c040" opacity="0.6"/>
+      <!-- Henry Every — stern figure with tricorn -->
+      <!-- Body -->
+      <line x1="30" y1="23" x2="30" y2="29" stroke="#f0c040" stroke-width="1.8"/>
+      <!-- Coat tails -->
+      <line x1="30" y1="27" x2="27" y2="30" stroke="#f0c040" stroke-width="1.4"/>
+      <line x1="30" y1="27" x2="33" y2="30" stroke="#f0c040" stroke-width="1.4"/>
+      <!-- Arms (one raised — pointing forward) -->
+      <line x1="30" y1="25" x2="26" y2="27" stroke="#f0c040" stroke-width="1.3"/>
+      <line x1="30" y1="25" x2="34" y2="22" stroke="#f0c040" stroke-width="1.3"/>
+      <!-- Head -->
+      <circle cx="30" cy="21" r="2.6" fill="#f0c040"/>
+      <!-- Tricorn hat brim -->
+      <line x1="26" y1="19.5" x2="34" y2="19.5" stroke="#f0c040" stroke-width="1.4"/>
+      <!-- Tricorn crown -->
+      <path d="M27,19.5 L30,15 L33,19.5 Z" fill="#1a2235" stroke="#f0c040" stroke-width="0.9"/>
+      <!-- Water ripples -->
+      <path d="M10,50 Q35,48 60,50 Q85,52 110,50 Q135,48 155,50" fill="none" stroke="rgba(240,192,64,0.28)" stroke-width="1.2"/>
+    </svg>
     <h1><span class="logo">🏴‍☠️</span> Shipping</h1>
     <div class="product-selector">
       <label for="globalProduct">Index:</label>
