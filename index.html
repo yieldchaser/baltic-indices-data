@@ -58,9 +58,9 @@
     }
     #pirateShip {
       position: absolute;
-      bottom: 2px;
+      bottom: 0;
       pointer-events: none;
-      opacity: 0.60;
+      opacity: 0.65;
       z-index: 0;
       animation: ship-sail 55s linear infinite, ship-bob 2.8s ease-in-out infinite;
     }
@@ -1860,90 +1860,100 @@
 
   <!-- HEADER -->
   <div class="header">
-    <!-- Pirate ship — galleon silhouette, bow points left (direction of travel) -->
-    <svg id="pirateShip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 52" width="200" height="52" aria-hidden="true">
+    <!-- Galleon silhouette — everything fits within 44px header height.
+         Bow points LEFT (direction of travel). Stern castle on right.
+         y=0–14: flag/crow's nest/topsails  y=14–20: course sails  y=20–44: hull -->
+    <svg id="pirateShip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 44" width="195" height="44" aria-hidden="true">
 
-      <!-- ── BOWSPRIT: steep diagonal lance off the bow ── -->
-      <line x1="20" y1="30" x2="-6" y2="46" stroke="#6b5530" stroke-width="2.4"/>
+      <!-- Bowsprit: steep lance off the bow pointing forward-down -->
+      <line x1="20" y1="25" x2="-6" y2="37" stroke="#6b5530" stroke-width="2.3"/>
       <!-- Flying jib -->
-      <path d="M 20,30 L -5,45 L 20,37 Z" fill="rgba(212,198,162,0.76)" stroke="#6b5530" stroke-width="0.5"/>
+      <path d="M 20,25 L -5,36 L 20,30 Z" fill="rgba(206,190,150,0.74)" stroke="#6b5530" stroke-width="0.5"/>
 
-      <!-- ── FOREMAST (x≈62, raked slightly aft) ── -->
-      <line x1="62" y1="27" x2="65" y2="4" stroke="#6b5530" stroke-width="2.2"/>
+      <!-- FOREMAST (x≈63, raked slightly aft) -->
+      <line x1="63" y1="20" x2="65" y2="3" stroke="#6b5530" stroke-width="2.1"/>
       <!-- Fore lower yard -->
-      <line x1="45" y1="13" x2="82" y2="13" stroke="#6b5530" stroke-width="1.6"/>
-      <!-- Fore course sail — belly billows forward (left) -->
-      <path d="M 47,13 Q 58,24 80,13 L 78,27 Q 60,22 49,27 Z" fill="rgba(212,198,162,0.88)" stroke="#6b5530" stroke-width="0.5"/>
+      <line x1="47" y1="10" x2="81" y2="10" stroke="#6b5530" stroke-width="1.5"/>
+      <!-- Fore course sail: belly shapes suggest wind from right -->
+      <path d="M 49,10 Q 57,19 79,10 L 77,20 Q 60,16 51,20 Z" fill="rgba(206,190,150,0.86)" stroke="#6b5530" stroke-width="0.5"/>
       <!-- Fore topsail -->
-      <path d="M 50,7 Q 62,13 79,7 L 77,13 Q 62,16 52,13 Z" fill="rgba(212,198,162,0.80)" stroke="#6b5530" stroke-width="0.4"/>
+      <path d="M 52,5 Q 64,10 78,5 L 76,10 Q 63,13 54,10 Z" fill="rgba(206,190,150,0.78)" stroke="#6b5530" stroke-width="0.4"/>
 
-      <!-- ── MAINMAST (x≈112, taller, raked slightly aft) ── -->
-      <line x1="112" y1="24" x2="116" y2="1" stroke="#6b5530" stroke-width="2.6"/>
+      <!-- MAINMAST (x≈110, tallest) -->
+      <line x1="110" y1="18" x2="112" y2="1" stroke="#6b5530" stroke-width="2.5"/>
       <!-- Main lower yard -->
-      <line x1="89" y1="9" x2="137" y2="9" stroke="#6b5530" stroke-width="1.9"/>
-      <!-- Main course sail — large, belly billows forward -->
-      <path d="M 91,9 Q 106,22 135,9 L 133,24 Q 110,18 93,24 Z" fill="rgba(212,198,162,0.92)" stroke="#6b5530" stroke-width="0.6"/>
-      <!-- Main topsail -->
-      <path d="M 94,3 Q 108,10 134,3 L 132,9 Q 110,13 96,9 Z" fill="rgba(212,198,162,0.84)" stroke="#6b5530" stroke-width="0.5"/>
+      <line x1="87" y1="9" x2="133" y2="9" stroke="#6b5530" stroke-width="1.8"/>
+      <!-- Main course sail -->
+      <path d="M 89,9 Q 99,19 131,9 L 129,18 Q 108,14 91,18 Z" fill="rgba(206,190,150,0.90)" stroke="#6b5530" stroke-width="0.6"/>
+      <!-- Main topsail (draw before flag so flag overlaps it correctly) -->
+      <path d="M 93,4 Q 110,9 129,4 L 127,9 Q 109,12 95,9 Z" fill="rgba(206,190,150,0.82)" stroke="#6b5530" stroke-width="0.5"/>
 
-      <!-- Crow's nest (clips at header top — atmospheric) -->
-      <rect x="110" y="-1" width="12" height="5" rx="1.5" fill="#1a2030" stroke="#6b5530" stroke-width="1.2"/>
+      <!-- Crow's nest at mainmast top -->
+      <rect x="108" y="0" width="10" height="4" rx="1" fill="#1a2030" stroke="#6b5530" stroke-width="1"/>
 
-      <!-- Pirate flag — flies toward stern (right), clips above header -->
-      <rect x="116" y="-16" width="23" height="14" rx="1" fill="#0c1018" stroke="#2a2a2a" stroke-width="0.8"/>
-      <circle cx="126" cy="-11" r="3.4" fill="#d8d8d8" opacity="0.92"/>
-      <circle cx="124.5" cy="-10.2" r="1" fill="#0c1018"/>
-      <circle cx="127.5" cy="-10.2" r="1" fill="#0c1018"/>
-      <path d="M 124,-8.5 Q 126,-7.5 128,-8.5" fill="none" stroke="#0c1018" stroke-width="0.9"/>
-      <line x1="123" y1="-7" x2="129" y2="-4.5" stroke="#d8d8d8" stroke-width="1.1" opacity="0.9"/>
-      <line x1="129" y1="-7" x2="123" y2="-4.5" stroke="#d8d8d8" stroke-width="1.1" opacity="0.9"/>
+      <!-- Pirate flag: flies from masthead, drawn on top of topsail -->
+      <rect x="112" y="0" width="20" height="12" rx="1" fill="#0c1018" stroke="#252525" stroke-width="0.7"/>
+      <!-- Skull -->
+      <circle cx="121" cy="5" r="3.2" fill="#d2d2d2" opacity="0.93"/>
+      <circle cx="119.6" cy="4.3" r="0.95" fill="#0c1018"/>
+      <circle cx="122.4" cy="4.3" r="0.95" fill="#0c1018"/>
+      <path d="M 119.6,6.3 Q 121,7.3 122.4,6.3" fill="none" stroke="#0c1018" stroke-width="0.85"/>
+      <!-- Crossbones -->
+      <line x1="118" y1="8.5" x2="124" y2="11" stroke="#d2d2d2" stroke-width="1.1" opacity="0.88"/>
+      <line x1="124" y1="8.5" x2="118" y2="11" stroke="#d2d2d2" stroke-width="1.1" opacity="0.88"/>
 
-      <!-- ══ HULL — the whole point ══
-           Sharp ram bow at (7,37), curved keel belly, high stern castle at (176,16)
-           This is a proper galleon shape, NOT a rectangle -->
-      <path d="M 22,26 L 7,37 L 13,49 Q 100,57 170,49 L 176,47 L 180,24 L 172,16 L 22,26 Z"
-            fill="#18203a" stroke="#f0c040" stroke-width="1.5"/>
+      <!-- MIZZENMAST (rear, shorter) -->
+      <line x1="155" y1="18" x2="154" y2="10" stroke="#6b5530" stroke-width="1.8"/>
+      <!-- Lateen mizzen sail (fore-and-aft, triangular) -->
+      <path d="M 155,18 L 154,12 L 173,18 Z" fill="rgba(206,190,150,0.72)" stroke="#6b5530" stroke-width="0.4"/>
 
-      <!-- Gold deck sheer rail (follows the upward curve to stern) -->
-      <line x1="22" y1="26" x2="172" y2="16" stroke="#f0c040" stroke-width="2.4" opacity="0.92"/>
+      <!-- ══ HULL ══
+           THE KEY SHAPE: sharp bow prow at (6,30), curved keel, stern castle rising to y=14.
+           This is a proper galleon — NOT a rectangle. -->
+      <path d="M 22,20 L 6,30 L 10,42 Q 96,47 172,42 L 178,40 L 181,20 L 172,14 L 22,20 Z"
+            fill="#141c30" stroke="#f0c040" stroke-width="1.5"/>
 
-      <!-- Gold wale stripe (mid-hull decorative band) -->
-      <path d="M 15,43 Q 95,50 172,43" stroke="#f0c040" stroke-width="1.1" opacity="0.38"/>
+      <!-- Gold sheer rail: follows the rising deck line toward the high stern -->
+      <line x1="22" y1="20" x2="172" y2="14" stroke="#f0c040" stroke-width="2.2" opacity="0.90"/>
+      <!-- Gold wale stripe: decorative mid-hull band -->
+      <path d="M 12,36 Q 96,42 174,36" stroke="#f0c040" stroke-width="1" opacity="0.36"/>
 
-      <!-- Cannon ports — 5 evenly spaced, gold -->
-      <rect x="36" y="32" width="11" height="7" rx="1.5" fill="#f0c040" opacity="0.72"/>
-      <rect x="62" y="31" width="11" height="7" rx="1.5" fill="#f0c040" opacity="0.72"/>
-      <rect x="88" y="30" width="11" height="7" rx="1.5" fill="#f0c040" opacity="0.72"/>
-      <rect x="114" y="29" width="11" height="7" rx="1.5" fill="#f0c040" opacity="0.72"/>
-      <rect x="140" y="28" width="11" height="7" rx="1.5" fill="#f0c040" opacity="0.72"/>
+      <!-- Cannon ports: 5 gold gun-ports along the broadside -->
+      <rect x="34" y="25" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
+      <rect x="60" y="24" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
+      <rect x="86" y="23" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
+      <rect x="112" y="22" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
+      <rect x="138" y="21" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
 
-      <!-- Stern gallery: gold windows on the high stern castle -->
-      <rect x="165" y="20" width="8" height="5" rx="1" fill="#f0c040" opacity="0.52"/>
-      <rect x="155" y="21" width="7" height="5" rx="1" fill="#f0c040" opacity="0.40"/>
+      <!-- Stern gallery: gold windows on the castle -->
+      <rect x="165" y="17" width="9" height="5" rx="1.2" fill="#f0c040" opacity="0.50"/>
+      <rect x="155" y="18" width="8" height="5" rx="1.2" fill="#f0c040" opacity="0.36"/>
 
-      <!-- Stern lantern — glowing gold orb -->
-      <circle cx="179" cy="20" r="4" fill="#f0c040" opacity="0.62"/>
-      <circle cx="179" cy="20" r="2.2" fill="#ffe566" opacity="0.75"/>
+      <!-- Stern lantern: glowing gold -->
+      <circle cx="180" cy="17" r="3.8" fill="#f0c040" opacity="0.62"/>
+      <circle cx="180" cy="17" r="2.1" fill="#ffe566" opacity="0.80"/>
 
-      <!-- ── Henry Every — on the stern castle deck ──
-           Tricorn hat, coat, one arm raised pointing forward (bow / left) -->
-      <!-- Head -->
-      <circle cx="166" cy="11" r="2.8" fill="#f0c040"/>
-      <!-- Tricorn hat: brim line + three-peaked crown -->
-      <line x1="162" y1="10.5" x2="170" y2="10.5" stroke="#f0c040" stroke-width="1.3"/>
-      <path d="M 163,10.5 L 166,5.5 L 169,10.5 Z" fill="#18203a" stroke="#f0c040" stroke-width="1"/>
-      <!-- Body / long coat -->
-      <line x1="166" y1="14" x2="166" y2="21" stroke="#f0c040" stroke-width="2"/>
-      <!-- Coat-tails flaring out -->
-      <line x1="166" y1="19" x2="163" y2="23" stroke="#f0c040" stroke-width="1.4"/>
-      <line x1="166" y1="19" x2="169" y2="23" stroke="#f0c040" stroke-width="1.4"/>
-      <!-- Arm raised toward bow (pointing forward into the wind) -->
-      <line x1="166" y1="16" x2="160" y2="13" stroke="#f0c040" stroke-width="1.4"/>
-      <!-- Other arm behind back -->
-      <line x1="166" y1="16" x2="170" y2="18" stroke="#f0c040" stroke-width="1.3"/>
+      <!-- Henry Every — standing on the stern castle (deck y=14), arm raised -->
+      <circle cx="165" cy="9" r="2.5" fill="#f0c040"/>
+      <!-- Tricorn hat brim + peaked crown -->
+      <line x1="161" y1="8.5" x2="169" y2="8.5" stroke="#f0c040" stroke-width="1.2"/>
+      <path d="M 162,8.5 L 165,4 L 168,8.5 Z" fill="#141c30" stroke="#f0c040" stroke-width="0.9"/>
+      <!-- Body / coat -->
+      <line x1="165" y1="12" x2="165" y2="18" stroke="#f0c040" stroke-width="1.9"/>
+      <!-- Coat-tails -->
+      <line x1="165" y1="16" x2="162" y2="20" stroke="#f0c040" stroke-width="1.3"/>
+      <line x1="165" y1="16" x2="168" y2="20" stroke="#f0c040" stroke-width="1.3"/>
+      <!-- Arm raised, pointing forward (into the wind, toward bow) -->
+      <line x1="165" y1="14" x2="159" y2="11" stroke="#f0c040" stroke-width="1.3"/>
+      <!-- Other arm -->
+      <line x1="165" y1="14" x2="169" y2="16" stroke="#f0c040" stroke-width="1.2"/>
 
-      <!-- Water ripple at the waterline -->
-      <path d="M 5,51 Q 55,49 105,51 Q 155,53 200,51" fill="none" stroke="rgba(240,192,64,0.24)" stroke-width="1.3"/>
+      <!-- Rigging: stays connecting masts to bowsprit and hull -->
+      <line x1="112" y1="2" x2="-6" y2="37" stroke="#6b5530" stroke-width="0.8" opacity="0.52"/>
+      <line x1="65" y1="4" x2="20" y2="25" stroke="#6b5530" stroke-width="0.8" opacity="0.46"/>
+
+      <!-- Water ripple -->
+      <path d="M 5,43 Q 60,41 100,43 Q 150,45 190,43" fill="none" stroke="rgba(240,192,64,0.22)" stroke-width="1.2"/>
     </svg>
     <h1><span class="logo">🏴‍☠️</span> Shipping</h1>
     <div class="product-selector">
