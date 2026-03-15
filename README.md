@@ -221,7 +221,7 @@ Each card contains:
    - BWET: Crude & Product Demand (Trading Economics, EIA) + Key Trade Routes (TradingView: TD3C / TD20)
 #### BDRY & BWET Analytics
 
-- **Historical Volatility** — Annualized HV (Log-return StdDev × √252) with regime indicators (Low/Normal/Elevated/Spike).
+- **ETF Historical Volatility** — Annualized HV (Log-return StdDev × √252) computed from BDRY/BWET daily close prices, with regime indicators (Low/Normal/Elevated/Spike).
 - **Cross-Asset Correlation (ETF vs Indices)** — Pearson correlation matrix comparing BDRY/BWET stock prices against all freight indices. Switchable Timeframe (All Time / 5Y / 1Y).
 
 9. **Market Outlook & Research Sources** — categorized market intelligence:
