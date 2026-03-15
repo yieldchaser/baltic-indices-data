@@ -6065,7 +6065,8 @@
     function renderYDRatesOverlay(canvasId) {
       var selEl = document.getElementById('ratesOverlayProduct');
       var key = (selEl && selEl.value) || 'bdiy';
-      var cy = new Date().getFullYear(), yrs = 4, ops = ['ff', 'bb', '77', '44'], datasets = [], maxDays = 0;
+      var cy = new Date().getFullYear(), yrs = 4, datasets = [], maxDays = 0;
+      var yearColors = ['#58a6ff', '#3fb950', '#f0883e', '#8b949e'];
       var prodByYear = (DATA.byYearProduct && DATA.byYearProduct[key]) || DATA.byYear;
       for (var yo = 0; yo < yrs; yo++) {
         var y = cy - yo, rows = (prodByYear[y] || []);
@@ -6073,7 +6074,7 @@
         datasets.push({
           label: String(y),
           data: rows.map(function (r) { return r[key] != null ? r[key] : null; }),
-          borderColor: PRODUCTS[key].color + ops[yo], backgroundColor: 'transparent',
+          borderColor: yearColors[yo], backgroundColor: 'transparent',
           borderWidth: yo === 0 ? 2 : 1, pointRadius: 0, tension: 0.1, spanGaps: true
         });
       }
