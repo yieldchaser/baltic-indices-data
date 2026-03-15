@@ -2016,10 +2016,11 @@
       <div class="heatmap-section mb-20">
         <div
           style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-          <div class="section-title" style="margin-bottom:0">Monthly Absolute Values</div>
+          <div class="section-title" style="margin-bottom:0">Quarterly Heatmap</div>
+          <button class="dl-btn" id="quarterlyHeatmapDlBtn">⬇ Download CSV</button>
         </div>
         <div class="heatmap-wrap">
-          <div id="monthlyAbsHeatmap"></div>
+          <div id="quarterlyHeatmap"></div>
         </div>
       </div>
     </div>
@@ -2028,23 +2029,6 @@
     <div class="tab-panel" id="tab-quarterly">
       <!-- Win-Rate KPI Cards -->
       <div class="win-rate-row mb-20" id="winRateRow"></div>
-
-      <!-- Download CSV -->
-      <div class="flex-row mb-12">
-        <button class="dl-btn" id="quarterlyDlBtn">⬇ Download CSV</button>
-      </div>
-
-      <!-- Quarterly Heatmap -->
-      <div class="heatmap-section mb-20">
-        <div
-          style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-          <div class="section-title" style="margin-bottom:0">Quarterly Heatmap</div>
-          <button class="dl-btn" id="quarterlyHeatmapDlBtn">⬇ Download CSV</button>
-        </div>
-        <div class="heatmap-wrap">
-          <div id="quarterlyHeatmap"></div>
-        </div>
-      </div>
 
       <!-- Spaghetti Chart -->
       <div class="chart-container mb-20">
@@ -3926,10 +3910,11 @@
       } else {
         renderMonthlyHeatmap(productKey);
       }
-      renderMonthlyAbsHeatmap(productKey);
+      renderQuarterlyHeatmap(productKey);
 
       // Wire download buttons
       document.getElementById('monthlyHeatmapDlBtn').onclick = () => downloadMonthlyHeatmap(productKey);
+      document.getElementById('quarterlyHeatmapDlBtn').onclick = () => downloadQuarterlyHeatmapCSV(productKey);
     }
 
     // ---- Original absolute-value heatmap color (for Monthly Abs section) ----
@@ -4058,52 +4043,13 @@
         </td>`;
           }
         }
-        html += '</tr>';
       }
       html += '</tbody></table>';
       container.innerHTML = html;
     }
 
-    function renderMonthlyAbsHeatmap(productKey) {
-      const container = document.getElementById('monthlyAbsHeatmap');
-      const years = DATA.years;
 
-      const matrix = {};
-      for (const y of years) {
-        matrix[y] = {};
-        for (let m = 0; m < 12; m++) {
-          matrix[y][m] = getMAvgCached(productKey, y, m);
-        }
-      }
 
-      const colStats = {};
-      for (let m = 0; m < 12; m++) {
-        const vals = years.map(y => matrix[y][m]).filter(v => v != null);
-        colStats[m] = { min: Math.min(...vals), max: Math.max(...vals) };
-      }
-
-      let html = `<table class="heatmap-table"><thead><tr>
-    <th>Year</th>${MONTH_NAMES.map(mn => `<th>${mn}</th>`).join('')}
-  </tr></thead><tbody>`;
-
-      for (const y of [...years].reverse()) {
-        html += `<tr><td class="year-col">${y}</td>`;
-        for (let m = 0; m < 12; m++) {
-          const v = matrix[y][m];
-          if (v == null) {
-            html += `<td style="color:#484f58">—</td>`;
-          } else {
-            const { min, max } = colStats[m];
-            const ratio = max > min ? (v - min) / (max - min) : 0.5;
-            const bg = heatmapColorAbs(ratio);
-            html += `<td style="background:${bg};color:#e6edf3">${fmt(v, 0)}</td>`;
-          }
-        }
-        html += '</tr>';
-      }
-      html += '</tbody></table>';
-      container.innerHTML = html;
-    }
 
     function downloadMonthlyHeatmap(productKey) {
       const years = [...DATA.years].reverse();
@@ -4125,11 +4071,13 @@
     function renderQuarterlyTab(productKey) {
       // Wire download buttons immediately — no dependency on chart render
       document.getElementById('quarterlyDlBtn').onclick = () => downloadQuarterlyHeatmapCSV(productKey);
-      document.getElementById('quarterlyHeatmapDlBtn').onclick = () => downloadQuarterlyHeatmapCSV(productKey);
+      // The quarterly heatmap download button is now wired in renderHeatmaps
+      // document.getElementById('quarterlyHeatmapDlBtn').onclick = () => downloadQuarterlyHeatmapCSV(productKey);
 
       var fns = [
         function () { renderWinRateCards(productKey); },
-        function () { renderQuarterlyHeatmap(productKey); },
+        // renderQuarterlyHeatmap is now called by renderHeatmaps
+        // function () { renderQuarterlyHeatmap(productKey); },
         function () { renderSpaghettiChart(productKey); },
         function () { renderQDAreaComp1(productKey); },
         function () { renderQDTrend(productKey); },
