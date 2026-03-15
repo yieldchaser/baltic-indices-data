@@ -181,16 +181,17 @@ Main overview for the selected index.
 ### 📊 Quarterly
 
 - **Win Rate KPI cards** — historical probability each quarter beats the prior quarter
-- **Quarterly Heatmap** — all years × Q1–Q4, absolute or QoQ % switchable
+- **Quarterly Heatmap** — all years × Q1–Q4, absolute or QoQ % switchable. Absolute values use an **8-year relative color scale** to avoid historical bias.
 - **Spaghetti Chart** — Q1/Q2/Q3/Q4 across all years as 4 coloured lines
 - **Area comparisons** — current vs prior year, current year vs 5Y seasonal average
-- **Quarterly Data Grid** — last 8 years with full-year avg and YoY %
+- **Quarterly Data Grid** — last 8 years with full-year avg and YoY %. Heatmap cells use 8-year relative scaling for visual clarity.
 
 ---
 
 ### 🌡️ Heatmaps
 
-- **Monthly Heatmap** — year × month, absolute value or MoM % toggle. Column-normalised so Jan values compare cleanly across all years.
+- **Monthly Heatmap** — year × month, absolute value or MoM % toggle.
+- **8-Year Relative Scaling** — Column-normalised using the last 8 years of data. This ensures Jan values compare cleanly across recent years without being washed out by deep historical extremes (e.g., 2008 highs).
 
 ---
 
@@ -223,6 +224,11 @@ Each card contains:
    - **Weekly Market Reports**: Fearnleys Weekly Pulse, Baltic Exchange Weekly Roundup
    - **Charter Rate Estimates**: Hellenic Shipping News (Weekly dry/tanker charter estimates)
    - **ETF Data**: Official Amplify and Solactive pages
+
+#### ETF Correlation Matrix
+
+- **Cross-Asset Correlation (ETF vs Indices)** — Pearson correlation matrix comparing BDRY/BWET stock prices against all freight indices.
+- **Timeframe Toggle** — Switchable between **All Time**, **5-Year**, and **1-Year** to monitor evolving asset relationships.
 
 #### BDRY & BWET Liquidity Tracker *(below the ETF cards)*
 
