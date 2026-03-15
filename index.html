@@ -1866,99 +1866,63 @@
 
   <!-- HEADER -->
   <div class="header">
-    <!-- Galleon silhouette — everything fits within 44px header height.
-         Bow points LEFT (direction of travel). Stern castle on right.
-         y=0–14: flag/crow's nest/topsails  y=14–20: course sails  y=20–44: hull -->
-    <svg id="pirateShip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 44" width="195" height="44" aria-hidden="true">
-
-      <!-- Bowsprit: steep lance off the bow pointing forward-down -->
-      <line x1="20" y1="25" x2="-6" y2="37" stroke="#6b5530" stroke-width="2.3"/>
-      <!-- Flying jib -->
-      <path d="M 20,25 L -5,36 L 20,30 Z" fill="rgba(206,190,150,0.74)" stroke="#6b5530" stroke-width="0.5"/>
-
-      <!-- FOREMAST (x≈63, raked slightly aft) -->
-      <line x1="63" y1="20" x2="65" y2="3" stroke="#6b5530" stroke-width="2.1"/>
-      <!-- Fore lower yard -->
-      <line x1="47" y1="10" x2="81" y2="10" stroke="#6b5530" stroke-width="1.5"/>
-      <!-- Fore course sail: belly shapes suggest wind from right -->
-      <path d="M 49,10 Q 57,19 79,10 L 77,20 Q 60,16 51,20 Z" fill="rgba(206,190,150,0.86)" stroke="#6b5530" stroke-width="0.5"/>
-      <!-- Fore topsail -->
-      <path d="M 52,5 Q 64,10 78,5 L 76,10 Q 63,13 54,10 Z" fill="rgba(206,190,150,0.78)" stroke="#6b5530" stroke-width="0.4"/>
-
-      <!-- MAINMAST (x≈110, tallest) -->
-      <line x1="110" y1="18" x2="112" y2="1" stroke="#6b5530" stroke-width="2.5"/>
-      <!-- Main lower yard -->
-      <line x1="87" y1="9" x2="133" y2="9" stroke="#6b5530" stroke-width="1.8"/>
-      <!-- Main course sail -->
-      <path d="M 89,9 Q 99,19 131,9 L 129,18 Q 108,14 91,18 Z" fill="rgba(206,190,150,0.90)" stroke="#6b5530" stroke-width="0.6"/>
-      <!-- Main topsail (draw before flag so flag overlaps it correctly) -->
-      <path d="M 93,4 Q 110,9 129,4 L 127,9 Q 109,12 95,9 Z" fill="rgba(206,190,150,0.82)" stroke="#6b5530" stroke-width="0.5"/>
-
-      <!-- Crow's nest at mainmast top -->
-      <rect x="108" y="0" width="10" height="4" rx="1" fill="#1a2030" stroke="#6b5530" stroke-width="1"/>
-
-      <!-- Pirate flag: flies from masthead, drawn on top of topsail -->
-      <rect x="112" y="0" width="20" height="12" rx="1" fill="#0c1018" stroke="#252525" stroke-width="0.7"/>
-      <!-- Skull -->
-      <circle cx="121" cy="5" r="3.2" fill="#d2d2d2" opacity="0.93"/>
-      <circle cx="119.6" cy="4.3" r="0.95" fill="#0c1018"/>
-      <circle cx="122.4" cy="4.3" r="0.95" fill="#0c1018"/>
-      <path d="M 119.6,6.3 Q 121,7.3 122.4,6.3" fill="none" stroke="#0c1018" stroke-width="0.85"/>
-      <!-- Crossbones -->
-      <line x1="118" y1="8.5" x2="124" y2="11" stroke="#d2d2d2" stroke-width="1.1" opacity="0.88"/>
-      <line x1="124" y1="8.5" x2="118" y2="11" stroke="#d2d2d2" stroke-width="1.1" opacity="0.88"/>
-
-      <!-- MIZZENMAST (rear, shorter) -->
-      <line x1="155" y1="18" x2="154" y2="10" stroke="#6b5530" stroke-width="1.8"/>
-      <!-- Lateen mizzen sail (fore-and-aft, triangular) -->
-      <path d="M 155,18 L 154,12 L 173,18 Z" fill="rgba(206,190,150,0.72)" stroke="#6b5530" stroke-width="0.4"/>
-
-      <!-- ══ HULL ══ swooping curved bow, rounded elevated stern -->
-      <path d="M 22,20 Q 5,30 30,42 L 150,42 Q 185,30 172,14 Z"
-            fill="#141c30" stroke="#f0c040" stroke-width="1.5"/>
-
-      <!-- Gold sheer rail -->
-      <line x1="22" y1="20" x2="172" y2="14" stroke="#f0c040" stroke-width="2.2" opacity="0.90"/>
-      <!-- Gold wale stripe -->
-      <path d="M 12,32 Q 96,44 174,32" fill="none" stroke="#f0c040" stroke-width="1.2" opacity="0.45"/>
-
-      <!-- Cannon ports: 5 gold gun-ports along the broadside -->
-      <rect x="34" y="25" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
-      <rect x="60" y="24" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
-      <rect x="86" y="23" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
-      <rect x="112" y="22" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
-      <rect x="138" y="21" width="11" height="7" rx="2" fill="#f0c040" opacity="0.70"/>
-
-      <!-- Stern gallery: gold windows on the castle -->
-      <rect x="165" y="17" width="9" height="5" rx="1.2" fill="#f0c040" opacity="0.50"/>
-      <rect x="155" y="18" width="8" height="5" rx="1.2" fill="#f0c040" opacity="0.36"/>
-
-      <!-- Stern lantern: glowing gold -->
-      <circle cx="180" cy="17" r="3.8" fill="#f0c040" opacity="0.62"/>
-      <circle cx="180" cy="17" r="2.1" fill="#ffe566" opacity="0.80"/>
-
-      <!-- Henry Every — standing on the stern castle (deck y=14), arm raised -->
-      <circle cx="165" cy="9" r="2.5" fill="#f0c040"/>
-      <!-- Tricorn hat brim + peaked crown -->
-      <line x1="161" y1="8.5" x2="169" y2="8.5" stroke="#f0c040" stroke-width="1.2"/>
-      <path d="M 162,8.5 L 165,4 L 168,8.5 Z" fill="#141c30" stroke="#f0c040" stroke-width="0.9"/>
-      <!-- Body / coat -->
-      <line x1="165" y1="12" x2="165" y2="18" stroke="#f0c040" stroke-width="1.9"/>
-      <!-- Coat-tails -->
-      <line x1="165" y1="16" x2="162" y2="20" stroke="#f0c040" stroke-width="1.3"/>
-      <line x1="165" y1="16" x2="168" y2="20" stroke="#f0c040" stroke-width="1.3"/>
-      <!-- Arm raised, pointing forward (into the wind, toward bow) -->
-      <line x1="165" y1="14" x2="159" y2="11" stroke="#f0c040" stroke-width="1.3"/>
-      <!-- Other arm -->
-      <line x1="165" y1="14" x2="169" y2="16" stroke="#f0c040" stroke-width="1.2"/>
-
-      <!-- Rigging: stays connecting masts to bowsprit and hull -->
-      <line x1="112" y1="2" x2="-6" y2="37" stroke="#6b5530" stroke-width="0.8" opacity="0.52"/>
-      <line x1="65" y1="4" x2="20" y2="25" stroke="#6b5530" stroke-width="0.8" opacity="0.46"/>
-
-      <!-- Water ripple -->
-      <path d="M 5,43 Q 60,41 100,43 Q 150,45 190,43" fill="none" stroke="rgba(240,192,64,0.22)" stroke-width="1.2"/>
-    </svg>
+    <svg id="pirateShip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 110" width="170">
+<!-- HULL -->
+<path d="M20 80 Q70 100 200 80 L175 100 L60 100 Z" fill="#5a2d14"/>
+<rect x="35" y="75" width="170" height="8" fill="#7a3b1d"/>
+<!-- GOLD STRIPE -->
+<line x1="35" y1="75" x2="205" y2="75" stroke="#f0c040" stroke-width="2"/>
+<!-- CANNON PORTS -->
+<circle cx="90" cy="90" r="5" fill="#3a1a0d"/>
+<circle cx="115" cy="90" r="5" fill="#3a1a0d"/>
+<circle cx="140" cy="90" r="5" fill="#3a1a0d"/>
+<!-- LEFT TREASURE PILE -->
+<circle cx="70" cy="82" r="4" fill="#ffd700"/>
+<circle cx="75" cy="85" r="4" fill="#ffd700"/>
+<circle cx="80" cy="82" r="4" fill="#ffd700"/>
+<circle cx="85" cy="85" r="4" fill="#ffd700"/>
+<circle cx="90" cy="82" r="4" fill="#ffd700"/>
+<circle cx="95" cy="85" r="4" fill="#ffd700"/>
+<!-- LEFT SILVER -->
+<circle cx="65" cy="84" r="3" fill="#c0c0c0"/>
+<circle cx="60" cy="86" r="3" fill="#c0c0c0"/>
+<!-- TREASURE CHEST -->
+<rect x="155" y="75" width="22" height="10" fill="#7a3b1d"/>
+<rect x="155" y="72" width="22" height="5" fill="#9c5a2a"/>
+<!-- RIGHT TREASURE PILE -->
+<circle cx="120" cy="82" r="4" fill="#ffd700"/>
+<circle cx="125" cy="85" r="4" fill="#ffd700"/>
+<circle cx="130" cy="82" r="4" fill="#ffd700"/>
+<circle cx="135" cy="85" r="4" fill="#ffd700"/>
+<circle cx="140" cy="82" r="4" fill="#ffd700"/>
+<circle cx="145" cy="85" r="4" fill="#ffd700"/>
+<!-- RIGHT SILVER -->
+<circle cx="150" cy="84" r="3" fill="#c0c0c0"/>
+<circle cx="155" cy="86" r="3" fill="#c0c0c0"/>
+<!-- MASTS -->
+<rect x="70" y="35" width="4" height="40" fill="#8a4a26"/>
+<rect x="115" y="28" width="4" height="47" fill="#8a4a26"/>
+<rect x="160" y="38" width="4" height="37" fill="#8a4a26"/>
+<!-- FLAGS -->
+<polygon points="74,35 95,42 74,50" fill="#ff3b30"/>
+<polygon points="119,28 140,35 119,45" fill="#ff3b30"/>
+<polygon points="164,38 185,45 164,55" fill="#ff3b30"/>
+<!-- SAILS -->
+<path d="M74 45 Q55 60 74 75 Z" fill="#d8a35d"/>
+<path d="M119 40 Q95 65 119 75 Z" fill="#2a0c05"/>
+<path d="M164 50 Q145 65 164 75 Z" fill="#d8a35d"/>
+<!-- PIRATE EMBLEM -->
+<circle cx="120" cy="60" r="7" fill="#ffffff"/>
+<!-- skull -->
+<circle cx="120" cy="58.5" r="3" fill="#000"/>
+<circle cx="118.8" cy="58" r="0.5" fill="#fff"/>
+<circle cx="121.2" cy="58" r="0.5" fill="#fff"/>
+<!-- teeth -->
+<rect x="118.8" y="60.5" width="2.4" height="1" fill="#000"/>
+<!-- crossbones -->
+<line x1="116" y1="64" x2="124" y2="68" stroke="#000" stroke-width="1"/>
+<line x1="124" y1="64" x2="116" y2="68" stroke="#000" stroke-width="1"/>
+</svg>
     <h1><span class="logo">🏴‍☠️</span> Shipping</h1>
     <div class="product-selector">
       <label for="globalProduct">Index:</label>
