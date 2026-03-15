@@ -2340,7 +2340,19 @@
       </div>
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Rates &mdash; All Products Multi-Year Overlay</div>
+          <div class="chart-title">Rates &mdash; Multi-Year Overlay</div>
+          <select id="ratesOverlayProduct">
+            <option value="bdiy">Baltic Dry Index (BDI)</option>
+            <option value="bdry_spot">BDRY Spot Composite</option>
+            <option value="cape">Capesize</option>
+            <option value="panama">Panamax</option>
+            <option value="suprama">Supramax</option>
+            <option value="handysize">Handysize</option>
+            <option value="dirtytanker">Dirty Tanker (BDTI)</option>
+            <option value="cleantanker">Clean Tanker (BCTI)</option>
+            <option value="bdryff">BDRY Freight Futures (BDRYFF)</option>
+            <option value="bwetff">BWET Freight Futures (BWETFF)</option>
+          </select>
         </div>
         <div class="chart-canvas-wrap" style="height:320px"><canvas id="yearlyRatesChart"></canvas></div>
       </div>
@@ -5586,6 +5598,10 @@
       if (currentTab === 'signals') renderSignalsTab(currentProduct);
     });
 
+    document.getElementById('ratesOverlayProduct').addEventListener('change', function () {
+      if (DATA.loaded) renderYDRatesOverlay('yearlyRatesChart');
+    });
+
     // =====================================================================
     // BOOTSTRAP
     // =====================================================================
@@ -6047,25 +6063,20 @@
     }
 
     function renderYDRatesOverlay(canvasId) {
+      var selEl = document.getElementById('ratesOverlayProduct');
+      var key = (selEl && selEl.value) || 'bdiy';
       var cy = new Date().getFullYear(), yrs = 4, ops = ['ff', 'bb', '77', '44'], datasets = [], maxDays = 0;
-      PRODUCT_KEYS.filter(function (k) { return k !== 'bdry' && k !== 'bwet'; }).forEach(function (key) {
-        var prodByYear = (DATA.byYearProduct && DATA.byYearProduct[key]) || DATA.byYear;
-        for (var yo = 0; yo < yrs; yo++) {
-          var y = cy - yo, rows = (prodByYear[y] || []);
-          if (rows.length > maxDays) maxDays = rows.length;
-          // Extract short label, but keep FF suffix for freight futures to avoid confusion with ETFs
-          var shortLbl = PRODUCTS[key].label.split(' ')[0];
-          if (key === 'bdryff') shortLbl = 'BDRYFF';
-          if (key === 'bwetff') shortLbl = 'BWETFF';
-          if (key === 'bdry_spot') shortLbl = 'BDRY Spot';
-          datasets.push({
-            label: shortLbl + ' ' + y,
-            data: rows.map(function (r) { return r[key] != null ? r[key] : null; }),
-            borderColor: PRODUCTS[key].color + ops[yo], backgroundColor: 'transparent',
-            borderWidth: yo === 0 ? 2 : 1, pointRadius: 0, tension: 0.1, spanGaps: true
-          });
-        }
-      });
+      var prodByYear = (DATA.byYearProduct && DATA.byYearProduct[key]) || DATA.byYear;
+      for (var yo = 0; yo < yrs; yo++) {
+        var y = cy - yo, rows = (prodByYear[y] || []);
+        if (rows.length > maxDays) maxDays = rows.length;
+        datasets.push({
+          label: String(y),
+          data: rows.map(function (r) { return r[key] != null ? r[key] : null; }),
+          borderColor: PRODUCTS[key].color + ops[yo], backgroundColor: 'transparent',
+          borderWidth: yo === 0 ? 2 : 1, pointRadius: 0, tension: 0.1, spanGaps: true
+        });
+      }
       var labels = []; for (var i = 1; i <= maxDays; i++)labels.push(i);
       destroyChart(canvasId);
       var canvas = document.getElementById(canvasId); if (!canvas) return;
