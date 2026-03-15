@@ -3971,9 +3971,10 @@
         }
       }
 
+      const years8 = [...years].reverse().slice(0, 8);
       const colStats = {};
       for (let m = 0; m < 12; m++) {
-        const vals = years.map(y => matrix[y][m]).filter(v => v != null);
+        const vals = years8.map(y => matrix[y][m]).filter(v => v != null);
         colStats[m] = { min: Math.min(...vals), max: Math.max(...vals) };
       }
 
@@ -4166,9 +4167,10 @@
         }
       }
 
+      const years8 = [...years].reverse().slice(0, 8);
       const colStats = {};
       for (const q of quarters) {
-        const vals = years.map(y => matrix[y][q]).filter(v => v != null);
+        const vals = years8.map(y => matrix[y][q]).filter(v => v != null);
         colStats[q] = { min: Math.min(...vals), max: Math.max(...vals) };
       }
 
