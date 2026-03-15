@@ -1702,17 +1702,17 @@
         grid-template-columns: 1fr;
       }
 
-      /* ── Chart canvas heights: slightly reduce on mobile to avoid excessive scroll ── */
+      /* ── Chart canvas heights: !important overrides inline style="height:Xpx" on each canvas wrap ── */
       .chart-canvas-wrap {
-        height: 260px;
+        height: 260px !important;
       }
 
       .drawdown-chart-wrap {
-        height: 260px;
+        height: 260px !important;
       }
 
       .spaghetti-wrap {
-        height: 240px;
+        height: 240px !important;
       }
 
       /* ── FFA Term Structure: KEY FIX — stack the two curve panels vertically ── */
@@ -1830,12 +1830,16 @@
         grid-template-columns: 1fr;
       }
 
-      /* ── Chart canvas heights: further reduce ── */
+      /* ── Chart canvas heights: further reduce on small phones ── */
       .chart-canvas-wrap {
-        height: 220px !important;
+        height: 240px !important;
       }
 
       .drawdown-chart-wrap {
+        height: 240px !important;
+      }
+
+      .spaghetti-wrap {
         height: 220px !important;
       }
 
