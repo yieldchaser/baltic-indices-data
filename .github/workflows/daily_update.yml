@@ -33,11 +33,20 @@ jobs:
     - name: Run scraper
       run: python scripts/update_indices.py
 
+    - name: Install Playwright for new indices
+      run: |
+        pip install playwright
+        playwright install chromium
+        playwright install-deps chromium
+
+    - name: Run new indices scraper (BLNG, BLPG, FBX, BAI00)
+      run: xvfb-run python scripts/baltic_new_indices.py
+
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add bdiy_historical.csv cape_historical.csv panama_historical.csv suprama_historical.csv handysize_historical.csv cleantanker_historical.csv dirtytanker_historical.csv bdryff_history.csv bwetff_history.csv BDRY_Daily.csv BWET_Daily.csv sgx_cape_futures.csv sgx_panamax_futures.csv sgx_supramax_futures.csv sgx_handysize_futures.csv
+        git add bdiy_historical.csv cape_historical.csv panama_historical.csv suprama_historical.csv handysize_historical.csv cleantanker_historical.csv dirtytanker_historical.csv bdryff_history.csv bwetff_history.csv BDRY_Daily.csv BWET_Daily.csv sgx_cape_futures.csv sgx_panamax_futures.csv sgx_supramax_futures.csv sgx_handysize_futures.csv blng_historical.csv blpg_historical.csv fbx_historical.csv bai_historical.csv
         git diff --quiet && git diff --staged --quiet || git commit -m "Update indices $(date +'%Y-%m-%d %H:%M UTC')"
         git pull --rebase origin main || echo "Nothing to pull or pull failed"
         git push
