@@ -2327,9 +2327,14 @@
         <div class="chart-header">
           <div class="chart-title">Premium / Discount History — BDRY &amp; BWET</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
-            <button class="toggle-btn active" id="pdBtn1y" onclick="setPDWindow('1y')">1Y</button>
-            <button class="toggle-btn" id="pdBtn3y" onclick="setPDWindow('3y')">3Y</button>
-            <button class="toggle-btn" id="pdBtnAll" onclick="setPDWindow('all')">All</button>
+            <div class="toggle-group pd-ranges">
+              <button class="toggle-btn" id="pdBtn1m" onclick="setPDWindow('1m')">1M</button>
+              <button class="toggle-btn" id="pdBtn3m" onclick="setPDWindow('3m')">3M</button>
+              <button class="toggle-btn" id="pdBtn6m" onclick="setPDWindow('6m')">6M</button>
+              <button class="toggle-btn active" id="pdBtn1y" onclick="setPDWindow('1y')">1Y</button>
+              <button class="toggle-btn" id="pdBtn3y" onclick="setPDWindow('3y')">3Y</button>
+              <button class="toggle-btn" id="pdBtnAll" onclick="setPDWindow('all')">All</button>
+            </div>
           </div>
         </div>
         <div class="index-range-wrap" style="padding:2px 0 6px;">
@@ -2350,8 +2355,16 @@
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
           <div class="chart-title">Fund Flow History (BDRY &amp; BWET)</div>
-          <div class="flex-row" style="gap:6px;align-items:center;">
-            <div style="display:flex;gap:4px;background:var(--bg);border-radius:6px;padding:3px;">
+          <div class="flex-row" style="gap:12px;align-items:center;">
+            <div class="toggle-group flow-ranges" style="margin-right:8px;">
+              <button class="toggle-btn" id="flowBtn1m" onclick="setFlowWindow('1m')">1M</button>
+              <button class="toggle-btn" id="flowBtn3m" onclick="setFlowWindow('3m')">3M</button>
+              <button class="toggle-btn" id="flowBtn6m" onclick="setFlowWindow('6m')">6M</button>
+              <button class="toggle-btn" id="flowBtn1y" onclick="setFlowWindow('1y')">1Y</button>
+              <button class="toggle-btn active" id="flowBtn3y" onclick="setFlowWindow('3y')">3Y</button>
+              <button class="toggle-btn" id="flowBtnAll" onclick="setFlowWindow('all')">All</button>
+            </div>
+            <div style="display:flex;gap:4px;background:var(--bg);border-radius:6px;padding:3px;border:1px solid var(--border);">
               <button id="flowTabBdry" onclick="switchFlowTab('bdry')"
                 style="padding:4px 14px;border-radius:4px;border:none;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.3px;background:var(--accent);color:#fff;transition:all 0.15s;">BDRY</button>
               <button id="flowTabBwet" onclick="switchFlowTab('bwet')"
@@ -3085,7 +3098,7 @@
       }
       startEl._allRows = allRows;
 
-      const onSlide = function () {
+      const onSlide = function (evt) {
         let s = parseInt(startEl.value);
         let e = parseInt(endEl.value);
         if (s > e) {
@@ -3103,7 +3116,8 @@
           const ed = allRows[e] ? fmtDate(allRows[e].date) : '';
           labelEl.textContent = `${sd} \u2192 ${ed}`;
         }
-        onUpdate(s, e);
+        // If evt is present, it's a manual UI event.
+        onUpdate(!!evt, s, e);
       };
 
       if (startEl._onSlide) {
@@ -4754,14 +4768,34 @@
     // =====================================================================
     // PREMIUM / DISCOUNT — History Chart (ETF Tab)
     // =====================================================================
-    var _pdWindow = '1y';
     function setPDWindow(w) {
       _pdWindow = w;
-      ['1y', '3y', 'all'].forEach(function (x) {
-        var el = document.getElementById('pdBtn' + x);
+      const bdryAll = DATA.bdryPD || [];
+      if (!bdryAll.length) return;
+
+      const startEl = document.getElementById('pdRangeStart');
+      const endEl = document.getElementById('pdRangeEnd');
+      if (!startEl || !endEl) return;
+
+      const cutoff = new Date();
+      if (w === '1m') cutoff.setMonth(cutoff.getMonth() - 1);
+      else if (w === '3m') cutoff.setMonth(cutoff.getMonth() - 3);
+      else if (w === '6m') cutoff.setMonth(cutoff.getMonth() - 6);
+      else if (w === '1y') cutoff.setFullYear(cutoff.getFullYear() - 1);
+      else if (w === '3y') cutoff.setFullYear(cutoff.getFullYear() - 3);
+      else cutoff.setFullYear(2000);
+
+      const sIdx = bdryAll.findIndex(r => r.date >= cutoff);
+      startEl.value = sIdx < 0 ? 0 : sIdx;
+      endEl.value = bdryAll.length - 1;
+
+      // Update button classes
+      ['1m', '3m', '6m', '1y', '3y', 'all'].forEach(x => {
+        const el = document.getElementById('pdBtn' + x);
         if (el) el.classList.toggle('active', x === w);
       });
-      renderPDHistoryChart();
+
+      startEl.dispatchEvent(new Event('input'));
     }
 
     function renderPDHistoryChart() {
@@ -4853,7 +4887,13 @@
       if (!bdryAll.length) return;
       const startEl = document.getElementById('pdRangeStart');
       if (startEl && !startEl._pdInited) {
-        initDualRangeSlider('pdRange', bdryAll, () => {
+        initDualRangeSlider('pdRange', bdryAll, (isManual) => {
+          if (isManual) {
+            ['1m', '3m', '6m', '1y', '3y', 'all'].forEach(x => {
+              const el = document.getElementById('pdBtn' + x);
+              if (el) el.classList.remove('active');
+            });
+          }
           renderPDHistoryChart();
         });
         // Default to last 1Y
@@ -5249,6 +5289,35 @@
 
     var _flowTicker = 'bdry';
 
+    function setFlowWindow(w) {
+      const allRows = (_flowTicker === 'bdry') ? DATA.bdryFlows : DATA.bwetFlows;
+      if (!allRows || !allRows.length) return;
+
+      const startEl = document.getElementById('flowRangeStart');
+      const endEl = document.getElementById('flowRangeEnd');
+      if (!startEl || !endEl) return;
+
+      const cutoff = new Date();
+      if (w === '1m') cutoff.setMonth(cutoff.getMonth() - 1);
+      else if (w === '3m') cutoff.setMonth(cutoff.getMonth() - 3);
+      else if (w === '6m') cutoff.setMonth(cutoff.getMonth() - 6);
+      else if (w === '1y') cutoff.setFullYear(cutoff.getFullYear() - 1);
+      else if (w === '3y') cutoff.setFullYear(cutoff.getFullYear() - 3);
+      else cutoff.setFullYear(2000);
+
+      const sIdx = allRows.findIndex(r => r.date >= cutoff);
+      startEl.value = sIdx < 0 ? 0 : sIdx;
+      endEl.value = allRows.length - 1;
+
+      // Update buttons
+      ['1m', '3m', '6m', '1y', '3y', 'all'].forEach(x => {
+        const el = document.getElementById('flowBtn' + x);
+        if (el) el.classList.toggle('active', x === w);
+      });
+
+      startEl.dispatchEvent(new Event('input'));
+    }
+
     function switchFlowTab(ticker) {
       _flowTicker = ticker;
       ['bdry', 'bwet'].forEach(t => {
@@ -5267,9 +5336,14 @@
 
       const startEl = document.getElementById('flowRangeStart');
       if (startEl) {
-        // preserve range if possible, or set default
         const isFirst = !startEl._flowInited;
-        initDualRangeSlider('flowRange', allRows, () => {
+        initDualRangeSlider('flowRange', allRows, (isManual) => {
+          if (isManual) {
+            ['1m', '3m', '6m', '1y', '3y', 'all'].forEach(x => {
+              const el = document.getElementById('flowBtn' + x);
+              if (el) el.classList.remove('active');
+            });
+          }
           renderFundFlowCharts();
         });
 
