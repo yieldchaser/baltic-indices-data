@@ -4749,12 +4749,12 @@
             },
             y: {
               grid: { color: '#151a22' },
-              ticks: { 
-                font: { size: 10 }, 
+              ticks: {
+                font: { size: 10 },
                 callback: function(v) {
                   const precision = (key === 'bdry' || key === 'bwet') ? 1 : 0;
                   return fmt(v, precision);
-                } 
+                }
               },
             },
           },
@@ -4768,14 +4768,13 @@
     // =====================================================================
     // PREMIUM / DISCOUNT — History Chart (ETF Tab)
     // =====================================================================
+    var _pdWindow = '1y';
     function setPDWindow(w) {
       _pdWindow = w;
       const bdryAll = DATA.bdryPD || [];
-      if (!bdryAll.length) return;
-
       const startEl = document.getElementById('pdRangeStart');
       const endEl = document.getElementById('pdRangeEnd');
-      if (!startEl || !endEl) return;
+      if (!startEl || !endEl || !bdryAll.length) return;
 
       const cutoff = new Date();
       if (w === '1m') cutoff.setMonth(cutoff.getMonth() - 1);
@@ -4870,13 +4869,29 @@
             legend: { position: 'top', labels: { usePointStyle: true, font: { size: 11 } } },
             tooltip: {
               callbacks: {
-                label: function (c) { return ' ' + c.dataset.label + ': ' + (c.parsed.y != null ? c.parsed.y.toFixed(3) + '%' : '—'); }
+                label: function(c) { 
+                  const v = c.parsed.y;
+                  return ' ' + c.dataset.label + ': ' + (v != null ? v.toFixed(3) + '%' : '—'); 
+                }
               }
             },
           },
           scales: {
-            x: { grid: { color: '#151a22' }, ticks: { maxTicksLimit: 10, font: { size: 11 }, callback: function (_, i) { return labels[i] ? labels[i].slice(0, 7) : ''; } } },
-            y: { grid: { color: '#151a22' }, ticks: { font: { size: 11 }, callback: function (v) { return v.toFixed(1) + '%'; } } },
+            x: { 
+              grid: { color: '#151a22' }, 
+              ticks: { 
+                maxTicksLimit: 10, 
+                font: { size: 11 }, 
+                callback: function(v, i) { return labels[i] ? labels[i].slice(0, 7) : ''; } 
+              } 
+            },
+            y: { 
+              grid: { color: '#151a22' }, 
+              ticks: { 
+                font: { size: 11 }, 
+                callback: function(v) { return v.toFixed(1) + '%'; } 
+              } 
+            },
           },
         },
       });
@@ -5452,14 +5467,14 @@
             tooltip: {
               ...commonOptions.plugins.tooltip,
               callbacks: { 
-                label: c => {
+                label: function(c) {
                   const idx = c.dataIndex;
                   const dNet = dailyNet[idx];
                   const cNet = cumFlows[idx];
                   return [
-                    ` Price: $${c.parsed.y.toFixed(2)}`,
-                    ` Daily Net: ${dNet >= 0 ? '+' : ''}$${(dNet / 1000000).toFixed(2)}M`,
-                    ` Cum. Net: ${cNet >= 0 ? '+' : ''}$${(cNet / 1000000).toFixed(2)}M`
+                    ' Price: $' + c.parsed.y.toFixed(2),
+                    ' Daily Net: ' + (dNet >= 0 ? '+' : '') + '$' + (dNet / 1000000).toFixed(2) + 'M',
+                    ' Cum. Net: ' + (cNet >= 0 ? '+' : '') + '$' + (cNet / 1000000).toFixed(2) + 'M'
                   ];
                 }
               }
@@ -5511,7 +5526,10 @@
             tooltip: {
               ...commonOptions.plugins.tooltip,
               callbacks: { 
-                label: c => ` ${c.dataset.label}: $${(Math.abs(c.parsed.y) / 1000000).toFixed(2)}M` 
+                label: function(c) {
+                  const v = c.parsed.y;
+                  return ' ' + c.dataset.label + ': $' + (Math.abs(v) / 1000000).toFixed(2) + 'M';
+                }
               }
             }
           }
@@ -5560,7 +5578,10 @@
             tooltip: {
               ...commonOptions.plugins.tooltip,
               callbacks: { 
-                label: c => ` Net Flow: ${c.parsed.y >= 0 ? '+' : ''}$${(c.parsed.y / 1000000).toFixed(2)}M` 
+                label: function(c) {
+                  const v = c.parsed.y;
+                  return ' Net Flow: ' + (v >= 0 ? '+' : '') + '$' + (v / 1000000).toFixed(2) + 'M';
+                }
               }
             }
           }
