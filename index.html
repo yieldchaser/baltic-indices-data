@@ -3000,12 +3000,12 @@
           tooltip.style.top = top + 'px';
           tooltip.style.left = left + 'px';
 
-          // Auto-dismiss after 3 seconds
+          // Auto-dismiss after 6 seconds
           touchDismiss = setTimeout(() => {
             tooltip.classList.remove('visible');
             tooltip.style.position = ''; // restore fixed for desktop
             touchDismiss = null;
-          }, 3000);
+          }, 6000);
         });
       }, { passive: false });
     })();
