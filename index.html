@@ -5271,6 +5271,8 @@
               data: flow5d,
               backgroundColor: flow5d.map(function(v) { return v > 0 ? 'rgba(63,185,80,0.5)' : 'rgba(248,81,73,0.5)'; }),
               yAxisID: 'y1',
+              borderWidth: 0,
+              order: 2,
               hidden: hiddenState['5D Flow Sum'] || false,
             },
             {
@@ -5284,6 +5286,7 @@
               fill: false,
               tension: 0.1,
               yAxisID: 'y',
+              order: 1,
               hidden: hiddenState['ETF Price (NAV)'] || false,
             }
           ]
