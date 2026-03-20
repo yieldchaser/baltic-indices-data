@@ -203,6 +203,30 @@
       }
     }
 
+    /* GLOBAL TOOLTIP */
+    #global-tooltip {
+      position: fixed;
+      z-index: 10000;
+      background: rgba(22, 27, 34, 0.95);
+      backdrop-filter: blur(8px);
+      color: #adbac7;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      line-height: 1.5;
+      max-width: 280px;
+      border: 1px solid rgba(88, 166, 255, 0.3);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 10px rgba(88, 166, 255, 0.1);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s ease, transform 0.15s ease;
+      transform: translateY(10px);
+    }
+    #global-tooltip.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .loading-text {
       color: var(--text-muted);
       font-size: 13px;
