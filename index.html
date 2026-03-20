@@ -227,6 +227,11 @@
       transform: translateY(0);
     }
 
+    /* Prevent I-beam cursor on tooltip triggers — keep text selectable */
+    [data-tooltip] {
+      cursor: default;
+    }
+
     .loading-text {
       color: var(--text-muted);
       font-size: 13px;
@@ -2021,7 +2026,7 @@
     <div class="tab-panel active" id="tab-dashboard">
       <div class="dashboard-hero mb-20">
         <div class="current-price-block">
-          <div class="current-price-label" id="dashProductLabel" data-tooltip="The primary shipping freight index or ETF currently selected for analysis across all terminal tabs.">Baltic Dry Index (BDI)</div>
+          <div class="current-price-label" id="dashProductLabel" data-tooltip="Baltic Dry Index (BDI) — the composite benchmark assembled by the Baltic Exchange daily from reported freight rates on major dry bulk routes. Change this via the product selector in the top-right.">Baltic Dry Index (BDI)</div>
           <div class="current-price-value" id="dashCurrentPrice">—</div>
           <div class="current-price-change" id="dashPriceChange">—</div>
         </div>
@@ -2031,32 +2036,32 @@
 
       <div class="stats-row mb-20">
         <div class="stat-card sc-percentile">
-          <div class="stat-label" data-tooltip="The relative standing of the current price compared to the entire historical data range. 100% is the all-time high.">All-Time Pctl</div>
+          <div class="stat-label" data-tooltip="All-Time Percentile — ranks today's reading against every daily close since the dataset begins (~2008). 50th = median of all time. 95th+ = historically extreme overvaluation; 5th or below = historically extreme undervaluation.">All-Time Pctl</div>
           <div class="stat-value" id="statAlltime">—</div>
           <div class="stat-sub">vs full history</div>
         </div>
         <div class="stat-card sc-percentile">
-          <div class="stat-label" data-tooltip="Relative standing of the current price against the last 10 years of trading history.">10Y Percentile</div>
+          <div class="stat-label" data-tooltip="10-Year Percentile — filters the ranking to the last decade only, cutting out the 2008/2009 super-cycle highs. More relevant for a modern freight market structure.">10Y Percentile</div>
           <div class="stat-value" id="stat10y">—</div>
           <div class="stat-sub">last 10 years</div>
         </div>
         <div class="stat-card sc-percentile">
-          <div class="stat-label" data-tooltip="Relative standing of the current price against the last 5 years of trading history. Key for identifying multi-year cyclicality.">5Y Percentile</div>
+          <div class="stat-label" data-tooltip="5-Year Percentile — the most operationally relevant window; anchored in post-COVID freight dynamics. A low reading here signals the market is near its cheapest point in recent memory.">5Y Percentile</div>
           <div class="stat-value" id="stat5y">—</div>
           <div class="stat-sub">last 5 years</div>
         </div>
         <div class="stat-card sc-zscore">
-          <div class="stat-label" data-tooltip="Seasonal standard deviation. Measures how much the current value deviates from the historical mean of this specific calendar day.">Z-Score</div>
+          <div class="stat-label" data-tooltip="Seasonal Z-Score — compares today's value against the average of the same calendar day across all prior years. A score of +2.0 means today's reading is 2 standard deviations above the seasonal norm for this date.">Z-Score</div>
           <div class="stat-value" id="statZscore">—</div>
           <div class="stat-sub">vs same trading day</div>
         </div>
         <div class="stat-card sc-drawdown">
-          <div class="stat-label" data-tooltip="Percentage decline from the trailing 1-year peak. Measures current portfolio 'pain' relative to recent highs.">52-Week Drawdown</div>
+          <div class="stat-label" data-tooltip="52-Week Drawdown — how far the index has fallen from its most recent 52-week peak. A -40% drawdown with a low percentile rank is historically a high-probability mean-reversion setup.">52-Week Drawdown</div>
           <div class="stat-value" id="statDrawdown">—</div>
           <div class="stat-sub">from 52-week high</div>
         </div>
         <div class="stat-card sc-roc">
-          <div class="stat-label" data-tooltip="Short-term momentum oscillator measuring the percentage gain or loss over the last 20 trading days.">Rate of Change (20d)</div>
+          <div class="stat-label" data-tooltip="Rate of Change (20-Day) — measures price velocity over the last ~1 month of trading. Positive values confirm upward momentum; negative values below -10% often coincide with capitulation events.">Rate of Change (20d)</div>
           <div class="stat-value" id="statRoc20">—</div>
           <div class="stat-sub">20-day % change</div>
         </div>
@@ -2065,15 +2070,15 @@
       <!-- Historical Context Strip -->
       <div class="context-strip" id="contextStrip">
         <div class="context-card">
-          <div class="context-label" data-tooltip="The arithmetic mean of index values over the last 5 years, providing a 'fair value' baseline for long-term cycles.">5Y Average</div>
+          <div class="context-label" data-tooltip="5-Year Arithmetic Mean — the simple average of daily closing values over the past 5 years. Serves as the 'fair value' anchor for medium-term mean reversion; the index historically gravitates back to this level.">5Y Average</div>
           <div class="context-value" id="ctx5yAvg">—</div>
         </div>
         <div class="context-card">
-          <div class="context-label" data-tooltip="Percentage deviation of the current price from its 5-year mean. Positive = premium; Negative = discount.">vs 5Y Avg</div>
+          <div class="context-label" data-tooltip="Deviation vs 5Y Mean — how far (in %) the current index sits above or below its 5-year average. Trading at -40% below the 5Y mean is a historically rare discount that has often preceded multi-month rallies.">vs 5Y Avg</div>
           <div class="context-value" id="ctx5yDev">—</div>
         </div>
         <div class="context-card">
-          <div class="context-label" data-tooltip="Percentage deviation from the 10-year arithmetic mean, providing decade-scale context.">vs 10Y Avg</div>
+          <div class="context-label" data-tooltip="Deviation vs 10Y Mean — provides decade-scale context. Since this period includes the 2010–2016 collapse and the 2021 COVID surge, a negative reading shows how much today's market has corrected from the full-cycle average.">vs 10Y Avg</div>
           <div class="context-value" id="ctx10yDev">—</div>
         </div>
       </div>
@@ -2081,7 +2086,7 @@
       <!-- Overlay Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Comparison of the current year's seasonal price trajectory against previous years. Toggle years to isolate specific market cycles.">Current Year vs Historical Years</div>
+          <div class="chart-title" data-tooltip="Seasonal overlay chart — plots each calendar year's cumulative performance starting at 100. Use checkboxes to isolate specific cycles. Crossing above prior-year lines signals stronger-than-normal seasonal momentum.">Current Year vs Historical Years</div>
         </div>
         <div class="year-checkboxes" id="yearCheckboxes"></div>
         <div class="chart-canvas-wrap">
@@ -2092,7 +2097,7 @@
       <!-- Drawdown Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Visual record of percentage declines from rolling 52-week peaks. Useful for identifying the duration and depth of historical corrections.">Drawdown from 52-Week High</div>
+          <div class="chart-title" data-tooltip="Rolling 52-Week Drawdown — shows how many percent below the trailing 1-year high the index is at each point in time. Deeper, longer drawdowns (e.g., -80% for 24+ months) have historically marked generational buying opportunities.">Drawdown from 52-Week High</div>
         </div>
         <div class="drawdown-chart-wrap">
           <canvas id="drawdownChart"></canvas>
@@ -2102,7 +2107,7 @@
       <!-- Recent Daily Changes -->
       <div class="chart-section">
         <div class="chart-header">
-          <div class="chart-header-title" data-tooltip="A raw data view of the most recent price movements, including absolute and percentage changes for the last several trading sessions.">Recent Daily Changes</div>
+          <div class="chart-header-title" data-tooltip="Last ~10 trading sessions — shows the raw absolute value, daily change in points, and the percentage move for each session. Useful for spotting day-over-day momentum reversals or confirming multi-day trends.">Recent Daily Changes</div>
           <button class="dl-btn" id="recentDlBtn">⬇ CSV</button>
         </div>
         <div style="overflow-x:auto">
@@ -2113,7 +2118,7 @@
       <!-- Yearly Performance Table -->
       <div class="collapsible-section mb-20">
         <button class="collapsible-toggle" id="yearlyPerfToggle" onclick="toggleYearlyPerf()">
-          <span data-tooltip="Historical annual return statistics, highlighting year-on-year volatility and major multi-year trends.">Yearly Performance Table</span>
+          <span data-tooltip="Year-by-Year Performance — Open, High, Low, Close and the full-year % return for each calendar year on record. Identifies long-duration bull and bear cycles; consecutive negative years often precede sharp mean-reverting rallies.">Yearly Performance Table</span>
           <span class="toggle-arrow">▼</span>
         </button>
         <div class="collapsible-content" id="yearlyPerfContent">
@@ -2128,7 +2133,7 @@
 
       <!-- Correlation Matrix -->
       <div class="corr-section mb-20">
-        <div class="section-title" data-tooltip="Measures the synchronicity (Pearson Coefficient) between different freight indices. +1.0 is perfect correlation; 0 is no relation; -1.0 is perfect inverse.">Index Correlation Matrix</div>
+        <div class="section-title" data-tooltip="Pearson Correlation Matrix — measures the linear co-movement between pairs of shipping indices (BDI, BCI, BPI, BSI, BCTI, BDTI). Correlations of +0.9+ mean indices move in near-lockstep; values near 0 indicate independent price discovery. Use the 1Y window to see whether historical pairs have recently decoupled.">Index Correlation Matrix</div>
         <div class="corr-timeframe-btns">
           <button class="corr-btn active" data-corr="all" onclick="setCorrTimeframe(this,'all')">All Time</button>
           <button class="corr-btn" data-corr="5y" onclick="setCorrTimeframe(this,'5y')">Last 5Y</button>
@@ -2172,7 +2177,7 @@
     <!-- ===== TAB: HEATMAPS ===== -->
     <div class="tab-panel" id="tab-heatmaps">
       <div class="heatmap-view-row">
-        <label for="heatmapViewSelect" data-tooltip="Toggle between Absolute Price levels and Percentage Changes (MoM/QoQ). Useful for identifying both price ceilings and momentum.">Heatmap View:</label>
+        <label for="heatmapViewSelect" data-tooltip="View Mode toggle — Absolute Values show raw index levels (useful for spotting price floors/ceilings). % Change mode converts each cell to the Month-over-Month or Quarter-over-Quarter % return, making seasonal momentum patterns immediately obvious.">Heatmap View:</label>
         <select id="heatmapViewSelect" onchange="onHeatmapViewChange()">
           <option value="absolute">Absolute Values</option>
           <option value="pct">% Change (MoM/QoQ)</option>
@@ -2182,7 +2187,7 @@
       <div class="heatmap-section mb-20">
         <div
           style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-          <div class="section-title" style="margin-bottom:0" data-tooltip="Grid visualization of index performance by month and year. Color intensity represents the magnitude of the move, highlighting seasonal patterns.">Monthly Heatmap</div>
+          <div class="section-title" style="margin-bottom:0" data-tooltip="Monthly Heatmap — each cell is a single calendar month. Red = negative return (or below-average absolute); Green = positive (or above-average). Scan vertically to find the same month across years; a column of red = structurally weak month (e.g., Jan historically soft for BDI).">Monthly Heatmap</div>
           <button class="dl-btn" id="monthlyHeatmapDlBtn">⬇ Download CSV</button>
         </div>
         <div class="heatmap-wrap">
@@ -2193,7 +2198,7 @@
       <div class="heatmap-section mb-20">
         <div
           style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-          <div class="section-title" style="margin-bottom:0" data-tooltip="Aggregated performance view by fiscal quarter, distilling monthly volatility into broader multi-month trends.">Quarterly Heatmap</div>
+          <div class="section-title" style="margin-bottom:0" data-tooltip="Quarterly Heatmap — aggregates Jan–Mar into Q1, Apr–Jun into Q2 etc., reducing noise and exposing multi-month structural biases (e.g., Q4 is historically the strongest quarter for Capesize rates).">Quarterly Heatmap</div>
           <button class="dl-btn" id="quarterlyHeatmapDlBtn">⬇ Download CSV</button>
         </div>
         <div class="heatmap-wrap">
@@ -2210,7 +2215,7 @@
       <!-- Spaghetti Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Visualizes path dependency by overlaying every historical year's quarterly progress on a 100-basis-point scale.">Quarterly Performance by Year (Spaghetti)</div>
+          <div class="chart-title" data-tooltip="Quarterly Spaghetti Chart — each line is one calendar year, all rebased to 100 at the start of Q1. This reveals path dependency: years that rally hard in Q1 rarely give it all back by Q4. The current year is highlighted in a bold accent color.">Quarterly Performance by Year (Spaghetti)</div>
         </div>
         <div class="spaghetti-wrap">
           <canvas id="spaghettiChart"></canvas>
@@ -2220,7 +2225,7 @@
       <!-- Quarterly Area Comparison 1 -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="High-fidelity overlay comparing the current year's quarterly path against the prior year and the 5-year average baseline.">Quarterly Area Comparison &mdash; Current vs Prior vs 5Y Avg</div>
+          <div class="chart-title" data-tooltip="Quarterly Area Comparison — three overlaid series: current year (solid), prior year (dashed), and the 5-year rolling average (shaded). When the current year is tracking above both, it confirms a seasonally strong regime.">Quarterly Area Comparison &mdash; Current vs Prior vs 5Y Avg</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="quarterlyAreaComp1Chart"></canvas></div>
       </div>
@@ -2230,7 +2235,7 @@
       <!-- Quarterly Bar Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Trailing 4-quarter performance view, colored by the direction of the Quarter-over-Quarter change.">Quarterly Bar Chart (Last 4 Quarters, QoQ Color)</div>
+          <div class="chart-title" data-tooltip="Trailing 4 Quarters Bar Chart — each bar represents one closed quarter's absolute level. Bar color reflects the Quarter-over-Quarter (QoQ) direction: green = improved vs prior quarter, red = deteriorated. Two consecutive red bars often signal a cyclical downturn.">Quarterly Bar Chart (Last 4 Quarters, QoQ Color)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="quarterlyBarChart"></canvas></div>
       </div>
@@ -2238,7 +2243,7 @@
       <!-- Quarterly Area Comparison 2 Combined -->      <!-- Quarterly Data Grid -->
       <div class="chart-section">
         <div class="chart-header">
-          <div class="chart-header-title" data-tooltip="A tabular record of quarterly performance for the last 8 cycles, used for detailed value reconciliation.">Quarterly Data Grid (Last 8 Years)</div>
+          <div class="chart-header-title" data-tooltip="Quarterly Data Grid — 8-year tabular record showing the opening, closing, high, and low value for each Q1–Q4 period. Also shows the QoQ and full-year change for each row. Useful for spotting which year's patterns most closely mirror the current cycle.">Quarterly Data Grid (Last 8 Years)</div>
           <button class="dl-btn" id="quarterlyDashGridDlBtn">&#x2B07; CSV</button>
         </div>
         <div style="overflow-x:auto">
@@ -2259,7 +2264,7 @@
       <!-- Liquidity Tracker (BDRY / BWET tabbed) -->
       <div class="chart-container mb-20" id="liqTrackerSection" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title">Liquidity Tracker</div>
+          <div class="chart-title" data-tooltip="Liquidity Tracker — estimates the maximum safe daily trade size for BDRY or BWET using rolling volume, spread, and volatility data sourced from the liquidity CSV files. 'Safe Liquidity' is the threshold below which an institutional order won't materially move the ETF price.">Liquidity Tracker</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <!-- ETF toggle pills -->
             <div style="display:flex;gap:4px;background:var(--bg);border-radius:6px;padding:3px;">
@@ -2341,7 +2346,7 @@
       <!-- Premium / Discount History -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="The difference between the ETF's market price and its Net Asset Value (NAV). Positive = ETF trades above NAV; negative = discount.">Premium / Discount History — BDRY &amp; BWET</div>
+          <div class="chart-title" data-tooltip="BDRY/BWET Premium/Discount vs NAV — Formula: (Market Price − NAV) / NAV × 100. When the ETF trades at a persistent premium (+1% to +3%), it signals speculative demand outpacing supply of shares; extreme premiums often precede corrections. Persistent discounts (-1%+) can signal ETF distribution pressure.">Premium / Discount History — BDRY &amp; BWET</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <div class="toggle-group pd-ranges">
               <button class="toggle-btn" id="pdBtn1m" onclick="setPDWindow('1m')">1M</button>
@@ -2370,7 +2375,7 @@
       <!-- Fund Flow History -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Historical record of investor capital entering (Inflow) or exiting (Outflow) the ETFs. Tracks institutional demand and sentiment.">Fund Flow History (BDRY &amp; BWET)</div>
+          <div class="chart-title" data-tooltip="Share Creation / Redemption Activity — positive (green) bars represent Authorized Participants creating new ETF shares (buying underlying futures), signaling institutional demand. Negative (red) bars are redemptions (selling futures). Sustained inflows while the price falls = smart money accumulation.">Fund Flow History (BDRY &amp; BWET)</div>
           <div class="flex-row" style="gap:12px;align-items:center;">
             <div class="toggle-group flow-ranges" style="margin-right:8px;">
               <button class="toggle-btn" id="flowBtn1m" onclick="setFlowWindow('1m')">1M</button>
@@ -2402,7 +2407,7 @@
         <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">Daily Net Flow — Inflow / Outflow ($)</div>
         <div class="chart-canvas-wrap" style="height:180px;margin-bottom:12px;"><canvas id="flowDailyChart"></canvas></div>
         
-        <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="The total net capital invested over the selected timeframe. Recalculated to start at $0 at the beginning of the range.">Cumulative Net Flow ($)</div>
+        <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Cumulative Net Flow ($) — running total of all daily creations minus redemptions. Recalculated to $0 at the left edge of the selected window. A persistently rising line = institutional capital building a position. A sharply falling line = institutional exit.">Cumulative Net Flow ($)</div>
         <div class="chart-canvas-wrap" style="height:240px;"><canvas id="flowCumChart"></canvas></div>
         <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
           Daily flows represent creations/redemptions in USD. Cumulative flow is recalculated to start from $0 at the beginning of the selected range.
@@ -2412,7 +2417,7 @@
       <!-- ETF Historical Volatility -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Rolling annualized standard deviation of log returns. Measures the magnitude of price swings in the underlying freight futures.">Historical Volatility — BDRY &amp; BWET</div>
+          <div class="chart-title" data-tooltip="Annualized Historical Volatility — computes rolling std dev of log-returns × √252. Four regimes are coloured by all-time HV percentile: Blue (Low <25th), Green (Normal 25–75th), Amber (Elevated 75–90th), Red (Spike >90th). Compare current regime to see if the freight ETF is entering a volatility compression or expansion phase.">Historical Volatility — BDRY &amp; BWET</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="etfHvBtn3y" onclick="setETFHVWindow('3y')">3Y</button>
             <button class="toggle-btn" id="etfHvBtn5y" onclick="setETFHVWindow('5y')">5Y</button>
@@ -2444,7 +2449,7 @@
       <!-- NEW: Cross-Asset Correlation Section -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Measures how closely the ETF price tracks its underlying benchmark and related shipping indices. Essential for hedging and parity checks.">Cross-Asset Correlation (ETF vs Indices)</div>
+          <div class="chart-title" data-tooltip="ETF-to-Index Pearson Correlation — shows how tightly BDRY/BWET tracks BDI, BCI, BCTI, BDTI and other benchmarks. Correlation below 0.7 over 1Y may indicate tracking drift caused by roll costs or futures market dislocation.">Cross-Asset Correlation (ETF vs Indices)</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="corr-btn active" id="etfCorrBtnall" onclick="renderETFCorrMatrix('all')">All Time</button>
             <button class="corr-btn" id="etfCorrBtn5y" onclick="renderETFCorrMatrix('5y')">5Y</button>
@@ -2675,7 +2680,7 @@
       <!-- 3. Rate-of-Change Heatmap -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Momentum visualization across all listed assets and multiple timeframes. Identifying relative strength and rotation between vessel classes.">Rate-of-Change Heatmap — All Products × Timeframes</div>
+          <div class="chart-title" data-tooltip="Rate-of-Change Heatmap — computes the % price change for every product over every major timeframe (5D, 1M, 3M, 6M, 1Y). Redder = falling faster; greener = gaining faster. Each row is one shipping index/ETF; each column is a timeframe. Use to instantly spot which class is leading or lagging.">Rate-of-Change Heatmap — All Products × Timeframes</div>
         </div>
         <div id="rocHeatmap" style="overflow-x:auto;margin-top:4px;"></div>
       </div>
@@ -2683,7 +2688,7 @@
       <!-- 4. Seasonal Decomposition -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="The average intra-year price path across all historical data, shaded with ±1 standard deviation. Identifies structural seasonal peaks and troughs.">Seasonal Pattern — Avg Intra-Year ± 1σ (All Years)</div>
+          <div class="chart-title" data-tooltip="Seasonal Decomposition — the solid line is the average value for each calendar day across all historical years. The shaded band is ±1 standard deviation. When the current price (plotted externally) sits outside this band, it signals a statistically unusual seasonal deviation.">Seasonal Pattern — Avg Intra-Year ± 1σ (All Years)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:320px"><canvas id="seasonalChart"></canvas></div>
       </div>
@@ -2709,7 +2714,7 @@
       <div class="chart-container mb-20">
         <div class="chart-header">
           <div class="flex-row" style="gap:12px;align-items:center;">
-            <div class="chart-title" data-tooltip="Correlating price action with recent capital flows to identify accumulation (Divergence) or distribution (Confluence) patterns.">ETF Fund Flow Signals — Momentum &amp; Divergence</div>
+            <div class="chart-title" data-tooltip="Fund Flow Signal Chart — overlays the ETF NAV price against the rolling 5-day net flow. Price rising + flow diverging downward = Distribution ⚠️ (sell signal). Price falling + flow positive = Accumulation ⚠️ (potential reversal). Price and flow both rising = Confirmed momentum.">ETF Fund Flow Signals — Momentum &amp; Divergence</div>
             <div style="display:flex;gap:4px;background:var(--bg);border-radius:6px;padding:3px;border:1px solid var(--border);">
               <button id="flowSigTabBdry" onclick="switchFlowSigTab('bdry')"
                 style="padding:4px 14px;border-radius:4px;border:none;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.3px;background:var(--accent);color:#fff;transition:all 0.15s;">BDRY</button>
@@ -2744,7 +2749,7 @@
       <!-- 5. Term Structure Slope -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Snapshot of the forward freight curve. Backwardation (downward slope) suggests near-term strength; Contango (upward slope) suggests future price appreciation.">FFA Term Structure — BDRY &amp; BWET Curve Shape</div>
+          <div class="chart-title" data-tooltip="FFA Term Structure — plots the last-traded settlement price for each active forward contract month (Cal Q, Cal year). A downward slope (Backwardation) means the market expects cheaper freight ahead; an upward slope (Contango) signals future tightening expectations. Steep backwardation has historically been a warning of near-term rate peaks.">FFA Term Structure — BDRY &amp; BWET Curve Shape</div>
         </div>
         <div id="termStructurePanel" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:4px;">
           <div>
@@ -2767,7 +2772,7 @@
       <!-- 7. SGX FFA Forward Curve -->
       <div class="chart-container mb-20" style="margin-top:4px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="The definitive market for future freight settlement. Useful for hedging and identifying price expectations for upcoming contract months.">SGX FFA Forward Curve</div>
+          <div class="chart-title" data-tooltip="SGX FFA Forward Curve — Singapore Exchange-cleared FFA settlements across all live contract months for the selected vessel class (Capesize, Panamax, Supramax, Handysize). Click any data point to drill into that contract's full price history. Compare vs previous periods to see whether the curve has shifted in or out.">SGX FFA Forward Curve</div>
           <div class="flex-row" style="gap:6px;align-items:center;flex-wrap:wrap;">
             <div style="display:flex;gap:4px;">
               <button class="toggle-btn active" id="ffaBtnCape" onclick="setFFAProduct('cape')">Cape</button>
@@ -2814,7 +2819,7 @@
       <!-- 9. Futures Premium (Basis) -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="The spread between current physical rates and front-month futures. Large positive basis (Contango) often precedes rallies; negative basis suggests weakness.">Futures vs Spot Premium — BDRYFF vs Synthetic Spot</div>
+          <div class="chart-title" data-tooltip="Futures Basis — calculated as (BDRYFF front-month − Synthetic BDI Spot) / BDI Spot × 100%. Green zone = Contango (futures above spot), indicating market expects rates to rise. Red zone = Backwardation (futures below spot). A shift from Backwardation into Contango has historically preceded multi-week spot market rallies.">Futures vs Spot Premium — BDRYFF vs Synthetic Spot</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn" id="basisBtn3m" onclick="setBasisWindow('3m')">3M</button>
             <button class="toggle-btn active" id="basisBtn1y" onclick="setBasisWindow('1y')">1Y</button>
@@ -2841,7 +2846,7 @@
       <!-- 10. Vessel-Class Contribution to BDI -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Decomposition of the BDI into its weights (50% Cape, 40% Panamax, 10% Supra). Shows which vessel class is driving the aggregate index move.">BDI Daily Change — Vessel Class Contribution</div>
+          <div class="chart-title" data-tooltip="BDI Vessel-Class Attribution — decomposes each day's BDI point move using official weighting factors (Capesize 50%, Panamax 40%, Supramax 10%). A green bar where Capesize contributes most = iron ore demand driving the index. Useful for identifying whether a BDI rally/decline is broad-based or driven by a single vessel class.">BDI Daily Change — Vessel Class Contribution</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="bdiContribBtn3m" onclick="setBDIContribWindow('3m')">3M</button>
             <button class="toggle-btn" id="bdiContribBtn6m" onclick="setBDIContribWindow('6m')">6M</button>
@@ -2868,7 +2873,7 @@
       <!-- 11. Lead–Lag Correlation Analysis -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Identifies temporal relationships between assets. A high correlation at a positive day offset (e.g. +5 days) suggests a predictive leading relationship.">Lead–Lag Correlation (Cross-Correlation of Log Returns)</div>
+          <div class="chart-title" data-tooltip="Cross-Correlation Function (CCF) — X-axis is the lag in trading days. Y-axis is the Pearson correlation at each lag. A peak at lag +5 means Asset A moves 5 days before Asset B on average. The yellow dot marks the strongest observed lag. Use this to confirm whether BDRY actually leads the BDI spot index, and by how many days.">Lead–Lag Correlation (Cross-Correlation of Log Returns)</div>
         </div>
         <div class="signals-controls">
           <label for="leadLagPair" class="context-label" style="margin-bottom:0">Pairs:</label>
@@ -4710,7 +4715,7 @@
         const startIdx5y = defaultStartIdx < 0 ? 0 : defaultStartIdx;
 
         card.innerHTML = `
-      <div class="card-header-bar" data-tooltip="Detailed historical price chart and key performance metrics for this specific shipping benchmark.">${prod.label}</div>
+      <div class="card-header-bar" data-tooltip="${prod.label} — Displays the full price history and rolling analytics (52W range, YTD return, trough recovery) for this specific shipping freight benchmark. Scroll down for chart controls.">${prod.label}</div>
       <div class="index-chart-header">
         <div class="index-chart-subtitle">
           <span>${fmt(latest.value, precision)}</span>
@@ -4733,19 +4738,19 @@
       </div>
       <div class="index-stats-strip">
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="The highest and lowest price levels reached over the last 52 weeks. Useful for identifying structural floor and ceiling levels.">52W High — Low</div>
+          <div class="index-stat-mini-label" data-tooltip="52-Week High / Low — the exact peak and trough values over the last 52 trading weeks. Knowing the distance between these two levels reveals whether the product is in a narrow consolidation or a wide cyclical swing.">52W High — Low</div>
           <div class="index-stat-mini-val val-white">${w52RangeStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="Current price expressed as a percentage of the 52-week range. 0% is the 52W low; 100% is the 52W high.">52W Position</div>
+          <div class="index-stat-mini-label" data-tooltip="52-Week Position — percentile of the current value within the 52W High–Low range. 0% = at the year's low; 100% = at the year's high. Below 20% = strong potential mean-reversion opportunity.">52W Position</div>
           <div class="index-stat-mini-val ${w52PosCls}">${w52PosStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="Year-to-Date performance. Measures the percentage return from the last trading day of the prior year.">YTD %</div>
+          <div class="index-stat-mini-label" data-tooltip="Year-to-Date Return — the % change from the last closing value of December 31 to today. A negative YTD while percentiles are rising signals early-stage recovery.">YTD %</div>
           <div class="index-stat-mini-val ${ytdCls}">${ytdStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="Percentage increase from the lowest price point reached in the last 365 days. Measures the magnitude of the current recovery.">From Last Trough</div>
+          <div class="index-stat-mini-label" data-tooltip="Recovery from Trough — % gained from the lowest point seen in the last 365 days to today. A recovery >30% from trough that still shows a low 52W position often signals the early innings of a sustained trend.">From Last Trough</div>
           <div class="index-stat-mini-val ${troughCls}">${troughStr}</div>
         </div>
       </div>`;
@@ -5268,7 +5273,7 @@
       
       var kpiHtml = '';
       function buildCard(title, valStr, colorStr, subtitle) {
-        return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;position:relative;overflow:hidden;" data-tooltip="Quantitative signal or performance metric synthesized from historical data and momentum models.">' +
+        return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;position:relative;overflow:hidden;" data-tooltip="Flow signal KPI — derived from the current ETF\'s 5-day and 20-day cumulative fund flows. Values are computed in real-time from the bdry_flows.csv / bwet_flows.csv datasets.">' +
                  '<div style="position:absolute;left:0;top:0;bottom:0;width:3px;background:' + colorStr + ';"></div>' +
                  '<div style="font-size:10px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);font-weight:600;margin-bottom:4px;margin-left:4px;">' + title + '</div>' +
                  '<div style="font-size:18px;font-weight:700;color:' + colorStr + ';margin-left:4px;margin-bottom:2px;">' + valStr + '</div>' +
@@ -6186,17 +6191,17 @@
 
       return `
     <div class="etf-header">
-      <div class="etf-ticker" data-tooltip="Current Net Asset Value (NAV) and session performance for the fund.">${ticker}</div>
+      <div class="etf-ticker" data-tooltip="${ticker} — actively-priced exchange-traded product tracking a basket of Baltic Exchange FFA contracts. NAV displayed below is computed from the underlying futures positions held in the fund.">${ticker}</div>
       <div class="etf-name">${name}</div>
       <div class="etf-price-row">${priceHTML}</div>
     </div>
-    <div style="font-size:11px;color:var(--text-muted);padding:4px 14px;margin-bottom:12px;" data-tooltip="The total notional value of futures contracts divided by total cash assets. Values near 100% indicate the fund is fully matching its benchmark exposure.">
+    <div style="font-size:11px;color:var(--text-muted);padding:4px 14px;margin-bottom:12px;" data-tooltip="Futures Exposure Ratio = total notional value of FFA positions / total fund cash. A ratio near 100% = fully replicated. Above 100% = leveraged. BDRY and BWET typically target ~100% replication with no leverage.">
       Futures Exposure: <span style="color:var(--text);font-weight:600;">${leverageStr}</span>
     </div>
 
     <div class="etf-holdings-section">
     <div class="etf-section-title-row">
-      <div class="etf-section-title" data-tooltip="The underlying mix of freight futures and cash equivalents that comprise the fund's Net Asset Value (NAV).">Holdings</div>
+      <div class="etf-section-title" data-tooltip="Fund Holdings — the complete list of FFA contracts and cash/money-market positions that the Authorized Participant holds to replicate the underlying freight benchmark index.">Holdings</div>
       <button class="dl-btn etf-dl-btn">⬇ CSV</button>
     </div>
     <table class="holdings-table">
