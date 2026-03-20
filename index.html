@@ -3007,11 +3007,11 @@
           tooltip.style.top = top + 'px';
           tooltip.style.left = left + 'px';
 
-          // Auto-dismiss after 12 seconds
+          // Auto-dismiss after 16 seconds
           touchDismiss = setTimeout(() => {
             tooltip.classList.remove('visible');
             touchDismiss = null;
-          }, 12000);
+          }, 16000);
         });
       }, { passive: false });
     })();
