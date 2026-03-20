@@ -5060,19 +5060,36 @@
     var _flowSigWindow = '1y';
     var _flowSigEtf = 'bdry';
 
+    var _forceFlowSigZoom = false;
+
     function setFlowSigWindow(w) {
       _flowSigWindow = w;
       ['1y', '3y', 'all'].forEach(function (x) {
         var el = document.getElementById('flowSigBtn' + (x === 'all' ? 'All' : x));
         if (el) el.classList.toggle('active', x === w);
       });
+      
       var sSlider = document.getElementById('flowSigRangeStart');
       var eSlider = document.getElementById('flowSigRangeEnd');
-      if (sSlider && eSlider) {
-        sSlider._allRows = null; eSlider._allRows = null;
-        sSlider.value = 0; eSlider.value = 100;
+      if (sSlider && eSlider && sSlider._allRows) {
+        var allRows = sSlider._allRows;
+        var startIdx = 0;
+        if (w !== 'all') {
+          var cutoff = new Date();
+          if (w === '1y') cutoff.setFullYear(cutoff.getFullYear() - 1);
+          else if (w === '3y') cutoff.setFullYear(cutoff.getFullYear() - 3);
+          startIdx = allRows.findIndex(function (r) { return r.date >= cutoff; });
+          if (startIdx === -1) startIdx = 0;
+        }
+        sSlider.max = allRows.length - 1;
+        eSlider.max = allRows.length - 1;
+        sSlider.value = startIdx;
+        eSlider.value = allRows.length - 1;
+        if (sSlider._onSlide) sSlider._onSlide.call(sSlider, { type: 'input' });
+      } else {
+        _forceFlowSigZoom = true;
+        renderFlowSigChart();
       }
-      renderFlowSigChart();
     }
 
     function switchFlowSigTab(etf) {
@@ -5156,14 +5173,27 @@
       
       var signalsData = computeFlowSignalsForETF(sourceData);
       
-      var cutoff = new Date();
-      if (_flowSigWindow === '1y') cutoff.setFullYear(cutoff.getFullYear() - 1);
-      else if (_flowSigWindow === '3y') cutoff.setFullYear(cutoff.getFullYear() - 3);
-      else cutoff = new Date('2000-01-01');
-
-      var filt = [];
-      signalsData.forEach(function (r) { if (r.date >= cutoff) filt.push(r); });
+      var filt = signalsData;
       if (!filt.length) return;
+
+      var sSlider = document.getElementById('flowSigRangeStart');
+      var eSlider = document.getElementById('flowSigRangeEnd');
+      if (sSlider && eSlider && (!sSlider._allRows || _forceFlowSigZoom)) {
+        var startIdx = 0;
+        if (_flowSigWindow !== 'all') {
+          var cutoff = new Date();
+          if (_flowSigWindow === '1y') cutoff.setFullYear(cutoff.getFullYear() - 1);
+          else if (_flowSigWindow === '3y') cutoff.setFullYear(cutoff.getFullYear() - 3);
+          startIdx = filt.findIndex(function (r) { return r.date >= cutoff; });
+          if (startIdx === -1) startIdx = 0;
+        }
+        sSlider.max = filt.length - 1;
+        eSlider.max = filt.length - 1;
+        sSlider.value = startIdx;
+        eSlider.value = filt.length - 1;
+        sSlider._allRows = null; eSlider._allRows = null;
+        _forceFlowSigZoom = false;
+      }
 
       var last = filt[filt.length - 1];
       
@@ -9329,38 +9359,26 @@
         const el = document.getElementById('basisBtn' + (x === 'all' ? 'All' : x));
         if (el) el.classList.toggle('active', x === w);
       });
+      
       const sSlider = document.getElementById('basisRangeStart');
       const eSlider = document.getElementById('basisRangeEnd');
-      if (sSlider && eSlider) {
-        sSlider._allRows = null; eSlider._allRows = null;
-        sSlider.value = 0; eSlider.value = 100;
-      }
-
-      const bdrySpotRows = DATA.master.filter(r => r.bdry_spot != null);
-      const bdryffRows = DATA.master.filter(r => r.bdryff != null);
-      const spotMap = new Map();
-      bdrySpotRows.forEach(r => spotMap.set(r.date.getTime(), r.bdry_spot));
-      const basisData = [];
-      bdryffRows.forEach(r => {
-        const spot = spotMap.get(r.date.getTime());
-        if (spot != null && spot > 0) basisData.push({ date: r.date });
-      });
-
-      const startEl = document.getElementById('basisRangeStart');
-      const endEl = document.getElementById('basisRangeEnd');
-      if (basisData.length && startEl && endEl) {
-        let cutoff = new Date();
-        if (w === '3m') cutoff.setMonth(cutoff.getMonth() - 3);
-        else if (w === '1y') cutoff.setFullYear(cutoff.getFullYear() - 1);
-        else cutoff = new Date(0);
-
-        let sIdx = basisData.findIndex(r => r.date >= cutoff);
-        if (sIdx === -1) sIdx = 0;
-        startEl.value = sIdx;
-        endEl.value = basisData.length - 1;
-        initBasisRange();
+      if (sSlider && eSlider && sSlider._allRows) {
+        let allRows = sSlider._allRows;
+        let startIdx = 0;
+        if (w !== 'all') {
+          let cutoff = new Date();
+          if (w === '3m') cutoff.setMonth(cutoff.getMonth() - 3);
+          else if (w === '1y') cutoff.setFullYear(cutoff.getFullYear() - 1);
+          startIdx = allRows.findIndex(r => r.date >= cutoff);
+          if (startIdx === -1) startIdx = 0;
+        }
+        sSlider.max = allRows.length - 1;
+        eSlider.max = allRows.length - 1;
+        sSlider.value = startIdx;
+        eSlider.value = allRows.length - 1;
+        if (sSlider._onSlide) sSlider._onSlide.call(sSlider, { type: 'input' });
       } else {
-        renderBasisChart();
+        initBasisRange();
       }
     }
 
