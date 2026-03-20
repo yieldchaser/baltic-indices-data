@@ -2911,40 +2911,36 @@
   <div id="global-tooltip"></div>
 
   <script>
-    // Global Tooltip Logic (Event Delegation)
+    // Global Tooltip Logic — cursor following (mousemove for accurate positioning)
     (function() {
       const tooltip = document.getElementById('global-tooltip');
       let hideTimeout = null;
+      let activeTarget = null;
 
       document.addEventListener('mouseover', function(e) {
         const target = e.target.closest('[data-tooltip]');
         if (!target) return;
-
         const text = target.getAttribute('data-tooltip');
         if (!text) return;
-
-        // Clear any pending hide
         if (hideTimeout) { clearTimeout(hideTimeout); hideTimeout = null; }
-
+        activeTarget = target;
         tooltip.textContent = text;
         tooltip.classList.add('visible');
+      });
 
-        const rect = target.getBoundingClientRect();
-        const tooltipRect = tooltip.getBoundingClientRect();
-
-        // Initial position (centered above target)
-        let top = rect.top - tooltip.offsetHeight - 12;
-        let left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2);
-
-        // Boundary checks (Viewport)
-        if (top < 10) { // Flip to bottom if no space above
-          top = rect.bottom + 12;
+      // Follow the cursor precisely — avoids stale offsetHeight at paint time
+      document.addEventListener('mousemove', function(e) {
+        if (!activeTarget) return;
+        const GAP = 14;
+        let top = e.clientY - tooltip.offsetHeight - GAP;
+        let left = e.clientX - (tooltip.offsetWidth / 2);
+        // Flip below cursor if not enough space above
+        if (top < 8) top = e.clientY + GAP;
+        // Keep within horizontal viewport
+        if (left < 8) left = 8;
+        if (left + tooltip.offsetWidth > window.innerWidth - 8) {
+          left = window.innerWidth - tooltip.offsetWidth - 8;
         }
-        if (left < 10) left = 10;
-        if (left + tooltip.offsetWidth > window.innerWidth - 10) {
-          left = window.innerWidth - tooltip.offsetWidth - 10;
-        }
-
         tooltip.style.top = top + 'px';
         tooltip.style.left = left + 'px';
       });
@@ -2952,9 +2948,10 @@
       document.addEventListener('mouseout', function(e) {
         const target = e.target.closest('[data-tooltip]');
         if (target) {
+          activeTarget = null;
           hideTimeout = setTimeout(() => {
             tooltip.classList.remove('visible');
-          }, 50);
+          }, 80);
         }
       });
     })();
@@ -6195,7 +6192,10 @@
 
       return `
     <div class="etf-header">
-      <div class="etf-ticker" data-tooltip="${ticker} — actively-priced exchange-traded product tracking a basket of Baltic Exchange FFA contracts. NAV displayed below is computed from the underlying futures positions held in the fund.">${ticker}</div>
+      <div class="etf-ticker" data-tooltip="${etfKey === 'bdry' ?
+        'BDRY \u2014 Breakwave Dry Bulk Shipping ETF. Holds near-dated FFA futures weighted: 50% Capesize 5TC (180K DWT, iron ore & coal routes), 40% Panamax 5TC (82K DWT, grain & coal), 10% Supramax 58TC. Contracts roll quarterly. NAV tracks the Solactive Baltic Exchange Dry Bulk Shipping Index. The only US-listed pure-play dry bulk ETF.' :
+        'BWET \u2014 Breakwave Tanker Shipping ETF. The world\u2019s first crude oil tanker ETF. Portfolio: 90% TD3C VLCC futures (270K MT, Middle East Gulf \u2192 China, the \\u201cDow Jones of tanker markets\\u201d) + 10% TD20 Suezmax futures (130K MT, West Africa \u2192 UK-Continent). Targets 50\u201390 day average contract maturity. NAV tracks the Breakwave Wet Freight Futures Index.'
+      }">${ticker}</div>
       <div class="etf-name">${name}</div>
       <div class="etf-price-row">${priceHTML}</div>
     </div>
