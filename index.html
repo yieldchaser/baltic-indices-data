@@ -4963,7 +4963,7 @@
     function setPDZWindow(w) {
       _pdZWindow = w;
       ['1y', '3y', 'all'].forEach(function (x) {
-        var el = document.getElementById('pdZBtn' + x);
+        var el = document.getElementById('pdZBtn' + (x === 'all' ? 'All' : x));
         if (el) el.classList.toggle('active', x === w);
       });
       renderPDZscoreChart();
@@ -5063,9 +5063,15 @@
     function setFlowSigWindow(w) {
       _flowSigWindow = w;
       ['1y', '3y', 'all'].forEach(function (x) {
-        var el = document.getElementById('flowSigBtn' + x);
+        var el = document.getElementById('flowSigBtn' + (x === 'all' ? 'All' : x));
         if (el) el.classList.toggle('active', x === w);
       });
+      var sSlider = document.getElementById('flowSigRangeStart');
+      var eSlider = document.getElementById('flowSigRangeEnd');
+      if (sSlider && eSlider) {
+        sSlider._allRows = null; eSlider._allRows = null;
+        sSlider.value = 0; eSlider.value = 100;
+      }
       renderFlowSigChart();
     }
 
@@ -9320,9 +9326,15 @@
     function setBasisWindow(w) {
       _basisWindow = w;
       ['3m', '1y', 'all'].forEach(x => {
-        const el = document.getElementById('basisBtn' + x);
+        const el = document.getElementById('basisBtn' + (x === 'all' ? 'All' : x));
         if (el) el.classList.toggle('active', x === w);
       });
+      const sSlider = document.getElementById('basisRangeStart');
+      const eSlider = document.getElementById('basisRangeEnd');
+      if (sSlider && eSlider) {
+        sSlider._allRows = null; eSlider._allRows = null;
+        sSlider.value = 0; eSlider.value = 100;
+      }
 
       const bdrySpotRows = DATA.master.filter(r => r.bdry_spot != null);
       const bdryffRows = DATA.master.filter(r => r.bdryff != null);
