@@ -265,6 +265,7 @@ Comprehensive analytical suite for technical and fundamental signals:
 | **SGX FFA Forward Curve** | Official SGX settlement curve for Cape/Pana/Supra/Handy vs 1W/2W/1M/3M ago. |
 | **Futures vs Spot Premium** | Basis tracking between BDRYFF index and synthetic spot baskets. |
 | **BDI Contribution** | Decomposition of BDI daily change by vessel class (Cape/Pana/Supra). |
+| **ETF Fund Flow Signals** | Multi-indicator glassmorphism suite: Flow Stretch (Z-score), Regime (5D/20D trend), Divergence (Price vs Flow), and Pressure (rel intensity). |
 | **Lead–Lag Correlation** | Cross-correlation of log returns (-30 to +30 days) to detect leads (Financial vs Ripple Effects vs Basis). |
 
 ---
@@ -308,6 +309,7 @@ As a zero-infrastructure platform processing thousands of data points client-sid
 | **Render Throttling** | Async `setTimeout` chains | staggers chart initialization at 50ms intervals to prevent UI thread blocking. |
 | **Animation Zeroing** | Config-level disable | Eliminates per-frame repaints and transition overhead for all 20+ charts. |
 | **Calculation Caching** | Memoized Correlation Pairs | Caches expensive cross-correlation results (O(n * maxLag)) to avoid re-computation on tab switch. |
+| **Timeline Zoom Macros** | Virtualised Slider Windows | "TradingView-style" 1Y/3Y/All buttons adjust slider handles instantly to zoom into full-history background data without re-fetching. |
 
 ---
 
