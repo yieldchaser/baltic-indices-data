@@ -2611,7 +2611,7 @@
       <!-- 1. Bollinger Bands -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Bollinger Bands (20-Day, 2σ)</div>
+          <div class="chart-title" data-tooltip="Bollinger Bands (20D, 2σ) — a volatility envelope drawn at 2 standard deviations above/below the 20-day moving average. When price touches the lower band AND the band width is narrow (low volatility), it historically marks a squeeze setup before a breakout. Price walking the upper band = sustained momentum, not automatically a sell signal.">Bollinger Bands (20-Day, 2σ)</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="bbBtn1y" onclick="setBBWindow('1y')">1Y</button>
             <button class="toggle-btn" id="bbBtn3y" onclick="setBBWindow('3y')">3Y</button>
@@ -2635,7 +2635,7 @@
       <!-- 1b. Historical Volatility -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Historical Volatility — Annualized (Log-Return Std Dev × √252)</div>
+          <div class="chart-title" data-tooltip="Spot Index Historical Volatility — rolling annualized HV computed as std dev of log-returns × √252, plotted for the selected shipping index (not the ETF). Four colour-coded regimes based on the all-time HV percentile: Blue = Low (<25th), Green = Normal (25–75th), Amber = Elevated (75–90th), Red = Spike (>90th). A shift from Spike to Elevated often precedes a directional breakout.">Historical Volatility — Annualized (Log-Return Std Dev × √252)</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="hvBtn3y" onclick="setHVWindow('3y')">3Y</button>
             <button class="toggle-btn" id="hvBtn5y" onclick="setHVWindow('5y')">5Y</button>
@@ -2667,7 +2667,7 @@
       <!-- 2. Cape/Panamax Spread -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Cape / Panamax Ratio — Iron Ore vs Bulk Grain Proxy</div>
+          <div class="chart-title" data-tooltip="Capesize / Panamax Ratio — divides the BCI (iron ore / coal, 180K DWT) by the BPI (grain / coal, 82K DWT). A rising ratio means large-vessel demand (China iron ore imports) is outpacing mid-vessel demand (grain trade). Peaks above 3.0 have historically preceded BDI corrections as Capesize rates overshoot fair value. Troughs below 1.0 suggest Capesize is historically cheap relative to Panamax.">Cape / Panamax Ratio — Iron Ore vs Bulk Grain Proxy</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="spreadBtn3y" onclick="setSpreadWindow('3y')">3Y</button>
             <button class="toggle-btn" id="spreadBtn5y" onclick="setSpreadWindow('5y')">5Y</button>
@@ -5272,8 +5272,8 @@
       var last = filt[filt.length - 1];
       
       var kpiHtml = '';
-      function buildCard(title, valStr, colorStr, subtitle) {
-        return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;position:relative;overflow:hidden;" data-tooltip="Flow signal KPI — derived from the current ETF\'s 5-day and 20-day cumulative fund flows. Values are computed in real-time from the bdry_flows.csv / bwet_flows.csv datasets.">' +
+      function buildCard(title, valStr, colorStr, subtitle, tt) {
+        return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;position:relative;overflow:hidden;" data-tooltip="' + tt + '">' +
                  '<div style="position:absolute;left:0;top:0;bottom:0;width:3px;background:' + colorStr + ';"></div>' +
                  '<div style="font-size:10px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);font-weight:600;margin-bottom:4px;margin-left:4px;">' + title + '</div>' +
                  '<div style="font-size:18px;font-weight:700;color:' + colorStr + ';margin-left:4px;margin-bottom:2px;">' + valStr + '</div>' +
@@ -5284,24 +5284,28 @@
       var fStrVal = last.f_str != null ? last.f_str : 0;
       var fStrColor = fStrVal > 1.5 ? 'rgb(248,81,73)' : (fStrVal < -1.5 ? 'rgb(63,185,80)' : 'rgb(139,148,158)');
       var fStrSub = fStrVal > 1.5 ? "Overbought" : (fStrVal < -1.5 ? "Oversold" : "Neutral");
-      kpiHtml += buildCard("Flow Stretch", (fStrVal > 0 ? '+' : '') + fStrVal.toFixed(1) + 'σ', fStrColor, fStrSub);
+      kpiHtml += buildCard("Flow Stretch", (fStrVal > 0 ? '+' : '') + fStrVal.toFixed(1) + 'σ', fStrColor, fStrSub,
+        'Flow Stretch (σ) — today\'s raw net flow standardized against its 30-day rolling mean and std dev. +2σ = abnormally heavy inflows vs recent baseline (momentum exhaustion risk). -2σ = abnormally heavy redemptions (capitulation flush, potential reversal). Neutral zone (-1.5 to +1.5) = flows are within normal daily variation.');
       
       var fRegColor = last.f_reg === 'Accumulation' ? 'rgb(63,185,80)' : (last.f_reg === 'Distribution' ? 'rgb(248,81,73)' : 'rgb(139,148,158)');
       var fRegSub = last.f_reg === 'Accumulation' ? "5D &gt; 20D Inflows" : (last.f_reg === 'Distribution' ? "5D &gt; 20D Outflows" : "No Clear Trend");
-      kpiHtml += buildCard("Flow Regime", last.f_reg, fRegColor, fRegSub);
+      kpiHtml += buildCard("Flow Regime", last.f_reg, fRegColor, fRegSub,
+        'Flow Regime — compares 5-day vs 20-day cumulative net flows to classify the institutional participation trend. Accumulation = both 5D and 20D positive AND 5D exceeds 20D (accelerating institutional buying). Distribution = both negative AND 5D more negative than 20D (accelerating selling). Neutral = mixed or flat signals with no clear directional bias.');
 
       var fDivColor = 'rgb(139,148,158)';
       var fDivSub = "Price & Flow Align";
       if (last.f_div.indexOf('⚠️') !== -1) { fDivColor = 'rgb(227,179,65)'; fDivSub = last.f_div === 'Distribution ⚠️' ? 'Price ↑, Flow ↓' : 'Price ↓, Flow ↑'; }
       else if (last.f_div === 'Confirmed') { fDivColor = 'rgb(88,166,255)'; fDivSub = "Price ↑, Flow ↑"; }
       else if (last.f_div === 'Weak') { fDivSub = "Price ↓, Flow ↓"; }
-      kpiHtml += buildCard("Flow Divergence", last.f_div.replace(' ⚠️',''), fDivColor, fDivSub);
+      kpiHtml += buildCard("Flow Divergence", last.f_div.replace(' ⚠️',''), fDivColor, fDivSub,
+        'Flow Divergence — compares 5-day ETF price return vs 5-day net flow direction. Distribution ⚠️ = price rising but capital is leaving (smart money selling into strength — high-conviction bearish). Accumulation ⚠️ = price falling but capital entering (smart money accumulating — high-conviction bullish). Confirmed = price and flows rising together. Weak = both declining.');
 
       var fPrVal = last.f_pr != null ? last.f_pr : 0;
       var fPrAbs = Math.abs(fPrVal);
       var fPrColor = fPrAbs > 1.5 ? 'rgb(248,81,73)' : (fPrAbs < 0.5 ? 'rgb(139,148,158)' : 'rgb(227,179,65)');
       var fPrSub = fPrAbs > 1.5 ? "Extreme Intensity" : (fPrAbs < 0.5 ? "Low Intensity" : "Average Intensity");
-      kpiHtml += buildCard("Flow Pressure", fPrVal.toFixed(1) + 'x', fPrColor, fPrSub);
+      kpiHtml += buildCard("Flow Pressure", fPrVal.toFixed(1) + 'x', fPrColor, fPrSub,
+        'Flow Pressure (x) — the 5-day cumulative net flow divided by the 30-day average absolute daily flow. A reading of 2.0x means today\'s 5-day buying/selling is double the normal daily average — extreme directional pressure. Above 1.5x historically precedes sharp ETF price moves. Positive = buy pressure; Negative = sell pressure. Below 0.5x = market indifference.');
 
       document.getElementById('flowSigKpiStrip').innerHTML = kpiHtml;
 
