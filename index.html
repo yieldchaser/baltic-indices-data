@@ -1997,7 +1997,7 @@
     <div class="tab-panel active" id="tab-dashboard">
       <div class="dashboard-hero mb-20">
         <div class="current-price-block">
-          <div class="current-price-label" id="dashProductLabel">Baltic Dry Index (BDI)</div>
+          <div class="current-price-label" id="dashProductLabel" data-tooltip="The primary shipping freight index or ETF currently selected for analysis across all terminal tabs.">Baltic Dry Index (BDI)</div>
           <div class="current-price-value" id="dashCurrentPrice">—</div>
           <div class="current-price-change" id="dashPriceChange">—</div>
         </div>
@@ -2007,32 +2007,32 @@
 
       <div class="stats-row mb-20">
         <div class="stat-card sc-percentile">
-          <div class="stat-label">All-Time Pctl</div>
+          <div class="stat-label" data-tooltip="The relative standing of the current price compared to the entire historical data range. 100% is the all-time high.">All-Time Pctl</div>
           <div class="stat-value" id="statAlltime">—</div>
           <div class="stat-sub">vs full history</div>
         </div>
         <div class="stat-card sc-percentile">
-          <div class="stat-label">10Y Percentile</div>
+          <div class="stat-label" data-tooltip="Relative standing of the current price against the last 10 years of trading history.">10Y Percentile</div>
           <div class="stat-value" id="stat10y">—</div>
           <div class="stat-sub">last 10 years</div>
         </div>
         <div class="stat-card sc-percentile">
-          <div class="stat-label">5Y Percentile</div>
+          <div class="stat-label" data-tooltip="Relative standing of the current price against the last 5 years of trading history. Key for identifying multi-year cyclicality.">5Y Percentile</div>
           <div class="stat-value" id="stat5y">—</div>
           <div class="stat-sub">last 5 years</div>
         </div>
         <div class="stat-card sc-zscore">
-          <div class="stat-label">Z-Score</div>
+          <div class="stat-label" data-tooltip="Seasonal standard deviation. Measures how much the current value deviates from the historical mean of this specific calendar day.">Z-Score</div>
           <div class="stat-value" id="statZscore">—</div>
           <div class="stat-sub">vs same trading day</div>
         </div>
         <div class="stat-card sc-drawdown">
-          <div class="stat-label">52-Week Drawdown</div>
+          <div class="stat-label" data-tooltip="Percentage decline from the trailing 1-year peak. Measures current portfolio 'pain' relative to recent highs.">52-Week Drawdown</div>
           <div class="stat-value" id="statDrawdown">—</div>
           <div class="stat-sub">from 52-week high</div>
         </div>
         <div class="stat-card sc-roc">
-          <div class="stat-label">Rate of Change (20d)</div>
+          <div class="stat-label" data-tooltip="Short-term momentum oscillator measuring the percentage gain or loss over the last 20 trading days.">Rate of Change (20d)</div>
           <div class="stat-value" id="statRoc20">—</div>
           <div class="stat-sub">20-day % change</div>
         </div>
@@ -2041,15 +2041,15 @@
       <!-- Historical Context Strip -->
       <div class="context-strip" id="contextStrip">
         <div class="context-card">
-          <div class="context-label">5Y Average</div>
+          <div class="context-label" data-tooltip="The arithmetic mean of index values over the last 5 years, providing a 'fair value' baseline for long-term cycles.">5Y Average</div>
           <div class="context-value" id="ctx5yAvg">—</div>
         </div>
         <div class="context-card">
-          <div class="context-label">vs 5Y Avg</div>
+          <div class="context-label" data-tooltip="Percentage deviation of the current price from its 5-year mean. Positive = premium; Negative = discount.">vs 5Y Avg</div>
           <div class="context-value" id="ctx5yDev">—</div>
         </div>
         <div class="context-card">
-          <div class="context-label">vs 10Y Avg</div>
+          <div class="context-label" data-tooltip="Percentage deviation from the 10-year arithmetic mean, providing decade-scale context.">vs 10Y Avg</div>
           <div class="context-value" id="ctx10yDev">—</div>
         </div>
       </div>
@@ -2057,7 +2057,7 @@
       <!-- Overlay Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Current Year vs Historical Years</div>
+          <div class="chart-title" data-tooltip="Comparison of the current year's seasonal price trajectory against previous years. Toggle years to isolate specific market cycles.">Current Year vs Historical Years</div>
         </div>
         <div class="year-checkboxes" id="yearCheckboxes"></div>
         <div class="chart-canvas-wrap">
@@ -2068,7 +2068,7 @@
       <!-- Drawdown Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Drawdown from 52-Week High</div>
+          <div class="chart-title" data-tooltip="Visual record of percentage declines from rolling 52-week peaks. Useful for identifying the duration and depth of historical corrections.">Drawdown from 52-Week High</div>
         </div>
         <div class="drawdown-chart-wrap">
           <canvas id="drawdownChart"></canvas>
@@ -2078,7 +2078,7 @@
       <!-- Recent Daily Changes -->
       <div class="chart-section">
         <div class="chart-header">
-          <div class="chart-header-title">Recent Daily Changes</div>
+          <div class="chart-header-title" data-tooltip="A raw data view of the most recent price movements, including absolute and percentage changes for the last several trading sessions.">Recent Daily Changes</div>
           <button class="dl-btn" id="recentDlBtn">⬇ CSV</button>
         </div>
         <div style="overflow-x:auto">
@@ -2089,7 +2089,7 @@
       <!-- Yearly Performance Table -->
       <div class="collapsible-section mb-20">
         <button class="collapsible-toggle" id="yearlyPerfToggle" onclick="toggleYearlyPerf()">
-          <span>Yearly Performance Table</span>
+          <span data-tooltip="Historical annual return statistics, highlighting year-on-year volatility and major multi-year trends.">Yearly Performance Table</span>
           <span class="toggle-arrow">▼</span>
         </button>
         <div class="collapsible-content" id="yearlyPerfContent">
@@ -2104,7 +2104,7 @@
 
       <!-- Correlation Matrix -->
       <div class="corr-section mb-20">
-        <div class="section-title">Index Correlation Matrix</div>
+        <div class="section-title" data-tooltip="Measures the synchronicity (Pearson Coefficient) between different freight indices. +1.0 is perfect correlation; 0 is no relation; -1.0 is perfect inverse.">Index Correlation Matrix</div>
         <div class="corr-timeframe-btns">
           <button class="corr-btn active" data-corr="all" onclick="setCorrTimeframe(this,'all')">All Time</button>
           <button class="corr-btn" data-corr="5y" onclick="setCorrTimeframe(this,'5y')">Last 5Y</button>
@@ -2148,7 +2148,7 @@
     <!-- ===== TAB: HEATMAPS ===== -->
     <div class="tab-panel" id="tab-heatmaps">
       <div class="heatmap-view-row">
-        <label for="heatmapViewSelect">Heatmap View:</label>
+        <label for="heatmapViewSelect" data-tooltip="Toggle between Absolute Price levels and Percentage Changes (MoM/QoQ). Useful for identifying both price ceilings and momentum.">Heatmap View:</label>
         <select id="heatmapViewSelect" onchange="onHeatmapViewChange()">
           <option value="absolute">Absolute Values</option>
           <option value="pct">% Change (MoM/QoQ)</option>
@@ -2158,7 +2158,7 @@
       <div class="heatmap-section mb-20">
         <div
           style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-          <div class="section-title" style="margin-bottom:0">Monthly Heatmap</div>
+          <div class="section-title" style="margin-bottom:0" data-tooltip="Grid visualization of index performance by month and year. Color intensity represents the magnitude of the move, highlighting seasonal patterns.">Monthly Heatmap</div>
           <button class="dl-btn" id="monthlyHeatmapDlBtn">⬇ Download CSV</button>
         </div>
         <div class="heatmap-wrap">
@@ -2169,7 +2169,7 @@
       <div class="heatmap-section mb-20">
         <div
           style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-          <div class="section-title" style="margin-bottom:0">Quarterly Heatmap</div>
+          <div class="section-title" style="margin-bottom:0" data-tooltip="Aggregated performance view by fiscal quarter, distilling monthly volatility into broader multi-month trends.">Quarterly Heatmap</div>
           <button class="dl-btn" id="quarterlyHeatmapDlBtn">⬇ Download CSV</button>
         </div>
         <div class="heatmap-wrap">
@@ -2181,12 +2181,12 @@
     <!-- ===== TAB: QUARTERLY ===== -->
     <div class="tab-panel" id="tab-quarterly">
       <!-- Win-Rate KPI Cards -->
-      <div class="win-rate-row mb-20" id="winRateRow"></div>
+      <div class="win-rate-row mb-20" id="winRateRow" data-tooltip="Historical Win Rate: The percentage of years where a specific quarter yielded a positive return. >70% suggests strong seasonal tailwinds."></div>
 
       <!-- Spaghetti Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Quarterly Performance by Year (Spaghetti)</div>
+          <div class="chart-title" data-tooltip="Visualizes path dependency by overlaying every historical year's quarterly progress on a 100-basis-point scale.">Quarterly Performance by Year (Spaghetti)</div>
         </div>
         <div class="spaghetti-wrap">
           <canvas id="spaghettiChart"></canvas>
@@ -2196,7 +2196,7 @@
       <!-- Quarterly Area Comparison 1 -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Quarterly Area Comparison &mdash; Current vs Prior vs 5Y Avg</div>
+          <div class="chart-title" data-tooltip="High-fidelity overlay comparing the current year's quarterly path against the prior year and the 5-year average baseline.">Quarterly Area Comparison &mdash; Current vs Prior vs 5Y Avg</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="quarterlyAreaComp1Chart"></canvas></div>
       </div>
@@ -2206,7 +2206,7 @@
       <!-- Quarterly Bar Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Quarterly Bar Chart (Last 4 Quarters, QoQ Color)</div>
+          <div class="chart-title" data-tooltip="Trailing 4-quarter performance view, colored by the direction of the Quarter-over-Quarter change.">Quarterly Bar Chart (Last 4 Quarters, QoQ Color)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="quarterlyBarChart"></canvas></div>
       </div>
@@ -2214,7 +2214,7 @@
       <!-- Quarterly Area Comparison 2 Combined -->      <!-- Quarterly Data Grid -->
       <div class="chart-section">
         <div class="chart-header">
-          <div class="chart-header-title">Quarterly Data Grid (Last 8 Years)</div>
+          <div class="chart-header-title" data-tooltip="A tabular record of quarterly performance for the last 8 cycles, used for detailed value reconciliation.">Quarterly Data Grid (Last 8 Years)</div>
           <button class="dl-btn" id="quarterlyDashGridDlBtn">&#x2B07; CSV</button>
         </div>
         <div style="overflow-x:auto">
@@ -2288,9 +2288,7 @@
         <!-- ── BWET Panel (hidden by default, lazy-loaded on first click) ── -->
         <div id="liqPanelBwet" style="display:none;">
           <div id="bwetLiqKpi" style="display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 18px;"></div>
-          <div
-            style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">
-            Safe Liquidity ($ per Day)</div>
+            <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Maximum dollar value that can be traded daily without moving the market significantly, based on trailing volume and volatility profiles.">Safe Liquidity ($ per Day)</div>
           <div class="index-range-wrap" style="padding:2px 0 6px;">
             <div class="index-range-label"><span>Range:</span><span id="bwetLiqRangeLabel">Loading…</span></div>
             <div class="dual-range-track" id="bwetLiqRangeTrack">
@@ -2301,19 +2299,13 @@
           </div>
           <div class="chart-canvas-wrap" style="height:220px;margin-bottom:20px;"><canvas id="bwetLiqChart"></canvas>
           </div>
-          <div
-            style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">
-            Daily Volume &amp; Tier Thresholds</div>
+            <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Comparison of daily dollar volume against institutional liquidity tiers (100K, 500K) to determine execution capacity and market depth.">Daily Volume &amp; Tier Thresholds</div>
           <div class="chart-canvas-wrap" style="height:200px;margin-bottom:28px;"><canvas id="bwetVolChart"></canvas>
           </div>
-          <div
-            style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">
-            Avg Volume &amp; Dollar Value — Rolling Windows</div>
+            <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Moving average metrics used to smooth out daily volume spikes and identify structural liquidity trends over 20-day and 60-day windows.">Avg Volume &amp; Dollar Value — Rolling Windows</div>
           <div class="chart-canvas-wrap" style="height:260px;margin-bottom:20px;"><canvas id="bwetAvgChart"></canvas>
           </div>
-          <div
-            style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:8px;">
-            Daily Breakdown</div>
+            <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:8px;" data-tooltip="Detailed session-by-session log of liquidity, volume, and volatility metrics for the selected ticker.">Daily Breakdown</div>
           <div id="bwetLiqLoading" style="color:var(--text-muted);font-size:13px;padding:12px 0;">Loading BWET market
             data…</div>
           <div style="overflow-x:auto;max-height:420px;overflow-y:auto;" id="bwetLiqTableWrap">
@@ -2325,7 +2317,7 @@
       <!-- Premium / Discount History -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title">Premium / Discount History — BDRY &amp; BWET</div>
+          <div class="chart-title" data-tooltip="The difference between the ETF's market price and its Net Asset Value (NAV). Positive = ETF trades above NAV; negative = discount.">Premium / Discount History — BDRY &amp; BWET</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <div class="toggle-group pd-ranges">
               <button class="toggle-btn" id="pdBtn1m" onclick="setPDWindow('1m')">1M</button>
@@ -2354,7 +2346,7 @@
       <!-- Fund Flow History -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title">Fund Flow History (BDRY &amp; BWET)</div>
+          <div class="chart-title" data-tooltip="Historical record of investor capital entering (Inflow) or exiting (Outflow) the ETFs. Tracks institutional demand and sentiment.">Fund Flow History (BDRY &amp; BWET)</div>
           <div class="flex-row" style="gap:12px;align-items:center;">
             <div class="toggle-group flow-ranges" style="margin-right:8px;">
               <button class="toggle-btn" id="flowBtn1m" onclick="setFlowWindow('1m')">1M</button>
@@ -2386,7 +2378,7 @@
         <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">Daily Net Flow — Inflow / Outflow ($)</div>
         <div class="chart-canvas-wrap" style="height:180px;margin-bottom:12px;"><canvas id="flowDailyChart"></canvas></div>
         
-        <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">Cumulative Net Flow ($)</div>
+        <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="The total net capital invested over the selected timeframe. Recalculated to start at $0 at the beginning of the range.">Cumulative Net Flow ($)</div>
         <div class="chart-canvas-wrap" style="height:240px;"><canvas id="flowCumChart"></canvas></div>
         <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
           Daily flows represent creations/redemptions in USD. Cumulative flow is recalculated to start from $0 at the beginning of the selected range.
@@ -2396,7 +2388,7 @@
       <!-- ETF Historical Volatility -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title">Historical Volatility — BDRY &amp; BWET (Annualized, Log-Return Std Dev × √252)</div>
+          <div class="chart-title" data-tooltip="Rolling annualized standard deviation of log returns. Measures the magnitude of price swings in the underlying freight futures.">Historical Volatility — BDRY &amp; BWET</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="etfHvBtn3y" onclick="setETFHVWindow('3y')">3Y</button>
             <button class="toggle-btn" id="etfHvBtn5y" onclick="setETFHVWindow('5y')">5Y</button>
@@ -2428,7 +2420,7 @@
       <!-- NEW: Cross-Asset Correlation Section -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title">Cross-Asset Correlation (ETF vs Indices)</div>
+          <div class="chart-title" data-tooltip="Measures how closely the ETF price tracks its underlying benchmark and related shipping indices. Essential for hedging and parity checks.">Cross-Asset Correlation (ETF vs Indices)</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="corr-btn active" id="etfCorrBtnall" onclick="renderETFCorrMatrix('all')">All Time</button>
             <button class="corr-btn" id="etfCorrBtn5y" onclick="renderETFCorrMatrix('5y')">5Y</button>
@@ -2443,7 +2435,7 @@
       <div id="yd-kpi-row" class="dashboard-hero mb-20"></div>
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Historical Price</div>
+          <div class="chart-title" data-tooltip="Long-term price chart compared against historical 5Y and 10Y benchmarks to identify multi-year cycles.">Historical Price</div>
           <div class="flex-row" style="gap:6px;flex-wrap:wrap;align-items:center;">
             <button class="toggle-btn active" id="ydAvgBtn5" onclick="setYDHistAvg(5)">5Y Avg</button>
             <button class="toggle-btn" id="ydAvgBtn10" onclick="setYDHistAvg(10)">10Y Avg</button>
@@ -2466,7 +2458,7 @@
       </div>
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" id="ydZscoreTitle">Z-Score (Rolling 252-Day)</div>
+          <div class="chart-title" id="ydZscoreTitle" data-tooltip="Standardized measure of price deviation from its 1-year mean. Values > +2.0 or < -2.0 identify extreme overbought or oversold conditions.">Z-Score (Rolling 252-Day)</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn" id="ydZscoreBtn63" onclick="setYDZscoreWindow(63)">3M</button>
             <button class="toggle-btn" id="ydZscoreBtn126" onclick="setYDZscoreWindow(126)">6M</button>
@@ -2490,7 +2482,7 @@
       </div>
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Historical Z-Score (All Time from 2008)</div>
+          <div class="chart-title" data-tooltip="Long-term z-score analysis providing structural context by comparing the current market to every cycle since the 2008 peak.">Historical Z-Score (All Time from 2008)</div>
         </div>
         <div class="index-range-wrap" style="padding: 2px 0 6px;">
           <div class="index-range-label">
@@ -2659,7 +2651,7 @@
       <!-- 3. Rate-of-Change Heatmap -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Rate-of-Change Heatmap — All Products × Timeframes</div>
+          <div class="chart-title" data-tooltip="Momentum visualization across all listed assets and multiple timeframes. Identifying relative strength and rotation between vessel classes.">Rate-of-Change Heatmap — All Products × Timeframes</div>
         </div>
         <div id="rocHeatmap" style="overflow-x:auto;margin-top:4px;"></div>
       </div>
@@ -2667,7 +2659,7 @@
       <!-- 4. Seasonal Decomposition -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Seasonal Pattern — Avg Intra-Year ± 1σ (All Years)</div>
+          <div class="chart-title" data-tooltip="The average intra-year price path across all historical data, shaded with ±1 standard deviation. Identifies structural seasonal peaks and troughs.">Seasonal Pattern — Avg Intra-Year ± 1σ (All Years)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:320px"><canvas id="seasonalChart"></canvas></div>
       </div>
@@ -2675,7 +2667,7 @@
       <!-- 6. ETF Premium/Discount Z-Score Signal -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">ETF Premium/Discount Z-Score — Market Top &amp; Bottom Signal</div>
+          <div class="chart-title" data-tooltip="Market timing signal based on how much the P/D deviates from its 1-year mean. High Z (> +2) = Overheated; Low Z (< -2) = Capitulation.">ETF Premium/Discount Z-Score — Market Top &amp; Bottom Signal</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="pdZBtn1y" onclick="setPDZWindow('1y')">1Y</button>
             <button class="toggle-btn" id="pdZBtn3y" onclick="setPDZWindow('3y')">3Y</button>
@@ -2693,7 +2685,7 @@
       <div class="chart-container mb-20">
         <div class="chart-header">
           <div class="flex-row" style="gap:12px;align-items:center;">
-            <div class="chart-title">ETF Fund Flow Signals — Momentum &amp; Divergence</div>
+            <div class="chart-title" data-tooltip="Correlating price action with recent capital flows to identify accumulation (Divergence) or distribution (Confluence) patterns.">ETF Fund Flow Signals — Momentum &amp; Divergence</div>
             <div style="display:flex;gap:4px;background:var(--bg);border-radius:6px;padding:3px;border:1px solid var(--border);">
               <button id="flowSigTabBdry" onclick="switchFlowSigTab('bdry')"
                 style="padding:4px 14px;border-radius:4px;border:none;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.3px;background:var(--accent);color:#fff;transition:all 0.15s;">BDRY</button>
@@ -2728,7 +2720,7 @@
       <!-- 5. Term Structure Slope -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">FFA Term Structure — BDRY &amp; BWET Curve Shape</div>
+          <div class="chart-title" data-tooltip="Snapshot of the forward freight curve. Backwardation (downward slope) suggests near-term strength; Contango (upward slope) suggests future price appreciation.">FFA Term Structure — BDRY &amp; BWET Curve Shape</div>
         </div>
         <div id="termStructurePanel" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:4px;">
           <div>
@@ -2751,7 +2743,7 @@
       <!-- 7. SGX FFA Forward Curve -->
       <div class="chart-container mb-20" style="margin-top:4px;">
         <div class="chart-header">
-          <div class="chart-title">SGX FFA Forward Curve</div>
+          <div class="chart-title" data-tooltip="The definitive market for future freight settlement. Useful for hedging and identifying price expectations for upcoming contract months.">SGX FFA Forward Curve</div>
           <div class="flex-row" style="gap:6px;align-items:center;flex-wrap:wrap;">
             <div style="display:flex;gap:4px;">
               <button class="toggle-btn active" id="ffaBtnCape" onclick="setFFAProduct('cape')">Cape</button>
@@ -2798,7 +2790,7 @@
       <!-- 9. Futures Premium (Basis) -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Futures vs Spot Premium — BDRYFF vs Synthetic Spot</div>
+          <div class="chart-title" data-tooltip="The spread between current physical rates and front-month futures. Large positive basis (Contango) often precedes rallies; negative basis suggests weakness.">Futures vs Spot Premium — BDRYFF vs Synthetic Spot</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn" id="basisBtn3m" onclick="setBasisWindow('3m')">3M</button>
             <button class="toggle-btn active" id="basisBtn1y" onclick="setBasisWindow('1y')">1Y</button>
@@ -2825,7 +2817,7 @@
       <!-- 10. Vessel-Class Contribution to BDI -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">BDI Daily Change — Vessel Class Contribution</div>
+          <div class="chart-title" data-tooltip="Decomposition of the BDI into its weights (50% Cape, 40% Panamax, 10% Supra). Shows which vessel class is driving the aggregate index move.">BDI Daily Change — Vessel Class Contribution</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="bdiContribBtn3m" onclick="setBDIContribWindow('3m')">3M</button>
             <button class="toggle-btn" id="bdiContribBtn6m" onclick="setBDIContribWindow('6m')">6M</button>
@@ -2852,7 +2844,7 @@
       <!-- 11. Lead–Lag Correlation Analysis -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title">Lead–Lag Correlation (Cross-Correlation of Log Returns)</div>
+          <div class="chart-title" data-tooltip="Identifies temporal relationships between assets. A high correlation at a positive day offset (e.g. +5 days) suggests a predictive leading relationship.">Lead–Lag Correlation (Cross-Correlation of Log Returns)</div>
         </div>
         <div class="signals-controls">
           <label for="leadLagPair" class="context-label" style="margin-bottom:0">Pairs:</label>
@@ -2885,6 +2877,59 @@
     </div>
 
   </div><!-- /main -->
+
+  <!-- Global Tooltip Element -->
+  <div id="global-tooltip"></div>
+
+  <script>
+    // Global Tooltip Logic (Event Delegation)
+    (function() {
+      const tooltip = document.getElementById('global-tooltip');
+      let hideTimeout = null;
+
+      document.addEventListener('mouseover', function(e) {
+        const target = e.target.closest('[data-tooltip]');
+        if (!target) return;
+
+        const text = target.getAttribute('data-tooltip');
+        if (!text) return;
+
+        // Clear any pending hide
+        if (hideTimeout) { clearTimeout(hideTimeout); hideTimeout = null; }
+
+        tooltip.textContent = text;
+        tooltip.classList.add('visible');
+
+        const rect = target.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+
+        // Initial position (centered above target)
+        let top = rect.top - tooltip.offsetHeight - 12;
+        let left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2);
+
+        // Boundary checks (Viewport)
+        if (top < 10) { // Flip to bottom if no space above
+          top = rect.bottom + 12;
+        }
+        if (left < 10) left = 10;
+        if (left + tooltip.offsetWidth > window.innerWidth - 10) {
+          left = window.innerWidth - tooltip.offsetWidth - 10;
+        }
+
+        tooltip.style.top = top + 'px';
+        tooltip.style.left = left + 'px';
+      });
+
+      document.addEventListener('mouseout', function(e) {
+        const target = e.target.closest('[data-tooltip]');
+        if (target) {
+          hideTimeout = setTimeout(() => {
+            tooltip.classList.remove('visible');
+          }, 50);
+        }
+      });
+    })();
+  </script>
 
   <script>
     // =====================================================================
@@ -4641,7 +4686,7 @@
         const startIdx5y = defaultStartIdx < 0 ? 0 : defaultStartIdx;
 
         card.innerHTML = `
-      <div class="card-header-bar">${prod.label}</div>
+      <div class="card-header-bar" data-tooltip="Detailed historical price chart and key performance metrics for this specific shipping benchmark.">${prod.label}</div>
       <div class="index-chart-header">
         <div class="index-chart-subtitle">
           <span>${fmt(latest.value, precision)}</span>
@@ -4664,19 +4709,19 @@
       </div>
       <div class="index-stats-strip">
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label">52W High — Low</div>
+          <div class="index-stat-mini-label" data-tooltip="The highest and lowest price levels reached over the last 52 weeks. Useful for identifying structural floor and ceiling levels.">52W High — Low</div>
           <div class="index-stat-mini-val val-white">${w52RangeStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label">52W Position</div>
+          <div class="index-stat-mini-label" data-tooltip="Current price expressed as a percentage of the 52-week range. 0% is the 52W low; 100% is the 52W high.">52W Position</div>
           <div class="index-stat-mini-val ${w52PosCls}">${w52PosStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label">YTD %</div>
+          <div class="index-stat-mini-label" data-tooltip="Year-to-Date performance. Measures the percentage return from the last trading day of the prior year.">YTD %</div>
           <div class="index-stat-mini-val ${ytdCls}">${ytdStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label">From Last Trough</div>
+          <div class="index-stat-mini-label" data-tooltip="Percentage increase from the lowest price point reached in the last 365 days. Measures the magnitude of the current recovery.">From Last Trough</div>
           <div class="index-stat-mini-val ${troughCls}">${troughStr}</div>
         </div>
       </div>`;
@@ -5199,7 +5244,7 @@
       
       var kpiHtml = '';
       function buildCard(title, valStr, colorStr, subtitle) {
-        return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;position:relative;overflow:hidden;">' +
+        return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;position:relative;overflow:hidden;" data-tooltip="Quantitative signal or performance metric synthesized from historical data and momentum models.">' +
                  '<div style="position:absolute;left:0;top:0;bottom:0;width:3px;background:' + colorStr + ';"></div>' +
                  '<div style="font-size:10px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);font-weight:600;margin-bottom:4px;margin-left:4px;">' + title + '</div>' +
                  '<div style="font-size:18px;font-weight:700;color:' + colorStr + ';margin-left:4px;margin-bottom:2px;">' + valStr + '</div>' +
@@ -6117,14 +6162,17 @@
 
       return `
     <div class="etf-header">
-      <div class="etf-ticker">${ticker}</div>
+      <div class="etf-ticker" data-tooltip="Current Net Asset Value (NAV) and session performance for the fund.">${ticker}</div>
       <div class="etf-name">${name}</div>
       <div class="etf-price-row">${priceHTML}</div>
+    </div>
+    <div style="font-size:11px;color:var(--text-muted);padding:4px 14px;margin-bottom:12px;" data-tooltip="The total notional value of futures contracts divided by total cash assets. Values near 100% indicate the fund is fully matching its benchmark exposure.">
+      Futures Exposure: <span style="color:var(--text);font-weight:600;">${leverageStr}</span>
     </div>
 
     <div class="etf-holdings-section">
     <div class="etf-section-title-row">
-      <div class="etf-section-title">Holdings</div>
+      <div class="etf-section-title" data-tooltip="The underlying mix of freight futures and cash equivalents that comprise the fund's Net Asset Value (NAV).">Holdings</div>
       <button class="dl-btn etf-dl-btn">⬇ CSV</button>
     </div>
     <table class="holdings-table">
