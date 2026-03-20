@@ -2911,7 +2911,7 @@
   <div id="global-tooltip"></div>
 
   <script>
-    // Global Tooltip Logic — cursor following (mousemove for accurate positioning)
+    // Global Tooltip Logic — stable, anchored positioning (centers on element)
     (function() {
       const tooltip = document.getElementById('global-tooltip');
       let hideTimeout = null;
@@ -2922,25 +2922,33 @@
         if (!target) return;
         const text = target.getAttribute('data-tooltip');
         if (!text) return;
+
         if (hideTimeout) { clearTimeout(hideTimeout); hideTimeout = null; }
         activeTarget = target;
         tooltip.textContent = text;
         tooltip.classList.add('visible');
-      });
 
-      // Follow the cursor precisely — avoids stale offsetHeight at paint time
-      document.addEventListener('mousemove', function(e) {
-        if (!activeTarget) return;
+        // Position tooltip centered on element
+        const rect = target.getBoundingClientRect();
         const GAP = 14;
-        let top = e.clientY - tooltip.offsetHeight - GAP;
-        let left = e.clientX - (tooltip.offsetWidth / 2);
-        // Flip below cursor if not enough space above
-        if (top < 8) top = e.clientY + GAP;
-        // Keep within horizontal viewport
+        
+        // Horizontal centering
+        let left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2);
+        
+        // Vertical positioning (above by default)
+        let top = rect.top - tooltip.offsetHeight - GAP;
+
+        // Flip below if not enough space above
+        if (top < 8) {
+          top = rect.bottom + GAP;
+        }
+
+        // Horizontal boundary checks
         if (left < 8) left = 8;
         if (left + tooltip.offsetWidth > window.innerWidth - 8) {
           left = window.innerWidth - tooltip.offsetWidth - 8;
         }
+
         tooltip.style.top = top + 'px';
         tooltip.style.left = left + 'px';
       });
