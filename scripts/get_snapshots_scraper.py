@@ -133,7 +133,7 @@ def parse_snapshots(data: list | dict, ticker: str) -> pd.DataFrame:
         print(f"[!] Unexpected type: {type(data)}")
         return pd.DataFrame()
 
-    def unpack(field_data: dict) -> list[float]:
+    def unpack(field_data: dict) -> list:
         """Multiply every value in data[] by scale."""
         if not isinstance(field_data, dict):
             return []

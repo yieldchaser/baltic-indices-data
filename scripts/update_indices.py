@@ -533,10 +533,8 @@ def update_sgx_csv(filename, product_code):
         if existing.empty:
             combined = new_df
         else:
-            combined = pd.concat(
-                [existing.assign(date=existing['date'].dt.strftime('%d-%m-%Y')), new_df],
-                ignore_index=True
-            )
+            existing['date'] = existing['date'].dt.strftime('%d-%m-%Y')
+            combined = pd.concat([existing, new_df], ignore_index=True)
         combined.to_csv(filename, index=False)
         print(f"{filename}: +{len(new_rows)} new rows ({active_count} active contracts)")
     else:
