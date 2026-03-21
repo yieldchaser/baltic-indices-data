@@ -19,7 +19,7 @@ INDEXES = {
     'BCI': 'cape_historical.csv',
     'BPI': 'panama_historical.csv',
     'BSI': 'suprama_historical.csv',
-    'BHSI': 'handysize_historical.csv',
+    'BHI': 'handysize_historical.csv',
     'BDI': 'bdiy_historical.csv'
 }
 
