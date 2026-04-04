@@ -25,7 +25,7 @@ jobs:
         python-version: '3.11'
 
     - name: Install dependencies
-      run: pip install requests beautifulsoup4 pandas lxml
+      run: pip install requests beautifulsoup4 pandas lxml holidays
 
     - name: Pull latest before run
       run: git pull --rebase origin main

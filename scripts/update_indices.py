@@ -176,13 +176,17 @@ def update_solactive_csv(filename, latest_row):
 
 def get_last_trading_day():
     """
-    Return the most recent weekday (Mon-Fri) as a date object.
-    Simple weekday check — if it's Sat/Sun walk back to Friday.
-    Does not account for public holidays (Solactive also trades on most holidays).
+    Return the most recent weekday (Mon-Fri) that is not a UK public holiday.
+    Uses the holidays library if available, otherwise falls back to weekday-only check.
     """
     d = date.today()
-    while d.weekday() >= 5:  # 5=Saturday, 6=Sunday
-        d -= timedelta(days=1)
+    if _HAS_HOLIDAYS:
+        uk_hols = _holidays_lib.UnitedKingdom(years=d.year)
+        while d.weekday() >= 5 or d in uk_hols:
+            d -= timedelta(days=1)
+    else:
+        while d.weekday() >= 5:
+            d -= timedelta(days=1)
     return d
 
 
@@ -293,9 +297,9 @@ def update_solactive_with_fallback(isin, filename):
         print(f"  {filename}: SKIP live — live date {live_date.date()} is not after batch latest {latest_in_csv.date()}")
         return
 
-    # ── Safeguard 3: live date must equal the expected last trading day ──────
-    if live_date != last_td:
-        print(f"  {filename}: SKIP live — live date {live_date.date()} != expected {last_td.date()} (holiday or weekend?)")
+    # ── Safeguard 3: live date must not be beyond the expected last trading day ──
+    if live_date > last_td:
+        print(f"  {filename}: SKIP live — live date {live_date.date()} is ahead of expected {last_td.date()}")
         return
 
     # ── Safeguard 4: live date must not already be in the CSV ────────────────
