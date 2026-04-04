@@ -321,7 +321,7 @@ AMPLIFY_ETFS = {
 AMPLIFY_URL = "https://amplifyetfs.com/wp-content/uploads/feeds/AmplifyWeb.40XL.XL_{ticker}_Daily.csv"
 
 def fetch_latest_amplify(ticker):
-    """Download Amplify ETF CSV and return only the latest row"""
+    """Download Amplify ETF CSV and return full history as DataFrame"""
     url = AMPLIFY_URL.format(ticker=ticker)
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
 
@@ -337,38 +337,34 @@ def fetch_latest_amplify(ticker):
         df['Rate Date'] = pd.to_datetime(df['Rate Date'], format='%m/%d/%Y')
         df = df.sort_values('Rate Date')
 
-        return df.tail(1)
+        return df
 
     except Exception as e:
         print(f"Error fetching Amplify {ticker}: {e}")
         return pd.DataFrame()
 
-def update_amplify_csv(filename, latest_row):
-    """Append latest Amplify row only if date not already present"""
-    if latest_row.empty:
+def update_amplify_csv(filename, new_data):
+    """Merge full Amplify history with existing CSV, backfilling any missing dates"""
+    if new_data.empty:
         print(f"{filename}: No data returned, skipping")
         return
 
-    latest_date = latest_row['Rate Date'].iloc[0]  # already a datetime from fetch_latest_amplify
+    new_data = new_data[['Rate Date', 'Premium/Discount']].copy()
 
     if os.path.exists(filename):
         existing = pd.read_csv(filename)
-        # Existing CSV uses DD-MM-YYYY — must specify format explicitly
         existing['Rate Date'] = pd.to_datetime(existing['Rate Date'], format='%d-%m-%Y')
-
-        if latest_date in existing['Rate Date'].values:
-            print(f"{filename}: {latest_date.date()} already present, nothing to append")
-            return
-
-        combined = pd.concat([existing, latest_row[['Rate Date', 'Premium/Discount']]], ignore_index=True)
+        combined = pd.concat([existing, new_data], ignore_index=True)
     else:
-        combined = latest_row[['Rate Date', 'Premium/Discount']].copy()
+        combined = new_data
 
+    combined = combined.drop_duplicates(subset=['Rate Date'], keep='last')
     combined = combined.sort_values('Rate Date')
-    # Write dates as DD-MM-YYYY to stay consistent with dashboard parser
+    before = len(existing) if os.path.exists(filename) else 0
+    added = len(combined) - before
     combined['Rate Date'] = combined['Rate Date'].dt.strftime('%d-%m-%Y')
     combined.to_csv(filename, index=False)
-    print(f"{filename}: Appended {latest_date.date()} -> P/D {latest_row['Premium/Discount'].iloc[0]}")
+    print(f"{filename}: {added} new rows added, {len(combined)} total")
 
 # ── SGX FFA FUTURES ───────────────────────────────────────────────────────────
 
