@@ -36,8 +36,10 @@ jobs:
     - name: Install Playwright for new indices
       run: |
         pip install playwright
-        playwright install chromium
-        playwright install-deps chromium
+        playwright install --with-deps chromium
+
+    - name: Run Baltic new indices scraper (BLNG, BLPG, FBX, BAI)
+      run: python scripts/baltic_new_indices.py --repo .
 
     - name: Run fund flow scraper (BDRY)
       run: python scripts/get_snapshots_scraper.py --ticker BDRY --start 2018-01-01 --update
