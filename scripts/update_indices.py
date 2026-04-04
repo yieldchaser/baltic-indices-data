@@ -335,9 +335,13 @@ def fetch_latest_amplify(ticker):
 
         from io import StringIO
         df = pd.read_csv(StringIO(response.text))
-        # Amplify renamed the column — normalise to the name used in our CSVs
-        if 'Premium/Discount Percentage' in df.columns and 'Premium/Discount' not in df.columns:
-            df = df.rename(columns={'Premium/Discount Percentage': 'Premium/Discount'})
+        # Normalise the P/D column — Amplify has renamed it before, match by prefix
+        pd_col = next((c for c in df.columns if c.startswith('Premium/Discount')), None)
+        if pd_col is None:
+            print(f"Error fetching Amplify {ticker}: P/D column not found. Columns: {list(df.columns)}")
+            return pd.DataFrame()
+        if pd_col != 'Premium/Discount':
+            df = df.rename(columns={pd_col: 'Premium/Discount'})
         df['Rate Date'] = pd.to_datetime(df['Rate Date'], format='%m/%d/%Y')
         df = df.sort_values('Rate Date')
 
