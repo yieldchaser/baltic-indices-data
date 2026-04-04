@@ -331,6 +331,9 @@ def fetch_latest_amplify(ticker):
 
         from io import StringIO
         df = pd.read_csv(StringIO(response.text))
+        # Amplify renamed the column — normalise to the name used in our CSVs
+        if 'Premium/Discount Percentage' in df.columns and 'Premium/Discount' not in df.columns:
+            df = df.rename(columns={'Premium/Discount Percentage': 'Premium/Discount'})
         df['Rate Date'] = pd.to_datetime(df['Rate Date'], format='%m/%d/%Y')
         df = df.sort_values('Rate Date')
 
