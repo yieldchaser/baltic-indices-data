@@ -450,8 +450,8 @@ def generate_sgx_tickers(product_code):
 
 def fetch_sgx_latest(ticker):
     """
-    Fetch last 5 days for ticker. Returns (date DD-MM-YYYY, price, volume)
-    for the most recent day, or None if contract has no data.
+    Fetch last 5 days for ticker. Returns list of (date DD-MM-YYYY, price, volume)
+    for all available days, or None if contract has no data.
     """
     url = SGX_HISTORY_URL.format(ticker=ticker)
     try:
@@ -460,14 +460,16 @@ def fetch_sgx_latest(ticker):
         data = r.json().get('data', [])
         if not data:
             return None
-        latest = data[-1]
-        price  = latest.get('daily-settlement-price-abs')
-        volume = latest.get('total-volume')
-        base_date = latest.get('base-date')  # "20260303"
-        if price is None or base_date is None:
-            return None
-        d = datetime.strptime(str(base_date), '%Y%m%d')
-        return d.strftime('%d-%m-%Y'), float(price), float(volume or 0)
+        rows = []
+        for entry in data:
+            price     = entry.get('daily-settlement-price-abs')
+            volume    = entry.get('total-volume')
+            base_date = entry.get('base-date')  # "20260303"
+            if price is None or base_date is None:
+                continue
+            d = datetime.strptime(str(base_date), '%Y%m%d')
+            rows.append((d.strftime('%d-%m-%Y'), float(price), float(volume or 0)))
+        return rows if rows else None
     except Exception as e:
         print(f"  {ticker}: error — {e}")
         return None
@@ -501,30 +503,30 @@ def update_sgx_csv(filename, product_code):
             skipped_expired += 1
             continue
 
-        result = fetch_sgx_latest(ticker)
-        if result is None:
+        results = fetch_sgx_latest(ticker)
+        if results is None:
             continue  # not active — skip silently
 
         active_count += 1
-        date_str, price, volume = result
-        date_dt = pd.Timestamp(datetime.strptime(date_str, '%d-%m-%Y'))
+        for date_str, price, volume in results:
+            date_dt = pd.Timestamp(datetime.strptime(date_str, '%d-%m-%Y'))
 
-        already = (
-            not existing.empty and
-            ((existing['contract'] == ticker) & (existing['date'] == date_dt)).any()
-        )
-        if already:
-            continue
+            already = (
+                not existing.empty and
+                ((existing['contract'] == ticker) & (existing['date'] == date_dt)).any()
+            )
+            if already:
+                continue
 
-        new_rows.append({
-            'contract':     ticker,
-            'expiry_month': f"{month_name} {year}",
-            'expiry_year':  year,
-            'date':         date_str,
-            'price':        price,
-            'volume':       volume,
-            'expiry_date':  expiry_str,
-        })
+            new_rows.append({
+                'contract':     ticker,
+                'expiry_month': f"{month_name} {year}",
+                'expiry_year':  year,
+                'date':         date_str,
+                'price':        price,
+                'volume':       volume,
+                'expiry_date':  expiry_str,
+            })
         print(f"  {ticker} ({month_name} {year}, exp {expiry_str}): {price}  vol={volume}")
         time.sleep(0.15)  # polite delay between calls
 
