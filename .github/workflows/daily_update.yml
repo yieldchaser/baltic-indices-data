@@ -33,11 +33,6 @@ jobs:
     - name: Run scraper
       run: python scripts/update_indices.py
 
-    - name: Install Playwright for new indices
-      run: |
-        pip install playwright playwright-stealth
-        playwright install --with-deps chromium
-
     - name: Run Baltic new indices scraper (BLNG, BLPG, FBX, BAI)
       run: python scripts/baltic_new_indices.py --repo .
       continue-on-error: true

@@ -1,50 +1,31 @@
 """
 Baltic Exchange — New Indices Scraper
 ======================================
-Scrapes BLNG, BLPG, FBX, BAI00 from the Baltic Exchange homepage
-and appends them to historical CSVs, using BDI + BCI as date anchors
-to derive the correct trading date from existing historical data.
+Fetches BLNG, BLPG, FBX, BAI00 from the Baltic Exchange public ticker API
+  https://blacksun-api.balticexchange.com/api/ticker
+and appends them to historical CSVs.
 
-Date logic:
-  - Scrape live BDI and BCI values from Baltic Exchange
-  - Match BDI against bdiy_historical.csv
-  - Cross-check BCI against cape_historical.csv
-  - Use the matched date — inherits all holiday/weekend logic from
-    your existing series automatically
-  - If both match → confident date assignment
-  - If only one matches → use it with a warning
-  - If neither matches → new data point, use today + flag for review
+The API returns current + previous values with exact ISO timestamps, so no
+anchor-CSV date matching is needed — we use the indexDate directly.
 
 Output schema (matches existing repo CSVs):
   Date (DD-MM-YYYY), Index, % Change
 
-New files created (repo root):
-  blng_historical.csv
-  blpg_historical.csv
-  fbx_historical.csv
-  bai_historical.csv
-
 Usage:
-  pip install playwright
-  playwright install chromium
-  python baltic_new_indices.py --repo C:\\path\\to\\Shipping
+  pip install requests
+  python baltic_new_indices.py --repo /path/to/Shipping
 """
 
 import csv
 import argparse
-import asyncio
-from datetime import date, datetime
+from datetime import datetime
 from pathlib import Path
 
-from playwright.async_api import async_playwright
-from playwright_stealth import Stealth
+import requests
 
-URL = "https://www.balticexchange.com/en/index.html"
+API_URL = "https://blacksun-api.balticexchange.com/api/ticker"
 
-# Indices we scrape but already have in the repo — used only for date matching
-ANCHOR_INDICES = {"BDI", "BCI"}
-
-# Indices we want to record — not freely available elsewhere
+# Indices to record, keyed by indexDataSetName from the API
 NEW_INDICES = {
     "BLNG":  "blng_historical.csv",
     "BLPG":  "blpg_historical.csv",
@@ -52,104 +33,30 @@ NEW_INDICES = {
     "BAI00": "bai_historical.csv",
 }
 
-# Existing CSVs used as date anchors (relative to repo root)
-ANCHOR_FILES = {
-    "BDI": "bdiy_historical.csv",
-    "BCI": "cape_historical.csv",
-}
+# ── API fetch ────────────────────────────────────────────────────────────────
 
-# ── Playwright scrape ───────────────────────────────────────────────────────
+def fetch_ticker() -> dict:
+    """
+    Call the Baltic Exchange ticker API.
+    Returns {indexDataSetName: (value, date_str_DD-MM-YYYY)}.
+    """
+    resp = requests.get(API_URL, timeout=30, headers={"Accept": "application/json"})
+    resp.raise_for_status()
+    data = resp.json()
 
-async def scrape_live() -> dict:
-    """Returns {code: value} for all ticker indices."""
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context()
-        page = await context.new_page()
-        await Stealth().apply_stealth_async(page)
-        print(f"[->] Loading {URL}")
-        await page.goto(URL, wait_until="load", timeout=60_000)
-        await page.wait_for_timeout(3_000)
+    result = {}
+    for item in data:
+        code    = (item.get("indexDataSetName") or "").strip()
+        current = item.get("current") or {}
+        value   = current.get("value")
+        raw_dt  = current.get("indexDate")
+        if code and value is not None and raw_dt:
+            date_str = datetime.fromisoformat(raw_dt).strftime("%d-%m-%Y")
+            result[code] = (float(value), date_str)
 
-        # Diagnostics — helps identify Cloudflare blocks or empty pages in CI
-        page_title = await page.title()
-        html_content = await page.content()
-        print(f"[dbg] Page title: {page_title!r}")
-        print(f"[dbg] HTML length: {len(html_content)} chars")
-        if "just a moment" in page_title.lower() or len(html_content) < 5_000:
-            print("[!]  Possible bot-block or empty page — check debug_scrape.png")
-            await page.screenshot(path="debug_scrape.png")
-
-        tickets = await page.query_selector_all("#ticker .ticket")
-        print(f"[ok] Found {len(tickets)} ticker items")
-
-        result = {}
-        for ticket in tickets:
-            code  = (await (await ticket.query_selector(".index")).inner_text()).strip()
-            value = (await (await ticket.query_selector(".value")).inner_text()).strip()
-            result[code] = float(value.replace(",", ""))
-
-        await browser.close()
     return result
 
-# ── Date matching ───────────────────────────────────────────────────────────
-
-def load_anchor_csv(path: Path) -> dict:
-    """
-    Load an existing historical CSV and return {value: date_str} mapping.
-    CSV schema: Date (DD-MM-YYYY), Index, % Change
-    """
-    if not path.exists():
-        print(f"[!]  Anchor file not found: {path}")
-        return {}
-    mapping = {}
-    with open(path, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            try:
-                val  = float(str(row.get("Index", row.get("index", ""))).replace(",", ""))
-                dstr = row.get("Date", row.get("date", "")).strip()
-                mapping[val] = dstr  # last (most-recent) row wins on duplicate values
-            except (ValueError, TypeError):
-                continue
-    print(f"[dbg] Loaded {len(mapping)} unique values from {path.name}")
-    return mapping
-
-def find_date(live_values: dict, repo_root: Path) -> tuple[str, str]:
-    """
-    Match live BDI and BCI against existing CSVs.
-    Returns (date_str_DD-MM-YYYY, confidence) where confidence is
-    'confirmed' | 'partial' | 'new'
-    """
-    matches = {}
-
-    for code, filename in ANCHOR_FILES.items():
-        live_val = live_values.get(code)
-        if live_val is None:
-            continue
-        anchor = load_anchor_csv(repo_root / filename)
-        if live_val in anchor:
-            matches[code] = anchor[live_val]
-            print(f"[ok] {code} = {live_val:,.0f} matched to date {anchor[live_val]}")
-        else:
-            print(f"[!]  {code} = {live_val:,.0f} not found in {filename} — may be new data")
-
-    dates_found = list(set(matches.values()))
-
-    if len(dates_found) == 1:
-        confidence = "confirmed" if len(matches) == 2 else "partial"
-        return dates_found[0], confidence
-    elif len(dates_found) > 1:
-        # Mismatch between anchors — use BDI as primary
-        print(f"[!]  Anchor mismatch: {matches} — using BDI date")
-        return matches.get("BDI", dates_found[0]), "partial"
-    else:
-        # No match found — new data point not yet in repo
-        today = date.today().strftime("%d-%m-%Y")
-        print(f"[!]  No anchor match — using today {today} (flagged for review)")
-        return today, "new"
-
-# ── CSV append ──────────────────────────────────────────────────────────────
+# ── CSV append ───────────────────────────────────────────────────────────────
 
 def load_existing_csv(path: Path) -> list[dict]:
     if not path.exists():
@@ -167,13 +74,11 @@ def append_to_csv(path: Path, date_str: str, code: str, value: float):
     """Append one row to a historical CSV. Skip if date already exists."""
     rows = load_existing_csv(path)
 
-    # Dedup — skip if this date already recorded
     existing_dates = {r.get("Date", r.get("date", "")) for r in rows}
     if date_str in existing_dates:
         print(f"[--] {code}: {date_str} already in {path.name} — skipped")
         return
 
-    # Compute % change from last row
     prev_val = None
     if rows:
         try:
@@ -187,51 +92,37 @@ def append_to_csv(path: Path, date_str: str, code: str, value: float):
         writer = csv.DictWriter(f, fieldnames=["Date", "Index", "% Change"])
         if write_header:
             writer.writeheader()
-        writer.writerow({
-            "Date":     date_str,
-            "Index":    value,
-            "% Change": change,
-        })
-    print(f"[ok] {code}: {value:,.2f}  ({'+' if change and float(change)>0 else ''}{change}%)  -> {path.name}")
+        writer.writerow({"Date": date_str, "Index": value, "% Change": change})
+    pct_str = f"({'+' if change and float(change) > 0 else ''}{change}%)" if change else ""
+    print(f"[ok] {code}: {value:,.2f}  {pct_str}  -> {path.name}")
 
-# ── Main ────────────────────────────────────────────────────────────────────
+# ── Main ─────────────────────────────────────────────────────────────────────
 
-async def main():
+def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--repo",
-        default=".",
-        help="Path to your Shipping repo root (default: current directory)"
-    )
+    parser.add_argument("--repo", default=".", help="Path to Shipping repo root (default: .)")
     args = parser.parse_args()
     repo_root = Path(args.repo).resolve()
 
     print("=" * 60)
-    print(f"  Baltic New Indices Scraper")
+    print("  Baltic New Indices Scraper")
     print(f"  Repo: {repo_root}")
     print("=" * 60)
 
-    # 1. Scrape live values
-    live = await scrape_live()
-
-    if not live:
-        print("[x] Nothing scraped.")
+    print(f"\n[..] Fetching {API_URL}")
+    try:
+        ticker = fetch_ticker()
+    except Exception as e:
+        print(f"[x] API fetch failed: {e}")
         return
 
-    print(f"\n[dbg] Live values: { {k: v for k, v in live.items()} }")
+    print(f"[ok] Got {len(ticker)} indices from API\n")
 
-    # 2. Derive date from anchors
-    print("\n[..] Matching date from anchor CSVs ...")
-    date_str, confidence = find_date(live, repo_root)
-    print(f"[ok] Date: {date_str}  (confidence: {confidence})\n")
-
-    # 3. Append new indices to their CSVs
-    print("[..] Appending new indices ...")
     for code, filename in NEW_INDICES.items():
-        value = live.get(code)
-        if value is None:
-            print(f"[!]  {code} not found in scraped data — skipped")
+        if code not in ticker:
+            print(f"[!]  {code} not found in API response — skipped")
             continue
+        value, date_str = ticker[code]
         append_to_csv(repo_root / filename, date_str, code, value)
 
     print("\n[done]")
@@ -239,4 +130,4 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
