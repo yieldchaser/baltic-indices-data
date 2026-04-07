@@ -66,7 +66,7 @@ async def scrape_live() -> dict:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context()
         page = await context.new_page()
-        await Stealth().use_async(page)
+        await Stealth().apply_stealth_async(page)
         print(f"[->] Loading {URL}")
         await page.goto(URL, wait_until="load", timeout=60_000)
         await page.wait_for_timeout(3_000)
