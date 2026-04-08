@@ -99,7 +99,9 @@ Shipping/
 │
 ├── scripts/
 │   ├── update_indices.py               # Baltic index scraper (all 6 indices + SGX FFA)
-│   └── update_etf_holdings.py          # ETF holdings scraper (BDRY & BWET)
+│   ├── update_etf_holdings.py          # ETF holdings scraper (BDRY & BWET)
+│   ├── baltic_scraper.py               # Baltic Exchange Weekly report scraper
+│   └── breakwave_scraper.py            # Breakwave Advisors biweekly report scraper
 │
 ├── assets/
 │   ├── BDRY_Export-Map-1024x548.webp   # Dry bulk trade route map (ETF tab)
@@ -111,6 +113,8 @@ Shipping/
 │
 ├── docs/
 │   └── Shipping_Main.xlsm              # Offline Excel workbook (same CSV data)
+│
+├── reports/                            # Downloaded PDF market reports from Baltic & Breakwave
 │
 └── .github/workflows/
     ├── daily_update.yml                # Cron: 10:30 AM + 2/7/10 PM UTC daily
@@ -346,10 +350,15 @@ Both workflows: pull latest before running (prevents push conflicts on concurren
 ## Running Scrapers Locally
 
 ```bash
-pip install requests beautifulsoup4 pandas lxml
+pip install requests beautifulsoup4 pandas lxml selenium weasyprint
 
+# Core Data
 python scripts/update_indices.py        # update all 6 Baltic indices + SGX FFA futures
 python scripts/update_etf_holdings.py   # update BDRY and BWET holdings
+
+# Report PDF Scrapers
+python scripts/breakwave_scraper.py     # Pulls Breakwave Advisors PDFs
+python scripts/baltic_scraper.py        # Pulls Baltic weekly roundup PDFs
 ```
 
 Both scripts are safe to re-run at any time.
