@@ -1,0 +1,57 @@
+name: Daily Knowledge Update
+
+on:
+  schedule:
+    - cron: '30 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements_knowledge.txt
+
+      - name: Pull latest
+        run: git pull origin main --rebase
+
+      - name: Check for new reports
+        id: check
+        shell: bash
+        run: |
+          MANIFEST="knowledge/manifests/documents.jsonl"
+          if [ ! -f "$MANIFEST" ]; then
+            echo "new=true" >> "$GITHUB_OUTPUT"
+          else
+            NEWER="$(find reports/ \( -name "*.pdf" -o -name "*.html" \) -newer "$MANIFEST" -print -quit 2>/dev/null)"
+            [ -n "$NEWER" ] && echo "new=true" >> "$GITHUB_OUTPUT" || echo "new=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Process new reports
+        if: steps.check.outputs.new == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/process_knowledge.py
+
+      - name: Commit if changes
+        if: steps.check.outputs.new == 'true'
+        shell: bash
+        run: |
+          git config user.name "knowledge-bot"
+          git config user.email "bot@shipping"
+          git add knowledge/
+          git diff --staged --quiet || git commit -m "knowledge: daily update $(date -u +%Y-%m-%d)"
+          git push

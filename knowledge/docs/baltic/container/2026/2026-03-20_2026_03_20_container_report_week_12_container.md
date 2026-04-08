@@ -1,0 +1,58 @@
+---
+category: container
+commodities:
+- crude_oil
+- gas
+date: '2026-03-20'
+doc_id: baltic_container_2026-03-20_2026_03_20_container_report_week_12_container
+document_type: weekly_roundup
+key_entities:
+- China
+- Middle East
+keywords:
+- container
+- china
+- meg
+- europe
+- crude_oil
+- gas
+- asia
+- china/east
+- ending
+- last
+- start
+- are
+market_tone: neutral
+regions:
+- china
+- meg
+- europe
+signals: {}
+source: baltic
+source_path: reports/baltic/container/2026/2026-03-20_container-report-week-12_container.html
+source_stem: 2026-03-20_container-report-week-12_container
+summary: 'Container
+
+  With the ongoing geopolitical issues in the Middle East Gulf and the effective closure
+  of the Strait of Hormuz, the side effects are beginning to show worldwide. We have
+  seen bunker prices hit very high levels all around the globe, as supplies of different
+  grades of fuel and gas oil start to become more sparse. Container lines are reacting
+  to this by adding bunker surcharges into their rates per feu.'
+themes:
+- container
+- china
+- meg
+- europe
+- crude_oil
+- gas
+title: Container Report - Week 12
+vessel_classes:
+- container
+---
+
+## Summary
+Container
+With the ongoing geopolitical issues in the Middle East Gulf and the effective closure of the Strait of Hormuz, the side effects are beginning to show worldwide. We have seen bunker prices hit very high levels all around the globe, as supplies of different grades of fuel and gas oil start to become more sparse. Container lines are reacting to this by adding bunker surcharges into their rates per feu.
+
+## Container
+With the ongoing geopolitical issues in the Middle East Gulf and the effective closure of the Strait of Hormuz, the side effects are beginning to show worldwide. We have seen bunker prices hit very high levels all around the globe, as supplies of different grades of fuel and gas oil start to become more sparse. Container lines are reacting to this by adding bunker surcharges into their rates per feu. FBX01 (China/East Asia - USA West Coast) has stayed steady, ending the week at $2,048, $7 higher than a week ago. FBX03 (China/East Asia - USA East Coast) has increased by $180 from last week, finishing the week at $3,186, up $502 from the start of the month. FBX11 (China/East Asia - North Europe) dropped by $133 from last Friday, ending the week at $2,744. FBX13 (China/East Asia - Mediterranean) increased by $178 since the end of last week, ending the week at $4,241, up $524 since the start of the month.

@@ -1,0 +1,95 @@
+---
+category: tanker
+commodities:
+- crude_oil
+- products
+date: '2025-03-21'
+doc_id: baltic_tanker_2025-03-21_2025_03_21_tanker_report_week_12_tanker
+document_type: weekly_roundup
+key_entities:
+- China
+- Brazil
+- Middle East
+- US Gulf
+keywords:
+- handysize
+- vlcc
+- suezmax
+- aframax
+- china
+- brazil
+- atlantic
+- meg
+- west_africa
+- europe
+- us_gulf
+- japan
+market_tone: constructive
+regions:
+- meg
+- west_africa
+- europe
+- china
+- brazil
+- atlantic
+- us_gulf
+- japan
+signals: {}
+source: baltic
+source_path: reports/baltic/tanker/2025/2025-03-21_tanker-report-week-12_tanker.html
+source_stem: 2025-03-21_tanker-report-week-12_tanker
+summary: 'Clean
+
+  LR2
+
+  MEG LR2''s looked to have reached the top for their current freight spike for the
+  moment. The TC1 75kt MEG/Japan index reached WS166.94 where is paused and is now
+  at WS164.17. A TC20 90kt MEG/UK-Continent assessment climbed to $4.225m then dipped
+  back to $4.2m where it presently rests.'
+themes:
+- handysize
+- vlcc
+- suezmax
+- aframax
+- china
+- brazil
+title: Tanker report - Week 12
+vessel_classes:
+- vlcc
+- suezmax
+- aframax
+- handysize
+---
+
+## Summary
+Clean
+LR2
+MEG LR2's looked to have reached the top for their current freight spike for the moment. The TC1 75kt MEG/Japan index reached WS166.94 where is paused and is now at WS164.17. A TC20 90kt MEG/UK-Continent assessment climbed to $4.225m then dipped back to $4.2m where it presently rests.
+
+## Clean
+LR2
+MEG LR2's looked to have reached the top for their current freight spike for the moment. The TC1 75kt MEG/Japan index reached WS166.94 where is paused and is now at WS164.17. A TC20 90kt MEG/UK-Continent assessment climbed to $4.225m then dipped back to $4.2m where it presently rests.
+West of Suez, Mediterranean/East LR2's of TC15 also lost steam and went from $3.21m to $3.04m.
+LR1
+MEG LR1 freight climbed again this week. The TC5 55kt MEG/Japan index has come up another 9.06 points to WS180.94. A voyage west on TC8 65kt MEG/UK-Continent went from $3.12m to $3.33m.
+On the UK- Continent LR1's held stable with the TC16 60Kt ARA/West Africa index hovering around WS112.5 all week.
+MR
+After stability last week MRs in the MEG shot up over the last 5 days, the TC17 35kt MEG/East Africa index jumped 42.15 points to WS262.86 as a result.
+UK-Continent MR freight levels strengthened again this week. The TC2 37kt ARA/US-Atlantic coast trip added 15.94 points to its value taking the index to WS172.5. This moved the Baltic description round trip TCE for the run to $21,004 /day. The TC19 run of 37kt ARA/West Africa also climbed 16.57 points to WS193.13.
+After a couple of weeks in the doldrums USG MRs showed some movement this week. The TC14 38kt US-Gulf/UK-Continent subsequently went from WS90 to WS121.79. The TC18 the 38kt US Gulf/Brazil index also went up 35 points to WS175.71 and a Caribbean run on TC21, 38kt US-Gulf/Caribbean improved again by 40% to $617,857.
+The MR Atlantic Triangulation Basket TCE went from $20,240 to $27,847.
+Handymax
+Baltic Clean Handymax routes had a second positive week in a row. In the Mediterranean, the TC6 index jumped 72.22 points to WS268.33 and on the UK-Continent the TC23 30kt Cross UK-Continent rose 10.83 points back over WS200 to WS207.5.
+
+## VLCC
+The market climbed early in the week but by close of play on Thursday rates were being nudged back down. The 270,000 mt Middle East Gulf to China trip (TD3C) is 10 points up since last Friday at WS58.75 corresponding to a round-trip TCE of $51,536.
+In the Atlantic market, the rate for 260,000 mt West Africa/China (TD15) is 6.5 points firmer week-on-week at WS66.75 giving a round voyage TCE of $49,598 per day. The rate for 270,000 mt US Gulf/China (TD22) increased by $455,000 since last Friday at $7,797,500 which shows a daily round trip TCE of $40,321.
+
+## Suezmax
+Suezmax rates have taken a bit of a hit this week, especially in West Africa. The rate for the 130,000 mt Nigeria/UK Continent voyage (TD20) fell back 7 points to WS95.56 meaning a daily round-trip TCE of $40,980 while the TD27 route (Guyana to UK Continent basis 130,000mt) eased a point to WS95 translating to a daily round trip TCE of $40,451 basis discharge in Rotterdam. For the TD6 route of 135,000 mt CPC/Med the rate has slipped 2 points week-on-week to WS129.25 showing a daily TCE of a $62,910 round-trip. In the Middle East, the rate for the TD23 route of 140,000 mt Middle East Gulf to the Mediterranean (via the Suez Canal) remains around the WS92.5-93 level.
+
+## Aframax
+In the North Sea, the rate for the 80,000 mt Cross-UK Continent route (TD7) remained flat at WS107.5 giving a daily round-trip TCE of a shade under $25,500 basis Hound Point to Wilhelmshaven.
+In the Mediterranean market the rate for 80,000 mt Cross-Mediterranean (TD19) has regained 5 points to WS120.61 (basis Ceyhan to Lavera, that shows a daily round trip TCE of about $29,000).
+Across the Atlantic, the market recovered slightly with the rates for the 70,000mt East Coast Mexico/US Gulf route (TD26) and the 70,000 mt Covenas/US Gulf route (TD9) gaining 7-7.5 points WS135.83 (showing a daily round-trip TCE of $26,577) and WS132.81 (a round-trip TCE of $25,166 per day), respectively.
+The rate for the trans-Atlantic route of 70,000 mt US Gulf/UK Continent (TD25) is up by 12.5 points at WS145.56 giving a round trip TCE basis Houston/Rotterdam of $34,697 per day.

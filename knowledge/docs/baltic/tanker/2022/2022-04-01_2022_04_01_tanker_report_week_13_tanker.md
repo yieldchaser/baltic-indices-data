@@ -1,0 +1,81 @@
+---
+category: tanker
+commodities:
+- crude_oil
+- products
+date: '2022-04-01'
+doc_id: baltic_tanker_2022-04-01_2022_04_01_tanker_report_week_13_tanker
+document_type: weekly_roundup
+key_entities:
+- China
+- Brazil
+- Middle East
+- US Gulf
+keywords:
+- capesize
+- vlcc
+- suezmax
+- aframax
+- china
+- brazil
+- atlantic
+- meg
+- west_africa
+- europe
+- us_gulf
+- japan
+market_tone: cautiously_bearish
+regions:
+- meg
+- west_africa
+- europe
+- china
+- brazil
+- atlantic
+- us_gulf
+- japan
+signals: {}
+source: baltic
+source_path: reports/baltic/tanker/2022/2022-04-01_tanker-report-week-13_tanker.html
+source_stem: 2022-04-01_tanker-report-week-13_tanker
+summary: 'Clean
+
+  The Middle East Gulf has shown mixed reactions this week and we are noticing an
+  uptick in movement of product west. The LR2s of TC1 75k Middle East Gulf / Japan
+  have crumbled down to a new floor of WS154.29 a round-trip TCE of $15,783 /day.
+  The LR1s have remained resolute with TC5 55k Middle East Gulf / Japan holding in
+  the mid 180s.'
+themes:
+- capesize
+- vlcc
+- suezmax
+- aframax
+- china
+- brazil
+title: Tanker report - Week 13
+vessel_classes:
+- vlcc
+- suezmax
+- aframax
+- capesize
+---
+
+## Summary
+Clean
+The Middle East Gulf has shown mixed reactions this week and we are noticing an uptick in movement of product west. The LR2s of TC1 75k Middle East Gulf / Japan have crumbled down to a new floor of WS154.29 a round-trip TCE of $15,783 /day. The LR1s have remained resolute with TC5 55k Middle East Gulf / Japan holding in the mid 180s.
+
+## Clean
+The Middle East Gulf has shown mixed reactions this week and we are noticing an uptick in movement of product west. The LR2s of TC1 75k Middle East Gulf / Japan have crumbled down to a new floor of WS154.29 a round-trip TCE of $15,783 /day. The LR1s have remained resolute with TC5 55k Middle East Gulf / Japan holding in the mid 180s. A trip west on an LR1 TC8 has stayed around the $2.85m mark. The MRs of TC17 35kt Middle East Gulf / East Africa peaked around WS290 end of last week and have dropped incrementally since, settling at the WS282.5 mark at time of writing. West of Suez, on the LR2s, TC15 80k Mediterranean / Japan remain largely untested this week and visible activity is minimal. Still $2.7m with some activity required to prevent dropping next week
+The LR1s of TC16 60k Amsterdam / Offshore Lomé were again subject to lack of demand and have dropped down through low WS140s and ended at WS137.5 level by end of week. On the UK-Continent, MRs lost steam this week, TC2 37k UK-Continent / US Atlantic Coast dipped to 192.22 (down WS8.89) and TC19 37k Amsterdam to Lagos similarly dropped 10 points, to WS 199.29. Consistent activity and high bunkers drove freight up in the US Gulf this week. As a result, TC14 38k US Gulf / UK-Continent spiked to WS213.93 (+59.29) a round-trip TCE of $12,822 /day. The TC18 the MR US Gulf / Brazil trip also hiked up to WS259.69 (+74.33) a round trip TCE of $21,678 /day.
+The MR Atlantic basket TCE rose from $15,440/day to $25,713/day. TC9 has fluctuated down, then up this week after bottoming out around the WS325-330 mark. It resettled around WS350. In the Mediterranean, TC6 30kt Skikda / Lavera has continued along the floor of the WS200-205 level.
+
+## VLCC
+Despite improvements being made in this sector over the course of the week, earnings are still in negative territory. 280,000mt Middle East Gulf/USG (via Cape of Good Hope) is now assessed almost two points higher than a week ago at between WS21.5/22 level. Meanwhile, on the 270,000mt Middle East Gulf/China route, rates bounced up nearly seven points to WS43.5 (a round trip TCE of minus $8,600 per day). This is after various Chinese charterers were reported on subjects in the high WS30s early in the week. Kuwaiti charterers, alongside further Chinese charterers, were then reported on subjects latterly in the low WS40s.
+In the Atlantic region, the 260,000mt West Africa/China route had a fairly quiet week with only a few fixtures reported. However, on the back of the climbing Middle East market - combined with a Chinese charterer and a US Major Oil Company reported on subjects at WS45 - rates have risen seven points to be assessed at WS45 (minus $6,100 per day round-trip TCE). In the 270,000mt US Gulf/China market, although there were no reported fixtures, rates have improved by $100,000 to $5.51m (round voyage TCE of about minus $7,000 per day). VLCC activity in the region has been slightly more focussed on voyages from US Gulf to Europe this week where interest has spread from the rapidly improving Aframax and Suezmax sectors.
+
+## Suezmax
+Rates for the 135,000mt Novorossiysk/Augusta route dropped another 5.5 points to WS177 (a round-trip TCE of $63,400 per day) with very little reported activity. This is due in part to the continuing war in Ukraine. In the 130,000mt Nigeria/UKC market, shipowners have further capitalised on the upward momentum seen last week and rates have climbed 14 points to between WS102.5/105 level (a round-trip TCE of $12,100 per day). This is as a result of an increased level of West African demand for tonnage, US Gulf export cargoes pulling vessels away from West Africa and a lack of ballasters from the East putting further pressure on charterers. For the 140,000mt Basrah/West Mediterranean route, the rates have improved six points to just shy of WS50.
+
+## Aframax
+The 80,000mt Ceyhan/Mediterranean market recovered this week, rising over 16 points to close to WS150 (a round-trip TCE of $18,700 per day). In Northern Europe, the rate for 80,000mt Hound Point/UK Continent rose 25 points to WS153 region (a round-trip TCE of $23,500 per day). In the 100,000mt Primorsk/UK Continent market, finding Aframax owners willing to send their ships to load in Russia for Europe discharge remains a struggle. Only three fixtures were reported this week with rates climbing from WS412.5, through WS475, and yesterday reports with limited details of WS500 being on subjects. The market is now assessed close to 155 points firmer at around the WS495/500 mark (a round voyage TCE of $224,000 per day).
+Across the Atlantic, the market continued to push on with the rate for 70,000mt East Coast Mexico/US Gulf rocketing another 60 points to slightly in excess of WS245 (a round-trip TCE of $46,300 per day). The 70,000mt Caribbean/US Gulf trip rates were boosted 52.5 points to just below WS235 (a round-trip TCE of $37,000 per day). In the 70,000mt US Gulf/UK Continent market, rates jumped 25 points to about WS218 ($31,400 per day round-tip TCE, obviously improving greatly basis one-way economics).

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-04-08T18:11:19Z",
+  "counts": {
+    "breakwave": {
+      "drybulk": 198,
+      "tankers": 68
+    },
+    "baltic": {
+      "dry": 554,
+      "tanker": 556,
+      "gas": 165,
+      "container": 46,
+      "ningbo": 487
+    },
+    "books": {
+      "book": 12
+    }
+  },
+  "paths": {
+    "breakwave": {
+      "drybulk": "reports/drybulk",
+      "tankers": "reports/tankers"
+    },
+    "baltic": {
+      "dry": "reports/baltic/dry",
+      "tanker": "reports/baltic/tanker",
+      "gas": "reports/baltic/gas",
+      "container": "reports/baltic/container",
+      "ningbo": "reports/baltic/ningbo"
+    },
+    "books": {
+      "book": "reports"
+    }
+  }
+}

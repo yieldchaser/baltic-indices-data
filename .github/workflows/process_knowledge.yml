@@ -1,0 +1,58 @@
+name: Process Knowledge Base
+
+on:
+  push:
+    paths:
+      - 'reports/**'
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Source: breakwave | baltic | books | all'
+        default: 'all'
+      rebuild:
+        description: 'Full rebuild: true | false'
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements_knowledge.txt
+
+      - name: Pull latest
+        run: git pull origin main --rebase
+
+      - name: Run processor
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        shell: bash
+        run: |
+          FLAGS=""
+          SRC="${{ github.event.inputs.source || 'all' }}"
+          RB="${{ github.event.inputs.rebuild || 'false' }}"
+          [ "$SRC" != "all" ] && FLAGS="$FLAGS --source $SRC"
+          [ "$RB" = "true" ] && FLAGS="$FLAGS --rebuild"
+          python scripts/process_knowledge.py $FLAGS
+
+      - name: Commit knowledge artifacts
+        shell: bash
+        run: |
+          git config user.name "knowledge-bot"
+          git config user.email "bot@shipping"
+          git add knowledge/
+          git diff --staged --quiet || git commit -m "knowledge: update $(date -u +%Y-%m-%d)"
+          git push
