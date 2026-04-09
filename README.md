@@ -58,6 +58,17 @@ Knowledge outputs live under `knowledge/`:
 The compiler is `scripts/process_knowledge.py`, and corpus validation is handled by `scripts/validate_knowledge.py`.
 New report families or book collections can be added later by dropping raw files into `reports/` and wiring a small source adapter into the compiler.
 
+### Knowledge System Status
+
+The core recommendations that shaped this system are now implemented:
+
+- structure-first retrieval artifacts via section trees, stable section IDs, and a flattened section index
+- a compiled wiki layer that turns source documents into evergreen topic pages with citations
+- a repo-native health layer that surfaces freshness, cadence, coverage, and cross-source divergence
+- fully automated ingestion + incremental rebuilds without a vector DB, hosted search stack, or extra paid infrastructure
+
+What remains optional is a future query/research interface layer: CLI search, analyst-style Q&A, analog retrieval, or dashboard integration. The current knowledge system is already complete from a build-quality, automation, and corpus-governance perspective.
+
 ---
 
 ## What This Tracks
@@ -388,7 +399,7 @@ As a zero-infrastructure platform processing thousands of data points client-sid
 
 ### `scripts/process_knowledge.py`
 
-- Incrementally compiles `reports/` into `knowledge/docs/`, `knowledge/chunks/`, `knowledge/trees/`, `knowledge/manifests/`, `knowledge/derived/`, and `knowledge/wiki/`
+- Incrementally compiles `reports/` into `knowledge/docs/`, `knowledge/chunks/`, `knowledge/trees/`, `knowledge/manifests/`, `knowledge/derived/`, `knowledge/wiki/`, and `knowledge/reports/`
 - Supports `--source`, `--rebuild`, `--no-llm`, and `--derived-only`
 - Skips already-processed documents unless a rebuild or schema upgrade is required
 - Reuses existing enriched frontmatter during structural upgrades so tree/index migrations do not re-spend LLM calls unnecessarily
