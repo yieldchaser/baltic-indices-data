@@ -12,6 +12,9 @@ KNOWLEDGE_ROOT = REPO_ROOT / "knowledge"
 DOCS_MANIFEST = KNOWLEDGE_ROOT / "manifests" / "documents.jsonl"
 SIGNALS_PATH = KNOWLEDGE_ROOT / "derived" / "signals.jsonl"
 SECTION_INDEX_PATH = KNOWLEDGE_ROOT / "derived" / "section_index.jsonl"
+TOPIC_EVIDENCE_PATH = KNOWLEDGE_ROOT / "derived" / "topic_evidence.jsonl"
+TOPIC_CONFIG_PATH = KNOWLEDGE_ROOT / "config" / "wiki_topics.json"
+WIKI_DIR = KNOWLEDGE_ROOT / "wiki"
 COMPILER_VERSION = 2
 
 
@@ -314,6 +317,163 @@ def validate_section_index(section_ids_by_doc: dict[str, set[str]]):
     }
 
 
+def validate_topic_config():
+    if not TOPIC_CONFIG_PATH.exists():
+        return {
+            "missing_config": True,
+            "malformed_config": False,
+            "invalid_topics": ["missing wiki topic config"],
+            "duplicate_topic_ids": [],
+            "unknown_related_topics": [],
+            "topic_ids": [],
+        }
+
+    try:
+        payload = json.loads(TOPIC_CONFIG_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {
+            "missing_config": False,
+            "malformed_config": True,
+            "invalid_topics": ["malformed wiki topic config"],
+            "duplicate_topic_ids": [],
+            "unknown_related_topics": [],
+            "topic_ids": [],
+        }
+
+    if not isinstance(payload, list) or not payload:
+        return {
+            "missing_config": False,
+            "malformed_config": True,
+            "invalid_topics": ["wiki topic config must be a non-empty JSON array"],
+            "duplicate_topic_ids": [],
+            "unknown_related_topics": [],
+            "topic_ids": [],
+        }
+
+    required = {"topic_id", "title", "description"}
+    topic_ids = []
+    duplicate_topic_ids = set()
+    invalid_topics = set()
+    for row in payload:
+        if not isinstance(row, dict):
+            invalid_topics.add("topic rows must be JSON objects")
+            continue
+        missing = sorted(required - set(row))
+        if missing:
+            invalid_topics.add(f"{row.get('topic_id') or 'unknown'} missing {', '.join(missing)}")
+        topic_id = row.get("topic_id")
+        if not topic_id:
+            invalid_topics.add("topic_id is required")
+            continue
+        if topic_id in topic_ids:
+            duplicate_topic_ids.add(topic_id)
+        topic_ids.append(topic_id)
+
+    topic_id_set = set(topic_ids)
+    unknown_related_topics = set()
+    for row in payload:
+        if not isinstance(row, dict):
+            continue
+        topic_id = row.get("topic_id") or "unknown"
+        for related in row.get("related_topics", []) or []:
+            if related not in topic_id_set:
+                unknown_related_topics.add(f"{topic_id} -> {related}")
+
+    return {
+        "missing_config": False,
+        "malformed_config": False,
+        "invalid_topics": sorted(invalid_topics),
+        "duplicate_topic_ids": sorted(duplicate_topic_ids),
+        "unknown_related_topics": sorted(unknown_related_topics),
+        "topic_ids": sorted(topic_id_set),
+    }
+
+
+def validate_topic_evidence(topic_ids: list[str], section_ids_by_doc: dict[str, set[str]], known_doc_ids: set[str]):
+    rows, malformed_lines = load_jsonl(TOPIC_EVIDENCE_PATH)
+    duplicate_refs = set()
+    unknown_topic_ids = set()
+    missing_doc_ids = set()
+    invalid_section_refs = set()
+    topic_counts = Counter()
+    seen_refs = set()
+
+    for row in rows:
+        topic_id = row.get("topic_id")
+        doc_id = row.get("doc_id")
+        node_id = row.get("node_id")
+        ref_key = (topic_id, doc_id, node_id)
+        if ref_key in seen_refs:
+            duplicate_refs.add("|".join(part or "missing" for part in ref_key))
+        seen_refs.add(ref_key)
+
+        if not topic_id or topic_id not in topic_ids:
+            unknown_topic_ids.add(topic_id or "missing_topic_id")
+        else:
+            topic_counts[topic_id] += 1
+
+        if not doc_id or doc_id not in known_doc_ids:
+            missing_doc_ids.add(doc_id or "missing_doc_id")
+            continue
+
+        if not node_id or node_id not in section_ids_by_doc.get(doc_id, set()):
+            invalid_section_refs.add(f"{topic_id or 'missing_topic'}|{doc_id}|{node_id or 'missing_node'}")
+
+    return {
+        "row_count": len(rows),
+        "malformed_lines": malformed_lines,
+        "duplicate_refs": sorted(duplicate_refs),
+        "unknown_topic_ids": sorted(unknown_topic_ids),
+        "missing_doc_ids": sorted(missing_doc_ids),
+        "invalid_section_refs": sorted(invalid_section_refs),
+        "missing_topic_ids": sorted(topic_id for topic_id in topic_ids if topic_counts.get(topic_id, 0) == 0),
+    }
+
+
+def validate_wiki_pages(topic_ids: list[str]):
+    missing_pages = []
+    bad_frontmatter = []
+    zero_evidence_pages = []
+    missing_citation_pages = []
+    unknown_pages = []
+    missing_index = not (WIKI_DIR / "index.md").exists()
+
+    if WIKI_DIR.exists():
+        for path in WIKI_DIR.glob("*.md"):
+            if path.name == "index.md":
+                continue
+            if path.stem not in topic_ids:
+                unknown_pages.append(path.relative_to(REPO_ROOT).as_posix())
+
+    for topic_id in topic_ids:
+        path = WIKI_DIR / f"{topic_id}.md"
+        rel = path.relative_to(REPO_ROOT).as_posix()
+        if not path.exists():
+            missing_pages.append(rel)
+            continue
+        try:
+            post = frontmatter.load(path)
+        except Exception:
+            bad_frontmatter.append(rel)
+            continue
+
+        if post.metadata.get("topic_id") != topic_id or post.metadata.get("page_type") != "topic_wiki":
+            bad_frontmatter.append(rel)
+        if (post.metadata.get("evidence_count") or 0) <= 0 or (post.metadata.get("document_count") or 0) <= 0:
+            zero_evidence_pages.append(rel)
+        if "doc_id:" not in post.content or "section_id:" not in post.content:
+            missing_citation_pages.append(rel)
+
+    return {
+        "missing_pages": sorted(missing_pages),
+        "bad_frontmatter": sorted(set(bad_frontmatter)),
+        "zero_evidence_pages": sorted(set(zero_evidence_pages)),
+        "missing_citation_pages": sorted(set(missing_citation_pages)),
+        "unknown_pages": sorted(set(unknown_pages)),
+        "missing_index": missing_index,
+    }
+
+
 def count_signal_rows():
     rows, malformed = load_jsonl(SIGNALS_PATH)
     counts = {}
@@ -358,6 +518,13 @@ def main():
     chunk_issues = inspect_chunks(documents, tree_issues["section_ids_by_doc"])
     signal_counts, malformed_signal_lines = count_signal_rows()
     section_index_issues = validate_section_index(tree_issues["section_ids_by_doc"])
+    topic_config_issues = validate_topic_config()
+    topic_evidence_issues = validate_topic_evidence(
+        topic_config_issues["topic_ids"],
+        tree_issues["section_ids_by_doc"],
+        {row.get("doc_id") for row in documents if row.get("doc_id")},
+    )
+    wiki_page_issues = validate_wiki_pages(topic_config_issues["topic_ids"])
     bad_frontmatter, breakwave_null_signals, section_count_mismatches = validate_frontmatter(
         documents,
         tree_issues["section_ids_by_doc"],
@@ -398,6 +565,24 @@ def main():
     print(f"Duplicate section index node ids: {len(section_index_issues['duplicate_node_ids'])}")
     print(f"Unknown section index node ids: {len(section_index_issues['unknown_node_ids'])}")
     print(f"Missing section index node ids: {len(section_index_issues['missing_node_ids'])}")
+    print(f"Topic config missing: {int(topic_config_issues['missing_config'])}")
+    print(f"Topic config malformed: {int(topic_config_issues['malformed_config'])}")
+    print(f"Invalid topic config rows: {len(topic_config_issues['invalid_topics'])}")
+    print(f"Duplicate wiki topic ids: {len(topic_config_issues['duplicate_topic_ids'])}")
+    print(f"Unknown related wiki topics: {len(topic_config_issues['unknown_related_topics'])}")
+    print(f"Topic evidence rows: {topic_evidence_issues['row_count']}")
+    print(f"Malformed topic evidence lines: {topic_evidence_issues['malformed_lines']}")
+    print(f"Duplicate topic evidence refs: {len(topic_evidence_issues['duplicate_refs'])}")
+    print(f"Unknown topic ids in evidence: {len(topic_evidence_issues['unknown_topic_ids'])}")
+    print(f"Topic evidence rows with missing docs: {len(topic_evidence_issues['missing_doc_ids'])}")
+    print(f"Topic evidence rows with invalid section refs: {len(topic_evidence_issues['invalid_section_refs'])}")
+    print(f"Configured topics missing evidence: {len(topic_evidence_issues['missing_topic_ids'])}")
+    print(f"Missing wiki pages: {len(wiki_page_issues['missing_pages'])}")
+    print(f"Wiki pages with bad frontmatter: {len(wiki_page_issues['bad_frontmatter'])}")
+    print(f"Wiki pages with zero evidence: {len(wiki_page_issues['zero_evidence_pages'])}")
+    print(f"Wiki pages missing citations: {len(wiki_page_issues['missing_citation_pages'])}")
+    print(f"Unknown wiki pages: {len(wiki_page_issues['unknown_pages'])}")
+    print(f"Missing wiki index: {int(wiki_page_issues['missing_index'])}")
     print(f"Frontmatter errors: {len(bad_frontmatter)}")
     print(f"Frontmatter section-count mismatches: {len(section_count_mismatches)}")
     print(f"Breakwave reports with null primary signal: {breakwave_null_signals}")
@@ -424,6 +609,23 @@ def main():
         + len(section_index_issues["duplicate_node_ids"])
         + len(section_index_issues["unknown_node_ids"])
         + len(section_index_issues["missing_node_ids"])
+        + int(topic_config_issues["missing_config"])
+        + int(topic_config_issues["malformed_config"])
+        + len(topic_config_issues["invalid_topics"])
+        + len(topic_config_issues["duplicate_topic_ids"])
+        + len(topic_config_issues["unknown_related_topics"])
+        + topic_evidence_issues["malformed_lines"]
+        + len(topic_evidence_issues["duplicate_refs"])
+        + len(topic_evidence_issues["unknown_topic_ids"])
+        + len(topic_evidence_issues["missing_doc_ids"])
+        + len(topic_evidence_issues["invalid_section_refs"])
+        + len(topic_evidence_issues["missing_topic_ids"])
+        + len(wiki_page_issues["missing_pages"])
+        + len(wiki_page_issues["bad_frontmatter"])
+        + len(wiki_page_issues["zero_evidence_pages"])
+        + len(wiki_page_issues["missing_citation_pages"])
+        + len(wiki_page_issues["unknown_pages"])
+        + int(wiki_page_issues["missing_index"])
         + len(bad_frontmatter)
         + len(section_count_mismatches)
         + breakwave_null_signals
@@ -444,6 +646,19 @@ def main():
         print_sample("Chunks with invalid section refs:", chunk_issues["invalid_section_refs"])
         print_sample("Unknown section index node ids:", section_index_issues["unknown_node_ids"])
         print_sample("Missing section index node ids:", section_index_issues["missing_node_ids"])
+        print_sample("Invalid wiki topic config rows:", topic_config_issues["invalid_topics"])
+        print_sample("Duplicate wiki topic ids:", topic_config_issues["duplicate_topic_ids"])
+        print_sample("Unknown related wiki topics:", topic_config_issues["unknown_related_topics"])
+        print_sample("Duplicate topic evidence refs:", topic_evidence_issues["duplicate_refs"])
+        print_sample("Unknown topic ids in evidence:", topic_evidence_issues["unknown_topic_ids"])
+        print_sample("Topic evidence rows with missing docs:", topic_evidence_issues["missing_doc_ids"])
+        print_sample("Topic evidence rows with invalid section refs:", topic_evidence_issues["invalid_section_refs"])
+        print_sample("Configured topics missing evidence:", topic_evidence_issues["missing_topic_ids"])
+        print_sample("Missing wiki pages:", wiki_page_issues["missing_pages"])
+        print_sample("Wiki pages with bad frontmatter:", wiki_page_issues["bad_frontmatter"])
+        print_sample("Wiki pages with zero evidence:", wiki_page_issues["zero_evidence_pages"])
+        print_sample("Wiki pages missing citations:", wiki_page_issues["missing_citation_pages"])
+        print_sample("Unknown wiki pages:", wiki_page_issues["unknown_pages"])
         print_sample("Invalid frontmatter docs:", bad_frontmatter)
         print_sample("Frontmatter section-count mismatches:", section_count_mismatches)
         return 1

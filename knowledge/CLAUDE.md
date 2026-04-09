@@ -95,7 +95,12 @@ but the schema is hierarchical so later phases can add nested nodes without chan
 - `knowledge/derived/signals.jsonl` - structured Breakwave signal history
 - `knowledge/derived/themes.jsonl` - themes, entities, and tone per document
 - `knowledge/derived/section_index.jsonl` - flattened section-level retrieval index
+- `knowledge/derived/topic_evidence.jsonl` - scored section-to-topic evidence rows for the wiki layer
 - `knowledge/derived/timelines.json` - ISO-week alignment across Breakwave and Baltic
+
+## Topic Wiki Layer
+- `knowledge/config/wiki_topics.json` - topic definitions, scoring hints, and related-topic links
+- `knowledge/wiki/*.md` - generated evergreen topic pages with citations back to `doc_id` and `section_id`
 
 ## Chunking Rules
 - Breakwave reports: chunk by natural sections (`Overview`, `Fundamentals`) at ~450 tokens with 60-token overlap
@@ -108,10 +113,11 @@ but the schema is hierarchical so later phases can add nested nodes without chan
 3. For section-first retrieval, scan `knowledge/derived/section_index.jsonl` before reading raw chunks.
 4. Open the matching `knowledge/trees/**/*.json` file when you need structure, page spans, or explainable navigation.
 5. Only fall back to `knowledge/chunks/*.jsonl` once the relevant document/section is identified.
-6. Signal queries: use `knowledge/derived/signals.jsonl`.
-7. Timeline queries: use `knowledge/derived/timelines.json`.
-8. Cross-source synthesis: retrieve from both Breakwave and Baltic, then align by ISO week.
-9. Always cite: source, date, doc_id, and section title or page span when available.
+6. Topic overviews: start with `knowledge/wiki/*.md`, then inspect the linked evidence rows in `knowledge/derived/topic_evidence.jsonl`.
+7. Signal queries: use `knowledge/derived/signals.jsonl`.
+8. Timeline queries: use `knowledge/derived/timelines.json`.
+9. Cross-source synthesis: retrieve from both Breakwave and Baltic, then align by ISO week.
+10. Always cite: source, date, doc_id, and section title or page span when available.
 
 ## Source Registry
 - breakwave/drybulk: 2018-present, bi-weekly (~26/year)

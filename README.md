@@ -45,11 +45,13 @@ The repo now includes an incremental shipping intelligence knowledge layer built
 
 Knowledge outputs live under `knowledge/`:
 
+- `knowledge/config/` - topic definitions that drive the generated wiki layer
 - `knowledge/docs/` - normalized markdown documents with YAML frontmatter
 - `knowledge/chunks/` - JSONL retrieval chunks with stable section IDs, page spans, token counts, and keywords
 - `knowledge/trees/` - per-document section trees for explainable, section-first retrieval
+- `knowledge/wiki/` - topic pages compiled from cited evidence across the corpus
 - `knowledge/manifests/` - document inventory, source registry, and error logs
-- `knowledge/derived/` - extracted signals, themes, section index, and timeline artifacts
+- `knowledge/derived/` - extracted signals, themes, section index, topic evidence, and timeline artifacts
 - `knowledge/CLAUDE.md` - schema and query contract for downstream agents/tools
 
 The compiler is `scripts/process_knowledge.py`, and corpus validation is handled by `scripts/validate_knowledge.py`.
@@ -131,6 +133,7 @@ Shipping/
 │   ├── baltic_scraper.py               # Baltic Exchange Weekly report scraper
 │   ├── breakwave_scraper.py            # Breakwave Advisors biweekly report scraper
 │   ├── process_knowledge.py            # Incremental knowledge compiler
+│   ├── build_wiki.py                   # Topic-evidence + wiki page generator
 │   └── validate_knowledge.py           # Knowledge corpus validator
 │
 ├── assets/
@@ -148,11 +151,13 @@ Shipping/
 │
 ├── knowledge/
 │   ├── CLAUDE.md                       # Knowledge schema + query contract
+│   ├── config/                         # Topic definitions for the wiki layer
 │   ├── docs/                           # Normalized markdown documents
 │   ├── chunks/                         # JSONL retrieval chunks
 │   ├── trees/                          # Section trees for explainable retrieval
+│   ├── wiki/                           # Generated topic pages with citations
 │   ├── manifests/                      # Document/source/error manifests
-│   └── derived/                        # Signals, themes, section index, timelines
+│   └── derived/                        # Signals, themes, section index, topic evidence, timelines
 │
 └── .github/workflows/
     ├── daily_update.yml                # Cron: 10:30 AM + 2/7/10 PM UTC daily
@@ -380,18 +385,19 @@ As a zero-infrastructure platform processing thousands of data points client-sid
 
 ### `scripts/process_knowledge.py`
 
-- Incrementally compiles `reports/` into `knowledge/docs/`, `knowledge/chunks/`, `knowledge/trees/`, `knowledge/manifests/`, and `knowledge/derived/`
+- Incrementally compiles `reports/` into `knowledge/docs/`, `knowledge/chunks/`, `knowledge/trees/`, `knowledge/manifests/`, `knowledge/derived/`, and `knowledge/wiki/`
 - Supports `--source`, `--rebuild`, `--no-llm`, and `--derived-only`
 - Skips already-processed documents unless a rebuild or schema upgrade is required
 - Reuses existing enriched frontmatter during structural upgrades so tree/index migrations do not re-spend LLM calls unnecessarily
 - Uses Gemini only for server-side Breakwave enrichment and regex-fallback signal extraction
-- Preserves source attribution via stable `doc_id`, `source_path`, section IDs, and page-aware chunk metadata
+- Preserves source attribution via stable `doc_id`, `source_path`, section IDs, page-aware chunk metadata, and topic-evidence citations
 
 ### `scripts/validate_knowledge.py`
 
 - Verifies source-file counts against processed documents
-- Checks chunk-file readability, tree integrity, section-index coverage, and derived signal coverage
+- Checks chunk-file readability, tree integrity, section-index coverage, topic-evidence integrity, and derived signal coverage
 - Loads frontmatter from generated markdown docs to catch schema gaps and section-count mismatches
+- Confirms every configured wiki topic has evidence-backed markdown output with citations
 - Provides a fast corpus health summary after rebuilds or workflow runs
 
 ### `scripts/breakwave_scraper.py` + `scripts/baltic_scraper.py`

@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import tiktoken
 import frontmatter
 from dotenv import load_dotenv
+from build_wiki import build_wiki
 warnings.simplefilter("ignore", FutureWarning)
 import google.generativeai as genai
 
@@ -32,6 +33,8 @@ for stream_name in ("stdout", "stderr"):
 DOCS_DIR = KNOWLEDGE / "docs"
 CHUNKS_DIR = KNOWLEDGE / "chunks"
 TREES_DIR = KNOWLEDGE / "trees"
+CONFIG_DIR = KNOWLEDGE / "config"
+WIKI_DIR = KNOWLEDGE / "wiki"
 MANIFESTS_DIR = KNOWLEDGE / "manifests"
 DERIVED_DIR = KNOWLEDGE / "derived"
 DOCUMENTS_MANIFEST = MANIFESTS_DIR / "documents.jsonl"
@@ -40,6 +43,7 @@ SOURCES_MANIFEST = MANIFESTS_DIR / "sources.json"
 SIGNALS_DERIVED = DERIVED_DIR / "signals.jsonl"
 THEMES_DERIVED = DERIVED_DIR / "themes.jsonl"
 SECTION_INDEX_DERIVED = DERIVED_DIR / "section_index.jsonl"
+TOPIC_EVIDENCE_DERIVED = DERIVED_DIR / "topic_evidence.jsonl"
 TIMELINES_DERIVED = DERIVED_DIR / "timelines.json"
 COMPILER_VERSION = 2
 
@@ -126,7 +130,7 @@ ISO_PREFIX_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})")
 
 
 def ensure_layout():
-    for path in [KNOWLEDGE, DOCS_DIR, CHUNKS_DIR, TREES_DIR, MANIFESTS_DIR, DERIVED_DIR]:
+    for path in [KNOWLEDGE, DOCS_DIR, CHUNKS_DIR, TREES_DIR, CONFIG_DIR, WIKI_DIR, MANIFESTS_DIR, DERIVED_DIR]:
         path.mkdir(parents=True, exist_ok=True)
 
 
@@ -373,7 +377,7 @@ def log_error(file_path: Path, error: str):
 
 
 def clear_rebuild_outputs():
-    for path in [DOCS_DIR, CHUNKS_DIR, TREES_DIR, DERIVED_DIR]:
+    for path in [DOCS_DIR, CHUNKS_DIR, TREES_DIR, WIKI_DIR, DERIVED_DIR]:
         if path.exists():
             shutil.rmtree(path)
     for path in [DOCUMENTS_MANIFEST, ERRORS_MANIFEST, SOURCES_MANIFEST]:
@@ -1325,7 +1329,7 @@ def process_file(path: Path, adapted: dict):
     return metadata, chunks, manifest_row
 
 
-def build_derived():
+def build_derived(llm_enabled: bool = False):
     documents = load_jsonl(DOCUMENTS_MANIFEST)
     SIGNALS_DERIVED.parent.mkdir(parents=True, exist_ok=True)
     signal_rows = []
@@ -1458,6 +1462,18 @@ def build_derived():
         append_jsonl(SECTION_INDEX_DERIVED, row)
 
     TIMELINES_DERIVED.write_text(json.dumps(dict(sorted(timelines.items())), indent=2, ensure_ascii=False), encoding="utf-8")
+    build_wiki(
+        repo_root=REPO_ROOT,
+        config_dir=CONFIG_DIR,
+        wiki_dir=WIKI_DIR,
+        documents_manifest=DOCUMENTS_MANIFEST,
+        section_index_path=SECTION_INDEX_DERIVED,
+        themes_path=THEMES_DERIVED,
+        signals_path=SIGNALS_DERIVED,
+        output_path=TOPIC_EVIDENCE_DERIVED,
+        generated_at=utc_now_iso(),
+        llm_enabled=llm_enabled,
+    )
 
 
 def main():
@@ -1474,13 +1490,13 @@ def main():
             existing_metadata_index = build_existing_metadata_index(load_manifest_rows())
             clear_rebuild_outputs()
         ensure_layout()
-        build_sources_registry()
 
         if args.derived_only:
-            build_derived()
+            build_derived(llm_enabled=GEMINI is not None and not args.no_llm)
             print("[DERIVED] rebuilt")
             return 0
 
+        build_sources_registry()
         llm_enabled = GEMINI is not None and not args.no_llm
         manifest_rows = prune_missing_sources(load_manifest_rows())
         write_manifest_rows(manifest_rows)
@@ -1524,7 +1540,7 @@ def main():
                 date_hint = path.stem.split("_")[0]
                 print(f"[{source.upper()}] [{date_hint}] ✗ {exc}")
 
-        build_derived()
+        build_derived(llm_enabled=llm_enabled)
         print(f"[DONE] processed={processed_count} skipped={skipped_count} errors={error_count}")
         return 0
     except Exception as exc:
