@@ -57,6 +57,7 @@ Knowledge outputs live under `knowledge/`:
 
 The compiler is `scripts/process_knowledge.py`, and corpus validation is handled by `scripts/validate_knowledge.py`.
 New report families or book collections can be added later by dropping raw files into `reports/` and wiring a small source adapter into the compiler.
+The future-source onboarding playbook, including guidance for image-table sources, lives in `knowledge/CLAUDE.md`.
 
 ### Knowledge System Status
 

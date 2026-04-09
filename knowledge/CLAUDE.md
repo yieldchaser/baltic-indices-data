@@ -125,6 +125,72 @@ but the schema is hierarchical so later phases can add nested nodes without chan
 10. Cross-source synthesis: retrieve from both Breakwave and Baltic, then align by ISO week.
 11. Always cite: source, date, doc_id, and section title or page span when available.
 
+## Future Source Onboarding Playbook
+This section is for future agents extending the corpus. It is guidance, not a claim that every item below is already implemented.
+
+### Principles
+- Keep the system repo-native, automation-first, and traceable.
+- Prefer deterministic parsing before LLM inference.
+- Avoid adding paid infrastructure beyond the existing Gemini usage already wired into the repo.
+- Preserve citations all the way through docs, trees, chunks, wiki pages, and health artifacts.
+
+### Default Onboarding Sequence
+1. Archive the raw source under `reports/{source_name}/...` with stable filenames and dates when available.
+2. Prefer native extraction first:
+   - HTML/DOM text for web pages
+   - PDF text and extractable tables for PDFs
+   - only use OCR or multimodal extraction when the important facts are image-only
+3. Add a source adapter in `scripts/process_knowledge.py` that normalizes the source into the existing document contract.
+4. Make sure the new source participates in the same downstream layers:
+   - `knowledge/docs/`
+   - `knowledge/trees/`
+   - `knowledge/chunks/`
+   - `knowledge/derived/`
+   - `knowledge/wiki/`
+   - `knowledge/manifests/`
+   - `knowledge/reports/`
+5. Extend `scripts/validate_knowledge.py` so the new source fails loudly when traceability, freshness, or schema expectations break.
+6. Update this file and `README.md` whenever a new source family or extraction mode becomes a first-class part of the system.
+
+### Current Limitation
+The live pipeline is still text-first. It can handle:
+- PDF text
+- extractable PDF tables
+- HTML text
+
+It does not yet treat image-only charts or JPG/PNG table screenshots as first-class structured inputs.
+
+### Image-Table Sources (Future Extension)
+For sources like shipping news pages that publish key data inside linked JPG tables:
+
+1. Scrape and archive both the article HTML and the linked image assets under `reports/{source_name}/...`.
+2. Store source metadata for each image-backed table:
+   - `source_url`
+   - image URL or archived image path
+   - publish date
+   - doc_id / source family / category
+3. Use this extraction order:
+   - primary: `img2table` for clean bordered tables and screenshot-style market tables
+   - fallback: `Pix2Text` for mixed-layout images or cases where table structure is less regular
+   - last resort: Gemini multimodal only for ambiguous recovery, validation, or high-value summarization
+4. Normalize extracted rows into markdown/JSON that can be cited and linked back to the parent source document.
+5. Carry extraction metadata forward:
+   - extraction method
+   - confidence
+   - image reference
+   - page/section span when applicable
+6. Do not emit exact numeric claims from image OCR unless confidence is high or the values are cross-checked against surrounding text.
+
+### Hellenic / ALIBRA-Style Source Pattern
+If a future source looks like the weekly Hellenic Shipping News pages with linked ALIBRA JPG tables, the expected pattern is:
+
+1. Archive the article HTML.
+2. Archive the linked JPG table(s).
+3. Parse article text normally.
+4. Run the image table extractor on the JPGs.
+5. Merge both into the same normalized knowledge document with citations and confidence notes.
+6. Let the normal tree/chunk/wiki/health pipeline consume that normalized output.
+
 ## Source Registry
 - breakwave/drybulk: 2018-present, bi-weekly (~26/year)
 - breakwave/tankers: 2023-present, bi-weekly (~26/year)
