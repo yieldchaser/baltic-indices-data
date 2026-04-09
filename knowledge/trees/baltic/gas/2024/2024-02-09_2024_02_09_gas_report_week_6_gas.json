@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-02-09_2024_02_09_gas_report_week_6_gas__root",
+  "doc_id": "baltic_gas_2024-02-09_2024_02_09_gas_report_week_6_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 6",
+  "section_path": [
+    "Gas report - Week 6"
+  ],
+  "section_path_text": "Gas report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nAction has picked up in the LNG market, with several cargoes and tenders coming into play from the Atlantic, ships being taken on subs or in firm discussions has done something to hush the negative rhetoric that has been surrounding the LNG spot market since the beginning of the year. Rates for the 174cbm ship were flat with BLNG1 Aus-Japan gaining a small amount to finish up at $56,051, while BLNG2 US-Cont finished $53,135 and the biggest mover of the week BLNG3 US-Japan gained $4126 to finish at $53,270. The 160cbm vessel moved less overall compared to the larger ship and except for BLNG2 was positive overall.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "japan",
+    "gas",
+    "cbm",
+    "blng2",
+    "but",
+    "close",
+    "discussions",
+    "finish"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 541,
+  "source_path": "reports/baltic/gas/2024/2024-02-09_gas-report-week-6_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-02-09_2024_02_09_gas_report_week_6_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-02-09_2024_02_09_gas_report_week_6_gas",
+      "parent_id": "baltic_gas_2024-02-09_2024_02_09_gas_report_week_6_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Action has picked up in the LNG market, with several cargoes and tenders coming into play from the Atlantic, ships being taken on subs or in firm discussions has done something to hush the negative rhetoric that has been surrounding the LNG spot market since the beginning of the year. Rates for the 174cbm ship were flat with BLNG1 Aus-Japan gaining a small amount to finish up at $56,051, while BLNG2 US-Cont finished $53,135 and the biggest mover of the week BLNG3 US-Japan gained $4126 to finish at $53,270.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "japan",
+        "gas",
+        "cbm",
+        "blng2",
+        "discussions",
+        "finished"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 286,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-02-09_2024_02_09_gas_report_week_6_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-02-09_2024_02_09_gas_report_week_6_gas",
+      "parent_id": "baltic_gas_2024-02-09_2024_02_09_gas_report_week_6_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It is a nice change to be able to change the tone of the LPG market report this week, finally with greater interest with cargoes working firm several ships have been fixed away and rates reacted positively. For the BLPG1 Ras Tanura-Chiba a rise of $17.143 from year lows means we published at $48.714, an increase of over $16,000 TCE earnings to a daily equivalent of $27,393.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "published",
+        "tce",
+        "are",
+        "change"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 249,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

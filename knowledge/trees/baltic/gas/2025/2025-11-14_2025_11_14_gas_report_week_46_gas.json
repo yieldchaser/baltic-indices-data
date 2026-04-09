@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-11-14_2025_11_14_gas_report_week_46_gas__root",
+  "doc_id": "baltic_gas_2025-11-14_2025_11_14_gas_report_week_46_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 46",
+  "section_path": [
+    "Gas report - Week 46"
+  ],
+  "section_path_text": "Gas report - Week 46",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market posted another strong week, with rates continuing to climb across all major routes as a tight tonnage list, particularly in the Atlantic, kept sentiment firmly bullish. Limited prompt availability and steady fixing momentum have pushed earnings sharply higher. On the BLNG1 Australia-Japan route, 174k cbm vessels surged $13,500 to $62,500 per day, while 160k cbm ships gained $9,400 to $41,000 per day, supported by tightening Pacific positions and sustained charterer interest.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "day",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 475,
+  "source_path": "reports/baltic/gas/2025/2025-11-14_gas-report-week-46_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-11-14_2025_11_14_gas_report_week_46_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-11-14_2025_11_14_gas_report_week_46_gas",
+      "parent_id": "baltic_gas_2025-11-14_2025_11_14_gas_report_week_46_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market posted another strong week, with rates continuing to climb across all major routes as a tight tonnage list, particularly in the Atlantic, kept sentiment firmly bullish. Limited prompt availability and steady fixing momentum have pushed earnings sharply higher.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 290,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-11-14_2025_11_14_gas_report_week_46_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-11-14_2025_11_14_gas_report_week_46_gas",
+      "parent_id": "baltic_gas_2025-11-14_2025_11_14_gas_report_week_46_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With corporate events and long position lists the LPG market fell this week. With some resurgence being seen at the end of the week.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "per",
+        "metric",
+        "route",
+        "tonne",
+        "day",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 179,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

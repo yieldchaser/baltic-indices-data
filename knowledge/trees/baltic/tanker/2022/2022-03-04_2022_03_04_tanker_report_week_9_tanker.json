@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__root",
+  "doc_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 9",
+  "section_path": [
+    "Tanker report - Week 9"
+  ],
+  "section_path_text": "Tanker report - Week 9",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nThe continuing war in Ukraine has held the focus of nearly all markets this week. And with so much uncertainty about what the future holds, all markets have come under significant pressure. Rates for 280,000mt Middle East Gulf/USG (via Cape of Good Hope) have risen four points to WS26, while on the 270,000mt Middle East Gulf/China route rates jumped to WS59 early on and have now settled back to the WS55 level (a round trip TCE of $5,700 per day) - up 10 points from a week ago.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1308,
+  "source_path": "reports/baltic/tanker/2022/2022-03-04_tanker-report-week-9_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker",
+      "parent_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The continuing war in Ukraine has held the focus of nearly all markets this week. And with so much uncertainty about what the future holds, all markets have come under significant pressure.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "day",
+        "now"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker",
+      "parent_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Sanctions on Russia have caused uncertainty across the Baltic Exchange routes, most profoundly in the Black Sea. The 135,000mt Black Sea/Augusta route has leapt 61.5 points to WS291 (a round-trip TCE of $149,596 per day).",
+      "keywords": [
+        "europe",
+        "are",
+        "black",
+        "day",
+        "loading",
+        "now",
+        "owners",
+        "per"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker",
+      "parent_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Europe-centric Aframax market has had a tempestuous week at best. The 80,000mt Ceyhan/Mediterranean market rose 16.5 points to WS240 (a round-trip TCE of $63,400 per day).",
+      "keywords": [
+        "aframax",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "day",
+        "per",
+        "points",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 344,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker",
+      "parent_id": "baltic_tanker_2022-03-04_2022_03_04_tanker_report_week_9_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The CPP tanker market has improved this week highlighted by the BCTI rising from 696 to 991, the highest it's been since May 2020. In the Middle East Gulf the LRs have seen a significant jump in freight, which has been long awaited by owners.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gulf",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 469,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

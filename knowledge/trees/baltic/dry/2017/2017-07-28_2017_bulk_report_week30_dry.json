@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__root",
+  "doc_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 30",
+  "section_path": [
+    "Bulk report - Week 30"
+  ],
+  "section_path_text": "Bulk report - Week 30",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe week started and ended on an upward feeling for the west Australia to China route with current levels hovering around the mid $5 mark. The Atlantic was lacking fresh cargo and brokers suggesting a slightly weaker tone there. Rio Tinto had been active during the week taking a number of vessels initially at $5.80 and further tonnage at $5.55, finally paying another vessel $5.40.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1874,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week30_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry",
+      "parent_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The week started and ended on an upward feeling for the west Australia to China route with current levels hovering around the mid $5 mark. The Atlantic was lacking fresh cargo and brokers suggesting a slightly weaker tone there.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "dwt",
+        "built",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 564,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry",
+      "parent_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "After last week's gains, this week was very different, routes across the board lost ground. Period activity remained quiet except for a couple of rumours of a 75,000-dwt 2007-built open China was linked to a short period with some saying a rate between $8,000 and $9,000 daily earlier in the week an 81,900 dwt 2017-built open China was reported fixed for three-five months redelivery worldwide at $11,000 daily.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "japan",
+        "dwt",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 371,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry",
+      "parent_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Black Sea market remained positive, whilst rates from east coast South America and the US Gulf both moved further down. The Pacific market softened since the beginning of the week and coal cargoes from Indonesia were said to be less active.",
+      "keywords": [
+        "china",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "coal",
+        "daily",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 327,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry",
+      "parent_id": "baltic_dry_2017-07-28_2017_bulk_report_week30_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A positive week for Asia and the Continent but US Gulf and east coast South America lost more ground with some suggesting the downward trend will continue to fall in these areas. Apparently stems continue to hit the market from the Black Sea with prompt dates placing pressure on the supply side going into early August.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 597,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

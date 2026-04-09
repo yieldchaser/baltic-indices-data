@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-08-01_2025_08_01_gas_report_week_31_gas__root",
+  "doc_id": "baltic_gas_2025-08-01_2025_08_01_gas_report_week_31_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 31",
+  "section_path": [
+    "Gas report - Week 31"
+  ],
+  "section_path_text": "Gas report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market traded largely sideways this week, following a relatively quiet period of activity. With tonnage lists remaining stable and limited fresh enquiry, market sentiment remained flat across most routes. On the BLNG1 Australia-Japan route, rates for 174k cbm vessels slipped $1,500 to $33,400 per day, while 160k cbm units held steady at $22,200, reflecting muted Pacific activity and weak short-term demand.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "cbm",
+    "route",
+    "day."
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 467,
+  "source_path": "reports/baltic/gas/2025/2025-08-01_gas-report-week-31_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-08-01_2025_08_01_gas_report_week_31_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-08-01_2025_08_01_gas_report_week_31_gas",
+      "parent_id": "baltic_gas_2025-08-01_2025_08_01_gas_report_week_31_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market traded largely sideways this week, following a relatively quiet period of activity. With tonnage lists remaining stable and limited fresh enquiry, market sentiment remained flat across most routes.",
+      "keywords": [
+        "lng",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "cbm"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 265,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-08-01_2025_08_01_gas_report_week_31_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-08-01_2025_08_01_gas_report_week_31_gas",
+      "parent_id": "baltic_gas_2025-08-01_2025_08_01_gas_report_week_31_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market was active this week, though rates eased slightly as charterers appeared to reach a ceiling. While vessel supply remained broadly balanced, appetite for pushing rates higher diminished.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "per",
+        "route",
+        "tce",
+        "day.",
+        "earnings",
+        "metric"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

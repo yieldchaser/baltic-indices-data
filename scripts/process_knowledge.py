@@ -1,6 +1,6 @@
 import os, re, json, time, hashlib, argparse, traceback, shutil, sys, warnings
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 import pdfplumber
 from bs4 import BeautifulSoup
@@ -31,6 +31,7 @@ for stream_name in ("stdout", "stderr"):
 
 DOCS_DIR = KNOWLEDGE / "docs"
 CHUNKS_DIR = KNOWLEDGE / "chunks"
+TREES_DIR = KNOWLEDGE / "trees"
 MANIFESTS_DIR = KNOWLEDGE / "manifests"
 DERIVED_DIR = KNOWLEDGE / "derived"
 DOCUMENTS_MANIFEST = MANIFESTS_DIR / "documents.jsonl"
@@ -38,7 +39,9 @@ ERRORS_MANIFEST = MANIFESTS_DIR / "errors.jsonl"
 SOURCES_MANIFEST = MANIFESTS_DIR / "sources.json"
 SIGNALS_DERIVED = DERIVED_DIR / "signals.jsonl"
 THEMES_DERIVED = DERIVED_DIR / "themes.jsonl"
+SECTION_INDEX_DERIVED = DERIVED_DIR / "section_index.jsonl"
 TIMELINES_DERIVED = DERIVED_DIR / "timelines.json"
+COMPILER_VERSION = 2
 
 BREAKWAVE_DRY_FIELDS = [
     "China Steel Production",
@@ -123,12 +126,16 @@ ISO_PREFIX_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})")
 
 
 def ensure_layout():
-    for path in [KNOWLEDGE, DOCS_DIR, CHUNKS_DIR, MANIFESTS_DIR, DERIVED_DIR]:
+    for path in [KNOWLEDGE, DOCS_DIR, CHUNKS_DIR, TREES_DIR, MANIFESTS_DIR, DERIVED_DIR]:
         path.mkdir(parents=True, exist_ok=True)
 
 
 def relpath(path: Path) -> str:
     return path.relative_to(REPO_ROOT).as_posix()
+
+
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
 def slugify(value: str) -> str:
@@ -263,6 +270,45 @@ def write_manifest_rows(rows: list[dict]):
         append_jsonl(DOCUMENTS_MANIFEST, row)
 
 
+def load_existing_metadata(row: dict | None) -> dict:
+    if not row:
+        return {}
+    doc_path = row.get("doc_path")
+    if not doc_path:
+        return {}
+    full_path = REPO_ROOT / doc_path
+    if not full_path.exists():
+        return {}
+    try:
+        return frontmatter.load(full_path).metadata
+    except Exception:
+        return {}
+
+
+def build_existing_metadata_index(rows: list[dict]) -> dict[str, dict]:
+    index = {}
+    for row in rows:
+        source_path = row.get("source_path")
+        if not source_path:
+            continue
+        metadata = load_existing_metadata(row)
+        if metadata:
+            index[source_path] = metadata
+    return index
+
+
+def artifacts_current(row: dict | None) -> bool:
+    if not row:
+        return False
+    if row.get("compiler_version") != COMPILER_VERSION:
+        return False
+    for key in ("doc_path", "chunk_file", "tree_path"):
+        rel = row.get(key)
+        if not rel or not (REPO_ROOT / rel).exists():
+            return False
+    return True
+
+
 def rewrite_chunk_file(path: Path, removed_doc_ids: set[str]):
     if not path.exists():
         return
@@ -282,12 +328,19 @@ def remove_manifest_sources(rows: list[dict], source_paths: set[str]) -> list[di
     removed_rows = [row for row in rows if row.get("source_path") in source_paths]
     kept_rows = [row for row in rows if row.get("source_path") not in source_paths]
     kept_doc_paths = {row.get("doc_path") for row in kept_rows if row.get("doc_path")}
+    kept_tree_paths = {row.get("tree_path") for row in kept_rows if row.get("tree_path")}
     removed_doc_ids_by_chunk = {}
 
     for row in removed_rows:
         doc_path = row.get("doc_path")
         if doc_path and doc_path not in kept_doc_paths:
             target = REPO_ROOT / doc_path
+            if target.exists():
+                target.unlink()
+
+        tree_path = row.get("tree_path")
+        if tree_path and tree_path not in kept_tree_paths:
+            target = REPO_ROOT / tree_path
             if target.exists():
                 target.unlink()
 
@@ -315,12 +368,12 @@ def log_error(file_path: Path, error: str):
     append_jsonl(ERRORS_MANIFEST, {
         "file": relpath(file_path),
         "error": error,
-        "ts": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "ts": utc_now_iso(),
     })
 
 
 def clear_rebuild_outputs():
-    for path in [DOCS_DIR, CHUNKS_DIR, DERIVED_DIR]:
+    for path in [DOCS_DIR, CHUNKS_DIR, TREES_DIR, DERIVED_DIR]:
         if path.exists():
             shutil.rmtree(path)
     for path in [DOCUMENTS_MANIFEST, ERRORS_MANIFEST, SOURCES_MANIFEST]:
@@ -344,7 +397,7 @@ def build_sources_registry():
         },
     }
     payload = {
-        "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "generated_at": utc_now_iso(),
         "counts": counts,
         "paths": {
             "breakwave": {
@@ -556,6 +609,119 @@ def source_hash(path: Path) -> str:
     return hashlib.sha1(payload.encode("utf-8")).hexdigest()
 
 
+def merge_existing_theme_data(theme_data: dict, existing_metadata: dict | None) -> dict:
+    existing_metadata = existing_metadata or {}
+    if isinstance(existing_metadata.get("themes"), list) and existing_metadata["themes"]:
+        theme_data["themes"] = existing_metadata["themes"][:6]
+    if isinstance(existing_metadata.get("key_entities"), list) and existing_metadata["key_entities"]:
+        theme_data["key_entities"] = existing_metadata["key_entities"][:6]
+    if existing_metadata.get("market_tone"):
+        theme_data["market_tone"] = existing_metadata["market_tone"]
+    return theme_data
+
+
+def prepare_document_structure(adapted: dict) -> tuple[dict, dict]:
+    metadata = adapted["metadata"]
+    raw_sections = adapted.get("sections") or []
+    if not raw_sections and (adapted.get("text") or "").strip():
+        raw_sections = [{"heading": "Main", "text": adapted["text"]}]
+
+    doc_id = metadata["doc_id"]
+    root_id = f"{doc_id}__root"
+    normalized_sections = []
+    page_starts = []
+    page_ends = []
+
+    for index, section in enumerate(raw_sections, start=1):
+        heading = norm_space(section.get("heading")) or f"Section {index}"
+        text = (section.get("text") or "").strip()
+        if not text:
+            continue
+        slug = slugify(section.get("slug") or heading)
+        page_start = section.get("page_start")
+        page_end = section.get("page_end") or page_start
+        if page_start is not None:
+            page_starts.append(page_start)
+        if page_end is not None:
+            page_ends.append(page_end)
+
+        normalized_sections.append({
+            "section_id": f"{doc_id}__s{index:02d}_{slug}",
+            "heading": heading,
+            "slug": slug,
+            "text": text,
+            "section_path": [heading],
+            "section_path_text": heading,
+            "level": 1,
+            "ordinal": index,
+            "page_start": page_start,
+            "page_end": page_end,
+            "token_count": token_count(text),
+            "summary": heuristic_summary(text, limit=2),
+            "keywords": extract_keywords(text, limit=8),
+            "section_type": section.get("section_type"),
+        })
+
+    adapted["sections"] = normalized_sections
+    metadata["section_count"] = len(normalized_sections)
+
+    root = {
+        "node_id": root_id,
+        "doc_id": doc_id,
+        "parent_id": None,
+        "title": metadata.get("title"),
+        "section_path": [metadata.get("title")] if metadata.get("title") else [],
+        "section_path_text": metadata.get("title"),
+        "level": 0,
+        "ordinal": 0,
+        "summary": metadata.get("summary"),
+        "keywords": (metadata.get("keywords") or [])[:12],
+        "page_start": min(page_starts) if page_starts else None,
+        "page_end": max(page_ends) if page_ends else None,
+        "token_count": token_count(adapted.get("text") or ""),
+        "source_path": metadata.get("source_path"),
+        "source_url": metadata.get("source_url"),
+        "children": [],
+    }
+
+    for section in normalized_sections:
+        root["children"].append({
+            "node_id": section["section_id"],
+            "doc_id": doc_id,
+            "parent_id": root_id,
+            "title": section["heading"],
+            "section_path": section["section_path"],
+            "section_path_text": section["section_path_text"],
+            "level": section["level"],
+            "ordinal": section["ordinal"],
+            "summary": section["summary"],
+            "keywords": section["keywords"],
+            "page_start": section.get("page_start"),
+            "page_end": section.get("page_end"),
+            "token_count": section["token_count"],
+            "section_type": section.get("section_type"),
+            "children": [],
+        })
+
+    return adapted, root
+
+
+def tree_output_path_from_doc_path(doc_path: Path) -> Path:
+    relative = doc_path.relative_to(DOCS_DIR).with_suffix(".json")
+    return TREES_DIR / relative
+
+
+def write_tree_file(path: Path, tree: dict):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(tree, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def iter_tree_nodes(node: dict):
+    yield node
+    for child in node.get("children", []) or []:
+        yield from iter_tree_nodes(child)
+
+
 def make_breakwave_doc_id(pdf_path: Path, category: str) -> str:
     date_str = pdf_path.stem.split("_")[0]
     return f"breakwave_{category}_{date_str}"
@@ -675,7 +841,8 @@ def extract_breakwave_fundamentals(tables: list, expected_fields: list[str]) -> 
     return normalized
 
 
-def adapt_breakwave(pdf_path: Path, category: str, llm_enabled: bool) -> dict:
+def adapt_breakwave(pdf_path: Path, category: str, llm_enabled: bool, existing_metadata: dict | None = None) -> dict:
+    existing_metadata = existing_metadata or {}
     with pdfplumber.open(pdf_path) as pdf:
         pages = pdf.pages
         page_texts = [norm_multiline(page.extract_text() or "") for page in pages]
@@ -700,34 +867,54 @@ def adapt_breakwave(pdf_path: Path, category: str, llm_enabled: bool) -> dict:
     if not bullet_lines:
         bullet_lines = [line for line in page_one_lines if len(line.split()) > 8][:6]
 
-    body_sections = [{"heading": "Overview", "text": "\n".join(f"- {line}" for line in bullet_lines if line)}]
+    body_sections = [{
+        "heading": "Overview",
+        "text": "\n".join(f"- {line}" for line in bullet_lines if line),
+        "page_start": 1,
+        "page_end": 1,
+        "section_type": "overview",
+    }]
     fundamentals_md = format_fundamentals_markdown(fundamentals)
     if fundamentals_md:
-        body_sections.append({"heading": "Fundamentals", "text": fundamentals_md})
+        body_sections.append({
+            "heading": "Fundamentals",
+            "text": fundamentals_md,
+            "page_start": 2 if len(page_texts) > 1 else 1,
+            "page_end": 2 if len(page_texts) > 1 else 1,
+            "section_type": "fundamentals",
+        })
     full_text = "\n\n".join(section["text"] for section in body_sections if section["text"])
     vessels, regions, commodities = infer_taxonomy(full_text + "\n" + "\n".join(page_texts), "breakwave", category)
 
+    existing_signals = existing_metadata.get("signals", {}) or {}
+    for key in signal_keys:
+        if signals.get(key) is None and existing_signals.get(key) is not None:
+            signals[key] = existing_signals.get(key)
+
+    theme_data = heuristic_theme_payload(full_text, category)
+    theme_data = merge_existing_theme_data(theme_data, existing_metadata)
+
+    summary = existing_metadata.get("summary") or heuristic_summary(" ".join(bullet_lines) or full_text)
+    keywords = existing_metadata.get("keywords") if isinstance(existing_metadata.get("keywords"), list) and existing_metadata["keywords"] else extract_keywords(full_text)
+
+    missing_signals = [key for key in signal_keys if signals.get(key) is None]
+    needs_theme_enrichment = not theme_data["themes"] or not theme_data["key_entities"] or not theme_data["market_tone"]
     llm_data = {}
-    if llm_enabled:
-        missing_signals = [key for key in signal_keys if signals.get(key) is None]
+    if llm_enabled and (missing_signals or not existing_metadata.get("summary") or needs_theme_enrichment):
         llm_data = run_doc_llm("\n".join(page_texts), "breakwave", category, signal_keys=missing_signals if missing_signals else None)
         for key in missing_signals:
             if llm_data.get(key) is not None:
                 signals[key] = llm_data.get(key)
-
-    theme_data = heuristic_theme_payload(full_text, category)
-    if llm_data:
+        if not existing_metadata.get("summary") and llm_data.get("summary"):
+            summary = llm_data["summary"]
+        if not (isinstance(existing_metadata.get("keywords"), list) and existing_metadata["keywords"]) and isinstance(llm_data.get("keywords"), list):
+            keywords = llm_data["keywords"]
         if isinstance(llm_data.get("themes"), list) and llm_data["themes"]:
             theme_data["themes"] = llm_data["themes"][:6]
         if isinstance(llm_data.get("key_entities"), list) and llm_data["key_entities"]:
             theme_data["key_entities"] = llm_data["key_entities"][:6]
         if llm_data.get("market_tone"):
             theme_data["market_tone"] = llm_data["market_tone"]
-
-    summary = llm_data.get("summary") if llm_data else None
-    if not summary:
-        summary = heuristic_summary(" ".join(bullet_lines) or full_text)
-    keywords = llm_data.get("keywords") if llm_data and isinstance(llm_data.get("keywords"), list) else extract_keywords(full_text)
 
     day_fmt = "%#d" if os.name == "nt" else "%-d"
     metadata = {
@@ -758,6 +945,18 @@ def find_baltic_title(soup: BeautifulSoup) -> str:
         if text and "cookies" not in text.lower():
             return text
     return "Baltic Weekly Roundup"
+
+
+def find_baltic_source_url(soup: BeautifulSoup) -> str | None:
+    for selector, attr in [
+        ("link[rel='canonical']", "href"),
+        ("meta[property='og:url']", "content"),
+        ("meta[name='twitter:url']", "content"),
+    ]:
+        tag = soup.select_one(selector)
+        if tag and tag.get(attr):
+            return norm_space(tag[attr])
+    return None
 
 
 def find_baltic_date(soup: BeautifulSoup, html_path: Path):
@@ -808,7 +1007,8 @@ def is_section_label(node) -> bool:
     return text == bold_text and len(text.split()) <= 8
 
 
-def adapt_baltic(html_path: Path, category: str) -> dict:
+def adapt_baltic(html_path: Path, category: str, existing_metadata: dict | None = None) -> dict:
+    existing_metadata = existing_metadata or {}
     soup = BeautifulSoup(html_path.read_text(encoding="utf-8", errors="ignore"), "lxml")
     root = soup.select_one("div.article-content")
     if root is None:
@@ -843,7 +1043,8 @@ def adapt_baltic(html_path: Path, category: str) -> dict:
         for section in sections
     )
     vessels, regions, commodities = infer_taxonomy(full_text, "baltic", category)
-    theme_data = heuristic_theme_payload(full_text, category)
+    theme_data = merge_existing_theme_data(heuristic_theme_payload(full_text, category), existing_metadata)
+    keywords = existing_metadata.get("keywords") if isinstance(existing_metadata.get("keywords"), list) and existing_metadata["keywords"] else extract_keywords(full_text)
     metadata = {
         "doc_id": make_baltic_doc_id(html_path, category, date_str),
         "source": "baltic",
@@ -851,14 +1052,15 @@ def adapt_baltic(html_path: Path, category: str) -> dict:
         "date": date_str if date_str != "unknown" else None,
         "title": title,
         "source_path": relpath(html_path),
+        "source_url": find_baltic_source_url(soup),
         "source_stem": html_path.stem,
         "document_type": "weekly_roundup",
         "vessel_classes": vessels,
         "regions": regions,
         "commodities": commodities,
         "signals": {},
-        "summary": heuristic_summary(full_text),
-        "keywords": extract_keywords(full_text),
+        "summary": existing_metadata.get("summary") or heuristic_summary(full_text),
+        "keywords": keywords,
         "themes": theme_data["themes"],
         "key_entities": theme_data["key_entities"],
         "market_tone": theme_data["market_tone"],
@@ -905,11 +1107,14 @@ def detect_book_heading(lines: list[str]) -> tuple[str | None, int]:
     return None, 0
 
 
-def adapt_book(pdf_path: Path, llm_enabled: bool) -> dict:
+def adapt_book(pdf_path: Path, llm_enabled: bool, existing_metadata: dict | None = None) -> dict:
+    existing_metadata = existing_metadata or {}
     title = pdf_path.stem.replace("_", " ")
     sections = []
     current_heading = title
     current_buffer = []
+    current_start_page = None
+    current_end_page = None
     summary_seed = []
 
     with pdfplumber.open(pdf_path) as pdf:
@@ -924,27 +1129,46 @@ def adapt_book(pdf_path: Path, llm_enabled: bool) -> dict:
             content = "\n".join(content_lines).strip()
             if heading:
                 if current_buffer:
-                    sections.append({"heading": current_heading, "text": "\n\n".join(current_buffer).strip()})
+                    sections.append({
+                        "heading": current_heading,
+                        "text": "\n\n".join(current_buffer).strip(),
+                        "page_start": current_start_page,
+                        "page_end": current_end_page or current_start_page,
+                        "section_type": "chapter",
+                    })
                 current_heading = heading
                 current_buffer = []
+                current_start_page = page_number
+                current_end_page = page_number
+            elif current_start_page is None:
+                current_start_page = page_number
             if content:
                 current_buffer.append(content)
+                current_end_page = page_number
                 if len(summary_seed) < 4:
                     summary_seed.append(content[:2000])
 
     if current_buffer:
-        sections.append({"heading": current_heading, "text": "\n\n".join(current_buffer).strip()})
+        sections.append({
+            "heading": current_heading,
+            "text": "\n\n".join(current_buffer).strip(),
+            "page_start": current_start_page,
+            "page_end": current_end_page or current_start_page,
+            "section_type": "chapter",
+        })
     if not sections:
         sections = [{"heading": title, "text": ""}]
 
     full_text = "\n\n".join(f"{section['heading']}\n{section['text']}" for section in sections if section["text"])
     vessels, regions, commodities = infer_taxonomy(full_text, "book", "book")
-    theme_data = heuristic_theme_payload(full_text, "book")
+    theme_data = merge_existing_theme_data(heuristic_theme_payload(full_text, "book"), existing_metadata)
 
-    summary = heuristic_summary(" ".join(summary_seed) or full_text)
-    if llm_enabled and summary_seed:
+    summary = existing_metadata.get("summary") or heuristic_summary(" ".join(summary_seed) or full_text)
+    keywords = existing_metadata.get("keywords") if isinstance(existing_metadata.get("keywords"), list) and existing_metadata["keywords"] else extract_keywords(full_text)
+    needs_theme_enrichment = not theme_data["themes"] or not theme_data["key_entities"] or not theme_data["market_tone"]
+    if llm_enabled and summary_seed and (not existing_metadata.get("summary") or needs_theme_enrichment):
         llm_data = run_doc_llm("\n\n".join(summary_seed), "book", "book")
-        if llm_data.get("summary"):
+        if not existing_metadata.get("summary") and llm_data.get("summary"):
             summary = llm_data["summary"]
         if isinstance(llm_data.get("themes"), list) and llm_data["themes"]:
             theme_data["themes"] = llm_data["themes"][:6]
@@ -952,6 +1176,8 @@ def adapt_book(pdf_path: Path, llm_enabled: bool) -> dict:
             theme_data["key_entities"] = llm_data["key_entities"][:6]
         if llm_data.get("market_tone"):
             theme_data["market_tone"] = llm_data["market_tone"]
+        if not (isinstance(existing_metadata.get("keywords"), list) and existing_metadata["keywords"]) and isinstance(llm_data.get("keywords"), list):
+            keywords = llm_data["keywords"]
 
     metadata = {
         "doc_id": make_book_doc_id(pdf_path),
@@ -966,7 +1192,7 @@ def adapt_book(pdf_path: Path, llm_enabled: bool) -> dict:
         "commodities": commodities,
         "signals": {},
         "summary": summary,
-        "keywords": extract_keywords(full_text),
+        "keywords": keywords,
         "themes": theme_data["themes"],
         "key_entities": theme_data["key_entities"],
         "market_tone": theme_data["market_tone"],
@@ -1005,6 +1231,10 @@ def doc_output_path(metadata: dict) -> Path:
     return DOCS_DIR / source / category / year / filename
 
 
+def tree_output_path(metadata: dict) -> Path:
+    return tree_output_path_from_doc_path(doc_output_path(metadata))
+
+
 def chunk_file_path(source: str, category: str) -> Path:
     if source == "book":
         return CHUNKS_DIR / "books.jsonl"
@@ -1019,43 +1249,32 @@ def build_chunks(adapted: dict) -> list[dict]:
     date_str = metadata.get("date")
     chunks = []
 
-    if source == "breakwave":
-        texts = chunk_text(adapted["text"], 400, 50)[:3]
-        sections = ["main"] * len(texts)
-    elif source == "baltic":
-        texts = []
-        sections = []
-        for section in adapted["sections"]:
-            section_text = section.get("text") or ""
-            if not section_text.strip():
-                continue
-            section_chunks = chunk_text(section_text, 600, 60) or [section_text]
-            for chunk in section_chunks:
-                texts.append(chunk)
-                sections.append(slugify(section.get("heading") or "main"))
-    else:
-        texts = []
-        sections = []
-        for section in adapted["sections"]:
-            section_text = section.get("text") or ""
-            if not section_text.strip():
-                continue
-            for chunk in chunk_text(section_text, 500, 100) or [section_text]:
-                texts.append(chunk)
-                sections.append(slugify(section.get("heading") or "chapter"))
+    max_tokens, overlap = (450, 60) if source == "breakwave" else (600, 60) if source == "baltic" else (500, 100)
 
-    for index, text in enumerate(texts, start=1):
-        chunks.append({
-            "chunk_id": f"{doc_id}_{index:03d}",
-            "doc_id": doc_id,
-            "source": source,
-            "category": category,
-            "date": date_str,
-            "section": sections[index - 1],
-            "text": text,
-            "token_count": token_count(text),
-            "keywords": extract_keywords(text),
-        })
+    for section in adapted["sections"]:
+        section_text = section.get("text") or ""
+        if not section_text.strip():
+            continue
+        for section_index, text in enumerate(chunk_text(section_text, max_tokens, overlap) or [section_text], start=1):
+            chunks.append({
+                "chunk_id": f"{doc_id}_{len(chunks) + 1:03d}",
+                "doc_id": doc_id,
+                "source": source,
+                "category": category,
+                "date": date_str,
+                "section": section["slug"],
+                "section_id": section["section_id"],
+                "section_title": section["heading"],
+                "section_path": section["section_path"],
+                "section_path_text": section["section_path_text"],
+                "section_level": section["level"],
+                "section_chunk_index": section_index,
+                "page_start": section.get("page_start"),
+                "page_end": section.get("page_end"),
+                "text": text,
+                "token_count": token_count(text),
+                "keywords": extract_keywords(text),
+            })
     return chunks
 
 
@@ -1065,19 +1284,22 @@ def write_markdown_doc(path: Path, metadata: dict, body: str):
     path.write_text(frontmatter.dumps(post), encoding="utf-8")
 
 
-def adapt_source_file(source: str, category: str, path: Path, llm_enabled: bool):
+def adapt_source_file(source: str, category: str, path: Path, llm_enabled: bool, existing_metadata: dict | None = None):
     if source == "breakwave":
-        return adapt_breakwave(path, category, llm_enabled)
+        return adapt_breakwave(path, category, llm_enabled, existing_metadata=existing_metadata)
     if source == "baltic":
-        return adapt_baltic(path, category)
-    return adapt_book(path, llm_enabled)
+        return adapt_baltic(path, category, existing_metadata=existing_metadata)
+    return adapt_book(path, llm_enabled, existing_metadata=existing_metadata)
 
 
 def process_file(path: Path, adapted: dict):
     metadata = adapted["metadata"]
+    adapted, tree = prepare_document_structure(adapted)
     output_path = doc_output_path(metadata)
+    tree_path = tree_output_path_from_doc_path(output_path)
     body = build_doc_body(adapted)
     write_markdown_doc(output_path, metadata, body)
+    write_tree_file(tree_path, tree)
 
     chunks = build_chunks(adapted)
     chunk_path = chunk_file_path(metadata["source"], metadata["category"])
@@ -1092,10 +1314,13 @@ def process_file(path: Path, adapted: dict):
         "title": metadata["title"],
         "source_path": metadata["source_path"],
         "doc_path": relpath(output_path),
+        "tree_path": relpath(tree_path),
+        "tree_node_count": sum(1 for _ in iter_tree_nodes(tree)),
         "chunk_file": relpath(chunk_path),
         "chunk_count": len(chunks),
         "source_hash": source_hash(path),
-        "processed_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "compiler_version": COMPILER_VERSION,
+        "processed_at": utc_now_iso(),
     }
     return metadata, chunks, manifest_row
 
@@ -1105,6 +1330,7 @@ def build_derived():
     SIGNALS_DERIVED.parent.mkdir(parents=True, exist_ok=True)
     signal_rows = []
     theme_rows = []
+    section_rows = []
     timelines = {}
 
     for doc in documents:
@@ -1190,6 +1416,35 @@ def build_derived():
             except ValueError:
                 pass
 
+        tree_path = doc.get("tree_path")
+        if tree_path and (REPO_ROOT / tree_path).exists():
+            try:
+                tree = json.loads((REPO_ROOT / tree_path).read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                tree = None
+            if tree:
+                for node in iter_tree_nodes(tree):
+                    if node.get("level") == 0:
+                        continue
+                    section_rows.append({
+                        "doc_id": doc_id,
+                        "source": source,
+                        "category": category,
+                        "date": date_str,
+                        "node_id": node.get("node_id"),
+                        "parent_id": node.get("parent_id"),
+                        "title": node.get("title"),
+                        "section_path": node.get("section_path", []),
+                        "section_path_text": node.get("section_path_text"),
+                        "level": node.get("level"),
+                        "ordinal": node.get("ordinal"),
+                        "summary": node.get("summary"),
+                        "keywords": node.get("keywords", []),
+                        "page_start": node.get("page_start"),
+                        "page_end": node.get("page_end"),
+                        "token_count": node.get("token_count"),
+                    })
+
     SIGNALS_DERIVED.write_text("", encoding="utf-8")
     for row in sorted(signal_rows, key=lambda item: (item.get("date") or "", item.get("doc_id") or "")):
         append_jsonl(SIGNALS_DERIVED, row)
@@ -1197,6 +1452,10 @@ def build_derived():
     THEMES_DERIVED.write_text("", encoding="utf-8")
     for row in theme_rows:
         append_jsonl(THEMES_DERIVED, row)
+
+    SECTION_INDEX_DERIVED.write_text("", encoding="utf-8")
+    for row in sorted(section_rows, key=lambda item: (item.get("date") or "", item.get("doc_id") or "", item.get("ordinal") or 0)):
+        append_jsonl(SECTION_INDEX_DERIVED, row)
 
     TIMELINES_DERIVED.write_text(json.dumps(dict(sorted(timelines.items())), indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -1210,7 +1469,9 @@ def main():
     args = parser.parse_args()
 
     try:
+        existing_metadata_index = {}
         if args.rebuild:
+            existing_metadata_index = build_existing_metadata_index(load_manifest_rows())
             clear_rebuild_outputs()
         ensure_layout()
         build_sources_registry()
@@ -1237,14 +1498,14 @@ def main():
                 not args.rebuild
                 and existing_row
                 and existing_row.get("source_hash") == current_hash
-                and existing_row.get("doc_path")
-                and (REPO_ROOT / existing_row["doc_path"]).exists()
+                and artifacts_current(existing_row)
             ):
                 skipped_count += 1
                 continue
 
             try:
-                adapted = adapt_source_file(source, category, path, llm_enabled)
+                existing_metadata = existing_metadata_index.get(source_rel) or load_existing_metadata(existing_row)
+                adapted = adapt_source_file(source, category, path, llm_enabled, existing_metadata=existing_metadata)
                 if existing_row:
                     manifest_rows = remove_manifest_sources(manifest_rows, {source_rel})
                     processed_index.pop(source_rel, None)

@@ -26,6 +26,7 @@ keywords:
 market_tone: constructive
 regions:
 - australia
+section_count: 5
 signals: {}
 source: book
 source_path: reports/Predictability of second-hand bulk carriers with a novel hybrid.pdf

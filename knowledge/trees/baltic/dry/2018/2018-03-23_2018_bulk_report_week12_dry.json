@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__root",
+  "doc_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 12",
+  "section_path": [
+    "Bulk report - Week 12"
+  ],
+  "section_path_text": "Bulk report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nAfter a relatively positive start, the market stalled mid-week, dropping below $6.00 on the West Australia/China run, regaining some ground as the week closed out. Heavy rains in Southern Brazil, force majeure in Saldanha and cyclone warnings in West Australia all conspired to curb activity. The appearance of the Australian miners was intermittent and limited, but by the close, rates recovered to finish in the low $6.00s.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1271,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week12_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry",
+      "parent_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "After a relatively positive start, the market stalled mid-week, dropping below $6.00 on the West Australia/China run, regaining some ground as the week closed out. Heavy rains in Southern Brazil, force majeure in Saldanha and cyclone warnings in West Australia all conspired to curb activity.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "japan",
+        "run"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 304,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry",
+      "parent_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The period market continued to be very active, as charterers' appetites for forward cover remained. However, generally, rates have been stagnant now for the past three weeks.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "grain",
+        "east",
+        "all",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 266,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry",
+      "parent_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates remained in positive mode during the week, especially in the Asian basin. However, as the week ended, brokers reported a build of tonnage from the US Gulf and a slowing down of fresh cargoes in the East.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 419,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry",
+      "parent_id": "baltic_dry_2018-03-23_2018_bulk_report_week12_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Most of the routes in the handy sector remained in positive territory this week. Towards the weekend, the East coast South America market slowly recovered from recent easing in rates, particularly for the stems with dates before the first half of April.",
+      "keywords": [
+        "supramax",
+        "handysize",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "grain",
+        "steel",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 268,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

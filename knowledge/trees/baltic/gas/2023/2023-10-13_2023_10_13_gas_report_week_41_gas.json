@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-10-13_2023_10_13_gas_report_week_41_gas__root",
+  "doc_id": "baltic_gas_2023-10-13_2023_10_13_gas_report_week_41_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 41",
+  "section_path": [
+    "Gas report - Week 41"
+  ],
+  "section_path_text": "Gas report - Week 41",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nWith few actual fixtures reported this week, the LNG market has seen further corrections down. At the same time last year we had been publishing at $405,290 for BLNG1g a value $275,782 higher than that with which we published today. For Aus-Japan a fall of $34,100 on the week gave the index a value of $129,508.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "japan",
+    "gas",
+    "are",
+    "few",
+    "year",
+    "availability",
+    "but",
+    "daily",
+    "demand"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 558,
+  "source_path": "reports/baltic/gas/2023/2023-10-13_gas-report-week-41_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-10-13_2023_10_13_gas_report_week_41_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-10-13_2023_10_13_gas_report_week_41_gas",
+      "parent_id": "baltic_gas_2023-10-13_2023_10_13_gas_report_week_41_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "With few actual fixtures reported this week, the LNG market has seen further corrections down. At the same time last year we had been publishing at $405,290 for BLNG1g a value $275,782 higher than that with which we published today.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "year",
+        "are",
+        "availability",
+        "last",
+        "blng2g"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 289,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-10-13_2023_10_13_gas_report_week_41_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-10-13_2023_10_13_gas_report_week_41_gas",
+      "parent_id": "baltic_gas_2023-10-13_2023_10_13_gas_report_week_41_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It has again been quite a tumultuous week for the LPG Market. On BLPG1 Ras Tanura-Chiba we saw initially a reasonable gain moving up around $11 by mid-week, but then as has been the fashion of late, it dropped off nearly $13 to close at $117.143 giving a daily TCE earning of $102,640.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "daily",
+        "earning",
+        "tce",
+        "blpg1",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__root",
+  "doc_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 12",
+  "section_path": [
+    "Bulk report - Week 12"
+  ],
+  "section_path_text": "Bulk report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market made some headway this past week despite being buffeted by the global pandemic storm. With the market in a constant state of flux on a seemingly endless news cycle, increasing restrictions and disruptions, the Cape 5TC managed a lift out of its recent range to settle the week at $4,067, a lift of +$1,270 for the week. The Atlantic Basin was the bigger mover this week, albeit with fewer fixtures, as large declines in the bunker prices lifted timecharter rates in relation to the marked voyage rates.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "meg",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 909,
+  "source_path": "reports/baltic/dry/2020/2020-03-20_bulk-report---week-12_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market made some headway this past week despite being buffeted by the global pandemic storm. With the market in a constant state of flux on a seemingly endless news cycle, increasing restrictions and disruptions, the Cape 5TC managed a lift out of its recent range to settle the week at $4,067, a lift of +$1,270 for the week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "crude_oil",
+        "being",
+        "constant"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A thin week of trading in the Panamax market, with distractions elsewhere focussing most people's attention. With mid-week news breaking of port suspensions in a region of Argentina, nervousness beset the East Coast South America market, where lower fixtures than last done drove the index down.",
+      "keywords": [
+        "panamax",
+        "china",
+        "india",
+        "japan",
+        "coal",
+        "delivery",
+        "asia",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A volatile week with the spread of Covid-19. For many countries in Europe and elsewhere, the market remained erratic.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "fixing",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2020-03-20_2020_03_20_bulk_report_week_12_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Baltic Handysize Index (BHSI) had an overall positive week, with support coming from both basins. Rates in the Continent to Mediterranean trade broadly remained firm, with some high-level fixtures reported for trips with short duration.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "ship",
+        "coast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

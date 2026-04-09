@@ -44,6 +44,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 80
 signals: {}
 source: book
 source_path: reports/The Sea and Civilization A Maritime History of the World (Lincoln

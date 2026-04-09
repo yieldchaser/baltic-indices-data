@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-11-24_2023_11_24_gas_report_week_47_gas__root",
+  "doc_id": "baltic_gas_2023-11-24_2023_11_24_gas_report_week_47_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 47",
+  "section_path": [
+    "Gas report - Week 47"
+  ],
+  "section_path_text": "Gas report - Week 47",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThere was minimal movement on the LNG index this week. The 160,000cbm BLNG1g Aus-Japan moved $890 down to close at $145,767, while out in the US BLNG2g Houston-Cont gained $1,415 to finish at $156,849 but fractional adjustments in BLNG3g Houston-Japan of $4 meant we closed at $166,868. National holidays in the US hampered much movement from mid-week when many market players were travelling for Thanksgiving.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "singapore",
+    "japan",
+    "gas",
+    "are",
+    "canal",
+    "out",
+    "owners",
+    "but",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 545,
+  "source_path": "reports/baltic/gas/2023/2023-11-24_gas-report-week-47_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-11-24_2023_11_24_gas_report_week_47_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-11-24_2023_11_24_gas_report_week_47_gas",
+      "parent_id": "baltic_gas_2023-11-24_2023_11_24_gas_report_week_47_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There was minimal movement on the LNG index this week. The 160,000cbm BLNG1g Aus-Japan moved $890 down to close at $145,767, while out in the US BLNG2g Houston-Cont gained $1,415 to finish at $156,849 but fractional adjustments in BLNG3g Houston-Japan of $4 meant we closed at $166,868.",
+      "keywords": [
+        "lng",
+        "brazil",
+        "japan",
+        "gas",
+        "cbm",
+        "our",
+        "aus-japan",
+        "blng2g"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 244,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-11-24_2023_11_24_gas_report_week_47_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-11-24_2023_11_24_gas_report_week_47_gas",
+      "parent_id": "baltic_gas_2023-11-24_2023_11_24_gas_report_week_47_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Very little to report on the routes this week, with the tail end of it having both some of the East and all of US on holiday. BLPG1 Ras Tanura-Chiba fell by $0.214 to close out at $153.143 giving a daily TCE earning of $141,424.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "singapore",
+        "gas",
+        "are",
+        "canal",
+        "owners",
+        "out"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 295,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__root",
+  "doc_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 40",
+  "section_path": [
+    "Bulk report - Week 40"
+  ],
+  "section_path_text": "Bulk report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market endured a challenging week, marked by a steady decline in rates and a sharp deterioration in sentiment midweek. The BCI 5TC fell from just above $29,000 on Monday to $22,595 by week's end, pressured by unconfirmed reports that China's state-run buyer CMRG had suspended BHP iron ore purchases. While BHP shipments to China have continued, the rumours amplified bearish sentiment at a time when Golden Week was already expected to dampen activity.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 864,
+  "source_path": "reports/baltic/dry/2025/2025-10-03_bulk-report-week-40_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market endured a challenging week, marked by a steady decline in rates and a sharp deterioration in sentiment midweek. The BCI 5TC fell from just above $29,000 on Monday to $22,595 by week's end, pressured by unconfirmed reports that China's state-run buyer CMRG had suspended BHP iron ore purchases.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "iron_ore",
+        "above"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A compelling week for the Panamax market, with limited action in the Atlantic the North saw steady if not spectacular demand from the North Americas but this failed to inject any momentum to an ailing market. Asia was blighted by Golden Week and other Asian holidays, and despite some steady demand ex Australia and NoPac all week, this failed to make any profound impact and the market drifted.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "japan",
+        "delivery",
+        "any"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Atlantic started the week on a relatively firm base, demand was seen from both the North and South Atlantic although as the week progressed it became apparent that the positive momentum was positional. From the US Gulf a 61,000-dwt was heard fixed for a trans Atlantic run at $32,500.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "was",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2025-10-03_2025_10_03_bulk_report_week_40_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall, the market remained steady and positive throughout the week. In the Continent and Mediterranean, sentiment stayed firm, supported by consistent demand and resulting in firmer rates.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "dwt",
+        "fixed",
+        "via",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 184,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

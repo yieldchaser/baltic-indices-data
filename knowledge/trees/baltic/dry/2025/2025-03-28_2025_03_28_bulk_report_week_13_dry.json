@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__root",
+  "doc_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 13",
+  "section_path": [
+    "Bulk report - Week 13"
+  ],
+  "section_path_text": "Bulk report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market started the week on a firmer note but gradually softened as activity failed to gain momentum. The BCI 5TC began positively at $22,311 but declined steadily, closing the week at $20,503. In the Pacific, initial optimism driven by fresh cargo and miner activity was quickly overshadowed by a buildup of tonnage, leading to a steady decline in rates.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 912,
+  "source_path": "reports/baltic/dry/2025/2025-03-28_bulk-report-week-13_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market started the week on a firmer note but gradually softened as activity failed to gain momentum. The BCI 5TC began positively at $22,311 but declined steadily, closing the week at $20,503.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "africa"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A solid week for the Panamax market, as both basins saw sizeable gains. In the Atlantic, an active week saw NC South America as the common driver for both fronthaul and trans-Atlantic demand.",
+      "keywords": [
+        "panamax",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "both",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather uneventful week for the sector as the political uncertainty caused a more cautious approach. The Atlantic generally remained steady although there was a more positive feel from the Continent-Mediterranean as brokers spoke of better levels of enquiry.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "was",
+        "delivery",
+        "fixed",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 246,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2025-03-28_2025_03_28_bulk_report_week_13_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the market has shown a mixed performance across the regions. In the Continent and Mediterranean, there's a sense of stability, supported by a healthy cargo book and ongoing orders.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "fixed",
+        "asia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

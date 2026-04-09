@@ -38,6 +38,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2021/2021-07-16_tanker-report-week-28_tanker.html

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__root",
+  "doc_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 2",
+  "section_path": [
+    "Bulk report - Week 2"
+  ],
+  "section_path_text": "Bulk report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nLast week's gains were eroded this week with slow activity from Brazil impacting the market leaving an imbalance and prompting owners/operators to stay in the East. Rates for West Australia/China runs quickly dropped under $6.00 but appeared to steady as the week closed out but today one of majors allegedly fixed two cargoes for 27-29 January at $5.45. There was a touch more timecharter activity with an eco 179,000-tonner 2015-built fixed from Jintang for a couple of laden legs in the East at $10,000 daily.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1842,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week2_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Last week's gains were eroded this week with slow activity from Brazil impacting the market leaving an imbalance and prompting owners/operators to stay in the East. Rates for West Australia/China runs quickly dropped under $6.00 but appeared to steady as the week closed out but today one of majors allegedly fixed two cargoes for 27-29 January at $5.45.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "but",
+        "fixed",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 315,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A solid market in the Atlantic this week and today rates were still holding especially for the trades breaching INL. A 2001-built 76,000-tonner open Cape Passero allegedly fixed two laden legs with Atlantic redelivery at $9,500 daily, but this has yet to be confirmed.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "open",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 364,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall a disappointing week with levels mainly going south. The Atlantic had a busy few days but so far rates had not had the time to push up.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 729,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2017-01-13_2017_bulk_report_week2_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With all the players back at their desk this week it was still a quiet time and all indices were down on a daily basis. Brokers mainly reporting the buildup of spot tonnage forcing further pressure on hires.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 420,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

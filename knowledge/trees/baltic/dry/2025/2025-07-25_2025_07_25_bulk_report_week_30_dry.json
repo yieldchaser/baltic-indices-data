@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__root",
+  "doc_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 30",
+  "section_path": [
+    "Bulk report - Week 30"
+  ],
+  "section_path_text": "Bulk report - Week 30",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize 5TC remained firm from Tuesday and accelerated in the latter half of the week, breaking through the $30,000 threshold and eventually landing at $31,756 on Friday, gaining over $6,000 week-on-week. In the North Atlantic, a long cargo list and tight tonnage supply supported strong transatlantic and fronthaul fixtures. Currently a transatlantic round voyage is paying approximately $42,000 and a fronthaul timecharter trip is commanding above $60,000 per day.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 872,
+  "source_path": "reports/baltic/dry/2025/2025-07-25_bulk-report-week-30_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry",
+      "parent_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize 5TC remained firm from Tuesday and accelerated in the latter half of the week, breaking through the $30,000 threshold and eventually landing at $31,756 on Friday, gaining over $6,000 week-on-week. In the North Atlantic, a long cargo list and tight tonnage supply supported strong transatlantic and fronthaul fixtures.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "friday",
+        "fronthaul",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry",
+      "parent_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It proved to be a negative week for the Panamax market with rates easing across the board. The Atlantic remained predominantly fronthaul led with a steady grain cargo flow ex NC South America, continuing the recent theme of decent mineral demand ex US east coast to India, reports circulated mid-week of an 81,000-dwt delivery Gibraltar at $29,000 for said run.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "india",
+        "japan",
+        "grain",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry",
+      "parent_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Two sides to the coin this week as the Atlantic came to a grinding halt whilst it remained fairly positive from the Asian side. They key areas in the Atlantic lost traction with little fresh demand and rates feel to the low $20,000s for the ultra size for fronthaul direction.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "india",
+        "singapore",
+        "delivery",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry",
+      "parent_id": "baltic_dry_2025-07-25_2025_07_25_bulk_report_week_30_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the Handy market delivered a mixed performance, with modest fluctuations across both basins. The Continent and Mediterranean regions remained subdued, with rates holding largely steady.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "europe",
+        "dwt",
+        "fixed",
+        "was",
+        "fixtures"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 183,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

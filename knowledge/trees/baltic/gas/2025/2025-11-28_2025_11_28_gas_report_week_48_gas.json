@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-11-28_2025_11_28_gas_report_week_48_gas__root",
+  "doc_id": "baltic_gas_2025-11-28_2025_11_28_gas_report_week_48_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 48",
+  "section_path": [
+    "Gas report - Week 48"
+  ],
+  "section_path_text": "Gas report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market further strengthened this week, with two-stroke tonnage remaining extremely tight in the Atlantic, driving higher rates on all major routes. On the BLNG1 Australia-Japan route, 174k cbm vessels rose $10,900 to $90,100/day, while 160k cbm ships gained slightly more, rising from $61,400/day last Friday to $73,300/day today. The BLNG2 US Gulf-Continent route saw another significant jump up, with 174k cbm rates climbing $18,500 to $147,500/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day",
+    "cbm",
+    "day.",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 463,
+  "source_path": "reports/baltic/gas/2025/2025-11-28_gas-report-week-48_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-11-28_2025_11_28_gas_report_week_48_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-11-28_2025_11_28_gas_report_week_48_gas",
+      "parent_id": "baltic_gas_2025-11-28_2025_11_28_gas_report_week_48_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market further strengthened this week, with two-stroke tonnage remaining extremely tight in the Atlantic, driving higher rates on all major routes. On the BLNG1 Australia-Japan route, 174k cbm vessels rose $10,900 to $90,100/day, while 160k cbm ships gained slightly more, rising from $61,400/day last Friday to $73,300/day today.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 266,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-11-28_2025_11_28_gas_report_week_48_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-11-28_2025_11_28_gas_report_week_48_gas",
+      "parent_id": "baltic_gas_2025-11-28_2025_11_28_gas_report_week_48_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market remained broadly steady this week, with activity naturally slowing as Thanksgiving approached. Overall sentiment was balanced and enquiry levels remained steady, so freight levels held within a narrow range.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "day.",
+        "per",
+        "route",
+        "steady",
+        "tonne",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

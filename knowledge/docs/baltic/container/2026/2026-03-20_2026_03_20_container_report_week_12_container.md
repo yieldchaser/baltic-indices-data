@@ -27,6 +27,7 @@ regions:
 - china
 - meg
 - europe
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2026/2026-03-20_container-report-week-12_container.html

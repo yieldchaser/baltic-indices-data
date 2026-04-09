@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__root",
+  "doc_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 42",
+  "section_path": [
+    "Bulk report - Week 42"
+  ],
+  "section_path_text": "Bulk report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA Singapore holiday mid-week disrupted trading for the big ships particularly in the East and although rates dipped, the key West Australia/China run was slipping under the mid US$8.00s for 3-6 November cargoes from Dampier, but October cancelling paid nearer $9.00. Lower drafts in Dampier reduced cargo lift for October, but levels were expected to significantly improve for November. Timecharter rates were still at steady levels, a 2008-built 180,000-tonner fixed from Tianjin mid-week at US$21,750 daily.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1265,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week42_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A Singapore holiday mid-week disrupted trading for the big ships particularly in the East and although rates dipped, the key West Australia/China run was slipping under the mid US$8.00s for 3-6 November cargoes from Dampier, but October cancelling paid nearer $9.00. Lower drafts in Dampier reduced cargo lift for October, but levels were expected to significantly improve for November.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 381,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The BPI 4TC average reached a high for the year so far on 17 October at US$13,265 daily, beating the previous high of 18 April by almost US$300. The market failed to make further gains during the week as the Atlantic began to soften on the early positions, but this was off-set by the Pacific basin rates continuing to nudge higher.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "india",
+        "us_gulf",
+        "coal",
+        "grain",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 310,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "East coast South America and US Gulf remained firm while the Pacific area appeared flat. The Black Sea and Mediterranean area strengthened in the middle of the week, but the market awaited further business to be fixed to set a new benchmark.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 361,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2017-10-20_2017_bulk_report_week42_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A relatively slow week and holidays in the east curbed the trading. However, rates remained firm in general and showed a positive week on various handy routes.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "europe",
+        "japan",
+        "coal",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 199,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

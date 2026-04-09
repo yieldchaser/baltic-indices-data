@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-02-17_2023_02_17_gas_report_week_7_gas__root",
+  "doc_id": "baltic_gas_2023-02-17_2023_02_17_gas_report_week_7_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 7",
+  "section_path": [
+    "Gas report - Week 7"
+  ],
+  "section_path_text": "Gas report - Week 7",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThere have been several fixtures reported in the market. It is our understanding a 160,000 TDFE vessel with 0.15% boil off was fixed away from North Australia - East between $65-70,000 daily RV, which is well in line with published routes this week. BLNG1g has remained for the most part flat during the week with rates rising $6033, to close at $69,597 RV.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "crude_oil",
+    "gas",
+    "away",
+    "tce",
+    "are",
+    "close",
+    "east",
+    "fixing"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 553,
+  "source_path": "reports/baltic/gas/2023/2023-02-17_gas-report-week-7_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-02-17_2023_02_17_gas_report_week_7_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-02-17_2023_02_17_gas_report_week_7_gas",
+      "parent_id": "baltic_gas_2023-02-17_2023_02_17_gas_report_week_7_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There have been several fixtures reported in the market. It is our understanding a 160,000 TDFE vessel with 0.15% boil off was fixed away from North Australia - East between $65-70,000 daily RV, which is well in line with published routes this week.",
+      "keywords": [
+        "lng",
+        "australia",
+        "crude_oil",
+        "gas",
+        "are",
+        "away",
+        "rise",
+        "week."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 333,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-02-17_2023_02_17_gas_report_week_7_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-02-17_2023_02_17_gas_report_week_7_gas",
+      "parent_id": "baltic_gas_2023-02-17_2023_02_17_gas_report_week_7_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It continues to be a relatively flat week with markets moving marginally positive in the East, while the West dropped a few dollars. Despite continued fixing for BLPG1 routes, and fixing moving later into March dates, there is potential for a lull and the spread between East and West could narrow.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "gas",
+        "tce",
+        "blpg2",
+        "blpg3",
+        "east",
+        "equivalent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

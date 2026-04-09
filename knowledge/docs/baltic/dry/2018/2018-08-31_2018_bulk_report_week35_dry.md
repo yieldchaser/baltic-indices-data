@@ -39,6 +39,7 @@ regions:
 - europe
 - india
 - us_gulf
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2018/2018_bulk-report-week35_dry.html

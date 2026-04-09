@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__root",
+  "doc_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 13",
+  "section_path": [
+    "Gas report - Week 13"
+  ],
+  "section_path_text": "Gas report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market continued to cool this week as the short-term spike in sentiment driven by tensions in the Middle East began to weaken. As the week progressed, a growing tonnage list and easing urgency from charterers pushed rates lower across both basins. On the BLNG1 Australia-Japan route, 174k cbm vessels declined $29,900 week-on-week to settle at $104,900/day, reflecting the broader softening in the Pacific market.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "route",
+    "day.",
+    "day"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 410,
+  "source_path": "reports/baltic/gas/2026/2026-03-27_gas-report-week-13_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas",
+      "parent_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market continued to cool this week as the short-term spike in sentiment driven by tensions in the Middle East began to weaken. As the week progressed, a growing tonnage list and easing urgency from charterers pushed rates lower across both basins.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas",
+      "parent_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Disruptions in the Middle East have effectively halted AG trading, with the de facto closure of the Strait of Hormuz creating significant uncertainty across the market. In response, owners have hardened rate expectations, particularly in the USG where fixing activity has accelerated.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "day.",
+        "route",
+        "tce",
+        "earnings",
+        "accelerated.",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry__root",
+  "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 4 2016",
+  "section_path": [
+    "Bulk report - Week 4 2016"
+  ],
+  "section_path_text": "Bulk report - Week 4 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe worst market in more than 30 years and the prospects of any kind of recovery a very distant hope. West Australia/China rates had largely been holding around $3.00 but a 15-20 February cargo was rumoured at $3.15 for a Port Hedland/Qingdao cargo. Timecharter rates were barely at $3,000 daily for 180,000 dwt and a 2000 built 172,000 tonner agreed $1,500 daily for a South Korea to Dalrymple Bay round.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1127,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week42016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry",
+      "parent_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The worst market in more than 30 years and the prospects of any kind of recovery a very distant hope. West Australia/China rates had largely been holding around $3.00 but a 15-20 February cargo was rumoured at $3.15 for a Port Hedland/Qingdao cargo.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "europe",
+        "coal",
+        "daily",
+        "fixed",
+        "timecharter"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 282,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry",
+      "parent_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Owners here were largely at a loss for words to describe the struggle to fix ships. South America was still the most active area of the market and owners were trying to resist further drops in rates.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "daily",
+        "tonner"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 266,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry",
+      "parent_id": "baltic_dry_2016-10-21_2016_bulk_report_week42016_dry__root",
+      "title": "Supramax/Handysize",
+      "section_path": [
+        "Supramax/Handysize"
+      ],
+      "section_path_text": "Supramax/Handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "January draws to a close with rates on nearly all routes still dropping. The BDI stood at 325 on 28 January - a 148 point drop since the first day trading this year.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "pacific",
+        "europe",
+        "india"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 565,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

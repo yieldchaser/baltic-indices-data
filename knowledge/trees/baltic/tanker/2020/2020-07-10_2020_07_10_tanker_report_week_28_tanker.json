@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__root",
+  "doc_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 28",
+  "section_path": [
+    "Tanker report - Week 28"
+  ],
+  "section_path_text": "Tanker report - Week 28",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nRates firmed this week across the board in this sector. In the Middle East Gulf, 280,000mt to USG via the Cape/Cape routing is assessed three points up at WS25, while rates for 270,000mt to China got the ‘Spinal Tap' treatment and sit 11 points higher at WS46.5. A similar tale unfolded in the Atlantic region.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 572,
+  "source_path": "reports/baltic/tanker/2020/2020-07-10_Tanker-report-Week-28_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker",
+      "parent_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates firmed this week across the board in this sector. In the Middle East Gulf, 280,000mt to USG via the Cape/Cape routing is assessed three points up at WS25, while rates for 270,000mt to China got the ‘Spinal Tap' treatment and sit 11 points higher at WS46.5.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "points",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 131,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker",
+      "parent_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 135,000mt Black Sea/Med have gained 2.5 points to WS55 level, while the market for 130,000mt West Africa/UKCont has steadied at WS52. For the 140,000mt Middle East Gulf to Med trip, owners have managed to claw back last week's lost couple of points and again sits at WS21.",
+      "keywords": [
+        "meg",
+        "west_africa",
+        "points",
+        "africa/ukcont",
+        "again",
+        "back",
+        "black",
+        "claw"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 78,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker",
+      "parent_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "In the Mediterranean market, weak sentiment from owners prevails with the market improving a mere 2.5 points to WS60 level for 80,000mt Ceyhan/Med. In Northern Europe rates turned sideways with 80,000mt Hound Point/UKCont stuck at WS71-72 region, and for 100,000mt Baltic/UKCont at WS41-42 level.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "points",
+        "are",
+        "baltic/ukcont",
+        "carib/usgulf",
+        "ceyhan/med.",
+        "hound"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 133,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker",
+      "parent_id": "baltic_tanker_2020-07-10_2020_07_10_tanker_report_week_28_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the Middle East Gulf, rates for 75,000mt to Japan have been under constant pressure with the market easing just over five points to WS65. It was a similar story in the 55,000mt trade with the market drifting down from WS70 at the start of the week to be assessed now at barely WS61.5.",
+      "keywords": [
+        "meg",
+        "us_gulf",
+        "japan",
+        "points",
+        "further",
+        "was",
+        "gulf",
+        "just"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

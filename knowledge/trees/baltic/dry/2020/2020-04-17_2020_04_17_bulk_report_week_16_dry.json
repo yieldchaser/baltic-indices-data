@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__root",
+  "doc_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 16",
+  "section_path": [
+    "Bulk report - Week 16"
+  ],
+  "section_path_text": "Bulk report - Week 16",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week was the strongest period seen for the Capesize market in several months. All routes globally succumbed to improved sentiment, albeit the Pacific Basin lagged somewhat, with the West Australia to China C5's usual flow proving resistant. Ending the week on a high, the C5 route added +0.232 to settle at $4.918.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 802,
+  "source_path": "reports/baltic/dry/2020/2020-04-17_bulk-report---week-16_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week was the strongest period seen for the Capesize market in several months. All routes globally succumbed to improved sentiment, albeit the Pacific Basin lagged somewhat, with the West Australia to China C5's usual flow proving resistant.",
+      "keywords": [
+        "capesize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "basin",
+        "was",
+        "c10"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Easter holidays impacted the market last week, with only minor movements in the Baltic Panamax Index (BPI). Baltic mineral trades proved active, so too were South American fronthaul grains, particularly from North Coast South America (NCSA).",
+      "keywords": [
+        "panamax",
+        "pacific",
+        "singapore",
+        "japan",
+        "grain",
+        "dwt",
+        "north",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the ongoing Covid-19 situation the market remained bleak, with a lack of fresh enquiry and tonnage readily available in most areas. Period activity was sparse, but a 60,000dwt ship, open Campha, was linked to about six to nine months trading at $8,500.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2020-04-17_2020_04_17_bulk_report_week_16_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A short week with the overall Baltic Handysize Index (BHSI) falling below 300 after the Easter weekend. By the end of the week, the BHSI had declined to the same level last seen in April 2016.",
+      "keywords": [
+        "handysize",
+        "bhsi",
+        "last",
+        "level",
+        "after",
+        "any",
+        "april",
+        "areas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 127,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-10-31_2025_10_31_gas_report_week_44_gas__root",
+  "doc_id": "baltic_gas_2025-10-31_2025_10_31_gas_report_week_44_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 44",
+  "section_path": [
+    "Gas report - Week 44"
+  ],
+  "section_path_text": "Gas report - Week 44",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market saw a notable surge this week, with rates climbing sharply across all major routes amid tightening vessel availability and renewed spot interest heading into the winter period. On the BLNG1-174g Australia-Japan route, rates jumped $10,800 to $42,200/day, buoyed by increased Pacific demand and limited prompt tonnage. The BLNG2-174g US Gulf-Continent route surged $20,400 to $60,600/day, while the BLNG3-174g US Gulf-Japan route climbed $20,100 to $66,500/day, with both Atlantic routes supported by strong US export activity and firmer chartering sentiment.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 468,
+  "source_path": "reports/baltic/gas/2025/2025-10-31_gas-report-week-44_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-10-31_2025_10_31_gas_report_week_44_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-10-31_2025_10_31_gas_report_week_44_gas",
+      "parent_id": "baltic_gas_2025-10-31_2025_10_31_gas_report_week_44_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market saw a notable surge this week, with rates climbing sharply across all major routes amid tightening vessel availability and renewed spot interest heading into the winter period. On the BLNG1-174g Australia-Japan route, rates jumped $10,800 to $42,200/day, buoyed by increased Pacific demand and limited prompt tonnage.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 287,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-10-31_2025_10_31_gas_report_week_44_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-10-31_2025_10_31_gas_report_week_44_gas",
+      "parent_id": "baltic_gas_2025-10-31_2025_10_31_gas_report_week_44_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market strengthened this week, with rates firming across all major routes as increased chartering activity and the US and China trade tensions eased. On the BLPG1 Ras Tanura-Chiba route, rates rose $5.75 to $57.50 per metric tonne, with TCE earnings climbing $6,506 to $43,211/day.",
+      "keywords": [
+        "lpg",
+        "china",
+        "gas",
+        "metric",
+        "per",
+        "route",
+        "tonne",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 175,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

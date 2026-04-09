@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-04-28_2023_04_28_gas_report_week_17_gas__root",
+  "doc_id": "baltic_gas_2023-04-28_2023_04_28_gas_report_week_17_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 17",
+  "section_path": [
+    "Gas report - Week 17"
+  ],
+  "section_path_text": "Gas report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThis month for LNG has been one of keeping the status quo. Rates have remained pretty flat throughout the month with this last week seeing only around $2000 lost on BLNG1g Aus-Jap (out of a total $10,498 lost throughout April). Fixing has continued, although with most of the positions being from sublet tonnage there has been fewer ships available as charterers and traders hold on to cover their own contracts.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "japan",
+    "gas",
+    "month",
+    "rise",
+    "closed",
+    "fall",
+    "fixing",
+    "little",
+    "out",
+    "start"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 530,
+  "source_path": "reports/baltic/gas/2023/2023-04-28_gas-report-week-17_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-04-28_2023_04_28_gas_report_week_17_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-04-28_2023_04_28_gas_report_week_17_gas",
+      "parent_id": "baltic_gas_2023-04-28_2023_04_28_gas_report_week_17_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This month for LNG has been one of keeping the status quo. Rates have remained pretty flat throughout the month with this last week seeing only around $2000 lost on BLNG1g Aus-Jap (out of a total $10,498 lost throughout April).",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "month",
+        "total",
+        "although",
+        "lost",
+        "mainly"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-04-28_2023_04_28_gas_report_week_17_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-04-28_2023_04_28_gas_report_week_17_gas",
+      "parent_id": "baltic_gas_2023-04-28_2023_04_28_gas_report_week_17_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The BLPG routes saw little movement across the week once again. Fixing has continued with reported cargoes working out towards to the end of May.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "little",
+        "closed",
+        "fall",
+        "fixing",
+        "out",
+        "rise"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 295,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

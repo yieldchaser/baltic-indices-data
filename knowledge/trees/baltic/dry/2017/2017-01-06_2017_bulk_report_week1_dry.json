@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__root",
+  "doc_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 1",
+  "section_path": [
+    "Bulk report - Week 1"
+  ],
+  "section_path_text": "Bulk report - Week 1",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA stronger than expected start to the year and so much healthier than most would have expected a few weeks ago, but rates started to slip in the East as the week closed out while the Atlantic proved positional. Here some operators seemingly had little faith in the February position in the Atlantic with rates down, but the area generally remained tight for tonnage. For instance, a February cargo from Puerto Bolivar to Rotterdam was fixed at $7.65 and then $7.45 this week and an end January cargo fixed at $8.50.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1383,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week1_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry",
+      "parent_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A stronger than expected start to the year and so much healthier than most would have expected a few weeks ago, but rates started to slip in the East as the week closed out while the Atlantic proved positional. Here some operators seemingly had little faith in the February position in the Atlantic with rates down, but the area generally remained tight for tonnage.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "cargo",
+        "january",
+        "but",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 278,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry",
+      "parent_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week saw an upturn in fortunes for Atlantic traders with rates in all areas firmer. The US Gulf was tighter for tonnage and here a grain house took a prompt vessel from the US Gulf to the East via Panama at $14,250 daily plus a $425,000 bonus.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "us_gulf",
+        "japan",
+        "grain",
+        "daily",
+        "east",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 361,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry",
+      "parent_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The year has started on a downward trend although at the last minute today a few brokers looking long and hard at the US Gulf suggested the market there could be finely balanced. All indices dropped on a daily basis except for the US Gulf front haul which gained a small gain of 66 points today.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 416,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry",
+      "parent_id": "baltic_dry_2017-01-06_2017_bulk_report_week1_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A daily decrease on all Handy indices was expected and it happened with currently little respite. Tonnage continued to build up and a lack of requirements continued to force levels down.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "europe",
+        "india",
+        "delivery",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 314,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

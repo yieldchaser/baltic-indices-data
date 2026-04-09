@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__root",
+  "doc_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 48",
+  "section_path": [
+    "Bulk report - Week 48"
+  ],
+  "section_path_text": "Bulk report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a turbulent week, marked by a mix of sporadic positivity and mounting downward pressure. The BCI 5TC started the week at $21,673, gained ground midweek, peaking at $23,049 on Tuesday, but plunged to $17,686 by Friday, losing $3,987 over the week. In the Pacific, initial optimism driven by miner activity was dampened by persistent weather disruptions and an expanding tonnage list.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 966,
+  "source_path": "reports/baltic/dry/2024/2024-11-29_bulk-report-week-48_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a turbulent week, marked by a mix of sporadic positivity and mounting downward pressure. The BCI 5TC started the week at $21,673, gained ground midweek, peaking at $23,049 on Tuesday, but plunged to $17,686 by Friday, losing $3,987 over the week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "end"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The decline in the Panamax market showed no signs of abating this week with further substantial corrections in both basins. In the Atlantic, a distinct lack of front haul demand as well as a steady build-up of tonnage count ultimately weighed heavy on the deals reported this week.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "india",
+        "coal",
+        "dwt",
+        "agreeing",
+        "aps"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another rather unsettled week for the sector. The Atlantic lacked fresh impetus in most areas, not helped by the holiday in the United States.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 273,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2024-11-29_2024_11_29_bulk_report_week_48_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It's been a challenging week for the sector, with rates in both the Atlantic and Pacific regions continuing to face downward pressure. Across the Continent and Mediterranean, the market showed a lack of fresh impetus with overall sentiment remaining positional.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 272,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

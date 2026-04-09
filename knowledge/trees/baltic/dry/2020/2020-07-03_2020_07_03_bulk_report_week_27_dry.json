@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__root",
+  "doc_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 27",
+  "section_path": [
+    "Bulk report - Week 27"
+  ],
+  "section_path_text": "Bulk report - Week 27",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market continues to go from strength to strength, as rates reach highs not seen since September last year. The rally is predominately off the back of the Atlantic Basin crying out for more tonnage. Atlantic charterers from Eastern Canada and Norway are seen to be paying large voyage rates to deliver their iron ore product to China.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 948,
+  "source_path": "reports/baltic/dry/2020/2020-07-03_Bulk-report-Week-27_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market continues to go from strength to strength, as rates reach highs not seen since September last year. The rally is predominately off the back of the Atlantic Basin crying out for more tonnage.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "basin"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market initially appeared sluggish with rates in Asia slowly falling throughout the week. In contrast, the Atlantic - and in particular the north - held firm for the most part.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "atlantic",
+        "europe",
+        "grain",
+        "appeared",
+        "asia",
+        "week."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The overall market was split between the basins with the Atlantic gaining momentum, whilst Asia and the Indian Ocean dampened. Little in the way of period activity surfaced - but a 56,000-dwt open Fujairah fixed four to six months, trading in the mid $12,000s.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "coal",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2020-07-03_2020_07_03_bulk_report_week_27_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The BHSI climbed above 400 points this week, which was last seen during end March this year. East coast South America was the brightest spark.",
+      "keywords": [
+        "handysize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "japan",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

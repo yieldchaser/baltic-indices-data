@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__root",
+  "doc_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 49",
+  "section_path": [
+    "Bulk report - Week 49"
+  ],
+  "section_path_text": "Bulk report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe cape market continued to firm with the 5TC average pushing to further record levels, on Friday it was marked at US$29,693, further gains are expected. There has been some encouraging period activity with the Pacific Century 180,467-dwt 2011-built fixing CJK mid December basis 11-13 months at US$17,750 with Bilgent. Bad weather persisted in Asia with CJK being closed again and this affected vessel schedules.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1124,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week49_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry",
+      "parent_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The cape market continued to firm with the 5TC average pushing to further record levels, on Friday it was marked at US$29,693, further gains are expected. There has been some encouraging period activity with the Pacific Century 180,467-dwt 2011-built fixing CJK mid December basis 11-13 months at US$17,750 with Bilgent.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "built",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 389,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry",
+      "parent_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Sentiment seemed to have turned at the beginning of last week with most assuming rates would soften, but as the weekend approached there were one or two areas seeing a mini revival. The North Continent saw some fresh mineral demand, rates are very solid albeit on shorter duration trades from the Baltic and USEC.",
+      "keywords": [
+        "australia",
+        "pacific",
+        "europe",
+        "india",
+        "coal",
+        "grain",
+        "demand",
+        "saw"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 182,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry",
+      "parent_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The supramax index remained flat, Atlantic rates from certain areas made ground but routes in the Asian market saw negative movements. Period activity remained quiet, but a 63,000-dwt 2017-built was reported fixed delivery Houston for minimum four to six months trading redelivery Atlantic at US$15,750.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 256,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry",
+      "parent_id": "baltic_dry_2017-12-08_2017_bulk_report_week49_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "There were no significant changes on the handy index. The BHSI moved up point by point with gains in the Atlantic basin but losses in the Pacific.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 282,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

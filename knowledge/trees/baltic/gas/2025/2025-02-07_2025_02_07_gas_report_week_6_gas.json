@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-02-07_2025_02_07_gas_report_week_6_gas__root",
+  "doc_id": "baltic_gas_2025-02-07_2025_02_07_gas_report_week_6_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 6",
+  "section_path": [
+    "Gas report - Week 6"
+  ],
+  "section_path_text": "Gas report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market has faced yet another challenging week, with a general downward trend observed across most routes and vessel types. The BLNG1 Gladstone-Tokyo route for 160k cbm TFDE vessels experienced the only rate increase, rising by $200 to settle at $5,400 per day. In contrast, 174k cbm 2-Stroke vessels saw a decline of $1,343, closing at $10,350 per day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "grain",
+    "gas",
+    "closing",
+    "cbm",
+    "saw",
+    "earnings",
+    "further",
+    "per",
+    "stroke"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 588,
+  "source_path": "reports/baltic/gas/2025/2025-02-07_gas-report-week-6_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-02-07_2025_02_07_gas_report_week_6_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-02-07_2025_02_07_gas_report_week_6_gas",
+      "parent_id": "baltic_gas_2025-02-07_2025_02_07_gas_report_week_6_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market has faced yet another challenging week, with a general downward trend observed across most routes and vessel types. The BLNG1 Gladstone-Tokyo route for 160k cbm TFDE vessels experienced the only rate increase, rising by $200 to settle at $5,400 per day.",
+      "keywords": [
+        "lng",
+        "grain",
+        "gas",
+        "cbm",
+        "closing",
+        "per",
+        "saw",
+        "stroke"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 362,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-02-07_2025_02_07_gas_report_week_6_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-02-07_2025_02_07_gas_report_week_6_gas",
+      "parent_id": "baltic_gas_2025-02-07_2025_02_07_gas_report_week_6_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With the Far East market emerging from the Lunar New Year, there was hope for a potential uptick in the LPG market. Unfortunately, this was not the case, as downward pressure on rates and TCE earnings were observed across all key routes.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "earnings",
+        "tce",
+        "closing",
+        "drop",
+        "blpg2"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

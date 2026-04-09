@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__root",
+  "doc_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 32",
+  "section_path": [
+    "Bulk report - Week 32"
+  ],
+  "section_path_text": "Bulk report - Week 32",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe capesize market showed a steady positive trend throughout most of the week, with the BCI 5TC starting at $19,499 on Monday and peaking at $20,509 on Wednesday. Each day saw slight gains, driven by positive sentiment and increasing activity in the Pacific where the major miners became more active midweek, leading to a surge in fixtures and an uplift in sentiment, resulting in the C5 index peaking at $9.885. The Atlantic market, although quieter, maintained a positive tone with steady improvements in the C3 index, which started the week at $23.67 and by Friday settled at $24.695, which was driven by demand from South Brazil and West Africa to China.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 889,
+  "source_path": "reports/baltic/dry/2024/2024-08-09_bulk-report-week-32_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The capesize market showed a steady positive trend throughout most of the week, with the BCI 5TC starting at $19,499 on Monday and peaking at $20,509 on Wednesday. Each day saw slight gains, driven by positive sentiment and increasing activity in the Pacific where the major miners became more active midweek, leading to a surge in fixtures and an uplift in sentiment, resulting in the C5 index peaking at $9.885.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "singapore",
+        "positive"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market had a negative return this week. With limited activity emerging, the North Atlantic drifted further as the week progressed, with a few signs of better fronthaul rates midweek failing to materialise into much.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "delivery",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "As the summer holiday season continued, it was a very lacklustre week. The Atlantic generally saw further weakening, although as the week came to a close some felt there might me a slight upturn from the US Gulf.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2024-08-09_2024_08_09_bulk_report_week_32_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Like its larger sisters, brokers said that, with many players away on vacation, it was a rather dull week. The Continent-Mediterranean lacked much fresh impetus and brokers said that rates had eased, with a 34,000-dwt fixing delivery Greece for a trip to the Continent in the low $8,000s.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "steel",
+        "dwt",
+        "continent",
+        "delivery",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

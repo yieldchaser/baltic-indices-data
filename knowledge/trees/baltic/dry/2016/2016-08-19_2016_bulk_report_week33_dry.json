@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__root",
+  "doc_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 33",
+  "section_path": [
+    "Bulk Report - Week 33"
+  ],
+  "section_path_text": "Bulk Report - Week 33",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nDespite several ships fixed on the key West Australia/China run at the beginning of the week and rates hitting $4.80 for early September 170,000-tonne 10% cargoes this proved short-lived with rates stating to fall mid-week and dropping to $4.30 as the week closed out. There were claims that the equivalent of $4.70 or thereabouts was done timecharter. There was talk that a 2001-built 169,000-tonner open Huanghua went at a rumoured $5,000 daily for a round voyage.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1697,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week33_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry",
+      "parent_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Despite several ships fixed on the key West Australia/China run at the beginning of the week and rates hitting $4.80 for early September 170,000-tonne 10% cargoes this proved short-lived with rates stating to fall mid-week and dropping to $4.30 as the week closed out. There were claims that the equivalent of $4.70 or thereabouts was done timecharter.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "coal",
+        "tonne",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 311,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry",
+      "parent_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With widespread public holidays at the beginning of the week, the market was not as active as previous weeks. The Atlantic experienced mixed fortunes during the week.",
+      "keywords": [
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 374,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry",
+      "parent_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Asian market is the place to be with many ships being reported fixed and with rates moving up. Owners are not interested at the moment to take low levels to position into the Atlantic.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "singapore",
+        "grain",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 737,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry",
+      "parent_id": "baltic_dry_2016-08-19_2016_bulk_report_week33_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall it was a good week for Asian and Continent routes, but US Gulf and east coast South America were not doing as well. Although there were not many reports brokers feel Asia is likely to improve over the rest of August.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 260,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

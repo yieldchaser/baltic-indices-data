@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__root",
+  "doc_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 41 2015",
+  "section_path": [
+    "Bulk Report - Week 41 2015"
+  ],
+  "section_path_text": "Bulk Report - Week 41 2015",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Chinese holiday, combined with little coal demand, saw rates fall over the week with the short term outlook, for now, bleak. In the East the West Australia/China rate dropped to $5.40 and timecharter rates at around $11,000 daily for a 180,000-tonner, although Thursday there was talk a 171,000-tonner open Lianyungang fixed a round voyage at something over $11,000 daily, but this business failed. Saldanha Bay/Qingdao rates dropped sharply with talk of a 16-20 October cargo booked at $9.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1318,
+  "source_path": "reports/baltic/dry/2015/2015_bulk-report-week412015_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry",
+      "parent_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Chinese holiday, combined with little coal demand, saw rates fall over the week with the short term outlook, for now, bleak. In the East the West Australia/China rate dropped to $5.40 and timecharter rates at around $11,000 daily for a 180,000-tonner, although Thursday there was talk a 171,000-tonner open Lianyungang fixed a round voyage at something over $11,000 daily, but this business failed.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "coal",
+        "tonner",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry",
+      "parent_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Panama congestion was cited as one of the reasons for a rise in fronthaul rates for October cargoes from the US Gulf with talk of eco-kamsarmaxes fixing now in the mid $13,000 daily range and around $350,000 bonus. There was some talk a higher number was concluded.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "us_gulf",
+        "daily",
+        "was",
+        "nopac",
+        "tonner",
+        "bonus"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 256,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__s03_supramax",
+      "doc_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry",
+      "parent_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A lackluster week with a fair amount of reported fixtures but rates still on a downward spiral for now. Perhaps with the slight positional increase and tempered optimism on the panamax market rates might start to creep up for the supramax sizes.",
+      "keywords": [
+        "panamax",
+        "supramax",
+        "china",
+        "west_africa",
+        "europe",
+        "india",
+        "singapore",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 492,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__s04_handysize",
+      "doc_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry",
+      "parent_id": "baltic_dry_2015-10-09_2015_bulk_report_week412015_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the Atlantic the larger size seemed to be holding up better than the smaller end of the scale where spot tonnage in the Americas having to clock up waiting time. Again the larger size prevailed over lesser units, the Orient Accord 2010-built 33,475-dwt fixed basis delivery Savannah 12-15 October redelivery ARA-Ghent range at $7,600.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "atlantic",
+        "europe",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 324,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

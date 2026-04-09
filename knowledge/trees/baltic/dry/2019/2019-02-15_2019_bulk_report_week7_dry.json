@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__root",
+  "doc_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 7",
+  "section_path": [
+    "Bulk report - Week 7"
+  ],
+  "section_path_text": "Bulk report - Week 7",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nDespite the focus on Vale and reduced Brazil exports, there were signs of further demand this week that checked further falls. On the downside, higher bunker prices negated any real increase in owners' returns. Other charterers took up some of the slack from Vale, providing several February cargoes from Brazil to China, with rates hovering in the low to mid $13.00s equivalent to loading from Tubarao.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 932,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week7_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry",
+      "parent_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Despite the focus on Vale and reduced Brazil exports, there were signs of further demand this week that checked further falls. On the downside, higher bunker prices negated any real increase in owners' returns.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "further",
+        "but",
+        "cargoes",
+        "vale",
+        "any"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry",
+      "parent_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates improved in the Pacific for certain routes due to increased mineral volume combined with owners focusing on particular trades. A Kamsarmax fixed in excess or $8,000 for a North Pacific round, up by $1,000 daily from the previous week.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "pacific",
+        "india",
+        "fixing",
+        "north",
+        "had",
+        "owners"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry",
+      "parent_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the return to work for many, the Baltic Supramax Index (BSI) moved to a positive mode, with gains made on many routes. Period activity resurfaced, with a 58,000dwt vessel open Manila fixed for five to eight months trading in the $7,000s for the first 30 days and the balance $10,500.",
+      "keywords": [
+        "supramax",
+        "china",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry",
+      "parent_id": "baltic_dry_2019-02-15_2019_bulk_report_week7_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of continuous improvement saw the Baltic Exchange Handysize Index (BHSI) climb over 300 points. Most of the routes remained in positive territory this week for both reporting sizes, with the US Gulf showing the strongest uptrend.",
+      "keywords": [
+        "capesize",
+        "handysize",
+        "china",
+        "europe",
+        "us_gulf",
+        "grain",
+        "was",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

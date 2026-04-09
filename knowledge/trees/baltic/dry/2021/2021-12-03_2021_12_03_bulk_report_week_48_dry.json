@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__root",
+  "doc_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 48",
+  "section_path": [
+    "Bulk report - Week 48"
+  ],
+  "section_path_text": "Bulk report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nBoth the overall index and timecharter average (5TC) gradually recovered back to the level last seen at the end of October, with BCI and 5TC posting at 4594 and $38,096 by the end of the week. Tonnage appeared tight in both basins. In the Atlantic, gossip was limited - especially for the transatlantic trade - but some strong fronthaul fixtures were reported in the second half of the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 851,
+  "source_path": "reports/baltic/dry/2021/2021-12-03_bulk-report-week-48_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Both the overall index and timecharter average (5TC) gradually recovered back to the level last seen at the end of October, with BCI and 5TC posting at 4594 and $38,096 by the end of the week. Tonnage appeared tight in both basins.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "was",
+        "week.",
+        "both",
+        "end"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market witnessed further rises this week with the Atlantic charting significant gains straight from the get-go. This eventually fed into the Asia market midweek as fresh demand here as well only added to improvement in rates across the board.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "south",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A stronger week across the board with increased activity from some key areas, such as the US Gulf and South East Asia. This led to a tightening of prompt tonnage availability.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2021-12-03_2021_12_03_bulk_report_week_48_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A story of two halves with many saying it was a slow start. As the week progressed demand in Asia increased and sentiment was healthier from the Continent.",
+      "keywords": [
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

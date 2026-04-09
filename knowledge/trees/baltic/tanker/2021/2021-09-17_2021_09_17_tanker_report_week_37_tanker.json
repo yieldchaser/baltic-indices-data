@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__root",
+  "doc_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 37",
+  "section_path": [
+    "Tanker report - Week 37"
+  ],
+  "section_path_text": "Tanker report - Week 37",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nAnother busy week in the Middle East with COA and spot fixing activity, but also in the Atlantic region - although rates remained flat. In the Middle East Gulf 280,000mt to US Gulf (via the Cape/Cape routing) remains steady around the WS18.5 mark while 270,000mt to China maintained WS34.6 (which shows a trip TCE of about minus $1.7k per day). In the Atlantic, rates for 260,000mt West Africa to China were kept at WS35/36 level ($360 per day TCE roundtrip) and 270,000mt US Gulf to China is still at $4.13m (a TCE of $1.7k per day roundtrip).",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1018,
+  "source_path": "reports/baltic/tanker/2021/2021-09-17_tanker-report-week-37_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker",
+      "parent_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Another busy week in the Middle East with COA and spot fixing activity, but also in the Atlantic region - although rates remained flat. In the Middle East Gulf 280,000mt to US Gulf (via the Cape/Cape routing) remains steady around the WS18.5 mark while 270,000mt to China maintained WS34.6 (which shows a trip TCE of about minus $1.7k per day).",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "day",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 153,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker",
+      "parent_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "In West Africa the rate for 130,000mt Nigeria/UK Continent is stuck at the WS51.5/52 mark (a round trip TCE of minus $950 per day) while similarly the rate for 135,000mt Black Sea/Med is still at WS60 (a TCE round trip of minus $6.8k per day). The Middle East market had a busier week of fixing, with reports of ENI fixing a Zodiac Maritime vessel at WS21.5 to Italy.",
+      "keywords": [
+        "suezmax",
+        "west_africa",
+        "europe",
+        "day",
+        "fixing",
+        "minus",
+        "per",
+        "round"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 155,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker",
+      "parent_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "In the Mediterranean, 80,000mt Ceyhan/Lavera gained a point to WS87.5 ($1.4k per day TCE roundtrip). In Northern Europe, 80,000mt Cross-North Sea similarly rose a point to WS92 (a round trip TCE of minus $5.6k per day).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "day",
+        "per",
+        "tce",
+        "trip",
+        "round"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker",
+      "parent_id": "baltic_tanker_2021-09-17_2021_09_17_tanker_report_week_37_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Middle East Gulf has seen relatively minor fluctuations up and down this week depending on vessel size. The LR2s to Japan TC1 has dropped 0.06 points to WS107.86, a round-trip TCE of $9,905/day.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 443,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

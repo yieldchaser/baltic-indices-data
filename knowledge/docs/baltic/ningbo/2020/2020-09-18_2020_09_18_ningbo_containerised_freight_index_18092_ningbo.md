@@ -21,6 +21,7 @@ keywords:
 market_tone: neutral
 regions:
 - china
+section_count: 2
 signals: {}
 source: baltic
 source_path: reports/baltic/ningbo/2020/2020-09-18_Ningbo-Containerised-Freight-Index-18092_ningbo.html

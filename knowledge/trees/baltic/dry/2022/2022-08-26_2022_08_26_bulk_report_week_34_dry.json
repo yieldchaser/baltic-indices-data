@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__root",
+  "doc_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 34",
+  "section_path": [
+    "Bulk report - Week 34"
+  ],
+  "section_path_text": "Bulk report - Week 34",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market is going through a rough period as trading pushed valuations into untenable sub-operating expense territory over the week. The Capesize 5TC dropped -$2,854 week on week to finish at $3,413. With rates so low and the outlook remaining poor, there is some speculation as to how far the sector will, and can, go.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "singapore",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 878,
+  "source_path": "reports/baltic/dry/2022/2022-08-26_bulk-report-week-34_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry",
+      "parent_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market is going through a rough period as trading pushed valuations into untenable sub-operating expense territory over the week. The Capesize 5TC dropped -$2,854 week on week to finish at $3,413.",
+      "keywords": [
+        "capesize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "aggressive",
+        "availability."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 168,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry",
+      "parent_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The North Atlantic made a large correction over the week, with limited enquiry said to be an ongoing issue. A 82,000-dwt was fixed from Las Palmas via North Coast South America to Singapore-Japan at around $19,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "singapore",
+        "japan",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 239,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry",
+      "parent_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was mixed fortunes for the sector over the week. The general tone from the Atlantic remained slow, but the Asian arena did make gains in the first part of the week.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "japan",
+        "dwt",
+        "redelivery",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 246,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry",
+      "parent_id": "baltic_dry_2022-08-26_2022_08_26_bulk_report_week_34_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Negative sentiment dominated the sector as limited activity appeared across all regions. East Coast South America has seen rates drop further as fresh almost stalled for the remainder of August and early September.",
+      "keywords": [
+        "china",
+        "europe",
+        "steel",
+        "dwt",
+        "fixed",
+        "was",
+        "open",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

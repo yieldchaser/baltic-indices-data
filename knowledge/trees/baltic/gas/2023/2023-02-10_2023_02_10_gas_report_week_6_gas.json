@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-02-10_2023_02_10_gas_report_week_6_gas__root",
+  "doc_id": "baltic_gas_2023-02-10_2023_02_10_gas_report_week_6_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 6",
+  "section_path": [
+    "Gas report - Week 6"
+  ],
+  "section_path_text": "Gas report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThere has been movement this week on spot LNG with some fixtures reported. However, these aren't quite in line with the Baltic Routes as they have tended to be shorter intra-basin fixtures. One reportedly crossed the Mediterranean from Egypt, at quite low numbers, earlier in the week.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "europe",
+    "japan",
+    "crude_oil",
+    "gas",
+    "but",
+    "could",
+    "quite",
+    "are",
+    "blpg3"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 517,
+  "source_path": "reports/baltic/gas/2023/2023-02-10_gas-report-week-6_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-02-10_2023_02_10_gas_report_week_6_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-02-10_2023_02_10_gas_report_week_6_gas",
+      "parent_id": "baltic_gas_2023-02-10_2023_02_10_gas_report_week_6_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There has been movement this week on spot LNG with some fixtures reported. However, these aren't quite in line with the Baltic Routes as they have tended to be shorter intra-basin fixtures.",
+      "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "japan",
+        "crude_oil",
+        "gas",
+        "are",
+        "could"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 308,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-02-10_2023_02_10_gas_report_week_6_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-02-10_2023_02_10_gas_report_week_6_gas",
+      "parent_id": "baltic_gas_2023-02-10_2023_02_10_gas_report_week_6_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A rather flat week for BLPG1 with rates keeping quite steady. Only $1.143 was lost over the week to close at $90.286.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "blpg3",
+        "but",
+        "blpg2",
+        "dates",
+        "fixed",
+        "hasn"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

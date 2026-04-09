@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_dry_2016-06-10_2016_bulk_report_week232016_dry__root",
+  "doc_id": "baltic_dry_2016-06-10_2016_bulk_report_week232016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 23 2016",
+  "section_path": [
+    "Bulk report - Week 23 2016"
+  ],
+  "section_path_text": "Bulk report - Week 23 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe week began with west Australia/China hovering around the $4.25 level with not a lot of movement until mid-week when the majors stepped in to take a number of vessels and push the rates to around $5.00, with some suggesting over $5.00 has been paid for 23/25 June dates. Brazil/China ended the week around the $9.20/9.25 level which is not far off where it began the week. A Pepel cargo fixed earlier in the week at this level.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1311,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week232016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-06-10_2016_bulk_report_week232016_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-06-10_2016_bulk_report_week232016_dry",
+      "parent_id": "baltic_dry_2016-06-10_2016_bulk_report_week232016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The week began with west Australia/China hovering around the $4.25 level with not a lot of movement until mid-week when the majors stepped in to take a number of vessels and push the rates to around $5.00, with some suggesting over $5.00 has been paid for 23/25 June dates. Brazil/China ended the week around the $9.20/9.25 level which is not far off where it began the week.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "europe",
+        "around",
+        "fixed",
+        "began",
+        "far"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 252,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-06-10_2016_bulk_report_week232016_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-06-10_2016_bulk_report_week232016_dry",
+      "parent_id": "baltic_dry_2016-06-10_2016_bulk_report_week232016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With Posidonia and festivities in Asia, this week the market was void of any great movements. Having said that the week seems to be coming to a close with a bit of pressure in the North Atlantic and increased enquiry.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 1052,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

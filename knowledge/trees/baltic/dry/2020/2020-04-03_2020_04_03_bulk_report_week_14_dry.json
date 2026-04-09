@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__root",
+  "doc_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 14",
+  "section_path": [
+    "Bulk report - Week 14"
+  ],
+  "section_path_text": "Bulk report - Week 14",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market this past week looks to have come off life support and found some improved sentiment. The week began rather ordinary before surging on Tuesday prior to the index publishing. Improved South African loading options and activity out of Brazil were cited as the cause.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 931,
+  "source_path": "reports/baltic/dry/2020/2020-04-03_bulk-report---week-14_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market this past week looks to have come off life support and found some improved sentiment. The week began rather ordinary before surging on Tuesday prior to the index publishing.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "improved"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market roused in the early part of the week, supported in tandem with FFA gains witnessed. The Pacific has been largely driven by strong demand out of the North Pacific.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "pacific",
+        "demand",
+        "north",
+        "was",
+        "able"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The influence of the Covid-19 effect was dramatic over the last week, with the Baltic Supramax Index (BSI) losing over 100 points. Period activity remained quiet, but a 62,000dwt vessel, open Taiwan, was rumoured fixed for four to six months in the mid $9,000s.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 270,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2020-04-03_2020_04_03_bulk_report_week_14_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The slow movement and weakening sentiment from last week further continued, especially in the Atlantic. Pressure on rates remained on more spot tonnage being built up, whilst the overall activity was still minimal in East Coast South America and the US Gulf.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "grain",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

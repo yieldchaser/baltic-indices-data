@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-12-20_2024_12_20_gas_report_week_51_gas__root",
+  "doc_id": "baltic_gas_2024-12-20_2024_12_20_gas_report_week_51_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 51",
+  "section_path": [
+    "Gas report - Week 51"
+  ],
+  "section_path_text": "Gas report - Week 51",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nAs the year-end festivities are in full swing, the LNG market has had a challenging year, with 2024 proving tougher than many anticipated. While macroeconomic events have influenced certain market dynamics, other factors contributing to the downturn have been less clear. This week has seen minimal movement across most routes.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "europe",
+    "japan",
+    "gas",
+    "cbm",
+    "per",
+    "route",
+    "day.",
+    "fell"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 643,
+  "source_path": "reports/baltic/gas/2024/2024-12-20_gas-report-week-51_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-12-20_2024_12_20_gas_report_week_51_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-12-20_2024_12_20_gas_report_week_51_gas",
+      "parent_id": "baltic_gas_2024-12-20_2024_12_20_gas_report_week_51_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "As the year-end festivities are in full swing, the LNG market has had a challenging year, with 2024 proving tougher than many anticipated. While macroeconomic events have influenced certain market dynamics, other factors contributing to the downturn have been less clear.",
+      "keywords": [
+        "lng",
+        "brazil",
+        "atlantic",
+        "europe",
+        "japan",
+        "gas",
+        "cbm",
+        "per"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 379,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-12-20_2024_12_20_gas_report_week_51_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-12-20_2024_12_20_gas_report_week_51_gas",
+      "parent_id": "baltic_gas_2024-12-20_2024_12_20_gas_report_week_51_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "As Christmas draws near and Saudi acceptances were released this week, the market anticipated a strong upward movement despite the ongoing festive celebrations. Although rates increased, the rise fell short of expectations.",
+      "keywords": [
+        "lpg",
+        "europe",
+        "gas",
+        "route",
+        "despite",
+        "earnings",
+        "per",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 258,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

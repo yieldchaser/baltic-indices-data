@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-05-31_2024_05_31_gas_report_week_22_gas__root",
+  "doc_id": "baltic_gas_2024-05-31_2024_05_31_gas_report_week_22_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 22",
+  "section_path": [
+    "Gas report - Week 22"
+  ],
+  "section_path_text": "Gas report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nDespite what the LNG indices are suggesting there is life in the spot LNG market, several ships have been put on subs out in the Atlantic with laycans working July windows currently. There will be interest in the Mediterranean as well, with some reported FOB tenders coming into play, though none of this has done much to drive rates in either direction. The Pacific has seen some intra-Basin activity but overall there remains tonnage available to fix (one broker reported seven ships prompt).",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "japan",
+    "gas",
+    "was",
+    "but",
+    "earning"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 491,
+  "source_path": "reports/baltic/gas/2024/2024-05-31_gas-report-week-22_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-05-31_2024_05_31_gas_report_week_22_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-05-31_2024_05_31_gas_report_week_22_gas",
+      "parent_id": "baltic_gas_2024-05-31_2024_05_31_gas_report_week_22_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Despite what the LNG indices are suggesting there is life in the spot LNG market, several ships have been put on subs out in the Atlantic with laycans working July windows currently. There will be interest in the Mediterranean as well, with some reported FOB tenders coming into play, though none of this has done much to drive rates in either direction.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "japan",
+        "gas",
+        "ships"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-05-31_2024_05_31_gas_report_week_22_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-05-31_2024_05_31_gas_report_week_22_gas",
+      "parent_id": "baltic_gas_2024-05-31_2024_05_31_gas_report_week_22_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A very quiet week for rates on the LPG market, out in the East where the routes hovered within $2-3 the only news was that a few Australian cargoes that were trading did so on premiums, while a replacement cargo ex Ras Tanura helped steady rates towards the end of the week. While those were being worked though one other charterer came out and fixed in the low $80's so there has been uncertainty on where we would end up.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "australia",
+        "atlantic",
+        "gas",
+        "earning",
+        "equivalent",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

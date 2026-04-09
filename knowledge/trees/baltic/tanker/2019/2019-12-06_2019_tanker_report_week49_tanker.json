@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__root",
+  "doc_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 49",
+  "section_path": [
+    "Tanker report - Week 49"
+  ],
+  "section_path_text": "Tanker report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nMiddle East Gulf rates came under persistent downward pressure early on, although by the end of the week, owners were pushing back. The market for the 270,000mt Middle East Gulf to China dipped to low WS90s, but is now at mid WS90s. This is still down nearly 10 points from a week ago.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 558,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week49_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker",
+      "parent_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Middle East Gulf rates came under persistent downward pressure early on, although by the end of the week, owners were pushing back. The market for the 270,000mt Middle East Gulf to China dipped to low WS90s, but is now at mid WS90s.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf",
+        "assessed",
+        "down"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 168,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker",
+      "parent_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The market for 130,000mt West Africa/UK Continent (UKC) firmed over 15 points and is now trading at WS137.5 region. The Black Sea/Mediterranean rates for 135,000mt regained the seven points lost from last week and are now back at WS145.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "now",
+        "points",
+        "africa/uk",
+        "again",
+        "are",
+        "back"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 89,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker",
+      "parent_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Crude rates in the North recovered some of the recent slip, with 80,000mt cross North Sea up over 15 points to WS175-177.5 level. The market for 100,000mt Baltic/UK Continent lagged slightly, regaining only about 10 points to end the week at WS142.5.",
+      "keywords": [
+        "europe",
+        "points",
+        "north",
+        "recent",
+        "baltic/uk",
+        "being",
+        "continent",
+        "cross"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 99,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker",
+      "parent_id": "baltic_tanker_2019-12-06_2019_tanker_report_week49_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market for both 75,000mt and 55,000mt, from the Middle East Gulf to Japan was steady, hovering in the low WS150s throughout the week. On the Continent, rates for 37,000mt to the US Atlantic Coast fell away from close to WS180 a week ago, down to mid WS160s.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "fixed",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

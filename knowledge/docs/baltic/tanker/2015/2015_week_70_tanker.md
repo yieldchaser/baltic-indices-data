@@ -31,6 +31,7 @@ regions:
 - china
 - us_gulf
 - singapore
+section_count: 5
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2015/2015_week-70_tanker.html

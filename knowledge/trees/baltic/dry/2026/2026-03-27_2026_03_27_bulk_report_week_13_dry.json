@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__root",
+  "doc_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 13",
+  "section_path": [
+    "Bulk report - Week 13"
+  ],
+  "section_path_text": "Bulk report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market began the week under pressure, with broad-based softening across both basins before staging a measured recovery to finish marginally firmer overall. Early sentiment was undermined by a lack of conviction, most notably in the Pacific, where the absence of key miner activity and disruption risks linked to Cyclone Narelle limited enquiry and led to a gradual build-up of tonnage. This subdued demand set the early tone, while the Atlantic basin, although initially balanced, struggled to generate upward momentum amid patchy activity.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 925,
+  "source_path": "reports/baltic/dry/2026/2026-03-27_bulk-report-week-13_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__s01_capesize",
+      "doc_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market began the week under pressure, with broad-based softening across both basins before staging a measured recovery to finish marginally firmer overall. Early sentiment was undermined by a lack of conviction, most notably in the Pacific, where the absence of key miner activity and disruption risks linked to Cyclone Narelle limited enquiry and led to a gradual build-up of tonnage.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "africa",
+        "before",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week opened with a softer tone across both basins, as rates in the Atlantic and Asia eased and overall sentiment remained cautious. The Atlantic saw limited movement, with transatlantic and fronthaul activity subdued and a growing stand-off between owners and charterers.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "remained",
+        "activity",
+        "asia",
+        "limited"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 153,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another rather subdued week for the sector as prompt tonnage remained readily available in many areas. In the Atlantic, the US Gulf experienced further losses with limited amount of fresh enquiry.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 284,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market softened over the week, with sentiment remaining largely negative across both the Atlantic and Pacific basins. In the Atlantic, the Continent and Mediterranean markets remained subdued throughout the week, with limited cargo availability and a growing tonnage list keeping rates under pressure.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "vessel",
+        "dwt",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

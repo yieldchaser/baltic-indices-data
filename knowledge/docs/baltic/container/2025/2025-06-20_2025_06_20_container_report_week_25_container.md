@@ -26,6 +26,7 @@ regions:
 - atlantic
 - pacific
 - europe
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2025/2025-06-20_container-report-week-25_container.html

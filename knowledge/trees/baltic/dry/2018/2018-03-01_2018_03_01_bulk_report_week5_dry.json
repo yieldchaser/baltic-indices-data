@@ -1,0 +1,174 @@
+{
+  "node_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__root",
+  "doc_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 5",
+  "section_path": [
+    "Bulk report - Week 5"
+  ],
+  "section_path_text": "Bulk report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Main\nFollowing consultation with members, the Baltic Exchange will be implementing previously announced changes to the Baltic Dry Index (BDI). From 1 March 2018 the BDI will be re-weighted to the following ratios of timecharter assessments: 40% capesize, 30% panamax and 30% supramax and will no longer include the handysize timecharter average. For more information see www.balticexchange.com/news/press-announcements/article/baltic-exchange-applies-changes-to-bdi/3662/\n\nCapesize\nThe north Atlantic market came under pressure with rates sharply lower especially for transatlantic business but this too had a knock-on effect for front haul.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1166,
+  "source_path": "reports/baltic/dry/2018/2018-03-01_bulk-report-week5_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__s01_main",
+      "doc_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Following consultation with members, the Baltic Exchange will be implementing previously announced changes to the Baltic Dry Index (BDI). From 1 March 2018 the BDI will be re-weighted to the following ratios of timecharter assessments: 40% capesize, 30% panamax and 30% supramax and will no longer include the handysize timecharter average.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "bdi",
+        "following",
+        "timecharter",
+        "announced"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 113,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__s02_capesize",
+      "doc_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The north Atlantic market came under pressure with rates sharply lower especially for transatlantic business but this too had a knock-on effect for front haul. Owners' resistance crumbled in the face of very slow trading.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "india",
+        "coal",
+        "february",
+        "was",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 259,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__s03_panamax",
+      "doc_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The period market seemed limited to shorter durations up to five to seven months this week with the volume of trades waning as the softening spot market lead to charterers only fixing when necessary. However, period rates proved more robust than the spot market with a modern 75,000 dwt fixed at US$13,750 basis delivery Singapore for five to seven months.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 303,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__s04_supramax",
+      "doc_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "An uninspiring week across the board in most areas. This was reflected in the lack of fresh period activity although a 56,800-dwt was reported delivery Tianjin early February for six to eight months trading at US$10,500.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 258,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__s05_handysize",
+      "doc_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2018-03-01_2018_03_01_bulk_report_week5_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "A week of continuous falls in the both the Atlantic and Asia markets. Negative sentiment was evident particularly for vessels open east coast South America and US Gulf.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "open",
+        "was",
+        "daily",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

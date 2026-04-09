@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__root",
+  "doc_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 11",
+  "section_path": [
+    "Bulk report - Week 11"
+  ],
+  "section_path_text": "Bulk report - Week 11",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThere were finally reports of increased Brazil activity, but still largely unconfirmed. Vale reportedly took six ships Thursday for 5 April onwards, from Tubarao to Qingdao at $14.90, with three for delivery North West Europe, and three ballasters from the East. This may provide a much-needed boost to the Atlantic market, which took a big hit on Thursday, with a cargo fixed from Ponta Da Madeira to Dunkirk West and East, at just $6.50.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1280,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week11_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There were finally reports of increased Brazil activity, but still largely unconfirmed. Vale reportedly took six ships Thursday for 5 April onwards, from Tubarao to Qingdao at $14.90, with three for delivery North West Europe, and three ballasters from the East.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "coal",
+        "but",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 360,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Despite fewer reported period trades this week, rate levels have remained solid. Charterers are still looking to take forward cover and modern Kamsarmaxes, achieving $15,000 daily, or more, for around six months employment.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 260,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a better week across the board, with the Atlantic seeing increased activity, and, in some areas, rates improving. Overall, there was a positive feel to the Pacific market.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 391,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2018-03-16_2018_bulk_report_week11_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall a fairly quiet week with little reported. There was minimal activity East coast South America, with easing rates for Handysize vessels.",
+      "keywords": [
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "pacific",
+        "west_africa",
+        "us_gulf",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

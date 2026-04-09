@@ -34,6 +34,7 @@ regions:
 - australia
 - india
 - singapore
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2019/2019_bulk-report-week46_dry.html

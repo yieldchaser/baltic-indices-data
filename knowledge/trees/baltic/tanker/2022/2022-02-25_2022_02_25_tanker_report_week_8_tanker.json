@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__root",
+  "doc_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 8",
+  "section_path": [
+    "Tanker report - Week 8"
+  ],
+  "section_path_text": "Tanker report - Week 8",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nAn upturn all around for the VLCC this week. In Middle East markets, Rates for 280,000mt Middle East Gulf/USG (via Cape of Good Hope) came up to 19.5 level, while on the 270,000mt Middle East Gulf/China route rates climbed consistently all week to WS38.82 (which shows a round trip TCE of minus $5,800 per day). At the time of writing WS39 is reported on subjects a couple of times.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1105,
+  "source_path": "reports/baltic/tanker/2022/2022-02-25_tanker-report-week-8_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker",
+      "parent_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "An upturn all around for the VLCC this week. In Middle East markets, Rates for 280,000mt Middle East Gulf/USG (via Cape of Good Hope) came up to 19.5 level, while on the 270,000mt Middle East Gulf/China route rates climbed consistently all week to WS38.82 (which shows a round trip TCE of minus $5,800 per day).",
+      "keywords": [
+        "capesize",
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "all"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker",
+      "parent_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates had begun to increase gradually, spiking at the end of the week. TD20, 130,000mt Nigeria/UKC ended up at the WS75 level (a round-trip TCE of approx.",
+      "keywords": [
+        "meg",
+        "europe",
+        "day",
+        "per",
+        "round-trip",
+        "tce",
+        "approx.",
+        "basrah/west"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 121,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker",
+      "parent_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The 80,000mt Ceyhan/Mediterranean rose to WS125.31 (+21.62) (a round-trip TCE of $15,514 per day. In Northern Europe the rate for 80,000mt Hound Point/UKC is 36.56 points higher than last week at WS133.44 (a round-trip TCE of $21,710per day).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "per",
+        "tce",
+        "round-trip",
+        "around",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 289,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker",
+      "parent_id": "baltic_tanker_2022-02-25_2022_02_25_tanker_report_week_8_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the Middle East Gulf this week the TC1 has begun to show higher freight levels on the LR2s, which are currently marked at WS76.43 and on an upward trend. The LR1s have been active and TC5 55k Middle East Gulf / Japan with more enquiry has seen levels hop up and break the WS100 barrier to WS102.14.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 459,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

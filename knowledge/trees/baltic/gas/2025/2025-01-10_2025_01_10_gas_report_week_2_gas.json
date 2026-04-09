@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-01-10_2025_01_10_gas_report_week_2_gas__root",
+  "doc_id": "baltic_gas_2025-01-10_2025_01_10_gas_report_week_2_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 2",
+  "section_path": [
+    "Gas report - Week 2"
+  ],
+  "section_path_text": "Gas report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market showed signs of activity as many participants returned to their desks following the holiday break. However, more tonnage than anticipated surfaced in the market, providing cargoes with a wide range of options. As a result, the firm and steady rates observed during the final weeks of 2024 have come under pressure, however brokers remain optimistic due to ongoing fixing opportunities.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "meg",
+    "europe",
+    "japan",
+    "gas",
+    "cbm",
+    "closing",
+    "fixtures"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 542,
+  "source_path": "reports/baltic/gas/2025/2025-01-10_gas-report-week-2_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-01-10_2025_01_10_gas_report_week_2_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-01-10_2025_01_10_gas_report_week_2_gas",
+      "parent_id": "baltic_gas_2025-01-10_2025_01_10_gas_report_week_2_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market showed signs of activity as many participants returned to their desks following the holiday break. However, more tonnage than anticipated surfaced in the market, providing cargoes with a wide range of options.",
+      "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "japan",
+        "gas",
+        "cbm",
+        "tfde",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 302,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-01-10_2025_01_10_gas_report_week_2_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-01-10_2025_01_10_gas_report_week_2_gas",
+      "parent_id": "baltic_gas_2025-01-10_2025_01_10_gas_report_week_2_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A frosty start to 2025 has mirrored the sentiment in the LPG market, where fewer-than-expected fixtures in January for the Middle East Gulf (MEG) have caused rates to soften slightly. A lengthy position list combined with a reduced number of stems being shown pushed BLPG1 rates down by $3.5, closing the week at $57.667 and yielding a daily TCE earning of $39,025.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "gas",
+        "closing",
+        "fixtures",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

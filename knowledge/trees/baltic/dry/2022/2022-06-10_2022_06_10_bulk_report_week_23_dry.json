@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__root",
+  "doc_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 23",
+  "section_path": [
+    "Bulk report - Week 23"
+  ],
+  "section_path_text": "Bulk report - Week 23",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market softened this week as global market concern's kept the headwinds coming. The softening of values was felt across all Capesize 5TC routes as the index lowered throughout the week by -4609 to $19,665. Friday saw a slight uptick in value but little could be read into it at this stage.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 926,
+  "source_path": "reports/baltic/dry/2022/2022-06-10_bulk-report-week-23_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market softened this week as global market concern's kept the headwinds coming. The softening of values was felt across all Capesize 5TC routes as the index lowered throughout the week by -4609 to $19,665.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Another week interrupted by holidays in Asia and Europe, combined with many market players in Greece for Posidonia, that has led to a rather lacklustre seven days with falling sentiment, rising tonnage lists and subsequently falling rates across the board. The BPI lost 222 points over the week to close at 2,629 and the P5TC weighted average lost $2,001 to close at $23,662.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "india",
+        "was",
+        "close",
+        "falling",
+        "lost",
+        "owners"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With many people away from their desks due to Posidonia the market in many areas saw a change in direction as rates from key areas such as the US Gulf and East Coast South America fell away. From Asia limited fresh enquiry also appeared from the south but further north limited support remained for backhaul runs.",
+      "keywords": [
+        "supramax",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2022-06-10_2022_06_10_bulk_report_week_23_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With Posidonia and holidays this week, activity was limited and sentiment was negative. In East Coast South America due to a lack of enquiry, levels have dropped considerably with a 38,000-dwt fixing from Recalada to the Continent at $26,500, and 34,000-dwt fixing from Fazendinha to Morocco with an intended cargo of grains at $22,000.",
+      "keywords": [
+        "australia",
+        "europe",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "south",
+        "was",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

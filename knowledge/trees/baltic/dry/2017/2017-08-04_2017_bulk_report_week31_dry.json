@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__root",
+  "doc_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 31",
+  "section_path": [
+    "Bulk report - Week 31"
+  ],
+  "section_path_text": "Bulk report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA stronger week for the big ships but some cracks appearing as the week closed out with BHP Billiton managing to fix at lower rates on the West Australia/China route. This rate reached $6.60 Thursday but early today the major Australian shipper secured tonnage for a 21-23 August 170,000-tonne 10% cargo from Port Hedland to Qingdao at $6.25 having previously fixed at $6.30 and Thursday at $6.50. Timecharter rates also strengthened with a five year old 176,400-tonner fixed from Zhanjiang 5-10 August for a west Australian round voyage at around $15,000 daily.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1364,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week31_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A stronger week for the big ships but some cracks appearing as the week closed out with BHP Billiton managing to fix at lower rates on the West Australia/China route. This rate reached $6.60 Thursday but early today the major Australian shipper secured tonnage for a 21-23 August 170,000-tonne 10% cargo from Port Hedland to Qingdao at $6.25 having previously fixed at $6.30 and Thursday at $6.50.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "japan",
+        "but",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 328,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The north Atlantic appeared tighter for tonnage as the week closed out with rates steady to firmer for round voyages and fronthaul although volume was limited. LMEs open northwest Europe were fixing at $10,000 to $10,500 daily.",
+      "keywords": [
+        "capesize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 298,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates declined slightly in the Black Sea area and remained weak in the US Gulf, but were firmer a little for tonnage open east coast South America. It was also a negative week for all the Asia timecharter routes.",
+      "keywords": [
+        "china",
+        "india",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "delivery",
+        "daily",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 392,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2017-08-04_2017_bulk_report_week31_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The handy index had a gentle decline this week with rates across all routes under negative pressure with US Gulf and South American routes taking the hardest hit. A lack of fresh cargoes from the Continent also adding to the malaise with some commenting that summer had finally arrived.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 332,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

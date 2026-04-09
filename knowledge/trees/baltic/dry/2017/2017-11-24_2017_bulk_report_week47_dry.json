@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__root",
+  "doc_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry",
+  "parent_id": null,
+  "title": "Bulk report - week 47",
+  "section_path": [
+    "Bulk report - week 47"
+  ],
+  "section_path_text": "Bulk report - week 47",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA strong end to the week with weather delays in China combined with stronger iron ore prices boosting activity. All the Australian miners put in an appearance, taking several ships for loading within the 1-10 December time frame, with the West Australia/China ending the week at the high for the year at over US$9.00. Timecharter rates were over US$20,000 daily for ships loading mid-China for west Australian round voyages.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1162,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week47_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry",
+      "parent_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A strong end to the week with weather delays in China combined with stronger iron ore prices boosting activity. All the Australian miners put in an appearance, taking several ships for loading within the 1-10 December time frame, with the West Australia/China ending the week at the high for the year at over US$9.00.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "iron_ore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 320,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry",
+      "parent_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "After a slow start, the Atlantic eventually saw improved volume mainly due to transatlantic mineral trades, and towards the end of the week talk of charterers trying to split cape cargoes added to improved sentiment. Rates were slightly higher but with a lacklustre US grains market it has been positional and limited to inter Atlantic trades only.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "japan",
+        "coal",
+        "grain",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry",
+      "parent_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Baltic Supramax Index (BSI) overall made gains this week despite a few areas trading sideways. More positive sentiment was seen across Asian routes and in the Atlantic, better numbers were evident from the Gulf and a touch more activity further south.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 386,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry",
+      "parent_id": "baltic_dry_2017-11-24_2017_bulk_report_week47_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The handy market struggled and lost ground again this week. Limited activity particularly with the US holiday at the end of the week and little reported.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

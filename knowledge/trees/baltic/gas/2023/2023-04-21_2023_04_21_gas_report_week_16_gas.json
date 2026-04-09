@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-04-21_2023_04_21_gas_report_week_16_gas__root",
+  "doc_id": "baltic_gas_2023-04-21_2023_04_21_gas_report_week_16_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 16",
+  "section_path": [
+    "Gas report - Week 16"
+  ],
+  "section_path_text": "Gas report - Week 16",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe spot LNG Market remains flat. Although some spot activity has taken place, there are few requirements and the position list is populated mainly by sublets. Charterers and traders are trying to optimise their usage of extra tonnage while their own programs remain light.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "japan",
+    "gas",
+    "week.",
+    "are",
+    "end",
+    "list",
+    "any",
+    "blpg2",
+    "blpg3",
+    "charterers"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 472,
+  "source_path": "reports/baltic/gas/2023/2023-04-21_gas-report-week-16_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-04-21_2023_04_21_gas_report_week_16_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-04-21_2023_04_21_gas_report_week_16_gas",
+      "parent_id": "baltic_gas_2023-04-21_2023_04_21_gas_report_week_16_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The spot LNG Market remains flat. Although some spot activity has taken place, there are few requirements and the position list is populated mainly by sublets.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "are",
+        "end",
+        "list",
+        "own",
+        "taken"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-04-21_2023_04_21_gas_report_week_16_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-04-21_2023_04_21_gas_report_week_16_gas",
+      "parent_id": "baltic_gas_2023-04-21_2023_04_21_gas_report_week_16_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has lost some momentum this last week. Rates across all the three routes have moved very little with BLPG2 shifting only $0.4 over the whole course of the week.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "week.",
+        "blpg2",
+        "blpg3",
+        "earnings",
+        "half",
+        "little"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 260,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-12-06_2024_12_06_gas_report_week_49_gas__root",
+  "doc_id": "baltic_gas_2024-12-06_2024_12_06_gas_report_week_49_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 49",
+  "section_path": [
+    "Gas report - Week 49"
+  ],
+  "section_path_text": "Gas report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market continued to stagnate this week, with rates remaining relatively flat amid limited activity. In the Pacific, the double hit of lengthy tonnage lists and elusive cargo opportunities are putting pressure on rates. The BLNG Australia-Japan route for 174k cbm 2-stroke vessels edged up slightly by $200 to $26,000.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india",
+    "japan",
+    "grain",
+    "gas",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 695,
+  "source_path": "reports/baltic/gas/2024/2024-12-06_gas-report-week-49_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-12-06_2024_12_06_gas_report_week_49_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-12-06_2024_12_06_gas_report_week_49_gas",
+      "parent_id": "baltic_gas_2024-12-06_2024_12_06_gas_report_week_49_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market continued to stagnate this week, with rates remaining relatively flat amid limited activity. In the Pacific, the double hit of lengthy tonnage lists and elusive cargo opportunities are putting pressure on rates.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "japan",
+        "grain",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 442,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-12-06_2024_12_06_gas_report_week_49_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-12-06_2024_12_06_gas_report_week_49_gas",
+      "parent_id": "baltic_gas_2024-12-06_2024_12_06_gas_report_week_49_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market continued its subdued performance this week. Following two weeks of inactivity, the Middle East Gulf (MEG) BLPG1 Ras Tanura-Chiba Baltic route saw only a single reported fixture, originating from India.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "meg",
+        "india",
+        "gas",
+        "daily",
+        "tce",
+        "bearish"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

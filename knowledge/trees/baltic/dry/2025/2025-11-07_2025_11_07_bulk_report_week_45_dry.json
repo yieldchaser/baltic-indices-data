@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__root",
+  "doc_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 45",
+  "section_path": [
+    "Bulk report - Week 45"
+  ],
+  "section_path_text": "Bulk report - Week 45",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market recorded a notable improvement this week, with momentum building steadily across both basins. After a slow start on Monday, activity gathered pace from Tuesday onward as improved demand and a tightening tonnage list drove gains throughout the week. In the Pacific, sentiment recovered gradually, initially muted before strong miner demand midweek pushed C5 rates from the low $9s to above $10.50, before easing slightly to around $10.35 by week's end.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 918,
+  "source_path": "reports/baltic/dry/2025/2025-11-07_bulk-report-week-45_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market recorded a notable improvement this week, with momentum building steadily across both basins. After a slow start on Monday, activity gathered pace from Tuesday onward as improved demand and a tightening tonnage list drove gains throughout the week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "all",
+        "before"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A mixed week for the sector with no real clear direction as areas such as the North Atlantic saw rates under pressure for most part only to consolidate towards the back end of the week. Similarly, the South Atlantic saw renewed decent demand on fronthaul business for first half December which gave owners some hope.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "singapore",
+        "japan",
+        "coal",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The US Gulf and South Atlantic seeing renewed interest as the week progressed with stronger rates being discussed from the US Gulf. The South Atlantic slowly strengthened, a 62,000-dwt fixing at $17,000 plus $700,000 ballast bonus for a trip to Chittagong.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2025-11-07_2025_11_07_bulk_report_week_45_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market endured a generally subdued week, with soft sentiment prevailing across all regions. In the Continent and Mediterranean, the market remained largely positional, with minimal activity and rates slipping below previous levels.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "grain",
+        "dwt",
+        "fixed",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

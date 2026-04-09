@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-09-05_2025_09_05_gas_report_week_36_gas__root",
+  "doc_id": "baltic_gas_2025-09-05_2025_09_05_gas_report_week_36_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 36",
+  "section_path": [
+    "Gas report - Week 36"
+  ],
+  "section_path_text": "Gas report - Week 36",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIt has been another softer week in the LNG market across both sizes the Baltic report. Rates have continued to slide on both spot and period segments. Sentiment remains under pressure with the key routes losing value.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day",
+    "route",
+    "cbm",
+    "down"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 458,
+  "source_path": "reports/baltic/gas/2025/2025-09-05_gas-report-week-36_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-09-05_2025_09_05_gas_report_week_36_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-09-05_2025_09_05_gas_report_week_36_gas",
+      "parent_id": "baltic_gas_2025-09-05_2025_09_05_gas_report_week_36_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It has been another softer week in the LNG market across both sizes the Baltic report. Rates have continued to slide on both spot and period segments.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "cbm"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 278,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-09-05_2025_09_05_gas_report_week_36_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-09-05_2025_09_05_gas_report_week_36_gas",
+      "parent_id": "baltic_gas_2025-09-05_2025_09_05_gas_report_week_36_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "On the BLPG1 Ras Tanura-Chiba route, rates appeared to be in free fall this week following some market reported fixtures. This saw the index also drop by $9.16 to $74.667 per metric tonne.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "down",
+        "metric",
+        "per",
+        "route",
+        "tce",
+        "day."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 174,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

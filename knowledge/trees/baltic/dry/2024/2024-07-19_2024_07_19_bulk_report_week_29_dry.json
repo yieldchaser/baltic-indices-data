@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__root",
+  "doc_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 29",
+  "section_path": [
+    "Bulk report - Week 29"
+  ],
+  "section_path_text": "Bulk report - Week 29",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nIt was only on Thursday that the Capesize 5TC climbed to positive territory and became closer to $25,000. But the correction or Friday eventually settled the week at $24,652. In the Pacific, there was more resistance from owners towards the end of the week, which pushed C5 to $9.725 in the end.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 849,
+  "source_path": "reports/baltic/dry/2024/2024-07-19_bulk-report-week-29_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It was only on Thursday that the Capesize 5TC climbed to positive territory and became closer to $25,000. But the correction or Friday eventually settled the week at $24,652.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "coal",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 164,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Sentiment in the South Atlantic began to decline for the middle of August liftings below the current prompt levels a 76,000-dwt was rumoured to have fixed basis delivery EC South America on the 13th of August for a front haul requirement at $17,000 plus a $700,000 ballast bonus, whilst 80,000-dwt vessel fixed with prompt dates passing Singapore via EC South America to Singapore-Japan at $15,750 against a mid-August delivery was placed on subjects basis delivery passing. Activity in Asia was also said to be improving, but levels had so far remained balanced with an 84,000-dwt fixing from Kinuura with prompt dates via Eastern Australia to South China at $15,000; whilst an 81,000-dwt fixed from Lanshan via Nopac to China at $15,250 earlier in the week.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "singapore",
+        "japan",
+        "dwt",
+        "delivery",
+        "basis"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 248,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the Atlantic in summer holiday mode, it remained a rather positional market. Sentiment from the US Gulf was mixed, as brokers saw a slight weakening of fronthaul rates whilst trans-Atlantic runs remained fairly firm.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "remained",
+        "dwt",
+        "low"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2024-07-19_2024_07_19_bulk_report_week_29_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of minimal visible activity across both basins in the handy sector. In the Atlantic, a general lack of fresh cargo enquiry which added pressure to the market.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "south",
+        "backhaul"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 188,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

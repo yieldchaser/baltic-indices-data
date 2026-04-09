@@ -21,6 +21,7 @@ keywords:
 market_tone: neutral
 regions:
 - china
+section_count: 2
 signals: {}
 source: baltic
 source_path: reports/baltic/ningbo/2023/2023-04-07_ningbo-containerised-freight-index-20012_ningbo.html

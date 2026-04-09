@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__root",
+  "doc_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 21",
+  "section_path": [
+    "Bulk report - Week 21"
+  ],
+  "section_path_text": "Bulk report - Week 21",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize Timecharter Average (C5TC) closed on a positive note on Friday before entering the last week of May, which will start with a public holiday in the UK next Monday. The C5TC at $21,674 is about $500 lower week-on-week but $5,000 higher year-on-year. West Australia to China trade hovered in the range from high $9s to mid $10s, with a public holiday in Singapore interrupting mid-week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "meg",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 846,
+  "source_path": "reports/baltic/dry/2024/2024-05-24_bulk-report-week-21_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize Timecharter Average (C5TC) closed on a positive note on Friday before entering the last week of May, which will start with a public holiday in the UK next Monday. The C5TC at $21,674 is about $500 lower week-on-week but $5,000 higher year-on-year.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "singapore",
+        "c5tc",
+        "high"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 165,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market returned mostly a flat week, however in parts of the Asian basin a steady rise ensued with solid levels of demand and firm fundamentals. The Atlantic disappointed by comparison, the trans-Atlantic voyages in particular returning an underwhelming week with thin visibility.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "us_gulf",
+        "japan",
+        "grain",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather subdued week for the sector as holidays both in Europe and Asia interrupted the flow. In the Atlantic, little fresh enquiry was seen resulting in lower rates being discussed as prompt tonnage remained readily available.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "was",
+        "dwt",
+        "asia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 239,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2024-05-24_2024_05_24_bulk_report_week_21_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Cargo availability was said to have begun to improve across the Atlantic, but with a large amount of prompt tonnage levels limited the positive gains so far. The most visible activity was seen in the US Gulf as a 39,000-dwt was fixed for a trip from SW Pass to North Coast South America at $10,400 while a 39,000-dwt fixed from the US Gulf to the Continent with an unspecified dirty cargo at $10,500.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

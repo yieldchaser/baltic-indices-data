@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__root",
+  "doc_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 9",
+  "section_path": [
+    "Bulk report - Week 9"
+  ],
+  "section_path_text": "Bulk report - Week 9",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market saw a strong upward trajectory throughout the week, with the BCI 5TC surging from $8,620 on Monday to $15,074 by Friday, reflecting improved sentiment across both basins. The Pacific market was notably firm, driven by a tightening tonnage list, steady demand from miners and operators, and increased coal cargoes, which underpinned rates. The C5 index rose from $6.65 on Monday to $9.885 by Friday.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 921,
+  "source_path": "reports/baltic/dry/2025/2025-02-28_bulk-report-week-9_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry",
+      "parent_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market saw a strong upward trajectory throughout the week, with the BCI 5TC surging from $8,620 on Monday to $15,074 by Friday, reflecting improved sentiment across both basins. The Pacific market was notably firm, driven by a tightening tonnage list, steady demand from miners and operators, and increased coal cargoes, which underpinned rates.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 204,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry",
+      "parent_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates in the Atlantic came under severe pressure this week. Sizeable losses witnessed on the trans-Atlantic routes, with absent mineral demand and long tonnage counts only compounded a bleak situation.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "but",
+        "came",
+        "demand",
+        "enquiry",
+        "levels"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry",
+      "parent_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "As the week progressed it became apparent that the recent upturn in the sector had come to a halt. The Atlantic was described as stable, while the US Gulf was considered fairly busy, though rates remained relatively flat.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry",
+      "parent_id": "baltic_dry_2025-02-28_2025_02_28_bulk_report_week_9_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the market showed mixed performance, with modest movements across both basins. The Continent and Mediterranean regions maintained their positive momentum, with rates edging slightly above previous levels, and the market appeared supported.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "dwt",
+        "redelivery",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

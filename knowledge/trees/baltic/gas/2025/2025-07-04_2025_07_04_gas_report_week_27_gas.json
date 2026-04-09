@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-07-04_2025_07_04_gas_report_week_27_gas__root",
+  "doc_id": "baltic_gas_2025-07-04_2025_07_04_gas_report_week_27_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 27",
+  "section_path": [
+    "Gas report - Week 27"
+  ],
+  "section_path_text": "Gas report - Week 27",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market softened across the board this week as prompt demand eased and fresh fixtures slowed. Weaker momentum in the Atlantic basin weighed on rates, while Pacific sentiment also lost ground amid thinning enquiry. On the BLNG1 Australia-Japan route, rates slipped by $400 for 174k cbm vessels to $40,000/day, while 160k cbm ships declined $1,000 to $23,400/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day",
+    "cbm",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 459,
+  "source_path": "reports/baltic/gas/2025/2025-07-04_gas-report-week-27_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-07-04_2025_07_04_gas_report_week_27_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-07-04_2025_07_04_gas_report_week_27_gas",
+      "parent_id": "baltic_gas_2025-07-04_2025_07_04_gas_report_week_27_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market softened across the board this week as prompt demand eased and fresh fixtures slowed. Weaker momentum in the Atlantic basin weighed on rates, while Pacific sentiment also lost ground amid thinning enquiry.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 267,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-07-04_2025_07_04_gas_report_week_27_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-07-04_2025_07_04_gas_report_week_27_gas",
+      "parent_id": "baltic_gas_2025-07-04_2025_07_04_gas_report_week_27_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market posted a mixed performance this week, with gains on Western routes contrasting with softer levels in the Middle East after heightened tensions. On the BLPG1 Ras Tanura-Chiba route, rates fell by $4.67 to $75.50 per metric tonne, with TCE earnings declining $5,456 to $60,736/day as chartering slowed and some prior premiums eased.",
+      "keywords": [
+        "lpg",
+        "pacific",
+        "gas",
+        "day",
+        "route",
+        "tce",
+        "earnings",
+        "gains"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

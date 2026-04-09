@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__root",
+  "doc_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 31",
+  "section_path": [
+    "Bulk report - Week 31"
+  ],
+  "section_path_text": "Bulk report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nHaving hit a high of $32,963 early last week, the Capesize 5TC now stands at $25,749. This is over 20% of its value lost in 10 days. Currently the market is at a bit of a standoff, with a wide bid/offer spread.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1026,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week31_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Having hit a high of $32,963 early last week, the Capesize 5TC now stands at $25,749. This is over 20% of its value lost in 10 days.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "fixed",
+        "cargo",
+        "dwt",
+        "level"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Throughout last week there was a constant slide in rates and confidence, with much of the recent gains being eroded. The index for transatlantic rounds dropped by almost $4,000 daily, the fronthaul index by $3,335, and the Pacific round by just over $2,500.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "was",
+        "being",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 175,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Influenced by the bigger sizes, the Baltic Supramax Index (BSI) had a continuous fall since the beginning of the week. Most of the index routes lost value in both basins and there was limited period activity reported compared with last week.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 315,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2019-08-02_2019_bulk_report_week31_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Despite three days of no change for the Baltic Handysize Index (BHSI) and minimal improvement throughout the week, the Handysize sector managed to remain in the positive zone. The Pacific market was lending support early in the week, but subsequently slowed down.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 301,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

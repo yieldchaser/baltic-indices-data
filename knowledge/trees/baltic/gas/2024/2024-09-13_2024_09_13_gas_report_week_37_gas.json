@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-09-13_2024_09_13_gas_report_week_37_gas__root",
+  "doc_id": "baltic_gas_2024-09-13_2024_09_13_gas_report_week_37_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 37",
+  "section_path": [
+    "Gas report - Week 37"
+  ],
+  "section_path_text": "Gas report - Week 37",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe weather in London may have become wintrier and forecasts of more cold spells to come have done little to the expected LNG market seasonal rise. Rates are flat/soft with very few fixtures being reported, though some cargoes are working more modern tonnage leaving older ships languishing. Rates have moved little, indeed the BLNG1 Aus-Japan on the 174cbm 2-stroke closed unchanged at $73,000 while the 160-cbm TFDE vessel lost $1000 down to $57,800.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "japan",
+    "gas",
+    "cbm",
+    "down",
+    "lost",
+    "cargoes",
+    "close",
+    "fell",
+    "little"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 494,
+  "source_path": "reports/baltic/gas/2024/2024-09-13_gas-report-week-37_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-09-13_2024_09_13_gas_report_week_37_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-09-13_2024_09_13_gas_report_week_37_gas",
+      "parent_id": "baltic_gas_2024-09-13_2024_09_13_gas_report_week_37_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The weather in London may have become wintrier and forecasts of more cold spells to come have done little to the expected LNG market seasonal rise. Rates are flat/soft with very few fixtures being reported, though some cargoes are working more modern tonnage leaving older ships languishing.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "cbm",
+        "down",
+        "fell",
+        "tfde",
+        "are"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 291,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-09-13_2024_09_13_gas_report_week_37_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-09-13_2024_09_13_gas_report_week_37_gas",
+      "parent_id": "baltic_gas_2024-09-13_2024_09_13_gas_report_week_37_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With an increasing tonnage list and little reported open interest with cargoes, there is not much to report back on the VLGC market. BLPG1 Ras Tanura-Chiba lost $7.583 a fall of 14.68% closing at $51.667.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "down",
+        "lost",
+        "cargoes",
+        "close",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

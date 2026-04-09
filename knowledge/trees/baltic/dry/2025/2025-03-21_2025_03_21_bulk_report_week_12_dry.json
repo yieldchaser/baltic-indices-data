@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__root",
+  "doc_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 12",
+  "section_path": [
+    "Bulk report - Week 12"
+  ],
+  "section_path_text": "Bulk report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize Timecharter Average (C5TC) experienced a decline of $1,507 week-on-week, settling at $22,190 on Friday. In the North Atlantic, a few INL breaching fronthaul cargoes with mid-April loading were fixed, reflecting $42,313 on the C9 route by the end of the week. In Brazil, rates started to improve since mid-week after more cargoes entered the market with second half April dates.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 900,
+  "source_path": "reports/baltic/dry/2025/2025-03-21_bulk-report-week-12_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize Timecharter Average (C5TC) experienced a decline of $1,507 week-on-week, settling at $22,190 on Friday. In the North Atlantic, a few INL breaching fronthaul cargoes with mid-April loading were fixed, reflecting $42,313 on the C9 route by the end of the week.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "april",
+        "dates.",
+        "route",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Overall, a week of slow erosion for the Panamax market. This is despite some resistance and a limited push on FFAs.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "singapore",
+        "japan",
+        "grain",
+        "returned",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall, a week of slightly positive gains was seen for the sector. The US Gulf did see positive moves at the beginning of the week although some said it may a peaked for the time being.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 281,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2025-03-21_2025_03_21_bulk_report_week_12_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the market saw minimal visible activity across both basins. Rates appeared supported in the Continent and Mediterranean, with sentiment remaining generally positional.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "singapore",
+        "grain",
+        "bauxite",
+        "delivery",
+        "dwt",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

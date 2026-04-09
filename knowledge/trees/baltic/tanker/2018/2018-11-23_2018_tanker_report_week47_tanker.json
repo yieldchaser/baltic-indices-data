@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__root",
+  "doc_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 47",
+  "section_path": [
+    "Tanker report - Week 47"
+  ],
+  "section_path_text": "Tanker report - Week 47",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nA steady week in the Middle East Gulf saw rates at WS 90 for 270,000mt to China. Going west, 280,000mt to the US Gulf was assessed in the low WS 40s Cape/Cape. West Africa to China basis 260,000mt fixed at WS 89.5 up 3.5 points over the week.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "meg",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf",
+    "japan",
+    "crude_oil"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 448,
+  "source_path": "reports/baltic/tanker/2018/2018_tanker-report-week47_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker",
+      "parent_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A steady week in the Middle East Gulf saw rates at WS 90 for 270,000mt to China. Going west, 280,000mt to the US Gulf was assessed in the low WS 40s Cape/Cape.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf",
+        "million",
+        "west"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 103,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker",
+      "parent_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa firmed 25 points, with WS 145 paid for 130,000mt to UKCont. Black Sea/Mediterranean rates were steady at WS 172.5-175 for 135,000mt with West Coast India agreed at $3.75 million.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "india",
+        "west",
+        "africa",
+        "agreed",
+        "black",
+        "coast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 58,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker",
+      "parent_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates for 80,000mt in the Mediterranean firmed 17.5 points, with Statoil fixing from Ceyhan at WS 165; Libya load went at WS 170. Increased delays in the Turkish Straits saw Black Sea rates gain 25 points to WS 172.5/175.",
+      "keywords": [
+        "europe",
+        "us_gulf",
+        "crude_oil",
+        "points",
+        "sea",
+        "black",
+        "caribbean",
+        "ceyhan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 145,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker",
+      "parent_id": "baltic_tanker_2018-11-23_2018_tanker_report_week47_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Status quo was maintained, with the 75,000mt Middle East Gulf/Japan market close to WS 120, with 55,000mt steady at WS 127.5/130. A busy week Continent/Baltic saw the tonnage list thin and rates marginally firmer at WS 142.5/145 for 37,000mt Continent/USAC.",
+      "keywords": [
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "another",
+        "assessments",
+        "backhaul",
+        "busy"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 129,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

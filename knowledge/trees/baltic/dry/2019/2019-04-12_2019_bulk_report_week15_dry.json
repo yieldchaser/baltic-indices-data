@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__root",
+  "doc_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 15",
+  "section_path": [
+    "Bulk report - Week 15"
+  ],
+  "section_path_text": "Bulk report - Week 15",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market saw a steep ascent from the depths of last week. The Baltic Capesize Index (BCI) 5TC opened on Monday at $5,099, although by Friday's close most gains were lost, and it finished up at $5,737, a modest gain of $638. Improved sentiment stemmed from Atlantic-tightness combined with an open Colombia coal arbitrage.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 876,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week15_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry",
+      "parent_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market saw a steep ascent from the depths of last week. The Baltic Capesize Index (BCI) 5TC opened on Monday at $5,099, although by Friday's close most gains were lost, and it finished up at $5,737, a modest gain of $638.",
+      "keywords": [
+        "capesize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "coal",
+        "sentiment"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry",
+      "parent_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "An uneventful week started very slowly in the Pacific, partly due to Coaltrans in Shanghai. Despite increased activity in the second half of the week, spot rates have drifted lower.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "coal",
+        "grain",
+        "activity",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry",
+      "parent_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Baltic Supramax Index (BSI) continued its downward trend during the week, however, some areas showed more resilience than others. Period activity remained subdued, but a 58,000dwt vessel open Dubai was fixed for a short period at $11,500.",
+      "keywords": [
+        "supramax",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "singapore",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry",
+      "parent_id": "baltic_dry_2019-04-12_2019_bulk_report_week15_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of continuous falls in both the Atlantic and Asian markets. Negative sentiment was evident and gained pace throughout the week.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "grain",
+        "steel",
+        "was",
+        "dwt",
+        "america",
+        "basis"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 239,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

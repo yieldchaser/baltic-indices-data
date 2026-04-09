@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__root",
+  "doc_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 5",
+  "section_path": [
+    "Bulk report - Week 5"
+  ],
+  "section_path_text": "Bulk report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market faced a subdued week, with the BCI 5TC steadily declining from $7,946 on Monday to reach $6,977 by Thursday. However, a modest recovery towards the weeks end lifted the 5TC to $7,252. The Pacific market remained under pressure, exacerbated by the Chinese New Year holidays, which significantly reduced fresh cargo availability.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 932,
+  "source_path": "reports/baltic/dry/2025/2025-01-31_bulk-report-week-5_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market faced a subdued week, with the BCI 5TC steadily declining from $7,946 on Monday to reach $6,977 by Thursday. However, a modest recovery towards the weeks end lifted the 5TC to $7,252.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "pacific",
+        "cargo",
+        "declining",
+        "faced",
+        "miners"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A lethargic week, with the market being curtailed by the Asian holidays. In the Atlantic, a North/South divide prevailed, with EC South America claiming the headlines as activity slowly picked up for March arrivals.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "singapore",
+        "japan",
+        "grain",
+        "america",
+        "basis",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the widespread Lunar New Year holidays during the week, it was a very lacklustre affair. Rates dropped in most areas as vessel supply outweighed demand.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "dwt",
+        "delivery",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2025-01-31_2025_01_31_bulk_report_week_5_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "As anticipated, the market has seen very limited activity across the Atlantic and Asian basins due to holidays in Asia. Market sentiment in the Continent and Mediterranean regions remained largely unchanged, the downward trend still prevailing.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "delivery",
+        "fixed",
+        "redelivery",
+        "trip",
+        "activity",
+        "all"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

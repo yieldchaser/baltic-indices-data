@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__root",
+  "doc_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 6",
+  "section_path": [
+    "Bulk report - Week 6"
+  ],
+  "section_path_text": "Bulk report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market was predictably quiet by the end of the week with many traders absent for the beginning of Chinese New Year. The Capesize 5TC registered a token drop of eight to settle at $10,304 as minimal trading was heard. It's said to be a different story on the derivatives market where rumblings of an upturn in sentiment was heard from several sources.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 951,
+  "source_path": "reports/baltic/dry/2021/2021-02-12_bulk-report-week-6_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market was predictably quiet by the end of the week with many traders absent for the beginning of Chinese New Year. The Capesize 5TC registered a token drop of eight to settle at $10,304 as minimal trading was heard.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 249,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It was an energetic week with EC South America claiming the headlines for the first half of the week due to increased demand from the grain houses for March arrivals. Index type tonnage fixing at around $16,750 was achieved several times basis delivery Singapore via EC South America redelivery Singapore-Japan.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "grain",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Despite the Chinese New Year celebrations taking place at the end of the week, the market remained in a positive trajectory with the BSI closing at 1,217. Period activity continued, with a 58,000-dwt open Indian Ocean fixing four to six months at $16,000 whilst from the Atlantic a 63,000-dwt open in the US Gulf was fixed for three to five months trading at $21,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "was",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2021-02-12_2021_02_12_bulk_report_week_6_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Another strong week with improved levels on all the routes. For vessels open in Continent-Med range there was not much difference in rates going to US Gulf and east coast South America.",
+      "keywords": [
+        "brazil",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt",
+        "open",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

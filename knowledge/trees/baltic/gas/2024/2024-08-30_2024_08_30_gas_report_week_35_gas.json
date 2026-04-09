@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-08-30_2024_08_30_gas_report_week_35_gas__root",
+  "doc_id": "baltic_gas_2024-08-30_2024_08_30_gas_report_week_35_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 35",
+  "section_path": [
+    "Gas report - Week 35"
+  ],
+  "section_path_text": "Gas report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe Pacific market has had a particular slow down this last week. Fewer enquires were reported and with the tonnage list steadily increasing there is a lacklustre sentiment going into the final quarter of the year. Rates for spot enquiry have gradually fallen, and there seems no rush to take an axe to levels but the sentiment driving it is steadfastly looking weaker.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "meg",
+    "japan",
+    "gas",
+    "cbm",
+    "close",
+    "both",
+    "only"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 509,
+  "source_path": "reports/baltic/gas/2024/2024-08-30_gas-report-week-35_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-08-30_2024_08_30_gas_report_week_35_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-08-30_2024_08_30_gas_report_week_35_gas",
+      "parent_id": "baltic_gas_2024-08-30_2024_08_30_gas_report_week_35_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Pacific market has had a particular slow down this last week. Fewer enquires were reported and with the tonnage list steadily increasing there is a lacklustre sentiment going into the final quarter of the year.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "japan",
+        "gas",
+        "cbm",
+        "both",
+        "period"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 326,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-08-30_2024_08_30_gas_report_week_35_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-08-30_2024_08_30_gas_report_week_35_gas",
+      "parent_id": "baltic_gas_2024-08-30_2024_08_30_gas_report_week_35_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There are market lulls and then there are summer market lulls. With only one reported fixture out of the MEG this week, rates did very little, shifting only 8 cents to a close of $64.083 up from $64.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "gas",
+        "close",
+        "only",
+        "little"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 177,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

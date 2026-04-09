@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__root",
+  "doc_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 45",
+  "section_path": [
+    "Bulk report - Week 45"
+  ],
+  "section_path_text": "Bulk report - Week 45",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Main\nCapesize Activity in the Capesize market had the 5TC pushing in value over a few days in midweek. However, pessimism prevailed as the rates dropped down to close the week -895, settling at $12,807. Some chatter in the market expects an improvement in rates to end the year, although this is yet to eventuate.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 925,
+  "source_path": "reports/baltic/dry/2022/2022-11-11_bulk-report-week-45_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__s01_main",
+      "doc_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Capesize Activity in the Capesize market had the 5TC pushing in value over a few days in midweek. However, pessimism prevailed as the rates dropped down to close the week -895, settling at $12,807.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "period",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 238,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market sell-off continued in a similar vein to the previous week, with all sector indices continuing to lose ground. Activity in the north Atlantic - particularly mineral trades - were minimal.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "pacific",
+        "japan",
+        "but",
+        "activity",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather poor week for the sector as pressure remained in many areas with a lack of fresh cargo and a build-up of tonnage. This was particularly seen in the Asian arena with little fresh enquiry from Indonesia, whilst further north charterers remained firmly in the driving seat.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2022-11-11_2022_11_11_bulk_report_week_45_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Like the larger sisters the Handy sector also lost traction generally, although some felt that the Asian arena may have found a plateau. Little excitement on the period front, but a 38,000-dwt open Mediterranean was heard to have fixed one year at $14,500 at the beginning of the week.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

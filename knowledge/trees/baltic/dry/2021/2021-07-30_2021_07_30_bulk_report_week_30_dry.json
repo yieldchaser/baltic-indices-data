@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__root",
+  "doc_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 30",
+  "section_path": [
+    "Bulk report - Week 30"
+  ],
+  "section_path_text": "Bulk report - Week 30",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market strengthened this week as Pacific routes were affected by weather incidents pushing the 5TC up $3,244 week on week to settle at $35,713. China endured typhoon In-Fa throughout the week as it closed ports and disrupted tonnage flows along the eastern seaboard. The Transpacific C10 added a whopping $4,238 on Friday alone to close out the week at $45,413 as the effects translated through to the charter rates.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 924,
+  "source_path": "reports/baltic/dry/2021/2021-07-30_bulk-report-week-30_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry",
+      "parent_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market strengthened this week as Pacific routes were affected by weather incidents pushing the 5TC up $3,244 week on week to settle at $35,713. China endured typhoon In-Fa throughout the week as it closed ports and disrupted tonnage flows along the eastern seaboard.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "pacific",
+        "effects",
+        "friday",
+        "routes",
+        "typhoon"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry",
+      "parent_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A tepid week for the Panamaxes with limited activity, resulting in softer rates overall as weaker sentiment kicked in. The Atlantic witnessed the largest falls, with activity primarily led by grain trading ex North France and the Black Sea as the season continued in full flow.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "pacific",
+        "coal",
+        "grain",
+        "activity",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry",
+      "parent_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall a week of positive gains as sentiment remained strong in many areas although it was a gentler push, some brokers commented. Period activity was seen with a 56,000-dwt open West Africa fixing for four to six months trading redelivery Atlantic at $33,500.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "meg",
+        "west_africa",
+        "europe",
+        "india",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry",
+      "parent_id": "baltic_dry_2021-07-30_2021_07_30_bulk_report_week_30_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The continuation of positivity remains this week despite some negative moves in East Coast South America, where a lack of activity was attributed to the change in outlook. However, a 38,000-dwt was fixed for a trip from Recalada to west coast South America at $53,500.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "steel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

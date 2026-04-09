@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__root",
+  "doc_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 43",
+  "section_path": [
+    "Bulk report - Week 43"
+  ],
+  "section_path_text": "Bulk report - Week 43",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe end of the week brought about a small increase in sentiment heading into a long weekend for some regions. After sustaining a drop in value for the first part of the week, the 5TC now appears to have turned its fortunes around to settle the week out almost unchanged. 5TC opened $25,117, dropped to $23,740 midweek before closing up Friday at $24,945.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "coal"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 865,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week43_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry",
+      "parent_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The end of the week brought about a small increase in sentiment heading into a long weekend for some regions. After sustaining a drop in value for the first part of the week, the 5TC now appears to have turned its fortunes around to settle the week out almost unchanged.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "activity",
+        "after",
+        "closing",
+        "friday",
+        "heading"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 184,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry",
+      "parent_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week ended on a weaker note as it seems more tonnage is open and less fresh cargo coming to the market. There have been a number of shorter Baltic round voyages fixed with rates varying from $14,000 to $16,500.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "coal",
+        "fixed",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry",
+      "parent_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the Coaltrans event taking place in Europe at the beginning of the week the market started in slow mode and never really got going. Rates across both basins saw negative movement.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry",
+      "parent_id": "baltic_dry_2019-10-25_2019_bulk_report_week43_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A lacklustre week for the Handy market with rates losing ground. A 38,000dwt fixing from the United Kingdom for 4-6 months trading redelivery Atlantic at $11,500 and a 34,000 covering at $8,600 delivery far east for 4-6 months.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "grain",
+        "dwt",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 243,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__root",
+  "doc_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 22",
+  "section_path": [
+    "Bulk report - Week 22"
+  ],
+  "section_path_text": "Bulk report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe capes have faced a challenging week, marked by holiday disruptions. Despite a slow start to the week, there has been no shortage of cargo in both the Atlantic and Pacific regions. However, both markets have been grappling with an excess supply of tonnage, which has been putting downward pressure on the market.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 860,
+  "source_path": "reports/baltic/dry/2023/2023-06-02_bulk-report-week-22_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The capes have faced a challenging week, marked by holiday disruptions. Despite a slow start to the week, there has been no shortage of cargo in both the Atlantic and Pacific regions.",
+      "keywords": [
+        "capesize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "both",
+        "holiday"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 171,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "For another successive week, corrections were seen in the Panamax market. Despite better demand week-on-week, it was again met by a sea of prompt tonnage along with an increasing ballaster count.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "japan",
+        "coal",
+        "grain",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The only saving grace for the sector was it was a short week for many, with widespread holidays at the beginning and end. Both basins suffered from an oversupply of prompt tonnage with fresh enquiries being snapped up by owners securing employment.",
+      "keywords": [
+        "atlantic",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "trip",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2023-06-02_2023_06_02_bulk_report_week_22_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Another short week for many but a general lack of activity and a lack of fresh enquiry dominated the handy sector across both basins. In East Coast South America, a 32,000-dwt fixed from Paranagua to the US East Coast with an intended cargo of Sugar at $10,950, whilst a 33,000-dwt had fixed basis delivery Fazendinha to Norfolk with an intended cargo of grains at $14,750.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "europe",
+        "grain",
+        "bauxite",
+        "dwt",
+        "fixed",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

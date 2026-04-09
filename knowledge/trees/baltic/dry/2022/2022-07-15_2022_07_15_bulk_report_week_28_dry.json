@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__root",
+  "doc_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 28",
+  "section_path": [
+    "Bulk report - Week 28"
+  ],
+  "section_path_text": "Bulk report - Week 28",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nFirmer sentiment across both basins pushed the Capesize 5TC route average above the $20,000 threshold this week, closing at $24,209. Activity in the Pacific gradually picked up midweek after a public holiday in Singapore on Monday. The West Australia to Qingdao iron ore trade climbed closer to $11, with fixtures reported at better rates towards the end of the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 827,
+  "source_path": "reports/baltic/dry/2022/2022-07-15_bulk-report-week-28_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Firmer sentiment across both basins pushed the Capesize 5TC route average above the $20,000 threshold this week, closing at $24,209. Activity in the Pacific gradually picked up midweek after a public holiday in Singapore on Monday.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market provided further losses this week and is showing little signs of abating. Despite a steady level of activity, this failed to stem the tide with both basins yielding significant losses.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "japan",
+        "further",
+        "activity",
+        "but",
+        "continued",
+        "market."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Sentiment waned in most areas, with the exception being from the US Gulf. Rates remained relatively firm from there for both runs to the Pacific and within the Atlantic.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "steel",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 230,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2022-07-15_2022_07_15_bulk_report_week_28_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "East Coast South America made positive gains over the week with sources citing a lack of tonnage for end July as the main driving force. A 38,000-dwt was heard to have been fixed for a trip from South Brazil via River Plate to Morocco at $30,000.",
+      "keywords": [
+        "brazil",
+        "europe",
+        "japan",
+        "fixed",
+        "dwt",
+        "via",
+        "trip",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

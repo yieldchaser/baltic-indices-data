@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__root",
+  "doc_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 20",
+  "section_path": [
+    "Bulk report - Week 20"
+  ],
+  "section_path_text": "Bulk report - Week 20",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market continues to ebb and flow with a generally positive up trend. The Capesize 5TC opened with upward momentum from last week's $11,621 and nudged to over $12,000. It then dropped to $11,705, however, by close it rallied to $11,909.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 918,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week20_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry",
+      "parent_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market continues to ebb and flow with a generally positive up trend. The Capesize 5TC opened with upward momentum from last week's $11,621 and nudged to over $12,000.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "iron_ore",
+        "gas",
+        "dam",
+        "ore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry",
+      "parent_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A busy start to last week saw the Baltic Panamax Index (BPI) 4TC average rise steadily to over $10,000 from around $9,500 at the end of the preceding week. South America was again the main focus, with modern Kamsarmaxes now traded in excess of $16,000, plus $600,000 ballast bonus.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "pacific",
+        "india",
+        "singapore",
+        "had",
+        "trades",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry",
+      "parent_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Baltic Supramax Index (BSI) started the week in upward mode, but petered out as the week closed. Limited fresh period activity surfaced, but a 52,000dwt vessel, open US Gulf, was rumoured fixed for four to six months trading, with redelivery Arabian Gulf-Japan in the $12,000s.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "meg",
+        "india",
+        "us_gulf",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry",
+      "parent_id": "baltic_dry_2019-05-17_2019_bulk_report_week20_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall, it was a week of continuous improvement in the Handysize sector. Rates started the week flat, with mixed feelings in the Atlantic basin, but the sentiment started to grow slightly more positive in the Continent-Mediterranean-Black Sea areas after the recent weeks of lower fixtures.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

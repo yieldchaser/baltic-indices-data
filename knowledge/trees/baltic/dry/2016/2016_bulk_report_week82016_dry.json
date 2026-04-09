@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry__root",
+  "doc_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 8 2016",
+  "section_path": [
+    "Bulk report - Week 8 2016"
+  ],
+  "section_path_text": "Bulk report - Week 8 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nVery little change for the big ships with rates still at historically low levels. Over the week rates slipped on some routes but as the week closed out there were slight improvement on some routes. A few cents more was agreed for West Australia/China cargoes with $2.90 paid for a 9 March onwards 170,000 tonne 10% cargo and $2.85 for 10 March onwards.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1225,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week82016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry__s01_capesize",
+      "doc_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry",
+      "parent_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Very little change for the big ships with rates still at historically low levels. Over the week rates slipped on some routes but as the week closed out there were slight improvement on some routes.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "cargo",
+        "march",
+        "tonne",
+        "qingdao",
+        "agreed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 270,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry__s02_panamax",
+      "doc_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry",
+      "parent_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "South America remained the focus for the market determining rates both in the Atlantic and the East. Added to this, significant delays in Brazil were keeping ships off the market longer.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "daily",
+        "fixed",
+        "low",
+        "ships",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry",
+      "parent_id": "baltic_dry_unknown_2016_bulk_report_week82016_dry__root",
+      "title": "Supramax/Handysize",
+      "section_path": [
+        "Supramax/Handysize"
+      ],
+      "section_path_text": "Supramax/Handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Under the circumstances, it was a good week for supramax and ultramax markets rates up on the last done and index routes up on a daily basis. Brokers remained uncertain how long this would last but sentiment was positive and driving the market.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "brazil",
+        "atlantic",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 750,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

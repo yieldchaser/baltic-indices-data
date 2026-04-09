@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-03-28_2025_03_28_gas_report_week_13_gas__root",
+  "doc_id": "baltic_gas_2025-03-28_2025_03_28_gas_report_week_13_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 13",
+  "section_path": [
+    "Gas report - Week 13"
+  ],
+  "section_path_text": "Gas report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThis week, the LNG market experienced a decline, with most routes seeing a drop in rates. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels gained $400, reaching $27,900 per day, while 160k cbm vessels declined by $600, settling at $17,800 per day. In the Atlantic, the BLNG2 Sabine-UK Continent route saw a $2,500 drop for 174k cbm vessels, closing at $28,000 per day, with 160k cbm vessels also falling by $1,200 to $14,000 per day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "europe",
+    "gas",
+    "per",
+    "day.",
+    "cbm",
+    "route",
+    "vessels",
+    "day",
+    "saw"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 470,
+  "source_path": "reports/baltic/gas/2025/2025-03-28_gas-report-week-13_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-03-28_2025_03_28_gas_report_week_13_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-03-28_2025_03_28_gas_report_week_13_gas",
+      "parent_id": "baltic_gas_2025-03-28_2025_03_28_gas_report_week_13_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week, the LNG market experienced a decline, with most routes seeing a drop in rates. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels gained $400, reaching $27,900 per day, while 160k cbm vessels declined by $600, settling at $17,800 per day.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "europe",
+        "gas",
+        "per",
+        "cbm",
+        "vessels",
+        "day."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 249,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-03-28_2025_03_28_gas_report_week_13_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-03-28_2025_03_28_gas_report_week_13_gas",
+      "parent_id": "baltic_gas_2025-03-28_2025_03_28_gas_report_week_13_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market saw a downward correction this week, with rates declining across all routes, reversing last week's positive momentum. On the BLPG1 Ras Tanura-Chiba route, rates fell by $4.58 to $57.58, while TCE earnings dropped by $5,467, settling at $40,626 per day.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "day.",
+        "earnings",
+        "per",
+        "route",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

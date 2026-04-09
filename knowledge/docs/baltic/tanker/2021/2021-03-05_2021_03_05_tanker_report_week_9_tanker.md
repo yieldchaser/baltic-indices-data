@@ -35,6 +35,7 @@ regions:
 - atlantic
 - us_gulf
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2021/2021-03-05_tanker-report-week-9_tanker.html

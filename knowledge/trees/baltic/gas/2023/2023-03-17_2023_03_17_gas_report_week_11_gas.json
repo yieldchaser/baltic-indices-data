@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-03-17_2023_03_17_gas_report_week_11_gas__root",
+  "doc_id": "baltic_gas_2023-03-17_2023_03_17_gas_report_week_11_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 11",
+  "section_path": [
+    "Gas report - Week 11"
+  ],
+  "section_path_text": "Gas report - Week 11",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe pacific basin remains healthy despite a slight drop in spot rates over the week. Enquiry remains, although the focus - as ever - remains on shorter period business. Up to one-year deals are being worked quite extensively and the spot rates remain flat.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "japan",
+    "crude_oil",
+    "gas",
+    "but",
+    "are",
+    "little",
+    "remains"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 666,
+  "source_path": "reports/baltic/gas/2023/2023-03-17_gas-report-week-11_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-03-17_2023_03_17_gas_report_week_11_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-03-17_2023_03_17_gas_report_week_11_gas",
+      "parent_id": "baltic_gas_2023-03-17_2023_03_17_gas_report_week_11_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The pacific basin remains healthy despite a slight drop in spot rates over the week. Enquiry remains, although the focus - as ever - remains on shorter period business.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "japan",
+        "crude_oil",
+        "gas",
+        "but",
+        "little"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 394,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-03-17_2023_03_17_gas_report_week_11_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-03-17_2023_03_17_gas_report_week_11_gas",
+      "parent_id": "baltic_gas_2023-03-17_2023_03_17_gas_report_week_11_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Ras Tanura-Chiba saw little movement this week with rates hovering around the close at $96.283 (which gives a TCE Equivalent of $83,097 per day round trip). The fixing window is already in the first decade of April, but tonnage up until this point remains relatively healthy.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "april",
+        "both",
+        "but",
+        "are"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 266,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

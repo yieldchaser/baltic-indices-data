@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__root",
+  "doc_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 51",
+  "section_path": [
+    "Bulk report - Week 51"
+  ],
+  "section_path_text": "Bulk report - Week 51",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market began the week on a positive note but experienced a gradual weakening as the week progressed. Early in the week, signs of optimism were seen in the Pacific and Atlantic markets, supported by improved cargo flows and a shorter ballaster list. However, these gains were quickly reversed as the Pacific market faced a persistent oversupply of tonnage, with the C5 index dropping steadily from $7.34 on Monday to end the week at $6.385, as owners scrambled for fixtures ahead of the Christmas holidays.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 846,
+  "source_path": "reports/baltic/dry/2024/2024-12-20_bulk-report-week-51_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry",
+      "parent_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market began the week on a positive note but experienced a gradual weakening as the week progressed. Early in the week, signs of optimism were seen in the Pacific and Atlantic markets, supported by improved cargo flows and a shorter ballaster list.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "optimism",
+        "supported"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 188,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry",
+      "parent_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A continuation of the previous week, with a steady rise in rates in the Atlantic. The North Atlantic again saw a tightening of tonnage supply, pitted against steady mineral demand throughout the week.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "japan",
+        "coal",
+        "grain",
+        "dwt",
+        "was",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry",
+      "parent_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The last full week of the year for many did little to bring much Christmas cheer, with market fundamentals changing little throughout the week. The North Atlantic remained rather positional, with a 61,000-dwt fixed basis delivery US Gulf for a trip to the Far East at $18,750.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry",
+      "parent_id": "baltic_dry_2024-12-20_2024_12_20_bulk_report_week_51_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market this week saw minimal visible activity across both basins, with rates continuing to slide in the Continent and Mediterranean, and sentiment generally soft. A 33,000-dwt open Newport UK around December 20th fixed delivery Newport via Baltic Russia to West Africa at $9,000.",
+      "keywords": [
+        "atlantic",
+        "west_africa",
+        "europe",
+        "delivery",
+        "dwt",
+        "redelivery",
+        "continent",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 174,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__root",
+  "doc_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 14",
+  "section_path": [
+    "Bulk report - Week 14"
+  ],
+  "section_path_text": "Bulk report - Week 14",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nOverall it was not a very active week, with limited fresh cargo support from either of the basins. The BCI and timecharter average started the week at a level close to 1800 points and $15,000, but remained in negative territory until a marginal improvement on Friday. The market settled at 1444 points and $11,979, the lowest value since mid-February this year.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 847,
+  "source_path": "reports/baltic/dry/2022/2022-04-08_bulk-report-week-14_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Overall it was not a very active week, with limited fresh cargo support from either of the basins. The BCI and timecharter average started the week at a level close to 1800 points and $15,000, but remained in negative territory until a marginal improvement on Friday.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "average",
+        "cargo",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 188,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A sluggish week activity wise for the Panamax market resulting in rates continuing to come under pressure. Noticeably the grain houses were absent from the market, which appeared to cause some anguish.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "europe",
+        "india",
+        "grain",
+        "activity",
+        "trips",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "An uninspiring week in many areas as demand from China eased, leading to limited fresh enquiry and prompt tonnage availability growing in key areas such as South East Asia. The Atlantic remained positional and rates eased slowly.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "japan",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2022-04-08_2022_04_08_bulk_report_week_14_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It has been a turbulent week with most regions seeing declining levels due to various factors. In Asia there was limited activity party due to holidays in China.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-11-01_2024_11_01_gas_report_week_44_gas__root",
+  "doc_id": "baltic_gas_2024-11-01_2024_11_01_gas_report_week_44_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 44",
+  "section_path": [
+    "Gas report - Week 44"
+  ],
+  "section_path_text": "Gas report - Week 44",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe market in the East is very subdued, with rates taking a battering due to limited inquiries and excess tonnage, along with charterers' reticence. This has left many owners and brokers within the LNG market feeling quite glum. Rate for our BLNG1 Aus-Japan came off steeply on the 174cbm 2-Stroke down $6599 giving a close of $35,214, while the 160cbm TFDE ships fared better losing only $404 the delta has narrowed, and we published at $24,509.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "india",
+    "japan",
+    "gas",
+    "cbm",
+    "down",
+    "close",
+    "daily",
+    "drop"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 597,
+  "source_path": "reports/baltic/gas/2024/2024-11-01_gas-report-week-44_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-11-01_2024_11_01_gas_report_week_44_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-11-01_2024_11_01_gas_report_week_44_gas",
+      "parent_id": "baltic_gas_2024-11-01_2024_11_01_gas_report_week_44_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market in the East is very subdued, with rates taking a battering due to limited inquiries and excess tonnage, along with charterers' reticence. This has left many owners and brokers within the LNG market feeling quite glum.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "cbm",
+        "down",
+        "stroke",
+        "tfde",
+        "charterers"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 384,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-11-01_2024_11_01_gas_report_week_44_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-11-01_2024_11_01_gas_report_week_44_gas",
+      "parent_id": "baltic_gas_2024-11-01_2024_11_01_gas_report_week_44_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With upcoming celebrations for Diwali, there were several ships fixed for Indian cargoes prior the close of the week. Although, rates were flat for the most part, and finished up marginally.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "india",
+        "gas",
+        "daily",
+        "earning",
+        "equivalent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -32,6 +32,7 @@ regions:
 - china
 - atlantic
 - us_gulf
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2021/2021-11-12_tanker-report-week-45_tanker.html

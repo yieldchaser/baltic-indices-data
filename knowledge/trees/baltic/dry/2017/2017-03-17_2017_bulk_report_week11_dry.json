@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__root",
+  "doc_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry",
+  "parent_id": null,
+  "title": "Bulk report - week 11",
+  "section_path": [
+    "Bulk report - week 11"
+  ],
+  "section_path_text": "Bulk report - week 11",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA heady week for the big ships as rates took off particularly in the Atlantic, with sustained activity from Brazil and a step up in transatlantic activity. An eco 180,000-tonner 2014-built open Ijmuiden 29 March fixed a non-breaching transatlantic round voyage at $21,000 daily and while a 2011-built 179,000-tonner not quite as well-described also did similar at $19,000 daily. A 6-15 April cargo was fixed from Colombia to Rotterdam earlier at $8.40 but timecharter rates were showing higher voyage equivalents than this.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1415,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week11_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A heady week for the big ships as rates took off particularly in the Atlantic, with sustained activity from Brazil and a step up in transatlantic activity. An eco 180,000-tonner 2014-built open Ijmuiden 29 March fixed a non-breaching transatlantic round voyage at $21,000 daily and while a 2011-built 179,000-tonner not quite as well-described also did similar at $19,000 daily.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "booked",
+        "built"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 365,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "An uncertain market generally with a slower pace from South America, but still underlying confidence that this key market will have another surge in activity. As rates eased, charterers began picking off tonnage as the week closed out with dop rates for Kamsarmaxes giving readiness in India and hovering around $11,000 daily for the rounds, while some charterers were again managing to secure tonnage on an aps basis plus a bonus.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "daily",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 271,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Generally, a relatively stable week with some positive numbers achieved. Period activity remained popular with a 63,000-dwt open Navlakhi mid-March, fixed for four to six months trading redelivery worldwide at $11,100 daily and a 58,000-dwt basis delivery Karachi for about four to seven months trading at $10,000 daily.",
+      "keywords": [
+        "supramax",
+        "china",
+        "australia",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 447,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2017-03-17_2017_bulk_report_week11_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A steady increase across all routes this week with the Asian sector seeing the largest increases. On the period front a 33,000-dwt open CJK was fixed in the low $8,000s for three to five months.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 318,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

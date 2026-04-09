@@ -22,6 +22,7 @@ keywords:
 market_tone: cautiously_bearish
 regions:
 - china
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2025/2025-10-10_container-report-week-41_container.html

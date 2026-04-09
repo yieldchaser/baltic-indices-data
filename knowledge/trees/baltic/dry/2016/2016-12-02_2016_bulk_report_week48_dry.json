@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__root",
+  "doc_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 48",
+  "section_path": [
+    "Bulk report - Week 48"
+  ],
+  "section_path_text": "Bulk report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA busier Friday than normal, albeit lacking a lot of actual fixture details. Eurydice D was the Marmaras vessel fixed by BHP at $6.05. Whilst Jiangsu Steamship fixed the EPS vessel Mount Hedland (181,196 dwt built 2010) for west Australia to Qingdao for 19 December dates at $6.20.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1384,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week48_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry",
+      "parent_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A busier Friday than normal, albeit lacking a lot of actual fixture details. Eurydice D was the Marmaras vessel fixed by BHP at $6.05.",
+      "keywords": [
+        "australia",
+        "pacific",
+        "europe",
+        "japan",
+        "fixed",
+        "built",
+        "cargo",
+        "december"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry",
+      "parent_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The market remains firmly in positive territory. Of the two basins, the Atlantic has the upper hand with some stronger numbers being reported, whilst the Pacific market was of a more gentle push.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 359,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry",
+      "parent_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It appeared to be a better week again for this size with some very strong numbers being reported especially from the north Atlantic. An ultramax was reported fixing a US Gulf fronthaul at $23,500 daily and a wood pellets cargo was fixed on another ultramax at $23,000 daily from US Gulf to Continent.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 420,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry",
+      "parent_id": "baltic_dry_2016-12-02_2016_bulk_report_week48_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "All routes showed an increase throughout the week . The market is generally much busier within the Atlantic and brokers are still reporting there is an overall lack of available tonnage within the US Gulf with expectations for another strong week ahead.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "brazil",
+        "atlantic",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 359,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

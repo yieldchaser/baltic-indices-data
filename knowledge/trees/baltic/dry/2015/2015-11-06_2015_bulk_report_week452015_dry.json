@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__root",
+  "doc_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 45 2015",
+  "section_path": [
+    "Bulk report - Week 45 2015"
+  ],
+  "section_path_text": "Bulk report - Week 45 2015",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nRates dropped in all areas of the market with simply too many ships chasing too few cargoes. One faint glimmer as the week closed as rates steadied from West Australia to China at $4.80-85 from the low this week of $4.55. Forward cargoes were now fixed at the higher number.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1115,
+  "source_path": "reports/baltic/dry/2015/2015_bulk-report-week452015_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry",
+      "parent_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates dropped in all areas of the market with simply too many ships chasing too few cargoes. One faint glimmer as the week closed as rates steadied from West Australia to China at $4.80-85 from the low this week of $4.55.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "daily",
+        "around",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry",
+      "parent_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Ballasters continued to overwhelm the South American market and rates fell. Kamsarmaxes were fixed passing the Cape of Good Hope via east coast South America to the East at $7,000 daily plus a $200,000 bonus but now willing to accept lower.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "daily",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__s03_supramax",
+      "doc_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry",
+      "parent_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A dull week with a continued downward trend on all sizes and all trades. Hardly any period business has been discussed.",
+      "keywords": [
+        "handysize",
+        "china",
+        "australia",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 464,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__s04_handysize",
+      "doc_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry",
+      "parent_id": "baltic_dry_2015-11-06_2015_bulk_report_week452015_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Many owners complained of spot vessels and failing on subjects. A 28,186 dwt vessel managed to fix delivery Skaw for a trip via Baltic to east Mediterranean at $7,000 daily and a 32,282 dwt ship fixed delivery Continent for a trip to the US Gulf at $4,850 per day, whilst Novorossiysk deliveries paid $5,200 and $4,500 for 33,000 tonners for east Mediterranean and Egypt redelivery respectively.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

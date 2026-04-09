@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__root",
+  "doc_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 37",
+  "section_path": [
+    "Bulk report - Week 37"
+  ],
+  "section_path_text": "Bulk report - Week 37",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market fell sharply across all areas with the positive sentiment for the fourth quarter being eroded. In Asia, the west Australia/China route remained fairly active but lacked a full set of miners in the market during the week. Rates dropped a dollar in three working days, and for now held at $7.50 for end September.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 865,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week37_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market fell sharply across all areas with the positive sentiment for the fourth quarter being eroded. In Asia, the west Australia/China route remained fairly active but lacked a full set of miners in the market during the week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "cargo",
+        "dropped"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Overall, a generally flat market remained last week despite the pressure from a falling paper market and slashed Cape rates. Transatlantic enquiry slowed, especially in the far north, and some vessels fixed short trips in order to reassess later.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "tonnage",
+        "charterers",
+        "enquiry",
+        "far"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A mixed week with some areas making gains, whilst others had support. Period trading was limited with a gap widening between owners and charterers, but brokers suggested that well-described Ultramaxes were fixing one year periods in the low teens.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2018-09-14_2018_bulk_report_week37_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The overall Handy index stayed in positive territory last week. Brokers noted more cargoes in the US Gulf with the tonnage list still tight.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__root",
+  "doc_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 26",
+  "section_path": [
+    "Bulk report - Week 26"
+  ],
+  "section_path_text": "Bulk report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a marked decline this week, with sentiment steadily weakening amid persistently low activity across both the Atlantic and Pacific basins. A key factor was the prolonged absence of all major C5 miners in the Pacific, which led to mounting vessel supply and further dampened sentiment. As a result, C5 fell sharply by week's end to mid-high $6.00 levels, down significantly from recent highs of $10.00-$11.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 948,
+  "source_path": "reports/baltic/dry/2025/2025-06-27_bulk-report-week-26_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a marked decline this week, with sentiment steadily weakening amid persistently low activity across both the Atlantic and Pacific basins. A key factor was the prolonged absence of all major C5 miners in the Pacific, which led to mounting vessel supply and further dampened sentiment.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "iron_ore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A compelling week in the Panamax market. The North trans-Atlantic runs providing numerous points of discussion, with wide ranging views on where true market value lay as West Med v Continent deliveries differentiated somewhat, however the overriding sentiment on the week continued to be positive.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "europe",
+        "japan",
+        "around",
+        "basis",
+        "arrival"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall, the sector was described as positional over the last week. The Atlantic saw mixed blessing for owners' as limited fresh enquiry from the US Gulf led to a drop in rates, at the beginning of the week a 58,000-dwt was reported fixed delivery Houston for a trip Nigeria at $20,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "fixing",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2025-06-27_2025_06_27_bulk_report_week_26_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the market saw a mixed performance with modest shifts across both basins. The Continent and Mediterranean regions remained subdued, with rates slipping below previous levels as the soft trend persisted.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "iron_ore",
+        "grain",
+        "dwt",
+        "fixed",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 259,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

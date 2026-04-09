@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__root",
+  "doc_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 13",
+  "section_path": [
+    "Bulk report - Week 13"
+  ],
+  "section_path_text": "Bulk report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market endured another week of frustrating troughs as rates languished at near historical lows. Monday's Baltic Capesize Index (BCI) route 5TC posted an index down -145 to settle at $4,035 and by Friday finished at $3,796. The beginning of the week had the Pacific market enveloped, with news of category four Cyclone Veronica.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 988,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week13_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry",
+      "parent_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market endured another week of frustrating troughs as rates languished at near historical lows. Monday's Baltic Capesize Index (BCI) route 5TC posted an index down -145 to settle at $4,035 and by Friday finished at $3,796.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "friday",
+        "market.",
+        "news",
+        "rio"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 293,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry",
+      "parent_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Atlantic saw a spike in rates last week for transatlantic trades. The index rose around $1,000 on Thursday, with Kamsarmaxes fixed at over $11,000 for longer grain runs via North Coast South America.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "grain",
+        "coast",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry",
+      "parent_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "As the week progressed, the Baltic Supramax Index (BSI) lost ground. Period activity remained sparse, but a 63,000dwt ship was fixed delivery US Gulf, for short period redelivery Atlantic, in the mid $13,000s.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "india",
+        "us_gulf",
+        "singapore",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry",
+      "parent_id": "baltic_dry_2019-03-29_2019_bulk_report_week13_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The improvement slowed in the Handysize sector throughout the week. Rates from the Continent and US Gulf started to slip.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "grain",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

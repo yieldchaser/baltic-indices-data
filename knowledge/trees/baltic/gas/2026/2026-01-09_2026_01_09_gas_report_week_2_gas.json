@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-01-09_2026_01_09_gas_report_week_2_gas__root",
+  "doc_id": "baltic_gas_2026-01-09_2026_01_09_gas_report_week_2_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 2",
+  "section_path": [
+    "Gas report - Week 2"
+  ],
+  "section_path_text": "Gas report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market softened this week, with the familiar seasonal pattern of rate declines emerging as the market moved further into Q1 fixing. After the strong finish to last year, the tonnage list seems to be lengthening, putting downward pressure on rates, particularly in the Atlantic. On the BLNG1 Australia-Japan route, 174k cbm rates fell by $9,740 to $43,000/day, reflecting weaker prompt demand and increasing vessel availability in the Pacific.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "route",
+    "day",
+    "day."
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 438,
+  "source_path": "reports/baltic/gas/2026/2026-01-09_gas-report-week-2_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-01-09_2026_01_09_gas_report_week_2_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-01-09_2026_01_09_gas_report_week_2_gas",
+      "parent_id": "baltic_gas_2026-01-09_2026_01_09_gas_report_week_2_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market softened this week, with the familiar seasonal pattern of rate declines emerging as the market moved further into Q1 fixing. After the strong finish to last year, the tonnage list seems to be lengthening, putting downward pressure on rates, particularly in the Atlantic.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-01-09_2026_01_09_gas_report_week_2_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-01-09_2026_01_09_gas_report_week_2_gas",
+      "parent_id": "baltic_gas_2026-01-09_2026_01_09_gas_report_week_2_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market started the year on a firm footing, with holiday-period activity carrying through into early January and particularly strong momentum seen in the Atlantic basin. On the BLPG1 Ras Tanura-Chiba route, rates edged up $0.17 to $80.83/mt, with TCE earnings improving $435 to $71,048/day, supported by steady Middle East demand despite some late-week consolidation.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "route",
+        "day.",
+        "earnings",
+        "tce",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 177,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

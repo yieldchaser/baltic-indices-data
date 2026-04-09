@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__root",
+  "doc_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 13",
+  "section_path": [
+    "Tanker report - Week 13"
+  ],
+  "section_path_text": "Tanker report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nActivity in the Middle East picked up this week and rates initially fell. However, by the end of the week owners had reclaimed losses and the overall week-on-week position was steady. 280,000mt to the US Gulf, via the Cape to Cape routing, is rated at the WS88 level, while 270,000mt to China is at WS112.5.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 676,
+  "source_path": "reports/baltic/tanker/2020/2020-03-27_tanker-report---week-13_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker",
+      "parent_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Activity in the Middle East picked up this week and rates initially fell. However, by the end of the week owners had reclaimed losses and the overall week-on-week position was steady.",
+      "keywords": [
+        "capesize",
+        "china",
+        "west_africa",
+        "us_gulf",
+        "activity",
+        "before",
+        "cape",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 156,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker",
+      "parent_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The market for 130,000mt West Africa to the UK-Continent mirrored the VLCC action, with rates initially diving down 10 points to WS100, before rebounding to low WS120s. The rates for 135,000mt Black Sea to the Mediterranean have remained flat for the week at close to WS115, however, there is a firming sentiment.",
+      "keywords": [
+        "vlcc",
+        "west_africa",
+        "europe",
+        "mediterranean",
+        "points",
+        "action",
+        "africa",
+        "again"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 135,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker",
+      "parent_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates for 80,000mt Ceyhan to the Mediterranean are now at WS165, down 10 points from a week ago. Rates in Northern Europe lost 20 points.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "now",
+        "points",
+        "gulf",
+        "mediterranean",
+        "ws130s."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 132,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker",
+      "parent_id": "baltic_tanker_2020-03-27_2020_03_27_tanker_report_week_13_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "After last week's gains to high WS170s, the market in the Middle East Gulf to Japan trade for 75,000mt was more settled in the low WS170s. Frontline tonnage was today reported to have agreed WS170 for Daelim.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "trade",
+        "was",
+        "after"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

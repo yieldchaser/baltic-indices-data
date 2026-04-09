@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__root",
+  "doc_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 16",
+  "section_path": [
+    "Bulk report - Week 16"
+  ],
+  "section_path_text": "Bulk report - Week 16",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market witnessed an eventful and generally positive week. Early in the week, a subdued start led to cautious attitudes among market participants, with slight declines in the BCI 5TC and C3 index. However, a notable turnaround occurred midweek, as sentiment improved markedly, particularly in the Pacific market.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 934,
+  "source_path": "reports/baltic/dry/2024/2024-04-19_bulk-report-week-16_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market witnessed an eventful and generally positive week. Early in the week, a subdued start led to cautious attitudes among market participants, with slight declines in the BCI 5TC and C3 index.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Most of the excitement emanated from the Atlantic again last week. The continued lack of early tonnage in the North had a profound effect on rates, with sound trans Atlantic demand rates lurched forwards with mention of various voyage cargoes fixed at above index timecharter equivalents.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "fixed",
+        "again",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A positive week for the sector with stronger rates being achieved in most areas. The Atlantic saw sustained interest from the US Gulf and healthy demand from the Continent and Mediterranean, whilst the South Atlantic saw reasonable levels of fresh enquiry.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "coal",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2024-04-19_2024_04_19_bulk_report_week_16_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Positivity returned to the Handysize sector as the week progressed. The US Gulf, saw a reduction in tonnage availability and a 39,000-dwt fixed from SW Pass to North Coast South America with a cargo of grains at a rate between $10,000 and $11,000.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "coal",
+        "grain",
+        "cargo",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

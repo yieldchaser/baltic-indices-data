@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__root",
+  "doc_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 40",
+  "section_path": [
+    "Bulk report - Week 40"
+  ],
+  "section_path_text": "Bulk report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA surprisingly busy week for the big ships despite the Chinese holidays, as owners and operators showed resistance at the start of the week that reaped rewards at the close. The Atlantic market led the way where increased interest highlighted the often limited amount of tonnage available. Rates soared for transatlantic runs with the York 2015 built from Immingham 15 October for a round at $17,000 with Cargill.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1337,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week40_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry",
+      "parent_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A surprisingly busy week for the big ships despite the Chinese holidays, as owners and operators showed resistance at the start of the week that reaped rewards at the close. The Atlantic market led the way where increased interest highlighted the often limited amount of tonnage available.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "built",
+        "october",
+        "achieved",
+        "active"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry",
+      "parent_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "More activity for panamaxes as the week drew to a close with rates largely steadier. The Atlantic saw a touch more transatlantic business but rates for standard panamaxes were still short of the mid $5,000s daily range.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "us_gulf",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry",
+      "parent_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The week began with holidays in Germany, Korea, Australia and China. India joined the queue at the end of the week and these all lead to minimal movement.",
+      "keywords": [
+        "supramax",
+        "china",
+        "australia",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 460,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry",
+      "parent_id": "baltic_dry_2016-10-07_2016_bulk_report_week40_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A relatively flat week across all routes with the indices, at the time of publishing, dropping at the princely rate of two points a day. The Atlantic remained the busier of the two basins, with holidays in China during the week.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 413,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

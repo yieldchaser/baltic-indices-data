@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__root",
+  "doc_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 49",
+  "section_path": [
+    "Bulk report - Week 49"
+  ],
+  "section_path_text": "Bulk report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week the Capesize market maintained healthy earnings, as an end of year surge took the Capesize 5TC back up to $25,202 by mid-week. This lift was predominately led in the Pacific, with strong trading activity from major iron ore charterers. With the steady flow of cargo in the Asia region, the Pacific C10 now trades at a solid 35% premium over the Atlantic C8.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1201,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week49_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry",
+      "parent_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week the Capesize market maintained healthy earnings, as an end of year surge took the Capesize 5TC back up to $25,202 by mid-week. This lift was predominately led in the Pacific, with strong trading activity from major iron ore charterers.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry",
+      "parent_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Another week of upward momentum in the Panamax market, with East Coast South America (ECSA) grain trips to the Far East witnessing the largest gains. In the Pacific healthy coal enquiry from Australia and Indonesia kept rates relatively stable on the week.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 448,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry",
+      "parent_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall, the Baltic Supramax Index (BSI) remained in positive mode, despite some areas lacking fresh activity. Period activity was limited, but a 60,000dwt vessel, open China, was fixed in the mid $11,000s for a short period.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "meg",
+        "india",
+        "us_gulf",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 253,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry",
+      "parent_id": "baltic_dry_2019-12-06_2019_bulk_report_week49_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Many brokers described the week as flat, which was reflected with the Baltic Handy Size Index (BHSI) remaining unchanged for most of the week. Limited period activity surfaced with a 36,000dwt ship fixing delivery from Marmara, for three to five months to the Atlantic, trading at $10,000.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "singapore",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 286,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

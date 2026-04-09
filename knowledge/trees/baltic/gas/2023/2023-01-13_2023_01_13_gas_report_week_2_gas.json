@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-01-13_2023_01_13_gas_report_week_2_gas__root",
+  "doc_id": "baltic_gas_2023-01-13_2023_01_13_gas_report_week_2_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 2",
+  "section_path": [
+    "Gas report - Week 2"
+  ],
+  "section_path_text": "Gas report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nLNG continues its fall this week with all three routes showing drops on spot assessments. A continued mild winter, and higher inventory supplies in Asia, suggests that the potential for a surge in demand due to the new Lunar New Year is not guaranteed. That is not to say that there haven't been fixtures.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "china",
+    "atlantic",
+    "japan",
+    "grain",
+    "crude_oil",
+    "gas",
+    "but",
+    "day",
+    "first",
+    "fixed"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 570,
+  "source_path": "reports/baltic/gas/2023/2023-01-13_gas-report-week-2_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-01-13_2023_01_13_gas_report_week_2_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-01-13_2023_01_13_gas_report_week_2_gas",
+      "parent_id": "baltic_gas_2023-01-13_2023_01_13_gas_report_week_2_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LNG continues its fall this week with all three routes showing drops on spot assessments. A continued mild winter, and higher inventory supplies in Asia, suggests that the potential for a surge in demand due to the new Lunar New Year is not guaranteed.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "japan",
+        "grain",
+        "crude_oil",
+        "gas",
+        "availability",
+        "blng3g"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 322,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-01-13_2023_01_13_gas_report_week_2_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-01-13_2023_01_13_gas_report_week_2_gas",
+      "parent_id": "baltic_gas_2023-01-13_2023_01_13_gas_report_week_2_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "In the east it has been mixed, rates have risen over $4 from the start of the week to close at $82.286 - but there is still uncertainty. With some Chinese counterparties coming out in the early part of the week it created belief of extra demand, which bolstered the ARB.",
+      "keywords": [
+        "lpg",
+        "china",
+        "gas",
+        "but",
+        "close",
+        "fixed",
+        "fixing",
+        "hasn"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

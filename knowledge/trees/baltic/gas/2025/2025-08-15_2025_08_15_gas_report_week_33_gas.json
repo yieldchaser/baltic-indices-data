@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-08-15_2025_08_15_gas_report_week_33_gas__root",
+  "doc_id": "baltic_gas_2025-08-15_2025_08_15_gas_report_week_33_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 33",
+  "section_path": [
+    "Gas report - Week 33"
+  ],
+  "section_path_text": "Gas report - Week 33",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIt has been a slightly more active week in the LNG market, with rates strengthening across most major routes despite some softness in the period market. Increased activity in the Atlantic and firmer sentiment in long-haul trades helped lift spot earnings. On the BLNG1 Australia-Japan route, rates for 174k cbm vessels rose $1,200 to $34,400 per day, while 160k cbm earnings fell $1,500 to $20,700 per day, reflecting diverging conditions between larger and smaller tonnage in the Pacific.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "day",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 477,
+  "source_path": "reports/baltic/gas/2025/2025-08-15_gas-report-week-33_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-08-15_2025_08_15_gas_report_week_33_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-08-15_2025_08_15_gas_report_week_33_gas",
+      "parent_id": "baltic_gas_2025-08-15_2025_08_15_gas_report_week_33_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It has been a slightly more active week in the LNG market, with rates strengthening across most major routes despite some softness in the period market. Increased activity in the Atlantic and firmer sentiment in long-haul trades helped lift spot earnings.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 282,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-08-15_2025_08_15_gas_report_week_33_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-08-15_2025_08_15_gas_report_week_33_gas",
+      "parent_id": "baltic_gas_2025-08-15_2025_08_15_gas_report_week_33_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market remained firm this week, with sentiment buoyed by ongoing tightness in vessel availability from continued congestion in the Neo Panama Canal. On the BLPG1 Ras Tanura-Chiba route, rates edged up $1.00 to $89.58 per metric tonne, with TCE earnings climbing $1,797 to $77,923 per day, supported by steady Middle East activity.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "per",
+        "metric",
+        "route",
+        "tce",
+        "tonne",
+        "continued"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__root",
+  "doc_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 36",
+  "section_path": [
+    "Bulk report - Week 36"
+  ],
+  "section_path_text": "Bulk report - Week 36",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a shifting sentiment over the week, starting on a steady but subdued note before softening midweek, before gradually improving across both basins with renewed support towards the close. In the Pacific, consistent miner and operator activity underpinned the market, although C5 fixtures largely held within the $9.95 to low $10.00 range. The South Brazil and West Africa to China routes were more active midweek, with C3 fixtures reported in the mid $23.00s and sustained appetite for second-half October stems.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 836,
+  "source_path": "reports/baltic/dry/2025/2025-09-05_bulk-report-week-36_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a shifting sentiment over the week, starting on a steady but subdued note before softening midweek, before gradually improving across both basins with renewed support towards the close. In the Pacific, consistent miner and operator activity underpinned the market, although C5 fixtures largely held within the $9.95 to low $10.00 range.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "fixtures",
+        "midweek"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 187,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week began on a subdued note but saw a marked shift mid-week as fundamentals improved significantly. Once again, the Atlantic basin was the primary driver of momentum.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "north",
+        "round",
+        "rounds",
+        "several"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Somewhat of a protracted week for some as poor sentiment in Asia saw a slight slowdown in the region. The Atlantic overall was positional, with US Gulf demand fluctuating, although generally rates and demand remained relatively healthy, with a 61,000-dwt fixing in the upper $20,000s for a transatlantic run.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2025-09-05_2025_09_05_bulk_report_week_36_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall, the market remained steady and relatively balanced throughout the week. The Continent and Mediterranean regions experienced modest upward movement as rates edged slightly higher and the market appeared better supported.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "steel",
+        "dwt",
+        "remained",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 188,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

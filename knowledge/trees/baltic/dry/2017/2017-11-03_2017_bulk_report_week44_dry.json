@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__root",
+  "doc_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 44",
+  "section_path": [
+    "Bulk report - Week 44"
+  ],
+  "section_path_text": "Bulk report - Week 44",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nWhilst the rate levels have come off during the week, there still seems to be a reasonable balance. For the west Australia to China run, the market has slipped to around US$7.50 from last week's levels in the low US$8s. Brazil to China has remained around the US$17.50 level with this rate fixed by SwissMarine on the Kyla Fortune and the newcastlemax - Kachodoki achieving a similar rate from Cargill for a full cargo.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1147,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week44_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry",
+      "parent_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Whilst the rate levels have come off during the week, there still seems to be a reasonable balance. For the west Australia to China run, the market has slipped to around US$7.50 from last week's levels in the low US$8s.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry",
+      "parent_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The index continued its decline for the first half of the week, but has increased in the last two days, on the back of the rising Atlantic market. Tightening supply on the north Continent and west Mediterranean combined with fresh demand pushed transatlantic rates up considerably in the past 24 hours and produced even more period interest.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry",
+      "parent_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Very little was heard on the period market, an ultramax 63,000-dwt 2015-built open north China was said to have fixed for four to six months trading redelivery Middle East Gulf-Japan range at US$12,000. The Atlantic routes dropped across most areas, with the exception of the US Gulf, which bucked the trend as tonnage supply balanced out.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 359,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry",
+      "parent_id": "baltic_dry_2017-11-03_2017_bulk_report_week44_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A fairly slow week in general with various holidays worldwide. Negative sentiments remained across all routes, however there was talk of the US Gulf showing slight signs of recovery.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "pacific",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 264,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

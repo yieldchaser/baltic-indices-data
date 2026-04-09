@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__root",
+  "doc_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 42",
+  "section_path": [
+    "Bulk report - Week 42"
+  ],
+  "section_path_text": "Bulk report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a strong week with the timecharter average breaking over $30,000/day, the highest value in 17 months. However, the surge hit pause on Thursday and the 5TC slipped below the threshold to $29,493 on Friday. Strong rates were reported from North Atlantic, regardless of short or long duration fronthaul trips, with tonnage list remaining tight throughout the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 898,
+  "source_path": "reports/baltic/dry/2023/2023-10-20_bulk-report-week-42_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a strong week with the timecharter average breaking over $30,000/day, the highest value in 17 months. However, the surge hit pause on Thursday and the 5TC slipped below the threshold to $29,493 on Friday.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "qingdao",
+        "run"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market returned a real Atlantic/Asia divide this week. The Atlantic market progressed all week, particularly midweek, primarily driven by both solid mineral and grain demand both for transatlantic and fronthaul trips, with the former assisted by some cape split cargo entering the fray.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "grain",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall, a rather subdued end for the week. The only bright spark was from the US Gulf, which saw a strong rebound at the beginning with better levels of enquiry and tightness of prompt tonnage.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2023-10-20_2023_10_20_bulk_report_week_42_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Levels continued to improve in the South Atlantic, with a 36,000 dwt fixing from Rio Grande to Caldera at $26,000, whilst a 37,000 dwt was rumoured to have been fixed from North Brazil to Algeria with an intended cargo of grains at $21,000. The Mediterranean slowed as the week progressed with limited fresh cargo and suggestion that events in the region were also playing their part, a 36,000 dwt opening in Varna was fixed for a trip via Romania to the Continent at $14,000.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "europe",
+        "grain",
+        "dwt",
+        "fixed",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

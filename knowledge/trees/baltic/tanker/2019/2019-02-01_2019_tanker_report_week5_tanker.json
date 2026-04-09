@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__root",
+  "doc_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 5",
+  "section_path": [
+    "Tanker report - Week 5"
+  ],
+  "section_path_text": "Tanker report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nIn the Middle East Gulf the market for 270,000mt to China fell six points, with Unipec securing WS 48. Going west, Exxon took two ships, at WS 20 Suez/Suez, for 280,000mt to US Gulf. In West Africa, in line with the Middle East market, rates fell almost four points to WS 50.",
+  "keywords": [
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "singapore",
+    "japan",
+    "points",
+    "east"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 419,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week5_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker",
+      "parent_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "In the Middle East Gulf the market for 270,000mt to China fell six points, with Unipec securing WS 48. Going west, Exxon took two ships, at WS 20 Suez/Suez, for 280,000mt to US Gulf.",
+      "keywords": [
+        "china",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "east",
+        "fell"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 118,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker",
+      "parent_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa initially firmed to WS 80 for 130,000mt to UK-Continent, before easing to low WS 70s. Black Sea/Mediterranean rates for 135,000mt were steady at WS 97.5, with Turkish straits delays of 36 days in total, north and south, supporting the market here.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "africa",
+        "before",
+        "black",
+        "days",
+        "delays",
+        "easing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 73,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker",
+      "parent_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "An uneventful week saw rates static at WS 105 for 80,000mt from Ceyhan with Black Sea paying low WS 120s. In the Baltic rates for 100,000mt dropped to WS 87.5.",
+      "keywords": [
+        "sea",
+        "black",
+        "ceyhan",
+        "cross-north",
+        "dropped",
+        "followed",
+        "losing",
+        "low"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 75,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker",
+      "parent_id": "baltic_tanker_2019-02-01_2019_tanker_report_week5_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Rates for 75,000mt Middle East Gulf/Japan eased 2.5 points to WS 127.5. The market for 55,000mt fell a further 7.5 points to WS 122.5.",
+      "keywords": [
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "assessments",
+        "backhaul",
+        "before"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

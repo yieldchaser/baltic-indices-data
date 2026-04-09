@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__root",
+  "doc_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 50",
+  "section_path": [
+    "Bulk report - Week 50"
+  ],
+  "section_path_text": "Bulk report - Week 50",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market moved sharply lower this week with both the overall index and the average of the five timecharter routes declining over 2100 points and $17,422, compared with last Friday, closing the week at 2727 and $22,613 respectively. C10, the transpacific run, was the major contributor to the decline alongside C5, the west Australia to Qingdao run, fell to the level of $9/mt. In the Atlantic, both transatlantic and fronthaul continued southwards movement throughout the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 917,
+  "source_path": "reports/baltic/dry/2021/2021-12-17_bulk-report-week-50_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market moved sharply lower this week with both the overall index and the average of the five timecharter routes declining over 2100 points and $17,422, compared with last Friday, closing the week at 2727 and $22,613 respectively. C10, the transpacific run, was the major contributor to the decline alongside C5, the west Australia to Qingdao run, fell to the level of $9/mt.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "iron_ore",
+        "was",
+        "both"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "‘Twas the week before Christmas, but there was little festive cheer around the Panamax market with substantial corrections enveloping the market. Some scrambled to take cover prior to the holidays and were forced to take lower rates as the tonnage count carried over from last week impacted markets.",
+      "keywords": [
+        "panamax",
+        "brazil",
+        "australia",
+        "atlantic",
+        "coal",
+        "but",
+        "tonnage",
+        "very"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__root",
+      "title": "Supramax / Ultramax",
+      "section_path": [
+        "Supramax / Ultramax"
+      ],
+      "section_path_text": "Supramax / Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The last full working week for many prior to the Christmas holidays saw sentiment slide with limited fresh enquiries appearing on the market from key areas and some owners discounting to get cover over the festive season. Limited period activity surfaced but a Tess 64 was rumoured fixed basis delivery April 2022 for three years trading at 117 percent of BSI.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "india",
+        "us_gulf",
+        "coal",
+        "dwt",
+        "limited"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2021-12-17_2021_12_17_bulk_report_week_50_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With the Holiday season drawing closer the visible activity levels dropped this week with many having taken cover early it seems. Sentiment softened in most regions as some owners were said to take discounted rates to avoid being open next week.",
+      "keywords": [
+        "australia",
+        "europe",
+        "japan",
+        "bauxite",
+        "steel",
+        "dwt",
+        "fixed",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__root",
+  "doc_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 27",
+  "section_path": [
+    "Bulk report - Week 27"
+  ],
+  "section_path_text": "Bulk report - Week 27",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market showed signs of stabilisation this week following a period of softness, with improvements in the Pacific basin and a more balanced Atlantic. In the Pacific, C5 rates gradually firmed, rising from $6.90 early in the week to $7.44 by week's end. All three major miners were active and fixing volumes increased, tightening the tonnage list toward the close.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 900,
+  "source_path": "reports/baltic/dry/2025/2025-07-04_bulk-report-week-27_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market showed signs of stabilisation this week following a period of softness, with improvements in the Pacific basin and a more balanced Atlantic. In the Pacific, C5 rates gradually firmed, rising from $6.90 early in the week to $7.44 by week's end.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market returned mostly a flat week, with the exception being EC South America, which witnessed a steady rise from mid-week with solid levels of demand and firm fundamentals. The North Atlantic disappointed by comparison, while the transatlantic trips remained mixed with far-ranging rates concluded depending on delivery point.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "japan",
+        "grain",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather positive week for the sector as demand increased in some key areas. In the Atlantic, the US Gulf saw stronger numbers being discussed with charterers bidding towards the mid $20,000s for transatlantic runs to attract any interest from Ultramax owners.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "steel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 248,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2025-07-04_2025_07_04_bulk_report_week_27_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was generally a quiet week for the Handy sector. Activity continued to slow down across the Continent and the Mediterranean as many participants were away attending various shipping events.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "coal",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 198,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-05-23_2025_05_23_gas_report_week_21_gas__root",
+  "doc_id": "baltic_gas_2025-05-23_2025_05_23_gas_report_week_21_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 21",
+  "section_path": [
+    "Gas report - Week 21"
+  ],
+  "section_path_text": "Gas report - Week 21",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG freight market softened this week, with declines across most routes and a mixed performance in the period market. Weaker transpacific activity and limited fresh demand weighed on earnings, although isolated Atlantic resilience offered brief support. On the BLNG1 Australia-Japan route, spot rates for 174k cbm vessels declined $1,400, ending at $20,400/day, while the 160k cbm segment fell $1,200 to $12,400/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day.",
+    "cbm",
+    "earnings"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 527,
+  "source_path": "reports/baltic/gas/2025/2025-05-23_gas-report-week-21_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-05-23_2025_05_23_gas_report_week_21_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-05-23_2025_05_23_gas_report_week_21_gas",
+      "parent_id": "baltic_gas_2025-05-23_2025_05_23_gas_report_week_21_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG freight market softened this week, with declines across most routes and a mixed performance in the period market. Weaker transpacific activity and limited fresh demand weighed on earnings, although isolated Atlantic resilience offered brief support.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 306,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-05-23_2025_05_23_gas_report_week_21_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-05-23_2025_05_23_gas_report_week_21_gas",
+      "parent_id": "baltic_gas_2025-05-23_2025_05_23_gas_report_week_21_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market experienced a decline this week, as the previous rally driven by tariff-related disruption gave way to correction. Rates across all routes fell, with sentiment cooling amid rate hikes, a closed US arb and easing vessel supply.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "day.",
+        "earnings",
+        "fell",
+        "route",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

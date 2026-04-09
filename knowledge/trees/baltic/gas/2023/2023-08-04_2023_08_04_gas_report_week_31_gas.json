@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-08-04_2023_08_04_gas_report_week_31_gas__root",
+  "doc_id": "baltic_gas_2023-08-04_2023_08_04_gas_report_week_31_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 31",
+  "section_path": [
+    "Gas report - Week 31"
+  ],
+  "section_path_text": "Gas report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nSome movement on spot has pushed levels up slightly and discussions for spot chartering fixtures remains active. Questions have been asked in both basins, as well as the Middle East with laycans spreading out for a few months. As we approach the winter period expectations are that some of these enquires will ask for period to cover any potential shortfalls during the peak months.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "europe",
+    "japan",
+    "gas",
+    "close",
+    "delays",
+    "pushed",
+    "are",
+    "daily",
+    "period",
+    "rise"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 534,
+  "source_path": "reports/baltic/gas/2023/2023-08-04_gas-report-week-31_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-08-04_2023_08_04_gas_report_week_31_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-08-04_2023_08_04_gas_report_week_31_gas",
+      "parent_id": "baltic_gas_2023-08-04_2023_08_04_gas_report_week_31_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Some movement on spot has pushed levels up slightly and discussions for spot chartering fixtures remains active. Questions have been asked in both basins, as well as the Middle East with laycans spreading out for a few months.",
+      "keywords": [
+        "lng",
+        "europe",
+        "japan",
+        "gas",
+        "delays",
+        "are",
+        "close",
+        "months."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-08-04_2023_08_04_gas_report_week_31_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-08-04_2023_08_04_gas_report_week_31_gas",
+      "parent_id": "baltic_gas_2023-08-04_2023_08_04_gas_report_week_31_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There was not a clear direction for the LPG out in the East at the start of the week. A decrease on fixtures month-on-month and further reductions from producers suggested a fall in rates.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "close",
+        "daily",
+        "tce",
+        "blpg2",
+        "earning",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 253,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

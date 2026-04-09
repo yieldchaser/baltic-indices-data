@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-09-08_2023_09_08_gas_report_week_36_gas__root",
+  "doc_id": "baltic_gas_2023-09-08_2023_09_08_gas_report_week_36_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 36",
+  "section_path": [
+    "Gas report - Week 36"
+  ],
+  "section_path_text": "Gas report - Week 36",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe exodus of many LNG market participants to Singapore for Gastech 2023 has not completely hampered gains for the spot LNG market. There have been fewer fixtures recorded but enquiries for October loadings are still gaining momentum. Industrial action has been confirmed by the Offshore Alliance for Chevrons Gorgon and Wheatstone downstream facilities and is expected to last around three weeks.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "singapore",
+    "japan",
+    "grain",
+    "gas",
+    "are",
+    "still",
+    "but",
+    "expected",
+    "rise"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 541,
+  "source_path": "reports/baltic/gas/2023/2023-09-08_gas-report-week-36_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-09-08_2023_09_08_gas_report_week_36_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-09-08_2023_09_08_gas_report_week_36_gas",
+      "parent_id": "baltic_gas_2023-09-08_2023_09_08_gas_report_week_36_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The exodus of many LNG market participants to Singapore for Gastech 2023 has not completely hampered gains for the spot LNG market. There have been fewer fixtures recorded but enquiries for October loadings are still gaining momentum.",
+      "keywords": [
+        "lng",
+        "singapore",
+        "japan",
+        "grain",
+        "gas",
+        "but",
+        "are",
+        "expected"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 289,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-09-08_2023_09_08_gas_report_week_36_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-09-08_2023_09_08_gas_report_week_36_gas",
+      "parent_id": "baltic_gas_2023-09-08_2023_09_08_gas_report_week_36_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A tumultuous week for the LPG market with big movements on all three routes. Rates have risen to almost the previous highs seen back in November 2022, which broke the previous highs from several years previous.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "gas",
+        "are",
+        "blpg2",
+        "blpg3",
+        "cargo",
+        "charterers"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 246,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

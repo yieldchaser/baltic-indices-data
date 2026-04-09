@@ -31,6 +31,7 @@ regions:
 - china
 - us_gulf
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2019/2019_tanker-report-week10_tanker.html

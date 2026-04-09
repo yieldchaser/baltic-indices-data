@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__root",
+  "doc_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 4",
+  "section_path": [
+    "Bulk report - Week 4"
+  ],
+  "section_path_text": "Bulk report - Week 4",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market delivered a strong performance over much of the week, with sentiment and rates firming across both basins before a late-week correction tempered the rally. Early in the week, robust miner participation, healthy cargo volumes and tightening tonnage lists underpinned a steady rise in Pacific rates. C5 steadily climbed into the mid-to-high $8.00s.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 867,
+  "source_path": "reports/baltic/dry/2026/2026-01-23_bulk-report-week-4_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__s01_capesize",
+      "doc_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market delivered a strong performance over much of the week, with sentiment and rates firming across both basins before a late-week correction tempered the rally. Early in the week, robust miner participation, healthy cargo volumes and tightening tonnage lists underpinned a steady rise in Pacific rates.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "correction",
+        "sentiment",
+        "africa"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week opened with a noticeably firmer tone across both basins, driven by improving demand and stronger rate ideas. In the Atlantic, transatlantic activity continued to strengthen early in the week, with grain employment maintaining a premium over mineral business and fronthaul enquiry remaining supportive.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "grain",
+        "activity",
+        "business",
+        "demand",
+        "fronthaul",
+        "mineral"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Many described a positional week for the sector with regional variations. In the Atlantic, the US Gulf gained traction at the beginning but as it closed some felt a ceiling had been reached.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "open",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2026-01-23_2026_01_23_bulk_report_week_4_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handysize markets posted a gradual improvement over the week, ending on a firmer footing, driven mainly by strength in the Atlantic, while the Pacific continued to lag behind. In the South Atlantic, healthy cargo volumes and tightening tonnage pushed rates higher, highlighted by a 37,000-dwt vessel fixed for delivery Recalada to redelivery West Africa at $22,250.",
+      "keywords": [
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

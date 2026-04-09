@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__root",
+  "doc_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 44",
+  "section_path": [
+    "Bulk report - Week 44"
+  ],
+  "section_path_text": "Bulk report - Week 44",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe capesize market started the week on a sluggish note with the PPA conference in Perth creating a quieter atmosphere, leading to reduced trading volumes in the Pacific and a softening of rates. Despite some stabilisation in conditions midweek, the Pacific market remained uninspiring with limited activity and rates on the C5 route dipped. However, as the week drew to a close, there was a slight uptick in volumes and rates on C5 have nudged back up by 45 to 50 cents.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 928,
+  "source_path": "reports/baltic/dry/2023/2023-11-03_bulk-report-week-44_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry",
+      "parent_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The capesize market started the week on a sluggish note with the PPA conference in Perth creating a quieter atmosphere, leading to reduced trading volumes in the Pacific and a softening of rates. Despite some stabilisation in conditions midweek, the Pacific market remained uninspiring with limited activity and rates on the C5 route dipped.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "conditions",
+        "drew",
+        "end"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry",
+      "parent_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A rather protracted affair as the week started with limited demand in both basins. However, as the week came to a close, increased mineral demand saw increased activity in the North Atlantic, which offered support.",
+      "keywords": [
+        "atlantic",
+        "india",
+        "was",
+        "demand",
+        "dwt",
+        "limited",
+        "south",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry",
+      "parent_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A poor week overall for the sector as demand remained low in both basins. The only upside was seen in the Atlantic from the US Gulf were fresh enquiry combined with a shortage of tonnage saw rates push up.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry",
+      "parent_id": "baltic_dry_2023-11-03_2023_11_03_bulk_report_week_44_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of general negativity across the handy sector with limited cargo availability and growing tonnage lists across both basins. The lone region of positivity was in the US Gulf and US East Coast where tonnage was said to be limited, with a 35,000 dwt fixed for a trip from Panama City to the UK-Continent range at $20,000.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "was",
+        "cargo",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

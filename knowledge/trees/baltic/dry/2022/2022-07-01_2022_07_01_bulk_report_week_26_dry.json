@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__root",
+  "doc_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 26",
+  "section_path": [
+    "Bulk report - Week 26"
+  ],
+  "section_path_text": "Bulk report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA mild week for the Capesize sector saw rates trundling sideways with small pockets of encouragement. However, there was nothing to initiate a push out of the recent trading range as the 5TC softened 130 week-on-week to settle at $19,745. A brief lift midweek gave some suggestion that a strengthening of sentiment in the Atlantic was imminent.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 972,
+  "source_path": "reports/baltic/dry/2022/2022-07-01_bulk-report-week-26_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A mild week for the Capesize sector saw rates trundling sideways with small pockets of encouragement. However, there was nothing to initiate a push out of the recent trading range as the 5TC softened 130 week-on-week to settle at $19,745.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "iron_ore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 281,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "For the third successive week corrections were seen in the Panamax market. Muted demand was again met by a sea of prompt tonnage along with an increasing ballaster count.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "atlantic",
+        "grain",
+        "south",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather dull week for the sector as most areas lacked fresh impetus and a build up of prompt tonnage. As the week ended, however, some saw a bit of resistance to the malaise from key areas.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 266,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2022-07-01_2022_07_01_bulk_report_week_26_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With largely negative sentiment in both basins, in which brokers described a lack of fresh enquiry as a main contributing factor, levels have softened across the board except for requirements from China to the Atlantic. These have remained stable with a 38,000-dwt fixing from South China to the Mediterranean at $36,000.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "bauxite",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__root",
+  "doc_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 22",
+  "section_path": [
+    "Bulk report - Week 22"
+  ],
+  "section_path_text": "Bulk report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA sober end to the week, with the market seemingly ready for the weekend. After a steady week of rate declines a small flurry of Atlantic business - combined with a little activity in the Pacific - managed to end the week up a tick. While a bottom may have been found, there's no bull flags as the Capesize 5TC posted up +141 to settle at a low $3369.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 880,
+  "source_path": "reports/baltic/dry/2020/2020-05-29_Bulk-report-Week-22_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A sober end to the week, with the market seemingly ready for the weekend. After a steady week of rate declines a small flurry of Atlantic business - combined with a little activity in the Pacific - managed to end the week up a tick.",
+      "keywords": [
+        "capesize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "little",
+        "end",
+        "levels"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Various holidays at the start of the week failed to dampen the Panamax market, with significant gains made in index values. Transatlantic volume was thinner but positive sentiment radiated from good volumes and better rates on the fronthaul trips.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "south",
+        "arrival",
+        "throughout"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 187,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A short week with activity levels a little slower than the previous week. Period activity surfaced, which some saw as a positive move.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 243,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2020-05-29_2020_05_29_bulk_report_week_22_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A short week with east coast South America and the Pacific lending strong support for Handysizes. Slightly more cargoes circulated from the continent and Mediterranean, whilst owners showed some resistance towards the end of the week.",
+      "keywords": [
+        "handysize",
+        "china",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

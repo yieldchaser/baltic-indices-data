@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__root",
+  "doc_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 2",
+  "section_path": [
+    "Bulk report - Week 2"
+  ],
+  "section_path_text": "Bulk report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market endured a somewhat traditional post-holiday Q1 drop as the 5TC descended -7760 over the week to settle at $12,407. Trading activity was relatively quiet over the week as news from Brazil reported high rainfall affecting mining operations of iron ore flow. The Brazil to China C3 was expectedly softer as the route settle down to $19.175.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 902,
+  "source_path": "reports/baltic/dry/2022/2022-01-14_bulk-report-week-2_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry",
+      "parent_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market endured a somewhat traditional post-holiday Q1 drop as the 5TC descended -7760 over the week to settle at $12,407. Trading activity was relatively quiet over the week as news from Brazil reported high rainfall affecting mining operations of iron ore flow.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "iron_ore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 239,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry",
+      "parent_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The decline in the Panamax market showed no signs of abating this week with further substantial corrections in both basins. In the Atlantic, a distinct lack of mineral demand in the North - as well as a build-up of tonnage count - weighed heavy on the few deals to be reported this week.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "singapore",
+        "coal",
+        "south",
+        "tonnage",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry",
+      "parent_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__root",
+      "title": "Supramax / Ultramax",
+      "section_path": [
+        "Supramax / Ultramax"
+      ],
+      "section_path_text": "Supramax / Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another week in which sentiment remained negative overall. However, there was a change in direction from the US Gulf which saw a slight improvement in rates.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry",
+      "parent_id": "baltic_dry_2022-01-14_2022_01_14_bulk_report_week_2_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Another week of reductions on the BHSI with pressure continuing in the Atlantic basin. Numbers continue to fall on the Continent with a 32,000-dwt rumoured to have fixed from Amsterdam to the US Gulf at $14,000 and a 38,000-dwt open in the Baltic fixing a trip to the US Gulf at $14,000.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "grain",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

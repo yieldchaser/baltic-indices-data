@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__root",
+  "doc_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 13",
+  "section_path": [
+    "Bulk report - Week 13"
+  ],
+  "section_path_text": "Bulk report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market fared little better this week to begin with. However, by Friday green shoots were beginning to emerge as the 5TC saw a low of $13,596 yet closed at $15,460. The Atlantic basin remains the Achilles heel of the market with poor levels of cargoes to tonnage available as the transatlantic C8 settled weeks end at $12,200.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 921,
+  "source_path": "reports/baltic/dry/2022/2022-04-01_bulk-report-week-13_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market fared little better this week to begin with. However, by Friday green shoots were beginning to emerge as the 5TC saw a low of $13,596 yet closed at $15,460.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "An underwhelming return for the Panamax market this week with all routes under pressure. A distinct lack of demand in the North Atlantic aided a drift in rates.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "singapore",
+        "japan",
+        "iron_ore",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The recent strength within the Asian arena was eroded during the week as enquiry levels from key areas like Indonesia dipped, which lead to a plentiful supply of prompt tonnage. The Atlantic was regarded by many as positional with key areas such as the US Gulf lacking fresh enquiry going forward.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "steel",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2022-04-01_2022_04_01_bulk_report_week_13_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "East Coast South America's positive gains ended at a high of $50,065, after gaining $23,954 since 7 March, and brokers spoke of a rebalancing of tonnage to enquiry in the region. A 38,000-dwt open West Africa fixed via Brazil to the Continent with an intended cargo of pig iron at $31,000.",
+      "keywords": [
+        "china",
+        "brazil",
+        "west_africa",
+        "europe",
+        "japan",
+        "coal",
+        "steel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-10-04_2024_10_04_gas_report_week_40_gas__root",
+  "doc_id": "baltic_gas_2024-10-04_2024_10_04_gas_report_week_40_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 40",
+  "section_path": [
+    "Gas report - Week 40"
+  ],
+  "section_path_text": "Gas report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nWe are very much in the winter season for LNG, although if you were to look at the spot freight rates you would not be able to tell. With muted enquiry and only a couple of requirements on either side of the canal, there is not much to report back. All three routes have lost value this week.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "gas",
+    "not",
+    "came",
+    "closing",
+    "much",
+    "tce",
+    "all"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 548,
+  "source_path": "reports/baltic/gas/2024/2024-10-04_gas-report-week-40_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-10-04_2024_10_04_gas_report_week_40_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-10-04_2024_10_04_gas_report_week_40_gas",
+      "parent_id": "baltic_gas_2024-10-04_2024_10_04_gas_report_week_40_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "We are very much in the winter season for LNG, although if you were to look at the spot freight rates you would not be able to tell. With muted enquiry and only a couple of requirements on either side of the canal, there is not much to report back.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "gas",
+        "not",
+        "all",
+        "are",
+        "came"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 274,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-10-04_2024_10_04_gas_report_week_40_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-10-04_2024_10_04_gas_report_week_40_gas",
+      "parent_id": "baltic_gas_2024-10-04_2024_10_04_gas_report_week_40_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It does not take much for the LPG market to change, and the winds of change hit hard and fast this week. BLPG1 Ras Tanura-Chiba is up 47.65%, which is one the greatest jumps on the route for a long time.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "tce",
+        "change",
+        "closing",
+        "earning"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 268,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

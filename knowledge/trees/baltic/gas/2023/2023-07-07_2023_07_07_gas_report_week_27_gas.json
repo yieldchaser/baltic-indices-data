@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-07-07_2023_07_07_gas_report_week_27_gas__root",
+  "doc_id": "baltic_gas_2023-07-07_2023_07_07_gas_report_week_27_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 27",
+  "section_path": [
+    "Gas report - Week 27"
+  ],
+  "section_path_text": "Gas report - Week 27",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market has had a little break from the frenetic fixing of the week prior. Rates for all three routes have been stable with minor fluctuations on all three, resulting mainly from the fluctuations of fuel prices rather than any market activity. For Aus-Japan there was a minimal rise of $349 on the week to close out at $67,875.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "china",
+    "japan",
+    "gas",
+    "was",
+    "but",
+    "cargoes",
+    "had",
+    "rise",
+    "close",
+    "fall"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 567,
+  "source_path": "reports/baltic/gas/2023/2023-07-07_gas-report-week-27_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-07-07_2023_07_07_gas_report_week_27_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-07-07_2023_07_07_gas_report_week_27_gas",
+      "parent_id": "baltic_gas_2023-07-07_2023_07_07_gas_report_week_27_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market has had a little break from the frenetic fixing of the week prior. Rates for all three routes have been stable with minor fluctuations on all three, resulting mainly from the fluctuations of fuel prices rather than any market activity.",
+      "keywords": [
+        "lng",
+        "china",
+        "japan",
+        "gas",
+        "rise",
+        "all",
+        "blng2g",
+        "export"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 295,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-07-07_2023_07_07_gas_report_week_27_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-07-07_2023_07_07_gas_report_week_27_gas",
+      "parent_id": "baltic_gas_2023-07-07_2023_07_07_gas_report_week_27_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The gas market has had quite a ride this week. Out in the East there was a steady fall where BLPG1 Ras Tanura-Chiba lost $19.643 over the week to close below $100 at $99.643, which gave a daily TCE earning of $85,358, over $20,000 less than at the start of the week.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "was",
+        "but",
+        "cargoes",
+        "fall",
+        "close",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 266,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

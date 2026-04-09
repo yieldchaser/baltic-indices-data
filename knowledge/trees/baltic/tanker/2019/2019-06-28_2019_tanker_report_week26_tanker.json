@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__root",
+  "doc_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 26",
+  "section_path": [
+    "Tanker report - Week 26"
+  ],
+  "section_path_text": "Tanker report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nAlthough Middle East tensions remain, owners and charterers have picked up fixing volume, including on older and ‘compromised' tonnage, but the market has eased slightly. 270,000mt Middle East Gulf/China now rests at WS 50-51 level. 280,000mt Middle East Gulf/US Gulf basis Cape/Cape is rated at WS 21-22 region.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "products"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 503,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week26_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker",
+      "parent_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Although Middle East tensions remain, owners and charterers have picked up fixing volume, including on older and ‘compromised' tonnage, but the market has eased slightly. 270,000mt Middle East Gulf/China now rests at WS 50-51 level.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "us_gulf",
+        "east",
+        "middle",
+        "gulf/china",
+        "level."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 125,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker",
+      "parent_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 130,000mt West Africa/UK Continent came under further pressure this week, bottoming out just below WS 60, before bouncing back to WS 65 level at the time of writing. 135,000mt Black Sea/Mediterranean lost around WS 5 points over the week, now being rated at WS 77.5 region, despite limited known volume.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "pressure",
+        "africa/uk",
+        "around",
+        "back",
+        "basrah/mediterranean",
+        "before"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 112,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker",
+      "parent_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Owners put Charterers under pressure this week in the Mediterranean, lifting the market for 80,000mt Ceyhan/Mediterranean to WS 105, up around WS 20 points week-on-week. Meanwhile 80,000mt Cross-North Sea remained static at WS 87.5.",
+      "keywords": [
+        "europe",
+        "around",
+        "baltic/uk",
+        "ceyhan/mediterranean",
+        "charterers",
+        "continent",
+        "continues",
+        "cross-north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 80,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker",
+      "parent_id": "baltic_tanker_2019-06-28_2019_tanker_report_week26_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Middle East Gulf clean market was slightly weaker this week. 75,000mt Middle East Gulf/Japan sits at WS97.5.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "products",
+        "gas",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 173,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

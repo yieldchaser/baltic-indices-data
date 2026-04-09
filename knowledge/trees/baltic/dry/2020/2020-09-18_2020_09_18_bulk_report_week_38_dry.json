@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__root",
+  "doc_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 38",
+  "section_path": [
+    "Bulk report - Week 38"
+  ],
+  "section_path_text": "Bulk report - Week 38",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nIt was all heavy swell for the Capesize market this week as rate levels swung with no clear direction. The Capesize 5TC opened the week at $15,248 to close at $15,761. The Pacific basin was seen to gain traction throughout the beginning of the week, supplying positive sentiment into other parts of the market before it fell away mid-week as charterers took the upper hand.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 926,
+  "source_path": "reports/baltic/dry/2020/2020-09-18_bulk-report-week-38_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It was all heavy swell for the Capesize market this week as rate levels swung with no clear direction. The Capesize 5TC opened the week at $15,248 to close at $15,761.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "was",
+        "largely"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 271,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It proved to be a flat week in the Panamax market with the Panamax 5TC average gaining $87 to end the week at $11,835. In the Atlantic and North Sea region there appeared to be a mid-week clear out of spot positions leading to a small rise in sentiment as some of the Baltic round trips found an improved level with $10,500 getting achieved on an 81,000-dwt.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "north",
+        "was",
+        "appeared",
+        "end",
+        "region"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "As the week progressed the BSI gained momentum, helped by strong rates being seen from Asia due to a lack of prompt tonnage. The Atlantic was rather lacklustre, with some areas seeing stronger demand such as the Continent, where a 55,000-dwt fixed at $16,500 delivery Continent via Baltic to the east Mediterranean.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "india",
+        "singapore",
+        "japan",
+        "coal",
+        "dwt",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2020-09-18_2020_09_18_bulk_report_week_38_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "There were ups and downs for both time charter average and BHSI throughout the week with consistent support from the East. The Continent/Mediterranean market remained in negative territory whilst in the US Gulf and east coast South America levels appeared to be on the rise towards the end of the week.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__root",
+  "doc_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 28",
+  "section_path": [
+    "Bulk Report - Week 28"
+  ],
+  "section_path_text": "Bulk Report - Week 28",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nRates softened from Brazil as the week closed out with reports of 1-10 August 170,000-tonne 10% cargo fixed from Tubarao to Qingdao at $9.15. For cargoes heading north rates were also low - around the upper $4.00s - but some owners were keen to relocate here as this market was firmer and disconnected from the south. A super eco fixed from north France via Seven Islands to the East at $16,800 while a ship close to the BCI ship description fixed at a flat rate of $14,750 daily for a similar trip including a Narvik/Persian Gulf option.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1401,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week28_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry",
+      "parent_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates softened from Brazil as the week closed out with reports of 1-10 August 170,000-tonne 10% cargo fixed from Tubarao to Qingdao at $9.15. For cargoes heading north rates were also low - around the upper $4.00s - but some owners were keen to relocate here as this market was firmer and disconnected from the south.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "north",
+        "daily",
+        "fixed",
+        "included"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 273,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry",
+      "parent_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There was an optimistic end to the week for owners with rates in the Atlantic and Pacific basins stronger. The north Atlantic remained tight for prompt tonnage with a 2016-built 80,000-tonner fixing from Hamburg for a trip via Kokkola to the north Continent at $12,500 daily.",
+      "keywords": [
+        "panamax",
+        "supramax",
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 337,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry",
+      "parent_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Black Sea market was this week the place to be with owners sharing a dramatic increase on levels for the supramax sizes. East coast South American and US Gulf areas lost pace, but numbers are all on the increase for Asian deliveries.",
+      "keywords": [
+        "supramax",
+        "china",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 658,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry",
+      "parent_id": "baltic_dry_2016-07-15_2016_bulk_report_week28_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This was another active week for the handy contingent and levels moving up still in Far East while the Atlantic dropped off slightly in US Gulf and East Coast South American theatres. The Continent witnessed a positive week and the Black Sea followed the larger sizes and went up but not as dramatically so far.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 118,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "breakwave_drybulk_2023-01-31__root",
+  "doc_id": "breakwave_drybulk_2023-01-31",
+  "parent_id": null,
+  "title": "BDRY - January 31, 2023",
+  "section_path": [
+    "BDRY - January 31, 2023"
+  ],
+  "section_path_text": "BDRY - January 31, 2023",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Chinese New Year is over, now what? - One of the slowest weeks of the year in terms of Chinese activity is now Do China's economic numbers point to a recovery? - We believe the bottom of the economic cycle for China is in.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "china",
+    "brazil",
+    "australia",
+    "iron_ore",
+    "coal",
+    "grain",
+    "steel",
+    "yoy",
+    "ytd",
+    "average"
+  ],
+  "page_start": 1,
+  "page_end": 2,
+  "token_count": 365,
+  "source_path": "reports/drybulk/2023/2023-01-31_Breakwave_Dry_Bulk.pdf",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "breakwave_drybulk_2023-01-31__s01_overview",
+      "doc_id": "breakwave_drybulk_2023-01-31",
+      "parent_id": "breakwave_drybulk_2023-01-31__root",
+      "title": "Overview",
+      "section_path": [
+        "Overview"
+      ],
+      "section_path_text": "Overview",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "- Chinese New Year is over, now what? - One of the slowest weeks of the year in terms of Chinese activity is now\n- Do China's economic numbers point to a recovery?",
+      "keywords": [
+        "china",
+        "chinese",
+        "economic",
+        "now",
+        "year",
+        "activity",
+        "back",
+        "believe"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "token_count": 71,
+      "section_type": "overview",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_drybulk_2023-01-31__s02_fundamentals",
+      "doc_id": "breakwave_drybulk_2023-01-31",
+      "parent_id": "breakwave_drybulk_2023-01-31__root",
+      "title": "Fundamentals",
+      "section_path": [
+        "Fundamentals"
+      ],
+      "section_path_text": "Fundamentals",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "- China Steel Production (YTD: 1013mt, YOY: -1.9%)\n- China Steel Inventories (YTD: 5.2mt, YOY: 20.3%)\n- China Iron Ore Inventories (YTD: 134mt, YOY: -13.4%)\n- China Iron Ore Imports (YTD: 1108mt, YOY: -1.6%)\n- China Coal Imports (YTD: 293mt, YOY: -9.4%)\n- China Soybean Imports (YTD: 91mt, YOY: -5.6%)\n- Brazil Iron Ore Exports (YTD: 344mt, YOY: -3.7%)\n- Australia Iron Ore Exports (YTD: 807mt, YOY: 1.4%)\n- Dry Bulk Fleet (YTD: 968dwt, YOY: 2.4%)\n- Baltic Dry Index Average (YTD: Baltic Dry Index, Average, YOY: 933)\n- Capesize Spot Rates Average (YTD: Capesize Spot Rates, Average, YOY: 9,555)\n- Panamax Spot Rates Average (YTD: Panamax Spot rates, Average, YOY: 8,961)",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "iron_ore",
+        "coal",
+        "grain"
+      ],
+      "page_start": 2,
+      "page_end": 2,
+      "token_count": 288,
+      "section_type": "fundamentals",
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__root",
+  "doc_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 29",
+  "section_path": [
+    "Bulk report - Week 29"
+  ],
+  "section_path_text": "Bulk report - Week 29",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Pacific market this week was marked by overall sluggishness, experiencing limited activity. The presence of two out of the three major players failed to stimulate trading volumes, leading to stagnant and lacklustre market conditions. Rates in the Pacific have continuously declined throughout the week, reflecting the subdued demand and limited fixture activity.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 863,
+  "source_path": "reports/baltic/dry/2023/2023-07-21_bulk-report-week-29_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Pacific market this week was marked by overall sluggishness, experiencing limited activity. The presence of two out of the three major players failed to stimulate trading volumes, leading to stagnant and lacklustre market conditions.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "activity.",
+        "level",
+        "limited"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market provided further losses this week and is showing little signs of abating. Despite a steady level of activity, this failed to stem the tide with both basins yielding sizeable losses.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "japan",
+        "coal",
+        "activity",
+        "but",
+        "further"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A mixed week for the sector with the Asian arena leading the way. The Atlantic generally remained positional throughout, with the US Gulf being the only relatively stable region despite slightly lower levels of enquiry as the week progressed.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "us_gulf",
+        "coal",
+        "grain",
+        "gas",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2023-07-21_2023_07_21_bulk_report_week_29_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With summer fully underway, it was a week of limited activity across both basins. In the South Atlantic, whilst prompt activity was said to have remained restrained, there was optimism that August would bring some positivity to the region as levels of enquiry were said to improve.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

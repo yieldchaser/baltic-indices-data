@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__root",
+  "doc_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 37",
+  "section_path": [
+    "Bulk report - Week 37"
+  ],
+  "section_path_text": "Bulk report - Week 37",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nOverall it was a negative week for the Capesize market, with many routes losing ground. A limited amount of timecharter appeared, with most activity seemingly centred on voyage basis. However, a 176,000dwt vessel was rumoured fixed delivery China, mid-September, for a west Australian round at $30,000.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "singapore",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 958,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week37_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Overall it was a negative week for the Capesize market, with many routes losing ground. A limited amount of timecharter appeared, with most activity seemingly centred on voyage basis.",
+      "keywords": [
+        "capesize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "iron_ore",
+        "coal",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The market drifted lower again, with only the Atlantic index returning to positive territory at the end of the week, mainly due to an increase in shorter Baltic trades and a tightening of tonnage on the North Continent. A modern Kamsarmax fixed at $25,000 from the Continent to Italy, redelivery Gibraltar.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "end",
+        "was",
+        "active",
+        "affecting",
+        "again"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 171,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Baltic Supramax Index (BSI) had a weaker start to the week and the softening trend continued. The US Gulf remained relatively slow, but the rates stayed firm.",
+      "keywords": [
+        "supramax",
+        "china",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 267,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2019-09-13_2019_bulk_report_week37_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Baltic Handysize Index (BHSI) recorded the highest point since January 2014 at 692. However, the trend was paused on Thursday, declining a point.",
+      "keywords": [
+        "supramax",
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "singapore",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

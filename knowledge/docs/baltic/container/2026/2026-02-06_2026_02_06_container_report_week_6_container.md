@@ -23,6 +23,7 @@ market_tone: neutral
 regions:
 - china
 - europe
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2026/2026-02-06_container-report-week-6_container.html

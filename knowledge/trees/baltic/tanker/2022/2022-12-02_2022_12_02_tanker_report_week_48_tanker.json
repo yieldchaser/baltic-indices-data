@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__root",
+  "doc_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 48",
+  "section_path": [
+    "Tanker report - Week 48"
+  ],
+  "section_path_text": "Tanker report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nThe Atlantic front and backhaul has been active with TC2 Cont-USAC 37,000mt CPP rising over WS24 in the week to close at WS404.17 (a TCE Round trip rate of $50,006). The TC14 fell by around half the rise to finish at WS263.33 (a minor fall in TCE Earnings to $28,296 per day round trip). Elsewhere in the Atlantic sentiment has been muted with falls across TC18 and TC21 routes.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "tce"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 890,
+  "source_path": "reports/baltic/tanker/2022/2022-12-02_tanker-report-week-48_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker",
+      "parent_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Atlantic front and backhaul has been active with TC2 Cont-USAC 37,000mt CPP rising over WS24 in the week to close at WS404.17 (a TCE Round trip rate of $50,006). The TC14 fell by around half the rise to finish at WS263.33 (a minor fall in TCE Earnings to $28,296 per day round trip).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "japan",
+        "tce",
+        "day",
+        "per",
+        "round",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 312,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker",
+      "parent_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The VLCC market continued its downward spiral this week with the volume of fixture activity much reduced from previous weeks. 270,000mt Middle East Gulf to China is now valued 22 points lower than a week ago at WS86 (a daily TCE round trip of $50,600), while the 280,000mt Middle East Gulf to US Gulf (via the Cape/Cape routing) trip is being assessed 10 points down at a little over WS60.",
+      "keywords": [
+        "capesize",
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 174,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker",
+      "parent_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Suezmax market also fell back down this week with rates for 135,000mt CPC/Augusta dropping 39 points to just below WS280 (a TCE of $143,200 per day). For the 130,000mt voyage Nigeria to Rotterdam trip, rates tumbled 25 points to WS186.5 (about $71,900 per day round trip TCE).",
+      "keywords": [
+        "suezmax",
+        "europe",
+        "points",
+        "day",
+        "per",
+        "tce",
+        "trip",
+        "albeit"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 108,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker",
+      "parent_id": "baltic_tanker_2022-12-02_2022_12_02_tanker_report_week_48_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The European Aframax market became another victim of reduced fixture activity and a tonnage build-up, resulting in a lower sentiment. The 80,000mt Hound Point/Wilhelmshaven route slipped a meagre eight points to WS315 (a round-trip daily TCE of about $143,000).",
+      "keywords": [
+        "aframax",
+        "europe",
+        "us_gulf",
+        "points",
+        "round-trip",
+        "tce",
+        "daily",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 283,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

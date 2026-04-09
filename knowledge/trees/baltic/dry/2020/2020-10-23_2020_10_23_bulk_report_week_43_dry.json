@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__root",
+  "doc_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 43",
+  "section_path": [
+    "Bulk report - Week 43"
+  ],
+  "section_path_text": "Bulk report - Week 43",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe tide turned positive on the Capesize market this week bringing with it a sense relief and optimism. It both stemmed the mounting losses of late and gave some hope for a year-end rally. Dropping to a recent low of $17,121, the market lifted mid-week to close the week at $18,749 on the Capesize 5TC.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "us_gulf",
+    "grain",
+    "was"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 877,
+  "source_path": "reports/baltic/dry/2020/2020-10-23_bulk-report---week-43_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry",
+      "parent_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The tide turned positive on the Capesize market this week bringing with it a sense relief and optimism. It both stemmed the mounting losses of late and gave some hope for a year-end rally.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "around",
+        "closed",
+        "heard",
+        "not"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry",
+      "parent_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market experienced something of a diverse week, with pockets of resistance appearing in places. But overall a flat to weaker tone beset the market culminating in the time-charter average starting out at $11,681 to close the week at $11,469.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "us_gulf",
+        "grain",
+        "but",
+        "low-mid",
+        "although"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry",
+      "parent_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Supramax market presented a relatively mixed picture this week, and although the timecharter average traded flat, ending the week down $45, it was the US Gulf that proved the biggest loser, with the fronthaul route shedding $2325 on the week, whilst the equivalent transatlantic route lost $1100. EC South America also experienced thin demand.",
+      "keywords": [
+        "supramax",
+        "brazil",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "route",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 198,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry",
+      "parent_id": "baltic_dry_2020-10-23_2020_10_23_bulk_report_week_43_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handysize market closely mirrored the larger supras this week, as the timecharter average lost an incremental $28 to close at $10,748. The HS4 US Gulf route proved to be weakest link, with the index shedding $1250 on the week as demand ebbed.",
+      "keywords": [
+        "supramax",
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "was",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

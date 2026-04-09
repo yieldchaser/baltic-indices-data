@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__root",
+  "doc_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 14",
+  "section_path": [
+    "Bulk report - Week 14"
+  ],
+  "section_path_text": "Bulk report - Week 14",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe perfect storm for the big ships: with holidays, force majeure in two ore exporting ports and bad weather undermining the market. A lack of significant activity from Brazil left the market one-sided, with owners/operators reluctant to ballast from the East, they instead chased the shorter rounds. Rates tumbled on the West Australia/China run, coming very close to dipping below $5.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1190,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week14_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The perfect storm for the big ships: with holidays, force majeure in two ore exporting ports and bad weather undermining the market. A lack of significant activity from Brazil left the market one-sided, with owners/operators reluctant to ballast from the East, they instead chased the shorter rounds.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "but",
+        "run",
+        "ships"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 340,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week was disrupted due to the various holidays. Falling paper values meant period fixing dried up, but brokers suggested that charterers were still keen to take forward cover, although at discounted levels.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "was",
+        "although",
+        "around",
+        "ballast",
+        "bonus"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 239,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Due to the combination of holidays, both at the beginning and end of the week, together with some concern over possible trade wars, the market saw softer tendencies. Details of older period fixtures emerged, with a 57,000-dwt fixed basis delivery Zhoushan, for about five to seven months worldwide, trading at $12,500.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 375,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2018-04-06_2018_bulk_report_week14_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A shorter working week in both the Atlantic and Pacific, as holidays in China from Thursday onwards slowed activity, especially in the Pacific. Rates from the US Gulf started to ease, while some larger-sized handy vessels were reportedly competing with Supramax stems in East coast South America.",
+      "keywords": [
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "grain",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

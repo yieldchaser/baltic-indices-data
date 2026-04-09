@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-07-05_2024_07_05_gas_report_week_27_gas__root",
+  "doc_id": "baltic_gas_2024-07-05_2024_07_05_gas_report_week_27_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 27",
+  "section_path": [
+    "Gas report - Week 27"
+  ],
+  "section_path_text": "Gas report - Week 27",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nPlenty of fixing activity on the LNG spot market, albeit focused primarily on the Atlantic side, has not done much to push rates up. Reports of some period and spot fixing early on in the week led to around 4-5 fixtures that has cemented the levels we are seeing. For summer months, modern 2-stroke tonnage commanding nearly $100,000/day shows signs of a healthy and active fixing market but with the main holiday season approaching it will be a hard push to get ships fixing too much higher.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "japan",
+    "gas",
+    "ships",
+    "cbm",
+    "fixing",
+    "but",
+    "activity"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 508,
+  "source_path": "reports/baltic/gas/2024/2024-07-05_gas-report-week-27_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-07-05_2024_07_05_gas_report_week_27_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-07-05_2024_07_05_gas_report_week_27_gas",
+      "parent_id": "baltic_gas_2024-07-05_2024_07_05_gas_report_week_27_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Plenty of fixing activity on the LNG spot market, albeit focused primarily on the Atlantic side, has not done much to push rates up. Reports of some period and spot fixing early on in the week led to around 4-5 fixtures that has cemented the levels we are seeing.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "japan",
+        "gas",
+        "ships",
+        "cbm",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 309,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-07-05_2024_07_05_gas_report_week_27_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-07-05_2024_07_05_gas_report_week_27_gas",
+      "parent_id": "baltic_gas_2024-07-05_2024_07_05_gas_report_week_27_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There were only a few reported fixtures this past week from the Middle East, and rates took a slight downturn as a result. For the month of July, there has been a spate of fixing already and it could, in terms of physical fixtures, outperform other summer periods from years previous.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "daily",
+        "earning",
+        "tce",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

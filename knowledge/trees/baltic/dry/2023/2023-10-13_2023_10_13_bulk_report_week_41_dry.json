@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__root",
+  "doc_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 41",
+  "section_path": [
+    "Bulk report - Week 41"
+  ],
+  "section_path_text": "Bulk report - Week 41",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesizes\nClosing at $27,591 the Capesize TC average maintained similar levels week-on-week, however large gains were seen on Monday when the spot rate climbed close to $29,000, but neither Atlantic nor Pacific basin was lending much of the support by mid-week. The Brazil to Qingdao run declined from 26.378 last Friday to $25.733, whilst the West Australia to Qingdao run declined about 70 cents week-on-week to mid $10s. The North Atlantic tonnage list appeared tight with a healthy amount of fresh cargo lining up.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 841,
+  "source_path": "reports/baltic/dry/2023/2023-10-13_bulk-report-week-41_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__s01_capesizes",
+      "doc_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__root",
+      "title": "Capesizes",
+      "section_path": [
+        "Capesizes"
+      ],
+      "section_path_text": "Capesizes",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Closing at $27,591 the Capesize TC average maintained similar levels week-on-week, however large gains were seen on Monday when the spot rate climbed close to $29,000, but neither Atlantic nor Pacific basin was lending much of the support by mid-week. The Brazil to Qingdao run declined from 26.378 last Friday to $25.733, whilst the West Australia to Qingdao run declined about 70 cents week-on-week to mid $10s.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "declined",
+        "qingdao",
+        "run"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "After a promising opening to the week, activities in the Panamax market were slowly but surely became something of a grind as confidence eroded in both basins. The North Atlantic struggled for any momentum all week, South America saw a brief rally Monday/Tuesday with reports of an 81,000-dwt achieving $18,000 delivery PMO for a trip via EC South America and other options to the Far East but petered off.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "singapore",
+        "coal",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The week started with high expectations however as it progressed it became a two-sided affair. Whilst sentiment generally remained positive in the Atlantic, from Asia the initial strengthening slipped away.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "south",
+        "asia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2023-10-13_2023_10_13_bulk_report_week_41_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The overall sentiment in the handy sector became positive but visible activity in Asia remained minimal. With improved demand in the South Atlantic, levels have improved across the region with a large handy rumoured to have been fixed from Recalada to West Coast South America in the low $20,000's and a 36,000-dwt fixing from Cuba via Barcarena to Corninto at $16,500.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

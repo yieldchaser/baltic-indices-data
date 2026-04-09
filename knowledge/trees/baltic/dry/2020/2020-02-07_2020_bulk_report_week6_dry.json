@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__root",
+  "doc_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 6",
+  "section_path": [
+    "Bulk report - Week 6"
+  ],
+  "section_path_text": "Bulk report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market endured another dreadful week of calamitous rate level falls, as the usual season low Q1 period combined with recent global events to stifle demand. Brazil iron ore flows, hit by recent poor weather, have left the spot cargo market barren. Appallingly low Brazil to China cargo levels were heard in the market on Friday, causing C3 to mark down to $13.575, a drop of $1.49 for the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 921,
+  "source_path": "reports/baltic/dry/2020/2020_bulk-report-week6_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry",
+      "parent_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market endured another dreadful week of calamitous rate level falls, as the usual season low Q1 period combined with recent global events to stifle demand. Brazil iron ore flows, hit by recent poor weather, have left the spot cargo market barren.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "pacific",
+        "iron_ore",
+        "cargo",
+        "are"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry",
+      "parent_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "An eventful week finished with a contemplative outlook in the market. It began slowly, with a mid-week push particularly from East Coast South America.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "japan",
+        "coal",
+        "dwt",
+        "ship",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry",
+      "parent_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was another poor week, with many areas suffering a lack of enquiry and an oversupply of tonnage. Period activity was limited, but a 61,000dwt ship was reported fixed basis delivery Muscat at $7,600 for the first 30 days and $11,000 for balance up to one-year trading.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "india",
+        "us_gulf",
+        "japan",
+        "coal",
+        "dwt",
+        "ship"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 267,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry",
+      "parent_id": "baltic_dry_2020-02-07_2020_bulk_report_week6_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall the market was still weak and quiet in both basins, limited activity circulated. Approaching the end of the week, slightly more cargoes were seen in the US Gulf and the rates improved on the larger-sized.",
+      "keywords": [
+        "pacific",
+        "europe",
+        "us_gulf",
+        "coal",
+        "grain",
+        "was",
+        "dwt",
+        "coast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

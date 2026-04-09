@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__root",
+  "doc_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 35",
+  "section_path": [
+    "Bulk report - Week 35"
+  ],
+  "section_path_text": "Bulk report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market delivered a mixed yet broadly steady performance this week, with underlying demand offering support despite some midweek pressure on rates. The Pacific started strongly, driven by strong miner activity and firmer C5 fixtures that helped absorb tonnage. However, momentum faded midweek, with C5 values easing despite continued miner and operator presence, with rates slipping back towards the $10.00 level and then edged up on Friday with fixtures at $10.20.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 963,
+  "source_path": "reports/baltic/dry/2025/2025-08-29_bulk-report-week-35_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market delivered a mixed yet broadly steady performance this week, with underlying demand offering support despite some midweek pressure on rates. The Pacific started strongly, driven by strong miner activity and firmer C5 fixtures that helped absorb tonnage.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "fixtures",
+        "midweek"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It proved to be a muddling week for the Panamax market, which started out positively for owners but ends on something of a tepid nature. In the Atlantic, much of the activity early part of the week was on the fronthaul trips from the Americas with solid levels of support.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "coal",
+        "activity",
+        "america",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With many returning to their desks after the summer vacation period, it was a more positive week overall certainly in the Atlantic. Stronger numbers were again seen from the US Gulf, as prompt tonnage availability remained tight, with some saying that offers for the ultramax size being around $30,000 for fronthaul business.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "delivery",
+        "dwt",
+        "trip",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 259,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2025-08-29_2025_08_29_bulk_report_week_35_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was a positive week, with rates firming across most loading regions. Although reported activity was limited, the Continent-Mediterranean continued to show gradual improvement, with sentiment largely positional.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "steel",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 264,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

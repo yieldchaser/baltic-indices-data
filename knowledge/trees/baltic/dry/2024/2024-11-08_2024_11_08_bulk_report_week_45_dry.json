@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__root",
+  "doc_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 45",
+  "section_path": [
+    "Bulk report - Week 45"
+  ],
+  "section_path_text": "Bulk report - Week 45",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced steady improvement this week, supported by robust demand and active trading in both the Atlantic and Pacific basins. Starting the week on a stable note, the BCI 5TC index rose gradually from $15,332 on Monday to close at $19,210 by Friday. In the Pacific, consistent activity from the miners and the operators, combined with weather-related delays, fuelled rate increases.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "grain"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 917,
+  "source_path": "reports/baltic/dry/2024/2024-11-08_bulk-report-week-45_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced steady improvement this week, supported by robust demand and active trading in both the Atlantic and Pacific basins. Starting the week on a stable note, the BCI 5TC index rose gradually from $15,332 on Monday to close at $19,210 by Friday.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "monday",
+        "demand",
+        "active",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With confined demand globally, it proved to be a challenging week for owners with a slow and steady erosion of rates in the Panamax market, culminating in the 5TC average losing further value. With limited action of note in the Atlantic, rates here came under the most pressure with charterers holding the upper hand, although delivery DOP was still evident several times for Transatlantic as tonnage count remained low.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "limited",
+        "activity",
+        "basis",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another meagre week for the sector with very little encouragement from an owner's perspective. The Atlantic continued to slide, as the South Atlantic, whilst seeing a reasonable amount of enquiry remained over supplied with tonnage, a 56,000-dwt fixing delivery Rio Grande trip to US East Coast in the low $17,000s.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2024-11-08_2024_11_08_bulk_report_week_45_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It has been a challenging week for the sector, with rates in both the Atlantic and Pacific regions continuing to face downward pressure. In the Continent and Mediterranean, the overall sentiment remains stable, with fixtures emerging that suggest rates are holding steady at levels similar to the most recent deals.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "pacific",
+        "europe",
+        "grain",
+        "dwt",
+        "fixed",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 256,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

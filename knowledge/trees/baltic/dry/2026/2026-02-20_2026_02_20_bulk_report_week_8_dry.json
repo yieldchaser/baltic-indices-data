@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__root",
+  "doc_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 8",
+  "section_path": [
+    "Bulk report - Week 8"
+  ],
+  "section_path_text": "Bulk report - Week 8",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe week was defined by holiday-disrupted liquidity and gradually softening sentiment across both basins. Lunar New Year celebrations in China and across much of Asia curtailed participation early on, limiting activity and constraining momentum. Initial firmness on C5, with a major miner fixing at $9.50, proved short-lived.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 855,
+  "source_path": "reports/baltic/dry/2026/2026-02-20_bulk-report-week-8_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__s01_capesize",
+      "doc_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry",
+      "parent_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The week was defined by holiday-disrupted liquidity and gradually softening sentiment across both basins. Lunar New Year celebrations in China and across much of Asia curtailed participation early on, limiting activity and constraining momentum.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "west_africa",
+        "singapore",
+        "fixtures",
+        "back",
+        "fresh"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry",
+      "parent_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week highlighted an increasingly pronounced divide between the Atlantic and Pacific basins. In the Atlantic, sentiment gradually weakened, with the P1A index posting consecutive declines as prompt transatlantic enquiry slowed and vessel supply moved back into balance with demand.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "prompt",
+        "steady",
+        "activity",
+        "appeared",
+        "approaching"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 162,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry",
+      "parent_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The market adopted a cautious stance this week, shaped by ample tonnage in some regions and positional dynamics in others. The Continent and Mediterranean showed a softer tone overall, with limited fresh activity reported; a 64,000-dwt open Antwerp 14-15 February fixed a trip to Tampa-Veracruz with steel products at $13,500.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "products",
+        "steel",
+        "dwt",
+        "february"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry",
+      "parent_id": "baltic_dry_2026-02-20_2026_02_20_bulk_report_week_8_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, trading activity was heavily influenced by the Lunar New Year holidays, resulting in subdued conditions across the Pacific, while the Atlantic basin provided the main source of support. The Atlantic market held a firm tone, with steady demand from the Continent, EC South America, and the US Gulf, underpinned by tighter prompt tonnage in select areas.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt",
+        "activity",
+        "continent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

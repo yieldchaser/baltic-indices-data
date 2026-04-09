@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__root",
+  "doc_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 13",
+  "section_path": [
+    "Bulk report - Week 13"
+  ],
+  "section_path_text": "Bulk report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA volatile market this week, with the bullish sentiment from last Friday carried over in the early part of the week but then rates began to slip. The east was not as active as the Atlantic and largely improved on the back of Brazil demand but this too slowed. Most of the big Australian shippers were absent from the market and the West Australia/China rate slipped under $7.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1940,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week13_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry",
+      "parent_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A volatile market this week, with the bullish sentiment from last Friday carried over in the early part of the week but then rates began to slip. The east was not as active as the Atlantic and largely improved on the back of Brazil demand but this too slowed.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "but",
+        "april",
+        "today"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 374,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry",
+      "parent_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A heated market took a breather as the week closed out. Rates strengthened in most areas apart from the US Gulf where activity has been minimal.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "singapore",
+        "grain",
+        "built",
+        "daily."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 337,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry",
+      "parent_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall a good week for this size with improvements across all routes apart from the US Gulf where a lack of fresh enquiry prompted downward pressure on rates. The Asian market remained steady but with the holidays in the early part of next week, this lead to a slight easing towards the end of this week with a lack of fresh enquiry.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 455,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry",
+      "parent_id": "baltic_dry_2017-03-31_2017_bulk_report_week13_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall the week was positive for the handy size sector although the US Gulf had a stutter. The Continent and Mediterranean markets continued to pick up while east coast South America showed for positive signs for the near future.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 757,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

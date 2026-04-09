@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__root",
+  "doc_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 41",
+  "section_path": [
+    "Bulk report - Week 41"
+  ],
+  "section_path_text": "Bulk report - Week 41",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market reached new highs for the year this week, topping out at $34,896 on the 5TC. The quick ascension to these lofty heights has been met with an equivalent descent since Wednesday as the market shed value down to $29,479 by weeks end. Fixture activity has been sparse on the descent as charterers backed away and owners looked not to encourage further drops.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 871,
+  "source_path": "reports/baltic/dry/2020/2020-10-09_bulk-report-week-41_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market reached new highs for the year this week, topping out at $34,896 on the 5TC. The quick ascension to these lofty heights has been met with an equivalent descent since Wednesday as the market shed value down to $29,479 by weeks end.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "activity",
+        "back"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week evolved with the Panamax market gaining $56 on the week to return at $1439 The Atlantic market proved to be the biggest benefactor with the largest route movements as the north Continent tonnage count proved to be tight for most of the week and with solid demand of minerals and grains from the Baltic as well as US east coast. Rates duly rallied with $13,150 being agreed on an 82,000-dwt for a US east coast round basis delivery Gibraltar.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "atlantic",
+        "europe",
+        "grain",
+        "but",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the Chinese holiday during much of the week, the Asian market remained rather subdued. Meanwhile, the Atlantic areas - such as the Continent - made gains with higher levels of enquiry.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "continent",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2020-10-09_2020_10_09_bulk_report_week_41_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "At the start of the week, both the BHSI and the time charter average declined for the first time since September. However, they recovered back to the positive territory in the second half of the week with the support from the US Gulf and Continent, despite east coast South America moving sharply lower.",
+      "keywords": [
+        "china",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixed",
+        "trip",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

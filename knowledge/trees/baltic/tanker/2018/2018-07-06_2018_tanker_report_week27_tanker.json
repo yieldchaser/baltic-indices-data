@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__root",
+  "doc_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 27",
+  "section_path": [
+    "Tanker report - Week 27"
+  ],
+  "section_path_text": "Tanker report - Week 27",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nDespite good volumes of enquiry, rates eased for eastbound 270,000-ton cargoes. The rate for China discharge eased paying WS 50 with South Korea and Japan at WS 47 although later in the week Total fixed at WS 48.5 for Japan discharge. For US Gulf discharge, rates for 280,000 tons eased around 3.5 points, as Exxon took the ‘ Sea Ruby' at WS 18 and Vitol fixed an options cargo at WS 22 Cape/Cape.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "tons",
+    "fixed",
+    "around"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 659,
+  "source_path": "reports/baltic/tanker/2018/2018_tanker-report-week27_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker",
+      "parent_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Despite good volumes of enquiry, rates eased for eastbound 270,000-ton cargoes. The rate for China discharge eased paying WS 50 with South Korea and Japan at WS 47 although later in the week Total fixed at WS 48.5 for Japan discharge.",
+      "keywords": [
+        "capesize",
+        "china",
+        "west_africa",
+        "us_gulf",
+        "japan",
+        "fixed",
+        "eased",
+        "korea"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker",
+      "parent_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates in the 135,000 tons trade from the Black Sea/Med were steady at WS 85. In the Mediterranean, Repsol took the ‘ Front Thor' for 140,000 tons from Sidi Kerir to Spain at WS 69 while UML fixed 135,000 tons from Ceyhan to UKC-Med at WS 70-75 respectively.",
+      "keywords": [
+        "europe",
+        "tons",
+        "fixed",
+        "algeria",
+        "angola",
+        "astro",
+        "basis",
+        "between"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 161,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker",
+      "parent_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another difficult week for owners in the Mediterranean with rates flat at around WS 80 for 80,000 tons and Black Sea paying between WS 80/82.5 level. In the Baltic early in the week rates dropped three points to WS 77.5 for 100,000 tons, but recovered to around WS 82.25, with talk of a higher number paid.",
+      "keywords": [
+        "europe",
+        "tons",
+        "around",
+        "but",
+        "sea",
+        "agreed",
+        "another",
+        "between"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 162,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker",
+      "parent_id": "baltic_tanker_2018-07-06_2018_tanker_report_week27_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the 75,000 tons from ME Gulf to Japan trade, rates firmed 2.5 points to WS 100 level with the LR1 market unchanged at WS 120. The 37,000 tons Cont/USAC trade saw increased enquiry and despite healthy tonnage availability, rates nudged up around five points to WS 107.5/110 region.",
+      "keywords": [
+        "japan",
+        "points",
+        "tons",
+        "trade",
+        "around",
+        "assessments",
+        "availability",
+        "backhaul"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 117,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-09-01_2023_09_01_gas_report_week_35_gas__root",
+  "doc_id": "baltic_gas_2023-09-01_2023_09_01_gas_report_week_35_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 35",
+  "section_path": [
+    "Gas report - Week 35"
+  ],
+  "section_path_text": "Gas report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIt has been another positive week on rates for LNG with the index rising on all three routes. Despite some activities in fixing out in the Pacific, the rise is more in line with market expectations for October/November laycans and the potential for winter spikes in spot rates rather than physical drivers. BLNG1g Aus-Japan rose by $22,308 to close at $144,045/day for a round voyage.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "pacific",
+    "japan",
+    "gas",
+    "out",
+    "are",
+    "day",
+    "rise",
+    "rose",
+    "seen"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 569,
+  "source_path": "reports/baltic/gas/2023/2023-09-01_gas-report-week-35_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-09-01_2023_09_01_gas_report_week_35_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-09-01_2023_09_01_gas_report_week_35_gas",
+      "parent_id": "baltic_gas_2023-09-01_2023_09_01_gas_report_week_35_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It has been another positive week on rates for LNG with the index rising on all three routes. Despite some activities in fixing out in the Pacific, the rise is more in line with market expectations for October/November laycans and the potential for winter spikes in spot rates rather than physical drivers.",
+      "keywords": [
+        "lng",
+        "lpg",
+        "australia",
+        "pacific",
+        "japan",
+        "gas",
+        "are",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 295,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-09-01_2023_09_01_gas_report_week_35_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-09-01_2023_09_01_gas_report_week_35_gas",
+      "parent_id": "baltic_gas_2023-09-01_2023_09_01_gas_report_week_35_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A stable start to the week was turned on its head after one charterer went out for a ship that opened the gates for others sitting on stems to rush out to secure any available tonnage. This pushed rates higher by $22.857 on the week with the rise seen pretty much in the last day alone.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "seen",
+        "daily",
+        "higher",
+        "out",
+        "tce",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 268,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

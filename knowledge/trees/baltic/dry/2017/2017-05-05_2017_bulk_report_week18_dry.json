@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__root",
+  "doc_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 18",
+  "section_path": [
+    "Bulk report - Week 18"
+  ],
+  "section_path_text": "Bulk report - Week 18",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe shorter week due to national holidays in the UK and Singapore, put a bit of a dampener on the activity. What few fixtures were concluded were at slightly lower levels, although some brokers are suggesting that perhaps the bottom has been reached in the Pacific, where today there was talk of west Australia/Qingdao being fixed at possibly $5.70 level, having traded at around $5.50/5.60 yesterday. During the week Rio, BHP Billiton and FMG fixed a number of vessels at rates between $5.50 and $5.70.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1266,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week18_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry",
+      "parent_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The shorter week due to national holidays in the UK and Singapore, put a bit of a dampener on the activity. What few fixtures were concluded were at slightly lower levels, although some brokers are suggesting that perhaps the bottom has been reached in the Pacific, where today there was talk of west Australia/Qingdao being fixed at possibly $5.70 level, having traded at around $5.50/5.60 yesterday.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 416,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry",
+      "parent_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The north Atlantic started off from last week under severe pressure and unfortunately this trend has continued during the week, with very little fresh impetus. Transatlantic rates for BPI type remaining under $8,000 and no end in sight in the near term.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "dwt",
+        "remained",
+        "activity",
+        "basis",
+        "built"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry",
+      "parent_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a short week with a quiet start and all the way till the week ended. Rates in both basins did not maintain their previous positions and came with more signs of slowing down.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 278,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry",
+      "parent_id": "baltic_dry_2017-05-05_2017_bulk_report_week18_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The very late Easter in combination with the May/ Labour day holidays brought a fortnight with limited working windows. The Handy market had a bad week with levels dropping in all sectors on a daily basis.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "brazil",
+        "atlantic",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 344,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

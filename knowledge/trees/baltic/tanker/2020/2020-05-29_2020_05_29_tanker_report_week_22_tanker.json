@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__root",
+  "doc_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 22",
+  "section_path": [
+    "Tanker report - Week 22"
+  ],
+  "section_path_text": "Tanker report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nImproved volumes have tightened the supply of vessels, enabling owners to regain some of the recent lost ground. The Middle East Gulf sector saw rates flat in the first half of the week, then progressive rises midweek with rates for 270,000mt to China jumping from WS50 to WS60 - and then mid WS60s. They now appear for the time being to have settled around WS65-67 region.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 683,
+  "source_path": "reports/baltic/tanker/2020/2020-05-29_Tanker-report-Week-22_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker",
+      "parent_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Improved volumes have tightened the supply of vessels, enabling owners to regain some of the recent lost ground. The Middle East Gulf sector saw rates flat in the first half of the week, then progressive rises midweek with rates for 270,000mt to China jumping from WS50 to WS60 - and then mid WS60s.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "now",
+        "are",
+        "assessed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 172,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker",
+      "parent_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates in this sector in the West remained flat as 130,000mt Nigeria/UKCont are still at WS72 and 135,000mt Black Sea/Med at WS73. In the 140,000mt Middle East/Med market, rates have eased a further 4 points and now rest around WS32.",
+      "keywords": [
+        "are",
+        "around",
+        "black",
+        "eased",
+        "east/med",
+        "flat",
+        "further",
+        "middle"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 66,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker",
+      "parent_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "There was more downward pressure on this sector. In the 80,000mt Ceyhan/Med route, rates slipped another eight points to WS80.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "points",
+        "another",
+        "around",
+        "baltic/ukc",
+        "carib/usg",
+        "ceyhan/med"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 138,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker",
+      "parent_id": "baltic_tanker_2020-05-29_2020_05_29_tanker_report_week_22_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall it was another slow week in the Middle East Gulf, although levels appear to be stabilising with rates for 75,000 mt to Japan hovering around WS115/120 region. Likewise, the status quo is being maintained on the LR1s with rates assessed close to WS130 level for Japan discharge.",
+      "keywords": [
+        "meg",
+        "us_gulf",
+        "japan",
+        "was",
+        "maintained",
+        "trade",
+        "around",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 294,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

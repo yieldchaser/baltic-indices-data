@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_dry_2016-04-01_2016_bulk_report_week132016_dry__root",
+  "doc_id": "baltic_dry_2016-04-01_2016_bulk_report_week132016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 13 2016",
+  "section_path": [
+    "Bulk report - Week 13 2016"
+  ],
+  "section_path_text": "Bulk report - Week 13 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA more positive end to the week with rates, although still very low, improving in most areas of the market. A push from Rio Tinto as the week closed out saw the charterer take at least six ships and possibly eight or nine with the rate for 11 April onward cargoes at $3.35. FMG and Roy Hill also took ships while BHP Billiton has yet to book tonnage.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1204,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week132016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-04-01_2016_bulk_report_week132016_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-04-01_2016_bulk_report_week132016_dry",
+      "parent_id": "baltic_dry_2016-04-01_2016_bulk_report_week132016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A more positive end to the week with rates, although still very low, improving in most areas of the market. A push from Rio Tinto as the week closed out saw the charterer take at least six ships and possibly eight or nine with the rate for 11 April onward cargoes at $3.35.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "tonner",
+        "was",
+        "although"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 271,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-04-01_2016_bulk_report_week132016_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-04-01_2016_bulk_report_week132016_dry",
+      "parent_id": "baltic_dry_2016-04-01_2016_bulk_report_week132016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "South America remained the driving force in the market and rates post Easter continued to rise with renewed demand for April loaders and charterers casting the net to include ships from this side. A 2013 built kamsarmax spot Antwerp fixed to Mansel for a trip via east coast South America to the East at $8,000 daily.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "europe",
+        "india"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 926,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__root",
+  "doc_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 40",
+  "section_path": [
+    "Bulk report - Week 40"
+  ],
+  "section_path_text": "Bulk report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market inched higher this week as increased activity continues to lift expectations with the 5TC closing at $19,874, up 3,660 over the week. The Atlantic remains the more optimistic region. However, closing the week it looks like the Fronthaul routes may have become a little overheated as the C9 route lost $3001 to settle at $39,813.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 954,
+  "source_path": "reports/baltic/dry/2022/2022-10-07_bulk-report-week-40_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market inched higher this week as increased activity continues to lift expectations with the 5TC closing at $19,874, up 3,660 over the week. The Atlantic remains the more optimistic region.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "iron_ore",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 281,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "After a muted opening, the Panamax Atlantic market rallied mid week. With golden week - and other Asian holidays - it returned a mostly inactive week.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "europe",
+        "deals",
+        "week.",
+        "activity",
+        "asian",
+        "concluded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 198,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the widespread holidays during the week, action mainly centred around the Atlantic basin. As the Asian arena lacked fresh impetus generally, the area remained relatively steady with many players happy to wait until the holidays finished.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2022-10-07_2022_10_07_bulk_report_week_40_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A split week with sentiment remaining positive in the Atlantic, whilst from Asia positive sentiment remained in short supply. Period activity surfaced and a 37,000-dwt opening China fixing at 108 percent of BHSI for 11 to 13 months trading.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "dwt",
+        "fixed",
+        "activity",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

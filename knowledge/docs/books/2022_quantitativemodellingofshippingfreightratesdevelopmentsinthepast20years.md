@@ -30,6 +30,7 @@ regions:
 - australia
 - europe
 - japan
+section_count: 11
 signals: {}
 source: book
 source_path: reports/2022-Quantitativemodellingofshippingfreightratesdevelopmentsinthepast20years.pdf

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-04-05_2024_04_05_gas_report_week_14_gas__root",
+  "doc_id": "baltic_gas_2024-04-05_2024_04_05_gas_report_week_14_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 14",
+  "section_path": [
+    "Gas report - Week 14"
+  ],
+  "section_path_text": "Gas report - Week 14",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nAfter the Easter break there was a slow start to the LNG market this week with enquiries focused mainly on optimization and tonnage availability, with relatively healthy the rates there was little movement across both ship sizes. BLNG1 Aus-Japan for the 170cbm lost a few hundred dollars to finish at $47,296 while the 160cbm gained just over a hundred dollars to finish at $30,866 keeping the delta around $17,000-20,000. BLNG2 US-Continent lost for both ships with little fresh enquiry and a short week this was expected, the 174cbm fell to a close of $45,288 while the 160cbm finished $34,212 a tightening of the delta we have seen of late but in line with market expectations.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "europe",
+    "japan",
+    "gas",
+    "cbm",
+    "little",
+    "finish",
+    "but",
+    "fell",
+    "was"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 539,
+  "source_path": "reports/baltic/gas/2024/2024-04-05_gas-report-week-14_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-04-05_2024_04_05_gas_report_week_14_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-04-05_2024_04_05_gas_report_week_14_gas",
+      "parent_id": "baltic_gas_2024-04-05_2024_04_05_gas_report_week_14_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "After the Easter break there was a slow start to the LNG market this week with enquiries focused mainly on optimization and tonnage availability, with relatively healthy the rates there was little movement across both ship sizes. BLNG1 Aus-Japan for the 170cbm lost a few hundred dollars to finish at $47,296 while the 160cbm gained just over a hundred dollars to finish at $30,866 keeping the delta around $17,000-20,000.",
+      "keywords": [
+        "lng",
+        "europe",
+        "japan",
+        "gas",
+        "cbm",
+        "little",
+        "was",
+        "fell"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 324,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-04-05_2024_04_05_gas_report_week_14_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-04-05_2024_04_05_gas_report_week_14_gas",
+      "parent_id": "baltic_gas_2024-04-05_2024_04_05_gas_report_week_14_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Not a lot to report coming out of the Middle Eastern Gulf this week, BLPG1 Ras Tanura-Chiba languished a little with few fixtures and a longer tonnage list, but with many ships showing either in West or Eastern lists the tonnage could thin out. Rates themselves were a little soft after the Bank Holiday weekend and BLPG1 fell by $1.429 to a close of $64.714 and a daily TCE Earning equivalent of $43,536.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "gas",
+        "tce",
+        "blpg1",
+        "but",
+        "could",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

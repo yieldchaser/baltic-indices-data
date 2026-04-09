@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__root",
+  "doc_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 5",
+  "section_path": [
+    "Bulk report - Week 5"
+  ],
+  "section_path_text": "Bulk report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Vale dam tragedy sparked a sharp fall in rates across all regions even where tonnage remained tight. The potential loss of production prompted a panic among some owners and operators who chased rates down. Vale did fix a ship on the key run from Tubarao to Qingdao at $13.75 mid-week and as the week closed out the rate was hovering around the mid $13.00s.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 974,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week5_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Vale dam tragedy sparked a sharp fall in rates across all regions even where tonnage remained tight. The potential loss of production prompted a panic among some owners and operators who chased rates down.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "coal",
+        "dwt",
+        "fixed",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 276,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Despite talk of more enquiry in the East last week (seasonal holidays), most fixtures, concluded from Australia and Indonesia, have been on an arrival pilot station (APS) basis, whilst from the North Pacific Kamsarmaxes fixed as low as $4,000 daily for a round trip. The Atlantic followed a similar pattern, with vessels fixing on an APS basis, or on voyage, with many having to agree some waiting time for later cargoes to find cover.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "basis",
+        "aps",
+        "ballast",
+        "bonus"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Since the start of the year the Baltic Supramax Index (BSI) has lost around 50% of its value, and with widespread holidays in Asia in the week ahead the market remained cautious. Period activity was evident, but charterers looked to cover with discounted rates early in the week, and split rate thereafter.",
+      "keywords": [
+        "supramax",
+        "atlantic",
+        "meg",
+        "india",
+        "us_gulf",
+        "was",
+        "coast",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2019-02-01_2019_bulk_report_week5_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With the long first month of the year now over, next comes the Chinese New Year celebrations. The Baltic Handysize Index (BHSI) recorded a large fall, from 588 on the first index day of 2019 to 328 on 31 January.",
+      "keywords": [
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "europe",
+        "singapore",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 258,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

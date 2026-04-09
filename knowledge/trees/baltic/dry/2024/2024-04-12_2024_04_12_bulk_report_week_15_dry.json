@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__root",
+  "doc_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 15",
+  "section_path": [
+    "Bulk report - Week 15"
+  ],
+  "section_path_text": "Bulk report - Week 15",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nAt the beginning of the week, the Pacific market showed promising activity with healthy cargo volumes. However, despite this, conditions slightly weakened, and the Atlantic market remained subdued, as the week got underway. Nevertheless, as the week progressed, the Pacific market saw increased activity, particularly before the Singapore holiday, with C5 stabilizing around the $8.90 mark.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 845,
+  "source_path": "reports/baltic/dry/2024/2024-04-12_bulk-report-week-15_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "At the beginning of the week, the Pacific market showed promising activity with healthy cargo volumes. However, despite this, conditions slightly weakened, and the Atlantic market remained subdued, as the week got underway.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "singapore",
+        "positive",
+        "activity",
+        "bids",
+        "despite",
+        "holiday"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A mixed week, the opening part returned weaker rates only to find some impetus mid-week to flatten out as the week ended. In the Atlantic, a pick-up of grain demand mid-week both from South and North Coast South America drove rates forward, an 81,000-dwt delivery North France achieving $23,000 for a trip via NC South America redelivery Far east.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "grain",
+        "south",
+        "delivery",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 199,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Mixed blessings for the owning side this past week, whilst the Atlantic appeared rather positional the widespread holidays in Asia saw limited action although sentiment seemingly remained fairly positive with tonnage supply remaining relatively tight. From the Atlantic better levels were seen from the US Gulf but from the South Atlantic it remained finely balanced.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2024-04-12_2024_04_12_bulk_report_week_15_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In a week with more holidays across large portions of the globe due to Eid, visible activity remained muted. In the South Atlantic, limited cargo availability remained an issue for Owners and a 32,000-dwt was rumored to have been fixed for a trip from Recalada to Algeria with an intended cargo of grains at $16,500 whilst a 37,000-dwt opening in Nueva Palmira was rumored to have failed on subject's basis delivery when we're ready via the River Plate to Algeria at $18,500.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "singapore",
+        "grain",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

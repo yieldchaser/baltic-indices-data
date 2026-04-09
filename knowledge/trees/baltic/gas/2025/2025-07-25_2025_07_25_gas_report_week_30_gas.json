@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-07-25_2025_07_25_gas_report_week_30_gas__root",
+  "doc_id": "baltic_gas_2025-07-25_2025_07_25_gas_report_week_30_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 30",
+  "section_path": [
+    "Gas report - Week 30"
+  ],
+  "section_path_text": "Gas report - Week 30",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market saw mixed sentiment this week, with rates holding steady on some routes and softening on others, as stable vessel availability met with a steady stream of cargoes. On the BLNG1 Australia-Japan route, rates for 174k cbm vessels fell $1,300 to $37,200 per day, while 160k cbm ships gained $800 to $22,400, as Pacific demand remained modest but selectively supportive of smaller vessels. The BLNG2 US Gulf-Continent route diverged slightly, with 174k cbm rates rising $400 to $33,200, and 160k cbm units also up $400 to $20,500, supported by steady activity and a relatively balanced tonnage list.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "cbm",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 487,
+  "source_path": "reports/baltic/gas/2025/2025-07-25_gas-report-week-30_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-07-25_2025_07_25_gas_report_week_30_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-07-25_2025_07_25_gas_report_week_30_gas",
+      "parent_id": "baltic_gas_2025-07-25_2025_07_25_gas_report_week_30_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market saw mixed sentiment this week, with rates holding steady on some routes and softening on others, as stable vessel availability met with a steady stream of cargoes. On the BLNG1 Australia-Japan route, rates for 174k cbm vessels fell $1,300 to $37,200 per day, while 160k cbm ships gained $800 to $22,400, as Pacific demand remained modest but selectively supportive of smaller vessels.",
+      "keywords": [
+        "lng",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "cbm"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 269,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-07-25_2025_07_25_gas_report_week_30_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-07-25_2025_07_25_gas_report_week_30_gas",
+      "parent_id": "baltic_gas_2025-07-25_2025_07_25_gas_report_week_30_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market further firmed this week, supported by tightening vessel availability and robust chartering demand, particularly in the Atlantic. Rates surged across all major routes, with sentiment buoyed by a progressively thinner tonnage list.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "per",
+        "route",
+        "tce",
+        "day.",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

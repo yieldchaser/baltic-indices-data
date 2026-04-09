@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__root",
+  "doc_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 39",
+  "section_path": [
+    "Bulk report - Week 39"
+  ],
+  "section_path_text": "Bulk report - Week 39",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market was in a steep climb for most of this week as it reached a pinnacle of $74,786 Wednesday before stalling, regathering, and then pushing on to $75,190 at weeks end. These heights were last visited in November 2009. The market is currently looking very robust on several fronts with vessel tightness on numerous loading windows across the globe, while an energy crisis in several countries add complications.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 962,
+  "source_path": "reports/baltic/dry/2021/2021-10-01_bulk-report-week-39_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry",
+      "parent_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market was in a steep climb for most of this week as it reached a pinnacle of $74,786 Wednesday before stalling, regathering, and then pushing on to $75,190 at weeks end. These heights were last visited in November 2009.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "pacific",
+        "before",
+        "close",
+        "vessel",
+        "back",
+        "basin"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 261,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry",
+      "parent_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market proved to be a mixed picture this week, with the Atlantic shedding recent gains as the North of the region came under severe pressure. Conversely, the Asian basin witnessed some substantial gains with the NoPac trips proving to offer underlying support.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "japan",
+        "coal",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry",
+      "parent_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Whilst sentiment remained positive in most areas, brokers described a rather lethargic week overall as the upcoming holidays in China kept a lid on activity levels. The BSI made slight gains from the end of last week seeing a week on week gain of 24 points from last Friday's close.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "dwt",
+        "fixing",
+        "mediterranean"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry",
+      "parent_id": "baltic_dry_2021-10-01_2021_10_01_bulk_report_week_39_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The US Gulf made large positive strides this week, with a 38,000-dwt fixed for a trip from the US Gulf to the Continent/Mediterranean range at $28,000. A scrubber fitted 40,000-dwt was fixed from Tampico via Houston to North Brazil at $33,000 for a cargo of Petcoke.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "europe",
+        "us_gulf",
+        "bauxite",
+        "dwt",
+        "fixed",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

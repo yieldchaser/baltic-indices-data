@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-03-07_2025_03_07_gas_report_week_10_gas__root",
+  "doc_id": "baltic_gas_2025-03-07_2025_03_07_gas_report_week_10_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 10",
+  "section_path": [
+    "Gas report - Week 10"
+  ],
+  "section_path_text": "Gas report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThis week, the LNG market continued its positive momentum, with further rate increases across key routes for 160k cbm and 174k cbm vessels, driven by tightening tonnage availability. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels recorded a $2,500 increase, bringing rates to $18,200 per day, further reinforcing positive sentiment in the Pacific. Meanwhile, 160k cbm vessels saw a $1,500 gain, reaching $10,500 per day, continuing the recovery for smaller tonnage.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "pacific",
+    "europe",
+    "gas",
+    "cbm",
+    "vessels",
+    "per",
+    "route",
+    "saw",
+    "day"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 586,
+  "source_path": "reports/baltic/gas/2025/2025-03-07_gas-report-week-10_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-03-07_2025_03_07_gas_report_week_10_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-03-07_2025_03_07_gas_report_week_10_gas",
+      "parent_id": "baltic_gas_2025-03-07_2025_03_07_gas_report_week_10_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week, the LNG market continued its positive momentum, with further rate increases across key routes for 160k cbm and 174k cbm vessels, driven by tightening tonnage availability. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels recorded a $2,500 increase, bringing rates to $18,200 per day, further reinforcing positive sentiment in the Pacific.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "europe",
+        "gas",
+        "cbm",
+        "vessels",
+        "per"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 379,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-03-07_2025_03_07_gas_report_week_10_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-03-07_2025_03_07_gas_report_week_10_gas",
+      "parent_id": "baltic_gas_2025-03-07_2025_03_07_gas_report_week_10_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has remained static this week, largely due to most market participants being in Tokyo, with only minor fluctuations across key routes. On the BLPG1 Ras Tanura-Chiba route, rates increased by $1.25, settling at $46.25.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "earnings",
+        "route",
+        "saw",
+        "tce",
+        "closing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__root",
+  "doc_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 30",
+  "section_path": [
+    "Tanker report - Week 30"
+  ],
+  "section_path_text": "Tanker report - Week 30",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nThis week the Middle East Gulf LR2s have seen a small upturn, climbing 7.5 points to WS240 on TC1 then plateauing. The LR1s have been tested down reflected in the TC5 index dropping 28.92 points to WS256.79. We understand this has been from a glut of prompt available tonnage, amongst other factors.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "tce"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1020,
+  "source_path": "reports/baltic/tanker/2022/2022-07-29_tanker-report-week-30_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker",
+      "parent_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week the Middle East Gulf LR2s have seen a small upturn, climbing 7.5 points to WS240 on TC1 then plateauing. The LR1s have been tested down reflected in the TC5 index dropping 28.92 points to WS256.79.",
+      "keywords": [
+        "handysize",
+        "meg",
+        "europe",
+        "last",
+        "per",
+        "points",
+        "tce",
+        "again"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 438,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker",
+      "parent_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "VLCC rates peaked at the end of last week - steadily and slowly easing this week - however, this is likely in reaction to falling bunker prices as earnings have edged higher. For 270,000mt Middle East Gulf/China, rates lost 2.5 points to WS59 (a round trip TCE of $9,100 per day, having been just shy of $9,000 a week ago), while the rate for 280,000mt Middle East Gulf/USG (via Cape of Good Hope) slipped a single point to WS34.5.",
+      "keywords": [
+        "capesize",
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker",
+      "parent_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates for 135,000mt Black Sea/Augusta eased 1.5 points to WS206 (a round-trip TCE of about $86,900 per day). For the 130,000mt Nigeria/UKC trip rates have been reduced by three points to WS137 (a round-trip TCE of $35,000 per day).",
+      "keywords": [
+        "europe",
+        "points",
+        "day",
+        "per",
+        "round-trip",
+        "tce",
+        "basrah/west",
+        "black"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 103,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker",
+      "parent_id": "baltic_tanker_2022-07-29_2022_07_29_tanker_report_week_30_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Mediterranean market improved very slightly with the rate for 80,000mt Ceyhan/West Mediterranean up a point to WS274 (a round-trip TCE of $80,000 per day). In Northern Europe the market continued its downward spiral with the rate for 80,000mt Hound Point/UK Continent losing 14 points to about WS177 (a daily round trip TCE of $43,700).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "tce",
+        "points",
+        "day",
+        "per",
+        "continent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

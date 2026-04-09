@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-07-12_2024_07_12_gas_report_week_28_gas__root",
+  "doc_id": "baltic_gas_2024-07-12_2024_07_12_gas_report_week_28_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 28",
+  "section_path": [
+    "Gas report - Week 28"
+  ],
+  "section_path_text": "Gas report - Week 28",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nAny expected issues facing the US LNG market from the recent hurricane are looking to be short lived, as the market has been muted. A few reported fixtures have helped firm up rates but there is no real driving force to show any clear direction. The BLNG1 Aus-Japan run saw positive gains trying to catch up on the Pacific, but even then it has closed with a larger delta between the Atlantic than we have seen of late.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "meg",
+    "japan",
+    "gas",
+    "cbm",
+    "finished",
+    "between",
+    "closed"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 486,
+  "source_path": "reports/baltic/gas/2024/2024-07-12_gas-report-week-28_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-07-12_2024_07_12_gas_report_week_28_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-07-12_2024_07_12_gas_report_week_28_gas",
+      "parent_id": "baltic_gas_2024-07-12_2024_07_12_gas_report_week_28_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Any expected issues facing the US LNG market from the recent hurricane are looking to be short lived, as the market has been muted. A few reported fixtures have helped firm up rates but there is no real driving force to show any clear direction.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "japan",
+        "gas",
+        "cbm",
+        "finished",
+        "closed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 300,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-07-12_2024_07_12_gas_report_week_28_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-07-12_2024_07_12_gas_report_week_28_gas",
+      "parent_id": "baltic_gas_2024-07-12_2024_07_12_gas_report_week_28_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A very quiet week overall in the Middle East Gulf, BLPG1 Ras Tanura-Chiba dropped by $3.571 due to a lack of open interest from charterers. Cargoes were few and far between, with brokers not reporting a single BLPG1 cargo this week and with a publication of $59.286 and daily TCE earning equivalent of $38,286, both owners and brokers alike will be ready for the weekend.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "meg",
+        "gas",
+        "blpg1",
+        "brokers",
+        "cargo",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 180,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

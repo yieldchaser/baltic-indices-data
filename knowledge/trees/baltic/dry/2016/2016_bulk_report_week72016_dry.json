@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry__root",
+  "doc_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 7 2016",
+  "section_path": [
+    "Bulk report - Week 7 2016"
+  ],
+  "section_path_text": "Bulk report - Week 7 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Chinese return to work failed to produce any fireworks but a flurry of fixing from the Australian miners, together with slightly firmer bunker prices and some recent weather delays, prompted a further rise in rates in the more active west Australia/China market. The week closed out with talk of BHP Billiton fixing a 29 February 170,000 tonne 10% cargo from Port Hedland to Qingdao at $3.15. Timecharter rates remained in the doldrums hovering around mid-high $2,000 daily, depending on the ship's specifications.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1019,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week72016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry__s01_capesize",
+      "doc_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry",
+      "parent_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Chinese return to work failed to produce any fireworks but a flurry of fixing from the Australian miners, together with slightly firmer bunker prices and some recent weather delays, prompted a further rise in rates in the more active west Australia/China market. The week closed out with talk of BHP Billiton fixing a 29 February 170,000 tonne 10% cargo from Port Hedland to Qingdao at $3.15.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "around",
+        "qingdao",
+        "was",
+        "active"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry__s02_panamax",
+      "doc_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry",
+      "parent_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "South American grain shipments continued to underpin the market with rates here firmer over the week. However, going forward views varied and changed frequently.",
+      "keywords": [
+        "china",
+        "australia",
+        "india",
+        "grain",
+        "east",
+        "basis",
+        "bonus",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 187,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry",
+      "parent_id": "baltic_dry_unknown_2016_bulk_report_week72016_dry__root",
+      "title": "Supramax/Handysize",
+      "section_path": [
+        "Supramax/Handysize"
+      ],
+      "section_path_text": "Supramax/Handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The BDI goes back over ‘300' this week, with rates in general all trying to improve over last done and brokers having a busy time with more cargoes in the market. The supramax index nudged up every day this week.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 599,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

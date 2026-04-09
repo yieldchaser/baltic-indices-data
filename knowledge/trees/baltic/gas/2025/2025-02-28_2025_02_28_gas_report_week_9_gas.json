@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-02-28_2025_02_28_gas_report_week_9_gas__root",
+  "doc_id": "baltic_gas_2025-02-28_2025_02_28_gas_report_week_9_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 9",
+  "section_path": [
+    "Gas report - Week 9"
+  ],
+  "section_path_text": "Gas report - Week 9",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThis week, the LNG market saw strong positive movements, particularly in the Atlantic basin, with significant increases across key routes for both 160k cbm and 174k cbm vessels, primarily driven by tighter available tonnage. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels experienced an increase of $4,400, settling at $15,300 per day, signalling positive momentum in the Pacific. Meanwhile, 160k cbm vessels saw a rise of $3,200, reaching $8,600 per day, showing a recovery for smaller tonnage as well.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "pacific",
+    "europe",
+    "gas",
+    "cbm",
+    "vessels",
+    "saw",
+    "per",
+    "route",
+    "day"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 590,
+  "source_path": "reports/baltic/gas/2025/2025-02-28_gas-report-week-9_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-02-28_2025_02_28_gas_report_week_9_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-02-28_2025_02_28_gas_report_week_9_gas",
+      "parent_id": "baltic_gas_2025-02-28_2025_02_28_gas_report_week_9_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week, the LNG market saw strong positive movements, particularly in the Atlantic basin, with significant increases across key routes for both 160k cbm and 174k cbm vessels, primarily driven by tighter available tonnage. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels experienced an increase of $4,400, settling at $15,300 per day, signalling positive momentum in the Pacific.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "europe",
+        "gas",
+        "cbm",
+        "vessels",
+        "per"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 392,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-02-28_2025_02_28_gas_report_week_9_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-02-28_2025_02_28_gas_report_week_9_gas",
+      "parent_id": "baltic_gas_2025-02-28_2025_02_28_gas_report_week_9_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The upward trend from last week appears to have continued with steady sentiment, likely driven by IE week. On the BLPG1 Ras Tanura to Chiba route, rates declined by $1.58, settling at $44.50, while TCE earnings dropped by $308, closing at $26,088.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "earnings",
+        "route",
+        "tce",
+        "closing",
+        "despite"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

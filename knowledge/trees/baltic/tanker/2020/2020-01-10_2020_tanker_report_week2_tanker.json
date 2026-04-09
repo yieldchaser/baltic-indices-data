@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__root",
+  "doc_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 2",
+  "section_path": [
+    "Tanker report - Week 2"
+  ],
+  "section_path_text": "Tanker report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nEscalating tensions between the USA and Iran, in addition to a continuing strong market, made for an interesting week, with rates firming 2.5-3 points across the board. 270,000mt Middle East Gulf to China is now WS125, and 280,000mt to US Gulf, basis Cape/Cape, is assessed at WS65. Similarly, 260,000mt West Africa to China rose to WS115.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 608,
+  "source_path": "reports/baltic/tanker/2020/2020_tanker-report-week2_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker",
+      "parent_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Escalating tensions between the USA and Iran, in addition to a continuing strong market, made for an interesting week, with rates firming 2.5-3 points across the board. 270,000mt Middle East Gulf to China is now WS125, and 280,000mt to US Gulf, basis Cape/Cape, is assessed at WS65.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf",
+        "assessed",
+        "now"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 138,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker",
+      "parent_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 130,000mt West Africa to UK-Continent moved up about 12.5 points to high WS150s. For 135,000mt Black Sea to the Mediterranean, rates are assessed at mid WS160s.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "mediterranean",
+        "points",
+        "africa",
+        "are",
+        "assessed",
+        "basrah"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 83,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker",
+      "parent_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The 80,000mt cross-North Sea market eased, shedding about 15 points to mid WS140s. 100,000mt Baltic to UK-Continent also dipped 15 points to low WS130s.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "gulf",
+        "low",
+        "are",
+        "assessed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 176,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker",
+      "parent_id": "baltic_tanker_2020-01-10_2020_tanker_report_week2_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Although bunker prices are high, and tension simmers there, the market for both 75,000mt and 55,000mt Middle East Gulf to Japan came under downward pressure. The market eased over 10 points to low WS140s on the larger size, with a similar weakening seen on the 55,000mt size where rates are now hovering in the mid WS140s.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "are",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 198,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-06-30_2023_06_30_gas_report_week_26_gas__root",
+  "doc_id": "baltic_gas_2023-06-30_2023_06_30_gas_report_week_26_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 26",
+  "section_path": [
+    "Gas report - Week 26"
+  ],
+  "section_path_text": "Gas report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market has been making moves, with several bits of enquiry put on subs/fixed away this week. The US had a couple of 160 TFDE's put on subs, with one for August lifting in the low $80,000s. The opening (although tentative) of the ARB between east and west created even more tonnage activity and the cargoes being worked were for the most part covered.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "japan",
+    "gas",
+    "out",
+    "rise",
+    "daily",
+    "tce",
+    "but"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 524,
+  "source_path": "reports/baltic/gas/2023/2023-06-30_gas-report-week-26_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-06-30_2023_06_30_gas_report_week_26_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-06-30_2023_06_30_gas_report_week_26_gas",
+      "parent_id": "baltic_gas_2023-06-30_2023_06_30_gas_report_week_26_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market has been making moves, with several bits of enquiry put on subs/fixed away this week. The US had a couple of 160 TFDE's put on subs, with one for August lifting in the low $80,000s.",
+      "keywords": [
+        "lng",
+        "australia",
+        "japan",
+        "gas",
+        "cargoes",
+        "between",
+        "blng2g",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 282,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-06-30_2023_06_30_gas_report_week_26_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-06-30_2023_06_30_gas_report_week_26_gas",
+      "parent_id": "baltic_gas_2023-06-30_2023_06_30_gas_report_week_26_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market this week has remained flat. Rates rose from the start of the week on BLPG1 Ras Tanura-Chiba by $1.643 to close at $119.429 (giving a daily TCE earnings equivalent of $107,378) and with a vessel confirmed fixed at more than $120 and a relatively tight tonnage list, expectations are that the firm footing should continue.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "daily",
+        "rise",
+        "tce",
+        "earning"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__root",
+  "doc_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 16",
+  "section_path": [
+    "Bulk report - Week 16"
+  ],
+  "section_path_text": "Bulk report - Week 16",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week the market saw a slow start, with a healthy supply of tonnage in the Pacific and limited enquiry, particularly from East Coast Australia to China. The market continued to deteriorate on thin volume. By the middle of the week all three majors were in the market from West Australia to China, albeit briefly, and fresh enquiry began to emerge from East Coast Australia to China.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "iron_ore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 878,
+  "source_path": "reports/baltic/dry/2023/2023-04-21_bulk-report-week-16_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week the market saw a slow start, with a healthy supply of tonnage in the Pacific and limited enquiry, particularly from East Coast Australia to China. The market continued to deteriorate on thin volume.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "end",
+        "enquiry",
+        "all"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Slow and small gains was the story on the week for the Panamax market. The Atlantic appeared tonnage tight and very positional for the most part with grain trades paying a premium still.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "grain",
+        "south",
+        "tonnage",
+        "concluded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A more positive week for the sector. In the Atlantic stronger numbers were seen from the US Gulf with a shift in tonnage to enquiry balance.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal",
+        "steel",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2023-04-21_2023_04_21_bulk_report_week_16_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Despite widespread holidays at the beginning of the week, positivity continued in the Atlantic and returned to the Asia markets, with brokers speaking of more enquiry across both basins and some areas seeing limited tonnage availability. In the US Gulf, a 37,000-dwt was fixed for a trip from SW Pass to the Eastern Mediterranean with an intended cargo of grains at $13,000.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "grain",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__root",
+  "doc_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 11",
+  "section_path": [
+    "Bulk report - Week 11"
+  ],
+  "section_path_text": "Bulk report - Week 11",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Baltic Capesize market shrugged off its recent negative sentiment to post daily incremental improvements over the last week. Pacific-led gains were seen early in the week. As the market drew to a close on Friday, higher Atlantic rates were being traded.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1043,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week11_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Baltic Capesize market shrugged off its recent negative sentiment to post daily incremental improvements over the last week. Pacific-led gains were seen early in the week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "coal",
+        "mid"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A relatively uneventful week finished with a positive outlook. It began slowly, with rates everywhere except South America coming under pressure.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "tonnage",
+        "north",
+        "south",
+        "ballast",
+        "began",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a flat week for the Baltic Supramax Index (BSI) with little movement. Period activity remained limited, but an Ultramax, open Japan, was fixed at $12,500 for six to eight months trading.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 252,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry",
+      "parent_id": "baltic_dry_2019-03-15_2019_bulk_report_week11_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Rates climbed again in both basins in the past week and the Baltic Handysize Index (BHSI) was well supported. It is now above 430, improving over 100 points since mid-February.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 319,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

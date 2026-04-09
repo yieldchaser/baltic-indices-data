@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-05-30_2025_05_30_gas_report_week_22_gas__root",
+  "doc_id": "baltic_gas_2025-05-30_2025_05_30_gas_report_week_22_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 22",
+  "section_path": [
+    "Gas report - Week 22"
+  ],
+  "section_path_text": "Gas report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market softened further this week, with small declines across both spot and period markets as sentiment turned cautious. Weaker transatlantic demand and ample vessel supply in the Atlantic basin weighed on rates, while the Pacific remained relatively more stable. On the BLNG1 Australia-Japan route, 174k cbm vessels held steady at $20,900/day, while 160k cbm units dipped $500 to $11,700/day, reflecting a still-balanced market in the Pacific basin.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "cbm",
+    "day",
+    "day."
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 545,
+  "source_path": "reports/baltic/gas/2025/2025-05-30_gas-report-week-22_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-05-30_2025_05_30_gas_report_week_22_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-05-30_2025_05_30_gas_report_week_22_gas",
+      "parent_id": "baltic_gas_2025-05-30_2025_05_30_gas_report_week_22_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market softened further this week, with small declines across both spot and period markets as sentiment turned cautious. Weaker transatlantic demand and ample vessel supply in the Atlantic basin weighed on rates, while the Pacific remained relatively more stable.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 291,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-05-30_2025_05_30_gas_report_week_22_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-05-30_2025_05_30_gas_report_week_22_gas",
+      "parent_id": "baltic_gas_2025-05-30_2025_05_30_gas_report_week_22_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market saw modest gains this week across all major routes, as vessel availability tightened and sentiment improved following the previous week of subdued trading. While the recovery was not dramatic, firmer fundamentals helped buoy rates and earnings across the board.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "earnings",
+        "day.",
+        "gains",
+        "route",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 248,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

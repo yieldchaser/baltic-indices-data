@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__root",
+  "doc_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 42",
+  "section_path": [
+    "Bulk report - Week 42"
+  ],
+  "section_path_text": "Bulk report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market kept up a constant precipitous fall in values this week. Opening at $29,479, the Capesize 5TC has closed the week at $19,952, a drop of almost -30%. The Atlantic has been the most affected of the basins, yet this is likely because it had further to fall.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1114,
+  "source_path": "reports/baltic/dry/2020/2020-10-16_bulk-report-week-42_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market kept up a constant precipitous fall in values this week. Opening at $29,479, the Capesize 5TC has closed the week at $19,952, a drop of almost -30%.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "coming",
+        "down",
+        "further"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Little sign of cheer this week as Panamax rates came under severe pressure. In particular throughout the Atlantic basin as the supply/demand plot turned in favour of the charterers, who for the most part were able to pick off tonnage at will as the count increased.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "us_gulf",
+        "south",
+        "tonnage",
+        "drifted",
+        "favour"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather lacklustre week for the BSI, which remained flat at the beginning of the week. But as the week ended, slight negative movement appeared.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "redelivery",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2020-10-16_2020_10_16_bulk_report_week_42_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "At the start of the week, both the BHSI and the time charter average declined for the first time since September. However, they recovered back to the positive territory in the second half of the week with the support from the US Gulf and Continent, despite east coast South America moving sharply lower.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 430,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

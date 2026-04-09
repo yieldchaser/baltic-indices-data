@@ -24,6 +24,7 @@ regions:
 - china
 - europe
 - india
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2025/2025-07-18_container-report-week-29_container.html

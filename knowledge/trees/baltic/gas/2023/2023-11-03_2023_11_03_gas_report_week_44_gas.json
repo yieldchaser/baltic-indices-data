@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-11-03_2023_11_03_gas_report_week_44_gas__root",
+  "doc_id": "baltic_gas_2023-11-03_2023_11_03_gas_report_week_44_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 44",
+  "section_path": [
+    "Gas report - Week 44"
+  ],
+  "section_path_text": "Gas report - Week 44",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nWhile the LPG market has been significantly rocked after the Panama Port Authority cull on crossings per day, the LNG market has reacted a little more mutely. The affect is still to be absorbed but the big increase in waiting times, or potentially much higher tonne miles via the Cape, will no doubt affect routing and pricing. As the LNG market has shifted focus towards Cont deliveries from the US, there have been fewer Panama canal transits to be affected, but it will not go unnoticed.",
+  "keywords": [
+    "capesize",
+    "lng",
+    "lpg",
+    "atlantic",
+    "japan",
+    "gas",
+    "but",
+    "earnings",
+    "finish",
+    "not",
+    "panama",
+    "rose"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 479,
+  "source_path": "reports/baltic/gas/2023/2023-11-03_gas-report-week-44_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-11-03_2023_11_03_gas_report_week_44_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-11-03_2023_11_03_gas_report_week_44_gas",
+      "parent_id": "baltic_gas_2023-11-03_2023_11_03_gas_report_week_44_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "While the LPG market has been significantly rocked after the Panama Port Authority cull on crossings per day, the LNG market has reacted a little more mutely. The affect is still to be absorbed but the big increase in waiting times, or potentially much higher tonne miles via the Cape, will no doubt affect routing and pricing.",
+      "keywords": [
+        "capesize",
+        "lng",
+        "lpg",
+        "atlantic",
+        "japan",
+        "gas",
+        "but",
+        "rose"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-11-03_2023_11_03_gas_report_week_44_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-11-03_2023_11_03_gas_report_week_44_gas",
+      "parent_id": "baltic_gas_2023-11-03_2023_11_03_gas_report_week_44_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A quiet week on the LPG Eastern market with few fixtures reported. November is not shaping up to be overly busy either and with balanced tonnage vs.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "earnings",
+        "tce",
+        "blpg2",
+        "blpg3",
+        "but",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-06-13_2025_06_13_gas_report_week_24_gas__root",
+  "doc_id": "baltic_gas_2025-06-13_2025_06_13_gas_report_week_24_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 24",
+  "section_path": [
+    "Gas report - Week 24"
+  ],
+  "section_path_text": "Gas report - Week 24",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market firmed this week across all major routes, driven by tightening vessel availability ahead of early July loadings. Stronger momentum was especially evident in the Atlantic basin, while the Pacific also posted gains amid a thinner tonnage list. On the BLNG1 Australia-Japan route, rates rose $800 for 174k cbm vessels to $20,700 per day, and $1,200 for 160k cbm ships to $12,400 per day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "cbm",
+    "day"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 500,
+  "source_path": "reports/baltic/gas/2025/2025-06-13_gas-report-week-24_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-06-13_2025_06_13_gas_report_week_24_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-06-13_2025_06_13_gas_report_week_24_gas",
+      "parent_id": "baltic_gas_2025-06-13_2025_06_13_gas_report_week_24_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market firmed this week across all major routes, driven by tightening vessel availability ahead of early July loadings. Stronger momentum was especially evident in the Atlantic basin, while the Pacific also posted gains amid a thinner tonnage list.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 257,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-06-13_2025_06_13_gas_report_week_24_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-06-13_2025_06_13_gas_report_week_24_gas",
+      "parent_id": "baltic_gas_2025-06-13_2025_06_13_gas_report_week_24_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market held broadly steady this week, with rates fluctuating within a narrow range amid a lack of fresh drivers. While the West-East arbitrage remained constrained, some routes managed minor gains, supported by steady fixture activity.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "per",
+        "day.",
+        "earnings",
+        "gains",
+        "route",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

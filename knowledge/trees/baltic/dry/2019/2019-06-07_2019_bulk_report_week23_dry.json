@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__root",
+  "doc_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 23",
+  "section_path": [
+    "Bulk report - Week 23"
+  ],
+  "section_path_text": "Bulk report - Week 23",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market continued in an unusually steady ascent last week. With no major news in the market, each day improved on the last, breaking with the recent boom bust volatility. Owners appear to be less inclined to overplay their hand, while taking the smaller improvements as they come, in what appears to be a sustainable market.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 940,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week23_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry",
+      "parent_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market continued in an unusually steady ascent last week. With no major news in the market, each day improved on the last, breaking with the recent boom bust volatility.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "close",
+        "friday"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry",
+      "parent_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Despite being a disrupted week, with several holidays in the East, rates in the Pacific appeared to resist the negative sentiment emanating from other areas. There was a surprising volume of fixing spread across the various load areas.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "coal",
+        "areas.",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry",
+      "parent_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a lacklustre week overall, with the Baltic Supramax Index (BSI) losing ground. This was not helped by the widespread holidays.",
+      "keywords": [
+        "supramax",
+        "australia",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry",
+      "parent_id": "baltic_dry_2019-06-07_2019_bulk_report_week23_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Baltic Handysize Index (BHSI) continued climbing. Minor daily improvements maintained the index in the positive territory.",
+      "keywords": [
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 288,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

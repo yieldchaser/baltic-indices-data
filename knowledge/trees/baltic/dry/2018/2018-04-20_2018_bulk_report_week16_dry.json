@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__root",
+  "doc_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 16",
+  "section_path": [
+    "Bulk report - Week 16"
+  ],
+  "section_path_text": "Bulk report - Week 16",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week has seen the Cape 5 timecharter weighted average almost double. Similarly, the Brazil to China ore rates climbed over $4.50, from mid-$13.00s, to somewhere in the $18.00s. Despite all this activity, the West Australia ore rates have moved a modest amount.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1410,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week16_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry",
+      "parent_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week has seen the Cape 5 timecharter weighted average almost double. Similarly, the Brazil to China ore rates climbed over $4.50, from mid-$13.00s, to somewhere in the $18.00s.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "pacific",
+        "was",
+        "activity",
+        "april"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 327,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry",
+      "parent_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Period interest continued, despite the disparity with spot rates, with the ongoing improvement in the Cape market further boosting the sentiment. The paper market tried to bounce a few times this week, but the declining BPI repeatedly dampened resolve.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "grain",
+        "was",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 244,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry",
+      "parent_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall a week lacking activity in the Atlantic, but some suggested a floor might have been found in certain areas. Most of the Atlantic routes made gains, and the US Gulf market was picking up again towards the weekend.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 494,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry",
+      "parent_id": "baltic_dry_2018-04-20_2018_bulk_report_week16_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Pacific basin saw a continuous fall throughout the week, and the negative sentiment continued in the US Gulf, while the rates struggled to push up further from East coast South America. Most of the areas remained largely flat.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "japan",
+        "bauxite",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 331,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

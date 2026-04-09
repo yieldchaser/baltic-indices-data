@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__root",
+  "doc_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 12",
+  "section_path": [
+    "Tanker report - Week 12"
+  ],
+  "section_path_text": "Tanker report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nIt was another slow week, with rates under pressure slipping below WS 60 as 270,000mt fixed to China at WS 59 and Taiwan at WS 57.5 for 265,000mt cargo. Going west, rates for 280,000mt to the US Gulf fell 4.75 points, as Valero took BP tonnage at WS 23.5 Cape/Cape. In West Africa, rates for 260,000mt were assessed 1.5 points lower at WS 55, with potential to soften further.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "singapore",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 511,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week12_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker",
+      "parent_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It was another slow week, with rates under pressure slipping below WS 60 as 270,000mt fixed to China at WS 59 and Taiwan at WS 57.5 for 265,000mt cargo. Going west, rates for 280,000mt to the US Gulf fell 4.75 points, as Valero took BP tonnage at WS 23.5 Cape/Cape.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "west_africa",
+        "us_gulf",
+        "singapore",
+        "fixed",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 148,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker",
+      "parent_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa rates for 130,000mt to Europe dipped from WS 55 to high WS 40s, with US Gulf discharge fixed at WS 42.5. Black Sea/Mediterranean rates for 135,000mt hovered in the high WS 60s, after WS 72.5 was agreed earlier, but for UKC-Med.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "high",
+        "was",
+        "africa",
+        "after",
+        "agreed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 85,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker",
+      "parent_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "In the Mediterranean it was a volatile week. Sidi Kerir/Med fixed at WS 80 for 80,000mt, with Ceyhan at WS 85.",
+      "keywords": [
+        "europe",
+        "points",
+        "before",
+        "recovering",
+        "sea",
+        "black",
+        "caribs",
+        "ceyhan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 149,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker",
+      "parent_id": "baltic_tanker_2019-03-22_2019_tanker_report_week12_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Rates for 75,000mt Middle East Gulf/Japan nudged up 2.5 points to WS 100, with the 55,000mt trade regaining 2.5 points to WS 115. Continent/USAC 37,000mt trade gained 2.5 points to WS 167.5, while 38,000mt from the US Gulf to UKC rose more than 20 points to the high WS 90s.",
+      "keywords": [
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "trade",
+        "assessments",
+        "continent/usac"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 116,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

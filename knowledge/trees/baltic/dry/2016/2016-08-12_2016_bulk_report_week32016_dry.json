@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry__root",
+  "doc_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 3 2016",
+  "section_path": [
+    "Bulk report - Week 3 2016"
+  ],
+  "section_path_text": "Bulk report - Week 3 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nIn a generally dismal market the odd marginal improvement was evident, but the same problems besetting the market remained. A rise in bunker values was probably a factor on voyage rates. Added to this, was news that the berths at Tubarao, for both ore and grain, have been shut down over emission issues, but it was too early to say when the restrictions will be lifted.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1379,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week32016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry",
+      "parent_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "In a generally dismal market the odd marginal improvement was evident, but the same problems besetting the market remained. A rise in bunker values was probably a factor on voyage rates.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "grain",
+        "was",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 326,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry",
+      "parent_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Atlantic timecharter rates remained under further pressure with charterers able to pick and choose as cargoes are in very limited supply. A post panamax fixed this week from Portbury for a US Gulf round at just $1,500 daily, with the charterer then re-letting the ship for a coal cargo from Mobile to Hamburg at $6.50.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 365,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry",
+      "parent_id": "baltic_dry_2016-08-12_2016_bulk_report_week32016_dry__root",
+      "title": "Supramax/Handysize",
+      "section_path": [
+        "Supramax/Handysize"
+      ],
+      "section_path_text": "Supramax/Handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a relatively busy week with plenty of market conversation but with the BDI dropping daily. Further layup discussions and some port delays did not seem as yet to have had any positive repercussions.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 674,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

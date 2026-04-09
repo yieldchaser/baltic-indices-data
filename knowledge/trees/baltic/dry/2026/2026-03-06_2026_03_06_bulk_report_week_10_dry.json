@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__root",
+  "doc_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 10",
+  "section_path": [
+    "Bulk report - Week 10"
+  ],
+  "section_path_text": "Bulk report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market experienced a volatile week, shaped largely by macro developments and rising bunker prices rather than a clear improvement in underlying demand. Early in the week, geopolitical tensions in the Middle East and the resulting surge in oil prices pushed bunker costs sharply higher. This drove voyage rates upward, particularly in the Pacific, although much of the increase reflected higher fuel expenses rather than stronger earnings for owners.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 953,
+  "source_path": "reports/baltic/dry/2026/2026-03-06_bulk-report-week-10_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__s01_capesize",
+      "doc_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market experienced a volatile week, shaped largely by macro developments and rising bunker prices rather than a clear improvement in underlying demand. Early in the week, geopolitical tensions in the Middle East and the resulting surge in oil prices pushed bunker costs sharply higher.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "crude_oil",
+        "activity",
+        "although"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week was characterised by a continued divergence between the Atlantic and Pacific markets. In the Atlantic, sentiment steadily weakened as the week progressed, driven by limited fresh enquiry and a growing list of prompt tonnage.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "enquiry",
+        "was",
+        "activity",
+        "although",
+        "approaching"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 168,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The market recorded a generally firm week, although momentum moderated toward the end of the period as participants tried to observe developments in the Middle East. In the Continent and Mediterranean, activity gradually increased as fresh enquiry, particularly scrap stems, supported rates slightly above previous fixtures.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "march",
+        "activity",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 312,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2026-03-06_2026_03_06_bulk_report_week_10_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market recorded a generally positive week despite some caution linked to developments in the Middle East. In the Continent and Mediterranean, activity remained relatively healthy, with fresh demand helping rates hold at firmer levels.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "vessel",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

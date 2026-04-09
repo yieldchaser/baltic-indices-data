@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_2015-05-15_2015_week_20_dry__root",
+  "doc_id": "baltic_dry_2015-05-15_2015_week_20_dry",
+  "parent_id": null,
+  "title": "Week 20",
+  "section_path": [
+    "Week 20"
+  ],
+  "section_path_text": "Week 20",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA combination of higher bunker prices and a drawdown of ore stocks in China spurred active fixing and this combined with a touch more activity in the Atlantic resulted in some significant gains albeit still at a low base. Midweek saw active trading, with Rio Tinto and BHP Billiton fixing and rates reaching at least $5.60. Yet on Thursday BHP Billiton took at least eight ships but secured tonnage at under $5.50.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1078,
+  "source_path": "reports/baltic/dry/2015/2015_week-20_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-05-15_2015_week_20_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-05-15_2015_week_20_dry",
+      "parent_id": "baltic_dry_2015-05-15_2015_week_20_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A combination of higher bunker prices and a drawdown of ore stocks in China spurred active fixing and this combined with a touch more activity in the Atlantic resulted in some significant gains albeit still at a low base. Midweek saw active trading, with Rio Tinto and BHP Billiton fixing and rates reaching at least $5.60.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "japan",
+        "coal",
+        "active",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 287,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-05-15_2015_week_20_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-05-15_2015_week_20_dry",
+      "parent_id": "baltic_dry_2015-05-15_2015_week_20_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Ships in the East saw some gains this week with a steady stream of new business and owners finally able in many instances to move away from aps and fix dop. Increased domestic China coal movements kept some Chinese ships off the market.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "coal",
+        "grain",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 295,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-05-15_2015_week_20_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_2015-05-15_2015_week_20_dry",
+      "parent_id": "baltic_dry_2015-05-15_2015_week_20_dry__root",
+      "title": "Supramax / Handysize",
+      "section_path": [
+        "Supramax / Handysize"
+      ],
+      "section_path_text": "Supramax / Handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Little activity in the Atlantic as European holidays led to a flat market with very few reported fixtures. In the US Gulf a 2011 built 61,400 dwt vessel was reported to have been booked for a trip to Singapore-Japan at around $12,000 daily.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 481,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

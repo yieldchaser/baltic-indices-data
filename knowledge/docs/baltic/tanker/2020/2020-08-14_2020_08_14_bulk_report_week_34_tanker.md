@@ -40,6 +40,7 @@ regions:
 - india
 - us_gulf
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2020/2020-08-14_bulk-report-week-34_tanker.html

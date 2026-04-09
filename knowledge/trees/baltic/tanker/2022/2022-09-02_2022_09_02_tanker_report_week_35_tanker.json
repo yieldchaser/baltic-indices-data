@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__root",
+  "doc_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 35",
+  "section_path": [
+    "Tanker report - Week 35"
+  ],
+  "section_path_text": "Tanker report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nIt's been a bit of a mixed week for CPP vessels with the BCTI falling by -93 points to 1192. In the Middle East Gulf, LR2s of TC1, 75k Middle East Gulf / Japan managed to hold on to the gains of previous weeks finishing marginally up 2.5 points to WS74.88. LR1s also held their ground and TC5 55k Middle East Gulf / Japan climbed to WS305, up 5.71 points.",
+  "keywords": [
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "singapore",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1160,
+  "source_path": "reports/baltic/tanker/2022/2022-09-02_tanker-report-week-35_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker",
+      "parent_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It's been a bit of a mixed week for CPP vessels with the BCTI falling by -93 points to 1192. In the Middle East Gulf, LR2s of TC1, 75k Middle East Gulf / Japan managed to hold on to the gains of previous weeks finishing marginally up 2.5 points to WS74.88.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 491,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker",
+      "parent_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Across the VLCC market, rates softened. But from highs of WS80.18 for a VLCC Middle East Gulf/China, dropping to WS75.73 at weeks close (a round-trip TCE of $35,013 per day).",
+      "keywords": [
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "singapore",
+        "tce",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker",
+      "parent_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A correction in the 135,000mt Black Sea/Augusta market was expected last week after the previous weeks rise. But a minor adjustment from WS197.78 to WS192.89 (a loss of only WS 4.89 points and a TCE per day round trip earning of $79,379) shows the market remains steady.",
+      "keywords": [
+        "meg",
+        "west_africa",
+        "europe",
+        "day",
+        "per",
+        "round",
+        "tce",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 187,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker",
+      "parent_id": "baltic_tanker_2022-09-02_2022_09_02_tanker_report_week_35_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A correction in the 80,000mt North Sea/Continent route saw rates lose over WS5 points settling at WS188.75 (a TCE round trip earning of $52,202). Despite the fall in the North Sea, the 100,000mt Baltic/UK-Cont market remained flat shaving just over half a WS point throughout the week ending at WS206.56 (a TCE round trip of $59,820 per day).",
+      "keywords": [
+        "europe",
+        "round",
+        "tce",
+        "trip",
+        "per",
+        "points",
+        "big",
+        "biggest"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 260,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__root",
+  "doc_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 35",
+  "section_path": [
+    "Bulk report - Week 35"
+  ],
+  "section_path_text": "Bulk report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market continued to firm all week, with the 5TC closing on Friday at $34,583, up $4,146 for the week. This marks a new high for the year and a remarkable lift from the lows of 3 April 2019, when it was a mere $3,540. Over the week, signals had been apparent that the Atlantic was coming to the boil as healthy demand struggled to find tonnage.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 892,
+  "source_path": "reports/baltic/dry/2019/2019-04-03_bulk-report-week35_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry",
+      "parent_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market continued to firm all week, with the 5TC closing on Friday at $34,583, up $4,146 for the week. This marks a new high for the year and a remarkable lift from the lows of 3 April 2019, when it was a mere $3,540.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "crude_oil",
+        "was",
+        "coming"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry",
+      "parent_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Last week appeared to be a week of consolidation. Rates remained firm in most areas with only pockets of weakness evident in the North Atlantic and North Pacific due to a slight build up in available tonnage.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "pacific",
+        "india",
+        "grain",
+        "north",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 179,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry",
+      "parent_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was another strong week across the board, with sentiment remaining positive from key areas. Period cover was sought by charterers.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry",
+      "parent_id": "baltic_dry_2019-04-03_2019_04_03_bulk_report_week35_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Despite a public holiday in the U.K. on Monday, the Baltic Handysize Index (BHSI) climbed higher along with the improvement in other sizes.",
+      "keywords": [
+        "handysize",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "coal",
+        "steel",
+        "east",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

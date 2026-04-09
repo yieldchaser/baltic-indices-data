@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-10-11_2024_10_11_gas_report_week_41_gas__root",
+  "doc_id": "baltic_gas_2024-10-11_2024_10_11_gas_report_week_41_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 41",
+  "section_path": [
+    "Gas report - Week 41"
+  ],
+  "section_path_text": "Gas report - Week 41",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nDespite the fixing window well towards the end of November, there is no sight of the winter market that the LNG world had been eagerly anticipating. Owners will be scratching their heads as to the lack of action, and as to why rates are reacting so negatively. One broker reported that with so many cargoes being resolved on the cargo side where traders are coming in with bids FOB, there is little left for the rest of the market and the ARB remains firmly shut.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "meg",
+    "india",
+    "japan",
+    "gas",
+    "down",
+    "was",
+    "but"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 735,
+  "source_path": "reports/baltic/gas/2024/2024-10-11_gas-report-week-41_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-10-11_2024_10_11_gas_report_week_41_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-10-11_2024_10_11_gas_report_week_41_gas",
+      "parent_id": "baltic_gas_2024-10-11_2024_10_11_gas_report_week_41_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Despite the fixing window well towards the end of November, there is no sight of the winter market that the LNG world had been eagerly anticipating. Owners will be scratching their heads as to the lack of action, and as to why rates are reacting so negatively.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "down",
+        "losing",
+        "tfde",
+        "value",
+        "cbm"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 436,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-10-11_2024_10_11_gas_report_week_41_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-10-11_2024_10_11_gas_report_week_41_gas",
+      "parent_id": "baltic_gas_2024-10-11_2024_10_11_gas_report_week_41_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There was a pause in the meteoric rise of the LPG market this week. After a nearly 50% rise in the previous week, the activity was more muted for both regions.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "australia",
+        "atlantic",
+        "meg",
+        "india",
+        "gas",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 293,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

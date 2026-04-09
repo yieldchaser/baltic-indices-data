@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__root",
+  "doc_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 45",
+  "section_path": [
+    "Bulk report - Week 45"
+  ],
+  "section_path_text": "Bulk report - Week 45",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market continued to decline this week, albeit at a more gradual pace, as tonnage demand has become lacklustre to close out the year. The end of the week brought about a small uptick of +244 to settle the Capesize 5TC at $14,421, possibly placing a support level, although others would suggest it will allow for a breather before further declines. The market lifted at the end of the week as several cargo positions appeared to get caught on prompter dates, which commanded a premium in the market.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 830,
+  "source_path": "reports/baltic/dry/2020/2020-11-06_bulk-report---week-45_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market continued to decline this week, albeit at a more gradual pace, as tonnage demand has become lacklustre to close out the year. The end of the week brought about a small uptick of +244 to settle the Capesize 5TC at $14,421, possibly placing a support level, although others would suggest it will allow for a breather before further declines.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "pacific",
+        "end",
+        "dates",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates in the Panamax market this week slowly ebbed away, except for a couple of hot spots - the Baltic mineral stems and NoPac demand - which appeared well supported. An 82,000-dwt achieving approximately $15,000 midweek for a Baltic trip to East Med redelivery Passero, whilst same size tonnage delivery Continent agreed $13,500 for a Baltic redelivery Continent run.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "europe",
+        "singapore",
+        "japan",
+        "coal",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A lacklustre week for the sector with rates and sentiment falling in both basins. Very little in the way of period activity surfaced with both sides reluctant to make any commitments.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal",
+        "dwt",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry",
+      "parent_id": "baltic_dry_2020-11-06_2020_11_06_bulk_report_week_45_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was a less active week in general, in both basins. Rates slipped in the Mediterranean/Continent and the US Gulf, whilst fresh offers being discussed were said to be lower than before, with the cargo book remaining thin.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "europe",
+        "india",
+        "us_gulf",
+        "was",
+        "fixed",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 181,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

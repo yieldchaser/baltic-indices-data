@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__root",
+  "doc_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 40",
+  "section_path": [
+    "Bulk report - Week 40"
+  ],
+  "section_path_text": "Bulk report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market thrived despite the Asian holidays, with rates rising on most of the key routes and paper trading buoyant, but there was a slow end to the week, largely as owners held off. There were also reports of some Chinese ports experiencing delays running up to 15 days. The Australian miners were active most of the week, with Rio Tinto leading the way, rates climbed 70 cents breaking through the $8.00 barrier and finishing the week at US$8.10.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1282,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week40_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry",
+      "parent_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market thrived despite the Asian holidays, with rates rising on most of the key routes and paper trading buoyant, but there was a slow end to the week, largely as owners held off. There were also reports of some Chinese ports experiencing delays running up to 15 days.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "daily",
+        "end"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 321,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry",
+      "parent_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "An unpromising start to the week due to the holidays, with fixtures concluded either side of the weekend reflecting the assumption the week would be quiet. By late Tuesday, sentiment began to change and suddenly there was talk of increased cargoes in both the Atlantic and the Pacific and with the paper market fanning the flames rates began to recover.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "coal",
+        "grain",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 343,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry",
+      "parent_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the Moon Festival holidays in Asia this week, the market remained relatively quiet and it seemed to have found a floor. Rates eased initially but over the week there was some resistance with period cover taken.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 354,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry",
+      "parent_id": "baltic_dry_2017-10-06_2017_bulk_report_week40_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Rates for tonnage delivery east coast South America eased over the week and the market on the Continent also weakened. The Asian holidays slowed trading in the east but rates strengthened as the week progressed.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__root",
+  "doc_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 38",
+  "section_path": [
+    "Bulk report - Week 38"
+  ],
+  "section_path_text": "Bulk report - Week 38",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a week of mixed activity, highlighted by a strengthening Pacific, South Brazil and West Africa to China routes, while the North Atlantic market struggled initially. Early in the week, the Pacific gained momentum with the involvement of all three major miners and increasing fixtures, driving up the C5 index. However, mid-week saw a slight softening as miner activity waned, leading to lower bids and a slight decline in rates.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 898,
+  "source_path": "reports/baltic/dry/2024/2024-09-20_bulk-report-week-38_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a week of mixed activity, highlighted by a strengthening Pacific, South Brazil and West Africa to China routes, while the North Atlantic market struggled initially. Early in the week, the Pacific gained momentum with the involvement of all three major miners and increasing fixtures, driving up the C5 index.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "africa"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A cautiously optimistic week for the Panamax market as period demand crept into the market, with the Atlantic routes the most prominent risers. This was largely led by solid mineral and grain demand especially from the US Gulf, with an aps rate of $18,500+$850,000 reported fixed on a scrubber fitted 82,000-dwt for a trip redelivery China, whereas slight increases seen for rates ex South America for first half October arrival window.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "us_gulf",
+        "grain",
+        "demand",
+        "dwt",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Mixed fortunes this week for the sector. The Atlantic was varied with the US Gulf being fairly firm at the beginning of the week but towards the end, some said it had eased.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "fixing",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 288,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2024-09-20_2024_09_20_bulk_report_week_38_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Mixed performance this week as activity picked up in the US Gulf, leading to slight increases in rates. A 40,000-dwt open in Houston was fixed via the US Gulf to West Coast South America at $22,000.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "steel",
+        "being",
+        "dwt",
+        "fixed",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__root",
+  "doc_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 50",
+  "section_path": [
+    "Bulk report - Week 50"
+  ],
+  "section_path_text": "Bulk report - Week 50",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe capesize market experienced a dynamic week, with distinct developments in the Pacific and Atlantic regions. The Pacific market started the week on a high note, driven by port closures in North China due to weather and the presence of all three major players from West Australia to China, leading to a robust rise of $1,155 on the BCI 5TC to $36,475. Despite a setback mid-week due to alleviated port delays, the Pacific rebounded on Thursday with the closure of three more ports in North China and continued major player activity, resulting in a positive shift in C5 rates.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 841,
+  "source_path": "reports/baltic/dry/2023/2023-12-15_bulk-report-week-50_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The capesize market experienced a dynamic week, with distinct developments in the Pacific and Atlantic regions. The Pacific market started the week on a high note, driven by port closures in North China due to weather and the presence of all three major players from West Australia to China, leading to a robust rise of $1,155 on the BCI 5TC to $36,475.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 180,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The beginning of the week saw a slight correction across most areas with a good amount of fresh tonnage and limited enquiry seeing rates slip further. The North Atlantic lacked fresh impetus, although as the week progressed there remained demand from the South Atlantic and some saw a tightness of tonnage supply for January dates, which helped maintain a fairly even level.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather positional week ensued for the sector, but overall sentiment remained rather poor. In the Atlantic, slower demand from key areas such as the US Gulf saw rates slip from the recent highs while in the South Americas, a relatively tight tonnage supply saw rates maintain their levels.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2023-12-15_2023_12_15_bulk_report_week_50_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of positivity across the Atlantic with continued limited tonnage availability the main driving force. Late improvements were seen for owners on the Continent, with a 38,000-dwt opening prompt in Rotterdam fixing for a trip to the Eastern Mediterranean with an intended cargo of scrap at $27,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "coal",
+        "grain",
+        "dwt",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

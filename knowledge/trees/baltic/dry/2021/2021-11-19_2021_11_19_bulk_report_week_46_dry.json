@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__root",
+  "doc_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 46",
+  "section_path": [
+    "Bulk report - Week 46"
+  ],
+  "section_path_text": "Bulk report - Week 46",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market closed out a generally underwhelming week with positive sentiment and an uptick in the final days with the 5TC lifting +2905 to settle at $29,938. Rates are down week on week and the routes appear to now be oscillating in a trading range. Fundamentals are said to have improved at the later end of the week, but whether they have enough impetus to break above the current upper range is uncertain.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 873,
+  "source_path": "reports/baltic/dry/2021/2021-11-19_bulk-report-week-46_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry",
+      "parent_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market closed out a generally underwhelming week with positive sentiment and an uptick in the final days with the 5TC lifting +2905 to settle at $29,938. Rates are down week on week and the routes appear to now be oscillating in a trading range.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "are",
+        "now"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry",
+      "parent_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A week which saw substantial losses in the Panamax market, retracting back to values not seen since April of this year. Resistance from Owners was scarce as tonnage far outweighed demand, resulting in Charterers driving down the bids - especially in the Asian basin.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "coal",
+        "achieved",
+        "demand",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry",
+      "parent_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It has been a very quiet week for the sector with very limited activity across the board. There was resistance shown in the Pacific though largely down to a stand-off between owners and charterers with anything fixed at last done levels or slightly lower.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "was",
+        "owners",
+        "appear",
+        "area",
+        "between"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry",
+      "parent_id": "baltic_dry_2021-11-19_2021_11_19_bulk_report_week_46_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Another week driven by the negative sentiment in most regions. A 37,000-dwt open in South Korea was fixed for a trip via CIS with redelivery in South Korea - China Range at $17,000.",
+      "keywords": [
+        "china",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
+        "dwt",
+        "fixed",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

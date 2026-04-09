@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__root",
+  "doc_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 1",
+  "section_path": [
+    "Tanker report - Week 1"
+  ],
+  "section_path_text": "Tanker report - Week 1",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nAs we start a new year we've seen a slow take-up the new increased flat rates with most charterers and owners this week maintaining fixtures on the old flat rates. All of the Baltic's tanker assessments are now based on the 2022 Worldscale though. Activity is ticking over and rates have been relatively flat across the board.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1071,
+  "source_path": "reports/baltic/tanker/2022/2022-01-07_tanker-report-week-1_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker",
+      "parent_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "As we start a new year we've seen a slow take-up the new increased flat rates with most charterers and owners this week maintaining fixtures on the old flat rates. All of the Baltic's tanker assessments are now based on the 2022 Worldscale though.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "flat",
+        "tce",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker",
+      "parent_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates have been almost static in the West this week with the rate for 130,000mt Nigeria/UKC coming off half a point since Monday to a fraction below WS55 (a round-trip TCE of $1.6k/day) and 135,000mt Black Sea/Augusta is at the midway point between WS60-62.5 (a round-trip TCE of minus $3.6k/day). In the 140,000mt Basrah/West Mediterranean market the rate has sunk about four points to WS25 after a few cargoes were covered at this level.",
+      "keywords": [
+        "europe",
+        "k/day",
+        "point",
+        "round-trip",
+        "tce",
+        "after",
+        "almost",
+        "basrah/west"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 124,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker",
+      "parent_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The 80,000mt Ceyhan/Mediterranean market softened slightly this week with rates losing four points to the WS82.5 level (a TCE of $1.5k/day). In Northern Europe rates for 80,000mt Hound Point/UKC fell seven points over the course of the last few days to WS103.5 (a TCE of $5.7k/day) and 100,000mt Baltic/UKC rates have suffered a nine-point drop to WS120 (a TCE of $31.8k/day).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "k/day",
+        "tce",
+        "points",
+        "gulf",
+        "level"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker",
+      "parent_id": "baltic_tanker_2022-01-07_2022_01_07_tanker_report_week_1_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The CPP tanker market has been settling out this week after the end of the year break. Subsequently almost all markets and sizes have seen rates drop, although the magnitude of which has not been uniform.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 461,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

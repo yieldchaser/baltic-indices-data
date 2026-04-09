@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-08-23_2024_08_23_gas_report_week_34_gas__root",
+  "doc_id": "baltic_gas_2024-08-23_2024_08_23_gas_report_week_34_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 34",
+  "section_path": [
+    "Gas report - Week 34"
+  ],
+  "section_path_text": "Gas report - Week 34",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThere was bearish sentiment this week in the LNG sector. With little activity on the spot side, there has been a slow continued downward movement on the levels. Sentiment is low, but as can happen with LNG a change of sentiment can quickly turn the tide on rates.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "japan",
+    "gas",
+    "cbm",
+    "close",
+    "reported",
+    "being",
+    "but",
+    "closed",
+    "fixtures"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 517,
+  "source_path": "reports/baltic/gas/2024/2024-08-23_gas-report-week-34_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-08-23_2024_08_23_gas_report_week_34_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-08-23_2024_08_23_gas_report_week_34_gas",
+      "parent_id": "baltic_gas_2024-08-23_2024_08_23_gas_report_week_34_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There was bearish sentiment this week in the LNG sector. With little activity on the spot side, there has been a slow continued downward movement on the levels.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "cbm",
+        "period",
+        "sentiment",
+        "ships",
+        "better"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 286,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-08-23_2024_08_23_gas_report_week_34_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-08-23_2024_08_23_gas_report_week_34_gas",
+      "parent_id": "baltic_gas_2024-08-23_2024_08_23_gas_report_week_34_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG continued its bull run this week, with all three routes gaining, although with few fixtures being reported out in the West the legs of the bull are being tested in the Atlantic. For BLPG1 Ras Tanura-Chiba there was a rise of $8 to close at $63.5 and a daily TCE of $44,003.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "close",
+        "reported",
+        "fixtures",
+        "tce",
+        "being"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

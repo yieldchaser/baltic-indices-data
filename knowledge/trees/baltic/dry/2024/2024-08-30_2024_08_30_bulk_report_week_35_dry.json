@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__root",
+  "doc_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 35",
+  "section_path": [
+    "Bulk report - Week 35"
+  ],
+  "section_path_text": "Bulk report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a strong recovery this week after a mixed start partly due to a public holiday on Monday in the UK. In the Pacific, the week began with steady activity, but the market initially showed signs of weakening, with the C5 index slightly dipping to $10.985 on Tuesday. However, from Wednesday onward, the Pacific market surged as all three major miners returned, pushing the C5 index up consistently, reaching $11.635 by Thursday.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 787,
+  "source_path": "reports/baltic/dry/2024/2024-08-30_bulk-report-week-35_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a strong recovery this week after a mixed start partly due to a public holiday on Monday in the UK. In the Pacific, the week began with steady activity, but the market initially showed signs of weakening, with the C5 index slightly dipping to $10.985 on Tuesday.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "ending",
+        "showed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 204,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market provided further losses this week and is showing little signs of abating. Despite a steady level of activity, this failed to stem the tide with both basins yielding substantial losses.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "activity",
+        "but",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 199,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Generally the market has seen a mixed affair this week. There was increased activity from the US Gulf and rates had pushed up slightly but options for owners with vessels open from the South Atlantic remained rather limited.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "open",
+        "dwt",
+        "was",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2024-08-30_2024_08_30_bulk_report_week_35_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was a quite week for the Handy sector, with activity remaining slow across the Continent and the Mediterranean with sentiment appearing positional. A 33,000-dwt open Kaliningrad fixing inter-cont at $11,000.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "open",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 171,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

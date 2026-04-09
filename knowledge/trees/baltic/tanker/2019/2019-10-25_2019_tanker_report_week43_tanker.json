@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__root",
+  "doc_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 43",
+  "section_path": [
+    "Tanker report - Week 43"
+  ],
+  "section_path_text": "Tanker report - Week 43",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nSentiment again played a big part as the markets fell globally. In the Middle East the tonnage list grew in the near term as vessels were released from their subjects alongside lower demand from charterers. The latest assessments rate 270,000mt Mideast Gulf to China at WS97.5, down 20 points week-on-week, although there is a report today of an oil major on subjects to Singapore-Thailand range at WS95.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "singapore",
+    "japan",
+    "crude_oil"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 551,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week43_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker",
+      "parent_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Sentiment again played a big part as the markets fell globally. In the Middle East the tonnage list grew in the near term as vessels were released from their subjects alongside lower demand from charterers.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "singapore",
+        "crude_oil",
+        "points"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 176,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker",
+      "parent_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Another week of negative sentiment has seen the market for 130,000mt West Africa/UKC fall about 30 points to WS150 level and 135,000mt Black Sea/Med has been reduced by nearly 45 points to WS167.5/170 level. 140,000mt Basrah/Med rates fell back to WS100 region down about 50 points for the week.",
+      "keywords": [
+        "west_africa",
+        "points",
+        "africa/ukc",
+        "another",
+        "back",
+        "basrah/med",
+        "black",
+        "down"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 81,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker",
+      "parent_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates in the Mediterranean fell away, on the back of a reduced number of quoted cargoes and a well populated tonnage list, with 80,000mt Ceyhan/Med now rated in the low-WS140s. In the North Sea, rates for 80,000mt ECUK/UKC lost 50 points, to settle at WS145, while 100,000mt Baltic/UKC got reduced by 40 points to WS120 region.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "points",
+        "reduced",
+        "away",
+        "back",
+        "baltic/ukc",
+        "cargoes"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 144,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker",
+      "parent_id": "baltic_tanker_2019-10-25_2019_tanker_report_week43_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Last week's gains were wiped out by this week's losses. 75,000mt Middle East/Japan cliff-dived from nearly W300 to WS180-182.5 level.",
+      "keywords": [
+        "europe",
+        "japan",
+        "points",
+        "around",
+        "back",
+        "sit",
+        "assessments",
+        "backhaul"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 137,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

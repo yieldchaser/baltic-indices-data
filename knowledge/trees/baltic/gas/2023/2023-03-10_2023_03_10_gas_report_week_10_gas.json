@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-03-10_2023_03_10_gas_report_week_10_gas__root",
+  "doc_id": "baltic_gas_2023-03-10_2023_03_10_gas_report_week_10_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 10",
+  "section_path": [
+    "Gas report - Week 10"
+  ],
+  "section_path_text": "Gas report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nSpot market activity is quiet and some cargoes ex-Australia have been quoted in the market for end April-early May. But while the Pacific sees some firm enquiry, the Atlantic has fallen nearly silent with next to nothing reported or worked in the market. The spot market has been dictated in part by availability, or a lack of ships willing to work on spot terms.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "crude_oil",
+    "gas",
+    "are",
+    "cargoes",
+    "could",
+    "little"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 561,
+  "source_path": "reports/baltic/gas/2023/2023-03-10_gas-report-week-10_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-03-10_2023_03_10_gas_report_week_10_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-03-10_2023_03_10_gas_report_week_10_gas",
+      "parent_id": "baltic_gas_2023-03-10_2023_03_10_gas_report_week_10_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Spot market activity is quiet and some cargoes ex-Australia have been quoted in the market for end April-early May. But while the Pacific sees some firm enquiry, the Atlantic has fallen nearly silent with next to nothing reported or worked in the market.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "crude_oil",
+        "gas",
+        "cargoes",
+        "little"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 302,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-03-10_2023_03_10_gas_report_week_10_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-03-10_2023_03_10_gas_report_week_10_gas",
+      "parent_id": "baltic_gas_2023-03-10_2023_03_10_gas_report_week_10_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has had an extended absence of market players this week with the Tokyo LPG conference being well attended. This has helped hamper any gains for the LPG market in both East and West with rates on all three BLPG routes falling.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "gas",
+        "april",
+        "are",
+        "away",
+        "blpg3",
+        "could"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 253,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

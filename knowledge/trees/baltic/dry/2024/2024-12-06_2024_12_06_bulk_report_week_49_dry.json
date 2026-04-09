@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__root",
+  "doc_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 49",
+  "section_path": [
+    "Bulk report - Week 49"
+  ],
+  "section_path_text": "Bulk report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market faced a challenging week, with the BCI 5TC steadily declining, shedding $3,909 across the week to close at $12,727, reflecting subdued sentiment and oversupply of tonnage in both basins. While the Pacific saw intermittent injections of fresh cargo, oversupply of tonnage persistently weighed on rates, with the C5 index dropping from $8.705 on Monday to end the week at $7.415. Limited fixtures from West Australia to China underscored the subdued activity, despite occasional support with coal cargoes from East Australia.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 968,
+  "source_path": "reports/baltic/dry/2024/2024-12-06_bulk-report-week-49_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market faced a challenging week, with the BCI 5TC steadily declining, shedding $3,909 across the week to close at $12,727, reflecting subdued sentiment and oversupply of tonnage in both basins. While the Pacific saw intermittent injections of fresh cargo, oversupply of tonnage persistently weighed on rates, with the C5 index dropping from $8.705 on Monday to end the week at $7.415.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Mid-week saw life injected into the market across most areas of the Atlantic. Decent levels of both grain and mineral demand added some impetus to a stagnant market and small gains were witnessed.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "grain",
+        "delivery",
+        "dwt",
+        "was",
+        "arrival"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another rather protracted week for the sector as rates across most areas struggled to gain any positive momentum. In the Atlantic, both the north and south lacked much fresh impetus.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "delivery",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2024-12-06_2024_12_06_bulk_report_week_49_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It's been a challenging week for the sector, with rates in both the Atlantic and Pacific regions continuing to face downward pressure. Across the Continent and Mediterranean, the market showed a lack of fresh impetus with overall sentiment remaining positional.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 285,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

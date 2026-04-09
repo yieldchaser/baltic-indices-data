@@ -32,6 +32,7 @@ regions:
 - atlantic
 - us_gulf
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2020/2020-06-19_Tanker-report-Week-25_tanker.html

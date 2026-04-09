@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__root",
+  "doc_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 14",
+  "section_path": [
+    "Bulk report - Week 14"
+  ],
+  "section_path_text": "Bulk report - Week 14",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nAs holidays in Asia curtailed activity at the start of the week, the absence of the Australian miners dampened trade and saw the West Australia/China rate slump to $6.15 today for 20 April onwards. Added to this, reports of force majeure on Queensland coal shipments due to severe flooding damaging rail lines saw some vessels diverted to West Australia. Prompt ballasters heading to Brazil lost their nerve took lower rates with levels here dipping to around $14.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1660,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week14_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "As holidays in Asia curtailed activity at the start of the week, the absence of the Australian miners dampened trade and saw the West Australia/China rate slump to $6.15 today for 20 April onwards. Added to this, reports of force majeure on Queensland coal shipments due to severe flooding damaging rail lines saw some vessels diverted to West Australia.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "singapore",
+        "coal",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 295,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A strong end to the week particularly in the north Atlantic where a surge in activity saw charterers taking longer term cover fixing either a couple of legs or period cover. A 2014-built Kamsarmax open Amsterdam fixed for two to three laden legs at $12,000 daily but the charterer involved then fixed and failed a 77,000-tonner retroactive to sailing from Hamburg earlier this week at $14,500 daily.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "coal",
+        "grain",
+        "built"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 440,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The week started on a very quiet note with holidays in Asia. The market here struggled to regain its momentum from the previous week with the routes in negative territory.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 534,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2017-04-07_2017_bulk_report_week14_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A relatively quiet week in this sector although gains continued to be made within the Atlantic except for the US Gulf market. Asia appeared to be at a standstill.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "atlantic",
+        "west_africa"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 377,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

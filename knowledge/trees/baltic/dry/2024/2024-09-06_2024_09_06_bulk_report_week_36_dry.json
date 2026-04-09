@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__root",
+  "doc_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 36",
+  "section_path": [
+    "Bulk report - Week 36"
+  ],
+  "section_path_text": "Bulk report - Week 36",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market saw a strong start to the week, particularly in the Pacific, where two of the three major miners became active, leading to a steady rise in the C5 route. However, as the week progressed, Pacific activity began to slow, with the C5 index dipping midweek to $11.135, having started the week at $11.785. A slight recovery followed as Thursday saw increased cargo enquiry and improved rates, although concerns lingered over Typhoon Yagi as it approached Southern China.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf",
+    "coal"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 880,
+  "source_path": "reports/baltic/dry/2024/2024-09-06_bulk-report-week-36_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market saw a strong start to the week, particularly in the Pacific, where two of the three major miners became active, leading to a steady rise in the C5 route. However, as the week progressed, Pacific activity began to slow, with the C5 index dipping midweek to $11.135, having started the week at $11.785.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "pacific",
+        "although",
+        "activity",
+        "gap",
+        "overall"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Another softer week for the Panamax market as owners continued to feel the recent pressure, particularly in the Atlantic basin where owners' resistance was hard to find with early tonnage and ballaster tonnage continuing to discount. The P1A route hovered in the $8,000s all week, although this was being challenged with APS load port deals equating to a lot less by comparison.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "was",
+        "tonnage",
+        "activity",
+        "although",
+        "continued"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather mixed affair for the sector as the summertime lull still impacted the Atlantic but a slightly more positive feel from the Asian arena. The North and South Atlantic suffered from a lack of fresh enquiry, putting downward pressure on an already subdued market.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "delivery",
+        "dwt",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 264,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2024-09-06_2024_09_06_bulk_report_week_36_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handy sector saw minimal visible activity across both basins this week. In the Continent and Mediterranean, the tonnage list remains relatively long for September dates, while fresh demand appears quite thin.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "coal",
+        "grain",
+        "new",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 169,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

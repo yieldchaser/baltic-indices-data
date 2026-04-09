@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas__root",
+  "doc_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 46",
+  "section_path": [
+    "Gas report - Week 46"
+  ],
+  "section_path_text": "Gas report - Week 46",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nLNG has taken a slight breather before winter with rates flat/softening across the routes. Uncertainty with Freeport hangs in the balance, which has allowed a small number of relets the chance to be pushed out for cargoes. This has lessened the tightness of tonnage of late.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "japan",
+    "gas",
+    "fixed",
+    "out",
+    "tonnage",
+    "already",
+    "are",
+    "cargo"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 380,
+  "source_path": "reports/baltic/gas/2022/2022-11-18_gas-report-week-46_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas__s01_lng",
+      "doc_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas",
+      "parent_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LNG has taken a slight breather before winter with rates flat/softening across the routes. Uncertainty with Freeport hangs in the balance, which has allowed a small number of relets the chance to be pushed out for cargoes.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "japan",
+        "gas",
+        "saw",
+        "still",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 149,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas__s02_lpg",
+      "doc_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas",
+      "parent_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The VLGC market has seen all-time highs this week, (a sentiment expressed almost weekly it seems) publishing at the highest levels since the routes came into publication. On BLPG1 in the middle east Aramco acceptances are due to come out, which will mean more December cargoes putting pressure on an already tight tonnage list.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "cargo",
+        "cbm",
+        "continue",
+        "east",
+        "fixed",
+        "out"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -23,6 +23,7 @@ market_tone: neutral
 regions:
 - china
 - europe
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2025/2025-12-05_container-report-week-49_container.html

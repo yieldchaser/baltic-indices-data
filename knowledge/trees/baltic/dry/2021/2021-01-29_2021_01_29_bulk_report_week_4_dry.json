@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__root",
+  "doc_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 4",
+  "section_path": [
+    "Bulk report - Week 4"
+  ],
+  "section_path_text": "Bulk report - Week 4",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize routes endured a week of slippage on rates, bringing the market back down to levels seen at the beginning of the month. Dropping -8,956 over the course of the week the Capesize 5TC settled at $15,675. The Atlantic Basin routes were the big movers with the Transatlantic C8, in particular, coming under fire.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "coal"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 867,
+  "source_path": "reports/baltic/dry/2021/2021-01-29_bulk-report-week-4_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize routes endured a week of slippage on rates, bringing the market back down to levels seen at the beginning of the month. Dropping -8,956 over the course of the week the Capesize 5TC settled at $15,675.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "down",
+        "routes",
+        "basin",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "An interesting week in the Panamax market with widely differing opinions of the market in the Atlantic. Activity in Asia started slowly and diminished as the week went on with spot rates coming under pressure.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "coal",
+        "slowly",
+        "was",
+        "activity",
+        "began"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another positive week for the sector with demand keeping pace with supply in most areas. A 56,000-dwt sizes open in the Indian Ocean seeing $14,000 for three to five months, whilst a 58,000-dwt open China fixed at $11,500 for one year.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "dwt",
+        "fixing",
+        "was",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2021-01-29_2021_01_29_bulk_report_week_4_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The consistent uprising recorded a new high in the Handy sector this week. The BHSI climbed higher up to double the figure published in the same period last year.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "east",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

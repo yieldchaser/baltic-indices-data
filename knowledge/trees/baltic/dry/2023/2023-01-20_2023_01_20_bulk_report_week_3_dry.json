@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__root",
+  "doc_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 3",
+  "section_path": [
+    "Bulk report - Week 3"
+  ],
+  "section_path_text": "Bulk report - Week 3",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe average of the Capesize timecharter routes climbed when the week first began, but soon dropped from over $10,000 threshold to $6,529 on Friday. The steep decline mainly came from the north Atlantic region. The transatlantic and fronthaul trips were settled at $9,083 and $23,031, losing over $5,000 and $7,000 respectively over the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "coal",
+    "grain"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 857,
+  "source_path": "reports/baltic/dry/2023/2023-01-20_bulk-report-week-3_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The average of the Capesize timecharter routes climbed when the week first began, but soon dropped from over $10,000 threshold to $6,529 on Friday. The steep decline mainly came from the north Atlantic region.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "coal",
+        "was",
+        "built",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 204,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Overall, it returned a further week of in the doldrums for the Panamax market, as thin cargo volumes versus a long tonnage count continued to negatively impact the market. A distinct lack of mineral requirements in the North Atlantic undermined the market here, and where there was demand it paid very low levels, suppressed all week by an increasing tonnage count of ballasters and early ships especially in the North Continent.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "europe",
+        "count",
+        "here",
+        "north",
+        "tonnage",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 188,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another subdued week overall for the sector, with sentiment remaining negative in the Atlantic; the South American grain season has yet to start and limited fresh enquiry. A similar situation from North America combined with an abundance of prompt tonnage kept rates in check.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "coal",
+        "grain",
+        "dwt",
+        "fixed",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2023-01-20_2023_01_20_bulk_report_week_3_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of further retraction for the BHSI, with limited enquiry and upcoming holidays both factors. However, there were some quiet whispers that positivity may be around the corner in a few regions but as yet we have not seen any gains.",
+      "keywords": [
+        "brazil",
+        "europe",
+        "grain",
+        "dwt",
+        "fixed",
+        "asia",
+        "delivery",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

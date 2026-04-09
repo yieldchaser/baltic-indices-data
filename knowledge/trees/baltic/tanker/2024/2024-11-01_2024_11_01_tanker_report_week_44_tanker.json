@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__root",
+  "doc_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 44",
+  "section_path": [
+    "Tanker report - Week 44"
+  ],
+  "section_path_text": "Tanker report - Week 44",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nLR2\nMEG LR2's have been subject to bearish sentiment over the last week with tonnage plentiful. Freight levels have dwindled as result, TC1 75kt MEG/Japan has taken a 12.5-point tumble to WS105 and TC20 90kt MEG/UK-Continent shed another $200,000 to $3.75m. West of Suez, Mediterranean/East LR2's have clung on this week.",
+  "keywords": [
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1083,
+  "source_path": "reports/baltic/tanker/2024/2024-11-01_tanker-report-week-44_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker",
+      "parent_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LR2\nMEG LR2's have been subject to bearish sentiment over the last week with tonnage plentiful. Freight levels have dwindled as result, TC1 75kt MEG/Japan has taken a 12.5-point tumble to WS105 and TC20 90kt MEG/UK-Continent shed another $200,000 to $3.75m.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "japan",
+        "week.",
+        "points"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 467,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker",
+      "parent_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The VLCC market dropped of this week across all areas. The 270,000 mt Middle East Gulf to China (TD3C) trip lost 4 points to WS52.85, which gives a daily round-trip TCE of about $31,265 basis the Baltic Exchange's vessel description.",
+      "keywords": [
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "tce",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 158,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker",
+      "parent_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Suezmax rates suffered another drop in value. In West Africa, the 130,000 mt Nigeria/UK Continent voyage (TD20) slipped 4 points to WS94.83, meaning a daily round-trip TCE of $35,857.",
+      "keywords": [
+        "suezmax",
+        "meg",
+        "west_africa",
+        "europe",
+        "points",
+        "daily",
+        "route",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker",
+      "parent_id": "baltic_tanker_2024-11-01_2024_11_01_tanker_report_week_44_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the North Sea, the rate for the 80,000 mt Cross-UK Continent (TD7) fell 13 points to the WS130 mark (giving a daily round-trip TCE of just over $32,000 basis Hound Point to Wilhelmshaven). In the Mediterranean market the rate for 80,000 mt Cross-Mediterranean (TD19) collapsed by 42 points to WS121.00 (basis Ceyhan to Lavera, that shows a daily round trip TCE of about $27,400).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "tce",
+        "basis",
+        "daily",
+        "fell"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

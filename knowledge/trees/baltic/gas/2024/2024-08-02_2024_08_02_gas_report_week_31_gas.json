@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-08-02_2024_08_02_gas_report_week_31_gas__root",
+  "doc_id": "baltic_gas_2024-08-02_2024_08_02_gas_report_week_31_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 31",
+  "section_path": [
+    "Gas report - Week 31"
+  ],
+  "section_path_text": "Gas report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe Pacific market has pulled away a little regaining some of the lost ground against the Atlantic recently. With low supply of 2-stroke 174cbm tonnage in the Asia region the BLNG1-174 index rose by $2,300, the largest movement of any route this week and closed at $76,100, while the BLNG1-160 languished moving nothing at all, closing again at $61,000. News of the Freeport LNG terminal getting all three of its trains back up and running, hinting at a possibility of recovering normal production rates, hasn't done anything to move the rates.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "japan",
+    "gas",
+    "cbm",
+    "hasn",
+    "all"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 546,
+  "source_path": "reports/baltic/gas/2024/2024-08-02_gas-report-week-31_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-08-02_2024_08_02_gas_report_week_31_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-08-02_2024_08_02_gas_report_week_31_gas",
+      "parent_id": "baltic_gas_2024-08-02_2024_08_02_gas_report_week_31_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Pacific market has pulled away a little regaining some of the lost ground against the Atlantic recently. With low supply of 2-stroke 174cbm tonnage in the Asia region the BLNG1-174 index rose by $2,300, the largest movement of any route this week and closed at $76,100, while the BLNG1-160 languished moving nothing at all, closing again at $61,000.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "europe",
+        "japan",
+        "gas",
+        "cbm",
+        "all"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 283,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-08-02_2024_08_02_gas_report_week_31_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-08-02_2024_08_02_gas_report_week_31_gas",
+      "parent_id": "baltic_gas_2024-08-02_2024_08_02_gas_report_week_31_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A rather slow week in the MEG with BLPG1 falling $5.166 to $46.667 making the publication the lowest we have seen since back in early February. A slow fixing week, coupled with more vessels than expected, has put pressure on rates and as a result we have seen a firm downward trend.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "gas",
+        "but",
+        "seen",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 257,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

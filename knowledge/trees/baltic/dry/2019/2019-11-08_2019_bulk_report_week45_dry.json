@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__root",
+  "doc_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 45",
+  "section_path": [
+    "Bulk report - Week 45"
+  ],
+  "section_path_text": "Bulk report - Week 45",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nOver the past week the Capesize market has broken out of its recent range bound zone to the downside. It has now dropped below the $20,000 level on 5TC, which hasn't been seen since early July. With ample tonnage in the ballaster line-up, and minimal market cargoes seen out Brazil, the C3 market was seen to shed more than $2, settling at $18.002 by Friday.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 986,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week45_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry",
+      "parent_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Over the past week the Capesize market has broken out of its recent range bound zone to the downside. It has now dropped below the $20,000 level on 5TC, which hasn't been seen since early July.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "pacific",
+        "seen",
+        "but",
+        "out",
+        "was",
+        "early"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry",
+      "parent_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The weaker and softer trend continued during the week with a large sell-off in both basins resulting in the Baltic Panamax Index (BPI) losing well over 100 points on the week. There has been limited Transatlantic business, with reports of several shorter Baltic round voyages at varying rates from $11,000 to $12,750.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "singapore",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 289,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry",
+      "parent_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A poor week for the sector with rates under pressure across the board and the Baltic Supramax Index (BSI) well below the 1,000-point mark. Very little period interest was discussed with owners preferring to wait before committing to lower rates.",
+      "keywords": [
+        "supramax",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "was",
+        "owners"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry",
+      "parent_id": "baltic_dry_2019-11-08_2019_bulk_report_week45_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Negative sentiment was evident in all areas and across all sizes throughout the week. Limited activity reported this week with the Baltic Handysize Index (BHSI) declining back to the same level as last recorded in mid-August.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 249,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

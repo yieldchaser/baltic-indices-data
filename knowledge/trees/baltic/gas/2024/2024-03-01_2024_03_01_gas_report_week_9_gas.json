@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-03-01_2024_03_01_gas_report_week_9_gas__root",
+  "doc_id": "baltic_gas_2024-03-01_2024_03_01_gas_report_week_9_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 9",
+  "section_path": [
+    "Gas report - Week 9"
+  ],
+  "section_path_text": "Gas report - Week 9",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nAs expected with International Energy Week bringing many industry professionals together out and about around London there were fewer fixtures reported. Rates were flat, with a slight softening across a few routes while period was very quiet. BLNG1 Aus-Japan on the 2-stroke 174cbm ships lost $2,230 to close at $53,983 while the TFDE 160cbm ships finished at $36,101 a fall of nearly two thousand.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "japan",
+    "gas",
+    "cbm",
+    "was",
+    "ship",
+    "close",
+    "daily",
+    "fall"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 456,
+  "source_path": "reports/baltic/gas/2024/2024-03-01_gas-report-week-9_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-03-01_2024_03_01_gas_report_week_9_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-03-01_2024_03_01_gas_report_week_9_gas",
+      "parent_id": "baltic_gas_2024-03-01_2024_03_01_gas_report_week_9_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "As expected with International Energy Week bringing many industry professionals together out and about around London there were fewer fixtures reported. Rates were flat, with a slight softening across a few routes while period was very quiet.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "japan",
+        "gas",
+        "cbm",
+        "ship",
+        "finished",
+        "period"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 256,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-03-01_2024_03_01_gas_report_week_9_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-03-01_2024_03_01_gas_report_week_9_gas",
+      "parent_id": "baltic_gas_2024-03-01_2024_03_01_gas_report_week_9_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "What goes up, must come down and BLPG1 Ras Tanura-Chiba certainly has lived up to the hype, a drop of $23.429 over the week shaved off 28.82% off the routes value. With a final publication value of $57.857 and a daily TCE earning equivalent of $36,089 there was little hope that the few remaining cargoes would be able to stave off any further fall or initiate a new rise.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "daily",
+        "off",
+        "tce",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

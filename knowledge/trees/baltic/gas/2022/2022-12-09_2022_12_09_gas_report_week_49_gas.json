@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2022-12-09_2022_12_09_gas_report_week_49_gas__root",
+  "doc_id": "baltic_gas_2022-12-09_2022_12_09_gas_report_week_49_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 49",
+  "section_path": [
+    "Gas report - Week 49"
+  ],
+  "section_path_text": "Gas report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nSpot voyage prices continue their fall this week, with all three routes seeing similar falls of around 16-24%. The biggest loser was BLNG2g, shaving $57,551 off from the December 2 publication to close at $173,296 for USG-Japan RV. Freeports liquidity injection is still having an impact, so tonnage availability and lower spot enquiry is facing downward pressure.",
+  "keywords": [
+    "capesize",
+    "lng",
+    "lpg",
+    "japan",
+    "crude_oil",
+    "gas",
+    "are",
+    "covered",
+    "could",
+    "period",
+    "remain",
+    "three"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 467,
+  "source_path": "reports/baltic/gas/2022/2022-12-09_gas-report-week-49_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2022-12-09_2022_12_09_gas_report_week_49_gas__s01_lng",
+      "doc_id": "baltic_gas_2022-12-09_2022_12_09_gas_report_week_49_gas",
+      "parent_id": "baltic_gas_2022-12-09_2022_12_09_gas_report_week_49_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Spot voyage prices continue their fall this week, with all three routes seeing similar falls of around 16-24%. The biggest loser was BLNG2g, shaving $57,551 off from the December 2 publication to close at $173,296 for USG-Japan RV.",
+      "keywords": [
+        "lng",
+        "japan",
+        "crude_oil",
+        "gas",
+        "period",
+        "three",
+        "year.",
+        "all"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 244,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2022-12-09_2022_12_09_gas_report_week_49_gas__s02_lpg",
+      "doc_id": "baltic_gas_2022-12-09_2022_12_09_gas_report_week_49_gas",
+      "parent_id": "baltic_gas_2022-12-09_2022_12_09_gas_report_week_49_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The BLPG1 route has been quieter this week. With most fixtures now covered out until January, there has been a lull in activity after the recent spate of market highs.",
+      "keywords": [
+        "capesize",
+        "lpg",
+        "gas",
+        "could",
+        "are",
+        "covered",
+        "earnings",
+        "falling"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

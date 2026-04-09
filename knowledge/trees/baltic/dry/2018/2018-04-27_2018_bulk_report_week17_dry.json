@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__root",
+  "doc_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 17",
+  "section_path": [
+    "Bulk report - Week 17"
+  ],
+  "section_path_text": "Bulk report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nRates eased in the East, as the week closed out with the momentum slowing. Levels on the key West Australia/China run dropped to $7.25, in what appeared to be pre-holiday jitters, after climbing in excess of the mid-$7.00s before stalling. The Australian miners were taking ships, with Rio Tinto securing tonnage for 13 May onwards at the end of the week from Dampier to Qingdao at $7.25, but with improved drafts in Dampier, brokers said.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1332,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week17_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry",
+      "parent_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates eased in the East, as the week closed out with the momentum slowing. Levels on the key West Australia/China run dropped to $7.25, in what appeared to be pre-holiday jitters, after climbing in excess of the mid-$7.00s before stalling.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "slowed",
+        "still",
+        "trading"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 325,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry",
+      "parent_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There were fewer period trades, as the bid/offer gap widened due to the declining spot market, but the few deals done were still at solid levels. Atlantic rates softened in the North due to the oversupply of tonnage, despite a relatively healthy amount of enquiry.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "japan",
+        "grain",
+        "but",
+        "due",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 273,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry",
+      "parent_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the onset of various holidays in the Asian sector next week, this basin saw more activity than the Atlantic this week. There was period cover sought, with a 63,000-dwt open CJK end April, fixed for four to six months, trading redelivery worldwide, at $13,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 425,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry",
+      "parent_id": "baltic_dry_2018-04-27_2018_bulk_report_week17_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall it was a relatively slow week, with the week beginning much as it had finished the previous week. Lower rates were reported from East coast South America, US Gulf and the Pacific basin towards the end of the week.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 295,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

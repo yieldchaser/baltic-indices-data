@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__root",
+  "doc_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 22",
+  "section_path": [
+    "Bulk report - Week 22"
+  ],
+  "section_path_text": "Bulk report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market gained notable momentum this week following a slow start largely due to Monday's UK bank holiday. The Pacific basin was particularly active, supported by solid cargo flow from the miners and a tightening tonnage list, which pushed C5 rates up from $8.25 to $8.85 by week's end. The Atlantic, especially the South Brazil to China market (C3), was the main driver of strength, with rates climbing steadily above $20.00 mid-week and reaching $22.00, amid firm cargo demand and a slightly shorter ballaster list.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 865,
+  "source_path": "reports/baltic/dry/2025/2025-05-30_bulk-report-week-22_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market gained notable momentum this week following a slow start largely due to Monday's UK bank holiday. The Pacific basin was particularly active, supported by solid cargo flow from the miners and a tightening tonnage list, which pushed C5 rates up from $8.25 to $8.85 by week's end.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "was",
+        "cargo",
+        "gained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It proved to be another negative week for the Panamax's, with no sign of the recent softening trend abating, with little momentum from week beginning and disrupted somewhat by many holidays throughout the week. The Atlantic once again appeared predominantly fronthaul led with a steady cargo flow ex NC South America, reports of an 82,000-dwt delivery Gibraltar achieving $17,750 redelivery Singapore-Japan.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "singapore",
+        "japan",
+        "coal",
+        "dwt",
+        "achieving"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rather challenging week for the sector with rates in both the Atlantic and Pacific regions facing continued downward pressure. The South Atlantic and US Gulf continued to struggle with a lack of fresh inquiries and an expanding tonnage list.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "fixed",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2025-05-30_2025_05_30_bulk_report_week_22_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall, it was a positive week, with rates rising across most loading areas. The Continent-Mediterranean region continued to see gradual improvement throughout the week, with sentiment remaining largely positional.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "steel",
+        "delivery",
+        "redelivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

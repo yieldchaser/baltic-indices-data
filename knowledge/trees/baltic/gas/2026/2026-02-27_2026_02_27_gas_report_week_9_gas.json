@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__root",
+  "doc_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 9",
+  "section_path": [
+    "Gas report - Week 9"
+  ],
+  "section_path_text": "Gas report - Week 9",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market made gains this week, driven primarily by strong activity in the Atlantic basin. An inherently tight position list in the West, combined with steady enquiry, kept upward pressure on rates, while the Pacific held firm around the high $20,000s mark. On the BLNG1 Australia-Japan route, 174k cbm vessels increased $1,200 to $28,400/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day.",
+    "route",
+    "steady"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 486,
+  "source_path": "reports/baltic/gas/2026/2026-02-27_gas-report-week-9_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas",
+      "parent_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market made gains this week, driven primarily by strong activity in the Atlantic basin. An inherently tight position list in the West, combined with steady enquiry, kept upward pressure on rates, while the Pacific held firm around the high $20,000s mark.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas",
+      "parent_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market came under pressure this week, with disruptions at Ras Tanura terminal weighing heavily on sentiment in the East. The West remained comparatively strong, as fixing activity resumed after Lunar New Year.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "day.",
+        "ras",
+        "route",
+        "sentiment",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

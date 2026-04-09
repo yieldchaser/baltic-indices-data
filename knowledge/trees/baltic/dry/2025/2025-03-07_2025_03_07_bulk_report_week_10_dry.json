@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__root",
+  "doc_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 10",
+  "section_path": [
+    "Bulk report - Week 10"
+  ],
+  "section_path_text": "Bulk report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market started the week strong, carrying last week's momentum forward. Rates in the Pacific surged past $10.00 on C5, creating a notable premium over C3 in the Atlantic. However, despite all three major miners being active in the pacific by midweek, C5 dipped below $10 before rebounding slightly toward the week's end.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 878,
+  "source_path": "reports/baltic/dry/2025/2025-03-07_bulk-report-week-10_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market started the week strong, carrying last week's momentum forward. Rates in the Pacific surged past $10.00 on C5, creating a notable premium over C3 in the Atlantic.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "despite",
+        "gained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Despite healthy activity, the Panamax sector continued on its turbulent path this week. Some talk mid-week of a floor being reached in both basins, which could be argued is premature.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "japan",
+        "delivery",
+        "dwt",
+        "basis",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather mixed week for the sector. Overall, the Atlantic was described as positional.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2025-03-07_2025_03_07_bulk_report_week_10_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the market showed a mixed performance, with modest movements observed across both basins. Sentiment in the Continent and Mediterranean regions appeared generally weak, with rates drifting slightly below previous levels.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "japan",
+        "dwt",
+        "fixed",
+        "redelivery",
+        "delivery",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

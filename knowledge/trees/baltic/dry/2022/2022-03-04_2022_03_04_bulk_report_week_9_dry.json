@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__root",
+  "doc_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 9",
+  "section_path": [
+    "Bulk report - Week 9"
+  ],
+  "section_path_text": "Bulk report - Week 9",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market had a mild trading range this week hitting a high of $15,258 and a low of $13,414 to settle Friday at $13,560. While events in Europe have been disruptive, the trading activity was generally back to normal this week as most shipping routes are business as usual - albeit without the Black Sea trade routes. The Pacific was definitely the more volatile region with the transpacific C10 swinging positive by weeks end to $13,008.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "container",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 844,
+  "source_path": "reports/baltic/dry/2022/2022-03-04_bulk-report-week-9_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry",
+      "parent_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market had a mild trading range this week hitting a high of $15,258 and a low of $13,414 to settle Friday at $13,560. While events in Europe have been disruptive, the trading activity was generally back to normal this week as most shipping routes are business as usual - albeit without the Black Sea trade routes.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "europe",
+        "trade",
+        "was",
+        "continues"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry",
+      "parent_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The market started slowly this week with many still observing and working out implications from events in Ukraine. Many ships open in the Black Sea or East Mediterranean were forced to seek alternative employment, which at first appeared to negatively impact market for the early part of the week.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "coal",
+        "grain",
+        "events",
+        "many"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry",
+      "parent_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__root",
+      "title": "Supramax / Ultramax",
+      "section_path": [
+        "Supramax / Ultramax"
+      ],
+      "section_path_text": "Supramax / Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Undoubtedly an unprecedented week in recent times with the situation in Ukraine. Most owners are now unwilling to trade towards the Black Sea region and many vessels are leaving the area where possible.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry",
+      "parent_id": "baltic_dry_2022-03-04_2022_03_04_bulk_report_week_9_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Atlantic continues to soften with the ongoing Ukraine situation being closely monitored and a general lack of fresh enquiry across the board. A 37,000-dwt open US Gulf fixed a trip to the Continent at $14,750 with an intended cargo of wood pellets.",
+      "keywords": [
+        "container",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "dwt",
+        "fixed",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 216,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

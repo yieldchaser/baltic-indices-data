@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__root",
+  "doc_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 46",
+  "section_path": [
+    "Bulk report - Week 46"
+  ],
+  "section_path_text": "Bulk report - Week 46",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market followed a generally softer trajectory for much of the week, with sentiment steadily eroding through the first half before a late improvement offered some stabilisation. Early support from a busy Pacific, where all three major miners were active, proved short-lived as activity thinned and C5 levels slipped from the low $10s to $9.50 by mid-week. The Atlantic similarly struggled to gain momentum, while enquiry from South Brazil and West Africa to China was healthy, wide bid-offer spreads kept fixing muted despite interest.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 885,
+  "source_path": "reports/baltic/dry/2025/2025-11-14_bulk-report-week-46_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry",
+      "parent_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market followed a generally softer trajectory for much of the week, with sentiment steadily eroding through the first half before a late improvement offered some stabilisation. Early support from a busy Pacific, where all three major miners were active, proved short-lived as activity thinned and C5 levels slipped from the low $10s to $9.50 by mid-week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "bids",
+        "enquiry"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry",
+      "parent_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week returned a mixed feel for the Panamax market. The North Atlantic market lacked any depth with limited information surfacing but despite both sides attempts to drag it their way, rates on the week were mostly broadside.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "japan",
+        "grain",
+        "demand",
+        "returned"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry",
+      "parent_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The market witnessed strong momentum and busy activity this week. Activity increased significantly from the U.S.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "singapore",
+        "japan",
+        "grain",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry",
+      "parent_id": "baltic_dry_2025-11-14_2025_11_14_bulk_report_week_46_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handysize market experienced a largely steady yet mixed week, fluctuating between cautious optimism and mild softness. In the Continent and Mediterranean, conditions appeared more balanced, though owners continued to adjust their offers upwards in response to steady enquiry.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "grain",
+        "delivery",
+        "fixed",
+        "dwt",
+        "continued"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

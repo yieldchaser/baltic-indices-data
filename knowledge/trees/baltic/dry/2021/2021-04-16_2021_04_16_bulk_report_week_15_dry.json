@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__root",
+  "doc_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 15",
+  "section_path": [
+    "Bulk report - Week 15"
+  ],
+  "section_path_text": "Bulk report - Week 15",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market turned for all Capesize routes this past week as the BCI reached new highs for the year. The Capesize 5TC started the week at $23,911, surged early in the week before a lull mid-week. It closed out with a strong gain of 4,339 for the week to $28,250.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 995,
+  "source_path": "reports/baltic/dry/2021/2021-04-16_bulk-report-week-15_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market turned for all Capesize routes this past week as the BCI reached new highs for the year. The Capesize 5TC started the week at $23,911, surged early in the week before a lull mid-week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "singapore",
+        "closed",
+        "both",
+        "fixtures"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A topsy-turvy week for the Panamax market, with the first half starting out in a very bearish trend only for it to rebound mid-week as the market bulls returned with some suggesting the market had possibly over corrected with fundamentals not really changing. Assisted by a rejuvenated FFA market, positional tightness and an increase in demand from both EC South America/North Atlantic and NoPac rates for the most part improved.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "india",
+        "south",
+        "nopac",
+        "out",
+        "advancing",
+        "agreed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Positive sentiment returned to the sector this week with increased cargo enquiry from key areas such as the US Gulf where a 63,000 dwt was covered for a trip to the eastern Mediterranean in the upper teens, also from East Coast South America with the uptake on the larger Panamax size. Ultramaxes were seeing in the $19,000s plus $900,000s ballast bonus for trips to Singapore-Japan.",
+      "keywords": [
+        "panamax",
+        "china",
+        "pacific",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2021-04-16_2021_04_16_bulk_report_week_15_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With the larger sizes making positive moves on their respective indices will it be the turn for the BHSI next? As the week drew to a close there were the first green shoots for owners as some markets possibly arrested their decline.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 307,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

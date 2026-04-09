@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__root",
+  "doc_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 42",
+  "section_path": [
+    "Bulk report - Week 42"
+  ],
+  "section_path_text": "Bulk report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a volatile week marked by sharp swings in sentiment and rates following China's announcement of new port fees on U.S. Early gains, driven by speculation over potential inefficiencies, quickly reversed as clarity emerged that Chinese-built tonnage would be exempt, triggering a sharp midweek correction. The Pacific market saw notable fluctuations on C5, with rates ranging from the low $12.00s to low $10.00s.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1000,
+  "source_path": "reports/baltic/dry/2025/2025-10-17_bulk-report-week-42_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a volatile week marked by sharp swings in sentiment and rates following China's announcement of new port fees on U.S. Early gains, driven by speculation over potential inefficiencies, quickly reversed as clarity emerged that Chinese-built tonnage would be exempt, triggering a sharp midweek correction.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "low",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The USA v China trade/tariff speculation early part curtailed activity with most players holding off trying to work out full implications. During this time physical market fundamentals remained mostly unnerved, despite attempts from a volatile FFA market, physical rates did settle down mid-week and the market appeared steady.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "japan",
+        "grain",
+        "activity",
+        "trips",
+        "appeared"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "After the previous week's widespread holidays, it was a slightly more positive affair for the sector. The Atlantic was rather positional overall, stronger numbers were seen from the South Atlantic, a 61,000-dwt fixing an EC South American fronthaul at $16,750 plus $675,000 ballast bonus.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 248,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2025-10-17_2025_10_17_bulk_report_week_42_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall, the market remained steady and relatively balanced throughout the week. In the Continent and Mediterranean, activity was limited but sentiment stayed firm, with some routes showing marginal improvements.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "meg",
+        "europe",
+        "grain",
+        "dwt",
+        "fixed",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 262,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

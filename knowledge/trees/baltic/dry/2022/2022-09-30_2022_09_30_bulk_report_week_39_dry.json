@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__root",
+  "doc_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 39",
+  "section_path": [
+    "Bulk report - Week 39"
+  ],
+  "section_path_text": "Bulk report - Week 39",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market failed to push through to higher values this week as lower activity in the Pacific hampered efforts. The Capesize 5TC closed the week at $16,214. The Atlantic basin has been looking well supported with fixture values continuing to climb.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "coal"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 884,
+  "source_path": "reports/baltic/dry/2022/2022-09-30_bulk-report-week-39_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry",
+      "parent_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market failed to push through to higher values this week as lower activity in the Pacific hampered efforts. The Capesize 5TC closed the week at $16,214.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "activity",
+        "last",
+        "values",
+        "weather"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry",
+      "parent_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It proved to be a real Atlantic/Asia divide this week for the Panamax market. The Atlantic market advanced all week, primarily driven by solid grain demand both for transatlantic and fronthaul trips.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "japan",
+        "coal",
+        "grain",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry",
+      "parent_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather tempered week overall for the sector. With the upcoming holiday in China demand waned as the week ended with less fresh enquiry in Asia.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry",
+      "parent_id": "baltic_dry_2022-09-30_2022_09_30_bulk_report_week_39_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A split week whilst the Atlantic saw gains with upward pressure on rates from key areas such as South America. The Asian arena was decreasing sentiment as the upcoming holiday saw lower enquiry coming into the market.",
+      "keywords": [
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "was",
+        "dwt",
+        "fixed",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

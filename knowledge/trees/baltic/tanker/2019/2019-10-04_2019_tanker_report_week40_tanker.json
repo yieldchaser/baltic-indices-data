@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__root",
+  "doc_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 40",
+  "section_path": [
+    "Tanker report - Week 40"
+  ],
+  "section_path_text": "Tanker report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nThe markets made huge improvements, mainly due to the effects of an already tightening position list and the fallout from US sanctions on Cosco. In the Middle East Gulf, 270,000mt to China rose about 15 points to the mid WS 90s level, while 280,000 to US Gulf via Cape/Cape were boosted seven to eight points to WS 45. In West Africa, rates for 260,000mt to China gained about 12.5 points to WS 95 region, although there is talk today of a major oil company fixing at WS 102.5.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "crude_oil"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 626,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week40_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker",
+      "parent_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The markets made huge improvements, mainly due to the effects of an already tightening position list and the fallout from US sanctions on Cosco. In the Middle East Gulf, 270,000mt to China rose about 15 points to the mid WS 90s level, while 280,000 to US Gulf via Cape/Cape were boosted seven to eight points to WS 45.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "crude_oil",
+        "points",
+        "charterer"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 180,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker",
+      "parent_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Party due to the VLCC rises, rates for 130,000mt West Africa to UK-Continet have been driven up nearly 30 points to WS 125-127.5 level, as owners capitalised on a bullish sentiment. For 135,000mt Black Sea to the Mediterranean voyages, a tightening position list and owners' sentiment has pushed rates up about 75 points to WS 172.5-175.",
+      "keywords": [
+        "vlcc",
+        "west_africa",
+        "europe",
+        "points",
+        "mediterranean",
+        "owners",
+        "africa",
+        "basrah"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 114,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker",
+      "parent_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The market in the Mediterranean continued its meteoric rise, with 80,000mt Ceyhan to the Mediterranean improving by 70+ points (up over 50% week-on-week) to WS 215-217.5. In the North Sea, rates for 80,000mt East Coast UK to UK-Continent increased by 20 points to WS 170 level, while 100,000mt Baltic to UK-Continent showed an increase of about six points to WS 137 level.",
+      "keywords": [
+        "europe",
+        "us_gulf",
+        "points",
+        "mediterranean",
+        "caribbean",
+        "gulf",
+        "uk-continent",
+        "above"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 151,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker",
+      "parent_id": "baltic_tanker_2019-10-04_2019_tanker_report_week40_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "There was a firm sentiment pervading across the market and with healthy amounts of enquiry, rates for 75,000mt Middle East Gulf to Japan climbed almost 40 points from the start of the week to WS 135. This positivity filtered through to the LR1 market, which modestly firmed about 6.5 points to WS 110 but with the strong LR2 market brokers feel there is room for further increases.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gulf",
+        "points",
+        "almost"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 168,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

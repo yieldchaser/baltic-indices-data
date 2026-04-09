@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-06-14_2024_06_14_gas_report_week_24_gas__root",
+  "doc_id": "baltic_gas_2024-06-14_2024_06_14_gas_report_week_24_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 24",
+  "section_path": [
+    "Gas report - Week 24"
+  ],
+  "section_path_text": "Gas report - Week 24",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThere was no hangover from Posidonia in the LNG shipping community, when everyone got back to their seats it was business as usual, the LNG spot market has continued its uptick in spot rates with both ships across all three routes seeing positive movement. There wasn't a flood of reported fixtures, and indeed as any enquiry came out there were a surprising number of modern ships able to work them. This though hasn't hampered any gains and in the Atlantic specifically we have seen a decent rise.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "meg",
+    "europe",
+    "japan",
+    "gas",
+    "cbm",
+    "close",
+    "was"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 571,
+  "source_path": "reports/baltic/gas/2024/2024-06-14_gas-report-week-24_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-06-14_2024_06_14_gas_report_week_24_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-06-14_2024_06_14_gas_report_week_24_gas",
+      "parent_id": "baltic_gas_2024-06-14_2024_06_14_gas_report_week_24_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There was no hangover from Posidonia in the LNG shipping community, when everyone got back to their seats it was business as usual, the LNG spot market has continued its uptick in spot rates with both ships across all three routes seeing positive movement. There wasn't a flood of reported fixtures, and indeed as any enquiry came out there were a surprising number of modern ships able to work them.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "japan",
+        "gas",
+        "cbm",
+        "finished"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 304,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-06-14_2024_06_14_gas_report_week_24_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-06-14_2024_06_14_gas_report_week_24_gas",
+      "parent_id": "baltic_gas_2024-06-14_2024_06_14_gas_report_week_24_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Some significant correction in the LPG market this week both in the MEG and across the Atlantic. In the MEG BLPG1 suffered one of the biggest falls this year losing $16.572 from a mid-week high to a final close of $64,571, and a daily TCE earning equivalent of $45,631.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "gas",
+        "earning",
+        "equivalent",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 261,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

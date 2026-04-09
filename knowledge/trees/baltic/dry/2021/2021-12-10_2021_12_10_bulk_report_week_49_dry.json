@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__root",
+  "doc_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 49",
+  "section_path": [
+    "Bulk report - Week 49"
+  ],
+  "section_path_text": "Bulk report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market peaked mid-week from its recent rally as the 5TC marked down -$1344 on the last day of the week to settle at $40,035. A tonnage tightness in several positions, particularly in the north Atlantic, led to gains early on in the week. However, sustained downward pressure from the Pacific and Ballaster routes took its toll as the week progressed.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "coal"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 883,
+  "source_path": "reports/baltic/dry/2021/2021-12-10_bulk-report-week-49_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market peaked mid-week from its recent rally as the 5TC marked down -$1344 on the last day of the week to settle at $40,035. A tonnage tightness in several positions, particularly in the north Atlantic, led to gains early on in the week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "ballaster",
+        "heading"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week began on a bright note for the Panamax segment with a positive and firmer looking market carried over from previous. However, this proved to be very short lived with both basins easing.",
+      "keywords": [
+        "panamax",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "delivery",
+        "market.",
+        "began"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A positive week overall with most areas seeing stronger demand. More enquiry appeared from key areas such as the US Gulf and Indonesian coal demand was up putting pressure on rates.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "coal",
+        "dwt",
+        "was",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2021-12-10_2021_12_10_bulk_report_week_49_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Some small rises on the BHSI with positive sentiment in Asia and parts of the Atlantic. A 28,000-dwt open in Vietnam was fixed for a quick South East Asia round trip at $20,000.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "steel",
+        "dwt",
+        "fixed",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 216,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry__root",
+  "doc_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 40 2015",
+  "section_path": [
+    "Bulk Report - Week 40 2015"
+  ],
+  "section_path_text": "Bulk Report - Week 40 2015",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nRates steadied as the week closed out. This was despite the start of a long holiday in China and week in which holidays generally impacted on the market. The West Australia/China run, a barometer for rates in the East, saw rates steady as the week closed out to around $6.00 or the low $6.00 range from 15 October onwards 170,000-tonne 10% cargoes.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1081,
+  "source_path": "reports/baltic/dry/2015/2015_bulk-report-week402015_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry",
+      "parent_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates steadied as the week closed out. This was despite the start of a long holiday in China and week in which holidays generally impacted on the market.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "singapore",
+        "was",
+        "trading"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry",
+      "parent_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Grain cargoes from NoPac underpinned rates for ships open in north Asia, but ships further saw fewer cargoes quoting. A 74,000-tonner - a BPI type - fixed from Chiba spot for a NoPac round at a firm $7,000 daily with brokers suggesting further cargoes to be shipped.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "daily",
+        "cargoes",
+        "ships"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 248,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry",
+      "parent_id": "baltic_dry_2015-10-02_2015_bulk_report_week402015_dry__root",
+      "title": "Supramax / handysize",
+      "section_path": [
+        "Supramax / handysize"
+      ],
+      "section_path_text": "Supramax / handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the exception of one handysize route on Tuesday, this week has seen a small decrease daily on every handysize route. The handy timecharter average Thursday showed $5,710 down from $6,588 on 18 August.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 568,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

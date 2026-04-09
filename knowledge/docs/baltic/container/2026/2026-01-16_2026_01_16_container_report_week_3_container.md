@@ -23,6 +23,7 @@ market_tone: cautiously_bearish
 regions:
 - china
 - europe
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2026/2026-01-16_container-report-week-3_container.html

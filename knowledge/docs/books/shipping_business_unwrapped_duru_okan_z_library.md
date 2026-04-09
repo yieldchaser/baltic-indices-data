@@ -37,6 +37,7 @@ regions:
 - europe
 - singapore
 - japan
+section_count: 31
 signals: {}
 source: book
 source_path: reports/Shipping Business Unwrapped. (Duru, Okan) (Z-Library).pdf

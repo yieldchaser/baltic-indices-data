@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-08-18_2023_08_18_gas_report_week_33_gas__root",
+  "doc_id": "baltic_gas_2023-08-18_2023_08_18_gas_report_week_33_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 33",
+  "section_path": [
+    "Gas report - Week 33"
+  ],
+  "section_path_text": "Gas report - Week 33",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nOnce again it has been reported that the Japanese imports of LNG have declined, this time to a 17.4% year-on-year decline for July. This coupled with the continued coverage of strikes in Australia had made market participants worried about the direction of the spot index. As it transpired, most of the worry is unfounded, with rates rising for Aus-Japan BLNG1g by $22,505 to close at $107,989.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "japan",
+    "grain",
+    "gas",
+    "close",
+    "out",
+    "cargoes"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 547,
+  "source_path": "reports/baltic/gas/2023/2023-08-18_gas-report-week-33_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-08-18_2023_08_18_gas_report_week_33_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-08-18_2023_08_18_gas_report_week_33_gas",
+      "parent_id": "baltic_gas_2023-08-18_2023_08_18_gas_report_week_33_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Once again it has been reported that the Japanese imports of LNG have declined, this time to a 17.4% year-on-year decline for July. This coupled with the continued coverage of strikes in Australia had made market participants worried about the direction of the spot index.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "meg",
+        "japan",
+        "grain",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 290,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-08-18_2023_08_18_gas_report_week_33_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-08-18_2023_08_18_gas_report_week_33_gas",
+      "parent_id": "baltic_gas_2023-08-18_2023_08_18_gas_report_week_33_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A quiet week out in the Middle East, with BLPG1 Ras Tanura-Chiba fell by $2.785 giving a close of $95.286 (meaning a daily TCE Earning of $78,254 for a round trip). The tonnage list is quite healthy, and a lack of open cargoes has kept sentiment flat, there are new acceptances due to come out over the next few days and this will hopefully inject some cargo and life into the market, but last week has been particularly quiet.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "daily",
+        "earning",
+        "tce",
+        "being",
+        "fixed",
+        "list"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

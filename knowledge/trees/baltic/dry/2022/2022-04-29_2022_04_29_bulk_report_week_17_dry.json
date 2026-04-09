@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__root",
+  "doc_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 17",
+  "section_path": [
+    "Bulk report - Week 17"
+  ],
+  "section_path_text": "Bulk report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market had a positive week overall with the BCI and 5TC route average at 2003 points and $16,609, closing at 2,136 and $17,713. The first half of the week remained positive amid strong support from the Pacific. The C5 West Australia to China trade continued to climb from last week, but lost ground from the high of $12.245 gradually to below $12 by the weekend.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 922,
+  "source_path": "reports/baltic/dry/2022/2022-04-29_bulk-report-week-17_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market had a positive week overall with the BCI and 5TC route average at 2003 points and $16,609, closing at 2,136 and $17,713. The first half of the week remained positive amid strong support from the Pacific.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Overall, the Panamax market returned a lacklustre week with momentum lacking. The Atlantic market contracted early on, then rebounded, as the week ended and bids in the north returned a little stronger.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "coal",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather positional market over the last week. Whilst in the Atlantic healthy demand was seen from the US Gulf, other areas had a rather lacklustre feel.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2022-04-29_2022_04_29_bulk_report_week_17_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With mainly positive sentiment in both basins, the BHSI made gains. This was largely due to the US Gulf which saw numbers increase day-on-day.",
+      "keywords": [
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

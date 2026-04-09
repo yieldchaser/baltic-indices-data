@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-05-26_2023_05_26_gas_report_week_21_gas__root",
+  "doc_id": "baltic_gas_2023-05-26_2023_05_26_gas_report_week_21_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 21",
+  "section_path": [
+    "Gas report - Week 21"
+  ],
+  "section_path_text": "Gas report - Week 21",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market didn't quite know what to make of itself this week. Rates moved marginally against some activity in both basins but the Pacific remains the most active. There were reports of an Intra-Pacific basin done on a 2-Stroke ship in the mid $60,000s, although this had little effect on the BLNG1g Aus-Japan numbers that finished at $37,370 RV, a rise of only $256 on the week.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "pacific",
+    "japan",
+    "gas",
+    "but",
+    "quite",
+    "activity",
+    "arb",
+    "could",
+    "expectations"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 549,
+  "source_path": "reports/baltic/gas/2023/2023-05-26_gas-report-week-21_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-05-26_2023_05_26_gas_report_week_21_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-05-26_2023_05_26_gas_report_week_21_gas",
+      "parent_id": "baltic_gas_2023-05-26_2023_05_26_gas_report_week_21_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market didn't quite know what to make of itself this week. Rates moved marginally against some activity in both basins but the Pacific remains the most active.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "japan",
+        "gas",
+        "but",
+        "arb",
+        "expectations"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 285,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-05-26_2023_05_26_gas_report_week_21_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-05-26_2023_05_26_gas_report_week_21_gas",
+      "parent_id": "baltic_gas_2023-05-26_2023_05_26_gas_report_week_21_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A continued bull run on the LPG market has seen the three routes rally this week. Out in the AG there was an influx of cargoes mid-week that had the owners clambering to get offers in, but despite the level of activity there wasn't quite the rush of fixing.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "tce",
+        "activity",
+        "blpg2",
+        "but",
+        "could"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 258,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

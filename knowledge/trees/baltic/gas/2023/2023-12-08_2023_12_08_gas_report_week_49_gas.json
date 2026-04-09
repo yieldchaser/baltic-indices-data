@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-12-08_2023_12_08_gas_report_week_49_gas__root",
+  "doc_id": "baltic_gas_2023-12-08_2023_12_08_gas_report_week_49_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 49",
+  "section_path": [
+    "Gas report - Week 49"
+  ],
+  "section_path_text": "Gas report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nBLNG1g Australia-Japan again fell this week shedding $29,023 to close at $113,975. This level has been seen a few times in the last year but we haven't been lower since mid-August and prior to that January. The fall came despite a fair amount of activity in the East, a few ships fixed ex-Aus one 2-stroke in the region of $140,000/day, while a TFDE was fixed closer to $100,000.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "japan",
+    "gas",
+    "fell",
+    "few",
+    "ships",
+    "activity",
+    "brokers",
+    "but"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 515,
+  "source_path": "reports/baltic/gas/2023/2023-12-08_gas-report-week-49_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-12-08_2023_12_08_gas_report_week_49_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-12-08_2023_12_08_gas_report_week_49_gas",
+      "parent_id": "baltic_gas_2023-12-08_2023_12_08_gas_report_week_49_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "BLNG1g Australia-Japan again fell this week shedding $29,023 to close at $113,975. This level has been seen a few times in the last year but we haven't been lower since mid-August and prior to that January.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "japan",
+        "gas",
+        "fell",
+        "activity",
+        "again"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 271,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-12-08_2023_12_08_gas_report_week_49_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-12-08_2023_12_08_gas_report_week_49_gas",
+      "parent_id": "baltic_gas_2023-12-08_2023_12_08_gas_report_week_49_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A quiet week for the BLPG1 Ras Tanura-Chiba route, the index fell by $23 to close at $125.286. The significant drop comes mainly from the lack of activity, with few enquiries and ships failing subjects with cargoes being taken back internally, it has resulted in rates significantly weakened compared to a few weeks ago.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "ships",
+        "being",
+        "but",
+        "daily",
+        "drop",
+        "earning"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 238,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-04-25_2025_04_25_gas_report_week_17_gas__root",
+  "doc_id": "baltic_gas_2025-04-25_2025_04_25_gas_report_week_17_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 17",
+  "section_path": [
+    "Gas report - Week 17"
+  ],
+  "section_path_text": "Gas report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market showed a notable shift this week, with a strong recovery in the Atlantic basin while the Pacific was mixed. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels declined by $1,000, closing at $22,200 per day, while 160k cbm vessels edged up by $200, settling at $13,800 per day. The continued decline for larger vessels highlights ongoing sluggishness in Pacific demand.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "pacific",
+    "europe",
+    "gas",
+    "per",
+    "vessels",
+    "cbm",
+    "day",
+    "day.",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 543,
+  "source_path": "reports/baltic/gas/2025/2025-04-25_gas-report-week-17_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-04-25_2025_04_25_gas_report_week_17_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-04-25_2025_04_25_gas_report_week_17_gas",
+      "parent_id": "baltic_gas_2025-04-25_2025_04_25_gas_report_week_17_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market showed a notable shift this week, with a strong recovery in the Atlantic basin while the Pacific was mixed. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels declined by $1,000, closing at $22,200 per day, while 160k cbm vessels edged up by $200, settling at $13,800 per day.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "europe",
+        "gas",
+        "per",
+        "vessels",
+        "cbm"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 290,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-04-25_2025_04_25_gas_report_week_17_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-04-25_2025_04_25_gas_report_week_17_gas",
+      "parent_id": "baltic_gas_2025-04-25_2025_04_25_gas_report_week_17_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has been relatively quiet this week, following the hectic, tariff-driven pricing of recent weeks. Fixing activity has slowed noticeably, and while rates remain below pre-tariff levels, the pace of decline has eased.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "day.",
+        "route",
+        "decline",
+        "down",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

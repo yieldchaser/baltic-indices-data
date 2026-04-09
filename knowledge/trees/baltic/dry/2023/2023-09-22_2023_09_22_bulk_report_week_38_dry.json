@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__root",
+  "doc_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 38",
+  "section_path": [
+    "Bulk report - Week 38"
+  ],
+  "section_path_text": "Bulk report - Week 38",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesizes\nThe Pacific market started with a positive outlook, maintaining healthy cargo volumes driven by substantial coal shipments from East Coast Australia to the Far East. Rates initially increased, but as the week progressed, a notable shift occurred. Owners began contemplating ballasting towards the Atlantic, creating additional pressure in the Pacific market.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 903,
+  "source_path": "reports/baltic/dry/2023/2023-09-22_bulk-report-week-38_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__s01_capesizes",
+      "doc_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__root",
+      "title": "Capesizes",
+      "section_path": [
+        "Capesizes"
+      ],
+      "section_path_text": "Capesizes",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Pacific market started with a positive outlook, maintaining healthy cargo volumes driven by substantial coal shipments from East Coast Australia to the Far East. Rates initially increased, but as the week progressed, a notable shift occurred.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal",
+        "but",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 173,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week began positively in the Panamax sector, with both the Atlantic and Pacific basins well supported with good demand on all the major trades. However, as the week closed some of the gains appear to have been eroded somewhat.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "demand",
+        "appears",
+        "concluded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A strong week overall for the sector. Sustained demand was seen from the US Gulf for fronthaul trips to Asia.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "steel",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 285,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry",
+      "parent_id": "baltic_dry_2023-09-22_2023_09_22_bulk_report_week_38_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In a largely positive week across a majority of sectors in the handy market, gains were seen in both basins. The Continent and Mediterranean saw increased cargo availability and limited tonnage with a 34,000-dwt fixing from the Immingham to the Mediterranean at $22,000.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 230,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

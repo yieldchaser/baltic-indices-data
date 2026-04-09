@@ -24,6 +24,7 @@ keywords:
 - source
 market_tone: constructive
 regions: []
+section_count: 19
 signals: {}
 source: book
 source_path: reports/Lesson-2-Types-of-Ships.pdf

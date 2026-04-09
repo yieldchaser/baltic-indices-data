@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__root",
+  "doc_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 2",
+  "section_path": [
+    "Bulk report - Week 2"
+  ],
+  "section_path_text": "Bulk report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nDashed hopes summed up the first full week of the New Year. A slow start followed by a busy 24 hours of improving rates and a firming FFA market fuelled positive sentiment, only to see both paper and physical sales slide the next day. West Australia to China rates briefly moved closer to the high $6.00s, but ended the week at $6.25, as a 2002-built vessel fixed at this rate from Dampier.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 927,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week2_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Dashed hopes summed up the first full week of the New Year. A slow start followed by a busy 24 hours of improving rates and a firming FFA market fuelled positive sentiment, only to see both paper and physical sales slide the next day.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "fixed",
+        "briefly",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 243,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With a complete return to work for the first full week of the year it was perhaps no surprise that it was very active, with a large volume of trades reported. Despite the increased activity, there remained too many early vessels in the Atlantic, combined with ballasters from the East, forcing rates lower throughout the week, with many having to wait for later laydays.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "india",
+        "was",
+        "many",
+        "but",
+        "cargoes",
+        "later"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The first full week back after the holidays was not encouraging, with the Baltic Supramax Index (BSI) falling and tonnage supply outweighing demand in many areas. Limited period activity surfaced, but a 61,000dwt vessel was reported delivery Japan for four to six months trading at $12,500.",
+      "keywords": [
+        "supramax",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2019-01-11_2019_bulk_report_week2_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The first full week back began on a low note, with routes across all areas losing ground. Due to a good supply of prompt tonnage from East Coast South America, and a lack of fresh enquiry from the US Gulf, rates slipped.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "steel",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

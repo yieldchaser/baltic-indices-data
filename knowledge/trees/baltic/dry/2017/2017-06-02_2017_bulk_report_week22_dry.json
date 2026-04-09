@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__root",
+  "doc_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 22",
+  "section_path": [
+    "Bulk report - Week 22"
+  ],
+  "section_path_text": "Bulk report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nRates fell throughout the week as the market suffered due to a build-up of prompt ships and intermittent holidays favouring charterers. The market both in the Atlantic and the east relied on ore cargoes with very little action from coal shippers, leaving an imbalance. Rates from Tubarao to Qingdao slipped under $14.00 and further north, transatlantic rates on the key Bolivar/Rotterdam run were now under $6.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1151,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week22_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry",
+      "parent_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates fell throughout the week as the market suffered due to a build-up of prompt ships and intermittent holidays favouring charterers. The market both in the Atlantic and the east relied on ore cargoes with very little action from coal shippers, leaving an imbalance.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "coal",
+        "but",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry",
+      "parent_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Another bad week for panamax and kamsarmax vessels with no signs of any recovery in the short term and any positive sentiment from last week having evaporated. Then there had been signs of a steadier north Atlantic market last week but this week saw new business here in short supply with transatlantic rates barely at $6,000 daily for standard types.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "bauxite"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 338,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry",
+      "parent_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The ultramax and supramax sector had another depressing week with rates sliding across all routes, especially from the US Gulf which had very limited enquiry and a build-up of tonnage. A 57,000-dwt was fixed and failed for a front haul redelivery Japan at $15,250, down on last done.",
+      "keywords": [
+        "supramax",
+        "china",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "was",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 337,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry",
+      "parent_id": "baltic_dry_2017-06-02_2017_bulk_report_week22_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The week started on a quiet note and struggled to get going, with holidays coming up next week in Europe and elsewhere seemingly leading to the lacklustre week. Across all routes rates slipped, apart from east coast South America transatlantic which at time of publishing was the only one to buck the downward trend.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__root",
+  "doc_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 8",
+  "section_path": [
+    "Bulk report - Week 8"
+  ],
+  "section_path_text": "Bulk report - Week 8",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market did get off to a positive start this week as rates were building strongly off improved sentiment. But as events in Europe took hold, the market abruptly changed course. The Capesize 5TC reached a high of $18,181 Wednesday before shedding -4155 by weeks end to close at $14,026.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 939,
+  "source_path": "reports/baltic/dry/2022/2022-02-25_bulk-report-week-8_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry",
+      "parent_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market did get off to a positive start this week as rates were building strongly off improved sentiment. But as events in Europe took hold, the market abruptly changed course.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "down"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 243,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry",
+      "parent_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market began the week on a firm footing in both basins. The Atlantic saw a thinning tonnage list pitted against both a strong mineral demand in the North, alongside healthy grain demand ex NC South America and EC South America.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "grain",
+        "delivery",
+        "dwt",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry",
+      "parent_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__root",
+      "title": "Supramax / Ultramax",
+      "section_path": [
+        "Supramax / Ultramax"
+      ],
+      "section_path_text": "Supramax / Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A story of two halves over the week. Whilst from the Asian arena positive movement was seen in most areas, the Atlantic was dominated by the situation unfolding in the Black Sea region.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "singapore",
+        "dwt",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry",
+      "parent_id": "baltic_dry_2022-02-25_2022_02_25_bulk_report_week_8_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With the developing situation in the Ukraine, brokers spoke of some uncertainty as to the effects at present. As an ongoing issue it would need to be monitored closely.",
+      "keywords": [
+        "brazil",
+        "meg",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixing",
+        "brokers",
+        "continent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

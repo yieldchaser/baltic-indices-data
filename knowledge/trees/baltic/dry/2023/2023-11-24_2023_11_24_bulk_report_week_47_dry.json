@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__root",
+  "doc_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 47",
+  "section_path": [
+    "Bulk report - Week 47"
+  ],
+  "section_path_text": "Bulk report - Week 47",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nFor the first half of the week, the market faced subdued activity, particularly in the Pacific with a slight downward movement on rates on C5. The Atlantic market also experienced limited activity, with discussions on C3 reflecting a somewhat subdued sentiment. As the week progressed, the Pacific saw lower trading volumes, resulting in a decline in market activity and increased pressure, with rates on C5 dropping by approximately a further 85 cents.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 993,
+  "source_path": "reports/baltic/dry/2023/2023-11-24_bulk-report-week-47_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "For the first half of the week, the market faced subdued activity, particularly in the Pacific with a slight downward movement on rates on C5. The Atlantic market also experienced limited activity, with discussions on C3 reflecting a somewhat subdued sentiment.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "africa",
+        "cargoes",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 292,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Another week of upward momentum in the Panamax market, with the North Atlantic trips seeing the largest gains. In the Pacific, healthy coal enquiry from Australia and Indonesia kept rates relatively stable on the week, whilst solid grain demand ex NoPac also lent support in the north of the basin.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The positive momentum continued throughout the week despite the holiday in the United States and Japan. The Atlantic saw sustained demand from key areas such as the US Gulf and it was a similar story from South America, with a 53,000 dwt heard to have fixed delivery Santos for a fronthaul in the mid $15,000s plus mid $500,000s ballast bonus.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "japan",
+        "dwt",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2023-11-24_2023_11_24_bulk_report_week_47_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Atlantic saw daily improvements due to limited tonnage availability. On the US East Coast, charterers continued to source tonnage from further afield with a 38,000 dwt fixing from Tyne, UK via St Lawrence to the Continent-Mediterranean at $18,000 whilst a 38,000 dwt opening in Casablanca was fixed basis delivery Escoumins via Quebec to the UK-Continent at $27,500.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt",
+        "fixed",
+        "limited"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-03-06_2026_03_06_gas_report_week_10_gas__root",
+  "doc_id": "baltic_gas_2026-03-06_2026_03_06_gas_report_week_10_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 10",
+  "section_path": [
+    "Gas report - Week 10"
+  ],
+  "section_path_text": "Gas report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market experienced an extraordinary surge this week off the back of the tensions surrounding Iran, with rates increasing across all major routes as LNG prices soared. On the BLNG1 Australia-Japan route, 174k cbm vessels climbed $181,600 week-on-week to settle at $223,000/day as sentiment firmed. The BLNG2 US Gulf-Continent route also saw a rally, with earnings surging $201,600 to $255,000/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "route",
+    "day.",
+    "day",
+    "earnings",
+    "sentiment"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 364,
+  "source_path": "reports/baltic/gas/2026/2026-03-06_gas-report-week-10_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-03-06_2026_03_06_gas_report_week_10_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-03-06_2026_03_06_gas_report_week_10_gas",
+      "parent_id": "baltic_gas_2026-03-06_2026_03_06_gas_report_week_10_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market experienced an extraordinary surge this week off the back of the tensions surrounding Iran, with rates increasing across all major routes as LNG prices soared. On the BLNG1 Australia-Japan route, 174k cbm vessels climbed $181,600 week-on-week to settle at $223,000/day as sentiment firmed.",
+      "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "day",
+        "day."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-03-06_2026_03_06_gas_report_week_10_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-03-06_2026_03_06_gas_report_week_10_gas",
+      "parent_id": "baltic_gas_2026-03-06_2026_03_06_gas_report_week_10_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With ongoing tensions surrounding Iran, the LPG market experienced a mixed week. The West saw a sharp increase at the beginning of the week before gradually softening as sentiment eased toward the end of the period.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "route",
+        "tce",
+        "day.",
+        "earnings",
+        "before",
+        "beginning"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 149,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

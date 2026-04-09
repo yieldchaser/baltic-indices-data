@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-01-27_2023_01_27_gas_report_week_4_gas__root",
+  "doc_id": "baltic_gas_2023-01-27_2023_01_27_gas_report_week_4_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 4",
+  "section_path": [
+    "Gas report - Week 4"
+  ],
+  "section_path_text": "Gas report - Week 4",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThere has been little to note with the Spot LNG market. Some enquiry is reported, but there is more focus on period. This trickles down into the subletting, with ships showing availability for multi-month periods, but with little interest for single voyages.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "crude_oil",
+    "gas",
+    "now",
+    "all",
+    "but",
+    "owners",
+    "three",
+    "are",
+    "blpg1"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 486,
+  "source_path": "reports/baltic/gas/2023/2023-01-27_gas-report-week-4_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-01-27_2023_01_27_gas_report_week_4_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-01-27_2023_01_27_gas_report_week_4_gas",
+      "parent_id": "baltic_gas_2023-01-27_2023_01_27_gas_report_week_4_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There has been little to note with the Spot LNG market. Some enquiry is reported, but there is more focus on period.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "crude_oil",
+        "gas",
+        "but",
+        "close",
+        "interest",
+        "little"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-01-27_2023_01_27_gas_report_week_4_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-01-27_2023_01_27_gas_report_week_4_gas",
+      "parent_id": "baltic_gas_2023-01-27_2023_01_27_gas_report_week_4_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "What a difference a week can make. It had look that amid planned maintenance in the AG, reduced volumes would hamper any rate growth.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "now",
+        "all",
+        "blpg1",
+        "fixtures",
+        "last",
+        "march"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 265,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

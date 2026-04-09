@@ -24,6 +24,7 @@ regions:
 - china
 - pacific
 - europe
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2025/2025-10-24_container-report-week-43_container.html

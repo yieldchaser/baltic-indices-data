@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__root",
+  "doc_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 19",
+  "section_path": [
+    "Bulk report - Week 19"
+  ],
+  "section_path_text": "Bulk report - Week 19",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nAs the week progressed it became clear that the Capesize market wasn't having a small retracement but was in for a more significant downturn as the 5TC dropped $6,972 week-on-week to settle at $34,542. While Friday's sharp selloff in the Pacific on the back of West Australia to China C5 fixtures gave clear market visibility, the remainder of the market was operating on low physical activity as dark clouds from the paper market ensured sentiment was poor across the board. The C5 had a small lift on Monday but lowered -2.254 week-on-week to post at $12.173 by Friday.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 944,
+  "source_path": "reports/baltic/dry/2021/2021-05-14_bulk-report-week-19_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "As the week progressed it became clear that the Capesize market wasn't having a small retracement but was in for a more significant downturn as the 5TC dropped $6,972 week-on-week to settle at $34,542. While Friday's sharp selloff in the Pacific on the back of West Australia to China C5 fixtures gave clear market visibility, the remainder of the market was operating on low physical activity as dark clouds from the paper market ensured sentiment was poor across the board.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 265,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It proved to be a negative week overall for the Panamaxes with rates easing across the board, any potential momentum early on was somewhat disrupted by many holidays towards the latter part of the week. The Atlantic was predominantly fronthaul led with a steady cargo flow ex NC South America with an 82,000-dwt achieving $26,000+$1.7 million ballast bonus delivery US Gulf.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "us_gulf",
+        "singapore",
+        "delivery",
+        "dwt",
+        "mid"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Despite widespread holidays, sentiment remained firm from the Asian basin with tonnage supply remaining tight. However, there were mixed signals from the Atlantic with limited fresh enquiry from the US Gulf and Mediterranean, where rates eased early in the week but levels remained steady from the south Atlantic.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "fixed",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2021-05-14_2021_05_14_bulk_report_week_19_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Despite holidays and religious festivals this week, sentiment remained positive and the BHSI continued to move upwards. A 37,000-dwt open in Rio De Janeiro 15 May fixed minimum four months to about six months redelivery Atlantic at $19,500.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 216,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-02-03_2023_02_03_gas_report_week_5_gas__root",
+  "doc_id": "baltic_gas_2023-02-03_2023_02_03_gas_report_week_5_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 5",
+  "section_path": [
+    "Gas report - Week 5"
+  ],
+  "section_path_text": "Gas report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe BLNG1g route Australia to Japan fell by $7,729 per day this week to publish at $66,605. Slightly lower daily losses were seen in the Atlantic where BLNG2g eased $3,295 to $52,413 and BLNG3g fell by $6,482 to $64,932. After the recent bigger drop-in rates the market seems to be stabilising on the back of less availability, although sentiment does remains weak.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "japan",
+    "gas",
+    "day",
+    "per",
+    "equivalent",
+    "tce",
+    "blpg1"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 303,
+  "source_path": "reports/baltic/gas/2023/2023-02-03_gas-report-week-5_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-02-03_2023_02_03_gas_report_week_5_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-02-03_2023_02_03_gas_report_week_5_gas",
+      "parent_id": "baltic_gas_2023-02-03_2023_02_03_gas_report_week_5_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The BLNG1g route Australia to Japan fell by $7,729 per day this week to publish at $66,605. Slightly lower daily losses were seen in the Atlantic where BLNG2g eased $3,295 to $52,413 and BLNG3g fell by $6,482 to $64,932.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "japan",
+        "gas",
+        "fell",
+        "after",
+        "although"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 96,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-02-03_2023_02_03_gas_report_week_5_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-02-03_2023_02_03_gas_report_week_5_gas",
+      "parent_id": "baltic_gas_2023-02-03_2023_02_03_gas_report_week_5_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market, has continued its new year recovery and has regained the losses incurred since the start of January. On BLPG1 rates increased from $78.00mt to finish this week at $92.00/mt, up $14.0 (TCE equivalent of $72,394 per day).",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "gas",
+        "day",
+        "equivalent",
+        "per",
+        "tce",
+        "blpg1"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

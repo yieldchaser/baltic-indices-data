@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__root",
+  "doc_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 14",
+  "section_path": [
+    "Bulk report - Week 14"
+  ],
+  "section_path_text": "Bulk report - Week 14",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capes started the week off slowly but gradually gained momentum. Despite decent cargo volumes, particularly in the Pacific, the C5 index experienced a 50-cent drop, settling at $9.640 as the week got under way. There was pressure in the South Atlantic due to a substantial amount of April ballasters, which led to weaker fixtures from South Brazil and West Africa contributing to a significant drop of $1.685 on the C3 index early in the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 955,
+  "source_path": "reports/baltic/dry/2024/2024-04-05_bulk-report-week-14_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capes started the week off slowly but gradually gained momentum. Despite decent cargo volumes, particularly in the Pacific, the C5 index experienced a 50-cent drop, settling at $9.640 as the week got under way.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "all",
+        "drop"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A rather staggered week for the sector with both holidays at the beginning and the end of the week. The North Atlantic failed to materialize with very limited fresh enquiry being seen and a plentiful supply of tonnage.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "india",
+        "singapore",
+        "japan",
+        "dwt",
+        "redelivery",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather negative week overall for the Ultramax and Supramax sizes with little fresh enquiry appearing in most areas. In the Atlantic, the US Gulf in particular suffered with little excitement pushing rates down further.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "south",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 270,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry",
+      "parent_id": "baltic_dry_2024-04-05_2024_04_05_bulk_report_week_14_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In a week punctuated with holidays, visible activity was muted and negative sentiment shrouded the Handysize market in both basins. Across the Continent and the Mediterranean, levels remained stable, with a 28,000-dwt fixing from Casablanca to Koper in the low teens with a cargo of fertilizer and some premium business loading in the Russian Baltic was also rumored to have been fixed on 33,000-dwt in the low $20,000's to West Africa but further details were not yet available.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

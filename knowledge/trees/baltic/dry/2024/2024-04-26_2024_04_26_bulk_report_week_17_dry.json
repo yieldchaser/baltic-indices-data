@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__root",
+  "doc_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 17",
+  "section_path": [
+    "Bulk report - Week 17"
+  ],
+  "section_path_text": "Bulk report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market endured a challenging week, marked by persistent negativity across both the Pacific and Atlantic regions. The week commenced sluggishly, with the BCI 5TC dropping by $1,133 on Monday, setting a negative tone. Conditions generally deteriorated in both regions, with decreased rates and limited activity, reflecting softer market sentiment.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "coal"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 910,
+  "source_path": "reports/baltic/dry/2024/2024-04-26_bulk-report-week-17_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market endured a challenging week, marked by persistent negativity across both the Pacific and Atlantic regions. The week commenced sluggishly, with the BCI 5TC dropping by $1,133 on Monday, setting a negative tone.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "activity",
+        "bci",
+        "both",
+        "course"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market began the week in a bullish mood continuing the firm sentiment carrying on from the back of last week's push. EC South America lacked any momentum all week, and despite firmer rates exchanged for early arrivals the P6 window in general remained widely gapped and mostly flat.",
+      "keywords": [
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A solid week for the sector overall although as the week ended some felt that a ceiling had been reached from the US Gulf and South Atlantic arenas. From Asia, there was a good amount of fresh enquiry from South East Asia with a plentiful supply of Indonesian coal and nickel ore cargoes.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "coal",
+        "dwt",
+        "fixed",
+        "asia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 268,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2024-04-26_2024_04_26_bulk_report_week_17_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Visible activity was muted across the Handysize sector, with a mixed week in the Atlantic as the Pacific showed more promise. In the Mediterranean, cargo availability has reduced, and negative sentiment has crept into the region, with a 37,000-dwt fixing from the Turkish Mediterranean to the US Gulf in the mid-teens and another 37,000-dwt fixed passing Cape Matapan via Iskenderun to the Caribbean with a cargo of clinker at $14,000 example of the lower levels.",
+      "keywords": [
+        "capesize",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

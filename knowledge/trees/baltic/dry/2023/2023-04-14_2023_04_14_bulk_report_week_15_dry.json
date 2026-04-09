@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__root",
+  "doc_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 15",
+  "section_path": [
+    "Bulk report - Week 15"
+  ],
+  "section_path_text": "Bulk report - Week 15",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nWeather factors in the Pacific this week threatened to disrupt activity from West Australia to China. However, other than Port Hedland closing on Thursday, there was a steady flow of fixing which resulted in a rather volatile week. Several vessels were fixed by the middle of the week from East Coast Australia to China with coal, which offered support to the market at the time.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 850,
+  "source_path": "reports/baltic/dry/2023/2023-04-14_bulk-report-week-15_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Weather factors in the Pacific this week threatened to disrupt activity from West Australia to China. However, other than Port Hedland closing on Thursday, there was a steady flow of fixing which resulted in a rather volatile week.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "In a week disrupted at both ends by Easter holidays, the market has lost ground and tonnage lists grew in both basins. Overall it was subdued in the Atlantic with Owners having to reduce offers to find cover.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "singapore",
+        "japan",
+        "grain",
+        "dwt",
+        "fixed",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 167,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With widespread holidays both at the beginning and end of the week it was a rather muted affair for the sector. The Atlantic remained rather positional with sentiment remaining relatively strong from the US Gulf and a tightness of larger vessels from the South Atlantic, but other areas lacked fresh impetus.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2023-04-14_2023_04_14_bulk_report_week_15_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In a short week bookended by holidays, visible activity remained limited. The Atlantic showed signs of positivity with brokers speaking of more enquiry in general.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "meg",
+        "japan",
+        "grain",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

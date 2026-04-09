@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry__root",
+  "doc_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 46 2015",
+  "section_path": [
+    "Bulk report - Week 46 2015"
+  ],
+  "section_path_text": "Bulk report - Week 46 2015",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe BDI moved closer to a record low leaving many wondering where it would end, but the BCI still has some way to go closing the week at 809. The West Australia/Qingdao rate closed out the week at $4.60 with BHP Billiton fixing a couple at this level for a Port Hedland/Qingdao cargo, a week ago this rate recorded gains and was over $5.00. Rio Tinto allegedly fixed a Dampier/Qingdao cargo at $4.60.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1318,
+  "source_path": "reports/baltic/dry/2015/2015_bulk-report-week462015_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry",
+      "parent_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The BDI moved closer to a record low leaving many wondering where it would end, but the BCI still has some way to go closing the week at 809. The West Australia/Qingdao rate closed out the week at $4.60 with BHP Billiton fixing a couple at this level for a Port Hedland/Qingdao cargo, a week ago this rate recorded gains and was over $5.00.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "europe",
+        "but",
+        "cargo",
+        "fixed",
+        "was",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 301,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry",
+      "parent_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates were down in all areas of the market with most suggesting it was difficult to find a tunnel let alone a light at the end of it. Those in ballast from Southeast Asia and the Indian Ocean area faced failing rates for South America cargoes, with the rate for a 76,000-tonner giving passing the Cape of Good Hope delivery dropping to the low $6,000 daily range and around $170,000 daily.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "daily",
+        "tonner"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 352,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry",
+      "parent_id": "baltic_dry_2015-11-13_2015_bulk_report_week462015_dry__root",
+      "title": "Supramax / handysize",
+      "section_path": [
+        "Supramax / handysize"
+      ],
+      "section_path_text": "Supramax / handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another week of negative numbers on the supramax and handy index. Some period was being discussed with one 55,486-dwt vessel securing $6,000 daily for 10-14 months delivery Singapore.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 651,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

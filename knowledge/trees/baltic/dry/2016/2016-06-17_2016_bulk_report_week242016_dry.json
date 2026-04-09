@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_dry_2016-06-17_2016_bulk_report_week242016_dry__root",
+  "doc_id": "baltic_dry_2016-06-17_2016_bulk_report_week242016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 24 2016",
+  "section_path": [
+    "Bulk report - Week 24 2016"
+  ],
+  "section_path_text": "Bulk report - Week 24 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nSimply too many ships with rates again falling in the Pacific and Atlantic basins. Bunker values paid a part in the drop and this in spite of considerable activity from all the major players in West Australia. Here rates dropped below $5.00 with the West Australia/China rate at $4.70 - and that after six to eight ships were fixed just on Thursday.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1139,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week242016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-06-17_2016_bulk_report_week242016_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-06-17_2016_bulk_report_week242016_dry",
+      "parent_id": "baltic_dry_2016-06-17_2016_bulk_report_week242016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Simply too many ships with rates again falling in the Pacific and Atlantic basins. Bunker values paid a part in the drop and this in spite of considerable activity from all the major players in West Australia.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "but",
+        "drop"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 258,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-06-17_2016_bulk_report_week242016_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-06-17_2016_bulk_report_week242016_dry",
+      "parent_id": "baltic_dry_2016-06-17_2016_bulk_report_week242016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Transaltantic rates came under pressure as post panamaxes discounted rates to fix with one vessel open Continent for a US Gulf or east coast South American round at $3,000 daily. There remained the expectation of fresh activity from the US Gulf, but this remained piecemeal.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 874,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

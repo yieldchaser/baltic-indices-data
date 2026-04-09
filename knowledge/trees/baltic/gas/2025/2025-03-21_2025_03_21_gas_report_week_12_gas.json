@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-03-21_2025_03_21_gas_report_week_12_gas__root",
+  "doc_id": "baltic_gas_2025-03-21_2025_03_21_gas_report_week_12_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 12",
+  "section_path": [
+    "Gas report - Week 12"
+  ],
+  "section_path_text": "Gas report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market continued trending upwards this week, with gains made in both the Pacific and Atlantic Basins, and as well as gains seen on the longer term timecharter markets. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels saw an increase of $7,100, reaching $27,900 per day. 160k cbm vessels gained $6,200 settling at $18,400 per day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "gas",
+    "per",
+    "cbm",
+    "vessels",
+    "day"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 489,
+  "source_path": "reports/baltic/gas/2025/2025-03-21_gas-report-week-12_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-03-21_2025_03_21_gas_report_week_12_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-03-21_2025_03_21_gas_report_week_12_gas",
+      "parent_id": "baltic_gas_2025-03-21_2025_03_21_gas_report_week_12_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market continued trending upwards this week, with gains made in both the Pacific and Atlantic Basins, and as well as gains seen on the longer term timecharter markets. On the BLNG1 Gladstone-Tokyo route, 174k cbm vessels saw an increase of $7,100, reaching $27,900 per day.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "europe",
+        "gas",
+        "per",
+        "cbm",
+        "vessels"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 302,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-03-21_2025_03_21_gas_report_week_12_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-03-21_2025_03_21_gas_report_week_12_gas",
+      "parent_id": "baltic_gas_2025-03-21_2025_03_21_gas_report_week_12_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There has been a certain upturn in rates in the VLGC sector this week with April fixing is reported as firm. In the MEG for BLPG1 Ras Tanura-Chiba a climb of $6.828 gave a final Baltic assessment price of $60.333.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "gas",
+        "earning",
+        "tce",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 181,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

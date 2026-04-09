@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-08-09_2024_08_09_gas_report_week_32_gas__root",
+  "doc_id": "baltic_gas_2024-08-09_2024_08_09_gas_report_week_32_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 32",
+  "section_path": [
+    "Gas report - Week 32"
+  ],
+  "section_path_text": "Gas report - Week 32",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe Pacific market has further pulled away this week against the Atlantic. 2-stroke 174kCBM tonnage continue to be short supply in the Asia region and the BLNG1-174 index rose by $11,000 at $87,800, while the BLNG1-160 saw an increase of $9,000 to $70,000. Both the BLNG2-160 and BLNG174 moved up about $1,000-1,500 closing at $58,800 and $75,500 respectively for the trans-Atlantic movement.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "meg",
+    "japan",
+    "gas",
+    "earning",
+    "kcbm",
+    "tce",
+    "being"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 399,
+  "source_path": "reports/baltic/gas/2024/2024-08-09_gas-report-week-32_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-08-09_2024_08_09_gas_report_week_32_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-08-09_2024_08_09_gas_report_week_32_gas",
+      "parent_id": "baltic_gas_2024-08-09_2024_08_09_gas_report_week_32_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Pacific market has further pulled away this week against the Atlantic. 2-stroke 174kCBM tonnage continue to be short supply in the Asia region and the BLNG1-174 index rose by $11,000 at $87,800, while the BLNG1-160 saw an increase of $9,000 to $70,000.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "japan",
+        "gas",
+        "kcbm",
+        "moved",
+        "rose"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-08-09_2024_08_09_gas_report_week_32_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-08-09_2024_08_09_gas_report_week_32_gas",
+      "parent_id": "baltic_gas_2024-08-09_2024_08_09_gas_report_week_32_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The quiet weeks continue overall for LPG, with rates falling a little again. Over in the MEG for BLPG1 Ras Tanura-Chiba a dip of $5.75 gave a final Baltic assessment price of $40.917 following a couple of fixtures reported at the $40 level.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "gas",
+        "earning",
+        "tce",
+        "being"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

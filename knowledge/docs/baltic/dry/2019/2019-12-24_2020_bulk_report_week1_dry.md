@@ -36,6 +36,7 @@ regions:
 - europe
 - india
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2020/2020_bulk-report-week1_dry.html

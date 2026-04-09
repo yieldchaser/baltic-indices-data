@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__root",
+  "doc_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 14",
+  "section_path": [
+    "Bulk report - Week 14"
+  ],
+  "section_path_text": "Bulk report - Week 14",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market over the past week looked to have found a floor on Tuesday with the BCI 5TC at $3460 before firming into the rest of the week, ending at $4881. Iron ore cargo trades from West Australia to China dominated early week business, while the Atlantic basin became active mid-week. A slim but constant trickle of business was heard out of Brazil heading to China, but details were hard to confirm.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 901,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week14_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market over the past week looked to have found a floor on Tuesday with the BCI 5TC at $3460 before firming into the rest of the week, ending at $4881. Iron ore cargo trades from West Australia to China dominated early week business, while the Atlantic basin became active mid-week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "japan",
+        "iron_ore",
+        "business"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Overall a relatively flat week, with a healthy volume of fixing. The Pacific has been heavily reliant on Indian coal demand for support.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "coal",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a poor week overall for the Baltic Supramax Index (BSI), which lost ground. Period activity was limited, a 61,000dwt ship open Vietnam for mid-April was fixed one option, one year's trading, at $11,500 and $12,500 respectively.",
+      "keywords": [
+        "supramax",
+        "china",
+        "australia",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 261,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry",
+      "parent_id": "baltic_dry_2019-04-05_2019_bulk_report_week14_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Baltic Handysize Index (BHSI) started to fall when it moved along to April, after having a good March, with all rates staying in the positive territory. Most of the index routes lost ground last week with key areas like the US Gulf and East Coast South America softening throughout the week.",
+      "keywords": [
+        "handysize",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "was",
+        "dwt",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

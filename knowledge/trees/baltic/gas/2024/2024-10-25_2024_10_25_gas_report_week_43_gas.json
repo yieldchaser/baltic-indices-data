@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-10-25_2024_10_25_gas_report_week_43_gas__root",
+  "doc_id": "baltic_gas_2024-10-25_2024_10_25_gas_report_week_43_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 43",
+  "section_path": [
+    "Gas report - Week 43"
+  ],
+  "section_path_text": "Gas report - Week 43",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nBearish winter rates are hampering brokers wishes for a rebound prior the end of Q4. With fixtures reported but at ever lower rates there is very little optimism in the LNG Spot market. Both ships and all three routes dropped again with some of the levels published the lowest this year.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "japan",
+    "gas",
+    "cbm",
+    "dropped",
+    "published",
+    "daily",
+    "fell",
+    "gave"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 515,
+  "source_path": "reports/baltic/gas/2024/2024-10-25_gas-report-week-43_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-10-25_2024_10_25_gas_report_week_43_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-10-25_2024_10_25_gas_report_week_43_gas",
+      "parent_id": "baltic_gas_2024-10-25_2024_10_25_gas_report_week_43_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Bearish winter rates are hampering brokers wishes for a rebound prior the end of Q4. With fixtures reported but at ever lower rates there is very little optimism in the LNG Spot market.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "cbm",
+        "dropped",
+        "published",
+        "stroke",
+        "tfde"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 318,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-10-25_2024_10_25_gas_report_week_43_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-10-25_2024_10_25_gas_report_week_43_gas",
+      "parent_id": "baltic_gas_2024-10-25_2024_10_25_gas_report_week_43_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "For BLPG1 Ras Tanura-Chiba, there have been some fixtures reported in the market, but the sentiment has still been riding lower. Rates have fallen again, though they have begun to stabilise with the end of the week remaining completely flat.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "daily",
+        "tce",
+        "blpg3",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

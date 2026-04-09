@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__root",
+  "doc_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 47",
+  "section_path": [
+    "Bulk report - Week 47"
+  ],
+  "section_path_text": "Bulk report - Week 47",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market was a mixed bag this week as routes ebbed and flowed giving little clear direction for traders. The market carried through positive sentiment from the prior week, yet was unable to sustain gains on the 5TC by midweek and bounced by close on Friday as the 5TC settled at $32,393, up $2455 week on week. Weather concerns earlier in the week disrupted tonnage schedules coming from North Asia, which put pressure on the routes in the region.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 925,
+  "source_path": "reports/baltic/dry/2021/2021-11-26_bulk-report-week-47_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market was a mixed bag this week as routes ebbed and flowed giving little clear direction for traders. The market carried through positive sentiment from the prior week, yet was unable to sustain gains on the 5TC by midweek and bounced by close on Friday as the 5TC settled at $32,393, up $2455 week on week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "settled",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market witnessed an impressive rebound this week gaining back the losses experienced last week. The market ended the week on a more solid footing.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "india",
+        "singapore",
+        "japan",
+        "via",
+        "was",
+        "achieving"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Sentiment changed direction after last week's falls, albeit slightly tempered, as brokers said better levels and activity levels were seen from Asia. Whilst demand returned from the US Gulf in the Atlantic, other areas remained subdued.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 230,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2021-11-26_2021_11_26_bulk_report_week_47_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The continuous drop of the BHSI ended this week with the resurgent Asia Markets turning the tide. Despite a holiday in Japan, we have seen more activity with a 38,000-dwt rumoured to have been fixed for a trip from Japan to the Continent at $20,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 230,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

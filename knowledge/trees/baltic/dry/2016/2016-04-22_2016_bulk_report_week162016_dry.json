@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_dry_2016-04-22_2016_bulk_report_week162016_dry__root",
+  "doc_id": "baltic_dry_2016-04-22_2016_bulk_report_week162016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 16 2016",
+  "section_path": [
+    "Bulk report - Week 16 2016"
+  ],
+  "section_path_text": "Bulk report - Week 16 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA busy end to the week with rates again firming after a mid-week drop. The key Australian shippers have largely been active, beginning briskly, stepping back mid-week and then a late burst today. West Australia/China rates culminated at a rumoured $4.60 with Rio Tinto for 170,000 tonnes 10% from Dampier to Qingdao, allegedly paying this level and FMG reported at $4.50 for a 160,000 tonne 10% cargo from Port Hedland to Qingdao.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1363,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week162016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-04-22_2016_bulk_report_week162016_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-04-22_2016_bulk_report_week162016_dry",
+      "parent_id": "baltic_dry_2016-04-22_2016_bulk_report_week162016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A busy end to the week with rates again firming after a mid-week drop. The key Australian shippers have largely been active, beginning briskly, stepping back mid-week and then a late burst today.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "built",
+        "but",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 360,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-04-22_2016_bulk_report_week162016_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-04-22_2016_bulk_report_week162016_dry",
+      "parent_id": "baltic_dry_2016-04-22_2016_bulk_report_week162016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "South American rates have eased as charterers seemingly cleared out earlier May cargoes with most hoping for a fresh batch for later May/June positions to absorb the ballasters heading to Brazil/Argentina. Rates dipped with a super eco 2015-built 81,000 tonner fixed for a 10-20 May cargo from east coast South America to the East at $7,800 daily plus a $280,000 bonus.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 996,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

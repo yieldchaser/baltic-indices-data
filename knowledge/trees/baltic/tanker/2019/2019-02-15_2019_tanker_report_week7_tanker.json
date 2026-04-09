@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__root",
+  "doc_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 7",
+  "section_path": [
+    "Tanker report - Week 7"
+  ],
+  "section_path_text": "Tanker report - Week 7",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nA significant uptick in US Gulf enquiry saw rates to South Korea rise $1.1 million to $6.65 million. This positivity filtered through to the Middle East Gulf, with 270,000mt to South Korea fixed at WS 47.5, up almost seven points from the previous week. Similarly, in West Africa, Petroineos took DHT tonnage at WS 49.5, a seven point gain from earlier in the week.",
+  "keywords": [
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points",
+    "east",
+    "gulf",
+    "saw"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 433,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week7_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker",
+      "parent_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A significant uptick in US Gulf enquiry saw rates to South Korea rise $1.1 million to $6.65 million. This positivity filtered through to the Middle East Gulf, with 270,000mt to South Korea fixed at WS 47.5, up almost seven points from the previous week.",
+      "keywords": [
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf",
+        "korea",
+        "seven",
+        "south",
+        "week."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 93,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker",
+      "parent_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa rates held at WS 67.5, while Black Sea/Mediterranean rates for 135,000mt dropped five points to WS 85/87.5, with Turkish Straits delays continuing to reduce.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "africa",
+        "black",
+        "continuing",
+        "delays",
+        "dropped",
+        "five"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 46,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker",
+      "parent_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a disappointing week for owners as rates continued to decline. 80,000mt cargoes from the East Mediterranean fixed at WS 90, while a long voyage to Portugal went at WS 77.5.",
+      "keywords": [
+        "europe",
+        "points",
+        "cargoes",
+        "sea",
+        "was",
+        "bad",
+        "benefitted",
+        "black"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 143,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker",
+      "parent_id": "baltic_tanker_2019-02-15_2019_tanker_report_week7_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Rates for 75,000mt Middle East Gulf/Japan rose 7.5 points to WS 127.5, with 55,000mt losing 7.5 points to WS 112.5. A busier week saw rates nudge up 10 points to around WS 145 for 37,000mt Continent/USAC, before easing to WS 140.",
+      "keywords": [
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "saw",
+        "active",
+        "almost"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 138,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

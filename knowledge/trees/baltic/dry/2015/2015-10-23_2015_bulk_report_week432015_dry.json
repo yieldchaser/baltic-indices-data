@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__root",
+  "doc_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 43 2015",
+  "section_path": [
+    "Bulk report - Week 43 2015"
+  ],
+  "section_path_text": "Bulk report - Week 43 2015",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA stalled week for the big ships with signs the market was set to firm but not in essence fulfilled. A more active Brazil market combined with increased volume from West Australia resulted in some gains but as the week closed out the market faltered. Rates for 170,000 tonne 10% cargoes from West Australia to China recovered and held over $5.00 but failed to move beyond $5.25 and then slipped to $5.10.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1105,
+  "source_path": "reports/baltic/dry/2015/2015_bulk-report-week432015_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry",
+      "parent_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A stalled week for the big ships with signs the market was set to firm but not in essence fulfilled. A more active Brazil market combined with increased volume from West Australia resulted in some gains but as the week closed out the market faltered.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "but",
+        "november",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 297,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry",
+      "parent_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "In the Atlantic there was a touch more business quoted as the week drew to a close, but so far this has not translated into improved rates. The US Gulf/China run remained essentially slow with rates for modern tonnage hovering around $12,500 daily plus a $250,000 bonus.",
+      "keywords": [
+        "capesize",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "atlantic",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 369,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__s03_supramax",
+      "doc_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry",
+      "parent_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Little activity from the Continent this week with reports of a 48,000 dwt being covered at $8,000 daily region for a trip from north Spain to West Africa. Still slow from the Black Sea although the Miletus 2009 built 58,729 dwt was fixed basis delivery Marmara for a trip via Black Sea redelivery Singapore-Japan at $11,000 daily.",
+      "keywords": [
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "singapore",
+        "japan",
+        "dwt",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__s04_handysize",
+      "doc_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry",
+      "parent_id": "baltic_dry_2015-10-23_2015_bulk_report_week432015_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Unsurprisingly this market remained tight lipped brokers said. The Eden Bay 2008 built 28,342 dwt fixed at a standard $8,000 basis delivery Recalada for a trip to West Africa with Western Bulk Carriers with 38,000 dwt vessels being concluded at around the $8,000s for trips from east coast South America to Mediterranean region.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "west_africa",
+        "europe",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

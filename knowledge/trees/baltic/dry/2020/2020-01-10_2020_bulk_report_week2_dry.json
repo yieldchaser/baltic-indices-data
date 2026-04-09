@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__root",
+  "doc_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 2",
+  "section_path": [
+    "Bulk report - Week 2"
+  ],
+  "section_path_text": "Bulk report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nClosing out the first full trading week of 2020, the Capesize market is struggling to gain any solid positive upward traction. Opening the week at $10,825, the Capesize 5TC fell away to $9,020, before staging a small rally to close Friday at $9,438. The Pacific Basin fared much worse than the Atlantic, voyage rates were under strong pressure earlier on, with owners coming close to zero on earnings.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 988,
+  "source_path": "reports/baltic/dry/2020/2020_bulk-report-week2_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Closing out the first full trading week of 2020, the Capesize market is struggling to gain any solid positive upward traction. Opening the week at $10,825, the Capesize 5TC fell away to $9,020, before staging a small rally to close Friday at $9,438.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "owners",
+        "close",
+        "closing",
+        "friday"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "An active week with healthy volumes of fixing, particularly in the Atlantic, with East Coast South America grain demand for end January/beginning February shipment dates supporting the market here. There was limited transatlantic activity, but at the start of the week an 82,000dwt ship was able to achieve $12,000 for a trip via the Baltic to the Continent.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "grain",
+        "was",
+        "dwt",
+        "ship"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 252,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A dramatic difference from this time last year, with the Baltic Supramax Index (BSI) closing the first week at 570, whilst in 2019 it was 946. Many said the Atlantic remained uninspiring.",
+      "keywords": [
+        "supramax",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 253,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry",
+      "parent_id": "baltic_dry_2020-01-10_2020_bulk_report_week2_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "First week back for many was not inspiring, with rates in many areas under negative pressure. The Baltic Handysize Index (BHSI) started the week at 443 to close at 408.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "india",
+        "japan",
+        "dwt",
+        "was",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 258,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

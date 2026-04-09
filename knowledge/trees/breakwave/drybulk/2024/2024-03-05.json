@@ -1,0 +1,90 @@
+{
+  "node_id": "breakwave_drybulk_2024-03-05__root",
+  "doc_id": "breakwave_drybulk_2024-03-05",
+  "parent_id": null,
+  "title": "BDRY - March 5, 2024",
+  "section_path": [
+    "BDRY - March 5, 2024"
+  ],
+  "section_path_text": "BDRY - March 5, 2024",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "As spot price records fall one after another, sentiment in dry bulk is reaching new highs - With February average Iron ore inventories back to average levels, as spot prices take a hit - With Chinese port iron ore inventories hitting Our long-term view - The last few years have been characterized by increased geopolitical uncertainty.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "china",
+    "brazil",
+    "australia",
+    "iron_ore",
+    "coal",
+    "grain",
+    "steel",
+    "yoy",
+    "ytd",
+    "average"
+  ],
+  "page_start": 1,
+  "page_end": 2,
+  "token_count": 366,
+  "source_path": "reports/drybulk/2024/2024-03-05_Breakwave_Dry_Bulk.pdf",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "breakwave_drybulk_2024-03-05__s01_overview",
+      "doc_id": "breakwave_drybulk_2024-03-05",
+      "parent_id": "breakwave_drybulk_2024-03-05__root",
+      "title": "Overview",
+      "section_path": [
+        "Overview"
+      ],
+      "section_path_text": "Overview",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "- As spot price records fall one after another, sentiment in dry bulk is reaching new highs - With February average\n- Iron ore inventories back to average levels, as spot prices take a hit - With Chinese port iron ore inventories hitting\n- Our long-term view - The last few years have been characterized by increased geopolitical uncertainty.",
+      "keywords": [
+        "china",
+        "iron_ore",
+        "average",
+        "inventories",
+        "iron",
+        "ore",
+        "after",
+        "another"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "token_count": 70,
+      "section_type": "overview",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_drybulk_2024-03-05__s02_fundamentals",
+      "doc_id": "breakwave_drybulk_2024-03-05",
+      "parent_id": "breakwave_drybulk_2024-03-05__root",
+      "title": "Fundamentals",
+      "section_path": [
+        "Fundamentals"
+      ],
+      "section_path_text": "Fundamentals",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "- China Steel Production (YTD: 1019mt, YOY: 0.6%)\n- China Steel Inventories (YTD: 8.1mt, YOY: -3.7%)\n- China Iron Ore Inventories (YTD: 135mt, YOY: -4.6%)\n- China Iron Ore Imports (YTD: 1181mt, YOY: 6.6%)\n- China Coal Imports (YTD: 474mt, YOY: 61.8%)\n- China Soybean Imports (YTD: 102mt, YOY: 11.6%)\n- Brazil Iron Ore Exports (YTD: 408mt, YOY: 10.6%)\n- Australia Iron Ore Exports (YTD: 901mt, YOY: 1.5%)\n- Dry Bulk Fleet (YTD: 1006dwt, YOY: 3.1%)\n- Baltic Dry Index Average (YTD: Baltic Dry Index, Average, YOY: 1,661)\n- Capesize Spot Rates Average (YTD: Capesize Spot Rates, Average, YOY: 21,622)\n- Panamax Spot Rates Average (YTD: Panamax Spot rates, Average, YOY: 12,932)",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "iron_ore",
+        "coal",
+        "grain"
+      ],
+      "page_start": 2,
+      "page_end": 2,
+      "token_count": 291,
+      "section_type": "fundamentals",
+      "children": []
+    }
+  ]
+}

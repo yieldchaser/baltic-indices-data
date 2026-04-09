@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__root",
+  "doc_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 34",
+  "section_path": [
+    "Bulk report - Week 34"
+  ],
+  "section_path_text": "Bulk report - Week 34",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week saw a strong and consistent upward trend in the Capesize market, with the Baltic 5TC index rising from $21,510 on Monday to settle at $23,645 by Friday. In the Pacific, activity was buoyed by the participation of all the major miners and an increase in coal demand from Australia, driving the C5 index up, despite a slight correction on Thursday. The Atlantic market, while initially quieter, gained momentum midweek, supported by stronger fixtures from South Brazil, West Africa to the Far East, and a notable Transatlantic fixture.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 808,
+  "source_path": "reports/baltic/dry/2024/2024-08-23_bulk-report-week-34_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry",
+      "parent_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week saw a strong and consistent upward trend in the Capesize market, with the Baltic 5TC index rising from $21,510 on Monday to settle at $23,645 by Friday. In the Pacific, activity was buoyed by the participation of all the major miners and an increase in coal demand from Australia, driving the C5 index up, despite a slight correction on Thursday.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 160,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry",
+      "parent_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week, the Panamax market experienced a continuous downward trend, with the Panamax timecharter average (P5TC) falling from $13,970 on Monday to $12,724 at the end of the week. The summer holidays contributed to a quiet start and despite more activity in the Pacific, the overall weakness in both the North and South Atlantic led to further drops in the overall index as the market struggled to find support reflecting the ongoing imbalance between supply and demand.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "pacific",
+        "europe",
+        "was",
+        "activity",
+        "but",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry",
+      "parent_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another convoluted week for the sector that again could be described as positional. From the Atlantic the only bright area was the US Gulf, which saw demand return and tonnage availability becoming a bit restricted.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry",
+      "parent_id": "baltic_dry_2024-08-23_2024_08_23_bulk_report_week_34_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Generally, a steady week, although some areas had softer undertones. The Continent-Mediterranean was described as positional as rates hovered around last done.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "mediterranean",
+        "was",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 161,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__root",
+  "doc_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 23",
+  "section_path": [
+    "Tanker report - Week 23"
+  ],
+  "section_path_text": "Tanker report - Week 23",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nRates have been shaved just a point or two over the course of the week, with 270,000mt from the Middle East Gulf to China now at WS 38. US Gulf discharge was being assessed, with 280,000mt at WS 17-18 level basis Cape to Cape and 260,000mt West Africa to China at WS 39.5. Meanwhile, an oil-major reportedly fixed 280,000mt from Hound Point to South Korea at $4.35m.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "crude_oil"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 569,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week23_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker",
+      "parent_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates have been shaved just a point or two over the course of the week, with 270,000mt from the Middle East Gulf to China now at WS 38. US Gulf discharge was being assessed, with 280,000mt at WS 17-18 level basis Cape to Cape and 260,000mt West Africa to China at WS 39.5.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "crude_oil",
+        "gulf",
+        "cape"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 125,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker",
+      "parent_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa Suezmax rates gained this week, up 15 points to WS 70 region, basis 130,000mt, for discharge in the UK-Continent range. Petrogal fixed Angola to Portugal at WS 72, while Philadelphia discharge went at WS 68.75.",
+      "keywords": [
+        "suezmax",
+        "west_africa",
+        "europe",
+        "basis",
+        "discharge",
+        "gained",
+        "mediterranean",
+        "mt."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 113,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker",
+      "parent_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Excess tonnage availability saw rates for 80,000mt, Ceyhan to Mediterranean, drop WS 10 points, with BP fixing at WS 105. The market remains under significant pressure, with ENI fixing Sidi Kerir to Italy on Kronviken at WS 85.",
+      "keywords": [
+        "europe",
+        "fixing",
+        "around",
+        "availability",
+        "between",
+        "ceyhan",
+        "cross",
+        "discharge."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 115,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker",
+      "parent_id": "baltic_tanker_2019-06-07_2019_tanker_report_week23_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Rates for 75,000mt from the Middle East Gulf to Japan were flat at WS 105 to 107.5, alongside the 55,000mt voyages holding at WS 117.5. The biggest movers this week, albeit downwards, were transatlantic MRs.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "down",
+        "continent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

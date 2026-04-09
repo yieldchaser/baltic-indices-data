@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-11-07_2025_11_07_gas_report_week_45_gas__root",
+  "doc_id": "baltic_gas_2025-11-07_2025_11_07_gas_report_week_45_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 45",
+  "section_path": [
+    "Gas report - Week 45"
+  ],
+  "section_path_text": "Gas report - Week 45",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market continued to firm this week, supported by persistently tight tonnage and steady enquiry across both basins. Limited vessel availability, particularly in the Atlantic, has helped maintain upward momentum. On the BLNG1 Australia-Japan route, 174k cbm vessels gained $2,400 to $45,400 per day, while 160k cbm tonnage rose $1,900 to $28,800 per day, with sentiment remaining firm as prompt positions tighten further.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "day",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 476,
+  "source_path": "reports/baltic/gas/2025/2025-11-07_gas-report-week-45_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-11-07_2025_11_07_gas_report_week_45_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-11-07_2025_11_07_gas_report_week_45_gas",
+      "parent_id": "baltic_gas_2025-11-07_2025_11_07_gas_report_week_45_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market continued to firm this week, supported by persistently tight tonnage and steady enquiry across both basins. Limited vessel availability, particularly in the Atlantic, has helped maintain upward momentum.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 271,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-11-07_2025_11_07_gas_report_week_45_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-11-07_2025_11_07_gas_report_week_45_gas",
+      "parent_id": "baltic_gas_2025-11-07_2025_11_07_gas_report_week_45_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market continued to firm this week, with sentiment supported by tightening vessel availability in both basins and sustained fixing activity in the West. Despite a quieter pace of enquiries in the East, overall momentum remains positive as November progresses.",
+      "keywords": [
+        "lpg",
+        "pacific",
+        "gas",
+        "per",
+        "metric",
+        "route",
+        "tonne",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 199,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__root",
+  "doc_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 37",
+  "section_path": [
+    "Tanker report - Week 37"
+  ],
+  "section_path_text": "Tanker report - Week 37",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nLR2\nMEG LR2s made gains this week, with the rate for TC1 (75Kt MEG/Japan) recovering 4 points to WS126.11 (about $24,500 per day round-trip TCE) while the rate for 90kt MEG/UK-Continent (TC20) climbed over $264,500 to $4,280,000. In the West of Suez region, the Mediterranean/East LR2s (TC15) was a little more subtle, only climbing $13,000 to $2,866,667. LR1\nIn the MEG, LR1s going East had similar energy with the 55kt MEG/Japan index of TC5 rising 9 points to WS149.06 (A TCE of a little over $20,000 per day round trip) while the 65kt MEG/UK-Continent of TC8 climbed almost $157,000 to $3,685,500 (or 56.70 $/mt).",
+  "keywords": [
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1271,
+  "source_path": "reports/baltic/tanker/2024/2024-09-13_tanker-report-week-37_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker",
+      "parent_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LR2\nMEG LR2s made gains this week, with the rate for TC1 (75Kt MEG/Japan) recovering 4 points to WS126.11 (about $24,500 per day round-trip TCE) while the rate for 90kt MEG/UK-Continent (TC20) climbed over $264,500 to $4,280,000. In the West of Suez region, the Mediterranean/East LR2s (TC15) was a little more subtle, only climbing $13,000 to $2,866,667.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 596,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker",
+      "parent_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The VLCC market continued to firm this week, with gains made in all sectors - however, certainly in the Atlantic, the market seems to have peaked (vessel availability being key here). The 270,000 mt Middle East Gulf to China trip climbed 4.5 points week-on-week to WS54.15 which gives a daily round-trip TCE of $32,754 basis the Baltic Exchange's vessel description.",
+      "keywords": [
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "tce",
+        "climbed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker",
+      "parent_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Suezmax owners in all regions have stemmed the tide of the falling market. In West Africa, the 130,000 mt Nigeria/UK Continent voyage eased 1 point to WS78.47 (a daily round-trip TCE of $27,181 which is actually over $500 per day more than a week ago).",
+      "keywords": [
+        "suezmax",
+        "meg",
+        "west_africa",
+        "europe",
+        "daily",
+        "day",
+        "per",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker",
+      "parent_id": "baltic_tanker_2024-09-13_2024_09_13_tanker_report_week_37_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the North Sea, the rate for the 80,000mt Cross-UK Continent was 1.5 points softer, settling at WS115 (translating to a daily round-trip TCE of $22,072 basis Hound Point to Wilhelmshaven). In the Mediterranean market, the rate for 80,000mt Cross-Mediterranean had recovered by 20 points on Thursday to WS120 (basis Ceyhan to Lavera, that shows a daily round trip TCE of $25,982).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "tce",
+        "basis",
+        "route",
+        "continent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

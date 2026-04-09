@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas__root",
+  "doc_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 48",
+  "section_path": [
+    "Gas report - Week 48"
+  ],
+  "section_path_text": "Gas report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nAnother week with rates softening on the spot. The delays mentioned last week concerning Freeports reopening has had significant ramifications on the availability of spot tonnage. In a change of pace from earlier in the year, whereby spot requirement were high but tonnage was low, the lack of available cargoes and charterers reassessing the bearish sentiment has meant that levels have fallen yet again.",
+  "keywords": [
+    "capesize",
+    "lng",
+    "lpg",
+    "meg",
+    "europe",
+    "india",
+    "crude_oil",
+    "gas",
+    "are",
+    "had",
+    "levels",
+    "again"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 436,
+  "source_path": "reports/baltic/gas/2022/2022-12-02_gas-report-week-48_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas__s01_lng",
+      "doc_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas",
+      "parent_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Another week with rates softening on the spot. The delays mentioned last week concerning Freeports reopening has had significant ramifications on the availability of spot tonnage.",
+      "keywords": [
+        "europe",
+        "crude_oil",
+        "levels",
+        "fallen",
+        "period",
+        "remains",
+        "year",
+        "active"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 176,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas__s02_lpg",
+      "doc_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas",
+      "parent_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has changed pace again with further rises on all three Baltic routes. The highs that saw slight corrections in the previous week have again been broken.",
+      "keywords": [
+        "capesize",
+        "lpg",
+        "meg",
+        "india",
+        "gas",
+        "again",
+        "are",
+        "going"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

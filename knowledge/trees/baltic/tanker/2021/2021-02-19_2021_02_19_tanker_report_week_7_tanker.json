@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__root",
+  "doc_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 7",
+  "section_path": [
+    "Tanker report - Week 7"
+  ],
+  "section_path_text": "Tanker report - Week 7",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nAnother stagnant week in this market with Worldscale fixing rates improving by less than a point. In the Middle East region, 280,000mt to US Gulf via the Cape/Cape routing continues to be assessed at around WS18.5 level and rates for China are hovering around WS32.5/33 on the back of another week of minimal fixing. In the Atlantic, 260,000mt West Africa to China was rated half a point up from last week at a fraction above WS35.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 725,
+  "source_path": "reports/baltic/tanker/2021/2021-02-19_tanker-report-week-7_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker",
+      "parent_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Another stagnant week in this market with Worldscale fixing rates improving by less than a point. In the Middle East region, 280,000mt to US Gulf via the Cape/Cape routing continues to be assessed at around WS18.5 level and rates for China are hovering around WS32.5/33 on the back of another week of minimal fixing.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "us_gulf",
+        "another",
+        "around",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 159,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker",
+      "parent_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Black Sea/Med rates have improved 3.5 points to WS73/74 level, most likely on the back of a firming med Aframax market, while rates for 130,000mt Nigeria/UK-Continent showed a similar gain to around WS56/57. Basrah/Mediterranean remains at about WS18-19 basis 140,000mt.",
+      "keywords": [
+        "aframax",
+        "europe",
+        "around",
+        "back",
+        "basis",
+        "basrah/mediterranean",
+        "black",
+        "firming"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 78,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker",
+      "parent_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "This week's boom sector in the West, due not least in part to poor weather. The Mediterranean market has been rampaging this week with 80,000mt Ceyhan/Lavera up 45 points to WS120 (basis a round voyage, about $16,800/day TCE).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "level",
+        "mediterranean",
+        "not",
+        "albeit"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 174,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker",
+      "parent_id": "baltic_tanker_2021-02-19_2021_02_19_tanker_report_week_7_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It has been another uneventful week for LR tonnage where Middle East Gulf/Japan remained relatively static in the low WS60's. But by week end it was closer to WS65, whilst LR1's rates were in the WS80/82.5 region.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 301,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

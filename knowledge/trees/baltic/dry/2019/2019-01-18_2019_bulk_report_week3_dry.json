@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__root",
+  "doc_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 3",
+  "section_path": [
+    "Bulk report - Week 3"
+  ],
+  "section_path_text": "Bulk report - Week 3",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA positive end to a week that saw rates on the West Australia/China run slip below $6.00, as charterers faced a plentiful supply of tonnage. Rates below $6.00 prompted resistance, and after a clear out of tonnage, rates climbed back over $6.00 finishing the week in the upper $6.00s. Timecharter rates slipped under $10,000 daily for 180,000 tonners, but recovered ground, with a 2010 vessel fixing from CJK for an east Australia/India run at $12,000 with an option of China at $13,000.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1061,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week3_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry",
+      "parent_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A positive end to a week that saw rates on the West Australia/China run slip below $6.00, as charterers faced a plentiful supply of tonnage. Rates below $6.00 prompted resistance, and after a clear out of tonnage, rates climbed back over $6.00 finishing the week in the upper $6.00s.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "india",
+        "run",
+        "tonnage",
+        "below"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry",
+      "parent_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It was a difficult week for most owners, with rates under pressure everywhere. The North Atlantic suffered from a growing tonnage profile, with ballasters also competing for business.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "grain",
+        "around",
+        "ballast",
+        "bonus"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry",
+      "parent_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Since the last week, the Baltic Supramax Index (BSI) has lost over 10 percent in value, with all routes losing ground, especially in the Atlantic for prompt positions, where tonnage supply outweighed demand. There was limited discussion on period activity this week, but an Ultramax open Chittagong was rumoured to have fixed an Index-linked period.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 256,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry",
+      "parent_id": "baltic_dry_2019-01-18_2019_bulk_report_week3_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Baltic Handysize Index (BHSI) continued to fall, with rates dropping in both basins. East Coast South America remained under pressure, with the HS3 route for 38,000 tonnes coming closer to the low recorded in early June 2018.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "coal",
+        "booked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 326,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

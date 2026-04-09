@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__root",
+  "doc_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 35",
+  "section_path": [
+    "Bulk report - Week 35"
+  ],
+  "section_path_text": "Bulk report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market observed a shortened trading week due to the public holiday in the UK on Monday and another in Singapore on Friday. Trading in the Pacific region displayed consistent volumes throughout the week. The presence of all three major players led to a slightly optimistic market sentiment earlier in the week, but this positivity did not significantly impact rates on C5, which saw only a minor increase.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 942,
+  "source_path": "reports/baltic/dry/2023/2023-09-01_bulk-report-week-35_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market observed a shortened trading week due to the public holiday in the UK on Monday and another in Singapore on Friday. Trading in the Pacific region displayed consistent volumes throughout the week.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "bids",
+        "did",
+        "holiday"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market opened the week on a firm footing, but we ended with rates slowly eroding, particularly in the Atlantic as pressure was applied all week with a basic lack of demand, especially for the Transatlantic trades. South America front haul trips started brightly but activity fizzled out as the week progressed, with several deals concluding mid-week basis delivery India at $16,000.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "but",
+        "delivery",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Gains were seen this week across the Atlantic as demand increased and limited tonnage availability was evident. The Black Sea region was especially active with a 61,000-dwt fixing from Eregli via the Black Sea to Singapore-Japan range at $20,500.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 253,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry",
+      "parent_id": "baltic_dry_2023-09-01_2023_09_01_bulk_report_week_35_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handy sector has remained positive, with the Atlantic seeing the biggest gains. In the Black Sea, a 35,000-dwt was fixed passing Canakkale via Constantza to Jebel Ali at $10,000 whilst a 34,000-dwt fixed from Otranto via Constantza to Morocco at $12,000.",
+      "keywords": [
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 257,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

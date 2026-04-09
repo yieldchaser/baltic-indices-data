@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__root",
+  "doc_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 17",
+  "section_path": [
+    "Bulk report - Week 17"
+  ],
+  "section_path_text": "Bulk report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market is showing no signs of easing as rates continued to ascend this week reaching record highs for the 5TC average at $40,608. To be reminded of when these levels were last reached, the Capesize market traded under the 4TC routes and it was late Q3 2013. This week a stronger lift was realised from the trans Pacific C10 moving up $7,988 to $40,692, while the trans Atlantic C8 remains the premium-paying basin gaining $5,150 to $42,600.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 936,
+  "source_path": "reports/baltic/dry/2021/2021-04-30_bulk-report-week-17_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market is showing no signs of easing as rates continued to ascend this week reaching record highs for the 5TC average at $40,608. To be reminded of when these levels were last reached, the Capesize market traded under the 4TC routes and it was late Q3 2013.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "steel",
+        "demand",
+        "may"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A lethargic start to the week in the Atlantic as the Panamax market saw little in way of trans-Atlantic enquiry, the north appeared mainly fronthaul centric with strong grain and mineral demand from NC South America and US Gulf. Some APS load port trans-Atlantic fixtures reported Monday/Tuesday but a sudden push midweek - with suggestions of a possible FFA/Cape correlated influence - appeared to level off Thursday as we approached the long weekend with various upcoming holidays.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "us_gulf",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The main focus during the early part of the week was in the Asian market, where rates still maintained healthy levels. In the Atlantic, demand appeared to ease due to limited fresh enquiry, which was perhaps a consequence of the impending holidays in both the U.K and Asia next week.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "india",
+        "coal",
+        "dwt",
+        "fixing",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2021-04-30_2021_04_30_bulk_report_week_17_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Asia markets made large upward moves this week, which some brokers felt was due to a lack of available tonnage. The Atlantic showed signs of stalling, with impending holidays in parts of Europe being a possible reason.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixed",
+        "was",
+        "asia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

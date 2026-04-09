@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-03-22_2024_03_22_gas_report_week_12_gas__root",
+  "doc_id": "baltic_gas_2024-03-22_2024_03_22_gas_report_week_12_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 12",
+  "section_path": [
+    "Gas report - Week 12"
+  ],
+  "section_path_text": "Gas report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nA relatively stable week for the LNG in terms of freight both the 174cbm and 160cbm indexes moved in unison with the Atlantic picking up on both BLNG2 and BLNG3 while in the Pacific levels fell. Some interesting news from the LNG world is that once again LNG imports into Japan fell, export levels from the US also dropped while China saw an increase of up to 20% for the first two months of the year compared to the same period last year. How this will affect freight going forward will remain to be seen but the landscape of LNG is beginning to change for shipping players.",
+  "keywords": [
+    "capesize",
+    "lng",
+    "lpg",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "europe",
+    "japan",
+    "gas",
+    "both",
+    "close"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 600,
+  "source_path": "reports/baltic/gas/2024/2024-03-22_gas-report-week-12_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-03-22_2024_03_22_gas_report_week_12_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-03-22_2024_03_22_gas_report_week_12_gas",
+      "parent_id": "baltic_gas_2024-03-22_2024_03_22_gas_report_week_12_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A relatively stable week for the LNG in terms of freight both the 174cbm and 160cbm indexes moved in unison with the Atlantic picking up on both BLNG2 and BLNG3 while in the Pacific levels fell. Some interesting news from the LNG world is that once again LNG imports into Japan fell, export levels from the US also dropped while China saw an increase of up to 20% for the first two months of the year compared to the same period last year.",
+      "keywords": [
+        "capesize",
+        "lng",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 366,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-03-22_2024_03_22_gas_report_week_12_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-03-22_2024_03_22_gas_report_week_12_gas",
+      "parent_id": "baltic_gas_2024-03-22_2024_03_22_gas_report_week_12_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A very quiet week in the AG for fixing, with one reported fixture by ATC at $78 at the start of the week sentiment fell off quite significantly since then with rates falling from the high of $79 to close at $66.857 (a drop of $12.143). Little enquiry and more ships looking at the lower earnings in the States might lengthen the tonnage list as well.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "close",
+        "earnings",
+        "tce",
+        "very"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

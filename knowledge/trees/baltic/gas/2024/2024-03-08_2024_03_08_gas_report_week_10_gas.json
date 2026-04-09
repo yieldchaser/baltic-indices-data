@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-03-08_2024_03_08_gas_report_week_10_gas__root",
+  "doc_id": "baltic_gas_2024-03-08_2024_03_08_gas_report_week_10_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 10",
+  "section_path": [
+    "Gas report - Week 10"
+  ],
+  "section_path_text": "Gas report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nA quiet week for the LNG market, at least in terms of spot fixing. With few reported fixtures around either basin the spot price has languished staying particularly flat, BLNG2-174 moved only $75 on the week overall. Rates are close to the bottom and brokers are looking at more period focused deals to fill their quotas, with ballas bonus back to the hub only in the Pacific and the just back on the cusp of back to loadport in the Atlantic there isn't much impetus for the market to shift quickly.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "japan",
+    "gas",
+    "close",
+    "moved",
+    "only",
+    "back",
+    "daily"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 539,
+  "source_path": "reports/baltic/gas/2024/2024-03-08_gas-report-week-10_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-03-08_2024_03_08_gas_report_week_10_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-03-08_2024_03_08_gas_report_week_10_gas",
+      "parent_id": "baltic_gas_2024-03-08_2024_03_08_gas_report_week_10_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A quiet week for the LNG market, at least in terms of spot fixing. With few reported fixtures around either basin the spot price has languished staying particularly flat, BLNG2-174 moved only $75 on the week overall.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "japan",
+        "gas",
+        "moved",
+        "back",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 311,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-03-08_2024_03_08_gas_report_week_10_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-03-08_2024_03_08_gas_report_week_10_gas",
+      "parent_id": "baltic_gas_2024-03-08_2024_03_08_gas_report_week_10_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Many people from the LPG market have been in Tokyo for the LPG Conference this week, which has helped in keeping the AG market quiet. Rates were steady/flat across the week with a stable tonnage list if quiet cargo sheet.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "gas",
+        "daily",
+        "earning",
+        "equivalent",
+        "tce",
+        "list"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__root",
+  "doc_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 4",
+  "section_path": [
+    "Bulk report - Week 4"
+  ],
+  "section_path_text": "Bulk report - Week 4",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market endured heavy losses throughout the past week, with the Capesize 5TC dropping from $8,352 to $4,772. In the lead up to Chinese New Year it became quickly evident positions had been managed the week before leaving only minimal loose ends to be tied up. Activity levels were never going to be anywhere near enough to counter an over-tonnaged Asia region.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 913,
+  "source_path": "reports/baltic/dry/2020/2020_bulk-report-week4_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry",
+      "parent_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market endured heavy losses throughout the past week, with the Capesize 5TC dropping from $8,352 to $4,772. In the lead up to Chinese New Year it became quickly evident positions had been managed the week before leaving only minimal loose ends to be tied up.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "cargoes",
+        "close",
+        "dropping"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry",
+      "parent_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates continued to slide all week with hopes of the market finding a bottom, but some very low trades were still witnessed. The Pacific began the week relatively active, but as Asian holidays approached, the market slowed significantly towards the weekend.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "coal",
+        "was",
+        "dwt",
+        "east",
+        "ballast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry",
+      "parent_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Despite a good level of cargo enquiry, the shear amount of prompt tonnage kept rates in check throughout the week. Chinese New Year celebrations also kept activity levels low from the Asian Basin.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt",
+        "ship"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry",
+      "parent_id": "baltic_dry_2020-01-24_2020_bulk_report_week4_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "There was generally more Handysize tonnage appearing in both basins throughout the week. Together with other routes, East Coast South America also started to show weakening signs, with the Baltic Handysize Index (BHSI) remaining in negative territory.",
+      "keywords": [
+        "handysize",
+        "china",
+        "pacific",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "was",
+        "coast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

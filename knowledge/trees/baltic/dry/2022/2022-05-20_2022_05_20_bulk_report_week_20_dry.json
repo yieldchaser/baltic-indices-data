@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__root",
+  "doc_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 20",
+  "section_path": [
+    "Bulk report - Week 20"
+  ],
+  "section_path_text": "Bulk report - Week 20",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market began the week at the summit of the recent rally. This necessitated a breather before sentiment strengthened, helping it to push up throughout the week and marking new highs for the year. The Capesize 5TC rose +$4,805 over the week to close at $37,538.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 949,
+  "source_path": "reports/baltic/dry/2022/2022-05-20_bulk-report-week-20_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market began the week at the summit of the recent rally. This necessitated a breather before sentiment strengthened, helping it to push up throughout the week and marking new highs for the year.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "meg",
+        "europe",
+        "region",
+        "all"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 244,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A flat ending to the week for the Panamax market, with a major shipping function in the west and Asian holidays ultimately impacting markets despite market fundamentals appearing largely positive. The Atlantic saw steady support from the grain trades over the week.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "japan",
+        "coal",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Like the other sectors, a split market appeared during the course of the week and the Atlantic slowed down as many travelled to Denmark. By contrast, after the Singapore holiday on Monday, positive sentiment gained as more enquiry came into play.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "singapore",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2022-05-20_2022_05_20_bulk_report_week_20_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of limited activity with holidays and the Danish Shipbrokers event, resulting in a split market as the Atlantic softened across all areas. The biggest drops came in the US Gulf, where a 35,000-dwt open in Puerto Rico fixed a trip to Morocco at around $30,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "us_gulf",
+        "gas",
+        "dwt",
+        "fixed",
+        "open",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 248,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

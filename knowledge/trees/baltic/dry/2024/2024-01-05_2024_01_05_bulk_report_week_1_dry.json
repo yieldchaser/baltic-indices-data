@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__root",
+  "doc_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 1",
+  "section_path": [
+    "Bulk report - Week 1"
+  ],
+  "section_path_text": "Bulk report - Week 1",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week the capsize market has been marked by a mix of activities and challenges. Despite a slow start following the Christmas and New Year break, the Pacific market saw two active miners, contributing to a somewhat optimistic sentiment initially. However, reports of a derailment in Western Australia introduced an element of uncertainty, leading to a decline initially of approximately $1.00-$1.20 on C5 at the beginning of the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 976,
+  "source_path": "reports/baltic/dry/2024/2024-01-05_bulk-report-week-1_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry",
+      "parent_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week the capsize market has been marked by a mix of activities and challenges. Despite a slow start following the Christmas and New Year break, the Pacific market saw two active miners, contributing to a somewhat optimistic sentiment initially.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "activity",
+        "today",
+        "was",
+        "approximately"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 289,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry",
+      "parent_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Following the Christmas holiday, the Panamax market began sedately across the board, followed by rates coming under pressure from the outset. Downward pressure emanated primarily from a build-up of tonnage, unfixed over the festive period but also from a lack of demand in both basins all week, forcing cheaper levels to be conceded by owners.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "atlantic",
+        "meg",
+        "us_gulf",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry",
+      "parent_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Not surprisingly it was a rather muted start to the New Year after the widespread holidays. The Atlantic remained rather sluggish in the South with limited fresh enquiry appearing and a good amount of prompt tonnage available.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry",
+      "parent_id": "baltic_dry_2024-01-05_2024_01_05_bulk_report_week_1_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "After recent holidays, the Atlantic market witnessed large corrections on BHSI this week, with cargo availability limited across the region. On the continent, a 32,000-dwt was fixed basis delivery in Rouen for a trip to Morocco with grains at $11,000, whilst in the Mediterranean a 35,000-dwt fixed from Safi to EC South America at $7,000 and a 38,000-dwt was rumoured to have fixed from Alexandria to Bilbao with an intended cargo of steels at $11,000.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "steel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

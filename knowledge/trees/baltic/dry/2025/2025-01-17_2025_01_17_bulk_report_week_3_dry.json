@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__root",
+  "doc_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 3",
+  "section_path": [
+    "Bulk report - Week 3"
+  ],
+  "section_path_text": "Bulk report - Week 3",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a mixed week, beginning strongly before losing ground as the days progressed. Monday saw the BCI 5TC rise to $13,391, driven by a pickup in Pacific activity and tightening tonnage in the North Atlantic. The Pacific market showed signs of recovery with increased miner activity and improved fixtures, narrowing the earnings gap between C3 and C5 routes.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 901,
+  "source_path": "reports/baltic/dry/2025/2025-01-17_bulk-report-week-3_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a mixed week, beginning strongly before losing ground as the days progressed. Monday saw the BCI 5TC rise to $13,391, driven by a pickup in Pacific activity and tightening tonnage in the North Atlantic.",
+      "keywords": [
+        "capesize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "activity",
+        "bci",
+        "between",
+        "end"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market experienced a mixed and volatile week. After a slow start, there were signs of recovery by mid-week, only for activity to taper off again as the week closed.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "pacific",
+        "grain",
+        "dwt",
+        "north",
+        "period"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The general malaise in the sector continued throughout the week as limited fresh enquiry appeared, and prompt tonnage remained readily available. Rates across the board slid down further as charterers remained in the driving seat.",
+      "keywords": [
+        "china",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "fixing",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 252,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2025-01-17_2025_01_17_bulk_report_week_3_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Another challenging week for the sector with rates in both the Atlantic and Pacific regions facing continued downward pressure. The Continent and Mediterranean market also remained under pressure due to insufficient support, there was a noticeable shortage of scrap cargoes and a lack of eastbound trips from the Black Sea, resulting in rates slightly lower than previous levels.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "steel",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

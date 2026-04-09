@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry__root",
+  "doc_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 49 2015",
+  "section_path": [
+    "Bulk report - Week 49 2015"
+  ],
+  "section_path_text": "Bulk report - Week 49 2015",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA typical end to the week with little fresh enquiry, but talk of FMG fixing Australia to China at $4.20, although others have suggested possibly a lower level. This was a shade over $5.00 at the start of the week. Brazil/China similarly lost a little value during the week, but some brokers were suggesting perhaps the Atlantic was bottoming out.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1190,
+  "source_path": "reports/baltic/dry/2015/2015_bulk-report-week492015_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry",
+      "parent_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A typical end to the week with little fresh enquiry, but talk of FMG fixing Australia to China at $4.20, although others have suggested possibly a lower level. This was a shade over $5.00 at the start of the week.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "blt",
+        "but",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry",
+      "parent_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Still a downward trend over the week across the board with a stagnant feel in the Atlantic basin and easing in the Pacific, with owners trying to secure cover in the build up to the Christmas and New Year break. Generally very little period activity, the highlight of the week seemed to be a 75,491 dwt 2011 built in the East being fixed for four to eight months trading at $5,150 daily.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 433,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry",
+      "parent_id": "baltic_dry_2015-12-04_2015_bulk_report_week492015_dry__root",
+      "title": "Supramax / handysize",
+      "section_path": [
+        "Supramax / handysize"
+      ],
+      "section_path_text": "Supramax / handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "December started off on low note with brokers continuing to talk about too many ships and not enough cargoes but various port delays helping a tad. The BSI time charter average closed at $4,917 yesterday which coincides this week with a Mitsui 56 fixing for eight months charter at $5,000, probably the lowest we have seen this year.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "china",
+        "australia",
+        "meg",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 535,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

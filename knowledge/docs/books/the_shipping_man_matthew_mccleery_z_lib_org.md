@@ -43,6 +43,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 2
 signals: {}
 source: book
 source_path: reports/The Shipping Man (Matthew McCleery) (z-lib.org).pdf

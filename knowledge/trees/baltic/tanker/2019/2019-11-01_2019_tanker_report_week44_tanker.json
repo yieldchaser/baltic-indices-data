@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__root",
+  "doc_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 44",
+  "section_path": [
+    "Tanker report - Week 44"
+  ],
+  "section_path_text": "Tanker report - Week 44",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nAn increase in fixture activity saw rates slide again, as supply of tonnage still outweighs demand. 270,000mt Middle East Gulf to China is last assessed at WS 90, down five points for the week. 280,000mt Middle East Gulf to US Gulf basis Cape to Cape has fallen similarly to WS 55 level.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 492,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week44_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker",
+      "parent_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "An increase in fixture activity saw rates slide again, as supply of tonnage still outweighs demand. 270,000mt Middle East Gulf to China is last assessed at WS 90, down five points for the week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf",
+        "cape"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 116,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker",
+      "parent_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 130,000mt West Africa to UK Continent have plummeted another 30 points this week to WS 115, but still haven't found the floor. 135,000mt Black Sea to the Mediterranean has taken a shallower dive of about 15 points, to WS 145-147.5 level.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "points",
+        "level.",
+        "mediterranean",
+        "africa",
+        "another",
+        "basrah"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 94,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker",
+      "parent_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates in the Mediterranean have continued their slide, with 80,000mt Ceyhan to the Mediterranean losing another 20 points to WS 105 level. In the 80,000mt North Sea to UK Continent trade rates were driven down another 40 points to WS 100, while 100,000mt Baltic to UK Continent received the same treatment, settling at WS 85.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "mediterranean",
+        "points",
+        "another",
+        "continent",
+        "down"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 129,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker",
+      "parent_id": "baltic_tanker_2019-11-01_2019_tanker_report_week44_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A very slow week in the 75,000mt Arabian Gulf to Japan trade has seen rates drift down around 20 points, with the market assessed now in high WS 150s. The LR1s lost five points with 55,000mt being fixed at WS 152.5.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "trade",
+        "continent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

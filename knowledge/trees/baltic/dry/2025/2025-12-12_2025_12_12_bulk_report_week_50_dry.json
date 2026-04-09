@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__root",
+  "doc_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 50",
+  "section_path": [
+    "Bulk report - Week 50"
+  ],
+  "section_path_text": "Bulk report - Week 50",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market closed the week firmly on a softer footing, with sentiment deteriorating steadily across both basins despite pockets of activity. The BCI 5TC lost significant ground, sliding from $41,571 to end the week at $30,731, reflecting mounting rate pressure as the week progressed. The Pacific offered the only glimpses of resilience, with miners active on most days and occasional tender cargoes generating modest interest.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 814,
+  "source_path": "reports/baltic/dry/2025/2025-12-12_bulk-report-week-50_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market closed the week firmly on a softer footing, with sentiment deteriorating steadily across both basins despite pockets of activity. The BCI 5TC lost significant ground, sliding from $41,571 to end the week at $30,731, reflecting mounting rate pressure as the week progressed.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "both",
+        "ground",
+        "high"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 204,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week began with soft sentiment and limited activity, particularly in the Atlantic, as charterers continued to test lower rate levels. Asia remained under pressure with growing prompt tonnage and cautious bidding, while period activity stayed subdued throughout.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "coal",
+        "activity",
+        "prompt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 148,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall sentiment remained weak, although some felt that there were pockets of activity giving a rather positional feel. Within the Atlantic, a split occurred whilst there still seemed to be demand for US Gulf trans-Atlantic business, fronthaul demand waned.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 238,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2025-12-12_2025_12_12_bulk_report_week_50_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It has been a challenging week for the sector, with both Atlantic and Pacific markets experiencing persistent downward pressure on rates. The Continent and Mediterranean remained subdued, with limited activity and levels edging slightly below those seen previously.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "singapore",
+        "japan",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

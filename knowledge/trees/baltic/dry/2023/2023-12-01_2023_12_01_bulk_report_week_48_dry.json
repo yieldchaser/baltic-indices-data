@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__root",
+  "doc_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 48",
+  "section_path": [
+    "Bulk report - Week 48"
+  ],
+  "section_path_text": "Bulk report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week has been exceptional for the capesize market, consistently gaining traction. The Pacific market kicked off the week with strong momentum, with all the major players from West Australia to China actively participating. The Atlantic witnessed a notable uptick, prompting owners to favour ballasting towards this region.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 925,
+  "source_path": "reports/baltic/dry/2023/2023-12-01_bulk-report-week-48_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week has been exceptional for the capesize market, consistently gaining traction. The Pacific market kicked off the week with strong momentum, with all the major players from West Australia to China actively participating.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "notable"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Whilst not as spectacular as the capesize market, the recent bull continued in the Panamax market this week, yielding solid gains for the owners. The North Atlantic was driven by tonnage shortage hindered by severe weather delays, consequently authentic trans-Atlantic rounds were seen concluded several times towards the upper $28,000s.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "india",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A strong week for the sector as a lack of prompt tonnage in areas such as the US Gulf and Mediterranean fueled positive momentum with the knock-on effect of seeing charterers sourcing tonnage further afield. From Asia, a slightly less turbulent week, although as the week closed rates and demand were seemingly pushing up with better numbers being achieved.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 259,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry",
+      "parent_id": "baltic_dry_2023-12-01_2023_12_01_bulk_report_week_48_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Unlike the larger sisters, the Handysize sector had a rather calmer feel, certainly from Asia where cargo and tonnage levels remained finely balanced. That said, as the week closed owners' expectations were on the rise and looking forward there was a more positive feel.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "steel",
+        "delivery",
+        "dwt",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

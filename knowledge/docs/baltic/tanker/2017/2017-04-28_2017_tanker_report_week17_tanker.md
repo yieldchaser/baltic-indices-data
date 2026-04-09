@@ -37,6 +37,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 5
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2017/2017_tanker-report-week17_tanker.html

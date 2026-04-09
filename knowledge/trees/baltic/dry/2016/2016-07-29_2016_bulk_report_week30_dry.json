@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__root",
+  "doc_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 30",
+  "section_path": [
+    "Bulk Report - Week 30"
+  ],
+  "section_path_text": "Bulk Report - Week 30",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA gloomy week for the big ships with rates falling significantly in the past week. BHP Billiton fixed three cargoes on Thursday for 18 August onwards with one at $3.85, 3.95 and $4.00 on the key West Australia/China run. Rio Tinto allegedly had tonnage today at $3.85.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1390,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week30_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry",
+      "parent_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A gloomy week for the big ships with rates falling significantly in the past week. BHP Billiton fixed three cargoes on Thursday for 18 August onwards with one at $3.85, 3.95 and $4.00 on the key West Australia/China run.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "coal",
+        "cargo",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 282,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry",
+      "parent_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A disappointing week after the promise last week with rates falling across the board. Ongoing South American exports continued to play a prominent role in the market but here too rates slipped over the week, but sources said some new business was quoted late on.",
+      "keywords": [
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 334,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry",
+      "parent_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was one of the slowest weeks for some time and rates in most sectors went downhill. Brokers reported a general lack of requirement and as the market moves into August the fear of a continued slide is in the air.",
+      "keywords": [
+        "capesize",
+        "supramax",
+        "china",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 473,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry",
+      "parent_id": "baltic_dry_2016-07-29_2016_bulk_report_week30_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This sector held up the best in the last week of July. Most days witnessed an increase in four of the six index routes.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "atlantic",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 286,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

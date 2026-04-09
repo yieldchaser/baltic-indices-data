@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__root",
+  "doc_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 12",
+  "section_path": [
+    "Bulk report - Week 12"
+  ],
+  "section_path_text": "Bulk report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe big ships endured heavy losses last week extinguishing any hopes from the recent minor rally. Negative sentiment gained pace throughout the week, Cyclone Veronica developed in North-Western Australia prompting Port Hedland and Dampier to issue port closure notices, expected to last in-excess of 48 hours. Miners were largely absent through the latter part of the week, as route C5 traded sharply down to $5.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 946,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week12_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry",
+      "parent_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The big ships endured heavy losses last week extinguishing any hopes from the recent minor rally. Negative sentiment gained pace throughout the week, Cyclone Veronica developed in North-Western Australia prompting Port Hedland and Dampier to issue port closure notices, expected to last in-excess of 48 hours.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "bump",
+        "cargo",
+        "hours.",
+        "last"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry",
+      "parent_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There was a solid improvement in the Atlantic market this week driven mainly by activity for first half April from East Coast South America. With a shortening tonnage list, charterers have been forced to take tonnage from the Continent/Mediterranean to cover early stems, with rumours of a modern Kamsarmax fixing on subjects at $16,000 basis Gibraltar delivery, and multiple ships agreeing $15,250 plus $525,000 ballast bonus on an Arrival Pilot Station (APS) basis.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "south",
+        "north",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry",
+      "parent_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Baltic Supramax Index (BSI) gained ground during the week, with improved rates seen from key areas. There was limited period activity, but a 60,600dwt ship open Damman was rumoured fixed for a short period at $12,750.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry",
+      "parent_id": "baltic_dry_2019-03-22_2019_bulk_report_week12_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was a positive week for the Handysize market. East Coast South America saw strong demand, with very few prompt ships.",
+      "keywords": [
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 296,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

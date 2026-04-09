@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-06-27_2025_06_27_gas_report_week_26_gas__root",
+  "doc_id": "baltic_gas_2025-06-27_2025_06_27_gas_report_week_26_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 26",
+  "section_path": [
+    "Gas report - Week 26"
+  ],
+  "section_path_text": "Gas report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market had a week of mixed fortunes with rates for the 160K cbm and 174K cbm pushing up in the Pacific. Elsewhere rates seem to peak earlier in the week and are sliding down now. On the BLNG1 Australia-Japan route, rates improved by $11,000 per day for 174K cbm vessels to $44,000 per day, while 160K cbm ships rose $3,400 per day to $21,000 per day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "day",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 517,
+  "source_path": "reports/baltic/gas/2025/2025-06-27_gas-report-week-26_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-06-27_2025_06_27_gas_report_week_26_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-06-27_2025_06_27_gas_report_week_26_gas",
+      "parent_id": "baltic_gas_2025-06-27_2025_06_27_gas_report_week_26_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market had a week of mixed fortunes with rates for the 160K cbm and 174K cbm pushing up in the Pacific. Elsewhere rates seem to peak earlier in the week and are sliding down now.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 351,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-06-27_2025_06_27_gas_report_week_26_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-06-27_2025_06_27_gas_report_week_26_gas",
+      "parent_id": "baltic_gas_2025-06-27_2025_06_27_gas_report_week_26_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market showed signs of stability translating to modest drops in freight levels this week. The BLPG1 AG-Japan route saw a drop down of $6.25 to settle at $80.583 per metric ton, taking TCE earnings down by $5,365 to $66,638 per day.",
+      "keywords": [
+        "lpg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "per",
+        "day.",
+        "metric"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 160,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

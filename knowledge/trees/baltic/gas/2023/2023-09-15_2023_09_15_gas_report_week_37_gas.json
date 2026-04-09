@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-09-15_2023_09_15_gas_report_week_37_gas__root",
+  "doc_id": "baltic_gas_2023-09-15_2023_09_15_gas_report_week_37_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 37",
+  "section_path": [
+    "Gas report - Week 37"
+  ],
+  "section_path_text": "Gas report - Week 37",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nAfter a successful and well attended Gastech in Singapore the market has come back to life, refreshed and invigorated. Rates for all three routes saw good gains with the Atlantic showing a particular comeback, brokers have reported that in terms of activity the Atlantic is now catching up with the East. BLNG1g Aus-Japan saw $16,026 gained on the week brining up freight to $185,884 on a round trip basis.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "pacific",
+    "singapore",
+    "japan",
+    "gas",
+    "close",
+    "tce",
+    "cargoes",
+    "continued",
+    "earning"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 368,
+  "source_path": "reports/baltic/gas/2023/2023-09-15_gas-report-week-37_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-09-15_2023_09_15_gas_report_week_37_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-09-15_2023_09_15_gas_report_week_37_gas",
+      "parent_id": "baltic_gas_2023-09-15_2023_09_15_gas_report_week_37_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "After a successful and well attended Gastech in Singapore the market has come back to life, refreshed and invigorated. Rates for all three routes saw good gains with the Atlantic showing a particular comeback, brokers have reported that in terms of activity the Atlantic is now catching up with the East.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "japan",
+        "gas",
+        "gained",
+        "saw"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 166,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-09-15_2023_09_15_gas_report_week_37_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-09-15_2023_09_15_gas_report_week_37_gas",
+      "parent_id": "baltic_gas_2023-09-15_2023_09_15_gas_report_week_37_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has remained firm this week with BLPG1 Ras Tanura-Chiba rising $4 over the week to close at $155.429, giving a daily TCE earning of $144,676. A relatively tight tonnage list and continued cargoes being shown has kept levels high.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "close",
+        "tce",
+        "cargoes",
+        "earning",
+        "again"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

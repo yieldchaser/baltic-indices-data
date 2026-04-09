@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__root",
+  "doc_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 13",
+  "section_path": [
+    "Bulk report - Week 13"
+  ],
+  "section_path_text": "Bulk report - Week 13",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe first quarter of 2023 ended with a decline of $95 on the Capesize time charter average (5TC), pricing at $13,806 on the last day in March. This is about double in value compared with the start of the month. Brazil to Qingdao remained above $20 throughout the week and finally climbed to $21 on Friday, showing $15,150 on the China/Brazil round voyage.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 838,
+  "source_path": "reports/baltic/dry/2023/2023-03-31_bulk-report-week-13_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The first quarter of 2023 ended with a decline of $95 on the Capesize time charter average (5TC), pricing at $13,806 on the last day in March. This is about double in value compared with the start of the month.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "pacific",
+        "qingdao",
+        "start",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A volatile week for the Panamax market, with the market trend and direction altering its course. The Atlantic saw improved demand ex NC and EC South America with end April arrival dates experiencing enhanced rates midweek.",
+      "keywords": [
+        "panamax",
+        "china",
+        "brazil",
+        "atlantic",
+        "europe",
+        "grain",
+        "was",
+        "clean"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A poor week for the sector across most areas. The Atlantic saw little excitement with the US Gulf and South America seeing tonnage availability grow and limited fresh cargo appearing.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry",
+      "parent_id": "baltic_dry_2023-03-31_2023_03_31_bulk_report_week_13_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A subdued week in the handy sector saw minimal visible activity. In the US Gulf, levels had softened with a 37,000-dwt open in Port Everglades fixing basis delivery Norfolk for a trip to the UK-Ireland range with an intended cargo of grains at $13,750.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

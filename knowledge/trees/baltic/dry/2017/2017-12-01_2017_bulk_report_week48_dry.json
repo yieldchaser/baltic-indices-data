@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__root",
+  "doc_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 48",
+  "section_path": [
+    "Bulk report - Week 48"
+  ],
+  "section_path_text": "Bulk report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nWeather delays in China upsetting schedules fuelled further rate rises in the east, with the West Australia/China rate nudging US$10.00, a level not seen for about three years. A miner wanting prompt tonnage conceded US$12.50 as the week closed out, for a ship to make 4 December cancelling in Port Hedland. BHP Billiton paid US$9.90 for an 11-13 December 170,000-tonne 10% cargo from Port Hedland to Qingdao.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1294,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week48_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry",
+      "parent_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Weather delays in China upsetting schedules fuelled further rate rises in the east, with the West Australia/China rate nudging US$10.00, a level not seen for about three years. A miner wanting prompt tonnage conceded US$12.50 as the week closed out, for a ship to make 4 December cancelling in Port Hedland.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "cargo",
+        "december",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 376,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry",
+      "parent_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates finally improved this week, the significant gains in the cape market have been a major driving force in improving sentiment but also providing split cargoes in both the Atlantic and Pacific. Grain enquiry increased considerably which added to already healthy mineral demand, pushing up levels everywhere including east coast South America which had suffered the most recently.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "grain",
+        "around",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 262,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry",
+      "parent_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The US Gulf market picked up significantly with more activity reported since the mid-week. Rates improved for tonnage in east coast South America and the Pacific but remained weak on the Continent.",
+      "keywords": [
+        "china",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 408,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry",
+      "parent_id": "baltic_dry_2017-12-01_2017_bulk_report_week48_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The handy sector slowly recovered towards the end of the week. Rates pushed higher for supramax vessels in the Pacific and this had a positive impact on activity for east-bound handies.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "pacific",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

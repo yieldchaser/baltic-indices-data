@@ -34,6 +34,7 @@ regions:
 - india
 - us_gulf
 - singapore
+section_count: 5
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2016/2016_tanker-report-week212016_tanker.html

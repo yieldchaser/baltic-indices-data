@@ -1,0 +1,90 @@
+{
+  "node_id": "breakwave_drybulk_2022-03-15__root",
+  "doc_id": "breakwave_drybulk_2022-03-15",
+  "parent_id": null,
+  "title": "BDRY - March 15, 2022",
+  "section_path": [
+    "BDRY - March 15, 2022"
+  ],
+  "section_path_text": "BDRY - March 15, 2022",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Coal is driving the dry bulk market, but for how much longer? - Trade flows have clearly shifted in the coal market, The long-term dry bulk demand outlook is increasingly uncertain as China moves to secure coal supply - Dry bulk Dry bulk upcycle to continue in 2022 - Although the high level of volatility of 2021 might slow down, the dry bulk",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "china",
+    "brazil",
+    "australia",
+    "iron_ore",
+    "coal",
+    "grain",
+    "steel",
+    "yoy",
+    "ytd",
+    "average"
+  ],
+  "page_start": 1,
+  "page_end": 2,
+  "token_count": 372,
+  "source_path": "reports/drybulk/2022/2022-03-15_Breakwave_Dry_Bulk.pdf",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "breakwave_drybulk_2022-03-15__s01_overview",
+      "doc_id": "breakwave_drybulk_2022-03-15",
+      "parent_id": "breakwave_drybulk_2022-03-15__root",
+      "title": "Overview",
+      "section_path": [
+        "Overview"
+      ],
+      "section_path_text": "Overview",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "- Coal is driving the dry bulk market, but for how much longer? - Trade flows have clearly shifted in the coal market,\n- The long-term dry bulk demand outlook is increasingly uncertain as China moves to secure coal supply - Dry bulk\n- Dry bulk upcycle to continue in 2022 - Although the high level of volatility of 2021 might slow down, the dry bulk",
+      "keywords": [
+        "china",
+        "coal",
+        "although",
+        "but",
+        "clearly",
+        "continue",
+        "demand",
+        "down"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "token_count": 77,
+      "section_type": "overview",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_drybulk_2022-03-15__s02_fundamentals",
+      "doc_id": "breakwave_drybulk_2022-03-15",
+      "parent_id": "breakwave_drybulk_2022-03-15__root",
+      "title": "Fundamentals",
+      "section_path": [
+        "Fundamentals"
+      ],
+      "section_path_text": "Fundamentals",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "- China Steel Production (YTD: 1033mt, YOY: -1.9%)\n- China Steel Inventories (YTD: 9.2mt, YOY: -20.4%)\n- China Iron Ore Inventories (YTD: 157mt, YOY: 20.1%)\n- China Iron Ore Imports (YTD: 86mt, YOY: -11.0%)\n- China Coal Imports (YTD: 31mt, YOY: -20.8%)\n- China Soybean Imports (YTD: 9mt, YOY: 18.0%)\n- Brazil Iron Ore Exports (YTD: 19mt, YOY: -19.6%)\n- Australia Iron Ore Exports (YTD: 156mt, YOY: 6.9%)\n- Dry Bulk Fleet (YTD: 896dwt, YOY: 3.1%)\n- Baltic Dry Index Average (YTD: Baltic Dry Index, Average, YOY: 1,897)\n- Capesize Spot Rates Average (YTD: Capesize Spot Rates, Average, YOY: 13,929)\n- Panamax Spot Rates Average (YTD: Panamax Spot rates, Average, YOY: 20,458)",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "iron_ore",
+        "coal",
+        "grain"
+      ],
+      "page_start": 2,
+      "page_end": 2,
+      "token_count": 289,
+      "section_type": "fundamentals",
+      "children": []
+    }
+  ]
+}

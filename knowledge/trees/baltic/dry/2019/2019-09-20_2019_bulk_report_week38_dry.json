@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__root",
+  "doc_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 38",
+  "section_path": [
+    "Bulk report - Week 38"
+  ],
+  "section_path_text": "Bulk report - Week 38",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market trended down over this past week, breaking the market out of its upward trending range. While the market traded sideways at the beginning of this past week, it was unable to build any upward momentum and broke to the downside midweek. Brazil to China C3 opened the week at $25.89 to close out Friday at $23.705, while West Australia to China C5 opened at $10.923 to close at $9.145.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 914,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week38_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market trended down over this past week, breaking the market out of its upward trending range. While the market traded sideways at the beginning of this past week, it was unable to build any upward momentum and broke to the downside midweek.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "was",
+        "close",
+        "opened"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week began with small increases in the Atlantic indices, but this was soon reversed, and the losses accelerated as the week wore on. There was healthy fixing volume for both transatlantic and fronthaul trips, but the earlier tonnage was forced to reduce their offers to find cover.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "pacific",
+        "japan",
+        "was",
+        "but",
+        "delivery",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 171,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A mixed week overall for the Baltic Supramax Index (BSI), which started in negative mode but as the week closed the trend slowed. Limited period activity was reported, many waiting to see a clearer direction in the market.",
+      "keywords": [
+        "supramax",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2019-09-20_2019_bulk_report_week38_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Baltic Handysize Index (BHSI) stayed still at 691 for the first four days of the week and eventually improved a point by Friday. Overall the sentiment in the Atlantic remained positive, with East Coast South America slightly improving.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "steel",
+        "open",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 284,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

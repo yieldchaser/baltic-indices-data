@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__root",
+  "doc_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 29",
+  "section_path": [
+    "Bulk report - Week 29"
+  ],
+  "section_path_text": "Bulk report - Week 29",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe capesize market showed some resistance this week to recent losses as all routes saw a small uptick in value to end the week. With no particular improvement in fundamentals - and a relatively quiet fixing week - owners may have shown enough collective resilience to have turned the tide. A backwardated forward curve illustrating a capesize 5TC spot level from today of $25,085, down to Q4 at $17-18k, gives an indication of market confidence.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 895,
+  "source_path": "reports/baltic/dry/2020/2020-07-17_bulk-report-week-29_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The capesize market showed some resistance this week to recent losses as all routes saw a small uptick in value to end the week. With no particular improvement in fundamentals - and a relatively quiet fixing week - owners may have shown enough collective resilience to have turned the tide.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "may"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A muted week in the panamax market with rates easing in all areas as the week progressed. A vast difference of opinion built up on where the true values sat and consequently the bid/offer spread widened with fixing volumes down on the week.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "america",
+        "fixing",
+        "less",
+        "out",
+        "round"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Positive movement for the BSI again during the week. But as it ended, sentiment wavered from areas such as the US Gulf and east Mediterranean with limited fresh activity.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2020-07-17_2020_07_17_bulk_report_week_29_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "There was talk of higher numbers from the Continent and Mediterranean, with more activity reported in the second half of the week. Mediterranean the HS3 route from east coast South America climbed over $12,000 this week and is now at the highest point of the year.",
+      "keywords": [
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "steel",
+        "dwt",
+        "east",
+        "mediterranean"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

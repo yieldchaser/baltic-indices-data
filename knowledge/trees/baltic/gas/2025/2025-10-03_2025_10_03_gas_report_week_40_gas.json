@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-10-03_2025_10_03_gas_report_week_40_gas__root",
+  "doc_id": "baltic_gas_2025-10-03_2025_10_03_gas_report_week_40_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 40",
+  "section_path": [
+    "Gas report - Week 40"
+  ],
+  "section_path_text": "Gas report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nAnother week of trading sideways in the LNG market, with no real momentum being seen. Minimal gains were seen in the Atlantic for 174k cbm, but all other routes for both 174K and 160K vessels saw slight decreases. On the BLNG1 Australia-Japan route, 174k cbm earnings slipped $600 to $24,600 per day, while 160k vessels decreased $300 to $13,500 per day, reflecting limited Pacific demand and ample tonnage in the basin.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 474,
+  "source_path": "reports/baltic/gas/2025/2025-10-03_gas-report-week-40_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-10-03_2025_10_03_gas_report_week_40_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-10-03_2025_10_03_gas_report_week_40_gas",
+      "parent_id": "baltic_gas_2025-10-03_2025_10_03_gas_report_week_40_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Another week of trading sideways in the LNG market, with no real momentum being seen. Minimal gains were seen in the Atlantic for 174k cbm, but all other routes for both 174K and 160K vessels saw slight decreases.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 260,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-10-03_2025_10_03_gas_report_week_40_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-10-03_2025_10_03_gas_report_week_40_gas",
+      "parent_id": "baltic_gas_2025-10-03_2025_10_03_gas_report_week_40_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market had another slow week, due to the narrowing arb econs and the announcement of CP. With a long MEG position list and illiquid US FOBs, it led to another softening in the market.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "meg",
+        "gas",
+        "per",
+        "route",
+        "metric",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

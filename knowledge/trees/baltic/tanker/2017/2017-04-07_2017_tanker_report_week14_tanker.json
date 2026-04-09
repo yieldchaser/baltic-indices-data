@@ -1,0 +1,174 @@
+{
+  "node_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__root",
+  "doc_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 14",
+  "section_path": [
+    "Tanker report - Week 14"
+  ],
+  "section_path_text": "Tanker report - Week 14",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCCs\nIt has been a more encouraging week for owners in the Middle East Gulf. Healthy amounts of enquiry combined with a subsequent more bullish sentiment saw rates for 270,000 tonnes going east firming with short east initially being fixed at WS 52.5 for Thailand before an ex drydock vessel achieved WS 55 while China has now been fixed at WS 56.5 representing gains of around 10/11 WS points and brokers feel there is potential for further increases. Rates for 280,000 tonnes going west are now nudging WS 30 level basis cape/cape in contrast to the WS 25/26 of a week ago.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "meg",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1004,
+  "source_path": "reports/baltic/tanker/2017/2017_tanker-report-week14_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__s01_vlccs",
+      "doc_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker",
+      "parent_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__root",
+      "title": "VLCCs",
+      "section_path": [
+        "VLCCs"
+      ],
+      "section_path_text": "VLCCs",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It has been a more encouraging week for owners in the Middle East Gulf. Healthy amounts of enquiry combined with a subsequent more bullish sentiment saw rates for 270,000 tonnes going east firming with short east initially being fixed at WS 52.5 for Thailand before an ex drydock vessel achieved WS 55 while China has now been fixed at WS 56.5 representing gains of around 10/11 WS points and brokers feel there is potential for further increases.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "meg",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 338,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__s02_suezmaxes",
+      "doc_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker",
+      "parent_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__root",
+      "title": "Suezmaxes",
+      "section_path": [
+        "Suezmaxes"
+      ],
+      "section_path_text": "Suezmaxes",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa rates for 130,000 tonnes have been under downward pressure throughout the week. An active vlcc market combined with only limited enquiry for suezmaxes saw rates easing from around WS 87.5 to barely WS 80 for Europe discharge and a USAC trip is said to have gone at WS 75.",
+      "keywords": [
+        "vlcc",
+        "suezmax",
+        "west_africa",
+        "europe",
+        "basis",
+        "fixed",
+        "saw",
+        "tonnes"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 149,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__s03_aframaxes",
+      "doc_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker",
+      "parent_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__root",
+      "title": "Aframaxes",
+      "section_path": [
+        "Aframaxes"
+      ],
+      "section_path_text": "Aframaxes",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It has been a disappointing week for owners in the Mediterranean. Plentiful supply of tonnage has seen rates heading in only one direction.",
+      "keywords": [
+        "europe",
+        "tonnes",
+        "ago",
+        "discharge.",
+        "level.",
+        "low",
+        "trade",
+        "able"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__s04_panamaxes",
+      "doc_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker",
+      "parent_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__root",
+      "title": "Panamaxes",
+      "section_path": [
+        "Panamaxes"
+      ],
+      "section_path_text": "Panamaxes",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Limited activity for the panamaxes from both Continent and Med this week has seen rates ease marginally to settle at between WS 112.5/115 as a weak Caribs upcoast market led to a number of ballasters heading across.",
+      "keywords": [
+        "panamax",
+        "europe",
+        "across.",
+        "activity",
+        "ballasters",
+        "between",
+        "both",
+        "caribs"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 50,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__s05_clean",
+      "doc_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker",
+      "parent_id": "baltic_tanker_2017-04-07_2017_tanker_report_week14_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "In the Middle East Gulf, rates for 75,000 tonnes to Japan came under downward pressure and the market now sits at around WS 105 in contrast to the WS 112.5 of a week ago. It is a similar story for the LR1s with rates for 55,000 tonnes to Japan dropping away to WS 112.5 level, representing a loss of around 17.5 points over the week.",
+      "keywords": [
+        "panamax",
+        "vlcc",
+        "suezmax",
+        "aframax",
+        "meg",
+        "japan",
+        "tonnes",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

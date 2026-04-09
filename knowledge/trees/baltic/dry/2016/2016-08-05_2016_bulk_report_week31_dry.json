@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__root",
+  "doc_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 31",
+  "section_path": [
+    "Bulk Report - Week 31"
+  ],
+  "section_path_text": "Bulk Report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nAn active week from West Australia to China with at least 20 ships fixed but rates moving up just 20 cents so far to $4.00 for 170,000 tonne 10% cargoes from West Australia to China. One major earlier today fixed three cargoes from Dampier at $3.90 and then two cargoes fixed at $4.00. Timecharter trading was slow but sources today said with an up-tick in voyage rates owners were unlikely to look at any business under $6,000 daily.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1240,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week31_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "An active week from West Australia to China with at least 20 ships fixed but rates moving up just 20 cents so far to $4.00 for 170,000 tonne 10% cargoes from West Australia to China. One major earlier today fixed three cargoes from Dampier at $3.90 and then two cargoes fixed at $4.00.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "cargoes",
+        "fixed",
+        "was",
+        "today"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 287,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates drifted lower for most of the week although sources continued to hope for a floor in both basins. Long-talked of shipments from the US Gulf finally translated into action with August cargoes in the market and this the focus of activity.",
+      "keywords": [
+        "supramax",
+        "handysize",
+        "atlantic",
+        "us_gulf",
+        "japan",
+        "trading",
+        "but",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 244,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "From the Atlantic basin it was the US Gulf and east coast South America markets which suffered most from the summer malaise. Modern 55,000 dwt vessels were achieving $8,000 daily basis delivery the US Gulf redelivery Mediterranean and for trips with petcoke to India in the mid $12,000s.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 444,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry",
+      "parent_id": "baltic_dry_2016-08-05_2016_bulk_report_week31_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Atlantic activity as usual remained slightly under the radar. A 34,400 dwt was said fixed basis delivery US Gulf redelivery west coast Central America at $11,500 daily.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-11-29_2024_11_29_gas_report_week_48_gas__root",
+  "doc_id": "baltic_gas_2024-11-29_2024_11_29_gas_report_week_48_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 48",
+  "section_path": [
+    "Gas report - Week 48"
+  ],
+  "section_path_text": "Gas report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe recent uptick in spot market rates, particularly for the 174cbm vessels, can be attributed to a combination of increased cargo demand and a tightening tonnage supply. However, while this rate rally may offer some temporary optimism, it's important to note that these gains are coming from already low freight levels, which limits any cause for significant celebration. For the BLNG1 Aus-Japan route, rates for the 160cbm TFDE ships remained unchanged at $16,000.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "japan",
+    "gas",
+    "cbm",
+    "saw",
+    "route",
+    "cents"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 686,
+  "source_path": "reports/baltic/gas/2024/2024-11-29_gas-report-week-48_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-11-29_2024_11_29_gas_report_week_48_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-11-29_2024_11_29_gas_report_week_48_gas",
+      "parent_id": "baltic_gas_2024-11-29_2024_11_29_gas_report_week_48_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The recent uptick in spot market rates, particularly for the 174cbm vessels, can be attributed to a combination of increased cargo demand and a tightening tonnage supply. However, while this rate rally may offer some temporary optimism, it's important to note that these gains are coming from already low freight levels, which limits any cause for significant celebration.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "cbm",
+        "period",
+        "saw",
+        "gains",
+        "route"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 389,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-11-29_2024_11_29_gas_report_week_48_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-11-29_2024_11_29_gas_report_week_48_gas",
+      "parent_id": "baltic_gas_2024-11-29_2024_11_29_gas_report_week_48_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The first two decades of December have shown a notably quiet cargo stem list, signalling that the current low level of activity, along with flat rates, could persist through to Christmas. Only one or two fixtures from the Middle East Gulf (MEG) and West Africa (WAFR) were reported, leaving little room for significant market movement.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "gas",
+        "cents",
+        "houston-chiba"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 291,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

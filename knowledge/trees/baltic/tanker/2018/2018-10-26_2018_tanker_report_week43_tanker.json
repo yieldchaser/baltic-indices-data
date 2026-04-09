@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__root",
+  "doc_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 43",
+  "section_path": [
+    "Tanker report - Week 43"
+  ],
+  "section_path_text": "Tanker report - Week 43",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nRates eased in the Middle East Gulf as charterers focused on ‘disadvantaged tonnage' with South Korea and China fixed at WS 77.5 and WS 80, but recovered as GSC took DHT tonnage at WS 85 for 270,000mt cargo to South Korea. Westbound rates for 280,000mt to the US Gulf still hovered around WS 32/33 Cape/Cape. West Africa to China fixed at WS 77/78 basis 260,000mt, before firming to WS 82.5.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points",
+    "fixed"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 460,
+  "source_path": "reports/baltic/tanker/2018/2018_tanker-report-week43_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker",
+      "parent_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates eased in the Middle East Gulf as charterers focused on ‘disadvantaged tonnage' with South Korea and China fixed at WS 77.5 and WS 80, but recovered as GSC took DHT tonnage at WS 85 for 270,000mt cargo to South Korea. Westbound rates for 280,000mt to the US Gulf still hovered around WS 32/33 Cape/Cape.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "fixed",
+        "gulf",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 137,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker",
+      "parent_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa gained 7.5 points to WS 107.5 for 130,000mt to UKCont with firming markets in most areas. Black Sea was steady at WS 107.5 for 135,000mt to Mediterranean with South Korea covered at $4.0/4.1million.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "africa",
+        "areas.",
+        "black",
+        "covered",
+        "firming",
+        "gained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 64,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker",
+      "parent_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Mediterranean rates jumped, with Hamra/Mediterranean fixed at WS 182.5 up 60 points from the previous week. Black Sea went at WS 180, up from WS 162.5.",
+      "keywords": [
+        "europe",
+        "us_gulf",
+        "points",
+        "sea",
+        "fixed",
+        "gained",
+        "north",
+        "after"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 132,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker",
+      "parent_id": "baltic_tanker_2018-10-26_2018_tanker_report_week43_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the 75,000mt Middle East Gulf to Japan trade, Shell paid five points more at WS 105, while 55,000mt cargoes were a touch easier in mid/high WS 120s. Healthy tonnage availability saw levels in the 37,000mt Cont/USAC trade ease 10 points to WS 115, while the 38,000mt backhaul trade from the US Gulf was steady at around WS 135.",
+      "keywords": [
+        "meg",
+        "us_gulf",
+        "japan",
+        "trade",
+        "gulf",
+        "points",
+        "around",
+        "assessments"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 114,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

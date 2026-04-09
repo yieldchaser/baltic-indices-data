@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-05-10_2024_05_10_gas_report_week_19_gas__root",
+  "doc_id": "baltic_gas_2024-05-10_2024_05_10_gas_report_week_19_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 19",
+  "section_path": [
+    "Gas report - Week 19"
+  ],
+  "section_path_text": "Gas report - Week 19",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nA very quiet week for the LNG spot market, there was little movement in the indexes across all three routes with BLNG2 on the 160cbm moving only $41. The LNG world was not void of cargo discussions, and there were tentative talks going on but with the FOB cargoes out there seeing very little interest these for the most part dissipated. The BLNG1 Aus-Japan index was flat with the 174cbm losing only $654 to a close of $45,906 while the 160cbm ships gained $1,478 to a close of $35,395.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "europe",
+    "japan",
+    "gas",
+    "close",
+    "cbm",
+    "little",
+    "only",
+    "was"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 523,
+  "source_path": "reports/baltic/gas/2024/2024-05-10_gas-report-week-19_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-05-10_2024_05_10_gas_report_week_19_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-05-10_2024_05_10_gas_report_week_19_gas",
+      "parent_id": "baltic_gas_2024-05-10_2024_05_10_gas_report_week_19_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A very quiet week for the LNG spot market, there was little movement in the indexes across all three routes with BLNG2 on the 160cbm moving only $41. The LNG world was not void of cargo discussions, and there were tentative talks going on but with the FOB cargoes out there seeing very little interest these for the most part dissipated.",
+      "keywords": [
+        "lng",
+        "europe",
+        "japan",
+        "gas",
+        "cbm",
+        "close",
+        "little",
+        "only"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 289,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-05-10_2024_05_10_gas_report_week_19_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-05-10_2024_05_10_gas_report_week_19_gas",
+      "parent_id": "baltic_gas_2024-05-10_2024_05_10_gas_report_week_19_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There has been a continuation of the rise seen recently in BLPG1 Ras Tanura-Chiba as we close the week out again up. A rise of $9.428 gave a final price of $79.714 and a daily TCE Earning of $61,286 bolstered by some fixing and delays.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "close",
+        "daily",
+        "earning",
+        "price"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

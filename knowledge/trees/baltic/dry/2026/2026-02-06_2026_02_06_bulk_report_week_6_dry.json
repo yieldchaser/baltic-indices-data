@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__root",
+  "doc_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 6",
+  "section_path": [
+    "Bulk report - Week 6"
+  ],
+  "section_path_text": "Bulk report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market endured a broadly softer week, with sentiment cooling across both the Pacific and Atlantic as the BCI 182 5TC slid from the low $31,000s to finish closer to $26,468. Early optimism in the Pacific, driven by miner presence and steady West Australia volumes, ultimately failed to prevent rates from retreating. C5 corrected sharply from the mid $9.00s down into the low-to-mid $8.00s.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 860,
+  "source_path": "reports/baltic/dry/2026/2026-02-06_bulk-report-week-6_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__s01_capesize",
+      "doc_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market endured a broadly softer week, with sentiment cooling across both the Pacific and Atlantic as the BCI 182 5TC slid from the low $31,000s to finish closer to $26,468. Early optimism in the Pacific, driven by miner presence and steady West Australia volumes, ultimately failed to prevent rates from retreating.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "end",
+        "early"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The BPI drifted steadily lower over the week, with the P5TC falling from $15,735 on Monday to $14,865 by Friday, as sentiment softened across both basins. The Atlantic saw limited fresh cargo throughout, with transatlantic and fronthaul demand remaining thin and many charterers comfortably covered by backstops.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "cargo",
+        "charterers",
+        "fronthaul",
+        "tonnage",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Atlantic currently remained the more active of the two basins over the course of the week. Key areas from the Atlantic saw positive increase in demand and better numbers being discussed.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2026-02-06_2026_02_06_bulk_report_week_6_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handy market recorded a cautiously firm week, with sentiment gradually improving, particularly in the Atlantic basin. The South Atlantic and US Gulf were the main sources of strength, with both charterers and owners raising bid and offer levels and several fixtures concluded at improved rates.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 248,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__root",
+  "doc_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 32",
+  "section_path": [
+    "Bulk report - Week 32"
+  ],
+  "section_path_text": "Bulk report - Week 32",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe week started with the usual slow pace on Monday, but it quickly picked up momentum. In the Pacific, the underlying sentiment remained positive, with two out of the three major players actively participating from West Australia to China. Rates on C5 showed improvement, rising by approximately 15 cents at the beginning of the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 999,
+  "source_path": "reports/baltic/dry/2023/2023-08-11_bulk-report-week-32_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The week started with the usual slow pace on Monday, but it quickly picked up momentum. In the Pacific, the underlying sentiment remained positive, with two out of the three major players actively participating from West Australia to China.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "activity",
+        "china."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A stronger week overall as tonnage availability remained tight in the North Atlantic, which led to further strengthening for both trans-Atlantic and front haul runs. An 84,000-dwt fixed from Jorf Lasfar via Ponta Da Maderia to the Western Mediterranean at $15,500.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "singapore",
+        "japan",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 261,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather more positive week than of late, with better levels being discussed, brokers said. The Atlantic saw positional opportunities from the US Gulf whilst from the South Atlantic more enquiry was seen certainly for the larger ultramax.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "fixed",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2023-08-11_2023_08_11_bulk_report_week_32_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "More activities were seen as the week progressed leading to gains across both basins. In the East Mediterranean, a 37,000-dwt fixed basis passing Canakkale via the Black Sea to the West Mediterranean at $7,400 with an intended cargo of grains.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "grain",
+        "dwt",
+        "fixed",
+        "was",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

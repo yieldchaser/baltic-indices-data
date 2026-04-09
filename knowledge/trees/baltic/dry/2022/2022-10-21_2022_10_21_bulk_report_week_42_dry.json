@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__root",
+  "doc_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 42",
+  "section_path": [
+    "Bulk report - Week 42"
+  ],
+  "section_path_text": "Bulk report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nWeek-on-week the average of the weighted 5TC average declined $790, finishing the week at $17,175. The Brazil to Qingdao trade slipped two dollars throughout the week, whilst the West Australia to Qingdao trade remained static in the low/mid $9s. From the North Atlantic, both the transatlantic and fronthaul runs lifted midweek but showed signs of softening by the end, pricing at $24,194 and $36,875 per day respectively.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "meg",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 766,
+  "source_path": "reports/baltic/dry/2022/2022-10-21_bulk-report-week-42_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Week-on-week the average of the weighted 5TC average declined $790, finishing the week at $17,175. The Brazil to Qingdao trade slipped two dollars throughout the week, whilst the West Australia to Qingdao trade remained static in the low/mid $9s.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "average",
+        "but",
+        "qingdao",
+        "trade",
+        "amid"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 122,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market returned a mixed week. Rates in the Atlantic were largely seen under pressure throughout the trading week.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "us_gulf",
+        "japan",
+        "grain",
+        "again",
+        "nopac"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A split week for the sector as Asia lacked impetus with limited fresh enquiry and a build up of prompt tonnage. However, overall, the sentiment remained positive in the Atlantic.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "india",
+        "us_gulf",
+        "singapore",
+        "coal",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2022-10-21_2022_10_21_bulk_report_week_42_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With continued negativity in Asia, rates took a large step down this week. A 40,000-dwt was rumoured to have been fixed for a trip from Japan to Southeast Asia at $13,500 and a 37,000-dwt open in China was fixed for a trip via Indonesia back to China at $12,000.",
+      "keywords": [
+        "china",
+        "australia",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

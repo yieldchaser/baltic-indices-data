@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-05-09_2025_05_09_gas_report_week_19_gas__root",
+  "doc_id": "baltic_gas_2025-05-09_2025_05_09_gas_report_week_19_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 19",
+  "section_path": [
+    "Gas report - Week 19"
+  ],
+  "section_path_text": "Gas report - Week 19",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG freight market saw a mixed week, with softening in the Atlantic basin contrasting with a steadier Pacific performance. While Pacific spot earnings held firm or improved slightly, the Atlantic faced rate pressure. On the BLNG1 Australia to Japan route, 174k cbm vessels held steady at $22,800/day, while 160k cbm vessels ticked up $200 to $14,000/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day.",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 473,
+  "source_path": "reports/baltic/gas/2025/2025-05-09_gas-report-week-19_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-05-09_2025_05_09_gas_report_week_19_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-05-09_2025_05_09_gas_report_week_19_gas",
+      "parent_id": "baltic_gas_2025-05-09_2025_05_09_gas_report_week_19_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG freight market saw a mixed week, with softening in the Atlantic basin contrasting with a steadier Pacific performance. While Pacific spot earnings held firm or improved slightly, the Atlantic faced rate pressure.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 267,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-05-09_2025_05_09_gas_report_week_19_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-05-09_2025_05_09_gas_report_week_19_gas",
+      "parent_id": "baltic_gas_2025-05-09_2025_05_09_gas_report_week_19_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market saw a marked rebound this week, led by strength on the Ras Tanura to Chiba route. Activity levels seem to be picking up following a relatively quiet April, with sentiment turning more bullish amid improved fixing demand.",
+      "keywords": [
+        "lpg",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "day.",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__root",
+  "doc_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 47",
+  "section_path": [
+    "Bulk report - Week 47"
+  ],
+  "section_path_text": "Bulk report - Week 47",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a challenging week, marked by a gradual softening across both basins. Monday began quietly, with rates in the Pacific and from South Brazil and West Africa to China sliding amidst limited fresh cargo and standoffish sentiment between owners and charterers. The North Atlantic showed early signs of tonnage build-up, adding downward pressure.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 904,
+  "source_path": "reports/baltic/dry/2024/2024-11-22_bulk-report-week-47_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a challenging week, marked by a gradual softening across both basins. Monday began quietly, with rates in the Pacific and from South Brazil and West Africa to China sliding amidst limited fresh cargo and standoffish sentiment between owners and charterers.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Despite healthy activity, the Panamax sector continued on its turbulent path this week. There are still mixed views in the Atlantic, the grain versus mineral spread seemingly still exists, whilst fronthaul in general has witnessed further softening of levels.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "us_gulf",
+        "grain",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another rather sombre affair for the sector, certainly in the Atlantic as downward pressure remained in most areas. Whilst there had been a bit of activity from the US Gulf rates in the region remained relatively poor.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "grain",
+        "dwt",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry",
+      "parent_id": "baltic_dry_2024-11-22_2024_11_22_bulk_report_week_47_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the market has shown a mixed performance across the regions. In the Continent and Mediterranean, there's a sense of stability, supported by a healthy cargo book and ongoing scrap orders.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "delivery",
+        "dwt",
+        "fixed",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

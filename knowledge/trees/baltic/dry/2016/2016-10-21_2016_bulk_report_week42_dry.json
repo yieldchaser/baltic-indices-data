@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__root",
+  "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 42",
+  "section_path": [
+    "Bulk Report - Week 42"
+  ],
+  "section_path_text": "Bulk Report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nCoaltrans this week impacted on trading with limited activity, unsettling owners/operators with the seeming quiet and highlighting the fundamental fragility of the market. Brazil trading slowed but there remained a flotilla of ships heading that way and rates dropped, with talk today of rates under $11.00 but possibly for forward dates. Further north voyage rates dropped, with Puerto Bolivar/Rotterdam under $7.00 and front haul rates for ships from northwest Europe slipping to the mid-teens.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1268,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week42_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Coaltrans this week impacted on trading with limited activity, unsettling owners/operators with the seeming quiet and highlighting the fundamental fragility of the market. Brazil trading slowed but there remained a flotilla of ships heading that way and rates dropped, with talk today of rates under $11.00 but possibly for forward dates.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "coal",
+        "dropped"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 154,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates here improved yet again this week with increased US Gulf demand boosting the Atlantic market plus increased mineral cargoes for both transatlantic and trips to the East. Tonnage remained tight from northwest Europe and sentiment was positive going into next week.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "australia",
+        "atlantic",
+        "europe",
+        "india"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 393,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall an active week for both the Atlantic and the Pacific. There were also period fixtures taking place on both sides.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 416,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2016-10-21_2016_bulk_report_week42_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A better week for the Handy sector from certain areas. The east Mediterranean fared well for owners with prompt tonnage, where 37,000 dwt could achieve in excess of $9,000 daily for trips to the west Mediterranean and between $7,000 and $8,000 daily for trips up to the Continent.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "europe",
+        "us_gulf",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 290,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

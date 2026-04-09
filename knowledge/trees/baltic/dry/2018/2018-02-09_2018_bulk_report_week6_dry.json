@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__root",
+  "doc_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 6",
+  "section_path": [
+    "Bulk report - Week 6"
+  ],
+  "section_path_text": "Bulk report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA switch to the Atlantic with rates firming as charterers seemed keen to fix and tonnage was tight, prompting a recovery in rates. Transatlantic coal runs were paying near the mid-teens for standard capes with rates tipping over US$9.00 for the Colombia/Continent coal run. Charterers with INL breach cargoes had to pay a hefty premium with a cargo booked from Port Cartier to Rotterdam at US$9.30.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 957,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week6_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry",
+      "parent_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A switch to the Atlantic with rates firming as charterers seemed keen to fix and tonnage was tight, prompting a recovery in rates. Transatlantic coal runs were paying near the mid-teens for standard capes with rates tipping over US$9.00 for the Colombia/Continent coal run.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "europe",
+        "coal",
+        "was",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry",
+      "parent_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With limited fresh enquiry in all areas, spot market rates drifted lower throughout the week. Conversely period rates remained strong with a modern kamsarmax open South China fixed for five to seven months at US$14,000, with ongoing interest from charterers to take forward cover despite the nearby market being fragile leaving the gap between spot and period unusually wide.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "all",
+        "cover",
+        "failed",
+        "fresh",
+        "lower"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry",
+      "parent_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the run up to the Chinese New Year celebrations, the past few days have seen routes across the board losing ground. Very little period activity was reported but a 63,300-dwt was fixed basis delivery Singapore four to six months trading redelivery worldwide at US$12,250 daily.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 285,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry",
+      "parent_id": "baltic_dry_2018-02-09_2018_bulk_report_week6_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the last week before the Chinese New Year the market tended to slow as expected. Brokers suggested there had been a lack of fresh cargo in both the Atlantic and Pacific market with negative sentiment on both small and large-sized handy vessels.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "steel",
+        "daily",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

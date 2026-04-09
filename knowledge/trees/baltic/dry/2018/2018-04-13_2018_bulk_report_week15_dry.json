@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__root",
+  "doc_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 15",
+  "section_path": [
+    "Bulk report - Week 15"
+  ],
+  "section_path_text": "Bulk report - Week 15",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nSentiment gathered momentum during the week and rates for the main C5 route improved over $1 to currently stand at almost $6.40, with market talk of fixtures, perhaps around $6.50 level, not yet substantiated. Whilst there has been a lack of timecharter fixtures in the Pacific, the better voyage rates have affected the published values, which have jumped from the low $8,000's at the end of last week, to $11,750 today. Rates for Teluk Rubiah to Qingdao, have nudged up to $4.65, which was fixed by Vale on the Mineral Subic (179,397 2011).",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1380,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week15_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry",
+      "parent_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Sentiment gathered momentum during the week and rates for the main C5 route improved over $1 to currently stand at almost $6.40, with market talk of fixtures, perhaps around $6.50 level, not yet substantiated. Whilst there has been a lack of timecharter fixtures in the Pacific, the better voyage rates have affected the published values, which have jumped from the low $8,000's at the end of last week, to $11,750 today.",
+      "keywords": [
+        "brazil",
+        "pacific",
+        "fixed",
+        "was",
+        "april",
+        "are",
+        "loading",
+        "not"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 481,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry",
+      "parent_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "After two weeks of relative inactivity on the period market, despite consistent appetite from Charterers, concluded trades resumed this week, as the paper market seemed to signal a bottoming out, and tried to pre-empt a reversal, on the physical market. A modern Kamsarmax, open in the Middle East, fixed at $14,000 for 12-14 months, in addition, several vessels fixed for short periods at similar levels to those seen previously, all at premiums to the current spot market.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "levels",
+        "all",
+        "charterers",
+        "east",
+        "fixed",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry",
+      "parent_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The week started on a very quiet note; with routes across the board losing momentum. However, as the week comes to a close, more activity is being seen.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 393,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry",
+      "parent_id": "baltic_dry_2018-04-13_2018_bulk_report_week15_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Improving rates from Skaw-Passero and East coast South America, in addition to continuous falling rates from the US Gulf, set the theme for the week. The Pacific market showed more signs of softening since the beginning of the week.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "coal",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

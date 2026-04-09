@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_dry_2016-06-03_2016_bulk_report_week222016_dry__root",
+  "doc_id": "baltic_dry_2016-06-03_2016_bulk_report_week222016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 22 2016",
+  "section_path": [
+    "Bulk report - Week 22 2016"
+  ],
+  "section_path_text": "Bulk report - Week 22 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market saw an uplift as the week drew to a close, largely focused on increased activity from Brazil. The cargo flow increased towards the end of the week with mid-end June cargoes fixed from Brazil options including Tubarao to Qingdao around $9.00 with some suggesting further gains were likely. A 1999 built 171,000 tonner achieved $7,000 daily for prompt delivery Zhoushan for a Brazil round with the cargo for 10-20 July loading - this rate was allegedly equated to a tick under $9.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1233,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week222016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-06-03_2016_bulk_report_week222016_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-06-03_2016_bulk_report_week222016_dry",
+      "parent_id": "baltic_dry_2016-06-03_2016_bulk_report_week222016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market saw an uplift as the week drew to a close, largely focused on increased activity from Brazil. The cargo flow increased towards the end of the week with mid-end June cargoes fixed from Brazil options including Tubarao to Qingdao around $9.00 with some suggesting further gains were likely.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "coal",
+        "cargo",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 347,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-06-03_2016_bulk_report_week222016_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-06-03_2016_bulk_report_week222016_dry",
+      "parent_id": "baltic_dry_2016-06-03_2016_bulk_report_week222016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates generally here came under downward pressure. There remained interest for Argentina-Brazil loaders to go east but the pace was steady rather than frenetic with rates for average ships now hovering in the very low $7,000 daily range and $200,000 bonus or so.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 879,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

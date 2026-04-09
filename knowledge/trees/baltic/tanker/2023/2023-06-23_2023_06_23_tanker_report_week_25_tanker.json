@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__root",
+  "doc_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 25",
+  "section_path": [
+    "Tanker report - Week 25"
+  ],
+  "section_path_text": "Tanker report - Week 25",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nLR2\nMEG LR2's remained stable for the majority of the week with inklings of an upturn as we head towards the weekend. TC1 after bottoming out at WS107.5 is currently back at WS112.19 and a TC20 trip west was also steady across the week rising and incremental $78,000 to $3,292,000. West of Suez, Mediterranean/East LR2's have continued to be mute this week and the TC15 index dipped $38,500 to $2,583,000.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "crude_oil"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1138,
+  "source_path": "reports/baltic/tanker/2023/2023-06-23_tanker-report-week-25_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker",
+      "parent_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LR2\nMEG LR2's remained stable for the majority of the week with inklings of an upturn as we head towards the weekend. TC1 after bottoming out at WS107.5 is currently back at WS112.19 and a TC20 trip west was also steady across the week rising and incremental $78,000 to $3,292,000.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "meg",
+        "europe",
+        "along",
+        "lr1",
+        "lr2",
+        "points"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 462,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker",
+      "parent_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Another busy week as charterers took the last remaining opportunities to fix tonnage for June dated barrels before the OPEC+ cuts come into effect from 1 July. As that came to an end, tied in with the Chinese holiday on Thursday and Friday, the market has slackened in the Middle East.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "crude_oil",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker",
+      "parent_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Suezmaxes have had another busy week. In West Africa the effects of recently introduced tax claw-back have been lessened to encourage owners to keep loading in Nigeria.",
+      "keywords": [
+        "suezmax",
+        "west_africa",
+        "europe",
+        "points",
+        "daily",
+        "little",
+        "round-trip",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 188,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker",
+      "parent_id": "baltic_tanker_2023-06-23_2023_06_23_tanker_report_week_25_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the North Sea, the rate for the 80,000mt Hound Point/Wilhelmshaven remained flat at WS135 (showing a round-trip daily TCE of $39,800) and in the Mediterranean the 80,000mt Ceyhan/Lavera rate was stopped from falling further ending the week three points firmer overall at the WS142.50 mark (a daily round trip TCE of $38,200). Across the Atlantic, the Stateside Aframax market has again peaked and fallen down.",
+      "keywords": [
+        "aframax",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "tce",
+        "daily",
+        "points",
+        "round"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

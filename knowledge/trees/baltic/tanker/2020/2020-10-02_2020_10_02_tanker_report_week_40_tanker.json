@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__root",
+  "doc_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 40",
+  "section_path": [
+    "Tanker report - Week 40"
+  ],
+  "section_path_text": "Tanker report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nRates in this sector remained depressed this week. In the Middle East, we saw rates for 280,000mt to USG via the Cape/Cape routing continue to be assessed at around WS17.5, while 270,000mt to China shed a point to WS26.5 region. In the Atlantic, rates for 260,000mt West Africa to China also fell a point to WS31.5 level.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 722,
+  "source_path": "reports/baltic/tanker/2020/2020-10-02_tanker-report-week-40_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker",
+      "parent_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates in this sector remained depressed this week. In the Middle East, we saw rates for 280,000mt to USG via the Cape/Cape routing continue to be assessed at around WS17.5, while 270,000mt to China shed a point to WS26.5 region.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "crude_oil",
+        "point",
+        "reported",
+        "usg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 178,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker",
+      "parent_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 135,000mt Black Sea/Med again remain unmoved at WS45. In West Africa, owners were able to claw back 1.5 points to WS35 level for 130,000mt to the UKC.",
+      "keywords": [
+        "west_africa",
+        "below",
+        "remain",
+        "able",
+        "africa",
+        "again",
+        "agree",
+        "assessed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 110,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker",
+      "parent_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The 80,000mt Ceyhan/Med market again managed to remain static at WS57.5 and the same sentiment was mirrored in the 80,000mt Cross-North Sea route where rates held at WS72.5-75 level. Rates for 100,000mt Baltic/UKC eased a point to WS41.25.",
+      "keywords": [
+        "atlantic",
+        "points",
+        "again",
+        "baltic/ukc",
+        "carib/usgulf",
+        "ceyhan/med",
+        "cross-north",
+        "down"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 124,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker",
+      "parent_id": "baltic_tanker_2020-10-02_2020_10_02_tanker_report_week_40_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was overall another uninspiring week for owners. In the 75,000mt Middle East Gulf/Japan trade, rates have shown a modest tendency to firm.",
+      "keywords": [
+        "brazil",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "trade",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 297,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-06-28_2024_06_28_gas_report_week_26_gas__root",
+  "doc_id": "baltic_gas_2024-06-28_2024_06_28_gas_report_week_26_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 26",
+  "section_path": [
+    "Gas report - Week 26"
+  ],
+  "section_path_text": "Gas report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIt is past the midpoint of the year and the LNG market is looking at what is next, with rates firming and the more modern and efficient 2-stroke ships pulling away from TFDE tonnage. Interest from charterers is there and there were several fixtures concluded this week with interest up until the last day of trading. For BLNG1 Aus-Japan on the 174cbm rates climbed, although not much, and finished flat at $50,900 while the 160cbm TFDE ship moved higher closing the delta slightly at $39,654.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "meg",
+    "japan",
+    "gas",
+    "cbm",
+    "close",
+    "delta",
+    "finished",
+    "moved",
+    "ships"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 527,
+  "source_path": "reports/baltic/gas/2024/2024-06-28_gas-report-week-26_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-06-28_2024_06_28_gas_report_week_26_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-06-28_2024_06_28_gas_report_week_26_gas",
+      "parent_id": "baltic_gas_2024-06-28_2024_06_28_gas_report_week_26_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It is past the midpoint of the year and the LNG market is looking at what is next, with rates firming and the more modern and efficient 2-stroke ships pulling away from TFDE tonnage. Interest from charterers is there and there were several fixtures concluded this week with interest up until the last day of trading.",
+      "keywords": [
+        "lng",
+        "japan",
+        "gas",
+        "cbm",
+        "delta",
+        "finished",
+        "ships",
+        "stroke"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 323,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-06-28_2024_06_28_gas_report_week_26_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-06-28_2024_06_28_gas_report_week_26_gas",
+      "parent_id": "baltic_gas_2024-06-28_2024_06_28_gas_report_week_26_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The MEG BLPG1 Ras Tanura-Chiba route had an up and down week, beginning lower the rates climbed to a high of $71.714 before falling to the close of $68.857 (a total drop of $3.286 for the week). The TCE earnings moved marginally gaining $3,397 to a close of $49,329.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "meg",
+        "gas",
+        "close",
+        "tce",
+        "blpg2",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 198,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

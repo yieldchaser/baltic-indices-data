@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__root",
+  "doc_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 45",
+  "section_path": [
+    "Tanker report - Week 45"
+  ],
+  "section_path_text": "Tanker report - Week 45",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nThe Middle East Gulf has been stable this week with some minimal fluctuations. On the LR2s TC1 bottomed out at WS161 midweek, down from WS179, and has then resurged back up to WS165.63 with end of week reports of WS170 and WS172.5 on subjects at the time of writing. A trip to the UK-Continent, TC20, has ticked down from $3,930,000 to $3,800,000 across the week.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1068,
+  "source_path": "reports/baltic/tanker/2022/2022-11-11_tanker-report-week-45_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker",
+      "parent_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Middle East Gulf has been stable this week with some minimal fluctuations. On the LR2s TC1 bottomed out at WS161 midweek, down from WS179, and has then resurged back up to WS165.63 with end of week reports of WS170 and WS172.5 on subjects at the time of writing.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "down",
+        "points",
+        "then"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 457,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker",
+      "parent_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The VLCC market remained firm this week. 270,000 mt Middle East Gulf to China gained a further six points to just over WS113 (a daily TCE round trip of $79,700).",
+      "keywords": [
+        "capesize",
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 172,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker",
+      "parent_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Suezmax market in the West rebounded with rates recovering all recent lost ground and continuing on an upward trend. For the 135,000mt CPC/Augusta trip, support came from the Aframax market with Suezmax vessels able to fix Aframax cargoes - in particular from the Black Sea.",
+      "keywords": [
+        "suezmax",
+        "aframax",
+        "west_africa",
+        "europe",
+        "points",
+        "daily",
+        "tce",
+        "west"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 162,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker",
+      "parent_id": "baltic_tanker_2022-11-11_2022_11_11_tanker_report_week_45_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Aframax market in the US-Caribbean region fell again this week with the rate for 70,000mt Covenas/US Gulf losing six points to the WS375 region ($93,300per day round-trip TCE). Meanwhile, the 70,000mt East Coast Mexico/US Gulf trip dropped only 1.5 points to the very low WS390s (a round-trip TCE of about $107,200, about $600 per day lower than a week ago).",
+      "keywords": [
+        "aframax",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "round-trip",
+        "tce",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 264,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

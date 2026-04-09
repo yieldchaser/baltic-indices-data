@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-01-17_2025_01_17_gas_report_week_3_gas__root",
+  "doc_id": "baltic_gas_2025-01-17_2025_01_17_gas_report_week_3_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 3",
+  "section_path": [
+    "Gas report - Week 3"
+  ],
+  "section_path_text": "Gas report - Week 3",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nHopes for a slight revival in spot LNG shipping rates faded quickly this week. The influx of newbuild tonnage into the market, combined with limited cargo demand, created a significant imbalance. Although some stems have shown interest, bids and offers are trending downward, reflecting bearish sentiment.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india",
+    "japan",
+    "gas",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 622,
+  "source_path": "reports/baltic/gas/2025/2025-01-17_gas-report-week-3_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-01-17_2025_01_17_gas_report_week_3_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-01-17_2025_01_17_gas_report_week_3_gas",
+      "parent_id": "baltic_gas_2025-01-17_2025_01_17_gas_report_week_3_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Hopes for a slight revival in spot LNG shipping rates faded quickly this week. The influx of newbuild tonnage into the market, combined with limited cargo demand, created a significant imbalance.",
+      "keywords": [
+        "lng",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 385,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-01-17_2025_01_17_gas_report_week_3_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-01-17_2025_01_17_gas_report_week_3_gas",
+      "parent_id": "baltic_gas_2025-01-17_2025_01_17_gas_report_week_3_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Activity originating from the Middle East Gulf (MEG) this week has largely focused on India, with four reported fixtures concluded near a $60 Baltic BLPG1 equivalent rate. Pure BLPG1 Ras Tanura-Chiba fixtures were limited, contributing less to the market's momentum.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "india",
+        "gas",
+        "earnings",
+        "fixtures"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

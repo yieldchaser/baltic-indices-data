@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__root",
+  "doc_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 31",
+  "section_path": [
+    "Bulk report - Week 31"
+  ],
+  "section_path_text": "Bulk report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe gains in the Capesize timecharter average from last week were reversed, with the 5TC closing at $27,331 on Friday-down $4,425 week-on-week. The surge in the North Atlantic paused, with fronthaul rates settling thick below $50,000 and the transatlantic run closing at $31,214 per day. The C3 index (Brazil/West Africa to China) with end of August cancelling remained in the $24 range for most of the week, translating to approximately $24,000 for a China-Brazil round voyage.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 761,
+  "source_path": "reports/baltic/dry/2025/2025-08-01_bulk-report-week-31_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The gains in the Capesize timecharter average from last week were reversed, with the 5TC closing at $27,331 on Friday-down $4,425 week-on-week. The surge in the North Atlantic paused, with fronthaul rates settling thick below $50,000 and the transatlantic run closing at $31,214 per day.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "average"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 183,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week concluded with continued declines in the Panamax market. In the Atlantic, conditions remained weak, with limited fixing activity in the North Atlantic and growing pressure on owners as charterers held back.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "singapore",
+        "japan",
+        "america",
+        "continued",
+        "limited"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 147,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The summer holiday season arrived for the sector this week certainly within the Atlantic with a rather subdued feel to proceedings generally. From the Atlantic, the US Gulf remained rather positional although sentiment was slightly more positive as the week closed.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "was",
+        "although",
+        "dwt",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2025-08-01_2025_08_01_bulk_report_week_31_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handy sector saw minimal visible activity across both basins this week. In the Continent and Mediterranean, limited information surfaced, with rates generally holding around last-done levels.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "steel",
+        "aug",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

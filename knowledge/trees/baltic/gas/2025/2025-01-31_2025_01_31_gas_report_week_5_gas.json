@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-01-31_2025_01_31_gas_report_week_5_gas__root",
+  "doc_id": "baltic_gas_2025-01-31_2025_01_31_gas_report_week_5_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 5",
+  "section_path": [
+    "Gas report - Week 5"
+  ],
+  "section_path_text": "Gas report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market has seen a further decline in rates, driven by an ever-growing supply of available tonnage and a limited number of cargoes to cover. The BLNG1 Gladstone-Tokyo route for both 160k cbm TFDE and 174k cbm 2-Stroke vessels saw declines, with rates falling by $432 and $803, respectively. The 160k cbm TFDE index closed at $4,199, while the 2-Stroke index ended at $11,790.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "grain",
+    "gas",
+    "cbm",
+    "closing",
+    "saw",
+    "route",
+    "stroke",
+    "tfde"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 588,
+  "source_path": "reports/baltic/gas/2025/2025-01-31_gas-report-week-5_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-01-31_2025_01_31_gas_report_week_5_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-01-31_2025_01_31_gas_report_week_5_gas",
+      "parent_id": "baltic_gas_2025-01-31_2025_01_31_gas_report_week_5_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market has seen a further decline in rates, driven by an ever-growing supply of available tonnage and a limited number of cargoes to cover. The BLNG1 Gladstone-Tokyo route for both 160k cbm TFDE and 174k cbm 2-Stroke vessels saw declines, with rates falling by $432 and $803, respectively.",
+      "keywords": [
+        "lng",
+        "brazil",
+        "atlantic",
+        "grain",
+        "gas",
+        "cbm",
+        "route",
+        "stroke"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 382,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-01-31_2025_01_31_gas_report_week_5_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-01-31_2025_01_31_gas_report_week_5_gas",
+      "parent_id": "baltic_gas_2025-01-31_2025_01_31_gas_report_week_5_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has experienced minor improvements this week, witnessing upward pressure on rates and TCE earnings on two key routes. BLPG1 Ras Tanura to Chiba saw a rate increase of $4, closing at $52.33, while associated TCE earnings rose by $4,201, closing at $32,217.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "earnings",
+        "tce",
+        "closing",
+        "saw",
+        "blpg2"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

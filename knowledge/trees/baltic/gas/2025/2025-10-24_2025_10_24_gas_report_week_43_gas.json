@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-10-24_2025_10_24_gas_report_week_43_gas__root",
+  "doc_id": "baltic_gas_2025-10-24_2025_10_24_gas_report_week_43_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 43",
+  "section_path": [
+    "Gas report - Week 43"
+  ],
+  "section_path_text": "Gas report - Week 43",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market had another strong week, with a flurry of new cargoes and a tightening position list becoming more pronounced in the East and West. On the BLNG1 Australia-Japan route, 174k cbm vessels gained $4,500 to $28,400 per day, while 160k cbm tonnage increased $6,900 per day to $20,000 per day, as a couple new cargoes appeared with limited vessels able to reach the laycan. The BLNG2 US Gulf-Continent route strengthened notably, with 174k cbm rates rising $3,800 to $34,000 per day and 160k cbm ships gained $4,900 to $21,800 per day, supported by limited vessel availability and cargo liquidity.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "china",
+    "australia",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "day",
+    "cbm",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 479,
+  "source_path": "reports/baltic/gas/2025/2025-10-24_gas-report-week-43_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-10-24_2025_10_24_gas_report_week_43_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-10-24_2025_10_24_gas_report_week_43_gas",
+      "parent_id": "baltic_gas_2025-10-24_2025_10_24_gas_report_week_43_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market had another strong week, with a flurry of new cargoes and a tightening position list becoming more pronounced in the East and West. On the BLNG1 Australia-Japan route, 174k cbm vessels gained $4,500 to $28,400 per day, while 160k cbm tonnage increased $6,900 per day to $20,000 per day, as a couple new cargoes appeared with limited vessels able to reach the laycan.",
+      "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "per",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 280,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-10-24_2025_10_24_gas_report_week_43_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-10-24_2025_10_24_gas_report_week_43_gas",
+      "parent_id": "baltic_gas_2025-10-24_2025_10_24_gas_report_week_43_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has continued to soften this week, with rates easing across all major routes as sentiment further weakens by ongoing US and China tensions, and lack of cargo liquidity. On the BLPG1 Ras Tanura-Chiba route, rates fell $2.83 to $57.75 per metric tonne, with TCE earnings slipping $3,283 to $44,073 per day.",
+      "keywords": [
+        "lpg",
+        "china",
+        "gas",
+        "per",
+        "metric",
+        "route",
+        "tonne",
+        "blpg3"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

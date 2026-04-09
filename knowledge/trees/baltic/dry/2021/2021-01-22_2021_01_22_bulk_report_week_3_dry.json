@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__root",
+  "doc_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 3",
+  "section_path": [
+    "Bulk report - Week 3"
+  ],
+  "section_path_text": "Bulk report - Week 3",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market rocked and rolled these past few days. But by weeks end little had changed on the Capesize 5TC as it settled down -884 to $24,631. This was a positive difference of $733 to the beginning of the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 855,
+  "source_path": "reports/baltic/dry/2021/2021-01-22_bulk-report-week-3_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market rocked and rolled these past few days. But by weeks end little had changed on the Capesize 5TC as it settled down -884 to $24,631.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "activity",
+        "had"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week began sedately across the board with markets attempting to find direction. Downward pressure came initially from falling FFA values and a lack of demand early in the week forcing some cheaper levels to be conceded by owners.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "north",
+        "all",
+        "delivery",
+        "dwt",
+        "forcing",
+        "months"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Yet another positive week for the sector, which saw increased demand across all basins. Increasingly, charterers are seeking period cover.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "meg",
+        "europe",
+        "india",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry",
+      "parent_id": "baltic_dry_2021-01-22_2021_01_22_bulk_report_week_3_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Both the overall index and the time charter average landed in positive territory this week. Key markets in the Atlantic gradually improved throughout the week.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

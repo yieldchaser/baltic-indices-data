@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__root",
+  "doc_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 18",
+  "section_path": [
+    "Bulk report - Week 18"
+  ],
+  "section_path_text": "Bulk report - Week 18",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market maintained a generally firm tone this week, supported by a tightening of tonnage in both the Pacific and North Atlantic, alongside a steady flow of cargo. In the Pacific, early-week momentum was driven by active miners on the C5 route and healthy operator volumes, while a notably shorter tonnage list helped sustain sentiment despite some mid-week stagnation and a holiday-induced slowdown on Thursday. Rates on C5 hovered around the $8.00 mark, although fixing volumes tapered off later in the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 910,
+  "source_path": "reports/baltic/dry/2025/2025-05-02_bulk-report-week-18_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market maintained a generally firm tone this week, supported by a tightening of tonnage in both the Pacific and North Atlantic, alongside a steady flow of cargo. In the Pacific, early-week momentum was driven by active miners on the C5 route and healthy operator volumes, while a notably shorter tonnage list helped sustain sentiment despite some mid-week stagnation and a holiday-induced slowdown on Thursday.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "tonnage",
+        "both"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week was characterized by fragmented activity due to various holidays around the world. In the Atlantic basin, fresh demand was minimal, but with a modest tonnage count, rates remained steady for most of the limited trans-Atlantic and front haul fixtures.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "coal",
+        "was",
+        "america",
+        "around"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the shipping event in Geneva and the widespread May Day holiday it was a rather subdued week overall. The Atlantic lacked much fresh impetus especially from the US Gulf and Continent, although the South Atlantic remained rather positional.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "fixed",
+        "trip",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2025-05-02_2025_05_02_bulk_report_week_18_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A challenging week for the sector with rates in both the Atlantic and Pacific regions facing downward pressure. In the Continent and Mediterranean, rates largely remained flat, with limited cargoes available against tonnage on offer.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "japan",
+        "dwt",
+        "fixed",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

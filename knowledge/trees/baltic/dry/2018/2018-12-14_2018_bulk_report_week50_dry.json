@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__root",
+  "doc_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 50",
+  "section_path": [
+    "Bulk report - Week 50"
+  ],
+  "section_path_text": "Bulk report - Week 50",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA positive end to last week after a somewhat uncertain start as some gains made were eroded. Rates recovered later for West Australia/China, nudging the high $8.00s with rumours of $9.00 for prompt positions. In addition, there was finally action from Brazil, with a few cargoes fixed for China as the week closed out with some early ships covered in the mid-high $16.00s and $17.25 paid for early January.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 927,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week50_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry",
+      "parent_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A positive end to last week after a somewhat uncertain start as some gains made were eroded. Rates recovered later for West Australia/China, nudging the high $8.00s with rumours of $9.00 for prompt positions.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "was",
+        "business",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry",
+      "parent_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A very flat week for the indices with rates mostly hovering at the same levels, however, news of fresh concluded sales into China boosted sentiment greatly, with much more period activity evident as a result. A Panamax open South China early January covered for a year at $12,000.",
+      "keywords": [
+        "panamax",
+        "china",
+        "pacific",
+        "period",
+        "covered",
+        "news",
+        "north",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry",
+      "parent_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a more positive week than of late for the Baltic Supramax Index (BSI). The Index showed some strong gains, with China buying US soybeans helping to support the market.",
+      "keywords": [
+        "supramax",
+        "china",
+        "australia",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 230,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry",
+      "parent_id": "baltic_dry_2018-12-14_2018_bulk_report_week50_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The overall Baltic Handysize Index (BHSI) recorded a similar level as it achieved in December 2017. Rates from East Coast South America improved, but negative sentiment from the US Gulf market became more evident last week with limited cargoes.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 262,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

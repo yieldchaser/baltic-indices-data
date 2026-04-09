@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-01-19_2024_01_19_gas_report_week_3_gas__root",
+  "doc_id": "baltic_gas_2024-01-19_2024_01_19_gas_report_week_3_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 3",
+  "section_path": [
+    "Gas report - Week 3"
+  ],
+  "section_path_text": "Gas report - Week 3",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nA quiet week again with one stand out fixture mid-week, which drove the downward direction of the index. Reports of a 2-Stroke being put on subs for February dates in the mid $50,000s saw the final publication of the week reach those levels for BLNG2. This meant the TFDE 160cbm ships fell as well keeping their usual differential, one ever so slightly diminished with such light activity.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "europe",
+    "japan",
+    "gas",
+    "cbm",
+    "fell",
+    "close",
+    "quiet",
+    "was"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 659,
+  "source_path": "reports/baltic/gas/2024/2024-01-19_gas-report-week-3_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-01-19_2024_01_19_gas_report_week_3_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-01-19_2024_01_19_gas_report_week_3_gas",
+      "parent_id": "baltic_gas_2024-01-19_2024_01_19_gas_report_week_3_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A quiet week again with one stand out fixture mid-week, which drove the downward direction of the index. Reports of a 2-Stroke being put on subs for February dates in the mid $50,000s saw the final publication of the week reach those levels for BLNG2.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "japan",
+        "gas",
+        "cbm",
+        "fell"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 346,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-01-19_2024_01_19_gas_report_week_3_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-01-19_2024_01_19_gas_report_week_3_gas",
+      "parent_id": "baltic_gas_2024-01-19_2024_01_19_gas_report_week_3_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Further falls on the LPG market this week meant we saw low levels not seen since 24th January 2023 and within this year alone we have seen BLPG1 lose $78.429 (57.857%) of its value a huge correction in such a short period. BLPG1 Ras Tanura-Chiba fell $24.714 to close at $57.857 giving a TCE of $37,877, a nearly 50% drop from the end of last week.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "drop",
+        "much",
+        "tce",
+        "alone",
+        "await",
+        "blpg1"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 307,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__root",
+  "doc_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 31",
+  "section_path": [
+    "Bulk report - Week 31"
+  ],
+  "section_path_text": "Bulk report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market broke out of its recent range this week as the 5TC peaked on Thursday before easing Friday slightly down at $36,150. The Pacific routes strengthened throughout the week but softened abruptly on Friday for the Transpacific C10 to be down 485 week on week to $44,928. The Brazil to China C14 was the main mover settling at $34,990 on Friday, still a significant discount to the Pacific.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 814,
+  "source_path": "reports/baltic/dry/2021/2021-08-06_bulk-report-week-31_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market broke out of its recent range this week as the 5TC peaked on Thursday before easing Friday slightly down at $36,150. The Pacific routes strengthened throughout the week but softened abruptly on Friday for the Transpacific C10 to be down 485 week on week to $44,928.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "friday",
+        "down",
+        "abruptly"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 113,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "We have seen more activity this week in the build up to holidays in Singapore and Japan with both owners and charterers looking to find cover. The Black Sea grain season is fully underway and charterers have been busy sourcing tonnage from Asia.",
+      "keywords": [
+        "china",
+        "pacific",
+        "europe",
+        "india",
+        "singapore",
+        "japan",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 216,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A positive week overall for the sector with rates remaining firm. Limited period activity circulated, but a 58,000-dwt open Hong Kong was fixed for five to seven months trading at $31,000.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2021-08-06_2021_08_06_bulk_report_week_31_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The steady unbroken positive progress of 768 points on the BHSI ended this week with its first negative return since April 2021. However, with a firm Black Sea market, that negative trend was short lived.",
+      "keywords": [
+        "china",
+        "west_africa",
+        "europe",
+        "singapore",
+        "japan",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

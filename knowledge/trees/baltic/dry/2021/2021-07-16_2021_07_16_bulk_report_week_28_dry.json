@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__root",
+  "doc_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 28",
+  "section_path": [
+    "Bulk report - Week 28"
+  ],
+  "section_path_text": "Bulk report - Week 28",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market endured a week of eroding value across all regions as the 5TC lowered $2,430 week on week to settle at $28,572. While the Pacific's West Australia to Qingdao C5 route closed out Friday up 25 cents to $10.841, appetite from major charterers in the spot market on this route have appeared tepid of late. Activity to the east of Australia for coal cargoes to Northern Asia remains strong while those coal cargoes destined for Europe, admittedly not so frequent, have been required to pay up for the longer duration backhaul route.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 860,
+  "source_path": "reports/baltic/dry/2021/2021-07-16_bulk-report-week-28_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market endured a week of eroding value across all regions as the 5TC lowered $2,430 week on week to settle at $28,572. While the Pacific's West Australia to Qingdao C5 route closed out Friday up 25 cents to $10.841, appetite from major charterers in the spot market on this route have appeared tepid of late.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A week of declines for the Panamax market in all basins as the gains seen in recent weeks began to erode. In the Atlantic Basin there were one or two bright spots namely the grains run ex North France to China and Black Sea demand that ultimately never wavered.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "coal",
+        "grain",
+        "demand",
+        "aps"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A lacklustre week with limited fresh enquiry and lengthening tonnage lists in many areas. Limited period activity was recorded with both sides watching for any clear direction, but a 63,000-dwt open China was fixed for four to six months trading at $36,000.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2021-07-16_2021_07_16_bulk_report_week_28_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of mainly positive moves with the indices moving up a further 18 points to a new yearly high of 1669 points, this despite a general lack of activity in East, and East Coast South America seeing levels soften whilst the market awaits the batch of requirements. The US Gulf has been more active with a 36,000-dwt fixing a petcoke cargo to the Western Mediterranean at $30,000.",
+      "keywords": [
+        "europe",
+        "india",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "east",
+        "asia",
+        "basis"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

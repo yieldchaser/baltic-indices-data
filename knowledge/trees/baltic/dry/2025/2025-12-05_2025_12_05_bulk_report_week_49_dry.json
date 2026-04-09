@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__root",
+  "doc_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 49",
+  "section_path": [
+    "Bulk report - Week 49"
+  ],
+  "section_path_text": "Bulk report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market delivered a firm performance this week, characterised by early strength, a mid-week surge and a measured correction thereafter. Positive momentum was established in the Pacific, where steady miner activity and tightening tonnage lists kept C5 values anchored in the low-to-mid $12s. While sentiment eased slightly toward the end of the week, the return of additional miners helped maintain underlying support.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 775,
+  "source_path": "reports/baltic/dry/2025/2025-12-05_bulk-report-week-49_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market delivered a firm performance this week, characterised by early strength, a mid-week surge and a measured correction thereafter. Positive momentum was established in the Pacific, where steady miner activity and tightening tonnage lists kept C5 values anchored in the low-to-mid $12s.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "mid-week",
+        "fixtures",
+        "higher"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 178,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week opened on a softer tone as prompt tonnage increased across the Atlantic and Asia, pushing owners to become more negotiable and easing last week's firmness. Through Tuesday and Wednesday, limited fresh enquiry failed to offset rising vessel supply, keeping sentiment muted while charterers remained selective, particularly in the Pacific where Indonesian and NoPac trades stayed under pressure amid swelling tonnage lists and weaker grain demand.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "pacific",
+        "grain",
+        "tonnage",
+        "charterers",
+        "limited",
+        "owners"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 155,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Brokers described a somewhat positional week for the sector during the course of the week. The Atlantic started in a fairly subdued manor but as it progressed it became clear that the US Gulf saw a return to strong demand and better levels being achieved.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "demand",
+        "was",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry",
+      "parent_id": "baltic_dry_2025-12-05_2025_12_05_bulk_report_week_49_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market displayed a mixed performance this week, with some regions holding steady while others recorded stronger gains. In the Continent and Mediterranean, activity was limited, with only marginal improvements as rates edged slightly higher than previous levels.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "grain",
+        "bauxite",
+        "dwt",
+        "fixed",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

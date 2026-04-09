@@ -1,0 +1,174 @@
+{
+  "node_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__root",
+  "doc_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 17",
+  "section_path": [
+    "Tanker report - Week 17"
+  ],
+  "section_path_text": "Tanker report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nLR2\nMEG LR2's improved modestly this week. The TC1 75kt MEG/Japan index ticked up from WS117.22 to WS126.67 and a TC20 90kt MEG/UK-Continent held flat around the $3.5m. West of Suez, Mediterranean/East LR2's remained sedate with the TC15 index dipping $35,000 to just under the $3.1m mark.",
+  "keywords": [
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1222,
+  "source_path": "reports/baltic/tanker/2025/2025-04-25_tanker-report-week-17_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LR2\nMEG LR2's improved modestly this week. The TC1 75kt MEG/Japan index ticked up from WS117.22 to WS126.67 and a TC20 90kt MEG/UK-Continent held flat around the $3.5m.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "week."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 510,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__s02_handymax",
+      "doc_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__root",
+      "title": "Handymax",
+      "section_path": [
+        "Handymax"
+      ],
+      "section_path_text": "Handymax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Baltic Clean Handymax's remained relatively flat in the Mediterranean this week, the TC6 index did however drop from WS175.56 to WS169.72. Up on the UK-Continent the TC23 30kt Cross UK-Continent also shed 10.28 points to WS170.",
+      "keywords": [
+        "handysize",
+        "europe",
+        "uk-continent",
+        "clean",
+        "cross",
+        "did",
+        "drop",
+        "flat"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 63,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__s03_vlcc",
+      "doc_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The market has turned around again, and gains have been made on all routes this week. The rate for the 270,000 mt Middle East Gulf to China trip (TD3C) has climbed 5 points since Easter to WS70.93 corresponding to a round-trip TCE of $55,010.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "tce",
+        "easter",
+        "points"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__s04_suezmax",
+      "doc_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Suezmax owners continued to push on upwards in West Africa. The rate for the 130,000 mt Nigeria/UK Continent voyage (TD20) climbed 9 points to WS120.28 meaning a daily round-trip TCE of $57,338 while the TD27 route (Guyana to UK Continent basis 130,000 mt) only rose 4 points to WS115.28 translating to a daily round trip TCE of $54,152 basis discharge in Rotterdam.",
+      "keywords": [
+        "suezmax",
+        "meg",
+        "west_africa",
+        "europe",
+        "daily",
+        "route",
+        "tce",
+        "basis"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 198,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__s05_aframax",
+      "doc_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2025-04-25_2025_04_25_tanker_report_week_17_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "In the North Sea, the rate for the 80,000 mt Cross-UK Continent route (TD7) has had 2 points added, reaching a whisker away from WS140, giving a daily round-trip TCE of $55,065 basis Hound Point to Wilhelmshaven. In the Mediterranean market the rate for 80,000 mt Cross-Mediterranean (TD19) has slid down 8 points to WS181.11 (basis Ceyhan to Lavera, that shows a daily round trip TCE about $61,100).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "route",
+        "tce",
+        "basis",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 272,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

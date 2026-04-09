@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-01-26_2024_01_26_gas_report_week_4_gas__root",
+  "doc_id": "baltic_gas_2024-01-26_2024_01_26_gas_report_week_4_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 4",
+  "section_path": [
+    "Gas report - Week 4"
+  ],
+  "section_path_text": "Gas report - Week 4",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nA muted week for LNG, rates on both the 160cbm and 174cbm vessels were flat, but overall the week was driven by bearish movement. Low cargo count East of Suez kept rates flat on the TFDE, Australia saw one or two fixtures in the low $40,000's per day and a few FOB tenders were the only reported bits of activity from WAFR and the Middle East. In the US longer tonnage lists and little enquiry for spot has pushed levels lower again, and discussions on term haven't done anything to bolster sentiment.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "west_africa",
+    "india",
+    "japan",
+    "grain",
+    "gas",
+    "cbm",
+    "fell",
+    "was"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 571,
+  "source_path": "reports/baltic/gas/2024/2024-01-26_gas-report-week-4_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-01-26_2024_01_26_gas_report_week_4_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-01-26_2024_01_26_gas_report_week_4_gas",
+      "parent_id": "baltic_gas_2024-01-26_2024_01_26_gas_report_week_4_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A muted week for LNG, rates on both the 160cbm and 174cbm vessels were flat, but overall the week was driven by bearish movement. Low cargo count East of Suez kept rates flat on the TFDE, Australia saw one or two fixtures in the low $40,000's per day and a few FOB tenders were the only reported bits of activity from WAFR and the Middle East.",
+      "keywords": [
+        "lng",
+        "australia",
+        "west_africa",
+        "japan",
+        "grain",
+        "gas",
+        "cbm",
+        "fell"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 320,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-01-26_2024_01_26_gas_report_week_4_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-01-26_2024_01_26_gas_report_week_4_gas",
+      "parent_id": "baltic_gas_2024-01-26_2024_01_26_gas_report_week_4_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Continued pressure on the routes this week has meant that BLPG1 Ras Tanura-Chiba fell a further $9.858 to close at $42.571, giving a daily TCE earning equivalent of $21,641. The recent drastic decline in the route has meant we haven't seen such lows since August 2021 when the BLPG1 also fell to $42.571.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "india",
+        "gas",
+        "blpg1",
+        "fell",
+        "august",
+        "blpg3"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

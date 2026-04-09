@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__root",
+  "doc_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 42",
+  "section_path": [
+    "Bulk report - Week 42"
+  ],
+  "section_path_text": "Bulk report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market was under pressure across all routes most of time this week. The 5TC and BCI showed a minimal sign of improvement mid-week, but closed on a much weaker note on Friday. Despite the presence of all the miners in the market for the first time since early October, the west Australia to Qingdao voyage route (C5) came off from the peak on Wednesday at $16.732 to $14.264 on Friday, whilst the relevant transpacific route closed at $41,429 per day.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 859,
+  "source_path": "reports/baltic/dry/2021/2021-10-22_bulk-report-week-42_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market was under pressure across all routes most of time this week. The 5TC and BCI showed a minimal sign of improvement mid-week, but closed on a much weaker note on Friday.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "pacific",
+        "all",
+        "closed",
+        "qingdao"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A week of positive gains in the Panamax market, with the Atlantic bouncing back with some eye-catching gains whilst the Asian basin proving to be more passive by comparison. The Atlantic proved to be well supported in most origins with sturdy demand throughout.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "india",
+        "coal",
+        "was",
+        "demand",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A strong week for key areas in the Atlantic such as the US Gulf, which saw limited fresh tonnage availability. In contrast, as the week closed, limited fresh enquiry appeared leading to more vessels being available and rates lowering in Asia.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "us_gulf",
+        "singapore",
+        "was",
+        "dwt",
+        "redelivery",
+        "via"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry",
+      "parent_id": "baltic_dry_2021-10-22_2021_10_22_bulk_report_week_42_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week we have seen East Coast South America bring a halt to its recent negative trend, with positive movements including a 39,000 dwt open in Santos fixed via East Coast South America to the Continent with an intended cargo of steels at $40,000. The US Gulf region continues to firm with a 38,000 dwt fixing from Galveston to West Africa with a intended cargo of sulphur at $53,000 and a 38,000 dwt was fixed from Houston for 2 to 3 laden legs with redelivery Atlantic at $35,000.",
+      "keywords": [
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "steel",
+        "dwt",
+        "fixed",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

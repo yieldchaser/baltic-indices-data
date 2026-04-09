@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__root",
+  "doc_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 45",
+  "section_path": [
+    "Tanker report - Week 45"
+  ],
+  "section_path_text": "Tanker report - Week 45",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nRates remain weak, albeit steady across all sectors. In the Middle East, 280,000mt to USG via the Cape/Cape routing remained at a fraction above WS15, while 270,000mt to China continued to achieve WS26. In the Atlantic, rates for 260,000mt West Africa to China held around the WS29 level and $4.55m region for 270,000mt USG to China.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 463,
+  "source_path": "reports/baltic/tanker/2020/2020-11-06_tanker-report---week-45_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker",
+      "parent_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates remain weak, albeit steady across all sectors. In the Middle East, 280,000mt to USG via the Cape/Cape routing remained at a fraction above WS15, while 270,000mt to China continued to achieve WS26.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "usg",
+        "above",
+        "achieve",
+        "africa"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 90,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker",
+      "parent_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 135,000mt Black Sea/Med were maintained at around WS45, while for 130,000mt Nigeria to UK Continent saw a modest two-point gain to between WS32.5 and WS35. In the Middle East market, rates for 140,000mt Basrah/Med improved by about four points to around WS20-22.5 level, with Turkish and Greek charterers fixing at WS20 and a US oil major reported to be replacing a failed WS20 fixture at WS22.5 on an ex drydock vessel.",
+      "keywords": [
+        "europe",
+        "crude_oil",
+        "around",
+        "ws20",
+        "basrah/med",
+        "between",
+        "black",
+        "charterers"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 113,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker",
+      "parent_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates for 80,000mt Ceyhan/Lavera fell back about three points to just over WS61. In Northern Europe rates weakened a couple of points to between WS67.5-70, while 100,000mt Baltic/UKC remained close to WS42.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "points",
+        "are",
+        "around",
+        "back",
+        "baltic/ukc",
+        "between"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 107,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker",
+      "parent_id": "baltic_tanker_2020-11-06_2020_11_06_tanker_report_week_45_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the Middle East Gulf/Japan trade, rates for 75,000mt are static at WS57.5 level, while the LR1 market regained four points to the WS65 mark. In the 37,000mt UKContinent/USAC market rates continued to slide, settling at around WS67, down around five points from a week ago.",
+      "keywords": [
+        "brazil",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "around",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

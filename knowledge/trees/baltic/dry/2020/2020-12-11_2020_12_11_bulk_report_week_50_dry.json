@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__root",
+  "doc_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 50",
+  "section_path": [
+    "Bulk report - Week 50"
+  ],
+  "section_path_text": "Bulk report - Week 50",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market broke lower this week down to $10,295 on the 5TC taking it out of its recent range. After a positive end to the week the 5TC now resides at $11,889. Owners' focus looked to be dwelling on the reliable Pacific cargo flow as prospects further west looked to be dwindling.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 889,
+  "source_path": "reports/baltic/dry/2020/2020-12-11_bulk-report-week-50_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market broke lower this week down to $10,295 on the 5TC taking it out of its recent range. After a positive end to the week the 5TC now resides at $11,889.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "route",
+        "cents"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 238,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A firm week in the Panamax market yielding solid rate gains for the owners. The North Atlantic, for the most part, was driven by the quick Baltic rounds with premium rates well in excess of $20,000 being concluded several times.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "japan",
+        "coal",
+        "trips"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Supramax market witnessed something approaching a minor renaissance this week, with some brokers suggesting a tightening supply/demand dynamic, predominantly from the Continent, Black Sea and the US Gulf. The US Gulf fronthaul route proved to be a main beneficiary, gaining $400 on the week to close at $22,883.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "coal",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry",
+      "parent_id": "baltic_dry_2020-12-11_2020_12_11_bulk_report_week_50_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The movement in the Atlantic basin was not as sharp as previous weeks with mainly east coast South America and the US Gulf lending support to time charter average and BHSI. The improvement from east coast South America became more evident towards the second half of the week whilst the US Gulf remained steady throughout the week.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "was",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

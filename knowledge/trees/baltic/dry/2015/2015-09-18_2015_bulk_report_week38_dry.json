@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__root",
+  "doc_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 38",
+  "section_path": [
+    "Bulk Report - Week 38"
+  ],
+  "section_path_text": "Bulk Report - Week 38",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThere was an upbeat end to the week with rates spiking sharply particularly in the Atlantic. The combination of firmer Brazil and West Australia rates gave a lift to the market. There was talk that several cargoes were fixed from Tubarao to China in excess of $13.00 with two done at $13.25 and at least one on timecharter equating to $13.70.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 839,
+  "source_path": "reports/baltic/dry/2015/2015_bulk-report-week38_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There was an upbeat end to the week with rates spiking sharply particularly in the Atlantic. The combination of firmer Brazil and West Australia rates gave a lift to the market.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "singapore",
+        "japan",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 258,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Paper values to some extent led the way for a panamax rate improvement: with apparently keener interest in taking period tonnage. Fairly average 73,000-tonners were seeing charterers reportedly bidding in the low $7,000 daily range for short period.",
+      "keywords": [
+        "panamax",
+        "china",
+        "brazil",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "daily",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__s03_supramax",
+      "doc_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Activity remains, although rates in both theatres are down with decreases on all index routes on a daily basis. The east coast South America market particularly slipped with the Four Kitakami 2009-built 55,668-dwt having covered basis delivery east coast South America redelivery Singapore-Japan at $10,250 daily plus $130,000 ballast bonus which was down on last week.",
+      "keywords": [
+        "supramax",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "daily",
+        "dwt",
+        "east",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__s04_handysize",
+      "doc_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2015-09-18_2015_bulk_report_week38_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Again overall rates are down on last week. In the Atlantic Basin the general feeling from brokers was of easing rates with less activity from the Black Sea grain trade whilst the Continent remained unexciting.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 161,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__root",
+  "doc_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 28",
+  "section_path": [
+    "Tanker report - Week 28"
+  ],
+  "section_path_text": "Tanker report - Week 28",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nIn the Middle East the market for 280,000mt to US Gulf (routing via the Cape/Cape) continues to be assessed around the WS18-18.5 mark while rates for 270,000mt to China have remained flat at WS31.5 (showing a round-trip TCE of minus $5.6k/day). In the Atlantic, rates for 260,000mt West Africa to China improved by almost two points to WS34.5-35 level (a TCE of minus $1.1k/day round trip) and 270,000mt US Gulf to China is still being rated at $3.95m (a roundtrip TCE of about minus $670/day). Suezmax\nIn the 130,000mt Nigeria/UK Continent market rates have gained 2.5 points to WS52 (a round-trip TCE of about minus $1.1k/day).",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 922,
+  "source_path": "reports/baltic/tanker/2021/2021-07-16_tanker-report-week-28_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker",
+      "parent_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "In the Middle East the market for 280,000mt to US Gulf (routing via the Cape/Cape) continues to be assessed around the WS18-18.5 mark while rates for 270,000mt to China have remained flat at WS31.5 (showing a round-trip TCE of minus $5.6k/day). In the Atlantic, rates for 260,000mt West Africa to China improved by almost two points to WS34.5-35 level (a TCE of minus $1.1k/day round trip) and 270,000mt US Gulf to China is still being rated at $3.95m (a roundtrip TCE of about minus $670/day).",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "us_gulf",
+        "minus",
+        "tce",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 148,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker",
+      "parent_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "In the 130,000mt Nigeria/UK Continent market rates have gained 2.5 points to WS52 (a round-trip TCE of about minus $1.1k/day). Meanwhile in the Mediterranean rates for 135,000mt Black Sea/Med remain pegged at WS60 (a round-trip TCE of minus $7k/day).",
+      "keywords": [
+        "europe",
+        "k/day",
+        "minus",
+        "round-trip",
+        "tce",
+        "basrah/med",
+        "black",
+        "continent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 107,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker",
+      "parent_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "In the Mediterranean, the market softened with rates for 80,000mt Ceyhan/Lavera losing 4.5 points to WS88 (showing a round-trip TCE of $1.3k/day). In Northern Europe the market remained relatively flat with the rate for 80,000mt Cross-North Sea maintaining WS93 (a round trip TCE of minus $5.5k/day).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "tce",
+        "k/day",
+        "minus",
+        "trip",
+        "points"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 269,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker",
+      "parent_id": "baltic_tanker_2021-07-16_2021_07_16_tanker_report_week_28_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The clean market continues to lack direction this week though there were some positive moves in the East and as a result the BCTI rose from 445 points to 464 by publication. The Middle East was slightly positive with LR2s to Japan (TC1) rising by over 13 WS points to 88.33, a TCE of $3,868.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "meg",
+        "europe",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 385,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

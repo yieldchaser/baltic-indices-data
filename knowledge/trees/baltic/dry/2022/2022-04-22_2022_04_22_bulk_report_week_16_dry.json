@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__root",
+  "doc_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 16",
+  "section_path": [
+    "Bulk report - Week 16"
+  ],
+  "section_path_text": "Bulk report - Week 16",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nAfter several weeks of relatively flat price movement, the Capesize 5TC market has started to show a little positive sentiment with levels pushed to $15,299. Fixture activity on the whole has not been very eventful, yet the Pacific C5 West Australia to Qingdao route was up +0.773 today to $10.741 and has steadily improved over the week. Meanwhile, the cargo to vessel ratio in the Atlantic is said to have tightened - especially for prompt positions.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 879,
+  "source_path": "reports/baltic/dry/2022/2022-04-22_bulk-report-week-16_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "After several weeks of relatively flat price movement, the Capesize 5TC market has started to show a little positive sentiment with levels pushed to $15,299. Fixture activity on the whole has not been very eventful, yet the Pacific C5 West Australia to Qingdao route was up +0.773 today to $10.741 and has steadily improved over the week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "activity",
+        "all"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It was a limited week of trading due to Easter holidays in many regions. A gradual decline across all rates in the Atlantic this week was caused by minimal fresh demand with wide disparity between the bid/offer spread throughout the week.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "coal",
+        "was",
+        "around",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With many countries enjoying Easter celebrations, the information flow was rather slow. However, key areas saw increased positive sentiment with demand returning from the US Gulf and Asia.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "was",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2022-04-22_2022_04_22_bulk_report_week_16_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was a short week for many, but the BHSI made some positive gains after a period of negativity. Brokers spoke of more enquiry in East Coast South America in recent days.",
+      "keywords": [
+        "china",
+        "us_gulf",
+        "japan",
+        "steel",
+        "dwt",
+        "was",
+        "east",
+        "asia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__root",
+  "doc_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 5",
+  "section_path": [
+    "Bulk report - Week 5"
+  ],
+  "section_path_text": "Bulk report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe week proved conspicuous for all the wrong reasons. This was the week when the Baltic Capesize Index (BCI) turned negative, closing at -20, whilst the average of the routes settled at $3,973. With the perennial Q1 weakness, Chinese New Year, the rapidly evolving coronavirus crisis and the rains and flooding in Brazil also weighed heavily on the values.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1017,
+  "source_path": "reports/baltic/dry/2020/2020_bulk-report-week5_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The week proved conspicuous for all the wrong reasons. This was the week when the Baltic Capesize Index (BCI) turned negative, closing at -20, whilst the average of the routes settled at $3,973.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "bauxite",
+        "was",
+        "basis"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 299,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A disrupted week in the market with holidays in the East. The Atlantic continued to labour under the weight of available tonnage and rates here fell sharply throughout the week.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "india",
+        "singapore",
+        "japan",
+        "dwt",
+        "ship",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another poor week for the Baltic Supramax Index (BSI) closing at 524, which is down 18 points from Monday. Period activity remained slow, but a 64,000dwt Ultramax was fixed from the US Gulf for six to eight months, trading for around $13,000.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 274,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry",
+      "parent_id": "baltic_dry_2020-01-31_2020_bulk_report_week5_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It has been a continuous drop since the beginning of the year on the Baltic Handysize Index (BHSI). Having started the year at 465, it closed last week at 332.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "singapore",
+        "east",
+        "fixed",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 187,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

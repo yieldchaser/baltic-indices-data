@@ -29,6 +29,7 @@ regions:
 - europe
 - china
 - atlantic
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2022/2022-08-26_tanker-report-week-34_tanker.html

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__root",
+  "doc_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 24",
+  "section_path": [
+    "Bulk report - Week 24"
+  ],
+  "section_path_text": "Bulk report - Week 24",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nIn the Pacific, the week started with a relatively calmer tone compared to the previous week. Despite the presence of all three major players from West Australia to China, enquiry levels remained thin, resulting in a lack of momentum. However, the market managed to maintain support throughout most the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 890,
+  "source_path": "reports/baltic/dry/2023/2023-06-16_bulk-report-week-24_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry",
+      "parent_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "In the Pacific, the week started with a relatively calmer tone compared to the previous week. Despite the presence of all three major players from West Australia to China, enquiry levels remained thin, resulting in a lack of momentum.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "activity",
+        "enquiry",
+        "levels",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry",
+      "parent_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market returned mostly a flat week but in parts encountered a steady rise following recent weeks of falls. The Atlantic was for the most part grain centric but did witness some trans-Atlantic activity pick up mostly by committed tonnage delivery Aps basis at discounted rates equating to low levels delivery this side.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "pacific",
+        "coal",
+        "grain",
+        "south",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry",
+      "parent_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall, a better week for the sector, although this was mainly led from Asia, which saw better levels of fresh enquiry and a tightening of tonnage availability in most areas. Somewhat of a contrast in the Atlantic, which was rather subdued.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "was",
+        "fixed",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry",
+      "parent_id": "baltic_dry_2023-06-16_2023_06_16_bulk_report_week_24_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The ongoing issues with limited fresh enquiry across both basins continued adding further pressure to vessels opening in June. Across the Atlantic numbers continued to fall.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "japan",
+        "grain",
+        "gas",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

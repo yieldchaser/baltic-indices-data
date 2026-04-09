@@ -36,6 +36,7 @@ regions:
 - india
 - us_gulf
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2022/2022-03-11_tanker-report-week-10_tanker.html

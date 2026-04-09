@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-05-12_2023_05_12_gas_report_week_19_gas__root",
+  "doc_id": "baltic_gas_2023-05-12_2023_05_12_gas_report_week_19_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 19",
+  "section_path": [
+    "Gas report - Week 19"
+  ],
+  "section_path_text": "Gas report - Week 19",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThere has been some fixing activity on the spot with LNG. At the beginning of the week a 155 cbm vessel was fixed from Gladstone up to JKTC for mid-June dates in the high $40,000s. The market has since come down a touch, with rates falling to $43,262 on BLNG1g, a decrease of $6,764 on the week.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "china",
+    "atlantic",
+    "japan",
+    "gas",
+    "are",
+    "but",
+    "cargoes",
+    "fixed",
+    "interest",
+    "ships"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 545,
+  "source_path": "reports/baltic/gas/2023/2023-05-12_gas-report-week-19_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-05-12_2023_05_12_gas_report_week_19_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-05-12_2023_05_12_gas_report_week_19_gas",
+      "parent_id": "baltic_gas_2023-05-12_2023_05_12_gas_report_week_19_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There has been some fixing activity on the spot with LNG. At the beginning of the week a 155 cbm vessel was fixed from Gladstone up to JKTC for mid-June dates in the high $40,000s.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "japan",
+        "gas",
+        "are",
+        "around",
+        "below",
+        "fall"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 256,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-05-12_2023_05_12_gas_report_week_19_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-05-12_2023_05_12_gas_report_week_19_gas",
+      "parent_id": "baltic_gas_2023-05-12_2023_05_12_gas_report_week_19_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Middle East has continued its bull run, with rates rising just under $10.5 over the week to give a closing index publication of $90.143 (a daily TCEC earning return of $75,423). On Monday a rise of $7 in the index set the week off to a good start with market participants seeing bid/offers at ever increasing numbers.",
+      "keywords": [
+        "lpg",
+        "china",
+        "gas",
+        "but",
+        "cargoes",
+        "continued",
+        "fixed",
+        "had"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 283,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__root",
+  "doc_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 9",
+  "section_path": [
+    "Bulk report - Week 9"
+  ],
+  "section_path_text": "Bulk report - Week 9",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nVale's ongoing absence from the Brazil spot market continued to have a negative impact on sentiment, with rates falling in all areas. There were operators still shipping from Brazil, with the rate from Tubarao to China hovering around the mid $12.00s for end March. Rates for Brazil/Continent runs also slumped, with a 180,000-tonne, 10% cargo, fixed from Itaguai to Rotterdam at $4.50 for 26-29 March.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1021,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week9_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry",
+      "parent_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Vale's ongoing absence from the Brazil spot market continued to have a negative impact on sentiment, with rates falling in all areas. There were operators still shipping from Brazil, with the rate from Tubarao to China hovering around the mid $12.00s for end March.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "europe",
+        "still",
+        "around",
+        "booked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 278,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry",
+      "parent_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Last week saw pockets of improvement and sentiment is now optimistic. The Pacific was mainly driven by North Pacific and Indonesian demand.",
+      "keywords": [
+        "panamax",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "coal",
+        "north",
+        "was",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry",
+      "parent_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a more active week on the period front, with a 60,000-dwt vessel, fixed delivery Indonesia, for a short period in the $13,000s. From the Atlantic, a 55,000-dwt ship fixed delivery Fortaleza for 7-10 months, trading with redelivery Atlantic and Singapore-Japan at $12,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry",
+      "parent_id": "baltic_dry_2019-03-01_2019_bulk_report_week9_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall the index remained in positive territory this week, with improved activity from both basins. Coincidentally, most of the fixture information gathered this week was at the level of $8,000, regardless of the route, in both the Atlantic and Pacific.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "crude_oil",
+        "was",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

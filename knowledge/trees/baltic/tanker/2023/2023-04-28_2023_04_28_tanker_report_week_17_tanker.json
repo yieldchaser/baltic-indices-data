@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__root",
+  "doc_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 17",
+  "section_path": [
+    "Tanker report - Week 17"
+  ],
+  "section_path_text": "Tanker report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nLR2\nLR2s in the MEG this week have been relatively subdued. TC1 has remained resolute in the WS180 region. TC20 has shed $107,143 leaving the index currently marked at $4,507,143.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "crude_oil"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1149,
+  "source_path": "reports/baltic/tanker/2023/2023-04-28_tanker-report-week-17_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LR2\nLR2s in the MEG this week have been relatively subdued. TC1 has remained resolute in the WS180 region.",
+      "keywords": [
+        "handysize",
+        "meg",
+        "europe",
+        "currently",
+        "marked",
+        "points",
+        "uk-continent",
+        "week."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 480,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The VLCC market lost ground again this week, as we approach the Far Eastern public holiday period, with rates lower than a week ago in all areas. The rate for 270,000mt Middle East Gulf to China shrank by more than 8.5 points to WS56.64, which translates to a round-trip TCE of about $36,400 per day basis the Baltic Exchange's vessel description.",
+      "keywords": [
+        "capesize",
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Black Sea and Mediterranean markets again struggled to gain any traction with demand still low. The rate for 135,000mt CPC/Med fell 14.5 points to WS124.28 (a round-trip TCE of $53,600 per day).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "day",
+        "markets",
+        "per",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 142,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2023-04-28_2023_04_28_tanker_report_week_17_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the North Sea market, the rate for the 80,000mt Hound Point/Wilhelmshaven route seems to have settled and has remained at the WS130-132.5 level since last Friday (showing a round-trip daily TCE of $37,600). In the Mediterranean, the rate for 80,000mt Ceyhan/Lavera has hovered at the WS152.5 mark this week (a daily round-trip TCE of $44,400).",
+      "keywords": [
+        "aframax",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "crude_oil",
+        "tce",
+        "round-trip",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 308,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

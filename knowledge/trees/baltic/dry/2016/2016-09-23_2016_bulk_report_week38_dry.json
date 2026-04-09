@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__root",
+  "doc_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 38",
+  "section_path": [
+    "Bulk Report - Week 38"
+  ],
+  "section_path_text": "Bulk Report - Week 38",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nQuite an active week as rates firmed up on all the routes every day. The Pacific rally initially seemed to be due to bad weather affecting vessel's positions but the demand continued throughout the week, even after various prompter liftings were covered at higher levels. By the end of the week rates were in the region of $6.45 for Dampier to Qingdao which Rio Tinto fixed on the Marigo P (178,923-dwt, 2016-built) and CCL tonnage basis 8/10 October loading.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1541,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week38_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Quite an active week as rates firmed up on all the routes every day. The Pacific rally initially seemed to be due to bad weather affecting vessel's positions but the demand continued throughout the week, even after various prompter liftings were covered at higher levels.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "coal",
+        "built"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 444,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "An improved week for this sector with a daily increase in the BPI. Sentiment remains strong going into the last few days of September and brokers talk of a lack of tonnage in some areas, combined with possible Cape cargoes being split, was also assisting the panamax owners.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 329,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Atlantic side started quiet with more activity towards the end of the week while the Pacific market kept firm especially for vessels open in north China to CJK area. A Dolphin 57 was covered basis delivery Hamburg for a trip to east coast South America at $6,250 daily for the first 45 days and the balance at $8,250 daily.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 389,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry",
+      "parent_id": "baltic_dry_2016-09-23_2016_bulk_report_week38_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A balanced week with brokers in this sector keeping busy for all deliveries. Overall some better rates being paid for Asian cargoes and tonnage demand seems to be improving.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 364,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

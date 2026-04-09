@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__root",
+  "doc_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 24",
+  "section_path": [
+    "Bulk report - Week 24"
+  ],
+  "section_path_text": "Bulk report - Week 24",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA depressing end to the week for owners with rates dropping in every area of the market with few willing to suggest if a floor has been reached. In the Atlantic, trading in the north was piecemeal, culminating in Cargill fixing in EdF tonnage for a 2-11 July 150,000-tonnne cargo from Puerto Bolivar to Rotterdam at a weaker $6.20. Timecharter trading was minimal with rates barely holding over $8,000 daily for transatlantic rounds.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1476,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week24_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry",
+      "parent_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A depressing end to the week for owners with rates dropping in every area of the market with few willing to suggest if a floor has been reached. In the Atlantic, trading in the north was piecemeal, culminating in Cargill fixing in EdF tonnage for a 2-11 July 150,000-tonnne cargo from Puerto Bolivar to Rotterdam at a weaker $6.20.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "cargo",
+        "july",
+        "cargoes"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 302,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry",
+      "parent_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "In contrast to capesize, a positive week for panamaxes and kamsarmaxes with rates firming in all areas particularly in the north Atlantic. The cargo volumes in the north Atlantic favoured owners prompting rises from the lows seen a month ago with round voyage rates nudging five figures.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "built",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 340,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__s03_supramax",
+      "doc_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry",
+      "parent_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Most of the routes in both Atlantic and Pacific basin maintained a positive trend since the beginning of the week. However, the Mediterranean market slipped due to plentiful vessel supply in the area.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 316,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__s04_handysize",
+      "doc_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry",
+      "parent_id": "baltic_dry_2017-06-16_2017_bulk_report_week24_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Despite significant numbers in Greece for the shipbrokers' dinner there, Thursday saw a plus day for all six BHSI routes with 20 April this year the last time it occurred. Levels pushed ahead from east coast South America and the US Gulf during the week.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "brazil",
+        "europe",
+        "us_gulf",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 504,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -33,6 +33,7 @@ regions:
 - pacific
 - us_gulf
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2025/2025-10-03_tanker-report-week-40_tanker.html

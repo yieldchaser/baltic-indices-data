@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__root",
+  "doc_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 22",
+  "section_path": [
+    "Bulk report - Week 22"
+  ],
+  "section_path_text": "Bulk report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market continued its steady ascent over the past week to improved levels. The TC average opened the previous week at $12,243 and climbed through respectable fixture volumes, predominately in the East, to close Friday at $12,987. The West Australia to China C5 route started the week at $7.036, reaching fixing levels around $7.60 mid-week, before closing on Friday at $7.223.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 869,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week22_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry",
+      "parent_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market continued its steady ascent over the past week to improved levels. The TC average opened the previous week at $12,243 and climbed through respectable fixture volumes, predominately in the East, to close Friday at $12,987.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "around",
+        "friday",
+        "was",
+        "closing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry",
+      "parent_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With various national holidays and shipping events, there was less Atlantic market information available. However, some felt the week ended with a softer tone.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "india",
+        "singapore",
+        "japan",
+        "grain",
+        "built"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__s03_supramax",
+      "doc_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry",
+      "parent_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A split market appeared during the week. Routes from the Atlantic gained ground, while Asia routes came under downward pressure.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry",
+      "parent_id": "baltic_dry_2019-05-31_2019_bulk_report_week22_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Since mid-May, the Baltic Handysize Index (BHSI) has slowly gained pace; the same trend was maintained this week. While Brokers described the market as lacking action, East Coast South America continued to improve.",
+      "keywords": [
+        "handysize",
+        "pacific",
+        "europe",
+        "india",
+        "was",
+        "open",
+        "coast",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

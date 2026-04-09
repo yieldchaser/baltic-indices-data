@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__root",
+  "doc_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 36",
+  "section_path": [
+    "Tanker report - Week 36"
+  ],
+  "section_path_text": "Tanker report - Week 36",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nRates in the Middle East Gulf fell this week, as 280,000mt to the US Gulf, basis Cape to Cape, is now assessed two points lower at WS 25. 270,000mt to China is down almost 10 points from a week ago at very low WS 50s. 260,000mt West Africa to China is also in the very low WS 50s, down about six points.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 533,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week36_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker",
+      "parent_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates in the Middle East Gulf fell this week, as 280,000mt to the US Gulf, basis Cape to Cape, is now assessed two points lower at WS 25. 270,000mt to China is down almost 10 points from a week ago at very low WS 50s.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf",
+        "cape",
+        "down"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 148,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker",
+      "parent_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates across this asset-class have been crab-like this week, with 130,000mt West Africa to UK-Continent moving sideways at WS 60 level. 135,000mt Black Sea to the Mediterranean was steady at WS 70.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "mediterranean",
+        "africa",
+        "although",
+        "asset-class",
+        "basrah",
+        "black"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 88,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker",
+      "parent_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "80,000mt Ceyhan to the Mediterranean increased another 10 points to WS 95, whilst a similar long-awaited rise was seen in Cross-North Sea rates, which are now at WS 95, with 100,000mt Baltic to UK-Continent up 17.5 points to WS 75. Bigger improvements were seen on the other side of the Atlantic, 70,000mt Caribbean to US Gulf went up over 25 points to WS 117.5 region, while 70,000mt US Gulf to the Mediterranean increased about 20 points to WS 105-107.5 level.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "gulf",
+        "increased",
+        "mediterranean",
+        "seen"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 128,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker",
+      "parent_id": "baltic_tanker_2019-09-06_2019_tanker_report_week36_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market for 75,000mt Middle East Gulf to Japan came under downward pressure, easing from around WS 110 to WS 102.5. 55,000mt to Japan trade followed suit, softening from low WS 120s to WS 117.5.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "around",
+        "low",
+        "easing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 156,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

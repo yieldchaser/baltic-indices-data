@@ -45,6 +45,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 143
 signals: {}
 source: book
 source_path: reports/The International Handbook of Shipping Finance Theory and Practice

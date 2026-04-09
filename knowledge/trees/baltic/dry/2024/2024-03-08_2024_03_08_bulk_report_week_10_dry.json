@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__root",
+  "doc_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 10",
+  "section_path": [
+    "Bulk report - Week 10"
+  ],
+  "section_path_text": "Bulk report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThroughout the week, the capesize market experienced shifts in sentiment and activity. The week commenced robustly in the Pacific, with all three miners bustling with activity, driving up rates, and causing C5 to spike by at least $1.00. However, as the week progressed there was a notable softening in market sentiment, particularly evidenced by a substantial drop in the BCI 5TC which plummeted by $3,142 to reach $31,260, and the C5 index experienced a significant drop of $1.56 to $12.90.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1030,
+  "source_path": "reports/baltic/dry/2024/2024-03-08_bulk-report-week-10_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Throughout the week, the capesize market experienced shifts in sentiment and activity. The week commenced robustly in the Pacific, with all three miners bustling with activity, driving up rates, and causing C5 to spike by at least $1.00.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "all",
+        "africa"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 323,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Mixed market signals highlighted well with a volatile FFA market failed to dampen spirits in the Panamax sector, with significant gains made. Transatlantic volume remained thin still, but positive sentiment radiated from firmer rates on the fronthaul trips.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "dwt",
+        "trips."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A week of mixed fortunes for the owning side of things. The Atlantic overall lacked much fresh impetus certainly from the US Gulf, whilst there was also limited possibilities from the South Atlantic.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2024-03-08_2024_03_08_bulk_report_week_10_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "After an extended period of decline, the first shoots of positivity emerged in the US Gulf, with more visible activity, a 39,000-dwt opening in Tampa fixing to the Continent with grains at $11,500 whilst a 40,000-dwt fixed from Baltimore to Turkey with an intended cargo of scrap at $13,000. The South Atlantic also showed promise of improvements with a 36,000-dwt rumored to have fixed from Antonina to the Continent with sugar at around $18,500 and a 38,000-dwt fixing from Recalada to WC South America with grains at $27,000.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

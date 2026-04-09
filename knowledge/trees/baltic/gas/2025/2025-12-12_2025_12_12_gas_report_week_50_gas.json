@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-12-12_2025_12_12_gas_report_week_50_gas__root",
+  "doc_id": "baltic_gas_2025-12-12_2025_12_12_gas_report_week_50_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 50",
+  "section_path": [
+    "Gas report - Week 50"
+  ],
+  "section_path_text": "Gas report - Week 50",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market softened this week, with rates easing across all major routes after the strong gains of the past two months, driven largely by the rebalancing of 2-stroke tonnage in the West. On the BLNG1 Australia-Japan route, 174k cbm vessels fell $3,400 to $87,000 per day, while 160k cbm ships posted a smaller decline of $400 to $68,600 per day, following the cooling sentiment in the west. The BLNG2 US Gulf-Continent route saw the steepest correction this week, with 174k cbm rates dropping $16,800 to $115,000 per day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "day",
+    "cbm",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 506,
+  "source_path": "reports/baltic/gas/2025/2025-12-12_gas-report-week-50_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-12-12_2025_12_12_gas_report_week_50_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-12-12_2025_12_12_gas_report_week_50_gas",
+      "parent_id": "baltic_gas_2025-12-12_2025_12_12_gas_report_week_50_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market softened this week, with rates easing across all major routes after the strong gains of the past two months, driven largely by the rebalancing of 2-stroke tonnage in the West. On the BLNG1 Australia-Japan route, 174k cbm vessels fell $3,400 to $87,000 per day, while 160k cbm ships posted a smaller decline of $400 to $68,600 per day, following the cooling sentiment in the west.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "per"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 278,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-12-12_2025_12_12_gas_report_week_50_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-12-12_2025_12_12_gas_report_week_50_gas",
+      "parent_id": "baltic_gas_2025-12-12_2025_12_12_gas_report_week_50_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market saw mixed activity this week, with diverging trends between the East and West. In the East, activity remained relatively subdued, leading to downward pressure on rates as sentiment softened and the tonnage list lengthened.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "activity",
+        "per",
+        "route",
+        "tce",
+        "day",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

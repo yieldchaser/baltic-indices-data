@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-01-06_2023_01_06_gas_report_week_1_gas__root",
+  "doc_id": "baltic_gas_2023-01-06_2023_01_06_gas_report_week_1_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 1",
+  "section_path": [
+    "Gas report - Week 1"
+  ],
+  "section_path_text": "Gas report - Week 1",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nA relatively warm winter has impacted gas usage, coupled with higher inventory levels, as well as longer tonnage lists (with further shutdowns in Freeport and cancellations elsewhere), spot rates have been put under continued pressure. There have been cargoes offered out, but with a plentiful supply of cold and modern tonnage the rates have been dropping. Out in Australia a drop of over $30,000 has given the BLNG1g R.V rate of $129,779 Aus-Japan, although market reports suggest there have been deals done at less for relet tonnage.",
+  "keywords": [
+    "capesize",
+    "lng",
+    "lpg",
+    "australia",
+    "europe",
+    "us_gulf",
+    "japan",
+    "crude_oil",
+    "gas",
+    "but",
+    "drop",
+    "could"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 581,
+  "source_path": "reports/baltic/gas/2023/2023-01-06_gas-report-week-1_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-01-06_2023_01_06_gas_report_week_1_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-01-06_2023_01_06_gas_report_week_1_gas",
+      "parent_id": "baltic_gas_2023-01-06_2023_01_06_gas_report_week_1_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A relatively warm winter has impacted gas usage, coupled with higher inventory levels, as well as longer tonnage lists (with further shutdowns in Freeport and cancellations elsewhere), spot rates have been put under continued pressure. There have been cargoes offered out, but with a plentiful supply of cold and modern tonnage the rates have been dropping.",
+      "keywords": [
+        "capesize",
+        "lng",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
+        "crude_oil",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 307,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-01-06_2023_01_06_gas_report_week_1_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-01-06_2023_01_06_gas_report_week_1_gas",
+      "parent_id": "baltic_gas_2023-01-06_2023_01_06_gas_report_week_1_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "We start the new year with big adjustments down for all three BLPG routes. The last publication was 23 December, so an adjustment was expected, and we have witnessed a continued downward pressure on rates.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "drop",
+        "tce",
+        "but",
+        "earnings",
+        "end",
+        "expected"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 268,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

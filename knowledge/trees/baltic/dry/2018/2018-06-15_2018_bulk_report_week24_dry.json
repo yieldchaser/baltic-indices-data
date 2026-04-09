@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__root",
+  "doc_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 24",
+  "section_path": [
+    "Bulk report - Week 24"
+  ],
+  "section_path_text": "Bulk report - Week 24",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Atlantic market improved this week, with increased activity from Brazil for July shipments plus a few June cargoes fuelling rate rises, with close to $20.00 rumoured paid. Vale took a few July ships from Tubarao to Qingdao early in the week at rates in the low $18.00s, with others quickly following and pushing rates higher. Further north, there was some increased activity, with tonnage still tight, but this market can swing either way very quickly.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1211,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week24_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry",
+      "parent_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Atlantic market improved this week, with increased activity from Brazil for July shipments plus a few June cargoes fuelling rate rises, with close to $20.00 rumoured paid. Vale took a few July ships from Tubarao to Qingdao early in the week at rates in the low $18.00s, with others quickly following and pushing rates higher.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "singapore",
+        "japan",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 369,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry",
+      "parent_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A somewhat strange week, which started very slowly following Posidonia, and ended with a holiday in Singapore. Activity from EC South America continued to dominate the market and rates improved particularly for nearby positions but not dramatically, with Kamsarmaxes now fixing just above $16,500 plus a $650,000 ballast bonus compared to $16,000 plus $600,000 ballast bonus at the end of last week.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "singapore",
+        "ballast",
+        "bonus",
+        "continued",
+        "daily.",
+        "lack"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry",
+      "parent_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "US Gulf captured the spotlight this week in the Supramax-Ultramax pool. Rates moved sharply higher for the Gulf area with cargoes for late June dates lending support.",
+      "keywords": [
+        "panamax",
+        "supramax",
+        "china",
+        "brazil",
+        "pacific",
+        "meg",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 389,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry",
+      "parent_id": "baltic_dry_2018-06-15_2018_bulk_report_week24_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Most market sources suggested from EC South America, larger-sized handy vessels were seeing improved offers, with more cargoes in the market for second-half June. However, some were not fully convinced whether the upcoming cargoes would balance out the long tonnage list in the area.",
+      "keywords": [
+        "handysize",
+        "china",
+        "brazil",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

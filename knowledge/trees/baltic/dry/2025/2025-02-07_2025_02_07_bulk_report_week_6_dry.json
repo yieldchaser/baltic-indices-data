@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__root",
+  "doc_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 6",
+  "section_path": [
+    "Bulk report - Week 6"
+  ],
+  "section_path_text": "Bulk report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a generally softer week, with the 5TC declining to $6,733 by Thursday then edging back up to $6,964 by the end of the week. Despite the Pacific showing signs of strength with a healthy cargo flow and tightening of tonnage early in the week, reported fixtures struggled to push levels higher. The C5 index hovered around the upper $6s to settle at $6,71 by weeks end.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 899,
+  "source_path": "reports/baltic/dry/2025/2025-02-07_bulk-report-week-6_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a generally softer week, with the 5TC declining to $6,733 by Thursday then edging back up to $6,964 by the end of the week. Despite the Pacific showing signs of strength with a healthy cargo flow and tightening of tonnage early in the week, reported fixtures struggled to push levels higher.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "around",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Mixed market signals highlighted well with a volatile FFA market failed to dampen spirits in the Panamax sector, with significant gains made. Transatlantic volume remained thin still, but positive sentiment radiated from firmer rates on the fronthaul trips.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With the end of the widespread Lunar New Year holidays, the sector saw upward momentum return in most areas throughout the week. In the Atlantic, better numbers were seen than of late, a 63,000-dwt was heard fixed delivery EC South America for a fronthaul in the mid $11,000s and mid $100,000s ballast bonus.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "india",
+        "singapore",
+        "dwt",
+        "delivery",
+        "fixed",
+        "redelivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 238,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry",
+      "parent_id": "baltic_dry_2025-02-07_2025_02_07_bulk_report_week_6_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the market displayed a mixed performance with slight movements across both basins. The Continent and Mediterranean regions saw some positive momentum, with rates edging slightly above previous levels and market appearing more supported.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "grain",
+        "crude_oil",
+        "steel",
+        "dwt",
+        "redelivery",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "breakwave_drybulk_2022-06-07__root",
+  "doc_id": "breakwave_drybulk_2022-06-07",
+  "parent_id": null,
+  "title": "BDRY - June 7, 2022",
+  "section_path": [
+    "BDRY - June 7, 2022"
+  ],
+  "section_path_text": "BDRY - June 7, 2022",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Volatility surges as Capesize sentiment turns sour - Following almost a tripling in performance in less than a month, Another week, more China stimulus talks - With what can only be described as the worst state since the GFC, the Dry bulk upcycle to continue in 2022 - Although the high level of volatility of 2021 might slow down, the dry bulk",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "china",
+    "brazil",
+    "australia",
+    "iron_ore",
+    "coal",
+    "grain",
+    "steel",
+    "yoy",
+    "ytd",
+    "average"
+  ],
+  "page_start": 1,
+  "page_end": 2,
+  "token_count": 375,
+  "source_path": "reports/drybulk/2022/2022-06-07_Breakwave_Dry_Bulk.pdf",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "breakwave_drybulk_2022-06-07__s01_overview",
+      "doc_id": "breakwave_drybulk_2022-06-07",
+      "parent_id": "breakwave_drybulk_2022-06-07__root",
+      "title": "Overview",
+      "section_path": [
+        "Overview"
+      ],
+      "section_path_text": "Overview",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "- Volatility surges as Capesize sentiment turns sour - Following almost a tripling in performance in less than a month,\n- Another week, more China stimulus talks - With what can only be described as the worst state since the GFC, the\n- Dry bulk upcycle to continue in 2022 - Although the high level of volatility of 2021 might slow down, the dry bulk",
+      "keywords": [
+        "capesize",
+        "china",
+        "volatility",
+        "almost",
+        "although",
+        "another",
+        "can",
+        "continue"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "token_count": 81,
+      "section_type": "overview",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_drybulk_2022-06-07__s02_fundamentals",
+      "doc_id": "breakwave_drybulk_2022-06-07",
+      "parent_id": "breakwave_drybulk_2022-06-07__root",
+      "title": "Fundamentals",
+      "section_path": [
+        "Fundamentals"
+      ],
+      "section_path_text": "Fundamentals",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "- China Steel Production (YTD: 336mt, YOY: -10.3%)\n- China Steel Inventories (YTD: 7.7mt, YOY: 14.4%)\n- China Iron Ore Inventories (YTD: 132mt, YOY: 3.4%)\n- China Iron Ore Imports (YTD: 354mt, YOY: -7.3%)\n- China Coal Imports (YTD: 75mt, YOY: -16.4%)\n- China Soybean Imports (YTD: 28mt, YOY: -0.9%)\n- Brazil Iron Ore Exports (YTD: 97mt, YOY: -9.2%)\n- Australia Iron Ore Exports (YTD: 278mt, YOY: 0.5%)\n- Dry Bulk Fleet (YTD: 890dwt, YOY: 3.1%)\n- Baltic Dry Index Average (YTD: Baltic Dry Index, Average, YOY: 2,262)\n- Capesize Spot Rates Average (YTD: Capesize Spot Rates, Average, YOY: 17,611)\n- Panamax Spot Rates Average (YTD: Panamax Spot rates, Average, YOY: 23,632)",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "iron_ore",
+        "coal",
+        "grain"
+      ],
+      "page_start": 2,
+      "page_end": 2,
+      "token_count": 288,
+      "section_type": "fundamentals",
+      "children": []
+    }
+  ]
+}

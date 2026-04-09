@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__root",
+  "doc_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 26",
+  "section_path": [
+    "Bulk report - Week 26"
+  ],
+  "section_path_text": "Bulk report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market showed variability over the past week, as most routes were active yet sentiment differed from region to region. The Pacific market largely softened on the back of an inactive West Australian market. Charterers were usually able to achieve lower than last done, albeit with minimal trade volumes heard.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 993,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week26_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry",
+      "parent_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market showed variability over the past week, as most routes were active yet sentiment differed from region to region. The Pacific market largely softened on the back of an inactive West Australian market.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west",
+        "australian",
+        "back"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry",
+      "parent_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It was a strong week in the Atlantic with sources commenting they had rarely seen so few available ships on early positions. The index increased over $2,500 during the week for transatlantic rounds, with a modern Kamsarmax agreeing $12,500 for a round, admittedly from a good delivery in Aughinish, via the US East Coast to Jorf Lasfar.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "fixed",
+        "kamsarmax",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry",
+      "parent_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Positive sentiment remained across all areas as the week ended. On the period front, brokers said that a few Ultramaxes were fixed at $11,000 for four to six months Atlantic trading.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 260,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry",
+      "parent_id": "baltic_dry_2019-06-28_2019_bulk_report_week26_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Baltic Handysize Index (BHSI) was largely flat this week with gains mainly from the Atlantic basin. More period fixtures were reported, with two 39,000dwt ships reportedly fixing at $11,000 basis delivery Tampico and Świnoujście respectively and both redelivery within the Atlantic.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "atlantic",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 271,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

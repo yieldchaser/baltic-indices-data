@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__root",
+  "doc_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 26",
+  "section_path": [
+    "Bulk report - Week 26"
+  ],
+  "section_path_text": "Bulk report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThere was a turning of the tide this week as rates initially rallied robustly before negative sentiment settled in to see rates plummet from midweek. The Pacific basin, and in particular the WC Australia/China (C5) market, was the early driver with rates pushing up on minimal fixing activity. The remainder of the market was also quiet at this time but was content to rally on the positive sentiment generated.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 918,
+  "source_path": "reports/baltic/dry/2021/2021-07-02_bulk-report-week-26_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There was a turning of the tide this week as rates initially rallied robustly before negative sentiment settled in to see rates plummet from midweek. The Pacific basin, and in particular the WC Australia/China (C5) market, was the early driver with rates pushing up on minimal fixing activity.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The BPI average returned its highest value since May 2010 as the imbalance of supply versus demand in the Atlantic impacted rates across most origins. Along with a vigorous looking north Atlantic market, Black sea grain exports kicked into gear and with it came sourcing of tonnage from far-flung deliveries, as far out as China, with the tonnage count for Skaw-Mediterranean positions dwindling.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "singapore",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Whilst most areas remained positive, there was some weakening from the US Gulf with limited fresh enquiry and the strong sentiment seen elsewhere eased. From Asia, after a strong start, some described the areas stabilising with rates hovering around last done.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry",
+      "parent_id": "baltic_dry_2021-07-02_2021_07_02_bulk_report_week_26_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Atlantic remained firm but Asia was less bullish. East Coast South America was the main driving force, with numbers pushing up from Monday when a 38,000-dwt was fixed basis APS Recalada for a trip to the west Mediterranean at $35,000.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "steel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

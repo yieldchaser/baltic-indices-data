@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__root",
+  "doc_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 41",
+  "section_path": [
+    "Bulk report - Week 41"
+  ],
+  "section_path_text": "Bulk report - Week 41",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market faced a generally soft week with declining rates across the board. The BCI 5TC fell every day besides Friday, which closed at $23,509, a significant drop from Monday's $26,213. The Pacific market saw reduced miner activity, with C5 rates declining from the low $10's early in the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 967,
+  "source_path": "reports/baltic/dry/2024/2024-10-11_bulk-report-week-41_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market faced a generally soft week with declining rates across the board. The BCI 5TC fell every day besides Friday, which closed at $23,509, a significant drop from Monday's $26,213.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal",
+        "fixtures"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "After a promising opening to the week, activities in the Panamax market slowly but surely became something of a grind as confidence eroded in both basins. The North Atlantic struggled for any momentum all week.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "singapore",
+        "japan",
+        "grain",
+        "delivery",
+        "dwt",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather positional week was described by many. Whilst upward pressure was seen from the US Gulf, an Ultramax was rumoured to have fixed a fronthaul trip at around $27,000.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "was",
+        "dwt",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2024-10-11_2024_10_11_bulk_report_week_41_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market this week saw minimal visiblity activity across both basins. The rates were rather steady across the Continent and the Mediterranean with sentiment appearing positional.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "japan",
+        "dwt",
+        "fixed",
+        "was",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

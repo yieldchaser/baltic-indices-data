@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__root",
+  "doc_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 37",
+  "section_path": [
+    "Bulk Report - Week 37"
+  ],
+  "section_path_text": "Bulk Report - Week 37",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe sudden dip in physical rates this week was largely seen as a mid-week blip with then some aggressive moves to drive rates down, but as the week closed the market bounced back and this despite the Asian holidays. Today the market pushed up with still a significant volume of business to be done. In the East, the major shippers from West Australia were largely in evidence most of the week and on the run to China rates dropped mid-week to $5.05 and early today regained significant ground to hit $5.75 with owners wanting in excess of $6.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1384,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week37_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The sudden dip in physical rates this week was largely seen as a mid-week blip with then some aggressive moves to drive rates down, but as the week closed the market bounced back and this despite the Asian holidays. Today the market pushed up with still a significant volume of business to be done.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "today",
+        "but",
+        "mid-week"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 292,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates largely drifted slightly lower in most areas with so far the US Gulf and east coast South America front haul showing the most resistance. However, with the cargo volume thinner from the latter area some ballasters were continuing on further north adding to the competition in the US Gulf.",
+      "keywords": [
+        "capesize",
+        "supramax",
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 340,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A mixed bag this week with upward pressure remaining for prompt vessels open east coast South America whilst other areas such as the Black Sea and the US Gulf performing less well with a lack of enquiry and build-up of vessels. A 61,000 dwt was fixed basis delivery Paranagua for a trip redelivery Continent at around $9,250 daily.",
+      "keywords": [
+        "china",
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 490,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2016-09-16_2016_bulk_report_week37_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "There were public holidays in many parts of the world this week, but the BHSI had a fairly stable time and overall moved very little, with south east Asia routes faring better than those in the Atlantic. A 30,000 dwt was fixed basis delivery east coast South America for a trip to the Continent at $5400 daily.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

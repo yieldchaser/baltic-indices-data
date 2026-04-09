@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__root",
+  "doc_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 10",
+  "section_path": [
+    "Tanker report - Week 10"
+  ],
+  "section_path_text": "Tanker report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nThe Middle East Gulf has been active this week with rates improving on all sizes. TC1 (75kt MEG/Japan) has had a weekly gain of six points to WS195.31 (a round-trip TCE of $52,300 per day). Meanwhile, the Western discharging TC20 recovered by $107,000 to 4,735,714.",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1121,
+  "source_path": "reports/baltic/tanker/2023/2023-03-10_tanker-report-week-10_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker",
+      "parent_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Middle East Gulf has been active this week with rates improving on all sizes. TC1 (75kt MEG/Japan) has had a weekly gain of six points to WS195.31 (a round-trip TCE of $52,300 per day).",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 548,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker",
+      "parent_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The VLCC market strengthened dramatically this week with rates (and earnings) sharply improving on all routes. For the 270,000mt Middle East Gulf to China voyage the rate rocketed 27 points (38%) to WS98.55, which shows a daily round voyage TCE of $92,522 basis the Baltic Exchange's vessel description.",
+      "keywords": [
+        "capesize",
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker",
+      "parent_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The rate for 135,000mt CPC/Augusta was pared back this week with rates coming off 3.5 points to WS167 (a round-trip TCE of $87,000 per day). In West Africa the fundamentals were unable to support the sentiment and rates tumbled 25 points by Thursday's assessment at WS116 for the 130,000mt Nigeria/Rotterdam voyage.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "points",
+        "africa",
+        "around",
+        "assessment",
+        "back",
+        "basrah/lavera"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 141,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker",
+      "parent_id": "baltic_tanker_2023-03-10_2023_03_10_tanker_report_week_10_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the North Sea market, rates for the 80,000mt Hound Point/Wilhelmshaven route fell back five points to WS175 (a round-trip daily TCE of about $72,000). In the Mediterranean, the rate for 80,000mt Ceyhan/Lavera shed seven points - a shade above WS185 (a daily round trip TCE of $61,100).",
+      "keywords": [
+        "aframax",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "tce",
+        "points",
+        "round-trip",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 230,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

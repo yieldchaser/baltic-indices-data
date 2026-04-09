@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__root",
+  "doc_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 51",
+  "section_path": [
+    "Tanker report - Week 51"
+  ],
+  "section_path_text": "Tanker report - Week 51",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nRates for 270,000mt Middle East Gulf to China are up almost 20 points from a week ago to WS120/122.5 level. However, there is now some downward pressure and 280,000mt Middle East Gulf (MEG) to US Gulf (USG), Cape to Cape is now about WS65. In the Atlantic a similar scenario was seen, with rates for 260,000mt West Africa to China firming 15 points to WS115/117.5 region.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 522,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week51_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker",
+      "parent_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Rates for 270,000mt Middle East Gulf to China are up almost 20 points from a week ago to WS120/122.5 level. However, there is now some downward pressure and 280,000mt Middle East Gulf (MEG) to US Gulf (USG), Cape to Cape is now about WS65.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf",
+        "now"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 137,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker",
+      "parent_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The 130,000mt West Africa to UK-Continent (UKC) market has firmed again, moving up about 12 points to WS152.5. 135,000mt Black Sea to the Mediterranean has had almost 10 points added, levelling out at WS157.5.",
+      "keywords": [
+        "brazil",
+        "west_africa",
+        "europe",
+        "points",
+        "mediterranean",
+        "added",
+        "africa",
+        "again"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 112,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker",
+      "parent_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The 80,000mt cross North Sea market shrank by 10 points to WS235. 100,000mt Baltic to UKC lost five points to WS197.5/200 region.",
+      "keywords": [
+        "atlantic",
+        "singapore",
+        "points",
+        "level",
+        "usg",
+        "are",
+        "assessed",
+        "being"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 157,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker",
+      "parent_id": "baltic_tanker_2019-12-20_2019_tanker_report_week51_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market for both 75,000mt and 55,000mt from the Middle East Gulf to Japan made marginal gains of about three points to settle in the high WS150s. Rates for 37,000mt to US Atlantic Coast gained a further 10 points to WS185 level and 38,000mt USG to UKC lost 2.5 points to settle at WS125.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "japan",
+        "points",
+        "settle",
+        "assessments",
+        "both",
+        "coast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 103,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

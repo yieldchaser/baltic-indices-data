@@ -44,6 +44,7 @@ regions:
 - india
 - singapore
 - japan
+section_count: 72
 signals: {}
 source: book
 source_path: reports/The World’s Key Industry History and Economics of International

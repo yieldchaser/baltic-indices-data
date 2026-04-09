@@ -34,6 +34,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2018/2018_tanker-report-week49_tanker.html

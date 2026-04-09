@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__root",
+  "doc_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 4",
+  "section_path": [
+    "Bulk report - Week 4"
+  ],
+  "section_path_text": "Bulk report - Week 4",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market endured a challenging week, with a steadily declining trend across the board. The BCI 5TC shed $2,852 over the week, closing at $8,156. In the Pacific, miner activity remained sparse, with only one miner consistently present.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 821,
+  "source_path": "reports/baltic/dry/2025/2025-01-24_bulk-report-week-4_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market endured a challenging week, with a steadily declining trend across the board. The BCI 5TC shed $2,852 over the week, closing at $8,156.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 170,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates continued to slide all week with hopes of the market finding a bottom, but some very low trades were still witnessed. The Pacific began the week active, but as Asian holidays approached, the market slowed significantly towards the weekend.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "between",
+        "low",
+        "against",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Another poor week for the sector as the continued uncertainty and lack of fresh cargo led to rates sliding across the board. The Atlantic remained very subdued, from the US Gulf very little enquiry was seen, a 61,000-dwt fixed delivery US Gulf with petcoke to China at $16,000 mid-week.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "dwt",
+        "delivery",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry",
+      "parent_id": "baltic_dry_2025-01-24_2025_01_24_bulk_report_week_4_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market this week saw minimal visible activity across both basins. The rates kept going down across the Continent and the Mediterranean with sentiment appearing generally soft.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "delivery",
+        "dwt",
+        "fixed",
+        "redelivery",
+        "count",
+        "further"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 173,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

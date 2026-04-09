@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-02-20_2026_02_20_gas_report_week_8_gas__root",
+  "doc_id": "baltic_gas_2026-02-20_2026_02_20_gas_report_week_8_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 8",
+  "section_path": [
+    "Gas report - Week 8"
+  ],
+  "section_path_text": "Gas report - Week 8",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market saw a strong week, with the Atlantic firming and the Pacific remaining flat. With a few uncovered cargoes in the West and a tightening tonnage list at the front end of the fixing window, it led to an upward correction in rates. On the BLNG1 Australia-Japan route, 174k cbm vessels slipped $400 to $27,400/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day.",
+    "route",
+    "improved"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 446,
+  "source_path": "reports/baltic/gas/2026/2026-02-20_gas-report-week-8_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-02-20_2026_02_20_gas_report_week_8_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-02-20_2026_02_20_gas_report_week_8_gas",
+      "parent_id": "baltic_gas_2026-02-20_2026_02_20_gas_report_week_8_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market saw a strong week, with the Atlantic firming and the Pacific remaining flat. With a few uncovered cargoes in the West and a tightening tonnage list at the front end of the fixing window, it led to an upward correction in rates.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-02-20_2026_02_20_gas_report_week_8_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-02-20_2026_02_20_gas_report_week_8_gas",
+      "parent_id": "baltic_gas_2026-02-20_2026_02_20_gas_report_week_8_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market regained momentum this week as participants gradually returned following the Lunar New Year holidays in the East. Improved enquiry and a pickup in fixing activity lent firmer undertones across all major routes, particularly toward the end of the week.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "improved",
+        "route",
+        "tce",
+        "activity",
+        "day."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__root",
+  "doc_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 37",
+  "section_path": [
+    "Bulk Report - Week 37"
+  ],
+  "section_path_text": "Bulk Report - Week 37",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA good volume of cargo in the market but nevertheless rates eased, particularly as many owners/operators appeared to take fright at the idea of being unfixed with a Singapore holiday as the week closed out. There was active trading of the West Australia/Qingdao route but rates slipped over the week to close out around $5.15. Timecharter rates had been holding reasonably steady with a 170,000 tonner open Qingdao fixing at $9,000 daily for a West Australia round and a 179,000 tonner open Fukuyama agreeing $11,500 daily for similar business.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "us_gulf",
+    "singapore",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1039,
+  "source_path": "reports/baltic/dry/2015/2015_bulk-report-week37_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__s01_capesize",
+      "doc_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A good volume of cargo in the market but nevertheless rates eased, particularly as many owners/operators appeared to take fright at the idea of being unfixed with a Singapore holiday as the week closed out. There was active trading of the West Australia/Qingdao route but rates slipped over the week to close out around $5.15.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "singapore",
+        "but",
+        "around",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__s02_panamax",
+      "doc_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Atlantic Panamax rates appeared to be in freefall with cargoes in the north all but drying up. There was a reluctance to go East and some owners were prepared to take low rates for the quicker trips.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "low",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 259,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__s03_supramax",
+      "doc_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A busy week but with definite downward tendencies. Nearly every index route for handysize and supramax witnessing a daily decrease.",
+      "keywords": [
+        "supramax",
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "daily",
+        "built"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 364,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__s04_handysize",
+      "doc_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry",
+      "parent_id": "baltic_dry_2015-09-11_2015_bulk_report_week37_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The handysize vessels have provided limited insight this week. A 35,000 dwt vessel fixing two to three laden legs delivery China at $7,250 daily.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "europe",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 183,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

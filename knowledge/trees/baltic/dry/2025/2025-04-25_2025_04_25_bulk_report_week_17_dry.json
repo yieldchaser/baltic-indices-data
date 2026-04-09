@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__root",
+  "doc_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 17",
+  "section_path": [
+    "Bulk report - Week 17"
+  ],
+  "section_path_text": "Bulk report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market showed a clear upward trajectory this week following a subdued start due to the Easter holidays. The BCI 5TC rose steadily, closing the week at $15,667, up from $13,774 on Tuesday. In the Pacific, sentiment improved significantly midweek as C5 rates climbed from early lows, supported by growing cargo volumes and increased miner activity.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 892,
+  "source_path": "reports/baltic/dry/2025/2025-04-25_bulk-report-week-17_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market showed a clear upward trajectory this week following a subdued start due to the Easter holidays. The BCI 5TC rose steadily, closing the week at $15,667, up from $13,774 on Tuesday.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "firmer",
+        "midweek"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week, the Atlantic market was once again the centre of attention, possibly influenced by the easing of US tariffs before Easter. Strong demand across the basin significantly impacted rates, which surged forward with reports of various fronthaul fixtures from North Coast South America.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "grain",
+        "north",
+        "demand",
+        "was",
+        "coast",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Two sides of a coin this week, whilst the Atlantic was a rather muted affair, the Asian arena saw renewed interest. The Atlantic was described generally as very slow although as there week closed there was better activity from the South Atlantic.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "was",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2025-04-25_2025_04_25_bulk_report_week_17_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market this week saw minimal visible activity across both basins, with the overall sentiment remaining flat. The Continent and Mediterranean market appeared generally weak, with rates drifting slightly below previous levels.",
+      "keywords": [
+        "brazil",
+        "atlantic",
+        "europe",
+        "delivery",
+        "dwt",
+        "redelivery",
+        "fixed",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

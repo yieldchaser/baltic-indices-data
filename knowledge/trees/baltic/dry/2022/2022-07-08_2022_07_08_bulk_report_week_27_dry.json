@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__root",
+  "doc_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 27",
+  "section_path": [
+    "Bulk report - Week 27"
+  ],
+  "section_path_text": "Bulk report - Week 27",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nOverall the market was active in both basins, especially with more fixtures reported from the North Atlantic in midweek. With limited cargo interest at the beginning of the week rates remained negative. The West Australia to Qingdao trade failed to maintain the previous week's level of $11, but climbed back to mid $11s on Thursday before having a marginal decline again on Friday.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 917,
+  "source_path": "reports/baltic/dry/2022/2022-07-08_bulk-report-week-27_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Overall the market was active in both basins, especially with more fixtures reported from the North Atlantic in midweek. With limited cargo interest at the beginning of the week rates remained negative.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "closed",
+        "last",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It has been another week which saw further significant losses. A similar pattern emerged in both basins, owing much to a lack of mineral demand in the Atlantic basin and little fresh cargo emerging from both Australia and NoPac in Asia.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "us_gulf",
+        "both",
+        "delivery",
+        "dwt",
+        "another"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather tricky week for owners with both basins still under pressure and bearish sentiment remaining in many areas. Very little period surfaced, but a 60,000-dwt was heard fixed delivery Far East August/September dates for two years at 113 percent of BSI.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "steel",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2022-07-08_2022_07_08_bulk_report_week_27_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A week of limited activity, brokers said this was mostly due to limited fresh enquiry in both basins putting negative pressure on rates. In East Coast South America, a 36,000-dwt was fixed from Barcarena to Italy with an intended cargo of grains at $22,000.",
+      "keywords": [
+        "brazil",
+        "us_gulf",
+        "grain",
+        "was",
+        "dwt",
+        "fixed",
+        "cargo",
+        "intended"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

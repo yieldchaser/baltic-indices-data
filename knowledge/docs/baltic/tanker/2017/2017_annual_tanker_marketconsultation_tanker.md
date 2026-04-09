@@ -25,6 +25,7 @@ regions:
 - meg
 - west_africa
 - europe
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2017/2017_annual-tanker-marketconsultation_tanker.html

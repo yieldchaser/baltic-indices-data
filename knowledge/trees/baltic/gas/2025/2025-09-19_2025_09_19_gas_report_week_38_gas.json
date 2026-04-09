@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-09-19_2025_09_19_gas_report_week_38_gas__root",
+  "doc_id": "baltic_gas_2025-09-19_2025_09_19_gas_report_week_38_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 38",
+  "section_path": [
+    "Gas report - Week 38"
+  ],
+  "section_path_text": "Gas report - Week 38",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIt has been another soft week in the LNG market, with rates continuing to trend lower across most routes. Limited fresh fixtures and persistent Atlantic weakness weighed on sentiment, though a few Pacific gains provided some balance. On the BLNG1 Australia-Japan route, 174k cbm vessels fell $1,400 to $28,600 per day, while 160k cbm earnings managed a $1,000 rise to $18,300 per day as smaller tonnage saw selective demand in the Pacific.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "day",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 495,
+  "source_path": "reports/baltic/gas/2025/2025-09-19_gas-report-week-38_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-09-19_2025_09_19_gas_report_week_38_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-09-19_2025_09_19_gas_report_week_38_gas",
+      "parent_id": "baltic_gas_2025-09-19_2025_09_19_gas_report_week_38_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It has been another soft week in the LNG market, with rates continuing to trend lower across most routes. Limited fresh fixtures and persistent Atlantic weakness weighed on sentiment, though a few Pacific gains provided some balance.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 281,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-09-19_2025_09_19_gas_report_week_38_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-09-19_2025_09_19_gas_report_week_38_gas",
+      "parent_id": "baltic_gas_2025-09-19_2025_09_19_gas_report_week_38_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It has been a softer week in the LPG market, as charterers approached rate ceilings following last week's sharp gains. With fresh cargo demand easing and tonnage lists showing signs of relief, rates corrected lower across all key routes.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "per",
+        "metric",
+        "route",
+        "tce",
+        "tonne"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 208,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

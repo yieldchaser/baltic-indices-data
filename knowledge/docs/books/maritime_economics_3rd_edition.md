@@ -46,6 +46,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 650
 signals: {}
 source: book
 source_path: reports/Maritime economics 3rd edition.pdf

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__root",
+  "doc_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 29",
+  "section_path": [
+    "Bulk report - Week 29"
+  ],
+  "section_path_text": "Bulk report - Week 29",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA mixed week for the Capesize sector, but it ended on a positive note. The timecharter average of the five routes rose above the $20,000 level and closed at $22,362 on Friday. Activity was largely seen from the Pacific, including coal from Indonesia and iron ore from West Australia to China.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 896,
+  "source_path": "reports/baltic/dry/2022/2022-07-22_bulk-report-week-29_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A mixed week for the Capesize sector, but it ended on a positive note. The timecharter average of the five routes rose above the $20,000 level and closed at $22,362 on Friday.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 169,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Something of a midweek push gave the Panamax market a much needed boost. However, the week did end on a somewhat subdued note as market players adopted a cautious approach.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "singapore",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall a slightly more positive week than of late. The Atlantic saw improved activity from the US Gulf region and also stronger demand from East Coast South America for August dates.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2022-07-22_2022_07_22_bulk_report_week_29_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A positive week in both basins despite limited visible activity. East Coast South America remained buoyant, with a 32,000-dwt fixing from Santos to Morocco at $27,000 and a 35,000-dwt rumoured to have fixed from South Brazil to Morocco at $29,000.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "europe",
+        "singapore",
+        "bauxite",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__root",
+  "doc_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 17",
+  "section_path": [
+    "Tanker report - Week 17"
+  ],
+  "section_path_text": "Tanker report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nThe week got off to a slow start, then on Tuesday activity ramped up with an influx of cargoes causing rates to rocket upwards. However, by the end of the week the trajectory was downwards, with heavy pressure being applied. In the Middle East, 280,000mt to the US Gulf via the Cape to Cape routing is now rated at WS110, having peaked at WS125, this still represents a rise of about 18 points week-on-week.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 869,
+  "source_path": "reports/baltic/tanker/2020/2020-04-24_tanker-report---week-17_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The week got off to a slow start, then on Tuesday activity ramped up with an influx of cargoes causing rates to rocket upwards. However, by the end of the week the trajectory was downwards, with heavy pressure being applied.",
+      "keywords": [
+        "capesize",
+        "china",
+        "west_africa",
+        "us_gulf",
+        "points",
+        "rise",
+        "was",
+        "are"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 252,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The market for 130,000mt West Africa to the UK-Continent had a much more adventurous week than in previous weeks. Rates were rapidly firming in the early part of the week, moving 50 points to low WS180s.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "points",
+        "mediterranean",
+        "ws180s.",
+        "adventurous",
+        "africa",
+        "basrah"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 118,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A much more positive week in this sector. Rates for 80,000mt Ceyhan to the Mediterranean almost doubled, now being assessed at high WS220s, showing a gain of 120 points.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points.",
+        "gulf",
+        "level.",
+        "now",
+        "points"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 172,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker",
+      "parent_id": "baltic_tanker_2020-04-24_2020_04_24_tanker_report_week_17_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "For owners trading in the clean market, it was a phenomenal week in all areas. The market in the Middle East Gulf to Japan trade for 75,000mt started the week with a relatively modest gain of just over 27.5 points to low WS270s.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "was",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 314,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

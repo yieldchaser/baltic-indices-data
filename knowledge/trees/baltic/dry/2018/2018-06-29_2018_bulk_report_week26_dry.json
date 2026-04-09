@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__root",
+  "doc_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 26",
+  "section_path": [
+    "Bulk report - Week 26"
+  ],
+  "section_path_text": "Bulk report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market generally drifted and by mid-week dropped to what some felt was an artificially low level, only to bounce back at the end of the week to better levels as more cargo was quoting in both the Pacific and Atlantic. Ore movements from West Australia were being fixed at around $7.20 level before dipping to $6.75 mid-week. By Thursday, Oldendorff had fixed Mingwah tonnage at $6.95 for mid-July loading and the sentiment was suggesting $7 might be breached again.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1294,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week26_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry",
+      "parent_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market generally drifted and by mid-week dropped to what some felt was an artificially low level, only to bounce back at the end of the week to better levels as more cargo was quoting in both the Pacific and Atlantic. Ore movements from West Australia were being fixed at around $7.20 level before dipping to $6.75 mid-week.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "steel",
+        "july"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 357,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry",
+      "parent_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Finally, a week bereft of holidays and the market appeared to consolidate. The Atlantic saw more enquiry in the North for both front haul and trans-Atlantic trades, which has led to a clear out of tonnage, with rates stabilising and in some cases showing improvement.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "grain",
+        "america",
+        "enquiry",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry",
+      "parent_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With both basins struggling, it was a week full of negative sentiment. With less enquiry and longer tonnage lists, all routes lost ground.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 390,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry",
+      "parent_id": "baltic_dry_2018-06-29_2018_bulk_report_week26_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall it was a dull week, with a single-digit drop for the Handysize index throughout the week. Most of the routes slipped in both the Atlantic and Pacific basin.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 322,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

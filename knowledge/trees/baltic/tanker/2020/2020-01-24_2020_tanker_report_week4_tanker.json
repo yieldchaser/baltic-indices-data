@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__root",
+  "doc_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 4",
+  "section_path": [
+    "Tanker report - Week 4"
+  ],
+  "section_path_text": "Tanker report - Week 4",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nA busier week in the Middle East Gulf led to a slight softening of rates overall. Following an initial and partial recovery, 270,000mt to China had been peaking at WS90, before settling in the very low WS80s. 280,000mt to US Gulf (USG) eased a couple of points, to WS48/49 level.",
+  "keywords": [
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "crude_oil",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 594,
+  "source_path": "reports/baltic/tanker/2020/2020_tanker-report-week4_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker",
+      "parent_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A busier week in the Middle East Gulf led to a slight softening of rates overall. Following an initial and partial recovery, 270,000mt to China had been peaking at WS90, before settling in the very low WS80s.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "meg",
+        "us_gulf",
+        "around",
+        "gulf",
+        "points",
+        "are"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 123,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker",
+      "parent_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 130,000mt West Africa/UK Continent (UKC) have settled around WS130. Limited enquiry and a build-up of tonnage has weakened the 135,000mt Black Sea/Mediterranean by 12 points, to WS140.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "points",
+        "africa/uk",
+        "around",
+        "basrah/mediterranean",
+        "black",
+        "build-up"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 79,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker",
+      "parent_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates for 80,000mt Ceyhan/Mediterranean voyages have been sideways, at WS145/147.5 level. 80,000mt Cross-North Sea recovered 15 points to WS152.5.",
+      "keywords": [
+        "europe",
+        "us_gulf",
+        "points",
+        "level.",
+        "again",
+        "another",
+        "are",
+        "assessed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker",
+      "parent_id": "baltic_tanker_2020-01-24_2020_tanker_report_week4_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was another very disappointing week for owners, with the market in the Middle East Gulf/Japan trade for 75,000mt easing a further 20 points, to sit now at barely WS100. A similar scenario played out on the 55,000mt, size with rates losing almost 35 points to WS95 and with charterers having plenty of choice.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "crude_oil",
+        "points",
+        "trade"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 239,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

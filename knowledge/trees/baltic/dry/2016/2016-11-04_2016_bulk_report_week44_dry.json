@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__root",
+  "doc_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 44",
+  "section_path": [
+    "Bulk report - Week 44"
+  ],
+  "section_path_text": "Bulk report - Week 44",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA rumour-fuelled market this week but essentially rates a touch firmer and owners cautiously optimistic. The flotilla of vessels heading to Brazil appeared to have thinned and some higher rates emerging as the week closed out. After failing at $10.75 for a November and a December cargo from Tubarao to Qingdao, Panocean booked tonnage for 20-30 November at $11.25.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1409,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week44_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry",
+      "parent_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A rumour-fuelled market this week but essentially rates a touch firmer and owners cautiously optimistic. The flotilla of vessels heading to Brazil appeared to have thinned and some higher rates emerging as the week closed out.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "fixed",
+        "tonner"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 281,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry",
+      "parent_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It was a cautious end to the week with the slowdown in activity impacting on the Atlantic market generally. Rates slipped with news that a major grain house secured a 2010 built kamsarmax from the US Gulf for 14-15 November dates for the run east at $10,900 daily plus a $285,000 bonus.",
+      "keywords": [
+        "panamax",
+        "supramax",
+        "handysize",
+        "atlantic",
+        "us_gulf",
+        "grain",
+        "but",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry",
+      "parent_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A well-attended Eisbein festival this week resulted in a slow end. Period information was hard to find but a Tess 52 was fixed on subjects basis delivery Persian Gulf for two to four months at $6,750 daily while the same size open in South Korea was said to have accepted $6,250 for short period with a few other negotiations on going.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "west_africa",
+        "india",
+        "us_gulf",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 494,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry",
+      "parent_id": "baltic_dry_2016-11-04_2016_bulk_report_week44_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Asian indices recorded a gradual drop every day this week and brokers said ships have started to build up. The US Gulf sector has fared the best with rates improving, probably on the back of the increased volume for the supramax sizes.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "europe",
+        "us_gulf",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 356,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

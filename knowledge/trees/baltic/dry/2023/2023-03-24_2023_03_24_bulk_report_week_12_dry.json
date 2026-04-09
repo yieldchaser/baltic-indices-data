@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__root",
+  "doc_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 12",
+  "section_path": [
+    "Bulk report - Week 12"
+  ],
+  "section_path_text": "Bulk report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market declined early in the week without much support from either of the basins. The timecharter average, however, started to pick up midweek reaching over $15,000. The direction of the Brazil to Qingdao run changed after the force majeure was lifted, which was declared after the landslide incident last week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 859,
+  "source_path": "reports/baltic/dry/2023/2023-03-24_bulk-report-week-12_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__s01_capesize",
+      "doc_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market declined early in the week without much support from either of the basins. The timecharter average, however, started to pick up midweek reaching over $15,000.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "australia",
+        "pacific",
+        "was",
+        "after",
+        "between",
+        "qingdao"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 146,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__s02_panamax",
+      "doc_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Overall a week of slow erosion for the Panamax market. This is despite some resistance and a midweek push on FFAs.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "japan",
+        "grain",
+        "dwt",
+        "achieved",
+        "agreed",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a rather patchy week for the sector. Overall sentiment remained fairly healthy in the Atlantic with sustained interest from the US Gulf and Mediterranean regions.",
+      "keywords": [
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__s04_handysize",
+      "doc_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2023-03-24_2023_03_24_bulk_report_week_12_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "After an unbroken positive run since February 15, the BHSI made its first downward move this week as the Asia basin showed signs of negative moves. A 28,000-dwt was rumoured to have been fixed for a trip from Indonesia to East Coast India with an intended cargo of steels at $9,000.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "grain",
+        "steel",
+        "dwt",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

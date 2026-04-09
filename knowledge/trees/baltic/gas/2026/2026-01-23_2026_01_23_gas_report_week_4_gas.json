@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__root",
+  "doc_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 4",
+  "section_path": [
+    "Gas report - Week 4"
+  ],
+  "section_path_text": "Gas report - Week 4",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market remained under pressure this week, with rates continuing to decline across all major routes. A lengthy tonnage list and limited fresh cargo activity continued to weigh on sentiment, particularly in the Atlantic, allowing charterers to push rates lower. On the BLNG1 Australia-Japan route, 174,000 cbm vessel earnings fell by $4,300 to $34,600/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day.",
+    "route",
+    "earnings",
+    "saw"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 475,
+  "source_path": "reports/baltic/gas/2026/2026-01-23_gas-report-week-4_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas",
+      "parent_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market remained under pressure this week, with rates continuing to decline across all major routes. A lengthy tonnage list and limited fresh cargo activity continued to weigh on sentiment, particularly in the Atlantic, allowing charterers to push rates lower.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "day."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 252,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas",
+      "parent_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market came under pressure this week, with sentiment softening across all major routes. While the East saw pockets of activity, pricing remained highly date-dependent and the lengthening position list begins to weigh on confidence.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "route",
+        "activity",
+        "day",
+        "earnings",
+        "saw"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

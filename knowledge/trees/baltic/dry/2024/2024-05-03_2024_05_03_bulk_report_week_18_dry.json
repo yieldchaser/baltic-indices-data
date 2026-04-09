@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__root",
+  "doc_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 18",
+  "section_path": [
+    "Bulk report - Week 18"
+  ],
+  "section_path_text": "Bulk report - Week 18",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nAfter an initially sluggish start to the week, the market picked up pace ahead of the impending holidays, particularly in the Pacific, leading to a slight uptick in the C5 index, which nudged up accordingly by 0.385 cents to $9.965. Conditions in the Atlantic remained challenging as the week got underway, with sporadic improvements. As expected, mid-week was rather subdued with minimal activity, although Thursday marked a significant upswing post-holiday, driving the BCI 5TC up substantially by $2,117, reaching $19,670.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 914,
+  "source_path": "reports/baltic/dry/2024/2024-05-03_bulk-report-week-18_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "After an initially sluggish start to the week, the market picked up pace ahead of the impending holidays, particularly in the Pacific, leading to a slight uptick in the C5 index, which nudged up accordingly by 0.385 cents to $9.965. Conditions in the Atlantic remained challenging as the week got underway, with sporadic improvements.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "significant",
+        "activity",
+        "bci",
+        "particularly",
+        "positive",
+        "reaching"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A week whereby activity was largely fragmented by various holidays spread across the globe. The Atlantic basin saw minimal fresh demand but with a modest tonnage count rates held steady for most part for limited trans-Atlantic and front haul fixtures.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "india",
+        "coal",
+        "grain",
+        "asia",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With widespread holidays both in the Atlantic and Pacific regions it was a rather staggered week. The Atlantic generally saw softer tones as demand slipped from the US Gulf and Mediterranean.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "meg",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 249,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2024-05-03_2024_05_03_bulk_report_week_18_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In a week littered with widespread holidays including Labour Day and the Greek Orthodox Easter, visible activity was muted and the overall sentiment across the handy sector was softer. Tonnage lists were said to have expanded this week across the Continent and the Mediterranean due to the limited visible fresh enquiry.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "was",
+        "activity",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 182,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

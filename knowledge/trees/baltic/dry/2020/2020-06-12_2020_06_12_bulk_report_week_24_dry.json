@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__root",
+  "doc_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 24",
+  "section_path": [
+    "Bulk report - Week 24"
+  ],
+  "section_path_text": "Bulk report - Week 24",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market made new highs for the year this week after strong iron ore demand to the far east continued to develop in the market. Earnings have lifted from sub operating cost levels under two weeks ago, to now having surged up to have the Capesize 5TC settling at $12,410. Long tonne mile cargoes coming from all regions of the Atlantic have looked to fill the void left in supply by sluggish Brazilian offerings.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 903,
+  "source_path": "reports/baltic/dry/2020/2020-06-12_Bulk-report-Week-24_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry",
+      "parent_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market made new highs for the year this week after strong iron ore demand to the far east continued to develop in the market. Earnings have lifted from sub operating cost levels under two weeks ago, to now having surged up to have the Capesize 5TC settling at $12,410.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "year"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry",
+      "parent_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market witnessed a substantial recovery this week, despite a lethargic week of activity in Asia and a complex market to call in the Atlantic - at least until midweek when the EC South America market exploded into action. Levels for Australian and NoPac round trips this week hovered around the mid $7,000's mark for Kamsarmax tonnage, whilst Post panamax tonnage were commanding a small premium to this with active demand for the larger sized unit.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "singapore",
+        "grain",
+        "tonnage",
+        "kamsarmax",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry",
+      "parent_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A positive week across most areas for the sector with stronger demand from the US Gulf and sustained demand from the Indian Ocean even drawing vessels from south east Asia. Period activity returned a 63,000-dwt open South Korea covering five to seven months trading redelivery worldwide at $11,000.",
+      "keywords": [
+        "pacific",
+        "india",
+        "us_gulf",
+        "coal",
+        "dwt",
+        "demand",
+        "south",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 221,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry",
+      "parent_id": "baltic_dry_2020-06-12_2020_06_12_bulk_report_week_24_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "More activity was reported from east coast South America this week with rates further climbing. A 36,000-dwt was fixed from south Brazil for a trip to ARAG range at $7,500 early in the week, and later a 37,000-dwt open in the same area was fixed in the $7,000s for a trip to the Baltic.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 248,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

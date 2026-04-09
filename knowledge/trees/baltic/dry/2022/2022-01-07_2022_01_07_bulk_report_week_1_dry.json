@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__root",
+  "doc_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 1",
+  "section_path": [
+    "Bulk report - Week 1"
+  ],
+  "section_path_text": "Bulk report - Week 1",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize Baltic index returned from year-end holidays this week and immediately saw activity coming from the usual West Australia iron ore flow. Closing out 2021 at $19,176 the Cape 5TC ended its first week in 2022 at $20,167. Initial movement in the market at the beginning of the week appeared positive as physical rates lifted slightly, yet paper markets took the opposite view, leading the 5TC to sink midweek before lifting again for the end of week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 927,
+  "source_path": "reports/baltic/dry/2022/2022-01-07_bulk-report-week-1_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry",
+      "parent_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize Baltic index returned from year-end holidays this week and immediately saw activity coming from the usual West Australia iron ore flow. Closing out 2021 at $19,176 the Cape 5TC ended its first week in 2022 at $20,167.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "iron_ore",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 267,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry",
+      "parent_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Following an uncharacteristic buoyant festive period, the Panamax market commenced the year in true bullish mode - principally due to a fervent EC South America market. This was ably assisted by premium rates being achieved for breaching INL and forcing ice trades in the North Atlantic, $36,000 was agreed on an 82,000-dwt delivery Hamburg for two laden legs within the Atlantic but this did involve breaching and ice trading.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "coal",
+        "delivery",
+        "was",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry",
+      "parent_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__root",
+      "title": "Supramax / Ultramax",
+      "section_path": [
+        "Supramax / Ultramax"
+      ],
+      "section_path_text": "Supramax / Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "After the long break a rather subdued week with many areas seeing tonnage oversupply. From Asia it was a mixed bag.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 216,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry",
+      "parent_id": "baltic_dry_2022-01-07_2022_01_07_bulk_report_week_1_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "We begin 2022 with the BHSI's negative trend from last year continuing. Pressure has been mounting on the Continent with a 32,000-dwt open in Rotterdam fixing basis delivery Poland for a trip to East Coast South America at $17,000.",
+      "keywords": [
+        "china",
+        "australia",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "coal",
+        "grain",
+        "steel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

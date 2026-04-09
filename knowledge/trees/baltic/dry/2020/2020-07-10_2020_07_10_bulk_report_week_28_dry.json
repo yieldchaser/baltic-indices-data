@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__root",
+  "doc_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 28",
+  "section_path": [
+    "Bulk report - Week 28"
+  ],
+  "section_path_text": "Bulk report - Week 28",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week witnessed the dreaded correction in the Capesize market, with the timecharter average shedding almost 18 per cent to close the week at $27,644. But in recent context, this cannot be considered as anything other than healthy. The Pacific round - and the backhaul - proved to be the biggest drivers.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 893,
+  "source_path": "reports/baltic/dry/2020/2020-07-10_Bulk-report-Week-28_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week witnessed the dreaded correction in the Capesize market, with the timecharter average shedding almost 18 per cent to close the week at $27,644. But in recent context, this cannot be considered as anything other than healthy.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "iron_ore",
+        "cent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A tumultuous week in the Panamax market ensured all markets gained value on the week. The Atlantic, which was the largest mover, saw rates attaining close to $3,000 overall.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "all",
+        "demand",
+        "round"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "BSI maintained its positive moves gaining 127 points over the week. With a lack of prompt tonnage in the Atlantic, some stronger numbers were being paid from key areas on the ultramax vessels.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "india",
+        "us_gulf",
+        "singapore",
+        "was",
+        "fixed",
+        "coast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry",
+      "parent_id": "baltic_dry_2020-07-10_2020_07_10_bulk_report_week_28_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The US Gulf market moved quickly this week, with decent volumes emerging - especially petcoke. Together with east coast South America, rates continued climbing which pushed the BHSI to a higher level.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "east",
+        "between"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

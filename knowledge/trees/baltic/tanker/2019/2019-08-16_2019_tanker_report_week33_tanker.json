@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__root",
+  "doc_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 33",
+  "section_path": [
+    "Tanker report - Week 33"
+  ],
+  "section_path_text": "Tanker report - Week 33",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nMiddle East Gulf rates initially eased, with rates for 270,000mt to China hovering around WS 52/54 region before WS 57 was agreed for ‘East' discharge. For 280,000mt Middle East Gulf to US Gulf basis Cape to Cape the market now sits at around WS 24.5 down a shade from a week ago, though WS 26.5 was agreed for an options cargo. The market for 260,000mt West Africa to China eased modestly to WS 53.5 before recovering as ENI took Maran tonnage at WS 57.5.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gulf",
+    "points"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 546,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week33_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker",
+      "parent_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Middle East Gulf rates initially eased, with rates for 270,000mt to China hovering around WS 52/54 region before WS 57 was agreed for ‘East' discharge. For 280,000mt Middle East Gulf to US Gulf basis Cape to Cape the market now sits at around WS 24.5 down a shade from a week ago, though WS 26.5 was agreed for an options cargo.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "gulf",
+        "east",
+        "agreed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 157,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker",
+      "parent_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 130,000mt West Africa to UK Continent softened from low WS 60s to WS 57.5, with Rotterdam discharge fixed at WS 56.25. The 135,000mt Black Sea to Mediterranean trade was steady at around WS 70 level.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "around",
+        "mediterranean",
+        "was",
+        "africa",
+        "basrah",
+        "black"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 87,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker",
+      "parent_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "80,000mt Ceyhan to Mediterranean held at WS 72.5, with Black Sea to Mediterranean also static at WS 80. In the 80,000mt cross-North Sea trade an uneventful week saw rates stuck in the low to mid WS 80s, depending on the precise voyage.",
+      "keywords": [
+        "europe",
+        "us_gulf",
+        "mediterranean",
+        "points",
+        "gulf",
+        "sea",
+        "trade",
+        "black"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 142,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker",
+      "parent_id": "baltic_tanker_2019-08-16_2019_tanker_report_week33_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market for 75,000mt Middle East Gulf to Japan fell five points to WS 110 and remains under downward pressure. WS 105 was agreed for a ship with a not preferred last cargo history.",
+      "keywords": [
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "agreed",
+        "fell",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 147,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

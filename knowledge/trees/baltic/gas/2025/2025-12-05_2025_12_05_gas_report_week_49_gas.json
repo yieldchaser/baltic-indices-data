@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-12-05_2025_12_05_gas_report_week_49_gas__root",
+  "doc_id": "baltic_gas_2025-12-05_2025_12_05_gas_report_week_49_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 49",
+  "section_path": [
+    "Gas report - Week 49"
+  ],
+  "section_path_text": "Gas report - Week 49",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market began to cool slightly this week after a few weeks of sharp gains, with activity slowing and signs emerging that rates may be starting to level off. Even so, the market remains heavily influenced by how the tight 2-stroke tonnage list evolves, keeping sentiment cautiously firm. On the BLNG1 Australia-Japan route, 174k cbm vessels slipped $200 to $90,400 per day, while 160k cbm ships posted a larger decline of $2,000 to $70,600 per day, marking the first downward movement in weeks.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "per",
+    "day",
+    "cbm",
+    "route",
+    "day."
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 490,
+  "source_path": "reports/baltic/gas/2025/2025-12-05_gas-report-week-49_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-12-05_2025_12_05_gas_report_week_49_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-12-05_2025_12_05_gas_report_week_49_gas",
+      "parent_id": "baltic_gas_2025-12-05_2025_12_05_gas_report_week_49_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market began to cool slightly this week after a few weeks of sharp gains, with activity slowing and signs emerging that rates may be starting to level off. Even so, the market remains heavily influenced by how the tight 2-stroke tonnage list evolves, keeping sentiment cautiously firm.",
+      "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "per",
+        "cbm"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 286,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-12-05_2025_12_05_gas_report_week_49_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-12-05_2025_12_05_gas_report_week_49_gas",
+      "parent_id": "baltic_gas_2025-12-05_2025_12_05_gas_report_week_49_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market experienced a steady week, with activity in the East starting off firm before tapering toward the end as the tonnage list is set to lengthen. In the West, weaker arbitrage economics kept charterers cautious, resulting in fewer fresh enquiry.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "per",
+        "route",
+        "tonne",
+        "day.",
+        "earnings",
+        "economics"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 198,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__root",
+  "doc_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 22",
+  "section_path": [
+    "Bulk report - Week 22"
+  ],
+  "section_path_text": "Bulk report - Week 22",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market found little to support levels this week as a steady slide in rates saw the 5TC drop $4,681 over the week to settle at $20,933. The market was at a similar level only back in late March / early April where the 5TC found some support at the 17-20k range. Similar to previous weeks, activity appeared lacklustre while it was heard that tonnage levels had built up on several prompter positions, which combined with a general lack of cargoes to cause the weakness.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 992,
+  "source_path": "reports/baltic/dry/2021/2021-06-04_bulk-report-week-22_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market found little to support levels this week as a steady slide in rates saw the 5TC drop $4,681 over the week to settle at $20,933. The market was at a similar level only back in late March / early April where the 5TC found some support at the 17-20k range.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "was",
+        "end"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 294,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Despite the downwards influence from Capesize, both the timecharter average and BPI largely improved this week. Support from grains from east coast South America continued.",
+      "keywords": [
+        "capesize",
+        "china",
+        "pacific",
+        "india",
+        "singapore",
+        "grain",
+        "coast",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A week of mixed fortunes as limited fresh enquiry from the Asian arena early in the week lead to rates easing. But as it ended, brokers said some resistance was seen from owners.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "was",
+        "east",
+        "seeing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2021-06-04_2021_06_04_bulk_report_week_22_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Atlantic and Asia markets moved in different directions this week, resulting in the first negative return of the BHSI since the April 15, after a continuous climb of 344 points. The Atlantic saw all markets make positive moves, with brokers feeling that more positive moves are to come.",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 246,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

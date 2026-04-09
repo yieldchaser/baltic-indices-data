@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__root",
+  "doc_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 42",
+  "section_path": [
+    "Bulk report - Week 42"
+  ],
+  "section_path_text": "Bulk report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA positive end to last week after a shaky start, with a Coaltrans taking participants out of the market early on and with rates slipping. However, rising iron ore prices and renewed talk of Vale fixing ships from Brazil for early November, from Tubarao to Qingdao, in the low $20.00s, steadied nerves. Others fixed later November cargoes, allegedly at timecharter rates, equating to around $22.50.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 951,
+  "source_path": "reports/baltic/dry/2018/2018_bulk-report-week42_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__s01_capesize",
+      "doc_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A positive end to last week after a shaky start, with a Coaltrans taking participants out of the market early on and with rates slipping. However, rising iron ore prices and renewed talk of Vale fixing ships from Brazil for early November, from Tubarao to Qingdao, in the low $20.00s, steadied nerves.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "japan",
+        "iron_ore",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 251,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__s02_panamax",
+      "doc_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Coaltrans, in Barcelona early last week, disrupted trading with many travelling. However, the second half of the week failed to show improvement.",
+      "keywords": [
+        "capesize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "coal",
+        "was",
+        "again"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__s03_supramax",
+      "doc_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A firm week in the Atlantic, especially in the South for vessels able to make October cancelling. An Ultramax was fixed for a trip from east coast South America, redelivery Chittagong, at $17,000 plus $700,000 ballast bonus.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "delivery",
+        "east",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__s04_handysize",
+      "doc_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry",
+      "parent_id": "baltic_dry_2018-10-19_2018_bulk_report_week42_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Whilst rates largely traded sideways in the Asian market, areas in the Atlantic remained firm. Period activity came to light, with a 32,000dwt linked to a four to six months trading, redelivery Atlantic, in the mid $12,000s.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "meg",
+        "europe",
+        "singapore",
+        "steel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 257,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

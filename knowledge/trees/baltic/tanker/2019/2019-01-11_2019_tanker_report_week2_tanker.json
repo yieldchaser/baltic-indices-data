@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__root",
+  "doc_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 2",
+  "section_path": [
+    "Tanker report - Week 2"
+  ],
+  "section_path_text": "Tanker report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nIn the Middle East Gulf, the market came under renewed downward pressure, with 270,000mt to China fixed five points lower at WS 57. Going west, rates for 280,000mt to the US Gulf were assessed at WS 24.5, basis Cape to Cape. West Africa to China basis 260,000mt saw little enquiry and the market dropped 6.25 points to WS 53.75.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "singapore",
+    "japan",
+    "gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 485,
+  "source_path": "reports/baltic/tanker/2019/2019_tanker-report-week2_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker",
+      "parent_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "In the Middle East Gulf, the market came under renewed downward pressure, with 270,000mt to China fixed five points lower at WS 57. Going west, rates for 280,000mt to the US Gulf were assessed at WS 24.5, basis Cape to Cape.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "million"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 156,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker",
+      "parent_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa saw falling rates, with the market easing to low WS 80s for 130,000mt to UK-Continent, before improved volumes of enquiry saw rates recover to almost WS 93. Black Sea to Mediterranean rates for 135,000mt held in the low-mid WS 130s, with Turkish Straits delays still around 30 days total north and southbound.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "saw",
+        "africa",
+        "almost",
+        "around",
+        "before",
+        "black"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 80,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker",
+      "parent_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "UML fixed 80,000mt from Ceyhan at WS 170, with the Black Sea paying mid to high WS 170s. In the Baltic, BP took Sovcomflot tonnage for 100,000mt at WS 85, down almost 25 points.",
+      "keywords": [
+        "us_gulf",
+        "sea",
+        "tonnage",
+        "almost",
+        "availability",
+        "black",
+        "caribbean",
+        "ceyhan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 111,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker",
+      "parent_id": "baltic_tanker_2019-01-11_2019_tanker_report_week2_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Rates for 75,000mt Middle East Gulf to Japan nudged up around five points to WS 127.5. The market for 55,000mt eventually eased from low WS 160s to WS 152.5.",
+      "keywords": [
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "points",
+        "around",
+        "gulf",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 125,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

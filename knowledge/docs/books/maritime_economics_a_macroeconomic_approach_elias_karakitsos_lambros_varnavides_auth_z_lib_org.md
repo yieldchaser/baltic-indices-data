@@ -38,6 +38,7 @@ regions:
 - europe
 - india
 - japan
+section_count: 330
 signals: {}
 source: book
 source_path: reports/Maritime Economics A Macroeconomic Approach (Elias Karakitsos,

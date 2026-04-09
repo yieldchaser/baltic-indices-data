@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__root",
+  "doc_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 40",
+  "section_path": [
+    "Bulk report - Week 40"
+  ],
+  "section_path_text": "Bulk report - Week 40",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a steady decline throughout the week, marked by softening conditions across both the Atlantic and Pacific basins. In the Pacific, early week activity from the miners and operators saw some momentum, but as the Golden Week holidays began in Asia, rates quickly weakened, with an increasing tonnage list. The C5 index fell from $11.656 to $10.73 by Friday as miner participation and cargo availability dwindled.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 897,
+  "source_path": "reports/baltic/dry/2024/2024-10-04_bulk-report-week-40_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a steady decline throughout the week, marked by softening conditions across both the Atlantic and Pacific basins. In the Pacific, early week activity from the miners and operators saw some momentum, but as the Golden Week holidays began in Asia, rates quickly weakened, with an increasing tonnage list.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "saw"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A compelling week for the Panamax market, with limited action in the Atlantic and the North seeing a mid-week mineral push ex US East Coast to India and China, but this failed to inject any momentum to an ailing market. Asia was blighted by Golden Week and other Asian holidays, and despite some steady demand ex Australia and NoPac all week, this failed to make any profound impact and the market drifted.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "japan",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather challenging week for the sector with rates in both the Atlantic and Pacific regions facing continued downward pressure. The South Atlantic and US Gulf continued to struggle with a lack of fresh inquiries and a growing tonnage list.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "steel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 239,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry",
+      "parent_id": "baltic_dry_2024-10-04_2024_10_04_bulk_report_week_40_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Generally, the market has seen a mixed affair this week. The Continent and Mediterranean markets have seen more support, with a noticeable pick-up in fresh demand and cargo coverage.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "dwt",
+        "open",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

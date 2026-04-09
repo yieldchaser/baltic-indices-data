@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__root",
+  "doc_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 21",
+  "section_path": [
+    "Bulk report - Week 21"
+  ],
+  "section_path_text": "Bulk report - Week 21",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThis week, the tailwinds turned to headwinds for the Capesize market as a dip in values amongst bearish sentiment was evident for most regions. The Pacific Ocean trade had the charterers in the driving seat as they often managed to achieve lower than last done fixing levels throughout the week as they encountered ample tonnage options. This was reflected on the C5 West Australia to Qingdao route as it opened the week at $15.05 to close at $11.741, while the Transpacific C10 closed at $19,313.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 937,
+  "source_path": "reports/baltic/dry/2022/2022-05-27_bulk-report-week-21_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "This week, the tailwinds turned to headwinds for the Capesize market as a dip in values amongst bearish sentiment was evident for most regions. The Pacific Ocean trade had the charterers in the driving seat as they often managed to achieve lower than last done fixing levels throughout the week as they encountered ample tonnage options.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "lower",
+        "trade"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 288,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A week of negativity engulfed the Panamax market with all rates falling sharply. Reduced fixing volumes and a build up of tonnage in most origins gave charterers the upper hand and reduced bids consequently became common theme.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "japan",
+        "reduced",
+        "began",
+        "being",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather protracted week as widespread European holidays dimmed activity levels. Sentiment eased in most areas as the week closed.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2022-05-27_2022_05_27_bulk_report_week_21_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "With holidays in large parts of Europe and many places round the world, activity was limited. In the US Gulf a 36,000-dwt was fixed for a trip to the UK - Continent with an intended cargo of wood pellets at $32,000.",
+      "keywords": [
+        "china",
+        "australia",
+        "europe",
+        "us_gulf",
+        "coal",
+        "grain",
+        "steel",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

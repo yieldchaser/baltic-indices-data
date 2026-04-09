@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__root",
+  "doc_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 12",
+  "section_path": [
+    "Bulk report - Week 12"
+  ],
+  "section_path_text": "Bulk report - Week 12",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nIt was a week of mixed route performance in the Capesize market. Following a positive close on Friday, the Capesize Timecharter Average (C5TC 182) ultimately rose by $817 week-on-week. The C3 Brazil to China route edged above $30, a level last seen in July 2024 with the current laycans across both the first and second halves of April.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 968,
+  "source_path": "reports/baltic/dry/2026/2026-03-20_bulk-report-week-12_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__s01_capesize",
+      "doc_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It was a week of mixed route performance in the Capesize market. Following a positive close on Friday, the Capesize Timecharter Average (C5TC 182) ultimately rose by $817 week-on-week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "route",
+        "was",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 216,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week progressed from early caution to firmer momentum, with bunker price uncertainty still underpinning volatility. Monday saw mixed sentiment, as the Atlantic hinted at a potential floor while Asia softened on weaker volumes.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "grain",
+        "asia",
+        "demand",
+        "firmer",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 173,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The market closed the week on a cautious note, as limited cargo availability and ample tonnage supply continued to weigh on rates across both basins. In the Atlantic, conditions remained weak throughout the week.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "was",
+        "fixed",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 299,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry",
+      "parent_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market continued to soften over the course of the week, as limited fresh enquiry across most regions weighed on overall sentiment. In the Continent and Mediterranean, activity remained largely muted throughout the week, with little notable change in rate levels.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 262,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

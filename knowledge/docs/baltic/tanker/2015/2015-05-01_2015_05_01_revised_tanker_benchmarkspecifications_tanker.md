@@ -25,6 +25,7 @@ regions:
 - meg
 - west_africa
 - europe
+section_count: 8
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2015/2015-05-01_revised-tanker-benchmarkspecifications_tanker.html

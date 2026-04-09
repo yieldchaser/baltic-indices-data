@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__root",
+  "doc_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 20",
+  "section_path": [
+    "Bulk report - Week 20"
+  ],
+  "section_path_text": "Bulk report - Week 20",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA precipitous fall in the market this week had the Capesize 5TC shedding over 50 per cent in value. A small rebound at the end of the week gave slim hopes that the market may recover faster than anticipated. The Capesize 5TC lifted +402 to close the week out at $2394.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "iron_ore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 872,
+  "source_path": "reports/baltic/dry/2020/2020-05-15_Bulk-report-Week-20_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A precipitous fall in the market this week had the Capesize 5TC shedding over 50 per cent in value. A small rebound at the end of the week gave slim hopes that the market may recover faster than anticipated.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "iron_ore",
+        "close",
+        "iron",
+        "not"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates in the Atlantic came under severe pressure this week. Sizeable losses on the respective routes, with absent mineral demand and long tonnage counts alleviated by ballaster numbers from the East in recent weeks, only compounded a bleak situation.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "areas.",
+        "healthy",
+        "numbers",
+        "only",
+        "tonnage"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "With a few areas in the world slowly getting back to a ‘new normal', demand on the Ultramax/Supramax size increased. However, this split into two main camps with the Atlantic overall still soft, whilst from Asia and the Indian Ocean activity levels and rates increased.",
+      "keywords": [
+        "supramax",
+        "atlantic",
+        "europe",
+        "india",
+        "east",
+        "activity",
+        "being",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 222,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2020-05-15_2020_05_15_bulk_report_week_20_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Midweek, the BHSI reached its lowest point of the year, with the same level last seen in early March 2016. The downward momentum in the Atlantic remained in all key areas.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "fixed",
+        "trip",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__root",
+  "doc_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 3",
+  "section_path": [
+    "Tanker report - Week 3"
+  ],
+  "section_path_text": "Tanker report - Week 3",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nThe market weakened even further this week with rates dropping and the timecharter equivalent for the main front haul voyages heading towards, if not actually realising, negative returns. In the Middle East 280,000mt to US Gulf via the Cape/Cape routing is assessed another point down at WS18, whilst 270,000mt to China is rated a further four points lower than last week at just below WS30 (which translates into a timecharter equivalent of -$800/day). In the Atlantic, rates for 260,000mt West Africa to China fell two points this week to WS31 (about $1,650 per day).",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 752,
+  "source_path": "reports/baltic/tanker/2021/2021-01-22_tanker-report-week-3_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker",
+      "parent_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market weakened even further this week with rates dropping and the timecharter equivalent for the main front haul voyages heading towards, if not actually realising, negative returns. In the Middle East 280,000mt to US Gulf via the Cape/Cape routing is assessed another point down at WS18, whilst 270,000mt to China is rated a further four points lower than last week at just below WS30 (which translates into a timecharter equivalent of -$800/day).",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "west_africa",
+        "us_gulf",
+        "day",
+        "another"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 177,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker",
+      "parent_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "In the 135,000mt Black Sea/Med market we saw rates climb five points to WS63 (a timecharter equivalent of about $1,400/day). The West African market saw the biggest increase where 130,000mt Nigeria/UK Continent rates to WS57.5 (about $7,000 per day), up almost 20 points week-on-week.",
+      "keywords": [
+        "brazil",
+        "west_africa",
+        "europe",
+        "points",
+        "day",
+        "saw",
+        "african",
+        "almost"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 108,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker",
+      "parent_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates for 80,000mt Ceyhan/Lavera were 2.5 points higher this week at WS72.5 level. In Northern Europe, rates for voyages of 80,000mt cross-North Sea dipped a point to WS77.5, while 100,000mt Baltic/UK-Continent saw a drop of three points to WS60 (about $2,500 per day).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "points",
+        "day",
+        "gulf",
+        "per",
+        "baltic/uk-continent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 158,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker",
+      "parent_id": "baltic_tanker_2021-01-22_2021_01_22_tanker_report_week_3_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the Middle East Gulf/Japan trade, the pressure has continued to build with limited enquiry. Owners have seen rates eroded further on both the LR routes with 75,000mt to Japan easing almost five points to around WS77.5.",
+      "keywords": [
+        "brazil",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "trade",
+        "now",
+        "owners"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 296,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

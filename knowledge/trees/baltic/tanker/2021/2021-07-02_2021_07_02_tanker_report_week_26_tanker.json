@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__root",
+  "doc_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 26",
+  "section_path": [
+    "Tanker report - Week 26"
+  ],
+  "section_path_text": "Tanker report - Week 26",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nIn the Middle East the market to US Gulf (TD1 280k routing via the Cape/Cape) remains steadily assessed around the WS18-18.5 mark, while rates to China have marginally eased almost a point to the WS31.5-32 level (still showing a negative TCE round-trip $4.6k/day). In the Atlantic, rates for west Africa to China (TD15) were kept flat at the WS34 mark (also negative TCE about $1200/day) and US Gulf to China (TD22) is now assessed $56k lower at $3.975m (about $375/dayTCE). Suezmax\nRates for 130k Nigeria/UK-Continent (TD20) have slipped two points to the WS51 level (a round-trip TCE of about minus $1,000/day).",
+  "keywords": [
+    "capesize",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1023,
+  "source_path": "reports/baltic/tanker/2021/2021-07-02_tanker-report-week-26_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker",
+      "parent_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "In the Middle East the market to US Gulf (TD1 280k routing via the Cape/Cape) remains steadily assessed around the WS18-18.5 mark, while rates to China have marginally eased almost a point to the WS31.5-32 level (still showing a negative TCE round-trip $4.6k/day). In the Atlantic, rates for west Africa to China (TD15) were kept flat at the WS34 mark (also negative TCE about $1200/day) and US Gulf to China (TD22) is now assessed $56k lower at $3.975m (about $375/dayTCE).",
+      "keywords": [
+        "capesize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "us_gulf",
+        "assessed",
+        "gulf",
+        "mark"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 135,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker",
+      "parent_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 130k Nigeria/UK-Continent (TD20) have slipped two points to the WS51 level (a round-trip TCE of about minus $1,000/day). Meanwhile in the Mediterranean, the support from the Aframax sector has now dissipated and rates for 135k Black Sea/Med (TD6) are two points lower at WS60 (increasing the negative TCE to about -$6,300/day).",
+      "keywords": [
+        "aframax",
+        "europe",
+        "points",
+        "day",
+        "tce",
+        "two",
+        "are",
+        "back"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 127,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker",
+      "parent_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "In the Mediterranean, the market topped out and has gradually fallen away this week. Rates for 80k Ceyhan/Lavera (TD19) are down 16-17 points over the week now, at WS87.5 (approx $1,500 TCE).",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "tce",
+        "points",
+        "approx",
+        "are",
+        "away"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker",
+      "parent_id": "baltic_tanker_2021-07-02_2021_07_02_tanker_report_week_26_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "There was not a lot of movement in the Middle East Gulf market, where rates remained relatively static for LR2's basis 75k to Japan (TC1) at around WS75 and dropped about five points on LR1's for 55k cargo (TC5) to about WS80 level, which shows a TCE under $1,000/day on both. For MR tonnage to east Africa (TC17) rates fell about three points to around WS144, showing about $4,800/day TCE.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "europe",
+        "india"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 501,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

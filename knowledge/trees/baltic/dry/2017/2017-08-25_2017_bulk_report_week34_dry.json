@@ -1,0 +1,118 @@
+{
+  "node_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry__root",
+  "doc_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 34",
+  "section_path": [
+    "Bulk report - Week 34"
+  ],
+  "section_path_text": "Bulk report - Week 34",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nSharp rises in FFA trading as the week closed out appeared to drive a physical market that had been languishing in the doldrums for most of the week with rates largely drifting lower. Rates from West Australia to China dropped to lows in the highish $6.00s but today fixed at $7.20 with charterers still there to fix. One of the majors reportedly fixed four vessels at this level for 6-7 September onwards and there was talk that maybe another agreed a slightly higher rate.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1231,
+  "source_path": "reports/baltic/dry/2017/2017_bulk-report-week34_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry__s01_capesize",
+      "doc_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry",
+      "parent_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Sharp rises in FFA trading as the week closed out appeared to drive a physical market that had been languishing in the doldrums for most of the week with rates largely drifting lower. Rates from West Australia to China dropped to lows in the highish $6.00s but today fixed at $7.20 with charterers still there to fix.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "was",
+        "but",
+        "agreed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 284,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry__s02_panamax",
+      "doc_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry",
+      "parent_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A sluggish week for Panamaxes, Kamsarmaxes and Post Panamaxes with rates drifting with the north Atlantic proving the weakest link. Slower demand for US Gulf and South America traders caused some jitters but as the week moved on and paper values increased possibly prompted by Cape gains steadied trading.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "china",
+        "atlantic",
+        "us_gulf",
+        "grain",
+        "daily",
+        "port"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 273,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry__s03_supramax_handysize",
+      "doc_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry",
+      "parent_id": "baltic_dry_2017-08-25_2017_bulk_report_week34_dry__root",
+      "title": "Supramax / Handysize",
+      "section_path": [
+        "Supramax / Handysize"
+      ],
+      "section_path_text": "Supramax / Handysize",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Rates in both basins continued to rise this week but activity remained slightly flat. The US Gulf market maintained the last done and rates from east coast South America started easing towards the end of the week.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 660,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

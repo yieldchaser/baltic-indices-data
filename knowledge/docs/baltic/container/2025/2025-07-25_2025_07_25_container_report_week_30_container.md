@@ -24,6 +24,7 @@ regions:
 - china
 - europe
 - japan
+section_count: 1
 signals: {}
 source: baltic
 source_path: reports/baltic/container/2025/2025-07-25_container-report-week-30_container.html

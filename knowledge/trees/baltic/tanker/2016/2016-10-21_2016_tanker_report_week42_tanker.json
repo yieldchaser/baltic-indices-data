@@ -1,0 +1,174 @@
+{
+  "node_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__root",
+  "doc_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker",
+  "parent_id": null,
+  "title": "Tanker Report - Week 42",
+  "section_path": [
+    "Tanker Report - Week 42"
+  ],
+  "section_path_text": "Tanker Report - Week 42",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCCs\nThere is a feeling that the market might have peaked this week. In the Middle East Gulf, whilst rates for 270,000 tonnes going east have moved up about 2.5 points to WS 67.5, brokers feel it may struggle to maintain such a level. Going west rates for 280,000 tonnes to the US Gulf rose around 3.5 points to WS 41/41.5 level, whilst a run to EC Canada is said to have been fixed at WS 43 but rates are now assessed at about WS 40 cape/cape to the US Gulf.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "singapore",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 926,
+  "source_path": "reports/baltic/tanker/2016/2016_tanker-report-week42_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__s01_vlccs",
+      "doc_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker",
+      "parent_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__root",
+      "title": "VLCCs",
+      "section_path": [
+        "VLCCs"
+      ],
+      "section_path_text": "VLCCs",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "There is a feeling that the market might have peaked this week. In the Middle East Gulf, whilst rates for 270,000 tonnes going east have moved up about 2.5 points to WS 67.5, brokers feel it may struggle to maintain such a level.",
+      "keywords": [
+        "capesize",
+        "china",
+        "meg",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "crude_oil"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__s02_suezmaxes",
+      "doc_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker",
+      "parent_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__root",
+      "title": "Suezmaxes",
+      "section_path": [
+        "Suezmaxes"
+      ],
+      "section_path_text": "Suezmaxes",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "West Africa has been under pressure this week with rates dipping down from WS 72.5 at the start of the week to WS 66.25 albeit for an attractive voyage to Trieste. Subsequently rates have marginally recovered with trips to Europe being fixed at around WS 70 while a run to USAC went at WS 67.5.",
+      "keywords": [
+        "west_africa",
+        "europe",
+        "singapore",
+        "crude_oil",
+        "fixed",
+        "around",
+        "black",
+        "longer"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__s03_aframaxes",
+      "doc_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker",
+      "parent_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__root",
+      "title": "Aframaxes",
+      "section_path": [
+        "Aframaxes"
+      ],
+      "section_path_text": "Aframaxes",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "In the Mediterranean, the week started off with rates anywhere between WS 60/65 level depending on the voyage. Subsequently due to a number of enquiries from Libya rates have firmed to WS 67.5/70 level for both Med and Black Sea load.",
+      "keywords": [
+        "europe",
+        "level",
+        "tonnes",
+        "back",
+        "down",
+        "here",
+        "improved",
+        "levels"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 168,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__s04_panamaxes",
+      "doc_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker",
+      "parent_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__root",
+      "title": "Panamaxes",
+      "section_path": [
+        "Panamaxes"
+      ],
+      "section_path_text": "Panamaxes",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "On the Continent the status quo has been maintained with rates steady at around WS80/82.5 level for 55,000 tonnes from ARA to the US Gulf, while from the Mediterranean rates have improved marginally to WS 77.50/80 representing a gain of around 2.50/5 points. However with the 50,000 tonnes Caribbs up coast market firming by around 25 points, brokers feel that this may well entice more tonnage to stay local rather than commit to ballasting across to NW Europe, thus reducing the supply of tonnage and leading to a potential improvement in the market here.",
+      "keywords": [
+        "europe",
+        "us_gulf",
+        "around",
+        "tonnage",
+        "tonnes",
+        "ara",
+        "ballasting",
+        "brokers"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 130,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__s05_clean",
+      "doc_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker",
+      "parent_id": "baltic_tanker_2016-10-21_2016_tanker_report_week42_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "In the Middle East Gulf, it has been a somewhat better week for owners with the market for 75,000 tonnes to Japan gaining 15 points to WS 70, while in the 55,000 tonnes AG/Japan trade rates continued to improve with levels now at WS 85 up 10 points from a week ago. In the 37,000 tonnes Cont/USAC trade, improved levels of enquiry, combined with a tighter tonnage list has pushed the market up 10 points to WS 80.",
+      "keywords": [
+        "panamax",
+        "vlcc",
+        "suezmax",
+        "aframax",
+        "meg",
+        "us_gulf",
+        "japan",
+        "tonnes"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 179,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

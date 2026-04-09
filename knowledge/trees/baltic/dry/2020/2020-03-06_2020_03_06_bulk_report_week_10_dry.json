@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__root",
+  "doc_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 10",
+  "section_path": [
+    "Bulk report - Week 10"
+  ],
+  "section_path_text": "Bulk report - Week 10",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nLittle changed for the Capesize market over this past week as fixing levels continue to provide meagre earnings for owners across all routes. Vessel demand continues to be grim and this has led many to sit idle in strategic locations, awaiting direction. Bunker prices have continued to soften yet this has only led to new lows on voyage rates.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1007,
+  "source_path": "reports/baltic/dry/2020/2020-03-06_bulk-report---week-10_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Little changed for the Capesize market over this past week as fixing levels continue to provide meagre earnings for owners across all routes. Vessel demand continues to be grim and this has led many to sit idle in strategic locations, awaiting direction.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "out",
+        "closed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 262,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week began slowly as usual, before activity peaked. Midweek, healthy fixture volume was seen in the Atlantic.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "india",
+        "coal",
+        "grain",
+        "was",
+        "activity",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__root",
+      "title": "Supramax/Ultramax",
+      "section_path": [
+        "Supramax/Ultramax"
+      ],
+      "section_path_text": "Supramax/Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A bullish week again with better rates being seen across most areas. A 58,000dwt vessel open Vietnam fixing five to seven months, trading at $7,000 for the first 30 days and $10,000 thereafter.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "dwt",
+        "east",
+        "coast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 252,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__s04_handysize",
+      "doc_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry",
+      "parent_id": "baltic_dry_2020-03-06_2020_03_06_bulk_report_week_10_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Rates largely improved in the Atlantic Basin this week, which gave strong support to the improvement of the overall index. There were more talks of higher levels being traded in the Continent, compared with last done.",
+      "keywords": [
+        "handysize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "grain",
+        "coast"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

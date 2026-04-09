@@ -31,6 +31,7 @@ regions:
 - china
 - atlantic
 - us_gulf
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2023/2023-08-18_tanker-report-week-33_tanker.html

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-09-22_2023_09_22_gas_report_week_38_gas__root",
+  "doc_id": "baltic_gas_2023-09-22_2023_09_22_gas_report_week_38_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 38",
+  "section_path": [
+    "Gas report - Week 38"
+  ],
+  "section_path_text": "Gas report - Week 38",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIn Australia, Chevron has accepted the FWC's offer to end the LNG strike and Freeport LNG has restarted after some unplanned outage with feed gas to the facility, while Japan reported that their monthly LNG imports has continued to decline by around 9.6% year on year. A mixed bag of news for LNG but on the freight side increased cargo requirement has meant that rates are again slightly bolstered as we continue the steady steam towards winter. BLNG1g Aus-Japan rose slowly, gaining a few thousand to close at $192,523.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "australia",
+    "atlantic",
+    "india",
+    "japan",
+    "gas",
+    "quite",
+    "are",
+    "but",
+    "highest"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 582,
+  "source_path": "reports/baltic/gas/2023/2023-09-22_gas-report-week-38_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-09-22_2023_09_22_gas_report_week_38_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-09-22_2023_09_22_gas_report_week_38_gas",
+      "parent_id": "baltic_gas_2023-09-22_2023_09_22_gas_report_week_38_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "In Australia, Chevron has accepted the FWC's offer to end the LNG strike and Freeport LNG has restarted after some unplanned outage with feed gas to the facility, while Japan reported that their monthly LNG imports has continued to decline by around 9.6% year on year. A mixed bag of news for LNG but on the freight side increased cargo requirement has meant that rates are again slightly bolstered as we continue the steady steam towards winter.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "japan",
+        "gas",
+        "all",
+        "are",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-09-22_2023_09_22_gas_report_week_38_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-09-22_2023_09_22_gas_report_week_38_gas",
+      "parent_id": "baltic_gas_2023-09-22_2023_09_22_gas_report_week_38_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It was quite a week for LPG. Across the board of the previous highest 22 index publishing rates since 2004 12 of these have fallen in September of this year alone.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "india",
+        "gas",
+        "highest",
+        "quite",
+        "tce",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 361,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

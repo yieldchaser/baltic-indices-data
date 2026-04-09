@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-12-01_2023_12_01_gas_report_week_48_gas__root",
+  "doc_id": "baltic_gas_2023-12-01_2023_12_01_gas_report_week_48_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 48",
+  "section_path": [
+    "Gas report - Week 48"
+  ],
+  "section_path_text": "Gas report - Week 48",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIt was another quiet week overall for LNG. A little flurry of activity in the Pacific basin didn't do much to bolster rates, with one MEGI ship reported at $140,000 for January loading in the East, a downward correction could have been expected. With little cargo out there and charterers looking for modern tonnage, which is very thin on the ground the levels have remained somewhat stagnant.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "lng",
+    "lpg",
+    "atlantic",
+    "pacific",
+    "meg",
+    "japan",
+    "gas",
+    "canal",
+    "are",
+    "panama"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 547,
+  "source_path": "reports/baltic/gas/2023/2023-12-01_gas-report-week-48_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-12-01_2023_12_01_gas_report_week_48_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-12-01_2023_12_01_gas_report_week_48_gas",
+      "parent_id": "baltic_gas_2023-12-01_2023_12_01_gas_report_week_48_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It was another quiet week overall for LNG. A little flurry of activity in the Pacific basin didn't do much to bolster rates, with one MEGI ship reported at $140,000 for January loading in the East, a downward correction could have been expected.",
+      "keywords": [
+        "lng",
+        "lpg",
+        "atlantic",
+        "pacific",
+        "meg",
+        "japan",
+        "gas",
+        "little"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-12-01_2023_12_01_gas_report_week_48_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-12-01_2023_12_01_gas_report_week_48_gas",
+      "parent_id": "baltic_gas_2023-12-01_2023_12_01_gas_report_week_48_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The AG market has lost $5.428 this week to close at $148.143 giving a daily TCE earning of $136,571. It's been a tough one for the market.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "lpg",
+        "gas",
+        "canal",
+        "ships",
+        "tce",
+        "almost"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 315,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

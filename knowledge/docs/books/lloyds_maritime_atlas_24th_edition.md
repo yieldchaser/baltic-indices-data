@@ -42,6 +42,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 71
 signals: {}
 source: book
 source_path: reports/Lloyds_Maritime_Atlas_24th_Edition.pdf

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__root",
+  "doc_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 6",
+  "section_path": [
+    "Gas report - Week 6"
+  ],
+  "section_path_text": "Gas report - Week 6",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market was broadly steady but subdued this week. With much of the market attending events in Doha and preparations for IE Week underway, activity was notably thin, resulting in a particularly quiet market. On the BLNG1 Australia-Japan route, 174k cbm vessels slipped $1,200 to $29,400/day, with the East continuing to show greater resilience than the West.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "route",
+    "day.",
+    "east",
+    "day"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 429,
+  "source_path": "reports/baltic/gas/2026/2026-02-06_gas-report-week-6_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas",
+      "parent_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market was broadly steady but subdued this week. With much of the market attending events in Doha and preparations for IE Week underway, activity was notably thin, resulting in a particularly quiet market.",
+      "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "day",
+        "route"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas",
+      "parent_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market surged this week, with fixing activity accelerating in the West and the East following the Atlantic's upward momentum. Strength built as the week progressed, with sentiment turning increasingly bullish as the prompt tonnage list tightened, particularly in the Middle East, while firm Atlantic fundamentals continued to provide support.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "east",
+        "day.",
+        "route",
+        "tce",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

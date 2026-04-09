@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__root",
+  "doc_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 19",
+  "section_path": [
+    "Bulk report - Week 19"
+  ],
+  "section_path_text": "Bulk report - Week 19",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market had the wind in its sails as rates jumped in all regions. The 5TC ended the week at $32,733, a rise of 8731 week on week. While the Shanghai Covid situation continues to hamper vessel movements across all sectors, the Capesize market appears able to push as good tonnage demand comes from Brazil and Australia.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 926,
+  "source_path": "reports/baltic/dry/2022/2022-05-13_bulk-report-week-19_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market had the wind in its sails as rates jumped in all regions. The 5TC ended the week at $32,733, a rise of 8731 week on week.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It was a mixed week on the BPI. After a positive start, activity and sentiment softened at close.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "singapore",
+        "japan",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 236,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather positional week with mixed sentiment in many areas. The Atlantic saw a slight correction in the US Gulf as rates eased, whilst more enquiry was heard from the South Atlantic as the week closed.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "coal",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2022-05-13_2022_05_13_bulk_report_week_19_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The BHSI remained positive in general. However, the US Gulf made significant negative moves as a 38,000-dwt fixed from the US Gulf to Spain with an intended cargo of coal at $30,000.",
+      "keywords": [
+        "china",
+        "europe",
+        "us_gulf",
+        "coal",
+        "dwt",
+        "fixed",
+        "cargo",
+        "intended"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2023-12-15_2023_12_15_gas_report_week_50_gas__root",
+  "doc_id": "baltic_gas_2023-12-15_2023_12_15_gas_report_week_50_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 50",
+  "section_path": [
+    "Gas report - Week 50"
+  ],
+  "section_path_text": "Gas report - Week 50",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nWe have published the first BLNG 174 index following a short trial period. The new index will run alongside the existing BLNG 160 and shall be published twice weekly on a Tuesday and Friday. It follows consultation with the market, and members of the Baltic Exchange in response to shifting market patterns, as well as the need to remain current with market trends and vessel types.",
+  "keywords": [
+    "capesize",
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "meg",
+    "japan",
+    "gas",
+    "cbm",
+    "close",
+    "via",
+    "are"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 594,
+  "source_path": "reports/baltic/gas/2023/2023-12-15_gas-report-week-50_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2023-12-15_2023_12_15_gas_report_week_50_gas__s01_lng",
+      "doc_id": "baltic_gas_2023-12-15_2023_12_15_gas_report_week_50_gas",
+      "parent_id": "baltic_gas_2023-12-15_2023_12_15_gas_report_week_50_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "We have published the first BLNG 174 index following a short trial period. The new index will run alongside the existing BLNG 160 and shall be published twice weekly on a Tuesday and Friday.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "japan",
+        "gas",
+        "cbm",
+        "new",
+        "blng",
+        "close"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 288,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2023-12-15_2023_12_15_gas_report_week_50_gas__s02_lpg",
+      "doc_id": "baltic_gas_2023-12-15_2023_12_15_gas_report_week_50_gas",
+      "parent_id": "baltic_gas_2023-12-15_2023_12_15_gas_report_week_50_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "In terms of rates there isn't much to report, the BLPG1 route from Ras Tanura-Chiba shifted less than 50cents on the week to close at $119.571 where it regained some of the loss seen mid-week, which fell as low as $111. Tonnage availability seems to have suggested that rates would fall further but a flurry of cargoes shown at week close pushed sentiment higher.",
+      "keywords": [
+        "capesize",
+        "lpg",
+        "brazil",
+        "atlantic",
+        "meg",
+        "gas",
+        "via",
+        "are"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 300,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

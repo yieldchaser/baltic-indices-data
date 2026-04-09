@@ -46,6 +46,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 487
 signals: {}
 source: book
 source_path: reports/The Business of Shipping (Lane C. Kendall (auth.)) (Z-Library).pdf

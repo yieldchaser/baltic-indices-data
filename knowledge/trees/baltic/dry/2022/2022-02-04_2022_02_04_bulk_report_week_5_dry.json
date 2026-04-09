@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__root",
+  "doc_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 5",
+  "section_path": [
+    "Bulk report - Week 5"
+  ],
+  "section_path_text": "Bulk report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market traded sideways this week as the 5TC closed at $10,302, an improvement of +1384 over the week. Lunar New Year holidays ensured the market was more subdued with holidays across Asia. Fixture activity looked to increase towards the end of the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "west_africa",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 862,
+  "source_path": "reports/baltic/dry/2022/2022-02-04_bulk-report-week-5_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market traded sideways this week as the 5TC closed at $10,302, an improvement of +1384 over the week. Lunar New Year holidays ensured the market was more subdued with holidays across Asia.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "holidays",
+        "are",
+        "bunker",
+        "closed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "January came and went in a blink it seems. A month for many to perhaps forget, with the BPI 5 timecharter average yielding a $9,411 correction month-on-month.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "aps",
+        "delivery",
+        "dwt",
+        "many",
+        "trip",
+        "absent"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 209,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A mixed bag during the past week, no doubt being affected by the Lunar Holidays in Asia. However, as the week drew to a close positive sentiment was seemingly returning.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2022-02-04_2022_02_04_bulk_report_week_5_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The first glimmers of recovery in some regions were seen as the week ended with some expecting to see an upturn as the Lunar New Year celebrations came to a close. East Coast South America saw a 32,000-dwt fixing for Nueva Palmira to the Continent at $24,000 with an intended cargo of woodpulp.",
+      "keywords": [
+        "china",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixed",
+        "was",
+        "fixing",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

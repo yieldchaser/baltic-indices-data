@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2025-08-29_2025_08_29_gas_report_week_35_gas__root",
+  "doc_id": "baltic_gas_2025-08-29_2025_08_29_gas_report_week_35_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 35",
+  "section_path": [
+    "Gas report - Week 35"
+  ],
+  "section_path_text": "Gas report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIt has been a softer week in the LNG market, with rates moving lower across both spot and period segments as limited demand met steady vessel availability. The absence of strong fresh enquiry has left sentiment under pressure, with all key routes relinquishing ground. On the BLNG1 Australia-Japan route, 174k cbm vessels dropped $1,000 to $33,300/day, while 160k cbm tonnage slipped $1,100 to $19,600/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day",
+    "route",
+    "cbm"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 502,
+  "source_path": "reports/baltic/gas/2025/2025-08-29_gas-report-week-35_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2025-08-29_2025_08_29_gas_report_week_35_gas__s01_lng",
+      "doc_id": "baltic_gas_2025-08-29_2025_08_29_gas_report_week_35_gas",
+      "parent_id": "baltic_gas_2025-08-29_2025_08_29_gas_report_week_35_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It has been a softer week in the LNG market, with rates moving lower across both spot and period segments as limited demand met steady vessel availability. The absence of strong fresh enquiry has left sentiment under pressure, with all key routes relinquishing ground.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 294,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2025-08-29_2025_08_29_gas_report_week_35_gas__s02_lpg",
+      "doc_id": "baltic_gas_2025-08-29_2025_08_29_gas_report_week_35_gas",
+      "parent_id": "baltic_gas_2025-08-29_2025_08_29_gas_report_week_35_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It has been a quiet week in the LPG market, with sentiment softening as the arb continued to move and charterers showed limited appetite to chase rates higher. Levels drifted lower across all three routes, with tonnage availability keeping pressure on earnings.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "metric",
+        "per",
+        "route",
+        "tce",
+        "arb",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

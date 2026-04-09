@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__root",
+  "doc_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 2",
+  "section_path": [
+    "Bulk report - Week 2"
+  ],
+  "section_path_text": "Bulk report - Week 2",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market experienced a turbulent week, beginning with notable softness but regaining momentum by Thursday and closing on a positive trajectory. The 5TC average started at $10,696 per day, dropped to $9,123 per day midweek, and rebounded to $12,010 per day by week's end. In the Pacific, the market remained under pressure due to a persistent oversupply of tonnage.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 890,
+  "source_path": "reports/baltic/dry/2025/2025-01-10_bulk-report-week-2_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry",
+      "parent_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market experienced a turbulent week, beginning with notable softness but regaining momentum by Thursday and closing on a positive trajectory. The 5TC average started at $10,696 per day, dropped to $9,123 per day midweek, and rebounded to $12,010 per day by week's end.",
+      "keywords": [
+        "capesize",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "day",
+        "per",
+        "limited"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 244,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry",
+      "parent_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The decline in the Panamax market showed no signs of abating this week, with further substantial corrections in both basins. In the Atlantic, despite decent demand both mineral and grains in the North, this fell short against the build-up of tonnage count, which ultimately weighed heavily on the deals reported this week.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "grain",
+        "both",
+        "ample",
+        "appeared",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry",
+      "parent_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The start of 2025 for many would be one to forget as both the Atlantic and Asian arenas failed to gain any real traction. Fresh enquiry remained limited and there was a considerable amount of prompt tonnage which remained open after the holiday season.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "steel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry",
+      "parent_id": "baltic_dry_2025-01-10_2025_01_10_bulk_report_week_2_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "As anticipated, the first full week of the new year has seen limited activity across both the Atlantic and Asian basins, with market sentiment remaining generally subdued. In the Atlantic, market maintains a soft tone, as the tonnage count maintain its length across most loading areas.",
+      "keywords": [
+        "atlantic",
+        "singapore",
+        "delivery",
+        "dwt",
+        "fixed",
+        "limited",
+        "redelivery",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

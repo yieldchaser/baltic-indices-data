@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__root",
+  "doc_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry",
+  "parent_id": null,
+  "title": "Bulk Report - Week 35",
+  "section_path": [
+    "Bulk Report - Week 35"
+  ],
+  "section_path_text": "Bulk Report - Week 35",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA positive end to the week as BHP Billiton fixed a 17 September onwards 170,000 tonne 10% cargo from Port Hedland to Qingdao at $4.80 and $4.90. Rio Tinto having fixed overnight at $4.55 for Dampier has also now paid $4.80. Timecharter rates were also firmer with 180,000 tonnes now fixing around the mid $8,000 daily range for round voyages to the East.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "europe",
+    "india",
+    "us_gulf",
+    "singapore"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1228,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week35_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry",
+      "parent_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A positive end to the week as BHP Billiton fixed a 17 September onwards 170,000 tonne 10% cargo from Port Hedland to Qingdao at $4.80 and $4.90. Rio Tinto having fixed overnight at $4.55 for Dampier has also now paid $4.80.",
+      "keywords": [
+        "brazil",
+        "europe",
+        "was",
+        "fixing",
+        "timecharter",
+        "around",
+        "but",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry",
+      "parent_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Owners with prompt tonnage in the North Atlantic looking for round voyages continued to struggle with voyage rates once again showing very low timecharter returns. Owners faced rates of under $5,000 daily unless very well described.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "india"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__s03_supramax",
+      "doc_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry",
+      "parent_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__root",
+      "title": "Supramax",
+      "section_path": [
+        "Supramax"
+      ],
+      "section_path_text": "Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A short week with the UK bank holiday last Monday making it a very slow start. Atlantic started to pick up again with some better rates witnessed from the US Gulf and east coast South America.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "coal",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 459,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry",
+      "parent_id": "baltic_dry_2016-09-02_2016_bulk_report_week35_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Hardly any change on the BHSI this week. The Atlantic for all four routes dropped marginally on Thursday.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "brazil",
+        "atlantic",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 266,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

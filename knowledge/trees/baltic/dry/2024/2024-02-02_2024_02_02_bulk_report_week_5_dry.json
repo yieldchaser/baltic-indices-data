@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__root",
+  "doc_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 5",
+  "section_path": [
+    "Bulk report - Week 5"
+  ],
+  "section_path_text": "Bulk report - Week 5",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThroughout the week, the capesize market experienced a mix of subdued and positive conditions across different regions. The Pacific started with a marginal decline in rates on C5 due to a lack of coal enquiry and port closures in North China causing uncertainty. As the week progressed there was an increase in volumes including coal enquiry from East Coast Australia to China but rates on C5 continued to decline.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 947,
+  "source_path": "reports/baltic/dry/2024/2024-02-02_bulk-report-week-5_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__s01_capesize",
+      "doc_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Throughout the week, the capesize market experienced a mix of subdued and positive conditions across different regions. The Pacific started with a marginal decline in rates on C5 due to a lack of coal enquiry and port closures in North China causing uncertainty.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 268,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__s02_panamax",
+      "doc_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "It proved to be another week of steady declines for the Panamax market. With a heavy ballaster list and increased tonnage count, resistance from owners was mostly scarce.",
+      "keywords": [
+        "panamax",
+        "atlantic",
+        "india",
+        "coal",
+        "grain",
+        "america",
+        "asia",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather mixed affair this week, which was generally seen as positional. The Atlantic saw a bit of increased demand from the US Gulf for fronthaul business and with tonnage remaining relatively tight, rates increased.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "dwt",
+        "fixed",
+        "east"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__s04_handysize",
+      "doc_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry",
+      "parent_id": "baltic_dry_2024-02-02_2024_02_02_bulk_report_week_5_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "A rather subdued week across the handy sector which saw limited visible activity across both basins. The US Gulf continued to experience a lack of cargo enquiry, with a 38,000-dwt fixing from SW Pass to EC Mexico with an intended cargo of grains at $12,500 whilst a 36,000-dwt was fixed from SW Pass to Ireland with also with grains at a rate close to $12,000.",
+      "keywords": [
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

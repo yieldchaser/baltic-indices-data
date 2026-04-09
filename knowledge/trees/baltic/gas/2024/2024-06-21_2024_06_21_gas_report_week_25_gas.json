@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-06-21_2024_06_21_gas_report_week_25_gas__root",
+  "doc_id": "baltic_gas_2024-06-21_2024_06_21_gas_report_week_25_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 25",
+  "section_path": [
+    "Gas report - Week 25"
+  ],
+  "section_path_text": "Gas report - Week 25",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market in the Pacific backed off early in the week and is now in recovery mode, while the Atlantic has steadily strengthened since last Friday for both the 160kCBMs and the 174kCBMs. BLNG1 Aus-Japan on the 174kCBMs fell by almost $3,500/day from $51,500/day and then rose to $48,750/day while the 160kCBMs fell from $42,500/day to just over $35,300/day. BLNG2 Houston-Cont has climbed $10,000/day on the 160kCBMs to currently be priced at $62,500/day.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "atlantic",
+    "pacific",
+    "meg",
+    "japan",
+    "gas",
+    "day",
+    "kcbms",
+    "per",
+    "day.",
+    "around"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 439,
+  "source_path": "reports/baltic/gas/2024/2024-06-21_gas-report-week-25_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-06-21_2024_06_21_gas_report_week_25_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-06-21_2024_06_21_gas_report_week_25_gas",
+      "parent_id": "baltic_gas_2024-06-21_2024_06_21_gas_report_week_25_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market in the Pacific backed off early in the week and is now in recovery mode, while the Atlantic has steadily strengthened since last Friday for both the 160kCBMs and the 174kCBMs. BLNG1 Aus-Japan on the 174kCBMs fell by almost $3,500/day from $51,500/day and then rose to $48,750/day while the 160kCBMs fell from $42,500/day to just over $35,300/day.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "japan",
+        "gas",
+        "day",
+        "kcbms",
+        "day."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 284,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-06-21_2024_06_21_gas_report_week_25_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-06-21_2024_06_21_gas_report_week_25_gas",
+      "parent_id": "baltic_gas_2024-06-21_2024_06_21_gas_report_week_25_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "There was little movement in the market for the LPG sector this week, with both the MEG and Atlantic spheres remaining relatively flat. In the MEG BLPG1 remains around the $64-65,000 per tonne region calculated as a daily TCE of a little over $45,000 basis the Baltic Exchange vessel description.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "meg",
+        "gas",
+        "per",
+        "little",
+        "tonne",
+        "improved"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 149,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

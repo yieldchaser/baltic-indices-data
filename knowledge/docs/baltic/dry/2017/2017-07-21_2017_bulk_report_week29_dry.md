@@ -40,6 +40,7 @@ regions:
 - india
 - us_gulf
 - singapore
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2017/2017_bulk-report-week29_dry.html

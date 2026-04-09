@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-03-15_2024_03_15_gas_report_week_11_gas__root",
+  "doc_id": "baltic_gas_2024-03-15_2024_03_15_gas_report_week_11_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 11",
+  "section_path": [
+    "Gas report - Week 11"
+  ],
+  "section_path_text": "Gas report - Week 11",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nIt is another week of little spot fixing in the LNG market, both the Atlantic and Pacific have seen some tentative enquiries but with these either delaying or being fixed on quietly, the material difference to spot rates is negligible. On the Aus-Japan BLNG1 route both the 160cbm and 174cbm shed a few dollars to finish down at $33,897, and $51,265 respectively; constructs for these deals are being assessed both as Ballast Bonus to Hub and Roundtrip. While the Atlantic held more enquiry a stable and unchanged tonnage list didn't drive prices up particularly, this could be some small hangover from the US governments pause on new FTA requests, but it's more likely down to a continued shutdown in Freeports train 3 which enters its 7th week and overall market bearishness.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "pacific",
+    "europe",
+    "japan",
+    "gas",
+    "cbm",
+    "both",
+    "but",
+    "down"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 592,
+  "source_path": "reports/baltic/gas/2024/2024-03-15_gas-report-week-11_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-03-15_2024_03_15_gas_report_week_11_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-03-15_2024_03_15_gas_report_week_11_gas",
+      "parent_id": "baltic_gas_2024-03-15_2024_03_15_gas_report_week_11_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It is another week of little spot fixing in the LNG market, both the Atlantic and Pacific have seen some tentative enquiries but with these either delaying or being fixed on quietly, the material difference to spot rates is negligible. On the Aus-Japan BLNG1 route both the 160cbm and 174cbm shed a few dollars to finish down at $33,897, and $51,265 respectively; constructs for these deals are being assessed both as Ballast Bonus to Hub and Roundtrip.",
+      "keywords": [
+        "lng",
+        "atlantic",
+        "pacific",
+        "europe",
+        "japan",
+        "gas",
+        "cbm",
+        "down"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 349,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-03-15_2024_03_15_gas_report_week_11_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-03-15_2024_03_15_gas_report_week_11_gas",
+      "parent_id": "baltic_gas_2024-03-15_2024_03_15_gas_report_week_11_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market has made a pretty miraculous turnaround this week we are seeing levels fixed not seen since early January before the \"big fall\". The AG market is awash with potential ships available for early April while the US market has a fair amount of uncertainty remaining around ships itineraries.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "early",
+        "not",
+        "blpg2",
+        "blpg3"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

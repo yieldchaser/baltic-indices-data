@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__root",
+  "doc_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 31",
+  "section_path": [
+    "Bulk report - Week 31"
+  ],
+  "section_path_text": "Bulk report - Week 31",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA quiet end to the week could not disguise the improved sentiment in the capesize market, with several brokers suggesting that this may simply represent a precursor to another move upwards. The timecharter average climbed $1,282 to close at $18,296, driven predominantly by the Brazil and Australian round voyages on continued iron ore demand strength. The C3 Brazil-China route gained $1.53 to close at $17.47, whilst the C5 Australia-China route posted $1.16 to close at $7.155 on the week.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 813,
+  "source_path": "reports/baltic/dry/2020/2020-07-31_bulk-report-week-31_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__s01_capesize",
+      "doc_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A quiet end to the week could not disguise the improved sentiment in the capesize market, with several brokers suggesting that this may simply represent a precursor to another move upwards. The timecharter average climbed $1,282 to close at $18,296, driven predominantly by the Brazil and Australian round voyages on continued iron ore demand strength.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "iron_ore",
+        "close",
+        "could",
+        "may"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__s02_panamax",
+      "doc_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The panamax market proved to be quite a contrasting week, with rates globally for the early part still severely under pressure. By midweek, sentiment and fresh enquiry - noticeably from EC South America - had improved.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "singapore",
+        "america",
+        "around",
+        "early",
+        "nopac"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A poor week overall for the BSI with the index falling 36 points from Monday. Little in the way of period activity was reported with Owners reluctant to commit.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "dwt",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__s04_handy",
+      "doc_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2020-07-31_2020_07_31_bulk_report_week_31_dry__root",
+      "title": "Handy",
+      "section_path": [
+        "Handy"
+      ],
+      "section_path_text": "Handy",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The overall index BHSI continued climbing since early May and remained at the highest level of the year this week. However, it also showed a minor decline for the first time in the last three months.",
+      "keywords": [
+        "pacific",
+        "europe",
+        "grain",
+        "was",
+        "fixed",
+        "delivery",
+        "east",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

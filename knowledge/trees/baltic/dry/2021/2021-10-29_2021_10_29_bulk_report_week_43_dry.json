@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__root",
+  "doc_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 43",
+  "section_path": [
+    "Bulk report - Week 43"
+  ],
+  "section_path_text": "Bulk report - Week 43",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market was in dire straits this week as tonnage levels were heard to be building while many areas had minimal activity as the 5TC dropped -15,398 to $36,065 week on week. The Pacific Basin was under pressure earlier on in the week but did find a floor mid-week, albeit at a significant discount to the Atlantic Basin. The Transpacific C10 ended the week on an upbeat at $32,979, while the Transatlantic C8 struggled the whole week to find a footing coming off -4300 on Friday alone to settle at $41,600.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 957,
+  "source_path": "reports/baltic/dry/2021/2021-10-29_bulk-report-week-43_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__s01_capesize",
+      "doc_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry",
+      "parent_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market was in dire straits this week as tonnage levels were heard to be building while many areas had minimal activity as the 5TC dropped -15,398 to $36,065 week on week. The Pacific Basin was under pressure earlier on in the week but did find a floor mid-week, albeit at a significant discount to the Atlantic Basin.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "was",
+        "are",
+        "find"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__s02_panamax",
+      "doc_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry",
+      "parent_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week has seen a large drop in rates across all of the routes, which was not helped by a lack of activity in the first half. With new lows, however, there has been an increase in cargo quoted - enough to sustain the present levels at least for now.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "coal",
+        "grain",
+        "built",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 259,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry",
+      "parent_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A change of direction for the sector as limited fresh enquiry appeared in the market across many areas leading to increased tonnage availability. Period activity was limited but a 63,000-dwt open China was linked to eight to 10 months trading on an index linked rate basis 114% of BSI 10TC.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "europe",
+        "japan",
+        "was",
+        "dwt",
+        "asia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__s04_handysize",
+      "doc_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry",
+      "parent_id": "baltic_dry_2021-10-29_2021_10_29_bulk_report_week_43_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week the BHSI made some negative moves with both Atlantic and Pacific basins softening. The softening in Asia was suggested to be due to a lack of fresh enquiry.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "due"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 219,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -29,6 +29,7 @@ regions:
 - china
 - india
 - japan
+section_count: 5
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2018/2018_tanker-report-week32_tanker.html

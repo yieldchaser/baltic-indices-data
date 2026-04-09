@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2024-04-26_2024_04_26_gas_report_week_17_gas__root",
+  "doc_id": "baltic_gas_2024-04-26_2024_04_26_gas_report_week_17_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 17",
+  "section_path": [
+    "Gas report - Week 17"
+  ],
+  "section_path_text": "Gas report - Week 17",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nA continued flat LNG spot market has done little to sway rates for either the 160cbm or the 174cbm indices. The delta between the two ships now has narrowed significantly with around $13,000 per day the norm for a premium on the 2-stroke. Little reported on fixtures with spot, though some enquiry in the market has kept chins wagging trying to see what levels or indeed which ship type charterers look to take.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "brazil",
+    "atlantic",
+    "europe",
+    "japan",
+    "gas",
+    "finish",
+    "close",
+    "equivalent",
+    "owners",
+    "tce"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 558,
+  "source_path": "reports/baltic/gas/2024/2024-04-26_gas-report-week-17_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2024-04-26_2024_04_26_gas_report_week_17_gas__s01_lng",
+      "doc_id": "baltic_gas_2024-04-26_2024_04_26_gas_report_week_17_gas",
+      "parent_id": "baltic_gas_2024-04-26_2024_04_26_gas_report_week_17_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A continued flat LNG spot market has done little to sway rates for either the 160cbm or the 174cbm indices. The delta between the two ships now has narrowed significantly with around $13,000 per day the norm for a premium on the 2-stroke.",
+      "keywords": [
+        "lng",
+        "europe",
+        "japan",
+        "gas",
+        "close",
+        "finish",
+        "blng1",
+        "cbm"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 325,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2024-04-26_2024_04_26_gas_report_week_17_gas__s02_lpg",
+      "doc_id": "baltic_gas_2024-04-26_2024_04_26_gas_report_week_17_gas",
+      "parent_id": "baltic_gas_2024-04-26_2024_04_26_gas_report_week_17_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A weak week from the Middle East with freight rates dropping by $4.429 on BLPG1 Ras Tanura-Chiba, there was a report at the end of the week that one charterer managed to fix a ship sub $60 but that other owners with tonnage around are holding out for at least $60 or above. Few cargoes working and a tonnage list that's quite healthy means rates are still on the softer side.",
+      "keywords": [
+        "lpg",
+        "brazil",
+        "atlantic",
+        "gas",
+        "equivalent",
+        "tce",
+        "are",
+        "cargoes"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

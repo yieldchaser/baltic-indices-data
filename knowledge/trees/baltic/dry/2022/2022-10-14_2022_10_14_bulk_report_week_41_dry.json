@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__root",
+  "doc_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 41",
+  "section_path": [
+    "Bulk report - Week 41"
+  ],
+  "section_path_text": "Bulk report - Week 41",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market softened this week as a lack of fresh cargo and activity, particularly in the Atlantic hampered, efforts to push higher. The Capesize 5TC lowered 1909 over the week to settle at $17,965. A small uptick in sentiment to end the week may be a sign of resistance by owners to not allow rates to fall lower.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 882,
+  "source_path": "reports/baltic/dry/2022/2022-10-14_bulk-report-week-41_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market softened this week as a lack of fresh cargo and activity, particularly in the Atlantic hampered, efforts to push higher. The Capesize 5TC lowered 1909 over the week to settle at $17,965.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "activity",
+        "owners"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week began on a muted note for Panamax vessels. Draft issues in the US Gulf, as well as talk of a slowing Ukrainian Black Sea program, impacted the north Atlantic.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "us_gulf",
+        "but",
+        "asia",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Despite the return to work for many in Asia, the arena failed to gain any positive momentum, with many seeing a lack of fresh enquiry from most areas and a build up of prompt tonnage. However, the Atlantic saw better levels of interest and rates remained positive overall.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry",
+      "parent_id": "baltic_dry_2022-10-14_2022_10_14_bulk_report_week_41_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Despite BHSI making negative moves this week, part of the Atlantic showed a positive trend with a 43,000-dwt fixing from the Black Sea to the Continent at $23,000. Meanwhile, a 37,000-dwt was rumoured to have been fixed for a trip from the US Gulf to Spain with an intended cargo of Petcoke at $23,500.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "grain",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 220,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

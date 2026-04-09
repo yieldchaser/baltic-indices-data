@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__root",
+  "doc_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 23",
+  "section_path": [
+    "Bulk report - Week 23"
+  ],
+  "section_path_text": "Bulk report - Week 23",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market enjoyed a strong upward trajectory this week, driven by consistent gains in the Pacific and mounting support in both South Brazil and the North Atlantic. The BCI 5TC rose steadily from $19,071 on Monday to $23,572 by week's end, reflecting robust demand and tightening tonnage across both basins. In the Pacific, C5 rates climbed from below $9.00 to $10.40-$10.50 levels, underpinned by limited tonnage, strong iron ore demand, and increased activity from miners and operators.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 815,
+  "source_path": "reports/baltic/dry/2025/2025-06-06_bulk-report-week-23_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__s01_capesize",
+      "doc_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market enjoyed a strong upward trajectory this week, driven by consistent gains in the Pacific and mounting support in both South Brazil and the North Atlantic. The BCI 5TC rose steadily from $19,071 on Monday to $23,572 by week's end, reflecting robust demand and tightening tonnage across both basins.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "iron_ore",
+        "both"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__s02_panamax",
+      "doc_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market wrapped up a notably active week with solid gains, particularly driven by renewed strength in the Atlantic. The North Atlantic led the charge with significant rate improvements, while South America added further support.",
+      "keywords": [
+        "panamax",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "india",
+        "america",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was another challenging week for the sector, with rates in both the Atlantic and Pacific regions under continued downward pressure. In the Continent and Mediterranean, sentiment remained largely positional.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "delivery",
+        "fixed",
+        "redelivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 179,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__s04_handysize",
+      "doc_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2025-06-06_2025_06_06_bulk_report_week_23_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the market delivered a mixed performance across the regions, with overall sentiment remaining flat. In the Continent and Mediterranean, market fundamentals stayed soft, with limited visible activity.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "grain",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

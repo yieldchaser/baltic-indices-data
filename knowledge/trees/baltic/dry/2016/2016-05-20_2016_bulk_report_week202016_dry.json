@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_dry_2016-05-20_2016_bulk_report_week202016_dry__root",
+  "doc_id": "baltic_dry_2016-05-20_2016_bulk_report_week202016_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 20 2016",
+  "section_path": [
+    "Bulk report - Week 20 2016"
+  ],
+  "section_path_text": "Bulk report - Week 20 2016",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA rollercoaster this week as rates rose sharply in all areas by Tuesday but fell away by Thursday. These blips once again underline the fragility of the market with a hesitation from the charterers weakening owners' resolve. The key West Australia route reached $4.60 by Tuesday, but today saw rates for a 2-5 June 170,000 tonne 10% cargo from Dampier to Qingdao drop to $4.20.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1266,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week202016_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-05-20_2016_bulk_report_week202016_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-05-20_2016_bulk_report_week202016_dry",
+      "parent_id": "baltic_dry_2016-05-20_2016_bulk_report_week202016_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A rollercoaster this week as rates rose sharply in all areas by Tuesday but fell away by Thursday. These blips once again underline the fragility of the market with a hesitation from the charterers weakening owners' resolve.",
+      "keywords": [
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "but",
+        "again",
+        "built",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 298,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-05-20_2016_bulk_report_week202016_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-05-20_2016_bulk_report_week202016_dry",
+      "parent_id": "baltic_dry_2016-05-20_2016_bulk_report_week202016_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The focus once again was on South America with this market largely determining activity. Rates were mixed with some charterers conceding reasonable numbers for May loaders and a reasonably steady flow of new cargoes for first half of June.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "pacific"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 961,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

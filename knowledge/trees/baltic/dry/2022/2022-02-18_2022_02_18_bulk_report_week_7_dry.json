@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__root",
+  "doc_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 7",
+  "section_path": [
+    "Bulk report - Week 7"
+  ],
+  "section_path_text": "Bulk report - Week 7",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe Capesize market struggled to hold its value this week as rates ebbed away across all routes. Closing Friday some reprieve was found as the Capesize 5TC closed on a positive up note +1888 to settle at $13,888. The Pacific region which experienced stronger swings compared to the other regions saw the Transpacific C10 change +1546 week on week concluding at $9,125.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 938,
+  "source_path": "reports/baltic/dry/2022/2022-02-18_bulk-report-week-7_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__s01_capesize",
+      "doc_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry",
+      "parent_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The Capesize market struggled to hold its value this week as rates ebbed away across all routes. Closing Friday some reprieve was found as the Capesize 5TC closed on a positive up note +1888 to settle at $13,888.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "was",
+        "positive",
+        "closed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 246,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__s02_panamax",
+      "doc_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry",
+      "parent_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Brokers spoke of a two tier market this week in both basins depending on vessels open dates with later tonnage commanding a small premium at present. In East Coast South America there has been more visible activity today with a 83,000-dwt fixed basis delivery retro sailing Singapore on the 12 February for a trip via East Coast South America to South East Asia at $23,000 and a 81,000-dwt placed on subjects for a trip from East Coast South America to Singapore-Japan Range at $26,000, plus a ballast bonus of $1,300,00 for early March Delivery.",
+      "keywords": [
+        "china",
+        "europe",
+        "india",
+        "singapore",
+        "japan",
+        "south",
+        "east",
+        "america"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry",
+      "parent_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__root",
+      "title": "Supramax / Ultramax",
+      "section_path": [
+        "Supramax / Ultramax"
+      ],
+      "section_path_text": "Supramax / Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A mixed week overall as the Asian arena started proceeding on a firm note only to ease off as the weekend came. From the Atlantic the US Gulf demand was seen although some said again this was easing.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 230,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__s04_handysize",
+      "doc_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry",
+      "parent_id": "baltic_dry_2022-02-18_2022_02_18_bulk_report_week_7_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "We have seen more positive gains on the BHSI this week, with most markets seeing daily improvements. In Asia a lack of prompt tonnage is still driving the increases with a 38,000-dwt fixed from North China to the Mediterranean at $32,000.",
+      "keywords": [
+        "handysize",
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 227,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

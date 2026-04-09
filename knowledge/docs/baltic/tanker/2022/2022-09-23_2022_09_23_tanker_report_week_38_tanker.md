@@ -32,6 +32,7 @@ regions:
 - atlantic
 - india
 - us_gulf
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/tanker/2022/2022-09-23_tanker-report-week-38_tanker.html

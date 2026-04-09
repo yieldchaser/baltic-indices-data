@@ -38,6 +38,7 @@ regions:
 - us_gulf
 - singapore
 - japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2019/2019_bulk-report-week45_dry.html

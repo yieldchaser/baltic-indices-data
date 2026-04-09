@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__root",
+  "doc_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 46",
+  "section_path": [
+    "Bulk report - Week 46"
+  ],
+  "section_path_text": "Bulk report - Week 46",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nA fast paced market this week with rates rising. The BCI 5-timecharter average Thursday hit its highest level so far this year at $19,515 daily, but today wobbled slightly and stood at $19,364 daily. The key routes all recorded sharp gains with the West Australia/China nudging $7.50 Thursday but today slipping back to $7.25 to $7.30 and then talk that a tick under $7.00 was done.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "india",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1514,
+  "source_path": "reports/baltic/dry/2016/2016_bulk-report-week46_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__s01_capesize",
+      "doc_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry",
+      "parent_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "A fast paced market this week with rates rising. The BCI 5-timecharter average Thursday hit its highest level so far this year at $19,515 daily, but today wobbled slightly and stood at $19,364 daily.",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "today",
+        "daily",
+        "but",
+        "thursday"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 266,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__s02_panamax",
+      "doc_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry",
+      "parent_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A busy week too for panamaxes with rates sharply up in nearly all areas. The Atlantic remained particularly strong, especially northwest Europe where tonnage remained very limited.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 403,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry",
+      "parent_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "There were improving rates from both the Atlantic and Pacific this week and the gains were maintained until the end of the week. Trips from the US Gulf were done at strong rates throughout the week.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 401,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__s04_handysize",
+      "doc_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry",
+      "parent_id": "baltic_dry_2016-11-18_2016_bulk_report_week46_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "An active week for handys especially within the Atlantic sector, with rates and indices all improving daily. The Pacific could not match the buoyancy reached in the Atlantic and levels marginally decreased.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "handysize",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 425,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

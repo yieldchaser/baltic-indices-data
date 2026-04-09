@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__root",
+  "doc_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 50",
+  "section_path": [
+    "Bulk report - Week 50"
+  ],
+  "section_path_text": "Bulk report - Week 50",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nIt was one-way traffic for the Capesize market this past week, with all routes giving up value. While downward momentum may have slowed a touch by Friday, the Capesize 5TC took a trouncing, losing $5,702 to settle at an almost six-month low of $18,002. Fixing activity was solid throughout the week, especially in the Pacific as charterers took advantage of owners scrambling to fix.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "meg",
+    "europe",
+    "india"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 920,
+  "source_path": "reports/baltic/dry/2019/2019_bulk-report-week50_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__s01_capesize",
+      "doc_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry",
+      "parent_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "It was one-way traffic for the Capesize market this past week, with all routes giving up value. While downward momentum may have slowed a touch by Friday, the Capesize 5TC took a trouncing, losing $5,702 to settle at an almost six-month low of $18,002.",
+      "keywords": [
+        "capesize",
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "activity",
+        "are",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__s02_panamax",
+      "doc_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry",
+      "parent_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The firmer market continued this week, with indices rising. In the Atlantic to East Coast South America (ECSA), grain cargoes continued to push the market.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "us_gulf",
+        "japan",
+        "coal",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__s03_supramax_ultramax",
+      "doc_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry",
+      "parent_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__root",
+      "title": "Supramax/ Ultramax",
+      "section_path": [
+        "Supramax/ Ultramax"
+      ],
+      "section_path_text": "Supramax/ Ultramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A mixed week for the Baltic Supramax Index (BSI) which overall remained flat. Limited period cover came to light, but a 52,000dwt ship open in the US East Coast was fixed for three to five months, trading at around $13,000.",
+      "keywords": [
+        "supramax",
+        "china",
+        "atlantic",
+        "meg",
+        "europe",
+        "india",
+        "singapore",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__s04_handysize",
+      "doc_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry",
+      "parent_id": "baltic_dry_2019-12-13_2019_bulk_report_week50_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Baltic Handy Size Index (BHSI) raised a few points and then went flat. Not much improvement from vessels open in the Skaw-Passero range.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "fixed",
+        "open",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

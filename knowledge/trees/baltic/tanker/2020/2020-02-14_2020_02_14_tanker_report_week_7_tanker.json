@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__root",
+  "doc_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 7",
+  "section_path": [
+    "Tanker report - Week 7"
+  ],
+  "section_path_text": "Tanker report - Week 7",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "VLCC\nThe market in the Middle East was unmoved this week, with Chinese refiners continuing to slow imports, allied with the impact of the Coronavirus and the return of the previously sanctioned Cosco tonnage. The list subsequently swelled, allowing the few active charterers to reign in owners' expectations. Rates for 270,000mt to China bounced around the WS 40 level, while the 280,000mt market to US Gulf, via the Cape/Cape routing remained flat, at WS 30.",
+  "keywords": [
+    "capesize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "brazil",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 685,
+  "source_path": "reports/baltic/tanker/2020/2020-02-14_tanker-report---week-7_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__s01_vlcc",
+      "doc_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker",
+      "parent_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market in the Middle East was unmoved this week, with Chinese refiners continuing to slow imports, allied with the impact of the Coronavirus and the return of the previously sanctioned Cosco tonnage. The list subsequently swelled, allowing the few active charterers to reign in owners' expectations.",
+      "keywords": [
+        "capesize",
+        "china",
+        "west_africa",
+        "us_gulf",
+        "active",
+        "africa",
+        "allied",
+        "allowing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__s02_suezmax",
+      "doc_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker",
+      "parent_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Rates for 130,000mt West Africa/UK-Continent followed the VLCC example, remaining unmoved and in the high WS 80s for most of the week. However, at the time of writing, charterers appear to have convinced owners to fall through the WS 80 barrier, with WS 78.75 being reported on a trader's relet to Petroineos.",
+      "keywords": [
+        "vlcc",
+        "brazil",
+        "west_africa",
+        "europe",
+        "africa/uk-continent",
+        "appear",
+        "around",
+        "barrier"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 155,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__s03_aframax",
+      "doc_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker",
+      "parent_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A more positive attitude existed in this sector with rates improving on all routes. 80,000mt Ceyhan/Mediterranean is worth WS85, 16% more than a week ago.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "points",
+        "another",
+        "voyages",
+        "ago.",
+        "all",
+        "are"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 141,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__s04_clean",
+      "doc_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker",
+      "parent_id": "baltic_tanker_2020-02-14_2020_02_14_tanker_report_week_7_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "It was another uneventful week for owners with the market in the Middle East Gulf/Japan trade for 75,000mt steady in very low WS80s. In the 55,000mt size the market settled at around WS92.5.",
+      "keywords": [
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "japan",
+        "crude_oil",
+        "trade",
+        "down"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}
