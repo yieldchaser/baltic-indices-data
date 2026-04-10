@@ -1,40 +1,48 @@
 """
 Breakwave Advisors Insights Scraper
-=====================================
-Scrapes all articles from https://www.breakwaveadvisors.com/insights
-including full text, images, and embedded charts.
+==================================
+Scrapes article pages from https://www.breakwaveadvisors.com/insights,
+stores clean self-contained HTML by year, and downloads article images
+into a shared repo-local image directory.
 
-Structure:
-  C:/Users/Dell/Github/Shipping/reports/breakwave/
-    {year}/
-      {date}_{slug}.html       ← clean article HTML
-    images/
-      {slug}_{filename}.{ext}  ← downloaded images
-
-Usage:
-    python breakwave_scraper.py               # full run
-    python breakwave_scraper.py --dry-run     # list URLs only
-    python breakwave_scraper.py --year 2026   # single year
-
-Install:
-    pip install requests beautifulsoup4 lxml
+Output:
+  reports/breakwave/{year}/{date}_{slug}.html
+  reports/breakwave/images/{slug}_{image}_{hash}.{ext}
 """
 
+from __future__ import annotations
+
+import argparse
+import hashlib
 import re
 import time
-import argparse
-import requests
-from pathlib import Path
-from urllib.parse import urljoin, urlparse, urlencode, parse_qs
 from datetime import datetime
+from pathlib import Path
+from urllib.parse import urljoin, urlparse
+
+import requests
 from bs4 import BeautifulSoup
 
-# ── Config ────────────────────────────────────────────────────────────────────
+from source_archive_utils_v2 import (
+    REPORTS_ROOT,
+    clean_node_text,
+    configure_utf8_stdio,
+    humanize_slug,
+    make_soup,
+    remove_empty_tags,
+    repair_text,
+    sanitize_filename,
+    slugify,
+    standard_archive_html,
+    strip_attrs,
+    unwrap_redundant_containers,
+)
 
-BASE_URL    = "https://www.breakwaveadvisors.com"
-START_URL   = "https://www.breakwaveadvisors.com/insights"
-OUTPUT_ROOT = Path(r"C:\Users\Dell\Github\Shipping\reports\breakwave")
-IMAGES_DIR  = OUTPUT_ROOT / "images"
+
+BASE_URL = "https://www.breakwaveadvisors.com"
+START_URL = f"{BASE_URL}/insights"
+OUTPUT_ROOT = REPORTS_ROOT / "breakwave"
+IMAGES_DIR = OUTPUT_ROOT / "images"
 
 HEADERS = {
     "User-Agent": (
@@ -43,441 +51,438 @@ HEADERS = {
         "Chrome/124.0.0.0 Safari/537.36"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Referer": "https://www.breakwaveadvisors.com/",
+    "Referer": BASE_URL + "/",
 }
 
-PAGE_DELAY     = 1.5   # between listing pages
-ARTICLE_DELAY  = 1.2   # between article downloads
-IMAGE_DELAY    = 0.5
-
-# ── HTTP session ──────────────────────────────────────────────────────────────
+PAGE_DELAY = 1.5
+ARTICLE_DELAY = 1.2
+IMAGE_DELAY = 0.5
 
 session = requests.Session()
 session.headers.update(HEADERS)
+configure_utf8_stdio()
 
 
-def get(url: str, retries: int = 3, stream: bool = False):
-    for i in range(retries):
+def get(url: str, retries: int = 3, *, stream: bool = False):
+    for attempt in range(retries):
         try:
-            r = session.get(url, timeout=30, stream=stream)
-            r.raise_for_status()
-            return r
-        except Exception as e:
-            print(f"    ⚠  [{i+1}/{retries}] {url[-60:]}  {e}")
-            if i < retries - 1:
+            response = session.get(url, timeout=30, stream=stream)
+            response.raise_for_status()
+            return response
+        except Exception as exc:
+            print(f"    ! [{attempt + 1}/{retries}] {url[-80:]}  {exc}")
+            if attempt < retries - 1:
                 time.sleep(3)
     return None
 
 
-def soup(url: str) -> "BeautifulSoup | None":
-    r = get(url)
-    return BeautifulSoup(r.content, "lxml") if r else None
+def soup(url: str) -> BeautifulSoup | None:
+    response = get(url)
+    return make_soup(response.text) if response else None
 
 
-# ── Listing page: collect article URLs ───────────────────────────────────────
+def parse_breakwave_date(raw: str) -> datetime | None:
+    raw = repair_text(raw)
+    for fmt in (
+        "%B %d, %Y",
+        "%b %d, %Y",
+        "%Y-%m-%d",
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%dT%H:%M:%S.%f%z",
+    ):
+        try:
+            return datetime.strptime(raw, fmt)
+        except ValueError:
+            continue
+    return None
 
-ARTICLE_PATTERN = re.compile(
-    r"https://www\.breakwaveadvisors\.com/insights/\S+", re.IGNORECASE
-)
+
+def first_meaningful_text(body: BeautifulSoup | None) -> str:
+    if body is None:
+        return ""
+    for tag in body.find_all(["h1", "h2", "h3", "strong", "p", "li"], limit=40):
+        text = repair_text(tag.get_text(" ", strip=True))
+        if len(text) >= 16:
+            return text[:180]
+    return ""
+
+
+def find_title(page_soup: BeautifulSoup, body: BeautifulSoup | None, url: str) -> str:
+    bad_titles = {"", "breakwave advisors", "signal ocean", "insights"}
+    selectors = [
+        "article h1",
+        ".entry-title",
+        "main h1",
+        "meta[property='og:title']",
+        "meta[name='twitter:title']",
+        "title",
+        "h1",
+    ]
+    for selector in selectors:
+        element = page_soup.select_one(selector)
+        if element is None:
+            continue
+        if element.name == "meta":
+            text = repair_text(element.get("content"))
+        else:
+            text = repair_text(element.get_text(" ", strip=True))
+            if element.name == "title":
+                text = text.replace(" - Breakwave Advisors", "").replace(" \u2014 Breakwave Advisors", "").strip()
+        if text and text.lower() not in bad_titles:
+            return text
+
+    fallback = first_meaningful_text(body)
+    if fallback:
+        return fallback
+    return humanize_slug(url.rstrip("/").split("/")[-1]) or "Breakwave Insights Article"
+
 
 def is_article_url(href: str) -> bool:
-    """True if href looks like an individual article, not a filter/tag/author page."""
     if not href:
         return False
     parsed = urlparse(href)
     path = parsed.path.rstrip("/")
-    # Exclude: /insights itself, /insights?author=..., /insights/tag/..., /insights?offset=...
     if path == "/insights":
         return False
-    if parsed.query:   # any ?param= is a filter page, not an article
+    if parsed.query:
         return False
     if "/insights/tag/" in path:
         return False
-    if path.count("/") < 2:   # must be at least /insights/something
-        return False
-    return True
+    return path.count("/") >= 2
 
 
-def extract_article_links(page_soup: BeautifulSoup) -> list:
-    links = set()
-    for a in page_soup.find_all("a", href=True):
-        href = a["href"]
+def extract_article_links(page_soup: BeautifulSoup) -> list[str]:
+    links: set[str] = set()
+    for anchor in page_soup.find_all("a", href=True):
+        href = anchor["href"]
         if not href.startswith("http"):
             href = urljoin(BASE_URL, href)
         if "breakwaveadvisors.com/insights/" in href and is_article_url(href):
-            # Strip fragments
             links.add(href.split("#")[0])
-    return list(links)
+    return sorted(links)
 
 
-def get_older_posts_url(page_soup: BeautifulSoup) -> "str | None":
-    """Find the 'Older Posts' pagination link."""
-    for a in page_soup.find_all("a", href=True):
-        text = a.get_text(strip=True).lower()
-        if "older" in text:
-            href = a["href"]
-            if not href.startswith("http"):
-                href = urljoin(BASE_URL, href)
-            return href
+def get_older_posts_url(page_soup: BeautifulSoup) -> str | None:
+    for anchor in page_soup.find_all("a", href=True):
+        if "older" in anchor.get_text(strip=True).lower():
+            href = anchor["href"]
+            return urljoin(BASE_URL, href) if not href.startswith("http") else href
     return None
 
 
-def collect_all_article_urls(year_filter: "int | None" = None) -> list:
-    """Walk all listing pages via 'Older Posts', collecting unique article URLs."""
-    all_links = set()
-    page_url  = START_URL
-    page_num  = 1
+def collect_all_article_urls(year_filter: int | None = None) -> list[str]:
+    all_links: set[str] = set()
+    page_url = START_URL
+    page_num = 1
 
     while page_url:
-        print(f"  📄 Listing page {page_num}: {page_url[-80:]}")
-        pg = soup(page_url)
-        if pg is None:
-            print(f"  ✗ Failed to fetch listing page — stopping")
+        print(f"  Listing page {page_num}: {page_url[-80:]}")
+        page_soup = soup(page_url)
+        if page_soup is None:
+            print("  x Failed to fetch listing page; stopping")
             break
 
-        links = extract_article_links(pg)
+        links = extract_article_links(page_soup)
         before = len(all_links)
         all_links.update(links)
-        print(f"     +{len(all_links) - before} new links  (total {len(all_links)})")
+        print(f"    +{len(all_links) - before} new links  (total {len(all_links)})")
 
-        older = get_older_posts_url(pg)
-        if older and older != page_url:
-            page_url = older
-            page_num += 1
-            time.sleep(PAGE_DELAY)
-        else:
-            print(f"  ✓ No more 'Older Posts' — reached the end")
+        if year_filter:
+            page_years = []
+            has_yearless = False
+            for link in links:
+                match = re.search(r"/insights/(\d{4})/", link)
+                if match:
+                    page_years.append(int(match.group(1)))
+                else:
+                    has_yearless = True
+            if page_years and max(page_years) < year_filter and not has_yearless:
+                print(f"  Reached pages older than {year_filter}; stopping pagination early")
+                break
+
+        older = get_older_posts_url(page_soup)
+        if not older or older == page_url:
+            print("  No more listing pages")
             break
+        page_url = older
+        page_num += 1
+        time.sleep(PAGE_DELAY)
 
-    # Apply year filter if requested
     if year_filter:
         filtered = []
         for url in all_links:
-            # Try to extract year from URL path e.g. /insights/2024/3/11/...
-            m = re.search(r"/insights/(\d{4})/", url)
-            if m and int(m.group(1)) == year_filter:
+            match = re.search(r"/insights/(\d{4})/", url)
+            if match and int(match.group(1)) == year_filter:
                 filtered.append(url)
-            elif not m:
-                # URLs like /insights/tanker4726 — keep always (no year in path)
+            elif not match:
                 filtered.append(url)
         return sorted(filtered, reverse=True)
-
     return sorted(all_links, reverse=True)
 
 
-# ── Article page: extract content ────────────────────────────────────────────
-
-HTML_CSS = """
-*, *::before, *::after { box-sizing: border-box; }
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif;
-    font-size: 15px; line-height: 1.75; color: #1a1a1a;
-    max-width: 860px; margin: 0 auto; padding: 32px 24px; background: #fff;
-}
-h1 { font-size: 1.7em; color: #1a1a1a; margin: 0 0 8px; line-height: 1.3; }
-h2 { font-size: 1.25em; color: #222; margin: 24px 0 8px; }
-h3 { font-size: 1.05em; color: #222; margin: 16px 0 6px; }
-p  { margin: 0 0 14px; }
-a  { color: #1a6b3c; }
-img { max-width: 100%; height: auto; margin: 16px 0; border-radius: 4px; }
-.meta {
-    font-size: 0.82em; color: #555; margin: 6px 0 20px;
-    padding: 6px 12px; background: #f4f6f4;
-    border-left: 3px solid #1a6b3c; border-radius: 2px;
-}
-.source-tag { font-weight: 600; color: #1a6b3c; }
-.tags { font-size: 0.8em; color: #888; margin-top: 24px; }
-.chart-embed { background: #f8f8f8; border: 1px solid #ddd;
-               padding: 10px; margin: 16px 0; border-radius: 4px;
-               font-size: 0.85em; color: #555; }
-hr { border: none; border-top: 1px solid #e0e0e0; margin: 20px 0; }
-blockquote { border-left: 3px solid #ccc; margin: 16px 0;
-             padding: 4px 16px; color: #444; }
-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-th { background: #1a6b3c; color: #fff; padding: 8px 12px; text-align: left; }
-td { padding: 7px 12px; border-bottom: 1px solid #e0e6ed; }
-tr:nth-child(even) td { background: #f5f9f5; }
-"""
-
-
-def slugify(text: str) -> str:
-    text = text.lower().strip()
-    text = re.sub(r"[^\w\s-]", "", text)
-    text = re.sub(r"[\s_-]+", "-", text)
-    return text[:60].strip("-")
-
-
-def sanitize_filename(s: str) -> str:
-    return re.sub(r'[<>:"/\\|?*]', "_", s)
-
-
-def download_image(img_url: str, slug: str) -> "tuple[str, str] | None":
-    """
-    Download an image. Returns (local_rel_path, img_url) or None on failure.
-    local_rel_path is relative to the article HTML file.
-    """
+def download_image(img_url: str, slug: str) -> tuple[str, str] | None:
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
     parsed = urlparse(img_url)
     ext = Path(parsed.path).suffix or ".jpg"
     if len(ext) > 5:
         ext = ".jpg"
-    # Build filename from slug + url hash
     img_slug = slugify(Path(parsed.path).stem or "img")
-    fname = sanitize_filename(f"{slug[:30]}_{img_slug[:40]}{ext}")
-    dest = IMAGES_DIR / fname
+    url_hash = hashlib.sha1(img_url.encode("utf-8")).hexdigest()[:10]
+    filename = sanitize_filename(f"{slug[:28]}_{img_slug[:30]}_{url_hash}{ext}")
+    dest = IMAGES_DIR / filename
 
     if dest.exists() and dest.stat().st_size > 500:
-        return (f"../../images/{fname}", img_url)
+        return f"../../images/{filename}", img_url
 
-    r = get(img_url, stream=True)
-    if r is None:
+    response = get(img_url, stream=True)
+    if response is None:
         return None
-    dest.write_bytes(r.content)
+    dest.write_bytes(response.content)
     time.sleep(IMAGE_DELAY)
-    return (f"../../images/{fname}", img_url)
+    return f"../../images/{filename}", img_url
 
 
-def extract_article(pg: BeautifulSoup, url: str) -> "dict | None":
-    """Extract all fields from an article page."""
-    # Title
-    h1 = pg.find("h1")
-    title = h1.get_text(strip=True) if h1 else url.split("/")[-1]
+def clean_breakwave_body(body: BeautifulSoup, slug: str) -> tuple[str, list[str]]:
+    fragment = make_soup(f"<section>{str(body)}</section>").section
+    if fragment is None:
+        return "<p><em>No content extracted - visit the original URL.</em></p>", []
 
-    # Date — look for time tag or date-looking text near top of page
+    for tag in fragment.select(
+        "script, style, noscript, nav, header, footer, form, button, aside, svg"
+    ):
+        tag.decompose()
+
+    iframe_notes: list[str] = []
+    seen_images: set[str] = set()
+
+    for iframe in list(fragment.find_all("iframe")):
+        src = repair_text(iframe.get("src"))
+        note = fragment.new_tag("div")
+        note["class"] = "archive-note"
+        note.string = f"Embedded chart: {src}" if src else "Embedded chart removed during archiving"
+        iframe.replace_with(note)
+        if src:
+            iframe_notes.append(src)
+
+    for img in list(fragment.find_all("img")):
+        src = img.get("src") or img.get("data-src") or ""
+        if not src:
+            img.decompose()
+            continue
+        if not src.startswith("http"):
+            src = urljoin(BASE_URL, src)
+        if src in seen_images:
+            img.decompose()
+            continue
+        seen_images.add(src)
+        result = download_image(src, slug)
+        if result is None:
+            note = fragment.new_tag("div")
+            note["class"] = "archive-note"
+            note.string = f"Missing image: {src}"
+            img.replace_with(note)
+            continue
+        local_path, _ = result
+        img["src"] = local_path
+        img["loading"] = "lazy"
+        img.attrs.pop("data-src", None)
+
+    clean_node_text(fragment)
+    strip_attrs(fragment)
+    unwrap_redundant_containers(fragment)
+    remove_empty_tags(fragment)
+    return str(fragment), iframe_notes
+
+
+def extract_article(page_soup: BeautifulSoup, url: str) -> dict:
     date_str = ""
     date_obj = None
-    for sel in ["time", ".entry-dateline", "[class*='date']", "[class*='Date']"]:
-        el = pg.select_one(sel)
-        if el:
-            raw = el.get_text(strip=True)
-            # Try to parse
-            for fmt in ["%B %d, %Y", "%b %d, %Y", "%Y-%m-%d", "%d %B %Y"]:
-                try:
-                    date_obj = datetime.strptime(raw, fmt)
-                    date_str = raw
-                    break
-                except ValueError:
-                    pass
+    for selector in [
+        "meta[property='article:published_time']",
+        "meta[name='article:published_time']",
+        "time[datetime]",
+        "time",
+        ".entry-dateline",
+        "[class*='date']",
+        "[class*='Date']",
+    ]:
+        element = page_soup.select_one(selector)
+        if element:
+            raw = element.get("content") or element.get("datetime") or element.get_text(strip=True)
+            date_obj = parse_breakwave_date(raw)
             if date_obj:
+                date_str = date_obj.strftime("%B %d, %Y")
                 break
 
-    # Fallback: extract from URL path /insights/2026/4/8/...
     if not date_obj:
-        m = re.search(r"/insights/(\d{4})/(\d{1,2})/(\d{1,2})/", url)
-        if m:
+        match = re.search(r"/insights/(\d{4})/(\d{1,2})/(\d{1,2})/", url)
+        if match:
             try:
-                date_obj = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+                date_obj = datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)))
                 date_str = date_obj.strftime("%B %d, %Y")
             except ValueError:
                 pass
 
-    # Source / author
     source = ""
-    for sel in [".author-name", ".entry-author", "[class*='author']",
-                "[itemprop='author']"]:
-        el = pg.select_one(sel)
-        if el:
-            t = el.get_text(strip=True)
-            if t and len(t) < 80:
-                source = t
+    for selector in [
+        ".entry-header .entry-dateline a",
+        ".author-name",
+        ".entry-author",
+        "meta[name='author']",
+        "[class*='author']",
+        "[itemprop='author']",
+    ]:
+        element = page_soup.select_one(selector)
+        if element:
+            text = repair_text(element.get("content") or element.get_text(strip=True))
+            if text and len(text) < 80:
+                source = text
                 break
 
-    # Tags
     tags = []
-    for a in pg.find_all("a", href=True):
-        if "/insights/tag/" in a["href"]:
-            tags.append(a.get_text(strip=True))
+    for anchor in page_soup.find_all("a", href=True):
+        if "/insights/tag/" in anchor["href"]:
+            tag_text = repair_text(anchor.get_text(strip=True))
+            if tag_text:
+                tags.append(tag_text)
 
-    # Main content body — try multiple selectors
     body = None
-    for sel in [".entry-content", ".blog-item-content", ".post-content",
-                "[class*='entry-content']", "[class*='blog-item-content']",
-                "article", ".sqs-block-content", "main"]:
-        el = pg.select_one(sel)
-        if el and len(el.get_text(strip=True)) > 150:
-            body = el
+    for selector in [
+        "article .entry-content",
+        ".entry-content",
+        ".blog-item-content",
+        ".post-content",
+        "[class*='entry-content']",
+        "[class*='blog-item-content']",
+        "article",
+        ".sqs-block-content",
+        "main",
+    ]:
+        element = page_soup.select_one(selector)
+        if element and len(element.get_text(strip=True)) > 150:
+            body = element
             break
 
     if body is None:
-        # Fallback: take the largest text div
-        best, best_len = None, 0
-        for div in pg.find_all(["div", "section"]):
-            t = div.get_text(strip=True)
-            if len(t) > best_len and len(t) < 50000:
-                best, best_len = div, len(t)
+        best = None
+        best_len = 0
+        for div in page_soup.find_all(["div", "section"]):
+            text_len = len(div.get_text(strip=True))
+            if best_len < text_len < 50000:
+                best = div
+                best_len = text_len
         body = best
 
     return {
-        "title":    title,
-        "url":      url,
+        "title": find_title(page_soup, body, url),
+        "url": url,
         "date_str": date_str,
         "date_obj": date_obj,
-        "source":   source,
-        "tags":     tags,
-        "body":     body,
+        "source": source or "Breakwave Advisors",
+        "tags": tags,
+        "body": body,
     }
 
 
 def build_html(info: dict, slug: str) -> str:
-    """Build clean self-contained HTML from extracted article info."""
-    title    = info["title"]
-    url      = info["url"]
-    date_str = info["date_str"]
-    source   = info["source"]
-    tags     = info["tags"]
-    body     = info["body"]
-
-    # Process body: download images, note iframes
-    img_notes = []
-    iframe_notes = []
+    title = repair_text(info["title"])
+    url = info["url"]
+    date_str = info["date_str"] or "unknown"
+    source = repair_text(info["source"]) or "Breakwave Advisors"
+    tags = info["tags"]
+    body = info["body"]
 
     if body:
-        # Remove nav/header/footer/scripts
-        for tag in body.find_all(["nav", "header", "footer", "script",
-                                   "style", "noscript"]):
-            tag.decompose()
-
-        # Handle images — download and repoint src
-        for img in body.find_all("img"):
-            src = img.get("src") or img.get("data-src") or ""
-            if not src:
-                continue
-            if not src.startswith("http"):
-                src = urljoin(BASE_URL, src)
-            result = download_image(src, slug)
-            if result:
-                local_path, orig = result
-                img["src"] = local_path
-                img["loading"] = "lazy"
-                img.attrs.pop("data-src", None)
-            else:
-                img_notes.append(src)
-
-        # Handle iframes (Signal Ocean charts, etc.) — replace with note
-        for iframe in body.find_all("iframe"):
-            src = iframe.get("src", "")
-            note = body.new_tag("div")
-            note["class"] = "chart-embed"
-            note.string = f"[Embedded chart: {src}]"
-            iframe.replace_with(note)
-            iframe_notes.append(src)
-
-        # Strip class/id/style from all tags for cleaner LLM processing
-        for tag in body.find_all(True):
-            for attr in ["class", "id", "style", "onclick", "onload"]:
-                tag.attrs.pop(attr, None)
-
-        body_html = str(body)
+        body_html, iframe_notes = clean_breakwave_body(body, slug)
     else:
-        body_html = "<p><em>No content extracted — visit the original URL.</em></p>"
+        body_html = "<p><em>No content extracted - visit the original URL.</em></p>"
+        iframe_notes = []
 
-    tags_html = ""
-    if tags:
-        tag_list = " · ".join(tags)
-        tags_html = f'<p class="tags">Tags: {tag_list}</p>'
-
-    iframe_html = ""
+    extra_parts = []
     if iframe_notes:
-        links = " | ".join(f'<a href="{s}">{s[:60]}</a>' for s in iframe_notes)
-        iframe_html = f'<p class="tags">📊 Embedded charts: {links}</p>'
+        links = " | ".join(f'<a href="{src}">{repair_text(src)[:60]}</a>' for src in iframe_notes)
+        extra_parts.append(f'<div class="archive-note">Embedded charts: {links}</div>')
 
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title}</title>
-  <style>{HTML_CSS}</style>
-</head>
-<body>
-  <h1>{title}</h1>
-  <div class="meta">
-    <span class="source-tag">{source}</span>
-    &nbsp;|&nbsp; {date_str}
-    &nbsp;|&nbsp; <a href="{url}">{url}</a>
-  </div>
-  <hr>
-  {body_html}
-  {tags_html}
-  {iframe_html}
-</body>
-</html>"""
+    return standard_archive_html(
+        title=title,
+        archive_source="breakwave_insights",
+        source_url=url,
+        published_date=date_str,
+        category="insights",
+        body_html=body_html,
+        source_label=source,
+        tags=tags,
+        extra_html="\n".join(extra_parts),
+        accent_color="#1a6b3c",
+    )
 
 
 def make_dest(info: dict, slug: str) -> Path:
     year = info["date_obj"].year if info["date_obj"] else "unknown"
-    ds   = info["date_obj"].strftime("%Y-%m-%d") if info["date_obj"] else "0000-00-00"
-    fname = sanitize_filename(f"{ds}_{slug}.html")
-    return OUTPUT_ROOT / str(year) / fname
+    date_stamp = info["date_obj"].strftime("%Y-%m-%d") if info["date_obj"] else "0000-00-00"
+    return OUTPUT_ROOT / str(year) / sanitize_filename(f"{date_stamp}_{slug}.html")
 
 
-def process_article(url: str, dry_run: bool) -> bool:
+def process_article(url: str, dry_run: bool, overwrite: bool) -> bool:
     slug = slugify(url.rstrip("/").split("/")[-1])
     time.sleep(ARTICLE_DELAY)
 
-    pg = soup(url)
-    if pg is None:
-        print(f"    ✗ Failed to fetch")
+    page_soup = soup(url)
+    if page_soup is None:
+        print("    x Failed to fetch article")
         return False
 
-    info = extract_article(pg, url)
-    if info is None:
-        return False
-
+    info = extract_article(page_soup, url)
     dest = make_dest(info, slug)
 
-    # Skip if already saved with reasonable size
-    if dest.exists() and dest.stat().st_size > 1000:
-        print(f"    ✓ skip: {dest.name}")
+    if not overwrite and dest.exists() and dest.stat().st_size > 1000:
+        print(f"    skip: {dest.name}")
         return True
 
     if dry_run:
-        ds = info["date_str"] or "unknown date"
-        print(f"    [DRY RUN] {ds}  {info['title'][:60]}  → {dest.name}")
+        print(f"    [DRY RUN] {info['date_str'] or 'unknown date'}  {info['title'][:70]} -> {dest.name}")
         return True
 
-    html = build_html(info, slug)
+    html_doc = build_html(info, slug)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(html, encoding="utf-8")
-    kb = dest.stat().st_size // 1024
-    print(f"    ↓ {dest.name}  ({kb} KB)")
+    dest.write_text(html_doc, encoding="utf-8")
+    print(f"    saved: {dest.name}  ({dest.stat().st_size // 1024} KB)")
     return True
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
-
-def run(dry_run: bool, year_filter: "int | None"):
-    print(f"\n{'═'*64}")
-    print(f"  Breakwave Advisors Insights Scraper")
+def run(dry_run: bool, year_filter: int | None, overwrite: bool) -> None:
+    print("\n" + "=" * 64)
+    print("  Breakwave Advisors Insights Scraper")
     print(f"  Mode  : {'DRY RUN' if dry_run else 'DOWNLOAD'}")
     if year_filter:
         print(f"  Year  : {year_filter}")
-    print(f"{'═'*64}\n")
+    print("=" * 64 + "\n")
 
-    print(f"  🔍 Collecting article URLs from all listing pages...\n")
+    print("  Collecting article URLs...\n")
     urls = collect_all_article_urls(year_filter)
-    print(f"\n  ✅ {len(urls)} articles to process\n")
-    print(f"{'─'*64}")
+    print(f"\n  {len(urls)} articles to process\n")
+    print("-" * 64)
 
     ok = fail = 0
-    for i, url in enumerate(urls, 1):
-        print(f"\n  [{i}/{len(urls)}] {url.split('/')[-1][:60]}")
-        if process_article(url, dry_run):
+    for index, url in enumerate(urls, 1):
+        print(f"\n  [{index}/{len(urls)}] {url.split('/')[-1][:70]}")
+        if process_article(url, dry_run, overwrite):
             ok += 1
         else:
             fail += 1
 
-    print(f"\n{'═'*64}")
-    print(f"  DONE  ✓ {ok} saved   ✗ {fail} failed")
-    print(f"{'═'*64}\n")
+    print("\n" + "=" * 64)
+    print(f"  DONE  ok={ok}  failed={fail}")
+    print("=" * 64 + "\n")
 
 
-def main():
-    p = argparse.ArgumentParser(description="Breakwave Advisors Insights Scraper")
-    p.add_argument("--dry-run", action="store_true")
-    p.add_argument("--year",    type=int, default=None)
-    args = p.parse_args()
-    run(args.dry_run, args.year)
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Breakwave Advisors Insights Scraper")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--year", type=int, default=None)
+    parser.add_argument("--overwrite", action="store_true")
+    args = parser.parse_args()
+    run(args.dry_run, args.year, args.overwrite)
 
 
 if __name__ == "__main__":
