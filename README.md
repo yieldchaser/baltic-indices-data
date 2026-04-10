@@ -25,13 +25,25 @@ The repository now maintains itself through six GitHub Actions workflows:
 | `daily_update.yml` | **10:30 AM + 2 PM + 7 PM + 10 PM UTC daily** | Scrapes Baltic indices, SGX freight futures, and ETF fund-flow snapshots; deduplicates and commits updated CSVs |
 | `baltic_new_indices_update.yml` | **10:30 AM + 2 PM + 7 PM + 10 PM UTC Mon-Fri** | Updates BLNG, BLPG, FBX, and BAI from the Baltic ticker API and validates the local CSV tails before committing |
 | `etf_holdings_update.yml` | **2 PM UTC Mon-Fri** | Downloads the master Amplify ETF holdings CSV, extracts BDRY and BWET, sorts by vessel class to contract month, commits `*_holdings.csv` |
-| `report_ingest.yml` | **8 AM + 12 PM + 4 PM UTC Mon–Fri** | Checks Breakwave and Baltic report pages, downloads any newly published source reports into `reports/`, and pushes them to the repo |
+| `report_ingest.yml` | **8 AM + 9:30 AM + 12 PM + 4 PM UTC Mon-Fri** | Runs core ingest windows for Breakwave PDF + Baltic reports, plus an extended daily window for Breakwave Insights HTML and Hellenic report categories |
 | `process_knowledge.yml` | **On `reports/**` push + manual dispatch** | Compiles source PDFs/HTML into normalized markdown docs, retrieval chunks, manifests, and derived artifacts under `knowledge/` |
 | `daily_knowledge_update.yml` | **3:30 PM UTC daily + manual dispatch** | Checks whether `reports/` contains anything newer than the knowledge manifest and runs an incremental rebuild when needed |
 
 All six workflows are **idempotent** — safe to re-run at any time. The data-update jobs keep the dashboard fresh, `report_ingest.yml` keeps the source archive fresh, and the knowledge jobs keep the research corpus fresh. Each workflow pulls the latest remote state before writing to reduce push conflicts.
 
 The dashboard itself still fetches everything client-side at page load — no backend, no browser-side secrets. The only secret used in automation is `GEMINI_API_KEY`, consumed server-side by the knowledge pipeline for Breakwave enrichment and fallback extraction.
+
+---
+
+### Data Collection Readiness (2026-04-10)
+
+- Archive normalization completed for expanded source snapshots (Breakwave Insights + Hellenic).
+- Source archive validation passed: `5386` files checked, `0` issues.
+- Dry-run verification passed:
+  - `scripts/breakwave_insights_scraper.py --dry-run --year 2026` -> `ok=213, failed=0`
+  - `scripts/hellenic_scraper.py --category all --dry-run --year 2026` -> `ok=220, failed=0`
+- Collection automation is now scheduled for both core and extended report sources.
+- Data collection is production-ready for the next knowledge-integration phase.
 
 ---
 
@@ -58,6 +70,7 @@ Knowledge outputs live under `knowledge/`:
 The compiler is `scripts/process_knowledge.py`, and corpus validation is handled by `scripts/validate_knowledge.py`.
 New report families or book collections can be added later by dropping raw files into `reports/` and wiring a small source adapter into the compiler.
 The future-source onboarding playbook, including guidance for image-table sources, lives in `knowledge/CLAUDE.md`.
+Current compiler adapters are production-ready for `breakwave`, `baltic`, and `books`; expanded Breakwave Insights + Hellenic collections are now collected and normalized in `reports/`, ready for the next adapter phase.
 
 ### Knowledge System Status
 
@@ -178,7 +191,7 @@ Shipping/
     ├── daily_update.yml                # Cron: 10:30 AM + 2/7/10 PM UTC daily
     ├── baltic_new_indices_update.yml   # Cron: 10:30 AM + 2/7/10 PM UTC Mon–Fri
     ├── etf_holdings_update.yml         # Cron: 2 PM UTC Mon–Fri
-    ├── report_ingest.yml               # Cron: 8 AM / 12 PM / 4 PM UTC Mon–Fri
+    ├── report_ingest.yml               # Cron: 8 AM / 9:30 AM / 12 PM / 4 PM UTC Mon-Fri
     ├── process_knowledge.yml           # On reports push + manual full/incremental build
     └── daily_knowledge_update.yml      # Cron: 3:30 PM UTC daily incremental knowledge check
 ```
@@ -423,12 +436,12 @@ As a zero-infrastructure platform processing thousands of data points client-sid
 - Writes machine-readable JSON reports to `knowledge/manifests/` and a readable summary to `knowledge/reports/health_summary.md`
 - Keeps watch/stale conditions visible without turning normal operational warnings into hard validation failures
 
-### `scripts/breakwave_scraper.py` + `scripts/baltic_scraper.py`
+### Source Archive Scrapers
 
-- Discover and fetch newly published source reports into `reports/`
-- Support `--dry-run` for safe release checks before downloading
-- Skip already-saved report files on repeat runs
-- Feed the knowledge system automatically through `report_ingest.yml` + `process_knowledge.yml`
+- `scripts/breakwave_scraper.py` + `scripts/baltic_scraper.py` cover the core report families and support safe `--dry-run` checks.
+- `scripts/breakwave_insights_scraper.py` ingests Breakwave Insights HTML snapshots (idempotent, year-filtered, dry-run capable).
+- `scripts/hellenic_scraper.py` ingests Hellenic report categories (dry charter, tanker charter, iron ore, vessel valuations, demolition, shipbuilding).
+- `scripts/normalize_source_archives.py` + `scripts/validate_source_archives.py` keep archive formatting and structural integrity consistent over time.
 
 ### `scripts/baltic_new_indices.py`
 
@@ -444,7 +457,7 @@ As a zero-infrastructure platform processing thousands of data points client-sid
 | `daily_update.yml` | `30 10 * * *` + `0 14,19,22 * * *` | Updates core freight indices, SGX futures, and ETF flow snapshots multiple times per day |
 | `baltic_new_indices_update.yml` | `30 10 * * 1-5` + `0 14,19,22 * * 1-5` | Keeps BLNG, BLPG, FBX, and BAI synchronized to the live Baltic ticker API with explicit validation |
 | `etf_holdings_update.yml` | `0 14 * * 1-5` | Runs at 2 PM UTC Mon–Fri after Amplify publishes updated holdings |
-| `report_ingest.yml` | `0 8,12,16 * * 1-5` | Polls source report pages during the trading week so newly released reports land in `reports/` automatically |
+| `report_ingest.yml` | `0 8,12,16 * * 1-5` + `30 9 * * 1-5` | Runs core report polling windows (Breakwave PDF + Baltic) and a dedicated extended-source window (Breakwave Insights + Hellenic categories) so new files land in `reports/` automatically |
 | `process_knowledge.yml` | Event-driven / manual | Rebuilds all or selected knowledge sources when `reports/` changes |
 | `daily_knowledge_update.yml` | `30 15 * * *` | Runs a lightweight daily check and incrementally refreshes knowledge when newer source files exist |
 
@@ -465,6 +478,10 @@ python scripts/update_etf_holdings.py   # update BDRY and BWET holdings
 # Source Archive Scrapers
 python scripts/breakwave_scraper.py     # Pulls Breakwave Advisors PDFs
 python scripts/baltic_scraper.py        # Pulls Baltic weekly roundup files
+python scripts/breakwave_insights_scraper.py --year 2026 --dry-run
+python scripts/hellenic_scraper.py --category all --year 2026 --dry-run
+python scripts/normalize_source_archives.py --source all
+python scripts/validate_source_archives.py --source all
 
 # Knowledge Build
 python scripts/process_knowledge.py --source books --no-llm
@@ -495,6 +512,8 @@ The data scripts are safe to re-run at any time. The knowledge compiler is incre
 requests · beautifulsoup4 · pandas · lxml
 ```
 
+Selenium is additionally required for browser-driven source scrapers (`breakwave_insights_scraper.py` and `hellenic_scraper.py`).
+
 ### Knowledge Compiler
 
 ```
@@ -511,8 +530,10 @@ pdfplumber · beautifulsoup4 · lxml · google-generativeai · tiktoken · pytho
 | BDRY / BWET FFA holdings | [amplifyetfs.com](https://amplifyetfs.com) | Daily Mon–Fri via GitHub Actions |
 | BDRY / BWET live price + NAV | Yahoo Finance v8 API (via CORS proxy) | On ETF tab open |
 | BDRY liquidity history | Yahoo Finance v8 API (via CORS proxy) | On ETF tab open (`range=10y`) |
-| Breakwave dry bulk and tanker reports | Breakwave Advisors PDF archive in `reports/` | Incremental knowledge build on report changes |
-| Baltic dry/tanker/gas/container/Ningbo roundups | Baltic Exchange HTML archive in `reports/baltic/` | Daily incremental knowledge check |
+| Breakwave dry bulk and tanker reports | Breakwave Advisors PDF archive in `reports/` | Ingested on scheduled core windows via `report_ingest.yml` |
+| Breakwave Insights articles | Breakwave Insights HTML archive in `reports/breakwave/` | Ingested on scheduled extended windows via `report_ingest.yml` |
+| Baltic dry/tanker/gas/container/Ningbo roundups | Baltic Exchange HTML archive in `reports/baltic/` | Ingested on scheduled core windows via `report_ingest.yml` |
+| Hellenic dry/tanker/iron ore/vessel valuations/demolition/shipbuilding | Hellenic Shipping News HTML archive in `reports/hellenic/` | Ingested on scheduled extended windows via `report_ingest.yml` |
 | Shipping reference books | Local PDF library in `reports/` root | Static corpus; processed on demand or rebuild |
 
 ---
@@ -527,3 +548,4 @@ pdfplumber · beautifulsoup4 · lxml · google-generativeai · tiktoken · pytho
 - `Shipping_Main.xlsm` is an offline Excel workbook for ad-hoc analysis consuming the same CSV data
 - Capesize went briefly negative in 2020; the yearly Range % uses `(max−min)/avg` rather than `(max−min)/min` to avoid nonsensical outputs in such years
 - `GEMINI_API_KEY` is only needed for knowledge-workflow enrichment and local LLM-enabled Breakwave runs; the dashboard does not expose or require it
+- Knowledge processing currently compiles `breakwave`, `baltic`, and `books`; Breakwave Insights + Hellenic are fully collected/validated and ready for the next compiler-adapter phase.

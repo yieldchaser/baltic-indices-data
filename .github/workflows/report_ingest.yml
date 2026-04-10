@@ -3,10 +3,14 @@ name: Ingest Market Reports
 on:
   schedule:
     - cron: '0 8,12,16 * * 1-5'
+    - cron: '30 9 * * 1-5'
   workflow_dispatch:
     inputs:
       source:
-        description: 'Source: breakwave | baltic | all'
+        description: 'Source: core | extended | breakwave | baltic | breakwave_insights | hellenic | all'
+        default: ''
+      hellenic_category:
+        description: 'Hellenic category: all | dry_charter | tanker_charter | iron_ore | vessel_valuations | demolition | shipbuilding'
         default: 'all'
       year:
         description: 'UTC year or auto'
@@ -52,17 +56,36 @@ jobs:
           if [ -z "$YEAR" ] || [ "$YEAR" = "auto" ]; then
             YEAR="$(date -u +%Y)"
           fi
-          SOURCE="${{ github.event.inputs.source || 'all' }}"
+          SOURCE_INPUT="${{ github.event.inputs.source || '' }}"
+          EVENT_SCHEDULE="${{ github.event.schedule || '' }}"
+          if [ -z "$SOURCE_INPUT" ]; then
+            if [ "$EVENT_SCHEDULE" = "30 9 * * 1-5" ]; then
+              SOURCE="extended"
+            else
+              SOURCE="core"
+            fi
+          else
+            SOURCE="$SOURCE_INPUT"
+          fi
+          HELLENIC_CATEGORY="${{ github.event.inputs.hellenic_category || 'all' }}"
           DRY_RUN="${{ github.event.inputs.dry_run || 'false' }}"
           FLAGS="--year $YEAR"
           [ "$DRY_RUN" = "true" ] && FLAGS="$FLAGS --dry-run"
 
-          if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "breakwave" ]; then
+          if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "core" ] || [ "$SOURCE" = "breakwave" ]; then
             python scripts/breakwave_scraper.py $FLAGS
           fi
 
-          if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "baltic" ]; then
+          if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "core" ] || [ "$SOURCE" = "baltic" ]; then
             python scripts/baltic_scraper.py $FLAGS
+          fi
+
+          if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "extended" ] || [ "$SOURCE" = "breakwave_insights" ]; then
+            python scripts/breakwave_insights_scraper.py $FLAGS
+          fi
+
+          if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "extended" ] || [ "$SOURCE" = "hellenic" ]; then
+            python scripts/hellenic_scraper.py --category "$HELLENIC_CATEGORY" $FLAGS
           fi
 
       - name: Commit new reports
