@@ -1,0 +1,115 @@
+{
+  "node_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase__root",
+  "doc_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase",
+  "parent_id": null,
+  "title": "Web server is returning an unknown errorError code 520",
+  "section_path": [
+    "Web server is returning an unknown errorError code 520"
+  ],
+  "section_path_text": "Web server is returning an unknown errorError code 520",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed. If you are a visitor of this website:\nPlease try again in a few minutes.",
+  "keywords": [
+    "cloudflare",
+    "web",
+    "can",
+    "you",
+    "your",
+    "are",
+    "between",
+    "error",
+    "issue",
+    "origin",
+    "please",
+    "ray"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 198,
+  "source_path": "reports/hellenic/demolition/unknown/0000-00-00_gms-week-35-activity-increase.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase__s04_what_happened",
+      "doc_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase",
+      "parent_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase__root",
+      "title": "What happened?",
+      "section_path": [
+        "What happened?"
+      ],
+      "section_path_text": "What happened?",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.",
+      "keywords": [
+        "web",
+        "between",
+        "can",
+        "cloudflare",
+        "connection",
+        "displayed.",
+        "issue",
+        "not"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 27,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase__s06_if_you_are_a_visitor_of_this_website",
+      "doc_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase",
+      "parent_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase__root",
+      "title": "If you are a visitor of this website:",
+      "section_path": [
+        "If you are a visitor of this website:"
+      ],
+      "section_path_text": "If you are a visitor of this website:",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Please try again in a few minutes.",
+      "keywords": [
+        "again",
+        "few",
+        "minutes.",
+        "please",
+        "try"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 8,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase__s07_if_you_are_the_owner_of_this_website",
+      "doc_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase",
+      "parent_id": "hellenic_demolition_0000-00-00_0000_00_00_gms_week_35_activity_increase__root",
+      "title": "If you are the owner of this website:",
+      "section_path": [
+        "If you are the owner of this website:"
+      ],
+      "section_path_text": "If you are the owner of this website:",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause.",
+      "keywords": [
+        "cloudflare",
+        "your",
+        "error",
+        "ray",
+        "support",
+        "web",
+        "additional",
+        "automatically"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 130,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+---
+category: vessel_valuations
+commodities:
+- iron_ore
+- coal
+- grain
+- crude_oil
+- products
+- gas
+date: '2022-08-23'
+doc_id: hellenic_vessel_valuations_2022-08-23_2022_08_23_weekly_vessel_valuations_report_august_23_2022
+document_type: asset_valuations
+key_entities:
+- Middle East
+keywords:
+- capesize
+- handysize
+- suezmax
+- aframax
+- container
+- japan
+- mil
+- usd
+- dwt
+- sold
+- value
+- values
+market_tone: cautiously_bearish
+regions:
+- atlantic
+- pacific
+- china
+- europe
+- meg
+- japan
+section_count: 1
+signals: {}
+source: hellenic
+source_path: reports/hellenic/vessel_valuations/2022/2022-08-23_weekly-vessel-valuations-report-august-23-2022.html
+source_stem: 2022-08-23_weekly-vessel-valuations-report-august-23-2022
+source_url: https://www.hellenicshippingnews.com/weekly-vessel-valuations-report-august-23-2022
+summary: 'Main
+
+  in Weekly Vessel Valuations Report 23/08/2022
+
+  Image reference: 2022-08-23_weekly-vessel-valuations-report-august-23-2022_img1.png
+
+  Bulkers: Handysize values have firmed
+
+  Capesizes New Orleans and Santa Barbara (181,000/179,400 DWT, Nov/Jan 2015, SWS/Qingdao
+  Beihai Shipbuilding HI Co Ltd) sold to unknown Japanese buyers for USD 66.40 mil,
+  VV Value USD 74.50 mil - BBB. Tankers: Tanker values have firmed
+
+  Suezmaxes Istanbul and Atina (159,500 DWT, Apr/Jan 2015, Bohai Shipbuilding Heavy
+  Industry Co) and Ayse C and Zeynep (158,000 DWT, Aug 2020, Hyundai HI) sold to SFL
+  Corporation Ltd for USD 222.50 mil, VV Value USD 249.24 mil - Inc Charter. Aframax
+  Oberon (106,000 DWT, Jan 2006, Hyundai Samho Heavy Ind) sold to Middle Eastern buyers
+  for USD 25.50 mil, VV Value USD 24.66 mil - BWTS Fitted.'
+themes:
+- capesize
+- handysize
+- suezmax
+- aframax
+- container
+- japan
+title: Weekly Vessel Valuations Report, August 23 2022
+vessel_classes:
+- capesize
+- panamax
+- supramax
+- handysize
+- vlcc
+- suezmax
+- aframax
+- container
+---
+
+## Summary
+Main
+in Weekly Vessel Valuations Report 23/08/2022
+Image reference: 2022-08-23_weekly-vessel-valuations-report-august-23-2022_img1.png
+Bulkers: Handysize values have firmed
+Capesizes New Orleans and Santa Barbara (181,000/179,400 DWT, Nov/Jan 2015, SWS/Qingdao Beihai Shipbuilding HI Co Ltd) sold to unknown Japanese buyers for USD 66.40 mil, VV Value USD 74.50 mil - BBB. Tankers: Tanker values have firmed
+Suezmaxes Istanbul and Atina (159,500 DWT, Apr/Jan 2015, Bohai Shipbuilding Heavy Industry Co) and Ayse C and Zeynep (158,000 DWT, Aug 2020, Hyundai HI) sold to SFL Corporation Ltd for USD 222.50 mil, VV Value USD 249.24 mil - Inc Charter. Aframax Oberon (106,000 DWT, Jan 2006, Hyundai Samho Heavy Ind) sold to Middle Eastern buyers for USD 25.50 mil, VV Value USD 24.66 mil - BWTS Fitted.
+
+## Main
+in Weekly Vessel Valuations Report 23/08/2022
+Image reference: 2022-08-23_weekly-vessel-valuations-report-august-23-2022_img1.png
+Bulkers: Handysize values have firmed
+Capesizes New Orleans and Santa Barbara (181,000/179,400 DWT, Nov/Jan 2015, SWS/Qingdao Beihai Shipbuilding HI Co Ltd) sold to unknown Japanese buyers for USD 66.40 mil, VV Value USD 74.50 mil - BBB.
+Tankers: Tanker values have firmed
+Suezmaxes Istanbul and Atina (159,500 DWT, Apr/Jan 2015, Bohai Shipbuilding Heavy Industry Co) and Ayse C and Zeynep (158,000 DWT, Aug 2020, Hyundai HI) sold to SFL Corporation Ltd for USD 222.50 mil, VV Value USD 249.24 mil - Inc Charter.
+Aframax Oberon (106,000 DWT, Jan 2006, Hyundai Samho Heavy Ind) sold to Middle Eastern buyers for USD 25.50 mil, VV Value USD 24.66 mil - BWTS Fitted.
+Containers: Container values have softened
+No Container sales reported last week.
+Image reference: 2022-08-23_weekly-vessel-valuations-report-august-23-2022_img2.png

@@ -1,0 +1,70 @@
+---
+category: shipbuilding
+commodities: []
+date: '2022-05-10'
+doc_id: hellenic_shipbuilding_2022-05-10_2022_05_10_breakwave_dry_bulk_shipping_report_5_10_2022
+document_type: shipbuilding_update
+key_entities: []
+keywords:
+- capesize
+- defies
+- doubling
+- few
+- finally
+- global
+- main
+- past
+- rout
+- shipbuilding
+- showed
+- signs
+market_tone: neutral
+regions:
+- china
+- japan
+- europe
+section_count: 1
+signals: {}
+source: hellenic
+source_path: reports/hellenic/shipbuilding/2022/2022-05-10_breakwave-dry-bulk-shipping-report-5-10-2022.html
+source_stem: 2022-05-10_breakwave-dry-bulk-shipping-report-5-10-2022
+source_url: https://www.hellenicshippingnews.com/breakwave-dry-bulk-shipping-report-5-10-2022
+summary: 'Main
+
+  in Weekly Shipbuilding Reports 10/05/2022
+
+  Dry bulk defies global market rout - The Capesize market has finally showed signs
+  of strength, with spot rates doubling over the past few
+
+  Source: Breakwave Advisors'
+themes:
+- capesize
+- defies
+- doubling
+- few
+- finally
+- global
+title: Breakwave Dry Bulk Shipping Report 5.10.2022
+vessel_classes:
+- capesize
+- panamax
+- supramax
+- handysize
+- vlcc
+- suezmax
+- aframax
+- container
+- lng
+- lpg
+---
+
+## Summary
+Main
+in Weekly Shipbuilding Reports 10/05/2022
+Dry bulk defies global market rout - The Capesize market has finally showed signs of strength, with spot rates doubling over the past few
+Source: Breakwave Advisors
+
+## Main
+in Weekly Shipbuilding Reports 10/05/2022
+Dry bulk defies global market rout - The Capesize market has finally showed signs of strength, with spot rates doubling over the past few
+Source: Breakwave Advisors

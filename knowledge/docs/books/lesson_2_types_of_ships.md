@@ -18,8 +18,8 @@ keywords:
 - products
 - gas
 - ships
-- cargo
 - are
+- cargo
 - maritime
 - source
 market_tone: constructive

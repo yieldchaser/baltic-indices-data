@@ -1,15 +1,13 @@
 {
-  "generated_at": "2026-04-10T14:50:01Z",
-  "current_date": "2026-04-10",
-  "warning_count": 17,
-  "high_severity_count": 1,
+  "generated_at": "2026-04-11T00:16:48Z",
+  "current_date": "2026-04-11",
+  "warning_count": 8,
+  "high_severity_count": 0,
   "status_counts": {
     "sources": {
-      "healthy": 2,
+      "healthy": 10,
       "reference": 1,
-      "stale": 1,
-      "unknown": 8,
-      "watch": 3
+      "watch": 4
     },
     "topics": {
       "healthy": 9,
@@ -21,29 +19,10 @@
   },
   "warnings": [
     {
-      "severity": "stale",
-      "kind": "source_freshness",
-      "key": "baltic/tanker",
-      "message": "baltic/tanker is stale at 3465 days since the latest dated document.",
-      "details": {
-        "label": "baltic/tanker",
-        "source": "baltic",
-        "category": "tanker",
-        "status": "stale",
-        "cadence_days": 7,
-        "latest_date": "2016-10-14",
-        "age_days": 3465,
-        "latest_gap_days": 7,
-        "max_recent_gap_days": 7,
-        "dated_doc_count": 77,
-        "undated_doc_count": 12
-      }
-    },
-    {
       "severity": "watch",
       "kind": "source_freshness",
       "key": "baltic/container",
-      "message": "baltic/container is watch at 14 days since the latest dated document.",
+      "message": "baltic/container is watch at 15 days since the latest dated document.",
       "details": {
         "label": "baltic/container",
         "source": "baltic",
@@ -51,10 +30,10 @@
         "status": "watch",
         "cadence_days": 7,
         "latest_date": "2026-03-27",
-        "age_days": 14,
+        "age_days": 15,
         "latest_gap_days": 7,
         "max_recent_gap_days": 7,
-        "dated_doc_count": 45,
+        "dated_doc_count": 46,
         "undated_doc_count": 0
       }
     },
@@ -62,7 +41,7 @@
       "severity": "watch",
       "kind": "source_freshness",
       "key": "baltic/dry",
-      "message": "baltic/dry is watch at 14 days since the latest dated document.",
+      "message": "baltic/dry is watch at 15 days since the latest dated document.",
       "details": {
         "label": "baltic/dry",
         "source": "baltic",
@@ -70,10 +49,10 @@
         "status": "watch",
         "cadence_days": 7,
         "latest_date": "2026-03-27",
-        "age_days": 14,
+        "age_days": 15,
         "latest_gap_days": 7,
         "max_recent_gap_days": 7,
-        "dated_doc_count": 541,
+        "dated_doc_count": 546,
         "undated_doc_count": 8
       }
     },
@@ -81,7 +60,7 @@
       "severity": "watch",
       "kind": "source_freshness",
       "key": "baltic/gas",
-      "message": "baltic/gas is watch at 14 days since the latest dated document.",
+      "message": "baltic/gas is watch at 15 days since the latest dated document.",
       "details": {
         "label": "baltic/gas",
         "source": "baltic",
@@ -89,22 +68,41 @@
         "status": "watch",
         "cadence_days": 7,
         "latest_date": "2026-03-27",
-        "age_days": 14,
+        "age_days": 15,
         "latest_gap_days": 7,
         "max_recent_gap_days": 7,
-        "dated_doc_count": 164,
+        "dated_doc_count": 165,
         "undated_doc_count": 0
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "source_freshness",
+      "key": "baltic/tanker",
+      "message": "baltic/tanker is watch at 15 days since the latest dated document.",
+      "details": {
+        "label": "baltic/tanker",
+        "source": "baltic",
+        "category": "tanker",
+        "status": "watch",
+        "cadence_days": 7,
+        "latest_date": "2026-03-27",
+        "age_days": 15,
+        "latest_gap_days": 7,
+        "max_recent_gap_days": 7,
+        "dated_doc_count": 544,
+        "undated_doc_count": 12
       }
     },
     {
       "severity": "watch",
       "kind": "topic_age",
       "key": "lng_and_lpg_shipping",
-      "message": "lng_and_lpg_shipping is watch at 14 days since the latest evidence row.",
+      "message": "lng_and_lpg_shipping is watch at 15 days since the latest evidence row.",
       "details": {
         "topic_id": "lng_and_lpg_shipping",
         "latest_evidence_date": "2026-03-27",
-        "latest_evidence_age_days": 14
+        "latest_evidence_age_days": 15
       }
     },
     {
@@ -126,11 +124,25 @@
             "latest_date": "2026-03-27"
           },
           {
+            "source": "breakwave",
+            "avg_tone_score": 0.17,
+            "dominant_tone": "neutral",
+            "doc_count": 6,
+            "latest_date": "2026-03-31"
+          },
+          {
+            "source": "hellenic",
+            "avg_tone_score": 0.29,
+            "dominant_tone": "constructive",
+            "doc_count": 6,
+            "latest_date": "2026-04-09"
+          },
+          {
             "source": "breakwave_insights",
             "avg_tone_score": 0.75,
             "dominant_tone": "constructive",
             "doc_count": 6,
-            "latest_date": "2026-04-08"
+            "latest_date": "2026-04-09"
           }
         ],
         "message": "Capesize shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral."
@@ -155,11 +167,25 @@
             "latest_date": "2026-03-27"
           },
           {
+            "source": "breakwave",
+            "avg_tone_score": 0.2,
+            "dominant_tone": "constructive",
+            "doc_count": 5,
+            "latest_date": "2026-03-31"
+          },
+          {
+            "source": "hellenic",
+            "avg_tone_score": 0.42,
+            "dominant_tone": "constructive",
+            "doc_count": 6,
+            "latest_date": "2026-04-09"
+          },
+          {
             "source": "breakwave_insights",
             "avg_tone_score": 0.75,
             "dominant_tone": "constructive",
             "doc_count": 6,
-            "latest_date": "2026-04-08"
+            "latest_date": "2026-04-09"
           }
         ],
         "message": "China Steel and Iron Ore shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral."
@@ -168,165 +194,16 @@
     {
       "severity": "watch",
       "kind": "topic_source_gap",
-      "key": "capesize",
-      "message": "capesize is missing recent evidence from expected sources: breakwave, hellenic.",
-      "details": {
-        "topic_id": "capesize",
-        "missing_recent_sources": [
-          "breakwave",
-          "hellenic"
-        ],
-        "recent_sources_present": [
-          "baltic",
-          "breakwave_insights"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "china_steel_and_iron_ore",
-      "message": "china_steel_and_iron_ore is missing recent evidence from expected sources: breakwave, hellenic.",
-      "details": {
-        "topic_id": "china_steel_and_iron_ore",
-        "missing_recent_sources": [
-          "breakwave",
-          "hellenic"
-        ],
-        "recent_sources_present": [
-          "baltic",
-          "breakwave_insights"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
       "key": "coal_and_grain_flows",
-      "message": "coal_and_grain_flows is missing recent evidence from expected sources: breakwave, hellenic.",
+      "message": "coal_and_grain_flows is missing recent evidence from expected sources: hellenic.",
       "details": {
         "topic_id": "coal_and_grain_flows",
         "missing_recent_sources": [
-          "breakwave",
           "hellenic"
         ],
         "recent_sources_present": [
           "baltic",
-          "breakwave_insights"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "container_and_ningbo_routes",
-      "message": "container_and_ningbo_routes is missing recent evidence from expected sources: hellenic.",
-      "details": {
-        "topic_id": "container_and_ningbo_routes",
-        "missing_recent_sources": [
-          "hellenic"
-        ],
-        "recent_sources_present": [
-          "baltic"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "dry_bulk_market",
-      "message": "dry_bulk_market is missing recent evidence from expected sources: breakwave, hellenic.",
-      "details": {
-        "topic_id": "dry_bulk_market",
-        "missing_recent_sources": [
           "breakwave",
-          "hellenic"
-        ],
-        "recent_sources_present": [
-          "baltic",
-          "breakwave_insights"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "lng_and_lpg_shipping",
-      "message": "lng_and_lpg_shipping is missing recent evidence from expected sources: hellenic.",
-      "details": {
-        "topic_id": "lng_and_lpg_shipping",
-        "missing_recent_sources": [
-          "hellenic"
-        ],
-        "recent_sources_present": [
-          "baltic"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "oil_and_opec",
-      "message": "oil_and_opec is missing recent evidence from expected sources: baltic, breakwave, hellenic.",
-      "details": {
-        "topic_id": "oil_and_opec",
-        "missing_recent_sources": [
-          "baltic",
-          "breakwave",
-          "hellenic"
-        ],
-        "recent_sources_present": [
-          "breakwave_insights"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "panamax_and_supramax",
-      "message": "panamax_and_supramax is missing recent evidence from expected sources: breakwave, hellenic.",
-      "details": {
-        "topic_id": "panamax_and_supramax",
-        "missing_recent_sources": [
-          "breakwave",
-          "hellenic"
-        ],
-        "recent_sources_present": [
-          "baltic",
-          "breakwave_insights"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "tanker_market",
-      "message": "tanker_market is missing recent evidence from expected sources: baltic, breakwave, hellenic.",
-      "details": {
-        "topic_id": "tanker_market",
-        "missing_recent_sources": [
-          "baltic",
-          "breakwave",
-          "hellenic"
-        ],
-        "recent_sources_present": [
-          "breakwave_insights"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "vlcc_and_suezmax",
-      "message": "vlcc_and_suezmax is missing recent evidence from expected sources: baltic, breakwave, hellenic.",
-      "details": {
-        "topic_id": "vlcc_and_suezmax",
-        "missing_recent_sources": [
-          "baltic",
-          "breakwave",
-          "hellenic"
-        ],
-        "recent_sources_present": [
           "breakwave_insights"
         ]
       }

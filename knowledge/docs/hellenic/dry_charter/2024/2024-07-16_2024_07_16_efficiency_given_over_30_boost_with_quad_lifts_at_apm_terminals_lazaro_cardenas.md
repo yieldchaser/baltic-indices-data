@@ -1,0 +1,68 @@
+---
+category: dry_charter
+commodities:
+- iron_ore
+- coal
+- grain
+- bauxite
+date: '2024-07-16'
+doc_id: hellenic_dry_charter_2024-07-16_2024_07_16_efficiency_given_over_30_boost_with_quad_lifts_at_apm_terminals_lazaro_cardenas
+document_type: charter_estimates
+key_entities: []
+keywords:
+- container
+- lifts
+- mechanical
+- mexico
+- quad
+- accomplishment.
+- achieved
+- anywhere
+- apm
+- are
+- arm
+- calculation
+market_tone: neutral
+regions:
+- atlantic
+- pacific
+- china
+- brazil
+- australia
+section_count: 1
+signals: {}
+source: hellenic
+source_path: reports/hellenic/dry_charter/2024/2024-07-16_efficiency-given-over-30-boost-with-quad-lifts-at-apm-terminals-lazaro-cardenas.html
+source_stem: 2024-07-16_efficiency-given-over-30-boost-with-quad-lifts-at-apm-terminals-lazaro-cardenas
+source_url: https://www.hellenicshippingnews.com/efficiency-given-over-30-boost-with-quad-lifts-at-apm-terminals-lazaro-cardenas-2
+summary: 'Main
+
+  If a crane is ultimately a giant mechanical arm, the team at Lazaro Cardenas in
+  Mexico have pumped their mechanical muscles to theextreme by perfecting a manoeuvre
+  rarely achieved anywhere in the world - and scoring a first for Mexico: quad lifts
+  with a ship-to-shore crane. Pulling off quad lifts - the lifting of four containers
+  at a time - is an uncommon and highly skilled accomplishment. It''s also not a task
+  to be taken lightly.'
+themes:
+- container
+- lifts
+- mechanical
+- mexico
+- quad
+- accomplishment.
+title: Efficiency given over 30% boost with quad lifts at APM Terminals Lazaro Cardenas
+vessel_classes:
+- capesize
+- panamax
+- supramax
+- handysize
+- container
+---
+
+## Summary
+Main
+If a crane is ultimately a giant mechanical arm, the team at Lazaro Cardenas in Mexico have pumped their mechanical muscles to theextreme by perfecting a manoeuvre rarely achieved anywhere in the world - and scoring a first for Mexico: quad lifts with a ship-to-shore crane. Pulling off quad lifts - the lifting of four containers at a time - is an uncommon and highly skilled accomplishment. It's also not a task to be taken lightly.
+
+## Main
+If a crane is ultimately a giant mechanical arm, the team at Lazaro Cardenas in Mexico have pumped their mechanical muscles to theextreme by perfecting a manoeuvre rarely achieved anywhere in the world - and scoring a first for Mexico: quad lifts with a ship-to-shore crane. Pulling off quad lifts - the lifting of four containers at a time - is an uncommon and highly skilled accomplishment. It's also not a task to be taken lightly. In port operations, where safety and speed are paramount, pushing the limits of efficiency necessitates careful calculation, intense planning and extraordinary teamwork.
+Source: APM Terminals

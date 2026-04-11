@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import os, re, json, time, hashlib, argparse, traceback, shutil, sys, warnings
+import os, re, json, time, hashlib, argparse, traceback, shutil, sys, warnings, stat
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -251,8 +251,69 @@ def load_jsonl(path: Path) -> list[dict]:
 
 def append_jsonl(path: Path, row: dict):
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+    payload = json.dumps(row, ensure_ascii=False) + "\n"
+    last_error = None
+    for attempt in range(5):
+        try:
+            with path.open("a", encoding="utf-8") as handle:
+                handle.write(payload)
+            return
+        except PermissionError as exc:
+            last_error = exc
+            try:
+                os.chmod(path, stat.S_IWRITE | stat.S_IREAD)
+            except OSError:
+                pass
+            time.sleep(0.2 * (attempt + 1))
+    if last_error:
+        raise last_error
+
+
+def _retry_backoff(attempt: int):
+    time.sleep(0.25 * (attempt + 1))
+
+
+def _force_writable(target: Path):
+    try:
+        os.chmod(target, stat.S_IWRITE | stat.S_IREAD)
+    except OSError:
+        pass
+
+
+def unlink_with_retries(path: Path, retries: int = 5):
+    for attempt in range(retries):
+        try:
+            path.unlink()
+            return
+        except FileNotFoundError:
+            return
+        except PermissionError:
+            _force_writable(path)
+            if attempt >= retries - 1:
+                raise
+            _retry_backoff(attempt)
+
+
+def _rmtree_onerror(func, target, exc_info):
+    exc = exc_info[1]
+    if not isinstance(exc, PermissionError):
+        raise exc
+    _force_writable(Path(target))
+    func(target)
+
+
+def rmtree_with_retries(path: Path, retries: int = 5):
+    for attempt in range(retries):
+        try:
+            shutil.rmtree(path, onerror=_rmtree_onerror)
+            return
+        except FileNotFoundError:
+            return
+        except PermissionError:
+            _force_writable(path)
+            if attempt >= retries - 1:
+                raise
+            _retry_backoff(attempt)
 
 
 def load_manifest_rows() -> list[dict]:
@@ -352,13 +413,13 @@ def remove_manifest_sources(rows: list[dict], source_paths: set[str]) -> list[di
         if doc_path and doc_path not in kept_doc_paths:
             target = REPO_ROOT / doc_path
             if target.exists():
-                target.unlink()
+                unlink_with_retries(target)
 
         tree_path = row.get("tree_path")
         if tree_path and tree_path not in kept_tree_paths:
             target = REPO_ROOT / tree_path
             if target.exists():
-                target.unlink()
+                unlink_with_retries(target)
 
         chunk_file = row.get("chunk_file")
         doc_id = row.get("doc_id")
@@ -391,10 +452,9 @@ def log_error(file_path: Path, error: str):
 def clear_rebuild_outputs():
     for path in [DOCS_DIR, CHUNKS_DIR, TREES_DIR, WIKI_DIR, KNOWLEDGE_REPORTS_DIR, DERIVED_DIR]:
         if path.exists():
-            shutil.rmtree(path)
+            rmtree_with_retries(path)
     for path in [DOCUMENTS_MANIFEST, ERRORS_MANIFEST, SOURCES_MANIFEST, LINT_REPORT, COVERAGE_REPORT]:
-        if path.exists():
-            path.unlink()
+        unlink_with_retries(path)
     ensure_layout()
 
 
