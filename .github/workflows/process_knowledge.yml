@@ -43,6 +43,10 @@ jobs:
       - name: Run processor
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MIN_INTERVAL_SEC: "4.0"
+          GEMINI_MAX_RETRIES: "8"
+          GEMINI_BACKOFF_BASE_SEC: "4.0"
+          GEMINI_MAX_BACKOFF_SEC: "90.0"
         shell: bash
         run: |
           FLAGS=""
