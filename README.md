@@ -86,6 +86,19 @@ The core recommendations that shaped this system are now implemented:
 
 What remains optional is a future query/research interface layer: CLI search, analyst-style Q&A, analog retrieval, or dashboard integration. The current knowledge system is already complete from a build-quality, automation, and corpus-governance perspective.
 
+### What Can Be Built Next
+
+The current corpus + manifests + derived layers make the following additions straightforward:
+
+- Retrieval Q&A assistant with grounded citations (`knowledge/chunks` + `knowledge/trees`)
+- Automated daily/weekly market brief generator by vessel class, route, or commodity
+- Signal and alert engine using extracted indicators (`knowledge/derived/signals.jsonl`, timelines)
+- Data API layer to serve docs/chunks/wiki evidence to dashboards and external tools
+- Research workflow UI (query, filter, compare, and export evidence packs)
+- Source reliability and divergence scoring (freshness, consistency, contradiction tracking)
+- Backtest-ready feature generation for freight strategy models
+- Multimodal enhancement pass (stronger OCR/table extraction and image-heavy report handling)
+
 ---
 
 ## What This Tracks
