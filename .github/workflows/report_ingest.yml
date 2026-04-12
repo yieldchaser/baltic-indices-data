@@ -15,6 +15,15 @@ on:
       year:
         description: 'UTC year or auto'
         default: 'auto'
+      start_year:
+        description: 'Optional historical start year (overrides year when set)'
+        default: ''
+      end_year:
+        description: 'Optional historical end year (overrides year when set)'
+        default: ''
+      overwrite:
+        description: 'Overwrite existing archived snapshots: true | false'
+        default: 'false'
       dry_run:
         description: 'Dry run: true | false'
         default: 'false'
@@ -51,11 +60,6 @@ jobs:
       - name: Run report scrapers
         shell: bash
         run: |
-          YEAR_INPUT="${{ github.event.inputs.year || 'auto' }}"
-          YEAR="$YEAR_INPUT"
-          if [ -z "$YEAR" ] || [ "$YEAR" = "auto" ]; then
-            YEAR="$(date -u +%Y)"
-          fi
           SOURCE_INPUT="${{ github.event.inputs.source || '' }}"
           EVENT_SCHEDULE="${{ github.event.schedule || '' }}"
           if [ -z "$SOURCE_INPUT" ]; then
@@ -67,25 +71,67 @@ jobs:
           else
             SOURCE="$SOURCE_INPUT"
           fi
+          YEAR_INPUT="${{ github.event.inputs.year || 'auto' }}"
+          START_YEAR_INPUT="${{ github.event.inputs.start_year || '' }}"
+          END_YEAR_INPUT="${{ github.event.inputs.end_year || '' }}"
+          YEARS=""
+          if [ -n "$START_YEAR_INPUT" ] || [ -n "$END_YEAR_INPUT" ]; then
+            START_YEAR="$START_YEAR_INPUT"
+            END_YEAR="$END_YEAR_INPUT"
+            [ -z "$START_YEAR" ] && START_YEAR="$END_YEAR"
+            [ -z "$END_YEAR" ] && END_YEAR="$START_YEAR"
+            if ! [[ "$START_YEAR" =~ ^[0-9]{4}$ && "$END_YEAR" =~ ^[0-9]{4}$ ]]; then
+              echo "start_year/end_year must be YYYY when provided"
+              exit 1
+            fi
+            if [ "$START_YEAR" -le "$END_YEAR" ]; then
+              YEARS="$(seq "$START_YEAR" "$END_YEAR")"
+            else
+              YEARS="$(seq "$START_YEAR" -1 "$END_YEAR")"
+            fi
+          else
+            YEAR="$YEAR_INPUT"
+            if [ -z "$YEAR" ] || [ "$YEAR" = "auto" ]; then
+              YEAR="$(date -u +%Y)"
+            fi
+            YEARS="$YEAR"
+          fi
           HELLENIC_CATEGORY="${{ github.event.inputs.hellenic_category || 'all' }}"
+          OVERWRITE="${{ github.event.inputs.overwrite || 'false' }}"
           DRY_RUN="${{ github.event.inputs.dry_run || 'false' }}"
-          FLAGS="--year $YEAR"
-          [ "$DRY_RUN" = "true" ] && FLAGS="$FLAGS --dry-run"
+          COMMON_FLAGS=""
+          [ "$DRY_RUN" = "true" ] && COMMON_FLAGS="$COMMON_FLAGS --dry-run"
+          OVERWRITE_FLAG=""
+          [ "$OVERWRITE" = "true" ] && OVERWRITE_FLAG="--overwrite"
+
+          run_by_year() {
+            local script="$1"
+            local extra_args="$2"
+            local supports_overwrite="$3"
+            for YEAR in $YEARS; do
+              FLAGS="--year $YEAR $COMMON_FLAGS $extra_args"
+              if [ "$supports_overwrite" = "true" ] && [ -n "$OVERWRITE_FLAG" ]; then
+                FLAGS="$FLAGS $OVERWRITE_FLAG"
+              fi
+              echo "[INGEST] source=$SOURCE year=$YEAR script=$script overwrite=${OVERWRITE:-false} dry_run=${DRY_RUN:-false}"
+              python "$script" $FLAGS
+            done
+          }
 
           if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "core" ] || [ "$SOURCE" = "breakwave" ]; then
-            python scripts/breakwave_scraper.py $FLAGS
+            run_by_year "scripts/breakwave_scraper.py" "" "false"
           fi
 
           if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "core" ] || [ "$SOURCE" = "baltic" ]; then
-            python scripts/baltic_scraper.py $FLAGS
+            run_by_year "scripts/baltic_scraper.py" "" "true"
           fi
 
           if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "extended" ] || [ "$SOURCE" = "breakwave_insights" ]; then
-            python scripts/breakwave_insights_scraper.py $FLAGS
+            run_by_year "scripts/breakwave_insights_scraper.py" "" "true"
           fi
 
           if [ "$SOURCE" = "all" ] || [ "$SOURCE" = "extended" ] || [ "$SOURCE" = "hellenic" ]; then
-            python scripts/hellenic_scraper.py --category "$HELLENIC_CATEGORY" $FLAGS
+            run_by_year "scripts/hellenic_scraper.py" "--category $HELLENIC_CATEGORY" "true"
           fi
 
       - name: Commit new reports

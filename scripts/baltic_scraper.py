@@ -748,7 +748,7 @@ def sanitize(s: str) -> str:
     return re.sub(r'[<>:"/\\|?*]', "_", s)
 
 
-def process_report(url: str, cat: str, dry_run: bool, driver=None) -> bool:
+def process_report(url: str, cat: str, dry_run: bool, overwrite: bool, driver=None) -> bool:
     year = extract_year_from_url(url) or "unknown"
     time.sleep(PAGE_DELAY)
     if driver is None:
@@ -765,10 +765,16 @@ def process_report(url: str, cat: str, dry_run: bool, driver=None) -> bool:
     filename = sanitize(make_filename(cat, url, date, title))
     dest     = OUTPUT_ROOT / cat / str(year) / filename
 
-    # Check if already saved under any extension and with reasonable size
-    for ext in [".pdf", ".html"]:
-        p = dest.with_suffix(ext)
-        if p.exists() and p.stat().st_size > 1500:
+    # Check if already saved under any extension and with reasonable size.
+    # Overwrite mode bypasses this guard to force historical remirroring.
+    if not overwrite:
+        existing = False
+        for ext in [".pdf", ".html"]:
+            p = dest.with_suffix(ext)
+            if p.exists() and p.stat().st_size > 1500:
+                existing = True
+                break
+        if existing:
             print(f"    ✓ skip: {p.name}")
             return True
 
@@ -786,12 +792,13 @@ def process_report(url: str, cat: str, dry_run: bool, driver=None) -> bool:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def run(categories: list, dry_run: bool, year_filter: "int | None",
-        headed: bool, debug: bool):
+        headed: bool, debug: bool, overwrite: bool):
     print(f"\n{'═'*64}")
     print(f"  Baltic Exchange Weekly Roundup Scraper  v3")
     print(f"  Categories : {', '.join(categories)}")
     print(f"  Mode       : {'DRY RUN' if dry_run else 'DOWNLOAD'}")
     print(f"  Browser    : {'headed' if headed else 'headless'}")
+    print(f"  Overwrite  : {'ON' if overwrite else 'OFF'}")
     if year_filter:
         print(f"  Year filter: {year_filter}")
     if debug:
@@ -826,7 +833,7 @@ def run(categories: list, dry_run: bool, year_filter: "int | None",
             for url in links:
                 yr = extract_year_from_url(url) or "?"
                 print(f"\n  [{yr}] {url.split('/')[-1]}")
-                if process_report(url, cat, dry_run, driver=dl_driver):
+                if process_report(url, cat, dry_run, overwrite, driver=dl_driver):
                     ok += 1
                 else:
                     fail += 1
@@ -851,10 +858,12 @@ def main():
     p.add_argument("--headed",   action="store_true")
     p.add_argument("--debug",    action="store_true",
                    help="Dump filter DOM + full page HTML for inspection")
+    p.add_argument("--overwrite", action="store_true",
+                   help="Rebuild archived snapshots even when destination files already exist")
     args = p.parse_args()
 
     cats = list(CATEGORIES.keys()) if args.category == "all" else [args.category]
-    run(cats, args.dry_run, args.year, args.headed, args.debug)
+    run(cats, args.dry_run, args.year, args.headed, args.debug, args.overwrite)
 
 
 if __name__ == "__main__":

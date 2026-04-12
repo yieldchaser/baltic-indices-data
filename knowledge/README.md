@@ -137,6 +137,8 @@ Use this sequence for a clean online run.
 1. Trigger `report_ingest.yml` manually:
    - `source=all`
    - `year=auto`
+   - Optional historical batch: `start_year=<YYYY>`, `end_year=<YYYY>`
+   - Optional remirror: `overwrite=true`
    - `dry_run=false`
 2. Wait for reports commit to `main`.
 3. Trigger `process_knowledge.yml` manually:
@@ -148,6 +150,7 @@ Use this sequence for a clean online run.
 5. Confirm workflow pushed updated `knowledge/` artifacts if changes were detected.
 
 Use `rebuild=true` only when intentionally doing a full clean rebuild.
+For one-time historical hardening, run scraper backfills first (with `overwrite=true`), then run `process_knowledge.yml` with `rebuild=true`.
 
 
 ## 6) Local Dry-Run Commands

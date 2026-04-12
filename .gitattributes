@@ -1,0 +1,15 @@
+# Keep report and knowledge text artifacts LF-normalized across platforms.
+# This prevents Windows CRLF checkout drift from creating false source-hash mismatches.
+reports/**/*.html text eol=lf
+reports/**/*.htm text eol=lf
+reports/**/*.txt text eol=lf
+reports/**/*.md text eol=lf
+reports/**/*.csv text eol=lf
+reports/**/*.tsv text eol=lf
+reports/**/*.json text eol=lf
+reports/**/*.xml text eol=lf
+reports/**/*.svg text eol=lf
+
+knowledge/**/*.json text eol=lf
+knowledge/**/*.jsonl text eol=lf
+knowledge/**/*.md text eol=lf

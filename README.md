@@ -495,6 +495,7 @@ python scripts/update_etf_holdings.py   # update BDRY and BWET holdings
 # Source Archive Scrapers
 python scripts/breakwave_scraper.py     # Pulls Breakwave Advisors PDFs
 python scripts/baltic_scraper.py        # Pulls Baltic weekly roundup files
+python scripts/baltic_scraper.py --year 2024 --overwrite
 python scripts/breakwave_insights_scraper.py --year 2026 --dry-run
 python scripts/hellenic_scraper.py --category all --year 2026 --dry-run
 python scripts/normalize_source_archives.py --source all
