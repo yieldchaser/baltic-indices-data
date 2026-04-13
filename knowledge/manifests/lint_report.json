@@ -1,13 +1,12 @@
 {
-  "generated_at": "2026-04-12T15:22:31Z",
-  "current_date": "2026-04-12",
-  "warning_count": 7,
+  "generated_at": "2026-04-13T16:45:47Z",
+  "current_date": "2026-04-13",
+  "warning_count": 3,
   "high_severity_count": 0,
   "status_counts": {
     "sources": {
-      "healthy": 10,
-      "reference": 1,
-      "watch": 4
+      "healthy": 14,
+      "reference": 1
     },
     "topics": {
       "healthy": 10
@@ -17,82 +16,6 @@
     }
   },
   "warnings": [
-    {
-      "severity": "watch",
-      "kind": "source_freshness",
-      "key": "baltic/container",
-      "message": "baltic/container is watch at 16 days since the latest dated document.",
-      "details": {
-        "label": "baltic/container",
-        "source": "baltic",
-        "category": "container",
-        "status": "watch",
-        "cadence_days": 7,
-        "latest_date": "2026-03-27",
-        "age_days": 16,
-        "latest_gap_days": 7,
-        "max_recent_gap_days": 7,
-        "dated_doc_count": 46,
-        "undated_doc_count": 0
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "source_freshness",
-      "key": "baltic/dry",
-      "message": "baltic/dry is watch at 16 days since the latest dated document.",
-      "details": {
-        "label": "baltic/dry",
-        "source": "baltic",
-        "category": "dry",
-        "status": "watch",
-        "cadence_days": 7,
-        "latest_date": "2026-03-27",
-        "age_days": 16,
-        "latest_gap_days": 7,
-        "max_recent_gap_days": 7,
-        "dated_doc_count": 546,
-        "undated_doc_count": 8
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "source_freshness",
-      "key": "baltic/gas",
-      "message": "baltic/gas is watch at 16 days since the latest dated document.",
-      "details": {
-        "label": "baltic/gas",
-        "source": "baltic",
-        "category": "gas",
-        "status": "watch",
-        "cadence_days": 7,
-        "latest_date": "2026-03-27",
-        "age_days": 16,
-        "latest_gap_days": 7,
-        "max_recent_gap_days": 7,
-        "dated_doc_count": 165,
-        "undated_doc_count": 0
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "source_freshness",
-      "key": "baltic/tanker",
-      "message": "baltic/tanker is watch at 16 days since the latest dated document.",
-      "details": {
-        "label": "baltic/tanker",
-        "source": "baltic",
-        "category": "tanker",
-        "status": "watch",
-        "cadence_days": 7,
-        "latest_date": "2026-03-27",
-        "age_days": 16,
-        "latest_gap_days": 7,
-        "max_recent_gap_days": 7,
-        "dated_doc_count": 544,
-        "undated_doc_count": 12
-      }
-    },
     {
       "severity": "watch",
       "kind": "topic_divergence",
@@ -188,14 +111,14 @@
         "topic_id": "dry_bulk_market",
         "title": "Dry Bulk Market",
         "severity": "watch",
-        "score_diff": 0.95,
+        "score_diff": 0.87,
         "source_scores": [
           {
             "source": "baltic",
-            "avg_tone_score": -0.33,
-            "dominant_tone": "cautiously_bearish",
-            "doc_count": 3,
-            "latest_date": "2026-03-27"
+            "avg_tone_score": -0.25,
+            "dominant_tone": "neutral",
+            "doc_count": 4,
+            "latest_date": "2026-04-10"
           },
           {
             "source": "hellenic",

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-12T15:22:31Z",
-  "current_date": "2026-04-12",
+  "generated_at": "2026-04-13T16:45:47Z",
+  "current_date": "2026-04-13",
   "corpus": {
-    "document_count": 7535,
-    "chunk_count": 73085,
-    "section_count": 20377,
+    "document_count": 7567,
+    "chunk_count": 73181,
+    "section_count": 20437,
     "topic_count": 10,
     "topic_evidence_count": 2500,
     "wiki_page_count": 10
@@ -17,7 +17,7 @@
       "status": "healthy",
       "cadence_days": 14,
       "latest_date": "2026-03-31",
-      "age_days": 12,
+      "age_days": 13,
       "latest_gap_days": 14,
       "max_recent_gap_days": 28,
       "dated_doc_count": 198,
@@ -30,7 +30,7 @@
       "status": "healthy",
       "cadence_days": 14,
       "latest_date": "2026-04-07",
-      "age_days": 5,
+      "age_days": 6,
       "latest_gap_days": 14,
       "max_recent_gap_days": 28,
       "dated_doc_count": 68,
@@ -40,52 +40,52 @@
       "label": "baltic/dry",
       "source": "baltic",
       "category": "dry",
-      "status": "watch",
+      "status": "healthy",
       "cadence_days": 7,
-      "latest_date": "2026-03-27",
-      "age_days": 16,
-      "latest_gap_days": 7,
-      "max_recent_gap_days": 7,
-      "dated_doc_count": 546,
+      "latest_date": "2026-04-10",
+      "age_days": 3,
+      "latest_gap_days": 14,
+      "max_recent_gap_days": 14,
+      "dated_doc_count": 547,
       "undated_doc_count": 8
     },
     {
       "label": "baltic/tanker",
       "source": "baltic",
       "category": "tanker",
-      "status": "watch",
+      "status": "healthy",
       "cadence_days": 7,
-      "latest_date": "2026-03-27",
-      "age_days": 16,
-      "latest_gap_days": 7,
-      "max_recent_gap_days": 7,
-      "dated_doc_count": 544,
+      "latest_date": "2026-04-10",
+      "age_days": 3,
+      "latest_gap_days": 14,
+      "max_recent_gap_days": 14,
+      "dated_doc_count": 545,
       "undated_doc_count": 12
     },
     {
       "label": "baltic/gas",
       "source": "baltic",
       "category": "gas",
-      "status": "watch",
+      "status": "healthy",
       "cadence_days": 7,
-      "latest_date": "2026-03-27",
-      "age_days": 16,
-      "latest_gap_days": 7,
-      "max_recent_gap_days": 7,
-      "dated_doc_count": 165,
+      "latest_date": "2026-04-10",
+      "age_days": 3,
+      "latest_gap_days": 14,
+      "max_recent_gap_days": 14,
+      "dated_doc_count": 166,
       "undated_doc_count": 0
     },
     {
       "label": "baltic/container",
       "source": "baltic",
       "category": "container",
-      "status": "watch",
+      "status": "healthy",
       "cadence_days": 7,
-      "latest_date": "2026-03-27",
-      "age_days": 16,
-      "latest_gap_days": 7,
-      "max_recent_gap_days": 7,
-      "dated_doc_count": 46,
+      "latest_date": "2026-04-10",
+      "age_days": 3,
+      "latest_gap_days": 14,
+      "max_recent_gap_days": 14,
+      "dated_doc_count": 47,
       "undated_doc_count": 0
     },
     {
@@ -94,11 +94,11 @@
       "category": "ningbo",
       "status": "healthy",
       "cadence_days": 7,
-      "latest_date": "2026-04-03",
-      "age_days": 9,
+      "latest_date": "2026-04-10",
+      "age_days": 3,
       "latest_gap_days": 7,
       "max_recent_gap_days": 7,
-      "dated_doc_count": 487,
+      "dated_doc_count": 488,
       "undated_doc_count": 0
     },
     {
@@ -108,7 +108,7 @@
       "status": "healthy",
       "cadence_days": 14,
       "latest_date": "2026-04-10",
-      "age_days": 2,
+      "age_days": 3,
       "latest_gap_days": 1,
       "max_recent_gap_days": 4,
       "dated_doc_count": 2570,
@@ -121,10 +121,10 @@
       "status": "healthy",
       "cadence_days": 14,
       "latest_date": "2026-04-08",
-      "age_days": 4,
+      "age_days": 5,
       "latest_gap_days": 7,
       "max_recent_gap_days": 7,
-      "dated_doc_count": 252,
+      "dated_doc_count": 253,
       "undated_doc_count": 1
     },
     {
@@ -134,7 +134,7 @@
       "status": "healthy",
       "cadence_days": 14,
       "latest_date": "2026-04-08",
-      "age_days": 4,
+      "age_days": 5,
       "latest_gap_days": 7,
       "max_recent_gap_days": 7,
       "dated_doc_count": 253,
@@ -147,7 +147,7 @@
       "status": "healthy",
       "cadence_days": 14,
       "latest_date": "2026-04-09",
-      "age_days": 3,
+      "age_days": 4,
       "latest_gap_days": 1,
       "max_recent_gap_days": 4,
       "dated_doc_count": 1082,
@@ -160,7 +160,7 @@
       "status": "healthy",
       "cadence_days": 14,
       "latest_date": "2026-04-07",
-      "age_days": 5,
+      "age_days": 6,
       "latest_gap_days": 7,
       "max_recent_gap_days": 21,
       "dated_doc_count": 242,
@@ -173,10 +173,10 @@
       "status": "healthy",
       "cadence_days": 21,
       "latest_date": "2026-04-07",
-      "age_days": 5,
+      "age_days": 6,
       "latest_gap_days": 0,
       "max_recent_gap_days": 7,
-      "dated_doc_count": 706,
+      "dated_doc_count": 732,
       "undated_doc_count": 1
     },
     {
@@ -186,7 +186,7 @@
       "status": "healthy",
       "cadence_days": 21,
       "latest_date": "2026-04-07",
-      "age_days": 5,
+      "age_days": 6,
       "latest_gap_days": 4,
       "max_recent_gap_days": 6,
       "dated_doc_count": 342,
@@ -213,20 +213,20 @@
       "status": "healthy",
       "cadence_days": 7,
       "latest_evidence_date": "2026-04-10",
-      "latest_evidence_age_days": 2,
+      "latest_evidence_age_days": 3,
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 126,
+      "document_count": 127,
       "source_counts": {
-        "baltic": 12,
+        "baltic": 13,
         "breakwave": 4,
         "breakwave_insights": 82,
-        "hellenic": 152
+        "hellenic": 151
       },
       "category_counts": {
-        "demolition": 48,
-        "dry": 12,
+        "demolition": 47,
+        "dry": 13,
         "dry_charter": 10,
         "drybulk": 4,
         "insights": 82,
@@ -244,7 +244,7 @@
       "tone_distribution": {
         "cautiously_bearish": 22,
         "constructive": 64,
-        "neutral": 40
+        "neutral": 41
       }
     },
     {
@@ -253,11 +253,11 @@
       "status": "healthy",
       "cadence_days": 7,
       "latest_evidence_date": "2026-04-10",
-      "latest_evidence_age_days": 2,
+      "latest_evidence_age_days": 3,
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 129,
+      "document_count": 130,
       "source_counts": {
         "baltic": 20,
         "breakwave": 6,
@@ -283,7 +283,7 @@
       "tone_distribution": {
         "cautiously_bearish": 18,
         "constructive": 65,
-        "neutral": 46
+        "neutral": 47
       }
     },
     {
@@ -292,7 +292,7 @@
       "status": "healthy",
       "cadence_days": 7,
       "latest_evidence_date": "2026-04-09",
-      "latest_evidence_age_days": 3,
+      "latest_evidence_age_days": 4,
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 1,
       "evidence_count": 250,
@@ -330,7 +330,7 @@
       "status": "healthy",
       "cadence_days": 7,
       "latest_evidence_date": "2026-04-10",
-      "latest_evidence_age_days": 2,
+      "latest_evidence_age_days": 3,
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
@@ -367,7 +367,7 @@
       "status": "healthy",
       "cadence_days": 7,
       "latest_evidence_date": "2026-04-10",
-      "latest_evidence_age_days": 2,
+      "latest_evidence_age_days": 3,
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
@@ -403,7 +403,7 @@
       "status": "healthy",
       "cadence_days": 7,
       "latest_evidence_date": "2026-04-09",
-      "latest_evidence_age_days": 3,
+      "latest_evidence_age_days": 4,
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 1,
       "evidence_count": 250,
@@ -440,7 +440,7 @@
       "status": "healthy",
       "cadence_days": 7,
       "latest_evidence_date": "2026-04-10",
-      "latest_evidence_age_days": 2,
+      "latest_evidence_age_days": 3,
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
@@ -476,7 +476,7 @@
       "status": "healthy",
       "cadence_days": 7,
       "latest_evidence_date": "2026-04-10",
-      "latest_evidence_age_days": 2,
+      "latest_evidence_age_days": 3,
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
@@ -511,9 +511,9 @@
       "title": "LNG and LPG Shipping",
       "status": "healthy",
       "cadence_days": 7,
-      "latest_evidence_date": "2026-04-07",
-      "latest_evidence_age_days": 5,
-      "relevant_corpus_latest_date": "2026-04-07",
+      "latest_evidence_date": "2026-04-10",
+      "latest_evidence_age_days": 3,
+      "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
       "document_count": 142,
@@ -533,7 +533,7 @@
       "tone_distribution": {
         "cautiously_bearish": 8,
         "constructive": 17,
-        "neutral": 2
+        "neutral": 3
       }
     },
     {
@@ -541,20 +541,20 @@
       "title": "Container and Ningbo Routes",
       "status": "healthy",
       "cadence_days": 7,
-      "latest_evidence_date": "2026-04-07",
-      "latest_evidence_age_days": 5,
-      "relevant_corpus_latest_date": "2026-04-07",
+      "latest_evidence_date": "2026-04-10",
+      "latest_evidence_age_days": 3,
+      "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
       "document_count": 179,
       "source_counts": {
-        "baltic": 92,
-        "hellenic": 158
+        "baltic": 93,
+        "hellenic": 157
       },
       "category_counts": {
-        "container": 38,
+        "container": 39,
         "ningbo": 54,
-        "shipbuilding": 65,
+        "shipbuilding": 64,
         "vessel_valuations": 93
       },
       "recent_sources_present": [
@@ -565,7 +565,7 @@
       "tone_distribution": {
         "cautiously_bearish": 5,
         "constructive": 15,
-        "neutral": 31
+        "neutral": 33
       }
     }
   ],
@@ -574,14 +574,14 @@
       "topic_id": "dry_bulk_market",
       "title": "Dry Bulk Market",
       "severity": "watch",
-      "score_diff": 0.95,
+      "score_diff": 0.87,
       "source_scores": [
         {
           "source": "baltic",
-          "avg_tone_score": -0.33,
-          "dominant_tone": "cautiously_bearish",
-          "doc_count": 3,
-          "latest_date": "2026-03-27"
+          "avg_tone_score": -0.25,
+          "dominant_tone": "neutral",
+          "doc_count": 4,
+          "latest_date": "2026-04-10"
         },
         {
           "source": "hellenic",
