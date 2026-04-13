@@ -13,6 +13,7 @@ Output:
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 import time
@@ -168,6 +169,38 @@ def get_article_links(page_soup: BeautifulSoup, category_url: str) -> list[str]:
     domain = urlparse(category_url).netloc
     category_path = urlparse(category_url).path.rstrip("/")
 
+    def looks_like_article_path(path: str) -> bool:
+        cleaned = path.strip("/")
+        if not cleaned:
+            return False
+
+        segments = [segment for segment in cleaned.split("/") if segment]
+        if not segments:
+            return False
+
+        first = segments[0].lower()
+        if first in {"category", "tag", "author", "feed", "wp-json", "cdn-cgi"}:
+            return False
+
+        # Dated permalink format: /YYYY/MM/DD/slug/
+        if (
+            len(segments) >= 4
+            and re.fullmatch(r"20\d{2}", segments[0])
+            and re.fullmatch(r"\d{1,2}", segments[1])
+            and re.fullmatch(r"\d{1,2}", segments[2])
+        ):
+            return True
+
+        # Common category-style permalink patterns ending in a slug.
+        last = segments[-1].lower()
+        if last in {"page", "report-analysis", "reports", "analysis"}:
+            return False
+        if re.fullmatch(r"\d+", last):
+            return False
+
+        # Single-segment slugs and nested report paths are both acceptable.
+        return len(last) >= 8
+
     def add(href: str) -> None:
         if not href:
             return
@@ -177,13 +210,9 @@ def get_article_links(page_soup: BeautifulSoup, category_url: str) -> list[str]:
         parsed = urlparse(href)
         if parsed.netloc != domain or parsed.query:
             return
-        path = parsed.path.strip("/")
-        if any(token in path for token in ["category/", "tag/", "/page/", "author/", "feed", "wp-json", "cdn-cgi"]):
-            return
         if parsed.path.rstrip("/") == category_path:
             return
-        segments = [segment for segment in path.split("/") if segment]
-        if len(segments) != 1:
+        if not looks_like_article_path(parsed.path):
             return
         if href not in seen:
             seen.add(href)
@@ -191,9 +220,14 @@ def get_article_links(page_soup: BeautifulSoup, category_url: str) -> list[str]:
 
     for selector in [
         "h2.entry-title a",
+        "h3.entry-title a",
         "h1.entry-title a",
         ".entry-title a",
         ".post-title a",
+        ".post-box-title a",
+        ".td-module-title a",
+        "article h2 a",
+        "article h3 a",
         "h2 > a[rel='bookmark']",
         "a[rel='bookmark']",
     ]:
@@ -204,6 +238,35 @@ def get_article_links(page_soup: BeautifulSoup, category_url: str) -> list[str]:
         text = repair_text(anchor.get_text(strip=True)).lower()
         if text.startswith("read more") or text == "continue reading":
             add(anchor["href"])
+
+    # Fallback: extract BlogPosting URLs from JSON-LD if DOM selectors miss cards.
+    if not links:
+        for script in page_soup.find_all("script", type="application/ld+json"):
+            raw = (script.string or script.get_text() or "").strip()
+            if not raw:
+                continue
+            try:
+                payload = json.loads(raw)
+            except json.JSONDecodeError:
+                continue
+
+            queue = [payload]
+            while queue:
+                node = queue.pop()
+                if isinstance(node, dict):
+                    node_type = node.get("@type")
+                    if isinstance(node_type, str):
+                        types = [node_type]
+                    elif isinstance(node_type, list):
+                        types = [str(item) for item in node_type]
+                    else:
+                        types = []
+                    if any(item.lower() in {"blogposting", "newsarticle", "article"} for item in types):
+                        add(node.get("url", ""))
+                        add(node.get("mainEntityOfPage", ""))
+                    queue.extend(node.values())
+                elif isinstance(node, list):
+                    queue.extend(node)
 
     if not links:
         print("    ! No article links found on this page")
