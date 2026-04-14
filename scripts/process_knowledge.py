@@ -1773,6 +1773,13 @@ def extract_linked_image_text(path: Path) -> str:
     lines = [f"Linked image asset: {path.name}"]
     suffix = path.suffix.lower()
 
+    def normalize_palette_transparency(image):
+        # Pillow warns for palette images that carry transparency bytes.
+        # Normalizing to RGBA avoids noisy warnings and improves OCR input.
+        if image.mode == "P" and image.info.get("transparency") is not None:
+            return image.convert("RGBA")
+        return image
+
     if suffix == ".svg":
         svg = BeautifulSoup(path.read_text(encoding="utf-8", errors="ignore"), "xml")
         svg_text = []
@@ -1788,6 +1795,7 @@ def extract_linked_image_text(path: Path) -> str:
 
         image_size = None
         with Image.open(path) as image:
+            image = normalize_palette_transparency(image)
             lines.append(f"Image metadata: {image.format} {image.width}x{image.height} mode={image.mode}")
             image_size = (image.width, image.height)
             info_pairs = []
@@ -1825,6 +1833,7 @@ def extract_linked_image_text(path: Path) -> str:
             lines.append(f"[OCR skipped for small image (< {MIN_IMAGE_OCR_PIXELS} pixels).]")
         else:
             with Image.open(path) as image:
+                image = normalize_palette_transparency(image)
                 gray = image.convert("L")
                 candidates = [gray, ImageOps.autocontrast(gray)]
                 upscale = ImageOps.autocontrast(gray).resize((max(1, gray.width * 2), max(1, gray.height * 2)))
