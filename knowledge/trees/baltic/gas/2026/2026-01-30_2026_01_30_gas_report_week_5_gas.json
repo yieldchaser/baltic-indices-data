@@ -26,63 +26,29 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 465,
+  "token_count": 14,
   "source_path": "reports/baltic/gas/2026/2026-01-30_gas-report-week-5_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-01-30_2026_01_30_gas_report_week_5_gas__s01_lng",
+      "node_id": "baltic_gas_2026-01-30_2026_01_30_gas_report_week_5_gas__s01_main",
       "doc_id": "baltic_gas_2026-01-30_2026_01_30_gas_report_week_5_gas",
       "parent_id": "baltic_gas_2026-01-30_2026_01_30_gas_report_week_5_gas__root",
-      "title": "LNG",
+      "title": "Main",
       "section_path": [
-        "LNG"
+        "Main"
       ],
-      "section_path_text": "LNG",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The LNG spot market remained under pressure this week, with rates continuing to fall. Limited fresh enquiry and prompt vessel availability allowed charterers to keep pushing levels down, reinforcing the softer sentiment.",
+      "summary": "30 Jan 2026\nGas report - Week 5",
       "keywords": [
-        "lng",
-        "australia",
-        "atlantic",
-        "europe",
-        "us_gulf",
-        "japan",
         "gas",
-        "day."
+        "jan"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 234,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_gas_2026-01-30_2026_01_30_gas_report_week_5_gas__s02_lpg",
-      "doc_id": "baltic_gas_2026-01-30_2026_01_30_gas_report_week_5_gas",
-      "parent_id": "baltic_gas_2026-01-30_2026_01_30_gas_report_week_5_gas__root",
-      "title": "LPG",
-      "section_path": [
-        "LPG"
-      ],
-      "section_path_text": "LPG",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The LPG market surged this week, driven by firmer sentiment in the West where a flurry of fresh cargoes drove fixing activity. The tightening Atlantic position list provided strong upward momentum, while the East, although quieter, was pulled higher in accordance with the gains seen in the West.",
-      "keywords": [
-        "lpg",
-        "atlantic",
-        "gas",
-        "day.",
-        "route",
-        "earnings",
-        "east",
-        "gains"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 225,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

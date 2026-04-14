@@ -1,14 +1,13 @@
 ---
 categories:
-- dry
 - dry_charter
 - drybulk
 - insights
 - iron_ore
 - vessel_valuations
-document_count: 138
+document_count: 134
 evidence_count: 250
-generated_at: '2026-04-14T08:20:09Z'
+generated_at: '2026-04-14T09:09:32Z'
 latest_evidence_date: '2026-04-09'
 page_type: topic_wiki
 related_topics:
@@ -16,7 +15,6 @@ related_topics:
 - china_steel_and_iron_ore
 - coal_and_grain_flows
 sources:
-- baltic
 - breakwave
 - breakwave_insights
 - hellenic
@@ -25,7 +23,7 @@ topic_id: capesize
 ---
 
 ## Summary
-Capesize trade patterns, Atlantic-Pacific balance, iron ore and coal exposure, and the route dynamics that most directly drive the largest dry-bulk vessels. The current wiki page is grounded in 250 cited sections from 138 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-09, with the strongest recurring markers being cape, capesize, iron_ore, china, brazil. Primary coverage comes from categories such as dry, dry_charter, drybulk, insights, iron_ore, vessel_valuations.
+Capesize trade patterns, Atlantic-Pacific balance, iron ore and coal exposure, and the route dynamics that most directly drive the largest dry-bulk vessels. The current wiki page is grounded in 250 cited sections from 134 documents across breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-09, with the strongest recurring markers being cape, capesize, iron_ore, china, brazil. Primary coverage comes from categories such as dry_charter, drybulk, insights, iron_ore, vessel_valuations.
 
 ## Why It Matters
 Capesize trade patterns, Atlantic-Pacific balance, iron ore and coal exposure, and the route dynamics that most directly drive the largest dry-bulk vessels.
@@ -41,14 +39,14 @@ Capesize trade patterns, Atlantic-Pacific balance, iron ore and coal exposure, a
 - 2026-04-08 | hellenic iron_ore | Linked asset: 2026-04-08_mmi-daily-iron-ore-index-report-april-8-2026_img2.jpg: Source asset: reports/hellenic/iron_ore/2026/2026-04-08_mmi-daily-iron-ore-index-report-april-8-2026_img2.jpg Linked image asset: 2026-04-08_mmi-daily-iron-ore-index-report-april-8-2026_img2.jpg Image metadata: JPEG 1200x557 mode=RGB Embedded info: dpi: (96, 96) OCR text: MMi Daily Iron Ore Index Report Apr 8th, 2026 IRON ORE PORT STOCK INDEX (IOP!) Apr 8th, 2026 FOT Qingdao (inc. 13% VAT), RMB/wet tonne CFR Qingdao Equivalent (exc. [doc_id: hellenic_iron_ore_2026-04-08_2026_04_08_mmi_daily_iron_ore_index_report_april_8_2026 | section_id: hellenic_iron_ore_2026-04-08_2026_04_08_mmi_daily_iron_ore_index_report_april_8_2026__s03_linked_asset_2026_04_08_mmi_daily_iron_ore_index_report_april_8_2026_img2_jpg | pages n/a]
 
 ## Historical Patterns
-- Coverage span: 2026-01-30 to 2026-04-09 across 1 calendar years.
+- Coverage span: 2026-01-28 to 2026-04-09 across 1 calendar years.
 - Most-covered years: 2026: 250
 - Recurring evidence markers: cape, capesize, iron_ore, china, brazil, australia
 
 ## Cross-Source View
-- Source coverage: hellenic: 161, breakwave_insights: 68, baltic: 11, breakwave: 10
-- Category coverage: iron_ore: 137, insights: 68, vessel_valuations: 14, dry: 11, drybulk: 10, dry_charter: 10
-- Tone distribution: constructive: 121, neutral: 69, cautiously_bearish: 60
+- Source coverage: hellenic: 171, breakwave_insights: 69, breakwave: 10
+- Category coverage: iron_ore: 144, insights: 69, vessel_valuations: 16, dry_charter: 11, drybulk: 10
+- Tone distribution: constructive: 121, neutral: 70, cautiously_bearish: 59
 - Related topics: dry_bulk_market, china_steel_and_iron_ore, coal_and_grain_flows
 
 ## Key Documents

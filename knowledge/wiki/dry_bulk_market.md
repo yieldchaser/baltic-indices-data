@@ -8,9 +8,9 @@ categories:
 - iron_ore
 - shipbuilding
 - vessel_valuations
-document_count: 127
+document_count: 132
 evidence_count: 250
-generated_at: '2026-04-14T08:20:09Z'
+generated_at: '2026-04-14T09:09:32Z'
 latest_evidence_date: '2026-04-10'
 page_type: topic_wiki
 related_topics:
@@ -28,7 +28,7 @@ topic_id: dry_bulk_market
 ---
 
 ## Summary
-Dry bulk freight conditions across the major vessel classes, cargo flows, tonnage balance, and the trade lanes that shape spot and forward pricing. The current wiki page is grounded in 250 cited sections from 127 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being china, iron_ore, brazil, capesize, australia. Primary coverage comes from categories such as demolition, dry, dry_charter, drybulk, insights, iron_ore, shipbuilding, vessel_valuations.
+Dry bulk freight conditions across the major vessel classes, cargo flows, tonnage balance, and the trade lanes that shape spot and forward pricing. The current wiki page is grounded in 250 cited sections from 132 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being china, iron_ore, brazil, capesize, australia. Primary coverage comes from categories such as demolition, dry, dry_charter, drybulk, insights, iron_ore, shipbuilding, vessel_valuations.
 
 ## Why It Matters
 Dry bulk freight conditions across the major vessel classes, cargo flows, tonnage balance, and the trade lanes that shape spot and forward pricing.
@@ -44,14 +44,14 @@ Dry bulk freight conditions across the major vessel classes, cargo flows, tonnag
 - 2026-04-08 | breakwave_insights insights | Main: By Nikolaos Tagoulis In a global environment defined by geopolitical uncertainty and inflationary pressures, India continues to demonstrate resilient growth potential. Although the OECD has estimated a slowdown in India's GDP growth from 7.6% in FY 2025-2026 to 6.1% in FY 2026-2027, reflecting challenges such as energy supply disrup-tions, currency depreciation, and inflation, India is still projected to record the highest growth among G20 economies. [doc_id: breakwave_insights_insights_2026-04-08_2026_04_08_indias_growth_potential | section_id: breakwave_insights_insights_2026-04-08_2026_04_08_indias_growth_potential__s01_main | pages n/a]
 
 ## Historical Patterns
-- Coverage span: 2026-03-07 to 2026-04-10 across 1 calendar years.
+- Coverage span: 2026-03-06 to 2026-04-10 across 1 calendar years.
 - Most-covered years: 2026: 250
 - Recurring evidence markers: china, iron_ore, brazil, capesize, australia, dry bulk
 
 ## Cross-Source View
-- Source coverage: hellenic: 151, breakwave_insights: 82, baltic: 13, breakwave: 4
-- Category coverage: insights: 82, iron_ore: 69, demolition: 47, shipbuilding: 16, dry: 13, dry_charter: 10, vessel_valuations: 9, drybulk: 4
-- Tone distribution: constructive: 120, neutral: 81, cautiously_bearish: 49
+- Source coverage: hellenic: 153, breakwave_insights: 89, baltic: 4, breakwave: 4
+- Category coverage: insights: 89, iron_ore: 70, demolition: 48, shipbuilding: 16, dry_charter: 10, vessel_valuations: 9, dry: 4, drybulk: 4
+- Tone distribution: constructive: 127, neutral: 80, cautiously_bearish: 43
 - Related topics: capesize, panamax_and_supramax, china_steel_and_iron_ore, coal_and_grain_flows
 
 ## Key Documents

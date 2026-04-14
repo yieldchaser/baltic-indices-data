@@ -5,9 +5,9 @@ categories:
 - drybulk
 - insights
 - vessel_valuations
-document_count: 178
+document_count: 190
 evidence_count: 250
-generated_at: '2026-04-14T08:20:09Z'
+generated_at: '2026-04-14T09:09:32Z'
 latest_evidence_date: '2026-04-10'
 page_type: topic_wiki
 related_topics:
@@ -23,7 +23,7 @@ topic_id: panamax_and_supramax
 ---
 
 ## Summary
-Panamax, supramax, and handysize market structure across grain, coal, and minor-bulk trades, especially where regional cargo shifts alter fleet utilization. The current wiki page is grounded in 250 cited sections from 178 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being coal, grain, panamax, supramax, handysize. Primary coverage comes from categories such as dry, dry_charter, drybulk, insights, vessel_valuations.
+Panamax, supramax, and handysize market structure across grain, coal, and minor-bulk trades, especially where regional cargo shifts alter fleet utilization. The current wiki page is grounded in 250 cited sections from 190 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being coal, grain, panamax, supramax, handysize. Primary coverage comes from categories such as dry, dry_charter, drybulk, insights, vessel_valuations.
 
 ## Why It Matters
 Panamax, supramax, and handysize market structure across grain, coal, and minor-bulk trades, especially where regional cargo shifts alter fleet utilization.
@@ -39,14 +39,14 @@ Panamax, supramax, and handysize market structure across grain, coal, and minor-
 - 2026-04-07 | hellenic vessel_valuations | Linked asset: 2026-04-08_weekly-vessel-valuations-report-april-07-2026_img2.jpg: Source asset: reports/hellenic/vessel_valuations/2026/2026-04-08_weekly-vessel-valuations-report-april-07-2026_img2.jpg Linked image asset: 2026-04-08_weekly-vessel-valuations-report-april-07-2026_img2.jpg Image metadata: JPEG 600x278 mode=RGB Embedded info: dpi: (72.0, 72.0) OCR text: (D) Vee seb Van © 07 Ageit 2026 VV Mini Matrix - Weekly Change Tankers Bulkers Containers Year vice Suez Afra LRt Ma Cape Pmax Supra Handy pies Pmax Handy = Fmax ° 108% +17 10.9% 105% 114A 06% 10.5% 10.2% +0.3% 0.0% 10.1% Om 10.1% 320k 160k MSk Tk SOK 180k 82% 62k 38k 7000 4250 730 noo 108% 138% 10.9% 10.7% 11s Om 10.3% 10.2% 10.4% 0.0% +02% OM 10.1% 5 320k 160k NOK TS Sk 180K 82% 6k 38k 7000 4250 730 noo 10.7% 2m 1s 10.6% 11Ae 10.0% 10.3% 10.2% 10.4% 10.1% 10.2% 0.06 0.1% e 320k 160k nok Tk Ok 180% 80k 60k 55k 7000 4250 780 noo 10.7% 2.8% +30% 1% Ae 10% 10.3% 10.2% 10.3% 10.1% 10.2% OAK 0.1% . Bk 160k 0k Tk SOk 180K 80k 60k Brg 7000 4250 780 noo 10.7% "37% 5.7% +3.9% Ae Om 10.3% 10.2% 10.3% 10.1% 10.0% us 10.1% 2 0k 160k 0k 70K 4k 180% Ts SSk 30k 7000 4250 730 noo xs 10.7% 42% +796 105% 14% Om 0.0% 10.1% 10.2% 20.0% Om 20% 0.0% 300k 1SSk MOSK 70K 45k V7Sk Ts $0k 30k 6500 4000 1780 noo [doc_id: hellenic_vessel_valuations_2026-04-07_2026_04_08_weekly_vessel_valuations_report_april_07_2026 | section_id: hellenic_vessel_valuations_2026-04-07_2026_04_08_weekly_vessel_valuations_report_april_07_2026__s03_linked_asset_2026_04_08_weekly_vessel_valuations_report_april_07_2026_img2_jpg | pages n/a]
 
 ## Historical Patterns
-- Coverage span: 2025-11-11 to 2026-04-10 across 2 calendar years.
-- Most-covered years: 2026: 183, 2025: 67
+- Coverage span: 2025-10-21 to 2026-04-10 across 2 calendar years.
+- Most-covered years: 2026: 147, 2025: 103
 - Recurring evidence markers: coal, grain, panamax, supramax, handysize, atlantic
 
 ## Cross-Source View
-- Source coverage: breakwave_insights: 132, hellenic: 54, baltic: 54, breakwave: 10
-- Category coverage: insights: 132, dry: 54, vessel_valuations: 35, dry_charter: 19, drybulk: 10
-- Tone distribution: constructive: 111, neutral: 73, cautiously_bearish: 66
+- Source coverage: breakwave_insights: 151, hellenic: 61, baltic: 27, breakwave: 11
+- Category coverage: insights: 151, vessel_valuations: 40, dry: 27, dry_charter: 21, drybulk: 11
+- Tone distribution: constructive: 117, neutral: 82, cautiously_bearish: 51
 - Related topics: dry_bulk_market, coal_and_grain_flows
 
 ## Key Documents

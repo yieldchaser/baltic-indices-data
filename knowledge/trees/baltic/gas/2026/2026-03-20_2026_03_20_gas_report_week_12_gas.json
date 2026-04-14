@@ -26,63 +26,29 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 431,
+  "token_count": 14,
   "source_path": "reports/baltic/gas/2026/2026-03-20_gas-report-week-12_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-03-20_2026_03_20_gas_report_week_12_gas__s01_lng",
+      "node_id": "baltic_gas_2026-03-20_2026_03_20_gas_report_week_12_gas__s01_main",
       "doc_id": "baltic_gas_2026-03-20_2026_03_20_gas_report_week_12_gas",
       "parent_id": "baltic_gas_2026-03-20_2026_03_20_gas_report_week_12_gas__root",
-      "title": "LNG",
+      "title": "Main",
       "section_path": [
-        "LNG"
+        "Main"
       ],
-      "section_path_text": "LNG",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The LNG spot market continued to show strength this week, with the Atlantic basin rebounding mid-week while the Pacific softened overall. Early weakness across both basins was followed by a pickup in activity in the West, supported by more bullish short-term sentiment driven by recent escalations in the Middle East.",
+      "summary": "20 Mar 2026\nGas report - Week 12",
       "keywords": [
-        "lng",
-        "australia",
-        "atlantic",
-        "pacific",
-        "europe",
-        "us_gulf",
-        "japan",
-        "gas"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 254,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_gas_2026-03-20_2026_03_20_gas_report_week_12_gas__s02_lpg",
-      "doc_id": "baltic_gas_2026-03-20_2026_03_20_gas_report_week_12_gas",
-      "parent_id": "baltic_gas_2026-03-20_2026_03_20_gas_report_week_12_gas__root",
-      "title": "LPG",
-      "section_path": [
-        "LPG"
-      ],
-      "section_path_text": "LPG",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The LPG market strengthened sharply this week as oil and gas prices surged amid escalating strikes in the Middle East, with rising bunker costs adding further upward pressure to freight. Increased volatility and bullish short term sentiment helped push rates higher across the key routes.",
-      "keywords": [
-        "lpg",
-        "crude_oil",
         "gas",
-        "route",
-        "tce",
-        "bullish",
-        "day.",
-        "earnings"
+        "mar"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 171,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

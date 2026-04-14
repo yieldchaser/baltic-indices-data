@@ -4,9 +4,9 @@ categories:
 - tanker
 - tankers
 - vessel_valuations
-document_count: 155
+document_count: 174
 evidence_count: 250
-generated_at: '2026-04-14T08:20:09Z'
+generated_at: '2026-04-14T09:09:32Z'
 latest_evidence_date: '2026-04-10'
 page_type: topic_wiki
 related_topics:
@@ -22,7 +22,7 @@ topic_id: vlcc_and_suezmax
 ---
 
 ## Summary
-Benchmark crude tanker classes and routes, with emphasis on MEG-Asia and West Africa-Europe dynamics, vessel supply, and route-specific rate pressure. The current wiki page is grounded in 250 cited sections from 155 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being meg, suezmax, vlcc, aframax, crude_oil. Primary coverage comes from categories such as insights, tanker, tankers, vessel_valuations.
+Benchmark crude tanker classes and routes, with emphasis on MEG-Asia and West Africa-Europe dynamics, vessel supply, and route-specific rate pressure. The current wiki page is grounded in 250 cited sections from 174 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being meg, suezmax, vlcc, aframax, crude_oil. Primary coverage comes from categories such as insights, tanker, tankers, vessel_valuations.
 
 ## Why It Matters
 Benchmark crude tanker classes and routes, with emphasis on MEG-Asia and West Africa-Europe dynamics, vessel supply, and route-specific rate pressure.
@@ -38,14 +38,14 @@ Benchmark crude tanker classes and routes, with emphasis on MEG-Asia and West Af
 - 2026-04-02 | breakwave_insights insights | Main: Excerpt from Signal Ocean's SoH Update: What's Next for Tanker Freight? The knock-on effects for importing nations are equally severe. [doc_id: breakwave_insights_insights_2026-04-02_2026_04_02_indias_energy_crisis_deepens | section_id: breakwave_insights_insights_2026-04-02_2026_04_02_indias_energy_crisis_deepens__s01_main | pages n/a]
 
 ## Historical Patterns
-- Coverage span: 2026-01-02 to 2026-04-10 across 1 calendar years.
-- Most-covered years: 2026: 250
+- Coverage span: 2025-11-28 to 2026-04-10 across 2 calendar years.
+- Most-covered years: 2026: 202, 2025: 48
 - Recurring evidence markers: meg, suezmax, vlcc, aframax, crude_oil, china
 
 ## Cross-Source View
-- Source coverage: breakwave_insights: 176, baltic: 48, breakwave: 14, hellenic: 12
-- Category coverage: insights: 176, tanker: 48, tankers: 14, vessel_valuations: 12
-- Tone distribution: constructive: 144, cautiously_bearish: 52, neutral: 50, cautiously_optimistic: 2, bullish_momentum: 2
+- Source coverage: breakwave_insights: 203, breakwave: 18, hellenic: 15, baltic: 14
+- Category coverage: insights: 203, tankers: 18, vessel_valuations: 15, tanker: 14
+- Tone distribution: constructive: 153, neutral: 48, cautiously_bearish: 45, cautiously_optimistic: 2, bullish_momentum: 2
 - Related topics: tanker_market, oil_and_opec
 
 ## Key Documents

@@ -26,119 +26,28 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 871,
+  "token_count": 14,
   "source_path": "reports/baltic/dry/2026/2026-01-09_bulk-report-week-2_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__s01_capesize",
+      "node_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__s01_main",
       "doc_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry",
       "parent_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__root",
-      "title": "Capesize",
+      "title": "Main",
       "section_path": [
-        "Capesize"
+        "Main"
       ],
-      "section_path_text": "Capesize",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The market delivered a mixed but generally softer week, with sentiment gradually weakening despite a brief midweek improvement in Atlantic activity. Following a post-holiday pickup in participation, the Pacific basin remained under consistent pressure, with C5 rates trending lower as miner support proved insufficient to counter growing tonnage availability.",
+      "summary": "09 Jan 2026\nBulk report - Week 2",
       "keywords": [
-        "china",
-        "brazil",
-        "atlantic",
-        "pacific",
-        "west_africa",
-        "softer",
-        "fixtures",
-        "pressure"
+        "jan"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 192,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__s02_panamax",
-      "doc_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry",
-      "parent_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__root",
-      "title": "Panamax",
-      "section_path": [
-        "Panamax"
-      ],
-      "section_path_text": "Panamax",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The market ended the week on a firmer footing following a muted post-holiday start. Early softness, particularly in fronthaul, gradually gave way to more constructive sentiment as participants returned and enquiry built for end-January and early-February positions.",
-      "keywords": [
-        "atlantic",
-        "pacific",
-        "demand",
-        "firmer",
-        "fronthaul",
-        "prompt",
-        "sentiment",
-        "asia"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 152,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__s03_ultramax_supramax",
-      "doc_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry",
-      "parent_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__root",
-      "title": "Ultramax/Supramax",
-      "section_path": [
-        "Ultramax/Supramax"
-      ],
-      "section_path_text": "Ultramax/Supramax",
-      "level": 1,
-      "ordinal": 3,
-      "summary": "The first full week back for many after the seasonal holiday remained a subdued affair. With both basins playing catch up and the inevitable imbalance between cargo supply and vessel availability, as charterers remained in the driving seat.",
-      "keywords": [
-        "atlantic",
-        "europe",
-        "india",
-        "dwt",
-        "fixing",
-        "delivery",
-        "redelivery",
-        "remained"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 251,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__s04_handysize",
-      "doc_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry",
-      "parent_id": "baltic_dry_2026-01-09_2026_01_09_bulk_report_week_2_dry__root",
-      "title": "Handysize",
-      "section_path": [
-        "Handysize"
-      ],
-      "section_path_text": "Handysize",
-      "level": 1,
-      "ordinal": 4,
-      "summary": "As anticipated, the first full week of the new year has been marked by limited activity across both the Atlantic and Asian basins, with overall market sentiment remaining negative. In the Atlantic, conditions continue to reflect a soft tone, as the tonnage list remains long across most loading areas.",
-      "keywords": [
-        "brazil",
-        "atlantic",
-        "india",
-        "grain",
-        "steel",
-        "dwt",
-        "fixed",
-        "delivery"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 258,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

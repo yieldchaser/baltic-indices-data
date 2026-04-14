@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-14T08:20:32Z",
+  "generated_at": "2026-04-14T09:09:54Z",
   "current_date": "2026-04-14",
   "corpus": {
     "document_count": 7567,
-    "chunk_count": 73181,
-    "section_count": 20437,
+    "chunk_count": 73080,
+    "section_count": 20339,
     "topic_count": 10,
     "topic_evidence_count": 2500,
     "wiki_page_count": 10
@@ -217,20 +217,20 @@
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 127,
+      "document_count": 132,
       "source_counts": {
-        "baltic": 13,
+        "baltic": 4,
         "breakwave": 4,
-        "breakwave_insights": 82,
-        "hellenic": 151
+        "breakwave_insights": 89,
+        "hellenic": 153
       },
       "category_counts": {
-        "demolition": 47,
-        "dry": 13,
+        "demolition": 48,
+        "dry": 4,
         "dry_charter": 10,
         "drybulk": 4,
-        "insights": 82,
-        "iron_ore": 69,
+        "insights": 89,
+        "iron_ore": 70,
         "shipbuilding": 16,
         "vessel_valuations": 9
       },
@@ -243,8 +243,8 @@
       "missing_recent_sources": [],
       "tone_distribution": {
         "cautiously_bearish": 22,
-        "constructive": 64,
-        "neutral": 41
+        "constructive": 68,
+        "neutral": 42
       }
     },
     {
@@ -257,18 +257,18 @@
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 130,
+      "document_count": 132,
       "source_counts": {
-        "baltic": 20,
+        "baltic": 6,
         "breakwave": 6,
-        "breakwave_insights": 124,
+        "breakwave_insights": 138,
         "hellenic": 100
       },
       "category_counts": {
         "demolition": 58,
-        "insights": 124,
+        "insights": 138,
         "shipbuilding": 18,
-        "tanker": 20,
+        "tanker": 6,
         "tanker_charter": 12,
         "tankers": 6,
         "vessel_valuations": 12
@@ -281,9 +281,9 @@
       ],
       "missing_recent_sources": [],
       "tone_distribution": {
-        "cautiously_bearish": 18,
+        "cautiously_bearish": 19,
         "constructive": 65,
-        "neutral": 47
+        "neutral": 48
       }
     },
     {
@@ -296,32 +296,31 @@
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 1,
       "evidence_count": 250,
-      "document_count": 138,
+      "document_count": 134,
       "source_counts": {
-        "baltic": 11,
         "breakwave": 10,
-        "breakwave_insights": 68,
-        "hellenic": 161
+        "breakwave_insights": 69,
+        "hellenic": 171
       },
       "category_counts": {
-        "dry": 11,
-        "dry_charter": 10,
+        "dry_charter": 11,
         "drybulk": 10,
-        "insights": 68,
-        "iron_ore": 137,
-        "vessel_valuations": 14
+        "insights": 69,
+        "iron_ore": 144,
+        "vessel_valuations": 16
       },
       "recent_sources_present": [
-        "baltic",
         "breakwave",
         "breakwave_insights",
         "hellenic"
       ],
-      "missing_recent_sources": [],
+      "missing_recent_sources": [
+        "baltic"
+      ],
       "tone_distribution": {
-        "cautiously_bearish": 27,
-        "constructive": 73,
-        "neutral": 38
+        "cautiously_bearish": 25,
+        "constructive": 70,
+        "neutral": 39
       }
     },
     {
@@ -334,19 +333,19 @@
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 178,
+      "document_count": 190,
       "source_counts": {
-        "baltic": 54,
-        "breakwave": 10,
-        "breakwave_insights": 132,
-        "hellenic": 54
+        "baltic": 27,
+        "breakwave": 11,
+        "breakwave_insights": 151,
+        "hellenic": 61
       },
       "category_counts": {
-        "dry": 54,
-        "dry_charter": 19,
-        "drybulk": 10,
-        "insights": 132,
-        "vessel_valuations": 35
+        "dry": 27,
+        "dry_charter": 21,
+        "drybulk": 11,
+        "insights": 151,
+        "vessel_valuations": 40
       },
       "recent_sources_present": [
         "baltic",
@@ -356,9 +355,9 @@
       ],
       "missing_recent_sources": [],
       "tone_distribution": {
-        "cautiously_bearish": 27,
-        "constructive": 69,
-        "neutral": 45
+        "cautiously_bearish": 22,
+        "constructive": 64,
+        "neutral": 43
       }
     },
     {
@@ -371,16 +370,126 @@
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 155,
+      "document_count": 174,
       "source_counts": {
-        "baltic": 48,
+        "baltic": 14,
+        "breakwave": 18,
+        "breakwave_insights": 203,
+        "hellenic": 15
+      },
+      "category_counts": {
+        "insights": 203,
+        "tanker": 14,
+        "tankers": 18,
+        "vessel_valuations": 15
+      },
+      "recent_sources_present": [
+        "baltic",
+        "breakwave",
+        "breakwave_insights",
+        "hellenic"
+      ],
+      "missing_recent_sources": [],
+      "tone_distribution": {
+        "bullish_momentum": 1,
+        "cautiously_bearish": 22,
+        "cautiously_optimistic": 1,
+        "constructive": 97,
+        "neutral": 31
+      }
+    },
+    {
+      "topic_id": "china_steel_and_iron_ore",
+      "title": "China Steel and Iron Ore",
+      "status": "healthy",
+      "cadence_days": 7,
+      "latest_evidence_date": "2026-04-09",
+      "latest_evidence_age_days": 5,
+      "relevant_corpus_latest_date": "2026-04-10",
+      "lag_days": 1,
+      "evidence_count": 250,
+      "document_count": 139,
+      "source_counts": {
+        "breakwave": 8,
+        "breakwave_insights": 119,
+        "hellenic": 123
+      },
+      "category_counts": {
+        "dry_charter": 8,
+        "drybulk": 8,
+        "insights": 119,
+        "iron_ore": 115
+      },
+      "recent_sources_present": [
+        "breakwave",
+        "breakwave_insights",
+        "hellenic"
+      ],
+      "missing_recent_sources": [
+        "baltic"
+      ],
+      "tone_distribution": {
+        "cautiously_bearish": 24,
+        "constructive": 79,
+        "neutral": 36
+      }
+    },
+    {
+      "topic_id": "coal_and_grain_flows",
+      "title": "Coal and Grain Flows",
+      "status": "healthy",
+      "cadence_days": 7,
+      "latest_evidence_date": "2026-04-10",
+      "latest_evidence_age_days": 4,
+      "relevant_corpus_latest_date": "2026-04-10",
+      "lag_days": 0,
+      "evidence_count": 250,
+      "document_count": 194,
+      "source_counts": {
+        "baltic": 24,
+        "breakwave": 12,
+        "breakwave_insights": 196,
+        "hellenic": 18
+      },
+      "category_counts": {
+        "dry": 24,
+        "dry_charter": 18,
+        "drybulk": 12,
+        "insights": 196
+      },
+      "recent_sources_present": [
+        "baltic",
+        "breakwave",
+        "breakwave_insights",
+        "hellenic"
+      ],
+      "missing_recent_sources": [],
+      "tone_distribution": {
+        "cautiously_bearish": 23,
+        "constructive": 90,
+        "neutral": 43
+      }
+    },
+    {
+      "topic_id": "oil_and_opec",
+      "title": "Oil and OPEC",
+      "status": "healthy",
+      "cadence_days": 7,
+      "latest_evidence_date": "2026-04-10",
+      "latest_evidence_age_days": 4,
+      "relevant_corpus_latest_date": "2026-04-10",
+      "lag_days": 0,
+      "evidence_count": 250,
+      "document_count": 182,
+      "source_counts": {
+        "baltic": 3,
         "breakwave": 14,
-        "breakwave_insights": 176,
+        "breakwave_insights": 221,
         "hellenic": 12
       },
       "category_counts": {
-        "insights": 176,
-        "tanker": 48,
+        "insights": 221,
+        "tanker": 3,
         "tankers": 14,
         "vessel_valuations": 12
       },
@@ -395,119 +504,8 @@
         "bullish_momentum": 1,
         "cautiously_bearish": 28,
         "cautiously_optimistic": 1,
-        "constructive": 94,
-        "neutral": 31
-      }
-    },
-    {
-      "topic_id": "china_steel_and_iron_ore",
-      "title": "China Steel and Iron Ore",
-      "status": "healthy",
-      "cadence_days": 7,
-      "latest_evidence_date": "2026-04-09",
-      "latest_evidence_age_days": 5,
-      "relevant_corpus_latest_date": "2026-04-10",
-      "lag_days": 1,
-      "evidence_count": 250,
-      "document_count": 137,
-      "source_counts": {
-        "baltic": 14,
-        "breakwave": 8,
-        "breakwave_insights": 114,
-        "hellenic": 114
-      },
-      "category_counts": {
-        "dry": 14,
-        "dry_charter": 8,
-        "drybulk": 8,
-        "insights": 114,
-        "iron_ore": 106
-      },
-      "recent_sources_present": [
-        "baltic",
-        "breakwave",
-        "breakwave_insights",
-        "hellenic"
-      ],
-      "missing_recent_sources": [],
-      "tone_distribution": {
-        "cautiously_bearish": 25,
-        "constructive": 78,
-        "neutral": 34
-      }
-    },
-    {
-      "topic_id": "coal_and_grain_flows",
-      "title": "Coal and Grain Flows",
-      "status": "healthy",
-      "cadence_days": 7,
-      "latest_evidence_date": "2026-04-10",
-      "latest_evidence_age_days": 4,
-      "relevant_corpus_latest_date": "2026-04-10",
-      "lag_days": 0,
-      "evidence_count": 250,
-      "document_count": 173,
-      "source_counts": {
-        "baltic": 56,
-        "breakwave": 9,
-        "breakwave_insights": 170,
-        "hellenic": 15
-      },
-      "category_counts": {
-        "dry": 56,
-        "dry_charter": 15,
-        "drybulk": 9,
-        "insights": 170
-      },
-      "recent_sources_present": [
-        "baltic",
-        "breakwave",
-        "breakwave_insights",
-        "hellenic"
-      ],
-      "missing_recent_sources": [],
-      "tone_distribution": {
-        "cautiously_bearish": 28,
-        "constructive": 95,
-        "neutral": 45
-      }
-    },
-    {
-      "topic_id": "oil_and_opec",
-      "title": "Oil and OPEC",
-      "status": "healthy",
-      "cadence_days": 7,
-      "latest_evidence_date": "2026-04-10",
-      "latest_evidence_age_days": 4,
-      "relevant_corpus_latest_date": "2026-04-10",
-      "lag_days": 0,
-      "evidence_count": 250,
-      "document_count": 167,
-      "source_counts": {
-        "baltic": 33,
-        "breakwave": 13,
-        "breakwave_insights": 194,
-        "hellenic": 10
-      },
-      "category_counts": {
-        "insights": 194,
-        "tanker": 33,
-        "tankers": 13,
-        "vessel_valuations": 10
-      },
-      "recent_sources_present": [
-        "baltic",
-        "breakwave",
-        "breakwave_insights",
-        "hellenic"
-      ],
-      "missing_recent_sources": [],
-      "tone_distribution": {
-        "bullish_momentum": 1,
-        "cautiously_bearish": 26,
-        "cautiously_optimistic": 1,
-        "constructive": 105,
-        "neutral": 34
+        "constructive": 117,
+        "neutral": 35
       }
     },
     {
@@ -520,14 +518,14 @@
       "relevant_corpus_latest_date": "2026-04-10",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 142,
+      "document_count": 150,
       "source_counts": {
-        "baltic": 145,
-        "hellenic": 105
+        "baltic": 141,
+        "hellenic": 109
       },
       "category_counts": {
-        "gas": 145,
-        "shipbuilding": 105
+        "gas": 141,
+        "shipbuilding": 109
       },
       "recent_sources_present": [
         "baltic",
@@ -610,80 +608,6 @@
         }
       ],
       "message": "Dry Bulk Market shows recent tone divergence: breakwave_insights reads cautiously_bullish while baltic reads cautiously_bearish."
-    },
-    {
-      "topic_id": "capesize",
-      "title": "Capesize",
-      "severity": "watch",
-      "score_diff": 0.75,
-      "source_scores": [
-        {
-          "source": "baltic",
-          "avg_tone_score": 0.0,
-          "dominant_tone": "cautiously_bearish",
-          "doc_count": 6,
-          "latest_date": "2026-03-27"
-        },
-        {
-          "source": "hellenic",
-          "avg_tone_score": 0.08,
-          "dominant_tone": "cautiously_bearish",
-          "doc_count": 6,
-          "latest_date": "2026-04-09"
-        },
-        {
-          "source": "breakwave",
-          "avg_tone_score": 0.2,
-          "dominant_tone": "constructive",
-          "doc_count": 5,
-          "latest_date": "2026-03-31"
-        },
-        {
-          "source": "breakwave_insights",
-          "avg_tone_score": 0.75,
-          "dominant_tone": "constructive",
-          "doc_count": 6,
-          "latest_date": "2026-04-09"
-        }
-      ],
-      "message": "Capesize shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral."
-    },
-    {
-      "topic_id": "china_steel_and_iron_ore",
-      "title": "China Steel and Iron Ore",
-      "severity": "watch",
-      "score_diff": 0.75,
-      "source_scores": [
-        {
-          "source": "baltic",
-          "avg_tone_score": 0.0,
-          "dominant_tone": "cautiously_bearish",
-          "doc_count": 6,
-          "latest_date": "2026-03-27"
-        },
-        {
-          "source": "hellenic",
-          "avg_tone_score": 0.21,
-          "dominant_tone": "constructive",
-          "doc_count": 6,
-          "latest_date": "2026-04-09"
-        },
-        {
-          "source": "breakwave",
-          "avg_tone_score": 0.25,
-          "dominant_tone": "constructive",
-          "doc_count": 4,
-          "latest_date": "2026-03-31"
-        },
-        {
-          "source": "breakwave_insights",
-          "avg_tone_score": 0.75,
-          "dominant_tone": "constructive",
-          "doc_count": 6,
-          "latest_date": "2026-04-09"
-        }
-      ],
-      "message": "China Steel and Iron Ore shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral."
     }
   ]
 }

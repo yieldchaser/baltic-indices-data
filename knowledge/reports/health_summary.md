@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-14T08:20:32Z'
+generated_at: '2026-04-14T09:09:54Z'
 high_severity_count: 0
 page_type: knowledge_health_summary
 warning_count: 3
@@ -9,8 +9,8 @@ warning_count: 3
 
 ## Corpus Snapshot
 - Documents: 7567
-- Chunks: 73181
-- Sections: 20437
+- Chunks: 73080
+- Sections: 20339
 - Topic evidence rows: 2500
 - Wiki pages: 10
 
@@ -38,23 +38,21 @@ warning_count: 3
 
 | Topic | Latest Evidence | Docs | Evidence | Recent Sources | Missing Sources | Status |
 |---|---|---:|---:|---|---|---|
-| Dry Bulk Market | 2026-04-10 | 127 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
-| Tanker Market | 2026-04-10 | 130 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
-| Capesize | 2026-04-09 | 138 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
-| Panamax and Supramax | 2026-04-10 | 178 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
-| VLCC and Suezmax | 2026-04-10 | 155 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
-| China Steel and Iron Ore | 2026-04-09 | 137 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
-| Coal and Grain Flows | 2026-04-10 | 173 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
-| Oil and OPEC | 2026-04-10 | 167 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
-| LNG and LPG Shipping | 2026-04-10 | 142 | 250 | baltic, hellenic | - | healthy |
+| Dry Bulk Market | 2026-04-10 | 132 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
+| Tanker Market | 2026-04-10 | 132 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
+| Capesize | 2026-04-09 | 134 | 250 | breakwave, breakwave_insights, hellenic | baltic | healthy |
+| Panamax and Supramax | 2026-04-10 | 190 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
+| VLCC and Suezmax | 2026-04-10 | 174 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
+| China Steel and Iron Ore | 2026-04-09 | 139 | 250 | breakwave, breakwave_insights, hellenic | baltic | healthy |
+| Coal and Grain Flows | 2026-04-10 | 194 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
+| Oil and OPEC | 2026-04-10 | 182 | 250 | baltic, breakwave, breakwave_insights, hellenic | - | healthy |
+| LNG and LPG Shipping | 2026-04-10 | 150 | 250 | baltic, hellenic | - | healthy |
 | Container and Ningbo Routes | 2026-04-10 | 179 | 250 | baltic, hellenic | - | healthy |
 
 ## Priority Warnings
-- `watch` Capesize shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral.
-- `watch` China Steel and Iron Ore shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral.
 - `watch` Dry Bulk Market shows recent tone divergence: breakwave_insights reads cautiously_bullish while baltic reads cautiously_bearish.
+- `watch` capesize is missing recent evidence from expected sources: baltic.
+- `watch` china_steel_and_iron_ore is missing recent evidence from expected sources: baltic.
 
 ## Cross-Source Divergence
 - `watch` Dry Bulk Market shows recent tone divergence: breakwave_insights reads cautiously_bullish while baltic reads cautiously_bearish.
-- `watch` Capesize shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral.
-- `watch` China Steel and Iron Ore shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral.

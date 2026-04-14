@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T08:20:32Z",
+  "generated_at": "2026-04-14T09:09:54Z",
   "current_date": "2026-04-14",
   "warning_count": 3,
   "high_severity_count": 0,
@@ -12,96 +12,10 @@
       "healthy": 10
     },
     "divergences": {
-      "watch": 3
+      "watch": 1
     }
   },
   "warnings": [
-    {
-      "severity": "watch",
-      "kind": "topic_divergence",
-      "key": "capesize",
-      "message": "Capesize shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral.",
-      "details": {
-        "topic_id": "capesize",
-        "title": "Capesize",
-        "severity": "watch",
-        "score_diff": 0.75,
-        "source_scores": [
-          {
-            "source": "baltic",
-            "avg_tone_score": 0.0,
-            "dominant_tone": "cautiously_bearish",
-            "doc_count": 6,
-            "latest_date": "2026-03-27"
-          },
-          {
-            "source": "hellenic",
-            "avg_tone_score": 0.08,
-            "dominant_tone": "cautiously_bearish",
-            "doc_count": 6,
-            "latest_date": "2026-04-09"
-          },
-          {
-            "source": "breakwave",
-            "avg_tone_score": 0.2,
-            "dominant_tone": "constructive",
-            "doc_count": 5,
-            "latest_date": "2026-03-31"
-          },
-          {
-            "source": "breakwave_insights",
-            "avg_tone_score": 0.75,
-            "dominant_tone": "constructive",
-            "doc_count": 6,
-            "latest_date": "2026-04-09"
-          }
-        ],
-        "message": "Capesize shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral."
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_divergence",
-      "key": "china_steel_and_iron_ore",
-      "message": "China Steel and Iron Ore shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral.",
-      "details": {
-        "topic_id": "china_steel_and_iron_ore",
-        "title": "China Steel and Iron Ore",
-        "severity": "watch",
-        "score_diff": 0.75,
-        "source_scores": [
-          {
-            "source": "baltic",
-            "avg_tone_score": 0.0,
-            "dominant_tone": "cautiously_bearish",
-            "doc_count": 6,
-            "latest_date": "2026-03-27"
-          },
-          {
-            "source": "hellenic",
-            "avg_tone_score": 0.21,
-            "dominant_tone": "constructive",
-            "doc_count": 6,
-            "latest_date": "2026-04-09"
-          },
-          {
-            "source": "breakwave",
-            "avg_tone_score": 0.25,
-            "dominant_tone": "constructive",
-            "doc_count": 4,
-            "latest_date": "2026-03-31"
-          },
-          {
-            "source": "breakwave_insights",
-            "avg_tone_score": 0.75,
-            "dominant_tone": "constructive",
-            "doc_count": 6,
-            "latest_date": "2026-04-09"
-          }
-        ],
-        "message": "China Steel and Iron Ore shows recent tone divergence: breakwave_insights reads constructive while baltic reads neutral."
-      }
-    },
     {
       "severity": "watch",
       "kind": "topic_divergence",
@@ -143,6 +57,40 @@
           }
         ],
         "message": "Dry Bulk Market shows recent tone divergence: breakwave_insights reads cautiously_bullish while baltic reads cautiously_bearish."
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_source_gap",
+      "key": "capesize",
+      "message": "capesize is missing recent evidence from expected sources: baltic.",
+      "details": {
+        "topic_id": "capesize",
+        "missing_recent_sources": [
+          "baltic"
+        ],
+        "recent_sources_present": [
+          "breakwave",
+          "breakwave_insights",
+          "hellenic"
+        ]
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_source_gap",
+      "key": "china_steel_and_iron_ore",
+      "message": "china_steel_and_iron_ore is missing recent evidence from expected sources: baltic.",
+      "details": {
+        "topic_id": "china_steel_and_iron_ore",
+        "missing_recent_sources": [
+          "baltic"
+        ],
+        "recent_sources_present": [
+          "breakwave",
+          "breakwave_insights",
+          "hellenic"
+        ]
       }
     }
   ]

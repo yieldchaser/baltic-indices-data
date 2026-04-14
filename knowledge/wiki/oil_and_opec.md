@@ -4,9 +4,9 @@ categories:
 - tanker
 - tankers
 - vessel_valuations
-document_count: 167
+document_count: 182
 evidence_count: 250
-generated_at: '2026-04-14T08:20:09Z'
+generated_at: '2026-04-14T09:09:32Z'
 latest_evidence_date: '2026-04-10'
 page_type: topic_wiki
 related_topics:
@@ -22,7 +22,7 @@ topic_id: oil_and_opec
 ---
 
 ## Summary
-Oil demand, OPEC and non-OPEC supply, floating storage, and inventory conditions that shape tanker demand and freight market expectations. The current wiki page is grounded in 250 cited sections from 167 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being oil, china, crude_oil, vlcc, europe. Primary coverage comes from categories such as insights, tanker, tankers, vessel_valuations.
+Oil demand, OPEC and non-OPEC supply, floating storage, and inventory conditions that shape tanker demand and freight market expectations. The current wiki page is grounded in 250 cited sections from 182 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being oil, china, crude_oil, vlcc, demand. Primary coverage comes from categories such as insights, tanker, tankers, vessel_valuations.
 
 ## Why It Matters
 Oil demand, OPEC and non-OPEC supply, floating storage, and inventory conditions that shape tanker demand and freight market expectations.
@@ -38,14 +38,14 @@ Oil demand, OPEC and non-OPEC supply, floating storage, and inventory conditions
 - 2026-04-07 | hellenic vessel_valuations | Main: in Weekly Vessel Valuations Report 08/04/2026 Image reference: 2026-04-08_weekly-vessel-valuations-report-april-07-2026_img1.png Bulkers: Secondhand activity in the Bulker market was steady this week, with transactions reported across segments.Buyer sentiment remains cautious, with elevated asset values and ongoing geopolitical uncertainty continuing to temper appetite in the secondhand market. Capesize Frontier Garland (181,500 DWT, 2011, Imabari) sold to Greek buyers for USD 36.5 mil, VV Value USD 34.8 mil Kamsarmax Talimen (81,600 DWT, 2016, Jinling Jiangsu) sold SS/DD Due by Delta Shipping for USD 26.0 mil, VV Value USD 26.0 mil Supramax Valiant (55,600 DWT, 2009, Hyundai Vietnam) sold by Mercury Maritime for USD 13.4 mil, VV Value USD 13.6 mil Handysize DL Olive (35,200 DWT, 2013, SPP) sold by Korea Ship Finance Co for for USD 15.0 mil, VV Value USD 15.1 mil Tankers: Tanker values held their firming trend across all tanker segments last week, with midsize tonnage leading gains off the back of recent S&P activity. [doc_id: hellenic_vessel_valuations_2026-04-07_2026_04_08_weekly_vessel_valuations_report_april_07_2026 | section_id: hellenic_vessel_valuations_2026-04-07_2026_04_08_weekly_vessel_valuations_report_april_07_2026__s01_main | pages n/a]
 
 ## Historical Patterns
-- Coverage span: 2026-01-13 to 2026-04-10 across 1 calendar years.
-- Most-covered years: 2026: 250
-- Recurring evidence markers: oil, china, crude_oil, vlcc, europe, demand
+- Coverage span: 2025-12-18 to 2026-04-10 across 2 calendar years.
+- Most-covered years: 2026: 239, 2025: 11
+- Recurring evidence markers: oil, china, crude_oil, vlcc, demand, supply
 
 ## Cross-Source View
-- Source coverage: breakwave_insights: 194, baltic: 33, breakwave: 13, hellenic: 10
-- Category coverage: insights: 194, tanker: 33, tankers: 13, vessel_valuations: 10
-- Tone distribution: constructive: 147, neutral: 55, cautiously_bearish: 45, bullish_momentum: 2, cautiously_optimistic: 1
+- Source coverage: breakwave_insights: 221, breakwave: 14, hellenic: 12, baltic: 3
+- Category coverage: insights: 221, tankers: 14, vessel_valuations: 12, tanker: 3
+- Tone distribution: constructive: 155, neutral: 54, cautiously_bearish: 37, cautiously_optimistic: 2, bullish_momentum: 2
 - Related topics: tanker_market, vlcc_and_suezmax
 
 ## Key Documents

@@ -4,9 +4,9 @@ categories:
 - dry_charter
 - drybulk
 - insights
-document_count: 173
+document_count: 194
 evidence_count: 250
-generated_at: '2026-04-14T08:20:09Z'
+generated_at: '2026-04-14T09:09:32Z'
 latest_evidence_date: '2026-04-10'
 page_type: topic_wiki
 related_topics:
@@ -23,7 +23,7 @@ topic_id: coal_and_grain_flows
 ---
 
 ## Summary
-Coal, grain, soybean, and other agricultural or energy-related dry-bulk flows that change fleet positioning, seasonality, and regional vessel demand. The current wiki page is grounded in 250 cited sections from 173 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being coal, grain, china, capesize, brazil. Primary coverage comes from categories such as dry, dry_charter, drybulk, insights.
+Coal, grain, soybean, and other agricultural or energy-related dry-bulk flows that change fleet positioning, seasonality, and regional vessel demand. The current wiki page is grounded in 250 cited sections from 194 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being coal, grain, china, capesize, brazil. Primary coverage comes from categories such as dry, dry_charter, drybulk, insights.
 
 ## Why It Matters
 Coal, grain, soybean, and other agricultural or energy-related dry-bulk flows that change fleet positioning, seasonality, and regional vessel demand.
@@ -39,14 +39,14 @@ Coal, grain, soybean, and other agricultural or energy-related dry-bulk flows th
 - 2026-04-06 | breakwave_insights insights | Main: The dry bulk market entered 2026 with remarkable momentum, delivering a broadly robust performance across all vessel classes in the first two months of the year. From Capesizes to Handysizes, spot rates trended higher on a year-on-year basis, supported by sustained strength even through the typically quieter Chinese New Year period. [doc_id: breakwave_insights_insights_2026-04-06_2026_04_06_dry_bulk_1q26_momentum_to_mayhem | section_id: breakwave_insights_insights_2026-04-06_2026_04_06_dry_bulk_1q26_momentum_to_mayhem__s01_main | pages n/a]
 
 ## Historical Patterns
-- Coverage span: 2025-12-10 to 2026-04-10 across 2 calendar years.
-- Most-covered years: 2026: 225, 2025: 25
+- Coverage span: 2025-11-14 to 2026-04-10 across 2 calendar years.
+- Most-covered years: 2026: 177, 2025: 73
 - Recurring evidence markers: coal, grain, china, capesize, brazil, handysize
 
 ## Cross-Source View
-- Source coverage: breakwave_insights: 170, baltic: 56, hellenic: 15, breakwave: 9
-- Category coverage: insights: 170, dry: 56, dry_charter: 15, drybulk: 9
-- Tone distribution: constructive: 119, cautiously_bearish: 72, neutral: 59
+- Source coverage: breakwave_insights: 196, baltic: 24, hellenic: 18, breakwave: 12
+- Category coverage: insights: 196, dry: 24, dry_charter: 18, drybulk: 12
+- Tone distribution: constructive: 124, neutral: 64, cautiously_bearish: 62
 - Related topics: dry_bulk_market, panamax_and_supramax, capesize
 
 ## Key Documents

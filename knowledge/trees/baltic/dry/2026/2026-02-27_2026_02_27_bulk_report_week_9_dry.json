@@ -26,119 +26,28 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 945,
+  "token_count": 14,
   "source_path": "reports/baltic/dry/2026/2026-02-27_bulk-report-week-9_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__s01_capesize",
+      "node_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__s01_main",
       "doc_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry",
       "parent_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__root",
-      "title": "Capesize",
+      "title": "Main",
       "section_path": [
-        "Capesize"
+        "Main"
       ],
-      "section_path_text": "Capesize",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The week began with renewed optimism, led by a firmer Pacific market as all three major miners returned to the market and operator cargo volumes appeared healthy. Early strength in the Pacific, supported by fixtures above $10.00 on C5, set a constructive tone, while the Atlantic also edged higher despite a noticeable bid-offer gap.",
+      "summary": "27 Feb 2026\nBulk report - Week 9",
       "keywords": [
-        "atlantic",
-        "pacific",
-        "back",
-        "despite",
-        "early",
-        "edged",
-        "firmer",
-        "late"
+        "feb"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 232,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__s02_panamax",
-      "doc_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry",
-      "parent_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__root",
-      "title": "Panamax",
-      "section_path": [
-        "Panamax"
-      ],
-      "section_path_text": "Panamax",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The week was marked by a widening divergence between the Atlantic and Pacific basins. In the Atlantic, mounting prompt tonnage and limited fresh cargo enquiry weighed heavily on sentiment.",
-      "keywords": [
-        "australia",
-        "atlantic",
-        "pacific",
-        "cargo",
-        "prompt",
-        "active",
-        "aggressively",
-        "along"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 165,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__s03_ultramax_supramax",
-      "doc_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry",
-      "parent_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__root",
-      "title": "Ultramax/Supramax",
-      "section_path": [
-        "Ultramax/Supramax"
-      ],
-      "section_path_text": "Ultramax/Supramax",
-      "level": 1,
-      "ordinal": 3,
-      "summary": "The market showed consistent improvement throughout the week, supported by strengthening demand across both the Atlantic and Pacific basins. The US Gulf regained momentum following earlier positional pressure, aided by fresh cargo enquiry, with a 63,000-dwt fixed for a trip via the US Gulf to Spain at $28,000.",
-      "keywords": [
-        "australia",
-        "atlantic",
-        "pacific",
-        "europe",
-        "india",
-        "us_gulf",
-        "coal",
-        "dwt"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 274,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__s04_handysize",
-      "doc_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry",
-      "parent_id": "baltic_dry_2026-02-27_2026_02_27_bulk_report_week_9_dry__root",
-      "title": "Handysize",
-      "section_path": [
-        "Handysize"
-      ],
-      "section_path_text": "Handysize",
-      "level": 1,
-      "ordinal": 4,
-      "summary": "The week concluded on a positive note, with sentiment improving across both the Atlantic and Pacific basins. The US Gulf displayed firm fundamentals, as limited prompt vessel availability encouraged charterers to increase their bids, highlighted by a 40,000-dwt reportedly fixed from Savannah to the Continent at $28,000.",
-      "keywords": [
-        "atlantic",
-        "pacific",
-        "west_africa",
-        "europe",
-        "india",
-        "us_gulf",
-        "grain",
-        "dwt"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 256,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

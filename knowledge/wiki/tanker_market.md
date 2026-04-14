@@ -7,9 +7,9 @@ categories:
 - tanker_charter
 - tankers
 - vessel_valuations
-document_count: 130
+document_count: 132
 evidence_count: 250
-generated_at: '2026-04-14T08:20:09Z'
+generated_at: '2026-04-14T09:09:32Z'
 latest_evidence_date: '2026-04-10'
 page_type: topic_wiki
 related_topics:
@@ -25,7 +25,7 @@ topic_id: tanker_market
 ---
 
 ## Summary
-Crude and product tanker conditions across benchmark routes, supply-demand balances, and macro oil-market drivers that move tanker freight. The current wiki page is grounded in 250 cited sections from 130 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being crude, products, tanker, china, crude_oil. Primary coverage comes from categories such as demolition, insights, shipbuilding, tanker, tanker_charter, tankers, vessel_valuations.
+Crude and product tanker conditions across benchmark routes, supply-demand balances, and macro oil-market drivers that move tanker freight. The current wiki page is grounded in 250 cited sections from 132 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-10, with the strongest recurring markers being crude, products, china, tanker, crude_oil. Primary coverage comes from categories such as demolition, insights, shipbuilding, tanker, tanker_charter, tankers, vessel_valuations.
 
 ## Why It Matters
 Crude and product tanker conditions across benchmark routes, supply-demand balances, and macro oil-market drivers that move tanker freight.
@@ -43,12 +43,12 @@ Crude and product tanker conditions across benchmark routes, supply-demand balan
 ## Historical Patterns
 - Coverage span: 2026-02-27 to 2026-04-10 across 1 calendar years.
 - Most-covered years: 2026: 250
-- Recurring evidence markers: crude, products, tanker, china, crude_oil, europe
+- Recurring evidence markers: crude, products, china, tanker, crude_oil, europe
 
 ## Cross-Source View
-- Source coverage: breakwave_insights: 124, hellenic: 100, baltic: 20, breakwave: 6
-- Category coverage: insights: 124, demolition: 58, tanker: 20, shipbuilding: 18, vessel_valuations: 12, tanker_charter: 12, tankers: 6
-- Tone distribution: constructive: 125, neutral: 87, cautiously_bearish: 38
+- Source coverage: breakwave_insights: 138, hellenic: 100, baltic: 6, breakwave: 6
+- Category coverage: insights: 138, demolition: 58, shipbuilding: 18, vessel_valuations: 12, tanker_charter: 12, tanker: 6, tankers: 6
+- Tone distribution: constructive: 120, neutral: 86, cautiously_bearish: 44
 - Related topics: vlcc_and_suezmax, oil_and_opec
 
 ## Key Documents

@@ -26,63 +26,29 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 410,
+  "token_count": 14,
   "source_path": "reports/baltic/gas/2026/2026-03-27_gas-report-week-13_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__s01_lng",
+      "node_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__s01_main",
       "doc_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas",
       "parent_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__root",
-      "title": "LNG",
+      "title": "Main",
       "section_path": [
-        "LNG"
+        "Main"
       ],
-      "section_path_text": "LNG",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The LNG spot market continued to cool this week as the short-term spike in sentiment driven by tensions in the Middle East began to weaken. As the week progressed, a growing tonnage list and easing urgency from charterers pushed rates lower across both basins.",
+      "summary": "27 Mar 2026\nGas report - Week 13",
       "keywords": [
-        "lng",
-        "australia",
-        "atlantic",
-        "pacific",
-        "europe",
-        "us_gulf",
-        "japan",
-        "gas"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 241,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__s02_lpg",
-      "doc_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas",
-      "parent_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas__root",
-      "title": "LPG",
-      "section_path": [
-        "LPG"
-      ],
-      "section_path_text": "LPG",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "Disruptions in the Middle East have effectively halted AG trading, with the de facto closure of the Strait of Hormuz creating significant uncertainty across the market. In response, owners have hardened rate expectations, particularly in the USG where fixing activity has accelerated.",
-      "keywords": [
-        "lpg",
         "gas",
-        "day.",
-        "route",
-        "tce",
-        "earnings",
-        "accelerated.",
-        "activity"
+        "mar"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 163,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

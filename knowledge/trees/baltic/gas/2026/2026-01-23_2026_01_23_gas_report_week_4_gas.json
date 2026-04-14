@@ -26,63 +26,29 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 475,
+  "token_count": 14,
   "source_path": "reports/baltic/gas/2026/2026-01-23_gas-report-week-4_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__s01_lng",
+      "node_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__s01_main",
       "doc_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas",
       "parent_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__root",
-      "title": "LNG",
+      "title": "Main",
       "section_path": [
-        "LNG"
+        "Main"
       ],
-      "section_path_text": "LNG",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The LNG spot market remained under pressure this week, with rates continuing to decline across all major routes. A lengthy tonnage list and limited fresh cargo activity continued to weigh on sentiment, particularly in the Atlantic, allowing charterers to push rates lower.",
+      "summary": "23 Jan 2026\nGas report - Week 4",
       "keywords": [
-        "lng",
-        "australia",
-        "atlantic",
-        "europe",
-        "us_gulf",
-        "japan",
         "gas",
-        "day."
+        "jan"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 252,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__s02_lpg",
-      "doc_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas",
-      "parent_id": "baltic_gas_2026-01-23_2026_01_23_gas_report_week_4_gas__root",
-      "title": "LPG",
-      "section_path": [
-        "LPG"
-      ],
-      "section_path_text": "LPG",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The LPG market came under pressure this week, with sentiment softening across all major routes. While the East saw pockets of activity, pricing remained highly date-dependent and the lengthening position list begins to weigh on confidence.",
-      "keywords": [
-        "lpg",
-        "atlantic",
-        "gas",
-        "route",
-        "activity",
-        "day",
-        "earnings",
-        "saw"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 217,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

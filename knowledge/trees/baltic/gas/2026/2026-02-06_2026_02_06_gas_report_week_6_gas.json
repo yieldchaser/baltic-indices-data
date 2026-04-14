@@ -26,63 +26,29 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 429,
+  "token_count": 14,
   "source_path": "reports/baltic/gas/2026/2026-02-06_gas-report-week-6_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__s01_lng",
+      "node_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__s01_main",
       "doc_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas",
       "parent_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__root",
-      "title": "LNG",
+      "title": "Main",
       "section_path": [
-        "LNG"
+        "Main"
       ],
-      "section_path_text": "LNG",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The LNG spot market was broadly steady but subdued this week. With much of the market attending events in Doha and preparations for IE Week underway, activity was notably thin, resulting in a particularly quiet market.",
+      "summary": "06 Feb 2026\nGas report - Week 6",
       "keywords": [
-        "lng",
-        "australia",
-        "europe",
-        "us_gulf",
-        "japan",
         "gas",
-        "day",
-        "route"
+        "feb"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 195,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__s02_lpg",
-      "doc_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas",
-      "parent_id": "baltic_gas_2026-02-06_2026_02_06_gas_report_week_6_gas__root",
-      "title": "LPG",
-      "section_path": [
-        "LPG"
-      ],
-      "section_path_text": "LPG",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The LPG market surged this week, with fixing activity accelerating in the West and the East following the Atlantic's upward momentum. Strength built as the week progressed, with sentiment turning increasingly bullish as the prompt tonnage list tightened, particularly in the Middle East, while firm Atlantic fundamentals continued to provide support.",
-      "keywords": [
-        "lpg",
-        "atlantic",
-        "gas",
-        "east",
-        "day.",
-        "route",
-        "tce",
-        "earnings"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 228,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

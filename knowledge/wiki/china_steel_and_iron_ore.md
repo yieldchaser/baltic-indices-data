@@ -1,20 +1,18 @@
 ---
 categories:
-- dry
 - dry_charter
 - drybulk
 - insights
 - iron_ore
-document_count: 137
+document_count: 139
 evidence_count: 250
-generated_at: '2026-04-14T08:20:09Z'
+generated_at: '2026-04-14T09:09:32Z'
 latest_evidence_date: '2026-04-09'
 page_type: topic_wiki
 related_topics:
 - dry_bulk_market
 - capesize
 sources:
-- baltic
 - breakwave
 - breakwave_insights
 - hellenic
@@ -23,7 +21,7 @@ topic_id: china_steel_and_iron_ore
 ---
 
 ## Summary
-China-driven steel and iron ore demand, port inventories, import trends, and the dry-bulk demand implications that flow through capesize and broader freight markets. The current wiki page is grounded in 250 cited sections from 137 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-09, with the strongest recurring markers being china, steel, iron_ore, iron ore, brazil. Primary coverage comes from categories such as dry, dry_charter, drybulk, insights, iron_ore.
+China-driven steel and iron ore demand, port inventories, import trends, and the dry-bulk demand implications that flow through capesize and broader freight markets. The current wiki page is grounded in 250 cited sections from 139 documents across breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-04-09, with the strongest recurring markers being china, steel, iron_ore, iron ore, brazil. Primary coverage comes from categories such as dry_charter, drybulk, insights, iron_ore.
 
 ## Why It Matters
 China-driven steel and iron ore demand, port inventories, import trends, and the dry-bulk demand implications that flow through capesize and broader freight markets.
@@ -39,14 +37,14 @@ China-driven steel and iron ore demand, port inventories, import trends, and the
 - 2026-04-08 | hellenic iron_ore | Linked asset: 2026-04-08_mmi-daily-iron-ore-index-report-april-8-2026_img2.jpg: Source asset: reports/hellenic/iron_ore/2026/2026-04-08_mmi-daily-iron-ore-index-report-april-8-2026_img2.jpg Linked image asset: 2026-04-08_mmi-daily-iron-ore-index-report-april-8-2026_img2.jpg Image metadata: JPEG 1200x557 mode=RGB Embedded info: dpi: (96, 96) OCR text: MMi Daily Iron Ore Index Report Apr 8th, 2026 IRON ORE PORT STOCK INDEX (IOP!) Apr 8th, 2026 FOT Qingdao (inc. 13% VAT), RMB/wet tonne CFR Qingdao Equivalent (exc. [doc_id: hellenic_iron_ore_2026-04-08_2026_04_08_mmi_daily_iron_ore_index_report_april_8_2026 | section_id: hellenic_iron_ore_2026-04-08_2026_04_08_mmi_daily_iron_ore_index_report_april_8_2026__s03_linked_asset_2026_04_08_mmi_daily_iron_ore_index_report_april_8_2026_img2_jpg | pages n/a]
 
 ## Historical Patterns
-- Coverage span: 2026-02-16 to 2026-04-09 across 1 calendar years.
+- Coverage span: 2026-02-11 to 2026-04-09 across 1 calendar years.
 - Most-covered years: 2026: 250
 - Recurring evidence markers: china, steel, iron_ore, iron ore, brazil, capesize
 
 ## Cross-Source View
-- Source coverage: breakwave_insights: 114, hellenic: 114, baltic: 14, breakwave: 8
-- Category coverage: insights: 114, iron_ore: 106, dry: 14, drybulk: 8, dry_charter: 8
-- Tone distribution: constructive: 130, cautiously_bearish: 62, neutral: 58
+- Source coverage: hellenic: 123, breakwave_insights: 119, breakwave: 8
+- Category coverage: insights: 119, iron_ore: 115, drybulk: 8, dry_charter: 8
+- Tone distribution: constructive: 131, neutral: 61, cautiously_bearish: 58
 - Related topics: dry_bulk_market, capesize
 
 ## Key Documents

@@ -26,63 +26,29 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 412,
+  "token_count": 14,
   "source_path": "reports/baltic/gas/2026/2026-03-13_gas-report-week-11_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-03-13_2026_03_13_gas_report_week_11_gas__s01_lng",
+      "node_id": "baltic_gas_2026-03-13_2026_03_13_gas_report_week_11_gas__s01_main",
       "doc_id": "baltic_gas_2026-03-13_2026_03_13_gas_report_week_11_gas",
       "parent_id": "baltic_gas_2026-03-13_2026_03_13_gas_report_week_11_gas__root",
-      "title": "LNG",
+      "title": "Main",
       "section_path": [
-        "LNG"
+        "Main"
       ],
-      "section_path_text": "LNG",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The LNG spot market cooled this week, with rates correcting across all major routes as the recent rally began to unwind. A growing tonnage list and fewer cargoes weighed on sentiment, driving a steady decline in earnings.",
+      "summary": "13 Mar 2026\nGas report - Week 11",
       "keywords": [
-        "lng",
-        "australia",
-        "atlantic",
-        "pacific",
-        "europe",
-        "us_gulf",
-        "japan",
-        "gas"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 243,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_gas_2026-03-13_2026_03_13_gas_report_week_11_gas__s02_lpg",
-      "doc_id": "baltic_gas_2026-03-13_2026_03_13_gas_report_week_11_gas",
-      "parent_id": "baltic_gas_2026-03-13_2026_03_13_gas_report_week_11_gas__root",
-      "title": "LPG",
-      "section_path": [
-        "LPG"
-      ],
-      "section_path_text": "LPG",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "After Atlantic fixtures were concluded last week at premiums to previous levels, the LPG market briefly paused before activity picked up again early this week. Sentiment remained somewhat mixed, with the Atlantic softening initially before stabilising as fresh enquiry returned to the market.",
-      "keywords": [
-        "lpg",
-        "atlantic",
         "gas",
-        "before",
-        "day.",
-        "route",
-        "tce",
-        "early"
+        "mar"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 163,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

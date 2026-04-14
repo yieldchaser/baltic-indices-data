@@ -1,8 +1,6 @@
 ---
 category: container
-commodities:
-- crude_oil
-- products
+commodities: []
 date: '2026-03-27'
 doc_id: baltic_container_2026-03-27_2026_03_27_container_report_week_13_container
 document_type: weekly_roundup
@@ -23,10 +21,7 @@ keywords:
 - east
 - ending
 market_tone: neutral
-regions:
-- china
-- meg
-- europe
+regions: []
 section_count: 1
 signals: {}
 source: baltic
@@ -57,6 +52,6 @@ vessel_classes:
 Container
 As we near the end of the fourth week of conflict in the Middle East Gulf, we see no immediate signs of any de-escalation to the crisis. The price of oil and therefore refined products such as bunker fuel are at unusually high levels with some bunker ports limiting supplies or who they will sell to. The main liner trades remain busy however as the Middle East Gulf crisis only affects the cost of bunkers and is not a direct waypoint for any of the world's main liner trade lanes.
 
-## Container
-As we near the end of the fourth week of conflict in the Middle East Gulf, we see no immediate signs of any de-escalation to the crisis. The price of oil and therefore refined products such as bunker fuel are at unusually high levels with some bunker ports limiting supplies or who they will sell to. The main liner trades remain busy however as the Middle East Gulf crisis only affects the cost of bunkers and is not a direct waypoint for any of the world's main liner trade lanes. However, carriers are now adding in a bunker surcharge, to help take the burden of the increased fuel costs into account.
-FBX01 (China/East Asia - USA West Coast) has increased week on week, ending the week at $2,192, $144 higher than last Friday. FBX03 (China/East Asia - USA East Coast) is up by $20 from last week, finishing the week at $3,206. FBX11 (China/East Asia - North Europe) increased by $158 from last Friday, ending the week at $2,902. FBX13 (China/East Asia - Mediterranean) decreased $331 since same time last week, ending the week at $3,910, but still up $193 since that start of the month.
+## Main
+27 Mar 2026
+Container Report - Week 13

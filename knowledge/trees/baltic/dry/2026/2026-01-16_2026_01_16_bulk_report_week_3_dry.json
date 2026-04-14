@@ -26,119 +26,28 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 926,
+  "token_count": 14,
   "source_path": "reports/baltic/dry/2026/2026-01-16_bulk-report-week-3_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__s01_capesize",
+      "node_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__s01_main",
       "doc_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry",
       "parent_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__root",
-      "title": "Capesize",
+      "title": "Main",
       "section_path": [
-        "Capesize"
+        "Main"
       ],
-      "section_path_text": "Capesize",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The market endured another challenging week, with sentiment steadily weakening across most routes as rates continued to slide. In the Pacific, despite consistent miner participation and generally healthy operator activity, this proved insufficient to counter growing pressure from available tonnage.",
+      "summary": "16 Jan 2026\nBulk report - Week 3",
       "keywords": [
-        "china",
-        "brazil",
-        "atlantic",
-        "pacific",
-        "west_africa",
-        "end",
-        "low",
-        "sentiment"
+        "jan"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 269,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__s02_panamax",
-      "doc_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry",
-      "parent_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__root",
-      "title": "Panamax",
-      "section_path": [
-        "Panamax"
-      ],
-      "section_path_text": "Panamax",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The week began with a cautious tone, as discounted mineral transatlantic business contrasted with more resilient grain trades, while fronthaul provided steady support. Tonnage supply across the Continent remained heavy, limiting upside despite reasonable enquiry.",
-      "keywords": [
-        "atlantic",
-        "pacific",
-        "europe",
-        "grain",
-        "activity",
-        "firmer",
-        "fronthaul",
-        "provided"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 155,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__s03_ultramax_supramax",
-      "doc_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry",
-      "parent_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__root",
-      "title": "Ultramax/Supramax",
-      "section_path": [
-        "Ultramax/Supramax"
-      ],
-      "section_path_text": "Ultramax/Supramax",
-      "level": 1,
-      "ordinal": 3,
-      "summary": "A rather positional week overall for the sector. The Atlantic was a bit more buoyant certainly from the US Gulf, with more fresh enquiry and tight availability becoming tighter.",
-      "keywords": [
-        "china",
-        "atlantic",
-        "europe",
-        "india",
-        "us_gulf",
-        "dwt",
-        "fixing",
-        "low"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 207,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__s04_handysize",
-      "doc_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry",
-      "parent_id": "baltic_dry_2026-01-16_2026_01_16_bulk_report_week_3_dry__root",
-      "title": "Handysize",
-      "section_path": [
-        "Handysize"
-      ],
-      "section_path_text": "Handysize",
-      "level": 1,
-      "ordinal": 4,
-      "summary": "The Handysize market endured a persistently subdued week, with overall fundamentals remaining weak as tonnage supply continued to outweigh demand in both basins. In the Continent and Mediterranean, activity was largely positional, with limited fresh inquiries and rates holding at or slightly below recent levels.",
-      "keywords": [
-        "handysize",
-        "atlantic",
-        "west_africa",
-        "europe",
-        "india",
-        "us_gulf",
-        "was",
-        "dwt"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 277,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

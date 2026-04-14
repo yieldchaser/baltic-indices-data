@@ -26,119 +26,28 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 904,
+  "token_count": 14,
   "source_path": "reports/baltic/dry/2026/2026-01-30_bulk-report-week-5_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__s01_capesize",
+      "node_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__s01_main",
       "doc_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry",
       "parent_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__root",
-      "title": "Capesize",
+      "title": "Main",
       "section_path": [
-        "Capesize"
+        "Main"
       ],
-      "section_path_text": "Capesize",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The market delivered a volatile but constructive week overall, underpinned by a strong early rally and broadly supportive sentiment despite some mid-week consolidation. The Pacific led the initial charge, with C5 rates rising sharply through Tuesday as sustained miner activity and tightening tonnage pushed fixtures above $9.00.",
+      "summary": "30 Jan 2026\nBulk report - Week 5",
       "keywords": [
-        "china",
-        "brazil",
-        "atlantic",
-        "pacific",
-        "west_africa",
-        "activity",
-        "before",
-        "but"
+        "jan"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 216,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__s02_panamax",
-      "doc_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry",
-      "parent_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__root",
-      "title": "Panamax",
-      "section_path": [
-        "Panamax"
-      ],
-      "section_path_text": "Panamax",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The Panamax market started the week on a calm and balanced footing across both basins, with rates largely steady and sentiment cautious. In the Atlantic, grain continued to outperform minerals, while earlier tightness eased into a more patient environment, despite weather-related delays creating short-term spot demand.",
-      "keywords": [
-        "panamax",
-        "atlantic",
-        "pacific",
-        "grain",
-        "mineral",
-        "p5tc",
-        "sentiment",
-        "steady"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 157,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__s03_ultramax_supramax",
-      "doc_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry",
-      "parent_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__root",
-      "title": "Ultramax/Supramax",
-      "section_path": [
-        "Ultramax/Supramax"
-      ],
-      "section_path_text": "Ultramax/Supramax",
-      "level": 1,
-      "ordinal": 3,
-      "summary": "Overall, a positive week for the sector, whilst it remained a rather positional market, most areas saw increased demand and strong levels. In the Atlantic, drawing of the demand seen from EC South America on the larger sizes, Ultramax did gain some traction and 63,000s seeing in the upper $15,000s plus $500,000 ballast bonus for fronthaul business.",
-      "keywords": [
-        "china",
-        "atlantic",
-        "meg",
-        "west_africa",
-        "europe",
-        "india",
-        "japan",
-        "delivery"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 245,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__s04_handysize",
-      "doc_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry",
-      "parent_id": "baltic_dry_2026-01-30_2026_01_30_bulk_report_week_5_dry__root",
-      "title": "Handysize",
-      "section_path": [
-        "Handysize"
-      ],
-      "section_path_text": "Handysize",
-      "level": 1,
-      "ordinal": 4,
-      "summary": "The Handysize market strengthened steadily over the week, with sentiment improving across both the Atlantic and Asian basins. In the Atlantic, the South Atlantic and US Gulf led the momentum, supported by rising cargo demand and tightening tonnage.",
-      "keywords": [
-        "capesize",
-        "handysize",
-        "australia",
-        "atlantic",
-        "europe",
-        "us_gulf",
-        "singapore",
-        "grain"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 268,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

@@ -26,63 +26,29 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 427,
+  "token_count": 14,
   "source_path": "reports/baltic/gas/2026/2026-02-13_gas-report-week-7_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-02-13_2026_02_13_gas_report_week_7_gas__s01_lng",
+      "node_id": "baltic_gas_2026-02-13_2026_02_13_gas_report_week_7_gas__s01_main",
       "doc_id": "baltic_gas_2026-02-13_2026_02_13_gas_report_week_7_gas",
       "parent_id": "baltic_gas_2026-02-13_2026_02_13_gas_report_week_7_gas__root",
-      "title": "LNG",
+      "title": "Main",
       "section_path": [
-        "LNG"
+        "Main"
       ],
-      "section_path_text": "LNG",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The LNG spot market strengthened this week, driven by a sharp rebound in the Atlantic while the Pacific remained comparatively stable. Improved cargo flow in the West and a tightening tonnage list shifted momentum.",
+      "summary": "13 Feb 2026\nGas report - Week 7",
       "keywords": [
-        "lng",
-        "australia",
-        "atlantic",
-        "pacific",
-        "europe",
-        "us_gulf",
-        "japan",
-        "gas"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 232,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_gas_2026-02-13_2026_02_13_gas_report_week_7_gas__s02_lpg",
-      "doc_id": "baltic_gas_2026-02-13_2026_02_13_gas_report_week_7_gas",
-      "parent_id": "baltic_gas_2026-02-13_2026_02_13_gas_report_week_7_gas__root",
-      "title": "LPG",
-      "section_path": [
-        "LPG"
-      ],
-      "section_path_text": "LPG",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The LPG market lost momentum this week, with activity slowing as IE Week in London took centre stage. With many participants away from their desks, enquiry thinned and fixing levels came under modest pressure across the main routes.",
-      "keywords": [
-        "lpg",
         "gas",
-        "route",
-        "tce",
-        "day.",
-        "earnings",
-        "enquiry",
-        "fell"
+        "feb"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 189,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }

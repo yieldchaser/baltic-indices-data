@@ -26,119 +26,28 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1292,
+  "token_count": 15,
   "source_path": "reports/baltic/tanker/2026/2026-03-20_tanker-report-week-12_tanker.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__s01_clean",
+      "node_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__s01_main",
       "doc_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker",
       "parent_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__root",
-      "title": "Clean",
+      "title": "Main",
       "section_path": [
-        "Clean"
+        "Main"
       ],
-      "section_path_text": "Clean",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "LR2\nMEG LR2 freight eastward climbed modestly this week. The TC1 75kt MEG/Japan index went from WS353 to WS376.",
+      "summary": "20 Mar 2026\nTanker report - Week 12",
       "keywords": [
-        "handysize",
-        "atlantic",
-        "meg",
-        "west_africa",
-        "europe",
-        "us_gulf",
-        "japan",
-        "tce"
+        "mar"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 500,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__s02_vlcc",
-      "doc_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker",
-      "parent_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__root",
-      "title": "VLCC",
-      "section_path": [
-        "VLCC"
-      ],
-      "section_path_text": "VLCC",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The continuing situation in the Middle East has meant challenges for the Baltic panellists. The extreme risk to shipping via the Strait of Hormuz still exists, however, our panellists remain able to price Middle East loading for the Crude Oil shipping market.",
-      "keywords": [
-        "vlcc",
-        "china",
-        "atlantic",
-        "meg",
-        "west_africa",
-        "us_gulf",
-        "crude_oil",
-        "east"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 207,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__s03_suezmax",
-      "doc_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker",
-      "parent_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__root",
-      "title": "Suezmax",
-      "section_path": [
-        "Suezmax"
-      ],
-      "section_path_text": "Suezmax",
-      "level": 1,
-      "ordinal": 3,
-      "summary": "In the Suezmax sector, the rate for the 130,000mt Nigeria/UK Continent voyage (TD20) trip dipped from WS258.61 to WS256.67 which translates into a daily round-trip TCE of $118,650. The TD27 route (Guyana to UK Continent basis 130,000mt) eased from the WS259 level to WS256 giving a daily round trip TCE of about $120,500.",
-      "keywords": [
-        "suezmax",
-        "meg",
-        "europe",
-        "route",
-        "daily",
-        "tce",
-        "continent",
-        "east"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 204,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__s04_aframax",
-      "doc_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker",
-      "parent_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker__root",
-      "title": "Aframax",
-      "section_path": [
-        "Aframax"
-      ],
-      "section_path_text": "Aframax",
-      "level": 1,
-      "ordinal": 4,
-      "summary": "In the North Sea, the rate for 80,000mt Cross-UK Continent route (TD7) moved up from WS225 to WS234, giving a daily round-trip TCE of about $127,300 basis Hound Point to Wilhelmshaven. In the Mediterranean, the rate for 80,000mt Cross-Mediterranean (TD19) also moved up, from WS335 to WS361 (basis Ceyhan to Lavera, that shows a daily round trip TCE of just above $138,400).",
-      "keywords": [
-        "china",
-        "atlantic",
-        "pacific",
-        "europe",
-        "us_gulf",
-        "crude_oil",
-        "tce",
-        "daily"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 368,
+      "token_count": 13,
       "section_type": null,
       "children": []
     }

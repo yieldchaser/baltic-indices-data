@@ -26,63 +26,29 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 486,
+  "token_count": 14,
   "source_path": "reports/baltic/gas/2026/2026-02-27_gas-report-week-9_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__s01_lng",
+      "node_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__s01_main",
       "doc_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas",
       "parent_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__root",
-      "title": "LNG",
+      "title": "Main",
       "section_path": [
-        "LNG"
+        "Main"
       ],
-      "section_path_text": "LNG",
+      "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The LNG market made gains this week, driven primarily by strong activity in the Atlantic basin. An inherently tight position list in the West, combined with steady enquiry, kept upward pressure on rates, while the Pacific held firm around the high $20,000s mark.",
+      "summary": "27 Feb 2026\nGas report - Week 9",
       "keywords": [
-        "lng",
-        "australia",
-        "atlantic",
-        "pacific",
-        "europe",
-        "us_gulf",
-        "japan",
-        "gas"
-      ],
-      "page_start": null,
-      "page_end": null,
-      "token_count": 225,
-      "section_type": null,
-      "children": []
-    },
-    {
-      "node_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__s02_lpg",
-      "doc_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas",
-      "parent_id": "baltic_gas_2026-02-27_2026_02_27_gas_report_week_9_gas__root",
-      "title": "LPG",
-      "section_path": [
-        "LPG"
-      ],
-      "section_path_text": "LPG",
-      "level": 1,
-      "ordinal": 2,
-      "summary": "The LPG market came under pressure this week, with disruptions at Ras Tanura terminal weighing heavily on sentiment in the East. The West remained comparatively strong, as fixing activity resumed after Lunar New Year.",
-      "keywords": [
-        "lpg",
-        "atlantic",
         "gas",
-        "day.",
-        "ras",
-        "route",
-        "sentiment",
-        "tce"
+        "feb"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 255,
+      "token_count": 12,
       "section_type": null,
       "children": []
     }
