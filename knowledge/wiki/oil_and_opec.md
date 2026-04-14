@@ -6,7 +6,7 @@ categories:
 - vessel_valuations
 document_count: 167
 evidence_count: 250
-generated_at: '2026-04-13T16:45:25Z'
+generated_at: '2026-04-14T08:20:09Z'
 latest_evidence_date: '2026-04-10'
 page_type: topic_wiki
 related_topics:
@@ -45,7 +45,7 @@ Oil demand, OPEC and non-OPEC supply, floating storage, and inventory conditions
 ## Cross-Source View
 - Source coverage: breakwave_insights: 194, baltic: 33, breakwave: 13, hellenic: 10
 - Category coverage: insights: 194, tanker: 33, tankers: 13, vessel_valuations: 10
-- Tone distribution: constructive: 147, neutral: 56, cautiously_bearish: 47
+- Tone distribution: constructive: 147, neutral: 55, cautiously_bearish: 45, bullish_momentum: 2, cautiously_optimistic: 1
 - Related topics: tanker_market, vlcc_and_suezmax
 
 ## Key Documents

@@ -6,7 +6,7 @@ categories:
 - vessel_valuations
 document_count: 155
 evidence_count: 250
-generated_at: '2026-04-13T16:45:25Z'
+generated_at: '2026-04-14T08:20:09Z'
 latest_evidence_date: '2026-04-10'
 page_type: topic_wiki
 related_topics:
@@ -45,7 +45,7 @@ Benchmark crude tanker classes and routes, with emphasis on MEG-Asia and West Af
 ## Cross-Source View
 - Source coverage: breakwave_insights: 176, baltic: 48, breakwave: 14, hellenic: 12
 - Category coverage: insights: 176, tanker: 48, tankers: 14, vessel_valuations: 12
-- Tone distribution: constructive: 144, cautiously_bearish: 54, neutral: 52
+- Tone distribution: constructive: 144, cautiously_bearish: 52, neutral: 50, cautiously_optimistic: 2, bullish_momentum: 2
 - Related topics: tanker_market, oil_and_opec
 
 ## Key Documents
