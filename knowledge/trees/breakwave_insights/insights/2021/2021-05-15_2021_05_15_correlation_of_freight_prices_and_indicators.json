@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__root",
   "doc_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators",
   "parent_id": null,
-  "title": "Correlation Of Freight Prices And Indicators",
+  "title": "Correlation of freight prices and indicators",
   "section_path": [
-    "Correlation Of Freight Prices And Indicators"
+    "Correlation of freight prices and indicators"
   ],
-  "section_path_text": "Correlation Of Freight Prices And Indicators",
+  "section_path_text": "Correlation of freight prices and indicators",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nby Niclas Priess*\nThe article was originally posted as part of Oceanbolt's Python SDK Learning Series, but given the relevance for the Breakwave Dry Bulk Shipping ETF, this is a repost to a relevant audience. In recent weeks dry bulk rates have rallied and attracted the World's attention. Most of the articles written on this topic explore the underlying causes for the rally.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1010,
+  "token_count": 2654,
   "source_path": "reports/breakwave/2021/2021-05-15_correlation-of-freight-prices-and-indicators.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2021/5/15/correlation-of-freight-prices-and-indicators",
   "children": [
@@ -54,8 +54,148 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1008,
+      "token_count": 1202,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__s02_linked_asset_2021_05_15_correlation_of_freight_prices_and_indicators_img_a1_5cb84c7b86ea_jpg",
+      "doc_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators",
+      "parent_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__root",
+      "title": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a1_5cb84c7b86ea.jpg",
+      "section_path": [
+        "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a1_5cb84c7b86ea.jpg"
+      ],
+      "section_path_text": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a1_5cb84c7b86ea.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-05-15_correlation-of-freight-prices-and-indicators_img_a1_5cb84c7b86ea.jpg\n\nLinked image asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a1_5cb84c7b86ea.jpg\n\nImage metadata: JPEG 987x1250 mode=RGB\n\nEmbedded info:\ndpi: (72, 72)\n\nOCR text:\nBDRY = yf.Ticker(\"BDRY\")\nhist = BDRY.history (period=\"max\")\nLOLOL Cnnagey-slLonnagecezonencelteni ger\nStart. date=date(70le7 os, 22),\nend wdate--dave(2U2Z1, 5, 12),\n)\nUnemployed Eolinage =) eOinages Zone rclivene\n.get (\nWadenesteatus-| ballast |r,\nport status--|\"at sea\"],\nStart.",
+      "keywords": [
+        "date",
+        "asset",
+        "bdry",
+        "end",
+        "hist",
+        "image",
+        "le7",
+        "start."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 398,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__s03_linked_asset_2021_05_15_correlation_of_freight_prices_and_indicators_img_a2_ed56fdf8e4ca_png",
+      "doc_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators",
+      "parent_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__root",
+      "title": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a2_ed56fdf8e4ca.png",
+      "section_path": [
+        "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a2_ed56fdf8e4ca.png"
+      ],
+      "section_path_text": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a2_ed56fdf8e4ca.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-05-15_correlation-of-freight-prices-and-indicators_img_a2_ed56fdf8e4ca.png\n\nLinked image asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a2_ed56fdf8e4ca.png\n\nImage metadata: PNG 1085x521 mode=RGB\n\nOCR text:\nFleet Utilization versus BDRY Price Development\n0.83\n235\n0.82\nS\n20 a]\n| | s\ne i | 0.815\n8 as | | F\nU ira\n> x\nao S\n) oa\n0.80\no | a\n10 || S\n]\nt 0.79\n5 h\n2018-03-22 2018-10-24 2019-06-03 2020-01-06 2020-08-10 2021-03-16\nDate",
+      "keywords": [
+        "asset",
+        "image",
+        "bdry",
+        "correlation-of-freight-prices-and-indicators_img_a2_ed56fdf8e4ca.png",
+        "date",
+        "development",
+        "fleet",
+        "ira"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__s04_linked_asset_2021_05_15_correlation_of_freight_prices_and_indicators_img_a3_de2e4eb5a4bc_jpg",
+      "doc_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators",
+      "parent_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__root",
+      "title": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a3_de2e4eb5a4bc.jpg",
+      "section_path": [
+        "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a3_de2e4eb5a4bc.jpg"
+      ],
+      "section_path_text": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a3_de2e4eb5a4bc.jpg",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-05-15_correlation-of-freight-prices-and-indicators_img_a3_de2e4eb5a4bc.jpg\n\nLinked image asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a3_de2e4eb5a4bc.jpg\n\nImage metadata: JPEG 1125x338 mode=RGB\n\nEmbedded info:\ndpi: (72, 72)\n\nOCR text:\nry, Pp stats.pearsonr(merged['Close'], m\nerged['vessel dwt'])",
+      "keywords": [
+        "asset",
+        "image",
+        "close",
+        "correlation-of-freight-prices-and-indicators_img_a3_de2e4eb5a4bc.jpg",
+        "dpi",
+        "dwt",
+        "embedded",
+        "erged"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 129,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__s05_linked_asset_2021_05_15_correlation_of_freight_prices_and_indicators_img_a4_423e54b1e98b_png",
+      "doc_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators",
+      "parent_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__root",
+      "title": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a4_423e54b1e98b.png",
+      "section_path": [
+        "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a4_423e54b1e98b.png"
+      ],
+      "section_path_text": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a4_423e54b1e98b.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-05-15_correlation-of-freight-prices-and-indicators_img_a4_423e54b1e98b.png\n\nLinked image asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a4_423e54b1e98b.png\n\nImage metadata: PNG 1026x280 mode=L\n\nOCR text:\nis BDRY_price fleet_utilization fleet_speed port_calls volume_exported pct_dwt_congested\nBDRY_price 1.000000 0.289481 0.498862 0.360032 0.238809 -0.557641\nfleet_utilization 0.289481 1.000000 0.078908 0.261871 0.258921 0.109017\nfleet_speed 0.498862 0.078908 1.000000 0.426819 0.272516 -0.262599\nport_calls 0.360032 0.261871 0.426819 1.000000 0.296250 -0.217297\nvolume_exported 0.238809 0.258921 0.272516 0.296250 1.000000 -0.199575\npct_dwt_congested -0.557641 0.109017 -0.262599 -0.217297 -0.199575 1.000000",
+      "keywords": [
+        "asset",
+        "bdry_price",
+        "fleet_speed",
+        "fleet_utilization",
+        "image",
+        "pct_dwt_congested",
+        "port_calls",
+        "volume_exported"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 322,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__s06_linked_asset_2021_05_15_correlation_of_freight_prices_and_indicators_img_a5_557410094024_png",
+      "doc_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators",
+      "parent_id": "breakwave_insights_insights_2021-05-15_2021_05_15_correlation_of_freight_prices_and_indicators__root",
+      "title": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a5_557410094024.png",
+      "section_path": [
+        "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a5_557410094024.png"
+      ],
+      "section_path_text": "Linked asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a5_557410094024.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-05-15_correlation-of-freight-prices-and-indicators_img_a5_557410094024.png\n\nLinked image asset: 2021-05-15_correlation-of-freight-prices-and-indicators_img_a5_557410094024.png\n\nImage metadata: PNG 734x524 mode=RGB\n\nOCR text:\nCorrelation Heatmap for Oceanbolt Freight Indicators 10\nBDRY price -\n- -0.8\nfleet_utilization -0.6\n-04\nfleet_speed\n0.2\nport_calls\n0.0\nvwolume_exported --9 2\npct_dwt_congested -0.4\nwv c no] \" vo ao]\nal =] wv = vu a\n6, Fe o S, 5 o\nPar - ww! e x =\n5 Ss % & v, S\no w!",
+      "keywords": [
+        "asset",
+        "image",
+        "bdry",
+        "correlation",
+        "correlation-of-freight-prices-and-indicators_img_a5_557410094024.png",
+        "fleet_speed",
+        "fleet_utilization",
+        "heatmap"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

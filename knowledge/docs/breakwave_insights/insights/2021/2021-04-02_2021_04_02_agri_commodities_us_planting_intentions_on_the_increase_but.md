@@ -26,7 +26,36 @@ keywords:
 - soybean
 - are
 - chinese
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: US soybean and corn prices have remained somewhat stagnant in recent
+    weeks compared with the steep rally in the second half of 2020. Wednesday's release
+    of estimates for corn and soybean plantings by the US Department of Agriculture
+    (USDA) changed that, as the
+  unit: usd
+  values:
+  - 2020.0
+  - 87.6
+  - 2018.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: If analysts were disappointed with the less than spectacular increase
+    in soybean acreage, the equivalent number for corn plantings failed to register
+    any meaningful increase on last year's and sent corn futures to an eight-year
+    high. Only some 300,000 acres, a
+  unit: null
+  values:
+  - 300000.0
+  - 1919.0
 regions:
 - china
 - brazil

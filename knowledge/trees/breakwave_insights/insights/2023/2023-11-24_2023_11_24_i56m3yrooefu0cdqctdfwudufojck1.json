@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
   "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
   "parent_id": null,
-  "title": "I56M3Yrooefu0Cdqctdfwudufojck1",
+  "title": "Signal Tanker Weekly Report",
   "section_path": [
-    "I56M3Yrooefu0Cdqctdfwudufojck1"
+    "Signal Tanker Weekly Report"
   ],
-  "section_path_text": "I56M3Yrooefu0Cdqctdfwudufojck1",
+  "section_path_text": "Signal Tanker Weekly Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Chart of the Week: Saudi Arabian crude oil flows\nDaily 25d moving average at a higher volume pace with VLCC tankers amid production cuts\nIn the last week of November, the crude oil freight market showed continued weakness in sentiment, although earlier expectations pointed to a recovery in the very large crude carrier (VLCC) segment. At present, the market appears to be struggling to find a balance between the availability of ships and the still erratic growth in demand. With the ongoing winter season in December, there is optimism that momentum will pick up and concerns about tight supply have gradually eased.",
@@ -26,12 +26,39 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1139,
+  "token_count": 7239,
   "source_path": "reports/breakwave/2023/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/11/24/i56m3yrooefu0cdqctdfwudufojck1",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s01_chart_of_the_week_saudi_arabian_crude_oil_flows",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: Homepage+Banner+1.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbanner2b1_5d7211685255.png\nImage reference: assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65.png",
+      "keywords": [
+        "image",
+        "reference",
+        "assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbanner2b1_5d7211685255.png",
+        "assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65.png",
+        "banner",
+        "homepage",
+        "png"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 99,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s02_chart_of_the_week_saudi_arabian_crude_oil_flows",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "Chart of the Week: Saudi Arabian crude oil flows",
@@ -40,8 +67,8 @@
       ],
       "section_path_text": "Chart of the Week: Saudi Arabian crude oil flows",
       "level": 1,
-      "ordinal": 1,
-      "summary": "Daily 25d moving average at a higher volume pace with VLCC tankers amid production cuts\nIn the last week of November, the crude oil freight market showed continued weakness in sentiment, although earlier expectations pointed to a recovery in the very large crude carrier (VLCC) segment. At present, the market appears to be struggling to find a balance between the availability of ships and the still erratic growth in demand.",
+      "ordinal": 2,
+      "summary": "Daily 25d moving average at a higher volume pace with VLCC tankers amid production cuts\nImage reference: unnamed - 2023-11-24T140356.523.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140356523_13ff6a39db76.png\nIn the last week of November, the crude oil freight market showed continued weakness in sentiment, although earlier expectations pointed to a recovery in the very large crude carrier (VLCC) segment. At present, the market appears to be struggling to find a balance between the availability of ships and the still erratic growth in demand.",
       "keywords": [
         "vlcc",
         "crude_oil",
@@ -54,12 +81,12 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 222,
+      "token_count": 292,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s02_section_1_freight",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s03_section_1_freight",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "SECTION 1/ FREIGHT",
@@ -68,8 +95,8 @@
       ],
       "section_path_text": "SECTION 1/ FREIGHT",
       "level": 1,
-      "ordinal": 2,
-      "summary": "Market Rates (WS)\n‘Dirty' WS - Weaker VLCC - Suezmax - Aframax\nCrude oil freight rates maintained the decline of previous weeks, while weak signs for a brief recovery in the VLCC segment envisaged last week have not been confirmed at the end of the month. VLCC MEG-China freight rates dropped to 65 WS, down 10% from the previous week, but 25% higher than a similar week a year ago.",
+      "ordinal": 3,
+      "summary": "Market Rates (WS)\n‘Dirty' WS - Weaker VLCC - Suezmax - Aframax\nImage reference: unnamed - 2023-11-24T140506.257.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140506257_497fdcd1e82c.png\nCrude oil freight rates maintained the decline of previous weeks, while weak signs for a brief recovery in the VLCC segment envisaged last week have not been confirmed at the end of the month. VLCC MEG-China freight rates dropped to 65 WS, down 10% from the previous week, but 25% higher than a similar week a year ago.",
       "keywords": [
         "vlcc",
         "suezmax",
@@ -82,12 +109,12 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 208,
+      "token_count": 278,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s03_product_ws_lr2_steady",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s04_product_ws_lr2_steady",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "‘Product' WS LR2 Steady",
@@ -96,26 +123,26 @@
       ],
       "section_path_text": "‘Product' WS LR2 Steady",
       "level": 1,
-      "ordinal": 3,
-      "summary": "LR2 AG freight rates continued a similar dynamic to the previous week and stood at around 128 WS, which is 27% weaker than a month ago.",
+      "ordinal": 4,
+      "summary": "Image reference: unnamed - 2023-11-24T140616.153.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140616153_ef39184b3e53.png\nLR2 AG freight rates continued a similar dynamic to the previous week and stood at around 128 WS, which is 27% weaker than a month ago.",
       "keywords": [
         "ago.",
         "around",
+        "assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140616153_ef39184b3e53.png",
         "continued",
         "dynamic",
+        "image",
         "lr2",
-        "month",
-        "previous",
-        "similar"
+        "month"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 32,
+      "token_count": 101,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s04_panamax_steady",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s05_panamax_steady",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "Panamax Steady",
@@ -124,26 +151,26 @@
       ],
       "section_path_text": "Panamax Steady",
       "level": 1,
-      "ordinal": 4,
-      "summary": "Panamax Carib-to-USG rates held a steady sentiment for two consecutive weeks at around 230WS, 15% higher than a month ago.",
+      "ordinal": 5,
+      "summary": "Image reference: unnamed - 2023-11-24T140704.316.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140704316_a41e269820c7.png\nPanamax Carib-to-USG rates held a steady sentiment for two consecutive weeks at around 230WS, 15% higher than a month ago.",
       "keywords": [
         "panamax",
         "ago.",
         "around",
+        "assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140704316_a41e269820c7.png",
         "carib-to-usg",
         "consecutive",
         "held",
-        "higher",
-        "month"
+        "higher"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 31,
+      "token_count": 100,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s05_clean_mr_mixed",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s06_clean_mr_mixed",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "‘Clean' MR Mixed",
@@ -152,26 +179,26 @@
       ],
       "section_path_text": "‘Clean' MR Mixed",
       "level": 1,
-      "ordinal": 5,
-      "summary": "MR1 rates for the Baltic continent begun to show a firmer momentum at levels around 190 WS, a 60% decrease compared to a similar week a year ago. MR2 rates for shipments from the continent to the U.S.",
+      "ordinal": 6,
+      "summary": "Image reference: unnamed - 2023-11-24T140807.329.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140807329_a2343e6e2f6e.png\nMR1 rates for the Baltic continent begun to show a firmer momentum at levels around 190 WS, a 60% decrease compared to a similar week a year ago. MR2 rates for shipments from the continent to the U.S.",
       "keywords": [
         "europe",
         "continent",
         "ago.",
         "annualised",
         "around",
+        "assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140807329_a2343e6e2f6e.png",
         "basis.",
-        "begun",
-        "compared"
+        "begun"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 72,
+      "token_count": 144,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s06_section_2_supply",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s07_section_2_supply",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "SECTION 2/ SUPPLY",
@@ -180,8 +207,8 @@
       ],
       "section_path_text": "SECTION 2/ SUPPLY",
       "level": 1,
-      "ordinal": 6,
-      "summary": "'Dirty' (#vessels) - Decreasing\nThe last week of November brings signs of a downward correction, however, recent activity still paints a heavy picture in the Suezmax Wafr. VLCC Ras Tanura: The number of ships fell close to the annual average of 60, which is 8 fewer than in the previous week, whereas two weeks ago activity of around 70 was indicated.",
+      "ordinal": 7,
+      "summary": "'Dirty' (#vessels) - Decreasing\nImage reference: unnamed - 2023-11-24T140853.409.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140853409_8f9efb4a26b5.png\nThe last week of November brings signs of a downward correction, however, recent activity still paints a heavy picture in the Suezmax Wafr. VLCC Ras Tanura: The number of ships fell close to the annual average of 60, which is 8 fewer than in the previous week, whereas two weeks ago activity of around 70 was indicated.",
       "keywords": [
         "vlcc",
         "suezmax",
@@ -194,12 +221,37 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 202,
+      "token_count": 275,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s08_mr1_vessels_decreasing",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s08_clean_lr2_vessels_decreasing",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "'Clean' LR2 (#vessels) - Decreasing",
+      "section_path": [
+        "'Clean' LR2 (#vessels) - Decreasing"
+      ],
+      "section_path_text": "'Clean' LR2 (#vessels) - Decreasing",
+      "level": 1,
+      "ordinal": 8,
+      "summary": "Image reference: unnamed - 2023-11-24T140947.929.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140947929_561c16851b69.png",
+      "keywords": [
+        "assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140947929_561c16851b69.png",
+        "image",
+        "reference",
+        "t140947.929.png",
+        "unnamed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 68,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s09_mr1_vessels_decreasing",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "MR1 (#vessels) - Decreasing",
@@ -208,8 +260,8 @@
       ],
       "section_path_text": "MR1 (#vessels) - Decreasing",
       "level": 1,
-      "ordinal": 8,
-      "summary": "Clean LR2 AG Jubail: The latest figure held decreasing activity of the previous week at around 13 ships after peaking at 18 two weeks ago, with the upward trend above the annual average over the last four weeks. Clean MR1 Algeria Skikda: There has been a downward trend since the end of week 34, which seems to be pulling the sentiment on the freight market upwards.",
+      "ordinal": 9,
+      "summary": "Image reference: unnamed - 2023-11-24T141052.975.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141052975_ba55e528af46.png\nClean LR2 AG Jubail: The latest figure held decreasing activity of the previous week at around 13 ships after peaking at 18 two weeks ago, with the upward trend above the annual average over the last four weeks. Clean MR1 Algeria Skikda: There has been a downward trend since the end of week 34, which seems to be pulling the sentiment on the freight market upwards.",
       "keywords": [
         "above",
         "annual",
@@ -222,12 +274,12 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 102,
+      "token_count": 171,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s10_dirty_decreasing",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s11_dirty_decreasing",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "‘Dirty' Decreasing",
@@ -236,8 +288,8 @@
       ],
       "section_path_text": "‘Dirty' Decreasing",
       "level": 1,
-      "ordinal": 10,
-      "summary": "Dirty tonne days: The last week of November brought a gradual upward trend in the VLCC tonne days growth, while uncertainty persists with significantly lower levels than four weeks ago. In the meantime, growth rates in the Suezmax segment have weakened, which is reflected in the downward trend in freight rates, and in the Aframax segment the sudden decline has not yet been reflected in market prices.",
+      "ordinal": 11,
+      "summary": "Image reference: unnamed - 2023-11-24T141126.941.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141126941_9527c9f1f44a.png\nDirty tonne days: The last week of November brought a gradual upward trend in the VLCC tonne days growth, while uncertainty persists with significantly lower levels than four weeks ago. In the meantime, growth rates in the Suezmax segment have weakened, which is reflected in the downward trend in freight rates, and in the Aframax segment the sudden decline has not yet been reflected in market prices.",
       "keywords": [
         "vlcc",
         "suezmax",
@@ -250,12 +302,12 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 80,
+      "token_count": 152,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s11_clean_mixed",
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s12_clean_mixed",
       "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
       "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
       "title": "‘Clean' Mixed",
@@ -264,8 +316,8 @@
       ],
       "section_path_text": "‘Clean' Mixed",
       "level": 1,
-      "ordinal": 11,
-      "summary": "Panamax tonne days: During the fourth week of November, there was a modest upturn, marking the first positive movement since the conclusion of week 43. The current growth rate aligns closely with the figures observed in week 29.",
+      "ordinal": 12,
+      "summary": "Image reference: unnamed - 2023-11-24T141231.411.png | assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141231411_1e64df1b3833.png\nPanamax tonne days: During the fourth week of November, there was a modest upturn, marking the first positive movement since the conclusion of week 43. The current growth rate aligns closely with the figures observed in week 29.",
       "keywords": [
         "panamax",
         "days",
@@ -274,12 +326,348 @@
         "tonne",
         "aligns",
         "appears",
-        "clean"
+        "assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141231411_1e64df1b3833.png"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 97,
+      "token_count": 168,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s13_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbanner2b1_5d7211685255_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbanner2b1_5d7211685255.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbanner2b1_5d7211685255.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbanner2b1_5d7211685255.png",
+      "level": 1,
+      "ordinal": 13,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbanner2b1_5d7211685255.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbanner2b1_5d7211685255.png\n\nImage metadata: PNG 1500x427 mode=RGBA\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nBREAKWAVE © pry BULK\nDAY 2023 <2. ee\nLIVE STREAM EVENT A T A NK E D S.",
+      "keywords": [
+        "asset",
+        "image",
+        "day",
+        "dec.",
+        "dpi",
+        "embedded",
+        "est",
+        "event"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 182,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s14_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65.png",
+      "level": 1,
+      "ordinal": 14,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65.png\n\nImage metadata: PNG 1500x153 mode=RGBA\n\nEmbedded info:\ndpi: (299.9994, 299.9994)\n\nOCR text:\nBREAKWAVE DAY AGENDA",
+      "keywords": [
+        "asset",
+        "image",
+        "agenda",
+        "day",
+        "dpi",
+        "embedded",
+        "i56m3yrooefu0cdqctdfwudufojck1_img_homepage2bbutton_1d014100cc65.png",
+        "info"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 137,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s15_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t140356523_13ff6a39db76_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140356523_13ff6a39db76.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140356523_13ff6a39db76.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140356523_13ff6a39db76.png",
+      "level": 1,
+      "ordinal": 15,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140356523_13ff6a39db76.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140356523_13ff6a39db76.png\n\nImage metadata: PNG 694x527 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\ne\nOil Flows\nCrude\nOrigin Countries Destination Countries Vessel Class\n. : Saudi Arabia All VLCC\nDaily (25d MA)\nOBM eeveeee ey .",
+      "keywords": [
+        "vlcc",
+        "crude_oil",
+        "asset",
+        "countries",
+        "image",
+        "all",
+        "arabia",
+        "bom"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 362,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s16_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t140506257_497fdcd1e82c_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140506257_497fdcd1e82c.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140506257_497fdcd1e82c.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140506257_497fdcd1e82c.png",
+      "level": 1,
+      "ordinal": 16,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140506257_497fdcd1e82c.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140506257_497fdcd1e82c.png\n\nImage metadata: PNG 940x513 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Trends, Dirty Rates\nHB VLCC MEG/China BB Suez WAfr Cont I Suez Baltic Med OB Afra Med\n450\n400\n350\n300\ner)\n=\n200\n150\n100\n50\nrn Oo &t& SF Mm YH FeF DO ft MH HeONEeelClUCOlUlUcrTlDlCUCUOMClUNLLUCNlCOlCUcrlLlCUCONCUCUMLUCUCrNlUCOWUlUlUCUCrCDlLlCUMNMULUMNLULUCUCDN\n<3 6 BF Sf. Fa zEeexee ese BKRHKeHKHKHHKH HF H H H H F FF =\nSS 5S mmnmmnmsts FS 35S 8S SF 8S 5S SF 8S SF BSF 8S BS FS SB BBS\nNAN NWN WN NN KH HHH MH MH HH HM HM MH HM HM MH HM MH MH HM MH\nwn we we CGC fFSeoeoe oe eNReeeOUUNRelCUCUNCUCUCULNORMCUCUCNCUONCULNUGCMCUCOTCTChC TCU UNrULhUCUCUCUN HEHE HREEOOUNRUlUCUNCUNCUDNDNLUDNN\nSoS oS NN NNN SC SFC SF SF fF SF fF fs fF fF fF fSF fF fF fF fF SF Sf Ss\nNS WN SN YN NNN NNN NN NNN KN KH NY KH DW",
+      "keywords": [
+        "vlcc",
+        "china",
+        "meg",
+        "west_africa",
+        "nnn",
+        "asset",
+        "image",
+        "med"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 496,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s17_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t140616153_ef39184b3e53_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140616153_ef39184b3e53.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140616153_ef39184b3e53.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140616153_ef39184b3e53.png",
+      "level": 1,
+      "ordinal": 17,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140616153_ef39184b3e53.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140616153_ef39184b3e53.png\n\nImage metadata: PNG 940x470 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Trends, Clean LR2\n300\ng 250\nc\na\na\na\n3 200\nw\n=\n150\n100\n~Y DO aA A MH YH RrRe Oo Ft MH YH Ke Oo Ft MH YH ke Oo et MH YHORNReelCUCOCUlUcrRDlUMCLUNUDS\nSSS nmomanmnnmn.r. sa S SBSBEBSEBSEBZBESEBSZSESBZEBSZEBZEBEBESBZESBS\nNNN NN NN NSN HOM OHM OMHeOUMUOMCOUOMCUOMCUOMCUCUmOMCUOMOeCUCUCOMCOCUOMOCOM Mee MMO MH\nN NY NWN CC oOo CO oN NOONOCOCNCUCUC NCU NCU NCU NCU NCU NCU NCU NNO NCUNUCULNCU NUN SN\nCo oOo Oo NN NN NSN CO Oo Oo COolmlUCOOUCOULUCOCOULCOCOUCUCOCOUCUCOCOULUCOUCOClCOULCOCTOlCOUCOTSTC CD iC DC\nN N N NNN NNN NN NNN NN NN NY NY NN",
+      "keywords": [
+        "ncu",
+        "nnn",
+        "asset",
+        "image",
+        "nsn",
+        "ooo",
+        "clean",
+        "coolmlucooucoulucocoulcocoucucocoucucocoulucoucoclcoulcoctolcoucotstc"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 429,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s18_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t140704316_a41e269820c7_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140704316_a41e269820c7.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140704316_a41e269820c7.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140704316_a41e269820c7.png",
+      "level": 1,
+      "ordinal": 18,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140704316_a41e269820c7.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140704316_a41e269820c7.png\n\nImage metadata: PNG 940x470 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Trends, Clean Panamax\n600\n500\n\"\n=\n% 400\n2\n2\n4\na\nVv\n300\n200\n~ a ci ci m wo yn o2) ci m w ~ a ca m w ~ a ci ive] wo ~ a a ~ orm\nSSSsSnnwnonnmnst:sFt 8S SSSSSSSESSSSSSES SES\nN N N N N N N N m ive] m m m ~ ~ mM mM \" m m ~m m ~ ~ m~ mm\nN N N o Oo o o Oo N N N N N N N N N N N N N N N N N NN\no o o N N N N N o Oo o o o o o o o o o Oo o o o o o oo\nN N N N N N N N N N N N N N N N N N N N NN",
+      "keywords": [
+        "panamax",
+        "asset",
+        "image",
+        "ive",
+        "clean",
+        "dpi",
+        "embedded",
+        "i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140704316_a41e269820c7.png"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 342,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s19_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t140807329_a2343e6e2f6e_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140807329_a2343e6e2f6e.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140807329_a2343e6e2f6e.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140807329_a2343e6e2f6e.png",
+      "level": 1,
+      "ordinal": 19,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140807329_a2343e6e2f6e.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140807329_a2343e6e2f6e.png\n\nImage metadata: PNG 940x470 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Trends, Clean MR\nmp2 cont/usac @ uri Baltic/UKC\n1000\n800\n2 600\n400\n200\nSSRSSSLSELASSLEARIKRKEKLERREBES ES\nSSSnmmmameeastrts SBS SSSSSBSESSSESESBESZS\nNNN WNT Onnennnennnnmnnnmnnnennen mam\nNN WN COC TOO CO oO NN NON NOCONOCONOCON ONO N ONO ON OUONOUNOUNOUNOUNO\nCoCo OoN NN NOON OO OlUCOOUCOUCOUCOUCOCOUCOOUC COU COU COU Cc OUUCOUCOUCOCOUCOCOCUCUCOCOUCOUCUCOUCD\nN NN NNNN NNN NN NN NNN NN NY NN",
+      "keywords": [
+        "cou",
+        "nnn",
+        "asset",
+        "image",
+        "ono",
+        "baltic/ukc",
+        "clean",
+        "coc"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 337,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s20_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t140853409_8f9efb4a26b5_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140853409_8f9efb4a26b5.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140853409_8f9efb4a26b5.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140853409_8f9efb4a26b5.png",
+      "level": 1,
+      "ordinal": 20,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140853409_8f9efb4a26b5.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140853409_8f9efb4a26b5.png\n\nImage metadata: PNG 940x684 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\na\n\" P\\y\n: JV\\ / \\ /\\ i\n3 co RRAS oar aY af a, VA \\ Ta hf uy AT\nSek La w*\n>\n40\n>\n= 80\nr)\n$\n= 60\n_\n& 40\n=\n7 \\IN\\ M Vy\n£ average 7 Dat Mo [\\ A WAN P\\ | i YI rT fh vat '\n= 30 MW J | /\n§ AW, WW\n20\n* 40\n$ 30\n2\n3\namar\nverage\n= 10\ni)\nLd a a a m wo Lad a «a ~m wo ~ a a m wo ~ a a ~ wo iad a a m wo nd\nSS 275,27 &w ww zezBPBPBEBEBsEBBFBFBEBFBFBBZBZBBBZS\nN N N N N N N N m ~m m ~m ™m ~m m ™m ~m m ™m ~m m m ~m m m ~m m\nNX N N o o o o o N N N N N N N N N N N N N N N N N N N\noso SF NN NOUNCUNUDUCSChC OUrUCUTUCUCcUCOmCUChOmChUCchPhrhUChPCMrUhUCPCOmrCUCMPPrCUChMCCUCUCUhCOmCUCUCcUPOmChUChCOmrCUChOmhUCMPOrCUChPCOrCUC POUCUCUCUPSTCUCTS\nN N N N N N N N N N N N N N N N N N N N N N\nWeekly Supply Trend, Deployment: spot/relet. VLCC AG_Ras Tanura - Far East, 20 days forward / Suez Wafr_Bonny - East, 28 days forward /\nAfra Med_Novorossiysk, 6 days forward / Afra Baltic_Primors",
+      "keywords": [
+        "vlcc",
+        "west_africa",
+        "days",
+        "forward",
+        "afra",
+        "asset",
+        "east",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 586,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s21_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t140947929_561c16851b69_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140947929_561c16851b69.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140947929_561c16851b69.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140947929_561c16851b69.png",
+      "level": 1,
+      "ordinal": 21,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140947929_561c16851b69.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t140947929_561c16851b69.png\n\nImage metadata: PNG 940x470 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n20\nB15\n3\ninl\nz\na 10 Average\n4\n-_\n5\n0\n\"yO ea ete MYR Det mM HR DOD tM HR DBD eM H RF DBD eM HR\n¥F 46» SFSBeSBB2B2R2 Ate tei eevwewenwennennmnnnmn nev sve\nSS SsyHnmnmnmm fF SESS SESSESESESESESESESESE SESS\nNN NN WN HKNHKeENmMHmMHmHmHmHMHmMmMnannnmnmnnnnnmmnmnam\nNN NWN SS oO oO ON NH NHEONOONCUCUNMRCUCUNMONCUCNCUCNCUCUNCUCUCUNCUNCUNCUNNMCUCUNCUNCUNCUN\na - = SS 3 = > > = = > > = 2 ~~ ~~ er - - - - ! Nn N WN NNN NN NN NNN NN KN NNN NNN\nWeekly Supply Trend, Deployment: spot/relet.",
+      "keywords": [
+        "nnn",
+        "days",
+        "forward",
+        "asset",
+        "dbd",
+        "image",
+        "sess",
+        "ag_jubail"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 422,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s22_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t141052975_ba55e528af46_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141052975_ba55e528af46.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141052975_ba55e528af46.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141052975_ba55e528af46.png",
+      "level": 1,
+      "ordinal": 22,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141052975_ba55e528af46.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141052975_ba55e528af46.png\n\nImage metadata: PNG 940x470 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n50\na\nTc\n=\nz\n; \"| I Wl {\\ Nal\n% Averebe Mi jy J ul\nz ry Ty IN Al ; im! a 30\na\n=\n20\nid a ea a m wn ~ a et m wo an a a m wo ~ a a m wo ~ a ca ~m on\nvt Tt w = = = = Ss a a a a a N N N N N m m m m m vt Tt a\nSS Ss ynmommm eas SSESBSESESESESZES SES SS SSE SESZSE\nN N N N N N N N m m m m m m m m m ~m m m m m m m m mm\nN N N i=) So oS So So N N N N N N N N N N N N N N N N N NN\nOo Oo o N N N N N Oo Oo Oo Oo So o Oo Oo o Oo Oo Oo So So Oo Oo o oo\nN N N N N N N N N N N N N N N N N N N N NN\nWeekly Supply Trend, Deployment: spot/relet.",
+      "keywords": [
+        "asset",
+        "days",
+        "forward",
+        "image",
+        "algeria_skikda",
+        "averebe",
+        "cont_amsterdam",
+        "deployment"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 426,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s23_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t141126941_9527c9f1f44a_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141126941_9527c9f1f44a.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141126941_9527c9f1f44a.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141126941_9527c9f1f44a.png",
+      "level": 1,
+      "ordinal": 23,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141126941_9527c9f1f44a.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141126941_9527c9f1f44a.png\n\nImage metadata: PNG 940x470 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\ni vicc Mi suez i Aframax\n130%\n125%\n=\n% 120%\n2\noO\nF 115%\n110%\n105%\nyy DOD et 2 MN re DOD Ft mM HO Ke DOD at OM HN eke Oo et OH YN ke Oo et MH HY FS\nSSS nnmnmnnmnm fFSSsESTBEBSEBSEESEBSESESESESESESTESEESETESES\nNNN Ne NNN NeOOMelUNMehlUCOMCUOMUOMOCOUOMOOMOCUOMOUOMCUCUOMUOMCUOOMUOHLUrOMHCUcOMOHhLUcMHMhLUrMhUc MH hUhM\nNN NY TO OO CO OO NCO NOCUONCOCUCNCUCU NCCU NCCU NCCU NCU NCU NUN NOOCONCUCUNCUCUNCUCUNCUCUCUCN ON UNLUDN\nco ooOorlUlUNRTONCCOCUNCUCUNCUCUC NDLUCOCOUCOCUCTOUhCOhCOTFOhsC-COCOOFOOhUChCOCUCOTOUChCOhCSOsé<-‘\"ANSSC-rmOhUmhchCOUCOmUChCOCOCmUhlUCchOmUCOTOhC™S\nNN N ON NN NN NNN NNN NNN NNN NY NY N",
+      "keywords": [
+        "aframax",
+        "nnn",
+        "dod",
+        "nccu",
+        "asset",
+        "image",
+        "ncu",
+        "anssc-rmohumhchcoucomuchcococmuhlucchomucotohc"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 465,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__s24_linked_asset_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed_2023_11_24t141231411_1e64df1b3833_png",
+      "doc_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1",
+      "parent_id": "breakwave_insights_insights_2023-11-24_2023_11_24_i56m3yrooefu0cdqctdfwudufojck1__root",
+      "title": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141231411_1e64df1b3833.png",
+      "section_path": [
+        "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141231411_1e64df1b3833.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141231411_1e64df1b3833.png",
+      "level": 1,
+      "ordinal": 24,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141231411_1e64df1b3833.png\n\nLinked image asset: 2023-11-24_i56m3yrooefu0cdqctdfwudufojck1_img_unnamed-2023-11-24t141231411_1e64df1b3833.png\n\nImage metadata: PNG 940x470 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMi Panamax @ meri @ mr2\n130%\n$\n3 120%\noO\n#\n[4\n= 110%\n4\nS 110%\n2\noO\nFS 100%\nx\n£\na 90%\nYY DA A MN Re DB te MY Rre ot MON Rke Dt MOY Rre Da et OM YY PhS\nSSS nmnnmnnmm SesP STE BSESBSEBSBSBSZSESZESZESZESZEBZESZESBEESZES SES\nNN NWN NN NE NHNSEOONSOOOHMHelUOUONMehlUCUmOMCUCONMCUOMCUCOMCUOMOUOMOOMOOMCOCUOMCUOMCUOMOOMOOMOOMOOmMOUM UM\nN WN WY CO fC CoO CoOOCUCOrlUUNUCUCUC hNWUlUhN CU NCU NCU NCU NANlUNNCUNNCUC NCUCUN ON NEOUNLUN UN ULULNULN UD\ncoo orcONTCUCUNTCU NCU NCU NCUCUCUCOUCUCOUCOUCUCOUCUCTOCUCUCOUCUCOUCUCOUCUCOUCCUOUCOUCUCOUCOTOUCTFOCOTSSsS-S-S-‘\"NMSss:~<\"aCOFmMmhUmL!€!LlFhCLULD! N N WN NNN NN NNN NN NN NN NN NN NY N",
+      "keywords": [
+        "panamax",
+        "ncu",
+        "asset",
+        "coo",
+        "image",
+        "nnn",
+        "rre",
+        "acofmmmhuml"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 474,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

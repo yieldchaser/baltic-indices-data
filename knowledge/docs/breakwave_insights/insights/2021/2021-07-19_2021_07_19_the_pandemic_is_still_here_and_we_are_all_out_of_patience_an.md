@@ -26,7 +26,54 @@ keywords:
 - further
 - supply
 - against
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: However, the important news of the week is reflected in the dichotomy
+    between the growing number of Covid-19 cases worldwide and further easing of restrictions.
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: On the one hand, the Delta variant is spreading across the globe and
+    vaccination levels are low. Scientists remind us that it takes both shots of a
+    vaccine to be meaningfully protected. Globally, only 13% of people are privileged
+    enough to have been vaccinated
+  unit: pct
+  values:
+  - 13.0
+  - 9.5
+  - 1.43
+  - 16.0
+  - 34.0
+  - 48.0
+  - 53.0
+- section: Main
+  section_type: null
+  source_line: On the other hand, governments in the West are now exhibiting signs
+    of Covid-weariness. The political and economic toll of movement restrictions for
+    over a year is tilting the scale towards economic re-openings, even at the risk
+    of higher mortalities and stric
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: The point is that the second half of 2021 may feature a less cautious
+    approach against the pandemic especially from developed nations. The strategy
+    shifts from ‘beating the virus' to ‘learning to live with Covid'. In terms of
+    inflation, supply pressures, furth
+  unit: null
+  values:
+  - 2021.0
 regions:
 - china
 - brazil

@@ -25,7 +25,23 @@ keywords:
 - many
 - industrial
 - recovery
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The manufacturing surveys from IHS Markit are pointing to resurgent
+    industrial production in both the North America and Europe, with readings at multi-year
+    highs. The data from China are also showing that the industrial output remains
+    strong, although at a som
+  unit: null
+  values:
+  - 9.0
 regions:
 - china
 - brazil

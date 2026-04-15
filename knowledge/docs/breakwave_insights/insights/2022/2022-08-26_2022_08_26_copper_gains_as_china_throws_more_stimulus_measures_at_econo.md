@@ -26,7 +26,47 @@ keywords:
 - power
 - after
 - are
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'The stimulus measures boosted optimism for the steel and iron ore
+    market. Futures of the steel making raw material gained as much as 1.8% in Singapore.
+    However, those gains were pared as investors assessed the strength of the demand
+    recovery in steel markets. '
+  unit: pct
+  values:
+  - 1.8
+- section: Main
+  section_type: null
+  source_line: Crude oil snapped a three-day rally as hawkish comments from Fed officials
+    cast a cloud over the economic backdrop. Nevertheless, signs of strong demand
+    are emerging. The most recent Congestion Index data from TomTom shows Asia Pacific,
+    European and North Amer
+  unit: worldscale_pct
+  values:
+  - 24.0
+  - 20.0
+  - 1.3
+- section: Main
+  section_type: null
+  source_line: European energy markets extended recent gains as the continent faces
+    severe shortages over winter. German and French power soared to fresh records
+    after EDF said that more of its reactors will take longer to come back online
+    after halts. The outages effect alm
+  unit: worldscale_pct
+  values:
+  - 14.0
+  - 10.0
+  - 21.41
+  - 5.6
+  - 9.96
 regions:
 - china
 - brazil

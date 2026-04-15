@@ -29,7 +29,71 @@ keywords:
 - crude_oil
 - steel
 - demand
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Case in point the last few years. A global pandemic unlike anything
+    the modern world has ever seen, has so far led to some unprecedented conditions
+    across the global economy, let alone the shipping sector. In tankers, the initial
+    collapse in oil demand drove o
+  unit: usd
+  values:
+  - 20.0
+- section: Main
+  section_type: null
+  source_line: Although achieving spot rates of $50,000 per day should not be dismissed,
+    the Capesize market is faced with specific obstacles that do not exist in other
+    sub-segments of dry bulk, at least to the same degree. The reliance on Chinese-consumed
+    iron ore is the mo
+  unit: usd
+  values:
+  - 50000.0
+- section: Main
+  section_type: null
+  source_line: Capesize Spot Index, 2017-Today
+  unit: null
+  values:
+  - 2017.0
+- section: Main
+  section_type: null
+  source_line: In the midst of all the above, additional unforeseen events add to
+    the uncertainty. Without trying to become experts in West African politics (for
+    us as for most, Guinea was a quiet country with lots of bauxite just a few days
+    back) the recent coup in Guinea b
+  unit: tonnage
+  values:
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: 'Brazil is also another area where recent developments are becoming
+    more concerning: Political stability is important when half of Capesize demand
+    originates from that country. The news flow has been concerning and once again
+    political predictions are a fool''s '
+  unit: null
+  values:
+  - 2000.0
+- section: Main
+  section_type: null
+  source_line: China Steel Production YoY Growth, 2015-Current
+  unit: null
+  values:
+  - 2015.0
+- section: Main
+  section_type: null
+  source_line: All of the above are red flags when it comes to Capesize demand. Such
+    an environment, especially as it relates to China, sounds at best challenging.
+    And yet, here we are with the spot index at ~$40,000 (though on the way down)
+    after reaching decade highs a few
+  unit: usd
+  values:
+  - 40000.0
 regions:
 - china
 - brazil

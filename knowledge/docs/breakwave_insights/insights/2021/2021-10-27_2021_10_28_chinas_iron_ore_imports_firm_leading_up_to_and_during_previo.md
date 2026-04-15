@@ -26,7 +26,68 @@ keywords:
 - production
 - year-on-year
 - saw
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: With the Beijing Olympics set to start next year on February 4th, it
+    is significant to examine just how China's iron ore imports fared leading up to
+    the previous Beijing Olympics held back in August 2008. While it is no secret
+    that steel production fell both l
+  unit: null
+  values:
+  - 4.0
+  - 2008.0
+  - 2008.0
+  - 2008.0
+- section: Main
+  section_type: null
+  source_line: Back in 2008, China's crude steel production peaked at 47 million tons
+    in June. Production then dropped to 44.9 million tons during July (as the Olympics
+    were approaching) and fell even further to 42.6 million tons during August (which
+    was the month of the Oly
+  unit: pct
+  values:
+  - 2008.0
+  - 47.0
+  - 44.9
+  - 42.6
+  - 39.6
+  - 4.0
+  - 5.0
+  - 7.0
+- section: Main
+  section_type: null
+  source_line: During the same period, however, China's iron ore imports remained
+    rather steady and also continued to experience strong year-on-year growth. Iron
+    ore imports in July climbed to 39.6 million tons, August saw 37.4 million tons
+    imported, and September saw 39.2 m
+  unit: pct
+  values:
+  - 39.6
+  - 37.4
+  - 39.2
+  - 16.0
+  - 2008.0
+  - 8.0
+  - 2008.0
+  - 2008.0
+- section: Main
+  section_type: null
+  source_line: While it remains to be seen how China's iron ore imports will fare
+    both leading up to and during the next Beijing Olympics (which will start on February
+    4th and will last through February 20th), we continue to stress that iron ore
+    imports can remain steady and
+  unit: null
+  values:
+  - 4.0
+  - 20.0
 regions:
 - china
 - brazil

@@ -25,7 +25,100 @@ keywords:
 - demand
 - export
 - beijing
+linked_assets_discovered: 5
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 5
 market_tone: constructive
+numeric_observation_count: 8
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China issued the first batch of 2023 crude import quotas to the independent
+    refiners in early October last year, nearly three months earlier than in previous
+    years, to encourage refiners to boost production.
+  unit: null
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: Although the combined first two batches of 2023 import quotas, with
+    the second batch out last week, declined by nearly 20% from the first two batches
+    issued in 2022, the third batch will likely come earlier this year, and qualified
+    refiners may still get quota
+  unit: pct
+  values:
+  - 2023.0
+  - 20.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: This trend does not go against the government's plans to eliminate
+    excessive, inefficient processing capacity in favour of integrated and more technologically
+    advanced complexes, as refiners who had their refining capacities removed in Q4
+    2022 as part of Shand
+  unit: null
+  values:
+  - 2022.0
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: The early release of crude import quotas has seen Iranian crude arrivals
+    surging to a new record in December, with the lion's share finding home in Shandong
+    province, as local independent refiners have largely turned to discounted crude
+    grades since 2H 2022 am
+  unit: null
+  values:
+  - 2.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: 'Last week, Beijing also issued the first batch of 2023 product export
+    quotas to the state-run refiners and independent oil giant Rongsheng, up nearly
+    50% from the same batch for 2022, as domestic fuel demand is still weak after
+    China removed most of its Covid '
+  unit: pct
+  values:
+  - 2023.0
+  - 50.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: The recently started independent Shenghong's greenfield refining complex
+    didn't win any export quota in this round, while State-run PetroChina is unlikely
+    getting additional quotas for the upcoming Guangdong refinery in the year, as
+    it will shutdown its simila
+  unit: tonnage
+  values:
+  - 19.0
+  - 1.0
+  - 2023.0
+  - 29.5
+  - 1.0
+  - 2021.0
+  - 13.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: Chinese refiners have exported nearly 34mt of clean fuel in 2022, with
+    monthly exports surging to an all-time high to 6.8mt in December, after Beijing
+    issued an unusual batch of export quotas in late September to ease stock pressure
+    and support economic activi
+  unit: tonnage
+  values:
+  - 34.0
+  - 2022.0
+  - 6.8
+- section: Main
+  section_type: null
+  source_line: If the refiners continue to utilise the remaining 2022 quotas in Q1
+    this year, China's product exports are likely to remain doubling year-on-year
+    in coming months. The government will also likely reduce the subsequent batches
+    of export quotas to limit the tota
+  unit: null
+  values:
+  - 2022.0
 regions:
 - china
 - brazil

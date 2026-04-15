@@ -28,7 +28,42 @@ keywords:
 - prices
 - demand
 - global
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The global inflationary environment that has pushed gold prices past
+    $2,000/oz and has sent silver prices soaring, is also affecting one of the most
+    important commodities in the world, namely iron ore. Although iron ore has always
+    been driven by its own idiosy
+  unit: usd
+  values:
+  - 2000.0
+- section: Main
+  section_type: null
+  source_line: So far this year, China has been the driving force behind the relentless
+    demand for steel, and thus for iron ore, but the upcoming recovery on steel demand
+    ex-China is about to take over, possibly continuing to support iron ore prices
+    well above the psychologi
+  unit: usd
+  values:
+  - 100.0
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: '"Strengthening demand for iron ore should trump concerns around rising
+    supply as the global economy recovers from the shock of the coronavirus pandemic.
+    Data points suggest steel consumption in China is expanding, on an improvement
+    in housing starts and swolle'
+  unit: usd
+  values:
+  - 100.0
 regions:
 - china
 - brazil

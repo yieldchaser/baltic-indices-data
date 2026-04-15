@@ -25,7 +25,74 @@ keywords:
 - company
 - customers
 - data
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: There is much industry discussion taking place regarding the feasibility
+    of meeting IMO 2030 and 2050 emissions reduction targets.
+  unit: null
+  values:
+  - 2030.0
+  - 2050.0
+- section: Main
+  section_type: null
+  source_line: In the white paper, RightShip first explores 2030 environmental targets
+    and the urgent need to plan now to meet and exceed industry goals. RightShip is
+    well placed to explore industry pain points such as knowing where to begin, what
+    data is required and what s
+  unit: null
+  values:
+  - 2030.0
+- section: Main
+  section_type: null
+  source_line: The white paper explains that companies have historically focused on
+    greenhouse gas (GHG) emissions from their own operations under scope 1 and scope
+    2 emissions.
+  unit: null
+  values:
+  - 1.0
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: And yet, GHG emissions produced along their supply chain (scope 3)
+    often represent the largest source of a company's GHG emissions. That's why RightShip
+    sees value in working with companies to assess emissions across their entire operations.
+    Ultimately measuri
+  unit: null
+  values:
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: RightShip established its Carbon Accounting tool in 2016, which enables
+    customers to use several efficiency filters to calculate a charterer's present
+    position and provide practical steps to reduce impact over time.
+  unit: null
+  values:
+  - 2016.0
+- section: Main
+  section_type: null
+  source_line: Within the white paper, RightShip also considers world events and their
+    impact on shipping, these include Covid-19 disruption, the rise of responsible
+    lending and stakeholder expectations.
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: The white paper reveals many of RightShip's long-term aspirations and
+    suggests that its accounting model can help customers to establish clear actions
+    to take, starting now, to achieve 2030 and 2050 goals.
+  unit: null
+  values:
+  - 2030.0
+  - 2050.0
 regions:
 - china
 - brazil

@@ -26,7 +26,119 @@ keywords:
 - iron_ore
 - coal
 - grain
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 10
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: Much of the coming week's focus will be on the Federal Reserve and
+    its policy meeting on Wednesday. The markets are expecting that the rate-setters
+    at the US central bank will increase interest rates by another 75 basis points.
+    However, some investors have sug
+  unit: null
+  values:
+  - 75.0
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: 'The Chinese economy also showed some signs of a recovery last week,
+    with data for August showing that industrial production, retail sales and fixed-asset
+    investment grew faster than many economists had expected. The unexpected strength
+    was, to a great extent, '
+  unit: null
+  values:
+  - 2020.0
+- section: Commodity Markets
+  section_type: null
+  source_line: The weaker outlook for crude oil demand weighed on prices last week,
+    amid expectations of higher interest rates and suggestions that US authorities
+    will not support prices by filling up its strategic reserves. The Brent futures
+    settled at 91.35 dollars per bar
+  unit: null
+  values:
+  - 91.35
+  - 1.6
+- section: Commodity Markets
+  section_type: null
+  source_line: The European natural gas markets saw a considerable retreat last week,
+    with the front-month futures ending the week 9.3 per cent lower at just below
+    188 euros per megawatt-hour. The efforts by the European Commission to ease the
+    continent's growing energy cris
+  unit: null
+  values:
+  - 9.3
+  - 188.0
+- section: Commodity Markets
+  section_type: null
+  source_line: The sharp retreat of the European natural gas prices contributed to
+    thermal coal prices losing ground last week. The October futures for delivery
+    in Rotterdam fell by nearly five per cent last week and settled at 304 dollars
+    per tonne on Friday. The weekly los
+  unit: null
+  values:
+  - 304.0
+  - 0.6
+  - 428.0
+- section: Commodity Markets
+  section_type: null
+  source_line: Iron ore prices fell last week amid a weaker demand outlook following
+    reports of rising steel inventories in China. The October futures trading at the
+    Singapore Exchange ended the week 4.8 per cent lower at 98 dollars per tonne,
+    with the negative momentum main
+  unit: null
+  values:
+  - 4.8
+  - 98.0
+- section: Commodity Markets
+  section_type: null
+  source_line: Among the base metals, only nickel prices moved higher last week while
+    the others faced modest losses. The copper contracts trading at the London Metal
+    Exchange fell by 1.2 per cent amid a weaker demand outlook on the back of the
+    prospect of lower global growt
+  unit: null
+  values:
+  - 1.2
+  - 0.4
+  - 5.5
+- section: Commodity Markets
+  section_type: null
+  source_line: A downgrade of the supply outlook for the 2022/23 marketing year by
+    the USDA saw Soybean futures trading in Chicago advancing by 3.3 per cent last
+    week. In contrast, the wheat and corn futures retreated by 1.1 per cent as a rail
+    strike that could have disrupte
+  unit: usd
+  values:
+  - 2022.0
+  - 23.0
+  - 3.3
+  - 1.1
+- section: Freight Markets
+  section_type: null
+  source_line: Last week saw all of the Baltic Exchange's freight indices in the black,
+    with solid gains across the board. Despite losses on Friday for the largest dry
+    bulk vessels, the headline Baltic Dry Index advanced by 28 per cent last week.
+    Most of the impressive gains
+  unit: null
+  values:
+  - 28.0
+  - 126.0
+  - 6.7
+  - 5.2
+  - 3.7
+- section: Freight Markets
+  section_type: null
+  source_line: The Baltic's tanker indices also had a good week, albeit not quite
+    of the same magnitude. The indicators for the clean and dirty tankers advanced
+    by around four per cent during the previous week. The LNG carriers saw their Baltic
+    index advancing by 34 per cent
+  unit: null
+  values:
+  - 34.0
+  - 7.6
 regions:
 - china
 - brazil
@@ -62,7 +174,7 @@ themes:
 - lng
 - lpg
 - china
-title: Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax

@@ -24,7 +24,51 @@ keywords:
 - liquidity
 - markets
 - out
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: cautiously_bearish
+numeric_observation_count: 4
+numeric_observations:
+- section: The mini-Banking Crisis is (mostly) over. That's no reason to relax
+  section_type: null
+  source_line: While SVB and Credit Suisse's failures inescapably evoke images of
+    2008, we were fairly confident that the latest turmoil wouldn't turn out to be
+    a Lehman moment. Lehman was an accident, fostered by a year-long credit crunch
+    and triggered by bad judgement call
+  unit: null
+  values:
+  - 2008.0
+- section: The mini-Banking Crisis is (mostly) over. That's no reason to relax
+  section_type: null
+  source_line: Thus, many a bad business model survived and thrived. But the return
+    of inflation and higher interest rates are now exposing areas of weakness. Troubled
+    banks may not necessarily initiate a 2008-style contagion event. Rather, they
+    may act as canaries in a coal
+  unit: null
+  values:
+  - 2008.0
+- section: The mini-Banking Crisis is (mostly) over. That's no reason to relax
+  section_type: null
+  source_line: Commercial Real Estate. The pandemic changed "The office" forever.
+    A recent survey by the ONS suggests that of those workers who can work in a hybrid
+    fashion, three out of four do. More so in major metropolitan areas, where the
+    commute tends to be more tedious
+  unit: pct
+  values:
+  - 20.0
+  - 1.4
+- section: The mini-Banking Crisis is (mostly) over. That's no reason to relax
+  section_type: null
+  source_line: Zombies . The more pronounced cross-industry risk is all sorts of zombie
+    companies. Enterprises who have survived and even thrived solely due to low rates.
+    A few bankruptcies here and there won't make a huge difference. But perversely,
+    as higher capitalisation
+  unit: null
+  values:
+  - 2008.0
 regions:
 - china
 - brazil

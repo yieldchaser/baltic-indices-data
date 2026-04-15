@@ -25,7 +25,101 @@ keywords:
 - financial
 - high
 - not
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: cautiously_bearish
+numeric_observation_count: 8
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The subject of yields has also been exhausted. The US 10y is at a 21-year
+    high, crossing the 5% mark briefly last week. Inflation remains stubbornly above
+    central bank targets. However, global debt levels (standing at 340% debt to GDP)
+    don't allow for much hig
+  unit: pct
+  values:
+  - 21.0
+  - 5.0
+  - 340.0
+  - 0.9
+- section: Main
+  section_type: null
+  source_line: The end of the 14-year bull market
+  unit: null
+  values:
+  - 14.0
+- section: Main
+  section_type: null
+  source_line: As returns are no longer as easy to come by, and 2023 hasn't been the
+    big rebound year (yet), investors are getting nervous. Getting 4.9% for an investment
+    on the long end, or 5.1% on the short end is reasonable. Meanwhile, asset managers
+    who have not invested
+  unit: pct
+  values:
+  - 2023.0
+  - 4.9
+  - 5.1
+- section: Main
+  section_type: null
+  source_line: 'Typically, asset managers create a range of mutual funds, build research
+    and management teams, infuse a philosophy and charge a management fee. The end
+    of the bull market and low returns over the past two years have caused an unprecedented
+    retreat from mutual '
+  unit: null
+  values:
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: For the past few years, after the 2009 crisis and the imposition of
+    the MiFID II standards, expense ratios for actively managed equity funds have
+    gone from 1% to 0.65%, and for bond funds from 0.65% to nearly 0.4%. Even index
+    funds are now squeezed, charging a
+  unit: pct
+  values:
+  - 2009.0
+  - 1.0
+  - 0.65
+  - 0.65
+  - 0.4
+  - 2007.0
+- section: Main
+  section_type: null
+  source_line: Let's not mince words. ETFs have commoditised the asset management
+    industry, and clients are acknowledging that. A PwC report in July suggested that
+    one in six asset managers will disappear by 2027.
+  unit: null
+  values:
+  - 2027.0
+- section: Main
+  section_type: null
+  source_line: 'Asset Allocation: Since the end of 2019, global equity markets have
+    diverged. In common currency terms (GBP) Global Stocks have made 36%, whereas
+    global bonds have lost 16%. US Equities gained 50%, whereas all other equity markets
+    have gained between 12% and 1'
+  unit: worldscale_pct
+  values:
+  - 2019.0
+  - 36.0
+  - 16.0
+  - 50.0
+  - 12.0
+  - 18.0
+  - 2.0
+  - 7.0
+  - 27.0
+- section: Main
+  section_type: null
+  source_line: 'Discipline: Having a dedicated planner, or private banker for that
+    matter, helps keep portfolio holders focused on the longer term and allows clients
+    to benefit from the best gift capitalism has to offer: long-term returns and compounding.
+    Markets, especially '
+  unit: worldscale_pct
+  values:
+  - 8.0
+  - 5.0
 regions:
 - china
 - brazil

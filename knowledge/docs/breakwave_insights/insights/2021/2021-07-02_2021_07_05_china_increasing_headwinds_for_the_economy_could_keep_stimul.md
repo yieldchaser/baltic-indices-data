@@ -26,7 +26,44 @@ keywords:
 - continued
 - economic
 - hence
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'The Chinese economy has provided a considerable number of spectacular
+    data releases in the last fifteen months, as it recovered from the initial effects
+    of the COVID19 outbreak. However, the most recent release of the official purchasing
+    managers'' index (PMI) '
+  unit: null
+  values:
+  - 9.0
+  - 50.9
+  - 53.5
+  - 55.2
+- section: Main
+  section_type: null
+  source_line: How one chooses to view the PMI readings for June is very much a question
+    of the glass being half-full versus half-empty. From a positive perspective. both
+    indicators are still in expansionary territory and suggest that the Chinese economy
+    is still in good hea
+  unit: null
+  values:
+  - 9.0
+- section: Main
+  section_type: null
+  source_line: The continued perception of a domestic Chinese economy still not firing
+    on all cylinders is likely to be a source of concern for the leaders in Beijing,
+    as developing a greater degree of economic autonomy is a key pillar of the current
+    five-year plan. While th
+  unit: null
+  values:
+  - 9.0
 regions:
 - china
 - brazil

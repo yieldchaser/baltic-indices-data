@@ -27,7 +27,66 @@ keywords:
 - imports
 - last
 - per
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'During the last few years, China has signalled that it aims to boost
+    its food security by increasing the domestic output of many staples for Chinese
+    consumers. The country''s ministry of agriculture reaffirmed the ambition in the
+    final days of last year. Among '
+  unit: null
+  values:
+  - 95.0
+  - 2025.0
+- section: Main
+  section_type: null
+  source_line: 'Last year''s rapid reestablishment of the hog herd helped push Chinese
+    seaborne imports of grains and oilseeds to a new record. According to data from
+    cargo tracking platform Oceanbolt, almost 160 million tonnes were discharged in
+    Chinese ports during the past '
+  unit: null
+  values:
+  - 160.0
+- section: Main
+  section_type: null
+  source_line: 'The Panamax segment has long dominated Chinese seaborne imports of
+    agricultural commodities, with average annual volumes accounting for 88 per cent
+    of cargoes carried since 2015. Last year''s increasing imports primarily benefitted
+    the Panamaxes. Especially as '
+  unit: null
+  values:
+  - 88.0
+  - 2015.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: The two-year-old phase one trade deal between the US and China has
+    failed to meet its lofty ambitions, with Chinese imports falling well short of
+    the set goals. However, US farmers are likely to view the deal with a degree of
+    affection, as their exports to Chi
+  unit: null
+  values:
+  - 2019.0
+  - 47.0
+- section: Main
+  section_type: null
+  source_line: The irony of China's ambitions for a high degree of self-sufficiency
+    for meat is that it is likely to fuel continued strong demand for seaborne imports
+    of soybeans and other feed grains in the short to medium term. According to official
+    customs data, the count
+  unit: null
+  values:
+  - 11.3
+  - 100.3
+  - 2020.0
+  - 2025.0
 regions:
 - china
 - brazil

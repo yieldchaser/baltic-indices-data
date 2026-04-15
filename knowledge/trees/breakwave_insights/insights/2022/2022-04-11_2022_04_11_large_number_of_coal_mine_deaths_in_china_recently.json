@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-04-11_2022_04_11_large_number_of_coal_mine_deaths_in_china_recently__root",
   "doc_id": "breakwave_insights_insights_2022-04-11_2022_04_11_large_number_of_coal_mine_deaths_in_china_recently",
   "parent_id": null,
-  "title": "Large Number Of Coal Mine Deaths In China Recently",
+  "title": "Large Number of Coal Mine Deaths in China Recently",
   "section_path": [
-    "Large Number Of Coal Mine Deaths In China Recently"
+    "Large Number of Coal Mine Deaths in China Recently"
   ],
-  "section_path_text": "Large Number Of Coal Mine Deaths In China Recently",
+  "section_path_text": "Large Number of Coal Mine Deaths in China Recently",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nAs we discussed in a special note sent to our clients last month, what has been going somewhat quietly under the radar recently has been that a large number of accidents and deaths have occurred at Chinese coal mines in recent weeks. This has been coinciding with the government's push to significantly increase domestic coal production. Late February through the end of March alone saw an accident occur at a Tongxin coal mine in Guizhou province resulting in the death of one worker, an accident occur at a Heyang coal mine in Shaanxi province resulting in the deaths of two workers, an accident occur at a Guiyang coal mine in Guizhou province resulting in the deaths of seven workers, and an accident occur at a Sanhe Shunxun coal mine in Guizhou province resulting in the deaths of 14 workers.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 376,
+  "token_count": 686,
   "source_path": "reports/breakwave/2022/2022-04-11_large-number-of-coal-mine-deaths-in-china-recently.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/4/11/large-number-of-coal-mine-deaths-in-china-recently",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 374,
+      "token_count": 478,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-04-11_2022_04_11_large_number_of_coal_mine_deaths_in_china_recently__s02_linked_asset_2022_04_11_large_number_of_coal_mine_deaths_in_china_recently_img_chart2282429_8c9bdb6b9c8a_jpg",
+      "doc_id": "breakwave_insights_insights_2022-04-11_2022_04_11_large_number_of_coal_mine_deaths_in_china_recently",
+      "parent_id": "breakwave_insights_insights_2022-04-11_2022_04_11_large_number_of_coal_mine_deaths_in_china_recently__root",
+      "title": "Linked asset: 2022-04-11_large-number-of-coal-mine-deaths-in-china-recently_img_chart2282429_8c9bdb6b9c8a.jpg",
+      "section_path": [
+        "Linked asset: 2022-04-11_large-number-of-coal-mine-deaths-in-china-recently_img_chart2282429_8c9bdb6b9c8a.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-04-11_large-number-of-coal-mine-deaths-in-china-recently_img_chart2282429_8c9bdb6b9c8a.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-04-11_large-number-of-coal-mine-deaths-in-china-recently_img_chart2282429_8c9bdb6b9c8a.jpg\n\nLinked image asset: 2022-04-11_large-number-of-coal-mine-deaths-in-china-recently_img_chart2282429_8c9bdb6b9c8a.jpg\n\nImage metadata: JPEG 679x216 mode=RGB\n\nOCR text:\nChinese Coal-Derived Electricity Production (2018 - 2022)\n600kwh\n500kwh\n400kwh\n300kwh\n2018 2019 2020 2021 2022\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "china",
+        "coal",
+        "kwh",
+        "asset",
+        "image",
+        "billion",
+        "chinese",
+        "coal-derived"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

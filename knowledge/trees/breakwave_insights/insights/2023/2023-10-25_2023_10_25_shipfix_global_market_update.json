@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-10-25_2023_10_25_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-10-25_2023_10_25_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nThe BDI retreated for a fourth consecutive session on Tuesday, with lower demand for the Capesizes continuing to provide the headwinds. Among the commodities, energy prices retreated while more support for the Chinese economy contributed to higher iron ore and base metal prices. By Ulf Bergman\n\nMacro/Geopolitics\nYesterday turned out to be quite an eventful day in China.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1418,
+  "token_count": 1754,
   "source_path": "reports/breakwave/2023/2023-10-25_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/10/25/shipfix-global-market-update",
   "children": [
@@ -166,8 +166,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 302,
+      "token_count": 357,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-10-25_2023_10_25_shipfix_global_market_update__s06_linked_asset_2023_10_25_shipfix_global_market_update_img_unnamed_2023_10_25t154531902_a785cb4f27fd_png",
+      "doc_id": "breakwave_insights_insights_2023-10-25_2023_10_25_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-10-25_2023_10_25_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-10-25_shipfix-global-market-update_img_unnamed-2023-10-25t154531902_a785cb4f27fd.png",
+      "section_path": [
+        "Linked asset: 2023-10-25_shipfix-global-market-update_img_unnamed-2023-10-25t154531902_a785cb4f27fd.png"
+      ],
+      "section_path_text": "Linked asset: 2023-10-25_shipfix-global-market-update_img_unnamed-2023-10-25t154531902_a785cb4f27fd.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-10-25_shipfix-global-market-update_img_unnamed-2023-10-25t154531902_a785cb4f27fd.png\n\nLinked image asset: 2023-10-25_shipfix-global-market-update_img_unnamed-2023-10-25t154531902_a785cb4f27fd.png\n\nImage metadata: PNG 1120x633 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Australian Coal Bound for China\n= Average cargo size ™ Monthly Cargo Order Volumes\n5 100\n4\n75\n3\nz ° E\ni 2\n2 sO\n5 ql\n= 3\nAe 3\né\n25\nd\n0) °\nJan23 Feb-23. © Jul-23.« Aug-23 © Sep-23 Oct-23.",
+      "keywords": [
+        "china",
+        "australia",
+        "coal",
+        "cargo",
+        "asset",
+        "image",
+        "monthly",
+        "order"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-06-30_2023_06_30_india_remains_a_rare_bright_spot__root",
   "doc_id": "breakwave_insights_insights_2023-06-30_2023_06_30_india_remains_a_rare_bright_spot",
   "parent_id": null,
-  "title": "India Remains A Rare Bright Spot",
+  "title": "India Remains a Rare Bright Spot",
   "section_path": [
-    "India Remains A Rare Bright Spot"
+    "India Remains a Rare Bright Spot"
   ],
-  "section_path_text": "India Remains A Rare Bright Spot",
+  "section_path_text": "India Remains a Rare Bright Spot",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nGlobal crude steel production outside of China totaled 71.5 million tons in May. This is up month-on-month by 2.7 million tons (4%) but is 1.4 million tons (-2%) less than was reported last year for May 2022's production. Crude steel production outside of China has now contracted on a year-on-year basis for fifteen straight months.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 326,
+  "token_count": 762,
   "source_path": "reports/breakwave/2023/2023-06-30_india-remains-a-rare-bright-spot.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/6/30/india-remains-a-rare-bright-spot",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 324,
+      "token_count": 411,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-06-30_2023_06_30_india_remains_a_rare_bright_spot__s02_linked_asset_2023_06_30_india_remains_a_rare_bright_spot_img_chart1287529_4aa26efdbc64_jpg",
+      "doc_id": "breakwave_insights_insights_2023-06-30_2023_06_30_india_remains_a_rare_bright_spot",
+      "parent_id": "breakwave_insights_insights_2023-06-30_2023_06_30_india_remains_a_rare_bright_spot__root",
+      "title": "Linked asset: 2023-06-30_india-remains-a-rare-bright-spot_img_chart1287529_4aa26efdbc64.jpg",
+      "section_path": [
+        "Linked asset: 2023-06-30_india-remains-a-rare-bright-spot_img_chart1287529_4aa26efdbc64.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-06-30_india-remains-a-rare-bright-spot_img_chart1287529_4aa26efdbc64.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-06-30_india-remains-a-rare-bright-spot_img_chart1287529_4aa26efdbc64.jpg\n\nLinked image asset: 2023-06-30_india-remains-a-rare-bright-spot_img_chart1287529_4aa26efdbc64.jpg\n\nImage metadata: JPEG 663x322 mode=RGB\n\nOCR text:\nGlobal Crude Stee! Output Excluding China (2018 - 2023)\n80mt\n70mt\n60mt\n50mt\n2018 2019 2020 2021 2022 2023",
+      "keywords": [
+        "china",
+        "india",
+        "asset",
+        "image",
+        "crude",
+        "excluding",
+        "global",
+        "india-remains-a-rare-bright-spot_img_chart1287529_4aa26efdbc64.jpg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 141,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-06-30_2023_06_30_india_remains_a_rare_bright_spot__s03_linked_asset_2023_06_30_india_remains_a_rare_bright_spot_img_chart2286429_ec8fbbaa207e_jpg",
+      "doc_id": "breakwave_insights_insights_2023-06-30_2023_06_30_india_remains_a_rare_bright_spot",
+      "parent_id": "breakwave_insights_insights_2023-06-30_2023_06_30_india_remains_a_rare_bright_spot__root",
+      "title": "Linked asset: 2023-06-30_india-remains-a-rare-bright-spot_img_chart2286429_ec8fbbaa207e.jpg",
+      "section_path": [
+        "Linked asset: 2023-06-30_india-remains-a-rare-bright-spot_img_chart2286429_ec8fbbaa207e.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-06-30_india-remains-a-rare-bright-spot_img_chart2286429_ec8fbbaa207e.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-06-30_india-remains-a-rare-bright-spot_img_chart2286429_ec8fbbaa207e.jpg\n\nLinked image asset: 2023-06-30_india-remains-a-rare-bright-spot_img_chart2286429_ec8fbbaa207e.jpg\n\nImage metadata: JPEG 657x327 mode=RGB\n\nOCR text:\nIndian Crude Steel Production (2018 - 2023)\n12mt\n8mt\n4mt\nOmt\n2018 2019 2020 2021 2022 2023",
+      "keywords": [
+        "india",
+        "steel",
+        "asset",
+        "image",
+        "crude",
+        "india-remains-a-rare-bright-spot_img_chart2286429_ec8fbbaa207e.jpg",
+        "indian",
+        "jpeg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 136,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

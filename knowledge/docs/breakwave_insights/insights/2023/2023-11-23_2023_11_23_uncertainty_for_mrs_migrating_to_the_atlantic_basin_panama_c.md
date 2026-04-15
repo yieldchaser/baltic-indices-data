@@ -28,7 +28,70 @@ keywords:
 - canal
 - mrs
 - are
+linked_assets_discovered: 18
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 18
 market_tone: neutral
+numeric_observation_count: 5
+numeric_observations:
+- section: Incentives for MRs to migrate East-to-West are currently high, but a mixed
+    outlook in the Atlantic Basin due to weak product export demand awaits, and Panama
+    Canal congestion could mean vessels cannot easily reposition going forward.
+  section_type: null
+  source_line: 'Migration to the West of Suez is increasing as Atlantic Basin earnings
+    are now more than double Pacific Earnings (source: Baltic Exchange). East Asia
+    and South East Asia''s exports on MRs have declined and Pacific Basin freight
+    rates ( TC7 , TC10 , TC11 ) have '
+  unit: null
+  values:
+  - 1.0
+- section: Incentives for MRs to migrate East-to-West are currently high, but a mixed
+    outlook in the Atlantic Basin due to weak product export demand awaits, and Panama
+    Canal congestion could mean vessels cannot easily reposition going forward.
+  section_type: null
+  source_line: In the UK Cont, the outlook is bearish as low utilisation to the US
+    Atlantic Coast continues due to PADD 1 being well-supplied with gasoline heading
+    into the holiday season. At the same time, employment UK Cont-to-WAf has remained
+    under pressure most of this y
+  unit: null
+  values:
+  - 1.0
+- section: Incentives for MRs to migrate East-to-West are currently high, but a mixed
+    outlook in the Atlantic Basin due to weak product export demand awaits, and Panama
+    Canal congestion could mean vessels cannot easily reposition going forward.
+  section_type: null
+  source_line: 'Over in the US Gulf, there is currently a better outlook for MRs.
+    USG prompt availability looks tight while freight rates are currently at their
+    highest since February 2023 ( TC14 , TC18 ). The resurgence of European demand
+    for US diesel is offering long-haul '
+  unit: null
+  values:
+  - 2023.0
+  - 4.0
+  - 8.0
+  - 3.5
+- section: Incentives for MRs to migrate East-to-West are currently high, but a mixed
+    outlook in the Atlantic Basin due to weak product export demand awaits, and Panama
+    Canal congestion could mean vessels cannot easily reposition going forward.
+  section_type: null
+  source_line: No. of transits of laden oil & gas carriers in Panama Canal (7-day
+    MA, no. of vessels)
+  unit: null
+  values:
+  - 7.0
+- section: Incentives for MRs to migrate East-to-West are currently high, but a mixed
+    outlook in the Atlantic Basin due to weak product export demand awaits, and Panama
+    Canal congestion could mean vessels cannot easily reposition going forward.
+  section_type: null
+  source_line: We noticed these dynamics in August and September 2023 when Panama
+    Canal congestion was high, and MRs loading in the US Gulf and discharging in the
+    West Coast Americas were forced to remain in the Pacific. Logistical difficulties
+    for cargoes from the USG meant
+  unit: null
+  values:
+  - 2023.0
 regions:
 - china
 - brazil

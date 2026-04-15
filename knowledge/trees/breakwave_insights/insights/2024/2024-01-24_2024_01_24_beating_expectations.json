@@ -26,12 +26,38 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 697,
+  "token_count": 1427,
   "source_path": "reports/breakwave/2024/2024-01-24_beating-expectations.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2024/1/24/beating-expectations",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s01_beating_expectations",
+      "node_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s01_main",
+      "doc_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations",
+      "parent_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: Oil-Drilling (1).jpg | assets/2024-01-24_beating-expectations_img_oil-drilling28129_1f62af173c53.jpg",
+      "keywords": [
+        "crude_oil",
+        "assets/2024-01-24_beating-expectations_img_oil-drilling28129_1f62af173c53.jpg",
+        "image",
+        "jpg",
+        "oil-drilling",
+        "reference"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 41,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s02_beating_expectations",
       "doc_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations",
       "parent_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__root",
       "title": "Beating Expectations",
@@ -40,7 +66,7 @@
       ],
       "section_path_text": "Beating Expectations",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "Back in January 2023, the US Energy Information Administration (EIA) envisaged US crude production growing by 550kbd over the course of the year. The reality however has beaten all expectations, with the country's output increasing by 1.01 mbd according to the latest assessments.",
       "keywords": [
         "vlcc",
@@ -59,7 +85,7 @@
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s02_outlook_for_us_oil_supply_mbd",
+      "node_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s03_outlook_for_us_oil_supply_mbd",
       "doc_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations",
       "parent_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__root",
       "title": "Outlook for US oil supply (mbd)",
@@ -68,18 +94,78 @@
       ],
       "section_path_text": "Outlook for US oil supply (mbd)",
       "level": 1,
-      "ordinal": 2,
-      "summary": "",
+      "ordinal": 3,
+      "summary": "Image reference: αρχείο λήψης (8).png | assets/2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png\nData source: Gibson Shipbrokers",
       "keywords": [
+        "assets/2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png",
         "data",
         "gibson",
+        "image",
+        "png",
+        "reference",
         "shipbrokers",
         "source"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 7,
+      "token_count": 72,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s04_linked_asset_2024_01_24_beating_expectations_img_oil_drilling28129_1f62af173c53_jpg",
+      "doc_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations",
+      "parent_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__root",
+      "title": "Linked asset: 2024-01-24_beating-expectations_img_oil-drilling28129_1f62af173c53.jpg",
+      "section_path": [
+        "Linked asset: 2024-01-24_beating-expectations_img_oil-drilling28129_1f62af173c53.jpg"
+      ],
+      "section_path_text": "Linked asset: 2024-01-24_beating-expectations_img_oil-drilling28129_1f62af173c53.jpg",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2024/assets/2024-01-24_beating-expectations_img_oil-drilling28129_1f62af173c53.jpg\n\nLinked image asset: 2024-01-24_beating-expectations_img_oil-drilling28129_1f62af173c53.jpg\n\nImage metadata: JPEG 1920x1280 mode=RGB\n\nOCR text:\n°\na ae B |\n: z |\na ' :\nBl\n- er\ni fl\n4\n: ~'\n|\ngli i \\ |\nh i , ser\" hi '\nLH é - » ! -\ni : F es de - ae eh Ws \\\nEe ; : : sg = .",
+      "keywords": [
+        "crude_oil",
+        "sss",
+        "asset",
+        "image",
+        "aes",
+        "ahve",
+        "beating-expectations_img_oil-drilling28129_1f62af173c53.jpg",
+        "eee"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 398,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s05_linked_asset_2024_01_24_beating_expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6_png",
+      "doc_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations",
+      "parent_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__root",
+      "title": "Linked asset: 2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png",
+      "section_path": [
+        "Linked asset: 2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png"
+      ],
+      "section_path_text": "Linked asset: 2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2024/assets/2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png\n\nLinked image asset: 2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png\n\nImage metadata: PNG 1355x500 mode=RGBA\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\n[No OCR text detected in linked image.]",
+      "keywords": [
+        "asset",
+        "image",
+        "linked",
+        "beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png",
+        "detected",
+        "dpi",
+        "embedded",
+        "image."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 142,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

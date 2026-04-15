@@ -24,7 +24,58 @@ keywords:
 - power
 - stockpiles
 - year-on-year
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Coal India produced approximately 53.8 million tons of coal last month,
+    which marks a month-on-month increase of 4 million tons (8%) and a year-on-year
+    increase of 2.1 million tons (4%). Coal India's production has continued to climb
+    dramatically since Septemb
+  unit: pct
+  values:
+  - 53.8
+  - 4.0
+  - 8.0
+  - 2.1
+  - 4.0
+- section: Main
+  section_type: null
+  source_line: Coal India's offtake totaled 56.8 million tons last month, which marks
+    a month-on-month increase of just 100,000 tons and a year-on-year increase of
+    5.5 million tons (11%). Offtake has now increased on a year-on-year basis for
+    nine consecutive months, and last
+  unit: pct
+  values:
+  - 56.8
+  - 100000.0
+  - 5.5
+  - 11.0
+  - 59.7
+- section: Main
+  section_type: null
+  source_line: India's power plant coal stockpiles started this month at approximately
+    17.8 million tons, which is 19.7 million tons (-53%) less than was stockpiled
+    a year ago. Stockpiles have been climbing since mid-October due in large part
+    from the ongoing increase in Coa
+  unit: pct
+  values:
+  - 17.8
+  - 19.7
+  - -53.0
+  - 10.0
+  - 21.0
+  - 4.0
+  - 3.0
+  - 10.0
+  - 2.0
+  - 7.0
 regions:
 - china
 - brazil

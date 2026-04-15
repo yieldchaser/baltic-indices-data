@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production__root",
   "doc_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production",
   "parent_id": null,
-  "title": "Small Growth In Indian Electricity Production",
+  "title": "Small Growth in Indian Electricity Production",
   "section_path": [
-    "Small Growth In Indian Electricity Production"
+    "Small Growth in Indian Electricity Production"
   ],
-  "section_path_text": "Small Growth In Indian Electricity Production",
+  "section_path_text": "Small Growth in Indian Electricity Production",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nIndia produced approximately 96.7 billion kilowatt hours of electricity last month, which is down month-on-month by 14.1 billion kilowatt hours (-13%) but up year-on-year by 1.4 billion kilowatt hours (1%). The month-on-month decline is normal and occurs every November. More significant is that electricity production grew on a year-on-year basis again.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 439,
+  "token_count": 1108,
   "source_path": "reports/breakwave/2021/2021-12-23_small-growth-in-indian-electricity-production.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2021/12/23/small-growth-in-indian-electricity-production",
   "children": [
@@ -54,8 +54,92 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 437,
+      "token_count": 568,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production__s02_linked_asset_2021_12_23_small_growth_in_indian_electricity_production_img_chart1281029_5651f90e3938_jpg",
+      "doc_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production",
+      "parent_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production__root",
+      "title": "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart1281029_5651f90e3938.jpg",
+      "section_path": [
+        "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart1281029_5651f90e3938.jpg"
+      ],
+      "section_path_text": "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart1281029_5651f90e3938.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-12-23_small-growth-in-indian-electricity-production_img_chart1281029_5651f90e3938.jpg\n\nLinked image asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart1281029_5651f90e3938.jpg\n\nImage metadata: JPEG 678x216 mode=RGB\n\nOCR text:\nIndian Electricity Production (November 2018 - November 2021)\n125kwh\n75kwh\nNov '18 Nov ‘19 Nov '20 Nov '21\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "india",
+        "nov",
+        "asset",
+        "image",
+        "kwh",
+        "november",
+        "billion",
+        "electricity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 136,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production__s03_linked_asset_2021_12_23_small_growth_in_indian_electricity_production_img_chart228829_b91fbfa40b81_jpg",
+      "doc_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production",
+      "parent_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production__root",
+      "title": "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart228829_b91fbfa40b81.jpg",
+      "section_path": [
+        "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart228829_b91fbfa40b81.jpg"
+      ],
+      "section_path_text": "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart228829_b91fbfa40b81.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-12-23_small-growth-in-indian-electricity-production_img_chart228829_b91fbfa40b81.jpg\n\nLinked image asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart228829_b91fbfa40b81.jpg\n\nImage metadata: JPEG 678x216 mode=RGB\n\nOCR text:\nIndian Coal-Derived Electricity Production (November 2018 - November 2021)\n120kwh\n100kwh\n80kwh\n60kwh\nNov '18 Nov ‘19 Nov '20 Nov '21\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "india",
+        "coal",
+        "kwh",
+        "nov",
+        "asset",
+        "image",
+        "november",
+        "billion"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 144,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production__s04_linked_asset_2021_12_23_small_growth_in_indian_electricity_production_img_chart328629_1c19d5f20cb8_jpg",
+      "doc_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production",
+      "parent_id": "breakwave_insights_insights_2021-12-23_2021_12_23_small_growth_in_indian_electricity_production__root",
+      "title": "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart328629_1c19d5f20cb8.jpg",
+      "section_path": [
+        "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart328629_1c19d5f20cb8.jpg"
+      ],
+      "section_path_text": "Linked asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart328629_1c19d5f20cb8.jpg",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-12-23_small-growth-in-indian-electricity-production_img_chart328629_1c19d5f20cb8.jpg\n\nLinked image asset: 2021-12-23_small-growth-in-indian-electricity-production_img_chart328629_1c19d5f20cb8.jpg\n\nImage metadata: JPEG 676x211 mode=RGB\n\nOCR text:\nIndian Hydropower Production (November 2018 - November 2021. 25kwh\n20kwh\n15kwh\n10kwh\n5kwh\nNov '18 Nov \"19 Nov '20 Nov '21\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "india",
+        "kwh",
+        "nov",
+        "asset",
+        "image",
+        "november",
+        "billion",
+        "hours"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 152,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

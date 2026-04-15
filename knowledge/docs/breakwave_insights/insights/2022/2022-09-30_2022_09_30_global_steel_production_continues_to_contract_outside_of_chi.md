@@ -26,7 +26,60 @@ keywords:
 - year-on-year
 - august
 - basis
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Global crude steel production totaled 150.6 million tons last month.
+    This is up month-on-month by 1.3 million tons (1%) but is 6.2 million tons (-4%)
+    less than was reported last year for August 2021's production. Global crude steel
+    production has now contracte
+  unit: pct
+  values:
+  - 150.6
+  - 1.3
+  - 1.0
+  - 6.2
+  - -4.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: 'Global crude steel production outside of China totaled 66.7 million
+    tons last month. This is down month-on-month by 1.2 million tons (-2%) and is
+    6.9 million tons (-9%) less than was reported last year for August 2021''s production.
+    Concerning is that this has '
+  unit: pct
+  values:
+  - 66.7
+  - 1.2
+  - -2.0
+  - 6.9
+  - -9.0
+  - 2021.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: As we have continued to highlight in Commodore's Weekly Dry Bulk Reports,
+    we remain particularly concerned for Europe. The European Union produced approximately
+    9.7 million tons of crude steel last month. This is 2 million tons (-17%) less
+    than was produced in
+  unit: pct
+  values:
+  - 9.7
+  - 2.0
+  - -17.0
+  - 1.9
+  - -16.0
+  - 2021.0
+  - 2020.0
+  - 9.7
+  - 2020.0
 regions:
 - china
 - brazil

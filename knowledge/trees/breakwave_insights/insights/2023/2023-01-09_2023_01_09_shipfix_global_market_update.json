@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-01-09_2023_01_09_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-01-09_2023_01_09_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nWith the global newsflow still subdued in the past week, following the Christmas and New Year holidays in large parts of the world, the macro picture was dominated by mounting concerns over the health of the global economy. The International Monetary Fund suggested that a third of the world may be affected by a recession this year. The IMF also said that it is too early to say that the US fight against high inflation has been won, which also was confirmed by the release of stronger-than-expected labour data for the world's largest economy during the past week.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1294,
+  "token_count": 1559,
   "source_path": "reports/breakwave/2023/2023-01-09_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/9/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 116,
+      "token_count": 172,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-09_2023_01_09_shipfix_global_market_update__s06_linked_asset_2023_01_09_shipfix_global_market_update_img_unnamed_2023_01_09t153836156_5d5742931f20_png",
+      "doc_id": "breakwave_insights_insights_2023-01-09_2023_01_09_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-01-09_2023_01_09_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-01-09_shipfix-global-market-update_img_unnamed-2023-01-09t153836156_5d5742931f20.png",
+      "section_path": [
+        "Linked asset: 2023-01-09_shipfix-global-market-update_img_unnamed-2023-01-09t153836156_5d5742931f20.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-09_shipfix-global-market-update_img_unnamed-2023-01-09t153836156_5d5742931f20.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-09_shipfix-global-market-update_img_unnamed-2023-01-09t153836156_5d5742931f20.png\n\nLinked image asset: 2023-01-09_shipfix-global-market-update_img_unnamed-2023-01-09t153836156_5d5742931f20.png\n\nImage metadata: PNG 1120x415 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Cargo Order Volumes (TCT & Voyage) for Grains Loading in Ukraine ©\nSY 3Y Al\n2\ng\nz\n3s\n19 - 202 \" 2021 A 2022 ~ 202",
+      "keywords": [
+        "grain",
+        "asset",
+        "image",
+        "cargo",
+        "dpi",
+        "embedded",
+        "grains",
+        "info"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 169,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

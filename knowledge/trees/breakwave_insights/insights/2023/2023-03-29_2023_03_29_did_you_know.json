@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
   "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
   "parent_id": null,
-  "title": "Did You Know",
+  "title": "Did you know?",
   "section_path": [
-    "Did You Know"
+    "Did you know?"
   ],
-  "section_path_text": "Did You Know",
+  "section_path_text": "Did you know?",
   "level": 0,
   "ordinal": 0,
   "summary": "Jamnagar Refinery\nThe Jamnagar Refinery is the private sector crude oil refinery owned by Reliance Industries in Jamnagar, Gujarat, India. The refinery was commissioned on 14 July 1999 with an installed capacity of 668,000 barrels per day. Its current installed capacity is 1,240,000 barrels per day, and it is currently the largest refinery in the world.",
@@ -26,12 +26,36 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 238,
+  "token_count": 2007,
   "source_path": "reports/breakwave/2023/2023-03-29_did-you-know.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/29/did-you-know",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s01_jamnagar_refinery",
+      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: 1 (11).png | assets/2023-03-29_did-you-know_img_1281129_6b3edcdadb69.png",
+      "keywords": [
+        "assets/2023-03-29_did-you-know_img_1281129_6b3edcdadb69.png",
+        "image",
+        "png",
+        "reference"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 36,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s02_jamnagar_refinery",
       "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
       "title": "Jamnagar Refinery",
@@ -40,7 +64,7 @@
       ],
       "section_path_text": "Jamnagar Refinery",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "The Jamnagar Refinery is the private sector crude oil refinery owned by Reliance Industries in Jamnagar, Gujarat, India. The refinery was commissioned on 14 July 1999 with an installed capacity of 668,000 barrels per day.",
       "keywords": [
         "india",
@@ -48,18 +72,18 @@
         "refinery",
         "barrels",
         "capacity",
+        "image",
         "installed",
-        "jamnagar",
-        "per"
+        "jamnagar"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 77,
+      "token_count": 169,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s02_paraguan_refinery",
+      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s03_paraguan_refinery",
       "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
       "title": "Paraguaná Refinery",
@@ -68,7 +92,7 @@
       ],
       "section_path_text": "Paraguaná Refinery",
       "level": 1,
-      "ordinal": 2,
+      "ordinal": 3,
       "summary": "The Paraguaná Refinery is a crude oil refinery complex in Venezuela. It started operations in 1949 with capacity to refine 30 thousand barrels per day.",
       "keywords": [
         "crude_oil",
@@ -87,7 +111,7 @@
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s03_ruwais_refinery",
+      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s04_ruwais_refinery",
       "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
       "title": "Ruwais Refinery",
@@ -96,7 +120,7 @@
       ],
       "section_path_text": "Ruwais Refinery",
       "level": 1,
-      "ordinal": 3,
+      "ordinal": 4,
       "summary": "The Ruwais Refinery is operated by the Abu Dhabi National Oil Company. The complex can process up to 837,000 barrels of crude oil and condensate per day, making it the fourth-largest single-site oil refinery in the world and the biggest in the Middle East.",
       "keywords": [
         "crude_oil",
@@ -105,13 +129,125 @@
         "abu",
         "dhabi",
         "ruwais",
-        "barrels",
-        "biggest"
+        "adnoc_refining_ruwais_site-187.jpg",
+        "assets/2023-03-29_did-you-know_img_adnoc-refining-ruwais-site-187_b9c1ef10ae37.jpg"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 76,
+      "token_count": 126,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s05_linked_asset_2023_03_29_did_you_know_img_1281129_6b3edcdadb69_png",
+      "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
+      "title": "Linked asset: 2023-03-29_did-you-know_img_1281129_6b3edcdadb69.png",
+      "section_path": [
+        "Linked asset: 2023-03-29_did-you-know_img_1281129_6b3edcdadb69.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-29_did-you-know_img_1281129_6b3edcdadb69.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-29_did-you-know_img_1281129_6b3edcdadb69.png\n\nLinked image asset: 2023-03-29_did-you-know_img_1281129_6b3edcdadb69.png\n\nImage metadata: PNG 824x316 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nDID YOU KNOW ? Which are the world largest refineries?",
+      "keywords": [
+        "asset",
+        "image",
+        "are",
+        "did",
+        "did-you-know_img_1281129_6b3edcdadb69.png",
+        "dpi",
+        "embedded",
+        "info"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 112,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s06_linked_asset_2023_03_29_did_you_know_img_jamnagar_refinery_8b1634d9fb2b_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
+      "title": "Linked asset: 2023-03-29_did-you-know_img_jamnagar-refinery_8b1634d9fb2b.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-29_did-you-know_img_jamnagar-refinery_8b1634d9fb2b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-29_did-you-know_img_jamnagar-refinery_8b1634d9fb2b.jpg",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-29_did-you-know_img_jamnagar-refinery_8b1634d9fb2b.jpg\n\nLinked image asset: 2023-03-29_did-you-know_img_jamnagar-refinery_8b1634d9fb2b.jpg\n\nImage metadata: JPEG 800x600 mode=RGB\n\nOCR text:\ni a I 1 I\n; = es\nx ee i tay\nwa a Bene ous. : : a - 3 = a\n1 yk.",
+      "keywords": [
+        "eee",
+        "ete",
+        "asset",
+        "gee",
+        "image",
+        "see",
+        "aaa",
+        "aaaiass"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 474,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s07_linked_asset_2023_03_29_did_you_know_img_image_2_paraguana_refinery_complex_6e10e6a48ca1_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
+      "title": "Linked asset: 2023-03-29_did-you-know_img_image-2-paraguana-refinery-complex_6e10e6a48ca1.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-29_did-you-know_img_image-2-paraguana-refinery-complex_6e10e6a48ca1.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-29_did-you-know_img_image-2-paraguana-refinery-complex_6e10e6a48ca1.jpg",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-29_did-you-know_img_image-2-paraguana-refinery-complex_6e10e6a48ca1.jpg\n\nLinked image asset: 2023-03-29_did-you-know_img_image-2-paraguana-refinery-complex_6e10e6a48ca1.jpg\n\nImage metadata: JPEG 800x600 mode=RGB\n\nOCR text:\nFr * a\n%\n| | =\ni 4 is i : ) uf i\na f a i @\nA a Bh i,\nis Geen fe gM cL. a es\nve Cee eee | ae eee\nim SR a | me |\nRemi his 2x es a Pauses Pe Sec 2\n.",
+      "keywords": [
+        "asset",
+        "eee",
+        "image",
+        "cee",
+        "cl.",
+        "did-you-know_img_image-2-paraguana-refinery-complex_6e10e6a48ca1.jpg",
+        "geen",
+        "goes"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__s08_linked_asset_2023_03_29_did_you_know_img_adnoc_refining_ruwais_site_187_b9c1ef10ae37_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-29_2023_03_29_did_you_know__root",
+      "title": "Linked asset: 2023-03-29_did-you-know_img_adnoc-refining-ruwais-site-187_b9c1ef10ae37.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-29_did-you-know_img_adnoc-refining-ruwais-site-187_b9c1ef10ae37.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-29_did-you-know_img_adnoc-refining-ruwais-site-187_b9c1ef10ae37.jpg",
+      "level": 1,
+      "ordinal": 8,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-29_did-you-know_img_adnoc-refining-ruwais-site-187_b9c1ef10ae37.jpg\n\nLinked image asset: 2023-03-29_did-you-know_img_adnoc-refining-ruwais-site-187_b9c1ef10ae37.jpg\n\nImage metadata: JPEG 1280x853 mode=RGB\n\nOCR text:\ngt Pe te tle, wl a\nwe ' \"a wee\ni iad -. - ie\n1\njae =\"\n= : 4 ini .",
+      "keywords": [
+        "eee",
+        "all",
+        "asset",
+        "ees",
+        "image",
+        "act",
+        "adg",
+        "ae."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 661,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

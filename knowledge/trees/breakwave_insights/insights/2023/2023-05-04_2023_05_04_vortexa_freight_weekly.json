@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 433,
+  "token_count": 1117,
   "source_path": "reports/breakwave/2023/2023-05-04_vortexa-freight-weekly.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/5/4/vortexa-freight-weekly",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "By Dylan Simpson\nANALYSIS / EAST OF SUEZ / DIRTY\nAframaxes leave Suezmaxes in the dust ex-Russia\nCrude utilisation out of Russia per vessel class\nRussian exports ended April almost 10% up m-o-m, mostly headed towards India and East Asia. At the same time, crude tonne-miles out of Russia continue to breach record highs.",
+      "summary": "By Dylan Simpson\nANALYSIS / EAST OF SUEZ / DIRTY\nAframaxes leave Suezmaxes in the dust ex-Russia\nImage reference: unnamed - 2023-05-04T110454.954.png | assets/2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t110454954_5122b3429391.png\nCrude utilisation out of Russia per vessel class\nRussian exports ended April almost 10% up m-o-m, mostly headed towards India and East Asia. At the same time, crude tonne-miles out of Russia continue to breach record highs.",
       "keywords": [
         "vlcc",
         "suezmax",
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 431,
+      "token_count": 548,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-04_2023_05_04_vortexa_freight_weekly__s02_linked_asset_2023_05_04_vortexa_freight_weekly_img_unnamed_2023_05_04t110454954_5122b3429391_png",
+      "doc_id": "breakwave_insights_insights_2023-05-04_2023_05_04_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-05-04_2023_05_04_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t110454954_5122b3429391.png",
+      "section_path": [
+        "Linked asset: 2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t110454954_5122b3429391.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t110454954_5122b3429391.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t110454954_5122b3429391.png\n\nLinked image asset: 2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t110454954_5122b3429391.png\n\nImage metadata: PNG 1244x832 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n120\n100\n80\n3\ni\n60\nrz}\ngS\n2\n40\n20\n0\nJan-21 0 Mar-21 May-21. Jul-21 Sep-21 Nov21 = Jan-22.- Mar-22,- May-22 Jul-22 Sep-22.",
+      "keywords": [
+        "suezmax",
+        "aframax",
+        "asset",
+        "image",
+        "dpi",
+        "embedded",
+        "info",
+        "jan-21"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-04_2023_05_04_vortexa_freight_weekly__s03_linked_asset_2023_05_04_vortexa_freight_weekly_img_unnamed_2023_05_04t154611621_7fade00c0eaf_png",
+      "doc_id": "breakwave_insights_insights_2023-05-04_2023_05_04_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-05-04_2023_05_04_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t154611621_7fade00c0eaf.png",
+      "section_path": [
+        "Linked asset: 2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t154611621_7fade00c0eaf.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t154611621_7fade00c0eaf.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t154611621_7fade00c0eaf.png\n\nLinked image asset: 2023-05-04_vortexa-freight-weekly_img_unnamed-2023-05-04t154611621_7fade00c0eaf.png\n\nImage metadata: PNG 1082x852 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n600\nVLCC: TD1, TD3C, TD15, TD22\nSuezmax: TD6, TD20, TD23\nAframax: TD7, TD8, TD9, TD14, TD19, TD25\nLatest data point: 28 Apr 2023\n500\n400\nN\n300 4! | \\\n: A\ng ~~, ~ = ria\n100 BO hfe, > A)\n0\nFeb-21 Apr-21 Jun-21 Aug-21 Oct-21 Dec-21 Feb-22 Apr-22 Jun-22 Aug-22 Oct-22 Dec-22 Feb-23 Apr-23\n--= VLCC Suezmax Aframax",
+      "keywords": [
+        "vlcc",
+        "suezmax",
+        "aframax",
+        "asset",
+        "image",
+        "apr",
+        "apr-21",
+        "apr-22"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 275,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

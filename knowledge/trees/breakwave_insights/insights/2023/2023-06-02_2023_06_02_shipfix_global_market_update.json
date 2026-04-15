@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-06-02_2023_06_02_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-06-02_2023_06_02_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nFollowing Wednesday's disappointing official Chinese PMI data, which raised concern over the strength of the Chinese economy and the demand outlook for commodities, today's release of the Caixin PMI for the manufacturing sector painted a somewhat different picture. The gauge, which S&P Global compiles, surprised on the upside and indicated that Chinese factory activity expanded slightly in May. While the Caixin gauge has a greater focus on smaller and more export-oriented businesses than the official PMI, the contradictory signals highlight the growing uncertainty over the direction of the world's second-largest economy.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1194,
+  "token_count": 1531,
   "source_path": "reports/breakwave/2023/2023-06-02_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/6/2/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 189,
+      "token_count": 242,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-06-02_2023_06_02_shipfix_global_market_update__s06_linked_asset_2023_06_02_shipfix_global_market_update_img_unnamed_2023_06_02t133046980_bb538669cae1_png",
+      "doc_id": "breakwave_insights_insights_2023-06-02_2023_06_02_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-06-02_2023_06_02_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-06-02_shipfix-global-market-update_img_unnamed-2023-06-02t133046980_bb538669cae1.png",
+      "section_path": [
+        "Linked asset: 2023-06-02_shipfix-global-market-update_img_unnamed-2023-06-02t133046980_bb538669cae1.png"
+      ],
+      "section_path_text": "Linked asset: 2023-06-02_shipfix-global-market-update_img_unnamed-2023-06-02t133046980_bb538669cae1.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-06-02_shipfix-global-market-update_img_unnamed-2023-06-02t133046980_bb538669cae1.png\n\nLinked image asset: 2023-06-02_shipfix-global-market-update_img_unnamed-2023-06-02t133046980_bb538669cae1.png\n\nImage metadata: PNG 1092x618 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Copper Shipped as Dry Bulk by Destination\n@ Restofthe world ™@§ China\n2.5\n2\n1.5\n0\na\nc\nc\n2\nc\n2\n= 4\n0.5\n0\nOct-21. Nov-21 Dec-21 Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jun-22 Jul-22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 Jan-23 Feb-23 Mar-23 Apr-23 May-23\nData source: Shipfix",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "source",
+        "apr-22",
+        "apr-23",
+        "aug-22",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

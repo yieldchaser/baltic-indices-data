@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-06-21_2023_06_21_sentiment_weak_as_chinese_rate_cuts_fall_below_expectations__root",
   "doc_id": "breakwave_insights_insights_2023-06-21_2023_06_21_sentiment_weak_as_chinese_rate_cuts_fall_below_expectations",
   "parent_id": null,
-  "title": "Sentiment Weak As Chinese Rate Cuts Fall Below Expectations",
+  "title": "Sentiment weak as Chinese rate cuts fall below expectations",
   "section_path": [
-    "Sentiment Weak As Chinese Rate Cuts Fall Below Expectations"
+    "Sentiment weak as Chinese rate cuts fall below expectations"
   ],
-  "section_path_text": "Sentiment Weak As Chinese Rate Cuts Fall Below Expectations",
+  "section_path_text": "Sentiment weak as Chinese rate cuts fall below expectations",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nDisappointment over Chinese stimulus measures continued to hover over markets. A stronger USD also weighed on investor appetite. Crude oil fell amid a broader risk-off tone across markets.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 586,
+  "token_count": 1048,
   "source_path": "reports/breakwave/2023/2023-06-21_sentiment-weak-as-chinese-rate-cuts-fall-below-expectations.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/6/21/sentiment-weak-as-chinese-rate-cuts-fall-below-expectations",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 584,
+      "token_count": 637,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-06-21_2023_06_21_sentiment_weak_as_chinese_rate_cuts_fall_below_expectations__s02_linked_asset_2023_06_21_sentiment_weak_as_chinese_rate_cuts_fall_below_expectations_img_1687299519524_b3e9acef991f_png",
+      "doc_id": "breakwave_insights_insights_2023-06-21_2023_06_21_sentiment_weak_as_chinese_rate_cuts_fall_below_expectations",
+      "parent_id": "breakwave_insights_insights_2023-06-21_2023_06_21_sentiment_weak_as_chinese_rate_cuts_fall_below_expectations__root",
+      "title": "Linked asset: 2023-06-21_sentiment-weak-as-chinese-rate-cuts-fall-below-expectations_img_1687299519524_b3e9acef991f.png",
+      "section_path": [
+        "Linked asset: 2023-06-21_sentiment-weak-as-chinese-rate-cuts-fall-below-expectations_img_1687299519524_b3e9acef991f.png"
+      ],
+      "section_path_text": "Linked asset: 2023-06-21_sentiment-weak-as-chinese-rate-cuts-fall-below-expectations_img_1687299519524_b3e9acef991f.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-06-21_sentiment-weak-as-chinese-rate-cuts-fall-below-expectations_img_1687299519524_b3e9acef991f.png\n\nLinked image asset: 2023-06-21_sentiment-weak-as-chinese-rate-cuts-fall-below-expectations_img_1687299519524_b3e9acef991f.png\n\nImage metadata: PNG 1571x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 19-Jun = Tue 20-Jun % chg Daily % chg Daily % chg\nCCI 407.51 405.00 -0.6% Brent crude 75.48 -0.8% Nickel 21,914 -2.1%\nPrecious 678.72 673.11 -0.8% Thermal coal 126.55 -1.4% Aluminium 2,206 -0.4%\nIndustrials 378.64 377.07 -0.4% JKM LNG swaps 12.74 Gold 1,936 -0.7%\nBulks 536.58 534.02 -0.5% European carbon 94.85 Palladium 1,402\nAgs 289.78 289.50 -0.1% ACCU 33.75 -2.2% Iron Ore 112.2 -1.3%\nEnergy 421.39 417.22 -1.0% Copper 8,551 Wheat 462 -0.3%",
+      "keywords": [
+        "lng",
+        "china",
+        "europe",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 364,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

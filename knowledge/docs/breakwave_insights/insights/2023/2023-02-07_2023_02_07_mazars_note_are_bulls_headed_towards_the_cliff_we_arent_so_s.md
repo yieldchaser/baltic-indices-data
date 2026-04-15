@@ -25,7 +25,95 @@ keywords:
 - one
 - investors
 - best
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 9
+numeric_observations:
+- section: Summary
+  section_type: null
+  source_line: Equity and bond markets continue to rally, with the FTSE 100 hitting
+    all-time highs last week.
+  unit: null
+  values:
+  - 100.0
+- section: Summary
+  section_type: null
+  source_line: However, the economic realities of last week are in antithesis with
+    this bull market. In the past fifteen days, the Fed raised rates into a cooling
+    economy and warned markets that it will continue to do so in the coming months.
+    Friday's great US jobs data will
+  unit: pct
+  values:
+  - 500.0
+  - 10.0
+  - -18.0
+- section: Summary
+  section_type: null
+  source_line: The S&P 500, the world's leading equity indicator continued to rally,
+    closing the week just 12% below its record levels levels, making up for more than
+    half of the losses incurred last year. The US 10y yield, meanwhile, remains anchored
+    around 3.5%, significan
+  unit: pct
+  values:
+  - 500.0
+  - 12.0
+  - 3.5
+  - 4.2
+  - 100.0
+- section: Summary
+  section_type: null
+  source_line: The statement above is difficult to reconcile with the realities of
+    the last two weeks. In the past fifteen days, the Fed raised rates into a cooling
+    economy and warned markets that it will continue to do so in the coming months.
+    Friday's great US jobs data wi
+  unit: null
+  values:
+  - 500.0
+- section: Summary
+  section_type: null
+  source_line: Earnings analysts warn that present valuations are low, and earnings
+    could fall in the coming quarter as they don't encompass the type of significant
+    deterioration (10%-18%) we would see in a recession.
+  unit: pct
+  values:
+  - 10.0
+  - -18.0
+- section: Summary
+  section_type: null
+  source_line: Is it that incomprehensible that Investors who have been yield-starved
+    for years find 3% and 4% investment grade and sovereign valuations attractive?
+    Or that, considering past returns, investors are coming back after a bad year?
+  unit: pct
+  values:
+  - 3.0
+  - 4.0
+- section: Summary
+  section_type: null
+  source_line: 'Of course, volatility and surprises are still with us. So investors
+    should expect pullbacks. But this is a healthy market, going from gloom to boom
+    and vice versa. What''s healthy about it? That optimism is not policy-dictated.
+    Those who decide to invest today '
+  unit: null
+  values:
+  - 4200.0
+  - 500.0
+  - 3500.0
+- section: Summary
+  section_type: null
+  source_line: UK Q4 GDP (10th Feb)
+  unit: null
+  values:
+  - 10.0
+- section: Summary
+  section_type: null
+  source_line: Chinese liquidity data and PPI (10th Feb)
+  unit: null
+  values:
+  - 10.0
 regions:
 - china
 - brazil

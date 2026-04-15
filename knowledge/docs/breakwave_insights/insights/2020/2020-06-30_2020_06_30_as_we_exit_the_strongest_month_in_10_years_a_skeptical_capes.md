@@ -26,7 +26,54 @@ keywords:
 - now
 - remain
 - all
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'A June for the records, as Capesize rates surged 10-fold , from around
+    3,000 at the beginning of the month to more than 30,000, in a relentless rally
+    that caught lot of market participants by surprise and has now brought the spot
+    market to a new level for the '
+  unit: null
+  values:
+  - 10.0
+  - 3000.0
+  - 30000.0
+- section: Main
+  section_type: null
+  source_line: 'However, freight traders remain unimpressed when judged by the reaction
+    in futures, that although initially followed the spot market higher, more recently
+    have failed to reflect any optimism about the future: Capesize futures for the
+    second half of the year tr'
+  unit: null
+  values:
+  - 18500.0
+  - 30000.0
+- section: Main
+  section_type: null
+  source_line: Yet, price has a way to change sentiment fast, and charterers and miners
+    alike need to try and put a lid on the freight cost increases they have experienced
+    in the last few weeks. That might end up being tough, as they are also under the
+    pressure of time and t
+  unit: usd
+  values:
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: Looking at the futures, the third quarter Capesize futures contract
+    has traded around 20,000-22,000 for almost two weeks now, a level we though will
+    lead to a breather in the futures rally, despite the continuing increase in the
+    spot during that period. We now
+  unit: null
+  values:
+  - 20000.0
+  - -22000.0
 regions:
 - china
 - brazil

@@ -26,7 +26,51 @@ keywords:
 - was
 - august
 - indonesia
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's coal import data for August by origin was recently released
+    and showed that imports from Indonesia have remained China's primary source and
+    Russia the second largest source. Imports from Indonesia totaled 15.8 million
+    tons, which is up from July by 4.1
+  unit: pct
+  values:
+  - 15.8
+  - 4.1
+  - 35.0
+  - 1.6
+  - -9.0
+- section: Main
+  section_type: null
+  source_line: Imports from Russia totaled 8.5 million tons, which is up from July
+    by 1.1 million tons (15%) and up year-on-year by 3.1 million tons (57%). Imports
+    from Russia have continued to find significant strength, as we have anticipated,
+    in the months since April's ta
+  unit: pct
+  values:
+  - 8.5
+  - 1.1
+  - 15.0
+  - 3.1
+  - 57.0
+  - 6.0
+  - 6.8
+  - 3.4
+- section: Main
+  section_type: null
+  source_line: Also of note is that China finally imported coal from Australia again,
+    albeit only a very small amount. Imports from Australia totaled 100,000 tons.
+    This has marked the first time that Australian coal has been imported since March.
+  unit: null
+  values:
+  - 100000.0
 regions:
 - china
 - brazil

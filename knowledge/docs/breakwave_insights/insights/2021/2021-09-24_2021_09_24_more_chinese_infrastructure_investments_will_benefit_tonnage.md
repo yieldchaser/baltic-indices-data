@@ -28,7 +28,44 @@ keywords:
 - demand
 - infrastructure
 - tonnage
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The ongoing fallout of the Evergrande debacle is eventually leading
+    to some political consequences. At the same time as Beijing appears reluctant
+    to bail out the ailing property developer, the Chinese government has vowed to
+    stabilise the economy as it is faci
+  unit: null
+  values:
+  - 2021.0
+  - -25.0
+  - 10.0
+  - 1.5
+- section: Main
+  section_type: null
+  source_line: Despite the often grim headlines, the Chinese steel production is still
+    high in a historical context, and global iron ore production is still below the
+    highs recorded in 2018, before Vale's dam incident. Hence, the iron ore market
+    remains tight, with prices hi
+  unit: null
+  values:
+  - 2018.0
+- section: Main
+  section_type: null
+  source_line: The current congestion in and around many ports in China have contributed
+    to the Baltic Dry Index reaching its highest level since 2009. A record number
+    of vessels are currently waiting to discharge their cargo, but pandemic-related
+    delays keep the ships idle.
+  unit: null
+  values:
+  - 2009.0
 regions:
 - china
 - brazil

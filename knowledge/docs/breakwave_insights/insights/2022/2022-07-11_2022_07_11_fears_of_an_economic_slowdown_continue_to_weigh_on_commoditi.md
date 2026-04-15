@@ -26,7 +26,57 @@ keywords:
 - amid
 - are
 - demand
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Base metals fell sharply last week amid concerns over global growth.
+    Copper suffered its fifth consecutive weekly loss as central banks plough ahead
+    with aggressive tightening to tackle persistently high inflation. Sentiment was
+    briefly lifted after reports th
+  unit: usd
+  values:
+  - 24.0
+  - 19.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: Crude oil ended the week lower as recessionary fears overshadowed a
+    fundamentally tight physical market. Investors continue to reduce their bullish
+    bets as restrictive monetary policy raises the risk of slower economic growth.
+    Net long positions in WTI crude f
+  unit: usd
+  values:
+  - 2020.0
+  - 19.0
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: European gas eased lower on Friday as fears of further tightening of
+    Russia supplies eased. Germany expects Canada to release a key part of Russia's
+    pipeline turbine that has curtailed flows to only 40% of capacity. Even so, Gazprom
+    was said six other turbines
+  unit: worldscale_pct
+  values:
+  - 40.0
+  - 18.5
+  - 75.0
+- section: Main
+  section_type: null
+  source_line: The prospect of further disruption to supplies pushed coal prices higher.
+    Rail haulage companies in NSW's Hunter Valley suspended coal export services and
+    closed rail links between the mine and port. Futures based on Newcastle FOB spot
+    price surged 5% to USD41
+  unit: pct
+  values:
+  - 5.0
+  - 12.0
 regions:
 - china
 - brazil

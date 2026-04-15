@@ -24,7 +24,81 @@ keywords:
 - all
 - banks
 - fearful
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 7
+numeric_observations:
+- section: A bank, the Fed, a ceiling and the (short-term absence) of fear
+  section_type: null
+  source_line: -Warren Buffet, letter to Shareholders 2004
+  unit: null
+  values:
+  - 2004.0
+- section: A bank, the Fed, a ceiling and the (short-term absence) of fear
+  section_type: null
+  source_line: 'Another week, another regional bank failure. First Republic, a 37-year-old
+    bank from San Francisco became the third US regional bank and fourth in a row
+    to fail (including Credit Suisse). Apart from the actual day of the failure, curiously
+    a Monday as opposed '
+  unit: null
+  values:
+  - 37.0
+- section: A bank, the Fed, a ceiling and the (short-term absence) of fear
+  section_type: null
+  source_line: When rates are high, smaller lending organisations may fail. It's part
+    of the game. SVB and Signature have gone under and First Republic followed. Those
+    knowledgeable in financial history will be familiar with the Savings and Loans
+    crisis. Between 1986 and 199
+  unit: null
+  values:
+  - 1986.0
+  - 1995.0
+  - 3234.0
+  - 1.0
+  - 2.0
+  - 3.0
+- section: A bank, the Fed, a ceiling and the (short-term absence) of fear
+  section_type: null
+  source_line: that the bank was allowed to fail on a Monday instead of a Friday (which
+    would give markets some time to digest the news) suggests that regulators didn't
+    fear a market backlash. On Monday (the US market was open) stocks barely moved
+    on the news, ending the ses
+  unit: null
+  values:
+  - 10.0
+- section: A bank, the Fed, a ceiling and the (short-term absence) of fear
+  section_type: null
+  source_line: And with all that happening, we are closing in on the much-anticipated
+    debt ceiling fight in US Congress. In his 1989 book Secrets of the Temple[2],
+    William Greider points to the perennial disconnect between Wall Street and Washington
+    DC. Just as markets aren'
+  unit: null
+  values:
+  - 1989.0
+  - 2.0
+- section: A bank, the Fed, a ceiling and the (short-term absence) of fear
+  section_type: null
+  source_line: 'To go back to the quote at the beginning, Warren Buffet''s quote reminds
+    us to be "fearful when others are greedy and greedy when others are fearful".
+    By "others", the Oracle of Omaha meant the faceless market. But policymakers (central
+    bankers, lawmakers) are '
+  unit: null
+  values:
+  - 3.0
+- section: A bank, the Fed, a ceiling and the (short-term absence) of fear
+  section_type: null
+  source_line: Bill Clinton's focus on all Americans owning their home and Ronald
+    Reagan's market reforms led to the 2007 Global Financial Crisis, well after their
+    term in office. The previous administration's decision to loosen regulations for
+    smaller banks[4] arguably cont
+  unit: null
+  values:
+  - 2007.0
+  - 4.0
 regions:
 - china
 - brazil

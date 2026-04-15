@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-11-06_2023_11_06_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-11-06_2023_11_06_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nDespite a rebound on Friday for the Capesizes, the past week saw dry bulk spot freight rates continuing to decline. The headline BDI shed more than six per cent as cargo order volumes remained under pressure. Among the commodities, iron ore was one of the past week's winners as investors upgraded their expectations for Chinese demand.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1669,
+  "token_count": 2009,
   "source_path": "reports/breakwave/2023/2023-11-06_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/11/6/shipfix-global-market-update",
   "children": [
@@ -166,8 +166,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 333,
+      "token_count": 388,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-06_2023_11_06_shipfix_global_market_update__s06_linked_asset_2023_11_06_shipfix_global_market_update_img_unnamed_2023_11_06t172527982_a5f304d77830_png",
+      "doc_id": "breakwave_insights_insights_2023-11-06_2023_11_06_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-11-06_2023_11_06_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png",
+      "section_path": [
+        "Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png\n\nLinked image asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png\n\nImage metadata: PNG 1120x632 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Cargo Order Volumes (TCT & Voyage) for Steel Products Loading in China\n= Average cargo size M® Cargo order volumes\n2 40\n15 30\ne 4 2 «§\n= 2\n8 $\n- id)\n= 2\n=\n05 10\n) )\nDP WP WP po po po oP ap qo oP ap qo oP ap? qP pP oP WP oP\n9% OOO 00 09 OM GG iH GAIN 1 ai PIA PAHO GO\nData source: Shipfix",
+      "keywords": [
+        "china",
+        "products",
+        "steel",
+        "cargo",
+        "asset",
+        "image",
+        "order",
+        "source"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 246,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

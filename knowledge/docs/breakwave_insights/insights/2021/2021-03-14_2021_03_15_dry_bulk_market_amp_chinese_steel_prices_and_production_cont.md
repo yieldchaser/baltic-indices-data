@@ -27,7 +27,63 @@ keywords:
 - million
 - last
 - remain
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Dry bulk rates increased across the board again last week, with Capesize
+    rates and handysize rates finding the largest amount of support. Capesize rates
+    - while still lagging the strength in the rest of the market - are at firm levels
+    and iron ore trade prospe
+  unit: null
+  values:
+  - 20.0
+  - 45.0
+- section: Main
+  section_type: null
+  source_line: As we have been discussing in our Weekly Dry Bulk Reports, the drivers
+    that have been supporting the strength in the panamax, handymax, and handysize
+    markets remain intact. Grain trade expectations have also recently become even
+    more bullish. The United States
+  unit: pct
+  values:
+  - 2020.0
+  - 21.0
+  - 474.0
+  - 4.7
+  - 1.0
+  - 31.1
+  - 7.0
+  - 169.7
+  - 4.5
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: Spooking the market last week, though, was the announcement that authorities
+    in Tangshan held a meeting to cut steel output due to air pollution. Tangshan
+    is located next to Beijing, and as we have been detailing in our Weekly China
+    Reports air pollution has b
+  unit: pct
+  values:
+  - 1.5
+- section: Main
+  section_type: null
+  source_line: 'Chinese steel prices continue to find support. The average price of
+    hot rolled coil, for example, ended last week at approximately 5,065 yuan/ton
+    ($779), which is 65 yuan (1%) more than a week ago. Prices have continued to set
+    new highs for this year and have '
+  unit: pct
+  values:
+  - 5065.0
+  - 779.0
+  - 65.0
+  - 1.0
 regions:
 - china
 - brazil

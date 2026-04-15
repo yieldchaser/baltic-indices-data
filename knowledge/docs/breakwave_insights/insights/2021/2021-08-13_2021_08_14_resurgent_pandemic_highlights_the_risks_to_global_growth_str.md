@@ -25,7 +25,32 @@ keywords:
 - disruptions
 - add
 - cargo
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The news that Chinese authorities have ordered a partial closure of
+    the world's third-largest container port, following the discovery of COVID-19
+    infection among the workforce at one of the terminals, serves as a timely reminder
+    that the pandemic and the disru
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: While the recent headlines have been focused on container shipping,
+    the resurgent Covid pandemic in China has also affected cargo operations beyond
+    that sector. The last few weeks have seen increasing congestion in and around
+    many ports handling dry bulk commo
+  unit: null
+  values:
+  - 80.0
 regions:
 - china
 - brazil

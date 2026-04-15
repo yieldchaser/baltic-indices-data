@@ -27,7 +27,61 @@ keywords:
 - demand
 - many
 - chinese
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Any notions that the Chinese New Year would send iron prices lower
+    have so far been unfounded. On the contrary, prices for iron ore for delivery
+    to Tianjin have rebounded to the 160 dollars per tonne territory, after a sharp
+    drop during the second half of Janu
+  unit: null
+  values:
+  - 160.0
+- section: Main
+  section_type: null
+  source_line: Iron Ore Prices, 2016-2021 (USD/tonne)
+  unit: usd_per_unit
+  values:
+  - 2016.0
+  - -2021.0
+- section: Main
+  section_type: null
+  source_line: The mood among many market watchers has also turned bullish for the
+    coming months, with Credit Suisse upgrading their price forecast for the first
+    half of the year by 55 percent to 170 USD per tonne. American investment bank
+    Citi also expects demand for seabor
+  unit: usd_per_unit
+  values:
+  - 55.0
+  - 170.0
+  - 30.0
+  - 70.0
+- section: Main
+  section_type: null
+  source_line: Given China's dominant position in the iron ore market, with some 70
+    percent of the seaborne market, much of the current focus is on the timing of
+    any tapering of the ongoing stimulus spending. There are expectations that the
+    Chinese leadership will reduce spe
+  unit: null
+  values:
+  - 70.0
+- section: Main
+  section_type: null
+  source_line: Data from Refinitiv suggest that seaborne iron ore discharged at ports
+    outside of China grew by some three percent in January, compared to a year ago.
+    Considering that most part of the world were still unaffected by the pandemic
+    in January 2020, it suggests th
+  unit: null
+  values:
+  - 2020.0
+  - 50.0
 regions:
 - china
 - brazil

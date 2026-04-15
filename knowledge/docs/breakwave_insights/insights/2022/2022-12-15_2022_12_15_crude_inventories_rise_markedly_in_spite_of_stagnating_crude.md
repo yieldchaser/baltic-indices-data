@@ -28,7 +28,87 @@ keywords:
 - mbd
 - are
 - arrivals
+linked_assets_discovered: 13
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 13
 market_tone: cautiously_bearish
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Seaborne crude/condensate arrivals around the globe rose marginally
+    250kbd m-o-m in November, with liftings staying essentially unchanged. However,
+    global onshore inventories grew for the second consecutive month in November,
+    close to 50mb or 1.6mbd. The fact '
+  unit: null
+  values:
+  - 250.0
+  - 50.0
+  - 1.6
+- section: Main
+  section_type: null
+  source_line: 'Exports of Russian crude remained stable in November around 3.1mbd
+    ahead of European sanctions taking effect. The huge majority of Russian crude
+    oil will not target either China or India. November seaborne arrivals into these
+    two markets have been slightly up '
+  unit: null
+  values:
+  - 3.1
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: Regardless, the biggest problem currently is Turkey's blockade of the
+    Bosporus and Dardanelles, holding up around 25 Aframax and Suezmax tankers at
+    the time of writing. Curiously enough, only two of these tankers appear to carry
+    Urals crude, while all the othe
+  unit: null
+  values:
+  - 25.0
+- section: Main
+  section_type: null
+  source_line: European imports of crude/condensates are down m-o-m for the second
+    consecutive month to 8.4mbd . Noticeably, there has been an uptake in cargoes
+    from the US. The US is currently exporting at record levels, and due to its proximity
+    to Europe and its need to ph
+  unit: null
+  values:
+  - 8.4
+- section: Main
+  section_type: null
+  source_line: China's seaborne imports exceeded 10mbd for the first time since March
+    2021, up for the fourth month in a row. Arrivals from all regions have either
+    been stable or increased, apart from Africa which saw a 200kbd m-o-m decline,
+    as the October spike in flows pro
+  unit: null
+  values:
+  - 10.0
+  - 2021.0
+  - 200.0
+  - 1.1
+  - 31.0
+- section: Main
+  section_type: null
+  source_line: OPEC (excl. Iran and Venezuela) loadings were down 1.1mbd in November
+    . Most countries saw monthly declines, including the core producers in the Middle
+    East as well as the North African member countries. Only Angola and Nigeria managed
+    to increase their export
+  unit: usd
+  values:
+  - 1.1
+  - 200.0
+  - 80.0
+- section: Main
+  section_type: null
+  source_line: Meanwhile, Atlantic Basin crude supply remains ample. Even though there
+    has been a m-o-m drop in loadings of about 300kbd , average Oct/Nov liftings are
+    up about 1.55mbd from year-ago levels. Kazakhstan and Norway added most supplies
+    last month, while the US m
+  unit: null
+  values:
+  - 300.0
+  - 1.55
 regions:
 - china
 - brazil

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
   "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
   "parent_id": null,
-  "title": "Did You Know",
+  "title": "Did you Know?",
   "section_path": [
-    "Did You Know"
+    "Did you Know?"
   ],
-  "section_path_text": "Did You Know",
+  "section_path_text": "Did you Know?",
   "level": 0,
   "ordinal": 0,
   "summary": "1.Seawise Giant\nSeawise Giant was the longest self-propelled ship in history, built in 1974-1979. The heaviest self-propelled ship of any kind, and with a laden draft of 24.6 m (81 ft), she was incapable of navigating the English Channel,[5] the Suez Canal or the Panama Canal. She was sunk in 1988 during the Iran-Iraq War, but was later salvaged and restored to service.",
@@ -26,12 +26,36 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 257,
+  "token_count": 1532,
   "source_path": "reports/breakwave/2023/2023-03-24_did-you-know.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/24/did-you-know",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s01_1_seawise_giant",
+      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: 1 (7).png | assets/2023-03-24_did-you-know_img_128729_6ae82f1f92f6.png",
+      "keywords": [
+        "assets/2023-03-24_did-you-know_img_128729_6ae82f1f92f6.png",
+        "image",
+        "png",
+        "reference"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 37,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s02_1_seawise_giant",
       "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
       "title": "1.Seawise Giant",
@@ -40,26 +64,26 @@
       ],
       "section_path_text": "1.Seawise Giant",
       "level": 1,
-      "ordinal": 1,
-      "summary": "Seawise Giant was the longest self-propelled ship in history, built in 1974-1979. The heaviest self-propelled ship of any kind, and with a laden draft of 24.6 m (81 ft), she was incapable of navigating the English Channel,[5] the Suez Canal or the Panama Canal.",
+      "ordinal": 2,
+      "summary": "Image reference: Knock_Nevis.jpg | assets/2023-03-24_did-you-know_img_knock-nevis_0d2ff2ee967c.jpg\nSeawise Giant was the longest self-propelled ship in history, built in 1974-1979. The heaviest self-propelled ship of any kind, and with a laden draft of 24.6 m (81 ft), she was incapable of navigating the English Channel,[5] the Suez Canal or the Panama Canal.",
       "keywords": [
         "was",
         "self-propelled",
         "she",
         "ship",
         "any",
+        "assets/2023-03-24_did-you-know_img_knock-nevis_0d2ff2ee967c.jpg",
         "built",
-        "but",
-        "canal"
+        "but"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 93,
+      "token_count": 130,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s02_2_pierre_guillaumat",
+      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s03_2_pierre_guillaumat",
       "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
       "title": "2.Pierre Guillaumat",
@@ -68,26 +92,26 @@
       ],
       "section_path_text": "2.Pierre Guillaumat",
       "level": 1,
-      "ordinal": 2,
+      "ordinal": 3,
       "summary": "Built in 1977, Pierre Guillaumat was one of four Batillus class supertankers. It had a length of 414.23 m (1,359 ft), a deadweight tonnage of 555,051, a gross tonnage of 274,837 and was named after the French politician.",
       "keywords": [
         "tonnage",
         "was",
         "after",
+        "assets/2023-03-24_did-you-know_img_1_a8cc668552a5.png",
         "batillus",
         "built",
         "class",
-        "deadweight",
-        "four"
+        "deadweight"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 66,
+      "token_count": 96,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s03_3_prairial",
+      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s04_3_prairial",
       "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
       "title": "3.Prairial",
@@ -96,22 +120,134 @@
       ],
       "section_path_text": "3.Prairial",
       "level": 1,
-      "ordinal": 3,
+      "ordinal": 4,
       "summary": "Similar to the other Batillus class oil tankers, Prairial was built in the Chantiers de l'Atlantique shipyard located in Saint-Nazaire, France. It measures an impressive 414.22 m or 1,359.0 feet in length.",
       "keywords": [
         "crude_oil",
         "was",
         "its",
         "tonnage",
+        "assets/2023-03-24_did-you-know_img_13c7203c0_b01fa54d42bb.jpg",
         "atlantique",
         "batillus",
-        "built",
-        "chantiers"
+        "built"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 79,
+      "token_count": 119,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s05_linked_asset_2023_03_24_did_you_know_img_128729_6ae82f1f92f6_png",
+      "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
+      "title": "Linked asset: 2023-03-24_did-you-know_img_128729_6ae82f1f92f6.png",
+      "section_path": [
+        "Linked asset: 2023-03-24_did-you-know_img_128729_6ae82f1f92f6.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-24_did-you-know_img_128729_6ae82f1f92f6.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-24_did-you-know_img_128729_6ae82f1f92f6.png\n\nLinked image asset: 2023-03-24_did-you-know_img_128729_6ae82f1f92f6.png\n\nImage metadata: PNG 826x324 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nDID YOU KNOW ? What were the 3 biggest tankers ever built?",
+      "keywords": [
+        "asset",
+        "image",
+        "biggest",
+        "built",
+        "did",
+        "did-you-know_img_128729_6ae82f1f92f6.png",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 118,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s06_linked_asset_2023_03_24_did_you_know_img_knock_nevis_0d2ff2ee967c_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
+      "title": "Linked asset: 2023-03-24_did-you-know_img_knock-nevis_0d2ff2ee967c.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-24_did-you-know_img_knock-nevis_0d2ff2ee967c.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-24_did-you-know_img_knock-nevis_0d2ff2ee967c.jpg",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-24_did-you-know_img_knock-nevis_0d2ff2ee967c.jpg\n\nLinked image asset: 2023-03-24_did-you-know_img_knock-nevis_0d2ff2ee967c.jpg\n\nImage metadata: JPEG 300x193 mode=RGB\n\n[OCR skipped for small image (< 90000 pixels).]",
+      "keywords": [
+        "image",
+        "asset",
+        "did-you-know_img_knock-nevis_0d2ff2ee967c.jpg",
+        "jpeg",
+        "linked",
+        "metadata",
+        "mode",
+        "ocr"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 94,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s07_linked_asset_2023_03_24_did_you_know_img_1_a8cc668552a5_png",
+      "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
+      "title": "Linked asset: 2023-03-24_did-you-know_img_1_a8cc668552a5.png",
+      "section_path": [
+        "Linked asset: 2023-03-24_did-you-know_img_1_a8cc668552a5.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-24_did-you-know_img_1_a8cc668552a5.png",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-24_did-you-know_img_1_a8cc668552a5.png\n\nLinked image asset: 2023-03-24_did-you-know_img_1_a8cc668552a5.png\n\nImage metadata: PNG 900x783 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nTil el\na |\n\"* ~ ps \"Sf iv vaate PA a a a } ;\n5 ‘et yaa a \"9 }\nrl -- ; iA\ni Y fas TE NR? Di Saye Ted P / \" |\nfo oe OR ey ond - Va |\n} ie : _- yy Poy te - ie .",
+      "keywords": [
+        "asset",
+        "image",
+        "did-you-know_img_1_a8cc668552a5.png",
+        "dpi",
+        "embedded",
+        "fas",
+        "hemes",
+        "if."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 347,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__s08_linked_asset_2023_03_24_did_you_know_img_13c7203c0_b01fa54d42bb_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-24_2023_03_24_did_you_know__root",
+      "title": "Linked asset: 2023-03-24_did-you-know_img_13c7203c0_b01fa54d42bb.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-24_did-you-know_img_13c7203c0_b01fa54d42bb.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-24_did-you-know_img_13c7203c0_b01fa54d42bb.jpg",
+      "level": 1,
+      "ordinal": 8,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-24_did-you-know_img_13c7203c0_b01fa54d42bb.jpg\n\nLinked image asset: 2023-03-24_did-you-know_img_13c7203c0_b01fa54d42bb.jpg\n\nImage metadata: JPEG 800x572 mode=RGB\n\nOCR text:\ncg ee gts a gn\nee Sa oe ea Re hn RE or\nSe ee |\neae game on ------- a a a a a ed\nRe ie ht eee ee SS ee eee ee ? a\na SS Se = :\nBR - kt ee -q_=- =a\na_i\na _ > = oS - oa he - - -\nas = || ie ;\nSs) eee See ile SS a a F\na5 eA ta ee -- Ke is Le Peon pee ME i\n= i} = ~ a a | ee ES ak\noj ee ete - l| : Ere ij a ~ es 8\n=< - .",
+      "keywords": [
+        "eee",
+        "asset",
+        "ete",
+        "image",
+        "a_i",
+        "aaa",
+        "aie",
+        "ais"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 448,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

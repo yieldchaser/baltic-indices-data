@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-05-12_2023_05_12_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-05-12_2023_05_12_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\nMacro/Geopolitics\nIn a further sign that the past year's interest rate hikes by the Federal Reserve are starting to have an effect, the annual US inflation rate fell below five per cent for the first time in two years. Consumer prices rose by 4.9 per cent in April compared to the same month last year, marginally less than the 5.0 per cent expected by the market. The lower-than-expected reading will provide the US central bank with more room for manoeuvre as it has to manage concerns over the stability of the banking sector and a potential US default should an agreement over the debt ceiling not be reached.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1327,
+  "token_count": 1656,
   "source_path": "reports/breakwave/2023/2023-05-12_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/5/12/shipfix-global-market-update",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1325,
+      "token_count": 1380,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-12_2023_05_12_shipfix_global_market_update__s02_linked_asset_2023_05_12_shipfix_global_market_update_img_unnamed_2023_05_12t110853798_1079ae745b00_png",
+      "doc_id": "breakwave_insights_insights_2023-05-12_2023_05_12_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-05-12_2023_05_12_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-05-12_shipfix-global-market-update_img_unnamed-2023-05-12t110853798_1079ae745b00.png",
+      "section_path": [
+        "Linked asset: 2023-05-12_shipfix-global-market-update_img_unnamed-2023-05-12t110853798_1079ae745b00.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-12_shipfix-global-market-update_img_unnamed-2023-05-12t110853798_1079ae745b00.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-12_shipfix-global-market-update_img_unnamed-2023-05-12t110853798_1079ae745b00.png\n\nLinked image asset: 2023-05-12_shipfix-global-market-update_img_unnamed-2023-05-12t110853798_1079ae745b00.png\n\nImage metadata: PNG 926x524 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Steel Products Loading in China as Dry Bulk\n~= Average cargo size [ Ordervolumes\n8 40\n6 30\no Sf . - 4 AN 7 = 2 268\n=\n2 10\n0 0\naS a gS ad gh aN gd » ayy ang aaa a th oD aaa Ng > ?",
+      "keywords": [
+        "china",
+        "products",
+        "steel",
+        "aaa",
+        "asset",
+        "cargo",
+        "image",
+        "source"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

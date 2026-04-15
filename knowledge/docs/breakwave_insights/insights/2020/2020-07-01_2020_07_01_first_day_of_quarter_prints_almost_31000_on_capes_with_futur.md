@@ -26,7 +26,14 @@ keywords:
 - sharp
 - above
 - against
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 0
+numeric_observations: []
 regions:
 - china
 - brazil

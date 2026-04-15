@@ -27,7 +27,25 @@ keywords:
 - copper
 - expansion
 - gold
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The continued strength of the Chinese economy keeps pushing market
+    prices of industrial commodities higher, with iron ore, copper, and aluminum currently
+    at multi-year highs. Copper, the third most used metal in the world, has gained
+    more than sixty percent fr
+  unit: null
+  values:
+  - 2013.0
+  - 9.0
+  - 2016.0
 regions:
 - china
 - brazil

@@ -28,7 +28,41 @@ keywords:
 - chinese
 - restrictions
 - are
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: With a bit of selective reading it is possible to become rather optimistic
+    about the immediate future for the global economy, with Chinese industrial production
+    expanding and business activities in the service industry at the highest levels
+    in a decade. Likewi
+  unit: null
+  values:
+  - 9.0
+- section: Main
+  section_type: null
+  source_line: Incoming Treasury Secretary, Janet Yellen, is also likely to have less
+    tools at her disposal to stimulate the weak economy than many of her predecessors
+    had, as many measures are still in place after the financial crisis a decade ago.
+    However, there is an incr
+  unit: null
+  values:
+  - 908.0
+- section: Main
+  section_type: null
+  source_line: The Brazilian mining giant, Vale, also presented its own set of disappointing
+    numbers this week, with this year's iron ore production to fall below previously
+    stated targets. Unlike elsewhere, the pandemic is only part of the problem and
+    the production still s
+  unit: null
+  values:
+  - 2019.0
 regions:
 - china
 - brazil

@@ -26,7 +26,49 @@ keywords:
 - during
 - housing
 - marked
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we have been stressing in Commodore's Weekly Dry Bulk Reports, China's
+    consumer recovery remains underway and we expect that its industrial recovery
+    will resume this quarter. The housing market is set to remain a significant problem
+    however. China's housing
+  unit: null
+  values:
+  - 2016.0
+- section: Main
+  section_type: null
+  source_line: 'China''s steel production has continued to improve at least. Recently
+    released data showed that daily crude steel production at large and medium-sized
+    mills in China averaged 2.27 million tons during Jun 11 - 20. This has marked
+    a 2% increase from the previous '
+  unit: pct
+  values:
+  - 2.27
+  - 11.0
+  - 20.0
+  - 2.0
+  - 0.5
+- section: Main
+  section_type: null
+  source_line: Also noteworthy and bullish in the Chinese steel market is that steel
+    prices have been climbing in recent weeks. The average price of hot rolled coil
+    in China ended last week at 4,005 yuan/ton ($551), which is 5 yuan more than a
+    week ago. Prices have now incre
+  unit: pct
+  values:
+  - 4005.0
+  - 551.0
+  - 5.0
+  - 505.0
+  - -11.0
 regions:
 - china
 - brazil

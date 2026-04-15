@@ -25,7 +25,51 @@ keywords:
 - but
 - come
 - last
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Markets crashed at the back end of last week, as US inflation surprised
+    again on the upside, registering a new cycle-high. The S&P 500 is back below 4000
+    points, as investors are pricing in a more aggressive policy stance.
+  unit: null
+  values:
+  - 500.0
+  - 4000.0
+- section: Main
+  section_type: null
+  source_line: Frankly, we are somewhat surprised also. Not by persisting inflation
+    but by the fact that markets seem surprised. Often, forecasters get hung up on
+    the year-on-year effect on the numbers. Inflation was already up 5% in April 2021,
+    the thinking goes. Therefore,
+  unit: pct
+  values:
+  - 5.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: China especially is a big cause for concern. Its zero-Covid policy,
+    following a crackdown on key industries in the past twelve months, is forcing
+    developed market firms to reconsider their supply chains. This is, in and by itself,
+    a cause for a 2-3 year inflat
+  unit: null
+  values:
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: However, this time around, timing may not be so convenient. The reasons
+    behind this inflationary bout are serious (war, sanctions, China, value chain
+    transformation) and could last for a long time. Thus, inflation could keep rising,
+    even as the economy is taki
+  unit: null
+  values:
+  - 3.0
 regions:
 - china
 - brazil

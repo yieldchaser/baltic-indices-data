@@ -26,7 +26,62 @@ keywords:
 - years
 - even
 - july
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: One issue very much worthy of conversation but still often ignored
+    is that China's iron ore imports and steel production have been diverging recently.
+    China's steel production peaked back in May at 99.5 million tons, and then fell
+    each month in June, July, Aug
+  unit: null
+  values:
+  - 99.5
+  - 73.8
+- section: Main
+  section_type: null
+  source_line: However, July has marked this year's low in monthly iron ore import
+    volume. China's iron ore imports peaked this year at 102.1 million tons back in
+    March, and then fell each month in April, May, June, and July (with July seeing
+    imports reach a low of 88.5 mill
+  unit: null
+  values:
+  - 102.1
+  - 88.5
+  - 97.5
+  - 95.6
+- section: Main
+  section_type: null
+  source_line: In our Weekly Dry Bulk Reports and Weekly China Reports this year,
+    we have continued to stress that China's iron ore imports can remain steady and
+    even climb when steel production is declining. This has remained true for short
+    and medium-term durations, and al
+  unit: pct
+  values:
+  - 5.0
+  - 2012.0
+  - 2015.0
+  - 2016.0
+  - 6.0
+  - 1.0
+  - 2015.0
+  - 2.0
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: Overall, it has historically been global iron ore production that dictates
+    China's iron ore import volume. While it remains to be seen just how iron ore
+    imports will fare going forward, both history and recent trade volume should at
+    the very least be part of t
+  unit: null
+  values:
+  - 2008.0
 regions:
 - china
 - brazil

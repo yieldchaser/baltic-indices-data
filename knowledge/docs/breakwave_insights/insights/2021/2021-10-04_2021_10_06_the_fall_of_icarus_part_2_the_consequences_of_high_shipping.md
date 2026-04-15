@@ -27,7 +27,88 @@ keywords:
 - are
 - but
 - not
+linked_assets_discovered: 4
+linked_assets_failed: 1
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: neutral
+numeric_observation_count: 8
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: It was exactly a year ago, when we published a piece on the impending
+    correction of Capesize rates that at the time were hovering around decade-highs
+    of ~$35,000, a number that today might sound amusing to most market observers
+    dealing with spot rates that are
+  unit: pct
+  values:
+  - 35000.0
+  - 100000.0
+  - 70.0
+  - 10000.0
+- section: Main
+  section_type: null
+  source_line: Fast forward to today, and Capesize spot rates are sitting at ~$90,000,
+    with prognosticators calling for a breach of the symbolic $100,000 mark soon,
+    a very substantial move in the historically "sleepy" dry bulk market (which was
+    the case for at least the past
+  unit: usd
+  values:
+  - 90000.0
+  - 100000.0
+  - 200.0
+  - 120.0
+- section: Main
+  section_type: null
+  source_line: 'We expect that by December spot rates would have been halved, and
+    although futures are already at a significant discount to spot, it is unlikely
+    that the market will recognize such value until the spot index bottoms. Which
+    of course is also the good news: the '
+  unit: null
+  values:
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: Freight as a percentage of iron ore delivered price (62% IO and Brazil-China
+    freight, Capesize)
+  unit: pct
+  values:
+  - 62.0
+- section: Main
+  section_type: null
+  source_line: Yet, as we look at the economic activity in China, where 2/3 of dry
+    bulk demand originates, we cannot construct a near-term bullish story for dry
+    bulk. Yes, energy is in short supply globally, and coal-derived energy will play
+    a key role this winter, but the r
+  unit: null
+  values:
+  - 2.0
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: How much of the above is priced in the futures market? A lot . Actually,
+    one can argue more than it should be, but again, the dry bulk market has historically
+    experienced some brutal corrections and thus we see no reason to be heroes at
+    this point in time with
+  unit: null
+  values:
+  - 2008.0
+- section: Main
+  section_type: null
+  source_line: Capesize 2-month futures minus spot at extremes…
+  unit: null
+  values:
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: The backwardation in futures (meaning futures prices are lower than
+    spot and the further out you go, the cheaper it becomes) is an opportunity, but
+    not necessarily just because of relative pricing. As explained above, there is
+    a valid reason why the first quar
+  unit: pct
+  values:
+  - 70.0
 regions:
 - china
 - brazil

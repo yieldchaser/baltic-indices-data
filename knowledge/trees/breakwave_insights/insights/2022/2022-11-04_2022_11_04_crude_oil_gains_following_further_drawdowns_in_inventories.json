@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-11-04_2022_11_04_crude_oil_gains_following_further_drawdowns_in_inventories__root",
   "doc_id": "breakwave_insights_insights_2022-11-04_2022_11_04_crude_oil_gains_following_further_drawdowns_in_inventories",
   "parent_id": null,
-  "title": "Crude Oil Gains Following Further Drawdowns In Inventories",
+  "title": "Crude oil gains following further drawdowns in inventories",
   "section_path": [
-    "Crude Oil Gains Following Further Drawdowns In Inventories"
+    "Crude oil gains following further drawdowns in inventories"
   ],
-  "section_path_text": "Crude Oil Gains Following Further Drawdowns In Inventories",
+  "section_path_text": "Crude oil gains following further drawdowns in inventories",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nCommodity markets were mixed as signs of tightness via lower inventories was weighed against the gloomy economic backdrop. Sentiment in China's markets remains positive amid ongoing rumours of an easing in COVID-19 restrictions. Crude oil rallied amid signs of further tightness.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 702,
+  "token_count": 1136,
   "source_path": "reports/breakwave/2022/2022-11-04_crude-oil-gains-following-further-drawdowns-in-inventories.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/11/4/crude-oil-gains-following-further-drawdowns-in-inventories",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 700,
+      "token_count": 753,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-04_2022_11_04_crude_oil_gains_following_further_drawdowns_in_inventories__s02_linked_asset_2022_11_04_crude_oil_gains_following_further_drawdowns_in_inventories_img_1667422819734_4095679b47aa_png",
+      "doc_id": "breakwave_insights_insights_2022-11-04_2022_11_04_crude_oil_gains_following_further_drawdowns_in_inventories",
+      "parent_id": "breakwave_insights_insights_2022-11-04_2022_11_04_crude_oil_gains_following_further_drawdowns_in_inventories__root",
+      "title": "Linked asset: 2022-11-04_crude-oil-gains-following-further-drawdowns-in-inventories_img_1667422819734_4095679b47aa.png",
+      "section_path": [
+        "Linked asset: 2022-11-04_crude-oil-gains-following-further-drawdowns-in-inventories_img_1667422819734_4095679b47aa.png"
+      ],
+      "section_path_text": "Linked asset: 2022-11-04_crude-oil-gains-following-further-drawdowns-in-inventories_img_1667422819734_4095679b47aa.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-04_crude-oil-gains-following-further-drawdowns-in-inventories_img_1667422819734_4095679b47aa.png\n\nLinked image asset: 2022-11-04_crude-oil-gains-following-further-drawdowns-in-inventories_img_1667422819734_4095679b47aa.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nTue 1-Nov Wed 2-Nov % chg Daily % chg Daily % chg\nccI 595.46 595.78 Brent crude 95.53 Gold 1,636 -0.7%\nPrecious 573.73 569.18 -0.8% Thermal coal 361.00 Palladium 1,852 -20.8%\nIndustrials 360.60 360.41 -0.1% JKM LNG swaps 29.11 Iron Ore 86.1\nBulks 495.56 499.16 Copper 7,673 -0.7% Hogs 3,600 -2.7%\nAgs 400.28 393.75 -1.6% Nickel 24,066 Corn 394 0.0%\nEnergy 859.89 864.42 Aluminium 2,244 Wheat 455 -0.2%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 336,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-06-27_2022_06_27_morning_market_comment_pressure_points__root",
   "doc_id": "breakwave_insights_insights_2022-06-27_2022_06_27_morning_market_comment_pressure_points",
   "parent_id": null,
-  "title": "Morning Market Comment Pressure Points",
+  "title": "Morning Market Comment: Pressure points",
   "section_path": [
-    "Morning Market Comment Pressure Points"
+    "Morning Market Comment: Pressure points"
   ],
-  "section_path_text": "Morning Market Comment Pressure Points",
+  "section_path_text": "Morning Market Comment: Pressure points",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy George Lagarias\nPressure points\nEquities rebounded somewhat at the back end of last week in what was mostly a relief rally. Far from being considered a full recovery, last week illustrates how high market volatility is and how fragile sentiment remains. Looking at markets, it isn't easy to ascertain a direction.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1524,
+  "token_count": 1969,
   "source_path": "reports/breakwave/2022/2022-06-27_morning-market-comment-pressure-points.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/6/27/morning-market-comment-pressure-points",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1522,
+      "token_count": 1598,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-27_2022_06_27_morning_market_comment_pressure_points__s02_linked_asset_2022_06_27_morning_market_comment_pressure_points_img_unnamed28229_3623cd3d9d5b_jpg",
+      "doc_id": "breakwave_insights_insights_2022-06-27_2022_06_27_morning_market_comment_pressure_points",
+      "parent_id": "breakwave_insights_insights_2022-06-27_2022_06_27_morning_market_comment_pressure_points__root",
+      "title": "Linked asset: 2022-06-27_morning-market-comment-pressure-points_img_unnamed28229_3623cd3d9d5b.jpg",
+      "section_path": [
+        "Linked asset: 2022-06-27_morning-market-comment-pressure-points_img_unnamed28229_3623cd3d9d5b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-06-27_morning-market-comment-pressure-points_img_unnamed28229_3623cd3d9d5b.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-27_morning-market-comment-pressure-points_img_unnamed28229_3623cd3d9d5b.jpg\n\nLinked image asset: 2022-06-27_morning-market-comment-pressure-points_img_unnamed28229_3623cd3d9d5b.jpg\n\nImage metadata: JPEG 823x479 mode=RGB\n\nOCR text:\nThe S&P 500 has priced out around half of the of the latest QE tranche\nMi r =",
+      "keywords": [
+        "asset",
+        "image",
+        "around",
+        "half",
+        "jpeg",
+        "latest",
+        "linked",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 112,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-27_2022_06_27_morning_market_comment_pressure_points__s03_linked_asset_2022_06_27_morning_market_comment_pressure_points_img_unnamed28329_d611502da7fd_jpg",
+      "doc_id": "breakwave_insights_insights_2022-06-27_2022_06_27_morning_market_comment_pressure_points",
+      "parent_id": "breakwave_insights_insights_2022-06-27_2022_06_27_morning_market_comment_pressure_points__root",
+      "title": "Linked asset: 2022-06-27_morning-market-comment-pressure-points_img_unnamed28329_d611502da7fd.jpg",
+      "section_path": [
+        "Linked asset: 2022-06-27_morning-market-comment-pressure-points_img_unnamed28329_d611502da7fd.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-06-27_morning-market-comment-pressure-points_img_unnamed28329_d611502da7fd.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-27_morning-market-comment-pressure-points_img_unnamed28329_d611502da7fd.jpg\n\nLinked image asset: 2022-06-27_morning-market-comment-pressure-points_img_unnamed28329_d611502da7fd.jpg\n\nImage metadata: JPEG 572x407 mode=RGB\n\nOCR text:\nJob market so tight, inflation will become problematic\nUK Job vacancis\n1400\n1200 4\n1000 4+\n800 4\n600 ;\n400 4\n200 4\nDn a I\n‘01 ‘02 03 ‘04 05 ‘06 ‘OF ‘06 0S \"10 \"11 \"12 \"13 \"14 \"95 \"46 \"17 \"18 \"$9 '20 \"21 '22\nUK Vacancy Survey Al Vacancies 1300 Average\nSource: Bloomberg\nmazars",
+      "keywords": [
+        "asset",
+        "image",
+        "job",
+        "source",
+        "average",
+        "become",
+        "bloomberg",
+        "inflation"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

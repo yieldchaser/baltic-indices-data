@@ -29,7 +29,37 @@ keywords:
 - exports
 - australian
 - chinese
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The Australian government is anticipating the country to export a record-breaking
+    AUD 136 billion (USD 104 billion) worth of iron ore in the financial year ending
+    in June, as the world's steel production recovers in the wake of the pandemic.
+    The optimistic pro
+  unit: usd
+  values:
+  - 136.0
+  - 104.0
+  - 60.0
+- section: Main
+  section_type: null
+  source_line: In the report, which was published on Monday, the Australian government
+    also expects iron ore exports to remain strong in the coming years, with volumes
+    rising from this year's 900 million tonnes to 1.1 billion tonnes by the 2025-26
+    financial year. The strengt
+  unit: null
+  values:
+  - 900.0
+  - 1.1
+  - 2025.0
+  - -26.0
 regions:
 - china
 - brazil

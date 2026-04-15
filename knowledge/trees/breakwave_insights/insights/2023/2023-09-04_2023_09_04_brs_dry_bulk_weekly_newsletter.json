@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__root",
   "doc_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter",
   "parent_id": null,
-  "title": "Brs Dry Bulk Weekly Newsletter",
+  "title": "BRS Dry Bulk Weekly Newsletter",
   "section_path": [
-    "Brs Dry Bulk Weekly Newsletter"
+    "BRS Dry Bulk Weekly Newsletter"
   ],
-  "section_path_text": "Brs Dry Bulk Weekly Newsletter",
+  "section_path_text": "BRS Dry Bulk Weekly Newsletter",
   "level": 0,
   "ordinal": 0,
   "summary": "A different perspective on China's surprising surge in coal imports\nAccording to Chinese Customs, China imported 261.18 mln mt of coal (via all transportation modes, seaborne, railway and truck included) in the first seven months of 2023, up 88.6% year on year. If this import pace is maintained across the remainder of the year, China's annual coal imports could exceed a record 400 mln mt this year. This significant import growth is undoubtedly driven by an improved appetite for coal following China exiting its pandemic restrictions, that being said, this staggering increment in volumes (in absolute and relative terms) has taken many by surprise.",
@@ -26,12 +26,36 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1398,
+  "token_count": 2777,
   "source_path": "reports/breakwave/2023/2023-09-04_brs-dry-bulk-weekly-newsletter.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/9/4/brs-dry-bulk-weekly-newsletter",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s01_a_different_perspective_on_china_s_surprising_surge_in_coal_imports",
+      "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "",
+      "keywords": [
+        "assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+        "brs_shipbrokers_monogram_logo.png",
+        "image",
+        "reference"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 55,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s02_a_different_perspective_on_china_s_surprising_surge_in_coal_imports",
       "doc_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__root",
       "title": "A different perspective on China's surprising surge in coal imports",
@@ -40,7 +64,7 @@
       ],
       "section_path_text": "A different perspective on China's surprising surge in coal imports",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "According to Chinese Customs, China imported 261.18 mln mt of coal (via all transportation modes, seaborne, railway and truck included) in the first seven months of 2023, up 88.6% year on year. If this import pace is maintained across the remainder of the year, China's annual coal imports could exceed a record 400 mln mt this year.",
       "keywords": [
         "capesize",
@@ -54,8 +78,148 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1386,
+      "token_count": 1552,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_09_04_brs_dry_bulk_weekly_newsletter_img_brs_shipbrokers_monogram_logo_ee79606c8e74_png",
+      "doc_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+      "section_path": [
+        "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png\n\nLinked image asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png\n\nImage metadata: PNG 2500x2186 mode=RGBA\n\nEmbedded info:\ndpi: (299.9994, 299.9994)\n\n[No OCR text detected in linked image.]",
+      "keywords": [
+        "asset",
+        "image",
+        "linked",
+        "brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+        "detected",
+        "dpi",
+        "embedded",
+        "image."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 129,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s04_linked_asset_2023_09_04_brs_dry_bulk_weekly_newsletter_img_128529_06eeb9514d6b_png",
+      "doc_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128529_06eeb9514d6b.png",
+      "section_path": [
+        "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128529_06eeb9514d6b.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128529_06eeb9514d6b.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_128529_06eeb9514d6b.png\n\nLinked image asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128529_06eeb9514d6b.png\n\nImage metadata: PNG 463x338 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChina standard coal consumption per\nelectricity generation (g/KWh)\n330\n325\n320\n315\n310\n305\n300\n295\n290\n285\nof ee e e ee es ee Ss we we ia as?",
+      "keywords": [
+        "china",
+        "coal",
+        "asset",
+        "image",
+        "brs-dry-bulk-weekly-newsletter_img_128529_06eeb9514d6b.png",
+        "consumption",
+        "dpi",
+        "electricity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 159,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s05_linked_asset_2023_09_04_brs_dry_bulk_weekly_newsletter_img_128629_f57443657488_png",
+      "doc_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128629_f57443657488.png",
+      "section_path": [
+        "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128629_f57443657488.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128629_f57443657488.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_128629_f57443657488.png\n\nLinked image asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128629_f57443657488.png\n\nImage metadata: PNG 474x358 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChina Domestic Coal Price at\nQinhuangdao Port (yuan/t)\n400\n1200\n1000\n800\n600\n: | I | | |\n200\nte)\n> Mh O_O DM GH OO PD Gh ©\nPSP PG HN PG HY Hl",
+      "keywords": [
+        "china",
+        "coal",
+        "asset",
+        "image",
+        "brs-dry-bulk-weekly-newsletter_img_128629_f57443657488.png",
+        "domestic",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_09_04_brs_dry_bulk_weekly_newsletter_img_128229_9413f48a288d_png",
+      "doc_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128229_9413f48a288d.png",
+      "section_path": [
+        "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128229_9413f48a288d.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128229_9413f48a288d.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_128229_9413f48a288d.png\n\nLinked image asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128229_9413f48a288d.png\n\nImage metadata: PNG 433x329 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nConsumption Metrics 2022-2023 v_g-y\nConsumption Metrics 41 441 0-Y\nChina standard coal\nconsumption per electricity 301.5 302.3 -\ngeneration (g/KWh)\nThermal Power Generation\n(trillion kilowatt-hours) 272 2:9 -\nCoal Consumption (mln mt) 1645 1781 136.2\nDomestic Coal Production 2194 2301 107\n(min mt)\nBalance (min mt) -29.2",
+      "keywords": [
+        "china",
+        "coal",
+        "consumption",
+        "asset",
+        "generation",
+        "image",
+        "metrics",
+        "min"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s07_linked_asset_2023_09_04_brs_dry_bulk_weekly_newsletter_img_128329_1a44365f8bb0_png",
+      "doc_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128329_1a44365f8bb0.png",
+      "section_path": [
+        "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128329_1a44365f8bb0.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128329_1a44365f8bb0.png",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_128329_1a44365f8bb0.png\n\nLinked image asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_128329_1a44365f8bb0.png\n\nImage metadata: PNG 442x480 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChina Seaborne Coal Import Breakdown by Vessel Type\na . ices ,.., Capesize | Panamax Supramax\nCountry | Average Distance (nm) - \\ - = .",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "china",
+        "australia",
+        "coal",
+        "asset",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 308,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

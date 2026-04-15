@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-11-02_2022_11_02_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2022-11-02_2022_11_02_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nMuch of today's focus will be on the Federal Reserve and its decision on interest rates. The US central bank is widely expected to raise interest rates by another 75 basis points. However, traders and investors will be paying close attention to the Chairman's wording during the press conference for any indications of the size of future hikes.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1042,
+  "token_count": 1338,
   "source_path": "reports/breakwave/2022/2022-11-02_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/11/2/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 204,
+      "token_count": 259,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-02_2022_11_02_shipfix_global_market_update__s06_linked_asset_2022_11_02_shipfix_global_market_update_img_unnamed_2022_11_02t144551470_44e027ef994c_png",
+      "doc_id": "breakwave_insights_insights_2022-11-02_2022_11_02_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-11-02_2022_11_02_shipfix_global_market_update__root",
+      "title": "Linked asset: 2022-11-02_shipfix-global-market-update_img_unnamed-2022-11-02t144551470_44e027ef994c.png",
+      "section_path": [
+        "Linked asset: 2022-11-02_shipfix-global-market-update_img_unnamed-2022-11-02t144551470_44e027ef994c.png"
+      ],
+      "section_path_text": "Linked asset: 2022-11-02_shipfix-global-market-update_img_unnamed-2022-11-02t144551470_44e027ef994c.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-02_shipfix-global-market-update_img_unnamed-2022-11-02t144551470_44e027ef994c.png\n\nLinked image asset: 2022-11-02_shipfix-global-market-update_img_unnamed-2022-11-02t144551470_44e027ef994c.png\n\nImage metadata: PNG 1119x571 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Russian Coal Discharging in China and India ©\nSY 3Y All\n= aN\nis\ns\n&\n19 Ju 203 Ju 202 Ju 2023 Jul\na A prom y we - 0\nee | [TT]\nl@ #1COAL/Russiato China Mi #2 COAL / Russia to India",
+      "keywords": [
+        "china",
+        "india",
+        "coal",
+        "asset",
+        "image",
+        "all",
+        "cargo",
+        "coal/russiato"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

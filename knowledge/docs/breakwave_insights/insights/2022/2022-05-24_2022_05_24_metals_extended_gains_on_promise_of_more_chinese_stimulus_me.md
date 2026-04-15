@@ -25,7 +25,66 @@ keywords:
 - oil
 - prices
 - cut
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: cautiously_bearish
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil prices struggled to keep their head above water as the EU's
+    proposed ban on Russian oil looks increasingly unlikely. Hungary has been holding
+    out on the unilateral ban, asking for more time to allow it to find alternative
+    sources. Prime Minister Vikt
+  unit: worldscale_pct
+  values:
+  - 2024.0
+  - 70.0
+  - 20.0
+  - 30.0
+  - 24.0
+  - 3.44
+  - 3.0
+  - 15.0
+- section: Main
+  section_type: null
+  source_line: European natural gas prices fell to a fresh low, as strong flows of
+    gas boost storage levels. Dutch front month futures settled down 5.3% to EUR83.29/MWh,
+    the lowest level since 22 February. The European Union has been rushing to fill
+    stockpiles during the sea
+  unit: worldscale_pct
+  values:
+  - 5.3
+  - 3.29
+  - 22.0
+  - 70.0
+  - 42.6
+  - 45.9
+  - 3.6
+  - 2.6
+- section: Main
+  section_type: null
+  source_line: European carbon extended recent falls, hitting its lowest level in
+    more than five weeks. The selling followed weak auction results and continues
+    concerns over the European Commission's intention to sell as many as 250m EUA
+    to fund its shift away from Russian f
+  unit: pct
+  values:
+  - 250.0
+  - 2.8
+  - 7.79
+- section: Main
+  section_type: null
+  source_line: The weaker USD helped investor appetite in the base metals sector.
+    Gains were supported by hopes that stimulus measures in China will boost demand.
+    Chinese authorities cut a key interest rate for long term loans by a record amount
+    earlier this week. This shoul
+  unit: tonnage
+  values:
+  - 109.0
 regions:
 - china
 - brazil

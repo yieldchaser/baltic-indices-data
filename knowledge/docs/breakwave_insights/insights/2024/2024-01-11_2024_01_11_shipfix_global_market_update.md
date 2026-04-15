@@ -28,7 +28,135 @@ keywords:
 - europe
 - singapore
 - iron_ore
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 11
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: The US dollar gained ground yesterday as investors grew increasingly
+    concerned about the inflation data due for release later this week amid recent
+    solid labour market numbers. A decreased likelihood of a rate cut in March saw
+    the US dollar index rise by a thi
+  unit: null
+  values:
+  - 64.0
+  - 90.0
+- section: Commodity Markets
+  section_type: null
+  source_line: Crude oil maintained the pattern for the year so far yesterday, with
+    a daily swing between gains and losses. The March Brent futures recovered much
+    of Monday's losses yesterday as concerns over global supplies grew amid rising
+    tensions in the Middle East and h
+  unit: null
+  values:
+  - 77.89
+  - 2.3
+- section: Commodity Markets
+  section_type: null
+  source_line: 'Despite cold weather across large parts of the continent, European
+    natural gas prices declined for a second consecutive day on Tuesday as the market
+    remained well supplied. The front-month TTF futures declined by 3.0 per cent,
+    settling at 30.64 euros per MWh. '
+  unit: null
+  values:
+  - 3.0
+  - 30.64
+- section: Commodity Markets
+  section_type: null
+  source_line: For coal, the futures for the Asian and European markets faced diverging
+    fortunes on Tuesday. The lower natural gas prices in Europe contributed to the
+    contracts for delivery in Rotterdam next month declining by 1.4 per cent to 108.15
+    dollars per tonne. In con
+  unit: null
+  values:
+  - 1.4
+  - 108.15
+  - 3.4
+  - 134.2
+- section: Commodity Markets
+  section_type: null
+  source_line: 'Iron ore continued to retreat yesterday as lower margins for Chinese
+    steel mills weighed on the demand outlook. The futures for delivery next month
+    listed on the SGX recorded a marginal decline of 0.2 per cent on Tuesday, settling
+    at 137.76 dollars per tonne. '
+  unit: null
+  values:
+  - 0.2
+  - 137.76
+- section: Commodity Markets
+  section_type: null
+  source_line: 'The appreciating US dollar contributed to minor losses for most base
+    metals. The three-month copper futures listed on the LME ended the day 0.9 per
+    cent below Monday''s close, while the nickel and zinc contracts recorded marginal
+    daily losses. In contrast, the '
+  unit: null
+  values:
+  - 0.9
+  - 0.6
+- section: Commodity Markets
+  section_type: null
+  source_line: The March grain and oilseed futures listed on the CBOT ended Tuesday's
+    session in the black. The wheat contracts led the way higher amid reports of solid
+    US export sales and ended the day with a gain of 2.3 per cent. The corn and soybean
+    futures recorded daily
+  unit: null
+  values:
+  - 2.3
+  - 0.9
+  - 0.2
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: 'The Baltic Exchange''s dry bulk indices recorded a second consecutive
+    session with losses across the board. The Baltic Dry Index shed 7.3 per cent,
+    with the Capesizes contributing to much of the decline. The sub-index for the
+    largest vessels dropped by 9.7 per '
+  unit: null
+  values:
+  - 7.3
+  - 9.7
+  - 4.4
+  - 2.7
+  - 2.8
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: 'Losses were also the central theme for the Baltic''s wet indices yesterday
+    but with one notable exception. The dirty tanker index went against the flow and
+    gained 2.5 per cent, with the increasing tensions in the Middle East contributing
+    to bullish sentiments. '
+  unit: null
+  values:
+  - 2.5
+  - 1.0
+  - 9.1
+  - 21.6
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: The trading in bunker fuels experienced a mixed session across the
+    world's leading maritime hubs yesterday. In Singapore, both the VLSFO and MGO
+    retreated. The former fuel shed 1.3 per cent, while the latter declined by 0.8
+    per cent. In contrast, the two fuels
+  unit: null
+  values:
+  - 1.3
+  - 0.8
+  - 1.0
+  - 0.3
+  - 1.3
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: Following a solid start to the new year, fortunes have shifted for
+    the Capesizes during the early parts of this week. The Baltic Exchange's index
+    for the segment declined by 14.5 per cent over the week's first two sessions,
+    more than offsetting the 11.8 per ce
+  unit: null
+  values:
+  - 14.5
+  - 11.8
 regions:
 - china
 - brazil
@@ -58,7 +186,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax

@@ -26,7 +26,34 @@ keywords:
 - are
 - concerns
 - middle
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil gained as the prospect of more Venezuela oil did little to
+    ease concerns of disruptions in the Middle East. The US suspended sanctions on
+    Venezuelan oil, gas and gold production after four years. The move comes after
+    the Maduro government signed an a
+  unit: null
+  values:
+  - 116.0
+  - 0.5
+  - 200.0
+- section: Main
+  section_type: null
+  source_line: 'Copper edged higher as the risk-on tone across market boosted sentiment.
+    A weaker USD and lower yields late in the session helped support the move. However,
+    the recent weakness in prices is raising concerns in the mining industry. Freeport-McMoRan
+    warned that '
+  unit: pct
+  values:
+  - 14.0
 regions:
 - china
 - brazil
@@ -57,7 +84,7 @@ themes:
 - japan
 - iron_ore
 - crude_oil
-title: Oil Gains Despite Sanctions Removed On Venezuelan Oil
+title: Oil gains despite sanctions removed on Venezuelan oil
 vessel_classes:
 - capesize
 - panamax

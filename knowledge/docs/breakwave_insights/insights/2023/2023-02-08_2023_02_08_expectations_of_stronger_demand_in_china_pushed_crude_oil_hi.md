@@ -26,7 +26,58 @@ keywords:
 - its
 - last
 - against
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Signs of improving demand boosted sentiment across commodity markets.
+    This was aided by a reversal in the USD late in the session amid expectations
+    of lower inflation in 2023.
+  unit: usd
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: Crude oil gained as Saudi Aramco's move to raise prices boosted sentiment.
+    The world's largest producers increased most prices for its flagship Arab Light
+    grade against expectations of a cut. It signalled the producer is expecting stronger
+    demand, particularly
+  unit: null
+  values:
+  - 1.0
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: 'European natural gas fell amid a broader weakening of sentiment. Weather
+    forecasts pointing to an end of the current cold spell sparked the more bearish
+    mood of the market. Dutch front month futures ended the session down nearly 6%
+    to EUR54.66/MWh. The market '
+  unit: tonnage
+  values:
+  - 6.0
+  - 4.66
+  - 1.7
+  - 8.19
+  - 12.0
+- section: Main
+  section_type: null
+  source_line: Copper gained amid the better tone across commodity markets. This was
+    aided by signs of ongoing supply constraints. Chile, the biggest copper-producing
+    nation, reported a sharp fall in export revenue. Copper shipments totalled USD2.98bn
+    in January, down 30% fr
+  unit: worldscale_pct
+  values:
+  - 98.0
+  - 30.0
+  - 22.0
+  - 8.0
+  - 200.0
 regions:
 - china
 - brazil

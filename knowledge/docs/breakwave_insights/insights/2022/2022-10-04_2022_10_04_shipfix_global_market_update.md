@@ -27,7 +27,100 @@ keywords:
 - europe
 - singapore
 - iron_ore
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 8
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: In China, the release of two different sets of PMI data for September
+    provided some conflicting points of view last week. The official manufacturing
+    PMI, released by the country's statistics authority, beat expectations and ended
+    up in expansionary territory b
+  unit: null
+  values:
+  - 48.1
+- section: Commodity Markets
+  section_type: null
+  source_line: Following a volatile week, the Brent crude oil futures ended last week
+    just above 85 dollars per barrel. The contracts fell below 83 dollars and to the
+    lowest levels since mid-January in the early parts of the week, but recovered
+    as the week progressed. Despit
+  unit: null
+  values:
+  - 85.0
+  - 83.0
+- section: Commodity Markets
+  section_type: null
+  source_line: European natural gas prices ended the week nearly seven per cent lower,
+    with the November contracts settling at 188,80 euros per megawatt-hour on Friday.
+    Still, the week did not pass without some drama, and prices were volatile throughout
+    the week due to the p
+  unit: null
+  values:
+  - 18880.0
+- section: Commodity Markets
+  section_type: null
+  source_line: 'Thermal coal futures moved higher last week amid continued robust
+    demand. The Newcastle futures for delivery in November gained 1.6 per cent during
+    the week despite losses during the second half of the week and ended Friday''s
+    session at 418 dollars per tonne. '
+  unit: null
+  values:
+  - 1.6
+  - 418.0
+  - 313.0
+  - 4.9
+- section: Commodity Markets
+  section_type: null
+  source_line: Iron ore futures trading on the Singapore Exchange continued on their
+    downward trajectory last week despite suggestions that Chinese construction activities
+    are picking up. Concerns over the strength of any recovery continued to weigh
+    on prices, with the Novem
+  unit: null
+  values:
+  - 94.0
+  - 2.8
+- section: Commodity Markets
+  section_type: null
+  source_line: Only copper managed to stay out of the red last week among the base
+    metals. The red metal's futures trading at the London Metal Exchange gained 1.7
+    per cent last week. The aluminium contracts shed a marginal 0.1 per cent, while
+    the zinc futures retreated by 1.
+  unit: null
+  values:
+  - 1.7
+  - 0.1
+  - 1.3
+- section: Freight Markets
+  section_type: null
+  source_line: 'Despite a marginal 0.2 per cent gain on Friday, the Baltic Dry Index
+    retreated by 3.1 per cent last week. True to recent form, the Capesizes were responsible
+    for last week''s decline in the headline index. The sub-index for the largest
+    vessels remained broadly '
+  unit: null
+  values:
+  - 0.2
+  - 3.1
+  - 11.4
+  - 4.5
+  - 0.7
+- section: Freight Markets
+  section_type: null
+  source_line: Souring sentiments also weighed on the Baltic's dirty and clean tanker
+    indicators. Both indices ended the week in the red following mostly negative daily
+    returns during the past five days. The dirty tanker index retreated by 1.4 per
+    cent, while their clean sib
+  unit: null
+  values:
+  - 1.4
+  - 6.4
+  - 59.0
+  - 7.2
 regions:
 - china
 - brazil
@@ -63,7 +156,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax

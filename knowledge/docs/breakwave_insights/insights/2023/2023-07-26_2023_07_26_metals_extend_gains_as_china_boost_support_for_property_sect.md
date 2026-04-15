@@ -28,7 +28,61 @@ keywords:
 - prices
 - after
 - are
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Copper and iron ore extended yesterday's rally after China pledged
+    support for its beleaguered property sector. President Xi Jinping and the 24-member
+    Politburo promised to revive growth after the post-COVID recovery stalled. Markets
+    were buoyed by the fact th
+  unit: pct
+  values:
+  - 24.0
+  - 40.0
+- section: Main
+  section_type: null
+  source_line: Lithium prices in China fell as European car makers look to boost local
+    supply of batteries for the EV market. However, demand remains strong. Top Chinese
+    battery maker CATL reported record profits powered by surging EV sales in China.
+    While China's PCA warned
+  unit: pct
+  values:
+  - 4.8
+- section: Main
+  section_type: null
+  source_line: Crude oil was also well supported by the broad risk-on tone across
+    commodities sparked by the Politburo statement. However, further signs of tightening
+    supplies remain the key driver of the market. Russia's seaborne crude exports
+    from Baltic and Black Sea port
+  unit: null
+  values:
+  - 117.0
+  - 23.0
+- section: Main
+  section_type: null
+  source_line: North Asia LNG prices rose towards USD12/MMBtu as buyers eye winter
+    supply. This comes as hot weather across Asia is already lifting demand and drive
+    LNG inventories lower across the region. China's relaxation of natural gas prices
+    controls could also spur add
+  unit: usd
+  values:
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: Gold futures settled higher as the market waits for the FOMC policy
+    announcement on rates. With the market expecting a hike of 25bp, the greater focus
+    will be on the Fed's messaging on the trajectory after this month. Investor demand
+    was also supported by a we
+  unit: usd
+  values:
+  - 25.0
 regions:
 - china
 - brazil

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-04-12_2023_04_12_steel_production_now_likely_exceeding_demand_in_china__root",
   "doc_id": "breakwave_insights_insights_2023-04-12_2023_04_12_steel_production_now_likely_exceeding_demand_in_china",
   "parent_id": null,
-  "title": "Steel Production Now Likely Exceeding Demand In China",
+  "title": "Steel Production Now Likely Exceeding Demand in China",
   "section_path": [
-    "Steel Production Now Likely Exceeding Demand In China"
+    "Steel Production Now Likely Exceeding Demand in China"
   ],
-  "section_path_text": "Steel Production Now Likely Exceeding Demand In China",
+  "section_path_text": "Steel Production Now Likely Exceeding Demand in China",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nRecent weeks have seen Chinese steel production climb even higher, with last month ending with production at the highest level since June. The most recently released data shows that daily crude steel production at large and medium-sized mills averaged 2.26 million tons during March 21 - 31. This is not only the highest level seen since June, it is also up year-on-year by 5%.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 272,
+  "token_count": 738,
   "source_path": "reports/breakwave/2023/2023-04-12_steel-production-now-likely-exceeding-demand-in-china.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/12/steel-production-now-likely-exceeding-demand-in-china",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 270,
+      "token_count": 364,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-12_2023_04_12_steel_production_now_likely_exceeding_demand_in_china__s02_linked_asset_2023_04_12_steel_production_now_likely_exceeding_demand_in_china_img_chart1287729_d71037a6c02b_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-12_2023_04_12_steel_production_now_likely_exceeding_demand_in_china",
+      "parent_id": "breakwave_insights_insights_2023-04-12_2023_04_12_steel_production_now_likely_exceeding_demand_in_china__root",
+      "title": "Linked asset: 2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart1287729_d71037a6c02b.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart1287729_d71037a6c02b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart1287729_d71037a6c02b.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart1287729_d71037a6c02b.jpg\n\nLinked image asset: 2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart1287729_d71037a6c02b.jpg\n\nImage metadata: JPEG 730x306 mode=RGB\n\nOCR text:\nDaily Crude Steel Output Average at Large and Medium-Sized Chinese Steel Mills\n2.40mt\n2.20mt\n2.00mt\n28.201 | AAmaoaoom!VLV4SHWJT\nMar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar",
+      "keywords": [
+        "china",
+        "steel",
+        "asset",
+        "image",
+        "mar",
+        "aamaoaoom",
+        "apr",
+        "aug"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 161,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-12_2023_04_12_steel_production_now_likely_exceeding_demand_in_china__s03_linked_asset_2023_04_12_steel_production_now_likely_exceeding_demand_in_china_img_chart2286529_f5ee72cc3ba2_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-12_2023_04_12_steel_production_now_likely_exceeding_demand_in_china",
+      "parent_id": "breakwave_insights_insights_2023-04-12_2023_04_12_steel_production_now_likely_exceeding_demand_in_china__root",
+      "title": "Linked asset: 2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart2286529_f5ee72cc3ba2.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart2286529_f5ee72cc3ba2.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart2286529_f5ee72cc3ba2.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart2286529_f5ee72cc3ba2.jpg\n\nLinked image asset: 2023-04-12_steel-production-now-likely-exceeding-demand-in-china_img_chart2286529_f5ee72cc3ba2.jpg\n\nImage metadata: JPEG 732x304 mode=RGB\n\nOCR text:\nDaily Crude Steel Output Average at Large and Medium-Sized Chinese Steel Mills\n10%\n5%\n0%\n-5%\n0% TTT\nDec Jan Feb Mar",
+      "keywords": [
+        "china",
+        "steel",
+        "asset",
+        "image",
+        "average",
+        "chinese",
+        "crude",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 134,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

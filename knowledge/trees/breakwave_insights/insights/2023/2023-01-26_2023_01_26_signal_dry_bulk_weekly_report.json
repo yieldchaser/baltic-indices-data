@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1073,
+  "token_count": 3970,
   "source_path": "reports/breakwave/2023/2023-01-26_signal-dry-bulk-weekly-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/26/signal-dry-bulk-weekly-report",
   "children": [
@@ -69,20 +69,20 @@
       "section_path_text": "Chart of the Week Dry Bulk: Australian port congestion",
       "level": 1,
       "ordinal": 2,
-      "summary": "Rising trend in January to the highest level since 2021\nData Source: The Signal Ocean Platform, Port Congestion, Australian Hay Point port\nhttps://go.signalocean.com/e/983831/dry-dynamic-drybulkflows/2nkmh5/298760347?h=a_yy6abVdCKt3CV6MbzEhVRk7HkyYJ1H0aAx7Y4R9ws",
+      "summary": "Rising trend in January to the highest level since 2021\nImage reference: australian port congestion.png | assets/2023-01-26_signal-dry-bulk-weekly-report_img_australianportcongestion_aaf1a859c8b1.png\nData Source: The Signal Ocean Platform, Port Congestion, Australian Hay Point port\nhttps://go.signalocean.com/e/983831/dry-dynamic-drybulkflows/2nkmh5/298760347?h=a_yy6abVdCKt3CV6MbzEhVRk7HkyYJ1H0aAx7Y4R9ws",
       "keywords": [
         "australia",
         "port",
-        "a_yy6abvdckt3cv6mbzehvrk7hkyyj1h0aax7y4r9ws",
         "australian",
+        "a_yy6abvdckt3cv6mbzehvrk7hkyyj1h0aax7y4r9ws",
+        "assets/2023-01-26_signal-dry-bulk-weekly-report_img_australianportcongestion_aaf1a859c8b1.png",
         "congestion",
-        "data",
-        "go.signalocean.com/e/983831/dry-dynamic-drybulkflows/2nkmh5/298760347",
-        "hay"
+        "congestion.png",
+        "data"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 96,
+      "token_count": 141,
       "section_type": null,
       "children": []
     },
@@ -97,7 +97,7 @@
       "section_path_text": "SECTION 1/ FREIGHT - Market Rates ($/t) Weaker",
       "level": 1,
       "ordinal": 3,
-      "summary": "‘The Big Picture' - Capesize and Panamax Bulkers and Smaller Ship Sizes\nIn the last week of January, the weaker trend in spot freight rates continued for all ship size classes, with signs of recovery for Supramax and Panamax. Capesize vessel freight rates fell to $17/tonne, down $3.5/tonne from the last few days of December, while today's trend continues downward toward the end of the month.",
+      "summary": "‘The Big Picture' - Capesize and Panamax Bulkers and Smaller Ship Sizes\nImage reference: unnamed - 2023-01-26T112056.001.png | assets/2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112056001_1c0b21c12865.png\nIn the last week of January, the weaker trend in spot freight rates continued for all ship size classes, with signs of recovery for Supramax and Panamax. Capesize vessel freight rates fell to $17/tonne, down $3.5/tonne from the last few days of December, while today's trend continues downward toward the end of the month.",
       "keywords": [
         "capesize",
         "panamax",
@@ -110,7 +110,7 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 205,
+      "token_count": 265,
       "section_type": null,
       "children": []
     },
@@ -125,7 +125,7 @@
       "section_path_text": "SECTION 2/ SUPPLY - Ballasters (# vessels) Increasing",
       "level": 1,
       "ordinal": 4,
-      "summary": "Supply Trend Lines for Key Load Areas\nThe number of ballast ships increased significantly in the third week of January, with the exception of the Handysize segment. Capesize SE Africa: The number of vessels is now approaching the yearly average of 78, 20 more than the low in week 51.",
+      "summary": "Supply Trend Lines for Key Load Areas\nImage reference: unnamed - 2023-01-26T112237.184.png | assets/2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112237184_1527a6db342b.png\nThe number of ballast ships increased significantly in the third week of January, with the exception of the Handysize segment. Capesize SE Africa: The number of vessels is now approaching the yearly average of 78, 20 more than the low in week 51.",
       "keywords": [
         "capesize",
         "panamax",
@@ -138,7 +138,7 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 154,
+      "token_count": 213,
       "section_type": null,
       "children": []
     },
@@ -153,7 +153,7 @@
       "section_path_text": "SECTION 3/ DEMAND - TonDays Decreasing",
       "level": 1,
       "ordinal": 5,
-      "summary": "Demand growth continues to slow significantly, with sharp declines in all vessel categories, with the exception of supramax vessels, where there has been strong volatility, with no actual trend of increase or decrease. Capesize demand ton-days: The downward trend observed in January fuels the pessimistic outlook for a significant recovery toward the end of the month.",
+      "summary": "Image reference: unnamed - 2023-01-26T112440.672.png | assets/2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112440672_40ddb46884bb.png\nDemand growth continues to slow significantly, with sharp declines in all vessel categories, with the exception of supramax vessels, where there has been strong volatility, with no actual trend of increase or decrease. Capesize demand ton-days: The downward trend observed in January fuels the pessimistic outlook for a significant recovery toward the end of the month.",
       "keywords": [
         "capesize",
         "panamax",
@@ -166,7 +166,7 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 142,
+      "token_count": 199,
       "section_type": null,
       "children": []
     },
@@ -181,7 +181,7 @@
       "section_path_text": "SECTION 4/ PORT CONGESTION - No of Vessels Increasing",
       "level": 1,
       "ordinal": 6,
-      "summary": "Dry bulk ships congested at Chinese ports\nIn the January days, congestion reached a new record level, surpassing the peak of week 52 last year. Capesize: The number of vessels held is about 150, 10 more than at the end of last year.",
+      "summary": "Dry bulk ships congested at Chinese ports\nImage reference: unnamed - 2023-01-26T112514.832.png | assets/2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112514832_9c4d62ecc339.png\nIn the January days, congestion reached a new record level, surpassing the peak of week 52 last year. Capesize: The number of vessels held is about 150, 10 more than at the end of last year.",
       "keywords": [
         "capesize",
         "panamax",
@@ -194,8 +194,148 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 135,
+      "token_count": 194,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__s07_linked_asset_2023_01_26_signal_dry_bulk_weekly_report_img_australianportcongestion_aaf1a859c8b1_png",
+      "doc_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report",
+      "parent_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__root",
+      "title": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_australianportcongestion_aaf1a859c8b1.png",
+      "section_path": [
+        "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_australianportcongestion_aaf1a859c8b1.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_australianportcongestion_aaf1a859c8b1.png",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-26_signal-dry-bulk-weekly-report_img_australianportcongestion_aaf1a859c8b1.png\n\nLinked image asset: 2023-01-26_signal-dry-bulk-weekly-report_img_australianportcongestion_aaf1a859c8b1.png\n\nImage metadata: PNG 1092x520 mode=RGB\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\nVESSEL CLASS DWT AREAS/PORTS ACTIVITY\nAll v 0 - 550 Hay Point All v\nPort Congestion\nNumber of Vessels\n3 days moving average\n- 2023. - 2022 2021\n60\na rf ‘\nge /\na\nE 30\n3 n/ \\ Po Now\nVN\n20 W\n10\nJan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan",
+      "keywords": [
+        "australia",
+        "all",
+        "asset",
+        "image",
+        "jan",
+        "activity",
+        "apr",
+        "areas/ports"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__s08_linked_asset_2023_01_26_signal_dry_bulk_weekly_report_img_unnamed_2023_01_26t112056001_1c0b21c12865_png",
+      "doc_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report",
+      "parent_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__root",
+      "title": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112056001_1c0b21c12865.png",
+      "section_path": [
+        "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112056001_1c0b21c12865.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112056001_1c0b21c12865.png",
+      "level": 1,
+      "ordinal": 8,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112056001_1c0b21c12865.png\n\nLinked image asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112056001_1c0b21c12865.png\n\nImage metadata: PNG 1600x800 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nSummary of Indicative Market Rates, $/ton\nM@ Cape - Brazil NChina WM Pmax- Cont FE @ Supra - Indo ECI Wi Handy NOPAC FE\nWeekly Trends\n70\n60\n50\nao\n% 40\n[ea\n=\n30\n20\n10\nPears esseeseseagHseMmsgresBsRt SFPABARGSNHTKCKHRanvsetr GBRVARAKRRARBERBPBSeSRsSHeSesrTeReeESReSLEAKREEas\nSee ezeeeegegeegarr ti ta tet rtertirt rt wnwonwawnwenwnwenwawnwanoanananananoanwnmwnannrss8sss yrryFrsreunuNnNYseeSsSS ES\nanawnananannanaszstsB833 3 383 3353 33838388388 BB 8B 888888 B8B8BE8RB BRB 888 8B8B8B BBB BRM\nNNN NNNNNNT NNN NNTN NNN NNN NNT DNDN dN DNDN NNN NNN NN NEON NONONON ON ONONONONON ONO NONONONON ON ON\noooocmUCDC UMUC OCUCOOUCOUUWNNON NNO NONONR ON ONO NON ONO NUON NON ONONONONONONONRONUONROCON CONOR ONO NON ONO NR ONO NRO NRO NON CONCUONCUNCUNCUNCUCOOUCUCOUCUCOCOULUCOD\nNNNNNN NNN TO TO TCT CO oOCUCcUOCUCcUOCUCcUOCUCcUOCUCcOUCcOCcOCcOcUCOWUc OCUc Cc OCC OCUCcOUCUCOUC",
+      "keywords": [
+        "capesize",
+        "supramax",
+        "handysize",
+        "china",
+        "brazil",
+        "nnn",
+        "occ",
+        "ono"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 608,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__s09_linked_asset_2023_01_26_signal_dry_bulk_weekly_report_img_unnamed_2023_01_26t112237184_1527a6db342b_png",
+      "doc_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report",
+      "parent_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__root",
+      "title": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112237184_1527a6db342b.png",
+      "section_path": [
+        "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112237184_1527a6db342b.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112237184_1527a6db342b.png",
+      "level": 1,
+      "ordinal": 9,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112237184_1527a6db342b.png\n\nLinked image asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112237184_1527a6db342b.png\n\nImage metadata: PNG 1900x800 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nSummary of Ballasters, Per Dry Bulk Ship Size\nMl Cape SE Africa @ Pmax SE Africa M@ Supra SE Asia @ Handy NOPAC\nWeekly Trends\n120\nw\nCapesE @ 100\nAfrica 8 80 Average\n60\nw\nAfrica § 110 Averae a ~-\n100\nSupra Q Average\nSEAsia 9 80\n>\n60\nwo 80\nHandy Q\nAverage\nNopac § 70 \"Sage\n>\n60\nsgeg¢creegesgebs SC srasgsgsesesengagsegzgagcgaugaageteCKKRCtTC_aRrasF HF HRRFHRSET LT SE serPseseRgggassegs\n~aaawewewewanwnw nw SDSBBSBSSSSBSBSSSSSSSSSSFSSSSSSSZBSBSBS2ZBEBE2BR22ER22E 5352322532505 mn\nN N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N\noO oO oO oO oO oO oO oO oO N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N N oO oO oO oO\nN N N N N N N N N io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io) io",
+      "keywords": [
+        "capesize",
+        "supramax",
+        "handysize",
+        "gas",
+        "africa",
+        "average",
+        "asset",
+        "handy"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 604,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__s10_linked_asset_2023_01_26_signal_dry_bulk_weekly_report_img_unnamed_2023_01_26t112440672_40ddb46884bb_png",
+      "doc_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report",
+      "parent_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__root",
+      "title": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112440672_40ddb46884bb.png",
+      "section_path": [
+        "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112440672_40ddb46884bb.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112440672_40ddb46884bb.png",
+      "level": 1,
+      "ordinal": 10,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112440672_40ddb46884bb.png\n\nLinked image asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112440672_40ddb46884bb.png\n\nImage metadata: PNG 1800x900 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nSummary of Demand, per Dry Bulk Ship Size\nAvg. Handy TonD Growth\n110%\n*\nx=\n= 100%\n°\nS\noO\n8\nA\n>\noO\na\nc\no 90%\n2\n80%\nSLLTLLSSSSSSMSYLSSSSANKILSHRKKSFARHSRSHRBSIYGTYSseesggsyesg\nSSeS SRS RS SSS SSS SSS SSS SSS SSS SSS SS SSS SS SSS SSS SSS SS SSS STS\nNNNNNNNNNDNNWNNNNWNNNNWNNDNNWNNDNNWNNDNNNNNNWNNDNNWN NNN NNN NNN NNN\nooooooooonnnnnnnnnnnannannananannannnnannnnannnnnnnnnnnnwnnnNWNoodnd\nNNNNNNWNWNWNWOTTDOVGCGCGCCOCCCCCOCCoCoOCoCoO ooo oOo oOo OO OOO OUCUCUOCCOUOUCUCOOCCOUOUCOOCCOCUCOUOUCUCOUOCUCOUOUCUCOOCCOCCOUOUCUCOOCCOOUNNN ON\nNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN NN NNN",
+      "keywords": [
+        "capesize",
+        "supramax",
+        "handysize",
+        "sss",
+        "nnn",
+        "avg.",
+        "growth",
+        "ooo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 433,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__s11_linked_asset_2023_01_26_signal_dry_bulk_weekly_report_img_unnamed_2023_01_26t112514832_9c4d62ecc339_png",
+      "doc_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report",
+      "parent_id": "breakwave_insights_insights_2023-01-26_2023_01_26_signal_dry_bulk_weekly_report__root",
+      "title": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112514832_9c4d62ecc339.png",
+      "section_path": [
+        "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112514832_9c4d62ecc339.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112514832_9c4d62ecc339.png",
+      "level": 1,
+      "ordinal": 11,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112514832_9c4d62ecc339.png\n\nLinked image asset: 2023-01-26_signal-dry-bulk-weekly-report_img_unnamed-2023-01-26t112514832_9c4d62ecc339.png\n\nImage metadata: PNG 1500x800 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nSummary of Chinese Dry Bulk Ship Congestions\n®@ VLOC @ Cape B® Post Pmax @ Pmax @ Supra\nWeekly Trends\n1100\nooo lB\nAverage\n800 '\n= 700\nw\nw\nQo\n> 600\n5\n‘=\n8 500\n=\n=]\n2 400\n300\n200\n100\n0\nANmMYFnWOo KR WHO ANMANHVOKR WTO ANA M7AnNnNWMOKRAWADHIO ANI MTnNWHORAWATDTAIO AANA MDA TFuNnNWoORhRAWA DTI AN TANM ST\nanananaananasSsZstSBSBBSSESSSBSSESBSESBS2SES2SE32 8332333353353 8335383325333 83325353323 8332000\nNNNNNNNNNHNT NNN NNN NNN NNN NNN NNN NNN NNN NN NNN NNN ON NONI NON ON NNO N NON ON\nqoogoooooocjctoonana ananaraqaqaarqgngraaqaraqaarqnraqaqagaqaqaqnqa qnugnaogaqaqaaqaqagaaragaaqaraaragriqnagaragnraooooso\nNNNNNNNNN OT TOTO CC CO CO CoCcUcUCCcUOCUCcCcCOUCUCOCUCCOCUCcCOCOCcCcOCCcCCOcUcWCcOCUCCOCCcOCUCOCUCOCUCcCOCUCOCUCUCOCUCOCUCOCUCOUCcCOCcOC OCU OCC OCUCOUCUOCUCOCDOCOUCUCOOCCOOUCUCCOCUNNCUNN NN\nNNNNNNNNNNN NNN NNN NNN NNN NNN NNN NNN SENN NNN NON ON",
+      "keywords": [
+        "capesize",
+        "supramax",
+        "china",
+        "nnn",
+        "non",
+        "asset",
+        "image",
+        "pmax"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 544,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

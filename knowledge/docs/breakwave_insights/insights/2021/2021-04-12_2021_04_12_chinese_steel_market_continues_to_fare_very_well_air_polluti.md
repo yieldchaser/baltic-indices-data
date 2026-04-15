@@ -26,7 +26,62 @@ keywords:
 - million
 - consecutive
 - exceeded
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Daily crude steel output at large and medium-sized mills in China averaged
+    2.21 million tons during March 21 - March 31. This is the same robust level that
+    was seen during the previous ten days and is up year-on-year by 21%. As we have
+    been discussing in our r
+  unit: pct
+  values:
+  - 2.21
+  - 21.0
+  - 31.0
+  - 21.0
+- section: Main
+  section_type: null
+  source_line: Also of note in Beijing is that air pollution remains greatly improved
+    from the much higher levels seen in mid and late March. As discussed in today's
+    Weekly China Report, there were no days last week where PM 2.5 levels exceeded
+    200 in Beijing (which is where
+  unit: null
+  values:
+  - 2.5
+  - 200.0
+  - 2.5
+  - 165.0
+  - 411.0
+  - 2.5
+  - 200.0
+  - 411.0
+  - 28.0
+  - 200.0
+- section: Main
+  section_type: null
+  source_line: Also of note in China is steel prices set another 2021 record last
+    week and steel stockpiles have also continued to decline. The average price of
+    hot rolled coil, for example, ended last week at 5,710 yuan/ton ($871). This is
+    220 yuan (4%) more than a week ago
+  unit: pct
+  values:
+  - 2021.0
+  - 5710.0
+  - 871.0
+  - 220.0
+  - 4.0
+  - 2205.0
+  - 63.0
+  - 18.9
+  - 1.0
+  - -5.0
 regions:
 - china
 - brazil

@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 912,
+  "token_count": 1496,
   "source_path": "reports/breakwave/2022/2022-12-05_doric-weekly-market-insight.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/12/5/doric-weekly-market-insight",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 910,
+      "token_count": 988,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-12-05_2022_12_05_doric_weekly_market_insight__s02_linked_asset_2022_12_05_doric_weekly_market_insight_img_128829_ae9e5246fe7d_png",
+      "doc_id": "breakwave_insights_insights_2022-12-05_2022_12_05_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2022-12-05_2022_12_05_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2022-12-05_doric-weekly-market-insight_img_128829_ae9e5246fe7d.png",
+      "section_path": [
+        "Linked asset: 2022-12-05_doric-weekly-market-insight_img_128829_ae9e5246fe7d.png"
+      ],
+      "section_path_text": "Linked asset: 2022-12-05_doric-weekly-market-insight_img_128829_ae9e5246fe7d.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-12-05_doric-weekly-market-insight_img_128829_ae9e5246fe7d.png\n\nLinked image asset: 2022-12-05_doric-weekly-market-insight_img_128829_ae9e5246fe7d.png\n\nImage metadata: PNG 456x393 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\n25 170\n20 165\n15 160\n10 155\n5 150\n0 145\n-5 140\n-10 135\n-15 130\n-20 125\n2020 2020 2020 2021 2021 2021 2022 2022 2022\nQ2 Q3 a4 Q2 Q3 a4 Q2 Q3 a4\nGB Y-0-Y% change (L) === Seasonally Adjusted Index 2005Q1=100 (R)\nSource: WTO, Doric Research S.A",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "adjusted",
+        "change",
+        "doric",
+        "doric-weekly-market-insight_img_128829_ae9e5246fe7d.png",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 230,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-12-05_2022_12_05_doric_weekly_market_insight__s03_linked_asset_2022_12_05_doric_weekly_market_insight_img_128929_06c23187bb09_png",
+      "doc_id": "breakwave_insights_insights_2022-12-05_2022_12_05_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2022-12-05_2022_12_05_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2022-12-05_doric-weekly-market-insight_img_128929_06c23187bb09.png",
+      "section_path": [
+        "Linked asset: 2022-12-05_doric-weekly-market-insight_img_128929_06c23187bb09.png"
+      ],
+      "section_path_text": "Linked asset: 2022-12-05_doric-weekly-market-insight_img_128929_06c23187bb09.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-12-05_doric-weekly-market-insight_img_128929_06c23187bb09.png\n\nLinked image asset: 2022-12-05_doric-weekly-market-insight_img_128929_06c23187bb09.png\n\nImage metadata: PNG 922x320 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nBaltic Dry Index Performance\n6000\n5000\n4000\n3000\n2000\n1000\n0 ---YH , RH +S) aa35s5g a - -IyiS _ - -SS:_ <<\nJan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec\nSource: Baltic Exchange, Doric Research S.A. eee BD) Ave 2011-2015 ome BD!",
+      "keywords": [
+        "eee",
+        "asset",
+        "ave",
+        "bdi",
+        "image",
+        "source",
+        "aa35s5g",
+        "apr"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

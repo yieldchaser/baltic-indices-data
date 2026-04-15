@@ -26,7 +26,83 @@ keywords:
 - lindstr
 - orders
 - production
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: 1) 2021 dry bulk earnings in a historic perspective
+  section_type: null
+  source_line: He argued that while freight rates this year have improved at a very
+    rapid pace, the earnings of today are within a trend starting in 2016 when freight
+    rates bottomed out after many years with abyssal earnings. However, the underlying
+    positive trend has been m
+  unit: null
+  values:
+  - 2016.0
+  - 2019.0
+  - 19.0
+  - 2020.0
+- section: 2) Trade development main dry bulk commodities
+  section_type: null
+  source_line: In the first five months of 2021, the total demand* for dry bulk vessels
+    is up 8.5% as global industrial production is recovering at a rapid pace. Global
+    steel production was only down 0.9% in 2020 as Chinese growth almost offset the
+    negative growth in the res
+  unit: pct
+  values:
+  - 2021.0
+  - 8.5
+  - 0.9
+  - 2020.0
+  - 2021.0
+  - 13.9
+  - 13.5
+  - 200.0
+  - 100.0
+- section: 2) Trade development main dry bulk commodities
+  section_type: null
+  source_line: On the grain side of things, demand for commodities continues to grow
+    as the global population increases and as developing economies switch to a more
+    protein rich diet. On top of these generally supportive trends, the trade in 2020
+    and 2021 has been boosted by
+  unit: null
+  values:
+  - 2020.0
+  - 2021.0
+- section: 2) Trade development main dry bulk commodities
+  section_type: null
+  source_line: The long-term trend in thermal coal demand is more questionable, but
+    Lindström argues that the rumor of coal's death is greatly exaggerated in the
+    medium term. Global seaborne trade of coal is expected to remain firm up until
+    at least 2025 as increasing demand
+  unit: null
+  values:
+  - 2025.0
+- section: 3) Dry bulk market outlook
+  section_type: null
+  source_line: Thus, dry bulk demand growth is expected to remain healthy in the foreseeable
+    future. What then about supply.? Will newbuildings spawn… and result in another
+    false dawn?" Lindström argues that if we walk down the memory lane we see that
+    any uptick in freight r
+  unit: null
+  values:
+  - 2023.0
+  - 3.0
+- section: 4) Conclusion
+  section_type: null
+  source_line: Lindström is confident that the supply growth up until 2023 will be
+    at historically low levels. In the absence of new black swan events of a similar
+    magnitude as the Brumadinho disaster and the Covid-19 pandemic, he firmly believes
+    that the coming years will d
+  unit: null
+  values:
+  - 2023.0
+  - 19.0
+  - 3.0
 regions:
 - china
 - brazil

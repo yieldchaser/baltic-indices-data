@@ -25,7 +25,82 @@ keywords:
 - are
 - ban
 - cap
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: In such a case the impact on tanker demand would be quite significant.
+    To put it in numbers, this development would surge CPP tonne-miles out of the
+    Baltic and the Black Sea by 70% and 40% respectively. Using our fleet utilisation
+    data, this incremental demand
+  unit: pct
+  values:
+  - 70.0
+  - 40.0
+  - 10.0
+  - 30.0
+  - 20.0
+  - 86.0
+  - 48.0
+  - 28.0
+- section: Main
+  section_type: null
+  source_line: 'Whether Russia will be able to maintain its product exports at current
+    levels will not be impossible but rather challenging for a number of reasons.
+    Referring to the chart shown previously and the lowering interdependence, the
+    main difference is that although '
+  unit: pct
+  values:
+  - 30.0
+  - 17.0
+  - 10.0
+  - 3.0
+  - 10.0
+  - 6.0
+- section: Main
+  section_type: null
+  source_line: Talking about these hurdles, special attention should be given to the
+    application of a shipping insurance ban by the EU-with the UK's blessings - with
+    the aim to hamper Russia's oil and product exports, taking effect on the 5th December.
+    In other words, the EU
+  unit: null
+  values:
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: 'Hence, this begs the question: Are there alternative candidates to
+    carry Russia''s oil in the case that the shipping insurance ban takes effect and
+    the oil price cap is delayed to be implemented or if Russia declines to sell cargoes
+    below or at the agreeable le'
+  unit: null
+  values:
+  - 15.0
+  - 20.0
+- section: Main
+  section_type: null
+  source_line: As the chart illustrates, the dirty segment has a greater number of
+    alternatives which have previously been involved Iranian/Venezuelan sanctioned
+    trade or have ties with Russian ownership. Additionally, India which has evidently
+    ramped up its Russian crude ex
+  unit: null
+  values:
+  - 150.0
+  - 115.0
+- section: Main
+  section_type: null
+  source_line: This creates an additional headache for Russia, albeit a logistical
+    one, but most importantly it highlights the impact of this specific regulation.
+    From a shipping perspective the effects would be dire as these 200+ tankers would
+    need to seek employment elsewh
+  unit: null
+  values:
+  - 200.0
 regions:
 - china
 - brazil

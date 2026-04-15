@@ -26,7 +26,43 @@ keywords:
 - floor
 - iron
 - meters
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: September ended with 645 million square meters of floor space available
+    in China's commercial buildings (which includes residential buildings). This is
+    down slightly from the 648 million square meters of floor space that was available
+    at the end of August, but
+  unit: null
+  values:
+  - 645.0
+  - 648.0
+  - 645.0
+  - 2016.0
+- section: Main
+  section_type: null
+  source_line: Through the first nine months of this year, China's iron ore imports
+    have totaled 877.7 million tons, which is up year-on-year by 54.6 million tons
+    (7%). Coal imports have totaled 347.6 million tons, which is up year-on-year by
+    146.7 million tons (73%). Collec
+  unit: pct
+  values:
+  - 877.7
+  - 54.6
+  - 7.0
+  - 347.6
+  - 146.7
+  - 73.0
+  - 1.225
+  - 201.3
+  - 20.0
 regions:
 - china
 - brazil

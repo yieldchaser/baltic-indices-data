@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-01_2023_03_01_oil_gains_as_disruptions_to_russian_supply_mounts__root",
   "doc_id": "breakwave_insights_insights_2023-03-01_2023_03_01_oil_gains_as_disruptions_to_russian_supply_mounts",
   "parent_id": null,
-  "title": "Oil Gains As Disruptions To Russian Supply Mounts",
+  "title": "Oil gains as disruptions to Russian supply mounts",
   "section_path": [
-    "Oil Gains As Disruptions To Russian Supply Mounts"
+    "Oil gains as disruptions to Russian supply mounts"
   ],
-  "section_path_text": "Oil Gains As Disruptions To Russian Supply Mounts",
+  "section_path_text": "Oil gains as disruptions to Russian supply mounts",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nAnother positive session for risk appetite saw commodity markets edge higher. This was aided by further supply side issues across energy and metal markets. Crude oil jumped amid fears of further disruptions to Russian supply.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 581,
+  "token_count": 1009,
   "source_path": "reports/breakwave/2023/2023-03-01_oil-gains-as-disruptions-to-russian-supply-mounts.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/1/oil-gains-as-disruptions-to-russian-supply-mounts",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 579,
+      "token_count": 628,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-01_2023_03_01_oil_gains_as_disruptions_to_russian_supply_mounts__s02_linked_asset_2023_03_01_oil_gains_as_disruptions_to_russian_supply_mounts_img_1677618071697_2246531a4625_png",
+      "doc_id": "breakwave_insights_insights_2023-03-01_2023_03_01_oil_gains_as_disruptions_to_russian_supply_mounts",
+      "parent_id": "breakwave_insights_insights_2023-03-01_2023_03_01_oil_gains_as_disruptions_to_russian_supply_mounts__root",
+      "title": "Linked asset: 2023-03-01_oil-gains-as-disruptions-to-russian-supply-mounts_img_1677618071697_2246531a4625.png",
+      "section_path": [
+        "Linked asset: 2023-03-01_oil-gains-as-disruptions-to-russian-supply-mounts_img_1677618071697_2246531a4625.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-01_oil-gains-as-disruptions-to-russian-supply-mounts_img_1677618071697_2246531a4625.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-01_oil-gains-as-disruptions-to-russian-supply-mounts_img_1677618071697_2246531a4625.png\n\nLinked image asset: 2023-03-01_oil-gains-as-disruptions-to-russian-supply-mounts_img_1677618071697_2246531a4625.png\n\nImage metadata: PNG 1556x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 27-Feb Tue 28-Feb % chg Daily % chg Daily % chg\nCCI 489.65 488.00 -0.3% Brent crude 83.23 Gold 1,829\nPrecious 630.82 635.21 Thermal coal 192.85 -1.9% Palladium 1,404 -39.9%\nIndustrials 398.91 402.41 JKM LNG swaps 14.36 -4.1% Iron Ore 127.9 -0.8%\nBulks 603.76 601.59 -0.4% Copper 8,959 Hogs 2,350 0.0%\nAgs 314.00 312.94 -0.3% Nickel 24,620 -2.8% Corn 424\nEnergy 583.75 579.81 -0.7% Aluminium 2,337 Wheat 440 -1.5%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 338,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -27,7 +27,54 @@ keywords:
 - gas
 - are
 - after
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Aluminium gained after Europe's energy crisis claimed another victim.
+    Norsk Hydro ASA said it plans to close a smelter in Slovakia at the end of next
+    month. Ongoing high electricity prices would see it suffer substantial losses
+    beyond 2022. The 175kt a year sm
+  unit: worldscale_pct
+  values:
+  - 2022.0
+  - 175.0
+  - 60.0
+  - 22.0
+- section: Main
+  section_type: null
+  source_line: Crude oil rebounded after several days of losses after data showed
+    US inventories fell sharply. WTI rose 1.8% to USD88/bbl after EIA's weekly report
+    showed commercial inventories fell 7,065kbbl last week. The fall was driven by
+    a pick-up in exports, which jump
+  unit: pct
+  values:
+  - 1.8
+  - 8.0
+  - 7065.0
+  - 5.0
+  - 9.35
+  - 3.0
+  - 2015.0
+- section: Main
+  section_type: null
+  source_line: European energy markets remained on edge amid strong demand and supply
+    shortages. Dutch front month futures were little changed but remained near record
+    highs. Coal prices soared, with the European coal benchmark API2 rising 7% to
+    USD380/t as utilities increas
+  unit: pct
+  values:
+  - 7.0
+  - 80.0
+  - 75.0
+  - 95.0
+  - 6.82
 regions:
 - china
 - brazil

@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 403,
+  "token_count": 629,
   "source_path": "reports/breakwave/2022/2022-08-17_daily-coal-burn-in-china-has-set-another-record.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/8/17/daily-coal-burn-in-china-has-set-another-record",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 401,
+      "token_count": 448,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-08-17_2022_08_17_daily_coal_burn_in_china_has_set_another_record__s02_linked_asset_2022_08_17_daily_coal_burn_in_china_has_set_another_record_img_chart1284329_4802d2a740f7_jpg",
+      "doc_id": "breakwave_insights_insights_2022-08-17_2022_08_17_daily_coal_burn_in_china_has_set_another_record",
+      "parent_id": "breakwave_insights_insights_2022-08-17_2022_08_17_daily_coal_burn_in_china_has_set_another_record__root",
+      "title": "Linked asset: 2022-08-17_daily-coal-burn-in-china-has-set-another-record_img_chart1284329_4802d2a740f7.jpg",
+      "section_path": [
+        "Linked asset: 2022-08-17_daily-coal-burn-in-china-has-set-another-record_img_chart1284329_4802d2a740f7.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-08-17_daily-coal-burn-in-china-has-set-another-record_img_chart1284329_4802d2a740f7.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-08-17_daily-coal-burn-in-china-has-set-another-record_img_chart1284329_4802d2a740f7.jpg\n\nLinked image asset: 2022-08-17_daily-coal-burn-in-china-has-set-another-record_img_chart1284329_4802d2a740f7.jpg\n\nImage metadata: JPEG 693x270 mode=RGB\n\nOCR text:\nChinese Coal Production (2019 - 2022)\n400mt\n350mt\n300mt\n250mt\n200mt\n2019 2020 2021 2022",
+      "keywords": [
+        "china",
+        "coal",
+        "asset",
+        "image",
+        "chinese",
+        "daily-coal-burn-in-china-has-set-another-record_img_chart1284329_4802d2a740f7.jpg",
+        "jpeg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 139,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -25,7 +25,53 @@ keywords:
 - import
 - million
 - all
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we have highlighted to our clients in Commodore's recent Weekly
+    Dry Bulk Reports, China's coal production in April totaled 362.8 million tons.
+    This has marked a month-on-month drop of 13.9 million tons (-8%) but is up year-on-year
+    by 40.6 million tons (13%)
+  unit: pct
+  values:
+  - 362.8
+  - 13.9
+  - -8.0
+  - 40.6
+  - 13.0
+  - 352.0
+- section: Main
+  section_type: null
+  source_line: 'It remains concerning for China''s coal import prospects that coal
+    production has stayed so strong. Also remaining concerning is that coal production
+    growth continues to fare much better than coal-derived electricity generation
+    growth. Coal-derived electricity '
+  unit: pct
+  values:
+  - 400.8
+  - 68.0
+  - -15.0
+  - 50.9
+  - -11.0
+- section: Main
+  section_type: null
+  source_line: 'Also new more recently is that the Indian government last week began
+    asking utilities to increase the proportion of imported coal from the previous
+    10% to 30% by March next year. In addition, India''s Ministry of Power last week
+    also announced that it will cut '
+  unit: pct
+  values:
+  - 10.0
+  - 30.0
+  - 5.0
+  - 15.0
 regions:
 - china
 - brazil

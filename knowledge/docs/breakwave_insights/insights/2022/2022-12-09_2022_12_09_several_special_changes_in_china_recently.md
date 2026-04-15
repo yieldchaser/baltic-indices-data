@@ -25,7 +25,23 @@ keywords:
 - expect
 - further
 - its
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: It is not everyday that a tower in one of China's largest cities is
+    displaying a sign telling residents they are responsible for their own health.
+    It is not every week where protests in China reach levels not seen since 1989.
+    It is not every month that lending
+  unit: null
+  values:
+  - 1989.0
 regions:
 - china
 - brazil
@@ -56,7 +72,7 @@ themes:
 - government
 - are
 - change
-title: Several Special Changes In China Recently
+title: Several Special Changes in China Recently
 vessel_classes:
 - capesize
 - panamax

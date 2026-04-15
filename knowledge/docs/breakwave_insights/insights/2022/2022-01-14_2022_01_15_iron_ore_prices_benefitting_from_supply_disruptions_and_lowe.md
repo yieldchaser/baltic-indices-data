@@ -29,7 +29,52 @@ keywords:
 - chinese
 - year
 - are
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Iron ore with 63.5 per cent FE content - USD/tonne
+  unit: usd_per_unit
+  values:
+  - 63.5
+- section: Main
+  section_type: null
+  source_line: A faster than expected improvement of China's consumer and factory-gate
+    inflation prospects will leave more room for easing monetary policy in the coming
+    months. Next week's release of economic growth rate figures is also widely expected
+    to confirm that a slow
+  unit: null
+  values:
+  - 10.3
+  - 12.9
+  - 1.5
+  - 2.3
+- section: Main
+  section_type: null
+  source_line: It is not only the expectation of a stimulus-driven recovery in Chinese
+    iron ore demand that has driven prices higher. Extreme rainfalls in southeastern
+    Brazil has brought mining operations and rail transportation to a standstill.
+    While the deluge hit region o
+  unit: null
+  values:
+  - 320.0
+  - 335.0
+- section: Main
+  section_type: null
+  source_line: 'For the world''s largest exporter of iron ore, Australia, the year
+    has started better. Volumes of seaborne exports are marginally ahead of last year''s
+    record. Some 33 million tonnes have left Australia during the first thirteen days
+    of the year, with almost 80 '
+  unit: null
+  values:
+  - 33.0
+  - 80.0
 regions:
 - china
 - brazil

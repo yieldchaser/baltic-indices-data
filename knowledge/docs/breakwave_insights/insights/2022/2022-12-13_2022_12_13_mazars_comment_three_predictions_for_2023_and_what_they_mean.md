@@ -25,7 +25,89 @@ keywords:
 - was
 - its
 - would
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 9
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: In late 2018, no one really predicted that the world would slow down
+    and the Fed would begin money printing in eight months.
+  unit: null
+  values:
+  - 2018.0
+- section: Main
+  section_type: null
+  source_line: In late 2019 no one saw Covid-19 as a serious threat, even if news
+    from China was already worrying.
+  unit: null
+  values:
+  - 2019.0
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: In late 2020, everyone was talking about how vaccinations would be
+    the game changer. In fact, it was the Omicron variant. Meanwhile, no one saw inflation
+    resurgent.
+  unit: null
+  values:
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: In late 2021 inflation was deemed transitory, because no one believed
+    Russia would realise its threats.
+  unit: null
+  values:
+  - 2021.0
+- section: The economics
+  section_type: null
+  source_line: Macroeconomic and market volatility are set to persist throughout 2023.
+    This is not simply an extension of current conditions into the next year. For
+    one, the pandemic upended 40-odd years of the Great Moderation, a period of macroeconomic
+    stability.
+  unit: null
+  values:
+  - 2023.0
+  - 40.0
+- section: The economics
+  section_type: null
+  source_line: Our base scenario is that the Fed will ‘pivot' in an orderly fashion
+    sometime in the first six months of 2022. This will include the US central bank
+    maintaining tight conditions in order to shrink its own balance sheet and normalise
+    the yield curve, but also s
+  unit: null
+  values:
+  - 2022.0
+- section: The economics
+  section_type: null
+  source_line: Bonds, the most battered asset class in 2022 by its own historical
+    standards are back on investors' radars.
+  unit: null
+  values:
+  - 2022.0
+- section: Global debt
+  section_type: null
+  source_line: The strong Dollar, higher rates and inflation have somewhat curbed
+    global debt issuance. However, at $290bn and 355% Total-Debt-to-GDP, a rising
+    rate environment is a ticking time bomb. There aren't any great solutions. Debtors
+    and Creditors will face each oth
+  unit: pct
+  values:
+  - 290.0
+  - 355.0
+- section: EU - US - still good?
+  section_type: null
+  source_line: 'It was French warships which ensured American Independence. And when
+    American soldiers set foot in Normandy, they repaid their debt. The WWII order
+    was forged 78 years ago. Only a few hundred thousand people today remember what
+    the alliance between the US and '
+  unit: null
+  values:
+  - 78.0
 regions:
 - china
 - brazil

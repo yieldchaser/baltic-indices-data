@@ -24,7 +24,57 @@ keywords:
 - month
 - production
 - approximately
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: India produced approximately 123.9 billion kilowatt hours of electricity
+    last month, which is up month-on-month by 23 billion kilowatt hours (23%) and
+    up year-on-year by 5.3 billion kilowatt hours (4%). Previously, electricity production
+    had contracted on a ye
+  unit: pct
+  values:
+  - 123.9
+  - 23.0
+  - 23.0
+  - 5.3
+  - 4.0
+  - 120.8
+  - 4.0
+- section: Main
+  section_type: null
+  source_line: 'India''s coal-derived electricity generation totaled approximately
+    108.7 billion kilowatt hours of electricity last month. This has marked a month-on-month
+    increase of 18.4 billion kilowatt hours (20%) and is up year-on-year by 1.7 billion
+    kilowatt hours (2%). '
+  unit: pct
+  values:
+  - 108.7
+  - 18.4
+  - 20.0
+  - 1.7
+  - 2.0
+  - 107.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: India's hydropower production totaled approximately 10.6 billion kilowatt
+    hours last month. This has marked a month-on-month increase of 2.8 billion kilowatt
+    hours (36%) and is up year-on-year by 2.2 billion kilowatt hours (26%). Although
+    not a record level, h
+  unit: pct
+  values:
+  - 10.6
+  - 2.8
+  - 36.0
+  - 2.2
+  - 26.0
 regions:
 - china
 - brazil

@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 316,
+  "token_count": 973,
   "source_path": "reports/breakwave/2022/2022-08-25_chinese-consumer-spending-showing-growth.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/8/25/chinese-consumer-spending-showing-growth",
   "children": [
@@ -54,8 +54,92 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 314,
+      "token_count": 443,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth__s02_linked_asset_2022_08_25_chinese_consumer_spending_showing_growth_img_chart1284429_be01c14428ba_jpg",
+      "doc_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth",
+      "parent_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth__root",
+      "title": "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart1284429_be01c14428ba.jpg",
+      "section_path": [
+        "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart1284429_be01c14428ba.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart1284429_be01c14428ba.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-08-25_chinese-consumer-spending-showing-growth_img_chart1284429_be01c14428ba.jpg\n\nLinked image asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart1284429_be01c14428ba.jpg\n\nImage metadata: JPEG 689x289 mode=RGB\n\nOCR text:\nChinese Household Appliance Sales (2016 - 2022)\n1200\n1000\n800\n600\n400\n2016 2017 2018 2019 2020 2021 2022\nUnit: 100 million yuan",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "appliance",
+        "chinese",
+        "chinese-consumer-spending-showing-growth_img_chart1284429_be01c14428ba.jpg",
+        "household",
+        "jpeg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 142,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth__s03_linked_asset_2022_08_25_chinese_consumer_spending_showing_growth_img_chart2283929_089795c3862d_jpg",
+      "doc_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth",
+      "parent_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth__root",
+      "title": "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart2283929_089795c3862d.jpg",
+      "section_path": [
+        "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart2283929_089795c3862d.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart2283929_089795c3862d.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-08-25_chinese-consumer-spending-showing-growth_img_chart2283929_089795c3862d.jpg\n\nLinked image asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart2283929_089795c3862d.jpg\n\nImage metadata: JPEG 691x291 mode=RGB\n\nOCR text:\nChinese Furniture Sales (2016 - 2022)\n350\n250\n150\n50\n2016 2017 2018 2019 2020 2021 2022\nUnit: 100 million yuan",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "chinese",
+        "chinese-consumer-spending-showing-growth_img_chart2283929_089795c3862d.jpg",
+        "furniture",
+        "jpeg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 138,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth__s04_linked_asset_2022_08_25_chinese_consumer_spending_showing_growth_img_chart3283029_1d5581db276f_jpg",
+      "doc_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth",
+      "parent_id": "breakwave_insights_insights_2022-08-25_2022_08_25_chinese_consumer_spending_showing_growth__root",
+      "title": "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart3283029_1d5581db276f.jpg",
+      "section_path": [
+        "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart3283029_1d5581db276f.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart3283029_1d5581db276f.jpg",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-08-25_chinese-consumer-spending-showing-growth_img_chart3283029_1d5581db276f.jpg\n\nLinked image asset: 2022-08-25_chinese-consumer-spending-showing-growth_img_chart3283029_1d5581db276f.jpg\n\nImage metadata: JPEG 691x291 mode=RGB\n\nOCR text:\nChinese Clothing Sales (2016 - 2022)\n1800\n1400\n1000\n600\n2016 2017 2018 2019 2020 2021 2022\nUnit: 100 million yuan",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "chinese",
+        "chinese-consumer-spending-showing-growth_img_chart3283029_1d5581db276f.jpg",
+        "clothing",
+        "jpeg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 143,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

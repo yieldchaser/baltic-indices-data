@@ -26,7 +26,54 @@ keywords:
 - prices
 - remain
 - stockpiles
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Chinese steel prices remain high and finally rebounded last week. The
+    average price of hot rolled coil, for example, ended last week at 5,705 yuan/ton
+    which is 145 yuan (3%) more than a week ago. Previously, prices had fallen for
+    two consecutive weeks. Overall
+  unit: pct
+  values:
+  - 5705.0
+  - 145.0
+  - 3.0
+  - 14.7
+  - 100000.0
+  - -1.0
+  - 500000.0
+  - -3.0
+- section: Main
+  section_type: null
+  source_line: 'Regarding steel production, the most recently released data shows
+    daily crude steel production at large and medium-sized mills in China averaged
+    2.29 million tons during May 21 - May 31. This is down by 4% from mid-May but
+    is up year-on-year by 9%. As we have '
+  unit: worldscale_pct
+  values:
+  - 2.29
+  - 21.0
+  - 31.0
+  - 4.0
+  - 9.0
+- section: Main
+  section_type: null
+  source_line: Regarding air pollution, air pollution levels in Beijing were moderate
+    again last week. As we discussed in this week's Weekly China Report, average PM
+    2.5 levels in Beijing reached a high of only 125 last week. A reading of 200 or
+    higher is considered "unhealt
+  unit: null
+  values:
+  - 2.5
+  - 125.0
+  - 200.0
 regions:
 - china
 - brazil

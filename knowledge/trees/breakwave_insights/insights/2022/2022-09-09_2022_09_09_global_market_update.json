@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1082,
+  "token_count": 1294,
   "source_path": "reports/breakwave/2022/2022-09-09_global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/9/global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 177,
+      "token_count": 212,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-09_2022_09_09_global_market_update__s06_linked_asset_2022_09_09_global_market_update_img_unnamed286929_3de30de3969b_png",
+      "doc_id": "breakwave_insights_insights_2022-09-09_2022_09_09_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-09-09_2022_09_09_global_market_update__root",
+      "title": "Linked asset: 2022-09-09_global-market-update_img_unnamed286929_3de30de3969b.png",
+      "section_path": [
+        "Linked asset: 2022-09-09_global-market-update_img_unnamed286929_3de30de3969b.png"
+      ],
+      "section_path_text": "Linked asset: 2022-09-09_global-market-update_img_unnamed286929_3de30de3969b.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-09_global-market-update_img_unnamed286929_3de30de3969b.png\n\nLinked image asset: 2022-09-09_global-market-update_img_unnamed286929_3de30de3969b.png\n\nImage metadata: PNG 1118x564 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCargo Order Volumes (TCT & Voyage) for Panamaxes (Coal vs Non-Coal Shipments) ©\n5\n2\na ISI |\n- Sa ee\nm@ #1COAL/All mm #2All/All",
+      "keywords": [
+        "panamax",
+        "coal",
+        "asset",
+        "image",
+        "all/all",
+        "cargo",
+        "coal/all",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 148,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

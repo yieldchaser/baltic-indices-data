@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2024-01-05_2024_01_05_the_fix_global_market_update_from_shipfix__root",
   "doc_id": "breakwave_insights_insights_2024-01-05_2024_01_05_the_fix_global_market_update_from_shipfix",
   "parent_id": null,
-  "title": "The Fix Global Market Update From Shipfix",
+  "title": "The Fix - Global Market Update from Shipfix",
   "section_path": [
-    "The Fix Global Market Update From Shipfix"
+    "The Fix - Global Market Update from Shipfix"
   ],
-  "section_path_text": "The Fix Global Market Update From Shipfix",
+  "section_path_text": "The Fix - Global Market Update from Shipfix",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nMixed fortunes across the dry bulk vessel segments contributed to a marginal loss for the Baltic Dry Index yesterday. A solid start to the year for the Capesizes has offset weakness in the mid and small-sized segments. Falling temperatures in parts of the Northern Hemisphere contributed to gains for coal on Thursday.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1738,
+  "token_count": 2022,
   "source_path": "reports/breakwave/2024/2024-01-05_the-fix-global-market-update-from-shipfix.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2024/1/5/the-fix-global-market-update-from-shipfix",
   "children": [
@@ -166,8 +166,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 412,
+      "token_count": 451,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2024-01-05_2024_01_05_the_fix_global_market_update_from_shipfix__s06_linked_asset_2024_01_05_the_fix_global_market_update_from_shipfix_img_241jpg_39d61f807cf9_png",
+      "doc_id": "breakwave_insights_insights_2024-01-05_2024_01_05_the_fix_global_market_update_from_shipfix",
+      "parent_id": "breakwave_insights_insights_2024-01-05_2024_01_05_the_fix_global_market_update_from_shipfix__root",
+      "title": "Linked asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png",
+      "section_path": [
+        "Linked asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png"
+      ],
+      "section_path_text": "Linked asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2024/assets/2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png\n\nLinked image asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png\n\nImage metadata: PNG 1120x633 mode=RGBA\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Russian Coal Bound for China by Loading Region\nBi Arctic @ Baltic M@ Black Sea M™ Far East\n8\n6\n3\n5\nS 4\n©\ns\n=\n2\n°\nDec-22 Jan-23 Feb-23 Mar-23 Apr-23. Aug-23 | Sep-23 Oct23 Nov-23 Dec-23\nData source: Shipfix",
+      "keywords": [
+        "china",
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "apr-23.",
+        "arctic",
+        "aug-23"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

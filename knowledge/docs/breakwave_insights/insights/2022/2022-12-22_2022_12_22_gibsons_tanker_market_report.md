@@ -27,7 +27,102 @@ keywords:
 - year
 - oil
 - prices
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 8
+numeric_observations:
+- section: What the hell just happened?
+  section_type: null
+  source_line: 12 months ago, we titled our closing report of 2021 ‘A year to Forget'.
+    2022 has been anything but and summarizing what just happened on one page is no
+    easy feat. Early in January, we then titled a report called ‘Tanker Super Cycle',
+    where we assessed the like
+  unit: null
+  values:
+  - 2021.0
+  - 2022.0
+- section: What the hell just happened?
+  section_type: null
+  source_line: 'On the 24th of February, Russia launched its much-feared invasion
+    of Ukraine, and whilst Western intelligence officials had been warning of an attack,
+    few believed Russia would follow through. Ultimately, the war triggered a path
+    of self-sanctioning, followed '
+  unit: null
+  values:
+  - 24.0
+- section: What the hell just happened?
+  section_type: null
+  source_line: 'However, not all tankers benefitted in the same way. VLCCs were the
+    last asset class to join the party, with their fortunes being constrained by ongoing
+    OPEC+ production cuts, Chinese covid policy and the reshuffling of Russian oil
+    being a largely Aframax and '
+  unit: null
+  values:
+  - 2023.0
+- section: What the hell just happened?
+  section_type: null
+  source_line: The strength of the tanker market this year has prevailed against a
+    gloomy economic outlook, with high inflation and hawkish monetary policy dominating
+    sentiment in financial markets. However, despite this backdrop, oil production
+    growth has surged by 4.7mbd t
+  unit: null
+  values:
+  - 4.7
+  - 2.3
+- section: What the hell just happened?
+  section_type: null
+  source_line: With all the disruptions to oil trade this year, it is perhaps surprising
+    that oil prices are currently trading towards the bottom of their high/low range.
+    This year Brent prices peaked at $127.98/bbl in the weeks following the invasion,
+    and bottomed out at $7
+  unit: usd
+  values:
+  - 127.98
+  - 76.1
+  - 99.65
+- section: What the hell just happened?
+  section_type: null
+  source_line: 'However, it is early days and only time will tell where the fundamentals
+    truly lie. On some routes, freight rates have averaged at record levels this year.
+    LR2s on the Middle East/UK Cont run have averaged $4.1m so far in 2022 vs. a previous
+    record average of '
+  unit: usd
+  values:
+  - 2022.0
+  - 2008.0
+  - 40.0
+- section: What the hell just happened?
+  section_type: null
+  source_line: High freight rates and demand for older tonnage (much of which will
+    likely trade Russia) have also led to exceptional increases in asset values. The
+    price of a 10-year-old Aframax has increased more than 50% from January to December,
+    reaching levels not seen s
+  unit: pct
+  values:
+  - 10.0
+  - 50.0
+  - 2008.0
+  - 5.0
+  - -8.0
+  - 25.0
+  - 2021.0
+  - 2016.0
+  - 7.95
+  - 26.4
+- section: What the hell just happened?
+  section_type: null
+  source_line: Overall, the tanker market in 2022 has been transformed owing to terrible
+    circumstances. It is impossible to say how long the war will persist, but for
+    now, with few signs of peace, and permanent changes to the world's relationship
+    with Russia, shipowners have
+  unit: null
+  values:
+  - 2022.0
+  - 2023.0
 regions:
 - china
 - brazil
@@ -55,7 +150,7 @@ themes:
 - lng
 - container
 - china
-title: Gibsons Tanker Market Report
+title: Gibson's Tanker Market Report
 vessel_classes:
 - capesize
 - panamax

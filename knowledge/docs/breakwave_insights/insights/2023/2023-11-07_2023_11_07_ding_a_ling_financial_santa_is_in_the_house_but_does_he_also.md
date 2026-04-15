@@ -25,7 +25,97 @@ keywords:
 - short
 - cuts
 - markets
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 9
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Last Monday we said: "Stocks have somewhat corrected, and futures
+    traders have very short positions in bonds. There are now many scenarios in which
+    one (or both) of these asset classes stage a rebound… we should not write off
+    2023 just yet. September and Octob'
+  unit: null
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: Last week was one of the best on recent record for both stock and bonds.
+    The S&P 500 gained nearly 6%, erasing more than half of its correction (-11%),
+    while the US 10y Treasury gained 2% and the 30y gained 4%, now trading at 4.6%
+    and 4.7% respectively. The os
+  unit: pct
+  values:
+  - 500.0
+  - 6.0
+  - -11.0
+  - 2.0
+  - 4.0
+  - 4.6
+  - 4.7
+- section: Main
+  section_type: null
+  source_line: However, the last week of October is also the last week of trading
+    in the financial year for Hedge Funds and other investment vehicles. As such,
+    many move to crystallise losses. Following November 1st, managers wipe the slate
+    and are free to trade again.
+  unit: null
+  values:
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: 'Historically, this has been very well documented. In the last 52 years,
+    for the S&P 500:'
+  unit: null
+  values:
+  - 52.0
+  - 500.0
+- section: Main
+  section_type: null
+  source_line: 75% of returns after Nov 1st and until the end of the year have been
+    positive.
+  unit: pct
+  values:
+  - 75.0
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: When returns are positive, the last two months count for more than
+    30% of annual returns for the index on average.
+  unit: pct
+  values:
+  - 30.0
+- section: Main
+  section_type: null
+  source_line: 29% of the time, the last two months have had better performance than
+    the previous ten months cumulatively
+  unit: pct
+  values:
+  - 29.0
+- section: Main
+  section_type: null
+  source_line: 'For one, while the probability is that the next move will indeed be
+    a rate cut, we do live in a world that is geopolitically fraught. The US is already
+    running a 6.7% budget deficit, and we are entering an election year. Yes, House
+    Republicans are unlikely to '
+  unit: pct
+  values:
+  - 6.7
+- section: Main
+  section_type: null
+  source_line: Third, markets are just bad at predicting rates. Once, a former boss
+    with a great grasp of private banking and a legendary poor sense of humour told
+    me that "if you are a bear, you should think about changing professions". Bullishness
+    may be good for stocks, b
+  unit: null
+  values:
+  - 2023.0
+  - 2022.0
+  - 17.0
 regions:
 - china
 - brazil

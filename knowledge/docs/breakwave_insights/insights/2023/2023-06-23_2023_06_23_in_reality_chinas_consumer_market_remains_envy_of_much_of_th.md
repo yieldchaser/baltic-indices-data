@@ -25,7 +25,39 @@ keywords:
 - seen
 - are
 - far
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we discussed in Commodore's most recent Weekly China Report, China's
+    retail sales in May grew year-on-year by 12.7%. This has come in lower than many
+    expectations and has been disappointing to various pundits, but nevertheless this
+    is strong growth. As a po
+  unit: pct
+  values:
+  - 12.7
+  - 1.6
+  - 4.0
+- section: Main
+  section_type: null
+  source_line: We continue to see the United States and other western economies receiving
+    far too positive coverage, and China's economy receiving far too negative coverage.
+    12.7% growth is very good and well above the 0.2% inflation seen last month. In
+    the United States, th
+  unit: pct
+  values:
+  - 12.7
+  - 0.2
+  - 1.6
+  - 4.0
+  - 2020.0
+  - 2009.0
 regions:
 - china
 - brazil

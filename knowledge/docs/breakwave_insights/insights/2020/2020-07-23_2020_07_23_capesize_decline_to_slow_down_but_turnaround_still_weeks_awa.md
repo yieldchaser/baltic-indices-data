@@ -26,7 +26,37 @@ keywords:
 - here
 - last
 - once
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'The significant decline in Capesize spot rates over the last few weeks
+    has not been that surprising, as futures have already been trading at considerable
+    discounts to spot. The magnitude and speed of the decline though might have been
+    unexpected as spot rates '
+  unit: pct
+  values:
+  - 60.0
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: An interesting chart that was posted recently by 2020 Bulkers might
+    provide some clues on that front. Currently second half average Capesize rates
+    are priced at approximately 18,000/day based in the futures curve. If true that
+    would be the lowest 2H in four ye
+  unit: tonnage
+  values:
+  - 2020.0
+  - 18000.0
+  - 2.0
+  - 2.0
+  - 180.0
 regions:
 - china
 - brazil

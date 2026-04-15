@@ -28,7 +28,196 @@ keywords:
 - singapore
 - iron_ore
 - coal
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 1
+linked_assets_mirrored: 1
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 17
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: Signs that the US labour market is coming under some pressure contributed
+    to the dollar recording a significant decline last week. Softer-than-expected
+    US jobs data released on Friday suggested that the Federal Reserve may refrain
+    from further interest hikes d
+  unit: null
+  values:
+  - 1.4
+- section: Commodity Markets
+  section_type: null
+  source_line: Crude oil recorded a significant decline under volatile conditions
+    over the past week as concerns over global supplies receded. A combination of
+    lower US demand and easing concerns over supplies from the Middle East contributed
+    to the January Brent futures dec
+  unit: null
+  values:
+  - 4.8
+  - 84.89
+  - 2.3
+- section: Commodity Markets
+  section_type: null
+  source_line: European natural gas prices retreated for a third consecutive week,
+    with the front-month TTF futures recording a weekly loss of 9.4 per cent as they
+    settled at 48.05 euros per MWh on Friday. Weaker demand amid mild weather across
+    parts of the continent and con
+  unit: null
+  values:
+  - 9.4
+  - 48.05
+- section: Commodity Markets
+  section_type: null
+  source_line: The bearish sentiments for energy also extended to the coal markets
+    during the past week. An improving supply outlook amid higher global production
+    contributed to significant losses for the front-month futures for delivery in
+    Newcastle and Rotterdam. The forme
+  unit: null
+  values:
+  - 9.7
+  - 125.75
+  - 5.7
+  - 120.65
+- section: Commodity Markets
+  section_type: null
+  source_line: Despite the weak Chinese PMI data, iron ore advanced over the past
+    week amid an improving demand outlook. Investors expected that the Chinese appetite
+    for the steelmaking ingredient would pick up amid low inventories and more stimulus
+    for the world's second-la
+  unit: null
+  values:
+  - 4.8
+  - 122.94
+- section: Commodity Markets
+  section_type: null
+  source_line: Most of the base metals benefitted from an improving demand outlook
+    and a weaker US dollar. The three-month copper futures listed on the LME advanced
+    by 0.9 per cent over the past week, while the aluminium and zinc contracts recorded
+    weekly gains of 1.5 and 2.
+  unit: null
+  values:
+  - 0.9
+  - 1.5
+  - 2.1
+  - 0.8
+- section: Commodity Markets
+  section_type: null
+  source_line: 'Despite solid gains on Friday amid reports of lower Argentinan production,
+    the December wheat futures listed on the CBOT recorded a weekly decline of 0.5
+    per cent. Likewise, a solid finish to the week was not enough to bring the corn
+    contracts out of the red. '
+  unit: null
+  values:
+  - 0.5
+  - 0.7
+  - 2.4
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: The Baltic Exchange's dry bulk freight indices recorded a second consecutive
+    week with all indicators in the red. Despite a positive performance on Friday
+    amid a rebound for the Capesizes, the headline Baltic Dry Index declined by 6.5
+    per cent last week. Unlik
+  unit: null
+  values:
+  - 6.5
+  - 13.3
+  - 4.2
+  - 9.2
+  - 7.0
+  - 5.5
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: Unlike the indicators for the dry bulk sector, most of the Baltic Exchange's
+    indices for wet freight were in the black last week. The dirty tanker index rose
+    by 3.6 per cent, an eighth consecutive weekly gain, as the risk of disruptions
+    to exports from the Mid
+  unit: null
+  values:
+  - 3.6
+  - 2.5
+  - 18.5
+  - 2.8
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: The trading in bunker fuels remained volatile throughout the past week,
+    with mixed fortunes across the world's leading maritime hubs. The VLSFO advanced
+    by 3.9 per cent in Singapore and 0.4 per cent in Rotterdam last week while dropping
+    by 1.0 per cent in Hous
+  unit: null
+  values:
+  - 3.9
+  - 0.4
+  - 1.0
+  - 1.1
+  - 1.4
+  - 0.2
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: A continued drop in Chinese demand for seaborne transportation of steel
+    exports amid stronger domestic demand will put some pressure on freight rates.
+    While the average cargo sizes have been trending higher in the past few weeks,
+    it is primarily a case of a re
+  unit: null
+  values:
+  - 25000.0
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: 'Image reference: unnamed - 2023-11-06T172527.982.png | assets/2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png'
+  unit: null
+  values:
+  - 2023.0
+  - -11.0
+  - -6.0
+  - 72527.982
+  - 2023.0
+  - -11.0
+  - -6.0
+  - 2023.0
+  - -11.0
+  - -6.0
+- section: 'Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png'
+  unit: null
+  values:
+  - 2023.0
+  - -11.0
+  - -6.0
+  - 2023.0
+  - -11.0
+  - -6.0
+  - 72527982.0
+  - 4.0
+  - 7830.0
+- section: 'Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1120x632 mode=RGB'
+  unit: null
+  values:
+  - 1120.0
+  - 32.0
+- section: 'Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (71.9836, 71.9836)'
+  unit: null
+  values:
+  - 71.9836
+  - 71.9836
+- section: 'Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png'
+  section_type: linked_image_asset
+  source_line: e 4 2 «§
+  unit: null
+  values:
+  - 4.0
+  - 2.0
+- section: 'Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png'
+  section_type: linked_image_asset
+  source_line: 9% OOO 00 09 OM GG iH GAIN 1 ai PIA PAHO GO
+  unit: pct
+  values:
+  - 9.0
+  - 9.0
+  - 1.0
 regions:
 - china
 - brazil
@@ -39,7 +228,7 @@ regions:
 - west_africa
 - europe
 - singapore
-section_count: 5
+section_count: 6
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2023/2023-11-06_shipfix-global-market-update.html
@@ -58,7 +247,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax
@@ -101,4 +290,32 @@ The tug-of-war between China bears and bulls remains firmly in place, with the p
 Friday's edition of The Fix highlighted that demand for seaborne transportation of copper for discharge in Chinese ports has been trending higher throughout October. Given the red metal's traditional role as a bellwether for economic growth, the rebound in demand could signal improving economic conditions in the world's second-largest economy amid increasing support from the central government. Likewise, a downward trend for cargo order volumes for Chinese steel exports points towards higher domestic demand for the metal and highlights a potential rebound for growth rates.
 After a strong rebound following the Chinese public holidays at the end of September and the beginning of October, cargo order volumes for steel exports came under pressure during the past two weeks. Last week, cargo order volumes dropped below one million tonnes, and at the same time, Chinese steel rebar prices reached the highest level since the middle of September amid robust demand and low inventories. The two developments provide some support for the notion that Chinese industrial output may recover amid more stimulus for the economy.
 A continued drop in Chinese demand for seaborne transportation of steel exports amid stronger domestic demand will put some pressure on freight rates. While the average cargo sizes have been trending higher in the past few weeks, it is primarily a case of a return to the long-term mean of around 25,000 tonnes. Hence, any pressure on demand will mainly affect the smaller segments.
+Image reference: unnamed - 2023-11-06T172527.982.png | assets/2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png
 Data Source: Shipfix
+
+## Linked asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png
+Source asset: reports/breakwave/2023/assets/2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png
+
+Linked image asset: 2023-11-06_shipfix-global-market-update_img_unnamed-2023-11-06t172527982_a5f304d77830.png
+
+Image metadata: PNG 1120x632 mode=RGB
+
+Embedded info:
+dpi: (71.9836, 71.9836)
+
+OCR text:
+Weekly Cargo Order Volumes (TCT & Voyage) for Steel Products Loading in China
+= Average cargo size M® Cargo order volumes
+2 40
+15 30
+e 4 2 «§
+= 2
+8 $
+- id)
+= 2
+=
+05 10
+) )
+DP WP WP po po po oP ap qo oP ap qo oP ap? qo oP ap? qP pP oP WP oP
+9% OOO 00 09 OM GG iH GAIN 1 ai PIA PAHO GO
+Data source: Shipfix

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gold_rallies_amid_expectations_of_slower_rate_hikes_from_fed__root",
   "doc_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gold_rallies_amid_expectations_of_slower_rate_hikes_from_fed",
   "parent_id": null,
-  "title": "Gold Rallies Amid Expectations Of Slower Rate Hikes From Fed",
+  "title": "Gold rallies amid expectations of slower rate hikes from Fed",
   "section_path": [
-    "Gold Rallies Amid Expectations Of Slower Rate Hikes From Fed"
+    "Gold rallies amid expectations of slower rate hikes from Fed"
   ],
-  "section_path_text": "Gold Rallies Amid Expectations Of Slower Rate Hikes From Fed",
+  "section_path_text": "Gold rallies amid expectations of slower rate hikes from Fed",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nSlowing US inflation saw risk appetite rise sharply across the complex. This increased confidence of demand strengthening as China's reopens its economy. Gold rallied after inflation slowed in the US.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 566,
+  "token_count": 965,
   "source_path": "reports/breakwave/2023/2023-01-13_gold-rallies-amid-expectations-of-slower-rate-hikes-from-fed.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/13/gold-rallies-amid-expectations-of-slower-rate-hikes-from-fed",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 564,
+      "token_count": 615,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gold_rallies_amid_expectations_of_slower_rate_hikes_from_fed__s02_linked_asset_2023_01_13_gold_rallies_amid_expectations_of_slower_rate_hikes_from_fed_img_1673558287433_d75f104bbc52_png",
+      "doc_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gold_rallies_amid_expectations_of_slower_rate_hikes_from_fed",
+      "parent_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gold_rallies_amid_expectations_of_slower_rate_hikes_from_fed__root",
+      "title": "Linked asset: 2023-01-13_gold-rallies-amid-expectations-of-slower-rate-hikes-from-fed_img_1673558287433_d75f104bbc52.png",
+      "section_path": [
+        "Linked asset: 2023-01-13_gold-rallies-amid-expectations-of-slower-rate-hikes-from-fed_img_1673558287433_d75f104bbc52.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-13_gold-rallies-amid-expectations-of-slower-rate-hikes-from-fed_img_1673558287433_d75f104bbc52.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-13_gold-rallies-amid-expectations-of-slower-rate-hikes-from-fed_img_1673558287433_d75f104bbc52.png\n\nLinked image asset: 2023-01-13_gold-rallies-amid-expectations-of-slower-rate-hikes-from-fed_img_1673558287433_d75f104bbc52.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nWed 11-Jan Thu 12-Jan % chg Daily % chg Daily % chg\nccI 601.27 610.03 Brent crude 83.81 Gold 1,897\nPrecious 654.06 661.54 Thermal coal 377.50 Palladium 1,790 -23.4%\nIndustrials 417.65 420.51 JKM LNG swaps 26.76 -0.4% Iron Ore 126.6\nBulks 580.49 586.68 Copper 9,171 Hogs 2,250\nAgs 309.02 313.64 Nickel 26,828 -0.1% Corn 440\nEnergy 880.16 895.10 Aluminium 2,516 Wheat 493",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 305,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -29,7 +29,159 @@ keywords:
 - coal
 - grain
 - steel
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 14
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Freight rates have been trending upwards since Q1 2016
+  unit: null
+  values:
+  - 2016.0
+- section: Main
+  section_type: null
+  source_line: 'Dry bulk freight rates bottomed out in Q1 2016 and have since been
+    trending upwards. However, the underlying positive trend has been masked by two
+    major black swan events: the Brumadinho dam disaster in 2019 and the Covid epidemic
+    hitting the world economy in '
+  unit: null
+  values:
+  - 2016.0
+  - 2019.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: All the major commodity groups of iron ore, coal, grains, and minor
+    bulks are recording positive growth numbers and total dry bulk volumes loaded
+    is up 5.6% year to date (below left). Combined with low fleet growth this has
+    led to rapidly increasing freight ra
+  unit: pct
+  values:
+  - 5.6
+  - 2021.0
+  - 2016.0
+- section: 1) A weaker sentiment linked to negative growth in Chinese Steel Production
+  section_type: null
+  source_line: 'Chinese steel production recorded a stellar growth of 12% in the first
+    half of 2021. However, since July, steel production has declined sequentially
+    and recorded a negative year on growth of 20.3% in September (middle graph below).
+    As China produces more than '
+  unit: pct
+  values:
+  - 12.0
+  - 2021.0
+  - 20.3
+  - 50.0
+  - 14.0
+  - 8.2
+- section: 1) A weaker sentiment linked to negative growth in Chinese Steel Production
+  section_type: null
+  source_line: Why has Chinese steel production slowed down? The main culprit seems
+    to be a softening real estate market. The Chinese real estate market is estimated
+    to account for about 40% of Chinese steel demand, so a slowdown in this sector
+    will have a big effect on over
+  unit: pct
+  values:
+  - 40.0
+- section: 1) A weaker sentiment linked to negative growth in Chinese Steel Production
+  section_type: null
+  source_line: As of September, the year-to-date growth was at 2.8%. This implies
+    that steel production in Q4 needs to be down 8.4% YoY to reach the zero-growth
+    target for the full year. October steel production in China is still weak based
+    on numbers coming out from the Chi
+  unit: pct
+  values:
+  - 2.8
+  - 8.4
+- section: 1) A weaker sentiment linked to negative growth in Chinese Steel Production
+  section_type: null
+  source_line: As China accounts for about 70% of the seaborne volumes of iron ore
+    there should be some risk priced in in terms of Chinese iron ore demand in 2022.This
+    has clearly impacted sentiment negatively.However, we argue the restricting factor
+    for the iron ore trade a
+  unit: pct
+  values:
+  - 70.0
+  - 2022.0
+- section: 1) A weaker sentiment linked to negative growth in Chinese Steel Production
+  section_type: null
+  source_line: 'In the first ten months of this year, global iron ore export is up
+    a meagre 0.7%. This has happened in a year where the spot iron ore price has averaged
+    167$/ton, a level where all seaborne exports of iron ore are massively profitable.
+    This clearly shows that '
+  unit: worldscale_pct
+  values:
+  - 0.7
+  - 167.0
+  - 93.0
+  - 2022.0
+- section: 2) A sharp correction in commodity prices
+  section_type: null
+  source_line: The active ore contract has corrected down from a level of about $200/ton
+    in July to 93$/ton as of today. The main reason for this has been the slowdown
+    in Chinese steel production. Thermal coal prices have corrected sharply lower
+    since mid-October (below left
+  unit: usd
+  values:
+  - 200.0
+  - 93.0
+- section: 2) A sharp correction in commodity prices
+  section_type: null
+  source_line: As for now the Chinese government has succeeded in bringing the coal
+    price down through the interventions. The latest communicated price threshold
+    for the benchmark CV 5500 thermal coal mine mouth price is at 900 yuan per ton,
+    which is not that far away from t
+  unit: null
+  values:
+  - 5500.0
+  - 900.0
+- section: 3) A rapid decrease in congestion
+  section_type: null
+  source_line: The percentage of the fleet in congestion, i.e., vessels not moving
+    at anchorages or in ports, was at very high levels in Q3, but has since been decreasing
+    sequentially over the last three months (above right graph). The trend has been
+    most pronounced in the P
+  unit: pct
+  values:
+  - 11.0
+- section: 4) Charterers holding back on nominating cargoes
+  section_type: null
+  source_line: Finally, we have the short-term effect of charterers holding back on
+    nominating vessels. While the previous point was on new purchases of commodities
+    not being made, this one relates to previously signed Contract of Affreightments
+    (CoAs). A charterer who is si
+  unit: null
+  values:
+  - 1.0
+  - -2.0
+- section: Summary
+  section_type: null
+  source_line: The rapid decrease in freight rates lately can be explained by hypotheses
+    we've discussed. While risk should be priced in for Chinese iron ore demand due
+    to point 1, we argue that the seaborne trade of iron ore is restricted by supply
+    not demand. We see points
+  unit: null
+  values:
+  - 1.0
+  - 2.0
+  - 3.0
+  - 4.0
+- section: Summary
+  section_type: null
+  source_line: Based on the above we are optimistic for freight rates in the very
+    short term and into 2022. At the time of writing (Nov 8th, 2021) the next calendar
+    year contracts for Capes, Panamaxes and Supras are priced at a (fairly) steep
+    backwardation to this calendar y
+  unit: null
+  values:
+  - 2022.0
+  - 8.0
+  - 2021.0
 regions:
 - china
 - brazil

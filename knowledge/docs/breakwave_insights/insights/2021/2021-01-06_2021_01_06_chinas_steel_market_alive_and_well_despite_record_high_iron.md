@@ -27,7 +27,82 @@ keywords:
 - mills
 - production
 - high
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: If one looks strictly at the headline profit margin as constructed
+    by what the average steel mill needs in order to produce one tonne of steel, margins
+    have been under pressure for quite some time now. As the chart below shows, following
+    the very strong levels
+  unit: null
+  values:
+  - 2018.0
+- section: Main
+  section_type: null
+  source_line: And yet, steel production in 2020 should reach a new record in China
+    and should end up more than 5% higher compared to 2019. In addition, steel inventories
+    remain high on a historical basis (last print was ~9% above last year's level).
+    All the above make littl
+  unit: pct
+  values:
+  - 2020.0
+  - 5.0
+  - 2019.0
+  - 9.0
+- section: Main
+  section_type: null
+  source_line: 'As Bloomberg recently reported , China has been attempting to cool
+    down the hot iron ore market for 2021:'
+  unit: null
+  values:
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: In addition, expectations about steel production growth in 2021 are
+    slowly coming down, and officials are looking for actual declines in steel production,
+    something that could support high steel prices and stronger margins for the foreseeable
+    future.
+  unit: null
+  values:
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: China's ministry of industry and information technology (MIIT) said
+    the country's steel industry must reduce its crude steel output in 2021, as part
+    of low-carbon initiatives under the country 14th five-year economic plan for 2021-25.
+  unit: null
+  values:
+  - 2021.0
+  - 14.0
+  - 2021.0
+  - -25.0
+- section: Main
+  section_type: null
+  source_line: 'China''s 1bn t/yr steel sector, as an energy-intensive industry, "must
+    resolutely" reduce steel output to ensure a year-on-year decline, MIIT minister
+    of industry and information technology Xiao Yaqing said during a 28-29 December
+    work conference, according to '
+  unit: null
+  values:
+  - 1.0
+  - 28.0
+  - -29.0
+- section: Main
+  section_type: null
+  source_line: 'Very few people foresaw 2020 to be a record year for Chinese steel
+    production, especially in the middle of a pandemic. China''s steel industry currently
+    looks healthy and in a great position to capitalize on the infrastructure growth
+    that China and the rest of '
+  unit: null
+  values:
+  - 2020.0
 regions:
 - china
 - brazil

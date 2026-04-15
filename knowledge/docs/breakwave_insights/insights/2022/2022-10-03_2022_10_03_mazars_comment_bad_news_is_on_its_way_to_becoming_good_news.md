@@ -25,7 +25,76 @@ keywords:
 - not
 - quantitative
 - but
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Every time I hear about quantitative easing, the lyrics of the Eagle''s
+    1976 classic " Hotel California " come to mind: ‘You can check out any time you
+    like, but you can never leave''. Quantitative easing is the ultimate tool to pacify
+    markets. Once it was appli'
+  unit: null
+  values:
+  - 1976.0
+- section: Main
+  section_type: null
+  source_line: Today's environment is in some ways worse than in 2008. While during
+    the global financial crisis a 60/40 equity/bond portfolio was slightly below than
+    in 2022, it was mainly equities that suffered, while bondholders of safe bonds
+    were largely spared. In fact t
+  unit: null
+  values:
+  - 2008.0
+  - 60.0
+  - 40.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: The dislocations were thought to be contained within the high-yield
+    space. However, the world was perturbed last week when the UK 30-year bond yield
+    rose from 3.5% to 5% in four days, (a 15 standard deviation event), while the
+    Pound plunged more than when Geor
+  unit: pct
+  values:
+  - 30.0
+  - 3.5
+  - 5.0
+  - 15.0
+  - 1992.0
+  - 2008.0
+- section: Main
+  section_type: null
+  source_line: Central Bankers are all painfully aware of the impact of belayed reaction
+    to market stresses. That is why the Bank of England was so quick to intervene.
+    Instead of withdrawing £80bn from markets, it may add nearly as much in the next
+    few days. It may claim tha
+  unit: null
+  values:
+  - 80.0
+- section: Main
+  section_type: null
+  source_line: 2. The News cycle may remain particularly worrying . The combination
+    of UK economic and possibly political instability, the ongoing war in Ukraine,
+    rising inflation and pressures on business models may persist well beyond the
+    end of the year. Portfolios, where
+  unit: null
+  values:
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: 3. Expect less political drama . The extreme market reaction to Mr
+    Kwarteng's budget may prove to be a blessing in disguise. Governments, who for
+    years have relied on central banks to keep investors calm even when leaders made
+    extreme pronouncements, now under
+  unit: null
+  values:
+  - 3.0
 regions:
 - china
 - brazil

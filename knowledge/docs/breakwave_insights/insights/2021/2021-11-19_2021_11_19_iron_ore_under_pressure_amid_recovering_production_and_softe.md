@@ -29,7 +29,82 @@ keywords:
 - are
 - cent
 - chinese
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: After an extensive slide, iron ore prices have found some support at
+    an eighteen-month low. Iron ore with 63.5 per cent iron content for delivery in
+    Tianjin is currently trading at 85 dollars per tonne, a level that was last seen
+    in May 2020 when China embarke
+  unit: null
+  values:
+  - 63.5
+  - 85.0
+  - 2020.0
+  - 2015.0
+  - 69.0
+  - 74.0
+- section: Main
+  section_type: null
+  source_line: However, the headwinds for the Chinese economy are not the only reason
+    for the retreating market prices. The global iron ore output has also been recovering
+    in recent months. Australia and Brazil, the world's two major producers, are now
+    past much of the disru
+  unit: null
+  values:
+  - 330.0
+  - 89.4
+- section: Main
+  section_type: null
+  source_line: Australian iron ore miners are generally bullish, with both Fortescue
+    and BHP reporting strong production for FY2021. However, the optimism is not evenly
+    shared, with Rio Tinto standing out from the crowd. The company is expecting its
+    production to be, at best
+  unit: null
+  values:
+  - 21.0
+  - 325.0
+  - -340.0
+- section: Main
+  section_type: null
+  source_line: The sixty per cent drop in iron ore prices in the last four months
+    has effectively ended any notions of the commodity entering a super-cycle, which
+    was widely promoted in the earlier parts of the year. In a recent report, Fitch
+    revised its price projections fo
+  unit: null
+  values:
+  - 2021.0
+  - 155.0
+  - 170.0
+  - 130.0
+  - 110.0
+  - 65.0
+- section: Main
+  section_type: null
+  source_line: Last month saw the largest ever volume of seaborne iron ore discharged
+    in ports globally, according to cargo tracking data from Oceanbolt. The 146.5
+    million tonnes narrowly beat the previous record set in October last year. November
+    is also showing robust volu
+  unit: null
+  values:
+  - 146.5
+- section: Main
+  section_type: null
+  source_line: Despite the negative newsflow emitting from China, iron ore keeps flowing
+    into the ports in the world's second-largest economy. Last month saw volumes only
+    second to October 2020 discharged in Chinese ports, and November looks set to
+    match the 106 million tonn
+  unit: null
+  values:
+  - 2020.0
+  - 106.0
 regions:
 - china
 - brazil

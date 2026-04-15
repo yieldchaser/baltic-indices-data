@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-07-29_2022_07_29_metals_rally_amid_signs_of_supply_tightness__root",
   "doc_id": "breakwave_insights_insights_2022-07-29_2022_07_29_metals_rally_amid_signs_of_supply_tightness",
   "parent_id": null,
-  "title": "Metals Rally Amid Signs Of Supply Tightness",
+  "title": "Metals rally amid signs of supply tightness",
   "section_path": [
-    "Metals Rally Amid Signs Of Supply Tightness"
+    "Metals rally amid signs of supply tightness"
   ],
-  "section_path_text": "Metals Rally Amid Signs Of Supply Tightness",
+  "section_path_text": "Metals rally amid signs of supply tightness",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nCommodity markets shrugged off weak economic data, instead focusing on ongoing supply side issues. Metals led the complex higher, while oil gave back some of the recent gains. A slightly weaker USD also boosted investor appetite.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 729,
+  "token_count": 1122,
   "source_path": "reports/breakwave/2022/2022-07-29_metals-rally-amid-signs-of-supply-tightness.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/7/29/metals-rally-amid-signs-of-supply-tightness",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 727,
+      "token_count": 776,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-07-29_2022_07_29_metals_rally_amid_signs_of_supply_tightness__s02_linked_asset_2022_07_29_metals_rally_amid_signs_of_supply_tightness_img_1659045952900_4e85fdb73822_png",
+      "doc_id": "breakwave_insights_insights_2022-07-29_2022_07_29_metals_rally_amid_signs_of_supply_tightness",
+      "parent_id": "breakwave_insights_insights_2022-07-29_2022_07_29_metals_rally_amid_signs_of_supply_tightness__root",
+      "title": "Linked asset: 2022-07-29_metals-rally-amid-signs-of-supply-tightness_img_1659045952900_4e85fdb73822.png",
+      "section_path": [
+        "Linked asset: 2022-07-29_metals-rally-amid-signs-of-supply-tightness_img_1659045952900_4e85fdb73822.png"
+      ],
+      "section_path_text": "Linked asset: 2022-07-29_metals-rally-amid-signs-of-supply-tightness_img_1659045952900_4e85fdb73822.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-07-29_metals-rally-amid-signs-of-supply-tightness_img_1659045952900_4e85fdb73822.png\n\nLinked image asset: 2022-07-29_metals-rally-amid-signs-of-supply-tightness_img_1659045952900_4e85fdb73822.png\n\nImage metadata: PNG 1579x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nWed 27-Jul Thu 28-Jul % chg Daily % chg Daily % chg\nCCI 639.05 641.81 Brent crude 107.4 Gold 1,755\nPrecious 601.33 609.01 Thermal coal 411.40 0.0% Palladium 2,073 -11.3%\nIndustrials 365.11 370.77 JKM LNG swaps 41.54 Iron Ore 113.8\nBulks 520.12 528.56 Copper 7,771 Hogs 3,050 0.0%\nAgs 368.75 369.60 Nickel 21,894 Corn 428 0.0%\nEnergy 981.58 981.88 Aluminium 2,464 Wheat 499",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 303,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

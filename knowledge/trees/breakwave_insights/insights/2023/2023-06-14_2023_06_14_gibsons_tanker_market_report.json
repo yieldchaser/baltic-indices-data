@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-06-14_2023_06_14_gibsons_tanker_market_report__root",
   "doc_id": "breakwave_insights_insights_2023-06-14_2023_06_14_gibsons_tanker_market_report",
   "parent_id": null,
-  "title": "Gibsons Tanker Market Report",
+  "title": "Gibson's Tanker Market Report",
   "section_path": [
-    "Gibsons Tanker Market Report"
+    "Gibson's Tanker Market Report"
   ],
-  "section_path_text": "Gibsons Tanker Market Report",
+  "section_path_text": "Gibson's Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "A Need for Renewal\nAgainst the backdrop of escalating environmental pressure and a political focus on developing renewable energy in recent years, we also see increasing warnings from oil producers and industry veterans that significant new investment in global upstream oil and gas development is needed by 2030 to meet market needs and to prevent a supply shortfall, even if demand growth slows toward a plateau in the longer term. For those in the tanker market, a similar trend has been in the making. The tanker fleet is ageing fast, ironically \"helped\" by virtually non-existing demolition over the past 12 months on the back of a dramatic improvement in tanker earnings and the gradual exit of predominantly ageing tankers into the dark fleet, destined to trade almost solely Russian barrels.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 723,
+  "token_count": 995,
   "source_path": "reports/breakwave/2023/2023-06-14_gibsons-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/6/14/gibsons-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 717,
+      "token_count": 756,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-06-14_2023_06_14_gibsons_tanker_market_report__s02_linked_asset_2023_06_14_gibsons_tanker_market_report_img_128329_c9cc43fda21a_png",
+      "doc_id": "breakwave_insights_insights_2023-06-14_2023_06_14_gibsons_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2023-06-14_2023_06_14_gibsons_tanker_market_report__root",
+      "title": "Linked asset: 2023-06-14_gibsons-tanker-market-report_img_128329_c9cc43fda21a.png",
+      "section_path": [
+        "Linked asset: 2023-06-14_gibsons-tanker-market-report_img_128329_c9cc43fda21a.png"
+      ],
+      "section_path_text": "Linked asset: 2023-06-14_gibsons-tanker-market-report_img_128329_c9cc43fda21a.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-06-14_gibsons-tanker-market-report_img_128329_c9cc43fda21a.png\n\nLinked image asset: 2023-06-14_gibsons-tanker-market-report_img_128329_c9cc43fda21a.png\n\nImage metadata: PNG 431x308 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nNew Tanker Orders (no. of Vessels)\n400\nVLCC mSuezmax = LR2/Afra @LR1/Panamax mMR/Handy\n350\n300 |\n250 |\n200 J\n150\n| | | | =\n100 a a a\n50 a\nty)\n2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023",
+      "keywords": [
+        "panamax",
+        "handysize",
+        "vlcc",
+        "suezmax",
+        "asset",
+        "image",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

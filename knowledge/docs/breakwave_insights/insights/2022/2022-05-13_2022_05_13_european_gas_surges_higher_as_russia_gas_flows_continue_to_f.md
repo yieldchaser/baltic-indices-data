@@ -25,7 +25,46 @@ keywords:
 - ban
 - flows
 - higher
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil ended the session higher following another rollercoaster
+    ride. The market continues to fret over the EU.s proposal to ban imports of Russian
+    crude. Brent came under pressure during the session after some members of the
+    EU said it may be time to consi
+  unit: null
+  values:
+  - 27.0
+  - 1.0
+  - 2.5
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: European natural gas surged higher as Russian gas flows were disrupted.
+    Dutch front month futures were up as much as 14% to EUR115/MWh as flows from Russia
+    via Ukraine fell further following interruptions at a cross border entry point.
+    Germany said the cuts am
+  unit: worldscale_pct
+  values:
+  - 14.0
+  - 15.0
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: Base metals prices plunged further on mounting worries about weak global
+    demand. Copper pushed below USD9000/t for the first time since October as investors
+    focus shifts from supply disruptions to weaker consumption. China remains the
+    heart of these concerns a
+  unit: usd
+  values:
+  - 19.0
 regions:
 - china
 - brazil

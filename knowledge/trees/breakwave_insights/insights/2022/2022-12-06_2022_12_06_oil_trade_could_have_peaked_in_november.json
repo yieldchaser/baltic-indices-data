@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-12-06_2022_12_06_oil_trade_could_have_peaked_in_november__root",
   "doc_id": "breakwave_insights_insights_2022-12-06_2022_12_06_oil_trade_could_have_peaked_in_november",
   "parent_id": null,
-  "title": "Oil Trade Could Have Peaked In November",
+  "title": "Oil trade could have peaked in November",
   "section_path": [
-    "Oil Trade Could Have Peaked In November"
+    "Oil trade could have peaked in November"
   ],
-  "section_path_text": "Oil Trade Could Have Peaked In November",
+  "section_path_text": "Oil trade could have peaked in November",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nNovember oil flow data paints a picture of very healthy refinery operations, with record crude imports and clean product liftings, lead by Asia. By David Wech\nlobal seaborne crude and condensate imports are set to undoubtedly mark the highest level in the Covid era in November. Based on preliminary data for days 1-25, crude imports could reach 42.3mbd, the highest since January 2020, and 2.4mbd higher than the average level over the last 12 months.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 580,
+  "token_count": 995,
   "source_path": "reports/breakwave/2022/2022-12-06_oil-trade-could-have-peaked-in-november.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/12/6/oil-trade-could-have-peaked-in-november",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 578,
+      "token_count": 621,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-12-06_2022_12_06_oil_trade_could_have_peaked_in_november__s02_linked_asset_2022_12_06_oil_trade_could_have_peaked_in_november_img_20221129_328d5d426435_png",
+      "doc_id": "breakwave_insights_insights_2022-12-06_2022_12_06_oil_trade_could_have_peaked_in_november",
+      "parent_id": "breakwave_insights_insights_2022-12-06_2022_12_06_oil_trade_could_have_peaked_in_november__root",
+      "title": "Linked asset: 2022-12-06_oil-trade-could-have-peaked-in-november_img_20221129_328d5d426435.png",
+      "section_path": [
+        "Linked asset: 2022-12-06_oil-trade-could-have-peaked-in-november_img_20221129_328d5d426435.png"
+      ],
+      "section_path_text": "Linked asset: 2022-12-06_oil-trade-could-have-peaked-in-november_img_20221129_328d5d426435.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-12-06_oil-trade-could-have-peaked-in-november_img_20221129_328d5d426435.png\n\nLinked image asset: 2022-12-06_oil-trade-could-have-peaked-in-november_img_20221129_328d5d426435.png\n\nImage metadata: PNG 952x464 mode=RGBA\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nSpike in global crude imports in November allows for record\nproduct liftings, with Asia (China) playing the crucial role\nGlobal seaborne crude/condensate Imports (LHS, mbd) and Global clean product liftings (excl. LPG, LHS, mbd) and Asian\nAslan contribution (RHS, mbd) contribution (RHS, mbd)\n45 27 34 15\n44\n26 33\n43 14\n42 25 32\n4 24 31 te\n40\n39 oe ey 12\n38 22 «29\n37 11\nos | 21 28\n5 Nov-22 data reflects days 1-25 y ) 5) am Nov-22 data reflects days 1-25 @\nJar19 Jul-19 Jan-20 Jul-20 Jan21 Juk21 Jan-22 Jul-22 Jar19 Jul-19 Jar-20 Jul-20 Janr21 Jul21 Jan-22 Jul-22\nmm Global -Asia mune Global -_-Asia",
+      "keywords": [
+        "lpg",
+        "china",
+        "crude_oil",
+        "gas",
+        "global",
+        "mbd",
+        "asia",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 336,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

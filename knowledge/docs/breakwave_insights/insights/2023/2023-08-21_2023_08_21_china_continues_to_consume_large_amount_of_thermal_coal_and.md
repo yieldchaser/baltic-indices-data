@@ -26,7 +26,51 @@ keywords:
 - year-on-year
 - coal-derived
 - generation
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The most recently released data shows that daily crude steel output
+    at large and medium-sized mills in China averaged 2.15 million tons during August
+    1 - 10. This marks a 0.5% increase from late July and is up year-on-year by 11%.
+  unit: worldscale_pct
+  values:
+  - 2.15
+  - 1.0
+  - 10.0
+  - 0.5
+  - 11.0
+- section: Main
+  section_type: null
+  source_line: We continue to stress that China is producing a very healthy amount
+    of steel (and is consuming a very healthy amount of iron ore). The excess in China's
+    housing market remains grotesque, but supply and demand of Chinese homes is not
+    what drives the dry bulk sp
+  unit: pct
+  values:
+  - 11.0
+- section: Main
+  section_type: null
+  source_line: As we also have been stressing in Commodore's Weekly China Reports,
+    significant in the coal market is that China's thermal coal-derived electricity
+    generation most recently came in at a level that is up year-on-year by 8%. Growth
+    has remained strong and China'
+  unit: pct
+  values:
+  - 8.0
+  - 599.7
+  - 76.9
+  - 15.0
+  - 43.7
+  - 8.0
+  - 598.9
+  - 2022.0
 regions:
 - china
 - brazil

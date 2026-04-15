@@ -25,7 +25,53 @@ keywords:
 - production
 - year-on-year
 - hydropower
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China produced 382.2 million tons of coal in August. This has marked
+    a month-on-month increase of 4.7 million tons (1%) and is up year-on-year by 11.8
+    million tons (3%). As we have been stressing in our Weekly Dry Bulk Reports and
+    Weekly China Reports, China's
+  unit: pct
+  values:
+  - 382.2
+  - 4.7
+  - 1.0
+  - 11.8
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: Coal-derived electricity generation continues to make up the bulk of
+    the nation's electricity production and totaled 589.1 billion kilowatt hours.
+    This has marked a month-on-month drop of 10.6 billion kilowatt hours (-2%) and
+    is down up year-on-year by 9.8 bil
+  unit: pct
+  values:
+  - 589.1
+  - 10.6
+  - -2.0
+  - 9.8
+  - -2.0
+- section: Main
+  section_type: null
+  source_line: Hydropower production totaled 146.6 billion kilowatt hours last month.
+    This has marked a month-on-month increase of 25.5 billion kilowatt hours (21%)
+    and is up year-on-year by 24 billion kilowatt hours (20%). Previously, hydropower
+    output had contracted on a y
+  unit: pct
+  values:
+  - 146.6
+  - 25.5
+  - 21.0
+  - 24.0
+  - 20.0
 regions:
 - china
 - brazil

@@ -24,7 +24,97 @@ keywords:
 - early
 - was
 - year.
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: neutral
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Yet, as we enter July, the futures market is not that different versus
+    last year. In fact, as of today, the futures market is almost identical to last
+    year , despite the fact that spot rates for Capesizes stand some 50% higher versus
+    this time last year.
+  unit: pct
+  values:
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: 'Similar to the BDI that measures spot rates, BDRYFF is an index that
+    measures near-dated freight futures across the dry bulk market (weightings are
+    50% Capesize, 40% Panamax and 10% Supramax; you can find out more about the BDRYFF
+    Index here ). The last close '
+  unit: pct
+  values:
+  - 50.0
+  - 40.0
+  - 10.0
+- section: Main
+  section_type: null
+  source_line: However, further out the futures curve, the market is more pessimistic.
+    Q4 Capesize futures are now 20% lower versus this time last year (Panamax Q4 futures
+    is only slightly lower).
+  unit: pct
+  values:
+  - 20.0
+- section: Main
+  section_type: null
+  source_line: Last year, the rally in freight rates was only half way done once we
+    entered into July. The freight futures market was less pessimistic then as near-dated
+    futures were priced at parity to spot (compare than to today when the futures
+    are at 35% discount to spot
+  unit: worldscale_pct
+  values:
+  - 35.0
+  - 50.0
+  - 29365.0
+  - 20000.0
+  - 16014.0
+  - 10500.0
+  - 47.0
+  - 53.0
+- section: Main
+  section_type: null
+  source_line: As the chart below shows, in 2019, despite BDRY being up roughly 40%
+    since the end of Q1 (using the end of Q1 as the beginning of the seasonal improve
+    in freight for comparison purposes), BDRY went to increase another 50%+ before
+    reaching its peak in mid Septe
+  unit: worldscale_pct
+  values:
+  - 2019.0
+  - 40.0
+  - 50.0
+  - 130.0
+- section: Main
+  section_type: null
+  source_line: On top of the year over year similarities in pricing of the next three
+    months futures, the differences in Q4 futures is also interesting. Q4 is now at
+    a 20% discount to Q3, which is quite a unique given that historically Q4 is the
+    strongest quarter of the year
+  unit: pct
+  values:
+  - 20.0
+  - 2020.0
+  - 2019.0
+  - 20000.0
+  - 16000.0
+  - 25.0
+  - 2020.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: 'Finally, how likely is a repeat of 2019? The common saying is that
+    "history does not repeat itself but it often rhymes". The similarities today,
+    both in terms of pricing as well as in terms of dry bulk fundamentals, are at
+    least worth exploring. Of course the '
+  unit: null
+  values:
+  - 2019.0
+  - 19.0
+  - 30.0
 regions:
 - china
 - brazil

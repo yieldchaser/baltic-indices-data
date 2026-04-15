@@ -26,7 +26,165 @@ keywords:
 - europe
 - singapore
 - iron_ore
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 1
+linked_assets_mirrored: 1
+linked_assets_skipped: 2
 market_tone: neutral
+numeric_observation_count: 16
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: 'US economic data released last week continued to strengthen the case
+    for the Federal Reserve to maintain its current aggressive stance on interest
+    rate hikes. Stronger-than-expected consumer confidence and labour markets are
+    likely to produce another 75 basis '
+  unit: null
+  values:
+  - 75.0
+- section: Commodity Markets
+  section_type: null
+  source_line: Following the solid gains recorded in the wake of the announcement
+    from OPEC+ that oil production would be reduced from next month, last week reversed
+    some of the advances as the demand outlook continued to soften. The mounting prospects
+    of an increasingly str
+  unit: null
+  values:
+  - 91.63
+- section: Commodity Markets
+  section_type: null
+  source_line: European natural gas futures recorded a third consecutive week of losses,
+    with warmer-than-usual weather across parts of the continent and expectations
+    of price caps contributing to the lower prices. The front-month contracts shed
+    more than nine per cent and s
+  unit: null
+  values:
+  - 142.0
+  - 4.4
+- section: Commodity Markets
+  section_type: null
+  source_line: In contrast to the other energy commodities, thermal coal futures gained
+    ground last week as a strike in South Africa threatened to affect global supplies.
+    The Newcastle futures for delivery in November gained 4.6 per cent for the week
+    and settled at 398 dolla
+  unit: null
+  values:
+  - 4.6
+  - 398.0
+  - 4.8
+  - 264.0
+- section: Commodity Markets
+  section_type: null
+  source_line: Iron ore futures trading in Singapore ended last week marginally below
+    the previous one. However, the modest 0.3 per cent decline for the week masked
+    volatile conditions throughout the week. Continued concerns over the strength
+    of the Chinese economy have seen
+  unit: null
+  values:
+  - 0.3
+  - 92.0
+- section: Commodity Markets
+  section_type: null
+  source_line: Like iron ore, the base metals endured a volatile week. Global supply
+    concerns amid high energy prices and an increasingly gloomy economic outlook contributed
+    to prices seeing substantial swings throughout the week. The copper futures trading
+    at the London Met
+  unit: null
+  values:
+  - 1.1
+  - 0.3
+  - 1.7
+  - 3.2
+- section: Commodity Markets
+  section_type: null
+  source_line: Renewed concerns over the future of the deal that has allowed Ukraine
+    to resume seaborne shipments of agricultural commodities contributed to a volatile
+    week for wheat prices. The contracts trading in Chicago advanced nearly seven
+    per cent last Monday but gave
+  unit: null
+  values:
+  - 1.7
+- section: Freight Markets
+  section_type: null
+  source_line: The Baltic Dry Index dropped by 6.3 per cent last week amid weakness
+    among the larger vessel segments. The sub-index for the Capesizes retreated by
+    9.6 per cent, offsetting nearly half of the gains from the preceding week. While
+    Shipfix's data suggested that o
+  unit: null
+  values:
+  - 6.3
+  - 9.6
+  - 6.9
+- section: Freight Markets
+  section_type: null
+  source_line: If the week was a challenge for the dry bulk vessels, the Baltic's
+    indices for the wet trade had a week of solid gains. The dirty and clean tanker
+    indices shook off any ill effects of the announced oil production cuts and advanced
+    by around 6,5 per cent, follo
+  unit: null
+  values:
+  - 65.0
+  - 11.4
+  - 10.1
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: 'Image reference: unnamed (97).png | assets/2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png'
+  unit: null
+  values:
+  - 97.0
+  - 2022.0
+  - -10.0
+  - -18.0
+  - 89729.0
+  - 8.0
+  - 19.0
+- section: 'Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png'
+  unit: null
+  values:
+  - 2022.0
+  - -10.0
+  - -18.0
+  - 89729.0
+  - 8.0
+  - 19.0
+- section: 'Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1118x470 mode=RGB'
+  unit: null
+  values:
+  - 1118.0
+  - 70.0
+- section: 'Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (71.9836, 71.9836)'
+  unit: null
+  values:
+  - 71.9836
+  - 71.9836
+- section: 'Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png'
+  section_type: linked_image_asset
+  source_line: e 400k
+  unit: null
+  values:
+  - 400.0
+- section: 'Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png'
+  section_type: linked_image_asset
+  source_line: 'tl a tad | 1 ue alate Il | f ! Hil : | |'
+  unit: null
+  values:
+  - 1.0
+- section: 'Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png'
+  section_type: linked_image_asset
+  source_line: 2019 at 2020 aa 2021 tal 2022 ne
+  unit: null
+  values:
+  - 2019.0
+  - 2020.0
+  - 2021.0
+  - 2022.0
 regions:
 - china
 - brazil
@@ -37,7 +195,7 @@ regions:
 - west_africa
 - europe
 - singapore
-section_count: 5
+section_count: 6
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2022/2022-10-18_shipfix-global-market-update.html
@@ -63,7 +221,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax
@@ -106,5 +264,25 @@ If the week was a challenge for the dry bulk vessels, the Baltic's indices for t
 ## The View from the Shipfix Desk
 The strike among port workers in South Africa has curtailed the country's exports and caused congestion around its ports. The labour dispute over pay has also reduced the country's exports of coal and sent global prices for the dirtiest of fossil fuels higher. Thermal coal futures gained nearly five per cent last week, even as other energy prices were declining. While South African coal only accounts for a minor part of global supplies, the tight supply situation globally led to a sharp price rise.
 European buyers of coal have become increasingly dependent on South African supplies as they have sought to replace imports from Russia. Hence, cargo-ordering activities have been increasing since the Russian invasion of Ukraine. However, Shipfix's order data showed that the weekly volumes were declining in the run-up to the strike. Last week nevertheless showed a rebound in cargo orders, suggesting that European buyers were expecting a swift solution to the standoff.
+Image reference: unnamed (97).png | assets/2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png
 Capesize freight rates have staged a remarkable recovery since the beginning of September, following an abysmal three months. Still, despite the rapid rebound, daily freight rates remain well below what has been observed during the same period in recent years. Hence, if history provides any guidance, there could be an additional upside, but rising economic and geopolitical headwinds could derail such assumptions.
 Data Source: Shipfix
+
+## Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png
+Source asset: reports/breakwave/2022/assets/2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png
+
+Linked image asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png
+
+Image metadata: PNG 1118x470 mode=RGB
+
+Embedded info:
+dpi: (71.9836, 71.9836)
+
+OCR text:
+Weekly Cargo Order Volumes (TCT & Voyage) for South African Coal Discharging in Europe ©
+SY 3Y All
+e 400k
+8
+)
+tl a tad | 1 ue alate Il | f ! Hil : | |
+2019 at 2020 aa 2021 tal 2022 ne

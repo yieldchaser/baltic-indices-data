@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know__root",
   "doc_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know",
   "parent_id": null,
-  "title": "Did You Know",
+  "title": "Did you know?",
   "section_path": [
-    "Did You Know"
+    "Did you know?"
   ],
-  "section_path_text": "Did You Know",
+  "section_path_text": "Did you know?",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nTanker supply fundamentals are impacted by new orders, new deliveries and demolition of ships that are no longer viable to operate. • New orders are placed by shipowners anticipating future rates to exceed a break-even level that is determined by the purchase price of the ship as well as the projected cost to operate it. • New deliveries take place 2-3 years after a ship is ordered.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 131,
+  "token_count": 1052,
   "source_path": "reports/breakwave/2023/2023-04-10_did-you-know.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/10/did-you-know",
   "children": [
@@ -41,21 +41,105 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "Tanker supply fundamentals are impacted by new orders, new deliveries and demolition of ships that are no longer viable to operate. • New orders are placed by shipowners anticipating future rates to exceed a break-even level that is determined by the purchase price of the ship as well as the projected cost to operate it.",
+      "summary": "Image reference: 1 (5).png | assets/2023-04-10_did-you-know_img_128529_45b76cb7cdd6.png\nImage reference: DSC_6292b1.jpg | assets/2023-04-10_did-you-know_img_dsc-6292b1_a0f30d21aab3.jpg\nTanker supply fundamentals are impacted by new orders, new deliveries and demolition of ships that are no longer viable to operate. • New orders are placed by shipowners anticipating future rates to exceed a break-even level that is determined by the purchase price of the ship as well as the projected cost to operate it.",
       "keywords": [
         "are",
         "new",
+        "image",
+        "reference",
         "ship",
         "years",
         "after",
-        "cost",
-        "deliveries",
-        "demolition"
+        "cost"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 129,
+      "token_count": 244,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know__s02_linked_asset_2023_04_10_did_you_know_img_128529_45b76cb7cdd6_png",
+      "doc_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know__root",
+      "title": "Linked asset: 2023-04-10_did-you-know_img_128529_45b76cb7cdd6.png",
+      "section_path": [
+        "Linked asset: 2023-04-10_did-you-know_img_128529_45b76cb7cdd6.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-10_did-you-know_img_128529_45b76cb7cdd6.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-10_did-you-know_img_128529_45b76cb7cdd6.png\n\nLinked image asset: 2023-04-10_did-you-know_img_128529_45b76cb7cdd6.png\n\nImage metadata: PNG 827x302 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nDID YOU KNOW ? Aging fleet of Tankers\nwren eenenn---------------- +--+ eee SE",
+      "keywords": [
+        "asset",
+        "image",
+        "aging",
+        "did",
+        "did-you-know_img_128529_45b76cb7cdd6.png",
+        "dpi",
+        "eee",
+        "eenenn"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 121,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know__s03_linked_asset_2023_04_10_did_you_know_img_dsc_6292b1_a0f30d21aab3_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know__root",
+      "title": "Linked asset: 2023-04-10_did-you-know_img_dsc-6292b1_a0f30d21aab3.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-10_did-you-know_img_dsc-6292b1_a0f30d21aab3.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-10_did-you-know_img_dsc-6292b1_a0f30d21aab3.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-10_did-you-know_img_dsc-6292b1_a0f30d21aab3.jpg\n\nLinked image asset: 2023-04-10_did-you-know_img_dsc-6292b1_a0f30d21aab3.jpg\n\nImage metadata: JPEG 945x603 mode=RGB\n\nOCR text:\n= ‘2\nA as f. Jag\noan ime ese as ‘\nSP rcs ie ge | F\n> ere phe & bb | ~ a\nst : .",
+      "keywords": [
+        "asset",
+        "ere",
+        "image",
+        "aau",
+        "aee",
+        "agg",
+        "anemia",
+        "arr"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 417,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know__s04_linked_asset_2023_04_10_did_you_know_img_128729_3222f63e4cc8_png",
+      "doc_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-04-10_2023_04_10_did_you_know__root",
+      "title": "Linked asset: 2023-04-10_did-you-know_img_128729_3222f63e4cc8.png",
+      "section_path": [
+        "Linked asset: 2023-04-10_did-you-know_img_128729_3222f63e4cc8.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-10_did-you-know_img_128729_3222f63e4cc8.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-10_did-you-know_img_128729_3222f63e4cc8.png\n\nLinked image asset: 2023-04-10_did-you-know_img_128729_3222f63e4cc8.png\n\nImage metadata: PNG 482x442 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nCrude Tanker Fleet Age by Size\n15\n14\n13\n12\n2\nso\n=\n& 10\n<\no\n4 9\ng\n<= 8\n7\n6\n5\nDNS KY MD nm OD DM OD DP DP DP\nSELL K LK HK KH KM KM\nVLCC Suezmax = Aframax --= Panamax",
+      "keywords": [
+        "panamax",
+        "vlcc",
+        "suezmax",
+        "aframax",
+        "asset",
+        "image",
+        "age",
+        "crude"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 176,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

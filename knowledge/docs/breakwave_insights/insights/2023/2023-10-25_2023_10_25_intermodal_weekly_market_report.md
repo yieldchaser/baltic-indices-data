@@ -26,7 +26,54 @@ keywords:
 - soybean
 - trade
 - exports
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: In terms of the largest trading partners for these exporting nations,
+    China dominates the trade, importing the largest cargoes of soybeans and maize.
+    The Asian powerhouse uses soybeans mainly for animal feed, with annual consumption
+    ranging between 13 and 15 m
+  unit: tonnage
+  values:
+  - 13.0
+  - 15.0
+  - 96.0
+  - 7255.0
+  - 2021.0
+  - 6409.0
+  - 2022.0
+  - 5101.0
+  - 2021.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: Focusing on the specific trade between the US and China, despite the
+    strong US soybean trade, corn imports have been taking a steady beating since
+    2021 and are currently at their lowest level since 2021, with only 70.014 kt sent
+    to China in September and 92.57
+  unit: tonnage
+  values:
+  - 2021.0
+  - 2021.0
+  - 70.014
+  - 92.57
+- section: Main
+  section_type: null
+  source_line: With corn having lost almost 28% of its value since the start of the
+    year and trading at $486/bushel, close to 3-year lows, there is an opportunity
+    for increased exports, with importers incentivised to take advantage of the discount.
+  unit: worldscale_pct
+  values:
+  - 28.0
+  - 486.0
+  - 3.0
 regions:
 - china
 - brazil
@@ -58,7 +105,7 @@ themes:
 - brazil
 - grain
 - corn
-title: Intermodal Weekly Market Report
+title: Seasonality in the soybean and corn trade
 vessel_classes:
 - capesize
 - panamax

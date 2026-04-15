@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-08-16_2023_08_16_coal_india_continues_to_destock_its_stockpiles__root",
   "doc_id": "breakwave_insights_insights_2023-08-16_2023_08_16_coal_india_continues_to_destock_its_stockpiles",
   "parent_id": null,
-  "title": "Coal India Continues To Destock Its Stockpiles",
+  "title": "Coal India Continues to Destock its Stockpiles",
   "section_path": [
-    "Coal India Continues To Destock Its Stockpiles"
+    "Coal India Continues to Destock its Stockpiles"
   ],
-  "section_path_text": "Coal India Continues To Destock Its Stockpiles",
+  "section_path_text": "Coal India Continues to Destock its Stockpiles",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nCoal India produced approximately 53.7 million tons of coal last month, which marks a month-on-month decrease of 4.3 million tons (-7%) but a year-on-year increase of 6.4 million tons (14%). Coal India's production has now increased on a year-on-year basis during twenty-six of the last twenty-seven months, and last month's 14% growth has marked the largest growth seen in over a year. So far this year, production has increased year-on-year by 37.4 million tons (9%).",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 236,
+  "token_count": 680,
   "source_path": "reports/breakwave/2023/2023-08-16_coal-india-continues-to-destock-its-stockpiles.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/8/16/coal-india-continues-to-destock-its-stockpiles",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 234,
+      "token_count": 319,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-08-16_2023_08_16_coal_india_continues_to_destock_its_stockpiles__s02_linked_asset_2023_08_16_coal_india_continues_to_destock_its_stockpiles_img_241_faa3bd79103b_jpg",
+      "doc_id": "breakwave_insights_insights_2023-08-16_2023_08_16_coal_india_continues_to_destock_its_stockpiles",
+      "parent_id": "breakwave_insights_insights_2023-08-16_2023_08_16_coal_india_continues_to_destock_its_stockpiles__root",
+      "title": "Linked asset: 2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_241_faa3bd79103b.jpg",
+      "section_path": [
+        "Linked asset: 2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_241_faa3bd79103b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_241_faa3bd79103b.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_241_faa3bd79103b.jpg\n\nLinked image asset: 2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_241_faa3bd79103b.jpg\n\nImage metadata: JPEG 668x387 mode=RGB\n\nOCR text:\nCoal India Production (2019 - 2023)\n100mt\n80mt\n60mt\n40mt\n20mt\n2019 2020 2021 2022 2023",
+      "keywords": [
+        "india",
+        "coal",
+        "asset",
+        "image",
+        "coal-india-continues-to-destock-its-stockpiles_img_241_faa3bd79103b.jpg",
+        "jpeg",
+        "linked",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-08-16_2023_08_16_coal_india_continues_to_destock_its_stockpiles__s03_linked_asset_2023_08_16_coal_india_continues_to_destock_its_stockpiles_img_242_96dbdefc786e_jpg",
+      "doc_id": "breakwave_insights_insights_2023-08-16_2023_08_16_coal_india_continues_to_destock_its_stockpiles",
+      "parent_id": "breakwave_insights_insights_2023-08-16_2023_08_16_coal_india_continues_to_destock_its_stockpiles__root",
+      "title": "Linked asset: 2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_242_96dbdefc786e.jpg",
+      "section_path": [
+        "Linked asset: 2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_242_96dbdefc786e.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_242_96dbdefc786e.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_242_96dbdefc786e.jpg\n\nLinked image asset: 2023-08-16_coal-india-continues-to-destock-its-stockpiles_img_242_96dbdefc786e.jpg\n\nImage metadata: JPEG 669x392 mode=RGB\n\nOCR text:\nCoal India Offtake (2019 - 2023)\n70mt\n60mt\n50mt\n40mt\n30mt\n2019 2020 2021 2022 2023",
+      "keywords": [
+        "india",
+        "coal",
+        "asset",
+        "image",
+        "coal-india-continues-to-destock-its-stockpiles_img_242_96dbdefc786e.jpg",
+        "jpeg",
+        "linked",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 141,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

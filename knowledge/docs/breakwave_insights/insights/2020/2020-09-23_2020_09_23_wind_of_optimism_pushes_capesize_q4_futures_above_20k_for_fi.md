@@ -27,7 +27,74 @@ keywords:
 - recent
 - are
 - could
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Capesize rates are back into rally mode, with the spot average approaching
+    fast the psychologically important 20,000 mark (should get there by Friday), while
+    futures have already broken out of their recent range and settled for the first
+    time ever above 20,000
+  unit: null
+  values:
+  - 20000.0
+  - 20000.0
+  - 20000.0
+- section: Main
+  section_type: null
+  source_line: No matter what the actual trigger might have been (something that is
+    only a guess at this point), the fundamentals of the Capesize market remain favorable.
+    Vale, the large Brazilian miner, once again last week painted a positive picture
+    on their production and
+  unit: null
+  values:
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: '"All-in-all, if it all goes right, VALE could produce ~345-355mt in
+    2021. We acknowledge some delays could happen, or operations could have a more
+    gradual-than-expected ramp-up. VALE seems confident 2021 will register a relevant
+    step up in production. Even in '
+  unit: tonnage
+  values:
+  - 345.0
+  - -355.0
+  - 2021.0
+  - 2021.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: A ~350mt iron ore production level would mean almost 40mt increase
+    in annual production, with the 1H of 2021 bearing the great majority of the y-o-y
+    jump, given the very weak performance during the 1H of 2020. Vale produced 127mt
+    in the 1H of 2020, and based o
+  unit: tonnage
+  values:
+  - 350.0
+  - 40.0
+  - 1.0
+  - 2021.0
+  - 1.0
+  - 2020.0
+  - 127.0
+  - 1.0
+  - 2020.0
+  - 350.0
+- section: Main
+  section_type: null
+  source_line: Near term, the catalysts we have stressed over the recent weeks, here
+    and here , remain intact, and a revisit of the 30,000 level for Capesize spot
+    rates over the coming weeks is a reasonable assumption, if indeed the iron ore
+    exporting rates out of Brazil sta
+  unit: null
+  values:
+  - 30000.0
 regions:
 - china
 - brazil

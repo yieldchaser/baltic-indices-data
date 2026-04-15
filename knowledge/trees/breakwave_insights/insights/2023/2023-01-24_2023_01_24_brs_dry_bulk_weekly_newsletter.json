@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__root",
   "doc_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter",
   "parent_id": null,
-  "title": "Brs Dry Bulk Weekly Newsletter",
+  "title": "BRS Dry Bulk Weekly Newsletter",
   "section_path": [
-    "Brs Dry Bulk Weekly Newsletter"
+    "BRS Dry Bulk Weekly Newsletter"
   ],
-  "section_path_text": "Brs Dry Bulk Weekly Newsletter",
+  "section_path_text": "BRS Dry Bulk Weekly Newsletter",
   "level": 0,
   "ordinal": 0,
   "summary": "CII : The New Pandora Box? As we embark on 2023, the most anticipated (or not?) regulation that impacts shipping will be the Carbon Intensity Indicator (CII) via amendments to MARPOL Annex VI. The first annual reporting will be completed in 2023, with initial CII ratings given in 2024.",
@@ -26,12 +26,38 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 2743,
+  "token_count": 3132,
   "source_path": "reports/breakwave/2023/2023-01-24_brs-dry-bulk-weekly-newsletter.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/24/brs-dry-bulk-weekly-newsletter",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s01_cii_the_new_pandora_box",
+      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: LOGO_BRS - without GROUP.jpg | assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg",
+      "keywords": [
+        "assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg",
+        "group.jpg",
+        "image",
+        "logo_brs",
+        "reference",
+        "without"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 46,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s02_cii_the_new_pandora_box",
       "doc_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__root",
       "title": "CII : The New Pandora Box?",
@@ -40,7 +66,7 @@
       ],
       "section_path_text": "CII : The New Pandora Box?",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "As we embark on 2023, the most anticipated (or not?) regulation that impacts shipping will be the Carbon Intensity Indicator (CII) via amendments to MARPOL Annex VI. The first annual reporting will be completed in 2023, with initial CII ratings given in 2024.",
       "keywords": [
         "gas",
@@ -59,7 +85,7 @@
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s02_commercial_operational_pain_points",
+      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s03_commercial_operational_pain_points",
       "doc_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__root",
       "title": "Commercial & Operational Pain Points?",
@@ -68,7 +94,7 @@
       ],
       "section_path_text": "Commercial & Operational Pain Points?",
       "level": 1,
-      "ordinal": 2,
+      "ordinal": 3,
       "summary": "The CII formula is basically the product of \"Full Voyage Fuel Burned and Carbon Factor (depending on fuel type used)\" divided by the product of \"Summer Deadweight Ton (DWT) and Full Distance (both ballast and laden)\". The result is to calculate the amount of CO2 (grams) emitted per DWTnautical mile aka carbon intensity.",
       "keywords": [
         "china",
@@ -87,7 +113,7 @@
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s03_policy_legal_hurdles",
+      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s04_policy_legal_hurdles",
       "doc_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__root",
       "title": "Policy & Legal Hurdles?",
@@ -96,7 +122,7 @@
       ],
       "section_path_text": "Policy & Legal Hurdles?",
       "level": 1,
-      "ordinal": 3,
+      "ordinal": 4,
       "summary": "For any policy/law/regulation to be effective, we need to ensure there will be strict and fair enforcement and clear penalties for non-compliance. Otherwise, it will amount to a ‘paper tiger'.",
       "keywords": [
         "rating",
@@ -115,7 +141,7 @@
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s04_2023_expectations",
+      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s05_2023_expectations",
       "doc_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__root",
       "title": "2023 Expectations?",
@@ -124,7 +150,7 @@
       ],
       "section_path_text": "2023 Expectations?",
       "level": 1,
-      "ordinal": 4,
+      "ordinal": 5,
       "summary": "Back in 2022, the consensus among shipping analysts was that dry bulk net fleet growth in 2023 should not exceed 2%. This was partly rooted in the belief that the CII should weed out any poor-performing ships.",
       "keywords": [
         "china",
@@ -138,8 +164,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 599,
+      "token_count": 640,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_01_24_brs_dry_bulk_weekly_newsletter_img_logo_brs_withoutgroup_f5408ebf6fb3_jpg",
+      "doc_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg",
+      "section_path": [
+        "Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg\n\nLinked image asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg\n\nImage metadata: JPEG 656x330 mode=RGB\n\n[No OCR text detected in linked image.]",
+      "keywords": [
+        "asset",
+        "image",
+        "linked",
+        "brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg",
+        "detected",
+        "image.",
+        "jpeg",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 104,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s07_linked_asset_2023_01_24_brs_dry_bulk_weekly_newsletter_img_128429_f1da576967c5_png",
+      "doc_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png",
+      "section_path": [
+        "Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png\n\nLinked image asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png\n\nImage metadata: PNG 540x335 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nSpeed Analysis\n@ Ballast OLader\nATI a ;\nSource: AXS Marine",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "analysis",
+        "ati",
+        "axs",
+        "ballast",
+        "brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 125,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

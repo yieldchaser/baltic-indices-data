@@ -24,7 +24,127 @@ keywords:
 - moment.
 - one
 - but
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 12
+numeric_observations:
+- section: Summary
+  section_type: null
+  source_line: The US experienced the second biggest bank failure in its history on
+    Friday when $209bn worth Silicon Valley Bank failed and was taken over by the
+    regulator. However, despite the eerie echoes of 2008, we don't believe we are
+    in a Lehman moment.
+  unit: usd
+  values:
+  - 209.0
+  - 2008.0
+- section: Summary
+  section_type: null
+  source_line: However, we are not in 2008, at least not yet. This bankruptcy echoes
+    across the world, to be sure, and we should expect some volatility in the coming
+    week. But
+  unit: null
+  values:
+  - 2008.0
+- section: Summary
+  section_type: null
+  source_line: Unlike 2008, banks are much better regulated and much better capitalised.
+  unit: null
+  values:
+  - 2008.0
+- section: Summary
+  section_type: null
+  source_line: Unlike 2008, the Fed has tools to fight the danger immediately. First,
+    it teamed up with the Treasury and the FDIC to announce that all depositors, whether
+    insured or not, would be made whole. It also announced a new lending facility
+    to cover entities who have
+  unit: null
+  values:
+  - 2008.0
+- section: Summary
+  section_type: null
+  source_line: Of course, there are still risks. These, much like 2008, are on the
+    side of policymakers. A policy mistake could happen if Fed officials spend the
+    week advocating a double rate hike on the 22nd of March. Markets, who had been
+    pricing in a double rate hike, are
+  unit: null
+  values:
+  - 2008.0
+  - 22.0
+- section: Summary
+  section_type: null
+  source_line: The US experienced the second biggest bank failure in its history on
+    Friday, when $209bn worth Silicon Valley Bank failed and was taken over by the
+    regulator. Equities fell sharply, especially bank stocks, as investors run towards
+    bonds for safety. In times li
+  unit: usd
+  values:
+  - 209.0
+- section: Summary
+  section_type: null
+  source_line: However, despite the eerie echoes of 2008, we don't believe we are
+    in a Lehman moment. To understand why we first need to take a step back. SVB was
+    a bank mostly for tech startups in Silicon Valley. The way this works is that
+    when a start-up receives venture c
+  unit: pct
+  values:
+  - 2008.0
+  - 50.0
+  - 2019.0
+  - -2021.0
+  - 212.0
+  - 200.0
+- section: Summary
+  section_type: null
+  source_line: But last year proved to be apocalyptic for the bond market, which registered
+    its biggest drop in 40 years. Steep rate hikes meant huge losses, especially for
+    longer-dated bonds (shorter-dated tend to have less volatility).
+  unit: null
+  values:
+  - 40.0
+- section: Summary
+  section_type: null
+  source_line: This meant a lot of "mark-to-market" losses for banks holding those
+    bonds. But under post-2008 rules, if one holds a bond to maturity they don't have
+    to write the asset down. These count as "unrealised losses".
+  unit: null
+  values:
+  - 2008.0
+- section: Summary
+  section_type: null
+  source_line: On Wednesday 8th March, SVB announced it was selling $21 Bn of liquid
+    assets (mostly Treasuries), at a 9% loss to raise money to cover their losses.
+  unit: pct
+  values:
+  - 8.0
+  - 21.0
+  - 9.0
+- section: Summary
+  section_type: null
+  source_line: The CFOs of startups got wind that the bank was facing issues and knew
+    that they were not fully covered by the Federal Deposit Insurance Corporation
+    (FDIC). SVB has the money Venture Capitals give tech startups. This is a lot of
+    money, usually much more than t
+  unit: pct
+  values:
+  - 250000.0
+  - 85.0
+- section: Summary
+  section_type: null
+  source_line: So they started withdrawing their money. As more and more did that,
+    the bank faced an old-fashioned bank run. On Thursday 9th March, depositors attempted
+    to withdraw $42bn from the bank, managing only $16bn and leaving the bank with
+    $1bn of cash negative posit
+  unit: usd
+  values:
+  - 9.0
+  - 42.0
+  - 16.0
+  - 1.0
 regions:
 - china
 - brazil

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-06-09_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently__root",
   "doc_id": "breakwave_insights_insights_2022-06-09_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently",
   "parent_id": null,
-  "title": "Even Greater Weakness In Chinas Home Sales Recently",
+  "title": "Even Greater Weakness in China's Home Sales Recently",
   "section_path": [
-    "Even Greater Weakness In Chinas Home Sales Recently"
+    "Even Greater Weakness in China's Home Sales Recently"
   ],
-  "section_path_text": "Even Greater Weakness In Chinas Home Sales Recently",
+  "section_path_text": "Even Greater Weakness in China's Home Sales Recently",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nAs we have been highlighting in Commodore's recent Weekly China Reports, sales of commercial buildings in China (the vast majority of which are residential homes) came under renewed pressure in January/February after previously rising to a six-month high in December. March saw the weakness intensify, and recently released April data has shown even more weakness. Commercial building sales totaled just 814 billion yuan in April.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 339,
+  "token_count": 812,
   "source_path": "reports/breakwave/2022/2022-06-09_even-greater-weakness-in-chinas-home-sales-recently.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/6/9/even-greater-weakness-in-chinas-home-sales-recently",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 337,
+      "token_count": 432,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-09_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently__s02_linked_asset_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently_img_chart1283729_464361eb1a6b_jpg",
+      "doc_id": "breakwave_insights_insights_2022-06-09_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently",
+      "parent_id": "breakwave_insights_insights_2022-06-09_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently__root",
+      "title": "Linked asset: 2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart1283729_464361eb1a6b.jpg",
+      "section_path": [
+        "Linked asset: 2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart1283729_464361eb1a6b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart1283729_464361eb1a6b.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart1283729_464361eb1a6b.jpg\n\nLinked image asset: 2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart1283729_464361eb1a6b.jpg\n\nImage metadata: JPEG 691x272 mode=RGB\n\nOCR text:\nSales of Commercial Buildings (2020 - 2022)\n25,000\n20,000\n15,000\n10,000\n5,000\n° 2020 2021 2022\nUnit: 100 million yuan",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "buildings",
+        "commercial",
+        "even-greater-weakness-in-chinas-home-sales-recently_img_chart1283729_464361eb1a6b.jpg",
+        "jpeg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 151,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-09_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently__s03_linked_asset_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently_img_chart2283429_003f55ff11aa_jpg",
+      "doc_id": "breakwave_insights_insights_2022-06-09_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently",
+      "parent_id": "breakwave_insights_insights_2022-06-09_2022_06_09_even_greater_weakness_in_chinas_home_sales_recently__root",
+      "title": "Linked asset: 2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart2283429_003f55ff11aa.jpg",
+      "section_path": [
+        "Linked asset: 2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart2283429_003f55ff11aa.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart2283429_003f55ff11aa.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart2283429_003f55ff11aa.jpg\n\nLinked image asset: 2022-06-09_even-greater-weakness-in-chinas-home-sales-recently_img_chart2283429_003f55ff11aa.jpg\n\nImage metadata: JPEG 691x272 mode=RGB\n\nOCR text:\nSales of Residential Buildings (2020 - 2022)\n25,000\n20,000\n15,000\n10,000\n5,000\n° 2020 2021 2022\nUnit: 100 million yuan",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "buildings",
+        "even-greater-weakness-in-chinas-home-sales-recently_img_chart2283429_003f55ff11aa.jpg",
+        "jpeg",
+        "linked",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 149,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

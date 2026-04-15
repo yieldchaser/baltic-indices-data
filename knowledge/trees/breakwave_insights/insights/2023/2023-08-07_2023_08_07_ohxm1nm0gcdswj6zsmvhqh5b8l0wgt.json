@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-08-07_2023_08_07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt__root",
   "doc_id": "breakwave_insights_insights_2023-08-07_2023_08_07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt",
   "parent_id": null,
-  "title": "Ohxm1Nm0Gcdswj6Zsmvhqh5B8L0Wgt",
+  "title": "Supply side issues tighten markets",
   "section_path": [
-    "Ohxm1Nm0Gcdswj6Zsmvhqh5B8L0Wgt"
+    "Supply side issues tighten markets"
   ],
-  "section_path_text": "Ohxm1Nm0Gcdswj6Zsmvhqh5B8L0Wgt",
+  "section_path_text": "Supply side issues tighten markets",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nSentiment remained well supported last week by renewed side issues amid a broader improvement in risk appetite across markets. This was aided by weaker USD. Crude oil gained last week as evidence mounts of tightness in supplies.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 533,
+  "token_count": 842,
   "source_path": "reports/breakwave/2023/2023-08-07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/8/7/ohxm1nm0gcdswj6zsmvhqh5b8l0wgt",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 531,
+      "token_count": 587,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-08-07_2023_08_07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt__s02_linked_asset_2023_08_07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt_img_1691385642430_a5d74977652d_png",
+      "doc_id": "breakwave_insights_insights_2023-08-07_2023_08_07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt",
+      "parent_id": "breakwave_insights_insights_2023-08-07_2023_08_07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt__root",
+      "title": "Linked asset: 2023-08-07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt_img_1691385642430_a5d74977652d.png",
+      "section_path": [
+        "Linked asset: 2023-08-07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt_img_1691385642430_a5d74977652d.png"
+      ],
+      "section_path_text": "Linked asset: 2023-08-07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt_img_1691385642430_a5d74977652d.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-08-07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt_img_1691385642430_a5d74977652d.png\n\nLinked image asset: 2023-08-07_ohxm1nm0gcdswj6zsmvhqh5b8l0wgt_img_1691385642430_a5d74977652d.png\n\nImage metadata: PNG 1275x936 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly commodity price performance\n5\n4\n3\n2\n1\na. |\nee | |\n-2\n-3\n-4\n5\n-6\n-7\nBES TRLREA AF ARES\n% % %, % .",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "anz",
+        "ares",
+        "bes",
+        "bloomberg",
+        "commodity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

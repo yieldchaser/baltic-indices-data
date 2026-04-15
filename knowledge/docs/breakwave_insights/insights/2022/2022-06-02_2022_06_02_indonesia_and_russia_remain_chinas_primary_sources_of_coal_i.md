@@ -26,7 +26,82 @@ keywords:
 - down
 - totaled
 - april
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's April coal import data by origin was recently released and
+    shows that imports from Indonesia have remained the primary source of imports
+    and Russia the second largest source of imports. Imports from Indonesia totaled
+    16 million tons, which is up from M
+  unit: worldscale_pct
+  values:
+  - 16.0
+  - 6.0
+  - 60.0
+  - 4.3
+  - 37.0
+- section: Main
+  section_type: null
+  source_line: Imports from Russia totaled 3.9 million tons, which is up from March
+    by 800,000 tons (26%) but down year-on-year by 600,000 tons (-13%). Remaining
+    significant to us is that Russia has remained China's second largest source of
+    coal imports. As we discussed in e
+  unit: pct
+  values:
+  - 3.9
+  - 800000.0
+  - 26.0
+  - 600000.0
+  - -13.0
+  - 6.0
+- section: Main
+  section_type: null
+  source_line: Imports from Mongolia totaled 1.4 million tons, which is up from March
+    by 400,000 tons (40%) and up year-on-year by 500,000 tons (56%). Imports from
+    Mongolia have long remained under pressure from the Chinese government due to
+    Mongolian coronavirus cases.
+  unit: pct
+  values:
+  - 1.4
+  - 400000.0
+  - 40.0
+  - 500000.0
+  - 56.0
+- section: Main
+  section_type: null
+  source_line: No imports were reported from Australia in April. This is down from
+    March by 300,000 tons. China had previously imported Australian coal for six straight
+    months (but March and February did see only a relatively small amount of volume).
+    Prior to October, the la
+  unit: null
+  values:
+  - 300000.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: Also of note is that imports from Canada and the Philippines each exceeded
+    1 million tons in April. Imports from Canada totaled 1 million tons, which is
+    up from March by 300,000 tons (42%) and up year-on-year by 400,000 tons (67%).
+    Imports from the Philippines
+  unit: pct
+  values:
+  - 1.0
+  - 1.0
+  - 300000.0
+  - 42.0
+  - 400000.0
+  - 67.0
+  - 1.1
+  - 300000.0
+  - 38.0
+  - 100000.0
 regions:
 - china
 - brazil

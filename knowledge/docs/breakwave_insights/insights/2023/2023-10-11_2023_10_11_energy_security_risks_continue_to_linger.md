@@ -28,7 +28,23 @@ keywords:
 - its
 - lower
 - prices
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Base metals came under pressure amid renewed concerns about China's
+    property market. Country Garden Holdings, a major property developer, warned it
+    might not meet repayments on offshore debt. It has also hired advisers, an indication
+    it faces restructuring. Th
+  unit: null
+  values:
+  - 2024.0
 regions:
 - china
 - brazil
@@ -58,7 +74,7 @@ themes:
 - europe
 - iron_ore
 - crude_oil
-title: Energy Security Risks Continue To Linger
+title: Energy security risks continue to linger
 vessel_classes:
 - capesize
 - panamax

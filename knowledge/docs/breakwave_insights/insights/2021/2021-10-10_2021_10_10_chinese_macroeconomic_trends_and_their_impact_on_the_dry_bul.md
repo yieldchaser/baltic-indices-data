@@ -29,7 +29,137 @@ keywords:
 - gas
 - its
 - chinese
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 11
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Average spot rates for Capesize bulkers are approaching the hefty US$87,000/d
+    mark, while the Baltic Capesize Index has surpassed the 10,000 points threshold,
+    for the first time in 13 years. The Baltic Dry Index is following the same upward
+    trajectory. This co
+  unit: pct
+  values:
+  - 87000.0
+  - 10000.0
+  - 2400.0
+  - 21.0
+- section: Concerns on China growth
+  section_type: null
+  source_line: Goldman Sachs has lowered its growth forecast for the Chinese economy
+    to 7.8% (from 8.2% previously) on the basis of significant energy shortages. Meanwhile,
+    the official Manufacturing Purchasing Manager's Index has registered a decline
+    (49.6 in September comp
+  unit: pct
+  values:
+  - 7.8
+  - 8.2
+  - 49.6
+  - 50.1
+  - 2020.0
+- section: Concerns on China growth
+  section_type: null
+  source_line: Whether policymakers will eventually decide in favour of bailing out
+    Evergrande, to prevent the larger impact its fallout would have in the economy
+    (real estate accounts for 7.3% of China's GDP with a much larger cluster of industries
+    directly affected by it),
+  unit: pct
+  values:
+  - 7.3
+- section: Iron ore bull market nearing an end?
+  section_type: null
+  source_line: Iron ore has been trading in a tight range of US$100-120 per metric
+    tonne, levels not seen since July of 2020. The spot CFR price for delivery to
+    China soared between April 2020 and July 2021, when it neared US$230. During 3Q21,
+    however, its price sank by 49%,
+  unit: pct
+  values:
+  - 100.0
+  - -120.0
+  - 2020.0
+  - 2020.0
+  - 2021.0
+  - 230.0
+  - 3.0
+  - 1.0
+  - 49.0
+  - 1.0
+- section: Iron ore bull market nearing an end?
+  section_type: null
+  source_line: Indeed, Chinese iron ore imports have remained elevated as supply recovers.
+    China's ore imports in September are estimated at 111 million tonnes, up 14% m/m.
+    Overall, the supply side of the alloy appears recovered compared to earlier in
+    the year, when we saw w
+  unit: pct
+  values:
+  - 111.0
+  - 14.0
+- section: Beijing's Green push
+  section_type: null
+  source_line: 'Further, the authorities have been pushing steel mills since early
+    July to implement output and capacity curbs and have clearly laid out the goal:
+    full year''s 2021 crude steel production must remain at least flat (if not sub)
+    to last year''s record output of 1.'
+  unit: pct
+  values:
+  - 2021.0
+  - 1.065
+  - 3.0
+  - 1.0
+  - 12.0
+- section: The power supply crisis - a bull for coal
+  section_type: null
+  source_line: Chinese coal inventories currently stand at a 10-year low and state-owned
+    miners have been instructed to produce coal at full capacity for the rest of the
+    year and concurrently boost coal imports to secure energy supplies "at all costs".
+  unit: null
+  values:
+  - 10.0
+- section: The power supply crisis - a bull for coal
+  section_type: null
+  source_line: The country's power demand has increased by almost 15% this year, but
+    its domestic coal supply is up just 5% YTD. At the same time, China has been paying
+    the price of its effective ban on Australian coal while supplies from Indonesia,
+    its biggest overseas coal
+  unit: pct
+  values:
+  - 15.0
+  - 5.0
+- section: The power supply crisis - a bull for coal
+  section_type: null
+  source_line: It is telling that in an effort to tackle the severe power shortage,
+    recent reports have come to light indicating that China is releasing some of the
+    Australian coal previously stranded at Chinese ports. Meanwhile, during September,
+    a total of five vessels dis
+  unit: null
+  values:
+  - 383000.0
+- section: The power supply crisis - a bull for coal
+  section_type: null
+  source_line: In parallel, Indian utilities are struggling too as inventories have
+    hit critical lows after a surge in power demand. Over half of India's 135 coal-fired
+    power plants have fuel stocks of less than three days and the country is now competing
+    against buyers such
+  unit: null
+  values:
+  - 135.0
+- section: Prospects
+  section_type: null
+  source_line: 'Nevertheless, there are indeed bright signs that justify reasonable
+    hopes for the future as more plans on Chinese infrastructure investments will
+    benefit tonnage demand. Chinese cabinet approved in September the 2021-25 plan
+    for infrastructure investments and '
+  unit: null
+  values:
+  - 2021.0
+  - -25.0
+  - 10.0
+  - 1.5
 regions:
 - china
 - brazil

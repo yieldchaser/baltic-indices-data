@@ -24,7 +24,44 @@ keywords:
 - ten
 - bdi
 - days
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The week between Christmas and New Year's has historically been a very
+    quiet period for shipping, as is the case in many other markets, especially given
+    the absence of reported indices and thus limited information on the state of the
+    physical market. The rally
+  unit: null
+  values:
+  - 16000.0
+  - 2017.0
+  - 15000.0
+  - 2.0
+  - 2018.0
+- section: Main
+  section_type: null
+  source_line: Based on the fact that the Capesize index rose 40% in the last ten
+    trading days on December, one would expect the positive momentum to continue,
+    based on the historical pattern depicted on the table above.
+  unit: pct
+  values:
+  - 40.0
+- section: Main
+  section_type: null
+  source_line: With the futures curve in steep backwardation, the market is expecting
+    the seasonally weak first quarter period to once again affect spot rates. Futures
+    for the first three months of 2021 are priced at basically the average discount
+    of the last ten years versu
+  unit: null
+  values:
+  - 2021.0
 regions:
 - china
 - brazil

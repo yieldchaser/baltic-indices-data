@@ -24,7 +24,60 @@ keywords:
 - means
 - until
 - accident
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Logically, this means no rate cuts until the end of 2024. But markets
+    are anticipating the first cut next May.
+  unit: null
+  values:
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: The eagle is finally about to land. In the past week, a number of key
+    Fed officials (Daly, Goolsbee, Waller) said that they expected two more rate hikes
+    this year. While they didn't specifically say that the Fed would be done, lower
+    headline inflation at 3% an
+  unit: pct
+  values:
+  - 3.0
+  - 2.5
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: Fed officials know that policy transmission may take close to a year.
+    i.e. hiking in September, for example, means that conditions should become more
+    tight until around September 2024. With banks eying more regulation and buttoning
+    down the (credit) hatches, a
+  unit: null
+  values:
+  - 2024.0
+  - 2024.0
+  - 2025.0
+- section: Main
+  section_type: null
+  source_line: However, at the time of writing, bond markets are implying the first
+    rate cut in May 2025 and nearly six cuts until January 2025.
+  unit: null
+  values:
+  - 2025.0
+  - 2025.0
+- section: Main
+  section_type: null
+  source_line: The base case scenario (and by far the larger probability) is a couple
+    of more rate hikes and then cuts near the end of next year or the beginning of
+    2025. We can always speculate of course. But that depends on individual investment
+    mandates and portfolio risk
+  unit: null
+  values:
+  - 2025.0
 regions:
 - china
 - brazil

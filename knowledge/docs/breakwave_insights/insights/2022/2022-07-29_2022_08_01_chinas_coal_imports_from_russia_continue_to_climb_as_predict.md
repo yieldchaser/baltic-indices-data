@@ -25,7 +25,57 @@ keywords:
 - had
 - import
 - was
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's coal import data for June by origin has been released and shows
+    imports from Indonesia have remained the primary source of imports and Russia
+    the second largest source of imports. Also of note regarding Russian imports is
+    that their volume came in at t
+  unit: worldscale_pct
+  values:
+  - 32.0
+  - 9.6
+  - 2.8
+  - -23.0
+  - 7.4
+  - -44.0
+- section: Main
+  section_type: null
+  source_line: Indonesia has been exporting more of its coal to other buyers, and
+    at the same time China has also been continuing to strengthen its relationship
+    with Russia as we have been stressing in Commodore's Weekly China Reports and
+    Weekly Dry Bulk Reports. As we first
+  unit: pct
+  values:
+  - 100.0
+  - 2021.0
+  - 57.0
+  - 6.0
+- section: Main
+  section_type: null
+  source_line: Imports from Russia totaled 6.1 million tons, which is up from May
+    by 1.1 million tons (22%) and up year-on-year by 800,000 tons (15%). Imports from
+    Russia have risen significantly since the tariff cut, with the last two months
+    seeing imports average 5.6 milli
+  unit: pct
+  values:
+  - 6.1
+  - 1.1
+  - 22.0
+  - 800000.0
+  - 15.0
+  - 5.6
+  - 2.2
+  - 65.0
+  - 3.4
 regions:
 - china
 - brazil

@@ -26,7 +26,79 @@ keywords:
 - product
 - refining
 - domestic
+linked_assets_discovered: 6
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 6
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: As refining margins in the US fall, we explore whether product exports
+    will be able to continue their current momentum
+  section_type: null
+  source_line: US refined product exports, led by diesel, have performed well this
+    year despite facing competition from Russian barrels to traditional markets. A
+    combination of a growing European diesel short and increased gasoline demand from
+    Mexico (refinery outages and de
+  unit: null
+  values:
+  - 2023.0
+- section: Product exports moving counter-seasonal
+  section_type: null
+  source_line: US transportation fuel exports have remained above seasonal averages
+    so far in the second half of 2023. Seasonal refinery turnarounds normally peak
+    in October in the US and exports normally drop as a result, however early indications
+    in our data (Oct 1-15) hav
+  unit: worldscale_pct
+  values:
+  - 2023.0
+  - 1.0
+  - -15.0
+  - 20.0
+- section: Product exports moving counter-seasonal
+  section_type: null
+  source_line: According to weekly data released by the EIA, crude oil inputs to refineries
+    and utilizations have been falling for five consecutive weeks with utilization
+    falling below 90%. Along with seasonal maintenance, unplanned outages in PADD
+    3 and PADD 5 refineries co
+  unit: pct
+  values:
+  - 90.0
+  - 3.0
+  - 5.0
+  - 2.0
+- section: Product exports moving counter-seasonal
+  section_type: null
+  source_line: US seaborne transportation fuel (diesel, gasoline, and jet) exports
+    vs 2021 avg (kbd)
+  unit: null
+  values:
+  - 2021.0
+- section: Product exports moving counter-seasonal
+  section_type: null
+  source_line: LatAm, which has been the traditional destination for US products,
+    has been pulling refined products from the US, especially diesel, where exports
+    increased 15% y-o-y in Oct (days 1-15). After facing competition from Russian
+    diesel arriving in Brazil earlier i
+  unit: pct
+  values:
+  - 15.0
+  - 1.0
+  - -15.0
+  - 160.0
+  - 2023.0
+  - 2023.0
+  - 340.0
+- section: Product exports moving counter-seasonal
+  section_type: null
+  source_line: As we move into the end of the year, we also have the US holiday season
+    which drives distillate demand in the country higher with refiners increasing
+    their runs and utilizations. The autumnal maintenance season is timed to prepare
+    refineries to meet this domes
+  unit: null
+  values:
+  - 2024.0
 regions:
 - china
 - brazil

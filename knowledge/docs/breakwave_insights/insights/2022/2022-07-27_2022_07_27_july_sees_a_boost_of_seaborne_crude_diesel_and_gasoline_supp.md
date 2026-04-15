@@ -27,7 +27,126 @@ keywords:
 - are
 - gasoline
 - mbd
+linked_assets_discovered: 8
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 8
 market_tone: constructive
+numeric_observation_count: 10
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: WTI futures hit a fresh three month low of around $95/b on 22 July,
+    a hefty $25/b lower than at the end of last month. Soaring inflation amid a global
+    energy crisis turned recession fears from a downside scenario into a base-case
+    assumption, at least amongst a
+  unit: usd
+  values:
+  - 95.0
+  - 22.0
+  - 25.0
+- section: Main
+  section_type: null
+  source_line: Starting with the United States, combined exports of crude oil, diesel
+    and gasoline (incl. blending components) may reach a new all-time high in July,
+    based on the trend of the first 24 days of the month. The preliminary reading
+    is some 200kbd above the previo
+  unit: null
+  values:
+  - 24.0
+  - 200.0
+  - 5.3
+  - 2019.0
+  - 1.4
+- section: Main
+  section_type: null
+  source_line: US motor fuel exports have been building steadily since a low point
+    hit in February 2021, while crude exports are pretty stable at close to 3.2mbd
+    ever since November last year. Clearly crude oil stock draws from the Strategic
+    Petroleum Reserve (SPR), averagin
+  unit: null
+  values:
+  - 2021.0
+  - 3.2
+  - 579.0
+  - 15.0
+- section: Main
+  section_type: null
+  source_line: Political intervention by the Biden administration, apart from SPR
+    releases and possibly pushing US refiners an extra inch to maximize fuel output,
+    may have also helped to stimulate the recent surge in crude liftings out of Saudi
+    Arabia and the United Arab Emi
+  unit: null
+  values:
+  - 1.0
+  - -22.0
+  - 1.7
+  - 10.4
+- section: Main
+  section_type: null
+  source_line: 'While crude oil is usually the focus of the financial oil trading
+    community, recent months have clearly seen most tightness in refining operations,
+    leading to gasoline, diesel and jet/kero cracks readings of regularly above $50/b
+    across the globe. These times '
+  unit: usd
+  values:
+  - 50.0
+  - 5.6
+- section: Main
+  section_type: null
+  source_line: This brings us to the obvious star of the oil market in the next half
+    or full year. While Europe has already significantly scaled back imports of crude
+    and other products from Russia, Russian diesel flows remain close to the historical
+    norm and pretty much ent
+  unit: worldscale_pct
+  values:
+  - 30.0
+  - 2016.0
+  - -2021.0
+  - 5.0
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: Over the last seven weeks global onshore crude inventories (excl. US
+    SPR) have been drawn by 2mbd , 0.6kbd of which materialised in China. Evidently
+    crude supplies have been falling behind demand levels, which is not unusual for
+    the summer period, but still me
+  unit: null
+  values:
+  - 2.0
+  - 0.6
+- section: Main
+  section_type: null
+  source_line: This is related to crude liftings from all other countries (excl. Saudi
+    Arabia, UAE and US) falling again steadily over recent months, driven by Africa.
+    But essentially all supplying regions are below their 2019 average, by a combined
+    3.5mbd. The peak supply l
+  unit: null
+  values:
+  - 2019.0
+  - 3.5
+  - 5.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: Supply-side risks are omnipresent. We have already seen substantial
+    outages so far this year from multiple countries. Not only is the US hurricane
+    season starting now, but more importantly Russian oil supply dynamics have yet
+    to change. Over June and July, 6.4
+  unit: null
+  values:
+  - 6.4
+  - 300.0
+  - 2020.0
+  - -21.0
+- section: Main
+  section_type: null
+  source_line: Global crude liftings, excl. Saudi Arabia, United Arab Emirates and
+    United States vs 2019 average (mbd)
+  unit: null
+  values:
+  - 2019.0
 regions:
 - china
 - brazil

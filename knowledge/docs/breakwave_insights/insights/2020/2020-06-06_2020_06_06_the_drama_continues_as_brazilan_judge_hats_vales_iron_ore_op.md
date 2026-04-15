@@ -26,7 +26,76 @@ keywords:
 - development
 - itabira
 - again
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Once again, the iron ore market has to make sense of the ever developing
+    situation in Brazil, with Vale's iron ore output struggling to find a footing
+    between COVID-19, heavy rains, regulatory issues related to last year's dam accident
+    and Carajas logistical i
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: '" A Brazilian judge ordered the closure of a series of mines operated
+    by mining company Vale SA over coronavirus concerns, labor prosecutors said on
+    Friday, a development that puts more than 10% of the firm''s iron ore output offline
+    and will likely send jitter'
+  unit: pct
+  values:
+  - 10.0
+  - 188.0
+- section: Main
+  section_type: null
+  source_line: The production impact is sizable, but once again information on which
+    specific mines were shut is scarce. The Itabira region accounted for ~12% of Vale's
+    2019 iron ore output. Most of such iron ore is shipped through the country's southern
+    ports (Tubarao).
+  unit: pct
+  values:
+  - 12.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: 'UPDATE: Late on Saturday, Vale put out a press release , where it
+    reaffirmed their iron ore production guidance for 2020 of 310-330 milion tons.
+    Vale concluded:'
+  unit: null
+  values:
+  - 2020.0
+  - 310.0
+  - -330.0
+- section: Main
+  section_type: null
+  source_line: '" The iron ore fines production guidance of 310-330 Mt in 2020 considers
+    a negative impact of 15Mt from eventual impacts resulting from the fight against
+    COVID-19. Considering (i) the expected monthly production of 2.7Mt from the Itabira
+    Complex for the coming'
+  unit: tonnage
+  values:
+  - 310.0
+  - -330.0
+  - 2020.0
+  - 15.0
+  - 19.0
+  - 2.7
+  - 15.0
+  - 19.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: 'Here is 2019 Vale''s production by region:'
+  unit: null
+  values:
+  - 2019.0
 regions:
 - china
 - brazil

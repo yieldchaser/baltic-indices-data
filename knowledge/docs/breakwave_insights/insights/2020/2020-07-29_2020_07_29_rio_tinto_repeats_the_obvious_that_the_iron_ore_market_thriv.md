@@ -26,7 +26,42 @@ keywords:
 - chinese
 - continue
 - due
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Readers of our columns know by now that we continue to view the current
+    circumstances in the iron ore market as particularly bullish for freight. The
+    progression of events in the last two years in the $120 billion per year iron
+    ore trade combined with shifting
+  unit: usd
+  values:
+  - 120.0
+- section: Main
+  section_type: null
+  source_line: 'A confirmation of such development also comes from Rio Tinto that
+    today reported almost $10 billion in 1H EBITDA, calling the Chinese recovery "amazing".
+    And amazing it is: As presented in their results, seaborne iron ore supply is
+    at new all time highs, as Ch'
+  unit: usd
+  values:
+  - 10.0
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: Vale is due to report second quarter results later today, and expectations
+    are that once again they will point to their recently reiterated guidance of 310-300
+    million tons of iron ore production for the year.
+  unit: null
+  values:
+  - 310.0
+  - -300.0
 regions:
 - china
 - brazil

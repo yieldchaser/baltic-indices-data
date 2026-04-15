@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-02-14_2023_02_14_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-02-14_2023_02_14_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nThe European Commission signalled yesterday that the EU as a bloc might avoid a recession during the coming year. While some individual countries in the bloc may enter recession, the union's economy is expected to grow by 0.9 per cent this year. The latest projection is an upgrade from the previous estimate of 0.3 per cent growth, which was made in November.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1291,
+  "token_count": 1608,
   "source_path": "reports/breakwave/2023/2023-02-14_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/2/14/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 246,
+      "token_count": 300,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-14_2023_02_14_shipfix_global_market_update__s06_linked_asset_2023_02_14_shipfix_global_market_update_img_unnamed_2023_02_14t124143841_6800293692be_png",
+      "doc_id": "breakwave_insights_insights_2023-02-14_2023_02_14_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-02-14_2023_02_14_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-02-14_shipfix-global-market-update_img_unnamed-2023-02-14t124143841_6800293692be.png",
+      "section_path": [
+        "Linked asset: 2023-02-14_shipfix-global-market-update_img_unnamed-2023-02-14t124143841_6800293692be.png"
+      ],
+      "section_path_text": "Linked asset: 2023-02-14_shipfix-global-market-update_img_unnamed-2023-02-14t124143841_6800293692be.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-14_shipfix-global-market-update_img_unnamed-2023-02-14t124143841_6800293692be.png\n\nLinked image asset: 2023-02-14_shipfix-global-market-update_img_unnamed-2023-02-14t124143841_6800293692be.png\n\nImage metadata: PNG 926x524 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Russian Coal by Destination\n© Restofthe world @§ India | China (™@ Europe\n12.5\n10\no 75\n§\n= 5\n2.5\n0\nJan-22 Feb-22 Mar-22 Apr-22. May-22) Jun-22 9 Jul-22) Aug-22) Sep-22.",
+      "keywords": [
+        "china",
+        "europe",
+        "india",
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "apr-22."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

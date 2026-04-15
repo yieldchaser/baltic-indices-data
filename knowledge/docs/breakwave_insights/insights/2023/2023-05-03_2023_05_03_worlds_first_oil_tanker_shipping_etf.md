@@ -24,7 +24,83 @@ keywords:
 - etf
 - are
 - trading
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'SUMMIT, N.J., May 03, 2023--(BUSINESS WIRE)--Breakwave Advisors in
+    partnership with ETF Managers Group LLC (ETFMG®), announced that the Breakwave
+    Tanker Shipping ETF (NYSE Arca: BWET) will begin trading today on the New York
+    Stock Exchange. BWET is the world''s'
+  unit: null
+  values:
+  - 3.0
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: BWET will hold crude oil tanker futures contracts with a weighted average
+    of approximately three months to expiration, using a mix of one- to six-month
+    freight futures, based on the prevailing calendar schedule. The Fund intends to
+    progressively increase its p
+  unit: pct
+  values:
+  - 90.0
+  - 10.0
+- section: Main
+  section_type: null
+  source_line: ETFMG is a provider of exchange-traded funds (ETFs), founded in 2014
+    with a vision of developing innovative thematic ETFs that provide investors unique
+    exposure to new markets. Today, the ETFMG fund lineup provides access to a diverse
+    collection of global them
+  unit: pct
+  values:
+  - 2014.0
+  - 75.0
+- section: Main
+  section_type: null
+  source_line: About Breakwave Advisors Breakwave Advisors is registered as a Commodity
+    Trading Advisor with the NFA, founded in 2017 and based in New York City. The
+    advisor specializes in Shipping and Freight investments and is the CTA for the
+    Breakwave Dry Bulk Shipping ET
+  unit: null
+  values:
+  - 2017.0
+- section: Main
+  section_type: null
+  source_line: Carefully consider the Fund's investment objectives, risk factors,
+    charges, and expenses before investing. This and additional information can be
+    found in the Fund's prospectus, which may be obtained by calling 1-844-ETF-MGRS
+    (1-844-383-6477), or by visiting w
+  unit: null
+  values:
+  - 1.0
+  - -844.0
+  - 1.0
+  - -844.0
+  - -383.0
+  - -6477.0
+- section: Main
+  section_type: null
+  source_line: The Fund is not a mutual fund or any other type of investment company
+    within the meaning of the Investment Company Act of 1940, as amended, and is not
+    subject to regulation thereunder.
+  unit: null
+  values:
+  - 1940.0
+- section: Main
+  section_type: null
+  source_line: (201) 403-8185
+  unit: null
+  values:
+  - 201.0
+  - 403.0
+  - -8185.0
 regions:
 - china
 - brazil
@@ -56,7 +132,7 @@ themes:
 - products
 - fund
 - oil
-title: Worlds First Oil Tanker Shipping Etf
+title: World's First Oil Tanker Shipping ETF
 vessel_classes:
 - capesize
 - panamax

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-11-29_2022_11_29_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2022-11-29_2022_11_29_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nRising Covid infection rates in China dominated the news flow last week, even before the reports of protests and unrest started to emerge. The number of new cases has surpassed the highs recorded during the lockdown of Shanghai earlier in the year, increasing the likelihood of new restrictions and lockdowns. However, the protests across the country over the weekend against the country's strict zero-Covid policy have added an extra dimension to the country's continued fight against rising infection rates.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1254,
+  "token_count": 1540,
   "source_path": "reports/breakwave/2022/2022-11-29_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/11/29/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 141,
+      "token_count": 197,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-29_2022_11_29_shipfix_global_market_update__s06_linked_asset_2022_11_29_shipfix_global_market_update_img_unnamed_2022_11_29t134420782_265c69e90a22_png",
+      "doc_id": "breakwave_insights_insights_2022-11-29_2022_11_29_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-11-29_2022_11_29_shipfix_global_market_update__root",
+      "title": "Linked asset: 2022-11-29_shipfix-global-market-update_img_unnamed-2022-11-29t134420782_265c69e90a22.png",
+      "section_path": [
+        "Linked asset: 2022-11-29_shipfix-global-market-update_img_unnamed-2022-11-29t134420782_265c69e90a22.png"
+      ],
+      "section_path_text": "Linked asset: 2022-11-29_shipfix-global-market-update_img_unnamed-2022-11-29t134420782_265c69e90a22.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-29_shipfix-global-market-update_img_unnamed-2022-11-29t134420782_265c69e90a22.png\n\nLinked image asset: 2022-11-29_shipfix-global-market-update_img_unnamed-2022-11-29t134420782_265c69e90a22.png\n\nImage metadata: PNG 1120x471 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Cargo Orders (TCT & Voyage) for Coal Loading in South Africa Destined for Europe ©\nSY 3Y All\ne 400k\n@\n5\nEe)\nre eee | iis us duel | t 1 ll | | I |\n2019 Jul 2020 a 2021 ml 2022 mm",
+      "keywords": [
+        "europe",
+        "coal",
+        "asset",
+        "image",
+        "africa",
+        "all",
+        "cargo",
+        "destined"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 190,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

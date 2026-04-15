@@ -27,7 +27,40 @@ keywords:
 - trade
 - russian
 - exports
+linked_assets_discovered: 9
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 9
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: As crude tanker rates reach new lows for 2023, we drill down into the drivers
+    behind this, how this has shifted dynamics within the crude tanker market, as
+    well as how support could materialise in the last quarter of the year.
+  section_type: null
+  source_line: Crude tanker rates have been sliding across the board in the last couple
+    of months. Since July, indices for the three main crude tanker classes have dropped
+    by 20%, 15% and 30% for VLCCs, Suezmaxes and Aframaxes respectively, reaching
+    new lows for 2023. This c
+  unit: worldscale_pct
+  values:
+  - 20.0
+  - 15.0
+  - 30.0
+  - 2023.0
+- section: As crude tanker rates reach new lows for 2023, we drill down into the drivers
+    behind this, how this has shifted dynamics within the crude tanker market, as
+    well as how support could materialise in the last quarter of the year.
+  section_type: null
+  source_line: Preliminary month-to-date export figures suggest a potential m-o-m
+    increase in Saudi and Russian crude exports for September. Although no official
+    announcement has been made on whether this spells a recovery in export levels,
+    it could indicate that crude tanke
+  unit: null
+  values:
+  - 2023.0
+  - 2023.0
 regions:
 - china
 - brazil

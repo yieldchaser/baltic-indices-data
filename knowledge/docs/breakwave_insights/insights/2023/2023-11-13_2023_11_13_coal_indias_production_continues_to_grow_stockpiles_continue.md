@@ -24,7 +24,43 @@ keywords:
 - approximately
 - basis
 - during
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we discussed in our most recent Weekly Dry Bulk Report, Coal India
+    produced approximately 61 million tons of coal in October. This has marked a month-on-month
+    increase of 9.6 million tons (19%) and a year-on-year increase of 8.1 million
+    tons (15%). Coal Ind
+  unit: pct
+  values:
+  - 61.0
+  - 9.6
+  - 19.0
+  - 8.1
+  - 15.0
+  - 57.3
+  - 10.0
+- section: Main
+  section_type: null
+  source_line: 'Offtake (amount sent to customers) totaled 61.6 million tons last
+    month, which marks a month-on-month increase of 6.5 million tons (12%) and a year-on-year
+    increase of 7.9 million tons (15%). Offtake has now increased on a year-on-year
+    basis during thirty-one '
+  unit: pct
+  values:
+  - 61.6
+  - 6.5
+  - 12.0
+  - 7.9
+  - 15.0
+  - 41.0
 regions:
 - china
 - brazil

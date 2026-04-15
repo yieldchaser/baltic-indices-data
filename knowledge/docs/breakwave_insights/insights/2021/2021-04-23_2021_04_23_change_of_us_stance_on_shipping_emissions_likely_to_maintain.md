@@ -24,7 +24,54 @@ keywords:
 - current
 - imo
 - many
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The US envoy on climate, John Kerry, called on the International Maritime
+    Organization (IMO) earlier in the week to up its game on climate change. The current
+    IMO goals on maritime emissions aim at a reduction of 50 per cent by 2050, compared
+    to the levels see
+  unit: null
+  values:
+  - 50.0
+  - 2050.0
+  - 2008.0
+- section: Main
+  section_type: null
+  source_line: Much hinges on what can be achieved in terms of negotiations before
+    the current emissions goals are due to be reviewed in 2023, but also on the rate
+    of technological developments for propulsion and fuels. As of yet, there is no
+    obvious silver bullet that can d
+  unit: null
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: Shipowners have long bemoaned the lack of clarity on the direction
+    of future environmental regulations, which have also put many off from ordering
+    new tonnage. There have been concerns that vessels ordered today would become
+    obsolete well before the end of the
+  unit: null
+  values:
+  - 2023.0
+  - 2050.0
+- section: Main
+  section_type: null
+  source_line: 'Assuming new stricter rules are announced, under American leadership,
+    in 2023, there could potentially be a window of opportunity to invest in new tonnage
+    before that. Vessels ordered/delivered before such an announcement could potentially
+    have a longer grace '
+  unit: null
+  values:
+  - 2023.0
+  - 2023.0
 regions:
 - china
 - brazil

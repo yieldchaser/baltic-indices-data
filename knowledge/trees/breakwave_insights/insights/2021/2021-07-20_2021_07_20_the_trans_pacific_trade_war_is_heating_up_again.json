@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2021-07-20_2021_07_20_the_trans_pacific_trade_war_is_heating_up_again__root",
   "doc_id": "breakwave_insights_insights_2021-07-20_2021_07_20_the_trans_pacific_trade_war_is_heating_up_again",
   "parent_id": null,
-  "title": "The Trans Pacific Trade War Is Heating Up Again",
+  "title": "The Trans-Pacific Trade War Is Heating Up Again",
   "section_path": [
-    "The Trans Pacific Trade War Is Heating Up Again"
+    "The Trans-Pacific Trade War Is Heating Up Again"
   ],
-  "section_path_text": "The Trans Pacific Trade War Is Heating Up Again",
+  "section_path_text": "The Trans-Pacific Trade War Is Heating Up Again",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\nNews on the trade tensions between the U.S. and China have fallen into relative obscurity in recent months, with other areas of contention dominating the reporting. While the trade frictions have continued to simmer below the surface, the inauguration of a new U.S.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 966,
+  "token_count": 1220,
   "source_path": "reports/breakwave/2021/2021-07-20_the-trans-pacific-trade-war-is-heating-up-again.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2021/7/20/the-trans-pacific-trade-war-is-heating-up-again",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 964,
+      "token_count": 1002,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-07-20_2021_07_20_the_trans_pacific_trade_war_is_heating_up_again__s02_linked_asset_2021_07_20_the_trans_pacific_trade_war_is_heating_up_again_img_a1_a7556c919475_png",
+      "doc_id": "breakwave_insights_insights_2021-07-20_2021_07_20_the_trans_pacific_trade_war_is_heating_up_again",
+      "parent_id": "breakwave_insights_insights_2021-07-20_2021_07_20_the_trans_pacific_trade_war_is_heating_up_again__root",
+      "title": "Linked asset: 2021-07-20_the-trans-pacific-trade-war-is-heating-up-again_img_a1_a7556c919475.png",
+      "section_path": [
+        "Linked asset: 2021-07-20_the-trans-pacific-trade-war-is-heating-up-again_img_a1_a7556c919475.png"
+      ],
+      "section_path_text": "Linked asset: 2021-07-20_the-trans-pacific-trade-war-is-heating-up-again_img_a1_a7556c919475.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-07-20_the-trans-pacific-trade-war-is-heating-up-again_img_a1_a7556c919475.png\n\nLinked image asset: 2021-07-20_the-trans-pacific-trade-war-is-heating-up-again_img_a1_a7556c919475.png\n\nImage metadata: PNG 942x488 mode=RGBA\n\nOCR text:\nU.S. Exports of Agricultural Commodities to China\n12\n10\noe 2015\ng 8\nS --2016\n£\n= 6 ---= 2017\n2\n= === 2018\n= 4\n=== 72019\n2 === 72020\noe 2()2 1\n0\nJan Feb Mar Apr May = Jun Jul Aug Sep Oct Nov Dec\nData source: Oceanbolt",
+      "keywords": [
+        "china",
+        "pacific",
+        "asset",
+        "image",
+        "source",
+        "agricultural",
+        "apr",
+        "aug"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 183,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

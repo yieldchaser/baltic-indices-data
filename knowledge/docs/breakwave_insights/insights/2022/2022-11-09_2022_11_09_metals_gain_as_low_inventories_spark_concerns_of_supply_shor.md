@@ -26,7 +26,84 @@ keywords:
 - amid
 - are
 - cases
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Rising COVID-19 cases in China weighed on sentiment across commodity
+    markets. This was offset in industrial commodity sectors by further falls in inventories.
+    A weaker USD also helped support investor appetite.
+  unit: usd
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: 'Crude oil fell as rising cases of COVID-19 weighed on sentiment. Xinjian
+    reported its fourth highest number of new cases nationally on Monday. Inner Mongolia,
+    which was sealed off in early October, saw cases jump to almost 1800. New infections
+    in the province '
+  unit: null
+  values:
+  - 19.0
+  - 1800.0
+  - 2.0
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: 'European natural gas rebounded from recent losses amid doubt over
+    the EU''s plans to impose a temporary price cap on imports. Dutch front month
+    futures were up as much as 10% after the European Commission signalled that other
+    measures to limit price swings may '
+  unit: pct
+  values:
+  - 10.0
+  - 24.0
+  - 2.5
+  - 7.88
+- section: Main
+  section_type: null
+  source_line: European carbon prices gave up Monday's modest gains as volatility
+    began to dry up in anticipation of political discussions at COP-27. This was despite
+    higher energy prices in Europe.
+  unit: null
+  values:
+  - 27.0
+- section: Main
+  section_type: null
+  source_line: 'Copper led the base metals sector higher on dwindling inventories
+    amid positive signs for demand. Aluminium inventories in London Metal Exchange
+    warehouses fell the most since August. Most of the drawdown occurred in Asia.
+    High energy prices have been forcing '
+  unit: pct
+  values:
+  - 75.0
+  - 556000.0
+  - 7.2
+- section: Main
+  section_type: null
+  source_line: 'Iron ore futures were steady for a second consecutive session as investors
+    pause to reflect on China''s real estate sector and the ongoing battle with COVID-19
+    outbreaks. China expanded a key financing program to support about CNY250bn in
+    debt sales by private '
+  unit: null
+  values:
+  - 19.0
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: 'A weaker USD helped push gold to a one month high. The dollar''s recent
+    slide has helped invigorate investor buying, after recent strength amid rising
+    US interest rates. The precious metal is also holding above the 50 day moving
+    average, adding to the positive '
+  unit: usd
+  values:
+  - 50.0
 regions:
 - china
 - brazil

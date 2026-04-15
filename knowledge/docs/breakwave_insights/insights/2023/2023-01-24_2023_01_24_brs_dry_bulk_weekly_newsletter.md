@@ -26,7 +26,177 @@ keywords:
 - had
 - its
 - port
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 2
+linked_assets_mirrored: 2
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 16
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Image reference: LOGO_BRS - without GROUP.jpg | assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg'
+  unit: null
+  values:
+  - 2023.0
+  - -1.0
+  - -24.0
+  - 408.0
+- section: 'CII : The New Pandora Box?'
+  section_type: null
+  source_line: 'As we embark on 2023, the most anticipated (or not?) regulation that
+    impacts shipping will be the Carbon Intensity Indicator (CII) via amendments to
+    MARPOL Annex VI. The first annual reporting will be completed in 2023, with initial
+    CII ratings given in 2024. '
+  unit: null
+  values:
+  - 2023.0
+  - 2023.0
+  - 2024.0
+  - 2022.0
+- section: 'CII : The New Pandora Box?'
+  section_type: null
+  source_line: As a recap, the International Maritime Organization (IMO) has the target
+    to reduce greenhouse gas emissions (GHG) to 50% by 2050 as compared to 2008 levels
+    with the CII being lauded by policymakers as providing "important building blocks
+    for IMO's future mid-t
+  unit: pct
+  values:
+  - 50.0
+  - 2050.0
+  - 2008.0
+- section: Commercial & Operational Pain Points?
+  section_type: null
+  source_line: Looking at the numerator of the CII formula also poses considerable
+    eyebrow-raising concerns. By design, the CII assumes that shipowner and/or the
+    ship crew had full/near autonomy on every important element that can dictate on
+    fuel consumption throughout the e
+  unit: null
+  values:
+  - 3.0
+- section: Commercial & Operational Pain Points?
+  section_type: null
+  source_line: Imagine if the CII had been implemented first during 2021. We had dry
+    bulk ships laden with Australian coal were first denied entry to Chinese ports,
+    followed by mandatory quarantine measures for port calls/crew changes in various
+    major ports and finally unpre
+  unit: null
+  values:
+  - 2021.0
+  - -21.0
+- section: Policy & Legal Hurdles?
+  section_type: null
+  source_line: 'For any policy/law/regulation to be effective, we need to ensure there
+    will be strict and fair enforcement and clear penalties for non-compliance. Otherwise,
+    it will amount to a ‘paper tiger''. Usually, these are done by the Port State
+    Control and Flag States. '
+  unit: null
+  values:
+  - 2.0
+  - 3.0
+  - 3.0
+  - 4.0
+  - 5.0
+  - 6.0
+- section: 2023 Expectations?
+  section_type: null
+  source_line: Back in 2022, the consensus among shipping analysts was that dry bulk
+    net fleet growth in 2023 should not exceed 2%. This was partly rooted in the belief
+    that the CII should weed out any poor-performing ships. That belief assumes CII
+    possesses strong potency a
+  unit: pct
+  values:
+  - 2022.0
+  - 2023.0
+  - 2.0
+  - 2023.0
+  - 2023.0
+  - 2023.0
+- section: 2023 Expectations?
+  section_type: null
+  source_line: Meantime, others had opined that the CII will motivate slower steaming
+    which will reduce transportation capacity and be a boon for freight prospects.
+    The logic is straightforward. Fuel consumption and carbon emissions had a linear
+    relationship. In contrast, th
+  unit: null
+  values:
+  - 5.0
+  - 6.0
+  - 4.0
+  - 5.0
+  - 2023.0
+  - -22.0
+  - 3.0
+- section: 2023 Expectations?
+  section_type: null
+  source_line: 'Image reference: 1 (4).png | assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png'
+  unit: null
+  values:
+  - 1.0
+  - 4.0
+  - 2023.0
+  - -1.0
+  - -24.0
+  - 128429.0
+  - 76967.0
+- section: 2023 Expectations?
+  section_type: null
+  source_line: …incremental decrease in vessel's average speed. That said, we believe
+    that CII will be a crucial factor in heightening freight volatility during periods
+    of strong demand. Typically, when demand is significant, ships will increase their
+    laden speed to complete
+  unit: null
+  values:
+  - 2023.0
+- section: 2023 Expectations?
+  section_type: null
+  source_line: Lastly, the IMO is to review CII by Jan-2026, so perhaps significant
+    adjustments would need to be incorporated by then, so a different ball game might
+    present itself to the shipping community.
+  unit: null
+  values:
+  - 2026.0
+- section: 'Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg'
+  unit: null
+  values:
+  - 2023.0
+  - -1.0
+  - -24.0
+  - 408.0
+- section: 'Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: JPEG 656x330 mode=RGB'
+  unit: null
+  values:
+  - 656.0
+  - 30.0
+- section: 'Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png'
+  unit: null
+  values:
+  - 2023.0
+  - -1.0
+  - -24.0
+  - 128429.0
+  - 76967.0
+- section: 'Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 540x335 mode=RGB'
+  unit: null
+  values:
+  - 540.0
+  - 35.0
+- section: 'Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (95.9866, 95.9866)'
+  unit: null
+  values:
+  - 95.9866
+  - 95.9866
 regions:
 - china
 - brazil
@@ -38,7 +208,7 @@ regions:
 - europe
 - singapore
 - japan
-section_count: 4
+section_count: 7
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2023/2023-01-24_brs-dry-bulk-weekly-newsletter.html
@@ -55,7 +225,7 @@ themes:
 - japan
 - coal
 - gas
-title: Brs Dry Bulk Weekly Newsletter
+title: BRS Dry Bulk Weekly Newsletter
 vessel_classes:
 - capesize
 - panamax
@@ -68,6 +238,9 @@ vessel_classes:
 
 ## Summary
 CII : The New Pandora Box? As we embark on 2023, the most anticipated (or not?) regulation that impacts shipping will be the Carbon Intensity Indicator (CII) via amendments to MARPOL Annex VI. The first annual reporting will be completed in 2023, with initial CII ratings given in 2024.
+
+## Main
+Image reference: LOGO_BRS - without GROUP.jpg | assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg
 
 ## CII : The New Pandora Box?
 As we embark on 2023, the most anticipated (or not?) regulation that impacts shipping will be the Carbon Intensity Indicator (CII) via amendments to MARPOL Annex VI. The first annual reporting will be completed in 2023, with initial CII ratings given in 2024. Even before the end of 2022, we had observed several shipping interest groups coming out and questioning the effectiveness of such a formula. Whether such a well-intentioned but ill-conceived ‘mathematical prescription' could achieve its ambition of significant carbon emissions reduction without factoring real-world challenges and responses? Would the road to carbon-neutral heaven lead us to a new Pandora's Box, opening a can of commercial, legal, operational, and financial heartaches and heartburns? Even having an open discussion on the potential repercussions of this policy is unchartered territory. Hence, kindly understand if errors or omissions, if any, are made later in this topic. It's a steep learning curve for all!
@@ -93,6 +266,32 @@ In the shipping industry, we still witness daily disputes regarding Bill of ladi
 Back in 2022, the consensus among shipping analysts was that dry bulk net fleet growth in 2023 should not exceed 2%. This was partly rooted in the belief that the CII should weed out any poor-performing ships. That belief assumes CII possesses strong potency as a policy tool. Looking at the above analysis, clearly it is not the case. Hence, would we see a slower pace of demolition activity in 2023? With China now aiming to reopening, some shipowners might pause the demolition decision and see if they could catch another bonanza, if it materialized, by late 2023. On a side note, demolition capacity in Bangladesh and Pakistan are being compromised due to the inability to issue letters of credit for scrapped ships. In fact, the Baltic Exchange had approved the suspension of Bangladesh from its shipbreaking index. Then again, with the weakest start over the past 3 years, perhaps demolition in 2023 will be dictated by commercial sense than compliance purposes.
 Meantime, others had opined that the CII will motivate slower steaming which will reduce transportation capacity and be a boon for freight prospects. The logic is straightforward. Fuel consumption and carbon emissions had a linear relationship. In contrast, the relationship between ship speed and consumption is exponential. More fuel is needed to increase from 5 to 6 knots than from 4 to 5 knots, and so on. So, slowing down ships reduces emissions exponentially. Entering 2023, in response to a faltering Q4-22 demand, the average dry bulk vessel speed had already plunged to an all-time low (see chart on page 3) according to AXS data.
 Hence, we believe any further downside to the fleet's speed, if any, due to CII should be limited, by extension, influencing dry bulk freight prospects. Some also suggested that reduced port congestion would offset the benefits of any…
+Image reference: 1 (4).png | assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png
 …incremental decrease in vessel's average speed. That said, we believe that CII will be a crucial factor in heightening freight volatility during periods of strong demand. Typically, when demand is significant, ships will increase their laden speed to complete their current voyage and capitalize on expected freight increment. In 2023 and beyond, commercial incentives will now be substituted with compliance inertia. This will in turn raise supply inelasticity in a bullish, perfectly competitive market.
 In conclusion, CII will prove to be a steep learning curve for both charterers and owners alike until customary commercial standards are established via a series of legal disputes and settlements. Meantime, each side of the charterparty, as rational economic actors, would obviously seek to interpret any loosely worded CII clause to their best interest. There might be a potential impact on period deals
 Lastly, the IMO is to review CII by Jan-2026, so perhaps significant adjustments would need to be incorporated by then, so a different ball game might present itself to the shipping community.
+
+## Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg
+Source asset: reports/breakwave/2023/assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg
+
+Linked image asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg
+
+Image metadata: JPEG 656x330 mode=RGB
+
+[No OCR text detected in linked image.]
+
+## Linked asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png
+Source asset: reports/breakwave/2023/assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png
+
+Linked image asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_128429_f1da576967c5.png
+
+Image metadata: PNG 540x335 mode=RGB
+
+Embedded info:
+dpi: (95.9866, 95.9866)
+
+OCR text:
+Speed Analysis
+@ Ballast OLader
+ATI a ;
+Source: AXS Marine

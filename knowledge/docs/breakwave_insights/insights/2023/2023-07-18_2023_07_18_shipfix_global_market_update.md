@@ -24,7 +24,182 @@ keywords:
 - iron_ore
 - coal
 - grain
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 1
+linked_assets_mirrored: 1
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 17
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: Further evidence that the world's second-largest economy continues
+    to face challenges emerged today, with the Chinese GDP data for the second quarter
+    failing to meet expectations. The Chinese economy grew by 6.3 per cent during
+    the past three months compared t
+  unit: null
+  values:
+  - 6.3
+  - 4.5
+  - 7.3
+- section: Commodity Markets
+  section_type: null
+  source_line: Crude oil went against the general flow for energy commodities during
+    the past week as supply concerns supported prices. Despite a 1.8 per cent decline
+    during the week's final session, the Brent September futures advanced for a third
+    consecutive week and settl
+  unit: null
+  values:
+  - 1.8
+  - 79.87
+  - 1.8
+  - 1.5
+- section: Commodity Markets
+  section_type: null
+  source_line: The resumption of deliveries from a major Norwegian field, following
+    planned maintenance work, contributed to European natural gas prices falling sharply
+    last week. The front-month TTF futures recorded a weekly loss of 22.5 per cent,
+    ending Friday's session at
+  unit: null
+  values:
+  - 22.5
+  - 25.96
+- section: Commodity Markets
+  section_type: null
+  source_line: Coal experienced a second week of headwinds as lower natural gas prices
+    put pressure on demand. The Newcastle August futures dropped by 6.4 per cent and
+    ended Friday's session at 132.75 dollars per tonne. The contracts for delivery
+    in Rotterdam next month face
+  unit: null
+  values:
+  - 6.4
+  - 132.75
+  - 94.5
+  - 16.6
+- section: Commodity Markets
+  section_type: null
+  source_line: 'Mounting optimism that Chinese authorities will provide more support
+    for the economy supported iron ore prices last week. The August futures listed
+    on the Singapore Exchange advanced by 6.0 per cent during the week and ended Friday''s
+    trading at 114.22 dollars '
+  unit: null
+  values:
+  - 6.0
+  - 114.22
+- section: Commodity Markets
+  section_type: null
+  source_line: A weaker dollar and hopes of more Chinese support for flagging growth
+    rates contributed to base metal prices advancing last week. The aluminium three-month
+    futures listed on the LME were the week's star performers at 6.1 per cent, while
+    the copper, zinc and ni
+  unit: null
+  values:
+  - 6.1
+- section: Commodity Markets
+  section_type: null
+  source_line: Uncertainty over the future of the Black Sea Grains Initiative contributed
+    to rising grain prices last week. The wheat futures for delivery in September
+    recorded a weekly gain of 1.8 per cent, while the corn contracts increased by
+    4.0 per cent. Data from the U
+  unit: usd
+  values:
+  - 1.8
+  - 4.0
+  - 3.7
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: Despite weakness on Friday, with the exception of the Handysizes, all
+    of the Baltic Exchange's dry bulk indices recorded robust weekly performances.
+    The headline Baltic Dry Index advanced by 8.0 per cent over the week, with the
+    Panamaxes and Capesizes providin
+  unit: null
+  values:
+  - 8.0
+  - 8.7
+  - 11.3
+  - 2.6
+  - 3.5
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: In contrast, the Baltic's wet freight indices were mostly in the red
+    last week. The dirty tanker index was the only one avoiding the negative territory,
+    with a recovery on Friday contributing to a weekly advance of 2.7 per cent. The
+    gauge for the clean tankers
+  unit: null
+  values:
+  - 2.7
+  - 5.8
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: Advancing crude oil prices contributed to gains for most bunker fuels
+    last week. The trading in VLSFO in Singapore delivered last week's exception with
+    a loss of nearly one per cent over the past five sessions. In Rotterdam and Houston,
+    the fuel advanced by 2.
+  unit: null
+  values:
+  - 2.9
+  - 5.7
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: The past two weeks have seen a recovery in cargo ordering activities,
+    with weekly volumes just shy of 1.5 million tonnes. A majority of the cargo orders
+    are for loading in Russia's Black Sea ports, with only a small portion of the
+    demand linked to ports on oth
+  unit: null
+  values:
+  - 1.5
+  - 300000.0
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: 'Image reference: $1.png | assets/2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png'
+  unit: usd
+  values:
+  - 1.0
+  - 2023.0
+  - -7.0
+  - -18.0
+  - 241.0
+  - 180982.0
+  - 8.0
+- section: 'Linked asset: 2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png'
+  unit: null
+  values:
+  - 2023.0
+  - -7.0
+  - -18.0
+  - 241.0
+  - 180982.0
+  - 8.0
+- section: 'Linked asset: 2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1120x632 mode=RGBA'
+  unit: null
+  values:
+  - 1120.0
+  - 32.0
+- section: 'Linked asset: 2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (95.9866, 95.9866)'
+  unit: null
+  values:
+  - 95.9866
+  - 95.9866
+- section: 'Linked asset: 2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png'
+  section_type: linked_image_asset
+  source_line: oP 1 oe 15 Pp ie oe ge ep ep oP ge
+  unit: null
+  values:
+  - 1.0
+  - 15.0
+- section: 'Linked asset: 2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png'
+  section_type: linked_image_asset
+  source_line: 'of er 9 got! ao om a oi il Pa oe a oF : oo"'
+  unit: null
+  values:
+  - 9.0
 regions:
 - china
 - brazil
@@ -35,7 +210,7 @@ regions:
 - west_africa
 - europe
 - singapore
-section_count: 5
+section_count: 6
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2023/2023-07-18_shipfix-global-market-update.html
@@ -61,7 +236,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix - Global Market Update
 vessel_classes:
 - capesize
 - panamax
@@ -105,4 +280,33 @@ Advancing crude oil prices contributed to gains for most bunker fuels last week.
 The past week saw grain prices recovering from recent lows as concerns over the future of the Black Sea Grain Initiative kept rising. The fears proved to be well founded, as Russia announced earlier today that it is terminating its participation in the agreement. The confirmation of the end to the UN-monitored arrangement will likely see grain prices recovering more of recent losses during the coming days as traders reassess the global supply situation.
 Among the grievances that Russian leaders have aired over the BSGI in the past months is that its own exports of grains and fertilisers have faced challenges, although they are not part of any sanctions. Still, cargo order volumes for agricultural commodities loading in Russian ports have remained well above the norm following last year's bumper crop. The current year's harvest is also widely expected to be sizeable, and demand for seaborne transportation can therefore be expected to remain firm.
 The past two weeks have seen a recovery in cargo ordering activities, with weekly volumes just shy of 1.5 million tonnes. A majority of the cargo orders are for loading in Russia's Black Sea ports, with only a small portion of the demand linked to ports on other coastlines. Average cargo sizes have remained relatively stable, around 30,0000 tonnes, since the beginning of the year. Hence, should volumes stay healthy or recover further, the Handysizes and Supramaxes will likely be the main beneficiaries.
+Image reference: $1.png | assets/2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png
 Data Source: Shipfix
+
+## Linked asset: 2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png
+Source asset: reports/breakwave/2023/assets/2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png
+
+Linked image asset: 2023-07-18_shipfix-global-market-update_img_241_cd2180982f38.png
+
+Image metadata: PNG 1120x632 mode=RGBA
+
+Embedded info:
+dpi: (95.9866, 95.9866)
+
+OCR text:
+Weekly Cargo Order Volumes (TCT & Voyage) for Russian Agricultural Commodities
+~ Average cargo size M® Cargo order volumes
+25 40
+2
+30
+15 8
+3 E
+5 n &
+= 2
+=
+10
+05
+ft) ft)
+oP 1 oe 15 Pp ie oe ge ep ep oP ge
+of er 9 got! ao om a oi il Pa oe a oF : oo"
+Data source: Shipfix

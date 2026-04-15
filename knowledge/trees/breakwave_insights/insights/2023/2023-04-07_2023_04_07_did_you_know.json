@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__root",
   "doc_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know",
   "parent_id": null,
-  "title": "Did You Know",
+  "title": "Did you know?",
   "section_path": [
-    "Did You Know"
+    "Did you know?"
   ],
-  "section_path_text": "Did You Know",
+  "section_path_text": "Did you know?",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nOil and gas platforms or offshore drilling rigs are constructed for extracting, storing and processing petroleum and natural gas lying beneath the ocean floor. Fun fact: Most of these platforms are equipped with basic amenities as workers live on these structures to oversee the operations. Witch are 3 of the biggest oil platforms in the world?",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 307,
+  "token_count": 5262,
   "source_path": "reports/breakwave/2023/2023-04-07_did-you-know.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/7/did-you-know",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "Oil and gas platforms or offshore drilling rigs are constructed for extracting, storing and processing petroleum and natural gas lying beneath the ocean floor. Fun fact: Most of these platforms are equipped with basic amenities as workers live on these structures to oversee the operations.",
+      "summary": "Image reference: 1 (13).png | assets/2023-04-07_did-you-know_img_1281329_8c50598b622a.png\nOil and gas platforms or offshore drilling rigs are constructed for extracting, storing and processing petroleum and natural gas lying beneath the ocean floor. Fun fact: Most of these platforms are equipped with basic amenities as workers live on these structures to oversee the operations.",
       "keywords": [
         "crude_oil",
         "gas",
@@ -49,12 +49,12 @@
         "platforms",
         "oil",
         "amenities",
-        "basic",
-        "beneath"
+        "assets/2023-04-07_did-you-know_img_1281329_8c50598b622a.png",
+        "basic"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 63,
+      "token_count": 100,
       "section_type": null,
       "children": []
     },
@@ -77,12 +77,12 @@
         "near",
         "platform",
         "tons",
-        "berkut",
-        "biggest"
+        "assets/2023-04-07_did-you-know_img_berkut-platform_716a4c30a4d3.jpg",
+        "berkut"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 79,
+      "token_count": 116,
       "section_type": null,
       "children": []
     },
@@ -104,13 +104,13 @@
         "gas",
         "gulf",
         "around",
+        "assets/2023-04-07_did-you-know_img_shell-perdido-deepwater-offshore-pro_b0a64b5ebda5.jpg",
         "became",
-        "biggest",
-        "challenging"
+        "biggest"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 92,
+      "token_count": 146,
       "section_type": null,
       "children": []
     },
@@ -129,17 +129,157 @@
       "keywords": [
         "us_gulf",
         "crude_oil",
+        "image",
+        "reference",
+        "assets/2023-04-07_did-you-know_img_1281229_3f7755a2e463.png",
+        "assets/2023-04-07_did-you-know_img_petronius-platform_b1f6782558dd.jpg",
         "began",
-        "close",
-        "compliant",
-        "construction",
-        "depth",
-        "ended"
+        "close"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 57,
+      "token_count": 130,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__s05_linked_asset_2023_04_07_did_you_know_img_1281329_8c50598b622a_png",
+      "doc_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__root",
+      "title": "Linked asset: 2023-04-07_did-you-know_img_1281329_8c50598b622a.png",
+      "section_path": [
+        "Linked asset: 2023-04-07_did-you-know_img_1281329_8c50598b622a.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-07_did-you-know_img_1281329_8c50598b622a.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-07_did-you-know_img_1281329_8c50598b622a.png\n\nLinked image asset: 2023-04-07_did-you-know_img_1281329_8c50598b622a.png\n\nImage metadata: PNG 820x300 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nDID YOU KNOW ? Have you ever seen a platform in the ocean?",
+      "keywords": [
+        "asset",
+        "image",
+        "you",
+        "did",
+        "did-you-know_img_1281329_8c50598b622a.png",
+        "dpi",
+        "embedded",
+        "ever"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 114,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__s06_linked_asset_2023_04_07_did_you_know_img_berkut_platform_716a4c30a4d3_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__root",
+      "title": "Linked asset: 2023-04-07_did-you-know_img_berkut-platform_716a4c30a4d3.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-07_did-you-know_img_berkut-platform_716a4c30a4d3.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-07_did-you-know_img_berkut-platform_716a4c30a4d3.jpg",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-07_did-you-know_img_berkut-platform_716a4c30a4d3.jpg\n\nLinked image asset: 2023-04-07_did-you-know_img_berkut-platform_716a4c30a4d3.jpg\n\nImage metadata: JPEG 819x545 mode=RGB\n\nOCR text:\nay\np : 4\n¢ (4 gets\nS, Wy\" ¥ i 7 * iy dey = oN <a\nA Tey Zoe ad\noe b3 \" A i. > Sy 4)\nt A j x!",
+      "keywords": [
+        "asset",
+        "eae",
+        "image",
+        "age",
+        "aie",
+        "bee",
+        "bis",
+        "dey"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 283,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__s07_linked_asset_2023_04_07_did_you_know_img_shell_perdido_deepwater_offshore_pro_b0a64b5ebda5_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__root",
+      "title": "Linked asset: 2023-04-07_did-you-know_img_shell-perdido-deepwater-offshore-pro_b0a64b5ebda5.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-07_did-you-know_img_shell-perdido-deepwater-offshore-pro_b0a64b5ebda5.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-07_did-you-know_img_shell-perdido-deepwater-offshore-pro_b0a64b5ebda5.jpg",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-07_did-you-know_img_shell-perdido-deepwater-offshore-pro_b0a64b5ebda5.jpg\n\nLinked image asset: 2023-04-07_did-you-know_img_shell-perdido-deepwater-offshore-pro_b0a64b5ebda5.jpg\n\nImage metadata: JPEG 2500x1664 mode=RGB\n\nOCR text:\n: '\nSS Ee = tres ro = = 2 - rie\ni dene aa ee ape eT i = = : eS SS\nie ae Ss eS eS SS =a ye ~ = - . a SSS EE SE ee DN (i = ‘ es es : c :\nee oe er eee Se a a ee aa aces See INN ea a E aie : é > : -\nPr ee ee ee oe Fen ee a a ee 9 N\\ises So = -- =S ; \"\nSr et ee eS ee ES SS See WR 0 DAN Sie a iernaty ag eae ae ea : : = ; : : :\nGa en ey ae a a ean eee ee a al | AE - Sa a Se See : = Sens == * : ---\na i | ee eS ae ee SS a =\nee te ae Ne ee ee ee Se Se es Se OR A 3 eee pt Se aE m= = Re 5 a :\nSS SS SS SS SS ES eee AG PS SS ee ee Se SS SS 7S << ze - = :\nPe oe Se SS a SS eee ead |\") LN =< SS SSS - SS eS Fae ae See =- a - ot .",
+      "keywords": [
+        "sss",
+        "eee",
+        "see",
+        "ses",
+        "sses",
+        "ess",
+        "s",
+        "ere"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 3823,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__s08_linked_asset_2023_04_07_did_you_know_img_petronius_platform_b1f6782558dd_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__root",
+      "title": "Linked asset: 2023-04-07_did-you-know_img_petronius-platform_b1f6782558dd.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-07_did-you-know_img_petronius-platform_b1f6782558dd.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-07_did-you-know_img_petronius-platform_b1f6782558dd.jpg",
+      "level": 1,
+      "ordinal": 8,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-07_did-you-know_img_petronius-platform_b1f6782558dd.jpg\n\nLinked image asset: 2023-04-07_did-you-know_img_petronius-platform_b1f6782558dd.jpg\n\nImage metadata: JPEG 795x544 mode=RGB\n\nOCR text:\nbid\nit\n|\niN\n¥ mii\nHy iti ; A\nHus ys ren e\nae |\nEK: 7 f Ari Of :\nDiv ential\n> my} - : \" - * . yi ws\" q\nyet os wl\niy Wi) Mk ail o ag\nLey |\n__ J een",
+      "keywords": [
+        "asset",
+        "image",
+        "ail",
+        "ari",
+        "bid",
+        "did-you-know_img_petronius-platform_b1f6782558dd.jpg",
+        "div",
+        "een"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 150,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__s09_linked_asset_2023_04_07_did_you_know_img_1281229_3f7755a2e463_png",
+      "doc_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-04-07_2023_04_07_did_you_know__root",
+      "title": "Linked asset: 2023-04-07_did-you-know_img_1281229_3f7755a2e463.png",
+      "section_path": [
+        "Linked asset: 2023-04-07_did-you-know_img_1281229_3f7755a2e463.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-07_did-you-know_img_1281229_3f7755a2e463.png",
+      "level": 1,
+      "ordinal": 9,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-07_did-you-know_img_1281229_3f7755a2e463.png\n\nLinked image asset: 2023-04-07_did-you-know_img_1281229_3f7755a2e463.png\n\nImage metadata: PNG 981x681 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nOil Product Production: From Extraction to Distribution\nOil companies Refineries are\nextract crude oil industrial plants that Rens\nfrom underground & process crude into\nunderwater oil fields forms of oil products vane lyofconsumers\nFa een 1 +s aes |\n=- 1 yo ! Ale '] ee fi dol i] ee ft ob\n1\ni eZ.",
+      "keywords": [
+        "crude_oil",
+        "products",
+        "oil",
+        "crude",
+        "asset",
+        "ez.",
+        "fuel",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

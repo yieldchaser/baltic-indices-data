@@ -24,7 +24,51 @@ keywords:
 - years
 - cost
 - current
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The past decade has been quite challenging (to say the least) for dry
+    bulk, as the ordering frenzy of the late 2000s had a meaningful impact on fleet
+    growth in the early years of the decade outpacing demand growth by a wide margin
+    and pushing fleet utilization
+  unit: pct
+  values:
+  - 2000.0
+  - 2000.0
+  - 2010.0
+  - 70.0
+  - 2010.0
+  - 2020.0
+  - 25.0
+  - 900.0
+  - 2000.0
+  - 5000.0
+- section: Main
+  section_type: null
+  source_line: But such trend is about to change. A slew of new regulations relating
+    to environmental issues is entering the arena and is having a profound impact
+    on vessel operations, return on investment expectations and industrywide cost
+    inflation. At a mere 6% of the fle
+  unit: pct
+  values:
+  - 6.0
+  - 2000.0
+- section: Main
+  section_type: null
+  source_line: Dry bulk transports more than 5 billion tons of cargo a year, and the
+    sector's positive growth has been steady (albeit slowing) for many decades. After
+    all, the physical world is still separated by oceans. The next upcycle will not
+    only be driven by the tradit
+  unit: null
+  values:
+  - 5.0
 regions:
 - china
 - brazil

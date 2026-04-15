@@ -26,7 +26,56 @@ keywords:
 - oil
 - demand
 - energy
+linked_assets_discovered: 4
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 4
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Copper led the base metals sector higher amid signs of physical tightness
+    despite the global economic headwinds. The premium for cash copper over three-month
+    futures rose 90% to USD145/t. Inventories of most base metals have also seen strong
+    drawdowns this yea
+  unit: pct
+  values:
+  - 90.0
+  - 45.0
+  - 1.0
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: Iron ore futures pushed back above USD100/t amid signs of stabilisation
+    in the Chinese property market. Zhengzhou said that all stalled housing projects
+    should resume by 6 October, according to official media. China's official Economic
+    Daily newspaper also pub
+  unit: usd
+  values:
+  - 6.0
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: Crude oil rebounded following several days of selling as investors
+    judged the selloff as overdone. Concerns over demand in China had induced a wave
+    of selling, amid lockdowns across major cities. A stronger USD has also weighed
+    on investor appetite. EIA's week
+  unit: usd
+  values:
+  - 8.85
+  - 12.6
+- section: Main
+  section_type: null
+  source_line: European natural gas jumped after warnings the crisis is far from over.
+    Belgium's prime minister, Alexander De Croo, said that Europe needs to act immediately
+    to address the crisis or the region's economy will go into a full stop. There
+    is concern that Germany
+  unit: null
+  values:
+  - 2.0
+  - 2017.0
 regions:
 - china
 - brazil

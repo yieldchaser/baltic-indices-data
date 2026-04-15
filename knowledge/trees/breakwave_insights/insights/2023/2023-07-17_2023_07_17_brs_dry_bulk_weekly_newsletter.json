@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
   "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
   "parent_id": null,
-  "title": "Brs Dry Bulk Weekly Newsletter",
+  "title": "BRS DRY BULK WEEKLY NEWSLETTER",
   "section_path": [
-    "Brs Dry Bulk Weekly Newsletter"
+    "BRS DRY BULK WEEKLY NEWSLETTER"
   ],
-  "section_path_text": "Brs Dry Bulk Weekly Newsletter",
+  "section_path_text": "BRS DRY BULK WEEKLY NEWSLETTER",
   "level": 0,
   "ordinal": 0,
   "summary": "1H-23 Dry Bulk Fleet Recap\nIn the absence of an unexpected curveball(s), such as a sudden spike in fresh shipyard capacity or a unified consensus in fuel regulations, the supply narrative of dry bulkers (since 2018) is one of muted growth (see chart below). As fresh ordering gradually dissipated, the incumbent dry bulk orderbook represents just 8.13% of the active bulk fleet. By the end of 2023, and considering slippage (deliveries delayed or canceled), we anticipate a historically low net growth rate of 2.5%-3.0%.",
@@ -26,12 +26,36 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1389,
+  "token_count": 3223,
   "source_path": "reports/breakwave/2023/2023-07-17_brs-dry-bulk-weekly-newsletter.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/7/17/brs-dry-bulk-weekly-newsletter",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s01_1h_23_dry_bulk_fleet_recap",
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "",
+      "keywords": [
+        "assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+        "brs_shipbrokers_monogram_logo.png",
+        "image",
+        "reference"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 55,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s02_1h_23_dry_bulk_fleet_recap",
       "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
       "title": "1H-23 Dry Bulk Fleet Recap",
@@ -40,7 +64,7 @@
       ],
       "section_path_text": "1H-23 Dry Bulk Fleet Recap",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "In the absence of an unexpected curveball(s), such as a sudden spike in fresh shipyard capacity or a unified consensus in fuel regulations, the supply narrative of dry bulkers (since 2018) is one of muted growth (see chart below). As fresh ordering gradually dissipated, the incumbent dry bulk orderbook represents just 8.13% of the active bulk fleet.",
       "keywords": [
         "panamax",
@@ -54,12 +78,12 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 292,
+      "token_count": 409,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s02_1_vessels_above_100_000_dwt",
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s03_1_vessels_above_100_000_dwt",
       "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
       "title": "1. Vessels above 100,000 dwt",
@@ -68,7 +92,7 @@
       ],
       "section_path_text": "1. Vessels above 100,000 dwt",
       "level": 1,
-      "ordinal": 2,
+      "ordinal": 3,
       "summary": "Looking at the active large-sized vessel fleet, which includes Babycape to VLOC (100K dwt & above), we can see that capacity is overwhelmingly dominated by Capesize (160 to 220K), followed by VLOC (220K & above). The fleet remains relatively young, with only 11.5% falling under the \"15 & above\" age bracket.",
       "keywords": [
         "capesize",
@@ -82,12 +106,12 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 384,
+      "token_count": 444,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s03_2_vessels_between_68_000_and_100_000_dwt",
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s04_2_vessels_between_68_000_and_100_000_dwt",
       "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
       "title": "2. Vessels between 68,000 and 100,000 dwt",
@@ -96,7 +120,7 @@
       ],
       "section_path_text": "2. Vessels between 68,000 and 100,000 dwt",
       "level": 1,
-      "ordinal": 3,
+      "ordinal": 4,
       "summary": "For the middle-sized vessel fleet, which includes Panamax to Over Panamax (68,000 to 100,000 dwt), we can see that Kamsarmaxes have surpassed Panamax vessels in terms of total deadweight tonnage, further solidifying its leading position in this middle-sized vessel fleet sector. There is a significant divergence within this subsegment between the older and younger fleets.",
       "keywords": [
         "panamax",
@@ -110,12 +134,12 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 278,
+      "token_count": 336,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s04_3_vessels_between_40_000_and_68_000_dwt",
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s05_3_vessels_between_40_000_and_68_000_dwt",
       "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
       "title": "3. Vessels between 40,000 and 68,000 dwt",
@@ -124,7 +148,7 @@
       ],
       "section_path_text": "3. Vessels between 40,000 and 68,000 dwt",
       "level": 1,
-      "ordinal": 4,
+      "ordinal": 5,
       "summary": "For the small-sized vessel fleet, which includes Supramax to Ultramax (50,000 to 68,000 dwt), it presents a similar situation as that of the middle-sized vessel fleet. Slightly slower in the pace of renewal and replacement for small-sized fleets compared to mid-sized fleets, Supramax remains the main staple in the small-sized vessel fleet sector and occupies a larger share of the fleet (58.3%).",
       "keywords": [
         "capesize",
@@ -138,8 +162,176 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 377,
+      "token_count": 436,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_07_17_brs_dry_bulk_weekly_newsletter_img_brs_shipbrokers_monogram_logo_ee79606c8e74_png",
+      "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+      "section_path": [
+        "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png\n\nLinked image asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png\n\nImage metadata: PNG 2500x2186 mode=RGBA\n\nEmbedded info:\ndpi: (299.9994, 299.9994)\n\n[No OCR text detected in linked image.]",
+      "keywords": [
+        "asset",
+        "image",
+        "linked",
+        "brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+        "detected",
+        "dpi",
+        "embedded",
+        "image."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 129,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s07_linked_asset_2023_07_17_brs_dry_bulk_weekly_newsletter_img_screenshot2023_07_17112943_332771db4771_png",
+      "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17112943_332771db4771.png",
+      "section_path": [
+        "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17112943_332771db4771.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17112943_332771db4771.png",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17112943_332771db4771.png\n\nLinked image asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17112943_332771db4771.png\n\nImage metadata: PNG 972x701 mode=RGBA\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\nGlobal Drybulk Fleet Development (mln DWT)\n120 25.00%\n100\n20.00%\n80\n15.00%\n60\n40 | 10.00%\n20 Wi 1 | 5.00%\n> - I il |\n0.00%\n-20\n-5.00%\n-40\n-60 -10.00%\n2000 2002 2004 2006 2008 2010 2012 2014 2016 2018 2020 2022 2024 2026\nmmm Delivery mam Orderbook Demolition -_-=Fleet Change (%)",
+      "keywords": [
+        "asset",
+        "fleet",
+        "image",
+        "brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17112943_332771db4771.png",
+        "change",
+        "delivery",
+        "demolition",
+        "development"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 257,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s08_linked_asset_2023_07_17_brs_dry_bulk_weekly_newsletter_img_screenshot2023_07_17113645_760146c0d5c1_png",
+      "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113645_760146c0d5c1.png",
+      "section_path": [
+        "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113645_760146c0d5c1.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113645_760146c0d5c1.png",
+      "level": 1,
+      "ordinal": 8,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113645_760146c0d5c1.png\n\nLinked image asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113645_760146c0d5c1.png\n\nImage metadata: PNG 963x855 mode=RGBA\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\nGlobal Shipard Capacity Utilization Rate by Delivery Year*\n100.00% 97.24%\n90.00% 87.30%\n80.00%\n80.00%\n70.00%\n60.00%\n50.00%\n40.00%\n30.00%\n20.00%\n10.00%\n0.00%\n2024 2025 2026\n*: 100% is based on highest production (in deadweight) over the last three years (2021 to 2023)\nfor all vessel types",
+      "keywords": [
+        "asset",
+        "image",
+        "all",
+        "based",
+        "brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113645_760146c0d5c1.png",
+        "capacity",
+        "deadweight",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s09_linked_asset_2023_07_17_brs_dry_bulk_weekly_newsletter_img_screenshot2023_07_17113748_d84af7b0d3c4_png",
+      "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113748_d84af7b0d3c4.png",
+      "section_path": [
+        "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113748_d84af7b0d3c4.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113748_d84af7b0d3c4.png",
+      "level": 1,
+      "ordinal": 9,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113748_d84af7b0d3c4.png\n\nLinked image asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113748_d84af7b0d3c4.png\n\nImage metadata: PNG 985x680 mode=RGBA\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\nLarge-sized vessel fleet above 100,000 dwt (Avg Age: 10\nyears)\n50\n40\n30\n20\noy EEE lili. -10\n-20\nSP PPC F Go Fionn non Peng ar rr Pha\nmDelivery mOrderbook Demolition",
+      "keywords": [
+        "asset",
+        "image",
+        "above",
+        "age",
+        "avg",
+        "brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113748_d84af7b0d3c4.png",
+        "demolition",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 195,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s10_linked_asset_2023_07_17_brs_dry_bulk_weekly_newsletter_img_screenshot2023_07_17113838_a515d05c6c96_png",
+      "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113838_a515d05c6c96.png",
+      "section_path": [
+        "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113838_a515d05c6c96.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113838_a515d05c6c96.png",
+      "level": 1,
+      "ordinal": 10,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113838_a515d05c6c96.png\n\nLinked image asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113838_a515d05c6c96.png\n\nImage metadata: PNG 992x702 mode=RGBA\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\nMiddle-sized vessel fleet 68,000-100,000 dwt (Avg Age: 11\nyears)\n30\n25\n20\n15\n:\nth | | | |\n-5\n-10\nSPP P.MS KS Ss oe ° one stg? 8 e oP RASA 4 oe a\nmDelivery mOrderbook sDemolition",
+      "keywords": [
+        "asset",
+        "image",
+        "age",
+        "avg",
+        "brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113838_a515d05c6c96.png",
+        "dpi",
+        "dwt",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s11_linked_asset_2023_07_17_brs_dry_bulk_weekly_newsletter_img_screenshot2023_07_17113923_5a9944c66392_png",
+      "doc_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113923_5a9944c66392.png",
+      "section_path": [
+        "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113923_5a9944c66392.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113923_5a9944c66392.png",
+      "level": 1,
+      "ordinal": 11,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113923_5a9944c66392.png\n\nLinked image asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113923_5a9944c66392.png\n\nImage metadata: PNG 1015x721 mode=RGBA\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\nSmall-sized vessel fleet 50,000-68,000 dwt (Avg Age: 10\nyears)\n25\n20\n15\n10 | |\nUreenae ie\n-5\n-10\nEPG FPF F GPG SHPO Pye ow gO gr PrP PPK\nmDelivery mOrderbook sDemolition",
+      "keywords": [
+        "asset",
+        "image",
+        "age",
+        "avg",
+        "brs-dry-bulk-weekly-newsletter_img_screenshot2023-07-17113923_5a9944c66392.png",
+        "dpi",
+        "dwt",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 202,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

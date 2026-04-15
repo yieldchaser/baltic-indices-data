@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 449,
+  "token_count": 1098,
   "source_path": "reports/breakwave/2023/2023-09-14_vortexa-freight-weekly.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/9/14/vortexa-freight-weekly",
   "children": [
@@ -63,7 +63,7 @@
       "section_path_text": "Tanker supply weighs on VLCC rates",
       "level": 1,
       "ordinal": 3,
-      "summary": "Iran & Venezuela) per voyage status\nCrude exports out of the Middle East fell by almost 10% in August due to voluntary Saudi cuts. Breaking this down by vessel class, VLCCs have seen Middle Eastern crude flows decline by almost 10% while on other vessel classes, flows increased by over 10%.",
+      "summary": "Image reference: unnamed - 2023-09-14T140246.708.png | assets/2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140246708_50d13160e39c.png\nGlobal VLCC utilisation (excl. Iran & Venezuela) per voyage status\nCrude exports out of the Middle East fell by almost 10% in August due to voluntary Saudi cuts.",
       "keywords": [
         "vlcc",
         "china",
@@ -76,7 +76,7 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 228,
+      "token_count": 287,
       "section_type": null,
       "children": []
     },
@@ -91,7 +91,7 @@
       "section_path_text": "LatAm East Coast crude tanker utilisation falls due to lower Brazilian exports",
       "level": 1,
       "ordinal": 5,
-      "summary": "LatAm East Coast crude tonne-miles (LHS) and utilisation (RHS)\nBrazilian crude exports fell m-o-m in August as policy intended to price domestic products lower than imports led to increased refinery runs, and therefore less crude available to export (source: Argus). As a result, utilisation from LatAm East Coast (Mexico + South America East Coast) for VLCCs, Suezmaxes and Aframaxes has been falling.",
+      "summary": "Image reference: unnamed - 2023-09-14T140519.783.png | assets/2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140519783_90c4cd319ed7.png\nLatAm East Coast crude tonne-miles (LHS) and utilisation (RHS)\nBrazilian crude exports fell m-o-m in August as policy intended to price domestic products lower than imports led to increased refinery runs, and therefore less crude available to export (source: Argus). As a result, utilisation from LatAm East Coast (Mexico + South America East Coast) for VLCCs, Suezmaxes and Aframaxes has been falling.",
       "keywords": [
         "vlcc",
         "suezmax",
@@ -104,8 +104,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 164,
+      "token_count": 223,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-14_2023_09_14_vortexa_freight_weekly__s06_linked_asset_2023_09_14_vortexa_freight_weekly_img_unnamed_2023_09_14t140246708_50d13160e39c_png",
+      "doc_id": "breakwave_insights_insights_2023-09-14_2023_09_14_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-09-14_2023_09_14_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140246708_50d13160e39c.png",
+      "section_path": [
+        "Linked asset: 2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140246708_50d13160e39c.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140246708_50d13160e39c.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140246708_50d13160e39c.png\n\nLinked image asset: 2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140246708_50d13160e39c.png\n\nImage metadata: PNG 1126x870 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n500\n480\n460\n440\n420 |\nun\"\no\ng\nS 400\nx)\n2\n380\n360\n340\n320\n300\nJan-22 Mar-22 May-22 Jul-22 Sep-22 Nov-22 Jan-23 Mar-23 May-23 Jul-23\n---Laden =---Ballast",
+      "keywords": [
+        "asset",
+        "image",
+        "ballast",
+        "dpi",
+        "embedded",
+        "info",
+        "jan-22",
+        "jan-23"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 198,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-14_2023_09_14_vortexa_freight_weekly__s07_linked_asset_2023_09_14_vortexa_freight_weekly_img_unnamed_2023_09_14t140519783_90c4cd319ed7_png",
+      "doc_id": "breakwave_insights_insights_2023-09-14_2023_09_14_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-09-14_2023_09_14_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140519783_90c4cd319ed7.png",
+      "section_path": [
+        "Linked asset: 2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140519783_90c4cd319ed7.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140519783_90c4cd319ed7.png",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140519783_90c4cd319ed7.png\n\nLinked image asset: 2023-09-14_vortexa-freight-weekly_img_unnamed-2023-09-14t140519783_90c4cd319ed7.png\n\nImage metadata: PNG 1926x1206 mode=RGBA\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n45 160\n4.0\n150\n3.5\n3.0 140\nn\n2.5\n= : \"n\n& 130 $\n2 2.0 ‘6\na fe)\ni Zz\n® 1.5 120\nCc\nCc\nL\n1.0\n110\n0.5\n0.0 100\nSep-22 Nov-22 Jan-23 Mar-23 May-23 Jul-23 Sep-23\nmms VLCC+ Suezmax Aframax a= Utilisation (RHS)",
+      "keywords": [
+        "vlcc",
+        "suezmax",
+        "aframax",
+        "asset",
+        "image",
+        "dpi",
+        "embedded",
+        "info"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

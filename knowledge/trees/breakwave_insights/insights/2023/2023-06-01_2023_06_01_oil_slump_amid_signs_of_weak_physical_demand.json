@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-06-01_2023_06_01_oil_slump_amid_signs_of_weak_physical_demand__root",
   "doc_id": "breakwave_insights_insights_2023-06-01_2023_06_01_oil_slump_amid_signs_of_weak_physical_demand",
   "parent_id": null,
-  "title": "Oil Slump Amid Signs Of Weak Physical Demand",
+  "title": "Oil slump amid signs of weak physical demand",
   "section_path": [
-    "Oil Slump Amid Signs Of Weak Physical Demand"
+    "Oil slump amid signs of weak physical demand"
   ],
-  "section_path_text": "Oil Slump Amid Signs Of Weak Physical Demand",
+  "section_path_text": "Oil slump amid signs of weak physical demand",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nSigns of weak underlying demand saw further downward pressure on commodity markets. This offset a broader pick up in risk appetite following the US debt ceiling deal. Crude oil slumped amid signs of weakness in the physical market.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 639,
+  "token_count": 1085,
   "source_path": "reports/breakwave/2023/2023-06-01_oil-slump-amid-signs-of-weak-physical-demand.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/6/1/oil-slump-amid-signs-of-weak-physical-demand",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 637,
+      "token_count": 686,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-06-01_2023_06_01_oil_slump_amid_signs_of_weak_physical_demand__s02_linked_asset_2023_06_01_oil_slump_amid_signs_of_weak_physical_demand_img_1685485357138_95cbef9776ad_png",
+      "doc_id": "breakwave_insights_insights_2023-06-01_2023_06_01_oil_slump_amid_signs_of_weak_physical_demand",
+      "parent_id": "breakwave_insights_insights_2023-06-01_2023_06_01_oil_slump_amid_signs_of_weak_physical_demand__root",
+      "title": "Linked asset: 2023-06-01_oil-slump-amid-signs-of-weak-physical-demand_img_1685485357138_95cbef9776ad.png",
+      "section_path": [
+        "Linked asset: 2023-06-01_oil-slump-amid-signs-of-weak-physical-demand_img_1685485357138_95cbef9776ad.png"
+      ],
+      "section_path_text": "Linked asset: 2023-06-01_oil-slump-amid-signs-of-weak-physical-demand_img_1685485357138_95cbef9776ad.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-06-01_oil-slump-amid-signs-of-weak-physical-demand_img_1685485357138_95cbef9776ad.png\n\nLinked image asset: 2023-06-01_oil-slump-amid-signs-of-weak-physical-demand_img_1685485357138_95cbef9776ad.png\n\nImage metadata: PNG 1571x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 29-May Tue 30-May % chg Daily % chg Daily % chg\nCCI 405.83 399.24 -1.6% Brent crude 73.88 -4.1% Nickel 20,912 -0.8%\nPrecious 675.88 681.60 Thermal coal 135.10 -3.9% Aluminium 2,214 -0.4%\nIndustrials 363.86 362.37 -0.4% JKM LNG swaps 9.37 -3.8% Gold 1,960\nBulks 506.88 508.26 European carbon 80.52 -2.8% Palladium 1,424 -4.6%\nAgs 294.16 289.65 -1.5% ACCU 36.50 0.0% Iron Ore 100.8\nEnergy 432.08 417.67 -3.3% Copper 8,112 -0.2% Wheat 469 -0.1%",
+      "keywords": [
+        "lng",
+        "china",
+        "europe",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 356,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

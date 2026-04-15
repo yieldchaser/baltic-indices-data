@@ -25,7 +25,32 @@ keywords:
 - are
 - dollar
 - imports
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: "\uFEFF The Chinese economy continues to show considerable strength,
+    with exports rising for the fourth consecutive month in September and beating
+    the economists' expectations yet again. The exports increased by just shy of ten
+    percent in US dollar terms, compared t"
+  unit: null
+  values:
+  - 1.9
+- section: Main
+  section_type: null
+  source_line: Although the increase in export activities were impressive, the real
+    headline grabber was the growth of the imports. Expected to grow by just below
+    half of a percent, it registered its largest ever monthly jump with an increase
+    of over thirteen percent. The re
+  unit: null
+  values:
+  - 868.0
 regions:
 - china
 - brazil

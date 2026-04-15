@@ -24,7 +24,57 @@ keywords:
 - generation
 - increase
 - million
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Coal India produced approximately 53.5 million tons of coal last month,
+    which marks a month-on-month decline of 26.6 million tons (-33%) but a year-on-year
+    increase of 11.6 million tons (28%). The month-on-month decline is very normal.
+    Much more significant is
+  unit: pct
+  values:
+  - 53.5
+  - 26.6
+  - -33.0
+  - 11.6
+  - 28.0
+  - 27.0
+  - 16.9
+  - 7.0
+- section: Main
+  section_type: null
+  source_line: 'Coal India''s production has remained strong, but the nation''s electricity
+    generation is continuing to set new records and India''s government has wisely
+    been directing utilities to significantly increase coal imports. India produced
+    approximately 127.1 billion '
+  unit: pct
+  values:
+  - 127.1
+  - 3.2
+  - 3.0
+  - 11.6
+  - 10.0
+  - 10.0
+- section: Main
+  section_type: null
+  source_line: The last two months have seen a dramatic shift in India. As recently
+    as in January and February, electricity production was contracting on a year-on-year
+    basis. Coal-derived electricity generation has also continued to set new records
+    as well. India's coal-der
+  unit: pct
+  values:
+  - 111.8
+  - 3.1
+  - 3.0
+  - 8.0
+  - 8.0
 regions:
 - china
 - brazil

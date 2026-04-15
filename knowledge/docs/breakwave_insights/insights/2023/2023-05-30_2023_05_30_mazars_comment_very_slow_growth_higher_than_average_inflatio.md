@@ -25,7 +25,73 @@ keywords:
 - may
 - now
 - spiral.
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: Very slow growth + higher than average inflation = stagflation
+  section_type: null
+  source_line: 'The US debt ceiling drama seems to be moving behind us, as a moderate
+    President and a less-than-expected-militant House Speaker reached an accord that
+    will only have a moderate impact on growth. It remains to be passed by the individual
+    caucuses in the Senate '
+  unit: null
+  values:
+  - 5.0
+- section: Very slow growth + higher than average inflation = stagflation
+  section_type: null
+  source_line: It may be premature to assume, but a return to the political centre
+    after more than a decade could be better news than the debt ceiling deal itself.
+    In fact, a broad look at elected legislatures across the developed world, from
+    the UK to France to Greece sugge
+  unit: null
+  values:
+  - 2008.0
+  - 2018.0
+- section: Very slow growth + higher than average inflation = stagflation
+  section_type: null
+  source_line: 'To be fair, US growth didn''t have to suffer at all. When a country
+    prints the global reserve currency it can borrow ad infinitum and saddle other
+    countries with the bill. But even the almighty US Dollar can suffer from inflation.
+    Last week core inflation rose '
+  unit: pct
+  values:
+  - 4.7
+  - 2.5
+- section: Very slow growth + higher than average inflation = stagflation
+  section_type: null
+  source_line: As the drama is nearly over (never say never until the ink is dry),
+    we once again turn our attention to the real subjects of inflation and growth.
+    Global growth is set to slow to the worst pace in decades. The US is expected
+    to grow by a cumulative 3.84% in th
+  unit: pct
+  values:
+  - 3.84
+  - 2023.0
+  - 2025.0
+- section: Very slow growth + higher than average inflation = stagflation
+  section_type: null
+  source_line: In the UK, which is reconstructing its economy post-Brexit, growth
+    is slower and the skills shortages more acute. So is the wage-price spiral. Inflation
+    grew by 1.2% for April, the third straight month that prices rose near 1%. Consumers
+    are undeterred as dema
+  unit: pct
+  values:
+  - 1.2
+  - 1.0
+- section: Very slow growth + higher than average inflation = stagflation
+  section_type: null
+  source_line: The exercise becomes more difficult as the famous skills-gap comes
+    into the spotlight. For years companies have been complaining that they just can't
+    get the right staff. This is where the educational system has, in essence, failed
+    us. Jorge Louis Borges, a fa
+  unit: null
+  values:
+  - 19.0
 regions:
 - china
 - brazil

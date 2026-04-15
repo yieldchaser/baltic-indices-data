@@ -26,7 +26,87 @@ keywords:
 - are
 - exports
 - demand
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: It is true that this year grains have managed to "save the day" for
+    Panamaxes as they proved to be a significant pillar of support for the medium-sized
+    bulkers, which on many occasions ran unusually higher than the larger asset class
+    of Capesizes. Although Pan
+  unit: null
+  values:
+  - 2020.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: 'It is common knowledge that China dominates demand for dry bulk shipping
+    and agricultural products are no exception. The Asian nation is by far the largest
+    soybean importer (consumes excess of 60% of global imports) and as such, forecasts
+    that its demand will '
+  unit: pct
+  values:
+  - 60.0
+  - 2021.0
+  - 100.0
+  - 2020.0
+  - 21.0
+- section: Main
+  section_type: null
+  source_line: The heated Chinese demand for the oilseed, primarily used as feed for
+    livestock, can be attributed to the recovery of the domestic swine herd, which
+    in 2019 was depleted by almost half due to the deadly swine flu. The domestic
+    pig population is en route to a f
+  unit: null
+  values:
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: 'Brazil is expected to harvest a record soybean crop in 2021 of up
+    to 133 million metric tonnes; the country''s exports to the world, however, are
+    estimated to reach 85 million metric tonnes (which would account for a 7.7% yearly
+    contraction). On the other end, '
+  unit: pct
+  values:
+  - 2021.0
+  - 133.0
+  - 85.0
+  - 7.7
+  - 31.0
+  - 60.0
+- section: Main
+  section_type: null
+  source_line: A principal reason for the pickup in US exports is the Phase One agreement
+    which has boosted sales of American agricultural goods. Indeed, soybean volumes
+    out of the States in 2021 are expected to surpass by 1.5% the 2017 levels, the
+    baseline year for the Sino
+  unit: pct
+  values:
+  - 2021.0
+  - 1.5
+  - 2017.0
+- section: Main
+  section_type: null
+  source_line: Global corn exports are also forecast to increase by a nearly 8.6%
+    y/y, while wheat exports will likely stay flat on the year.
+  unit: pct
+  values:
+  - 8.6
+- section: Main
+  section_type: null
+  source_line: Of course, grains do not constitute a panacea; we'd need industrial
+    activity and demand for the other major dry commodities of iron ore and coal to
+    also pick up so that we indeed see a brighter 2021 with increased demand for bulks
+    and subsequently for the vehi
+  unit: null
+  values:
+  - 2021.0
 regions:
 - china
 - brazil

@@ -27,7 +27,85 @@ keywords:
 - year-on-year
 - year
 - grew
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: cautiously_bearish
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: In recent weeks, more provinces in China have been announcing that
+    they will be reducing steel production as the central government continues to
+    voice that it wants to cap 2021's crude steel production at 2020's total. While
+    it is virtually impossible that Chi
+  unit: null
+  values:
+  - 2021.0
+  - 2020.0
+  - 2020.0
+  - 1.05
+- section: Main
+  section_type: null
+  source_line: Examining the last ten years of crude steel production and iron ore
+    imports shows that China's iron ore imports have stayed resilient during each
+    year where China's crude steel production growth came under notable pressure.
+    Last decade began with China's crude
+  unit: worldscale_pct
+  values:
+  - 9.0
+  - 2011.0
+  - 11.0
+  - 2012.0
+  - 3.0
+  - 9.0
+  - 2013.0
+  - 10.0
+  - 2014.0
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: As we have been stressing in our work since we started our consultancy
+    in 2010, it is global iron ore production that dictates China's iron ore import
+    volume. China has long remained content to purchase as much iron ore that exporters
+    want to sell China (as im
+  unit: null
+  values:
+  - 2010.0
+- section: Main
+  section_type: null
+  source_line: '2018 and 2019 would then go on to see weakness in iron ore imports,
+    but this was not due to weakness in crude steel production. China''s iron ore
+    imports contracted year-on-year by 2% in 2018 and grew year-on-year by only 1%
+    in 2019, but crude steel production '
+  unit: pct
+  values:
+  - 2018.0
+  - 2019.0
+  - 2.0
+  - 2018.0
+  - 1.0
+  - 2019.0
+  - 10.0
+  - 2018.0
+  - 7.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: 'As we have often discussed in our work, it is actions in China that
+    are much more telling to us than any government statements (or lack of statements).
+    Overall, year after year has continued to show that China''s actual iron ore import
+    demand remains resilient '
+  unit: pct
+  values:
+  - 5.0
+  - 2012.0
+  - 2015.0
+  - 2016.0
+  - 6.0
+  - 1.0
 regions:
 - china
 - brazil

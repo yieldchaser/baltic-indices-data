@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-09-10_2023_09_10_its_the_time_of_the_season_the_tankers__root",
   "doc_id": "breakwave_insights_insights_2023-09-10_2023_09_10_its_the_time_of_the_season_the_tankers",
   "parent_id": null,
-  "title": "Its The Time Of The Season The Tankers",
+  "title": "It's the time of the season - The Tankers",
   "section_path": [
-    "Its The Time Of The Season The Tankers"
+    "It's the time of the season - The Tankers"
   ],
-  "section_path_text": "Its The Time Of The Season The Tankers",
+  "section_path_text": "It's the time of the season - The Tankers",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Thanos Sofios\nTanker rates, both for crude oil and product tankers, are both cyclical and seasonal. Freight rates have tended to perform better during the fourth quarter (and the first one) of a calendar year. With 90% of the global population living in the northern hemisphere, more oil is required during the northern hemisphere winter hence more oil is consumed during these quarters.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 731,
+  "token_count": 1203,
   "source_path": "reports/breakwave/2023/2023-09-10_its-the-time-of-the-season-the-tankers.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/9/10/its-the-time-of-the-season-the-tankers",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 729,
+      "token_count": 787,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-10_2023_09_10_its_the_time_of_the_season_the_tankers__s02_linked_asset_2023_09_10_its_the_time_of_the_season_the_tankers_img_screenshot2023_09_09125553_069988feaae9_png",
+      "doc_id": "breakwave_insights_insights_2023-09-10_2023_09_10_its_the_time_of_the_season_the_tankers",
+      "parent_id": "breakwave_insights_insights_2023-09-10_2023_09_10_its_the_time_of_the_season_the_tankers__root",
+      "title": "Linked asset: 2023-09-10_its-the-time-of-the-season-the-tankers_img_screenshot2023-09-09125553_069988feaae9.png",
+      "section_path": [
+        "Linked asset: 2023-09-10_its-the-time-of-the-season-the-tankers_img_screenshot2023-09-09125553_069988feaae9.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-10_its-the-time-of-the-season-the-tankers_img_screenshot2023-09-09125553_069988feaae9.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-10_its-the-time-of-the-season-the-tankers_img_screenshot2023-09-09125553_069988feaae9.png\n\nLinked image asset: 2023-09-10_its-the-time-of-the-season-the-tankers_img_screenshot2023-09-09125553_069988feaae9.png\n\nImage metadata: PNG 840x463 mode=RGBA\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\nVLCC 270,000 KT: AG - FE\nUss/day\n350,000 7 ~------------ === =p == 2-222 nnn nnn nnn nnn nnn eqn enn ene\n300,000 }------------------} ------------------]) = 222-222 ------- 4-22-2222 -- +--+\n250,000 +------------------}------------ 2-2-2 fo- 22-22-22 eee eee foe oe eee eee ene e-\n200,000 }--------------- --| o------- 22-2222 - foe eee e need eee eee ee ene\n150,000 + -------------- -----------4------------------]-) 0 --------------\n100,000 + ---------- ---------.-4------------------]-) -. -_\n50,000 -< sazn----, 7\n0)\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51\nWeek\n2018-2022 Range © -2023",
+      "keywords": [
+        "vlcc",
+        "eee",
+        "nnn",
+        "ene",
+        "asset",
+        "foe",
+        "image",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 374,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

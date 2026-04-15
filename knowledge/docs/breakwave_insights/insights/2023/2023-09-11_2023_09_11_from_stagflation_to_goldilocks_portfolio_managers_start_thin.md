@@ -25,7 +25,80 @@ keywords:
 - any
 - are
 - down
+linked_assets_discovered: 5
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 5
 market_tone: constructive
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Going into the final stretch of the year, the one thing we can tell
+    with any level of certainty is that we now know even less than I did going into
+    it. To be sure, our theme from the beginning of 2023 was " prolonged disruption
+    ". But deep down, I had hoped th
+  unit: null
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: On the one end of the spectrum, is the "Goldilocks" crowd. They believe
+    the economy has underlying strength, the labour market will remain strong and
+    that consumers will only marginally curtail their spending. The "R" word, is not
+    allowed . A shallow recession
+  unit: null
+  values:
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: On the other end of the spectrum lie the "Stagflationists". A decade
+    and a half of bad news, for that crowd, can only be followed with more bad news.
+    In this scenario, the economy slows down materially, as consumers run out of pandemic
+    pocket money, consumptio
+  unit: null
+  values:
+  - 1970.0
+- section: Main
+  section_type: null
+  source_line: We think this is less relevant than the general picture, which is one
+    of utter lack of visibility. No one really knows how consumers are going to behave
+    when they run out of money. They can keep spending if the labour market remains
+    tight. Or they might face u
+  unit: usd
+  values:
+  - 65.0
+  - 90.0
+- section: Main
+  section_type: null
+  source_line: For example, if one could be confident that the US 10y yield would
+    fall back to 2% in a couple of years, they could make 20%, outperforming what
+    stocks give you on average (8% per annum). But with the possibility of further
+    external shocks to inflation, how ca
+  unit: pct
+  values:
+  - 2.0
+  - 20.0
+  - 8.0
+- section: Main
+  section_type: null
+  source_line: In comes Enrico Fermi. Fermi was an Italian Physicist (1901-1954),
+    who created the world's first nuclear reactor and who served in the Manhattan
+    Project. This lesser-known Oppenheimer (no major movie for him yet) posited that
+    any problem has a solution, as lon
+  unit: null
+  values:
+  - 1901.0
+  - -1954.0
+- section: Main
+  section_type: null
+  source_line: PS. On September 11 2001 our world changed forever. We must never underestimate
+    the power a single event may have in political, economic or financial history.
+  unit: null
+  values:
+  - 11.0
+  - 2001.0
 regions:
 - china
 - brazil

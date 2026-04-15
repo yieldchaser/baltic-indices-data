@@ -25,7 +25,109 @@ keywords:
 - even
 - not
 - oil
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 8
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: This inflation cycle is nearing its completion. In the US, core Personal
+    Consumption Expenditure, the Fed's favourite inflation gauge, fell below 4% for
+    the first time since June 2021. If this Friday's employment data are weak, it
+    is possible that the Fed coul
+  unit: pct
+  values:
+  - 4.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: 'For all their proclamations of a soft landing, after all, policymakers
+    know that predicting a recession, let alone its depth is a fool''s errand. Since
+    1995, there have been six separate occasions at which "Soft Landing" became a
+    keyword. In two of these cases '
+  unit: null
+  values:
+  - 1995.0
+  - 2000.0
+  - 2007.0
+  - 1995.0
+  - 2011.0
+  - 2007.0
+- section: Main
+  section_type: null
+  source_line: The x-factor, however, is not the trajectory of the economy. Rather,
+    it is persistent geopolitical instability. All forecasts assume a "ceteris paribus"
+    basis, Latin for "all other things being equal". Only things haven't been equal
+    for some time. The geopolit
+  unit: null
+  values:
+  - 2017.0
+- section: Main
+  section_type: null
+  source_line: As oil prices continue to hover near $90, investors are worried whether
+    a new cycle of inflation will play out, mirroring the 1970's-style up-and-down
+    inflation, the kind that takes a double digit interest rate to break. And while
+    a rumoured deal between the U
+  unit: usd
+  values:
+  - 90.0
+  - 1970.0
+- section: Main
+  section_type: null
+  source_line: The week marks the 50th anniversary of the Yom Kippur War. The fourth
+    Arab-Israeli conflict was fought between 6 and 25 October 1973. Before the war
+    was over, King Faisal of Saudi Arabia, angered at US aid to Israel which helped
+    tip the war, declared an oil em
+  unit: usd
+  values:
+  - 50.0
+  - 6.0
+  - 25.0
+  - 1973.0
+  - 1973.0
+  - -1974.0
+  - 3.0
+  - 12.0
+- section: Main
+  section_type: null
+  source_line: The embargo itself lasted five months, and eventually, things calmed
+    down. With all sides realising that they did not have the strength to fight indefinitely
+    after four armed conflicts, Egypt and Israel eventually found themselves on the
+    negotiating table, und
+  unit: null
+  values:
+  - 1978.0
+  - 1981.0
+  - 1995.0
+  - 1973.0
+  - 1979.0
+  - 1980.0
+  - 1991.0
+  - 2001.0
+  - 1970.0
+- section: Main
+  section_type: null
+  source_line: 'The war between Russia and Ukraine is already much bigger than Yom
+    Kippur. Lasting for over a year and a half, it has forced actors all across the
+    globe to take sides. One of the countries directly involved owns the world''s
+    biggest nuclear arsenal, as well as '
+  unit: null
+  values:
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: Markets, who hate instability, are finally realising that the era of
+    geopolitical convergence is over, and in that respect, the world now resembles
+    the 1970s. While it will probably not be as bad (the 1970s also featured a departure
+    from the Gold Standard), th
+  unit: null
+  values:
+  - 1970.0
+  - 1970.0
 regions:
 - china
 - brazil

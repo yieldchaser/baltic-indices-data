@@ -26,7 +26,68 @@ keywords:
 - july
 - tons.
 - totaled
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Indonesia and Russia have remained China''s primary sources of coal
+    imports, and imports from Australia have set another three-year high. Among the
+    major exporters, of note is that August most recently saw China''s coal imports
+    from Indonesia total 18.7 million '
+  unit: pct
+  values:
+  - 18.7
+  - 2.9
+  - 18.0
+  - 2.9
+  - 18.0
+- section: Main
+  section_type: null
+  source_line: Imports from Russia in August totaled 10 million tons. This is up from
+    July by 1 million tons (11%) and is up year-on-year by 1.5 million tons (18%).
+    China's coal imports from Russia remain near record highs. The last sixteen months
+    have now seen Russia contri
+  unit: pct
+  values:
+  - 10.0
+  - 1.0
+  - 11.0
+  - 1.5
+  - 18.0
+  - 24.0
+  - 42.0
+  - 51.0
+  - 18.0
+- section: Main
+  section_type: null
+  source_line: Imports from Mongolia in August totaled a record 7.2 million tons.
+    This is up from July by 1.3 million tons (22%) and is up year-on-year by 3.6 million
+    tons (100%).
+  unit: pct
+  values:
+  - 7.2
+  - 1.3
+  - 22.0
+  - 3.6
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: Imports from Australia in August totaled 6.7 million tons. This is
+    up July by 400,000 tons (6%), is up year-on-year by 6.6 million tons (6600%),
+    and has marked another three-year high.
+  unit: pct
+  values:
+  - 6.7
+  - 400000.0
+  - 6.0
+  - 6.6
+  - 6600.0
 regions:
 - china
 - brazil

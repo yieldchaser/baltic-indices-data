@@ -26,7 +26,35 @@ keywords:
 - carry
 - vessels
 - very
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: At present, the dry bulk market continues to fare very well and prospects
+    for all four dry bulk vessel classes remain very promising. While the recent correction
+    in iron ore prices has been concerning to many globally, it should be acknowledged
+    that spot capes
+  unit: usd
+  values:
+  - 221.0
+  - 139.0
+  - 28500.0
+  - 49700.0
+- section: Main
+  section_type: null
+  source_line: Going forward, there is a solid chance that China's iron ore import
+    demand will increase soon as long as global iron ore miners continue to ramp up
+    production. If demand for imports does ultimately increase, capesize rates will
+    likely reach extremely high leve
+  unit: usd
+  values:
+  - 221.0
 regions:
 - china
 - brazil

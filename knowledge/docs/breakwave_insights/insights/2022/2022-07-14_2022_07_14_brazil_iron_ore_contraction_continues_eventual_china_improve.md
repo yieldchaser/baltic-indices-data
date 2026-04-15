@@ -27,7 +27,55 @@ keywords:
 - tons
 - exports
 - half
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'One of the most negative issues for the capesize market this year
+    has been that Brazil''s iron ore exports have continued to contract on a year-on-year
+    basis. Most recently, Brazil''s iron ore exports totaled 32.1 million tons in
+    June. While this is 6.6 million '
+  unit: pct
+  values:
+  - 32.1
+  - 6.6
+  - 26.0
+  - 400000.0
+  - -5.0
+  - 2021.0
+  - 11.9
+  - -7.0
+- section: Main
+  section_type: null
+  source_line: 'The worst is likely over for Brazil''s iron ore exports, and the strong
+    month-on-month increase is a good sign. The 32.1 million tons exported last month
+    has marked the largest monthly export volume seen this year, and looking forward
+    Brazil''s iron ore exports '
+  unit: pct
+  values:
+  - 32.1
+  - 128.3
+  - 2.8
+  - 2.0
+  - 1.0
+  - 1.0
+  - 160.0
+- section: Main
+  section_type: null
+  source_line: 'Also significant in China is that the central government has very
+    clearly been continuing to work to stimulate the economy. Sustained strength is
+    likely to begin whenever coronavirus restrictions are fully lifted. Most recently,
+    it was reported last week that '
+  unit: usd
+  values:
+  - 1.5
+  - 220.0
 regions:
 - china
 - brazil

@@ -25,7 +25,25 @@ keywords:
 - economy
 - global
 - only
+linked_assets_discovered: 5
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 5
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The most painful adjustment comes for portfolio holders. Since 2008,
+    the US Federal Reserve has been the ‘only game in town'. Its will and whims, expressed
+    by Quantitative Easing, a method to print money without incurring consumer inflation,
+    have moved markets
+  unit: pct
+  values:
+  - 2008.0
+  - 12.0
+  - 4.0
 regions:
 - china
 - brazil

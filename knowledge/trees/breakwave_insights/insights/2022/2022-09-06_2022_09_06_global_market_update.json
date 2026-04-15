@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1190,
+  "token_count": 1369,
   "source_path": "reports/breakwave/2022/2022-09-06_global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/6/global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 202,
+      "token_count": 235,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-06_2022_09_06_global_market_update__s06_linked_asset_2022_09_06_global_market_update_img_unnamed285729_aa39d7348793_png",
+      "doc_id": "breakwave_insights_insights_2022-09-06_2022_09_06_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-09-06_2022_09_06_global_market_update__root",
+      "title": "Linked asset: 2022-09-06_global-market-update_img_unnamed285729_aa39d7348793.png",
+      "section_path": [
+        "Linked asset: 2022-09-06_global-market-update_img_unnamed285729_aa39d7348793.png"
+      ],
+      "section_path_text": "Linked asset: 2022-09-06_global-market-update_img_unnamed285729_aa39d7348793.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-06_global-market-update_img_unnamed285729_aa39d7348793.png\n\nLinked image asset: 2022-09-06_global-market-update_img_unnamed285729_aa39d7348793.png\n\nImage metadata: PNG 1118x479 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCargo Order Volumes (TCT & Voyage) for Copper Discharging in China ©\nLadd sbi iui ul",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "cargo",
+        "copper",
+        "discharging",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 119,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

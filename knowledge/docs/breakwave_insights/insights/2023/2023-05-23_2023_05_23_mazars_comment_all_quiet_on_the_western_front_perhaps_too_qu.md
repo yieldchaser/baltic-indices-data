@@ -24,7 +24,23 @@ keywords:
 - two
 - bank
 - central
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Equally dangerous is that we haven't seen the details of this deal-in-the-making.
+    Nowhere is the devil more comfortable than in the details. It could very well
+    be the case that there's a real deal ready to be signed, but also that the ‘Grand
+    Compromise' will e
+  unit: null
+  values:
+  - 2011.0
 regions:
 - china
 - brazil

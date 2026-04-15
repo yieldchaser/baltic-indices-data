@@ -27,7 +27,56 @@ keywords:
 - demand
 - last
 - its
+linked_assets_discovered: 4
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 4
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil posted a weekly gain, despite edging lower on Friday as the
+    prospect of stronger demand improved. The International Energy Agency last week
+    lifted its consumption estimate by 380kb/d, saying soaring gas prices amid strong
+    demand for electricity are d
+  unit: null
+  values:
+  - 380.0
+- section: Main
+  section_type: null
+  source_line: European natural gas recorded its fourth consecutive week of gains
+    amid persistent supply side issues. Russian shipments via the Nord Stream pipeline
+    briefly fell to around 18% of capacity on Friday, pushing Dutch front month futures
+    as high as EUR210/MWh. Wit
+  unit: pct
+  values:
+  - 18.0
+  - 10.0
+  - 75.0
+  - 95.0
+- section: Main
+  section_type: null
+  source_line: Iron ore fell on Friday, snapping a two-day rally amid signs of weaker
+    demand. Inventories at Chinese ports grew 1.3% last week, taking their increase
+    since mid-July to almost 7%. Sentiment wasn't helped after Komatsu reported Chinese
+    demand for excavators fel
+  unit: pct
+  values:
+  - 1.3
+  - 7.0
+  - 35.0
+- section: Main
+  section_type: null
+  source_line: Copper led the base metal sector higher last week as signs of a peak
+    in US inflation boosted sentiment. This could see the Fed refrain from getting
+    more aggressive with rate hikes. However, it trimmed some of those gains on Friday
+    after China's credit growth s
+  unit: null
+  values:
+  - 56.0
+  - 2.0
 regions:
 - china
 - brazil

@@ -25,7 +25,104 @@ keywords:
 - beijing
 - box
 - lunar
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 8
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Typically, in the four-week run-up from 1st January to the start of
+    Lunar New Year, box rates would rise, container availability in Asia would start
+    to tighten, and neophyte traders and western buyers would panic. Traders would
+    suddenly realize that the holida
+  unit: null
+  values:
+  - 1.0
+- section: But it's clearly different today.
+  section_type: null
+  source_line: The port cities of Tianjin and Dalian are currently affected. Two weeks
+    ago, authorities in the export hub of southern Guangdong province reported Omicron
+    cases spread across the cities of Zhuhai, Meizhou, Zhongshan, and Shenzhen's major
+    container ports. It is
+  unit: null
+  values:
+  - 1.0
+- section: But it's clearly different today.
+  section_type: null
+  source_line: A look at our platform reveals Shanghai-Los Angeles Port short-term
+    freight rates, for 40' standard dry container, dropped slightly (US$ 8044 - 8035,
+    or .11%) in the first two weeks of January (1-14), where the carriers were charging
+    'priority shipping fees' r
+  unit: pct
+  values:
+  - 40.0
+  - 8044.0
+  - 8035.0
+  - 11.0
+  - 1.0
+  - -14.0
+  - 1.0
+  - 272.0
+  - 1727.0
+  - 0.01
+- section: But it's clearly different today.
+  section_type: null
+  source_line: However, in today's Covid world, the relationships between rising box
+    rates and Lunar New Year may be obsolete. Two weeks ago, Pacific Maritime Association
+    reported 800 dockworkers (10% of the workforce) as unavailable to work at Los
+    Angeles/Long Beach ports d
+  unit: pct
+  values:
+  - 800.0
+  - 10.0
+- section: But it's clearly different today.
+  section_type: null
+  source_line: The Covid problems in China will likely last far longer than Beijing
+    admits. One reason is that recent reports say Beijing's Sinovac Covid-19 vaccine
+    isn't as effective as the Pfizer/Moderna vaccines/boosters against the variant.
+  unit: null
+  values:
+  - 19.0
+- section: But it's clearly different today.
+  section_type: null
+  source_line: Our friends at Splash 24/7 reported how this combination of sudden
+    lockdowns and less-effective vaccines resulted in the unintended consequence that
+    "The population has virtually no antibodies against Omicron." Eurasia Group wrote
+    in January 2022, "Keeping the
+  unit: null
+  values:
+  - 24.0
+  - 7.0
+  - 2022.0
+- section: But it's clearly different today.
+  section_type: null
+  source_line: This gives Beijing no option but to maintain its immediate lockdowns
+    and quarantines policy as workers plan their surge homeward for the 29th of January/1st
+    February holiday, followed by the 2022 Winter Olympics in Beijing, from 4th February
+    until 20th Februar
+  unit: null
+  values:
+  - 29.0
+  - 1.0
+  - 2022.0
+  - 4.0
+  - 20.0
+- section: But it's clearly different today.
+  section_type: null
+  source_line: 'It seems likely the days of Lunar New Year affecting box rates are
+    behind us, especially with Maersk''s recent announcement on their website on how
+    they expect shipping problems to carry over from 2021 to 2022: "Unfortunately,
+    2022 has not started off as we had'
+  unit: null
+  values:
+  - 2021.0
+  - 2022.0
+  - 2022.0
+  - 19.0
 regions:
 - china
 - brazil

@@ -27,7 +27,31 @@ keywords:
 - tankers
 - demand
 - towards
+linked_assets_discovered: 6
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 6
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: In this insight we provide an update on the current decline in crude
+    tanker demand across the board. We drill down to identify the drivers of this
+    as well as where crude tankers could find support in the latter half of 2023.
+  unit: null
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: As we move into the second half of 2023, overall crude tanker demand
+    is slowing and trending slightly lower after a strong H1, particularly in the
+    start of the second quarter of the year. Most of the current slump can be attributed
+    to the VLCC segment, which i
+  unit: null
+  values:
+  - 2023.0
 regions:
 - china
 - brazil

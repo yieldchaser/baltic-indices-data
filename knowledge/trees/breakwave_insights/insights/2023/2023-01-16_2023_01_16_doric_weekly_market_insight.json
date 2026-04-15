@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 982,
+  "token_count": 1513,
   "source_path": "reports/breakwave/2023/2023-01-16_doric-weekly-market-insight.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/16/doric-weekly-market-insight",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 980,
+      "token_count": 1058,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-16_2023_01_16_doric_weekly_market_insight__s02_linked_asset_2023_01_16_doric_weekly_market_insight_img_1281029_f11bd0ef5750_png",
+      "doc_id": "breakwave_insights_insights_2023-01-16_2023_01_16_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-01-16_2023_01_16_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-01-16_doric-weekly-market-insight_img_1281029_f11bd0ef5750.png",
+      "section_path": [
+        "Linked asset: 2023-01-16_doric-weekly-market-insight_img_1281029_f11bd0ef5750.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-16_doric-weekly-market-insight_img_1281029_f11bd0ef5750.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-16_doric-weekly-market-insight_img_1281029_f11bd0ef5750.png\n\nLinked image asset: 2023-01-16_doric-weekly-market-insight_img_1281029_f11bd0ef5750.png\n\nImage metadata: PNG 450x308 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nAverage BDI 2023\n60%\n51.0%\n50%\n40% 37.3%\n30%\n20%\n9.8%\n10%\n0% 2% 0%\n0%\n<1000 1001- 1500- 2000- 2500- »>3000\n1499 1999 2499 2999\nSource: Doric Research",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "average",
+        "bdi",
+        "doric",
+        "doric-weekly-market-insight_img_1281029_f11bd0ef5750.png",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-16_2023_01_16_doric_weekly_market_insight__s03_linked_asset_2023_01_16_doric_weekly_market_insight_img_1281129_97593b86ee45_png",
+      "doc_id": "breakwave_insights_insights_2023-01-16_2023_01_16_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-01-16_2023_01_16_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-01-16_doric-weekly-market-insight_img_1281129_97593b86ee45.png",
+      "section_path": [
+        "Linked asset: 2023-01-16_doric-weekly-market-insight_img_1281129_97593b86ee45.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-16_doric-weekly-market-insight_img_1281129_97593b86ee45.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-16_doric-weekly-market-insight_img_1281129_97593b86ee45.png\n\nLinked image asset: 2023-01-16_doric-weekly-market-insight_img_1281129_97593b86ee45.png\n\nImage metadata: PNG 927x311 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nWhat is your view for the next twelve months\n70% 60%\n60% 54.9%\n50%\n39.2%\n40%\n30% 25%\n20% 15%\n5.9%\n10% 0% 0%\n0% --=-==\nOptimistic Cautiously Optimistic Rather Pessimistic Pessimistic\nSource: Doric Research BH Doric's Sentiment Survey 2023 _-‘ Doric's Sentiment Survey 2022",
+      "keywords": [
+        "doric",
+        "asset",
+        "image",
+        "optimistic",
+        "pessimistic",
+        "sentiment",
+        "source",
+        "survey"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

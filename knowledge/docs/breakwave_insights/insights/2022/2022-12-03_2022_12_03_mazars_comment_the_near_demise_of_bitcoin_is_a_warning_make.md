@@ -24,7 +24,80 @@ keywords:
 - are
 - our
 - being
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Cryptocurrencies were one of these novel, ground-breaking ideas bound
+    to garner initial support. A new type of finite currency, in an age of money printing,
+    that would bypass the banking system, on the back of a new and credible technology,
+    the Blockchain. The
+  unit: usd
+  values:
+  - 60000.0
+  - 16000.0
+- section: Main
+  section_type: null
+  source_line: Because investors were asking from Fear of Missing Out (FOMO). This
+    sort of feeling, as well as the occasional irrational exuberance, has long affected
+    much more respectable and traditional risk assets. We hardly find ourselves impervious
+    to sentiment. If we h
+  unit: null
+  values:
+  - 2008.0
+- section: Main
+  section_type: null
+  source_line: Third, the global financial and political system could have easily
+    quashed cryptocurrencies in their infancy. But it chose not to. Its goal is rather
+    transparent. To use cryptocurrencies as a way to get people talking about digital
+    currencies, produced by cent
+  unit: null
+  values:
+  - 10.0
+- section: Main
+  section_type: null
+  source_line: 'Some popular social media (such as Twitter, or even Facebook) may
+    well go out of business but the genie is out of the bottle. People will find it
+    hard to trust traditional media outlets[1], a lot of which have opted to ‘opinionise''
+    and ‘sensationalise'' rather '
+  unit: null
+  values:
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: Meanwhile, global inequalities are also set to persist. For fourteen
+    years, central banks printed over $20tn to keep the global financial system afloat,
+    inflating risk assets and private portfolios while the real economy remained in
+    the doldrums and people wer
+  unit: usd
+  values:
+  - 20.0
+- section: Main
+  section_type: null
+  source_line: While there is some logic to it, in an age where being popular matters
+    more than being systemic, the ‘system' has done very little to become more enticing
+    to the electorate, and this may well translate into more disillusionment. Historian
+    Eric Hobsbawm famousl
+  unit: null
+  values:
+  - 1994.0
+- section: Main
+  section_type: null
+  source_line: 'Many, including former Prime Minister Gordon Brown and former Fed
+    Chairwoman Janet Yellen, have been calling for a new ‘Bretton Woods''[2], the
+    re-designing of our financial and monetary system. Capitalism has an uncanny ability
+    "to surmount problems it itself '
+  unit: null
+  values:
+  - 2.0
+  - 3.0
+  - 17.0
 regions:
 - china
 - brazil

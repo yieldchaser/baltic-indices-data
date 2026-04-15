@@ -25,7 +25,58 @@ keywords:
 - month-on-month
 - prices
 - robust
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we have continued to stress in our Weekly Dry Bulk Reports and Weekly
+    China Reports, China's dry bulk commodity imports have remained strong as we have
+    been anticipating despite the unevenness in China's industrial recovery. China's
+    import data for June has
+  unit: worldscale_pct
+  values:
+  - 145.7
+  - 2.0
+  - -1.0
+  - 29.5
+  - 25.0
+  - 148.8
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: 'China''s coal imports totaled a very robust 39.9 million tons last
+    month. This is up month-on-month by 400,000 tons (1%) and is up year-on-year by
+    20.9 million tons (110%). Iron ore imports totaled 95.5 million tons. This is
+    down month-on-month by 700,000 tons '
+  unit: pct
+  values:
+  - 39.9
+  - 400000.0
+  - 1.0
+  - 20.9
+  - 110.0
+  - 95.5
+  - 700000.0
+  - -1.0
+  - 6.5
+  - 7.0
+- section: Main
+  section_type: null
+  source_line: With global commodity prices remaining down this year compared to 2022's
+    prices (due primarily to weakness in demand from the world outside of China),
+    China has continued to benefit greatly and happily import robust amounts of commodities.
+    Of particular signif
+  unit: pct
+  values:
+  - 2022.0
+  - 5.4
+  - 5.4
 regions:
 - china
 - brazil

@@ -28,7 +28,75 @@ keywords:
 - sharp
 - after
 - but
+linked_assets_discovered: 4
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 4
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Total OPEC+ crude/condensate loadings in October stood at around 29.5,
+    of which OPEC Middle East's contributed 18.5mbd - both totals show little change
+    from September. But within the Middle East, the m-o-m change in Saudi loadings
+    showed a sharp contrast to th
+  unit: null
+  values:
+  - 29.5
+  - 18.5
+- section: Main
+  section_type: null
+  source_line: Saudi loadings fell by 570kbd on the month in October, the largest
+    drop observed since March 2022. The drop in loadings is unusual both given its
+    magnitude and the direction as Saudi Aramco was reported (Argus Media) to be supplying
+    full contract volumes in No
+  unit: null
+  values:
+  - 570.0
+  - 2022.0
+  - 440.0
+- section: Main
+  section_type: null
+  source_line: Elsewhere in the producer group, exports from African nations, led
+    by Nigeria and Algeria, grew by an impressive 470kbd from the previous month.
+    Total OPEC+ Africa loadings reached 5.1mbd in August, the highest total for this
+    subgroup since December 2021. Driv
+  unit: null
+  values:
+  - 470.0
+  - 5.1
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: This (quite surprising) increase in African supply should be a boon
+    for European refiners as they continue to wean themselves of Russian oil before
+    the December 5 deadline. However, crude differentials do not suggest prompt physical
+    demand is rising, even desp
+  unit: null
+  values:
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: Loadings of Russian grades actually showed a slight uptick in October
+    (+130kbd) but at 3.4mbd, it is matching the July-October average. A similar level
+    of stability is also seen with non-Russian (i.e. Kazah) crude loadings from Russian
+    ports, which were flat m
+  unit: null
+  values:
+  - 130.0
+  - 3.4
+- section: Main
+  section_type: null
+  source_line: Outside the OPEC+ group, the case for calling the Atlantic Basin crude
+    market as currently well supplied is made even stronger by the fact that loadings
+    from just three countries - the US, Brazil and Guyana - have added another 300kbd
+    in supply in October. Thi
+  unit: null
+  values:
+  - 300.0
+  - 1.0
 regions:
 - china
 - brazil

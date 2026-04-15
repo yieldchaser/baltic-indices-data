@@ -28,7 +28,23 @@ keywords:
 - iron
 - ore
 - are
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As the Baltic Dry Index hit the highest levels since June 2010 on Monday,
+    China upped the ante in its ongoing diplomatic spat with Australia. In what is
+    widely seen as a break from its traditional approach, Beijing has lodged a complaint
+    against some Australia
+  unit: null
+  values:
+  - 2010.0
 regions:
 - china
 - brazil

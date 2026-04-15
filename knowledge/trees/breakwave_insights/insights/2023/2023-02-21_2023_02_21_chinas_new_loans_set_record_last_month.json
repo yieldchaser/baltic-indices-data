@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-02-21_2023_02_21_chinas_new_loans_set_record_last_month__root",
   "doc_id": "breakwave_insights_insights_2023-02-21_2023_02_21_chinas_new_loans_set_record_last_month",
   "parent_id": null,
-  "title": "Chinas New Loans Set Record Last Month",
+  "title": "China's New Loans Set Record Last Month",
   "section_path": [
-    "Chinas New Loans Set Record Last Month"
+    "China's New Loans Set Record Last Month"
   ],
-  "section_path_text": "Chinas New Loans Set Record Last Month",
+  "section_path_text": "China's New Loans Set Record Last Month",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nChinese banks issued a record 4.9 trillion yuan in new loans in January. This marks a month-on-month increase of 3.5 trillion yuan (250%) and a year-on-year increase of 920 billion yuan (23%). The surge has not come as a surprise as lending was expected to set a record.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 278,
+  "token_count": 706,
   "source_path": "reports/breakwave/2023/2023-02-21_chinas-new-loans-set-record-last-month.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/2/21/chinas-new-loans-set-record-last-month",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 276,
+      "token_count": 361,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-21_2023_02_21_chinas_new_loans_set_record_last_month__s02_linked_asset_2023_02_21_chinas_new_loans_set_record_last_month_img_chart1287029_b35b1aeb2261_jpg",
+      "doc_id": "breakwave_insights_insights_2023-02-21_2023_02_21_chinas_new_loans_set_record_last_month",
+      "parent_id": "breakwave_insights_insights_2023-02-21_2023_02_21_chinas_new_loans_set_record_last_month__root",
+      "title": "Linked asset: 2023-02-21_chinas-new-loans-set-record-last-month_img_chart1287029_b35b1aeb2261.jpg",
+      "section_path": [
+        "Linked asset: 2023-02-21_chinas-new-loans-set-record-last-month_img_chart1287029_b35b1aeb2261.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-02-21_chinas-new-loans-set-record-last-month_img_chart1287029_b35b1aeb2261.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-21_chinas-new-loans-set-record-last-month_img_chart1287029_b35b1aeb2261.jpg\n\nLinked image asset: 2023-02-21_chinas-new-loans-set-record-last-month_img_chart1287029_b35b1aeb2261.jpg\n\nImage metadata: JPEG 732x352 mode=RGB\n\nOCR text:\nChinese Bank Loans (2019 - 2023)\n5000\n4000 :\n3000\n2000\n1000\n0\n2019 2020 2021 2022 2023\nUnit: Billion yuan",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "bank",
+        "billion",
+        "chinas-new-loans-set-record-last-month_img_chart1287029_b35b1aeb2261.jpg",
+        "chinese",
+        "jpeg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 139,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-21_2023_02_21_chinas_new_loans_set_record_last_month__s03_linked_asset_2023_02_21_chinas_new_loans_set_record_last_month_img_chart2285929_fedcc5a840e9_jpg",
+      "doc_id": "breakwave_insights_insights_2023-02-21_2023_02_21_chinas_new_loans_set_record_last_month",
+      "parent_id": "breakwave_insights_insights_2023-02-21_2023_02_21_chinas_new_loans_set_record_last_month__root",
+      "title": "Linked asset: 2023-02-21_chinas-new-loans-set-record-last-month_img_chart2285929_fedcc5a840e9.jpg",
+      "section_path": [
+        "Linked asset: 2023-02-21_chinas-new-loans-set-record-last-month_img_chart2285929_fedcc5a840e9.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-02-21_chinas-new-loans-set-record-last-month_img_chart2285929_fedcc5a840e9.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-21_chinas-new-loans-set-record-last-month_img_chart2285929_fedcc5a840e9.jpg\n\nLinked image asset: 2023-02-21_chinas-new-loans-set-record-last-month_img_chart2285929_fedcc5a840e9.jpg\n\nImage metadata: JPEG 732x332 mode=RGB\n\nOCR text:\nYear-On-Year Outstanding Loan Growth (2019 - 2023)\n14%\n13%\n12%\n11%\n10% - =i\n2019 2020 2021 2022 2023",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "chinas-new-loans-set-record-last-month_img_chart2285929_fedcc5a840e9.jpg",
+        "growth",
+        "jpeg",
+        "linked",
+        "loan"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 134,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

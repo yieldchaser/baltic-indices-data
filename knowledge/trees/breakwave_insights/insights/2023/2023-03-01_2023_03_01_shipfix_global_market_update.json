@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-01_2023_03_01_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-03-01_2023_03_01_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix - Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix - Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix - Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Macro/Geopolitics\nChinese manufacturing is recovering quickly following the country's removal of its strict Covid policies. The PMI data for February published earlier today point towards a rapid recovery for Chinese industrial production, with both the official survey from the country's statistics agency and the Caixin beating market expectations. The official PMI surged to 52.6 last month from 50.1 in January, surpassing expectations of 50.5 by a considerable margin and reaching the highest level in over ten years.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1275,
+  "token_count": 1694,
   "source_path": "reports/breakwave/2023/2023-03-01_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/1/shipfix-global-market-update",
   "children": [
@@ -138,8 +138,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 181,
+      "token_count": 243,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-01_2023_03_01_shipfix_global_market_update__s05_linked_asset_2023_03_01_shipfix_global_market_update_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_022375c33eac_png",
+      "doc_id": "breakwave_insights_insights_2023-03-01_2023_03_01_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-03-01_2023_03_01_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-03-01_shipfix-global-market-update_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_022375c33eac.png",
+      "section_path": [
+        "Linked asset: 2023-03-01_shipfix-global-market-update_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_022375c33eac.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-01_shipfix-global-market-update_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_022375c33eac.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-01_shipfix-global-market-update_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_022375c33eac.png\n\nLinked image asset: 2023-03-01_shipfix-global-market-update_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_022375c33eac.png\n\nImage metadata: PNG 1054x596 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) and Average Cargo Size for Coal Loading in the Russian Baltic for Asian Ports\n= Average cargo size- all shipments =» Average cargo size- China/FE ™@ Asia (excl. China/FE, India& ME) ™§ Middle East -™ India China/Far East\n3 80\n60\n2\n5 o 8\n2 5\n1 &\n8\nl 1 20\nDekel tet Wet Wetcd kde Ctokeltollhctol 1 tol 1\nDd dd DP Dd DD dD dD OW Oo Do oo Do Do Oo\nPPS S ES S PP gee os a A SP OO\" Ps\nLF HK GK KH HK FH MH GM KF MK CS KP Hi MV eM WK ¢\nData source: Shipfix",
+      "keywords": [
+        "china",
+        "india",
+        "coal",
+        "cargo",
+        "average",
+        "size",
+        "asset",
+        "china/fe"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 312,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

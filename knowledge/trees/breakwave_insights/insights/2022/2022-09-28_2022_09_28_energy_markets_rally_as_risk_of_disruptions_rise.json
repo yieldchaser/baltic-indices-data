@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-09-28_2022_09_28_energy_markets_rally_as_risk_of_disruptions_rise__root",
   "doc_id": "breakwave_insights_insights_2022-09-28_2022_09_28_energy_markets_rally_as_risk_of_disruptions_rise",
   "parent_id": null,
-  "title": "Energy Markets Rally As Risk Of Disruptions Rise",
+  "title": "Energy markets rally as risk of disruptions rise",
   "section_path": [
-    "Energy Markets Rally As Risk Of Disruptions Rise"
+    "Energy markets rally as risk of disruptions rise"
   ],
-  "section_path_text": "Energy Markets Rally As Risk Of Disruptions Rise",
+  "section_path_text": "Energy markets rally as risk of disruptions rise",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nAn escalation in Europe's energy crisis saw commodity markets gain as the focus returned to supply side issues. Some relief from selling was also found from a halt to the recent rally in the USD. European natural gas rallied as risks to further supply disruptions rattled an already fragile market.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 722,
+  "token_count": 1140,
   "source_path": "reports/breakwave/2022/2022-09-28_energy-markets-rally-as-risk-of-disruptions-rise.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/28/energy-markets-rally-as-risk-of-disruptions-rise",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 720,
+      "token_count": 767,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-28_2022_09_28_energy_markets_rally_as_risk_of_disruptions_rise__s02_linked_asset_2022_09_28_energy_markets_rally_as_risk_of_disruptions_rise_img_1664320754965_44007e4624b0_png",
+      "doc_id": "breakwave_insights_insights_2022-09-28_2022_09_28_energy_markets_rally_as_risk_of_disruptions_rise",
+      "parent_id": "breakwave_insights_insights_2022-09-28_2022_09_28_energy_markets_rally_as_risk_of_disruptions_rise__root",
+      "title": "Linked asset: 2022-09-28_energy-markets-rally-as-risk-of-disruptions-rise_img_1664320754965_44007e4624b0.png",
+      "section_path": [
+        "Linked asset: 2022-09-28_energy-markets-rally-as-risk-of-disruptions-rise_img_1664320754965_44007e4624b0.png"
+      ],
+      "section_path_text": "Linked asset: 2022-09-28_energy-markets-rally-as-risk-of-disruptions-rise_img_1664320754965_44007e4624b0.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-28_energy-markets-rally-as-risk-of-disruptions-rise_img_1664320754965_44007e4624b0.png\n\nLinked image asset: 2022-09-28_energy-markets-rally-as-risk-of-disruptions-rise_img_1664320754965_44007e4624b0.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 26-Sep Tue 27-Sep % chg Daily % chg Daily % chg\nccI 643.91 644.22 Brent crude 86.41 Gold 1,627\nPrecious 563.20 564.72 Thermal coal 437.65 -0.1% Palladium 2,077 -11.1%\nIndustrials 347.44 345.47 -0.6% JKM LNG swaps) 42.47 Iron Ore 99.6\nBulks 517.90 518.15 Copper 7,433 -0.1% Hogs 3,350 -1.5%\nAgs 378.17 373.90 -1.1% Nickel 21,728 -1.5% Corn 394 -0.8%\nEnergy 996.83 1001.18 Aluminium 2,107 -1.2% Wheat 425 -0.5%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 332,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

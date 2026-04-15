@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2020-08-14_2020_08_14_chinas_electricity_production_sets_new_record__root",
   "doc_id": "breakwave_insights_insights_2020-08-14_2020_08_14_chinas_electricity_production_sets_new_record",
   "parent_id": null,
-  "title": "Chinas Electricity Production Sets New Record",
+  "title": "China's Electricity Production Sets New Record",
   "section_path": [
-    "Chinas Electricity Production Sets New Record"
+    "China's Electricity Production Sets New Record"
   ],
-  "section_path_text": "Chinas Electricity Production Sets New Record",
+  "section_path_text": "China's Electricity Production Sets New Record",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nData released today shows China's coal production totaled 317.9 million tons last month. This mark's a year-on-year decline of 1%. Coal-derived electricity generation totaled 460 billion kilowatt hours last month, which marks year-on-year growth of 1%.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 203,
+  "token_count": 380,
   "source_path": "reports/breakwave/2020/2020-08-14_chinas-electricity-production-sets-new-record.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2020/8/14/chinas-electricity-production-sets-new-record",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "Data released today shows China's coal production totaled 317.9 million tons last month. This mark's a year-on-year decline of 1%.",
+      "summary": "Image reference: assets/2020-08-14_chinas-electricity-production-sets-new-record_img_image-asset_7040744b79a7.jpeg\nData released today shows China's coal production totaled 317.9 million tons last month. This mark's a year-on-year decline of 1%.",
       "keywords": [
         "china",
         "coal",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 201,
+      "token_count": 236,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2020-08-14_2020_08_14_chinas_electricity_production_sets_new_record__s02_linked_asset_2020_08_14_chinas_electricity_production_sets_new_record_img_image_asset_7040744b79a7_jpeg",
+      "doc_id": "breakwave_insights_insights_2020-08-14_2020_08_14_chinas_electricity_production_sets_new_record",
+      "parent_id": "breakwave_insights_insights_2020-08-14_2020_08_14_chinas_electricity_production_sets_new_record__root",
+      "title": "Linked asset: 2020-08-14_chinas-electricity-production-sets-new-record_img_image-asset_7040744b79a7.jpeg",
+      "section_path": [
+        "Linked asset: 2020-08-14_chinas-electricity-production-sets-new-record_img_image-asset_7040744b79a7.jpeg"
+      ],
+      "section_path_text": "Linked asset: 2020-08-14_chinas-electricity-production-sets-new-record_img_image-asset_7040744b79a7.jpeg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2020/assets/2020-08-14_chinas-electricity-production-sets-new-record_img_image-asset_7040744b79a7.jpeg\n\nLinked image asset: 2020-08-14_chinas-electricity-production-sets-new-record_img_image-asset_7040744b79a7.jpeg\n\nImage metadata: JPEG 2500x3320 mode=RGB\n\nEmbedded info:\ndpi: (240, 240)\n\nOCR text:\noa\nBe",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "chinas-electricity-production-sets-new-record_img_image-asset_7040744b79a7.jpeg",
+        "dpi",
+        "embedded",
+        "info",
+        "jpeg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 108,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

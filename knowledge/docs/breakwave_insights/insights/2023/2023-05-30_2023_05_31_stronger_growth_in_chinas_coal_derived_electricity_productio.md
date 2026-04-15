@@ -25,7 +25,52 @@ keywords:
 - coal-derived
 - generation
 - last
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China produced 381.5 million tons of coal in April. This has marked
+    a month-on-month decline of 35.7 million tons (-9%) but is up year-on-year by
+    18.7 million tons (5%). As we have been stressing in our work, the central government
+    last year shifted to no long
+  unit: pct
+  values:
+  - 381.5
+  - 35.7
+  - -9.0
+  - 18.7
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: China's electricity production totaled 658.4 billion kilowatt hours
+    last month. This has marked a month-on-month decline of 58.9 billion kilowatt
+    hours (-8%) but is up year-on-year by 49.8 billion kilowatt hours (8%).
+  unit: pct
+  values:
+  - 658.4
+  - 58.9
+  - -8.0
+  - 49.8
+  - 8.0
+- section: Main
+  section_type: null
+  source_line: 'Coal-derived electricity generation continues to make up the bulk
+    of the nation''s electricity production and totaled 449.4 billion kilowatt hours
+    last month. This has marked a month-on-month decline of 65.2 billion kilowatt
+    hours (-13%) but is up year-on-year '
+  unit: pct
+  values:
+  - 449.4
+  - 65.2
+  - -13.0
+  - 48.6
+  - 12.0
 regions:
 - china
 - brazil

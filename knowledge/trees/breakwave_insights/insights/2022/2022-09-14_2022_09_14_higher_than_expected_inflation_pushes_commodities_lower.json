@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-09-14_2022_09_14_higher_than_expected_inflation_pushes_commodities_lower__root",
   "doc_id": "breakwave_insights_insights_2022-09-14_2022_09_14_higher_than_expected_inflation_pushes_commodities_lower",
   "parent_id": null,
-  "title": "Higher Than Expected Inflation Pushes Commodities Lower",
+  "title": "Higher than expected inflation pushes commodities lower",
   "section_path": [
-    "Higher Than Expected Inflation Pushes Commodities Lower"
+    "Higher than expected inflation pushes commodities lower"
   ],
-  "section_path_text": "Higher Than Expected Inflation Pushes Commodities Lower",
+  "section_path_text": "Higher than expected inflation pushes commodities lower",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nHigher than expected inflation in the US raised fears of further aggressive hikes by the Fed. Risk assets subsequently suffered, with commodities coming under pressure. Supply side issues softened the blow in several markets.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 728,
+  "token_count": 1145,
   "source_path": "reports/breakwave/2022/2022-09-14_higher-than-expected-inflation-pushes-commodities-lower.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/14/higher-than-expected-inflation-pushes-commodities-lower",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 726,
+      "token_count": 774,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-14_2022_09_14_higher_than_expected_inflation_pushes_commodities_lower__s02_linked_asset_2022_09_14_higher_than_expected_inflation_pushes_commodities_lower_img_1663106083434_288d509ef756_png",
+      "doc_id": "breakwave_insights_insights_2022-09-14_2022_09_14_higher_than_expected_inflation_pushes_commodities_lower",
+      "parent_id": "breakwave_insights_insights_2022-09-14_2022_09_14_higher_than_expected_inflation_pushes_commodities_lower__root",
+      "title": "Linked asset: 2022-09-14_higher-than-expected-inflation-pushes-commodities-lower_img_1663106083434_288d509ef756.png",
+      "section_path": [
+        "Linked asset: 2022-09-14_higher-than-expected-inflation-pushes-commodities-lower_img_1663106083434_288d509ef756.png"
+      ],
+      "section_path_text": "Linked asset: 2022-09-14_higher-than-expected-inflation-pushes-commodities-lower_img_1663106083434_288d509ef756.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-14_higher-than-expected-inflation-pushes-commodities-lower_img_1663106083434_288d509ef756.png\n\nLinked image asset: 2022-09-14_higher-than-expected-inflation-pushes-commodities-lower_img_1663106083434_288d509ef756.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 12-Sep Tue 13-Sep % chg Daily % chg Daily % chg\nccI 650.85 654.86 Brent crude 93.52 -0.5% Gold 1,702 -1.3%\nPrecious 599.01 590.82 -1.4% Thermal coal 439.35 Palladium 2,096 -10.3%\nIndustrials 377.30 375.96 -0.4% JKM LNG swaps 53.04 Iron Ore 104.6\nBulks 523.15 526.54 Copper 8,001 -1.0% Hogs 3,350\nAgs 377.45 384.06 Nickel 24,252 -1.1% Corn 412 -0.2%\nEnergy 1000.85 1005.86 Aluminium 2,301 Wheat 454 -0.1%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 329,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

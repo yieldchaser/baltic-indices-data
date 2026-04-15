@@ -25,7 +25,64 @@ keywords:
 - are
 - diesel
 - east
+linked_assets_discovered: 7
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 7
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: From a long-term perspective, Middle Eastern hydrocarbon net-liftings
+    appear to have passed a peak in 2018. While CPP, DPP and LNG are largely aligned
+    with 2018 average levels over recent months, crude net-liftings are still missing
+    1.5mbd over Q1 2022 relativ
+  unit: null
+  values:
+  - 2018.0
+  - 2018.0
+  - 1.5
+  - 2022.0
+  - 2018.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: Middle Eastern net-liftings of oil and gas vs 2018 average (mbd)
+  unit: null
+  values:
+  - 2018.0
+- section: Main
+  section_type: null
+  source_line: For European buyers, it is far from straightforward to forgo Russian
+    diesel. While we observed some rerouting and temporary floating of Russian diesel
+    cargoes loaded in March, pretty much all of this was ultimately discharged at
+    European ports. The Middle East
+  unit: null
+  values:
+  - 2018.0
+  - 2021.0
+  - 2018.0
+- section: Main
+  section_type: null
+  source_line: It should not be overlooked that the Middle East needs to retain some
+    middle distillates within the region - over the last six months more than 60%
+    of liftings stayed in the region or moved to Africa, mostly nearby markets at
+    the eastern coast. Over the same t
+  unit: pct
+  values:
+  - 60.0
+  - 390.0
+  - 630.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: Middle Eastern diesel and jet/kero liftings by destination - change
+    vs 2018 average (kbd)
+  unit: null
+  values:
+  - 2018.0
 regions:
 - china
 - brazil

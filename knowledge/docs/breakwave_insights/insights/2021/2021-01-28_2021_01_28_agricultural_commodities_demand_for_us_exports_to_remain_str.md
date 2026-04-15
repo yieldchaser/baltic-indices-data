@@ -26,7 +26,56 @@ keywords:
 - inventories
 - strong
 - exports
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The shortage of available containers in many export ports, especially
+    in China, could see increasing demand for dry bulk tonnage as a secondary effect.
+    There have been some suggestions that cargoes of US agricultural have been rejected
+    by the container carrier
+  unit: null
+  values:
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: A continued strong demand for imported soybeans in China could see
+    American inventories emptying, as the overseas demand would outstrip the US production.
+    The USDA also recently reduced their projections somewhat for the soybean production
+    in the 2020/21 seaso
+  unit: usd
+  values:
+  - 2020.0
+  - 21.0
+- section: Main
+  section_type: null
+  source_line: The strong Chinese demand, in combination with dwindling US inventories,
+    are also pushing prices at The Chicago Board of Trade to levels last seen in 2014,
+    after spending much of the last few years around the decade lows.
+  unit: null
+  values:
+  - 2014.0
+- section: Main
+  section_type: null
+  source_line: The USDA is expecting the US to import 35 million bushels in the 2020/21
+    season, which is the double of its previous projection and the highest since the
+    72 million in the 2013/14 season. There are also some analysts who are expecting
+    the imports to reach thos
+  unit: usd
+  values:
+  - 35.0
+  - 2020.0
+  - 21.0
+  - 72.0
+  - 2013.0
+  - 14.0
+  - 2.23
 regions:
 - china
 - brazil

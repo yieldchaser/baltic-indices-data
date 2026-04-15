@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2020-09-24_2020_09_24_shipping_stock_performance__root",
   "doc_id": "breakwave_insights_insights_2020-09-24_2020_09_24_shipping_stock_performance",
   "parent_id": null,
-  "title": "Shipping Stock Performance",
+  "title": "Shipping Equities: Another lost year",
   "section_path": [
-    "Shipping Stock Performance"
+    "Shipping Equities: Another lost year"
   ],
-  "section_path_text": "Shipping Stock Performance",
+  "section_path_text": "Shipping Equities: Another lost year",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\nThe US equity markets have had quite a year so far. The S&P 500 is currently at the same level it started the year at, while NASDAQ has outperformed and is showing a healthy return for the year so far. Both indices suffered heavy losses in the early part of the year and were down by 25 and 30 percent respectively in late March.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 664,
+  "token_count": 4864,
   "source_path": "reports/breakwave/2020/2020-09-24_shipping-stock-performance.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2020/9/24/shipping-stock-performance",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 662,
+      "token_count": 726,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2020-09-24_2020_09_24_shipping_stock_performance__s02_linked_asset_2020_09_24_shipping_stock_performance_img_ulfchart_764cb1050562_png",
+      "doc_id": "breakwave_insights_insights_2020-09-24_2020_09_24_shipping_stock_performance",
+      "parent_id": "breakwave_insights_insights_2020-09-24_2020_09_24_shipping_stock_performance__root",
+      "title": "Linked asset: 2020-09-24_shipping-stock-performance_img_ulfchart_764cb1050562.png",
+      "section_path": [
+        "Linked asset: 2020-09-24_shipping-stock-performance_img_ulfchart_764cb1050562.png"
+      ],
+      "section_path_text": "Linked asset: 2020-09-24_shipping-stock-performance_img_ulfchart_764cb1050562.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2020/assets/2020-09-24_shipping-stock-performance_img_ulfchart_764cb1050562.png\n\nLinked image asset: 2020-09-24_shipping-stock-performance_img_ulfchart_764cb1050562.png\n\nImage metadata: PNG 942x629 mode=RGBA\n\nOCR text:\nS&P500 and NASDAQ - Year to date performance (percent)\n40%\n30%\n20%\n10%\n0%\n1/2/2020 2/2/2020 3Mf™M20 4/2/2020 20 6/2/ 2 8/2/2020 9/2/2020\n-10%\n-20%\n-30%\n-40%\nNASDAQ: --=S&P500",
+      "keywords": [
+        "asset",
+        "image",
+        "nasdaq",
+        "p500",
+        "date",
+        "linked",
+        "m20",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 168,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2020-09-24_2020_09_24_shipping_stock_performance__s03_linked_asset_2020_09_24_shipping_stock_performance_img_image_asset_567f8fcfc5ca_jpeg",
+      "doc_id": "breakwave_insights_insights_2020-09-24_2020_09_24_shipping_stock_performance",
+      "parent_id": "breakwave_insights_insights_2020-09-24_2020_09_24_shipping_stock_performance__root",
+      "title": "Linked asset: 2020-09-24_shipping-stock-performance_img_image-asset_567f8fcfc5ca.jpeg",
+      "section_path": [
+        "Linked asset: 2020-09-24_shipping-stock-performance_img_image-asset_567f8fcfc5ca.jpeg"
+      ],
+      "section_path_text": "Linked asset: 2020-09-24_shipping-stock-performance_img_image-asset_567f8fcfc5ca.jpeg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2020/assets/2020-09-24_shipping-stock-performance_img_image-asset_567f8fcfc5ca.jpeg\n\nLinked image asset: 2020-09-24_shipping-stock-performance_img_image-asset_567f8fcfc5ca.jpeg\n\nImage metadata: JPEG 2500x4126 mode=RGB\n\nEmbedded info:\ndpi: (240, 240)\n\nOCR text:\nBr PS a\nBe aR i\n' 2\n% a Br oc a\nq cS Bice aie\n; i Range\nante 7 7a oe fase sc5! z canteen eit se } Bai acre exer\npester ARUN tanec\nAuras .",
+      "keywords": [
+        "capesize",
+        "meg",
+        "india",
+        "grain",
+        "gas",
+        "eee",
+        "eae",
+        "see"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 3915,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -25,7 +25,32 @@ keywords:
 - home
 - retail
 - various
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's June retail sales data has recently been released and has shown
+    year-on-year growth of 3.1%. This has once again come in lower than many expectations
+    and has been disappointing to many pundits. However, unlike in various other nations,
+    including in the
+  unit: pct
+  values:
+  - 3.1
+- section: Main
+  section_type: null
+  source_line: Remaining very significant to us is that, overall, Chinese consumers
+    continue to buy more goods than they did a year ago. In comparison, consumers
+    in the United States and various other nations continue to purchase less goods
+    than they did a year ago. Retail s
+  unit: null
+  values:
+  - 2009.0
 regions:
 - china
 - brazil

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-04-19_2023_04_19_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-04-19_2023_04_19_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix - Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix - Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix - Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nAccording to data released yesterday, the Chinese economic recovery is in full swing. The world's second-largest economy grew by 4.5 per cent during the first quarter of the year compared to the same period last year. The pace of the growth was the highest in a year and exceeded the consensus expectation of a four per cent expansion.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1258,
+  "token_count": 1587,
   "source_path": "reports/breakwave/2023/2023-04-19_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/19/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 266,
+      "token_count": 321,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-19_2023_04_19_shipfix_global_market_update__s06_linked_asset_2023_04_19_shipfix_global_market_update_img_unnamed_2023_04_19t125950980_ddfa71f8f520_png",
+      "doc_id": "breakwave_insights_insights_2023-04-19_2023_04_19_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-04-19_2023_04_19_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-04-19_shipfix-global-market-update_img_unnamed-2023-04-19t125950980_ddfa71f8f520.png",
+      "section_path": [
+        "Linked asset: 2023-04-19_shipfix-global-market-update_img_unnamed-2023-04-19t125950980_ddfa71f8f520.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-19_shipfix-global-market-update_img_unnamed-2023-04-19t125950980_ddfa71f8f520.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-19_shipfix-global-market-update_img_unnamed-2023-04-19t125950980_ddfa71f8f520.png\n\nLinked image asset: 2023-04-19_shipfix-global-market-update_img_unnamed-2023-04-19t125950980_ddfa71f8f520.png\n\nImage metadata: PNG 1092x618 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Copper Shipped as Dry Bulk by Destination\n© Restofthe world ™§ China\n25\n2\n15\no\n2\ns\ns\n= 1\n0.5\n0\nOct-21 Nov-21 Dec-21 Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jun-22 Jul22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 Jan-23 Feb-23 Mar-23 Apr-23\nData source: Shipfix",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "source",
+        "apr-22",
+        "apr-23",
+        "aug-22",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-10-18_2022_10_18_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2022-10-18_2022_10_18_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nUS economic data released last week continued to strengthen the case for the Federal Reserve to maintain its current aggressive stance on interest rate hikes. Stronger-than-expected consumer confidence and labour markets are likely to produce another 75 basis point increase at the US central bank's next rate-setting meeting. A rebound in US producer prices also suggested that the battle against high inflation may be longer than initially expected.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1387,
+  "token_count": 1628,
   "source_path": "reports/breakwave/2022/2022-10-18_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/10/18/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 260,
+      "token_count": 298,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-18_2022_10_18_shipfix_global_market_update__s06_linked_asset_2022_10_18_shipfix_global_market_update_img_unnamed289729_8e319fa50c7f_png",
+      "doc_id": "breakwave_insights_insights_2022-10-18_2022_10_18_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-10-18_2022_10_18_shipfix_global_market_update__root",
+      "title": "Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png",
+      "section_path": [
+        "Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png"
+      ],
+      "section_path_text": "Linked asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png\n\nLinked image asset: 2022-10-18_shipfix-global-market-update_img_unnamed289729_8e319fa50c7f.png\n\nImage metadata: PNG 1118x470 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Cargo Order Volumes (TCT & Voyage) for South African Coal Discharging in Europe ©\nSY 3Y All\ne 400k\n8\n)\ntl a tad | 1 ue alate Il | f ! Hil : | |\n2019 at 2020 aa 2021 tal 2022 ne",
+      "keywords": [
+        "europe",
+        "coal",
+        "asset",
+        "image",
+        "african",
+        "alate",
+        "all",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 171,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

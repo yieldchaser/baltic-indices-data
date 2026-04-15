@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-02-15_2023_02_15_gibsons_tanker_market_report__root",
   "doc_id": "breakwave_insights_insights_2023-02-15_2023_02_15_gibsons_tanker_market_report",
   "parent_id": null,
-  "title": "Gibsons Tanker Market Report",
+  "title": "Gibson's Tanker Market Report",
   "section_path": [
-    "Gibsons Tanker Market Report"
+    "Gibson's Tanker Market Report"
   ],
-  "section_path_text": "Gibsons Tanker Market Report",
+  "section_path_text": "Gibson's Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nIn recent years we have paid close attention to the new 650kbd Dangote refinery currently under construction. The project was initiated nearly a decade ago and was originally scheduled to come online in 2019. However, as is the case with most grassroots refineries, the scale of the project coupled with typical logistical delays; which were further amplified by disruptions caused by the pandemic meant that the start-up has been pushed back.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 644,
+  "token_count": 898,
   "source_path": "reports/breakwave/2023/2023-02-15_gibsons-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/2/15/gibsons-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 642,
+      "token_count": 680,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-15_2023_02_15_gibsons_tanker_market_report__s02_linked_asset_2023_02_15_gibsons_tanker_market_report_img_128429_f7319bbad3bb_png",
+      "doc_id": "breakwave_insights_insights_2023-02-15_2023_02_15_gibsons_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2023-02-15_2023_02_15_gibsons_tanker_market_report__root",
+      "title": "Linked asset: 2023-02-15_gibsons-tanker-market-report_img_128429_f7319bbad3bb.png",
+      "section_path": [
+        "Linked asset: 2023-02-15_gibsons-tanker-market-report_img_128429_f7319bbad3bb.png"
+      ],
+      "section_path_text": "Linked asset: 2023-02-15_gibsons-tanker-market-report_img_128429_f7319bbad3bb.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-15_gibsons-tanker-market-report_img_128429_f7319bbad3bb.png\n\nLinked image asset: 2023-02-15_gibsons-tanker-market-report_img_128429_f7319bbad3bb.png\n\nImage metadata: PNG 466x455 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nWest Africa crude exports by key destinations (mbd)\n6.00 m Other Non OECD Asia © China\nIndia @ Latin America\nAfrica mUS\n5.00\n@ Europe OECD\n4.00 ao\n3.00 a\n2.00 i a\n--- po\npT\n2015 2016 2017 2018 2019 2020 2021 2022",
+      "keywords": [
+        "china",
+        "west_africa",
+        "europe",
+        "india",
+        "africa",
+        "asset",
+        "image",
+        "oecd"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 185,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

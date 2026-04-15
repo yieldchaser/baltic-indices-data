@@ -25,7 +25,81 @@ keywords:
 - its
 - seen
 - very
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we have continued to highlight in our Weekly China Reports, China's
+    central government in 2019 made a very significant decision to begin limiting
+    lending, but that decision was reversed early last year when the economy was temporarily
+    crippled by the nation
+  unit: null
+  values:
+  - 2019.0
+  - 2020.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: '2019 was a year of prudence and real reform in China, but for the
+    near term we expect that domestic reforms and sacrifice will continue to be largely
+    abandoned. Remaining very noteworthy to us is that China''s new lending in 2019
+    increased year-on-year by only '
+  unit: pct
+  values:
+  - 2019.0
+  - 2019.0
+  - 4.0
+  - 20.0
+  - 2018.0
+  - 2020.0
+  - 3.0
+  - 2.0
+  - 69.0
+  - 67.0
+- section: Main
+  section_type: null
+  source_line: Most recently, December 2020 saw new lending grow year-on-year by 11%.
+    This has marked the strongest growth seen since September and continues to signal
+    post-coronavirus support. Also of note is that outstanding loan growth last month
+    came in again at 12.8%. T
+  unit: pct
+  values:
+  - 2020.0
+  - 11.0
+  - 12.8
+  - 13.0
+  - 2019.0
+  - 2020.0
+  - 12.4
+  - 2001.0
+- section: Main
+  section_type: null
+  source_line: It was very significant that the government allowed outstanding loan
+    growth during July 2019 through February 2020 to fall to its lowest level since
+    2001. It also, of course, has been very significant that the government reversed
+    course starting in March 2020.
+  unit: null
+  values:
+  - 2019.0
+  - 2020.0
+  - 2001.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: In recent work we have discussed how new coronavirus cases have been
+    rising again in China, but the daily case counts are still only slightly above
+    100, and overall China is emerging from the world's coronavirus crisis better
+    than all other major economies. Th
+  unit: null
+  values:
+  - 100.0
+  - 2021.0
 regions:
 - china
 - brazil

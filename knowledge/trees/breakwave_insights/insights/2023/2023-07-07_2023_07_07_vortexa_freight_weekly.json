@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 485,
+  "token_count": 1164,
   "source_path": "reports/breakwave/2023/2023-07-07_vortexa-freight-weekly.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/7/7/vortexa-freight-weekly",
   "children": [
@@ -67,7 +67,7 @@
       "section_path_text": "VLCC rates under pressure, signalling weaker Chinese demand?",
       "level": 1,
       "ordinal": 2,
-      "summary": "Chart: China crude imports (LHS), vs VLCC utilisation to Asia (RHS)\nAll trademark VLCC rates across the globe have dropped markedly from recent peaks observed in late June. More specifically TD3C, TD15 as well as TD22 fell by 32%, 25% and 20% respectively.",
+      "summary": "Image reference: unnamed - 2023-07-07T131048.859.png | assets/2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131048859_fa060e204c6b.png\nChart: China crude imports (LHS), vs VLCC utilisation to Asia (RHS)\nAll trademark VLCC rates across the globe have dropped markedly from recent peaks observed in late June. More specifically TD3C, TD15 as well as TD22 fell by 32%, 25% and 20% respectively.",
       "keywords": [
         "vlcc",
         "china",
@@ -80,7 +80,7 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 199,
+      "token_count": 257,
       "section_type": null,
       "children": []
     },
@@ -95,7 +95,7 @@
       "section_path_text": "What is the impact of new EU sanctions on crude tankers?",
       "level": 1,
       "ordinal": 3,
-      "summary": "Suezmaxes ballast distribution after discharging Russia crude barrels\nThe introduction of the EU sanctions programme against Russia confirmed a ban on EU ports for tankers that have undertaken \"dark\" STS transfers or if are suspected to be in breach of the price cap mechanism, or if they do not notify authorities at least 48 hours in advance about STS within a member states' Exclusive Economic Zone (EEZ). Looking however, at the fleet behaviour of vessels trading in Russia, the effect of the sanctions is expected to be minimal.",
+      "summary": "Image reference: unnamed - 2023-07-07T131223.315.png | assets/2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131223315_609cb9b6186c.png\nSuezmaxes ballast distribution after discharging Russia crude barrels\nThe introduction of the EU sanctions programme against Russia confirmed a ban on EU ports for tankers that have undertaken \"dark\" STS transfers or if are suspected to be in breach of the price cap mechanism, or if they do not notify authorities at least 48 hours in advance about STS within a member states' Exclusive Economic Zone (EEZ). Looking however, at the fleet behaviour of vessels trading in Russia, the effect of the sanctions is expected to be minimal.",
       "keywords": [
         "suezmax",
         "atlantic",
@@ -108,8 +108,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 226,
+      "token_count": 285,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-07_2023_07_07_vortexa_freight_weekly__s04_linked_asset_2023_07_07_vortexa_freight_weekly_img_unnamed_2023_07_07t131048859_fa060e204c6b_png",
+      "doc_id": "breakwave_insights_insights_2023-07-07_2023_07_07_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-07-07_2023_07_07_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131048859_fa060e204c6b.png",
+      "section_path": [
+        "Linked asset: 2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131048859_fa060e204c6b.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131048859_fa060e204c6b.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131048859_fa060e204c6b.png\n\nLinked image asset: 2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131048859_fa060e204c6b.png\n\nImage metadata: PNG 964x702 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n14 380\nrR 360\n12 F a / \\\n. pa f VN ™N- 340\n10 .",
+      "keywords": [
+        "vlcc",
+        "china",
+        "asset",
+        "image",
+        "apr-22",
+        "apr-23",
+        "chinese",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 243,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-07_2023_07_07_vortexa_freight_weekly__s05_linked_asset_2023_07_07_vortexa_freight_weekly_img_unnamed_2023_07_07t131223315_609cb9b6186c_png",
+      "doc_id": "breakwave_insights_insights_2023-07-07_2023_07_07_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-07-07_2023_07_07_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131223315_609cb9b6186c.png",
+      "section_path": [
+        "Linked asset: 2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131223315_609cb9b6186c.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131223315_609cb9b6186c.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131223315_609cb9b6186c.png\n\nLinked image asset: 2023-07-07_vortexa-freight-weekly_img_unnamed-2023-07-07t131223315_609cb9b6186c.png\n\nImage metadata: PNG 736x540 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n60\nEast Med & Other consists\nof STS, waypoint and\n50 undetermined destinations\na\n40 |\nwn\n& | l =|\noO\nS |\n© 30 T |\n-\nte) | |\n2 u l\n20\n10 | ! | | | | \\ l |\n| | | | | ia\nmm UPeneeeneeean\nJan-21 May-21 Sep-21 Jan-22 May-22 Sep22 Jan-23 May-23\nmw Russian ports Persian Gulf East Med im Other",
+      "keywords": [
+        "asset",
+        "east",
+        "image",
+        "med",
+        "other",
+        "consists",
+        "destinations",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

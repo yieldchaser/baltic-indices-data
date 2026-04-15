@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-06-01_2022_06_01_crude_oil_gains_after_eu_bans_russian_oil_imports__root",
   "doc_id": "breakwave_insights_insights_2022-06-01_2022_06_01_crude_oil_gains_after_eu_bans_russian_oil_imports",
   "parent_id": null,
-  "title": "Crude Oil Gains After Eu Bans Russian Oil Imports",
+  "title": "Crude oil gains after EU bans Russian oil imports",
   "section_path": [
-    "Crude Oil Gains After Eu Bans Russian Oil Imports"
+    "Crude oil gains after EU bans Russian oil imports"
   ],
-  "section_path_text": "Crude Oil Gains After Eu Bans Russian Oil Imports",
+  "section_path_text": "Crude oil gains after EU bans Russian oil imports",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nEnergy markets gained amid concerns of further supply disruptions. That was offset by concerns of inflation-induced slowdown in economic activity, which weighed on sentiment across metals and agriculture sectors. Crude oil prices jumped sharply as the European Union finally managed to agree to a sanction package that includes a ban on Russian oil imports.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 767,
+  "token_count": 1220,
   "source_path": "reports/breakwave/2022/2022-06-01_crude-oil-gains-after-eu-bans-russian-oil-imports.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/6/1/crude-oil-gains-after-eu-bans-russian-oil-imports",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 765,
+      "token_count": 818,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-01_2022_06_01_crude_oil_gains_after_eu_bans_russian_oil_imports__s02_linked_asset_2022_06_01_crude_oil_gains_after_eu_bans_russian_oil_imports_img_1654034489876_08b0dd10e835_png",
+      "doc_id": "breakwave_insights_insights_2022-06-01_2022_06_01_crude_oil_gains_after_eu_bans_russian_oil_imports",
+      "parent_id": "breakwave_insights_insights_2022-06-01_2022_06_01_crude_oil_gains_after_eu_bans_russian_oil_imports__root",
+      "title": "Linked asset: 2022-06-01_crude-oil-gains-after-eu-bans-russian-oil-imports_img_1654034489876_08b0dd10e835.png",
+      "section_path": [
+        "Linked asset: 2022-06-01_crude-oil-gains-after-eu-bans-russian-oil-imports_img_1654034489876_08b0dd10e835.png"
+      ],
+      "section_path_text": "Linked asset: 2022-06-01_crude-oil-gains-after-eu-bans-russian-oil-imports_img_1654034489876_08b0dd10e835.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-01_crude-oil-gains-after-eu-bans-russian-oil-imports_img_1654034489876_08b0dd10e835.png\n\nLinked image asset: 2022-06-01_crude-oil-gains-after-eu-bans-russian-oil-imports_img_1654034489876_08b0dd10e835.png\n\nImage metadata: PNG 1556x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 30-May Tue 31-May % chg Daily % chg Daily % chg\nCCI 575.93 579.31 Brent crude 116.4 -1.0% Gold 1,840 -0.8%\nPrecious 634.30 628.81 -0.9% Thermal coal 427.00 Palladium 1,995 -14.6%\nIndustrials 450.93 444.61 -1.4% JKM LNG swaps 24.08 Iron Ore 134.2\nBulks 640.87 638.23 -0.4% Copper 9,452 -1.0% Hogs 2,400 0.0%\nAgs 348.11 347.19 -0.3% Nickel 28,348 -3.1% Corn 450 0.0%\nEnergy 826.79 844.36 Aluminium 2,764 -3.6% Wheat 525 -0.2%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 355,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

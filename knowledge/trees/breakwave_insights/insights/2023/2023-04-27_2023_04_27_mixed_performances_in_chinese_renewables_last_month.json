@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__root",
   "doc_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month",
   "parent_id": null,
-  "title": "Mixed Performances In Chinese Renewables Last Month",
+  "title": "Mixed Performances in Chinese Renewables Last Month",
   "section_path": [
-    "Mixed Performances In Chinese Renewables Last Month"
+    "Mixed Performances in Chinese Renewables Last Month"
   ],
-  "section_path_text": "Mixed Performances In Chinese Renewables Last Month",
+  "section_path_text": "Mixed Performances in Chinese Renewables Last Month",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nAs we discussed in Commodore's most recent Weekly Dry Bulk Report, China's hydropower production totaled only 68.4 billion kilowatt hours last month. This is the same amount that was produced in February and is down year-on-year by 12.1 billion kilowatt hours (-15%). This weakness has contributed to significant strength in China's thermal coal burn.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 261,
+  "token_count": 1285,
   "source_path": "reports/breakwave/2023/2023-04-27_mixed-performances-in-chinese-renewables-last-month.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/27/mixed-performances-in-chinese-renewables-last-month",
   "children": [
@@ -48,14 +48,126 @@
         "kilowatt",
         "billion",
         "hours",
+        "chart",
         "february",
-        "production",
-        "totaled"
+        "image"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 259,
+      "token_count": 449,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__s02_linked_asset_2023_04_27_mixed_performances_in_chinese_renewables_last_month_img_chart1287929_ea0abf1d1e11_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month",
+      "parent_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__root",
+      "title": "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart1287929_ea0abf1d1e11.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart1287929_ea0abf1d1e11.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart1287929_ea0abf1d1e11.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart1287929_ea0abf1d1e11.jpg\n\nLinked image asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart1287929_ea0abf1d1e11.jpg\n\nImage metadata: JPEG 1337x390 mode=RGB\n\nOCR text:\nChinese Hydropower Production (2018 - 2023)\n160kwh\n120kwh\n80kwh\n40kwh\n2018 2019 2020 2021 2022 2023\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "china",
+        "kwh",
+        "asset",
+        "image",
+        "billion",
+        "chinese",
+        "hours",
+        "hydropower"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 159,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__s03_linked_asset_2023_04_27_mixed_performances_in_chinese_renewables_last_month_img_chart2286729_382e7a8861d0_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month",
+      "parent_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__root",
+      "title": "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart2286729_382e7a8861d0.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart2286729_382e7a8861d0.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart2286729_382e7a8861d0.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart2286729_382e7a8861d0.jpg\n\nLinked image asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart2286729_382e7a8861d0.jpg\n\nImage metadata: JPEG 1337x390 mode=RGB\n\nOCR text:\nChinese Wind Power Production (2018 - 2023)\n80kwh\n60kwh\n40kwh\n20kwh\nOkwh\n2018 2019 2020 2021 2022 2023\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "china",
+        "kwh",
+        "asset",
+        "image",
+        "billion",
+        "chinese",
+        "hours",
+        "jpeg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 159,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__s04_linked_asset_2023_04_27_mixed_performances_in_chinese_renewables_last_month_img_chart3284729_5932ece7fc0f_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month",
+      "parent_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__root",
+      "title": "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart3284729_5932ece7fc0f.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart3284729_5932ece7fc0f.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart3284729_5932ece7fc0f.jpg",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart3284729_5932ece7fc0f.jpg\n\nLinked image asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart3284729_5932ece7fc0f.jpg\n\nImage metadata: JPEG 1338x393 mode=RGB\n\nOCR text:\nChinese Nuclear Power Production (2018 - 2023)\nLOK Wm\n30kwh ee ee en eee ee ee ee ee eee eee RRR ERE\n20kwh -_-_ pee a BEEEBEEREEEE a BREEERBERERERERESE BEEEREERBREEREEEE E\n10kwh\n2018 2019 2020 2021 2022 2023\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "china",
+        "eee",
+        "kwh",
+        "asset",
+        "image",
+        "beeebeereeee",
+        "beeereerbreereeee",
+        "billion"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__s05_linked_asset_2023_04_27_mixed_performances_in_chinese_renewables_last_month_img_chart4282029_c171cc9c703b_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month",
+      "parent_id": "breakwave_insights_insights_2023-04-27_2023_04_27_mixed_performances_in_chinese_renewables_last_month__root",
+      "title": "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart4282029_c171cc9c703b.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart4282029_c171cc9c703b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart4282029_c171cc9c703b.jpg",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart4282029_c171cc9c703b.jpg\n\nLinked image asset: 2023-04-27_mixed-performances-in-chinese-renewables-last-month_img_chart4282029_c171cc9c703b.jpg\n\nImage metadata: JPEG 1338x393 mode=RGB\n\nOCR text:\nChinese Solar Power Production (2018 - 2023)\n25kwh\n20kwh\n15kwh\n10kwh\n5kwh\n2018 2019 2020 2021 2022 2023\nUnit: Billion kilowatt hours .",
+      "keywords": [
+        "china",
+        "kwh",
+        "asset",
+        "image",
+        "billion",
+        "chinese",
+        "hours",
+        "jpeg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 158,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

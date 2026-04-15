@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-09-29_2022_09_29_geopolitical_risks_push_energy_prices_higher__root",
   "doc_id": "breakwave_insights_insights_2022-09-29_2022_09_29_geopolitical_risks_push_energy_prices_higher",
   "parent_id": null,
-  "title": "Geopolitical Risks Push Energy Prices Higher",
+  "title": "Geopolitical risks push energy prices higher",
   "section_path": [
-    "Geopolitical Risks Push Energy Prices Higher"
+    "Geopolitical risks push energy prices higher"
   ],
-  "section_path_text": "Geopolitical Risks Push Energy Prices Higher",
+  "section_path_text": "Geopolitical risks push energy prices higher",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA weaker USD helped boost investor appetite in commodity markets. Rising geopolitical risks were also front of mind following damage to energy infrastructure earlier this week. European natural gas extended gains after Russia warned of further risks to supply.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 710,
+  "token_count": 1113,
   "source_path": "reports/breakwave/2022/2022-09-29_geopolitical-risks-push-energy-prices-higher.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/29/geopolitical-risks-push-energy-prices-higher",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 708,
+      "token_count": 754,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-29_2022_09_29_geopolitical_risks_push_energy_prices_higher__s02_linked_asset_2022_09_29_geopolitical_risks_push_energy_prices_higher_img_1664403503894_137f8029d673_png",
+      "doc_id": "breakwave_insights_insights_2022-09-29_2022_09_29_geopolitical_risks_push_energy_prices_higher",
+      "parent_id": "breakwave_insights_insights_2022-09-29_2022_09_29_geopolitical_risks_push_energy_prices_higher__root",
+      "title": "Linked asset: 2022-09-29_geopolitical-risks-push-energy-prices-higher_img_1664403503894_137f8029d673.png",
+      "section_path": [
+        "Linked asset: 2022-09-29_geopolitical-risks-push-energy-prices-higher_img_1664403503894_137f8029d673.png"
+      ],
+      "section_path_text": "Linked asset: 2022-09-29_geopolitical-risks-push-energy-prices-higher_img_1664403503894_137f8029d673.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-29_geopolitical-risks-push-energy-prices-higher_img_1664403503894_137f8029d673.png\n\nLinked image asset: 2022-09-29_geopolitical-risks-push-energy-prices-higher_img_1664403503894_137f8029d673.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nTue 27-Sep Wed 28-Sep % chg Daily % chg Daily % chg\nCCI 644.16 647.12 Brent crude 89.28 Gold 1,660\nPrecious 565.40 576.30 Thermal coal 436.00 -0.4% Palladium 2,151 -8.0%\nIndustrials 345.47 349.31 JKM LNG swaps) 41.21 Iron Ore 99.6 -0.1%\nBulks 518.15 519.00 Copper 7,530 Hogs 3,300 -1.5%\nAgs 373.89 369.90 -1.1% Nickel 21,696 -0.1% Corn 393 -0.3%\nEnergy 1000.95 1009.14 Aluminium 2,117 Wheat 424 -0.3%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 319,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

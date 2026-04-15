@@ -24,7 +24,55 @@ keywords:
 - not
 - when
 - central
+linked_assets_discovered: 5
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 5
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: The Bank of England should be worried about Russia
+  section_type: null
+  source_line: I spent an hour and a half, on a Saturday no less, writing a deep geopolitical/economic
+    thesis about the impact of Prigozhin's mutiny, which was turned into digital confetti
+    by the afternoon when the warlord yielded. Starting a ‘march' on the Kremlin with
+    less
+  unit: null
+  values:
+  - 25000.0
+- section: The Bank of England should be worried about Russia
+  section_type: null
+  source_line: Last week, British consumers were faced with a shock from the Bank
+    of England, which hiked rates twice. According to the FT , if rates go up to 6%
+    by the end of the year (which is what markets expect), the average mortgage would
+    go up by £2900 per annum. We po
+  unit: pct
+  values:
+  - 6.0
+  - 2900.0
+- section: The Bank of England should be worried about Russia
+  section_type: null
+  source_line: Russian politics is all about the relentless projection of strength.
+    Any Russian leader who backed down quickly fell from power. Czar Nicolas was defeated
+    in WWI which cost him his throne and his life. Khrushchev backed down in the Cuban
+    Missile Crisis in 1962
+  unit: null
+  values:
+  - 1962.0
+  - 1964.0
+  - 1987.0
+  - 1989.0
+  - 1997.0
+- section: The Bank of England should be worried about Russia
+  section_type: null
+  source_line: Sticky inflation is probably the key risk for 2023. The biggest economic
+    and financial concern from further Russian instability is that supply chain breakdowns
+    could lead to a fresh inflationary cycle, at a time when we are not nearly done
+    fighting the previou
+  unit: null
+  values:
+  - 2023.0
 regions:
 - china
 - brazil

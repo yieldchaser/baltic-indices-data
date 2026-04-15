@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-09-22_2022_09_22_more_improvement_in_china__root",
   "doc_id": "breakwave_insights_insights_2022-09-22_2022_09_22_more_improvement_in_china",
   "parent_id": null,
-  "title": "More Improvement In China",
+  "title": "More Improvement in China",
   "section_path": [
-    "More Improvement In China"
+    "More Improvement in China"
   ],
-  "section_path_text": "More Improvement In China",
+  "section_path_text": "More Improvement in China",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nIn our Weekly Dry Bulk Report published two weeks ago, we highlighted how China's iron ore port stockpiles finally fell after previously rising for ten straight weeks, and also highlighted how steel production in China continues to rise. New last week is that China's iron ore port stockpiles fell further, while steel output has also increased even further. Chinese iron ore port stockpiles ended last week at 140.3 million tons, which is down week-on-week by 1.8 million tons (-1%).",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 327,
+  "token_count": 744,
   "source_path": "reports/breakwave/2022/2022-09-22_more-improvement-in-china.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/22/more-improvement-in-china",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 325,
+      "token_count": 403,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-22_2022_09_22_more_improvement_in_china__s02_linked_asset_2022_09_22_more_improvement_in_china_img_chart1285029_f839ddc01800_jpg",
+      "doc_id": "breakwave_insights_insights_2022-09-22_2022_09_22_more_improvement_in_china",
+      "parent_id": "breakwave_insights_insights_2022-09-22_2022_09_22_more_improvement_in_china__root",
+      "title": "Linked asset: 2022-09-22_more-improvement-in-china_img_chart1285029_f839ddc01800.jpg",
+      "section_path": [
+        "Linked asset: 2022-09-22_more-improvement-in-china_img_chart1285029_f839ddc01800.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-09-22_more-improvement-in-china_img_chart1285029_f839ddc01800.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-22_more-improvement-in-china_img_chart1285029_f839ddc01800.jpg\n\nLinked image asset: 2022-09-22_more-improvement-in-china_img_chart1285029_f839ddc01800.jpg\n\nImage metadata: JPEG 678x254 mode=RGB\n\nOCR text:\nlron Ore Stockpiles at Chinese Ports (July 2022 - September 2022)\n150mt\n140mt\n130mt\n120mt\nJul 29 Aug 5 Aug12 Aug19 Aug 26 Sep 2 Sep 9 Sep 16",
+      "keywords": [
+        "china",
+        "sep",
+        "asset",
+        "aug",
+        "image",
+        "aug12",
+        "aug19",
+        "chinese"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 138,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-22_2022_09_22_more_improvement_in_china__s03_linked_asset_2022_09_22_more_improvement_in_china_img_chart2284329_c124bd47b983_jpg",
+      "doc_id": "breakwave_insights_insights_2022-09-22_2022_09_22_more_improvement_in_china",
+      "parent_id": "breakwave_insights_insights_2022-09-22_2022_09_22_more_improvement_in_china__root",
+      "title": "Linked asset: 2022-09-22_more-improvement-in-china_img_chart2284329_c124bd47b983.jpg",
+      "section_path": [
+        "Linked asset: 2022-09-22_more-improvement-in-china_img_chart2284329_c124bd47b983.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-09-22_more-improvement-in-china_img_chart2284329_c124bd47b983.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-22_more-improvement-in-china_img_chart2284329_c124bd47b983.jpg\n\nLinked image asset: 2022-09-22_more-improvement-in-china_img_chart2284329_c124bd47b983.jpg\n\nImage metadata: JPEG 679x258 mode=RGB\n\nOCR text:\nDaily Crude Steel Output Average at Large and Medium-Sized Chinese Steel Mills\n2.40mt\n2.20mt\n2.00mt\n1.80mt\n1.60mt-_ AS _\nSep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep",
+      "keywords": [
+        "china",
+        "steel",
+        "asset",
+        "image",
+        "sep",
+        "apr",
+        "aug",
+        "average"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

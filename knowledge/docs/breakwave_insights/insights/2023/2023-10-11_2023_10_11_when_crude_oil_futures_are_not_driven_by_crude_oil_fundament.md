@@ -28,7 +28,100 @@ keywords:
 - product
 - oil
 - exports
+linked_assets_discovered: 6
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 6
 market_tone: constructive
+numeric_observation_count: 8
+numeric_observations:
+- section: We try to shed some light into the recent selloff in crude oil at a time
+    of rising geopolitical risks. Ample seaborne product supplies play a crucial role.
+  section_type: null
+  source_line: With a fresh war in the Middle East, crude oil futures are on a roller-coaster
+    ride. But except for a marginal $2/b post-war increase, the story is actually
+    that oil prices have retreated markedly after the failed quest for the $100/b
+    threshold. Has anything c
+  unit: usd
+  values:
+  - 2.0
+  - 100.0
+- section: We try to shed some light into the recent selloff in crude oil at a time
+    of rising geopolitical risks. Ample seaborne product supplies play a crucial role.
+  section_type: null
+  source_line: At least from a narrow look at crude fundamentals the answer is probably
+    no. OPEC+ curtailments are still keeping global seaborne crude supplies at very
+    low levels. Not even record US exports can make up for that. Average exports since
+    August from all countrie
+  unit: null
+  values:
+  - 1.2
+- section: We try to shed some light into the recent selloff in crude oil at a time
+    of rising geopolitical risks. Ample seaborne product supplies play a crucial role.
+  section_type: null
+  source_line: According to Vortexa onshore inventory data for 112 countries, crude
+    stocks are at a 15-month low, after having drawn by an average 1.5mbd over the
+    last ten weeks. With crude on the water also declining, refiners are evidently
+    struggling to secure sufficient f
+  unit: null
+  values:
+  - 112.0
+  - 15.0
+  - 1.5
+- section: We try to shed some light into the recent selloff in crude oil at a time
+    of rising geopolitical risks. Ample seaborne product supplies play a crucial role.
+  section_type: null
+  source_line: 'This is where the less direct parameters come into play. Hedge funds
+    and other money managers have sold more than 6mbd - roughly equivalent to current
+    Saudi exports - in CME and ICE crude futures and options contracts over the five
+    trading days ending October '
+  unit: null
+  values:
+  - 6.0
+  - 3.0
+- section: We try to shed some light into the recent selloff in crude oil at a time
+    of rising geopolitical risks. Ample seaborne product supplies play a crucial role.
+  section_type: null
+  source_line: But the crucial factor is likely that product markets have been overwhelmed
+    by the flood of clean product exports over August and September (see left-hand
+    chart above), with strong contributions from both gasoline and diesel. This high
+    level of seaborne suppli
+  unit: null
+  values:
+  - 5.0
+- section: We try to shed some light into the recent selloff in crude oil at a time
+    of rising geopolitical risks. Ample seaborne product supplies play a crucial role.
+  section_type: null
+  source_line: As a side note, OPEC+ countries are a key contributor to surging global
+    product exports - at the same time they are curtailing crude supplies. Supported
+    by new grassroot refineries in Kuwait, Oman, Saudi Arabia, and probably next year
+    Nigeria, the 10mbd mark f
+  unit: null
+  values:
+  - 10.0
+  - 2024.0
+  - 26.0
+- section: We try to shed some light into the recent selloff in crude oil at a time
+    of rising geopolitical risks. Ample seaborne product supplies play a crucial role.
+  section_type: null
+  source_line: 'Now where will prices head from here onwards? Hard to tell as usual,
+    but a further run to the $100/b mark should definitely not be excluded as an option.
+    Refinery maintenance may help to eat through the current product surplus. Underlying
+    oil demand is widely '
+  unit: usd
+  values:
+  - 100.0
+- section: We try to shed some light into the recent selloff in crude oil at a time
+    of rising geopolitical risks. Ample seaborne product supplies play a crucial role.
+  section_type: null
+  source_line: And then there is of course a wild mix of geopolitical risks. The Russian
+    gasoline and diesel export ban, which does not appear to be fully lifted, was
+    just another reminder of risks in that part of the world. And while we consider
+    a spreading of the current I
+  unit: null
+  values:
+  - 21.0
 regions:
 - china
 - brazil

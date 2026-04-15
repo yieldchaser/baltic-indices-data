@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2021-05-08_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping__root",
   "doc_id": "breakwave_insights_insights_2021-05-08_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping",
   "parent_id": null,
-  "title": "The Rise Of Data Driven Decisions In Tramp Shipping",
+  "title": "The Rise of Data-Driven Decisions in Tramp Shipping",
   "section_path": [
-    "The Rise Of Data Driven Decisions In Tramp Shipping"
+    "The Rise of Data-Driven Decisions in Tramp Shipping"
   ],
-  "section_path_text": "The Rise Of Data Driven Decisions In Tramp Shipping",
+  "section_path_text": "The Rise of Data-Driven Decisions in Tramp Shipping",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nby Niclas Priess*\n\"If a man knows not to which port he sails, no wind is favorable.\" - Seneca\nAlthough this quote is two thousand years old, its relevance in the context of contemporary business decisions and related data consumption is undeniable. Growth in data capture from increases in the number of connected devices and sensors has led to an explosion in the size of data sets and a resulting myriad of data, analytics, and machine learning/AI platforms. Today, there is nothing novel in stating that data sets are growing and that there is no shortage of evidence that data has become paramount to business success.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1944,
+  "token_count": 2463,
   "source_path": "reports/breakwave/2021/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2021/5/8/the-rise-of-data-driven-decisions-in-tramp-shipping",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1942,
+      "token_count": 2023,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-05-08_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping__s02_linked_asset_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping_img_a1_b6ba2339ca3e_png",
+      "doc_id": "breakwave_insights_insights_2021-05-08_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping",
+      "parent_id": "breakwave_insights_insights_2021-05-08_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping__root",
+      "title": "Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png",
+      "section_path": [
+        "Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png"
+      ],
+      "section_path_text": "Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png\n\nLinked image asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png\n\nImage metadata: PNG 1064x636 mode=RGB\n\nOCR text:\nData Adoption Ladder\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-\nMachine Learning & Al\n(Python / TensorFlow)\nData Science\n(Python / R)\nStatistics 2\n(R / Excel) &\n°\nSimple Arithmetics a. (Microsoft Excel) s\nStatic Formats\n(PDF, email)\nPhone\nconversations",
+      "keywords": [
+        "asset",
+        "data",
+        "excel",
+        "image",
+        "python",
+        "adoption",
+        "arithmetics",
+        "conversations"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 174,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-05-08_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping__s03_linked_asset_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping_img_a2_f34e166e108e_png",
+      "doc_id": "breakwave_insights_insights_2021-05-08_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping",
+      "parent_id": "breakwave_insights_insights_2021-05-08_2021_05_08_the_rise_of_data_driven_decisions_in_tramp_shipping__root",
+      "title": "Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png",
+      "section_path": [
+        "Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png"
+      ],
+      "section_path_text": "Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png\n\nLinked image asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png\n\nImage metadata: PNG 872x289 mode=RGB\n\nOCR text:\nm™) Auren © Hoffman @ @auren- Jun 14, 2019 ee\n; One of the big ways that data becomes useful is when it is tied to other\n; data. The reason for this is simple: data is only as useful as the questions it can\nhelp answer.",
+      "keywords": [
+        "asset",
+        "auren",
+        "data",
+        "image",
+        "one",
+        "useful",
+        "allows",
+        "answer."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

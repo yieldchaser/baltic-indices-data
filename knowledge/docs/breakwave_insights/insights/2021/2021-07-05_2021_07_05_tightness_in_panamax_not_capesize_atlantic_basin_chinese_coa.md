@@ -27,7 +27,38 @@ keywords:
 - year-on-year
 - basin
 - are
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Of note is that Brazil''s iron ore exports have continued to enjoy
+    significant strength. As we discussed in this week''s Weekly Dry Bulk Report,
+    exports have now increased on a year-on-year basis for eight consecutive months
+    which marks a feat never before seen '
+  unit: pct
+  values:
+  - 33.7
+  - 7.0
+  - 26.0
+  - 3.7
+  - 12.0
+- section: Main
+  section_type: null
+  source_line: The fact that Chinese power plant stockpiles are down year-on-year
+    by about 25% while coal-derived electricity production this quarter has been rising
+    year-on-year by 10% remains extremely encouraging, and concerns of both summer
+    and winter coal shortages cont
+  unit: pct
+  values:
+  - 25.0
+  - 10.0
+  - 100.0
 regions:
 - china
 - brazil

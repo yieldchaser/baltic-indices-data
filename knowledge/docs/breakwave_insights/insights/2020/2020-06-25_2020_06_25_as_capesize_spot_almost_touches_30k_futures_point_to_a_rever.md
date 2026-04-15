@@ -27,7 +27,100 @@ keywords:
 - versus
 - congestion
 - discount
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 9
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Spot indices continue to advance, but the rate of increase has slowed
+    down and small cracks are showing up in certain routes that might drag the spot
+    indices lower next week. The futures market has anticipating such move for days
+    now, as Capesize futures for t
+  unit: pct
+  values:
+  - 30.0
+- section: Main
+  section_type: null
+  source_line: 'BRS currently sees more than 80 Capes waiting outside China''s major
+    ports, one of the highest levels versus history:'
+  unit: null
+  values:
+  - 80.0
+- section: Main
+  section_type: null
+  source_line: In addition, globally, Capesize congestion has increased to multi-year
+    highs and is approaching 12%, the highest level in at least 5 years , based on
+    Clarksons research data. This is a short term bullish sign for the Capesize market
+    that can continue to suppor
+  unit: pct
+  values:
+  - 12.0
+- section: Main
+  section_type: null
+  source_line: Arrow Research also remains constructive on dry bulk for the second
+    half of the year, as China's economy improves and thus demand for steel and iron
+    ore increases at a time when iron ore inventories remain at 4-year lows.
+  unit: null
+  values:
+  - 4.0
+- section: Main
+  section_type: null
+  source_line: There is growing evidence that the industrial sector in China is preparing
+    for another round of stimulus; steel production surged to hit an all-time high
+    in May, and the daily output edged higher towards a new record during the first
+    twenty days of June. Excav
+  unit: pct
+  values:
+  - 68.0
+  - 60.0
+  - 2017.0
+  - 2014.0
+  - 2016.0
+- section: Main
+  section_type: null
+  source_line: Although the level of rates at a given supply/demand balance is difficult
+    to pinpoint, it is fair to say that there has been significant improvements versus
+    the first half of this year, and given all the incremental drivers versus last
+    year (stimulus, low inve
+  unit: null
+  values:
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: Currently, freight futures are pricing average Capesize rates for the
+    second half of the year at 18,000/day; in 2019, average realized Capesize rate
+    during the second half was approximately 26,000/day. This 45% difference basically
+    reflects the very weak marke
+  unit: pct
+  values:
+  - 18000.0
+  - 2019.0
+  - 26000.0
+  - 45.0
+- section: Main
+  section_type: null
+  source_line: Finally, with Capesize spot rates now at almost 30,000/day, the relevant
+    levels have clearly changed and although volatility will remain elevated, a stronger
+    dry bulk market is likely ahead of us.
+  unit: null
+  values:
+  - 30000.0
+- section: Main
+  section_type: null
+  source_line: There are still headwinds, no doubt, and the recovery is highly uncertain.
+    However, it is probably safe to say the worst is over for the dry bulk market.
+    We expect the freight market to remain volatile in 2H, but with stronger rates
+    across the board compared t
+  unit: null
+  values:
+  - 2.0
+  - 1.0
+  - 2021.0
 regions:
 - china
 - brazil

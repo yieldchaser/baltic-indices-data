@@ -27,7 +27,43 @@ keywords:
 - could
 - demand
 - export
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: cautiously_bearish
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The slowdown in economic recovery is greatly influenced by weaker export
+    orders, with the New Export Orders Index falling into contraction territory below
+    50. The worsening of the pandemic situation saw external demand for Chinese goods
+    fall and the current co
+  unit: null
+  values:
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: 'The survey also highlighted rising prices for industrial inputs in
+    China, which is hardly surprising given the recent surge in commodity prices.
+    The rising prices, in combination with supply issues and shortages, could potentially
+    be the trigger for a lifting '
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: China has also seen an increase in COVID-19 infection rates in recent
+    weeks, which has led to new restrictions in some parts of the country. The new
+    outbreaks and restrictions are likely to limit the traditional increase travel
+    during the upcoming Chinese Luna
+  unit: null
+  values:
+  - 19.0
+  - 40.0
+  - 2019.0
 regions:
 - china
 - brazil

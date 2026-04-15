@@ -24,7 +24,41 @@ keywords:
 - our
 - any
 - crimea
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The Donetsk and Lugansk demand is reasonable considering that Russian-backed
+    separatists in Donetsk and Luhansk declared they were independent "people's republics"
+    all the way back in 2014, and that at this point the Russian military has already
+    taken these tw
+  unit: null
+  values:
+  - 2014.0
+  - 2014.0
+  - 15000.0
+- section: Main
+  section_type: null
+  source_line: The Crimea demand is reasonable considering that Crimea was annexed
+    back in 2014 and that fairly quickly the world moved on.
+  unit: null
+  values:
+  - 2014.0
+- section: Main
+  section_type: null
+  source_line: We must of course also stress that we do not view Russia's military
+    conflict in Ukraine as reasonable. As we have stressed in our Weekly Dry Bulk
+    Reports and special updates, Russia's actions have been tragic, any further loss
+    of life will be tragic, deaths ha
+  unit: null
+  values:
+  - 24.0
 regions:
 - china
 - brazil
@@ -59,7 +93,7 @@ themes:
 - military
 - its
 - not
-title: Dry Bulk Market Can Be Helped By End Of Conflict
+title: Dry Bulk Market Can Be Helped By End of Conflict
 vessel_classes:
 - capesize
 - panamax

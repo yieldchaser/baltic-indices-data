@@ -28,7 +28,23 @@ keywords:
 - growth
 - main
 - once
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: • Another set of soft Chinese economic data renews hopes for additional
+    stimulus - Once again, economic data out of China disappoints, with GDP growth
+    now pointing to a sub-5% rate for the full year, a stark difference from the high
+    growth expectations set ear
+  unit: worldscale_pct
+  values:
+  - 5.0
 regions:
 - china
 - brazil

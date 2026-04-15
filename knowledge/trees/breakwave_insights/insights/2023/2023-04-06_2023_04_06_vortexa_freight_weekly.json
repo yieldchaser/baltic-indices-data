@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 531,
+  "token_count": 1198,
   "source_path": "reports/breakwave/2023/2023-04-06_vortexa-freight-weekly.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/6/vortexa-freight-weekly",
   "children": [
@@ -63,7 +63,7 @@
       "section_path_text": "ANALYSIS / EAST OF SUEZ / DIRTY",
       "level": 1,
       "ordinal": 2,
-      "summary": "OPEC+ cuts could shape up the VLCC trade, while leaving the rest of the vessel classes unscathed\nTanker Utilisation from OPEC+ members involved in May 23 cuts vs. Global Tanker utilisation, split by vessel class\nOPEC+ led by Saudi Arabia and other members caught the world in surprise by announcing a voluntary cut of around 1.2 million bpd.",
+      "summary": "OPEC+ cuts could shape up the VLCC trade, while leaving the rest of the vessel classes unscathed\nImage reference: unnamed - 2023-04-06T141853.537.png | assets/2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t141853537_2dc74c140758.png\nTanker Utilisation from OPEC+ members involved in May 23 cuts vs. Global Tanker utilisation, split by vessel class\nOPEC+ led by Saudi Arabia and other members caught the world in surprise by announcing a voluntary cut of around 1.2 million bpd.",
       "keywords": [
         "vlcc",
         "aframax",
@@ -76,7 +76,7 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 249,
+      "token_count": 307,
       "section_type": null,
       "children": []
     },
@@ -91,7 +91,7 @@
       "section_path_text": "ANALYSIS / WEST OF SUEZ / DIRTY",
       "level": 1,
       "ordinal": 3,
-      "summary": "USG rates slide but OPEC+ cuts could drive a comeback\nUS Gulf-to-Europe (TD25) freight rates vs Aframax availability in the US Gulf\nUS crude exports reached a dataset high in March, standing at almost 2mbd. Crude tonne-days out of the US Gulf show that most of these volumes have headed towards Europe and Asia, with VLCC tonne-days showing the steepest increase.",
+      "summary": "USG rates slide but OPEC+ cuts could drive a comeback\nImage reference: unnamed - 2023-04-06T142006.666.png | assets/2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t142006666_a58596df5831.png\nUS Gulf-to-Europe (TD25) freight rates vs Aframax availability in the US Gulf\nUS crude exports reached a dataset high in March, standing at almost 2mbd. Crude tonne-days out of the US Gulf show that most of these volumes have headed towards Europe and Asia, with VLCC tonne-days showing the steepest increase.",
       "keywords": [
         "vlcc",
         "aframax",
@@ -104,8 +104,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 233,
+      "token_count": 290,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-06_2023_04_06_vortexa_freight_weekly__s04_linked_asset_2023_04_06_vortexa_freight_weekly_img_unnamed_2023_04_06t141853537_2dc74c140758_png",
+      "doc_id": "breakwave_insights_insights_2023-04-06_2023_04_06_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-04-06_2023_04_06_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t141853537_2dc74c140758.png",
+      "section_path": [
+        "Linked asset: 2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t141853537_2dc74c140758.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t141853537_2dc74c140758.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t141853537_2dc74c140758.png\n\nLinked image asset: 2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t141853537_2dc74c140758.png\n\nImage metadata: PNG 958x686 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n500 Data reflects avg utilisation for Jan-Mar 2023 60%\nOPEC+ countries cutting voluntarily from May:\n450 Saudi Arabia, Iraq, Kuwait, UAE, Algeria,\nGabon, Kazakhstan and Oman 9\n50%\n400\n350\n40%\nYn\n@ 300\nYn\nYn\n2 250 30%\nKe)\no 200\nCc\n20%\n150\n100\n10%\n' ||\n0 7 0%\nVLCC Suezmax Aframax\nmam May-23 voluntary group Global --=% exposure (RHS)",
+      "keywords": [
+        "vlcc",
+        "suezmax",
+        "aframax",
+        "crude_oil",
+        "asset",
+        "image",
+        "algeria",
+        "arabia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-06_2023_04_06_vortexa_freight_weekly__s05_linked_asset_2023_04_06_vortexa_freight_weekly_img_unnamed_2023_04_06t142006666_a58596df5831_png",
+      "doc_id": "breakwave_insights_insights_2023-04-06_2023_04_06_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-04-06_2023_04_06_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t142006666_a58596df5831.png",
+      "section_path": [
+        "Linked asset: 2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t142006666_a58596df5831.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t142006666_a58596df5831.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t142006666_a58596df5831.png\n\nLinked image asset: 2023-04-06_vortexa-freight-weekly_img_unnamed-2023-04-06t142006666_a58596df5831.png\n\nImage metadata: PNG 936x726 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n90 90\n80 80\n70 70\n60 /\\ | fi 60\n4 50 ; 50\ng §\n6 a\n2 40 40\n30 30\n20 20\n10 10\n0) 0)\nApr-22. May-22.-Jun-22 jul-22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 Jan-23 Feb-23 Mar-23\n-Svailabiity $---TD25 (RHS)",
+      "keywords": [
+        "asset",
+        "image",
+        "apr-22.",
+        "aug-22",
+        "dec-22",
+        "dpi",
+        "embedded",
+        "feb-23"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

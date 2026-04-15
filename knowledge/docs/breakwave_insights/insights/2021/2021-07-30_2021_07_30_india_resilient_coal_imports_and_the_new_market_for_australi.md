@@ -28,7 +28,62 @@ keywords:
 - indian
 - volumes
 - year
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The International Monetary Fund (IMF) has in recent days reiterated
+    its global growth projection of six per cent for the year. However, maintaining
+    the headline number masked the fact that some nations, notably wealthy ones, had
+    their projections upgraded, whi
+  unit: null
+  values:
+  - 9.5
+- section: Main
+  section_type: null
+  source_line: 'As the second wave of infections is starting to recede, the economic
+    activity is expected to see a revival. The Indian steelmaker JSW Steel Ltd. has
+    recently said that it expects domestic steel demand to increase by seventeen per
+    cent to 110 million tonnes in '
+  unit: null
+  values:
+  - 110.0
+- section: Main
+  section_type: null
+  source_line: Despite the severity of the recent coronavirus outbreak, Indian seaborne
+    imports of coal have held up remarkably well in the last two months. Both months
+    recorded healthy year-on-year gains and are only marginally below the levels seen
+    in 2019.
+  unit: null
+  values:
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: The ongoing diplomatic fracas between China and Australia shows no
+    signs of improving, with Australian coal exports being one of the largest victims.
+    Since the unofficial import ban came into effect during the second half of last
+    year, a very limited number of
+  unit: null
+  values:
+  - 2019.0
+  - 85.0
+- section: Main
+  section_type: null
+  source_line: The Indian market has so far proved to be a good alternative market
+    for Australian miners, with large parts of the coal volumes normally destined
+    for China now shipped there instead. In the first seven months of the year, Australia
+    has shipped 50 million tonne
+  unit: null
+  values:
+  - 50.0
+  - 118.0
+  - 2019.0
 regions:
 - china
 - brazil

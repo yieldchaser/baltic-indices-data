@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2020-06-22_2020_06_22_coronavirus_update_drybulk__root",
   "doc_id": "breakwave_insights_insights_2020-06-22_2020_06_22_coronavirus_update_drybulk",
   "parent_id": null,
-  "title": "Coronavirus Update Drybulk",
+  "title": "Global Coronavirus Update",
   "section_path": [
-    "Coronavirus Update Drybulk"
+    "Global Coronavirus Update"
   ],
-  "section_path_text": "Coronavirus Update Drybulk",
+  "section_path_text": "Global Coronavirus Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nThe dry bulk spot market continues to strengthen. Iron ore spot cargo volume was not particularly strong last week, but capesize vessel availability has tightened further and helped lead to the jump in capesize rates. Brazil's coronavirus outbreak remains concerning, though, and represents one of the largest unknowns that could ultimately negatively affect the market.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 217,
+  "token_count": 521,
   "source_path": "reports/breakwave/2020/2020-06-22_coronavirus-update-drybulk.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2020/6/22/coronavirus-update-drybulk",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The dry bulk spot market continues to strengthen. Iron ore spot cargo volume was not particularly strong last week, but capesize vessel availability has tightened further and helped lead to the jump in capesize rates.",
+      "summary": "Image reference: assets/2020-06-22_coronavirus-update-drybulk_img_image-asset_5074f4ab62cb.jpeg\nThe dry bulk spot market continues to strengthen. Iron ore spot cargo volume was not particularly strong last week, but capesize vessel availability has tightened further and helped lead to the jump in capesize rates.",
       "keywords": [
         "capesize",
         "brazil",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 215,
+      "token_count": 247,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2020-06-22_2020_06_22_coronavirus_update_drybulk__s02_linked_asset_2020_06_22_coronavirus_update_drybulk_img_image_asset_5074f4ab62cb_jpeg",
+      "doc_id": "breakwave_insights_insights_2020-06-22_2020_06_22_coronavirus_update_drybulk",
+      "parent_id": "breakwave_insights_insights_2020-06-22_2020_06_22_coronavirus_update_drybulk__root",
+      "title": "Linked asset: 2020-06-22_coronavirus-update-drybulk_img_image-asset_5074f4ab62cb.jpeg",
+      "section_path": [
+        "Linked asset: 2020-06-22_coronavirus-update-drybulk_img_image-asset_5074f4ab62cb.jpeg"
+      ],
+      "section_path_text": "Linked asset: 2020-06-22_coronavirus-update-drybulk_img_image-asset_5074f4ab62cb.jpeg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2020/assets/2020-06-22_coronavirus-update-drybulk_img_image-asset_5074f4ab62cb.jpeg\n\nLinked image asset: 2020-06-22_coronavirus-update-drybulk_img_image-asset_5074f4ab62cb.jpeg\n\nImage metadata: JPEG 2500x1667 mode=RGB\n\nEmbedded info:\ndpi: (300, 300)\n\nOCR text:\n4 ‘ . ates a\n: il\na er <\nBias pe, Bein:\nag\noN -\ne%\niss : -- a\n¥ : : \"f ;\n- NR hy 5 ie\n~ DN of,\nay & & nN At : 3 é\nPast a / ro \\ _ A | rs\nFS.",
+      "keywords": [
+        "asset",
+        "image",
+        "ail",
+        "ates",
+        "away",
+        "bein",
+        "beinn",
+        "bias"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

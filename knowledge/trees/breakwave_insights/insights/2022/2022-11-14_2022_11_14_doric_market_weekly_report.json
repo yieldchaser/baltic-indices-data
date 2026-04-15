@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-11-14_2022_11_14_doric_market_weekly_report__root",
   "doc_id": "breakwave_insights_insights_2022-11-14_2022_11_14_doric_market_weekly_report",
   "parent_id": null,
-  "title": "Doric Market Weekly Report",
+  "title": "Doric Weekly Market Insight",
   "section_path": [
-    "Doric Market Weekly Report"
+    "Doric Weekly Market Insight"
   ],
-  "section_path_text": "Doric Market Weekly Report",
+  "section_path_text": "Doric Weekly Market Insight",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Michalis Voutsinas\nSetting aside the spot market of the geared segments, the forty-fifth week was anything but dull. Risk assets rallied last Friday amid speculation that China was preparing to relax its pandemic restrictions. However, over the weekend, health officials reiterated their commitment to the \"dynamic-clearing\" approach to Covid-19 cases as soon as they emerge.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 962,
+  "token_count": 1512,
   "source_path": "reports/breakwave/2022/2022-11-14_doric-market-weekly-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/11/14/doric-market-weekly-report",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 960,
+      "token_count": 1067,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-14_2022_11_14_doric_market_weekly_report__s02_linked_asset_2022_11_14_doric_market_weekly_report_img_screenshot_20221114_114320_samsungno_8e912ebed855_jpg",
+      "doc_id": "breakwave_insights_insights_2022-11-14_2022_11_14_doric_market_weekly_report",
+      "parent_id": "breakwave_insights_insights_2022-11-14_2022_11_14_doric_market_weekly_report__root",
+      "title": "Linked asset: 2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114320-samsungno_8e912ebed855.jpg",
+      "section_path": [
+        "Linked asset: 2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114320-samsungno_8e912ebed855.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114320-samsungno_8e912ebed855.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114320-samsungno_8e912ebed855.jpg\n\nLinked image asset: 2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114320-samsungno_8e912ebed855.jpg\n\nImage metadata: JPEG 1018x771 mode=RGB\n\nOCR text:\n10.0%\n9.0%\n8.0%\n7.0% PTET\n6.0% PETE\n5.0% TT\nR98 PETE\n3.0% PTET\n2.0% PTET\npen | PTT\nee PTT\nse a se oo Rus e Ra se ra & Ra Pa\nSource: U.S Bureau of Statistics, Doric Shipbrokers",
+      "keywords": [
+        "ptet",
+        "asset",
+        "image",
+        "pete",
+        "ptt",
+        "source",
+        "bureau",
+        "doric"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 187,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-14_2022_11_14_doric_market_weekly_report__s03_linked_asset_2022_11_14_doric_market_weekly_report_img_screenshot_20221114_114355_samsungno_a46b1c6128ca_jpg",
+      "doc_id": "breakwave_insights_insights_2022-11-14_2022_11_14_doric_market_weekly_report",
+      "parent_id": "breakwave_insights_insights_2022-11-14_2022_11_14_doric_market_weekly_report__root",
+      "title": "Linked asset: 2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114355-samsungno_a46b1c6128ca.jpg",
+      "section_path": [
+        "Linked asset: 2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114355-samsungno_a46b1c6128ca.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114355-samsungno_a46b1c6128ca.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114355-samsungno_a46b1c6128ca.jpg\n\nLinked image asset: 2022-11-14_doric-market-weekly-report_img_screenshot-20221114-114355-samsungno_a46b1c6128ca.jpg\n\nImage metadata: JPEG 846x646 mode=RGB\n\nOCR text:\nsan . 4800\n4600 :\n4400\n4200\n4000\n3800\n3600\n3400\n3200\n3000\n3-Jan 3-Feb 3-Mar 3-Apr 3-May 3-Jun 3-Jul 3-Aug 3-Sep 3-Oct 3-Nov\nSource: Nasdaq, Doric Shipbrokers",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "apr",
+        "aug",
+        "doric",
+        "doric-market-weekly-report_img_screenshot-20221114-114355-samsungno_a46b1c6128ca.jpg",
+        "feb"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 177,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

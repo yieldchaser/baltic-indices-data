@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-06-20_2023_06_20_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-06-20_2023_06_20_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nInterest rates dominated the past week's news flow. After bringing the interest rate to the highest level since 2007, the Federal Reserve paused its current hiking cycle as US inflation showed signs of slowing. However, officials from the US central bank stressed after the announcement that there is more to be done in the fight against inflation, and that more hikes are on the cards.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1468,
+  "token_count": 1795,
   "source_path": "reports/breakwave/2023/2023-06-20_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/6/20/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 209,
+      "token_count": 264,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-06-20_2023_06_20_shipfix_global_market_update__s06_linked_asset_2023_06_20_shipfix_global_market_update_img_unnamed_2023_06_20t124724704_72d6afc354ae_png",
+      "doc_id": "breakwave_insights_insights_2023-06-20_2023_06_20_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-06-20_2023_06_20_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-06-20_shipfix-global-market-update_img_unnamed-2023-06-20t124724704_72d6afc354ae.png",
+      "section_path": [
+        "Linked asset: 2023-06-20_shipfix-global-market-update_img_unnamed-2023-06-20t124724704_72d6afc354ae.png"
+      ],
+      "section_path_text": "Linked asset: 2023-06-20_shipfix-global-market-update_img_unnamed-2023-06-20t124724704_72d6afc354ae.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-06-20_shipfix-global-market-update_img_unnamed-2023-06-20t124724704_72d6afc354ae.png\n\nLinked image asset: 2023-06-20_shipfix-global-market-update_img_unnamed-2023-06-20t124724704_72d6afc354ae.png\n\nImage metadata: PNG 1120x632 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Coal Loading in Colombia by Destination\n© Rest of the world li Europe i Far East\nG\n4\n. 3\n3\n£\n&\n2\na\ng\n5 2\n1\n0\nJun-22 Julk22.- Aug-22 Sep-22, Oct-22.» Nov-22 © Dee-22,0 Jan-23.- Feb-23.",
+      "keywords": [
+        "europe",
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "apr-23.",
+        "aug-22",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

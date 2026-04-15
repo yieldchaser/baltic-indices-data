@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-08-01_2023_08_01_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-08-01_2023_08_01_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix - Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix - Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix - Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\nA rebound for the Capesize freight rates contributed to the BDI advancing by more than thirteen per cent last week. Among the commodities, crude oil continued to recover as the global supply situation continued to look increasingly tight, while softer demand weighed on the other energy commodities and iron ore. Macro/Geopolitics\nThe new week has begun with the Chinese statistics authority publishing the Purchasing Manager Indices for July.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1472,
+  "token_count": 1715,
   "source_path": "reports/breakwave/2023/2023-08-01_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/8/1/shipfix-global-market-update",
   "children": [
@@ -166,8 +166,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 183,
+      "token_count": 215,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-08-01_2023_08_01_shipfix_global_market_update__s06_linked_asset_2023_08_01_shipfix_global_market_update_img_241_25053baa3135_png",
+      "doc_id": "breakwave_insights_insights_2023-08-01_2023_08_01_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-08-01_2023_08_01_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-08-01_shipfix-global-market-update_img_241_25053baa3135.png",
+      "section_path": [
+        "Linked asset: 2023-08-01_shipfix-global-market-update_img_241_25053baa3135.png"
+      ],
+      "section_path_text": "Linked asset: 2023-08-01_shipfix-global-market-update_img_241_25053baa3135.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-08-01_shipfix-global-market-update_img_241_25053baa3135.png\n\nLinked image asset: 2023-08-01_shipfix-global-market-update_img_241_25053baa3135.png\n\nImage metadata: PNG 1120x632 mode=RGBA\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Rice by Origin\n® Rest of the world @® Pakistan ® ECSA ® China ® Thailand @ India\n8\n6\n:\n5 4\n5\n=\n2\nft)\n. é Ree ng oe oe wet ae ; ow eo?",
+      "keywords": [
+        "china",
+        "india",
+        "asset",
+        "image",
+        "source",
+        "cargo",
+        "cor",
+        "data"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 183,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

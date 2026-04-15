@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 379,
+  "token_count": 847,
   "source_path": "reports/breakwave/2022/2022-06-30_global-steel-contraction-continues.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/6/30/global-steel-contraction-continues",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 377,
+      "token_count": 459,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-30_2022_06_30_global_steel_contraction_continues__s02_linked_asset_2022_06_30_global_steel_contraction_continues_img_chart1283629_e50994eedeba_jpg",
+      "doc_id": "breakwave_insights_insights_2022-06-30_2022_06_30_global_steel_contraction_continues",
+      "parent_id": "breakwave_insights_insights_2022-06-30_2022_06_30_global_steel_contraction_continues__root",
+      "title": "Linked asset: 2022-06-30_global-steel-contraction-continues_img_chart1283629_e50994eedeba.jpg",
+      "section_path": [
+        "Linked asset: 2022-06-30_global-steel-contraction-continues_img_chart1283629_e50994eedeba.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-06-30_global-steel-contraction-continues_img_chart1283629_e50994eedeba.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-30_global-steel-contraction-continues_img_chart1283629_e50994eedeba.jpg\n\nLinked image asset: 2022-06-30_global-steel-contraction-continues_img_chart1283629_e50994eedeba.jpg\n\nImage metadata: JPEG 678x354 mode=RGB\n\nOCR text:\nGlobal Crude Steel Output (2018 - 2022)\n180mt -\n170mt_ - an\n160mt_ - + Som i menaae +\n150mt i Sees a = as H | . 8 oe Mie 8\n130mt\n2018 2019 2020 2021 2022",
+      "keywords": [
+        "steel",
+        "asset",
+        "image",
+        "mt",
+        "crude",
+        "eee",
+        "global",
+        "global-steel-contraction-continues_img_chart1283629_e50994eedeba.jpg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 160,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-30_2022_06_30_global_steel_contraction_continues__s03_linked_asset_2022_06_30_global_steel_contraction_continues_img_chart2283329_e39c9b573090_jpg",
+      "doc_id": "breakwave_insights_insights_2022-06-30_2022_06_30_global_steel_contraction_continues",
+      "parent_id": "breakwave_insights_insights_2022-06-30_2022_06_30_global_steel_contraction_continues__root",
+      "title": "Linked asset: 2022-06-30_global-steel-contraction-continues_img_chart2283329_e39c9b573090.jpg",
+      "section_path": [
+        "Linked asset: 2022-06-30_global-steel-contraction-continues_img_chart2283329_e39c9b573090.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-06-30_global-steel-contraction-continues_img_chart2283329_e39c9b573090.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-30_global-steel-contraction-continues_img_chart2283329_e39c9b573090.jpg\n\nLinked image asset: 2022-06-30_global-steel-contraction-continues_img_chart2283329_e39c9b573090.jpg\n\nImage metadata: JPEG 678x354 mode=RGB\n\nOCR text:\nGlobal Crude Steel Output Excluding China (2018 - 2022)\n80mnt ss SS\n60mt Pee aS BEB RB ERE SRE RBER ERS RERER ER ES -- @ aes SEeEES BERBER EES\n50mt\n2018 2019 2020 2021 2022",
+      "keywords": [
+        "china",
+        "steel",
+        "asset",
+        "image",
+        "aes",
+        "beb",
+        "berber",
+        "crude"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 161,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

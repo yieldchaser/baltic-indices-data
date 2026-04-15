@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 367,
+  "token_count": 616,
   "source_path": "reports/breakwave/2023/2023-05-19_more-grain-exports-expected-next-season.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/5/19/more-grain-exports-expected-next-season",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 365,
+      "token_count": 403,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-19_2023_05_19_more_grain_exports_expected_next_season__s02_linked_asset_2023_05_19_more_grain_exports_expected_next_season_img_chart_4b9e4c745d2f_jpg",
+      "doc_id": "breakwave_insights_insights_2023-05-19_2023_05_19_more_grain_exports_expected_next_season",
+      "parent_id": "breakwave_insights_insights_2023-05-19_2023_05_19_more_grain_exports_expected_next_season__root",
+      "title": "Linked asset: 2023-05-19_more-grain-exports-expected-next-season_img_chart_4b9e4c745d2f.jpg",
+      "section_path": [
+        "Linked asset: 2023-05-19_more-grain-exports-expected-next-season_img_chart_4b9e4c745d2f.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-05-19_more-grain-exports-expected-next-season_img_chart_4b9e4c745d2f.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-19_more-grain-exports-expected-next-season_img_chart_4b9e4c745d2f.jpg\n\nLinked image asset: 2023-05-19_more-grain-exports-expected-next-season_img_chart_4b9e4c745d2f.jpg\n\nImage metadata: JPEG 1339x294 mode=RGB\n\nOCR text:\nGlobal Coarse Grain Exports (including corn)\nWorld USA Argentina Brazil Ukraine\n| 2022/23 (est) 215.0mt 47.5mt 29.6mt 53.0mt 28.1mt\n2023/24 (proj) 234.9mt 59.4mt 44.9mt 55.0mt 18.8mt",
+      "keywords": [
+        "brazil",
+        "grain",
+        "asset",
+        "image",
+        "argentina",
+        "coarse",
+        "corn",
+        "est"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 176,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

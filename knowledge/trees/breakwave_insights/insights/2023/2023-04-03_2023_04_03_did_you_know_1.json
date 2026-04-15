@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__root",
   "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1",
   "parent_id": null,
-  "title": "Did You Know 1",
+  "title": "Did you know?",
   "section_path": [
-    "Did You Know 1"
+    "Did you know?"
   ],
-  "section_path_text": "Did You Know 1",
+  "section_path_text": "Did you know?",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nThe term \"monkey island\" refers to a place on the ship which is located at the top most accessible height. Technically, it is a deck located directly above the navigating bridge of the ship. It is also referred to as the flying bridge on top of a pilothouse or chart house, and also as the ship's upper bridge.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 77,
+  "token_count": 1082,
   "source_path": "reports/breakwave/2023/2023-04-03_did-you-know-1.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/3/did-you-know-1",
   "children": [
@@ -41,21 +41,129 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The term \"monkey island\" refers to a place on the ship which is located at the top most accessible height. Technically, it is a deck located directly above the navigating bridge of the ship.",
+      "summary": "Image reference: 1 (10).png | assets/2023-04-03_did-you-know-1_img_1281029_33f02b9ceb43.png\nThe term \"monkey island\" refers to a place on the ship which is located at the top most accessible height. Technically, it is a deck located directly above the navigating bridge of the ship.",
       "keywords": [
         "bridge",
+        "image",
         "located",
+        "reference",
         "ship",
         "top",
         "above",
-        "accessible",
-        "bridge.",
-        "chart"
+        "accessible"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 69,
+      "token_count": 140,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__s02_parts_of_a_tanker",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__root",
+      "title": "Parts of a Tanker",
+      "section_path": [
+        "Parts of a Tanker"
+      ],
+      "section_path_text": "Parts of a Tanker",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "",
+      "keywords": [
+        "assets/2023-04-03_did-you-know-1_img_ce95ceb9cebacf8ccebdceb11_297a70f876b4.png",
+        "image",
+        "png",
+        "reference"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 49,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__s03_linked_asset_2023_04_03_did_you_know_1_img_1281029_33f02b9ceb43_png",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__root",
+      "title": "Linked asset: 2023-04-03_did-you-know-1_img_1281029_33f02b9ceb43.png",
+      "section_path": [
+        "Linked asset: 2023-04-03_did-you-know-1_img_1281029_33f02b9ceb43.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-03_did-you-know-1_img_1281029_33f02b9ceb43.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-03_did-you-know-1_img_1281029_33f02b9ceb43.png\n\nLinked image asset: 2023-04-03_did-you-know-1_img_1281029_33f02b9ceb43.png\n\nImage metadata: PNG 826x295 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nDID YOU KNOW ? Can you find a monkey island on a tanker ship?",
+      "keywords": [
+        "asset",
+        "image",
+        "you",
+        "can",
+        "did",
+        "did-you-know-1_img_1281029_33f02b9ceb43.png",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 119,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__s04_linked_asset_2023_04_03_did_you_know_1_img_atm39_fbd82eda3466_png",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__root",
+      "title": "Linked asset: 2023-04-03_did-you-know-1_img_atm39_fbd82eda3466.png",
+      "section_path": [
+        "Linked asset: 2023-04-03_did-you-know-1_img_atm39_fbd82eda3466.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-03_did-you-know-1_img_atm39_fbd82eda3466.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-03_did-you-know-1_img_atm39_fbd82eda3466.png\n\nLinked image asset: 2023-04-03_did-you-know-1_img_atm39_fbd82eda3466.png\n\nImage metadata: PNG 816x435 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nRadar Mast\n¢! i i \\\\ \\ Monkey Island is the\n| oR AY litt highest deck of the ship\nLe ~ bt\nig a\n\\ a -\nBridge or the Wheel House\n| v Bridge Wing\nPort Holes\nPump room vent",
+      "keywords": [
+        "asset",
+        "bridge",
+        "image",
+        "deck",
+        "did-you-know-1_img_atm39_fbd82eda3466.png",
+        "dpi",
+        "embedded",
+        "highest"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 153,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__s05_linked_asset_2023_04_03_did_you_know_1_img_ce95ceb9cebacf8ccebdceb11_297a70f876b4_png",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_did_you_know_1__root",
+      "title": "Linked asset: 2023-04-03_did-you-know-1_img_ce95ceb9cebacf8ccebdceb11_297a70f876b4.png",
+      "section_path": [
+        "Linked asset: 2023-04-03_did-you-know-1_img_ce95ceb9cebacf8ccebdceb11_297a70f876b4.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-03_did-you-know-1_img_ce95ceb9cebacf8ccebdceb11_297a70f876b4.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-03_did-you-know-1_img_ce95ceb9cebacf8ccebdceb11_297a70f876b4.png\n\nLinked image asset: 2023-04-03_did-you-know-1_img_ce95ceb9cebacf8ccebdceb11_297a70f876b4.png\n\nImage metadata: PNG 929x536 mode=RGBA\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nThese pipes carry water for anchor windlass \"onno winch\ncleaning the tanks and fire fighting. 5)\nlanding pad _ SSS SS d\n, (ook ots :\nBuilding the tower block above the - \" LS < < cS\n‘engine room saves construction ve <F e, -\ncosts.",
+      "keywords": [
+        "two",
+        "drive",
+        "room",
+        "asset",
+        "cargo",
+        "engine",
+        "image",
+        "pipes"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 512,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

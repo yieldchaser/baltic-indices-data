@@ -25,7 +25,38 @@ keywords:
 - loan
 - outstanding
 - still
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'As we discussed in our most recent Weekly China Report, Chinese banks
+    issued 2.31 trillion yuan in new loans in September. This has marked a month-on-month
+    increase of 950 billion yuan (70%) but a year-on-year decline of 160 billion yuan
+    (-7%). Overall, it is '
+  unit: pct
+  values:
+  - 2.31
+  - 950.0
+  - 70.0
+  - 160.0
+  - -7.0
+- section: Main
+  section_type: null
+  source_line: With new lending growth staying relatively low recently, outstanding
+    loan growth last month came in at only 10.9%. This has marked the lowest growth
+    seen since August 2022. Overall, the actions being taken by China's government
+    remain much different than the a
+  unit: pct
+  values:
+  - 10.9
+  - 2022.0
+  - 2022.0
 regions:
 - china
 - brazil

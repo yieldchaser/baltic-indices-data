@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-04-13_2023_04_13_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-04-13_2023_04_13_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix - Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix - Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix - Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nYesterday, the International Monetary Fund shaved off 0.1 per cent from its projection for the year's economic growth. The IMF now expects that the global economy will expand by 2.8 per cent this year and 3.0 per cent next year, as financial-sector turmoil adds to the pressures from tighter monetary policy and Russia's invasion of Ukraine. The fund's chief economist also highlighted that the risks for the global economy remain on the downside, as banks may become increasingly restrictive in their lending.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1060,
+  "token_count": 1454,
   "source_path": "reports/breakwave/2023/2023-04-13_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/13/shipfix-global-market-update",
   "children": [
@@ -132,8 +132,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 463,
+      "token_count": 517,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-13_2023_04_13_shipfix_global_market_update__s05_linked_asset_2023_04_13_shipfix_global_market_update_img_unnamed_2023_04_13t172818923_f417782d576b_png",
+      "doc_id": "breakwave_insights_insights_2023-04-13_2023_04_13_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-04-13_2023_04_13_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-04-13_shipfix-global-market-update_img_unnamed-2023-04-13t172818923_f417782d576b.png",
+      "section_path": [
+        "Linked asset: 2023-04-13_shipfix-global-market-update_img_unnamed-2023-04-13t172818923_f417782d576b.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-13_shipfix-global-market-update_img_unnamed-2023-04-13t172818923_f417782d576b.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-13_shipfix-global-market-update_img_unnamed-2023-04-13t172818923_f417782d576b.png\n\nLinked image asset: 2023-04-13_shipfix-global-market-update_img_unnamed-2023-04-13t172818923_f417782d576b.png\n\nImage metadata: PNG 1054x596 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) and Average Cargo Size for Coal Loading in the Russian Baltic for Asian Ports\n== Average cargo size- India * Average cargo size- China/FE ™§ Asia (excl. China/FE, India& ME) @) Middle East @™ India China/Far East\n3 100\n75\n2\n2)\na\ni-\nc\no 2\na oOo\n= 50 8\n= £\n[=] a\n- N\n| q\n1 a\noO\noO\ni i\nDD DDD DDD DDD DD DD DD DD DD DD DD DP DP\nSOS OS OS SOX ass SS OS OS OS KOS ass Se SS OO\nFF MK CPM HK HF HHA SM KH MFM KM KH KF MK FM Ke MH\nData source: Shipfix",
+      "keywords": [
+        "china",
+        "india",
+        "coal",
+        "cargo",
+        "average",
+        "ddd",
+        "size",
+        "ass"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 302,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

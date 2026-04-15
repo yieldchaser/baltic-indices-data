@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low__root",
   "doc_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low",
   "parent_id": null,
-  "title": "Coal Indias Production And Offtake Remain Relatively Low",
+  "title": "Coal India's Production and Offtake Remain Relatively Low",
   "section_path": [
-    "Coal Indias Production And Offtake Remain Relatively Low"
+    "Coal India's Production and Offtake Remain Relatively Low"
   ],
-  "section_path_text": "Coal Indias Production And Offtake Remain Relatively Low",
+  "section_path_text": "Coal India's Production and Offtake Remain Relatively Low",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nThe most recently released data shows that Coal India produced only 42.6 million tons of coal last month. This is the same amount that was produced in July and is 5.4 million tons (15%) more than was produced in August 2020. Production has remained well below this year's peak of 81.2 million tons seen in March.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 360,
+  "token_count": 1021,
   "source_path": "reports/breakwave/2021/2021-09-09_coal-indias-production-and-offtake-remain-relatively-low.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2021/9/9/coal-indias-production-and-offtake-remain-relatively-low",
   "children": [
@@ -49,13 +49,97 @@
         "tons",
         "power",
         "stockpiles",
-        "marks",
-        "offtake"
+        "image",
+        "marks"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 358,
+      "token_count": 481,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low__s02_linked_asset_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low_img_ch1_28010c37a03b_jpg",
+      "doc_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low",
+      "parent_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low__root",
+      "title": "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch1_28010c37a03b.jpg",
+      "section_path": [
+        "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch1_28010c37a03b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch1_28010c37a03b.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch1_28010c37a03b.jpg\n\nLinked image asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch1_28010c37a03b.jpg\n\nImage metadata: JPEG 599x219 mode=RGB\n\nOCR text:\nCoal India Production (August 2018 - August 2021\n100mt\n8omt\n60mt\n40mt\n20mt\nAug 18 Aug '19 ‘Aug '20 ‘Aug ‘21",
+      "keywords": [
+        "india",
+        "coal",
+        "aug",
+        "asset",
+        "august",
+        "image",
+        "coal-indias-production-and-offtake-remain-relatively-low_img_ch1_28010c37a03b.jpg",
+        "jpeg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low__s03_linked_asset_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low_img_ch2_b0e14edb8bfd_jpg",
+      "doc_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low",
+      "parent_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low__root",
+      "title": "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch2_b0e14edb8bfd.jpg",
+      "section_path": [
+        "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch2_b0e14edb8bfd.jpg"
+      ],
+      "section_path_text": "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch2_b0e14edb8bfd.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch2_b0e14edb8bfd.jpg\n\nLinked image asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch2_b0e14edb8bfd.jpg\n\nImage metadata: JPEG 599x270 mode=RGB\n\nOCR text:\nGoal Stockpiles at Indian Power Plants (September 2018 - September 2021)\n60mt\n50mt\n40mt\n30mt\n20mt\n410mt\nomt\nSep! 18 Sep 19 Sep '20 Sep!",
+      "keywords": [
+        "india",
+        "coal",
+        "sep",
+        "asset",
+        "image",
+        "september",
+        "coal-indias-production-and-offtake-remain-relatively-low_img_ch2_b0e14edb8bfd.jpg",
+        "goal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 148,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low__s04_linked_asset_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low_img_ch3_56d02f10eaf1_jpg",
+      "doc_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low",
+      "parent_id": "breakwave_insights_insights_2021-09-09_2021_09_09_coal_indias_production_and_offtake_remain_relatively_low__root",
+      "title": "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch3_56d02f10eaf1.jpg",
+      "section_path": [
+        "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch3_56d02f10eaf1.jpg"
+      ],
+      "section_path_text": "Linked asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch3_56d02f10eaf1.jpg",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch3_56d02f10eaf1.jpg\n\nLinked image asset: 2021-09-09_coal-indias-production-and-offtake-remain-relatively-low_img_ch3_56d02f10eaf1.jpg\n\nImage metadata: JPEG 599x219 mode=RGB\n\nOCR text:\nCoal India Offtake (August 2018 - August 2021)\n6Omt\n50mt\n40mt\n30mt\n‘Aug 18 Aug 19 ‘Aug 20 Aug '21",
+      "keywords": [
+        "india",
+        "coal",
+        "aug",
+        "asset",
+        "august",
+        "image",
+        "coal-indias-production-and-offtake-remain-relatively-low_img_ch3_56d02f10eaf1.jpg",
+        "jpeg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

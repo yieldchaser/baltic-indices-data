@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-10-21_2022_10_21_metals_gain_amid_signs_of_tight_supplies__root",
   "doc_id": "breakwave_insights_insights_2022-10-21_2022_10_21_metals_gain_amid_signs_of_tight_supplies",
   "parent_id": null,
-  "title": "Metals Gain Amid Signs Of Tight Supplies",
+  "title": "Metals gain amid signs of tight supplies",
   "section_path": [
-    "Metals Gain Amid Signs Of Tight Supplies"
+    "Metals gain amid signs of tight supplies"
   ],
-  "section_path_text": "Metals Gain Amid Signs Of Tight Supplies",
+  "section_path_text": "Metals gain amid signs of tight supplies",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nCommodities edged higher as tight supplies and signs of robust demand boosted sentiment. Bulk commodities remained under pressure amid ongoing weakness in China's real estate market. Crude oil gained sharply in early trade amid optimism China may ease quarantine restrictions.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 678,
+  "token_count": 1072,
   "source_path": "reports/breakwave/2022/2022-10-21_metals-gain-amid-signs-of-tight-supplies.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/10/21/metals-gain-amid-signs-of-tight-supplies",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 676,
+      "token_count": 725,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-21_2022_10_21_metals_gain_amid_signs_of_tight_supplies__s02_linked_asset_2022_10_21_metals_gain_amid_signs_of_tight_supplies_img_1666299616766_11d38ef81a88_png",
+      "doc_id": "breakwave_insights_insights_2022-10-21_2022_10_21_metals_gain_amid_signs_of_tight_supplies",
+      "parent_id": "breakwave_insights_insights_2022-10-21_2022_10_21_metals_gain_amid_signs_of_tight_supplies__root",
+      "title": "Linked asset: 2022-10-21_metals-gain-amid-signs-of-tight-supplies_img_1666299616766_11d38ef81a88.png",
+      "section_path": [
+        "Linked asset: 2022-10-21_metals-gain-amid-signs-of-tight-supplies_img_1666299616766_11d38ef81a88.png"
+      ],
+      "section_path_text": "Linked asset: 2022-10-21_metals-gain-amid-signs-of-tight-supplies_img_1666299616766_11d38ef81a88.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-21_metals-gain-amid-signs-of-tight-supplies_img_1666299616766_11d38ef81a88.png\n\nLinked image asset: 2022-10-21_metals-gain-amid-signs-of-tight-supplies_img_1666299616766_11d38ef81a88.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nWed 19-Oct Thu 20-Oct % chg Daily % chg Daily % chg\nccI 626.15 627.43 Brent crude 92.43 Gold 1,630\nPrecious 565.93 566.43 Thermal coal 391.95 Palladium 2,070 -11.4%\nIndustrials 351.03 358.12 JKM LNG swaps 32.35 Iron Ore 93.7 -1.6%\nBulks 512.57 510.26 -0.5% Copper 7,651 Hogs 3,900 0.0%\nAgs 412.08 412.54 Nickel 22,105 Corn 388\nEnergy 926.47 928.33 Aluminium 2,199 Wheat 445",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 304,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

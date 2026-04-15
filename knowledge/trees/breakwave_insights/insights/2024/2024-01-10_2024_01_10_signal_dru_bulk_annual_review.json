@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2024-01-10_2024_01_10_signal_dru_bulk_annual_review__root",
   "doc_id": "breakwave_insights_insights_2024-01-10_2024_01_10_signal_dru_bulk_annual_review",
   "parent_id": null,
-  "title": "Signal Dru Bulk Annual Review",
+  "title": "Signal Dry Bulk Annual Review",
   "section_path": [
-    "Signal Dru Bulk Annual Review"
+    "Signal Dry Bulk Annual Review"
   ],
-  "section_path_text": "Signal Dru Bulk Annual Review",
+  "section_path_text": "Signal Dry Bulk Annual Review",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nThe year 2023 witnessed significant shifts in commodity patterns, exacerbated by a difficult economic environment in China and geopolitical tensions, especially between Russia and Ukraine, which led to significant shifts in commodity development. The Chinese economic environment in 2023 posed a challenge, which had a particular impact on iron ore prices and demand for raw materials. The slowdown in Chinese economic growth and strict regulatory requirements impacted infrastructure and construction activity and dampened demand for iron ore.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 665,
+  "token_count": 916,
   "source_path": "reports/breakwave/2024/2024-01-10_signal-dru-bulk-annual-review.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2024/1/10/signal-dru-bulk-annual-review",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "The year 2023 witnessed significant shifts in commodity patterns, exacerbated by a difficult economic environment in China and geopolitical tensions, especially between Russia and Ukraine, which led to significant shifts in commodity development. The Chinese economic environment in 2023 posed a challenge, which had a particular impact on iron ore prices and demand for raw materials.",
+      "summary": "Image reference: unnamed - 2024-01-10T143018.124.png | assets/2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png\nThe year 2023 witnessed significant shifts in commodity patterns, exacerbated by a difficult economic environment in China and geopolitical tensions, especially between Russia and Ukraine, which led to significant shifts in commodity development. The Chinese economic environment in 2023 posed a challenge, which had a particular impact on iron ore prices and demand for raw materials.",
       "keywords": [
         "china",
         "brazil",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 663,
+      "token_count": 721,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2024-01-10_2024_01_10_signal_dru_bulk_annual_review__s02_linked_asset_2024_01_10_signal_dru_bulk_annual_review_img_unnamed_2024_01_10t143018124_b83b4faeb311_png",
+      "doc_id": "breakwave_insights_insights_2024-01-10_2024_01_10_signal_dru_bulk_annual_review",
+      "parent_id": "breakwave_insights_insights_2024-01-10_2024_01_10_signal_dru_bulk_annual_review__root",
+      "title": "Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png",
+      "section_path": [
+        "Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png"
+      ],
+      "section_path_text": "Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2024/assets/2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png\n\nLinked image asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png\n\nImage metadata: PNG 1200x630 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nSIGNSL a\nDry Bulk Annual 5\nReport 2023 ;\nCommodities Changing az\nPatterns and Freight Market y |",
+      "keywords": [
+        "asset",
+        "image",
+        "annual",
+        "changing",
+        "commodities",
+        "dpi",
+        "embedded",
+        "info"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 152,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

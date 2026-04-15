@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-11-01_2022_11_01_gibsons_weekly_tanker_market_report__root",
   "doc_id": "breakwave_insights_insights_2022-11-01_2022_11_01_gibsons_weekly_tanker_market_report",
   "parent_id": null,
-  "title": "Gibsons Weekly Tanker Market Report",
+  "title": "Gibson's Weekly Tanker Market Report",
   "section_path": [
-    "Gibsons Weekly Tanker Market Report"
+    "Gibson's Weekly Tanker Market Report"
   ],
-  "section_path_text": "Gibsons Weekly Tanker Market Report",
+  "section_path_text": "Gibson's Weekly Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nWith just over 5 weeks to go until the European Union's ban on Russian crude oil imports come into effect, companies are now being forced to decide which market they wish to trade in. Simultaneously, the G7 oil price cap is also due to enter into force and although the price cap is yet to be finalized and requires EU ratification, the EU's crude oil embargo looks set in stone. So, the question now turns to who will continue to buy Russian crude post December 5th, and how logistically are they going to transport that crude.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 755,
+  "token_count": 1001,
   "source_path": "reports/breakwave/2022/2022-11-01_gibsons-weekly-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/11/1/gibsons-weekly-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 753,
+      "token_count": 809,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-01_2022_11_01_gibsons_weekly_tanker_market_report__s02_linked_asset_2022_11_01_gibsons_weekly_tanker_market_report_img_screenshot_20221101_150410_samsungno_95c28436515c_jpg",
+      "doc_id": "breakwave_insights_insights_2022-11-01_2022_11_01_gibsons_weekly_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2022-11-01_2022_11_01_gibsons_weekly_tanker_market_report__root",
+      "title": "Linked asset: 2022-11-01_gibsons-weekly-tanker-market-report_img_screenshot-20221101-150410-samsungno_95c28436515c.jpg",
+      "section_path": [
+        "Linked asset: 2022-11-01_gibsons-weekly-tanker-market-report_img_screenshot-20221101-150410-samsungno_95c28436515c.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-11-01_gibsons-weekly-tanker-market-report_img_screenshot-20221101-150410-samsungno_95c28436515c.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-01_gibsons-weekly-tanker-market-report_img_screenshot-20221101-150410-samsungno_95c28436515c.jpg\n\nLinked image asset: 2022-11-01_gibsons-weekly-tanker-market-report_img_screenshot-20221101-150410-samsungno_95c28436515c.jpg\n\nImage metadata: JPEG 731x826 mode=RGB\n\nOCR text:\n450 m Suezmax m@ LR2/Aframax\n160\n140\n120\n100\n80\n60\n40\n20\n2018 2019 2020 2021 2022",
+      "keywords": [
+        "suezmax",
+        "aframax",
+        "asset",
+        "image",
+        "gibsons-weekly-tanker-market-report_img_screenshot-20221101-150410-samsungno_95c28436515c.jpg",
+        "jpeg",
+        "linked",
+        "lr2/aframax"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 149,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

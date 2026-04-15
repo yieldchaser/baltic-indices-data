@@ -25,7 +25,52 @@ keywords:
 - are
 - year-on-year
 - coronavirus
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Dry bulk rates increased across the board again last week, with panamax
+    rates this time finding the largest amount of support. Capesize rates ended last
+    week up by 2%. Panamax rates ended up by 11%. Supramax rates ended up by 2%. Handysize
+    rates ended up by 4%
+  unit: pct
+  values:
+  - 2.0
+  - 11.0
+  - 2.0
+  - 4.0
+  - 2017.0
+  - 2018.0
+- section: Main
+  section_type: null
+  source_line: Coal India's production finally rose on a year-on-year basis last month,
+    but we expect that a contraction will occur this month. India's coronavirus pandemic
+    has continued to intensify and Coal India is being directly affected. New daily
+    coronavirus cases thro
+  unit: pct
+  values:
+  - 414433.0
+  - 3982.0
+  - 5470.0
+  - 2.0
+  - 3000.0
+- section: Main
+  section_type: null
+  source_line: We remain very bullish for the entire dry bulk shipping market and
+    are most bullish for the Capesize market for the rest of this year. As we have
+    been stressing in our Weekly Dry Bulk Reports this year, it has remained particularly
+    encouraging that Brazil's ir
+  unit: pct
+  values:
+  - 25.8
+  - 8.0
+  - 2018.0
 regions:
 - china
 - brazil

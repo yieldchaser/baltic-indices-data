@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-09-27_2023_09_27_broader_risk_off_tone_weighs_on_sentiment__root",
   "doc_id": "breakwave_insights_insights_2023-09-27_2023_09_27_broader_risk_off_tone_weighs_on_sentiment",
   "parent_id": null,
-  "title": "Broader Risk Off Tone Weighs On Sentiment",
+  "title": "Broader risk off tone weighs on sentiment",
   "section_path": [
-    "Broader Risk Off Tone Weighs On Sentiment"
+    "Broader risk off tone weighs on sentiment"
   ],
-  "section_path_text": "Broader Risk Off Tone Weighs On Sentiment",
+  "section_path_text": "Broader risk off tone weighs on sentiment",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nCommodity prices drifted lower amid a broad sell-off. A rally in the US dollar kept the market sentiment bleak, while supply issues supported energy prices. Crude oil prices fell below USD90/bbl in early trading session before recovering back to USD93/bbl.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 509,
+  "token_count": 1103,
   "source_path": "reports/breakwave/2023/2023-09-27_broader-risk-off-tone-weighs-on-sentiment.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/9/27/broader-risk-off-tone-weighs-on-sentiment",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 507,
+      "token_count": 555,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-27_2023_09_27_broader_risk_off_tone_weighs_on_sentiment__s02_linked_asset_2023_09_27_broader_risk_off_tone_weighs_on_sentiment_img_1695769016356_b24f8eadaba5_png",
+      "doc_id": "breakwave_insights_insights_2023-09-27_2023_09_27_broader_risk_off_tone_weighs_on_sentiment",
+      "parent_id": "breakwave_insights_insights_2023-09-27_2023_09_27_broader_risk_off_tone_weighs_on_sentiment__root",
+      "title": "Linked asset: 2023-09-27_broader-risk-off-tone-weighs-on-sentiment_img_1695769016356_b24f8eadaba5.png",
+      "section_path": [
+        "Linked asset: 2023-09-27_broader-risk-off-tone-weighs-on-sentiment_img_1695769016356_b24f8eadaba5.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-27_broader-risk-off-tone-weighs-on-sentiment_img_1695769016356_b24f8eadaba5.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-27_broader-risk-off-tone-weighs-on-sentiment_img_1695769016356_b24f8eadaba5.png\n\nLinked image asset: 2023-09-27_broader-risk-off-tone-weighs-on-sentiment_img_1695769016356_b24f8eadaba5.png\n\nImage metadata: PNG 1280x720 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCOMMODITIES Last Unit 1 day (% chg) :\nLME Base Metals a re\nCopper 8,091.0 uUsD/t / a\nAluminium 2,243.5 usp/t = Myint -\nNickel 18,877.0 uso [I eia77\nZinc 2,511.0 usot | 90,829 Nickel\nLead 2,186.5 uspt | o2s2\nTin 26,012.0 usor OTS Ironore - ~ ~\nSteel Making Raw Materials -\nIron ore 114.0 USD/t 0,878 Cokingcoal a\nCoking coal 302.0 usD/t 0.000 -\nPrecious Metals Gold\nGold 1,900.6 usd/oz -0.053 | --- ~~\nSilver 22.8 usD/oz -0.017 | sive oe\nPlatinum 905.4 uSD/oz -0.247 OO -\nPalladium 1,230.4 usD/oz -0.055 , Platinum\nEnergy\nWTI crude 90.5 USD/bbI 0.155\nBrent crude 94.0 USD/bbI -m erento\nNorth Asia LNG 14.7 usD/mMmBtu\nThermal coal 160.4 usot | 0.249 nora\nCarbon\nEUA 82.9 usot QM\nACCU 30.5 AUuD/t 0.000 nccu ---\nNZ 64.0 NzD/t 0.000 29° 30 31 1 4 5 6 7 8 a 12 13 #14 #15 #18 19 20 21 22 25 26\n23 Aug 23 Sep",
+      "keywords": [
+        "lng",
+        "iron_ore",
+        "coal",
+        "steel",
+        "gas",
+        "usd/oz",
+        "usot",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 506,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

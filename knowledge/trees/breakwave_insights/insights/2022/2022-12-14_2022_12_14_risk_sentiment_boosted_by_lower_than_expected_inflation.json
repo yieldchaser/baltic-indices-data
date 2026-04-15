@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-12-14_2022_12_14_risk_sentiment_boosted_by_lower_than_expected_inflation__root",
   "doc_id": "breakwave_insights_insights_2022-12-14_2022_12_14_risk_sentiment_boosted_by_lower_than_expected_inflation",
   "parent_id": null,
-  "title": "Risk Sentiment Boosted By Lower Than Expected Inflation",
+  "title": "Risk sentiment boosted by lower than expected inflation",
   "section_path": [
-    "Risk Sentiment Boosted By Lower Than Expected Inflation"
+    "Risk sentiment boosted by lower than expected inflation"
   ],
-  "section_path_text": "Risk Sentiment Boosted By Lower Than Expected Inflation",
+  "section_path_text": "Risk sentiment boosted by lower than expected inflation",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA risk-on rally across markets saw commodities surge higher. A lower-than-expected inflation print sparked the rally, while a weaker USD added support. Ongoing easing of virus controls in China boosted sentiment.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 751,
+  "token_count": 1155,
   "source_path": "reports/breakwave/2022/2022-12-14_risk-sentiment-boosted-by-lower-than-expected-inflation.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/12/14/risk-sentiment-boosted-by-lower-than-expected-inflation",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 749,
+      "token_count": 800,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-12-14_2022_12_14_risk_sentiment_boosted_by_lower_than_expected_inflation__s02_linked_asset_2022_12_14_risk_sentiment_boosted_by_lower_than_expected_inflation_img_1670967288044_14384ee7749c_png",
+      "doc_id": "breakwave_insights_insights_2022-12-14_2022_12_14_risk_sentiment_boosted_by_lower_than_expected_inflation",
+      "parent_id": "breakwave_insights_insights_2022-12-14_2022_12_14_risk_sentiment_boosted_by_lower_than_expected_inflation__root",
+      "title": "Linked asset: 2022-12-14_risk-sentiment-boosted-by-lower-than-expected-inflation_img_1670967288044_14384ee7749c.png",
+      "section_path": [
+        "Linked asset: 2022-12-14_risk-sentiment-boosted-by-lower-than-expected-inflation_img_1670967288044_14384ee7749c.png"
+      ],
+      "section_path_text": "Linked asset: 2022-12-14_risk-sentiment-boosted-by-lower-than-expected-inflation_img_1670967288044_14384ee7749c.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-12-14_risk-sentiment-boosted-by-lower-than-expected-inflation_img_1670967288044_14384ee7749c.png\n\nLinked image asset: 2022-12-14_risk-sentiment-boosted-by-lower-than-expected-inflation_img_1670967288044_14384ee7749c.png\n\nImage metadata: PNG 878x249 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 12-Dec Tue 13-Dec % chg Daily % chg Daily % chg\nca 621.10 633.90 Brent crude 80.8 Gold 1,812\nPrecious 622.19 632.87 Thermal coal 404.50 Palladium 1,914 -18.1%\nIndustrials 398.34 401.43 JKM LNG swaps) 33.35 Tron Ore 114.8 -1.1%\nBulks 550.39 548.10 -0.4% Copper 8,459 Hogs 2,950\nAgs 350.29 361.40 Nickel 28,007 -4.2% com 437\nEnergy 923.11 947.22 Aluminium 2,423, Wheat 527",
+      "keywords": [
+        "lng",
+        "china",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset",
+        "commodity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 310,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -28,7 +28,53 @@ keywords:
 - ports
 - prices
 - tonnes
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Iron ore prices are on the rise yet again, with much of the losses
+    incurred following China's announcement that it intended to impose controls on
+    the surging commodity prices erased. The July iron ore futures trading on the
+    SGX are now approximately four per c
+  unit: null
+  values:
+  - 212.0
+- section: Main
+  section_type: null
+  source_line: According to the official data, the world's second-largest economy
+    imported 90 million tonnes of iron ore last month. This was below the volumes
+    imported during both of the preceding months, with 99 million tonnes recorded
+    in April and 102 million tonnes in Ma
+  unit: null
+  values:
+  - 90.0
+  - 99.0
+  - 102.0
+  - 46.0
+- section: Main
+  section_type: null
+  source_line: 'The recent outbreak of Covid-19 in South China have led to a well-published
+    extensive backlog of container vessels awaiting berth space, as cargo operations
+    have been restricted due to a shortage of staff. However, while the container
+    vessels have grabbed the '
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: The current dry weather that Brazil is experiencing is certainly bad
+    news for the country's farmers as it threatens to reduce the output, but, in theory,
+    it should be positive for the mining industry. Despite this, iron ore production
+    in Brazil is struggling t
+  unit: null
+  values:
+  - 33000.0
 regions:
 - china
 - brazil

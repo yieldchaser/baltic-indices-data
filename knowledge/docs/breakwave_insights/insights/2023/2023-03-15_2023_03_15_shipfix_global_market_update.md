@@ -28,7 +28,142 @@ keywords:
 - meg
 - europe
 - singapore
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 12
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: In light of the collapse of the Silicon Valley Bank, the latest release
+    of US inflation data did not make the Federal Reserve's job any easier. While
+    prices generally rose in line with expectations during the past month, the core
+    inflation was marginally highe
+  unit: null
+  values:
+  - 50.0
+  - 25.0
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: According to data released today, Chinese industrial production benefited
+    from the removal of the country's strict zero-Covid policies during the first
+    two months of the year but fell somewhat short of consensus projections. The industrial
+    output expanded by 2
+  unit: null
+  values:
+  - 2.4
+  - 2.6
+- section: Commodity Markets
+  section_type: null
+  source_line: The continued travails of the US banking sector weighed on sentiments
+    in the crude oil markets yesterday, with the Brent May futures retreating by 4.1
+    per cent and settling at 77.46 dollars per barrel. The contracts rebounded in
+    today's early trading with gain
+  unit: null
+  values:
+  - 4.1
+  - 77.46
+- section: Commodity Markets
+  section_type: null
+  source_line: European natural gas prices took a tumble yesterday and, combined with
+    Monday's losses, nearly offset Friday's extensive gains. The front-month contracts
+    dropped by 10.9 per cent and settled at 44.19 euros per megawatt-hour amid a return
+    to milder weather in t
+  unit: null
+  values:
+  - 10.9
+  - 44.19
+  - 1.5
+- section: Commodity Markets
+  section_type: null
+  source_line: 'The lower natural gas prices weighed on thermal coal prices on Tuesday.
+    The Newcastle April futures declined by 2.3 per cent and settled at 187 dollars
+    per tonne amid weakening demand in the wake of milder weather in the Northern
+    Hemisphere. The contracts for '
+  unit: null
+  values:
+  - 2.3
+  - 187.0
+  - 137.35
+- section: Commodity Markets
+  section_type: null
+  source_line: After Monday's significant gains amid hopes of a recovery in Chinese
+    demand, the iron ore futures listed on the Singapore Exchange had a quiet session
+    yesterday. The April contracts advanced by a marginal 0.2 per cent and settled
+    at 131.72 dollars per tonne. H
+  unit: null
+  values:
+  - 0.2
+  - 131.72
+- section: Commodity Markets
+  section_type: null
+  source_line: The base metals futures trading on the London Metal Exchange began
+    yesterday's session strongly, but most of them nevertheless ended the day in the
+    red as the US dollar staged a partial comeback. The three-month copper contracts
+    ended the day 1.1 per cent belo
+  unit: null
+  values:
+  - 1.1
+  - 1.3
+  - 0.4
+  - 0.8
+- section: Commodity Markets
+  section_type: null
+  source_line: The wheat and corn futures listed on the Chicago Board of Trade advanced
+    yesterday as talks over an extension of the Black Sea Grain Initiative continued.
+    While it looks likely that the agreement will remain in place, Russia is only
+    prepared to agree to a 60-d
+  unit: null
+  values:
+  - 60.0
+  - 120.0
+  - 1.7
+  - 1.2
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: The Baltic Exchange's dry bulk freight rate gauges continued to defy
+    gravity yesterday, with all segments advancing for a fourth consecutive session.
+    After a few days of increases in the single-digit territory, the Capesizes recorded
+    extensive gains yesterday,
+  unit: null
+  values:
+  - 15.9
+  - 8.3
+  - 3.8
+  - 2.3
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: Tuesday passed by with far less drama for the Baltic's wet freight
+    indices. The indicators for the dirty tankers and the LNG carriers remained broadly
+    unchanged for the day, while the LPG freight rates advanced by 1.4 per cent. The
+    clean tanker index delivered
+  unit: null
+  values:
+  - 1.4
+  - 4.2
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: The retreating crude oil prices put pressure on the bunker fuel markets
+    yesterday, with Tuesday's trading in VLSFO in the world's leading ports ending
+    in the red. Rotterdam led the way lower amid a daily decline of 1.8 per cent,
+    while prices for the fuel retre
+  unit: null
+  values:
+  - 1.8
+  - 1.3
+  - 2.1
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: Despite a train derailment during the past week, March has seen a sharp
+    increase in ordering activities for iron ore loading in Norway and the current
+    month appears to be on track to beat previous highs. Much of the surge in order
+    volumes are for cargoes large
+  unit: null
+  values:
+  - 85000.0
 regions:
 - china
 - brazil
@@ -65,7 +200,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix - Global Market Update
 vessel_classes:
 - capesize
 - panamax

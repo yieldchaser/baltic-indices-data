@@ -26,7 +26,52 @@ keywords:
 - economic
 - fell
 - level
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Base metals fell across the board amid signals of weak economic growth
+    in China. Premier Li Keqiang told officials that the country is faring worse in
+    some respects to 2020. He urged them to help reduce joblessness and keep growth
+    "in a reasonable range" this '
+  unit: tonnage
+  values:
+  - 2020.0
+  - 4.5
+  - 5.5
+  - 0.4
+  - 178.0
+  - 145.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: Crude oil prices edged higher as inventories continue to draw down.
+    US stockpiles fell by 1,019kbbl last week, according to Energy Information Administration
+    data. The fall was even greater than Cushing, the pricing point for WTI futures.
+    At the same time, exp
+  unit: null
+  values:
+  - 1019.0
+  - 2020.0
+  - 5971.0
+  - 1987.0
+- section: Main
+  section_type: null
+  source_line: 'European carbon was steady despite the rally in natural gas prices.
+    EUAs consolidated their gains from Tuesday. However, they failed to re-take a
+    key technical level amid thin trading, ending the session up 0.2% to EUR81.40/t.
+    Traders remain on edge following '
+  unit: pct
+  values:
+  - 0.2
+  - 1.4
+  - 250.0
 regions:
 - china
 - brazil

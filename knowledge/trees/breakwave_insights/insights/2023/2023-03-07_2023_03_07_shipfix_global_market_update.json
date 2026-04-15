@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-07_2023_03_07_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-03-07_2023_03_07_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix - Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix - Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix - Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nChinese exports dropped by 6.8 per cent during the year's first two months compared to the same period last year. While the decline was an improvement on December's reading and less bad than many economists had expected, it still highlights the headwinds the Chinese economy faces amid lower demand globally for its exports and the increasing importance of the domestic economy for growth. The country's imports also fell during the past two months and were 10.2 per cent lower than a year ago.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1268,
+  "token_count": 1674,
   "source_path": "reports/breakwave/2023/2023-03-07_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/7/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 318,
+      "token_count": 374,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-07_2023_03_07_shipfix_global_market_update__s06_linked_asset_2023_03_07_shipfix_global_market_update_img_unnamed_2023_03_07t134642957_190d66dd57a8_png",
+      "doc_id": "breakwave_insights_insights_2023-03-07_2023_03_07_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-03-07_2023_03_07_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-03-07_shipfix-global-market-update_img_unnamed-2023-03-07t134642957_190d66dd57a8.png",
+      "section_path": [
+        "Linked asset: 2023-03-07_shipfix-global-market-update_img_unnamed-2023-03-07t134642957_190d66dd57a8.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-07_shipfix-global-market-update_img_unnamed-2023-03-07t134642957_190d66dd57a8.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-07_shipfix-global-market-update_img_unnamed-2023-03-07t134642957_190d66dd57a8.png\n\nLinked image asset: 2023-03-07_shipfix-global-market-update_img_unnamed-2023-03-07t134642957_190d66dd57a8.png\n\nImage metadata: PNG 1120x633 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) and Average Cargo Size for Coal Loading in South Africa by Destination\n= Average cargo size- al shipments (excl. India) = Average cargo size- India ™ Restofthe world SouthAmerica Ml ChinaFarEast M™ Europe ™ Middle East =) India\n125 80\n10\n60\n75 3\nE 0 8\n: 8\ns 6 3\n&\n20\n25\naa aa eee eee eee ee eee eee eee\n> > > >) >») >» DP Pd - aD oD DD oD DD DP\nDP PPO PP PP OP OP PM Mo Do OD DD Do Do DD oO\nOe ¥ od sg ¥ oo 5\nSF HK SK SK SK KM MH SF MK CM SK GT KK ow KS\nData source: Shiptix",
+      "keywords": [
+        "china",
+        "europe",
+        "india",
+        "coal",
+        "eee",
+        "cargo",
+        "average",
+        "size"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 310,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

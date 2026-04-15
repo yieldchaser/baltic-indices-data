@@ -26,7 +26,45 @@ keywords:
 - month
 - iron
 - may
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: cautiously_bearish
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: With an increasingly grim news flow coming out of China, there are
+    suggestions among analysts that the world's second-largest economy may decelerate
+    faster than many global investors realise. While the recovery following the initial
+    wave of the pandemic has be
+  unit: null
+  values:
+  - 19.0
+  - 8.2
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: There are also some suggestions that President Xi may consider a broader
+    restructuring of the Chinese economy, similar to Deng Xiaoping's modernisations
+    in the 1970s and Zhu Rongji's overhaul of state companies during the 1990s. Ahead
+    of next month's plenary s
+  unit: null
+  values:
+  - 1970.0
+  - 1990.0
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: 'It is perhaps surprising to see iron ore imports increase against
+    such a backdrop of growing headwinds for the Chinese economy. Nevertheless, according
+    to data from Oceanbolt, last week saw a record 28.7 million tonnes of iron ore
+    discharged in Chinese ports. '
+  unit: null
+  values:
+  - 28.7
 regions:
 - china
 - brazil

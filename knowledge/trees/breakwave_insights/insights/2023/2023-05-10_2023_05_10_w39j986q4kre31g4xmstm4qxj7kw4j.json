@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-05-10_2023_05_10_w39j986q4kre31g4xmstm4qxj7kw4j__root",
   "doc_id": "breakwave_insights_insights_2023-05-10_2023_05_10_w39j986q4kre31g4xmstm4qxj7kw4j",
   "parent_id": null,
-  "title": "W39J986Q4Kre31G4Xmstm4Qxj7Kw4J",
+  "title": "Gibson's Tanker Market Report",
   "section_path": [
-    "W39J986Q4Kre31G4Xmstm4Qxj7Kw4J"
+    "Gibson's Tanker Market Report"
   ],
-  "section_path_text": "W39J986Q4Kre31G4Xmstm4Qxj7Kw4J",
+  "section_path_text": "Gibson's Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "A Sign of the Times\nNorth Sea Brent, the main global benchmark for crude oil pricing is moving with the times to reflect new market realities. Originally based on North Sea production since the 1970s, questions have arisen in recent years over the benchmark's viability for pricing oil contracts, given the declining output of Brent and other North Sea grades with the implications this could have for trading liquidity. Brent has now been thrown a lifeline with the inclusion of US WTI crude into the dated Brent basket which should in theory alleviate concerns about volumes by significantly increasing the quantity of delivered crude into the North Sea basin, providing a liquidity boost going forward.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 594,
+  "token_count": 883,
   "source_path": "reports/breakwave/2023/2023-05-10_w39j986q4kre31g4xmstm4qxj7kw4j.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/5/10/w39j986q4kre31g4xmstm4qxj7kw4j",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 588,
+      "token_count": 639,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-10_2023_05_10_w39j986q4kre31g4xmstm4qxj7kw4j__s02_linked_asset_2023_05_10_w39j986q4kre31g4xmstm4qxj7kw4j_img_128529_d288d67d3dd1_png",
+      "doc_id": "breakwave_insights_insights_2023-05-10_2023_05_10_w39j986q4kre31g4xmstm4qxj7kw4j",
+      "parent_id": "breakwave_insights_insights_2023-05-10_2023_05_10_w39j986q4kre31g4xmstm4qxj7kw4j__root",
+      "title": "Linked asset: 2023-05-10_w39j986q4kre31g4xmstm4qxj7kw4j_img_128529_d288d67d3dd1.png",
+      "section_path": [
+        "Linked asset: 2023-05-10_w39j986q4kre31g4xmstm4qxj7kw4j_img_128529_d288d67d3dd1.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-10_w39j986q4kre31g4xmstm4qxj7kw4j_img_128529_d288d67d3dd1.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-10_w39j986q4kre31g4xmstm4qxj7kw4j_img_128529_d288d67d3dd1.png\n\nLinked image asset: 2023-05-10_w39j986q4kre31g4xmstm4qxj7kw4j_img_128529_d288d67d3dd1.png\n\nImage metadata: PNG 471x425 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nUS Crude Exports to Europe (kbd)\n1800\nSource: Kpler\n1600\n1400\n1200\n1000\n800\n600\n400\n200\noO\n2015 2016 2017 2018 2019 2020 2021 2022 2023",
+      "keywords": [
+        "europe",
+        "asset",
+        "image",
+        "source",
+        "crude",
+        "dpi",
+        "embedded",
+        "exports"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 194,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

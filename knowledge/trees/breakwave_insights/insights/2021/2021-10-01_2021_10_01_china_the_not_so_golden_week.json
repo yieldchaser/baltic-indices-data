@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2021-10-01_2021_10_01_china_the_not_so_golden_week__root",
   "doc_id": "breakwave_insights_insights_2021-10-01_2021_10_01_china_the_not_so_golden_week",
   "parent_id": null,
-  "title": "China The Not So Golden Week",
+  "title": "China: The Not So Golden Week",
   "section_path": [
-    "China The Not So Golden Week"
+    "China: The Not So Golden Week"
   ],
-  "section_path_text": "China The Not So Golden Week",
+  "section_path_text": "China: The Not So Golden Week",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\nThis Friday marks the beginning of the Chinese celebrations of its National Day and the following Golden Week. Contrary to last year, the festivities occur in the shadow of rising challenges for the Chinese economy. A year ago, manufacturing exports and imports of commodities were surging, prompting many pundits to believe that we were witnessing a new dawn.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 772,
+  "token_count": 1344,
   "source_path": "reports/breakwave/2021/2021-10-01_china-the-not-so-golden-week.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2021/10/1/china-the-not-so-golden-week",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 770,
+      "token_count": 843,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-10-01_2021_10_01_china_the_not_so_golden_week__s02_linked_asset_2021_10_01_china_the_not_so_golden_week_img_ch1_f510d3cda946_png",
+      "doc_id": "breakwave_insights_insights_2021-10-01_2021_10_01_china_the_not_so_golden_week",
+      "parent_id": "breakwave_insights_insights_2021-10-01_2021_10_01_china_the_not_so_golden_week__root",
+      "title": "Linked asset: 2021-10-01_china-the-not-so-golden-week_img_ch1_f510d3cda946.png",
+      "section_path": [
+        "Linked asset: 2021-10-01_china-the-not-so-golden-week_img_ch1_f510d3cda946.png"
+      ],
+      "section_path_text": "Linked asset: 2021-10-01_china-the-not-so-golden-week_img_ch1_f510d3cda946.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-10-01_china-the-not-so-golden-week_img_ch1_f510d3cda946.png\n\nLinked image asset: 2021-10-01_china-the-not-so-golden-week_img_ch1_f510d3cda946.png\n\nImage metadata: PNG 868x435 mode=P\n\nEmbedded info:\ndpi: (149.987, 149.987)\n\nOCR text:\nChinese Seaborne Import Volumes - Iron Ore and Coal\n120,0\n100,0\n2)\n2 80,0\nCc\n£\n= 60,0\n2\n= 40,0\nTA HEE\n0 tik\nJan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep\n2020 2021\n@lronOre ™Coal\nData source: Oceanbolt",
+      "keywords": [
+        "china",
+        "iron_ore",
+        "coal",
+        "apr",
+        "asset",
+        "aug",
+        "feb",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-10-01_2021_10_01_china_the_not_so_golden_week__s03_linked_asset_2021_10_01_china_the_not_so_golden_week_img_ch2_8dc7ed870f46_png",
+      "doc_id": "breakwave_insights_insights_2021-10-01_2021_10_01_china_the_not_so_golden_week",
+      "parent_id": "breakwave_insights_insights_2021-10-01_2021_10_01_china_the_not_so_golden_week__root",
+      "title": "Linked asset: 2021-10-01_china-the-not-so-golden-week_img_ch2_8dc7ed870f46.png",
+      "section_path": [
+        "Linked asset: 2021-10-01_china-the-not-so-golden-week_img_ch2_8dc7ed870f46.png"
+      ],
+      "section_path_text": "Linked asset: 2021-10-01_china-the-not-so-golden-week_img_ch2_8dc7ed870f46.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-10-01_china-the-not-so-golden-week_img_ch2_8dc7ed870f46.png\n\nLinked image asset: 2021-10-01_china-the-not-so-golden-week_img_ch2_8dc7ed870f46.png\n\nImage metadata: PNG 935x463 mode=P\n\nOCR text:\nGlobal Seaborne Export Volumes - Iron Ore and Coal\n450,0\n400,0\n350,0\nwn\n2 300,0\nCc\nS 250,0\n© 200,0\n= 150,0\n100,0\n50,0\n0,0\nQ1 Q2 Q3 4 Q1 Q2 Q3 Q4.Q1 Q2 03 Q4 Q1 Q2 03 24. Q1 Q2 Q3 24.Q1 Q2 Q3 A4 Q1 Q2 Q3\n2015 2016 2017 2018 2019 2020 2021\nMlron Ore Coal Data source: Oceanbolt",
+      "keywords": [
+        "china",
+        "iron_ore",
+        "coal",
+        "asset",
+        "image",
+        "ore",
+        "source",
+        "china-the-not-so-golden-week_img_ch2_8dc7ed870f46.png"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 239,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

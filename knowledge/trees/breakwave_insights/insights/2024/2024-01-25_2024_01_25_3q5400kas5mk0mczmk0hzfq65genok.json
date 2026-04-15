@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2024-01-25_2024_01_25_3q5400kas5mk0mczmk0hzfq65genok__root",
   "doc_id": "breakwave_insights_insights_2024-01-25_2024_01_25_3q5400kas5mk0mczmk0hzfq65genok",
   "parent_id": null,
-  "title": "3Q5400Kas5Mk0Mczmk0Hzfq65Genok",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "3Q5400Kas5Mk0Mczmk0Hzfq65Genok"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "3Q5400Kas5Mk0Mczmk0Hzfq65Genok",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nThe Baltic Dry Index retreated into the red on Tuesday amid headwinds for the capesizes. Among the commodities, base metals and iron ore were among the day's winners, while energy prices generally recorded modest moves. By Ulf Bergman\n\nMacro/Geopolitics\nAmid the continued challenges for the Chinese economy and an ongoing rout for the country's equity market, the People's Bank of China announced that it is lowering the required reserve ratio for the country's banks with effect from early February.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1414,
+  "token_count": 1812,
   "source_path": "reports/breakwave/2024/2024-01-25_3q5400kas5mk0mczmk0hzfq65genok.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2024/1/25/3q5400kas5mk0mczmk0hzfq65genok",
   "children": [
@@ -166,8 +166,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 454,
+      "token_count": 522,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2024-01-25_2024_01_25_3q5400kas5mk0mczmk0hzfq65genok__s06_linked_asset_2024_01_25_3q5400kas5mk0mczmk0hzfq65genok_img_unnamed_2024_01_25t083958688_641a194c3610_png",
+      "doc_id": "breakwave_insights_insights_2024-01-25_2024_01_25_3q5400kas5mk0mczmk0hzfq65genok",
+      "parent_id": "breakwave_insights_insights_2024-01-25_2024_01_25_3q5400kas5mk0mczmk0hzfq65genok__root",
+      "title": "Linked asset: 2024-01-25_3q5400kas5mk0mczmk0hzfq65genok_img_unnamed-2024-01-25t083958688_641a194c3610.png",
+      "section_path": [
+        "Linked asset: 2024-01-25_3q5400kas5mk0mczmk0hzfq65genok_img_unnamed-2024-01-25t083958688_641a194c3610.png"
+      ],
+      "section_path_text": "Linked asset: 2024-01-25_3q5400kas5mk0mczmk0hzfq65genok_img_unnamed-2024-01-25t083958688_641a194c3610.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2024/assets/2024-01-25_3q5400kas5mk0mczmk0hzfq65genok_img_unnamed-2024-01-25t083958688_641a194c3610.png\n\nLinked image asset: 2024-01-25_3q5400kas5mk0mczmk0hzfq65genok_img_unnamed-2024-01-25t083958688_641a194c3610.png\n\nImage metadata: PNG 1120x633 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Copper Discharging in China\n= Average cargo size Ml Order volumes\n125 20\n1 \\ nN A\n\\ IN » |- 15\n\\ | = ~ IN\n2 0.75 \\Z A\n3\n5 Hl\n8 3\n5 08 2\né\n5\n0.25\nO o\nDec-22 Jan-23 Feb-23 Mar-23 Apr-23 May-23 Jun-23 Jul-23 Aug-23 Sep-23 Oct-23 Nov-23 Dec-23 Jan-24\nData source: Shipfix",
+      "keywords": [
+        "china",
+        "asset",
+        "cargo",
+        "image",
+        "order",
+        "source",
+        "volumes",
+        "apr-23"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 278,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

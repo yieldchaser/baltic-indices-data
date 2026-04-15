@@ -25,7 +25,61 @@ keywords:
 - weaker
 - european
 - prices
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: cautiously_bearish
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil prices were under pressure early in the session as concerns
+    of weaker economic growth amid tighter monetary policies by central banks remained
+    the focus. However, prices rebounded sharply as investors viewed the selling as
+    overdone. An explosion at a
+  unit: pct
+  values:
+  - 10.0
+  - 2021.0
+  - 2025.0
+- section: Main
+  section_type: null
+  source_line: European natural gas edged lower to settle at its lowest level since
+    the start of the war in Ukraine. Dutch front month futures fell 3.7% to end the
+    session at EUR91.02/MWh as increased imports of LNG eased concerns of lower Russian
+    gas. At least 10 LNG tanker
+  unit: pct
+  values:
+  - 3.7
+  - 1.02
+  - 10.0
+  - 41.0
+  - 44.0
+  - 33.0
+  - 80.0
+  - 1.0
+  - 90.0
+  - 2.95
+- section: Main
+  section_type: null
+  source_line: European carbon extended losses as a weak auction compounded wider
+    bearish sentiment caused by EU proposals to raise billions of euros by selling
+    EUR20bn of permits allowances. Prices did manage to recover somewhat over the
+    afternoon to notch a 1.7% day-on-day
+  unit: pct
+  values:
+  - 1.7
+- section: Main
+  section_type: null
+  source_line: Base metals gained as a weaker USD helped offset concerns about weaker
+    economic growth. A slowdown in demand in China amid ongoing COVID-related restrictions
+    has driven those concerns. Nevertheless, fiscal stimulus measures and ongoing
+    supply side issues shoul
+  unit: usd
+  values:
+  - 2022.0
 regions:
 - china
 - brazil

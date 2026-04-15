@@ -25,7 +25,166 @@ keywords:
 - european
 - distillate
 - arb
+linked_assets_discovered: 5
+linked_assets_failed: 0
+linked_assets_ingested: 3
+linked_assets_mirrored: 3
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 16
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Image reference: Homepage+Banner+1.png | assets/2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png'
+  unit: null
+  values:
+  - 1.0
+  - 2023.0
+  - -11.0
+  - -23.0
+  - 5.0
+  - 211685255.0
+- section: Main
+  section_type: null
+  source_line: 'Image reference: assets/2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png'
+  unit: null
+  values:
+  - 2023.0
+  - -11.0
+  - -23.0
+  - 1.0
+  - 14100.0
+  - 5.0
+- section: Distillate Disconnect
+  section_type: null
+  source_line: The latest Eurozone manufacturing PMI reading for October came in at
+    43.1, falling further from September's reading of 43.4, both of which indicate
+    a contraction in regional economic activity. Weaker industrial output combined
+    with worsening consumer sentiment
+  unit: worldscale_pct
+  values:
+  - 43.1
+  - 43.4
+  - 2024.0
+  - 400.0
+  - 2023.0
+  - 100.0
+  - 90.0
+  - 2024.0
+  - 130.0
+  - 12.9
+- section: Distillate Disconnect
+  section_type: null
+  source_line: At the same time, regional middle distillate stocks are at their lowest
+    since the end of last year, however, we are not expecting to replicate the large
+    build seen ahead of the ban of Russian diesel into Europe last winter due to current
+    weak demand levels. Th
+  unit: null
+  values:
+  - 1.3
+  - 1.18
+  - 1.14
+- section: Eurozone Manufacturing PMI
+  section_type: null
+  source_line: 'Image reference: αρχείο λήψης (5).png | assets/2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png'
+  unit: null
+  values:
+  - 5.0
+  - 2023.0
+  - -11.0
+  - -23.0
+  - 1.0
+  - 7.0
+  - 8.0
+  - 34992.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png'
+  unit: null
+  values:
+  - 2023.0
+  - -11.0
+  - -23.0
+  - 5.0
+  - 211685255.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1500x427 mode=RGBA'
+  unit: null
+  values:
+  - 1500.0
+  - 27.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (71.9836, 71.9836)'
+  unit: null
+  values:
+  - 71.9836
+  - 71.9836
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png'
+  section_type: linked_image_asset
+  source_line: DAY 2023 <2. ee
+  unit: null
+  values:
+  - 2023.0
+  - 2.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png'
+  section_type: linked_image_asset
+  source_line: Dec. 7th - 10:00am to Noon (EST) "
+  unit: null
+  values:
+  - 7.0
+  - 10.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png'
+  unit: null
+  values:
+  - 2023.0
+  - -11.0
+  - -23.0
+  - 1.0
+  - 14100.0
+  - 5.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1500x153 mode=RGBA'
+  unit: null
+  values:
+  - 1500.0
+  - 53.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (299.9994, 299.9994)'
+  unit: null
+  values:
+  - 299.9994
+  - 299.9994
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png'
+  unit: null
+  values:
+  - 2023.0
+  - -11.0
+  - -23.0
+  - 1.0
+  - 7.0
+  - 8.0
+  - 34992.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1355x500 mode=RGBA'
+  unit: null
+  values:
+  - 1355.0
+- section: 'Linked asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (71.9836, 71.9836)'
+  unit: null
+  values:
+  - 71.9836
+  - 71.9836
 regions:
 - china
 - brazil
@@ -37,7 +196,7 @@ regions:
 - europe
 - india
 - singapore
-section_count: 2
+section_count: 6
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2023/2023-11-23_distillate-disconnect.html
@@ -73,6 +232,10 @@ vessel_classes:
 Distillate Disconnect
 The European oil demand outlook is back in focus ahead of this winter, as continued macroeconomic developments cast a shadow over the region's energy market. In particular, European distillate demand is expected to underperform as lower industrial activity, reduced road fuel demand and EV uptake gathers pace. With that in mind, one might question whether underlying demand levels are sufficient to sustain a bullish product tanker market.
 
+## Main
+Image reference: Homepage+Banner+1.png | assets/2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png
+Image reference: assets/2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png
+
 ## Distillate Disconnect
 The European oil demand outlook is back in focus ahead of this winter, as continued macroeconomic developments cast a shadow over the region's energy market. In particular, European distillate demand is expected to underperform as lower industrial activity, reduced road fuel demand and EV uptake gathers pace. With that in mind, one might question whether underlying demand levels are sufficient to sustain a bullish product tanker market.
 The latest Eurozone manufacturing PMI reading for October came in at 43.1, falling further from September's reading of 43.4, both of which indicate a contraction in regional economic activity. Weaker industrial output combined with worsening consumer sentiment is a clear sign that European demand is likely to remain under pressure into 2024. The latest IEA data shows OECD Europe gasoil demand decreased by 400 kbd in Q3, while overall demand for the whole of 2023 is expected to drop by 100 kbd, followed by a further fall of 90 kbd in 2024. The biggest reduction has been seen in Germany, where gasoil demand was 130 kbd lower year on year, a 12.9% decrease. Given Germany's position as the region's largest economy with a vast industrial and petrochemical sector, the outlook for Europe is increasingly bleak.
@@ -81,4 +244,48 @@ Nevertheless, there might be some cause for the product tanker sector to be opti
 If we see the arb economics translate into sustained higher volumes from the East to Europe for restocking, the LR2 and LR1 sectors should expect to find support from these long haul flows but the extent to which will depend on the health of the European economy which for now has a long way to go in terms of building the required demand strength and industrial activity needed to send a clear pricing signal to facilitate these higher future imports. For now, attention will remain on the state of the European macro environment and how this winter plays out.
 
 ## Eurozone Manufacturing PMI
+Image reference: αρχείο λήψης (5).png | assets/2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png
 Data source: Gibson Shipbrokers
+
+## Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png
+Source asset: reports/breakwave/2023/assets/2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png
+
+Linked image asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png
+
+Image metadata: PNG 1500x427 mode=RGBA
+
+Embedded info:
+dpi: (71.9836, 71.9836)
+
+OCR text:
+BREAKWAVE © pry BULK
+DAY 2023 <2. ee
+LIVE STREAM EVENT A T A NK E D S.
+Dec. 7th - 10:00am to Noon (EST) "
+
+## Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png
+Source asset: reports/breakwave/2023/assets/2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png
+
+Linked image asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png
+
+Image metadata: PNG 1500x153 mode=RGBA
+
+Embedded info:
+dpi: (299.9994, 299.9994)
+
+OCR text:
+BREAKWAVE DAY AGENDA
+
+## Linked asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png
+Source asset: reports/breakwave/2023/assets/2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png
+
+Linked image asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png
+
+Image metadata: PNG 1355x500 mode=RGBA
+
+Embedded info:
+dpi: (71.9836, 71.9836)
+
+OCR text:
+Wllltvveatee.
+pT I OO OO NO I nO

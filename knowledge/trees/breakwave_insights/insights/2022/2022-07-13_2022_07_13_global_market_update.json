@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1152,
+  "token_count": 1366,
   "source_path": "reports/breakwave/2022/2022-07-13_global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/7/13/global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 168,
+      "token_count": 204,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-07-13_2022_07_13_global_market_update__s06_linked_asset_2022_07_13_global_market_update_img_unnamed283729_6a09c1ae8801_png",
+      "doc_id": "breakwave_insights_insights_2022-07-13_2022_07_13_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-07-13_2022_07_13_global_market_update__root",
+      "title": "Linked asset: 2022-07-13_global-market-update_img_unnamed283729_6a09c1ae8801.png",
+      "section_path": [
+        "Linked asset: 2022-07-13_global-market-update_img_unnamed283729_6a09c1ae8801.png"
+      ],
+      "section_path_text": "Linked asset: 2022-07-13_global-market-update_img_unnamed283729_6a09c1ae8801.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-07-13_global-market-update_img_unnamed283729_6a09c1ae8801.png\n\nLinked image asset: 2022-07-13_global-market-update_img_unnamed283729_6a09c1ae8801.png\n\nImage metadata: PNG 1119x475 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Cargo Order Volumes (TCT & Voyage) for Coal Loading in Australian Ports ©\nSY 3Y Al\n2\n=\nRN\n&\nS 4M\nsail | ll | | 1 ll | | ili",
+      "keywords": [
+        "australia",
+        "coal",
+        "asset",
+        "image",
+        "australian",
+        "cargo",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 148,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

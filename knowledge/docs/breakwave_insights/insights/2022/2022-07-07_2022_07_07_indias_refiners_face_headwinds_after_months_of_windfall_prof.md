@@ -27,7 +27,74 @@ keywords:
 - exports
 - refiners
 - russia
+linked_assets_discovered: 6
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 6
 market_tone: cautiously_bearish
+numeric_observation_count: 5
+numeric_observations:
+- section: Indian refiners raise runs near operating limits in June, but signs of
+    slowdown emerging
+  section_type: null
+  source_line: Our assessment of Indian refiners' implied refinery runs, calculated
+    using crude imports net stock change, indicate that refiners have revved up crude
+    throughputs to near operating limits last month. A seasonal uptick in domestic
+    harvesting and road freight ac
+  unit: pct
+  values:
+  - 113.0
+  - 98.0
+  - 117.0
+  - 110.0
+- section: Diverging trends of Russia Baltic/ Black Sea versus Far East crude loadings
+    to India
+  section_type: null
+  source_line: Imports of discounted Russian crude have surged to over 1.1mbd in June,
+    marking a historical high. But recent weeks have seen a slowdown in Russian Baltic
+    and Black Sea crude cargoes heading to India, with loadings in June sliding to
+    a three-month low of 450kb
+  unit: null
+  values:
+  - 1.1
+  - 450.0
+- section: Diverging trends of Russia Baltic/ Black Sea versus Far East crude loadings
+    to India
+  section_type: null
+  source_line: In contrast to Russia's Baltic/ Black Sea crude exports, more ESPO
+    blend cargoes are heading to India, with three Aframax cargoes (or 75kbd) loaded
+    from Russia's Kozmino port in June compared to almost negligible volumes previously.
+    While still early days, thi
+  unit: null
+  values:
+  - 75.0
+- section: Clean product export hurdles ahead
+  section_type: null
+  source_line: With export margins surpassing domestic profitability, some refiners
+    have sought to increase exports to maximise profits while leaving their pumps
+    dry in the domestic market. To ensure energy security, the Indian government has
+    imposed regulations requiring ex
+  unit: pct
+  values:
+  - 30.0
+  - 50.0
+  - 6.0
+  - 13.0
+  - 704.0
+  - 1.35
+- section: India a crucial diesel supplier to Europe next year
+  section_type: null
+  source_line: 'India is the world''s third largest diesel exporter with 630kbd leaving
+    the country so far this year, ranking behind the US (1mbd) and Russia (950kbd),
+    but still slightly ahead of Saudi Arabia (610kbd). As such, the country is of
+    crucial importance once Europe '
+  unit: null
+  values:
+  - 630.0
+  - 1.0
+  - 950.0
+  - 610.0
 regions:
 - china
 - brazil

@@ -24,7 +24,23 @@ keywords:
 - but
 - money
 - remain
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: In reality, central bankers have long lamented their inability to escape
+    the Zero Interest Rate trap. Very low rates tend to cause pension deficits, an
+    anathema in an ageing society. And they tend to be the source of asset misallocation.
+    If a client is getting
+  unit: pct
+  values:
+  - 10.0
 regions:
 - china
 - brazil
@@ -53,7 +69,7 @@ themes:
 - inflation
 - banks
 - sticky
-title: Mazars Comment Sticky Inflation Sticky Rates Volatility
+title: 'Mazars Comment: Sticky inflation = sticky rates= volatility'
 vessel_classes:
 - capesize
 - panamax

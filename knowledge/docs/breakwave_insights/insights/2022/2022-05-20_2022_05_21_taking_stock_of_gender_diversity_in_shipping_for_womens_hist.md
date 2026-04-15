@@ -24,7 +24,63 @@ keywords:
 - maritime
 - roles
 - when
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: '1974: A small step and a giant leap for women'
+  section_type: null
+  source_line: In October of 1974, five previously all-male colleges of the University
+    of Oxford admitted female undergraduates for the first time in its 878 years of
+    history. There was however, another event that has gone largely undocumented,
+    even though it was in itself a
+  unit: null
+  values:
+  - 1974.0
+  - 878.0
+  - 2021.0
+- section: 'As David Bowie asked: Where Are We Now?'
+  section_type: null
+  source_line: 'The short answer to that question is: it depends where you look. TradeWinds
+    reported in a March 2021 article that in regions such as Scandinavia, the Mediterranean
+    and Asia, family ties in shipping companies often helped women break through barriers
+    to entry i'
+  unit: null
+  values:
+  - 2021.0
+- section: 'As David Bowie asked: Where Are We Now?'
+  section_type: null
+  source_line: Maria Dragoumerli, a naval architect interviewed for this newsletter
+    and fellow board member of the SPNL, was just a child when her father took her
+    to his workplace, a shipyard. It was there, surrounded by towering metal hulls
+    that she fell in love with the in
+  unit: worldscale_pct
+  values:
+  - 5.0
+  - 10.0
+  - 2018.0
+  - 6.0
+  - 2020.0
+- section: 'As David Bowie asked: Where Are We Now?'
+  section_type: null
+  source_line: 'Shipowning companies headed by women as of 2021, measured in tonnage
+    (Source: TradeWinds)'
+  unit: null
+  values:
+  - 2021.0
+- section: 'Shipping: Because I''m Worth It?'
+  section_type: null
+  source_line: 'The famous tagline associated with a famous cosmetics brand was actually
+    first coined in the 1970s as a campaign tag for the women''s rights movement of
+    the period. Shedding light on gender diversity, or the lack of, in the shipping
+    industry, begs the question '
+  unit: null
+  values:
+  - 1970.0
 regions:
 - china
 - brazil

@@ -27,7 +27,51 @@ keywords:
 - concerns
 - demand
 - economic
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: European natural gas steadied just below EUR100/MWh as warm weather
+    continues to ease concerns of shortages this winter. High temperatures are likely
+    to persist into November. A total of 29 heating-degree days is expected next week,
+    well below the 10-year aver
+  unit: null
+  values:
+  - 29.0
+  - 10.0
+  - 45.0
+- section: Main
+  section_type: null
+  source_line: Base metals remained under pressure as economic weakness in China weighs
+    on sentiment. A rout in Chinese equities earlier this week reflected broader concerns
+    about the nation's economic prospects after President Xi strengthened his control.
+    These concerns are
+  unit: pct
+  values:
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: Iron ore futures extended losses on pessimism over the demand outlook
+    in China. Major steel mills in China have seen their stockpiles rise by 8.6% m/m
+    in October amid subdued demand and rising output. Sentiment remains fragile as
+    concerns persist over the prop
+  unit: pct
+  values:
+  - 8.6
+  - 13.0
+- section: Main
+  section_type: null
+  source_line: The weaker USD helped push gold higher. Focus is now switching to the
+    Fed, who are expected to raise rate by 75bps next week.
+  unit: usd
+  values:
+  - 75.0
 regions:
 - china
 - brazil

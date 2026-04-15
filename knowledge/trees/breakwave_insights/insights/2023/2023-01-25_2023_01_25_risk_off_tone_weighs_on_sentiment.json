@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-01-25_2023_01_25_risk_off_tone_weighs_on_sentiment__root",
   "doc_id": "breakwave_insights_insights_2023-01-25_2023_01_25_risk_off_tone_weighs_on_sentiment",
   "parent_id": null,
-  "title": "Risk Off Tone Weighs On Sentiment",
+  "title": "Risk off tone weighs on sentiment",
   "section_path": [
-    "Risk Off Tone Weighs On Sentiment"
+    "Risk off tone weighs on sentiment"
   ],
-  "section_path_text": "Risk Off Tone Weighs On Sentiment",
+  "section_path_text": "Risk off tone weighs on sentiment",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA risk off tone across markets weighed on sentiment across the commodity sector. Profit taking ensued, with the energy sector experiencing the biggest losses. Crude oil fell amid a bearish tone across broader asset classes.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 606,
+  "token_count": 1044,
   "source_path": "reports/breakwave/2023/2023-01-25_risk-off-tone-weighs-on-sentiment.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/25/risk-off-tone-weighs-on-sentiment",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 604,
+      "token_count": 653,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-25_2023_01_25_risk_off_tone_weighs_on_sentiment__s02_linked_asset_2023_01_25_risk_off_tone_weighs_on_sentiment_img_1674594783717_0e7c31ca03b6_png",
+      "doc_id": "breakwave_insights_insights_2023-01-25_2023_01_25_risk_off_tone_weighs_on_sentiment",
+      "parent_id": "breakwave_insights_insights_2023-01-25_2023_01_25_risk_off_tone_weighs_on_sentiment__root",
+      "title": "Linked asset: 2023-01-25_risk-off-tone-weighs-on-sentiment_img_1674594783717_0e7c31ca03b6.png",
+      "section_path": [
+        "Linked asset: 2023-01-25_risk-off-tone-weighs-on-sentiment_img_1674594783717_0e7c31ca03b6.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-25_risk-off-tone-weighs-on-sentiment_img_1674594783717_0e7c31ca03b6.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-25_risk-off-tone-weighs-on-sentiment_img_1674594783717_0e7c31ca03b6.png\n\nLinked image asset: 2023-01-25_risk-off-tone-weighs-on-sentiment_img_1674594783717_0e7c31ca03b6.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 23-Jan Tue 24-Jan % chg Daily % chg Daily % chg\nccI 596.08 594.67 -0.2% Brent crude 86.11 -2.4% Gold 1,938\nPrecious 672.30 674.73 Thermal coal 359.60 -0.1% Palladium 1,741 -25.5%\nIndustrials 429.61 430.89 JKM LNG swaps 22.12 -4.9% Iron Ore 126.2 0.0%\nBulks 594.98 594.49 -0.1% Copper 9,306 -0.4% Hogs 2,300 0.0%\nAgs 316.34 316.32 0.0% Nickel 28,619 Corn 436 0.0%\nEnergy 849.39 845.36 -0.5% Aluminium 2,628 Wheat 495 0.0%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 348,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

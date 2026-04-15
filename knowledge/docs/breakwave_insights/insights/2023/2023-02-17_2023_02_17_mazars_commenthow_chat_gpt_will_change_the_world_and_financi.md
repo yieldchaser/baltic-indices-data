@@ -24,7 +24,97 @@ keywords:
 - financial
 - original
 - algorithms
+linked_assets_discovered: 6
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 6
 market_tone: cautiously_bearish
+numeric_observation_count: 9
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Markets didn't move much last week, as investors mull over the possibility
+    that the present rally may conflict with the harsh realities of rising interest
+    rates and a swiftly decelerating economy. However, one event stood out. Google's
+    stock lost 10%, nearly $
+  unit: pct
+  values:
+  - 10.0
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: 'Chat GPT is revolutionising the ‘answer''. No longer a list of things,
+    the chatbot actually synthesizes original natural-language answers to real questions
+    -even poorly phrased ones. The bot, launched last November, has gained over 100
+    million users, making it '
+  unit: null
+  values:
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: Just last week, ‘ChatGPT' appeared in 18,000 articles.
+  unit: null
+  values:
+  - 18000.0
+- section: Main
+  section_type: null
+  source_line: Critics will say that the level of English and discussion is that of
+    a high schooler. For the most part they are right. It presents information in
+    a simplistic ‘first-it-was-the-dinosaurs' fashion, which is why Chat GPT is initially
+    heavily used by students to
+  unit: null
+  values:
+  - 4.0
+  - 24.0
+- section: Main
+  section_type: null
+  source_line: 'To test it, I asked Chat GPT to synthesize an original 1,000 word
+    story, based on a short story I once wrote (which is how I knew it was original).
+    It came up with a decent story. Then I asked it to rewrite the story both in an
+    Edgar Allan Poe manner and then '
+  unit: null
+  values:
+  - 1000.0
+- section: Main
+  section_type: null
+  source_line: Anthropomorphism drives technology. Alexa and Siri are algorithms with
+    human names pretending to be helpers with human voices. In science fiction, the
+    ultimate goal is an anthropomorphic robot. Today's scientists grew up with Isaac
+    Asimov's ‘I Robot' and Ridle
+  unit: null
+  values:
+  - 2013.0
+- section: Main
+  section_type: null
+  source_line: In just two months, ChatGPT is changing the landscape for the tech
+    industry. Currently, the search engine world is dominated by Google, with a whopping
+    93% market share.
+  unit: pct
+  values:
+  - 93.0
+- section: Main
+  section_type: null
+  source_line: Google and Microsoft (Bing) have already announced that they are entering
+    the AI race, as they see the industry-changing disruption wrought by the chatbot.
+    Google, one of the biggest companies in the world, made $162 billion last year
+    from search engine servic
+  unit: pct
+  values:
+  - 162.0
+  - 60.0
+  - 175.0
+  - 200.0
+  - 10.0
+- section: Main
+  section_type: null
+  source_line: 'Chat GPT is already changing the world. It''s threatening to reshuffle
+    the search engine market, and with it change marketing for millions of firms globally.
+    To understand how much and how fast, we need but to travel to 1990, and remember
+    how different a world '
+  unit: null
+  values:
+  - 1990.0
 regions:
 - china
 - brazil

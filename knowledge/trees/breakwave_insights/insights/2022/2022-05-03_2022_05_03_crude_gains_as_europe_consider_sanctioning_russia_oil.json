@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-05-03_2022_05_03_crude_gains_as_europe_consider_sanctioning_russia_oil__root",
   "doc_id": "breakwave_insights_insights_2022-05-03_2022_05_03_crude_gains_as_europe_consider_sanctioning_russia_oil",
   "parent_id": null,
-  "title": "Crude Gains As Europe Consider Sanctioning Russia Oil",
+  "title": "Crude gains as Europe consider sanctioning Russia oil",
   "section_path": [
-    "Crude Gains As Europe Consider Sanctioning Russia Oil"
+    "Crude gains as Europe consider sanctioning Russia oil"
   ],
-  "section_path_text": "Crude Gains As Europe Consider Sanctioning Russia Oil",
+  "section_path_text": "Crude gains as Europe consider sanctioning Russia oil",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nWeak economic data in China weighed on sentiment early in the session. Thin liquidity was an issue with most markets closed for holidays. Crude oil fell in Asian trading after data showed the full impact of lockdowns in China.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 759,
+  "token_count": 1224,
   "source_path": "reports/breakwave/2022/2022-05-03_crude-gains-as-europe-consider-sanctioning-russia-oil.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/5/3/crude-gains-as-europe-consider-sanctioning-russia-oil",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 757,
+      "token_count": 808,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-05-03_2022_05_03_crude_gains_as_europe_consider_sanctioning_russia_oil__s02_linked_asset_2022_05_03_crude_gains_as_europe_consider_sanctioning_russia_oil_img_1651532693743_b27087e02ee2_png",
+      "doc_id": "breakwave_insights_insights_2022-05-03_2022_05_03_crude_gains_as_europe_consider_sanctioning_russia_oil",
+      "parent_id": "breakwave_insights_insights_2022-05-03_2022_05_03_crude_gains_as_europe_consider_sanctioning_russia_oil__root",
+      "title": "Linked asset: 2022-05-03_crude-gains-as-europe-consider-sanctioning-russia-oil_img_1651532693743_b27087e02ee2.png",
+      "section_path": [
+        "Linked asset: 2022-05-03_crude-gains-as-europe-consider-sanctioning-russia-oil_img_1651532693743_b27087e02ee2.png"
+      ],
+      "section_path_text": "Linked asset: 2022-05-03_crude-gains-as-europe-consider-sanctioning-russia-oil_img_1651532693743_b27087e02ee2.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-05-03_crude-gains-as-europe-consider-sanctioning-russia-oil_img_1651532693743_b27087e02ee2.png\n\nLinked image asset: 2022-05-03_crude-gains-as-europe-consider-sanctioning-russia-oil_img_1651532693743_b27087e02ee2.png\n\nImage metadata: PNG 1556x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nFri 29-Apr_ Mon 2-May % chg Daily % chg Daily % chg\nCCI 560.99 554.42 -1.2% Brent crude 107.8 Gold 1,862 -1.9%\nPrecious 648.54 636.99 -1.8% Thermal coal 299.80 -8.2% Palladium 2,190 -6.3%\nIndustrials 468.76 468.76 0.0% JKM LNG swaps 23.50 -0.8% Iron Ore 129.5 0.0%\nBulks 658.49 658.49 0.0% Copper 9,773 0.0% Hogs 2,350 0.0%\nAgs 340.44 339.67 -0.2% Nickel 31,747 0.0% Corn 445 0.0%\nEnergy 763.03 742.97 -2.6% Aluminium 3,036 0.0% Wheat 463 0.0%",
+      "keywords": [
+        "lng",
+        "china",
+        "europe",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 371,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

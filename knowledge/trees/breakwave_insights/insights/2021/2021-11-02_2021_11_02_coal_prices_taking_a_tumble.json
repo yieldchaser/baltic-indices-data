@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2021-11-02_2021_11_02_coal_prices_taking_a_tumble__root",
   "doc_id": "breakwave_insights_insights_2021-11-02_2021_11_02_coal_prices_taking_a_tumble",
   "parent_id": null,
-  "title": "Coal Prices Taking A Tumble",
+  "title": "Coal Prices Taking a Tumble",
   "section_path": [
-    "Coal Prices Taking A Tumble"
+    "Coal Prices Taking a Tumble"
   ],
-  "section_path_text": "Coal Prices Taking A Tumble",
+  "section_path_text": "Coal Prices Taking a Tumble",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\nThe new month has started rather dramatically for the coal markets. In the shadow of the United Nations' COP26 summit on climate change, market prices for what is perceived to be one of the largest culprits are tumbling. The first trading session of the month saw gC Newcastle thermal coal futures dropping by a third to 150 dollars per tonne, which is the lowest since the end of July.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 817,
+  "token_count": 1250,
   "source_path": "reports/breakwave/2021/2021-11-02_coal-prices-taking-a-tumble.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2021/11/2/coal-prices-taking-a-tumble",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 815,
+      "token_count": 887,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-11-02_2021_11_02_coal_prices_taking_a_tumble__s02_linked_asset_2021_11_02_coal_prices_taking_a_tumble_img_ch1_c976271a2b38_png",
+      "doc_id": "breakwave_insights_insights_2021-11-02_2021_11_02_coal_prices_taking_a_tumble",
+      "parent_id": "breakwave_insights_insights_2021-11-02_2021_11_02_coal_prices_taking_a_tumble__root",
+      "title": "Linked asset: 2021-11-02_coal-prices-taking-a-tumble_img_ch1_c976271a2b38.png",
+      "section_path": [
+        "Linked asset: 2021-11-02_coal-prices-taking-a-tumble_img_ch1_c976271a2b38.png"
+      ],
+      "section_path_text": "Linked asset: 2021-11-02_coal-prices-taking-a-tumble_img_ch1_c976271a2b38.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-11-02_coal-prices-taking-a-tumble_img_ch1_c976271a2b38.png\n\nLinked image asset: 2021-11-02_coal-prices-taking-a-tumble_img_ch1_c976271a2b38.png\n\nImage metadata: PNG 940x408 mode=RGBA\n\nOCR text:\nCoal\n275\n250\n225\n200\n175\n150\n125\n100\n75\nDec 2021 May Jul Sep Nov\nsource: trandingeconomics.com",
+      "keywords": [
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "coal-prices-taking-a-tumble_img_ch1_c976271a2b38.png",
+        "dec",
+        "jul",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 120,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-11-02_2021_11_02_coal_prices_taking_a_tumble__s03_linked_asset_2021_11_02_coal_prices_taking_a_tumble_img_ch2_590942f6c6f7_png",
+      "doc_id": "breakwave_insights_insights_2021-11-02_2021_11_02_coal_prices_taking_a_tumble",
+      "parent_id": "breakwave_insights_insights_2021-11-02_2021_11_02_coal_prices_taking_a_tumble__root",
+      "title": "Linked asset: 2021-11-02_coal-prices-taking-a-tumble_img_ch2_590942f6c6f7.png",
+      "section_path": [
+        "Linked asset: 2021-11-02_coal-prices-taking-a-tumble_img_ch2_590942f6c6f7.png"
+      ],
+      "section_path_text": "Linked asset: 2021-11-02_coal-prices-taking-a-tumble_img_ch2_590942f6c6f7.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-11-02_coal-prices-taking-a-tumble_img_ch2_590942f6c6f7.png\n\nLinked image asset: 2021-11-02_coal-prices-taking-a-tumble_img_ch2_590942f6c6f7.png\n\nImage metadata: PNG 942x479 mode=P\n\nOCR text:\nEuropean Seaborne Coal Imports\n25\n20\nWw\nVv\nCc\ne 15\nhes\nCc\n2 10\n= B Total\n|\n0\nc+ +> sts @ Pp cc Fs BS searpeecs Fseeaerees Fse\nSes ees sSr assess rsese ssrB\n2018 2019 2020 2021\nData source: Oceanbolt",
+      "keywords": [
+        "europe",
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "assess",
+        "coal-prices-taking-a-tumble_img_ch2_590942f6c6f7.png",
+        "data"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 178,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

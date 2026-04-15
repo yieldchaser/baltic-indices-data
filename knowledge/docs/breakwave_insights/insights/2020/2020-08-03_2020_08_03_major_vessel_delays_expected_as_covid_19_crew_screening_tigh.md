@@ -25,7 +25,40 @@ keywords:
 - causing
 - crew
 - day
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As the new month begins, it was a positive day for dry bulk rates with
+    futures moving higher and now standing well above 20,000/day for Capesizes for
+    the next several months. The upcoming seasonal increase in dry bulk demand is
+    ahead of us, but another unexpec
+  unit: null
+  values:
+  - 20000.0
+- section: Main
+  section_type: null
+  source_line: According to broker reports, in the last several days, China has increased
+    COVID-19 screening for crew members, which means longer delays in discharging
+    ports and thus higher congestion.
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: In fact, some agents are today reporting that the Lianyungang/LYG Municipal
+    Government is requesting all vessels who had called/visited foreign ports within
+    14 days (no matter had crew change or not) to quarantine at anchorage without
+    exception.
+  unit: null
+  values:
+  - 14.0
 regions:
 - china
 - brazil

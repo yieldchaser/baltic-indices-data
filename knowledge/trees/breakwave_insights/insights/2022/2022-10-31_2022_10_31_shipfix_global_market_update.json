@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-10-31_2022_10_31_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2022-10-31_2022_10_31_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nAs widely expected, the US economy bounced back in the third quarter following a contraction in the preceding three months. The 2.6 per cent quarter-on-quarter growth was marginally stronger than the consensus projection of 2.4 per cent. Much of the recovery was driven by an expansion for the export industry.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1073,
+  "token_count": 1418,
   "source_path": "reports/breakwave/2022/2022-10-31_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/10/31/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 194,
+      "token_count": 253,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-31_2022_10_31_shipfix_global_market_update__s06_linked_asset_2022_10_31_shipfix_global_market_update_img_unnamed_2022_10_31t115924317_6c8dbcc6c9d0_png",
+      "doc_id": "breakwave_insights_insights_2022-10-31_2022_10_31_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-10-31_2022_10_31_shipfix_global_market_update__root",
+      "title": "Linked asset: 2022-10-31_shipfix-global-market-update_img_unnamed-2022-10-31t115924317_6c8dbcc6c9d0.png",
+      "section_path": [
+        "Linked asset: 2022-10-31_shipfix-global-market-update_img_unnamed-2022-10-31t115924317_6c8dbcc6c9d0.png"
+      ],
+      "section_path_text": "Linked asset: 2022-10-31_shipfix-global-market-update_img_unnamed-2022-10-31t115924317_6c8dbcc6c9d0.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-31_shipfix-global-market-update_img_unnamed-2022-10-31t115924317_6c8dbcc6c9d0.png\n\nLinked image asset: 2022-10-31_shipfix-global-market-update_img_unnamed-2022-10-31t115924317_6c8dbcc6c9d0.png\n\nImage metadata: PNG 1119x562 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Soybeans Discharging in China by Origin (US, Brazil and RoW) ©\nSY 3Y Al\n2\nSay\n&\ni\n| | |\noO\nls | .. laallil, ' us i |\nRees Ju 203 Jui 2021 Jul 2022 Ju\nll #2 SOYABEAN / Brazil to China ml #1SOYABEAN/USto China ™ #3 SOYABEAN / to China",
+      "keywords": [
+        "china",
+        "brazil",
+        "grain",
+        "asset",
+        "image",
+        "soyabean",
+        "cargo",
+        "discharging"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 243,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

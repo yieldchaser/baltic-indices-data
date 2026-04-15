@@ -25,7 +25,54 @@ keywords:
 - generation
 - growth
 - tons
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's coal production in June totaled 379.3 million tons. This has
+    marked a month-on-month rise of 11.5 million tons (3%) and is up year-on-year
+    by 56.1 million tons (17%). While again not setting a record (as was previously
+    seen in March, December, November
+  unit: pct
+  values:
+  - 379.3
+  - 11.5
+  - 3.0
+  - 56.1
+  - 17.0
+  - 352.0
+- section: Main
+  section_type: null
+  source_line: It remains detrimental for China's coal import prospects that coal
+    production has stayed so strong. Also remaining concerning is that coal production
+    growth continues to fare much better than coal-derived electricity generation
+    growth. Coal-derived electricity
+  unit: pct
+  values:
+  - 455.3
+  - 50.8
+  - 13.0
+  - 26.0
+  - -5.0
+- section: Main
+  section_type: null
+  source_line: Also of note is that China's hydropower production ended up setting
+    a record last month from some heavy rain and more hydro stations being put into
+    operation recently. Hydropower output totaled 148.1 billion kilowatt hours in
+    June, which is up from May by 26.4
+  unit: pct
+  values:
+  - 148.1
+  - 26.4
+  - 22.0
+  - 33.9
+  - 30.0
 regions:
 - china
 - brazil

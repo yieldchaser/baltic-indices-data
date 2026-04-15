@@ -27,7 +27,30 @@ keywords:
 - trade
 - are
 - australian
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The continued strong demand, in combination with a tight supply situation,
+    has kept coal prices near the two-year high set in late March. China has been
+    facing production restrictions amid coal mine safety checks, while some production
+    suspensions, aiming at c
+  unit: null
+  values:
+  - 500.0
+  - 570.0
+- section: Main
+  section_type: null
+  source_line: Coal - 5-Year Price Development (USD/tonne)
+  unit: usd_per_unit
+  values:
+  - 5.0
 regions:
 - china
 - brazil

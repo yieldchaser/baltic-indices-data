@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-07-06_2022_07_06_crude_oil_plunges_amid_rising_recessionary_fears__root",
   "doc_id": "breakwave_insights_insights_2022-07-06_2022_07_06_crude_oil_plunges_amid_rising_recessionary_fears",
   "parent_id": null,
-  "title": "Crude Oil Plunges Amid Rising Recessionary Fears",
+  "title": "Crude oil plunges amid rising recessionary fears",
   "section_path": [
-    "Crude Oil Plunges Amid Rising Recessionary Fears"
+    "Crude oil plunges amid rising recessionary fears"
   ],
-  "section_path_text": "Crude Oil Plunges Amid Rising Recessionary Fears",
+  "section_path_text": "Crude oil plunges amid rising recessionary fears",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nRecession fears gripped commodity markets, with crude oil and metals suffering sharp losses. A stronger USD also weighed on investor sentiment. Crude oil prices slumped as fears of weaker demand amid slowing economic growth outweighed a fundamentally tight market.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 721,
+  "token_count": 1170,
   "source_path": "reports/breakwave/2022/2022-07-06_crude-oil-plunges-amid-rising-recessionary-fears.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/7/6/crude-oil-plunges-amid-rising-recessionary-fears",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 719,
+      "token_count": 771,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-07-06_2022_07_06_crude_oil_plunges_amid_rising_recessionary_fears__s02_linked_asset_2022_07_06_crude_oil_plunges_amid_rising_recessionary_fears_img_1657058201360_2c999b3505ed_png",
+      "doc_id": "breakwave_insights_insights_2022-07-06_2022_07_06_crude_oil_plunges_amid_rising_recessionary_fears",
+      "parent_id": "breakwave_insights_insights_2022-07-06_2022_07_06_crude_oil_plunges_amid_rising_recessionary_fears__root",
+      "title": "Linked asset: 2022-07-06_crude-oil-plunges-amid-rising-recessionary-fears_img_1657058201360_2c999b3505ed.png",
+      "section_path": [
+        "Linked asset: 2022-07-06_crude-oil-plunges-amid-rising-recessionary-fears_img_1657058201360_2c999b3505ed.png"
+      ],
+      "section_path_text": "Linked asset: 2022-07-06_crude-oil-plunges-amid-rising-recessionary-fears_img_1657058201360_2c999b3505ed.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-07-06_crude-oil-plunges-amid-rising-recessionary-fears_img_1657058201360_2c999b3505ed.png\n\nLinked image asset: 2022-07-06_crude-oil-plunges-amid-rising-recessionary-fears_img_1657058201360_2c999b3505ed.png\n\nImage metadata: PNG 878x249 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 4-Jul Tue 5-Jul % chg Daily % chg Daily % chg\nccl 645.71 641.63 -0.6% Brent crude 103. -9.3% Gold 1,765 -2.4%\nPrecious 626.79 611.44 -2.4% Thermal coal 397.60 Palladium 1,919 -17.9%\nIndustrials 377.16 364.77 -3.3% JKM LNG swaps 40.10 Iron Ore 109.2.",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 353,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

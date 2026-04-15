@@ -27,7 +27,65 @@ keywords:
 - products
 - gas
 - amid
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Zinc rallied after high energy costs in Europe forced further smelter
+    closures. Nyrstar said it will be closing its Budel smelter in the Netherlands
+    from 1 Sep until further notice. Zinc futures on the LME subsequently jumped as
+    much as 7.2% to the highest lev
+  unit: worldscale_pct
+  values:
+  - 1.0
+  - 7.2
+- section: Main
+  section_type: null
+  source_line: Iron ore futures rose in Singapore after BHP painted a positive picture
+    of Chinese demand. The world's biggest miner said it will study plans to expand
+    its iron ore unit due to a stronger demand outlook in China. CEO Mike Henry said
+    China's emergence from COVI
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: The prospect of an Iran nuclear deal continued to weigh on crude oil
+    prices. Brent futures fell 3.2% as talks between Iran and European Union negotiators
+    signalled progress on a renewal of the 2015 agreement. EU mediators had circulated
+    a final proposal last w
+  unit: pct
+  values:
+  - 3.2
+  - 2015.0
+  - 2018.0
+  - 2.5
+  - 2021.0
+  - 1.5
+- section: Main
+  section_type: null
+  source_line: 'European natural gas extended gains as soaring temperatures trigger
+    higher than normal demand. Dutch front month futures closed 2.6% higher while
+    electricity prices surged to record highs. The hot and dry weather is causing
+    river water levels to drop rapidly, '
+  unit: pct
+  values:
+  - 2.6
+- section: Main
+  section_type: null
+  source_line: North Asian LNG prices edged higher to reach its highest level in five
+    months amid the global supply crunch. Japan/Korea Marker, the Asian benchmark
+    spot LNG price, jumped above USD56/MMBtu. Asian buyers are moving to procure supply
+    for winter. Japan's top LNG
+  unit: usd
+  values:
+  - 6.0
 regions:
 - china
 - brazil

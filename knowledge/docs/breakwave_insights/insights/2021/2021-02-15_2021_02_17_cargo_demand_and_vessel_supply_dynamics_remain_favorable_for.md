@@ -25,7 +25,50 @@ keywords:
 - volume
 - year
 - handymax
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: If Chinese coal import demand surprises on the upside this year (we
+    are already bullish), there is a good chance that 2021 could end up as one of
+    the best dry bulk markets in recent memory. China's economy continues to fare
+    very well. As we have also discussed
+  unit: null
+  values:
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: 'Approximately 44 dry bulk newbuildings were delivered last month.
+    This is 16 more than were delivered in December. Last month saw the delivery of
+    5 handysize vessels, 9 handymax vessels, 16 panamax vessels, and 14 capesize vessels.
+    In comparison, December saw '
+  unit: null
+  values:
+  - 44.0
+  - 16.0
+  - 5.0
+  - 9.0
+  - 16.0
+  - 14.0
+  - 4.0
+  - 7.0
+  - 5.0
+  - 11.0
+- section: Main
+  section_type: null
+  source_line: Last month's delivery volume has marked the largest amount seen since
+    June. Overall, it is extremely common for dry bulk newbuilding delivery volume
+    to jump in January. What is particularly encouraging for this year, though, is
+    that January's delivery volume h
+  unit: null
+  values:
+  - 2021.0
 regions:
 - china
 - brazil

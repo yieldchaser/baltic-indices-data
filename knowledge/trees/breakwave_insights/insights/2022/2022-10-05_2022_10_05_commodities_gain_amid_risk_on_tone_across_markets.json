@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-10-05_2022_10_05_commodities_gain_amid_risk_on_tone_across_markets__root",
   "doc_id": "breakwave_insights_insights_2022-10-05_2022_10_05_commodities_gain_amid_risk_on_tone_across_markets",
   "parent_id": null,
-  "title": "Commodities Gain Amid Risk On Tone Across Markets",
+  "title": "Commodities gain amid risk-on tone across markets",
   "section_path": [
-    "Commodities Gain Amid Risk On Tone Across Markets"
+    "Commodities gain amid risk-on tone across markets"
   ],
-  "section_path_text": "Commodities Gain Amid Risk On Tone Across Markets",
+  "section_path_text": "Commodities gain amid risk-on tone across markets",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nCommodities rallied as concerns over further tightening eased. This was compounded by a rally in energy amid ongoing supply side issues. Crude oil prices surged higher amid speculation that OPEC is considering an even larger cut to production than first thought.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 707,
+  "token_count": 1118,
   "source_path": "reports/breakwave/2022/2022-10-05_commodities-gain-amid-risk-on-tone-across-markets.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/10/5/commodities-gain-amid-risk-on-tone-across-markets",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 705,
+      "token_count": 756,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-05_2022_10_05_commodities_gain_amid_risk_on_tone_across_markets__s02_linked_asset_2022_10_05_commodities_gain_amid_risk_on_tone_across_markets_img_1664922775917_7b382b8127c3_png",
+      "doc_id": "breakwave_insights_insights_2022-10-05_2022_10_05_commodities_gain_amid_risk_on_tone_across_markets",
+      "parent_id": "breakwave_insights_insights_2022-10-05_2022_10_05_commodities_gain_amid_risk_on_tone_across_markets__root",
+      "title": "Linked asset: 2022-10-05_commodities-gain-amid-risk-on-tone-across-markets_img_1664922775917_7b382b8127c3.png",
+      "section_path": [
+        "Linked asset: 2022-10-05_commodities-gain-amid-risk-on-tone-across-markets_img_1664922775917_7b382b8127c3.png"
+      ],
+      "section_path_text": "Linked asset: 2022-10-05_commodities-gain-amid-risk-on-tone-across-markets_img_1664922775917_7b382b8127c3.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-05_commodities-gain-amid-risk-on-tone-across-markets_img_1664922775917_7b382b8127c3.png\n\nLinked image asset: 2022-10-05_commodities-gain-amid-risk-on-tone-across-markets_img_1664922775917_7b382b8127c3.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 3-Oct Tue 4-Oct % chg Daily % chg Daily % chg\nccI 630.47 635.64 Brent crude 91.81 Gold 1,724\nPrecious 591.72 600.23 Thermal coal 404.00 Palladium 2,324 -0.6%\nIndustrials 355.11 366.94 JKM LNG swaps 38.20 Iron Ore 101.7 0.0%\nBulks 522.12 522.12 0.0% Copper 7,815 Hogs 3,400 0.0%\nAgs 377.55 377.85 Nickel 21,934 Corn 398 0.0%\nEnergy 955.65 964.56 Aluminium 2,348 Wheat 429 0.0%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 317,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

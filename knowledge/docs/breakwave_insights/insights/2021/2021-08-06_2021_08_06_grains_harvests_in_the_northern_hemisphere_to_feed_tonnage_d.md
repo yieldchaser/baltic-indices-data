@@ -26,7 +26,68 @@ keywords:
 - grains
 - million
 - chinese
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Despite the negative impact of the weather in some parts of the world,
+    the International Grain Council (IGC) is anticipating, as of the end of July,
+    that the marketing year will deliver a record-breaking global crop of wheat and
+    coarse grains at around 2.3 bil
+  unit: null
+  values:
+  - 2.3
+- section: Main
+  section_type: null
+  source_line: The global production of soybeans in the 2021/22 marketing year is
+    predicted by the IGC to increase by nineteen million tonnes to a record of 382
+    million tonnes, with the growth primarily linked to an increased acreage among
+    the major producers. The consumptio
+  unit: null
+  values:
+  - 2021.0
+  - 22.0
+  - 382.0
+  - 60.0
+  - 58.0
+- section: Main
+  section_type: null
+  source_line: 'So far this year, 41 million tonnes of Brazilian grains and oilseeds
+    have been discharged in Chinese ports. This has allowed Brazil to reclaim its
+    traditional top spot among the exporters of agricultural commodities to China,
+    at least temporarily. At the same '
+  unit: null
+  values:
+  - 41.0
+- section: Main
+  section_type: null
+  source_line: Beyond the giants of the grains trade, Argentina is stating that the
+    country is expecting a record harvest during the 2021/22 marketing year. Both
+    wheat and corn are expected to produce record harvests, according to recent data
+    from the US Department of Agricu
+  unit: null
+  values:
+  - 2021.0
+  - 22.0
+  - 51.5
+- section: Main
+  section_type: null
+  source_line: The Black Sea region is also expected to see increasing export shipments
+    of agricultural commodities, which is primarily driven by the rising output in
+    Russia. The authorities in the Krasnodar region in Southern Russia, which is one
+    of the country's largest wh
+  unit: null
+  values:
+  - 12.4
+  - 2015.0
+  - 38.0
+  - 30.0
 regions:
 - china
 - brazil

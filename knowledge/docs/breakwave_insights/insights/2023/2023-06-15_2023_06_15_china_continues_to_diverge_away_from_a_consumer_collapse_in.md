@@ -25,7 +25,26 @@ keywords:
 - industrial
 - months
 - much
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: While China's retail sales data at the time of writing is still pending
+    for May, of note is that inflation in May grew year-on-year by only 0.2%. This
+    is close to April's 0.1% growth (which marked the lowest inflation seen since
+    February 2021), and it is all b
+  unit: pct
+  values:
+  - 0.2
+  - 0.1
+  - 2021.0
+  - 2022.0
 regions:
 - china
 - brazil

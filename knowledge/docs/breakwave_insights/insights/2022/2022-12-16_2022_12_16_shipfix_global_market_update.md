@@ -24,7 +24,178 @@ keywords:
 - singapore
 - iron_ore
 - coal
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 1
+linked_assets_mirrored: 1
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 15
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: 'US inflation in November was lower than expected by the market, with
+    the annual rate retreating to 7.1 per cent from 7.7 per cent in October. The latest
+    reading also failed to match the consensus expectation of 7.3 per cent. The softer
+    inflation data led to a '
+  unit: null
+  values:
+  - 7.1
+  - 7.7
+  - 7.3
+  - 50.0
+- section: Commodity Markets
+  section_type: null
+  source_line: A weaker dollar and an improving demand outlook in the wake of the
+    weaker-than-expected US inflation data contributed to crude oil prices extending
+    Monday's gains yesterday. The Brent futures gained 3.4 per cent during yesterday's
+    trading session and settled a
+  unit: null
+  values:
+  - 3.4
+  - 80.68
+- section: Commodity Markets
+  section_type: null
+  source_line: European natural gas prices recovered some of Monday's losses yesterday,
+    with the front-month futures gaining 0.7 per cent for the day to settle at 137.53
+    euros per megawatt-hour. In the US, natural gas prices continued to surge amid
+    higher demand due to colde
+  unit: null
+  values:
+  - 0.7
+  - 137.53
+- section: Commodity Markets
+  section_type: null
+  source_line: Thermal coal futures experienced a day of somewhat mixed fortunes on
+    Tuesday. The Newcastle futures for delivery in January reacted positively to the
+    weaker dollar and settled at 278 dollars per tonne, following a daily gain of
+    1.2 per cent. In contrast, the c
+  unit: null
+  values:
+  - 278.0
+  - 1.2
+  - 0.3
+  - 235.0
+- section: Commodity Markets
+  section_type: null
+  source_line: After gaining more than five per cent last week, the iron ore futures
+    trading on the Singapore Exchange have given some of the gains during the week's
+    first two sessions. The January contracts shed 0.5 per cent on Tuesday and settled
+    below 109 dollars per tonn
+  unit: null
+  values:
+  - 0.5
+  - 109.0
+- section: Commodity Markets
+  section_type: null
+  source_line: Most of the base metals benefitted from yesterday's rebound in investors'
+    risk appetite. The copper and zinc futures trading on the London Metal Exchange
+    advanced by 1.5 per cent, while the aluminium contracts saw gains of nearly two
+    per cent for the day. Howe
+  unit: null
+  values:
+  - 1.5
+  - 4.2
+- section: Commodity Markets
+  section_type: null
+  source_line: 'For the agricultural commodities trading in Chicago, yesterday''s
+    session ended with only limited moves for the day, The wheat futures had retreated
+    by half a per cent at closing, while the corn contracts registered a marginal
+    0.1 per cent loss for the day. In '
+  unit: null
+  values:
+  - 0.1
+  - 0.7
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: Ahead of the release of US inflation data, dry bulk freight rates remained
+    under pressure, with most of the Baltic Exchange's indices in the red yesterday.
+    The sub-index for the Capesizes was the day's weakest performer amid a loss of
+    1.1 per cent. The gauge f
+  unit: null
+  values:
+  - 1.1
+  - 0.6
+  - 0.4
+  - 1.2
+  - 0.3
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: Among the Baltic's wet freight rate indicators, only the clean tanker
+    index remained in the black yesterday, following a gain of 1.4 per cent. In contrast,
+    the gauge for the dirty tankers retreated by 0.9 per cent. The freight rates for
+    the gas carriers also d
+  unit: null
+  values:
+  - 1.4
+  - 0.9
+  - 3.2
+  - 0.2
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: Bunker prices staged a modest recovery yesterday amid rising crude
+    oil prices after an extensive run of daily declines. The rebound in Singapore
+    was modest, with the VLSFO gaining 0.4 per cent to 587 dollars per metric tonne.
+    However, the gains were more subst
+  unit: null
+  values:
+  - 0.4
+  - 587.0
+  - 3.4
+  - 2.4
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: The wheat futures trading in Chicago have declined by more than forty
+    per cent since their peak in May and are currently near the lowest levels since
+    October 2021. The Russian invasion of Ukraine initially fuelled fears that global
+    supplies would be insufficie
+  unit: null
+  values:
+  - 2021.0
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: 'Image reference: unnamed - 2022-12-16T130913.445.png | assets/2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png'
+  unit: null
+  values:
+  - 2022.0
+  - -12.0
+  - -16.0
+  - 30913.445
+  - 2022.0
+  - -12.0
+  - -16.0
+  - 2022.0
+  - -12.0
+  - -16.0
+- section: 'Linked asset: 2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png'
+  unit: null
+  values:
+  - 2022.0
+  - -12.0
+  - -16.0
+  - 2022.0
+  - -12.0
+  - -16.0
+  - 30913445.0
+  - 73.0
+  - 6.0
+  - 9.0
+- section: 'Linked asset: 2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1118x488 mode=RGB'
+  unit: null
+  values:
+  - 1118.0
+  - 88.0
+- section: 'Linked asset: 2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (71.9836, 71.9836)'
+  unit: null
+  values:
+  - 71.9836
+  - 71.9836
 regions:
 - china
 - brazil
@@ -35,7 +206,7 @@ regions:
 - west_africa
 - europe
 - singapore
-section_count: 5
+section_count: 6
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2022/2022-12-16_shipfix-global-market-update.html
@@ -60,7 +231,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax
@@ -102,5 +273,27 @@ Bunker prices staged a modest recovery yesterday amid rising crude oil prices af
 ## The View from the Shipfix Desk
 The wheat futures trading in Chicago have declined by more than forty per cent since their peak in May and are currently near the lowest levels since October 2021. The Russian invasion of Ukraine initially fuelled fears that global supplies would be insufficient, with prices gaining substantially as a result. However, a deal that has allowed Ukrainian seaborne exports of grains to recommend and a very sizeable Russian wheat harvest have put considerable pressure on global prices.
 Despite sanctions and other disruptions to Russian trade flows, the year's record wheat harvest has seen cargo order volumes for the grain loading in the country's ports surging since the beginning of the third quarter. While October and November failed to match the September volumes, they were among the highest ever recorded. However, the current month has seen a slow start to ordering activities, suggesting that Russian wheat exports will start to ease off in the coming months.
+Image reference: unnamed - 2022-12-16T130913.445.png | assets/2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png
 The easing of the Chinese Covid restrictions has been eagerly awaited by many in the commodity and dry bulk markets, as a reopening of the Chinese economy could be expected to boost demand. Still, the Chinese economy is facing considerable headwinds, and the economic revival may fail to impress.
 Data Source: Shipfix
+
+## Linked asset: 2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png
+Source asset: reports/breakwave/2022/assets/2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png
+
+Linked image asset: 2022-12-16_shipfix-global-market-update_img_unnamed-2022-12-16t130913445_d473c4a36d39.png
+
+Image metadata: PNG 1118x488 mode=RGB
+
+Embedded info:
+dpi: (71.9836, 71.9836)
+
+OCR text:
+Monthly Cargo Order Volumes (TCT & Voyage) for Wheat Loading in Russia ©
+SY 3Y All
+2
+2 4M
+gi
+ix
+°o
+2
+: Tee) Jul NAOT Ju no Jul eK) Jul

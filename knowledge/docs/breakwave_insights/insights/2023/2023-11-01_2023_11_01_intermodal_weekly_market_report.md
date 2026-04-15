@@ -26,7 +26,53 @@ keywords:
 - demand
 - east
 - global
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: In a week characterized by a 1.8% drop in Brent crude prices and a
+    slight 0.1% uptick in WTI, conflicting viewpoints on the trajectory of global
+    oil demand have come to the forefront. The International Energy Agency (IEA) has
+    offered a starkly different analys
+  unit: pct
+  values:
+  - 1.8
+  - 0.1
+  - 2030.0
+- section: Main
+  section_type: null
+  source_line: Taking a closer look at the Mediterranean, we can see that since the
+    start of hostilities in the Middle East on 7 October, freight rates for both dirty
+    and clean tankers have soared. In particular, the TD6 TCE, which follows Suezmaxes
+    from the Black Sea to the
+  unit: worldscale_pct
+  values:
+  - 7.0
+  - 631.0
+  - 77999.0
+  - 30.0
+  - 9.0
+  - 336.0
+  - 81530.0
+- section: Main
+  section_type: null
+  source_line: On the clean trade, the TC15, which tracks LR1s loading in the Mediterranean
+    and heading to the Far East, was up a modest 27%, while the Cross Med TC6 was
+    up 109% to $8,369/day and $25,959/day respectively. Adding further fuel to the
+    rally, European refined pr
+  unit: worldscale_pct
+  values:
+  - 5.0
+  - 27.0
+  - 109.0
+  - 8369.0
+  - 25959.0
 regions:
 - china
 - brazil

@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1037,
+  "token_count": 1490,
   "source_path": "reports/breakwave/2024/2024-01-22_doric-weekly-market-insight.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2024/1/22/doric-weekly-market-insight",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 997,
+      "token_count": 1063,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2024-01-22_2024_01_22_doric_weekly_market_insight__s02_linked_asset_2024_01_22_doric_weekly_market_insight_img_1_c182fa390415_png",
+      "doc_id": "breakwave_insights_insights_2024-01-22_2024_01_22_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2024-01-22_2024_01_22_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2024-01-22_doric-weekly-market-insight_img_1_c182fa390415.png",
+      "section_path": [
+        "Linked asset: 2024-01-22_doric-weekly-market-insight_img_1_c182fa390415.png"
+      ],
+      "section_path_text": "Linked asset: 2024-01-22_doric-weekly-market-insight_img_1_c182fa390415.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2024/assets/2024-01-22_doric-weekly-market-insight_img_1_c182fa390415.png\n\nLinked image asset: 2024-01-22_doric-weekly-market-insight_img_1_c182fa390415.png\n\nImage metadata: PNG 452x243 mode=RGBA\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChina - Producer Price Index (Industrial Sector)\n15%\n10%\n5%\n0%\n-5% -EE ~\n-10% ---\nPS PP DY DY DH DP YP\nFF KF PF KF YF K YF SK YL\nSource: NBS, Doric Research",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "source",
+        "doric",
+        "doric-weekly-market-insight_img_1_c182fa390415.png",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 155,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2024-01-22_2024_01_22_doric_weekly_market_insight__s03_linked_asset_2024_01_22_doric_weekly_market_insight_img_2_264291d0c939_png",
+      "doc_id": "breakwave_insights_insights_2024-01-22_2024_01_22_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2024-01-22_2024_01_22_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2024-01-22_doric-weekly-market-insight_img_2_264291d0c939.png",
+      "section_path": [
+        "Linked asset: 2024-01-22_doric-weekly-market-insight_img_2_264291d0c939.png"
+      ],
+      "section_path_text": "Linked asset: 2024-01-22_doric-weekly-market-insight_img_2_264291d0c939.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2024/assets/2024-01-22_doric-weekly-market-insight_img_2_264291d0c939.png\n\nLinked image asset: 2024-01-22_doric-weekly-market-insight_img_2_264291d0c939.png\n\nImage metadata: PNG 934x290 mode=RGBA\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\n3000\n2500\n2000\n1500\n1000\n500\n0\n4-Jan 11-Jan 18-Jan 25-Jan 1-Feb 8-Feb 15-Feb 22-Feb 1-Mar 8-Mar 15-Mar 22-Mar 29-Mar\nee 2021 wre 2022 ne 2023 ummm 2024",
+      "keywords": [
+        "mar",
+        "feb",
+        "jan",
+        "asset",
+        "image",
+        "doric-weekly-market-insight_img_2_264291d0c939.png",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 174,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -26,7 +26,142 @@ keywords:
 - europe
 - singapore
 - iron_ore
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 12
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: In the US, the services PMI exceeded expectations by quite a margin
+    with a reading of 55.1. In contrast, the manufacturing sector in the world's largest
+    economy failed to live up to consensus projections. A reading of 48.5 suggested
+    that US Industrial producti
+  unit: null
+  values:
+  - 55.1
+  - 48.5
+- section: Commodity Markets
+  section_type: null
+  source_line: Despite continued concerns over a US default as a deal to raise the
+    debt ceiling remained elusive, crude oil prices advanced yesterday. The mood turned
+    bullish as Saudi Arabia's top energy official warned that short positions in the
+    crude oil market could beco
+  unit: null
+  values:
+  - 1.1
+  - 76.84
+- section: Commodity Markets
+  section_type: null
+  source_line: 'European natural gas prices extended on Monday''s losses yesterday
+    as demand remained weak in a well-supplied market. The front-month futures declined
+    by 2.0 per cent and ended Tuesday''s session at 29.13 euros per Megawatt-hour.
+    It was the lowest closing price '
+  unit: null
+  values:
+  - 2.0
+  - 29.13
+  - 2021.0
+  - 90.0
+- section: Commodity Markets
+  section_type: null
+  source_line: After a few days of gains, the coal markets came under renewed pressure
+    yesterday amid softening demand and falling natural gas prices. The Newcastle
+    futures for delivery next month shed 1.3 per cent and ended Tuesday's session
+    at 161.25 dollars per tonne. The
+  unit: null
+  values:
+  - 1.3
+  - 161.25
+  - 2.4
+  - 105.0
+- section: Commodity Markets
+  section_type: null
+  source_line: The front-month iron ore futures listed on the Singapore Exchange extended
+    losses into a fourth consecutive day on Tuesday as concerns over the demand outlook
+    amid soft economic data weighed on prices. The contracts ended the session marginally
+    below 100 dolla
+  unit: null
+  values:
+  - 100.0
+  - 2.1
+- section: Commodity Markets
+  section_type: null
+  source_line: The soft economic data and a stronger dollar weighed on the base metals
+    yesterday. The copper three-month futures listed on the LME declined by 0.3 per
+    cent yesterday, while the aluminium and nickel contracts recorded daily losses
+    in excess of 1.5 per cent. Zi
+  unit: null
+  values:
+  - 0.3
+  - 1.5
+  - 2.4
+- section: Commodity Markets
+  section_type: null
+  source_line: Grains and oilseed remained volatile yesterday as contradicting signals
+    fuelled continued price swings. While the Black Sea Grain Initiative has been
+    extended, concerns are building over how much seaborne exports will transit the
+    safe corridor amid rising geop
+  unit: usd
+  values:
+  - 2.6
+  - 0.6
+  - 1.4
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: The narrative of the recent days remained intact for the Baltic Exchange's
+    dry bulk freight indices, with all of the indicators in the red for a ninth consecutive
+    session. The headline Baltic Dry Index declined by 1.2 per cent. However, in contrast
+    to recent s
+  unit: null
+  values:
+  - 1.2
+  - 1.9
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: For the Baltic's wet freight indices, performances remained mixed on
+    Tuesday. The dirty tanker index shed 0.6 per cent, while the gauge for their clean
+    relatives advanced by 8.3 per cent. For the liquified gas carriers, the LPG index
+    remained the strong perfor
+  unit: null
+  values:
+  - 0.6
+  - 8.3
+  - 1.7
+  - 2.3
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: While MGO prices in the world's leading ports remain broadly unchanged
+    for the month to date, VLSFO has recorded significant losses since the end of
+    April. Falling crude oil prices have contributed to VLSFO declining by 5.9 per
+    cent in Houston and 2.9 per cent
+  unit: null
+  values:
+  - 5.9
+  - 2.9
+  - 0.8
+  - 1.5
+  - 0.8
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: While European front-month coal futures have recovered somewhat after
+    briefly dropping below 100 dollars per tonne last week, they still remain close
+    to the lowest levels recorded in nearly two years. Ample supplies of natural gas
+    amid robust inflows of seabor
+  unit: null
+  values:
+  - 100.0
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: Average cargo sizes for coal shipped from the US to Europe increased
+    slightly in May to around 60,000 tonnes. In contrast, the typical cargo size for
+    coal exported from the distant terminals in Australia has decreased sharply month-to-date.
+  unit: null
+  values:
+  - 60000.0
 regions:
 - china
 - brazil
@@ -61,7 +196,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax

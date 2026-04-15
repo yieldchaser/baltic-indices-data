@@ -26,7 +26,35 @@ keywords:
 - products
 - new
 - chinese
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: For imports of commodities, the month of December proved to be a bit
+    less rosy in China. Many commodities, such as iron ore, copper and oil, saw reduced
+    volumes imported, both on a month-on-month and year-on-year basis. Coal was one
+    of the exceptions among the
+  unit: null
+  values:
+  - 200.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: Economists survey by Reuters are also expecting the fourth quarter
+    growth, which is reported on Monday, to show an accelerating economy growing 6.1
+    percent compared to a year earlier. This would also be a stronger than the growth
+    in the third quarter and provi
+  unit: null
+  values:
+  - 6.1
+  - 8.4
+  - 2021.0
 regions:
 - china
 - brazil

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-07-19_2023_07_19_oil_gains_amid_further_evidence_of_supply_cuts__root",
   "doc_id": "breakwave_insights_insights_2023-07-19_2023_07_19_oil_gains_amid_further_evidence_of_supply_cuts",
   "parent_id": null,
-  "title": "Oil Gains Amid Further Evidence Of Supply Cuts",
+  "title": "Oil gains amid further evidence of supply cuts",
   "section_path": [
-    "Oil Gains Amid Further Evidence Of Supply Cuts"
+    "Oil gains amid further evidence of supply cuts"
   ],
-  "section_path_text": "Oil Gains Amid Further Evidence Of Supply Cuts",
+  "section_path_text": "Oil gains amid further evidence of supply cuts",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nEarly losses following weak economic data were reversed as the spectre of an end to the interest rate hike cycle increased. Base metals edged lower following Monday's sell-off as concerns over Chinese demand continue to emanate across the sector. China's Q2 GDP grew 6.3% y/y, posing challenges to growth in the second half of this year.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 615,
+  "token_count": 1059,
   "source_path": "reports/breakwave/2023/2023-07-19_oil-gains-amid-further-evidence-of-supply-cuts.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/7/19/oil-gains-amid-further-evidence-of-supply-cuts",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "By Daniel Hynes\nEarly losses following weak economic data were reversed as the spectre of an end to the interest rate hike cycle increased. Base metals edged lower following Monday's sell-off as concerns over Chinese demand continue to emanate across the sector.",
+      "summary": "By Daniel Hynes\nEarly losses following weak economic data were reversed as the spectre of an end to the interest rate hike cycle increased. Image reference: Screenshot 2023-07-19 13.40.33.png | assets/2023-07-19_oil-gains-amid-further-evidence-of-supply-cuts_img_screenshot2023-07-19134033_343520d46df8.png\nBase metals edged lower following Monday's sell-off as concerns over Chinese demand continue to emanate across the sector.",
       "keywords": [
         "lng",
         "china",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 613,
+      "token_count": 676,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-19_2023_07_19_oil_gains_amid_further_evidence_of_supply_cuts__s02_linked_asset_2023_07_19_oil_gains_amid_further_evidence_of_supply_cuts_img_screenshot2023_07_19134033_343520d46df8_png",
+      "doc_id": "breakwave_insights_insights_2023-07-19_2023_07_19_oil_gains_amid_further_evidence_of_supply_cuts",
+      "parent_id": "breakwave_insights_insights_2023-07-19_2023_07_19_oil_gains_amid_further_evidence_of_supply_cuts__root",
+      "title": "Linked asset: 2023-07-19_oil-gains-amid-further-evidence-of-supply-cuts_img_screenshot2023-07-19134033_343520d46df8.png",
+      "section_path": [
+        "Linked asset: 2023-07-19_oil-gains-amid-further-evidence-of-supply-cuts_img_screenshot2023-07-19134033_343520d46df8.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-19_oil-gains-amid-further-evidence-of-supply-cuts_img_screenshot2023-07-19134033_343520d46df8.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-19_oil-gains-amid-further-evidence-of-supply-cuts_img_screenshot2023-07-19134033_343520d46df8.png\n\nLinked image asset: 2023-07-19_oil-gains-amid-further-evidence-of-supply-cuts_img_screenshot2023-07-19134033_343520d46df8.png\n\nImage metadata: PNG 1109x357 mode=RGBA\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 17-Jul Tue 18-Jul % chg Daily % chg Daily % chg\nccl 406.99 410.04 Brent crude 79.62 Nickel 20,944\nPrecious 681.16 689.19 Thermal coal 134.35 Aluminium 2,174 = -2.4%\nIndustrials 374.35 372.17 -0.6% JKM LNG swaps 11.02 Gold 1,978\nBulks 543.01 544.71 European carbon 87.35 Palladium 1,281\nAgs 288.09 288.17 ACCU 28.00 0.0% Iron Ore 116.8 -0.3%\nEnergy 419.44 426.48 Copper 8,466 -0.3% Wheat 462 -0.2%",
+      "keywords": [
+        "lng",
+        "china",
+        "europe",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 335,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

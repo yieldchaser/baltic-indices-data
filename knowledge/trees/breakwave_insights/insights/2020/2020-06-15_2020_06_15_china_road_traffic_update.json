@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 437,
+  "token_count": 1856,
   "source_path": "reports/breakwave/2020/2020-06-15_china-road-traffic-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2020/6/15/china-road-traffic-update",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "Collectively, traffic at 8AM in Shanghai, Beijing, Shenzhen, Guangzhou, and Chengdu today was up by 16% from 2019's average. In comparison, one week ago it was up by 12% from 2019's average.",
+      "summary": "Image reference: assets/2020-06-15_china-road-traffic-update_img_image-asset_8f20cdb1e955.jpeg\nCollectively, traffic at 8AM in Shanghai, Beijing, Shenzhen, Guangzhou, and Chengdu today was up by 16% from 2019's average. In comparison, one week ago it was up by 12% from 2019's average.",
       "keywords": [
         "china",
         "was",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 435,
+      "token_count": 466,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2020-06-15_2020_06_15_china_road_traffic_update__s02_linked_asset_2020_06_15_china_road_traffic_update_img_image_asset_8f20cdb1e955_jpeg",
+      "doc_id": "breakwave_insights_insights_2020-06-15_2020_06_15_china_road_traffic_update",
+      "parent_id": "breakwave_insights_insights_2020-06-15_2020_06_15_china_road_traffic_update__root",
+      "title": "Linked asset: 2020-06-15_china-road-traffic-update_img_image-asset_8f20cdb1e955.jpeg",
+      "section_path": [
+        "Linked asset: 2020-06-15_china-road-traffic-update_img_image-asset_8f20cdb1e955.jpeg"
+      ],
+      "section_path_text": "Linked asset: 2020-06-15_china-road-traffic-update_img_image-asset_8f20cdb1e955.jpeg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2020/assets/2020-06-15_china-road-traffic-update_img_image-asset_8f20cdb1e955.jpeg\n\nLinked image asset: 2020-06-15_china-road-traffic-update_img_image-asset_8f20cdb1e955.jpeg\n\nImage metadata: JPEG 2500x2000 mode=RGB\n\nEmbedded info:\ndpi: (240, 240)\n\nOCR text:\ne . ee : a ae '\n- = - oe 2\n: / : er Ks - ¥.",
+      "keywords": [
+        "china",
+        "eee",
+        "see",
+        "aoe",
+        "asset",
+        "ies",
+        "image",
+        "sss"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 1358,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

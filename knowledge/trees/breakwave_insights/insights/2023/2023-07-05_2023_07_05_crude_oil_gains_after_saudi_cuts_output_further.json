@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-07-05_2023_07_05_crude_oil_gains_after_saudi_cuts_output_further__root",
   "doc_id": "breakwave_insights_insights_2023-07-05_2023_07_05_crude_oil_gains_after_saudi_cuts_output_further",
   "parent_id": null,
-  "title": "Crude Oil Gains After Saudi Cuts Output Further",
+  "title": "Crude oil gains after Saudi cuts output further",
   "section_path": [
-    "Crude Oil Gains After Saudi Cuts Output Further"
+    "Crude oil gains after Saudi cuts output further"
   ],
-  "section_path_text": "Crude Oil Gains After Saudi Cuts Output Further",
+  "section_path_text": "Crude oil gains after Saudi cuts output further",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nThe weak economic backdrop continues to weigh on sentiment across the commodity complex. However, this was mitigated by further supply side issues. Liquidity was low with US markets closed.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 603,
+  "token_count": 1031,
   "source_path": "reports/breakwave/2023/2023-07-05_crude-oil-gains-after-saudi-cuts-output-further.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/7/5/crude-oil-gains-after-saudi-cuts-output-further",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 601,
+      "token_count": 650,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-05_2023_07_05_crude_oil_gains_after_saudi_cuts_output_further__s02_linked_asset_2023_07_05_crude_oil_gains_after_saudi_cuts_output_further_img_1688507268453_66699458ed8f_png",
+      "doc_id": "breakwave_insights_insights_2023-07-05_2023_07_05_crude_oil_gains_after_saudi_cuts_output_further",
+      "parent_id": "breakwave_insights_insights_2023-07-05_2023_07_05_crude_oil_gains_after_saudi_cuts_output_further__root",
+      "title": "Linked asset: 2023-07-05_crude-oil-gains-after-saudi-cuts-output-further_img_1688507268453_66699458ed8f.png",
+      "section_path": [
+        "Linked asset: 2023-07-05_crude-oil-gains-after-saudi-cuts-output-further_img_1688507268453_66699458ed8f.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-05_crude-oil-gains-after-saudi-cuts-output-further_img_1688507268453_66699458ed8f.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-05_crude-oil-gains-after-saudi-cuts-output-further_img_1688507268453_66699458ed8f.png\n\nLinked image asset: 2023-07-05_crude-oil-gains-after-saudi-cuts-output-further_img_1688507268453_66699458ed8f.png\n\nImage metadata: PNG 1571x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 3-Jul Tue 4-Jul % chg Daily % chg Daily % chg\nCCI 413.79 410.48 -0.8% Brent crude 76.25 Nickel 20,384 -0.3%\nPrecious 667.62 668.98 Thermal coal 143.15 -3.3% Aluminium = 2,133\nIndustrials 368.06 367.44 -0.2% JKM LNG swaps 12.08 0.0% Gold 1,925\nBulks 535.99 536.06 European carbon 87.25 -0.1% Palladium 1,222 0.0%\nAgs 282.24 282.63 ACCU 31.63 0.0% Iron Ore 113.9\nEnergy 447.78 438.93 -2.0% Copper 8,359 -0.6% Wheat 460",
+      "keywords": [
+        "lng",
+        "china",
+        "europe",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 338,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

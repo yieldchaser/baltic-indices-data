@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 923,
+  "token_count": 1438,
   "source_path": "reports/breakwave/2023/2023-05-08_doric-weekly-market-insight.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/5/8/doric-weekly-market-insight",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 856,
+      "token_count": 939,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-08_2023_05_08_doric_weekly_market_insight__s02_linked_asset_2023_05_08_doric_weekly_market_insight_img_128229_3bd5de2e43d7_png",
+      "doc_id": "breakwave_insights_insights_2023-05-08_2023_05_08_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-05-08_2023_05_08_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-05-08_doric-weekly-market-insight_img_128229_3bd5de2e43d7.png",
+      "section_path": [
+        "Linked asset: 2023-05-08_doric-weekly-market-insight_img_128229_3bd5de2e43d7.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-08_doric-weekly-market-insight_img_128229_3bd5de2e43d7.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-08_doric-weekly-market-insight_img_128229_3bd5de2e43d7.png\n\nLinked image asset: 2023-05-08_doric-weekly-market-insight_img_128229_3bd5de2e43d7.png\n\nImage metadata: PNG 461x332 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nUnited States Fed Funds Rate\n6.00%\n5.00%\n4.00%\n3.00%\n2.00%\n1.00%\n0.00%\nJan-19 Jul-19 Jan-20 Jul-20 Jan-21 Jul-21 Jan-22 Jul-22 Jan-23\nSource: FED, Doric Research",
+      "keywords": [
+        "asset",
+        "fed",
+        "image",
+        "source",
+        "doric",
+        "doric-weekly-market-insight_img_128229_3bd5de2e43d7.png",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 177,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-08_2023_05_08_doric_weekly_market_insight__s03_linked_asset_2023_05_08_doric_weekly_market_insight_img_128329_0f64c2d6f28a_png",
+      "doc_id": "breakwave_insights_insights_2023-05-08_2023_05_08_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-05-08_2023_05_08_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-05-08_doric-weekly-market-insight_img_128329_0f64c2d6f28a.png",
+      "section_path": [
+        "Linked asset: 2023-05-08_doric-weekly-market-insight_img_128329_0f64c2d6f28a.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-08_doric-weekly-market-insight_img_128329_0f64c2d6f28a.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-08_doric-weekly-market-insight_img_128329_0f64c2d6f28a.png\n\nLinked image asset: 2023-05-08_doric-weekly-market-insight_img_128329_0f64c2d6f28a.png\n\nImage metadata: PNG 452x347 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nEuro Area Interest Rate\n4.00%\n3.50%\n3.00%\n2.50%\n2.00%\n1.50%\n1.00%\n0.50%\n0.00%\nJan-19 Jul-19 Jan-20 Jul-20 Jan-24 Jul21 Jan-22 Jul-22 Jan-23\n‘Source: EC8, Dorie Research",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "area",
+        "doric-weekly-market-insight_img_128329_0f64c2d6f28a.png",
+        "dorie",
+        "dpi",
+        "ec8"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

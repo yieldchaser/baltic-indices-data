@@ -26,7 +26,32 @@ keywords:
 - production
 - but
 - often
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Over the years we have seen both generalists and experts hold a negative
+    China bias. Key aspects including trade volume also often go ignored, and only
+    price is often discussed if price is falling but import volumes are rising. As
+    we have focused on in particu
+  unit: null
+  values:
+  - 99.5
+- section: Main
+  section_type: null
+  source_line: It is reasonable to hold any bullish or bearish views for China's overall
+    import prospects looking forward, but some coverage of China recently has not
+    been reasonable and has ignored just how well imports have fared in recent months.
+    We remain most bullish fo
+  unit: null
+  values:
+  - 88.5
 regions:
 - china
 - brazil

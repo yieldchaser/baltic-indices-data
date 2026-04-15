@@ -24,7 +24,63 @@ keywords:
 - long
 - when
 - yield
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: The Fed is not in control of the yield curve. No one is.
+  section_type: null
+  source_line: It sounds like a meme, but it actually happened. After a heated argument
+    with a dear family member last week, I decided to do what nice boys do and went
+    to buy flowers, hoping, in vain of course, that I could resolve matters swiftly
+    with £20 worth of generic o
+  unit: null
+  values:
+  - 20.0
+- section: The Fed is not in control of the yield curve. No one is.
+  section_type: null
+  source_line: I have spent 20 years in financial markets. Bonds are generally a little-understood
+    asset class, despite the fact that they are the biggest one and that debt makes
+    the world go round. They mostly depend on the macroeconomic environment, their
+    risk is non-linea
+  unit: null
+  values:
+  - 70.0
+- section: The Fed is not in control of the yield curve. No one is.
+  section_type: null
+  source_line: With the S&P treading water in the past few months, all eyes are of
+    course on bonds. Until the Middel East conflict erupted, yields, especially at
+    the long end, were picking up. The US 10y is reaching the 5% mark. It was not
+    long ago when we all agreed that we
+  unit: pct
+  values:
+  - 5.0
+  - 2.5
+  - 7.0
+- section: The Fed is not in control of the yield curve. No one is.
+  section_type: null
+  source_line: At the long end, especially, where the Fed is absent, the US government
+    is present with an increasing supply of debt, possibly more than the market can
+    digest. Every month, US government institutions are price-insensitive sellers
+    of debt worth $US 220bn. $21tn
+  unit: usd
+  values:
+  - 220.0
+  - 21.0
+  - 60.0
+  - 1.5
+- section: The Fed is not in control of the yield curve. No one is.
+  section_type: null
+  source_line: Presently, there are two major wars, in Eastern Europe and Israel,
+    that affect energy and food prices. The geopolitical backdrop is as unstable as
+    the 1970s, if not more so. Wars are inherently inflationary.
+  unit: null
+  values:
+  - 1970.0
 regions:
 - china
 - brazil
@@ -53,7 +109,7 @@ themes:
 - not
 - are
 - control
-title: The Fed Is Not In Control Of The Yield Curve No One Is
+title: The Fed is not in control of the yield curve. No one is.
 vessel_classes:
 - capesize
 - panamax

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__root",
   "doc_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter",
   "parent_id": null,
-  "title": "Brs Dry Bulk Weekly Newsletter",
+  "title": "BRS Dry Bulk Weekly Newsletter",
   "section_path": [
-    "Brs Dry Bulk Weekly Newsletter"
+    "BRS Dry Bulk Weekly Newsletter"
   ],
-  "section_path_text": "Brs Dry Bulk Weekly Newsletter",
+  "section_path_text": "BRS Dry Bulk Weekly Newsletter",
   "level": 0,
   "ordinal": 0,
   "summary": "China power system brings more volatility to the shipping market\nAccording to market sources, on 1 st-2 nd May 2023, the real-time electricity price in the spot trading center of the Shandong electricity market set a record: for the longest duration (21 hours), electricity prices data were negative, with a minimum price of -85 yuan/megawatt-hour. The negative clearing price indicated that power generation companies, not only do not charge fees from the end users but instead, are willing to pay them to get rid of their excess electricity. This happens when supply greatly exceeds demand, usually triggered by an excessive renewable energy generation (e.g., wind, solar power generation) or a sharp decrease in electricity demand.",
@@ -26,12 +26,39 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1425,
+  "token_count": 2392,
   "source_path": "reports/breakwave/2023/2023-05-30_brs-dry-bulk-weekly-newsletter.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/5/30/brs-dry-bulk-weekly-newsletter",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__s01_china_power_system_brings_more_volatility_to_the_shipping_market",
+      "node_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: BRS Logo - No Background (1).png | assets/2023-05-30_brs-dry-bulk-weekly-newsletter_img_brslogo-nobackground28129_f39a57dd6dc6.png",
+      "keywords": [
+        "assets/2023-05-30_brs-dry-bulk-weekly-newsletter_img_brslogo-nobackground28129_f39a57dd6dc6.png",
+        "background",
+        "brs",
+        "image",
+        "logo",
+        "png",
+        "reference"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 51,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__s02_china_power_system_brings_more_volatility_to_the_shipping_market",
       "doc_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__root",
       "title": "China power system brings more volatility to the shipping market",
@@ -40,7 +67,7 @@
       ],
       "section_path_text": "China power system brings more volatility to the shipping market",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "According to market sources, on 1 st-2 nd May 2023, the real-time electricity price in the spot trading center of the Shandong electricity market set a record: for the longest duration (21 hours), electricity prices data were negative, with a minimum price of -85 yuan/megawatt-hour. The negative clearing price indicated that power generation companies, not only do not charge fees from the end users but instead, are willing to pay them to get rid of their excess electricity.",
       "keywords": [
         "china",
@@ -54,8 +81,120 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1414,
+      "token_count": 1539,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_05_30_brs_dry_bulk_weekly_newsletter_img_brslogo_nobackground28129_f39a57dd6dc6_png",
+      "doc_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_brslogo-nobackground28129_f39a57dd6dc6.png",
+      "section_path": [
+        "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_brslogo-nobackground28129_f39a57dd6dc6.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_brslogo-nobackground28129_f39a57dd6dc6.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-30_brs-dry-bulk-weekly-newsletter_img_brslogo-nobackground28129_f39a57dd6dc6.png\n\nLinked image asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_brslogo-nobackground28129_f39a57dd6dc6.png\n\nImage metadata: PNG 2500x1406 mode=RGBA\n\nEmbedded info:\ndpi: (299.9994, 299.9994)\n\nOCR text:\n( BRS )",
+      "keywords": [
+        "asset",
+        "image",
+        "brs",
+        "brs-dry-bulk-weekly-newsletter_img_brslogo-nobackground28129_f39a57dd6dc6.png",
+        "dpi",
+        "embedded",
+        "info",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 127,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__s04_linked_asset_2023_05_30_brs_dry_bulk_weekly_newsletter_img_128229_2c30326a4929_png",
+      "doc_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128229_2c30326a4929.png",
+      "section_path": [
+        "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128229_2c30326a4929.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128229_2c30326a4929.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-30_brs-dry-bulk-weekly-newsletter_img_128229_2c30326a4929.png\n\nLinked image asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128229_2c30326a4929.png\n\nImage metadata: PNG 473x378 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChina Power Generation Breakdown (Bin\nkilowatt-hours)\nCoal Fired B Hydro Bg Wind Solar Nuclear\n100%\niii\nPUTT I |\n80%\n60%\n40%\n20%\n0%\neee Annan aKRAKRAAARR\nR&R 2565 2938255 SGEQRE\nPes ZzogeketsazZOogLSK\nSource: NBS",
+      "keywords": [
+        "china",
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "akrakraaarr",
+        "annan",
+        "bin"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__s05_linked_asset_2023_05_30_brs_dry_bulk_weekly_newsletter_img_128329_5814ffaf8f45_png",
+      "doc_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128329_5814ffaf8f45.png",
+      "section_path": [
+        "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128329_5814ffaf8f45.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128329_5814ffaf8f45.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-30_brs-dry-bulk-weekly-newsletter_img_128329_5814ffaf8f45.png\n\nLinked image asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128329_5814ffaf8f45.png\n\nImage metadata: PNG 468x263 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChina Annual Electricity Consumption\n(trillion kilowatt-hours) bul cove\n10 Bear cox\n5 :\n6\n°\nOh 6 ob VD OB DO Dd Gh\nEr Sf PY SF KL KL LP gH\" Hr Hr",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "annual",
+        "bear",
+        "brs-dry-bulk-weekly-newsletter_img_128329_5814ffaf8f45.png",
+        "bul",
+        "consumption"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_05_30_brs_dry_bulk_weekly_newsletter_img_128429_2c418915054a_png",
+      "doc_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-05-30_2023_05_30_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128429_2c418915054a.png",
+      "section_path": [
+        "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128429_2c418915054a.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128429_2c418915054a.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-30_brs-dry-bulk-weekly-newsletter_img_128429_2c418915054a.png\n\nLinked image asset: 2023-05-30_brs-dry-bulk-weekly-newsletter_img_128429_2c418915054a.png\n\nImage metadata: PNG 507x334 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChina Seaborne Coal Import (min mt)\n350\n300 ¥Y\nZ\n250 Y\nZY\n200 Z\nZ\n150 Y\nZ\n100\n50\n0)\ns s S s e Ss se se wv ev\nSource: Axsmarine",
+      "keywords": [
+        "china",
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "axsmarine",
+        "brs-dry-bulk-weekly-newsletter_img_128429_2c418915054a.png",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 164,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

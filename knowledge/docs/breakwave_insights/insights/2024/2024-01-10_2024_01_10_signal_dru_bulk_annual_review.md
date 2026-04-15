@@ -27,7 +27,156 @@ keywords:
 - chinese
 - global
 - between
+linked_assets_discovered: 6
+linked_assets_failed: 0
+linked_assets_ingested: 1
+linked_assets_mirrored: 1
+linked_assets_skipped: 5
 market_tone: neutral
+numeric_observation_count: 15
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Image reference: unnamed - 2024-01-10T143018.124.png | assets/2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png'
+  unit: null
+  values:
+  - 2024.0
+  - -1.0
+  - -10.0
+  - 43018.124
+  - 2024.0
+  - -1.0
+  - -10.0
+  - 2024.0
+  - -1.0
+  - -10.0
+- section: Main
+  section_type: null
+  source_line: The year 2023 witnessed significant shifts in commodity patterns, exacerbated
+    by a difficult economic environment in China and geopolitical tensions, especially
+    between Russia and Ukraine, which led to significant shifts in commodity development.
+  unit: null
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: The Chinese economic environment in 2023 posed a challenge, which had
+    a particular impact on iron ore prices and demand for raw materials. The slowdown
+    in Chinese economic growth and strict regulatory requirements impacted infrastructure
+    and construction activ
+  unit: null
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: In December, it was reported that China channelled nearly USD 50 billion
+    of low-cost funds into policy-oriented banks last month, suggesting that the central
+    bank may be increasing funding for housing and infrastructure projects to support
+    the economy.
+  unit: usd
+  values:
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: The coal industry encountered challenges as major Asian economies,
+    including China, Japan, and South Korea, initiated stricter environmental regulations.
+    These nations are diversifying their energy portfolios, aiming to decrease their
+    dependency on coal. Speci
+  unit: null
+  values:
+  - 2026.0
+  - 2030.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: Despite these trends, there was a surprising uptick in coal demand
+    in mid-December, rising by 1.4% in 2023 and exceeding 8.5 billion metric tons
+    for the first time, as per IEA estimates. The agency attributed this increase
+    to an anticipated 8% growth in coal u
+  unit: pct
+  values:
+  - 1.4
+  - 2023.0
+  - 8.5
+  - 8.0
+  - 5.0
+  - 2026.0
+  - 2024.0
+  - 2026.0
+- section: Main
+  section_type: null
+  source_line: In the grain segment, 2023 witnessed a significant shift in the dynamics
+    of global exports, with Brazilian exports emerging as a dominant force poised
+    to challenge the longstanding leadership of the United States. Historically, the
+    United States has held a pro
+  unit: null
+  values:
+  - 2023.0
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: These weather-related challenges, combined with reported delays in
+    Brazilian planting, have paved the way for the United States to potentially enhance
+    its export volumes, particularly in the first quarter of 2024.
+  unit: null
+  values:
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: 'Geopolitical tensions, particularly between Russia and Ukraine, coupled
+    with China''s growing influence on the global economy have had a profound impact
+    on commodity production, price dynamics and the development of the freight market.
+    In early December, China '
+  unit: null
+  values:
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: For an in-depth exploration of these trends and their wider implications,
+    click the button below and access the complete Dry Bulk Annual Review 2023 Report.
+  unit: null
+  values:
+  - 2023.0
+- section: 'Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png'
+  unit: null
+  values:
+  - 2024.0
+  - -1.0
+  - -10.0
+  - 2024.0
+  - -1.0
+  - -10.0
+  - 43018124.0
+  - 3.0
+  - 11.0
+- section: 'Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1200x630 mode=RGB'
+  unit: null
+  values:
+  - 1200.0
+  - 30.0
+- section: 'Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (71.9836, 71.9836)'
+  unit: null
+  values:
+  - 71.9836
+  - 71.9836
+- section: 'Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png'
+  section_type: linked_image_asset
+  source_line: Dry Bulk Annual 5
+  unit: null
+  values:
+  - 5.0
+- section: 'Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png'
+  section_type: linked_image_asset
+  source_line: Report 2023 ;
+  unit: null
+  values:
+  - 2023.0
 regions:
 - china
 - brazil
@@ -39,7 +188,7 @@ regions:
 - europe
 - india
 - japan
-section_count: 1
+section_count: 2
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2024/2024-01-10_signal-dru-bulk-annual-review.html
@@ -61,7 +210,7 @@ themes:
 - japan
 - iron_ore
 - coal
-title: Signal Dru Bulk Annual Review
+title: Signal Dry Bulk Annual Review
 vessel_classes:
 - capesize
 - panamax
@@ -77,6 +226,7 @@ Main
 The year 2023 witnessed significant shifts in commodity patterns, exacerbated by a difficult economic environment in China and geopolitical tensions, especially between Russia and Ukraine, which led to significant shifts in commodity development. The Chinese economic environment in 2023 posed a challenge, which had a particular impact on iron ore prices and demand for raw materials. The slowdown in Chinese economic growth and strict regulatory requirements impacted infrastructure and construction activity and dampened demand for iron ore.
 
 ## Main
+Image reference: unnamed - 2024-01-10T143018.124.png | assets/2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png
 The year 2023 witnessed significant shifts in commodity patterns, exacerbated by a difficult economic environment in China and geopolitical tensions, especially between Russia and Ukraine, which led to significant shifts in commodity development.
 The Chinese economic environment in 2023 posed a challenge, which had a particular impact on iron ore prices and demand for raw materials. The slowdown in Chinese economic growth and strict regulatory requirements impacted infrastructure and construction activity and dampened demand for iron ore. This downturn was exacerbated by environmental policy measures to reduce steel production capacity, which in turn impacted global iron ore prices and trade flows.
 In December, it was reported that China channelled nearly USD 50 billion of low-cost funds into policy-oriented banks last month, suggesting that the central bank may be increasing funding for housing and infrastructure projects to support the economy.
@@ -86,3 +236,20 @@ In the grain segment, 2023 witnessed a significant shift in the dynamics of glob
 These weather-related challenges, combined with reported delays in Brazilian planting, have paved the way for the United States to potentially enhance its export volumes, particularly in the first quarter of 2024.
 Geopolitical tensions, particularly between Russia and Ukraine, coupled with China's growing influence on the global economy have had a profound impact on commodity production, price dynamics and the development of the freight market. In early December, China took measures to stimulate the economy, spreading optimism and setting the stage for a possible improvement in macroeconomic conditions in the first quarter of 2024. Based on Signal Ocean's data , this analysis provides an in-depth examination of trends in freight market prices, bulk flows and demand for key commodities, providing valuable insights into their evolving dynamics.
 For an in-depth exploration of these trends and their wider implications, click the button below and access the complete Dry Bulk Annual Review 2023 Report.
+
+## Linked asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png
+Source asset: reports/breakwave/2024/assets/2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png
+
+Linked image asset: 2024-01-10_signal-dru-bulk-annual-review_img_unnamed-2024-01-10t143018124_b83b4faeb311.png
+
+Image metadata: PNG 1200x630 mode=RGB
+
+Embedded info:
+dpi: (71.9836, 71.9836)
+
+OCR text:
+SIGNSL a
+Dry Bulk Annual 5
+Report 2023 ;
+Commodities Changing az
+Patterns and Freight Market y |

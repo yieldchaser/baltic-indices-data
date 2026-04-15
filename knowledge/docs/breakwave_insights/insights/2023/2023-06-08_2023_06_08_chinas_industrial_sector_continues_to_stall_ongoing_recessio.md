@@ -25,7 +25,46 @@ keywords:
 - receiving
 - seen
 - states
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's manufacturing purchasing managers' index (PMI) fell to 48.8
+    in May, which has marked a second straight month of contraction. This weak PMI
+    data is not surprising and is down slightly from the 49.2 contraction seen in
+    April. Overall, it remains clear th
+  unit: null
+  values:
+  - 48.8
+  - 49.2
+- section: Main
+  section_type: null
+  source_line: Receiving less attention in media and financial markets is that the
+    Chicago PMI (which is a key metric that measures regional US manufacturing strength)
+    was also released last week and showed a crash and almost unprecedented sustained
+    weakness. The Chicago PMI
+  unit: null
+  values:
+  - 40.4
+  - 48.6
+  - 2009.0
+- section: Main
+  section_type: null
+  source_line: China is experiencing weakness, but largely in its industrial sector
+    and nowhere near as badly as is being seen in the United States and in many other
+    nations. We continue to see the United States and other western economies receiving
+    too positive of coverage,
+  unit: pct
+  values:
+  - 22.0
+  - 2009.0
+  - 18.3
 regions:
 - china
 - brazil

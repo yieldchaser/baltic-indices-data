@@ -24,7 +24,79 @@ keywords:
 - are
 - sea
 - attacks
+linked_assets_discovered: 9
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 9
 market_tone: neutral
+numeric_observation_count: 5
+numeric_observations:
+- section: As attacks in the Red Sea persist, only freight rates for key flows via
+    the region have surged. Tanker diversions have picked up but not en-masse, as
+    volumes continue to flow via the Red Sea.
+  section_type: null
+  source_line: Tensions in the Red Sea are mounting at the start of 2024 as attacks
+    from the Houthi rebels continue to occur. Several companies in the shipping world
+    - at least 18 given recent comments from the IMO - have decided to steer clear
+    from the Red Sea, with contain
+  unit: null
+  values:
+  - 2024.0
+  - 18.0
+  - 12.0
+- section: As attacks in the Red Sea persist, only freight rates for key flows via
+    the region have surged. Tanker diversions have picked up but not en-masse, as
+    volumes continue to flow via the Red Sea.
+  section_type: null
+  source_line: Starting with a look at the number of transits, we note that over the
+    last 10 days transit numbers are about 15% lower than on average in 2023. The
+    decline is more pronounced for LNG and LPG tankers, which had also seen particularly
+    high transit figures in the
+  unit: pct
+  values:
+  - 10.0
+  - 15.0
+  - 2023.0
+- section: As attacks in the Red Sea persist, only freight rates for key flows via
+    the region have surged. Tanker diversions have picked up but not en-masse, as
+    volumes continue to flow via the Red Sea.
+  section_type: null
+  source_line: Bab el Mandeb transit for large oil & gas carriers (no of vessels,
+    10-day moving average)
+  unit: null
+  values:
+  - 10.0
+- section: As attacks in the Red Sea persist, only freight rates for key flows via
+    the region have surged. Tanker diversions have picked up but not en-masse, as
+    volumes continue to flow via the Red Sea.
+  section_type: null
+  source_line: 'Since H2 December 2023, 19 vessels have diverted or transited via
+    the Cape of Good Hope going Southbound (West to East), instead of heading via
+    the Suez Canal carrying a combined 290kt of CPP and 860kt of Crude/DPP. Similarly,
+    13 vessels have diverted via the '
+  unit: tonnage
+  values:
+  - 2023.0
+  - 19.0
+  - 290.0
+  - 860.0
+  - 13.0
+  - 560.0
+  - 90.0
+- section: As attacks in the Red Sea persist, only freight rates for key flows via
+    the region have surged. Tanker diversions have picked up but not en-masse, as
+    volumes continue to flow via the Red Sea.
+  section_type: null
+  source_line: Tanker freight rates for routes involving transit via the Red Sea have
+    surged on a m-o-m basis. The increase on CPP freight routes ( TC8 and TC20 , 60%
+    m-o-m) versus their crude tanker counterparts ( TD23 , 25% m-o-m) underpins the
+    importance of the disruption
+  unit: worldscale_pct
+  values:
+  - 60.0
+  - 3.0
+  - 25.0
 regions:
 - china
 - brazil

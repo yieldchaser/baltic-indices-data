@@ -25,7 +25,76 @@ keywords:
 - major
 - was
 - world
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Last week saw the US registering the highest headline inflation number
+    in over 40 years, 7.5%. Equity and bond markets roiled, with the US 10-year Treasury
+    yield rising above 2% and the S&P 500 shedding nearly 2% for the week. Currently,
+    markets are pricing in
+  unit: pct
+  values:
+  - 40.0
+  - 7.5
+  - 10.0
+  - 2.0
+  - 500.0
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: In fact, "history" is the operative word. The swift rise in inflation
+    we are seeing today can only be found near, or around very significant historical
+    events. For inflation to rise over 4% in a single year and stay high for more
+    than 3-4 consecutive months, o
+  unit: pct
+  values:
+  - 4.0
+  - 3.0
+  - -4.0
+  - 1973.0
+- section: Main
+  section_type: null
+  source_line: If we take US numbers, the first major inflation surge of the century
+    came in 1916. This was the year when America got involved in the First World War.
+    Supply shocks from a devastated European continent drove inflation higher. The
+    next episode took place in 19
+  unit: null
+  values:
+  - 1916.0
+  - 1922.0
+  - 1933.0
+  - -34.0
+  - 1941.0
+  - -1942.0
+  - 1946.0
+  - 1950.0
+  - 1973.0
+- section: Main
+  section_type: null
+  source_line: It has been nearly fifty years that developed markets haven't experienced
+    a similar inflation rise like in 2021-22. It becomes apparent that only major
+    global events can cause such sharp rises in price. The response by all nations
+    to the pandemic, which essent
+  unit: null
+  values:
+  - 2021.0
+  - -22.0
+- section: Main
+  section_type: null
+  source_line: There's a strong possibility we may see the end of the episode soon.
+    We are already ten months into this event. Historically, all of the events described
+    lasted about 11-14 months. This time, this should be more the case as no mid or
+    post-war rebuilding is req
+  unit: null
+  values:
+  - 11.0
 regions:
 - china
 - brazil

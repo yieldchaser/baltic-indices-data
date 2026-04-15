@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-21_2023_03_21_lending_in_china_remains_strong__root",
   "doc_id": "breakwave_insights_insights_2023-03-21_2023_03_21_lending_in_china_remains_strong",
   "parent_id": null,
-  "title": "Lending In China Remains Strong",
+  "title": "Lending in China Remains Strong",
   "section_path": [
-    "Lending In China Remains Strong"
+    "Lending in China Remains Strong"
   ],
-  "section_path_text": "Lending In China Remains Strong",
+  "section_path_text": "Lending in China Remains Strong",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nChinese banks issued 1.8 trillion yuan in new loans in February. This marks a month-on-month decline of 3.1 trillion yuan (-63%) but a year-on-year increase of 600 billion yuan (47%). The month-on-month decline is normal and occurs every February (loans surge in January of every year).",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 292,
+  "token_count": 709,
   "source_path": "reports/breakwave/2023/2023-03-21_lending-in-china-remains-strong.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/21/lending-in-china-remains-strong",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 290,
+      "token_count": 373,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-21_2023_03_21_lending_in_china_remains_strong__s02_linked_asset_2023_03_21_lending_in_china_remains_strong_img_chart1287429_4091c03fe723_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-21_2023_03_21_lending_in_china_remains_strong",
+      "parent_id": "breakwave_insights_insights_2023-03-21_2023_03_21_lending_in_china_remains_strong__root",
+      "title": "Linked asset: 2023-03-21_lending-in-china-remains-strong_img_chart1287429_4091c03fe723.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-21_lending-in-china-remains-strong_img_chart1287429_4091c03fe723.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-21_lending-in-china-remains-strong_img_chart1287429_4091c03fe723.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-21_lending-in-china-remains-strong_img_chart1287429_4091c03fe723.jpg\n\nLinked image asset: 2023-03-21_lending-in-china-remains-strong_img_chart1287429_4091c03fe723.jpg\n\nImage metadata: JPEG 726x352 mode=RGB\n\nOCR text:\nChinese Bank Loans (2019 - 2023)\n5000\n4000\n3000\n2000\n1000\ni?)\n2019 2020 2021 2022 2023\nUnit: Billion yuan",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "bank",
+        "billion",
+        "chinese",
+        "jpeg",
+        "lending-in-china-remains-strong_img_chart1287429_4091c03fe723.jpg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 137,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-21_2023_03_21_lending_in_china_remains_strong__s03_linked_asset_2023_03_21_lending_in_china_remains_strong_img_chart2286329_71203dcea613_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-21_2023_03_21_lending_in_china_remains_strong",
+      "parent_id": "breakwave_insights_insights_2023-03-21_2023_03_21_lending_in_china_remains_strong__root",
+      "title": "Linked asset: 2023-03-21_lending-in-china-remains-strong_img_chart2286329_71203dcea613.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-21_lending-in-china-remains-strong_img_chart2286329_71203dcea613.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-21_lending-in-china-remains-strong_img_chart2286329_71203dcea613.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-21_lending-in-china-remains-strong_img_chart2286329_71203dcea613.jpg\n\nLinked image asset: 2023-03-21_lending-in-china-remains-strong_img_chart2286329_71203dcea613.jpg\n\nImage metadata: JPEG 726x352 mode=RGB\n\nOCR text:\nYear-On-Year Outstanding Loan Growth (2019 - 2023)\n14%\n13%\n12%\n11%\n10% -§ a_i\n2019 2020 2021 2022 2023",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "a_i",
+        "growth",
+        "jpeg",
+        "lending-in-china-remains-strong_img_chart2286329_71203dcea613.jpg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 131,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

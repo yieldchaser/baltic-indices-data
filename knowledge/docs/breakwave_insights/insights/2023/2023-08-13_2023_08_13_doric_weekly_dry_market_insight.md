@@ -25,7 +25,67 @@ keywords:
 - global
 - had
 - inflation
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Well into the third quarter of 2023 and the dry bulk market has yet
+    to find the footing most of us had expected, or at least hoped. All eyes at the
+    start were on China with it's post-covid opening meant to buoy the market back
+    to health. Though China's reopeni
+  unit: null
+  values:
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: One major force unleashed on the global economy, and as a 'Black Swan'
+    event, was Covid-19. When first appeared less than 4 years ago, shipping it was
+    feared would be hard hit as people around the world were locking up to contain
+    the spread of this deadly viru
+  unit: null
+  values:
+  - 19.0
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: After a long absence inflation re-appeared and was then amplified by
+    another 'Black Swan' event, the war in Ukraine. To address this run-away inflation,
+    major economies embarked on a course of monetary and fiscal tightening. This led
+    to increased cost of money
+  unit: null
+  values:
+  - 2021.0
+  - -2022.0
+- section: Main
+  section_type: null
+  source_line: A further moving part in the dry cargo mix comes in from the supply
+    side. Bulk carriers have a fairly tame delivery rate and orderbook (8-9%) however
+    the opposite holds for Containers (28-30%). When demand exploded for Containers,
+    as aforesaid, some cargoes mi
+  unit: pct
+  values:
+  - 8.0
+  - -9.0
+  - 28.0
+  - -30.0
+  - 4.0
+  - -5.0
+- section: Main
+  section_type: null
+  source_line: In the 2 strong years of the bulk sector (2021-2022) China was in semi
+    lock down with stop-start in economic activity. So it was mostly the above factors
+    that led the rally and the anticlimax which followed.
+  unit: null
+  values:
+  - 2.0
+  - 2021.0
+  - -2022.0
 regions:
 - china
 - brazil
@@ -57,7 +117,7 @@ themes:
 - china
 - was
 - containers
-title: Doric Weekly Dry Market Insight
+title: Summertime and the living ain't easy .. (for dry shipping)
 vessel_classes:
 - capesize
 - panamax

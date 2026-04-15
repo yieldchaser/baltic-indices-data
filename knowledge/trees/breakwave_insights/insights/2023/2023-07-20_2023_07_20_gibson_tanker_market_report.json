@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 589,
+  "token_count": 844,
   "source_path": "reports/breakwave/2023/2023-07-20_gibson-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/7/20/gibson-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 583,
+      "token_count": 638,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-20_2023_07_20_gibson_tanker_market_report__s02_linked_asset_2023_07_20_gibson_tanker_market_report_img_screenshot2023_07_20160101_48a8715fe073_png",
+      "doc_id": "breakwave_insights_insights_2023-07-20_2023_07_20_gibson_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2023-07-20_2023_07_20_gibson_tanker_market_report__root",
+      "title": "Linked asset: 2023-07-20_gibson-tanker-market-report_img_screenshot2023-07-20160101_48a8715fe073.png",
+      "section_path": [
+        "Linked asset: 2023-07-20_gibson-tanker-market-report_img_screenshot2023-07-20160101_48a8715fe073.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-20_gibson-tanker-market-report_img_screenshot2023-07-20160101_48a8715fe073.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-20_gibson-tanker-market-report_img_screenshot2023-07-20160101_48a8715fe073.png\n\nLinked image asset: 2023-07-20_gibson-tanker-market-report_img_screenshot2023-07-20160101_48a8715fe073.png\n\nImage metadata: PNG 608x452 mode=RGBA\n\nEmbedded info:\ndpi: (143.99259999999998, 143.99259999999998)\n\nOCR text:\n1,200\n1,000\n800\n600\n400\n200\n: 2021 2022 2023 2024 2025 2026 2027 2028",
+      "keywords": [
+        "asset",
+        "image",
+        "dpi",
+        "embedded",
+        "gibson-tanker-market-report_img_screenshot2023-07-20160101_48a8715fe073.png",
+        "info",
+        "linked",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 162,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -24,7 +24,107 @@ keywords:
 - was
 - year
 - even
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 10
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The Fed's dovish internal survey (the Dot Plot) which suggested three
+    rate cuts in 2024 has unleashed trader animal spirts. Markets are now pricing
+    in six rate cuts next year, beginning in March.
+  unit: null
+  values:
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: Three rate cuts in the last months of 2024 is not the same thing as
+    three (or six) cuts starting in March. If the Fed wants to return to the usual
+    conservative form, it will now specifically have to direct markets to think "late
+    year" instead of Q1. The bullis
+  unit: null
+  values:
+  - 2024.0
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: In its final meeting of the year, the US central bank issued its usual
+    "Dot Plot". This an anonymous survey of where the 19 people who make up the Federal
+    Reserve Open Markets Committee (12 of whom vote) think interest rates will be
+    going forward. In the run u
+  unit: null
+  values:
+  - 19.0
+  - 12.0
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: There's nothing wrong with a spot of bullishness, of course. But central
+    banks aren't prone to that behaviour. Why? Because it's risky. Traders tend to
+    overreact. If central bankers are dovish, then traders become very dovish, assuming
+    that central bankers are
+  unit: pct
+  values:
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: Nothing markets have spotted. Inflation is coming down slightly faster
+    than expected, but this is down to Chinese deflation and lower energy prices.
+    Both of these conditions could change in the next few months. Meanwhile, wage
+    and services inflation remains pe
+  unit: worldscale_pct
+  values:
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: A popular theory developed that the move was political. The FOMC has
+    seen a few new members since September (remember it's only 19 plots) and interest
+    costs are rising fast for the Government that is keen maintain high deficits and
+    like to do so at lower rates
+  unit: null
+  values:
+  - 19.0
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: Even if the FOMC however, did, become more dovish, markets are still
+    asking the wrong question. Three rate cuts in the last months of 2024 is not the
+    same thing as three (or six) cuts starting in March. If the Fed wants to return
+    to the usual conservative form
+  unit: null
+  values:
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: As for risk assets? Risk is now elevated as bonds and stocks are priced
+    to near-perfection. The Dow is at all-time highs and so is the German Dax. The
+    S&P 500 is 100 or so points shy of its previous top. Bond markets have rallied
+    very hard in the past month or
+  unit: null
+  values:
+  - 500.0
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: While our call for rate cuts in the latter part of H2 2024 is now even
+    more uncertain (we had acknowledged it as a low-confidence call), our key risk,
+    a rebound in inflation, becomes even more impactful.
+  unit: null
+  values:
+  - 2024.0
+- section: Main
+  section_type: null
+  source_line: Whatever the case, we think that if one positioned their portfolio
+    for the next bull market, one should still have to be ready for heightened volatility,
+    especially in the first months of 2024, as the inflation story may yet have more
+    twists and turns.
+  unit: null
+  values:
+  - 2024.0
 regions:
 - china
 - brazil

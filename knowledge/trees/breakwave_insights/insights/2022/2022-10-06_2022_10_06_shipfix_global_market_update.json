@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-10-06_2022_10_06_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2022-10-06_2022_10_06_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nThe US economy has seen a few weaker-than-expected economic data releases so far this week. Following Monday's weak ISM Manufacturing PMI, yesterday saw the number of job openings during August failing to meet expectations by quite a margin and reaching the lowest levels since June last year. Still, the number of new jobs remains above what was observed prior to the pandemic.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1075,
+  "token_count": 1296,
   "source_path": "reports/breakwave/2022/2022-10-06_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/10/6/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 143,
+      "token_count": 179,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-06_2022_10_06_shipfix_global_market_update__s06_linked_asset_2022_10_06_shipfix_global_market_update_img_unnamed288829_761109b252b0_png",
+      "doc_id": "breakwave_insights_insights_2022-10-06_2022_10_06_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-10-06_2022_10_06_shipfix_global_market_update__root",
+      "title": "Linked asset: 2022-10-06_shipfix-global-market-update_img_unnamed288829_761109b252b0.png",
+      "section_path": [
+        "Linked asset: 2022-10-06_shipfix-global-market-update_img_unnamed288829_761109b252b0.png"
+      ],
+      "section_path_text": "Linked asset: 2022-10-06_shipfix-global-market-update_img_unnamed288829_761109b252b0.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-06_shipfix-global-market-update_img_unnamed288829_761109b252b0.png\n\nLinked image asset: 2022-10-06_shipfix-global-market-update_img_unnamed288829_761109b252b0.png\n\nImage metadata: PNG 1119x469 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCargo Order Volumes (TCT & Voyage) for Coal Discharging in Europe ©\nSY 3Y All\n2\n2\ng\n7) '\n& 2M\n: 019 a 2020 atl 2021 ot 2022 \"nl",
+      "keywords": [
+        "europe",
+        "coal",
+        "asset",
+        "image",
+        "all",
+        "atl",
+        "cargo",
+        "discharging"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 155,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

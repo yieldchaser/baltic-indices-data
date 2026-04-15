@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gibsons_weekly_tanker_market_report__root",
   "doc_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gibsons_weekly_tanker_market_report",
   "parent_id": null,
-  "title": "Gibsons Weekly Tanker Market Report",
+  "title": "Gibson's Weekly Tanker Market Report",
   "section_path": [
-    "Gibsons Weekly Tanker Market Report"
+    "Gibson's Weekly Tanker Market Report"
   ],
-  "section_path_text": "Gibsons Weekly Tanker Market Report",
+  "section_path_text": "Gibson's Weekly Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Stepping into 2023\nWhilst 2022 ended with a fanfare, there is now a quieter feel for tanker markets as we step into 2023. The first Baltic Exchange assessments this week showed some notable red on TCE earnings relative to the values recorded in late December, particularly for crude tonnage. Despite the drop, however, earnings remain healthy, and owners are looking optimistically into the year ahead.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 740,
+  "token_count": 1014,
   "source_path": "reports/breakwave/2023/2023-01-13_gibsons-weekly-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/13/gibsons-weekly-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 733,
+      "token_count": 775,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gibsons_weekly_tanker_market_report__s02_linked_asset_2023_01_13_gibsons_weekly_tanker_market_report_img_128929_b58f9383e5c8_png",
+      "doc_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gibsons_weekly_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2023-01-13_2023_01_13_gibsons_weekly_tanker_market_report__root",
+      "title": "Linked asset: 2023-01-13_gibsons-weekly-tanker-market-report_img_128929_b58f9383e5c8.png",
+      "section_path": [
+        "Linked asset: 2023-01-13_gibsons-weekly-tanker-market-report_img_128929_b58f9383e5c8.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-13_gibsons-weekly-tanker-market-report_img_128929_b58f9383e5c8.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-13_gibsons-weekly-tanker-market-report_img_128929_b58f9383e5c8.png\n\nLinked image asset: 2023-01-13_gibsons-weekly-tanker-market-report_img_128929_b58f9383e5c8.png\n\nImage metadata: PNG 511x327 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nEurozone Manufacturing Purchasing Managers Index\n60\n= PMI\n*A reading below 50 suggests contraction\n| | |\n40 | | | | | | | |\nN N N N N N N N N N N N ise]\nNNN AN NNN NN NNN AN\nGN OY HSN © AO SH AN a\nOo Fe Ba aA NN BA Be Be BH TH AH AN\noO N -",
+      "keywords": [
+        "nnn",
+        "asset",
+        "image",
+        "below",
+        "contraction",
+        "dpi",
+        "embedded",
+        "eurozone"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

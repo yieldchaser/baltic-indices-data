@@ -26,7 +26,23 @@ keywords:
 - chinese
 - are
 - demand
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The ongoing trade spat between Australia and China is contributing
+    to the surging domestic coal prices, with one of the major coal supplier being
+    banned from exporting to the Chinese market. Currently there are some 70 dry bulk
+    vessels languishing off the Chin
+  unit: null
+  values:
+  - 70.0
 regions:
 - china
 - brazil

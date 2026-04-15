@@ -28,7 +28,60 @@ keywords:
 - gas
 - clean
 - asia
+linked_assets_discovered: 7
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 7
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Asia's refining margins are firming somewhat but competition from new Middle
+    East and African refineries could limit any strength.
+  section_type: null
+  source_line: Transportation fuel demand in several Asian countries has proven resilient
+    this year, despite the challenges of high inflationary pressures, rising interest
+    rates and mounting debt issues. Combined imports of gasoline, jet/kero and diesel/gasoil
+    into Southeast
+  unit: pct
+  values:
+  - 8.0
+- section: Asia's refining margins are firming somewhat but competition from new Middle
+    East and African refineries could limit any strength.
+  section_type: null
+  source_line: Although clean product exports from East Asia recorded a month-on-month
+    rebound of 20% over 1-18 May, exports could slow in the weeks ahead amid the region's
+    heavy refinery maintenance. China is slated to take at least 1mbd of refining
+    capacity offline in June
+  unit: pct
+  values:
+  - 20.0
+  - 1.0
+  - -18.0
+  - 1.0
+  - 1.0
+  - 65.0
+  - 70.0
+- section: Asia's refining margins are firming somewhat but competition from new Middle
+    East and African refineries could limit any strength.
+  section_type: null
+  source_line: 'The Middle East''s new big refineries - Jizan and Al Zour - have been
+    raising crude runs, adding over 240kbd of seaborne clean product exports to the
+    market in the first four months of this year. Compared to East Asian refineries,
+    these new refineries have the '
+  unit: null
+  values:
+  - 240.0
+- section: Asia's refining margins are firming somewhat but competition from new Middle
+    East and African refineries could limit any strength.
+  section_type: null
+  source_line: 'Furthermore, Nigeria''s Dangote refinery, which is reportedly being
+    commissioned this week, may contribute to supplies, although exports may only
+    materialise in the fourth quarter or some time next year. East Asian refiners
+    have exported around 430kbd of clean '
+  unit: null
+  values:
+  - 430.0
 regions:
 - china
 - brazil

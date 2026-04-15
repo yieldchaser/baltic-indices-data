@@ -26,7 +26,51 @@ keywords:
 - december
 - marked
 - year-on-year
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we have been examining in our Weekly China Reports since last year,
+    the Chinese economy has continued to emerge from the pandemic with a stronger
+    economy. Newly released December data has continued to confirm such strength.
+    China's overall industrial produc
+  unit: pct
+  values:
+  - 7.3
+  - 2020.0
+  - 11.0
+  - 91.3
+  - 8.0
+- section: Main
+  section_type: null
+  source_line: Even more impressive in China has been the recent electricity production
+    record that was set in December. China's overall electricity production totaled
+    a record 727.7 billion kilowatt hours last month. This is 1% higher than the previous
+    record that was set i
+  unit: pct
+  values:
+  - 727.7
+  - 1.0
+  - 11.0
+- section: Main
+  section_type: null
+  source_line: Noteworthy for the dry bulk shipping and seaborne coal markets is that
+    China's domestic coal production also set a new record in December, but the growth
+    in China's coal production has continued to pale in comparison to the growth in
+    China's coal-derived elect
+  unit: pct
+  values:
+  - 351.9
+  - 6.0
+  - 564.7
+  - 11.0
+  - 11.0
 regions:
 - china
 - brazil

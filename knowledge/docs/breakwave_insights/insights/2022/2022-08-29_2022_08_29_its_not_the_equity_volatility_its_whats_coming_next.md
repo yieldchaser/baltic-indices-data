@@ -24,7 +24,51 @@ keywords:
 - may
 - you
 - after
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: A lot can happen in eight minutes. You can boil an egg. You can read
+    eight pages of a novel. You can brew a coffee. You can wait for the sun's light
+    to reach you. Apparently, you can also wipe $78 billion out of existence.
+  unit: usd
+  values:
+  - 78.0
+- section: Main
+  section_type: null
+  source_line: Last Friday, in his annual address at Jackson Hole, Fed Chairman Jay
+    Powell reverted to hawkish form and suggested that the Fed will keep raising rates
+    until inflation's back is broken. This comes into sharp contrast with the Fed's
+    remark just one month ago th
+  unit: null
+  values:
+  - 500.0
+- section: Main
+  section_type: null
+  source_line: 'It may sound strange after Friday''s stock market carnage, but traders
+    and investors need to forget what they heard in Jackson Hole. Instead, they need
+    to focus on one leading indicator: Fed Assets (Bloomberg - FARBAST Index). Next
+    month, the Fed is raising its'
+  unit: usd
+  values:
+  - 45.0
+  - 95.0
+- section: Main
+  section_type: null
+  source_line: We are honestly less worried about equity volatility and more worried
+    about the long-term implications of the Fed's approach. Sharply raising interest
+    rates might not work as fast or efficiently as they may believe. It's playbook,
+    was written at an era when th
+  unit: pct
+  values:
+  - 35.0
+  - 52.0
 regions:
 - china
 - brazil
@@ -53,7 +97,7 @@ themes:
 - fed
 - can
 - markets
-title: Its Not The Equity Volatility Its Whats Coming Next
+title: It's not the equity volatility. It's what's coming next
 vessel_classes:
 - capesize
 - panamax

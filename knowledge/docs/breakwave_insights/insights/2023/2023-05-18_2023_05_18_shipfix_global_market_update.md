@@ -24,7 +24,151 @@ keywords:
 - europe
 - singapore
 - iron_ore
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 12
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: First out was Chinese data for industrial production and retail sales
+    during April. While the former delivered an annual increase well above what was
+    observed in March, the reading of 5.6 per cent fell well short of the 10.9 per
+    cent consensus projection. Reta
+  unit: null
+  values:
+  - 5.6
+  - 10.9
+  - 18.4
+  - 21.0
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: 'Across the Pacific, US retail sales for the month of April also failed
+    to impress. While the 0.4 per cent month-on-month increase ended a run of two
+    months of declines, the reading missed the consensus forecast of 0.8 per cent.
+    The weaker-than-expected growth '
+  unit: null
+  values:
+  - 0.4
+  - 0.8
+- section: Commodity Markets
+  section_type: null
+  source_line: Crude oil endured a volatile session yesterday as traders digested
+    the contradictory signals of weaker-than-expected Chinese industrial production
+    and a bullish demand outlook from the International Energy Agency. The Brent futures
+    for delivery in July eventua
+  unit: null
+  values:
+  - 74.91
+  - 0.4
+- section: Commodity Markets
+  section_type: null
+  source_line: 'During yesterday''s session, European natural gas futures also swung
+    between gains and losses. The front-month contracts ended the day 1.5 per cent
+    lower at 31.82 euros per Megawatt-hour, the lowest closing price since June 2021,
+    amid increasingly weak demand. '
+  unit: null
+  values:
+  - 1.5
+  - 31.82
+  - 2021.0
+- section: Commodity Markets
+  section_type: null
+  source_line: Thermal coal also faced headwinds yesterday as the demand outlook remained
+    subdued. The futures for delivery in Rotterdam next month briefly traded as low
+    as 98 dollars per tonne before recovering some losses and settling at 101.25 dollars
+    per tonne, 3.7 per c
+  unit: null
+  values:
+  - 98.0
+  - 101.25
+  - 3.7
+  - 161.45
+  - 0.6
+- section: Commodity Markets
+  section_type: null
+  source_line: Iron ore survived the lower-than-expected Chinese industrial production
+    data as hopes of robust future construction demand offset the underwhelming reading.
+    The June futures listed on the Singapore Exchange ended Tuesday's trading session
+    at 105.05 dollars per
+  unit: null
+  values:
+  - 105.05
+- section: Commodity Markets
+  section_type: null
+  source_line: The weak economic data and a stronger dollar put pressure on most base
+    metals yesterday. The three-month copper futures listed on the LME declined by
+    1.8 per cent on Tuesday, while the zinc and nickel contracts shed 1.6 and 2.3
+    per cent, respectively. In contr
+  unit: null
+  values:
+  - 1.8
+  - 1.6
+  - 2.3
+- section: Commodity Markets
+  section_type: null
+  source_line: After beginning the week with gains, the grain and oilseed futures
+    listed on the Chicago Board of Trade had a day in the red on Tuesday. While the
+    future of the Black Sea Grain Initiative remains uncertain, a continued favourable
+    global supply situation contri
+  unit: null
+  values:
+  - 2.9
+  - 1.9
+  - 2.6
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: For a fourth consecutive session, all of the Baltic Exchange's dry
+    bulk freight indices were in the red yesterday. The headline Baltic Dry Index
+    retreated by 3.0 per cent, with the largest two segments the main contributors
+    to the weak performance. The sub-ind
+  unit: null
+  values:
+  - 3.0
+  - 3.8
+  - 0.6
+  - 0.8
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: 'In contrast to the dry bulk indices, the Baltic''s wet freight indices
+    recorded both gains and losses yesterday. The indicator for the dirty tankers
+    extended its run of positive days into a sixth session with an increase of 1.5
+    per cent. On the other hand, the '
+  unit: null
+  values:
+  - 1.5
+  - 5.3
+  - 22.0
+  - 1.8
+  - 3.3
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: 'Despite minor losses in the crude oil markets, bunker fuels advanced
+    yesterday across the world''s major ports. In Singapore, the MGO and VLSFO prices
+    increased by nearly two per cent on Tuesday. Still, despite the gains, the fuels
+    were trading 1.2 and 3.1 per '
+  unit: null
+  values:
+  - 1.2
+  - 3.1
+  - 1.2
+  - 2.5
+  - 0.1
+  - 0.8
+  - 5.4
+  - 0.8
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: In addition to the expectations of sizeable harvests in the coming
+    months, there have been developments towards Ukrainian grain exports finding alternative
+    routes to bypass the absence of a deal for direct shipments. Cargo order volumes
+    for agricultural commod
+  unit: null
+  values:
+  - 20.0
 regions:
 - china
 - brazil
@@ -60,7 +204,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax

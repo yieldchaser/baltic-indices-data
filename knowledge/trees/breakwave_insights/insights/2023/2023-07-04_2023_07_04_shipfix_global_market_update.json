@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-07-04_2023_07_04_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-07-04_2023_07_04_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nFollowing last week's release of China's official manufacturing PMI, which suggested that the country's industrial sector remained in contraction territory for a third consecutive month, the Caixin manufacturing PMI painted a somewhat less negative picture today. While the alternative gauge, which has a greater focus on smaller and exporting companies, remained in expansionary territory last month and was stronger than expected, it nevertheless declined from the May reading. Hence, it highlighted the continued headwinds for the world's second-largest economy.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1325,
+  "token_count": 1650,
   "source_path": "reports/breakwave/2023/2023-07-04_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/7/4/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 194,
+      "token_count": 249,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-04_2023_07_04_shipfix_global_market_update__s06_linked_asset_2023_07_04_shipfix_global_market_update_img_unnamed_2023_07_04t124316132_47cec0aaf398_png",
+      "doc_id": "breakwave_insights_insights_2023-07-04_2023_07_04_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-07-04_2023_07_04_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-07-04_shipfix-global-market-update_img_unnamed-2023-07-04t124316132_47cec0aaf398.png",
+      "section_path": [
+        "Linked asset: 2023-07-04_shipfix-global-market-update_img_unnamed-2023-07-04t124316132_47cec0aaf398.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-04_shipfix-global-market-update_img_unnamed-2023-07-04t124316132_47cec0aaf398.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-04_shipfix-global-market-update_img_unnamed-2023-07-04t124316132_47cec0aaf398.png\n\nLinked image asset: 2023-07-04_shipfix-global-market-update_img_unnamed-2023-07-04t124316132_47cec0aaf398.png\n\nImage metadata: PNG 1120x632 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Coal Loading in the US by Destination\n®@ Rest of the world ™ South America ™ Europe @® China&FarEast @™ Asia (excl. China/FE)\n125\n10\n» 78\ne\n5\n5\n= 5\n=\n25\n)\n; ot 6 ot go?",
+      "keywords": [
+        "china",
+        "europe",
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "america",
+        "asia"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 231,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

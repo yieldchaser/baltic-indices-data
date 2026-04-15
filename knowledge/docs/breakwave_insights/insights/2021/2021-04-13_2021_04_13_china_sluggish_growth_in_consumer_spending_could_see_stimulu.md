@@ -26,7 +26,32 @@ keywords:
 - stimulus
 - was
 - fiscal
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Shanghai Shenzhen CSI 300 Index
+  unit: null
+  values:
+  - 300.0
+- section: Main
+  section_type: null
+  source_line: The ambition of the Chinese government in the current five-year plan
+    to reduce the country's reliance on the global market has increased the importance
+    of domestic consumption, but many economists argue that it will not be sufficient
+    for meeting the economic g
+  unit: null
+  values:
+  - 35.0
+  - 2020.0
+  - 2019.0
+  - 3.5
 regions:
 - china
 - brazil

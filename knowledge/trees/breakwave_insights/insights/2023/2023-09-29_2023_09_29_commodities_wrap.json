@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 516,
+  "token_count": 1082,
   "source_path": "reports/breakwave/2023/2023-09-29_commodities-wrap.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/9/29/commodities-wrap",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "By Daniel Hynes\nCommodity prices saw some mean reversion, with oil prices retreating from a recent high while metals pared some of their recent losses. Crude oil prices retreated after touching a high of USD97/bbl on Wednesday.",
+      "summary": "By Daniel Hynes\nCommodity prices saw some mean reversion, with oil prices retreating from a recent high while metals pared some of their recent losses. Image reference: 1695941561675.png | assets/2023-09-29_commodities-wrap_img_1695941561675_00272df4de9e.png\nCrude oil prices retreated after touching a high of USD97/bbl on Wednesday.",
       "keywords": [
         "lng",
         "china",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 514,
+      "token_count": 554,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-29_2023_09_29_commodities_wrap__s02_linked_asset_2023_09_29_commodities_wrap_img_1695941561675_00272df4de9e_png",
+      "doc_id": "breakwave_insights_insights_2023-09-29_2023_09_29_commodities_wrap",
+      "parent_id": "breakwave_insights_insights_2023-09-29_2023_09_29_commodities_wrap__root",
+      "title": "Linked asset: 2023-09-29_commodities-wrap_img_1695941561675_00272df4de9e.png",
+      "section_path": [
+        "Linked asset: 2023-09-29_commodities-wrap_img_1695941561675_00272df4de9e.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-29_commodities-wrap_img_1695941561675_00272df4de9e.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-29_commodities-wrap_img_1695941561675_00272df4de9e.png\n\nLinked image asset: 2023-09-29_commodities-wrap_img_1695941561675_00272df4de9e.png\n\nImage metadata: PNG 1280x720 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCOMMODITIES Last Unit 1 day (% chg) |\nLME Base Metals ee\nCopper 8,217.5 usD/t 1.276\nAluminium 2,277.5 usp/t | «4.765 Burin - . Nickel 18,887.0 uso [I eoeio\nZinc 2,620.5 uso [a wick\nLead 2,195.5 uspt | 41974\nTin 25,324.0 sot pone NN\nSteel Making Raw Materials --\nIron ore 119.6 USD/t 1.271 Coking coal - :\nCoking coal 304.5 usb/t 0.329 -_\nGold 1,863.8 USsD/oz 0.183\nSilver 22.6 USD/oz 0.091 | silver -_\nPlatinum 912.3 USsD/oz 0.160 -_ -\nPalladium 1,273.8 USD/oz 0.266 Platinum\nEnergy\nWTI crude 91.9 USD/bbI ORI5S\nBrent crude 95.4 ub | serine\nNorth Asia LNG 14.8 UsD/mMMBtu 1.131 _-_--_-~_ Nae __-\nThermal coal 159.8 uso/t | 90.374 , North asia TMG ___- \\ >\nCarbon\nEUA 82.7 uso/t 0.510 gua SN\nACCU 30.5 AUuD/t 0.000 accu\nNZ 66.0 NzD/t 0.380 31 1 4 5 6 7 = a 12 13 14 #15 18 19 20 21 22 25 26 27 28\n23 Aug 23 Sep",
+      "keywords": [
+        "lng",
+        "iron_ore",
+        "coal",
+        "steel",
+        "gas",
+        "accu",
+        "asia",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 494,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

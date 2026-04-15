@@ -26,7 +26,57 @@ keywords:
 - million
 - last
 - year-on-year
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China imported 30.2 million tons of coal in July. This has marked a
+    month-on-month increase of 1.8 million tons (6%) and a year-on-year increase of
+    4.1 million tons (16%). Coal imports have remained on a turnaround since June,
+    and last month's volume has marke
+  unit: pct
+  values:
+  - 30.2
+  - 1.8
+  - 6.0
+  - 4.1
+  - 16.0
+- section: Main
+  section_type: null
+  source_line: China imported 88.5 million tons of iron ore last month, which marks
+    a month-on-month decline of just 900,000 tons (-1%) but is down year-on-year by
+    24.2 million tons (-21%). Of note is that July 2020 saw imports set a record and
+    July's 2021's 21% year-on-year
+  unit: pct
+  values:
+  - 88.5
+  - 900000.0
+  - -1.0
+  - 24.2
+  - -21.0
+  - 2020.0
+  - 2021.0
+  - 21.0
+- section: Main
+  section_type: null
+  source_line: The Chinese government has been unsuccessful in driving down coal prices,
+    but it finally has had success in the iron ore sector. We expect that iron ore
+    imports will find support soon and continue to note some are unaware that China's
+    iron ore imports historic
+  unit: pct
+  values:
+  - 5.0
+  - 2012.0
+  - 2015.0
+  - 2016.0
+  - 2015.0
+  - 2.0
 regions:
 - china
 - brazil

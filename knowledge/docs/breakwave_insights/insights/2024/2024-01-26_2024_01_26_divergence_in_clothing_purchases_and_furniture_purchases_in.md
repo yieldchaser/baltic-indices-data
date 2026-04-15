@@ -25,7 +25,43 @@ keywords:
 - consumers
 - during
 - furniture
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's retail sales in December grew year-on-year by 7.4%. This is
+    down from November's recent peak but is still a healthy level. Taking December's
+    0.3% contraction into account, retail sales adjusted for inflation grew year-on-year
+    by 7.7%. China's retail sa
+  unit: pct
+  values:
+  - 7.4
+  - 0.3
+  - 7.7
+- section: Main
+  section_type: null
+  source_line: Overall, it remains quite positive that Chinese consumers continue
+    to buy more goods than they did a year ago. The same cannot unfortunately be said
+    about consumers in many other major economies however. In Europe, for example,
+    each of the last twenty-two mont
+  unit: pct
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: Both furniture sales and household appliance sales (which includes
+    consumer electronics) fell on a year-on-year basis last month. Furniture sales
+    have remained particularly weak. Last month saw furniture sales in China fall
+    year-on-year by 5%. Sales have now c
+  unit: pct
+  values:
+  - 5.0
 regions:
 - china
 - brazil

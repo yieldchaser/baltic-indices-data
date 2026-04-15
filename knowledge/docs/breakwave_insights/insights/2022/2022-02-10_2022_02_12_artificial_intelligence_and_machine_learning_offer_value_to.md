@@ -24,7 +24,24 @@ keywords:
 - any
 - companies
 - fuel
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Round the clock 24/7 data acquisition from all available sources provides
+    a rich, high-resolution picture of ship performance rather than a patchwork of
+    inconsistent, manual datasets and benefits add up to more than the sum of its
+    individual technical, operati
+  unit: null
+  values:
+  - 24.0
+  - 7.0
 regions:
 - china
 - brazil

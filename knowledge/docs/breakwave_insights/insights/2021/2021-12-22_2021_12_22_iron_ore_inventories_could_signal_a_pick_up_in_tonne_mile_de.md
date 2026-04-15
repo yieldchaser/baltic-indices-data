@@ -28,7 +28,36 @@ keywords:
 - year
 - are
 - export
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Despite China's restrictions on steel production, global seaborne iron
+    ore exports have held up well. According to cargo tracking data from Oceanbolt,
+    volumes matched the pre-pandemic peak last month at 131 million tonnes. However,
+    based on the quantities ship
+  unit: null
+  values:
+  - 131.0
+  - 28.0
+  - 2018.0
+- section: Main
+  section_type: null
+  source_line: On the other hand, recent export volumes have held up better for the
+    world's largest iron ore exporter, Australia. The first half of the month has
+    seen more than 40 million tonnes leaving the country's ports, which means that
+    it could be on track to join an ex
+  unit: null
+  values:
+  - 40.0
+  - 80.0
+  - 926.0
 regions:
 - china
 - brazil

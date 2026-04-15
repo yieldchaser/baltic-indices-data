@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 509,
+  "token_count": 1183,
   "source_path": "reports/breakwave/2023/2023-03-16_vortexa-freight-weekly.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/16/vortexa-freight-weekly",
   "children": [
@@ -69,7 +69,7 @@
       "section_path_text": "ANALYSIS / EAST OF SUEZ / DIRTY",
       "level": 1,
       "ordinal": 2,
-      "summary": "VLCC utilisation by voyage status\nVLCC freight rates performed a mini-rally, with a 33% and a 12% w-o-w increase on the Middle East-to-China (TD3C) and US Gulf-to-China (TD22) respectively. While a flurry of fixtures from both regions was observed, this increase in rates might not be sustained.",
+      "summary": "Image reference: unnamed - 2023-03-16T122855.851.png | assets/2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t122855851_666d88e81a9e.png\nVLCC utilisation by voyage status\nVLCC freight rates performed a mini-rally, with a 33% and a 12% w-o-w increase on the Middle East-to-China (TD3C) and US Gulf-to-China (TD22) respectively. While a flurry of fixtures from both regions was observed, this increase in rates might not be sustained.",
       "keywords": [
         "vlcc",
         "china",
@@ -82,7 +82,7 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 223,
+      "token_count": 283,
       "section_type": null,
       "children": []
     },
@@ -97,7 +97,7 @@
       "section_path_text": "ANALYSIS / WEST OF SUEZ / DIRTY",
       "level": 1,
       "ordinal": 3,
-      "summary": "Aframaxes hesitate as European crude demand falters\nAframax utilisation towards Europe vs. availability in the US Gulf (RHS)\nAframax freight rates from the US Gulf-to-Europe (TD25) have slumped this month after picking up over 50% in February.",
+      "summary": "Aframaxes hesitate as European crude demand falters\nImage reference: unnamed - 2023-03-16T123147.621.png | assets/2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t123147621_c8f91cd3d0ac.png\nAframax utilisation towards Europe vs. availability in the US Gulf (RHS)\nAframax freight rates from the US Gulf-to-Europe (TD25) have slumped this month after picking up over 50% in February.",
       "keywords": [
         "aframax",
         "europe",
@@ -110,8 +110,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 201,
+      "token_count": 261,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-16_2023_03_16_vortexa_freight_weekly__s04_linked_asset_2023_03_16_vortexa_freight_weekly_img_unnamed_2023_03_16t122855851_666d88e81a9e_png",
+      "doc_id": "breakwave_insights_insights_2023-03-16_2023_03_16_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-03-16_2023_03_16_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t122855851_666d88e81a9e.png",
+      "section_path": [
+        "Linked asset: 2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t122855851_666d88e81a9e.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t122855851_666d88e81a9e.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t122855851_666d88e81a9e.png\n\nLinked image asset: 2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t122855851_666d88e81a9e.png\n\nImage metadata: PNG 1086x826 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n550\n500\n450\n3\n8\ng\nrz}\n2\n400\n350\n300\nMar-21 9 May-21--Jul-21 Sep-21 Now21 - Jan-22.- Mar-22,- May-22,--Jul-22 Sep-22 Now22 = Jan-23.- Mar-23\n-laden --Balkast",
+      "keywords": [
+        "asset",
+        "image",
+        "balkast",
+        "dpi",
+        "embedded",
+        "info",
+        "jan-22.",
+        "jan-23."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 204,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-16_2023_03_16_vortexa_freight_weekly__s05_linked_asset_2023_03_16_vortexa_freight_weekly_img_unnamed_2023_03_16t123147621_c8f91cd3d0ac_png",
+      "doc_id": "breakwave_insights_insights_2023-03-16_2023_03_16_vortexa_freight_weekly",
+      "parent_id": "breakwave_insights_insights_2023-03-16_2023_03_16_vortexa_freight_weekly__root",
+      "title": "Linked asset: 2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t123147621_c8f91cd3d0ac.png",
+      "section_path": [
+        "Linked asset: 2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t123147621_c8f91cd3d0ac.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t123147621_c8f91cd3d0ac.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t123147621_c8f91cd3d0ac.png\n\nLinked image asset: 2023-03-16_vortexa-freight-weekly_img_unnamed-2023-03-16t123147621_c8f91cd3d0ac.png\n\nImage metadata: PNG 1078x828 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\n150 250\n240\n140\n230\nh\nzo \\P \\ ‘ 220\n\\ r\nAW AAR |\n210\nmy ao l] my\noc oc\nFA FA\n8 200 =\n5 i I| %\nEto \\ | | 2\n| | 190\n! 100 180\n170\n90\n160\n80 150\n01-Dec21 04-Feb-22 10-Apr-22 14-Jun-22 18-Aug22 22-Oct-22 26-Dec22 01-Mar-23\n-Uiilisation towards Europe.",
+      "keywords": [
+        "europe",
+        "us_gulf",
+        "asset",
+        "image",
+        "aar",
+        "apr-22",
+        "aug22",
+        "avaitabilty"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 262,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

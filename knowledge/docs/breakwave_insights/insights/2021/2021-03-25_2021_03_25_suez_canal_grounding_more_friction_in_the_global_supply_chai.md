@@ -26,7 +26,43 @@ keywords:
 - could
 - around
 - situation
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The grounding of a 20,000 TEU container vessel in the Suez Canal, and
+    the subsequent suspension of all traffic through the shortcut for shipments between
+    Asia and ports in the Mediterranean and the Atlantic Basin, has highlighted its
+    importance to world trade.
+  unit: null
+  values:
+  - 20000.0
+  - 52.0
+- section: Main
+  section_type: null
+  source_line: The extent of the impact on the shipping industry is a function of
+    how quickly the situation can be resolved. A successful refloating very soon would
+    mean that the impact would be limited, as the canal can accommodate the transit
+    of more than a hundred vessels
+  unit: null
+  values:
+  - 200.0
+  - 364.0
+- section: Main
+  section_type: null
+  source_line: As discussed in Ocean Analytics' previous contribution, the shipping
+    industry often benefits from frictions and inefficiencies injected by external
+    forces, such as weather conditions, into the global supply chains. This is no
+    exception, as tonnage trading in t
+  unit: null
+  values:
+  - 40.0
 regions:
 - china
 - brazil

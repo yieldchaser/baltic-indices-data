@@ -24,7 +24,39 @@ keywords:
 - are
 - coarse
 - ukrainian
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Remaining of note regarding trade volumes is that Russia this year
+    was expected to export 35 million tons of wheat and 9 million tons of coarse grain,
+    and at least 145 million tons of coal and at least 15 million tons of iron ore.
+    Ukraine this year was expecte
+  unit: null
+  values:
+  - 35.0
+  - 9.0
+  - 145.0
+  - 15.0
+  - 24.0
+  - 40.0
+  - 35.0
+- section: Main
+  section_type: null
+  source_line: While more Ukrainian cargoes this week are expected to be hit by force
+    majeure, another concern is that the conflict in Ukraine will significantly affect
+    planting and then later inland transportation -- particularly for Ukrainian coarse
+    grain. Parts of Ukraine
+  unit: null
+  values:
+  - 53.6
+  - 40.0
 regions:
 - china
 - brazil

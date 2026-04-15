@@ -25,7 +25,33 @@ keywords:
 - months.
 - november
 - buy
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's retail sales in November grew year-on-year by 10.1%. This has
+    again marked the highest retail sales growth seen since May and is of course well
+    above November's 0.5% decline in inflation. China's retail sales growth has now
+    come in higher than inflatio
+  unit: pct
+  values:
+  - 10.1
+  - 0.5
+- section: Main
+  section_type: null
+  source_line: Among the specific retail categories we monitor, of note in China though
+    is that furniture sales continue to contract on a year-on-year basis. This remains
+    a direct result of the ongoing weakness in China's housing market and is an issue
+    we have continued to d
+  unit: pct
+  values:
+  - 3.0
 regions:
 - china
 - brazil

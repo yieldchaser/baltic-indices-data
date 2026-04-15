@@ -26,7 +26,67 @@ keywords:
 - gas
 - was
 - earlier
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: cautiously_bearish
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil eked out a small gain, aided by a weaker USD. It had fallen
+    as much as 3.5% earlier in the session, as the market contemplated several central
+    banks raising rates to tame inflation. This was exacerbated by the potential for
+    increased supply. The US a
+  unit: pct
+  values:
+  - 3.5
+  - 10.0
+  - 5.0
+  - 2025.0
+- section: Main
+  section_type: null
+  source_line: European natural gas extended recent falls as nations intensify their
+    efforts to avert the energy crisis. Germany, the UK and others continue to talk
+    up plans to spend billions of dollars easing their reliance on Russian imports,
+    rescuing local energy companie
+  unit: pct
+  values:
+  - 4.0
+  - 1.97
+- section: Main
+  section_type: null
+  source_line: Copper declined with most other metals as the USD strengthened ahead
+    of central bank meetings. It is seen as a barometer of economic growth. The prospect
+    of aggressive rate hikes has seen it drop more than 20% this year. However, growth
+    in demand appears to be
+  unit: pct
+  values:
+  - 20.0
+  - 25.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: The lifting of restrictions in Chengdu also lifted sentiment in the
+    iron ore market. The relatively short lockdown (compared with earlier outbreaks,
+    such as Shanghai) raised hopes that Beijing is getting an upper hand in controlling
+    the virus. The end of restr
+  unit: pct
+  values:
+  - 0.7
+  - 8.7
+- section: Main
+  section_type: null
+  source_line: Gold was under pressure earlier in the session as the spectre of another
+    rate hike pushed the USD higher. The precious metal remains vulnerable to further
+    moves lower amid a challenging macro backdrop. Expectations of another aggressive
+    rate hike are likely to
+  unit: usd
+  values:
+  - 675.0
+  - 600.0
 regions:
 - china
 - brazil

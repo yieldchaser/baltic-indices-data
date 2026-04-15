@@ -26,7 +26,55 @@ keywords:
 - fertilisers
 - are
 - fertiliser
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Global food prices look set to become collateral damage of the global
+    energy crisis. The ongoing energy squeeze in Europe and elsewhere makes natural
+    gas, the primary feedstock for most nitrogen fertilisers, more expensive. The
+    soaring energy costs are sending
+  unit: null
+  values:
+  - 1100.0
+  - 4.4
+  - 260.0
+- section: Main
+  section_type: null
+  source_line: According to data from Oceanbolt, around 185 million tonnes of fertilisers
+    are shipped onboard dry bulk vessels annually. The trade is not the exclusive
+    domain for dry bulk, as a large part is shipped bagged in containers. Unlike most
+    other dry bulk commoditie
+  unit: null
+  values:
+  - 185.0
+  - 2015.0
+- section: Main
+  section_type: null
+  source_line: Assuming linearity, export volumes year-to-date suggest that 2021 will
+    surpass the previous record from 2018. The rather simplistic approach indicates
+    that approximately 194 million tonnes of fertilisers will be shipped onboard bulkers
+    during the year, some th
+  unit: null
+  values:
+  - 2021.0
+  - 2018.0
+  - 194.0
+- section: Main
+  section_type: null
+  source_line: The slowdown in export activities indicates that the global energy
+    crisis is starting to affect fertiliser production and exports. If the pattern
+    remains in place for the remainder of the year, export volumes may fail, albeit
+    marginally, to match the yearly re
+  unit: null
+  values:
+  - 2018.0
 regions:
 - china
 - brazil

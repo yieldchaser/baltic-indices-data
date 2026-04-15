@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-02-22_2023_02_22_iron_ore_gains_amid_signs_of_stronger_demand__root",
   "doc_id": "breakwave_insights_insights_2023-02-22_2023_02_22_iron_ore_gains_amid_signs_of_stronger_demand",
   "parent_id": null,
-  "title": "Iron Ore Gains Amid Signs Of Stronger Demand",
+  "title": "Iron ore gains amid signs of stronger demand",
   "section_path": [
-    "Iron Ore Gains Amid Signs Of Stronger Demand"
+    "Iron ore gains amid signs of stronger demand"
   ],
-  "section_path_text": "Iron Ore Gains Amid Signs Of Stronger Demand",
+  "section_path_text": "Iron ore gains amid signs of stronger demand",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA risk-off tone across markets weighed on sentiment in key commodities. Ongoing supply side issues helped mitigate the losses. Crude oil gained early in the session amid signs of improving Chinese demand.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 608,
+  "token_count": 1025,
   "source_path": "reports/breakwave/2023/2023-02-22_iron-ore-gains-amid-signs-of-stronger-demand.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/2/22/iron-ore-gains-amid-signs-of-stronger-demand",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 606,
+      "token_count": 656,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-22_2023_02_22_iron_ore_gains_amid_signs_of_stronger_demand__s02_linked_asset_2023_02_22_iron_ore_gains_amid_signs_of_stronger_demand_img_1677015418080_d3dd4e0db658_png",
+      "doc_id": "breakwave_insights_insights_2023-02-22_2023_02_22_iron_ore_gains_amid_signs_of_stronger_demand",
+      "parent_id": "breakwave_insights_insights_2023-02-22_2023_02_22_iron_ore_gains_amid_signs_of_stronger_demand__root",
+      "title": "Linked asset: 2023-02-22_iron-ore-gains-amid-signs-of-stronger-demand_img_1677015418080_d3dd4e0db658.png",
+      "section_path": [
+        "Linked asset: 2023-02-22_iron-ore-gains-amid-signs-of-stronger-demand_img_1677015418080_d3dd4e0db658.png"
+      ],
+      "section_path_text": "Linked asset: 2023-02-22_iron-ore-gains-amid-signs-of-stronger-demand_img_1677015418080_d3dd4e0db658.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-22_iron-ore-gains-amid-signs-of-stronger-demand_img_1677015418080_d3dd4e0db658.png\n\nLinked image asset: 2023-02-22_iron-ore-gains-amid-signs-of-stronger-demand_img_1677015418080_d3dd4e0db658.png\n\nImage metadata: PNG 1556x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nFri2-Dec Mon 5-Dec % chg Daily % chg Daily % chg\nCCI 611.78 626.05 Brent crude 82.63 -3.3% Gold 1,769 -1.6%\nPrecious 627.49 616.85 -1.7% Thermal coal 400.50 Palladium 1,840 -21.3%\nIndustrials 403.05 401.68 -0.3% JKM LNG swaps 33.19 Iron Ore 112.7\nBulks 539.18 549.70 Copper 8,394 -0.7% Hogs 3,250\nAgs 374.25 379.30 Nickel 28,714 -0.7% Corn 439\nEnergy 884.27 914.03 Aluminium 2,524 -0.9% Wheat 503",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 325,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

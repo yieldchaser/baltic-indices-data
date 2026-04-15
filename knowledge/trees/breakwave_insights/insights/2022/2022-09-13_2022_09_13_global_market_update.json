@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1328,
+  "token_count": 1559,
   "source_path": "reports/breakwave/2022/2022-09-13_global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/13/global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 177,
+      "token_count": 214,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-13_2022_09_13_global_market_update__s06_linked_asset_2022_09_13_global_market_update_img_unnamed287029_4e7cb78e09e2_png",
+      "doc_id": "breakwave_insights_insights_2022-09-13_2022_09_13_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-09-13_2022_09_13_global_market_update__root",
+      "title": "Linked asset: 2022-09-13_global-market-update_img_unnamed287029_4e7cb78e09e2.png",
+      "section_path": [
+        "Linked asset: 2022-09-13_global-market-update_img_unnamed287029_4e7cb78e09e2.png"
+      ],
+      "section_path_text": "Linked asset: 2022-09-13_global-market-update_img_unnamed287029_4e7cb78e09e2.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-13_global-market-update_img_unnamed287029_4e7cb78e09e2.png\n\nLinked image asset: 2022-09-13_global-market-update_img_unnamed287029_4e7cb78e09e2.png\n\nImage metadata: PNG 1119x558 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Cargo Order Volumess (TCT & Voyage) for Agricultural Commodities Loading in Ukraine ©\n2\n52\ng\n2)\n|\n|\n™ #3 GRAINS / Load: Ukraine ™ #1 CEREALS/ Load: Ukraine ™ #2 AGRI / Load: Ukraine",
+      "keywords": [
+        "grain",
+        "ukraine",
+        "load",
+        "asset",
+        "image",
+        "agri",
+        "agricultural",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 163,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

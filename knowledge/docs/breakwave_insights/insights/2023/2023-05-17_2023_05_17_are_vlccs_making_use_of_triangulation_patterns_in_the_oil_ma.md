@@ -28,7 +28,108 @@ keywords:
 - triangulation
 - east
 - round
+linked_assets_discovered: 4
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 4
 market_tone: neutral
+numeric_observation_count: 8
+numeric_observations:
+- section: VLCC demand has grown in the last few months. In this insight, we investigate
+    whether this has sparked a change in VLCC tanker behaviour, or if traditional
+    round voyages have prevailed in a high demand environment.
+  section_type: null
+  source_line: Since the Russian invasion of Ukraine, VLCC activity in the West of
+    Suez has been on the rise. This increase includes flows on existing routes such
+    as TD22 (US Gulf-to-China) as well as an introduction of VLCCs on the previously
+    Afra/Suezmax-dominated route, T
+  unit: null
+  values:
+  - 2.0
+  - 5.0
+  - 2.0
+  - 1.0
+- section: VLCC demand has grown in the last few months. In this insight, we investigate
+    whether this has sparked a change in VLCC tanker behaviour, or if traditional
+    round voyages have prevailed in a high demand environment.
+  section_type: null
+  source_line: 'The VLCC routes we investigated consisted of the main VLCC routes,
+    namely: TD1 (Middle East-to-US Gulf), TD3C (Middle East-to-China), TD15 (West
+    Africa-to-China), TD22 (US Gulf-to-China), South America East Coast-to-China as
+    well as TD25 (US Gulf-to-Europe) wh'
+  unit: null
+  values:
+  - 5.0
+  - 2.0
+  - 5.0
+- section: VLCC demand has grown in the last few months. In this insight, we investigate
+    whether this has sparked a change in VLCC tanker behaviour, or if traditional
+    round voyages have prevailed in a high demand environment.
+  section_type: null
+  source_line: According to data from our Freight API/SDK , VLCCs operating on TD1
+    and TD3C tend to perform round voyages, with ballasters very rarely heading to
+    destinations other than the Middle East. This pattern persists today (particularly
+    on TD3C), despite the trade sh
+  unit: null
+  values:
+  - 5.0
+- section: VLCC demand has grown in the last few months. In this insight, we investigate
+    whether this has sparked a change in VLCC tanker behaviour, or if traditional
+    round voyages have prevailed in a high demand environment.
+  section_type: null
+  source_line: VLCCs discharging on TD15, TD22 and South America East Coast-to-China
+    tend to ballast to a mixture of destinations, with round voyages being rare given
+    the longer mileage of these routes. This indicates that triangulation could be
+    occurring, since the origin o
+  unit: null
+  values:
+  - 5.0
+  - 2.0
+- section: VLCC demand has grown in the last few months. In this insight, we investigate
+    whether this has sparked a change in VLCC tanker behaviour, or if traditional
+    round voyages have prevailed in a high demand environment.
+  section_type: null
+  source_line: US Gulf-to-China (laden), China-to-Middle East (ballast), Middle East-to-US
+    Gulf (laden) and repeat South America East Coast-to-China (laden), China-to-Middle
+    East (ballast), Middle East-to-South America East Coast (laden) and repeat. In
+    two cases, we found th
+  unit: null
+  values:
+  - 2021.0
+- section: VLCC demand has grown in the last few months. In this insight, we investigate
+    whether this has sparked a change in VLCC tanker behaviour, or if traditional
+    round voyages have prevailed in a high demand environment.
+  section_type: null
+  source_line: South America East Coast-to-China (laden), China-to-Middle East (ballast),
+    Middle East-to-South America East Coast (laden) and repeat. In two cases, we found
+    that this pattern has persisted since 2021 for a single vessel.
+  unit: null
+  values:
+  - 2021.0
+- section: VLCC demand has grown in the last few months. In this insight, we investigate
+    whether this has sparked a change in VLCC tanker behaviour, or if traditional
+    round voyages have prevailed in a high demand environment.
+  section_type: null
+  source_line: As a result of their preference for round voyages, VLCCs across the
+    globe seem to be splitting laden and ballast time down the middle, which is evident
+    in laden and ballast voyage duration being very similar. The slight downward trend
+    in durations (see chart a
+  unit: null
+  values:
+  - 2022.0
+- section: VLCC demand has grown in the last few months. In this insight, we investigate
+    whether this has sparked a change in VLCC tanker behaviour, or if traditional
+    round voyages have prevailed in a high demand environment.
+  section_type: null
+  source_line: In recent months, with VLCC tanker demand growing, a 50/50 split between
+    laden and ballast time was seemingly efficient enough to keep tankers profitable.
+    However, crude demand may subside amid refinery maintenance in East Asia (mostly
+    expected until June) and
+  unit: null
+  values:
+  - 50.0
+  - 50.0
 regions:
 - china
 - brazil

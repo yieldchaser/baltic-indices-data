@@ -24,7 +24,42 @@ keywords:
 - economy
 - bond
 - commodities
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Inflation expectations are on the rise across the globe, as the world
+    economy looks set to emerge from the pandemic induced recession. The extensive
+    fiscal stimulus will see debt levels rising considerably and are driving investors
+    expectations of higher infla
+  unit: null
+  values:
+  - 0.1
+- section: Main
+  section_type: null
+  source_line: The rising inflation prospects have seen bond yields recovering, with
+    US 10-year bond yields back at the levels last seen a year ago. In Europe, bond
+    yields have risen as well, prompting the ECB president to say that the bank is
+    monitoring the situation. The s
+  unit: null
+  values:
+  - 10.0
+- section: Main
+  section_type: null
+  source_line: The rising interest in the reflation/inflation trade has pushed many
+    commodities higher, with copper trading above 9,000 USD per tonne for the first
+    time in nine years and iron ore back above 170 dollar per tonne. Copper is also
+    benefitting from the push towar
+  unit: usd_per_unit
+  values:
+  - 9000.0
+  - 170.0
 regions:
 - china
 - brazil

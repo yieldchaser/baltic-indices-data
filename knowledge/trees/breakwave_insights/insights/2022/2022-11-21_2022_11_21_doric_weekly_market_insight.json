@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 844,
+  "token_count": 1279,
   "source_path": "reports/breakwave/2022/2022-11-21_doric-weekly-market-insight.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/11/21/doric-weekly-market-insight",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "Breakwave Advisors 2nd annual shipping market event\nBy Michalis Voutsinas\nThe forty-sixth week started with the IMF stressing that global economic growth prospects are confronting a unique mix of headwinds, including Russia's invasion of Ukraine, interest rate increases to contain inflation, and lingering pandemic effects such as China's lockdowns and disruptions in supply chains. With such a demoralizing start, few assets could find the courage to defy the law of gravity.",
+      "summary": "Image reference: Breakwave Advisors 2nd annual shipping market event | assets/2022-11-21_doric-weekly-market-insight_img_page2b211_c497586f981c.png\nBreakwave Advisors 2nd annual shipping market event\nBy Michalis Voutsinas\nThe forty-sixth week started with the IMF stressing that global economic growth prospects are confronting a unique mix of headwinds, including Russia's invasion of Ukraine, interest rate increases to contain inflation, and lingering pandemic effects such as China's lockdowns and disruptions in supply chains. With such a demoralizing start, few assets could find the courage to defy the law of gravity.",
       "keywords": [
         "capesize",
         "panamax",
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 842,
+      "token_count": 939,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-21_2022_11_21_doric_weekly_market_insight__s02_linked_asset_2022_11_21_doric_weekly_market_insight_img_page2b211_c497586f981c_png",
+      "doc_id": "breakwave_insights_insights_2022-11-21_2022_11_21_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2022-11-21_2022_11_21_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2022-11-21_doric-weekly-market-insight_img_page2b211_c497586f981c.png",
+      "section_path": [
+        "Linked asset: 2022-11-21_doric-weekly-market-insight_img_page2b211_c497586f981c.png"
+      ],
+      "section_path_text": "Linked asset: 2022-11-21_doric-weekly-market-insight_img_page2b211_c497586f981c.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-21_doric-weekly-market-insight_img_page2b211_c497586f981c.png\n\nLinked image asset: 2022-11-21_doric-weekly-market-insight_img_page2b211_c497586f981c.png\n\nImage metadata: PNG 260x100 mode=RGBA\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\n[OCR skipped for small image (< 90000 pixels).]",
+      "keywords": [
+        "image",
+        "asset",
+        "doric-weekly-market-insight_img_page2b211_c497586f981c.png",
+        "dpi",
+        "embedded",
+        "info",
+        "linked",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 111,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-21_2022_11_21_doric_weekly_market_insight__s03_linked_asset_2022_11_21_doric_weekly_market_insight_img_screenshot_20221121_103123_samsungno_ef32d70fc5e5_jpg",
+      "doc_id": "breakwave_insights_insights_2022-11-21_2022_11_21_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2022-11-21_2022_11_21_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2022-11-21_doric-weekly-market-insight_img_screenshot-20221121-103123-samsungno_ef32d70fc5e5.jpg",
+      "section_path": [
+        "Linked asset: 2022-11-21_doric-weekly-market-insight_img_screenshot-20221121-103123-samsungno_ef32d70fc5e5.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-11-21_doric-weekly-market-insight_img_screenshot-20221121-103123-samsungno_ef32d70fc5e5.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-21_doric-weekly-market-insight_img_screenshot-20221121-103123-samsungno_ef32d70fc5e5.jpg\n\nLinked image asset: 2022-11-21_doric-weekly-market-insight_img_screenshot-20221121-103123-samsungno_ef32d70fc5e5.jpg\n\nImage metadata: JPEG 924x605 mode=RGB\n\nOCR text:\n30000\n25000\n20000\n15000\n10000\n5000\ns rid rs is ra rid s rid Pid e Pu rid\nSource: Johns Hopkins University CSSE COVID-19 Data , Doric Shipbrokers S.A.",
+      "keywords": [
+        "rid",
+        "asset",
+        "image",
+        "source",
+        "covid-19",
+        "csse",
+        "data",
+        "doric"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 156,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

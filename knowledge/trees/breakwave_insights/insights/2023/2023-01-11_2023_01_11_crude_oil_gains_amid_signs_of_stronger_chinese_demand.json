@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-01-11_2023_01_11_crude_oil_gains_amid_signs_of_stronger_chinese_demand__root",
   "doc_id": "breakwave_insights_insights_2023-01-11_2023_01_11_crude_oil_gains_amid_signs_of_stronger_chinese_demand",
   "parent_id": null,
-  "title": "Crude Oil Gains Amid Signs Of Stronger Chinese Demand",
+  "title": "Crude oil gains amid signs of stronger Chinese demand",
   "section_path": [
-    "Crude Oil Gains Amid Signs Of Stronger Chinese Demand"
+    "Crude oil gains amid signs of stronger Chinese demand"
   ],
-  "section_path_text": "Crude Oil Gains Amid Signs Of Stronger Chinese Demand",
+  "section_path_text": "Crude oil gains amid signs of stronger Chinese demand",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nCommodity markets were mixed as optimism over China's reopening was offset by concerns of further monetary tightening by central banks. A weaker USD ultimately helped push the sector higher. Crude oil prices were under pressure early in the session after two Fed official said the bank will likely need to raise rates above 5% to combat inflation.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 582,
+  "token_count": 1008,
   "source_path": "reports/breakwave/2023/2023-01-11_crude-oil-gains-amid-signs-of-stronger-chinese-demand.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/11/crude-oil-gains-amid-signs-of-stronger-chinese-demand",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 580,
+      "token_count": 632,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-11_2023_01_11_crude_oil_gains_amid_signs_of_stronger_chinese_demand__s02_linked_asset_2023_01_11_crude_oil_gains_amid_signs_of_stronger_chinese_demand_img_1673385732433_b5fff2cf1e75_png",
+      "doc_id": "breakwave_insights_insights_2023-01-11_2023_01_11_crude_oil_gains_amid_signs_of_stronger_chinese_demand",
+      "parent_id": "breakwave_insights_insights_2023-01-11_2023_01_11_crude_oil_gains_amid_signs_of_stronger_chinese_demand__root",
+      "title": "Linked asset: 2023-01-11_crude-oil-gains-amid-signs-of-stronger-chinese-demand_img_1673385732433_b5fff2cf1e75.png",
+      "section_path": [
+        "Linked asset: 2023-01-11_crude-oil-gains-amid-signs-of-stronger-chinese-demand_img_1673385732433_b5fff2cf1e75.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-11_crude-oil-gains-amid-signs-of-stronger-chinese-demand_img_1673385732433_b5fff2cf1e75.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-11_crude-oil-gains-amid-signs-of-stronger-chinese-demand_img_1673385732433_b5fff2cf1e75.png\n\nLinked image asset: 2023-01-11_crude-oil-gains-amid-signs-of-stronger-chinese-demand_img_1673385732433_b5fff2cf1e75.png\n\nImage metadata: PNG 1579x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 9-Jan Tue10-Jan % chg Daily % chg Daily % chg\nccI 617.09 616.85 0.0% Brent crude 80.47 Gold 1,875\nPrecious 653.07 654.05 Thermal coal 393.00 -0.2% Palladium 1,775 -24.0%\nIndustrials 409.70 410.69 JKM LNG swaps 27.12 0.0% Iron Ore 123.0\nBulks 578.94 576.95 -0.3% Copper 8,899 Hogs 2,400\nAgs 319.66 322.48 Nickel 27,252 Corn 437 -1.4%\nEnergy 916.44 914.24 -0.2% Aluminium 2,431 Wheat 489 -0.1%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 330,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

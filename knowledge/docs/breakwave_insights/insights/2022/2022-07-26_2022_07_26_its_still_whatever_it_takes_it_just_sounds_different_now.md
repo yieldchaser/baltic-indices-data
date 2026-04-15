@@ -24,7 +24,72 @@ keywords:
 - draghi
 - investors
 - might
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: cautiously_bearish
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Last week, the ECB ended years of negative rates with a bold 50bps
+    hike. Then, the bank introduced the Transmission Protection Instrument (TPI).
+    This tool will allow the ECB to purchase bonds of countries where spreads have
+    risen significantly. TPI solves the '
+  unit: null
+  values:
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: 'In 2012, Mario Draghi, then Chair of the ECB, was staring down the
+    barrel of the the total collapse of the Euro. At the height of the crisis, he
+    stood up and boldly pronounced :'
+  unit: null
+  values:
+  - 2012.0
+- section: Main
+  section_type: null
+  source_line: Now when Draghi said that, with absolutely no plan, markets took him
+    at his word. Afraid of challenging another central bank, investors ate it, rod,
+    line and sinker. This gave enough space to the Eurozone to come up with the right
+    tools to save the monetary un
+  unit: null
+  values:
+  - 2015.0
+- section: Main
+  section_type: null
+  source_line: A decade later it's Ms Lagarde who leads the ECB. Her pronouncements
+    were much more careful. On the one hand, she ended years of negative rates (a
+    questionable practice to begin with). A 50bps hike was very bold.
+  unit: null
+  values:
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: 'This means that the ECB would still decide whether a country ‘deserves''
+    to be saved. This is important. No matter how big Italy is, if election was held
+    today, polls suggest that Eurosceptic parties would get 52% of the vote. Italy
+    itself would have to decide '
+  unit: pct
+  values:
+  - 52.0
+- section: Main
+  section_type: null
+  source_line: However, investors forget that where in 2012 noting really stood behind
+    Mr. Draghi's bold words, today the ECB has a lot more tools in their disposal
+  unit: null
+  values:
+  - 2012.0
+- section: Main
+  section_type: null
+  source_line: More importantly, the EU has already made huge sacrifices to keep the
+    common currency together. There's no desiree to keep In 2012, the Euro crisis
+    was still fresh, and so was the debate. Now the Eurozone stands a lot closer.
+  unit: null
+  values:
+  - 2012.0
 regions:
 - china
 - brazil
@@ -56,7 +121,7 @@ themes:
 - euro
 - but
 - she
-title: Its Still Whatever It Takes It Just Sounds Different Now
+title: It's still ‘Whatever it takes'. It just sounds different now
 vessel_classes:
 - capesize
 - panamax

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-12-20_2023_12_20_indian_tailwinds_to_intensify__root",
   "doc_id": "breakwave_insights_insights_2023-12-20_2023_12_20_indian_tailwinds_to_intensify",
   "parent_id": null,
-  "title": "Indian Tailwinds To Intensify",
+  "title": "Indian Tailwinds to Intensify",
   "section_path": [
-    "Indian Tailwinds To Intensify"
+    "Indian Tailwinds to Intensify"
   ],
-  "section_path_text": "Indian Tailwinds To Intensify",
+  "section_path_text": "Indian Tailwinds to Intensify",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nIndia's October industrial production data was released recently and showed year-on-year growth of 11.7%. Excluding any years affected by a direct comparison with a covid-year (2022 was not a major covid-year for India) this marks the largest growth seen in India since March 2013. Overall, we continue to stress that India's economy is doing extremely well.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 376,
+  "token_count": 824,
   "source_path": "reports/breakwave/2023/2023-12-20_indian-tailwinds-to-intensify.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/12/20/indian-tailwinds-to-intensify",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 374,
+      "token_count": 460,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-12-20_2023_12_20_indian_tailwinds_to_intensify__s02_linked_asset_2023_12_20_indian_tailwinds_to_intensify_img_chart1288929_49722e757f6a_jpg",
+      "doc_id": "breakwave_insights_insights_2023-12-20_2023_12_20_indian_tailwinds_to_intensify",
+      "parent_id": "breakwave_insights_insights_2023-12-20_2023_12_20_indian_tailwinds_to_intensify__root",
+      "title": "Linked asset: 2023-12-20_indian-tailwinds-to-intensify_img_chart1288929_49722e757f6a.jpg",
+      "section_path": [
+        "Linked asset: 2023-12-20_indian-tailwinds-to-intensify_img_chart1288929_49722e757f6a.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-12-20_indian-tailwinds-to-intensify_img_chart1288929_49722e757f6a.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-12-20_indian-tailwinds-to-intensify_img_chart1288929_49722e757f6a.jpg\n\nLinked image asset: 2023-12-20_indian-tailwinds-to-intensify_img_chart1288929_49722e757f6a.jpg\n\nImage metadata: JPEG 666x313 mode=RGB\n\nOCR text:\nIndian Hydropower Production (2018 - 2023)\n30kwh\n20kwh\n10kwh\nOkwh\n2018 2019 2020 2021 2022 2023\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "india",
+        "kwh",
+        "asset",
+        "image",
+        "billion",
+        "hours",
+        "hydropower",
+        "indian"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 147,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-12-20_2023_12_20_indian_tailwinds_to_intensify__s03_linked_asset_2023_12_20_indian_tailwinds_to_intensify_img_chart2287829_910c18d207fa_jpg",
+      "doc_id": "breakwave_insights_insights_2023-12-20_2023_12_20_indian_tailwinds_to_intensify",
+      "parent_id": "breakwave_insights_insights_2023-12-20_2023_12_20_indian_tailwinds_to_intensify__root",
+      "title": "Linked asset: 2023-12-20_indian-tailwinds-to-intensify_img_chart2287829_910c18d207fa.jpg",
+      "section_path": [
+        "Linked asset: 2023-12-20_indian-tailwinds-to-intensify_img_chart2287829_910c18d207fa.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-12-20_indian-tailwinds-to-intensify_img_chart2287829_910c18d207fa.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-12-20_indian-tailwinds-to-intensify_img_chart2287829_910c18d207fa.jpg\n\nLinked image asset: 2023-12-20_indian-tailwinds-to-intensify_img_chart2287829_910c18d207fa.jpg\n\nImage metadata: JPEG 671x307 mode=RGB\n\nOCR text:\nIndian Coal-Derived Electricity Production (2020 - 2023)\n120kwh\nx * *\n100kwh\n80kwh\n60kwh\nNov Mar Jul Nov Mar Jul Nov Mar Jul Nov\nUnit: Billion kilowatt hours",
+      "keywords": [
+        "india",
+        "coal",
+        "kwh",
+        "nov",
+        "jul",
+        "mar",
+        "asset",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 144,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

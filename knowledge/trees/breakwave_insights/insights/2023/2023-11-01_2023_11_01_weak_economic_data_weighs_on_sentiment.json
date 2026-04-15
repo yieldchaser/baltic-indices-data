@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-11-01_2023_11_01_weak_economic_data_weighs_on_sentiment__root",
   "doc_id": "breakwave_insights_insights_2023-11-01_2023_11_01_weak_economic_data_weighs_on_sentiment",
   "parent_id": null,
-  "title": "Weak Economic Data Weighs On Sentiment",
+  "title": "Weak economic data weighs on sentiment",
   "section_path": [
-    "Weak Economic Data Weighs On Sentiment"
+    "Weak economic data weighs on sentiment"
   ],
-  "section_path_text": "Weak Economic Data Weighs On Sentiment",
+  "section_path_text": "Weak economic data weighs on sentiment",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nWeak economic data in China weighed on sentiment across the industrial metals sectors. Energy markets remained on edge amid elevated geopolitical risks. Base metals fell after weaker than expected manufacturing data in China raised concerns about the economic recovery.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 588,
+  "token_count": 1182,
   "source_path": "reports/breakwave/2023/2023-11-01_weak-economic-data-weighs-on-sentiment.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/11/1/weak-economic-data-weighs-on-sentiment",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 586,
+      "token_count": 634,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-01_2023_11_01_weak_economic_data_weighs_on_sentiment__s02_linked_asset_2023_11_01_weak_economic_data_weighs_on_sentiment_img_1698787843415_7dd2c07f0eb7_png",
+      "doc_id": "breakwave_insights_insights_2023-11-01_2023_11_01_weak_economic_data_weighs_on_sentiment",
+      "parent_id": "breakwave_insights_insights_2023-11-01_2023_11_01_weak_economic_data_weighs_on_sentiment__root",
+      "title": "Linked asset: 2023-11-01_weak-economic-data-weighs-on-sentiment_img_1698787843415_7dd2c07f0eb7.png",
+      "section_path": [
+        "Linked asset: 2023-11-01_weak-economic-data-weighs-on-sentiment_img_1698787843415_7dd2c07f0eb7.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-01_weak-economic-data-weighs-on-sentiment_img_1698787843415_7dd2c07f0eb7.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-01_weak-economic-data-weighs-on-sentiment_img_1698787843415_7dd2c07f0eb7.png\n\nLinked image asset: 2023-11-01_weak-economic-data-weighs-on-sentiment_img_1698787843415_7dd2c07f0eb7.png\n\nImage metadata: PNG 1280x720 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCOMMODITIES Last Unit 1 day (% chg)\nLME Base Metals Copper\nCopper 8,110.5 usD/t -0.369 _ =\nAluminium 2,251.5 usb/t -0.662 Ae\nNickel 18,130.0 uspt | =41942\n. OS Nickel\nZinc 2,429.5 _usD/t\nLead 2,085.0 uspt | --_=4.720\nTin 24,079.0 uso [NESIZSS sonore\nSteel Making Raw Materials ---\nIron ore 122.2 USD/t [0.494 Coking coal - a _\nCoking coal 333.3 USD/t -0.818\nGold 1,994.3 USD/oz -0.563 _ -\nSilver 22.9 USD/oz 0.084 Silver J O-SSSOCSSS-S-S-S\nPlatinum 936.8 USD/oz -0.039 =\nPalladium 1,124.3 usD/oz 0.057 Platinum\nEnergy\nWTI crude 81.0 _usd/bb!",
+      "keywords": [
+        "lng",
+        "iron_ore",
+        "coal",
+        "steel",
+        "gas",
+        "usd/oz",
+        "usd/t",
+        "crude"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 506,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

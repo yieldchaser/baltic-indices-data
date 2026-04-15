@@ -28,7 +28,70 @@ keywords:
 - crude
 - demand
 - tonne-miles
+linked_assets_discovered: 6
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 6
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: VLCC rates across the board, like the trademark routes TD3C, TD15 and
+    TD22, managed to surpass the levels reached during Q2 2022 following the Russian
+    invasion in Ukraine, moving recently to fresh 2.5-year highs.
+  unit: null
+  values:
+  - 5.0
+  - 2.0
+  - 2022.0
+  - 2.5
+- section: Main
+  section_type: null
+  source_line: Absolute (LHS, billion) vs percentage change (RHS) in daily crude tonne-miles
+    towards China per selected origin between Aug-Sep 2022 vs. Jan - Jul 2022
+  unit: null
+  values:
+  - 2022.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: 'China''s exposure on US barrels has surged VLCC daily tonne-miles
+    for the US Gulf-to-China route by 50%, when compared to the first 7 months of
+    the year. Similarly VLCC employment has been supported marginally out of the Middle
+    East, contributing an additional '
+  unit: pct
+  values:
+  - 50.0
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: 'Europe''s buying interest, steadily declining West African supplies,
+    limited domestic demand and even cheaper crude from the US capped China''s buying
+    interest and limited VLCC demand out of the region. This caused tonne-miles for
+    the West Africa-to-China route '
+  unit: null
+  values:
+  - 2.5
+- section: Main
+  section_type: null
+  source_line: Looking ahead, the recent announcements from the two strongest economies
+    - US and China - paint a positive picture, not only for VLCCs but for crude tankers
+    in general. Starting from the latter, China will likely issue a fifth batch of
+    product export quotas am
+  unit: null
+  values:
+  - 15.0
+- section: Main
+  section_type: null
+  source_line: 'In a similar fashion, the US Department of Energy announced that it
+    will offer an additional 10mb of SPR crude into the market in November. These
+    supplies are poised towards Europe, as refineries will return from scheduled maintenance.This
+    will come at a time '
+  unit: null
+  values:
+  - 10.0
 regions:
 - china
 - brazil

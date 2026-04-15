@@ -24,7 +24,54 @@ keywords:
 - now
 - offtake
 - plant
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we discussed in our most recent Weekly Dry Bulk Report, Coal India
+    produced approximately 83.5 million tons of coal last month. This has marked a
+    month-on-month increase of 14.7 million tons (21%) and a year-on-year increase
+    of 3.4 million tons (4%). Produc
+  unit: pct
+  values:
+  - 83.5
+  - 14.7
+  - 21.0
+  - 3.4
+  - 4.0
+- section: Main
+  section_type: null
+  source_line: 'Offtake (amount sent to customers) totaled 64.2 million tons last
+    month, which marks a month-on-month increase of 5.9 million tons (10%) and a year-on-year
+    increase of 2.6 million tons (4%). Offtake has now increased on a year-on-year
+    basis during twenty-four '
+  unit: pct
+  values:
+  - 64.2
+  - 5.9
+  - 10.0
+  - 2.6
+  - 4.0
+  - 70.0
+- section: Main
+  section_type: null
+  source_line: 'With so much coal being produced and remaining in excess of consumption,
+    India''s power plant coal stockpiles have been able to remain at moderate levels
+    and have been rising in recent weeks. India''s power plant coal stockpiles ended
+    last week at approximately '
+  unit: pct
+  values:
+  - 37.1
+  - 1.6
+  - 5.0
+  - 13.0
+  - 54.0
 regions:
 - china
 - brazil

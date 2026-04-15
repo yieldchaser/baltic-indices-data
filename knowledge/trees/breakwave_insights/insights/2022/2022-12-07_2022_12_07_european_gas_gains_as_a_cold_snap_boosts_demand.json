@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-12-07_2022_12_07_european_gas_gains_as_a_cold_snap_boosts_demand__root",
   "doc_id": "breakwave_insights_insights_2022-12-07_2022_12_07_european_gas_gains_as_a_cold_snap_boosts_demand",
   "parent_id": null,
-  "title": "European Gas Gains As A Cold Snap Boosts Demand",
+  "title": "European gas gains as a cold snap boosts demand",
   "section_path": [
-    "European Gas Gains As A Cold Snap Boosts Demand"
+    "European gas gains as a cold snap boosts demand"
   ],
-  "section_path_text": "European Gas Gains As A Cold Snap Boosts Demand",
+  "section_path_text": "European gas gains as a cold snap boosts demand",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nInvestors took time to re-evaluate the macroeconomic backdrop following recent strong gains across the commodities complex. The spectre of tighter monetary policy weighed on sentiment. Crude oil fell as concerns of weaker economic growth offset ongoing supply side issues.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 742,
+  "token_count": 1187,
   "source_path": "reports/breakwave/2022/2022-12-07_european-gas-gains-as-a-cold-snap-boosts-demand.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/12/7/european-gas-gains-as-a-cold-snap-boosts-demand",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 740,
+      "token_count": 792,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-12-07_2022_12_07_european_gas_gains_as_a_cold_snap_boosts_demand__s02_linked_asset_2022_12_07_european_gas_gains_as_a_cold_snap_boosts_demand_img_1670360992707_771be0c9830c_png",
+      "doc_id": "breakwave_insights_insights_2022-12-07_2022_12_07_european_gas_gains_as_a_cold_snap_boosts_demand",
+      "parent_id": "breakwave_insights_insights_2022-12-07_2022_12_07_european_gas_gains_as_a_cold_snap_boosts_demand__root",
+      "title": "Linked asset: 2022-12-07_european-gas-gains-as-a-cold-snap-boosts-demand_img_1670360992707_771be0c9830c.png",
+      "section_path": [
+        "Linked asset: 2022-12-07_european-gas-gains-as-a-cold-snap-boosts-demand_img_1670360992707_771be0c9830c.png"
+      ],
+      "section_path_text": "Linked asset: 2022-12-07_european-gas-gains-as-a-cold-snap-boosts-demand_img_1670360992707_771be0c9830c.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-12-07_european-gas-gains-as-a-cold-snap-boosts-demand_img_1670360992707_771be0c9830c.png\n\nLinked image asset: 2022-12-07_european-gas-gains-as-a-cold-snap-boosts-demand_img_1670360992707_771be0c9830c.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 5-Dec Tue 6-Dec % chg Daily % chg Daily % chg\nccI 625.39 625.43 Brent crude 78.91 -4.6% Gold 1,769\nPrecious 616.85 616.59 0.0% Thermal coal 400.50 0.0% Palladium 1,829 -21.7%\nIndustrials 400.04 401.56 JKM LNG swaps 32.85 -1.0% Iron Ore 111.5 -1.1%\nBulks 544.39 542.22 -0.4% Copper 8,395 Hogs 3,200 -1.5%\nAgs 380.82 377.20 -1.0% Nickel 29,147 Corn 437 -0.5%\nEnergy 914.11 917.50 Aluminium 2,485 -0.6% Wheat 523 -0.5%",
+      "keywords": [
+        "lng",
+        "china",
+        "europe",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 349,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

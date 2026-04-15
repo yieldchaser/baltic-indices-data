@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-02-24_2023_02_24_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-02-24_2023_02_24_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix - Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix - Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix - Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\nMacro/Geopolitics\nYesterday's release of the minutes from the Federal Reserve's latest interest rate-setting meeting showed that the US central bank's policymakers agreed that continued hikes are necessary to bring the current elevated inflation under control. While most of the rate-setters appeared to favour the current approach with 25 basis point increases rather than bolder moves, there was an agreement that interest rates may have to rise more than previously expected to bring the inflation rate back down to the official target of two per cent. As a result, the US dollar continued to gain ground yesterday as market participants readjusted their interest expectations and put pressure on commodity prices.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1241,
+  "token_count": 1563,
   "source_path": "reports/breakwave/2023/2023-02-24_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/2/24/shipfix-global-market-update",
   "children": [
@@ -82,8 +82,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 256,
+      "token_count": 312,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-24_2023_02_24_shipfix_global_market_update__s03_linked_asset_2023_02_24_shipfix_global_market_update_img_unnamed_2023_02_24t102906627_4eef576e883d_png",
+      "doc_id": "breakwave_insights_insights_2023-02-24_2023_02_24_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-02-24_2023_02_24_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-02-24_shipfix-global-market-update_img_unnamed-2023-02-24t102906627_4eef576e883d.png",
+      "section_path": [
+        "Linked asset: 2023-02-24_shipfix-global-market-update_img_unnamed-2023-02-24t102906627_4eef576e883d.png"
+      ],
+      "section_path_text": "Linked asset: 2023-02-24_shipfix-global-market-update_img_unnamed-2023-02-24t102906627_4eef576e883d.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-24_shipfix-global-market-update_img_unnamed-2023-02-24t102906627_4eef576e883d.png\n\nLinked image asset: 2023-02-24_shipfix-global-market-update_img_unnamed-2023-02-24t102906627_4eef576e883d.png\n\nImage metadata: PNG 926x524 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Dry Bulk Discharging in the US\nDry bulk (excl. Steel) =) Steel Products\n20\n15\n2)\na\n= 10\n2\nc\n2\n=\n5\n0\nSo DD DD DD DD DD Dh DD Dh oD DD DD Dh th th mh Dm\n& & Ro a we X yy we & oa we SX & & Ro a we X yy we & oa we SX & &\nData source: Shipfix",
+      "keywords": [
+        "products",
+        "steel",
+        "asset",
+        "image",
+        "source",
+        "cargo",
+        "data",
+        "discharging"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 226,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -25,7 +25,51 @@ keywords:
 - because
 - but
 - decline
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: In our last report of 2022, we address the elephant in the room following
+    a tremendous year for tanker rates and equities (the 8 under our coverage are
+    up 77-339%). With U.S. Strategic Petroleum Reserve releases slowing, OPEC+ production
+    cuts beginning, the gl
+  unit: pct
+  values:
+  - 2022.0
+  - 8.0
+  - 77.0
+  - -339.0
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: The recent, and rapid, decline has again spurred talk of "the cycle
+    is already over" or "the impact of the global trade map shift is completed," and
+    even though rates in most other segments have held near multi-year highs (especially
+    for product tankers), once
+  unit: worldscale_pct
+  values:
+  - 48.5
+  - 18.0
+  - 2022.0
+  - 2022.0
+  - 30.0
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: As it relates to the stocks, the group is down 5-17% from year-to-date
+    highs (with product tanker equities holding in substantially better), and who
+    are we to admonish locking in gains in an otherwise difficult year for investing.
+    However, blips, pullbacks and
+  unit: pct
+  values:
+  - 5.0
+  - -17.0
 regions:
 - china
 - brazil

@@ -28,7 +28,85 @@ keywords:
 - iron
 - ore
 - quarter
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 9
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: For now however, China's appetite for iron ore is more than enough
+    to keep the momentum in freight going. After all, iron ore inventories in China
+    continue to drop , now sitting at 3-year lows, and sooner or later a restocking
+    cycle has to develop. Iron ore is
+  unit: null
+  values:
+  - 3.0
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: With third quarter Capesize futures trading at 16,000, and more importantly,
+    with the July contract at 16,000, expectations is for further gains in the index
+    next week (The last done fixture we heard today was still above the spot index
+    pointing to further gai
+  unit: null
+  values:
+  - 16000.0
+  - 16000.0
+- section: Main
+  section_type: null
+  source_line: Capesize Q3 2020 Contrac t
+  unit: null
+  values:
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: 'Capesize Spot: +5103'
+  unit: null
+  values:
+  - 5103.0
+- section: Main
+  section_type: null
+  source_line: 'Capesize Q3 Futures: +2200 (+15%)'
+  unit: pct
+  values:
+  - 2200.0
+  - 15.0
+- section: Main
+  section_type: null
+  source_line: 'Panamax Spot: +341'
+  unit: null
+  values:
+  - 341.0
+- section: Main
+  section_type: null
+  source_line: 'Panamax Q3 Futures: +900 (+9%)'
+  unit: pct
+  values:
+  - 900.0
+  - 9.0
+- section: Main
+  section_type: null
+  source_line: Our suspicion is that concerns relating to a potential second wave
+    of the COVID-19 virus are keeping traders cautious for the fourth quarter, as
+    China may decide to stockpile iron ore well in advance of the winter this time
+    around (which might end up making th
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: Finally, looking at the big picture, it was only a month ago that the
+    Capesize spot index was at 2,000, so we can't blame market participants for being
+    generally cautious, after a 10,000+ move in the index. An exciting, volatile market,
+    after all!
+  unit: null
+  values:
+  - 2000.0
+  - 10000.0
 regions:
 - china
 - brazil

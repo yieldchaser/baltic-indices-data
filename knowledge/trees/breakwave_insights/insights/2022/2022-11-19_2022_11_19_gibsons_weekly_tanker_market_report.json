@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-11-19_2022_11_19_gibsons_weekly_tanker_market_report__root",
   "doc_id": "breakwave_insights_insights_2022-11-19_2022_11_19_gibsons_weekly_tanker_market_report",
   "parent_id": null,
-  "title": "Gibsons Weekly Tanker Market Report",
+  "title": "Gibson's Weekly Tanker Market Report",
   "section_path": [
-    "Gibsons Weekly Tanker Market Report"
+    "Gibson's Weekly Tanker Market Report"
   ],
-  "section_path_text": "Gibsons Weekly Tanker Market Report",
+  "section_path_text": "Gibson's Weekly Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nElectric vehicles (EVs) can rightfully claim to be a leading technology to reduce emissions. The uptake of EVs accelerated exponentially in recent years on the back of increases in driving range, improving infrastructure, subsidies, greater vehicle availability and rising demand. According to the latest IEA update, EV sales reached record levels in 2021, accounting for 9% of global new vehicles sales.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 788,
+  "token_count": 1068,
   "source_path": "reports/breakwave/2022/2022-11-19_gibsons-weekly-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/11/19/gibsons-weekly-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 786,
+      "token_count": 838,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-11-19_2022_11_19_gibsons_weekly_tanker_market_report__s02_linked_asset_2022_11_19_gibsons_weekly_tanker_market_report_img_screenshot_20221117_130644_drive_a63cba239ebc_jpg",
+      "doc_id": "breakwave_insights_insights_2022-11-19_2022_11_19_gibsons_weekly_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2022-11-19_2022_11_19_gibsons_weekly_tanker_market_report__root",
+      "title": "Linked asset: 2022-11-19_gibsons-weekly-tanker-market-report_img_screenshot-20221117-130644-drive_a63cba239ebc.jpg",
+      "section_path": [
+        "Linked asset: 2022-11-19_gibsons-weekly-tanker-market-report_img_screenshot-20221117-130644-drive_a63cba239ebc.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-11-19_gibsons-weekly-tanker-market-report_img_screenshot-20221117-130644-drive_a63cba239ebc.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-11-19_gibsons-weekly-tanker-market-report_img_screenshot-20221117-130644-drive_a63cba239ebc.jpg\n\nLinked image asset: 2022-11-19_gibsons-weekly-tanker-market-report_img_screenshot-20221117-130644-drive_a63cba239ebc.jpg\n\nImage metadata: JPEG 470x278 mode=RGB\n\nOCR text:\nElectiric Car Registations (Battery & Plug-in Hybrid)\n‘000\n4,000\n3,500 @China WEurope MUS HMOther Source: IEA\n3,000\n2,500\n2,000\n1,500\n1,000 |\nes Ban | Ls. | | || ‘I\n2016 2017 2018 2019 2020 2021",
+      "keywords": [
+        "china",
+        "europe",
+        "asset",
+        "image",
+        "source",
+        "ban",
+        "battery",
+        "car"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

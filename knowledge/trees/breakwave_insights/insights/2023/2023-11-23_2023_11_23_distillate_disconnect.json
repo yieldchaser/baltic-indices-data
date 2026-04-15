@@ -26,12 +26,39 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 735,
+  "token_count": 1389,
   "source_path": "reports/breakwave/2023/2023-11-23_distillate-disconnect.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/11/23/distillate-disconnect",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__s01_distillate_disconnect",
+      "node_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect",
+      "parent_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: Homepage+Banner+1.png | assets/2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png\nImage reference: assets/2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png",
+      "keywords": [
+        "image",
+        "reference",
+        "assets/2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png",
+        "assets/2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png",
+        "banner",
+        "homepage",
+        "png"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 71,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__s02_distillate_disconnect",
       "doc_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect",
       "parent_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__root",
       "title": "Distillate Disconnect",
@@ -40,7 +67,7 @@
       ],
       "section_path_text": "Distillate Disconnect",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "The European oil demand outlook is back in focus ahead of this winter, as continued macroeconomic developments cast a shadow over the region's energy market. In particular, European distillate demand is expected to underperform as lower industrial activity, reduced road fuel demand and EV uptake gathers pace.",
       "keywords": [
         "aframax",
@@ -59,7 +86,7 @@
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__s02_eurozone_manufacturing_pmi",
+      "node_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__s03_eurozone_manufacturing_pmi",
       "doc_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect",
       "parent_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__root",
       "title": "Eurozone Manufacturing PMI",
@@ -68,18 +95,106 @@
       ],
       "section_path_text": "Eurozone Manufacturing PMI",
       "level": 1,
-      "ordinal": 2,
-      "summary": "",
+      "ordinal": 3,
+      "summary": "Image reference: αρχείο λήψης (5).png | assets/2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png\nData source: Gibson Shipbrokers",
       "keywords": [
+        "assets/2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png",
         "data",
         "gibson",
+        "image",
+        "png",
+        "reference",
         "shipbrokers",
         "source"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 7,
+      "token_count": 69,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__s04_linked_asset_2023_11_23_distillate_disconnect_img_homepage2bbanner2b1_5d7211685255_png",
+      "doc_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect",
+      "parent_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__root",
+      "title": "Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png",
+      "section_path": [
+        "Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png\n\nLinked image asset: 2023-11-23_distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png\n\nImage metadata: PNG 1500x427 mode=RGBA\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nBREAKWAVE © pry BULK\nDAY 2023 <2. ee\nLIVE STREAM EVENT A T A NK E D S.",
+      "keywords": [
+        "asset",
+        "image",
+        "day",
+        "dec.",
+        "distillate-disconnect_img_homepage2bbanner2b1_5d7211685255.png",
+        "dpi",
+        "embedded",
+        "est"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 154,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__s05_linked_asset_2023_11_23_distillate_disconnect_img_homepage2bbutton_1d014100cc65_png",
+      "doc_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect",
+      "parent_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__root",
+      "title": "Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png",
+      "section_path": [
+        "Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png\n\nLinked image asset: 2023-11-23_distillate-disconnect_img_homepage2bbutton_1d014100cc65.png\n\nImage metadata: PNG 1500x153 mode=RGBA\n\nEmbedded info:\ndpi: (299.9994, 299.9994)\n\nOCR text:\nBREAKWAVE DAY AGENDA",
+      "keywords": [
+        "asset",
+        "image",
+        "agenda",
+        "day",
+        "distillate-disconnect_img_homepage2bbutton_1d014100cc65.png",
+        "dpi",
+        "embedded",
+        "info"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 109,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__s06_linked_asset_2023_11_23_distillate_disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3_png",
+      "doc_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect",
+      "parent_id": "breakwave_insights_insights_2023-11-23_2023_11_23_distillate_disconnect__root",
+      "title": "Linked asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png",
+      "section_path": [
+        "Linked asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png"
+      ],
+      "section_path_text": "Linked asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png\n\nLinked image asset: 2023-11-23_distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png\n\nImage metadata: PNG 1355x500 mode=RGBA\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWllltvveatee. pT I OO OO NO I nO",
+      "keywords": [
+        "asset",
+        "image",
+        "distillate-disconnect_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_034992df0ae3.png",
+        "dpi",
+        "embedded",
+        "info",
+        "linked",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 146,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

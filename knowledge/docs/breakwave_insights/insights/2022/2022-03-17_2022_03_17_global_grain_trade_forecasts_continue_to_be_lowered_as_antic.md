@@ -25,7 +25,67 @@ keywords:
 - less
 - month
 - tons.
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Globally, of note is that expectations for global seaborne coarse grain
+    exports remain robust despite the lower expectations for exports from Ukraine.
+    Global coarse grain exports in 2021/22 are now expected to total 250 million tons.
+    This is 3.1 million tons 1
+  unit: pct
+  values:
+  - 2021.0
+  - 22.0
+  - 250.0
+  - 3.1
+  - 100000.0
+  - -1.0
+  - 18.0
+  - 8.0
+  - 6.2
+- section: Main
+  section_type: null
+  source_line: Global wheat exports are expected to total 203.2 million tons. This
+    is 3.5 million tons (-2%) less than was forecast a month ago and would mark a
+    year-on-year increase of only 600,000 tons.
+  unit: pct
+  values:
+  - 203.2
+  - 3.5
+  - -2.0
+  - 600000.0
+- section: Main
+  section_type: null
+  source_line: Ironically, as the forecasts for Ukrainian and Russian exports have
+    begun to be lowered, the forecast for Brazilian soybean exports continues to be
+    lowered as well. This has led to the forecast for global soybean exports being
+    lowered ever further. Global soyb
+  unit: pct
+  values:
+  - 158.6
+  - 6.4
+  - -4.0
+  - 5.9
+  - -4.0
+- section: Main
+  section_type: null
+  source_line: Global soymeal exports are expected to total 67.8 million tons. This
+    is 800,000 tons (-1%) less than was forecast a month ago and would mark a year-on-year
+    decline of 900,000 tons (-1%).
+  unit: pct
+  values:
+  - 67.8
+  - 800000.0
+  - -1.0
+  - 900000.0
+  - -1.0
 regions:
 - china
 - brazil

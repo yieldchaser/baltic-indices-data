@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
   "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
   "parent_id": null,
-  "title": "Did You Know",
+  "title": "Did you know?",
   "section_path": [
-    "Did You Know"
+    "Did you know?"
   ],
-  "section_path_text": "Did You Know",
+  "section_path_text": "Did you know?",
   "level": 0,
   "ordinal": 0,
   "summary": "VLCC*: ~300,000 tons\nLargest cargo ship; Mainly used for transporting crude oil to US and Asia from Middle East\n*VLCC: Very Large Crude Carrier\n\nSuezmax: ~150,000 tons\nHalf-size of VLCCs; Mainly used in the Atlantic; Largest tanker that can use the Suez Canal\n\nAframax: ~105,000 tons\nMost versatile crude oil tanker; Can access most ports\n\nPanamax: ~80,000 tons\nMainly used for refined oil product trading",
@@ -26,12 +26,37 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 111,
+  "token_count": 2887,
   "source_path": "reports/breakwave/2023/2023-03-31_did-you-know.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/31/did-you-know",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s01_vlcc_300_000_tons",
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: 1 (7).png | assets/2023-03-31_did-you-know_img_128729_6a1eba4cf887.png\nImage reference: 1.png | assets/2023-03-31_did-you-know_img_1_067c05b5699c.png",
+      "keywords": [
+        "image",
+        "png",
+        "reference",
+        "assets/2023-03-31_did-you-know_img_128729_6a1eba4cf887.png",
+        "assets/2023-03-31_did-you-know_img_1_067c05b5699c.png"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 67,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s02_vlcc_300_000_tons",
       "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
       "title": "VLCC*: ~300,000 tons",
@@ -40,26 +65,26 @@
       ],
       "section_path_text": "VLCC*: ~300,000 tons",
       "level": 1,
-      "ordinal": 1,
-      "summary": "Largest cargo ship; Mainly used for transporting crude oil to US and Asia from Middle East\n*VLCC: Very Large Crude Carrier",
+      "ordinal": 2,
+      "summary": "Largest cargo ship; Mainly used for transporting crude oil to US and Asia from Middle East\n*VLCC: Very Large Crude Carrier\nImage reference: Euronav-Cap-Victor-e1612077929227-780x470.jpg | assets/2023-03-31_did-you-know_img_euronav-cap-victor-e1612077929227-78_7f214c909242.jpg",
       "keywords": [
         "vlcc",
         "crude_oil",
         "crude",
         "asia",
+        "assets/2023-03-31_did-you-know_img_euronav-cap-victor-e1612077929227-78_7f214c909242.jpg",
         "cargo",
         "carrier",
-        "east",
-        "large"
+        "east"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 29,
+      "token_count": 89,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s02_suezmax_150_000_tons",
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s03_suezmax_150_000_tons",
       "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
       "title": "Suezmax: ~150,000 tons",
@@ -68,26 +93,26 @@
       ],
       "section_path_text": "Suezmax: ~150,000 tons",
       "level": 1,
-      "ordinal": 2,
-      "summary": "Half-size of VLCCs; Mainly used in the Atlantic; Largest tanker that can use the Suez Canal",
+      "ordinal": 3,
+      "summary": "Half-size of VLCCs; Mainly used in the Atlantic; Largest tanker that can use the Suez Canal\nImage reference: Atlas_Maritime's_Mitera_Marigo_Aframax_Oil_Tanker.jpg | assets/2023-03-31_did-you-know_img_atlas-maritime27s-mitera-marigo-afra_713fd09b5830.jpg",
       "keywords": [
         "vlcc",
+        "aframax",
         "atlantic",
+        "crude_oil",
+        "assets/2023-03-31_did-you-know_img_atlas-maritime27s-mitera-marigo-afra_713fd09b5830.jpg",
+        "atlas_maritime",
         "can",
-        "canal",
-        "half-size",
-        "largest",
-        "mainly",
-        "suez"
+        "canal"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 23,
+      "token_count": 82,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s03_aframax_105_000_tons",
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s04_aframax_105_000_tons",
       "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
       "title": "Aframax: ~105,000 tons",
@@ -96,25 +121,26 @@
       ],
       "section_path_text": "Aframax: ~105,000 tons",
       "level": 1,
-      "ordinal": 3,
-      "summary": "Most versatile crude oil tanker; Can access most ports",
+      "ordinal": 4,
+      "summary": "Most versatile crude oil tanker; Can access most ports\nImage reference: Sunray-panamax-TEN.jpg | assets/2023-03-31_did-you-know_img_sunray-panamax-ten_a701ea59b77e.jpg",
       "keywords": [
+        "panamax",
         "crude_oil",
         "access",
+        "assets/2023-03-31_did-you-know_img_sunray-panamax-ten_a701ea59b77e.jpg",
         "can",
         "crude",
-        "oil",
-        "ports",
-        "versatile"
+        "image",
+        "oil"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 10,
+      "token_count": 51,
       "section_type": null,
       "children": []
     },
     {
-      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s04_panamax_80_000_tons",
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s05_panamax_80_000_tons",
       "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
       "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
       "title": "Panamax: ~80,000 tons",
@@ -123,7 +149,7 @@
       ],
       "section_path_text": "Panamax: ~80,000 tons",
       "level": 1,
-      "ordinal": 4,
+      "ordinal": 5,
       "summary": "Mainly used for refined oil product trading",
       "keywords": [
         "crude_oil",
@@ -137,6 +163,146 @@
       "page_end": null,
       "token_count": 8,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s06_linked_asset_2023_03_31_did_you_know_img_128729_6a1eba4cf887_png",
+      "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
+      "title": "Linked asset: 2023-03-31_did-you-know_img_128729_6a1eba4cf887.png",
+      "section_path": [
+        "Linked asset: 2023-03-31_did-you-know_img_128729_6a1eba4cf887.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-31_did-you-know_img_128729_6a1eba4cf887.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-31_did-you-know_img_128729_6a1eba4cf887.png\n\nLinked image asset: 2023-03-31_did-you-know_img_128729_6a1eba4cf887.png\n\nImage metadata: PNG 861x311 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nDID YOU KNOW ? Which are the main types in tanker ships ?",
+      "keywords": [
+        "asset",
+        "image",
+        "are",
+        "did",
+        "did-you-know_img_128729_6a1eba4cf887.png",
+        "dpi",
+        "embedded",
+        "info"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 111,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s07_linked_asset_2023_03_31_did_you_know_img_1_067c05b5699c_png",
+      "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
+      "title": "Linked asset: 2023-03-31_did-you-know_img_1_067c05b5699c.png",
+      "section_path": [
+        "Linked asset: 2023-03-31_did-you-know_img_1_067c05b5699c.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-31_did-you-know_img_1_067c05b5699c.png",
+      "level": 1,
+      "ordinal": 7,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-31_did-you-know_img_1_067c05b5699c.png\n\nLinked image asset: 2023-03-31_did-you-know_img_1_067c05b5699c.png\n\nImage metadata: PNG 2053x1356 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\neer 7\n|\n© a ee em os\n4 2 eee cnsveindcee\n, ( , ae\ne \"he ehone: °\n} 9 . = BC ae i\n3 é a: = = oe: ae 3 ‘= ‘\nme o> er GR Of!",
+      "keywords": [
+        "see",
+        "eee",
+        "aes",
+        "hee",
+        "aoe",
+        "asset",
+        "ete",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 1273,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s08_linked_asset_2023_03_31_did_you_know_img_euronav_cap_victor_e1612077929227_78_7f214c909242_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
+      "title": "Linked asset: 2023-03-31_did-you-know_img_euronav-cap-victor-e1612077929227-78_7f214c909242.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-31_did-you-know_img_euronav-cap-victor-e1612077929227-78_7f214c909242.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-31_did-you-know_img_euronav-cap-victor-e1612077929227-78_7f214c909242.jpg",
+      "level": 1,
+      "ordinal": 8,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-31_did-you-know_img_euronav-cap-victor-e1612077929227-78_7f214c909242.jpg\n\nLinked image asset: 2023-03-31_did-you-know_img_euronav-cap-victor-e1612077929227-78_7f214c909242.jpg\n\nImage metadata: JPEG 780x470 mode=RGB\n\nOCR text:\narte «228 '. oe Sk = sant =\na 3 SS\nCe Se = =\n~_- = ~ ‘Seam 5 a ee ge = -- ae =\nNake ae », = SSS SSS SaaS\n* mate, » x A 7 -- = = +2 -s SS - -- ~~\nwo ee ON\n, Pate pis > See\n> 2% ‘ an | >on Kine SS\na ae <= SS EEE\nSe er \"?",
+      "keywords": [
+        "sss",
+        "asset",
+        "eee",
+        "image",
+        "are",
+        "arte",
+        "did-you-know_img_euronav-cap-victor-e1612077929227-78_7f214c909242.jpg",
+        "ees"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 369,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s09_linked_asset_2023_03_31_did_you_know_img_atlas_maritime27s_mitera_marigo_afra_713fd09b5830_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
+      "title": "Linked asset: 2023-03-31_did-you-know_img_atlas-maritime27s-mitera-marigo-afra_713fd09b5830.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-31_did-you-know_img_atlas-maritime27s-mitera-marigo-afra_713fd09b5830.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-31_did-you-know_img_atlas-maritime27s-mitera-marigo-afra_713fd09b5830.jpg",
+      "level": 1,
+      "ordinal": 9,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-31_did-you-know_img_atlas-maritime27s-mitera-marigo-afra_713fd09b5830.jpg\n\nLinked image asset: 2023-03-31_did-you-know_img_atlas-maritime27s-mitera-marigo-afra_713fd09b5830.jpg\n\nImage metadata: JPEG 567x438 mode=RGB\n\nOCR text:\n= Py : - ee\n- - = =\n-__ eee : :\nSS es : ; 28;\natl NE eS mae ae Perse = . thr 3\naS = On 2 ge SEP vere = pera 7\nSe -_- oo ae ees\na t a ‘ =\nwe a Se Sh WreRkuanico 6\n_ ee > = +, oe,\n- = .",
+      "keywords": [
+        "asset",
+        "image",
+        "atl",
+        "did-you-know_img_atlas-maritime27s-mitera-marigo-afra_713fd09b5830.jpg",
+        "eee",
+        "ees",
+        "jpeg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__s10_linked_asset_2023_03_31_did_you_know_img_sunray_panamax_ten_a701ea59b77e_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-31_2023_03_31_did_you_know__root",
+      "title": "Linked asset: 2023-03-31_did-you-know_img_sunray-panamax-ten_a701ea59b77e.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-31_did-you-know_img_sunray-panamax-ten_a701ea59b77e.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-31_did-you-know_img_sunray-panamax-ten_a701ea59b77e.jpg",
+      "level": 1,
+      "ordinal": 10,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-31_did-you-know_img_sunray-panamax-ten_a701ea59b77e.jpg\n\nLinked image asset: 2023-03-31_did-you-know_img_sunray-panamax-ten_a701ea59b77e.jpg\n\nImage metadata: JPEG 900x540 mode=RGB\n\nOCR text:\n. race meme ets P\nPt cj =e oe, Oe\n\"= ~ ar Cm er i p\nme Be Sax d nil a =f % 3 db Soke\ni Sea A n\\.",
+      "keywords": [
+        "panamax",
+        "see",
+        "sss",
+        "age",
+        "asset",
+        "eee",
+        "eet",
+        "ieee"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 431,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

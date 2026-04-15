@@ -25,7 +25,96 @@ keywords:
 - totaled
 - was
 - tons
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's coal production set another all-time high in March coming in
+    at 395.8 million tons. This is 52.5 million tons (15%) more than was produced
+    in February and is up year-on-year by 55.8 million tons (16%). Overall, we continue
+    to stress that it is concerni
+  unit: pct
+  values:
+  - 395.8
+  - 52.5
+  - 15.0
+  - 55.8
+  - 16.0
+  - 344.3
+  - 344.3
+  - 2012.0
+- section: Main
+  section_type: null
+  source_line: Also remaining concerning for China's coal import prospects is that
+    domestic coal production growth continues to fare much better than coal-derived
+    electricity generation growth. China's coal-derived electricity generation output
+    totaled 468.8 billion kilowatt
+  unit: pct
+  values:
+  - 468.8
+  - 24.2
+  - -5.0
+  - 26.5
+  - -5.0
+- section: Main
+  section_type: null
+  source_line: Also of note is that the production of hydropower and other renewable
+    sources of electricity have again all experienced year-on-year growth. Hydropower
+    output totaled 80.5 billion kilowatt hours in March, which is up from February
+    by 10.5 billion kilowatt hour
+  unit: pct
+  values:
+  - 80.5
+  - 10.5
+  - 15.0
+  - 13.5
+  - 20.0
+  - 20.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: Wind power production totaled 67.3 billion kilowatt hours, which is
+    up by 20.3 billion kilowatt hours (43%) from February and up year-on-year by 20
+    billion kilowatt hours (42%).
+  unit: pct
+  values:
+  - 67.3
+  - 20.3
+  - 43.0
+  - 20.0
+  - 42.0
+- section: Main
+  section_type: null
+  source_line: Nuclear power production totaled 35 billion kilowatt hours, which is
+    up from February by 3 billion kilowatt hours (9%) and up year-on-year by 800 million
+    kilowatt hours (2%).
+  unit: pct
+  values:
+  - 35.0
+  - 3.0
+  - 9.0
+  - 800.0
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: Solar power production totaled 18.6 billion kilowatt hours, which is
+    up from February by 3.6 billion kilowatt hours (24%) and up year-on-year by 4.5
+    billion kilowatt hours (32%). The last time that any renewable other than hydropower
+    production contracted on a
+  unit: pct
+  values:
+  - 18.6
+  - 3.6
+  - 24.0
+  - 4.5
+  - 32.0
+  - 2020.0
 regions:
 - china
 - brazil

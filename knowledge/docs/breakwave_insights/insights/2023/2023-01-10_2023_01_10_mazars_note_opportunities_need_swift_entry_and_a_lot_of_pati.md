@@ -25,7 +25,71 @@ keywords:
 - would
 - investors
 - but
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Meanwhile, Quantitative Easing, the ‘Only Game In Town'' for risk
+    assets for more than a decade, along with the Fed Put, has, for the time being,
+    stopped. This does not mean that central banks do not remain lenders of the last
+    resort of course. The BoE happily '
+  unit: null
+  values:
+  - 70.0
+- section: Main
+  section_type: null
+  source_line: However, China's sudden reopening, after two years of zero-Covid policies
+    could cause demand from the East to surge again, temporarily causing another inflation
+    shock as it did in 2021.
+  unit: null
+  values:
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: The larger picture is that while inflation may come down, and central
+    banks eventually revert to form as protectors of short-term capital as well as
+    long, the case for 2008-2021 style monetary easing is still very difficult to
+    make. Central banks abhor expandi
+  unit: null
+  values:
+  - 2008.0
+  - -2021.0
+- section: Main
+  section_type: null
+  source_line: What goes for stocks, goes for bonds. Finding a yield that is acceptable,
+    for a duration that is acceptable and at a risk investors are willing to assume
+    will be a lot easier now that interest rates are higher. 2022 was the year of
+    the great reset for bonds. F
+  unit: null
+  values:
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: In our latest investment committee, ‘Quality' was the world that stood
+    out. We decided that risks remain elevated for the time being. US equities, a
+    global leading indicator, are fairly valued and have not discounted a possible
+    +15% drop in earnings, the stand
+  unit: pct
+  values:
+  - 15.0
+- section: Main
+  section_type: null
+  source_line: '*The idea that central banks can prevent inflation from eventually
+    changing consumer behaviour by raising interest rates below the level of inflation
+    is not right. When rates are 4% and inflation 8%, smart consumers borrow at a
+    lower rate and wait for inflatio'
+  unit: pct
+  values:
+  - 4.0
+  - 8.0
+  - 2.0
+  - 360.0
 regions:
 - china
 - brazil

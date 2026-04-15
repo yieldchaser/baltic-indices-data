@@ -26,7 +26,55 @@ keywords:
 - are
 - commodity
 - demand
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The official Chinese purchasing managers' index (PMI) for May was released
+    on Monday and at 51.0 was only just below April's disappointing reading of 51.1.
+    The latest PMI also failed to meet economists' expectations, but only marginally.
+    Nevertheless, the head
+  unit: null
+  values:
+  - 51.0
+  - 51.1
+- section: Main
+  section_type: null
+  source_line: The activity in the manufacturing sector fell slightly in May, partially
+    due to factory closures during the seven days of the Golden Week holiday during
+    the early parts of the month, which was offset by a slight rise in non-manufacturing
+    sectors boosted by con
+  unit: null
+  values:
+  - 55.2
+  - 54.9
+  - 48.3
+  - 50.4
+- section: Main
+  section_type: null
+  source_line: May was also the month of extensive efforts by Beijing to rein in on
+    the soaring commodity prices, with iron ore being singled out for special treatment.
+    The initiatives, to a great extent aimed at the steel mills, paid some dividends
+    with iron ore prices retr
+  unit: null
+  values:
+  - 46.1
+- section: Main
+  section_type: null
+  source_line: 'Like the headline number for the Chinese PMI, the upward revision
+    of the global economic growth by the OECD is good news on an aggregate level.
+    There are however considerable differences between countries and how quickly they
+    will return to their pre-pandemic '
+  unit: null
+  values:
+  - 9.0
+  - 9.9
 regions:
 - china
 - brazil

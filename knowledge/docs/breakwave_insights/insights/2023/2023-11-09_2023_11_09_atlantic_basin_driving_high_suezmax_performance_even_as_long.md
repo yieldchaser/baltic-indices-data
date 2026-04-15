@@ -27,7 +27,39 @@ keywords:
 - mileage
 - suezmaxes
 - voyage
+linked_assets_discovered: 8
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 8
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Despite average voyage mileage reaching a 2023 low, a record-setting number
+    of voyages and high tanker demand from West Africa was enough for Suezmax freight
+    rates to reach 2023 highs in October.
+  section_type: null
+  source_line: Suezmax freight rates have surged to 2023 highs over the past month,
+    but average mileage for all completed voyages on Suezmax tankers has continued
+    to decrease for the past three months and is well below seasonal averages. Utilisation
+    is increasing due to a hi
+  unit: null
+  values:
+  - 2023.0
+- section: Despite average voyage mileage reaching a 2023 low, a record-setting number
+    of voyages and high tanker demand from West Africa was enough for Suezmax freight
+    rates to reach 2023 highs in October.
+  section_type: null
+  source_line: From a seasonal perspective, the number of global voyages completed
+    in October is 22% higher than the seven-year seasonal average and is about 11%
+    higher m-o-m. Hence, despite a 15% m-o-m decline in average mileage during October
+    the surge in voyage count expl
+  unit: pct
+  values:
+  - 22.0
+  - 11.0
+  - 15.0
+  - 2023.0
 regions:
 - china
 - brazil

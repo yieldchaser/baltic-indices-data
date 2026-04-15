@@ -29,7 +29,35 @@ keywords:
 - are
 - australian
 - chinese
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: While Australian exports of iron ore to China look safe, for now at
+    least, it is not hard to imagine that Chinese buyers are being encouraged in the
+    current climate to source as much as possible from alternative suppliers. Until
+    the Chinese led developments of
+  unit: null
+  values:
+  - 9.0
+  - 315.0
+  - 335.0
+  - 83.0
+- section: Main
+  section_type: null
+  source_line: The continued deterioration of the bilateral relationship looks set
+    to cement the current disruptions to many trade flows, with several nations now
+    vying to replace the banned Australian imports of coal and grains, among other
+    things. In Argentina, which has c
+  unit: null
+  values:
+  - 28.0
 regions:
 - china
 - brazil

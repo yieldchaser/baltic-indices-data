@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-03_2023_03_03_strong_economic_data_in_china_boosts_sentiment__root",
   "doc_id": "breakwave_insights_insights_2023-03-03_2023_03_03_strong_economic_data_in_china_boosts_sentiment",
   "parent_id": null,
-  "title": "Strong Economic Data In China Boosts Sentiment",
+  "title": "Strong economic data in China boosts sentiment",
   "section_path": [
-    "Strong Economic Data In China Boosts Sentiment"
+    "Strong economic data in China boosts sentiment"
   ],
-  "section_path_text": "Strong Economic Data In China Boosts Sentiment",
+  "section_path_text": "Strong economic data in China boosts sentiment",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nBetter than expected economic data in China saw commodities rally across the board as hopes of a rebound in demand rose. This was aided by signs of stronger demand in other parts of Asia. Economic data highlight a stronger recovery in demand is imminent.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 600,
+  "token_count": 989,
   "source_path": "reports/breakwave/2023/2023-03-03_strong-economic-data-in-china-boosts-sentiment.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/3/strong-economic-data-in-china-boosts-sentiment",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 598,
+      "token_count": 648,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-03_2023_03_03_strong_economic_data_in_china_boosts_sentiment__s02_linked_asset_2023_03_03_strong_economic_data_in_china_boosts_sentiment_img_1677703977520_1aaa2ff6c8df_png",
+      "doc_id": "breakwave_insights_insights_2023-03-03_2023_03_03_strong_economic_data_in_china_boosts_sentiment",
+      "parent_id": "breakwave_insights_insights_2023-03-03_2023_03_03_strong_economic_data_in_china_boosts_sentiment__root",
+      "title": "Linked asset: 2023-03-03_strong-economic-data-in-china-boosts-sentiment_img_1677703977520_1aaa2ff6c8df.png",
+      "section_path": [
+        "Linked asset: 2023-03-03_strong-economic-data-in-china-boosts-sentiment_img_1677703977520_1aaa2ff6c8df.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-03_strong-economic-data-in-china-boosts-sentiment_img_1677703977520_1aaa2ff6c8df.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-03_strong-economic-data-in-china-boosts-sentiment_img_1677703977520_1aaa2ff6c8df.png\n\nLinked image asset: 2023-03-03_strong-economic-data-in-china-boosts-sentiment_img_1677703977520_1aaa2ff6c8df.png\n\nImage metadata: PNG 878x249 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nTue 28-Feb Wed 1-Mar % chg Daily % chg Daily % chg\nccl 488.11 492.51 Brent crude 84.47 Gold 1,838\nPrecious 634.45 638.14 Thermal coal 193.50 Palladium 1,422 -39.2%\nIndustrials 402.41 409.43 JKM LNG swaps) 14.58 Iron Ore 130.8\nBulks 601.59 612.21 Copper 9,097 Hogs 2,350 0.0%\nAgs 312.93 314.49 Nickel 24,708 com 428\nEnergy 580.17 583.13 Aluminium 2,394 Wheat 444",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 297,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

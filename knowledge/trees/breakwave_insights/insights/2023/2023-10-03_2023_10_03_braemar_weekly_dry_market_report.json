@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report__root",
   "doc_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report",
   "parent_id": null,
-  "title": "Braemar Weekly Dry Market Report",
+  "title": "Fluctuating grain trade volumes from Argentina",
   "section_path": [
-    "Braemar Weekly Dry Market Report"
+    "Fluctuating grain trade volumes from Argentina"
   ],
-  "section_path_text": "Braemar Weekly Dry Market Report",
+  "section_path_text": "Fluctuating grain trade volumes from Argentina",
   "level": 0,
   "ordinal": 0,
   "summary": "The Big Picture: Fluctuating grain trade volumes from Argentina\nHistoric drought had stifled grain exports earlier in the year, but now shipments on the rise. Recent impetus came from the \"Export Increase Programme\", a 25% devaluation against the official exchange rate for some agricultural exports, introduced in late July until end-August (the so-called \"corn dollar\"). The main positive risk to the trade outlook would be an election victory for one of two candidates in the 22 October presidential election to support a cut in grain export taxes.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1117,
+  "token_count": 1873,
   "source_path": "reports/breakwave/2023/2023-10-03_braemar-weekly-dry-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/10/3/braemar-weekly-dry-market-report",
   "children": [
@@ -54,8 +54,92 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1104,
+      "token_count": 1232,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report__s02_linked_asset_2023_10_03_braemar_weekly_dry_market_report_img_image0281329_2a17da68aa0d_png",
+      "doc_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report",
+      "parent_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report__root",
+      "title": "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image0281329_2a17da68aa0d.png",
+      "section_path": [
+        "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image0281329_2a17da68aa0d.png"
+      ],
+      "section_path_text": "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image0281329_2a17da68aa0d.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-10-03_braemar-weekly-dry-market-report_img_image0281329_2a17da68aa0d.png\n\nLinked image asset: 2023-10-03_braemar-weekly-dry-market-report_img_image0281329_2a17da68aa0d.png\n\nImage metadata: PNG 385x414 mode=RGBA\n\nEmbedded info:\ndpi: (95.96119999999999, 95.96119999999999)\n\nOCR text:\nArgentinian grain exports\nm tonnes\nmPanamax = @ Supra/Ultramax Handysize\n10\n9\n8\n7\n6\n5\n4\n3\n2\nNATE\noe)\n‘\\\nPEPE PELE G&S\nSource: USDA",
+      "keywords": [
+        "panamax",
+        "supramax",
+        "handysize",
+        "grain",
+        "asset",
+        "image",
+        "source",
+        "argentinian"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 176,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report__s03_linked_asset_2023_10_03_braemar_weekly_dry_market_report_img_image1281329_2eeab66894bd_png",
+      "doc_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report",
+      "parent_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report__root",
+      "title": "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image1281329_2eeab66894bd.png",
+      "section_path": [
+        "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image1281329_2eeab66894bd.png"
+      ],
+      "section_path_text": "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image1281329_2eeab66894bd.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-10-03_braemar-weekly-dry-market-report_img_image1281329_2eeab66894bd.png\n\nLinked image asset: 2023-10-03_braemar-weekly-dry-market-report_img_image1281329_2eeab66894bd.png\n\nImage metadata: PNG 378x388 mode=RGBA\n\nEmbedded info:\ndpi: (95.96119999999999, 95.96119999999999)\n\nOCR text:\nArgentinian corn exports\nm tonnes\n45\n40\n35\n30\n25\n20\n15\n10\n5\nfe)\n7B 18A9 19/20 20/21 21/22 22/23 23/24\nSource: USDA",
+      "keywords": [
+        "grain",
+        "asset",
+        "image",
+        "source",
+        "argentinian",
+        "braemar-weekly-dry-market-report_img_image1281329_2eeab66894bd.png",
+        "corn",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 174,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report__s04_linked_asset_2023_10_03_braemar_weekly_dry_market_report_img_image2281229_80b32bafd874_png",
+      "doc_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report",
+      "parent_id": "breakwave_insights_insights_2023-10-03_2023_10_03_braemar_weekly_dry_market_report__root",
+      "title": "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image2281229_80b32bafd874.png",
+      "section_path": [
+        "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image2281229_80b32bafd874.png"
+      ],
+      "section_path_text": "Linked asset: 2023-10-03_braemar-weekly-dry-market-report_img_image2281229_80b32bafd874.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-10-03_braemar-weekly-dry-market-report_img_image2281229_80b32bafd874.png\n\nLinked image asset: 2023-10-03_braemar-weekly-dry-market-report_img_image2281229_80b32bafd874.png\n\nImage metadata: PNG 380x380 mode=RGBA\n\nEmbedded info:\ndpi: (95.96119999999999, 95.96119999999999)\n\nOCR text:\nArgentinian soybean meal exports\nm tonnes\n35\n30\n25\n20\n5\n10\n5\n0)\nT7NB 18ND 19/20 20/21 21/22 22/23 23/24\nSource: USDA",
+      "keywords": [
+        "grain",
+        "asset",
+        "image",
+        "source",
+        "argentinian",
+        "braemar-weekly-dry-market-report_img_image2281229_80b32bafd874.png",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 172,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

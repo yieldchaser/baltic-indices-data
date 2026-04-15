@@ -26,7 +26,27 @@ keywords:
 - largest
 - late
 - less
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Recently released data shows that daily crude output at large and medium-sized
+    mills in China averaged 2.06 million tons during October 11 - 20. This is 2% less
+    than was seen during the prior ten days but is up year-on-year by 10%. Overall,
+    it remains encourag
+  unit: worldscale_pct
+  values:
+  - 2.06
+  - 11.0
+  - 20.0
+  - 2.0
+  - 10.0
 regions:
 - china
 - brazil

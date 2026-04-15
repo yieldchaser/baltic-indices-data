@@ -1,77 +1,52 @@
 {
-  "generated_at": "2026-04-14T09:09:54Z",
-  "current_date": "2026-04-14",
-  "warning_count": 3,
-  "high_severity_count": 0,
+  "generated_at": "2026-04-15T09:23:06Z",
+  "current_date": "2026-04-15",
+  "warning_count": 9,
+  "high_severity_count": 1,
   "status_counts": {
     "sources": {
-      "healthy": 14,
-      "reference": 1
+      "healthy": 13,
+      "reference": 1,
+      "stale": 1
     },
     "topics": {
       "healthy": 10
     },
-    "divergences": {
-      "watch": 1
-    }
+    "divergences": {}
   },
   "warnings": [
     {
-      "severity": "watch",
-      "kind": "topic_divergence",
-      "key": "dry_bulk_market",
-      "message": "Dry Bulk Market shows recent tone divergence: breakwave_insights reads cautiously_bullish while baltic reads cautiously_bearish.",
+      "severity": "stale",
+      "kind": "source_freshness",
+      "key": "breakwave_insights/insights",
+      "message": "breakwave_insights/insights is stale at 807 days since the latest dated document.",
       "details": {
-        "topic_id": "dry_bulk_market",
-        "title": "Dry Bulk Market",
-        "severity": "watch",
-        "score_diff": 0.87,
-        "source_scores": [
-          {
-            "source": "baltic",
-            "avg_tone_score": -0.25,
-            "dominant_tone": "neutral",
-            "doc_count": 4,
-            "latest_date": "2026-04-10"
-          },
-          {
-            "source": "hellenic",
-            "avg_tone_score": 0.08,
-            "dominant_tone": "cautiously_bearish",
-            "doc_count": 6,
-            "latest_date": "2026-04-09"
-          },
-          {
-            "source": "breakwave",
-            "avg_tone_score": 0.12,
-            "dominant_tone": "cautiously_bearish",
-            "doc_count": 2,
-            "latest_date": "2026-03-31"
-          },
-          {
-            "source": "breakwave_insights",
-            "avg_tone_score": 0.62,
-            "dominant_tone": "constructive",
-            "doc_count": 6,
-            "latest_date": "2026-04-10"
-          }
-        ],
-        "message": "Dry Bulk Market shows recent tone divergence: breakwave_insights reads cautiously_bullish while baltic reads cautiously_bearish."
+        "label": "breakwave_insights/insights",
+        "source": "breakwave_insights",
+        "category": "insights",
+        "status": "stale",
+        "cadence_days": 14,
+        "latest_date": "2024-01-29",
+        "age_days": 807,
+        "latest_gap_days": 3,
+        "max_recent_gap_days": 3,
+        "dated_doc_count": 1468,
+        "undated_doc_count": 0
       }
     },
     {
       "severity": "watch",
       "kind": "topic_source_gap",
       "key": "capesize",
-      "message": "capesize is missing recent evidence from expected sources: baltic.",
+      "message": "capesize is missing recent evidence from expected sources: baltic, breakwave_insights.",
       "details": {
         "topic_id": "capesize",
         "missing_recent_sources": [
-          "baltic"
+          "baltic",
+          "breakwave_insights"
         ],
         "recent_sources_present": [
           "breakwave",
-          "breakwave_insights",
           "hellenic"
         ]
       }
@@ -80,15 +55,117 @@
       "severity": "watch",
       "kind": "topic_source_gap",
       "key": "china_steel_and_iron_ore",
-      "message": "china_steel_and_iron_ore is missing recent evidence from expected sources: baltic.",
+      "message": "china_steel_and_iron_ore is missing recent evidence from expected sources: breakwave_insights.",
       "details": {
         "topic_id": "china_steel_and_iron_ore",
         "missing_recent_sources": [
-          "baltic"
+          "breakwave_insights"
         ],
         "recent_sources_present": [
+          "baltic",
           "breakwave",
-          "breakwave_insights",
+          "hellenic"
+        ]
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_source_gap",
+      "key": "coal_and_grain_flows",
+      "message": "coal_and_grain_flows is missing recent evidence from expected sources: breakwave_insights.",
+      "details": {
+        "topic_id": "coal_and_grain_flows",
+        "missing_recent_sources": [
+          "breakwave_insights"
+        ],
+        "recent_sources_present": [
+          "baltic",
+          "breakwave",
+          "hellenic"
+        ]
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_source_gap",
+      "key": "dry_bulk_market",
+      "message": "dry_bulk_market is missing recent evidence from expected sources: breakwave_insights.",
+      "details": {
+        "topic_id": "dry_bulk_market",
+        "missing_recent_sources": [
+          "breakwave_insights"
+        ],
+        "recent_sources_present": [
+          "baltic",
+          "breakwave",
+          "hellenic"
+        ]
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_source_gap",
+      "key": "oil_and_opec",
+      "message": "oil_and_opec is missing recent evidence from expected sources: breakwave_insights.",
+      "details": {
+        "topic_id": "oil_and_opec",
+        "missing_recent_sources": [
+          "breakwave_insights"
+        ],
+        "recent_sources_present": [
+          "baltic",
+          "breakwave",
+          "hellenic"
+        ]
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_source_gap",
+      "key": "panamax_and_supramax",
+      "message": "panamax_and_supramax is missing recent evidence from expected sources: breakwave_insights.",
+      "details": {
+        "topic_id": "panamax_and_supramax",
+        "missing_recent_sources": [
+          "breakwave_insights"
+        ],
+        "recent_sources_present": [
+          "baltic",
+          "breakwave",
+          "hellenic"
+        ]
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_source_gap",
+      "key": "tanker_market",
+      "message": "tanker_market is missing recent evidence from expected sources: breakwave_insights.",
+      "details": {
+        "topic_id": "tanker_market",
+        "missing_recent_sources": [
+          "breakwave_insights"
+        ],
+        "recent_sources_present": [
+          "baltic",
+          "breakwave",
+          "hellenic"
+        ]
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_source_gap",
+      "key": "vlcc_and_suezmax",
+      "message": "vlcc_and_suezmax is missing recent evidence from expected sources: breakwave_insights.",
+      "details": {
+        "topic_id": "vlcc_and_suezmax",
+        "missing_recent_sources": [
+          "breakwave_insights"
+        ],
+        "recent_sources_present": [
+          "baltic",
+          "breakwave",
           "hellenic"
         ]
       }

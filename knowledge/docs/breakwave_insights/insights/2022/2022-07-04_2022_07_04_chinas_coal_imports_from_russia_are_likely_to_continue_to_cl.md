@@ -25,7 +25,49 @@ keywords:
 - down
 - import
 - indonesia
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's coal import data for May by origin has been released and shows
+    imports from Indonesia have remained the primary source of imports and Russia
+    the second largest source of imports. China's coal imports from Indonesia totaled
+    12.4 million tons in May, whi
+  unit: worldscale_pct
+  values:
+  - 12.4
+  - 3.4
+  - -23.0
+  - 1.2
+  - 11.0
+- section: Main
+  section_type: null
+  source_line: China's coal imports from Russia totaled 5 million tons in May, which
+    is up from April by 1.1 million tons (28%) but down year-on-year by 100,000 tons
+    (-2%). Imports from Russia last month rose to the highest level seen since November.
+  unit: pct
+  values:
+  - 5.0
+  - 1.1
+  - 28.0
+  - 100000.0
+  - -2.0
+- section: Main
+  section_type: null
+  source_line: 'Going forward, China''s coal imports from Russia are likely to continue
+    to climb. As we discussed in Commodore''s weekly Dry Bulk Reports and Weekly China
+    Reports earlier this year, just as Russia''s tensions with Ukraine shifted into
+    Russia launching its unjust '
+  unit: null
+  values:
+  - 100.0
+  - 57.0
 regions:
 - china
 - brazil

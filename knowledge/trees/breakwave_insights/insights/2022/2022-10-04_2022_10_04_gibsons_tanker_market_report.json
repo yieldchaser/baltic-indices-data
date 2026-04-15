@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-10-04_2022_10_04_gibsons_tanker_market_report__root",
   "doc_id": "breakwave_insights_insights_2022-10-04_2022_10_04_gibsons_tanker_market_report",
   "parent_id": null,
-  "title": "Gibsons Tanker Market Report",
+  "title": "Gibson's Tanker Market Report",
   "section_path": [
-    "Gibsons Tanker Market Report"
+    "Gibson's Tanker Market Report"
   ],
-  "section_path_text": "Gibsons Tanker Market Report",
+  "section_path_text": "Gibson's Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nWith the global economic picture continuing to be dominated by bearish sentiment, and oil prices falling to lows not seen since the start of the year, the picture couldn't be more different in the tanker market. Volatility remains extreme, rates are strong and sentiment is elevated ahead of the anticipated seismic shift in oil trade flows. Whilst historically tanker markets have sometimes performed well in economic downturns, this is usually driven by supply and demand mismatches, which triggers a contango and associated floating storage or trading inefficiencies.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 672,
+  "token_count": 971,
   "source_path": "reports/breakwave/2022/2022-10-04_gibsons-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/10/4/gibsons-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 670,
+      "token_count": 725,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-04_2022_10_04_gibsons_tanker_market_report__s02_linked_asset_2022_10_04_gibsons_tanker_market_report_img_screenshot_20221004_112533_samsungno_46277b47cb7a_jpg",
+      "doc_id": "breakwave_insights_insights_2022-10-04_2022_10_04_gibsons_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2022-10-04_2022_10_04_gibsons_tanker_market_report__root",
+      "title": "Linked asset: 2022-10-04_gibsons-tanker-market-report_img_screenshot-20221004-112533-samsungno_46277b47cb7a.jpg",
+      "section_path": [
+        "Linked asset: 2022-10-04_gibsons-tanker-market-report_img_screenshot-20221004-112533-samsungno_46277b47cb7a.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-10-04_gibsons-tanker-market-report_img_screenshot-20221004-112533-samsungno_46277b47cb7a.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-04_gibsons-tanker-market-report_img_screenshot-20221004-112533-samsungno_46277b47cb7a.jpg\n\nLinked image asset: 2022-10-04_gibsons-tanker-market-report_img_screenshot-20221004-112533-samsungno_46277b47cb7a.jpg\n\nImage metadata: JPEG 471x476 mode=RGB\n\nOCR text:\nChanges in GDP vs Oil Demand\n8.00% tm % Change Oil Demand\n6.00% --% Change World GDP\n4.00%\n2.00%\n0.00%\n-2.00%\n4.00%\n6.00%\n~8.00% 7 Sources: IEA, IMF, World Bank\n-10.00%\nsssssgeages8888\nSsssssgsgeggaggsgs\nSNNANRARARKRARA",
+      "keywords": [
+        "crude_oil",
+        "asset",
+        "change",
+        "demand",
+        "gdp",
+        "image",
+        "oil",
+        "world"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -26,7 +26,98 @@ keywords:
 - are
 - ashdod
 - conflict
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 1
+linked_assets_mirrored: 1
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 8
+numeric_observations:
+- section: Sideline Observer
+  section_type: null
+  source_line: Over the weekend, the world woke up to the extremely disturbing news
+    coming out of Israel, with the conflict escalating rapidly as days went by. Oil
+    prices initially gained on the news but retreated later in the week on the realisation
+    that neither Israel, nor
+  unit: null
+  values:
+  - 600.0
+- section: Sideline Observer
+  section_type: null
+  source_line: In terms of its energy needs, Israel has to rely on crude imports which
+    are fed into 110kbd Ashdod and 197kbd Haifa refineries. The port of Ashkelon is
+    the main receiver of crude into the country, with its intake averaging circa 230kbd
+    last year, accounting fo
+  unit: pct
+  values:
+  - 110.0
+  - 197.0
+  - 230.0
+  - 85.0
+  - 15.0
+  - 11.0
+- section: Sideline Observer
+  section_type: null
+  source_line: The wider crude tanker market at present is largely unaffected by the
+    developments, driven by other factors; yet, additional premiums are being demanded
+    by tanker owners for Lebanon-bound clean cargoes. Yet again, similar to Israel,
+    Lebanon is not a major play
+  unit: null
+  values:
+  - 100.0
+- section: Sideline Observer
+  section_type: null
+  source_line: Beyond the immediate conflict zone, the current crisis also threatens
+    to derail the recent de-escalation of tensions between the US and Iran. Iranian
+    crude production has increased in recent months to its highest level since late
+    2018 amid what looks like a so
+  unit: usd
+  values:
+  - 2018.0
+  - 6.0
+- section: Crude Oil Prices ($/bbl)
+  section_type: null
+  source_line: 'Image reference: αρχείο λήψης (6).png | assets/2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png'
+  unit: null
+  values:
+  - 6.0
+  - 2023.0
+  - -10.0
+  - -19.0
+  - 1.0
+  - 7.0
+  - 8.0
+  - 3415.0
+  - 3.0
+  - 7.0
+- section: 'Linked asset: 2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png'
+  unit: null
+  values:
+  - 2023.0
+  - -10.0
+  - -19.0
+  - 1.0
+  - 7.0
+  - 8.0
+  - 3415.0
+  - 3.0
+  - 7.0
+- section: 'Linked asset: 2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1355x500 mode=RGBA'
+  unit: null
+  values:
+  - 1355.0
+- section: 'Linked asset: 2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (71.9836, 71.9836)'
+  unit: null
+  values:
+  - 71.9836
+  - 71.9836
 regions:
 - china
 - brazil
@@ -36,7 +127,7 @@ regions:
 - meg
 - west_africa
 - europe
-section_count: 2
+section_count: 3
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2023/2023-10-19_gibsons-tanker-market-report.html
@@ -59,7 +150,7 @@ themes:
 - israel
 - iranian
 - kbd
-title: Gibsons Tanker Market Report
+title: Sideline Observer
 vessel_classes:
 - capesize
 - panamax
@@ -83,4 +174,18 @@ However, that risk has been slowly receding in recent days. Although the close r
 Nonetheless, with violence escalating, the concern that the war could spread beyond Gaza persists as a prolonged and difficult conflict between Israel and Hamas unfortunately appears inevitable at this stage. Yet, the oil industry remains just a sideline observer, at least for now…
 
 ## Crude Oil Prices ($/bbl)
+Image reference: αρχείο λήψης (6).png | assets/2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png
 Data source: Gibson Shipbrokers
+
+## Linked asset: 2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png
+Source asset: reports/breakwave/2023/assets/2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png
+
+Linked image asset: 2023-10-19_gibsons-tanker-market-report_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_3415af93d47b.png
+
+Image metadata: PNG 1355x500 mode=RGBA
+
+Embedded info:
+dpi: (71.9836, 71.9836)
+
+OCR text:
+Waren

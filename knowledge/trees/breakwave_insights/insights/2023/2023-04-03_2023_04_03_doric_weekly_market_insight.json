@@ -26,12 +26,36 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1257,
+  "token_count": 3137,
   "source_path": "reports/breakwave/2023/2023-04-03_doric-weekly-market-insight.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/4/3/doric-weekly-market-insight",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__s01_looking_forward_towards_the_seasonally_strongest_period_of_q2_and_q3_market_sentiment_remains_rather_mixed_anticipating_a_few_generous_spikes_but_being_pensive_for_the_annual_average_performance",
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "Image reference: 1 (10).png | assets/2023-04-03_doric-weekly-market-insight_img_1281029_33f02b9ceb43.png",
+      "keywords": [
+        "assets/2023-04-03_doric-weekly-market-insight_img_1281029_33f02b9ceb43.png",
+        "image",
+        "png",
+        "reference"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 39,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__s02_looking_forward_towards_the_seasonally_strongest_period_of_q2_and_q3_market_sentiment_remains_rather_mixed_anticipating_a_few_generous_spikes_but_being_pensive_for_the_annual_average_performance",
       "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight",
       "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__root",
       "title": "\"Looking forward towards the seasonally strongest period of Q2 and Q3, market sentiment remains rather mixed, anticipating a few generous spikes but being pensive for the annual average performance.\"",
@@ -40,7 +64,7 @@
       ],
       "section_path_text": "\"Looking forward towards the seasonally strongest period of Q2 and Q3, market sentiment remains rather mixed, anticipating a few generous spikes but being pensive for the annual average performance.\"",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "By Michalis Voutsinas\nFollowing a quite uninspiring fourth quarter of 2022, Baltic Dry Index stepped into the first quarter of the current trading year with a rather tepid feeling. In fact, one should dig well into trading history to draw a parallel with this quarter's steep downward correction of the spot market, with all segments being under severe pressure.",
       "keywords": [
         "capesize",
@@ -54,8 +78,120 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1220,
+      "token_count": 1361,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__s03_linked_asset_2023_04_03_doric_weekly_market_insight_img_1281029_33f02b9ceb43_png",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-04-03_doric-weekly-market-insight_img_1281029_33f02b9ceb43.png",
+      "section_path": [
+        "Linked asset: 2023-04-03_doric-weekly-market-insight_img_1281029_33f02b9ceb43.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-03_doric-weekly-market-insight_img_1281029_33f02b9ceb43.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-03_doric-weekly-market-insight_img_1281029_33f02b9ceb43.png\n\nLinked image asset: 2023-04-03_doric-weekly-market-insight_img_1281029_33f02b9ceb43.png\n\nImage metadata: PNG 826x295 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nDID YOU KNOW ? Can you find a monkey island on a tanker ship?",
+      "keywords": [
+        "asset",
+        "image",
+        "you",
+        "can",
+        "did",
+        "doric-weekly-market-insight_img_1281029_33f02b9ceb43.png",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 121,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__s04_linked_asset_2023_04_03_doric_weekly_market_insight_img_unsplash_image_s32zqwhnywk_2f2cebc04dab_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-04-03_doric-weekly-market-insight_img_unsplash-image-s32zqwhnywk_2f2cebc04dab.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-03_doric-weekly-market-insight_img_unsplash-image-s32zqwhnywk_2f2cebc04dab.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-03_doric-weekly-market-insight_img_unsplash-image-s32zqwhnywk_2f2cebc04dab.jpg",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-03_doric-weekly-market-insight_img_unsplash-image-s32zqwhnywk_2f2cebc04dab.jpg\n\nLinked image asset: 2023-04-03_doric-weekly-market-insight_img_unsplash-image-s32zqwhnywk_2f2cebc04dab.jpg\n\nImage metadata: JPEG 2500x1670 mode=RGB\n\nOCR text:\nee _\n. _ - ee a\n' r e --\nTINS ye 8\n- ermueieat!",
+      "keywords": [
+        "asset",
+        "image",
+        "doric-weekly-market-insight_img_unsplash-image-s32zqwhnywk_2f2cebc04dab.jpg",
+        "ermueieat",
+        "jpeg",
+        "linked",
+        "metadata",
+        "mode"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 157,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__s05_linked_asset_2023_04_03_doric_weekly_market_insight_img_unsplash_image_rnndkkytnbm_8723175e338b_jpg",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-04-03_doric-weekly-market-insight_img_unsplash-image-rnndkkytnbm_8723175e338b.jpg",
+      "section_path": [
+        "Linked asset: 2023-04-03_doric-weekly-market-insight_img_unsplash-image-rnndkkytnbm_8723175e338b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-04-03_doric-weekly-market-insight_img_unsplash-image-rnndkkytnbm_8723175e338b.jpg",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-03_doric-weekly-market-insight_img_unsplash-image-rnndkkytnbm_8723175e338b.jpg\n\nLinked image asset: 2023-04-03_doric-weekly-market-insight_img_unsplash-image-rnndkkytnbm_8723175e338b.jpg\n\nImage metadata: JPEG 2500x1675 mode=RGB\n\nOCR text:\nKB\n: \\ A] / >\nj 4 F . \\ P\n4 / i \\ \" A Vi\noh f | \\ 5 \\\\ AY 4 A Ach\n{ j ‘a : ' : ‘ie A : a) y, i ih\nMi A v Hy B?",
+      "keywords": [
+        "sss",
+        "see",
+        "eee",
+        "asset",
+        "image",
+        "s",
+        "ach",
+        "alas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 1054,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__s06_linked_asset_2023_04_03_doric_weekly_market_insight_img_128829_6827ea273bdc_png",
+      "doc_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-04-03_2023_04_03_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-04-03_doric-weekly-market-insight_img_128829_6827ea273bdc.png",
+      "section_path": [
+        "Linked asset: 2023-04-03_doric-weekly-market-insight_img_128829_6827ea273bdc.png"
+      ],
+      "section_path_text": "Linked asset: 2023-04-03_doric-weekly-market-insight_img_128829_6827ea273bdc.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-04-03_doric-weekly-market-insight_img_128829_6827ea273bdc.png\n\nLinked image asset: 2023-04-03_doric-weekly-market-insight_img_128829_6827ea273bdc.png\n\nImage metadata: PNG 898x246 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\n$25,000\n| >\n$20,000\n| >\n$15,000 |\n. $10,000 7) ~\n_ ; D ~\n$5,000 ; :\n: ; 1 210 ' ' :\n$0 pitt piri' piri' eit puri' pitt pivivt pivivet pL pitt\n2014 2015 2016 2017 2018 2019 2020 2021 2022 2023\nMBCITCA MBPI-TCA HBSI-TCA MBHSI-TCA",
+      "keywords": [
+        "pitt",
+        "asset",
+        "image",
+        "piri",
+        "doric-weekly-market-insight_img_128829_6827ea273bdc.png",
+        "dpi",
+        "eit",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

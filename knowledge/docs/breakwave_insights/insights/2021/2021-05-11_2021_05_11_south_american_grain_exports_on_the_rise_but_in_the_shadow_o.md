@@ -28,7 +28,66 @@ keywords:
 - iron
 - ore
 - per
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The drought and rain that delayed the Brazilian soybean harvest have
+    produced some statistical consequences. The Brazilian Trade Ministry announced
+    last week that the country exported 12.6 million tonnes to China in April, an
+    increase of nineteen per cent on t
+  unit: null
+  values:
+  - 12.6
+  - 1997.0
+- section: Main
+  section_type: null
+  source_line: Beyond statistical anomalies, soybeans look set to lose the crown as
+    Brazil's main export earner to iron ore despite posting strong numbers. An expected
+    recovery in output, following constraints imposed by the pandemic and mining accidents,
+    and market prices t
+  unit: null
+  values:
+  - 60.0
+  - 38.0
+  - 24.0
+- section: Main
+  section_type: null
+  source_line: Iron Ore 62% Fe (USD/tonne)
+  unit: usd_per_unit
+  values:
+  - 62.0
+- section: Main
+  section_type: null
+  source_line: There is however good news for soybean exporters as a consolation,
+    with Chinese soybean acreage likely to decrease for the first time in six years.
+    Data released by the China National Grain and Oils Information Center suggests
+    the land planted with soybeans is
+  unit: null
+  values:
+  - 7.3
+  - 102.0
+  - 98.0
+- section: Main
+  section_type: null
+  source_line: At the same time as Brazil could be on course to record agricultural
+    exports, weather gods permitting, its southern neighbour, Argentina, is already
+    logging new export records. The first four months of the year saw Argentina's
+    agricultural exports reach a reco
+  unit: usd
+  values:
+  - 9.8
+  - 2016.0
+  - 1.4
+  - 16.4
+  - 2020.0
+  - 21.0
 regions:
 - china
 - brazil

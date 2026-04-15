@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 596,
+  "token_count": 1149,
   "source_path": "reports/breakwave/2023/2023-09-21_commodities-wrap.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/9/21/commodities-wrap",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 594,
+      "token_count": 633,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-21_2023_09_21_commodities_wrap__s02_linked_asset_2023_09_21_commodities_wrap_img_1695247237124_0d750e992eda_png",
+      "doc_id": "breakwave_insights_insights_2023-09-21_2023_09_21_commodities_wrap",
+      "parent_id": "breakwave_insights_insights_2023-09-21_2023_09_21_commodities_wrap__root",
+      "title": "Linked asset: 2023-09-21_commodities-wrap_img_1695247237124_0d750e992eda.png",
+      "section_path": [
+        "Linked asset: 2023-09-21_commodities-wrap_img_1695247237124_0d750e992eda.png"
+      ],
+      "section_path_text": "Linked asset: 2023-09-21_commodities-wrap_img_1695247237124_0d750e992eda.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-21_commodities-wrap_img_1695247237124_0d750e992eda.png\n\nLinked image asset: 2023-09-21_commodities-wrap_img_1695247237124_0d750e992eda.png\n\nImage metadata: PNG 1280x720 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCOMMODITIES Last Unit 1 day (% chg) ,\nLME Base Metals a\nCopper 8,345.5 usD/t =\nAluminium 2,256.0 usD/t = Aluminium : a\nNickel 19,593.0 uso x -\nZinc 2,555.5 uso [nn Nickel\nLead 2,214.0 uSsD/t -0.270\nTin 26,132.0 _ usp/t 0.100 | tronore\nSteel Making Raw Materials\nIron ore 121.3 USD/t 0.443 Coking coal ee _ _\nCoking coal 300.0 usbD/t 0.000 -\nPrecious Metals Gold\nGold 1,948.6 usd/oz | 0.687 [oe\nSilver 23.2 USD/oz 0.165 | Silver\nPlatinum 931.2 USsD/oz 0.044 -_-\nPalladium 1,265.7 USD/oz -0.036 Platinum\nEnergy\nWTI crude 90.3 USD/bbI\nBrent crude 93.2 USD/bbI -- Brentcrude ---\nNorth Asia LNG 14.2 UsD/mMMBtu -0.070 | eracts eo _\nThermal coal 160.8 = usD/t 0.000 OT -\nCarbon\nEUA 82.8 ust as ‘ee\nACCU 30.5 AUuD/t 0.000 accu\nNZ 66.5 NzD/t 0.000 23 24 #25 28 29 30 31° 4 4 5 6 7 7 7 12 13 14 #15 #18 19 20\n23 Aug 23 Sep",
+      "keywords": [
+        "lng",
+        "iron_ore",
+        "coal",
+        "steel",
+        "gas",
+        "usd/t",
+        "usd/oz",
+        "accu"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 483,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

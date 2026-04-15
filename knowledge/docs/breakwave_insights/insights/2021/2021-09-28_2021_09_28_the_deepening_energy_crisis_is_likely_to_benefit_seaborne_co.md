@@ -26,7 +26,51 @@ keywords:
 - are
 - last
 - demand
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: On the back of an escalating energy crisis in Europe, coal prices in
+    the region have kept rising and have reached two hundred dollars per tonne for
+    the first time in thirteen years. While much of Europe is committed to decarbonisation
+    and limiting the use of c
+  unit: null
+  values:
+  - 2016.0
+- section: Main
+  section_type: null
+  source_line: With only a few days remaining of the month, European seaborne imports
+    of coal are on track for reaching 7.5 million tonnes in September. While still
+    below the pre-pandemic levels of 2019, it will be forty per cent above the same
+    month last year and around fiv
+  unit: null
+  values:
+  - 7.5
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: 'As European seaborne coal import volumes have recovered lost ground,
+    the nature of the trade has also changed. After seeing its importance eroding
+    since 2017, the Capesize segment has seen a revival this year and more than doubled
+    its market share in the last '
+  unit: null
+  values:
+  - 2017.0
+- section: Main
+  section_type: null
+  source_line: The aggregate data for the rebound of the global coal trade obscures
+    that the recovery is not homogenous among the major importers. India is the notable
+    exception from the year-on-year growth in the third quarter among the six largest
+    importers. Despite report
+  unit: null
+  values:
+  - 2017.0
 regions:
 - china
 - brazil

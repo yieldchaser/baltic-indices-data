@@ -26,7 +26,48 @@ keywords:
 - but
 - are
 - prices
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As the spot Capesize index propels past the 30,000 mark once again
+    and the futures clearly pointing to this number pushing further over the next
+    few weeks, the market seems quite skeptical of the recent rally keeping the futures
+    close to spot and not getting o
+  unit: null
+  values:
+  - 30000.0
+- section: Main
+  section_type: null
+  source_line: Capesize rates, Spot and 200 SMA; 2014-Present
+  unit: null
+  values:
+  - 200.0
+  - 2014.0
+- section: Main
+  section_type: null
+  source_line: Then there is the camp that sees the current rally as temporary, fueled
+    by sentiment on the back of a very strong activity in the sub-cape segments, something
+    that will fizzle out soon. Such a view is supported by the main drivers of a rather
+    dull Capesize mar
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: Capesizes managed to climb above 30,000 without any significant effort.
+    A positional tightness can propel rates much higher, and even if this is temporary,
+    owner's confidence will further increase, maintaining the never ending cycle of
+    the current uptrend.
+  unit: null
+  values:
+  - 30000.0
 regions:
 - china
 - brazil

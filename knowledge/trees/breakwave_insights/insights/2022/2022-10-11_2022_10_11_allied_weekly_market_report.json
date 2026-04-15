@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-10-11_2022_10_11_allied_weekly_market_report__root",
   "doc_id": "breakwave_insights_insights_2022-10-11_2022_10_11_allied_weekly_market_report",
   "parent_id": null,
-  "title": "Allied Weekly Market Report",
+  "title": "ALLIED - Weekly Market Report",
   "section_path": [
-    "Allied Weekly Market Report"
+    "ALLIED - Weekly Market Report"
   ],
-  "section_path_text": "Allied Weekly Market Report",
+  "section_path_text": "ALLIED - Weekly Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Thomas Chasapis\nMarket sentiment is a finicky thing to accurately capture and quantify, yet it plays a strong role in directing the market and gives a basis for any and all excess noted in terms of market noise. The basic idea behind the below graph is to show the development, during the course of a year, of daily mid-closing levels of FFA contracts with swap period the next calendar year. In this particular case, we have taken FFA contracts with an underlying benchmark the Capesize 5TC figure.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 569,
+  "token_count": 874,
   "source_path": "reports/breakwave/2022/2022-10-11_allied-weekly-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/10/11/allied-weekly-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 567,
+      "token_count": 629,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-11_2022_10_11_allied_weekly_market_report__s02_linked_asset_2022_10_11_allied_weekly_market_report_img_311338878_623434322605327_1255593271_f43861006ebf_jpg",
+      "doc_id": "breakwave_insights_insights_2022-10-11_2022_10_11_allied_weekly_market_report",
+      "parent_id": "breakwave_insights_insights_2022-10-11_2022_10_11_allied_weekly_market_report__root",
+      "title": "Linked asset: 2022-10-11_allied-weekly-market-report_img_311338878-623434322605327-1255593271_f43861006ebf.jpg",
+      "section_path": [
+        "Linked asset: 2022-10-11_allied-weekly-market-report_img_311338878-623434322605327-1255593271_f43861006ebf.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-10-11_allied-weekly-market-report_img_311338878-623434322605327-1255593271_f43861006ebf.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-11_allied-weekly-market-report_img_311338878-623434322605327-1255593271_f43861006ebf.jpg\n\nLinked image asset: 2022-10-11_allied-weekly-market-report_img_311338878-623434322605327-1255593271_f43861006ebf.jpg\n\nImage metadata: JPEG 464x206 mode=RGB\n\nOCR text:\nFFA contracts for Capesize 5TC +1 calendar year\noe -2017 2018 --2019\n26000 72020 --2021 --2022\n24,000\n22,000 oY\n20,000\n18,000\n16,000 »~ II Wn Ate\n14,000 ; aan i vm\n12,000 ~Y\n10,000\njan ya Geb Mat ppl May jun Jd pee Sep Oct Nov pet",
+      "keywords": [
+        "capesize",
+        "asset",
+        "image",
+        "aan",
+        "allied-weekly-market-report_img_311338878-623434322605327-1255593271_f43861006ebf.jpg",
+        "ate",
+        "calendar",
+        "contracts"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 203,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

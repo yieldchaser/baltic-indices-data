@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-30_2023_03_30_copper_gains_as_risk_appetite_improves__root",
   "doc_id": "breakwave_insights_insights_2023-03-30_2023_03_30_copper_gains_as_risk_appetite_improves",
   "parent_id": null,
-  "title": "Copper Gains As Risk Appetite Improves",
+  "title": "Copper gains as risk appetite improves",
   "section_path": [
-    "Copper Gains As Risk Appetite Improves"
+    "Copper gains as risk appetite improves"
   ],
-  "section_path_text": "Copper Gains As Risk Appetite Improves",
+  "section_path_text": "Copper gains as risk appetite improves",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA further recovery in risk appetite lifted commodities, but gains were limited amid concerns of weaker demand. Copper inched higher amid a broader recovery in risk appetite. As fear for the banking sector fades, investors have begun dipping their toes back into commodities.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 576,
+  "token_count": 987,
   "source_path": "reports/breakwave/2023/2023-03-30_copper-gains-as-risk-appetite-improves.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/30/copper-gains-as-risk-appetite-improves",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "By Daniel Hynes\nA further recovery in risk appetite lifted commodities, but gains were limited amid concerns of weaker demand. Copper inched higher amid a broader recovery in risk appetite.",
+      "summary": "By Daniel Hynes\nA further recovery in risk appetite lifted commodities, but gains were limited amid concerns of weaker demand. Image reference: 1680130605218.png | assets/2023-03-30_copper-gains-as-risk-appetite-improves_img_1680130605218_fc8781aa30f6.png\nCopper inched higher amid a broader recovery in risk appetite.",
       "keywords": [
         "lng",
         "china",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 574,
+      "token_count": 621,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-30_2023_03_30_copper_gains_as_risk_appetite_improves__s02_linked_asset_2023_03_30_copper_gains_as_risk_appetite_improves_img_1680130605218_fc8781aa30f6_png",
+      "doc_id": "breakwave_insights_insights_2023-03-30_2023_03_30_copper_gains_as_risk_appetite_improves",
+      "parent_id": "breakwave_insights_insights_2023-03-30_2023_03_30_copper_gains_as_risk_appetite_improves__root",
+      "title": "Linked asset: 2023-03-30_copper-gains-as-risk-appetite-improves_img_1680130605218_fc8781aa30f6.png",
+      "section_path": [
+        "Linked asset: 2023-03-30_copper-gains-as-risk-appetite-improves_img_1680130605218_fc8781aa30f6.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-30_copper-gains-as-risk-appetite-improves_img_1680130605218_fc8781aa30f6.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-30_copper-gains-as-risk-appetite-improves_img_1680130605218_fc8781aa30f6.png\n\nLinked image asset: 2023-03-30_copper-gains-as-risk-appetite-improves_img_1680130605218_fc8781aa30f6.png\n\nImage metadata: PNG 878x249 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nTue 28-Mar Wed 29-Mar % chg Daily % chg Daily % chg\nccl 461.99 462.34 Brent crude 78.27 -0.5% Gold 1,963 -0.5%\nPrecious 685.65 682.24 -0.5% Thermal coal 176.60 Palladium 1,426 -39.0%\nIndustrials 401.94 402.36 JKM LNG swaps) 12.54 Iron Ore 128.9\nBulks 603.18 604. 74 Copper 9,006 Hogs 2,200 0.0%\nAgs 304.77 304.83 Nickel 23,615 -1.4% com 421 -0.2%\nEnergy 513.42 513.76 Aluminium 2,347 -0.4% Wheat 464 -0.2%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 325,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

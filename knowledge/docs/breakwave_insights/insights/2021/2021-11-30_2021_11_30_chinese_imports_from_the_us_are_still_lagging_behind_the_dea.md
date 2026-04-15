@@ -25,7 +25,61 @@ keywords:
 - trade
 - are
 - imports
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The pact had an unfortunate start as its first year of existence was
+    dominated by the pandemic, which interrupted much of the global trade. Last year,
+    total Chinese imports of US goods covered by the accord reached 100 billion dollars,
+    approximately 73 billion
+  unit: null
+  values:
+  - 100.0
+  - 73.0
+  - 43.0
+  - 64.0
+  - 39.0
+- section: Main
+  section_type: null
+  source_line: So far this year, conformity with the agreement has seen some limited
+    improvements. According to data compiled by the Peterson Institute for International
+    Economics (PIIE), China had reached 67 per cent of the target as measured by Chinese
+    imports. In contrast
+  unit: null
+  values:
+  - 67.0
+  - 39.0
+- section: Main
+  section_type: null
+  source_line: While the compliance rate only shows a limited increase compared to
+    last year, it is important to highlight that the targets for 2021 are higher than
+    in 2020. The objective for the current year, as measured as Chinese imports, is
+    31 billion dollars higher than
+  unit: null
+  values:
+  - 2021.0
+  - 2020.0
+  - 31.0
+  - 89.0
+  - 15.0
+  - 56.0
+  - 37.0
+- section: Main
+  section_type: null
+  source_line: During the first ten months of the year, US agricultural exports to
+    China were approximately 23 per cent above the same period last year. However,
+    the strength of the exports during the final months of last year may mean that
+    total volume will fail to match la
+  unit: null
+  values:
+  - 23.0
 regions:
 - china
 - brazil

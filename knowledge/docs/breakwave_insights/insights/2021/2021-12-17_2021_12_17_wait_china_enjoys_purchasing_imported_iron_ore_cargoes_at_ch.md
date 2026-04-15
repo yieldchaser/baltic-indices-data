@@ -26,7 +26,45 @@ keywords:
 - even
 - million
 - recently
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The most recently released data shows that China's crude steel production
+    at large and medium-sized mills in China averaged 1.72 million tons during the
+    last ten days of November. This is down by 3% from the previous ten days, down
+    year-on-year by 17%, and mar
+  unit: worldscale_pct
+  values:
+  - 1.72
+  - 3.0
+  - 17.0
+- section: Main
+  section_type: null
+  source_line: China's iron ore imports most recently totaled 105 million tons in
+    November. This is up month-on-month by 15%, up year-on-year by 7%, and marks the
+    largest amount imported all year.
+  unit: pct
+  values:
+  - 105.0
+  - 15.0
+  - 7.0
+- section: Main
+  section_type: null
+  source_line: Overall, we continue to stress that iron ore imports can easily climb
+    when China's steel production is declining. We have reiterated this point often
+    in recent months as we have continued to see mainstream coverage ignoring that
+    China has been ramping up its i
+  unit: null
+  values:
+  - 99.5
+  - 2021.0
 regions:
 - china
 - brazil

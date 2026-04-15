@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-10-05_2023_10_05_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2023-10-05_2023_10_05_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nIn line with the narrative for much of the past week, the Capesizes continued to fuel gains for the Baltic Dry Index yesterday, while the smaller segments provided limited headwinds. Among the commodities, iron ore and coal faced headwinds amid the holidays in China. By Ulf Bergman\n\nMacro/Geopolitics\nThe US economy continues to surprise on the upside, with labour market and PMI data beating expectations in the past two days.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1316,
+  "token_count": 1653,
   "source_path": "reports/breakwave/2023/2023-10-05_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/10/5/shipfix-global-market-update",
   "children": [
@@ -166,8 +166,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 244,
+      "token_count": 300,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-10-05_2023_10_05_shipfix_global_market_update__s06_linked_asset_2023_10_05_shipfix_global_market_update_img_unnamed_2023_10_05t125411376_d55c4cb81f06_png",
+      "doc_id": "breakwave_insights_insights_2023-10-05_2023_10_05_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2023-10-05_2023_10_05_shipfix_global_market_update__root",
+      "title": "Linked asset: 2023-10-05_shipfix-global-market-update_img_unnamed-2023-10-05t125411376_d55c4cb81f06.png",
+      "section_path": [
+        "Linked asset: 2023-10-05_shipfix-global-market-update_img_unnamed-2023-10-05t125411376_d55c4cb81f06.png"
+      ],
+      "section_path_text": "Linked asset: 2023-10-05_shipfix-global-market-update_img_unnamed-2023-10-05t125411376_d55c4cb81f06.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-10-05_shipfix-global-market-update_img_unnamed-2023-10-05t125411376_d55c4cb81f06.png\n\nLinked image asset: 2023-10-05_shipfix-global-market-update_img_unnamed-2023-10-05t125411376_d55c4cb81f06.png\n\nImage metadata: PNG 1120x633 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Cargo Order Volumes (TCT & Voyage) and Average Cargo Sizes for Sugar by Origin\n= Average cargo size - Brazil @& Rest of the world ® India ™ Brazil\n4 60\n3\n40\n2 Z\ncue 8\n2 co]\n= 5\n2 a\n= 20 E\n1\n0) 0\nDP PP oP oP po pS \"oP ah oP poh pw poh DP WP pw oP wP ph\ngf a Eh IO Ot Met tO oOo\nData source: Shipfix",
+      "keywords": [
+        "brazil",
+        "india",
+        "cargo",
+        "asset",
+        "average",
+        "image",
+        "poh",
+        "source"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

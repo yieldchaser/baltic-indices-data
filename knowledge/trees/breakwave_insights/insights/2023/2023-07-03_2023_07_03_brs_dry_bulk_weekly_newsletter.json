@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__root",
   "doc_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter",
   "parent_id": null,
-  "title": "Brs Dry Bulk Weekly Newsletter",
+  "title": "BRS Dry Bulk Weekly Newsletter",
   "section_path": [
-    "Brs Dry Bulk Weekly Newsletter"
+    "BRS Dry Bulk Weekly Newsletter"
   ],
-  "section_path_text": "Brs Dry Bulk Weekly Newsletter",
+  "section_path_text": "BRS Dry Bulk Weekly Newsletter",
   "level": 0,
   "ordinal": 0,
   "summary": "Capesize Shipments of Guinea Bauxite Forecasted to Slow Down in Q3 Amid Rainy Seasons\nBased on AXSMarine data, during the first five months of 2023, the seaborne export of bauxite remained strong, exhibiting a growth of 2.3 million tons (3.4% year-on-year) compared to the corresponding period of the previous year. When examining the distribution across vessel types, there was a notable movement towards larger sizes. This was demonstrated as Capesizes carried 6.3 million tons more (increasing by 15.7% y-o-y).",
@@ -26,12 +26,36 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1743,
+  "token_count": 2812,
   "source_path": "reports/breakwave/2023/2023-07-03_brs-dry-bulk-weekly-newsletter.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/7/3/brs-dry-bulk-weekly-newsletter",
   "children": [
     {
-      "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s01_capesize_shipments_of_guinea_bauxite_forecasted_to_slow_down_in_q3_amid_rainy_seasons",
+      "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s01_main",
+      "doc_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "",
+      "keywords": [
+        "assets/2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+        "image",
+        "reference",
+        "rgb_color_brs_shipbrokers_monogram_logo.png"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 59,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s02_capesize_shipments_of_guinea_bauxite_forecasted_to_slow_down_in_q3_amid_rainy_seasons",
       "doc_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter",
       "parent_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__root",
       "title": "Capesize Shipments of Guinea Bauxite Forecasted to Slow Down in Q3 Amid Rainy Seasons",
@@ -40,7 +64,7 @@
       ],
       "section_path_text": "Capesize Shipments of Guinea Bauxite Forecasted to Slow Down in Q3 Amid Rainy Seasons",
       "level": 1,
-      "ordinal": 1,
+      "ordinal": 2,
       "summary": "Based on AXSMarine data, during the first five months of 2023, the seaborne export of bauxite remained strong, exhibiting a growth of 2.3 million tons (3.4% year-on-year) compared to the corresponding period of the previous year. When examining the distribution across vessel types, there was a notable movement towards larger sizes.",
       "keywords": [
         "capesize",
@@ -54,8 +78,120 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1720,
+      "token_count": 1846,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_07_03_brs_dry_bulk_weekly_newsletter_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png",
+      "doc_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+      "section_path": [
+        "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\n\nLinked image asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\n\nImage metadata: PNG 2500x2186 mode=RGBA\n\nEmbedded info:\ndpi: (299.9994, 299.9994)\n\n[No OCR text detected in linked image.]",
+      "keywords": [
+        "asset",
+        "image",
+        "linked",
+        "brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+        "detected",
+        "dpi",
+        "embedded",
+        "image."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 133,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s04_linked_asset_2023_07_03_brs_dry_bulk_weekly_newsletter_img_128429_491333100b55_png",
+      "doc_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128429_491333100b55.png",
+      "section_path": [
+        "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128429_491333100b55.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128429_491333100b55.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-03_brs-dry-bulk-weekly-newsletter_img_128429_491333100b55.png\n\nLinked image asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128429_491333100b55.png\n\nImage metadata: PNG 870x426 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChart |. Bauxite Shipment, Y-O-Y Change, By Vessel Type\n50k~68k 68k~85k mmm 85k~100k mm 100k~160k mmm 160k-220k mmm >220k -_ Total\n6\n5\n4\n3\n= 2\n5° ;\n; o 5 o\n= =\n=\n() o = = a = [| = UW\n(2)\n(3)\nJan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May\neS ++-_______>\n2022 VS 2021 2023 VS",
+      "keywords": [
+        "bauxite",
+        "mmm",
+        "apr",
+        "asset",
+        "feb",
+        "image",
+        "jan",
+        "mar"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 242,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s05_linked_asset_2023_07_03_brs_dry_bulk_weekly_newsletter_img_128529_d3d4f22bf39d_png",
+      "doc_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128529_d3d4f22bf39d.png",
+      "section_path": [
+        "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128529_d3d4f22bf39d.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128529_d3d4f22bf39d.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-03_brs-dry-bulk-weekly-newsletter_img_128529_d3d4f22bf39d.png\n\nLinked image asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128529_d3d4f22bf39d.png\n\nImage metadata: PNG 768x355 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChart Il. Bauxite Shipments, Jan-May 2023 VS 2022\nmCape OverPanamax Panamax ™@ Supramax\nrécncsia |\nBrazil I\nAustralia I\nGuinea ee\n(10) (5) - 5 10 15\nMin T",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "supramax",
+        "brazil",
+        "australia",
+        "bauxite",
+        "asset",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 177,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_07_03_brs_dry_bulk_weekly_newsletter_img_128629_26b99d4bad7f_png",
+      "doc_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter",
+      "parent_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__root",
+      "title": "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128629_26b99d4bad7f.png",
+      "section_path": [
+        "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128629_26b99d4bad7f.png"
+      ],
+      "section_path_text": "Linked asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128629_26b99d4bad7f.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-07-03_brs-dry-bulk-weekly-newsletter_img_128629_26b99d4bad7f.png\n\nLinked image asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_128629_26b99d4bad7f.png\n\nImage metadata: PNG 865x503 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nChart Ill, Alumina Output (kt), Jan-Apr 2023\n@ China Asia & Africa (ex. China) Europe\nNorth America ® Latin America (Brazil) ®@ Oceania (Australia)\nOceania (Australia),\n6225,0\nLatin America (Brazil),\nChina, 25990,0 4000,0",
+      "keywords": [
+        "china",
+        "brazil",
+        "australia",
+        "europe",
+        "bauxite",
+        "america",
+        "asset",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 183,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

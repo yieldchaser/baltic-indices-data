@@ -26,7 +26,46 @@ keywords:
 - total
 - exported
 - marked
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'China''s coal imports from Indonesia totaled 28.6 million tons in
+    January/February, which has marked a year-on-year decline of 5.2 million tons
+    (-15%). As we have discussed in prior work, China''s total coal imports in January/February
+    fell year-on-year by 40%, '
+  unit: pct
+  values:
+  - 28.6
+  - 5.2
+  - -15.0
+  - 40.0
+  - 39.1
+  - 5.6
+  - 200000.0
+  - -3.0
+  - 800000.0
+  - 200000.0
+- section: Main
+  section_type: null
+  source_line: 'Mongolia and the United States were the only two major exporters to
+    experience year-on-year growth in their coal exports to China in January/February.
+    Again, though, exports from Mongolia are now coming under significant pressure.
+    Mongolia exported a total of '
+  unit: pct
+  values:
+  - 4.5
+  - 1.3
+  - 41.0
+  - 600000.0
+  - 500000.0
+  - 500.0
 regions:
 - china
 - brazil

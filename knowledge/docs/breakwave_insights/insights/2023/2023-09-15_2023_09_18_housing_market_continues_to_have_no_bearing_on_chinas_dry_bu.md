@@ -25,7 +25,60 @@ keywords:
 - year-on-year
 - tons.
 - iron
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's coal, iron ore, and soybean imports collectively totaled a
+    record 160.1 million tons in August. This is up month-on-month by 17.6 million
+    tons (12%) and is up year-on-year by 27.3 million tons (21%). Overall, China's
+    dry bulk commodity imports have sta
+  unit: pct
+  values:
+  - 160.1
+  - 17.6
+  - 12.0
+  - 27.3
+  - 21.0
+- section: Main
+  section_type: null
+  source_line: Coal imports totaled a record 44.3 million tons. This is up month-on-month
+    by 5 million tons (13%) and is up year-on-year by 14.8 million tons (50%).
+  unit: pct
+  values:
+  - 44.3
+  - 5.0
+  - 13.0
+  - 14.8
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: Iron ore imports totaled 106.4 million tons. This is up month-on-month
+    by 12.9 million tons (14%) and is up year-on-year by 10.2 million tons (11%).
+  unit: pct
+  values:
+  - 106.4
+  - 12.9
+  - 14.0
+  - 10.2
+  - 11.0
+- section: Main
+  section_type: null
+  source_line: Soybean imports totaled 9.4 million tons. This is down month-on-month
+    by 300,000 tons (-3%) but is up year-on-year by 2.2 million tons (31%).
+  unit: pct
+  values:
+  - 9.4
+  - 300000.0
+  - -3.0
+  - 2.2
+  - 31.0
 regions:
 - china
 - brazil

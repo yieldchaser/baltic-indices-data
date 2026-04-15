@@ -29,7 +29,66 @@ keywords:
 - us_gulf
 - crude_oil
 - voyages
+linked_assets_discovered: 13
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 13
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Globally, since the start of the Russia-Ukraine conflict, all main
+    three dirty classes have seen some increase in the average number of voyages per
+    month compared to Q1 2022 (pre-conflict). Suezmaxes showed the largest increase
+    while Aframax and VLCC voyage nu
+  unit: null
+  values:
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: 'Although the rise in voyages is marginal - apart from Suezmaxes -
+    it reflects the gradual demand recovery from the COVID-19 pandemic. High product
+    cracks in regions with no domestic crude production like Europe, incentivized
+    higher crude flows. Similarly, the '
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: Moving on to Suezmax tankers, it is clear that much of their activity
+    is pointed towards carrying Russian grades, while a smaller part of the increase
+    also stemmed from carrying crude from the US Gulf to Europe. Russian grades were
+    increasingly carried from th
+  unit: pct
+  values:
+  - 4.0
+  - 20.0
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: Of the three tanker classes, Aframaxes showed the largest increase
+    in global tonne-miles after the invasion. This is unsurprising as they experienced
+    increased voyage numbers, but more importantly, much higher mileage per voyage.
+    While maintaining tonne-mileag
+  unit: pct
+  values:
+  - 5.0
+  - 15.0
+- section: Main
+  section_type: null
+  source_line: Come December 5th 2022, the EU ban on seaborne Russian crude oil will
+    have taken effect, eliminating all arrivals except for Bulgaria. This effectively
+    means that around 1.1mbd of Russian crude (700 kbd of seaborne and 400 kbd Druzhba
+    pipeline) will need to fi
+  unit: null
+  values:
+  - 5.0
+  - 2022.0
+  - 1.1
+  - 700.0
+  - 400.0
 regions:
 - china
 - brazil

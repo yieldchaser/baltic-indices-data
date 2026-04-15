@@ -1,0 +1,282 @@
+---
+category: insights
+commodities:
+- iron_ore
+- coal
+- grain
+- crude_oil
+- products
+- gas
+date: '2021-11-30'
+doc_id: breakwave_insights_insights_2021-11-30_2021_11_30_chinese_imports_from_the_us_are_still_lagging_behind_the_deal
+document_type: insights_note
+key_entities:
+- China
+keywords:
+- china
+- pacific
+- coal
+- grain
+- year
+- chinese
+- per
+- cent
+- last
+- trade
+- asset
+- data
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 2
+linked_assets_mirrored: 2
+linked_assets_skipped: 1
+market_tone: constructive
+numeric_observation_count: 17
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The pact had an unfortunate start as its first year of existence was
+    dominated by the pandemic, which interrupted much of the global trade. Last year,
+    total Chinese imports of US goods covered by the accord reached 100 billion dollars,
+    approximately 73 billion
+  unit: null
+  values:
+  - 100.0
+  - 73.0
+  - 43.0
+  - 64.0
+  - 39.0
+- section: Main
+  section_type: null
+  source_line: So far this year, conformity with the agreement has seen some limited
+    improvements. According to data compiled by the Peterson Institute for International
+    Economics (PIIE), China had reached 67 per cent of the target as measured by Chinese
+    imports. In contrast
+  unit: null
+  values:
+  - 67.0
+  - 39.0
+- section: Main
+  section_type: null
+  source_line: 'Image reference: ch1.png | assets/2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png'
+  unit: null
+  values:
+  - 2021.0
+  - -11.0
+  - -30.0
+  - 4.0
+  - 8.0
+- section: Main
+  section_type: null
+  source_line: While the compliance rate only shows a limited increase compared to
+    last year, it is important to highlight that the targets for 2021 are higher than
+    in 2020. The objective for the current year, as measured as Chinese imports, is
+    31 billion dollars higher than
+  unit: null
+  values:
+  - 2021.0
+  - 2020.0
+  - 31.0
+  - 89.0
+  - 15.0
+  - 56.0
+  - 37.0
+- section: Main
+  section_type: null
+  source_line: 'Image reference: ch2 .png | assets/2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png'
+  unit: null
+  values:
+  - 2021.0
+  - -11.0
+  - -30.0
+- section: Main
+  section_type: null
+  source_line: During the first ten months of the year, US agricultural exports to
+    China were approximately 23 per cent above the same period last year. However,
+    the strength of the exports during the final months of last year may mean that
+    total volume will fail to match la
+  unit: null
+  values:
+  - 23.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png'
+  unit: null
+  values:
+  - 2021.0
+  - -11.0
+  - -30.0
+  - 4.0
+  - 8.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 942x414 mode=P'
+  unit: null
+  values:
+  - 942.0
+  - 14.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png'
+  section_type: linked_image_asset
+  source_line: Phase One Trade Deal Tracker 2021, Chinese Imports
+  unit: null
+  values:
+  - 2021.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png'
+  section_type: linked_image_asset
+  source_line: w 200,0
+  unit: null
+  values:
+  - 2000.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png'
+  section_type: linked_image_asset
+  source_line: 5 150,0
+  unit: null
+  values:
+  - 5.0
+  - 1500.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png'
+  section_type: linked_image_asset
+  source_line: 5 1000
+  unit: null
+  values:
+  - 5.0
+  - 1000.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png'
+  unit: null
+  values:
+  - 2021.0
+  - -11.0
+  - -30.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 942x454 mode=P'
+  unit: null
+  values:
+  - 942.0
+  - 54.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png'
+  section_type: linked_image_asset
+  source_line: 6 6 @ Other Dry Bulk
+  unit: null
+  values:
+  - 6.0
+  - 6.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png'
+  section_type: linked_image_asset
+  source_line: Ss 4 Grains
+  unit: null
+  values:
+  - 4.0
+- section: 'Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png'
+  section_type: linked_image_asset
+  source_line: 2019 2020 2021
+  unit: null
+  values:
+  - 2019.0
+  - 2020.0
+  - 2021.0
+regions:
+- china
+- brazil
+- australia
+- atlantic
+- pacific
+- meg
+- west_africa
+- europe
+section_count: 3
+signals: {}
+source: breakwave_insights
+source_path: reports/breakwave/2021/2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal.html
+source_stem: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal
+source_url: https://www.breakwaveadvisors.com/insights/2021/11/30/chinese-imports-from-the-us-are-still-lagging-behind-the-deal
+summary: 'Main
+
+  By Ulf Bergman
+
+  There is no shortage of issues that are causing friction between the world''s two
+  largest economies. The trade tensions which dominated much of the relationship between
+  the US and China under the previous US administration has faded somewhat from the
+  headlines. While not resolved, the significance of the unbalanced trans-Pacific
+  flow of manufactured goods and commodities has paled compared to other potential
+  flashpoints, such as military tension in the South China Sea.'
+themes:
+- china
+- pacific
+- coal
+- grain
+- year
+- chinese
+title: Chinese Imports from the US Are Still Lagging Behind the Deal
+vessel_classes:
+- capesize
+- panamax
+- supramax
+- handysize
+- vlcc
+- suezmax
+- aframax
+---
+
+## Summary
+Main
+By Ulf Bergman
+There is no shortage of issues that are causing friction between the world's two largest economies. The trade tensions which dominated much of the relationship between the US and China under the previous US administration has faded somewhat from the headlines. While not resolved, the significance of the unbalanced trans-Pacific flow of manufactured goods and commodities has paled compared to other potential flashpoints, such as military tension in the South China Sea.
+
+## Main
+By Ulf Bergman
+There is no shortage of issues that are causing friction between the world's two largest economies. The trade tensions which dominated much of the relationship between the US and China under the previous US administration has faded somewhat from the headlines. While not resolved, the significance of the unbalanced trans-Pacific flow of manufactured goods and commodities has paled compared to other potential flashpoints, such as military tension in the South China Sea. The Phase One trade deal struck by the previous occupant of the White House has also contributed to rising expectations of a reset in the commercial relations between the two strategic adversaries. As the trade agreement is approaching its second anniversary, it is highly debatable that it has been a ringing success.
+The pact had an unfortunate start as its first year of existence was dominated by the pandemic, which interrupted much of the global trade. Last year, total Chinese imports of US goods covered by the accord reached 100 billion dollars, approximately 73 billion dollars, or 43 per cent, short of the implied target. A late-year shopping spree in agricultural commodities, as a rebuild of the Chinese swine herd fuelled demand, saw the sector establishing itself as a relative success story in the context of the new trade regime. However, it only accounted for 64 per cent of the Chinese commitments under the deal. For energy imports, the figure was even less impressive at 39 per cent.
+So far this year, conformity with the agreement has seen some limited improvements. According to data compiled by the Peterson Institute for International Economics (PIIE), China had reached 67 per cent of the target as measured by Chinese imports. In contrast, US export data suggested that the country was 39 per cent short of its commitments. Hence, there is a potential for trade tensions to move up the agenda yet again, especially as the Biden administration has repeatedly stated that it expects China to honour its commitments.
+Image reference: ch1.png | assets/2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png
+While the compliance rate only shows a limited increase compared to last year, it is important to highlight that the targets for 2021 are higher than in 2020. The objective for the current year, as measured as Chinese imports, is 31 billion dollars higher than in the previous year. Like last year, agricultural shipments are the standout performer, with 89 per cent of the goal achieved. However, Chinese importers would have to buy 15 billion dollars worth of grains during the year's final months to meet the quota. Imports of energy commodities remain the laggard, with data from the US and China also diverging considerably. According to Chinese import records, volumes for the first ten months of the year have reached 56 per cent, while US exports suggest that only 37 per cent has been achieved.
+According to cargo tracking data from Oceanbolt, coal shipments from the US to China has almost ceased in recent months after a strong start of the year. While coal is only a part of the US energy exports to China, the falling volumes are likely to contribute to a significant shortfall in Chinese imports of US energy commodities. Rising Chinese coal production and US coal prices at around a twelve-year high are also unlikely to be helpful.
+Image reference: ch2 .png | assets/2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png
+During the first ten months of the year, US agricultural exports to China were approximately 23 per cent above the same period last year. However, the strength of the exports during the final months of last year may mean that total volume will fail to match last year's record levels. While export volumes may be lower than last year, the Phase One deal is based on value rather than quantities. Hence, the higher crop prices have proved beneficial for China's compliance with the trade agreement during the current year.
+
+## Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png
+Source asset: reports/breakwave/2021/assets/2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png
+
+Linked image asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch1_4f9ef08c7fed.png
+
+Image metadata: PNG 942x414 mode=P
+
+OCR text:
+Phase One Trade Deal Tracker 2021, Chinese Imports
+250,0
+w 200,0
+s
+5 150,0
+3
+=
+5 1000
+i oat |
+oo mma al |
+Jan Feb Mar Apr May Jun. Jul. = Aug. Sep. Oct.-s Nov_-Dec
+m Cumulative actual = Cumulative targets
+Data source: PIIE
+
+## Linked asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png
+Source asset: reports/breakwave/2021/assets/2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png
+
+Linked image asset: 2021-11-30_chinese-imports-from-the-us-are-still-lagging-behind-the-deal_img_ch2_f3e7e5fa4ca4.png
+
+Image metadata: PNG 942x454 mode=P
+
+OCR text:
+US Dry Bulk Exports to China
+14
+12
+% 10
+c
+Ss 8
+fe
+6 6 @ Other Dry Bulk
+Ss 4 Grains
+‘ rholthatthori ile
+> CELLED
+Jan Mar May Jul Sep Nov Jan Mar May Jul Sep Nov Jan Mar May Jul Sep Nov
+2019 2020 2021
+Data source: Oceanbolt

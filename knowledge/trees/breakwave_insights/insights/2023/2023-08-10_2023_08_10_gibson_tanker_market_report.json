@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 693,
+  "token_count": 969,
   "source_path": "reports/breakwave/2023/2023-08-10_gibson-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/8/10/gibson-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 689,
+      "token_count": 728,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-08-10_2023_08_10_gibson_tanker_market_report__s02_linked_asset_2023_08_10_gibson_tanker_market_report_img_128929_3b2622313ff1_png",
+      "doc_id": "breakwave_insights_insights_2023-08-10_2023_08_10_gibson_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2023-08-10_2023_08_10_gibson_tanker_market_report__root",
+      "title": "Linked asset: 2023-08-10_gibson-tanker-market-report_img_128929_3b2622313ff1.png",
+      "section_path": [
+        "Linked asset: 2023-08-10_gibson-tanker-market-report_img_128929_3b2622313ff1.png"
+      ],
+      "section_path_text": "Linked asset: 2023-08-10_gibson-tanker-market-report_img_128929_3b2622313ff1.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-08-10_gibson-tanker-market-report_img_128929_3b2622313ff1.png\n\nLinked image asset: 2023-08-10_gibson-tanker-market-report_img_128929_3b2622313ff1.png\n\nImage metadata: PNG 491x341 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nRussian crude pricing vs the G7 price cap ($/bbl)\n110\n100 -- PRIMORSK ---- NOVO Price Cap\n90\n80\n70\n60 . f\n50\n40\n30\nSource: Reuters\n20\nNNNNNNNNNENUN NOON OOO OY MY\nRD a a ae a a ae a hs a a\nco *& cs oar > c Oo & - cs Oo\nRPSSFSSIFZESERPS SERRE",
+      "keywords": [
+        "asset",
+        "cap",
+        "image",
+        "price",
+        "source",
+        "bbl",
+        "crude",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

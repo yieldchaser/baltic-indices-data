@@ -26,7 +26,56 @@ keywords:
 - australian
 - exports
 - growth
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: That the Chinese export industry keeps doing well will hardly come
+    as a surprise, especially as container spot rates have been soaring in the last
+    few months. However, the latest release of data managed to surprise the pundits,
+    with export volumes even stronge
+  unit: null
+  values:
+  - 21.0
+  - 30.0
+  - 45.0
+- section: Main
+  section_type: null
+  source_line: 'The strong growth in exports have pushed the Chinese trade surplus
+    to a new record, with previous record set in May on the back of a dip in imports.
+    The current export strength looks likely to carry into next year, but with vaccines
+    being rolled out a general '
+  unit: null
+  values:
+  - 2016.0
+- section: Main
+  section_type: null
+  source_line: In contrast to the strong export figures presented by China, Australian
+    authorities are sounding the alarm on its agricultural exports. The combined effects
+    of worsening trade frictions with China and the lingering impacts of a previous
+    drought are expected to
+  unit: null
+  values:
+  - 2020.0
+  - -21.0
+- section: Main
+  section_type: null
+  source_line: Despite a rising domestic demand and prices of wheat in China, Australian
+    officials are warning that the commodity may get caught in the ongoing trade spat
+    and face similar restriction as other grains. However, unlike other commodities,
+    such as barley and coal
+  unit: null
+  values:
+  - 21.0
+  - 2020.0
+  - -21.0
+  - 25.0
 regions:
 - china
 - brazil

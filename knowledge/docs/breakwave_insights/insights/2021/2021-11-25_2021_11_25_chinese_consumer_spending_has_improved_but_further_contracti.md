@@ -25,7 +25,62 @@ keywords:
 - clothing
 - consecutive
 - marked
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's retail sales in October grew year-on-year by 4.9%. This has
+    marked a second consecutive month where growth has increased (one month prior
+    in September, growth rose to 4.4%). Prior to September, China's retail sales growth
+    had fallen for five consecutiv
+  unit: pct
+  values:
+  - 4.9
+  - 4.4
+  - 2.5
+  - 2021.0
+  - 8.0
+  - 11.0
+- section: Main
+  section_type: null
+  source_line: Pockets of contraction still remain in consumer spending, however,
+    including furniture sales contracting even further last month due to weakness
+    in the housing market. Furniture sales in China totaled approximately 14.9 billion
+    yuan last month, which has marke
+  unit: pct
+  values:
+  - 14.9
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: Appliance sales (which includes consumer electronics) continue to fare
+    particularly well. Household appliance sales totaled approximately 73.5 billion
+    yuan, which has marked a year-on-year increase of 7%. Household appliance sales
+    have now increased on a year-
+  unit: pct
+  values:
+  - 73.5
+  - 7.0
+- section: Main
+  section_type: null
+  source_line: Clothing sales (which includes garments, footwear, hats, and knitwear)
+    declined on a year-on-year basis again last month, but the pace of contraction
+    has continued to slow. Clothing sales in China totaled approximately 122.7 billion
+    yuan, which has marked a ye
+  unit: pct
+  values:
+  - 122.7
+  - 4.0
+  - 4.0
+  - 6.0
+  - 7.0
+  - 122.7
 regions:
 - china
 - brazil

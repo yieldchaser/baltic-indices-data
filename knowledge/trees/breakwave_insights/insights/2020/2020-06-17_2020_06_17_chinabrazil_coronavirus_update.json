@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2020-06-17_2020_06_17_chinabrazil_coronavirus_update__root",
   "doc_id": "breakwave_insights_insights_2020-06-17_2020_06_17_chinabrazil_coronavirus_update",
   "parent_id": null,
-  "title": "Chinabrazil Coronavirus Update",
+  "title": "China/Brazil Coronavirus update",
   "section_path": [
-    "Chinabrazil Coronavirus Update"
+    "China/Brazil Coronavirus update"
   ],
-  "section_path_text": "Chinabrazil Coronavirus Update",
+  "section_path_text": "China/Brazil Coronavirus update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nAccording to China's Global Times, Beijing has raised its COVID-19 emergency response to Level 2 from Level 3 which includes \" reinstating closed managements on communities, requiring people to have temperatures taken, register, and check health codes before entry. Communities, sub-districts, streets in high/middle risk areas would ban outsiders and cars from entering; and communities of high risk sub-districts would have closed-off management, allowing no one to leave\" . This comes on the heels of an earlier decision this week in which all schools in Beijing will be closed starting today.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 283,
+  "token_count": 529,
   "source_path": "reports/breakwave/2020/2020-06-17_chinabrazil-coronavirus-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2020/6/17/chinabrazil-coronavirus-update",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "According to China's Global Times, Beijing has raised its COVID-19 emergency response to Level 2 from Level 3 which includes \" reinstating closed managements on communities, requiring people to have temperatures taken, register, and check health codes before entry. Communities, sub-districts, streets in high/middle risk areas would ban outsiders and cars from entering; and communities of high risk sub-districts would have closed-off management, allowing no one to leave\" .",
+      "summary": "Image reference: assets/2020-06-17_chinabrazil-coronavirus-update_img_image-asset_078f6346d78f.jpeg\nAccording to China's Global Times, Beijing has raised its COVID-19 emergency response to Level 2 from Level 3 which includes \" reinstating closed managements on communities, requiring people to have temperatures taken, register, and check health codes before entry. Communities, sub-districts, streets in high/middle risk areas would ban outsiders and cars from entering; and communities of high risk sub-districts would have closed-off management, allowing no one to leave\" .",
       "keywords": [
         "china",
         "brazil",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 281,
+      "token_count": 314,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2020-06-17_2020_06_17_chinabrazil_coronavirus_update__s02_linked_asset_2020_06_17_chinabrazil_coronavirus_update_img_image_asset_078f6346d78f_jpeg",
+      "doc_id": "breakwave_insights_insights_2020-06-17_2020_06_17_chinabrazil_coronavirus_update",
+      "parent_id": "breakwave_insights_insights_2020-06-17_2020_06_17_chinabrazil_coronavirus_update__root",
+      "title": "Linked asset: 2020-06-17_chinabrazil-coronavirus-update_img_image-asset_078f6346d78f.jpeg",
+      "section_path": [
+        "Linked asset: 2020-06-17_chinabrazil-coronavirus-update_img_image-asset_078f6346d78f.jpeg"
+      ],
+      "section_path_text": "Linked asset: 2020-06-17_chinabrazil-coronavirus-update_img_image-asset_078f6346d78f.jpeg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2020/assets/2020-06-17_chinabrazil-coronavirus-update_img_image-asset_078f6346d78f.jpeg\n\nLinked image asset: 2020-06-17_chinabrazil-coronavirus-update_img_image-asset_078f6346d78f.jpeg\n\nImage metadata: JPEG 2500x1666 mode=RGB\n\nEmbedded info:\ndpi: (300, 300)\n\nOCR text:\nal | m,)\nTotal Recovered\n‘ened Oaths\n50.318 recovered\newes\nrm Hubet China\num 2.959 recovered\na Iran\nDPD wwe 4.289 recovered\n- Guangdong China\nOo awn. 1.249 recovered\nam Sum Henan China\noom 1.197 recovered\nes Zhejiang China",
+      "keywords": [
+        "china",
+        "brazil",
+        "recovered",
+        "asset",
+        "image",
+        "awn.",
+        "chinabrazil-coronavirus-update_img_image-asset_078f6346d78f.jpeg",
+        "dpd"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 181,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

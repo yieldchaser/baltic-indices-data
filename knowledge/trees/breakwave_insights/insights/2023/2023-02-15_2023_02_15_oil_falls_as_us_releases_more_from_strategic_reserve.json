@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-02-15_2023_02_15_oil_falls_as_us_releases_more_from_strategic_reserve__root",
   "doc_id": "breakwave_insights_insights_2023-02-15_2023_02_15_oil_falls_as_us_releases_more_from_strategic_reserve",
   "parent_id": null,
-  "title": "Oil Falls As Us Releases More From Strategic Reserve",
+  "title": "Oil falls as US releases more from strategic reserve",
   "section_path": [
-    "Oil Falls As Us Releases More From Strategic Reserve"
+    "Oil falls as US releases more from strategic reserve"
   ],
-  "section_path_text": "Oil Falls As Us Releases More From Strategic Reserve",
+  "section_path_text": "Oil falls as US releases more from strategic reserve",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nIncreased market expectations of US monetary policy staying tighter for longer weighed on commodity prices. Crude oil prices fell after the US announced it would release 26mb oil from the Strategic Petroleum Reserve (SPR). This is in addition to a record sale of 180mb oil last year.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 576,
+  "token_count": 1023,
   "source_path": "reports/breakwave/2023/2023-02-15_oil-falls-as-us-releases-more-from-strategic-reserve.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/2/15/oil-falls-as-us-releases-more-from-strategic-reserve",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "By Daniel Hynes\nIncreased market expectations of US monetary policy staying tighter for longer weighed on commodity prices. Crude oil prices fell after the US announced it would release 26mb oil from the Strategic Petroleum Reserve (SPR).",
+      "summary": "By Daniel Hynes\nIncreased market expectations of US monetary policy staying tighter for longer weighed on commodity prices. Image reference: 1676409749138.png | assets/2023-02-15_oil-falls-as-us-releases-more-from-strategic-reserve_img_1676409749138_1730a73eefb0.png\nCrude oil prices fell after the US announced it would release 26mb oil from the Strategic Petroleum Reserve (SPR).",
       "keywords": [
         "lng",
         "china",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 574,
+      "token_count": 625,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-15_2023_02_15_oil_falls_as_us_releases_more_from_strategic_reserve__s02_linked_asset_2023_02_15_oil_falls_as_us_releases_more_from_strategic_reserve_img_1676409749138_1730a73eefb0_png",
+      "doc_id": "breakwave_insights_insights_2023-02-15_2023_02_15_oil_falls_as_us_releases_more_from_strategic_reserve",
+      "parent_id": "breakwave_insights_insights_2023-02-15_2023_02_15_oil_falls_as_us_releases_more_from_strategic_reserve__root",
+      "title": "Linked asset: 2023-02-15_oil-falls-as-us-releases-more-from-strategic-reserve_img_1676409749138_1730a73eefb0.png",
+      "section_path": [
+        "Linked asset: 2023-02-15_oil-falls-as-us-releases-more-from-strategic-reserve_img_1676409749138_1730a73eefb0.png"
+      ],
+      "section_path_text": "Linked asset: 2023-02-15_oil-falls-as-us-releases-more-from-strategic-reserve_img_1676409749138_1730a73eefb0.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-15_oil-falls-as-us-releases-more-from-strategic-reserve_img_1676409749138_1730a73eefb0.png\n\nLinked image asset: 2023-02-15_oil-falls-as-us-releases-more-from-strategic-reserve_img_1676409749138_1730a73eefb0.png\n\nImage metadata: PNG 1556x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 13-Feb Tue 14-Feb % chg Daily % chg Daily % chg\nCCI 507.83 507.45 -0.1% Brent crude 85.64 -1.1% Gold 1,855\nPrecious 644.39 644.63 Thermal coal 219.50 -0.7% Palladium 1,486 -36.4%\nIndustrials 406.75 406.48 -0.1% JKM LNG swaps' 17.89 0.0% Iron Ore 124.0 -0.9%\nBulks 603.60 601.52 -0.3% Copper 8,936 Hogs 2,250\nAgs 308.04 311.07 Nickel 26,304 -0.7% Corn 434 0.0%\nEnergy 631.93 629.66 -0.4% Aluminium 2,384 -0.1% Wheat 472 -0.1%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 353,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

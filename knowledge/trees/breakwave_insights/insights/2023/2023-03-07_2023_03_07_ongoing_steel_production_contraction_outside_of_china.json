@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-07_2023_03_07_ongoing_steel_production_contraction_outside_of_china__root",
   "doc_id": "breakwave_insights_insights_2023-03-07_2023_03_07_ongoing_steel_production_contraction_outside_of_china",
   "parent_id": null,
-  "title": "Ongoing Steel Production Contraction Outside Of China",
+  "title": "Ongoing Steel Production Contraction Outside of China",
   "section_path": [
-    "Ongoing Steel Production Contraction Outside Of China"
+    "Ongoing Steel Production Contraction Outside of China"
   ],
-  "section_path_text": "Ongoing Steel Production Contraction Outside Of China",
+  "section_path_text": "Ongoing Steel Production Contraction Outside of China",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nGlobal crude steel production totaled 145.3 million tons in January. This is up month-on-month by 4.6 million tons (3%) but is 9.7 million tons (-6%) less than was reported last year for January 2022's production. Global crude steel production has now contracted on a year-on-year basis for three straight months and during fifteen of the last seventeen months.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 246,
+  "token_count": 741,
   "source_path": "reports/breakwave/2023/2023-03-07_ongoing-steel-production-contraction-outside-of-china.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/7/ongoing-steel-production-contraction-outside-of-china",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 244,
+      "token_count": 341,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-07_2023_03_07_ongoing_steel_production_contraction_outside_of_china__s02_linked_asset_2023_03_07_ongoing_steel_production_contraction_outside_of_china_img_chart1287329_9f5c35828314_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-07_2023_03_07_ongoing_steel_production_contraction_outside_of_china",
+      "parent_id": "breakwave_insights_insights_2023-03-07_2023_03_07_ongoing_steel_production_contraction_outside_of_china__root",
+      "title": "Linked asset: 2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart1287329_9f5c35828314.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart1287329_9f5c35828314.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart1287329_9f5c35828314.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart1287329_9f5c35828314.jpg\n\nLinked image asset: 2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart1287329_9f5c35828314.jpg\n\nImage metadata: JPEG 667x329 mode=RGB\n\nOCR text:\nGlobal Crude Steel Output (2018 - 2023)\n180mt\n170mt\n160mt\n150mt\n140mt\n130mt\n2018 2019 2020 2021 2022 2023",
+      "keywords": [
+        "china",
+        "steel",
+        "asset",
+        "image",
+        "crude",
+        "global",
+        "jpeg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 150,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-07_2023_03_07_ongoing_steel_production_contraction_outside_of_china__s03_linked_asset_2023_03_07_ongoing_steel_production_contraction_outside_of_china_img_chart2286229_d0fd7f6c2ec1_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-07_2023_03_07_ongoing_steel_production_contraction_outside_of_china",
+      "parent_id": "breakwave_insights_insights_2023-03-07_2023_03_07_ongoing_steel_production_contraction_outside_of_china__root",
+      "title": "Linked asset: 2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart2286229_d0fd7f6c2ec1.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart2286229_d0fd7f6c2ec1.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart2286229_d0fd7f6c2ec1.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart2286229_d0fd7f6c2ec1.jpg\n\nLinked image asset: 2023-03-07_ongoing-steel-production-contraction-outside-of-china_img_chart2286229_d0fd7f6c2ec1.jpg\n\nImage metadata: JPEG 667x329 mode=RGB\n\nOCR text:\nGlobal Crude Steel Output Excluding China (2018 - 2023)\n80mt - :\n70mt = : H = 5 ------- oe 2 H a c= ----EEEEs\n50mt\n2018 2019 2020 2021 2022 2023",
+      "keywords": [
+        "china",
+        "steel",
+        "asset",
+        "image",
+        "crude",
+        "eeees",
+        "excluding",
+        "global"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 166,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

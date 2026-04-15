@@ -26,7 +26,52 @@ keywords:
 - tariff
 - indonesia
 - last
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Coal import data for September by origin has been released and shows
+    that imports from Indonesia have remained China's primary source and Russia the
+    second largest source. Imports from Indonesia totaled 20.7 million tons, which
+    is up from August by 4.9 million
+  unit: worldscale_pct
+  values:
+  - 20.7
+  - 4.9
+  - 31.0
+  - 700000.0
+  - -3.0
+- section: Main
+  section_type: null
+  source_line: Imports from Russia totaled 7 million tons, which is down from August
+    by 1.5 million tons (-18%) but up year-on-year by 1.2 million tons (21%). Imports
+    from Russia have remained strong this year, as we have anticipated, in the months
+    since April's tariff cut (
+  unit: pct
+  values:
+  - 7.0
+  - 1.5
+  - -18.0
+  - 1.2
+  - 21.0
+  - 6.0
+  - 6.8
+  - 3.4
+- section: Main
+  section_type: null
+  source_line: No coal was imported from the Philippines last month. This has marked
+    the first month in several years that no coal was imported from the Philippines.
+    Also of note is that no coal was imported from South Africa or Colombia. September
+    has marked the eighth stra
+  unit: null
+  values:
+  - 100000.0
 regions:
 - china
 - brazil

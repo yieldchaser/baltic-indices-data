@@ -26,7 +26,46 @@ keywords:
 - economic
 - growth
 - analysts
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: cautiously_bearish
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'The Chinese economy is, after a long period of exceptional growth,
+    showing signs of a slowdown. The release of the inflation data earlier in the
+    week yet again showed the disconnect between the export-driven industry and the
+    domestic economy. The year-on-year '
+  unit: null
+  values:
+  - 9.5
+- section: Main
+  section_type: null
+  source_line: The outlook for the Chinese economy is currently dominated by mixed
+    signals. While the domestic economy continues to struggle to regain its momentum,
+    China's international trade continues to defy analysts' projections. In August,
+    Chinese exports grew by 25.6 p
+  unit: null
+  values:
+  - 25.6
+  - 2.1
+  - 2.1
+  - 35.0
+  - 1.7
+  - 58.0
+- section: Main
+  section_type: null
+  source_line: 'The Chinese property market has long been a source of concern for
+    many economists and analysts, as debt levels have been building alongside rising
+    valuations and suggesting that a property bubble has been in the making. This
+    week has also seen a major Chinese '
+  unit: null
+  values:
+  - 28.0
 regions:
 - china
 - brazil

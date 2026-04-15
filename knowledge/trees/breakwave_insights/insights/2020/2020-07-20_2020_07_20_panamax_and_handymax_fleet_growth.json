@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2020-07-20_2020_07_20_panamax_and_handymax_fleet_growth__root",
   "doc_id": "breakwave_insights_insights_2020-07-20_2020_07_20_panamax_and_handymax_fleet_growth",
   "parent_id": null,
-  "title": "Panamax And Handymax Fleet Growth",
+  "title": "Panamax and Handymax Fleet Growth",
   "section_path": [
-    "Panamax And Handymax Fleet Growth"
+    "Panamax and Handymax Fleet Growth"
   ],
-  "section_path_text": "Panamax And Handymax Fleet Growth",
+  "section_path_text": "Panamax and Handymax Fleet Growth",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\n66 dry bulk vessels were delivered last month. This is 26 more than were delivered in May and marks the largest amount of newbuildings delivered since January 2017. Last month saw the delivery of 8 handysize vessels, 22 handymax vessels, 21 panamax vessels, and 15 capesize vessels.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 402,
+  "token_count": 725,
   "source_path": "reports/breakwave/2020/2020-07-20_panamax-and-handymax-fleet-growth.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2020/7/20/panamax-and-handymax-fleet-growth",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "66 dry bulk vessels were delivered last month. This is 26 more than were delivered in May and marks the largest amount of newbuildings delivered since January 2017.",
+      "summary": "Image reference: SHIP8.jpg | assets/2020-07-20_panamax-and-handymax-fleet-growth_img_ship8_5e3015038cc6.jpg\n66 dry bulk vessels were delivered last month. This is 26 more than were delivered in May and marks the largest amount of newbuildings delivered since January 2017.",
       "keywords": [
         "capesize",
         "panamax",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 400,
+      "token_count": 438,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2020-07-20_2020_07_20_panamax_and_handymax_fleet_growth__s02_linked_asset_2020_07_20_panamax_and_handymax_fleet_growth_img_ship8_5e3015038cc6_jpg",
+      "doc_id": "breakwave_insights_insights_2020-07-20_2020_07_20_panamax_and_handymax_fleet_growth",
+      "parent_id": "breakwave_insights_insights_2020-07-20_2020_07_20_panamax_and_handymax_fleet_growth__root",
+      "title": "Linked asset: 2020-07-20_panamax-and-handymax-fleet-growth_img_ship8_5e3015038cc6.jpg",
+      "section_path": [
+        "Linked asset: 2020-07-20_panamax-and-handymax-fleet-growth_img_ship8_5e3015038cc6.jpg"
+      ],
+      "section_path_text": "Linked asset: 2020-07-20_panamax-and-handymax-fleet-growth_img_ship8_5e3015038cc6.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2020/assets/2020-07-20_panamax-and-handymax-fleet-growth_img_ship8_5e3015038cc6.jpg\n\nLinked image asset: 2020-07-20_panamax-and-handymax-fleet-growth_img_ship8_5e3015038cc6.jpg\n\nImage metadata: JPEG 1024x768 mode=RGB\n\nEmbedded info:\ncomment: CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 85\n\nOCR text:\nPs |\nDa\niE: ;\nSua Ta \"a eS f\nuu oe aia nT - bat , 4 P\n| < rs, i Reet Si oy ea\ner aN ~ \" ‘ t : we a =s,\nor rot _ pS ps\nLEA aU = ‘ \\ r\nyas = \" ™~,,\niii i »\nar: a | ‘ ' y |\nwn\n-/ i [Som es | 1 ;\njg aes, | * z=\n- a 7 PZ\n- > : p) ins,\n3 + a is io\nt a = : , aT",
+      "keywords": [
+        "panamax",
+        "handysize",
+        "asset",
+        "image",
+        "jpeg",
+        "aes",
+        "aia",
+        "bat"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 253,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

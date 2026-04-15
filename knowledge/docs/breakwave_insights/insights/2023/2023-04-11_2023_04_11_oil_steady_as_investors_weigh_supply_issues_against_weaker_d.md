@@ -28,7 +28,70 @@ keywords:
 - prices
 - last
 - data
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil was steady after rallying nearly 7% last week on OPEC's announced
+    production cuts from May. Investors are weighing supply tightness against prospects
+    of slowing demand. Market developments remained mixed with Saudi's Aramco providing
+    full contractual
+  unit: worldscale_pct
+  values:
+  - 7.0
+  - 700.0
+  - 10.36
+  - 11.1
+  - 63138.0
+  - 176414.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: European gas fell nearly 14% last week as lower prices failed to stimulate
+    demand. The mild winter is keeping gas storage levels at 56%, above the seasonal
+    average of 35%. The market is shrugging off uncertainty around a full restart
+    of LNG terminals in France
+  unit: tonnage
+  values:
+  - 14.0
+  - 56.0
+  - 35.0
+  - 4.3
+  - 2.4
+  - 1.95
+- section: Main
+  section_type: null
+  source_line: Gold prices retreated from record highs following solid US Nonfarm
+    Payroll data, which suggests the Fed will continue its tightening path to cool
+    inflation. Investors have increased their bullish bets in gold with the banking
+    crisis triggering haven buying. Ce
+  unit: null
+  values:
+  - 18.0
+- section: Main
+  section_type: null
+  source_line: 'Iron ore prices stabilised after falling 5% last week. Strong seasonal
+    demand is seeing steel inventories drawing down faster, boding well for steel
+    demand. Exports of iron ore from Brazil started recovering, with daily average
+    exports rising to 1.18mt in the '
+  unit: tonnage
+  values:
+  - 5.0
+  - 1.18
+  - 0.97
+  - 5.0
+  - 12.0
+  - 951.0
+  - 2.71
+  - 8.4
+  - 1823.0
+  - 6.0
 regions:
 - china
 - brazil

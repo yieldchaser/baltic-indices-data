@@ -26,7 +26,34 @@ keywords:
 - cut
 - european
 - energy
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil extended gains as the fallout from OPEC's aggressive output
+    cut continued. At a hastily arrange in-person meeting in Vienna, the OPEC+ alliance
+    agreed to cut current production quotas by 2mb/d. Due to some members still below
+    current quotas, the effe
+  unit: usd
+  values:
+  - 2.0
+  - 85.0
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: Zinc and aluminium climbed after the London Metal Exchange said it
+    will restrict deliveries of some Russian metal. Starting immediately, metal from
+    UMMC or its Chelyabinsk Zinc unit can only be delivered to LME warehouses if the
+    owner can prove it won't consti
+  unit: pct
+  values:
+  - 4.9
 regions:
 - china
 - brazil

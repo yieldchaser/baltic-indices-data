@@ -24,7 +24,33 @@ keywords:
 - rally
 - should
 - would
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'If a year ago, anyone suggested that the US Federal Reserve, the world''s
+    de fact central bank, would produce a triple rate hike, and that this rate hike
+    would be celebrated with a 5% rally in equities, they would probably be laughed
+    out of the room. Yet, last '
+  unit: pct
+  values:
+  - 5.0
+  - 500.0
+- section: Main
+  section_type: null
+  source_line: Expectations management matters. The rally is not attributed to the
+    rate hike, but to the Fed's suggestion that it is reaching the ‘neutral rate'.
+    This might not mean as much as investors hope for. The ‘Neutral' rate, is where
+    rates should be in a ‘normal' eco
+  unit: pct
+  values:
+  - 9.0
 regions:
 - china
 - brazil
@@ -59,7 +85,7 @@ themes:
 - investors
 - are
 - equities
-title: Monday Comment Dont Follow Pavlovs Dogs
+title: 'Monday comment: Don''t follow Pavlov''s dogs'
 vessel_classes:
 - capesize
 - panamax

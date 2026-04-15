@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-02-01_2023_02_01_shipfix_global_market_update_pkjq0__root",
   "doc_id": "breakwave_insights_insights_2023-02-01_2023_02_01_shipfix_global_market_update_pkjq0",
   "parent_id": null,
-  "title": "Shipfix Global Market Update Pkjq0",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update Pkjq0"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update Pkjq0",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nThe International Monetary Fund began the year with a few pessimistic statements regarding the outlook for the global economy from some of its leading officials, which led many to assume that the organisation was preparing the ground for a downgrade of its economic projections. The World Bank also followed suit with a downgrade of its forecast for growth in the year ahead. However, today's release of the IMF's World Economic Outlook provided an upgrade to the institution's expectations for the year, compared to the previous projections published in October last year.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1184,
+  "token_count": 1503,
   "source_path": "reports/breakwave/2023/2023-02-01_shipfix-global-market-update-pkjq0.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/2/1/shipfix-global-market-update-Pkjq0",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 191,
+      "token_count": 250,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-01_2023_02_01_shipfix_global_market_update_pkjq0__s06_linked_asset_2023_02_01_shipfix_global_market_update_pkjq0_img_unnamed_2023_02_01t130045262_e176b44f504d_png",
+      "doc_id": "breakwave_insights_insights_2023-02-01_2023_02_01_shipfix_global_market_update_pkjq0",
+      "parent_id": "breakwave_insights_insights_2023-02-01_2023_02_01_shipfix_global_market_update_pkjq0__root",
+      "title": "Linked asset: 2023-02-01_shipfix-global-market-update-pkjq0_img_unnamed-2023-02-01t130045262_e176b44f504d.png",
+      "section_path": [
+        "Linked asset: 2023-02-01_shipfix-global-market-update-pkjq0_img_unnamed-2023-02-01t130045262_e176b44f504d.png"
+      ],
+      "section_path_text": "Linked asset: 2023-02-01_shipfix-global-market-update-pkjq0_img_unnamed-2023-02-01t130045262_e176b44f504d.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-01_shipfix-global-market-update-pkjq0_img_unnamed-2023-02-01t130045262_e176b44f504d.png\n\nLinked image asset: 2023-02-01_shipfix-global-market-update-pkjq0_img_unnamed-2023-02-01t130045262_e176b44f504d.png\n\nImage metadata: PNG 1120x514 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Soybeans Discharging in China by Origin (Brazil, US and Rest of the World) ©\nein\na\n-- ae\n> = --~ = 2 = ==> _ -_-_ = Ai\nMl #1SOYABEAN/USto China im #2SOYABEAN/ECSAto China ml #3 SOYABEAN / to China",
+      "keywords": [
+        "china",
+        "brazil",
+        "grain",
+        "asset",
+        "image",
+        "cargo",
+        "discharging",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 217,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

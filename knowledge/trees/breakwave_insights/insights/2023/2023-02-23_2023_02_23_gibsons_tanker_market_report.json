@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-02-23_2023_02_23_gibsons_tanker_market_report__root",
   "doc_id": "breakwave_insights_insights_2023-02-23_2023_02_23_gibsons_tanker_market_report",
   "parent_id": null,
-  "title": "Gibsons Tanker Market Report",
+  "title": "Gibson's Tanker Market Report",
   "section_path": [
-    "Gibsons Tanker Market Report"
+    "Gibson's Tanker Market Report"
   ],
-  "section_path_text": "Gibsons Tanker Market Report",
+  "section_path_text": "Gibson's Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Driving Force\nChina's dramatic shift away from its strict zero covid policy at the end of 2022 defied expectations of a gradual reopening over the course of 2023. Inevitably fuel demand is now projected to grow strongly over the course of 2023, with the IEA predicting growth of 900kbd, whilst Refinitiv Oil Research forecasts crude imports gaining 10% year on year. However, resurgent Chinese demand raises several key questions.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 631,
+  "token_count": 869,
   "source_path": "reports/breakwave/2023/2023-02-23_gibsons-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/2/23/gibsons-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 628,
+      "token_count": 668,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-02-23_2023_02_23_gibsons_tanker_market_report__s02_linked_asset_2023_02_23_gibsons_tanker_market_report_img_128229_5866c6f953a6_png",
+      "doc_id": "breakwave_insights_insights_2023-02-23_2023_02_23_gibsons_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2023-02-23_2023_02_23_gibsons_tanker_market_report__root",
+      "title": "Linked asset: 2023-02-23_gibsons-tanker-market-report_img_128229_5866c6f953a6.png",
+      "section_path": [
+        "Linked asset: 2023-02-23_gibsons-tanker-market-report_img_128229_5866c6f953a6.png"
+      ],
+      "section_path_text": "Linked asset: 2023-02-23_gibsons-tanker-market-report_img_128229_5866c6f953a6.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-02-23_gibsons-tanker-market-report_img_128229_5866c6f953a6.png\n\nLinked image asset: 2023-02-23_gibsons-tanker-market-report_img_128229_5866c6f953a6.png\n\nImage metadata: PNG 467x389 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\n10,500\n10,000\n9,500\n9,000\n8,500\n8,000\n7,500\n7,000\n6,500\n6,000\n2017.",
+      "keywords": [
+        "asset",
+        "image",
+        "dpi",
+        "embedded",
+        "gibsons-tanker-market-report_img_128229_5866c6f953a6.png",
+        "info",
+        "linked",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 165,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

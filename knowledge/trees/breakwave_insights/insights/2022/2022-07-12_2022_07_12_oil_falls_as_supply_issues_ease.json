@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-07-12_2022_07_12_oil_falls_as_supply_issues_ease__root",
   "doc_id": "breakwave_insights_insights_2022-07-12_2022_07_12_oil_falls_as_supply_issues_ease",
   "parent_id": null,
-  "title": "Oil Falls As Supply Issues Ease",
+  "title": "Oil falls as supply issues ease",
   "section_path": [
-    "Oil Falls As Supply Issues Ease"
+    "Oil falls as supply issues ease"
   ],
-  "section_path_text": "Oil Falls As Supply Issues Ease",
+  "section_path_text": "Oil falls as supply issues ease",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA risk-off tone across markets saw commodities start the week on the back foot. Renewed outbreaks of COVID-19 in China also weighed on sentiment, while a stronger USD dampened investor appetite. Crude oil fell as supply disruptions eased and COVID in China fed into weakness across global markets.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 714,
+  "token_count": 1125,
   "source_path": "reports/breakwave/2022/2022-07-12_oil-falls-as-supply-issues-ease.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/7/12/oil-falls-as-supply-issues-ease",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 712,
+      "token_count": 758,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-07-12_2022_07_12_oil_falls_as_supply_issues_ease__s02_linked_asset_2022_07_12_oil_falls_as_supply_issues_ease_img_1657576954780_e2ac4ffdd762_png",
+      "doc_id": "breakwave_insights_insights_2022-07-12_2022_07_12_oil_falls_as_supply_issues_ease",
+      "parent_id": "breakwave_insights_insights_2022-07-12_2022_07_12_oil_falls_as_supply_issues_ease__root",
+      "title": "Linked asset: 2022-07-12_oil-falls-as-supply-issues-ease_img_1657576954780_e2ac4ffdd762.png",
+      "section_path": [
+        "Linked asset: 2022-07-12_oil-falls-as-supply-issues-ease_img_1657576954780_e2ac4ffdd762.png"
+      ],
+      "section_path_text": "Linked asset: 2022-07-12_oil-falls-as-supply-issues-ease_img_1657576954780_e2ac4ffdd762.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-07-12_oil-falls-as-supply-issues-ease_img_1657576954780_e2ac4ffdd762.png\n\nLinked image asset: 2022-07-12_oil-falls-as-supply-issues-ease_img_1657576954780_e2ac4ffdd762.png\n\nImage metadata: PNG 1556x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nFri 8-Jul Mon 11-Jul % chg Daily % chg Daily % chg\nCCI 647.86 652.30 Brent crude 106.6 -0.4% Gold 1,733 -0.5%\nPrecious 604.35 600.91 -0.6% Thermal coal 419.00 Palladium 2,136 -8.6%\nIndustrials 368.65 361.62 -1.9% JKM LNG swaps 38.84 Iron Ore 110.7. -3.2%\nBulks 546.22 536.02 -1.9% Copper 7,579 -2.8% Hogs 3,500\nAgs 384.74 396.81 Nickel 21,784 Corn 441 -0.2%\nEnergy 979.19 988.77 Aluminium 2,369 -2.4% Wheat 461",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 327,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-08-17_2023_08_17_falling_us_inventories_fails_to_excite_oil_market__root",
   "doc_id": "breakwave_insights_insights_2023-08-17_2023_08_17_falling_us_inventories_fails_to_excite_oil_market",
   "parent_id": null,
-  "title": "Falling Us Inventories Fails To Excite Oil Market",
+  "title": "Falling US inventories fails to excite oil market",
   "section_path": [
-    "Falling Us Inventories Fails To Excite Oil Market"
+    "Falling US inventories fails to excite oil market"
   ],
-  "section_path_text": "Falling Us Inventories Fails To Excite Oil Market",
+  "section_path_text": "Falling US inventories fails to excite oil market",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA risk off tone across markets weighed on sentiment across commodities, compounded by further economic weakness in China. A lack of liquidity left crude oil at the mercy of broader market moves. A selloff across equity markets triggered a risk-off tone across the energy sector.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 590,
+  "token_count": 940,
   "source_path": "reports/breakwave/2023/2023-08-17_falling-us-inventories-fails-to-excite-oil-market.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/8/17/falling-us-inventories-fails-to-excite-oil-market",
   "children": [
@@ -41,7 +41,7 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "By Daniel Hynes\nA risk off tone across markets weighed on sentiment across commodities, compounded by further economic weakness in China. A lack of liquidity left crude oil at the mercy of broader market moves.",
+      "summary": "By Daniel Hynes\nA risk off tone across markets weighed on sentiment across commodities, compounded by further economic weakness in China. Image reference: $1.jpg | assets/2023-08-17_falling-us-inventories-fails-to-excite-oil-market_img_241_11991b7461f4.jpg\nA lack of liquidity left crude oil at the mercy of broader market moves.",
       "keywords": [
         "lng",
         "china",
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 588,
+      "token_count": 630,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-08-17_2023_08_17_falling_us_inventories_fails_to_excite_oil_market__s02_linked_asset_2023_08_17_falling_us_inventories_fails_to_excite_oil_market_img_241_11991b7461f4_jpg",
+      "doc_id": "breakwave_insights_insights_2023-08-17_2023_08_17_falling_us_inventories_fails_to_excite_oil_market",
+      "parent_id": "breakwave_insights_insights_2023-08-17_2023_08_17_falling_us_inventories_fails_to_excite_oil_market__root",
+      "title": "Linked asset: 2023-08-17_falling-us-inventories-fails-to-excite-oil-market_img_241_11991b7461f4.jpg",
+      "section_path": [
+        "Linked asset: 2023-08-17_falling-us-inventories-fails-to-excite-oil-market_img_241_11991b7461f4.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-08-17_falling-us-inventories-fails-to-excite-oil-market_img_241_11991b7461f4.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-08-17_falling-us-inventories-fails-to-excite-oil-market_img_241_11991b7461f4.jpg\n\nLinked image asset: 2023-08-17_falling-us-inventories-fails-to-excite-oil-market_img_241_11991b7461f4.jpg\n\nImage metadata: PNG 1355x783 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nDaily commodity price performance\n2.0\n1.5\n1.0\n0.5\nBa\n0.0 | el\n8-05 Lt |\n-1.0\n-1.5\n-2.0\n-2.5\n-3.0\n& &SA GE %*Y TE OS GBs ® & \"S\nYG \"G \"Y, \"on \"Sy &. % Tn % Sq \"Gy SH, GH\nGs, FS \"6, % Ye, oe my CY, %, 0, \"yr % Sy, \"a, \"SO\nwy %» % .",
+      "keywords": [
+        "crude_oil",
+        "asset",
+        "image",
+        "source",
+        "anz",
+        "bloomberg",
+        "commodity",
+        "daily"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 270,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -27,7 +27,61 @@ keywords:
 - could
 - are
 - last
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'The bauxite exports of Guinea have been a real success story over
+    the last few years, with volumes more than quadrupling between 2015 and 2020 and
+    reaching 86 million tonnes last year. The volumes shipped so far this year have
+    also suggested that a new record '
+  unit: null
+  values:
+  - 2015.0
+  - 2020.0
+  - 86.0
+  - 59.0
+- section: Main
+  section_type: null
+  source_line: For China, the developments over the weekend in the West African nation
+    are particularly serious and could have significant consequences, as it has rapidly
+    become the largest supplier at the same time as the Chinese demand for imported
+    bauxite has increased si
+  unit: null
+  values:
+  - 2016.0
+  - 70.0
+  - 68.0
+  - 115.0
+  - 76.0
+  - 55.0
+- section: Main
+  section_type: null
+  source_line: It is probably difficult to exaggerate the current importance of Guinean
+    bauxite to China, especially as the ongoing diplomatic tensions between China
+    and Australia show no signs of abating. Earlier in the year, Guinea also expressed
+    the ambition of phasing in
+  unit: null
+  values:
+  - 24.0
+  - 2021.0
+  - 105.0
+  - 20.0
+- section: Main
+  section_type: null
+  source_line: Indonesian bauxite exports have recovered in recent years, following
+    the law in 2014 that banned much of the exports. However, the county's total export
+    volumes are well below what would be required to replace any large part of the
+    Chinese imports from Guinea.
+  unit: null
+  values:
+  - 2014.0
 regions:
 - china
 - brazil

@@ -28,7 +28,23 @@ keywords:
 - one
 - price
 - when
+linked_assets_discovered: 4
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 4
 market_tone: neutral
+numeric_observation_count: 1
+numeric_observations:
+- section: Freight pricing 101
+  section_type: null
+  source_line: In my previous role working for a large price reporting agency, I discovered
+    there were two types of methodologies when it came to pricing. Both were dependent
+    on the type of commodity assessed (i.e. priced). On one hand you could be working
+    in a highly liquid
+  unit: null
+  values:
+  - 2.0
 regions:
 - china
 - brazil

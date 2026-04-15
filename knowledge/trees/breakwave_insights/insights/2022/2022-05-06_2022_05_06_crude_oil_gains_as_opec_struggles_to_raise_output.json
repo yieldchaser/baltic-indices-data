@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-05-06_2022_05_06_crude_oil_gains_as_opec_struggles_to_raise_output__root",
   "doc_id": "breakwave_insights_insights_2022-05-06_2022_05_06_crude_oil_gains_as_opec_struggles_to_raise_output",
   "parent_id": null,
-  "title": "Crude Oil Gains As Opec Struggles To Raise Output",
+  "title": "Crude oil gains as OPEC struggles to raise output",
   "section_path": [
-    "Crude Oil Gains As Opec Struggles To Raise Output"
+    "Crude oil gains as OPEC struggles to raise output"
   ],
-  "section_path_text": "Crude Oil Gains As Opec Struggles To Raise Output",
+  "section_path_text": "Crude oil gains as OPEC struggles to raise output",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA gloomy economic backdrop weighed on sentiment across markets. But supply side issues in energy markets helped keep them afloat. Crude oil edged higher as the market fretted about supply.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 686,
+  "token_count": 1123,
   "source_path": "reports/breakwave/2022/2022-05-06_crude-oil-gains-as-opec-struggles-to-raise-output.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/5/6/crude-oil-gains-as-opec-struggles-to-raise-output",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 684,
+      "token_count": 738,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-05-06_2022_05_06_crude_oil_gains_as_opec_struggles_to_raise_output__s02_linked_asset_2022_05_06_crude_oil_gains_as_opec_struggles_to_raise_output_img_1651787917027_ac1e95f1e3e8_png",
+      "doc_id": "breakwave_insights_insights_2022-05-06_2022_05_06_crude_oil_gains_as_opec_struggles_to_raise_output",
+      "parent_id": "breakwave_insights_insights_2022-05-06_2022_05_06_crude_oil_gains_as_opec_struggles_to_raise_output__root",
+      "title": "Linked asset: 2022-05-06_crude-oil-gains-as-opec-struggles-to-raise-output_img_1651787917027_ac1e95f1e3e8.png",
+      "section_path": [
+        "Linked asset: 2022-05-06_crude-oil-gains-as-opec-struggles-to-raise-output_img_1651787917027_ac1e95f1e3e8.png"
+      ],
+      "section_path_text": "Linked asset: 2022-05-06_crude-oil-gains-as-opec-struggles-to-raise-output_img_1651787917027_ac1e95f1e3e8.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-05-06_crude-oil-gains-as-opec-struggles-to-raise-output_img_1651787917027_ac1e95f1e3e8.png\n\nLinked image asset: 2022-05-06_crude-oil-gains-as-opec-struggles-to-raise-output_img_1651787917027_ac1e95f1e3e8.png\n\nImage metadata: PNG 1556x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nWed 4-May -_ Thu 5-May % chg Daily % chg Daily % chg\nCCI 570.03 573.20 Brent crude 111 Gold 1,879 -0.1%\nPrecious 644.41 642.76 -0.3% Thermal coal 374.35 Palladium 2,175 -7.0%\nIndustrials 454.43 452.96 -0.3% JKM LNG swaps 24.15 Iron Ore 130.6\nBulks 657.66 656.00 -0.3% Copper 9,509 Hogs 2,250 -4.3%\nAgs 343.41 338.64 -1.4% Nickel 30,040 -1.7% Corn 451\nEnergy 797.61 815.33 Aluminium 2,888 -1.3% Wheat 527",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "crude_oil",
+        "gas",
+        "chg"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 338,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -25,7 +25,58 @@ keywords:
 - one
 - when
 - cargo
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Training a Supply and Demand ML model using historical Ballast vessels
+    in order to forecast the available tonnage in an area 3 weeks from now was optimal
+    until very recently. However, we can now feed it Ballast vessel number forecasts
+    that are being produced b
+  unit: null
+  values:
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: The fact that a Shipping or Cargo Trader may now have an ML driven
+    proprietary curve is nothing new. In the late 90s and even today Treasury departments
+    throughout most big banks had their own internal curves that they used to mark
+    their book to market for int
+  unit: null
+  values:
+  - 90.0
+- section: Main
+  section_type: null
+  source_line: The main reason for the success is because ML models need to be good
+    on average or their signals can be applied in specific higher tolerance parts
+    of the Chartering/Hedging workflow. Out of the 10-12 or so spot fixtures of a
+    Capesize Vessel in the last 12 mont
+  unit: pct
+  values:
+  - 10.0
+  - -12.0
+  - 7.0
+  - 40.0
+  - 30.0
+- section: Main
+  section_type: null
+  source_line: Business 1 has a duration of 30 days and a Time Charter Equivalent
+    of $22,000. When it is marked to market using the FFA curve it appears to be almost
+    4% below the Index, however when marked to market with the ML model forecasted
+    curve it appears to be beating
+  unit: pct
+  values:
+  - 1.0
+  - 30.0
+  - 22000.0
+  - 4.0
+  - 13.0
 regions:
 - china
 - brazil

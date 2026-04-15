@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__root",
   "doc_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce",
   "parent_id": null,
-  "title": "Dead Cats Dont Bounce",
+  "title": "Dead Cats don't bounce",
   "section_path": [
-    "Dead Cats Dont Bounce"
+    "Dead Cats don't bounce"
   ],
-  "section_path_text": "Dead Cats Dont Bounce",
+  "section_path_text": "Dead Cats don't bounce",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy George Lagarias\nLast week saw the best performing week since November 2020 for equities, after the Fed's Minutes suggested that the Fed will not be more aggressive than already anticipated. Ostensibly, everything in this move screams \"Bear Market rally\". After all, how can we call an end to the Bear Market when Quantitative Tightening, the great process to unwind some of the Fed's recent purchases, hasn't even began.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 680,
+  "token_count": 1736,
   "source_path": "reports/breakwave/2022/2022-05-31_dead-cats-dont-bounce.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/5/31/dead-cats-dont-bounce",
   "children": [
@@ -49,13 +49,125 @@
         "not",
         "are",
         "bear",
-        "after",
-        "but"
+        "image",
+        "reference"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 678,
+      "token_count": 819,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__s02_linked_asset_2022_05_31_dead_cats_dont_bounce_img_image001_93b274fe6943_png",
+      "doc_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce",
+      "parent_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__root",
+      "title": "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image001_93b274fe6943.png",
+      "section_path": [
+        "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image001_93b274fe6943.png"
+      ],
+      "section_path_text": "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image001_93b274fe6943.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-05-31_dead-cats-dont-bounce_img_image001_93b274fe6943.png\n\nLinked image asset: 2022-05-31_dead-cats-dont-bounce_img_image001_93b274fe6943.png\n\nImage metadata: PNG 1037x565 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nThe S&P 500 may have priced in a year of Quantitative Tightening\nFed B/S Assets (projections assuming full quantitative tightening), S&P 500\n9500000 Projection 5000\n8500000 4500\n7500000 4000\n6500000 3500\n5500000 3000\n4500000 2500\n3500000 2000\n2 2 2 2» Y) S S) oS © o > o ‘Yy y ta y y y iv (y y 47 Vv vy > > > ‘2\nYY y a % s » a v a v v VOM a % v a wo 1 v 1 a VY 1 v\n¥ we we ys & Roy ¥ we eo S & Ro FF we we SS & Roe Se we we y & Roy ¥ we we yy\n--Fed Assets --eS&P 500\nSource: Mazars calculations",
+      "keywords": [
+        "asset",
+        "assets",
+        "fed",
+        "image",
+        "quantitative",
+        "roy",
+        "source",
+        "tightening"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 300,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__s03_linked_asset_2022_05_31_dead_cats_dont_bounce_img_image002_7365c9b422e6_png",
+      "doc_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce",
+      "parent_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__root",
+      "title": "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image002_7365c9b422e6.png",
+      "section_path": [
+        "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image002_7365c9b422e6.png"
+      ],
+      "section_path_text": "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image002_7365c9b422e6.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-05-31_dead-cats-dont-bounce_img_image002_7365c9b422e6.png\n\nLinked image asset: 2022-05-31_dead-cats-dont-bounce_img_image002_7365c9b422e6.png\n\nImage metadata: PNG 726x568 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nUS 10 year bonds yielding more than long-term 2% inflation\n3.5\n3\n2.5\n2\n1.5\n1\n0.5\n0\n47 18 19 ‘20 ‘21 ‘22\nSource: Mazars calculations, Bloomberg\nmMazars",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "bloomberg",
+        "bonds",
+        "calculations",
+        "dead-cats-dont-bounce_img_image002_7365c9b422e6.png",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 166,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__s04_linked_asset_2022_05_31_dead_cats_dont_bounce_img_image003_fb9b5a1ffa0a_png",
+      "doc_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce",
+      "parent_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__root",
+      "title": "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image003_fb9b5a1ffa0a.png",
+      "section_path": [
+        "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image003_fb9b5a1ffa0a.png"
+      ],
+      "section_path_text": "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image003_fb9b5a1ffa0a.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-05-31_dead-cats-dont-bounce_img_image003_fb9b5a1ffa0a.png\n\nLinked image asset: 2022-05-31_dead-cats-dont-bounce_img_image003_fb9b5a1ffa0a.png\n\nImage metadata: PNG 725x708 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nThe recession clock\nen Central\nInflation Bank\ntightens\nCentral bank = Ye . Financial ,\nloosens S © hens Recession\nRecession a\nbecomes .",
+      "keywords": [
+        "recession",
+        "asset",
+        "bank",
+        "central",
+        "image",
+        "inflation",
+        "source",
+        "becomes"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 161,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__s05_linked_asset_2022_05_31_dead_cats_dont_bounce_img_image004_78e1cb089ea2_png",
+      "doc_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce",
+      "parent_id": "breakwave_insights_insights_2022-05-31_2022_05_31_dead_cats_dont_bounce__root",
+      "title": "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image004_78e1cb089ea2.png",
+      "section_path": [
+        "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image004_78e1cb089ea2.png"
+      ],
+      "section_path_text": "Linked asset: 2022-05-31_dead-cats-dont-bounce_img_image004_78e1cb089ea2.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-05-31_dead-cats-dont-bounce_img_image004_78e1cb089ea2.png\n\nLinked image asset: 2022-05-31_dead-cats-dont-bounce_img_image004_78e1cb089ea2.png\n\nImage metadata: PNG 715x570 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nUS 10 year bonds yielding more than long-term 2% inflation\n3.5\n3\n2.5\n2\n1.5\n1\n0.5\n0\n47 18 19 ‘20 ‘21 ‘22\nSource: Mazars calculations, Bloomberg\nmMazars",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "bloomberg",
+        "bonds",
+        "calculations",
+        "dead-cats-dont-bounce_img_image004_78e1cb089ea2.png",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 164,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

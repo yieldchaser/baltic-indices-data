@@ -24,7 +24,31 @@ keywords:
 - how
 - investors
 - pause
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: It is the same when thinking about interest rates. At 5%+ the question
+    isn't whether rates will tighten a bit more. The question is how many investors,
+    businesses and consumers are really ready for a credit crunch.
+  unit: pct
+  values:
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: But truth is, it doesn't matter. Fed officials have been explicit that
+    at 4.9%, the inflation number is very far from their target and will continue
+    to press on. Unemployment remains low and core consumption expenditure continues
+    to rise. Some want a pause, so
+  unit: pct
+  values:
+  - 4.9
 regions:
 - china
 - brazil

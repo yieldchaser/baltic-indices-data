@@ -29,7 +29,74 @@ keywords:
 - exports
 - imports
 - kbd
+linked_assets_discovered: 7
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 7
 market_tone: constructive
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'US seaborne crude exports have continued their dream run, with YTD
+    exports increasing by 20% over full year 2022 volumes. While exports look strong,
+    imports of crude into the US Gulf Coast have declined from a July peak amid seasonal
+    refinery turnarounds. The '
+  unit: pct
+  values:
+  - 20.0
+  - 2022.0
+- section: Exports from Houston make a comeback, steady imports from Venezuela
+  section_type: null
+  source_line: US crude/condensate exports & PADD 3 sour crude imports (mbd)
+  unit: null
+  values:
+  - 3.0
+- section: Exports from Houston make a comeback, steady imports from Venezuela
+  section_type: null
+  source_line: October remained a month of strong US crude exports, whereas autumnal
+    refinery maintenance season on the US Gulf Coast led to declines in sour crude
+    imports. Increased exports from ports of Houston, Beaumont and Freeport were driving
+    US crude exports in Octobe
+  unit: pct
+  values:
+  - 400.0
+  - 460.0
+  - 13.0
+- section: Exports from Houston make a comeback, steady imports from Venezuela
+  section_type: null
+  source_line: PADD 3 sour crude imports declined by 20% m-o-m in October with imports
+    from Saudi Arabia falling to their lowest levels in the past year. Even though
+    imports from elsewhere have declined, mainly as Gulf Coast refiners undergo their
+    seasonal turnarounds, impor
+  unit: pct
+  values:
+  - 3.0
+  - 20.0
+  - 170.0
+- section: Medium-sweet crudes from Brazil and Guyana head to Europe
+  section_type: null
+  source_line: Moving over to Europe, October data suggests an increase in crude imports
+    from the Americas. The share of medium sweet crude in these imports also increased
+    to 27% led by crudes from Brazil and Guyana. This preference for medium sweet
+    grades by European buyers
+  unit: pct
+  values:
+  - 27.0
+  - 480.0
+  - 280.0
+  - 220.0
+- section: Medium-sweet crudes from Brazil and Guyana head to Europe
+  section_type: null
+  source_line: With the Americas having been the dominant marginal supplier for a
+    tight global crude market over the last 1-2 years, the new developments in Venezuela
+    and Guyana will be welcomed. The Venezuelan sanctions relief also means more competition
+    in the Gulf Coast m
+  unit: null
+  values:
+  - 1.0
+  - 300.0
 regions:
 - china
 - brazil

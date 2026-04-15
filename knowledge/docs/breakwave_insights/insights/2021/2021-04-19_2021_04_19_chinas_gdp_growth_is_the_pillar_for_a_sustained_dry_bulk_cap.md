@@ -28,7 +28,250 @@ keywords:
 - ore
 - iron
 - per
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: cautiously_bearish
+numeric_observation_count: 21
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's economy grew at the slowest pace in more than four decades
+    last year despite a rebound after the country's coronavirus outbreak. The 2.3%
+    expansion is the lowest figure since the Chinese economy embarked on major reforms
+    in the 1970s. The National Bure
+  unit: pct
+  values:
+  - 2.3
+  - 1970.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: The figure was a marked slowdown from 2019 growth of 6.1% - itself
+    already the lowest in decades - with the country hit by weak domestic demand and
+    trade tensions.
+  unit: pct
+  values:
+  - 2019.0
+  - 6.1
+- section: Main
+  section_type: null
+  source_line: 'During the first quarter of this year Chinese GDP grew at a faster-than-expected
+    rate of 6.4 percent compared to the same period last year and ahead of the 6.3
+    per cent expected according to a Reuters poll. The figure matched the 6.4 per
+    cent growth posted in '
+  unit: null
+  values:
+  - 6.4
+  - 6.3
+  - 6.4
+  - 2018.0
+  - 6.8
+- section: Main
+  section_type: null
+  source_line: 'Premier Li Keqiang warned that there are new uncertainties ahead for
+    economy. Beijing is keen to maintain a cautious view towards the prospect for
+    the world''s second largest economy, highlighted by setting a modest economic
+    growth target of "above 6 per cent" '
+  unit: usd
+  values:
+  - 6.0
+  - 2021.0
+  - 2.3
+- section: Main
+  section_type: null
+  source_line: U.S. GDP shrank by 3.5% in 2020 as the country's uncontrolled COVID-19
+    outbreak shattered the economy. China, meanwhile, largely contained the virus
+    and became the only major economy to report economic growth last year. But now,
+    the U.S. is pairing its $1.9 tr
+  unit: pct
+  values:
+  - 3.5
+  - 2020.0
+  - 19.0
+  - 1.9
+  - 1.9
+  - 45.0
+  - 1976.0
+  - 5.4
+  - -1.6
+- section: Main
+  section_type: null
+  source_line: Whether it's 6% or 8% GDP growth, we do know that China is going to
+    overwhelmingly be the best growth story in the global economy. Next year, the
+    U.S. presumably will start to bounce back. In 2021-this is unlikely but possible-the
+    U.S. could grow more than Chi
+  unit: pct
+  values:
+  - 6.0
+  - 8.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: Economists have different figures for when they think China in real
+    terms-the Chinese GDP-will overtake the United States. 2028 maybe the year for
+    China that will overtake the United States.
+  unit: null
+  values:
+  - 2028.0
+- section: Main
+  section_type: null
+  source_line: The U.S.'s $1.9 trillion package actually prolongs the time in which
+    China will actually surpass the U.S. Because that stimulus package is not a one-year
+    package, it is a 10-year package. That's going to bring growth to the U.S. for
+    quite some time. It will al
+  unit: usd
+  values:
+  - 1.9
+  - 10.0
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: The challenge for the dry bulk shipping demand is that although China
+    has a GDP growth target for 2021 of "above 6%, ", this is below the market consensus
+    of 7%-9%, indicating that stable economic growth, deleveraging and decarbonizing
+    of the economy will be p
+  unit: pct
+  values:
+  - 2021.0
+  - 6.0
+  - 7.0
+  - -9.0
+- section: Main
+  section_type: null
+  source_line: New five-year plan for 2021-25
+  unit: null
+  values:
+  - 2021.0
+  - -25.0
+- section: Main
+  section_type: null
+  source_line: 'Steel / iron ore : The country pledged to improve its reserve security
+    capabilities and conduct a new round of ore prospecting in the next five years,
+    according to the plan, which serves as a blueprint for economic and social development
+    between 2021 and 2025.'
+  unit: null
+  values:
+  - 2021.0
+  - 2025.0
+  - 2025.0
+- section: Main
+  section_type: null
+  source_line: For the steel sector, China vowed to promote green transformation.
+    China aims to complete ultra-low emission upgrade for 530-million tonnes of steel
+    capacity and clean production upgrade for 850-million tons of cement and for 460-million
+    tons of coke capacity,
+  unit: null
+  values:
+  - 530.0
+  - 850.0
+  - 460.0
+- section: Main
+  section_type: null
+  source_line: 'Around 620-million tons of crude steel capacity had already been upgraded
+    to ultra-low emissions or were in the process of being upgraded by the end of
+    2020. For 2021, China said it will continue to push forward supply-side reform
+    and mergers and acquisitions '
+  unit: null
+  values:
+  - 620.0
+  - 2020.0
+  - 2021.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: 'Coal power : China will be investing far more in coal power over the
+    next five years that only modestly increased renewable ambitions. Environmentalists
+    had been hoping China''s five-year NDP would provide a roadmap towards carbon
+    neutrality by 2060. However, t'
+  unit: worldscale_pct
+  values:
+  - 2060.0
+  - 18.0
+  - 6.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: In April, news came to light for a huge stake in iron ore mine in Guinea
+    that may cut China's dependence on Australia. The Simandou mountains, a 110km
+    (68-mile) range deep in the interior of southeastern Guinea, is home to the world's
+    biggest untapped supply o
+  unit: null
+  values:
+  - 110.0
+  - 68.0
+  - 2.4
+  - 65.5
+  - 60.0
+- section: Main
+  section_type: null
+  source_line: The current dry bulk fundamentals appear alluring for the current year
+    as market expectations indicate demand growth for dry bulk shipping to total almost
+    3x the growth in net new supply, and although utilization is still well below
+    the record high levels of t
+  unit: null
+  values:
+  - 3.0
+  - 2000.0
+- section: Main
+  section_type: null
+  source_line: During March, imports of iron ore in China have jumped a whopping 19%
+    to 102.11 million tonnes in March vs the prior year according to Tuesday's official
+    customs data. A Reuters report highlighted that world's top base metal and iron
+    ore consumer brought in 28
+  unit: worldscale_pct
+  values:
+  - 19.0
+  - 102.11
+  - 283.44
+  - 8.0
+- section: Main
+  section_type: null
+  source_line: 'However, in the longer term, the Chinese steel industry is very emissions
+    heavy, and with China''s commitments to peak carbon emissions by 2030, and reach
+    carbon neutrality by 2060, the steel-making industry will not be able to escape
+    changes combined with the '
+  unit: null
+  values:
+  - 2030.0
+  - 2060.0
+- section: Main
+  section_type: null
+  source_line: In a sign of falling appetite in terms of volume alone, shipments of
+    iron ore from Australia to China have dropped every month since September. In
+    February, imports stood at 51.5m tonnes, compared with 70.6m in July, according
+    to Census and Economic Informatio
+  unit: null
+  values:
+  - 51.5
+  - 70.6
+- section: Main
+  section_type: null
+  source_line: But the value of iron ore shipments from Australia in February hit
+    $7.8bn, its highest level for any month on record, CEIC data shows, due to a surge
+    in the price of commodities. Australia also faces competition, particularly from
+    Brazil, where shipments are u
+  unit: usd
+  values:
+  - 7.8
+  - 19.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: S&P Global Platts expects steel demand from the construction sector
+    to remain high in 2021, even in the face of government pressure. But in a recent
+    note, it said that urbanisation, which had been the "core driver of China's property
+    development and steel cons
+  unit: null
+  values:
+  - 2021.0
+  - 60.0
+  - 60.0
+  - 2019.0
+  - 70.0
+  - 2030.0
 regions:
 - china
 - brazil

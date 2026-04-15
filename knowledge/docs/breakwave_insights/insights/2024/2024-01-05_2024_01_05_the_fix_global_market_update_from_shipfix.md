@@ -27,7 +27,215 @@ keywords:
 - europe
 - singapore
 - iron_ore
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 1
+linked_assets_mirrored: 1
+linked_assets_skipped: 2
 market_tone: cautiously_bearish
+numeric_observation_count: 19
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: The past few weeks have been challenging for the China bulls. Much
+    of the data released have suggested that the world's second-largest economy will
+    continue to face significant headwinds. Among other things, the reading for the
+    official PMI for the country's m
+  unit: null
+  values:
+  - 49.0
+  - 50.4
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: In the midst of the rather gloomy data, Caixin's alternative PMI data
+    delivered some glimmers of hope for the Chinese economy in the near term. The
+    indicators for the manufacturing and non-manufacturing sectors beat consensus
+    expectations and remained in expan
+  unit: null
+  values:
+  - 50.8
+  - 52.9
+  - 51.5
+- section: Commodity Markets
+  section_type: null
+  source_line: After recovering some of the losses sustained during December's final
+    week on Wednesday amid rising tensions in the Middle East, crude oil prices lost
+    their positive momentum yesterday. Rising US inventories signalled weaker demand
+    and contributed to the shift
+  unit: null
+  values:
+  - 0.8
+  - 77.59
+- section: Commodity Markets
+  section_type: null
+  source_line: Forecasts that the cold weather in Northern Europe will move south
+    have contributed to higher natural gas prices in the continent this week. However,
+    a solid flow of LNG imports and high inventory levels have blunted the impact
+    of the higher demand. The front-
+  unit: null
+  values:
+  - 33.41
+  - 1.9
+- section: Commodity Markets
+  section_type: null
+  source_line: The coal prices were also supported by increasing demand amid lower
+    temperatures in the Northern Hemisphere. The Newcastle futures for delivery next
+    month rose by 1.7 per cent, settling at 129.20 dollars per tonne. However, gains
+    were even more extensive in Eu
+  unit: null
+  values:
+  - 1.7
+  - 129.2
+  - 4.4
+  - 108.3
+- section: Commodity Markets
+  section_type: null
+  source_line: Iron ore lost its upward momentum yesterday following three sessions
+    in the black. Still, the February contracts listed on the SGX remained near an
+    eighteen-month high, as traders expected that more Chinese support for the economy
+    would continue to fuel the co
+  unit: null
+  values:
+  - 1.1
+  - 141.14
+- section: Commodity Markets
+  section_type: null
+  source_line: Despite a weaker dollar, base metals faced headwinds yesterday amid
+    weak Chinese economic data in recent days. The three-month copper contracts listed
+    on the LME shed 0.6 per cent, while the aluminium contracts dropped by 1.4 per
+    cent. However, zinc and nickel
+  unit: null
+  values:
+  - 0.6
+  - 1.4
+- section: Commodity Markets
+  section_type: null
+  source_line: The grain and oilseed futures listed on the CBOT experienced a mixed
+    session on Thursday. The March wheat futures jumped by 2.2 per cent amid reports
+    of high US exports. The corn contracts had less luck and advanced by a quarter
+    of a per cent. In contrast, the
+  unit: null
+  values:
+  - 2.2
+  - 0.7
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: 'Yesterday, the BDI shed 0.2 per cent as the Capesize sub-index continued
+    to rise while the gauges for the smaller segments remained in the red. The freight
+    rate indicator for the largest vessels rose by 2.3 per cent amid robust cargo
+    order volumes, especially '
+  unit: null
+  values:
+  - 0.2
+  - 2.3
+  - 4.5
+  - 2.8
+  - 3.9
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: The Baltic Exchange's wet spot freight indices also had a day of mixed
+    fortunes on Thursday. The index for the dirty tankers rose by 2.5 per cent, with
+    the tensions in the Middle East contributing to the improving sentiments. In contrast,
+    the gauge for the cle
+  unit: null
+  values:
+  - 2.5
+  - 5.1
+  - 1.4
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: After a few days with red dominating the price screens, bunker fuel
+    prices recovered somewhat yesterday despite the downward pressure on crude oil
+    prices. VLSFO advanced by 1.1 per cent in Singapore, while the gains were more
+    significant in Houston and Rotterd
+  unit: null
+  values:
+  - 1.1
+  - 1.9
+  - 2.6
+  - 1.9
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: 'After an absence of more than one and a half years, China reintroduced
+    tariffs on Russian coal imports at the beginning of the month. The levies were
+    suspended in May 2022 to safeguard against supply disruptions in the wake of the
+    Russian invasion of Ukraine. '
+  unit: null
+  values:
+  - 2022.0
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: Chinese imports of Russian coal over the past year are likely to have
+    reached 100 million tonnes. However, after a peak in June, monthly import volumes
+    trended lower throughout the remainder of the year as Russia's price advantage
+    came under pressure. Shipfix'
+  unit: null
+  values:
+  - 100.0
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: Following a limited rebound during the third quarter, cargo order volumes
+    for Russian coal bound for China trended lower during the year's final months.
+    The development suggests that actual Chinese imports of Russian coal will continue
+    to decline in the coming
+  unit: null
+  values:
+  - 1.9
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: 'Image reference: $1.jpg.png | assets/2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png'
+  unit: usd
+  values:
+  - 1.0
+  - 2024.0
+  - -1.0
+  - -5.0
+  - 241.0
+  - 39.0
+  - 1.0
+  - 7.0
+- section: 'Linked asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png'
+  unit: null
+  values:
+  - 2024.0
+  - -1.0
+  - -5.0
+  - 241.0
+  - 39.0
+  - 1.0
+  - 7.0
+- section: 'Linked asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1120x633 mode=RGBA'
+  unit: null
+  values:
+  - 1120.0
+  - 33.0
+- section: 'Linked asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png'
+  section_type: linked_image_asset
+  source_line: 'dpi: (95.9866, 95.9866)'
+  unit: null
+  values:
+  - 95.9866
+  - 95.9866
+- section: 'Linked asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png'
+  section_type: linked_image_asset
+  source_line: Dec-22 Jan-23 Feb-23 Mar-23 Apr-23. May-23 Jun-23. Jul-23. Aug-23 |
+    Sep-23 Oct23 Nov-23 Dec-23
+  unit: null
+  values:
+  - 22.0
+  - 23.0
+  - 23.0
+  - 23.0
+  - 23.0
+  - 23.0
+  - 23.0
+  - 23.0
+  - 23.0
+  - 23.0
 regions:
 - china
 - brazil
@@ -38,7 +246,7 @@ regions:
 - west_africa
 - europe
 - singapore
-section_count: 5
+section_count: 6
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2024/2024-01-05_the-fix-global-market-update-from-shipfix.html
@@ -57,7 +265,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: The Fix Global Market Update From Shipfix
+title: The Fix - Global Market Update from Shipfix
 vessel_classes:
 - capesize
 - panamax
@@ -102,4 +310,31 @@ Unlike the Russian supplies, coal imports from Indonesia and Australia are exemp
 Chinese imports of Russian coal over the past year are likely to have reached 100 million tonnes. However, after a peak in June, monthly import volumes trended lower throughout the remainder of the year as Russia's price advantage came under pressure. Shipfix's forward-looking cargo order data recorded robust volumes during the early parts of the year, correctly predicting the high imports during the first half of the second quarter.
 Following a limited rebound during the third quarter, cargo order volumes for Russian coal bound for China trended lower during the year's final months. The development suggests that actual Chinese imports of Russian coal will continue to decline in the coming months. The weaker demand for seaborne transportation of Russian coal to Chinese ports has weighed heavily on ordering activities for cargoes from Russia's Far East, with spot volumes dropping to 1.9 million tonnes in December. However, it has also led to a virtual collapse in demand for shipments from more distant Russian shores.
 The weaker order volumes have affected all vessel segments negatively, with the effective disappearance of the longer voyages adding to the decline in tonne-mile demand. However, should the reintroduction of the tariffs lead to Chinese buyers sourcing more of their coal in Indonesia and Australia, the impact on freight rates is likely to be limited.
+Image reference: $1.jpg.png | assets/2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png
 Data Source: Shipfix
+
+## Linked asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png
+Source asset: reports/breakwave/2024/assets/2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png
+
+Linked image asset: 2024-01-05_the-fix-global-market-update-from-shipfix_img_241jpg_39d61f807cf9.png
+
+Image metadata: PNG 1120x633 mode=RGBA
+
+Embedded info:
+dpi: (95.9866, 95.9866)
+
+OCR text:
+Monthly Cargo Order Volumes (TCT & Voyage) for Russian Coal Bound for China by Loading Region
+Bi Arctic @ Baltic M@ Black Sea M™ Far East
+8
+6
+3
+5
+S 4
+©
+s
+=
+2
+°
+Dec-22 Jan-23 Feb-23 Mar-23 Apr-23. May-23 Jun-23. Jul-23. Aug-23 | Sep-23 Oct23 Nov-23 Dec-23
+Data source: Shipfix

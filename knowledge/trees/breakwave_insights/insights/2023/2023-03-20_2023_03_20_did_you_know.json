@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know__root",
   "doc_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know",
   "parent_id": null,
-  "title": "Did You Know",
+  "title": "Did you know?",
   "section_path": [
-    "Did You Know"
+    "Did you know?"
   ],
-  "section_path_text": "Did You Know",
+  "section_path_text": "Did you know?",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nNamed for the Persian prophet Zarathustra, the world's first tanker ship - the Zoroaster tanker was put into operation in the year 1878. The tanker ship was built with steel while its oil tanker holds were built of iron. Prior to the use of tanker ships, oil was transported by a crude method across water channels, which caused problems, and that's why it was essential the creation of a new, fast and safe way of transport.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 170,
+  "token_count": 842,
   "source_path": "reports/breakwave/2023/2023-03-20_did-you-know.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/3/20/did-you-know",
   "children": [
@@ -41,20 +41,20 @@
       "section_path_text": "Main",
       "level": 1,
       "ordinal": 1,
-      "summary": "Named for the Persian prophet Zarathustra, the world's first tanker ship - the Zoroaster tanker was put into operation in the year 1878. The tanker ship was built with steel while its oil tanker holds were built of iron.",
+      "summary": "Image reference: 1 (4).png | assets/2023-03-20_did-you-know_img_128429_ee65bb836fa8.png\nNamed for the Persian prophet Zarathustra, the world's first tanker ship - the Zoroaster tanker was put into operation in the year 1878. The tanker ship was built with steel while its oil tanker holds were built of iron.",
       "keywords": [
         "crude_oil",
         "steel",
         "was",
         "built",
+        "image",
         "oil",
-        "ship",
-        "caused",
-        "channels"
+        "reference",
+        "ship"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 93,
+      "token_count": 174,
       "section_type": null,
       "children": []
     },
@@ -77,13 +77,97 @@
         "oil",
         "fields",
         "assets",
-        "between",
-        "built"
+        "assets/2023-03-20_did-you-know_img_128229_c08440bac04e.png",
+        "between"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 58,
+      "token_count": 91,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know__s03_linked_asset_2023_03_20_did_you_know_img_128429_ee65bb836fa8_png",
+      "doc_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know__root",
+      "title": "Linked asset: 2023-03-20_did-you-know_img_128429_ee65bb836fa8.png",
+      "section_path": [
+        "Linked asset: 2023-03-20_did-you-know_img_128429_ee65bb836fa8.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-20_did-you-know_img_128429_ee65bb836fa8.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-20_did-you-know_img_128429_ee65bb836fa8.png\n\nLinked image asset: 2023-03-20_did-you-know_img_128429_ee65bb836fa8.png\n\nImage metadata: PNG 844x316 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nDID YOU KNOW ? The name and the backstory of the world's first tanker?",
+      "keywords": [
+        "asset",
+        "image",
+        "backstory",
+        "did",
+        "did-you-know_img_128429_ee65bb836fa8.png",
+        "dpi",
+        "embedded",
+        "first"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 112,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know__s04_linked_asset_2023_03_20_did_you_know_img_142_235_nobel_zoraster_50a295df9c29_jpg",
+      "doc_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know__root",
+      "title": "Linked asset: 2023-03-20_did-you-know_img_142-235-nobel-zoraster_50a295df9c29.jpg",
+      "section_path": [
+        "Linked asset: 2023-03-20_did-you-know_img_142-235-nobel-zoraster_50a295df9c29.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-03-20_did-you-know_img_142-235-nobel-zoraster_50a295df9c29.jpg",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-20_did-you-know_img_142-235-nobel-zoraster_50a295df9c29.jpg\n\nLinked image asset: 2023-03-20_did-you-know_img_142-235-nobel-zoraster_50a295df9c29.jpg\n\nImage metadata: JPEG 432x262 mode=RGB\n\nOCR text:\n/ Cee u\n)\n; fa a $y : { s\nPar ‘ gS ae apt |- ee ~\ner | ee Sa |\n= - - is oa\n--- : 2 = 2 \"AZERicom_",
+      "keywords": [
+        "asset",
+        "image",
+        "apt",
+        "azericom",
+        "cee",
+        "did-you-know_img_142-235-nobel-zoraster_50a295df9c29.jpg",
+        "jpeg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know__s05_linked_asset_2023_03_20_did_you_know_img_128229_c08440bac04e_png",
+      "doc_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know",
+      "parent_id": "breakwave_insights_insights_2023-03-20_2023_03_20_did_you_know__root",
+      "title": "Linked asset: 2023-03-20_did-you-know_img_128229_c08440bac04e.png",
+      "section_path": [
+        "Linked asset: 2023-03-20_did-you-know_img_128229_c08440bac04e.png"
+      ],
+      "section_path_text": "Linked asset: 2023-03-20_did-you-know_img_128229_c08440bac04e.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-03-20_did-you-know_img_128229_c08440bac04e.png\n\nLinked image asset: 2023-03-20_did-you-know_img_128229_c08440bac04e.png\n\nImage metadata: PNG 930x689 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nOil Product Production: From Extraction to Distribution\nOil companies Refineries are\nextract crude oil industrial plants that Rens\nfrom underground & process crude into\nunderwater oil fields forms of oil products vane lyofconsumers\nFn een 1 +s aes |\n=- 1 yo ! Ale | ee fi dol i] ee ft ab\n1\n=r eZ.",
+      "keywords": [
+        "crude_oil",
+        "products",
+        "oil",
+        "crude",
+        "asset",
+        "ez.",
+        "fuel",
+        "image"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

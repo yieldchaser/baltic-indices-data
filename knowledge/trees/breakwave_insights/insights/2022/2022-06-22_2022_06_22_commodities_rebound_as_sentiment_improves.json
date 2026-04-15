@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-06-22_2022_06_22_commodities_rebound_as_sentiment_improves__root",
   "doc_id": "breakwave_insights_insights_2022-06-22_2022_06_22_commodities_rebound_as_sentiment_improves",
   "parent_id": null,
-  "title": "Commodities Rebound As Sentiment Improves",
+  "title": "Commodities rebound as sentiment improves",
   "section_path": [
-    "Commodities Rebound As Sentiment Improves"
+    "Commodities rebound as sentiment improves"
   ],
-  "section_path_text": "Commodities Rebound As Sentiment Improves",
+  "section_path_text": "Commodities rebound as sentiment improves",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nAn improving mood across markets saw commodity markets stabilise after the recent sell-off. The improving sentiment saw metals push higher, while energy remained well bid amid supply side issues. Base metals rebounded as sentiment improved across commodity markets.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 728,
+  "token_count": 1130,
   "source_path": "reports/breakwave/2022/2022-06-22_commodities-rebound-as-sentiment-improves.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/6/22/commodities-rebound-as-sentiment-improves",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 726,
+      "token_count": 771,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-22_2022_06_22_commodities_rebound_as_sentiment_improves__s02_linked_asset_2022_06_22_commodities_rebound_as_sentiment_improves_img_1655849130006_ce825930ee37_png",
+      "doc_id": "breakwave_insights_insights_2022-06-22_2022_06_22_commodities_rebound_as_sentiment_improves",
+      "parent_id": "breakwave_insights_insights_2022-06-22_2022_06_22_commodities_rebound_as_sentiment_improves__root",
+      "title": "Linked asset: 2022-06-22_commodities-rebound-as-sentiment-improves_img_1655849130006_ce825930ee37.png",
+      "section_path": [
+        "Linked asset: 2022-06-22_commodities-rebound-as-sentiment-improves_img_1655849130006_ce825930ee37.png"
+      ],
+      "section_path_text": "Linked asset: 2022-06-22_commodities-rebound-as-sentiment-improves_img_1655849130006_ce825930ee37.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-22_commodities-rebound-as-sentiment-improves_img_1655849130006_ce825930ee37.png\n\nLinked image asset: 2022-06-22_commodities-rebound-as-sentiment-improves_img_1655849130006_ce825930ee37.png\n\nImage metadata: PNG 878x249 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nMon 20-Jun Tue 21-Jun % chg Daily % chg Daily % chg\nccl 551.74 551.07 -0.1% Brent crude 114.9 Gold 1,833 -0.3%\nPrecious 628.44 626.59 -0.3% Thermal coal 390.00 -0.7% Palladium 1,854 -20.7%\nIndustrials 415.87 417.64 JKM LNG swaps) 37.33 Iron Ore 112.8 -2.3%\nBulks 587.89 581.96 -1.0% Copper 9,004 Hogs 2,600\nAgs 350.42 353.17 Nickel 25,901 com 447 0.0%\nEnergy 797.96 796.35 -0.2% Aluminium 2,524 Wheat 514",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 320,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

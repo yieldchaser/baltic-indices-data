@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-10-02_2023_10_02_improvement_in_chinese_consumer_spending__root",
   "doc_id": "breakwave_insights_insights_2023-10-02_2023_10_02_improvement_in_chinese_consumer_spending",
   "parent_id": null,
-  "title": "Improvement In Chinese Consumer Spending",
+  "title": "Improvement in Chinese Consumer Spending",
   "section_path": [
-    "Improvement In Chinese Consumer Spending"
+    "Improvement in Chinese Consumer Spending"
   ],
-  "section_path_text": "Improvement In Chinese Consumer Spending",
+  "section_path_text": "Improvement in Chinese Consumer Spending",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nChina's August retail sales data was recently released and showed year-on-year growth of 4.6%. This is much higher than the 2.5% growth that was reported in July (July's 2.5% growth was the lowest reported all year) and it marks the largest growth seen since May. Noteworthy is that the 4.6% growth also came in much stronger than consensus was expecting (consensus was that August would again see growth of only 2.5% as was seen in July).",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 230,
+  "token_count": 440,
   "source_path": "reports/breakwave/2023/2023-10-02_improvement-in-chinese-consumer-spending.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/10/2/improvement-in-chinese-consumer-spending",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 228,
+      "token_count": 270,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-10-02_2023_10_02_improvement_in_chinese_consumer_spending__s02_linked_asset_2023_10_02_improvement_in_chinese_consumer_spending_img_chart1288329_cdcbb177afa8_jpg",
+      "doc_id": "breakwave_insights_insights_2023-10-02_2023_10_02_improvement_in_chinese_consumer_spending",
+      "parent_id": "breakwave_insights_insights_2023-10-02_2023_10_02_improvement_in_chinese_consumer_spending__root",
+      "title": "Linked asset: 2023-10-02_improvement-in-chinese-consumer-spending_img_chart1288329_cdcbb177afa8.jpg",
+      "section_path": [
+        "Linked asset: 2023-10-02_improvement-in-chinese-consumer-spending_img_chart1288329_cdcbb177afa8.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-10-02_improvement-in-chinese-consumer-spending_img_chart1288329_cdcbb177afa8.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-10-02_improvement-in-chinese-consumer-spending_img_chart1288329_cdcbb177afa8.jpg\n\nLinked image asset: 2023-10-02_improvement-in-chinese-consumer-spending_img_chart1288329_cdcbb177afa8.jpg\n\nImage metadata: JPEG 597x316 mode=RGB\n\nOCR text:\nChinese Retail Sales Growth (2022 - 2023)\n20%\n10%\n0%\n10%\n220% eee\nJan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug",
+      "keywords": [
+        "china",
+        "apr",
+        "asset",
+        "aug",
+        "feb",
+        "image",
+        "jan",
+        "jul"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 135,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

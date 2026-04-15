@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-09-16_2022_09_16_gold_slumps_amid_the_spectre_of_more_aggressive_rate_hikes__root",
   "doc_id": "breakwave_insights_insights_2022-09-16_2022_09_16_gold_slumps_amid_the_spectre_of_more_aggressive_rate_hikes",
   "parent_id": null,
-  "title": "Gold Slumps Amid The Spectre Of More Aggressive Rate Hikes",
+  "title": "Gold slumps amid the spectre of more aggressive rate hikes",
   "section_path": [
-    "Gold Slumps Amid The Spectre Of More Aggressive Rate Hikes"
+    "Gold slumps amid the spectre of more aggressive rate hikes"
   ],
-  "section_path_text": "Gold Slumps Amid The Spectre Of More Aggressive Rate Hikes",
+  "section_path_text": "Gold slumps amid the spectre of more aggressive rate hikes",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nCommodity markets suffered further losses as mixed economic data did nothing to change expectations of further aggressive hikes by the Fed. A stronger USD also weighed on investor appetite. Gold slumped amid expectations of more aggressive rate hikes by the Fed.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 721,
+  "token_count": 1165,
   "source_path": "reports/breakwave/2022/2022-09-16_gold-slumps-amid-the-spectre-of-more-aggressive-rate-hikes.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/16/gold-slumps-amid-the-spectre-of-more-aggressive-rate-hikes",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 719,
+      "token_count": 769,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-16_2022_09_16_gold_slumps_amid_the_spectre_of_more_aggressive_rate_hikes__s02_linked_asset_2022_09_16_gold_slumps_amid_the_spectre_of_more_aggressive_rate_hikes_img_1663278664913_6ff515366022_png",
+      "doc_id": "breakwave_insights_insights_2022-09-16_2022_09_16_gold_slumps_amid_the_spectre_of_more_aggressive_rate_hikes",
+      "parent_id": "breakwave_insights_insights_2022-09-16_2022_09_16_gold_slumps_amid_the_spectre_of_more_aggressive_rate_hikes__root",
+      "title": "Linked asset: 2022-09-16_gold-slumps-amid-the-spectre-of-more-aggressive-rate-hikes_img_1663278664913_6ff515366022.png",
+      "section_path": [
+        "Linked asset: 2022-09-16_gold-slumps-amid-the-spectre-of-more-aggressive-rate-hikes_img_1663278664913_6ff515366022.png"
+      ],
+      "section_path_text": "Linked asset: 2022-09-16_gold-slumps-amid-the-spectre-of-more-aggressive-rate-hikes_img_1663278664913_6ff515366022.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-16_gold-slumps-amid-the-spectre-of-more-aggressive-rate-hikes_img_1663278664913_6ff515366022.png\n\nLinked image asset: 2022-09-16_gold-slumps-amid-the-spectre-of-more-aggressive-rate-hikes_img_1663278664913_6ff515366022.png\n\nImage metadata: PNG 1578x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nWed 14-Sep Thu 15-Sep % chg Daily % chg Daily % chg\nccI 654.57 652.22 -0.4% Brent crude 90.76 -3.5% Gold 1,662 -2.1%\nPrecious 589.81 577.54 -2.1% Thermal coal 445.50 Palladium 2,131 -8.8%\nIndustrials 372.24 369.33 -0.8% JKM LNG swaps 53.51 Iron Ore 103.5\nBulks 522.65 522.91 Copper 7,852 -0.6% Hogs 3,300 0.0%\nAgs 375.78 375.27 -0.1% Nickel 23,096 -4.5% Corn 405 -0.5%\nEnergy 1014.30 1010.43 -0.4% Aluminium 2,300 Wheat 436 -0.5%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 352,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

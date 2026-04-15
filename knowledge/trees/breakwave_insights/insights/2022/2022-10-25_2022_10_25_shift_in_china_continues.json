@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 360,
+  "token_count": 775,
   "source_path": "reports/breakwave/2022/2022-10-25_shift-in-china-continues.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/10/25/shift-in-china-continues",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 358,
+      "token_count": 442,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-25_2022_10_25_shift_in_china_continues__s02_linked_asset_2022_10_25_shift_in_china_continues_img_chart1285729_0e1a2a564e4b_jpg",
+      "doc_id": "breakwave_insights_insights_2022-10-25_2022_10_25_shift_in_china_continues",
+      "parent_id": "breakwave_insights_insights_2022-10-25_2022_10_25_shift_in_china_continues__root",
+      "title": "Linked asset: 2022-10-25_shift-in-china-continues_img_chart1285729_0e1a2a564e4b.jpg",
+      "section_path": [
+        "Linked asset: 2022-10-25_shift-in-china-continues_img_chart1285729_0e1a2a564e4b.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-10-25_shift-in-china-continues_img_chart1285729_0e1a2a564e4b.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-25_shift-in-china-continues_img_chart1285729_0e1a2a564e4b.jpg\n\nLinked image asset: 2022-10-25_shift-in-china-continues_img_chart1285729_0e1a2a564e4b.jpg\n\nImage metadata: JPEG 693x287 mode=RGB\n\nOCR text:\nChinese Bank Loans (2019 - 2022)\n4000\n3000\n2000\n1000\n0\n2019 2020 2021 2022\nUnit: Billion yuan",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "bank",
+        "billion",
+        "chinese",
+        "jpeg",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 135,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-10-25_2022_10_25_shift_in_china_continues__s03_linked_asset_2022_10_25_shift_in_china_continues_img_chart2284929_049025aa3fdd_jpg",
+      "doc_id": "breakwave_insights_insights_2022-10-25_2022_10_25_shift_in_china_continues",
+      "parent_id": "breakwave_insights_insights_2022-10-25_2022_10_25_shift_in_china_continues__root",
+      "title": "Linked asset: 2022-10-25_shift-in-china-continues_img_chart2284929_049025aa3fdd.jpg",
+      "section_path": [
+        "Linked asset: 2022-10-25_shift-in-china-continues_img_chart2284929_049025aa3fdd.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-10-25_shift-in-china-continues_img_chart2284929_049025aa3fdd.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-10-25_shift-in-china-continues_img_chart2284929_049025aa3fdd.jpg\n\nLinked image asset: 2022-10-25_shift-in-china-continues_img_chart2284929_049025aa3fdd.jpg\n\nImage metadata: JPEG 693x272 mode=RGB\n\nOCR text:\nYear-On-Year Outstanding Loan Growth (2019 - 2022)\n14%\n13%\n12%\n1%\n10% -§__-S A _ _\n2019 2020 2021 2022",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "growth",
+        "jpeg",
+        "linked",
+        "loan",
+        "metadata"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 129,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

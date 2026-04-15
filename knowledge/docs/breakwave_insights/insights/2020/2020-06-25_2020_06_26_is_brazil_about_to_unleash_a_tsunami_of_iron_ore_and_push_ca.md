@@ -28,7 +28,58 @@ keywords:
 - year
 - exports
 - expects
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'COVID-19 has thrown some cold water on market''s expectations for
+    significant increases in bulk exports, and more specifically for iron ore. Although
+    soybean export volumes to China already set new highs this year, the futures curve
+    in Capesize rates points to '
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: To that subject, Bloomberg comes with some comments that seem contradictory
+    to such market expectations. Quoting Credit Suisse analysts, Bloomberg says that
+    Vale expects to meet its annual guidance of 310-330 million tons of iron ore and
+    thus Vale expects weak
+  unit: null
+  values:
+  - 310.0
+  - -330.0
+- section: Main
+  section_type: null
+  source_line: Vale SA expects to navigate surging Covid-19 infections in Brazil to
+    achieve its production guidance this year and sees output bouncing back significantly
+    in 2021 as the company recovers from tailings dam disasters, Credit Suisse Group
+    AG analysts wrote in a r
+  unit: null
+  values:
+  - 19.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: Finally, such an outcome is difficult to envision in the current state.
+    After all, rates have surged from about 3,000/day to almost 30,000/day in about
+    a month, and that has led to a lot of skepticism about the sustainability of the
+    strength in Capesize rates.
+  unit: usd
+  values:
+  - 3000.0
+  - 30000.0
+  - 100.0
+  - 98.0
+  - 101.0
+  - 101.0
+  - 98.0
 regions:
 - china
 - brazil

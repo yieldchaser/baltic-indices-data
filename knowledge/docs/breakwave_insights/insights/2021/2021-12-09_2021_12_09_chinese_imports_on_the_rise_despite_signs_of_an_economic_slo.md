@@ -27,7 +27,55 @@ keywords:
 - chinese
 - cent
 - per
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The Chinese central bank, the People's Bank of China, moved swiftly
+    following Premier Li Keqiang's suggestion to cut the major commercial banks' reserve
+    requirement ratio (RRR) at an appropriate time. The reduction is the second of
+    the year and highlights Beij
+  unit: null
+  values:
+  - 1.2
+  - 188.0
+- section: Main
+  section_type: null
+  source_line: Despite the darkening outlook for the Chinese economy, its international
+    trade continues to go from strength to strength. According to official data released
+    this week, exports and imports grew more than economists had expected in November,
+    with both data sets
+  unit: null
+  values:
+  - 22.0
+  - 326.0
+  - 32.0
+  - 254.0
+- section: Main
+  section_type: null
+  source_line: The volumes of imported dry bulk commodities have also remained strong
+    in the first eleven months of the year. Despite the Chinese authorities' clampdown
+    on many commodity trades during much of the year, aggregate imports could be on
+    course for yet another ann
+  unit: null
+  values:
+  - 1.9
+  - 80.0
+- section: Main
+  section_type: null
+  source_line: However, the robust aggregate data hides a somewhat mixed picture across
+    the different commodities. In the wake of the extensive restrictions on steel
+    production, iron ore imports have gone against the flow with a three per cent
+    decline in volumes. The drop ha
+  unit: null
+  values:
+  - 2020.0
 regions:
 - china
 - brazil

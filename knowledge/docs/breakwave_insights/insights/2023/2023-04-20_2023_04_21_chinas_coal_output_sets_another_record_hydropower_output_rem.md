@@ -25,7 +25,57 @@ keywords:
 - coal-derived
 - february
 - marked
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: As we discussed in a client note on Tuesday, China's coal production
+    totaled a record 417.2 million tons last month. This has marked an increase of
+    50.1 million tons (14%) from February and is up year-on-year by 21.4 million tons
+    (5%). As we have been stressin
+  unit: pct
+  values:
+  - 417.2
+  - 50.1
+  - 14.0
+  - 21.4
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: Also discussed was how China's electricity production totaled 717.3
+    billion kilowatt hours last month. This has marked an increase of 42.4 billion
+    kilowatt hours (6%) from February and is up year-on-year by 47.1 billion kilowatt
+    hours (7%). Thermal coal-derive
+  unit: pct
+  values:
+  - 717.3
+  - 42.4
+  - 6.0
+  - 47.1
+  - 7.0
+  - 514.6
+  - 26.7
+  - 6.0
+  - 45.8
+  - 10.0
+- section: Main
+  section_type: null
+  source_line: China's hydropower production totaled only 68.4 billion kilowatt hours
+    last month. This is the same amount that was produced in February and is down
+    year-on-year by 12.1 billion kilowatt hours (-15%). China's hydropower production
+    has now contracted on a year-
+  unit: worldscale_pct
+  values:
+  - 68.4
+  - 12.1
+  - -15.0
+  - 15.0
 regions:
 - china
 - brazil

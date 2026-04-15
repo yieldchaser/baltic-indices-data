@@ -25,7 +25,74 @@ keywords:
 - like
 - bank
 - but
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 7
+numeric_observations:
+- section: Summary
+  section_type: null
+  source_line: Despite the Fed's persistently hawkish rhetoric, since the last quarter
+    of 2022, markets have embraced a more positive narrative, mostly on the back of
+    increasingly benign US inflation numbers.
+  unit: null
+  values:
+  - 2022.0
+- section: Summary
+  section_type: null
+  source_line: '"I''ve spent enough time around Wall Street to know that [markets]
+    are culturally, institutionally, optimistic… They are going to lose the game of
+    chicken, I can tell you that". Thus spoke Neil Kashkari, President of the Minneapolis
+    Fed and one of the twelve vo'
+  unit: null
+  values:
+  - 2023.0
+- section: Summary
+  section_type: null
+  source_line: Despite the Fed's persistently hawkish rhetoric, since the last quarter
+    of 2022, markets have embraced a more positive narrative, mostly on the back of
+    increasingly benign US inflation numbers. Last week's reading further reinforced
+    the positive narrative, sen
+  unit: null
+  values:
+  - 2022.0
+  - 500.0
+  - 4000.0
+- section: Summary
+  section_type: null
+  source_line: To be fair, plenty of data support the idea that the Fed should back
+    down. For the last six months, the average monthly US inflation was 0.2%.
+  unit: pct
+  values:
+  - 0.2
+- section: Summary
+  section_type: null
+  source_line: If that trend persists, then the US economy should be at 2% inflation
+    by June.
+  unit: pct
+  values:
+  - 2.0
+- section: Summary
+  section_type: null
+  source_line: One could make an argument that inflation expectations remain anchored.
+    A long running survey of US consumers suggests that while long-term inflation
+    expectations near 3%, they are actually low compared to average 5y inflation.
+  unit: pct
+  values:
+  - 3.0
+- section: Summary
+  section_type: null
+  source_line: Part of the problem is that we can't be certain as to how the 17 women
+    and men of the Fed think exactly (minutes tend to be polished). Jay Powell's comments
+    that inflation was transitory in mid-2021 will follow him for a long time, despite
+    the fact that at the
+  unit: null
+  values:
+  - 17.0
+  - 2021.0
 regions:
 - china
 - brazil

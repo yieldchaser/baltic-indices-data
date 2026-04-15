@@ -25,7 +25,51 @@ keywords:
 - prices
 - chinese
 - remain
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Dry bulk rates increased across the board again last week, with capesize
+    rates again finding the largest amount of support. Capesize rates ended last week
+    up by 17%. Panamax rates ended up by 2%. Supramax rates ended up by 3%. Handysize
+    rates ended up by 5%. A
+  unit: pct
+  values:
+  - 17.0
+  - 2.0
+  - 3.0
+  - 5.0
+  - 5.0
+  - 2017.0
+- section: Main
+  section_type: null
+  source_line: We remain bullish for China's near-term coal import prospects. Of note
+    globally in the coking coal market is new daily coronavirus cases in Mongolia
+    remain high and China's limitations on Mongolian coal trucks remain in place.
+    This continues to provide support
+  unit: pct
+  values:
+  - 1710.0
+  - 4.0
+  - 27.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: Thermal coal prices in China have also continued to climb as consumption
+    remains very strong and as domestic coal port stockpiles have remained particularly
+    low. Chinese coal production growth also remains under pressure due to coal mine
+    inspections and safety
+  unit: pct
+  values:
+  - 805.0
+  - 2.0
+  - 71.0
 regions:
 - china
 - brazil

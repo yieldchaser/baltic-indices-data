@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 865,
+  "token_count": 1524,
   "source_path": "reports/breakwave/2023/2023-05-02_doric-weekly-market-insight.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/5/2/doric-weekly-market-insight",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 820,
+      "token_count": 897,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-02_2023_05_02_doric_weekly_market_insight__s02_linked_asset_2023_05_02_doric_weekly_market_insight_img_128229_963e14e43394_png",
+      "doc_id": "breakwave_insights_insights_2023-05-02_2023_05_02_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-05-02_2023_05_02_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-05-02_doric-weekly-market-insight_img_128229_963e14e43394.png",
+      "section_path": [
+        "Linked asset: 2023-05-02_doric-weekly-market-insight_img_128229_963e14e43394.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-02_doric-weekly-market-insight_img_128229_963e14e43394.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-02_doric-weekly-market-insight_img_128229_963e14e43394.png\n\nLinked image asset: 2023-05-02_doric-weekly-market-insight_img_128229_963e14e43394.png\n\nImage metadata: PNG 480x353 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nUnited States GDP Growth Rate\n40%\n35.3% '\n30% |\n1\n20%\n1\n10% 6.3% 70% 7.0%\n3.9%\n7% i 3.2% 2.6%\nom oe rn eee\n| | 1.6% -0.6%\n-4.6% \"\n-10%\n-20%\n-30%\n-29.9%\n40%\nqi a2 03 Q@4 Qi @Q2 @ Q4 Ql @Q2 Q3 Q al\n2020 2020 2020 2020 2021 2021 2021 2021 2022 2022 2022 2022 2023\nSource: U.S. Bureau of Economic Analysis, Doric Research",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "analysis",
+        "bureau",
+        "doric",
+        "doric-weekly-market-insight_img_128229_963e14e43394.png",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 272,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-05-02_2023_05_02_doric_weekly_market_insight__s03_linked_asset_2023_05_02_doric_weekly_market_insight_img_128329_8b55036932a5_png",
+      "doc_id": "breakwave_insights_insights_2023-05-02_2023_05_02_doric_weekly_market_insight",
+      "parent_id": "breakwave_insights_insights_2023-05-02_2023_05_02_doric_weekly_market_insight__root",
+      "title": "Linked asset: 2023-05-02_doric-weekly-market-insight_img_128329_8b55036932a5.png",
+      "section_path": [
+        "Linked asset: 2023-05-02_doric-weekly-market-insight_img_128329_8b55036932a5.png"
+      ],
+      "section_path_text": "Linked asset: 2023-05-02_doric-weekly-market-insight_img_128329_8b55036932a5.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-05-02_doric-weekly-market-insight_img_128329_8b55036932a5.png\n\nLinked image asset: 2023-05-02_doric-weekly-market-insight_img_128329_8b55036932a5.png\n\nImage metadata: PNG 447x380 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nEuro Area GDP Growth Rate\n15%\n12.4%\n10%\n5%\n2.3%\na 0.9% 0.1%\n0, 0 . 0.4% °\n0% 0% 0%\n-0.3%\n5% -3.4%\n-10%\n-11.5%\n-15%\nQl a2 03 a4 Ql @2 @3 QQ Qi @ a3 a4 al\n2020 2020 2020 2020 2021 2021 2021 2021 2022 2022 2022 2022 2023\nSource: Eurostat, Doric Research",
+      "keywords": [
+        "asset",
+        "image",
+        "source",
+        "area",
+        "doric",
+        "doric-weekly-market-insight_img_128329_8b55036932a5.png",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 247,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

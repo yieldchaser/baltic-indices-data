@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-01-27_2023_01_27_bcz4siu9r2ohgqhpy0262q9yic3nkm__root",
   "doc_id": "breakwave_insights_insights_2023-01-27_2023_01_27_bcz4siu9r2ohgqhpy0262q9yic3nkm",
   "parent_id": null,
-  "title": "Bcz4Siu9R2Ohgqhpy0262Q9Yic3Nkm",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Bcz4Siu9R2Ohgqhpy0262Q9Yic3Nkm"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Bcz4Siu9R2Ohgqhpy0262Q9Yic3Nkm",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nLike in China, the US economy proved to be more resilient than widely expected during the final quarter of last year. Yesterday's release of multiple economic data showed that the US economy remains strong, which could see the Federal Reserve being forced to maintain a hawkish stance on interest hikes. While the world's largest economy expanded at a slower pace than during the third quarter, the 2.9 per cent year-on-year growth was still higher than the consensus among economists of 2.6 per cent.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1280,
+  "token_count": 1596,
   "source_path": "reports/breakwave/2023/2023-01-27_bcz4siu9r2ohgqhpy0262q9yic3nkm.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/1/27/bcz4siu9r2ohgqhpy0262q9yic3nkm",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 201,
+      "token_count": 274,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-01-27_2023_01_27_bcz4siu9r2ohgqhpy0262q9yic3nkm__s06_linked_asset_2023_01_27_bcz4siu9r2ohgqhpy0262q9yic3nkm_img_unnamed_2023_01_27t145129171_9c0a138d2725_png",
+      "doc_id": "breakwave_insights_insights_2023-01-27_2023_01_27_bcz4siu9r2ohgqhpy0262q9yic3nkm",
+      "parent_id": "breakwave_insights_insights_2023-01-27_2023_01_27_bcz4siu9r2ohgqhpy0262q9yic3nkm__root",
+      "title": "Linked asset: 2023-01-27_bcz4siu9r2ohgqhpy0262q9yic3nkm_img_unnamed-2023-01-27t145129171_9c0a138d2725.png",
+      "section_path": [
+        "Linked asset: 2023-01-27_bcz4siu9r2ohgqhpy0262q9yic3nkm_img_unnamed-2023-01-27t145129171_9c0a138d2725.png"
+      ],
+      "section_path_text": "Linked asset: 2023-01-27_bcz4siu9r2ohgqhpy0262q9yic3nkm_img_unnamed-2023-01-27t145129171_9c0a138d2725.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-01-27_bcz4siu9r2ohgqhpy0262q9yic3nkm_img_unnamed-2023-01-27t145129171_9c0a138d2725.png\n\nLinked image asset: 2023-01-27_bcz4siu9r2ohgqhpy0262q9yic3nkm_img_unnamed-2023-01-27t145129171_9c0a138d2725.png\n\nImage metadata: PNG 1117x409 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Copper Shipped as Dry bulk Discharging in China ©\nay 2V 1) Al",
+      "keywords": [
+        "china",
+        "asset",
+        "image",
+        "bcz4siu9r2ohgqhpy0262q9yic3nkm_img_unnamed-2023-01-27t145129171_9c0a138d2725.png",
+        "cargo",
+        "copper",
+        "discharging",
+        "dpi"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

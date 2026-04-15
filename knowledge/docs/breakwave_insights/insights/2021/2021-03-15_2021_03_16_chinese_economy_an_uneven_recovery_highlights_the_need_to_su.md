@@ -25,7 +25,36 @@ keywords:
 - growth
 - industrial
 - likely
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: neutral
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Hot on the heels of Chinese Premier Li Keqiang's speech, announcing
+    that the country was targeting a fairly modest growth in excess of six per cent
+    for the year, the latest economic data released on Monday suggest that large parts
+    of the economy remain in rude
+  unit: null
+  values:
+  - 34.0
+  - 35.0
+  - 2020.0
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: However, unlike the data for industrial production and retail sales,
+    investments volumes in fixed assets, such as infrastructure, property, machinery
+    and equipment, failed to impress. It grew by 35 per cent in January and February
+    compared to a year earlier an
+  unit: null
+  values:
+  - 35.0
+  - 41.0
 regions:
 - china
 - brazil

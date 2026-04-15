@@ -24,7 +24,25 @@ keywords:
 - cargoes
 - exports
 - forecast
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Going forward, we remain of our view that in the near-term dry bulk
+    ton miles will increase as nations try to source from other exporters -- but over
+    time, an absolute loss of cargoes would become a net negative for the dry bulk
+    shipping market if the war stre
+  unit: null
+  values:
+  - 6.2
+  - 4.0
+  - 3.0
 regions:
 - china
 - brazil

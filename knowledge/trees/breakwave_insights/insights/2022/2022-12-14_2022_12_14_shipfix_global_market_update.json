@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-12-14_2022_12_14_shipfix_global_market_update__root",
   "doc_id": "breakwave_insights_insights_2022-12-14_2022_12_14_shipfix_global_market_update",
   "parent_id": null,
-  "title": "Shipfix Global Market Update",
+  "title": "Shipfix-Global Market Update",
   "section_path": [
-    "Shipfix Global Market Update"
+    "Shipfix-Global Market Update"
   ],
-  "section_path_text": "Shipfix Global Market Update",
+  "section_path_text": "Shipfix-Global Market Update",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\n\nMacro/Geopolitics\nUS inflation in November was lower than expected by the market, with the annual rate retreating to 7.1 per cent from 7.7 per cent in October. The latest reading also failed to match the consensus expectation of 7.3 per cent. The softer inflation data led to a weakening of the US dollar, as the Federal Reserve is likely to be able to slow down the pace of interest rate hikes as a result of it.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1205,
+  "token_count": 1474,
   "source_path": "reports/breakwave/2022/2022-12-14_shipfix-global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/12/14/shipfix-global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 237,
+      "token_count": 293,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-12-14_2022_12_14_shipfix_global_market_update__s06_linked_asset_2022_12_14_shipfix_global_market_update_img_unnamed_2022_12_14t125946185_d473c4a36d39_png",
+      "doc_id": "breakwave_insights_insights_2022-12-14_2022_12_14_shipfix_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-12-14_2022_12_14_shipfix_global_market_update__root",
+      "title": "Linked asset: 2022-12-14_shipfix-global-market-update_img_unnamed-2022-12-14t125946185_d473c4a36d39.png",
+      "section_path": [
+        "Linked asset: 2022-12-14_shipfix-global-market-update_img_unnamed-2022-12-14t125946185_d473c4a36d39.png"
+      ],
+      "section_path_text": "Linked asset: 2022-12-14_shipfix-global-market-update_img_unnamed-2022-12-14t125946185_d473c4a36d39.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-12-14_shipfix-global-market-update_img_unnamed-2022-12-14t125946185_d473c4a36d39.png\n\nLinked image asset: 2022-12-14_shipfix-global-market-update_img_unnamed-2022-12-14t125946185_d473c4a36d39.png\n\nImage metadata: PNG 1118x488 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nMonthly Cargo Order Volumes (TCT & Voyage) for Wheat Loading in Russia ©\nSY 3Y All\n2\n2 4M\ngi\nix\n°o\n2\n: Tee) Jul NAOT Ju no Jul eK) Jul",
+      "keywords": [
+        "grain",
+        "jul",
+        "asset",
+        "image",
+        "all",
+        "cargo",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 173,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -27,7 +27,64 @@ keywords:
 - are
 - oil
 - russia
+linked_assets_discovered: 12
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 12
 market_tone: neutral
+numeric_observation_count: 5
+numeric_observations:
+- section: of a slowdown after two exceptionally strong months
+  section_type: null
+  source_line: 'Firstly, moving our focus towards the US, what stands out is the record
+    high level of seaborne crude exports in March and April at 4.5mbd for both months.
+    These record high flows were driven by European demand in March but by April the
+    loadings shifted toward '
+  unit: null
+  values:
+  - 4.5
+- section: of a slowdown after two exceptionally strong months
+  section_type: null
+  source_line: At the same time, U.S. refineries are coming out of maintenance season
+    (planned and unplanned) with utilisation already reaching nearly 91% nationwide
+    and 95% in PADD 3 (EIA), from where most oil product exports originate.
+  unit: pct
+  values:
+  - 91.0
+  - 95.0
+  - 3.0
+- section: of a slowdown after two exceptionally strong months
+  section_type: null
+  source_line: A decline m-o-m in exports of refined products, especially diesel/gasoil,
+    can be attributed to slowing demand in traditional markets such as LatAm along
+    with Russia making inroads to that diesel import market, taking a portion of the
+    market share from long tim
+  unit: pct
+  values:
+  - 11.0
+  - 1.0
+- section: of a slowdown after two exceptionally strong months
+  section_type: null
+  source_line: Now, let's move our focus towards Russia which is responsible for the
+    other significant chunk of Atlantic basin oil exports primarily via the Baltics
+    and Black Sea. Similar to the US, multi-year-high oil exports led by crude were
+    observed from Russia in both M
+  unit: null
+  values:
+  - 100.0
+  - 5.3
+- section: of a slowdown after two exceptionally strong months
+  section_type: null
+  source_line: Looking at Atlantic Basin net-exports of crude, seasonality is set
+    to play a crucial role. As seen in the chart above, net exports are trending downward
+    but with levels well above the historical average as well as levels seen last
+    year. As various factors such
+  unit: null
+  values:
+  - 2023.0
+  - 2022.0
+  - 2023.0
 regions:
 - china
 - brazil

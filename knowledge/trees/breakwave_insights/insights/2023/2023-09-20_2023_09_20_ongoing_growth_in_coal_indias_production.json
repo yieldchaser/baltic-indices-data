@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-09-20_2023_09_20_ongoing_growth_in_coal_indias_production__root",
   "doc_id": "breakwave_insights_insights_2023-09-20_2023_09_20_ongoing_growth_in_coal_indias_production",
   "parent_id": null,
-  "title": "Ongoing Growth In Coal Indias Production",
+  "title": "Ongoing Growth in Coal India's Production",
   "section_path": [
-    "Ongoing Growth In Coal Indias Production"
+    "Ongoing Growth in Coal India's Production"
   ],
-  "section_path_text": "Ongoing Growth In Coal Indias Production",
+  "section_path_text": "Ongoing Growth in Coal India's Production",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Jeffrey Landsberg\nCoal India produced approximately 52.3 million tons of coal last month, which marks a month-on-month decrease of 1.4 million tons (-3%) but a year-on-year increase of 6.1 million tons (13%). Coal India's production has now increased on a year-on-year basis during twenty-seven of the last twenty-eight months. Coal India's production has now grown this year by 43.5 million tons (9%).",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 213,
+  "token_count": 661,
   "source_path": "reports/breakwave/2023/2023-09-20_ongoing-growth-in-coal-indias-production.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/9/20/ongoing-growth-in-coal-indias-production",
   "children": [
@@ -54,8 +54,64 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 211,
+      "token_count": 303,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-20_2023_09_20_ongoing_growth_in_coal_indias_production__s02_linked_asset_2023_09_20_ongoing_growth_in_coal_indias_production_img_chart1288129_9f26507a77e0_jpg",
+      "doc_id": "breakwave_insights_insights_2023-09-20_2023_09_20_ongoing_growth_in_coal_indias_production",
+      "parent_id": "breakwave_insights_insights_2023-09-20_2023_09_20_ongoing_growth_in_coal_indias_production__root",
+      "title": "Linked asset: 2023-09-20_ongoing-growth-in-coal-indias-production_img_chart1288129_9f26507a77e0.jpg",
+      "section_path": [
+        "Linked asset: 2023-09-20_ongoing-growth-in-coal-indias-production_img_chart1288129_9f26507a77e0.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-09-20_ongoing-growth-in-coal-indias-production_img_chart1288129_9f26507a77e0.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-20_ongoing-growth-in-coal-indias-production_img_chart1288129_9f26507a77e0.jpg\n\nLinked image asset: 2023-09-20_ongoing-growth-in-coal-indias-production_img_chart1288129_9f26507a77e0.jpg\n\nImage metadata: JPEG 663x398 mode=RGB\n\nOCR text:\nCoal India Production (2019 - 2023)\n100mt\n80mt\n60mt\n40mt\n20mt\n2019 2020 2021 2022 2023",
+      "keywords": [
+        "india",
+        "coal",
+        "asset",
+        "image",
+        "jpeg",
+        "linked",
+        "metadata",
+        "mode"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 138,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-09-20_2023_09_20_ongoing_growth_in_coal_indias_production__s03_linked_asset_2023_09_20_ongoing_growth_in_coal_indias_production_img_chart2286929_5e25e7ba5dc8_jpg",
+      "doc_id": "breakwave_insights_insights_2023-09-20_2023_09_20_ongoing_growth_in_coal_indias_production",
+      "parent_id": "breakwave_insights_insights_2023-09-20_2023_09_20_ongoing_growth_in_coal_indias_production__root",
+      "title": "Linked asset: 2023-09-20_ongoing-growth-in-coal-indias-production_img_chart2286929_5e25e7ba5dc8.jpg",
+      "section_path": [
+        "Linked asset: 2023-09-20_ongoing-growth-in-coal-indias-production_img_chart2286929_5e25e7ba5dc8.jpg"
+      ],
+      "section_path_text": "Linked asset: 2023-09-20_ongoing-growth-in-coal-indias-production_img_chart2286929_5e25e7ba5dc8.jpg",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-09-20_ongoing-growth-in-coal-indias-production_img_chart2286929_5e25e7ba5dc8.jpg\n\nLinked image asset: 2023-09-20_ongoing-growth-in-coal-indias-production_img_chart2286929_5e25e7ba5dc8.jpg\n\nImage metadata: JPEG 671x400 mode=RGB\n\nOCR text:\nCoal India Offtake (2019 - 2023)\n70mt\n60mt\n50mt\n40mt\n30mt\n2019 2020 2021 2022 2023",
+      "keywords": [
+        "india",
+        "coal",
+        "asset",
+        "image",
+        "jpeg",
+        "linked",
+        "metadata",
+        "mode"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 141,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

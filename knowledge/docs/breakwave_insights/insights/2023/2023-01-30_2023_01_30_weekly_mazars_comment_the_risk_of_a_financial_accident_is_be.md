@@ -25,7 +25,48 @@ keywords:
 - can
 - risks
 - could
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: The risk of a financial accident is being removed
+  section_type: null
+  source_line: The global financial system is apparently way more resilient now than
+    it was in 2007
+  unit: null
+  values:
+  - 2007.0
+- section: The risk of a financial accident is being removed
+  section_type: null
+  source_line: One of the key risks we persistently flagged in the second part of
+    last year has been the swiftly rising risks in the bond market. Bond risks are
+    not like equities. They are not linear, which means that they can escalate very
+    quickly. The bond market is much b
+  unit: null
+  values:
+  - 10.0
+- section: The risk of a financial accident is being removed
+  section_type: null
+  source_line: Yet, since the beginning of the year, rates began to climb down and
+    credit spreads tightened as markets anticipated that weaker inflation data would
+    eventually lead the Fed to take its foot off the pedal. Investors are returning
+    to bond markets not just becaus
+  unit: pct
+  values:
+  - 0.25
+- section: The risk of a financial accident is being removed
+  section_type: null
+  source_line: 'The other key risk is the possibility of ‘sticky inflation''. This
+    could come as the result of two things: resurgent Chinese demand and/or sticky
+    services inflation. Basic materials prices are already up nearly 20% in the last
+    three months, as China reopened. I'
+  unit: pct
+  values:
+  - 20.0
 regions:
 - china
 - brazil

@@ -24,7 +24,151 @@ keywords:
 - should
 - tramp
 - datasets
+linked_assets_discovered: 7
+linked_assets_failed: 0
+linked_assets_ingested: 2
+linked_assets_mirrored: 2
+linked_assets_skipped: 5
 market_tone: cautiously_bearish
+numeric_observation_count: 17
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Shipping companies should leverage existing automation opportunities
+    brought by modern technology such as APIs [1] and SDKs [2] . As a concrete example,
+    any data that lives in a spreadsheet is probably being manually updated and this
+    process could be automatiz
+  unit: null
+  values:
+  - 1.0
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: Embracing automation faces the challenge of upskilling the existing
+    teams with new tools, e.g. Python [3] . Modern datasets have outgrown the capabilities
+    of spreadsheet tools. With a corporate agenda of digitization, the pioneers will
+    choose to invest in empl
+  unit: null
+  values:
+  - 3.0
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: 'Image reference: a1.png | assets/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png'
+  unit: null
+  values:
+  - 2021.0
+  - -5.0
+  - -8.0
+  - 339.0
+- section: Main
+  section_type: null
+  source_line: Figure 1 - Data Adoption Ladder
+  unit: null
+  values:
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: Shipping companies should recognize that data in itself is not a competitive
+    advantage if the organization is not able to interpret, analyse and act on the
+    data. Data analytics at scale are being democratized by cheap cloud computing,
+    open source software (e.g
+  unit: null
+  values:
+  - 4.0
+- section: Main
+  section_type: null
+  source_line: 'Image reference: a2.png | assets/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png'
+  unit: null
+  values:
+  - 2021.0
+  - -5.0
+  - -8.0
+  - 4.0
+  - 66.0
+  - 8.0
+- section: Main
+  section_type: null
+  source_line: '[1] Application Programming Interface: an interface that defines interactions
+    between multiple software applications or mixed hardware-software intermediaries.'
+  unit: null
+  values:
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: '[2] Software Development Kit: a collection of software development
+    tools in one installable package.'
+  unit: null
+  values:
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: '[3] Python is an interpreted, high-level and general-purpose programming
+    language.'
+  unit: null
+  values:
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: '[4] TensorFlow is an end-to-end open source platform for machine learning.'
+  unit: null
+  values:
+  - 4.0
+- section: 'Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png'
+  unit: null
+  values:
+  - 2021.0
+  - -5.0
+  - -8.0
+  - 339.0
+- section: 'Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 1064x636 mode=RGB'
+  unit: null
+  values:
+  - 1064.0
+  - 36.0
+- section: 'Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png'
+  section_type: linked_image_asset
+  source_line: Statistics 2
+  unit: null
+  values:
+  - 2.0
+- section: 'Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png'
+  unit: null
+  values:
+  - 2021.0
+  - -5.0
+  - -8.0
+  - 4.0
+  - 66.0
+  - 8.0
+- section: 'Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: PNG 872x289 mode=RGB'
+  unit: null
+  values:
+  - 872.0
+  - 89.0
+- section: 'Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png'
+  section_type: linked_image_asset
+  source_line: m™) Auren © Hoffman @ @auren- Jun 14, 2019 ee
+  unit: null
+  values:
+  - 14.0
+  - 2019.0
+- section: 'Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png'
+  section_type: linked_image_asset
+  source_line: QO 3 tT 10 QO 48 ar
+  unit: null
+  values:
+  - 3.0
+  - 10.0
+  - 48.0
 regions:
 - china
 - brazil
@@ -34,7 +178,7 @@ regions:
 - meg
 - west_africa
 - europe
-section_count: 1
+section_count: 3
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2021/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping.html
@@ -60,7 +204,7 @@ themes:
 - modern
 - not
 - software
-title: The Rise Of Data Driven Decisions In Tramp Shipping
+title: The Rise of Data-Driven Decisions in Tramp Shipping
 vessel_classes:
 - capesize
 - panamax
@@ -91,6 +235,7 @@ The shipping companies that are pioneering data and analytics for decision-makin
 Software and data is not replacing all the people in the shipping industry just yet, but it is already making chartering managers, operation managers, research analysts, and data science teams more efficient in their day-to-day routines.
 Shipping companies should leverage existing automation opportunities brought by modern technology such as APIs [1] and SDKs [2] . As a concrete example, any data that lives in a spreadsheet is probably being manually updated and this process could be automatized by leveraging an appropriate technology.
 Embracing automation faces the challenge of upskilling the existing teams with new tools, e.g. Python [3] . Modern datasets have outgrown the capabilities of spreadsheet tools. With a corporate agenda of digitization, the pioneers will choose to invest in employees to learn fundamental building blocks of modern data science (e.g. learning Python) to work with data at scale. Heuristically, managers can think about upskilling employees as moving up the "Data Adoption Ladder" as depicted in Figure 1.
+Image reference: a1.png | assets/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png
 Figure 1 - Data Adoption Ladder
 - Avoid swiss army knife solutions:
 With the rise of cloud computing over the past decades, microservices and modularized software packages have become the norm, each focusing on functionality that's done particularly well. Modern software and data companies are built in a similar way, often focusing on delivering a narrowly defined service.
@@ -112,6 +257,7 @@ Datasets that live in static forms (e.g. spreadsheets or PDF documents) or enclo
 Modern data providers should have a transparent methodology that provides users with confidence around the information they are consuming. Users should be able to leverage the data in combination with other data sources.
 - Join keys are king:
 Auren Hoffmann is a thought leader within data-as-a-service businesses and a central idea of his work is that data in itself is not very valuable, but that its value increases as a function of the possibilities to join it with other data. Auren summarizes this nicely on Twitter:
+Image reference: a2.png | assets/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png
 In order to join two datasets a common key is needed, this key is referred to as a join key. In shipping, examples of join keys are: a vessel's imo number or a port's UN/LOCODE.
 Join keys are king in data science and modern data providers should provide datasets with join keys that allow their users to combine multiple datasets to get a holistic picture of the problem they are analyzing.
 - Data rots quickly when markets move fast:
@@ -124,3 +270,43 @@ That is if they adopt appropriate frameworks for data analysis and engage with t
 [3] Python is an interpreted, high-level and general-purpose programming language.
 [4] TensorFlow is an end-to-end open source platform for machine learning.
 *Niclas Priess is the co-founder of Oceanbolt . Oceanbolt is a data-as-a-service company leveraging geospatial analytics to provide real-time intelligence for the dry bulk markets. Learn more about Oceanbolt on its website: https://www.oceanbolt.com/
+
+## Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png
+Source asset: reports/breakwave/2021/assets/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png
+
+Linked image asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a1_b6ba2339ca3e.png
+
+Image metadata: PNG 1064x636 mode=RGB
+
+OCR text:
+Data Adoption Ladder
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+Machine Learning & Al
+(Python / TensorFlow)
+Data Science
+(Python / R)
+Statistics 2
+(R / Excel) &
+°
+Simple Arithmetics a.
+(Microsoft Excel) s
+Static Formats
+(PDF, email)
+Phone
+conversations
+
+## Linked asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png
+Source asset: reports/breakwave/2021/assets/2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png
+
+Linked image asset: 2021-05-08_the-rise-of-data-driven-decisions-in-tramp-shipping_img_a2_f34e166e108e.png
+
+Image metadata: PNG 872x289 mode=RGB
+
+OCR text:
+m™) Auren © Hoffman @ @auren- Jun 14, 2019 ee
+; One of the big ways that data becomes useful is when it is tied to other
+; data.
+The reason for this is simple: data is only as useful as the questions it can
+help answer. Joining, linking, and graphing datasets together allows one to
+ask more and different kinds of questions.
+QO 3 tT 10 QO 48 ar

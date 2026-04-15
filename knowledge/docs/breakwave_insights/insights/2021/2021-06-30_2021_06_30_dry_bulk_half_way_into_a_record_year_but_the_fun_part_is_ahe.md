@@ -25,7 +25,63 @@ keywords:
 - demand
 - but
 - strong
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: With the second quarter coming to an end, dry bulk has already experienced
+    a record start to the year, especially for the smaller, sub-Cape segments that
+    are enjoying some of the strongest rates ever in a non-stop demand frenzy that
+    seems to have now convinced
+  unit: null
+  values:
+  - 2021.0
+  - 30000.0
+- section: Main
+  section_type: null
+  source_line: Market participants are pricing a continuation of such impressive strength
+    in freight rates for the rest of the year. For Capesizes, and with the spot market
+    deep into the 30,000 mark, futures are trading at around 37,000 for the second
+    half of the year, a sma
+  unit: null
+  values:
+  - 30000.0
+  - 37000.0
+  - 1.0
+  - 24000.0
+  - 30.0
+- section: Main
+  section_type: null
+  source_line: Volatility naturally has also exploded higher, with daily moves in
+    both the freight futures and spot market expanding considerably. In the futures
+    market, annualized volatility recently reached multi-year highs, touching the
+    100% mark for the first time ever a
+  unit: pct
+  values:
+  - 100.0
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: Capesize Spot Rate Seasonality (2017-2021)
+  unit: null
+  values:
+  - 2017.0
+  - -2021.0
+- section: Main
+  section_type: null
+  source_line: Yet, as we have stressed many times, turning points are impossible
+    to time in dry bulk. As a result, and given that the market remains of the view
+    that dips are to be bought, we expect any softness to be short lived and be followed
+    by strong upturns in the spo
+  unit: null
+  values:
+  - 30000.0
 regions:
 - china
 - brazil

@@ -26,7 +26,125 @@ keywords:
 - tankers
 - exports
 - inventories
+linked_assets_discovered: 6
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 6
 market_tone: constructive
+numeric_observation_count: 8
+numeric_observations:
+- section: This insight explores why Iran's crude/condensate export levels observed
+    in May were not sustained, Iran's onshore inventories showed stock draws whilst
+    Shandong inventories built stocks and Iranian floating storage declined.
+  section_type: null
+  source_line: Iran's crude/condensate exports reached 1.3mbd in June, a 200kbd decline
+    from May's record high. This marked Q2 exports at 1.35mbd, a 300kbd increase q-o-q
+    and 350kbd higher than the 2022 average, a record-quarter of Iran's crude/condensate
+    exports since sanct
+  unit: null
+  values:
+  - 1.3
+  - 200.0
+  - 1.35
+  - 300.0
+  - 350.0
+  - 2022.0
+  - 2018.0
+- section: This insight explores why Iran's crude/condensate export levels observed
+    in May were not sustained, Iran's onshore inventories showed stock draws whilst
+    Shandong inventories built stocks and Iranian floating storage declined.
+  section_type: null
+  source_line: Iran's onshore crude/condensate inventories declined to 108mb in June,
+    a 3mb stock draw since April. Iran's record-high exports in Q2 led to a draw in
+    its onshore inventories amidst its flat production levels, as confirmed by data
+    reported by OPEC .
+  unit: null
+  values:
+  - 108.0
+  - 3.0
+- section: This insight explores why Iran's crude/condensate export levels observed
+    in May were not sustained, Iran's onshore inventories showed stock draws whilst
+    Shandong inventories built stocks and Iranian floating storage declined.
+  section_type: null
+  source_line: China's Shandong independent refiners, the main importers of sanctioned
+    crude/condensate, saw a 10.5mb build in its onshore crude/condensate inventories
+    to 205mb in June, the highest on record. The strong inventory build was a result
+    of two key factors. First,
+  unit: null
+  values:
+  - 10.5
+  - 205.0
+  - 2022.0
+- section: This insight explores why Iran's crude/condensate export levels observed
+    in May were not sustained, Iran's onshore inventories showed stock draws whilst
+    Shandong inventories built stocks and Iranian floating storage declined.
+  section_type: null
+  source_line: 'In addition, inspections on old tankers are ongoing, with five tankers
+    storing 8mb of Iranian crude/condensate in floating storage offshore China as
+    of 4 July. Inspections on tankers carrying diluted bitumen have however come to
+    an end, normalising Venezuelan '
+  unit: null
+  values:
+  - 8.0
+  - 4.0
+  - 3.0
+- section: This insight explores why Iran's crude/condensate export levels observed
+    in May were not sustained, Iran's onshore inventories showed stock draws whilst
+    Shandong inventories built stocks and Iranian floating storage declined.
+  section_type: null
+  source_line: As of 4 July, Iranian crude/condensate in floating storage is assessed
+    at 37.2mb, comprising 40% condensate and 60% crude.
+  unit: pct
+  values:
+  - 4.0
+  - 37.2
+  - 40.0
+  - 60.0
+- section: This insight explores why Iran's crude/condensate export levels observed
+    in May were not sustained, Iran's onshore inventories showed stock draws whilst
+    Shandong inventories built stocks and Iranian floating storage declined.
+  section_type: null
+  source_line: Iranian floating storage in July is only 0.6mb lower than June, but
+    the growing divergence between crude and condensate reflects the tanker supply
+    constraints the country is facing. South Pars Condensate in floating storage is
+    assessed at 14.4mb in July, a 2.4
+  unit: null
+  values:
+  - 0.6
+  - 14.4
+  - 2.4
+  - 22.8
+  - 1.6
+- section: This insight explores why Iran's crude/condensate export levels observed
+    in May were not sustained, Iran's onshore inventories showed stock draws whilst
+    Shandong inventories built stocks and Iranian floating storage declined.
+  section_type: null
+  source_line: South Pars Condensate is largely stored on National Iranian Tanker
+    Company (NITC) tankers in domestic (Iranian) waters, but the decline below 15mb
+    in July suggests Iran is using its NITC tankers for flows as opposed to storing
+    condensate. The NITC fleet is now
+  unit: null
+  values:
+  - 15.0
+  - 12.0
+  - 4.0
+  - 23.0
+  - 2022.0
+  - 2023.0
+  - 22.0
+- section: This insight explores why Iran's crude/condensate export levels observed
+    in May were not sustained, Iran's onshore inventories showed stock draws whilst
+    Shandong inventories built stocks and Iranian floating storage declined.
+  section_type: null
+  source_line: The 37.2mb of Iranian crude/condensate floating storage is split between
+    35% domestic and 65% outside Iran, with the latter located offshore Malaysia (awaiting
+    buyers) and offshore China (awaiting inspection).
+  unit: pct
+  values:
+  - 37.2
+  - 35.0
+  - 65.0
 regions:
 - china
 - brazil

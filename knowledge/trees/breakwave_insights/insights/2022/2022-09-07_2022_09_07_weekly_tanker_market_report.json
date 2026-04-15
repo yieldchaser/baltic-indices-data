@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-09-07_2022_09_07_weekly_tanker_market_report__root",
   "doc_id": "breakwave_insights_insights_2022-09-07_2022_09_07_weekly_tanker_market_report",
   "parent_id": null,
-  "title": "Weekly Tanker Market Report",
+  "title": "Gibson's Tanker Market Report",
   "section_path": [
-    "Weekly Tanker Market Report"
+    "Gibson's Tanker Market Report"
   ],
-  "section_path_text": "Weekly Tanker Market Report",
+  "section_path_text": "Gibson's Tanker Market Report",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nAmidst widespread price increases, it is not surprising that tanker asset values have also been rising. Our data shows a strong appreciation in VLCC and Suezmax values, with a significant divergence between newbuild and second hand price increases. Even more interesting is the difference in growth rates between newbuilds and 5 year old vessels and older 10 and 15 year old tonnage.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 761,
+  "token_count": 1001,
   "source_path": "reports/breakwave/2022/2022-09-07_weekly-tanker-market-report.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/9/7/weekly-tanker-market-report",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 759,
+      "token_count": 811,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-09-07_2022_09_07_weekly_tanker_market_report__s02_linked_asset_2022_09_07_weekly_tanker_market_report_img_screenshot_20220907_135545_drive_33efc7d96bc6_jpg",
+      "doc_id": "breakwave_insights_insights_2022-09-07_2022_09_07_weekly_tanker_market_report",
+      "parent_id": "breakwave_insights_insights_2022-09-07_2022_09_07_weekly_tanker_market_report__root",
+      "title": "Linked asset: 2022-09-07_weekly-tanker-market-report_img_screenshot-20220907-135545-drive_33efc7d96bc6.jpg",
+      "section_path": [
+        "Linked asset: 2022-09-07_weekly-tanker-market-report_img_screenshot-20220907-135545-drive_33efc7d96bc6.jpg"
+      ],
+      "section_path_text": "Linked asset: 2022-09-07_weekly-tanker-market-report_img_screenshot-20220907-135545-drive_33efc7d96bc6.jpg",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-09-07_weekly-tanker-market-report_img_screenshot-20220907-135545-drive_33efc7d96bc6.jpg\n\nLinked image asset: 2022-09-07_weekly-tanker-market-report_img_screenshot-20220907-135545-drive_33efc7d96bc6.jpg\n\nImage metadata: JPEG 1003x813 mode=RGB\n\nOCR text:\n2022 Relative Tanker Price Growth (%)\n70%\nSource: EAG\n60%\n@VLCC wmSuezmax\n50%\n40%\n30%\n20%\n10%\n0%\nNB 5 Year 10 Year 15 Year",
+      "keywords": [
+        "vlcc",
+        "suezmax",
+        "year",
+        "asset",
+        "image",
+        "source",
+        "eag",
+        "growth"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 149,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -25,7 +25,221 @@ keywords:
 - economic
 - managers
 - pmi
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 18
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: China's quarterly growth rate averaged 9.4 per cent from 1989 to 2019,
+    reaching an all-time high of 15.4 per cent in the first quarter of 1993. But under
+    pressure from the trade war and long-standing structural issues, China's growth
+    rate slowed to 6.1 per cen
+  unit: null
+  values:
+  - 9.4
+  - 1989.0
+  - 2019.0
+  - 15.4
+  - 1993.0
+  - 6.1
+  - 2019.0
+  - 1990.0
+  - 2020.0
+  - 6.8
+- section: Main
+  section_type: null
+  source_line: 'China''s consumer price index (CPI): China''s consumer price index
+    (CPI) rose to plus 0.4 per cent in March from a year earlier, from minus 0.2 per
+    cent in February. Beijing has set a CPI growth target for 2021 of around 3 per
+    cent, compared to around 3.5 per ce'
+  unit: null
+  values:
+  - 0.4
+  - 0.2
+  - 2021.0
+  - 3.0
+  - 3.5
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: 'China''s producer price index (PPI): China''s producer price index
+    (PPI) rose to 4.4 per cent in March, from 1.7 per cent in February.'
+  unit: null
+  values:
+  - 4.4
+  - 1.7
+- section: Main
+  section_type: null
+  source_line: 'China''s official manufacturing purchasing managers'' index (PMI):
+    China''s official manufacturing purchasing managers'' index (PMI) stood at 51.9
+    in March, with a reading above 50 signifying growth in activity in this survey
+    of factory operators. This followed a '
+  unit: null
+  values:
+  - 51.9
+  - 50.0
+  - 50.6
+- section: Main
+  section_type: null
+  source_line: 'China''s official non-manufacturing purchasing managers'' index (PMI):
+    China''s official non-manufacturing purchasing managers'' index (PMI), a gauge
+    of sentiment in the services and construction sectors, was 56.3 in March, compared
+    with 51.4 in February.'
+  unit: null
+  values:
+  - 56.3
+  - 51.4
+- section: Main
+  section_type: null
+  source_line: 'China''s Caixin manufacturing purchasing managers'' index (PMI): The
+    Caixin/Markit manufacturing purchasing managers'' index (PMI) fell to 50.6 in
+    March, from 50.9 in February.'
+  unit: null
+  values:
+  - 50.6
+  - 50.9
+- section: Main
+  section_type: null
+  source_line: 'China''s Caixin services purchasing managers'' index (PMI): The Caixin/Markit
+    services purchasing managers'' index (PMI), which focuses on smaller, private
+    firms, rose to 54.3 in March, from 51.5 in February.'
+  unit: null
+  values:
+  - 54.3
+  - 51.5
+- section: Main
+  section_type: null
+  source_line: 'China''s imports: China''s imports grew by 38.1 per cent in March
+    2021 from a year earlier, up from the 22.2 per cent growth seen in January and
+    February, and well above the Bloomberg survey, which predicted 24.5 per cent growth.
+    Imports have become a closely wa'
+  unit: null
+  values:
+  - 38.1
+  - 2021.0
+  - 22.2
+  - 24.5
+- section: Main
+  section_type: null
+  source_line: 'China''s exports: China''s exports grew by 30.6 per cent in March
+    2021 from a year earlier in US dollar terms, down from the 60.6 per cent seen
+    in January and February, and below the median result of a survey of analysts conducted
+    by Bloomberg, which predicted 3'
+  unit: null
+  values:
+  - 30.6
+  - 2021.0
+  - 60.6
+  - 38.1
+  - 2001.0
+  - 4.0
+  - 2017.0
+  - 13.0
+- section: Main
+  section_type: null
+  source_line: 'China''s trade balance : China''s total trade surplus stood at US$13.8
+    billion in March, compared to US$103.25 billion in January and February.'
+  unit: usd
+  values:
+  - 13.8
+  - 103.25
+- section: Main
+  section_type: null
+  source_line: 'China''s retail sales: China''s retail sales, a gauge of consumer
+    spending in the world''s most populous nation, grew by 34.2 per cent in March
+    2021 compared with a year earlier. This was a up from a rise of 33.8 per cent
+    in combined figures for January and Febru'
+  unit: null
+  values:
+  - 34.2
+  - 2021.0
+  - 33.8
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: 'China''s industrial profits: China''s industrial profits from January
+    to December grew by 4.1 per cent, an improvement on the increase of 2.4 per cent
+    in the first 11 months of the year. This covers the profits received from the
+    principal business of industrial '
+  unit: null
+  values:
+  - 4.1
+  - 2.4
+- section: Main
+  section_type: null
+  source_line: 'China''s industrial production: China''s industrial production, a
+    measurement of output in China''s manufacturing, mining and utilities sectors,
+    grew by 14.1 per cent in March 2021 compared with a year earlier, up from 35.1
+    per cent in combined figures for Januar'
+  unit: null
+  values:
+  - 14.1
+  - 2021.0
+  - 35.1
+  - 2021.0
+- section: Main
+  section_type: null
+  source_line: 'China''s new loans: Chinese banks extended 2.73 trillion yuan in new
+    yuan loans in March, up from 1.36 trillion yuan in February and exceeding analyst
+    expectations.'
+  unit: null
+  values:
+  - 2.73
+  - 1.36
+- section: Main
+  section_type: null
+  source_line: 'China''s surveyed jobless rate: China''s surveyed jobless rate, an
+    imperfect measurement of unemployment in China that does not include figures for
+    the nation''s tens of millions of migrant workers, stood at 5.3 per cent in March,
+    down from 5.5 per cent in Februa'
+  unit: null
+  values:
+  - 5.3
+  - 5.5
+  - 11.0
+  - 2021.0
+  - 9.0
+  - 2020.0
+  - 5.5
+  - 6.0
+  - 2020.0
+- section: Main
+  section_type: null
+  source_line: 'China''s foreign exchange reserves: China''s foreign exchange reserves,
+    the largest in the world, fell to US$3.17 trillion in March, compared with US$3.205
+    trillion in February.'
+  unit: usd
+  values:
+  - 3.17
+  - 3.205
+- section: Main
+  section_type: null
+  source_line: Beijing's growth target of above 6 per cent is well below the the full-year
+    growth rate of over 8 per cent expected by analysts and the International Monetary
+    Fund (IMF). Some say that growth rate was chosen to acknowledge that this year's
+    growth was skewed up
+  unit: null
+  values:
+  - 6.0
+  - 8.0
+  - 2020.0
+  - 2.3
+  - 6.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: There are projections that the US growth rate - aided by US government
+    economic stimulus - will surpass that of China beginning in the third quarter,
+    but only for a few quarters, with the IMF projecting China growth will easily
+    exceed that of the US for the fu
+  unit: null
+  values:
+  - 2022.0
 regions:
 - china
 - brazil

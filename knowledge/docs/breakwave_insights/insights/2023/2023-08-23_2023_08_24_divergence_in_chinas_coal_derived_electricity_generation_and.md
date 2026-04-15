@@ -25,7 +25,40 @@ keywords:
 - growth
 - hydropower
 - months.
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Thermal coal-derived electricity generation continues to make up the
+    bulk of China's electricity production and totaled a record 599.7 billion kilowatt
+    hours last month. This has marked a month-on-month increase of 76.9 billion kilowatt
+    hours (15%) and is up y
+  unit: pct
+  values:
+  - 599.7
+  - 76.9
+  - 15.0
+  - 43.7
+  - 8.0
+- section: Main
+  section_type: null
+  source_line: China's hydropower generation totaled 121.1 billion kilowatt hours
+    last month. This has marked a month-on-month increase of 22.9 billion kilowatt
+    hours (23%) but is down year-on-year by 25.2 billion kilowatt hours (-17%). Chin'a's
+    hydropower generation has now
+  unit: pct
+  values:
+  - 121.1
+  - 22.9
+  - 23.0
+  - 25.2
+  - -17.0
 regions:
 - china
 - brazil

@@ -26,7 +26,63 @@ keywords:
 - month-on-month
 - indonesia
 - africa
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'China imported 17 million tons of coal from Indonesia in June, which
+    is up month-on-month by 5.8 million tons (52%) and up year-on-year by 6.2 million
+    tons (57%). China imported 5.3 million tons from Russia, which is up month-on-month
+    by 200,000 tons (4%) and '
+  unit: pct
+  values:
+  - 17.0
+  - 5.8
+  - 52.0
+  - 6.2
+  - 57.0
+  - 5.3
+  - 200000.0
+  - 4.0
+  - 2.4
+  - 83.0
+- section: Main
+  section_type: null
+  source_line: Also notable is imports from Canada, the Philippines, the United States,
+    Colombia, and South Africa all experienced year-on-year growth. China imported
+    1.1 million tons from Canada, which is up month-on-month by 600,000 tons (120%)
+    and up year-on-year by 500,0
+  unit: pct
+  values:
+  - 1.1
+  - 600000.0
+  - 120.0
+  - 500000.0
+  - 83.0
+  - 1.0
+  - 200000.0
+  - -17.0
+  - 900000.0
+  - 900.0
+- section: Main
+  section_type: null
+  source_line: In the near term, China's coal imports from most exporters other than
+    Australia are poised to continue to grow as China continues to have a shortage
+    of both thermal and coking coal. The thermal coal shortage is particularly significant
+    at present as peak summe
+  unit: pct
+  values:
+  - 14.0
+  - 0.2
+  - 14.0
+  - 30.0
+  - 15.0
 regions:
 - china
 - brazil

@@ -28,7 +28,62 @@ keywords:
 - july
 - levels
 - still
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Freight futures dipped, as nervousness about the near term direction
+    of spot led to some profit taking following the significant advances over the
+    last few days. At the end of the trading day, Capesize futures were down ~7% while
+    Panamax futures closed down 5%
+  unit: pct
+  values:
+  - 7.0
+  - 5.0
+  - 29000.0
+  - 23500.0
+- section: Main
+  section_type: null
+  source_line: Still, the difference between spot prices and futures is massive, with
+    the July contract now more than 5,000 below spot . Although this inside the historical
+    range, it shows the increased caution in the market for the direction of spot
+    prices near term.
+  unit: null
+  values:
+  - 5000.0
+- section: Main
+  section_type: null
+  source_line: 'As Arrow mentions, the VLOC (Very Large Ore Carrier) and Valemax (400k
+    dwt vessels) vessel arrivals in Brazil remain at average levels and as a result
+    it won''t have a lot of impact on the supply/demand balance in the Atlantic:'
+  unit: null
+  values:
+  - 400.0
+- section: Main
+  section_type: null
+  source_line: VLOC/Valemax arrivals in Brazil are expected to remain around or below
+    average weekly levels of 4m-dwt until the week starting 13 July. The thin list
+    of ballasters in the coming weeks has partly fueled the ongoing rally of cape
+    rates. Moving towards the second
+  unit: null
+  values:
+  - 13.0
+  - 6.6
+  - 5.0
+  - 7.0
+- section: Main
+  section_type: null
+  source_line: One should always remember that Capesize rates were at 3,200 just a
+    month ago….
+  unit: null
+  values:
+  - 3200.0
 regions:
 - china
 - brazil

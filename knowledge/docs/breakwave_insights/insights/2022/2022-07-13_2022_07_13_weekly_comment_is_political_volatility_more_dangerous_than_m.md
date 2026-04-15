@@ -25,7 +25,38 @@ keywords:
 - when
 - civil
 - rome
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: cautiously_bearish
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Born in September 63 BCE, Gaius Octavius Thurinus, was a noble Roman,
+    ushered into an age of trouble. In the very days when he was welcomed into the
+    world, Rome was being plunged into a violent civil war as a nobleman, Catilina,
+    tried to overthrow the Senate. '
+  unit: null
+  values:
+  - 63.0
+  - 11.0
+  - 49.0
+  - 44.0
+  - 19.0
+  - 32.0
+- section: Main
+  section_type: null
+  source_line: Last week was eventful in terms of political developments. British
+    Prime Minister Boris Johnson, was dramatically forced out of office by a cabinet
+    revolt. Early on Friday, former Japanese PM Shinzo Abe was shot dead in a country
+    that features zero gun violenc
+  unit: null
+  values:
+  - 6.0
+  - 2021.0
 regions:
 - china
 - brazil

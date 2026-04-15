@@ -29,7 +29,53 @@ keywords:
 - brazilian
 - chinese
 - during
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: cautiously_bearish
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The last week has seen iron ore prices dropping to readings not seen
+    since early July, with the possibility of the 200 dollars per tonne level being
+    tested from above. A combination of factors has seen the prices coming under pressure,
+    probably much to the del
+  unit: null
+  values:
+  - 200.0
+- section: Main
+  section_type: null
+  source_line: The softening demand for steel has led to iron ore inventories building
+    up in many Chinese ports, with Mysteel reporting that total portside stockpiles
+    are approaching 130 million tonnes. While the number may appear large, it is the
+    equivalent of approximately
+  unit: null
+  values:
+  - 130.0
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: The seasonal softening of Chinese iron ore demand is not the only reason
+    for falling iron ore prices, with an improving outlook for production being a
+    contributor as well. So far this year, Brazilian output growth has fallen below
+    expectations, but a recent st
+  unit: null
+  values:
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: The Brazilian mining giant, Vale, has also recently reiterated its
+    full-year production target of 315-335 million tonnes, despite falling short of
+    the targets in the first half of the year. The company has additionally stated
+    that it has reached a production c
+  unit: null
+  values:
+  - 315.0
+  - -335.0
+  - 330.0
 regions:
 - china
 - brazil

@@ -28,7 +28,33 @@ keywords:
 - prices
 - are
 - chinese
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'It is not only iron ore that has seen large parts of the year-to-date
+    gains erased in recent weeks, copper has seen its gains dropping from 35 per cent
+    in May to fifteen per cent on concerns of a more problematic global recovery than
+    expected and an improving '
+  unit: null
+  values:
+  - 35.0
+- section: Main
+  section_type: null
+  source_line: The Phase One trade deal, that was concluded between the US and China
+    at the beginning of last year, has so far not been a runaway success. For imports
+    of US manufactured goods and energy, China is lagging well behind the volumes
+    implied by the agreement and t
+  unit: null
+  values:
+  - 90.0
+  - 2017.0
 regions:
 - china
 - brazil

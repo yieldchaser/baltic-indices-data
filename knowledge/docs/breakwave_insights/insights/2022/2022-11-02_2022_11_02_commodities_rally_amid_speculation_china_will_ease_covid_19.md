@@ -27,7 +27,75 @@ keywords:
 - are
 - covid-19
 - demand.
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: cautiously_bearish
+numeric_observation_count: 6
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Commodities rallied on reports that China will ease COVID-19 restrictions.
+    Speculation of a less hawkish Federal Reserve also boosted sentiment.
+  unit: null
+  values:
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: Copper led the base metals sector higher on speculation that Beijing
+    is preparing to ease China's stringent COVID-19 rules. News that a committee is
+    being formed to assess scenario on how to exit from its zero-COVID strategy swirled
+    around the market, initiall
+  unit: tonnage
+  values:
+  - 19.0
+  - 1.95
+  - 110.0
+- section: Main
+  section_type: null
+  source_line: Sentiment in the iron ore was also boosted by the speculation China
+    is looking to ease COVID-19 restrictions. Prior to that, futures had been under
+    further pressure amid concerns of weak demand. The China Iron and Steel Association
+    said that apparent steel con
+  unit: pct
+  values:
+  - 19.0
+  - 4.2
+- section: Main
+  section_type: null
+  source_line: Gold rebounded as the USD weakened ahead of the FOMC meeting. The move
+    was sparked by speculation that the US Federal Reserve will soon slow down its
+    aggressive monetary tightening. While swap markets are still pricing in a 75bp
+    hike, some strategists in the m
+  unit: pct
+  values:
+  - 75.0
+  - 1.0
+  - 650.0
+- section: Main
+  section_type: null
+  source_line: Crude oil also gained on the China news, with a weaker USD also supporting
+    prices. Potential changes to China's COVID-19 policy could have significant implications
+    for oil demand. Ongoing restrictions and lockdowns have weighed on demand. This
+    comes amid persi
+  unit: usd
+  values:
+  - 19.0
+  - 2019.0
+  - 2.0
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: European natural gas extended recent falls as another spell of warm
+    weather delays the heating season. This could persist through to mid-November,
+    according to forecaster Mazar. Fellow forecaster also expects no cold spells in
+    November. This has left inventori
+  unit: pct
+  values:
+  - 95.0
+  - 99.0
 regions:
 - china
 - brazil

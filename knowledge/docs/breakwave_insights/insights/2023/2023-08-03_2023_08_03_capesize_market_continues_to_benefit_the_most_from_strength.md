@@ -27,7 +27,23 @@ keywords:
 - steel
 - ore
 - remains
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 1
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'Dry bulk rates were mixed last week, with capesize and panamax rates
+    rising while supramax and handysize rates fell. We remain most bullish for the
+    capesize market. Rates have not increased solely due to last week''s typhoon in
+    the Pacific basin. Chinese steel '
+  unit: null
+  values:
+  - 2020.0
 regions:
 - china
 - brazil

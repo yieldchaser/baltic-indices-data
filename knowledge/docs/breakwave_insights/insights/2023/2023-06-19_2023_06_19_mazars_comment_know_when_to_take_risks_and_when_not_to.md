@@ -24,7 +24,50 @@ keywords:
 - may
 - not
 - risks
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Know when to take risks, and when not to.
+  section_type: null
+  source_line: '‘Providence protect idiots'' Otto Von Bismarck once exclaimed. I''m
+    never quite sure what the direct intentions of the Almighty are. Bismarck, a Prussian
+    Prince and one of the great leaders of the 19th century, might have had a more
+    direct line of communication '
+  unit: null
+  values:
+  - 19.0
+- section: Know when to take risks, and when not to.
+  section_type: null
+  source_line: Meanwhile, the European Central Bank raised its key interest rate by
+    a quarter point and is further draining liquidity by letting its emergency loans
+    expire, which would require Italian banks to go to the markets for funding. The
+    Bank of England, meanwhile, is
+  unit: pct
+  values:
+  - 1.0
+- section: Know when to take risks, and when not to.
+  section_type: null
+  source_line: 'Central banks are removing all the stops to stem the inflation wage-price
+    spiral. What''s on the line is not just prices, but, much more importantly, the
+    public''s belief that they can be trusted to bring price growth down to 2% in
+    a timely manner. That belief, '
+  unit: pct
+  values:
+  - 2.0
+- section: Know when to take risks, and when not to.
+  section_type: null
+  source_line: 'Second, they must look beyond the S&P 500 headlines . The stock rally
+    is very narrow, a gold rush on the back of Chat GPT''s success. There were more
+    articles about ‘AI'' at the end of May, than there ever were about Bitcoin. However,
+    we have no assurances that '
+  unit: null
+  values:
+  - 500.0
 regions:
 - china
 - brazil
@@ -55,7 +98,7 @@ themes:
 - inflation
 - liquidity
 - bad
-title: Mazars Comment Know When To Take Risks And When Not To
+title: 'Mazars Comment : Know when to take risks, and when not to'
 vessel_classes:
 - capesize
 - panamax

@@ -25,7 +25,68 @@ keywords:
 - vessels
 - fleet
 - sanctions
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: neutral
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'However, so far, the implementation of the EU sanctions and with the
+    price cap mechanism have allowed for three profiles of crude tankers to surface
+    since December 5th:'
+  unit: null
+  values:
+  - 5.0
+- section: Main
+  section_type: null
+  source_line: Vessels servicing Russian crude exports under the price cap mechanism,
+    allowing the use of European reinsurance and other shipping related services,
+    if Russian crude is exported at prices below currently $60/b, as set by the G-7
+    group. In this case, the standa
+  unit: usd
+  values:
+  - 60.0
+  - 7.0
+  - 1.0
+  - 60.0
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: For the coming months the crucial questions are 1) whether Russia can
+    find sufficient buyers for its crude oil and whether 2) there is a sufficient
+    fleet to export Russian oil to international waters. The segmentation of the fleet
+    could lead to significant ine
+  unit: null
+  values:
+  - 1.0
+  - 2.0
+  - 3.0
+- section: Main
+  section_type: null
+  source_line: In other words, is there a case of a vessel being able to move between
+    Tier-1 and Tier-2 depending on market changes, and if yes, how easily can this
+    move be accomplished? This can be partially reflected in the EU decision that
+    vessels operating in the Russian
+  unit: null
+  values:
+  - 1.0
+  - 2.0
+  - 2.0
+  - 90.0
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: As we are entering 2023 with new regulatory frameworks influencing
+    the design and the operation of ships which will also weigh on chartering decisions,
+    these recently introduced policies and the forthcoming ones on CPP tankers in
+    February are bound to shape sh
+  unit: null
+  values:
+  - 2023.0
 regions:
 - china
 - brazil
@@ -60,7 +121,7 @@ themes:
 - india
 - japan
 - crude_oil
-title: Crude Tankers 3 Tier Fleet Reveals Itself Post Eu Ban
+title: 'Crude Tankers: 3-tier fleet reveals itself post-EU ban'
 vessel_classes:
 - capesize
 - panamax

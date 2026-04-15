@@ -26,7 +26,70 @@ keywords:
 - gas
 - energy
 - markets
+linked_assets_discovered: 4
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 4
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Energy markets surged higher as Russia curbed gas supplies further.
+    Dutch front month futures rallied more than 13% to end the session just shy of
+    EUR200/MWh following Gazprom's announcement yesterday that gas flows through Nord
+    Stream would be cut to 20% of c
+  unit: worldscale_pct
+  values:
+  - 13.0
+  - 20.0
+  - 15.0
+  - 11.0
+  - 80.0
+- section: Main
+  section_type: null
+  source_line: Russia's move to cut natural gas supply to Europe increased fears of
+    competition for LNG cargoes. North Asian LNG rose more than 2% to push above USD40/MMBtu
+    as Asian consumers, including South Korea and Japan, scrambled to secure any available
+    shipments being
+  unit: pct
+  values:
+  - 2.0
+  - 19.0
+- section: Main
+  section_type: null
+  source_line: 'The gas crisis also sent coal markets higher. European coal futures
+    on ICE hit a record high while Newcastle futures climbed more than 8% to USD440/t.
+    Coal markets have tightened up significantly as the recent extreme weather has
+    seen strong demand from power '
+  unit: pct
+  values:
+  - 8.0
+  - 40.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: 'The energy crisis in Europe also weighed on crude oil markets, with
+    Brent crude rising sharply in early trade. This is being compounded by ongoing
+    signs of tightness in the physical market. Earlier this week, ship tracking data
+    showed that Russian oil exports '
+  unit: pct
+  values:
+  - 480.0
+  - 13.0
+  - 1000.0
+  - 64.0
+  - 88.0
+- section: Main
+  section_type: null
+  source_line: Gold was steady as investors prepare for another aggressive rate hike
+    by the US Federal Reserve. Traders are pricing in a 75bp increase at the FOMC
+    meeting this week. Weak economic data, including a sharp fall in US consumer confidence
+    saw strong support for h
+  unit: null
+  values:
+  - 75.0
 regions:
 - china
 - brazil

@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1018,
+  "token_count": 1222,
   "source_path": "reports/breakwave/2022/2022-07-21_global-market-update.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/7/21/global-market-update",
   "children": [
@@ -160,8 +160,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 135,
+      "token_count": 170,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-07-21_2022_07_21_global_market_update__s06_linked_asset_2022_07_21_global_market_update_img_unnamed285029_980e7dbc7a01_png",
+      "doc_id": "breakwave_insights_insights_2022-07-21_2022_07_21_global_market_update",
+      "parent_id": "breakwave_insights_insights_2022-07-21_2022_07_21_global_market_update__root",
+      "title": "Linked asset: 2022-07-21_global-market-update_img_unnamed285029_980e7dbc7a01.png",
+      "section_path": [
+        "Linked asset: 2022-07-21_global-market-update_img_unnamed285029_980e7dbc7a01.png"
+      ],
+      "section_path_text": "Linked asset: 2022-07-21_global-market-update_img_unnamed285029_980e7dbc7a01.png",
+      "level": 1,
+      "ordinal": 6,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-07-21_global-market-update_img_unnamed285029_980e7dbc7a01.png\n\nLinked image asset: 2022-07-21_global-market-update_img_unnamed285029_980e7dbc7a01.png\n\nImage metadata: PNG 1119x465 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nWeekly Cargo Order Volumes (TCT & Voyage) for Bauxite Loading in West Africa ©\n3Y 2¥ 1Y Al\n2\n2\na\n& 4 kK",
+      "keywords": [
+        "west_africa",
+        "bauxite",
+        "asset",
+        "image",
+        "africa",
+        "cargo",
+        "dpi",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 140,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

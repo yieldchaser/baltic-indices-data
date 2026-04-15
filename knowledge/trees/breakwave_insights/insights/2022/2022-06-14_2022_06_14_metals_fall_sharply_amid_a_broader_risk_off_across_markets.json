@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-06-14_2022_06_14_metals_fall_sharply_amid_a_broader_risk_off_across_markets__root",
   "doc_id": "breakwave_insights_insights_2022-06-14_2022_06_14_metals_fall_sharply_amid_a_broader_risk_off_across_markets",
   "parent_id": null,
-  "title": "Metals Fall Sharply Amid A Broader Risk Off Across Markets",
+  "title": "Metals fall sharply amid a broader risk off across markets",
   "section_path": [
-    "Metals Fall Sharply Amid A Broader Risk Off Across Markets"
+    "Metals fall sharply amid a broader risk off across markets"
   ],
-  "section_path_text": "Metals Fall Sharply Amid A Broader Risk Off Across Markets",
+  "section_path_text": "Metals fall sharply amid a broader risk off across markets",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nA broad risk-off tone across markets saw commodities start the week under further pressure. Precious and industrial metals led the complex lower as the USD weighed on investor appetite. Gold fell the most in three months as rampant inflation raised the prospect of aggressive monetary tightening by the US Federal Reserve.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 753,
+  "token_count": 1234,
   "source_path": "reports/breakwave/2022/2022-06-14_metals-fall-sharply-amid-a-broader-risk-off-across-markets.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/6/14/metals-fall-sharply-amid-a-broader-risk-off-across-markets",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 751,
+      "token_count": 806,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-06-14_2022_06_14_metals_fall_sharply_amid_a_broader_risk_off_across_markets__s02_linked_asset_2022_06_14_metals_fall_sharply_amid_a_broader_risk_off_across_markets_img_1655156938450_b3bb5c298a29_png",
+      "doc_id": "breakwave_insights_insights_2022-06-14_2022_06_14_metals_fall_sharply_amid_a_broader_risk_off_across_markets",
+      "parent_id": "breakwave_insights_insights_2022-06-14_2022_06_14_metals_fall_sharply_amid_a_broader_risk_off_across_markets__root",
+      "title": "Linked asset: 2022-06-14_metals-fall-sharply-amid-a-broader-risk-off-across-markets_img_1655156938450_b3bb5c298a29.png",
+      "section_path": [
+        "Linked asset: 2022-06-14_metals-fall-sharply-amid-a-broader-risk-off-across-markets_img_1655156938450_b3bb5c298a29.png"
+      ],
+      "section_path_text": "Linked asset: 2022-06-14_metals-fall-sharply-amid-a-broader-risk-off-across-markets_img_1655156938450_b3bb5c298a29.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-06-14_metals-fall-sharply-amid-a-broader-risk-off-across-markets_img_1655156938450_b3bb5c298a29.png\n\nLinked image asset: 2022-06-14_metals-fall-sharply-amid-a-broader-risk-off-across-markets_img_1655156938450_b3bb5c298a29.png\n\nImage metadata: PNG 1556x404 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nFri 10-Jun = Mon 13-Jun % chg Daily % chg Daily % chg\nCCI 569.81 565.00 -0.8% Brent crude 122.4 Gold 1,819 -2.8%\nPrecious 639.58 621.25 -2.9% Thermal coal 390.35 -0.5% Palladium 1,769 -24.3%\nIndustrials 437.46 428.02 -2.2% JKM LNG swaps 23.04 -2.8% Iron Ore 133.6 -2.6%\nBulks 632.77 627.38 -0.9% Copper 9,293 -1.7% Hogs 2,450 0.0%\nAgs 346.47 343.96 -0.7% Nickel 25,873 -4.9% Corn 443 -0.7%\nEnergy 819.60 816.07 -0.4% Aluminium 2,612 -2.1% Wheat 509 -1.8%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 379,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

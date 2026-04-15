@@ -26,7 +26,198 @@ keywords:
 - economic
 - prices
 - russia
+linked_assets_discovered: 9
+linked_assets_failed: 0
+linked_assets_ingested: 1
+linked_assets_mirrored: 1
+linked_assets_skipped: 8
 market_tone: constructive
+numeric_observation_count: 23
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: ‘Cancel culture' is not a new thing. Ancient Egyptians did it regularly
+    for Pharaohs who were not liked by their successors, like Queen Hatshepsut (1507-1458
+    BCE). Publius Septimius Geta (AD 189-211) was an emperor slain by his brother,
+    Caracalla, and virtuall
+  unit: null
+  values:
+  - 1507.0
+  - -1458.0
+  - 189.0
+  - -211.0
+- section: Main
+  section_type: null
+  source_line: In the past week, we are witnessing a historical novelty, however.
+    The essential cancelling of an existing state, a nuclear superpower no less, and
+    its people. It's not just banks and oligarchs. It's Russian athletes and sports
+    teams, Russian expats and Russia
+  unit: null
+  values:
+  - 22.0
+- section: Main
+  section_type: null
+  source_line: 'Image reference: unsplash-image-7LbpOoXF-v8.jpg | assets/2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  unit: null
+  values:
+  - 7.0
+  - 2022.0
+  - -3.0
+  - -8.0
+  - 7.0
+  - 71.0
+  - 66.0
+- section: Main
+  section_type: null
+  source_line: Of course space is just a small issue. While economic sanctions might
+    have the intention of agitating Russians to find a way to discard Mr. Putin, there
+    is no guarantee that this will happen. Leaders seem seldom personally affected
+    by sanctions. Saddam Hussein
+  unit: pct
+  values:
+  - 2015.0
+  - 60.0
+  - 1970.0
+- section: Main
+  section_type: null
+  source_line: Russia is a key producer of energy, nickel and palladium (used for
+    car manufacturing), wheat (along with Ukraine 1/3 of global production), copper,
+    gold and alumiunum. Supply chains that were just beginning to recover after tremendous
+    pressure are now facing a
+  unit: pct
+  values:
+  - 1.0
+  - 3.0
+  - 4.4
+  - 2022.0
+  - 150.0
+  - 130.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: 'Linked image asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  unit: null
+  values:
+  - 2022.0
+  - -3.0
+  - -8.0
+  - 7.0
+  - 71.0
+  - 66.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: 'Image metadata: JPEG 2500x1667 mode=RGB'
+  unit: null
+  values:
+  - 2500.0
+  - 667.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: aie RR ‘ i | ae | & s)6|(CUe 5
+  unit: null
+  values:
+  - 6.0
+  - 5.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: '7a) e x. 7 \b f a hen & sera p . é€6©F W@W, '' :'
+  unit: null
+  values:
+  - 7.0
+  - 7.0
+  - 6.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: 5 mY sitar ontit al | z= | Wh oN Ye ; | Cras ya Fa
+  unit: null
+  values:
+  - 5.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: '¢ we aS . Ge : qi 3 ; : : ,'
+  unit: null
+  values:
+  - 3.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: lf Se. PSE. aa 2 = ~ Pe
+  unit: null
+  values:
+  - 2.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: 'VM iF 7 fe = . - ro § = 3" \ ved , eae : 5 ie - ins'
+  unit: null
+  values:
+  - 7.0
+  - 3.0
+  - 5.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: OL / Ads ; , 7 i Bo ere? Sok BS . ine ager
+  unit: null
+  values:
+  - 7.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: '. . : . ¥ Str We en Soe ¢ bee ie te R 24 oes ; 32 = Paren 7 : at AS.
+    Spee a See i'
+  unit: null
+  values:
+  - 24.0
+  - 32.0
+  - 7.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: ': y <n : _ is . we .» = a ak "Sen tn Pos ? ‘ ‘ - 1 ; 5 é ;'
+  unit: null
+  values:
+  - 1.0
+  - 5.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: '-_ - ue " vue fn. > ree 7: ‘ ; vas ¥ oa fi = ; ¢ ae . é . . ia pee
+    --'
+  unit: null
+  values:
+  - 7.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: '| 7 " --, ‘ - = a e. ='
+  unit: null
+  values:
+  - 7.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: _ S = ao a ~ & 4 7 RB - ve.
+  unit: null
+  values:
+  - 4.0
+  - 7.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: '- aes & 2 ey |'
+  unit: null
+  values:
+  - 2.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: . " ly 7 rs ¥ b ee " +i
+  unit: null
+  values:
+  - 7.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: 2 2 ' \\ = =-¥
+  unit: null
+  values:
+  - 2.0
+  - 2.0
+- section: 'Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg'
+  section_type: linked_image_asset
+  source_line: a " 4 ' - ~ , = J cance - es
+  unit: null
+  values:
+  - 4.0
 regions:
 - china
 - brazil
@@ -36,7 +227,7 @@ regions:
 - meg
 - west_africa
 - europe
-section_count: 2
+section_count: 3
 signals: {}
 source: breakwave_insights
 source_path: reports/breakwave/2022/2022-03-08_cancelling-russia-will-be-expensive.html
@@ -57,7 +248,7 @@ themes:
 - grain
 - crude_oil
 - are
-title: Cancelling Russia Will Be Expensive
+title: '"Cancelling" Russia will be expensive'
 vessel_classes:
 - capesize
 - panamax
@@ -79,6 +270,7 @@ By George Lagarias
 Cancelling a person, right or wrong, is no small feat, and there are repercussions. "House of Cards" was a series that literally made Netflix, yet it features much less prominently after Kevin Spacey's cancellation. The cancelled actor/celebrity will have worked with other people, who will now see their incomes reduced as works of art are withdrawn and themselves smeared by association. Cancelling a single human being may have outsized repercussions for everybody associated with them. Cancelling a state in a globalised world is a much, much bigger affair.
 To be sure, states have been cancelled in the past. Prussia is the most famous example. A kingdom of formidable warriors, between Poland and Germany, for three centuries it played a crucial role in European geopolitics. It was Prussian Gebhard Leberecht von Blücher who essentially turned the tide at Waterloo and changed European history. Prussia was dismantled after the first world war, a ‘punishment' for nurturing the bulk of German Army officers. Today, most Europeans would be hard-pressed to point it on a map. Same as Bohemia, Gran Colombia or Zanzibar.
 In the past week, we are witnessing a historical novelty, however. The essential cancelling of an existing state, a nuclear superpower no less, and its people. It's not just banks and oligarchs. It's Russian athletes and sports teams, Russian expats and Russian culture, including the Ballets. Electronic Arts updated its flagship "FIFA 22" game to omit all Russian Teams. Developed markets mean to behave as if Russia simply is an ex-entity .
+Image reference: unsplash-image-7LbpOoXF-v8.jpg | assets/2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg
 But western sanctions over the Ukrainian war are great and far-reaching, way beyond Russia and its nationals.
 As with any historical novelty, we should also expect novel repercussions.
 Take for example, space. Russia's space capabilities are being used by companies and countries. Roscosmos (the Russian equivalent of NASA) refused to launch British communication satellites last week and warned that it's perfectly happy to let the International Space Station, used by scientists of all nations, crash to earth. Years of space research may be lost, and the location of the crash is still a question.
@@ -90,3 +282,55 @@ More dominoes may yet fall. China, which is by far Russia's biggest trading part
 ## What does it all mean for investors?
 The point we are trying to make is that the war in Ukraine and the concomitant reactions will have consequences we can't yet imagine or, frankly, predict and plan for. As economic concerns take a backseat over geopolitical objectives, so will final decisions and, inasmuch as policy affects them, the returns for risk assets. This is what textbook "systematic risk" looks like, and it is un-hedgeable. But unlike anything we have seen in the past forty years, this instance comes with high inflation, which prevents central banks from mitigating the bulk of that risk. It also makes holding cash as an alternative a very expensive proposition.
 The repercussions of this war and the West's response will be felt across the globe on both the economic and political front for many years. Investors with a high tolerance for risk may choose to roll the dice. As with any significant milestone in financial history, the next few months will see new winners and ‘gurus' emerge, while failed strategies will be forced to throw in the towel. But for the critical mass of investors, those for whom risk is a measurable quantity and financial planning is part of the equation, we think that the best course is to avoid taking significant action before the dust settles and trust in the long term properties of diversified portfolios.
+
+## Linked asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg
+Source asset: reports/breakwave/2022/assets/2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg
+
+Linked image asset: 2022-03-08_cancelling-russia-will-be-expensive_img_unsplash-image-7lbpooxf-v8_71c7dbec966d.jpg
+
+Image metadata: JPEG 2500x1667 mode=RGB
+
+OCR text:
+--
+~.
+= : . f
+| ; -
+Co
+-mo-
+py4
+re N
+am y
+SBt>> ee oni - - = "] > ros.
+aie RR ‘ i | ae | & s)6|(CUe 5
+7a) e x. 7 \b f a hen & sera p . é€6©F W@W, ' :
+. eae) i" AWAITC I Te. as ~
+5 mY sitar ontit al | z= | Wh oN Ye ; | Cras ya Fa
+| ¥ Bey por ; " Ki . LX j { " as "ah | ne eee) . = ' bs t a \
+tt Ye \ a /
+| | -. : : |
+' / le) iid | ao, a ritdudt ee eo -;
+: ee ney oe ce
+¢ we aS . Ge : qi 3 ; : : ,
+| poe' ee Lee ike ~ cat ek
+lf Se. PSE. aa 2 = ~ Pe
+VM iF 7 fe = . - ro § = 3" \ ved , eae : 5 ie - ins
+OL / Ads ; , 7 i Bo ere? Sok BS . ine ager
+. . : . ¥ Str We en Soe ¢ bee ie te R 24 oes ; 32 = Paren 7 : at AS. Spee a See i
+. x Pe Ken vu Eh are Fo alae . pd tee gor sae : ~ - aes : rN : PEASE a
+: y <n : _ is . we .» = a ak "Sen tn Pos ? ‘ ‘ - 1 ; 5 é ;
+-_ - ue " vue fn. > ree 7: ‘ ; vas ¥ oa fi = ; ¢ ae . é . . ia pee --
+‘ -- - i * ere we ees be "- a. : -
+Mi wi de elie --- _- ) TES
+e - aa =
+| 7 " --, ‘ - = a e. =
+, -_-- - -» e + ss / |
+-- a, ee _> .
+ee ss - = Me
+- oe . y g ens Le
+_ S = ao a ~ & 4 7 RB - ve.
+- aes & 2 ey |
+. " ly 7 rs ¥ b ee " +i
+2 2 ' \\ = =-¥
+A -- Y - fa
+i. ie ot S=,*
+a " 4 ' - ~ , = J cance - es

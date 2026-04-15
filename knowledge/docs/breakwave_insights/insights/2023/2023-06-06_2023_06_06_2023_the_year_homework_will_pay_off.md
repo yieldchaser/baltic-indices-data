@@ -24,7 +24,42 @@ keywords:
 - inflation
 - next
 - not
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Credit conditions are set to tighten in the next few months, and investors
+    should not expect to see easier credit conditions until, possibly, 2025. As such
+    they should do their homework as to which organisations have been adequately prepared
+    for this difficult
+  unit: null
+  values:
+  - 2025.0
+- section: The year Homework Will Pay Off
+  section_type: null
+  source_line: The debt ceiling drama-that-wasn't is squarely behind us. An eleventh-hour
+    deal was signed, averting the wanton default of the biggest economy in the world,
+    and the global risk-free asset, the US Dollar, marking the 79th straight time
+    that the debt ceiling was
+  unit: null
+  values:
+  - 79.0
+- section: The year Homework Will Pay Off
+  section_type: null
+  source_line: 'The first and foremost risk is that inflation is becoming stickier,
+    making monetary policy more constrictive and credit tighter. Even at the best
+    of conditions, it''s difficult to see US inflation below 3% at the end of the
+    year and UK inflation below 5%. Even '
+  unit: pct
+  values:
+  - 3.0
+  - 5.0
 regions:
 - china
 - brazil
@@ -58,7 +93,7 @@ themes:
 - investors
 - should
 - banks
-title: 2023 The Year Homework Will Pay Off
+title: 'Mazars Comment: 2023 The Year Homework Will Pay Off'
 vessel_classes:
 - capesize
 - panamax

@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__root",
   "doc_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities",
   "parent_id": null,
-  "title": "Surging Energy Prices And Agricultural Commodities",
+  "title": "Surging Energy Prices and Agricultural Commodities",
   "section_path": [
-    "Surging Energy Prices And Agricultural Commodities"
+    "Surging Energy Prices and Agricultural Commodities"
   ],
-  "section_path_text": "Surging Energy Prices And Agricultural Commodities",
+  "section_path_text": "Surging Energy Prices and Agricultural Commodities",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Ulf Bergman\nThe global energy crunch continues to evolve, with international competition for scarce supplies driving prices ever higher. Thermal coal has gained just shy of thirty per cent since the middle of September, bringing the gains for the last twelve months close to a massive three hundred per cent. The global shortage of natural gas has seen many utilities and countries switching to the dirtier but cheaper fossil fuel, leading it to join the general surge in energy prices despite ever higher ambitions for decarbonisation.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 1035,
+  "token_count": 2025,
   "source_path": "reports/breakwave/2021/2021-10-05_surging-energy-prices-and-agricultural-commodities.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2021/10/5/surging-energy-prices-and-agricultural-commodities",
   "children": [
@@ -54,8 +54,120 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 1033,
+      "token_count": 1198,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__s02_linked_asset_2021_10_05_surging_energy_prices_and_agricultural_commodities_img_ch1_6130a8831a0f_png",
+      "doc_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities",
+      "parent_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__root",
+      "title": "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch1_6130a8831a0f.png",
+      "section_path": [
+        "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch1_6130a8831a0f.png"
+      ],
+      "section_path_text": "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch1_6130a8831a0f.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch1_6130a8831a0f.png\n\nLinked image asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch1_6130a8831a0f.png\n\nImage metadata: PNG 940x493 mode=RGBA\n\nOCR text:\nCoal\n225\n200\n175\n150\n125\n100\n75\nNov 2021 Apr Jun Aug Oct\nsource: trandingeconomics.com",
+      "keywords": [
+        "coal",
+        "asset",
+        "image",
+        "source",
+        "apr",
+        "aug",
+        "jun",
+        "linked"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 128,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__s03_linked_asset_2021_10_05_surging_energy_prices_and_agricultural_commodities_img_ch2_c3c6f55eb5f3_png",
+      "doc_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities",
+      "parent_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__root",
+      "title": "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch2_c3c6f55eb5f3.png",
+      "section_path": [
+        "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch2_c3c6f55eb5f3.png"
+      ],
+      "section_path_text": "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch2_c3c6f55eb5f3.png",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch2_c3c6f55eb5f3.png\n\nLinked image asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch2_c3c6f55eb5f3.png\n\nImage metadata: PNG 940x499 mode=RGBA\n\nEmbedded info:\ndpi: (149.987, 149.987)\n\nOCR text:\nWheat\n775\n750\n725\n700\n675\n650\n625\n600\n875\nNov 2021 Mar May Jul Sep\nsource: trandingeconomics.com",
+      "keywords": [
+        "grain",
+        "asset",
+        "image",
+        "source",
+        "dpi",
+        "embedded",
+        "info",
+        "jul"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 150,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__s04_linked_asset_2021_10_05_surging_energy_prices_and_agricultural_commodities_img_ch3_2ac7854f36e2_png",
+      "doc_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities",
+      "parent_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__root",
+      "title": "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch3_2ac7854f36e2.png",
+      "section_path": [
+        "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch3_2ac7854f36e2.png"
+      ],
+      "section_path_text": "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch3_2ac7854f36e2.png",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch3_2ac7854f36e2.png\n\nLinked image asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch3_2ac7854f36e2.png\n\nImage metadata: PNG 942x440 mode=RGBA\n\nOCR text:\nDry Bulk Congestion - US Gulf and West Coast\n120\n2\nF 100\n2 80\n=\n5 60\n3\n2 40\n2 2\n0\n» Sy Sy Sy ua y Sy Sy Sy Sy\nss 3 3s gs s & 3° es s s\nsy sy yy yy sy sy sy oy oy yy\n* * oS * * * * OS £ aS\nUS Gulf --=US West Coast\nData source: Oceanbolt",
+      "keywords": [
+        "us_gulf",
+        "asset",
+        "coast",
+        "gulf",
+        "image",
+        "source",
+        "west",
+        "congestion"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
+      "section_type": "linked_image_asset",
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__s05_linked_asset_2021_10_05_surging_energy_prices_and_agricultural_commodities_img_ch4_f3d6ff31e7ab_png",
+      "doc_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities",
+      "parent_id": "breakwave_insights_insights_2021-10-05_2021_10_05_surging_energy_prices_and_agricultural_commodities__root",
+      "title": "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch4_f3d6ff31e7ab.png",
+      "section_path": [
+        "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch4_f3d6ff31e7ab.png"
+      ],
+      "section_path_text": "Linked asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch4_f3d6ff31e7ab.png",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "Source asset: reports/breakwave/2021/assets/2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch4_f3d6ff31e7ab.png\n\nLinked image asset: 2021-10-05_surging-energy-prices-and-agricultural-commodities_img_ch4_f3d6ff31e7ab.png\n\nImage metadata: PNG 942x383 mode=P\n\nOCR text:\nChinese Seaborne Grain Imports\n20\n2\n2 15\n£\n2\n= 10 |\ng\nMMe ba EYRE RE RD Bet A Mb Mi AAT Ut et AO AE A\nJan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep\n2020 2021\nw Total ii rts ml rts fi US wl rts fi Brazil\notal imports _m Imports from Imports from Brazi Data source: Oceanbolt",
+      "keywords": [
+        "china",
+        "brazil",
+        "grain",
+        "imports",
+        "rts",
+        "apr",
+        "asset",
+        "aug"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 199,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

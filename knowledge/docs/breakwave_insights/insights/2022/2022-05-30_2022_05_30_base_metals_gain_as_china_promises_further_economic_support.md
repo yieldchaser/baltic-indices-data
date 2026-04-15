@@ -26,7 +26,54 @@ keywords:
 - gas
 - prices
 - are
+linked_assets_discovered: 3
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 3
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Base metals ended the week strongly as the combination of easing restrictions
+    and further stimulus measures in China boosted sentiment. Earlier in the week,
+    Chinese authorities cut a key interest rate for long term loans by a record amount.
+    This was followed b
+  unit: null
+  values:
+  - 19.0
+  - 40000.0
+- section: Main
+  section_type: null
+  source_line: Iron ore prices gained on signs that Chinese banks will boost lending
+    to support the property sector. Several lenders are said to be exploring moves
+    to expand credit after the PBoC urged financial institutions to beef up support
+    to the real economy. This comes
+  unit: pct
+  values:
+  - 2.15
+  - 134.3
+- section: Main
+  section_type: null
+  source_line: Crude oil prices posted their fifth weekly gain to close at their highest
+    level since early March amid signs of strong demand. Gasoline futures settled
+    above USD4/gallon in the US, as strong demand has pushed stockpiles below the
+    five-year seasonal average. Th
+  unit: tonnage
+  values:
+  - 1.0
+  - 50.0
+- section: Main
+  section_type: null
+  source_line: 'European natural gas ended the week largely unchanged as concerns
+    over disruptions to Russian gas eased. During the week Dutch front month futures
+    fell to USD86.50/MWh, their lowest level since the start of the war in Ukraine.
+    However, prices gained on Friday '
+  unit: usd
+  values:
+  - 6.5
+  - 2022.0
 regions:
 - china
 - brazil

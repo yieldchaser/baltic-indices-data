@@ -25,7 +25,77 @@ keywords:
 - year-on-year
 - iron
 - ore
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The dry bulk fleet continues to grow while Chinese iron ore, coal,
+    and soybean imports are in contraction. As has been widely reported, China imported
+    87.3 million tons of iron ore in March. This marks a month-on-month increase of
+    6 million tons (7%) but is do
+  unit: pct
+  values:
+  - 87.3
+  - 6.0
+  - 7.0
+  - 14.8
+  - -14.0
+  - 14.8
+  - -5.0
+- section: Main
+  section_type: null
+  source_line: China imported 16.4 million tons of coal in March. This marks a month-on-month
+    decline of 1.3 million tons (-7%) and is down year-on-year by 10.9 million tons
+    (-40%). As with in the iron ore market, we have also continued to stress that
+    there remains a solid c
+  unit: pct
+  values:
+  - 16.4
+  - 1.3
+  - -7.0
+  - 10.9
+  - -40.0
+  - 16.7
+  - -24.0
+- section: Main
+  section_type: null
+  source_line: China imported 6.3 million tons of soybeans in March. This marks a
+    month-on-month decline of 700,000 tons (-10%) and is down year-on-year by 1.3
+    million tons (-17%). As with in the iron ore and coal markets, there is also a
+    solid chance now that both Chinese s
+  unit: pct
+  values:
+  - 6.3
+  - 700000.0
+  - -10.0
+  - 1.3
+  - -17.0
+  - 900000.0
+  - -4.0
+- section: Main
+  section_type: null
+  source_line: The fact remains that global iron ore, coal, and grain trade volume
+    could actually contract on a year-on-year basis this year. The dry bulk fleet,
+    though, is all but guaranteed to continue to grow. Most recently, 28 dry bulk
+    newbuildings were delivered in Marc
+  unit: null
+  values:
+  - 28.0
+  - 11.0
+  - 5.0
+  - 10.0
+  - 6.0
+  - 7.0
+  - 3.0
+  - 6.0
+  - 5.0
+  - 3.0
 regions:
 - china
 - brazil

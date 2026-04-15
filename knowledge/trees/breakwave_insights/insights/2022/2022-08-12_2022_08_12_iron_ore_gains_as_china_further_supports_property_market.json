@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2022-08-12_2022_08_12_iron_ore_gains_as_china_further_supports_property_market__root",
   "doc_id": "breakwave_insights_insights_2022-08-12_2022_08_12_iron_ore_gains_as_china_further_supports_property_market",
   "parent_id": null,
-  "title": "Iron Ore Gains As China Further Supports Property Market",
+  "title": "Iron ore gains as China further supports property market",
   "section_path": [
-    "Iron Ore Gains As China Further Supports Property Market"
+    "Iron ore gains as China further supports property market"
   ],
-  "section_path_text": "Iron Ore Gains As China Further Supports Property Market",
+  "section_path_text": "Iron ore gains as China further supports property market",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nBy Daniel Hynes\nSigns of strong demand boosted sentiment across commodity markets. This was aided by the slight cooling of inflation, which eased concerns of more aggressive rate hikes and weaker economic activity. Crude oil gained as hopes of stronger demand rose.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 714,
+  "token_count": 1101,
   "source_path": "reports/breakwave/2022/2022-08-12_iron-ore-gains-as-china-further-supports-property-market.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2022/8/12/iron-ore-gains-as-china-further-supports-property-market",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 712,
+      "token_count": 755,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2022-08-12_2022_08_12_iron_ore_gains_as_china_further_supports_property_market__s02_linked_asset_2022_08_12_iron_ore_gains_as_china_further_supports_property_market_img_241_f5f8189e30ae_png",
+      "doc_id": "breakwave_insights_insights_2022-08-12_2022_08_12_iron_ore_gains_as_china_further_supports_property_market",
+      "parent_id": "breakwave_insights_insights_2022-08-12_2022_08_12_iron_ore_gains_as_china_further_supports_property_market__root",
+      "title": "Linked asset: 2022-08-12_iron-ore-gains-as-china-further-supports-property-market_img_241_f5f8189e30ae.png",
+      "section_path": [
+        "Linked asset: 2022-08-12_iron-ore-gains-as-china-further-supports-property-market_img_241_f5f8189e30ae.png"
+      ],
+      "section_path_text": "Linked asset: 2022-08-12_iron-ore-gains-as-china-further-supports-property-market_img_241_f5f8189e30ae.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2022/assets/2022-08-12_iron-ore-gains-as-china-further-supports-property-market_img_241_f5f8189e30ae.png\n\nLinked image asset: 2022-08-12_iron-ore-gains-as-china-further-supports-property-market_img_241_f5f8189e30ae.png\n\nImage metadata: PNG 1579x400 mode=RGB\n\nEmbedded info:\ndpi: (71.9836, 71.9836)\n\nOCR text:\nCommodity Markets\nANZ China Commodity Index Major Commodities\nWed 10-Aug Thu 11-Aug % chg Daily % chg Daily % chg\nCCI 637.00 642.81 Brent crude 99.28 Gold 1,788 -0.2%\nPrecious 622.58 620.96 -0.3% Thermal coal 401.00 Palladium 2,279 -2.5%\nIndustrials 388.49 394.23 JKM LNG swaps' 45.34 Iron Ore 108.9\nBulks 519.93 523.57 Copper 8,167 Hogs 3,150\nAgs 369.32 376.50 Nickel 23,580 Corn 427 -0.2%\nEnergy 967.04 973.49 Aluminium 2,525 Wheat 499 -0.3%",
+      "keywords": [
+        "lng",
+        "china",
+        "iron_ore",
+        "coal",
+        "grain",
+        "gas",
+        "chg",
+        "asset"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 305,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

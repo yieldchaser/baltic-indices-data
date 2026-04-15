@@ -26,7 +26,53 @@ keywords:
 - already
 - are
 - crude
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Over the past month we have seen a resurgence in oil tanker freight
+    rates as the Baltic Dirty Tanker Index (BDTI) has risen from lows of 713 in early
+    September to recent highs of 839, suggesting that dirty tankers are back in demand.
+    Historically, tanker rates
+  unit: null
+  values:
+  - 713.0
+  - 839.0
+- section: Main
+  section_type: null
+  source_line: The IEA forecast also supports this narrative. In its latest report,
+    the Paris -based international organisation expects a tight market. Demand is
+    forecast to grow by 1.5mbpd in the second half of the year, while supply will
+    only increase by 1.24mbpd. Supply h
+  unit: usd
+  values:
+  - 1.5
+  - 1.24
+  - 1.0
+  - 1.0
+  - 1.66
+  - 2024.0
+  - 300.0
+  - 100.0
+  - 349.0
+  - 40.0
+- section: Main
+  section_type: null
+  source_line: At the moment the market is in a situation where most participants
+    are betting that China will import more oil as its economy appears to be emerging
+    from recession, with oil imports from the top two exporters, Saudi Arabia and
+    Russia, remaining strong since Ju
+  unit: pct
+  values:
+  - 39.5
+  - 20.0
+  - 2023.0
 regions:
 - china
 - brazil

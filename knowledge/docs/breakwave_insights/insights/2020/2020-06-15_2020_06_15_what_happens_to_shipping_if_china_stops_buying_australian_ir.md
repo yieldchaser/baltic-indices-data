@@ -27,7 +27,57 @@ keywords:
 - not
 - imports
 - would
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The weekend article in Global Times that touched on China-Australia
+    relations and the impact on iron ore trade is of particular importance for the
+    dry bulk market. Australia ships more than 700 million tons of iron ore per year
+    to China, and thus such trade is
+  unit: null
+  values:
+  - 700.0
+- section: Main
+  section_type: null
+  source_line: Last year, Australia accounted for approximately 78% of all iron ore
+    imports to China. More importantly, 81% of all exported iron ore from Australia
+    ended up in China. Thus, the interdependence of the two countries on iron ore
+    trade is impossible to downplay.
+  unit: pct
+  values:
+  - 78.0
+  - 81.0
+- section: Main
+  section_type: null
+  source_line: 2019 Iron Ore Imports to China
+  unit: null
+  values:
+  - 2019.0
+- section: Main
+  section_type: null
+  source_line: For dry bulk shipping, the Australia-China iron ore trade corresponded
+    to about 10% of total ton-mile dry bulk demand and appropriately 33% of Capesize
+    ton-mile demand, according to our estimates.
+  unit: pct
+  values:
+  - 10.0
+  - 33.0
+- section: Main
+  section_type: null
+  source_line: Any disruption in that trade, and there is not enough iron ore in the
+    world to make up for the difference. Although iron ore prices will probably skyrocket
+    on such a development, Brazil (that already is still recovering from last year's
+    dam incident and now st
+  unit: null
+  values:
+  - 19.0
 regions:
 - china
 - brazil

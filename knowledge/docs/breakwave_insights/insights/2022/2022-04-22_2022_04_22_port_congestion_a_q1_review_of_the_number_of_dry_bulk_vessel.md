@@ -27,7 +27,157 @@ keywords:
 - port
 - ports
 - number
+linked_assets_discovered: 4
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 4
 market_tone: constructive
+numeric_observation_count: 13
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The first quarter of the year comes with an overall upward trend in
+    the number of vessels in waiting and operating status at worldwide ports. Although
+    the last year seemed to be the year of record-high levels, we have seen even stronger
+    figures each month in 2
+  unit: null
+  values:
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: 'Image 1 | Source: The Signal Ocean Platform, Port Congestion, Worldwide
+    Ports, 3 days moving average, Years 2022-2021-2020'
+  unit: null
+  values:
+  - 1.0
+  - 3.0
+  - 2022.0
+  - -2021.0
+  - -2020.0
+- section: Main
+  section_type: null
+  source_line: For the first quarter of this year, the average number of vessels in
+    waiting and operating status at worldwide ports fetched almost 4700 vessels, 150
+    vessels more than the average figure for the first three months of the last year.
+    The highest level of this ye
+  unit: null
+  values:
+  - 4700.0
+  - 150.0
+  - 23.0
+  - 4867.0
+  - 5000.0
+  - 2021.0
+- section: Capesize ~ 500 Vessels
+  section_type: null
+  source_line: 'Image 2 Capesize | Source: The Signal Ocean Platform Port Congestion,
+    Worldwide Ports, 3 days moving average, Years 2022-2021-2020'
+  unit: null
+  values:
+  - 2.0
+  - 3.0
+  - 2022.0
+  - -2021.0
+  - -2020.0
+- section: Panamax ~ 1000 Vessels
+  section_type: null
+  source_line: 'Image 3 Panamax | Source: The Signal Ocean Platform Port Congestion,
+    Worldwide Ports, 3 days moving average, Years 2022-2021-2020'
+  unit: null
+  values:
+  - 3.0
+  - 3.0
+  - 2022.0
+  - -2021.0
+  - -2020.0
+- section: Supramax ~ 1500 Vessels
+  section_type: null
+  source_line: 'Image 4 Supramax | Source: The Signal Ocean Platform Port Congestion,
+    Worldwide Ports, 3 days moving average, Years 2022-2021-2020'
+  unit: null
+  values:
+  - 4.0
+  - 3.0
+  - 2022.0
+  - -2021.0
+  - -2020.0
+- section: Handysize ~ 1300 Vessels
+  section_type: null
+  source_line: 'Image 5 Handysize | Source: The Signal Ocean Platform Port Congestion,
+    Worldwide Ports, 3 days moving average, Years 2022-2021-2020'
+  unit: null
+  values:
+  - 5.0
+  - 3.0
+  - 2022.0
+  - -2021.0
+  - -2020.0
+- section: Handysize ~ 1300 Vessels
+  section_type: null
+  source_line: It is interesting to examine the breakdown of volume per port and distinguish
+    today's top ports' activity (April 20), where we will see that Chinese ports come
+    in the first ranking along with Brazil and Australia. Tianjin, Santos, Ningbo,
+    and Port Hedland appe
+  unit: null
+  values:
+  - 20.0
+- section: Handysize ~ 1300 Vessels
+  section_type: null
+  source_line: 'Image 6 |Source: The Signal Ocean Platform. Today''s Activity, Top
+    Ports, Waiting and Operating Status'
+  unit: null
+  values:
+  - 6.0
+- section: Summary of Chinese Dry Bulk Ship Congestions - Increasing
+  section_type: null
+  source_line: 'Graph 1 | Source: The Signal Ocean Data, Summary of Chinese Dry Bulk
+    Ship Congestions, per Vessel Class, Years 2021-2022'
+  unit: null
+  values:
+  - 1.0
+  - 2021.0
+  - -2022.0
+- section: Summary of Chinese Dry Bulk Ship Congestions - Increasing
+  section_type: null
+  source_line: 'The situation is extremely tight in Shanghai , where there has been
+    a complete lockdown for half a month at high social and economic costs. We can
+    see below (image 7) the increasing evolution in the port congestion in Shanghai,
+    with a significant spike in the '
+  unit: null
+  values:
+  - 7.0
+  - 2020.0
+  - 2021.0
+- section: Summary of Chinese Dry Bulk Ship Congestions - Increasing
+  section_type: null
+  source_line: 'Image 7 | Source: The Signal Ocean Platform, Port Congestion, Shanghai,
+    3 days moving average, Years 2022-2021-2020'
+  unit: null
+  values:
+  - 7.0
+  - 3.0
+  - 2022.0
+  - -2021.0
+  - -2020.0
+- section: Summary of Chinese Dry Bulk Ship Congestions - Increasing
+  section_type: null
+  source_line: The sharp increase in the overall number of dry bulk ships congested
+    at Chinese ports during the third week of April is stemming mainly from the Panamax
+    segment versus to Handysize and Supramax segments one week ago. In the Capesize
+    segment, the number of ship
+  unit: pct
+  values:
+  - 140.0
+  - 9.0
+  - 290.0
+  - 13.0
+  - 278.0
+  - 10.0
+  - 14.0
+  - 159.0
+  - 7.4
+  - 13.0
 regions:
 - china
 - brazil

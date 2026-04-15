@@ -28,7 +28,55 @@ keywords:
 - steel
 - are
 - global
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'The end result is a global rally in rates for the large Capesize ships
+    that is also improving sentiment (at the moment though only sentiment) for all
+    dry bulk vessels. By the end of the trading day, rumored Capesize deals where
+    concluded at levels that are up '
+  unit: null
+  values:
+  - 6000.0
+- section: Main
+  section_type: null
+  source_line: As the Capesize index is approaching 30,000 (maybe even by tomorrow?)
+    it is important to put the increase into perspective. Iron ore miners in both
+    Australia and Brazil, even at current freight prices, are earning more than what
+    they have earned at any time in
+  unit: usd
+  values:
+  - 30000.0
+  - 100.0
+- section: Main
+  section_type: null
+  source_line: With both miners and ship-owners happy(er), it is the end consumer
+    (i.e. mainly steel mills in China) that is paying the steeper price. However,
+    with the global stimulus now exceeding $18 Trillion (~20% of global GDP), there
+    is tremendous amount of liquidity a
+  unit: pct
+  values:
+  - 18.0
+  - 20.0
+- section: Main
+  section_type: null
+  source_line: The current environment bears a lot of similarities to 2008-2009 following
+    the GFC, when China unveiled a $586 billion stimulus program that pushed the Baltic
+    Dry Index to 4,000+ in a matter of months. Although there are a lot of differences
+    between that era a
+  unit: usd
+  values:
+  - 2008.0
+  - -2009.0
+  - 586.0
+  - 4000.0
 regions:
 - china
 - brazil

@@ -27,7 +27,51 @@ keywords:
 - chinese
 - are
 - iron
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: From a Chinese perspective, grains and soybeans have behaved as they
+    should, with current prices approximately fifteen to twenty per cent below their
+    early-May peaks. It is debatable, however, if the Chinese measures are the only
+    reason for the retreating pric
+  unit: null
+  values:
+  - 2021.0
+  - 22.0
+- section: Main
+  section_type: null
+  source_line: Despite the output restrictions and the ongoing political tensions,
+    preliminary trade data from Australia show that iron ore sales to China surged
+    by a respectable twenty per cent during May. This represents the third consecutive
+    month of record exports, despi
+  unit: null
+  values:
+  - 19.4
+- section: Main
+  section_type: null
+  source_line: If iron ore price developments failed to meet Beijing's expectations
+    of a larger decline, coal prices must be seen as an outright disappointment. While
+    domestic prices may have shown some restraint, international coal prices have
+    steadily risen and are now tra
+  unit: null
+  values:
+  - 2011.0
+- section: Main
+  section_type: null
+  source_line: It is worth bearing in mind that the data set only covers seaborne
+    imports and any volumes coming overland from Mongolia are not included. The periodic
+    closures of the Mongolian border due to Covid-19 outbreaks may also have affected
+    the flows of imported coal
+  unit: null
+  values:
+  - 19.0
 regions:
 - china
 - brazil

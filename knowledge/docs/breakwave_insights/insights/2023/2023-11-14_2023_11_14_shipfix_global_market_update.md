@@ -25,7 +25,144 @@ keywords:
 - europe
 - india
 - singapore
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 12
+numeric_observations:
+- section: Macro/Geopolitics
+  section_type: null
+  source_line: Amid weak Chinese economic data and hawkish statements from the Chair
+    of the Federal Reserve, the US dollar gained considerable ground over the past
+    week. The US dollar index recorded a weekly increase of 0.8 per cent as the head
+    of the US central bank suggest
+  unit: null
+  values:
+  - 0.8
+- section: Commodity Markets
+  section_type: null
+  source_line: 'Despite gains during the second half, crude oil recorded a significant
+    loss for the past week. Concerns over the demand outlook amid weak Chinese economic
+    data and signs of lower US consumption contributed to last week''s negative sentiments.
+    The January Brent '
+  unit: null
+  values:
+  - 4.1
+  - 81.43
+- section: Commodity Markets
+  section_type: null
+  source_line: European natural gas futures had a volatile week, with prices swinging
+    between sizeable daily gains and losses over the past five sessions. Fears that
+    rising Egyptian LNG imports would put pressure on global supplies and weaker European
+    demand amid high invent
+  unit: null
+  values:
+  - 46.63
+  - 3.1
+  - 2.5
+- section: Commodity Markets
+  section_type: null
+  source_line: The coal futures had a week of mixed fortunes. Higher Asian demand
+    contributed to the Newcastle front-month futures advancing by 3.0 per cent over
+    the past five sessions and settling at 129.50 dollars per tonne Friday. In contrast,
+    the contracts for delivery i
+  unit: null
+  values:
+  - 3.0
+  - 129.5
+  - 3.4
+  - 116.55
+- section: Commodity Markets
+  section_type: null
+  source_line: Despite weak Chinese economic data, iron ore advanced over the course
+    of the past week. Hopes that the Chinese government will provide further stimulus
+    to support growth and propel the world's second-largest economy out of deflationary
+    conditions contributed t
+  unit: null
+  values:
+  - 3.1
+  - 126.81
+- section: Commodity Markets
+  section_type: null
+  source_line: 'A stronger dollar contributed to headwinds for the base metals last
+    week. Aluminium and copper recorded weekly declines of around two per cent, while
+    nickel shed more than five per cent. In contrast, zinc delivered a weekly gain
+    of approximately 1.5 per cent, '
+  unit: null
+  values:
+  - 1.5
+- section: Commodity Markets
+  section_type: null
+  source_line: The grain and oilseed futures listed on the CBOT had a week with changeable
+    conditions. The wheat contracts for delivery in December recorded a weekly advance
+    of 0.5 per cent, with a downgrade of the outlook for global production by the
+    USDA providing some sup
+  unit: usd
+  values:
+  - 0.5
+  - 2.8
+  - 0.3
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: After two weeks of negative performance, the Baltic Dry Index rebounded
+    over the past five sessions. The headline index rose by 12.4 per cent, with the
+    Capesizes resuming their previous role as the primary providers of upward momentum.
+    The sub-index for the la
+  unit: null
+  values:
+  - 12.4
+  - 21.4
+  - 5.7
+  - 2.2
+  - 6.3
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: The Baltic Exchange's wet freight indicators had a week of mixed fortunes.
+    The dirty tanker index ended a run of eight weeks in the black as it declined
+    by 5.0 per cent amid concerns over weaker crude oil demand. Despite losses on
+    Thursday and Friday, the clea
+  unit: null
+  values:
+  - 5.0
+  - 0.6
+  - 1.9
+  - 1.4
+- section: Freight and Bunker Markets
+  section_type: null
+  source_line: Developments in the crude oil market weighed heavily on the trading
+    in bunker fuels over the past week. The VLSFO recorded weekly losses of nearly
+    5.5 per cent in Houston and Rotterdam, while the decline was more limited at 2.2
+    per cent in Singapore. The tradi
+  unit: null
+  values:
+  - 5.5
+  - 2.2
+  - 10.8
+  - 9.8
+  - 7.3
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: In recent weeks, the Baltic Exchange's freight index for the Handysizes
+    has been trailing the ones for larger segments by a considerable margin. Last
+    week, the gauge dropped by 6.3 per cent, while the sub-indices for the larger
+    segments were all in the black t
+  unit: null
+  values:
+  - 6.3
+  - 25.0
+- section: The View from the Shipfix Desk
+  section_type: null
+  source_line: Over the past few weeks, global demand for seaborne transportation
+    onboard Handysizes has faced significant pressure. After a brief recovery in early
+    October, weekly cargo order volumes have retreated to around 27 million tonnes
+    over the past month. While ther
+  unit: null
+  values:
+  - 27.0
+  - 20.0
 regions:
 - china
 - brazil
@@ -57,7 +194,7 @@ themes:
 - handysize
 - lng
 - lpg
-title: Shipfix Global Market Update
+title: Shipfix-Global Market Update
 vessel_classes:
 - capesize
 - panamax

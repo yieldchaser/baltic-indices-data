@@ -26,7 +26,41 @@ keywords:
 - june
 - large
 - remain
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 2
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: 'The latest data from the China Iron and Steel Association (CISA) shows
+    that daily crude steel output at large and medium-sized mills averaged a record
+    2.14 million tons during June 21 - June 30. This is very robust volume that is
+    up year-on-year by 5%, but it '
+  unit: worldscale_pct
+  values:
+  - 2.14
+  - 21.0
+  - 30.0
+  - 5.0
+  - 3975.0
+  - 568.0
+  - 75.0
+  - 2.0
+- section: Main
+  section_type: null
+  source_line: Overall, steel output remains robust and we remain very bullish for
+    both steel output prospects and iron ore import prospects. We also remain very
+    bullish for the Chinese economy at large, and still only can foresee a potential
+    second wave of coronavirus as an
+  unit: pct
+  values:
+  - 3383.32
+  - 230.51
+  - 7.0
 regions:
 - china
 - brazil

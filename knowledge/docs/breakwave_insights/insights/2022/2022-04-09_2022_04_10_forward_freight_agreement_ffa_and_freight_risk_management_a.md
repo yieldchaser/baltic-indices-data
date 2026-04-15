@@ -27,7 +27,129 @@ keywords:
 - japan
 - crude_oil
 - ffa
+linked_assets_discovered: 7
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 7
 market_tone: cautiously_bearish
+numeric_observation_count: 11
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: It is important to distinguish the difference between the physical
+    market and contracts, such as period time charters and contracts of affreightment
+    with the hedging using derivatives or paper contracts, such as freight futures,
+    forward, and options on freight
+  unit: null
+  values:
+  - 1960.0
+  - 1985.0
+  - 1985.0
+  - 13.0
+  - 14000.0
+  - 120000.0
+- section: Main
+  section_type: null
+  source_line: 'The shipping freight indices produced by the Baltic Exchange have
+    been widely recognized, since their early introduction, as the most reliable indicators
+    of market conditions in the shipping industry. In the late 1990s, forward freight
+    agreements replaced the '
+  unit: null
+  values:
+  - 1990.0
+  - 2006.0
+- section: The Freight Derivatives Market
+  section_type: null
+  source_line: The freight derivatives market, in contrast to the physical, also bears
+    a lot of practical problems to be resolved. It is important to highlight that
+    there are large sums of money involved as well as high risks, and the market must
+    be liquid enough to allow co
+  unit: null
+  values:
+  - 2006.0
+  - 2007.0
+- section: Vessel Supply & Demand - Freight Rates
+  section_type: null
+  source_line: 'Graph 1: The Signal Ocean Platform | Capesize Supply Trend - Market
+    Rates $/t and FFA for Brazil - China, data provided by SSY'
+  unit: usd
+  values:
+  - 1.0
+- section: The Signal Ocean FFA Report | Overview of FFA prices across all routes
+    and contracts
+  section_type: null
+  source_line: Options and Futures rates are shown through graphs in all main dry
+    bulk ship sizes, Capesize, Panamax, Supramax, and Handysize, for all key trading
+    routes, per month, quarter and year, for the expired and non-expired contracts.
+    The forward prices are quoted fo
+  unit: usd
+  values:
+  - 1.0
+  - 2.0
+- section: The Signal Ocean FFA Report | Overview of FFA prices across all routes
+    and contracts
+  section_type: null
+  source_line: 'Image 1: The Signal Ocean Platform FFA Report, for Capesize C3 route,
+    Spot Market'
+  unit: null
+  values:
+  - 1.0
+- section: The Signal Ocean FFA Report | Overview of FFA prices across all routes
+    and contracts
+  section_type: null
+  source_line: Cape 5tc - The freight future settlement prices are based on the Capesize
+    time charter index by the Baltic Exchange (weighted average of spot rates on 5
+    benchmark routes)
+  unit: null
+  values:
+  - 5.0
+  - 5.0
+- section: The Signal Ocean FFA Report | Overview of FFA prices across all routes
+    and contracts
+  section_type: null
+  source_line: Panamax 82 5tc - The freight future settlement prices based on the
+    Panamax (82,000dwt) time charter index by the Baltic Exchange (weighted average
+    of spot rates on 5 benchmark routes)
+  unit: null
+  values:
+  - 82.0
+  - 5.0
+  - 82000.0
+  - 5.0
+- section: The Signal Ocean FFA Report | Overview of FFA prices across all routes
+    and contracts
+  section_type: null
+  source_line: Supramax 58 10tc - The freight future settlement prices based on the
+    Supramax (58,000dwt) time charter index by the Baltic Exchange (weighted average
+    of spot rates on 10 benchmark routes)
+  unit: null
+  values:
+  - 58.0
+  - 10.0
+  - 58000.0
+  - 10.0
+- section: The Signal Ocean FFA Report | Overview of FFA prices across all routes
+    and contracts
+  section_type: null
+  source_line: Handysize 38 7tc - The freight future settlement prices based on the
+    Handysize (38,000dwt) time charter index by the Baltic Exchange (weighted average
+    of spot rates on 7 benchmark routes)
+  unit: null
+  values:
+  - 38.0
+  - 7.0
+  - 38000.0
+  - 7.0
+- section: The Signal Ocean FFA Report | Overview of FFA prices across all routes
+    and contracts
+  section_type: null
+  source_line: 'Image 2: The Signal Ocean Platform FFA Report, for Capesize 5tc, Time
+    charter'
+  unit: null
+  values:
+  - 2.0
+  - 5.0
 regions:
 - china
 - brazil

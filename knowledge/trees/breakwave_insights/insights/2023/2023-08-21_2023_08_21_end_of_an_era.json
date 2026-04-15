@@ -2,11 +2,11 @@
   "node_id": "breakwave_insights_insights_2023-08-21_2023_08_21_end_of_an_era__root",
   "doc_id": "breakwave_insights_insights_2023-08-21_2023_08_21_end_of_an_era",
   "parent_id": null,
-  "title": "End Of An Era",
+  "title": "End of an Era",
   "section_path": [
-    "End Of An Era"
+    "End of an Era"
   ],
-  "section_path_text": "End Of An Era",
+  "section_path_text": "End of an Era",
   "level": 0,
   "ordinal": 0,
   "summary": "Main\nWeekly Tanker Market Report\nFor product tankers, much of the past decade's investment was focused on changing dynamics in the global refining scene. In short, the story of expanding capacity in the East, primarily driven by Middle East export refineries, and capacity rationalisation in the West supported the case for strong tonne mile demand growth. However, with most Middle East refining projects nearing completion, and plans to close capacity in the West being reassessed in the name of energy security, the sector needs to find a new investment case for the next decade.",
@@ -26,7 +26,7 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 504,
+  "token_count": 741,
   "source_path": "reports/breakwave/2023/2023-08-21_end-of-an-era.html",
   "source_url": "https://www.breakwaveadvisors.com/insights/2023/8/21/end-of-an-era",
   "children": [
@@ -54,8 +54,36 @@
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 502,
+      "token_count": 538,
       "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "breakwave_insights_insights_2023-08-21_2023_08_21_end_of_an_era__s02_linked_asset_2023_08_21_end_of_an_era_img_128229_bba01e613f7e_png",
+      "doc_id": "breakwave_insights_insights_2023-08-21_2023_08_21_end_of_an_era",
+      "parent_id": "breakwave_insights_insights_2023-08-21_2023_08_21_end_of_an_era__root",
+      "title": "Linked asset: 2023-08-21_end-of-an-era_img_128229_bba01e613f7e.png",
+      "section_path": [
+        "Linked asset: 2023-08-21_end-of-an-era_img_128229_bba01e613f7e.png"
+      ],
+      "section_path_text": "Linked asset: 2023-08-21_end-of-an-era_img_128229_bba01e613f7e.png",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/breakwave/2023/assets/2023-08-21_end-of-an-era_img_128229_bba01e613f7e.png\n\nLinked image asset: 2023-08-21_end-of-an-era_img_128229_bba01e613f7e.png\n\nImage metadata: PNG 488x402 mode=RGB\n\nEmbedded info:\ndpi: (95.9866, 95.9866)\n\nOCR text:\nMiddle East Refining Capacity (mbd)\n12,000\n11,000\n10,000\n9,000\n8,000\n7,000\n6,000\nayeene ase rae esegenre\nQELSSSSRHRRARRAR\nssssssasssssssss\nRRELSRSRSKLRKRARARRR",
+      "keywords": [
+        "asset",
+        "image",
+        "ase",
+        "ayeene",
+        "capacity",
+        "dpi",
+        "east",
+        "embedded"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 172,
+      "section_type": "linked_image_asset",
       "children": []
     }
   ]

@@ -26,7 +26,59 @@ keywords:
 - million
 - tonnes
 - imports
+linked_assets_discovered: 0
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 0
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The Australian government has asked the WTO to formally establish a
+    dispute-settlement panel after the initial informal talks on the trade of barley
+    with China have failed to gain traction. The informal consultations were the first
+    steps following Canberra's f
+  unit: null
+  values:
+  - 80.0
+  - 99.0
+- section: Main
+  section_type: null
+  source_line: As Australian shipments of barley to China have become virtually non-existent,
+    farmers have sought to find new export markets on shores further afield. During
+    the first part of the year, Mexico and Saudi Arabia bought considerable volumes
+    of barley from Austra
+  unit: null
+  values:
+  - 660000.0
+  - 6.2
+- section: Main
+  section_type: null
+  source_line: Notwithstanding the restrictions on Chinese imports of grains from
+    Australia, the country's appetite for agricultural commodities remains strong.
+    A resurgent pig herd, following its culling in the wake of the African swine flu,
+    is one of the driving forces beh
+  unit: null
+  values:
+  - 10.0
+  - 2020.0
+  - 21.0
+- section: Main
+  section_type: null
+  source_line: With the Australian barley crops remaining off-limits for the Chinese
+    buyers, substitutes have to be found elsewhere. Some of the main alternative sources
+    of barley are Canada, France and Ukraine. France has shipped almost two million
+    tonnes to China so far in
+  unit: null
+  values:
+  - 2020.0
+  - 21.0
+  - 1.5
+  - 2.8
+  - 2020.0
+  - 21.0
 regions:
 - china
 - brazil

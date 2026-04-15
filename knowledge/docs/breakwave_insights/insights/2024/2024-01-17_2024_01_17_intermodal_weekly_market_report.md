@@ -26,7 +26,59 @@ keywords:
 - are
 - january
 - demand
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: neutral
+numeric_observation_count: 3
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: The onset of 2024 has ushered in a downward trend for dry bulk owners.
+    Historically, the initial two months of each year typically exhibit a subdued
+    freight market performance. Presently, a multitude of factors are influencing
+    the diminished demand for tonnage
+  unit: null
+  values:
+  - 2024.0
+  - 2022.0
+  - 2023.0
+- section: Main
+  section_type: null
+  source_line: During the 2022/2023 marketing year, Brazil recorded unprecedented
+    volumes of soybean and corn exports, fueled by robust demand from China, ample
+    supply, competitive pricing, and a vigorous export pace. The latest World Agricultural
+    Supply and Demand Estimates
+  unit: null
+  values:
+  - 2022.0
+  - 2023.0
+  - 57.0
+  - 95.51
+  - 2023.0
+  - 2024.0
+  - 54.0
+  - 99.5
+- section: Main
+  section_type: null
+  source_line: In reference to January 2024, the latest data from ANEC highlights
+    a significant decrease in Brazilian corn and soybean exports compared to the previous
+    month, with reductions of 42.2% and 65.7%, respectively. In contrast, there is
+    an anticipated modest rise i
+  unit: pct
+  values:
+  - 2024.0
+  - 42.2
+  - 65.7
+  - 2.2
+  - 1.99
+  - 2024.0
+  - 2023.0
+  - 2024.0
+  - 950.0
+  - 1.13
 regions:
 - china
 - brazil

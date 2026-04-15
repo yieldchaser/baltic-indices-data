@@ -29,7 +29,61 @@ keywords:
 - steel
 - gas
 - european
+linked_assets_discovered: 2
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 2
 market_tone: constructive
+numeric_observation_count: 5
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Crude oil prices gained, shrugging off OPEC's decision to boost output
+    by larger increments in coming months amid signs of strong demand. The OPEC+ alliance
+    agreed to rise its production target by 648,00 b/d in July and August, compared
+    with 432,000 b/d monthl
+  unit: null
+  values:
+  - 64800.0
+  - 432000.0
+  - 1.0
+  - 5068.0
+- section: Main
+  section_type: null
+  source_line: 'European natural gas extended recent losses as supply side concerns
+    eased. Dutch front month futures were down as much as 4.3% in early trading as
+    traders don''t expect further cuts to Russian gas flows to European utilities.
+    This follows comments from Gazprom '
+  unit: worldscale_pct
+  values:
+  - 4.3
+- section: Main
+  section_type: null
+  source_line: European carbon gained to hit their highest level in more than two
+    weeks after European lawmakers proposed speeding up emission cuts with the trading
+    system by 2030.
+  unit: null
+  values:
+  - 2030.0
+- section: Main
+  section_type: null
+  source_line: Iron ore pushed higher as the market looks to Chinese stimulus measures
+    boosting demand. Futures in Singapore broke above USD140/t to their highest level
+    in more than a month after Beijing ordered state-owned banks to set up an CNY800bn
+    credit line for infrast
+  unit: usd
+  values:
+  - 40.0
+- section: Main
+  section_type: null
+  source_line: 'Gold extended gains as a US employment report signalled a softening
+    economy. This raised the prospect of a less aggressive rate hike cycle from the
+    US Federal Reserve. Nevertheless, Fed Vice Chair Lael Brainard said expectations
+    for 50bps increases this month '
+  unit: null
+  values:
+  - 50.0
 regions:
 - china
 - brazil

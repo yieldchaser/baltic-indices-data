@@ -26,7 +26,95 @@ keywords:
 - december
 - russia
 - imports
+linked_assets_discovered: 4
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 4
 market_tone: neutral
+numeric_observation_count: 7
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Russia exported record-high volumes of crude to India in 1H January,
+    facilitated by tonnage supply from existing and incumbent shipowners.
+  unit: null
+  values:
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: 'Russia has done well in enticing Indian refiners to increase purchases
+    of its crude as the EU pivots away. Arrivals of Russian crude into India rose
+    by 260kbd m-o-m in December to reach 1.2mbd, a record high, while January arrivals
+    are on-track to set another '
+  unit: pct
+  values:
+  - 260.0
+  - 1.2
+  - 1.3
+  - 770.0
+  - 27.0
+  - 890.0
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: Data on the discharge volume by destination ports in India reveals
+    that private refiners have led the increase in Russian crude purchases. Their
+    share of India's crude imports from Russia increased from 40% during July-November
+    last year, to 48% in December, r
+  unit: pct
+  values:
+  - 40.0
+  - 48.0
+  - 60.0
+  - 1.0
+  - 25.0
+  - 1.0
+- section: Main
+  section_type: null
+  source_line: As the 5 February EU ban on Russian oil imports approaches, India's
+    diesel exports to Europe have rebounded to 260kbd in the first two weeks of January,
+    reversing the trend of slowing exports over the last three months. The export-oriented
+    private refiners wil
+  unit: null
+  values:
+  - 5.0
+  - 260.0
+- section: Main
+  section_type: null
+  source_line: India's higher imports of Russian crude have come at the expense of
+    lower purchases from Middle East producers, particularly Saudi Arabia, Iraq and
+    the UAE, which have collectively lost 20% of India's crude imports market share
+    - comparing December 2022 levels
+  unit: pct
+  values:
+  - 20.0
+  - 2022.0
+  - 1.0
+  - 2022.0
+- section: Main
+  section_type: null
+  source_line: While several major shipowners like Trafigura and Total that were previously
+    very active in the Russian crude trade have exited, there appears to be no shortage
+    of Aframax and Suezmax tonnage supply from the remaining and incumbent shipowners
+    based in Dubai, I
+  unit: pct
+  values:
+  - 60.0
+  - 5.0
+  - 2.0
+- section: Count of vessels that loaded Russian crude to India after 5 Dec by age
+    profile
+  section_type: null
+  source_line: The implementation of the 5 February EU ban will see another round
+    of dislocation of Russian oil products, but the additional dirty tanker tonnage
+    required arising from the reshuffle of Russian fuel oil to Asia and the Middle
+    East is expected to be minimal. Th
+  unit: tonnage
+  values:
+  - 5.0
+  - 350.0
+  - 10.0
 regions:
 - china
 - brazil

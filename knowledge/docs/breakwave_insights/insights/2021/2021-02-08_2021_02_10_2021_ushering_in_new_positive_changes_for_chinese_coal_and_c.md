@@ -26,7 +26,71 @@ keywords:
 - last
 - very
 - but
+linked_assets_discovered: 1
+linked_assets_failed: 0
+linked_assets_ingested: 0
+linked_assets_mirrored: 0
+linked_assets_skipped: 1
 market_tone: constructive
+numeric_observation_count: 4
+numeric_observations:
+- section: Main
+  section_type: null
+  source_line: Dry bulk prospects for this year remain promising. While the upcoming
+    Lunar New Year holiday has ushered in a normal cooling in spot cargo demand, China's
+    overall economy remains very encouraging. In addition, SHIBOR lending rates fell
+    significantly last week.
+  unit: pct
+  values:
+  - 1.91
+  - 2.75
+- section: Main
+  section_type: null
+  source_line: Also encouraging is that Chinese steel production has remained very
+    strong in recent weeks. Daily crude steel production at large and medium-sized
+    mills averaged 2.18 million tons during January 21 - January 31. This is 2% less
+    than the record 2.22 million ton
+  unit: pct
+  values:
+  - 2.18
+  - 21.0
+  - 31.0
+  - 2.0
+  - 2.22
+  - 10.0
+  - 4595.0
+  - 15.0
+  - 635.0
+  - 16.0
+- section: Main
+  section_type: null
+  source_line: Also of note in China is that electricity consumption growth remains
+    likely to be very strong this year. As was widely reported last week, the China
+    Electricity Council is anticipating that the nation's electricity consumption
+    this year will grow by 6 to 7%. F
+  unit: pct
+  values:
+  - 6.0
+  - 7.0
+  - 2021.0
+  - 2.0
+  - 3.1
+  - 2021.0
+  - 7.3
+  - 2020.0
+  - 7.1
+  - 7.0
+- section: Main
+  section_type: null
+  source_line: Thermal coal-derived electricity generation is poised to remain China's
+    primary source of electricity generation. Thermal coal-derived electricity generation
+    contributed to 71% of China's total electricity production last year. In comparison,
+    it contributed to
+  unit: pct
+  values:
+  - 71.0
+  - 72.0
+  - 201.0
 regions:
 - china
 - brazil
