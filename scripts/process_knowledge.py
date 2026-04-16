@@ -3064,10 +3064,16 @@ def main():
                 if chunk_rel:
                     chunk_compaction_targets.setdefault(chunk_rel, set())
                     if existing_row:
+                        old_chunk_rel = existing_row.get("chunk_file")
                         old_doc_id = existing_row.get("doc_id")
                         new_doc_id = manifest_row.get("doc_id")
                         if old_doc_id and new_doc_id and old_doc_id != new_doc_id:
                             chunk_compaction_targets[chunk_rel].add(old_doc_id)
+                        # When a document migrates to a different chunk file (e.g. due to
+                        # year-sharding introduced in ce95d888), evict its old entry from
+                        # the previous file so validation never sees duplicate chunk_ids.
+                        if old_chunk_rel and old_chunk_rel != chunk_rel and old_doc_id:
+                            chunk_compaction_targets.setdefault(old_chunk_rel, set()).add(old_doc_id)
 
                 if existing_row:
                     old_doc_path = existing_row.get("doc_path")
