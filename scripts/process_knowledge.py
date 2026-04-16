@@ -1605,8 +1605,12 @@ def resolve_archive_link_path(html_path: Path, href: str) -> Path | None:
                 candidate.relative_to(REPO_ROOT_RESOLVED)
             except ValueError:
                 continue
-            if candidate.exists() and candidate.is_file():
-                return candidate
+            try:
+                if candidate.exists() and candidate.is_file():
+                    return candidate
+            except OSError:
+                # ENAMETOOLONG on very long mirrored URL basenames — skip candidate.
+                continue
         return None
 
     try:
@@ -1619,7 +1623,10 @@ def resolve_archive_link_path(html_path: Path, href: str) -> Path | None:
     except ValueError:
         return None
 
-    if not candidate.exists() or not candidate.is_file():
+    try:
+        if not candidate.exists() or not candidate.is_file():
+            return None
+    except OSError:
         return None
     return candidate
 
