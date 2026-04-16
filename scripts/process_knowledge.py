@@ -1595,7 +1595,12 @@ def resolve_archive_link_path(html_path: Path, href: str) -> Path | None:
             html_path.parent.parent / "attachments",
         ]
         for candidate_dir in candidate_dirs:
-            candidate = (candidate_dir / link_name).resolve()
+            try:
+                candidate = (candidate_dir / link_name).resolve()
+            except OSError:
+                # Some mirrored URLs can carry extremely long basename tokens.
+                # Treat them as non-resolvable instead of failing document parsing.
+                continue
             try:
                 candidate.relative_to(REPO_ROOT_RESOLVED)
             except ValueError:
@@ -1941,7 +1946,12 @@ def collect_linked_asset_sections(source: str, html_path: Path, root) -> tuple[l
             continue
         seen_paths.add(linked_rel)
 
-        linked_text = extract_linked_text_asset(linked_path)
+        try:
+            linked_text = extract_linked_text_asset(linked_path)
+        except Exception:
+            # Linked assets should never abort the parent document compilation.
+            stats["linked_assets_failed"] += 1
+            continue
         if not linked_text:
             stats["linked_assets_failed"] += 1
             continue
