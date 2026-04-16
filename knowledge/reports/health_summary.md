@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-16T01:24:10Z'
+generated_at: '2026-04-16T01:34:39Z'
 high_severity_count: 0
 page_type: knowledge_health_summary
 warning_count: 6
@@ -8,9 +8,9 @@ warning_count: 6
 # Knowledge Health Summary
 
 ## Corpus Snapshot
-- Documents: 7894
-- Chunks: 92441
-- Sections: 28559
+- Documents: 7898
+- Chunks: 94995
+- Sections: 28856
 - Topic evidence rows: 2500
 - Wiki pages: 10
 
@@ -32,7 +32,7 @@ warning_count: 6
 | hellenic/vessel_valuations | 2026-04-15 | 1 | 14 | healthy | 7 | 0 |
 | hellenic/demolition | 2026-04-14 | 2 | 21 | healthy | 0 | 1 |
 | hellenic/shipbuilding | 2026-04-14 | 2 | 21 | healthy | 7 | 0 |
-| books | undated | - | - | reference | - | 8 |
+| books | undated | - | - | reference | - | 12 |
 
 ## Topic Coverage
 
