@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-16T01:34:39Z",
+  "generated_at": "2026-04-16T07:21:50Z",
   "current_date": "2026-04-16",
   "corpus": {
-    "document_count": 7898,
-    "chunk_count": 94995,
-    "section_count": 28856,
+    "document_count": 7981,
+    "chunk_count": 95396,
+    "section_count": 29116,
     "topic_count": 10,
     "topic_evidence_count": 2500,
     "wiki_page_count": 10
@@ -107,11 +107,11 @@
       "category": "insights",
       "status": "healthy",
       "cadence_days": 14,
-      "latest_date": "2026-04-14",
-      "age_days": 2,
+      "latest_date": "2026-04-15",
+      "age_days": 1,
       "latest_gap_days": 0,
-      "max_recent_gap_days": 4,
-      "dated_doc_count": 2913,
+      "max_recent_gap_days": 3,
+      "dated_doc_count": 2972,
       "undated_doc_count": 0
     },
     {
@@ -150,7 +150,7 @@
       "age_days": 2,
       "latest_gap_days": 1,
       "max_recent_gap_days": 4,
-      "dated_doc_count": 1086,
+      "dated_doc_count": 1087,
       "undated_doc_count": 0
     },
     {
@@ -176,7 +176,7 @@
       "age_days": 2,
       "latest_gap_days": 0,
       "max_recent_gap_days": 7,
-      "dated_doc_count": 712,
+      "dated_doc_count": 735,
       "undated_doc_count": 1
     },
     {
@@ -217,7 +217,7 @@
       "relevant_corpus_latest_date": "2026-04-15",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 82,
+      "document_count": 86,
       "source_counts": {
         "baltic": 2,
         "breakwave": 2,
@@ -243,8 +243,8 @@
       "missing_recent_sources": [],
       "tone_distribution": {
         "cautiously_bearish": 18,
-        "constructive": 46,
-        "neutral": 18
+        "constructive": 48,
+        "neutral": 20
       }
     },
     {
@@ -257,7 +257,7 @@
       "relevant_corpus_latest_date": "2026-04-15",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 76,
+      "document_count": 79,
       "source_counts": {
         "baltic": 3,
         "breakwave": 4,
@@ -281,9 +281,9 @@
       ],
       "missing_recent_sources": [],
       "tone_distribution": {
-        "cautiously_bearish": 15,
-        "constructive": 38,
-        "neutral": 23
+        "cautiously_bearish": 14,
+        "constructive": 40,
+        "neutral": 25
       }
     },
     {
@@ -296,7 +296,7 @@
       "relevant_corpus_latest_date": "2026-04-15",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 112,
+      "document_count": 114,
       "source_counts": {
         "breakwave": 8,
         "breakwave_insights": 104,
@@ -320,7 +320,7 @@
       "tone_distribution": {
         "cautiously_bearish": 22,
         "constructive": 67,
-        "neutral": 23
+        "neutral": 25
       }
     },
     {
@@ -333,7 +333,7 @@
       "relevant_corpus_latest_date": "2026-04-15",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 104,
+      "document_count": 106,
       "source_counts": {
         "breakwave": 5,
         "breakwave_insights": 214,
@@ -356,7 +356,7 @@
       "tone_distribution": {
         "cautiously_bearish": 22,
         "constructive": 57,
-        "neutral": 25
+        "neutral": 27
       }
     },
     {
@@ -369,7 +369,7 @@
       "relevant_corpus_latest_date": "2026-04-15",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 105,
+      "document_count": 103,
       "source_counts": {
         "breakwave": 10,
         "breakwave_insights": 230,
@@ -389,9 +389,9 @@
         "baltic"
       ],
       "tone_distribution": {
-        "cautiously_bearish": 19,
-        "constructive": 68,
-        "neutral": 18
+        "cautiously_bearish": 18,
+        "constructive": 66,
+        "neutral": 19
       }
     },
     {
@@ -399,22 +399,22 @@
       "title": "China Steel and Iron Ore",
       "status": "healthy",
       "cadence_days": 7,
-      "latest_evidence_date": "2026-04-14",
-      "latest_evidence_age_days": 2,
-      "relevant_corpus_latest_date": "2026-04-14",
+      "latest_evidence_date": "2026-04-15",
+      "latest_evidence_age_days": 1,
+      "relevant_corpus_latest_date": "2026-04-15",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 102,
+      "document_count": 101,
       "source_counts": {
-        "breakwave": 6,
-        "breakwave_insights": 143,
-        "hellenic": 101
+        "breakwave": 4,
+        "breakwave_insights": 148,
+        "hellenic": 98
       },
       "category_counts": {
         "dry_charter": 6,
-        "drybulk": 6,
-        "insights": 143,
-        "iron_ore": 95
+        "drybulk": 4,
+        "insights": 148,
+        "iron_ore": 92
       },
       "recent_sources_present": [
         "breakwave",
@@ -425,9 +425,9 @@
         "baltic"
       ],
       "tone_distribution": {
-        "cautiously_bearish": 20,
-        "constructive": 66,
-        "neutral": 16
+        "cautiously_bearish": 19,
+        "constructive": 64,
+        "neutral": 18
       }
     },
     {
@@ -435,12 +435,12 @@
       "title": "Coal and Grain Flows",
       "status": "healthy",
       "cadence_days": 7,
-      "latest_evidence_date": "2026-04-14",
-      "latest_evidence_age_days": 2,
-      "relevant_corpus_latest_date": "2026-04-14",
+      "latest_evidence_date": "2026-04-15",
+      "latest_evidence_age_days": 1,
+      "relevant_corpus_latest_date": "2026-04-15",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 94,
+      "document_count": 97,
       "source_counts": {
         "breakwave": 5,
         "breakwave_insights": 237,
@@ -460,9 +460,9 @@
         "baltic"
       ],
       "tone_distribution": {
-        "cautiously_bearish": 17,
-        "constructive": 55,
-        "neutral": 22
+        "cautiously_bearish": 16,
+        "constructive": 57,
+        "neutral": 24
       }
     },
     {
@@ -475,16 +475,16 @@
       "relevant_corpus_latest_date": "2026-04-15",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 95,
+      "document_count": 92,
       "source_counts": {
         "breakwave": 8,
-        "breakwave_insights": 233,
-        "hellenic": 9
+        "breakwave_insights": 236,
+        "hellenic": 6
       },
       "category_counts": {
-        "insights": 233,
+        "insights": 236,
         "tankers": 8,
-        "vessel_valuations": 9
+        "vessel_valuations": 6
       },
       "recent_sources_present": [
         "breakwave",
@@ -495,9 +495,9 @@
         "baltic"
       ],
       "tone_distribution": {
-        "cautiously_bearish": 18,
-        "constructive": 59,
-        "neutral": 18
+        "cautiously_bearish": 16,
+        "constructive": 57,
+        "neutral": 19
       }
     },
     {
