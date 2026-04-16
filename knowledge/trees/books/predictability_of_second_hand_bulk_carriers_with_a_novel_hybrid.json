@@ -1,0 +1,169 @@
+{
+  "node_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__root",
+  "doc_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid",
+  "parent_id": null,
+  "title": "Predictability of second-hand bulk carriers with a novel hybrid",
+  "section_path": [
+    "Predictability of second-hand bulk carriers with a novel hybrid"
+  ],
+  "section_path_text": "Predictability of second-hand bulk carriers with a novel hybrid",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "This research paper introduces a novel hybrid forecasting algorithm, combining ARDL, EMD, and ANN models to predict the asset prices of second-hand dry bulk carriers. The study validates the shipping Q index as a significant leading indicator that enhances predictive accuracy and helps identify overpriced assets during credit analysis. Findings demonstrate that the proposed hybrid model outperforms traditional linear and nonlinear benchmarks, providing a robust tool for maritime investment timing.",
+  "keywords": [
+    "shipping Q index",
+    "dry bulk carriers",
+    "hybrid algorithm",
+    "asset price predictability",
+    "ARDL-EMD-ANN",
+    "investment timing",
+    "maritime logistics"
+  ],
+  "page_start": 2,
+  "page_end": 11,
+  "token_count": 5185,
+  "source_path": "reports/Predictability of second-hand bulk carriers with a novel hybrid.pdf",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__s01_g_model",
+      "doc_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid",
+      "parent_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__root",
+      "title": "G Model",
+      "section_path": [
+        "G Model"
+      ],
+      "section_path_text": "G Model",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "of Pages 10\nThe Asian Journal of Shipping and Logistics xxx (xxxx) xxx-xxx\nContents lists available at ScienceDirect\nThe Asian Journal of Shipping and\nHOSTED BY\nLogistics\nj ourna l h omepage: www.elsevier.com/locate/ajsl\nPredictability of second-hand bulk carriers with a novel hybrid\nalgorithm\nOkan Durua, Emrah Gulayb, Sinem Celik Girginc,∗\naResearch & Development, Ocean Dynamex Inc., Ottawa, ON, Canada\nbDepartment of Econometrics, Dokuz Eylul University, Turkey\ncMaritime and Logistics Management Department, University of Tasmania-Australian Maritime College, Launceston, Australia\na r t i c l e i n f o\nArticle history:\nReceived 29 January 2021\nReceived in revised form 2 July 2021\nAccepted 21 July 2021\nKeywords:\nInvestment timing\nPredictability\nLead-lag structure\nShipping Q\na\nindex\nb s t r a c t\nThis paper investigates the predictability of the asset prices of commodity transport (i.e. dry bulk carriers)\nby testing the shipping Q index as a leading indicator.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "handysize",
+        "australia",
+        "iron_ore",
+        "coal",
+        "asset",
+        "ship"
+      ],
+      "page_start": 2,
+      "page_end": 2,
+      "token_count": 1291,
+      "section_type": "chapter",
+      "children": []
+    },
+    {
+      "node_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__s02_g_model",
+      "doc_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid",
+      "parent_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__root",
+      "title": "G Model",
+      "section_path": [
+        "G Model"
+      ],
+      "section_path_text": "G Model",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Asian Journal of Shipping and Logistics xxx (xxxx) xxx-xxx\nFig. Linear forecasting models\nThere are a number of different econometric models in the lit-\nerature proposed by researchers to predict the future movement of\nfreight rates.",
+      "keywords": [
+        "panamax",
+        "supramax",
+        "vlcc",
+        "model",
+        "models",
+        "forecasting",
+        "al.",
+        "proposed"
+      ],
+      "page_start": 4,
+      "page_end": 4,
+      "token_count": 992,
+      "section_type": "chapter",
+      "children": []
+    },
+    {
+      "node_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__s03_g_model",
+      "doc_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid",
+      "parent_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__root",
+      "title": "G Model",
+      "section_path": [
+        "G Model"
+      ],
+      "section_path_text": "G Model",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Asian Journal of Shipping and Logistics xxx (xxxx) xxx-xxx\nFig. Training, validation, and test sets of dry bulk carriers: (a) 5 years old, (b) 10 years old, and (c) 15 years old.",
+      "keywords": [
+        "years",
+        "old",
+        "carrier",
+        "fig.",
+        "ajsl-280",
+        "al.",
+        "article",
+        "asian"
+      ],
+      "page_start": 5,
+      "page_end": 5,
+      "token_count": 129,
+      "section_type": "chapter",
+      "children": []
+    },
+    {
+      "node_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__s04_g_model",
+      "doc_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid",
+      "parent_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__root",
+      "title": "G Model",
+      "section_path": [
+        "G Model"
+      ],
+      "section_path_text": "G Model",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Asian Journal of Shipping and Logistics xxx (xxxx) xxx-xxx\nFig. Second-hand dry bulk carriers 10 years-old: (a) Capesize, (b) Handymax, (c)\nHandysize, and (d) Panamax.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "handysize",
+        "asset",
+        "can",
+        "forecasting",
+        "carriers",
+        "explanatory"
+      ],
+      "page_start": 10,
+      "page_end": 10,
+      "token_count": 756,
+      "section_type": "chapter",
+      "children": []
+    },
+    {
+      "node_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__s05_g_model",
+      "doc_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid",
+      "parent_id": "book_predictability_of_second_hand_bulk_carriers_with_a_novel_hybrid__root",
+      "title": "G Model",
+      "section_path": [
+        "G Model"
+      ],
+      "section_path_text": "G Model",
+      "level": 1,
+      "ordinal": 5,
+      "summary": "The Asian Journal of Shipping and Logistics xxx (xxxx) xxx-xxx\nAuthor declaration\nThere is no conflict of interest to declare. This manuscript has\nnot been published or resented elsewhere in part or in entirety and\nis not under consideration by another journal.",
+      "keywords": [
+        "container",
+        "crude_oil",
+        "gas",
+        "forecasting",
+        "maritime",
+        "journal",
+        "economics",
+        "logistics"
+      ],
+      "page_start": 11,
+      "page_end": 11,
+      "token_count": 1998,
+      "section_type": "chapter",
+      "children": []
+    }
+  ]
+}

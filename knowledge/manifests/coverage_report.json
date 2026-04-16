@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-16T01:09:46Z",
+  "generated_at": "2026-04-16T01:24:10Z",
   "current_date": "2026-04-16",
   "corpus": {
-    "document_count": 7890,
-    "chunk_count": 90032,
-    "section_count": 27386,
+    "document_count": 7894,
+    "chunk_count": 92441,
+    "section_count": 28559,
     "topic_count": 10,
     "topic_evidence_count": 2500,
     "wiki_page_count": 10
@@ -203,7 +203,7 @@
       "latest_gap_days": null,
       "max_recent_gap_days": null,
       "dated_doc_count": 0,
-      "undated_doc_count": 4
+      "undated_doc_count": 8
     }
   ],
   "topics": [
