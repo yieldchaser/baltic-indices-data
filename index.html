@@ -10223,6 +10223,36 @@
       { key: 'coal_and_grain_flows',     path: 'knowledge/wiki/coal_and_grain_flows.md',      label: 'Coal & Grain Flows' },
     ];
 
+    const RAW_FALLBACK_BASE = 'https://raw.githubusercontent.com/yieldchaser/Shipping/main/';
+
+    function _isAbsoluteUrl(path) {
+      return /^https?:\/\//i.test(String(path || ''));
+    }
+
+    function _rawFallbackUrl(path) {
+      const rel = String(path || '').replace(/^\/+/, '');
+      return rel ? `${RAW_FALLBACK_BASE}${rel}` : RAW_FALLBACK_BASE;
+    }
+
+    async function _fetchTextWithFallback(path) {
+      if (!path) return '';
+      const attempts = [path];
+      if (!_isAbsoluteUrl(path)) attempts.push(_rawFallbackUrl(path));
+      for (const u of attempts) {
+        try {
+          const resp = await fetch(u, { cache: 'no-store' });
+          if (resp.ok) return await resp.text();
+        } catch {}
+      }
+      return '';
+    }
+
+    async function _fetchJsonWithFallback(path) {
+      const text = await _fetchTextWithFallback(path);
+      if (!text) return null;
+      try { return JSON.parse(text); } catch { return null; }
+    }
+
     // ── Entry point ───────────────────────────────────────────────────────────
 
     async function renderIntelligenceTab() {
@@ -10241,9 +10271,8 @@
 
     async function _intelLoadSignals() {
       try {
-        const resp = await fetch('knowledge/derived/signals.jsonl');
-        if (!resp.ok) return;
-        const text = await resp.text();
+        const text = await _fetchTextWithFallback('knowledge/derived/signals.jsonl');
+        if (!text) return;
         INTEL.signals = text.split('\n')
           .filter(l => l.includes('"source": "breakwave"'))
           .map(l => { try { return JSON.parse(l); } catch { return null; } })
@@ -10431,9 +10460,9 @@
       const tsEl = document.getElementById('intelBriefTs');
       if (!el) return;
       try {
-        const resp = await fetch('knowledge/briefs/latest.json');
-        if (!resp.ok) throw new Error('not_found');
-        INTEL.briefData = await resp.json();
+        const data = await _fetchJsonWithFallback('knowledge/briefs/latest.json');
+        if (!data) throw new Error('not_found');
+        INTEL.briefData = data;
         _paintBrief(el, tsEl, INTEL.briefData);
       } catch {
         el.innerHTML = `<div class="intel-empty">
@@ -10616,8 +10645,7 @@
     async function _fetchText(url) {
       if (INTEL.wikiCache[url] !== undefined) return INTEL.wikiCache[url];
       try {
-        const r = await fetch(url);
-        const t = r.ok ? await r.text() : '';
+        const t = await _fetchTextWithFallback(url);
         return (INTEL.wikiCache[url] = t);
       } catch { return (INTEL.wikiCache[url] = ''); }
     }
@@ -10625,9 +10653,9 @@
     async function _loadChunks(url) {
       if (INTEL.chunkCache[url]) return INTEL.chunkCache[url];
       try {
-        const r = await fetch(url);
-        if (!r.ok) return (INTEL.chunkCache[url] = []);
-        const rows = (await r.text()).split('\n').filter(l => l.trim())
+        const text = await _fetchTextWithFallback(url);
+        if (!text) return (INTEL.chunkCache[url] = []);
+        const rows = text.split('\n').filter(l => l.trim())
           .map(l => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
         return (INTEL.chunkCache[url] = rows);
       } catch { return (INTEL.chunkCache[url] = []); }
