@@ -4,6 +4,11 @@ on:
   push:
     paths:
       - 'reports/**'
+  workflow_run:
+    workflows:
+      - Ingest Market Reports
+    types:
+      - completed
   workflow_dispatch:
     inputs:
       source:
@@ -28,6 +33,10 @@ concurrency:
 
 jobs:
   process:
+    if: >
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
 
     steps:
@@ -52,7 +61,26 @@ jobs:
       - name: Pull latest
         run: git pull origin main --rebase
 
+      - name: Check for new reports (workflow_run only)
+        if: github.event_name == 'workflow_run'
+        id: check_new_reports
+        shell: bash
+        run: |
+          MANIFEST="knowledge/manifests/documents.jsonl"
+          if [ ! -f "$MANIFEST" ]; then
+            echo "new=true" >> "$GITHUB_OUTPUT"
+          else
+            REPORTS_TS="$(git log -1 --format=%ct -- reports 2>/dev/null || echo 0)"
+            MANIFEST_TS="$(git log -1 --format=%ct -- "$MANIFEST" 2>/dev/null || echo 0)"
+            if [ "$REPORTS_TS" -gt "$MANIFEST_TS" ]; then
+              echo "new=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "new=false" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
       - name: Run processor
+        if: github.event_name != 'workflow_run' || steps.check_new_reports.outputs.new == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MIN_INTERVAL_SEC: "2.5"
@@ -101,6 +129,7 @@ jobs:
           python scripts/process_knowledge.py $FLAGS 2>&1 | tee knowledge_processor.log
 
       - name: Validate knowledge artifacts
+        if: github.event_name != 'workflow_run' || steps.check_new_reports.outputs.new == 'true'
         shell: bash
         run: |
           set -o pipefail
@@ -133,6 +162,7 @@ jobs:
             knowledge_changed_tracked.txt
 
       - name: Commit knowledge artifacts
+        if: github.event_name != 'workflow_run' || steps.check_new_reports.outputs.new == 'true'
         shell: bash
         run: |
           git config user.name "knowledge-bot"

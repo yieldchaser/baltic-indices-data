@@ -4,6 +4,11 @@ on:
   schedule:
     # 12:00 PM UTC — after morning report ingest (8-9:30 AM) and data update (10:30 AM)
     - cron: '0 12 * * 1-5'
+  workflow_run:
+    workflows:
+      - Process Knowledge Base
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
@@ -15,6 +20,10 @@ concurrency:
 
 jobs:
   brief:
+    if: >
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
 
     steps:
