@@ -1884,107 +1884,202 @@
     }
 
     /* ── Intelligence Tab ─────────────────────────────────────────────────── */
-    .intel-section { margin-bottom: 2rem; }
+    .intel-section { margin-bottom: 2.5rem; }
     .intel-section-title {
-      font-size: 1rem; font-weight: 600; color: #e6edf3;
-      border-bottom: 1px solid #21262d; padding-bottom: 0.5rem; margin-bottom: 1rem;
-      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 11px; font-weight: 700; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 16px;
+      display: flex; align-items: center; gap: 6px;
     }
-    .intel-section-meta { font-size: 0.72rem; color: #8b949e; font-weight: 400; margin-left: auto; }
-    .intel-alert-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;
+    .intel-section-meta { font-size: 10px; color: var(--text-muted); font-weight: 400; margin-left: auto; opacity: 0.7; }
+
+    /* Primary vessel-class cards */
+    .intel-vc-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
     }
-    .intel-alert-card {
-      background: #161b22; border: 1px solid #21262d; border-radius: 8px;
-      padding: 1rem; transition: border-color 0.2s;
+    .intel-vc-card.ci-bull   { border-left-color: var(--green); }
+    .intel-vc-card.ci-bear   { border-left-color: var(--red); }
+    .intel-vc-card.ci-div    { border-left-color: var(--yellow); }
+    .intel-vc-card.ci-neut   { border-left-color: var(--border); }
+
+    .intel-vc-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 18px 10px;
+      border-bottom: 1px solid var(--border);
     }
-    .intel-alert-card.ci-bull   { border-color: #238636; background: linear-gradient(160deg,#0d1117 75%,#0d2818); }
-    .intel-alert-card.ci-bear   { border-color: #da3633; background: linear-gradient(160deg,#0d1117 75%,#2d1117); }
-    .intel-alert-card.ci-div    { border-color: #d29922; background: linear-gradient(160deg,#0d1117 75%,#2d2208); }
-    .intel-alert-card.ci-neut   { border-color: #30363d; }
-    .intel-badge {
-      display: inline-block; padding: 2px 8px; border-radius: 4px;
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+    .intel-vc-name { font-size: 15px; font-weight: 700; color: var(--text); }
+    .intel-vc-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 700;
+      letter-spacing: 0.04em; border: 1px solid transparent;
     }
-    .intel-badge.bull   { background: #238636; color: #fff; }
-    .intel-badge.bear   { background: #da3633; color: #fff; }
-    .intel-badge.div    { background: #d29922; color: #0d1117; }
-    .intel-badge.neut   { background: #21262d; color: #8b949e; }
-    .intel-kv { display: flex; flex-direction: column; gap: 1px; }
-    .ik-label { font-size: 0.68rem; color: #8b949e; text-transform: uppercase; letter-spacing: 0.04em; }
-    .ik-val   { font-size: 0.9rem; font-weight: 600; color: #e6edf3; }
-    .intel-kv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.6rem 0; }
-    .intel-qual-row { margin: 0.5rem 0; }
-    .intel-chip {
-      display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 0.68rem;
-      background: #21262d; border: 1px solid #30363d; color: #8b949e; margin: 1px;
+    .intel-vc-badge.bull { background: rgba(63,185,80,.15); border-color: var(--green); color: var(--green); }
+    .intel-vc-badge.bear { background: rgba(248,81,73,.15); border-color: var(--red);   color: var(--red);   }
+    .intel-vc-badge.div  { background: rgba(227,179,65,.15); border-color: var(--yellow); color: var(--yellow); }
+    .intel-vc-badge.neut { background: rgba(139,148,158,.1); border-color: var(--border); color: var(--text-muted); }
+
+    /* Confluence note banner */
+    .intel-conf-banner {
+      padding: 8px 18px; font-size: 12px; color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,.02);
     }
-    .intel-conf-desc { font-size: 0.78rem; color: #8b949e; border-top: 1px solid #21262d; padding-top: 0.4rem; margin-top: 0.4rem; }
+    .intel-conf-banner.ci-div  { color: var(--yellow); background: rgba(227,179,65,.05); }
+    .intel-conf-banner.ci-bull { color: var(--green);  background: rgba(63,185,80,.04); }
+    .intel-conf-banner.ci-bear { color: var(--red);    background: rgba(248,81,73,.04); }
+
+    /* Quant / Qual split body */
+    .intel-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .intel-col { padding: 14px 18px; }
+    .intel-col + .intel-col { border-left: 1px solid var(--border); }
+    .intel-col-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+      color: var(--text-muted); margin-bottom: 10px;
+    }
+
+    /* Z-score gauge */
+    .z-gauge-wrap { margin: 4px 0 10px; }
+    .z-value { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+    .z-gauge {
+      height: 5px; border-radius: 3px; position: relative;
+      background: linear-gradient(to right, var(--red) 0%, var(--border) 50%, var(--green) 100%);
+    }
+    .z-gauge-dot {
+      position: absolute; width: 11px; height: 11px; border-radius: 50%;
+      top: -3px; transform: translateX(-50%);
+      border: 2px solid var(--card); background: var(--text);
+    }
+    .z-gauge-labels {
+      display: flex; justify-content: space-between;
+      font-size: 9px; color: var(--text-muted); margin-top: 3px;
+    }
+
+    /* Regime row */
+    .intel-regime-row {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 0; border-top: 1px solid var(--border); margin-top: 4px;
+    }
+    .intel-regime-emoji { font-size: 16px; }
+    .intel-regime-label { font-size: 13px; font-weight: 700; color: var(--text); }
+    .intel-regime-sub   { font-size: 11px; color: var(--text-muted); }
+    .intel-roc { font-size: 11px; color: var(--text-muted); margin-left: auto; }
+
+    /* Sentiment dots */
+    .sent-dots-row { display: flex; gap: 5px; align-items: center; margin-bottom: 6px; }
+    .sent-dot {
+      width: 9px; height: 9px; border-radius: 50%; cursor: default;
+      border: 1px solid rgba(255,255,255,.1);
+    }
+    .sent-dot.pos { background: var(--green); }
+    .sent-dot.neg { background: var(--red); }
+    .sent-dot.neu { background: var(--border); }
+    .sent-report-row {
+      font-size: 11px; color: var(--text-muted); margin-bottom: 3px;
+      display: flex; align-items: baseline; gap: 5px;
+    }
+    .sent-report-date { font-size: 10px; color: var(--text-muted); opacity: .7; }
+    .sent-val-pos { color: var(--green); font-weight: 600; }
+    .sent-val-neg { color: var(--red);   font-weight: 600; }
+    .sent-val-neu { color: var(--text-muted); }
+    .sent-no-data { font-size: 11px; color: var(--text-muted); opacity: .6; }
+
+    /* Sub-index strip */
+    .intel-sub-strip {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0; border-top: 1px solid var(--border);
+    }
+    .intel-sub-item {
+      padding: 10px 18px; display: flex; flex-direction: column; gap: 3px;
+    }
+    .intel-sub-item + .intel-sub-item { border-left: 1px solid var(--border); }
+    .intel-sub-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .4px; }
+    .intel-sub-val   { font-size: 14px; font-weight: 700; color: var(--text); }
+    .intel-sub-meta  { font-size: 10px; color: var(--text-muted); display: flex; gap: 6px; }
+
     /* Brief cards */
     .brief-card {
-      background: #161b22; border: 1px solid #21262d; border-radius: 8px;
-      padding: 1.25rem; margin-bottom: 1rem;
+      background: var(--card); border: 1px solid var(--border);
+      border-left: 4px solid var(--border); border-radius: 8px;
+      padding: 18px; margin-bottom: 12px;
     }
-    .brief-card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 0.75rem; gap: 0.75rem; }
-    .brief-card-title  { font-weight: 600; color: #e6edf3; font-size: 1rem; }
-    .brief-card-sub    { font-size: 0.75rem; color: #8b949e; margin-top: 0.15rem; }
+    .brief-card.ci-bull { border-left-color: var(--green); }
+    .brief-card.ci-bear { border-left-color: var(--red); }
+    .brief-card.ci-div  { border-left-color: var(--yellow); }
+    .brief-card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; gap: 12px; }
+    .brief-card-title  { font-size: 15px; font-weight: 700; color: var(--text); }
+    .brief-card-sub    { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
     .brief-conf-note {
-      padding: 0.45rem 0.75rem; border-left: 3px solid #d29922;
-      background: #0d1117; border-radius: 0 4px 4px 0;
-      font-size: 0.82rem; color: #e6edf3; margin: 0.5rem 0;
+      padding: 7px 12px; border-left: 3px solid var(--yellow);
+      background: rgba(227,179,65,.06); border-radius: 0 4px 4px 0;
+      font-size: 12px; color: var(--text); margin: 8px 0; line-height: 1.5;
     }
-    .brief-conf-note.bull { border-color: #238636; }
-    .brief-conf-note.bear { border-color: #da3633; }
-    .brief-conf-note.neut { border-color: #30363d; }
-    .brief-summary  { font-size: 0.88rem; color: #e6edf3; line-height: 1.6; margin: 0.5rem 0; }
-    .brief-signals  { list-style: none; padding: 0; margin: 0.4rem 0; }
-    .brief-signals li { font-size: 0.83rem; color: #c9d1d9; padding: 0.2rem 0; }
-    .brief-signals li::before { content: "› "; color: #58a6ff; font-weight: 700; }
-    .brief-outlook  { margin-top: 0.5rem; padding: 0.4rem 0.75rem; background: #0d1117; border-radius: 4px; font-size: 0.82rem; }
-    .brief-watch    { font-size: 0.78rem; color: #d29922; margin-top: 0.35rem; }
-    .brief-meta     { font-size: 0.72rem; color: #8b949e; margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
-    /* Q&A panel */
-    .qa-key-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .brief-conf-note.ci-bull { border-color: var(--green); background: rgba(63,185,80,.05); }
+    .brief-conf-note.ci-bear { border-color: var(--red);   background: rgba(248,81,73,.05); }
+    .brief-conf-note.ci-neut { border-color: var(--border); background: transparent; }
+    .brief-summary { font-size: 13px; color: var(--text); line-height: 1.65; margin: 8px 0; }
+    .brief-signals { list-style: none; padding: 0; margin: 6px 0; }
+    .brief-signals li { font-size: 12px; color: var(--text-muted); padding: 3px 0; display: flex; gap: 6px; }
+    .brief-signals li::before { content: "›"; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .brief-outlook {
+      margin-top: 8px; padding: 7px 12px; background: rgba(88,166,255,.06);
+      border-radius: 4px; font-size: 12px; border-left: 3px solid var(--accent);
+    }
+    .brief-watch { font-size: 11px; color: var(--yellow); margin-top: 6px; display: flex; gap: 5px; }
+    .brief-meta { font-size: 10px; color: var(--text-muted); margin-top: 12px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; opacity: .7; }
+
+    /* Q&A */
+    .qa-key-row { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+    .qa-key-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .4px; white-space: nowrap; }
     .qa-key-input {
-      flex: 1; min-width: 200px; background: #0d1117; border: 1px solid #30363d;
-      color: #e6edf3; border-radius: 6px; padding: 0.4rem 0.75rem;
-      font-size: 0.82rem; font-family: monospace;
+      flex: 1; min-width: 180px; background: var(--bg); border: 1px solid var(--border);
+      color: var(--text); border-radius: 6px; padding: 7px 12px;
+      font-size: 12px; font-family: monospace;
     }
-    .qa-key-input:focus { outline: none; border-color: #58a6ff; }
-    .qa-scope-row { display: flex; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
-    .qa-scope-label { font-size: 0.78rem; color: #8b949e; display: flex; align-items: center; gap: 0.3rem; cursor: pointer; }
-    .qa-scope-label input { accent-color: #58a6ff; }
-    .qa-input-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .qa-key-input:focus { outline: none; border-color: var(--accent); }
+    .qa-key-btn {
+      background: var(--hover); color: var(--text-muted); border: 1px solid var(--border);
+      border-radius: 6px; padding: 6px 14px; cursor: pointer; font-size: 12px;
+    }
+    .qa-key-btn:hover { border-color: var(--accent); color: var(--text); }
+    .qa-scope-row { display: flex; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; align-items: center; }
+    .qa-scope-lbl { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .4px; }
+    .qa-scope-item { font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 4px; cursor: pointer; }
+    .qa-scope-item input { accent-color: var(--accent); cursor: pointer; }
+    .qa-input-row { display: flex; gap: 8px; margin-bottom: 10px; }
     .qa-textarea {
-      flex: 1; background: #0d1117; border: 1px solid #30363d; color: #e6edf3;
-      border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 0.88rem;
-      resize: vertical; min-height: 52px; font-family: inherit;
+      flex: 1; background: var(--bg); border: 1px solid var(--border); color: var(--text);
+      border-radius: 6px; padding: 10px 12px; font-size: 13px; resize: vertical; min-height: 56px;
+      font-family: inherit; line-height: 1.5;
     }
-    .qa-textarea:focus { outline: none; border-color: #58a6ff; }
+    .qa-textarea:focus { outline: none; border-color: var(--accent); }
     .qa-submit {
-      background: #1f6feb; color: #fff; border: none; border-radius: 6px;
-      padding: 0 1rem; cursor: pointer; font-size: 0.88rem; white-space: nowrap;
-      align-self: flex-end; height: 38px;
+      background: var(--accent); color: #fff; border: none; border-radius: 6px;
+      padding: 0 18px; cursor: pointer; font-size: 13px; font-weight: 600;
+      align-self: flex-end; height: 40px; white-space: nowrap;
     }
-    .qa-submit:disabled { opacity: 0.45; cursor: not-allowed; }
-    .qa-submit:hover:not(:disabled) { background: #388bfd; }
+    .qa-submit:disabled { opacity: 0.4; cursor: not-allowed; }
+    .qa-submit:hover:not(:disabled) { filter: brightness(1.15); }
     .qa-result-panel {
-      background: #161b22; border: 1px solid #21262d; border-radius: 8px;
-      padding: 1rem; margin-top: 0.75rem;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 8px; padding: 16px; margin-top: 10px;
     }
-    .qa-status   { font-size: 0.82rem; color: #8b949e; margin-bottom: 0.5rem; }
-    .qa-answer   { color: #e6edf3; font-size: 0.88rem; line-height: 1.7; white-space: pre-wrap; }
-    .qa-cit-list { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.75rem; }
+    .qa-status   { font-size: 11px; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .4px; }
+    .qa-answer   { color: var(--text); font-size: 13px; line-height: 1.7; white-space: pre-wrap; }
+    .qa-cit-list { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 12px; }
     .qa-cit {
-      background: #21262d; border: 1px solid #30363d; border-radius: 4px;
-      padding: 2px 7px; font-size: 0.68rem; color: #8b949e;
+      background: var(--hover); border: 1px solid var(--border); border-radius: 3px;
+      padding: 2px 8px; font-size: 10px; color: var(--text-muted);
     }
-    .intel-empty {
-      text-align: center; padding: 2rem 1rem; color: #8b949e; font-size: 0.88rem;
-    }
-    .intel-empty code { background: #21262d; padding: 1px 5px; border-radius: 3px; }
-    @media (max-width: 640px) {
-      .intel-alert-grid { grid-template-columns: 1fr; }
+    .intel-empty { text-align: center; padding: 2.5rem 1rem; color: var(--text-muted); font-size: 13px; }
+    .intel-empty code { background: var(--hover); padding: 1px 5px; border-radius: 3px; font-size: 11px; }
+    @media (max-width: 700px) {
+      .intel-body { grid-template-columns: 1fr; }
+      .intel-col + .intel-col { border-left: none; border-top: 1px solid var(--border); }
     }
   </style>
 </head>
@@ -3017,10 +3112,10 @@
       <div class="intel-section">
         <div class="intel-section-title">
           ⚡ Signal &amp; Confluence Engine
-          <span class="intel-section-meta" id="intelAlertsTs">Loading...</span>
+          <span class="intel-section-meta" id="intelAlertsTs"></span>
         </div>
-        <div class="intel-alert-grid" id="intelAlertGrid">
-          <div class="intel-empty">Loading signals...</div>
+        <div id="intelAlertGrid">
+          <div class="intel-empty">Loading...</div>
         </div>
       </div>
 
@@ -3031,41 +3126,36 @@
           <span class="intel-section-meta" id="intelBriefTs"></span>
         </div>
         <div id="intelBriefContent">
-          <div class="intel-empty">Loading brief...</div>
+          <div class="intel-empty">Loading...</div>
         </div>
       </div>
 
       <!-- Section 3: Q&A Assistant -->
       <div class="intel-section">
         <div class="intel-section-title">🔍 Research Q&amp;A</div>
-
-        <!-- API key row -->
-        <div class="qa-key-row">
-          <span style="font-size:0.78rem;color:#8b949e;white-space:nowrap;">Gemini API Key</span>
-          <input type="password" id="qaApiKey" class="qa-key-input" placeholder="AIza... (stored in localStorage, never sent to our server)" />
-          <button class="qa-submit" style="width:70px;" onclick="saveQAKey()">Save</button>
-          <span id="qaKeyStatus" style="font-size:0.75rem;color:#8b949e;"></span>
-        </div>
-
-        <!-- Source scope -->
-        <div class="qa-scope-row">
-          <span style="font-size:0.78rem;color:#8b949e;margin-right:0.25rem;">Sources:</span>
-          <label class="qa-scope-label"><input type="checkbox" id="qaSrcBreakwave" checked> Breakwave</label>
-          <label class="qa-scope-label"><input type="checkbox" id="qaSrcBaltic" checked> Baltic</label>
-          <label class="qa-scope-label"><input type="checkbox" id="qaSrcHellenic"> Hellenic</label>
-          <label class="qa-scope-label"><input type="checkbox" id="qaSrcWikiOnly"> Wiki only (fast)</label>
-        </div>
-
-        <!-- Query input -->
-        <div class="qa-input-row">
-          <textarea id="qaQuery" class="qa-textarea" placeholder="e.g. What is the current Capesize supply outlook through Q3 2026? What are analysts saying about iron ore demand?"></textarea>
-          <button id="qaSubmitBtn" class="qa-submit" onclick="runQAQuery()">Ask</button>
-        </div>
-
-        <div id="qaResultPanel" style="display:none;" class="qa-result-panel">
-          <div id="qaStatus" class="qa-status"></div>
-          <div id="qaAnswer" class="qa-answer"></div>
-          <div id="qaCitations" class="qa-cit-list"></div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;">
+          <div class="qa-key-row">
+            <span class="qa-key-label">Gemini Key</span>
+            <input type="password" id="qaApiKey" class="qa-key-input" placeholder="AIza... (stored only in localStorage)" />
+            <button class="qa-key-btn" onclick="saveQAKey()">Save</button>
+            <span id="qaKeyStatus" style="font-size:11px;color:var(--green);"></span>
+          </div>
+          <div class="qa-scope-row">
+            <span class="qa-scope-lbl">Scope:</span>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcBreakwave" checked> Breakwave</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcBaltic" checked> Baltic</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcHellenic"> Hellenic</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcWikiOnly"> Wiki only (fast)</label>
+          </div>
+          <div class="qa-input-row">
+            <textarea id="qaQuery" class="qa-textarea" placeholder="e.g. What is the current Capesize supply outlook through Q3 2026? What are analysts saying about iron ore demand?"></textarea>
+            <button id="qaSubmitBtn" class="qa-submit" onclick="runQAQuery()">Ask</button>
+          </div>
+          <div id="qaResultPanel" style="display:none;" class="qa-result-panel">
+            <div id="qaStatus" class="qa-status"></div>
+            <div id="qaAnswer" class="qa-answer"></div>
+            <div id="qaCitations" class="qa-cit-list"></div>
+          </div>
         </div>
       </div>
 
@@ -10085,14 +10175,13 @@
     // =====================================================================
 
     const INTEL = {
-      loaded:       false,
-      signals:      [],   // all rows from knowledge/derived/signals.jsonl
-      briefData:    null, // knowledge/briefs/latest.json
-      wikiCache:    {},   // path -> stripped text
-      chunkCache:   {},   // filename -> parsed array
+      loaded:     false,
+      signals:    [],   // Breakwave-only rows from signals.jsonl
+      briefData:  null,
+      wikiCache:  {},
+      chunkCache: {},
     };
 
-    // Chunk files available per source scope
     const QA_CHUNK_FILES = {
       breakwave: [
         'knowledge/chunks/breakwave_drybulk.jsonl',
@@ -10101,10 +10190,7 @@
         'knowledge/chunks/breakwave_insights_insights_2025.jsonl',
         'knowledge/chunks/breakwave_insights_insights_2024.jsonl',
       ],
-      baltic: [
-        'knowledge/chunks/baltic_dry.jsonl',
-        'knowledge/chunks/baltic_tanker.jsonl',
-      ],
+      baltic:   ['knowledge/chunks/baltic_dry.jsonl', 'knowledge/chunks/baltic_tanker.jsonl'],
       hellenic: [
         'knowledge/chunks/hellenic_dry_charter_2026.jsonl',
         'knowledge/chunks/hellenic_dry_charter_2025.jsonl',
@@ -10116,13 +10202,13 @@
     };
 
     const QA_WIKI_FILES = [
-      { key: 'dry_bulk_market',       path: 'knowledge/wiki/dry_bulk_market.md',       label: 'Dry Bulk Market' },
-      { key: 'capesize',              path: 'knowledge/wiki/capesize.md',               label: 'Capesize' },
-      { key: 'panamax_and_supramax',  path: 'knowledge/wiki/panamax_and_supramax.md',   label: 'Panamax & Supramax' },
-      { key: 'tanker_market',         path: 'knowledge/wiki/tanker_market.md',          label: 'Tanker Market' },
-      { key: 'vlcc_and_suezmax',      path: 'knowledge/wiki/vlcc_and_suezmax.md',       label: 'VLCC & Suezmax' },
-      { key: 'china_steel_and_iron_ore', path: 'knowledge/wiki/china_steel_and_iron_ore.md', label: 'China Steel & Iron Ore' },
-      { key: 'coal_and_grain_flows',  path: 'knowledge/wiki/coal_and_grain_flows.md',   label: 'Coal & Grain Flows' },
+      { key: 'dry_bulk_market',          path: 'knowledge/wiki/dry_bulk_market.md',          label: 'Dry Bulk Market' },
+      { key: 'capesize',                 path: 'knowledge/wiki/capesize.md',                  label: 'Capesize' },
+      { key: 'panamax_and_supramax',     path: 'knowledge/wiki/panamax_and_supramax.md',      label: 'Panamax & Supramax' },
+      { key: 'tanker_market',            path: 'knowledge/wiki/tanker_market.md',             label: 'Tanker Market' },
+      { key: 'vlcc_and_suezmax',         path: 'knowledge/wiki/vlcc_and_suezmax.md',          label: 'VLCC & Suezmax' },
+      { key: 'china_steel_and_iron_ore', path: 'knowledge/wiki/china_steel_and_iron_ore.md',  label: 'China Steel & Iron Ore' },
+      { key: 'coal_and_grain_flows',     path: 'knowledge/wiki/coal_and_grain_flows.md',      label: 'Coal & Grain Flows' },
     ];
 
     // ── Entry point ───────────────────────────────────────────────────────────
@@ -10133,11 +10219,13 @@
         INTEL.loaded = true;
       }
       _renderSignalAlerts();
-      _renderDailyBrief();   // async, updates panel when done
+      _renderDailyBrief();
       _initQAPanel();
     }
 
     // ── Signals loader ────────────────────────────────────────────────────────
+    // Pre-filter to Breakwave lines before JSON parsing — avoids stalling on
+    // large Hellenic nested-JSON entries that dominate the file.
 
     async function _intelLoadSignals() {
       try {
@@ -10145,9 +10233,9 @@
         if (!resp.ok) return;
         const text = await resp.text();
         INTEL.signals = text.split('\n')
-          .filter(l => l.trim())
+          .filter(l => l.includes('"source": "breakwave"'))
           .map(l => { try { return JSON.parse(l); } catch { return null; } })
-          .filter(Boolean);
+          .filter(s => s && s.sentiment != null && s.date && s.date !== '0000-00-00');
       } catch (e) {
         console.warn('[Intel] signals load failed:', e);
       }
@@ -10155,12 +10243,7 @@
 
     function _recentBreakwave(category, n) {
       return INTEL.signals
-        .filter(s =>
-          s.source === 'breakwave' &&
-          s.category === category &&
-          s.date && s.date !== '0000-00-00' &&
-          s.sentiment != null
-        )
+        .filter(s => s.category === category)
         .sort((a, b) => b.date.localeCompare(a.date))
         .slice(0, n || 4);
     }
@@ -10169,8 +10252,7 @@
 
     const _QUAL_SCORES = {
       positive: 1.0, constructive: 0.75, cautiously_bullish: 0.5,
-      neutral: 0.0, mixed: 0.0,
-      cautiously_bearish: -0.5, negative: -1.0,
+      neutral: 0.0, mixed: 0.0, cautiously_bearish: -0.5, negative: -1.0,
     };
 
     function _confluenceType(zScore, sentiments) {
@@ -10178,11 +10260,10 @@
       const q = sentiments.reduce((s, x) => s + (_QUAL_SCORES[x] ?? 0), 0) / sentiments.length;
       if (zScore >  0.5 && q >  0.25) return 'BULL_CONFLUENCE';
       if (zScore < -0.5 && q < -0.25) return 'BEAR_CONFLUENCE';
-      if ((zScore >  0.5 && q < -0.25) || (zScore < -0.5 && q >  0.25)) return 'DIVERGENCE';
+      if ((zScore > 0.5 && q < -0.25) || (zScore < -0.5 && q > 0.25)) return 'DIVERGENCE';
       return 'NEUTRAL';
     }
 
-    // Uses already-loaded DATA + existing helpers (movingAverage, rateOfChange, computeRollingZscoreArr)
     function _intelRegime(productKey) {
       const rows   = getRows(productKey);
       if (!rows.length) return { regime: 'N/A', emoji: '⚪', ma200: null, roc60: null, zScore: null, current: null };
@@ -10195,7 +10276,7 @@
       const zScore = zArr[zArr.length - 1];
       const cur    = vals.filter(v => v != null).at(-1);
       let regime, emoji;
-      if (ma200 == null || roc60 == null) { regime = 'N/A'; emoji = '⚪'; }
+      if (ma200 == null || roc60 == null) { regime = 'N/A';          emoji = '⚪'; }
       else if (cur > ma200 && roc60 > 0)  { regime = 'EXPANSION';    emoji = '🟢'; }
       else if (cur > ma200)               { regime = 'DISTRIBUTION'; emoji = '🟡'; }
       else if (roc60 > 0)                 { regime = 'ACCUMULATION'; emoji = '🔵'; }
@@ -10215,79 +10296,128 @@
       const panamaQ = _intelRegime('panama');
       const cleanQ  = _intelRegime('cleantanker');
       const dirtyQ  = _intelRegime('dirtytanker');
-
       const tankerZ = (cleanQ.zScore != null && dirtyQ.zScore != null)
-        ? (cleanQ.zScore + dirtyQ.zScore) / 2
-        : (cleanQ.zScore ?? dirtyQ.zScore);
+        ? (cleanQ.zScore + dirtyQ.zScore) / 2 : (cleanQ.zScore ?? dirtyQ.zScore);
 
       const drySigs    = _recentBreakwave('drybulk', 4);
       const tankerSigs = _recentBreakwave('tankers', 4);
       const drySents   = drySigs.map(s => s.sentiment || 'neutral');
       const tankSents  = tankerSigs.map(s => s.sentiment || 'neutral');
 
-      const cards = [
-        _buildAlertCard('BDI (Dry Bulk Headline)',   '🌊', bdiQ,    drySigs,    _confluenceType(bdiQ.zScore,    drySents)),
-        _buildAlertCard('Capesize (BCI)',             '⚓', capeQ,   drySigs,    _confluenceType(capeQ.zScore,   drySents)),
-        _buildAlertCard('Panamax (BPI)',              '📦', panamaQ, drySigs,    _confluenceType(panamaQ.zScore, drySents)),
-        _buildAlertCard('Tanker (BCTI/BDTI avg)',     '🛢️', { ...cleanQ, zScore: tankerZ }, tankerSigs, _confluenceType(tankerZ, tankSents)),
-      ];
+      // Two primary vessel-class cards with sub-index strip
+      grid.innerHTML =
+        _buildVCCard('🌊 Dry Bulk Freight', bdiQ,
+          _confluenceType(bdiQ.zScore, drySents), drySigs,
+          [{ label: '⚓ Capesize', q: capeQ, c: _confluenceType(capeQ.zScore, drySents) },
+           { label: '📦 Panamax',  q: panamaQ, c: _confluenceType(panamaQ.zScore, drySents) }]) +
+        _buildVCCard('🛢️ Tanker Market', { ...cleanQ, zScore: tankerZ },
+          _confluenceType(tankerZ, tankSents), tankerSigs,
+          [{ label: 'BCTI Clean', q: cleanQ, c: _confluenceType(cleanQ.zScore, tankSents) },
+           { label: 'BDTI Dirty', q: dirtyQ, c: _confluenceType(dirtyQ.zScore, tankSents) }]);
 
-      grid.innerHTML = cards.join('');
-
-      if (ts && drySigs.length) {
-        ts.textContent = `Qual: Breakwave ${drySigs[0].date} · Quant: live CSV`;
+      if (ts) {
+        ts.textContent = drySigs.length
+          ? `Qual: Breakwave ${drySigs[0].date} · Quant: live CSV`
+          : 'Quant: live CSV · Qual: loading';
       }
     }
 
-    function _buildAlertCard(title, icon, q, qualSigs, confluence) {
+    function _buildVCCard(title, q, confluence, qualSigs, subItems) {
       const fmtN  = n => n != null ? Number(n).toLocaleString(undefined, { maximumFractionDigits: 0 }) : '—';
-      const fmtZ  = n => n != null ? (n >= 0 ? '+' : '') + n.toFixed(2) + 'σ' : '—';
       const fmtPc = n => n != null ? (n >= 0 ? '+' : '') + n.toFixed(1) + '%' : '—';
 
       const cfgMap = {
-        BULL_CONFLUENCE: { cardCls: 'ci-bull', badgeCls: 'bull', label: '🟢 BULL CONFLUENCE',
-          desc: 'Quant momentum and qualitative analyst sentiment align bullishly.' },
-        BEAR_CONFLUENCE: { cardCls: 'ci-bear', badgeCls: 'bear', label: '🔴 BEAR CONFLUENCE',
-          desc: 'Quant momentum and qualitative analyst sentiment align bearishly.' },
-        DIVERGENCE:      { cardCls: 'ci-div',  badgeCls: 'div',  label: '⚡ DIVERGENCE',
-          desc: 'Quant and qual signals contradict each other — elevated positioning risk and potential mean-reversion opportunity.' },
-        NEUTRAL:         { cardCls: 'ci-neut', badgeCls: 'neut', label: '⏳ NEUTRAL',
-          desc: 'No strong confluence detected.' },
+        BULL_CONFLUENCE: { cls:'ci-bull', badge:'bull', label:'🟢 BULL CONFLUENCE',
+          note: 'Quantitative momentum and Breakwave analyst sentiment are <strong>both bullish</strong> — signals are aligned.' },
+        BEAR_CONFLUENCE: { cls:'ci-bear', badge:'bear', label:'🔴 BEAR CONFLUENCE',
+          note: 'Quantitative momentum and Breakwave analyst sentiment are <strong>both bearish</strong> — signals are aligned.' },
+        DIVERGENCE:      { cls:'ci-div',  badge:'div',  label:'⚡ DIVERGENCE',
+          note: 'Quantitative and qualitative signals <strong>contradict each other</strong> — elevated positioning risk; potential mean-reversion setup.' },
+        NEUTRAL:         { cls:'ci-neut', badge:'neut', label:'— NEUTRAL',
+          note: 'No strong directional confluence detected.' },
       };
       const cfg = cfgMap[confluence] || cfgMap.NEUTRAL;
 
-      const zCol     = q.zScore > 0 ? '#3fb950' : q.zScore < 0 ? '#f85149' : '#8b949e';
-      const qualChips = qualSigs.slice(0, 3).map(s => {
-        const sCol = { positive:'#3fb950', neutral:'#8b949e', negative:'#f85149' }[s.sentiment] || '#8b949e';
-        return `<span class="intel-chip" style="color:${sCol}">${s.date} · ${s.sentiment}/${s.momentum}</span>`;
+      // Z-score gauge: clamp -3…+3, map to 0-100%
+      const z        = q.zScore;
+      const zPct     = z != null ? Math.min(100, Math.max(0, (z + 3) / 6 * 100)) : 50;
+      const zCol     = z > 0.5 ? 'var(--green)' : z < -0.5 ? 'var(--red)' : 'var(--text-muted)';
+      const zLabel   = z != null ? (z >= 0 ? '+' : '') + z.toFixed(2) + 'σ' : '—';
+
+      // Sentiment dots + rows (last 4 reports)
+      const sentDotCls = { positive:'pos', negative:'neg', neutral:'neu', mixed:'neu', constructive:'pos', cautiously_bullish:'pos', cautiously_bearish:'neg' };
+      const sentDots = qualSigs.slice(0, 4).map(s =>
+        `<div class="sent-dot ${sentDotCls[s.sentiment] || 'neu'}" title="${s.date}: ${s.sentiment}"></div>`
+      ).join('');
+      const sentRows = qualSigs.slice(0, 3).map(s => {
+        const vc = sentDotCls[s.sentiment] || 'neu';
+        const col = vc === 'pos' ? 'var(--green)' : vc === 'neg' ? 'var(--red)' : 'var(--text-muted)';
+        return `<div class="sent-report-row">
+          <span style="font-weight:600;color:${col};">${s.sentiment}</span>
+          <span>/</span><span>${s.momentum || '—'}</span>
+          <span class="sent-report-date">${s.date}</span>
+        </div>`;
       }).join('');
 
-      return `<div class="intel-alert-card ${cfg.cardCls}">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
-          <span style="font-weight:600;color:#e6edf3;font-size:0.92rem;">${icon} ${title}</span>
-          <span class="intel-badge ${cfg.badgeCls}">${cfg.label}</span>
+      // Sub-index strip
+      const subHtml = subItems.map(({ label, q: sq, c: sc }) => {
+        const sz    = sq.zScore;
+        const sCol  = sz > 0.5 ? 'var(--green)' : sz < -0.5 ? 'var(--red)' : 'var(--text-muted)';
+        const scCfg = cfgMap[sc] || cfgMap.NEUTRAL;
+        return `<div class="intel-sub-item">
+          <span class="intel-sub-label">${label}</span>
+          <span class="intel-sub-val">${fmtN(sq.current)}</span>
+          <div class="intel-sub-meta">
+            <span style="color:${sCol};font-weight:600;">${sz != null ? (sz >= 0 ? '+' : '') + sz.toFixed(2) + 'σ' : '—'}</span>
+            <span>${sq.emoji} ${sq.regime}</span>
+            <span class="intel-vc-badge ${scCfg.badge}" style="padding:1px 6px;font-size:9px;">${scCfg.label}</span>
+          </div>
+        </div>`;
+      }).join('');
+
+      return `<div class="intel-vc-card ${cfg.cls}">
+        <div class="intel-vc-header">
+          <span class="intel-vc-name">${title}</span>
+          <span class="intel-vc-badge ${cfg.badge}">${cfg.label}</span>
         </div>
-        <div class="intel-kv-grid">
-          <div class="intel-kv"><span class="ik-label">Level</span><span class="ik-val">${fmtN(q.current)}</span></div>
-          <div class="intel-kv"><span class="ik-label">Z-Score (252D)</span><span class="ik-val" style="color:${zCol}">${fmtZ(q.zScore)}</span></div>
-          <div class="intel-kv"><span class="ik-label">Regime</span><span class="ik-val">${q.emoji} ${q.regime}</span></div>
-          <div class="intel-kv"><span class="ik-label">ROC (60D)</span><span class="ik-val">${fmtPc(q.roc60)}</span></div>
+        <div class="intel-conf-banner ${cfg.cls}">${cfg.note}</div>
+        <div class="intel-body">
+          <div class="intel-col">
+            <div class="intel-col-label">Quantitative</div>
+            <div class="z-gauge-wrap">
+              <div class="z-value" style="color:${zCol}">${zLabel}</div>
+              <div class="z-gauge">
+                <div class="z-gauge-dot" style="left:${zPct}%;background:${zCol};"></div>
+              </div>
+              <div class="z-gauge-labels"><span>−3σ Bearish</span><span>0</span><span>Bullish +3σ</span></div>
+            </div>
+            <div class="intel-regime-row">
+              <span class="intel-regime-emoji">${q.emoji}</span>
+              <div>
+                <div class="intel-regime-label">${q.regime}</div>
+                <div class="intel-regime-sub">Level: ${fmtN(q.current)}</div>
+              </div>
+              <span class="intel-roc">ROC(60D) ${fmtPc(q.roc60)}</span>
+            </div>
+          </div>
+          <div class="intel-col">
+            <div class="intel-col-label">Qualitative — Breakwave Advisors</div>
+            ${qualSigs.length ? `
+              <div class="sent-dots-row">${sentDots}<span style="font-size:10px;color:var(--text-muted);margin-left:4px;">last ${qualSigs.length} reports</span></div>
+              ${sentRows}
+            ` : `<div class="sent-no-data">Sentiment data unavailable — <code>signals.jsonl</code> loading or not yet generated.</div>`}
+          </div>
         </div>
-        <div class="intel-qual-row">
-          <div class="ik-label" style="margin-bottom:3px;">Breakwave sentiment (recent)</div>
-          ${qualChips || '<span style="color:#8b949e;font-size:0.75rem;">No reports loaded</span>'}
-        </div>
-        <div class="intel-conf-desc">${cfg.desc}</div>
+        ${subHtml ? `<div class="intel-sub-strip">${subHtml}</div>` : ''}
       </div>`;
     }
 
     // ── Daily Brief renderer ──────────────────────────────────────────────────
 
     async function _renderDailyBrief() {
-      const el  = document.getElementById('intelBriefContent');
+      const el   = document.getElementById('intelBriefContent');
       const tsEl = document.getElementById('intelBriefTs');
       if (!el) return;
-
       try {
         const resp = await fetch('knowledge/briefs/latest.json');
         if (!resp.ok) throw new Error('not_found');
@@ -10295,61 +10425,51 @@
         _paintBrief(el, tsEl, INTEL.briefData);
       } catch {
         el.innerHTML = `<div class="intel-empty">
-          <div style="font-size:1.4rem;margin-bottom:0.5rem;">📋</div>
-          <div>No brief generated yet. The <code>daily_brief.yml</code> workflow runs at 12:00 PM UTC on weekdays.</div>
-          <div style="margin-top:0.4rem;font-size:0.8rem;">Run <code>python scripts/generate_brief.py</code> locally with <code>GEMINI_API_KEY</code> to generate one now.</div>
+          No brief generated yet.<br>
+          The <code>daily_brief.yml</code> workflow runs at 12:00 PM UTC Mon–Fri.<br>
+          <span style="font-size:11px;opacity:.7;">Run <code>GEMINI_API_KEY=... python scripts/generate_brief.py</code> locally to generate one now.</span>
         </div>`;
       }
     }
 
     function _paintBrief(el, tsEl, data) {
-      const { generated_at, market_snapshot, vessel_classes, macro_note, sources } = data;
-
-      if (tsEl && generated_at) {
-        tsEl.textContent = 'Generated ' + new Date(generated_at).toLocaleString();
-      }
+      const { generated_at, market_snapshot: snap, vessel_classes: vc, macro_note, sources } = data;
+      if (tsEl && generated_at) tsEl.textContent = new Date(generated_at).toLocaleString();
 
       const cfgMap = {
-        BULL_CONFLUENCE: { badgeCls: 'bull', noteCls: 'bull', label: '🟢 BULL CONFLUENCE' },
-        BEAR_CONFLUENCE: { badgeCls: 'bear', noteCls: 'bear', label: '🔴 BEAR CONFLUENCE' },
-        DIVERGENCE:      { badgeCls: 'div',  noteCls: '',     label: '⚡ DIVERGENCE' },
-        NEUTRAL:         { badgeCls: 'neut', noteCls: 'neut', label: '⏳ NEUTRAL' },
+        BULL_CONFLUENCE: { cls:'ci-bull', badge:'bull', label:'🟢 BULL CONFLUENCE' },
+        BEAR_CONFLUENCE: { cls:'ci-bear', badge:'bear', label:'🔴 BEAR CONFLUENCE' },
+        DIVERGENCE:      { cls:'ci-div',  badge:'div',  label:'⚡ DIVERGENCE' },
+        NEUTRAL:         { cls:'ci-neut', badge:'neut', label:'— NEUTRAL' },
       };
 
-      function _briefCard(icon, label, vc, snapKey) {
-        if (!vc) return '';
-        const cfg  = cfgMap[vc.confluence_type] || cfgMap.NEUTRAL;
-        const snap = market_snapshot?.[snapKey];
-        const sub  = snap
-          ? `${snap.regime_emoji || ''} ${snap.regime || ''} · Z=${snap.z_score_252d != null ? (snap.z_score_252d >= 0 ? '+' : '') + snap.z_score_252d.toFixed(2) + 'σ' : '—'} · ROC60=${snap.roc60 != null ? (snap.roc60 >= 0 ? '+' : '') + snap.roc60.toFixed(1) + '%' : '—'}`
-          : '';
-        const sigs = (vc.key_signals || []).map(s => `<li>${s}</li>`).join('');
-        const dates = (vc.report_dates || []).filter(Boolean).map(d => `<span class="qa-cit">${d}</span>`).join('');
-        return `<div class="brief-card">
+      function briefCard(icon, label, vcData, snapKey) {
+        if (!vcData) return '';
+        const cfg  = cfgMap[vcData.confluence_type] || cfgMap.NEUTRAL;
+        const s    = snap?.[snapKey];
+        const sub  = s ? `${s.regime_emoji || ''} ${s.regime || ''} · Z=${s.z_score_252d != null ? (s.z_score_252d >= 0 ? '+' : '') + s.z_score_252d.toFixed(2) + 'σ' : '—'} · ROC60=${s.roc60 != null ? (s.roc60 >= 0 ? '+' : '') + s.roc60.toFixed(1) + '%' : '—'}` : '';
+        const sigs = (vcData.key_signals || []).map(x => `<li>${x}</li>`).join('');
+        return `<div class="brief-card ${cfg.cls}">
           <div class="brief-card-header">
             <div>
               <div class="brief-card-title">${icon} ${label}</div>
               ${sub ? `<div class="brief-card-sub">${sub}</div>` : ''}
             </div>
-            <span class="intel-badge ${cfg.badgeCls}">${cfg.label}</span>
+            <span class="intel-vc-badge ${cfg.badge}">${cfg.label}</span>
           </div>
-          ${vc.confluence_note ? `<div class="brief-conf-note ${cfg.noteCls}">${vc.confluence_note}</div>` : ''}
-          ${vc.summary        ? `<p class="brief-summary">${vc.summary}</p>` : ''}
-          ${sigs              ? `<ul class="brief-signals">${sigs}</ul>` : ''}
-          ${vc.outlook        ? `<div class="brief-outlook"><span style="color:#58a6ff;font-weight:600;">Outlook:</span> ${vc.outlook}</div>` : ''}
-          ${vc.watch          ? `<div class="brief-watch">⚠ Watch: ${vc.watch}</div>` : ''}
-          ${dates             ? `<div style="margin-top:0.4rem;">${dates}</div>` : ''}
+          ${vcData.confluence_note ? `<div class="brief-conf-note ${cfg.cls}">${vcData.confluence_note}</div>` : ''}
+          ${vcData.summary         ? `<p class="brief-summary">${vcData.summary}</p>` : ''}
+          ${sigs                   ? `<ul class="brief-signals">${sigs}</ul>` : ''}
+          ${vcData.outlook         ? `<div class="brief-outlook"><strong style="color:var(--accent)">Outlook:</strong> ${vcData.outlook}</div>` : ''}
+          ${vcData.watch           ? `<div class="brief-watch">⚠ Watch: ${vcData.watch}</div>` : ''}
         </div>`;
       }
 
-      const dryCard    = _briefCard('🌊', 'Dry Bulk',  vessel_classes?.dry_bulk, 'bdi');
-      const tankerCard = _briefCard('🛢️', 'Tanker',   vessel_classes?.tanker,   'clean_tanker');
-
       el.innerHTML = `
-        ${macro_note ? `<div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:0.75rem 1rem;margin-bottom:1rem;font-size:0.85rem;color:#e6edf3;"><strong style="color:#8b949e;">Macro note:</strong> ${macro_note}</div>` : ''}
-        ${dryCard}${tankerCard}
+        ${macro_note ? `<div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;margin-bottom:12px;font-size:12px;color:var(--text-muted);"><strong style="color:var(--text);">Macro:</strong> ${macro_note}</div>` : ''}
+        ${briefCard('🌊', 'Dry Bulk', vc?.dry_bulk, 'bdi')}
+        ${briefCard('🛢️', 'Tanker',   vc?.tanker,   'clean_tanker')}
         <div class="brief-meta">
-          Sources: ${(sources || []).length} reports
           ${(sources || []).slice(0, 4).map(s => `<span class="qa-cit">${s}</span>`).join('')}
         </div>`;
     }
@@ -10361,10 +10481,9 @@
       if (!keyEl) return;
       const stored = localStorage.getItem('gemini_qa_key') || '';
       if (stored) {
-        keyEl.value   = stored;
-        keyEl.placeholder = 'API key saved ✓';
+        keyEl.value = stored;
         const st = document.getElementById('qaKeyStatus');
-        if (st) st.textContent = '✓ Key saved';
+        if (st) st.textContent = '✓ Saved';
       }
     }
 
@@ -10373,188 +10492,143 @@
       if (!val) return;
       localStorage.setItem('gemini_qa_key', val);
       const st = document.getElementById('qaKeyStatus');
-      if (st) { st.textContent = '✓ Saved'; st.style.color = '#3fb950'; }
+      if (st) { st.textContent = '✓ Saved'; }
     }
 
-    // BM25-style keyword scoring (no external deps)
     function _tokenize(text) {
       return (text || '').toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(t => t.length > 2);
     }
 
-    function _bm25Score(docTokens, queryTerms, avgDocLen, k1, b) {
-      const dl  = docTokens.length;
-      const tf  = {};
+    function _bm25Score(docTokens, queryTerms, avgLen) {
+      const k1 = 1.5, b = 0.75, dl = docTokens.length;
+      const tf = {};
       for (const t of docTokens) tf[t] = (tf[t] || 0) + 1;
-      let score = 0;
-      for (const term of queryTerms) {
-        const freq = tf[term] || 0;
-        if (!freq) continue;
-        const idf = 1; // simplified — no corpus-wide IDF needed at this scale
-        score += idf * (freq * (k1 + 1)) / (freq + k1 * (1 - b + b * dl / avgDocLen));
-      }
-      return score;
+      return queryTerms.reduce((sc, term) => {
+        const f = tf[term] || 0;
+        return f ? sc + (f * (k1 + 1)) / (f + k1 * (1 - b + b * dl / avgLen)) : sc;
+      }, 0);
     }
 
     function _scoreItems(items, queryTerms, textFn, avgLen) {
-      return items.map(item => ({
-        item,
-        score: _bm25Score(_tokenize(textFn(item)), queryTerms, avgLen, 1.5, 0.75),
-      })).filter(x => x.score > 0).sort((a, b) => b.score - a.score);
+      return items
+        .map(item => ({ item, score: _bm25Score(_tokenize(textFn(item)), queryTerms, avgLen) }))
+        .filter(x => x.score > 0)
+        .sort((a, b) => b.score - a.score);
     }
 
-    async function _fetchTextFile(url) {
+    async function _fetchText(url) {
       if (INTEL.wikiCache[url] !== undefined) return INTEL.wikiCache[url];
       try {
         const r = await fetch(url);
         const t = r.ok ? await r.text() : '';
-        INTEL.wikiCache[url] = t;
-        return t;
-      } catch { return ''; }
+        return (INTEL.wikiCache[url] = t);
+      } catch { return (INTEL.wikiCache[url] = ''); }
     }
 
-    async function _loadChunkFile(url) {
+    async function _loadChunks(url) {
       if (INTEL.chunkCache[url]) return INTEL.chunkCache[url];
       try {
-        const r    = await fetch(url);
-        if (!r.ok) return [];
-        const text = await r.text();
-        const rows = text.split('\n').filter(l => l.trim())
-          .map(l => { try { return JSON.parse(l); } catch { return null; } })
-          .filter(Boolean);
-        INTEL.chunkCache[url] = rows;
-        return rows;
-      } catch { return []; }
+        const r = await fetch(url);
+        if (!r.ok) return (INTEL.chunkCache[url] = []);
+        const rows = (await r.text()).split('\n').filter(l => l.trim())
+          .map(l => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
+        return (INTEL.chunkCache[url] = rows);
+      } catch { return (INTEL.chunkCache[url] = []); }
     }
 
-    function _stripFrontmatter(md) {
+    function _stripFM(md) {
       if (!md.startsWith('---')) return md;
-      const end = md.indexOf('---', 3);
-      return end > 0 ? md.slice(end + 3).trim() : md;
+      const e = md.indexOf('---', 3);
+      return e > 0 ? md.slice(e + 3).trim() : md;
     }
 
     async function runQAQuery() {
-      const btn   = document.getElementById('qaSubmitBtn');
-      const panel = document.getElementById('qaResultPanel');
-      const statEl= document.getElementById('qaStatus');
-      const ansEl = document.getElementById('qaAnswer');
-      const citEl = document.getElementById('qaCitations');
-      const query = (document.getElementById('qaQuery')?.value || '').trim();
-      const apiKey= (document.getElementById('qaApiKey')?.value || localStorage.getItem('gemini_qa_key') || '').trim();
+      const btn    = document.getElementById('qaSubmitBtn');
+      const panel  = document.getElementById('qaResultPanel');
+      const statEl = document.getElementById('qaStatus');
+      const ansEl  = document.getElementById('qaAnswer');
+      const citEl  = document.getElementById('qaCitations');
+      const query  = (document.getElementById('qaQuery')?.value || '').trim();
+      const apiKey = (document.getElementById('qaApiKey')?.value || localStorage.getItem('gemini_qa_key') || '').trim();
 
       if (!query) return;
-      if (!apiKey) {
-        alert('Enter your Gemini API key first.');
-        return;
-      }
+      if (!apiKey) { alert('Enter your Gemini API key first.'); return; }
 
       btn.disabled = true;
       panel.style.display = 'block';
-      statEl.textContent = '⏳ Loading knowledge base...';
-      ansEl.textContent  = '';
-      citEl.innerHTML    = '';
+      statEl.textContent = 'Loading knowledge base...';
+      ansEl.textContent = '';
+      citEl.innerHTML = '';
 
       try {
-        const queryTerms = _tokenize(query);
-        const wikiOnly   = document.getElementById('qaSrcWikiOnly')?.checked;
+        const terms    = _tokenize(query);
+        const wikiOnly = document.getElementById('qaSrcWikiOnly')?.checked;
 
-        // Step 1: Always load wiki pages first (high-level summary layer)
-        statEl.textContent = '⏳ Loading wiki pages...';
-        const wikiItems = [];
-        for (const wf of QA_WIKI_FILES) {
-          const raw  = await _fetchTextFile(wf.path);
-          const text = _stripFrontmatter(raw);
-          if (text) wikiItems.push({ ...wf, text });
-        }
+        // Step 1 — Wiki pages (high-level summary layer, always loaded)
+        statEl.textContent = 'Loading wiki pages...';
+        const wikiItems = (await Promise.all(
+          QA_WIKI_FILES.map(async wf => {
+            const text = _stripFM(await _fetchText(wf.path));
+            return text ? { ...wf, text } : null;
+          })
+        )).filter(Boolean);
 
-        // Step 2: Score wiki pages
-        const avgWikiLen = wikiItems.reduce((s, w) => s + _tokenize(w.text).length, 0) / (wikiItems.length || 1);
-        const scoredWiki = _scoreItems(wikiItems, queryTerms, w => w.text, avgWikiLen);
+        const avgWLen    = wikiItems.reduce((s, w) => s + _tokenize(w.text).length, 0) / (wikiItems.length || 1);
+        const scoredWiki = _scoreItems(wikiItems, terms, w => w.text, avgWLen).slice(0, 3);
 
-        // Step 3: Load + score chunks (unless wiki-only mode)
+        // Step 2 — Chunks (selective per scope)
         let topChunks = [];
         if (!wikiOnly) {
-          statEl.textContent = '⏳ Loading retrieval chunks...';
-          const filesToLoad = [];
-          if (document.getElementById('qaSrcBreakwave')?.checked) filesToLoad.push(...QA_CHUNK_FILES.breakwave);
-          if (document.getElementById('qaSrcBaltic')?.checked)    filesToLoad.push(...QA_CHUNK_FILES.baltic);
-          if (document.getElementById('qaSrcHellenic')?.checked)  filesToLoad.push(...QA_CHUNK_FILES.hellenic);
-
-          const allChunks = (await Promise.all(filesToLoad.map(_loadChunkFile))).flat();
-          const avgChunkLen = allChunks.reduce((s, c) => s + _tokenize(c.text).length, 0) / (allChunks.length || 1);
-          const scoredChunks = _scoreItems(allChunks, queryTerms, c => c.text + ' ' + (c.keywords || []).join(' '), avgChunkLen);
-          topChunks = scoredChunks.slice(0, 7).map(x => x.item);
+          statEl.textContent = 'Loading retrieval chunks...';
+          const urls = [
+            ...(document.getElementById('qaSrcBreakwave')?.checked ? QA_CHUNK_FILES.breakwave : []),
+            ...(document.getElementById('qaSrcBaltic')?.checked    ? QA_CHUNK_FILES.baltic    : []),
+            ...(document.getElementById('qaSrcHellenic')?.checked  ? QA_CHUNK_FILES.hellenic  : []),
+          ];
+          const allChunks  = (await Promise.all(urls.map(_loadChunks))).flat();
+          const avgCLen    = allChunks.reduce((s, c) => s + _tokenize(c.text).length, 0) / (allChunks.length || 1);
+          topChunks = _scoreItems(allChunks, terms, c => c.text + ' ' + (c.keywords || []).join(' '), avgCLen)
+            .slice(0, 7).map(x => x.item);
         }
 
-        // Step 4: Build context — wiki excerpts first (boosted), then chunks
-        const topWiki = scoredWiki.slice(0, 3);
-        const contextParts = [];
+        const ctx = [
+          ...scoredWiki.map((w, i) => `[WIKI-${i+1}] ${w.item.label}\n${w.item.text.slice(0, 1200)}`),
+          ...topChunks.map((c, i)  => `[${i+1}] ${c.source}/${c.category} | ${c.date} | ${c.section_title}\n${c.text}`),
+        ];
 
-        topWiki.forEach((w, i) => {
-          contextParts.push(`[WIKI-${i + 1}] ${w.item.label} (knowledge base summary)\n${w.item.text.slice(0, 1200)}`);
-        });
-        topChunks.forEach((c, i) => {
-          contextParts.push(`[${i + 1}] ${c.source}/${c.category} | ${c.date} | ${c.section_title}\n${c.text}`);
-        });
-
-        if (!contextParts.length) {
+        if (!ctx.length) {
           ansEl.textContent = 'No relevant context found. Try broadening your source selection.';
-          btn.disabled = false;
-          return;
+          btn.disabled = false; return;
         }
 
-        statEl.textContent = `⏳ Asking Gemini (${contextParts.length} context passages)...`;
+        statEl.textContent = `Asking Gemini (${ctx.length} passages)...`;
 
-        const prompt = `You are a senior shipping freight market analyst. Answer the question using ONLY the provided context passages.
+        const prompt = `You are a senior shipping freight market analyst. Answer using ONLY the provided context.
 
 Question: ${query}
 
-Context:
-${contextParts.join('\n\n---\n\n')}
+${ctx.join('\n\n---\n\n')}
 
-Instructions:
-- Cite each claim using the passage label, e.g. [WIKI-1] or [3]
-- Be direct and trader-focused — mention specific index levels, dates, or route data where available
-- If the context is insufficient, say so clearly rather than speculating
-- Keep the answer under 400 words`;
+Rules: cite every claim [WIKI-N] or [N]. Be direct and trader-focused. Under 400 words.`;
 
-        const apiResp = await fetch(
+        const r = await fetch(
           `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
-          {
-            method:  'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body:    JSON.stringify({
-              contents: [{ parts: [{ text: prompt }] }],
-              generationConfig: { temperature: 0.2, maxOutputTokens: 1024 },
-            }),
-          }
+          { method:'POST', headers:{'Content-Type':'application/json'},
+            body: JSON.stringify({ contents:[{parts:[{text:prompt}]}], generationConfig:{temperature:0.2,maxOutputTokens:1024} }) }
         );
+        if (!r.ok) { const e = await r.json().catch(()=>({})); throw new Error(e?.error?.message || `HTTP ${r.status}`); }
 
-        if (!apiResp.ok) {
-          const err = await apiResp.json().catch(() => ({}));
-          throw new Error(err?.error?.message || `HTTP ${apiResp.status}`);
-        }
-
-        const apiData = await apiResp.json();
-        const answer  = apiData?.candidates?.[0]?.content?.parts?.[0]?.text || '(no response)';
-
-        statEl.textContent = `✓ ${contextParts.length} passages retrieved (${topWiki.length} wiki + ${topChunks.length} chunks)`;
+        const answer = (await r.json())?.candidates?.[0]?.content?.parts?.[0]?.text || '(no response)';
+        statEl.textContent = `✓ ${ctx.length} passages (${scoredWiki.length} wiki · ${topChunks.length} chunks)`;
         ansEl.textContent  = answer;
-
-        // Build citation list
-        const cits = [
-          ...topWiki.map((w, i) => ({ label: `WIKI-${i + 1}`, meta: w.item.label })),
-          ...topChunks.map((c, i) => ({ label: `${i + 1}`, meta: `${c.source} · ${c.date} · ${c.section_title}` })),
-        ];
-        citEl.innerHTML = cits.map(c =>
-          `<span class="qa-cit" title="${c.meta}">[${c.label}] ${c.meta}</span>`
-        ).join('');
-
+        citEl.innerHTML    = [
+          ...scoredWiki.map((w, i) => `<span class="qa-cit" title="${w.item.label}">[WIKI-${i+1}] ${w.item.label}</span>`),
+          ...topChunks.map((c, i)  => `<span class="qa-cit">[${i+1}] ${c.source} · ${c.date} · ${c.section_title}</span>`),
+        ].join('');
       } catch (err) {
-        statEl.textContent = '✗ Error: ' + err.message;
+        statEl.textContent = '✗ ' + err.message;
         ansEl.textContent  = '';
-      } finally {
-        btn.disabled = false;
-      }
+      } finally { btn.disabled = false; }
     }
 
   </script>
