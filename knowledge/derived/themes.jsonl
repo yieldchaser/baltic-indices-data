@@ -45,6 +45,7 @@
 {"doc_id": "baltic_container_2026-03-20_2026_03_20_container_report_week_12_container", "themes": ["container", "china", "meg", "europe", "crude_oil", "gas"], "key_entities": ["China", "Middle East"], "market_tone": "neutral"}
 {"doc_id": "baltic_container_2026-03-27_2026_03_27_container_report_week_13_container", "themes": ["container", "china", "meg", "europe", "crude_oil", "products"], "key_entities": ["China", "Middle East"], "market_tone": "neutral"}
 {"doc_id": "baltic_container_2026-04-10_2026_04_10_container_report_week_15_container", "themes": ["container", "apr", "main"], "key_entities": [], "market_tone": "neutral"}
+{"doc_id": "baltic_container_2026-04-17_2026_04_17_container_report_week_16_container", "themes": ["container", "apr", "main"], "key_entities": [], "market_tone": "neutral"}
 {"doc_id": "baltic_dry_unknown_2015_lengthy_tonnage_listsabound_dry", "themes": ["capesize", "panamax", "supramax", "china", "brazil", "australia"], "key_entities": ["China", "Brazil", "Australia", "US Gulf"], "market_tone": "constructive"}
 {"doc_id": "baltic_dry_unknown_2015_market_endures_panamaxshockduringdifficultwee_dry", "themes": ["capesize", "panamax", "supramax", "handysize", "china", "brazil"], "key_entities": ["China", "Brazil", "Australia", "US Gulf"], "market_tone": "neutral"}
 {"doc_id": "baltic_dry_unknown_2015_outlook_bleak_dry", "themes": ["capesize", "panamax", "supramax", "handysize", "china", "brazil"], "key_entities": ["China", "Brazil", "Australia", "US Gulf"], "market_tone": "constructive"}
@@ -600,6 +601,7 @@
 {"doc_id": "baltic_dry_2026-03-20_2026_03_20_bulk_report_week_12_dry", "themes": ["capesize", "panamax", "supramax", "handysize", "china", "brazil"], "key_entities": ["China", "Brazil", "Australia", "US Gulf"], "market_tone": "cautiously_bearish"}
 {"doc_id": "baltic_dry_2026-03-27_2026_03_27_bulk_report_week_13_dry", "themes": ["capesize", "panamax", "supramax", "handysize", "china", "brazil"], "key_entities": ["China", "Brazil", "Australia", "Atlantic basin", "Pacific basin", "US Gulf"], "market_tone": "cautiously_bearish"}
 {"doc_id": "baltic_dry_2026-04-10_2026_04_10_bulk_report_week_15_dry", "themes": ["apr", "main"], "key_entities": [], "market_tone": "neutral"}
+{"doc_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry", "themes": ["apr", "main"], "key_entities": [], "market_tone": "neutral"}
 {"doc_id": "baltic_gas_2022-11-18_2022_11_18_gas_report_week_46_gas", "themes": ["lng", "lpg", "australia", "atlantic", "japan", "gas"], "key_entities": ["Australia", "Atlantic basin", "Middle East"], "market_tone": "constructive"}
 {"doc_id": "baltic_gas_2022-11-25_2022_11_25_gas_report_week_47_gas", "themes": ["lng", "lpg", "brazil", "india", "gas", "last"], "key_entities": ["Vale"], "market_tone": "constructive"}
 {"doc_id": "baltic_gas_2022-12-02_2022_12_02_gas_report_week_48_gas", "themes": ["capesize", "lng", "lpg", "meg", "europe", "india"], "key_entities": [], "market_tone": "neutral"}
@@ -766,6 +768,7 @@
 {"doc_id": "baltic_gas_2026-03-20_2026_03_20_gas_report_week_12_gas", "themes": ["lng", "lpg", "australia", "atlantic", "pacific", "europe"], "key_entities": ["Australia", "Atlantic basin", "Middle East", "US Gulf"], "market_tone": "constructive"}
 {"doc_id": "baltic_gas_2026-03-27_2026_03_27_gas_report_week_13_gas", "themes": ["lng", "lpg", "australia", "atlantic", "pacific", "europe"], "key_entities": ["Australia", "Middle East", "US Gulf"], "market_tone": "cautiously_bearish"}
 {"doc_id": "baltic_gas_2026-04-10_2026_04_10_gas_report_week_15_gas", "themes": ["gas", "apr", "main"], "key_entities": [], "market_tone": "neutral"}
+{"doc_id": "baltic_gas_2026-04-17_2026_04_17_gas_report_week_16_gas", "themes": ["gas", "apr", "main"], "key_entities": [], "market_tone": "neutral"}
 {"doc_id": "baltic_ningbo_2017-01-06_2017_01_06_ningbo_containerised_freight_index_ningbo", "themes": ["container", "china", "ningbo", "reported", "containerised", "included"], "key_entities": [], "market_tone": "neutral"}
 {"doc_id": "baltic_ningbo_2017-01-13_2017_01_13_ningbo_containerised_freight_index1_ningbo", "themes": ["container", "china", "ningbo", "reported", "containerised", "included"], "key_entities": [], "market_tone": "neutral"}
 {"doc_id": "baltic_ningbo_2017-01-20_2017_01_20_ningbo_containerised_freight_index11_ningbo", "themes": ["container", "china", "ningbo", "reported", "containerised", "included"], "key_entities": [], "market_tone": "neutral"}
@@ -1812,6 +1815,7 @@
 {"doc_id": "baltic_tanker_2026-03-20_2026_03_20_tanker_report_week_12_tanker", "themes": ["handysize", "vlcc", "suezmax", "aframax", "china", "atlantic"], "key_entities": ["China", "Middle East", "US Gulf"], "market_tone": "cautiously_bearish"}
 {"doc_id": "baltic_tanker_2026-03-27_2026_03_27_tanker_report_week_13_tanker", "themes": ["handysize", "vlcc", "suezmax", "aframax", "china", "atlantic"], "key_entities": ["China", "Middle East", "US Gulf"], "market_tone": "constructive"}
 {"doc_id": "baltic_tanker_2026-04-10_2026_04_10_tanker_report_week_15_tanker", "themes": ["apr", "main"], "key_entities": [], "market_tone": "neutral"}
+{"doc_id": "baltic_tanker_2026-04-17_2026_04_17_tanker_report_week_16_tanker", "themes": ["apr", "main"], "key_entities": [], "market_tone": "neutral"}
 {"doc_id": "book_2022_quantitativemodellingofshippingfreightratesdevelopmentsinthepast20years", "themes": ["capesize", "panamax", "supramax", "vlcc", "aframax", "lng"], "key_entities": ["China", "Australia"], "market_tone": "constructive"}
 {"doc_id": "book_lesson_2_types_of_ships", "themes": ["Environmental Protection", "Global Logistics", "Maritime Education", "Industrial Infrastructure"], "key_entities": ["NAMEPA", "IHS Maritime", "equasis.org", "maritime-connector.com"], "market_tone": "informative_and_educational"}
 {"doc_id": "book_lloyds_maritime_atlas_24th_edition", "themes": ["capesize", "container", "china", "brazil", "australia", "atlantic"], "key_entities": ["China", "Brazil", "Australia", "Vale", "Middle East"], "market_tone": "constructive"}
