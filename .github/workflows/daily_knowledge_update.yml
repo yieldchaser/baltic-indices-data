@@ -92,6 +92,12 @@ jobs:
           set -o pipefail
           python scripts/process_knowledge.py 2>&1 | tee knowledge_processor.log
 
+      - name: Guardrail - verify Breakwave signals freshness
+        if: steps.check.outputs.new == 'true'
+        shell: bash
+        run: |
+          python scripts/check_breakwave_freshness.py --check signals_vs_reports
+
       - name: Validate updated knowledge
         if: steps.check.outputs.new == 'true'
         shell: bash

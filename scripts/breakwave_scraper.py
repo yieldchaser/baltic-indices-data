@@ -32,10 +32,12 @@ from urllib.parse import urljoin, urlparse
 from datetime import datetime
 from bs4 import BeautifulSoup, Tag
 
+from source_archive_utils_v2 import REPORTS_ROOT
+
 # ─────────────────────────── Config ──────────────────────────────────────────
 
 BASE_URL    = "https://www.breakwaveadvisors.com"
-OUTPUT_ROOT = Path(r"C:\Users\Dell\Github\Shipping\reports")
+OUTPUT_ROOT = REPORTS_ROOT
 
 HEADERS = {
     "User-Agent": (

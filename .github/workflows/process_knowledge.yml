@@ -128,6 +128,12 @@ jobs:
           fi
           python scripts/process_knowledge.py $FLAGS 2>&1 | tee knowledge_processor.log
 
+      - name: Guardrail - verify Breakwave signals freshness
+        if: github.event_name != 'workflow_run' || steps.check_new_reports.outputs.new == 'true'
+        shell: bash
+        run: |
+          python scripts/check_breakwave_freshness.py --check signals_vs_reports
+
       - name: Validate knowledge artifacts
         if: github.event_name != 'workflow_run' || steps.check_new_reports.outputs.new == 'true'
         shell: bash

@@ -134,6 +134,44 @@ jobs:
             run_by_year "scripts/hellenic_scraper.py" "--category $HELLENIC_CATEGORY" "true"
           fi
 
+      - name: Guardrail - verify Breakwave scrape freshness
+        if: github.event.inputs.dry_run != 'true'
+        shell: bash
+        run: |
+          SOURCE_INPUT="${{ github.event.inputs.source || '' }}"
+          EVENT_SCHEDULE="${{ github.event.schedule || '' }}"
+          YEAR_INPUT="${{ github.event.inputs.year || 'auto' }}"
+          START_YEAR_INPUT="${{ github.event.inputs.start_year || '' }}"
+          END_YEAR_INPUT="${{ github.event.inputs.end_year || '' }}"
+
+          if [ -z "$SOURCE_INPUT" ]; then
+            if [ "$EVENT_SCHEDULE" = "30 9 * * 1-5" ]; then
+              SOURCE="extended"
+            else
+              SOURCE="core"
+            fi
+          else
+            SOURCE="$SOURCE_INPUT"
+          fi
+
+          if [ "$SOURCE" != "all" ] && [ "$SOURCE" != "core" ] && [ "$SOURCE" != "breakwave" ]; then
+            echo "Skipping Breakwave freshness guardrail for source=$SOURCE"
+            exit 0
+          fi
+
+          if [ -n "$START_YEAR_INPUT" ] || [ -n "$END_YEAR_INPUT" ]; then
+            echo "Skipping Breakwave freshness guardrail for custom start/end year range."
+            exit 0
+          fi
+
+          CURRENT_YEAR="$(date -u +%Y)"
+          if [ -n "$YEAR_INPUT" ] && [ "$YEAR_INPUT" != "auto" ] && [ "$YEAR_INPUT" != "$CURRENT_YEAR" ]; then
+            echo "Skipping Breakwave freshness guardrail for explicit year=$YEAR_INPUT."
+            exit 0
+          fi
+
+          python scripts/check_breakwave_freshness.py --check reports_vs_web
+
       - name: Commit new reports
         if: github.event.inputs.dry_run != 'true'
         shell: bash
