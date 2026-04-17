@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-04-17T05:09:40.942529+00:00",
+  "brief_date": "2026-04-17",
+  "market_snapshot": {
+    "bdi": {
+      "value": 2523.0,
+      "z_score_252d": 1.85,
+      "pctl_5y": 0.994,
+      "regime": "EXPANSION",
+      "regime_emoji": "🟢",
+      "ma200": 2036.3,
+      "roc60": 45.92
+    },
+    "capesize": {
+      "value": 4026.0,
+      "z_score_252d": 1.587,
+      "pctl_5y": 0.99,
+      "regime": "EXPANSION",
+      "regime_emoji": "🟢",
+      "ma200": 3127.5,
+      "roc60": 56.65
+    },
+    "panamax": {
+      "value": 1970.0,
+      "z_score_252d": 1.253,
+      "pctl_5y": 0.993,
+      "regime": "EXPANSION",
+      "regime_emoji": "🟢",
+      "ma200": 1756.2,
+      "roc60": 25.48
+    },
+    "supramax": {
+      "value": 1398.0,
+      "z_score_252d": 0.914,
+      "pctl_5y": 0.948,
+      "regime": "EXPANSION",
+      "regime_emoji": "🟢",
+      "ma200": 1293.4,
+      "roc60": 42.22
+    },
+    "clean_tanker": {
+      "value": 2121.0,
+      "z_score_252d": 3.357,
+      "pctl_5y": 0.998,
+      "regime": "EXPANSION",
+      "regime_emoji": "🟢",
+      "ma200": 868.5,
+      "roc60": 148.07
+    },
+    "dirty_tanker": {
+      "value": 2975.0,
+      "z_score_252d": 2.101,
+      "pctl_5y": 0.984,
+      "regime": "EXPANSION",
+      "regime_emoji": "🟢",
+      "ma200": 1580.5,
+      "roc60": 89.25
+    }
+  },
+  "vessel_classes": {
+    "dry_bulk": {
+      "confluence_type": "NEUTRAL",
+      "confluence_note": "",
+      "summary": "",
+      "key_signals": [],
+      "outlook": "",
+      "watch": "",
+      "report_dates": [
+        "2026-03-31",
+        "2026-03-17",
+        "2026-03-03",
+        "2026-02-17"
+      ]
+    },
+    "tanker": {
+      "confluence_type": "BULL_CONFLUENCE",
+      "confluence_note": "",
+      "summary": "",
+      "key_signals": [],
+      "outlook": "",
+      "watch": "",
+      "report_dates": [
+        "2026-04-07",
+        "2026-03-24",
+        "2026-03-10",
+        "2026-02-24"
+      ]
+    }
+  },
+  "macro_note": "",
+  "sources": [
+    "breakwave_drybulk_2026-03-31",
+    "breakwave_drybulk_2026-03-17",
+    "breakwave_drybulk_2026-03-03",
+    "breakwave_drybulk_2026-02-17",
+    "breakwave_tankers_2026-04-07",
+    "breakwave_tankers_2026-03-24",
+    "breakwave_tankers_2026-03-10",
+    "breakwave_tankers_2026-02-24"
+  ]
+}
