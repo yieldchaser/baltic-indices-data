@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T14:42:16.507929+00:00",
+  "generated_at": "2026-04-17T17:04:17.115274+00:00",
   "brief_date": "2026-04-17",
   "generation": {
     "mode": "llm",
@@ -15,49 +15,49 @@
   },
   "market_snapshot": {
     "bdi": {
-      "value": 2523.0,
-      "z_score_252d": 1.85,
-      "pctl_5y": 0.994,
+      "value": 2567.0,
+      "z_score_252d": 1.969,
+      "pctl_5y": 0.995,
       "regime": "EXPANSION",
       "regime_emoji": "UP",
-      "ma200": 2036.3,
-      "roc60": 45.92
+      "ma200": 2041.6,
+      "roc60": 42.37
     },
     "capesize": {
-      "value": 4026.0,
-      "z_score_252d": 1.587,
+      "value": 4128.0,
+      "z_score_252d": 1.724,
       "pctl_5y": 0.99,
       "regime": "EXPANSION",
       "regime_emoji": "UP",
-      "ma200": 3127.5,
-      "roc60": 56.65
+      "ma200": 3137.6,
+      "roc60": 51.1
     },
     "panamax": {
-      "value": 1970.0,
-      "z_score_252d": 1.253,
-      "pctl_5y": 0.993,
+      "value": 1975.0,
+      "z_score_252d": 1.266,
+      "pctl_5y": 0.994,
       "regime": "EXPANSION",
       "regime_emoji": "UP",
-      "ma200": 1756.2,
-      "roc60": 25.48
+      "ma200": 1758.6,
+      "roc60": 22.98
     },
     "supramax": {
-      "value": 1398.0,
-      "z_score_252d": 0.914,
-      "pctl_5y": 0.948,
+      "value": 1415.0,
+      "z_score_252d": 0.996,
+      "pctl_5y": 0.958,
       "regime": "EXPANSION",
       "regime_emoji": "UP",
-      "ma200": 1293.4,
-      "roc60": 42.22
+      "ma200": 1295.4,
+      "roc60": 42.07
     },
     "handysize": {
-      "value": 730.0,
-      "z_score_252d": 0.181,
-      "pctl_5y": 0.489,
+      "value": 741.0,
+      "z_score_252d": 0.284,
+      "pctl_5y": 0.51,
       "regime": "ACCUMULATION",
       "regime_emoji": "RECOVERY",
-      "ma200": 744.6,
-      "roc60": 23.52
+      "ma200": 745.2,
+      "roc60": 24.75
     },
     "clean_tanker": {
       "value": 2121.0,
@@ -81,15 +81,15 @@
   "vessel_classes": {
     "dry_bulk": {
       "confluence_type": "DIVERGENCE",
-      "confluence_note": "A significant disconnect persists as quantitative regimes hit 99th percentile extremes while qualitative fundamentals remain rated as negative.",
-      "summary": "The BDI has surged to 2523.0 driven by a +56.6% 60-day ROC in Capesizes, placing the sector in a technical expansion regime. However, market reports continue to signal fundamental weakness, suggesting the rally may be driven by transient supply-side constraints rather than structural demand.",
+      "confluence_note": "A sharp disconnect exists between extreme spot rate performance (BDI at 99.5th percentile) and persistently negative fundamental assessments from recent reports.",
+      "summary": "The sector is in a technical expansion phase led by Capesize and Panamax vessels, both hovering near 5-year highs. While momentum has turned positive, the underlying fundamental outlook remains bearish, suggesting the rally may be driven by temporary supply-chain frictions or front-loading rather than structural demand growth.",
       "key_signals": [
-        "BDI at 99.4% 5-year percentile",
-        "Capesize ROC60 of +56.6%",
-        "Negative fundamental sentiment"
+        "BDI 5-year percentile of 99.5%",
+        "Capesize ROC60 of +51.1%",
+        "Negative fundamental rating from Breakwave"
       ],
-      "outlook": "Bullish momentum is likely to face resistance unless underlying iron ore and coal demand fundamentals align with price action.",
-      "watch": "Brazil-China iron ore cargo flows and Atlantic Capesize tonnage availability.",
+      "outlook": "Caution is advised as technical overextension meets fundamental resistance, increasing the risk of a sharp correction.",
+      "watch": "Iron ore trade dynamics between Brazil and China and the lagging Handysize recovery.",
       "report_dates": [
         "2026-04-14",
         "2026-03-31",
@@ -99,15 +99,15 @@
     },
     "tanker": {
       "confluence_type": "BULL_CONFLUENCE",
-      "confluence_note": "Quantitative metrics and qualitative assessments are in total alignment, with clean tankers showing extreme expansion at +3.36 sigma.",
-      "summary": "The tanker market is experiencing a powerful expansion phase across both clean and dirty segments, supported by triple-positive sentiment, momentum, and fundamentals. Clean tankers lead the sector with a staggering +148.1% 60-day rate of change.",
+      "confluence_note": "Quantitative and qualitative signals are in perfect alignment, with extreme Z-scores validated by 'triple-positive' sentiment, momentum, and fundamentals.",
+      "summary": "The tanker market is experiencing a historic surge, particularly in the clean sector where rates have increased 148% over the last 60 days. This expansion is supported by tight tonnage balances and robust macro oil-market drivers, pushing both clean and dirty segments to the top of their 5-year historical ranges.",
       "key_signals": [
         "Clean Tanker Z-score of +3.36",
         "Dirty Tanker ROC60 of +89.2%",
-        "Unanimous positive qualitative ratings"
+        "Uninterrupted positive qualitative signals since February"
       ],
-      "outlook": "Strongly bullish as the market maintains its expansionary trajectory with robust fundamental support.",
-      "watch": "Global product tanker supply-demand balance and Chinese crude import volumes.",
+      "outlook": "Strong bullish momentum is expected to persist as spot rates reflect deep-seated fundamental supply constraints.",
+      "watch": "Global refinery margins and crude/product export volumes from China.",
       "report_dates": [
         "2026-04-07",
         "2026-03-24",
@@ -116,7 +116,7 @@
       ]
     }
   },
-  "macro_note": "The maritime landscape is defined by a fundamentally-backed tanker super-cycle contrasted against a dry bulk rally that is currently decoupling from its underlying fundamental weaknesses.",
+  "macro_note": "The shipping market is entering Q2 2026 in a state of high-velocity expansion, with tanker markets showing structural strength while dry bulk relies on momentum to offset fundamental skepticism.",
   "sources": [
     "breakwave_drybulk_2026-04-14",
     "breakwave_drybulk_2026-03-31",
