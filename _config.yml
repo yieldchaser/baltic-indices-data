@@ -3,6 +3,9 @@ title: Shipping
 # GitHub Pages uses Jekyll by default for this repository.
 # The knowledge corpus contains operational markdown/frontmatter files
 # (including placeholder dates like 0000-00-00) that are not website pages.
-# Excluding the corpus prevents Pages build failures while keeping dashboard files served.
+# The raw `reports/` archive is also very large and is not required by the live dashboard.
+# Excluding both paths keeps the Pages build footprint small and avoids runner disk exhaustion.
 exclude:
   - knowledge/
+  - reports/
+  - tmp/
