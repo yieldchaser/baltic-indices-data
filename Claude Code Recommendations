@@ -1,0 +1,58 @@
+What's Actually Happening
+Why the brief shows "not generated yet"
+The knowledge/briefs/ directory doesn't exist at all — generate_brief.py creates it on first run, but the workflow ran and committed to main, while the Intelligence tab HTML is on the dev branch. Those two branches have never been merged, so the browser is fetching a path that doesn't exist in its current context. That's the immediate cause.
+
+The silent failure chain in generate_brief.py
+My script only wires Gemini. If the key is rate-limited or missing, this happens:
+
+Gemini fails → llm_result = None → brief.json written with:
+  confluence_type: "DIVERGENCE"   ✓ (rule-based, always works)
+  confluence_note: ""             ✗ empty
+  summary: ""                     ✗ empty
+  key_signals: []                 ✗ empty
+  outlook: ""                     ✗ empty
+The JSON gets committed but renders as a blank card with just a badge — looks broken even though the quantitative layer worked perfectly.
+
+The Ollama situation
+process_knowledge.py has a fully-built Gemini → Ollama provider chain with retries, rate limiting, and backoff. The GHA secrets OLLAMA_BASE_URL, OLLAMA_API_KEY, and OLLAMA_MODEL are already wired in daily_knowledge_update.yml. generate_brief.py doesn't use any of this — I didn't port the provider chain over. That's a gap I left.
+
+Q&A and the user key requirement
+The browser Q&A intentionally calls Gemini directly from the client — zero-infrastructure by design. It needs your personal Gemini key, separate from the server-side GHA secret. These are two different keys for two different things.
+
+Four Options — Honest Trade-offs
+Option A — Fix the existing system (Ollama fallback + template fallback)
+Port process_knowledge.py's call_llm() chain into generate_brief.py. Already have the Ollama secrets. Add a template-based generator as the final fallback that produces a structured brief with zero API calls.
+
+The template output for a DIVERGENCE state would look like:
+
+"BDI at 2,523 (+1.85σ, 252D). Regime: EXPANSION — price above MA200, ROC(60D) +45.9%. Last 4 Breakwave reports: neutral / negative / negative / positive. Divergence between strong quant momentum and softening analyst sentiment warrants caution; historically this setup resolves either by price correcting toward analyst expectations or by analysts upgrading after a lag."
+
+That's genuinely useful, fully deterministic, and generates in milliseconds. Recommendation: this is the right call. The LLM only adds fluency, not information — all the information is already in the signals.
+
+Cost: Zero. Complexity: low. Failure modes: none. Truly autonomous.
+
+Option B — NVIDIA NIM (what you're showing)
+build.nvidia.com exposes OpenAI-compatible endpoints. minimax-m2.7 (230B) is free-tier. API format:
+
+from openai import OpenAI
+client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", api_key="nvapi-...")
+This could be a third provider in the chain: Gemini → Ollama → NVIDIA NIM. But:
+
+It still needs an API key (a new GHA secret)
+Free tier rate limits are unknown and can change
+Adds a third external dependency
+The openai package isn't in requirements_knowledge.txt
+Verdict: Nice to have as a fallback, not worth prioritizing over the template approach. If Ollama is configured, you already have a free fallback that's more reliable.
+
+Option C — Groq for browser Q&A
+Groq's free tier (30 RPM, Llama 3 70B) is genuinely more permissive than Gemini Flash for casual use. The API is OpenAI-compatible. The Q&A panel could offer a provider toggle:
+
+[ Gemini ▼ ]  or  [ Groq ▼ ]  — each needs its own key
+Verdict: Worth adding as an option alongside Gemini, not as a replacement. Takes ~20 lines of JS change.
+
+Option D — Template-only mode, no LLM at all
+The brief, signal engine, and even a rudimentary Q&A (keyword search + return raw passages, no synthesis) could all run with zero API calls. The signal engine already does this. The brief template can too.
+
+For Q&A without an LLM: return the top 5 BM25-scored passages directly with their source metadata. Less fluent than a synthesized answer but fully accurate, always available, and zero cost.
+
+Verdict: Good baseline that should exist regardless of what else you pick.
