@@ -7224,7 +7224,7 @@
         type: 'line',
         data: {
           labels: dispLabels, datasets: [
-            { label: prod.label, data: dispValues, borderColor: prod.color, backgroundColor: prod.color + '33', borderWidth: 1.5, pointRadius: 0, fill: true, tension: 0.1, hidden: histHiddenByLabel[prod.label] || false },
+            { label: prod.label, data: dispValues, borderColor: prod.color, backgroundColor: prod.color + '33', borderWidth: 1.5, pointRadius: 0, hoverRadius: 4, hitRadius: 10, fill: true, tension: 0.1, hidden: histHiddenByLabel[prod.label] || false },
             { label: avgLabel, data: dispAvg, borderColor: '#e3b341', backgroundColor: 'transparent', borderWidth: 1.5, borderDash: [5, 3], pointRadius: 0, fill: false, tension: 0.1, hidden: histHiddenByLabel[avgLabel] || false },
           ]
         },
@@ -10642,7 +10642,7 @@
         if (pv == null) return '';
         const cls = pv <= 25 ? 'pf-low' : pv >= 75 ? 'pf-high' : 'pf-mid';
         const col = pv <= 25 ? 'var(--red)' : pv >= 75 ? 'var(--green)' : 'var(--yellow)';
-        return '<div class="pctl-row"><span class="pctl-label">' + label + '</span><div class="pctl-track"><div class="pctl-fill ' + cls + '" style="width:' + pv + '%"></div></div><span class="pctl-val" style="color:' + col + '">' + pv + 'th</span></div>';
+        const tt = label === '1Y Pctl' ? 'Percentile rank over the last 1 year (252 trading days).' : label === '5Y Pctl' ? 'Percentile rank over the last 5 years.' : 'Percentile rank across all available historical data.'; return '<div class="pctl-row" data-tooltip="' + tt + '"><span class="pctl-label">' + label + '</span><div class="pctl-track"><div class="pctl-fill ' + cls + '" style="width:' + pv + '%"></div></div><span class="pctl-val" style="color:' + col + '">' + pv + 'th</span></div>';
       }
 
       // Sparkline canvas ID
@@ -10709,14 +10709,14 @@
         '<div class="intel-body"><div class="intel-col">' +
           '<div class="intel-col-label" data-tooltip="Quantitative indicators derived from live exchange data and historical price action.">Quantitative</div>' +
           '<div class="z-gauge-wrap" data-tooltip="Standard Deviation (σ) from the 1-year mean. Values >2σ or <-2σ signal historical extremes."><div class="z-value" style="color:' + zCol + '">' + zLabel + '</div><div class="z-gauge"><div class="z-gauge-dot" style="left:' + zPct + '%;background:' + zCol + ';"></div></div><div class="z-gauge-labels"><span>−3σ Negative</span><span>0</span><span>Positive +3σ</span></div></div>' +
-          '<div class="intel-spark-label">Z-Score (30D)</div><div class="intel-spark-wrap"><canvas id="' + sparkId + '"></canvas></div>' +
+          '<div class="intel-spark-label" data-tooltip="30-Day moving Z-Score trend. Values >2σ or <-2σ signal historical extremes. Hover to view daily values.">Z-Score (30D)</div><div class="intel-spark-wrap"><canvas id="' + sparkId + '"></canvas></div>' +
           pctlBar('1Y Pctl', q.pctl1y) + pctlBar('5Y Pctl', q.pctl5y) + pctlBar('All-Time', q.pctlAll) +
           '<div class="intel-regime-row" data-tooltip="Volatility Regime based on MA200 crossover and 60-day Rate of Change. Expansion=Positive Trend; Contraction=Negative Trend."><span class="intel-regime-emoji">' + q.emoji + '</span><div><div class="intel-regime-label">' + q.regime + '</div><div class="intel-regime-sub">Level: ' + fmtN(q.current) + '</div></div><span class="intel-roc">ROC(60D) ' + fmtPc(q.roc60) + '</span></div>' +
         '</div><div class="intel-col">' +
           '<div class="intel-col-label" data-tooltip="Qualitative intelligence synthesized from bi-weekly Breakwave analyst reports and market insights.">Qualitative — Breakwave Advisors</div>' +
           (qualSigs.length ? (
             '<div class="sent-timeline" data-tooltip="Sentiment timeline — oldest (left) to newest (right)">' + tlSegs + '</div>' +
-            '<table class="sent-matrix"><thead><tr><th>Sentiment</th><th>Momentum</th><th>Fundamentals</th><th>Date</th></tr></thead><tbody>' + matrixRows + '</tbody>' +
+            '<table class="sent-matrix"><thead><tr><th data-tooltip="Overall analyst sentiment for the period.">Sentiment</th><th data-tooltip="Short-term market momentum.">Momentum</th><th data-tooltip="Underlying supply and demand fundamentals.">Fundamentals</th><th data-tooltip="Report publication date.">Date</th></tr></thead><tbody>' + matrixRows + '</tbody>' +
             (hiddenRows ? '<tbody id="' + hiddenId + '" style="display:none">' + hiddenRows + '</tbody>' : '') + '</table>' +
             (hiddenSigs.length ? '<button class="sent-matrix-toggle" id="' + toggleId + '" onclick="var el=document.getElementById(\'' + hiddenId + '\');var btn=this;if(el.style.display===\'none\'){el.style.display=\'\';btn.textContent=\'Hide older\'}else{el.style.display=\'none\';btn.textContent=\'Show ' + hiddenSigs.length + ' older\'}">Show ' + hiddenSigs.length + ' older</button>' : '') +
             '<div class="sent-trend-summary">' + trendSummary + '</div>'
@@ -10735,7 +10735,7 @@
       canvas._chartInstance = new Chart(ctx, {
         type: 'line',
         data: { labels: zHistory.map((_, i) => i), datasets: [{ data: zHistory, borderColor: '#a371f7', backgroundColor: 'rgba(163,113,247,0.08)', borderWidth: 1.5, pointRadius: 0, fill: true, tension: 0.3 }] },
-        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { enabled: false } }, scales: { x: { display: false }, y: { display: false, suggestedMin: -3, suggestedMax: 3 } }, animation: { duration: 400 } },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { enabled: true, mode: 'index', intersect: false, callbacks: { title: function(ctx) { const i = ctx[0].dataset.data.length - 1 - ctx[0].dataIndex; return i === 0 ? 'Today' : i + ' days ago'; }, label: function(ctx) { return 'Z-Score: ' + (ctx.parsed.y > 0 ? '+' : '') + ctx.parsed.y.toFixed(2) + 'σ'; } } } }, scales: { x: { display: false }, y: { display: false, suggestedMin: -3, suggestedMax: 3 } }, animation: { duration: 400 } },
         plugins: [{ beforeDraw: chart => { const { ctx: cx, chartArea: { left, right, top, bottom }, scales: { y } } = chart; const zeroY = y.getPixelForValue(0); if (zeroY >= top && zeroY <= bottom) { cx.save(); cx.strokeStyle = 'rgba(139,148,158,.3)'; cx.lineWidth = 1; cx.setLineDash([3,3]); cx.beginPath(); cx.moveTo(left, zeroY); cx.lineTo(right, zeroY); cx.stroke(); cx.restore(); } } }]
       });
     }
