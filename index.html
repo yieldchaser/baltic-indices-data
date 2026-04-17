@@ -2002,36 +2002,147 @@
     .intel-sub-meta  { font-size: 10px; color: var(--text-muted); display: flex; gap: 6px; }
 
     /* Brief cards */
-    .brief-card {
-      background: var(--card); border: 1px solid var(--border);
-      border-left: 4px solid var(--border); border-radius: 8px;
-      padding: 18px; margin-bottom: 12px;
+    .brief-macro {
+      background: linear-gradient(180deg, rgba(88,166,255,.08), rgba(88,166,255,.03));
+      border: 1px solid rgba(88,166,255,.26);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
     }
+    .brief-macro strong { color: #c9e0ff; }
+    .brief-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.015), rgba(255,255,255,0) 18%), var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.02);
+      transition: border-color .18s ease, transform .18s ease;
+    }
+    .brief-card:hover { border-color: rgba(88,166,255,.35); transform: translateY(-1px); }
     .brief-card.ci-bull { border-left-color: var(--green); }
     .brief-card.ci-bear { border-left-color: var(--red); }
     .brief-card.ci-div  { border-left-color: var(--yellow); }
     .brief-card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; gap: 12px; }
-    .brief-card-title  { font-size: 15px; font-weight: 700; color: var(--text); }
-    .brief-card-sub    { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+    .brief-card-title  { font-size: 20px; font-weight: 700; color: var(--text); line-height: 1.2; }
+    .brief-card-sub    { font-size: 11px; color: var(--text-muted); margin-top: 5px; text-transform: uppercase; letter-spacing: .28px; }
+    .brief-kpi-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 6px; }
+    .brief-kpi {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(15,19,24,.7);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 8px;
+      min-height: 22px;
+    }
+    .brief-kpi-k { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .3px; }
+    .brief-kpi-v { font-size: 11px; color: var(--text); font-weight: 600; }
+    .brief-sub-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 2px; }
+    .brief-sub-pill {
+      font-size: 10px;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: rgba(13,17,23,.45);
+    }
+    .brief-sub-pill strong { color: #c9d9f4; font-weight: 600; }
     .brief-conf-note {
-      padding: 7px 12px; border-left: 3px solid var(--yellow);
-      background: rgba(227,179,65,.06); border-radius: 0 4px 4px 0;
-      font-size: 12px; color: var(--text); margin: 8px 0; line-height: 1.5;
+      padding: 8px 12px;
+      border-left: 3px solid var(--yellow);
+      background: rgba(227,179,65,.06);
+      border-radius: 0 4px 4px 0;
+      font-size: 12px;
+      color: var(--text);
+      margin: 8px 0;
+      line-height: 1.55;
     }
     .brief-conf-note.ci-bull { border-color: var(--green); background: rgba(63,185,80,.05); }
     .brief-conf-note.ci-bear { border-color: var(--red);   background: rgba(248,81,73,.05); }
     .brief-conf-note.ci-neut { border-color: var(--border); background: transparent; }
-    .brief-summary { font-size: 13px; color: var(--text); line-height: 1.65; margin: 8px 0; }
-    .brief-signals { list-style: none; padding: 0; margin: 6px 0; }
-    .brief-signals li { font-size: 12px; color: var(--text-muted); padding: 3px 0; display: flex; gap: 6px; }
-    .brief-signals li::before { content: "›"; color: var(--accent); font-weight: 700; flex-shrink: 0; }
-    .brief-outlook {
-      margin-top: 8px; padding: 7px 12px; background: rgba(88,166,255,.06);
-      border-radius: 4px; font-size: 12px; border-left: 3px solid var(--accent);
+    .brief-summary {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.75;
+      margin: 9px 0 7px;
+      max-width: 130ch;
     }
-    .brief-watch { font-size: 11px; color: var(--yellow); margin-top: 6px; display: flex; gap: 5px; }
-    .brief-meta { font-size: 10px; color: var(--text-muted); margin-top: 12px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; opacity: .7; }
-
+    .brief-signals-title {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .36px;
+      color: var(--text-muted);
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+    .brief-signals { list-style: none; padding: 0; margin: 0; }
+    .brief-signals li {
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 3px 0;
+      display: flex;
+      gap: 7px;
+      line-height: 1.55;
+    }
+    .brief-signals li::before { content: '>'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .brief-outlook {
+      margin-top: 9px;
+      padding: 8px 12px;
+      background: rgba(88,166,255,.06);
+      border-radius: 4px;
+      font-size: 12px;
+      border-left: 3px solid var(--accent);
+      line-height: 1.6;
+    }
+    .brief-watch {
+      font-size: 11px;
+      color: var(--yellow);
+      margin-top: 7px;
+      display: flex;
+      gap: 5px;
+      line-height: 1.55;
+    }
+    .brief-date-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .brief-date-chip {
+      font-size: 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 2px 8px;
+      color: var(--text-muted);
+      background: rgba(13,17,23,.45);
+    }
+    .brief-meta {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: flex-start;
+      opacity: .85;
+      border-top: 1px dashed rgba(139,148,158,.25);
+      padding-top: 10px;
+    }
+    .brief-meta-group { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+    .brief-meta-label {
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      color: var(--text-muted);
+      opacity: .85;
+      font-size: 9px;
+    }
     /* Q&A */
     .qa-key-row { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
     .qa-key-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .4px; white-space: nowrap; }
@@ -2085,6 +2196,8 @@
     @media (max-width: 700px) {
       .intel-body { grid-template-columns: 1fr; }
       .intel-col + .intel-col { border-left: none; border-top: 1px solid var(--border); }
+      .brief-card-header { flex-direction: column; gap: 8px; }
+      .brief-card-title { font-size: 18px; }
     }
   </style>
 </head>
@@ -10474,50 +10587,155 @@
     }
 
     function _paintBrief(el, tsEl, data) {
-      const { generated_at, generation, market_snapshot: snap, vessel_classes: vc, macro_note, sources } = data;
-      if (tsEl && generated_at) tsEl.textContent = new Date(generated_at).toLocaleString();
+      const {
+        generated_at,
+        brief_date,
+        generation,
+        market_snapshot: snap,
+        vessel_classes: vc,
+        macro_note,
+        sources,
+      } = data || {};
 
-      const cfgMap = {
-        BULL_CONFLUENCE: { cls:'ci-bull', badge:'bull', label:'🟢 BULL CONFLUENCE' },
-        BEAR_CONFLUENCE: { cls:'ci-bear', badge:'bear', label:'🔴 BEAR CONFLUENCE' },
-        DIVERGENCE:      { cls:'ci-div',  badge:'div',  label:'⚡ DIVERGENCE' },
-        NEUTRAL:         { cls:'ci-neut', badge:'neut', label:'— NEUTRAL' },
+      if (tsEl) tsEl.textContent = generated_at ? new Date(generated_at).toLocaleString() : '';
+
+      const esc = (value) => String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+
+      const uniq = (arr) => Array.from(new Set((arr || []).filter(Boolean)));
+
+      const signed = (value, digits = 2, suffix = '') => {
+        const n = Number(value);
+        if (!Number.isFinite(n)) return 'n/a';
+        const sign = n > 0 ? '+' : n < 0 ? '-' : '';
+        return `${sign}${Math.abs(n).toFixed(digits)}${suffix}`;
       };
 
-      function briefCard(icon, label, vcData, snapKey) {
+      const fmtPercent = (value, digits = 1, withSign = true) => {
+        const n = Number(value);
+        if (!Number.isFinite(n)) return 'n/a';
+        const sign = withSign && n > 0 ? '+' : n < 0 ? '-' : '';
+        return `${sign}${Math.abs(n).toFixed(digits)}%`;
+      };
+
+      const fmtNum = (value) => {
+        const n = Number(value);
+        if (!Number.isFinite(n)) return 'n/a';
+        return n.toLocaleString(undefined, { maximumFractionDigits: 0 });
+      };
+
+      const cfgMap = {
+        BULL_CONFLUENCE: { cls: 'ci-bull', badge: 'bull', label: 'BULL CONFLUENCE' },
+        BEAR_CONFLUENCE: { cls: 'ci-bear', badge: 'bear', label: 'BEAR CONFLUENCE' },
+        DIVERGENCE:      { cls: 'ci-div',  badge: 'div',  label: 'DIVERGENCE' },
+        NEUTRAL:         { cls: 'ci-neut', badge: 'neut', label: 'NEUTRAL' },
+      };
+
+      const subMarketMap = {
+        dry_bulk: [
+          { key: 'capesize', label: 'Capesize' },
+          { key: 'panamax', label: 'Panamax' },
+        ],
+        tanker: [
+          { key: 'clean_tanker', label: 'Clean' },
+          { key: 'dirty_tanker', label: 'Dirty' },
+        ],
+      };
+
+      function metricChip(label, value) {
+        if (!value) return '';
+        return `<span class="brief-kpi"><span class="brief-kpi-k">${esc(label)}</span><span class="brief-kpi-v">${esc(value)}</span></span>`;
+      }
+
+      function renderSubMarkets(vesselKey, marketSnapshot) {
+        const defs = subMarketMap[vesselKey] || [];
+        return defs.map(({ key, label }) => {
+          const sub = marketSnapshot?.[key];
+          if (!sub) return '';
+          const parts = [];
+          if (sub.value != null) parts.push(`lvl ${fmtNum(sub.value)}`);
+          if (sub.z_score_252d != null) parts.push(`z ${signed(sub.z_score_252d, 2)}`);
+          if (sub.roc60 != null) parts.push(`roc ${fmtPercent(sub.roc60, 1)}`);
+          return `<span class="brief-sub-pill"><strong>${esc(label)}</strong> ${esc(parts.join(' | '))}</span>`;
+        }).filter(Boolean).join('');
+      }
+
+      function briefCard(title, vesselKey, vcData, snapKey) {
         if (!vcData) return '';
-        const cfg  = cfgMap[vcData.confluence_type] || cfgMap.NEUTRAL;
-        const s    = snap?.[snapKey];
-        const sub  = s ? `${s.regime_emoji || ''} ${s.regime || ''} · Z=${s.z_score_252d != null ? (s.z_score_252d >= 0 ? '+' : '') + s.z_score_252d.toFixed(2) + 'σ' : '—'} · ROC60=${s.roc60 != null ? (s.roc60 >= 0 ? '+' : '') + s.roc60.toFixed(1) + '%' : '—'}` : '';
-        const sigs = (vcData.key_signals || []).map(x => `<li>${x}</li>`).join('');
+        const cfg = cfgMap[vcData.confluence_type] || cfgMap.NEUTRAL;
+        const s = snap?.[snapKey];
+
+        const regimeText = [s?.regime_emoji, s?.regime].filter(Boolean).join(' ') || 'N/A';
+        const kpiHtml = [
+          metricChip('Regime', regimeText),
+          metricChip('Level', s?.value != null ? fmtNum(s.value) : 'n/a'),
+          metricChip('Z', s?.z_score_252d != null ? signed(s.z_score_252d, 2) : 'n/a'),
+          metricChip('ROC60', s?.roc60 != null ? fmtPercent(s.roc60, 1) : 'n/a'),
+          metricChip('PCTL5Y', s?.pctl_5y != null ? fmtPercent(Number(s.pctl_5y) * 100, 1, false) : 'n/a'),
+        ].join('');
+
+        const subHtml = renderSubMarkets(vesselKey, snap);
+        const keySignals = uniq(vcData.key_signals).map(sig => `<li>${esc(sig)}</li>`).join('');
+        const reportDates = uniq(vcData.report_dates).slice(0, 4)
+          .map(d => `<span class="brief-date-chip">${esc(d)}</span>`)
+          .join('');
+
         return `<div class="brief-card ${cfg.cls}">
           <div class="brief-card-header">
             <div>
-              <div class="brief-card-title">${icon} ${label}</div>
-              ${sub ? `<div class="brief-card-sub">${sub}</div>` : ''}
+              <div class="brief-card-title">${esc(title)}</div>
+              <div class="brief-card-sub">${esc(regimeText)}</div>
+              <div class="brief-kpi-row">${kpiHtml}</div>
+              ${subHtml ? `<div class="brief-sub-row">${subHtml}</div>` : ''}
             </div>
-            <span class="intel-vc-badge ${cfg.badge}">${cfg.label}</span>
+            <span class="intel-vc-badge ${cfg.badge}">${esc(cfg.label)}</span>
           </div>
-          ${vcData.confluence_note ? `<div class="brief-conf-note ${cfg.cls}">${vcData.confluence_note}</div>` : ''}
-          ${vcData.summary         ? `<p class="brief-summary">${vcData.summary}</p>` : ''}
-          ${sigs                   ? `<ul class="brief-signals">${sigs}</ul>` : ''}
-          ${vcData.outlook         ? `<div class="brief-outlook"><strong style="color:var(--accent)">Outlook:</strong> ${vcData.outlook}</div>` : ''}
-          ${vcData.watch           ? `<div class="brief-watch">⚠ Watch: ${vcData.watch}</div>` : ''}
+          ${vcData.confluence_note ? `<div class="brief-conf-note ${cfg.cls}">${esc(vcData.confluence_note)}</div>` : ''}
+          <p class="brief-summary">${esc(vcData.summary || 'No narrative summary available in the latest brief for this class.')}</p>
+          ${keySignals ? `<div class="brief-signals-title">Key Signals</div><ul class="brief-signals">${keySignals}</ul>` : ''}
+          ${vcData.outlook ? `<div class="brief-outlook"><strong style="color:var(--accent)">Outlook:</strong> ${esc(vcData.outlook)}</div>` : ''}
+          ${vcData.watch ? `<div class="brief-watch"><strong>Watch:</strong> ${esc(vcData.watch)}</div>` : ''}
+          ${reportDates ? `<div class="brief-date-row"><span class="brief-meta-label">Reports</span>${reportDates}</div>` : ''}
         </div>`;
       }
 
+      const providerOrder = Array.isArray(generation?.provider_order)
+        ? generation.provider_order.join(' -> ')
+        : (generation?.provider_order || '');
+      const attemptedProviders = Array.isArray(generation?.attempted_providers)
+        ? generation.attempted_providers.join(' -> ')
+        : (generation?.attempted_providers || '');
+
+      const sourceList = uniq(sources);
+      const shownSources = sourceList.slice(0, 8);
+      const remainingSources = Math.max(0, sourceList.length - shownSources.length);
+
       el.innerHTML = `
-        ${macro_note ? `<div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;margin-bottom:12px;font-size:12px;color:var(--text-muted);"><strong style="color:var(--text);">Macro:</strong> ${macro_note}</div>` : ''}
-        ${briefCard('🌊', 'Dry Bulk', vc?.dry_bulk, 'bdi')}
-        ${briefCard('🛢️', 'Tanker',   vc?.tanker,   'clean_tanker')}
+        ${macro_note ? `<div class="brief-macro"><strong>Macro:</strong> ${esc(macro_note)}</div>` : ''}
+        ${briefCard('Dry Bulk', 'dry_bulk', vc?.dry_bulk, 'bdi')}
+        ${briefCard('Tanker', 'tanker', vc?.tanker, 'clean_tanker')}
         <div class="brief-meta">
-          ${generation?.provider_used ? `<span class="qa-cit">provider: ${generation.provider_used}</span>` : ''}
-          ${generation?.mode ? `<span class="qa-cit">mode: ${generation.mode}</span>` : ''}
-          ${(sources || []).slice(0, 4).map(s => `<span class="qa-cit">${s}</span>`).join('')}
+          <div class="brief-meta-group">
+            <span class="brief-meta-label">Generation</span>
+            ${generation?.provider_used ? `<span class="qa-cit">provider: ${esc(generation.provider_used)}</span>` : ''}
+            ${generation?.mode ? `<span class="qa-cit">mode: ${esc(generation.mode)}</span>` : ''}
+            ${providerOrder ? `<span class="qa-cit">order: ${esc(providerOrder)}</span>` : ''}
+            ${attemptedProviders ? `<span class="qa-cit">attempted: ${esc(attemptedProviders)}</span>` : ''}
+            ${brief_date ? `<span class="qa-cit">brief_date: ${esc(brief_date)}</span>` : ''}
+          </div>
+          <div class="brief-meta-group">
+            <span class="brief-meta-label">Sources</span>
+            ${shownSources.map(src => `<span class="qa-cit">${esc(src)}</span>`).join('')}
+            ${remainingSources > 0 ? `<span class="qa-cit">+${remainingSources} more</span>` : ''}
+          </div>
         </div>`;
     }
 
-    // ── Q&A Assistant ─────────────────────────────────────────────────────────
+    // Q&A Assistant
 
     const QA_PROVIDER_CONFIG = {
       gemini: {
