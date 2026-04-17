@@ -931,8 +931,8 @@ def main() -> None:
 
     print(f"[brief] Provider order: {','.join(LLM_PROVIDER_ORDER)}")
     print("[brief] Loading recent report narratives...")
-    dry_report_text = load_recent_report_text("drybulk", n=2, max_chars=800)
-    tanker_report_text = load_recent_report_text("tankers", n=2, max_chars=800)
+    dry_report_text = load_recent_report_text("drybulk")
+    tanker_report_text = load_recent_report_text("tankers")
     prompt = build_prompt(snapshot, dry_signals, tanker_signals, wiki_dry, wiki_tanker, wiki_cape, dry_report_text, tanker_report_text)
     llm_payload, provider_used, attempted = call_llm_payload(prompt)
     if provider_used:
