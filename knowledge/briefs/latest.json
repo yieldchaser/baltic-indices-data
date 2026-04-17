@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T07:52:57.306580+00:00",
+  "generated_at": "2026-04-17T11:16:18.146192+00:00",
   "brief_date": "2026-04-17",
   "generation": {
     "mode": "llm",
@@ -50,6 +50,15 @@
       "ma200": 1293.4,
       "roc60": 42.22
     },
+    "handysize": {
+      "value": 730.0,
+      "z_score_252d": 0.181,
+      "pctl_5y": 0.489,
+      "regime": "ACCUMULATION",
+      "regime_emoji": "RECOVERY",
+      "ma200": 744.6,
+      "roc60": 23.52
+    },
     "clean_tanker": {
       "value": 2121.0,
       "z_score_252d": 3.357,
@@ -72,15 +81,15 @@
   "vessel_classes": {
     "dry_bulk": {
       "confluence_type": "DIVERGENCE",
-      "confluence_note": "A sharp contradiction exists between record-level spot rates (99th percentile) and the negative fundamental/momentum outlook reported in late March.",
-      "summary": "The dry bulk sector is experiencing a massive price expansion, with the BDI hitting 2523 and Capesizes leading with a 56.6% 60-day rate of change. Despite this, qualitative signals remain bearish on fundamentals, suggesting the current rally may be driven by short-term supply dislocations rather than sustainable demand growth.",
+      "confluence_note": "A sharp contrast exists between the 99th percentile quantitative expansion and the trailing negative fundamental/momentum sentiment from March reports.",
+      "summary": "The dry bulk sector, led by Capesize and Panamax, has surged into an expansion regime with the BDI reaching 2523.0. However, the most recent qualitative assessments indicate skepticism regarding long-term fundamentals and momentum sustainability despite the price rally.",
       "key_signals": [
-        "BDI 99.4th 5-year percentile",
-        "Capesize +1.59 sigma expansion",
-        "Negative qualitative fundamental sentiment"
+        "BDI 5-year percentile at 99.4%",
+        "Capesize ROC60 of +56.6%",
+        "Negative fundamental sentiment in trailing reports"
       ],
-      "outlook": "Bullish technical momentum is likely to face resistance if underlying fundamentals do not improve to match current pricing.",
-      "watch": "China's iron ore restocking pace and Brazilian export volumes.",
+      "outlook": "Bullish price action remains dominant in the short term, though the divergence from qualitative fundamentals suggests potential volatility.",
+      "watch": "China's iron ore import volumes and Brazil-to-China Capesize route dynamics.",
       "report_dates": [
         "2026-03-31",
         "2026-03-17",
@@ -90,15 +99,15 @@
     },
     "tanker": {
       "confluence_type": "BULL_CONFLUENCE",
-      "confluence_note": "Extreme quantitative strength is fully supported by positive qualitative sentiment, momentum, and fundamentals across all recent reports.",
-      "summary": "The tanker market is in a state of hyper-expansion, particularly in the clean segment which has seen a 148.1% ROC over the last 60 days. High Z-scores across both dirty and clean segments reflect a genuine supply-demand squeeze that is being confirmed by unanimous analyst positivity.",
+      "confluence_note": "Quantitative and qualitative signals are perfectly aligned, with Clean Tanker indices showing an extreme Z-score of +3.36.",
+      "summary": "The tanker market is in a powerful expansion phase, with Clean and Dirty sectors seeing triple-digit and high double-digit 60-day ROC respectively. All qualitative indicators (sentiment, momentum, fundamentals) remain unanimously positive as of April 2026.",
       "key_signals": [
-        "Clean Tanker +3.36 sigma deviation",
-        "148.1% 60-day ROC in Clean Tankers",
-        "Unanimous positive qualitative signals"
+        "Clean Tanker ROC60 of +148.1%",
+        "Clean Tanker Z-score of +3.36",
+        "Unanimous positive qualitative sentiment across all metrics"
       ],
-      "outlook": "The outlook remains aggressively bullish as high spot rates are underpinned by robust global energy trade fundamentals.",
-      "watch": "Refinery maintenance schedules and geopolitical impacts on crude transit routes.",
+      "outlook": "Strongly bullish as the sector maintains parabolic momentum across both product and crude segments.",
+      "watch": "Global refinery throughput and crude oil inventory levels in China.",
       "report_dates": [
         "2026-04-07",
         "2026-03-24",
@@ -107,7 +116,7 @@
       ]
     }
   },
-  "macro_note": "The global freight market is operating at extreme historical percentiles, though the tanker sector shows much higher fundamental conviction than the dry bulk sector's price-driven surge.",
+  "macro_note": "The freight market is characterized by extreme strength, with tankers entering a super-cycle territory and dry bulk testing historical highs despite lingering fundamental caution in the latter.",
   "sources": [
     "breakwave_drybulk_2026-03-31",
     "breakwave_drybulk_2026-03-17",
