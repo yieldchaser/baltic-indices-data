@@ -38,6 +38,7 @@ CSV_FILES = {
     "capesize": ROOT / "cape_historical.csv",
     "panamax": ROOT / "panama_historical.csv",
     "supramax": ROOT / "suprama_historical.csv",
+    "handysize": ROOT / "handysize_historical.csv",
     "clean_tanker": ROOT / "cleantanker_historical.csv",
     "dirty_tanker": ROOT / "dirtytanker_historical.csv",
 }

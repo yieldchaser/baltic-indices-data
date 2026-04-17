@@ -10448,6 +10448,8 @@
       const bdiQ    = _intelRegime('bdiy');
       const capeQ   = _intelRegime('cape');
       const panamaQ = _intelRegime('panama');
+      const supraQ  = _intelRegime('suprama');
+      const handyQ  = _intelRegime('handysize');
       const cleanQ  = _intelRegime('cleantanker');
       const dirtyQ  = _intelRegime('dirtytanker');
       const tankerZ = (cleanQ.zScore != null && dirtyQ.zScore != null)
@@ -10463,7 +10465,9 @@
         _buildVCCard('🌊 Dry Bulk Freight', bdiQ,
           _confluenceType(bdiQ.zScore, drySents), drySigs,
           [{ label: '⚓ Capesize', q: capeQ, c: _confluenceType(capeQ.zScore, drySents) },
-           { label: '📦 Panamax',  q: panamaQ, c: _confluenceType(panamaQ.zScore, drySents) }]) +
+           { label: '📦 Panamax',  q: panamaQ, c: _confluenceType(panamaQ.zScore, drySents) },
+           { label: '🛟 Supramax', q: supraQ, c: _confluenceType(supraQ.zScore, drySents) },
+           { label: '⚙️ Handysize', q: handyQ, c: _confluenceType(handyQ.zScore, drySents) }]) +
         _buildVCCard('🛢️ Tanker Market', { ...cleanQ, zScore: tankerZ },
           _confluenceType(tankerZ, tankSents), tankerSigs,
           [{ label: 'BCTI Clean', q: cleanQ, c: _confluenceType(cleanQ.zScore, tankSents) },
@@ -10639,6 +10643,8 @@
         dry_bulk: [
           { key: 'capesize', label: 'Capesize' },
           { key: 'panamax', label: 'Panamax' },
+          { key: 'supramax', label: 'Supramax' },
+          { key: 'handysize', label: 'Handysize' },
         ],
         tanker: [
           { key: 'clean_tanker', label: 'Clean' },
