@@ -1,0 +1,88 @@
+name: Daily Market Brief
+
+on:
+  schedule:
+    # 12:00 PM UTC — after morning report ingest (8-9:30 AM) and data update (10:30 AM)
+    - cron: '0 12 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: knowledge-pipeline
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-generativeai
+
+      - name: Pull latest
+        run: git pull origin main --rebase
+
+      - name: Check prerequisites
+        id: check
+        shell: bash
+        run: |
+          if [ ! -f "knowledge/derived/signals.jsonl" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "signals.jsonl not found — skipping brief generation."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate daily brief
+        if: steps.check.outputs.skip == 'false'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        shell: bash
+        run: |
+          set -o pipefail
+          python scripts/generate_brief.py 2>&1 | tee brief_generator.log
+
+      - name: Upload failure log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-brief-failure-${{ github.run_id }}
+          if-no-files-found: warn
+          path: brief_generator.log
+
+      - name: Commit brief
+        if: steps.check.outputs.skip == 'false'
+        shell: bash
+        run: |
+          git config user.name "brief-bot"
+          git config user.email "bot@shipping"
+          git add knowledge/briefs/
+          if git diff --staged --quiet; then
+            echo "No brief changes to commit."
+            exit 0
+          fi
+          git commit -m "brief: daily market brief $(date -u +%Y-%m-%d)"
+
+          for attempt in 1 2 3 4; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+            wait_sec=$((2 ** attempt))
+            echo "Push race on attempt $attempt — retrying in ${wait_sec}s..."
+            sleep "$wait_sec"
+          done
+
+          echo "Failed to push after 4 attempts."
+          exit 1

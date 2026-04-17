@@ -1882,6 +1882,110 @@
         font-size: 16px;
       }
     }
+
+    /* ── Intelligence Tab ─────────────────────────────────────────────────── */
+    .intel-section { margin-bottom: 2rem; }
+    .intel-section-title {
+      font-size: 1rem; font-weight: 600; color: #e6edf3;
+      border-bottom: 1px solid #21262d; padding-bottom: 0.5rem; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .intel-section-meta { font-size: 0.72rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+    .intel-alert-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;
+    }
+    .intel-alert-card {
+      background: #161b22; border: 1px solid #21262d; border-radius: 8px;
+      padding: 1rem; transition: border-color 0.2s;
+    }
+    .intel-alert-card.ci-bull   { border-color: #238636; background: linear-gradient(160deg,#0d1117 75%,#0d2818); }
+    .intel-alert-card.ci-bear   { border-color: #da3633; background: linear-gradient(160deg,#0d1117 75%,#2d1117); }
+    .intel-alert-card.ci-div    { border-color: #d29922; background: linear-gradient(160deg,#0d1117 75%,#2d2208); }
+    .intel-alert-card.ci-neut   { border-color: #30363d; }
+    .intel-badge {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+    }
+    .intel-badge.bull   { background: #238636; color: #fff; }
+    .intel-badge.bear   { background: #da3633; color: #fff; }
+    .intel-badge.div    { background: #d29922; color: #0d1117; }
+    .intel-badge.neut   { background: #21262d; color: #8b949e; }
+    .intel-kv { display: flex; flex-direction: column; gap: 1px; }
+    .ik-label { font-size: 0.68rem; color: #8b949e; text-transform: uppercase; letter-spacing: 0.04em; }
+    .ik-val   { font-size: 0.9rem; font-weight: 600; color: #e6edf3; }
+    .intel-kv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.6rem 0; }
+    .intel-qual-row { margin: 0.5rem 0; }
+    .intel-chip {
+      display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 0.68rem;
+      background: #21262d; border: 1px solid #30363d; color: #8b949e; margin: 1px;
+    }
+    .intel-conf-desc { font-size: 0.78rem; color: #8b949e; border-top: 1px solid #21262d; padding-top: 0.4rem; margin-top: 0.4rem; }
+    /* Brief cards */
+    .brief-card {
+      background: #161b22; border: 1px solid #21262d; border-radius: 8px;
+      padding: 1.25rem; margin-bottom: 1rem;
+    }
+    .brief-card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 0.75rem; gap: 0.75rem; }
+    .brief-card-title  { font-weight: 600; color: #e6edf3; font-size: 1rem; }
+    .brief-card-sub    { font-size: 0.75rem; color: #8b949e; margin-top: 0.15rem; }
+    .brief-conf-note {
+      padding: 0.45rem 0.75rem; border-left: 3px solid #d29922;
+      background: #0d1117; border-radius: 0 4px 4px 0;
+      font-size: 0.82rem; color: #e6edf3; margin: 0.5rem 0;
+    }
+    .brief-conf-note.bull { border-color: #238636; }
+    .brief-conf-note.bear { border-color: #da3633; }
+    .brief-conf-note.neut { border-color: #30363d; }
+    .brief-summary  { font-size: 0.88rem; color: #e6edf3; line-height: 1.6; margin: 0.5rem 0; }
+    .brief-signals  { list-style: none; padding: 0; margin: 0.4rem 0; }
+    .brief-signals li { font-size: 0.83rem; color: #c9d1d9; padding: 0.2rem 0; }
+    .brief-signals li::before { content: "› "; color: #58a6ff; font-weight: 700; }
+    .brief-outlook  { margin-top: 0.5rem; padding: 0.4rem 0.75rem; background: #0d1117; border-radius: 4px; font-size: 0.82rem; }
+    .brief-watch    { font-size: 0.78rem; color: #d29922; margin-top: 0.35rem; }
+    .brief-meta     { font-size: 0.72rem; color: #8b949e; margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+    /* Q&A panel */
+    .qa-key-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .qa-key-input {
+      flex: 1; min-width: 200px; background: #0d1117; border: 1px solid #30363d;
+      color: #e6edf3; border-radius: 6px; padding: 0.4rem 0.75rem;
+      font-size: 0.82rem; font-family: monospace;
+    }
+    .qa-key-input:focus { outline: none; border-color: #58a6ff; }
+    .qa-scope-row { display: flex; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .qa-scope-label { font-size: 0.78rem; color: #8b949e; display: flex; align-items: center; gap: 0.3rem; cursor: pointer; }
+    .qa-scope-label input { accent-color: #58a6ff; }
+    .qa-input-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .qa-textarea {
+      flex: 1; background: #0d1117; border: 1px solid #30363d; color: #e6edf3;
+      border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 0.88rem;
+      resize: vertical; min-height: 52px; font-family: inherit;
+    }
+    .qa-textarea:focus { outline: none; border-color: #58a6ff; }
+    .qa-submit {
+      background: #1f6feb; color: #fff; border: none; border-radius: 6px;
+      padding: 0 1rem; cursor: pointer; font-size: 0.88rem; white-space: nowrap;
+      align-self: flex-end; height: 38px;
+    }
+    .qa-submit:disabled { opacity: 0.45; cursor: not-allowed; }
+    .qa-submit:hover:not(:disabled) { background: #388bfd; }
+    .qa-result-panel {
+      background: #161b22; border: 1px solid #21262d; border-radius: 8px;
+      padding: 1rem; margin-top: 0.75rem;
+    }
+    .qa-status   { font-size: 0.82rem; color: #8b949e; margin-bottom: 0.5rem; }
+    .qa-answer   { color: #e6edf3; font-size: 0.88rem; line-height: 1.7; white-space: pre-wrap; }
+    .qa-cit-list { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.75rem; }
+    .qa-cit {
+      background: #21262d; border: 1px solid #30363d; border-radius: 4px;
+      padding: 2px 7px; font-size: 0.68rem; color: #8b949e;
+    }
+    .intel-empty {
+      text-align: center; padding: 2rem 1rem; color: #8b949e; font-size: 0.88rem;
+    }
+    .intel-empty code { background: #21262d; padding: 1px 5px; border-radius: 3px; }
+    @media (max-width: 640px) {
+      .intel-alert-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 
@@ -1983,6 +2087,7 @@
     <button class="tab-btn" data-tab="indices">📈 Indices</button>
     <button class="tab-btn" data-tab="etfs">🏦 ETFs</button>
     <button class="tab-btn" data-tab="signals">🎯 Signals</button>
+    <button class="tab-btn" data-tab="intelligence">🧠 Intelligence</button>
   </div>
 
   <!-- HENRY AVERY TICKER -->
@@ -2904,6 +3009,67 @@
       </div>
 
     </div>
+
+    <!-- ── Intelligence Tab ──────────────────────────────────────────────── -->
+    <div class="tab-panel" id="tab-intelligence">
+
+      <!-- Section 1: Signal & Confluence Engine -->
+      <div class="intel-section">
+        <div class="intel-section-title">
+          ⚡ Signal &amp; Confluence Engine
+          <span class="intel-section-meta" id="intelAlertsTs">Loading...</span>
+        </div>
+        <div class="intel-alert-grid" id="intelAlertGrid">
+          <div class="intel-empty">Loading signals...</div>
+        </div>
+      </div>
+
+      <!-- Section 2: Daily Market Brief -->
+      <div class="intel-section">
+        <div class="intel-section-title">
+          📋 Daily Market Brief
+          <span class="intel-section-meta" id="intelBriefTs"></span>
+        </div>
+        <div id="intelBriefContent">
+          <div class="intel-empty">Loading brief...</div>
+        </div>
+      </div>
+
+      <!-- Section 3: Q&A Assistant -->
+      <div class="intel-section">
+        <div class="intel-section-title">🔍 Research Q&amp;A</div>
+
+        <!-- API key row -->
+        <div class="qa-key-row">
+          <span style="font-size:0.78rem;color:#8b949e;white-space:nowrap;">Gemini API Key</span>
+          <input type="password" id="qaApiKey" class="qa-key-input" placeholder="AIza... (stored in localStorage, never sent to our server)" />
+          <button class="qa-submit" style="width:70px;" onclick="saveQAKey()">Save</button>
+          <span id="qaKeyStatus" style="font-size:0.75rem;color:#8b949e;"></span>
+        </div>
+
+        <!-- Source scope -->
+        <div class="qa-scope-row">
+          <span style="font-size:0.78rem;color:#8b949e;margin-right:0.25rem;">Sources:</span>
+          <label class="qa-scope-label"><input type="checkbox" id="qaSrcBreakwave" checked> Breakwave</label>
+          <label class="qa-scope-label"><input type="checkbox" id="qaSrcBaltic" checked> Baltic</label>
+          <label class="qa-scope-label"><input type="checkbox" id="qaSrcHellenic"> Hellenic</label>
+          <label class="qa-scope-label"><input type="checkbox" id="qaSrcWikiOnly"> Wiki only (fast)</label>
+        </div>
+
+        <!-- Query input -->
+        <div class="qa-input-row">
+          <textarea id="qaQuery" class="qa-textarea" placeholder="e.g. What is the current Capesize supply outlook through Q3 2026? What are analysts saying about iron ore demand?"></textarea>
+          <button id="qaSubmitBtn" class="qa-submit" onclick="runQAQuery()">Ask</button>
+        </div>
+
+        <div id="qaResultPanel" style="display:none;" class="qa-result-panel">
+          <div id="qaStatus" class="qa-status"></div>
+          <div id="qaAnswer" class="qa-answer"></div>
+          <div id="qaCitations" class="qa-cit-list"></div>
+        </div>
+      </div>
+
+    </div><!-- /tab-intelligence -->
 
   </div><!-- /main -->
 
@@ -6611,6 +6777,7 @@
       if (tabId === 'yearly-dash') renderYearlyDash(currentProduct);
       if (tabId === 'monthly-dash') renderMonthlyDash(currentProduct);
       if (tabId === 'signals') renderSignalsTab(currentProduct);
+      if (tabId === 'intelligence') renderIntelligenceTab();
     }
 
     document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -9911,6 +10078,483 @@
           }
         }
       });
+    }
+
+    // =====================================================================
+    // INTELLIGENCE TAB — Signal Engine · Daily Brief · Q&A Assistant
+    // =====================================================================
+
+    const INTEL = {
+      loaded:       false,
+      signals:      [],   // all rows from knowledge/derived/signals.jsonl
+      briefData:    null, // knowledge/briefs/latest.json
+      wikiCache:    {},   // path -> stripped text
+      chunkCache:   {},   // filename -> parsed array
+    };
+
+    // Chunk files available per source scope
+    const QA_CHUNK_FILES = {
+      breakwave: [
+        'knowledge/chunks/breakwave_drybulk.jsonl',
+        'knowledge/chunks/breakwave_tankers.jsonl',
+        'knowledge/chunks/breakwave_insights_insights_2026.jsonl',
+        'knowledge/chunks/breakwave_insights_insights_2025.jsonl',
+        'knowledge/chunks/breakwave_insights_insights_2024.jsonl',
+      ],
+      baltic: [
+        'knowledge/chunks/baltic_dry.jsonl',
+        'knowledge/chunks/baltic_tanker.jsonl',
+      ],
+      hellenic: [
+        'knowledge/chunks/hellenic_dry_charter_2026.jsonl',
+        'knowledge/chunks/hellenic_dry_charter_2025.jsonl',
+        'knowledge/chunks/hellenic_tanker_charter_2026.jsonl',
+        'knowledge/chunks/hellenic_tanker_charter_2025.jsonl',
+        'knowledge/chunks/hellenic_vessel_valuations_2026.jsonl',
+        'knowledge/chunks/hellenic_vessel_valuations_2025.jsonl',
+      ],
+    };
+
+    const QA_WIKI_FILES = [
+      { key: 'dry_bulk_market',       path: 'knowledge/wiki/dry_bulk_market.md',       label: 'Dry Bulk Market' },
+      { key: 'capesize',              path: 'knowledge/wiki/capesize.md',               label: 'Capesize' },
+      { key: 'panamax_and_supramax',  path: 'knowledge/wiki/panamax_and_supramax.md',   label: 'Panamax & Supramax' },
+      { key: 'tanker_market',         path: 'knowledge/wiki/tanker_market.md',          label: 'Tanker Market' },
+      { key: 'vlcc_and_suezmax',      path: 'knowledge/wiki/vlcc_and_suezmax.md',       label: 'VLCC & Suezmax' },
+      { key: 'china_steel_and_iron_ore', path: 'knowledge/wiki/china_steel_and_iron_ore.md', label: 'China Steel & Iron Ore' },
+      { key: 'coal_and_grain_flows',  path: 'knowledge/wiki/coal_and_grain_flows.md',   label: 'Coal & Grain Flows' },
+    ];
+
+    // ── Entry point ───────────────────────────────────────────────────────────
+
+    async function renderIntelligenceTab() {
+      if (!INTEL.loaded) {
+        await _intelLoadSignals();
+        INTEL.loaded = true;
+      }
+      _renderSignalAlerts();
+      _renderDailyBrief();   // async, updates panel when done
+      _initQAPanel();
+    }
+
+    // ── Signals loader ────────────────────────────────────────────────────────
+
+    async function _intelLoadSignals() {
+      try {
+        const resp = await fetch('knowledge/derived/signals.jsonl');
+        if (!resp.ok) return;
+        const text = await resp.text();
+        INTEL.signals = text.split('\n')
+          .filter(l => l.trim())
+          .map(l => { try { return JSON.parse(l); } catch { return null; } })
+          .filter(Boolean);
+      } catch (e) {
+        console.warn('[Intel] signals load failed:', e);
+      }
+    }
+
+    function _recentBreakwave(category, n) {
+      return INTEL.signals
+        .filter(s =>
+          s.source === 'breakwave' &&
+          s.category === category &&
+          s.date && s.date !== '0000-00-00' &&
+          s.sentiment != null
+        )
+        .sort((a, b) => b.date.localeCompare(a.date))
+        .slice(0, n || 4);
+    }
+
+    // ── Confluence engine ─────────────────────────────────────────────────────
+
+    const _QUAL_SCORES = {
+      positive: 1.0, constructive: 0.75, cautiously_bullish: 0.5,
+      neutral: 0.0, mixed: 0.0,
+      cautiously_bearish: -0.5, negative: -1.0,
+    };
+
+    function _confluenceType(zScore, sentiments) {
+      if (!sentiments || !sentiments.length || zScore == null) return 'NEUTRAL';
+      const q = sentiments.reduce((s, x) => s + (_QUAL_SCORES[x] ?? 0), 0) / sentiments.length;
+      if (zScore >  0.5 && q >  0.25) return 'BULL_CONFLUENCE';
+      if (zScore < -0.5 && q < -0.25) return 'BEAR_CONFLUENCE';
+      if ((zScore >  0.5 && q < -0.25) || (zScore < -0.5 && q >  0.25)) return 'DIVERGENCE';
+      return 'NEUTRAL';
+    }
+
+    // Uses already-loaded DATA + existing helpers (movingAverage, rateOfChange, computeRollingZscoreArr)
+    function _intelRegime(productKey) {
+      const rows   = getRows(productKey);
+      if (!rows.length) return { regime: 'N/A', emoji: '⚪', ma200: null, roc60: null, zScore: null, current: null };
+      const vals   = rows.map(r => r[productKey]);
+      const ma200a = movingAverage(vals, 200);
+      const roc60a = rateOfChange(vals, 60);
+      const zArr   = computeRollingZscoreArr(vals, 252);
+      const ma200  = ma200a[ma200a.length - 1];
+      const roc60  = roc60a[roc60a.length - 1];
+      const zScore = zArr[zArr.length - 1];
+      const cur    = vals.filter(v => v != null).at(-1);
+      let regime, emoji;
+      if (ma200 == null || roc60 == null) { regime = 'N/A'; emoji = '⚪'; }
+      else if (cur > ma200 && roc60 > 0)  { regime = 'EXPANSION';    emoji = '🟢'; }
+      else if (cur > ma200)               { regime = 'DISTRIBUTION'; emoji = '🟡'; }
+      else if (roc60 > 0)                 { regime = 'ACCUMULATION'; emoji = '🔵'; }
+      else                                { regime = 'CONTRACTION';  emoji = '🔴'; }
+      return { regime, emoji, ma200, roc60, zScore, current: cur };
+    }
+
+    // ── Signal Alert renderer ─────────────────────────────────────────────────
+
+    function _renderSignalAlerts() {
+      const grid = document.getElementById('intelAlertGrid');
+      const ts   = document.getElementById('intelAlertsTs');
+      if (!grid || !DATA.loaded) return;
+
+      const bdiQ    = _intelRegime('bdiy');
+      const capeQ   = _intelRegime('cape');
+      const panamaQ = _intelRegime('panama');
+      const cleanQ  = _intelRegime('cleantanker');
+      const dirtyQ  = _intelRegime('dirtytanker');
+
+      const tankerZ = (cleanQ.zScore != null && dirtyQ.zScore != null)
+        ? (cleanQ.zScore + dirtyQ.zScore) / 2
+        : (cleanQ.zScore ?? dirtyQ.zScore);
+
+      const drySigs    = _recentBreakwave('drybulk', 4);
+      const tankerSigs = _recentBreakwave('tankers', 4);
+      const drySents   = drySigs.map(s => s.sentiment || 'neutral');
+      const tankSents  = tankerSigs.map(s => s.sentiment || 'neutral');
+
+      const cards = [
+        _buildAlertCard('BDI (Dry Bulk Headline)',   '🌊', bdiQ,    drySigs,    _confluenceType(bdiQ.zScore,    drySents)),
+        _buildAlertCard('Capesize (BCI)',             '⚓', capeQ,   drySigs,    _confluenceType(capeQ.zScore,   drySents)),
+        _buildAlertCard('Panamax (BPI)',              '📦', panamaQ, drySigs,    _confluenceType(panamaQ.zScore, drySents)),
+        _buildAlertCard('Tanker (BCTI/BDTI avg)',     '🛢️', { ...cleanQ, zScore: tankerZ }, tankerSigs, _confluenceType(tankerZ, tankSents)),
+      ];
+
+      grid.innerHTML = cards.join('');
+
+      if (ts && drySigs.length) {
+        ts.textContent = `Qual: Breakwave ${drySigs[0].date} · Quant: live CSV`;
+      }
+    }
+
+    function _buildAlertCard(title, icon, q, qualSigs, confluence) {
+      const fmtN  = n => n != null ? Number(n).toLocaleString(undefined, { maximumFractionDigits: 0 }) : '—';
+      const fmtZ  = n => n != null ? (n >= 0 ? '+' : '') + n.toFixed(2) + 'σ' : '—';
+      const fmtPc = n => n != null ? (n >= 0 ? '+' : '') + n.toFixed(1) + '%' : '—';
+
+      const cfgMap = {
+        BULL_CONFLUENCE: { cardCls: 'ci-bull', badgeCls: 'bull', label: '🟢 BULL CONFLUENCE',
+          desc: 'Quant momentum and qualitative analyst sentiment align bullishly.' },
+        BEAR_CONFLUENCE: { cardCls: 'ci-bear', badgeCls: 'bear', label: '🔴 BEAR CONFLUENCE',
+          desc: 'Quant momentum and qualitative analyst sentiment align bearishly.' },
+        DIVERGENCE:      { cardCls: 'ci-div',  badgeCls: 'div',  label: '⚡ DIVERGENCE',
+          desc: 'Quant and qual signals contradict each other — elevated positioning risk and potential mean-reversion opportunity.' },
+        NEUTRAL:         { cardCls: 'ci-neut', badgeCls: 'neut', label: '⏳ NEUTRAL',
+          desc: 'No strong confluence detected.' },
+      };
+      const cfg = cfgMap[confluence] || cfgMap.NEUTRAL;
+
+      const zCol     = q.zScore > 0 ? '#3fb950' : q.zScore < 0 ? '#f85149' : '#8b949e';
+      const qualChips = qualSigs.slice(0, 3).map(s => {
+        const sCol = { positive:'#3fb950', neutral:'#8b949e', negative:'#f85149' }[s.sentiment] || '#8b949e';
+        return `<span class="intel-chip" style="color:${sCol}">${s.date} · ${s.sentiment}/${s.momentum}</span>`;
+      }).join('');
+
+      return `<div class="intel-alert-card ${cfg.cardCls}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
+          <span style="font-weight:600;color:#e6edf3;font-size:0.92rem;">${icon} ${title}</span>
+          <span class="intel-badge ${cfg.badgeCls}">${cfg.label}</span>
+        </div>
+        <div class="intel-kv-grid">
+          <div class="intel-kv"><span class="ik-label">Level</span><span class="ik-val">${fmtN(q.current)}</span></div>
+          <div class="intel-kv"><span class="ik-label">Z-Score (252D)</span><span class="ik-val" style="color:${zCol}">${fmtZ(q.zScore)}</span></div>
+          <div class="intel-kv"><span class="ik-label">Regime</span><span class="ik-val">${q.emoji} ${q.regime}</span></div>
+          <div class="intel-kv"><span class="ik-label">ROC (60D)</span><span class="ik-val">${fmtPc(q.roc60)}</span></div>
+        </div>
+        <div class="intel-qual-row">
+          <div class="ik-label" style="margin-bottom:3px;">Breakwave sentiment (recent)</div>
+          ${qualChips || '<span style="color:#8b949e;font-size:0.75rem;">No reports loaded</span>'}
+        </div>
+        <div class="intel-conf-desc">${cfg.desc}</div>
+      </div>`;
+    }
+
+    // ── Daily Brief renderer ──────────────────────────────────────────────────
+
+    async function _renderDailyBrief() {
+      const el  = document.getElementById('intelBriefContent');
+      const tsEl = document.getElementById('intelBriefTs');
+      if (!el) return;
+
+      try {
+        const resp = await fetch('knowledge/briefs/latest.json');
+        if (!resp.ok) throw new Error('not_found');
+        INTEL.briefData = await resp.json();
+        _paintBrief(el, tsEl, INTEL.briefData);
+      } catch {
+        el.innerHTML = `<div class="intel-empty">
+          <div style="font-size:1.4rem;margin-bottom:0.5rem;">📋</div>
+          <div>No brief generated yet. The <code>daily_brief.yml</code> workflow runs at 12:00 PM UTC on weekdays.</div>
+          <div style="margin-top:0.4rem;font-size:0.8rem;">Run <code>python scripts/generate_brief.py</code> locally with <code>GEMINI_API_KEY</code> to generate one now.</div>
+        </div>`;
+      }
+    }
+
+    function _paintBrief(el, tsEl, data) {
+      const { generated_at, market_snapshot, vessel_classes, macro_note, sources } = data;
+
+      if (tsEl && generated_at) {
+        tsEl.textContent = 'Generated ' + new Date(generated_at).toLocaleString();
+      }
+
+      const cfgMap = {
+        BULL_CONFLUENCE: { badgeCls: 'bull', noteCls: 'bull', label: '🟢 BULL CONFLUENCE' },
+        BEAR_CONFLUENCE: { badgeCls: 'bear', noteCls: 'bear', label: '🔴 BEAR CONFLUENCE' },
+        DIVERGENCE:      { badgeCls: 'div',  noteCls: '',     label: '⚡ DIVERGENCE' },
+        NEUTRAL:         { badgeCls: 'neut', noteCls: 'neut', label: '⏳ NEUTRAL' },
+      };
+
+      function _briefCard(icon, label, vc, snapKey) {
+        if (!vc) return '';
+        const cfg  = cfgMap[vc.confluence_type] || cfgMap.NEUTRAL;
+        const snap = market_snapshot?.[snapKey];
+        const sub  = snap
+          ? `${snap.regime_emoji || ''} ${snap.regime || ''} · Z=${snap.z_score_252d != null ? (snap.z_score_252d >= 0 ? '+' : '') + snap.z_score_252d.toFixed(2) + 'σ' : '—'} · ROC60=${snap.roc60 != null ? (snap.roc60 >= 0 ? '+' : '') + snap.roc60.toFixed(1) + '%' : '—'}`
+          : '';
+        const sigs = (vc.key_signals || []).map(s => `<li>${s}</li>`).join('');
+        const dates = (vc.report_dates || []).filter(Boolean).map(d => `<span class="qa-cit">${d}</span>`).join('');
+        return `<div class="brief-card">
+          <div class="brief-card-header">
+            <div>
+              <div class="brief-card-title">${icon} ${label}</div>
+              ${sub ? `<div class="brief-card-sub">${sub}</div>` : ''}
+            </div>
+            <span class="intel-badge ${cfg.badgeCls}">${cfg.label}</span>
+          </div>
+          ${vc.confluence_note ? `<div class="brief-conf-note ${cfg.noteCls}">${vc.confluence_note}</div>` : ''}
+          ${vc.summary        ? `<p class="brief-summary">${vc.summary}</p>` : ''}
+          ${sigs              ? `<ul class="brief-signals">${sigs}</ul>` : ''}
+          ${vc.outlook        ? `<div class="brief-outlook"><span style="color:#58a6ff;font-weight:600;">Outlook:</span> ${vc.outlook}</div>` : ''}
+          ${vc.watch          ? `<div class="brief-watch">⚠ Watch: ${vc.watch}</div>` : ''}
+          ${dates             ? `<div style="margin-top:0.4rem;">${dates}</div>` : ''}
+        </div>`;
+      }
+
+      const dryCard    = _briefCard('🌊', 'Dry Bulk',  vessel_classes?.dry_bulk, 'bdi');
+      const tankerCard = _briefCard('🛢️', 'Tanker',   vessel_classes?.tanker,   'clean_tanker');
+
+      el.innerHTML = `
+        ${macro_note ? `<div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:0.75rem 1rem;margin-bottom:1rem;font-size:0.85rem;color:#e6edf3;"><strong style="color:#8b949e;">Macro note:</strong> ${macro_note}</div>` : ''}
+        ${dryCard}${tankerCard}
+        <div class="brief-meta">
+          Sources: ${(sources || []).length} reports
+          ${(sources || []).slice(0, 4).map(s => `<span class="qa-cit">${s}</span>`).join('')}
+        </div>`;
+    }
+
+    // ── Q&A Assistant ─────────────────────────────────────────────────────────
+
+    function _initQAPanel() {
+      const keyEl = document.getElementById('qaApiKey');
+      if (!keyEl) return;
+      const stored = localStorage.getItem('gemini_qa_key') || '';
+      if (stored) {
+        keyEl.value   = stored;
+        keyEl.placeholder = 'API key saved ✓';
+        const st = document.getElementById('qaKeyStatus');
+        if (st) st.textContent = '✓ Key saved';
+      }
+    }
+
+    function saveQAKey() {
+      const val = (document.getElementById('qaApiKey')?.value || '').trim();
+      if (!val) return;
+      localStorage.setItem('gemini_qa_key', val);
+      const st = document.getElementById('qaKeyStatus');
+      if (st) { st.textContent = '✓ Saved'; st.style.color = '#3fb950'; }
+    }
+
+    // BM25-style keyword scoring (no external deps)
+    function _tokenize(text) {
+      return (text || '').toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(t => t.length > 2);
+    }
+
+    function _bm25Score(docTokens, queryTerms, avgDocLen, k1, b) {
+      const dl  = docTokens.length;
+      const tf  = {};
+      for (const t of docTokens) tf[t] = (tf[t] || 0) + 1;
+      let score = 0;
+      for (const term of queryTerms) {
+        const freq = tf[term] || 0;
+        if (!freq) continue;
+        const idf = 1; // simplified — no corpus-wide IDF needed at this scale
+        score += idf * (freq * (k1 + 1)) / (freq + k1 * (1 - b + b * dl / avgDocLen));
+      }
+      return score;
+    }
+
+    function _scoreItems(items, queryTerms, textFn, avgLen) {
+      return items.map(item => ({
+        item,
+        score: _bm25Score(_tokenize(textFn(item)), queryTerms, avgLen, 1.5, 0.75),
+      })).filter(x => x.score > 0).sort((a, b) => b.score - a.score);
+    }
+
+    async function _fetchTextFile(url) {
+      if (INTEL.wikiCache[url] !== undefined) return INTEL.wikiCache[url];
+      try {
+        const r = await fetch(url);
+        const t = r.ok ? await r.text() : '';
+        INTEL.wikiCache[url] = t;
+        return t;
+      } catch { return ''; }
+    }
+
+    async function _loadChunkFile(url) {
+      if (INTEL.chunkCache[url]) return INTEL.chunkCache[url];
+      try {
+        const r    = await fetch(url);
+        if (!r.ok) return [];
+        const text = await r.text();
+        const rows = text.split('\n').filter(l => l.trim())
+          .map(l => { try { return JSON.parse(l); } catch { return null; } })
+          .filter(Boolean);
+        INTEL.chunkCache[url] = rows;
+        return rows;
+      } catch { return []; }
+    }
+
+    function _stripFrontmatter(md) {
+      if (!md.startsWith('---')) return md;
+      const end = md.indexOf('---', 3);
+      return end > 0 ? md.slice(end + 3).trim() : md;
+    }
+
+    async function runQAQuery() {
+      const btn   = document.getElementById('qaSubmitBtn');
+      const panel = document.getElementById('qaResultPanel');
+      const statEl= document.getElementById('qaStatus');
+      const ansEl = document.getElementById('qaAnswer');
+      const citEl = document.getElementById('qaCitations');
+      const query = (document.getElementById('qaQuery')?.value || '').trim();
+      const apiKey= (document.getElementById('qaApiKey')?.value || localStorage.getItem('gemini_qa_key') || '').trim();
+
+      if (!query) return;
+      if (!apiKey) {
+        alert('Enter your Gemini API key first.');
+        return;
+      }
+
+      btn.disabled = true;
+      panel.style.display = 'block';
+      statEl.textContent = '⏳ Loading knowledge base...';
+      ansEl.textContent  = '';
+      citEl.innerHTML    = '';
+
+      try {
+        const queryTerms = _tokenize(query);
+        const wikiOnly   = document.getElementById('qaSrcWikiOnly')?.checked;
+
+        // Step 1: Always load wiki pages first (high-level summary layer)
+        statEl.textContent = '⏳ Loading wiki pages...';
+        const wikiItems = [];
+        for (const wf of QA_WIKI_FILES) {
+          const raw  = await _fetchTextFile(wf.path);
+          const text = _stripFrontmatter(raw);
+          if (text) wikiItems.push({ ...wf, text });
+        }
+
+        // Step 2: Score wiki pages
+        const avgWikiLen = wikiItems.reduce((s, w) => s + _tokenize(w.text).length, 0) / (wikiItems.length || 1);
+        const scoredWiki = _scoreItems(wikiItems, queryTerms, w => w.text, avgWikiLen);
+
+        // Step 3: Load + score chunks (unless wiki-only mode)
+        let topChunks = [];
+        if (!wikiOnly) {
+          statEl.textContent = '⏳ Loading retrieval chunks...';
+          const filesToLoad = [];
+          if (document.getElementById('qaSrcBreakwave')?.checked) filesToLoad.push(...QA_CHUNK_FILES.breakwave);
+          if (document.getElementById('qaSrcBaltic')?.checked)    filesToLoad.push(...QA_CHUNK_FILES.baltic);
+          if (document.getElementById('qaSrcHellenic')?.checked)  filesToLoad.push(...QA_CHUNK_FILES.hellenic);
+
+          const allChunks = (await Promise.all(filesToLoad.map(_loadChunkFile))).flat();
+          const avgChunkLen = allChunks.reduce((s, c) => s + _tokenize(c.text).length, 0) / (allChunks.length || 1);
+          const scoredChunks = _scoreItems(allChunks, queryTerms, c => c.text + ' ' + (c.keywords || []).join(' '), avgChunkLen);
+          topChunks = scoredChunks.slice(0, 7).map(x => x.item);
+        }
+
+        // Step 4: Build context — wiki excerpts first (boosted), then chunks
+        const topWiki = scoredWiki.slice(0, 3);
+        const contextParts = [];
+
+        topWiki.forEach((w, i) => {
+          contextParts.push(`[WIKI-${i + 1}] ${w.item.label} (knowledge base summary)\n${w.item.text.slice(0, 1200)}`);
+        });
+        topChunks.forEach((c, i) => {
+          contextParts.push(`[${i + 1}] ${c.source}/${c.category} | ${c.date} | ${c.section_title}\n${c.text}`);
+        });
+
+        if (!contextParts.length) {
+          ansEl.textContent = 'No relevant context found. Try broadening your source selection.';
+          btn.disabled = false;
+          return;
+        }
+
+        statEl.textContent = `⏳ Asking Gemini (${contextParts.length} context passages)...`;
+
+        const prompt = `You are a senior shipping freight market analyst. Answer the question using ONLY the provided context passages.
+
+Question: ${query}
+
+Context:
+${contextParts.join('\n\n---\n\n')}
+
+Instructions:
+- Cite each claim using the passage label, e.g. [WIKI-1] or [3]
+- Be direct and trader-focused — mention specific index levels, dates, or route data where available
+- If the context is insufficient, say so clearly rather than speculating
+- Keep the answer under 400 words`;
+
+        const apiResp = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
+          {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:    JSON.stringify({
+              contents: [{ parts: [{ text: prompt }] }],
+              generationConfig: { temperature: 0.2, maxOutputTokens: 1024 },
+            }),
+          }
+        );
+
+        if (!apiResp.ok) {
+          const err = await apiResp.json().catch(() => ({}));
+          throw new Error(err?.error?.message || `HTTP ${apiResp.status}`);
+        }
+
+        const apiData = await apiResp.json();
+        const answer  = apiData?.candidates?.[0]?.content?.parts?.[0]?.text || '(no response)';
+
+        statEl.textContent = `✓ ${contextParts.length} passages retrieved (${topWiki.length} wiki + ${topChunks.length} chunks)`;
+        ansEl.textContent  = answer;
+
+        // Build citation list
+        const cits = [
+          ...topWiki.map((w, i) => ({ label: `WIKI-${i + 1}`, meta: w.item.label })),
+          ...topChunks.map((c, i) => ({ label: `${i + 1}`, meta: `${c.source} · ${c.date} · ${c.section_title}` })),
+        ];
+        citEl.innerHTML = cits.map(c =>
+          `<span class="qa-cit" title="${c.meta}">[${c.label}] ${c.meta}</span>`
+        ).join('');
+
+      } catch (err) {
+        statEl.textContent = '✗ Error: ' + err.message;
+        ansEl.textContent  = '';
+      } finally {
+        btn.disabled = false;
+      }
     }
 
   </script>
