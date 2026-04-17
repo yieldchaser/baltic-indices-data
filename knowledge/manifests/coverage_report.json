@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-17T07:47:50Z",
+  "generated_at": "2026-04-17T11:12:47Z",
   "current_date": "2026-04-17",
   "corpus": {
-    "document_count": 7985,
-    "chunk_count": 95438,
-    "section_count": 29128,
+    "document_count": 7987,
+    "chunk_count": 95467,
+    "section_count": 29132,
     "topic_count": 10,
     "topic_evidence_count": 2500,
     "wiki_page_count": 10
@@ -94,11 +94,11 @@
       "category": "ningbo",
       "status": "healthy",
       "cadence_days": 7,
-      "latest_date": "2026-04-10",
-      "age_days": 7,
+      "latest_date": "2026-04-17",
+      "age_days": 0,
       "latest_gap_days": 7,
       "max_recent_gap_days": 7,
-      "dated_doc_count": 488,
+      "dated_doc_count": 489,
       "undated_doc_count": 0
     },
     {
@@ -146,11 +146,11 @@
       "category": "iron_ore",
       "status": "healthy",
       "cadence_days": 14,
-      "latest_date": "2026-04-15",
-      "age_days": 2,
+      "latest_date": "2026-04-16",
+      "age_days": 1,
       "latest_gap_days": 1,
       "max_recent_gap_days": 4,
-      "dated_doc_count": 1088,
+      "dated_doc_count": 1089,
       "undated_doc_count": 0
     },
     {
@@ -217,20 +217,20 @@
       "relevant_corpus_latest_date": "2026-04-16",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 88,
+      "document_count": 89,
       "source_counts": {
         "baltic": 2,
         "breakwave": 2,
-        "breakwave_insights": 132,
-        "hellenic": 114
+        "breakwave_insights": 129,
+        "hellenic": 117
       },
       "category_counts": {
         "demolition": 35,
         "dry": 2,
         "dry_charter": 8,
         "drybulk": 2,
-        "insights": 132,
-        "iron_ore": 51,
+        "insights": 129,
+        "iron_ore": 54,
         "shipbuilding": 12,
         "vessel_valuations": 8
       },
@@ -243,7 +243,7 @@
       "missing_recent_sources": [],
       "tone_distribution": {
         "cautiously_bearish": 18,
-        "constructive": 50,
+        "constructive": 51,
         "neutral": 20
       }
     },
@@ -296,17 +296,17 @@
       "relevant_corpus_latest_date": "2026-04-16",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 115,
+      "document_count": 116,
       "source_counts": {
         "breakwave": 6,
-        "breakwave_insights": 102,
-        "hellenic": 142
+        "breakwave_insights": 99,
+        "hellenic": 145
       },
       "category_counts": {
         "dry_charter": 9,
         "drybulk": 6,
-        "insights": 102,
-        "iron_ore": 118,
+        "insights": 99,
+        "iron_ore": 121,
         "vessel_valuations": 15
       },
       "recent_sources_present": [
@@ -319,7 +319,7 @@
       ],
       "tone_distribution": {
         "cautiously_bearish": 21,
-        "constructive": 69,
+        "constructive": 70,
         "neutral": 25
       }
     },
@@ -407,14 +407,14 @@
       "document_count": 100,
       "source_counts": {
         "breakwave": 4,
-        "breakwave_insights": 148,
-        "hellenic": 98
+        "breakwave_insights": 145,
+        "hellenic": 101
       },
       "category_counts": {
         "dry_charter": 6,
         "drybulk": 4,
-        "insights": 148,
-        "iron_ore": 92
+        "insights": 145,
+        "iron_ore": 95
       },
       "recent_sources_present": [
         "breakwave",
@@ -426,8 +426,8 @@
       ],
       "tone_distribution": {
         "cautiously_bearish": 18,
-        "constructive": 64,
-        "neutral": 18
+        "constructive": 65,
+        "neutral": 17
       }
     },
     {
@@ -535,21 +535,21 @@
       "title": "Container and Ningbo Routes",
       "status": "healthy",
       "cadence_days": 7,
-      "latest_evidence_date": "2026-04-15",
-      "latest_evidence_age_days": 2,
-      "relevant_corpus_latest_date": "2026-04-15",
+      "latest_evidence_date": "2026-04-17",
+      "latest_evidence_age_days": 0,
+      "relevant_corpus_latest_date": "2026-04-17",
       "lag_days": 0,
       "evidence_count": 250,
-      "document_count": 178,
+      "document_count": 179,
       "source_counts": {
-        "baltic": 90,
-        "hellenic": 160
+        "baltic": 91,
+        "hellenic": 159
       },
       "category_counts": {
         "container": 39,
-        "ningbo": 51,
+        "ningbo": 52,
         "shipbuilding": 67,
-        "vessel_valuations": 93
+        "vessel_valuations": 92
       },
       "recent_sources_present": [
         "baltic",
@@ -559,7 +559,7 @@
       "tone_distribution": {
         "cautiously_bearish": 8,
         "constructive": 20,
-        "neutral": 33
+        "neutral": 34
       }
     }
   ],
