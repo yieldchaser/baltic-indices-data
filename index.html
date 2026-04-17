@@ -2040,6 +2040,11 @@
       color: var(--text); border-radius: 6px; padding: 7px 12px;
       font-size: 12px; font-family: monospace;
     }
+    .qa-provider-select {
+      min-width: 130px;
+      max-width: 180px;
+      font-family: inherit;
+    }
     .qa-key-input:focus { outline: none; border-color: var(--accent); }
     .qa-key-btn {
       background: var(--hover); color: var(--text-muted); border: 1px solid var(--border);
@@ -3135,9 +3140,16 @@
         <div class="intel-section-title">🔍 Research Q&amp;A</div>
         <div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;">
           <div class="qa-key-row">
-            <span class="qa-key-label">Gemini Key</span>
+            <span class="qa-key-label">Provider</span>
+            <select id="qaProvider" class="qa-key-input qa-provider-select" onchange="onQAProviderChange()">
+              <option value="gemini">Gemini</option>
+              <option value="groq">Groq</option>
+            </select>
+            <span class="qa-key-label" id="qaApiKeyLabel">Gemini Key</span>
             <input type="password" id="qaApiKey" class="qa-key-input" placeholder="AIza... (stored only in localStorage)" />
-            <button class="qa-key-btn" onclick="saveQAKey()">Save</button>
+            <span class="qa-key-label">Model</span>
+            <input type="text" id="qaModel" class="qa-key-input" placeholder="gemini-1.5-flash" />
+            <button class="qa-key-btn" onclick="saveQASettings()">Save</button>
             <span id="qaKeyStatus" style="font-size:11px;color:var(--green);"></span>
           </div>
           <div class="qa-scope-row">
@@ -10427,13 +10439,13 @@
         el.innerHTML = `<div class="intel-empty">
           No brief generated yet.<br>
           The <code>daily_brief.yml</code> workflow runs at 12:00 PM UTC Mon–Fri.<br>
-          <span style="font-size:11px;opacity:.7;">Run <code>GEMINI_API_KEY=... python scripts/generate_brief.py</code> locally to generate one now.</span>
+          <span style="font-size:11px;opacity:.7;">Run <code>python scripts/generate_brief.py</code> locally to generate one now.</span>
         </div>`;
       }
     }
 
     function _paintBrief(el, tsEl, data) {
-      const { generated_at, market_snapshot: snap, vessel_classes: vc, macro_note, sources } = data;
+      const { generated_at, generation, market_snapshot: snap, vessel_classes: vc, macro_note, sources } = data;
       if (tsEl && generated_at) tsEl.textContent = new Date(generated_at).toLocaleString();
 
       const cfgMap = {
@@ -10470,29 +10482,114 @@
         ${briefCard('🌊', 'Dry Bulk', vc?.dry_bulk, 'bdi')}
         ${briefCard('🛢️', 'Tanker',   vc?.tanker,   'clean_tanker')}
         <div class="brief-meta">
+          ${generation?.provider_used ? `<span class="qa-cit">provider: ${generation.provider_used}</span>` : ''}
+          ${generation?.mode ? `<span class="qa-cit">mode: ${generation.mode}</span>` : ''}
           ${(sources || []).slice(0, 4).map(s => `<span class="qa-cit">${s}</span>`).join('')}
         </div>`;
     }
 
     // ── Q&A Assistant ─────────────────────────────────────────────────────────
 
-    function _initQAPanel() {
-      const keyEl = document.getElementById('qaApiKey');
-      if (!keyEl) return;
-      const stored = localStorage.getItem('gemini_qa_key') || '';
-      if (stored) {
-        keyEl.value = stored;
-        const st = document.getElementById('qaKeyStatus');
-        if (st) st.textContent = '✓ Saved';
+    const QA_PROVIDER_CONFIG = {
+      gemini: {
+        label: 'Gemini',
+        keyStorage: 'qa_key_gemini',
+        modelStorage: 'qa_model_gemini',
+        defaultModel: 'gemini-1.5-flash',
+        keyLabel: 'Gemini Key',
+        keyPlaceholder: 'AIza... (stored only in localStorage)',
+      },
+      groq: {
+        label: 'Groq',
+        keyStorage: 'qa_key_groq',
+        modelStorage: 'qa_model_groq',
+        defaultModel: 'llama-3.3-70b-versatile',
+        keyLabel: 'Groq Key',
+        keyPlaceholder: 'gsk_... (stored only in localStorage)',
+      },
+    };
+
+    function _providerConfig(provider) {
+      return QA_PROVIDER_CONFIG[provider] || QA_PROVIDER_CONFIG.gemini;
+    }
+
+    function _currentQAProvider() {
+      const selected = (document.getElementById('qaProvider')?.value || localStorage.getItem('qa_provider') || 'gemini').trim().toLowerCase();
+      return QA_PROVIDER_CONFIG[selected] ? selected : 'gemini';
+    }
+
+    function _loadProviderKey(provider) {
+      const cfg = _providerConfig(provider);
+      if (provider === 'gemini') {
+        return localStorage.getItem(cfg.keyStorage) || localStorage.getItem('gemini_qa_key') || '';
+      }
+      return localStorage.getItem(cfg.keyStorage) || '';
+    }
+
+    function _saveProviderKey(provider, value) {
+      const cfg = _providerConfig(provider);
+      localStorage.setItem(cfg.keyStorage, value);
+      if (provider === 'gemini') {
+        // Keep legacy key name for backward compatibility.
+        localStorage.setItem('gemini_qa_key', value);
       }
     }
 
+    function _loadProviderModel(provider) {
+      const cfg = _providerConfig(provider);
+      return localStorage.getItem(cfg.modelStorage) || cfg.defaultModel;
+    }
+
+    function _saveProviderModel(provider, value) {
+      const cfg = _providerConfig(provider);
+      localStorage.setItem(cfg.modelStorage, value);
+    }
+
+    function _syncQAProviderUI() {
+      const provider = _currentQAProvider();
+      const cfg = _providerConfig(provider);
+      const keyEl = document.getElementById('qaApiKey');
+      const modelEl = document.getElementById('qaModel');
+      const labelEl = document.getElementById('qaApiKeyLabel');
+      const statusEl = document.getElementById('qaKeyStatus');
+      if (labelEl) labelEl.textContent = cfg.keyLabel;
+      if (keyEl) {
+        keyEl.placeholder = cfg.keyPlaceholder;
+        keyEl.value = _loadProviderKey(provider);
+      }
+      if (modelEl) {
+        modelEl.value = _loadProviderModel(provider);
+        modelEl.placeholder = cfg.defaultModel;
+      }
+      if (statusEl) statusEl.textContent = '';
+    }
+
+    function onQAProviderChange() {
+      const provider = _currentQAProvider();
+      localStorage.setItem('qa_provider', provider);
+      _syncQAProviderUI();
+    }
+
+    function _initQAPanel() {
+      const providerEl = document.getElementById('qaProvider');
+      if (!providerEl) return;
+      providerEl.value = _currentQAProvider();
+      _syncQAProviderUI();
+    }
+
+    function saveQASettings() {
+      const provider = _currentQAProvider();
+      const keyVal = (document.getElementById('qaApiKey')?.value || '').trim();
+      const modelVal = (document.getElementById('qaModel')?.value || '').trim();
+      if (keyVal) _saveProviderKey(provider, keyVal);
+      if (modelVal) _saveProviderModel(provider, modelVal);
+      localStorage.setItem('qa_provider', provider);
+      const statusEl = document.getElementById('qaKeyStatus');
+      if (statusEl) statusEl.textContent = 'Saved';
+    }
+
     function saveQAKey() {
-      const val = (document.getElementById('qaApiKey')?.value || '').trim();
-      if (!val) return;
-      localStorage.setItem('gemini_qa_key', val);
-      const st = document.getElementById('qaKeyStatus');
-      if (st) { st.textContent = '✓ Saved'; }
+      saveQASettings();
     }
 
     function _tokenize(text) {
@@ -10542,6 +10639,49 @@
       return e > 0 ? md.slice(e + 3).trim() : md;
     }
 
+    async function _runProviderLLM(provider, apiKey, model, prompt) {
+      if (provider === 'groq') {
+        const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model,
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.2,
+            max_tokens: 1024,
+          }),
+        });
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err?.error?.message || `Groq HTTP ${res.status}`);
+        }
+        const data = await res.json();
+        return data?.choices?.[0]?.message?.content || '(no response)';
+      }
+
+      const safeModel = encodeURIComponent(model);
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${safeModel}:generateContent?key=${apiKey}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: { temperature: 0.2, maxOutputTokens: 1024 },
+          }),
+        }
+      );
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err?.error?.message || `Gemini HTTP ${res.status}`);
+      }
+      const data = await res.json();
+      return data?.candidates?.[0]?.content?.parts?.[0]?.text || '(no response)';
+    }
+
     async function runQAQuery() {
       const btn    = document.getElementById('qaSubmitBtn');
       const panel  = document.getElementById('qaResultPanel');
@@ -10549,10 +10689,20 @@
       const ansEl  = document.getElementById('qaAnswer');
       const citEl  = document.getElementById('qaCitations');
       const query  = (document.getElementById('qaQuery')?.value || '').trim();
-      const apiKey = (document.getElementById('qaApiKey')?.value || localStorage.getItem('gemini_qa_key') || '').trim();
+      const provider = _currentQAProvider();
+      const cfg = _providerConfig(provider);
+      const apiKey = (document.getElementById('qaApiKey')?.value || _loadProviderKey(provider) || '').trim();
+      const model = (document.getElementById('qaModel')?.value || _loadProviderModel(provider) || cfg.defaultModel).trim();
 
       if (!query) return;
-      if (!apiKey) { alert('Enter your Gemini API key first.'); return; }
+      if (!apiKey) { alert(`Enter your ${cfg.label} API key first.`); return; }
+      if (!model) { alert(`Enter a ${cfg.label} model first.`); return; }
+
+      _saveProviderKey(provider, apiKey);
+      _saveProviderModel(provider, model);
+      localStorage.setItem('qa_provider', provider);
+      const statusEl = document.getElementById('qaKeyStatus');
+      if (statusEl) statusEl.textContent = 'Saved';
 
       btn.disabled = true;
       panel.style.display = 'block';
@@ -10601,7 +10751,7 @@
           btn.disabled = false; return;
         }
 
-        statEl.textContent = `Asking Gemini (${ctx.length} passages)...`;
+        statEl.textContent = `Asking ${cfg.label} (${ctx.length} passages)...`;
 
         const prompt = `You are a senior shipping freight market analyst. Answer using ONLY the provided context.
 
@@ -10611,22 +10761,15 @@ ${ctx.join('\n\n---\n\n')}
 
 Rules: cite every claim [WIKI-N] or [N]. Be direct and trader-focused. Under 400 words.`;
 
-        const r = await fetch(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
-          { method:'POST', headers:{'Content-Type':'application/json'},
-            body: JSON.stringify({ contents:[{parts:[{text:prompt}]}], generationConfig:{temperature:0.2,maxOutputTokens:1024} }) }
-        );
-        if (!r.ok) { const e = await r.json().catch(()=>({})); throw new Error(e?.error?.message || `HTTP ${r.status}`); }
-
-        const answer = (await r.json())?.candidates?.[0]?.content?.parts?.[0]?.text || '(no response)';
-        statEl.textContent = `✓ ${ctx.length} passages (${scoredWiki.length} wiki · ${topChunks.length} chunks)`;
+        const answer = await _runProviderLLM(provider, apiKey, model, prompt);
+        statEl.textContent = `✓ ${cfg.label} · ${ctx.length} passages (${scoredWiki.length} wiki · ${topChunks.length} chunks)`;
         ansEl.textContent  = answer;
         citEl.innerHTML    = [
           ...scoredWiki.map((w, i) => `<span class="qa-cit" title="${w.item.label}">[WIKI-${i+1}] ${w.item.label}</span>`),
           ...topChunks.map((c, i)  => `<span class="qa-cit">[${i+1}] ${c.source} · ${c.date} · ${c.section_title}</span>`),
         ].join('');
       } catch (err) {
-        statEl.textContent = '✗ ' + err.message;
+        statEl.textContent = `✗ ${cfg.label}: ` + err.message;
         ansEl.textContent  = '';
       } finally { btn.disabled = false; }
     }

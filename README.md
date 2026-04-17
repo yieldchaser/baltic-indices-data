@@ -31,7 +31,7 @@ The repository now maintains itself through six GitHub Actions workflows:
 
 All six workflows are **idempotent** — safe to re-run at any time. The data-update jobs keep the dashboard fresh, `report_ingest.yml` keeps the source archive fresh, and the knowledge jobs keep the research corpus fresh. Each workflow pulls the latest remote state before writing to reduce push conflicts.
 
-The dashboard itself still fetches everything client-side at page load — no backend, no browser-side secrets. Knowledge automation uses server-side secrets only (`GEMINI_API_KEY` plus optional `OLLAMA_BASE_URL` / `OLLAMA_API_KEY` / `OLLAMA_MODEL` fallback settings).
+The dashboard still fetches everything client-side at page load with no backend. The Q&A panel uses a user-provided browser key (Gemini or Groq) stored in localStorage. Server workflows use repo secrets (`GEMINI_API_KEY`, optional `OLLAMA_BASE_URL` / `OLLAMA_API_KEY` / `OLLAMA_MODEL`, and optional `NIM_API_KEY` / `NIM_MODEL` / `NIM_BASE_URL`) for automated enrichment and brief generation.
 
 ---
 
@@ -703,5 +703,6 @@ pdfplumber · beautifulsoup4 · lxml · google-generativeai · tiktoken · pytho
 - The FFA term structure chart is only as fresh as the last `bdry_holdings.csv` / `bwet_holdings.csv` commit — check the commit timestamp to confirm
 - `Shipping_Main.xlsm` is an offline Excel workbook for ad-hoc analysis consuming the same CSV data
 - Capesize went briefly negative in 2020; the yearly Range % uses `(max−min)/avg` rather than `(max−min)/min` to avoid nonsensical outputs in such years
-- `GEMINI_API_KEY` is primary for knowledge-workflow enrichment; `OLLAMA_BASE_URL` / `OLLAMA_API_KEY` / `OLLAMA_MODEL` can be set for automatic fallback. The dashboard does not expose or require any LLM secret
+- Server-side provider chain defaults to `ollama,gemini,nim`. Configure `GEMINI_API_KEY`, `OLLAMA_BASE_URL`, `OLLAMA_MODEL`, optional `OLLAMA_API_KEY`, `NIM_API_KEY`, `NIM_MODEL`, and optional `NIM_BASE_URL` for automated workflows.
+- Browser Q&A supports Gemini and Groq with per-user keys stored locally in the browser (`localStorage`), plus an editable model field for each provider.
 - Knowledge processing now compiles `breakwave`, `baltic`, `breakwave_insights`, `hellenic`, and `books`.

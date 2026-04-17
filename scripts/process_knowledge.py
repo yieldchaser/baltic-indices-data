@@ -36,6 +36,9 @@ if OLLAMA_BASE_URL and not OLLAMA_BASE_URL.endswith("/api"):
         OLLAMA_BASE_URL = OLLAMA_BASE_URL[:-3] + "/api"
     else:
         OLLAMA_BASE_URL = OLLAMA_BASE_URL + "/api"
+NIM_API_KEY = os.environ.get("NIM_API_KEY", "").strip()
+NIM_MODEL = os.environ.get("NIM_MODEL", "").strip()
+NIM_BASE_URL = (os.environ.get("NIM_BASE_URL") or "https://integrate.api.nvidia.com/v1").strip().rstrip("/")
 TOKENIZER = tiktoken.get_encoding("cl100k_base")
 
 if GEMINI_KEY and genai is not None:
@@ -84,6 +87,10 @@ OLLAMA_MIN_INTERVAL_SEC = float(os.environ.get("OLLAMA_MIN_INTERVAL_SEC", "2.5")
 OLLAMA_MAX_RETRIES = int(os.environ.get("OLLAMA_MAX_RETRIES", "6"))
 OLLAMA_BACKOFF_BASE_SEC = float(os.environ.get("OLLAMA_BACKOFF_BASE_SEC", "3.0"))
 OLLAMA_MAX_BACKOFF_SEC = float(os.environ.get("OLLAMA_MAX_BACKOFF_SEC", "60.0"))
+NIM_MIN_INTERVAL_SEC = float(os.environ.get("NIM_MIN_INTERVAL_SEC", "2.5"))
+NIM_MAX_RETRIES = int(os.environ.get("NIM_MAX_RETRIES", "6"))
+NIM_BACKOFF_BASE_SEC = float(os.environ.get("NIM_BACKOFF_BASE_SEC", "3.0"))
+NIM_MAX_BACKOFF_SEC = float(os.environ.get("NIM_MAX_BACKOFF_SEC", "60.0"))
 MANIFEST_FLUSH_EVERY = int(os.environ.get("MANIFEST_FLUSH_EVERY", "200"))
 LINKED_IMAGE_OCR_CHAR_LIMIT = int(os.environ.get("LINKED_IMAGE_OCR_CHAR_LIMIT", "5000"))
 MIN_IMAGE_OCR_PIXELS = int(os.environ.get("MIN_IMAGE_OCR_PIXELS", "150000"))
@@ -98,13 +105,14 @@ LINKED_ASSET_FIELD_NAMES = [
 ]
 LLM_PROVIDER_ORDER = [
     provider
-    for provider in [part.strip().lower() for part in os.environ.get("LLM_PROVIDER_ORDER", "gemini,ollama").split(",")]
-    if provider in {"gemini", "ollama"}
+    for provider in [part.strip().lower() for part in os.environ.get("LLM_PROVIDER_ORDER", "ollama,gemini,nim").split(",")]
+    if provider in {"gemini", "ollama", "nim"}
 ]
 if not LLM_PROVIDER_ORDER:
-    LLM_PROVIDER_ORDER = ["gemini", "ollama"]
+    LLM_PROVIDER_ORDER = ["ollama", "gemini", "nim"]
 _last_gemini_call_ts = 0.0
 _last_ollama_call_ts = 0.0
+_last_nim_call_ts = 0.0
 LLM_STATS = {
     "gemini_ok": 0,
     "gemini_429": 0,
@@ -112,6 +120,9 @@ LLM_STATS = {
     "ollama_ok": 0,
     "ollama_429": 0,
     "ollama_error": 0,
+    "nim_ok": 0,
+    "nim_429": 0,
+    "nim_error": 0,
     "heuristic_used": 0,
 }
 
@@ -1212,8 +1223,12 @@ def ollama_available() -> bool:
     return bool(OLLAMA_BASE_URL and OLLAMA_MODEL)
 
 
+def nim_available() -> bool:
+    return bool(NIM_API_KEY and NIM_MODEL and NIM_BASE_URL)
+
+
 def llm_available() -> bool:
-    return GEMINI is not None or ollama_available()
+    return GEMINI is not None or ollama_available() or nim_available()
 
 
 def _ollama_sleep_interval():
@@ -1305,12 +1320,105 @@ def call_ollama(prompt: str, retries: int | None = None) -> str | None:
                 return None
 
 
+def _nim_sleep_interval():
+    global _last_nim_call_ts
+    now = time.monotonic()
+    elapsed = now - _last_nim_call_ts
+    wait_for = NIM_MIN_INTERVAL_SEC - elapsed
+    if wait_for > 0:
+        time.sleep(wait_for)
+
+
+def _call_nim_once(prompt: str) -> str | None:
+    if not nim_available():
+        return None
+    payload = {
+        "model": NIM_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.2,
+    }
+    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Authorization": f"Bearer {NIM_API_KEY}",
+    }
+
+    req = urllib_request.Request(
+        f"{NIM_BASE_URL}/chat/completions",
+        data=body,
+        headers=headers,
+        method="POST",
+    )
+    try:
+        with urllib_request.urlopen(req, timeout=90) as response:
+            raw = response.read().decode("utf-8", errors="replace")
+    except urllib_error.HTTPError as exc:
+        retry_after = exc.headers.get("Retry-After") if exc.headers else None
+        err_body = exc.read().decode("utf-8", errors="replace")
+        details = err_body or str(exc)
+        if retry_after:
+            details = f"{details} retry_after {retry_after}"
+        raise RuntimeError(f"NIM HTTP {exc.code}: {details}") from exc
+    except urllib_error.URLError as exc:
+        raise RuntimeError(f"NIM connection error: {exc}") from exc
+
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"NIM returned non-JSON payload: {raw[:200]}") from exc
+
+    choices = data.get("choices") or []
+    if not choices:
+        return None
+    msg = choices[0].get("message") or {}
+    text = norm_space(msg.get("content"))
+    return text or None
+
+
+def call_nim(prompt: str, retries: int | None = None) -> str | None:
+    if not nim_available():
+        return None
+    retries = retries or NIM_MAX_RETRIES
+    global _last_nim_call_ts
+    for attempt in range(retries):
+        try:
+            _nim_sleep_interval()
+            text = _call_nim_once(prompt)
+            _last_nim_call_ts = time.monotonic()
+            if text:
+                LLM_STATS["nim_ok"] += 1
+            return text
+        except Exception as exc:
+            _last_nim_call_ts = time.monotonic()
+            exc_text = str(exc)
+            if _is_rate_limit_error(exc_text):
+                LLM_STATS["nim_429"] += 1
+            else:
+                LLM_STATS["nim_error"] += 1
+            if attempt < retries - 1:
+                retry_after = _parse_retry_after(exc_text)
+                if retry_after is not None:
+                    delay = retry_after
+                elif _is_rate_limit_error(exc_text):
+                    delay = NIM_BACKOFF_BASE_SEC * (2 ** attempt)
+                else:
+                    delay = NIM_BACKOFF_BASE_SEC * (attempt + 1)
+                delay = min(delay, NIM_MAX_BACKOFF_SEC)
+                delay += random.uniform(0.1, 0.9)
+                time.sleep(delay)
+            else:
+                return None
+
+
 def call_llm(prompt: str) -> str | None:
     for provider in LLM_PROVIDER_ORDER:
         if provider == "gemini":
             text = call_gemini(prompt)
         elif provider == "ollama":
             text = call_ollama(prompt)
+        elif provider == "nim":
+            text = call_nim(prompt)
         else:
             continue
         if text:
@@ -3143,6 +3251,9 @@ def main():
                     f"ollama_ok={LLM_STATS['ollama_ok']}",
                     f"ollama_429={LLM_STATS['ollama_429']}",
                     f"ollama_error={LLM_STATS['ollama_error']}",
+                    f"nim_ok={LLM_STATS['nim_ok']}",
+                    f"nim_429={LLM_STATS['nim_429']}",
+                    f"nim_error={LLM_STATS['nim_error']}",
                     f"heuristic_used={LLM_STATS['heuristic_used']}",
                 ]
             )

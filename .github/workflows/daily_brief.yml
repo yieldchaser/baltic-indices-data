@@ -48,6 +48,25 @@ jobs:
         if: steps.check.outputs.skip == 'false'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OLLAMA_BASE_URL: ${{ secrets.OLLAMA_BASE_URL }}
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_MODEL: ${{ secrets.OLLAMA_MODEL }}
+          NIM_API_KEY: ${{ secrets.NIM_API_KEY }}
+          NIM_BASE_URL: ${{ secrets.NIM_BASE_URL }}
+          NIM_MODEL: ${{ secrets.NIM_MODEL }}
+          LLM_PROVIDER_ORDER: "ollama,gemini,nim"
+          GEMINI_MIN_INTERVAL_SEC: "1.5"
+          GEMINI_MAX_RETRIES: "3"
+          GEMINI_BACKOFF_BASE_SEC: "2.0"
+          GEMINI_MAX_BACKOFF_SEC: "20.0"
+          OLLAMA_MIN_INTERVAL_SEC: "1.5"
+          OLLAMA_MAX_RETRIES: "3"
+          OLLAMA_BACKOFF_BASE_SEC: "1.5"
+          OLLAMA_MAX_BACKOFF_SEC: "15.0"
+          NIM_MIN_INTERVAL_SEC: "1.5"
+          NIM_MAX_RETRIES: "3"
+          NIM_BACKOFF_BASE_SEC: "1.5"
+          NIM_MAX_BACKOFF_SEC: "15.0"
         shell: bash
         run: |
           set -o pipefail
