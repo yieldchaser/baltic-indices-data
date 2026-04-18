@@ -5037,7 +5037,8 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       <th data-tooltip="Year-over-Year percentage change in the Average Value compared to the previous calendar year.">YoY %</th>
       <th data-tooltip="The absolute lowest daily close recorded during this year.">Min</th>
       <th data-tooltip="The absolute highest daily close recorded during this year.">Max</th>
-      <th data-tooltip="The percentage growth from the yearly absolute bottom to the top. Formula: (Max - Min) / Min. If the low is \u2264 0, falls back to using Average denominator (*).">Range %</th>
+      <th data-tooltip="Annual price dispersion: (High \u2212 Low) \u00F7 Year Average. Measures how wildly rates moved relative to their baseline \u2014 not a directional return.">Volatility %</th>
+      <th data-tooltip="If someone bought at the yearly low and sold at the yearly high, this is the maximum possible gain. Purely theoretical \u2014 ignores timing.">Trough\u2192Peak %</th>
     </tr></thead><tbody>`;
 
       for (let i = 0; i < years.length; i++) {
@@ -5059,13 +5060,14 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           yoyCls = yoyPct >= 0 ? 'val-green' : 'val-red';
         }
 
-        let rangePct = '—';
-        if (mn != null && mx != null) {
-          if (mn > 0) {
-            rangePct = ((mx - mn) / mn * 100).toFixed(1) + '%';
-          } else if (avg != null && avg !== 0) {
-            rangePct = ((mx - mn) / Math.abs(avg) * 100).toFixed(1) + '%*';
-          }
+        let volPct = '—';
+        if (mn != null && mx != null && avg != null && avg !== 0) {
+          volPct = ((mx - mn) / Math.abs(avg) * 100).toFixed(1) + '%';
+        }
+
+        let tpPct = '—';
+        if (mn != null && mx != null && mn > 0) {
+          tpPct = ((mx - mn) / mn * 100).toFixed(1) + '%';
         }
 
         html += `<tr>
@@ -5074,7 +5076,8 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       <td class="${yoyCls}">${yoyStr}</td>
       <td>${fmt(mn, 0)}</td>
       <td>${fmt(mx, 0)}</td>
-      <td>${rangePct}</td>
+      <td>${volPct}</td>
+      <td class="val-green">${tpPct}</td>
     </tr>`;
       }
 
@@ -5088,7 +5091,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     function downloadYearlyPerf(productKey) {
       if (!_yearlyPerfData) return;
       const { years, yearlyAvgs, yearlyMins, yearlyMaxs } = _yearlyPerfData;
-      const headers = ['Year', 'Avg Value', 'YoY %', 'Min', 'Max', 'Range %'];
+      const headers = ['Year', 'Avg Value', 'YoY %', 'Min', 'Max', 'Volatility %', 'Trough→Peak %'];
       const rows = [];
       for (let i = 0; i < years.length; i++) {
         const y = years[i];
@@ -5103,8 +5106,15 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           const yoy = ((avg - priorAvg) / priorAvg) * 100;
           yoyStr = yoy.toFixed(2) + '%';
         }
-        const rangePct = mn != null && avg != null && avg !== 0 ? ((mx - mn) / avg * 100).toFixed(2) + '%' : '';
-        rows.push([y, avg != null ? avg.toFixed(2) : '', yoyStr, mn != null ? mn.toFixed(2) : '', mx != null ? mx.toFixed(2) : '', rangePct]);
+        let volPct = '';
+        if (mn != null && mx != null && avg != null && avg !== 0) {
+          volPct = ((mx - mn) / Math.abs(avg) * 100).toFixed(2) + '%';
+        }
+        let tpPct = '';
+        if (mn != null && mx != null && mn > 0) {
+          tpPct = ((mx - mn) / mn * 100).toFixed(2) + '%';
+        }
+        rows.push([y, avg != null ? avg.toFixed(2) : '', yoyStr, mn != null ? mn.toFixed(2) : '', mx != null ? mx.toFixed(2) : '', volPct, tpPct]);
       }
       downloadCSV(`yearly_perf_${productKey}.csv`, headers, rows);
     }
@@ -12174,7 +12184,8 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         'Current vs 10Y Avg': 'Percent difference between today\'s reading and the trailing 10-year average.',
         'Last 5 Years Drawdown (%)': 'The depth of drops from 52-week peaks charted out historically.',
         'Historical Volatility (Annualized)': 'Annualized standard deviation of daily log returns, grouping price swings into volatility regimes.',
-        'Range %': 'The percentage growth from the absolute bottom to the top of the year: (High - Low) / Low. Falls back to Average denominator (*) if standard math breaks on negative numbers.',
+        'Volatility %': 'Annual price dispersion: (High \u2212 Low) \u00F7 Year Average. Measures how wildly rates moved relative to their baseline \u2014 not a directional return.',
+        'Trough\u2192Peak %': 'If someone bought at the yearly low and sold at the yearly high, this is the maximum possible gain. Purely theoretical \u2014 ignores timing.',
         'Total Futures': 'Aggregate notional value of all forward freight agreements currently held.',
         'Collateral Cash': 'Treasury bills or cash equivalents held to margin the futures position.',
         'Futures / AUM': 'Notional futures exposure relative to total net assets. Often drifts >100% via leverage.',
@@ -12260,7 +12271,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         
         let description = ttMap[text];
         if (!description) {
-           if (text.includes('Range %')) description = ttMap['Range %'];
+           if (text.includes('Volatility %')) description = ttMap['Volatility %'];
            else return;
         }
         
