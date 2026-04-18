@@ -3338,10 +3338,13 @@
           </div>
           <div class="qa-scope-row">
             <span class="qa-scope-lbl">Scope:</span>
-            <label class="qa-scope-item"><input type="checkbox" id="qaSrcBreakwave" checked> Breakwave</label>
-            <label class="qa-scope-item"><input type="checkbox" id="qaSrcBaltic" checked> Baltic</label>
-            <label class="qa-scope-item"><input type="checkbox" id="qaSrcHellenic"> Hellenic</label>
-            <label class="qa-scope-item"><input type="checkbox" id="qaSrcWikiOnly"> Wiki only (fast)</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcBreakwave" checked onchange="onQAScopeChange(false)"> Breakwave</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcBaltic" checked onchange="onQAScopeChange(false)"> Baltic</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcHellenic" onchange="onQAScopeChange(false)"> Hellenic</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcIronOre" onchange="onQAScopeChange(false)"> Iron Ore</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcShipbuilding" onchange="onQAScopeChange(false)"> Shipbuilding</label>
+            <label class="qa-scope-item"><input type="checkbox" id="qaSrcBooks" onchange="onQAScopeChange(false)"> Books</label>
+            <label class="qa-scope-item" style="border-left:1px solid var(--border);padding-left:8px;margin-left:4px;"><input type="checkbox" id="qaSrcWikiOnly" onchange="onQAScopeChange(true)"> Wiki only (fast)</label>
           </div>
           <div class="qa-input-row">
             <textarea id="qaQuery" class="qa-textarea" placeholder="e.g. What is the current Capesize supply outlook through Q3 2026? What are analysts saying about iron ore demand?" onkeydown="if(event.ctrlKey&&event.key==='Enter'){event.preventDefault();runQAQuery()}"></textarea>
@@ -10389,43 +10392,30 @@
     };
 
     const QA_CHUNK_FILES = {
-      breakwave: [
-        'knowledge/chunks/breakwave_drybulk.jsonl',
-        'knowledge/chunks/breakwave_drybulk_2026.jsonl',
-        'knowledge/chunks/breakwave_tankers.jsonl',
-        'knowledge/chunks/breakwave_insights_insights_2026.jsonl',
-        'knowledge/chunks/breakwave_insights_insights_2025.jsonl',
-        'knowledge/chunks/breakwave_insights_insights_2024.jsonl',
-        'knowledge/chunks/breakwave_insights_insights_2023.jsonl',
-      ],
-      baltic: ['knowledge/chunks/baltic_dry.jsonl', 'knowledge/chunks/baltic_tanker.jsonl'],
-      hellenic: [
-        'knowledge/chunks/hellenic_dry_charter_2026.jsonl',
-        'knowledge/chunks/hellenic_dry_charter_2025.jsonl',
-        'knowledge/chunks/hellenic_dry_charter_2024.jsonl',
-        'knowledge/chunks/hellenic_dry_charter_2023.jsonl',
-        'knowledge/chunks/hellenic_tanker_charter_2026.jsonl',
-        'knowledge/chunks/hellenic_tanker_charter_2025.jsonl',
-        'knowledge/chunks/hellenic_tanker_charter_2024.jsonl',
-        'knowledge/chunks/hellenic_tanker_charter_2023.jsonl',
-        'knowledge/chunks/hellenic_vessel_valuations_2026.jsonl',
-        'knowledge/chunks/hellenic_vessel_valuations_2025.jsonl',
-        'knowledge/chunks/hellenic_vessel_valuations_2024.jsonl',
-        'knowledge/chunks/hellenic_vessel_valuations_2023.jsonl',
-      ],
-      ironOre: [
-        'knowledge/chunks/hellenic_iron_ore_2026.jsonl',
-        'knowledge/chunks/hellenic_iron_ore_2025.jsonl',
-        'knowledge/chunks/hellenic_iron_ore_2024.jsonl',
-        'knowledge/chunks/hellenic_iron_ore_2023.jsonl',
-      ],
-      shipbuilding: [
-        'knowledge/chunks/hellenic_shipbuilding_2026.jsonl',
-        'knowledge/chunks/hellenic_shipbuilding_2025.jsonl',
-        'knowledge/chunks/hellenic_demolition_2026.jsonl',
-        'knowledge/chunks/hellenic_demolition_2025.jsonl',
-      ],
-      books: ['knowledge/chunks/books.jsonl'],
+      breakwave: {
+        recent: ['knowledge/chunks/breakwave_drybulk_2026.jsonl', 'knowledge/chunks/breakwave_insights_insights_2026.jsonl'],
+        historical: ['knowledge/chunks/breakwave_drybulk.jsonl', 'knowledge/chunks/breakwave_tankers.jsonl', 'knowledge/chunks/breakwave_insights_insights_2025.jsonl', 'knowledge/chunks/breakwave_insights_insights_2024.jsonl', 'knowledge/chunks/breakwave_insights_insights_2023.jsonl'],
+      },
+      baltic: {
+        recent: ['knowledge/chunks/baltic_dry_2026.jsonl', 'knowledge/chunks/baltic_tanker_2026.jsonl'],
+        historical: ['knowledge/chunks/baltic_dry.jsonl', 'knowledge/chunks/baltic_tanker.jsonl'],
+      },
+      hellenic: {
+        recent: ['knowledge/chunks/hellenic_dry_charter_2026.jsonl', 'knowledge/chunks/hellenic_tanker_charter_2026.jsonl', 'knowledge/chunks/hellenic_vessel_valuations_2026.jsonl'],
+        historical: ['knowledge/chunks/hellenic_dry_charter_2025.jsonl', 'knowledge/chunks/hellenic_dry_charter_2024.jsonl', 'knowledge/chunks/hellenic_dry_charter_2023.jsonl', 'knowledge/chunks/hellenic_tanker_charter_2025.jsonl', 'knowledge/chunks/hellenic_tanker_charter_2024.jsonl', 'knowledge/chunks/hellenic_tanker_charter_2023.jsonl', 'knowledge/chunks/hellenic_vessel_valuations_2025.jsonl', 'knowledge/chunks/hellenic_vessel_valuations_2024.jsonl', 'knowledge/chunks/hellenic_vessel_valuations_2023.jsonl'],
+      },
+      ironOre: {
+        recent: ['knowledge/chunks/hellenic_iron_ore_2026.jsonl'],
+        historical: ['knowledge/chunks/hellenic_iron_ore_2025.jsonl', 'knowledge/chunks/hellenic_iron_ore_2024.jsonl', 'knowledge/chunks/hellenic_iron_ore_2023.jsonl'],
+      },
+      shipbuilding: {
+        recent: ['knowledge/chunks/hellenic_shipbuilding_2026.jsonl', 'knowledge/chunks/hellenic_demolition_2026.jsonl'],
+        historical: ['knowledge/chunks/hellenic_shipbuilding_2025.jsonl', 'knowledge/chunks/hellenic_demolition_2025.jsonl'],
+      },
+      books: {
+        recent: ['knowledge/chunks/books.jsonl'],
+        historical: [],
+      },
     };
 
     const QA_WIKI_FILES = [
@@ -11121,11 +11111,18 @@
       const brief = INTEL.briefData;
       if (!brief?.generation) return;
       const gen = brief.generation;
-      // If brief was generated by Ollama, use the same model as hint
-      if (gen.provider_used === 'ollama' && gen.model) {
-        const modelEl = document.getElementById('qaModel');
-        if (modelEl && !modelEl.value && !localStorage.getItem('qa_model_ollama')) {
-          modelEl.value = gen.model;
+      if (gen.provider_used === 'ollama') {
+        if (gen.model && !localStorage.getItem('qa_model_ollama')) {
+          localStorage.setItem('qa_model_ollama', gen.model);
+        }
+        if (!localStorage.getItem('qa_baseurl_ollama')) {
+          localStorage.setItem('qa_baseurl_ollama', 'http://localhost:11434/api');
+        }
+        if (!localStorage.getItem('qa_provider')) {
+          localStorage.setItem('qa_provider', 'ollama');
+          const provEl = document.getElementById('qaProvider');
+          if (provEl) provEl.value = 'ollama';
+          _syncQAProviderUI();
         }
       }
     }
@@ -11185,6 +11182,23 @@
       localStorage.setItem('qa_provider', provider);
       const statusEl = document.getElementById('qaKeyStatus');
       if (statusEl) statusEl.textContent = 'Saved';
+    }
+
+    function onQAScopeChange(isWikiOnly) {
+      const sourceIds = ['qaSrcBreakwave','qaSrcBaltic','qaSrcHellenic','qaSrcIronOre','qaSrcShipbuilding','qaSrcBooks'];
+      const wikiEl = document.getElementById('qaSrcWikiOnly');
+      if (isWikiOnly && wikiEl && wikiEl.checked) {
+        sourceIds.forEach(id => {
+          const el = document.getElementById(id);
+          if (el) { el.checked = false; el.disabled = true; el.parentElement.style.opacity = '0.4'; }
+        });
+      } else {
+        if (wikiEl) wikiEl.checked = false;
+        sourceIds.forEach(id => {
+          const el = document.getElementById(id);
+          if (el) { el.disabled = false; el.parentElement.style.opacity = '1'; }
+        });
+      }
     }
 
     function saveQAKey() {
@@ -11303,6 +11317,15 @@
       return data?.candidates?.[0]?.content?.parts?.[0]?.text || '(no response)';
     }
 
+    function _buildFallbackOrder(primary) {
+      const all = ['groq', 'gemini', 'ollama', 'nim'];
+      const order = [primary, ...all.filter(p => p !== primary)];
+      return order.filter(p => {
+        const cfg = _providerConfig(p);
+        return (_loadProviderKey(p) || cfg.keyOptional) && (_loadProviderModel(p) || cfg.defaultModel);
+      });
+    }
+
     async function runQAQuery() {
       const btn    = document.getElementById('qaSubmitBtn');
       const panel  = document.getElementById('qaResultPanel');
@@ -11347,54 +11370,99 @@
         const avgWLen    = wikiItems.reduce((s, w) => s + _tokenize(w.text).length, 0) / (wikiItems.length || 1);
         const scoredWiki = _scoreItems(wikiItems, terms, w => w.text, avgWLen).slice(0, 3);
 
-        // Step 2 — Chunks (selective per scope)
+        // Step 2 — Chunks (progressive: recent first, expand if needed)
         let topChunks = [];
         if (!wikiOnly) {
-          statEl.textContent = 'Loading retrieval chunks...';
-          const urls = [
-            ...(document.getElementById('qaSrcBreakwave')?.checked ? QA_CHUNK_FILES.breakwave : []),
-            ...(document.getElementById('qaSrcBaltic')?.checked    ? QA_CHUNK_FILES.baltic    : []),
-            ...(document.getElementById('qaSrcHellenic')?.checked  ? QA_CHUNK_FILES.hellenic  : []),
-            ...(document.getElementById('qaSrcIronOre')?.checked   ? QA_CHUNK_FILES.ironOre   : []),
-            ...(document.getElementById('qaSrcShipbuilding')?.checked ? QA_CHUNK_FILES.shipbuilding : []),
-            ...(document.getElementById('qaSrcBooks')?.checked     ? QA_CHUNK_FILES.books     : []),
+          const _isChecked = id => document.getElementById(id)?.checked;
+          const _getUrls = tier => [
+            ...(_isChecked('qaSrcBreakwave') ? (QA_CHUNK_FILES.breakwave[tier] || []) : []),
+            ...(_isChecked('qaSrcBaltic')    ? (QA_CHUNK_FILES.baltic[tier]    || []) : []),
+            ...(_isChecked('qaSrcHellenic')  ? (QA_CHUNK_FILES.hellenic[tier]  || []) : []),
+            ...(_isChecked('qaSrcIronOre')   ? (QA_CHUNK_FILES.ironOre[tier]   || []) : []),
+            ...(_isChecked('qaSrcShipbuilding') ? (QA_CHUNK_FILES.shipbuilding[tier] || []) : []),
+            ...(_isChecked('qaSrcBooks')     ? (QA_CHUNK_FILES.books[tier]     || []) : []),
           ];
-          const allChunks  = (await Promise.all(urls.map(_loadChunks))).flat();
-          const avgCLen    = allChunks.reduce((s, c) => s + _tokenize(c.text).length, 0) / (allChunks.length || 1);
+          statEl.textContent = 'Loading recent data...';
+          const recentUrls = _getUrls('recent');
+          let allChunks = (await Promise.all(recentUrls.map(_loadChunks))).flat();
+          let avgCLen = allChunks.reduce((s, c) => s + _tokenize(c.text).length, 0) / (allChunks.length || 1);
           topChunks = _scoreItems(allChunks, terms, c => c.text + ' ' + (c.keywords || []).join(' '), avgCLen)
-            .slice(0, 7).map(x => x.item);
+            .slice(0, 10).map(x => x.item);
+          if (topChunks.length < 5) {
+            statEl.textContent = 'Expanding to historical data...';
+            const histUrls = _getUrls('historical');
+            const histChunks = (await Promise.all(histUrls.map(_loadChunks))).flat();
+            allChunks = [...allChunks, ...histChunks];
+            avgCLen = allChunks.reduce((s, c) => s + _tokenize(c.text).length, 0) / (allChunks.length || 1);
+            topChunks = _scoreItems(allChunks, terms, c => c.text + ' ' + (c.keywords || []).join(' '), avgCLen)
+              .slice(0, 10).map(x => x.item);
+          }
         }
 
-        const ctx = [
-          ...scoredWiki.map((w, i) => `[WIKI-${i+1}] ${w.item.label}\n${w.item.text.slice(0, 1200)}`),
-          ...topChunks.map((c, i)  => `[${i+1}] ${c.source}/${c.category} | ${c.date} | ${c.section_title}\n${c.text}`),
+        // Unified DOC numbering: wikis first, then chunks (full text, no truncation)
+        const allDocs = [
+          ...scoredWiki.map(w => ({ type: 'wiki', label: w.item.label, text: w.item.text })),
+          ...topChunks.map(c => ({ type: 'chunk', label: c.source + ' · ' + c.date + ' · ' + c.section_title, text: c.text })),
         ];
+        const ctx = allDocs.map((d, i) => '[DOC-' + (i+1) + '] ' + d.label + '\n' + d.text);
 
         if (!ctx.length) {
           ansEl.textContent = 'No relevant context found. Try broadening your source selection.';
           btn.disabled = false; return;
         }
 
-        statEl.textContent = `Asking ${cfg.label} (${ctx.length} passages)...`;
+        statEl.textContent = 'Asking ' + cfg.label + ' (' + ctx.length + ' passages)...';
 
-        const prompt = `You are a senior shipping freight market analyst. Answer using ONLY the provided context.
+        const prompt = 'You are a senior shipping freight market analyst.\n' +
+          'Answer the question using ONLY the provided context passages.\n\n' +
+          'STRICT RULES:\n' +
+          '1. Cite every factual claim using [DOC-N] tags matching the passages below.\n' +
+          '2. If the specific report, date, or data the user asks about is NOT present in the passages, say: "This information is not available in my current context."\n' +
+          '3. Do NOT invent data, dates, or statistics. Do NOT rephrase generic content as if it were a specific report.\n' +
+          '4. Be direct, concise, and trader-focused. Under 400 words.\n\n' +
+          'Question: ' + query + '\n\n' +
+          'Context Passages:\n' + ctx.join('\n\n---\n\n');
 
-Question: ${query}
-
-${ctx.join('\n\n---\n\n')}
-
-Rules: cite every claim [WIKI-N] or [N]. Be direct and trader-focused. Under 400 words.`;
-
-        const answer = await _runProviderLLM(provider, apiKey, model, prompt);
-        statEl.textContent = `✓ ${cfg.label} · ${ctx.length} passages (${scoredWiki.length} wiki · ${topChunks.length} chunks)`;
+        // Try primary provider, fall back on rate limits
+        const fallbackOrder = _buildFallbackOrder(provider);
+        let answer = null;
+        let usedProvider = provider;
+        for (const p of fallbackOrder) {
+          const pCfg = _providerConfig(p);
+          const pKey = p === provider ? apiKey : (_loadProviderKey(p) || '');
+          const pModel = p === provider ? model : (_loadProviderModel(p) || pCfg.defaultModel);
+          if (!pKey && !pCfg.keyOptional) continue;
+          if (!pModel) continue;
+          try {
+            statEl.textContent = 'Asking ' + pCfg.label + ' (' + ctx.length + ' passages)...';
+            answer = await _runProviderLLM(p, pKey, pModel, prompt);
+            usedProvider = p;
+            break;
+          } catch (err) {
+            const isRateLimit = /429|rate.limit|quota|too.many/i.test(err.message);
+            if (isRateLimit && fallbackOrder.indexOf(p) < fallbackOrder.length - 1) {
+              statEl.textContent = pCfg.label + ' rate limited — trying next provider...';
+              continue;
+            }
+            throw err;
+          }
+        }
+        if (!answer) throw new Error('All providers failed or unavailable.');
+        const usedCfg = _providerConfig(usedProvider);
+        statEl.textContent = '✓ ' + usedCfg.label + ' · ' + ctx.length + ' passages (' + scoredWiki.length + ' wiki · ' + topChunks.length + ' chunks)';
         ansEl.textContent  = answer;
-        citEl.innerHTML    = [
-          ...scoredWiki.map((w, i) => `<span class="qa-cit" title="${w.item.label}">[WIKI-${i+1}] ${w.item.label}</span>`),
-          ...topChunks.map((c, i)  => `<span class="qa-cit">[${i+1}] ${c.source} · ${c.date} · ${c.section_title}</span>`),
-        ].join('');
+        citEl.innerHTML    = allDocs.map((d, i) =>
+          '<span class="qa-cit" title="' + d.label.replace(/"/g, '&quot;') + '">[DOC-' + (i+1) + '] ' + d.label + '</span>'
+        ).join('');
       } catch (err) {
-        statEl.textContent = `✗ ${cfg.label}: ` + err.message;
-        ansEl.textContent  = '';
+        const msg = err.message || 'Unknown error';
+        let hint = '';
+        if (/401|403|unauthorized/i.test(msg)) hint = 'Check your API key in the provider settings above.';
+        else if (/429|rate.limit/i.test(msg)) hint = 'All providers rate limited. Wait a moment and try again.';
+        else if (/fetch|network|CORS|Failed to fetch/i.test(msg)) hint = 'Network error. Check your internet or Ollama server status.';
+        else if (/timeout/i.test(msg)) hint = 'Request timed out. Try a shorter question or use Wiki-only mode.';
+        statEl.innerHTML = '✗ ' + cfg.label + ': ' + msg + (hint ? '<br><small style="color:var(--yellow)">' + hint + '</small>' : '');
+        ansEl.textContent = '';
       } finally { btn.disabled = false; }
     }
 
