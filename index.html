@@ -11065,10 +11065,10 @@
     // Q&A Assistant
 
     const QA_PROVIDER_CONFIG = {
-      gemini: { label: 'Gemini', keyStorage: 'qa_key_gemini', modelStorage: 'qa_model_gemini', defaultModel: 'gemini-1.5-flash', keyLabel: 'Gemini Key', keyPlaceholder: 'AIza... (stored only in localStorage)', hasBaseUrl: false },
-      groq: { label: 'Groq', keyStorage: 'qa_key_groq', modelStorage: 'qa_model_groq', defaultModel: 'llama-3.3-70b-versatile', keyLabel: 'Groq Key', keyPlaceholder: 'gsk_... (stored only in localStorage)', hasBaseUrl: false },
-      ollama: { label: 'Ollama', keyStorage: 'qa_key_ollama', modelStorage: 'qa_model_ollama', defaultModel: '', keyLabel: 'Ollama Key (optional)', keyPlaceholder: 'Bearer token or leave blank', hasBaseUrl: true, baseUrlStorage: 'qa_baseurl_ollama', defaultBaseUrl: 'http://localhost:11434/api', keyOptional: true },
-      nim: { label: 'NIM (NVIDIA)', keyStorage: 'qa_key_nim', modelStorage: 'qa_model_nim', defaultModel: '', keyLabel: 'NIM Key', keyPlaceholder: 'nvapi-... (stored only in localStorage)', hasBaseUrl: true, baseUrlStorage: 'qa_baseurl_nim', defaultBaseUrl: 'https://integrate.api.nvidia.com/v1', keyOptional: false },
+      gemini: { label: 'Gemini', keyStorage: 'qa_key_gemini', modelStorage: 'qa_model_gemini', defaultModel: 'gemini-2.0-flash', keyLabel: 'Gemini Key', keyPlaceholder: 'AIza... (stored only in localStorage)', hasBaseUrl: false, maxContextTokens: 100000 },
+      groq: { label: 'Groq', keyStorage: 'qa_key_groq', modelStorage: 'qa_model_groq', defaultModel: 'llama-3.3-70b-versatile', keyLabel: 'Groq Key', keyPlaceholder: 'gsk_... (stored only in localStorage)', hasBaseUrl: false, maxContextTokens: 5500 },
+      ollama: { label: 'Ollama (local only)', keyStorage: 'qa_key_ollama', modelStorage: 'qa_model_ollama', defaultModel: '', keyLabel: 'Ollama Key (optional)', keyPlaceholder: 'Bearer token or leave blank', hasBaseUrl: true, baseUrlStorage: 'qa_baseurl_ollama', defaultBaseUrl: 'http://localhost:11434/api', keyOptional: true, maxContextTokens: 8000, localOnly: true },
+      nim: { label: 'NIM (NVIDIA)', keyStorage: 'qa_key_nim', modelStorage: 'qa_model_nim', defaultModel: '', keyLabel: 'NIM Key', keyPlaceholder: 'nvapi-... (stored only in localStorage)', hasBaseUrl: true, baseUrlStorage: 'qa_baseurl_nim', defaultBaseUrl: 'https://integrate.api.nvidia.com/v1', keyOptional: false, maxContextTokens: 8000 },
     };
 
     function _providerConfig(provider) {
@@ -11473,19 +11473,61 @@
           }
         }
 
-        // Unified DOC numbering: wikis first, then chunks (full text, no truncation)
-        const allDocs = [
-          ...scoredWiki.map(w => ({ type: 'wiki', label: w.item.label, text: w.item.text })),
-          ...topChunks.map(c => ({ type: 'chunk', label: c.source + ' · ' + c.date + ' · ' + c.section_title, text: c.text })),
-        ];
+        // Token budget management: estimate tokens and truncate to fit provider limits
+        const _estimateTokens = text => Math.ceil((text || '').length / 3.5);
+        const maxCtxTokens = cfg.maxContextTokens || 8000;
+        const systemPromptTokens = 200; // ~200 tokens for system instructions
+        const responseTokens = 1200;    // reserve for output
+        let tokenBudget = maxCtxTokens - systemPromptTokens - responseTokens;
+
+        // Build docs with smart truncation
+        const allDocs = [];
+        let usedTokens = 0;
+
+        // Wikis first — truncate each to fit a fair share of the budget
+        const wikiTokenBudget = Math.floor(tokenBudget * 0.5); // 50% for wikis
+        const perWikiBudget = Math.floor(wikiTokenBudget / Math.max(scoredWiki.length, 1));
+        for (const w of scoredWiki) {
+          let text = w.item.text;
+          const estTokens = _estimateTokens(text);
+          if (estTokens > perWikiBudget) {
+            // Smart truncate: keep first N chars that fit budget
+            const maxChars = Math.floor(perWikiBudget * 3.5);
+            text = text.slice(0, maxChars) + '\n[... truncated for context limit]';
+          }
+          const docTokens = _estimateTokens(text);
+          allDocs.push({ type: 'wiki', label: w.item.label, text });
+          usedTokens += docTokens;
+        }
+
+        // Chunks — fill remaining budget
+        const chunkBudget = tokenBudget - usedTokens;
+        let chunkTokensUsed = 0;
+        for (const c of topChunks) {
+          const chunkTokens = _estimateTokens(c.text);
+          if (chunkTokensUsed + chunkTokens > chunkBudget) {
+            // Try to fit a truncated version
+            const remaining = chunkBudget - chunkTokensUsed;
+            if (remaining > 100) {
+              const maxChars = Math.floor(remaining * 3.5);
+              allDocs.push({ type: 'chunk', label: c.source + ' · ' + c.date + ' · ' + c.section_title, text: c.text.slice(0, maxChars) + '\n[... truncated]' });
+              chunkTokensUsed += remaining;
+            }
+            break; // No more room
+          }
+          allDocs.push({ type: 'chunk', label: c.source + ' · ' + c.date + ' · ' + c.section_title, text: c.text });
+          chunkTokensUsed += chunkTokens;
+        }
+
         const ctx = allDocs.map((d, i) => '[DOC-' + (i+1) + '] ' + d.label + '\n' + d.text);
+        const totalEstTokens = _estimateTokens(ctx.join('\n\n---\n\n'));
 
         if (!ctx.length) {
           ansEl.textContent = 'No relevant context found. Try broadening your source selection.';
           btn.disabled = false; return;
         }
 
-        statEl.textContent = 'Asking ' + cfg.label + ' (' + ctx.length + ' passages)...';
+        statEl.textContent = 'Asking ' + cfg.label + ' (' + ctx.length + ' passages, ~' + totalEstTokens + ' tokens)...';
 
         const prompt = 'You are a senior shipping freight market analyst.\n' +
           'Answer the question using ONLY the provided context passages.\n\n' +
@@ -11523,7 +11565,7 @@
         }
         if (!answer) throw new Error('All providers failed or unavailable.');
         const usedCfg = _providerConfig(usedProvider);
-        statEl.textContent = '✓ ' + usedCfg.label + ' · ' + ctx.length + ' passages (' + scoredWiki.length + ' wiki · ' + topChunks.length + ' chunks)';
+        statEl.textContent = '✓ ' + usedCfg.label + ' · ' + allDocs.length + ' passages (~' + totalEstTokens + ' tokens) [' + scoredWiki.length + ' wiki · ' + (allDocs.length - scoredWiki.length) + ' chunks]';
         ansEl.textContent  = answer;
         citEl.innerHTML    = allDocs.map((d, i) =>
           '<span class="qa-cit" title="' + d.label.replace(/"/g, '&quot;') + '">[DOC-' + (i+1) + '] ' + d.label + '</span>'
