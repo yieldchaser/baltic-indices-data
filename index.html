@@ -2262,6 +2262,22 @@
       .brief-card-title { font-size: 18px; }
     }
   </style>
+<style>
+
+  .sq-wrap { padding: 1.5rem 0; font-family: inherit; }
+  .sq-label { font-size: 12px; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 12px; }
+  .sq-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .sq-tab { padding: 6px 14px; font-size: 13px; font-weight: 500; border-radius: 999px; border: 0.5px solid var(--border); background: transparent; color: var(--text); cursor: pointer; transition: background 0.15s, border-color 0.15s; }
+  .sq-tab:hover { background: rgba(255,255,255,0.05); }
+  .sq-tab.active { background: rgba(255,255,255,0.05); border-color: var(--accent); }
+  .sq-panel { display: none; flex-wrap: wrap; gap: 8px; }
+  .sq-panel.visible { display: flex; }
+  .sq-q { padding: 8px 14px; font-size: 13px; border-radius: 6px; border: 0.5px solid var(--border); background: transparent; color: var(--text); cursor: pointer; text-align: left; transition: background 0.12s, border-color 0.12s; max-width: 100%; }
+  .sq-q:hover { background: rgba(255,255,255,0.05); border-color: var(--border); }
+  .sq-divider { width: 100%; height: 0.5px; background: var(--border); margin: 16px 0; }
+  .sq-hint { font-size: 12px; color: var(--gray); margin-top: 10px; }
+
+</style>
 </head>
 
 <body>
@@ -3351,16 +3367,75 @@
             <textarea id="qaQuery" class="qa-textarea" placeholder="e.g. What is the current Capesize supply outlook through Q3 2026? What are analysts saying about iron ore demand?" onkeydown="if(event.ctrlKey&&event.key==='Enter'){event.preventDefault();runQAQuery()}"></textarea>
             <button id="qaSubmitBtn" class="qa-submit" onclick="runQAQuery()">Ask</button>
           </div>
-          <div class="qa-suggestions" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;">
-            <span style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.4px;line-height:24px;">Try:</span>
-            <button class="qa-key-btn" style="font-size:11px;padding:3px 10px;" onclick="document.getElementById('qaQuery').value=this.textContent;runQAQuery()">Summarize the latest Breakwave dry bulk report</button>
-            <button class="qa-key-btn" style="font-size:11px;padding:3px 10px;" onclick="document.getElementById('qaQuery').value=this.textContent;runQAQuery()">How do OPEC+ production quotas impact crude tanker demand?</button>
-            <button class="qa-key-btn" style="font-size:11px;padding:3px 10px;" onclick="document.getElementById('qaQuery').value=this.textContent;runQAQuery()">What does the current Z-Score tell us about market cycles?</button>
-            <button class="qa-key-btn" style="font-size:11px;padding:3px 10px;" onclick="document.getElementById('qaQuery').value=this.textContent;runQAQuery()">Are current clean tanker rates sustainable based on refinery margins?</button>
-            <button class="qa-key-btn" style="font-size:11px;padding:3px 10px;" onclick="document.getElementById('qaQuery').value=this.textContent;runQAQuery()">How is China's steel production impacting dry bulk momentum?</button>
-            <button class="qa-key-btn" style="font-size:11px;padding:3px 10px;" onclick="document.getElementById('qaQuery').value=this.textContent;runQAQuery()">Do technical signals align with Breakwave's fundamental outlook?</button>
-            <button class="qa-key-btn" style="font-size:11px;padding:3px 10px;" onclick="document.getElementById('qaQuery').value=this.textContent;runQAQuery()">What is the Capesize vessel supply forecast for this year?</button>
-          </div>
+          <div class="sq-wrap">
+  <p class="sq-label">Suggested questions</p>
+  <div class="sq-tabs" id="tabs">
+    <button class="sq-tab active" data-cat="briefing">Daily briefing</button>
+    <button class="sq-tab" data-cat="signals">Market signals</button>
+    <button class="sq-tab" data-cat="supply">Supply & orderbooks</button>
+    <button class="sq-tab" data-cat="macro">Macro & cargo</button>
+    <button class="sq-tab" data-cat="trade">Trade ideas</button>
+  </div>
+
+  <div class="sq-panel visible" id="panel-briefing">
+    <button class="sq-q" onclick="sq('Summarize the latest Breakwave dry bulk report.')">Summarize the latest Breakwave dry bulk report</button>
+    <button class="sq-q" onclick="sq('Summarize the latest Hellenic Shipping News update on tankers.')">Summarize the latest Hellenic tanker update</button>
+    <button class="sq-q" onclick="sq('What are the most critical risks or warnings flagged across all reports today?')">What are the top risks flagged today?</button>
+    <button class="sq-q" onclick="sq('What is the latest Baltic Exchange commentary on spot market momentum?')">What is the Baltic saying about spot momentum?</button>
+    <button class="sq-q" onclick="sq('Does the latest Breakwave report agree or disagree with the latest Baltic Exchange update?')">Do Breakwave and Baltic agree right now?</button>
+    <button class="sq-q" onclick="sq('What is the most bullish catalyst mentioned for Capesize vessels in the latest reports?')">Most bullish Capesize catalyst this week?</button>
+  </div>
+
+  <div class="sq-panel" id="panel-signals">
+    <button class="sq-q" onclick="sq('What is the current quantitative regime for dry bulk — Accumulation, Expansion, Distribution, or Contraction — and what does it mean?')">What regime is dry bulk in right now?</button>
+    <button class="sq-q" onclick="sq('What is the current quantitative regime for tankers?')">What regime is the tanker market in?</button>
+    <button class="sq-q" onclick="sq('Is the system flagging any Divergence signals right now, where analyst sentiment contradicts the quantitative data?')">Are there any Divergence signals active?</button>
+    <button class="sq-q" onclick="sq('Is there a Bull or Bear Confluence active in dry bulk? Explain what is driving it.')">Is there a Confluence signal in dry bulk?</button>
+    <button class="sq-q" onclick="sq('What does the current Z-Score for Capesize rates suggest about where we are in the market cycle?')">What is the Capesize Z-Score telling us?</button>
+    <button class="sq-q" onclick="sq('Which vessel class has the strongest 60-day rate of change (ROC) right now?')">Which vessel class has the strongest ROC?</button>
+  </div>
+
+  <div class="sq-panel" id="panel-supply">
+    <button class="sq-q" onclick="sq('What is the current state of the Capesize and Newcastlemax orderbook?')">What does the Capesize orderbook look like?</button>
+    <button class="sq-q" onclick="sq('Summarize the current Panamax and Supramax orderbook and fleet growth outlook.')">Summarize the Panamax and Supramax orderbook</button>
+    <button class="sq-q" onclick="sq('What is the current dry bulk orderbook-to-fleet ratio and is it bullish or bearish?')">Is the dry bulk orderbook-to-fleet ratio bullish?</button>
+    <button class="sq-q" onclick="sq('What is the current tanker orderbook situation across VLCC, Suezmax, and Aframax?')">What does the tanker orderbook look like?</button>
+    <button class="sq-q" onclick="sq('Are scrapping rates rising or falling, and what is driving the trend?')">Are scrapping rates rising or falling?</button>
+    <button class="sq-q" onclick="sq('How are environmental regulations (CII, EEXI) affecting effective fleet supply right now?')">How are CII/EEXI rules affecting fleet supply?</button>
+  </div>
+
+  <div class="sq-panel" id="panel-macro">
+    <button class="sq-q" onclick="sq('How are Chinese steel margins and iron ore inventory levels affecting Capesize freight rates?')">How is Chinese steel affecting Capesize rates?</button>
+    <button class="sq-q" onclick="sq('What is the latest read on coal and grain demand from the Atlantic basin?')">What is the Atlantic coal and grain outlook?</button>
+    <button class="sq-q" onclick="sq('How are OPEC+ production cuts affecting dirty tanker demand right now?')">How are OPEC+ cuts affecting dirty tankers?</button>
+    <button class="sq-q" onclick="sq('Is Red Sea rerouting still affecting effective vessel supply and spot rates?')">Is Red Sea rerouting still moving rates?</button>
+    <button class="sq-q" onclick="sq('How are refinery margins affecting clean tanker (CPP) demand right now?')">How are refinery margins affecting CPP demand?</button>
+    <button class="sq-q" onclick="sq('What is the current ton-mile demand outlook for dry bulk trades?')">What is the ton-mile outlook for dry bulk?</button>
+  </div>
+
+  <div class="sq-panel" id="panel-trade">
+    <button class="sq-q" onclick="sq('What are the main upside and downside risks for the BDI over the next quarter?')">BDI upside vs downside risks — next quarter?</button>
+    <button class="sq-q" onclick="sq('Which vessel segment has the best short-term fundamental setup right now?')">Which vessel segment has the best setup now?</button>
+    <button class="sq-q" onclick="sq('What macro catalysts could trigger a regime change in the tanker market?')">What could flip the tanker regime?</button>
+    <button class="sq-q" onclick="sq('What is the consensus 6-month outlook for the tanker market based on all available reports?')">What is the 6-month tanker consensus?</button>
+    <button class="sq-q" onclick="sq('What is the most contrarian or unexpected data point in the recent knowledge base?')">Most contrarian signal in the data right now?</button>
+    <button class="sq-q" onclick="sq('Based on current regimes and analyst views, is it better to be long dry bulk or tankers?')">Long dry bulk or long tankers right now?</button>
+  </div>
+
+  <p class="sq-hint">Select a category above, then click any question to run it.</p>
+</div>
+
+<script>
+function sq(q) { document.getElementById('qaQuery').value = q; runQAQuery(); }
+document.getElementById('tabs').addEventListener('click', function(e) {
+  const tab = e.target.closest('.sq-tab');
+  if (!tab) return;
+  document.querySelectorAll('.sq-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.sq-panel').forEach(p => p.classList.remove('visible'));
+  tab.classList.add('active');
+  document.getElementById('panel-' + tab.dataset.cat).classList.add('visible');
+});
+</script>
           <div id="qaResultPanel" style="display:none;" class="qa-result-panel">
             <div id="qaStatus" class="qa-status"></div>
             <div id="qaAnswer" class="qa-answer"></div>
