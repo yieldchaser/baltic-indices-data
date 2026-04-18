@@ -11578,6 +11578,18 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           const docs = [];
           let used = 0;
 
+          // INJECT LIVE DATA SO THE LLM HAS THE CONFLUENCES AND Z-SCORES
+          if (typeof INTEL !== 'undefined' && INTEL.briefData && INTEL.briefData.snapshot) {
+            const liveData = {
+              date: INTEL.briefData.snapshot.date || new Date().toISOString().split('T')[0],
+              metrics_and_regimes: INTEL.briefData.snapshot,
+              divergence_and_confluence_signals: INTEL.briefData.vessel_confluence || {}
+            };
+            const liveText = JSON.stringify(liveData, null, 2);
+            docs.push({ type: 'live', label: 'Live Quantitative Pipeline Data (Z-Scores, Regimes, Confluences)', text: liveText });
+            used += _estimateTokens(liveText);
+          }
+
           // Wikis: 50% of budget, split evenly
           const wikiBudget = Math.floor(budget * 0.5);
           const perWiki = Math.floor(wikiBudget / Math.max(scoredWikiArr.length, 1));
