@@ -2688,18 +2688,22 @@
   <script>
     (function () {
       var quotes = [
-        { text: '\u201cI am a Man of Fortune, and I must seek my Fortune.\u201d', attr: '\u2014 Henry Avery, 1694' },
-        { text: '\u201cWe are men of fortune, and resolved to seek our fortunes.\u201d', attr: '\u2014 Henry Avery, letter to merchants, 1694' },
-        { text: 'Sic Parvis Magna \u2014 Great things from small beginnings.', attr: '\u2014 motto of the golden age of sail' },
-        { text: 'The Ganj-i-Sawai, 1695 \u2014 \xa3600,000 in gold & silver seized on the open Indian Ocean. The richest pirate raid in history.', attr: '' },
-        { text: 'Henry Avery: the only pirate of the golden age to retire undefeated, vanishing into legend with the greatest haul ever taken.', attr: '' },
-        { text: '\u201cI have been unlucky, but I have been brave.\u201d', attr: '\u2014 attributed to Henry Avery' },
+        { text: '\u201cI am a Man of Fortune, and I must seek my Fortune.\u201d', attr: 'Henry Avery, 1694' },
+        { text: '\u201cA ship in harbor is safe, but that is not what ships are built for.\u201d', attr: 'John A. Shedd' },
         { text: 'The Fancy, 46 guns \u2014 Avery\u2019s ship, named for nothing but the wind and fortune.', attr: '' },
-        { text: 'No man is worth more to the sea than what the sea is willing to give him.', attr: '\u2014 old mariner\u2019s proverb' },
+        { text: '\u201cMan cannot discover new oceans unless he has the courage to lose sight of the shore.\u201d', attr: 'Andr\u00e9 Gide' },
+        { text: '\u201cThe good seaman weathers the storm he cannot avoid, and avoids the storm he cannot weather.\u201d', attr: 'Unknown' },
+        { text: 'The Ganj-i-Sawai, 1695 \u2014 \xa3600,000 in gold & silver seized on the open Indian Ocean. The richest pirate raid in history.', attr: '' },
+        { text: '\u201cHe that will not sail till all dangers are over must never put to sea.\u201d', attr: 'Thomas Fuller' },
+        { text: 'Sic Parvis Magna \u2014 Great things from small beginnings.', attr: 'Sir Francis Drake' },
+        { text: '\u201cSmooth seas do not make skillful sailors.\u201d', attr: 'African Proverb' },
+        { text: '\u201cNo prey, no pay.\u201d', attr: 'Pirate Code' },
+        { text: 'Henry Avery: the only pirate of the golden age to retire undefeated, vanishing into legend with the greatest haul ever taken.', attr: '' },
+        { text: 'No man is worth more to the sea than what the sea is willing to give him.', attr: 'old mariner\u2019s proverb' }
       ];
       var icon = '\uD83C\uDFF4\u200D\u2620\uFE0F';
       var html = quotes.map(function (q) {
-        return '<span class="ticker-item"><span class="ticker-icon">' + icon + '</span>' + q.text + (q.attr ? '<span class="ticker-attr">' + q.attr + '</span>' : '') + '</span>';
+        return '<span class="ticker-item"><span class="ticker-icon">' + icon + '</span>' + q.text + (q.attr ? '<span class="ticker-attr"> — ' + q.attr + '</span>' : '') + '</span>';
       }).join('');
       var el = document.getElementById('averyTicker');
       el.innerHTML = html + html; // doubled for seamless loop
@@ -7138,7 +7142,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       <div class="etf-name">${name}</div>
       <div class="etf-price-row">${priceHTML}</div>
     </div>
-    <div style="font-size:11px;color:var(--text-muted);padding:4px 14px;margin-bottom:12px;" data-tooltip="Futures Exposure Ratio = total notional value of FFA positions / total fund cash. A ratio near 100% = fully replicated. Above 100% = leveraged. BDRY and BWET typically target ~100% replication with no leverage.">
+    <div style="font-size:11px;color:var(--text-muted);padding:4px 0;margin-bottom:12px;" data-tooltip="Futures Exposure Ratio = total notional value of FFA positions / total fund cash. A ratio near 100% = fully replicated. Above 100% = leveraged. BDRY and BWET typically target ~100% replication with no leverage.">
       Futures Exposure: <span style="color:var(--text);font-weight:600;">${leverageStr}</span>
     </div>
 
