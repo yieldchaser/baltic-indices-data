@@ -2277,6 +2277,67 @@
   .sq-divider { width: 100%; height: 0.5px; background: var(--border); margin: 16px 0; }
   .sq-hint { font-size: 12px; color: var(--gray); margin-top: 10px; }
 
+
+  /* TOOLTIP SYSTEM */
+  #global-tooltip {
+    position: fixed;
+    z-index: 10000;
+    background: rgba(16, 17, 20, 0.97);
+    backdrop-filter: blur(8px);
+    color: #adbac7;
+    padding: 9px 13px;
+    border-radius: 7px;
+    font-size: 12px;
+    line-height: 1.55;
+    max-width: 260px;
+    border: 1px solid rgba(0, 212, 255, 0.22);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.13s ease, transform 0.13s ease;
+    transform: translateY(8px);
+    white-space: normal;
+  }
+  #global-tooltip.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  [data-tooltip] { cursor: help; }
+
+  .chart-tooltip {
+    position: absolute;
+    min-width: 220px; max-width: 280px;
+    pointer-events: none;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(8,9,13,0.97);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    font-size: 12px;
+    z-index: 20;
+    transition: left 0.1s ease, top 0.1s ease;
+  }
+  .chart-tooltip.hidden { display: none; }
+  .chart-tooltip-head { padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .chart-tooltip-title { font-size: 12px; font-weight: 700; }
+  .chart-tooltip-subtitle { margin-top: 4px; color: #8888aa; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .chart-tooltip-section { display: flex; flex-direction: column; gap: 5px; }
+  .chart-tooltip-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #8888aa; }
+  .chart-tooltip-row.emphasis .chart-tooltip-label,
+  .chart-tooltip-row.emphasis .chart-tooltip-value { color: #e8e8f0; font-weight: 700; }
+  .chart-tooltip-label { display: inline-flex; align-items: center; gap: 8px; }
+  .chart-tooltip-swatch { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; border: 1px solid rgba(255,255,255,0.2); }
+  .chart-tooltip-value { color: #e8e8f0; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .chart-tooltip-metrics {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px; margin-top: 10px; padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .chart-tooltip-metric { display: flex; flex-direction: column; gap: 2px; }
+  .chart-tooltip-metric-label { color: #44445a; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .chart-tooltip-metric-value { color: #e8e8f0; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .chart-tooltip-note { margin-top: 8px; color: #8888aa; font-size: 11px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.06); }
 </style>
 </head>
 
@@ -3963,12 +4024,45 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       Chart.defaults.borderColor = '#151a22';
       Chart.defaults.plugins.legend.labels.boxWidth = 12;
       Chart.defaults.plugins.legend.labels.padding = 10;
-      Chart.defaults.plugins.tooltip.backgroundColor = '#0f1318';
-      Chart.defaults.plugins.tooltip.borderColor = '#1e2530';
-      Chart.defaults.plugins.tooltip.borderWidth = 1;
-      Chart.defaults.plugins.tooltip.titleColor = '#e6edf3';
-      Chart.defaults.plugins.tooltip.bodyColor = '#8b949e';
-      Chart.defaults.plugins.tooltip.padding = 10;
+      
+      // Override standard Tooltip with the World-Class System 2 Extractor
+      Chart.defaults.plugins.tooltip.enabled = false;
+      Chart.defaults.plugins.tooltip.external = function (context) {
+        if (!window.updateChartTooltip) return;
+        
+        const tooltipModel = context.tooltip;
+        const chartWrapper = context.chart.canvas.parentNode;
+        
+        if (tooltipModel.opacity === 0) {
+          window.updateChartTooltip(chartWrapper, null);
+          return;
+        }
+
+        const titleLines = tooltipModel.title || [];
+        const bodyLines = tooltipModel.body || [];
+        
+        const rows = bodyLines.map((bodyItem, i) => {
+          const colors = tooltipModel.labelColors[i] || {};
+          const text = bodyItem.lines[0];
+          // Chart.js standard formatting is "label: value"
+          const parts = text.split(':');
+          const label = parts[0] ? parts[0].trim() : '';
+          const valueText = parts[1] ? parts[1].trim() : text;
+          
+          return {
+            label: label,
+            color: colors.backgroundColor || colors.borderColor || '#58a6ff',
+            valueText: valueText,
+            emphasis: i === 0 // Just emphasize the first or highest by default
+          };
+        });
+
+        window.updateChartTooltip(chartWrapper, {
+          title: titleLines[0] || '',
+          rows: rows
+        });
+      };
+
       // Perf: disable all chart animations — eliminates per-frame repaints on every render
       Chart.defaults.animation = false;
       Chart.defaults.transitions = {};
@@ -11707,6 +11801,171 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       } finally { btn.disabled = false; }
     }
 
+  <div id="global-tooltip"></div>
+  <script>
+    // System 1: Global Tooltip Logic
+    (function() {
+      const tt = document.getElementById('global-tooltip');
+      if (!tt) return;
+      let hideTimer = null;
+
+      document.addEventListener('mouseover', function(e) {
+        const target = e.target.closest('[data-tooltip]');
+        if (!target) return;
+        const text = target.getAttribute('data-tooltip');
+        if (!text) return;
+        if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+
+        tt.textContent = text;
+        tt.classList.add('visible');
+
+        // Off-screen first to measure dimensions
+        tt.style.top = '-9999px'; tt.style.left = '-9999px';
+
+        const rect = target.getBoundingClientRect();
+        const GAP = 12;
+        let left = rect.left + rect.width / 2 - tt.offsetWidth / 2;
+        let top  = rect.top - tt.offsetHeight - GAP;
+
+        if (top < 8) top = rect.bottom + GAP;             // flip below
+        if (left < 8) left = 8;                            // left clamp
+        if (left + tt.offsetWidth > window.innerWidth - 8) // right clamp
+          left = window.innerWidth - tt.offsetWidth - 8;
+
+        tt.style.top  = top  + 'px';
+        tt.style.left = left + 'px';
+      });
+
+      document.addEventListener('mouseout', function(e) {
+        if (e.target.closest('[data-tooltip]'))
+          hideTimer = setTimeout(() => tt.classList.remove('visible'), 80);
+      });
+    })();
+
+    // System 2: Chart Tooltip Logic
+    window.ensureChartTooltip = function(container) {
+      let tooltip = container.querySelector('.chart-tooltip');
+      if (!tooltip) {
+        tooltip = document.createElement('div');
+        tooltip.className = 'chart-tooltip hidden';
+        container.appendChild(tooltip);
+      }
+      return tooltip;
+    };
+
+    window.updateChartTooltip = function(container, config) {
+      const tooltip = window.ensureChartTooltip(container);
+      if (!config) { tooltip.classList.add('hidden'); return; }
+      const { title, subtitle='', rows=[], metrics=[], note='', titleColor='#f5f7fb' } = config;
+      if (!title && rows.length === 0) { tooltip.classList.add('hidden'); return; }
+
+      tooltip.innerHTML = `
+        <div class="chart-tooltip-head">
+          <div class="chart-tooltip-title" style="color:${titleColor};">${title}</div>
+          ${subtitle ? '<div class="chart-tooltip-subtitle">' + subtitle + '</div>' : ''}
+        </div>
+        <div class="chart-tooltip-section">
+          ${rows.map(r => `
+            <div class="chart-tooltip-row ${r.emphasis ? 'emphasis' : ''}">
+              <span class="chart-tooltip-label">
+                <span class="chart-tooltip-swatch" style="background:${r.color};"></span>
+                <span>${r.label}</span>
+              </span>
+              <span class="chart-tooltip-value">${r.valueText}</span>
+            </div>`).join('')}
+        </div>
+        ${metrics.length ? '<div class="chart-tooltip-metrics">' +
+          metrics.map(m => `
+            <div class="chart-tooltip-metric">
+              <span class="chart-tooltip-metric-label">${m.label}</span>
+              <span class="chart-tooltip-metric-value">${m.value}</span>
+            </div>`).join('') +
+        '</div>' : ''}
+        ${note ? '<div class="chart-tooltip-note">' + note + '</div>' : ''}
+      `;
+      tooltip.classList.remove('hidden');
+
+      // Boundary detection positioning for chart wrapper
+      const GAP = 12, pad = 8;
+      const rect = container.getBoundingClientRect();
+      let left = rect.left + rect.width / 2 - tooltip.offsetWidth / 2;
+      let top  = rect.top  - tooltip.offsetHeight - GAP;
+      if (top < pad) top = rect.bottom + GAP;
+      if (left < pad) left = pad;
+      if (left + tooltip.offsetWidth > window.innerWidth - pad)
+        left = window.innerWidth - tooltip.offsetWidth - pad;
+      
+      // Convert viewport coords to local relative coords since container is relative/absolute
+      let localLeft = left - rect.left;
+      let localTop = top - rect.top;
+
+      tooltip.style.left = localLeft + 'px';
+      tooltip.style.top  = localTop  + 'px';
+    };
+
+    // System 3: Personalization Mapping
+    document.addEventListener('DOMContentLoaded', () => {
+      // Standard metric translations
+      const ttMap = {
+        'Index:': 'Switching the index updates the dataset globally across all tabs simultaneously.',
+        'Z-Score': 'Standard deviations from the historical mean. > +1 is elevated, < -1 is depressed.',
+        'Z-Score (Dashboard)': 'Standard deviations from the historical mean. > +1 is elevated, < -1 is depressed.',
+        'All-Time Pctl': 'Percentage of trading days in history where the index was lower than today.',
+        '10Y Pctl': 'Percentage of trading days in the last 10 years where the index was lower than today.',
+        '5Y Pctl': 'Percentage of trading days in the last 5 years where the index was lower than today.',
+        '52-Week Drawdown': 'Percentage drop from the highest peak achieved in the trailing 52 weeks.',
+        '20D RoC': 'Rate of Change. Percentage move across the trailing 20 trading sessions (\u22481 month).',
+        'Current vs 5Y Avg': 'Percent difference between today\\'s reading and the trailing 5-year average.',
+        'Current vs 10Y Avg': 'Percent difference between today\\'s reading and the trailing 10-year average.',
+        'Last 5 Years Drawdown (%)': 'The depth of drops from 52-week peaks charted out historically.',
+        'Historical Volatility (Annualized)': 'Annualized standard deviation of daily log returns, grouping price swings into volatility regimes.',
+        'Range %': 'Yearly price spread: (High - Low) / Average. A measure of extreme dispersion across the year.',
+        'Total Futures': 'Aggregate notional value of all forward freight agreements currently held.',
+        'Collateral Cash': 'Treasury bills or cash equivalents held to margin the futures position.',
+        'Futures / AUM': 'Notional futures exposure relative to total net assets. Often drifts >100% via leverage.',
+        'NAV': 'Net Asset Value. The theoretical daily intrinsic value per ETF share.',
+        'Expense Ratio': 'Annual fee percentage deducted by the ETF issuer from the fund assets.',
+        '52W High \u2014 Low': 'The highest ceiling and lowest floor traded over the last year.',
+        '52W Position': 'Current spot on a 0-100% ruler stretching between the 52-week low to high.',
+        'From Last Trough': 'Growth percentage since the lowest price hit any time in the past year.',
+        'Dollar Value Traded': 'Total market capital exchanged today (Share Price \u00D7 Volume).',
+        'Possible Shares': 'Safe trade size defined by volume banding (from 2% to 6.5% of total volume based on liquidity constraints).',
+        'Safe Liquidity': 'Total trade capital ($) that can be entered/exited today without inducing market slippage.',
+        'Total Safe Liquidity (1M)': 'Approximate cumulative trade capital that could safely be absorbed over the last 21 trading days.',
+        'MOMENTUM REGIME': 'Combines long-term trend (200-day Moving Average) and short-term momentum (60-day Rate of Change) into a 4-quadrant state model.'
+      };
+
+      // Select generic text components throughout the dashboard
+      const targetSelectors = [
+        '.stat-sub', 
+        '.index-chart-title', 
+        '.chart-title', 
+        '.yearly-table th',
+        'label',
+        '.header h1 span.logo',
+        '.metric-label',
+        '.index-chart-subtitle'
+      ];
+      
+      const elements = document.querySelectorAll(targetSelectors.join(', '));
+      elements.forEach(el => {
+        let text = el.innerText.trim();
+        // Remove trailing colon usually seen on labels
+        if (text.endsWith(':') && text !== 'Index:') text = text.slice(0, -1).trim();
+        
+        let description = ttMap[text];
+        if (!description) {
+           if (text.includes('Range %')) description = ttMap['Range %'];
+           else return;
+        }
+        
+        // Append tooltip dataset and glassmorphic dotted decoration
+        el.setAttribute('data-tooltip', description);
+        el.style.textDecoration = 'underline dotted rgba(255,255,255,0.3)';
+        el.style.textUnderlineOffset = '3px';
+        el.style.cursor = 'help';
+      });
+    });
   </script>
 </body>
 
