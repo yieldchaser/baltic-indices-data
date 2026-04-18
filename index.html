@@ -3327,6 +3327,7 @@
               <option value="ollama">Ollama</option>
               <option value="nim">NIM (NVIDIA)</option>
             </select>
+            <span id="qaProviderStatus" style="display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 4px;background:var(--text-muted);vertical-align:middle;" data-tooltip="Provider connection status"></span>
             <span class="qa-key-label" id="qaApiKeyLabel">Gemini Key</span>
             <input type="password" id="qaApiKey" class="qa-key-input" placeholder="AIza... (stored only in localStorage)" />
             <span class="qa-key-label">Model</span>
@@ -10805,6 +10806,7 @@
         _paintBrief(el, tsEl, INTEL.briefData);
         _updateStaleBadge(data.generated_at);
         _autoDetectOllamaFromBrief();
+        _generateDynamicSuggestions();
       } catch {
         el.innerHTML = '<div class="intel-empty">No brief available for ' + dateStr + '.</div>';
         _updateStaleBadge(null);
@@ -11152,6 +11154,19 @@
         modelEl.placeholder = cfg.defaultModel;
       }
       if (statusEl) statusEl.textContent = '';
+      // Update provider status dot
+      const dotEl = document.getElementById('qaProviderStatus');
+      if (dotEl) {
+        const hasKey = !!_loadProviderKey(provider);
+        const hasModel = !!(_loadProviderModel(provider) || cfg.defaultModel);
+        if (hasKey || cfg.keyOptional) {
+          dotEl.style.background = hasModel ? 'var(--green)' : 'var(--yellow)';
+          dotEl.setAttribute('data-tooltip', hasModel ? 'Ready (' + provider + ')' : 'No model set');
+        } else {
+          dotEl.style.background = 'var(--red)';
+          dotEl.setAttribute('data-tooltip', 'API key required');
+        }
+      }
     }
 
     function onQAProviderChange() {
@@ -11182,6 +11197,32 @@
       localStorage.setItem('qa_provider', provider);
       const statusEl = document.getElementById('qaKeyStatus');
       if (statusEl) statusEl.textContent = 'Saved';
+    }
+
+
+    function _generateDynamicSuggestions() {
+      const brief = INTEL.briefData;
+      if (!brief?.vessel_classes) return;
+      const container = document.querySelector('.qa-suggestions');
+      if (!container) return;
+      const dry = brief.vessel_classes.dry_bulk;
+      const tanker = brief.vessel_classes.tanker;
+      const dynamics = [];
+      if (dry?.confluence_type === 'DIVERGENCE') dynamics.push('Why are dry bulk quantitative signals diverging from analyst fundamentals?');
+      if (dry?.confluence_type === 'BULL_CONFLUENCE') dynamics.push('What is driving the current dry bulk bull confluence?');
+      if (dry?.confluence_type === 'BEAR_CONFLUENCE') dynamics.push('What factors are behind the dry bulk bear confluence?');
+      if (tanker?.confluence_type === 'BULL_CONFLUENCE') dynamics.push('What is driving the tanker bull confluence?');
+      if (tanker?.confluence_type === 'DIVERGENCE') dynamics.push('Why are tanker quantitative signals diverging from fundamentals?');
+      if (dry?.watch) dynamics.push('Explain: ' + dry.watch);
+      if (tanker?.watch) dynamics.push('Explain: ' + tanker.watch);
+      dynamics.slice(0, 3).forEach(q => {
+        const btn = document.createElement('button');
+        btn.className = 'qa-key-btn';
+        btn.style.cssText = 'font-size:11px;padding:3px 10px;border-color:var(--accent);';
+        btn.textContent = q;
+        btn.onclick = () => { document.getElementById('qaQuery').value = q; runQAQuery(); };
+        container.appendChild(btn);
+      });
     }
 
     function onQAScopeChange(isWikiOnly) {
@@ -11251,16 +11292,31 @@
       return e > 0 ? md.slice(e + 3).trim() : md;
     }
 
-    async function _runProviderLLM(provider, apiKey, model, prompt) {
+    async function _runProviderLLM(provider, apiKey, model, prompt, onToken) {
       if (provider === 'ollama') {
         const baseUrl = localStorage.getItem('qa_baseurl_ollama') || 'http://localhost:11434/api';
         const headers = { 'Content-Type': 'application/json' };
         if (apiKey) headers['Authorization'] = 'Bearer ' + apiKey;
+        const doStream = !!onToken;
         const res = await fetch(baseUrl + '/chat', {
           method: 'POST', headers,
-          body: JSON.stringify({ model, messages: [{ role: 'user', content: prompt }], stream: false }),
+          body: JSON.stringify({ model, messages: [{ role: 'user', content: prompt }], stream: doStream }),
         });
         if (!res.ok) { const err = await res.json().catch(() => ({})); throw new Error(err?.error || 'Ollama HTTP ' + res.status); }
+        if (doStream && res.body) {
+          const reader = res.body.getReader();
+          const decoder = new TextDecoder();
+          let full = '';
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            const lines = decoder.decode(value, { stream: true }).split('\n').filter(l => l.trim());
+            for (const line of lines) {
+              try { const obj = JSON.parse(line); full += (obj?.message?.content || ''); onToken(full); } catch {}
+            }
+          }
+          return full || '(no response)';
+        }
         const data = await res.json();
         return data?.message?.content || '(no response)';
       }
@@ -11276,6 +11332,7 @@
         return data?.choices?.[0]?.message?.content || '(no response)';
       }
       if (provider === 'groq') {
+        const doStream = !!onToken;
         const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
           method: 'POST',
           headers: {
@@ -11287,11 +11344,28 @@
             messages: [{ role: 'user', content: prompt }],
             temperature: 0.2,
             max_tokens: 1024,
+            stream: doStream,
           }),
         });
         if (!res.ok) {
           const err = await res.json().catch(() => ({}));
           throw new Error(err?.error?.message || `Groq HTTP ${res.status}`);
+        }
+        if (doStream && res.body) {
+          const reader = res.body.getReader();
+          const decoder = new TextDecoder();
+          let full = '';
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            const lines = decoder.decode(value, { stream: true }).split('\n').filter(l => l.startsWith('data: '));
+            for (const line of lines) {
+              const payload = line.slice(6).trim();
+              if (payload === '[DONE]') continue;
+              try { const obj = JSON.parse(payload); full += (obj?.choices?.[0]?.delta?.content || ''); onToken(full); } catch {}
+            }
+          }
+          return full || '(no response)';
         }
         const data = await res.json();
         return data?.choices?.[0]?.message?.content || '(no response)';
@@ -11435,7 +11509,7 @@
           if (!pModel) continue;
           try {
             statEl.textContent = 'Asking ' + pCfg.label + ' (' + ctx.length + ' passages)...';
-            answer = await _runProviderLLM(p, pKey, pModel, prompt);
+            answer = await _runProviderLLM(p, pKey, pModel, prompt, (partial) => { ansEl.textContent = partial; });
             usedProvider = p;
             break;
           } catch (err) {
