@@ -11400,6 +11400,24 @@
       });
     }
 
+
+    function _formatQAAnswer(text) {
+      if (!text) return '';
+      // Escape HTML to prevent injection, but allow our superscripts
+      let esc = String(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      
+      // Convert [DOC-N] or [DOC - N] to superscript references
+      esc = esc.replace(/\[DOC-\s*(\d+)\]/gi, '<sup class="qa-sup" style="font-size:0.75em; vertical-align:super; color:var(--accent); margin-left:1px; font-weight:700;">$1</sup>');
+      
+      // Basic markdown styling for readability
+      esc = esc.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      esc = esc.replace(/\r?\n/g, '<br>');
+      return esc;
+    }
+
     async function runQAQuery() {
       const btn    = document.getElementById('qaSubmitBtn');
       const panel  = document.getElementById('qaResultPanel');
@@ -11560,7 +11578,7 @@
 
           try {
             statEl.textContent = 'Asking ' + pCfg.label + ' (' + docs.length + ' passages, ~' + estTokens + ' tokens)...';
-            answer = await _runProviderLLM(p, pKey, pModel, promptText, (partial) => { ansEl.textContent = partial; });
+            answer = await _runProviderLLM(p, pKey, pModel, promptText, (partial) => { ansEl.innerHTML = _formatQAAnswer(partial); });
             usedProvider = p;
             finalDocs = docs;
             finalEstTokens = estTokens;
@@ -11585,7 +11603,7 @@
         const wikiCount = finalDocs.filter(d => d.type === 'wiki').length;
         const chunkCount = finalDocs.filter(d => d.type === 'chunk').length;
         statEl.textContent = '✓ ' + usedCfg.label + ' · ' + finalDocs.length + ' passages (~' + finalEstTokens + ' tokens) [' + wikiCount + ' wiki · ' + chunkCount + ' chunks]';
-        ansEl.textContent  = answer;
+        ansEl.innerHTML  = _formatQAAnswer(answer);
         citEl.innerHTML    = finalDocs.map((d, i) =>
           '<span class="qa-cit" title="' + d.label.replace(/"/g, '&quot;') + '">[DOC-' + (i+1) + '] ' + d.label + '</span>'
         ).join('');
