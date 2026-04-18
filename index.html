@@ -45,6 +45,7 @@
       min-height: 100vh;
       letter-spacing: 0.01em;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden; /* Prevents sailing ships from creating horizontal scrollbars */
       -moz-osx-font-smoothing: grayscale;
     }
 
@@ -93,18 +94,24 @@
       100% { transform: translateY(0px); }
     }
 
+    @keyframes ship-sail {
+      0%   { left: 100%; }
+      100% { left: -210px; }
+    }
+
     #pirateShip {
-      animation-duration: 2.8s;
+      width: 145px;
       position: absolute;
-      left: 20px;
-      top: 6px;
+      top: 2px;
+      animation: ship-sail 55s linear infinite, floatShip 2.8s ease-in-out infinite;
     }
 
     #ghostShip {
-      animation-duration: 3.5s;
+      width: 110px;
       position: absolute;
-      right: 20px;
-      top: 6px;
+      top: 10px;
+      animation: ship-sail 55s linear infinite, floatShip 3.5s ease-in-out infinite;
+      animation-delay: -27.5s, -1s;
     }
 
     .header-ships {
@@ -116,7 +123,6 @@
     }
 
     .header-ships svg {
-      width: 130px;
       opacity: 0.9;
     }
 
