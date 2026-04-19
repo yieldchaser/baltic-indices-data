@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shipping</title>
-  <!-- Pirate ship favicon — inline SVG as data URI, works in all browsers -->
+  <!-- Pirate ship favicon - inline SVG as data URI, works in all browsers -->
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.92em' font-size='95' style='filter: drop-shadow(0px 3px 5px rgba(0,0,0,0.9));'%3E🏴‍☠️%3C/text%3E%3C/svg%3E">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
@@ -311,7 +311,7 @@
       transform: translateY(0);
     }
 
-    /* Prevent I-beam cursor on tooltip triggers — keep text selectable */
+    /* Prevent I-beam cursor on tooltip triggers - keep text selectable */
     [data-tooltip] {
       cursor: default;
     }
@@ -1759,7 +1759,7 @@
     }
 
     /* =====================================================================
-     MOBILE RESPONSIVENESS — max-width: 768px
+     MOBILE RESPONSIVENESS - max-width: 768px
      ===================================================================== */
 
     /* FFA Term Structure panel: stack BDRY and BWET vertically on mobile */
@@ -1820,7 +1820,7 @@
         height: 240px !important;
       }
 
-      /* ── FFA Term Structure: KEY FIX — stack the two curve panels vertically ── */
+      /* ── FFA Term Structure: KEY FIX - stack the two curve panels vertically ── */
       #termStructurePanel {
         grid-template-columns: 1fr !important;
       }
@@ -2713,7 +2713,7 @@
       ];
       var icon = '\uD83C\uDFF4\u200D\u2620\uFE0F';
       var html = quotes.map(function (q) {
-        return '<span class="ticker-item"><span class="ticker-icon">' + icon + '</span>' + q.text + (q.attr ? '<span class="ticker-attr"> — ' + q.attr + '</span>' : '') + '</span>';
+        return '<span class="ticker-item"><span class="ticker-icon">' + icon + '</span>' + q.text + (q.attr ? '<span class="ticker-attr"> - ' + q.attr + '</span>' : '') + '</span>';
       }).join('');
       var el = document.getElementById('averyTicker');
       el.innerHTML = html + html; // doubled for seamless loop
@@ -2736,43 +2736,43 @@
     <div class="tab-panel active" id="tab-dashboard">
       <div class="dashboard-hero mb-20">
         <div class="current-price-block">
-          <div class="current-price-label" id="dashProductLabel" data-tooltip="Baltic Dry Index (BDI) — the composite benchmark assembled by the Baltic Exchange daily from reported freight rates on major dry bulk routes. Change this via the product selector in the top-right.">Baltic Dry Index (BDI)</div>
-          <div class="current-price-value" id="dashCurrentPrice">—</div>
-          <div class="current-price-change" id="dashPriceChange">—</div>
+          <div class="current-price-label" id="dashProductLabel" data-tooltip="Baltic Dry Index (BDI) - the composite benchmark assembled by the Baltic Exchange daily from reported freight rates on major dry bulk routes. Change this via the product selector in the top-right.">Baltic Dry Index (BDI)</div>
+          <div class="current-price-value" id="dashCurrentPrice">-</div>
+          <div class="current-price-change" id="dashPriceChange">-</div>
         </div>
-        <div id="dashSignal" class="signal-badge signal-wait" data-tooltip="Marine Intelligence Signal — synthesized from 5Y Percentile and Z-Score. Identifies high-conviction 'Golden Dip' capitulation vs. systemic overextension.">⏳ WAIT</div>
+        <div id="dashSignal" class="signal-badge signal-wait" data-tooltip="Marine Intelligence Signal - synthesized from 5Y Percentile and Z-Score. Identifies high-conviction 'Golden Dip' capitulation vs. systemic overextension.">⏳ WAIT</div>
         <div id="dashRegimeBadge" class="regime-badge" style="display:none;" title="Momentum Regime based on MA200 and ROC60"></div>
       </div>
 
       <div class="stats-row mb-20">
         <div class="stat-card sc-percentile">
-          <div class="stat-label" data-tooltip="All-Time Percentile — ranks today's reading against every daily close since the dataset begins (~2008). 50th = median of all time. 95th+ = historically extreme overvaluation; 5th or below = historically extreme undervaluation.">All-Time Pctl</div>
-          <div class="stat-value" id="statAlltime">—</div>
+          <div class="stat-label" data-tooltip="All-Time Percentile - ranks today's reading against every daily close since the dataset begins (~2008). 50th = median of all time. 95th+ = historically extreme overvaluation; 5th or below = historically extreme undervaluation.">All-Time Pctl</div>
+          <div class="stat-value" id="statAlltime">-</div>
           <div class="stat-sub">vs full history</div>
         </div>
         <div class="stat-card sc-percentile">
-          <div class="stat-label" data-tooltip="10-Year Percentile — filters the ranking to the last decade only, cutting out the 2008/2009 super-cycle highs. More relevant for a modern freight market structure.">10Y Percentile</div>
-          <div class="stat-value" id="stat10y">—</div>
+          <div class="stat-label" data-tooltip="10-Year Percentile - filters the ranking to the last decade only, cutting out the 2008/2009 super-cycle highs. More relevant for a modern freight market structure.">10Y Percentile</div>
+          <div class="stat-value" id="stat10y">-</div>
           <div class="stat-sub">last 10 years</div>
         </div>
         <div class="stat-card sc-percentile">
-          <div class="stat-label" data-tooltip="5-Year Percentile — the most operationally relevant window; anchored in post-COVID freight dynamics. A low reading here signals the market is near its cheapest point in recent memory.">5Y Percentile</div>
-          <div class="stat-value" id="stat5y">—</div>
+          <div class="stat-label" data-tooltip="5-Year Percentile - the most operationally relevant window; anchored in post-COVID freight dynamics. A low reading here signals the market is near its cheapest point in recent memory.">5Y Percentile</div>
+          <div class="stat-value" id="stat5y">-</div>
           <div class="stat-sub">last 5 years</div>
         </div>
         <div class="stat-card sc-zscore">
-          <div class="stat-label" data-tooltip="Seasonal Z-Score — compares today's value against the average of the same calendar day across all prior years. A score of +2.0 means today's reading is 2 standard deviations above the seasonal norm for this date.">Z-Score</div>
-          <div class="stat-value" id="statZscore">—</div>
+          <div class="stat-label" data-tooltip="Seasonal Z-Score - compares today's value against the average of the same calendar day across all prior years. A score of +2.0 means today's reading is 2 standard deviations above the seasonal norm for this date.">Z-Score</div>
+          <div class="stat-value" id="statZscore">-</div>
           <div class="stat-sub">vs same trading day</div>
         </div>
         <div class="stat-card sc-drawdown">
-          <div class="stat-label" data-tooltip="Peak Retracement (52-Week) — tracks current correction depth from the rolling 1-year high. Freight spikes often 'flush' 30-50% before finding structural support.">Drawdown</div>
-          <div class="stat-value" id="statDrawdown">—</div>
+          <div class="stat-label" data-tooltip="Peak Retracement (52-Week) - tracks current correction depth from the rolling 1-year high. Freight spikes often 'flush' 30-50% before finding structural support.">Drawdown</div>
+          <div class="stat-value" id="statDrawdown">-</div>
           <div class="stat-sub">from 52-week high</div>
         </div>
         <div class="stat-card sc-roc">
-          <div class="stat-label" data-tooltip="Rate of Change (20-Day) — measures price velocity over the last ~1 month of trading. Positive values confirm upward momentum; negative values below -10% often coincide with capitulation events.">Rate of Change (20d)</div>
-          <div class="stat-value" id="statRoc20">—</div>
+          <div class="stat-label" data-tooltip="Rate of Change (20-Day) - measures price velocity over the last ~1 month of trading. Positive values confirm upward momentum; negative values below -10% often coincide with capitulation events.">Rate of Change (20d)</div>
+          <div class="stat-value" id="statRoc20">-</div>
           <div class="stat-sub">20-day % change</div>
         </div>
       </div>
@@ -2780,23 +2780,23 @@
       <!-- Historical Context Strip -->
       <div class="context-strip" id="contextStrip">
         <div class="context-card">
-          <div class="context-label" data-tooltip="Cycle Anchor (5Y Mean) — the arithmetic mean of the last 1,260 sessions. Serves as a fundamental 'Fair Value' anchor; standard deviations from this mean define cycle extremes.">5Y Average</div>
-          <div class="context-value" id="ctx5yAvg">—</div>
+          <div class="context-label" data-tooltip="Cycle Anchor (5Y Mean) - the arithmetic mean of the last 1,260 sessions. Serves as a fundamental 'Fair Value' anchor; standard deviations from this mean define cycle extremes.">5Y Average</div>
+          <div class="context-value" id="ctx5yAvg">-</div>
         </div>
         <div class="context-card">
-          <div class="context-label" data-tooltip="Structural Deviation — current rate distance (%) from the 5Y cycle baseline. Multi-year rallies typically overshoot this mean by +100% to +150% before mean-reverting.">vs 5Y Mean %</div>
-          <div class="context-value" id="ctx5yDev">—</div>
+          <div class="context-label" data-tooltip="Structural Deviation - current rate distance (%) from the 5Y cycle baseline. Multi-year rallies typically overshoot this mean by +100% to +150% before mean-reverting.">vs 5Y Mean %</div>
+          <div class="context-value" id="ctx5yDev">-</div>
         </div>
         <div class="context-card">
-          <div class="context-label" data-tooltip="Decade-Scale Context — identifies the current position relative to the 10-year rolling average. Crucial for identifying generational supply/demand shifts.">vs 10Y Mean %</div>
-          <div class="context-value" id="ctx10yDev">—</div>
+          <div class="context-label" data-tooltip="Decade-Scale Context - identifies the current position relative to the 10-year rolling average. Crucial for identifying generational supply/demand shifts.">vs 10Y Mean %</div>
+          <div class="context-value" id="ctx10yDev">-</div>
         </div>
       </div>
 
       <!-- Overlay Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Cumulative Return Stacking — tracks YTD performance by trading day. Used to identify 'Analog Years' where historical price action mirrors the current cycle path.">Current Year vs Historical Years</div>
+          <div class="chart-title" data-tooltip="Cumulative Return Stacking - tracks YTD performance by trading day. Used to identify 'Analog Years' where historical price action mirrors the current cycle path.">Current Year vs Historical Years</div>
         </div>
         <div class="year-checkboxes" id="yearCheckboxes"></div>
         <div class="chart-canvas-wrap">
@@ -2807,7 +2807,7 @@
       <!-- Drawdown Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Peak Retracement (52-Week) — tracks the current depth of correction from the rolling 1-year high. Freight spikes are often followed by 30-50% 'flushes' before stabilizing.">Drawdown % (Last 5 Years)</div>
+          <div class="chart-title" data-tooltip="Peak Retracement (52-Week) - tracks the current depth of correction from the rolling 1-year high. Freight spikes are often followed by 30-50% 'flushes' before stabilizing.">Drawdown % (Last 5 Years)</div>
         </div>
         <div class="drawdown-chart-wrap">
           <canvas id="drawdownChart"></canvas>
@@ -2817,7 +2817,7 @@
       <!-- Recent Daily Changes -->
       <div class="chart-section">
         <div class="chart-header">
-          <div class="chart-header-title" data-tooltip="Last ~10 trading sessions — shows the raw absolute value, daily change in points, and the percentage move for each session. Useful for spotting day-over-day momentum reversals or confirming multi-day trends.">Recent Daily Changes</div>
+          <div class="chart-header-title" data-tooltip="Last ~10 trading sessions - shows the raw absolute value, daily change in points, and the percentage move for each session. Useful for spotting day-over-day momentum reversals or confirming multi-day trends.">Recent Daily Changes</div>
           <button class="dl-btn" id="recentDlBtn">⬇ CSV</button>
         </div>
         <div style="overflow-x:auto">
@@ -2828,7 +2828,7 @@
       <!-- Yearly Performance Table -->
       <div class="collapsible-section mb-20">
         <button class="collapsible-toggle" id="yearlyPerfToggle" onclick="toggleYearlyPerf()">
-          <span data-tooltip="Year-by-Year Performance — Open, High, Low, Close and the full-year % return for each calendar year on record. Identifies long-duration bull and bear cycles.">Yearly Performance Table</span>
+          <span data-tooltip="Year-by-Year Performance - Open, High, Low, Close and the full-year % return for each calendar year on record. Identifies long-duration bull and bear cycles.">Yearly Performance Table</span>
           <span class="toggle-arrow">▼</span>
         </button>
         <div class="collapsible-content" id="yearlyPerfContent">
@@ -2843,7 +2843,7 @@
 
       <!-- Correlation Matrix -->
       <div class="corr-section mb-20">
-        <div class="section-title" data-tooltip="Pearson Correlation Matrix — measures the linear co-movement between pairs of shipping indices (BDI, BCI, BPI, BSI, BCTI, BDTI). Correlations of +0.9+ mean indices move in near-lockstep; values near 0 indicate independent price discovery. Use the 1Y window to see whether historical pairs have recently decoupled.">Index Correlation Matrix</div>
+        <div class="section-title" data-tooltip="Pearson Correlation Matrix - measures the linear co-movement between pairs of shipping indices (BDI, BCI, BPI, BSI, BCTI, BDTI). Correlations of +0.9+ mean indices move in near-lockstep; values near 0 indicate independent price discovery. Use the 1Y window to see whether historical pairs have recently decoupled.">Index Correlation Matrix</div>
         <div class="corr-timeframe-btns">
           <button class="corr-btn active" data-corr="all" onclick="setCorrTimeframe(this,'all')">All Time</button>
           <button class="corr-btn" data-corr="5y" onclick="setCorrTimeframe(this,'5y')">Last 5Y</button>
@@ -2867,8 +2867,8 @@
               respective lookback window. A percentile of 80 means the index is currently higher than 80% of all daily
               readings in that period.</p>
             <p style="margin-bottom:12px"><strong style="color:var(--text)">Z-Score:</strong> Computed as <code
-                style="background:var(--bg);padding:2px 5px;border-radius:3px;color:var(--accent)">(current value − mean of same calendar trading day across all years) / standard deviation</code>.
-              Values above +2 or below −2 indicate statistically unusual levels relative to seasonal norms.</p>
+                style="background:var(--bg);padding:2px 5px;border-radius:3px;color:var(--accent)">(current value - mean of same calendar trading day across all years) / standard deviation</code>.
+              Values above +2 or below -2 indicate statistically unusual levels relative to seasonal norms.</p>
             <p style="margin-bottom:12px"><strong style="color:var(--text)">Rate of Change (ROC):</strong> The
               percentage change in the index over a rolling 20-trading-day window, indicating short-term momentum.</p>
             <p style="margin-bottom:12px"><strong style="color:var(--text)">Max Drawdown:</strong> The maximum
@@ -2887,7 +2887,7 @@
     <!-- ===== TAB: HEATMAPS ===== -->
     <div class="tab-panel" id="tab-heatmaps">
       <div class="heatmap-view-row">
-        <label for="heatmapViewSelect" data-tooltip="View Mode toggle — Absolute Values show raw index levels (useful for spotting price floors/ceilings). % Change mode converts each cell to the Month-over-Month or Quarter-over-Quarter % return, making seasonal momentum patterns immediately obvious.">Heatmap View:</label>
+        <label for="heatmapViewSelect" data-tooltip="View Mode toggle - Absolute Values show raw index levels (useful for spotting price floors/ceilings). % Change mode converts each cell to the Month-over-Month or Quarter-over-Quarter % return, making seasonal momentum patterns immediately obvious.">Heatmap View:</label>
         <select id="heatmapViewSelect" onchange="onHeatmapViewChange()">
           <option value="absolute">Absolute Values</option>
           <option value="pct">% Change (MoM/QoQ)</option>
@@ -2897,7 +2897,7 @@
       <div class="heatmap-section mb-20">
         <div
           style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-          <div class="section-title" style="margin-bottom:0" data-tooltip="Cyclical Intensity (Monthly) — visualizes rate velocity by month. Red = Negative Momentum; Green = Asset Expansion. Essential for identifying recurring seasonal pivot points.">Monthly Performance Heatmap</div>
+          <div class="section-title" style="margin-bottom:0" data-tooltip="Cyclical Intensity (Monthly) - visualizes rate velocity by month. Red = Negative Momentum; Green = Asset Expansion. Essential for identifying recurring seasonal pivot points.">Monthly Performance Heatmap</div>
           <button class="dl-btn" id="monthlyHeatmapDlBtn">⬇ Download CSV</button>
         </div>
         <div class="heatmap-wrap">
@@ -2908,7 +2908,7 @@
       <div class="heatmap-section mb-20">
         <div
           style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-          <div class="section-title" style="margin-bottom:0" data-tooltip="Quarterly Heatmap — aggregates Jan–Mar into Q1, Apr–Jun into Q2 etc., reducing noise and exposing multi-month structural biases (e.g., Q4 is historically the strongest quarter for Capesize rates).">Quarterly Heatmap</div>
+          <div class="section-title" style="margin-bottom:0" data-tooltip="Quarterly Heatmap - aggregates Jan-Mar into Q1, Apr-Jun into Q2 etc., reducing noise and exposing multi-month structural biases (e.g., Q4 is historically the strongest quarter for Capesize rates).">Quarterly Heatmap</div>
           <button class="dl-btn" id="quarterlyHeatmapDlBtn">⬇ Download CSV</button>
         </div>
         <div class="heatmap-wrap">
@@ -2920,12 +2920,12 @@
     <!-- ===== TAB: QUARTERLY ===== -->
     <div class="tab-panel" id="tab-quarterly">
       <!-- Win-Rate KPI Cards -->
-      <div class="win-rate-row mb-20" id="winRateRow" data-tooltip="Probability of Expansion — historical 'Hit Rate' for this specific period. 60%+ signifies a high-conviction seasonal tailwind backed by decades of data."></div>
+      <div class="win-rate-row mb-20" id="winRateRow" data-tooltip="Probability of Expansion - historical 'Hit Rate' for this specific period. 60%+ signifies a high-conviction seasonal tailwind backed by decades of data."></div>
 
       <!-- Spaghetti Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Quarterly Spaghetti Chart — each line is one calendar year, all rebased to 100 at the start of Q1. This reveals path dependency: years that rally hard in Q1 rarely give it all back by Q4. The current year is highlighted in a bold accent color.">Quarterly Performance by Year (Spaghetti)</div>
+          <div class="chart-title" data-tooltip="Quarterly Spaghetti Chart - each line is one calendar year, all rebased to 100 at the start of Q1. This reveals path dependency: years that rally hard in Q1 rarely give it all back by Q4. The current year is highlighted in a bold accent color.">Quarterly Performance by Year (Spaghetti)</div>
         </div>
         <div class="spaghetti-wrap">
           <canvas id="spaghettiChart"></canvas>
@@ -2935,7 +2935,7 @@
       <!-- Quarterly Area Comparison 1 -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Quarterly Area Comparison — three overlaid series: current year (solid), prior year (dashed), and the 5-year rolling average (shaded). When the current year is tracking above both, it confirms a seasonally strong regime.">Quarterly Area Comparison &mdash; Current vs Prior vs 5Y Avg</div>
+          <div class="chart-title" data-tooltip="Quarterly Area Comparison - three overlaid series: current year (solid), prior year (dashed), and the 5-year rolling average (shaded). When the current year is tracking above both, it confirms a seasonally strong regime.">Quarterly Area Comparison &mdash; Current vs Prior vs 5Y Avg</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="quarterlyAreaComp1Chart"></canvas></div>
       </div>
@@ -2945,7 +2945,7 @@
       <!-- Quarterly Bar Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Trailing 4 Quarters Bar Chart — each bar represents one closed quarter's absolute level. Bar color reflects the Quarter-over-Quarter (QoQ) direction: green = improved vs prior quarter, red = deteriorated. Two consecutive red bars often signal a cyclical downturn.">Quarterly Bar Chart (Last 4 Quarters, QoQ Color)</div>
+          <div class="chart-title" data-tooltip="Trailing 4 Quarters Bar Chart - each bar represents one closed quarter's absolute level. Bar color reflects the Quarter-over-Quarter (QoQ) direction: green = improved vs prior quarter, red = deteriorated. Two consecutive red bars often signal a cyclical downturn.">Quarterly Bar Chart (Last 4 Quarters, QoQ Color)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="quarterlyBarChart"></canvas></div>
       </div>
@@ -2953,7 +2953,7 @@
       <!-- Quarterly Area Comparison 2 Combined -->      <!-- Quarterly Data Grid -->
       <div class="chart-section">
         <div class="chart-header">
-          <div class="chart-header-title" data-tooltip="Quarterly Data Grid — 8-year tabular record showing the opening, closing, high, and low value for each Q1–Q4 period. Also shows the QoQ and full-year change for each row. Useful for spotting which year's patterns most closely mirror the current cycle.">Quarterly Data Grid (Last 8 Years)</div>
+          <div class="chart-header-title" data-tooltip="Quarterly Data Grid - 8-year tabular record showing the opening, closing, high, and low value for each Q1-Q4 period. Also shows the QoQ and full-year change for each row. Useful for spotting which year's patterns most closely mirror the current cycle.">Quarterly Data Grid (Last 8 Years)</div>
           <button class="dl-btn" id="quarterlyDashGridDlBtn">&#x2B07; CSV</button>
         </div>
         <div style="overflow-x:auto">
@@ -2974,7 +2974,7 @@
       <!-- Liquidity Tracker (BDRY / BWET tabbed) -->
       <div class="chart-container mb-20" id="liqTrackerSection" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Liquidity Tracker — estimates the maximum safe daily trade size for BDRY or BWET using rolling volume, spread, and volatility data sourced from the liquidity CSV files. 'Safe Liquidity' is the threshold below which an institutional order won't materially move the ETF price.">Liquidity Tracker</div>
+          <div class="chart-title" data-tooltip="Liquidity Tracker - estimates the maximum safe daily trade size for BDRY or BWET using rolling volume, spread, and volatility data sourced from the liquidity CSV files. 'Safe Liquidity' is the threshold below which an institutional order won't materially move the ETF price.">Liquidity Tracker</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <!-- ETF toggle pills -->
             <div style="display:flex;gap:4px;background:var(--bg);border-radius:6px;padding:3px;">
@@ -3011,7 +3011,7 @@
           </div>
           <div
             style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">
-            Avg Volume &amp; Dollar Value — Rolling Windows</div>
+            Avg Volume &amp; Dollar Value - Rolling Windows</div>
           <div class="chart-canvas-wrap" style="height:260px;margin-bottom:20px;"><canvas id="bdryAvgChart"></canvas>
           </div>
           <div
@@ -3041,7 +3041,7 @@
             <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Comparison of daily dollar volume against institutional liquidity tiers (100K, 500K) to determine execution capacity and market depth.">Daily Volume &amp; Tier Thresholds</div>
           <div class="chart-canvas-wrap" style="height:200px;margin-bottom:28px;"><canvas id="bwetVolChart"></canvas>
           </div>
-            <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Moving average metrics used to smooth out daily volume spikes and identify structural liquidity trends over 20-day and 60-day windows.">Avg Volume &amp; Dollar Value — Rolling Windows</div>
+            <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Moving average metrics used to smooth out daily volume spikes and identify structural liquidity trends over 20-day and 60-day windows.">Avg Volume &amp; Dollar Value - Rolling Windows</div>
           <div class="chart-canvas-wrap" style="height:260px;margin-bottom:20px;"><canvas id="bwetAvgChart"></canvas>
           </div>
             <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:8px;" data-tooltip="Detailed session-by-session log of liquidity, volume, and volatility metrics for the selected ticker.">Daily Breakdown</div>
@@ -3056,7 +3056,7 @@
       <!-- Premium / Discount History -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Sentiment Oscillator — tracks the gap between the ETF price and its Net Asset Value (NAV). Deep discounts (< -2.5%) indicate panic; high premiums signal FOMO.">Premium / Discount History — BDRY &amp; BWET</div>
+          <div class="chart-title" data-tooltip="Sentiment Oscillator - tracks the gap between the ETF price and its Net Asset Value (NAV). Deep discounts (< -2.5%) indicate panic; high premiums signal FOMO.">Premium / Discount History - BDRY &amp; BWET</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <div class="toggle-group pd-ranges">
               <button class="toggle-btn" id="pdBtn1m" onclick="setPDWindow('1m')">1M</button>
@@ -3078,14 +3078,14 @@
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="pdHistChart"></canvas></div>
         <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
-          Premium/Discount = (Market Price − NAV) / NAV × 100. Positive = ETF trades above NAV; negative = discount.
+          Premium/Discount = (Market Price - NAV) / NAV × 100. Positive = ETF trades above NAV; negative = discount.
         </div>
       </div>
 
       <!-- Fund Flow History -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="AP Participation (Fund Flow) — tracks 'Authorized Participant' activity. Large green bars signal institutional accumulation; red bars during a rally signal distribution / profit-taking.">Fund Flow History (BDRY &amp; BWET)</div>
+          <div class="chart-title" data-tooltip="AP Participation (Fund Flow) - tracks 'Authorized Participant' activity. Large green bars signal institutional accumulation; red bars during a rally signal distribution / profit-taking.">Fund Flow History (BDRY &amp; BWET)</div>
           <div class="flex-row" style="gap:12px;align-items:center;">
             <div class="toggle-group flow-ranges" style="margin-right:8px;">
               <button class="toggle-btn" id="flowBtn1m" onclick="setFlowWindow('1m')">1M</button>
@@ -3114,10 +3114,10 @@
         <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;margin-top:10px;">ETF NAV Price ($)</div>
         <div class="chart-canvas-wrap" style="height:240px;margin-bottom:12px;"><canvas id="flowPriceChart"></canvas></div>
         
-        <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Daily Net Flow — each bar is a single day's net share creation/redemption in USD. Green bars = Authorized Participants created new ETF shares that day (net buying of underlying FFA futures). Red bars = APs redeemed shares (net selling). Large isolated red bars after a price rally often signal distribution; large green bars after a selloff signal accumulation.">Daily Net Flow — Inflow / Outflow ($)</div>
+        <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Daily Net Flow - each bar is a single day's net share creation/redemption in USD. Green bars = Authorized Participants created new ETF shares that day (net buying of underlying FFA futures). Red bars = APs redeemed shares (net selling). Large isolated red bars after a price rally often signal distribution; large green bars after a selloff signal accumulation.">Daily Net Flow - Inflow / Outflow ($)</div>
         <div class="chart-canvas-wrap" style="height:180px;margin-bottom:12px;"><canvas id="flowDailyChart"></canvas></div>
         
-        <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Cumulative Net Flow ($) — running total of all daily creations minus redemptions. Recalculated to $0 at the left edge of the selected window. A persistently rising line = institutional capital building a position. A sharply falling line = institutional exit.">Cumulative Net Flow ($)</div>
+        <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;" data-tooltip="Cumulative Net Flow ($) - running total of all daily creations minus redemptions. Recalculated to $0 at the left edge of the selected window. A persistently rising line = institutional capital building a position. A sharply falling line = institutional exit.">Cumulative Net Flow ($)</div>
         <div class="chart-canvas-wrap" style="height:240px;"><canvas id="flowCumChart"></canvas></div>
         <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
           Daily flows represent creations/redemptions in USD. Cumulative flow is recalculated to start from $0 at the beginning of the selected range.
@@ -3127,7 +3127,7 @@
       <!-- ETF Historical Volatility -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Annualized Historical Volatility — computes rolling std dev of log-returns × √252. Four regimes are coloured by all-time HV percentile: Blue (Low <25th), Green (Normal 25–75th), Amber (Elevated 75–90th), Red (Spike >90th). Compare current regime to see if the freight ETF is entering a volatility compression or expansion phase.">Historical Volatility — BDRY &amp; BWET</div>
+          <div class="chart-title" data-tooltip="Annualized Historical Volatility - computes rolling std dev of log-returns × √252. Four regimes are coloured by all-time HV percentile: Blue (Low <25th), Green (Normal 25-75th), Amber (Elevated 75-90th), Red (Spike >90th). Compare current regime to see if the freight ETF is entering a volatility compression or expansion phase.">Historical Volatility - BDRY &amp; BWET</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="etfHvBtn3y" onclick="setETFHVWindow('3y')">3Y</button>
             <button class="toggle-btn" id="etfHvBtn5y" onclick="setETFHVWindow('5y')">5Y</button>
@@ -3150,8 +3150,8 @@
         <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
           Annualized HV = rolling std dev of log returns × √252. Computed from daily close prices (bdry_liquidity.csv / bwet_liquidity.csv). Regimes based on 1Y HV vs all-time percentile: &nbsp;
           <span style="color:#58a6ff">■ Low</span> (&lt;25th) &nbsp;
-          <span style="color:#3fb950">■ Normal</span> (25–75th) &nbsp;
-          <span style="color:#e3b341">■ Elevated</span> (75–90th) &nbsp;
+          <span style="color:#3fb950">■ Normal</span> (25-75th) &nbsp;
+          <span style="color:#e3b341">■ Elevated</span> (75-90th) &nbsp;
           <span style="color:#f85149">■ Spike</span> (&gt;90th)
         </div>
       </div>
@@ -3159,7 +3159,7 @@
       <!-- NEW: Cross-Asset Correlation Section -->
       <div class="chart-container mb-20" style="margin-top:24px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="ETF-to-Index Pearson Correlation — shows how tightly BDRY/BWET tracks BDI, BCI, BCTI, BDTI and other benchmarks. Correlation below 0.7 over 1Y may indicate tracking drift caused by roll costs or futures market dislocation.">Cross-Asset Correlation (ETF vs Indices)</div>
+          <div class="chart-title" data-tooltip="ETF-to-Index Pearson Correlation - shows how tightly BDRY/BWET tracks BDI, BCI, BCTI, BDTI and other benchmarks. Correlation below 0.7 over 1Y may indicate tracking drift caused by roll costs or futures market dislocation.">Cross-Asset Correlation (ETF vs Indices)</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="corr-btn active" id="etfCorrBtnall" onclick="renderETFCorrMatrix('all')">All Time</button>
             <button class="corr-btn" id="etfCorrBtn5y" onclick="renderETFCorrMatrix('5y')">5Y</button>
@@ -3238,19 +3238,19 @@
       </div>
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Decade-Scale Benchmarks — yearly average closing rates. Tracks the slow-moving structural 'higher lows' characteristic of a tightening global fleet.">Multi-Year Rates (Annual Averages by Product)</div>
+          <div class="chart-title" data-tooltip="Decade-Scale Benchmarks - yearly average closing rates. Tracks the slow-moving structural 'higher lows' characteristic of a tightening global fleet.">Multi-Year Rates (Annual Averages by Product)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="yearlyMultiRatesChart"></canvas></div>
       </div>
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Intra-Year Trajectory — monthly average rates for the active year. Colour coding shows the MoM trend acceleration or decay.">Shipping Rates &mdash; Current Year Monthly Bar</div>
+          <div class="chart-title" data-tooltip="Intra-Year Trajectory - monthly average rates for the active year. Colour coding shows the MoM trend acceleration or decay.">Shipping Rates &mdash; Current Year Monthly Bar</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="yearlyShippingRatesChart"></canvas></div>
       </div>
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Seasonal Fingerprint — overlays current action against the last 3 clusters. Reveals if current freight pricing is leading or lagging its historical average.">Rates &mdash; Multi-Year Overlay</div>
+          <div class="chart-title" data-tooltip="Seasonal Fingerprint - overlays current action against the last 3 clusters. Reveals if current freight pricing is leading or lagging its historical average.">Rates &mdash; Multi-Year Overlay</div>
           <select id="ratesOverlayProduct">
             <option value="bdiy">Baltic Dry Index (BDI)</option>
             <option value="bdry_spot">BDRY Spot Composite</option>
@@ -3268,7 +3268,7 @@
       </div>
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Volatility Risk Curve — maps the maximum depth of retracements over 5 years. Critical for identifying whether current pain is typical or structural.">Drawdown % (52-Week Rolling, Last 5 Years)</div>
+          <div class="chart-title" data-tooltip="Volatility Risk Curve - maps the maximum depth of retracements over 5 years. Critical for identifying whether current pain is typical or structural.">Drawdown % (52-Week Rolling, Last 5 Years)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="yearlyDrawdownChart"></canvas></div>
       </div>
@@ -3282,7 +3282,7 @@
       <!-- Spaghetti Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Full History Stacking — tracks index value by trading day for every year since 2008. Visualizes the recurring 'vessel rotation' and peak-demand months.">Monthly Performance by Year (Spaghetti)</div>
+          <div class="chart-title" data-tooltip="Full History Stacking - tracks index value by trading day for every year since 2008. Visualizes the recurring 'vessel rotation' and peak-demand months.">Monthly Performance by Year (Spaghetti)</div>
         </div>
         <div class="spaghetti-wrap">
           <canvas id="monthlySpaghettiChart"></canvas>
@@ -3292,7 +3292,7 @@
       <!-- Area Comparison Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Trajectory Divergence — current year vs. 5Y seasonal mean. When the current line breaks the 5Y average, it signals a fundamental break in global trade flows.">Monthly Area Comparison &mdash; Current vs Prior vs 5Y Avg</div>
+          <div class="chart-title" data-tooltip="Trajectory Divergence - current year vs. 5Y seasonal mean. When the current line breaks the 5Y average, it signals a fundamental break in global trade flows.">Monthly Area Comparison &mdash; Current vs Prior vs 5Y Avg</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="monthlyAreaCompChart"></canvas></div>
       </div>
@@ -3300,13 +3300,13 @@
       <!-- Bar Chart -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Rolling Momentum — a 12-month summary of rate velocity. Identifies the shift from one quarterly regime to the next.">Monthly Bar Chart (Last 12 Months)</div>
+          <div class="chart-title" data-tooltip="Rolling Momentum - a 12-month summary of rate velocity. Identifies the shift from one quarterly regime to the next.">Monthly Bar Chart (Last 12 Months)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:300px"><canvas id="monthlyBarChart"></canvas></div>
       </div>
       <div class="chart-section">
         <div class="chart-header">
-          <div class="chart-header-title" data-tooltip="Heatmap Resolution — Year vs Month. 8-year relative scaling ensures recent market extremes (2020+) remain visually distinct from 2008 records.">Monthly Data Grid</div>
+          <div class="chart-header-title" data-tooltip="Heatmap Resolution - Year vs Month. 8-year relative scaling ensures recent market extremes (2020+) remain visually distinct from 2008 records.">Monthly Data Grid</div>
           <button class="dl-btn" id="monthlyGridDlBtn">&#x2B07; CSV</button>
         </div>
         <div style="overflow-x:auto">
@@ -3321,7 +3321,7 @@
       <!-- 1. Bollinger Bands -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Volatility Envelope (20D, 2σ) — Identifies price 'tightening' (Squeeze) and expansion. Narrow bandwidth often precedes major directional breakouts; 'walking' the upper band confirms capital expansion.">Bollinger Bands (20-Day, 2σ)</div>
+          <div class="chart-title" data-tooltip="Volatility Envelope (20D, 2σ) - Identifies price 'tightening' (Squeeze) and expansion. Narrow bandwidth often precedes major directional breakouts; 'walking' the upper band confirms capital expansion.">Bollinger Bands (20-Day, 2σ)</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="bbBtn1y" onclick="setBBWindow('1y')">1Y</button>
             <button class="toggle-btn" id="bbBtn3y" onclick="setBBWindow('3y')">3Y</button>
@@ -3345,7 +3345,7 @@
       <!-- 1b. Historical Volatility -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" id="hvChartTitle" data-tooltip="Historical Volatility for the currently selected index (auto-updates with the product picker). Four colour-coded regimes based on the all-time HV percentile: Blue = Low (<25th), Green = Normal (25–75th), Amber = Elevated (75–90th), Red = Spike (>90th). A shift from Spike to Elevated often precedes a directional breakout.">Historical Volatility — Annualized (Log-Return Std Dev × √252)</div>
+          <div class="chart-title" id="hvChartTitle" data-tooltip="Historical Volatility for the currently selected index (auto-updates with the product picker). Four colour-coded regimes based on the all-time HV percentile: Blue = Low (<25th), Green = Normal (25-75th), Amber = Elevated (75-90th), Red = Spike (>90th). A shift from Spike to Elevated often precedes a directional breakout.">Historical Volatility - Annualized (Log-Return Std Dev × √252)</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="hvBtn3y" onclick="setHVWindow('3y')">3Y</button>
             <button class="toggle-btn" id="hvBtn5y" onclick="setHVWindow('5y')">5Y</button>
@@ -3368,8 +3368,8 @@
         <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
           Annualized HV = rolling std dev of log returns × √252. Regimes based on 1Y HV vs all-time percentile: &nbsp;
           <span style="color:#58a6ff">■ Low</span> (&lt;25th) &nbsp;
-          <span style="color:#3fb950">■ Normal</span> (25–75th) &nbsp;
-          <span style="color:#e3b341">■ Elevated</span> (75–90th) &nbsp;
+          <span style="color:#3fb950">■ Normal</span> (25-75th) &nbsp;
+          <span style="color:#e3b341">■ Elevated</span> (75-90th) &nbsp;
           <span style="color:#f85149">■ Spike</span> (&gt;90th)
         </div>
       </div>
@@ -3377,7 +3377,7 @@
       <!-- 2. Cape/Panamax Spread -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Sector Rotation Proxy — divides BCI by BPI. High (>2.5) signals Capesize overextension; Low (<1.2) suggests Capesize is historically undervalued vs. Grains. Measures iron ore velocity vs. agricultural flows.">Cape / Panamax Ratio — Iron Ore vs Bulk Grain Proxy</div>
+          <div class="chart-title" data-tooltip="Sector Rotation Proxy - divides BCI by BPI. High (>2.5) signals Capesize overextension; Low (<1.2) suggests Capesize is historically undervalued vs. Grains. Measures iron ore velocity vs. agricultural flows.">Cape / Panamax Ratio - Iron Ore vs Bulk Grain Proxy</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="spreadBtn3y" onclick="setSpreadWindow('3y')">3Y</button>
             <button class="toggle-btn" id="spreadBtn5y" onclick="setSpreadWindow('5y')">5Y</button>
@@ -3390,7 +3390,7 @@
       <!-- 3. Rate-of-Change Heatmap -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Rate-of-Change Heatmap — computes the % price change for every product over every major timeframe (5D, 1M, 3M, 6M, 1Y). Redder = falling faster; greener = gaining faster. Each row is one shipping index/ETF; each column is a timeframe. Use to instantly spot which class is leading or lagging.">Rate-of-Change Heatmap — All Products × Timeframes</div>
+          <div class="chart-title" data-tooltip="Rate-of-Change Heatmap - computes the % price change for every product over every major timeframe (5D, 1M, 3M, 6M, 1Y). Redder = falling faster; greener = gaining faster. Each row is one shipping index/ETF; each column is a timeframe. Use to instantly spot which class is leading or lagging.">Rate-of-Change Heatmap - All Products × Timeframes</div>
         </div>
         <div id="rocHeatmap" style="overflow-x:auto;margin-top:4px;"></div>
       </div>
@@ -3398,7 +3398,7 @@
       <!-- 4. Seasonal Decomposition -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Seasonal Decomposition — the solid line is the average value for each calendar day across all historical years. The shaded band is ±1 standard deviation. When the current price (plotted externally) sits outside this band, it signals a statistically unusual seasonal deviation.">Seasonal Pattern — Avg Intra-Year ± 1σ (All Years)</div>
+          <div class="chart-title" data-tooltip="Seasonal Decomposition - the solid line is the average value for each calendar day across all historical years. The shaded band is ±1 standard deviation. When the current price (plotted externally) sits outside this band, it signals a statistically unusual seasonal deviation.">Seasonal Pattern - Avg Intra-Year ± 1σ (All Years)</div>
         </div>
         <div class="chart-canvas-wrap" style="height:320px"><canvas id="seasonalChart"></canvas></div>
       </div>
@@ -3406,7 +3406,7 @@
       <!-- 6. ETF Premium/Discount Z-Score Signal -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Market timing signal based on how much the P/D deviates from its 1-year mean. High Z (> +2) = Overheated; Low Z (< -2) = Capitulation.">ETF Premium/Discount Z-Score — Market Top &amp; Bottom Signal</div>
+          <div class="chart-title" data-tooltip="Market timing signal based on how much the P/D deviates from its 1-year mean. High Z (> +2) = Overheated; Low Z (< -2) = Capitulation.">ETF Premium/Discount Z-Score - Market Top &amp; Bottom Signal</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="pdZBtn1y" onclick="setPDZWindow('1y')">1Y</button>
             <button class="toggle-btn" id="pdZBtn3y" onclick="setPDZWindow('3y')">3Y</button>
@@ -3415,8 +3415,8 @@
         </div>
         <div class="chart-canvas-wrap" style="height:320px"><canvas id="pdZscoreChart"></canvas></div>
         <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
-          Z-Score = (Current P/D − Rolling 252-Day Mean) / Rolling 252-Day StdDev.
-          Z &gt; +2 = extreme premium (crowd chasing, potential top). Z &lt; −2 = extreme discount (forced selling, potential bottom).
+          Z-Score = (Current P/D - Rolling 252-Day Mean) / Rolling 252-Day StdDev.
+          Z &gt; +2 = extreme premium (crowd chasing, potential top). Z &lt; -2 = extreme discount (forced selling, potential bottom).
         </div>
       </div>
 
@@ -3424,7 +3424,7 @@
       <div class="chart-container mb-20">
         <div class="chart-header">
           <div class="flex-row" style="gap:12px;align-items:center;">
-            <div class="chart-title" data-tooltip="Fund Flow Signal Chart — overlays the ETF NAV price against the rolling 5-day net flow. Price rising + flow diverging downward = Distribution ⚠️ (sell signal). Price falling + flow positive = Accumulation ⚠️ (potential reversal). Price and flow both rising = Confirmed momentum.">ETF Fund Flow Signals — Momentum &amp; Divergence</div>
+            <div class="chart-title" data-tooltip="Fund Flow Signal Chart - overlays the ETF NAV price against the rolling 5-day net flow. Price rising + flow diverging downward = Distribution ⚠️ (sell signal). Price falling + flow positive = Accumulation ⚠️ (potential reversal). Price and flow both rising = Confirmed momentum.">ETF Fund Flow Signals - Momentum &amp; Divergence</div>
             <div style="display:flex;gap:4px;background:var(--bg);border-radius:6px;padding:3px;border:1px solid var(--border);">
               <button id="flowSigTabBdry" onclick="switchFlowSigTab('bdry')"
                 style="padding:4px 14px;border-radius:4px;border:none;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.3px;background:var(--accent);color:#fff;transition:all 0.15s;">BDRY</button>
@@ -3459,20 +3459,20 @@
       <!-- 5. Term Structure Slope -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Forward Curve Dynamics — plots settlement prices for future contract months (Q/Cal). 🔴 Backwardation (Down) = tight near-term supply; 🟢 Contango (Up) = anticipated future tightening or roll friction.">FFA Term Structure — BDRY &amp; BWET Curve Shape</div>
+          <div class="chart-title" data-tooltip="Forward Curve Dynamics - plots settlement prices for future contract months (Q/Cal). 🔴 Backwardation (Down) = tight near-term supply; 🟢 Contango (Up) = anticipated future tightening or roll friction.">FFA Term Structure - BDRY &amp; BWET Curve Shape</div>
         </div>
         <div id="termStructurePanel" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:4px;">
           <div>
             <div
               style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:8px;">
-              BDRY — Dry Bulk FFA Curve</div>
+              BDRY - Dry Bulk FFA Curve</div>
             <div class="chart-canvas-wrap" style="height:240px"><canvas id="termBdryChart"></canvas></div>
             <div id="termBdrySlope" style="margin-top:8px;font-size:12px;"></div>
           </div>
           <div>
             <div
               style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:8px;">
-              BWET — Tanker FFA Curve</div>
+              BWET - Tanker FFA Curve</div>
             <div class="chart-canvas-wrap" style="height:240px"><canvas id="termBwetChart"></canvas></div>
             <div id="termBwetSlope" style="margin-top:8px;font-size:12px;"></div>
           </div>
@@ -3482,7 +3482,7 @@
       <!-- 7. SGX FFA Forward Curve -->
       <div class="chart-container mb-20" style="margin-top:4px;">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="SGX FFA Forward Curve — Singapore Exchange-cleared FFA settlements across all live contract months for the selected vessel class (Capesize, Panamax, Supramax, Handysize). Click any data point to drill into that contract's full price history. Compare vs previous periods to see whether the curve has shifted in or out.">SGX FFA Forward Curve</div>
+          <div class="chart-title" data-tooltip="SGX FFA Forward Curve - Singapore Exchange-cleared FFA settlements across all live contract months for the selected vessel class (Capesize, Panamax, Supramax, Handysize). Click any data point to drill into that contract's full price history. Compare vs previous periods to see whether the curve has shifted in or out.">SGX FFA Forward Curve</div>
           <div class="flex-row" style="gap:6px;align-items:center;flex-wrap:wrap;">
             <div style="display:flex;gap:4px;">
               <button class="toggle-btn active" id="ffaBtnCape" onclick="setFFAProduct('cape')">Cape</button>
@@ -3513,7 +3513,7 @@
       <!-- 8. SGX FFA Contract History (shown on click) -->
       <div class="chart-container mb-20" id="ffaHistoryPanel" style="display:none;">
         <div class="chart-header">
-          <div class="chart-title" id="ffaHistoryTitle" data-tooltip="Historic Settlement Trace — settlement history for the selected forward contract. Essential for identifying whether the curve is hardening or melting.">Contract History</div>
+          <div class="chart-title" id="ffaHistoryTitle" data-tooltip="Historic Settlement Trace - settlement history for the selected forward contract. Essential for identifying whether the curve is hardening or melting.">Contract History</div>
           <div class="flex-row" style="gap:8px;align-items:center;">
             <span id="ffaHistoryBadge"
               style="font-size:11px;padding:3px 10px;border-radius:4px;font-weight:600;"></span>
@@ -3529,7 +3529,7 @@
       <!-- 9. Futures Premium (Basis) -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Market Basis — (Front-Month FFA vs. Synthetic Spot). Sustained Contango (>5%) indicates institutional 'Front-Running' of expected spot market rallies; deep Backwardation signals extreme near-term stress.">Futures vs Spot Premium — BDRYFF vs Synthetic Spot</div>
+          <div class="chart-title" data-tooltip="Market Basis - (Front-Month FFA vs. Synthetic Spot). Sustained Contango (>5%) indicates institutional 'Front-Running' of expected spot market rallies; deep Backwardation signals extreme near-term stress.">Futures vs Spot Premium - BDRYFF vs Synthetic Spot</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn" id="basisBtn3m" onclick="setBasisWindow('3m')">3M</button>
             <button class="toggle-btn active" id="basisBtn1y" onclick="setBasisWindow('1y')">1Y</button>
@@ -3549,14 +3549,14 @@
         </div>
         <div class="chart-canvas-wrap" style="height:320px"><canvas id="basisChart"></canvas></div>
         <div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:0 4px;">
-          Premium % = (Front Month FFA − Combined Spot Index) / Combined Spot × 100. Shaded green = Contango, Red = Backwardation.
+          Premium % = (Front Month FFA - Combined Spot Index) / Combined Spot × 100. Shaded green = Contango, Red = Backwardation.
         </div>
       </div>
 
       <!-- 10. Vessel-Class Contribution to BDI -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="BDI Attribution — decomposes daily moves by weighting (Capesize 50%, Panamax 40%, Supramax 10%). Reveals whether a rally is broad-based or driven by a specific commodity sector (e.g. Iron Ore vs. Grains).">BDI Daily Change — Vessel Class Contribution</div>
+          <div class="chart-title" data-tooltip="BDI Attribution - decomposes daily moves by weighting (Capesize 50%, Panamax 40%, Supramax 10%). Reveals whether a rally is broad-based or driven by a specific commodity sector (e.g. Iron Ore vs. Grains).">BDI Daily Change - Vessel Class Contribution</div>
           <div class="flex-row" style="gap:6px;align-items:center;">
             <button class="toggle-btn active" id="bdiContribBtn3m" onclick="setBDIContribWindow('3m')">3M</button>
             <button class="toggle-btn" id="bdiContribBtn6m" onclick="setBDIContribWindow('6m')">6M</button>
@@ -3580,10 +3580,10 @@
         </div>
       </div>
 
-      <!-- 11. Lead–Lag Correlation Analysis -->
+      <!-- 11. Lead-Lag Correlation Analysis -->
       <div class="chart-container mb-20">
         <div class="chart-header">
-          <div class="chart-title" data-tooltip="Predictive Lag Analysis — identifies which assets lead others. Yellow dot marks the 'Sweet Spot' where Asset A most reliably predicts Asset B.">Lead–Lag Correlation (Cross-Correlation of Log Returns)</div>
+          <div class="chart-title" data-tooltip="Predictive Lag Analysis - identifies which assets lead others. Yellow dot marks the 'Sweet Spot' where Asset A most reliably predicts Asset B.">Lead-Lag Correlation (Cross-Correlation of Log Returns)</div>
         </div>
         <div class="signals-controls">
           <label for="leadLagPair" class="context-label" style="margin-bottom:0">Pairs:</label>
@@ -3701,7 +3701,7 @@
   </div>
 
   <div class="sq-panel" id="panel-signals">
-    <button class="sq-q" onclick="sq('What is the current quantitative regime for dry bulk — Accumulation, Expansion, Distribution, or Contraction — and what does it mean?')">What regime is dry bulk in right now?</button>
+    <button class="sq-q" onclick="sq('What is the current quantitative regime for dry bulk - Accumulation, Expansion, Distribution, or Contraction - and what does it mean?')">What regime is dry bulk in right now?</button>
     <button class="sq-q" onclick="sq('What is the current quantitative regime for tankers?')">What regime is the tanker market in?</button>
     <button class="sq-q" onclick="sq('Is the system flagging any Divergence signals right now, where analyst sentiment contradicts the quantitative data?')">Are there any Divergence signals active?</button>
     <button class="sq-q" onclick="sq('Is there a Bull or Bear Confluence active in dry bulk? Explain what is driving it.')">Is there a Confluence signal in dry bulk?</button>
@@ -3728,7 +3728,7 @@
   </div>
 
   <div class="sq-panel" id="panel-trade">
-    <button class="sq-q" onclick="sq('What are the main upside and downside risks for the BDI over the next quarter?')">BDI upside vs downside risks — next quarter?</button>
+    <button class="sq-q" onclick="sq('What are the main upside and downside risks for the BDI over the next quarter?')">BDI upside vs downside risks - next quarter?</button>
     <button class="sq-q" onclick="sq('Which vessel segment has the best short-term fundamental setup right now?')">Which vessel segment has the best setup now?</button>
     <button class="sq-q" onclick="sq('What macro catalysts could trigger a regime change in the tanker market?')">What could flip the tanker regime?</button>
     <button class="sq-q" onclick="sq('What is the consensus 6-month outlook for the tanker market based on all available reports?')">What is the 6-month tanker consensus?</button>
@@ -3766,7 +3766,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
   <div id="global-tooltip"></div>
 
   <script>
-    // Global Tooltip Logic — stable, anchored positioning (centers on element)
+    // Global Tooltip Logic - stable, anchored positioning (centers on element)
     (function() {
       const tooltip = document.getElementById('global-tooltip');
       let hideTimeout = null;
@@ -3826,7 +3826,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       document.addEventListener('touchstart', function(e) {
         const target = e.target.closest('[data-tooltip]');
         if (!target) {
-          // Tap on non-tooltip area — hide any visible tooltip immediately
+          // Tap on non-tooltip area - hide any visible tooltip immediately
           if (touchDismiss) { clearTimeout(touchDismiss); touchDismiss = null; }
           tooltip.classList.remove('visible');
           return;
@@ -3948,18 +3948,18 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
     // Product config
     const PRODUCTS = {
-      bdiy: { label: 'Baltic Dry Index (BDI)', file: 'bdiy_historical.csv', color: '#58a6ff', tt: 'Baltic Dry Index (BDI) — the global gold standard for dry bulk freight across Capesize (50%), Panamax (40%), and Supramax (10%) vessels. A primary leading indicator of global industrial demand and raw material trade velocity.' },
-      bdry_spot: { label: 'BDRY Spot Composite', file: null, color: '#f0c040', computed: true, tt: 'Synthetic BDRY Spot — a weighted composite index based on Solactive methodology (50% Cape, 40% Panamax, 10% Supramax). Serves as the fundamental \'Spot Anchor\' for the BDRY ETF pricing model.' },
-      cape: { label: 'Capesize', file: 'cape_historical.csv', color: '#3fb950', tt: 'Capesize Vessels (180K DWT) — the heavyweights of the dry bulk fleet, primarily hauling iron ore and coal. Highly sensitive to Chinese infrastructure cycles and global steel production sentiment.' },
-      panama: { label: 'Panamax', file: 'panama_historical.csv', color: '#d29922', tt: 'Panamax Vessels (82K DWT) — the global workhorse for grain and thermal coal trade. Balanced by seasonal harvest cycles and transit capacity through the Panama and Suez Canals.' },
-      suprama: { label: 'Supramax', file: 'suprama_historical.csv', color: '#f0883e', tt: 'Supramax Vessels (58K DWT) — versatile geared vessels hauling \'minor bulks\' like fertilizers, minerals, and steel. Offers lower volatility due to a highly diversified commodity base.' },
-      handysize: { label: 'Handysize', file: 'handysize_historical.csv', color: '#7ee787', tt: 'Handysize Vessels (38K DWT) — small, geared vessels capable of serving regional ports. Tracks the fragmented trade of specialized raw materials and finished industrial goods.' },
-      dirtytanker: { label: 'Dirty Tanker (BDTI)', file: 'dirtytanker_historical.csv', color: '#e3b341', tt: 'Baltic Dirty Tanker Index (BDTI) — tracks the cost of hauling crude oil on VLCC, Suezmax, and Aframax vessels. Driven by OPEC+ output, refinery runs, and geopolitical energy shocks.' },
-      cleantanker: { label: 'Clean Tanker (BCTI)', file: 'cleantanker_historical.csv', color: '#a371f7', tt: 'Baltic Clean Tanker Index (BCTI) — monitors the freight rates for refined petroleum products (Gasoline, Diesel, Jet Fuel, Naphtha). Tied to global refining margins and seasonal demand.' },
-      bdryff: { label: 'BDRY Freight Futures (BDRYFF)', file: 'bdryff_history.csv', color: '#00bfff', solactive: true, tt: 'BDRY Freight Futures (BDRYFF) — tracks the front-month settlement prices of Dry Bulk FFAs. Represents the market\'s \'Forward Expectation\' vs. its \'Spot Reality\'.' },
-      bwetff: { label: 'BWET Freight Futures (BWETFF)', file: 'bwetff_history.csv', color: '#ff6b6b', solactive: true, tt: 'BWET Freight Futures (BWETFF) — tracks the settlement of Dirty Tanker (TD3C/TD20) forward contracts. High-conviction tool for hedging crude oil maritime logistics risk.' },
-      bdry: { label: 'BDRY Stock Price', file: null, color: '#f0c040', computed: true, tt: 'Breakwave Dry Bulk Shipping ETF (BDRY) — the first ETF providing direct access to the dry bulk freight market via near-term futures. Optimized for maximum spot-freight sensitivity.' },
-      bwet: { label: 'BWET Stock Price', file: null, color: '#ff6b6b', computed: true, tt: 'Breakwave Tanker Shipping ETF (BWET) — provides targeted exposure to the crude oil tanker market. Uses a laddered futures strategy to capture volatility in global energy transport.' },
+      bdiy: { label: 'Baltic Dry Index (BDI)', file: 'bdiy_historical.csv', color: '#58a6ff', tt: 'Baltic Dry Index (BDI) - the global gold standard for dry bulk freight across Capesize (50%), Panamax (40%), and Supramax (10%) vessels. A primary leading indicator of global industrial demand and raw material trade velocity.' },
+      bdry_spot: { label: 'BDRY Spot Composite', file: null, color: '#f0c040', computed: true, tt: 'Synthetic BDRY Spot - a weighted composite index based on Solactive methodology (50% Cape, 40% Panamax, 10% Supramax). Serves as the fundamental \'Spot Anchor\' for the BDRY ETF pricing model.' },
+      cape: { label: 'Capesize', file: 'cape_historical.csv', color: '#3fb950', tt: 'Capesize Vessels (180K DWT) - the heavyweights of the dry bulk fleet, primarily hauling iron ore and coal. Highly sensitive to Chinese infrastructure cycles and global steel production sentiment.' },
+      panama: { label: 'Panamax', file: 'panama_historical.csv', color: '#d29922', tt: 'Panamax Vessels (82K DWT) - the global workhorse for grain and thermal coal trade. Balanced by seasonal harvest cycles and transit capacity through the Panama and Suez Canals.' },
+      suprama: { label: 'Supramax', file: 'suprama_historical.csv', color: '#f0883e', tt: 'Supramax Vessels (58K DWT) - versatile geared vessels hauling \'minor bulks\' like fertilizers, minerals, and steel. Offers lower volatility due to a highly diversified commodity base.' },
+      handysize: { label: 'Handysize', file: 'handysize_historical.csv', color: '#7ee787', tt: 'Handysize Vessels (38K DWT) - small, geared vessels capable of serving regional ports. Tracks the fragmented trade of specialized raw materials and finished industrial goods.' },
+      dirtytanker: { label: 'Dirty Tanker (BDTI)', file: 'dirtytanker_historical.csv', color: '#e3b341', tt: 'Baltic Dirty Tanker Index (BDTI) - tracks the cost of hauling crude oil on VLCC, Suezmax, and Aframax vessels. Driven by OPEC+ output, refinery runs, and geopolitical energy shocks.' },
+      cleantanker: { label: 'Clean Tanker (BCTI)', file: 'cleantanker_historical.csv', color: '#a371f7', tt: 'Baltic Clean Tanker Index (BCTI) - monitors the freight rates for refined petroleum products (Gasoline, Diesel, Jet Fuel, Naphtha). Tied to global refining margins and seasonal demand.' },
+      bdryff: { label: 'BDRY Freight Futures (BDRYFF)', file: 'bdryff_history.csv', color: '#00bfff', solactive: true, tt: 'BDRY Freight Futures (BDRYFF) - tracks the front-month settlement prices of Dry Bulk FFAs. Represents the market\'s \'Forward Expectation\' vs. its \'Spot Reality\'.' },
+      bwetff: { label: 'BWET Freight Futures (BWETFF)', file: 'bwetff_history.csv', color: '#ff6b6b', solactive: true, tt: 'BWET Freight Futures (BWETFF) - tracks the settlement of Dirty Tanker (TD3C/TD20) forward contracts. High-conviction tool for hedging crude oil maritime logistics risk.' },
+      bdry: { label: 'BDRY Stock Price', file: null, color: '#f0c040', computed: true, tt: 'Breakwave Dry Bulk Shipping ETF (BDRY) - the first ETF providing direct access to the dry bulk freight market via near-term futures. Optimized for maximum spot-freight sensitivity.' },
+      bwet: { label: 'BWET Stock Price', file: null, color: '#ff6b6b', computed: true, tt: 'Breakwave Tanker Shipping ETF (BWET) - provides targeted exposure to the crude oil tanker market. Uses a laddered futures strategy to capture volatility in global energy transport.' },
     };
 
     // BDRY Spot weights (Solactive index methodology)
@@ -3975,7 +3975,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     ];
 
     // =====================================================================
-    // CHANGE 10 — Global CSV download utility
+    // CHANGE 10 - Global CSV download utility
     // =====================================================================
     function downloadCSV(filename, headers, rows) {
       const escape = v => {
@@ -4023,14 +4023,14 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     function fmt(n, decimals = 0) {
-      if (n == null || isNaN(n)) return '—';
+      if (n == null || isNaN(n)) return '-';
       return n.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
     }
 
     // fmtDate: format a Date object as YYYY-MM-DD using LOCAL time components.
     // Avoids toISOString() which converts to UTC and shifts dates for UTC+ users.
     function fmtDate(d) {
-      if (!d || isNaN(d.getTime())) return '—';
+      if (!d || isNaN(d.getTime())) return '-';
       const y = d.getFullYear();
       const m = String(d.getMonth() + 1).padStart(2, '0');
       const day = String(d.getDate()).padStart(2, '0');
@@ -4038,20 +4038,20 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     function fmtPct(n) {
-      if (n == null || isNaN(n)) return '—';
+      if (n == null || isNaN(n)) return '-';
       const s = (n >= 0 ? '+' : '') + (n * 100).toFixed(1) + '%';
       return s;
     }
 
     function fmtPctRaw(n) {
-      if (n == null || isNaN(n)) return '—';
+      if (n == null || isNaN(n)) return '-';
       const s = (n >= 0 ? '+' : '') + n.toFixed(2) + '%';
       return s;
     }
 
     function fmtPctDirect(n) {
       // n is already a percentage value (not fractional)
-      if (n == null || isNaN(n)) return '—';
+      if (n == null || isNaN(n)) return '-';
       return (n >= 0 ? '+' : '') + n.toFixed(1) + '%';
     }
 
@@ -4242,7 +4242,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // =====================================================================
-    // CHANGE 3 — Pearson correlation
+    // CHANGE 3 - Pearson correlation
     // =====================================================================
     function pearsonCorr(keyA, keyB, cutoffDate) {
       const pairsA = [], pairsB = [];
@@ -4318,7 +4318,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         });
       };
 
-      // Perf: disable all chart animations — eliminates per-frame repaints on every render
+      // Perf: disable all chart animations - eliminates per-frame repaints on every render
       Chart.defaults.animation = false;
       Chart.defaults.transitions = {};
     });
@@ -4442,7 +4442,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const bdryFlowPromise = fetchCSV('BDRY_flows.csv').then(r => { DATA.bdryFlows = parseFlowCsv(r); tick('BDRY Flows'); });
       const bwetFlowPromise = fetchCSV('BWET_flows.csv').then(r => { DATA.bwetFlows = parseFlowCsv(r); tick('BWET Flows'); });
 
-      // SGX FFA Futures — non-blocking; dashboard renders even if these fail
+      // SGX FFA Futures - non-blocking; dashboard renders even if these fail
       const sgxFiles = {
         cape: 'sgx_cape_futures.csv',
         panamax: 'sgx_panamax_futures.csv',
@@ -4517,7 +4517,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const year = d.getFullYear();
         const row = { date: d, ts, year, month, quarter };
         for (const key of PRODUCT_KEYS) {
-          if (PRODUCTS[key].computed) continue; // skip — derived below
+          if (PRODUCTS[key].computed) continue; // skip - derived below
           const r = maps[key][ts];
           row[key] = r ? r.value : null;
           row[`${key}_change`] = r ? r.change : null;
@@ -4551,7 +4551,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       }
       DATA.byYear = byYear;
 
-      // Per-product trading days — only count days where that product has actual data.
+      // Per-product trading days - only count days where that product has actual data.
       // This prevents "foreign" trading days from other products inflating the TD counter.
       // row[key+'_td'] = the Nth day that specific product had a value in that year.
       DATA.byYearProduct = {};
@@ -4567,7 +4567,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           DATA.byYearProduct[key][year].forEach((row, i) => { row[key + '_td'] = i + 1; });
         }
       }
-      // bdry_spot is computed — build its per-product byYear too
+      // bdry_spot is computed - build its per-product byYear too
       DATA.byYearProduct['bdry_spot'] = {};
       for (const row of DATA.master) {
         if (row.bdry_spot == null) continue;
@@ -4627,7 +4627,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const pctl10y = percentileRank(vals10y, currentPrice);
       const pctl5y = percentileRank(vals5y, currentPrice);
 
-      // Use per-product trading day for same-day comparison — avoids pollution from other products' calendars
+      // Use per-product trading day for same-day comparison - avoids pollution from other products' calendars
       const tdKey = productKey + '_td';
       const currentTradingDay = latest[tdKey] ?? latest.tradingDay;
       const sameDayVals = (DATA.byYearProduct[productKey]
@@ -4694,7 +4694,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         changeEl.textContent = `${sign}${stats.pctChange.toFixed(2)}% vs prior day`;
         changeEl.className = 'current-price-change ' + (stats.pctChange >= 0 ? 'change-pos' : 'change-neg');
       } else {
-        changeEl.textContent = '—';
+        changeEl.textContent = '-';
         changeEl.className = 'current-price-change';
       }
 
@@ -4702,7 +4702,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const sigEl = document.getElementById('dashSignal');
       sigEl.textContent = sig.text;
       sigEl.className = 'signal-badge ' + sig.cls;
-      sigEl.setAttribute('data-tooltip', `Marine Intelligence Signal for ${prod.label} — synthesized from 5Y Percentile and Z-Score. Identifies high-conviction 'Golden Dip' capitulation vs. systemic overextension.`);
+      sigEl.setAttribute('data-tooltip', `Marine Intelligence Signal for ${prod.label} - synthesized from 5Y Percentile and Z-Score. Identifies high-conviction 'Golden Dip' capitulation vs. systemic overextension.`);
 
       // MOMENTUM REGIME (NEW)
       renderRegimeBadge(productKey, stats.currentPrice);
@@ -4746,13 +4746,13 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       ddEl.textContent = (stats.drawdown * 100).toFixed(1) + '%';
       ddEl.className = 'stat-value ' + (stats.drawdown < -0.3 ? 'val-red' : stats.drawdown < -0.1 ? 'val-yellow' : 'val-green');
 
-      // CHANGE 11 — ROC20 stat card
+      // CHANGE 11 - ROC20 stat card
       const rocEl = document.getElementById('statRoc20');
       if (stats.roc20 != null) {
         rocEl.textContent = (stats.roc20 >= 0 ? '+' : '') + stats.roc20.toFixed(1) + '%';
         rocEl.className = 'stat-value ' + (stats.roc20 >= 0 ? 'val-green' : 'val-red');
       } else {
-        rocEl.textContent = '—';
+        rocEl.textContent = '-';
         rocEl.className = 'stat-value val-white';
       }
 
@@ -4766,7 +4766,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const ctx5yDevEl = document.getElementById('ctx5yDev');
       const ctx10yDevEl = document.getElementById('ctx10yDev');
       if (ctx5yAvgEl) {
-        ctx5yAvgEl.textContent = avg5y != null ? fmt(avg5y, 0) : '—';
+        ctx5yAvgEl.textContent = avg5y != null ? fmt(avg5y, 0) : '-';
         if (avg5y != null) {
           const dev5y = ((stats.currentPrice - avg5y) / avg5y * 100);
           const dev10y = avg10y != null ? ((stats.currentPrice - avg10y) / avg10y * 100) : null;
@@ -4776,7 +4776,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             ctx10yDevEl.textContent = (dev10y >= 0 ? '+' : '') + dev10y.toFixed(1) + '%';
             ctx10yDevEl.className = 'context-value ' + (dev10y >= 0 ? 'val-green' : 'val-red');
           } else {
-            ctx10yDevEl.textContent = '—';
+            ctx10yDevEl.textContent = '-';
             ctx10yDevEl.className = 'context-value';
           }
         }
@@ -4917,7 +4917,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // =====================================================================
-    // CHANGE 1 — Drawdown Chart
+    // CHANGE 1 - Drawdown Chart
     // =====================================================================
     function renderDrawdownChart(productKey) {
       const rows = getRows(productKey);
@@ -4932,7 +4932,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const ddData = [];
       const labels = [];
       const W = 365 * 24 * 60 * 60 * 1000; // 365 days in ms
-      // deque holds indices into `rows` (not filtered) — values are non-increasing
+      // deque holds indices into `rows` (not filtered) - values are non-increasing
       const deque = [];
       let lo = 0; // left pointer into rows
       let fi = 0; // pointer into rows for the current filtered[i]
@@ -5017,7 +5017,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // =====================================================================
-    // CHANGE 2 — Yearly Performance Table
+    // CHANGE 2 - Yearly Performance Table
     // =====================================================================
     let _yearlyPerfProductKey = null;
     let _yearlyPerfData = null;
@@ -5062,19 +5062,19 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const priorAvg = priorYear != null ? yearlyAvgs[priorYear] : null;
         let yoyPct = null;
         let yoyCls = '';
-        let yoyStr = '—';
+        let yoyStr = '-';
         if (priorAvg != null && priorAvg !== 0) {
           yoyPct = ((avg - priorAvg) / priorAvg) * 100;
           yoyStr = (yoyPct >= 0 ? '+' : '') + yoyPct.toFixed(1) + '%';
           yoyCls = yoyPct >= 0 ? 'val-green' : 'val-red';
         }
 
-        let volPct = '—';
+        let volPct = '-';
         if (mn != null && mx != null && avg != null && avg !== 0) {
           volPct = ((mx - mn) / Math.abs(avg) * 100).toFixed(1) + '%';
         }
 
-        let tpPct = '—';
+        let tpPct = '-';
         if (mn != null && mx != null && mn > 0) {
           tpPct = ((mx - mn) / mn * 100).toFixed(1) + '%';
         }
@@ -5136,7 +5136,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // =====================================================================
-    // CHANGE 3 — Correlation Matrix
+    // CHANGE 3 - Correlation Matrix
     // =====================================================================
     const CORR_LABELS = ['BDI', 'BDRY Spot', 'Cape', 'Panama', 'Supra', 'Handy', 'DirtyT', 'CleanT', 'BDRYFF', 'BWETFF'];
 
@@ -5184,7 +5184,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             const r = getCorrCached(PRODUCT_KEYS[i], PRODUCT_KEYS[j], tf);
             const bg = corrColor(r);
             const textCol = r != null && Math.abs(r) > 0.4 ? '#fff' : '#e6edf3';
-            html += `<td style="background:${bg};color:${textCol}">${r != null ? r.toFixed(2) : '—'}</td>`;
+            html += `<td style="background:${bg};color:${textCol}">${r != null ? r.toFixed(2) : '-'}</td>`;
           }
         }
         html += '</tr>';
@@ -5212,7 +5212,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           const r = getCorrCached(etfKeys[i], corrKeys[j], tf);
           const bg = corrColor(r);
           const textCol = r != null && Math.abs(r) > 0.4 ? '#fff' : '#e6edf3';
-          html += `<td style="background:${bg};color:${textCol}">${r != null ? r.toFixed(2) : '—'}</td>`;
+          html += `<td style="background:${bg};color:${textCol}">${r != null ? r.toFixed(2) : '-'}</td>`;
         }
         html += '</tr>';
       }
@@ -5308,7 +5308,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         for (let m = 0; m < 12; m++) {
           const v = matrix[y][m];
           if (v == null) {
-            html += `<td style="color:#484f58">—</td>`;
+            html += `<td style="color:#484f58">-</td>`;
           } else {
             const { min, max } = colStats[m];
             const ratio = max > min ? (v - min) / (max - min) : 0.5;
@@ -5344,7 +5344,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         for (let m = 0; m < 12; m++) {
           const v = matrix[y][m];
           if (v == null) {
-            html += `<td style="color:#484f58">—</td>`;
+            html += `<td style="color:#484f58">-</td>`;
           } else {
             // MoM %: compare to previous month (could be prior year month 11)
             let prevV = null;
@@ -5362,7 +5362,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
               pctStr = (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%';
               bg = heatmapColorPct(pct);
             } else {
-              pctStr = '—';
+              pctStr = '-';
             }
             html += `<td style="background:${bg};color:#e6edf3">
           <span class="heatmap-abs-val">${fmt(v, 0)}</span>
@@ -5420,7 +5420,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const quarters = ['Q1', 'Q2', 'Q3', 'Q4'];
       const years = DATA.years;
 
-      // Build quarter avgs per year — use cache
+      // Build quarter avgs per year - use cache
       const qAvg = {};
       for (const y of years) {
         qAvg[y] = {};
@@ -5461,7 +5461,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           if (wr > 60) { cls = 'wr-green'; valColor = 'var(--green)'; }
           else if (wr < 50) { cls = 'wr-red'; valColor = 'var(--red)'; }
         }
-        const pct = wr != null ? wr.toFixed(0) + '%' : '—';
+        const pct = wr != null ? wr.toFixed(0) + '%' : '-';
         const barW = wr != null ? wr : 0;
         const card = document.createElement('div');
         card.className = `win-rate-card ${cls}`;
@@ -5504,7 +5504,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         for (const q of quarters) {
           const v = matrix[y][q];
           if (v == null) {
-            html += `<td style="color:#484f58">—</td>`;
+            html += `<td style="color:#484f58">-</td>`;
           } else {
             // QoQ %: compare to prior quarter
             let prevV = null;
@@ -5631,7 +5631,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const latest = rows[rows.length - 1];
         const prev = rows[rows.length - 2];
         const chg = prev ? ((latest.value - prev.value) / prev.value * 100) : null;
-        const chgStr = chg != null ? `${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%` : '—';
+        const chgStr = chg != null ? `${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%` : '-';
         const chgCls = chg == null ? '' : (chg >= 0 ? 'change-pos' : 'change-neg');
 
         // Stats strip values
@@ -5642,7 +5642,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const vals52w = allVals.slice(-252);
         const w52High = Math.max(...vals52w);
         const w52Low = Math.min(...vals52w);
-        const w52RangeStr = `${fmt(w52High, precision)} — ${fmt(w52Low, precision)}`;
+        const w52RangeStr = `${fmt(w52High, precision)} - ${fmt(w52Low, precision)}`;
 
         // 2. 52W Position
         const w52PosNum = ((latest.value - w52Low) / (w52High - w52Low) * 100);
@@ -5654,7 +5654,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const jan1 = new Date(currentYear, 0, 1);
         const priorYearRows = rows.filter(r => r.date < jan1);
         const ytdBase = priorYearRows.length ? priorYearRows[priorYearRows.length - 1].value : null;
-        let ytdStr = '—', ytdCls = '';
+        let ytdStr = '-', ytdCls = '';
         if (ytdBase) {
           const ytd = ((latest.value - ytdBase) / ytdBase * 100);
           ytdStr = (ytd >= 0 ? '+' : '') + ytd.toFixed(1) + '%';
@@ -5682,7 +5682,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const startIdx5y = defaultStartIdx < 0 ? 0 : defaultStartIdx;
 
         card.innerHTML = `
-      <div class="card-header-bar" data-tooltip="${prod.label} — Displays the full price history and rolling analytics (52W range, YTD return, trough recovery) for this specific shipping freight benchmark. Scroll down for chart controls.">${prod.label}</div>
+      <div class="card-header-bar" data-tooltip="${prod.label} - Displays the full price history and rolling analytics (52W range, YTD return, trough recovery) for this specific shipping freight benchmark. Scroll down for chart controls.">${prod.label}</div>
       <div class="index-chart-header">
         <div class="index-chart-subtitle">
           <span>${fmt(latest.value, precision)}</span>
@@ -5705,19 +5705,19 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       </div>
       <div class="index-stats-strip">
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="52-Week High / Low — the exact peak and trough values over the last 52 trading weeks. Knowing the distance between these two levels reveals whether the product is in a narrow consolidation or a wide cyclical swing.">52W High — Low</div>
+          <div class="index-stat-mini-label" data-tooltip="52-Week High / Low - the exact peak and trough values over the last 52 trading weeks. Knowing the distance between these two levels reveals whether the product is in a narrow consolidation or a wide cyclical swing.">52W High - Low</div>
           <div class="index-stat-mini-val val-white">${w52RangeStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="52-Week Position — percentile of the current value within the 52W High–Low range. 0% = at the year's low; 100% = at the year's high. Below 20% = strong potential mean-reversion opportunity.">52W Position</div>
+          <div class="index-stat-mini-label" data-tooltip="52-Week Position - percentile of the current value within the 52W High-Low range. 0% = at the year's low; 100% = at the year's high. Below 20% = strong potential mean-reversion opportunity.">52W Position</div>
           <div class="index-stat-mini-val ${w52PosCls}">${w52PosStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="Year-to-Date Return — the % change from the last closing value of December 31 to today. A negative YTD while percentiles are rising signals early-stage recovery.">YTD %</div>
+          <div class="index-stat-mini-label" data-tooltip="Year-to-Date Return - the % change from the last closing value of December 31 to today. A negative YTD while percentiles are rising signals early-stage recovery.">YTD %</div>
           <div class="index-stat-mini-val ${ytdCls}">${ytdStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="Recovery from Trough — % gained from the lowest point seen in the last 365 days to today. A recovery >30% from trough that still shows a low 52W position often signals the early innings of a sustained trend.">From Last Trough</div>
+          <div class="index-stat-mini-label" data-tooltip="Recovery from Trough - % gained from the lowest point seen in the last 365 days to today. A recovery >30% from trough that still shows a low 52W position often signals the early innings of a sustained trend.">From Last Trough</div>
           <div class="index-stat-mini-val ${troughCls}">${troughStr}</div>
         </div>
       </div>`;
@@ -5842,7 +5842,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     // ETF TAB (CHANGE 8)
     // =====================================================================
     // =====================================================================
-    // PREMIUM / DISCOUNT — History Chart (ETF Tab)
+    // PREMIUM / DISCOUNT - History Chart (ETF Tab)
     // =====================================================================
     var _pdWindow = '1y';
     function setPDWindow(w) {
@@ -5947,7 +5947,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
               callbacks: {
                 label: function(c) { 
                   const v = c.parsed.y;
-                  return ' ' + c.dataset.label + ': ' + (v != null ? v.toFixed(3) + '%' : '—'); 
+                  return ' ' + c.dataset.label + ': ' + (v != null ? v.toFixed(3) + '%' : '-'); 
                 }
               }
             },
@@ -5998,7 +5998,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // =====================================================================
-    // PREMIUM / DISCOUNT — Z-Score Signal Chart (Signals Tab)
+    // PREMIUM / DISCOUNT - Z-Score Signal Chart (Signals Tab)
     // =====================================================================
     var _pdZWindow = '1y';
     function setPDZWindow(w) {
@@ -6072,7 +6072,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
               borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.1, spanGaps: true, hidden: pdzHidden['BWET Z-Score'] || false,
             },
             { label: '+2σ', data: allLabels.map(function () { return 2; }), borderColor: 'rgba(248,81,73,0.5)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0, hidden: pdzHidden['+2σ'] || false },
-            { label: '−2σ', data: allLabels.map(function () { return -2; }), borderColor: 'rgba(63,185,80,0.5)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0, hidden: pdzHidden['−2σ'] || false },
+            { label: '-2σ', data: allLabels.map(function () { return -2; }), borderColor: 'rgba(63,185,80,0.5)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0, hidden: pdzHidden['-2σ'] || false },
             { label: 'Zero', data: allLabels.map(function () { return 0; }), borderColor: 'rgba(139,148,158,0.3)', borderWidth: 1, pointRadius: 0, fill: false, tension: 0, hidden: pdzHidden['Zero'] || false },
           ],
         },
@@ -6083,7 +6083,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             legend: { position: 'top', labels: { usePointStyle: true, font: { size: 11 } } },
             tooltip: {
               callbacks: {
-                label: function (c) { return ' ' + c.dataset.label + ': ' + (c.parsed.y != null ? c.parsed.y.toFixed(2) : '—'); }
+                label: function (c) { return ' ' + c.dataset.label + ': ' + (c.parsed.y != null ? c.parsed.y.toFixed(2) : '-'); }
               }
             },
           },
@@ -6252,12 +6252,12 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       var fStrColor = fStrVal > 1.5 ? 'rgb(248,81,73)' : (fStrVal < -1.5 ? 'rgb(63,185,80)' : 'rgb(139,148,158)');
       var fStrSub = fStrVal > 1.5 ? "Overbought" : (fStrVal < -1.5 ? "Oversold" : "Neutral");
       kpiHtml += buildCard("Flow Stretch", (fStrVal > 0 ? '+' : '') + fStrVal.toFixed(1) + 'σ', fStrColor, fStrSub,
-        'Flow Stretch (σ) — today\'s raw net flow standardized against its 30-day rolling mean and std dev. +2σ = abnormally heavy inflows vs recent baseline (momentum exhaustion risk). -2σ = abnormally heavy redemptions (capitulation flush, potential reversal). Neutral zone (-1.5 to +1.5) = flows are within normal daily variation.');
+        'Flow Stretch (σ) - today\'s raw net flow standardized against its 30-day rolling mean and std dev. +2σ = abnormally heavy inflows vs recent baseline (momentum exhaustion risk). -2σ = abnormally heavy redemptions (capitulation flush, potential reversal). Neutral zone (-1.5 to +1.5) = flows are within normal daily variation.');
       
       var fRegColor = last.f_reg === 'Accumulation' ? 'rgb(63,185,80)' : (last.f_reg === 'Distribution' ? 'rgb(248,81,73)' : 'rgb(139,148,158)');
       var fRegSub = last.f_reg === 'Accumulation' ? "5D &gt; 20D Inflows" : (last.f_reg === 'Distribution' ? "5D &gt; 20D Outflows" : "No Clear Trend");
       kpiHtml += buildCard("Flow Regime", last.f_reg, fRegColor, fRegSub,
-        'Flow Regime — compares 5-day vs 20-day cumulative net flows to classify the institutional participation trend. Accumulation = both 5D and 20D positive AND 5D exceeds 20D (accelerating institutional buying). Distribution = both negative AND 5D more negative than 20D (accelerating selling). Neutral = mixed or flat signals with no clear directional bias.');
+        'Flow Regime - compares 5-day vs 20-day cumulative net flows to classify the institutional participation trend. Accumulation = both 5D and 20D positive AND 5D exceeds 20D (accelerating institutional buying). Distribution = both negative AND 5D more negative than 20D (accelerating selling). Neutral = mixed or flat signals with no clear directional bias.');
 
       var fDivColor = 'rgb(139,148,158)';
       var fDivSub = "Price & Flow Align";
@@ -6265,14 +6265,14 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       else if (last.f_div === 'Confirmed') { fDivColor = 'rgb(88,166,255)'; fDivSub = "Price ↑, Flow ↑"; }
       else if (last.f_div === 'Weak') { fDivSub = "Price ↓, Flow ↓"; }
       kpiHtml += buildCard("Flow Divergence", last.f_div.replace(' ⚠️',''), fDivColor, fDivSub,
-        'Flow Divergence — compares 5-day ETF price return vs 5-day net flow direction. Distribution ⚠️ = price rising but capital is leaving (smart money selling into strength — high-conviction bearish). Accumulation ⚠️ = price falling but capital entering (smart money accumulating — high-conviction bullish). Confirmed = price and flows rising together. Weak = both declining.');
+        'Flow Divergence - compares 5-day ETF price return vs 5-day net flow direction. Distribution ⚠️ = price rising but capital is leaving (smart money selling into strength - high-conviction bearish). Accumulation ⚠️ = price falling but capital entering (smart money accumulating - high-conviction bullish). Confirmed = price and flows rising together. Weak = both declining.');
 
       var fPrVal = last.f_pr != null ? last.f_pr : 0;
       var fPrAbs = Math.abs(fPrVal);
       var fPrColor = fPrAbs > 1.5 ? 'rgb(248,81,73)' : (fPrAbs < 0.5 ? 'rgb(139,148,158)' : 'rgb(227,179,65)');
       var fPrSub = fPrAbs > 1.5 ? "Extreme Intensity" : (fPrAbs < 0.5 ? "Low Intensity" : "Average Intensity");
       kpiHtml += buildCard("Flow Pressure", fPrVal.toFixed(1) + 'x', fPrColor, fPrSub,
-        'Flow Pressure (x) — the 5-day cumulative net flow divided by the 30-day average absolute daily flow. A reading of 2.0x means today\'s 5-day buying/selling is double the normal daily average — extreme directional pressure. Above 1.5x historically precedes sharp ETF price moves. Positive = buy pressure; Negative = sell pressure. Below 0.5x = market indifference.');
+        'Flow Pressure (x) - the 5-day cumulative net flow divided by the 30-day average absolute daily flow. A reading of 2.0x means today\'s 5-day buying/selling is double the normal daily average - extreme directional pressure. Above 1.5x historically precedes sharp ETF price moves. Positive = buy pressure; Negative = sell pressure. Below 0.5x = market indifference.');
 
       document.getElementById('flowSigKpiStrip').innerHTML = kpiHtml;
 
@@ -6351,7 +6351,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
               callbacks: {
                 label: function (c) {
                   if (c.dataset.yAxisID === 'y1') return ' ' + c.dataset.label + ': $' + fmt(c.parsed.y);
-                  return ' ' + c.dataset.label + ': $' + (c.parsed.y != null ? c.parsed.y.toFixed(2) : '—');
+                  return ' ' + c.dataset.label + ': $' + (c.parsed.y != null ? c.parsed.y.toFixed(2) : '-');
                 }
               }
             },
@@ -6431,7 +6431,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     function renderETFHVChart() {
       var SQRT252 = Math.sqrt(252);
       var ETF_KEYS = ['bdry', 'bwet'];
-      // Three distinct shades per ETF family — light / mid / dark
+      // Three distinct shades per ETF family - light / mid / dark
       var ETF_COLORS = {
         bdry: { 20: '#7dd3fc', 60: '#00bfff', 252: '#0369a1' },  // light sky → cyan → deep ocean
         bwet: { 20: '#fca5a5', 60: '#ff6b6b', 252: '#b91c1c' },  // light coral → medium red → deep red
@@ -6534,7 +6534,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         });
       });
 
-      // KPI strip — latest 1Y HV + regime for each ETF
+      // KPI strip - latest 1Y HV + regime for each ETF
       var kpiEl = document.getElementById('etfHvKpiStrip');
       if (kpiEl) {
         var kpiHtml = '';
@@ -6572,7 +6572,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             _etfHvAll252Cache[cacheKey] = all1y.filter(function (v) { return v != null; });
           }
           var validAll = _etfHvAll252Cache[cacheKey];
-          var regimeLabel = '—', regimeColor = 'var(--text-muted)';
+          var regimeLabel = '-', regimeColor = 'var(--text-muted)';
           if (cur1y != null && validAll.length > 50) {
             var pctl = percentileRank(validAll, cur1y) * 100;
             if (pctl > 90)      { regimeLabel = '🔴 SPIKE';    regimeColor = '#f85149'; }
@@ -6581,7 +6581,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             else                { regimeLabel = '🔵 LOW';       regimeColor = '#58a6ff'; }
           }
           kpiHtml += [
-            { label: ETF_LABELS[k] + ' 1Y HV', val: cur1y != null ? cur1y.toFixed(1) + '%' : '—', color: ETF_COLORS[k][252] },
+            { label: ETF_LABELS[k] + ' 1Y HV', val: cur1y != null ? cur1y.toFixed(1) + '%' : '-', color: ETF_COLORS[k][252] },
             { label: ETF_LABELS[k] + ' Regime', val: regimeLabel, color: regimeColor },
           ].map(function (item) {
             return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 14px;min-width:110px;">' +
@@ -6985,7 +6985,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
       let priceHTML = '<span style="color:var(--text-muted)">Fetching…</span>';
       const liqRows = etfKey === 'bdry' ? DATA.bdryLiquidity : DATA.bwetLiquidity;
-      let stats52w = { range: '—', pos: '—', posCls: '', trough: '—', troughCls: '' };
+      let stats52w = { range: '-', pos: '-', posCls: '', trough: '-', troughCls: '' };
       if (liqRows && liqRows.length) {
         const prices = liqRows.map(r => parseFloat(r.close)).filter(v => !isNaN(v));
         if (prices.length) {
@@ -6998,7 +6998,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           const trough = Math.min(...vals365);
           const troughPct = ((latestVal - trough) / trough * 100);
           stats52w = {
-            range: `${fmt(wHigh, 2)} — ${fmt(wLow, 2)}`,
+            range: `${fmt(wHigh, 2)} - ${fmt(wLow, 2)}`,
             pos: pos.toFixed(1) + '%',
             posCls: pos < 25 ? 'val-red' : (pos > 60 ? 'val-green' : 'val-yellow'),
             trough: (troughPct >= 0 ? '+' : '') + troughPct.toFixed(1) + '%',
@@ -7024,7 +7024,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           const price = parseFloat(last.close);
           const dateStr = last.date || '';
           if (!isNaN(price)) {
-            return `<span class="etf-price" title="Last known close (${dateStr}) — live feed unavailable">$${price.toFixed(2)}</span>`
+            return `<span class="etf-price" title="Last known close (${dateStr}) - live feed unavailable">$${price.toFixed(2)}</span>`
               + `<span style="color:var(--text-muted);font-size:11px;margin-left:6px;" title="Sourced from local CSV, not live">as of ${dateStr}</span>`;
           }
         }
@@ -7063,7 +7063,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           const sign = chgPct >= 0 ? '+' : '';
           const chgCls = chgPct >= 0 ? 'change-pos' : 'change-neg';
           priceHTML = `
-        <span class="etf-price">${price != null ? '$' + price.toFixed(2) : '—'}</span>
+        <span class="etf-price">${price != null ? '$' + price.toFixed(2) : '-'}</span>
         <span class="etf-change ${chgCls}">${chgPct != null ? sign + chgPct.toFixed(2) + '%' : ''}</span>`;
 
           // Update 52W stats with live price
@@ -7081,7 +7081,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             const posEl = card.querySelector(`#etfW52Pos_${etfKey}`);
             const troughEl = card.querySelector(`#etfTrough_${etfKey}`);
 
-            if (rangeEl) rangeEl.textContent = `${fmt(wHigh, 2)} — ${fmt(wLow, 2)}`;
+            if (rangeEl) rangeEl.textContent = `${fmt(wHigh, 2)} - ${fmt(wLow, 2)}`;
             if (posEl) {
               posEl.textContent = pos.toFixed(1) + '%';
               posEl.className = 'etf-metric-value etf-w52-pos ' + (pos < 25 ? 'val-red' : (pos > 60 ? 'val-green' : 'val-yellow'));
@@ -7105,7 +7105,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
               nav = parseFloat(liqRows[liqRows.length - 1].close);
             }
           }
-          navEl.textContent = nav != null ? '$' + nav.toFixed(2) : '—';
+          navEl.textContent = nav != null ? '$' + nav.toFixed(2) : '-';
         }
       } catch (e) {
         priceHTML = liqFallbackHTML(etfKey);
@@ -7141,7 +7141,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const lots = parseFloat(h.Lots) || 0;
         const price = parseFloat(h.Price) || 0;
         const mv = parseFloat(h.Market_Value) || 0;
-        const wt = h.Weightings || '—';
+        const wt = h.Weightings || '-';
         tableRows += `<tr>
       <td class="${rowCls}">${shortName}</td>
       <td>${lots % 1 === 0 ? fmt(lots) : lots.toLocaleString()}</td>
@@ -7158,7 +7158,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const totalAUM = totalCash;
 
       const leverageVal = totalCash > 0 ? (totalFutures / totalCash) : null;
-      const leverageStr = leverageVal !== null ? (leverageVal * 100).toFixed(1) + '%' : '—';
+      const leverageStr = leverageVal !== null ? (leverageVal * 100).toFixed(1) + '%' : '-';
 
       return `
     <div class="etf-header">
@@ -7175,7 +7175,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
     <div class="etf-holdings-section">
     <div class="etf-section-title-row">
-      <div class="etf-section-title" data-tooltip="Fund Holdings — the complete list of FFA contracts and cash/money-market positions that the Authorized Participant holds to replicate the underlying freight benchmark index.">Holdings</div>
+      <div class="etf-section-title" data-tooltip="Fund Holdings - the complete list of FFA contracts and cash/money-market positions that the Authorized Participant holds to replicate the underlying freight benchmark index.">Holdings</div>
       <button class="dl-btn etf-dl-btn">⬇ CSV</button>
     </div>
     <table class="holdings-table">
@@ -7212,7 +7212,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     <div class="etf-metrics" style="grid-template-columns: repeat(3,1fr);">
       <div class="etf-metric">
         <div class="etf-metric-label">NAV</div>
-        <div class="etf-metric-value etf-nav-val" id="etfNav_${etfKey}">—</div>
+        <div class="etf-metric-value etf-nav-val" id="etfNav_${etfKey}">-</div>
       </div>
       <div class="etf-metric">
         <div class="etf-metric-label">Expense Ratio</div>
@@ -7225,7 +7225,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     </div>
     <div class="etf-metrics" style="grid-template-columns: repeat(3,1fr);">
       <div class="etf-metric">
-        <div class="etf-metric-label">52W High — Low</div>
+        <div class="etf-metric-label">52W High - Low</div>
         <div class="etf-metric-value etf-w52-range val-white" id="etfW52Range_${etfKey}">${stats52w.range}</div>
       </div>
       <div class="etf-metric">
@@ -7249,7 +7249,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       </div>
     </div>
     <div class="etf-fundamentals-section">
-      <div class="etf-research-title">🚢 Dry Bulk Fundamentals — Data Sources</div>
+      <div class="etf-research-title">🚢 Dry Bulk Fundamentals - Data Sources</div>
       <div class="etf-fund-group">
         <div class="etf-fund-group-label">China Steel &amp; Bulk Demand</div>
         <div class="etf-fund-link"><span class="research-link-icon">📊</span><a href="https://en.macromicro.me/collections/20/mm-steel/221/china-crude-steel-production" target="_blank" rel="noopener">China Steel Production</a></div>
@@ -7278,7 +7278,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       </div>
     </div>
     <div class="etf-fundamentals-section">
-      <div class="etf-research-title">🛢 Tanker Fundamentals — Data Sources</div>
+      <div class="etf-research-title">🛢 Tanker Fundamentals - Data Sources</div>
       <div class="etf-fund-group">
         <div class="etf-fund-group-label">Crude &amp; Product Demand</div>
         <div class="etf-fund-link"><span class="research-link-icon">🛢</span><a href="https://tradingeconomics.com/commodity/crude-oil" target="_blank" rel="noopener">WTI Crude Oil Price</a></div>
@@ -7290,22 +7290,22 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       </div>
       <div class="etf-fund-group">
         <div class="etf-fund-group-label">Key Trade Routes</div>
-        <div class="etf-fund-link"><span class="research-link-icon">🟪</span><a href="https://in.tradingview.com/symbols/NYMEX-TL1!/" target="_blank" rel="noopener">TD3C — Ras Tanura (MEG) → Ningbo (Far East)</a></div>
-        <div class="etf-fund-link"><span class="research-link-icon">🟪</span><a href="https://in.tradingview.com/symbols/NYMEX-T2D1!/" target="_blank" rel="noopener">TD20 — Nigeria (WAF) → Rotterdam</a></div>
+        <div class="etf-fund-link"><span class="research-link-icon">🟪</span><a href="https://in.tradingview.com/symbols/NYMEX-TL1!/" target="_blank" rel="noopener">TD3C - Ras Tanura (MEG) → Ningbo (Far East)</a></div>
+        <div class="etf-fund-link"><span class="research-link-icon">🟪</span><a href="https://in.tradingview.com/symbols/NYMEX-T2D1!/" target="_blank" rel="noopener">TD20 - Nigeria (WAF) → Rotterdam</a></div>
       </div>
     </div>`}
     <div class="etf-research-section">
       <div class="etf-research-title">📰 Market Outlook &amp; Research Sources</div>
       <div class="research-group">
         <div class="research-group-label">Research &amp; Insights</div>
-        <div class="research-link"><span class="research-link-icon">📋</span><a href="https://www.breakwaveadvisors.com/publications" target="_blank" rel="noopener">Breakwave Advisors — Research</a></div>
-        <div class="research-link"><span class="research-link-icon">💡</span><a href="https://www.breakwaveadvisors.com/insights" target="_blank" rel="noopener">Breakwave Advisors — Insights</a></div>
-        <div class="research-link"><span class="research-link-icon">🔗</span><a href="https://www.bimco.org/news-insights/market-analysis/" target="_blank" rel="noopener">BIMCO — Market Analysis</a></div>
+        <div class="research-link"><span class="research-link-icon">📋</span><a href="https://www.breakwaveadvisors.com/publications" target="_blank" rel="noopener">Breakwave Advisors - Research</a></div>
+        <div class="research-link"><span class="research-link-icon">💡</span><a href="https://www.breakwaveadvisors.com/insights" target="_blank" rel="noopener">Breakwave Advisors - Insights</a></div>
+        <div class="research-link"><span class="research-link-icon">🔗</span><a href="https://www.bimco.org/news-insights/market-analysis/" target="_blank" rel="noopener">BIMCO - Market Analysis</a></div>
       </div>
       <div class="research-group">
         <div class="research-group-label">Weekly Market Reports</div>
-        <div class="research-link"><span class="research-link-icon">⚡</span><a href="${etfKey === 'bdry' ? 'https://fearnpulse.com/#2' : 'https://fearnpulse.com/#1'}" target="_blank" rel="noopener">Fearnleys — Weekly Market Pulse</a></div>
-        <div class="research-link"><span class="research-link-icon">🏛️</span><a href="${etfKey === 'bdry' ? 'https://www.balticexchange.com/en/data-services/WeeklyRoundup.html#dry%20' : 'https://www.balticexchange.com/en/data-services/WeeklyRoundup.html#tanker'}" target="_blank" rel="noopener">Baltic Exchange — Weekly Roundup</a></div>
+        <div class="research-link"><span class="research-link-icon">⚡</span><a href="${etfKey === 'bdry' ? 'https://fearnpulse.com/#2' : 'https://fearnpulse.com/#1'}" target="_blank" rel="noopener">Fearnleys - Weekly Market Pulse</a></div>
+        <div class="research-link"><span class="research-link-icon">🏛️</span><a href="${etfKey === 'bdry' ? 'https://www.balticexchange.com/en/data-services/WeeklyRoundup.html#dry%20' : 'https://www.balticexchange.com/en/data-services/WeeklyRoundup.html#tanker'}" target="_blank" rel="noopener">Baltic Exchange - Weekly Roundup</a></div>
       </div>
       <div class="research-group">
         <div class="research-group-label">Charter Rate Estimates</div>
@@ -7313,8 +7313,8 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       </div>
       <div class="research-group">
         <div class="research-group-label">ETF Data</div>
-        <div class="research-link"><span class="research-link-icon">📈</span><a href="${etfKey === 'bdry' ? 'https://amplifyetfs.com/bdry/' : 'https://amplifyetfs.com/bwet/'}" target="_blank" rel="noopener">Amplify ETFs — ${ticker} Official Page</a></div>
-        <div class="research-link"><span class="research-link-icon">📐</span><a href="${etfKey === 'bdry' ? 'https://www.solactive.com/index/DE000SLA4BY3/' : 'https://www.solactive.com/index/DE000SL0HLG3/'}" target="_blank" rel="noopener">Solactive — Index Page</a></div>
+        <div class="research-link"><span class="research-link-icon">📈</span><a href="${etfKey === 'bdry' ? 'https://amplifyetfs.com/bdry/' : 'https://amplifyetfs.com/bwet/'}" target="_blank" rel="noopener">Amplify ETFs - ${ticker} Official Page</a></div>
+        <div class="research-link"><span class="research-link-icon">📐</span><a href="${etfKey === 'bdry' ? 'https://www.solactive.com/index/DE000SLA4BY3/' : 'https://www.solactive.com/index/DE000SL0HLG3/'}" target="_blank" rel="noopener">Solactive - Index Page</a></div>
       </div>
     </div>
 `;
@@ -7346,7 +7346,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         groups[cls] = (groups[cls] || 0) + (parseFloat(h.Market_Value) || 0);
       }
 
-      // Cash is structural margin collateral (pledged for futures per SEC filings) — excluded.
+      // Cash is structural margin collateral (pledged for futures per SEC filings) - excluded.
       // Chart shows only futures notional, normalised to 100%.
       let labels, values, colors;
       if (etfKey === 'bdry') {
@@ -7399,7 +7399,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // =====================================================================
-    // FEATURE B — Recent Daily Changes Table
+    // FEATURE B - Recent Daily Changes Table
     // =====================================================================
     let _recentChangesKey = null;
     let _recentChangesRows = null;
@@ -7433,9 +7433,9 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
         const dateStr = fmtDate(row.date);
 
-        const ddStr = dayDelta != null ? (dayDelta >= 0 ? '+' : '') + dayDelta.toFixed(0) : '—';
-        const ddPStr = dayDeltaPct != null ? (dayDeltaPct >= 0 ? '+' : '') + dayDeltaPct.toFixed(2) + '%' : '—';
-        const c5dStr = chg5d != null ? (chg5d >= 0 ? '+' : '') + chg5d.toFixed(2) + '%' : '—';
+        const ddStr = dayDelta != null ? (dayDelta >= 0 ? '+' : '') + dayDelta.toFixed(0) : '-';
+        const ddPStr = dayDeltaPct != null ? (dayDeltaPct >= 0 ? '+' : '') + dayDeltaPct.toFixed(2) + '%' : '-';
+        const c5dStr = chg5d != null ? (chg5d >= 0 ? '+' : '') + chg5d.toFixed(2) + '%' : '-';
 
         const ddCls = dayDelta == null ? '' : (dayDelta >= 0 ? 'val-green' : 'val-red');
         const ddPCls = dayDeltaPct == null ? '' : (dayDeltaPct >= 0 ? 'val-green' : 'val-red');
@@ -7621,7 +7621,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       var labels = rows.map(function (r) { return fmtDate(r.date); });
       var values = rows.map(function (r) { return r[productKey]; });
 
-      // Rolling avg — O(n) prefix sum approach computed at FULL resolution
+      // Rolling avg - O(n) prefix sum approach computed at FULL resolution
       var winDays = _ydHistAvgWindow > 0 ? _ydHistAvgWindow * 252 : values.length;
       var pSum = [0], pCnt = [0];
       for (var pi = 0; pi < values.length; pi++) {
@@ -7634,7 +7634,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         return cnt > 0 ? (pSum[i + 1] - pSum[st]) / cnt : null;
       });
 
-      // Display decimation — only reduce points fed to Chart.js, never the underlying data.
+      // Display decimation - only reduce points fed to Chart.js, never the underlying data.
       // Step=1 (no decimation) when range is <= 800 points (~3 years).
       // At full history (~4500 points) step≈8, giving ~560 real data points to paint.
       // Download button always uses the full-resolution arrays (rows/labels/values/rollingAvg).
@@ -7690,7 +7690,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         },
       });
 
-      // Download always uses full-resolution data — decimation is display-only
+      // Download always uses full-resolution data - decimation is display-only
       var btn = document.getElementById('ydHistDlBtn');
       if (btn) btn.onclick = function () {
         downloadCSV('hist_' + productKey + '.csv', ['Date', prod.label, avgLabel],
@@ -7716,22 +7716,22 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         '<div class="signal-badge ' + sig.cls + '">' + sig.text + '</div>' +
         (stats ? (
           '<div class="stat-card sc-percentile" style="min-width:110px">' +
-          '<div class="stat-label" data-tooltip="Cycle Maturity (5Y) for ' + prod.label + ' — ranks today\'s rate vs. the last 1,260 sessions. <20% is historically \'oversold\'; >80% is where maritime supply often hits resistance.">5Y Pctl</div>' +
+          '<div class="stat-label" data-tooltip="Cycle Maturity (5Y) for ' + prod.label + ' - ranks today\'s rate vs. the last 1,260 sessions. <20% is historically \'oversold\'; >80% is where maritime supply often hits resistance.">5Y Pctl</div>' +
           '<div class="stat-value ' + pctColor(stats.pctl5y) + '">' + (stats.pctl5y * 100).toFixed(1) + '%</div>' +
           '</div>' +
           '<div class="stat-card sc-zscore" style="min-width:110px">' +
-          '<div class="stat-label" data-tooltip="Seasonal Variance for ' + prod.label + ' — standard deviations away (' + stats.zScore.toFixed(2) + 'σ) from the historical mean for this exact calendar day since 2008. Spots \'unseasonal\' freight rallies.">Z-Score</div>' +
+          '<div class="stat-label" data-tooltip="Seasonal Variance for ' + prod.label + ' - standard deviations away (' + stats.zScore.toFixed(2) + 'σ) from the historical mean for this exact calendar day since 2008. Spots \'unseasonal\' freight rallies.">Z-Score</div>' +
           '<div class="stat-value ' + (stats.zScore < -1 ? 'val-red' : stats.zScore > 1 ? 'val-green' : 'val-yellow') + '">' + stats.zScore.toFixed(2) + '</div>' +
           '</div>' +
           '<div class="stat-card sc-drawdown" style="min-width:110px">' +
-          '<div class="stat-label" data-tooltip="Peak Retracement for ' + prod.label + ' — calculates the percentage decline from the highest print in the trailing year. Deep drawdowns often signal cyclical troughs.">Drawdown</div>' +
+          '<div class="stat-label" data-tooltip="Peak Retracement for ' + prod.label + ' - calculates the percentage decline from the highest print in the trailing year. Deep drawdowns often signal cyclical troughs.">Drawdown</div>' +
           '<div class="stat-value ' + (stats.drawdown < -0.3 ? 'val-red' : stats.drawdown < -0.1 ? 'val-yellow' : 'val-green') + '">' + (stats.drawdown * 100).toFixed(1) + '%</div>' +
           '</div>'
         ) : '');
     }
 
     function computeRollingZscoreArr(values, windowSize) {
-      // O(n) prefix sums for sum and sum-of-squares — replaces O(n²) slice+reduce
+      // O(n) prefix sums for sum and sum-of-squares - replaces O(n²) slice+reduce
       var pSum = [0], pSumSq = [0], pCnt = [0];
       for (var pi = 0; pi < values.length; pi++) {
         var v = values[pi];
@@ -7756,7 +7756,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     // ── Rolling Z-Score window state ─────────────────────────────────────────────
     var _ydZscoreWindow = 252;      // active rolling window (trading days)
     var _ydZscoreProductKey = null; // cached so setYDZscoreWindow can re-render
-    var _ydZscoreCache = {};        // lazy cache keyed by windowSize — computed once per window, reused forever
+    var _ydZscoreCache = {};        // lazy cache keyed by windowSize - computed once per window, reused forever
 
     var _ydZscoreWindowLabels = {
       63: '3M (63-Day)',
@@ -7784,7 +7784,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       var windowSize = allTime ? 252 : _ydZscoreWindow;
       if (!allTime) _ydZscoreProductKey = productKey;
 
-      // Lazy cache — compute all 9 products for this windowSize once, reuse forever.
+      // Lazy cache - compute all 9 products for this windowSize once, reuse forever.
       // Cache key is windowSize only (product switching only changes highlight thickness, not values).
       if (!_ydZscoreCache[windowSize]) {
         var allZData = {};
@@ -7814,7 +7814,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         return;
       }
 
-      // First render: max is still HTML default 100 — set it and apply default range
+      // First render: max is still HTML default 100 - set it and apply default range
       // Subsequent calls (window change): max already equals total-1, preserve positions
       var firstRender = (parseInt(startEl.max) !== total - 1);
       startEl.max = total - 1;
@@ -7893,9 +7893,9 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         return slicedLabels.map(function (lbl) { var v = zByDate[lbl]; return (v != null) ? v : null; });
       });
 
-      // Display decimation — same principle as Historical Price chart.
+      // Display decimation - same principle as Historical Price chart.
       // Step=1 (no decimation) when range <= 800 points. At all-time (~4500pts) step≈8.
-      // Each dataset picks every Nth real data point — no interpolation, no averaging.
+      // Each dataset picks every Nth real data point - no interpolation, no averaging.
       // Slider still operates on full-resolution slicedLabels; decimation is display-only.
       var DISPLAY_TARGET = 600;
       var step = Math.max(1, Math.round(slicedLabels.length / DISPLAY_TARGET));
@@ -7937,7 +7937,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             tooltip: {
               callbacks: {
                 title: function (c) { return c[0].label; },
-                label: function (c) { return ' ' + c.dataset.label + ': ' + (c.parsed.y != null ? c.parsed.y.toFixed(2) : '—'); }
+                label: function (c) { return ' ' + c.dataset.label + ': ' + (c.parsed.y != null ? c.parsed.y.toFixed(2) : '-'); }
               }
             }
           },
@@ -8138,13 +8138,13 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           if (wr > 55) { cls = 'wr-green'; valColor = 'var(--green)'; }
           else if (wr < 45) { cls = 'wr-red'; valColor = 'var(--red)'; }
         }
-        const pct = wr != null ? wr.toFixed(0) + '%' : '—';
+        const pct = wr != null ? wr.toFixed(0) + '%' : '-';
         const barW = wr != null ? wr : 0;
         const card = document.createElement('div');
         card.className = `win-rate-card ${cls}`;
         // Shrink card slightly so 12 fit cleanly, flex wrap is enabled on win-rate-row
         card.style.minWidth = '80px';
-        const tt = `Predictive Seasonality for ${MONTH_NAMES[m]} — historical probability (${pct}) that this specific month has ended higher than it started since 2008. Measures the 'long' bias of the shipping calendar.`;
+        const tt = `Predictive Seasonality for ${MONTH_NAMES[m]} - historical probability (${pct}) that this specific month has ended higher than it started since 2008. Measures the 'long' bias of the shipping calendar.`;
         card.setAttribute('data-tooltip', tt);
         card.innerHTML = `
           <div class="wr-title">${MONTH_NAMES[m].substring(0,3)} Win Rate</div>
@@ -8469,7 +8469,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       if (document.getElementById('basisRangeStart')) initBasisRange();
       if (document.getElementById('bdiContribRangeStart')) initBDIContribRange();
 
-      // HV range — 3Y default is handled inside initHVRange on first load
+      // HV range - 3Y default is handled inside initHVRange on first load
       if (document.getElementById('hvRangeStart')) initHVRange(productKey);
 
       var fns = [
@@ -8530,7 +8530,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         clearTimeout(renderHVChart._t);
         renderHVChart._t = setTimeout(function () { renderHVChart(productKey); }, 60);
       });
-      // Default to 3Y on first load — must happen AFTER initDualRangeSlider sets max,
+      // Default to 3Y on first load - must happen AFTER initDualRangeSlider sets max,
       // otherwise the browser clamps value to the old max="100" from the HTML.
       if (isFirstInit && startEl && rows.length) {
         const endEl = document.getElementById('hvRangeEnd');
@@ -8552,9 +8552,9 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         var prod = PRODUCTS[productKey];
         var prodLabel = prod ? prod.label : productKey;
         hvTitleEl.setAttribute('data-tooltip',
-          prodLabel + ' Historical Volatility — rolling annualized HV = std dev of log-returns × √252. ' +
+          prodLabel + ' Historical Volatility - rolling annualized HV = std dev of log-returns × √252. ' +
           'Four colour-coded regimes based on this index\'s all-time HV percentile: ' +
-          'Blue = Low (<25th %), Green = Normal (25–75th %), Amber = Elevated (75–90th %), Red = Spike (>90th %). ' +
+          'Blue = Low (<25th %), Green = Normal (25-75th %), Amber = Elevated (75-90th %), Red = Spike (>90th %). ' +
           'A shift from Spike to Elevated often precedes a directional breakout.'
         );
       }
@@ -8582,7 +8582,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         }
       }
 
-      // Build index map once — O(1) lookup of global index for each visible row
+      // Build index map once - O(1) lookup of global index for each visible row
       const allRowsMap = new Map();
       allRows.forEach(function (r, i) { allRowsMap.set(r, i); });
 
@@ -8604,7 +8604,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         });
       });
 
-      // Compute all-time 252D HV for regime percentile — memoized per product
+      // Compute all-time 252D HV for regime percentile - memoized per product
       if (!_hvAll252Cache[productKey]) {
         const all252 = [];
         // Re-compute logRets for full allRows (already done above, reuse logRets)
@@ -8627,7 +8627,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const cur60 = hv60.slice().reverse().find(function (v) { return v != null; });
       const cur252 = hv252.slice().reverse().find(function (v) { return v != null; });
 
-      let regimeLabel = '—', regimeColor = 'var(--text-muted)';
+      let regimeLabel = '-', regimeColor = 'var(--text-muted)';
       if (cur252 != null && validAll252.length > 50) {
         const pctl = percentileRank(validAll252, cur252) * 100;
         if (pctl > 90) { regimeLabel = '🔴 SPIKE'; regimeColor = '#f85149'; }
@@ -8639,9 +8639,9 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const kpiEl = document.getElementById('hvKpiStrip');
       if (kpiEl) {
         kpiEl.innerHTML = [
-          { label: '20D HV', val: cur20 != null ? cur20.toFixed(1) + '%' : '—', color: '#58a6ff' },
-          { label: '60D HV', val: cur60 != null ? cur60.toFixed(1) + '%' : '—', color: '#3fb950' },
-          { label: '1Y HV', val: cur252 != null ? cur252.toFixed(1) + '%' : '—', color: '#a371f7' },
+          { label: '20D HV', val: cur20 != null ? cur20.toFixed(1) + '%' : '-', color: '#58a6ff' },
+          { label: '60D HV', val: cur60 != null ? cur60.toFixed(1) + '%' : '-', color: '#3fb950' },
+          { label: '1Y HV', val: cur252 != null ? cur252.toFixed(1) + '%' : '-', color: '#a371f7' },
           { label: 'Vol Regime', val: regimeLabel, color: regimeColor },
         ].map(function (k) {
           return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 14px;min-width:100px;">' +
@@ -8827,7 +8827,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     function renderCapeSpread() {
-      // Use raw daily data — both series must have a value on same date
+      // Use raw daily data - both series must have a value on same date
       var capeRows = DATA.raw['cape'];
       var panaRows = DATA.raw['panama'];
       if (!capeRows || !panaRows || !capeRows.length || !panaRows.length) return;
@@ -8934,7 +8934,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
       PRODUCT_KEYS.forEach(function (key) {
         var rows = getRows(key);
-        if (!rows.length) { html += '<tr><td>' + prodLabels[key] + '</td>' + periods.map(function () { return '<td>—</td>'; }).join('') + '</tr>'; return; }
+        if (!rows.length) { html += '<tr><td>' + prodLabels[key] + '</td>' + periods.map(function () { return '<td>-</td>'; }).join('') + '</tr>'; return; }
         var latest = rows[rows.length - 1];
         var latestVal = latest[key];
 
@@ -8949,7 +8949,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             if (rows[i].date <= target) { pastRow = rows[i]; break; }
           }
           if (!pastRow || pastRow[key] == null || pastRow[key] === 0) {
-            html += '<td style="color:#484f58">—</td>';
+            html += '<td style="color:#484f58">-</td>';
             return;
           }
           var roc = ((latestVal - pastRow[key]) / pastRow[key]) * 100;
@@ -8963,7 +8963,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       html += '</tbody></table>';
 
       // Add a note row
-      html += '<div style="font-size:11px;color:var(--text-muted);margin-top:8px;">Color scale: <span style="color:#f85149">■</span> &lt;−15% &nbsp;|&nbsp; <span style="color:#e6edf3">■</span> 0% &nbsp;|&nbsp; <span style="color:#3fb950">■</span> &gt;+15%</div>';
+      html += '<div style="font-size:11px;color:var(--text-muted);margin-top:8px;">Color scale: <span style="color:#f85149">■</span> &lt;-15% &nbsp;|&nbsp; <span style="color:#e6edf3">■</span> 0% &nbsp;|&nbsp; <span style="color:#3fb950">■</span> &gt;+15%</div>';
 
       container.innerHTML = html;
     }
@@ -8977,7 +8977,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       _currentSeasonalProduct = productKey;
       var prod = PRODUCTS[productKey];
 
-      // Use per-product byYear — only days this product actually traded, no calendar pollution from others
+      // Use per-product byYear - only days this product actually traded, no calendar pollution from others
       var prodByYear = (DATA.byYearProduct && DATA.byYearProduct[productKey]) || DATA.byYear;
 
       var currentYear = new Date().getFullYear();
@@ -9053,7 +9053,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             { label: String(currentYear), data: currentYearLine, borderColor: prod.color, backgroundColor: 'transparent', borderWidth: 2.5, pointRadius: 0, fill: false, tension: 0.2, spanGaps: true, order: 1 },
             { label: 'Seasonal Avg', data: avgLine, borderColor: '#e3b341', backgroundColor: 'rgba(227,179,65,0.12)', borderWidth: 1.5, pointRadius: 0, fill: false, tension: 0.3, order: 2 },
             { label: '+1σ', data: upperBand, borderColor: '#484f58', backgroundColor: 'rgba(72,79,88,0.15)', borderWidth: 1, pointRadius: 0, fill: '+1', tension: 0.3, order: 3 },
-            { label: '−1σ', data: lowerBand, borderColor: '#484f58', backgroundColor: 'transparent', borderWidth: 1, pointRadius: 0, fill: false, tension: 0.3, order: 4 },
+            { label: '-1σ', data: lowerBand, borderColor: '#484f58', backgroundColor: 'transparent', borderWidth: 1, pointRadius: 0, fill: false, tension: 0.3, order: 4 },
           ]
         },
         options: {
@@ -9115,7 +9115,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     function renderTermCurve(etfKey, holdings, canvasId, slopeId) {
       if (!holdings || !holdings.length) return;
 
-      // Filter out cash/collateral rows — keep only futures
+      // Filter out cash/collateral rows - keep only futures
       var futuresTypes = etfKey === 'bdry' ? ['cape', 'pana', 'supra'] : ['td3c', 'td20'];
 
       // Group by vessel type, sort by contract month
@@ -9136,7 +9136,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         groups[cls].sort(function (a, b) { return a.sortKey - b.sortKey; });
       });
 
-      // Build datasets — one per vessel class
+      // Build datasets - one per vessel class
       var colorMap = {
         cape: '#58a6ff', pana: '#3fb950', supra: '#d29922',
         td3c: '#f0883e', td20: '#a371f7'
@@ -9408,22 +9408,22 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           cls: 'val-green'
         },
         {
-          label: 'Day Change', val: latest.chgPct != null ? (latest.chgPct >= 0 ? '+' : '') + latest.chgPct.toFixed(2) + '%' : '—',
+          label: 'Day Change', val: latest.chgPct != null ? (latest.chgPct >= 0 ? '+' : '') + latest.chgPct.toFixed(2) + '%' : '-',
           cls: latest.chgPct == null ? '' : latest.chgPct >= 0 ? 'val-green' : 'val-red'
         },
         { label: 'As of', val: latest.dateStr, cls: '' },
       ];
 
       const ttMap = {
-        'Close': 'Market Close — the last traded price on the NYSE Arca. Watch the spread between this and NAV to monitor secondary market liquidity pressure.',
-        'Volume': 'Institutional Footprint — daily shares traded. Exceptional volume on \'green\' days signals high-conviction participation by Authorized Participants.',
-        'Dollar Vol Traded': 'Liquidity Depth ($) — actual cash value moved in the current session. Key for large-ticket sizing and identifying \'wide\' vs \'tight\' trading windows.',
-        'Tier': 'Participation Guardrail — sliding scale factor designed to keep trade size within the \'safe\' liquidity profile: <50K (2.0%), <100K (3.5%), <500K (5.0%), ≥500K (6.5%).',
-        'Possible Shares': `Safe Order Size (Shares) — an algorithmic estimate of the maximum daily share count you can trade today (${latest.possShares.toLocaleString()}) without triggering significant market slippage.`,
-        'Safe Liquidity': `Safe Order Size ($) — dollar value equivalent of your participation tier. Defines your maximum 'unobtrusive' entry/exit capacity ($${latest.safeLiq.toLocaleString()}) for today's session.`,
-        'Total Safe Liquidity (1M)': 'Rolling Capacity — the total dollar liquidity available over 21 trading days. Defines the ceiling for institutional position building (AUM scaling).',
-        'Day Change': 'Daily Momentum — percentage change relative to prior close.',
-        'As of': 'Data Recency — timestamp of the last captured liquidity snapshot.'
+        'Close': 'Market Close - the last traded price on the NYSE Arca. Watch the spread between this and NAV to monitor secondary market liquidity pressure.',
+        'Volume': 'Institutional Footprint - daily shares traded. Exceptional volume on \'green\' days signals high-conviction participation by Authorized Participants.',
+        'Dollar Vol Traded': 'Liquidity Depth ($) - actual cash value moved in the current session. Key for large-ticket sizing and identifying \'wide\' vs \'tight\' trading windows.',
+        'Tier': 'Participation Guardrail - sliding scale factor designed to keep trade size within the \'safe\' liquidity profile: <50K (2.0%), <100K (3.5%), <500K (5.0%), ≥500K (6.5%).',
+        'Possible Shares': `Safe Order Size (Shares) - an algorithmic estimate of the maximum daily share count you can trade today (${latest.possShares.toLocaleString()}) without triggering significant market slippage.`,
+        'Safe Liquidity': `Safe Order Size ($) - dollar value equivalent of your participation tier. Defines your maximum 'unobtrusive' entry/exit capacity ($${latest.safeLiq.toLocaleString()}) for today's session.`,
+        'Total Safe Liquidity (1M)': 'Rolling Capacity - the total dollar liquidity available over 21 trading days. Defines the ceiling for institutional position building (AUM scaling).',
+        'Day Change': 'Daily Momentum - percentage change relative to prior close.',
+        'As of': 'Data Recency - timestamp of the last captured liquidity snapshot.'
       };
 
       el.innerHTML = kpis.map(function (k) {
@@ -9522,7 +9522,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
     // ── Avg Volume & Dollar Value bar chart ──────────────────────────────────────
     function buildBdryAvgChart(allRows, endIdx) {
-      // Windows: trading days (approx) — 10D=10, 20D=20, 1M=21, 3M=63, 6M=126, 12M=252, 24M=504
+      // Windows: trading days (approx) - 10D=10, 20D=20, 1M=21, 3M=63, 6M=126, 12M=252, 24M=504
       var windows = [
         { label: '10D', days: 10 },
         { label: '20D', days: 20 },
@@ -9637,7 +9637,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
       rev.forEach(function (r) {
         var chgCls = r.chgPct == null ? '' : r.chgPct >= 0 ? 'val-green' : 'val-red';
-        var chgStr = r.chgPct != null ? (r.chgPct >= 0 ? '+' : '') + r.chgPct.toFixed(2) + '%' : '—';
+        var chgStr = r.chgPct != null ? (r.chgPct >= 0 ? '+' : '') + r.chgPct.toFixed(2) + '%' : '-';
         var tierCls = r.volume < 50000 ? 'val-red' : r.volume < 100000 ? 'val-yellow' : r.volume < 500000 ? '' : 'val-green';
 
         html += '<tr>';
@@ -9794,22 +9794,22 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           cls: 'val-green'
         },
         {
-          label: 'Day Change', val: latest.chgPct != null ? (latest.chgPct >= 0 ? '+' : '') + latest.chgPct.toFixed(2) + '%' : '—',
+          label: 'Day Change', val: latest.chgPct != null ? (latest.chgPct >= 0 ? '+' : '') + latest.chgPct.toFixed(2) + '%' : '-',
           cls: latest.chgPct == null ? '' : latest.chgPct >= 0 ? 'val-green' : 'val-red'
         },
         { label: 'As of', val: latest.dateStr, cls: '' },
       ];
 
       const ttMap = {
-        'Close': 'Market Close — the last traded price on the NYSE Arca. Watch the spread between this and NAV to monitor secondary market liquidity pressure.',
-        'Volume': 'Institutional Footprint — daily shares traded. Exceptional volume on \'green\' days signals high-conviction participation by Authorized Participants.',
-        'Dollar Vol Traded': 'Liquidity Depth ($) — actual cash value moved in the current session. Key for large-ticket sizing and identifying \'wide\' vs \'tight\' trading windows.',
-        'Tier': 'Participation Guardrail — sliding scale factor designed to keep trade size within the \'safe\' liquidity profile: <50K (2.0%), <100K (3.5%), <500K (5.0%), ≥500K (6.5%).',
-        'Possible Shares': `Safe Order Size (Shares) — an algorithmic estimate of the maximum daily share count you can trade today (${latest.possShares.toLocaleString()}) without triggering significant market slippage.`,
-        'Safe Liquidity': `Safe Order Size ($) — dollar value equivalent of your participation tier. Defines your maximum 'unobtrusive' entry/exit capacity ($${latest.safeLiq.toLocaleString()}) for today's session.`,
-        'Total Safe Liquidity (1M)': 'Rolling Capacity — the total dollar liquidity available over 21 trading days. Defines the ceiling for institutional position building (AUM scaling).',
-        'Day Change': 'Daily Momentum — percentage change relative to prior close.',
-        'As of': 'Data Recency — timestamp of the last captured liquidity snapshot.'
+        'Close': 'Market Close - the last traded price on the NYSE Arca. Watch the spread between this and NAV to monitor secondary market liquidity pressure.',
+        'Volume': 'Institutional Footprint - daily shares traded. Exceptional volume on \'green\' days signals high-conviction participation by Authorized Participants.',
+        'Dollar Vol Traded': 'Liquidity Depth ($) - actual cash value moved in the current session. Key for large-ticket sizing and identifying \'wide\' vs \'tight\' trading windows.',
+        'Tier': 'Participation Guardrail - sliding scale factor designed to keep trade size within the \'safe\' liquidity profile: <50K (2.0%), <100K (3.5%), <500K (5.0%), ≥500K (6.5%).',
+        'Possible Shares': `Safe Order Size (Shares) - an algorithmic estimate of the maximum daily share count you can trade today (${latest.possShares.toLocaleString()}) without triggering significant market slippage.`,
+        'Safe Liquidity': `Safe Order Size ($) - dollar value equivalent of your participation tier. Defines your maximum 'unobtrusive' entry/exit capacity ($${latest.safeLiq.toLocaleString()}) for today's session.`,
+        'Total Safe Liquidity (1M)': 'Rolling Capacity - the total dollar liquidity available over 21 trading days. Defines the ceiling for institutional position building (AUM scaling).',
+        'Day Change': 'Daily Momentum - percentage change relative to prior close.',
+        'As of': 'Data Recency - timestamp of the last captured liquidity snapshot.'
       };
 
       el.innerHTML = kpis.map(function (k) {
@@ -10013,7 +10013,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
       rev.forEach(function (r) {
         var chgCls = r.chgPct == null ? '' : r.chgPct >= 0 ? 'val-green' : 'val-red';
-        var chgStr = r.chgPct != null ? (r.chgPct >= 0 ? '+' : '') + r.chgPct.toFixed(2) + '%' : '—';
+        var chgStr = r.chgPct != null ? (r.chgPct >= 0 ? '+' : '') + r.chgPct.toFixed(2) + '%' : '-';
         var tierCls = r.volume < 50000 ? 'val-red' : r.volume < 100000 ? 'val-yellow' : r.volume < 500000 ? '' : 'val-green';
 
         html += '<tr>';
@@ -10051,7 +10051,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // =====================================================================
-    // SGX FFA FORWARD CURVE  (Signals tab — Panels 7 & 8)
+    // SGX FFA FORWARD CURVE  (Signals tab - Panels 7 & 8)
     // =====================================================================
 
     var _ffaProduct = 'cape';
@@ -10063,7 +10063,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
 
     /**
      * Compute expiry date for a contract in JS (mirrors Python get_expiry logic,
-     * weekends only — no holiday lookup available in browser).
+     * weekends only - no holiday lookup available in browser).
      */
     function sgxExpiry(month, year) {
       var d;
@@ -10306,7 +10306,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       panel.style.display = '';
 
       var label = contractData.expiryLabel || contractData.contract;
-      titleEl.textContent = 'Contract History — ' + label + ' (' + contractData.contract + ')';
+      titleEl.textContent = 'Contract History - ' + label + ' (' + contractData.contract + ')';
 
       var isActive = contractData.isActive;
       badgeEl.textContent = isActive ? '● Active' : '○ Expired';
@@ -10320,7 +10320,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       // Fewer than 5 data points → show message instead of chart
       if (hist.length < 5) {
         msgEl.style.display = '';
-        msgEl.innerHTML = '<em>Data collection in progress</em> — only ' + hist.length +
+        msgEl.innerHTML = '<em>Data collection in progress</em> - only ' + hist.length +
           ' data point' + (hist.length === 1 ? '' : 's') + ' available for ' + label + '.';
         canvas.style.display = 'none';
         panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -10463,7 +10463,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       el.textContent = label;
       el.className = 'regime-badge ' + cls;
       el.style.display = 'inline-block';
-      const tt = `Trend Lifecycle for ${rows[0] && rows[0].bdiy ? 'BDI Index' : 'Selected Asset'} — classifies market state using MA(200) anchor and 60-day velocity. Current: ${label} (MA200: ${fmt(ma200)}, ROC60: ${roc60.toFixed(1)}%). 🟢 Expansion (>MA200, ROC>0), 🟡 Distribution (>MA200, ROC<0), 🔵 Accumulation (<MA200, ROC>0), 🔴 Contraction (<MA200, ROC<0).`;
+      const tt = `Trend Lifecycle for ${rows[0] && rows[0].bdiy ? 'BDI Index' : 'Selected Asset'} - classifies market state using MA(200) anchor and 60-day velocity. Current: ${label} (MA200: ${fmt(ma200)}, ROC60: ${roc60.toFixed(1)}%). 🟢 Expansion (>MA200, ROC>0), 🟡 Distribution (>MA200, ROC<0), 🔵 Accumulation (<MA200, ROC>0), 🔴 Contraction (<MA200, ROC<0).`;
       el.setAttribute('data-tooltip', tt);
       el.removeAttribute('title');
     }
@@ -10749,7 +10749,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const returnsA = calculateLogReturns(alignedA);
       const returnsB = calculateLogReturns(alignedB);
       
-      // Cache cross-correlation — expensive O(n*maxLag) calc; reuse if pair+data unchanged
+      // Cache cross-correlation - expensive O(n*maxLag) calc; reuse if pair+data unchanged
       const _ccKey = pair + ':' + returnsA.length + ':' + returnsB.length;
       if (!renderLeadLagChart._cache) renderLeadLagChart._cache = {};
       if (!renderLeadLagChart._cache[_ccKey]) {
@@ -10809,7 +10809,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
           scales: {
             x: { 
               grid: { color: '#151a22' }, 
-              title: { display: true, text: 'Lag (Days) — Positive = A leads B', color: '#8b949e', font: { size: 10 } },
+              title: { display: true, text: 'Lag (Days) - Positive = A leads B', color: '#8b949e', font: { size: 10 } },
               ticks: { font: { size: 10 } }
             },
             y: { 
@@ -10822,7 +10822,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // =====================================================================
-    // INTELLIGENCE TAB — Signal Engine · Daily Brief · Q&A Assistant
+    // INTELLIGENCE TAB - Signal Engine · Daily Brief · Q&A Assistant
     // =====================================================================
 
     const INTEL = {
@@ -10916,7 +10916,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     // ── Signals loader ────────────────────────────────────────────────────────
-    // Pre-filter to Breakwave lines before JSON parsing — avoids stalling on
+    // Pre-filter to Breakwave lines before JSON parsing - avoids stalling on
     // large Hellenic nested-JSON entries that dominate the file.
 
     async function _intelLoadSignals() {
@@ -11043,17 +11043,17 @@ document.getElementById('tabs').addEventListener('click', function(e) {
     }
 
     function _buildVCCard(title, q, confluence, qualSigs, subItems) {
-      const fmtN  = n => n != null ? Number(n).toLocaleString(undefined, { maximumFractionDigits: 0 }) : '—';
-      const fmtPc = n => n != null ? (n >= 0 ? '+' : '') + n.toFixed(1) + '%' : '—';
+      const fmtN  = n => n != null ? Number(n).toLocaleString(undefined, { maximumFractionDigits: 0 }) : '-';
+      const fmtPc = n => n != null ? (n >= 0 ? '+' : '') + n.toFixed(1) + '%' : '-';
       const fmtPctl = n => n != null ? Math.round(n * 100) : null;
 
       const cfgMap = {
         BULL_CONFLUENCE: { cls:'ci-bull', badge:'bull', label:'POSITIVE CONFLUENCE',
-          note: 'Quantitative momentum and Breakwave analyst sentiment are <strong>both positive</strong> — signals are aligned.' },
+          note: 'Quantitative momentum and Breakwave analyst sentiment are <strong>both positive</strong> - signals are aligned.' },
         BEAR_CONFLUENCE: { cls:'ci-bear', badge:'bear', label:'NEGATIVE CONFLUENCE',
-          note: 'Quantitative momentum and Breakwave analyst sentiment are <strong>both negative</strong> — signals are aligned.' },
+          note: 'Quantitative momentum and Breakwave analyst sentiment are <strong>both negative</strong> - signals are aligned.' },
         DIVERGENCE:      { cls:'ci-div',  badge:'div',  label:'DIVERGENCE',
-          note: 'Quantitative and qualitative signals <strong>contradict each other</strong> — elevated positioning risk; potential mean-reversion setup.' },
+          note: 'Quantitative and qualitative signals <strong>contradict each other</strong> - elevated positioning risk; potential mean-reversion setup.' },
         NEUTRAL:         { cls:'ci-neut', badge:'neut', label:'NEUTRAL',
           note: 'No strong directional confluence detected.' },
       };
@@ -11069,7 +11069,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       const z      = q.zScore;
       const zPct   = z != null ? Math.min(100, Math.max(0, (z + 3) / 6 * 100)) : 50;
       const zCol   = z > 0.5 ? 'var(--green)' : z < -0.5 ? 'var(--red)' : 'var(--text-muted)';
-      const zLabel = z != null ? (z >= 0 ? '+' : '') + z.toFixed(2) + 'σ' : '—';
+      const zLabel = z != null ? (z >= 0 ? '+' : '') + z.toFixed(2) + 'σ' : '-';
 
       // Percentile bars
       function pctlBar(label, val) {
@@ -11098,10 +11098,10 @@ document.getElementById('tabs').addEventListener('click', function(e) {
       }
 
       const matrixRows = visibleSigs.map(s =>
-        '<tr>' + sentCell(s.sentiment) + sentCell(s.momentum) + sentCell(s.fundamentals) + '<td class="sm-date">' + (s.date || '—') + '</td></tr>'
+        '<tr>' + sentCell(s.sentiment) + sentCell(s.momentum) + sentCell(s.fundamentals) + '<td class="sm-date">' + (s.date || '-') + '</td></tr>'
       ).join('');
       const hiddenRows = hiddenSigs.map(s =>
-        '<tr>' + sentCell(s.sentiment) + sentCell(s.momentum) + sentCell(s.fundamentals) + '<td class="sm-date">' + (s.date || '—') + '</td></tr>'
+        '<tr>' + sentCell(s.sentiment) + sentCell(s.momentum) + sentCell(s.fundamentals) + '<td class="sm-date">' + (s.date || '-') + '</td></tr>'
       ).join('');
 
       const toggleId = 'smToggle_' + sparkId;
@@ -11136,26 +11136,26 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const scCfg = cfgMap[scObj.type] || cfgMap.NEUTRAL;
         const subPctl = fmtPctl(sq.pctl1y);
         const subPctlHtml = subPctl != null ? '<span class="intel-sub-pctl" data-tooltip="1-Year Percentile rank">' + subPctl + 'th pctl</span>' : '';
-        return '<div class="intel-sub-item"><span class="intel-sub-label">' + label + '</span><span class="intel-sub-val">' + fmtN(sq.current) + '</span><div class="intel-sub-meta" data-tooltip="Sub-index performance. Z-Score defines seasonal deviation; Regime defines trend phase."><span style="color:' + sCol + ';font-weight:600;">' + (sz != null ? (sz >= 0 ? '+' : '') + sz.toFixed(2) + 'σ' : '—') + '</span><span>' + sq.emoji + ' ' + sq.regime + '</span>' + subPctlHtml + '<span class="intel-vc-badge ' + scCfg.badge + '" style="padding:1px 6px;font-size:9px;" data-tooltip="' + scCfg.note.replace(/<[^>]+>/g, '') + '">' + scCfg.label + '</span></div></div>';
+        return '<div class="intel-sub-item"><span class="intel-sub-label">' + label + '</span><span class="intel-sub-val">' + fmtN(sq.current) + '</span><div class="intel-sub-meta" data-tooltip="Sub-index performance. Z-Score defines seasonal deviation; Regime defines trend phase."><span style="color:' + sCol + ';font-weight:600;">' + (sz != null ? (sz >= 0 ? '+' : '') + sz.toFixed(2) + 'σ' : '-') + '</span><span>' + sq.emoji + ' ' + sq.regime + '</span>' + subPctlHtml + '<span class="intel-vc-badge ' + scCfg.badge + '" style="padding:1px 6px;font-size:9px;" data-tooltip="' + scCfg.note.replace(/<[^>]+>/g, '') + '">' + scCfg.label + '</span></div></div>';
       }).join('');
 
       return '<div class="intel-vc-card ' + cfg.cls + '"><div class="intel-vc-header"><span class="intel-vc-name">' + title + '</span><span class="intel-vc-badge ' + cfg.badge + '" data-tooltip="' + cfg.note.replace(/<[^>]+>/g, '') + '">' + cfg.label + '<span class="intel-confidence ' + confCls + '">' + confLabel + ' ' + confPct + '%</span></span></div>' +
         '<div class="intel-conf-banner ' + cfg.cls + '" data-tooltip="Directional alignment indicator between Technical and Fundamental data.">' + cfg.note + '</div>' +
         '<div class="intel-body"><div class="intel-col">' +
           '<div class="intel-col-label" data-tooltip="Quantitative indicators derived from live exchange data and historical price action.">Quantitative</div>' +
-          '<div class="z-gauge-wrap" data-tooltip="Standard Deviation (σ) from the 1-year mean. Values >2σ or <-2σ signal historical extremes."><div class="z-value" style="color:' + zCol + '">' + zLabel + '</div><div class="z-gauge"><div class="z-gauge-dot" style="left:' + zPct + '%;background:' + zCol + ';"></div></div><div class="z-gauge-labels"><span>−3σ Negative</span><span>0</span><span>Positive +3σ</span></div></div>' +
+          '<div class="z-gauge-wrap" data-tooltip="Standard Deviation (σ) from the 1-year mean. Values >2σ or <-2σ signal historical extremes."><div class="z-value" style="color:' + zCol + '">' + zLabel + '</div><div class="z-gauge"><div class="z-gauge-dot" style="left:' + zPct + '%;background:' + zCol + ';"></div></div><div class="z-gauge-labels"><span>-3σ Negative</span><span>0</span><span>Positive +3σ</span></div></div>' +
           '<div class="intel-spark-label" data-tooltip="30-Day moving Z-Score trend. Values >2σ or <-2σ signal historical extremes. Hover to view daily values.">Z-Score (30D)</div><div class="intel-spark-wrap"><canvas id="' + sparkId + '"></canvas></div>' +
           pctlBar('1Y Pctl', q.pctl1y) + pctlBar('5Y Pctl', q.pctl5y) + pctlBar('All-Time', q.pctlAll) +
           '<div class="intel-regime-row" data-tooltip="Volatility Regime based on MA200 crossover and 60-day Rate of Change. Expansion=Positive Trend; Contraction=Negative Trend."><span class="intel-regime-emoji">' + q.emoji + '</span><div><div class="intel-regime-label">' + q.regime + '</div><div class="intel-regime-sub">Level: ' + fmtN(q.current) + '</div></div><span class="intel-roc">ROC(60D) ' + fmtPc(q.roc60) + '</span></div>' +
         '</div><div class="intel-col">' +
-          '<div class="intel-col-label" data-tooltip="Qualitative intelligence synthesized from bi-weekly Breakwave analyst reports and market insights.">Qualitative — Breakwave Advisors</div>' +
+          '<div class="intel-col-label" data-tooltip="Qualitative intelligence synthesized from bi-weekly Breakwave analyst reports and market insights.">Qualitative - Breakwave Advisors</div>' +
           (qualSigs.length ? (
-            '<div class="sent-timeline" data-tooltip="Sentiment timeline — oldest (left) to newest (right)">' + tlSegs + '</div>' +
+            '<div class="sent-timeline" data-tooltip="Sentiment timeline - oldest (left) to newest (right)">' + tlSegs + '</div>' +
             '<table class="sent-matrix"><thead><tr><th data-tooltip="Overall analyst sentiment for the period.">Sentiment</th><th data-tooltip="Short-term market momentum.">Momentum</th><th data-tooltip="Underlying supply and demand fundamentals.">Fundamentals</th><th data-tooltip="Report publication date.">Date</th></tr></thead><tbody>' + matrixRows + '</tbody>' +
             (hiddenRows ? '<tbody id="' + hiddenId + '" style="display:none">' + hiddenRows + '</tbody>' : '') + '</table>' +
             (hiddenSigs.length ? '<button class="sent-matrix-toggle" id="' + toggleId + '" onclick="var el=document.getElementById(\'' + hiddenId + '\');var btn=this;if(el.style.display===\'none\'){el.style.display=\'\';btn.textContent=\'Hide older\'}else{el.style.display=\'none\';btn.textContent=\'Show ' + hiddenSigs.length + ' older\'}">Show ' + hiddenSigs.length + ' older</button>' : '') +
             '<div class="sent-trend-summary">' + trendSummary + '</div>'
-          ) : '<div class="sent-no-data">Sentiment data unavailable — <code>signals.jsonl</code> loading or not yet generated.</div>') +
+          ) : '<div class="sent-no-data">Sentiment data unavailable - <code>signals.jsonl</code> loading or not yet generated.</div>') +
         '</div></div>' +
         (subHtml ? '<div class="intel-sub-strip">' + subHtml + '</div>' : '') +
       '</div>';
@@ -11891,7 +11891,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const terms    = _tokenize(query);
         const wikiOnly = document.getElementById('qaSrcWikiOnly')?.checked;
 
-        // Step 1 — Wiki pages (high-level summary layer, always loaded)
+        // Step 1 - Wiki pages (high-level summary layer, always loaded)
         statEl.textContent = 'Loading wiki pages...';
         const wikiItems = (await Promise.all(
           QA_WIKI_FILES.map(async wf => {
@@ -11903,7 +11903,7 @@ document.getElementById('tabs').addEventListener('click', function(e) {
         const avgWLen    = wikiItems.reduce((s, w) => s + _tokenize(w.text).length, 0) / (wikiItems.length || 1);
         const scoredWiki = _scoreItems(wikiItems, terms, w => w.text, avgWLen).slice(0, 3);
 
-        // Step 2 — Chunks (progressive: recent first, expand if needed)
+        // Step 2 - Chunks (progressive: recent first, expand if needed)
         let topChunks = [];
         if (!wikiOnly) {
           const _isChecked = id => document.getElementById(id)?.checked;
@@ -12040,10 +12040,10 @@ document.getElementById('tabs').addEventListener('click', function(e) {
             lastError = err;
             const isRetryable = /429|rate.limit|quota|too.many|too.large|request.too|token/i.test(err.message);
             if (isRetryable && fallbackOrder.indexOf(p) < fallbackOrder.length - 1) {
-              statEl.textContent = pCfg.label + ' failed (' + (err.message || '').slice(0, 60) + ') — trying next...';
+              statEl.textContent = pCfg.label + ' failed (' + (err.message || '').slice(0, 60) + ') - trying next...';
               continue;
             }
-            // Last provider — throw to outer catch
+            // Last provider - throw to outer catch
             throw err;
           }
         }
