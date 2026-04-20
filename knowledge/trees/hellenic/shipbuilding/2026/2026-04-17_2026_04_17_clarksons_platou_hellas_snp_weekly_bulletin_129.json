@@ -1,0 +1,87 @@
+{
+  "node_id": "hellenic_shipbuilding_2026-04-17_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129__root",
+  "doc_id": "hellenic_shipbuilding_2026-04-17_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129",
+  "parent_id": null,
+  "title": "CLARKSONS PLATOU HELLAS - SnP WEEKLY BULLETIN",
+  "section_path": [
+    "CLARKSONS PLATOU HELLAS - SnP WEEKLY BULLETIN"
+  ],
+  "section_path_text": "CLARKSONS PLATOU HELLAS - SnP WEEKLY BULLETIN",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Main\nSource: Clarkson Platou (Hellas) ltd\n\nLinked asset: 2026-04-17_clarksons-platou-hellas-snp-weekly-bulletin-129_weekly-sales-17th-april-2026_3d1d5ec2415b.pdf\nSource asset: reports/hellenic/shipbuilding/pdfs/2026-04-17_clarksons-platou-hellas-snp-weekly-bulletin-129_weekly-sales-17th-april-2026_3d1d5ec2415b.pdf\n\n[Page 1]\nClarkson Hellas Ltd. Desk Talk\nConfirming the cautious sentiment of the previous weeks, this week's S&P market indicated a selective\nand targeted appetite, with few but firmly priced transactions taking place in both the Dry and Wet\nsegments. While the general momentum feels steady, Buyers appear disciplined on pricing.",
+  "keywords": [
+    "supramax",
+    "handysize",
+    "vlcc",
+    "aframax",
+    "china",
+    "japan",
+    "any",
+    "information",
+    "usd",
+    "clarksons",
+    "dwt",
+    "its"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1758,
+  "source_path": "reports/hellenic/shipbuilding/2026/2026-04-17_clarksons-platou-hellas-snp-weekly-bulletin-129.html",
+  "source_url": "https://www.hellenicshippingnews.com/clarksons-platou-hellas-snp-weekly-bulletin-129",
+  "children": [
+    {
+      "node_id": "hellenic_shipbuilding_2026-04-17_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129__s01_main",
+      "doc_id": "hellenic_shipbuilding_2026-04-17_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129",
+      "parent_id": "hellenic_shipbuilding_2026-04-17_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129__root",
+      "title": "Main",
+      "section_path": [
+        "Main"
+      ],
+      "section_path_text": "Main",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "",
+      "keywords": [
+        "clarkson",
+        "hellas",
+        "ltd",
+        "platou",
+        "source"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 10,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "hellenic_shipbuilding_2026-04-17_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129__s02_linked_asset_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129_weekly_sales_17th_april_2026_3d1d5ec2415b_pdf",
+      "doc_id": "hellenic_shipbuilding_2026-04-17_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129",
+      "parent_id": "hellenic_shipbuilding_2026-04-17_2026_04_17_clarksons_platou_hellas_snp_weekly_bulletin_129__root",
+      "title": "Linked asset: 2026-04-17_clarksons-platou-hellas-snp-weekly-bulletin-129_weekly-sales-17th-april-2026_3d1d5ec2415b.pdf",
+      "section_path": [
+        "Linked asset: 2026-04-17_clarksons-platou-hellas-snp-weekly-bulletin-129_weekly-sales-17th-april-2026_3d1d5ec2415b.pdf"
+      ],
+      "section_path_text": "Linked asset: 2026-04-17_clarksons-platou-hellas-snp-weekly-bulletin-129_weekly-sales-17th-april-2026_3d1d5ec2415b.pdf",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Source asset: reports/hellenic/shipbuilding/pdfs/2026-04-17_clarksons-platou-hellas-snp-weekly-bulletin-129_weekly-sales-17th-april-2026_3d1d5ec2415b.pdf\n\n[Page 1]\nClarkson Hellas Ltd. Desk Talk\nConfirming the cautious sentiment of the previous weeks, this week's S&P market indicated a selective\nand targeted appetite, with few but firmly priced transactions taking place in both the Dry and Wet\nsegments.",
+      "keywords": [
+        "supramax",
+        "handysize",
+        "vlcc",
+        "aframax",
+        "china",
+        "japan",
+        "any",
+        "information"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 1695,
+      "section_type": "linked_pdf",
+      "children": []
+    }
+  ]
+}
