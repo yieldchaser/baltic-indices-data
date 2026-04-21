@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T11:30:39.424229+00:00",
+  "generated_at": "2026-04-21T13:12:53.220218+00:00",
   "brief_date": "2026-04-21",
   "generation": {
     "mode": "llm",
@@ -82,15 +82,15 @@
   "vessel_classes": {
     "dry_bulk": {
       "confluence_type": "DIVERGENCE",
-      "confluence_note": "A sharp contrast exists between the bullish technical expansion (BDI at 99.7th percentile) and the consistently negative fundamental signals regarding Chinese industrial demand.",
-      "summary": "Spot rates for Capesizes have surged by 66% over 60 days despite iron ore portside inventories in China stabilizing at near-record levels. Negative steel production growth and high coal inventories suggest the current rate expansion is driven more by volatility and specific trade-lane tightness than broad industrial demand.",
+      "confluence_note": "A stark contrast exists between the extreme quantitative strength (BDI at 99.7th percentile) and the persistent negative fundamental sentiment driven by Chinese steel weakness.",
+      "summary": "Spot rates for Capesize and Panamax vessels continue to trade in an expansion regime despite China's iron ore port inventories reaching 166mt (+20.3% YoY). The market is currently sustained by positive momentum rather than industrial demand, as steel production remains down 3.6% year-on-year.",
       "key_signals": [
-        "BDI Z-score +2.15",
-        "China Iron Ore Inventories +20.3% YoY",
-        "Capesize ROC60 +66.1%"
+        "BDI Z-score +2.15 (99.7th percentile)",
+        "Negative fundamental sentiment for 8 consecutive reports",
+        "Capesize ROC60 of +66.1%"
       ],
-      "outlook": "Caution is warranted as technical momentum faces the gravity of weakening Chinese steel fundamentals and high inventories.",
-      "watch": "China iron ore portside inventory drawdown and Brazil export volumes.",
+      "outlook": "Short-term momentum is likely to carry spot rates higher, but the underlying inventory overhang in China poses a significant correction risk.",
+      "watch": "China steel inventory levels and iron ore stockpiles for signs of a demand peak.",
       "report_dates": [
         "2026-04-14",
         "2026-03-31",
@@ -104,16 +104,16 @@
     },
     "tanker": {
       "confluence_type": "BULL_CONFLUENCE",
-      "confluence_note": "Extreme quantitative strength in Clean and Dirty sectors aligns with qualitative reports of unnavigable straits and geopolitical supply shocks.",
-      "summary": "The tanker market has reached a state of extreme expansion, with Clean Tanker rates at the 100th percentile and Suezmax rates up significantly YoY. Geopolitical conflict in the Middle East has disrupted traditional routes, significantly increasing ton-mile demand even as spot momentum begins to cool from its initial peak. Segment breadth remains important: clean tankers at 2163.0 (ROC60 +150.1%), alongside dirty tankers at 2907.0 (ROC60 +79.6%).",
+      "confluence_note": "Quantitative metrics and qualitative fundamentals are aligned in a historic expansion, with Clean Tanker Z-scores exceeding +3.0.",
+      "summary": "The tanker market is adjusting to a structural shift as unnavigable straits and geopolitical conflict in the Middle East drive a parabolic rise in freight rates. While momentum has slightly cooled from its peak, the fundamental outlook remains positive due to low global crude-on-water and sustained inventory draws.",
       "key_signals": [
-        "Clean Tanker Z-score +3.29",
-        "VLCC Middle East-Asia rates +71.1% YoY",
-        "Geopolitical straits closure",
+        "Clean Tanker ROC60 +150.1%",
+        "VLCC Middle East-Asia rates up 71.1% YoY",
+        "Positive sentiment and fundamental scores",
         "Dirty tanker check: level=2907.0, ROC60=+79.6%."
       ],
-      "outlook": "Structurally bullish as long as Middle East navigation remains restricted and oil inventories continue to draw.",
-      "watch": "MEG VLCC fixture activity and the status of Middle Eastern maritime bottlenecks.",
+      "outlook": "The outlook remains strongly bullish as supply-side constraints and rerouting increase ton-mile demand.",
+      "watch": "Ongoing navigability of major trade straits and Middle East geopolitical developments.",
       "report_dates": [
         "2026-04-21",
         "2026-04-07",
@@ -126,7 +126,7 @@
       ]
     }
   },
-  "macro_note": "Global freight is currently bifurcated between a supply-shock driven tanker boom and a dry bulk market rallying on technical momentum despite a cooling Chinese industrial engine. The persistent $100+ oil price remains a critical cost-push factor across all vessel classes.",
+  "macro_note": "The freight market is bifurcated between a tanker sector fueled by geopolitical crisis and a dry bulk sector disconnected from soft Chinese industrial indicators. High energy prices remain a central risk factor, potentially capping global economic growth while simultaneously inflating tanker operational costs and freight premiums.",
   "sources": [
     "breakwave_drybulk_2026-04-14",
     "breakwave_drybulk_2026-03-31",
