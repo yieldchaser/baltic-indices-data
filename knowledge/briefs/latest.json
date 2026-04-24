@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T13:11:47.448679+00:00",
+  "generated_at": "2026-04-24T13:46:42.829292+00:00",
   "brief_date": "2026-04-24",
   "generation": {
     "mode": "llm",
@@ -82,15 +82,15 @@
   "vessel_classes": {
     "dry_bulk": {
       "confluence_type": "DIVERGENCE",
-      "confluence_note": "A sharp disconnect exists between the quantitative expansion regime (BDI Z-score +2.22) and stubbornly negative fundamentals driven by record-high Chinese iron ore inventories.",
-      "summary": "Dry bulk spot rates are hovering at 5-year highs with Capesize and Supramax leading a late-cycle expansion. However, the underlying narrative is shadowed by a 3.6% YOY decline in Chinese steel production and portside iron ore stocks hitting 166mt, suggesting the rally lacks a fundamental demand floor.",
+      "confluence_note": "While quantitative indices are in a strong expansion regime (BDI Z-score +2.22), qualitative fundamentals remain stubbornly negative due to record-high Chinese iron ore inventories.",
+      "summary": "Spot rates have hit 2-month highs, pushing the BDI into its 99th percentile for the 5-year range. However, this strength masks underlying weakness in China, where steel production is down 3.6% YOY and iron ore inventories have reached 166mt, signaling a potential oversupply in the near term.",
       "key_signals": [
-        "Supramax ROC60 +46.5%",
+        "BDI ROC60 at +33.7%",
         "China Iron Ore Inventories +20.3% YOY",
-        "Negative Fundamentals Sentiment"
+        "Capesize 5-year percentile at 99.1%"
       ],
-      "outlook": "Expect volatility as record spot levels face pressure from weakening Chinese industrial demand and high portside stockpiles.",
-      "watch": "Chinese steel production data and iron ore inventory de-stocking rates for signs of demand stabilization.",
+      "outlook": "Cautiously optimistic on spot momentum but wary of a sharp correction as high portside stocks limit fresh demand.",
+      "watch": "Chinese steel production margins and the impact of sustained high oil prices on global dry cargo demand.",
       "report_dates": [
         "2026-04-14",
         "2026-03-31",
@@ -104,16 +104,16 @@
     },
     "tanker": {
       "confluence_type": "BULL_CONFLUENCE",
-      "confluence_note": "Extreme quantitative strength (Clean Tanker Z+3.14) is highly correlated with positive fundamentals stemming from geopolitical disruptions and unnavigable trade straits.",
-      "summary": "The tanker market has entered a structural shift as 'worst-case' geopolitical scenarios force trade route adjustments, driving the Clean Tanker ROC60 to a staggering +147.3%. While momentum has recently softened from panic peaks, positive fundamentals remain intact due to tightening supply and elevated oil prices. Segment breadth remains important: clean tankers at 2201.0 (ROC60 +147.3%), alongside dirty tankers at 2837.0 (ROC60 +72.4%).",
+      "confluence_note": "Extremely high Z-scores and triple-digit ROC in clean tankers align with consistently positive fundamental and sentiment ratings from analysts.",
+      "summary": "The tanker market is experiencing a structural shift as geopolitical disruptions render major straits unnavigable, forcing longer transit times. Despite a recent slight dip in momentum, the supply-demand balance is tight with oil deliveries drying out and global crude-on-water down 1.6% to 10.1% depending on the segment.",
       "key_signals": [
-        "Clean Tanker Z-score +3.14",
-        "Straits Unnavigable Narrative",
-        "World Oil Demand +1.0% YOY",
+        "Clean Tanker ROC60 at +147.3%",
+        "Clean Tanker Z-score at +3.14",
+        "VLCC Middle East-Asia rates up 71.1% YOY",
         "Dirty tanker check: level=2837.0, ROC60=+72.4%."
       ],
-      "outlook": "Freight rates are projected to remain at historically elevated levels as long as geopolitical transit risks remain unresolved.",
-      "watch": "Middle East geopolitical developments and changes in global crude oil 'on water' volumes.",
+      "outlook": "Strongly bullish as structural ton-mile increases from geopolitical rerouting offset short-term volatility.",
+      "watch": "Escalation in the Middle East conflict and its impact on 'Global Crude Oil On Water' levels.",
       "report_dates": [
         "2026-04-21",
         "2026-04-07",
@@ -126,7 +126,7 @@
       ]
     }
   },
-  "macro_note": "Global shipping is deeply bifurcated; tankers are surging on geopolitical conflict-driven inefficiencies, while dry bulk's expansionary regime faces a growing threat from the Chinese industrial slowdown and $100+ oil prices.",
+  "macro_note": "Geopolitical volatility remains the primary catalyst for the tanker super-cycle, while the dry bulk market faces a growing disconnect between surging freight rates and cooling industrial fundamentals in China.",
   "sources": [
     "breakwave_drybulk_2026-04-14",
     "breakwave_drybulk_2026-03-31",
