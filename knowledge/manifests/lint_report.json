@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T09:40:31Z",
+  "generated_at": "2026-04-24T11:28:35Z",
   "current_date": "2026-04-24",
   "warning_count": 9,
   "high_severity_count": 0,
@@ -35,25 +35,25 @@
             "latest_date": "2026-04-14"
           },
           {
-            "source": "baltic",
+            "source": "hellenic",
             "avg_tone_score": -0.17,
             "dominant_tone": "neutral",
-            "doc_count": 3,
-            "latest_date": "2026-04-17"
+            "doc_count": 6,
+            "latest_date": "2026-04-23"
           },
           {
-            "source": "hellenic",
-            "avg_tone_score": -0.08,
+            "source": "baltic",
+            "avg_tone_score": 0.0,
             "dominant_tone": "neutral",
-            "doc_count": 6,
-            "latest_date": "2026-04-22"
+            "doc_count": 2,
+            "latest_date": "2026-04-17"
           },
           {
             "source": "breakwave_insights",
             "avg_tone_score": 0.62,
             "dominant_tone": "constructive",
             "doc_count": 6,
-            "latest_date": "2026-04-22"
+            "latest_date": "2026-04-24"
           }
         ],
         "message": "Dry Bulk Market shows recent tone divergence: breakwave_insights reads cautiously_bullish while breakwave reads cautiously_bearish."
@@ -63,12 +63,12 @@
       "severity": "watch",
       "kind": "topic_divergence",
       "key": "panamax_and_supramax",
-      "message": "Panamax and Supramax shows recent tone divergence: breakwave_insights reads cautiously_bullish while hellenic reads neutral.",
+      "message": "Panamax and Supramax shows recent tone divergence: breakwave_insights reads constructive while hellenic reads neutral.",
       "details": {
         "topic_id": "panamax_and_supramax",
         "title": "Panamax and Supramax",
         "severity": "watch",
-        "score_diff": 0.79,
+        "score_diff": 0.92,
         "source_scores": [
           {
             "source": "hellenic",
@@ -86,13 +86,13 @@
           },
           {
             "source": "breakwave_insights",
-            "avg_tone_score": 0.62,
+            "avg_tone_score": 0.75,
             "dominant_tone": "constructive",
             "doc_count": 6,
-            "latest_date": "2026-04-21"
+            "latest_date": "2026-04-24"
           }
         ],
-        "message": "Panamax and Supramax shows recent tone divergence: breakwave_insights reads cautiously_bullish while hellenic reads neutral."
+        "message": "Panamax and Supramax shows recent tone divergence: breakwave_insights reads constructive while hellenic reads neutral."
       }
     },
     {
@@ -122,9 +122,9 @@
           },
           {
             "source": "baltic",
-            "avg_tone_score": 0.06,
+            "avg_tone_score": 0.25,
             "dominant_tone": "neutral",
-            "doc_count": 4,
+            "doc_count": 3,
             "latest_date": "2026-04-17"
           },
           {
@@ -132,7 +132,7 @@
             "avg_tone_score": 0.62,
             "dominant_tone": "constructive",
             "doc_count": 6,
-            "latest_date": "2026-04-22"
+            "latest_date": "2026-04-24"
           }
         ],
         "message": "Tanker Market shows recent tone divergence: breakwave_insights reads cautiously_bullish while hellenic reads neutral."
