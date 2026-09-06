@@ -15,7 +15,7 @@ to `origin` to get a verdict.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-06 21:00 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-06 21:24 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -117,6 +117,40 @@ and should be kept and reused.
 
 Decisions 1 and 2 touch the same file (`process_knowledge.py` / `validate_knowledge.py`).
 Split by decision, not by file, and land Decision 1 before anyone starts Decision 2.
+
+---
+
+## 2026-09-06 21:24 UTC — **Ningbo watch item resolved — and it inverts into a false-positive risk**
+
+The prior entry flagged `baltic/ningbo` recovering to a median of only 216 as a possible partial capture. Reviewer measured it against ningbo's own history rather than against its siblings, which is the comparison that actually settles it:
+
+| series | n | median | p25 | p75 | max |
+|---|---|---|---|---|---|
+| `baltic/ningbo` **historical** (all years) | 961 | **74** | 74 | 358 | 358 |
+| `baltic/ningbo` **2026 recovered** | 138 | **216** | 74 | 358 | 505 |
+| `baltic/dry` historical | 2,152 | 995 | 917 | 1,169 | 2,797 |
+| `baltic/dry` 2026 recovered | 256 | 1,064 | 952 | 1,219 | 1,574 |
+
+**Not a partial capture — the opposite.** Ningbo's long-run median is **74 characters**, so the recovered 2026 data at 216 is *richer* than its own historical norm, and its maximum rose from 358 to 505. The NCFI is a containerised freight index that genuinely publishes terse notes; a representative recovered chunk is:
+
+> `Surcharges not included in the total ocean freight reported:\nNCFI_overview`
+
+That is 74 characters and is a complete, legitimate record. Dry behaves the same way — recovered 1,064 against a historical 995 — so both groups recovered to slightly above their own baselines. The watch item is closed.
+
+### CG1 — but this surfaces a real false-positive risk in the gate
+
+`baltic/ningbo`'s natural historical median (**74**) sits **below the gate's 120 floor**. It passes today only because the trailing-50 window currently lands on the richer 2026 captures. If the NCFI reverts to its terser historical format — which is its normal behaviour across 961 chunks of history — **the gate will fire on healthy data**.
+
+This is the inverse of the failure the gate was built to catch, and it matters more than it sounds: a gate that cries wolf on a legitimately terse source is a gate someone eventually silences by lowering the global floor, which would re-open G1 for every other source. The floor must not become the release valve for one source's natural brevity.
+
+Two clean options, neither urgent:
+
+1. **A per-source floor override** for `baltic/ningbo` (~40 would clear its historical p25 of 74 with margin), leaving the global 120 intact for everyone else.
+2. **Leave it and document it** — record in the `CONTENT_GATE_*` comment block that ningbo is expected to hover near the floor, so a future firing there is triaged as "check whether NCFI reverted to short-form" rather than treated as a threshold problem.
+
+Reviewer prefers (1): it is explicit, it survives staff turnover better than a comment, and it keeps the global floor untouchable. Either way, the standing rule holds — **if ningbo fires, the fix is a per-source override or a capture check, never a change to `CONTENT_GATE_MEDIAN_FLOOR`.**
+
+Not authorized here; recorded for whoever picks up Decision 1.3.
 
 ---
 
