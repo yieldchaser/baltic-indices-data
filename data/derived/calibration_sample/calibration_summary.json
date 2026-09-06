@@ -1,0 +1,20 @@
+{
+  "total_tables_inspected": 10,
+  "total_passed": 6,
+  "total_failed": 4,
+  "overall_pass_rate_pct": 60.0,
+  "by_broker": {
+    "ssy": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "issues_count": 0
+    },
+    "allied": {
+      "total": 8,
+      "passed": 4,
+      "failed": 4,
+      "issues_count": 68
+    }
+  }
+}
