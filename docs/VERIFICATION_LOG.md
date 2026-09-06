@@ -13,6 +13,42 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-06 17:26 UTC — `agent/muse-spark` @ `35b510e8e` — **PASS**
+
+**Reviewed:** `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md` (new), N2/N3 fixes in `skip_cause_matrix.json` and `split_skip_causes.py`, plus a clean sync of `main` @ `6ba037f20`.
+
+**Closes N2 and N3.** **D1-D4 remain open** — this commit landed roughly a minute after that verdict was pushed, so it is a timing overlap, not a refusal.
+
+The audit takes the right epistemic stance throughout: it labels §6 findings "suspects needing vision check", quotes stored strings verbatim, and asserts **no** ground-truth corrections while vision is blocked. It also declines to commit to reprocessing scope, deferring to the user. Both are correct.
+
+### The corruption is a bounded, measured class
+
+**228 mixed-separator candidates** across the 10,442 OCR-bearing images, found by scanning for `\d{1,3}\.\d{3}` co-occurring with `\d{1,3},\d{3}`. The `34.438` case this reviewer raised is S1 — one instance of a quantified class, not an anecdote. S2 and S3 extend it: a Bloomberg-style legend carrying `15366,000` and `17483,000` alongside `15200.035` and `9407.00` in a single chart, and a dollar-index axis mixing `100,00` with `96.000` and `$6,000`.
+
+### Reviewer's own checks against this branch's data
+
+**V1 — the ~1,100-character summary cap is NOT data loss. Do not chase it.** The audit reports `pdf` summary lengths maxing at ~1,100 and the section `text` field uniformly empty, which reads like truncation. It is not. `LINKED_TEXT_CHAR_LIMIT` is **70,000** (`process_knowledge.py:73`), and pulling the two chunks for the S1 asset from `knowledge/chunks/breakwave_insights_insights.jsonl` returns 1,164 and 375 characters ending naturally on the table's footnotes, with no `[Truncated linked content excerpt.]` marker. The tree-node `summary` is a display field; the retrievable content in `chunks/` is complete. Recording this so the next reader does not re-open it.
+
+**V2 — but that means the corruption sits in the retrieval layer, not a display field.** The same chunk text contains, verbatim:
+
+```
+IRON ORE
+78,344 704 1 1,97
+PRODUCTION! 8,3 86,704 100,988 301,972
+```
+
+This is worse than a separator swap: the production row's digits have been scattered across two lines and interleaved with the row label. A retrieval query about Vale iron-ore production gets this back as tabular fact. The separator scan in §6 counts a class that is real but is a **lower bound** on the numeric damage — row-splitting of this kind carries no dot-versus-comma signature and will not appear in the 228.
+
+**V3 — 451 images were never OCR'd at all.** `[OCR skipped for small image (< 90000 pixels)]`, i.e. anything under roughly 300x300. The audit calls these "logos/icons", which is plausible but is an assumption, not a measurement — a 450x200 chart strip clears none of that threshold. Worth a cheap check: sample 20 and confirm they carry no data.
+
+**V4 — the PDF path is where extraction actually fails.** 89 of the 97 null-node records are `pdf` and 8 are `link`; **every one of the 10,894 `img` records carries a `node_id`**. That aligns with the 79 `PDFSyntaxError: No /Root object` failures and localizes the problem: image ingestion is structurally healthy and merely low-quality, while linked-PDF ingestion fails outright. These are two different repairs, and only the first needs a vision model.
+
+### Usable cost input
+
+The audit supplies what sizing needs: **13,681 files, 3,346.18 MB**, median ~98 KB, split `.png` 6,235 / `.jpg` 4,787 / `.jpeg` 259 / `.webp` 4 / `.pdf` 2,367 / html 29; 10,894 `img` + 2,367 `pdf` + 420 `link`. Any vision budget should be built on these figures.
+
+---
+
 ## 2026-09-06 17:02 UTC — `agent/muse-spark` @ `da3be8b45` — **PASS WITH CHANGES**
 
 **Reviewed:** 1 commit, +23,590 lines — `data/derived/asset_dispositions.jsonl` (22,106 per-asset records), the `calibration/p1/` fixture set, a vendored `verify_table.py`, and the Sample C reselection.
