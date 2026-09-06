@@ -3,30 +3,33 @@
 - Author: muse-spark
 - Date: 2026-09-06
 - Branch: agent/muse-spark
-- Base HEAD: 187ee53ba (56,873 tracked files)
+- Base HEAD: ad2d67024 (56,874 tracked files; sync of origin/main 1ffb02db4)
 - Scope: inventory + plan ONLY. No extraction code, no shard writes.
 - Worktree-concurrency: work done in C:\Users\Dell\Github\shipping-muse-spark on branch agent/muse-spark, never committing to main from shared checkout, merges one-at-a-time.
+- Method: every number below measured directly in this worktree at HEAD ad2d67024. Where a figure contradicts the mission brief, the measured figure governs.
 
 Spot-checks re-verified in this worktree 2026-09-06: `reports/baltic` = 2891 tracked files;
-`reports/drewry` = 548 tracked files with 0 local PDFs; `reports/hellenic` = 14058 tracked files;
-`knowledge/manifests/sources.json` (generated 2026-09-06) covers breakwave/baltic/hellenic/
-broker_reports/poten/books only; `data/Capital_Link_*.xlsx` (7 files) present.
+`reports/drewry` = 548 tracked files with 0 local PDFs; `reports/hellenic` = 14052 tracked files
+(incl 3948 tracked PDFs); `knowledge/manifests/sources.json` (generated 2026-09-06) covers breakwave/baltic/
+breakwave_insights/hellenic/broker_reports/poten/books only; `data/Capital_Link_*.xlsx` (7 files) present.
 
-## 1. Census (tracked files at HEAD)
+## 1. Census (tracked files at HEAD ad2d67024)
 
 | Area | Count | Notes |
 | --- | --- | --- |
-| reports/ total | 36,319 | |
+| repo total | 56,874 | HEAD ad2d67024 |
+| reports/ total | 36,312 | |
 | reports/baltic | 2891 | dry/tanker/gas/container/ningbo |
-| reports/breakwave | 18289 | insights |
+| reports/breakwave | 18289 | insights (81 local PDFs; 14,633 jpg+png page images) |
 | reports/broker_reports | 105 | md only |
 | reports/drewry | 548 | 0 local PDFs — md + ais_manifest.csv only |
-| reports/drybulk | 209 | breakwave drybulk |
-| reports/hellenic | 14058 | incl 3947 tracked PDFs |
+| reports/drybulk | 209 | breakwave drybulk (209 PDF) |
+| reports/hellenic | 14052 | incl 3948 tracked PDFs; 6,890 jpg+png page images |
 | reports/panama_canal | 1 | |
 | reports/poten | 30 | opinions, metadata-only |
 | reports/seabrokers | 97 | md |
-| reports/tankers | 78 | breakwave tankers |
+| reports/tankers | 78 | breakwave tankers (78 PDF) |
+| reports/ top-level | 12 | incl 11 book PDFs |
 | data/ total | 515 | |
 | data/bunkers | 8 | |
 | data/cache | 1 | |
@@ -34,37 +37,134 @@ broker_reports/poten/books only; `data/Capital_Link_*.xlsx` (7 files) present.
 | data/commodities | 22 | |
 | data/congestion | 4 | |
 | data/demolition | 1 | fixtures CSV |
-| data/derived | 30 | incl compiled TC-rate CSVs |
+| data/derived | 30 | incl compiled TC-rate CSVs, fearnleys_catalog.csv, USDA grain CSVs |
 | data/etf | 145 | |
-| data/flows | 3 | |
-| data/futures | 14 | incl SGX FEF/M65F/LPF raw |
+| data/flows | 3 | BDRY/BWET/all_flows_summary JSON |
+| data/futures | 14 | incl SGX FEF/M65F/LPF + cape/panamax/supramax/handysize CSVs |
 | data/indices | 22 | incl Capital Link converted CSVs |
 | data/macro | 1 | |
 | data/manifests | 2 | |
 | data/raw | 7 | |
 | data/reports | 100 | seabrokers-related |
 | data/rulebooks | 3 | |
-| data/ top-level | 8 | incl 7 Capital_Link_*.xlsx (~227KB each, single-sheet IndexArchiveValue) |
-| knowledge/ total | ~19,797 | |
+| data/ top-level | 8 | incl 7 Capital_Link_*.xlsx (CLDBI/CLCI/CLTI/CLMI/CLMFI/CLLG/CLMLP) |
+| knowledge/ total | 19,799 | 8,850 tree shards + 8,850 docs + chunks/derived/manifests |
 | knowledge/books | 1798 | |
 | knowledge/briefs | 108 | |
-| knowledge/chunks | 165 | |
-| knowledge/derived | 6 | |
+| knowledge/chunks | 165 | files; 101,967 chunks per coverage_report.json |
+| knowledge/derived | 6 | signals/themes/topic_evidence/section_index/timelines shards |
 | knowledge/docs | 8850 | |
-| knowledge/manifests | 7 | |
+| knowledge/manifests | 7 | documents/errors/sources/coverage/lint/provenance/spike_queue |
 | knowledge/reports | 1 | |
-| knowledge/trees | 8850 | |
+| knowledge/trees | 8850 | hierarchical section shards (already sectioned, not flat RAG) |
 | knowledge/wiki | 11 | |
 | index.html | ~30,464 lines (~30k) | 9 tabs (9 `<div class="tab-panel">` divs, 9 unique `id="tab-*"`), 53 `fetch(` call sites |
 
-## 2. Sibling audit note (corroborating, not canonical)
+Repo-wide by extension (measured, cost-model relevant): **pdf 4,475** · **jpg+png 21,532**
+(21,936 incl 409 jpeg; +9 webp) · **html 9,264** (+2 htm) · csv 294 · xlsx 17 · md 11,550 ·
+json 9,080 · jsonl 88 · py 119.
 
-`docs/AUDIT_UNRENDERED_DATA_SOURCES.md` is NOT on main — it is uncommitted sibling work
-in the shared checkout. It claims 56,864 files / 7.35GB / 332 tabular / 35,957 reports /
-19,801 shards, consistent with HEAD count 56,873 within counting-method tolerance.
-Treat as corroborating, not canonical.
+Counting method: count with `git -c core.quotepath=false ls-files`, because default
+quotepath octal-quotes non-ASCII filenames (3 files) and naive `.pdf` matching misses them.
 
-## 3. Rendered vs unrendered
+## 2. Binding definition: "unprocessed" (ledger-diff, not filesystem walk)
+
+> **Unprocessed** = a diff against `knowledge/manifests/documents.jsonl` on
+> `source_hash` + `compiler_version`. It is **not** a filesystem walk.
+
+A directory listing both re-flags already-ingested material and misses
+content-changed files whose paths did not move. The ledger already carries the
+incremental-processing mechanism; use it.
+
+`knowledge/manifests/documents.jsonl` measured at HEAD: **8,850 rows, 8,850 unique
+doc_ids.** Schema fields confirmed:
+`doc_id, source, category, date, title, source_path, doc_path, tree_path, tree_node_count,
+chunk_file, chunk_count, source_hash, source_hash_version, compiler_version, processed_at,
+linked_assets_discovered/mirrored/ingested/skipped/failed`.
+Distinct values measured: `compiler_version` = {2: 8850};
+`source_hash_version` = {content_sha1_v2: 8850}.
+
+## 3. P0 work item: the `linked_assets_skipped` queue (measured, not inherited)
+
+Aggregating `documents.jsonl` at HEAD (verified, matches reviewer baseline):
+
+| | discovered | mirrored | ingested | **skipped** | failed |
+|---|---|---|---|---|---|
+| **all** | 22,106 | 13,716 | 13,591 | **8,424** | 91 |
+| breakwave_insights | 16,629 | 8,959 | 8,859 | **7,703** | 67 |
+| hellenic | 5,477 | 4,757 | 4,732 | **721** | 24 |
+| baltic / breakwave / broker_reports / poten / book | 0 | 0 | 0 | 0 | 0 |
+
+Docs with skipped > 0: **3,167** (breakwave_insights 2,475; hellenic 692).
+**8,424 linked assets were discovered and then skipped** — largely the chart-image
+assets the mission wants a two-stage vision pass on. They are the highest-value
+unprocessed material in the repo. **This is P0.**
+
+Skip causes (read from `scripts/process_knowledge.py:2309-2399`
+`collect_linked_asset_sections`): per-doc `MAX_LINKED_ASSETS_PER_DOC` cap, empty href,
+non-content link, external http(s) URL (skipped, not failed), duplicate already-mirrored
+path (skipped). Failed (91) = unresolvable relative ref, linked-asset extraction
+exception, or empty extracted text — parent document still compiles.
+
+Sampled skipped-queue parents (ledger rows with `linked_assets_skipped > 0`):
+
+- breakwave_insights: `breakwave_insights_insights_2020-06-06_..._the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_op`
+  (discovered 2 / mirrored 0 / ingested 0 / **skipped 2**; sibling ingested sections present
+  in the same tree shard as `__s02/__s03_linked_asset_*_jpg` image sections).
+- hellenic: `hellenic_demolition_0000-00-00_..._athenian_shipbrokers_s_a_demolition_quick_update_week_03_2026`
+  (discovered 1 / mirrored 0 / ingested 0 / **skipped 1**; source page is a 520-error capture).
+- Third source: **none exists** — only breakwave_insights and hellenic have any skipped > 0.
+
+Parent-document attribution riding with every queued item (no filesystem re-walk needed):
+
+- Ledger row: `doc_id, source, category, date, source_path, doc_path, tree_path, chunk_file`.
+- Tree sections (`knowledge/trees/...json`): `node_id` = `{doc_id}__s{NN}_linked_asset_{file}_{hash}_{ext}`,
+  `doc_id`, `parent_id`, `title` ("Linked asset: {filename}"),
+  `section_type` in {linked_image_asset, linked_pdf, linked_text_asset},
+  `section_path` / `section_path_text`, `summary` led with `Source asset: {reports/... rel path}`.
+- Chunks (`knowledge/chunks/*.jsonl`): `chunk_id, doc_id, source, category, date,
+  section_id` (= node_id), `section_title, section_path(_text), section_level`.
+
+Secondary queue: `knowledge/manifests/errors.jsonl` holds **83 entries**. Measured classes:
+79x `PDFSyntaxError: No /Root object! - Is this really a PDF?` raised in
+`collect_linked_asset_sections -> extract_linked_text_asset` on linked assets
+(parent doc still compiles; mostly breakwave/hellenic archive HTML whose linked "PDF"
+is not a real PDF); 2x `[Errno 36] File name too long` on breakwave HTML asset URLs
+(mechanical, fixable); 1x `TypeError: unsupported operand for -: float and str`;
+1x `[Errno 22] Invalid argument`. Samples: `reports/breakwave/2022/2022-03-23_signal-dry-bulk-weekly-report.html`
+(Errno 36); `reports/breakwave/2022/2022-05-30_russias-seaborne-oil-flows-changing-patterns.html`
+(No /Root object); `reports/breakwave/2022/2022-12-09_china-reopening-boosts-sentiment-in-industrial-metal-markets.html`
+(No /Root object).
+
+Genuinely uncovered sources (each verified absent from `knowledge/manifests/sources.json`,
+whose `paths` sub-keys cover breakwave/baltic/breakwave_insights/hellenic/broker_reports/poten/books only):
+
+- SGX iron ore/freight futures (`data/futures/sgx_iron_ore_fef/m65f/lpf*.csv` + cape/panamax/supramax/handysize present on disk).
+- 7 Capital Link index XLSX in `data/` (CLDBI/CLCI/CLTI/CLMI/CLMFI/CLLG/CLMLP).
+- Drewry AIS + opinions (`reports/drewry`, 548 files, 0 local PDFs).
+- SSY / Fearnleys / Gibson / Allied weeklies (only `data/derived/time_charter_rates_fearnleys.csv` + `fearnleys_catalog.csv` compiled artifacts present).
+- Grain + port flows (USDA grain CSVs + `data/flows/*.json` present, no manifest coverage).
+- SNP commercial fixtures (only demolition fixtures CSV + scattered weeklies, no catalog).
+- Historical time-charter rates (`data/derived/time_charter_rates.csv`, `intermodal_tc_rates.csv`, `lng/lpg_charter_rates.csv` unwired to UI/knowledge).
+- Broker comments / seabrokers OSV dayrates (`data/derived/seabrokers_osv_dayrates.csv`, most complete new source, unwired).
+- SEC EDGAR pull (only BDRY/BWET 10-Q/prospectus/factsheets + CFTC statements parsed; no miners/shipyards universe).
+
+## 4. Mission-brief claims vs measured (cost model)
+
+- Brief "35,957 reports/PDFs, 5.94GB" vs measured: `reports/` = 36,312 files, but only
+  **4,475 PDFs repo-wide** (reports-only 4,328: hellenic 3,948, drybulk 209, breakwave 81,
+  tankers 78, top-level 11). Per-page OCR budgets aimed at PDFs are ~8x oversized and
+  aimed at the wrong modality.
+- The real volume is **21,532 page images** (breakwave 14,633 + hellenic 6,890 jpg+png
+  under `reports/`) + **9,264 HTML**. Budget the vision pass for images, not PDFs.
+- Brief "19,801 KG shards sitting unused" vs measured: `knowledge/` = 19,799 files, of which
+  **8,850 tree shards are actively maintained section hierarchies** (see section 6).
+- Brief "332 tabular datasets" vs measured: 294 CSV + 17 XLSX on disk. Reconcile, don't inherit.
+- `docs/AUDIT_UNRENDERED_DATA_SOURCES.md` is **not in git** (verified: absent from
+  `git ls-files docs/` and from `git log --all --diff-filter=A`). It is cited nowhere in
+  this document; all figures above are measured in-worktree at HEAD ad2d67024.
+
+## 5. Rendered vs unrendered
 
 Rendered today: index.html renders prompt tabular CSVs + knowledge-chunks Q&A.
 Unrendered / unwired:
@@ -79,13 +179,19 @@ Unrendered / unwired:
 - SNP/fixtures — only demolition fixtures CSV + scattered SNP weeklies, no catalog.
 - Time-charter matrix — compiled CSVs in data/derived, unwired to UI/knowledge.
 
-## 4. Manifest coverage gap
+## 6. Manifest coverage gap + graph-layer constraint
 
 `knowledge/manifests/sources.json` (2026-09-06) covers breakwave / baltic / hellenic /
 broker_reports / poten / books ONLY. It omits drewry, SGX, CapitalLink, EDGAR, grain,
 SNP, TC-matrix sources. `coverage_report.json` omits broker_reports topics.
 
-## 5. Format classes (verified samples)
+**Graph-layer constraint (binding): the graph layer will consume the existing
+`knowledge/trees/` `node_id` / `doc_id` values as a layer-over reference — it will never
+replace tree shards and never overwrite `knowledge/derived/` or any compiled shard.
+GraphRAG / LightRAG / Neo4j / Graphiti are reviewable only as a layer over existing
+node ids, not as a substitute for them. Additive only.**
+
+## 7. Format classes (verified samples)
 
 - (a) Mixed-layout text+table PDFs WITH text layer: `docs/BDRY-BWET_Form10-Q_March-31-2026.pdf`
   (66pp, p1 ~2881 chars); hellenic demolition sample (7pp, p1 ~1611 chars).
@@ -96,7 +202,7 @@ SNP, TC-matrix sources. `coverage_report.json` omits broker_reports topics.
 - (e) Derived md/JSON: seabrokers 97 md + OSV dayrates CSV (most complete new source);
   Poten opinions metadata-only (JS-rendered body missing).
 
-## 6. Tooling verdict (probed, nothing installed)
+## 8. Tooling verdict (probed, nothing installed)
 
 - READY: pypdf 6.14.2 / pymupdf 1.28.2 / pdfplumber / pandas / openpyxl / torch.
 - ABSENT: docling / camelot / transformers / ocrmypdf / tesseract / ghostscript / java.
@@ -107,7 +213,7 @@ SNP, TC-matrix sources. `coverage_report.json` omits broker_reports topics.
 - Drewry AIS PDFs are not local (manifest-only) — must download before chart-pipeline
   validation; check native dashboard export first per mission.
 
-## 7. Sibling scope boundaries (do not duplicate)
+## 9. Sibling scope boundaries (do not duplicate)
 
 - agent/antigravity +1 commit (645db9079) added `scripts/harness/verify_extraction.py` +
   `calibrate_sample.py` + `scripts/spine/build_knowledge_spine.py` — REUSE the harness
@@ -116,17 +222,20 @@ SNP, TC-matrix sources. `coverage_report.json` omits broker_reports topics.
   sec_edgar_pipeline.py, shipbroker scrapers, fearnleys derived CSVs) — other agents'
   live scope, do not touch.
 
-## 8. Plan
+## 10. Plan
 
-- P0 — Reconcile manifests: add missing sources to sources.json/coverage, additive only.
+- P0 — Drain the `linked_assets_skipped` queue (8,424: 7,703 breakwave_insights + 721 hellenic)
+  with parent-document attribution (`doc_id`/node_id/section_path) preserved end-to-end;
+  triage `errors.jsonl` (83) separately — mechanical classes first. Ledger-diff on
+  `source_hash` + `compiler_version` defines what is left; additive only.
 - P1 — Sample validation per class (1 text+table, 1 chart-heavy, 1 dense multi-table)
   with row-count / column-alignment / page-attribution checks via the antigravity harness.
 - P2 — Pilot 20 multi-hop questions (below), THEN choose graph layer (LightRAG vs
-  GraphRAG vs Neo4j vs Graphiti per mission).
+  GraphRAG vs Neo4j vs Graphiti per mission) as a layer OVER `knowledge/trees/` node ids.
 - P3 — Incremental batch extraction with extractor/verifier separation + redo loop + audit log.
-- Constraint: additive — never overwrite knowledge/derived shards.
+- Constraint: additive — never overwrite knowledge/derived shards; never replace tree shards.
 
-## 9. Pilot questions (20, multi-hop)
+## 11. Pilot questions (20, multi-hop)
 
 1. Which Capesize fixtures in the latest hellenic dry_charter report clear above the Baltic C5TC, and what does that imply for 5-year-old Capesize valuations this week?
 2. How does the current SGX FEF front-month/back-month spread compare with the Baltic capesize basket direction over the same week?
@@ -149,6 +258,6 @@ SNP, TC-matrix sources. `coverage_report.json` omits broker_reports topics.
 19. Build the chain: fixture rate → TCE net of bunkers → implied asset yield vs 5yr valuation → SGX curve confirmation or rejection.
 20. Which single unwired source (Drewry AIS / SGX / CapitalLink / SNP catalog) would have changed the answer to Q19, and what exactly is missing?
 
-## 10. Next action for muse-spark
+## 12. Next action for muse-spark
 
-P0 manifest reconciliation + P1 sample calibration on the hellenic demolition PDF + 10-Q + factsheet.
+P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1 sample calibration on the hellenic demolition PDF + 10-Q + factsheet.
