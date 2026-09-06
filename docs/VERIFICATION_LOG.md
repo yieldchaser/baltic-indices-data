@@ -13,6 +13,47 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-06 18:14 UTC — `agent/muse-spark` @ `26d70151c` — **PASS**
+
+**Reviewed:** V1/V2/V4 corrections and the V3 small-image appendix in `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md`.
+
+**V3 answered honestly, and the answer is "assumption not confirmed."** Of 20 sampled sub-90,000-pixel images: **4 confirm-no-data** (three byte-identical Vale logos, one author portrait) and **16 cannot-confirm-without-vision**. Six are wide-strip graphics with names like `tableseason`, `settlements`, `2hsettle` and the `klav*` series, sitting in parent documents that discuss settlement prices and futures curves. The earlier "logos/icons" characterization does not survive contact with the sample. Reporting 16 unresolvable rather than grading them from filenames is the right call.
+
+The population is also corrected: the 451 no-legacy-header images decompose into **347** truly skipped-small, **86** OCR-attempted-but-empty, **6** `[OCR unavailable; install pytesseract]`, and **12** new-format nodes that do carry content. True no-OCR is **439**.
+
+**V4 correction accepted.** This reviewer's "89 pdf + 8 link" came from the superseded pre-D2 null-node accounting. Current is **89 `pdf` + 2 `link`**; seven of the eight were CNBC-linked HTML text assets re-matched as ingested. The branch is right and the reviewer's figure was stale.
+
+### W1 — vision is NOT blocked at the project level. The credentials already exist.
+
+Both branches have reported vision BLOCKED on the basis of an empty local environment. That is true of their sandboxes and false of the project. Reviewer checked the workflows and the pipeline source:
+
+- **CI secrets already configured:** `NIM_API_KEY` (4 references), `OLLAMA_API_KEY` / `OLLAMA_BASE_URL` / `OLLAMA_MODEL` (3 each), `OPENROUTER_API_KEY`, `GROQ_API_KEY`.
+- **`process_knowledge.py` already consumes them.** Lines 28-36 read the Ollama and NIM configuration; `ollama_available()` and `nim_available()` gate at 1500 and 1504; a complete client with rate limiting, retries and exponential backoff runs from 1514 to 1611. `daily_knowledge_update.yml:67,73` and `process_knowledge.yml:91,97` pass the secrets into the very script that performs ingestion.
+
+So the missing piece is **a multimodal call path — not a key, a vendor, or infrastructure.** The existing client posts text-only chat payloads with no `image_url` or multipart content handling. NIM and OpenRouter both serve vision-capable models against exactly this interface.
+
+This reframes the unblock request. It is not "provision a Reducto or LlamaCloud key." It is: extend the existing NIM/Ollama client to a vision model and run the pass in CI, where the credentials already live and the rate limiting is already written. That is a much smaller ask, and it may need nothing from the user beyond approval to spend on the existing accounts.
+
+Neither branch should read this as authorization to run a batch. It changes what to ask for, not whether to ask.
+
+### W2 — the 86 empty-OCR images are better vision candidates than the 347 small ones
+
+`[No OCR text detected in linked image.]` means OCR ran and returned nothing. The branch notes some are large — two at 2500x1667, others at 656x330 and 481x289. A large image yielding zero text is a stronger signal of a chart whose labels defeated Tesseract than a 120x100 icon is. Prioritize these 86 above the 347.
+
+### W3 — the 6 `[OCR unavailable; install pytesseract]` nodes are not a live CI defect
+
+Checked before flagging. `pytesseract>=0.3.10` is in `requirements_knowledge.txt`, and both `daily_knowledge_update.yml:33` and `process_knowledge.yml:56` run `apt-get install -y tesseract-ocr tesseract-ocr-eng poppler-utils`. Production CI has OCR. Those six nodes came from an environment without it, not from the scheduled pipeline. Recorded so it is not chased.
+
+### W4 (minor) — dead dependency
+
+`google-generativeai>=0.5.0` sits in `requirements_knowledge.txt` with no importer anywhere under `scripts/`. Harmless, but it misleads anyone surveying which model providers this project actually uses — which is how the vision-key question got framed wrongly in the first place.
+
+### PR #40 mergeability
+
+`origin/main` advanced twice (`6ba037f20` → `1e6762ed1` → `481c224bc`; a daily knowledge update and an alibra poll). GitHub reported `mergeable_state: unknown` mid-recompute. Reviewer ran a local test merge of `origin/main` into this branch: **"Automatic merge went well"**, no conflicts, test merge aborted. The reviewer branch touches only `docs/REVIEW_BASELINE.md` and `docs/VERIFICATION_LOG.md`, which the automated commits never touch.
+
+---
+
 ## 2026-09-06 17:50 UTC — `agent/muse-spark` @ `71d576761` — **PASS** (D1-D4 all closed)
 
 **Reviewed:** `asset_dispositions.jsonl` regenerated, `skip_cause_matrix.json` derived from it, `split_skip_causes.py` reworked with a three-way ledger gate, Sample C re-pointed.
