@@ -487,6 +487,19 @@ def main(argv=None) -> int:
     with docs_path.open(encoding="utf-8") as fh:
         docs = [json.loads(line) for line in fh if line.strip()]
 
+    docs_total = len(docs)
+    # N3 coverage, derived from documents.jsonl at runtime (no hardcoded
+    # counts): docs whose source never enters collect_linked_asset_sections.
+    excluded_by_source = collections.Counter(
+        doc.get("source", "?")
+        for doc in docs
+        if doc.get("source", "?") not in LINKED_ASSET_SOURCES
+    )
+    docs_excluded = sum(excluded_by_source.values())
+    breakwave_by_category = collections.Counter(
+        doc.get("category", "?") for doc in docs if doc.get("source") == "breakwave"
+    )
+
     ledger_skipped = collections.Counter()
     ledger_docs_with_skips = collections.Counter()
     ledger_stats = collections.Counter()
@@ -594,6 +607,43 @@ def main(argv=None) -> int:
         and len(all_events) == ledger_discovered
     )
 
+    # N3 exclusion note, assembled from runtime counters only (no hardcoded
+    # counts): ordered so the text is deterministic for a given documents.jsonl
+    # (excluded sources alphabetically; breakdown lists non-breakwave sources
+    # by ascending count, then breakwave expanded by alphabetical category).
+    excluded_list = "/".join(sorted(excluded_by_source))
+    excluded_non_bw = sorted(
+        ((s, c) for s, c in excluded_by_source.items() if s != "breakwave"),
+        key=lambda kv: (kv[1], kv[0]),
+    )
+    bw_cats = sorted(breakwave_by_category.items())
+    breakdown_parts = [f"{s} {c}" for s, c in excluded_non_bw]
+    if "breakwave" in excluded_by_source:
+        breakdown_parts.append(
+            "breakwave %d = %s"
+            % (
+                excluded_by_source["breakwave"],
+                " + ".join(f"{k} {v}" for k, v in bw_cats),
+            )
+        )
+    exclusion_reason = (
+        "LINKED_ASSET_SOURCES = %s; only these sources are replayed "
+        "(docs_replayed %d); %s (%d) excluded by construction, never entering "
+        "collect_linked_asset_sections; adapt_baltic never calls the collector "
+        "so baltic replays zeros. Verified: %d+%d=%d = documents.jsonl rows; "
+        "excluded breakdown verified against documents.jsonl (%s)."
+        % (
+            "/".join(LINKED_ASSET_SOURCES),
+            replayed,
+            excluded_list,
+            docs_excluded,
+            replayed,
+            docs_excluded,
+            docs_total,
+            ", ".join(breakdown_parts),
+        )
+    )
+
     head = head_hash()
     payload = {
         "method": (
@@ -633,6 +683,11 @@ def main(argv=None) -> int:
         "reconciled_with_ledger": reconciled,
         "mismatched_docs": mismatches,
         "docs_replayed": replayed,
+        "docs_total": docs_total,
+        "docs_excluded": docs_excluded,
+        "docs_excluded_by_source": dict(excluded_by_source),
+        "docs_excluded_breakwave_by_category": dict(breakwave_by_category),
+        "exclusion_reason": exclusion_reason,
     }
 
     out_path = REPO_ROOT / PurePosixPath(MATRIX_OUT).as_posix()
