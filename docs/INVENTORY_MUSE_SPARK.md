@@ -298,3 +298,22 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   location (expected-rows/cols assertions + POSIX normalization implemented
   there; no committed file imports from `shipping-antigravity`; sibling
   results cross-checked pre-merge).
+
+## 15. Reviewer PASS caveats close-out (2026-09-06, this branch, no commits)
+
+- N2 (non-blocking, closed, no regen): all 22,106 `asset_dispositions.jsonl`
+  records carry `href` (0 missing; 8,341 `unresolvable_external` all with
+  external URLs, e.g. reuters/valemuestrasamples) so external-vs-other stays
+  auditable; gate still green — `split_skip_causes.py` untouched.
+- N3 (closed): `skip_cause_matrix.json` now records `docs_replayed` 8416 +
+  `docs_excluded` 434 (`docs_excluded_by_source`: book 12 / poten 30 /
+  broker_reports 105 / breakwave 287; `docs_excluded_breakwave_by_category`:
+  drybulk 209 / tankers 78 — verified against `documents.jsonl` sources;
+  `breakwave` 287 = 209+78) + `exclusion_reason` inline
+  (LINKED_ASSET_SOURCES = baltic/breakwave_insights/hellenic; `adapt_baltic`
+  never calls the collector so baltic replays zeros). Verified 8416+434=8850.
+- N1 (deferred, `process_knowledge.py` untouched): instrumented run deferred
+  until `process_knowledge.py` is next touched.
+- New evidence (no scope commitment): ingested-image profile + 3 OCR
+  suspects in `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md`; reprocessing scope
+  awaits user call; vision BLOCKED (no API-key names in env).
