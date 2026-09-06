@@ -15,7 +15,7 @@ to `origin` to get a verdict.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-06 21:24 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-06 22:15 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -42,9 +42,10 @@ week while the health report shows green (finding G1 below).
 Sequence: validator gate → Baltic → Poten. Additive only; do not overwrite
 existing shards.
 
-**Progress: 1.1 DONE (`03999a973`) · 1.2 DONE (`baade2609`, Baltic green, +521 chunks,
-medians restored to the pre-2026 baseline) · 1.3 Poten OPEN — the only group still
-firing the gate.**
+**Progress: COMPLETE.** 1.1 DONE (`03999a973`) · 1.2 DONE (`baade2609`, Baltic green,
++521 chunks, medians restored to baseline) · 1.3 DONE (`2d494bf23`, Poten
+gate-aware capture, 29 opinions relabelled `standfirst`). **Gate reads 0/17;
+thresholds were never touched. The weekly data loss has stopped.** Next: Decision 2.
 
 ## Decision 2 — CONFIRMED: E3 re-point is the real P1 scope
 
@@ -99,7 +100,7 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 
 | branch | head | last push | state |
 |---|---|---|---|
-| `agent/muse-spark` | `baade2609` | 2026-09-06 20:53 UTC | **PASS**. Decisions 1.1 + 1.2 done: gate landed, Baltic capture fixed, all 5 Baltic groups green with thresholds untouched. Only `poten/tankers` still fires — Decision 1.3 is the last of Decision 1. |
+| `agent/muse-spark` | `2d494bf23` | 2026-09-06 22:00 UTC | **PASS**. **Decision 1 COMPLETE** — 1.1 gate, 1.2 Baltic, 1.3 Poten all landed; gate reads 0/17 with thresholds never touched. Ready for Decision 2 (re-OCR pilot). |
 | `agent/antigravity` | `12c841745` | 2026-09-06 15:26 UTC | **SEND BACK**, B1-B9 open, **silent ~3.5h** |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
@@ -117,6 +118,51 @@ and should be kept and reused.
 
 Decisions 1 and 2 touch the same file (`process_knowledge.py` / `validate_knowledge.py`).
 Split by decision, not by file, and land Decision 1 before anyone starts Decision 2.
+
+---
+
+## 2026-09-06 22:15 UTC — `agent/muse-spark` @ `2d494bf23` — **PASS. Decision 1 is complete; the gate reads 0/17.**
+
+**Reviewed:** Decision 1.3 — HubSpot-gate-aware Poten capture, 29 refetched opinions, scoped recompile.
+
+### Gate clean, thresholds untouched
+
+Reviewer re-ran its own gate implementation against the branch's chunks:
+
+```
+AFTER 2d494bf23   groups=17   FAILURES=0
+```
+
+`poten/tankers`: tail median **504**, boilerplate markers **0/50**, newest chunk real analysis ("Venezuela's production and exports are recovering…"). `git diff baade2609..2d494bf23 -- scripts/validate_knowledge.py` is again **zero lines** — three consecutive commits have cleared the gate by fixing data, never by moving a constant.
+
+### The deletion is justified — checked before objecting
+
+The diff removes three files and drops the ledger 8,850 → 8,849, which on an additive-only constraint demands an explanation. Reviewer read the deleted file before judging it. `reports/poten/2026/poten_2026-08-24_will_he_or_won_t_he.md` was 787 lines of **site navigation** — "About Us / What We Do / Services / LNG Market Outlook", the company blurb, and 2024 training-course listings — with frontmatter falsely claiming `completeness: "full_text"`. Zero article content.
+
+The branch's own account holds up on every point I could check:
+
+- The `full_text` label came from a `len >= 400` heuristic firing on ~13 KB of harvested chrome. **It was the only document in `reports/poten/` marked `full_text`;** the other 29 were honestly marked `metadata`. The liar was the anomaly, not the norm.
+- The **date was a crawl artifact**. `2026-08-24` was when the crawler ran, not a publication date; the real piece per the live listing is 27 Feb 2026 by Raza Zoya. So there was never a 2026-08-24 Poten opinion to preserve.
+- The URL is dead (soft-404 via canonical/og:url homepage match), the listing dek is ~110 chars (below their 400 floor), and there are zero archive snapshots.
+
+Deleting a phantom record is not a loss of corpus. A tombstone would normally be my ask, but you do not tombstone a document that never existed on that date; the inventory entry carries the explanation, which is the right place for it.
+
+### What makes this the strongest commit of the three
+
+- **The 29 survivors got honest labels, not just content.** `completeness: "metadata"` became `"standfirst"`, and the body disclaimer became: *"Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here."* That names the gate, claims only what it has, and recovered author attribution as a bonus. Compare the frontmatter it replaced, which asserted full text over a nav dump.
+- **The root cause was found, not the symptom.** Two defects: a whole-page soup fallback that harvested chrome, and a v1 disclaimer string sitting in every metadata doc's *body*, which compiled into `_001` chunks and produced exactly the 20/50 boilerplate tail the gate caught. The fix removes the fallback and moves extraction to `div.entry-content` → `<article>` → quarantine.
+- **A preventive control was added unprompted:** a quarantine gate before *any* write — soft-404 detection, standfirst-date identity, length floor. That is the same class of fix as the E1 scraper defect (assets written under `.pdf` with no content-type validation) and closes it for this scraper.
+- **Out-of-scope side writes were reverted** — 8 Alibra/iron-ore/scrappage re-emissions caught and backed out. That is the discipline the additive constraint actually requires, applied without being asked.
+
+### Two notes, neither blocking
+
+**P-a — one shard was hand-edited.** An orphaned 11-character fragment (`..._02-13_..._003`, "the article") survived recompile because pipeline compaction only evicts on `doc_id` change, and was removed by a single-line shard edit. The reasoning is sound and the result reconciles 58/58 against the ledger, but it is the first hand-edit of a shard in this project. Worth a compaction fix later so the tool can do it; not worth blocking on.
+
+**P-b — Poten is now missing its newest post.** "A New Headache For OPEC" (4 Sep 2026) was observed on listing page 1 and deliberately **not** ingested, correctly scoped out as a new `doc_id`. Right call for this task; it means the source is current only to 2026-08-21 until a normal ingest runs.
+
+### Decision 1 status: DONE
+
+1.1 validator gate · 1.2 Baltic capture · 1.3 Poten capture — all landed, all verified, gate at **0/17**, thresholds never touched, no data lost. The active weekly data loss identified in G1 has stopped. C1 is fully resolved: a merge of this branch no longer skips the commit step, so there is no corpus pause.
 
 ---
 
