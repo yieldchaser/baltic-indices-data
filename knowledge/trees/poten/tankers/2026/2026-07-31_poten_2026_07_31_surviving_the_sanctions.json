@@ -1,0 +1,90 @@
+{
+  "node_id": "poten_tankers_2026-07-31_poten_2026_07_31_surviving_the_sanctions__root",
+  "doc_id": "poten_tankers_2026-07-31_poten_2026_07_31_surviving_the_sanctions",
+  "parent_id": null,
+  "title": "Poten Tanker Opinion: Surviving The Sanctions",
+  "section_path": [
+    "Poten Tanker Opinion: Surviving The Sanctions"
+  ],
+  "section_path_text": "Poten Tanker Opinion: Surviving The Sanctions",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Poten Tanker Opinion: Surviving The Sanctions\n**Published Date**: 2026-07-31\n**Source URL**: [https://www.poten.com/surviving-the-sanctions/](https://www.poten.com/surviving-the-sanctions/)\n**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch. Analysis & Commentary\nSurviving The Sanctions\nRussia adjusts to changes in global oil markets. The Russia - Ukraine war started on 24 February 2022, when Moscow invaded its neighbor.",
+  "keywords": [
+    "pacific",
+    "coal",
+    "crude_oil",
+    "sanctions",
+    "russia",
+    "changes",
+    "coalition",
+    "economic",
+    "https",
+    "its",
+    "key",
+    "major"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 325,
+  "source_path": "reports/poten/2026/poten_2026-07-31_surviving_the_sanctions.md",
+  "source_url": "https://www.poten.com/surviving-the-sanctions/",
+  "children": [
+    {
+      "node_id": "poten_tankers_2026-07-31_poten_2026_07_31_surviving_the_sanctions__s01_poten_tanker_opinion_surviving_the_sanctions",
+      "doc_id": "poten_tankers_2026-07-31_poten_2026_07_31_surviving_the_sanctions",
+      "parent_id": "poten_tankers_2026-07-31_poten_2026_07_31_surviving_the_sanctions__root",
+      "title": "Poten Tanker Opinion: Surviving The Sanctions",
+      "section_path": [
+        "Poten Tanker Opinion: Surviving The Sanctions"
+      ],
+      "section_path_text": "Poten Tanker Opinion: Surviving The Sanctions",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "**Author**: Erik Broekhuizen\n**Published Date**: 2026-07-31\n**Source URL**: [https://www.poten.com/surviving-the-sanctions/](https://www.poten.com/surviving-the-sanctions/)\n**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.",
+      "keywords": [
+        "author",
+        "date",
+        "https",
+        "published",
+        "summary",
+        "www.poten.com/surviving-the-sanctions",
+        "analysis",
+        "archived"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 91,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "poten_tankers_2026-07-31_poten_2026_07_31_surviving_the_sanctions__s02_analysis_commentary",
+      "doc_id": "poten_tankers_2026-07-31_poten_2026_07_31_surviving_the_sanctions",
+      "parent_id": "poten_tankers_2026-07-31_poten_2026_07_31_surviving_the_sanctions__root",
+      "title": "Analysis & Commentary",
+      "section_path": [
+        "Analysis & Commentary"
+      ],
+      "section_path_text": "Analysis & Commentary",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Surviving The Sanctions\nRussia adjusts to changes in global oil markets. The Russia - Ukraine war started on 24 February 2022, when Moscow invaded its neighbor.",
+      "keywords": [
+        "pacific",
+        "coal",
+        "crude_oil",
+        "sanctions",
+        "russia",
+        "changes",
+        "coalition",
+        "economic"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

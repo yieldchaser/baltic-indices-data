@@ -1,0 +1,90 @@
+{
+  "node_id": "poten_tankers_2026-05-29_poten_2026_05_29_china_s_balancing_act__root",
+  "doc_id": "poten_tankers_2026-05-29_poten_2026_05_29_china_s_balancing_act",
+  "parent_id": null,
+  "title": "Poten Tanker Opinion: China's Balancing Act",
+  "section_path": [
+    "Poten Tanker Opinion: China's Balancing Act"
+  ],
+  "section_path_text": "Poten Tanker Opinion: China's Balancing Act",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Poten Tanker Opinion: China's Balancing Act\n**Published Date**: 2026-05-29\n**Source URL**: [https://www.poten.com/chinas-balancing-act/](https://www.poten.com/chinas-balancing-act/)\n**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch. Analysis & Commentary\nChina's Balancing Act\nChina holds the key to the tanker market. China is by far the largest crude oil importer in the world, most of it seaborne.",
+  "keywords": [
+    "china",
+    "crude_oil",
+    "crude",
+    "imports",
+    "chinese",
+    "impact",
+    "market.",
+    "oil",
+    "act",
+    "balancing",
+    "closure",
+    "hormuz"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 379,
+  "source_path": "reports/poten/2026/poten_2026-05-29_china_s_balancing_act.md",
+  "source_url": "https://www.poten.com/chinas-balancing-act/",
+  "children": [
+    {
+      "node_id": "poten_tankers_2026-05-29_poten_2026_05_29_china_s_balancing_act__s01_poten_tanker_opinion_china_s_balancing_act",
+      "doc_id": "poten_tankers_2026-05-29_poten_2026_05_29_china_s_balancing_act",
+      "parent_id": "poten_tankers_2026-05-29_poten_2026_05_29_china_s_balancing_act__root",
+      "title": "Poten Tanker Opinion: China's Balancing Act",
+      "section_path": [
+        "Poten Tanker Opinion: China's Balancing Act"
+      ],
+      "section_path_text": "Poten Tanker Opinion: China's Balancing Act",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "**Author**: Erik Broekhuizen\n**Published Date**: 2026-05-29\n**Source URL**: [https://www.poten.com/chinas-balancing-act/](https://www.poten.com/chinas-balancing-act/)\n**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.",
+      "keywords": [
+        "china",
+        "author",
+        "date",
+        "https",
+        "published",
+        "summary",
+        "www.poten.com/chinas-balancing-act",
+        "analysis"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 91,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "poten_tankers_2026-05-29_poten_2026_05_29_china_s_balancing_act__s02_analysis_commentary",
+      "doc_id": "poten_tankers_2026-05-29_poten_2026_05_29_china_s_balancing_act",
+      "parent_id": "poten_tankers_2026-05-29_poten_2026_05_29_china_s_balancing_act__root",
+      "title": "Analysis & Commentary",
+      "section_path": [
+        "Analysis & Commentary"
+      ],
+      "section_path_text": "Analysis & Commentary",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "China's Balancing Act\nChina holds the key to the tanker market. China is by far the largest crude oil importer in the world, most of it seaborne.",
+      "keywords": [
+        "china",
+        "crude_oil",
+        "crude",
+        "imports",
+        "chinese",
+        "impact",
+        "market.",
+        "oil"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 272,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

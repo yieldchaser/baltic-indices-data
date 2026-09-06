@@ -1,0 +1,90 @@
+{
+  "node_id": "poten_tankers_2026-03-27_poten_2026_03_27_crazy_train__root",
+  "doc_id": "poten_tankers_2026-03-27_poten_2026_03_27_crazy_train",
+  "parent_id": null,
+  "title": "Poten Tanker Opinion: Crazy Train",
+  "section_path": [
+    "Poten Tanker Opinion: Crazy Train"
+  ],
+  "section_path_text": "Poten Tanker Opinion: Crazy Train",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Poten Tanker Opinion: Crazy Train\n**Published Date**: 2026-03-27\n**Source URL**: [https://www.poten.com/crazy-train/](https://www.poten.com/crazy-train/)\n**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch. Analysis & Commentary\nCrazy Train\nThe unprecedented gyrations in the freight market. In 1980, legendary rockstar Ozzy Osbourne wrote the heavy metal classic \"Crazy Train\".",
+  "keywords": [
+    "crazy",
+    "train",
+    "geopolitical",
+    "going",
+    "https",
+    "market.",
+    "off",
+    "opinion",
+    "war",
+    "www.poten.com/crazy-train",
+    "age",
+    "amid"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 260,
+  "source_path": "reports/poten/2026/poten_2026-03-27_crazy_train.md",
+  "source_url": "https://www.poten.com/crazy-train/",
+  "children": [
+    {
+      "node_id": "poten_tankers_2026-03-27_poten_2026_03_27_crazy_train__s01_poten_tanker_opinion_crazy_train",
+      "doc_id": "poten_tankers_2026-03-27_poten_2026_03_27_crazy_train",
+      "parent_id": "poten_tankers_2026-03-27_poten_2026_03_27_crazy_train__root",
+      "title": "Poten Tanker Opinion: Crazy Train",
+      "section_path": [
+        "Poten Tanker Opinion: Crazy Train"
+      ],
+      "section_path_text": "Poten Tanker Opinion: Crazy Train",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "**Author**: Erik Broekhuizen\n**Published Date**: 2026-03-27\n**Source URL**: [https://www.poten.com/crazy-train/](https://www.poten.com/crazy-train/)\n**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.",
+      "keywords": [
+        "author",
+        "date",
+        "https",
+        "published",
+        "summary",
+        "www.poten.com/crazy-train",
+        "analysis",
+        "archived"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 87,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "poten_tankers_2026-03-27_poten_2026_03_27_crazy_train__s02_analysis_commentary",
+      "doc_id": "poten_tankers_2026-03-27_poten_2026_03_27_crazy_train",
+      "parent_id": "poten_tankers_2026-03-27_poten_2026_03_27_crazy_train__root",
+      "title": "Analysis & Commentary",
+      "section_path": [
+        "Analysis & Commentary"
+      ],
+      "section_path_text": "Analysis & Commentary",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Crazy Train\nThe unprecedented gyrations in the freight market. In 1980, legendary rockstar Ozzy Osbourne wrote the heavy metal classic \"Crazy Train\".",
+      "keywords": [
+        "crazy",
+        "train",
+        "geopolitical",
+        "going",
+        "market.",
+        "off",
+        "war",
+        "age"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 160,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}
