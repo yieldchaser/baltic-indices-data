@@ -123,9 +123,18 @@ documents (breakwave_insights 2,475; hellenic 692). They are the highest-value
 unprocessed lead in the repo, and the parent-document attribution —
 `doc_id`, date, source, `tree_path` — already rides with them in the ledger.
 
-**This is P0.** An inventory or plan that does not name
-`linked_assets_skipped` as a primary work queue has not read the existing
-pipeline and should be sent back before any extraction code is written.
+> **SUPERSEDED (2026-09-06 16:36).** This P0 designation was wrong. The
+> cause split in `data/derived/skip_cause_matrix.json` shows **8,341 of 8,424
+> (99.0%) are `unresolvable_external`** — outbound hyperlinks to third-party
+> journalism, never files in this repo — and **`per_doc_cap` contributes 0**,
+> because both production workflows pin `MAX_LINKED_ASSETS_PER_DOC` to 28.
+> There is no recoverable chart imagery in the skipped set. The chart assets
+> are the **13,591 ingested** ones, whose OCR text is already in
+> `knowledge/trees/` and already carries corrupted numerics. See
+> `VERIFICATION_LOG.md`, "P0 REVERSAL". Size against 13,591, not 8,424.
+
+The original designation, retained for context: an inventory or plan that does
+not account for `linked_assets_skipped` has not read the existing pipeline.
 
 ### CORRECTION (2026-09-06, from `agent/muse-spark`): `skipped` is five causes, not one
 

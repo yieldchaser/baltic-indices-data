@@ -13,6 +13,77 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-06 16:36 UTC — **P0 REVERSAL: the skipped queue is not a chart-extraction opportunity**
+
+`agent/muse-spark` @ `1abab8179` delivered the X1 instrumentation. Its result overturns the P0 designation this reviewer made in `REVIEW_BASELINE.md` §4. **The reviewer's call was wrong, and this supersedes it.**
+
+`data/derived/skip_cause_matrix.json` splits all 8,424 skips by cause:
+
+| cause | count | share |
+|---|---|---|
+| `unresolvable_external` | **8,341** | 99.0% |
+| `non_content_link` | 48 | 0.6% |
+| `duplicate_path` | 35 | 0.4% |
+| `empty_href` | 0 | — |
+| `per_doc_cap` | **0** | — |
+
+Totals reconcile exactly to the ledger's 8,424 across 3,167 documents, with `mismatched_docs: []`.
+
+### Reviewer's independent verification
+
+Three checks, all confirming:
+
+1. **`per_doc_cap: 0` is explained, not anomalous.** `MAX_LINKED_ASSETS_PER_DOC` defaults to 12 at `process_knowledge.py:87`, but **both** production workflows pin it to 28 — `.github/workflows/daily_knowledge_update.yml:89` and `process_knowledge.yml:113`. No document in the corpus reaches 28 linked assets, so the cap never fires. The one cause that would have left recoverable assets on disk contributes **nothing**.
+2. **`docs_replayed: 8416` is correct, not a shortfall.** `LINKED_ASSET_SOURCES = {"baltic", "breakwave_insights", "hellenic"}` at line 88. The other 434 ledgered documents (books 12, poten 30, broker_reports 105, breakwave drybulk 209, tankers 78) never invoke the collector. 8,850 − 434 = 8,416 exactly.
+3. **The exemplar document, parsed directly.** `reports/breakwave/2020/2020-06-06_the-drama-continues-...html` contains 3 `<a href>` and 2 `<img src>`. Both images are local `assets/` paths — the two already ingested. All three anchors are external: the post's own canonical URL, a **Reuters** article, and a **Vale press release**. Ledger row `discovered 4 / mirrored 2 / ingested 2 / skipped 2` resolves cleanly: the collector's body-scoped candidate set drops the head canonical, leaving 2 external anchors (skipped) and 2 local images (ingested).
+
+### What this means
+
+**The 8,341 "skipped" assets are outbound hyperlinks to third-party journalism and press releases**, not unprocessed charts. They were never mirrored because they were never files in this repo. Recovering them would mean crawling Reuters, Vale, and similar publishers across 2020-2026 — a re-fetch job with heavy link rot and third-party content questions, delivering news articles rather than proprietary maritime data. **That is not worth doing, and it is emphatically not the two-stage vision pass the mission described.**
+
+The reviewer designated this queue P0 on the strength of its size and its parent-document attribution, without establishing what the assets *were*. Both build agents inherited that framing and built against it. The correction cost muse-spark one instrumentation pass; it would have cost far more had it surfaced after a batch vision run.
+
+### Where the chart imagery actually is: the 13,591 INGESTED assets
+
+The images the mission wants are already ingested — and the text extracted from them is poor enough to be a live data-integrity problem. Reading the tree shard for the exemplar document, the second image is a **Vale quarterly production table** whose OCR reads:
+
+```
+000' metric tons     4Q19    3Q19    4Q18    2019
+Northern System     50,729  55,401  52,911  188,721
+Northem andEastem   34.438  35,047  37,023  115,352
+$11D                19,291  20,354  15,888   73,369
+```
+
+`extract_linked_image_text` runs Tesseract-grade OCR with no structural pass. Note the third row: **`34.438` where the source reads `34,438`** — a decimal point substituted for a thousands separator, a 1000x error in a production figure. `Northern` became `Northem`, `S11D` became `$11D`. This text is **already merged into `knowledge/trees/` and `knowledge/chunks/`** and is retrievable today as if it were fact.
+
+This is precisely the failure mode the mission's precision rules exist to prevent — numerics landing wrong, silently, at scale — except it is already in the graph rather than pending in a batch.
+
+**Recommended P0, replacing the skipped queue:** re-process the **13,591 ingested image assets** with the two-stage axis-first vision pass, upgrading raw OCR to structured output, and reconcile against the existing shards rather than overwriting them. This target is fully enumerated in the ledger (`linked_assets_ingested`), entirely present on local disk, and demonstrably carrying corrupted numerics today. Sizing should use it, not 8,424.
+
+Neither build agent should treat this as settled scope without the user's call — it changes what the project's first batch run is aimed at.
+
+---
+
+## 2026-09-06 16:36 UTC — `agent/muse-spark` @ `1abab8179` — **PASS**
+
+**Reviewed:** 1 commit, +592 lines — `scripts/analysis/split_skip_causes.py`, `data/derived/skip_cause_matrix.json`, inventory notes. Read-only against `knowledge/`; no shard writes.
+
+This closes X1 and produces the P0 reversal above. It is the highest-value contribution on either branch so far, precisely because it invalidated the work both branches were about to scale.
+
+What makes it trustworthy: totals reconcile exactly to the ledger with `mismatched_docs: []`; every cause carries a `cause_line_refs` pointer into `process_knowledge.py`; the method note states its own scoping rules and admits that baltic yields zeros by construction because `adapt_baltic` never calls the collector; and both the code default cap (12) and the CI-pinned cap (28) are recorded rather than assumed. The reviewer re-derived all three load-bearing facts independently and they hold.
+
+### Caveats — non-blocking, worth closing
+
+**N1 — this is a replay, not instrumentation.** The script re-implements the collector's skip branches rather than running the collector with a disposition hook. Exact reconciliation to 8,424 is strong evidence but not proof: causes could be mutually misallocated and still sum correctly. Given that one cause holds 99.0%, the conclusion is robust to any plausible misallocation, so this does not block. Confirm with a one-off instrumented run when `process_knowledge.py` is next touched.
+
+**N2 — `unresolvable_external` conflates two things.** The branch at `process_knowledge.py:2346-2349` increments `skipped` for `http(s)` schemes and `failed` otherwise. A relative path that fails to resolve for an unrelated reason and happens to carry an `http` scheme is counted as external. At this ratio it does not change the finding, but the emitted record should carry the URL so the distinction is auditable.
+
+**N3 — `docs_replayed: 8416` deserves a line in the JSON itself.** It currently reads as a shortfall against 8,850. Record the 434 excluded documents and the `LINKED_ASSET_SOURCES` reason in the artifact, so the next reader does not re-derive it.
+
+M2 and M3 from the previous verdict remain open: the P1 calibration scripts are still in an OS temp directory, and the verifier is still imported by absolute path from the sibling worktree. Neither blocks this commit.
+
+---
+
 ## 2026-09-06 16:12 UTC — CROSS-CUTTING — **X1: both branches sampled ingested assets and labelled them skipped**
 
 This is the most consequential finding so far, and it lands on both branches at once. It is the shared-blind-spot case mission rule 4 exists to catch: each agent verified its own output, both passed, and both are wrong in the same direction.
