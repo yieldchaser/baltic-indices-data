@@ -15,7 +15,7 @@ to `origin` to get a verdict.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-06 19:46 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-06 21:00 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -41,6 +41,10 @@ week while the health report shows green (finding G1 below).
 
 Sequence: validator gate → Baltic → Poten. Additive only; do not overwrite
 existing shards.
+
+**Progress: 1.1 DONE (`03999a973`) · 1.2 DONE (`baade2609`, Baltic green, +521 chunks,
+medians restored to the pre-2026 baseline) · 1.3 Poten OPEN — the only group still
+firing the gate.**
 
 ## Decision 2 — CONFIRMED: E3 re-point is the real P1 scope
 
@@ -95,7 +99,7 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 
 | branch | head | last push | state |
 |---|---|---|---|
-| `agent/muse-spark` | `03999a973` | 2026-09-06 19:28 UTC | **PASS**. Decision 1.1 content gate landed and verified firing on all 5 Baltic groups + Poten. See finding C1 — the gate halts all knowledge commits until the captures are fixed; user decision pending. |
+| `agent/muse-spark` | `baade2609` | 2026-09-06 20:53 UTC | **PASS**. Decisions 1.1 + 1.2 done: gate landed, Baltic capture fixed, all 5 Baltic groups green with thresholds untouched. Only `poten/tankers` still fires — Decision 1.3 is the last of Decision 1. |
 | `agent/antigravity` | `12c841745` | 2026-09-06 15:26 UTC | **SEND BACK**, B1-B9 open, **silent ~3.5h** |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
@@ -113,6 +117,62 @@ and should be kept and reused.
 
 Decisions 1 and 2 touch the same file (`process_knowledge.py` / `validate_knowledge.py`).
 Split by decision, not by file, and land Decision 1 before anyone starts Decision 2.
+
+---
+
+## 2026-09-06 21:00 UTC — `agent/muse-spark` @ `baade2609` — **PASS**. G1 is fixed; C1 resolved by option 1.
+
+**Reviewed:** Decision 1.2 — static-first Baltic capture past the consent DOM, 325 refetched 2026 documents, scoped recompile. Writes under `knowledge/`, which the recompile authorization covers.
+
+### The gate went green, and the green was earned
+
+Reviewer re-ran its own independent implementation of the gate against the branch's chunk files:
+
+```
+BEFORE 03999a973   groups=17  FAILURES=6   (5x baltic + poten)
+AFTER  baade2609   groups=17  FAILURES=1   (poten/tankers only)
+```
+
+`poten/tankers` is Decision 1.3 and correctly still fires on the boilerplate rule. Every Baltic group passes.
+
+**The thresholds were not touched.** `git diff 03999a973..baade2609 -- scripts/validate_knowledge.py` returns **zero changed lines**. No `CONTENT_GATE_*` constant moved. The gate was satisfied by fixing the data, which is the only acceptable way to clear it.
+
+### The recovered content is real
+
+| group | 2026 chunks | median chars |
+|---|---|---|
+| `baltic/dry` | 51 → **256** | 33 → **1,064** |
+| `baltic/tanker` | 51 → **260** | 35 → **1,131** |
+| `baltic/gas` | 51 → **128** | 32 → **918** |
+| `baltic/container` | 51 → **64** | 38 → **971** |
+| `baltic/ningbo` | 54 → **138** | 46 → **216** |
+
+The recovered medians land right on the pre-2026 baseline (`baltic_dry` historical median 995), which is the strongest available signal that this is the same kind of document as before rather than padding. The newest chunk reads as genuine market commentary:
+
+> "The market opened September on a steady-to-firmer note, with sentiment largely positional across both basins. Across the Continent and Mediterranean, activity remained limited, although rates began to show signs of firmness towards the end of the week…"
+
+Nine months of Baltic Exchange weeklies are retrievable again.
+
+### Nothing was destroyed — checked specifically
+
+The diff shows 13-15 line *deletions* from each **pre-2026** Baltic chunk file, which looks alarming on a fix that should only add. It is not data loss: every removed line is a **2026-dated chunk that was filed in the wrong file** (`baltic_dry_2026-01-09_...` living in `baltic_dry.jsonl`), relocated to its correct `_2026.jsonl`. A filing correction, not a deletion.
+
+Aggregate movement:
+
+- Baltic chunks **6,177 → 6,698 (+521)**; no category lost, every one grew.
+- `knowledge/derived/section_index.jsonl` 31,228 → 31,743 (+515), tracking the new chunks.
+- `knowledge/derived/themes.jsonl` **8,850 → 8,850** and `topic_evidence.jsonl` **2,500 → 2,500** — unchanged.
+- Document count unchanged at 8,850, confirming this is a recompile of existing documents against better source captures, not an ingest of new ones. Additive and reconciling, as the constraint requires.
+
+### C1 is resolved — by the best of the three options
+
+The open question was whether landing the gate before the capture fix would halt all knowledge commits. It no longer arises for Baltic: the fix arrived with the gate still passing on all other sources, so **there is no corpus pause**. That is option 1 from the C1 entry, taken without being told to.
+
+One caveat: `poten/tankers` still fires, so a merge of this branch today would still skip the commit step until Decision 1.3 lands. The exposure is now one source and one rule rather than six groups, but C1's underlying question stays live until Poten is fixed or the commit step is made unconditional.
+
+### Watch item
+
+`baltic/ningbo` recovered to a median of **216** — genuine content, comfortably above the 120 floor, but the thinnest passing group by a wide margin (the others sit at 918-1,131) and only 1.8x the floor. Ningbo is a route index and may legitimately publish shorter notes; worth one confirmation that 216 is its natural length rather than a partial capture. If it is partial, the gate will not catch it.
 
 ---
 
