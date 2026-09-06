@@ -340,3 +340,4 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
 - D4: P1 §C re-pointed at ingested + failures (3 suspect-OCR images S1–S3 +
   2 `PDFSyntaxError` PDFs, files confirmed on disk); old rows struck,
   protocol + BLOCKED stand.
+- E1/E2 (D1–D4 PASS entry, evidence/spec only, no commits): 7 inferential `PDFSyntaxError` attributions flagged via new `attribution` field (`split_skip_causes.py` regen, gate green, deterministic) + single OOXML recovery candidate identified, not recovered — see `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md` §9.
