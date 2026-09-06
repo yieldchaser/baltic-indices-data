@@ -15,7 +15,7 @@ to `origin` to get a verdict.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-06 19:00 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-06 19:46 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -95,7 +95,7 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 
 | branch | head | last push | state |
 |---|---|---|---|
-| `agent/muse-spark` | `0200b450e` | 2026-09-06 18:35 UTC | **PASS**, all findings closed (M1-M3, N1-N3, D1-D4, V1-V4) |
+| `agent/muse-spark` | `03999a973` | 2026-09-06 19:28 UTC | **PASS**. Decision 1.1 content gate landed and verified firing on all 5 Baltic groups + Poten. See finding C1 — the gate halts all knowledge commits until the captures are fixed; user decision pending. |
 | `agent/antigravity` | `12c841745` | 2026-09-06 15:26 UTC | **SEND BACK**, B1-B9 open, **silent ~3.5h** |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
@@ -113,6 +113,58 @@ and should be kept and reused.
 
 Decisions 1 and 2 touch the same file (`process_knowledge.py` / `validate_knowledge.py`).
 Split by decision, not by file, and land Decision 1 before anyone starts Decision 2.
+
+---
+
+## 2026-09-06 19:46 UTC — `agent/muse-spark` @ `03999a973` — **PASS**, with one sequencing consequence for the user
+
+**Reviewed:** `scripts/validate_knowledge.py` +129 lines — `validate_chunk_content()`, the Decision 1.1 content gate. First code change to a live pipeline file on any branch.
+
+### Reviewer re-implemented the gate independently and ran it
+
+Rather than trust the branch's own numbers, the reviewer re-implemented the stated algorithm with its exact constants (`WINDOW=50`, `MIN_SAMPLES=10`, `STUB_CHARS=120`, `MEDIAN_FLOOR=120`, `STUB_RATE=0.80`, boilerplate markers at `0.30`) and ran it over `knowledge/chunks/*.jsonl`. **17 groups checked, 6 fire:**
+
+```
+baltic/container  median=38  stub=50/50 (100%)
+baltic/dry        median=33  stub=50/50 (100%)
+baltic/gas        median=32  stub=50/50 (100%)
+baltic/ningbo     median=46  stub=44/50  (88%)
+baltic/tanker     median=35  stub=50/50 (100%)
+poten/tankers     median=860 stub=0/50   — boilerplate 20/50 (40%)
+```
+
+It catches exactly the two G1 targets and nothing else. Margins are wide in both directions: the weakest *passing* group is `hellenic/dry_charter` at median 346 (2.9x the 120 floor) and a 50% stub-rate (30pp under the 0.80 threshold), while `baltic/ningbo` — the weakest *firing* group at 88% stub-rate — fires on median regardless, so it trips on two independent grounds. No group sits near a knife edge.
+
+**The boilerplate rule earns its place.** `poten/tankers` has a median of 860 and a stub-rate of **zero** — both length gates miss it completely. Only the marker rule catches it. A gate built solely on length would have declared the JS-render miss healthy. That is exactly the second failure mode the G1 finding needed covered, and it was covered without being asked.
+
+### Wiring verified — the gate really does fail, not warn
+
+Checked, because a gate that returns 1 into a swallowed exit code is a warning wearing a gate's clothes:
+
+- `validate_chunk_content` failures are summed into `failures`, which drives `return 1`.
+- Both workflows invoke it through a pipe to `tee` — which would normally discard the Python exit code — **but both declare `shell: bash` and `set -o pipefail`** (`daily_knowledge_update.yml:103-106`, `process_knowledge.yml:141-147`). The exit code propagates and the job fails. Decision 1.1's "fails, not warns" is satisfied end to end.
+
+### C1 — consequence the user should decide on: this halts all knowledge commits, not just Baltic's
+
+In both workflows, `Commit if changes` / `Commit knowledge artifacts` runs **after** the validate step, and neither carries `if: always()` or a status function — so an `if:` without one implicitly requires `success()`. When the gate fires, **the commit step is skipped entirely**.
+
+The practical effect of merging this before the capture fixes: the daily knowledge pipeline goes red and **stops committing anything at all** — including the 11 healthy groups (breakwave, hellenic, broker_reports and the rest) — until Baltic and Poten are repaired. The corpus stops updating, not just the broken part of it.
+
+This is not a defect in the change. It is the honest behaviour of a real gate, and Decision 1 explicitly ordered the gate first. But it converts "gate first" into "the corpus pauses until the captures are fixed," which is a bigger commitment than the sequence implied, so it belongs in front of the user rather than discovered on tomorrow's red run.
+
+Three ways out, reviewer's preference first:
+
+1. **Land the Baltic capture fix in the same change** so the gate goes green on arrival. Poten can follow — at 40% it fires only on the boilerplate rule and is one source.
+2. Accept the pause deliberately, with the red run understood as correct and the fixes prioritized behind it.
+3. Keep the gate failing the job while letting the commit proceed (`if: always()` on commit). This preserves daily updates and keeps the alarm visible — but it publishes known-bad shards, which is close to the status quo and should only be chosen knowingly.
+
+**Whichever is chosen, the thresholds must not be loosened to clear the red.** That is the one response that would return the project to where it started, and any future change to `CONTENT_GATE_*` should be treated as a finding in its own right.
+
+### Minor notes, non-blocking
+
+- **N-a — four groups are exempt by size.** `MIN_SAMPLES=10` skips `baltic/baltic` (3 chunks), `hellenic/hellenic` (2), `breakwave/breakwave` (1), `clarksons/shipbuilding` (1). All are stray-category artifacts rather than real sources today, so the exemption is harmless — but a genuinely small source could go dark unseen. Worth a one-line note in the constant's comment.
+- **N-b — the boilerplate markers are OR'd via `any()`**, so a legitimate document that happens to contain the phrase "Metadata only" counts toward the rate. Zero corpus-wide false hits today at a 30pp margin; the risk is only that a future source discusses metadata in prose. Requiring two of the three markers would remove it.
+- The calibration comment block in the source is unusually good practice: it records the measured medians and stub-rates behind every constant, so the next reader can tell whether a threshold was reasoned or guessed.
 
 ---
 
