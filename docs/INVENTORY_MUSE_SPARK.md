@@ -437,3 +437,79 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   poten/tankers boilerplate (next task, untouched); lint warnings 16→4
   (12 `topic_freshness` cleared by restored Baltic evidence). Poten not
   started here.
+
+## 20. Decision 1.3 — Poten capture fix (2026-09-06, this branch, no commits)
+
+- Wall mechanism (measured live 2026-09-06, static-first per task order):
+  poten.com article bodies are HubSpot-form-gated (`hbspt.forms.create`,
+  portalId 1975593), NEVER in server HTML. Public static layer = title +
+  author + standfirst date + dek + "Please fill out the form...". Proven
+  both statically (curl: 29/30 article URLs HTTP 200, canonical matches,
+  `<article>` 721–1986 chars) and post-JS (monid/context.dev rendered
+  scrape: identical dek + only ~690 chars of HubSpot form-field chrome,
+  zero opinion text); JSON-LD Article nodes carry no `articleBody`;
+  meta/OG description == dek; RSS `/feed/` dek-only (reachable via monid
+  egress; sandbox curl gets WAF-403 on `/feed`, `/wp-json/*`,
+  `/sitemap.xml` — TLS fingerprinting, as v1 noted); archive.org CDX for
+  the dead slug returns HTTP 200 with zero snapshots. The wall is a
+  registration-form gate, NOT a rendering gate — headless cannot recover
+  bodies. Sandbox has selenium+playwright but no Chrome binary; CI
+  (`poten_drewry_weekly.yml`) installs only requests/bs4/pandas — no
+  browser, no monid. Static-first + listing fallback is the correct and
+  CI-runnable path; no workflow change required.
+- Miss mechanism (same defect class as Baltic: captured, dated, empty):
+  slug `will-he-or-wont-he` now soft-404s (HTTP 200 homepage shell,
+  canonical == `https://www.poten.com/`, zero title hits, no
+  `<article>`/entry-content). The v1 parser's
+  `find(entry-content) or find(article) or SOUP` whole-page fallback
+  harvested site nav/footer (~13 KB) and the `len >= 400` heuristic
+  mislabeled it `completeness: "full_text"`; date defaulted to crawl date
+  2026-08-24 (true standfirst per live listing p3: 27 Feb 2026, Raza Zoya,
+  Iran-scenarios dek). Second defect: the v1 body disclaimer ("Metadata
+  only - body is JS-rendered ... not retrievable via static fetch") sat in
+  every metadata doc's BODY → compiled into `_001` chunks → 20/50 tail
+  chunks tripped the validator's own boilerplate markers (tail med 859 and
+  stub 0/50 were always healthy; ONLY boilerplate-rate failed).
+- Fix (`scripts/scrapers/fetch_poten_direct.py` v2, no workflow change):
+  article-root-first extraction (`div.entry-content` → `<article>` →
+  QUARANTINE; whole-soup fallback removed; title/author read BEFORE
+  chrome-strip since the theme nests them in `<header>`); soft-404
+  detection via canonical/og:url homepage match; quarantine gate before
+  ANY write (shell absent, standfirst-date identity, length floor 400
+  calibrated vs genuine min ~600, 14 nav-signature phrases absent,
+  tanker-domain opinion markers ≥ 1, Baltic pattern) — stubs logged, never
+  archived; honest `completeness: "standfirst"` vocabulary + gate-safe
+  Coverage note (same disclosure, none of the three marker substrings; no
+  downstream reader of `completeness` exists); `--refetch` mode (known
+  URL↔file pairs in place, one WAF-403 retry, listing-p1–p6 fallback,
+  zero checkpoint writes); forced-LF writes (Baltic v4 lesson).
+- Refetch (measured): 29/29 live articles re-archived in place (title +
+  author (new) + standfirst date + dek verified live; per-file check:
+  length 611–1865, nav-signature hits 0, opinion markers pass, validator
+  marker strings 0; 2 transient WAF 403s absorbed by retry). 1
+  quarantined: Will-He — article URL dead AND listing dek truncated
+  (~110 chars, below floor) AND zero archive snapshots → nav-soup stub
+  DELETED from `reports/poten/` (it held zero opinion content; nothing of
+  value destroyed). Set is now 29 docs. New post "A New Headache For OPEC"
+  (4 Sep 2026) observed on listing p1, NOT ingested (out of scope: no new
+  doc_ids this task).
+- Recompile (`python scripts/process_knowledge.py --source poten
+  --no-llm`, pipeline's own path, no rebuild): processed=29 skipped=0
+  errors=0; ledger 8850→8849 rows (29 updated in place via `source_hash`
+  change, `compiler_version` stays 2; Will-He row pruned with its chunks —
+  0 will-he rows remain in the shard); all 29 chunk counts stable at 2;
+  doc/tree outputs renamed `{date}.md` → `{date}_{stem}.md` by the
+  pipeline's current naming (pre-existing 2026-08-25 broker_reports fix;
+  stale-path cleanup, same class as Baltic's ningbo renames). One stale
+  pre-fix fragment (`..._02-13_..._003` "the article", 11 chars, orphaned
+  by body shrinkage past a chunk boundary — pipeline compaction only
+  evicts on doc_id change) removed by single-line shard edit; shard now
+  58/58 reconciled vs ledger. Out-of-scope side writes reverted (8
+  Alibra/iron-ore/scrappage re-emissions, Baltic precedent).
+- After-state: validator FULL run PASS (exit 0, content-gate failures 0/17
+  — was exactly 1: poten/tankers); Poten tail med 504.5, stub 0/50,
+  boilerplate 0/50 (was 20/50 = 40%), corpus-wide marker hits 0; hash
+  mismatches 0; lint warnings stay 4 (non-fatal, pre-existing).
+  `--source baltic` re-run PASS (gate 0/5 — Baltic stays green). Decision
+  1 (gate → Baltic fix + 2026 recompile → Poten fix) complete.
+- Re-verify 2026-09-07: validator full PASS exit 0, Content-gate failures: 0 (groups checked 17).

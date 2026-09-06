@@ -1,0 +1,90 @@
+{
+  "node_id": "poten_tankers_2026-01-16_poten_2026_01_16_a_new_dawn__root",
+  "doc_id": "poten_tankers_2026-01-16_poten_2026_01_16_a_new_dawn",
+  "parent_id": null,
+  "title": "Poten Tanker Opinion: A New Dawn",
+  "section_path": [
+    "Poten Tanker Opinion: A New Dawn"
+  ],
+  "section_path_text": "Poten Tanker Opinion: A New Dawn",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Poten Tanker Opinion: A New Dawn\n**Published Date**: 2026-01-16\n**Source URL**: [https://www.poten.com/a-new-dawn/](https://www.poten.com/a-new-dawn/)\n**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch. Analysis & Commentary\nA New Dawn\nVenezuela has a bright future, but challenges remain Things can change quickly in the oil markets. A few weeks ago, on December 12, 2025, we wrote a Tanker Opinion entitled \"Pirates Of The Caribbean?\", discussing President Trump's maximum pressure campaign against his Venezuelan counterpart, Nicolas Maduro.",
+  "keywords": [
+    "crude_oil",
+    "new",
+    "oil",
+    "opinion",
+    "venezuela",
+    "what",
+    "can",
+    "dawn",
+    "future",
+    "https",
+    "now",
+    "www.poten.com/a-new-dawn"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 252,
+  "source_path": "reports/poten/2026/poten_2026-01-16_a_new_dawn.md",
+  "source_url": "https://www.poten.com/a-new-dawn/",
+  "children": [
+    {
+      "node_id": "poten_tankers_2026-01-16_poten_2026_01_16_a_new_dawn__s01_poten_tanker_opinion_a_new_dawn",
+      "doc_id": "poten_tankers_2026-01-16_poten_2026_01_16_a_new_dawn",
+      "parent_id": "poten_tankers_2026-01-16_poten_2026_01_16_a_new_dawn__root",
+      "title": "Poten Tanker Opinion: A New Dawn",
+      "section_path": [
+        "Poten Tanker Opinion: A New Dawn"
+      ],
+      "section_path_text": "Poten Tanker Opinion: A New Dawn",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "**Author**: Raza Zoya\n**Published Date**: 2026-01-16\n**Source URL**: [https://www.poten.com/a-new-dawn/](https://www.poten.com/a-new-dawn/)\n**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.",
+      "keywords": [
+        "author",
+        "date",
+        "https",
+        "published",
+        "summary",
+        "www.poten.com/a-new-dawn",
+        "analysis",
+        "archived"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 86,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "poten_tankers_2026-01-16_poten_2026_01_16_a_new_dawn__s02_analysis_commentary",
+      "doc_id": "poten_tankers_2026-01-16_poten_2026_01_16_a_new_dawn",
+      "parent_id": "poten_tankers_2026-01-16_poten_2026_01_16_a_new_dawn__root",
+      "title": "Analysis & Commentary",
+      "section_path": [
+        "Analysis & Commentary"
+      ],
+      "section_path_text": "Analysis & Commentary",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A New Dawn\nVenezuela has a bright future, but challenges remain Things can change quickly in the oil markets. A few weeks ago, on December 12, 2025, we wrote a Tanker Opinion entitled \"Pirates Of The Caribbean?\", discussing President Trump's maximum pressure campaign against his Venezuelan counterpart, Nicolas Maduro.",
+      "keywords": [
+        "crude_oil",
+        "oil",
+        "venezuela",
+        "what",
+        "can",
+        "future",
+        "new",
+        "now"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 152,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

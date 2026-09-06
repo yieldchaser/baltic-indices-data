@@ -4,15 +4,17 @@ date: "2026-05-29"
 source: "poten"
 category: "tankers"
 source_url: "https://www.poten.com/chinas-balancing-act/"
-completeness: "metadata"
+author: "Erik Broekhuizen"
+completeness: "standfirst"
 tags: ["crude_tankers", "ton_miles", "rerouting", "vlcc", "suezmax", "aframax"]
 ---
 
 # Poten Tanker Opinion: China’s Balancing Act
 
+**Author**: Erik Broekhuizen
 **Published Date**: 2026-05-29  
 **Source URL**: [https://www.poten.com/chinas-balancing-act/](https://www.poten.com/chinas-balancing-act/)  
-**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch.
+**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.
 
 ---
 

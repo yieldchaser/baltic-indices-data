@@ -4,15 +4,17 @@ date: "2026-06-26"
 source: "poten"
 category: "tankers"
 source_url: "https://www.poten.com/full-steam-ahead-not-so-fast/"
-completeness: "metadata"
+author: "Erik Broekhuizen"
+completeness: "standfirst"
 tags: ["crude_tankers", "ton_miles", "rerouting", "vlcc", "suezmax", "aframax"]
 ---
 
 # Poten Tanker Opinion: Full Steam Ahead? Not So Fast!
 
+**Author**: Erik Broekhuizen
 **Published Date**: 2026-06-26  
 **Source URL**: [https://www.poten.com/full-steam-ahead-not-so-fast/](https://www.poten.com/full-steam-ahead-not-so-fast/)  
-**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch.
+**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.
 
 ---
 

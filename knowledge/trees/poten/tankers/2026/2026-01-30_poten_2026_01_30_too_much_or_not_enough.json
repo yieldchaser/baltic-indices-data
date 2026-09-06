@@ -1,0 +1,90 @@
+{
+  "node_id": "poten_tankers_2026-01-30_poten_2026_01_30_too_much_or_not_enough__root",
+  "doc_id": "poten_tankers_2026-01-30_poten_2026_01_30_too_much_or_not_enough",
+  "parent_id": null,
+  "title": "Poten Tanker Opinion: Too Much Or Not Enough?",
+  "section_path": [
+    "Poten Tanker Opinion: Too Much Or Not Enough?"
+  ],
+  "section_path_text": "Poten Tanker Opinion: Too Much Or Not Enough?",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Poten Tanker Opinion: Too Much Or Not Enough? **Published Date**: 2026-01-30\n**Source URL**: [https://www.poten.com/too-much-or-not-enough/](https://www.poten.com/too-much-or-not-enough/)\n**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch. Analysis & Commentary\nToo Much Or Not Enough?",
+  "keywords": [
+    "not",
+    "opinion",
+    "orderbook",
+    "decline",
+    "enough",
+    "https",
+    "many",
+    "much",
+    "our",
+    "too",
+    "why",
+    "www.poten.com/too-much-or-not-enough"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 237,
+  "source_path": "reports/poten/2026/poten_2026-01-30_too_much_or_not_enough.md",
+  "source_url": "https://www.poten.com/too-much-or-not-enough/",
+  "children": [
+    {
+      "node_id": "poten_tankers_2026-01-30_poten_2026_01_30_too_much_or_not_enough__s01_poten_tanker_opinion_too_much_or_not_enough",
+      "doc_id": "poten_tankers_2026-01-30_poten_2026_01_30_too_much_or_not_enough",
+      "parent_id": "poten_tankers_2026-01-30_poten_2026_01_30_too_much_or_not_enough__root",
+      "title": "Poten Tanker Opinion: Too Much Or Not Enough?",
+      "section_path": [
+        "Poten Tanker Opinion: Too Much Or Not Enough?"
+      ],
+      "section_path_text": "Poten Tanker Opinion: Too Much Or Not Enough?",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "**Author**: Raza Zoya\n**Published Date**: 2026-01-30\n**Source URL**: [https://www.poten.com/too-much-or-not-enough/](https://www.poten.com/too-much-or-not-enough/)\n**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.",
+      "keywords": [
+        "author",
+        "date",
+        "https",
+        "published",
+        "summary",
+        "www.poten.com/too-much-or-not-enough",
+        "analysis",
+        "archived"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 94,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "poten_tankers_2026-01-30_poten_2026_01_30_too_much_or_not_enough__s02_analysis_commentary",
+      "doc_id": "poten_tankers_2026-01-30_poten_2026_01_30_too_much_or_not_enough",
+      "parent_id": "poten_tankers_2026-01-30_poten_2026_01_30_too_much_or_not_enough__root",
+      "title": "Analysis & Commentary",
+      "section_path": [
+        "Analysis & Commentary"
+      ],
+      "section_path_text": "Analysis & Commentary",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A growing tanker orderbook starts an age-old discussion Last week, in our annual forecasting opinion (\"A Fool's Game?\"), we prognosticated that the tanker orderbook will decline in 2026. We are still early in the year, but the headlines from many of the trade publications seem to indicate that this may not happen.",
+      "keywords": [
+        "orderbook",
+        "decline",
+        "many",
+        "not",
+        "opinion",
+        "our",
+        "why",
+        "age-old"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 127,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}
