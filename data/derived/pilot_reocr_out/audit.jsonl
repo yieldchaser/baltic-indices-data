@@ -1,0 +1,3 @@
+{"ts": "2026-09-06T22:42:10.680702+00:00", "record": "FIXTURE__vale_table__s03", "stage": "stage1", "event": "extract+verify", "attempt": 0, "ok": true, "issues": [], "raw_chars": 331}
+{"ts": "2026-09-06T22:42:10.680702+00:00", "record": "FIXTURE__vale_table__s03", "stage": "stage2", "event": "extract+verify", "attempt": 0, "ok": false, "issues": ["separator_mix suspect: dot-thousands and comma-thousands/decimal mix"], "verdict": "improved", "raw_chars": 236}
+{"ts": "2026-09-06T22:42:10.680702+00:00", "record": "FIXTURE__vale_table__s03", "stage": "stage2", "event": "extract+verify", "attempt": 1, "ok": true, "issues": [], "verdict": "improved", "raw_chars": 238}

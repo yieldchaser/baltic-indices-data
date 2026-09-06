@@ -1,0 +1,7 @@
+--- a/knowledge/trees/FIXTURE.json
++++ b/proposed (FIXTURE__vale_table__s03)
+@@ image FIXTURE/mock.png status=accepted
+-OCR(existing): 'Northem andEastem = 34.438 35,047 legacy OCR'
++STAGE1(declared): {"chart_type": "table", "axes_readable": true, "x_axis": {"label": "Mine", "scale": "categorical", "units": "", "ticks": ["Northern", "Paraopeba"]}, "y_axis": {"label": "Output Mt", "scale": "linear", "units": "Mt", "ticks": ["0", "50", "100"]}, "table": {"rows": 2, "cols": 3, "headers": ["Mine", "Q1", "Q2"]}, "notes": "fixture"}
++STAGE2(values): {"values": [{"series": "Output", "points": [{"x": "Northern", "y": "34,438"}, {"x": "Paraopeba", "y": "35,047"}]}], "table_cells": [["Northern", "34,438", "35,047"], ["Paraopeba", "4,997", "7,109"]], "units": "Mt", "confidence": "medium"}
++NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.

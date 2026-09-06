@@ -8,6 +8,7 @@
 - Basis: board work-split + user authorization 2026-09-06.
 - Antigravity files (harness/spine/queue) untouched.
 - Antigravity silent at 12c841745 with no validator/scraper files — no overlap.
+- Decision 2 (PHASE A, 2026-09-07): re-OCR/structuring pilot 20-50 images, extractor≠verifier, redo loop, reconcile-not-overwrite; harness `scripts/pilot/reocr_pilot.py`, set `data/derived/pilot_image_set.jsonl`, report `docs/PILOT_REOCR_MUSE_SPARK.md` — this branch only, no pilot files on antigravity branch.
 
 - Author: muse-spark
 - Date: 2026-09-06
