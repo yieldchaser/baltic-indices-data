@@ -13,6 +13,58 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-06 17:50 UTC — `agent/muse-spark` @ `71d576761` — **PASS** (D1-D4 all closed)
+
+**Reviewed:** `asset_dispositions.jsonl` regenerated, `skip_cause_matrix.json` derived from it, `split_skip_causes.py` reworked with a three-way ledger gate, Sample C re-pointed.
+
+**D1 closed, verified exactly.** Reviewer re-tallied the file against the ledger:
+
+| | dispositions | ledger | delta |
+|---|---|---|---|
+| ingested | 13,591 | 13,591 | **0** |
+| skipped | 8,424 | 8,424 | **0** |
+| failed | 91 | 91 | **0** |
+
+22,106 records total. **Zero** `ingested` records with a null `node_id` — the invariant is gate-enforced, not merely asserted.
+
+**D2 closed.** The previously unexplained records resolve into a reasoned `failed` breakdown: `PDFSyntaxError` 86, `unknown_extraction_failure` 4, `unresolvable_relative_ref` 1 = 91.
+
+**D3 closed.** The matrix is now derived from the dispositions file; `reconciled_with_ledger: true`, `mismatched_docs: []`.
+
+**D4 closed well.** Sample C is re-pointed at three ingested images with suspect OCR (audit S1-S3) plus two failed PDF-class assets, with disposition evidence cited per row and the superseded rows struck rather than deleted.
+
+### E1 — this falsifies part of the reviewer's own D1 framing
+
+In D1 this reviewer called the failed assets "the most interesting assets in the corpus… the one pocket of on-disk material genuinely missing from the graph." **That was wrong**, and muse-spark's F1/F2 diagnosis is what exposed it: the `.pdf` files are HTML error pages saved under PDF names.
+
+Reviewer checked all 91 independently by reading magic bytes from every mirror on disk:
+
+- **90** of 91 have a mirror present.
+- **89** begin `<!DOCTYPE html>` / `<html` — bot-challenge and error pages, not documents.
+- **1** begins `PK\x03\x04` — a ZIP container, so an Office file (`.docx`/`.xlsx`) misnamed `.pdf`.
+- 0 are real PDFs.
+
+**Recovery value of the entire failed set is one file.** The 86 `PDFSyntaxError` cases are failed downloads carrying no data. What they do reveal is a **scraper defect worth fixing**: linked assets are fetched and written under a `.pdf` extension with no content-type or magic-byte validation, so a challenge page is silently archived as a document and only surfaces 4,000 documents later as a parse exception. Validating the fetch is cheap and prevents recurrence; recovering the existing 89 is pointless.
+
+### E2 — `errors.jsonl` is not a complete failure record
+
+`knowledge/manifests/errors.jsonl` holds **83** entries against **91** ledgered failures — the pipeline under-logs by 8. Muse-spark's method attributes an exception class from the parent document's error entry and falls back to `unknown_extraction_failure` otherwise, which is why it reports 86 `PDFSyntaxError` where the log itself carries 79. Sound approach, but the attribution is inferential for the surplus, and it should say so. The pre-existing gap belongs to `process_knowledge.py`, not to this branch.
+
+### E3 — the strategic finding: there is no coverage backlog
+
+Worth stating now that the measurements have converged. Every large pocket of "unprocessed" material named in the mission brief or by this reviewer has evaporated under measurement:
+
+- 35,957 PDFs → **4,475**.
+- 8,424 skipped assets → **99.0% outbound links to third-party journalism**, zero recoverable charts.
+- 91 failed assets → **89 error pages, 1 real file**.
+- 19,801 "unused" shards → an actively maintained pipeline.
+
+What remains is not a coverage problem but a **quality** one: 10,894 ingested images carrying raw OCR, 228 measured mixed-separator suspects, undetected row-scrambling beyond that, and 451 images never OCR'd at all. The project's first batch should be a re-OCR and structuring pass over material already in the graph — not an extraction campaign against a backlog that does not exist.
+
+That is a materially different project from the mission brief's framing, and it is the user's call to confirm.
+
+---
+
 ## 2026-09-06 17:26 UTC — `agent/muse-spark` @ `35b510e8e` — **PASS**
 
 **Reviewed:** `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md` (new), N2/N3 fixes in `skip_cause_matrix.json` and `split_skip_causes.py`, plus a clean sync of `main` @ `6ba037f20`.
