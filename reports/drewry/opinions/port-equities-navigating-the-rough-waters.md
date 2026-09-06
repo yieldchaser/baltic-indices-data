@@ -1,0 +1,33 @@
+# Port Equities: Navigating the rough waters
+
+*05 Sep 2024*
+
+The Drewry Port Equity Index (DPEI) has recorded major fluctuations over the past few years, driven by a complex interplay of economic/ industry factors, including Covid-led supply chain disruptions and evolving geopolitical risks. Between 2020 and YTD 2024, the DPEI underperformed the S&P 500, with the sectorial index posting a gain of 63.8% compared to the S&P 500’s cumulative surge of 74.8%. The write-up gives an overview of the DPEI’s performance compared to the broader S&P 500 index. By examining the key reasons behind the index fluctuations between 2021 and 2024, we aim to offer insights into the current market dynamics and help investors make informed decisions regarding their portfolios in the port and terminal industry.
+
+After peak Covid-led restrictions in 2020, the DPEI outperformed the broader S&P 500 index in 2021 and 2022. This gain was driven by higher demand and increased revenues from Value Added Services (VAS) such as storage and refrigerated cargo fees. However, there was a notable difference in this uptick during those two years.
+
+In 2021, the gains were well spread out across the index constituents. The ports and terminal industry benefitted from the strong pent- up demand, coupled with limited availability of labour and varying levels of Covid-led disruptions, resulting in massive supply-chain congestion globally. The situation led to higher contributions from VAS services, favouring Global Terminal Operators (GTOs) and Regional Terminal Operators (RTOs). Consequently, GTOs and RTOs recorded a double-digit valuation gain in 2021, but GTOs outpaced RTOs because of their larger scale of operations, leading to a 47.6% increase in GTO share price valuations vs 26.5% rise for RTOs.
+
+In 2022, the industry dynamics got more complex as the degree of restrictions varied widely across regions. Investors attached different growth expectations based on the geographies where the company was operating, causing the valuation gap to widen between GTOs and RTOs. Under such a scenario, GTOs’ larger scale of operations continued to work in their favour as restrictions remained intact in some areas but eased in others. However, RTOs were more exposed to the Covid policies of their specific operating countries. For example, Brazil, which adopted a relatively relaxed approach led to a strong rebound in Santos Brasil’s stock price after dropping 50.1% in 2020. The stock surged 18.9% in 2021 and 38.8% in 2022. In contrast, Liaoning Ports, a China-based RTO, that kept facing sporadic government restrictions, recorded three consecutive years of valuation losses. The stock price declined 23.3% in 2020, 4.6% in 2021 and 4.4% in 2022.
+
+Note: Drewry Port Equity index, which is a market capitalisation weighted index, comprises ten companies including COSCO SHIPPING Ports, CM Port, HPHT, Liaoning Port, Tianjin Port, ICTSI, HHLA, Santos Brasil Participações, AD Ports and Westports. Price updated till 31 August 2024.
+
+Source:Drewry Maritime Financial Research
+
+As the supply chain started to normalise in 2023, the increased contribution from VAS started to level off. Additionally, investors rebalanced their portfolios (in favour of technology stocks), reflecting the post-Covid realities (demand shifting from products to services). Both these points led to the reversal of the relatively high performance of the Drewry Port Equity Index compared to the S&P 500. During the year, the sectorial index significantly underperformed the broader market by 19.1 percentage points (p.p) vs 32.3 p.p and 10.6 p.p outperformance recorded in 2021 and 2022, respectively.
+
+Meanwhile, the situation again changed in 2024 as receding inflation and a growing global economy fuelled consumer demand, as evidenced by the industry-wide throughput growth of 6.1% YoY in 1H24. Additionally, heightened geopolitical risks and the closure of the Suez Canal forced liners to take the longer routes (via the Cape of Good Hope) to connect Asian economies (the world’s production centre) with American and European markets (the world’s largest consumer markets). These stretched routes caused vessels to drop more containers at selected hubs, leading to congestion at these ports, which gradually spread to other ports, resulting in the resurgence of higher VAS revenue for many players. The argument finds support in the recently published 2Q24 results, wherein companies like APMT, ICTSI, HHLA, Westports, and Santos reported higher revenues from ancillary services as a reason for the jump in their YoY topline growth. For YTD (ending 31 August 2024), the Drewry Port Equity Index is up 9.6% (vs 2023: 5.1%) but still lags behind the S&P surge of 18.4%. With two months into the current quarter, we expect VAS contribution to remain high in 3Q24 results, as global trade uncertainties remain largely unchanged.
+
+With robust demand, a favourable operating environment, a recent run-up in the stock prices and an above-average industry multiple, investors are unsure whether to buy or book profits. This uncertainty arises from the industry’s lack of strong new catalysts. At the current valuation, it appears that investors have already priced in key positive factors such as robust demand and the lowering of interest rates by the US Federal Reserve. Meanwhile, challenges such as geopolitical tensions and fairly priced market valuations continue to weigh on the investors’ sentiment. Despite fair valuation, we believe there are opportunities in individual pockets of the market, so one should analyse the individual companies to identify the winner, instead of riding on the sectorial trend.
+
+Source:Drewry Maritime Financial Research
+
+Note: Price updated as of 31 August 2024.
+
+Source:Drewry Maritime Financial Research
+
+We offer an independent equity research subscription service covering dozens of listed companies across all the main shipping sectors. As well as assessing the strategic, financial and operational position of these companies, our in-depth reports provide key valuation drivers, a risk/reward matrix and financial as well as industry analysis.
+
+Reports are produced by our dedicated team of equity and credit analysts, all of whom have a thorough understanding of both the sectors and organisations they cover.
+
+We are authorised by the UK Financial Conduct Authority (FCA) to provide investment advice and are uniquely positioned to provide a product that offers rigorous and unbiased analysis.

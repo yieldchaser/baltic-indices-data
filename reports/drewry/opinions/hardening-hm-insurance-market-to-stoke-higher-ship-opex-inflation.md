@@ -1,0 +1,19 @@
+# Hardening H&M insurance market to stoke higher ship opex inflation
+
+*07 Apr 2022*
+
+Recent increases in hull and machinery (H&M) premiums are set to be repeated and some owners will face further significant insurance cost increases in 2022/23, as restructuring and re-pricing of the H&M market consolidates and syndicates continue to focus on raising their premium base. This comes on top of double-digit general increases announced by P&I Clubs (see earlier briefing).
+
+Following a loss making 2020 on flat gross premium, the wider Lloyds market made significant profitability gains in 2021, growing gross premium by 10.6% while cutting expense ratios by around 1.5%. This resulted in a market wide gross profit of £2.3bn. While falling short of 2019’s result, it does show that the wider market can bounce back from the negative returns that emerged in the early part of 2020 and resulted in losses of £887m that year. For the first time in several years the combined ratio was below the breakeven threshold of 100%, with 2021’s figure reaching 93.5%. That all points to the beginnings of a stable and sustainable market for services underpinned by Lloyds’ recent changes in underwriting practices.
+
+Source:Drewry Maritime Research, Lloyd’s Annual Reports
+
+Lloyds reports the marine market as a sunk component of its marine, aviation and transport book. While that segment reported increased gross premium of 6.2% in 2020, it was followed by a 2.3% fall in 2021 but on an improved accident year ratio of 90%. It is difficult to determine marine’s contribution to this turnaround, but what does seem clear is that the exit of some providers from the Lloyds market has reduced provision. Indeed, while Lloyds reported a 50% reduction in gross written premium attributable to marine in 2020 this was offset by significant improvements in pricing as capacity was reconfigured.
+
+The Lloyd’s H&M book has continued to contract in favour of Nordic and Asian providers and this ongoing trend shows that profit-based pricing and the capacity to deliver will drive the market for the foreseeable future. The premium base has been low for a long time now, causing some players to exit the market. Hence, vessel owners can no longer count on market competition to necessarily result in lower costs to the assured. The premium base in the wider market actually expanded 14.4% in 2021 once growth from new syndicates and foreign exchange effects are factored. We expect the most cost conscious assured to seek alternatives, while the Lloyds market continues to adjust its premium base upwards to bring it into a more sustainable and profitable situation.
+
+Owners cannot expect any change in the fundamentals that led to the hardening of the Lloyds H&M insurance market. In combination with changes to underwriting practices that have led to greater underwriter oversight, they can expect further increases in premiums as they renew during 2022 and the Lloyds market continues to drive profitability improvement. However, Lloyds does posit that the rate of rises may be less marked in the coming year when compared to 2021.
+
+Hull & machinery insurance costs are forecast to rise by up to 10% in 2022, depending on owners’ claim records, which will add to vessel operating cost inflation. The ongoing uncertainty around future trading conditions will only exacerbate underlying issues for owners.
+
+For more details on marine insurance and other vessel operating cost trends across 47 different vessel types and sizes, including five-year forecasts, subscribe to Drewry’sShip Operating Costs Annual Review & Forecastreport.

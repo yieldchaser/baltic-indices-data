@@ -1,0 +1,21 @@
+# Historic disruption to Saudi oil supply to have severe implications for oil and tanker markets
+
+*17 Sep 2019*
+
+Global spare production capacity is not enough to compensate for the decline in Saudi Arabia’s oil production after the recent attacks on two of the country’s oil facilities and the consequent inventory drawdown will therefore underpin oil prices and adversely affect tanker demand if supplies take longer to be restored.
+
+The oil market lost about 6% of global supply in the biggest single disruption ever, when drone strikes on two critical oil facilities in Saudi Arabia knocked reduced oil production in the Kingdom by about 5.7 mbpd on 14 September. The explosions set off fires at the Abqaiq oil processing facility (7.0 mbpd capacity) and the nearby Khurais oil field (1.5 mbpd capacity), halting more than 50% of the country’s production.
+
+While Yemen’s Houthi group claimed responsibility for the attack, the US put the blame squarely on Iran. Saudi Arabia’s oil infrastructure has been hit by the Houthis many times before, but there has not been any disruption in supply. This latest attack, which follows last month’s drone attack on the Shaybah natural gas liquefaction plant and attacks on two oil pumping stations in May, highlights the vulnerability of Saudi Arabia’s oil infrastructure to Houthi attacks.
+
+Although the fire at both the facilities is now under control, it is still not clear how long it will take to fully restore 5.7 mbpd of production. Other OPEC producers have spare capacity of around 0.8 mbpd, but it will not be enough to compensate for the big drop in the Saudi output. In addition, the spare capacity will take time to come online. Therefore, the disruption to about 6% of global supply will have severe implications for the oil and tanker markets if Saudi Arabia’s oil supply remains affected for long. Asia Pacific buyers will be particularly affected as they account for about 70% of Saudi Arabia’s total crude exports of around 7 mbpd.
+
+While Saudi Arabia is planning to use oil from its storage facilities to partly compensate for the supply disruption, the oil market will be in short supply as long as the production remains affected. The country has about 188 million barrels of crude oil stock, which is equivalent to about 26 days of its exports. If Saudi Arabia taps its oil inventories to compensate for half of the total loss in production, there will still be a supply deficit of about 2.8 mbpd.
+
+In such a situation, if Saudi’s supply remains affected for one week, there will be a modest decline of 10 VLCC loadings in the Arabian Gulf during this period. If other producers in North America, Latin America and Africa manage to compensate for the shortage in Saudi Arabian supply in the short run, the crude tanker market will be positively impacted as tonne-mile demand for VLCCs will increase, with most of the supply moving to Asia.
+
+However, if the Saudi Arabian crude oil supply remains affected for one month, the global oil and tanker markets will be severely impacted. Although the country’s inventory of 188 million barrels can fully compensate for the 5.7 mbpd drop in supply for one month, this is highly unlikely as it will exhaust most of Saudi Arabia’s crude oil stocks. If the supply remains affected for one month and Saudi Arabia manages to meet half of the disrupted supply through inventories, the country’s crude oil inventories will come down to around 100 million barrels. But as the remaining half of the global supply will come from inventory drawdown outside Saudi Arabia, it will lead to a significant decline in the demand for tankers. Since the average haul-length of Saudi Arabian crude is about 5,500 nautical miles (NM), the drop of 2.8 mbpd in the country’s exports for one month will render more than 50 VLCCs unemployed over this period. In such a situation, while oil prices will surge, freight rates in the crude tanker market will come down significantly.
+
+Source:Drewry Maritime Research
+
+Source:Drewry Maritime Research

@@ -1,0 +1,33 @@
+# LNG inching towards carbon neutrality
+
+*30 Oct 2020*
+
+Expected rise in demand for carbon-neutral LNG under decarbonisation goals pushes the sector to reduce CO2 emissions, driving advancement in LNG shipping.
+
+Total recently shipped its first carbon-neutral LNG cargo sourced from Australia’s Ichthys LNG to CNOOC. The emissions created by the LNG cargo were offset by carbon credits procured through investments in wind energy and forest protection projects. The concluded trade is the latest in the nascent carbon-neutral LNG market wherein the first cargos were supplied by Shell to Japan’s Tokyo Gas and South Korea’s GS Energy in 2019. More recently, Shell also supplied carbon-neutral LNG cargoes to Taiwan and China while Singapore’s Pavilion Energy floated a request for proposals (RFPs) to procure 2 mtpa of carbon-neutral LNG starting from 2023.
+
+* ADNOC sourced LNG cargo from JERA for supply to India. **RFP floated for term deal.Source:Drewry Maritime Research, GIIGNL
+
+Carbon credits are an emission-offsetting mechanism whereby an international or national regulatory authority can issue a country/company carbon credits upon their funding of carbon-negative projects such as afforestation, conservation or emission-reduction programmes in developing countries. A country or company can use the carbon credits to offset the emissions produced by their existing operations.
+
+Global climate undertakings such as the Kyoto Protocol and more recently the Paris Climate Agreement have set variable climate goals for various countries, putting the spotlight on emission reduction and carbon-credit trading mechanism to offset the emissions produced. China recently announced its goal of achieving carbon neutrality by 2060 which created shock waves, but also encouraged other countries to follow suit.
+
+Source:Drewry Maritime Research
+
+Even though emissions from the use of LNG (natural gas) are almost half those of coal, the total life cycle emissions for LNG (including extraction, liquefaction, shipping, regasification and end-use) are still significant in terms of the greenhouse gases (GHG) released. Therefore, a handful of LNG buyers have felt the need to offset the emissions caused by the use of LNG through the carbon-credit mechanism.
+
+For instance, Europe is rapidly shutting down coal-fired power plants in the region favouring gas-fired and renewable power generation. The reduction in coal usage and thus in emissions allows the countries to earn carbon credits – certified emission reduction (CER) credits – whereby one CER is equivalent to one tonne of CO2 produced. These credits can be traded or sold and count towards the emission reduction targets for a country.
+
+The procurement of carbon-neutral LNG comes at a higher price than the prevalent spot prices but adds to the buyer company’s CSR report, helping the company to meet its environmental targets. Recent studies have estimated that the average total life cycle emissions of one LNG cargo (170k cbm) are around 250k tonnes of CO2 equivalent. The cost to offset these emissions ranges between $7 and $10 per tonne of CO2 equivalent depending on the LNG source, type of ship used and the end-use of the gas. This amounts to an offsetting cost of $1.5-2.0 million per cargo, translating into an extra cost of $0.5-0.8 per MMBtu.
+
+Major energy companies such as Shell, Total and BP have also announced plans to become carbon-neutral by 2050 and are thus looking to play a major role in the growing niche – ‘Carbon-neutral LNG’. They have diverse energy verticals with renewable and emission-reduction projects already in place, which will help the companies offset the emissions from their present LNG portfolio. The higher vertical integration between their upstream and downstream business will further ease the quantification of LNG emissions.
+
+This system is not without flaws with unaddressed issues about the quantification of LNG supply chain emissions and fixing of responsibility for offsetting them. For example, the present emission trading systems in the EU and South Korea account for emissions only at a national level and disregard those across the supply chain. Therefore, the lack of a standard quantification practice acts as a deterrent for carbon-neutrality ambitions of both buyers and sellers.
+
+However, it would be more economical to reduce the emissions produced through the LNG supply chains instead of purchasing expensive carbon credits. US LNG liquefaction projects such as Freeport LNG, Rio Grande LNG and Annova LNG have planned to reduce their carbon emissions by 90% by switching to renewable sources of power and bringing about changes in liquefication technology while Chevron has built a carbon capture and storage (CCS) plant at its Gorgon LNG facility in Australia to reduce the carbon footprint. Qatar’s North Field Expansion will also use renewable energy to keep its carbon footprint low. On the regasification front, Japan’s Tokyo Gas has planned to set up CCS facilities to reduce emissions on the receiving side of the LNG supply chain. We expect more such projects to come up as other LNG players join the carbon-neutrality wagon.
+
+The planned emission reductions will lower the need to buy carbon credits and increase the attractiveness of these LNG projects against older plants with higher carbon footprints. This can help the planned projects attract investors and buyers in an oversupplied LNG market.
+
+The acceleration towards carbon neutrality will further cement IMO’s 2050 goal for emission reduction in shipping with more concrete steps to be taken from as early as 2025. LNG as a marine fuel might have to take a backseat in favour of zero-carbon-emission fuels such as hydrogen and ammonia. However, the jury is still out to adjudge a future alternative fuel to replace LNG.
+
+While it may still be early days for the carbon-neutral LNG concept, the need to reduce LNG carbon footprint is expected to impact LNG shipping in a big way. The new generation of LNG carriers will be designed to address the methane slip (release of GHG during transportation) in LNG carriers along with higher focus on lowering emissions in lieu of higher design speeds. For instance, Total is undertaking a feasibility study for using wind propulsion in the next-generation of LNG carriers. It might look farfetched at present, but the prospect of zero-emission LNG shipping can lead to a scenario where a hydrogen or wind-powered vessel is used to ship LNG across terminals.
