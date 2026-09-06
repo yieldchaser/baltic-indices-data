@@ -13,6 +13,74 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-06 16:12 UTC — CROSS-CUTTING — **X1: both branches sampled ingested assets and labelled them skipped**
+
+This is the most consequential finding so far, and it lands on both branches at once. It is the shared-blind-spot case mission rule 4 exists to catch: each agent verified its own output, both passed, and both are wrong in the same direction.
+
+Take parent document `breakwave_insights_..._2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout`. Its ledger row reads:
+
+```
+discovered 4 · mirrored 2 · ingested 2 · skipped 2 · failed 0
+```
+
+Its tree shard contains exactly two `linked_image_asset` sections:
+
+```
+Linked asset: ..._img_map-minas-gerais-brazil_fc088b057bd4.jpg
+Linked asset: ..._img_img-1960_8a20a313afb5.jpg
+```
+
+Those two filenames are **the same two** that appear as:
+
+- `agent/antigravity` — `p0_skipped_assets_queue.jsonl` records `__asset_00` and `__asset_01`, both flagged `is_resolved_local: true`, `status: ready_for_vision_stage1`.
+- `agent/muse-spark` — `P1_CALIBRATION_MUSE_SPARK.md` §C, survey rows 1 and 2, described as "image-type `linked_assets_skipped` queue entries in ledger order."
+
+**Both are already ingested.** In `collect_linked_asset_sections`, `sections.append(...)` executes only after `stats["linked_assets_ingested"] += 1`. A `linked_image_asset` node in a tree shard is therefore, by construction, proof that the asset was ingested — it is the exact complement of the skipped set. The two genuinely skipped assets in this document are the other two of the four discovered, and they are almost certainly an external URL or a non-content link, which is why nothing for them exists on disk.
+
+Consequences:
+
+- Any P0 queue built by resolving assets to local disk **systematically selects ingested assets**, because those are the only ones mirrored locally. High local-resolution rates (antigravity's "97.8%") are evidence of this error, not evidence against it.
+- Feeding this queue to a vision pass re-processes material already in `knowledge/trees/` at full cost, and still leaves the real skipped set untouched.
+- `is_resolved_local: true` is close to an inverted signal for "needs work."
+
+**Required of both branches:** stop deriving the skipped set from what resolves on disk. Instrument `collect_linked_asset_sections` to emit one record per asset with its disposition and reason (cap-hit / empty href / non-content / external URL / duplicate / ingested / failed), re-run it over the corpus, and build P0 from that. Until then neither branch has a valid P0 sample, and no chart-extraction sizing derived from one should be trusted.
+
+---
+
+## 2026-09-06 16:12 UTC — `agent/muse-spark` @ `fc6dd2b94` — **PASS WITH CHANGES**
+
+**Reviewed:** 1 commit, +90 lines — `docs/P1_CALIBRATION_MUSE_SPARK.md` (new) and image-count corrections to the inventory. Still documentation only; no shard writes.
+
+### Sample B independently re-verified by the reviewer — exact
+
+This is the first claim on any branch that a third party could check, and it checks out. Because the source is committed (`docs/BDRY-BWET_Form10-Q_March-31-2026.pdf`), the reviewer re-extracted page 6 with an unrelated library (`pypdf`, not pdfplumber or pymupdf) and confirmed independently:
+
+- 66 pages, as stated.
+- The BDRY futures block holds exactly **9 contract rows** — 3 Capesize, 3 Panamax, 3 Supramax, April/May/June 2026 expiries.
+- Σ unrealized = **−2,157,385**; Σ notional = **43,916,630**. Both match the printed subtotal line `$ (2,157,385) $ 43,916,630 100%` **exactly**.
+
+The arithmetic tie-out is the strongest verification technique on either branch: it checks the extraction against a number the extractor never produced, so an extractor and verifier sharing a parsing assumption cannot both be wrong and still tie out. It should become a standing requirement wherever a source table carries a total row. Also correct: the first attempt (visual `find_tables`) fragmented into 13 × 1-row tables and this was recorded as a logged failure with a redo, not quietly replaced.
+
+Sample A shows the same discipline — a real verifier FAIL (`row_count_mismatch`, 8 vs a manual count of 5, from ruling-split header fragments), a logged redo, then a clean pass, with the two empty ruling-artifact columns **preserved as measured rather than silently dropped**. Preserving dead columns is the right call: dropping them is how column-shift corruption gets normalized into a schema.
+
+Sample C is correctly **not forced**. With no `REDUCTO_API_KEY` / `LLAMA_CLOUD_API_KEY` / `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` provisioned, it reports BLOCKED, names the exact unblock condition, and specifies a deferred two-stage protocol in which a stage-1 record with unreadable axes **fails closed and blocks stage 2**. That matches the mission's axis-first requirement, and declining to fabricate chart values under a blocked capability is the right behaviour.
+
+### Changes required
+
+**M1 — Sample C's selection is invalid (see X1).** All five surveyed images are ingested assets, not skipped ones. The §C readiness verdict and the deferred protocol stand on their own and need no rework; the **sample set** does. Re-select once the disposition instrumentation from X1 exists. No extraction was claimed from these images, so nothing downstream is contaminated — this is a sampling error, not a data error.
+
+**M2 — the calibration is not reproducible, same class as antigravity B4.** Pass 1 and Pass 2 live at `C:\Users\Dell\AppData\Local\Temp\opencode\p1_pass1.py` / `p1_pass2.py` — an OS temp directory that will be cleared. Commit both scripts and the three JSON/JSONL outputs to the branch. This is a lesser finding than B4 only because the **source documents are committed**, which is what let the reviewer verify sample B at all; the standard is otherwise identical and applies to both branches.
+
+**M3 — the cross-worktree harness import is a one-machine dependency.** Pass 2 reaches `ExtractionVerifier` via `sys.path.insert` into `C:\Users\Dell\Github\shipping-antigravity`. That path exists on exactly one machine, and it makes muse-spark's verification silently dependent on an uncommitted file in another agent's tree. The harness needs to live in one committed location both branches import from.
+
+**M4 — push the `expected_rows`/`expected_cols` fix back into the harness.** Supplying explicit expected counts to `verify_table` is precisely the fix that antigravity finding B6 calls for — it is what turned sample A's 8-vs-5 discrepancy into a FAIL instead of a silent pass. Keeping it in a local Pass-2 wrapper leaves the shared harness still able to pass collapsed tables. Contribute it upstream.
+
+### Accepted without change
+
+The image-count reconciliation is correct and closes the apparent disagreement between the two branches: `git ls-files` with `core.quotepath=false` returns the **higher** correct figures, because default quotepath octal-quotes non-ASCII filenames and undercounts by 5 `.jpg`. Reports-only 21,528 (breakwave 14,633 + hellenic 6,895), repo-wide 21,532, the 4 extra being `assets/Picture1-4.png`. This matches the baseline's `find`-based figures; both were right about different scopes, and muse-spark's method is the better one to standardize on.
+
+---
+
 ## 2026-09-06 15:40 UTC — `agent/antigravity` @ `12c841745` — **SEND BACK**
 
 **Reviewed:** 2 commits, 9 files, +1,545 lines — `scripts/harness/{verify_extraction,calibrate_sample,queue_skipped_assets}.py`, `scripts/spine/build_knowledge_spine.py`, `data/derived/p0_skipped_assets_queue.jsonl`, calibration outputs, and overwritten copies of `docs/REVIEW_BASELINE.md` + `docs/VERIFICATION_LOG.md`.

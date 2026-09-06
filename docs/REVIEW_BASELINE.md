@@ -148,6 +148,14 @@ Note also that `linked_assets_discovered` counts every `<a href>` and `<img src>
 in the document, navigation chrome included — which is why 2,475
 breakwave_insights documents produce 16,629 discoveries.
 
+**A `linked_image_asset` tree node proves the asset was INGESTED, not skipped.**
+`sections.append(...)` runs only after `stats["linked_assets_ingested"] += 1`, so
+the tree sections are the exact complement of the skipped set. Selecting queue
+items by "resolves to a local mirror" therefore selects **ingested** assets —
+the mirrored ones are the only ones on disk. A high local-resolution rate is
+evidence of this error, not evidence against it. See `VERIFICATION_LOG.md`
+finding X1, where both build branches hit this simultaneously.
+
 **Consequence:** the recoverable-on-disk subset is cause (1) alone, plus cause
 (4) if a re-fetch is in scope. Causes (2), (3), (5) are noise. **8,424 is an
 upper bound on the P0 queue, not its size.** Any plan must split the 8,424 by
