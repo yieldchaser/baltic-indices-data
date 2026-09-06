@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 1075,
   "source_path": "reports/baltic/dry/2026/2026-10-04_bulk-report-week-36_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__s01_main",
+      "node_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry",
       "parent_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "04 Sept 2026\nBulk report - Week 36",
+      "summary": "The market enjoyed a notably bullish week, recovering strongly after the UK holiday-shortened start and building momentum across both basins. Early weakness in the Pacific quickly proved short-lived as sustained miner participation tightened available tonnage and restored confidence.",
       "keywords": [
-        "sept"
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "high",
+        "tonnage",
+        "above",
+        "north"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week saw continued strength in the Panamax market, with positive sentiment driving rate gains across both the Atlantic and Pacific basins, and pushing the P5TC steadily higher throughout the week. In the Atlantic, transatlantic and fronthaul activity remained active, supported by sustained demand for September cargoes, although concerns emerged later in the week regarding limited cargo replenishment and increasing tonnage availability.",
+      "keywords": [
+        "capesize",
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "coal",
+        "dwt",
+        "vessel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 280,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Most of the market trended sideways this week, with the notable exception being the US Gulf, which almost returned to the levels seen two weeks ago. A 63,000-dwt fixed a grains cargo from South West Pass to China at $31,000 and a slightly smaller 61,000-dwt fixed grains to Egypt at $32,000, although at the end of the week we awaited details of stronger rumoured fixtures.",
+      "keywords": [
+        "panamax",
+        "china",
+        "pacific",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 331,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry",
+      "parent_id": "baltic_dry_2026-10-04_2026_10_04_bulk_report_week_36_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market opened September on a steady-to-firmer note, with sentiment largely positional across both basins. Across the Continent and Mediterranean, activity remained limited, although rates began to show signs of firmness towards the end of the week.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt",
+        "activity",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
       "section_type": null,
       "children": []
     }

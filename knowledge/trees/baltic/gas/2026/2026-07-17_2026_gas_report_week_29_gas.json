@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 403,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-29_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-07-17_2026_gas_report_week_29_gas__s01_main",
+      "node_id": "baltic_gas_2026-07-17_2026_gas_report_week_29_gas__s01_lng",
       "doc_id": "baltic_gas_2026-07-17_2026_gas_report_week_29_gas",
       "parent_id": "baltic_gas_2026-07-17_2026_gas_report_week_29_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "17 Jul 2026\nGas report - Week 29",
+      "summary": "The LNG market remained relatively quiet this week, with freight and cargo availability largely balanced across both basins. On the BLNG1 Australia-Japan route, rates increased by $900 week-on-week to settle at $75,100/day.",
       "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "jul"
+        "day."
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-07-17_2026_gas_report_week_29_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-07-17_2026_gas_report_week_29_gas",
+      "parent_id": "baltic_gas_2026-07-17_2026_gas_report_week_29_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market continued its upward momentum this week, with fixing activity remaining strong across the VLGC sector. A tightening position list with several uncovered cargoes provided further support to sentiment.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "day.",
+        "route",
+        "tce",
+        "activity",
+        "earnings",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 172,
       "section_type": null,
       "children": []
     }

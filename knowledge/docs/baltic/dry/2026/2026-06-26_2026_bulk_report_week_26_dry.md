@@ -4,10 +4,15 @@ commodities:
 - iron_ore
 - coal
 - grain
+- steel
 date: '2026-06-26'
 doc_id: baltic_dry_2026-06-26_2026_bulk_report_week_26_dry
 document_type: weekly_roundup
-key_entities: []
+key_entities:
+- China
+- Brazil
+- Australia
+- US Gulf
 keywords:
 - jun
 - main
@@ -16,7 +21,15 @@ regions:
 - atlantic
 - pacific
 - china
-section_count: 1
+- brazil
+- australia
+- west_africa
+- europe
+- india
+- us_gulf
+- singapore
+- japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2026/2026_bulk-report-week-26_dry.html
@@ -43,6 +56,14 @@ Main
 26 Jun 2026
 Bulk report - Week 26
 
-## Main
-26 Jun 2026
-Bulk report - Week 26
+## Capesize
+The market endured a difficult week, with early cautious optimism quickly giving way to broader weakness across both basins. The week opened on a relatively balanced footing following the previous Friday's stronger finish, supported by firmer South Brazil and West Africa activity in the Atlantic and steady miner participation in the Pacific. However, this resilience proved short-lived as sentiment deteriorated, cargo volumes thinned, and vessel availability continued to build. In the Pacific, the consistent presence of major miners was insufficient to support rates. Although two C5 miners remained active on most trading days, their increasingly cautious approach and lower fixing levels highlighted a lack of urgency, with rates slipping from $11.65 to $10.20 by week's end. The Atlantic initially provided some support, with South Brazil and West Africa enquiry underpinning C3 levels. However, this soon reversed as the cargo list thinned and an expanding ballaster count placed renewed pressure on the market, with C3 rates falling from $32.50 to $28.00. Although the North Atlantic remained comparatively more resilient, supported by pockets of transatlantic and fronthaul enquiry, activity was too limited to alter the broader negative trend. Overall, the BCI 182 5TC declined from $36,946 to $33,014, leaving the market firmly on the defensive by week's end.
+
+## Panamax-Kamsarmax
+The market saw a tentative start to the week, with the P5TC drifting lower amid mixed Atlantic sentiment and a weaker Pacific market. Activity in the Atlantic improved as the week progressed, highlighted by an 82,000-dwt vessel fixing a transatlantic cargo from EC South America at $32,000 on Tuesday, compared to a similar vessel achieving $34,000 later in the week. Fronthaul business followed a similar trajectory, with an 83,000-dwt open in India fixing at $20,000 early on, rising to $21,000 for an 82,000-dwt by week's end. Strengthening sentiment was driven by tighter tonnage in the North Continent and a firmer cargo book across both transatlantic and fronthaul trades, helping to drive the P5TC higher as the week progressed. In the Pacific, early weakness stabilised, with indications a market floor was near as owners resisted lower rates. A 75,000-dwt open in South Korea fixed an Australian round at $12,900, while an 80,000-dwt open in China secured $14,250 for an Australia to Singapore-Japan. Period activity slowed, with a 78,000-dwt open in the Far East fixing for one year at $15,750.
+
+## Ultramax/Supramax
+A rather lacklustre week for the sector, whilst the Atlantic remained the stronger of the two basins activity levels from the US Gulf tapered off as the week closed. The South Atlantic was a bit more resilient brokers said, although actual fixing information was scarce. From the Continent, a 63,000-dwt fixed a scrap run to the East Mediterranean at a reasonable $23,000. Downward pressure was seen from the Asian arena as limited coal enquiry from the south remained slow. That said, some felt that demand remained further north. A 57,000-dwt open Philippines fixing with clinker via South China redelivery Bangladesh at $18,000. Also, a 63,000-dwt fixed a NoPac round basis delivery North China at $18,500. Backhaul was relatively slow, a Supramax was heard fixed basis delivery China for a trip to Mediterranean via Gulf of Aden at $21,500. Period uptake was slow, a 63,000-dwt open India fixing short period at $21,000.
+
+## Handysize
+The Handy market maintained a steady to firm tone over the week, with overall sentiment supported by continued strength in the South Atlantic and US Gulf, where tight tonnage and consistent demand kept rates firm. A 38,000-dwt was reported fixed for a trip from Fazendinha to the Continent at $24,000. The Continent and Mediterranean remained largely stable amid limited fresh activity, although some support was noted from scrap demand. A 31,000-dwt was reported fixed from Liverpool to Jorf Lasfar with scrap at $17,000. In Asia, conditions were generally balanced but quieter, with limited activity and steady sentiment supported by selected steel demand. A 30,000-dwt open Kaohsiung on 25/26 June was reported fixed to the West Coast India, with redelivery Penang, at $17,000.

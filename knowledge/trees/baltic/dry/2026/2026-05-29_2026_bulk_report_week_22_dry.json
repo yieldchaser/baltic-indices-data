@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 852,
   "source_path": "reports/baltic/dry/2026/2026_bulk-report-week-22_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__s01_main",
+      "node_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry",
       "parent_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "29 May 2026\nBulk report - Week 22",
+      "summary": "The market strengthened over the course of the week, with sentiment increasingly underpinned by robust Pacific activity and a late-week improvement in Atlantic fundamentals. Despite a fragmented trading environment caused by public holidays in both the UK and Singapore, the market demonstrated resilience, with the BCI 182 5TC climbing above the $50,000 mark by Thursday.",
       "keywords": [
-        "may"
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "singapore",
+        "activity",
+        "above"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 278,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market saw a gradual improvement through the week, though conditions diverged regionally. The Atlantic lacked clear momentum, with supply steadily building and activity failing to absorb the growing tonnage list.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "was",
+        "interest",
+        "momentum",
+        "prompt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 153,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Supramax market ended the week with a familiar split between a firmer Atlantic and a softer Asia. The US Gulf remained the main source of support, with brokers reporting steady fresh cargo and better transatlantic demand, helping to keep sentiment positive and underpinning rate ideas.",
+      "keywords": [
+        "supramax",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "remained",
+        "asian"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 207,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry",
+      "parent_id": "baltic_dry_2026-05-29_2026_bulk_report_week_22_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handy market ended the week on a mixed but broadly steady footing, with regional trends continuing to shape sentiment. The Continent and Mediterranean remained largely balanced, with rates holding close to previous levels, while the South Atlantic stayed under pressure amid limited fresh demand and a growing supply of prompt tonnage.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "steel",
+        "vessel",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 192,
       "section_type": null,
       "children": []
     }

@@ -26,29 +26,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 262,
   "source_path": "reports/baltic/container/2026/2026-03-27_container-report-week-13_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-03-27_2026_03_27_container_report_week_13_container__s01_main",
+      "node_id": "baltic_container_2026-03-27_2026_03_27_container_report_week_13_container__s01_container",
       "doc_id": "baltic_container_2026-03-27_2026_03_27_container_report_week_13_container",
       "parent_id": "baltic_container_2026-03-27_2026_03_27_container_report_week_13_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "27 Mar 2026\nContainer Report - Week 13",
+      "summary": "As we near the end of the fourth week of conflict in the Middle East Gulf, we see no immediate signs of any de-escalation to the crisis. The price of oil and therefore refined products such as bunker fuel are at unusually high levels with some bunker ports limiting supplies or who they will sell to.",
       "keywords": [
-        "container",
-        "mar"
+        "china",
+        "meg",
+        "europe",
+        "crude_oil",
+        "products",
+        "asia",
+        "china/east",
+        "last"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 260,
       "section_type": null,
       "children": []
     }

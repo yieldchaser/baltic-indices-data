@@ -7,7 +7,12 @@ commodities:
 date: '2026-08-07'
 doc_id: baltic_dry_2026-08-07_2026_bulk_report_week_32_dry
 document_type: weekly_roundup
-key_entities: []
+key_entities:
+- China
+- Brazil
+- Australia
+- Atlantic basin
+- US Gulf
 keywords:
 - aug
 - main
@@ -16,7 +21,14 @@ regions:
 - atlantic
 - pacific
 - china
-section_count: 1
+- brazil
+- australia
+- west_africa
+- europe
+- india
+- us_gulf
+- singapore
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2026/2026_bulk-report-week-32_dry.html
@@ -43,6 +55,14 @@ Main
 07 Aug 2026
 Bulk report - Week 32
 
-## Main
-07 Aug 2026
-Bulk report - Week 32
+## Capesize
+The market enjoyed a notably stronger week overall, with sentiment remaining firmly positive throughout. Strength in both the Pacific and Atlantic basins underpinned the rally, driving the BCI 5TC from $41,395 at the start of the week to $46,512 by Friday's close. Tightening vessel availability and healthy cargo demand steadily shifted negotiating power in favour of owners, underpinning gains across both regions. The Pacific remained the principal driver throughout the week. Although major miner activity was relatively restrained, consistent operator enquiry and additional coal stems supported a sustained rise in C5 rates. Widening bid-offer spreads reflected owners' growing confidence, with many resisting lower bids as expectations moved progressively higher. After opening the week in the mid-$14s, C5 rates climbed steadily to the low to mid $16s by week's end. Market participants also closely monitored the approach of Typhoon Dolphin, with precautionary restrictions and the prospect of weather-related disruption lending further support to sentiment by raising concerns over vessel availability. The Atlantic also strengthened, albeit at a more measured pace. South Brazil and West Africa to China markets recorded gradual gains as forward September demand remained robust and the ballaster list continued to contract, providing increasing support to C3 levels. North Atlantic fundamentals likewise improved, with fresh fronthaul enquiry emerging and transatlantic activity showing signs of building, although fixture volumes remained comparatively limited.
+
+## Panamax-Kamsarmax
+Sentiment improved steadily across both the Atlantic and Pacific this week, with freight rates and the P5TC posting consecutive gains. Tight tonnage availability in the North Continent and West Mediterranean continued to support the Atlantic market, with a 76,000-dwt vessel fixing a transatlantic round at $22,750 and an 82,000-dwt vessel securing $35,000 for a US East Coast to India trip. Stronger fronthaul demand from East Coast South America was also evident, with 81,000-dwt vessels fixing at $20,000 basis delivery Singapore and East Coast India. In the Pacific, mineral demand and steady North Pacific grain exports underpinned activity, with an 82,000-dwt vessel fixing at $21,500 for an Australian round and an 81,000-dwt vessel achieving $18,000 for a North Pacific run. Indonesian demand strengthened as the week progressed, particularly into South China, where a 77,000-dwt vessel fixed at $17,000. Period activity was evident, with an 81,000-dwt vessel securing $20,000 for short-period, an 83,000-dwt vessel fixing at similar levels for one year, and an 82,000-dwt vessel reportedly agreed at $19,500 for a two-year period.
+
+## Ultramax/Supramax
+It has been a week of consolidation with very little movement overall, as the 11TC average closed the week very close to last week's finish. In the Atlantic the week began with positive expectations from North America, and the rates have bounced back after weeks of decline, however the market did not push on as the week progressed. The Continent and West Mediterranean markets remained subdued with limited fresh enquiry, but the East Mediterranean remained active mainly due to increased clinker demand. The South Atlantic saw a little more demand for August dates, but nowhere near as much as the Panamax market, with rate levels steady. In Asia, rates have been gradually eroded as tonnage availability exceeds demand, with less backhaul and Nopac enquiry, however the expected disruption from the Typhoon gave some hope of improved levels soon. The Indian Ocean also experienced a drop despite being active with two 63,000-dwt vessels fixed basis delivery India for trips via South Africa back to China at $17,500, when a similar unit had fixed at $19,000 last week and $20,000 the week before. Period activity was limited in uncertain spot market conditions.
+
+## Handysize
+The market remained under pressure throughout the week, with sentiment weak to flat across both the Atlantic and Asian basins and limited fresh enquiry keeping activity subdued. Across the Continent and Mediterranean, activity was limited and rates stayed soft, with only a few cement- and scrap-related fixtures reported. A 37,000-dwt was fixed for a trip delivery Poland to the East Mediterranean with scrap at $17,000. In the South Atlantic and US Gulf, softer sentiment persisted as weak demand and available tonnage continued to weigh on rates, although some fixtures emerged as owners lowered expectations. A 33,000-dwt open Rio Grande was fixed for a trip to EC South America at $13,000, while another 33,000-dwt ballaster was fixed from the US East Coast for a trip to Turkey with scrap at $17,000. In Asia, activity remained slow, with reports of increasing free tonnage in Southeast Asia and the North Pacific, while cargo volumes were generally steady. Reported fixtures included a 39,000-dwt fixed from Thailand to Southeast Asia with sugar at $16,000.

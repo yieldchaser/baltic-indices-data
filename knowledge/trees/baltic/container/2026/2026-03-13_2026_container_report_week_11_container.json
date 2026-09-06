@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 224,
   "source_path": "reports/baltic/container/2026/2026_container-report-week-11_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-03-13_2026_container_report_week_11_container__s01_main",
+      "node_id": "baltic_container_2026-03-13_2026_container_report_week_11_container__s01_container",
       "doc_id": "baltic_container_2026-03-13_2026_container_report_week_11_container",
       "parent_id": "baltic_container_2026-03-13_2026_container_report_week_11_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "13 Mar 2026\nContainer Report - Week 11",
+      "summary": "With the conflict in the Middle East Gulf continuing, we have seen war risk premiums increase and, on the back of rising oil prices, bunker prices have tripled in some cases to what they cost a fortnight ago. In the short to near term, we expect to see all container freight rates increasing due to increased costs.",
       "keywords": [
         "container",
-        "mar"
+        "china",
+        "meg",
+        "europe",
+        "crude_oil",
+        "asia",
+        "china/east",
+        "ending"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 222,
       "section_type": null,
       "children": []
     }

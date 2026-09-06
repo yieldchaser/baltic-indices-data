@@ -1,8 +1,34 @@
 """
-Baltic Exchange Weekly Market Roundup Scraper  v3
+Baltic Exchange Weekly Market Roundup Scraper  v4
 ======================================================================
 Uses Selenium to discover links on the JS-rendered site and save each report
 as a clean self-contained HTML snapshot.
+
+Changes in v4 (Decision 1.2 — Baltic capture fix):
+  - Wall mechanism (measured 2026-09-06): balticexchange.com serves a Radware
+    "Challenge Validation" crypto-challenge (sec_cpt cookie) to browser-UAs
+    over static requests, while plain static requests (default UA) are served
+    the full server-rendered article WITH the legacy `div.article-content`
+    wrapper. Selenium/Chrome passes the challenge but the hydrated DOM injects
+    a cookie-consent banner as the FIRST h1 ("This site uses cookies") and
+    re-renders the article WITHOUT the `article-content` class. The old
+    download path (Selenium-only, first-h1 title, no verification) therefore
+    archived banner-poisoned titles + classless DOM, and `adapt_baltic` in
+    process_knowledge.py (keyed on `div.article-content`) fell back to the
+    header div → date+title stub chunks for all 2026 docs.
+  - Static-first article fetch: plain static GET (default UA, NOT a browser
+    UA — browser UAs trigger the challenge) with the legacy wrapper intact;
+    Selenium driver kept as fallback for challenged/failed static fetches.
+  - Consent hardening: banner nodes stripped, title picker skips consent
+    headings, archived snapshots re-wrapped in `div.article-content` so the
+    archive→compile contract holds regardless of live-DOM redesigns.
+  - Quarantine gate: every snapshot verified (challenge markers absent,
+    consent text absent, article length floor, category market markers
+    present) BEFORE any write — stubs are logged, never archived, even under
+    --overwrite. Mirrored asset payloads get the same stub rejection (the
+    April 2026 re-scrape archived 1.9KB challenge pages as assets).
+  - --refetch-year mode: deterministic re-fetch of URLs embedded in existing
+    snapshots (no Selenium discovery needed).
 
 Changes in v3:
   - Completely rewritten year-filter logic: handles custom JS dropdowns
@@ -25,6 +51,9 @@ Usage:
     python baltic_scraper.py --dry-run              # list URLs, no download
     python baltic_scraper.py --year 2024            # single year
     python baltic_scraper.py --headed               # show browser window
+    python baltic_scraper.py --refetch-year 2026 --overwrite
+                                                    # re-fetch URLs embedded
+                                                    # in 2026 snapshots
     python baltic_scraper.py --debug --category tanker --headed
                                                     # dump DOM for inspection
 """
@@ -111,10 +140,69 @@ CATEGORIES = {
     },
 }
 
-# ── Requests session ──────────────────────────────────────────────────────────
+# ── Requests sessions ─────────────────────────────────────────────────────────
 
 session = requests.Session()
 session.headers.update(HEADERS)
+
+# Static-first article session (Decision 1.2). Deliberately NOT a browser UA:
+# balticexchange.com answers browser-UAs over static requests with a Radware
+# "Challenge Validation" crypto-challenge (sec_cpt), while plain requests
+# (default python-requests UA) are served the full server-rendered article
+# WITH the legacy `div.article-content` wrapper intact (measured 2026-09-06
+# across dry/tanker/gas/container). robots.txt allows crawling (User-agent: *
+# Crawl-delay: 1) — callers keep >=1.2s gaps between requests.
+static_session = requests.Session()
+static_session.headers.update({
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.balticexchange.com/",
+})
+
+# ── Capture-verification markers (Decision 1.2 quarantine gate) ──────────────
+
+# Cookie-consent banner signatures. Only ever matched against SHORT nodes
+# (<300 chars) or the extracted article text post-strip, so genuine article
+# prose can never trip them.
+CONSENT_MARKERS = (
+    "this site uses cookies",
+    "we use cookies",
+    "accept all cookies",
+    "accept cookies",
+    "cookie consent",
+    "cookie policy",
+    "manage cookies",
+    "reject all",
+)
+
+# Bot-manager / CDN challenge signatures (Radware "Challenge Validation").
+CHALLENGE_MARKERS = (
+    "challenge validation",
+    "sec-container",
+    "sec_cpt",
+    "just a moment",
+    "checking your browser",
+    "verify you are a human",
+    "attention required! | cloudflare",
+    "cloudflare ray id",
+)
+
+# Per-category market-data markers proving a snapshot holds a real weekly
+# report (not a stub). Calibrated 2026-09-06: every genuine 2024-2026 Baltic
+# article carries several of these; stub captures (date+title, ~35 chars)
+# carry none.
+MARKET_MARKERS = {
+    "dry":       ("capesize", "panamax", "supramax", "handysize", "bci", "bdi", "5tc"),
+    "tanker":    ("vlcc", "suezmax", "aframax", "dirty", " tce", "/day", " ws", "ws "),
+    "gas":       ("lng", "lpg", "blng"),
+    "container": ("fbx", "teu", "feu", "blanking", "carrier", "freight"),
+    "ningbo":    ("ningbo", "freight index", "teu", "feu"),
+}
+
+# Article-text length floor for the quarantine gate. Measured 2026-09-06 over
+# 764 Baltic 2024-2026 snapshots: shortest genuine article 678 chars
+# (container), category p5 876+; stub captures are ~35 chars (date + title).
+ARTICLE_MIN_CHARS = 500
 
 for stream_name in ("stdout", "stderr"):
     stream = getattr(sys, stream_name, None)
@@ -122,12 +210,44 @@ for stream_name in ("stdout", "stderr"):
         stream.reconfigure(encoding="utf-8", errors="replace")
 
 
+def fetch_soup_static(url: str, retries: int = 1) -> "BeautifulSoup | None":
+    """Fetch an article page over plain static GET (Decision 1.2: primary path).
+
+    Uses ``static_session`` (default UA — browser UAs trigger the Radware
+    crypto-challenge). Returns None on HTTP errors, challenge pages, or
+    transport failures so the caller can fall back to Selenium / quarantine.
+    """
+    for attempt in range(retries + 1):
+        try:
+            response = static_session.get(url, timeout=30)
+            if response.status_code != 200:
+                print(f"    ⚠  static fetch [{attempt+1}/{retries+1}]: HTTP {response.status_code}")
+                time.sleep(2)
+                continue
+            lowered = response.text[:6000].lower()
+            if any(marker in lowered for marker in CHALLENGE_MARKERS):
+                print(f"    ⚠  static fetch [{attempt+1}/{retries+1}]: challenge page served")
+                time.sleep(2)
+                continue
+            soup = BeautifulSoup(response.text, "lxml")
+            if len(soup.get_text(strip=True)) > 300:
+                return soup
+            print(f"    ⚠  static fetch [{attempt+1}/{retries+1}]: near-empty page")
+            time.sleep(2)
+        except Exception as e:
+            print(f"    ⚠  static fetch [{attempt+1}/{retries+1}]: {e}")
+            time.sleep(2)
+    return None
+
+
 def fetch_soup_with_driver(driver, url: str) -> "BeautifulSoup | None":
-    """Fetch a JS-rendered page using an existing Selenium driver."""
+    """Fetch a JS-rendered page using an existing Selenium driver (fallback)."""
     for attempt in range(3):
         try:
             driver.get(url)
             time.sleep(4)  # wait for JS content to load
+            dismiss_cookie_banner(driver)  # drop the consent overlay so the
+            time.sleep(1)                  # article heading is the first h1
             soup = BeautifulSoup(driver.page_source, "lxml")
             if len(soup.get_text(strip=True)) > 300:
                 return soup
@@ -178,6 +298,108 @@ def dismiss_cookie_banner(driver):
             return
         except Exception:
             pass
+
+
+def pick_article_title(soup: BeautifulSoup, url: str) -> str:
+    """Article heading, never the cookie-consent banner (Decision 1.2).
+
+    The hydrated Baltic DOM injects "This site uses cookies" as an early
+    heading and the server page carries nav headings ("Who We Are", …), so
+    document-order first-h1-wins poisoned every snapshot title. Prefer the
+    heading inside the article container, then fall back to document order
+    (still skipping consent headings), then the URL slug.
+    """
+    roots = [locate_article_root(soup), soup]
+    for root in roots:
+        if root is None:
+            continue
+        for tag in root.find_all(["h1", "h2"]):
+            text = tag.get_text(" ", strip=True).replace("–", "-").strip()
+            if text and not any(marker in text.lower() for marker in CONSENT_MARKERS):
+                return text
+    return url.rstrip("/").split("/")[-1].replace(".html", "")
+
+
+def strip_consent_nodes(soup: BeautifulSoup) -> int:
+    """Decompose cookie-consent banner nodes from a fetched soup (in place).
+
+    Only short nodes (<300 chars) carrying consent markers are removed, plus
+    cookie accept/reject buttons — article prose is never at risk.
+    Returns the number of nodes removed.
+    """
+    removed = 0
+    for node in list(soup.find_all(["div", "section", "aside", "p", "h1", "h2", "button", "span"])):
+        text = node.get_text(" ", strip=True)
+        if not text or len(text) >= 300:
+            continue
+        lowered = text.lower()
+        if any(marker in lowered for marker in CONSENT_MARKERS):
+            node.decompose()
+            removed += 1
+        elif node.name == "button" and ("accept" in lowered or "reject" in lowered):
+            node.decompose()
+            removed += 1
+    return removed
+
+
+def locate_article_root(soup: BeautifulSoup):
+    """Find the article container using the scraper's selector cascade."""
+    for sel in ["article", ".article-content", ".news-content",
+                ".rte", ".content-body", "main", "#main",
+                "[class*='article']", "[class*='content']"]:
+        el = soup.select_one(sel)
+        if el and len(el.get_text(strip=True)) > 150:
+            return el
+    return soup.find("body") or soup
+
+
+def probe_article_text(soup: BeautifulSoup) -> str:
+    """Extractable article text after consent stripping (verification probe)."""
+    root = locate_article_root(soup)
+    return root.get_text(" ", strip=True) if root else ""
+
+
+def verify_snapshot(cat: str, soup: BeautifulSoup, article_text: str) -> tuple:
+    """Quarantine gate (Decision 1.2): True/False + reason.
+
+    A snapshot is archivable only when it is free of challenge/consent
+    signatures, clears the article-length floor, and carries category
+    market-data markers. Anything else is a stub: logged, never archived.
+    """
+    lowered_page = soup.get_text(" ", strip=True).lower()
+    if any(marker in lowered_page for marker in CHALLENGE_MARKERS):
+        return False, "challenge-page"
+    lowered_article = (article_text or "").lower()
+    if any(marker in lowered_article for marker in CONSENT_MARKERS):
+        return False, "consent-poisoned"
+    if len(article_text or "") < ARTICLE_MIN_CHARS:
+        return False, f"short:{len(article_text or '')}"
+    markers = MARKET_MARKERS.get(cat, ())
+    if markers and not any(marker in lowered_article for marker in markers):
+        return False, "no-market-markers"
+    has_time = soup.find("time") is not None
+    has_week = bool(re.search(r"week[\s\-_]*\d{1,2}", lowered_article))
+    if not (has_time or has_week):
+        return False, "no-report-identity"
+    return True, "ok"
+
+
+def extract_source_url(html_path: Path) -> str | None:
+    """Canonical live URL embedded in an archived snapshot's meta paragraph."""
+    try:
+        soup = BeautifulSoup(
+            html_path.read_text(encoding="utf-8", errors="ignore"), "lxml"
+        )
+    except OSError:
+        return None
+    meta = soup.select_one("p.meta a[href]")
+    if meta and meta.get("href") and "WeeklyRoundup" in meta["href"]:
+        return meta["href"]
+    for anchor in soup.find_all("a", href=True):
+        href = anchor["href"]
+        if "WeeklyRoundup" in href and "/news/" in href.lower():
+            return href if href.startswith("http") else urljoin(BASE_URL, href)
+    return None
 
 
 
@@ -566,6 +788,16 @@ def mirror_asset(
     if len(payload) <= min_size:
         return None
 
+    # Quarantine (Decision 1.2): never mirror bot-challenge stubs as assets.
+    # The April 2026 re-scrape archived ~1.9KB "Challenge Validation" pages
+    # (browser-UA asset fetches get challenged); the payload hash in the
+    # filename then sprawls one new stub per run. Real assets pass through.
+    if extension in (".html", ".htm"):
+        head = payload[:32768].decode("utf-8", errors="ignore").lower()
+        if any(marker in head for marker in CHALLENGE_MARKERS):
+            print(f"    ⛔ QUARANTINE asset stub (not mirrored): {absolute[-80:]}")
+            return None
+
     assets_dir.mkdir(parents=True, exist_ok=True)
     filename = deterministic_asset_filename(base_name, absolute, payload, extension)
     destination = assets_dir / filename
@@ -582,16 +814,8 @@ def extract_article_html(
     date: "datetime | None",
     html_dest: Path,
 ) -> str:
-    article = None
-    for sel in ["article", ".article-content", ".news-content",
-                ".rte", ".content-body", "main", "#main",
-                "[class*='article']", "[class*='content']"]:
-        el = soup.select_one(sel)
-        if el and len(el.get_text(strip=True)) > 150:
-            article = el
-            break
-    if article is None:
-        article = soup.find("body") or soup
+    strip_consent_nodes(soup)  # Decision 1.2: drop the consent overlay first
+    article = locate_article_root(soup)
 
     article_fragment = BeautifulSoup(str(article), "lxml")
     article_root = article_fragment.find(["article", "body", "section", "div"]) or article_fragment
@@ -673,13 +897,24 @@ def extract_article_html(
     unwrap_redundant_containers(article_root)
     remove_empty_tags(article_root)
 
+    # Decision 1.2: preserve the archive→compile contract. adapt_baltic keys
+    # on div.article-content, which the hydrated live DOM no longer carries —
+    # re-wrap when missing. Also unwrap a nested <body> (a body-fallback root
+    # would otherwise serialize its own <body> tag inside the outer one).
+    if article_root.name == "body":
+        inner_html = article_root.decode_contents()
+    else:
+        inner_html = str(article_root)
+    if "article-content" not in inner_html:
+        inner_html = f'<div class="article-content">{inner_html}</div>'
+
     date_str = date.strftime("%d %B %Y") if date else ""
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>{title}</title>
 <style>{HTML_CSS}</style></head><body>
 <h1>{title}</h1>
 <p class="meta">Date: {date_str} &nbsp;|&nbsp; <a href="{url}">{url}</a></p><hr>
-{article_root}
+{inner_html}
 </body></html>"""
 
 
@@ -687,7 +922,11 @@ def save_as_html_snapshot(html: str, dest: Path) -> bool:
     """Save as clean self-contained HTML — readable in browser, parseable by scripts."""
     out = dest.with_suffix(".html")
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(html, encoding="utf-8")
+    # Forced LF: .gitattributes normalizes reports/**/*.html to eol=lf, and
+    # source_hash reads working-copy bytes — CRLF from a Windows checkout
+    # would create false cross-platform hash mismatches (Decision 1.2).
+    with out.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(html)
     print(f"    ↓ {out.name}  ({out.stat().st_size // 1024} KB)")
     return True
 
@@ -713,22 +952,38 @@ def sanitize(s: str) -> str:
     return re.sub(r'[<>:"/\\|?*]', "_", s)
 
 
-def process_report(url: str, cat: str, dry_run: bool, overwrite: bool, driver=None) -> bool:
+def process_report(url: str, cat: str, dry_run: bool, overwrite: bool, driver=None,
+                   dest_override: "Path | None" = None) -> bool:
     year = extract_year_from_url(url) or "unknown"
     time.sleep(PAGE_DELAY)
-    if driver is None:
-        return False
-    soup = fetch_soup_with_driver(driver, url)
+    # Decision 1.2: static-first (challenge-proof, banner-free server markup),
+    # Selenium fallback for challenged/failed static fetches.
+    soup = fetch_soup_static(url)
+    if soup is None:
+        if driver is None:
+            print(f"    ✗ static fetch failed, no driver: {url.split('/')[-1]}")
+            return False
+        soup = fetch_soup_with_driver(driver, url)
     if soup is None:
         return False
 
-    h1 = soup.find(["h1", "h2"])
-    title = h1.get_text(strip=True) if h1 else url.split("/")[-1].replace(".html","")
-    title = title.replace("–", "-").strip()
-    date  = extract_date_from_page(soup)
+    # Harden + verify BEFORE any write: stubs are quarantined, never archived
+    # (even under --overwrite — good snapshots are never clobbered by stubs).
+    strip_consent_nodes(soup)
+    title = pick_article_title(soup, url)
+    date = extract_date_from_page(soup)
+    article_text = probe_article_text(soup)
+    ok, reason = verify_snapshot(cat, soup, article_text)
+    if not ok:
+        print(f"    ⛔ QUARANTINE [{reason}] (not archived): {url.split('/')[-1]}")
+        return False
 
     filename = sanitize(make_filename(cat, url, date, title))
-    dest     = OUTPUT_ROOT / cat / str(year) / filename
+    # Refetch mode rewrites the enumerated snapshot in place: the 2026 set
+    # contains near-duplicate filename pairs for the same live URL (dated +
+    # year-only forms), and recomputing dest would orphan one twin and shift
+    # doc_ids. In-place keeps every source_path/doc_id stable.
+    dest = dest_override if dest_override is not None else OUTPUT_ROOT / cat / str(year) / filename
 
     # Check if already saved under any extension and with reasonable size.
     # Overwrite mode bypasses this guard to force historical remirroring.
@@ -747,7 +1002,8 @@ def process_report(url: str, cat: str, dry_run: bool, overwrite: bool, driver=No
         ds = date.strftime("%Y-%m-%d") if date else f"{year}-??-??"
         wk = re.search(r"[Ww]eek[\s\-_]*(\d+)", title)
         week = f"W{int(wk.group(1)):02d}" if wk else ""
-        print(f"    [DRY RUN] {ds}  {week+'  ' if week else ''}{title[:50]}  → {filename}")
+        target = dest.name if dest_override is not None else filename
+        print(f"    [DRY RUN] {ds}  {week+'  ' if week else ''}{title[:50]}  → {target}")
         return True
 
     html = extract_article_html(soup, url, title, date, dest)
@@ -756,10 +1012,76 @@ def process_report(url: str, cat: str, dry_run: bool, overwrite: bool, driver=No
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+def refetch_year(year: int, categories: list, dry_run: bool,
+                 headed: bool, overwrite: bool):
+    """Deterministic re-fetch of URLs embedded in existing snapshots (v4).
+
+    No Selenium discovery: enumerates reports/baltic/<cat>/<year>/*.html,
+    extracts each snapshot's canonical live URL, and re-archives it through
+    process_report (static-first + Selenium fallback + quarantine gate).
+    Static failures are retried once with a shared Selenium driver so the
+    progressively-stronger ladder is honored without starting a browser
+    when static succeeds everywhere.
+    """
+    print(f"\n{'═'*64}")
+    print(f"  Baltic Exchange Weekly Roundup Scraper  v4  (refetch)")
+    print(f"  Categories : {', '.join(categories)}")
+    print(f"  Year       : {year}")
+    print(f"  Mode       : {'DRY RUN' if dry_run else 'DOWNLOAD'}")
+    print(f"  Overwrite  : {'ON' if overwrite else 'OFF'}")
+    print(f"{'═'*64}")
+
+    ok = fail = 0
+    for cat in categories:
+        year_dir = OUTPUT_ROOT / cat / str(year)
+        files = sorted(year_dir.glob("*.html")) if year_dir.exists() else []
+        print(f"\n  {'─'*62}")
+        print(f"  📂 {CATEGORIES[cat]['label']}  ({len(files)} snapshots)")
+        print(f"  {'─'*62}")
+        retry_queue = []
+        for path in files:
+            url = extract_source_url(path)
+            if not url:
+                print(f"\n  [?] {path.name}: no embedded source URL — skipped")
+                fail += 1
+                continue
+            print(f"\n  [{year}] {url.split('/')[-1]}  (→ {path.name})")
+            # Static-only pass first (driver=None); failures are collected
+            # for one shared-driver Selenium retry below.
+            if process_report(url, cat, dry_run, overwrite, driver=None,
+                              dest_override=path):
+                ok += 1
+            else:
+                retry_queue.append((path.name, url, path))
+            if not dry_run:
+                time.sleep(DOWNLOAD_DELAY)
+        if retry_queue and not dry_run:
+            print(f"  🔁 Retrying {len(retry_queue)} static failures with Selenium…")
+            dl_driver = get_download_driver(headed=headed)
+            try:
+                for name, url, path in retry_queue:
+                    print(f"\n  [{year}] (retry) {url.split('/')[-1]}  (→ {name})")
+                    if process_report(url, cat, dry_run, overwrite,
+                                      driver=dl_driver, dest_override=path):
+                        ok += 1
+                    else:
+                        fail += 1
+                    time.sleep(DOWNLOAD_DELAY)
+            finally:
+                if dl_driver:
+                    dl_driver.quit()
+        else:
+            fail += len(retry_queue)
+
+    print(f"\n{'═'*64}")
+    print(f"  TOTAL  ✓ {ok} saved   ✗ {fail} failed/quarantined")
+    print(f"{'═'*64}\n")
+
+
 def run(categories: list, dry_run: bool, year_filter: "int | None",
         headed: bool, debug: bool, overwrite: bool):
     print(f"\n{'═'*64}")
-    print(f"  Baltic Exchange Weekly Roundup Scraper  v3")
+    print(f"  Baltic Exchange Weekly Roundup Scraper  v4")
     print(f"  Categories : {', '.join(categories)}")
     print(f"  Mode       : {'DRY RUN' if dry_run else 'DOWNLOAD'}")
     print(f"  Browser    : {'headed' if headed else 'headless'}")
@@ -814,12 +1136,16 @@ def run(categories: list, dry_run: bool, year_filter: "int | None",
 
 
 def main():
-    p = argparse.ArgumentParser(description="Baltic Exchange Weekly Roundup scraper v3")
+    p = argparse.ArgumentParser(description="Baltic Exchange Weekly Roundup scraper v4")
     p.add_argument("--category",
                    choices=["dry","tanker","gas","container","ningbo","all"],
                    default="all")
     p.add_argument("--dry-run",  action="store_true")
     p.add_argument("--year",     type=int, default=None)
+    p.add_argument("--refetch-year", type=int, default=None,
+                   help="Re-fetch URLs embedded in existing reports/baltic/*/<year> "
+                        "snapshots (no Selenium discovery). Combine with --overwrite "
+                        "to rewrite stubs.")
     p.add_argument("--headed",   action="store_true")
     p.add_argument("--debug",    action="store_true",
                    help="Dump filter DOM + full page HTML for inspection")
@@ -828,7 +1154,11 @@ def main():
     args = p.parse_args()
 
     cats = list(CATEGORIES.keys()) if args.category == "all" else [args.category]
-    run(cats, args.dry_run, args.year, args.headed, args.debug, args.overwrite)
+    if args.refetch_year:
+        refetch_year(args.refetch_year, cats, args.dry_run,
+                     args.headed, args.overwrite)
+    else:
+        run(cats, args.dry_run, args.year, args.headed, args.debug, args.overwrite)
 
 
 if __name__ == "__main__":

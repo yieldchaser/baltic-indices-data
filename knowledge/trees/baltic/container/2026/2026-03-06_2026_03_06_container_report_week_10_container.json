@@ -26,29 +26,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 227,
   "source_path": "reports/baltic/container/2026/2026-03-06_container-report-week-10_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-03-06_2026_03_06_container_report_week_10_container__s01_main",
+      "node_id": "baltic_container_2026-03-06_2026_03_06_container_report_week_10_container__s01_container",
       "doc_id": "baltic_container_2026-03-06_2026_03_06_container_report_week_10_container",
       "parent_id": "baltic_container_2026-03-06_2026_03_06_container_report_week_10_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "06 Mar 2026\nContainer Report - Week 10",
+      "summary": "The past week has seen disruption in the Middle East Gulf area following the disruption to traffic transiting the Strait of Hormuz. Most liner services that transit the area tend to be smaller ships and this has no direct disruption to any of the FBX routes.",
       "keywords": [
-        "container",
-        "mar"
+        "china",
+        "meg",
+        "europe",
+        "asia",
+        "china/east",
+        "disruption",
+        "ending",
+        "last"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 225,
       "section_type": null,
       "children": []
     }

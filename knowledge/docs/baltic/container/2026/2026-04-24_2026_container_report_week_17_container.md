@@ -10,7 +10,10 @@ keywords:
 - apr
 - main
 market_tone: neutral
-regions: []
+regions:
+- atlantic
+- pacific
+- europe
 section_count: 1
 signals: {}
 source: baltic
@@ -36,6 +39,6 @@ Main
 24 Apr 2026
 Container Report - Week 17
 
-## Main
-24 Apr 2026
-Container Report - Week 17
+## Container
+Container freight markets showed mixed performance over the past week, with the recent rally losing momentum and conditions becoming more fragmented across trades. The FBX Index edged slightly higher overall but this masked diverging regional trends. Transatlantic and transpacific routes continued to firm, supported by tighter capacity and carrier-led pricing initiatives, while Asia-Europe rates came under pressure, reflecting weaker demand and more stable vessel supply. As a result, the broader market tone has shifted from recovery to early-stage consolidation.
+On the supply side, carriers remain active in managing pricing through GRIs and fuel-related surcharges, particularly amid ongoing volatility in bunker costs. However, demand remains uneven, limiting the effectiveness of these measures and preventing a sustained, broad-based rate increase. The result is a market where select lanes are tightening, but overall pricing power is not yet firmly re-established.

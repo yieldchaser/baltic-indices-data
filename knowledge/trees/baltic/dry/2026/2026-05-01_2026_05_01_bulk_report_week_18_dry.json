@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 878,
   "source_path": "reports/baltic/dry/2026/2026-05-01_bulk-report-week-18_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__s01_main",
+      "node_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry",
       "parent_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "01 May 2026\nBulk report - Week 18",
+      "summary": "The market began the week lacking clear momentum, with sentiment broadly flat and activity unevenly distributed across the basins. The Pacific provided the main source of liquidity, supported by consistent miner presence and a steady flow of coal and tender cargoes.",
       "keywords": [
-        "may"
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal",
+        "activity",
+        "fixtures"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 252,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week saw a clear divergence between Atlantic and Pacific Panamax markets. In the Atlantic, sentiment remained subdued as a growing tonnage list, especially in the North Continent, combined with limited transatlantic grain and mineral demand continued to pressure rates.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "coal",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 228,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A rather subdued week overall for the sector with widespread holidays in many places at the end, players took advantage and cleared their desks early. The Atlantic was described as positional, the recent demand from the US Gulf eased and there was a slight build-up of prompt tonnage and rates eased.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "fixed",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 189,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry",
+      "parent_id": "baltic_dry_2026-05-01_2026_05_01_bulk_report_week_18_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market maintained a cautiously firm tone through the week, although underlying fundamentals remained fragile and highly dependent on regional dynamics. Conditions were uneven, with the Continent and Mediterranean continuing to struggle amid limited fresh enquiry and softening rates, while the US Gulf and South Atlantic showed midweek support on improved cargo flow before sentiment in the South Atlantic weakened toward the end due to increasing spot tonnage.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "mediterranean",
+        "south"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
       "section_type": null,
       "children": []
     }

@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 211,
   "source_path": "reports/baltic/container/2026/2026-05-15_container-report-week-20_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-05-15_2026_05_15_container_report_week_20_container__s01_main",
+      "node_id": "baltic_container_2026-05-15_2026_05_15_container_report_week_20_container__s01_container",
       "doc_id": "baltic_container_2026-05-15_2026_05_15_container_report_week_20_container",
       "parent_id": "baltic_container_2026-05-15_2026_05_15_container_report_week_20_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "15 May 2026\nContainer Report - Week 20",
+      "summary": "Container freight markets were mixed over the past week, with continued divergence across the main east-west trades and rates broadly rangebound overall. On the transpacific, FBX01 (China/East Asia - US West Coast) remained steady week-on-week at $2,814, extending gains seen since early April and sitting $241 above start-month levels.",
       "keywords": [
         "container",
-        "may"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "coast",
+        "east"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 209,
       "section_type": null,
       "children": []
     }

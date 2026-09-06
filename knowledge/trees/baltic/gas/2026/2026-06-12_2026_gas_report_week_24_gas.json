@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 501,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-24_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-06-12_2026_gas_report_week_24_gas__s01_main",
+      "node_id": "baltic_gas_2026-06-12_2026_gas_report_week_24_gas__s01_lng",
       "doc_id": "baltic_gas_2026-06-12_2026_gas_report_week_24_gas",
       "parent_id": "baltic_gas_2026-06-12_2026_gas_report_week_24_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "12 Jun 2026\nGas report - Week 24",
+      "summary": "Following Posidonia, the LNG market saw a relatively subdued week overall, with rates largely trading sideways amid limited cargo visibility. While enquiry remained thin, the tonnage list continued to hold tight, offering some underlying support and potential upside should activity pick up.",
       "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "jun"
+        "day.",
+        "saw"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 284,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-06-12_2026_gas_report_week_24_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-06-12_2026_gas_report_week_24_gas",
+      "parent_id": "baltic_gas_2026-06-12_2026_gas_report_week_24_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market softened this week, with rates coming under pressure across the Atlantic as fixing activity remained relatively subdued and fewer fresh cargoes emerged. Despite the weaker sentiment, vessel availability remains tight, suggesting there is still potential for upside should enquiry levels improve.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "activity",
+        "day.",
+        "route",
+        "tce",
+        "availability"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 211,
       "section_type": null,
       "children": []
     }

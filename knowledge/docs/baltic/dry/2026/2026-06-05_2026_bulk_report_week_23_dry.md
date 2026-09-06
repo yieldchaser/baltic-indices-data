@@ -7,7 +7,12 @@ commodities:
 date: '2026-06-05'
 doc_id: baltic_dry_2026-06-05_2026_bulk_report_week_23_dry
 document_type: weekly_roundup
-key_entities: []
+key_entities:
+- China
+- Brazil
+- Australia
+- Atlantic basin
+- US Gulf
 keywords:
 - jun
 - main
@@ -16,7 +21,14 @@ regions:
 - atlantic
 - pacific
 - china
-section_count: 1
+- brazil
+- australia
+- west_africa
+- europe
+- us_gulf
+- singapore
+- japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2026/2026_bulk-report-week-23_dry.html
@@ -43,6 +55,14 @@ Main
 05 Jun 2026
 Bulk report - Week 23
 
-## Main
-05 Jun 2026
-Bulk report - Week 23
+## Capesize
+The market closed the week on a softer footing, with the BCI 182 5TC easing from just under $50,000 at the start of the week to $44,374, reflecting a clear loss of momentum as the week progressed. Trading conditions were characterised by persistently thin liquidity, disrupted participation due to Posidonia, and generally subdued miner engagement, which together left the market vulnerable to downside pressure. In the Pacific, sentiment weakened steadily as the week unfolded, with a gradual erosion in C5 levels driven by limited cargo emergence and a lack of consistent support from major miners. Fixtures progressively printed lower, from mid-to-high $15 early in the week to a tick below $14 by the close. The South Brazil and West Africa to China market followed a similar, albeit more gradual, weakening trend, with index dates on C3 drifting lower and spreads widening before settling into the low-to-mid $36s range on later stems. The North Atlantic initially showed relative resilience, briefly supported by short-duration TA activity, but this strength faded as the week progressed and sentiment softened in line with the broader market. Fronthaul activity remained notably quiet throughout.
+
+## Panamax-Kamsarmax
+The week opened on a subdued note, influenced by regional holidays and Posidonia, with limited activity prompting many participants to reassess positions. Despite an early P5TC uptick, sentiment quickly softened as the week progressed. In the Atlantic a growing tonnage list, particularly in the North Continent, combined with relatively limited mineral and grain cargoes, placed downward pressure on rates. Owners gradually revised expectations lower, especially for prompt positions, while fronthaul activity remained muted. Pacific trade provided some initial support, driven by steady Indonesian and Australian exports, though sentiment became mixed midweek as bid levels weakened. While owners resisted significant rate declines, this resulted in a widening bid-offer gap and limited fixtures. As the week progressed, broader negative momentum set in across both basins, with softer East Coast South America demand and continued Pacific easing. Overall, declining indices reflected persistent oversupply and subdued enquiry, leaving the market on a cautious footing heading into the following week.
+
+## Ultramax/Supramax
+This week's Supramax/Ultramax market developed gradually after a subdued start, with Posidonia events in Athens and a holiday in Singapore limiting early momentum. Overall sentiment improved modestly as the week progressed, particularly in the Atlantic, where the US Gulf remained the key source of support. Brokers continued to report firmer rate ideas from the Gulf and steady underlying activity in the South Atlantic, although much of the fixing remained undisclosed. The Continent-Mediterranean market stayed broadly balanced. In Asia, conditions were initially mixed, with stronger demand in the north offset by pressure in the south due to prompt tonnage, but sentiment improved later in the week as fresh enquiry returned. Notable fixtures included coal and grain business in both basins, alongside limited short-period interest. By week's end, the 11TC average had edged up from $19,847 to $20,067, reflecting a firmer but still cautious overall market tone.
+
+## Handysize
+This week, the Handysize market remained broadly subdued, though signs of gradual improvement were evident beneath the surface. Activity across the Atlantic basin was generally limited, as Posidonia and other industry events kept many participants away from their desks, leaving the Continent and Mediterranean largely positional while the South Atlantic remained under pressure from ample tonnage and muted fresh demand. A 36,000-dwt vessel was fixed for a trip from Upriver to Venezuela at around $20,850. The US Gulf, however, maintained a slightly firmer tone, supported by tightening supply and renewed enquiry, with a 35,000-dwt vessel heard fixed for a trip from the US East Coast to ARAG with coal at $20,000. In Asia, sentiment remained comparatively more supportive throughout the week, underpinned by steady demand and tightening tonnage in parts of the region, with rates gradually trending upward. A 43,000-dwt vessel open in Chiba on 3/6 June was fixed via North Australia to China-Japan at $19,000.

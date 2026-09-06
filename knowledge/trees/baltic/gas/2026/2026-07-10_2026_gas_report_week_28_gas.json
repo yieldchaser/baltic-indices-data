@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 470,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-28_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-07-10_2026_gas_report_week_28_gas__s01_main",
+      "node_id": "baltic_gas_2026-07-10_2026_gas_report_week_28_gas__s01_lng",
       "doc_id": "baltic_gas_2026-07-10_2026_gas_report_week_28_gas",
       "parent_id": "baltic_gas_2026-07-10_2026_gas_report_week_28_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "10 Jul 2026\nGas report - Week 28",
+      "summary": "The LNG market strengthened this week, with an influx of cargoes and a tightening position list providing support across most routes. Increased enquiry helped improve sentiment, particularly in the Atlantic basin.",
       "keywords": [
-        "gas",
-        "jul"
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 264,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-07-10_2026_gas_report_week_28_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-07-10_2026_gas_report_week_28_gas",
+      "parent_id": "baltic_gas_2026-07-10_2026_gas_report_week_28_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market strengthened this week as fixing activity increased, and the position list began to tighten. While arbitrage economics remain a key factor for sentiment, the improvement in enquiry helped support rates across the major VLGC routes.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "route",
+        "day.",
+        "increased",
+        "tce",
+        "activity",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 200,
       "section_type": null,
       "children": []
     }

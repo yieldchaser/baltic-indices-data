@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 223,
   "source_path": "reports/baltic/container/2026/2026_container-report-week-21_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-05-22_2026_container_report_week_21_container__s01_main",
+      "node_id": "baltic_container_2026-05-22_2026_container_report_week_21_container__s01_container",
       "doc_id": "baltic_container_2026-05-22_2026_container_report_week_21_container",
       "parent_id": "baltic_container_2026-05-22_2026_container_report_week_21_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "22 May 2026\nContainer Report - Week 21",
+      "summary": "Global container freight rates rallied this week on the major trade lanes excluding Far East, all were stronger over the past week. Whilst other worldwide trade lanes sat fairly range bound.",
       "keywords": [
         "container",
-        "may"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "increase",
+        "coast"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 221,
       "section_type": null,
       "children": []
     }

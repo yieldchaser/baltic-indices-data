@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 467,
   "source_path": "reports/baltic/gas/2026/2026-08-28_gas-report-week-35_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-08-28_2026_08_28_gas_report_week_35_gas__s01_main",
+      "node_id": "baltic_gas_2026-08-28_2026_08_28_gas_report_week_35_gas__s01_lng",
       "doc_id": "baltic_gas_2026-08-28_2026_08_28_gas_report_week_35_gas",
       "parent_id": "baltic_gas_2026-08-28_2026_08_28_gas_report_week_35_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "28 Aug 2026\nGas report - Week 35",
+      "summary": "The LNG market remained under pressure this week, with Atlantic rates facing pressure as vessel availability continues to grow against limited cargo opportunities. While some developing requirements emerged, activity remained muted overall.",
       "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "aug"
+        "day."
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 260,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-08-28_2026_08_28_gas_report_week_35_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-08-28_2026_08_28_gas_report_week_35_gas",
+      "parent_id": "baltic_gas_2026-08-28_2026_08_28_gas_report_week_35_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market was quieter this week, with only a handful of fixtures reported. Limited activity resulted in softer sentiment, although freight levels remained relatively supported by a balanced tonnage list.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "day.",
+        "route",
+        "tce",
+        "activity",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 201,
       "section_type": null,
       "children": []
     }

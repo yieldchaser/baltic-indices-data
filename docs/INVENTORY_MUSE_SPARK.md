@@ -378,3 +378,62 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
 - Wiring note: `build_health_report.py` grades cadence/recency only and is
   untouched (out of scope); the validator exit code is what fails the health
   report. `coverage_report.json` / `health_summary.md` not rewritten by this task.
+
+## 19. Decision 1.2 — Baltic capture fix (2026-09-06, this branch, no commits)
+
+- Wall mechanism (measured live 2026-09-06, one URL per rung):
+  `requests` default headers → HTTP 200, 73KB full server-rendered article
+  WITH legacy `div.article-content` (dry/tanker/gas/container re-verified);
+  browser UA (`Chrome/124`) → Radware `Challenge Validation` crypto-challenge
+  (`sec_cpt` cookie, 1,893 B, no content — consent-cookie rung unreachable
+  statically since clearance requires JS); `robots.txt` allows crawling
+  (`User-agent: *`, `Crawl-delay: 1`, only named-bot disallows); sandbox
+  headless Chrome starts but does NOT solve the challenge (listing = 1,885 B
+  challenge, 0 article links) — CI Chrome passes it (April 2026 snapshots
+  prove it). Selenium ALSO hydrates a cookie-consent banner as first h1
+  (`This site uses cookies`) and re-renders the article WITHOUT the
+  `article-content` class./archived 2026 files held real text (min 678 chars)
+  but classless DOM + banner-poisoned titles; `adapt_baltic`
+  (`process_knowledge.py`, untouched) keys on `div.article-content`, fell back
+  to the header div → date+title stubs (~35 chars). Companion defect: the
+  April 2026 re-scrape mirrored ~1.9 KB challenge pages as assets (161 per
+  category dir; inert, non-primary, left in place).
+- Fix (`scripts/baltic_scraper.py` v4, +358/−28, no workflow change —
+  overwrite plumbing already exists): static-first article fetch (default UA,
+  challenge-proof, banner-free server markup) with Selenium fallback;
+  consent-node strip + article-root-first title picker + `article-content`
+  re-wrap (archive→compile contract); quarantine gate (challenge/consent
+  absent, article ≥ 500 chars, per-category market markers, time/week
+  identity) before ANY write — stubs logged, never archived, even under
+  `--overwrite`; same challenge rejection for mirrored assets; `--refetch-year`
+  mode (in-place per-file rewrite, stable paths/doc_ids); snapshot writes
+  forced LF (`reports/**/*.html text eol=lf` — Windows CRLF would false-drift
+  `source_hash`). CI re-fetch: `python scripts/baltic_scraper.py
+  --refetch-year 2026 --overwrite` (or workflow_dispatch source=baltic,
+  start/end 2026/2026, overwrite=true).
+- Refetch (measured): 325/325 Baltic 2026 snapshots rewritten in place
+  (173 unique live URLs — dated + year-only filename twins share URLs;
+  brief "258 docs" = the five `baltic_*_2026.jsonl` shard rows; manifest holds
+  325 rows and ALL 325 were stubs). 324 live static fetches verified
+  (length + consent-free + market markers); 1 article quarantined (ningbo
+  `...-240426.html` → live HTTP 404, site republished as `...-2404261.html`;
+  old file preserved, then offline-repaired through the fixed archiver path —
+  content genuine, 1,957 chars). ~800 asset-stub fetches quarantined, zero new
+  asset files. `git status`: 325 × `M reports/baltic/*/2026/*.html`, zero
+  added/deleted.
+- Recompile (`python scripts/process_knowledge.py --source baltic --no-llm`,
+  pipeline's own path, no rebuild): processed=325 skipped=1746 errors=0;
+  ledger 8,850 rows stable (325 updated in place via `source_hash` change,
+  `compiler_version` stays 2 — no bump needed); all 325 chunk shards migrated
+  to `baltic_*_2026.jsonl`; 32 ningbo docs renamed to dated outputs by the
+  pipeline's stale-path cleanup (date newly discovered from `<time
+  datetime>`); tree nodes 2→2–5, chunks/doc 1→1–5. Out-of-scope side writes
+  reverted (`data/manifests/tanker_curve_state.json`,
+  `docs/alibra_data/integration_rejections.log` — Alibra re-emission noise).
+- After-state: `--source baltic` validator PASS (hash mismatches 0, gate
+  failures 0/5); tails med dry 1164 / tanker 1177 / container 967 / gas 952 /
+  ningbo 216 (were 32–46), stub 0/50 except ningbo 25/50 (real footnote
+  sections, gate passes); full validator: exactly 1 failure left —
+  poten/tankers boilerplate (next task, untouched); lint warnings 16→4
+  (12 `topic_freshness` cleared by restored Baltic evidence). Poten not
+  started here.

@@ -14,7 +14,7 @@ keywords:
 market_tone: neutral
 regions:
 - china
-section_count: 1
+section_count: 2
 signals: {}
 source: baltic
 source_path: reports/baltic/ningbo/2026/2026-04-24_ningbo-containerised-freight-index-24042_ningbo.html
@@ -42,5 +42,11 @@ Main
 Ningbo Containerised Freight Index
 
 ## Main
-24 Apr 2026
-Ningbo Containerised Freight Index
+Date: 24 April 2026 | http://www.balticexchange.com/en/data-services/WeeklyRoundup/ningbo/news/2026/ningbo-containerised-freight-index-240426.html
+Weekly composite index covering 20ft, 40ft and Hi Cube box rates by
+The weekly Ningbo Containerised Freight Index is compiled by the Ningbo Shipping Exchange and promoted by the Baltic Exchange. The index is reported every Friday (except Chinese holidays) at 1600 (Beijing).
+The Ningbo Containerised Freight Index is based on transactional data submitted by:
+
+## Surcharges included in the total ocean freight reported:
+Surcharges not included in the total ocean freight reported:
+NCFI_overview

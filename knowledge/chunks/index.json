@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06T17:50:49Z",
+ "generated_at": "2026-09-06T20:29:21Z",
  "compiler_version": 2,
  "count": 81,
  "files": [
@@ -8,70 +8,70 @@
    "path": "knowledge/chunks/baltic_container.jsonl",
    "stem": "baltic_container",
    "year": null,
-   "bytes": 67605
+   "bytes": 59403
   },
   {
    "file": "baltic_container_2026.jsonl",
    "path": "knowledge/chunks/baltic_container_2026.jsonl",
    "stem": "baltic_container_2026",
    "year": 2026,
-   "bytes": 36867
+   "bytes": 132827
   },
   {
    "file": "baltic_dry.jsonl",
    "path": "knowledge/chunks/baltic_dry.jsonl",
    "stem": "baltic_dry",
    "year": null,
-   "bytes": 3757575
+   "bytes": 3752453
   },
   {
    "file": "baltic_dry_2026.jsonl",
    "path": "knowledge/chunks/baltic_dry_2026.jsonl",
    "stem": "baltic_dry_2026",
    "year": 2026,
-   "bytes": 34902
+   "bytes": 565071
   },
   {
    "file": "baltic_gas.jsonl",
    "path": "knowledge/chunks/baltic_gas.jsonl",
    "stem": "baltic_gas",
    "year": null,
-   "bytes": 522810
+   "bytes": 515816
   },
   {
    "file": "baltic_gas_2026.jsonl",
    "path": "knowledge/chunks/baltic_gas_2026.jsonl",
    "stem": "baltic_gas_2026",
    "year": 2026,
-   "bytes": 33691
+   "bytes": 243708
   },
   {
    "file": "baltic_ningbo.jsonl",
    "path": "knowledge/chunks/baltic_ningbo.jsonl",
    "stem": "baltic_ningbo",
    "year": null,
-   "bytes": 1009265
+   "bytes": 999741
   },
   {
    "file": "baltic_ningbo_2026.jsonl",
    "path": "knowledge/chunks/baltic_ningbo_2026.jsonl",
    "stem": "baltic_ningbo_2026",
    "year": 2026,
-   "bytes": 42489
+   "bytes": 183846
   },
   {
    "file": "baltic_tanker.jsonl",
    "path": "knowledge/chunks/baltic_tanker.jsonl",
    "stem": "baltic_tanker",
    "year": null,
-   "bytes": 3413837
+   "bytes": 3408623
   },
   {
    "file": "baltic_tanker_2026.jsonl",
    "path": "knowledge/chunks/baltic_tanker_2026.jsonl",
    "stem": "baltic_tanker_2026",
    "year": 2026,
-   "bytes": 35885
+   "bytes": 569764
   },
   {
    "file": "books.jsonl",

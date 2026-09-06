@@ -5,7 +5,10 @@ commodities:
 date: '2026-03-27'
 doc_id: baltic_gas_2026-03-27_2026_gas_report_week_13_gas
 document_type: weekly_roundup
-key_entities: []
+key_entities:
+- Australia
+- Middle East
+- US Gulf
 keywords:
 - gas
 - main
@@ -14,7 +17,11 @@ market_tone: neutral
 regions:
 - atlantic
 - pacific
-section_count: 1
+- australia
+- europe
+- us_gulf
+- japan
+section_count: 2
 signals: {}
 source: baltic
 source_path: reports/baltic/gas/2026/2026_gas-report-week-13_gas.html
@@ -40,6 +47,14 @@ Main
 27 Mar 2026
 Gas report - Week 13
 
-## Main
-27 Mar 2026
-Gas report - Week 13
+## LNG
+The LNG spot market continued to cool this week as the short-term spike in sentiment driven by tensions in the Middle East began to weaken. As the week progressed, a growing tonnage list and easing urgency from charterers pushed rates lower across both basins.
+On the BLNG1 Australia-Japan route, 174k cbm vessels declined $29,900 week-on-week to settle at $104,900/day, reflecting the broader softening in the Pacific market.
+The BLNG2 US Gulf-Continent route corrected sharply, with earnings dropping $86,600 to $95,000/day. Similarly, the BLNG3 US Gulf-Japan route fell $92,600 to $108,000/day, as the Atlantic market retraced following the earlier rally.
+In the time charter market, long term period rates moved higher despite the cooling in spot. The six-month rate rose $22,100 to $111,300/day, while the one-year term increased $4,766 to $84,933/day. Further out the curve, the three-year period climbed $6,000 to $84,000/day, reflecting continued longer-term confidence despite the near-term correction in spot earnings.
+
+## LPG
+Disruptions in the Middle East have effectively halted AG trading, with the de facto closure of the Strait of Hormuz creating significant uncertainty across the market. In response, owners have hardened rate expectations, particularly in the USG where fixing activity has accelerated.
+On the BLPG1 Ras Tanura-Chiba route, rates were assessed at $117.75, with TCE earnings at $92,028/day.
+The BLPG2 Houston-Flushing route firmed slightly over the week, rising $1.25 to $93.00, with TCE earnings increasing $5,248 to $87,512/day.
+Similarly, the BLPG3 Houston-Chiba route edged down $0.33 to $168.83, while TCE returns increased $8,556 to $75,334/day.
