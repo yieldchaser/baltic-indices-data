@@ -13,6 +13,54 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-06 17:02 UTC — `agent/muse-spark` @ `da3be8b45` — **PASS WITH CHANGES**
+
+**Reviewed:** 1 commit, +23,590 lines — `data/derived/asset_dispositions.jsonl` (22,106 per-asset records), the `calibration/p1/` fixture set, a vendored `verify_table.py`, and the Sample C reselection.
+
+**Closes M2 and M3.** The Pass 1 / Pass 2 scripts and all three output artifacts now live at `calibration/p1/` in the branch instead of an OS temp directory, and `verify_table.py` is vendored rather than reached by absolute path into the sibling worktree. Both are reproducible by a third party now.
+
+**Closes N1.** This is the real per-asset instrumentation, not a replay: 22,106 records, exactly the ledger's `discovered`, each carrying `doc_id`, `source`, `date`, `href`, `asset_kind`, `disposition`, `reason`, `local_mirror_rel`, and `node_id`.
+
+**Handles M1 honestly.** The invalid Sample C rows are struck through and retained rather than deleted, with the reason stated in place — "the `node_id` itself is proof of ingestion; the old local-resolution code selected ingested assets by construction." Self-correction left visible in the record is the right call.
+
+### D1 (must fix) — there is no `failed` disposition, and the 91 failures are misfiled
+
+The record total reconciles to 22,106, but the split does not reconcile to the ledger:
+
+| | ledger | dispositions | delta |
+|---|---|---|---|
+| ingested | 13,591 | **13,681** | +90 |
+| skipped | 8,424 | **8,425** | +1 |
+| failed | 91 | **absent** | −91 |
+
+90 + 1 = 91 exactly. Every failed asset has been absorbed into `ingested` or `skipped`, and `failed` exists nowhere in the file.
+
+This is not cosmetic. The branch's own doc already spots the symptom — "13,584 with matching tree node, 97 extract-failed with null node" — and still leaves `disposition: "ingested"` on those records. **Any consumer filtering `disposition == "ingested"` therefore receives 90 assets that were never extracted and have no tree node.** Those 90 are the most interesting assets in the corpus: the 79 `PDFSyntaxError: No /Root object` cases resolved to a real local file and then failed extraction, which makes them the one pocket of on-disk material genuinely missing from the graph. Filing them under `ingested` hides exactly the set worth recovering.
+
+Add `failed` as a fourth disposition with the exception class as its `reason`. A disposition of `ingested` should additionally require a non-null `node_id` — 97 records currently fail that invariant.
+
+### D2 — 97 null-node "ingested" against 91 ledger failures: 6 unaccounted
+
+The branch reports 97 null-node ingested records; the ledger counts 91 failures. Six records claim ingestion, carry no tree node, and are not explained by a logged failure. Small, but it is the kind of gap that means the reconstruction and the pipeline disagree somewhere. Identify the six.
+
+### D3 — the branch's two artifacts disagree with each other by one
+
+`skip_cause_matrix.json` totals 8,424 skips (8,341 + 48 + 35). `asset_dispositions.jsonl` has 8,425 skipped, the extra being a `reason: null` record for `/s/congestions.png` — a ledger-failed asset. Regenerate the matrix from the dispositions file so one is derived from the other rather than computed twice.
+
+### D4 — the reselected Sample C is valid but substantively empty
+
+Worth stating plainly, because it completes the P0 reversal rather than qualifying it. The reselection finds that the **only** true-skipped images present on disk are the 35 `duplicate_path` records — and by definition a duplicate's twin is already ingested, already carries a tree node, and is already in the graph. Every other skipped asset has `local_mirror_rel = null` by construction.
+
+**So there are effectively zero recoverable images in the skipped set.** Not few — none. The five reselected samples are five duplicate images whose content is already present. The branch's own instrumentation now confirms the reversal from the other direction.
+
+Sample C should therefore be re-pointed at the ingested set and the 91 failures, which is where unextracted and mis-extracted image content actually lives. The two-stage protocol and the BLOCKED verdict on vision keys stand unchanged and need no rework — only the target does.
+
+### Note
+
+Vision remains correctly BLOCKED pending an API key plus written egress approval. Given the P0 reversal and D4, the batch that key would unblock should be sized against the ingested set, not the skipped one — see the P0 REVERSAL entry below.
+
+---
+
 ## 2026-09-06 16:36 UTC — **P0 REVERSAL: the skipped queue is not a chart-extraction opportunity**
 
 `agent/muse-spark` @ `1abab8179` delivered the X1 instrumentation. Its result overturns the P0 designation this reviewer made in `REVIEW_BASELINE.md` §4. **The reviewer's call was wrong, and this supersedes it.**
