@@ -317,3 +317,25 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
 - New evidence (no scope commitment): ingested-image profile + 3 OCR
   suspects in `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md`; reprocessing scope
   awaits user call; vision BLOCKED (no API-key names in env).
+
+## 16. Reviewer PASS-WITH-CHANGES close-out D1–D4 (2026-09-06, this branch, no commits)
+
+- D1: `asset_dispositions.jsonl` gains `failed` as a fourth disposition
+  (`reason` = errors.jsonl exception class for the parent doc, else
+  `unknown_extraction_failure` with `reason_unknown=true`; the no-exception
+  resolve-miss branch uses `unresolvable_relative_ref`). `ingested` now
+  requires non-null `node_id` — gate-enforced, 0 violations.
+- D2: the old 97 null-node vs 91 ledger-failed gap (net six) is resolved as
+  replay artifacts, fixed not documented-around: 7 CNBC-linked html text
+  assets were truly ingested but missed by the `Source asset:`-prefix-only
+  lookup (their summaries carry raw page text) — now matched via the
+  `Linked asset: {filename}` title fallback; the remaining delta is the
+  mirror-less `/s/congestions.png` resolve-miss, now `failed`. Result:
+  ingested 13,591 + skipped 8,424 + failed 91 (86 `PDFSyntaxError` + 4
+  unknown + 1 unresolvable) = 22,106, three-way gate zero mismatches.
+- D3: `skip_cause_matrix.json` is now aggregated FROM the dispositions in the
+  same run (single derivation path) plus new `failed_by_reason` /
+  ledger-failed cross-check fields; all N3 fields retained.
+- D4: P1 §C re-pointed at ingested + failures (3 suspect-OCR images S1–S3 +
+  2 `PDFSyntaxError` PDFs, files confirmed on disk); old rows struck,
+  protocol + BLOCKED stand.
