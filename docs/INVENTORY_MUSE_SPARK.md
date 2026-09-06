@@ -341,3 +341,7 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   2 `PDFSyntaxError` PDFs, files confirmed on disk); old rows struck,
   protocol + BLOCKED stand.
 - E1/E2 (D1–D4 PASS entry, evidence/spec only, no commits): 7 inferential `PDFSyntaxError` attributions flagged via new `attribution` field (`split_skip_causes.py` regen, gate green, deterministic) + single OOXML recovery candidate identified, not recovered — see `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md` §9.
+
+## 17. Pilot 20Q pointer (2026-09-06, this branch, no commits)
+
+- Read-only pilot over Q1–Q20 (§11): `docs/PILOT_20Q_MUSE_SPARK.md` — roll-up single-hop 1 / multi-hop 14 / blocked-unwired 4 / blocked-ocr-quality 1; recommends layer-over-trees with cross-node edges; retrieval-need only, no batch scope committed.
