@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 410,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-21_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-05-22_2026_gas_report_week_21_gas__s01_main",
+      "node_id": "baltic_gas_2026-05-22_2026_gas_report_week_21_gas__s01_lng",
       "doc_id": "baltic_gas_2026-05-22_2026_gas_report_week_21_gas",
       "parent_id": "baltic_gas_2026-05-22_2026_gas_report_week_21_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "22 May 2026\nGas report - Week 21",
+      "summary": "The LNG spot market firmed this week with the arb opening, especially in the Atlantic basin. On the BLNG1 Australia-Japan route, 174k cbm vessels moved up from $64,800 last Friday to $67,000 today.",
       "keywords": [
-        "gas",
-        "may"
+        "lng",
+        "australia",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 253,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-05-22_2026_gas_report_week_21_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-05-22_2026_gas_report_week_21_gas",
+      "parent_id": "baltic_gas_2026-05-22_2026_gas_report_week_21_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market remained firm this week. Continued limited vessel availability underpinning strong freight rates.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "day.",
+        "route",
+        "tce",
+        "earnings",
+        "additional"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 151,
       "section_type": null,
       "children": []
     }

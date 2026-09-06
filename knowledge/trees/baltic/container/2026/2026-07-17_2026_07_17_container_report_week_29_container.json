@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 224,
   "source_path": "reports/baltic/container/2026/2026-07-17_container-report-week-29_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-07-17_2026_07_17_container_report_week_29_container__s01_main",
+      "node_id": "baltic_container_2026-07-17_2026_07_17_container_report_week_29_container__s01_container",
       "doc_id": "baltic_container_2026-07-17_2026_07_17_container_report_week_29_container",
       "parent_id": "baltic_container_2026-07-17_2026_07_17_container_report_week_29_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "17 Jul 2026\nContainer Report - Week 29",
+      "summary": "A slow week for rates on the key liner trade routes, with no further gains being seen on any of the routes, some sideways movement and some drops as container rates appear to have peaked after a good run. The cross Pacific rotation FBX01 (China/East Asia - US West Coast) lost $598 from last Friday and is up $936 since the start of July, ending the week at $7,068.",
       "keywords": [
         "container",
-        "jul"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "start",
+        "last"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 222,
       "section_type": null,
       "children": []
     }

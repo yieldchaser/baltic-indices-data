@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 172,
   "source_path": "reports/baltic/container/2026/2026_container-report-week-17_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-04-24_2026_container_report_week_17_container__s01_main",
+      "node_id": "baltic_container_2026-04-24_2026_container_report_week_17_container__s01_container",
       "doc_id": "baltic_container_2026-04-24_2026_container_report_week_17_container",
       "parent_id": "baltic_container_2026-04-24_2026_container_report_week_17_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "24 Apr 2026\nContainer Report - Week 17",
+      "summary": "Container freight markets showed mixed performance over the past week, with the recent rally losing momentum and conditions becoming more fragmented across trades. The FBX Index edged slightly higher overall but this masked diverging regional trends.",
       "keywords": [
         "container",
-        "apr"
+        "atlantic",
+        "pacific",
+        "europe",
+        "pricing",
+        "but",
+        "demand",
+        "overall"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 170,
       "section_type": null,
       "children": []
     }

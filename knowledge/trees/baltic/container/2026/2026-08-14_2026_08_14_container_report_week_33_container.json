@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 282,
   "source_path": "reports/baltic/container/2026/2026-08-14_container-report-week-33_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-08-14_2026_08_14_container_report_week_33_container__s01_main",
+      "node_id": "baltic_container_2026-08-14_2026_08_14_container_report_week_33_container__s01_container",
       "doc_id": "baltic_container_2026-08-14_2026_08_14_container_report_week_33_container",
       "parent_id": "baltic_container_2026-08-14_2026_08_14_container_report_week_33_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "14 Aug 2026\nContainer Report - Week 33",
+      "summary": "Liner freight rates remained firm over the past week with gains across most of the major east-west trades. The transpacific market once again led the advance, with FBX01 (China/East Asia - US West Coast) rising by $410 week-on-week to $7,422.",
       "keywords": [
-        "container",
-        "aug"
+        "china",
+        "pacific",
+        "europe",
+        "carriers",
+        "route",
+        "trade",
+        "was",
+        "although"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 280,
       "section_type": null,
       "children": []
     }

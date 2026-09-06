@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 1018,
   "source_path": "reports/baltic/dry/2026/2026-06-19_bulk-report-week-25_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__s01_main",
+      "node_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry",
       "parent_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "19 Jun 2026\nBulk report - Week 25",
+      "summary": "The market staged an impressive late-week recovery to finish on a significantly firmer footing, with improving sentiment driven primarily by renewed strength in the Pacific. Having come under pressure through the early part of the week, the market reversed course, with the BCI 182 5TC climbing sharply to close at $37,631, up from $36,756 at the start of the week.",
       "keywords": [
-        "jun"
+        "atlantic",
+        "pacific",
+        "sentiment",
+        "around",
+        "bids",
+        "close",
+        "finish",
+        "fixtures"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 265,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry",
+      "parent_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week saw a clear divergence between Atlantic and Pacific markets. In the Atlantic, sentiment remained positive despite fluctuating activity, with an 81,000-dwt fixing for a transatlantic round at $21,000 and another 83,000-dwt at $20,750.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "dwt",
+        "fixing",
+        "north",
+        "transatlantic"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 250,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry",
+      "parent_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Index climbed on a daily basis this week driven by the strengthening Atlantic market, whilst the Asian market remained fairly static. North America was very active especially on early positions as Charterers looked to cover prior to the upcoming holidays with 63,000-dwts fixing at around $32,000 for trips to the Far East and similar vessels fixed into the Mediterranean at around $33,000.The Continent saw pockets of activity with a 63,000-dwt fixed for scrap at $25,750 to the East Mediterranean whilst the East Mediterranean market itself saw consistent strong demand throughout the week including very strong fronthaul fixtures of $24,500/$25,000 delivery East Mediterranean for trips via EC South America to the Far East.",
+      "keywords": [
+        "atlantic",
+        "west_africa",
+        "europe",
+        "east",
+        "mediterranean",
+        "delivery",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry",
+      "parent_id": "baltic_dry_2026-06-19_2026_06_19_bulk_report_week_25_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "Overall, the Handy market trended firmer over the week, supported by continued gains in the South Atlantic and US Gulf, while the Continent and Mediterranean remained steady and Asia stayed broadly balanced. In the Continent and Mediterranean, activity remained relatively muted, with charterers keeping bids close to last-done levels; a 37,000-dwt vessel was reported fixed from the Baltic to the West Mediterranean at $13,500.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "coal",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 249,
       "section_type": null,
       "children": []
     }

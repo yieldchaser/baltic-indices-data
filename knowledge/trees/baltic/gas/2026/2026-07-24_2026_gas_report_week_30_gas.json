@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 417,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-30_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-07-24_2026_gas_report_week_30_gas__s01_main",
+      "node_id": "baltic_gas_2026-07-24_2026_gas_report_week_30_gas__s01_lng",
       "doc_id": "baltic_gas_2026-07-24_2026_gas_report_week_30_gas",
       "parent_id": "baltic_gas_2026-07-24_2026_gas_report_week_30_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "24 Jul 2026\nGas report - Week 30",
+      "summary": "The LNG market remained quiet this week, with limited cargo liquidity and a broadly balanced freight outlook. With few new requirements entering the market, rates softened slightly across all three routes.",
       "keywords": [
+        "lng",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "jul"
+        "day."
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-07-24_2026_gas_report_week_30_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-07-24_2026_gas_report_week_30_gas",
+      "parent_id": "baltic_gas_2026-07-24_2026_gas_report_week_30_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market surged higher this week, supported by a widening arbitrage which encouraged additional cargo activity and improved sentiment across the VLGC sector. On the BLPG1 Ras Tanura-Chiba route, rates settled at $238.50, with TCE earnings closing at $231,790/day.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "route",
+        "day.",
+        "tce",
+        "earnings",
+        "improved",
+        "increased"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 171,
       "section_type": null,
       "children": []
     }

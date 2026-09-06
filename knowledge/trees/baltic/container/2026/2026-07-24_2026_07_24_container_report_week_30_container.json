@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 234,
   "source_path": "reports/baltic/container/2026/2026-07-24_container-report-week-30_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-07-24_2026_07_24_container_report_week_30_container__s01_main",
+      "node_id": "baltic_container_2026-07-24_2026_07_24_container_report_week_30_container__s01_container",
       "doc_id": "baltic_container_2026-07-24_2026_07_24_container_report_week_30_container",
       "parent_id": "baltic_container_2026-07-24_2026_07_24_container_report_week_30_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "24 Jul 2026\nContainer Report - Week 30",
+      "summary": "A mixed week in the container liner market, with some trades remaining relatively flat and some greater rate loss on others. With the United States announcing new tariffs on imports on 23 July, we will have to see if there is any knock-on effect to rates in the coming weeks.",
       "keywords": [
         "container",
-        "jul"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "down",
+        "start"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 232,
       "section_type": null,
       "children": []
     }

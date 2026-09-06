@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 259,
   "source_path": "reports/baltic/container/2026/2026_container-report-week-31_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-07-31_2026_container_report_week_31_container__s01_main",
+      "node_id": "baltic_container_2026-07-31_2026_container_report_week_31_container__s01_container",
       "doc_id": "baltic_container_2026-07-31_2026_container_report_week_31_container",
       "parent_id": "baltic_container_2026-07-31_2026_container_report_week_31_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "31 Jul 2026\nContainer Report - Week 31",
+      "summary": "Global container freight markets softened slightly during the week, with the benchmark FBX Index falling 33 points (0.9%) from 3,653 to 3,620. Market sentiment remained mixed as weakness in Europe-bound trades outweighed generally stable conditions across the Transpacific market.",
       "keywords": [
         "container",
-        "jul"
+        "china",
+        "pacific",
+        "europe",
+        "points",
+        "coast",
+        "demand",
+        "china-us"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 257,
       "section_type": null,
       "children": []
     }

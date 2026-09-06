@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 191,
   "source_path": "reports/baltic/container/2026/2026-05-08_container-report-week-19_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-05-08_2026_05_08_container_report_week_19_container__s01_main",
+      "node_id": "baltic_container_2026-05-08_2026_05_08_container_report_week_19_container__s01_container",
       "doc_id": "baltic_container_2026-05-08_2026_05_08_container_report_week_19_container",
       "parent_id": "baltic_container_2026-05-08_2026_05_08_container_report_week_19_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "08 May 2026\nContainer Report - Week 19",
+      "summary": "Container freight markets were mixed but broadly stable over the past week, with a slight firming trend overall and continued divergence across major trades. Transpacific routes remained the main source of strength, with rates generally moving higher on Asia-US lanes supported by carrier pricing discipline and the introduction of fuel‑related and peak season surcharges, while Asia-Europe conditions were comparatively softer, with rates largely flat to slightly weaker amid subdued demand and ongoing difficulty in sustaining higher pricing.",
       "keywords": [
         "container",
-        "may"
+        "pacific",
+        "europe",
+        "demand",
+        "asia-europe",
+        "broadly",
+        "higher",
+        "ongoing"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 189,
       "section_type": null,
       "children": []
     }

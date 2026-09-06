@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 421,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-32_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-08-07_2026_gas_report_week_32_gas__s01_main",
+      "node_id": "baltic_gas_2026-08-07_2026_gas_report_week_32_gas__s01_lng",
       "doc_id": "baltic_gas_2026-08-07_2026_gas_report_week_32_gas",
       "parent_id": "baltic_gas_2026-08-07_2026_gas_report_week_32_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "07 Aug 2026\nGas report - Week 32",
+      "summary": "The LNG market softened this week, with shrinking cargo enquiry and a growing tonnage list putting pressure on freight rates. On the BLNG1 Australia-Japan route, rates eased by $800 week-on-week to settle at $73,500/day.",
       "keywords": [
+        "lng",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "aug"
+        "day."
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-08-07_2026_gas_report_week_32_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-08-07_2026_gas_report_week_32_gas",
+      "parent_id": "baltic_gas_2026-08-07_2026_gas_report_week_32_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market was relatively slow this week, with muted activity in the West as a weakening arbitrage limited cargo demand and reduced fixing opportunities. As a result, freight rates softened across the Atlantic routes.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "route",
+        "tce",
+        "activity",
+        "cargo",
+        "day."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 184,
       "section_type": null,
       "children": []
     }

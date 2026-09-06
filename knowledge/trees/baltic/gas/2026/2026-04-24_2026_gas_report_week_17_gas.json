@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 403,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-17_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-04-24_2026_gas_report_week_17_gas__s01_main",
+      "node_id": "baltic_gas_2026-04-24_2026_gas_report_week_17_gas__s01_lng",
       "doc_id": "baltic_gas_2026-04-24_2026_gas_report_week_17_gas",
       "parent_id": "baltic_gas_2026-04-24_2026_gas_report_week_17_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "24 Apr 2026\nGas report - Week 17",
+      "summary": "The LNG spot market saw a quiet week, with limited activity particularly at the start of the week. Overall, the market appears relatively balanced between available cargoes and open tonnage, resulting in sideways trading across most routes.",
       "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "apr"
+        "day"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 218,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-04-24_2026_gas_report_week_17_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-04-24_2026_gas_report_week_17_gas",
+      "parent_id": "baltic_gas_2026-04-24_2026_gas_report_week_17_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market was relatively subdued this week, with very limited activity reported in the US Gulf and little change in overall sentiment. Despite the quieter conditions, rates held firm with slight upward movements across the main routes.",
+      "keywords": [
+        "lpg",
+        "us_gulf",
+        "gas",
+        "route",
+        "tce",
+        "day.",
+        "despite",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 179,
       "section_type": null,
       "children": []
     }

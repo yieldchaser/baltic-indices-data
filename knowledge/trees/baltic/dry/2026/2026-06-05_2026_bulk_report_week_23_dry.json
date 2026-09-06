@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 857,
   "source_path": "reports/baltic/dry/2026/2026_bulk-report-week-23_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__s01_main",
+      "node_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry",
       "parent_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "05 Jun 2026\nBulk report - Week 23",
+      "summary": "The market closed the week on a softer footing, with the BCI 182 5TC easing from just under $50,000 at the start of the week to $44,374, reflecting a clear loss of momentum as the week progressed. Trading conditions were characterised by persistently thin liquidity, disrupted participation due to Posidonia, and generally subdued miner engagement, which together left the market vulnerable to downside pressure.",
       "keywords": [
-        "jun"
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "gradual",
+        "lower"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 237,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week opened on a subdued note, influenced by regional holidays and Posidonia, with limited activity prompting many participants to reassess positions. Despite an early P5TC uptick, sentiment quickly softened as the week progressed.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "grain",
+        "limited",
+        "activity",
+        "owners"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 193,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "This week's Supramax/Ultramax market developed gradually after a subdued start, with Posidonia events in Athens and a holiday in Singapore limiting early momentum. Overall sentiment improved modestly as the week progressed, particularly in the Atlantic, where the US Gulf remained the key source of support.",
+      "keywords": [
+        "supramax",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "coal",
+        "grain",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 191,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry",
+      "parent_id": "baltic_dry_2026-06-05_2026_bulk_report_week_23_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "This week, the Handysize market remained broadly subdued, though signs of gradual improvement were evident beneath the surface. Activity across the Atlantic basin was generally limited, as Posidonia and other industry events kept many participants away from their desks, leaving the Continent and Mediterranean largely positional while the South Atlantic remained under pressure from ample tonnage and muted fresh demand.",
+      "keywords": [
+        "handysize",
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 214,
       "section_type": null,
       "children": []
     }

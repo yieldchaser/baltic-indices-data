@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 496,
   "source_path": "reports/baltic/gas/2026/2026-08-21_gas-report-week-34_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-08-21_2026_08_21_gas_report_week_34_gas__s01_main",
+      "node_id": "baltic_gas_2026-08-21_2026_08_21_gas_report_week_34_gas__s01_lng",
       "doc_id": "baltic_gas_2026-08-21_2026_08_21_gas_report_week_34_gas",
       "parent_id": "baltic_gas_2026-08-21_2026_08_21_gas_report_week_34_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "21 Aug 2026\nGas report - Week 34",
+      "summary": "The LNG market remained under pressure this week, with rates continuing to move lower across all three routes. Atlantic freight came under particular strain as a growing list of open vessels competed for a limited number of cargoes, while East of Suez conditions remained relatively more balanced.",
       "keywords": [
-        "gas",
-        "aug"
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 272,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-08-21_2026_08_21_gas_report_week_34_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-08-21_2026_08_21_gas_report_week_34_gas",
+      "parent_id": "baltic_gas_2026-08-21_2026_08_21_gas_report_week_34_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market was active this week, with a healthy level of fixture activity reported across the VLGC sector. Despite this, freight rates softened as charterers remained unwilling to push rates above certain levels.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "route",
+        "day.",
+        "remained",
+        "tce",
+        "activity",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 218,
       "section_type": null,
       "children": []
     }

@@ -5,7 +5,11 @@ commodities:
 date: '2026-01-09'
 doc_id: baltic_gas_2026-01-09_2026_gas_report_week_2_gas
 document_type: weekly_roundup
-key_entities: []
+key_entities:
+- Australia
+- Atlantic basin
+- Middle East
+- US Gulf
 keywords:
 - gas
 - jan
@@ -14,7 +18,11 @@ market_tone: neutral
 regions:
 - atlantic
 - pacific
-section_count: 1
+- australia
+- europe
+- us_gulf
+- japan
+section_count: 2
 signals: {}
 source: baltic
 source_path: reports/baltic/gas/2026/2026_gas-report-week-2_gas.html
@@ -40,6 +48,14 @@ Main
 09 Jan 2026
 Gas report - Week 2
 
-## Main
-09 Jan 2026
-Gas report - Week 2
+## LNG
+The LNG spot market softened this week, with the familiar seasonal pattern of rate declines emerging as the market moved further into Q1 fixing. After the strong finish to last year, the tonnage list seems to be lengthening, putting downward pressure on rates, particularly in the Atlantic. On the BLNG1 Australia-Japan route, 174k cbm rates fell by $9,740 to $43,000/day, reflecting weaker prompt demand and increasing vessel availability in the Pacific.
+The BLNG2 US Gulf-Continent route saw the steepest correction of the week, with earnings dropping $23,600 to $47,500/day. A growing Atlantic position list and fewer fresh cargoes entering the market weighed on sentiment.
+Similarly, the BLNG3 US Gulf-Japan route retreated $24,500 to $49,500/day, as longer tonnage lists and softer arbitrage economics curtailed long-haul fixing activity.
+Time-charter rates showed a mixed picture. The six-month rate declined $6,050 to $30,750/day, tracking the weaker spot market. The one-year rate increased $1,150 to $42,375/day, and the three-year period also rose $1,150 to $56,000/day.
+
+## LPG
+The LPG market started the year on a firm footing, with holiday-period activity carrying through into early January and particularly strong momentum seen in the Atlantic basin.
+On the BLPG1 Ras Tanura-Chiba route, rates edged up $0.17 to $80.83/mt, with TCE earnings improving $435 to $71,048/day, supported by steady Middle East demand despite some late-week consolidation.
+The BLPG2 Houston-Flushing route saw more pronounced gains, rising $5.50 to $79.75/mt, while daily returns climbed $8,177 to $84,054/day.
+The BLPG3 Houston-Chiba route also firmed, with rates up $7.00 to $145.17/mt and TCE earnings increasing $5,865 to $74,805/day. Underpinned by increased Atlantic fixing activity.

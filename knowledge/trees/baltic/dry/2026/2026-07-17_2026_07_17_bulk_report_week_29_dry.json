@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 1136,
   "source_path": "reports/baltic/dry/2026/2026-07-17_bulk-report-week-29_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__s01_main",
+      "node_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry",
       "parent_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "17 Jul 2026\nBulk report - Week 29",
+      "summary": "The market lost momentum over the course of the week, reversing an encouraging start to finish on a notably weaker footing as sentiment deteriorated across both the Pacific and Atlantic basins. Early support came from healthy miner participation in the Pacific and improving confidence in the South Brazil and West Africa to China markets, allowing rates to extend the previous week's gains, despite higher bunker prices driven by ongoing Middle East tensions.",
       "keywords": [
-        "jul"
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "confidence",
+        "early",
+        "finish"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 290,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A rather subdued week across the board with brokers using the words flat, steady and dull in their daily reports. In the North Atlantic supply and demand were well balanced so rates were mainly unchanged with more transatlantic demand through the week than fronthaul, which tailed off as the week went on, an 82,000-dwt fixed from East Coast South America to Spain with grains at $35,000 and a few other similar vessels fixed at $25,000 from the Continent/Gibraltar for both mineral and grains round voyages.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "europe",
+        "singapore",
+        "grain",
+        "around",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 316,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It wasn't a particularly exciting week. The North American market has seen rates eroded throughout the week with both routes down over $1,000 from the highs of last week, with a 63,000-dwt reported fixed for grains delivery SW Pass to the Continent at $31,000.",
+      "keywords": [
+        "china",
+        "west_africa",
+        "europe",
+        "india",
+        "grain",
+        "dwt",
+        "fixed",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry",
+      "parent_id": "baltic_dry_2026-07-17_2026_07_17_bulk_report_week_29_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handysize market saw a broadly softer week, with sentiment remaining largely positional and limited momentum across both basins. The Continent and Mediterranean held relatively steady, with pockets of fresh demand and sentiment helping to keep rates broadly balanced.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 245,
       "section_type": null,
       "children": []
     }

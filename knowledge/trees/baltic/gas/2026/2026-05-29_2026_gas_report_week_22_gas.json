@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 474,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-22_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-05-29_2026_gas_report_week_22_gas__s01_main",
+      "node_id": "baltic_gas_2026-05-29_2026_gas_report_week_22_gas__s01_lng",
       "doc_id": "baltic_gas_2026-05-29_2026_gas_report_week_22_gas",
       "parent_id": "baltic_gas_2026-05-29_2026_gas_report_week_22_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "29 May 2026\nGas report - Week 22",
+      "summary": "The LNG spot market was relatively steady this week, with the Atlantic market holding firm while the Pacific experienced some tightening in vessel availability. Limited prompt tonnage in the East provided support to rates, although overall activity levels remained moderate across both basins.",
       "keywords": [
-        "gas",
-        "may"
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-05-29_2026_gas_report_week_22_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-05-29_2026_gas_report_week_22_gas",
+      "parent_id": "baltic_gas_2026-05-29_2026_gas_report_week_22_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market showed signs of reaching a ceiling this week, with rates coming under pressure towards the end of the period. A weakening arbitrage and the emergence of relets weighed on sentiment, while previously tight conditions began to ease, leading to a notable correction across all routes.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "day.",
+        "route",
+        "tce",
+        "correction",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 205,
       "section_type": null,
       "children": []
     }

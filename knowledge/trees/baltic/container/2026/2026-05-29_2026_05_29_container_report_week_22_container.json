@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 206,
   "source_path": "reports/baltic/container/2026/2026-05-29_container-report-week-22_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-05-29_2026_05_29_container_report_week_22_container__s01_main",
+      "node_id": "baltic_container_2026-05-29_2026_05_29_container_report_week_22_container__s01_container",
       "doc_id": "baltic_container_2026-05-29_2026_05_29_container_report_week_22_container",
       "parent_id": "baltic_container_2026-05-29_2026_05_29_container_report_week_22_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "29 May 2026\nContainer Report - Week 22",
+      "summary": "The past week saw container rates largely slow down from their recent rapid increase of rates. In the cross Pacific trade rotation, we witnessed FBX01 (China/East Asia - US West Coast) increase by $72 week-on-week ending the week at $3,225, this route is $409 above the start of the month and up even more since April.",
       "keywords": [
         "container",
-        "may"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "since",
+        "start"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 204,
       "section_type": null,
       "children": []
     }

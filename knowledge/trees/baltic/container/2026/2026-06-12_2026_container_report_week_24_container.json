@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 243,
   "source_path": "reports/baltic/container/2026/2026_container-report-week-24_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-06-12_2026_container_report_week_24_container__s01_main",
+      "node_id": "baltic_container_2026-06-12_2026_container_report_week_24_container__s01_container",
       "doc_id": "baltic_container_2026-06-12_2026_container_report_week_24_container",
       "parent_id": "baltic_container_2026-06-12_2026_container_report_week_24_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "12 Jun 2026\nContainer Report - Week 24",
+      "summary": "A much slower week for rates than the previous week, although we still saw rates continue to increase on most of the main trade lanes. In the Pacific we saw rates plateau this week FBX01 (China/East Asia - US West Coast) was up just $20 on the end of last week, ending the week at $4,836, comparing to the end of 2025 when the route ended the year at $2,134 and had been fairly range bound between $1,500 and $2,500 in Q4 2025 (Peak Season).",
       "keywords": [
-        "container",
-        "jun"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "end",
+        "coast",
+        "east"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 241,
       "section_type": null,
       "children": []
     }

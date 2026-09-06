@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 910,
   "source_path": "reports/baltic/dry/2026/2026_bulk-report-week-15_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__s01_main",
+      "node_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry",
       "parent_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "10 Apr 2026\nBulk report - Week 15",
+      "summary": "The market resumed after the Easter break with renewed momentum, supported by improved sentiment across both basins and a solid start in the Pacific. The Pacific remained the key stabilising force, underpinned by consistent miner activity.",
       "keywords": [
-        "apr"
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "crude_oil",
+        "basin",
+        "high"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 206,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "With a long weekend at both ends of the week, it was a shorter week than normal, reflecting in a rather cautious week for the sector. The North Atlantic was generally finely balanced although demand from NC South America helped keep owners' interest, but transatlantic activity remained rather subdued with a good amount of prompt tonnage availability.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "singapore",
+        "japan",
+        "coal",
+        "south",
+        "america",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 212,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Despite the short week, overall positive momentum gained pace across most areas. In the Atlantic, the US Gulf saw increased demand and rates accordingly rose.",
+      "keywords": [
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 240,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry",
+      "parent_id": "baltic_dry_2026-04-10_2026_bulk_report_week_15_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market remained mixed and broadly subdued throughout the week, with only limited day-to-day movements in rates. The Continent and Mediterranean continued to see a lack of fresh inquiry, keeping activity muted and rate levels largely unchanged.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "vessel",
+        "fixed",
+        "remained"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
       "section_type": null,
       "children": []
     }

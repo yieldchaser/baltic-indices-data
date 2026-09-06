@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 892,
   "source_path": "reports/baltic/dry/2026/2026-04-24_bulk-report-week-17_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__s01_main",
+      "node_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry",
       "parent_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "24 Apr 2026\nBulk report - Week 17",
+      "summary": "The market began the week with strong upward momentum, briefly pushing the BCI 182 5TC to the cusp of $39,000, supported primarily by strength in the Atlantic basin. Early gains were driven by a firm C3 market and a tightening ballaster list, particularly for May dates, while fronthaul activity provided a notable boost.",
       "keywords": [
-        "apr"
+        "atlantic",
+        "pacific",
+        "activity",
+        "began",
+        "fronthaul",
+        "strength",
+        "aggressive",
+        "albeit"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 198,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market saw a subdued and mixed week, with limited fixing activity early on and growing tonnage lists weighing on sentiment. In the Atlantic, initial firmness from last week's rate push gave way to softer conditions as the week progressed, driven by increasing vessel availability and weakening transatlantic grain demand.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "grain",
+        "cargo",
+        "north",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 147,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A positive week for the sector with owners firmly in the driving seat in some quarters. The Atlantic saw a healthy amount of demand from the US Gulf for transatlantic runs, with a 61,000-dwt fixing to Turkey at $33,000.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "dwt",
+        "fixing"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 255,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry",
+      "parent_id": "baltic_dry_2026-04-24_2026_04_24_bulk_report_week_17_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The week saw a consistent upward trend, with sentiment strengthening day by day, even though the number of reported fixtures remained relatively limited. In the Atlantic, the US Gulf and South America were the primary sources of strength, supporting firmer rates throughout the week due to a shortage of prompt tonnage for April.",
+      "keywords": [
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixed",
+        "remained",
+        "trip"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 274,
       "section_type": null,
       "children": []
     }
