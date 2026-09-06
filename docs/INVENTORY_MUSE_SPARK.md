@@ -1,5 +1,14 @@
 # Inventory — muse-spark
 
+## 0. Slice claim (STATUS BOARD, 2026-09-06)
+
+- muse-spark claims STATUS BOARD Decision 1 (validator content-length gate →
+  Baltic capture fix + 2026 recompile → Poten capture fix), Decision 2 re-OCR
+  pilot, Decision 3 LightRAG layer.
+- Basis: board work-split + user authorization 2026-09-06.
+- Antigravity files (harness/spine/queue) untouched.
+- Antigravity silent at 12c841745 with no validator/scraper files — no overlap.
+
 - Author: muse-spark
 - Date: 2026-09-06
 - Branch: agent/muse-spark
@@ -345,3 +354,27 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
 ## 17. Pilot 20Q pointer (2026-09-06, this branch, no commits)
 
 - Read-only pilot over Q1–Q20 (§11): `docs/PILOT_20Q_MUSE_SPARK.md` — roll-up single-hop 1 / multi-hop 14 / blocked-unwired 4 / blocked-ocr-quality 1; recommends layer-over-trees with cross-node edges; retrieval-need only, no batch scope committed.
+
+## 18. Content gate note — Decision 1 TASK 1a (2026-09-06, this branch, no commits)
+
+- Gate rule (`scripts/validate_knowledge.py`, additive only, read-only): per
+  (source, category) trailing-50 chunks by (date, chunk_id) FAILS when
+  trailing median text length < 120, or stub-rate (len < 120) >= 80%, or
+  boilerplate-marker share >= 30% ("Metadata only" / "JS-rendered" /
+  "not retrievable via static fetch"). Failures count toward validator
+  `failures` (non-zero exit), not warnings. Groups with tail < 10 skipped.
+- Calibration: Baltic 2026 tails med 32–46, stub 88–100% (258/258 chunks
+  <120 chars; pre-2026 Baltic medians dry 995 / gas 1033 / container 983 /
+  tanker 634); nearest healthy tails hellenic/dry_charter med 346 stub 50%,
+  hellenic/tanker_charter med 606 stub 48%; Poten tail boilerplate 20/50
+  (40%), zero marker hits elsewhere in corpus.
+- Before fix: `python scripts/validate_knowledge.py` → PASS, exit 0 (gate absent).
+  After: exit 1 with exactly 6 content-gate failures — baltic/container, dry,
+  gas, ningbo, tanker + poten/tankers. Scoped: `--source books` PASS (exit 0,
+  1 group, 0 failures); `--source baltic` FAIL (exit 1, 5/5).
+- Newly-flagged sources: the 5 Baltic 2026 categories + Poten boilerplate docs
+  only. 11/17 checked groups pass (incl. stubby-but-healthy hellenic charter
+  tails); 4 micro-groups (n < 10) skipped. No other flag — nothing whitelisted.
+- Wiring note: `build_health_report.py` grades cadence/recency only and is
+  untouched (out of scope); the validator exit code is what fails the health
+  report. `coverage_report.json` / `health_summary.md` not rewritten by this task.

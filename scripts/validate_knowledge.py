@@ -25,6 +25,42 @@ LINT_REPORT_PATH = KNOWLEDGE_ROOT / "manifests" / "lint_report.json"
 COVERAGE_REPORT_PATH = KNOWLEDGE_ROOT / "manifests" / "coverage_report.json"
 HEALTH_SUMMARY_PATH = KNOWLEDGE_ROOT / "reports" / "health_summary.md"
 COMPILER_VERSION = 2
+# Content gate (STATUS BOARD Decision 1 — validator content-length gate).
+#
+# Why here: build_health_report.py grades cadence/recency only (status_from_age
+# over latest dates + publishing gaps) and this validator previously checked
+# emptiness for section_index/topic_config/topic_evidence/wiki/health payloads
+# but NEVER chunk text — so stub captures passed green. This gate is the
+# enforcement point: a firing gate counts toward `failures` (non-zero exit),
+# which is what fails the health report. It does not warn.
+#
+# Calibration (measured 2026-09-06 in this worktree over knowledge/chunks/*.jsonl;
+# length = len(chunk["text"] or ""); trailing-50 per (source, category) ordered
+# by (date, chunk_id)):
+#   baltic/container tail med 38, stub(<120) 50/50 (100%)
+#   baltic/dry       tail med 33, stub 50/50 (100%)
+#   baltic/gas       tail med 32, stub 50/50 (100%)
+#   baltic/tanker    tail med 35, stub 50/50 (100%)
+#   baltic/ningbo    tail med 46, stub 44/50 (88%)
+#   (258/258 Baltic 2026 chunks are <120-char stubs; pre-2026 Baltic medians:
+#   dry 995, gas 1033, container 983, tanker 634.)
+#   Nearest non-target tails: hellenic/dry_charter med 346 stub 25/50 (50%),
+#   hellenic/tanker_charter med 606 stub 24/50 (48%); all other tails med >= 511
+#   except tiny ancient groups skipped by MIN_SAMPLES. Floor 120 sits ~3x above
+#   the worst target median (46) and ~3x below the weakest healthy median (346);
+#   stub-rate threshold 0.80 sits 30pp below the weakest target (88%) and 30pp
+#   above the stubbiest healthy tail (50%).
+# Boilerplate rule (Poten): 29/68 poten/tankers chunks carry the
+# "Metadata only - body is JS-rendered ... not retrievable via static fetch"
+# signature (trailing-50: 20/50 = 40%); zero hits anywhere else in the corpus.
+# Threshold 0.30 sits 10pp below Poten and 30pp above the rest of the corpus.
+CONTENT_GATE_WINDOW = 50
+CONTENT_GATE_MIN_SAMPLES = 10
+CONTENT_GATE_STUB_CHARS = 120
+CONTENT_GATE_MEDIAN_FLOOR = 120
+CONTENT_GATE_STUB_RATE_THRESHOLD = 0.80
+CONTENT_GATE_BOILERPLATE_MARKERS = ("Metadata only", "JS-rendered", "not retrievable via static fetch")
+CONTENT_GATE_BOILERPLATE_RATE_THRESHOLD = 0.30
 LINKED_ASSET_SOURCES = {"baltic", "breakwave_insights", "hellenic"}
 LINKED_ASSET_FIELDS = [
     "linked_assets_discovered",
@@ -503,6 +539,94 @@ def inspect_chunks(documents: list[dict], section_ids_by_doc: dict[str, set[str]
     }
 
 
+def median_of(values):
+    ordered = sorted(values)
+    count = len(ordered)
+    if not count:
+        return 0.0
+    mid = count // 2
+    if count % 2:
+        return float(ordered[mid])
+    return (ordered[mid - 1] + ordered[mid]) / 2.0
+
+
+def validate_chunk_content(selected_sources: set[str] | None):
+    """Failing gate over recent chunk TEXT per (source, category).
+
+    Groups every chunk in knowledge/chunks/*.jsonl by its embedded
+    (source, category), orders by (date, chunk_id), and asserts over the
+    trailing CONTENT_GATE_WINDOW chunks: FAILS when the trailing median text
+    length is below CONTENT_GATE_MEDIAN_FLOOR, when the stub-rate
+    (len < CONTENT_GATE_STUB_CHARS) reaches CONTENT_GATE_STUB_RATE_THRESHOLD,
+    or when the boilerplate-marker share reaches
+    CONTENT_GATE_BOILERPLATE_RATE_THRESHOLD. Read-only; no shard writes.
+    """
+    groups: dict[tuple[str, str], list[tuple[str, str, str]]] = {}
+    chunks_dir = KNOWLEDGE_ROOT / "chunks"
+    if chunks_dir.exists():
+        for path in sorted(chunks_dir.glob("*.jsonl")):
+            try:
+                handle = path.open("r", encoding="utf-8")
+            except OSError:
+                continue
+            with handle:
+                for line_number, line in enumerate(handle, start=1):
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        obj = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    source = obj.get("source")
+                    category = obj.get("category")
+                    if not source or not category:
+                        continue
+                    if selected_sources and source not in selected_sources:
+                        continue
+                    chunk_id = obj.get("chunk_id") or f"{path.name}:{line_number}"
+                    groups.setdefault((source, category), []).append(
+                        (obj.get("date") or "", chunk_id, obj.get("text") or "")
+                    )
+
+    failures = []
+    groups_checked = 0
+    for source, category in sorted(groups):
+        rows = sorted(groups[(source, category)], key=lambda row: (row[0], row[1]))
+        tail = rows[-CONTENT_GATE_WINDOW:]
+        if len(tail) < CONTENT_GATE_MIN_SAMPLES:
+            continue
+        groups_checked += 1
+        lengths = [len(text) for _, _, text in tail]
+        median_length = median_of(lengths)
+        stub_count = sum(1 for length in lengths if length < CONTENT_GATE_STUB_CHARS)
+        boilerplate_count = sum(
+            1 for _, _, text in tail if any(marker in text for marker in CONTENT_GATE_BOILERPLATE_MARKERS)
+        )
+        stub_rate = stub_count / len(tail)
+        boilerplate_rate = boilerplate_count / len(tail)
+        reasons = []
+        if median_length < CONTENT_GATE_MEDIAN_FLOOR:
+            reasons.append(f"median {median_length:.0f} < floor {CONTENT_GATE_MEDIAN_FLOOR}")
+        if stub_rate >= CONTENT_GATE_STUB_RATE_THRESHOLD:
+            reasons.append(
+                f"stub-rate {stub_count}/{len(tail)} ({stub_rate:.0%}) >= {CONTENT_GATE_STUB_RATE_THRESHOLD:.0%}"
+            )
+        if boilerplate_rate >= CONTENT_GATE_BOILERPLATE_RATE_THRESHOLD:
+            reasons.append(
+                f"boilerplate-rate {boilerplate_count}/{len(tail)} ({boilerplate_rate:.0%})"
+                f" >= {CONTENT_GATE_BOILERPLATE_RATE_THRESHOLD:.0%}"
+            )
+        if reasons:
+            failures.append(
+                f"{source}/{category}: tail={len(tail)} median={median_length:.0f}"
+                f" stub={stub_count}/{len(tail)} boilerplate={boilerplate_count}/{len(tail)}"
+                f" ({'; '.join(reasons)})"
+            )
+
+    return {"groups_checked": groups_checked, "failures": sorted(failures)}
+
+
 def validate_frontmatter(documents: list[dict], section_ids_by_doc: dict[str, set[str]]):
     bad = []
     breakwave_null_signals = 0
@@ -892,6 +1016,7 @@ def main():
         health_report_issues = validate_health_outputs(topic_config_issues["topic_ids"])
 
     linked_asset_issues = validate_linked_asset_coverage(documents)
+    content_gate = validate_chunk_content(selected_sources)
     bad_frontmatter, breakwave_null_signals, section_count_mismatches = validate_frontmatter(
         documents,
         tree_issues["section_ids_by_doc"],
@@ -978,6 +1103,8 @@ def main():
     print(f"Frontmatter errors: {len(bad_frontmatter)}")
     print(f"Frontmatter section-count mismatches: {len(section_count_mismatches)}")
     print(f"Breakwave reports with null primary signal: {breakwave_null_signals}")
+    print(f"Content-gate groups checked: {content_gate['groups_checked']}")
+    print(f"Content-gate failures: {len(content_gate['failures'])}")
 
     global_failures = 0
     if not scoped_mode:
@@ -1034,6 +1161,7 @@ def main():
         + len(bad_frontmatter)
         + len(section_count_mismatches)
         + breakwave_null_signals
+        + len(content_gate["failures"])
         + coverage_failures
         + global_failures
     )
@@ -1075,6 +1203,7 @@ def main():
         print_sample("Unresolved required local linked assets:", linked_asset_issues["unresolved_required_local"])
         print_sample("Invalid frontmatter docs:", bad_frontmatter)
         print_sample("Frontmatter section-count mismatches:", section_count_mismatches)
+        print_sample("Chunk content-gate failures:", content_gate["failures"])
         if not scoped_mode:
             print_sample("Source coverage gaps:", coverage_gaps)
         return 1
