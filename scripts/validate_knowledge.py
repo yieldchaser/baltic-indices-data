@@ -54,6 +54,16 @@ COMPILER_VERSION = 2
 # "Metadata only - body is JS-rendered ... not retrievable via static fetch"
 # signature (trailing-50: 20/50 = 40%); zero hits anywhere else in the corpus.
 # Threshold 0.30 sits 10pp below Poten and 30pp above the rest of the corpus.
+# CG1 per-source median override — STATUS BOARD CG1 (reviewer prefers option 1).
+#   Ningbo calibration: historical ningbo median 74 (n=961), p25 74, p75/max 358;
+#   recovered 2026 tail median 216. Override 40 clears historical p25 with margin
+#   while staying far below healthy output (216).
+#   Backstop note (explicit): median-override alone would NOT have caught the 2026
+#   stubs (stub tails med 33-46; note 46 > 40), so the stub-rate rule (88% observed
+#   for ningbo, threshold 0.80) is the backstop — stub-rate and boilerplate rules
+#   are UNCHANGED for ningbo; the override applies ONLY to the median rule.
+#   Standing rule: if ningbo fires, fix = per-source override or capture check,
+#   NEVER change the global floor (CONTENT_GATE_MEDIAN_FLOOR stays 120).
 CONTENT_GATE_WINDOW = 50
 CONTENT_GATE_MIN_SAMPLES = 10
 CONTENT_GATE_STUB_CHARS = 120
@@ -61,6 +71,21 @@ CONTENT_GATE_MEDIAN_FLOOR = 120
 CONTENT_GATE_STUB_RATE_THRESHOLD = 0.80
 CONTENT_GATE_BOILERPLATE_MARKERS = ("Metadata only", "JS-rendered", "not retrievable via static fetch")
 CONTENT_GATE_BOILERPLATE_RATE_THRESHOLD = 0.30
+# Per-source median-floor overrides: keyed by (source, category), applied ONLY to
+# the median rule. See CG1 note above for calibration / backstop / standing rule.
+CONTENT_GATE_MEDIAN_FLOOR_OVERRIDES = {
+    ("baltic", "ningbo"): 40,
+}
+
+
+def content_gate_median_floor_for(source: str, category: str) -> int:
+    """Return the median floor for (source, category).
+
+    Defaults to CONTENT_GATE_MEDIAN_FLOOR; per-source entries in
+    CONTENT_GATE_MEDIAN_FLOOR_OVERRIDES win. Median rule only — callers for
+    stub-rate / boilerplate must NOT use this.
+    """
+    return CONTENT_GATE_MEDIAN_FLOOR_OVERRIDES.get((source, category), CONTENT_GATE_MEDIAN_FLOOR)
 LINKED_ASSET_SOURCES = {"baltic", "breakwave_insights", "hellenic"}
 LINKED_ASSET_FIELDS = [
     "linked_assets_discovered",
@@ -606,8 +631,9 @@ def validate_chunk_content(selected_sources: set[str] | None):
         stub_rate = stub_count / len(tail)
         boilerplate_rate = boilerplate_count / len(tail)
         reasons = []
-        if median_length < CONTENT_GATE_MEDIAN_FLOOR:
-            reasons.append(f"median {median_length:.0f} < floor {CONTENT_GATE_MEDIAN_FLOOR}")
+        median_floor = content_gate_median_floor_for(source, category)
+        if median_length < median_floor:
+            reasons.append(f"median {median_length:.0f} < floor {median_floor}")
         if stub_rate >= CONTENT_GATE_STUB_RATE_THRESHOLD:
             reasons.append(
                 f"stub-rate {stub_count}/{len(tail)} ({stub_rate:.0%}) >= {CONTENT_GATE_STUB_RATE_THRESHOLD:.0%}"

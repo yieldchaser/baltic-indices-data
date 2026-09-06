@@ -513,3 +513,22 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   `--source baltic` re-run PASS (gate 0/5 — Baltic stays green). Decision
   1 (gate → Baltic fix + 2026 recompile → Poten fix) complete.
 - Re-verify 2026-09-07: validator full PASS exit 0, Content-gate failures: 0 (groups checked 17).
+
+## 21. CG1 — per-source median-floor override for baltic/ningbo (STATUS BOARD CG1, reviewer prefers option 1)
+
+- Change (`scripts/validate_knowledge.py`, no commits): new
+  `CONTENT_GATE_MEDIAN_FLOOR_OVERRIDES = {("baltic", "ningbo"): 40}` +
+  `content_gate_median_floor_for(source, category)` lookup, applied ONLY to the
+  median rule; stub-rate and boilerplate rules unchanged for ningbo. All
+  `CONTENT_GATE_*` global constants byte-identical (verified via `git diff` —
+  no global constant line changes).
+- Calibration: ningbo historical median 74 (n=961), p25 74, p75/max 358;
+  recovered 2026 median 216 — override 40 clears historical p25 with margin.
+  Median-override alone would NOT have caught the 2026 stubs (stubs median
+  33–46; 46 > 40); the stub-rate rule (88% observed for ningbo) is the
+  backstop — stated explicitly in code comments.
+- Standing rule: if ningbo fires, fix = per-source override or capture check,
+  NEVER change the global floor.
+- Verify: full validator exit 0 / 0 failures; `--source baltic` green;
+  override lookup unit-asserted via throwaway script under `Temp\opencode`
+  (no data touched).
