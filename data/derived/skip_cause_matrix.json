@@ -1,0 +1,76 @@
+{
+  "cause_line_refs": {
+    "duplicate_path": "scripts/process_knowledge.py:2356-2358",
+    "empty_href": "scripts/process_knowledge.py:2337-2340",
+    "non_content_link": "scripts/process_knowledge.py:2341-2343",
+    "per_doc_cap": "scripts/process_knowledge.py:2326-2327",
+    "unresolvable_external": "scripts/process_knowledge.py:2346-2349"
+  },
+  "ci_pinned_max_cap": 28,
+  "code_default_max_cap": 12,
+  "docs_replayed": 8416,
+  "docs_with_skips": {
+    "baltic": 0,
+    "breakwave_insights": 2475,
+    "hellenic": 692
+  },
+  "effective_max_cap": 28,
+  "head": {
+    "full": "fc6dd2b94e3963ff9b4aead2672040c62ba25476",
+    "short": "fc6dd2b94"
+  },
+  "inputs": {
+    "code": "scripts/process_knowledge.py",
+    "documents": "knowledge/manifests/documents.jsonl"
+  },
+  "ledger": {
+    "docs_with_skips": {
+      "baltic": 0,
+      "breakwave_insights": 2475,
+      "hellenic": 692
+    },
+    "skipped": {
+      "baltic": 0,
+      "breakwave_insights": 7703,
+      "hellenic": 721
+    },
+    "total_docs_with_skips": 3167,
+    "total_skipped": 8424
+  },
+  "method": "Read-only replay of collect_linked_asset_sections skip branches (scripts/process_knowledge.py:2309-2399) per documents.jsonl row: candidate order = <a href> in document order then <img src>, scoped to body>section|section|body; resolved-unique candidates counted as ingested for cap simulation (no extraction performed). baltic yields zeros by construction (adapt_baltic never calls the collector). No writes to knowledge/; no existing files modified.",
+  "mismatched_docs": [],
+  "output": "data/derived/skip_cause_matrix.json",
+  "per_source": {
+    "baltic": {
+      "duplicate_path": 0,
+      "empty_href": 0,
+      "non_content_link": 0,
+      "per_doc_cap": 0,
+      "unresolvable_external": 0
+    },
+    "breakwave_insights": {
+      "duplicate_path": 34,
+      "empty_href": 0,
+      "non_content_link": 42,
+      "per_doc_cap": 0,
+      "unresolvable_external": 7627
+    },
+    "hellenic": {
+      "duplicate_path": 1,
+      "empty_href": 0,
+      "non_content_link": 6,
+      "per_doc_cap": 0,
+      "unresolvable_external": 714
+    }
+  },
+  "reconciled_with_ledger": true,
+  "total_docs_with_skips": 3167,
+  "total_skipped": 8424,
+  "totals": {
+    "duplicate_path": 35,
+    "empty_href": 0,
+    "non_content_link": 48,
+    "per_doc_cap": 0,
+    "unresolvable_external": 8341
+  }
+}
