@@ -13,6 +13,109 @@ to `origin` to get a verdict.
 
 ---
 
+# STATUS BOARD
+
+**Last updated: 2026-09-06 19:00 UTC.** Read this before starting work. These are
+**user decisions**, confirmed directly — not reviewer recommendations, not open
+questions. They supersede any earlier framing in this log or in
+`REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
+current state.
+
+## Decision 1 — AUTHORIZED, DO FIRST: stop the active data loss
+
+**Ahead of everything else, including P1.** Two defects are losing new data every
+week while the health report shows green (finding G1 below).
+
+1. **Validator content-length check.** Add a chunk content-length assertion to
+   `scripts/validate_knowledge.py` and make it **fail** the health report, not
+   warn. Today the file checks emptiness for `section_index`, `topic_config`,
+   `topic_evidence`, wiki pages and the health report, but **never chunk text** —
+   which is why 258/258 Baltic 2026 chunks can be 33-character stubs while
+   `coverage_report.json` reports all five categories `healthy`. Do this one
+   first: without it, any future capture regression repeats silently.
+2. **Baltic capture fix** — get past the cookie-consent wall, then recompile the
+   2026 documents. The `source_hash` + `compiler_version` ledger picks them up on
+   content change; no rebuild needed.
+3. **Poten capture fix** — same defect class, JS-render miss. The latest capture
+   (2026-08-24) is navigation boilerplate only.
+
+Sequence: validator gate → Baltic → Poten. Additive only; do not overwrite
+existing shards.
+
+## Decision 2 — CONFIRMED: E3 re-point is the real P1 scope
+
+The re-OCR and structuring pass over the **13,591 ingested assets (10,894 images)**
+is P1. **Pilot on 20-50 images first** — do not launch a full batch off the pilot's
+back.
+
+The skipped-queue framing is dead and stays dead: 99.0% outbound links to
+third-party journalism, zero recoverable charts, and 89 of 91 "failed" assets are
+HTML error pages worth nothing. There is no coverage backlog. This is a **quality**
+programme, not an extraction campaign.
+
+Priority within the pilot set: the **86 OCR-attempted-but-empty** images first
+(several large — two at 2500x1667; OCR ran and returned nothing, the strongest
+chart signal), then the 228 measured mixed-separator suspects, then the 347
+skipped-small. Remember the 228 is a **lower bound** — row-splitting damage carries
+no separator signature.
+
+Vision path per W1: extend the **existing** NIM/Ollama client in
+`process_knowledge.py` (lines 28-36, 1500-1611 — rate limiting, retries and
+backoff already written) to a multimodal call, and run in CI where
+`NIM_API_KEY` / `OLLAMA_API_KEY` / `OPENROUTER_API_KEY` / `GROQ_API_KEY` already
+live. No new vendor or key needed. Extractor and verifier stay separate passes,
+with the redo loop logged per file/page/table.
+
+## Decision 3 — DECIDED: graph architecture
+
+- **Relational core: the existing SQLite spine.** Keep it.
+- **Graph layer: LightRAG**, layered over `knowledge/trees/`, joined on
+  `node_id` / `doc_id`.
+- **No replacement of existing shards.** The layer references node ids; it does
+  not re-chunk, and it never overwrites `knowledge/trees/` or
+  `knowledge/derived/`. This remains binding.
+
+GraphRAG, Neo4j and Graphiti are not selected. The 70% multi-hop / 5% single-hop
+pilot result is what justifies a graph layer at all; LightRAG's cheap incremental
+updates suit a corpus that grows weekly.
+
+## Decision 4 — separate backlog: the 5 permanently-blocked questions
+
+The five pilot questions no graph layer can fix are **their own backlog item**, not
+graph work, and must not be folded into Decision 3.
+
+- **Source wiring (4):** CFTC grains COT (Q5) · 10-Q / factsheets / SEC EDGAR
+  (Q6) · CFTC crude COT (Q17) · ETF disclosures (Q18). Related unwired sources
+  from the inventory: SGX and Capital Link manifest wiring, an SNP catalog.
+- **Extraction repair (1):** Poten JS-render (Q8) — overlaps Decision 1.3.
+
+Do not let the graph layer mask these. A graph over missing legs answers nothing.
+
+## Branch status
+
+| branch | head | last push | state |
+|---|---|---|---|
+| `agent/muse-spark` | `0200b450e` | 2026-09-06 18:35 UTC | **PASS**, all findings closed (M1-M3, N1-N3, D1-D4, V1-V4) |
+| `agent/antigravity` | `12c841745` | 2026-09-06 15:26 UTC | **SEND BACK**, B1-B9 open, **silent ~3.5h** |
+
+**`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
+is invalidated three times over — wrong enumeration method (B1, it re-walks HTML and
+emits every `<img>` rather than reconstructing the skipped set), wrong target set
+(finding X1, local-mirror resolution selects *ingested* assets), and an empty target
+(the skipped set contains no recoverable charts at all). B4 also still stands: its
+calibration corpus `reports/shipbrokers/` and `maritime_knowledge_spine.db` are not in
+the branch, so nobody can reproduce its results. If it is still working from the
+original brief, it is building against premises that have since been disproved — the
+decisions above replace them. Its `verify_extraction.py` column-shift check is sound
+and should be kept and reused.
+
+## Work split (reviewer recommendation, not a user decision)
+
+Decisions 1 and 2 touch the same file (`process_knowledge.py` / `validate_knowledge.py`).
+Split by decision, not by file, and land Decision 1 before anyone starts Decision 2.
+
+---
+
 ## 2026-09-06 18:38 UTC — **G1: Baltic 2026 is 100% empty stubs and the pipeline reports it healthy**
 
 Surfaced as a "cross-cutting quality note" in `agent/muse-spark`'s 20Q pilot. It is not a note. It is live, ongoing, silent data loss on the most important price source in the corpus, and it outranks every other item in this log.
