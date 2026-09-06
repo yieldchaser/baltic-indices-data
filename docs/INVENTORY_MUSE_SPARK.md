@@ -316,7 +316,8 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   until `process_knowledge.py` is next touched.
 - New evidence (no scope commitment): ingested-image profile + 3 OCR
   suspects in `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md`; reprocessing scope
-  awaits user call; vision BLOCKED (no API-key names in env).
+  awaits user call; vision BLOCKED (no API-key names in env). Reviewer V1–V4
+  follow-ups closed 2026-09-06 in the same file (§8 + §V3 appendix, no commits).
 
 ## 16. Reviewer PASS-WITH-CHANGES close-out D1–D4 (2026-09-06, this branch, no commits)
 
