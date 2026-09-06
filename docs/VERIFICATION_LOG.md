@@ -13,6 +13,89 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-06 18:38 UTC — **G1: Baltic 2026 is 100% empty stubs and the pipeline reports it healthy**
+
+Surfaced as a "cross-cutting quality note" in `agent/muse-spark`'s 20Q pilot. It is not a note. It is live, ongoing, silent data loss on the most important price source in the corpus, and it outranks every other item in this log.
+
+Reviewer measured it directly:
+
+| chunk file | stubs (<120 chars) / total |
+|---|---|
+| `baltic_dry_2026.jsonl` | **51 / 51** |
+| `baltic_tanker_2026.jsonl` | **51 / 51** |
+| `baltic_gas_2026.jsonl` | **51 / 51** |
+| `baltic_container_2026.jsonl` | **51 / 51** |
+| `baltic_ningbo_2026.jsonl` | **54 / 54** |
+| **total** | **258 / 258 (100.0%)** |
+
+Median chunk length is **33-38 characters**. A representative chunk in full:
+
+```
+17 Apr 2026
+Bulk report - Week 16
+```
+
+That is the entire retrievable content of a Baltic Exchange weekly report. For comparison, pre-2026 `baltic_dry.jsonl` has 2,152 chunks at a median of **995** characters. The cause is the cookie-wall capture noted in the muse-spark inventory §7d — the scraper archives the consent page, and the compiler faithfully turns it into a titled, dated, empty document.
+
+**And every one of them is reported healthy.** `coverage_report.json`:
+
+```
+baltic/dry        status=healthy  latest=2026-10-04  docs=598
+baltic/tanker     status=healthy  latest=2026-10-04  docs=596
+baltic/gas        status=healthy  latest=2026-10-04  docs=217
+baltic/container  status=healthy  latest=2026-10-04  docs=98
+baltic/ningbo     status=healthy  latest=2026-08-28  docs=510
+```
+
+The health machinery grades **cadence and recency, never content**. `validate_knowledge.py` carries emptiness checks for `section_index`, `topic_config`, `topic_evidence`, wiki pages and the health report — and **none for chunk text**. A source can go completely dark and stay green indefinitely, which is exactly what has happened for all of 2026.
+
+**Why this outranks the rest of the log.** Every other finding here concerns historical material that is already captured: OCR quality on ingested images, a skipped set that turned out to be outbound links, 89 failed downloads worth nothing. G1 is different — it is *losing new data every week*, on the Baltic Exchange, while displaying green. A re-OCR batch improves the past; this stops the bleeding in the present.
+
+**Cheapest correct fix, in order:**
+
+1. Add a content-length assertion to `validate_knowledge.py` — flag any source whose recent chunks fall below a floor, and fail the health report rather than pass it. Without this, any future capture regression repeats silently.
+2. Fix the Baltic capture to get past the consent wall, then recompile the 2026 documents. The `source_hash` + `compiler_version` ledger will pick them up on content change without a rebuild.
+
+Neither is authorized here; both are small and this reviewer would sequence them ahead of any extraction or graph work.
+
+---
+
+## 2026-09-06 18:38 UTC — `agent/muse-spark` @ `0200b450e` — **PASS**
+
+**Reviewed:** three commits — `7ee0e6f6d` (E1/E2 evidence flags, ZIP candidate, fetch-validation spec), `b4bf31cb3` (`docs/PILOT_20Q_MUSE_SPARK.md`, 367 lines), `0200b450e` (W1-W4 records) — plus two clean syncs of `main`.
+
+**Additive constraint verified.** Reviewer checked each of the three muse-spark commits for writes under `knowledge/`: **zero files in all three**. The `knowledge/` churn in the range diff comes entirely from the `main` sync commits carrying the automated daily update. The no-overwrite constraint holds.
+
+### The pilot answers the mission's own architectural test
+
+| verdict | count |
+|---|---|
+| multi-hop | **14 (70%)** |
+| blocked-unwired | 4 (20%) |
+| single-hop | 1 (5%) |
+| blocked-ocr-quality | 1 (5%) |
+
+The mission brief's rule was: "If most need multi-hop reasoning across sources, prioritize the graph layer; if not, a lighter setup may be enough." At 70% multi-hop against 5% single-hop, **the graph layer is justified on the project's own stated criterion** — and it is justified by measurement rather than assertion, which is the first time that question has been answered with evidence on either branch.
+
+The recommendation — layer-over-trees with cross-node edges, consuming existing `node_id`/`doc_id`, never replacing shards — is correct and consistent with the binding constraint. The reasoning is right too: the load-bearing join is cross-node entity plus week resolution (the Q14 DEVBULK SINEM $14.8m/$15.0m hull match, Q19's four-hop chain), which is edges over existing nodes, not a re-chunking.
+
+Two things it gets right that are easy to get wrong:
+
+- **It refuses to pick a vendor.** LightRAG vs GraphRAG vs Neo4j vs Graphiti stays a user call. Grading retrieval need is not the same as selecting a tool, and the pilot does not conflate them.
+- **It states that the 5 blocked questions are not graph-fixable.** Four need source wiring (CFTC COT, 10-Q/EDGAR, SGX/CapitalLink manifest wiring, an SNP catalog) and one needs extraction repair. "Do not let the layer mask the blocks" is the right instruction — a graph over missing legs answers nothing.
+
+### Secondary findings in the pilot, worth acting on
+
+- **Poten's latest capture (2026-08-24) is navigation boilerplate only** — a JS-render miss. The source is 30 documents and currently contributes nothing current. Same defect class as G1: captured, dated, empty.
+- **Current-week hellenic valuations arrive as unreadable image OCR** (`..._010920264ffg_3f4fc98878b7_jpg`), so this week's vessel valuations are not retrievable at all. Clean fallbacks exist via PDF-text legs and the matrix CSVs.
+- `usda_grain_freight_spreads.csv` empty; Baltic indices CSVs stale to 2026-08-10, roughly four weeks.
+
+### Standing
+
+W1-W4 are recorded accurately, including the vision reframing, and the pilot correctly cites it as "project path open, NOT a batch authorization." Every document on this branch has now held that line unprompted across six consecutive commits.
+
+---
+
 ## 2026-09-06 18:14 UTC — `agent/muse-spark` @ `26d70151c` — **PASS**
 
 **Reviewed:** V1/V2/V4 corrections and the V3 small-image appendix in `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md`.
