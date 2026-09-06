@@ -533,3 +533,4 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
 - Verify: full validator exit 0 / 0 failures; `--source baltic` green;
   override lookup unit-asserted via throwaway script under `Temp\opencode`
   (no data touched).
+- Merge 2026-09-07 note: ledger advanced on origin/main to 8849 rows (daily update); `skip_cause_matrix.json` / `asset_dispositions.jsonl` document their recorded HEAD and were NOT regenned here.
