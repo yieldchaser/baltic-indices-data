@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06T21:24:21Z",
+ "generated_at": "2026-09-06T22:12:27Z",
  "compiler_version": 2,
  "count": 81,
  "files": [
@@ -8,70 +8,70 @@
    "path": "knowledge/chunks/baltic_container.jsonl",
    "stem": "baltic_container",
    "year": null,
-   "bytes": 59403
+   "bytes": 59369
   },
   {
    "file": "baltic_container_2026.jsonl",
    "path": "knowledge/chunks/baltic_container_2026.jsonl",
    "stem": "baltic_container_2026",
    "year": 2026,
-   "bytes": 132827
+   "bytes": 132763
   },
   {
    "file": "baltic_dry.jsonl",
    "path": "knowledge/chunks/baltic_dry.jsonl",
    "stem": "baltic_dry",
    "year": null,
-   "bytes": 3752453
+   "bytes": 3750314
   },
   {
    "file": "baltic_dry_2026.jsonl",
    "path": "knowledge/chunks/baltic_dry_2026.jsonl",
    "stem": "baltic_dry_2026",
    "year": 2026,
-   "bytes": 565071
+   "bytes": 564815
   },
   {
    "file": "baltic_gas.jsonl",
    "path": "knowledge/chunks/baltic_gas.jsonl",
    "stem": "baltic_gas",
    "year": null,
-   "bytes": 515816
+   "bytes": 515510
   },
   {
    "file": "baltic_gas_2026.jsonl",
    "path": "knowledge/chunks/baltic_gas_2026.jsonl",
    "stem": "baltic_gas_2026",
    "year": 2026,
-   "bytes": 243708
+   "bytes": 243580
   },
   {
    "file": "baltic_ningbo.jsonl",
    "path": "knowledge/chunks/baltic_ningbo.jsonl",
    "stem": "baltic_ningbo",
    "year": null,
-   "bytes": 999741
+   "bytes": 998795
   },
   {
    "file": "baltic_ningbo_2026.jsonl",
    "path": "knowledge/chunks/baltic_ningbo_2026.jsonl",
    "stem": "baltic_ningbo_2026",
    "year": 2026,
-   "bytes": 183846
+   "bytes": 183708
   },
   {
    "file": "baltic_tanker.jsonl",
    "path": "knowledge/chunks/baltic_tanker.jsonl",
    "stem": "baltic_tanker",
    "year": null,
-   "bytes": 3408623
+   "bytes": 3406199
   },
   {
    "file": "baltic_tanker_2026.jsonl",
    "path": "knowledge/chunks/baltic_tanker_2026.jsonl",
    "stem": "baltic_tanker_2026",
    "year": 2026,
-   "bytes": 569764
+   "bytes": 569504
   },
   {
    "file": "books.jsonl",
@@ -554,7 +554,7 @@
    "path": "knowledge/chunks/poten_tankers_2026.jsonl",
    "stem": "poten_tankers_2026",
    "year": 2026,
-   "bytes": 114510
+   "bytes": 113490
   },
   {
    "file": "regional_freight_spreads_2026.jsonl",
