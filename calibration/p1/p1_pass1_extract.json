@@ -1,0 +1,549 @@
+{
+ "A": {
+  "n_pages": 7,
+  "page_rect": [
+   0.0,
+   0.0,
+   595.3200073242188,
+   841.9199829101562
+  ],
+  "page6_text_len": 816,
+  "pymupdf_tables_p6": [
+   {
+    "bbox": [
+     17.654999494552612,
+     145.36396484375,
+     577.6804885864258,
+     410.13665093315973
+    ],
+    "nrows_raw": 9,
+    "ncols": 10
+   }
+  ],
+  "raw_nrows": 9,
+  "raw_ncols": 10,
+  "raw_matrix": [
+   [
+    "Vessel Name",
+    "Type of Vessel",
+    "",
+    "",
+    "",
+    "Country of\nBuild",
+    "LDT",
+    "Term of\nSale",
+    "Location of\nDelivery",
+    "Sale Price/LT\n(USD)"
+   ],
+   [
+    "",
+    "",
+    "",
+    "Year of",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "Build",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Moon Spring",
+    "Tanker",
+    "1996",
+    "",
+    "",
+    "Singapore",
+    "2,354.40",
+    "Delivered",
+    "Bangladesh",
+    "568"
+   ],
+   [
+    "Global M",
+    "Tanker",
+    "1998",
+    "",
+    "",
+    "Korea",
+    "42,151.70",
+    "As-Is",
+    "Indonesia",
+    "505"
+   ],
+   [
+    "Aston I",
+    "Tanker",
+    "2001",
+    "",
+    "",
+    "Korea",
+    "8,273.00",
+    "Delivered",
+    "Pakistan",
+    "570"
+   ],
+   [
+    "Maya VN",
+    "Tanker",
+    "2003",
+    "",
+    "",
+    "Korea",
+    "44,131.00",
+    "As-Is",
+    "Indonesia",
+    "Undisclosed"
+   ],
+   [
+    "Kutch Bay",
+    "Tanker",
+    "1997",
+    "",
+    "",
+    "Japan",
+    "16,701.00",
+    "As-Is",
+    "Sri Lanka",
+    "557\n(In-Court auction)"
+   ]
+  ],
+  "pass1a": {
+   "headers": [
+    "Vessel Name",
+    "Type of Vessel",
+    "",
+    "",
+    "",
+    "Country of\nBuild",
+    "LDT",
+    "Term of\nSale",
+    "Location of\nDelivery",
+    "Sale Price/LT\n(USD)"
+   ],
+   "rows": [
+    [
+     "",
+     "",
+     "",
+     "Year of",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "Build",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Moon Spring",
+     "Tanker",
+     "1996",
+     "",
+     "",
+     "Singapore",
+     "2,354.40",
+     "Delivered",
+     "Bangladesh",
+     "568"
+    ],
+    [
+     "Global M",
+     "Tanker",
+     "1998",
+     "",
+     "",
+     "Korea",
+     "42,151.70",
+     "As-Is",
+     "Indonesia",
+     "505"
+    ],
+    [
+     "Aston I",
+     "Tanker",
+     "2001",
+     "",
+     "",
+     "Korea",
+     "8,273.00",
+     "Delivered",
+     "Pakistan",
+     "570"
+    ],
+    [
+     "Maya VN",
+     "Tanker",
+     "2003",
+     "",
+     "",
+     "Korea",
+     "44,131.00",
+     "As-Is",
+     "Indonesia",
+     "Undisclosed"
+    ],
+    [
+     "Kutch Bay",
+     "Tanker",
+     "1997",
+     "",
+     "",
+     "Japan",
+     "16,701.00",
+     "As-Is",
+     "Sri Lanka",
+     "557\n(In-Court auction)"
+    ]
+   ]
+  },
+  "pass1b": {
+   "headers": [
+    "Vessel Name",
+    "Type of Vessel",
+    "Year of Build",
+    "",
+    "",
+    "Country of Build",
+    "LDT",
+    "Term of Sale",
+    "Location of Delivery",
+    "Sale Price/LT (USD)"
+   ],
+   "rows": [
+    [
+     "Moon Spring",
+     "Tanker",
+     "1996",
+     "",
+     "",
+     "Singapore",
+     "2,354.40",
+     "Delivered",
+     "Bangladesh",
+     "568"
+    ],
+    [
+     "Global M",
+     "Tanker",
+     "1998",
+     "",
+     "",
+     "Korea",
+     "42,151.70",
+     "As-Is",
+     "Indonesia",
+     "505"
+    ],
+    [
+     "Aston I",
+     "Tanker",
+     "2001",
+     "",
+     "",
+     "Korea",
+     "8,273.00",
+     "Delivered",
+     "Pakistan",
+     "570"
+    ],
+    [
+     "Maya VN",
+     "Tanker",
+     "2003",
+     "",
+     "",
+     "Korea",
+     "44,131.00",
+     "As-Is",
+     "Indonesia",
+     "Undisclosed"
+    ],
+    [
+     "Kutch Bay",
+     "Tanker",
+     "1997",
+     "",
+     "",
+     "Japan",
+     "16,701.00",
+     "As-Is",
+     "Sri Lanka",
+     "557 (In-Court auction)"
+    ]
+   ]
+  },
+  "manual_vessel_names": [
+   "Moon Spring",
+   "Global M",
+   "Aston I",
+   "Maya VN",
+   "Kutch Bay"
+  ]
+ },
+ "B": {
+  "n_pages": 66,
+  "pymupdf_style_visual_tables_p6": [
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   },
+   {
+    "nrows": 1,
+    "ncols": 13
+   }
+  ],
+  "p6_n_text_lines": 61,
+  "block_text_lines": [
+   "BREAKWAVE DRY BULK SHIPPING ETF Unrealized",
+   "Futures Contracts Appreciation/ Notional Percentage of",
+   "March 31, 2026 (Unaudited) (Depreciation) Value Capital",
+   "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring April 30, 2026 (Underlying Face",
+   "Amount at Market Value - $6,741,540) (260 contracts) $ (835,210) $ 6,741,540 15%",
+   "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring May 31, 2026 (Underlying Face",
+   "Amount at Market Value - $7,355,140) (260 contracts) (221,610) 7,355,140 17%",
+   "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring June 30, 2026 (Underlying Face",
+   "Amount at Market Value - $7,290,140) (260 contracts) (286,610) 7,290,140 17%",
+   "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring April 30, 2026 (Underlying Face",
+   "Amount at Market Value - $5,741,565) (335 contracts) (482,620) 5,741,565 13%",
+   "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring May 31, 2026 (Underlying Face",
+   "Amount at Market Value - $6,149,595) (335 contracts) (66,070) 6,149,595 14%",
+   "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring June 30, 2026 (Underlying Face",
+   "Amount at Market Value - $6,147,250) (335 contracts) (63,540) 6,147,250 14%",
+   "Baltic Exchange Supramax T/C Average Shipping Route Expiring April 30, 2026 (Underlying Face Amount",
+   "at Market Value - $1,435,700) (100 contracts) (128,675) 1,435,700 3%",
+   "Baltic Exchange Supramax T/C Average Shipping Route Expiring May 31, 2026 (Underlying Face Amount",
+   "at Market Value - $1,516,800) (100 contracts) (47,575) 1,516,800 3%",
+   "Baltic Exchange Supramax T/C Average Shipping Route Expiring June 30, 2026 (Underlying Face Amount",
+   "at Market Value - $1,538,900) (100 contracts) (25,475) 1,538,900 4%"
+  ],
+  "joined_candidate_rows": [
+   "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring April 30, 2026 (Underlying Face Amount at Market Value - $6,741,540) (260 contracts) $ (835,210) $ 6,741,540 15%",
+   "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring May 31, 2026 (Underlying Face Amount at Market Value - $7,355,140) (260 contracts) (221,610) 7,355,140 17%",
+   "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring June 30, 2026 (Underlying Face Amount at Market Value - $7,290,140) (260 contracts) (286,610) 7,290,140 17%",
+   "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring April 30, 2026 (Underlying Face Amount at Market Value - $5,741,565) (335 contracts) (482,620) 5,741,565 13%",
+   "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring May 31, 2026 (Underlying Face Amount at Market Value - $6,149,595) (335 contracts) (66,070) 6,149,595 14%",
+   "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring June 30, 2026 (Underlying Face Amount at Market Value - $6,147,250) (335 contracts) (63,540) 6,147,250 14%",
+   "Baltic Exchange Supramax T/C Average Shipping Route Expiring April 30, 2026 (Underlying Face Amount at Market Value - $1,435,700) (100 contracts) (128,675) 1,435,700 3%",
+   "Baltic Exchange Supramax T/C Average Shipping Route Expiring May 31, 2026 (Underlying Face Amount at Market Value - $1,516,800) (100 contracts) (47,575) 1,516,800 3%",
+   "Baltic Exchange Supramax T/C Average Shipping Route Expiring June 30, 2026 (Underlying Face Amount at Market Value - $1,538,900) (100 contracts) (25,475) 1,538,900 4%"
+  ],
+  "pass1": {
+   "headers": [
+    "Futures contract (Apr-Jun 2026 expiries)",
+    "Unrealized appreciation/(depreciation) ($)",
+    "Notional value ($)",
+    "% of capital"
+   ],
+   "rows": [
+    [
+     "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring April 30, 2026 (Underlying Face Amount at Market Value - $6,741,540) (260 contracts)",
+     "(835,210)",
+     "6,741,540",
+     "15%"
+    ],
+    [
+     "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring May 31, 2026 (Underlying Face Amount at Market Value - $7,355,140) (260 contracts)",
+     "(221,610)",
+     "7,355,140",
+     "17%"
+    ],
+    [
+     "Baltic Exchange Capesize T/C Average Shipping Route Index Expiring June 30, 2026 (Underlying Face Amount at Market Value - $7,290,140) (260 contracts)",
+     "(286,610)",
+     "7,290,140",
+     "17%"
+    ],
+    [
+     "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring April 30, 2026 (Underlying Face Amount at Market Value - $5,741,565) (335 contracts)",
+     "(482,620)",
+     "5,741,565",
+     "13%"
+    ],
+    [
+     "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring May 31, 2026 (Underlying Face Amount at Market Value - $6,149,595) (335 contracts)",
+     "(66,070)",
+     "6,149,595",
+     "14%"
+    ],
+    [
+     "Baltic Exchange Panamax T/C Average Shipping Route Index Expiring June 30, 2026 (Underlying Face Amount at Market Value - $6,147,250) (335 contracts)",
+     "(63,540)",
+     "6,147,250",
+     "14%"
+    ],
+    [
+     "Baltic Exchange Supramax T/C Average Shipping Route Expiring April 30, 2026 (Underlying Face Amount at Market Value - $1,435,700) (100 contracts)",
+     "(128,675)",
+     "1,435,700",
+     "3%"
+    ],
+    [
+     "Baltic Exchange Supramax T/C Average Shipping Route Expiring May 31, 2026 (Underlying Face Amount at Market Value - $1,516,800) (100 contracts)",
+     "(47,575)",
+     "1,516,800",
+     "3%"
+    ],
+    [
+     "Baltic Exchange Supramax T/C Average Shipping Route Expiring June 30, 2026 (Underlying Face Amount at Market Value - $1,538,900) (100 contracts)",
+     "(25,475)",
+     "1,538,900",
+     "4%"
+    ]
+   ],
+   "unparsed": [],
+   "subtotal_line": "$ (2,157,385) $ 43,916,630 100%"
+  },
+  "statement": "Combined Schedules of Investments / BREAKWAVE DRY BULK SHIPPING ETF futures contracts, March 31, 2026 (Unaudited), PDF p6"
+ },
+ "C": {
+  "entries": [
+   {
+    "parent_doc_id": "breakwave_insights_insights_2020-06-06_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout",
+    "node_id": "breakwave_insights_insights_2020-06-06_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout__s02_linked_asset_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout_img_map_minas_gerais_brazil_fc088b057bd4_jpg",
+    "rel": "reports/breakwave/2020/assets/2020-06-06_the-drama-continues-as-brazilan-judge-hats-vales-iron-ore-operations-in-the-sout_img_map-minas-gerais-brazil_fc088b057bd4.jpg",
+    "exists": true,
+    "format": "GIF",
+    "width": 1600,
+    "height": 1147,
+    "mode": "P",
+    "bytes": 362069
+   },
+   {
+    "parent_doc_id": "breakwave_insights_insights_2020-06-06_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout",
+    "node_id": "breakwave_insights_insights_2020-06-06_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout__s03_linked_asset_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout_img_img_1960_8a20a313afb5_jpg",
+    "rel": "reports/breakwave/2020/assets/2020-06-06_the-drama-continues-as-brazilan-judge-hats-vales-iron-ore-operations-in-the-sout_img_img-1960_8a20a313afb5.jpg",
+    "exists": true,
+    "format": "JPEG",
+    "width": 1125,
+    "height": 1530,
+    "mode": "RGB",
+    "bytes": 210372
+   },
+   {
+    "parent_doc_id": "breakwave_insights_insights_2020-06-09_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts",
+    "node_id": "breakwave_insights_insights_2020-06-09_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts__s02_linked_asset_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts_img_image_asset_b5a625fe3458_jpeg",
+    "rel": "reports/breakwave/2020/assets/2020-06-09_chasing-the-rally-analysts-raising-their-iron-ore-forecasts_img_image-asset_b5a625fe3458.jpeg",
+    "exists": true,
+    "format": "JPEG",
+    "width": 2500,
+    "height": 1874,
+    "mode": "RGB",
+    "bytes": 1241793
+   },
+   {
+    "parent_doc_id": "breakwave_insights_insights_2020-06-09_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts",
+    "node_id": "breakwave_insights_insights_2020-06-09_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts__s03_linked_asset_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts_img_arrow_d2d09ee0d34a_jpg",
+    "rel": "reports/breakwave/2020/assets/2020-06-09_chasing-the-rally-analysts-raising-their-iron-ore-forecasts_img_arrow_d2d09ee0d34a.jpg",
+    "exists": true,
+    "format": "JPEG",
+    "width": 480,
+    "height": 339,
+    "mode": "RGB",
+    "bytes": 25841
+   },
+   {
+    "parent_doc_id": "breakwave_insights_insights_2020-06-09_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts",
+    "node_id": "breakwave_insights_insights_2020-06-09_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts__s04_linked_asset_2020_06_09_chasing_the_rally_analysts_raising_their_iron_ore_forecasts_img_image_asset_06e250205128_jpeg",
+    "rel": "reports/breakwave/2020/assets/2020-06-09_chasing-the-rally-analysts-raising-their-iron-ore-forecasts_img_image-asset_06e250205128.jpeg",
+    "exists": true,
+    "format": "JPEG",
+    "width": 746,
+    "height": 468,
+    "mode": "RGB",
+    "bytes": 29716
+   }
+  ]
+ }
+}
