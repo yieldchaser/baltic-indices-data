@@ -118,21 +118,53 @@ Aggregating `documents.jsonl`:
 | hellenic | 5,477 | 4,757 | 4,732 | **721** | 24 |
 | baltic / breakwave / broker_reports / poten / books | 0 | 0 | 0 | 0 | 0 |
 
-**8,424 linked assets were discovered and then skipped.** These are largely the
-chart-image assets the mission wants a two-stage vision pass on. They are the
-highest-value unprocessed material in the repo, and they are **already
-enumerated with parent-document attribution** — `doc_id`, date, source,
-section. A fresh filesystem inventory will rediscover the files and lose that
-linkage.
+**8,424 linked assets were discovered and then skipped**, across 3,167 parent
+documents (breakwave_insights 2,475; hellenic 692). They are the highest-value
+unprocessed lead in the repo, and the parent-document attribution —
+`doc_id`, date, source, `tree_path` — already rides with them in the ledger.
 
 **This is P0.** An inventory or plan that does not name
 `linked_assets_skipped` as a primary work queue has not read the existing
 pipeline and should be sent back before any extraction code is written.
 
-Secondary: `knowledge/manifests/errors.jsonl` holds 83 entries. Sampled
-failures are `[Errno 36] File name too long` on breakwave HTML asset URLs — a
-mechanical, fixable class, not a parsing-difficulty class. Cheap win; should
-not be conflated with hard-extraction backlog.
+### CORRECTION (2026-09-06, from `agent/muse-spark`): `skipped` is five causes, not one
+
+An earlier revision of this file asserted the 8,424 were "largely the chart-image
+assets." **That was wrong.** Reading
+`scripts/process_knowledge.py:2309-2399` (`collect_linked_asset_sections`),
+`linked_assets_skipped` is incremented on five disjoint conditions:
+
+1. `len(sections) >= MAX_LINKED_ASSETS_PER_DOC` (default **12**) — a real asset,
+   dropped only because the per-document cap was hit. **Recoverable on disk.**
+2. Empty `href` after normalization. Nothing to recover.
+3. `looks_like_non_content_link(href)` — nav/social/boilerplate. Nothing to recover.
+4. `resolve_archive_link_path` returned `None` **and** the scheme is `http(s)` —
+   an external URL never mirrored. Recoverable **only by re-fetching from the
+   live web**, which is a different, slower, failure-prone job.
+5. `linked_rel in seen_paths` — a duplicate of an asset already mirrored in the
+   same document. **Already ingested; re-queueing it is pure waste.**
+
+Note also that `linked_assets_discovered` counts every `<a href>` and `<img src>`
+in the document, navigation chrome included — which is why 2,475
+breakwave_insights documents produce 16,629 discoveries.
+
+**Consequence:** the recoverable-on-disk subset is cause (1) alone, plus cause
+(4) if a re-fetch is in scope. Causes (2), (3), (5) are noise. **8,424 is an
+upper bound on the P0 queue, not its size.** Any plan must split the 8,424 by
+cause before sizing a vision pass against it. The splitting cannot be done from
+the ledger counters alone — they are a single summed integer per document — so
+it requires either instrumenting `collect_linked_asset_sections` to emit a
+per-asset reason, or replaying that exact function's logic. **Re-walking the
+HTML and enumerating every `<img>` does not reconstruct the skipped set** and
+will queue already-ingested assets for paid vision calls.
+
+Secondary: `knowledge/manifests/errors.jsonl` holds 83 entries. An earlier
+revision generalized from one sampled line and called the class "file name too
+long"; the measured breakdown is **79x `PDFSyntaxError: No /Root object! - Is
+this really a PDF?`** (a linked asset served as HTML/error-page but named
+`.pdf`), 2x `[Errno 36] File name too long`, 2x other. The dominant class is a
+content-type mismatch, not a path-length bug. Parent documents still compile in
+every case.
 
 ---
 
