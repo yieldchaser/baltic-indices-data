@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 946,
   "source_path": "reports/baltic/dry/2026/2026_bulk-report-week-27_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__s01_main",
+      "node_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry",
       "parent_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "03 Jul 2026\nBulk report - Week 27",
+      "summary": "The market staged an impressive recovery over the course of the week, reversing Monday's subdued sentiment to finish on a firmly bullish note. What began with thin cargo volumes, cautious trading and limited miner participation gradually evolved into a broad-based rally, underpinned by improving activity and growing owner confidence across both the Pacific and Atlantic basins.",
       "keywords": [
-        "jul"
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "activity",
+        "both",
+        "cargo",
+        "firmer"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 260,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Atlantic and Pacific markets strengthened throughout the week, with the P5TC rising steadily. In the Atlantic, tight prompt tonnage in the North Continent and West Mediterranean underpinned rates, with an 82,000-dwt fixing a grains transatlantic round at $22,750 and a 78,000-dwt achieving $28,750 earlier in the week for a US East Coast to India trip.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "grain",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 263,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "The Atlantic market was largely steady to positional through the week, with activity varying by region. The North Atlantic found support from fresh T/A demand and improving USG enquiry, while tonnage remained broadly flat.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "japan",
+        "coal",
+        "demand"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry",
+      "parent_id": "baltic_dry_2026-07-03_2026_bulk_report_week_27_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market delivered a mixed but broadly steady performance over the week, with sentiment driven largely by positional dynamics across both basins. The Continent and Mediterranean remained largely balanced, with limited fresh activity and rates holding close to last-done levels.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "activity",
+        "dwt",
+        "asia",
+        "availability",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
       "section_type": null,
       "children": []
     }

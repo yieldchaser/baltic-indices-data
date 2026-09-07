@@ -4,15 +4,17 @@ date: "2026-04-17"
 source: "poten"
 category: "tankers"
 source_url: "https://www.poten.com/energy-dominance-in-action/"
-completeness: "metadata"
+author: "Erik Broekhuizen"
+completeness: "standfirst"
 tags: ["crude_tankers", "ton_miles", "rerouting", "vlcc", "suezmax", "aframax"]
 ---
 
 # Poten Tanker Opinion: “Energy Dominance” In Action
 
+**Author**: Erik Broekhuizen
 **Published Date**: 2026-04-17  
 **Source URL**: [https://www.poten.com/energy-dominance-in-action/](https://www.poten.com/energy-dominance-in-action/)  
-**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch.
+**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.
 
 ---
 

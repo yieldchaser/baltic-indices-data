@@ -9,6 +9,7 @@ scripts/__pycache__/
 # Temp / scratch
 tmp/
 scratch/
+*.db
 
 # AI tool metadata & agent instructions (Local-Only)
 .agents/

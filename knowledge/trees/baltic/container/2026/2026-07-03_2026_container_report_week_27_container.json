@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 258,
   "source_path": "reports/baltic/container/2026/2026_container-report-week-27_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-07-03_2026_container_report_week_27_container__s01_main",
+      "node_id": "baltic_container_2026-07-03_2026_container_report_week_27_container__s01_container",
       "doc_id": "baltic_container_2026-07-03_2026_container_report_week_27_container",
       "parent_id": "baltic_container_2026-07-03_2026_container_report_week_27_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "03 Jul 2026\nContainer Report - Week 27",
+      "summary": "As we enter July, we see a continuation of the trend of rate increases across the key liner trades, this is sustained by retailers frontloading their inventories this year pre-Thanksgiving and Christmas earlier than usual, with tariffs expected again later in the year and the higher bunker prices currently also having an effect. Rates across the Pacific represented by FBX01 (China/East Asia - US West Coast) were up by $898 from the end of last week and are up $2,234 since the start of June, ending the week at $7,078.",
       "keywords": [
-        "container",
-        "jul"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "increased",
+        "start",
+        "coast"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 256,
       "section_type": null,
       "children": []
     }

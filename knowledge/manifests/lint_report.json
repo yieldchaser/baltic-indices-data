@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-06T03:22:15Z",
-  "current_date": "2026-09-06",
-  "warning_count": 16,
+  "generated_at": "2026-09-07T05:19:49Z",
+  "current_date": "2026-09-07",
+  "warning_count": 4,
   "high_severity_count": 0,
   "status_counts": {
     "sources": {
@@ -26,7 +26,7 @@
         "status": "healthy",
         "cadence_days": 7,
         "latest_date": "2026-10-04",
-        "age_days": -28,
+        "age_days": -27,
         "latest_gap_days": 37,
         "max_recent_gap_days": 37,
         "dated_doc_count": 98,
@@ -45,7 +45,7 @@
         "status": "healthy",
         "cadence_days": 7,
         "latest_date": "2026-10-04",
-        "age_days": -28,
+        "age_days": -27,
         "latest_gap_days": 37,
         "max_recent_gap_days": 37,
         "dated_doc_count": 598,
@@ -64,7 +64,7 @@
         "status": "healthy",
         "cadence_days": 7,
         "latest_date": "2026-10-04",
-        "age_days": -28,
+        "age_days": -27,
         "latest_gap_days": 37,
         "max_recent_gap_days": 37,
         "dated_doc_count": 217,
@@ -83,185 +83,11 @@
         "status": "healthy",
         "cadence_days": 7,
         "latest_date": "2026-10-04",
-        "age_days": -28,
+        "age_days": -27,
         "latest_gap_days": 37,
         "max_recent_gap_days": 37,
         "dated_doc_count": 596,
         "undated_doc_count": 12
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_freshness",
-      "key": "capesize",
-      "message": "capesize trails the latest relevant corpus evidence by 30 days.",
-      "details": {
-        "topic_id": "capesize",
-        "lag_days": 30,
-        "latest_evidence_date": "2026-09-04",
-        "relevant_corpus_latest_date": "2026-10-04"
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_freshness",
-      "key": "china_steel_and_iron_ore",
-      "message": "china_steel_and_iron_ore trails the latest relevant corpus evidence by 30 days.",
-      "details": {
-        "topic_id": "china_steel_and_iron_ore",
-        "lag_days": 30,
-        "latest_evidence_date": "2026-09-04",
-        "relevant_corpus_latest_date": "2026-10-04"
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_freshness",
-      "key": "coal_and_grain_flows",
-      "message": "coal_and_grain_flows trails the latest relevant corpus evidence by 30 days.",
-      "details": {
-        "topic_id": "coal_and_grain_flows",
-        "lag_days": 30,
-        "latest_evidence_date": "2026-09-04",
-        "relevant_corpus_latest_date": "2026-10-04"
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_freshness",
-      "key": "oil_and_opec",
-      "message": "oil_and_opec trails the latest relevant corpus evidence by 30 days.",
-      "details": {
-        "topic_id": "oil_and_opec",
-        "lag_days": 30,
-        "latest_evidence_date": "2026-09-04",
-        "relevant_corpus_latest_date": "2026-10-04"
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_freshness",
-      "key": "panamax_and_supramax",
-      "message": "panamax_and_supramax trails the latest relevant corpus evidence by 30 days.",
-      "details": {
-        "topic_id": "panamax_and_supramax",
-        "lag_days": 30,
-        "latest_evidence_date": "2026-09-04",
-        "relevant_corpus_latest_date": "2026-10-04"
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_freshness",
-      "key": "vlcc_and_suezmax",
-      "message": "vlcc_and_suezmax trails the latest relevant corpus evidence by 30 days.",
-      "details": {
-        "topic_id": "vlcc_and_suezmax",
-        "lag_days": 30,
-        "latest_evidence_date": "2026-09-04",
-        "relevant_corpus_latest_date": "2026-10-04"
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "capesize",
-      "message": "capesize is missing recent evidence from expected sources: baltic.",
-      "details": {
-        "topic_id": "capesize",
-        "missing_recent_sources": [
-          "baltic"
-        ],
-        "recent_sources_present": [
-          "breakwave",
-          "breakwave_insights",
-          "hellenic"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "china_steel_and_iron_ore",
-      "message": "china_steel_and_iron_ore is missing recent evidence from expected sources: baltic.",
-      "details": {
-        "topic_id": "china_steel_and_iron_ore",
-        "missing_recent_sources": [
-          "baltic"
-        ],
-        "recent_sources_present": [
-          "breakwave",
-          "breakwave_insights",
-          "hellenic"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "coal_and_grain_flows",
-      "message": "coal_and_grain_flows is missing recent evidence from expected sources: baltic.",
-      "details": {
-        "topic_id": "coal_and_grain_flows",
-        "missing_recent_sources": [
-          "baltic"
-        ],
-        "recent_sources_present": [
-          "breakwave",
-          "breakwave_insights",
-          "hellenic"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "oil_and_opec",
-      "message": "oil_and_opec is missing recent evidence from expected sources: baltic.",
-      "details": {
-        "topic_id": "oil_and_opec",
-        "missing_recent_sources": [
-          "baltic"
-        ],
-        "recent_sources_present": [
-          "breakwave",
-          "breakwave_insights",
-          "hellenic"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "panamax_and_supramax",
-      "message": "panamax_and_supramax is missing recent evidence from expected sources: baltic.",
-      "details": {
-        "topic_id": "panamax_and_supramax",
-        "missing_recent_sources": [
-          "baltic"
-        ],
-        "recent_sources_present": [
-          "breakwave",
-          "breakwave_insights",
-          "hellenic"
-        ]
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "topic_source_gap",
-      "key": "vlcc_and_suezmax",
-      "message": "vlcc_and_suezmax is missing recent evidence from expected sources: baltic.",
-      "details": {
-        "topic_id": "vlcc_and_suezmax",
-        "missing_recent_sources": [
-          "baltic"
-        ],
-        "recent_sources_present": [
-          "breakwave",
-          "breakwave_insights",
-          "hellenic"
-        ]
       }
     }
   ]

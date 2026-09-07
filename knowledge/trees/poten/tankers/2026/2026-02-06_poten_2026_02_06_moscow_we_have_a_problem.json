@@ -1,0 +1,90 @@
+{
+  "node_id": "poten_tankers_2026-02-06_poten_2026_02_06_moscow_we_have_a_problem__root",
+  "doc_id": "poten_tankers_2026-02-06_poten_2026_02_06_moscow_we_have_a_problem",
+  "parent_id": null,
+  "title": "Poten Tanker Opinion: Moscow, We Have A Problem",
+  "section_path": [
+    "Poten Tanker Opinion: Moscow, We Have A Problem"
+  ],
+  "section_path_text": "Poten Tanker Opinion: Moscow, We Have A Problem",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Poten Tanker Opinion: Moscow, We Have A Problem\n**Published Date**: 2026-02-06\n**Source URL**: [https://www.poten.com/moscow-we-have-a-problem/](https://www.poten.com/moscow-we-have-a-problem/)\n**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch. Analysis & Commentary\nMoscow, We Have A Problem\nThe potential impact of the U.S. - India trade deal The U.S.",
+  "keywords": [
+    "china",
+    "india",
+    "crude_oil",
+    "russia",
+    "oil",
+    "problem",
+    "russian",
+    "u.s.",
+    "deal",
+    "https",
+    "impact",
+    "indian"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 334,
+  "source_path": "reports/poten/2026/poten_2026-02-06_moscow_we_have_a_problem.md",
+  "source_url": "https://www.poten.com/moscow-we-have-a-problem/",
+  "children": [
+    {
+      "node_id": "poten_tankers_2026-02-06_poten_2026_02_06_moscow_we_have_a_problem__s01_poten_tanker_opinion_moscow_we_have_a_problem",
+      "doc_id": "poten_tankers_2026-02-06_poten_2026_02_06_moscow_we_have_a_problem",
+      "parent_id": "poten_tankers_2026-02-06_poten_2026_02_06_moscow_we_have_a_problem__root",
+      "title": "Poten Tanker Opinion: Moscow, We Have A Problem",
+      "section_path": [
+        "Poten Tanker Opinion: Moscow, We Have A Problem"
+      ],
+      "section_path_text": "Poten Tanker Opinion: Moscow, We Have A Problem",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "**Author**: Daniella Green\n**Published Date**: 2026-02-06\n**Source URL**: [https://www.poten.com/moscow-we-have-a-problem/](https://www.poten.com/moscow-we-have-a-problem/)\n**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.",
+      "keywords": [
+        "author",
+        "date",
+        "https",
+        "published",
+        "summary",
+        "www.poten.com/moscow-we-have-a-problem",
+        "analysis",
+        "archived"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 93,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "poten_tankers_2026-02-06_poten_2026_02_06_moscow_we_have_a_problem__s02_analysis_commentary",
+      "doc_id": "poten_tankers_2026-02-06_poten_2026_02_06_moscow_we_have_a_problem",
+      "parent_id": "poten_tankers_2026-02-06_poten_2026_02_06_moscow_we_have_a_problem__root",
+      "title": "Analysis & Commentary",
+      "section_path": [
+        "Analysis & Commentary"
+      ],
+      "section_path_text": "Analysis & Commentary",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Moscow, We Have A Problem\nThe potential impact of the U.S. - India trade deal The U.S.",
+      "keywords": [
+        "china",
+        "india",
+        "crude_oil",
+        "russia",
+        "oil",
+        "russian",
+        "u.s.",
+        "deal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 224,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

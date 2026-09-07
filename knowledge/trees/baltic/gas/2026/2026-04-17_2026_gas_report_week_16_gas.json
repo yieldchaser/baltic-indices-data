@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 304,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-16_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-04-17_2026_gas_report_week_16_gas__s01_main",
+      "node_id": "baltic_gas_2026-04-17_2026_gas_report_week_16_gas__s01_lng",
       "doc_id": "baltic_gas_2026-04-17_2026_gas_report_week_16_gas",
       "parent_id": "baltic_gas_2026-04-17_2026_gas_report_week_16_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "17 Apr 2026\nGas report - Week 16",
+      "summary": "The LNG spot market softened this week. On the BLNG1 Australia-Japan route, 174k cbm vessels eased $1,100 week-on-week to settle at $73,300/day, reflecting the slightly softer Pacific sentiment.",
       "keywords": [
+        "lng",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "apr"
+        "day"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 172,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-04-17_2026_gas_report_week_16_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-04-17_2026_gas_report_week_16_gas",
+      "parent_id": "baltic_gas_2026-04-17_2026_gas_report_week_16_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market firmed again this week, driven by USG chartering interest and delivering higher fixing levels. On the BLPG1 Ras Tanura-Chiba route, rates were assessed at $161.00, with TCE earnings at $135,000/day.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "day.",
+        "route",
+        "tce",
+        "earnings",
+        "again",
+        "assessed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 126,
       "section_type": null,
       "children": []
     }

@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 247,
   "source_path": "reports/baltic/container/2026/2026-08-07_container-report-week-32_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-08-07_2026_08_07_container_report_week_32_container__s01_main",
+      "node_id": "baltic_container_2026-08-07_2026_08_07_container_report_week_32_container__s01_container",
       "doc_id": "baltic_container_2026-08-07_2026_08_07_container_report_week_32_container",
       "parent_id": "baltic_container_2026-08-07_2026_08_07_container_report_week_32_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "07 Aug 2026\nContainer Report - Week 32",
+      "summary": "Liner rates continue to remain at high levels, it has been a mixed week overall. The Strait of Hormuz is perhaps looking closer to reopening than it has in recent times, this happening would slowly reduce fuel costs and in effect we would likely see liner rates drop in the longer term.",
       "keywords": [
         "container",
-        "aug"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "ending",
+        "start"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 245,
       "section_type": null,
       "children": []
     }

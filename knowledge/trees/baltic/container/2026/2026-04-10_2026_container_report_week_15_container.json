@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 260,
   "source_path": "reports/baltic/container/2026/2026_container-report-week-15_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-04-10_2026_container_report_week_15_container__s01_main",
+      "node_id": "baltic_container_2026-04-10_2026_container_report_week_15_container__s01_container",
       "doc_id": "baltic_container_2026-04-10_2026_container_report_week_15_container",
       "parent_id": "baltic_container_2026-04-10_2026_container_report_week_15_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "10 Apr 2026\nContainer Report - Week 15",
+      "summary": "Since the beginning of the Middle East conflict in February, we have seen freight rates rising on all the FBX routes due to the increased bunker fuel prices that liner carriers have been forced to pass onto their customers and will no doubt be passed onto end consumers. If the current ceasefire holds and is extended, then a drop in oil and bunkers should lead to a stabilising of rates.",
       "keywords": [
-        "container",
-        "apr"
+        "china",
+        "europe",
+        "crude_oil",
+        "asia",
+        "china/east",
+        "coast",
+        "east",
+        "ending"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 258,
       "section_type": null,
       "children": []
     }

@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 957,
   "source_path": "reports/baltic/dry/2026/2026_bulk-report-week-31_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__s01_main",
+      "node_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry",
       "parent_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "31 Jul 2026\nBulk report - Week 31",
+      "summary": "After a weak start to the week, the market gradually regained momentum, finishing on a much firmer footing by Friday. Early pressure was driven by subdued cargo volumes, particularly in the Atlantic, while easing bunker prices encouraged lower offers and contributed to softer rate levels.",
       "keywords": [
-        "jul"
+        "atlantic",
+        "pacific",
+        "activity",
+        "enquiry",
+        "gradually",
+        "levels",
+        "limited",
+        "lower"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 217,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Following a sluggish start to the week, market conditions improved progressively, with the P5TC posting notable gains towards the end of the week. Stronger demand, particularly in the Atlantic, combined with tight prompt vessel availability in the North Continent and Western Mediterranean, lifted sentiment and rates, with transatlantic rounds rising from $21,000 on an 82,000-dwt vessel early in the week to $23,000 on an 81,000-dwt vessel by week's end.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "singapore",
+        "vessel",
+        "dwt",
+        "demand",
+        "north"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 235,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Although the 11TC average dropped by more than $1,000 this week, the end of the week brought some optimism that the Atlantic market may have reached a bottom. The US Gulf has been hit hard for the last two weeks, but towards the end of the week a 61,000-dwt fixed a fronthaul at $28,000 and a 63,000-dwt fixed grains to Egypt at the same level, but brokers suggested extenuating circumstances on both.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "singapore",
+        "grain",
+        "fixed",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 254,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry",
+      "parent_id": "baltic_dry_2026-07-31_2026_bulk_report_week_31_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market softened over the week, with sentiment turning increasingly negative across both the Atlantic and Pacific basins. Across the Continent and Mediterranean, activity remained largely positional, with limited fresh enquiry.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "bauxite",
+        "dwt",
+        "fixed",
+        "was"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 229,
       "section_type": null,
       "children": []
     }

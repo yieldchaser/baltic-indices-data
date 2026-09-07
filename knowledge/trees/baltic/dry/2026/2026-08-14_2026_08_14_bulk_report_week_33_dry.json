@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 1112,
   "source_path": "reports/baltic/dry/2026/2026-08-14_bulk-report-week-33_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__s01_main",
+      "node_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry",
       "parent_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "14 Aug 2026\nBulk report - Week 33",
+      "summary": "The market came under sustained pressure this week, with the BCI 5TC falling from $46,300 to $41,155 as softer Pacific conditions outweighed pockets of resilience in the Atlantic. Trading initially lacked momentum due to the Singapore public holiday and the absence of major miners, while the subsequent return of chartering activity failed to provide meaningful support.",
       "keywords": [
-        "aug"
+        "china",
+        "brazil",
+        "australia",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "singapore",
+        "around"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 231,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry",
+      "parent_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "After a relatively quiet start to the week, sentiment diverged between the Atlantic and Pacific basins. The Pacific remained supported by consistent demand, with tightening prompt tonnage and weather-related disruptions helping maintain owners' confidence.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "grain",
+        "dwt",
+        "vessel"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 297,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry",
+      "parent_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Overall, the market showed a small improvement this week. The North Americas remained steady with a 63,000-dwt fixed at the beginning of the week at $30,750 for grains to the Continent, and these levels were maintained as the Ultramaxes benefitted from the firm Panamax market recently.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "india",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 309,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry",
+      "parent_id": "baltic_dry_2026-08-14_2026_08_14_bulk_report_week_33_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market remained subdued over the week, with sentiment largely cautious across both basins, reflecting limited fresh momentum and softer fundamentals in several key regions. The Continent and Mediterranean opened the week with some underlying activity and firmer bidding on selected business, but sentiment gradually turned softer as fresh enquiry remained limited and available tonnage weighed on rate ideas.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "japan",
+        "steel",
+        "dwt",
+        "remained",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 253,
       "section_type": null,
       "children": []
     }

@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 274,
   "source_path": "reports/baltic/container/2026/2026-07-10_container-report-week-28_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-07-10_2026_07_10_container_report_week_28_container__s01_main",
+      "node_id": "baltic_container_2026-07-10_2026_07_10_container_report_week_28_container__s01_container",
       "doc_id": "baltic_container_2026-07-10_2026_07_10_container_report_week_28_container",
       "parent_id": "baltic_container_2026-07-10_2026_07_10_container_report_week_28_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "10 Jul 2026\nContainer Report - Week 28",
+      "summary": "The past week has seen a calmer period of rates on most main trade routes with the exception of the cross-Pacific trade which continues to be driven by the deadline of 24th July looming for the end of temporary US surcharges, uncertainty on what will happen after this date has been driving freight rates to recent highs, with the high oil price adding further fuel to the fire as bunker prices remain unusually high. The cross Pacific loop FBX01 (China/East Asia - US West Coast) increased a further $588 from the end of last week and is up $1,534 since the start of June, ending the week at $7,666.",
       "keywords": [
-        "container",
-        "jul"
+        "china",
+        "pacific",
+        "europe",
+        "crude_oil",
+        "asia",
+        "china/east",
+        "start",
+        "end"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 272,
       "section_type": null,
       "children": []
     }

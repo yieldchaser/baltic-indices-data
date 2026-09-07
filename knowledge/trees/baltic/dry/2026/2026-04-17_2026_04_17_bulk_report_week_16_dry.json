@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 840,
   "source_path": "reports/baltic/dry/2026/2026-04-17_bulk-report-week-16_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__s01_main",
+      "node_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry",
       "parent_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "17 Apr 2026\nBulk report - Week 16",
+      "summary": "The market delivered a firm performance over the week, building momentum from a cautious but positive start into a broad-based midweek rally, before showing signs of consolidation at elevated levels by Thursday. The BCI 182 5TC gained over $6,000 across the week, underpinned by improving sentiment and tightening fundamentals.",
       "keywords": [
-        "apr"
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "mid",
+        "activity",
+        "tightening",
+        "africa"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 179,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week saw a steady strengthening across both Atlantic and Asian Panamax markets, with sentiment gradually improving each day. In the Atlantic, tightening cargo supply early in the week gave way to firmer demand, particularly for grains and fronthaul trades, pushing rates consistently higher despite a visible tonnage list.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "grain",
+        "cargo",
+        "gradually",
+        "improving",
+        "tightening"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 147,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "A positive week for the sector with increased demand and a slight tightening of prompt tonnage availability in a few key areas. The US Gulf gained momentum as the week progressed, a 63,000-dwt was heard to have fixed in the low $30,000s for a transatlantic run.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "india",
+        "us_gulf",
+        "japan",
+        "coal"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 262,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry",
+      "parent_id": "baltic_dry_2026-04-17_2026_04_17_bulk_report_week_16_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market maintained a generally positive tone over the last week, with gradual improvements in rates and sentiment, particularly towards midweek. The Continent and Mediterranean remained the most subdued region throughout, with limited fresh inquiry and largely positional sentiment keeping rates broadly unchanged.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixing",
+        "sentiment"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 234,
       "section_type": null,
       "children": []
     }

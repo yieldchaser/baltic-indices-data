@@ -7,7 +7,12 @@ commodities:
 date: '2026-07-10'
 doc_id: baltic_dry_2026-07-10_2026_bulk_report_week_28_dry
 document_type: weekly_roundup
-key_entities: []
+key_entities:
+- China
+- Brazil
+- Australia
+- Atlantic basin
+- US Gulf
 keywords:
 - jul
 - main
@@ -16,7 +21,15 @@ regions:
 - atlantic
 - pacific
 - china
-section_count: 1
+- brazil
+- australia
+- west_africa
+- europe
+- india
+- us_gulf
+- singapore
+- japan
+section_count: 4
 signals: {}
 source: baltic
 source_path: reports/baltic/dry/2026/2026_bulk-report-week-28_dry.html
@@ -43,6 +56,14 @@ Main
 10 Jul 2026
 Bulk report - Week 28
 
-## Main
-10 Jul 2026
-Bulk report - Week 28
+## Capesize
+The market enjoyed another constructive week, extending the recovery that gathered pace at the end of the previous week despite a brief period of midweek consolidation. Overall sentiment remained positive, underpinned by healthy cargo volumes, consistent miner activity and improving confidence across both the Pacific and Atlantic basins. The Pacific continued to provide the primary support, with consistent participation from the major miners and a steady flow of West Australia iron ore stems, supplemented by East Coast Australia coal cargoes. While rates briefly retreated following the early-week rally, the correction proved short-lived as prompt tonnage attracted premiums and renewed miner enquiry quickly restored momentum. Weather-related disruption in the Pacific also lent support to the market by tightening vessel availability. By the close of the week, C5 had recovered from its temporary softness in the high $12s to end the week in the low $13s, reflecting firmer sentiment. The Atlantic also enjoyed a positive week. South Brazil and West Africa to China demand remained robust, with sustained C3 fixing activity reported in the mid-$31s to $33 by week's end. While the North Atlantic remained comparatively quieter, tightening tonnage supported stronger transatlantic and fronthaul earnings later in the week.
+
+## Panamax-Kamsarmax
+It was a week of consolidation. Rates improved a little, but the market hasn't really moved forward very much. There was a lot of activity in the North Atlantic, but it seems to have had a clear out now, with the market waiting to see the next move. Mineral fronthauls from US East Coast saw very high offers, with a charterer eventually deciding to take an 82,000-dwt for short period at $30,000 from the Continent rather than pay mid/high $30,000s for a single trip to India. North Coast South American activity was also a huge support with an 82,000-dwt fixed from the Continent at $30,750 to load grains to the Far East at the end of the week. East Coast South America was concentrated on first half August positions with an 81,000-dwt fixed at $20,000 delivery Sunda Strait for a grains round voyage, but there was very little appetite from charterers to fix basis later dates at present levels. The Asian market remained flat despite a flurry of fixing mid-week, with NoPac and Australia the main drivers, seeing an 82,000-dwt fixed deliver Japan trip via NoPac with grains at $20,000. Southeast Asia remained lacklustre with mainly the smaller Panamax's picking off the limited demand, however a 82,000-dwt did fix delivery Hong Kong via Indonesia to South Korea at $13,600 earlier in the week.
+
+## Ultramax/Supramax
+Overall, the market generally maintained last week's levels, with pockets of improvement in certain areas, but overall movement on rates was minimal and the 5TC average was only slightly higher than last Friday's close of $21,153. The North American market continued to be a driving force with a 63,000-dwt fixed US Gulf to India with petcoke at $38,500 and the East Mediterranean market firmed amid tight tonnage supply with a 63,000-dwt placed on subjects at $18,000 for a trip to West Africa. The South Atlantic was mixed and positional with some faring better than others due to the constrained tonnage list, with a 58,000-dwt fixed from West Africa for Owendo loading to India at $27,000. The Asian market was lacklustre and continued to trend sideways with the main support coming from backhauls and the NoPac market with a nicely described 64,000-dwt fixed at $19,250 delivery China for a grains round voyage. Southeast Asia saw sluggish demand with uncertainty on vessel prospects caused by the Typhoon making charterers wary. In the Indian Ocean there was an uptick on Indian coastal trades with a 64,000-dwt fixed from East Coast India to the West coast at $25,000.
+
+## Handysize
+The market moved steadily lower over the week, with sentiment softening across both basins. In the Continent and Mediterranean, conditions opened quietly with levels largely unchanged before brief support from scrap demand lent a slightly firmer tone to rates. A 35,000-dwt vessel was heard fixed from the Baltic to the East Mediterranean at $12,500. Across the South Atlantic and US Gulf, sentiment weakened as the week progressed, with a growing spot tonnage list, wide bid-offer spreads and limited fresh enquiry prompting both owners and charterers to adjust expectations lower. A 40,000-dwt vessel was reported fixed from Recalada to North Brazil with grains at $22,500, while a 37,000-dwt vessel fixed delivery SW Pass to Atlantic Colombia with grains at $19,250. Asia followed a similar pattern, with the market remaining under pressure as tonnage continued to build across key loading areas. Although some fixtures were reported, overall trading activity stayed muted, and fundamentals showed little material change. A 38,000-dwt vessel was reported fixed delivery Penang via Bangladesh to Singapore at $17,250.

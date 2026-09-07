@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 254,
   "source_path": "reports/baltic/container/2026/2026-06-05_container-report-week-23_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-06-05_2026_06_05_container_report_week_23_container__s01_main",
+      "node_id": "baltic_container_2026-06-05_2026_06_05_container_report_week_23_container__s01_container",
       "doc_id": "baltic_container_2026-06-05_2026_06_05_container_report_week_23_container",
       "parent_id": "baltic_container_2026-06-05_2026_06_05_container_report_week_23_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "05 Jun 2026\nContainer Report - Week 23",
+      "summary": "An eventful week for all the major trade lanes as the knock-on effects of the Middle East Gulf situation have caused rates to rocket. The transpacific loop saw a 33% increase, FBX01 (China/East Asia - US West Coast) increased by $1,591 against the end of last week, ending the week at $4,816, this route is now $2,000 higher than the start of May.",
       "keywords": [
-        "container",
-        "jun"
+        "china",
+        "pacific",
+        "meg",
+        "europe",
+        "asia",
+        "china/east",
+        "start",
+        "east"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 252,
       "section_type": null,
       "children": []
     }

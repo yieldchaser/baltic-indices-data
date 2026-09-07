@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 897,
   "source_path": "reports/baltic/dry/2026/2026-05-22_bulk-report-week-21_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__s01_main",
+      "node_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry",
       "parent_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "22 May 2026\nBulk report - Week 21",
+      "summary": "The market experienced a gradual softening over the course of the week, with sentiment increasingly defined by the growing divergence between a relatively resilient Pacific and a subdued Atlantic basin. While the BCI trended lower overall, the Pacific remained the key source of support, underpinned by consistent miner participation and a healthy volume of operator-controlled cargoes on C5.",
       "keywords": [
-        "may"
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "remained",
+        "cargoes",
+        "demand"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 205,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "A poor week for the sector as cargo volume eased in many areas. Brokers said that there was a plentiful supply of prompt tonnage in the north heaping downward pressure on rates.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "singapore",
+        "japan",
+        "south",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 233,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a week of mixed fortune for the sector. The Atlantic seemingly remaining the healthier option from an owner's perspective.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 249,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry",
+      "parent_id": "baltic_dry_2026-05-22_2026_05_22_bulk_report_week_21_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handy market softened overall this week. In the Atlantic, the Continent and Mediterranean remained quiet and subdued, while the South Atlantic weakened notably as fundamentals deteriorated.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "grain",
+        "dwt",
+        "fixed",
+        "open"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 188,
       "section_type": null,
       "children": []
     }

@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 1027,
   "source_path": "reports/baltic/dry/2026/2026_bulk-report-week-32_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__s01_main",
+      "node_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry",
       "parent_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "07 Aug 2026\nBulk report - Week 32",
+      "summary": "The market enjoyed a notably stronger week overall, with sentiment remaining firmly positive throughout. Strength in both the Pacific and Atlantic basins underpinned the rally, driving the BCI 5TC from $41,395 at the start of the week to $46,512 by Friday's close.",
       "keywords": [
-        "aug"
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "coal",
+        "remained",
+        "activity"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 281,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__s02_panamax_kamsarmax",
+      "doc_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__root",
+      "title": "Panamax-Kamsarmax",
+      "section_path": [
+        "Panamax-Kamsarmax"
+      ],
+      "section_path_text": "Panamax-Kamsarmax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "Sentiment improved steadily across both the Atlantic and Pacific this week, with freight rates and the P5TC posting consecutive gains. Tight tonnage availability in the North Continent and West Mediterranean continued to support the Atlantic market, with a 76,000-dwt vessel fixing a transatlantic round at $22,750 and an 82,000-dwt vessel securing $35,000 for a US East Coast to India trip.",
+      "keywords": [
+        "china",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "india",
+        "singapore",
+        "grain"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 269,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It has been a week of consolidation with very little movement overall, as the 11TC average closed the week very close to last week's finish. In the Atlantic the week began with positive expectations from North America, and the rates have bounced back after weeks of decline, however the market did not push on as the week progressed.",
+      "keywords": [
+        "panamax",
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "active",
+        "back",
+        "but"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 232,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry",
+      "parent_id": "baltic_dry_2026-08-07_2026_bulk_report_week_32_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market remained under pressure throughout the week, with sentiment weak to flat across both the Atlantic and Asian basins and limited fresh enquiry keeping activity subdued. Across the Continent and Mediterranean, activity was limited and rates stayed soft, with only a few cement- and scrap-related fixtures reported.",
+      "keywords": [
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixed",
+        "was",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 223,
       "section_type": null,
       "children": []
     }

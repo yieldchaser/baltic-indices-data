@@ -5,7 +5,9 @@ commodities:
 date: '2026-03-13'
 doc_id: baltic_gas_2026-03-13_2026_gas_report_week_11_gas
 document_type: weekly_roundup
-key_entities: []
+key_entities:
+- Australia
+- US Gulf
 keywords:
 - gas
 - main
@@ -14,7 +16,11 @@ market_tone: neutral
 regions:
 - atlantic
 - pacific
-section_count: 1
+- australia
+- europe
+- us_gulf
+- japan
+section_count: 2
 signals: {}
 source: baltic
 source_path: reports/baltic/gas/2026/2026_gas-report-week-11_gas.html
@@ -40,6 +46,14 @@ Main
 13 Mar 2026
 Gas report - Week 11
 
-## Main
-13 Mar 2026
-Gas report - Week 11
+## LNG
+The LNG spot market cooled this week, with rates correcting across all major routes as the recent rally began to unwind. A growing tonnage list and fewer cargoes weighed on sentiment, driving a steady decline in earnings.
+On the BLNG1 Australia-Japan route, 174k cbm vessels fell $33,600 week-on-week to settle at $158,000/day, as the Pacific market began to ease from the previous week's highs.
+The BLNG2 US Gulf-Continent route also saw a correction, with earnings dropping $49,600 to $164,000/day. Similarly, the BLNG3 US Gulf-Japan route declined $52,200 to $168,000/day, reflecting the broader softening in Atlantic activity as vessel availability improved.
+In the time charter market, period rates also moved lower following the spike in spot earnings. The six-month rate fell $41,700 to $103,300/day, while the one-year term dropped $8,400 to $94,600/day. Further out the curve, the three-year period slipped $7,000 to $81,000/day, reflecting a more cautious longer-term outlook as the market cools from recent highs.
+
+## LPG
+After Atlantic fixtures were concluded last week at premiums to previous levels, the LPG market briefly paused before activity picked up again early this week. Sentiment remained somewhat mixed, with the Atlantic softening initially before stabilising as fresh enquiry returned to the market.
+On the BLPG1 Ras Tanura-Chiba route, the index settled at $100.25, with TCE earnings at $63,089/day.
+The BLPG2 Houston-Flushing route experienced some early softness before rebounding later in the week, ultimately settling at $78.00, with TCE earnings at $67,137/day.
+Similarly, the BLPG3 Houston-Chiba route saw volatility through the week, falling initially before recovering to settle at $134.83, with TCE returns at $41,809/day.

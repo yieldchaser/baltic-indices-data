@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 422,
   "source_path": "reports/baltic/gas/2026/2026-07-31_gas-report-week-31_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-07-31_2026_07_31_gas_report_week_31_gas__s01_main",
+      "node_id": "baltic_gas_2026-07-31_2026_07_31_gas_report_week_31_gas__s01_lng",
       "doc_id": "baltic_gas_2026-07-31_2026_07_31_gas_report_week_31_gas",
       "parent_id": "baltic_gas_2026-07-31_2026_07_31_gas_report_week_31_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "31 Jul 2026\nGas report - Week 31",
+      "summary": "The LNG market remained quiet this week, with limited cargo liquidity and a broadly balanced freight outlook. With few new requirements entering the market, rates softened across the Atlantic basin while the Pacific market remained relatively stable.",
       "keywords": [
-        "gas",
-        "jul"
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 230,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-07-31_2026_07_31_gas_report_week_31_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-07-31_2026_07_31_gas_report_week_31_gas",
+      "parent_id": "baltic_gas_2026-07-31_2026_07_31_gas_report_week_31_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market was quieter this week, with limited fixing activity and fewer fresh cargoes entering the market. As a result, freight rates softened across the Atlantic routes as sentiment eased.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "route",
+        "day.",
+        "tce",
+        "activity",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 186,
       "section_type": null,
       "children": []
     }

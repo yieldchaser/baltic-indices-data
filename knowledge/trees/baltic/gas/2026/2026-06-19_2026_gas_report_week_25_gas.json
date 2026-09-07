@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 439,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-25_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-06-19_2026_gas_report_week_25_gas__s01_main",
+      "node_id": "baltic_gas_2026-06-19_2026_gas_report_week_25_gas__s01_lng",
       "doc_id": "baltic_gas_2026-06-19_2026_gas_report_week_25_gas",
       "parent_id": "baltic_gas_2026-06-19_2026_gas_report_week_25_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "19 Jun 2026\nGas report - Week 25",
+      "summary": "The LNG market experienced a quieter week overall, with rates lowering across most routes as market participants continued to monitor developments in the Middle East. On the BLNG1 Australia-Japan route, rates eased by $1,667 week-on-week to settle at $80,200 per day.",
       "keywords": [
+        "lng",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "jun"
+        "per"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 262,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-06-19_2026_gas_report_week_25_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-06-19_2026_gas_report_week_25_gas",
+      "parent_id": "baltic_gas_2026-06-19_2026_gas_report_week_25_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market softened this week as arbitrage economics weakened following recent developments in the Middle East. While activity remained present, sentiment deteriorated as trading opportunities narrowed, placing downward pressure on freight rates across all major routes.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "gas",
+        "day.",
+        "per",
+        "route",
+        "tce",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 171,
       "section_type": null,
       "children": []
     }

@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 297,
   "source_path": "reports/baltic/container/2026/2026-08-28_container-report-week-35_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-08-28_2026_08_28_container_report_week_35_container__s01_main",
+      "node_id": "baltic_container_2026-08-28_2026_08_28_container_report_week_35_container__s01_container",
       "doc_id": "baltic_container_2026-08-28_2026_08_28_container_report_week_35_container",
       "parent_id": "baltic_container_2026-08-28_2026_08_28_container_report_week_35_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "28 Aug 2026\nContainer Report - Week 35",
+      "summary": "It has been a flat week across the key FBX trade lanes. The Panama Canal transit authority has advised that due to lower water levels they are reducing the number of daily transits and reducing the maximum allowed draft levels, which will have a knock-on effect on FBX03 to the USEC.",
       "keywords": [
+        "capesize",
         "container",
-        "aug"
+        "china",
+        "pacific",
+        "europe",
+        "asia",
+        "china/east",
+        "east"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 295,
       "section_type": null,
       "children": []
     }

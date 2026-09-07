@@ -17,29 +17,63 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 474,
   "source_path": "reports/baltic/gas/2026/2026_gas-report-week-23_gas.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_gas_2026-06-05_2026_gas_report_week_23_gas__s01_main",
+      "node_id": "baltic_gas_2026-06-05_2026_gas_report_week_23_gas__s01_lng",
       "doc_id": "baltic_gas_2026-06-05_2026_gas_report_week_23_gas",
       "parent_id": "baltic_gas_2026-06-05_2026_gas_report_week_23_gas__root",
-      "title": "Main",
+      "title": "LNG",
       "section_path": [
-        "Main"
+        "LNG"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "LNG",
       "level": 1,
       "ordinal": 1,
-      "summary": "05 Jun 2026\nGas report - Week 23",
+      "summary": "The LNG market saw a relatively subdued week overall due to market participants being in Posidonia. Activity appeared steady, with values largely holding within narrow ranges before softening slightly towards the end of the week.",
       "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
         "gas",
-        "jun"
+        "day.",
+        "before"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 253,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-06-05_2026_gas_report_week_23_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-06-05_2026_gas_report_week_23_gas",
+      "parent_id": "baltic_gas_2026-06-05_2026_gas_report_week_23_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The week proved relatively static overall, with Posidonia drawing participants away from the market and limiting visible fixture activity. As a result, sentiment was broadly steady and rate movement remained fairly muted across the majority of routes.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "route",
+        "tce",
+        "overall",
+        "remained",
+        "was",
+        "activity."
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 215,
       "section_type": null,
       "children": []
     }

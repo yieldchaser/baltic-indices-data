@@ -4,15 +4,17 @@ date: "2026-04-10"
 source: "poten"
 category: "tankers"
 source_url: "https://www.poten.com/not-strait-forward/"
-completeness: "metadata"
+author: "Erik Broekhuizen"
+completeness: "standfirst"
 tags: ["crude_tankers", "ton_miles", "rerouting", "vlcc", "suezmax", "aframax"]
 ---
 
 # Poten Tanker Opinion: Not “Strait-forward”
 
+**Author**: Erik Broekhuizen
 **Published Date**: 2026-04-10  
 **Source URL**: [https://www.poten.com/not-strait-forward/](https://www.poten.com/not-strait-forward/)  
-**Completeness**: Metadata only - body is JS-rendered on poten.com and not retrievable via static fetch.
+**Coverage**: Public summary layer (title, author, date, standfirst). The complete analysis sits behind a registration form on poten.com; only the openly published summary is archived here.
 
 ---
 

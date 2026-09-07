@@ -17,29 +17,35 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 224,
   "source_path": "reports/baltic/container/2026/2026_container-report-week-12_container.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_container_2026-03-20_2026_container_report_week_12_container__s01_main",
+      "node_id": "baltic_container_2026-03-20_2026_container_report_week_12_container__s01_container",
       "doc_id": "baltic_container_2026-03-20_2026_container_report_week_12_container",
       "parent_id": "baltic_container_2026-03-20_2026_container_report_week_12_container__root",
-      "title": "Main",
+      "title": "Container",
       "section_path": [
-        "Main"
+        "Container"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Container",
       "level": 1,
       "ordinal": 1,
-      "summary": "20 Mar 2026\nContainer Report - Week 12",
+      "summary": "With the ongoing geopolitical issues in the Middle East Gulf and the effective closure of the Strait of Hormuz, the side effects are beginning to show worldwide. We have seen bunker prices hit very high levels all around the globe, as supplies of different grades of fuel and gas oil start to become more sparse.",
       "keywords": [
         "container",
-        "mar"
+        "china",
+        "meg",
+        "europe",
+        "crude_oil",
+        "gas",
+        "asia",
+        "china/east"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 222,
       "section_type": null,
       "children": []
     }

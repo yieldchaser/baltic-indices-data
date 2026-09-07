@@ -1,0 +1,156 @@
+{
+  "cause_line_refs": {
+    "duplicate_path": "scripts/process_knowledge.py:2356-2358",
+    "empty_href": "scripts/process_knowledge.py:2337-2340",
+    "non_content_link": "scripts/process_knowledge.py:2341-2343",
+    "per_doc_cap": "scripts/process_knowledge.py:2326-2327",
+    "unresolvable_external": "scripts/process_knowledge.py:2346-2349"
+  },
+  "ci_pinned_max_cap": 28,
+  "code_default_max_cap": 12,
+  "dispositions": "data/derived/asset_dispositions.jsonl",
+  "docs_excluded": 434,
+  "docs_excluded_breakwave_by_category": {
+    "drybulk": 209,
+    "tankers": 78
+  },
+  "docs_excluded_by_source": {
+    "book": 12,
+    "breakwave": 287,
+    "broker_reports": 105,
+    "poten": 30
+  },
+  "docs_replayed": 8416,
+  "docs_total": 8850,
+  "docs_with_failed": {
+    "baltic": 0,
+    "breakwave_insights": 60,
+    "hellenic": 24
+  },
+  "docs_with_skips": {
+    "baltic": 0,
+    "breakwave_insights": 2475,
+    "hellenic": 692
+  },
+  "effective_max_cap": 28,
+  "exclusion_reason": "LINKED_ASSET_SOURCES = baltic/breakwave_insights/hellenic; only these sources are replayed (docs_replayed 8416); book/breakwave/broker_reports/poten (434) excluded by construction, never entering collect_linked_asset_sections; adapt_baltic never calls the collector so baltic replays zeros. Verified: 8416+434=8850 = documents.jsonl rows; excluded breakdown verified against documents.jsonl (book 12, poten 30, broker_reports 105, breakwave 287 = drybulk 209 + tankers 78).",
+  "failed_by_attribution": {
+    "inferential": 7,
+    "logged": 79,
+    "unlogged": 5
+  },
+  "failed_by_reason": {
+    "PDFSyntaxError": 86,
+    "unknown_extraction_failure": 4,
+    "unresolvable_relative_ref": 1
+  },
+  "failed_by_source_attribution": {
+    "baltic": {},
+    "breakwave_insights": {
+      "inferential": 7,
+      "logged": 55,
+      "unlogged": 5
+    },
+    "hellenic": {
+      "logged": 24
+    }
+  },
+  "failed_by_source_reason": {
+    "baltic": {},
+    "breakwave_insights": {
+      "PDFSyntaxError": 62,
+      "unknown_extraction_failure": 4,
+      "unresolvable_relative_ref": 1
+    },
+    "hellenic": {
+      "PDFSyntaxError": 24
+    }
+  },
+  "failed_line_refs": {
+    "empty_extracted_text": "scripts/process_knowledge.py:2380-2382",
+    "extraction_exception": "scripts/process_knowledge.py:2374-2379",
+    "unresolvable_relative_ref": "scripts/process_knowledge.py:2350-2351"
+  },
+  "failed_unknown": 4,
+  "head": {
+    "full": "918ebe0b65b5a4d57704d37f112d3fb0efbfbc7b",
+    "short": "918ebe0b6"
+  },
+  "ingested_null_node_records": 0,
+  "inputs": {
+    "code": "scripts/process_knowledge.py",
+    "documents": "knowledge/manifests/documents.jsonl",
+    "errors": "knowledge/manifests/errors.jsonl"
+  },
+  "ledger": {
+    "docs_with_failed": {
+      "baltic": 0,
+      "breakwave_insights": 60,
+      "hellenic": 24
+    },
+    "docs_with_skips": {
+      "baltic": 0,
+      "breakwave_insights": 2475,
+      "hellenic": 692
+    },
+    "failed": {
+      "baltic": 0,
+      "breakwave_insights": 67,
+      "hellenic": 24
+    },
+    "ingested": {
+      "baltic": 0,
+      "breakwave_insights": 8859,
+      "hellenic": 4732
+    },
+    "skipped": {
+      "baltic": 0,
+      "breakwave_insights": 7703,
+      "hellenic": 721
+    },
+    "total_docs_with_failed": 84,
+    "total_docs_with_skips": 3167,
+    "total_failed": 91,
+    "total_ingested": 13591,
+    "total_skipped": 8424
+  },
+  "method": "Read-only replay of collect_linked_asset_sections (scripts/process_knowledge.py:2309-2399) per documents.jsonl row: candidate order = <a href> in document order then <img src>, scoped to body>section|section|body; resolved-unique candidates with a matched tree section are ingested (node_id non-null, gate-enforced), without one are failed with the parent doc's errors.jsonl exception class (else unknown_extraction_failure, reason_unknown=true). The per-source/per-cause matrix is aggregated FROM the per-asset disposition records in this same run (single derivation path). baltic yields zeros by construction (adapt_baltic never calls the collector). No writes to knowledge/; no existing files modified.",
+  "mismatched_docs": [],
+  "output": "data/derived/skip_cause_matrix.json",
+  "per_source": {
+    "baltic": {
+      "duplicate_path": 0,
+      "empty_href": 0,
+      "non_content_link": 0,
+      "per_doc_cap": 0,
+      "unresolvable_external": 0
+    },
+    "breakwave_insights": {
+      "duplicate_path": 34,
+      "empty_href": 0,
+      "non_content_link": 42,
+      "per_doc_cap": 0,
+      "unresolvable_external": 7627
+    },
+    "hellenic": {
+      "duplicate_path": 1,
+      "empty_href": 0,
+      "non_content_link": 6,
+      "per_doc_cap": 0,
+      "unresolvable_external": 714
+    }
+  },
+  "reconciled_with_ledger": true,
+  "total_docs_with_failed": 84,
+  "total_docs_with_skips": 3167,
+  "total_failed": 91,
+  "total_ingested": 13591,
+  "total_skipped": 8424,
+  "totals": {
+    "duplicate_path": 35,
+    "empty_href": 0,
+    "non_content_link": 48,
+    "per_doc_cap": 0,
+    "unresolvable_external": 8341
+  }
+}

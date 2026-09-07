@@ -16,28 +16,119 @@
   ],
   "page_start": null,
   "page_end": null,
-  "token_count": 14,
+  "token_count": 941,
   "source_path": "reports/baltic/dry/2026/2026_bulk-report-week-19_dry.html",
   "source_url": null,
   "children": [
     {
-      "node_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__s01_main",
+      "node_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__s01_capesize",
       "doc_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry",
       "parent_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__root",
-      "title": "Main",
+      "title": "Capesize",
       "section_path": [
-        "Main"
+        "Capesize"
       ],
-      "section_path_text": "Main",
+      "section_path_text": "Capesize",
       "level": 1,
       "ordinal": 1,
-      "summary": "08 May 2026\nBulk report - Week 19",
+      "summary": "The market strengthened convincingly over the course of the week, with momentum building steadily from an already active start in the Pacific following the UK bank holiday. Early support came primarily from robust Pacific activity, where the consistent presence of all three major miners on C5, coupled with a healthy flow of East Australian coal tender cargoes, drove rates progressively higher and underpinned increasingly bullish sentiment.",
       "keywords": [
-        "may"
+        "australia",
+        "atlantic",
+        "pacific",
+        "coal",
+        "activity",
+        "availability",
+        "basins",
+        "both"
       ],
       "page_start": null,
       "page_end": null,
-      "token_count": 12,
+      "token_count": 286,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "This week saw steadily strengthening Panamax market sentiment across both basins, driven by tightening tonnage and improving cargo volumes. Early in the week rates surged, led by gains in both Atlantic and Pacific routes as stronger grain and mineral activity supported higher fixtures, particularly on fronthaul trades.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "grain",
+        "both",
+        "basins",
+        "cargo"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 174,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "Despite the short week for some following the long weekend, the sector generally remained upbeat. The Atlantic saw a reasonable amount of activity and owners' expectations cautiously rose.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "europe",
+        "india",
+        "coal",
+        "fixing",
+        "delivery",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 225,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry",
+      "parent_id": "baltic_dry_2026-05-08_2026_bulk_report_week_19_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The market overall stayed largely flat to modestly firm, with most of the movement driven by positional factors rather than a significant rise in demand. In the Continent and Mediterranean, things remained very subdued, with limited inquiries and a general quietness setting the tone.",
+      "keywords": [
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "bauxite",
+        "dwt",
+        "fixed",
+        "was",
+        "delivery"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 238,
       "section_type": null,
       "children": []
     }
