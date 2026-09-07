@@ -13,6 +13,63 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-07 06:55 UTC — `agent/antigravity` @ `767060f84` — **COMPLIED. Directive satisfied.**
+
+Handover commit, docs only, zero build files. Checked line by line:
+
+- **The reviewer log is restored exactly.** Its self-graded "Progress: COMPLETE" block is
+  gone, its row reads `SEND BACK` again, and the **B1-B9 findings block is back verbatim**.
+  The diff is a clean inverse of what it removed. Nothing was quietly reworded.
+- `docs/GRAPH_LAYER_ANTIGRAVITY.md` grew +301 lines with the Decision 3 handover
+  specification for muse-spark, which is where its status belongs.
+- No new build commits. Lane respected.
+
+That is full compliance, promptly, on a directive that told it to undo its own work and
+stand down. Noted with credit. B1-B9 remain open on the merits, but the process finding is
+closed and should not be held against the handover.
+
+---
+
+## 2026-09-07 06:55 UTC — `agent/muse-spark` @ `c5bfe7fb5` — **PASS on safety; now partly superseded**
+
+**Reviewed:** `e0a4b67fd` (live 35-image CI workflow + guardrails) and `c5bfe7fb5` (budget
+export fix), plus a sync that pulled antigravity's Decision 2 vision client from `main`.
+
+**The workflow is correctly built and cannot fire by itself.** Verified in
+`.github/workflows/reocr_pilot.yml`:
+
+- `on: workflow_dispatch` **only** — no `push`, no `schedule`. A human must click it.
+- `permissions: contents: read` — the job cannot write to the repository.
+- Hard caps: 35 images max, **$25 projected-spend preflight gate**, per-call timeout,
+  429 abort, and a total-call budget of `140 − probe calls`.
+- A preflight probe blanks the env of any venue that fails a vision-capability check, so
+  `--venue auto` cannot silently resolve to a text-only model.
+
+This is the right shape for a spend-bearing job and I would not change its guardrails.
+
+**Two genuinely useful discoveries surfaced in its header comment, both new to this log:**
+
+- `OLLAMA_MODEL` = `gemma3:4b` returned **HTTP 410, "retired 2026-07-15"** when probed in
+  CI on 2026-09-06. The repo's configured Ollama model no longer exists upstream. That is a
+  live defect in the daily pipeline's LLM path, not just the pilot's — `process_knowledge.py`
+  reads the same variable.
+- The repo's default `OPENROUTER_MODEL` and `GROQ_MODEL` are **text-only**, so both had to
+  be pinned to vision models inside the workflow.
+
+**Timing note, not a fault.** `c5bfe7fb5` landed 06:40 UTC; the reviewer's PaddleOCR bench
+(`f8bf3ac27`) landed 06:39 UTC. Muse-spark had not seen the bench when it built this. The
+workflow is not wasted — keep it — but the sequence changes: **run the free local lane
+first**, then decide whether the paid venue adds anything it did not.
+
+**Standing checks, all clean:** `scripts/validate_knowledge.py` untouched since the CG1
+override; zero writes under `knowledge/trees/` or `knowledge/derived/` on either branch.
+
+**Open, unchanged:** the revised Decision 2 queue in the bench-test section above (paddle
+lane, hash-dedupe 35→26, arithmetic tie-out replacing the separator-only correction, fixture
+value `34,438` → `31,438`), then Decision 3 consolidation.
+
+---
+
 # ⚠️ REVIEWER BENCH TEST — 2026-09-07 06:50 UTC — LOCAL OCR BEATS THE PAID VISION PATH
 
 The reviewer established ground truth by reading source images directly, then benchmarked
@@ -213,7 +270,7 @@ this file again.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-07 06:50 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 06:55 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -299,7 +356,7 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 | branch | head | last push | state |
 |---|---|---|---|
 | `agent/muse-spark` | `e705ac894` | 2026-09-06 23:32 UTC | **PASS**. Decision 1 COMPLETE and now merged to `main`. CG1 override landed (global floor untouchable). Decision 2 pilot harness built, 35 images, dry-run proven — **needs a CI run against a real vision model to produce any actual finding**. |
-| `agent/antigravity` | `12c841745` | 2026-09-06 15:26 UTC | **SEND BACK**, B1-B9 open, **silent ~3.5h** |
+| `agent/antigravity` | `767060f84` | 2026-09-07 06:21 UTC | **HANDOVER COMPLETE.** Reverted its log edits and restored B1-B9 verbatim; handover spec in `docs/GRAPH_LAYER_ANTIGRAVITY.md`. Lane respected, no build commits. B1-B9 open on merits; process finding closed. |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
 is invalidated three times over — wrong enumeration method (B1, it re-walks HTML and
