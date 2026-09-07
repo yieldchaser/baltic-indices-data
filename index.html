@@ -12606,6 +12606,9 @@ if (intelTabsContainer) {
             <button id="subnavChokepoints" class="tracking-subview-btn" onclick="setTrackingSubView('chokepoints')">
               Chokepoints Ledger (28)
             </button>
+            <button id="subnavBunkers" class="tracking-subview-btn" onclick="setTrackingSubView('bunkers')">
+              Port Bunkers
+            </button>
             <button id="subnavDistance" class="tracking-subview-btn" onclick="setTrackingSubView('distance')">
               Distance &amp; Routing
             </button>
@@ -12642,6 +12645,37 @@ if (intelTabsContainer) {
           <div id="subviewChokepoints" class="tracking-subview-content" style="display:none;">
             <div id="chokepointDirList" class="chokepoint-dir-list">
               <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Subview 4: Port Bunkers (Signal Ocean / Tideform Inspired) -->
+          <div id="subviewBunkers" class="tracking-subview-content" style="display:none;">
+            <div class="bunkers-panel" style="padding:14px; display:flex; flex-direction:column; gap:10px; height:100%; overflow-y:auto;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div style="font-size:12px; font-weight:700; color:#fff;" id="bunkersPortTitle">Port Bunker Benchmark Prices</div>
+                <span class="tracking-live-tag" style="font-size:9px; padding:2px 6px;">TIDEFORM / S&amp;B</span>
+              </div>
+              <div style="font-size:11px; color:var(--text-muted);" id="bunkersPortSub">
+                Daily marine fuel spot indications (USD/MT) for primary bunkering ports and regional hubs.
+              </div>
+              <div class="tracking-table-wrap" style="max-height:540px;">
+                <table class="tracking-table">
+                  <thead>
+                    <tr>
+                      <th>Area / Port</th>
+                      <th>Grade</th>
+                      <th>Price ($/MT)</th>
+                      <th>Updated</th>
+                    </tr>
+                  </thead>
+                  <tbody id="bunkersTableBody">
+                    <!-- Populated dynamically from DATA.bunkerPrices -->
+                  </tbody>
+                </table>
+              </div>
+              <div style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace; margin-top:auto; padding-top:8px; border-top:1px solid var(--border);">
+                Data Source: Ship &amp; Bunker RPC / Tideform Feed (2026-09-07 Observation)
+              </div>
             </div>
           </div>
 
@@ -12833,6 +12867,8 @@ if (intelTabsContainer) {
       lngCharter: [],
       lng_charter: [],
       portLineups: [],
+      vesselTrajectories: {},
+      bunkerPrices: [],
       chokepointSummary: null,
       chokepointMetrics: [],
       tceMatrix: null,
@@ -14223,6 +14259,25 @@ if (intelTabsContainer) {
           DATA.chokepointMetrics = r || [];
         });
 
+        const vesselTrajectoriesPromise = fetch('data/geospatial/vessel_trajectories_active.json')
+          .then(res => res.ok ? res.json() : null)
+          .then(data => {
+            DATA.vesselTrajectories = data || {};
+          })
+          .catch(err => {
+            console.warn('[vesselTrajectories fetch error]', err);
+            DATA.vesselTrajectories = {};
+          });
+
+        const bunkerPricesPromise = safeFetch('data/bunkers/bunker_prices_daily.csv', 'Bunker Prices Daily', [], r => {
+          DATA.bunkerPrices = (r || []).map(row => ({
+            date: (row.date || '').trim(),
+            port: (row.port || '').trim(),
+            fuel_grade: (row.fuel_grade || '').trim(),
+            price_usd_mt: parseFloat(row.price_usd_mt) || 0
+          }));
+        });
+
         const allPromisesList = [
           ...indexPromises,
           bdryPromise, bwetPromise, bdryPdPromise, bwetPdPromise,
@@ -14235,7 +14290,7 @@ if (intelTabsContainer) {
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
           sgxOreForwardPromise,
-          portLineupsPromise, chokepointSummaryPromise, chokepointMetricsPromise,
+          portLineupsPromise, vesselTrajectoriesPromise, bunkerPricesPromise, chokepointSummaryPromise, chokepointMetricsPromise,
           ...sgxPromises
         ];
 
@@ -32962,7 +33017,7 @@ if (intelTabsContainer) {
     }
 
 // =====================================================================
-// GLOBAL TRACKING & GEOSPATIAL TERMINAL ENGINE
+// GLOBAL TRACKING & GEOSPATIAL TERMINAL ENGINE (V2)
 // =====================================================================
 
 var trackingMap = null;
@@ -32972,6 +33027,7 @@ var chokepointMarkersLayer = null;
 var portMarkersLayer = null;
 var riskZonesLayer = null;
 var activeRoutePolyline = null;
+var activeVesselTrackLayer = null;
 
 var trackingSelectedClass = 'all';
 var trackingSelectedStatus = 'all';
@@ -33013,7 +33069,9 @@ var PORT_COORDINATES = {
   'AUPHE': { name: 'Port Hedland', country: 'Australia', lat: -20.310, lon: 118.550 },
   'AUNCL': { name: 'Newcastle', country: 'Australia', lat: -32.877, lon: 151.848 },
   'JPYOK': { name: 'Yokohama', country: 'Japan', lat: 35.520, lon: 139.689 },
-  'ZARCB': { name: 'Richards Bay', country: 'South Africa', lat: -28.742, lon: 32.135 }
+  'ZARCB': { name: 'Richards Bay', country: 'South Africa', lat: -28.742, lon: 32.135 },
+  'GNKMR': { name: 'Kamsar', country: 'Guinea', lat: 10.660, lon: -14.610 },
+  'TGLFW': { name: 'Lome', country: 'Togo', lat: 6.130, lon: 1.280 }
 };
 
 function renderTrackingTab() {
@@ -33044,6 +33102,11 @@ function renderTrackingTab() {
 
   // Initialize Distance Calculator default
   runDistanceCalculation();
+
+  // Render Bunkers subview if active
+  if (trackingActiveSubView === 'bunkers') {
+    renderBunkersSubView();
+  }
 }
 
 function initTrackingMap() {
@@ -33078,12 +33141,20 @@ function initTrackingMap() {
     chokepointMarkersLayer = L.layerGroup().addTo(trackingMap);
     portMarkersLayer = L.layerGroup().addTo(trackingMap);
     riskZonesLayer = L.layerGroup().addTo(trackingMap);
+    activeVesselTrackLayer = L.layerGroup().addTo(trackingMap);
 
     // Track coordinates on mousemove
     trackingMap.on('mousemove', function(e) {
       var el = document.getElementById('mapCoordsOverlay');
       if (el && e.latlng) {
         el.textContent = 'Lat: ' + e.latlng.lat.toFixed(2) + '°, Lon: ' + e.latlng.lng.toFixed(2) + '°';
+      }
+    });
+
+    // Window resize listener
+    window.addEventListener('resize', function() {
+      if (trackingMap && typeof trackingMap.invalidateSize === 'function') {
+        trackingMap.invalidateSize();
       }
     });
 
@@ -33285,15 +33356,37 @@ function onTrackingPortChange() {
   // Center map on selected port if specific port selected
   if (trackingSelectedPort !== 'all' && trackingMap) {
     var pMeta = PORT_COORDINATES[trackingSelectedPort];
-    if (pMeta) {
-      trackingMap.flyTo([pMeta.lat, pMeta.lon], 9, { duration: 1.2 });
+    var lat = pMeta ? pMeta.lat : null;
+    var lon = pMeta ? pMeta.lon : null;
+    var name = pMeta ? pMeta.name : trackingSelectedPort;
+    var country = pMeta ? pMeta.country : '';
+
+    if (!lat) {
+      var v = (DATA.portLineups || []).find(function(item) {
+        return item.port_locode === trackingSelectedPort || item.portname === trackingSelectedPort;
+      });
+      if (v && v.lat && v.lon) {
+        lat = v.lat;
+        lon = v.lon;
+        name = v.portname;
+        country = v.country;
+      }
+    }
+
+    if (lat && lon) {
+      trackingMap.flyTo([lat, lon], 9, { duration: 1.2 });
       var hudDetail = document.getElementById('mapHudDetail');
-      if (hudDetail) hudDetail.textContent = pMeta.name + ' (' + pMeta.country + ') — Focused Port View';
+      if (hudDetail) hudDetail.textContent = name + (country ? ' (' + country + ')' : '') + ' — Focused Port Anchorage';
     }
   } else if (trackingMap) {
     trackingMap.flyTo([20, 45], 3, { duration: 1.2 });
     var hudDetailAll = document.getElementById('mapHudDetail');
     if (hudDetailAll) hudDetailAll.textContent = '740 vessels rendered across 27 ports';
+  }
+
+  // If bunkers subview is open, re-render it for this port
+  if (trackingActiveSubView === 'bunkers') {
+    renderBunkersSubView();
   }
 }
 
@@ -33307,7 +33400,7 @@ function onTrackingSearchInput() {
 
 function setTrackingSubView(subview) {
   trackingActiveSubView = subview;
-  var views = ['lineup', 'chokepoints', 'distance'];
+  var views = ['lineup', 'chokepoints', 'bunkers', 'distance'];
   views.forEach(function(v) {
     var btn = document.getElementById('subnav' + v.charAt(0).toUpperCase() + v.slice(1));
     var el = document.getElementById('subview' + v.charAt(0).toUpperCase() + v.slice(1));
@@ -33317,7 +33410,73 @@ function setTrackingSubView(subview) {
 
   if (subview === 'chokepoints') {
     renderChokepointsDirectory();
+  } else if (subview === 'bunkers') {
+    renderBunkersSubView();
   }
+}
+
+function renderBunkersSubView() {
+  var tbody = document.getElementById('bunkersTableBody');
+  var titleEl = document.getElementById('bunkersPortTitle');
+  var subEl = document.getElementById('bunkersPortSub');
+  if (!tbody) return;
+
+  var prices = DATA.bunkerPrices || [];
+  if (!prices.length) {
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:16px; color:var(--text-muted);">Loading bunker price feeds...</td></tr>';
+    return;
+  }
+
+  var selPort = (trackingSelectedPort || 'all').toLowerCase();
+  var pMeta = PORT_COORDINATES[trackingSelectedPort] || {};
+  var pName = pMeta.name || trackingSelectedPort;
+
+  if (titleEl) {
+    titleEl.textContent = (selPort !== 'all') ? pName + ' Bunker Indications' : 'Global Bunker Benchmark Matrix';
+  }
+  if (subEl) {
+    subEl.textContent = (selPort !== 'all')
+      ? 'Direct port indications & nearby bunker replenishment pricing (USD/MT).'
+      : 'Spot marine fuel prices across key bunkering hubs (Singapore, Rotterdam, Fujairah, Houston, Santos).';
+  }
+
+  tbody.innerHTML = '';
+
+  // Filter prices: prioritize selected port or show all
+  var displayPrices = [];
+  if (selPort !== 'all') {
+    var cleanP = pName.toLowerCase().replace(/[^a-z]/g, '');
+    var matches = prices.filter(function(r) {
+      var rPort = r.port.toLowerCase().replace(/[^a-z]/g, '');
+      return rPort.includes(cleanP) || cleanP.includes(rPort);
+    });
+    if (matches.length) {
+      displayPrices = matches;
+    } else {
+      // Fall back to regional or global benchmarks
+      displayPrices = prices.filter(function(r) {
+        return r.port.includes('average') || r.port === 'fujairah' || r.port === 'singapore' || r.port === 'rotterdam';
+      });
+    }
+  } else {
+    displayPrices = prices;
+  }
+
+  displayPrices.forEach(function(r) {
+    var tr = document.createElement('tr');
+    var portFormatted = r.port.replace(/_/g, ' ').replace(/\b\w/g, function(l){ return l.toUpperCase(); });
+
+    var gradeCls = 'class-badge';
+    if (r.fuel_grade === 'VLSFO') gradeCls = 'status-badge-berth';
+    else if (r.fuel_grade === 'MGO') gradeCls = 'status-badge-anchor';
+
+    tr.innerHTML = '<td><div style="font-weight:600; color:#fff;">' + escapeHtml(portFormatted) + '</div></td>' +
+      '<td><span class="' + gradeCls + '">' + escapeHtml(r.fuel_grade) + '</span></td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; font-weight:700; color:#fff;">$' + r.price_usd_mt.toFixed(2) + '</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:var(--text-muted); font-size:10px;">' + escapeHtml(r.date) + '</td>';
+
+    tbody.appendChild(tr);
+  });
 }
 
 function toggleTrackingLayer(layerName) {
@@ -33365,6 +33524,10 @@ function plotVesselMarkers() {
 
     var marker = L.marker([v.lat, v.lon], { icon: customIcon });
 
+    // Historical trajectory lookup
+    var traj = (DATA.vesselTrajectories && DATA.vesselTrajectories[v.imo_number]) ? DATA.vesselTrajectories[v.imo_number] : [];
+    var trajText = traj.length ? (traj.length + ' Historical Voyage Legs') : 'Live AIS Fix';
+
     // Signal Ocean-style popup card
     var popupContent = '<div class="signal-vessel-popup">' +
       '<div class="signal-vessel-head">' +
@@ -33380,33 +33543,96 @@ function plotVesselMarkers() {
       '<div><div class="signal-field-label">Days Waiting</div><div class="signal-field-val" style="color:' + (v.days_waiting > 3 ? 'var(--yellow)' : '#fff') + '">' + (v.days_waiting ? v.days_waiting.toFixed(1) + ' Days' : '0 Days') + '</div></div>' +
       '<div><div class="signal-field-label">Cargo Type</div><div class="signal-field-val" style="font-size:10px;">' + escapeHtml(v.cargo_type || 'Crude / Bulk') + '</div></div>' +
       '<div><div class="signal-field-label">Coordinates</div><div class="signal-field-val" style="font-family:\'IBM Plex Mono\', monospace; font-size:10px;">' + v.lat.toFixed(3) + '°, ' + v.lon.toFixed(3) + '°</div></div>' +
-      '<div><div class="signal-field-label">Arrival Time</div><div class="signal-field-val" style="font-size:10px;">' + escapeHtml(v.arrival_timestamp ? v.arrival_timestamp.split(' ')[0] : '—') + '</div></div>' +
+      '<div><div class="signal-field-label">Voyage Record</div><div class="signal-field-val" style="color:#00e5ff; font-size:10px;">' + trajText + '</div></div>' +
       '</div>' +
-      '<button class="signal-vessel-btn" onclick="focusPort(\'' + v.port_locode + '\')">Center on Port Anchorage</button>' +
+      '<button class="signal-vessel-btn" onclick="selectVesselByImo(\'' + v.imo_number + '\')">Plot Historical Voyage Track</button>' +
       '</div>';
 
     marker.bindPopup(popupContent, { maxWidth: 300 });
 
     marker.on('click', function() {
-      highlightTableRow(v.imo_number);
+      selectVessel(v);
     });
 
     vesselMarkersLayer.addLayer(marker);
   });
 }
 
+function selectVesselByImo(imo) {
+  var v = (DATA.portLineups || []).find(function(item) { return item.imo_number === imo; });
+  if (v) selectVessel(v);
+}
+
 function selectVessel(v) {
   if (!v || !trackingMap) return;
-  highlightTableRow(v.imo_number);
-  trackingMap.flyTo([v.lat, v.lon], 11, { duration: 1.0 });
 
-  var hudDetail = document.getElementById('mapHudDetail');
-  if (hudDetail) {
-    hudDetail.textContent = v.vessel_name + ' (' + v.asset_class + ', ' + (v.dwt/1000).toFixed(0) + 'k DWT) · ' + v.operational_status;
+  // 1. Highlight in table (with auto page switch bug fix)
+  highlightTableRow(v.imo_number);
+
+  // 2. Fly map to vessel
+  trackingMap.flyTo([v.lat, v.lon], 9, { duration: 1.0 });
+
+  // 3. Plot Historical AIS Voyage Trajectory if available
+  if (activeVesselTrackLayer) {
+    activeVesselTrackLayer.clearLayers();
+  }
+
+  var traj = (DATA.vesselTrajectories && DATA.vesselTrajectories[v.imo_number]) ? DATA.vesselTrajectories[v.imo_number] : [];
+  if (traj && traj.length > 0 && activeVesselTrackLayer) {
+    var pts = [];
+    traj.forEach(function(leg, idx) {
+      if (leg.lat && leg.lon) {
+        pts.push([leg.lat, leg.lon]);
+
+        // Waypoint marker
+        var wpMarker = L.circleMarker([leg.lat, leg.lon], {
+          radius: 4,
+          color: '#00e5ff',
+          fillColor: '#0a0e14',
+          fillOpacity: 0.9,
+          weight: 1.5
+        });
+        wpMarker.bindTooltip('<strong>' + escapeHtml(leg.name) + '</strong><br>' + leg.date + ' (Voyage Leg #' + (idx + 1) + ')', { sticky: true });
+        activeVesselTrackLayer.addLayer(wpMarker);
+      }
+    });
+
+    // Add current live position as final waypoint
+    pts.push([v.lat, v.lon]);
+
+    // Draw connecting polyline
+    var trackLine = L.polyline(pts, {
+      color: '#00e5ff',
+      weight: 2.5,
+      dashArray: '6, 6',
+      opacity: 0.85
+    });
+    activeVesselTrackLayer.addLayer(trackLine);
+
+    var hudDetail = document.getElementById('mapHudDetail');
+    if (hudDetail) {
+      hudDetail.textContent = v.vessel_name + ' (' + v.asset_class + ') · ' + v.operational_status + ' · ' + (traj.length) + ' Historical Voyage Legs Plotted (Live & Historical)';
+    }
+  } else {
+    var hudDetailLive = document.getElementById('mapHudDetail');
+    if (hudDetailLive) {
+      hudDetailLive.textContent = v.vessel_name + ' (' + v.asset_class + ', ' + (v.dwt/1000).toFixed(0) + 'k DWT) · ' + v.operational_status;
+    }
   }
 }
 
 function highlightTableRow(imo) {
+  var filtered = filterTrackingData();
+  var idx = filtered.findIndex(function(v) { return v.imo_number === imo; });
+
+  if (idx !== -1) {
+    var targetPage = Math.floor(idx / TRACKING_PAGE_SIZE) + 1;
+    if (trackingCurrentPage !== targetPage) {
+      trackingCurrentPage = targetPage;
+      renderTrackingTable();
+    }
+  }
+
   document.querySelectorAll('.vessel-row').forEach(function(r) {
     r.classList.remove('selected');
   });
@@ -33911,6 +34137,7 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
 }
+
 
 
   </script>

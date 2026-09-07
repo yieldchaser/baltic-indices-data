@@ -44,10 +44,13 @@ jobs:
         timeout-minutes: 20
         run: if [ -f scripts/expansion_worldbank_pinksheet.py ]; then python scripts/expansion_worldbank_pinksheet.py; fi
 
-      - name: PortWatch congestion collector
+      - name: PortWatch congestion collector & Geospatial Caches
         continue-on-error: true
         timeout-minutes: 20
-        run: if [ -f scripts/expansion_portwatch.py ]; then python scripts/expansion_portwatch.py; fi
+        run: |
+          if [ -f scripts/expansion_portwatch.py ]; then python scripts/expansion_portwatch.py; fi
+          if [ -f scripts/geospatial/build_chokepoint_cache.py ]; then python scripts/geospatial/build_chokepoint_cache.py; fi
+          if [ -f scripts/geospatial/build_vessel_trajectories_cache.py ]; then python scripts/geospatial/build_vessel_trajectories_cache.py; fi
 
       - name: Bunker prices collector
         continue-on-error: true
