@@ -14061,7 +14061,11 @@ if (intelTabsContainer) {
           </div>
 
           <!-- Subview 1: 221 Ports Spot Matrix -->
-          <div id="bunkersSubviewSpot" class="bunkers-subview-content" style="display:flex;">
+          <div id="bunkersSubviewSpot" class="bunkers-subview-content" style="display:flex; flex-direction:column;">
+            <div id="bunkersFilterBanner" style="display:none; padding:7px 12px; background:rgba(0, 229, 255, 0.08); border-bottom:1px solid rgba(0, 229, 255, 0.25); font-size:11px; color:#c9d1d9; justify-content:space-between; align-items:center;">
+              <span id="bunkersFilterBannerText">Filtered by Biofuels (B24): 8 premier global supply ports active.</span>
+              <button onclick="setBunkerGrade('all'); setBunkerRegion('all');" style="background:none; border:none; color:#58a6ff; cursor:pointer; font-size:11px; text-decoration:underline; font-family:inherit;">Show All 221 Ports</button>
+            </div>
             <div class="bunkers-table-wrap">
               <table class="bunkers-table">
                 <thead>
@@ -14070,7 +14074,7 @@ if (intelTabsContainer) {
                     <th data-tooltip="Geographical trading zone.">Region</th>
                     <th data-tooltip="Very Low Sulphur Fuel Oil (0.5% max sulphur) price in $/MT.">VLSFO</th>
                     <th data-tooltip="Marine Gas Oil (0.1% max sulphur) distillate price in $/MT.">MGO</th>
-                    <th data-tooltip="High Sulphur Fuel Oil (3.5% max sulphur) price in $/MT.">HSFO</th>
+                    <th id="bunkersThCol5" data-tooltip="High Sulphur Fuel Oil (3.5% max sulphur) price in $/MT.">HSFO</th>
                     <th data-tooltip="Fuel price differential relative to Singapore benchmark hub ($/MT).">Spread (vs SG)</th>
                   </tr>
                 </thead>
@@ -39531,7 +39535,19 @@ function plotBunkerPortMarkers() {
   bunkerMarkersLayer.clearLayers();
 
   var summary = DATA.bunkerSummary;
-  var ports = summary && summary.ports ? summary.ports : [];
+  var allPorts = summary && summary.ports ? summary.ports : [];
+  var totalMaster = allPorts.length || 221;
+  var ports = filterBunkersData();
+
+  var hud = document.getElementById('bunkerMapHudDetail');
+  if (hud) {
+    if (ports.length === totalMaster) {
+      hud.textContent = totalMaster + ' Global Bunker Supply Ports Active';
+    } else {
+      var filterDesc = bunkersSelectedGrade !== 'all' ? (bunkersSelectedGrade === 'BIO' ? 'Biofuel (B24) Supply Hubs' : bunkersSelectedGrade + ' Grade') : (bunkersSelectedRegion !== 'all' ? bunkersSelectedRegion + ' Region' : 'Filtered');
+      hud.textContent = ports.length + ' of ' + totalMaster + ' Supply Ports Active (' + filterDesc + ')';
+    }
+  }
 
   ports.forEach(function(p) {
     if (!p.lat || !p.lon) return;
@@ -39556,8 +39572,9 @@ function plotBunkerPortMarkers() {
     var mgoStr = p.mgo ? '$' + p.mgo.toFixed(2) : '—';
     var hsfoStr = p.ifo380 ? '$' + p.ifo380.toFixed(2) : '—';
     var hi5Str = p.hi5_spread ? '$' + p.hi5_spread.toFixed(2) : '—';
+    var bioStr = p.bio ? '$' + p.bio.toFixed(2) : '—';
 
-    var spreadSgText = p.spread_vs_singapore > 0 ? '+' + p.spread_vs_singapore.toFixed(1) : p.spread_vs_singapore.toFixed(1);
+    var spreadSgText = p.spread_vs_singapore > 0 ? '+' + p.spread_vs_singapore.toFixed(1) : (p.spread_vs_singapore != null ? p.spread_vs_singapore.toFixed(1) : '—');
 
     var popupHtml = '<div class="signal-vessel-popup" style="min-width:230px;">' +
       '<div class="signal-vessel-head">' +
@@ -39568,6 +39585,7 @@ function plotBunkerPortMarkers() {
       '<div><div class="signal-field-label">VLSFO (0.5%)</div><div class="signal-field-val" style="color:#3fb950;">' + vlsfoStr + '</div></div>' +
       '<div><div class="signal-field-label">MGO (0.1%)</div><div class="signal-field-val" style="color:#e3b341;">' + mgoStr + '</div></div>' +
       '<div><div class="signal-field-label">HSFO (IFO380)</div><div class="signal-field-val">' + hsfoStr + '</div></div>' +
+      '<div><div class="signal-field-label">Biofuel (B24)</div><div class="signal-field-val" style="color:#00e5ff;">' + bioStr + '</div></div>' +
       '<div><div class="signal-field-label">Hi-5 Spread</div><div class="signal-field-val" style="color:#a371f7;">' + hi5Str + '</div></div>' +
       '<div><div class="signal-field-label">Spread vs SG</div><div class="signal-field-val">' + spreadSgText + ' $/MT</div></div>' +
       '<div><div class="signal-field-label">Updated</div><div class="signal-field-val" style="font-size:10px;">' + escapeHtml(p.latest_date) + '</div></div>' +
@@ -39619,8 +39637,48 @@ function renderBunkersSpotTable() {
   var pageInfo = document.getElementById('bunkersPageInfo');
   if (!tbody) return;
 
+  var summary = DATA.bunkerSummary;
+  var totalMaster = summary && summary.ports ? summary.ports.length : 221;
   var filtered = filterBunkersData();
   var total = filtered.length;
+
+  // Dynamic tab label
+  var spotTabBtn = document.getElementById('subnavBunkersSpot');
+  if (spotTabBtn) {
+    spotTabBtn.textContent = total === totalMaster ? ('Spot Prices (' + totalMaster + ')') : ('Spot Prices (' + total + ' of ' + totalMaster + ')');
+  }
+
+  // Filter banner
+  var banner = document.getElementById('bunkersFilterBanner');
+  var bannerText = document.getElementById('bunkersFilterBannerText');
+  if (banner && bannerText) {
+    if (total < totalMaster) {
+      banner.style.display = 'flex';
+      if (bunkersSelectedGrade === 'BIO') {
+        bannerText.innerHTML = '<strong>Filtered by Biofuels (B24 blend)</strong>: Displaying the 8 premier global bunkering hubs with verified commercial bio-bunker indications (Singapore, Rotterdam, Fujairah, Houston, Gibraltar, Algeciras, Huelva, Global Composite).';
+      } else if (bunkersSelectedGrade !== 'all') {
+        bannerText.innerHTML = '<strong>Filtered by ' + escapeHtml(bunkersSelectedGrade) + '</strong>: ' + total + ' of ' + totalMaster + ' ports provide verified indications.';
+      } else if (bunkersSelectedRegion !== 'all') {
+        bannerText.innerHTML = '<strong>Filtered by ' + escapeHtml(bunkersSelectedRegion) + ' Region</strong>: ' + total + ' of ' + totalMaster + ' ports.';
+      } else if (bunkersSearchQuery) {
+        bannerText.innerHTML = '<strong>Search filter</strong>: ' + total + ' matching ports.';
+      }
+    } else {
+      banner.style.display = 'none';
+    }
+  }
+
+  // Dynamic 5th column header (HSFO vs Biofuel)
+  var thCol5 = document.getElementById('bunkersThCol5');
+  if (thCol5) {
+    if (bunkersSelectedGrade === 'BIO') {
+      thCol5.textContent = 'Biofuel (B24)';
+      thCol5.setAttribute('data-tooltip', 'B24 Biofuel blend spot bunker price in $/MT.');
+    } else {
+      thCol5.textContent = 'HSFO';
+      thCol5.setAttribute('data-tooltip', 'High Sulphur Fuel Oil (3.5% max sulphur) price in $/MT.');
+    }
+  }
 
   var totalPages = Math.ceil(total / BUNKERS_PAGE_SIZE) || 1;
   if (bunkersCurrentPage > totalPages) bunkersCurrentPage = totalPages;
@@ -39639,7 +39697,7 @@ function renderBunkersSpotTable() {
 
   tbody.innerHTML = '';
   if (!paged.length) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No bunker ports match current filters.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No bunker ports match current filters. <button onclick="setBunkerGrade(\'all\'); setBunkerRegion(\'all\');" style="background:none; border:none; color:var(--accent); text-decoration:underline; cursor:pointer;">Reset filters</button></td></tr>';
     return;
   }
 
@@ -39650,7 +39708,12 @@ function renderBunkersSpotTable() {
 
     var vlsfoText = p.vlsfo ? '$' + p.vlsfo.toFixed(2) : '—';
     var mgoText = p.mgo ? '$' + p.mgo.toFixed(2) : '—';
-    var hsfoText = p.ifo380 ? '$' + p.ifo380.toFixed(2) : '—';
+    var col5Text = '';
+    if (bunkersSelectedGrade === 'BIO') {
+      col5Text = p.bio ? '$' + p.bio.toFixed(2) : '—';
+    } else {
+      col5Text = p.ifo380 ? '$' + p.ifo380.toFixed(2) : '—';
+    }
     var spreadText = p.spread_vs_singapore != null ? (p.spread_vs_singapore > 0 ? '+' : '') + p.spread_vs_singapore.toFixed(1) : '—';
 
     tr.setAttribute('data-tooltip', ' ');
@@ -39661,6 +39724,8 @@ function renderBunkersSpotTable() {
     tr.setAttribute('data-tt-spread', p.spread_vs_singapore || 0);
     tr.setAttribute('data-tt-title', p.name + ' (' + p.region + ')');
 
+    var col5Style = bunkersSelectedGrade === 'BIO' ? 'font-family:\'IBM Plex Mono\', monospace; font-weight:600; color:#00e5ff;' : 'font-family:\'IBM Plex Mono\', monospace;';
+
     tr.innerHTML = '<td>' +
       '<div style="font-weight:700; color:#fff;">' + escapeHtml(p.name) + '</div>' +
       '<div style="font-size:10px; color:var(--text-muted); font-family:\'IBM Plex Mono\', monospace;">' + escapeHtml(p.code) + ' · ' + escapeHtml(p.country) + '</div>' +
@@ -39668,7 +39733,7 @@ function renderBunkersSpotTable() {
       '<td><span class="class-badge">' + escapeHtml(p.region) + '</span></td>' +
       '<td style="font-family:\'IBM Plex Mono\', monospace; font-weight:600; color:' + (p.vlsfo ? '#3fb950' : 'var(--text-muted)') + ';">' + vlsfoText + '</td>' +
       '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (p.mgo ? '#e3b341' : 'var(--text-muted)') + ';">' + mgoText + '</td>' +
-      '<td style="font-family:\'IBM Plex Mono\', monospace;">' + hsfoText + '</td>' +
+      '<td style="' + col5Style + '">' + col5Text + '</td>' +
       '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (p.spread_vs_singapore > 0 ? 'var(--red)' : 'var(--green)') + ';">' + spreadText + '</td>';
 
     tr.addEventListener('click', function() {
@@ -39730,6 +39795,7 @@ function setBunkerRegion(region) {
   });
   bunkersCurrentPage = 1;
   renderBunkersSpotTable();
+  plotBunkerPortMarkers();
 }
 
 function setBunkerGrade(grade) {
@@ -39739,6 +39805,7 @@ function setBunkerGrade(grade) {
   });
   bunkersCurrentPage = 1;
   renderBunkersSpotTable();
+  plotBunkerPortMarkers();
 }
 
 var bunkersSearchTimer = null;
@@ -39750,6 +39817,7 @@ function onBunkersSearchInput() {
   clearTimeout(bunkersSearchTimer);
   bunkersSearchTimer = setTimeout(function() {
     renderBunkersSpotTable();
+    plotBunkerPortMarkers();
   }, 120);
 }
 
