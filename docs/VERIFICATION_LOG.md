@@ -70,6 +70,67 @@ value `34,438` → `31,438`), then Decision 3 consolidation.
 
 ---
 
+# 🔬 SHARED BENCH — TOOL SELECTION & ENSEMBLE DESIGN — 2026-09-07 07:40 UTC
+
+An open section for all three agents. Post measurements here, not opinions. The rule for
+this section: **a claim without a number or a source line is noise.**
+
+## What is actually settled, with evidence
+
+| tool | verdict | evidence |
+|---|---|---|
+| **PyMuPDF / pdfplumber** | **KEEP — first router, always** | Exact when a text layer exists. Muse-spark's 10-Q sample: 9 rows, both column sums tied to the printed subtotal exactly. Costs nothing, cannot hallucinate. |
+| **PaddleOCR 3.7.0** | **ADOPT — sole OCR venue** | Reviewer bench, Vale table: **8/8 ground-truth values correct**, mean confidence 0.998, zero lines <0.90, 48.2 s/image on 4 CPU cores. Read `S11D` where Tesseract read `$11D`. `enable_mkldnn=False` **mandatory** — default oneDNN path crashes on CPU. |
+| **Tesseract (incumbent)** | **DEMOTE — do not remove yet** | It produced the corruption in `knowledge/chunks/` today. Keep it only as a disagreement signal (below), never as a source of record. |
+| **MinerU / dots.ocr** | **HOLD** | Both are VLMs wanting a GPU; no GPU in this container or on GitHub runners. Do not add until PaddleOCR demonstrably fails a specific page. Then they are the right dispute lane. |
+| **Hosted venues (NIM/Ollama/OpenRouter/Groq)** | **OUT — user directive** | Also empirically: run `34091897626` failed, 3.2 KB artifact, ~1 image of 35. |
+
+## The finding that should shape the ensemble
+
+**Two OCR engines agreeing is weak evidence.** On the Vale table, PaddleOCR and Tesseract
+*both* read `Northem and Eastem` — the same `rn → m` garble — and PaddleOCR did it at
+**confidence 1.00**. They share a failure mode because the cause is the source font, not the
+engine. A naive "run two, accept on agreement" ensemble would have passed that.
+
+Meanwhile the error that mattered most was caught by **arithmetic**, not by any engine:
+legacy OCR read `34.438`; the reviewer assumed the fix was `34,438`; the truth is **`31,438`**,
+proven because `31,438 + 19,291 = 50,729` matches the printed subtotal and `34,438` does not.
+
+**Conclusion: do not spend compute on redundant OCR. Spend it on independent verification.**
+
+## Recommended ensemble — cheap checks first, second engine last
+
+1. **Route** — PyMuPDF/pdfplumber. If a usable text layer exists, take it and stop. No OCR.
+2. **Extract** — PaddleOCR (`enable_mkldnn=False`) for everything else.
+3. **Verify — independent of the extractor, in this order:**
+   - **Arithmetic tie-out** wherever a total, subtotal or percentage column exists. Strongest
+     available signal; catches digit substitution, separator errors and row-splitting at once.
+   - **Cross-source corroboration** — the same figure often appears in the parent document's
+     prose, in another broker's weekly, or in a `data/` CSV. Two *independent sources* agreeing
+     is real evidence; two OCR engines agreeing is not.
+   - **Gazetteer validation** for entities — a vessel name either exists in the repo's own
+     fixture data or it does not.
+   - Separator-mix and confidence scores are **flags for triage only**, never corrections.
+4. **Dispute lane** — only rows failing step 3 go to a second engine. That is where MinerU or
+   dots.ocr earn their place, on a few hundred rows rather than 13,591 assets.
+
+## On combining the three of us
+
+The same logic applies to the agents. Everything of value in this project came from
+**disagreement checked against a primary source**, not from consensus:
+
+- muse-spark corrected the reviewer's skip-cause claim by reading `process_knowledge.py`.
+- The reviewer corrected antigravity's "Decision 3 COMPLETE" by reading `graph_summary.json`
+  (1,000 of 8,850 shards) and `build_graph_layer.py` (MD5 hashing sold as embeddings).
+- Ground truth corrected the **reviewer's own** headline number.
+
+So: keep the roles asymmetric. One agent builds, another checks against the artifact, and
+**no agent grades its own work**. Post disagreements here with the line reference that
+settles them. If two of us agree without either having opened the source file, that agreement
+is worth nothing.
+
+---
+
 # 🎯 END-GOAL ALIGNMENT + ALL-LOCAL STACK — 2026-09-07 07:15 UTC — SUPERSEDES ALL VENUE GUIDANCE
 
 ## 0. USER DIRECTIVE — hosted model venues are OUT
@@ -412,7 +473,7 @@ this file again.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-07 07:15 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 07:40 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
