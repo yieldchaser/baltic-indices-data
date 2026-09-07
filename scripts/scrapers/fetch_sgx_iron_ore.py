@@ -426,17 +426,18 @@ def sync_iron_ore_restocking(cont_df):
     
     for idx, row in df_restock.iterrows():
         d = row['date']
-        # If cfr_62 is missing or NaN or empty
-        if pd.isna(row.get('cfr_62')) or str(row.get('cfr_62')).strip() == '' or float(row.get('cfr_62') or 0) == 0:
-            if d in cont_map_62 and cont_map_62[d] is not None and cont_map_62[d] > 0:
-                df_restock.at[idx, 'cfr_62'] = cont_map_62[d]
-                updated_62 += 1
+        # Unconditionally synchronize with official SGX continuous daily settlement prices
+        if d in cont_map_62 and pd.notna(cont_map_62[d]) and float(cont_map_62[d]) > 0:
+            df_restock.at[idx, 'cfr_62'] = round(float(cont_map_62[d]), 2)
+            updated_62 += 1
                 
-        # If cfr_65 is missing or NaN or empty
-        if pd.isna(row.get('cfr_65')) or str(row.get('cfr_65')).strip() == '' or float(row.get('cfr_65') or 0) == 0:
-            if d in cont_map_65 and cont_map_65[d] is not None and cont_map_65[d] > 0:
-                df_restock.at[idx, 'cfr_65'] = cont_map_65[d]
-                updated_65 += 1
+        if d in cont_map_65 and pd.notna(cont_map_65[d]) and float(cont_map_65[d]) > 0:
+            df_restock.at[idx, 'cfr_65'] = round(float(cont_map_65[d]), 2)
+            updated_65 += 1
+            
+    # Forward-fill any isolated weekend/holiday dates that lacked an exact trading session
+    df_restock['cfr_62'] = df_restock['cfr_62'].ffill()
+    df_restock['cfr_65'] = df_restock['cfr_65'].ffill()
                 
     # If the latest date in cont_df is newer than the last row in restocking, append it
     last_restock_date = df_restock['date'].max()
@@ -551,6 +552,12 @@ def main():
         m65f_fut_hist = os.path.join(FUTURES_DIR, 'sgx_iron_ore_m65f_history.csv')
         save_merged_history(m65f_fut_hist, m65f_df, fef_cols)
         print(f"✔ Saved: {m65f_fut_hist} ({len(full_m65f_df):,} rows)")
+        
+        m65f_fut_live = os.path.join(FUTURES_DIR, 'sgx_iron_ore_m65f.csv')
+        m65f_latest_date = full_m65f_df['date'].max()
+        m65f_live_df = full_m65f_df[full_m65f_df['date'] == m65f_latest_date]
+        m65f_live_df[fef_cols].to_csv(m65f_fut_live, index=False)
+        print(f"✔ Saved: {m65f_fut_live} ({len(m65f_live_df):,} active rows)")
     else:
         full_m65f_df = pd.DataFrame()
 
@@ -562,6 +569,12 @@ def main():
         lpf_fut_hist = os.path.join(FUTURES_DIR, 'sgx_iron_ore_lump_lpf_history.csv')
         save_merged_history(lpf_fut_hist, lpf_df, fef_cols)
         print(f"✔ Saved: {lpf_fut_hist} ({len(full_lpf_df):,} rows)")
+        
+        lpf_fut_live = os.path.join(FUTURES_DIR, 'sgx_iron_ore_lump_lpf.csv')
+        lpf_latest_date = full_lpf_df['date'].max()
+        lpf_live_df = full_lpf_df[full_lpf_df['date'] == lpf_latest_date]
+        lpf_live_df[fef_cols].to_csv(lpf_fut_live, index=False)
+        print(f"✔ Saved: {lpf_fut_live} ({len(lpf_live_df):,} active rows)")
     else:
         full_lpf_df = pd.DataFrame()
 

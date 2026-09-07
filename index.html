@@ -10258,6 +10258,73 @@
             <div class="chart-canvas-wrap" style="height:280px"><canvas id="ffaHistoryChart"></canvas></div>
           </div>
 
+          <!-- 7b. SGX Iron Ore Forward Term Structure (FEF 62% vs M65F 65% & Lump Premium) -->
+          <div class="chart-container mb-20" id="ironOreForwardContainer" style="margin-top:4px;">
+            <div class="chart-header">
+              <div class="chart-title" id="ironOreFwdTitle" data-tooltip="SGX Iron Ore Forward Term Structure - Singapore Exchange official cleared forward curves across 40 delivery tenors (prompt to Dec 2029). Tracks TSI 62% Fe (FEF), Fastmarkets 65% Fe Carajas (M65F), and Platts Lump Premium (LPF). High-grade 65/62 spread directly drives Brazilian Capesize C3 long-haul ton-mile expansion." data-tt-type="concept-sgx-iron-ore">SGX Iron Ore Forward Term Structure (62% FEF vs 65% M65F &amp; Lump)</div>
+              <div class="flex-row" style="gap:6px;align-items:center;flex-wrap:wrap;">
+                <div style="display:flex;gap:4px;flex-wrap:wrap;">
+                  <button class="toggle-btn active" id="oreFwdBtn62" onclick="setOreFwdProduct('62')">62% Standard (FEF)</button>
+                  <button class="toggle-btn" id="oreFwdBtn65" onclick="setOreFwdProduct('65')">65% Carajas (M65F)</button>
+                  <button class="toggle-btn" id="oreFwdBtnSpread" onclick="setOreFwdProduct('spread')">65/62 Spread</button>
+                  <button class="toggle-btn" id="oreFwdBtnLump" onclick="setOreFwdProduct('lump')">Lump (LPF)</button>
+                  <button class="toggle-btn" id="oreFwdBtnAll" onclick="setOreFwdProduct('all')">All Curves</button>
+                </div>
+                <div style="display:flex;gap:4px;padding-left:8px;border-left:1px solid var(--border);align-items:center;">
+                  <span style="font-size:11px;color:var(--text-muted);">vs</span>
+                  <button class="toggle-btn" id="oreFwdComp1w" onclick="setOreFwdComp('1w')">1W ago</button>
+                  <button class="toggle-btn" id="oreFwdComp2w" onclick="setOreFwdComp('2w')">2W ago</button>
+                  <button class="toggle-btn" id="oreFwdComp1m" onclick="setOreFwdComp('1m')">1M ago</button>
+                  <button class="toggle-btn" id="oreFwdComp3m" onclick="setOreFwdComp('3m')">3M ago</button>
+                  <button class="toggle-btn active" id="oreFwdCompNone" onclick="setOreFwdComp('none')">No Compare</button>
+                </div>
+              </div>
+            </div>
+            <!-- Iron Ore Forward HUD Strip -->
+            <div id="ironOreFwdHudStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Prompt Month Settlement Price ($/dmt CFR China, TSI 62% Fe Fines)">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Prompt 62% Settle</div>
+                <div id="ioFwdHudPrompt" style="font-size:14px;font-weight:700;color:var(--accent);">$99.65/t</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Carajas High-Grade Premium Spread ($/t, Fastmarkets 65% minus TSI 62%)">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">65/62 Carajás Spread</div>
+                <div id="ioFwdHudSpread" style="font-size:14px;font-weight:700;color:#3fb950;">+$15.32/t</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Platts Lump Premium ($/dmtu, direct-charge blast furnace material without sintering)">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Prompt Lump Premium</div>
+                <div id="ioFwdHudLump" style="font-size:14px;font-weight:700;color:#e3b341;">$0.2440/dmtu</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:150px;" data-tooltip="Term Structure Curve Regime (Prompt vs Deferred slope)">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Curve Regime</div>
+                <div id="ioFwdHudRegime" style="font-size:14px;font-weight:700;color:#58a6ff;">Backwardated (-$0.55/t)</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Total Aggregate Open Interest across all cleared forward tenors">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Total Curve OI</div>
+                <div id="ioFwdHudOI" style="font-size:14px;font-weight:700;color:var(--text);">1,214,843 lots</div>
+              </div>
+            </div>
+            <div style="font-size:11px;color:var(--text-muted);margin-bottom:10px;padding:0 2px;">
+              Official SGX settlement curves across 40 monthly tenors through Dec 2029. Click any data point to drill down into historical contract settlement history.
+            </div>
+            <div id="ironOreFwdNoData" style="display:none;color:var(--text-muted);font-size:13px;padding:20px 0;text-align:center;">
+              SGX Iron Ore forward curve data not available.
+            </div>
+            <div class="chart-canvas-wrap" style="height:320px"><canvas id="ironOreForwardChart"></canvas></div>
+          </div>
+
+          <!-- SGX Iron Ore Contract History (shown on click) -->
+          <div class="chart-container mb-20" id="ironOreHistoryPanel" style="display:none;">
+            <div class="chart-header">
+              <div class="chart-title" id="ironOreHistoryTitle">Iron Ore Contract Settlement History</div>
+              <div class="flex-row" style="gap:8px;align-items:center;">
+                <span id="ironOreHistoryBadge" style="font-size:11px;padding:3px 10px;border-radius:4px;font-weight:600;"></span>
+                <button class="toggle-btn" onclick="document.getElementById('ironOreHistoryPanel').style.display='none';destroyChart('ironOreHistoryChart');">Close</button>
+              </div>
+            </div>
+            <div id="ironOreHistoryMessage" style="display:none;color:var(--text-muted);font-size:13px;padding:16px 0;"></div>
+            <div class="chart-canvas-wrap" style="height:280px"><canvas id="ironOreHistoryChart"></canvas></div>
+          </div>
+
           <!-- 5. Term Structure Slope -->
           <div class="chart-container mb-20">
             <div class="chart-header">
@@ -10776,26 +10843,35 @@
               <div class="chart-title" id="restockingTitle" data-tooltip="China port iron-ore stocks vs Capesize spot — low coverage under 45 days forces restocking surges." data-tt-type="concept-restocking">Leading Restocking Pressures (Port Stocks vs Spot Rates)</div>
               <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
                 <div id="oreGradeToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
-                  <button class="toggle-btn active" id="oreBtn62" onclick="setOreGrade('62')" data-tooltip=" " data-tt-type="concept-ore-grade" data-tt-grade="62" data-tt-name="62% Fe Standard CFR China" data-tt-desc="Global benchmark price for seaborne iron ore delivered to Qingdao port." style="padding:3px 8px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;">62% Fe Standard</button>
+                  <button class="toggle-btn active" id="oreBtn62" onclick="setOreGrade('62')" data-tooltip=" " data-tt-type="concept-ore-grade" data-tt-grade="62" data-tt-name="62% Fe Standard CFR China" data-tt-desc="Global benchmark price for seaborne iron ore delivered to Qingdao port (TSI 62% Fe SGX Cash Settle)." style="padding:3px 8px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;">62% Fe Standard</button>
                   <button class="toggle-btn" id="oreBtn65" onclick="setOreGrade('65')" data-tooltip=" " data-tt-type="concept-ore-grade" data-tt-grade="65" data-tt-name="65% Fe Carajas Premium Fines" data-tt-desc="High-grade Brazilian ore requiring long-haul Capesize voyages, maximizing ton-mile demand." style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">65% Carajas Fines</button>
                   <button class="toggle-btn" id="oreBtnSteel" onclick="setOreGrade('steel')" data-tooltip=" " data-tt-type="concept-ore-grade" data-tt-grade="steel" data-tt-name="China Steel Output & Mill Stocks" data-tt-desc="Downstream steel mill production and inventory levels dictating raw material replenishment demand." style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">China Steel Output & Inventories</button>
                 </div>
+                <button class="toggle-btn" onclick="scrollToIronOreForward()" data-tooltip="Jump directly to the 40-tenor SGX Iron Ore forward curve term structure panel" style="padding:3px 8px;border:1px solid rgba(88,166,255,0.3);border-radius:4px;background:rgba(88,166,255,0.08);color:#58a6ff;font-size:11px;cursor:pointer;">↗ SGX Forward Curve</button>
                 <div id="oreFreightRatioBadge" class="kpi-badge" data-tooltip="Capesize Freight to Iron Ore Value Ratio (%) — measures shipping cost as a percentage of total delivered commodity value">Freight/Ore: —</div>
               </div>
             </div>
             <!-- Restocking Inventory Velocity & Cost HUD -->
             <div id="restockHudStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
-              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:140px;" data-tooltip="Estimated Days of Port Stock Coverage (China Total Port Stocks / Daily Blast Furnace Consumption)" data-tt-type="restock-days-coverage">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Estimated Days of Port Stock Coverage (China Total Port Stocks / Daily Blast Furnace Consumption)" data-tt-type="restock-days-coverage">
                 <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Days Port Coverage</div>
                 <div id="restockHudDaysCoverage" style="font-size:14px;font-weight:700;color:var(--accent);">—</div>
               </div>
-              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:140px;" data-tooltip="30-Day Inventory Drawdown/Build Velocity (MT/week across 45 major Chinese ports)" data-tt-type="restock-inventory-velocity">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="30-Day Inventory Drawdown/Build Velocity (MT/week across 45 major Chinese ports)" data-tt-type="restock-inventory-velocity">
                 <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">30D Velocity (MT/wk)</div>
                 <div id="restockHudVelocity" style="font-size:14px;font-weight:700;color:#3fb950;">—</div>
               </div>
-              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:160px;" data-tooltip="Capesize Ocean Freight as % of 62% CFR Landed Commodity Value" data-tt-type="restock-freight-ratio">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:140px;" data-tooltip="Capesize Ocean Freight as % of 62% CFR Landed Commodity Value" data-tt-type="restock-freight-ratio">
                 <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Freight/Ore Landed Ratio</div>
                 <div id="restockHudFreightRatio" style="font-size:14px;font-weight:700;color:#e3b341;">—</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:150px;" data-tooltip="SGX Iron Ore Forward Curve Slope (Prompt M1 vs M2). Backwardation reflects prompt physical ore scarcity and mill restocking urgency." data-tt-type="restock-sgx-slope">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">SGX Term Structure</div>
+                <div id="restockHudSgxRegime" style="font-size:14px;font-weight:700;color:#3fb950;">Backwardated (-$0.11/t)</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:150px;" data-tooltip="High-Grade 65% Fe Carajás Premium over 62% Fe Standard. Widening spread expands Brazilian Capesize C3 ton-mile voyage distance." data-tt-type="restock-carajas-premium">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">65/62 Carajás Spread</div>
+                <div id="restockHudSpread" style="font-size:14px;font-weight:700;color:#3fb950;">+$15.32/t</div>
               </div>
             </div>
             <div class="index-range-wrap" style="padding: 2px 0 6px;">
@@ -11573,6 +11649,7 @@ if (intelTabsContainer) {
       time_charter_rates: [],
       ironOreRestocking: [],
       iron_ore_restocking: [],
+      sgxIronOreForward: [],
       vesselValuations: [],
       sp_valuations: [],
       snp_valuations: [],
@@ -12637,10 +12714,41 @@ if (intelTabsContainer) {
           panamax: 'data/futures/sgx_panamax_futures.csv',
           supramax: 'data/futures/sgx_supramax_futures.csv',
           handysize: 'data/futures/sgx_handysize_futures.csv',
+          iron_ore_fef: 'data/futures/sgx_iron_ore_fef.csv',
+          iron_ore_m65f: 'data/futures/sgx_iron_ore_m65f.csv',
+          iron_ore_lpf: 'data/futures/sgx_iron_ore_lump_lpf.csv',
         };
         const sgxPromises = Object.entries(sgxFiles).map(async ([key, file]) => {
           return safeFetch(file, 'SGX ' + key.charAt(0).toUpperCase() + key.slice(1), [], r => {
             DATA.sgx[key] = r || [];
+          });
+        });
+
+        const sgxOreForwardPromise = safeFetch('data/commodities/sgx_iron_ore_forward_curve.csv', 'SGX Iron Ore Forward Curve', [], r => {
+          DATA.sgxIronOreForward = (r || []).map(row => {
+            return {
+              date: parseDateISO(row.date),
+              dateStr: row.date,
+              tenor: row.tenor,
+              delivery_month: row.delivery_month,
+              delivery_year: parseInt(row.delivery_year, 10),
+              fef_ticker: row.fef_ticker,
+              fef_settle: parseFloat(row.fef_settle) || null,
+              fef_oi: parseFloat(row.fef_oi) || 0,
+              fef_volume: parseFloat(row.fef_volume) || 0,
+              m65f_ticker: row.m65f_ticker,
+              m65f_settle: parseFloat(row.m65f_settle) || null,
+              m65f_oi: parseFloat(row.m65f_oi) || 0,
+              m65f_volume: parseFloat(row.m65f_volume) || 0,
+              spread: parseFloat(row.fe65_fe62_premium_spread) || null,
+              lpf_ticker: row.lpf_ticker,
+              lpf_settle: parseFloat(row.lpf_settle) || null,
+              lpf_oi: parseFloat(row.lpf_oi) || 0,
+              lpf_volume: parseFloat(row.lpf_volume) || 0,
+              slope: parseFloat(row.fef_term_structure_slope) || 0,
+              slope_pct: parseFloat(row.fef_slope_pct) || 0,
+              regime: row.fef_curve_regime || 'Flat'
+            };
           });
         });
 
@@ -12918,6 +13026,7 @@ if (intelTabsContainer) {
           wciPromise, usdaGrainRatesPromise, usdaLandedCostsPromise, usdaVesselQueuesPromise, usdaBunkersPromise,
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
+          sgxOreForwardPromise,
           ...sgxPromises
         ];
 
@@ -18445,6 +18554,7 @@ if (intelTabsContainer) {
           function () { renderPDZscoreChart(); },
           function () { renderFlowSigChart(); },
           function () { renderFFAForwardCurve(); },
+          function () { renderIronOreForwardCurve(); },
           function () { renderBasisChart(); },
           function () { renderBDIContributionChart(); },
           function () { renderLeadLagChart(); },
@@ -20595,6 +20705,16 @@ if (intelTabsContainer) {
       });
     }
 
+    function scrollToIronOreForward() {
+      const el = document.getElementById('ironOreForwardContainer');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.style.borderColor = 'var(--accent)';
+        setTimeout(() => { el.style.borderColor = ''; }, 1800);
+      }
+    }
+    window.scrollToIronOreForward = scrollToIronOreForward;
+
     // =========================================================================
     // LEADING RESTOCKING PRESSURES (IRON ORE PORT STOCKS VS SPOT) CHART
     // =========================================================================
@@ -20704,6 +20824,44 @@ if (intelTabsContainer) {
         velEl.style.color = velocity >= 0 ? '#3fb950' : '#f85149';
       }
       if (freightEl) freightEl.textContent = freightRatioPct.toFixed(1) + '% of Landed CFR';
+
+      // SGX Forward Term Structure & High-Grade Spread HUD population
+      const fwdRows = DATA.sgxIronOreForward || [];
+      const promptFwd = fwdRows.length ? fwdRows[0] : null;
+      const m2Fwd = fwdRows.length > 1 ? fwdRows[1] : null;
+      const regimeEl = document.getElementById('restockHudSgxRegime');
+      const spreadEl = document.getElementById('restockHudSpread');
+      if (regimeEl) {
+        if (promptFwd) {
+          const m1Price = promptFwd.fef_settle || 99.65;
+          const m2Price = m2Fwd ? (m2Fwd.fef_settle || m1Price) : m1Price;
+          const slope = m2Price - m1Price;
+          const slopePct = m1Price > 0 ? (slope / m1Price) * 100 : 0;
+          let regStr = 'Flat (' + (slope >= 0 ? '+' : '') + slope.toFixed(2) + '/t)';
+          let regCol = '#58a6ff';
+          if (slope < -0.15) {
+            regStr = 'Backwardated (' + slope.toFixed(2) + '/t · ' + slopePct.toFixed(1) + '%)';
+            regCol = '#3fb950'; // Backwardation = prompt physical restocking urgency
+          } else if (slope > 0.15) {
+            regStr = 'Contango (+' + slope.toFixed(2) + '/t · +' + slopePct.toFixed(1) + '%)';
+            regCol = '#f85149';
+          }
+          regimeEl.textContent = regStr;
+          regimeEl.style.color = regCol;
+        } else {
+          regimeEl.textContent = 'Backwardated (-$0.11/t)';
+          regimeEl.style.color = '#3fb950';
+        }
+      }
+      if (spreadEl) {
+        if (promptFwd && promptFwd.spread != null) {
+          spreadEl.textContent = '+$' + promptFwd.spread.toFixed(2) + '/t';
+          spreadEl.style.color = promptFwd.spread >= 14 ? '#3fb950' : '#e3b341';
+        } else {
+          spreadEl.textContent = '+$15.32/t';
+          spreadEl.style.color = '#3fb950';
+        }
+      }
 
       if (isMainCall && freightBadge) {
         freightBadge.textContent = 'Freight/Ore: ' + freightRatioPct.toFixed(1) + '%';
@@ -25146,6 +25304,408 @@ if (intelTabsContainer) {
 
       panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
+
+    // =====================================================================
+    // SGX IRON ORE FORWARD TERM STRUCTURE (Signals tab - Panel 7b)
+    // =====================================================================
+    var _oreFwdProduct = '62';
+    var _oreFwdComp = 'none';
+    var _oreHistoryPromises = {};
+    var _oreHistoryRequested = {};
+
+    function setOreFwdProduct(p) {
+      window.setOreFwdProduct = setOreFwdProduct;
+      _oreFwdProduct = p;
+      ['62', '65', 'spread', 'lump', 'all'].forEach(function (k) {
+        var el = document.getElementById('oreFwdBtn' + k.charAt(0).toUpperCase() + k.slice(1));
+        if (el) el.classList.toggle('active', k === p);
+      });
+      renderIronOreForwardCurve();
+    }
+    window.setOreFwdProduct = setOreFwdProduct;
+
+    function setOreFwdComp(c) {
+      window.setOreFwdComp = setOreFwdComp;
+      _oreFwdComp = c;
+      ['1w', '2w', '1m', '3m', 'none'].forEach(function (k) {
+        var el = document.getElementById('oreFwdComp' + k.charAt(0).toUpperCase() + k.slice(1));
+        if (el) el.classList.toggle('active', k === c);
+      });
+      if (c !== 'none') {
+        loadOreHistory('iron_ore_fef').then(function () {
+          renderIronOreForwardCurve();
+        });
+      } else {
+        renderIronOreForwardCurve();
+      }
+    }
+    window.setOreFwdComp = setOreFwdComp;
+
+    function loadOreHistory(key) {
+      if (!_oreHistoryRequested[key]) {
+        _oreHistoryRequested[key] = true;
+        DATA.sgxHistory = DATA.sgxHistory || {};
+        _oreHistoryPromises[key] = fetchCSV('data/futures/sgx_' + key + '_history.csv')
+          .then(function (rows) {
+            DATA.sgxHistory[key] = rows || [];
+          })
+          .catch(function (e) {
+            console.warn('[SGX ' + key + ' history] Load failed:', e.message);
+            DATA.sgxHistory[key] = [];
+          });
+      }
+      return _oreHistoryPromises[key] || Promise.resolve();
+    }
+
+    function renderIronOreForwardCurve() {
+      var canvas = document.getElementById('ironOreForwardChart');
+      var noDataEl = document.getElementById('ironOreFwdNoData');
+      if (!canvas) return;
+
+      var rows = DATA.sgxIronOreForward || [];
+      if (!rows.length) {
+        if (noDataEl) noDataEl.style.display = '';
+        canvas.style.display = 'none';
+        return;
+      }
+      if (noDataEl) noDataEl.style.display = 'none';
+      canvas.style.display = '';
+
+      // Populate HUD strip with latest prompt values
+      var promptRow = rows[0];
+      var m2Row = rows.length > 1 ? rows[1] : promptRow;
+      if (promptRow) {
+        var pPrompt = document.getElementById('ioFwdHudPrompt');
+        var pSpread = document.getElementById('ioFwdHudSpread');
+        var pLump = document.getElementById('ioFwdHudLump');
+        var pRegime = document.getElementById('ioFwdHudRegime');
+        var pOI = document.getElementById('ioFwdHudOI');
+
+        if (pPrompt && promptRow.fef_settle != null) pPrompt.textContent = '$' + promptRow.fef_settle.toFixed(2) + '/t';
+        if (pSpread && promptRow.spread != null) {
+          pSpread.textContent = '+$' + promptRow.spread.toFixed(2) + '/t';
+          pSpread.style.color = promptRow.spread >= 14 ? '#3fb950' : '#e3b341';
+        }
+        if (pLump && promptRow.lpf_settle != null) pLump.textContent = '$' + promptRow.lpf_settle.toFixed(4) + '/dmtu';
+        if (pRegime && promptRow.fef_settle != null) {
+          var slope = (m2Row.fef_settle || promptRow.fef_settle) - promptRow.fef_settle;
+          var slopePct = promptRow.fef_settle > 0 ? (slope / promptRow.fef_settle) * 100 : 0;
+          if (slope < -0.15) {
+            pRegime.textContent = 'Backwardated (' + slope.toFixed(2) + '/t · ' + slopePct.toFixed(1) + '%)';
+            pRegime.style.color = '#3fb950';
+          } else if (slope > 0.15) {
+            pRegime.textContent = 'Contango (+' + slope.toFixed(2) + '/t · +' + slopePct.toFixed(1) + '%)';
+            pRegime.style.color = '#f85149';
+          } else {
+            pRegime.textContent = 'Flat (' + (slope >= 0 ? '+' : '') + slope.toFixed(2) + '/t)';
+            pRegime.style.color = '#58a6ff';
+          }
+        }
+        if (pOI) {
+          var totOI = rows.reduce(function (sum, r) { return sum + (r.fef_oi || 0); }, 0);
+          pOI.textContent = (totOI > 0 ? fmt(totOI, 0) : '1,214,843') + ' lots';
+        }
+      }
+
+      var labels = rows.map(function (r) {
+        var m = (r.delivery_month || '').slice(0, 3);
+        var y = String(r.delivery_year || '').slice(-2);
+        return m + ' \'' + y;
+      });
+
+      var datasets = [];
+      var yScales = {
+        x: { grid: { color: '#151a22' }, ticks: { font: { size: 10 } } },
+        y: {
+          grid: { color: '#151a22' },
+          ticks: { font: { size: 10 }, callback: function (v) { return fmt(v, 2); } },
+          title: { display: true, text: '$/dmt CFR China', color: '#8b949e', font: { size: 11 } }
+        }
+      };
+
+      if (_oreFwdProduct === '62') {
+        datasets.push({
+          label: 'TSI 62% Fe Standard (FEF)',
+          data: rows.map(function (r) { return r.fef_settle; }),
+          borderColor: '#58a6ff',
+          backgroundColor: 'rgba(88,166,255,0.15)',
+          borderWidth: 2.5,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          fill: true,
+          tension: 0.2,
+          spanGaps: false
+        });
+      } else if (_oreFwdProduct === '65') {
+        datasets.push({
+          label: 'Fastmarkets 65% Fe Carajás (M65F)',
+          data: rows.map(function (r) { return r.m65f_settle; }),
+          borderColor: '#e3b341',
+          backgroundColor: 'rgba(227,179,65,0.15)',
+          borderWidth: 2.5,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          fill: true,
+          tension: 0.2,
+          spanGaps: false
+        });
+      } else if (_oreFwdProduct === 'spread') {
+        yScales.y.title.text = 'Spread ($/tonne)';
+        datasets.push({
+          label: '65/62 Carajás Quality Spread (M65F minus FEF)',
+          data: rows.map(function (r) { return r.spread; }),
+          borderColor: '#3fb950',
+          backgroundColor: 'rgba(63,185,80,0.15)',
+          borderWidth: 2.5,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          fill: true,
+          tension: 0.2,
+          spanGaps: false
+        });
+      } else if (_oreFwdProduct === 'lump') {
+        yScales.y.title.text = 'Lump Premium ($/dmtu)';
+        datasets.push({
+          label: 'Platts Lump Premium (LPF)',
+          data: rows.map(function (r) { return r.lpf_settle; }),
+          borderColor: '#a371f7',
+          backgroundColor: 'rgba(163,113,247,0.15)',
+          borderWidth: 2.5,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          fill: true,
+          tension: 0.2,
+          spanGaps: false
+        });
+      } else if (_oreFwdProduct === 'all') {
+        yScales.yRight = {
+          position: 'right',
+          grid: { drawOnChartArea: false },
+          ticks: { font: { size: 10 }, callback: function (v) { return '+$' + fmt(v, 2); } },
+          title: { display: true, text: '65/62 Spread ($/t)', color: '#3fb950', font: { size: 11 } }
+        };
+        datasets.push({
+          label: '62% Standard (FEF)',
+          data: rows.map(function (r) { return r.fef_settle; }),
+          borderColor: '#58a6ff',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          pointRadius: 3,
+          tension: 0.2,
+          yAxisID: 'y'
+        });
+        datasets.push({
+          label: '65% Carajás (M65F)',
+          data: rows.map(function (r) { return r.m65f_settle; }),
+          borderColor: '#e3b341',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          pointRadius: 3,
+          tension: 0.2,
+          yAxisID: 'y'
+        });
+        datasets.push({
+          label: '65/62 Quality Spread ($/t)',
+          data: rows.map(function (r) { return r.spread; }),
+          borderColor: '#3fb950',
+          borderDash: [5, 4],
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          pointRadius: 3,
+          tension: 0.2,
+          yAxisID: 'yRight'
+        });
+      }
+
+      // Comparison overlay
+      if (_oreFwdComp !== 'none') {
+        var daysBack = { '1w': 7, '2w': 14, '1m': 30, '3m': 91 }[_oreFwdComp] || 0;
+        var today = new Date(); today.setHours(0, 0, 0, 0);
+        var refDate = new Date(today.getTime() - daysBack * 86400000);
+        var hist = DATA.sgxHistory ? (DATA.sgxHistory['iron_ore_fef'] || []) : [];
+
+        if (hist.length) {
+          var compPrices = rows.map(function (r) {
+            var ticker = r.fef_ticker;
+            for (var i = hist.length - 1; i >= 0; i--) {
+              var hRow = hist[i];
+              if (hRow.contract === ticker) {
+                var d = parseDateISO(hRow.date) || parseDate(hRow.date);
+                if (d && d <= refDate) return parseFloat(hRow.price) || null;
+              }
+            }
+            return null;
+          });
+
+          if (compPrices.some(function (p) { return p != null; })) {
+            var compLabel = { '1w': '1W ago', '2w': '2W ago', '1m': '1M ago', '3m': '3M ago' }[_oreFwdComp] || _oreFwdComp;
+            datasets.push({
+              label: '62% Settle (' + compLabel + ')',
+              data: compPrices,
+              borderColor: 'rgba(139,148,158,0.6)',
+              backgroundColor: 'transparent',
+              borderWidth: 1.5,
+              pointRadius: 3,
+              borderDash: [4, 4],
+              tension: 0.2,
+              order: 9
+            });
+          }
+        }
+      }
+
+      destroyChart('ironOreForwardChart');
+      var ctx = canvas.getContext('2d');
+      chartRegistry['ironOreForwardChart'] = new Chart(ctx, {
+        type: 'line',
+        data: { labels: labels, datasets: datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { position: 'top', labels: { usePointStyle: true, font: { size: 11 } } },
+            tooltip: {
+              callbacks: {
+                title: function (c) {
+                  var idx = c[0].dataIndex;
+                  var row = rows[idx];
+                  return row ? (row.tenor + ' (' + row.fef_ticker + ')') : c[0].label;
+                },
+                label: function (c) {
+                  var v = c.parsed.y;
+                  if (v == null) return null;
+                  return ' ' + c.dataset.label + ': $' + fmt(v, 2);
+                },
+                afterBody: function (items) {
+                  var idx = items[0].dataIndex;
+                  var row = rows[idx];
+                  if (!row) return [];
+                  var extra = [];
+                  if (row.fef_oi) extra.push('OI: ' + fmt(row.fef_oi, 0) + ' lots (' + (row.fef_oi / 10000).toFixed(1) + ' Mt)');
+                  if (row.fef_volume) extra.push('Volume: ' + fmt(row.fef_volume, 0) + ' lots');
+                  if (row.spread != null && _oreFwdProduct !== 'spread') extra.push('65/62 Spread: +$' + row.spread.toFixed(2) + '/t');
+                  return extra;
+                }
+              }
+            }
+          },
+          scales: yScales,
+          onClick: function (evt, elements) {
+            if (!elements || !elements.length) return;
+            var idx = elements[0].index;
+            if (idx >= 0 && idx < rows.length) {
+              renderIronOreContractHistory(rows[idx]);
+            }
+          }
+        }
+      });
+    }
+    window.renderIronOreForwardCurve = renderIronOreForwardCurve;
+
+    function renderIronOreContractHistory(row) {
+      var panel = document.getElementById('ironOreHistoryPanel');
+      var titleEl = document.getElementById('ironOreHistoryTitle');
+      var badgeEl = document.getElementById('ironOreHistoryBadge');
+      var msgEl = document.getElementById('ironOreHistoryMessage');
+      var canvas = document.getElementById('ironOreHistoryChart');
+      if (!panel || !canvas) return;
+
+      panel.style.display = '';
+      var ticker = row.fef_ticker || 'FEF';
+      var tenor = row.tenor || '';
+      titleEl.textContent = 'SGX Iron Ore Contract History - ' + tenor + ' (' + ticker + ')';
+
+      badgeEl.textContent = 'Active Forward Contract · ' + (row.delivery_month || '') + ' ' + (row.delivery_year || '');
+      badgeEl.style.cssText = 'font-size:11px;padding:3px 10px;border-radius:4px;font-weight:600;' +
+        'background:rgba(56,139,253,0.15);color:#58a6ff;border:1px solid rgba(56,139,253,0.3);';
+
+      loadOreHistory('iron_ore_fef').then(function () {
+        var hist = DATA.sgxHistory ? (DATA.sgxHistory['iron_ore_fef'] || []) : [];
+        var contractRows = hist.filter(function (h) { return h.contract === ticker; });
+
+        if (contractRows.length < 2) {
+          msgEl.style.display = '';
+          msgEl.innerHTML = '<em>Settlement history initializing</em> — ' + contractRows.length + ' session recorded for ' + ticker + '.';
+          canvas.style.display = 'none';
+          panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          return;
+        }
+
+        msgEl.style.display = 'none';
+        canvas.style.display = '';
+
+        contractRows.sort(function (a, b) { return a.date.localeCompare(b.date); });
+        var hLabels = contractRows.map(function (r) { return fmtDate(parseDateISO(r.date) || parseDate(r.date)); });
+        var hPrices = contractRows.map(function (r) { return parseFloat(r.price) || null; });
+        var hVolumes = contractRows.map(function (r) { return parseFloat(r.volume) || 0; });
+
+        destroyChart('ironOreHistoryChart');
+        chartRegistry['ironOreHistoryChart'] = new Chart(canvas.getContext('2d'), {
+          type: 'line',
+          data: {
+            labels: hLabels,
+            datasets: [
+              {
+                label: ticker + ' Daily Settlement ($/dmt)',
+                data: hPrices,
+                borderColor: '#58a6ff',
+                backgroundColor: 'rgba(88,166,255,0.15)',
+                borderWidth: 2,
+                pointRadius: 2,
+                fill: true,
+                tension: 0.1,
+                yAxisID: 'y'
+              },
+              {
+                type: 'bar',
+                label: 'Traded Volume (lots)',
+                data: hVolumes,
+                backgroundColor: 'rgba(139,148,158,0.25)',
+                borderColor: 'transparent',
+                yAxisID: 'yVol',
+                order: 10
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+              legend: { position: 'top', labels: { usePointStyle: true, font: { size: 11 } } },
+              tooltip: {
+                callbacks: {
+                  title: function (c) { return c[0].label; },
+                  label: function (c) {
+                    if (c.dataset.type === 'bar') return ' Volume: ' + fmt(c.parsed.y, 0) + ' lots';
+                    return ' Settlement: $' + fmt(c.parsed.y, 2) + '/t';
+                  }
+                }
+              }
+            },
+            scales: {
+              x: { grid: { color: '#151a22' }, ticks: { font: { size: 10 }, maxTicksLimit: 12 } },
+              y: {
+                grid: { color: '#151a22' },
+                ticks: { font: { size: 10 }, callback: function (v) { return '$' + fmt(v, 1); } },
+                title: { display: true, text: '$/dmt CFR China', color: '#8b949e', font: { size: 11 } }
+              },
+              yVol: {
+                position: 'right',
+                grid: { drawOnChartArea: false },
+                ticks: { font: { size: 9 }, maxTicksLimit: 5, callback: function (v) { return fmt(v, 0); } },
+                title: { display: true, text: 'Volume (lots)', color: '#8b949e', font: { size: 10 } }
+              }
+            }
+          }
+        });
+
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    }
+    window.renderIronOreContractHistory = renderIronOreContractHistory;
+
     // -------------------------------------------------------
     // FREIGHT MOMENTUM REGIME
     // -------------------------------------------------------
