@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-06T06:35:21.131368+00:00",
+  "pipeline_version": "V2 - Tri-Model Ensemble + Piecewise Tick Anchoring + Two-Pass Debate",
+  "metrics": {
+    "total_points": 147,
+    "avg_confidence_v1": 86.7,
+    "avg_confidence_v2": 91.39387755102042,
+    "pass_rate_v1_pct": 17.7,
+    "pass_rate_v2_pct": 78.91156462585033,
+    "review_rate_v1_pct": 82.3,
+    "review_rate_v2_pct": 21.08843537414966
+  },
+  "output_csv": "data/derived/cascade_dry_run\\star_asia_chart_v2_reconciled.csv"
+}

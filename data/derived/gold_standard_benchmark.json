@@ -1,0 +1,437 @@
+{
+  "metadata": {
+    "description": "Hand-digitized & authoritatively reported ground truth benchmark",
+    "total_verified_points": 185,
+    "sources_count": 7
+  },
+  "benchmarks": [
+    {
+      "chart_id": "star_asia_w35_p11_ldt_anchors",
+      "source_pdf": "reports/shipbrokers/star_asia/2026/star_asia_2026_W35_Market-Report-Week-35.pdf",
+      "page": 11,
+      "type": "annual_ldt_totals",
+      "points": [
+        {
+          "year": 2022,
+          "hub": "Alang",
+          "metric": "annual_ldt",
+          "value": 676243.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2023,
+          "hub": "Alang",
+          "metric": "annual_ldt",
+          "value": 519090.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2024,
+          "hub": "Alang",
+          "metric": "annual_ldt",
+          "value": 792877.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2025,
+          "hub": "Alang",
+          "metric": "annual_ldt",
+          "value": 1312861.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2026,
+          "hub": "Alang",
+          "metric": "ytd_8m_ldt",
+          "value": 685723.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2022,
+          "hub": "Chattogram",
+          "metric": "annual_ldt",
+          "value": 731741.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2023,
+          "hub": "Chattogram",
+          "metric": "annual_ldt",
+          "value": 736036.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2024,
+          "hub": "Chattogram",
+          "metric": "annual_ldt",
+          "value": 614561.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2025,
+          "hub": "Chattogram",
+          "metric": "annual_ldt",
+          "value": 850330.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2026,
+          "hub": "Chattogram",
+          "metric": "ytd_8m_ldt",
+          "value": 653724.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2022,
+          "hub": "Pakistan",
+          "metric": "annual_ldt",
+          "value": 393510.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2023,
+          "hub": "Pakistan",
+          "metric": "annual_ldt",
+          "value": 81573.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2024,
+          "hub": "Pakistan",
+          "metric": "annual_ldt",
+          "value": 183811.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2025,
+          "hub": "Pakistan",
+          "metric": "annual_ldt",
+          "value": 115126.0,
+          "source": "Chart 1 label"
+        },
+        {
+          "year": 2026,
+          "hub": "Pakistan",
+          "metric": "ytd_8m_ldt",
+          "value": 70949.0,
+          "source": "Chart 1 label"
+        }
+      ]
+    },
+    {
+      "chart_id": "star_asia_w35_p4_dry_bulk_tc",
+      "source_pdf": "reports/shipbrokers/star_asia/2026/star_asia_2026_W35_Market-Report-Week-35.pdf",
+      "page": 4,
+      "type": "dry_bulk_1y_tc_annual_averages",
+      "points": [
+        {
+          "segment": "Capesize",
+          "year": 2022,
+          "value": 22350.0
+        },
+        {
+          "segment": "Capesize",
+          "year": 2023,
+          "value": 16300.0
+        },
+        {
+          "segment": "Capesize",
+          "year": 2024,
+          "value": 22715.0
+        },
+        {
+          "segment": "Capesize",
+          "year": 2025,
+          "value": 21650.0
+        },
+        {
+          "segment": "Capesize",
+          "year": 2026,
+          "value": 34500.0
+        },
+        {
+          "segment": "Panamax",
+          "year": 2022,
+          "value": 20550.0
+        },
+        {
+          "segment": "Panamax",
+          "year": 2023,
+          "value": 14725.0
+        },
+        {
+          "segment": "Panamax",
+          "year": 2024,
+          "value": 16355.0
+        },
+        {
+          "segment": "Panamax",
+          "year": 2025,
+          "value": 14385.0
+        },
+        {
+          "segment": "Panamax",
+          "year": 2026,
+          "value": 17650.0
+        }
+      ]
+    },
+    {
+      "chart_id": "star_asia_w35_p7_tanker_tc",
+      "source_pdf": "reports/shipbrokers/star_asia/2026/star_asia_2026_W35_Market-Report-Week-35.pdf",
+      "page": 7,
+      "type": "tanker_1y_tc_annual_averages",
+      "points": [
+        {
+          "segment": "VLCC",
+          "year": 2022,
+          "value": 25215.0
+        },
+        {
+          "segment": "VLCC",
+          "year": 2023,
+          "value": 41550.0
+        },
+        {
+          "segment": "VLCC",
+          "year": 2024,
+          "value": 45950.0
+        },
+        {
+          "segment": "VLCC",
+          "year": 2025,
+          "value": 45075.0
+        },
+        {
+          "segment": "VLCC",
+          "year": 2026,
+          "value": 121000.0
+        },
+        {
+          "segment": "Suezmax",
+          "year": 2022,
+          "value": 25645.0
+        },
+        {
+          "segment": "Suezmax",
+          "year": 2023,
+          "value": 40625.0
+        },
+        {
+          "segment": "Suezmax",
+          "year": 2024,
+          "value": 41175.0
+        },
+        {
+          "segment": "Suezmax",
+          "year": 2025,
+          "value": 35685.0
+        },
+        {
+          "segment": "Suezmax",
+          "year": 2026,
+          "value": 73500.0
+        }
+      ]
+    },
+    {
+      "chart_id": "advanced_shipping_w36_p5_demolition_rates",
+      "source_pdf": "reports/shipbrokers/advanced_shipping/2026/advanced_shipping_2026_W36_ADVANCED-MARKET-REPORT-WEEK-36.pdf",
+      "page": 5,
+      "type": "indicative_scrap_prices",
+      "points": [
+        {
+          "country": "India",
+          "segment": "Bulkers",
+          "value": 440.0
+        },
+        {
+          "country": "India",
+          "segment": "Tankers",
+          "value": 455.0
+        },
+        {
+          "country": "Bangladesh",
+          "segment": "Bulkers",
+          "value": 455.0
+        },
+        {
+          "country": "Bangladesh",
+          "segment": "Tankers",
+          "value": 500.0
+        },
+        {
+          "country": "Pakistan",
+          "segment": "Bulkers",
+          "value": 480.0
+        },
+        {
+          "country": "Pakistan",
+          "segment": "Tankers",
+          "value": 490.0
+        },
+        {
+          "country": "Turkey",
+          "segment": "Bulkers",
+          "value": 265.0
+        },
+        {
+          "country": "Turkey",
+          "segment": "Tankers",
+          "value": 275.0
+        }
+      ]
+    },
+    {
+      "chart_id": "advanced_shipping_w36_p5_fixtures",
+      "source_pdf": "reports/shipbrokers/advanced_shipping/2026/advanced_shipping_2026_W36_ADVANCED-MARKET-REPORT-WEEK-36.pdf",
+      "page": 5,
+      "type": "demolition_fixture_transactions",
+      "points": [
+        {
+          "vessel": "BR Glory",
+          "dwt": 22273,
+          "ldt": 5000,
+          "price_ldt": 510.0,
+          "dest": "Pakistan",
+          "gross_usd": 2550000.0
+        },
+        {
+          "vessel": "Athena",
+          "dwt": 7902,
+          "ldt": 2557,
+          "price_ldt": 540.0,
+          "dest": "Bangladesh",
+          "gross_usd": 1380780.0
+        }
+      ]
+    },
+    {
+      "chart_id": "allied_w7_p9_fixtures",
+      "source_pdf": "reports/shipbrokers/allied/2024/allied_2024_W07_Allied-Weekly-Market-Review-Week-07.pdf",
+      "page": 9,
+      "type": "secondhand_sales",
+      "points": [
+        {
+          "vessel": "ST. ANDREW",
+          "type": "HANDY",
+          "dwt": 32751,
+          "yob": 2010,
+          "buyer": "Greek"
+        },
+        {
+          "vessel": "LAGO DI LUGANO",
+          "type": "HANDY",
+          "dwt": 32271,
+          "yob": 2008,
+          "price_usd_m": 10.5
+        },
+        {
+          "vessel": "MISTRAL",
+          "type": "FEEDER",
+          "teu": 868,
+          "yob": 2008,
+          "price_usd_m": 9.0
+        }
+      ]
+    },
+    {
+      "chart_id": "star_asia_w35_p11_unlabelled_curve_anchors",
+      "source_pdf": "reports/shipbrokers/star_asia/2026/star_asia_2026_W35_Market-Report-Week-35.pdf",
+      "page": 11,
+      "type": "visual_landmark_pixel_anchors",
+      "points": [
+        {
+          "date": "2022-08-01",
+          "series": "Chattogram",
+          "pixel_y": 528.0,
+          "gt_mt": 90594.0
+        },
+        {
+          "date": "2022-08-01",
+          "series": "Alang",
+          "pixel_y": 572.0,
+          "gt_mt": 25247.0
+        },
+        {
+          "date": "2022-08-01",
+          "series": "Gadani",
+          "pixel_y": 589.0,
+          "gt_mt": 0.0
+        },
+        {
+          "date": "2023-05-01",
+          "series": "Chattogram",
+          "pixel_y": 219.0,
+          "gt_mt": 549505.0
+        },
+        {
+          "date": "2023-05-01",
+          "series": "Alang",
+          "pixel_y": 552.0,
+          "gt_mt": 54950.0
+        },
+        {
+          "date": "2023-05-01",
+          "series": "Gadani",
+          "pixel_y": 589.0,
+          "gt_mt": 0.0
+        },
+        {
+          "date": "2024-05-01",
+          "series": "Alang",
+          "pixel_y": 414.0,
+          "gt_mt": 259901.0
+        },
+        {
+          "date": "2024-05-01",
+          "series": "Chattogram",
+          "pixel_y": 496.0,
+          "gt_mt": 138119.0
+        },
+        {
+          "date": "2024-05-01",
+          "series": "Gadani",
+          "pixel_y": 545.0,
+          "gt_mt": 65346.0
+        },
+        {
+          "date": "2025-11-01",
+          "series": "Alang",
+          "pixel_y": 461.0,
+          "gt_mt": 190099.0
+        },
+        {
+          "date": "2025-11-01",
+          "series": "Chattogram",
+          "pixel_y": 569.0,
+          "gt_mt": 29703.0
+        },
+        {
+          "date": "2025-11-01",
+          "series": "Gadani",
+          "pixel_y": 570.0,
+          "gt_mt": 28218.0
+        },
+        {
+          "date": "2026-08-01",
+          "series": "Alang",
+          "pixel_y": 520.0,
+          "gt_mt": 102475.0
+        },
+        {
+          "date": "2026-08-01",
+          "series": "Chattogram",
+          "pixel_y": 505.0,
+          "gt_mt": 124752.0
+        },
+        {
+          "date": "2026-08-01",
+          "series": "Gadani",
+          "pixel_y": 581.0,
+          "gt_mt": 11881.0
+        }
+      ]
+    }
+  ]
+}

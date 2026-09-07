@@ -395,10 +395,10 @@ else:
     print("[WARNING] AMPLIFY_FIRESTORE_API_KEY not set - falling back to embedded key")
     AMPLIFY_FIRESTORE_API_KEY = _EMBEDDED_FIRESTORE_API_KEY
 
-def fetch_official_firestore_master_feed() -> bytes:
+def fetch_official_firestore_master_feed(eval_date_limit: Optional[str] = None) -> bytes:
     """
     Queries Amplify's official Firestore REST API (which powers amplifyetfs.com)
-    for the latest published constituent holdings of BDRY and BWET.
+    for the latest published constituent holdings of BDRY and BWET on or before eval_date_limit.
     Returns canonical master CSV bytes.
     """
     base_url = f"https://firestore.googleapis.com/v1/projects/{AMPLIFY_FIRESTORE_PROJECT_ID}/databases/(default)/documents"
@@ -410,7 +410,7 @@ def fetch_official_firestore_master_feed() -> bytes:
             "structuredQuery": {
                 "from": [{"collectionId": "holdings"}],
                 "orderBy": [{"field": {"fieldPath": "__name__"}, "direction": "DESCENDING"}],
-                "limit": 1
+                "limit": 5
             }
         }
         r = requests.post(url, json=payload, headers=HEADERS, timeout=20)
@@ -418,10 +418,18 @@ def fetch_official_firestore_master_feed() -> bytes:
             raise RuntimeError(f"Amplify Firestore query failed for {ticker}: HTTP {r.status_code} - {r.text[:200]}")
             
         results = r.json()
-        if not results or "document" not in results[0]:
-            raise RuntimeError(f"No holdings document returned by Amplify Firestore for {ticker}")
+        selected_doc = None
+        for res in results:
+            if "document" in res:
+                cand_doc = res["document"]
+                cand_id = cand_doc["name"].split("/")[-1]
+                if not eval_date_limit or cand_id <= eval_date_limit:
+                    selected_doc = cand_doc
+                    break
+        if not selected_doc:
+            raise RuntimeError(f"No holdings document <= {eval_date_limit} returned by Amplify Firestore for {ticker}")
             
-        doc = results[0]["document"]
+        doc = selected_doc
         doc_id = doc["name"].split("/")[-1]
         fields = doc.get("fields", {})
         holdings = fields.get("holdings", {}).get("arrayValue", {}).get("values", [])
@@ -550,7 +558,7 @@ def run_update_pipeline(
     else:
         try:
             print("Fetching live constituent holdings from Amplify official Firestore API...")
-            raw_bytes = fetch_official_firestore_master_feed()
+            raw_bytes = fetch_official_firestore_master_feed(eval_date_limit=eval_date_str)
             print(f"[OK] Fetched {len(raw_bytes)} bytes from Amplify official Firestore API")
         except Exception as e:
             print(f"ERROR fetching official Firestore feed: {e}")

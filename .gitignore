@@ -57,4 +57,5 @@ data/bunkers/bunker_master_historical.json
 data/reports/*/pdfs/
 data/raw/
 scripts/drewry_ais_pdfs/
+reports/shipbrokers/**/*.pdf
 

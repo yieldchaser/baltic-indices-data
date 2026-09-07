@@ -1,466 +1,248 @@
-year,week,sale_date,vessel_name,vessel_type,build_date,seller,source
-2026,32,8/9/2026,Cutta,HANDY TANKER,Feb 2001,Mars Adventure,ShipAndBunker_VesselsValue
-2026,32,8/7/2026,Star,GEN CARGO,Jan 1996,Star Marine,ShipAndBunker_VesselsValue
-2026,32,8/7/2026,En Ji 17,SMALL HANDY,May 2006,Enji Shipping Development,ShipAndBunker_VesselsValue
-2026,32,8/7/2026,Sagar Vijay,DRILLSHIP,Feb 1985,Oil and Natural Gas Company,ShipAndBunker_VesselsValue
-2026,32,8/7/2026,Asia Cement No 3,SMALL HANDY,May 1989,U Ming Marine Transport,ShipAndBunker_VesselsValue
-2026,35,9/1/2026,Gas Aura,FULLY PRESSURISED,Mar 1996,ChemGasFleet,ShipAndBunker_VesselsValue
-2026,35,8/31/2026,FK Sila,GEN CARGO,Sep 1982,H&P Ship Management,ShipAndBunker_VesselsValue
-2026,35,8/30/2026,Crimson Saturn,SUPRAMAX,Oct 2001,Hachiuma Steamship,ShipAndBunker_VesselsValue
-2026,35,8/28/2026,BR Glory,HANDY BULKER,Feb 1990,VRS Maritime Services DMCC,ShipAndBunker_VesselsValue
-2026,31,8/5/2026,Lady Jasmine,MPP,Aug 1984,Blue Fleet Shipping,ShipAndBunker_VesselsValue
-2026,31,8/4/2026,Gordion,GEN CARGO,Dec 1992,U Gemi Kiralama ve Ticaret,ShipAndBunker_VesselsValue
-2026,31,8/3/2026,Fortune8,GEN CARGO,Aug 2005,Mu Mu Ship Management,ShipAndBunker_VesselsValue
-2026,31,8/3/2026,Double In,VLGC,Mar 1992,Science Obedient Oriental,ShipAndBunker_VesselsValue
-2026,31,8/3/2026,Frio Naruto,REEFER,Jan 1996,Baltmed Reefer Services,ShipAndBunker_VesselsValue
-2026,31,8/3/2026,Orange Link,SMALL HANDY,Apr 2006,Orange Marine,ShipAndBunker_VesselsValue
-2026,31,8/3/2026,Wang Chi,HANDY TANKER,Apr 2004,COSCO Shipping Energy Transportation,ShipAndBunker_VesselsValue
-2026,31,8/3/2026,Uluc Ka,HANDY TANKER,Jul 2001,Trans KA Tanker Management,ShipAndBunker_VesselsValue
-2026,31,7/31/2026,FT Island,VLCC,Jul 1998,Asia Affluence,ShipAndBunker_VesselsValue
-2026,31,7/31/2026,Shanghai,AFRAMAX,Mar 2002,Undisclosed,ShipAndBunker_VesselsValue
-2026,33,8/17/2026,Sheng Chi,HANDY TANKER,Dec 2003,COSCO Shipping Energy Transportation,ShipAndBunker_VesselsValue
-2026,33,8/17/2026,Tai Hang 3,PANAMAX BULKER,Apr 1997,Taihang Shipping,ShipAndBunker_VesselsValue
-2026,33,8/17/2026,Shiryu Maru,PALLETISED,Mar 1993,JFE Holdings,ShipAndBunker_VesselsValue
-2026,33,8/15/2026,Maria,HANDY BULKER,Apr 1997,Undisclosed,ShipAndBunker_VesselsValue
-2026,33,8/14/2026,Elpis,CRUISEFERRY,Apr 1976,Hoiyu International Group,ShipAndBunker_VesselsValue
-2026,33,8/14/2026,En Jie 7,HANDY BULKER,Sep 2012,Zhejiang Enjie Shipping,ShipAndBunker_VesselsValue
-2026,33,8/14/2026,Fuji,SMALL TANKER,Dec 1993,YSK Marine,ShipAndBunker_VesselsValue
-2026,33,8/14/2026,Green Stars,HANDY TANKER,Feb 2001,Waruna Nusa Sentana,ShipAndBunker_VesselsValue
-2026,30,7/28/2026,SSL Visakhapatnam,HANDY CONTAINER,Dec 1996,Transworld Shipping Lines,ShipAndBunker_VesselsValue
-2026,30,7/27/2026,Kronprins Frederik,ROPAX FERRY,Apr 1981,Scandlines,ShipAndBunker_VesselsValue
-2026,30,7/26/2026,Foshan,SMALL TANKER,Feb 2007,Undisclosed,ShipAndBunker_VesselsValue
-2026,30,7/24/2026,Hai Heng,SMALL TANKER,Jun 1999,Kwong Tai Lung Investment,ShipAndBunker_VesselsValue
-2026,30,7/24/2026,Buraaq,SMALL TANKER,Oct 1994,Omniya Marine,ShipAndBunker_VesselsValue
-2026,30,7/24/2026,Thanh Thanh Dat 999,HANDY BULKER,Oct 2001,Thanh Thanh Dat,ShipAndBunker_VesselsValue
-2026,30,7/24/2026,Forever,AFRAMAX,Nov 1997,Forever Shipping Group,ShipAndBunker_VesselsValue
-2026,29,7/19/2026,Ever Delight,GEN CARGO,Dec 2009,Best Solution,ShipAndBunker_VesselsValue
-2026,29,7/18/2026,Bagus,GEN CARGO,Sep 1991,Vesa Marine,ShipAndBunker_VesselsValue
-2026,29,7/18/2026,Ela,SUEZMAX,Apr 2001,Undisclosed,ShipAndBunker_VesselsValue
-2026,29,7/16/2026,Ninova,GEN CARGO,Jun 1989,U Gemi Kiralama ve Ticaret,ShipAndBunker_VesselsValue
-2026,28,7/13/2026,Jin Hai Ou,HANDYMAX,Jan 1997,FUSCO,ShipAndBunker_VesselsValue
-2026,28,7/13/2026,Dina Ocean,HANDY BULKER,Jul 1998,Hubei Qin Tai Shipping,ShipAndBunker_VesselsValue
-2026,28,7/13/2026,Su Shun,FULLY PRESSURISED,Oct 1998,Glory Seas Shipping,ShipAndBunker_VesselsValue
-2026,28,7/12/2026,Bulan,HANDY BULKER,May 1995,Jin Hao Ship Management,ShipAndBunker_VesselsValue
-2026,28,7/12/2026,Seabas,HANDY TANKER,Nov 2001,Etihad,ShipAndBunker_VesselsValue
-2026,28,7/9/2026,Seaturbo,HANDY TANKER,Jun 2000,Etihad,ShipAndBunker_VesselsValue
-2026,28,7/9/2026,Stolt Kikyo,SMALL TANKER,Jul 1998,NYK Stolt Shipholdings Inc,ShipAndBunker_VesselsValue
-2026,26,6/29/2026,Basel Athena,MPP,Feb 1999,Medway Ship Management,ShipAndBunker_VesselsValue
-2026,26,6/29/2026,Bao Dat Thanh 99,HANDYMAX,Jan 1997,Thanh Thanh Dat,ShipAndBunker_VesselsValue
-2026,26,6/28/2026,Hai Xu,GEN CARGO,May 1996,Hong Kong King Sail Shipping,ShipAndBunker_VesselsValue
-2026,26,6/27/2026,Akdeniz,ROPAX FERRY,Jan 1979,IHH,ShipAndBunker_VesselsValue
-2026,26,6/27/2026,Asian Gas II,FULLY PRESSURISED,Nov 1995,Tanker Armada Nusanatra,ShipAndBunker_VesselsValue
-2026,26,6/26/2026,Wantong 497,MPP,Nov 1986,Wantong International Group,ShipAndBunker_VesselsValue
-2026,26,6/26/2026,FPSO Cidade de Niteroi MV18,FPSO TANKER,Nov 1986,Modec Inc,ShipAndBunker_VesselsValue
-2026,26,6/26/2026,Aeolos Kenteris II,ROPAX FERRY,Jul 2001,Undisclosed,ShipAndBunker_VesselsValue
-2026,27,7/8/2026,Meili,GEN CARGO,Sep 1988,Powick Shipping,ShipAndBunker_VesselsValue
-2026,27,7/6/2026,Liva,GEN CARGO,Jan 1977,Fana Shipping & Trade,ShipAndBunker_VesselsValue
-2026,27,7/6/2026,Agnes,GEN CARGO,Jan 1978,Mes Marine,ShipAndBunker_VesselsValue
-2026,27,7/3/2026,Avunda Reefer,REEFER,Feb 1994,Yugreftransflot JSC,ShipAndBunker_VesselsValue
-2026,27,7/3/2026,Frio Antarctic,REEFER,Jan 1996,Baltmed Reefer Services,ShipAndBunker_VesselsValue
-2026,27,7/3/2026,Yue Chi,HANDY TANKER,Mar 2006,COSCO Shipping Energy Transportation,ShipAndBunker_VesselsValue
-2026,27,7/3/2026,Fei Chi,HANDY TANKER,Dec 2005,COSCO Shipping Energy Transportation,ShipAndBunker_VesselsValue
-2026,27,7/3/2026,Pine Arrow,HANDYMAX,Jul 1996,Gearbulk Holding AG,ShipAndBunker_VesselsValue
-2026,27,7/3/2026,J Chen,MPP (HEAVY LIFT),Apr 1996,J Chen Shipping HK,ShipAndBunker_VesselsValue
-2026,27,7/2/2026,Ladonna,HANDY BULKER,Apr 1995,Lora Shipping,ShipAndBunker_VesselsValue
-2026,27,7/2/2026,Stolt Sypress,HANDY TANKER,Apr 1998,Stolt Tankers,ShipAndBunker_VesselsValue
-2026,34,8/25/2026,Athena,SMALL TANKER,Sep 1992,Leader Star Trading,ShipAndBunker_VesselsValue
-2026,34,8/22/2026,Bursa,AFRAMAX,Nov 1999,Fornax Maritime,ShipAndBunker_VesselsValue
-2026,34,8/21/2026,Gang Hai 666,HANDY BULKER,Jan 1989,Tianjin Ganghai Shipping,ShipAndBunker_VesselsValue
-2026,34,8/21/2026,Arkadija,REEFER,Jan 1992,Sakhryba 1,ShipAndBunker_VesselsValue
-2026,34,8/21/2026,Frio Hellenic,REEFER,Jan 1999,Baltmed Reefer Services,ShipAndBunker_VesselsValue
-2026,34,8/20/2026,Mandarin Arrow,SUPRAMAX,Sep 1996,Gearbulk Holding AG,ShipAndBunker_VesselsValue
-2026,25,6/21/2026,Pearl I,HANDY BULKER,Jun 1996,Negoship Line,ShipAndBunker_VesselsValue
-2026,25,6/20/2026,Xin Hai 18,GEN CARGO,Dec 2004,Wantong International Group,ShipAndBunker_VesselsValue
-2026,25,6/20/2026,Aeolos Kenteris,ROPAX FERRY,Aug 2001,Undisclosed,ShipAndBunker_VesselsValue
-2026,25,6/20/2026,Kurdos,HANDY TANKER,Jun 2001,Petrofleet Ship Management,ShipAndBunker_VesselsValue
-2026,25,6/18/2026,Mai 1,SMALL TANKER,Sep 1985,Klop Shiptrading,ShipAndBunker_VesselsValue
-2026,20,5/16/2026,Hanjin 3007,PALLETISED,Aug 1998,Hanjin Transportation Co,ShipAndBunker_VesselsValue
-2026,20,5/15/2026,Maymei,HANDY TANKER,Nov 1997,Ever Shining,ShipAndBunker_VesselsValue
-2026,20,5/15/2026,Valaris MS 1,SEMI SUB DRILL RIG,Apr 2011,Valaris,ShipAndBunker_VesselsValue
-2026,24,6/11/2026,Gala,ROPAX FERRY,May 2011,Undisclosed,ShipAndBunker_VesselsValue
-2026,24,6/12/2026,Putford Aries,STANDBY / ERRV,Feb 1977,Boston Putford Offshore Safety,ShipAndBunker_VesselsValue
-2026,23,6/9/2026,Stolt Innovation,HANDY TANKER,May 1996,Stolt Tankers,ShipAndBunker_VesselsValue
-2026,23,6/6/2026,Octans,VLCC,May 2001,Celia Armas,ShipAndBunker_VesselsValue
-2026,23,6/5/2026,Ron,POST PANAMAX BULKER,Jul 1982,Lila Global,ShipAndBunker_VesselsValue
-2026,18,5/6/2026,NQ Zinnia,SMALL TANKER,Feb 1998,Christiania Shipping Holding BV,ShipAndBunker_VesselsValue
-2026,18,5/5/2026,Gautam,AHTS,Sep 1976,Ahilya Marine Incorporation,ShipAndBunker_VesselsValue
-2026,18,5/5/2026,MSC Baltic III,SUB PANAMAX CONT,Sep 2003,MSC,ShipAndBunker_VesselsValue
-2026,18,5/4/2026,Damas,HANDY TANKER,Feb 1998,M Shipping,ShipAndBunker_VesselsValue
-2026,18,5/4/2026,Jal Shakti,HANDY TANKER,Feb 1998,Jaldhi,ShipAndBunker_VesselsValue
-2026,18,5/4/2026,Explorindo 1,HANDY TANKER,Sep 2001,Buana Lintas Lautan,ShipAndBunker_VesselsValue
-2026,18,5/4/2026,Jenny Lucky,HANDYMAX,Oct 1992,Brilliant Ship Management,ShipAndBunker_VesselsValue
-2026,19,5/11/2026,Gion Maru No 8,SMALL HANDY,Mar 1992,Ryuei Kisen YK,ShipAndBunker_VesselsValue
-2026,19,5/9/2026,Gas Crusader,SP FR LPG,Oct 1996,Unifleet,ShipAndBunker_VesselsValue
-2026,19,5/8/2026,B Gas Commander,SP FR LPG,Jun 1996,Bergshav AS,ShipAndBunker_VesselsValue
-2026,17,4/28/2026,Festival,HANDY BULKER,Mar 1996,Feng Sea Shipping,ShipAndBunker_VesselsValue
-2026,17,4/25/2026,Xiong Hai,SMALL TANKER,Oct 1987,Ever Union Intermaritime,ShipAndBunker_VesselsValue
-2026,21,5/25/2026,Big,POST PANAMAX CONT,Aug 2005,Xintai International Ship,ShipAndBunker_VesselsValue
-2026,21,5/25/2026,Rantanplan,POST PANAMAX CONT,Jun 2006,Undisclosed,ShipAndBunker_VesselsValue
-2026,21,5/25/2026,Time,POST PANAMAX CONT,Dec 2009,Undisclosed,ShipAndBunker_VesselsValue
-2026,21,5/22/2026,Ocean Apex,SEMI SUB DRILL RIG,Aug 1976,Noble Offshore Drilling,ShipAndBunker_VesselsValue
-2026,21,5/22/2026,Glas Dowr,FPSO TANKER,Mar 1996,Bluewater Energy Services,ShipAndBunker_VesselsValue
-2026,21,5/22/2026,Yogi,POST PANAMAX CONT,Mar 2006,Undisclosed,ShipAndBunker_VesselsValue
-2026,21,5/22/2026,Grouse Arrow,HANDYMAX,Jul 1991,Gearbulk Holding AG,ShipAndBunker_VesselsValue
-2026,16,4/22/2026,Belfast,GEN CARGO,Jan 1982,Adler Denizcilik,ShipAndBunker_VesselsValue
-2026,16,4/21/2026,HDW Herkules,STANDBY / ERRV,Jul 1960,ThyssenKrupp AG,ShipAndBunker_VesselsValue
-2026,22,6/1/2026,Jaffal,PALLETISED,Apr 1976,Minamar,ShipAndBunker_VesselsValue
-2026,22,6/1/2026,Sanwa Fontaine,REEFER,Sep 1982,Dong Won Shipping,ShipAndBunker_VesselsValue
-2026,22,6/1/2026,Sunny Palm,FEEDER,Jul 1996,KMTC,ShipAndBunker_VesselsValue
-2026,8,24-02-2026,Xing Fa,SMALL TANKER,Apr 2004,Hong Kong Tian Cheng Intl Ship,ShipAndBunker_VesselsValue
-2026,8,23-02-2026,Xing Fa,SMALL TANKER,Jul 2003,Gold Charm International Enterprise,ShipAndBunker_VesselsValue
-2026,8,21-02-2026,Bianca,HANDY TANKER,Oct 2003,Babylon Navigation DMCC,ShipAndBunker_VesselsValue
-2026,10,3/9/2026,Guzel,RO-RO,Jun 1980,Avrasya Shipping,ShipAndBunker_VesselsValue
-2026,10,3/8/2026,Smooth Sea,SMALL TANKER,Jun 1986,Smooth Sea,ShipAndBunker_VesselsValue
-2026,10,3/6/2026,Atlas,GEN CARGO,Jun 1995,Navessia Shipping,ShipAndBunker_VesselsValue
-2026,14,4/7/2026,Bow Faith,HANDY TANKER,Apr 1997,Odfjell Tankers,ShipAndBunker_VesselsValue
-2026,14,4/7/2026,Eternal Joy,HANDY BULKER,Apr 1997,Eternal Star Shipping,ShipAndBunker_VesselsValue
-2026,14,4/6/2026,Eternal Ace,HANDY BULKER,May 1997,Eternal Star Shipping,ShipAndBunker_VesselsValue
-2026,14,4/4/2026,Biskra,SMALL TANKER,Oct 1993,Rec Bitumen,ShipAndBunker_VesselsValue
-2026,11,3/17/2026,Maya,HANDY TANKER,Jun 2000,Undisclosed,ShipAndBunker_VesselsValue
-2026,11,3/17/2026,Puteri Zamrud,LARGE LNG,May 1996,MISC,ShipAndBunker_VesselsValue
-2026,11,3/14/2026,Toro,GEN CARGO,Nov 1989,Almar Denizcilik Ticaret,ShipAndBunker_VesselsValue
-2026,11,3/13/2026,Puteri Zamrud Satu,LARGE LNG,Jan 2004,MISC,ShipAndBunker_VesselsValue
-2026,11,3/13/2026,Puteri Firus Satu,LARGE LNG,Sep 2004,MISC,ShipAndBunker_VesselsValue
-2026,11,3/13/2026,Puteri Mutiara Satu,LARGE LNG,Apr 2005,MISC,ShipAndBunker_VesselsValue
-2026,11,3/13/2026,Jin Jiang,CAPESIZE,Aug 2000,Ping On Enterprise,ShipAndBunker_VesselsValue
-2026,11,3/13/2026,Kokopo Chief,FEEDERMAX,May 1991,Swire Shipping,ShipAndBunker_VesselsValue
-2026,11,3/13/2026,Wantong Summer,HANDYMAX,May 1996,Just Power Holdings,ShipAndBunker_VesselsValue
-2026,11,3/13/2026,Ocean Amazing,HANDYMAX,Jan 1998,Indofood Sukses Makmur,ShipAndBunker_VesselsValue
-2026,11,3/13/2026,Energia Centaurus,POST PANAMAX BULKER,Jun 2001,MOL,ShipAndBunker_VesselsValue
-2026,13,3/30/2026,Ocean Rosemary,HANDYMAX,May 1996,Shanghai Yongyao Shipping,ShipAndBunker_VesselsValue
-2026,13,3/27/2026,Mali,VLCC,Nov 2001,Ceres Shipping,ShipAndBunker_VesselsValue
-2026,13,3/27/2026,Jian Jie,SMALL TANKER,Jul 2005,Swiftbright Shipping,ShipAndBunker_VesselsValue
-2026,13,3/27/2026,Star Gate,SMALL HANDY,Aug 1991,Century Shipping,ShipAndBunker_VesselsValue
-2026,7,17-02-2026,Sunny Spruce,FEEDER,Apr 1996,KMTC,ShipAndBunker_VesselsValue
-2026,7,16-02-2026,Atlas,MPP,Oct 1995,Alphamoon Shipping Management,ShipAndBunker_VesselsValue
-2026,7,16-02-2026,Rich Lucky 13,MPP,Feb 1994,Friends Shipping Co,ShipAndBunker_VesselsValue
-2026,7,15-02-2026,Diana,PANAMAX MT,Apr 2004,Aleah Shipping,ShipAndBunker_VesselsValue
-2026,7,13-02-2026,Chiltern,HANDY TANKER,Jan 1999,Millennium Ships Management,ShipAndBunker_VesselsValue
-2026,6,07-02-2026,Sele/Pertamina 3006,HANDY TANKER,Sep 1982,Pertamina,ShipAndBunker_VesselsValue
-2026,6,06-02-2026,Wan Hai 506,PANAMAX CONT,Nov 2005,Wan Hai Lines,ShipAndBunker_VesselsValue
-2026,6,06-02-2026,Beihai,CAPESIZE,Feb 2002,Lila Global,ShipAndBunker_VesselsValue
-2026,6,06-02-2026,Isa Golden,HANDY BULKER,Nov 1995,Isa Lines,ShipAndBunker_VesselsValue
-2026,9,3/2/2026,Felicita,HANDY TANKER,Jun 2000,Vast Marine,ShipAndBunker_VesselsValue
-2026,9,2/28/2026,Ghada A,GEN CARGO,Jun 1972,Ammoun Shipping,ShipAndBunker_VesselsValue
-2026,9,2/28/2026,UST Orda,GEN CARGO,Jun 1977,Angara Denizcilik ve Ticaret,ShipAndBunker_VesselsValue
-2026,9,2/28/2026,AF Francesca,CRUISEFERRY,Jun 1979,Adria Ferries,ShipAndBunker_VesselsValue
-2026,12,3/20/2026,Jaeger Arrow,HANDY BULKER,May 2001,Gearbulk Holding AG,ShipAndBunker_VesselsValue
-2026,15,4/14/2026,Douga,CAPESIZE,May 2002,Jiuhe Group Co Ltd,ShipAndBunker_VesselsValue
-2026,15,4/13/2026,Seju Frontier,RO-RO,Jan 1988,Sejin Marine Co,ShipAndBunker_VesselsValue
-2026,15,4/13/2026,Shin Ho Chun No 102,REEFER,Jan 2002,Tunago Shipping,ShipAndBunker_VesselsValue
-2026,15,4/12/2026,Godspeed 6666,HANDYMAX,Jun 1996,INLACO HP,ShipAndBunker_VesselsValue
-2026,15,4/12/2026,Hao Hung 66,HANDY BULKER,Jul 1996,INLACO HP,ShipAndBunker_VesselsValue
-2026,15,4/12/2026,Hao Hung 01,HANDY BULKER,Nov 1988,INLACO HP,ShipAndBunker_VesselsValue
-2026,15,4/12/2026,Andhika Kanishka,PANAMAX BULKER,May 1998,Andhika Lines,ShipAndBunker_VesselsValue
-2026,15,4/10/2026,Hongkong Energy,LARGE LNG,Mar 2004,CIMC Financial Leasing,ShipAndBunker_VesselsValue
-2025,52,20-12-2025,Rui Tiger,PANAMAX BULKER,Jan 1995,Xiamen Xinjunhai Marine Management,ShipAndBunker_VesselsValue
-2025,52,20-12-2025,Chang Ming Yang,POST PANAMAX BULKER,Mar 1993,Tianjin Chang Ming Shipping,ShipAndBunker_VesselsValue
-2025,52,20-12-2025,Gold Origin,GEN CARGO,Jul 2005,Shandong Derong Shipping,ShipAndBunker_VesselsValue
-2025,53,29-12-2025,Fuji,SMALL TANKER,Nov 1983,ESM Maritime,ShipAndBunker_VesselsValue
-2025,53,29-12-2025,Hakata,SMALL TANKER,Jun 1969,Shipmate,ShipAndBunker_VesselsValue
-2025,53,27-12-2025,Maple,SMALL TANKER,Apr 1979,Shipmate,ShipAndBunker_VesselsValue
-2025,50,08-12-2025,Guan Lan Hu,PANAMAX BULKER,May 2001,Tai Zhou Shi An Li International Shipping,ShipAndBunker_VesselsValue
-2025,50,05-12-2025,Morality,HANDY TANKER,Apr 2003,Navitas Continental Merchants,ShipAndBunker_VesselsValue
-2025,50,05-12-2025,Ardhianto,MPP,Sep 1994,Falcon Shipping Line,ShipAndBunker_VesselsValue
-2025,50,05-12-2025,Vigo,AFRAMAX,Jul 2000,Opec Petrol Transportation,ShipAndBunker_VesselsValue
-2026,4,27-01-2026,Global Star,SMALL TANKER,Apr 1999,Glory International,ShipAndBunker_VesselsValue
-2026,4,27-01-2026,Yun Da You 6,SMALL TANKER,Oct 2005,Vitality Winner,ShipAndBunker_VesselsValue
-2026,4,27-01-2026,Yong Ang,REEFER,Feb 1998,Resurgence Ship Management,ShipAndBunker_VesselsValue
-2026,4,25-01-2026,Hong Li,HANDY BULKER,Aug 1995,Hong Kong Xin Hui Shipping Group,ShipAndBunker_VesselsValue
-2026,4,25-01-2026,Quartz,HANDY TANKER,Dec 1996,Luckin Maritime Co,ShipAndBunker_VesselsValue
-2026,4,25-01-2026,Lumoso Permai,HANDYMAX,Sep 1994,Lumoso Pratama Line,ShipAndBunker_VesselsValue
-2026,4,24-01-2026,Abinsk,HANDY BULKER,Mar 1983,Strategic Grain Management,ShipAndBunker_VesselsValue
-2026,4,23-01-2026,Seapeak Mars,LARGE LNG,Dec 2004,Seapeak,ShipAndBunker_VesselsValue
-2026,2,12-01-2026,Rong Zhou,REEFER,Apr 1984,Zhoushan Haili Ocean,ShipAndBunker_VesselsValue
-2026,2,12-01-2026,Dimple,SMALL HANDY,Apr 1992,Dimple Shipping,ShipAndBunker_VesselsValue
-2026,2,10-01-2026,Inga A,FEEDERMAX,Dec 1993,Arkas Line,ShipAndBunker_VesselsValue
-2026,2,09-01-2026,Saltlake,REEFER,Mar 1986,JiSung Shipping,ShipAndBunker_VesselsValue
-2026,2,09-01-2026,Baroasaa 102,REEFER,Oct 1982,Maldives Industrial Fisheries,ShipAndBunker_VesselsValue
-2026,2,09-01-2026,Sirrah,HANDYMAX,Jun 1999,Al Shumookh Construction,ShipAndBunker_VesselsValue
-2026,3,19-01-2026,Sheng Le C,HANDY BULKER,Jan 1996,Guangzhou Seaway International,ShipAndBunker_VesselsValue
-2026,3,16-01-2026,Blue Bead,HANDY BULKER,Sep 1998,Blue Bead Shipping,ShipAndBunker_VesselsValue
-2026,3,16-01-2026,Chung,SMALL HANDY,Nov 1984,Undisclosed,ShipAndBunker_VesselsValue
-2026,3,16-01-2026,An Shun,PANAMAX BULKER,Jan 1998,Mentor Pacific Ltd,ShipAndBunker_VesselsValue
-2025,49,01-12-2025,Seapeak Madrid,LARGE LNG,Dec 2004,Seapeak,ShipAndBunker_VesselsValue
-2025,49,01-12-2025,Seapeak Hispania,LARGE LNG,Sep 2002,Seapeak,ShipAndBunker_VesselsValue
-2025,49,01-12-2025,Seapeak Asia,LARGE LNG,Aug 2003,Seapeak,ShipAndBunker_VesselsValue
-2025,49,28-11-2025,Zi Yu Lan,PASSENGER FERRY,Aug 1995,Lianyungang CK Ferry,ShipAndBunker_VesselsValue
-2025,49,28-11-2025,Bold Mariner,HANDYMAX,Jun 1996,Graham Shipping Co,ShipAndBunker_VesselsValue
-2026,1,06-01-2026,Odin,REEFER,Jun 1984,Primportservice,ShipAndBunker_VesselsValue
-2026,1,05-01-2026,Atlantic Huron,HANDY BULKER,Apr 1984,CSL Group,ShipAndBunker_VesselsValue
-2025,48,24-11-2025,DSM Norwich,HANDY BULKER,Mar 2004,Stemship Management,ShipAndBunker_VesselsValue
-2025,48,24-11-2025,Chang Zhi,HANDY BULKER,Nov 1995,Bank of Communications Financial Leasing,ShipAndBunker_VesselsValue
-2025,48,24-11-2025,Kohzan Maru,HANDY TANKER,Dec 2000,MOL,ShipAndBunker_VesselsValue
-2025,48,23-11-2025,Victoria 3,HANDY BULKER,Feb 1996,China Government,ShipAndBunker_VesselsValue
-2025,48,21-11-2025,Ark Prestige,SMALL TANKER,Jan 1996,Integrity Ships,ShipAndBunker_VesselsValue
-2026,5,03-02-2026,Woodchip,SUEZMAX,Jul 1993,Veline Shiptrade,ShipAndBunker_VesselsValue
-2026,5,31-01-2026,Armu,MPP,Feb 1995,Acrex Corp,ShipAndBunker_VesselsValue
-2026,5,30-01-2026,Martine A,FEEDERMAX,Oct 1993,Arkas Line,ShipAndBunker_VesselsValue
-2025,44,27-10-2025,Ningaloo Vision,FPSO TANKER,Jan 1981,Unknown USA,ShipAndBunker_VesselsValue
-2025,44,26-10-2025,Collaroy,PASSENGER FERRY,Aug 1988,Sydney Ferries Corporation,ShipAndBunker_VesselsValue
-2025,44,24-10-2025,Monica P,HANDYMAX,Apr 1998,Asia Mulia Transpasifik,ShipAndBunker_VesselsValue
-2025,44,24-10-2025,Zenith,AFRAMAX,Jul 1998,PETROVIETNAM,ShipAndBunker_VesselsValue
-2025,44,24-10-2025,Icon Amara,PSV,Sep 2014,Lianson Fleet Group Berhad,ShipAndBunker_VesselsValue
-2025,44,24-10-2025,Discoverer Inspiration,DRILLSHIP,Oct 2009,Transocean Inc,ShipAndBunker_VesselsValue
-2025,46,11-11-2025,Tara,MPP,Oct 1994,Alphamoon Shipping Management,ShipAndBunker_VesselsValue
-2025,46,11-11-2025,Fu Ocean,CAPESIZE,Feb 2001,Libra Seaways,ShipAndBunker_VesselsValue
-2025,46,10-11-2025,Ju Da,PANAMAX BULKER,Jul 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
-2025,46,10-11-2025,Yuan Zhi Hai,PANAMAX BULKER,Oct 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
-2025,46,10-11-2025,Jia Xin Shan,SUPRAMAX,Dec 2004,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
-2025,46,10-11-2025,Jia Shun Shan,SUPRAMAX,Oct 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
-2025,46,10-11-2025,Jia Xiang Shan,SUPRAMAX,Jan 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
-2025,46,10-11-2025,Jia Ning Shan,SUPRAMAX,Aug 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
-2025,40,06-10-2025,North Viking,GEN CARGO,Oct 1977,Foga Aps,ShipAndBunker_VesselsValue
-2025,40,06-10-2025,Hokushin Maru,SMALL HANDY,Jul 1991,Koyo Kaiun Saiki,ShipAndBunker_VesselsValue
-2025,40,04-10-2025,Interim,HANDY TANKER,Dec 1991,World Carrier,ShipAndBunker_VesselsValue
-2025,40,03-10-2025,TG Arktika,HANDY BULKER,Jul 2007,Shipping-Trans Group,ShipAndBunker_VesselsValue
-2025,40,03-10-2025,Tasco Bravo,SMALL TANKER,Oct 1994,Tipco Maritime,ShipAndBunker_VesselsValue
-2025,40,03-10-2025,Bow Cedar,HANDY TANKER,Apr 1996,Odfjell Tankers,ShipAndBunker_VesselsValue
-2025,39,29-09-2025,Heisei Maru,SMALL HANDY,Jun 1990,Heisei Shoun,ShipAndBunker_VesselsValue
-2025,39,28-09-2025,Lady L,REEFER,Dec 1986,Undisclosed,ShipAndBunker_VesselsValue
-2025,39,27-09-2025,KM Puteri Kirana,HANDYMAX,Jul 1994,Puteri Maju Sukses,ShipAndBunker_VesselsValue
-2025,39,27-09-2025,Niigata Trader,FEEDERMAX,May 1997,Sinokor,ShipAndBunker_VesselsValue
-2025,39,26-09-2025,Rising Harrier,HANDYMAX,Jul 1997,Swedish Management Co,ShipAndBunker_VesselsValue
-2025,39,26-09-2025,AE Gas,FULLY PRESSURISED,Aug 1995,Tanker Armada Nusanatra,ShipAndBunker_VesselsValue
-2025,47,17-11-2025,Ancon Trader,SMALL TANKER,Mar 1979,Bunker Vessel Management,ShipAndBunker_VesselsValue
-2025,47,15-11-2025,Star Advance,HANDY TANKER,Oct 1998,Saint Sail Shipping,ShipAndBunker_VesselsValue
-2025,47,14-11-2025,Santa Ana,HANDY TANKER,May 2000,First Ship Management LLP,ShipAndBunker_VesselsValue
-2025,38,22-09-2025,Nirvana,HANDY TANKER,Jul 1999,Starline Express Shipping,ShipAndBunker_VesselsValue
-2025,38,21-09-2025,Asian Enterprise,HANDYMAX,Jul 1995,Dubai Navigation,ShipAndBunker_VesselsValue
-2025,38,20-09-2025,Tutuk,SMALL TANKER,Jan 1996,Yong An Shipping,ShipAndBunker_VesselsValue
-2025,38,20-09-2025,Nour Elhuda,MPP,Dec 1988,Embrace Shipping Management,ShipAndBunker_VesselsValue
-2025,38,19-09-2025,He Fu,HANDY BULKER,Jun 1997,Hua Fu International Group,ShipAndBunker_VesselsValue
-2025,37,15-09-2025,Sirvan Sabou,AFRAMAX,Aug 1995,Noah Maryam Kish Ship Management,ShipAndBunker_VesselsValue
-2025,37,15-09-2025,Pione,HANDY TANKER,Feb 2000,Undisclosed,ShipAndBunker_VesselsValue
-2025,37,12-09-2025,Rimba Empat,GEN CARGO,Aug 1975,Rimba Segara Lines,ShipAndBunker_VesselsValue
-2025,45,03-11-2025,Raissa,HANDY TANKER,Jun 1998,Rochas Co,ShipAndBunker_VesselsValue
-2025,45,01-11-2025,Masal,SUEZMAX,Jul 1998,Ocean Glory Giant Ogg,ShipAndBunker_VesselsValue
-2025,45,01-11-2025,Ark,GEN CARGO,Jun 1985,Norfes-Marine Service,ShipAndBunker_VesselsValue
-2025,41,13-10-2025,Jin Hai Yu,HANDYMAX,Jul 1996,FUSCO,ShipAndBunker_VesselsValue
-2025,41,12-10-2025,Al Sama,PANAMAX BULKER,Aug 1997,Jebel Sharm Marine,ShipAndBunker_VesselsValue
-2025,41,10-10-2025,Aratere,ROPAX FERRY,Dec 1998,KiwiRail Interislander,ShipAndBunker_VesselsValue
-2025,41,10-10-2025,S J Queen,GEN CARGO,Sep 1981,Sea Jewel Commercial Brokers,ShipAndBunker_VesselsValue
-2025,43,20-10-2025,Asmaa Z,HANDYMAX,Dec 1997,Safe Sea Services Sarl,ShipAndBunker_VesselsValue
-2025,43,17-10-2025,Fan Shun,HANDYMAX,Sep 1997,Country Ocean Shipping,ShipAndBunker_VesselsValue
-2025,43,17-10-2025,Dalia,GEN CARGO,Oct 1981,Cedar Marine Services,ShipAndBunker_VesselsValue
-2025,43,17-10-2025,Puteri Nilam,LARGE LNG,Jun 1995,MISC,ShipAndBunker_VesselsValue
-2025,43,17-10-2025,Puteri Delima,LARGE LNG,Jan 1995,MISC,ShipAndBunker_VesselsValue
-2025,30,29-07-2025,Anka,GEN CARGO,Jun 2005,JK,ShipAndBunker_VesselsValue
-2025,30,29-07-2025,Leonid,PANAMAX MT,Mar 2000,Vroom Marine Ventures,ShipAndBunker_VesselsValue
-2025,30,28-07-2025,Rising Eagle,HANDY BULKER,Jan 1995,Swedish Management Co,ShipAndBunker_VesselsValue
-2025,30,28-07-2025,Rising Falcon,HANDY BULKER,Jan 1995,Swedish Management Co,ShipAndBunker_VesselsValue
-2025,30,28-07-2025,Al Khaznah,LARGE LNG,Jul 1994,ADNOC Logistics and Services,ShipAndBunker_VesselsValue
-2025,30,28-07-2025,Ghasha,LARGE LNG,Jun 1995,ADNOC Logistics and Services,ShipAndBunker_VesselsValue
-2025,31,04-08-2025,Boceanica,PANAMAX MT,Oct 2004,Expanse Ship Management,ShipAndBunker_VesselsValue
-2025,31,04-08-2025,Wond,SMALL TANKER,Feb 1985,GR Shipping,ShipAndBunker_VesselsValue
-2025,31,04-08-2025,Best 8,MPP,May 1995,Friends Shipping Co,ShipAndBunker_VesselsValue
-2025,31,03-08-2025,Torvang,GEN CARGO,Jan 1968,Torhus Shipping,ShipAndBunker_VesselsValue
-2025,31,03-08-2025,Great Royal,HANDYMAX,Jun 1994,Vanguard Maritime,ShipAndBunker_VesselsValue
-2025,31,01-08-2025,Yeoman Bank,HANDYMAX,May 1982,Foster Yeoman,ShipAndBunker_VesselsValue
-2025,26,30-06-2025,Winca,HANDY BULKER,Aug 1994,Megawell International Shipmanagement,ShipAndBunker_VesselsValue
-2025,26,30-06-2025,Yin Xiu,HANDY BULKER,Aug 1995,Shanghai Time Shipping,ShipAndBunker_VesselsValue
-2025,34,25-08-2025,Tevfik Kuyumcu,SMALL TANKER,Aug 1990,Alpagul Denizcilik,ShipAndBunker_VesselsValue
-2025,34,25-08-2025,Yin Bao,HANDYMAX,Mar 1996,Shanghai Time Shipping,ShipAndBunker_VesselsValue
-2025,34,25-08-2025,Chang An Hai,GEN CARGO,Aug 2004,Changjiang National Shipping,ShipAndBunker_VesselsValue
-2025,34,25-08-2025,Chang Da Hai,GEN CARGO,Jul 2003,Changjiang National Shipping,ShipAndBunker_VesselsValue
-2025,34,25-08-2025,Salome I,HANDY TANKER,Mar 1996,Fortune Lucky Shipping,ShipAndBunker_VesselsValue
-2025,34,22-08-2025,Chang Tong Hai,GEN CARGO,Jun 2003,Changjiang National Shipping,ShipAndBunker_VesselsValue
-2025,32,10-08-2025,Ya Hussein,HANDY BULKER,Apr 1996,DXB Shipping and Ship Management,ShipAndBunker_VesselsValue
-2025,32,08-08-2025,Kuroshio,PIPE LAYER,Sep 1972,Nippon Steel and Sumitomo Metal,ShipAndBunker_VesselsValue
-2025,32,08-08-2025,Kuroshio II,PIPE LAYER,Feb 1976,Nippon Steel and Sumitomo Metal,ShipAndBunker_VesselsValue
-2025,32,08-08-2025,Otaria,AFRAMAX,Mar 2000,Stellar Wave Marine,ShipAndBunker_VesselsValue
-2025,32,08-08-2025,Gas Pioneer,FULLY PRESSURISED,Jul 1992,Unifleet,ShipAndBunker_VesselsValue
-2025,32,08-08-2025,Bow Fagus,HANDY TANKER,Nov 1995,Odfjell Tankers,ShipAndBunker_VesselsValue
-2025,32,08-08-2025,Dalian,CAPESIZE,Jan 2002,Lila Global,ShipAndBunker_VesselsValue
-2025,29,22-07-2025,Lusay,REEFER,Feb 1991,Ussuri Import,ShipAndBunker_VesselsValue
-2025,29,18-07-2025,Green Egersund,REEFER,Sep 1990,Green Reefers AS,ShipAndBunker_VesselsValue
-2025,28,14-07-2025,Harbour Well,PANAMAX BULKER,Apr 1998,Grecoast HongKong,ShipAndBunker_VesselsValue
-2025,28,12-07-2025,Inda,AFRAMAX,Apr 2003,MG Flot,ShipAndBunker_VesselsValue
-2025,27,07-07-2025,Grand Master,ROPAX FERRY,Mar 2002,Unknown Turkish,ShipAndBunker_VesselsValue
-2025,27,07-07-2025,Senaz,SMALL TANKER,Dec 1993,Blue Whale Maritime,ShipAndBunker_VesselsValue
-2025,27,07-07-2025,Tian Long Xing,HANDY BULKER,Sep 1995,Shanghai Time Shipping,ShipAndBunker_VesselsValue
-2025,27,05-07-2025,Bontrup Pearl,HANDYMAX,May 1984,SMT Shipping,ShipAndBunker_VesselsValue
-2025,27,05-07-2025,Dk 03,HANDYMAX,May 1994,KYK Lines,ShipAndBunker_VesselsValue
-2025,27,04-07-2025,Christ,GEN CARGO,Dec 1982,Ous Marine Developments,ShipAndBunker_VesselsValue
-2025,36,09-09-2025,Yin Pu,HANDYMAX,Sep 1997,Shanghai Time Shipping,ShipAndBunker_VesselsValue
-2025,36,09-09-2025,Hai Huang Xing,PANAMAX BULKER,Jul 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
-2025,36,09-09-2025,LNG Jamal,LARGE LNG,Oct 2000,J3 Consortium,ShipAndBunker_VesselsValue
-2025,36,08-09-2025,Bonita,PANAMAX BULKER,Jul 2001,Grehel Shipmanagement,ShipAndBunker_VesselsValue
-2025,36,08-09-2025,Kavita,HANDY BULKER,Jul 1995,Cassini Ship Owning,ShipAndBunker_VesselsValue
-2025,35,02-09-2025,Henry Goodrich,SEMI SUB DRILL RIG,Jul 1985,Transocean Inc,ShipAndBunker_VesselsValue
-2025,35,02-09-2025,Discoverer India,DRILLSHIP,Aug 2010,Transocean Inc,ShipAndBunker_VesselsValue
-2025,35,02-09-2025,Deepwater Champion,DRILLSHIP,Nov 2010,Transocean Inc,ShipAndBunker_VesselsValue
-2025,35,02-09-2025,Discoverer Americas,DRILLSHIP,Aug 2009,Transocean Inc,ShipAndBunker_VesselsValue
-2025,35,02-09-2025,Discoverer Clear Leader,DRILLSHIP,Mar 2009,Transocean Inc,ShipAndBunker_VesselsValue
-2025,35,01-09-2025,Bel Air,PANAMAX BULKER,Feb 2006,Veritas Shipmanagement,ShipAndBunker_VesselsValue
-2025,35,29-08-2025,Sunny Oak,FEEDER,Oct 1995,KMTC,ShipAndBunker_VesselsValue
-2025,35,29-08-2025,Grace Ferrum,HANDY TANKER,Apr 2013,Grace Energy Shipping,ShipAndBunker_VesselsValue
-2025,35,29-08-2025,Rade,LARGE LNG,Nov 2002,Capital Gas,ShipAndBunker_VesselsValue
-2025,23,10-06-2025,Po Yang Hu,PANAMAX MT,Mar 1994,Sino Ocean Shipping,ShipAndBunker_VesselsValue
-2025,23,10-06-2025,Ocean Star,HANDY BULKER,Jul 1995,Wuhan Yidong Shipping Management,ShipAndBunker_VesselsValue
-2025,23,08-06-2025,Orient Brother,GEN CARGO,Mar 1993,HK Hangfeng Shipping,ShipAndBunker_VesselsValue
-2025,23,08-06-2025,Sister 12,MPP,Mar 1991,Wen Xiang International,ShipAndBunker_VesselsValue
-2025,23,06-06-2025,Run Fu 2,HANDY BULKER,Jun 1995,Wuhan Yidong Shipping Management,ShipAndBunker_VesselsValue
-2025,23,06-06-2025,Berge Fuji,CAPESIZE,Mar 1996,Berge Bulk,ShipAndBunker_VesselsValue
-2025,19,13-05-2025,Manasota,CAPESIZE,30-01-2004,Cardiff Marine,ShipAndBunker_VesselsValue
-2025,19,12-05-2025,Span Asia 12,MPP,29-06-1990,Philippine Span Asia Carrier,ShipAndBunker_VesselsValue
-2025,19,12-05-2025,Corso Marine,GEN CARGO,20-04-2000,Seven Mile Ltd,ShipAndBunker_VesselsValue
-2025,19,12-05-2025,Sunny Maple,FEEDER,18-11-1996,KMTC,ShipAndBunker_VesselsValue
-2025,19,12-05-2025,Woods,HANDYMAX,28-09-1995,Resurgence Ship Management,ShipAndBunker_VesselsValue
-2025,19,09-05-2025,Span Asia 31,FEEDER,28-02-1992,Philippine Span Asia Carrier,ShipAndBunker_VesselsValue
-2025,19,09-05-2025,Tornado,REEFER,02-11-1985,Undisclosed,ShipAndBunker_VesselsValue
-2025,19,08-05-2025,Jaguar,GEN CARGO,01-08-1978,Blue Ocean Shipping,ShipAndBunker_VesselsValue
-2025,17,25-04-2025,Peter S,PANAMAX BULKER,27-04-1995,Sea Gate Navigation,ShipAndBunker_VesselsValue
-2025,17,25-04-2025,Riace,ROPAX FERRY,01-06-1983,Bluferries,ShipAndBunker_VesselsValue
-2025,17,25-04-2025,Trawind Glory,GEN CARGO,30-03-1988,Atsl Service,ShipAndBunker_VesselsValue
-2025,24,13-06-2025,Andaman Skies,AFRAMAX,Oct 2004,Alqutb Alshamali Marine Services,ShipAndBunker_VesselsValue
-2025,24,13-06-2025,Maharshi Parashuram,AFRAMAX,Oct 2002,SCI,ShipAndBunker_VesselsValue
-2025,20,20-05-2025,Bueno,PANAMAX MT,28-02-2005,Expanse Ship Management,ShipAndBunker_VesselsValue
-2025,20,19-05-2025,CSL Elbe,SMALL HANDY,01-02-1982,CSL Group,ShipAndBunker_VesselsValue
-2025,20,17-05-2025,Global Nubira,FEEDER,20-01-1998,Heung-A Line,ShipAndBunker_VesselsValue
-2025,20,17-05-2025,Asmaa,HANDYMAX,30-08-1994,Safe Sea Services Sarl,ShipAndBunker_VesselsValue
-2025,20,16-05-2025,Vistar,PANAMAX BULKER,30-04-1997,Resurgence Ship Management,ShipAndBunker_VesselsValue
-2025,20,15-05-2025,Sun Bright,SMALL CRUISE,26-06-1980,Royal Marine Shipmanagement,ShipAndBunker_VesselsValue
-2025,25,26-06-2025,Hugo,AHTS,May 1991,Trade Shipping,ShipAndBunker_VesselsValue
-2025,25,23-06-2025,Jasmine,HANDY TANKER,Jul 1996,Africo 1 Offshore,ShipAndBunker_VesselsValue
-2025,25,22-06-2025,Gas Soechi XXVIII,FULLY PRESSURISED,Jan 1995,Soechi Lines,ShipAndBunker_VesselsValue
-2025,25,20-06-2025,Bitumen Princess,SMALL TANKER,Oct 1995,Safe Seas Ship Management FZE,ShipAndBunker_VesselsValue
-2025,25,20-06-2025,FP Future,SUPRAMAX,Dec 2002,Hachiuma Steamship,ShipAndBunker_VesselsValue
-2025,16,22-04-2025,Grande Brasile,CON-RO,30-05-2000,Grimaldi Group,ShipAndBunker_VesselsValue
-2025,16,22-04-2025,Starlet,SMALL TANKER,01-07-2003,Oceanwide Shipping,ShipAndBunker_VesselsValue
-2025,16,22-04-2025,Charlene,HANDY BULKER,30-05-1996,NHK Shipping,ShipAndBunker_VesselsValue
-2025,16,22-04-2025,Moby Drea,CRUISEFERRY,16-05-1975,Moby SPA,ShipAndBunker_VesselsValue
-2025,16,22-04-2025,Heung A Ulsan,FEEDER,24-07-1996,Heung-A Line,ShipAndBunker_VesselsValue
-2025,16,22-04-2025,Gold Eagle,GEN CARGO,25-08-1997,Weihai Yunhao International,ShipAndBunker_VesselsValue
-2025,16,21-04-2025,Sea Dove,HANDY BULKER,01-02-1987,MCD Shipping,ShipAndBunker_VesselsValue
-2025,16,19-04-2025,Eraclea,OCEAN GOING TUG,01-06-2010,Augustea Imprese Marittime,ShipAndBunker_VesselsValue
-2025,16,19-04-2025,Stella di Lipari,SMALL TANKER,01-01-1972,Marnavi,ShipAndBunker_VesselsValue
-2025,18,05-05-2025,Ohryu Maru,PALLETISED,24-03-1992,JFE Holdings,ShipAndBunker_VesselsValue
-2025,18,02-05-2025,Dae Won,SMALL TANKER,22-10-1998,Jeil International,ShipAndBunker_VesselsValue
-2025,18,02-05-2025,Eraclea,SUPRAMAX,21-06-2010,Medcare Shipping,ShipAndBunker_VesselsValue
-2025,21,27-05-2025,Mimi,GEN CARGO,23-05-1986,Cedar Marine Services,ShipAndBunker_VesselsValue
-2025,21,26-05-2025,HL Ras Laffan,LARGE LNG,20-07-2000,H Line Shipping,ShipAndBunker_VesselsValue
-2025,21,26-05-2025,HL Sur,LARGE LNG,12-01-2000,H Line Shipping,ShipAndBunker_VesselsValue
-2025,21,26-05-2025,Reliance,MPP,01-04-1996,Meratus Line,ShipAndBunker_VesselsValue
-2025,21,25-05-2025,Hordafor IV,GEN CARGO,01-12-1975,Hordafor,ShipAndBunker_VesselsValue
-2025,21,24-05-2025,Hyundai Technopia,LARGE LNG,01-07-1999,Hyundai LNG Shipping Co,ShipAndBunker_VesselsValue
-2025,21,24-05-2025,Hyundai Aquapia,LARGE LNG,01-03-2000,KAMCO,ShipAndBunker_VesselsValue
-2025,21,23-05-2025,Ladoga,GEN CARGO,01-10-1982,SSC Sea and River,ShipAndBunker_VesselsValue
-2025,21,22-05-2025,Long 01,SUPRAMAX,24-07-1990,Undisclosed,ShipAndBunker_VesselsValue
-2025,22,30-05-2025,Cuyahoga,SMALL HANDY,01-01-1943,Lower Lakes Towing,ShipAndBunker_VesselsValue
-2025,22,30-05-2025,Huaquan,AHTS,21-03-1984,Jia Hang Shipping,ShipAndBunker_VesselsValue
-2025,22,30-05-2025,Fundy Paradise,ROPAX FERRY,01-04-1971,Undisclosed,ShipAndBunker_VesselsValue
-2025,22,31-05-2025,Basen,GEN CARGO,01-06-1966,Sealg AS,ShipAndBunker_VesselsValue
-2025,22,31-05-2025,Abraham M,HANDY BULKER,10-09-1996,Mansour Management Gemi Acent,ShipAndBunker_VesselsValue
-2025,13,28-03-2025,Dukhan,LARGE LNG,01-10-2004,MOL,ShipAndBunker_VesselsValue
-2025,13,28-03-2025,Xie Hai Chong He,PANAMAX BULKER,12-02-1995,Zhejiang Xiehai Group,ShipAndBunker_VesselsValue
-2025,13,27-03-2025,Rich Anna,GEN CARGO,01-04-2005,Long Win International Shipping,ShipAndBunker_VesselsValue
-2025,13,27-03-2025,Zekai Onel,GEN CARGO,01-01-1980,Goze Denizcilik Dis Ticaret,ShipAndBunker_VesselsValue
-2025,15,15-04-2025,Pilatus 22,FULLY PRESSURISED,01-06-1989,Pilatus Marine Co,ShipAndBunker_VesselsValue
-2025,15,14-04-2025,Auro,AFRAMAX,01-01-2005,Alqutb Alshamali Marine Services,ShipAndBunker_VesselsValue
-2025,15,14-04-2025,Lord 17,MPP,07-08-1996,Friends Shipping Co,ShipAndBunker_VesselsValue
-2025,15,14-04-2025,Gluon,FEEDERMAX,16-05-1995,Vistar Shipping,ShipAndBunker_VesselsValue
-2025,15,14-04-2025,Pasha 9,MPP,22-08-1995,Friends Shipping Co,ShipAndBunker_VesselsValue
-2025,15,14-04-2025,Irkutsk,GEN CARGO,22-06-1979,Global Marine Consulting,ShipAndBunker_VesselsValue
-2025,15,14-04-2025,Firstec,HANDY BULKER,22-01-1997,Shanghai Adani Shipping,ShipAndBunker_VesselsValue
-2025,15,10-04-2025,Jarucha 6,GEN CARGO,29-05-2006,Suntud and Son,ShipAndBunker_VesselsValue
-2025,9,03-03-2025,Winnie,CAPESIZE,01-12-2000,Lila Global,ShipAndBunker_VesselsValue
-2025,9,03-03-2025,Elan Vital,PANAMAX MT,26-08-2003,Product Shipping and Trading,ShipAndBunker_VesselsValue
-2025,9,02-03-2025,Elan,PANAMAX MT,31-08-2004,Aveya Shipping DMCC,ShipAndBunker_VesselsValue
-2025,9,02-03-2025,Kalina,MPP,18-07-1987,Sea Gate Management,ShipAndBunker_VesselsValue
-2025,8,25-02-2025,Schumi 7,FULLY PRESSURISED,17-01-1996,Siam Lucky Marine,ShipAndBunker_VesselsValue
-2025,8,21-02-2025,Bluefins,PANAMAX MT,30-03-2001,Expanse Ship Management,ShipAndBunker_VesselsValue
-2025,8,21-02-2025,Eponyma,MPP,31-03-1993,Bintang Mas Shipping,ShipAndBunker_VesselsValue
-2025,8,21-02-2025,Finlandia Seaways,RO-RO,14-08-2000,DFDS,ShipAndBunker_VesselsValue
-2025,8,21-02-2025,Iris of Sea,RO-LO,14-12-1992,Sea Gate Management,ShipAndBunker_VesselsValue
-2025,8,20-02-2025,B LPG Sophia,FULLY PRESSURISED,25-11-1997,Worldera,ShipAndBunker_VesselsValue
-2025,7,17-02-2025,Jabal Ali 7,RO-LO,01-10-1979,Naif Marine Services,ShipAndBunker_VesselsValue
-2025,7,14-02-2025,Minoan Flame,PANAMAX BULKER,20-03-1998,Modion Maritime Management,ShipAndBunker_VesselsValue
-2025,7,14-02-2025,SA Equatorial,VLCC FSO,06-01-1997,Minsheng Financial Leasing,ShipAndBunker_VesselsValue
-2025,7,14-02-2025,Run Fu 7,HANDYMAX,22-10-1990,Zhangjiagang Oceanicwit Shipping,ShipAndBunker_VesselsValue
-2025,7,14-02-2025,Best Unity,PANAMAX BULKER,05-09-1997,Grand Voyage Marine Co,ShipAndBunker_VesselsValue
-2025,7,14-02-2025,Span Asia 9,FEEDER,01-02-1985,Philippine Span Asia Carrier,ShipAndBunker_VesselsValue
-2025,7,14-02-2025,Span Asia 20,MPP,01-03-1995,Philippine Span Asia Carrier,ShipAndBunker_VesselsValue
-2025,7,2/13/2025,De Sheng 9,SMALL HANDY,06-01-1992,Xiamen Hong Tai Shipping,ShipAndBunker_VesselsValue
-2025,6,13-02-2025,De Sheng 9,SMALL HANDY,01-06-1992,Xiamen Hong Tai Shipping,ShipAndBunker_VesselsValue
-2025,6,10-02-2025,East Pioneer,PANAMAX BULKER,23-10-1997,Aggregates Manufacturing Trading (AMT) FZE,ShipAndBunker_VesselsValue
-2025,6,10-02-2025,Arel 2,GEN CARGO,01-01-1983,Arel Denizcilik Ticaret,ShipAndBunker_VesselsValue
-2025,6,07-02-2025,Sidimi,MPP,27-04-1987,Acrex Corp,ShipAndBunker_VesselsValue
-2025,10,12-03-2025,Trader III,LARGE LNG,29-08-2002,Capital Gas,ShipAndBunker_VesselsValue
-2025,10,07-03-2025,Hesen M,MPP,04-04-1986,Cedar Marine Services,ShipAndBunker_VesselsValue
-2025,10,07-03-2025,Sea Wise,HANDY BULKER,25-07-1995,Zhangjiagang Oceanicwit Shipping,ShipAndBunker_VesselsValue
-2025,10,07-03-2025,Socol 9,MPP,01-01-1989,Navis Shipping,ShipAndBunker_VesselsValue
-2025,10,07-03-2025,Socol 10,MPP,29-10-1988,Navis Shipping,ShipAndBunker_VesselsValue
-2025,12,24-03-2025,Sheng Tai,GEN CARGO,24-05-1997,Shanghai Changjiang,ShipAndBunker_VesselsValue
-2025,12,21-03-2025,Vertex,SMALL TANKER,01-12-1981,Unknown Russian,ShipAndBunker_VesselsValue
-2025,12,21-03-2025,EM Unity,AFRAMAX,27-01-1999,Equatorial Marine Fuel Management Services,ShipAndBunker_VesselsValue
-2025,12,21-03-2025,Wu Tong Shan,PASSENGER FERRY,06-11-1987,Undisclosed,ShipAndBunker_VesselsValue
-2025,12,21-03-2025,KG 7,SMALL TANKER,24-02-2000,Laxmi Corp,ShipAndBunker_VesselsValue
-2025,12,21-03-2025,Neptune Star 25,HANDY BULKER,04-07-1996,Undisclosed,ShipAndBunker_VesselsValue
-2025,14,07-04-2025,Adventure,MPP,03-02-1995,Alphamoon Shipping Management,ShipAndBunker_VesselsValue
-2025,14,06-04-2025,Alasa,FEEDERMAX,06-02-1998,Salamis Lines,ShipAndBunker_VesselsValue
-2025,14,04-04-2025,Futong Express,HANDYMAX,22-09-1995,Nova Shipping,ShipAndBunker_VesselsValue
-2025,14,03-04-2025,GMA Nadia,GEN CARGO,01-01-1988,JMM Maritime,ShipAndBunker_VesselsValue
-2025,14,03-04-2025,Athena,STANDBY / ERRV,29-09-1975,Ambrey Offshore,ShipAndBunker_VesselsValue
-2025,11,14-03-2025,Sunny Linden,FEEDER,29-03-1995,KMTC,ShipAndBunker_VesselsValue
-2025,11,14-03-2025,Seaworld Marine,RO-LO,08-01-1997,Sea World Express Ferry,ShipAndBunker_VesselsValue
-2025,11,14-03-2025,Run Fu 6,HANDY BULKER,15-11-1995,Zhangjiagang Oceanicwit Shipping,ShipAndBunker_VesselsValue
-2025,11,14-03-2025,Wind Energy,SEMI SUB DRILL RIG,15-11-2010,GMS,ShipAndBunker_VesselsValue
-2025,11,13-03-2025,Moby Dada,CRUISEFERRY,30-03-1981,Moby SPA,ShipAndBunker_VesselsValue
-2025,11,13-03-2025,Atlantic 22,HANDY BULKER,12-05-1994,Undisclosed,ShipAndBunker_VesselsValue
-2024,50,17-12-2024,Prince 4,SMALL HANDY,17-01-1986,Cedar Marine Services,ShipAndBunker_VesselsValue
-2024,50,16-12-2024,Green Cooler,REEFER,19-03-1990,Green Reefers AS,ShipAndBunker_VesselsValue
-2024,50,16-12-2024,Dong Jiang Xiang,PANAMAX BULKER,27-07-1999,Tianjin Dongjiang Shipping,ShipAndBunker_VesselsValue
-2024,50,16-12-2024,True Confidence,SUPRAMAX,04-08-2011,Third January Marine,ShipAndBunker_VesselsValue
-2024,50,16-12-2024,Gelibolu 2,GEN CARGO,07-04-1984,Gelibolu Shipping & Management,ShipAndBunker_VesselsValue
-2024,50,16-12-2024,Repubblica Argentina,RO-RO,01-06-1998,Grimaldi Group,ShipAndBunker_VesselsValue
-2025,4,24-01-2025,Hyundai Greenpia,LARGE LNG,01-11-1996,Hyundai LNG Shipping Co,ShipAndBunker_VesselsValue
-2025,4,24-01-2025,Martha Option,SMALL TANKER,11-08-1993,Waruna Nusa Sentana,ShipAndBunker_VesselsValue
-2025,4,24-01-2025,Leena,HANDY BULKER,02-04-1994,Cedar Marine Services,ShipAndBunker_VesselsValue
-2025,4,24-01-2025,Solan,SUEZMAX,01-01-1998,Mehdi Group,ShipAndBunker_VesselsValue
-2025,4,24-01-2025,Lakatamia,HANDY TANKER,05-01-2000,World Tankers,ShipAndBunker_VesselsValue
-2025,4,23-01-2025,Harbour Zenith,FEEDERMAX,01-07-1995,Harbour Link Group,ShipAndBunker_VesselsValue
-2024,51,23-12-2024,Guo Yuan 9,SUPRAMAX,29-09-1994,Bank of Communications Financial Leasing,ShipAndBunker_VesselsValue
-2024,51,23-12-2024,Amor,VLCC,08-03-2000,Valiant Marine Ventures FZE,ShipAndBunker_VesselsValue
-2024,51,23-12-2024,Bow Clipper,HANDY TANKER,13-07-1995,Odfjell Management,ShipAndBunker_VesselsValue
-2024,51,23-12-2024,Tanto Senang,FEEDERMAX,30-09-1998,Tanto Intim Line,ShipAndBunker_VesselsValue
-2024,52,28-12-2024,MSC Esha F,FEEDERMAX,07-04-1993,MSC,ShipAndBunker_VesselsValue
-2024,52,28-12-2024,Three Star,HANDYMAX,28-03-1996,Shanghai Changyunsheng Ship Management,ShipAndBunker_VesselsValue
-2024,52,27-12-2024,Rialto,HANDY TANKER,01-11-1998,Natan,ShipAndBunker_VesselsValue
-2024,52,27-12-2024,Mirai,GEN CARGO,16-02-1982,MV Line,ShipAndBunker_VesselsValue
-2024,52,27-12-2024,HL Pyeongtaek,LARGE LNG,21-09-1995,H Line Shipping,ShipAndBunker_VesselsValue
-2024,52,27-12-2024,Enzo,AFRAMAX,01-12-1999,Enzo Shipping,ShipAndBunker_VesselsValue
-2025,5,03-02-2025,Millennium Leader,RO-LO,12-11-1996,Eastern Car Liner Ltd,ShipAndBunker_VesselsValue
-2025,5,03-02-2025,Alexander,MPP,26-12-1988,Liza,ShipAndBunker_VesselsValue
-2025,5,03-02-2025,Talent Blu,GEN CARGO,29-06-2008,Talent Blu Shipping,ShipAndBunker_VesselsValue
-2025,5,31-01-2025,Tasos,PANAMAX BULKER,26-01-2000,Eurodry,ShipAndBunker_VesselsValue
-2025,5,31-01-2025,AK Hamburg,GEN CARGO,01-01-1982,Undisclosed,ShipAndBunker_VesselsValue
-2025,5,31-01-2025,Athina 3,HANDY TANKER,01-11-1988,Messina Chartering,ShipAndBunker_VesselsValue
-2024,48,04-12-2024,Celine 02,SMALL TANKER,10-06-1980,Pelayaran Namtabung Jaya,ShipAndBunker_VesselsValue
-2024,48,02-12-2024,Promitheas,SMALL TANKER,01-01-1975,Unknown Greek,ShipAndBunker_VesselsValue
-2024,48,01-12-2024,New Sky,REEFER,12-11-1980,Systemar,ShipAndBunker_VesselsValue
-2024,48,30-11-2024,Lady Cedros,CAPESIZE,26-05-1998,NYK Line,ShipAndBunker_VesselsValue
-2024,48,30-11-2024,Jimei Shunhao,POST PANAMAX BULKER,31-05-1995,Mentor Pacific Ltd,ShipAndBunker_VesselsValue
-2024,49,09-12-2024,Kelsey 2,SMALL TANKER,14-06-2002,Wooshin Marine,ShipAndBunker_VesselsValue
-2024,49,07-12-2024,Athina 1,AFRAMAX,28-02-1995,Saud Shipping,ShipAndBunker_VesselsValue
-2024,49,06-12-2024,MSC Augusta,HANDY CONTAINER,01-05-1986,MSC,ShipAndBunker_VesselsValue
-2024,49,06-12-2024,Medelin Master,SMALL TANKER,03-10-1992,Waruna Nusa Sentana,ShipAndBunker_VesselsValue
-2025,3,20-01-2025,Rong Yuan,PANAMAX BULKER,20-11-1997,Dia Yuan International Shipping,ShipAndBunker_VesselsValue
-2025,3,20-01-2025,Wellgem,PANAMAX BULKER,27-07-1995,Well Gem Shipping,ShipAndBunker_VesselsValue
-2025,3,20-01-2025,Ocean Peace,PANAMAX BULKER,25-02-1994,Ocean Peace,ShipAndBunker_VesselsValue
-2025,2,13-01-2025,Altair,SMALL HANDY,01-07-1978,Arabella Enterprises,ShipAndBunker_VesselsValue
-2025,2,13-01-2025,Penelope A,ROPAX FERRY,01-07-1972,Agoudimos Lines,ShipAndBunker_VesselsValue
-2025,2,13-01-2025,Ocean Star,GEN CARGO,01-07-1980,Island Star Shipping Ltd,ShipAndBunker_VesselsValue
-2025,2,13-01-2025,Ocean Legend,MPP,07-04-1993,Oceanic Container Lines,ShipAndBunker_VesselsValue
-2025,2,11-01-2025,Kriti II,ROPAX FERRY,26-07-1979,Anek Lines SA,ShipAndBunker_VesselsValue
-2025,2,11-01-2025,Kriti I,ROPAX FERRY,01-05-1979,Anek Lines SA,ShipAndBunker_VesselsValue
-2025,2,10-01-2025,Nevelsk,MPP,30-10-2003,Steam Line Middle East Company,ShipAndBunker_VesselsValue
-2025,2,10-01-2025,Banglar Jyoti,SMALL TANKER,01-04-1987,Bangladesh Shipping Corp,ShipAndBunker_VesselsValue
-2025,2,10-01-2025,Banglar Shourabh,SMALL TANKER,01-09-1987,Bangladesh Shipping Corp,ShipAndBunker_VesselsValue
-2025,2,10-01-2025,Golden Orient,PANAMAX BULKER,01-04-1998,Golden Bulk Shipping,ShipAndBunker_VesselsValue
-2025,2,10-01-2025,Hapon,VLCC,30-04-1996,Undisclosed,ShipAndBunker_VesselsValue
-2025,1,05-01-2025,Sirius,SMALL TANKER,01-06-1982,Broring Oil Transport,ShipAndBunker_VesselsValue
-2025,1,05-01-2025,Lill,GEN CARGO,01-01-1985,Rolf Wagle,ShipAndBunker_VesselsValue
-2025,1,04-01-2025,Tai Fu No 3,REEFER,28-04-1980,Sun Victory Shipping SA,ShipAndBunker_VesselsValue
-2025,1,04-01-2025,Ark Progress,SMALL TANKER,26-06-1995,Integrity Ships,ShipAndBunker_VesselsValue
-2025,1,03-01-2025,Diamond Arrow,GEN CARGO,01-09-1982,Global Management & Trading,ShipAndBunker_VesselsValue
+year,week,published_date,sale_date,vessel_name,vessel_type,build_date,seller,source
+2026,35,,9/1/2026,Gas Aura,FULLY PRESSURISED,Mar 1996,ChemGasFleet,ShipAndBunker_VesselsValue
+2026,35,,8/31/2026,FK Sila,GEN CARGO,Sep 1982,H&P Ship Management,ShipAndBunker_VesselsValue
+2026,35,,8/30/2026,Crimson Saturn,SUPRAMAX,Oct 2001,Hachiuma Steamship,ShipAndBunker_VesselsValue
+2026,35,,8/28/2026,BR Glory,HANDY BULKER,Feb 1990,VRS Maritime Services DMCC,ShipAndBunker_VesselsValue
+2026,34,,8/25/2026,Athena,SMALL TANKER,Sep 1992,Leader Star Trading,ShipAndBunker_VesselsValue
+2026,34,,8/22/2026,Bursa,AFRAMAX,Nov 1999,Fornax Maritime,ShipAndBunker_VesselsValue
+2026,34,,8/21/2026,Gang Hai 666,HANDY BULKER,Jan 1989,Tianjin Ganghai Shipping,ShipAndBunker_VesselsValue
+2026,34,,8/21/2026,Arkadija,REEFER,Jan 1992,Sakhryba 1,ShipAndBunker_VesselsValue
+2026,34,,8/21/2026,Frio Hellenic,REEFER,Jan 1999,Baltmed Reefer Services,ShipAndBunker_VesselsValue
+2026,34,,8/20/2026,Mandarin Arrow,SUPRAMAX,Sep 1996,Gearbulk Holding AG,ShipAndBunker_VesselsValue
+2026,33,,8/17/2026,Sheng Chi,HANDY TANKER,Dec 2003,COSCO Shipping Energy Transportation,ShipAndBunker_VesselsValue
+2026,33,,8/17/2026,Tai Hang 3,PANAMAX BULKER,Apr 1997,Taihang Shipping,ShipAndBunker_VesselsValue
+2026,33,,8/17/2026,Shiryu Maru,PALLETISED,Mar 1993,JFE Holdings,ShipAndBunker_VesselsValue
+2026,33,,8/15/2026,Maria,HANDY BULKER,Apr 1997,Undisclosed,ShipAndBunker_VesselsValue
+2026,33,,8/14/2026,Elpis,CRUISEFERRY,Apr 1976,Hoiyu International Group,ShipAndBunker_VesselsValue
+2026,33,,8/14/2026,En Jie 7,HANDY BULKER,Sep 2012,Zhejiang Enjie Shipping,ShipAndBunker_VesselsValue
+2026,33,,8/14/2026,Fuji,SMALL TANKER,Dec 1993,YSK Marine,ShipAndBunker_VesselsValue
+2026,33,,8/14/2026,Green Stars,HANDY TANKER,Feb 2001,Waruna Nusa Sentana,ShipAndBunker_VesselsValue
+2026,32,,8/9/2026,Cutta,HANDY TANKER,Feb 2001,Mars Adventure,ShipAndBunker_VesselsValue
+2026,32,,8/7/2026,Star,GEN CARGO,Jan 1996,Star Marine,ShipAndBunker_VesselsValue
+2026,32,,8/7/2026,En Ji 17,SMALL HANDY,May 2006,Enji Shipping Development,ShipAndBunker_VesselsValue
+2026,32,,8/7/2026,Sagar Vijay,DRILLSHIP,Feb 1985,Oil and Natural Gas Company,ShipAndBunker_VesselsValue
+2026,32,,8/7/2026,Asia Cement No 3,SMALL HANDY,May 1989,U Ming Marine Transport,ShipAndBunker_VesselsValue
+2026,31,,8/5/2026,Lady Jasmine,MPP,Aug 1984,Blue Fleet Shipping,ShipAndBunker_VesselsValue
+2026,31,,8/4/2026,Gordion,GEN CARGO,Dec 1992,U Gemi Kiralama ve Ticaret,ShipAndBunker_VesselsValue
+2026,31,,8/3/2026,Fortune8,GEN CARGO,Aug 2005,Mu Mu Ship Management,ShipAndBunker_VesselsValue
+2026,31,,8/3/2026,Double In,VLGC,Mar 1992,Science Obedient Oriental,ShipAndBunker_VesselsValue
+2026,31,,8/3/2026,Frio Naruto,REEFER,Jan 1996,Baltmed Reefer Services,ShipAndBunker_VesselsValue
+2026,31,,8/3/2026,Orange Link,SMALL HANDY,Apr 2006,Orange Marine,ShipAndBunker_VesselsValue
+2026,31,,8/3/2026,Wang Chi,HANDY TANKER,Apr 2004,COSCO Shipping Energy Transportation,ShipAndBunker_VesselsValue
+2026,31,,8/3/2026,Uluc Ka,HANDY TANKER,Jul 2001,Trans KA Tanker Management,ShipAndBunker_VesselsValue
+2026,31,,7/31/2026,FT Island,VLCC,Jul 1998,Asia Affluence,ShipAndBunker_VesselsValue
+2026,31,,7/31/2026,Shanghai,AFRAMAX,Mar 2002,Undisclosed,ShipAndBunker_VesselsValue
+2026,30,,7/28/2026,SSL Visakhapatnam,HANDY CONTAINER,Dec 1996,Transworld Shipping Lines,ShipAndBunker_VesselsValue
+2026,30,,7/27/2026,Kronprins Frederik,ROPAX FERRY,Apr 1981,Scandlines,ShipAndBunker_VesselsValue
+2026,30,,7/26/2026,Foshan,SMALL TANKER,Feb 2007,Undisclosed,ShipAndBunker_VesselsValue
+2026,30,,7/24/2026,Hai Heng,SMALL TANKER,Jun 1999,Kwong Tai Lung Investment,ShipAndBunker_VesselsValue
+2026,30,,7/24/2026,Buraaq,SMALL TANKER,Oct 1994,Omniya Marine,ShipAndBunker_VesselsValue
+2026,30,,7/24/2026,Thanh Thanh Dat 999,HANDY BULKER,Oct 2001,Thanh Thanh Dat,ShipAndBunker_VesselsValue
+2026,30,,7/24/2026,Forever,AFRAMAX,Nov 1997,Forever Shipping Group,ShipAndBunker_VesselsValue
+2026,29,,Sale Date,Sold Name,Vessel Type,Built Date,Seller,ShipAndBunker_VesselsValue
+2026,29,,7/19/2026,Ever Delight,GEN CARGO,Dec 2009,Best Solution,ShipAndBunker_VesselsValue
+2026,29,,7/18/2026,Bagus,GEN CARGO,Sep 1991,Vesa Marine,ShipAndBunker_VesselsValue
+2026,29,,7/18/2026,Ela,SUEZMAX,Apr 2001,Undisclosed,ShipAndBunker_VesselsValue
+2026,29,,7/16/2026,Ninova,GEN CARGO,Jun 1989,U Gemi Kiralama ve Ticaret,ShipAndBunker_VesselsValue
+2026,28,,7/13/2026,Jin Hai Ou,HANDYMAX,Jan 1997,FUSCO,ShipAndBunker_VesselsValue
+2026,28,,7/13/2026,Dina Ocean,HANDY BULKER,Jul 1998,Hubei Qin Tai Shipping,ShipAndBunker_VesselsValue
+2026,28,,7/13/2026,Su Shun,FULLY PRESSURISED,Oct 1998,Glory Seas Shipping,ShipAndBunker_VesselsValue
+2026,28,,7/12/2026,Bulan,HANDY BULKER,May 1995,Jin Hao Ship Management,ShipAndBunker_VesselsValue
+2026,28,,7/12/2026,Seabas,HANDY TANKER,Nov 2001,Etihad,ShipAndBunker_VesselsValue
+2026,28,,7/9/2026,Seaturbo,HANDY TANKER,Jun 2000,Etihad,ShipAndBunker_VesselsValue
+2026,28,,7/9/2026,Stolt Kikyo,SMALL TANKER,Jul 1998,NYK Stolt Shipholdings Inc,ShipAndBunker_VesselsValue
+2026,27,,7/8/2026,Meili,GEN CARGO,Sep 1988,Powick Shipping,ShipAndBunker_VesselsValue
+2026,27,,7/6/2026,Liva,GEN CARGO,Jan 1977,Fana Shipping & Trade,ShipAndBunker_VesselsValue
+2026,27,,7/6/2026,Agnes,GEN CARGO,Jan 1978,Mes Marine,ShipAndBunker_VesselsValue
+2026,27,,7/3/2026,Avunda Reefer,REEFER,Feb 1994,Yugreftransflot JSC,ShipAndBunker_VesselsValue
+2026,27,,7/3/2026,Frio Antarctic,REEFER,Jan 1996,Baltmed Reefer Services,ShipAndBunker_VesselsValue
+2026,27,,7/3/2026,Yue Chi,HANDY TANKER,Mar 2006,COSCO Shipping Energy Transportation,ShipAndBunker_VesselsValue
+2026,27,,7/3/2026,Fei Chi,HANDY TANKER,Dec 2005,COSCO Shipping Energy Transportation,ShipAndBunker_VesselsValue
+2026,27,,7/3/2026,Pine Arrow,HANDYMAX,Jul 1996,Gearbulk Holding AG,ShipAndBunker_VesselsValue
+2026,27,,7/3/2026,J Chen,MPP (HEAVY LIFT),Apr 1996,J Chen Shipping HK,ShipAndBunker_VesselsValue
+2026,27,,7/2/2026,Ladonna,HANDY BULKER,Apr 1995,Lora Shipping,ShipAndBunker_VesselsValue
+2026,27,,7/2/2026,Stolt Sypress,HANDY TANKER,Apr 1998,Stolt Tankers,ShipAndBunker_VesselsValue
+2026,26,,6/29/2026,Basel Athena,MPP,Feb 1999,Medway Ship Management,ShipAndBunker_VesselsValue
+2026,26,,6/29/2026,Bao Dat Thanh 99,HANDYMAX,Jan 1997,Thanh Thanh Dat,ShipAndBunker_VesselsValue
+2026,26,,6/28/2026,Hai Xu,GEN CARGO,May 1996,Hong Kong King Sail Shipping,ShipAndBunker_VesselsValue
+2026,26,,6/27/2026,Akdeniz,ROPAX FERRY,Jan 1979,IHH,ShipAndBunker_VesselsValue
+2026,26,,6/27/2026,Asian Gas II,FULLY PRESSURISED,Nov 1995,Tanker Armada Nusanatra,ShipAndBunker_VesselsValue
+2026,26,,6/26/2026,Wantong 497,MPP,Nov 1986,Wantong International Group,ShipAndBunker_VesselsValue
+2026,26,,6/26/2026,FPSO Cidade de Niteroi MV18,FPSO TANKER,Nov 1986,Modec Inc,ShipAndBunker_VesselsValue
+2026,26,,6/26/2026,Aeolos Kenteris II,ROPAX FERRY,Jul 2001,Undisclosed,ShipAndBunker_VesselsValue
+2026,25,,6/21/2026,Pearl I,HANDY BULKER,Jun 1996,Negoship Line,ShipAndBunker_VesselsValue
+2026,25,,6/20/2026,Xin Hai 18,GEN CARGO,Dec 2004,Wantong International Group,ShipAndBunker_VesselsValue
+2026,25,,6/20/2026,Aeolos Kenteris,ROPAX FERRY,Aug 2001,Undisclosed,ShipAndBunker_VesselsValue
+2026,25,,6/20/2026,Kurdos,HANDY TANKER,Jun 2001,Petrofleet Ship Management,ShipAndBunker_VesselsValue
+2026,25,,6/18/2026,Mai 1,SMALL TANKER,Sep 1985,Klop Shiptrading,ShipAndBunker_VesselsValue
+2026,24,,6/11/2026,Gala,ROPAX FERRY,May 2011,Undisclosed,ShipAndBunker_VesselsValue
+2026,24,,6/12/2026,Putford Aries,STANDBY / ERRV,Feb 1977,Boston Putford Offshore Safety,ShipAndBunker_VesselsValue
+2026,23,,6/9/2026,Stolt Innovation,HANDY TANKER,May 1996,Stolt Tankers,ShipAndBunker_VesselsValue
+2026,23,,6/6/2026,Octans,VLCC,May 2001,Celia Armas,ShipAndBunker_VesselsValue
+2026,23,,6/5/2026,Ron,POST PANAMAX BULKER,Jul 1982,Lila Global,ShipAndBunker_VesselsValue
+2026,22,,6/1/2026,Jaffal,PALLETISED,Apr 1976,Minamar,ShipAndBunker_VesselsValue
+2026,22,,6/1/2026,Sanwa Fontaine,REEFER,Sep 1982,Dong Won Shipping,ShipAndBunker_VesselsValue
+2026,22,,6/1/2026,Sunny Palm,FEEDER,Jul 1996,KMTC,ShipAndBunker_VesselsValue
+2026,21,,5/25/2026,Big,POST PANAMAX CONT,Aug 2005,Xintai International Ship,ShipAndBunker_VesselsValue
+2026,21,,5/25/2026,Rantanplan,POST PANAMAX CONT,Jun 2006,Undisclosed,ShipAndBunker_VesselsValue
+2026,21,,5/25/2026,Time,POST PANAMAX CONT,Dec 2009,Undisclosed,ShipAndBunker_VesselsValue
+2026,21,,5/22/2026,Ocean Apex,SEMI SUB DRILL RIG,Aug 1976,Noble Offshore Drilling,ShipAndBunker_VesselsValue
+2026,21,,5/22/2026,Glas Dowr,FPSO TANKER,Mar 1996,Bluewater Energy Services,ShipAndBunker_VesselsValue
+2026,21,,5/22/2026,Yogi,POST PANAMAX CONT,Mar 2006,Undisclosed,ShipAndBunker_VesselsValue
+2026,21,,5/22/2026,Grouse Arrow,HANDYMAX,Jul 1991,Gearbulk Holding AG,ShipAndBunker_VesselsValue
+2026,20,,5/16/2026,Hanjin 3007,PALLETISED,Aug 1998,Hanjin Transportation Co,ShipAndBunker_VesselsValue
+2026,20,,5/15/2026,Maymei,HANDY TANKER,Nov 1997,Ever Shining,ShipAndBunker_VesselsValue
+2026,20,,5/15/2026,Valaris MS 1,SEMI SUB DRILL RIG,Apr 2011,Valaris,ShipAndBunker_VesselsValue
+2026,19,,5/11/2026,Gion Maru No 8,SMALL HANDY,Mar 1992,Ryuei Kisen YK,ShipAndBunker_VesselsValue
+2026,19,,5/9/2026,Gas Crusader,SP FR LPG,Oct 1996,Unifleet,ShipAndBunker_VesselsValue
+2026,19,,5/8/2026,B Gas Commander,SP FR LPG,Jun 1996,Bergshav AS,ShipAndBunker_VesselsValue
+2026,18,,5/6/2026,NQ Zinnia,SMALL TANKER,Feb 1998,Christiania Shipping Holding BV,ShipAndBunker_VesselsValue
+2026,18,,5/5/2026,Gautam,AHTS,Sep 1976,Ahilya Marine Incorporation,ShipAndBunker_VesselsValue
+2026,18,,5/5/2026,MSC Baltic III,SUB PANAMAX CONT,Sep 2003,MSC,ShipAndBunker_VesselsValue
+2026,18,,5/4/2026,Damas,HANDY TANKER,Feb 1998,M Shipping,ShipAndBunker_VesselsValue
+2026,18,,5/4/2026,Jal Shakti,HANDY TANKER,Feb 1998,Jaldhi,ShipAndBunker_VesselsValue
+2026,18,,5/4/2026,Explorindo 1,HANDY TANKER,Sep 2001,Buana Lintas Lautan,ShipAndBunker_VesselsValue
+2026,18,,5/4/2026,Jenny Lucky,HANDYMAX,Oct 1992,Brilliant Ship Management,ShipAndBunker_VesselsValue
+2026,17,,4/28/2026,Festival,HANDY BULKER,Mar 1996,Feng Sea Shipping,ShipAndBunker_VesselsValue
+2026,17,,4/25/2026,Xiong Hai,SMALL TANKER,Oct 1987,Ever Union Intermaritime,ShipAndBunker_VesselsValue
+2026,16,,4/22/2026,Belfast,GEN CARGO,Jan 1982,Adler Denizcilik,ShipAndBunker_VesselsValue
+2026,16,,4/21/2026,HDW Herkules,STANDBY / ERRV,Jul 1960,ThyssenKrupp AG,ShipAndBunker_VesselsValue
+2026,15,,4/14/2026,Douga,CAPESIZE,May 2002,Jiuhe Group Co Ltd,ShipAndBunker_VesselsValue
+2026,15,,4/13/2026,Seju Frontier,RO-RO,Jan 1988,Sejin Marine Co,ShipAndBunker_VesselsValue
+2026,15,,4/13/2026,Shin Ho Chun No 102,REEFER,Jan 2002,Tunago Shipping,ShipAndBunker_VesselsValue
+2026,15,,4/12/2026,Godspeed 6666,HANDYMAX,Jun 1996,INLACO HP,ShipAndBunker_VesselsValue
+2026,15,,4/12/2026,Hao Hung 66,HANDY BULKER,Jul 1996,INLACO HP,ShipAndBunker_VesselsValue
+2026,15,,4/12/2026,Hao Hung 01,HANDY BULKER,Nov 1988,INLACO HP,ShipAndBunker_VesselsValue
+2026,15,,4/12/2026,Andhika Kanishka,PANAMAX BULKER,May 1998,Andhika Lines,ShipAndBunker_VesselsValue
+2026,15,,4/10/2026,Hongkong Energy,LARGE LNG,Mar 2004,CIMC Financial Leasing,ShipAndBunker_VesselsValue
+2026,14,,4/7/2026,Bow Faith,HANDY TANKER,Apr 1997,Odfjell Tankers,ShipAndBunker_VesselsValue
+2026,14,,4/7/2026,Eternal Joy,HANDY BULKER,Apr 1997,Eternal Star Shipping,ShipAndBunker_VesselsValue
+2026,14,,4/6/2026,Eternal Ace,HANDY BULKER,May 1997,Eternal Star Shipping,ShipAndBunker_VesselsValue
+2026,14,,4/4/2026,Biskra,SMALL TANKER,Oct 1993,Rec Bitumen,ShipAndBunker_VesselsValue
+2026,13,,3/30/2026,Ocean Rosemary,HANDYMAX,May 1996,Shanghai Yongyao Shipping,ShipAndBunker_VesselsValue
+2026,13,,3/27/2026,Mali,VLCC,Nov 2001,Ceres Shipping,ShipAndBunker_VesselsValue
+2026,13,,3/27/2026,Jian Jie,SMALL TANKER,Jul 2005,Swiftbright Shipping,ShipAndBunker_VesselsValue
+2026,13,,3/27/2026,Star Gate,SMALL HANDY,Aug 1991,Century Shipping,ShipAndBunker_VesselsValue
+2026,12,,3/20/2026,Jaeger Arrow,HANDY BULKER,May 2001,Gearbulk Holding AG,ShipAndBunker_VesselsValue
+2026,11,,3/17/2026,Maya,HANDY TANKER,Jun 2000,Undisclosed,ShipAndBunker_VesselsValue
+2026,11,,3/17/2026,Puteri Zamrud,LARGE LNG,May 1996,MISC,ShipAndBunker_VesselsValue
+2026,11,,3/14/2026,Toro,GEN CARGO,Nov 1989,Almar Denizcilik Ticaret,ShipAndBunker_VesselsValue
+2026,11,,3/13/2026,Puteri Zamrud Satu,LARGE LNG,Jan 2004,MISC,ShipAndBunker_VesselsValue
+2026,11,,3/13/2026,Puteri Firus Satu,LARGE LNG,Sep 2004,MISC,ShipAndBunker_VesselsValue
+2026,11,,3/13/2026,Puteri Mutiara Satu,LARGE LNG,Apr 2005,MISC,ShipAndBunker_VesselsValue
+2026,11,,3/13/2026,Jin Jiang,CAPESIZE,Aug 2000,Ping On Enterprise,ShipAndBunker_VesselsValue
+2026,11,,3/13/2026,Kokopo Chief,FEEDERMAX,May 1991,Swire Shipping,ShipAndBunker_VesselsValue
+2026,11,,3/13/2026,Wantong Summer,HANDYMAX,May 1996,Just Power Holdings,ShipAndBunker_VesselsValue
+2026,11,,3/13/2026,Ocean Amazing,HANDYMAX,Jan 1998,Indofood Sukses Makmur,ShipAndBunker_VesselsValue
+2026,11,,3/13/2026,Energia Centaurus,POST PANAMAX BULKER,Jun 2001,MOL,ShipAndBunker_VesselsValue
+2026,10,,3/9/2026,Guzel,RO-RO,Jun 1980,Avrasya Shipping,ShipAndBunker_VesselsValue
+2026,10,,3/8/2026,Smooth Sea,SMALL TANKER,Jun 1986,Smooth Sea,ShipAndBunker_VesselsValue
+2026,10,,3/6/2026,Atlas,GEN CARGO,Jun 1995,Navessia Shipping,ShipAndBunker_VesselsValue
+2026,9,,3/2/2026,Felicita,HANDY TANKER,Jun 2000,Vast Marine,ShipAndBunker_VesselsValue
+2026,9,,2/28/2026,Ghada A,GEN CARGO,Jun 1972,Ammoun Shipping,ShipAndBunker_VesselsValue
+2026,9,,2/28/2026,UST Orda,GEN CARGO,Jun 1977,Angara Denizcilik ve Ticaret,ShipAndBunker_VesselsValue
+2026,9,,2/28/2026,AF Francesca,CRUISEFERRY,Jun 1979,Adria Ferries,ShipAndBunker_VesselsValue
+2026,8,,24-02-2026,Xing Fa,SMALL TANKER,Apr 2004,Hong Kong Tian Cheng Intl Ship,ShipAndBunker_VesselsValue
+2026,8,,23-02-2026,Xing Fa,SMALL TANKER,Jul 2003,Gold Charm International Enterprise,ShipAndBunker_VesselsValue
+2026,8,,21-02-2026,Bianca,HANDY TANKER,Oct 2003,Babylon Navigation DMCC,ShipAndBunker_VesselsValue
+2026,7,,17-02-2026,Sunny Spruce,FEEDER,Apr 1996,KMTC,ShipAndBunker_VesselsValue
+2026,7,,16-02-2026,Atlas,MPP,Oct 1995,Alphamoon Shipping Management,ShipAndBunker_VesselsValue
+2026,7,,16-02-2026,Rich Lucky 13,MPP,Feb 1994,Friends Shipping Co,ShipAndBunker_VesselsValue
+2026,7,,15-02-2026,Diana,PANAMAX MT,Apr 2004,Aleah Shipping,ShipAndBunker_VesselsValue
+2026,7,,13-02-2026,Chiltern,HANDY TANKER,Jan 1999,Millennium Ships Management,ShipAndBunker_VesselsValue
+2026,6,,07-02-2026,Sele/Pertamina 3006,HANDY TANKER,Sep 1982,Pertamina,ShipAndBunker_VesselsValue
+2026,6,,06-02-2026,Wan Hai 506,PANAMAX CONT,Nov 2005,Wan Hai Lines,ShipAndBunker_VesselsValue
+2026,6,,06-02-2026,Beihai,CAPESIZE,Feb 2002,Lila Global,ShipAndBunker_VesselsValue
+2026,6,,06-02-2026,Isa Golden,HANDY BULKER,Nov 1995,Isa Lines,ShipAndBunker_VesselsValue
+2026,5,,03-02-2026,Woodchip,SUEZMAX,Jul 1993,Veline Shiptrade,ShipAndBunker_VesselsValue
+2026,5,,31-01-2026,Armu,MPP,Feb 1995,Acrex Corp,ShipAndBunker_VesselsValue
+2026,5,,30-01-2026,Martine A,FEEDERMAX,Oct 1993,Arkas Line,ShipAndBunker_VesselsValue
+2026,4,,27-01-2026,Global Star,SMALL TANKER,Apr 1999,Glory International,ShipAndBunker_VesselsValue
+2026,4,,27-01-2026,Yun Da You 6,SMALL TANKER,Oct 2005,Vitality Winner,ShipAndBunker_VesselsValue
+2026,4,,27-01-2026,Yong Ang,REEFER,Feb 1998,Resurgence Ship Management,ShipAndBunker_VesselsValue
+2026,4,,25-01-2026,Hong Li,HANDY BULKER,Aug 1995,Hong Kong Xin Hui Shipping Group,ShipAndBunker_VesselsValue
+2026,4,,25-01-2026,Quartz,HANDY TANKER,Dec 1996,Luckin Maritime Co,ShipAndBunker_VesselsValue
+2026,4,,25-01-2026,Lumoso Permai,HANDYMAX,Sep 1994,Lumoso Pratama Line,ShipAndBunker_VesselsValue
+2026,4,,24-01-2026,Abinsk,HANDY BULKER,Mar 1983,Strategic Grain Management,ShipAndBunker_VesselsValue
+2026,4,,23-01-2026,Seapeak Mars,LARGE LNG,Dec 2004,Seapeak,ShipAndBunker_VesselsValue
+2026,3,,19-01-2026,Sheng Le C,HANDY BULKER,Jan 1996,Guangzhou Seaway International,ShipAndBunker_VesselsValue
+2026,3,,16-01-2026,Blue Bead,HANDY BULKER,Sep 1998,Blue Bead Shipping,ShipAndBunker_VesselsValue
+2026,3,,16-01-2026,Chung,SMALL HANDY,Nov 1984,Undisclosed,ShipAndBunker_VesselsValue
+2026,3,,16-01-2026,An Shun,PANAMAX BULKER,Jan 1998,Mentor Pacific Ltd,ShipAndBunker_VesselsValue
+2026,2,,12-01-2026,Rong Zhou,REEFER,Apr 1984,Zhoushan Haili Ocean,ShipAndBunker_VesselsValue
+2026,2,,12-01-2026,Dimple,SMALL HANDY,Apr 1992,Dimple Shipping,ShipAndBunker_VesselsValue
+2026,2,,10-01-2026,Inga A,FEEDERMAX,Dec 1993,Arkas Line,ShipAndBunker_VesselsValue
+2026,2,,09-01-2026,Saltlake,REEFER,Mar 1986,JiSung Shipping,ShipAndBunker_VesselsValue
+2026,2,,09-01-2026,Baroasaa 102,REEFER,Oct 1982,Maldives Industrial Fisheries,ShipAndBunker_VesselsValue
+2026,2,,09-01-2026,Sirrah,HANDYMAX,Jun 1999,Al Shumookh Construction,ShipAndBunker_VesselsValue
+2026,1,,06-01-2026,Odin,REEFER,Jun 1984,Primportservice,ShipAndBunker_VesselsValue
+2026,1,,05-01-2026,Atlantic Huron,HANDY BULKER,Apr 1984,CSL Group,ShipAndBunker_VesselsValue
+2025,53,,29-12-2025,Fuji,SMALL TANKER,Nov 1983,ESM Maritime,ShipAndBunker_VesselsValue
+2025,53,,29-12-2025,Hakata,SMALL TANKER,Jun 1969,Shipmate,ShipAndBunker_VesselsValue
+2025,53,,27-12-2025,Maple,SMALL TANKER,Apr 1979,Shipmate,ShipAndBunker_VesselsValue
+2025,52,,20-12-2025,Rui Tiger,PANAMAX BULKER,Jan 1995,Xiamen Xinjunhai Marine Management,ShipAndBunker_VesselsValue
+2025,52,,20-12-2025,Chang Ming Yang,POST PANAMAX BULKER,Mar 1993,Tianjin Chang Ming Shipping,ShipAndBunker_VesselsValue
+2025,52,,20-12-2025,Gold Origin,GEN CARGO,Jul 2005,Shandong Derong Shipping,ShipAndBunker_VesselsValue
+2025,50,,08-12-2025,Guan Lan Hu,PANAMAX BULKER,May 2001,Tai Zhou Shi An Li International Shipping,ShipAndBunker_VesselsValue
+2025,50,,05-12-2025,Morality,HANDY TANKER,Apr 2003,Navitas Continental Merchants,ShipAndBunker_VesselsValue
+2025,50,,05-12-2025,Ardhianto,MPP,Sep 1994,Falcon Shipping Line,ShipAndBunker_VesselsValue
+2025,50,,05-12-2025,Vigo,AFRAMAX,Jul 2000,Opec Petrol Transportation,ShipAndBunker_VesselsValue
+2025,49,,01-12-2025,Seapeak Madrid,LARGE LNG,Dec 2004,Seapeak,ShipAndBunker_VesselsValue
+2025,49,,01-12-2025,Seapeak Hispania,LARGE LNG,Sep 2002,Seapeak,ShipAndBunker_VesselsValue
+2025,49,,01-12-2025,Seapeak Asia,LARGE LNG,Aug 2003,Seapeak,ShipAndBunker_VesselsValue
+2025,49,,28-11-2025,Zi Yu Lan,PASSENGER FERRY,Aug 1995,Lianyungang CK Ferry,ShipAndBunker_VesselsValue
+2025,49,,28-11-2025,Bold Mariner,HANDYMAX,Jun 1996,Graham Shipping Co,ShipAndBunker_VesselsValue
+2025,48,,24-11-2025,DSM Norwich,HANDY BULKER,Mar 2004,Stemship Management,ShipAndBunker_VesselsValue
+2025,48,,24-11-2025,Chang Zhi,HANDY BULKER,Nov 1995,Bank of Communications Financial Leasing,ShipAndBunker_VesselsValue
+2025,48,,24-11-2025,Kohzan Maru,HANDY TANKER,Dec 2000,MOL,ShipAndBunker_VesselsValue
+2025,48,,23-11-2025,Victoria 3,HANDY BULKER,Feb 1996,China Government,ShipAndBunker_VesselsValue
+2025,48,,21-11-2025,Ark Prestige,SMALL TANKER,Jan 1996,Integrity Ships,ShipAndBunker_VesselsValue
+2025,47,,17-11-2025,Ancon Trader,SMALL TANKER,Mar 1979,Bunker Vessel Management,ShipAndBunker_VesselsValue
+2025,47,,15-11-2025,Star Advance,HANDY TANKER,Oct 1998,Saint Sail Shipping,ShipAndBunker_VesselsValue
+2025,47,,14-11-2025,Santa Ana,HANDY TANKER,May 2000,First Ship Management LLP,ShipAndBunker_VesselsValue
+2025,46,,11-11-2025,Tara,MPP,Oct 1994,Alphamoon Shipping Management,ShipAndBunker_VesselsValue
+2025,46,,11-11-2025,Fu Ocean,CAPESIZE,Feb 2001,Libra Seaways,ShipAndBunker_VesselsValue
+2025,46,,10-11-2025,Ju Da,PANAMAX BULKER,Jul 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
+2025,46,,10-11-2025,Yuan Zhi Hai,PANAMAX BULKER,Oct 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
+2025,46,,10-11-2025,Jia Xin Shan,SUPRAMAX,Dec 2004,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
+2025,46,,10-11-2025,Jia Shun Shan,SUPRAMAX,Oct 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
+2025,46,,10-11-2025,Jia Xiang Shan,SUPRAMAX,Jan 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
+2025,46,,10-11-2025,Jia Ning Shan,SUPRAMAX,Aug 2005,COSCO Shipping Bulk,ShipAndBunker_VesselsValue
+2025,45,,03-11-2025,Raissa,HANDY TANKER,Jun 1998,Rochas Co,ShipAndBunker_VesselsValue
+2025,45,,01-11-2025,Masal,SUEZMAX,Jul 1998,Ocean Glory Giant Ogg,ShipAndBunker_VesselsValue
+2025,45,,01-11-2025,Ark,GEN CARGO,Jun 1985,Norfes-Marine Service,ShipAndBunker_VesselsValue
+2025,44,,27-10-2025,Ningaloo Vision,FPSO TANKER,Jan 1981,Unknown USA,ShipAndBunker_VesselsValue
+2025,44,,26-10-2025,Collaroy,PASSENGER FERRY,Aug 1988,Sydney Ferries Corporation,ShipAndBunker_VesselsValue
+2025,44,,24-10-2025,Monica P,HANDYMAX,Apr 1998,Asia Mulia Transpasifik,ShipAndBunker_VesselsValue
+2025,44,,24-10-2025,Zenith,AFRAMAX,Jul 1998,PETROVIETNAM,ShipAndBunker_VesselsValue
+2025,44,,24-10-2025,Icon Amara,PSV,Sep 2014,Lianson Fleet Group Berhad,ShipAndBunker_VesselsValue
+2025,44,,24-10-2025,Discoverer Inspiration,DRILLSHIP,Oct 2009,Transocean Inc,ShipAndBunker_VesselsValue
+2025,43,,20-10-2025,Asmaa Z,HANDYMAX,Dec 1997,Safe Sea Services Sarl,ShipAndBunker_VesselsValue
+2025,43,,17-10-2025,Fan Shun,HANDYMAX,Sep 1997,Country Ocean Shipping,ShipAndBunker_VesselsValue
+2025,43,,17-10-2025,Dalia,GEN CARGO,Oct 1981,Cedar Marine Services,ShipAndBunker_VesselsValue
+2025,43,,17-10-2025,Puteri Nilam,LARGE LNG,Jun 1995,MISC,ShipAndBunker_VesselsValue
+2025,43,,17-10-2025,Puteri Delima,LARGE LNG,Jan 1995,MISC,ShipAndBunker_VesselsValue
+2025,41,,13-10-2025,Jin Hai Yu,HANDYMAX,Jul 1996,FUSCO,ShipAndBunker_VesselsValue
+2025,41,,12-10-2025,Al Sama,PANAMAX BULKER,Aug 1997,Jebel Sharm Marine,ShipAndBunker_VesselsValue
+2025,41,,10-10-2025,Aratere,ROPAX FERRY,Dec 1998,KiwiRail Interislander,ShipAndBunker_VesselsValue
+2025,41,,10-10-2025,S J Queen,GEN CARGO,Sep 1981,Sea Jewel Commercial Brokers,ShipAndBunker_VesselsValue
+2025,40,,06-10-2025,North Viking,GEN CARGO,Oct 1977,Foga Aps,ShipAndBunker_VesselsValue
+2025,40,,06-10-2025,Hokushin Maru,SMALL HANDY,Jul 1991,Koyo Kaiun Saiki,ShipAndBunker_VesselsValue
+2025,40,,04-10-2025,Interim,HANDY TANKER,Dec 1991,World Carrier,ShipAndBunker_VesselsValue
+2025,40,,03-10-2025,TG Arktika,HANDY BULKER,Jul 2007,Shipping-Trans Group,ShipAndBunker_VesselsValue
+2025,40,,03-10-2025,Tasco Bravo,SMALL TANKER,Oct 1994,Tipco Maritime,ShipAndBunker_VesselsValue
+2025,40,,03-10-2025,Bow Cedar,HANDY TANKER,Apr 1996,Odfjell Tankers,ShipAndBunker_VesselsValue
+2025,39,,29-09-2025,Heisei Maru,SMALL HANDY,Jun 1990,Heisei Shoun,ShipAndBunker_VesselsValue
+2025,39,,28-09-2025,Lady L,REEFER,Dec 1986,Undisclosed,ShipAndBunker_VesselsValue
+2025,39,,27-09-2025,KM Puteri Kirana,HANDYMAX,Jul 1994,Puteri Maju Sukses,ShipAndBunker_VesselsValue
+2025,39,,27-09-2025,Niigata Trader,FEEDERMAX,May 1997,Sinokor,ShipAndBunker_VesselsValue
+2025,39,,26-09-2025,Rising Harrier,HANDYMAX,Jul 1997,Swedish Management Co,ShipAndBunker_VesselsValue
+2025,39,,26-09-2025,AE Gas,FULLY PRESSURISED,Aug 1995,Tanker Armada Nusanatra,ShipAndBunker_VesselsValue
+2025,38,,22-09-2025,Nirvana,HANDY TANKER,Jul 1999,Starline Express Shipping,ShipAndBunker_VesselsValue
+2025,38,,21-09-2025,Asian Enterprise,HANDYMAX,Jul 1995,Dubai Navigation,ShipAndBunker_VesselsValue
+2025,38,,20-09-2025,Tutuk,SMALL TANKER,Jan 1996,Yong An Shipping,ShipAndBunker_VesselsValue
+2025,38,,20-09-2025,Nour Elhuda,MPP,Dec 1988,Embrace Shipping Management,ShipAndBunker_VesselsValue
+2025,38,,19-09-2025,He Fu,HANDY BULKER,Jun 1997,Hua Fu International Group,ShipAndBunker_VesselsValue
+2025,37,,15-09-2025,Sirvan Sabou,AFRAMAX,Aug 1995,Noah Maryam Kish Ship Management,ShipAndBunker_VesselsValue
+2025,37,,15-09-2025,Pione,HANDY TANKER,Feb 2000,Undisclosed,ShipAndBunker_VesselsValue
+2025,37,,12-09-2025,Rimba Empat,GEN CARGO,Aug 1975,Rimba Segara Lines,ShipAndBunker_VesselsValue

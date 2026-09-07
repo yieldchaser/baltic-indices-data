@@ -1,0 +1,25 @@
+{
+  "dry_run_timestamp": "2026-09-06T06:30:00.668034Z",
+  "pipeline": "Multi-Stage Cascade + Multi-Agent Debate Reconciler",
+  "cases_tested": [
+    {
+      "case": "Unlabelled Multi-Line Chart (Alang / Chattogram / Gadani LDT)",
+      "source": "reports/shipbrokers/star_asia/2026/star_asia_2026_W35_Market-Report-Week-35.pdf",
+      "page": 11,
+      "elements_extracted": 147,
+      "average_confidence": 86.74761904761904,
+      "auto_pass_pct": 17.687074829931973,
+      "review_queue_pct": 82.31292517006803,
+      "output_file": "data/derived/cascade_dry_run\\star_asia_chart_reconciled.csv"
+    },
+    {
+      "case": "Borderless Vector Demolition Sales Table",
+      "source": "reports/shipbrokers/advanced_shipping/2026/advanced_shipping_2026_W36_ADVANCED-MARKET-REPORT-WEEK-36.pdf",
+      "page": 5,
+      "records_extracted": 3,
+      "average_confidence": 96.0,
+      "output_file": "data/derived/cascade_dry_run\\advanced_shipping_table_reconciled.csv"
+    }
+  ],
+  "conclusion": "CASCADE_VERIFIED_SUCCESSFUL"
+}

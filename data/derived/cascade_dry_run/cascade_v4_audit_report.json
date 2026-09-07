@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-06T06:47:50.950841+00:00",
+  "pipeline_version": "V4 - Global Series Identity Tracker + Minimum-Jerk Permutation Solver + Calibrated Uncertainty Gate",
+  "metrics": {
+    "total_points": 147,
+    "avg_confidence_v1": 86.7,
+    "avg_confidence_v2": 91.4,
+    "avg_confidence_v3": 92.8,
+    "avg_confidence_v4": 92.4469387755102,
+    "avg_uncertainty_v4": 14.16530612244898,
+    "pass_count_v4": 94,
+    "pass_rate_v4_pct": 63.94557823129252,
+    "review_count_v4": 53,
+    "review_rate_v4_pct": 36.054421768707485,
+    "intersections_total": 39,
+    "intersections_resolved_v3": 20,
+    "intersections_resolved_v4": 19,
+    "intersections_resolved_rate_v4_pct": 48.717948717948715
+  },
+  "output_csv": "data/derived/cascade_dry_run\\star_asia_chart_v4_reconciled.csv"
+}

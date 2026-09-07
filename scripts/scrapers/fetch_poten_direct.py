@@ -564,7 +564,6 @@ def process_article(article_url, title, date_str):
                               layer["provenance"])
     if not good:
         return False, None
-    dest.completeness = "standfirst"
     return True, dest
 
 
@@ -606,7 +605,7 @@ def crawl_poten(max_pages=2, delay_sec=1.5):
                 print(f"  -> Fetching: {title[:60]}...")
                 ok, path = process_article(href, title, date_str)
                 if ok:
-                    print(f"     [OK] Saved to {path.name} (completeness={path.completeness})")
+                    print(f"     [OK] Saved to {path.name} (completeness=standfirst)")
                     processed_set.add(href)
                     checkpoint["processed_urls"] = list(processed_set)
                     checkpoint["last_page"] = page_num

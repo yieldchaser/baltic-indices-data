@@ -22,6 +22,7 @@ query Q($routes:[String!],$rateTypes:[String!],$rateSubtypes:[String!],$dateFrom
 
 VARIABLES = {
     "routes": [
+        "Capesize (182 000 dwt)",
         "Capesize (180 000 dwt)",
         "Panamax (75 000 dwt)",
         "Supramax (58 000 dwt)",
@@ -37,6 +38,7 @@ VARIABLES = {
 }
 
 ROUTE_MAP = {
+    "Capesize (182 000 dwt)": "capesize_1y_avg",
     "Capesize (180 000 dwt)": "capesize_1y_avg",
     "Panamax (75 000 dwt)": "panamax_1y_avg",
     "Supramax (58 000 dwt)": "supramax_1y_avg",
@@ -62,8 +64,8 @@ def main():
     rate_metas = data["data"]["rate_meta"]
     print(f"Received {len(rate_metas)} rate_meta entries")
 
-    # Build per-route DataFrames and merge on date
-    frames = []
+    # Build per-column DataFrames (merging 182k with 180k for Capesize)
+    col_dfs = {}
     for meta in rate_metas:
         route = meta["info"]["route"]
         rate_type = meta["info"]["rate_type"]
@@ -79,24 +81,61 @@ def main():
         df = pd.DataFrame(rates)
         df.rename(columns={"rate": col}, inplace=True)
         df["date"] = pd.to_datetime(df["date"])
-        frames.append(df[["date", col]])
+        df = df.dropna(subset=["date"]).drop_duplicates(subset=["date"])
 
-    if not frames:
+        if col in col_dfs:
+            # If 182k and 180k both exist, prefer 182k for modern dates, fallback to 180k
+            if "182" in route:
+                col_dfs[col] = df.set_index("date").combine_first(col_dfs[col].set_index("date")).reset_index()
+            else:
+                col_dfs[col] = col_dfs[col].set_index("date").combine_first(df.set_index("date")).reset_index()
+        else:
+            col_dfs[col] = df
+
+    if not col_dfs:
         print("No data received!")
         sys.exit(1)
 
-    # Outer-merge all frames on date
-    merged = frames[0]
-    for f in frames[1:]:
-        merged = merged.merge(f, on="date", how="outer")
+    # Outer-merge all column DataFrames on date
+    merged = None
+    for col, df in col_dfs.items():
+        if merged is None:
+            merged = df
+        else:
+            merged = merged.merge(df, on="date", how="outer")
 
-    # Ensure all expected columns exist
-    expected_cols = ["date"] + list(ROUTE_MAP.values())
+    # Ensure all expected columns exist in canonical order
+    canonical_cols = ["capesize_1y_avg", "panamax_1y_avg", "supramax_1y_avg",
+                      "handysize_1y_avg", "vlcc_1y", "suezmax_1y", "aframax_1y"]
+    expected_cols = ["date"] + canonical_cols
     for c in expected_cols:
         if c not in merged.columns:
             merged[c] = float("nan")
 
     merged = merged[expected_cols].sort_values("date").reset_index(drop=True)
+
+    # Completeness guard: if existing CSV has more complete data for the latest date, retain it
+    if os.path.exists(OUTPUT):
+        try:
+            prev_df = pd.read_csv(OUTPUT)
+            prev_df["date"] = pd.to_datetime(prev_df["date"])
+            latest_new_date = merged["date"].max()
+            new_last_row = merged[merged["date"] == latest_new_date].iloc[0]
+            new_valid = new_last_row[canonical_cols].count()
+
+            if latest_new_date in prev_df["date"].values:
+                prev_last_row = prev_df[prev_df["date"] == latest_new_date].iloc[0]
+                prev_valid = prev_last_row[canonical_cols].count()
+                if prev_valid > new_valid:
+                    print(f"  [GUARD] Existing row for {latest_new_date.date()} has {prev_valid}/7 rates vs {new_valid}/7 new. Retaining existing values.")
+                    for c in canonical_cols:
+                        if pd.isna(new_last_row[c]) and not pd.isna(prev_last_row[c]):
+                            merged.loc[merged["date"] == latest_new_date, c] = prev_last_row[c]
+            elif new_valid < 4:
+                print(f"  [GUARD] Latest date {latest_new_date.date()} has only {new_valid}/7 rates published (partial morning print). Waiting for full publish.")
+                merged = merged[merged["date"] != latest_new_date]
+        except Exception as e:
+            print(f"  [WARN] Failed to compare with existing CSV: {e}")
 
     os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
     merged.to_csv(OUTPUT, index=False)

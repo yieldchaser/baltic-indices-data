@@ -1,0 +1,148 @@
+date,series,val_geom_mt,val_vlm_ensemble_mt,val_trajectory_mt,final_reconciled_mt,confidence,uncertainty_score,is_intersection_zone,audit_status,decision_reason
+2022-08-01,Alang,37313.4,26003.3,37770.8,35616.9,94.0,4.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-08-01,Chattogram,76119.4,91011.6,86364.9,78353.2,94.0,5.9,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-08-01,Gadani,0.0,3000.4,2136.0,450.1,94.0,9.7,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-09-01,Alang,37313.4,54116.6,48812.8,39833.9,94.0,10.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-09-01,Chattogram,76119.4,133331.0,97764.4,84701.1,94.0,7.9,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-09-01,Gadani,0.0,10377.0,4260.6,1556.6,94.0,14.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-10-01,Alang,37313.4,83018.5,61073.5,44169.2,94.0,15.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-10-01,Chattogram,76119.4,178043.5,104810.2,91408.0,94.0,7.6,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-10-01,Gadani,0.0,17871.8,7031.8,2680.8,88.5,23.0,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 23.0% > 20%)
+2022-11-01,Alang,71641.8,108843.2,75406.5,75406.5,88.0,1.2,True,REVIEW_REQUIRED,Intersection dispute: Multi-path occlusion (ratio 1.2); anchored to smooth manifold
+2022-11-01,Chattogram,64179.1,215707.5,108843.0,108843.0,88.0,1.2,True,REVIEW_REQUIRED,Intersection dispute: Multi-path occlusion (ratio 1.2); anchored to smooth manifold
+2022-11-01,Gadani,5970.1,24737.1,10507.5,7104.5,95.0,17.4,True,PASS,Crossing zone peer verified by trajectory baseline
+2022-12-01,Alang,91791.0,110976.9,89656.2,94668.9,94.0,4.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-12-01,Chattogram,150000.0,168745.5,100889.5,153749.1,88.5,27.4,False,REVIEW_REQUIRED,Clean zone; pixel-calibrated geometry verified by VLM ensemble -> Overruled by Uncertainty Gate (Uncertainty 27.4% > 20%)
+2022-12-01,Gadani,19403.0,17073.4,14188.5,18937.1,94.9,18.0,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-01-01,Alang,98507.5,114903.8,97373.6,100966.9,94.0,3.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-01-01,Chattogram,26119.4,121550.1,95063.7,40434.0,88.5,30.0,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 30.0% > 20%)
+2023-01-01,Gadani,7462.7,9214.4,17749.3,7725.4,88.5,29.5,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 29.5% > 20%)
+2023-02-01,Alang,91044.8,114670.7,98903.5,94588.7,94.0,3.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-02-01,Chattogram,50746.3,69799.6,96403.0,53604.3,88.5,23.4,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 23.4% > 20%)
+2023-02-01,Gadani,37313.4,997.1,19139.1,31866.0,88.5,34.5,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 34.5% > 20%)
+2023-03-01,Alang,113235.3,97967.8,92205.1,110181.8,94.5,11.0,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-03-01,Chattogram,64179.1,225251.5,131915.1,88340.0,94.0,17.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-03-01,Gadani,41791.0,8153.5,17762.9,36745.4,88.5,54.7,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 54.7% > 20%)
+2023-04-01,Alang,84328.4,74341.8,82987.7,82331.0,94.9,1.6,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-04-01,Chattogram,67910.4,383645.9,189097.4,115270.8,88.5,20.8,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 20.8% > 20%)
+2023-04-01,Gadani,0.0,15565.1,14655.3,2334.8,88.5,43.3,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 43.3% > 20%)
+2023-05-01,Alang,62686.6,55240.0,74344.7,61197.3,94.9,10.1,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-05-01,Chattogram,116176.5,552400.4,251862.5,181610.1,94.0,15.2,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-05-01,Gadani,0.0,23351.5,11184.5,3502.7,88.5,35.6,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 35.6% > 20%)
+2023-06-01,Alang,58209.0,72699.7,71654.2,60382.6,94.0,9.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-06-01,Chattogram,400000.0,470876.9,277317.5,410631.5,88.5,25.3,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 25.3% > 20%)
+2023-06-01,Gadani,0.0,31004.1,9754.2,4650.6,88.5,26.8,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 26.8% > 20%)
+2023-07-01,Alang,67164.2,89915.3,73734.3,70576.8,94.0,3.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-07-01,Chattogram,262686.6,394647.8,263935.7,282480.8,94.0,4.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-07-01,Gadani,0.0,38545.2,12204.3,5781.8,88.5,27.6,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 27.6% > 20%)
+2023-08-01,Alang,76119.4,108150.3,83274.5,79697.0,96.0,3.4,True,PASS,Intersection resolved: Parallel convergence (7.5% separation); verified by global manifold
+2023-08-01,Chattogram,82089.6,316905.5,214814.2,148451.9,96.0,16.7,True,PASS,Intersection resolved: Parallel convergence (7.5% separation); verified by global manifold
+2023-08-01,Gadani,0.0,46529.8,17766.8,17766.8,88.0,1.2,True,REVIEW_REQUIRED,Severe trajectory divergence (100.0%); quarantined
+2023-09-01,Alang,75373.1,125107.2,93082.6,82833.2,94.0,6.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-09-01,Chattogram,92537.3,235658.9,165252.8,114005.6,94.0,16.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-09-01,Gadani,0.0,53964.2,25474.7,8094.6,88.5,35.4,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 35.4% > 20%)
+2023-10-01,Alang,65671.6,142524.1,105262.2,77199.5,94.0,14.6,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-10-01,Chattogram,144117.6,159424.5,123556.7,147179.0,95.3,10.8,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-10-01,Gadani,44776.1,55441.4,30175.0,46375.9,88.5,28.1,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 28.1% > 20%)
+2023-11-01,Alang,145588.2,159430.5,111397.8,148356.7,95.6,17.8,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-11-01,Chattogram,82089.6,79715.2,101409.4,81614.7,97.6,11.0,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-11-01,Gadani,29850.7,56559.3,33292.1,33857.0,94.0,2.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-12-01,Alang,73134.3,175634.8,114756.4,88509.4,94.0,12.7,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-12-01,Chattogram,97761.2,89129.7,83599.1,96034.9,95.9,8.7,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-12-01,Gadani,17910.4,57839.8,32132.9,23899.9,94.0,14.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-01-01,Alang,74626.9,196005.3,111243.4,92833.6,94.0,9.5,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-01-01,Chattogram,20895.5,100718.5,74238.8,32869.0,88.5,29.1,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 29.1% > 20%)
+2024-01-01,Gadani,1492.5,60288.1,33301.1,10311.9,88.5,35.8,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 35.8% > 20%)
+2024-02-01,Alang,76119.4,210366.8,108226.8,108226.8,88.0,1.2,True,REVIEW_REQUIRED,Severe trajectory divergence (29.7%); quarantined
+2024-02-01,Chattogram,41791.0,109223.8,72942.3,72942.3,88.0,1.2,True,REVIEW_REQUIRED,Severe trajectory divergence (42.7%); quarantined
+2024-02-01,Gadani,29850.7,60873.0,34551.7,31026.0,95.0,6.4,True,PASS,Crossing zone peer verified by trajectory baseline
+2024-03-01,Alang,25373.1,220115.7,116360.2,116360.2,88.0,1.2,True,REVIEW_REQUIRED,Severe trajectory divergence (78.2%); quarantined
+2024-03-01,Chattogram,94029.9,115226.9,82032.6,91030.5,95.0,6.7,True,PASS,Crossing zone peer verified by trajectory baseline
+2024-03-01,Gadani,34328.4,60488.8,39922.6,35726.9,95.0,6.5,True,PASS,Crossing zone peer verified by trajectory baseline
+2024-04-01,Alang,68656.7,250473.9,128585.0,128585.0,88.0,1.2,True,REVIEW_REQUIRED,Severe trajectory divergence (46.6%); quarantined
+2024-04-01,Chattogram,46268.7,132109.2,95131.5,95131.5,88.0,1.2,True,REVIEW_REQUIRED,Severe trajectory divergence (51.4%); quarantined
+2024-04-01,Gadani,40298.5,65460.3,41567.7,40615.8,95.0,2.4,True,PASS,Crossing zone peer verified by trajectory baseline
+2024-05-01,Alang,95522.4,260136.5,144931.7,120214.5,94.0,9.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-05-01,Chattogram,113235.3,138072.5,102017.3,116960.9,94.0,8.6,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-05-01,Gadani,23880.6,65034.1,41370.4,30053.6,94.0,14.9,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-06-01,Alang,219403.0,238377.1,142716.7,223197.8,88.5,29.4,False,REVIEW_REQUIRED,Clean zone; pixel-calibrated geometry verified by VLM ensemble -> Overruled by Uncertainty Gate (Uncertainty 29.4% > 20%)
+2024-06-01,Chattogram,131617.6,122498.4,101177.8,129793.8,96.4,15.4,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2024-06-01,Gadani,53731.3,48552.2,34070.3,52695.5,88.5,28.6,False,REVIEW_REQUIRED,Clean zone; pixel-calibrated geometry verified by VLM ensemble -> Overruled by Uncertainty Gate (Uncertainty 28.6% > 20%)
+2024-07-01,Alang,52985.1,209590.3,133575.9,76475.9,88.5,22.6,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 22.6% > 20%)
+2024-07-01,Chattogram,86567.2,103536.6,90796.1,89112.6,94.0,2.2,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-07-01,Gadani,14179.1,31251.9,26117.7,16740.0,94.0,19.2,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-08-01,Alang,49253.7,196663.3,111920.1,71365.2,94.0,19.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-08-01,Chattogram,34328.4,92121.2,78883.7,42997.3,88.5,24.0,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 24.0% > 20%)
+2024-08-01,Gadani,10447.8,15526.0,15937.2,11209.5,94.0,16.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-09-01,Alang,70149.3,165871.6,99712.1,84930.7,96.0,8.7,True,PASS,Intersection resolved: Parallel convergence (6.6% separation); verified by global manifold
+2024-09-01,Chattogram,65671.6,72253.3,68478.9,67075.3,96.0,2.3,True,PASS,Intersection resolved: Parallel convergence (6.6% separation); verified by global manifold
+2024-09-01,Gadani,0.0,15543.8,9706.1,2426.5,88.5,37.6,True,REVIEW_REQUIRED,Crossing zone peer verified by trajectory baseline -> Overruled by Uncertainty Gate (Uncertainty 37.6% > 20%)
+2024-10-01,Alang,59701.5,145693.6,94440.6,72600.3,94.0,12.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-10-01,Chattogram,91044.8,57340.0,63135.0,85989.1,94.0,19.3,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-10-01,Gadani,0.0,16407.1,5649.8,2461.1,94.0,17.2,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-11-01,Alang,95522.4,121127.1,100518.0,99363.1,94.0,1.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-11-01,Chattogram,46268.7,40375.7,65235.8,45090.1,94.7,16.7,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2024-11-01,Gadani,0.0,16921.9,5158.4,2538.3,94.0,14.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-12-01,Alang,91044.8,127833.8,107997.7,96563.1,94.0,6.5,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-12-01,Chattogram,60447.8,61882.7,70923.2,60734.7,97.8,8.4,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2024-12-01,Gadani,0.0,17079.3,5049.5,2561.9,94.0,13.7,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-01-01,Alang,97014.9,143699.7,114283.4,104017.6,94.0,5.7,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-01-01,Chattogram,78358.2,88765.5,78548.9,80439.7,94.5,2.5,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-01-01,Gadani,0.0,18422.4,5596.1,2763.4,94.0,15.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-02-01,Alang,144852.9,149066.4,112637.3,145695.6,97.6,15.9,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-02-01,Chattogram,104411.8,109315.3,82866.7,105392.5,97.1,14.8,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-02-01,Gadani,0.0,18413.5,6176.5,2762.0,94.0,18.3,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-03-01,Alang,89552.2,147348.2,104984.8,97268.5,96.0,4.9,True,PASS,Intersection resolved: Parallel convergence (4.3% separation); verified by global manifold
+2025-03-01,Chattogram,85820.9,108615.4,81555.7,83688.3,96.0,2.6,True,PASS,Intersection resolved: Parallel convergence (4.3% separation); verified by global manifold
+2025-03-01,Gadani,0.0,18825.8,7074.4,1768.6,88.5,27.8,True,REVIEW_REQUIRED,Crossing zone peer verified by trajectory baseline -> Overruled by Uncertainty Gate (Uncertainty 27.8% > 20%)
+2025-04-01,Alang,50000.0,148320.1,95709.9,64748.0,94.0,17.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-04-01,Chattogram,26865.7,109962.9,79248.1,39330.3,88.5,26.4,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 26.4% > 20%)
+2025-04-01,Gadani,7462.7,19653.7,7232.7,9291.3,94.0,11.5,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-05-01,Alang,32835.8,150048.1,94492.7,50417.7,88.5,24.6,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 24.6% > 20%)
+2025-05-01,Chattogram,59701.5,111868.9,76943.3,67526.6,94.0,7.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-05-01,Gadani,1492.5,20579.4,8163.3,4355.6,88.5,20.3,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 20.3% > 20%)
+2025-06-01,Alang,81343.3,144006.8,104841.4,90742.8,94.0,8.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-06-01,Chattogram,67164.2,107991.5,79395.9,73288.3,94.0,5.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-06-01,Gadani,0.0,20449.8,8475.4,3067.5,88.5,28.3,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 28.3% > 20%)
+2025-07-01,Alang,136764.7,147583.3,123992.4,138928.4,96.1,7.3,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-07-01,Chattogram,100735.3,111302.4,75556.2,102848.7,95.4,19.3,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-07-01,Gadani,0.0,21658.9,11401.4,3248.8,88.5,37.0,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 37.0% > 20%)
+2025-08-01,Alang,126470.6,145165.2,146577.7,130209.5,94.1,6.8,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-08-01,Chattogram,47761.2,110125.3,69918.5,57115.8,94.0,10.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-08-01,Gadani,20895.5,22025.1,13192.6,21121.4,88.5,31.3,False,REVIEW_REQUIRED,Clean zone; pixel-calibrated geometry verified by VLM ensemble -> Overruled by Uncertainty Gate (Uncertainty 31.3% > 20%)
+2025-09-01,Alang,182352.9,156570.3,156461.8,177196.4,94.3,7.9,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-09-01,Chattogram,35820.9,81180.7,57802.7,42624.9,94.0,14.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-09-01,Gadani,2985.1,23482.9,16286.5,6059.7,88.5,32.6,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 32.6% > 20%)
+2025-10-01,Alang,189705.9,171413.5,153942.7,180765.1,95.0,10.0,True,PASS,Crossing zone peer verified by trajectory baseline
+2025-10-01,Chattogram,23880.6,55841.2,51169.6,51169.6,88.0,1.2,True,REVIEW_REQUIRED,Severe trajectory divergence (53.3%); quarantined
+2025-10-01,Gadani,29850.7,25469.6,15074.5,15074.5,88.0,1.2,True,REVIEW_REQUIRED,Severe trajectory divergence (98.0%); quarantined
+2025-11-01,Alang,150735.3,188470.2,134477.6,156395.5,94.0,9.4,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-11-01,Chattogram,77611.9,29758.5,49029.0,70433.9,88.5,23.1,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 23.1% > 20%)
+2025-11-01,Gadani,1492.5,27774.6,15179.1,5434.8,88.5,33.3,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 33.3% > 20%)
+2025-12-01,Alang,29850.7,142031.1,113314.4,113314.4,88.0,1.2,True,REVIEW_REQUIRED,Intersection dispute: Multi-path occlusion (ratio 1.0); anchored to smooth manifold
+2025-12-01,Chattogram,41044.8,47159.2,54456.0,54456.0,88.0,1.2,True,REVIEW_REQUIRED,Intersection dispute: Multi-path occlusion (ratio 1.0); anchored to smooth manifold
+2025-12-01,Gadani,1492.5,28516.9,13445.0,4480.6,88.5,34.6,True,REVIEW_REQUIRED,Crossing zone peer verified by trajectory baseline -> Overruled by Uncertainty Gate (Uncertainty 34.6% > 20%)
+2026-01-01,Alang,83582.1,87602.0,94618.9,84386.1,97.1,6.7,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2026-01-01,Chattogram,43283.6,63422.8,63352.8,46304.5,94.0,14.7,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-01-01,Gadani,1492.5,28120.0,14660.0,5486.7,88.5,32.5,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 32.5% > 20%)
+2026-02-01,Alang,130882.4,34898.8,87065.7,116484.8,94.0,18.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-02-01,Chattogram,101470.6,79768.7,73836.4,98215.3,94.0,17.8,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-02-01,Gadani,25373.1,27919.0,14024.3,25882.3,88.5,43.5,False,REVIEW_REQUIRED,Clean zone; pixel-calibrated geometry verified by VLM ensemble -> Overruled by Uncertainty Gate (Uncertainty 43.5% > 20%)
+2026-03-01,Alang,74626.9,77615.4,90783.7,90783.7,88.0,1.2,True,REVIEW_REQUIRED,Intersection dispute: Multi-path occlusion (ratio 1.1); anchored to smooth manifold
+2026-03-01,Chattogram,67164.2,91179.8,86361.3,86361.3,88.0,1.2,True,REVIEW_REQUIRED,Intersection dispute: Multi-path occlusion (ratio 1.1); anchored to smooth manifold
+2026-03-01,Gadani,8955.2,25572.2,13976.9,10210.6,95.0,14.7,True,PASS,Crossing zone peer verified by trajectory baseline
+2026-04-01,Alang,85074.6,122027.8,98798.2,98798.2,88.0,1.2,True,REVIEW_REQUIRED,Intersection dispute: Multi-path occlusion (ratio 1.2); anchored to smooth manifold
+2026-04-01,Chattogram,95522.4,101157.5,97210.4,97210.4,88.0,1.2,True,REVIEW_REQUIRED,Intersection dispute: Multi-path occlusion (ratio 1.2); anchored to smooth manifold
+2026-04-01,Gadani,0.0,22333.1,12134.6,3033.6,88.5,38.8,True,REVIEW_REQUIRED,Crossing zone peer verified by trajectory baseline -> Overruled by Uncertainty Gate (Uncertainty 38.8% > 20%)
+2026-05-01,Alang,62686.6,167604.2,111577.9,78424.2,94.0,16.1,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-05-01,Chattogram,116176.5,113379.3,107334.5,115617.0,97.8,5.1,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2026-05-01,Gadani,4477.6,19848.9,11320.6,6783.3,88.5,21.3,False,REVIEW_REQUIRED,Clean zone; anchored to calibrated pixel ground truth -> Overruled by Uncertainty Gate (Uncertainty 21.3% > 20%)
+2026-06-01,Alang,159558.8,145393.2,119276.9,156725.7,95.8,16.9,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2026-06-01,Chattogram,114705.9,116839.9,113877.9,115132.7,97.9,1.8,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2026-06-01,Gadani,11940.3,17192.0,11211.9,12728.1,94.0,8.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-07-01,Alang,123529.4,127354.5,123715.6,123622.5,96.0,1.3,True,PASS,Intersection resolved: Parallel convergence (3.6% separation); verified by global manifold
+2026-07-01,Chattogram,119117.6,123669.8,118204.6,118661.1,96.0,1.4,True,PASS,Intersection resolved: Parallel convergence (3.6% separation); verified by global manifold
+2026-07-01,Gadani,11940.3,15028.4,11605.6,11856.6,95.0,2.3,True,PASS,Crossing zone peer verified by trajectory baseline
+2026-08-01,Alang,123529.4,102624.7,125155.4,124342.4,96.0,1.6,True,PASS,Intersection resolved: Parallel convergence (3.6% separation); verified by global manifold
+2026-08-01,Chattogram,119117.6,125262.5,120327.2,119722.4,96.0,1.5,True,PASS,Intersection resolved: Parallel convergence (3.6% separation); verified by global manifold
+2026-08-01,Gadani,11940.3,12073.5,12653.9,12118.7,95.0,3.4,True,PASS,Crossing zone peer verified by trajectory baseline

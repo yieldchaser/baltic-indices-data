@@ -704,13 +704,14 @@ hr { border: none; border-top: 1px solid #dce3ea; margin: 20px 0; }
 """
 
 MONTH_MAP = {m[:3].lower(): i for i, m in enumerate(
-    ["", "January","February","March","April","May","June",
+    ["January","February","March","April","May","June",
      "July","August","September","October","November","December"], 1
 )}
 
 
 def try_parse_date(text: str) -> "datetime | None":
     text = re.sub(r"\s+", " ", text.strip())
+    text = re.sub(r"\bSept\b", "Sep", text, flags=re.IGNORECASE)
     for fmt in ["%d %B %Y", "%d %b %Y", "%B %d, %Y", "%b %d, %Y",
                 "%d/%m/%Y", "%Y-%m-%d"]:
         try:

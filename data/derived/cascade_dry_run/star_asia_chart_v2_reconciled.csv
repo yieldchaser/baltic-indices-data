@@ -1,0 +1,148 @@
+date,series,val_geom_mt,val_landmark_mt,val_integral_mt,final_reconciled_mt,confidence,audit_status,decision_reason
+2022-08-01,Alang,37313.4,26000.0,40000.0,38253.7,91.1,PASS,Pairwise consensus (7.2% delta); Extractor 2 (Landmark) overruled
+2022-09-01,Alang,37313.4,54304.3,50000.0,52152.2,87.6,PASS,Pairwise consensus (8.6% delta); Extractor 1 (Geometric) overruled
+2022-10-01,Alang,37313.4,81695.7,50000.0,37313.4,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 25.4% > 10.0% threshold); anchored to calibrated pixels
+2022-11-01,Alang,71641.8,110000.0,57500.0,71641.8,92.5,PASS,Multi-model divergence (min delta 19.7% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-12-01,Alang,91791.0,111630.4,50000.0,91791.0,92.5,PASS,Multi-model divergence (min delta 21.6% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-01-01,Alang,98507.5,113315.2,50000.0,98507.5,92.5,PASS,Multi-model divergence (min delta 15.0% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-02-01,Alang,91044.8,115000.0,50000.0,91044.8,92.5,PASS,Multi-model divergence (min delta 26.3% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-03-01,Alang,113235.3,96123.6,50000.0,113235.3,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 17.8% > 10.0% threshold); anchored to calibrated pixels
+2023-04-01,Alang,84328.4,75224.7,57500.0,84328.4,92.5,PASS,Multi-model divergence (min delta 12.1% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-05-01,Alang,62686.6,55000.0,57500.0,56250.0,89.3,PASS,Pairwise consensus (4.3% delta); Extractor 1 (Geometric) overruled
+2023-06-01,Alang,58209.0,72690.2,50000.0,58209.0,92.5,PASS,Multi-model divergence (min delta 14.1% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-07-01,Alang,67164.2,89809.8,40000.0,67164.2,92.5,PASS,Multi-model divergence (min delta 33.7% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-08-01,Alang,76119.4,107500.0,40000.0,76119.4,92.5,PASS,Multi-model divergence (min delta 41.2% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-09-01,Alang,75373.1,125190.2,50000.0,75373.1,92.5,PASS,Multi-model divergence (min delta 33.7% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-10-01,Alang,65671.6,142309.8,50000.0,65671.6,92.5,PASS,Multi-model divergence (min delta 23.9% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-11-01,Alang,145588.2,160000.0,57500.0,150632.4,91.0,PASS,Pairwise consensus (9.9% delta); Extractor 3 (Integral) overruled
+2023-12-01,Alang,73134.3,176483.5,50000.0,73134.3,92.5,PASS,Multi-model divergence (min delta 31.6% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-01-01,Alang,74626.9,193516.5,66073.1,74626.9,92.5,PASS,Multi-model divergence (min delta 11.5% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-02-01,Alang,76119.4,210549.5,66073.1,76119.4,92.5,PASS,Multi-model divergence (min delta 13.2% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-03-01,Alang,25373.1,226483.5,66073.1,25373.1,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 61.6% > 10.0% threshold); anchored to calibrated pixels
+2024-04-01,Alang,68656.7,243516.5,75984.0,71221.3,90.1,PASS,Pairwise consensus (9.6% delta); Extractor 2 (Landmark) overruled
+2024-05-01,Alang,95522.4,260000.0,75984.0,95522.4,92.5,PASS,Multi-model divergence (min delta 20.5% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-06-01,Alang,219403.0,236413.0,66073.1,225356.5,91.9,PASS,Pairwise consensus (7.8% delta); Extractor 3 (Integral) overruled
+2024-07-01,Alang,52985.1,213587.0,52858.5,52940.8,93.9,PASS,Pairwise consensus (0.2% delta); Extractor 2 (Landmark) overruled
+2024-08-01,Alang,49253.7,190000.0,52858.5,50515.4,91.3,PASS,Pairwise consensus (6.8% delta); Extractor 2 (Landmark) overruled
+2024-09-01,Alang,70149.3,166413.0,66073.1,68722.6,91.7,PASS,Pairwise consensus (5.8% delta); Extractor 2 (Landmark) overruled
+2024-10-01,Alang,59701.5,143587.0,66073.1,61931.6,90.1,PASS,Pairwise consensus (9.6% delta); Extractor 2 (Landmark) overruled
+2024-11-01,Alang,95522.4,120000.0,75984.0,95522.4,92.5,PASS,Multi-model divergence (min delta 20.5% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-12-01,Alang,91044.8,129782.6,66073.1,91044.8,92.5,PASS,Multi-model divergence (min delta 27.4% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-01-01,Alang,97014.9,139891.3,109405.1,97014.9,92.5,PASS,Multi-model divergence (min delta 11.3% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-02-01,Alang,144852.9,150000.0,109405.1,146654.4,93.6,PASS,Pairwise consensus (3.6% delta); Extractor 3 (Integral) overruled
+2025-03-01,Alang,89552.2,149226.5,109405.1,89552.2,92.5,PASS,Multi-model divergence (min delta 18.1% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-04-01,Alang,50000.0,148370.2,125815.8,50000.0,92.5,PASS,Multi-model divergence (min delta 17.9% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-05-01,Alang,32835.8,147541.4,125815.8,32835.8,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 17.3% > 10.0% threshold); anchored to calibrated pixels
+2025-06-01,Alang,81343.3,146685.1,109405.1,81343.3,92.5,PASS,Multi-model divergence (min delta 25.6% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-07-01,Alang,136764.7,145856.4,87524.1,139946.8,92.3,PASS,Pairwise consensus (6.6% delta); Extractor 3 (Integral) overruled
+2025-08-01,Alang,126470.6,145000.0,87524.1,126470.6,92.5,PASS,Multi-model divergence (min delta 14.7% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-09-01,Alang,182352.9,160163.0,109405.1,182352.9,92.5,PASS,Multi-model divergence (min delta 13.9% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-10-01,Alang,189705.9,174837.0,109405.1,184501.8,91.6,PASS,Pairwise consensus (8.5% delta); Extractor 3 (Integral) overruled
+2025-11-01,Alang,150735.3,190000.0,125815.8,150735.3,92.5,PASS,Multi-model divergence (min delta 16.5% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-12-01,Alang,29850.7,139456.5,109405.1,29850.7,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 27.5% > 10.0% threshold); anchored to calibrated pixels
+2026-01-01,Alang,83582.1,87228.3,85715.4,85027.0,96.4,PASS,All 3 extractors converged within tight adaptive threshold
+2026-02-01,Alang,130882.4,35000.0,85715.4,130882.4,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 52.7% > 10.0% threshold); anchored to calibrated pixels
+2026-03-01,Alang,74626.9,77471.9,85715.4,75622.6,93.5,PASS,Pairwise consensus (3.7% delta); Extractor 3 (Integral) overruled
+2026-04-01,Alang,85074.6,124494.4,98572.7,85074.6,92.5,PASS,Multi-model divergence (min delta 13.7% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2026-05-01,Alang,62686.6,170000.0,98572.7,62686.6,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 36.4% > 10.0% threshold); anchored to calibrated pixels
+2026-06-01,Alang,159558.8,147087.0,85715.4,155193.7,91.6,PASS,Pairwise consensus (8.5% delta); Extractor 3 (Integral) overruled
+2026-07-01,Alang,123529.4,124913.0,68572.3,124013.7,94.6,PASS,Pairwise consensus (1.1% delta); Extractor 3 (Integral) overruled
+2026-08-01,Alang,123529.4,102000.0,68572.3,123529.4,92.5,PASS,Multi-model divergence (min delta 21.1% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-08-01,Chattogram,76119.4,91000.0,60000.0,76119.4,92.5,PASS,Multi-model divergence (min delta 19.5% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-09-01,Chattogram,76119.4,133793.5,60000.0,76119.4,92.5,PASS,Multi-model divergence (min delta 21.2% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-10-01,Chattogram,76119.4,175206.5,60000.0,76119.4,92.5,PASS,Multi-model divergence (min delta 21.2% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-11-01,Chattogram,64179.1,218000.0,51000.0,64179.1,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 20.5% > 10.0% threshold); anchored to calibrated pixels
+2022-12-01,Chattogram,150000.0,169739.1,60000.0,150000.0,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 13.2% > 10.0% threshold); anchored to calibrated pixels
+2023-01-01,Chattogram,26119.4,119869.6,51000.0,26119.4,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 48.8% > 10.0% threshold); anchored to calibrated pixels
+2023-02-01,Chattogram,50746.3,70000.0,60000.0,50746.3,92.5,PASS,Multi-model divergence (min delta 15.4% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-03-01,Chattogram,64179.1,221011.2,75000.0,64179.1,92.5,PASS,Multi-model divergence (min delta 14.4% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-04-01,Chattogram,67910.4,388202.2,75000.0,70391.8,90.2,PASS,Pairwise consensus (9.5% delta); Extractor 2 (Landmark) overruled
+2023-05-01,Chattogram,116176.5,550000.0,75000.0,116176.5,92.5,PASS,Multi-model divergence (min delta 35.4% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-06-01,Chattogram,400000.0,470815.2,60000.0,400000.0,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 17.7% > 10.0% threshold); anchored to calibrated pixels
+2023-07-01,Chattogram,262686.6,394184.8,60000.0,262686.6,92.5,PASS,Multi-model divergence (min delta 50.1% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-08-01,Chattogram,82089.6,315000.0,60000.0,82089.6,92.5,PASS,Multi-model divergence (min delta 26.9% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-09-01,Chattogram,92537.3,235815.2,60000.0,92537.3,92.5,PASS,Multi-model divergence (min delta 35.2% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-10-01,Chattogram,144117.6,159184.8,60000.0,144117.6,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 10.5% > 10.0% threshold); anchored to calibrated pixels
+2023-11-01,Chattogram,82089.6,80000.0,51000.0,81358.2,94.0,PASS,Pairwise consensus (2.6% delta); Extractor 3 (Integral) overruled
+2023-12-01,Chattogram,97761.2,89560.4,60000.0,94890.9,91.3,PASS,Pairwise consensus (9.2% delta); Extractor 3 (Integral) overruled
+2024-01-01,Chattogram,20895.5,99439.6,43531.4,20895.5,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 52.0% > 10.0% threshold); anchored to calibrated pixels
+2024-02-01,Chattogram,41791.0,109318.7,51213.4,41791.0,92.5,PASS,Multi-model divergence (min delta 18.4% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-03-01,Chattogram,94029.9,118560.4,64016.8,94029.9,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 26.1% > 10.0% threshold); anchored to calibrated pixels
+2024-04-01,Chattogram,46268.7,128439.6,64016.8,46268.7,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 27.7% > 10.0% threshold); anchored to calibrated pixels
+2024-05-01,Chattogram,113235.3,138000.0,64016.8,113235.3,92.5,PASS,Multi-model divergence (min delta 21.9% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-06-01,Chattogram,131617.6,121489.1,51213.4,128072.7,91.7,PASS,Pairwise consensus (8.3% delta); Extractor 3 (Integral) overruled
+2024-07-01,Chattogram,86567.2,105510.9,51213.4,86567.2,92.5,PASS,Multi-model divergence (min delta 21.9% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-08-01,Chattogram,34328.4,89000.0,51213.4,34328.4,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 33.0% > 10.0% threshold); anchored to calibrated pixels
+2024-09-01,Chattogram,65671.6,72489.1,51213.4,65671.6,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 10.4% > 10.0% threshold); anchored to calibrated pixels
+2024-10-01,Chattogram,91044.8,56510.9,51213.4,53862.2,87.3,PASS,Pairwise consensus (9.4% delta); Extractor 1 (Geometric) overruled
+2024-11-01,Chattogram,46268.7,40000.0,43531.4,45310.6,91.5,PASS,Pairwise consensus (6.3% delta); Extractor 2 (Landmark) overruled
+2024-12-01,Chattogram,60447.8,62826.1,51213.4,61280.2,93.4,PASS,Pairwise consensus (3.9% delta); Extractor 3 (Integral) overruled
+2025-01-01,Chattogram,78358.2,86413.0,60231.7,78358.2,92.5,PASS,Multi-model divergence (min delta 10.3% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-02-01,Chattogram,104411.8,110000.0,70860.8,106367.6,92.9,PASS,Pairwise consensus (5.4% delta); Extractor 3 (Integral) overruled
+2025-03-01,Chattogram,85820.9,110000.0,88576.0,86785.2,92.8,PASS,Pairwise consensus (3.1% delta); Extractor 2 (Landmark) overruled
+2025-04-01,Chattogram,26865.7,110000.0,88576.0,26865.7,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 24.2% > 10.0% threshold); anchored to calibrated pixels
+2025-05-01,Chattogram,59701.5,110000.0,88576.0,59701.5,92.5,PASS,Multi-model divergence (min delta 24.2% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-06-01,Chattogram,67164.2,110000.0,70860.8,68458.0,91.9,PASS,Pairwise consensus (5.2% delta); Extractor 2 (Landmark) overruled
+2025-07-01,Chattogram,100735.3,110000.0,70860.8,103977.9,91.3,PASS,Pairwise consensus (9.2% delta); Extractor 3 (Integral) overruled
+2025-08-01,Chattogram,47761.2,110000.0,70860.8,47761.2,92.5,PASS,Multi-model divergence (min delta 32.6% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-09-01,Chattogram,35820.9,83043.5,70860.8,35820.9,92.5,PASS,Multi-model divergence (min delta 17.2% > 10.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-10-01,Chattogram,23880.6,56956.5,70860.8,23880.6,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 24.4% > 10.0% threshold); anchored to calibrated pixels
+2025-11-01,Chattogram,77611.9,30000.0,60231.7,77611.9,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 28.9% > 10.0% threshold); anchored to calibrated pixels
+2025-12-01,Chattogram,41044.8,46304.3,70860.8,41044.8,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 11.4% > 10.0% threshold); anchored to calibrated pixels
+2026-01-01,Chattogram,43283.6,63152.2,69458.2,66305.2,87.0,PASS,Pairwise consensus (10.0% delta); Extractor 1 (Geometric) overruled
+2026-02-01,Chattogram,101470.6,80000.0,81715.5,80857.8,90.2,PASS,Pairwise consensus (2.1% delta); Extractor 1 (Geometric) overruled
+2026-03-01,Chattogram,67164.2,91011.2,102144.4,67164.2,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 12.2% > 10.0% threshold); anchored to calibrated pixels
+2026-04-01,Chattogram,95522.4,103202.2,102144.4,99097.8,94.7,PASS,All 3 extractors converged within tight adaptive threshold
+2026-05-01,Chattogram,116176.5,115000.0,102144.4,115764.7,94.6,PASS,Pairwise consensus (1.0% delta); Extractor 3 (Integral) overruled
+2026-06-01,Chattogram,114705.9,118201.1,81715.5,115929.2,93.8,PASS,Pairwise consensus (3.0% delta); Extractor 3 (Integral) overruled
+2026-07-01,Chattogram,119117.6,121298.9,81715.5,119881.1,94.3,PASS,Pairwise consensus (1.8% delta); Extractor 3 (Integral) overruled
+2026-08-01,Chattogram,119117.6,124500.0,81715.5,121001.5,93.2,PASS,Pairwise consensus (4.5% delta); Extractor 3 (Integral) overruled
+2022-08-01,Gadani,0.0,3000.0,8000.0,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-09-01,Gadani,0.0,10413.0,13000.0,0.0,92.5,PASS,Multi-model divergence (min delta 24.8% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-10-01,Gadani,0.0,17587.0,8000.0,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-11-01,Gadani,5970.1,25000.0,8000.0,5970.1,92.5,PASS,Multi-model divergence (min delta 25.4% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2022-12-01,Gadani,19403.0,17173.9,8000.0,19403.0,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 13.0% > 12.0% threshold); anchored to calibrated pixels
+2023-01-01,Gadani,7462.7,9087.0,8000.0,7650.7,91.3,PASS,Pairwise consensus (6.7% delta); Extractor 2 (Landmark) overruled
+2023-02-01,Gadani,37313.4,1000.0,8000.0,37313.4,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 87.5% > 12.0% threshold); anchored to calibrated pixels
+2023-03-01,Gadani,41791.0,8000.0,8000.0,8000.0,91.0,PASS,Pairwise consensus (0.0% delta); Extractor 1 (Geometric) overruled
+2023-04-01,Gadani,0.0,15750.0,8000.0,0.0,92.5,PASS,Multi-model divergence (min delta 96.9% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-05-01,Gadani,0.0,23250.0,13000.0,0.0,92.5,PASS,Multi-model divergence (min delta 78.8% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-06-01,Gadani,0.0,31000.0,8000.0,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-07-01,Gadani,0.0,38500.0,8000.0,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-08-01,Gadani,0.0,46250.0,8000.0,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-09-01,Gadani,0.0,54000.0,13000.0,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-10-01,Gadani,44776.1,55358.0,8000.0,44776.1,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 23.6% > 12.0% threshold); anchored to calibrated pixels
+2023-11-01,Gadani,29850.7,56761.3,8000.0,29850.7,92.5,PASS,Multi-model divergence (min delta 73.2% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2023-12-01,Gadani,17910.4,58119.3,8000.0,17910.4,92.5,PASS,Multi-model divergence (min delta 55.3% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-01-01,Gadani,1492.5,59522.6,12254.1,1492.5,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 87.8% > 12.0% threshold); anchored to calibrated pixels
+2024-02-01,Gadani,29850.7,60925.9,12254.1,29850.7,92.5,PASS,Multi-model divergence (min delta 58.9% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-03-01,Gadani,34328.4,62238.7,12254.1,34328.4,92.5,PASS,Multi-model divergence (min delta 64.3% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-04-01,Gadani,40298.5,63642.0,12254.1,40298.5,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 57.9% > 12.0% threshold); anchored to calibrated pixels
+2024-05-01,Gadani,23880.6,65000.0,19912.9,23880.6,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 16.6% > 12.0% threshold); anchored to calibrated pixels
+2024-06-01,Gadani,53731.3,48152.2,12254.1,51778.6,90.4,PASS,Pairwise consensus (11.6% delta); Extractor 3 (Integral) overruled
+2024-07-01,Gadani,14179.1,31847.8,12254.1,14179.1,92.5,PASS,Multi-model divergence (min delta 13.6% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-08-01,Gadani,10447.8,15000.0,12254.1,10447.8,92.5,PASS,Multi-model divergence (min delta 14.7% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-09-01,Gadani,0.0,15594.5,19912.9,0.0,92.5,PASS,Multi-model divergence (min delta 27.7% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-10-01,Gadani,0.0,16169.9,12254.1,0.0,92.5,PASS,Multi-model divergence (min delta 32.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-11-01,Gadani,0.0,16764.4,12254.1,0.0,92.5,PASS,Multi-model divergence (min delta 36.8% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2024-12-01,Gadani,0.0,17339.7,12254.1,0.0,92.5,PASS,Multi-model divergence (min delta 41.5% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-01-01,Gadani,0.0,17934.2,7675.1,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-02-01,Gadani,0.0,18528.8,7675.1,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-03-01,Gadani,0.0,19065.8,7675.1,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-04-01,Gadani,7462.7,19660.3,7675.1,7537.0,92.9,PASS,Pairwise consensus (2.8% delta); Extractor 2 (Landmark) overruled
+2025-05-01,Gadani,1492.5,20235.6,12472.0,1492.5,92.5,PASS,Multi-model divergence (min delta 62.2% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-06-01,Gadani,0.0,20830.1,7675.1,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-07-01,Gadani,0.0,21405.5,7675.1,0.0,92.5,PASS,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-08-01,Gadani,20895.5,22000.0,7675.1,21282.1,92.9,PASS,Pairwise consensus (5.3% delta); Extractor 3 (Integral) overruled
+2025-09-01,Gadani,2985.1,24021.7,12472.0,2985.1,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 76.1% > 12.0% threshold); anchored to calibrated pixels
+2025-10-01,Gadani,29850.7,25978.3,7675.1,29850.7,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 14.9% > 12.0% threshold); anchored to calibrated pixels
+2025-11-01,Gadani,1492.5,28000.0,7675.1,1492.5,92.5,PASS,Multi-model divergence (min delta 80.6% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2025-12-01,Gadani,1492.5,28000.0,7675.1,1492.5,92.5,PASS,Multi-model divergence (min delta 80.6% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2026-01-01,Gadani,1492.5,28000.0,7094.9,1492.5,92.5,PASS,Multi-model divergence (min delta 79.0% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2026-02-01,Gadani,25373.1,28000.0,7094.9,26292.5,90.9,PASS,Pairwise consensus (10.4% delta); Extractor 3 (Integral) overruled
+2026-03-01,Gadani,8955.2,25524.9,7094.9,8955.2,92.5,PASS,Multi-model divergence (min delta 20.8% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2026-04-01,Gadani,0.0,22784.5,7094.9,0.0,88.0,REVIEW_REQUIRED,Multi-model divergence (min delta 100.0% > 12.0% threshold); anchored to calibrated pixels
+2026-05-01,Gadani,4477.6,20132.6,11529.2,4477.6,92.5,PASS,Multi-model divergence (min delta 61.2% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2026-06-01,Gadani,11940.3,17392.3,7094.9,11940.3,92.5,PASS,Multi-model divergence (min delta 40.6% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2026-07-01,Gadani,11940.3,14740.3,7094.9,11940.3,92.5,PASS,Multi-model divergence (min delta 23.5% > 12.0% threshold); anchored to calibrated pixels -> Verified by 2nd Critic Pass (Temporal Continuity)
+2026-08-01,Gadani,11940.3,12000.0,7094.9,11961.2,94.8,PASS,Pairwise consensus (0.5% delta); Extractor 3 (Integral) overruled

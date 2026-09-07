@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T05:19:49Z",
+  "generated_at": "2026-09-07T09:33:03Z",
   "current_date": "2026-09-07",
-  "warning_count": 4,
+  "warning_count": 0,
   "high_severity_count": 0,
   "status_counts": {
     "sources": {
@@ -13,82 +13,5 @@
     },
     "divergences": {}
   },
-  "warnings": [
-    {
-      "severity": "watch",
-      "kind": "source_gap",
-      "key": "baltic/container",
-      "message": "baltic/container shows a recent publishing gap of 37 days versus an expected cadence of 7.",
-      "details": {
-        "label": "baltic/container",
-        "source": "baltic",
-        "category": "container",
-        "status": "healthy",
-        "cadence_days": 7,
-        "latest_date": "2026-10-04",
-        "age_days": -27,
-        "latest_gap_days": 37,
-        "max_recent_gap_days": 37,
-        "dated_doc_count": 98,
-        "undated_doc_count": 0
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "source_gap",
-      "key": "baltic/dry",
-      "message": "baltic/dry shows a recent publishing gap of 37 days versus an expected cadence of 7.",
-      "details": {
-        "label": "baltic/dry",
-        "source": "baltic",
-        "category": "dry",
-        "status": "healthy",
-        "cadence_days": 7,
-        "latest_date": "2026-10-04",
-        "age_days": -27,
-        "latest_gap_days": 37,
-        "max_recent_gap_days": 37,
-        "dated_doc_count": 598,
-        "undated_doc_count": 8
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "source_gap",
-      "key": "baltic/gas",
-      "message": "baltic/gas shows a recent publishing gap of 37 days versus an expected cadence of 7.",
-      "details": {
-        "label": "baltic/gas",
-        "source": "baltic",
-        "category": "gas",
-        "status": "healthy",
-        "cadence_days": 7,
-        "latest_date": "2026-10-04",
-        "age_days": -27,
-        "latest_gap_days": 37,
-        "max_recent_gap_days": 37,
-        "dated_doc_count": 217,
-        "undated_doc_count": 0
-      }
-    },
-    {
-      "severity": "watch",
-      "kind": "source_gap",
-      "key": "baltic/tanker",
-      "message": "baltic/tanker shows a recent publishing gap of 37 days versus an expected cadence of 7.",
-      "details": {
-        "label": "baltic/tanker",
-        "source": "baltic",
-        "category": "tanker",
-        "status": "healthy",
-        "cadence_days": 7,
-        "latest_date": "2026-10-04",
-        "age_days": -27,
-        "latest_gap_days": 37,
-        "max_recent_gap_days": 37,
-        "dated_doc_count": 596,
-        "undated_doc_count": 12
-      }
-    }
-  ]
+  "warnings": []
 }

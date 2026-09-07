@@ -1,0 +1,148 @@
+date,series,val_geom_mt,val_vlm_ensemble_mt,val_trajectory_mt,final_reconciled_mt,confidence,is_intersection_zone,audit_status,decision_reason
+2022-08-01,Alang,37313.4,32748.2,37313.4,36628.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-09-01,Alang,37313.4,51763.9,37313.4,39481.0,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-10-01,Alang,37313.4,66453.6,44403.0,41684.5,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-11-01,Alang,71641.8,82685.1,61194.0,61194.0,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2022-12-01,Alang,91791.0,80741.6,105970.1,90133.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-01-01,Alang,98507.5,82026.9,90397.3,96035.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-02-01,Alang,91044.8,82480.5,123683.1,89331.9,94.2,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-03-01,Alang,113235.3,74167.1,94776.1,107375.1,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-04-01,Alang,84328.4,65698.7,101295.0,101295.0,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-05-01,Alang,62686.6,56608.1,52337.6,61470.9,94.1,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-06-01,Alang,58209.0,61646.0,49626.9,58896.4,95.6,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-07-01,Alang,67164.2,64718.1,65298.5,66675.0,96.5,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-08-01,Alang,76119.4,73982.3,80597.0,77910.4,93.8,True,PASS,Intersection zone with Chattogram; trajectory momentum confirmed geometric continuity (5.6% dev)
+2023-09-01,Alang,75373.1,87222.2,35414.8,35414.8,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-10-01,Alang,65671.6,96081.6,146334.5,146334.5,88.5,True,REVIEW_REQUIRED,"Intersection zone with Gadani; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-11-01,Alang,145588.2,108697.2,63806.0,140054.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-12-01,Alang,73134.3,112304.5,149319.6,149319.6,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-01-01,Alang,74626.9,130979.7,63773.0,83079.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-02-01,Alang,76119.4,138560.9,29104.5,85485.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-03-01,Alang,25373.1,143393.1,59701.5,59701.5,88.5,True,REVIEW_REQUIRED,"Intersection zone with Gadani; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-04-01,Alang,68656.7,163262.4,-26865.7,-26865.7,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-05-01,Alang,95522.4,168403.5,248880.6,248880.6,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-06-01,Alang,219403.0,151893.7,89552.2,209276.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-07-01,Alang,52985.1,131150.2,185820.9,64709.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-08-01,Alang,49253.7,124769.2,-16417.9,-16417.9,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-09-01,Alang,70149.3,116053.0,34701.5,34701.5,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-10-01,Alang,59701.5,106165.1,95522.4,66671.0,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-11-01,Alang,95522.4,98638.2,67164.2,96145.6,96.7,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2024-12-01,Alang,91044.8,96961.9,90260.1,92228.2,95.4,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-01-01,Alang,97014.9,126570.2,143360.4,133286.3,90.0,True,PASS,Intersection zone with Chattogram; VLM ensemble untangled crossing (11.7% dev from trajectory)
+2025-02-01,Alang,144852.9,129867.7,116044.8,141855.9,93.9,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-03-01,Alang,89552.2,128076.2,129927.6,128816.7,93.1,True,PASS,Intersection zone with Chattogram; VLM ensemble untangled crossing (1.4% dev from trajectory)
+2025-04-01,Alang,50000.0,137629.6,9289.9,9289.9,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2025-05-01,Alang,32835.8,139303.9,18184.8,48806.0,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-06-01,Alang,81343.3,126179.0,81365.2,81352.1,95.5,True,PASS,Intersection zone with Chattogram; trajectory momentum confirmed geometric continuity (0.0% dev)
+2025-07-01,Alang,136764.7,117677.9,100219.5,133901.7,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-08-01,Alang,126470.6,116685.2,183593.1,124513.5,94.9,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-09-01,Alang,182352.9,134239.6,172426.5,175135.9,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-10-01,Alang,189705.9,140858.9,254927.6,182378.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-11-01,Alang,150735.3,156941.8,86589.1,151976.6,96.4,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-12-01,Alang,29850.7,124999.1,74023.3,74023.3,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2026-01-01,Alang,83582.1,85845.3,48052.0,84034.7,96.9,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2026-02-01,Alang,130882.4,60525.1,100746.3,120328.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-03-01,Alang,74626.9,81187.0,142822.7,77906.9,94.0,True,PASS,Intersection zone with Chattogram; dual-model consensus resolved crossing
+2026-04-01,Alang,85074.6,109896.5,-7907.2,-7907.2,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2026-05-01,Alang,62686.6,132832.0,145555.3,73208.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-06-01,Alang,159558.8,114395.5,81914.0,152784.3,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-07-01,Alang,123529.4,98111.8,141544.1,130735.3,91.7,True,PASS,Intersection zone with Chattogram; trajectory momentum confirmed geometric continuity (12.7% dev)
+2026-08-01,Alang,123529.4,86020.1,123529.4,123529.4,95.5,True,PASS,Intersection zone with Chattogram; trajectory momentum confirmed geometric continuity (0.0% dev)
+2022-08-01,Chattogram,76119.4,75125.6,76119.4,75920.6,97.5,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2022-09-01,Chattogram,76119.4,96312.2,76119.4,79148.3,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-10-01,Chattogram,76119.4,118954.9,27238.8,82544.7,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-11-01,Chattogram,64179.1,132922.2,175000.0,175000.0,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2022-12-01,Chattogram,150000.0,114676.5,26865.7,144701.5,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-01-01,Chattogram,26119.4,85841.5,136567.2,136567.2,88.5,True,REVIEW_REQUIRED,"Intersection zone with Gadani; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-02-01,Chattogram,50746.3,65074.0,-18656.7,-18656.7,88.5,True,REVIEW_REQUIRED,"Intersection zone with Gadani; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-03-01,Chattogram,64179.1,150400.5,47508.8,47508.8,88.5,True,REVIEW_REQUIRED,"Intersection zone with Gadani; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-04-01,Chattogram,67910.4,229033.1,-45017.6,-45017.6,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-05-01,Chattogram,116176.5,314010.8,304477.6,145851.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-06-01,Chattogram,400000.0,265793.8,303863.0,379869.1,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-07-01,Chattogram,262686.6,226964.5,377732.7,257328.3,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-08-01,Chattogram,82089.6,188313.5,83165.1,82519.8,95.1,True,PASS,Intersection zone with Alang; trajectory momentum confirmed geometric continuity (1.3% dev)
+2023-09-01,Chattogram,92537.3,147431.8,53819.1,53819.1,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-10-01,Chattogram,144117.6,109495.8,84701.5,138924.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-11-01,Chattogram,82089.6,65563.4,185162.4,79610.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-12-01,Chattogram,97761.2,73949.3,10030.7,10030.7,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-01-01,Chattogram,20895.5,72085.8,51492.5,51492.5,88.5,True,REVIEW_REQUIRED,"Intersection zone with Gadani; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-02-01,Chattogram,41791.0,80482.9,42910.4,42238.8,94.7,True,PASS,Intersection zone with Gadani; trajectory momentum confirmed geometric continuity (2.6% dev)
+2024-03-01,Chattogram,94029.9,89911.3,20994.3,93206.1,96.2,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2024-04-01,Chattogram,46268.7,98091.2,120560.8,120560.8,88.5,True,REVIEW_REQUIRED,"Intersection zone with Gadani; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-05-01,Chattogram,113235.3,101333.8,87587.8,107284.5,94.0,True,PASS,Intersection zone with Alang; dual-model consensus resolved crossing
+2024-06-01,Chattogram,131617.6,86599.1,159504.0,124864.9,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-07-01,Chattogram,86567.2,77303.1,76492.5,84714.4,93.7,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2024-08-01,Chattogram,34328.4,71675.4,40907.6,40907.6,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-09-01,Chattogram,65671.6,61795.9,58955.2,62985.1,92.1,True,PASS,Intersection zone with Alang; trajectory momentum confirmed geometric continuity (11.4% dev)
+2024-10-01,Chattogram,91044.8,54495.1,64552.2,85562.3,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-11-01,Chattogram,46268.7,42000.9,79477.6,45415.1,94.3,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2024-12-01,Chattogram,60447.8,56554.6,26898.6,59669.1,95.4,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-01-01,Chattogram,78358.2,74508.4,98814.7,76433.3,94.0,True,PASS,Intersection zone with Alang; dual-model consensus resolved crossing
+2025-02-01,Chattogram,104411.8,90497.4,120522.4,102324.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-03-01,Chattogram,85820.9,98352.5,62247.6,62247.6,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2025-04-01,Chattogram,26865.7,99664.8,59734.4,59734.4,88.5,True,REVIEW_REQUIRED,"Intersection zone with Gadani; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2025-05-01,Chattogram,59701.5,101188.3,751.8,65924.5,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-06-01,Chattogram,67164.2,89084.9,123123.4,123123.4,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2025-07-01,Chattogram,100735.3,91182.1,67164.2,98824.7,94.2,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2025-08-01,Chattogram,47761.2,90768.8,91033.8,54212.3,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-09-01,Chattogram,35820.9,76831.6,-17531.8,41972.5,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-10-01,Chattogram,23880.6,63642.2,69029.9,65797.3,91.2,True,PASS,Intersection zone with Gadani; VLM ensemble untangled crossing (7.8% dev from trajectory)
+2025-11-01,Chattogram,77611.9,44898.8,25373.1,72705.0,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-12-01,Chattogram,41044.8,58544.3,58219.9,58414.6,93.3,True,PASS,Intersection zone with Alang; VLM ensemble untangled crossing (0.6% dev from trajectory)
+2026-01-01,Chattogram,43283.6,65781.4,70127.3,46658.3,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-02-01,Chattogram,101470.6,80949.9,42164.2,98392.5,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-03-01,Chattogram,67164.2,96092.0,117262.9,117262.9,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2026-04-01,Chattogram,95522.4,101232.6,75252.4,98377.5,94.0,True,PASS,Intersection zone with Alang; dual-model consensus resolved crossing
+2026-05-01,Chattogram,116176.5,107496.1,117087.4,114440.4,95.0,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2026-06-01,Chattogram,114705.9,98173.0,127974.1,112226.0,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-07-01,Chattogram,119117.6,102869.5,116911.8,118235.3,94.9,True,PASS,Intersection zone with Alang; trajectory momentum confirmed geometric continuity (1.9% dev)
+2026-08-01,Chattogram,119117.6,103991.4,119117.6,119117.6,95.5,True,PASS,Intersection zone with Alang; trajectory momentum confirmed geometric continuity (0.0% dev)
+2022-08-01,Gadani,0.0,5449.5,0.0,817.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-09-01,Gadani,0.0,11612.0,0.0,1741.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-10-01,Gadani,0.0,12927.0,-3731.3,1939.0,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-11-01,Gadani,5970.1,16300.9,15671.6,7519.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2022-12-01,Gadani,19403.0,12577.2,-5223.9,18379.1,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-01-01,Gadani,7462.7,8539.2,32835.8,32835.8,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-02-01,Gadani,37313.4,4521.8,39552.2,38209.0,93.8,True,PASS,Intersection zone with Chattogram; trajectory momentum confirmed geometric continuity (5.7% dev)
+2023-03-01,Gadani,41791.0,8106.1,33582.1,33582.1,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-04-01,Gadani,0.0,11751.7,23134.3,1762.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-05-01,Gadani,0.0,18229.6,-20895.5,2734.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-06-01,Gadani,0.0,19549.4,0.0,2932.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-07-01,Gadani,0.0,23224.7,0.0,3483.7,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-08-01,Gadani,0.0,27246.3,-22388.1,4086.9,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-09-01,Gadani,0.0,33395.9,29850.7,5009.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2023-10-01,Gadani,44776.1,31691.8,20895.5,20895.5,88.5,True,REVIEW_REQUIRED,"Intersection zone with Alang; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2023-11-01,Gadani,29850.7,32311.9,61940.3,30343.0,94.7,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2023-12-01,Gadani,17910.4,32837.8,-5970.1,20149.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-01-01,Gadani,1492.5,36260.1,15671.6,15671.6,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-02-01,Gadani,29850.7,36626.8,6716.4,6716.4,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-03-01,Gadani,34328.4,36426.8,57462.7,35377.6,94.0,True,PASS,Intersection zone with Alang; dual-model consensus resolved crossing
+2024-04-01,Gadani,40298.5,38862.6,16417.9,39580.6,94.0,True,PASS,Intersection zone with Chattogram; dual-model consensus resolved crossing
+2024-05-01,Gadani,23880.6,42563.5,69776.1,26683.0,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-06-01,Gadani,53731.3,30341.7,12686.6,50222.9,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-07-01,Gadani,14179.1,21735.8,52238.8,15312.6,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-08-01,Gadani,10447.8,13892.0,-12686.6,-12686.6,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2024-09-01,Gadani,0.0,17752.6,3358.2,2662.9,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-10-01,Gadani,0.0,14382.9,-5223.9,2157.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-11-01,Gadani,0.0,14601.3,0.0,2190.2,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2024-12-01,Gadani,0.0,14668.3,0.0,2200.2,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-01-01,Gadani,0.0,13050.0,0.0,1957.5,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-02-01,Gadani,0.0,13088.6,-3731.3,1963.3,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-03-01,Gadani,0.0,13229.4,6716.4,1984.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-04-01,Gadani,7462.7,13698.6,1492.5,1492.5,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2025-05-01,Gadani,1492.5,16661.7,7462.7,3767.9,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-06-01,Gadani,0.0,14025.5,-12686.6,2103.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-07-01,Gadani,0.0,14677.9,18656.7,2201.7,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-08-01,Gadani,20895.5,14879.9,-11940.3,19993.2,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-09-01,Gadani,2985.1,18120.1,50000.0,5255.3,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-10-01,Gadani,29850.7,16603.9,-6716.4,-6716.4,88.5,True,REVIEW_REQUIRED,"Intersection zone with Chattogram; ambiguous pixel occlusion (dev > 15%), quarantined for verification"
+2025-11-01,Gadani,1492.5,17712.6,29104.5,3925.5,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2025-12-01,Gadani,1492.5,18045.6,-24626.9,3975.5,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-01-01,Gadani,1492.5,17540.1,21641.8,3899.7,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-02-01,Gadani,25373.1,17525.0,9701.5,24195.9,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-03-01,Gadani,8955.2,16293.9,22388.1,10056.0,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-04-01,Gadani,0.0,14684.9,-5223.9,2202.7,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-05-01,Gadani,4477.6,15659.0,1492.5,6154.8,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth
+2026-06-01,Gadani,11940.3,12047.5,10447.8,11961.7,97.6,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2026-07-01,Gadani,11940.3,11077.0,11940.3,11767.6,95.1,False,PASS,Clean zone; pixel-calibrated geometry verified by VLM ensemble
+2026-08-01,Gadani,11940.3,9627.8,11940.3,11593.4,94.0,False,PASS,Clean zone; anchored to calibrated pixel ground truth

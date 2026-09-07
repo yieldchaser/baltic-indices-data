@@ -8953,6 +8953,18 @@
 
     <!-- ===== TAB: INDICES ===== -->
     <div class="tab-panel" id="tab-indices">
+      <div class="indices-filter-bar" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap;gap:12px;">
+        <div style="display:flex;gap:6px;background:var(--bg);border-radius:6px;padding:3px;border:1px solid var(--border);flex-wrap:wrap;">
+          <button class="toggle-btn active" id="idxFilterAll" onclick="setIndicesFilter('all')">All Benchmarks (19)</button>
+          <button class="toggle-btn" id="idxFilterFreight" onclick="setIndicesFilter('freight')">Baltic Freight (7)</button>
+          <button class="toggle-btn" id="idxFilterEquities" onclick="setIndicesFilter('equities')">Capital Link Equities (7)</button>
+          <button class="toggle-btn" id="idxFilterDerivatives" onclick="setIndicesFilter('derivatives')">Futures &amp; ETFs (5)</button>
+        </div>
+        <div style="font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:8px;">
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#388bfd;"></span>
+          Physical spot charters, public maritime equity indices, and forward freight curves.
+        </div>
+      </div>
       <div class="indices-grid" id="indicesGrid"></div>
     </div>
 
@@ -11752,6 +11764,13 @@ if (intelTabsContainer) {
       bwetff: { label: 'BWET Freight Futures (BWETFF)', file: 'data/futures/bwetff_history.csv', color: '#ff6b6b', solactive: true, tt: 'BWET Freight Futures (BWETFF) - tracks the settlement of Dirty Tanker (TD3C/TD20) forward contracts. High-conviction tool for hedging crude oil maritime logistics risk.' },
       bdry: { label: 'BDRY Stock Price', file: null, color: '#f0c040', computed: true, tt: 'Breakwave Dry Bulk Shipping ETF (BDRY) - the first ETF providing direct access to the dry bulk freight market via near-term futures. Optimized for maximum spot-freight sensitivity.' },
       bwet: { label: 'BWET Stock Price', file: null, color: '#ff6b6b', computed: true, tt: 'Breakwave Tanker Shipping ETF (BWET) - provides targeted exposure to the crude oil tanker market. Uses a laddered futures strategy to capture volatility in global energy transport.' },
+      clmi: { label: 'Capital Link Maritime Index (CLMI)', file: 'data/indices/capital_link_maritime_clmi.csv', color: '#388bfd', capital_link: true, precision: 2, tt: 'Capital Link Maritime Index (CLMI) - market-cap weighted benchmark tracking US-listed maritime shipping equities across all sectors (dry bulk, tankers, containers, gas, mixed fleets). Primary barometer of public equity market investor appetite, equity valuations, and cost of capital for shipping.' },
+      cldbi: { label: 'Capital Link Dry Bulk Index (CLDBI)', file: 'data/indices/capital_link_drybulk_cldbi.csv', color: '#56d364', capital_link: true, precision: 2, tt: 'Capital Link Dry Bulk Index (CLDBI) - tracks public dry bulk shipping equities (e.g. Star Bulk, Golden Ocean, Genco, Eagle Bulk, Diana, Safe Bulkers). Reflects corporate equity valuation, fleet NAV discounts/premiums, and public equity market sentiment towards raw dry bulk freight.' },
+      clti: { label: 'Capital Link Tanker Index (CLTI)', file: 'data/indices/capital_link_tanker_clti.csv', color: '#f0883e', capital_link: true, precision: 2, tt: 'Capital Link Tanker Index (CLTI) - tracks public crude and product tanker equities (e.g. Frontline, DHT, Teekay, Scorpio, Nordic American). Reflects tanker equity cash flow yields, dividend return expectations, and spot/period tanker market sentiment.' },
+      clci: { label: 'Capital Link Container Index (CLCI)', file: 'data/indices/capital_link_container_clci.csv', color: '#a371f7', capital_link: true, precision: 2, tt: 'Capital Link Container Index (CLCI) - tracks public container ship owners and tonnage providers (e.g. Danaos, Costamare, Global Ship Lease, Zim, MPC). Reflects boxship multi-year charter coverage, box freight rate cycles, and global trade velocity.' },
+      cllg: { label: 'Capital Link LNG/LPG Gas Index (CLLG)', file: 'data/indices/capital_link_lng_lpg_cllg.csv', color: '#00d4ff', capital_link: true, precision: 2, tt: 'Capital Link LNG/LPG Index (CLLG) - tracks public liquefied gas carrier equities (e.g. Flex LNG, Cool Company, StealthGas, Avance Gas, Dorian LPG). Highly sensitive to transatlantic LNG arbitrage, Asian winter gas demand, and VLGC petchem flows.' },
+      clmfi: { label: 'Capital Link Mixed Fleet Index (CLMFI)', file: 'data/indices/capital_link_mixed_fleet_clmfi.csv', color: '#e3b341', capital_link: true, precision: 2, tt: 'Capital Link Mixed Fleet Index (CLMFI) - tracks public shipping companies operating diversified multi-segment fleets across dry bulk, tankers, and containers (e.g. Navios Maritime Partners, Tsakos Energy Navigation). Captures balanced multi-market fleet cash flows.' },
+      clmlp: { label: 'Capital Link Maritime MLP Index (CLMLP)', file: 'data/indices/capital_link_mlp_clmlp.csv', color: '#dbb68f', capital_link: true, precision: 2, tt: 'Capital Link MLP Index (CLMLP) - tracks maritime Master Limited Partnerships and high-distribution shipping yield equities (e.g. KNOT Offshore Partners). Reflects distribution yields, yield spreads, and fixed long-term infrastructure-style charters.' },
     };
 
     // BDRY Spot weights (Solactive index methodology)
@@ -12347,6 +12366,15 @@ if (intelTabsContainer) {
                 const c = (row['change'] || '').trim();
                 if (d && v != null) {
                   parsed.push({ date: d, dateStr: row['date'], value: v, change: c });
+                }
+              }
+            } else if (PRODUCTS[key].capital_link) {
+              for (const row of rows) {
+                const d = parseDate((row['date'] || row['Date'] || '').trim());
+                const v = parseVal(row['close'] != null ? row['close'] : row['Index']);
+                const c = (row['change_pct'] != null ? row['change_pct'] : (row['% Change'] || '')).toString().trim();
+                if (d && v != null) {
+                  parsed.push({ date: d, dateStr: row['date'] || row['Date'], value: v, change: c });
                 }
               }
             } else {
@@ -14801,11 +14829,42 @@ if (intelTabsContainer) {
     // =====================================================================
     // INDICES TAB (CHANGE 7)
     // =====================================================================
+    window.currentIndicesFilter = 'all';
+    function setIndicesFilter(filter) {
+      window.currentIndicesFilter = filter;
+      ['all', 'freight', 'equities', 'derivatives'].forEach(f => {
+        const btn = document.getElementById('idxFilter' + f.charAt(0).toUpperCase() + f.slice(1));
+        if (btn) btn.classList.toggle('active', f === filter);
+      });
+      renderIndicesTab();
+    }
+    window.setIndicesFilter = setIndicesFilter;
+
+    const INDICES_ORDER = [
+      // Baltic Freight Spot & Period Benchmarks
+      'bdiy', 'cape', 'panama', 'suprama', 'handysize', 'dirtytanker', 'cleantanker',
+      // Capital Link Shipping Equities
+      'clmi', 'cldbi', 'clti', 'clci', 'cllg', 'clmfi', 'clmlp',
+      // Freight Futures & ETFs
+      'bdryff', 'bwetff', 'bdry_spot', 'bdry', 'bwet'
+    ];
+
     function renderIndicesTab() {
       const grid = document.getElementById('indicesGrid');
+      if (!grid) return;
       grid.innerHTML = '';
 
-      PRODUCT_KEYS.forEach(key => {
+      const filter = window.currentIndicesFilter || 'all';
+      let activeKeys = INDICES_ORDER.filter(key => PRODUCTS[key]);
+      if (filter === 'freight') {
+        activeKeys = activeKeys.filter(k => ['bdiy', 'cape', 'panama', 'suprama', 'handysize', 'dirtytanker', 'cleantanker'].includes(k));
+      } else if (filter === 'equities') {
+        activeKeys = activeKeys.filter(k => PRODUCTS[k] && PRODUCTS[k].capital_link);
+      } else if (filter === 'derivatives') {
+        activeKeys = activeKeys.filter(k => ['bdryff', 'bwetff', 'bdry_spot', 'bdry', 'bwet'].includes(k));
+      }
+
+      activeKeys.forEach(key => {
         const prod = PRODUCTS[key];
         // Skip products with no data rows
         const rows = DATA.raw[key];
@@ -14819,7 +14878,7 @@ if (intelTabsContainer) {
 
         // Stats strip values
         const allVals = rows.map(r => r.value);
-        const precision = (key === 'bdry' || key === 'bwet') ? 1 : 0;
+        const precision = (key === 'bdry' || key === 'bwet') ? 1 : (prod.precision != null ? prod.precision : 0);
 
         // 1. 52W High - Low
         const vals52w = allVals.slice(-252);
@@ -14865,8 +14924,22 @@ if (intelTabsContainer) {
         const defaultStartIdx = DATA.raw[key].findIndex(r => r.date >= cutoff5y);
         const startIdx5y = defaultStartIdx < 0 ? 0 : defaultStartIdx;
 
+        let badgeHtml = '';
+        if (prod.capital_link) {
+          badgeHtml = `<span style="background:rgba(56,139,253,0.15);color:#58a6ff;border:1px solid rgba(56,139,253,0.3);font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:8px;vertical-align:middle;">EQUITY BENCHMARK</span>`;
+        } else if (prod.solactive || prod.computed) {
+          badgeHtml = `<span style="background:rgba(227,179,65,0.15);color:#f2cc60;border:1px solid rgba(227,179,65,0.3);font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:8px;vertical-align:middle;">DERIVATIVE / ETF</span>`;
+        } else {
+          badgeHtml = `<span style="background:rgba(63,185,80,0.15);color:#3fb950;border:1px solid rgba(63,185,80,0.3);font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:8px;vertical-align:middle;">BALTIC FREIGHT</span>`;
+        }
+
+        const tooltipText = prod.tt || `${prod.label} - Displays full price history, rolling analytics, and 52-week parameters.`;
+
         card.innerHTML = `
-      <div class="card-header-bar" data-tooltip="${prod.label} - Displays the full price history and rolling analytics (52W range, YTD return, trough recovery) for this specific shipping freight benchmark. Scroll down for chart controls.">${prod.label}</div>
+      <div class="card-header-bar" data-tooltip="${tooltipText}" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
+        <span>${prod.label}</span>
+        ${badgeHtml}
+      </div>
       <div class="index-chart-header">
         <div class="index-chart-subtitle">
           <span>${fmt(latest.value, precision)}</span>
@@ -14889,19 +14962,19 @@ if (intelTabsContainer) {
       </div>
       <div class="index-stats-strip">
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="52-Week High / Low - the exact peak and trough values over the last 52 trading weeks. Knowing the distance between these two levels reveals whether the product is in a narrow consolidation or a wide cyclical swing.">52W High - Low</div>
+          <div class="index-stat-mini-label" data-tooltip="52-Week High - Low - the exact peak and trough values over the last 52 trading weeks. Reveals whether the benchmark is in narrow consolidation or wide cyclical expansion.">52W High - Low</div>
           <div class="index-stat-mini-val val-white">${w52RangeStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="52-Week Position - percentile of the current value within the 52W High-Low range. 0% = at the year's low; 100% = at the year's high. Below 20% = strong potential mean-reversion opportunity.">52W Position</div>
+          <div class="index-stat-mini-label" data-tooltip="52-Week Position - percentile of current price within its 52W range. 0% = 52W low; 100% = 52W high.">52W Position</div>
           <div class="index-stat-mini-val ${w52PosCls}">${w52PosStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="Year-to-Date Return - the % change from the last closing value of December 31 to today. A negative YTD while percentiles are rising signals early-stage recovery.">YTD %</div>
+          <div class="index-stat-mini-label" data-tooltip="Year-to-Date Return - the % change from the last closing value of prior year December 31 to today.">YTD %</div>
           <div class="index-stat-mini-val ${ytdCls}">${ytdStr}</div>
         </div>
         <div class="index-stat-mini">
-          <div class="index-stat-mini-label" data-tooltip="Recovery from Trough - % gained from the lowest point seen in the last 365 trading sessions to today. A recovery >30% from trough that still shows a low 52W position often signals the early innings of a sustained trend.">From Last Trough</div>
+          <div class="index-stat-mini-label" data-tooltip="Recovery from Trough - % gained from the lowest session in the last 365 trading sessions to today.">From Last Trough</div>
           <div class="index-stat-mini-val ${troughCls}">${troughStr}</div>
         </div>
       </div>`;
@@ -14956,6 +15029,7 @@ if (intelTabsContainer) {
       const rows = allRows.slice(startIdx, endIdx + 1);
       const labels = rows.map(r => fmtDate(r.date));
       const values = rows.map(r => r.value);
+      const precision = (key === 'bdry' || key === 'bwet') ? 1 : (prod.precision != null ? prod.precision : 0);
 
       destroyChart('idxChart_' + key);
       const canvas = document.getElementById('idxChart_' + key);
@@ -14989,7 +15063,6 @@ if (intelTabsContainer) {
             tooltip: {
               callbacks: {
                 label: ctx => {
-                  const precision = (key === 'bdry' || key === 'bwet') ? 1 : 0;
                   return ` ${fmt(ctx.parsed.y, precision)}`;
                 },
                 title: ctx => ctx[0].label,
@@ -15012,7 +15085,6 @@ if (intelTabsContainer) {
               ticks: {
                 font: { size: 10 },
                 callback: function(v) {
-                  const precision = (key === 'bdry' || key === 'bwet') ? 1 : 0;
                   return fmt(v, precision);
                 }
               },

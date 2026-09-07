@@ -131,18 +131,42 @@ def download(ts: str, url: str, dest: Path, tries: int = 3) -> bool:
     return False
 
 
-def download_direct(url: str, dest: Path, tries: int = 3) -> bool:
-    """Direct HTTPS download (Dampier media PDFs are served openly, no bot-wall)."""
+def download_direct(url: str, dest: Path, tries: int = 2) -> bool:
+    """Download Dampier PDF: tries direct HTTPS, falls back to Wayback when Incapsula-gated."""
     if dest.exists() and dest.stat().st_size > 5000:
         return True
+
+    is_bot_walled = False
     for attempt in range(1, tries + 1):
-        r = subprocess.run(["curl", "-sL", "--max-time", "120", "-o", str(dest),
+        r = subprocess.run(["curl", "-sL", "--max-time", "30", "-o", str(dest),
                             "-w", "%{http_code}", url, "-A", "Mozilla/5.0"],
                            capture_output=True, text=True)
-        ok = r.stdout.strip().endswith("200") and dest.exists() and dest.stat().st_size > 5000
-        if ok:
-            return True
-        time.sleep(4 * attempt)
+        if dest.exists():
+            head = dest.read_bytes()[:500]
+            if b"_Incapsula_Resource" in head:
+                is_bot_walled = True
+                break
+            if r.stdout.strip().endswith("200") and dest.stat().st_size > 5000 and b"%PDF" in head:
+                return True
+        time.sleep(2 * attempt)
+
+    # Fallback to Wayback for Dampier snapshots if live site is bot-walled or direct fetch failed
+    dest.unlink(missing_ok=True)
+    if is_bot_walled:
+        logging.info("Live PPA media is Incapsula-gated; checking Wayback archive for %s", url.split('/')[-1])
+    try:
+        cdx_url = (f"https://web.archive.org/cdx/search/cdx?url={url}"
+                   f"&output=json&limit=1&filter=statuscode:200&filter=mimetype:application/pdf")
+        req = urllib.request.Request(cdx_url, headers={"User-Agent": "Mozilla/5.0"})
+        payload = urllib.request.urlopen(req, timeout=30, context=CTX).read()
+        rows = json.loads(payload.decode("utf-8", "replace"))
+        if len(rows) > 1:
+            ts = rows[1][1]
+            logging.info("Found Wayback snapshot (%s) for %s; downloading...", ts, url.split('/')[-1])
+            return download(ts, url, dest, tries=3)
+    except Exception as exc:
+        logging.debug("Wayback lookup for Dampier fallback failed: %s", exc)
+
     dest.unlink(missing_ok=True)
     return False
 
@@ -237,7 +261,7 @@ def fetch_dampier_live() -> list[dict]:
         dest = SCRATCH / f"ppa_dampier_{safe}.pdf"
         try:
             if not download_direct(url, dest):
-                logging.warning("Dampier download failed: %s", url[:90])
+                logging.info("Dampier PDF unavailable (Incapsula-gated & not on Wayback yet): %s", url.split('/')[-1])
                 continue
             out.extend(parse_dampier_ytd_pdf(dest, fy_start))
             time.sleep(1.0)

@@ -131,10 +131,11 @@ def derive_row_economics(row: dict, bunkers: dict) -> dict:
 def main() -> pd.DataFrame:
     price, created_at = fetch_live_eua()
     if price is None:
-        raise SystemExit(
+        logging.warning(
             "No live EUA observation available (missing key or upstream failure). "
-            "Per data-provenance policy NO synthetic values are written."
+            "Per data-provenance policy NO synthetic values are written. Keeping existing data as-is."
         )
+        return load_existing()
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     existing = load_existing()

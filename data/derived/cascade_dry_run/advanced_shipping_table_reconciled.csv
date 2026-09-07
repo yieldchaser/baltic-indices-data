@@ -1,0 +1,4 @@
+vessel_name,type,dwt,yob,ldt,price_usd_ldt,destination,implied_gross_usd,confidence,domain_check,audit_status
+BR Glory,Bulker,22273,1990,5000,510.0,Pakistan,2550000.0,96.0,Valid,PASS
+Athena,Tanker,7902,1992,2557,540.0,Bangladesh,1380780.0,96.0,Valid,PASS
+Oceanic Star,Bulker,171000,2001,22500,485.0,India,10912500.0,96.0,Valid,PASS

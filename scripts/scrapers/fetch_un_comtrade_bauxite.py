@@ -60,41 +60,70 @@ def fetch_comtrade_bauxite():
                     if records:
                         fetched_live = True
         except Exception as e:
-            logging.warning("UN Comtrade API query failed (%s); using resilient quantitative time series.", e)
+            logging.warning("UN Comtrade v1 API query failed (%s); trying public preview endpoint.", e)
 
     if not fetched_live:
-        logging.info("Generating canonical monthly Guinea-to-China bauxite export matrix (2024 to Aug 2026)...")
-        # Guinea bauxite exports in Metric Tonnes (MT), expanding from ~10.5M MT/mo in early 2024 to 14.5M+ MT/mo in mid-2026
-        start_date = pd.to_datetime("2024-01-01")
-        end_date = pd.to_datetime("2026-08-01")
-        dates = pd.date_range(start=start_date, end=end_date, freq="MS")
+        logging.info("Querying UN Comtrade public preview endpoint for monthly bauxite imports...")
+        from datetime import datetime, timezone
+        import time
 
-        base_mt = 10800000.0
-        for i, dt in enumerate(dates):
-            # Rainy season dip (July-September in West Africa)
-            rainy_season_dip = -1800000.0 if dt.month in [7, 8, 9] else 400000.0
-            structural_growth = (i / len(dates)) * 3800000.0
-            monthly_vol = round(base_mt + rainy_season_dip + structural_growth, 1)
-            cif_price = round(72.0 + (i % 5 - 2) * 1.5, 2)
-            cif_usd = round(monthly_vol * cif_price, 0)
+        now = datetime.now(timezone.utc)
+        # Query monthly data from 2023 to current month
+        periods = []
+        for y in range(2023, now.year + 1):
+            max_m = now.month if y == now.year else 12
+            for m in range(1, max_m + 1):
+                periods.append(f"{y}{m:02d}")
 
-            records.append({
-                "date": dt.strftime("%Y-%m-%d"),
-                "period": dt.strftime("%Y%m"),
-                "commodity": "Bauxite",
-                "hs_code": "260600",
-                "reporter": "China",
-                "partner": "Guinea",
-                "import_volume_mt": monthly_vol,
-                "cif_usd": cif_usd,
-                "avg_cif_usd_t": cif_price
-            })
+        for period in periods:
+            url = f"https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=156&partnerCode=324&cmdCode=260600&flowCode=M&period={period}"
+            for attempt in range(4):
+                try:
+                    resp = requests.get(url, timeout=15)
+                    if resp.status_code == 200:
+                        data = resp.json().get("data", [])
+                        if data:
+                            row = data[0]
+                            net_wgt = float(row.get("netWgt") or row.get("qty") or 0)
+                            val = float(row.get("primaryValue") or 0)
+                            mt = round(net_wgt / 1000.0, 1)
+                            if mt > 0:
+                                records.append({
+                                    "date": f"{period[:4]}-{period[4:6]}-01",
+                                    "period": period,
+                                    "commodity": "Bauxite",
+                                    "hs_code": "260600",
+                                    "reporter": "China",
+                                    "partner": "Guinea",
+                                    "import_volume_mt": mt,
+                                    "cif_usd": val,
+                                    "avg_cif_usd_t": round(val / mt, 2) if mt > 0 else 0.0,
+                                })
+                        break
+                    elif resp.status_code == 429:
+                        time.sleep(2.0 * (attempt + 1))
+                    else:
+                        break
+                except Exception:
+                    time.sleep(1.0)
+            time.sleep(0.8)  # Polite spacing between requests
+
+        if records:
+            fetched_live = True
+
+    if not fetched_live:
+        logging.error("Could not fetch real UN Comtrade data and refusing to synthesize fake values.")
+        if OUT_FILE.exists():
+            return pd.read_csv(OUT_FILE)
+        return pd.DataFrame()
 
     df = pd.DataFrame(records).sort_values("date")
+    # Discard any previous synthetic records if present
     df.to_csv(OUT_FILE, index=False)
     df.to_csv(ALT_OUT_FILE, index=False)
-    logging.info("Wrote %d rows to %s and %s", len(df), OUT_FILE, ALT_OUT_FILE)
+    logging.info("Wrote %d REAL rows to %s and %s", len(df), OUT_FILE, ALT_OUT_FILE)
     return df
 
 if __name__ == "__main__":
     fetch_comtrade_bauxite()
+

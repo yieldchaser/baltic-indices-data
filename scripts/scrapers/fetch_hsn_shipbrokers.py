@@ -52,21 +52,7 @@ def fetch_url(url, timeout=25):
         return resp.read()
 
 def parse_pdf_stream(pdf_bytes):
-    """Extract clean structured Markdown from in-memory PDF stream using AnyDoc with pypdf fallback."""
-    try:
-        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tf:
-            tf.write(pdf_bytes)
-            tf_name = tf.name
-        try:
-            md = anydoc.to_markdown(tf_name)
-            if md and len(md.strip()) > 50:
-                return md
-        finally:
-            if os.path.exists(tf_name):
-                os.remove(tf_name)
-    except Exception:
-        pass
-
+    """Extract clean structured text from in-memory PDF stream using pypdf with AnyDoc fallback."""
     try:
         reader = pypdf.PdfReader(io.BytesIO(pdf_bytes), strict=False)
         pages_text = []
@@ -74,9 +60,28 @@ def parse_pdf_stream(pdf_bytes):
             t = page.extract_text()
             if t:
                 pages_text.append(t)
-        return "\n\n".join(pages_text)
-    except Exception as e:
-        return f"[PDF Extraction Error: {e}]"
+        combined = "\n\n".join(pages_text)
+        if combined and len(combined.strip()) > 100:
+            return combined
+    except Exception:
+        pass
+
+    try:
+        if anydoc is not None:
+            with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tf:
+                tf.write(pdf_bytes)
+                tf_name = tf.name
+            try:
+                md = anydoc.to_markdown(tf_name)
+                if md and len(md.strip()) > 50:
+                    return md
+            finally:
+                if os.path.exists(tf_name):
+                    os.remove(tf_name)
+    except Exception:
+        pass
+
+    return "[PDF Extraction Error: no extractable text]"
 
 def identify_broker(title, text):
     t_lower = (title + " " + text[:500]).lower()

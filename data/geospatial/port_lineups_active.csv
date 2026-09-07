@@ -1,0 +1,741 @@
+port_locode,portname,country,asset_class,vessel_name,imo_number,dwt,operational_status,arrival_timestamp,days_waiting,cargo_type,lat,lon
+AEFJR,Fujairah,United Arab Emirates,Dry Bulk,ULTRA LEOPARD,IMO9367321,82000,Waiting at anchor,2025-02-08 08:00:00,2.0,Murban Crude / Bunkers,25.1848,56.2817
+AEFJR,Fujairah,United Arab Emirates,Dry Bulk,YASA PEARL,IMO9327836,82000,Waiting at anchor,2025-01-30 08:00:00,3.5,Murban Crude / Bunkers,25.1547,56.4161
+AUNCL,Newcastle,Australia,Dry Bulk,Contango,IMO9227615,38000,Waiting at anchor,2025-01-26 08:00:00,5.5,Thermal Coal,-32.8771,151.8475
+AUPHE,Port Hedland,Australia,Dry Bulk,Msc Magali,IMO9524003,182000,Operating at berth,2025-01-25 08:00:00,1.3,Iron Ore,-20.31,118.55
+BRSSZ,Santos,Brazil,Dry Bulk,AVICL ATERMIS,IMO9626742,82000,Operating at berth,2025-02-06 08:00:00,1.7,Agri Bulk,-23.9662,-46.349
+BRSSZ,Santos,Brazil,Dry Bulk,CK VENTURE,IMO9169812,82000,Operating at berth,2025-02-09 08:00:00,1.3,Agri Bulk,-23.9504,-46.3475
+BRSSZ,Santos,Brazil,Dry Bulk,FLAG LAMA,IMO9048283,82000,Operating at berth,2025-01-31 08:00:00,1.7,Agri Bulk,-23.9563,-46.3496
+BRSSZ,Santos,Brazil,Dry Bulk,GUO YUAN 16,IMO9072630,76000,Operating at berth,2025-02-09 08:00:00,0.5,Agri Bulk,-23.9696,-46.3125
+BRSSZ,Santos,Brazil,Dry Bulk,Glory Prosperity,IMO9728523,82000,Operating at berth,2025-02-15 08:00:00,1.3,Agri Bulk,-23.98,-46.3313
+BRSSZ,Santos,Brazil,Dry Bulk,Nikolas D,IMO9061374,76000,Operating at berth,2025-02-08 08:00:00,0.9,Agri Bulk,-23.9727,-46.3146
+BRSSZ,Santos,Brazil,Dry Bulk,Pansolar,IMO9570521,76000,Operating at berth,2025-02-14 08:00:00,1.3,Agri Bulk,-23.98,-46.3313
+BRSSZ,Santos,Brazil,Dry Bulk,Predator,IMO9794210,76000,Operating at berth,2025-02-06 08:00:00,1.7,Agri Bulk,-23.98,-46.33
+BRSSZ,Santos,Brazil,Dry Bulk,RB Mya,IMO9243153,82000,Operating at berth,2025-02-06 08:00:00,1.7,Agri Bulk,-23.9613,-46.35
+BRSSZ,Santos,Brazil,Dry Bulk,Beteigeuze,IMO9339134,76000,Waiting at anchor,2025-02-13 08:00:00,2.5,Agri Bulk,-23.945,-46.2514
+BRSSZ,Santos,Brazil,Dry Bulk,CBC FUYI,IMO9307701,82000,Waiting at anchor,2025-02-06 08:00:00,6.5,Agri Bulk,-23.8953,-46.377
+BRSSZ,Santos,Brazil,Dry Bulk,GUO YUAN 12,IMO9650260,76000,Waiting at anchor,2025-02-09 08:00:00,5.0,Agri Bulk,-23.8839,-46.3053
+BRSSZ,Santos,Brazil,Dry Bulk,Radiant,IMO9822410,82000,Waiting at anchor,2025-01-27 08:00:00,2.5,Agri Bulk,-23.8806,-46.34
+BRSSZ,Santos,Brazil,Dry Bulk,YASA EAGLE,IMO9355532,82000,Waiting at anchor,2025-02-07 08:00:00,5.0,Agri Bulk,-23.8876,-46.3641
+CNJGT,Tangshan (Jingtang),China,Dry Bulk,MARATHOS,IMO9019267,76000,Operating at berth,2025-01-24 08:00:00,0.5,Coking Coal / Ore,39.2025,118.9902
+CNJGT,Tangshan (Jingtang),China,Dry Bulk,NORDIC SANNGIJUK,IMO9406647,76000,Operating at berth,2025-02-07 08:00:00,1.7,Coking Coal / Ore,39.1825,119.0196
+CNJGT,Tangshan (Jingtang),China,Dry Bulk,Seacon Vancouver,IMO9183481,76000,Operating at berth,2025-01-25 08:00:00,0.9,Coking Coal / Ore,39.2062,118.991
+CNNGB,Ningbo-Zhoushan,China,Dry Bulk,CAPE KASOS,IMO9740320,82000,Operating at berth,2025-01-30 08:00:00,0.9,Iron Ore / LPG,29.8663,121.5304
+CNNGB,Ningbo-Zhoushan,China,Dry Bulk,MANZANILLO,IMO9258056,76000,Operating at berth,2025-01-26 08:00:00,1.7,Iron Ore / LPG,29.8554,121.5363
+CNNGB,Ningbo-Zhoushan,China,Dry Bulk,PU AN TONG,IMO9125151,82000,Operating at berth,2025-02-15 08:00:00,0.9,Iron Ore / LPG,29.8807,121.5331
+CNNGB,Ningbo-Zhoushan,China,Dry Bulk,SM HARMONY 1,IMO9482620,82000,Operating at berth,2025-02-06 08:00:00,0.5,Iron Ore / LPG,29.8519,121.5415
+CNNGB,Ningbo-Zhoushan,China,Dry Bulk,Judith,IMO9515073,76000,Waiting at anchor,2025-01-31 08:00:00,3.0,Iron Ore / LPG,29.9486,121.535
+CNNGB,Ningbo-Zhoushan,China,Dry Bulk,POLAR LADY,IMO9876283,76000,Waiting at anchor,2025-02-06 08:00:00,1.0,Iron Ore / LPG,29.9316,121.499
+CNNGB,Ningbo-Zhoushan,China,Dry Bulk,wanming1,IMO9486466,76000,Waiting at anchor,2025-02-07 08:00:00,1.0,Iron Ore / LPG,29.87,121.63
+CNRZH,Rizhao,China,Dry Bulk,LILA SHANGHAI,IMO9091137,76000,Operating at berth,2025-02-01 08:00:00,1.7,Iron Ore,35.4025,119.5396
+CNRZH,Rizhao,China,Dry Bulk,CARAVOS HARMONY,IMO9757675,82000,Waiting at anchor,2025-02-07 08:00:00,2.0,Iron Ore,35.4998,119.525
+CNRZH,Rizhao,China,Dry Bulk,SOPHIA,IMO9596374,82000,Waiting at anchor,2025-02-14 08:00:00,2.5,Iron Ore,35.471,119.4684
+JPCHB,Chiba,Japan,Dry Bulk,JY HAMBURG,IMO9318246,82000,Waiting at anchor,2025-02-13 08:00:00,2.5,Petrochemical Feed,35.6794,140.09
+JPYOK,Yokohama,Japan,Dry Bulk,Katagalan Wisdom 3,IMO9183766,76000,Waiting at anchor,2025-02-08 08:00:00,3.5,LPG Import,35.5201,139.6885
+KRUSN,Ulsan,Korea,Dry Bulk,GREAT OCEAN,IMO9056937,82000,Operating at berth,2025-01-25 08:00:00,1.3,SK / E1 LPG,35.4975,129.3998
+NLRTM,Rotterdam,The Netherlands,Dry Bulk,AH UNION,IMO9911855,76000,Operating at berth,2025-02-02 08:00:00,0.9,Crude / Dry Bulk,51.9014,4.4626
+NLRTM,Rotterdam,The Netherlands,Dry Bulk,FANTASEA,IMO9294668,76000,Operating at berth,2025-02-06 08:00:00,1.7,Crude / Dry Bulk,51.9237,4.4504
+NLRTM,Rotterdam,The Netherlands,Dry Bulk,AVON TRADER,IMO9819087,76000,Waiting at anchor,2025-02-09 08:00:00,2.0,Crude / Dry Bulk,51.93,4.5494
+NLRTM,Rotterdam,The Netherlands,Dry Bulk,HSL BUNBURY,IMO9688746,82000,Waiting at anchor,2025-02-06 08:00:00,1.5,Crude / Dry Bulk,52.0,4.47
+SGSIN,Singapore,Singapore,Dry Bulk,AKAKI,IMO9499553,82000,Operating at berth,2025-02-10 08:00:00,0.5,Bunkers / Clean Products,1.2646,103.8373
+SGSIN,Singapore,Singapore,Dry Bulk,KMAX LEADER,IMO9007811,76000,Operating at berth,2025-01-26 08:00:00,0.9,Bunkers / Clean Products,1.2763,103.8304
+SGSIN,Singapore,Singapore,Dry Bulk,MINI,IMO9980727,182000,Operating at berth,2025-02-02 08:00:00,0.5,Bunkers / Clean Products,1.2775,103.8302
+SGSIN,Singapore,Singapore,Dry Bulk,AGRI KINSALE,IMO9070778,76000,Waiting at anchor,2025-02-09 08:00:00,2.0,Bunkers / Clean Products,1.3598,103.845
+SGSIN,Singapore,Singapore,Dry Bulk,ATHANASIA C,IMO9489875,82000,Waiting at anchor,2025-01-31 08:00:00,5.0,Bunkers / Clean Products,1.3561,103.8747
+SGSIN,Singapore,Singapore,Dry Bulk,Bern Star,IMO9884909,76000,Waiting at anchor,2025-02-06 08:00:00,2.5,Bunkers / Clean Products,1.295,103.9286
+SGSIN,Singapore,Singapore,Dry Bulk,EVER GRAND,IMO9439905,82000,Waiting at anchor,2025-02-09 08:00:00,2.0,Bunkers / Clean Products,1.29,103.9294
+SGSIN,Singapore,Singapore,Dry Bulk,Fionan,IMO9468193,182000,Waiting at anchor,2025-02-08 08:00:00,2.5,Bunkers / Clean Products,1.295,103.9286
+USSPG,Sabine Pass,United States,Dry Bulk,Queena,IMO9524544,82000,Operating at berth,2025-02-06 08:00:00,1.7,Liquefied Natural Gas,29.7337,-93.8896
+ZARCB,Richards Bay,South Africa,Dry Bulk,Panasiatic,IMO9394100,82000,Waiting at anchor,2025-02-03 08:00:00,1.5,Coal,-28.7417,32.1348
+DZAZW,Arzew,Algeria,LNG,Explorer,IMO9361079,95000,Operating at berth,2024-10-19 08:00:00,0.9,Sonatrach LNG,35.8373,-0.2946
+QARLF,Ras Laffan,Qatar,LNG,Celsius Glarus,IMO9945459,95000,Operating at berth,2024-01-25 08:00:00,1.3,LNG / Field LPG,25.9082,51.5462
+QARLF,Ras Laffan,Qatar,LNG,Golar Arctic,IMO9253105,95000,Waiting at anchor,2024-01-08 08:00:00,3.0,LNG / Field LPG,25.9875,51.5729
+USSPG,Sabine Pass,United States,LNG,Flex Aurora,IMO9857365,95000,Operating at berth,2024-01-18 08:00:00,1.3,Liquefied Natural Gas,29.7226,-93.8514
+AUDRW,Darwin,Australia,LPG,Crystal River,IMO9780641,55000,Operating at berth,2024-01-21 08:00:00,0.9,Ichthys LNG,-12.4587,130.82
+NGBON,Bonny,Nigeria,LPG,Manifesto,IMO9625152,55000,Operating at berth,2024-01-20 08:00:00,1.7,Bonny Light Crude / LNG,4.43,7.16
+NLRTM,Rotterdam,The Netherlands,LPG,Seagas Loyalty,IMO9264848,55000,Waiting at anchor,2024-01-07 08:00:00,6.0,Crude / Dry Bulk,51.9875,4.4271
+QARLF,Ras Laffan,Qatar,LPG,Gas Umm Al Rowaisat,IMO9849631,55000,Operating at berth,2024-01-20 08:00:00,0.9,LNG / Field LPG,25.9307,51.5131
+SAYNB,Yanbu,Saudi Arabia,LPG,Lubara,IMO9359478,55000,Operating at berth,2024-01-07 08:00:00,1.3,Arab Medium / Heavy,24.0804,38.0425
+USHOU,Houston,United States,LPG,BW Brage,IMO9732539,55000,Operating at berth,2024-01-21 08:00:00,0.9,WTI / Products / LPG,29.7214,-95.2626
+USHOU,Houston,United States,LPG,BW Tucana,IMO9735658,55000,Operating at berth,2024-01-21 08:00:00,1.3,WTI / Products / LPG,29.7204,-95.2663
+USHOU,Houston,United States,LPG,Dilos,IMO9711535,55000,Operating at berth,2024-01-21 08:00:00,1.7,WTI / Products / LPG,29.7225,-95.2796
+USHOU,Houston,United States,LPG,G Dolce,IMO9161043,55000,Operating at berth,2024-01-07 08:00:00,0.5,WTI / Products / LPG,29.7219,-95.2785
+USHOU,Houston,United States,LPG,Phoenix Harmonia,IMO9947483,55000,Operating at berth,2024-01-07 08:00:00,1.7,WTI / Products / LPG,29.7254,-95.2563
+USHOU,Houston,United States,LPG,Secreto,IMO9726102,55000,Operating at berth,2024-01-07 08:00:00,1.3,WTI / Products / LPG,29.7231,-95.2807
+USHOU,Houston,United States,LPG,Pacific Binzhou,IMO9743734,55000,Waiting at anchor,2024-01-21 08:00:00,4.0,WTI / Products / LPG,29.8161,-95.2947
+AEFJR,Fujairah,United Arab Emirates,Tankers,Advantage Solo,IMO1023425,158000,Operating at berth,2026-04-12 08:00:00,0.9,Murban Crude / Bunkers,25.1407,56.3231
+AEFJR,Fujairah,United Arab Emirates,Tankers,Almi Globe,IMO9579511,158000,Operating at berth,2025-02-09 08:00:00,0.5,Murban Crude / Bunkers,25.1163,56.3546
+AEFJR,Fujairah,United Arab Emirates,Tankers,Aragona,IMO9513115,305000,Operating at berth,2026-08-07 08:00:00,0.9,Murban Crude / Bunkers,25.1114,56.3326
+AEFJR,Fujairah,United Arab Emirates,Tankers,Ataraktos,IMO9108258,158000,Operating at berth,2026-04-25 08:00:00,1.3,Murban Crude / Bunkers,25.13,56.32
+AEFJR,Fujairah,United Arab Emirates,Tankers,Atokos,IMO1037048,305000,Operating at berth,2026-06-12 08:00:00,0.5,Murban Crude / Bunkers,25.1374,56.3214
+AEFJR,Fujairah,United Arab Emirates,Tankers,Bidbid (ATC)*,IMO1085473,305000,Operating at berth,2026-06-18 08:00:00,0.5,Murban Crude / Bunkers,25.1182,56.3238
+AEFJR,Fujairah,United Arab Emirates,Tankers,C. Infinity*,IMO9605190,305000,Operating at berth,2026-08-27 08:00:00,0.5,Murban Crude / Bunkers,25.1374,56.3214
+AEFJR,Fujairah,United Arab Emirates,Tankers,Ivory Coast Prosperity,IMO9389265,305000,Operating at berth,2026-08-28 08:00:00,0.9,Murban Crude / Bunkers,25.1102,56.3375
+AEFJR,Fujairah,United Arab Emirates,Tankers,Capt x Kyriakou,IMO9743637,158000,Operating at berth,2024-10-20 08:00:00,0.9,Murban Crude / Bunkers,25.1138,56.3282
+AEFJR,Fujairah,United Arab Emirates,Tankers,Captain Lyristis,IMO9877183,158000,Operating at berth,2026-04-25 08:00:00,1.7,Murban Crude / Bunkers,25.1238,56.321
+AEFJR,Fujairah,United Arab Emirates,Tankers,Captain X Kyriakou,IMO9602928,305000,Operating at berth,2024-10-21 08:00:00,0.5,Murban Crude / Bunkers,25.1163,56.3546
+AEFJR,Fujairah,United Arab Emirates,Tankers,Motele Ola,IMO9399492,158000,Operating at berth,2026-07-19 08:00:00,0.9,Murban Crude / Bunkers,25.1263,56.3596
+AEFJR,Fujairah,United Arab Emirates,Tankers,Ce-bermuda,IMO9411226,158000,Operating at berth,2026-07-03 08:00:00,0.5,Murban Crude / Bunkers,25.1374,56.3214
+AEFJR,Fujairah,United Arab Emirates,Tankers,Dynacom Tbn,IMO9792187,158000,Operating at berth,2026-09-05 08:00:00,1.7,Murban Crude / Bunkers,25.1337,56.3204
+AEFJR,Fujairah,United Arab Emirates,Tankers,Cosjade Lake,IMO9337183,305000,Operating at berth,2026-08-17 08:00:00,1.7,Murban Crude / Bunkers,25.1287,56.36
+AEFJR,Fujairah,United Arab Emirates,Tankers,Desh Shakti,IMO9263734,158000,Operating at berth,2024-01-27 08:00:00,1.3,Murban Crude / Bunkers,25.1131,56.3293
+AEFJR,Fujairah,United Arab Emirates,Tankers,Dht Amazon*,IMO9528794,305000,Operating at berth,2026-07-03 08:00:00,0.5,Murban Crude / Bunkers,25.1275,56.3202
+AEFJR,Fujairah,United Arab Emirates,Tankers,Dht Panther,IMO9722900,305000,Operating at berth,2026-05-29 08:00:00,0.5,Murban Crude / Bunkers,25.1131,56.3507
+AEFJR,Fujairah,United Arab Emirates,Tankers,Dht Redwood,IMO9528940,305000,Operating at berth,2026-07-04 08:00:00,0.5,Murban Crude / Bunkers,25.1104,56.3363
+AEFJR,Fujairah,United Arab Emirates,Tankers,Dht Tiger,IMO9733959,305000,Operating at berth,2026-08-28 08:00:00,0.9,Murban Crude / Bunkers,25.1362,56.321
+AEFJR,Fujairah,United Arab Emirates,Tankers,Dino,IMO9923994,158000,Operating at berth,2026-07-19 08:00:00,0.5,Murban Crude / Bunkers,25.1325,56.3202
+AEFJR,Fujairah,United Arab Emirates,Tankers,Elandra Eagle,IMO9792474,158000,Operating at berth,2026-08-14 08:00:00,0.9,Murban Crude / Bunkers,25.1114,56.3474
+AEFJR,Fujairah,United Arab Emirates,Tankers,Erietta Latsi,IMO9923499,305000,Operating at berth,2026-07-10 08:00:00,1.7,Murban Crude / Bunkers,25.1193,56.3569
+AEFJR,Fujairah,United Arab Emirates,Tankers,Eurotrader,IMO9387267,305000,Operating at berth,2025-05-16 08:00:00,1.7,Murban Crude / Bunkers,25.1337,56.3204
+AEFJR,Fujairah,United Arab Emirates,Tankers,Fearless Warrior,IMO1028736,158000,Operating at berth,2026-09-06 08:00:00,0.5,Murban Crude / Bunkers,25.11,56.3413
+AEFJR,Fujairah,United Arab Emirates,Tankers,Front Eira (Mercuria),IMO9855331,305000,Operating at berth,2026-09-04 08:00:00,1.3,Murban Crude / Bunkers,25.1163,56.3254
+AEFJR,Fujairah,United Arab Emirates,Tankers,Front Tweed O/o,IMO9376102,305000,Operating at berth,2026-08-24 08:00:00,1.3,Murban Crude / Bunkers,25.1275,56.3598
+AEFJR,Fujairah,United Arab Emirates,Tankers,Seaking,IMO9292187,305000,Operating at berth,2026-06-06 08:00:00,1.7,Murban Crude / Bunkers,25.1125,56.3496
+AEFJR,Fujairah,United Arab Emirates,Tankers,Grand Ambition,IMO9909807,305000,Operating at berth,2026-08-20 08:00:00,0.9,Murban Crude / Bunkers,25.1102,56.3375
+AEFJR,Fujairah,United Arab Emirates,Tankers,Harbour Splendor,IMO9575096,305000,Operating at berth,2026-08-16 08:00:00,1.3,Murban Crude / Bunkers,25.1104,56.3437
+AEFJR,Fujairah,United Arab Emirates,Tankers,He Ping Hai,IMO9614048,305000,Operating at berth,2026-07-31 08:00:00,1.7,Murban Crude / Bunkers,25.1125,56.3496
+AEFJR,Fujairah,United Arab Emirates,Tankers,He Rong Hai,IMO9603192,305000,Operating at berth,2026-08-29 08:00:00,1.3,Murban Crude / Bunkers,25.125,56.3206
+AEFJR,Fujairah,United Arab Emirates,Tankers,Hili,IMO9851830,158000,Operating at berth,2026-08-27 08:00:00,0.9,Murban Crude / Bunkers,25.1138,56.3282
+AEFJR,Fujairah,United Arab Emirates,Tankers,Irini N. Lemos (Vitol),IMO9831218,305000,Operating at berth,2026-09-04 08:00:00,1.3,Murban Crude / Bunkers,25.125,56.3206
+AEFJR,Fujairah,United Arab Emirates,Tankers,Island Splendor*,IMO9508861,305000,Operating at berth,2026-07-23 08:00:00,1.7,Murban Crude / Bunkers,25.1154,56.3263
+AEFJR,Fujairah,United Arab Emirates,Tankers,Jag Lakshya,IMO9516117,158000,Operating at berth,2025-09-26 08:00:00,0.5,Murban Crude / Bunkers,25.1325,56.3202
+AEFJR,Fujairah,United Arab Emirates,Tankers,Kallista,IMO9411965,305000,Operating at berth,2026-04-12 08:00:00,1.3,Murban Crude / Bunkers,25.125,56.3206
+AEFJR,Fujairah,United Arab Emirates,Tankers,Magnolia,IMO9258519,305000,Operating at berth,2024-03-16 08:00:00,1.7,Murban Crude / Bunkers,25.1385,56.3219
+AEFJR,Fujairah,United Arab Emirates,Tankers,Maran Artemis,IMO9753002,305000,Operating at berth,2026-06-25 08:00:00,1.7,Murban Crude / Bunkers,25.1193,56.3231
+AEFJR,Fujairah,United Arab Emirates,Tankers,Maran Athena (Shell),IMO9770505,305000,Operating at berth,2026-09-05 08:00:00,0.5,Murban Crude / Bunkers,25.1374,56.3214
+AEFJR,Fujairah,United Arab Emirates,Tankers,Maran Hercules,IMO9761360,158000,Operating at berth,2026-09-06 08:00:00,0.5,Murban Crude / Bunkers,25.1204,56.3575
+AEFJR,Fujairah,United Arab Emirates,Tankers,Maran Mira,IMO9870800,305000,Operating at berth,2026-06-13 08:00:00,0.9,Murban Crude / Bunkers,25.1407,56.3231
+AEFJR,Fujairah,United Arab Emirates,Tankers,Maran Thaleia,IMO9527295,305000,Operating at berth,2026-08-15 08:00:00,1.3,Murban Crude / Bunkers,25.1182,56.3562
+AEFJR,Fujairah,United Arab Emirates,Tankers,Mesdar,IMO9452672,305000,Operating at berth,2026-08-24 08:00:00,1.3,Murban Crude / Bunkers,25.1146,56.3527
+AEFJR,Fujairah,United Arab Emirates,Tankers,Montesperanza,IMO9585871,158000,Operating at berth,2026-07-24 08:00:00,0.5,Murban Crude / Bunkers,25.125,56.3594
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Achievement,IMO9686340,305000,Operating at berth,2026-06-20 08:00:00,0.9,Murban Crude / Bunkers,25.1215,56.3219
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Assurance,IMO9799161,305000,Operating at berth,2026-07-10 08:00:00,0.5,Murban Crude / Bunkers,25.1131,56.3507
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Champion,IMO9799147,305000,Operating at berth,2026-07-10 08:00:00,1.7,Murban Crude / Bunkers,25.1125,56.3496
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Comfort*,IMO9706413,305000,Operating at berth,2026-07-09 08:00:00,1.7,Murban Crude / Bunkers,25.11,56.34
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Dragon,IMO9379715,305000,Operating at berth,2026-08-15 08:00:00,0.9,Murban Crude / Bunkers,25.1407,56.3231
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Eminence,IMO9799135,305000,Operating at berth,2026-08-20 08:00:00,1.7,Murban Crude / Bunkers,25.11,56.34
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Enterprise,IMO9405227,305000,Operating at berth,2026-07-30 08:00:00,1.3,Murban Crude / Bunkers,25.1226,56.3586
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Explorer,IMO1090777,305000,Operating at berth,2026-05-03 08:00:00,1.3,Murban Crude / Bunkers,25.11,56.3387
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Melody,IMO9799185,305000,Operating at berth,2026-07-03 08:00:00,0.9,Murban Crude / Bunkers,25.1215,56.3219
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Strength,IMO9515929,305000,Operating at berth,2026-03-26 08:00:00,0.9,Murban Crude / Bunkers,25.1114,56.3326
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Trust,IMO9175078,158000,Operating at berth,2025-09-29 08:00:00,1.3,Murban Crude / Bunkers,25.1275,56.3598
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Voyage,IMO9686364,305000,Operating at berth,2026-06-05 08:00:00,1.7,Murban Crude / Bunkers,25.11,56.34
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Wisdom,IMO9486506,305000,Operating at berth,2026-08-15 08:00:00,0.5,Murban Crude / Bunkers,25.111,56.3462
+AEFJR,Fujairah,United Arab Emirates,Tankers,Nordic Freedom,IMO9288887,158000,Operating at berth,2026-01-09 08:00:00,0.9,Murban Crude / Bunkers,25.1114,56.3326
+AEFJR,Fujairah,United Arab Emirates,Tankers,Nordic Vega,IMO9412581,158000,Operating at berth,2026-07-18 08:00:00,0.5,Murban Crude / Bunkers,25.1325,56.3202
+AEFJR,Fujairah,United Arab Emirates,Tankers,Olympic Flag,IMO9271341,158000,Operating at berth,2024-10-14 08:00:00,0.9,Murban Crude / Bunkers,25.1173,56.3246
+AEFJR,Fujairah,United Arab Emirates,Tankers,Pissiotis,IMO9509023,158000,Operating at berth,2025-06-30 08:00:00,1.3,Murban Crude / Bunkers,25.1163,56.3254
+AEFJR,Fujairah,United Arab Emirates,Tankers,Popi Sazaklis,IMO9817494,158000,Operating at berth,2026-07-19 08:00:00,1.7,Murban Crude / Bunkers,25.1385,56.3219
+AEFJR,Fujairah,United Arab Emirates,Tankers,Sea Amethyst,IMO9920693,158000,Operating at berth,2024-08-03 08:00:00,0.5,Murban Crude / Bunkers,25.1163,56.3546
+AEFJR,Fujairah,United Arab Emirates,Tankers,Sea Garnet,IMO9772943,158000,Operating at berth,2025-05-05 08:00:00,0.9,Murban Crude / Bunkers,25.1362,56.321
+AEFJR,Fujairah,United Arab Emirates,Tankers,Sea Ruby,IMO9779616,305000,Operating at berth,2026-05-01 08:00:00,0.5,Murban Crude / Bunkers,25.1418,56.3238
+AEFJR,Fujairah,United Arab Emirates,Tankers,Serifos,IMO9410399,305000,Operating at berth,2026-08-09 08:00:00,1.3,Murban Crude / Bunkers,25.125,56.3206
+AEFJR,Fujairah,United Arab Emirates,Tankers,Sestrea,IMO9406659,158000,Operating at berth,2026-07-24 08:00:00,0.9,Murban Crude / Bunkers,25.1313,56.32
+AEFJR,Fujairah,United Arab Emirates,Tankers,Sfl Fraser,IMO9874258,158000,Operating at berth,2025-11-16 08:00:00,1.3,Murban Crude / Bunkers,25.1182,56.3562
+AEFJR,Fujairah,United Arab Emirates,Tankers,Stella,IMO9461776,158000,Operating at berth,2026-08-30 08:00:00,0.5,Murban Crude / Bunkers,25.1325,56.3202
+AEFJR,Fujairah,United Arab Emirates,Tankers,Stena Suede,IMO9579042,158000,Operating at berth,2026-08-23 08:00:00,1.3,Murban Crude / Bunkers,25.1146,56.3527
+AEFJR,Fujairah,United Arab Emirates,Tankers,Tbn,IMO9281683,305000,Operating at berth,2026-07-13 08:00:00,1.3,Murban Crude / Bunkers,25.1131,56.3293
+AEFJR,Fujairah,United Arab Emirates,Tankers,tony,IMO9432036,158000,Operating at berth,2025-08-15 08:00:00,1.3,Murban Crude / Bunkers,25.1226,56.3586
+AEFJR,Fujairah,United Arab Emirates,Tankers,Ulysses,IMO9723112,305000,Operating at berth,2026-04-30 08:00:00,0.9,Murban Crude / Bunkers,25.1138,56.3518
+AEFJR,Fujairah,United Arab Emirates,Tankers,Universal Challenger,IMO9851854,305000,Operating at berth,2026-06-22 08:00:00,0.9,Murban Crude / Bunkers,25.1102,56.3425
+AEFJR,Fujairah,United Arab Emirates,Tankers,V. Advance,IMO9845221,305000,Operating at berth,2026-08-15 08:00:00,1.7,Murban Crude / Bunkers,25.1106,56.335
+AEFJR,Fujairah,United Arab Emirates,Tankers,V. Harmony,IMO9845233,305000,Operating at berth,2026-07-09 08:00:00,0.5,Murban Crude / Bunkers,25.1146,56.3273
+AEFJR,Fujairah,United Arab Emirates,Tankers,Vadin,IMO9324100,305000,Operating at berth,2026-09-11 08:00:00,0.5,Murban Crude / Bunkers,25.1226,56.3214
+AEFJR,Fujairah,United Arab Emirates,Tankers,Xin An Yang,IMO9473389,305000,Operating at berth,2026-06-26 08:00:00,0.5,Murban Crude / Bunkers,25.1119,56.3315
+AEFJR,Fujairah,United Arab Emirates,Tankers,Xin Run Yang,IMO9389760,305000,Operating at berth,2026-08-10 08:00:00,0.9,Murban Crude / Bunkers,25.1138,56.3518
+AEFJR,Fujairah,United Arab Emirates,Tankers,Xin Yong Yang,IMO9416642,305000,Operating at berth,2026-07-20 08:00:00,0.9,Murban Crude / Bunkers,25.1114,56.3326
+AEFJR,Fujairah,United Arab Emirates,Tankers,Zouzuo n ,IMO9244158,158000,Operating at berth,2024-11-23 08:00:00,1.7,Murban Crude / Bunkers,25.1106,56.335
+AEFJR,Fujairah,United Arab Emirates,Tankers,angeliki light,IMO9941867,158000,Operating at berth,2026-08-15 08:00:00,0.5,Murban Crude / Bunkers,25.1146,56.3273
+AEFJR,Fujairah,United Arab Emirates,Tankers,AMCL TBN,IMO9051814,305000,Waiting at anchor,2026-07-11 08:00:00,1.5,Murban Crude / Bunkers,25.21,56.34
+AEFJR,Fujairah,United Arab Emirates,Tankers,Advantage Verity (C'lake),IMO9762998,305000,Waiting at anchor,2026-08-30 08:00:00,2.0,Murban Crude / Bunkers,25.1848,56.2817
+AEFJR,Fujairah,United Arab Emirates,Tankers,Amphitrite,IMO9455973,305000,Waiting at anchor,2026-06-29 08:00:00,4.0,Murban Crude / Bunkers,25.2024,56.3741
+AEFJR,Fujairah,United Arab Emirates,Tankers,Antarctica,IMO9910492,158000,Waiting at anchor,2024-10-19 08:00:00,6.5,Murban Crude / Bunkers,25.181,56.4016
+AEFJR,Fujairah,United Arab Emirates,Tankers,Mozambique B,IMO9709075,305000,Waiting at anchor,2026-06-14 08:00:00,4.5,Murban Crude / Bunkers,25.2044,56.3694
+AEFJR,Fujairah,United Arab Emirates,Tankers,Antigua I,IMO9753363,158000,Waiting at anchor,2024-11-20 08:00:00,3.5,Murban Crude / Bunkers,25.2001,56.3785
+AEFJR,Fujairah,United Arab Emirates,Tankers,Aristotelis Ii,IMO1097775,305000,Waiting at anchor,2026-08-20 08:00:00,2.0,Murban Crude / Bunkers,25.1916,56.391
+AEFJR,Fujairah,United Arab Emirates,Tankers,Atrebates,IMO1029869,305000,Waiting at anchor,2026-09-04 08:00:00,4.0,Murban Crude / Bunkers,25.2061,56.3153
+AEFJR,Fujairah,United Arab Emirates,Tankers,Bahla,IMO9870812,305000,Waiting at anchor,2026-04-30 08:00:00,2.0,Murban Crude / Bunkers,25.1848,56.2817
+AEFJR,Fujairah,United Arab Emirates,Tankers,Cape Armathia,IMO1064388,158000,Waiting at anchor,2026-08-08 08:00:00,6.5,Murban Crude / Bunkers,25.181,56.4016
+AEFJR,Fujairah,United Arab Emirates,Tankers,Ce-hamilton,IMO9411238,158000,Waiting at anchor,2025-05-29 08:00:00,6.5,Murban Crude / Bunkers,25.181,56.4016
+AEFJR,Fujairah,United Arab Emirates,Tankers,Cosmerry Lake,IMO9325037,305000,Waiting at anchor,2026-05-30 08:00:00,3.0,Murban Crude / Bunkers,25.1499,56.4175
+AEFJR,Fujairah,United Arab Emirates,Tankers,Desh Abhimaan,IMO9326809,158000,Waiting at anchor,2026-07-13 08:00:00,3.5,Murban Crude / Bunkers,25.2001,56.3785
+AEFJR,Fujairah,United Arab Emirates,Tankers,Desh Shobha,IMO9459046,158000,Waiting at anchor,2026-08-28 08:00:00,6.5,Murban Crude / Bunkers,25.2094,56.35
+AEFJR,Fujairah,United Arab Emirates,Tankers,Desh Vishal,IMO9371749,305000,Waiting at anchor,2026-07-13 08:00:00,3.5,Murban Crude / Bunkers,25.2075,56.3201
+AEFJR,Fujairah,United Arab Emirates,Tankers,Dht Opal (Koch),IMO9455662,305000,Waiting at anchor,2026-06-13 08:00:00,3.5,Murban Crude / Bunkers,25.2001,56.3785
+AEFJR,Fujairah,United Arab Emirates,Tankers,Dht Taiga,IMO9590888,305000,Waiting at anchor,2026-04-26 08:00:00,2.5,Murban Crude / Bunkers,25.2094,56.33
+AEFJR,Fujairah,United Arab Emirates,Tankers,Empire Hope,IMO1100716,305000,Waiting at anchor,2026-08-27 08:00:00,6.5,Murban Crude / Bunkers,25.181,56.4016
+AEFJR,Fujairah,United Arab Emirates,Tankers,Evagoras,IMO9239484,158000,Waiting at anchor,2024-11-03 08:00:00,4.0,Murban Crude / Bunkers,25.1594,56.4144
+AEFJR,Fujairah,United Arab Emirates,Tankers,Front Challenger,IMO9759745,158000,Waiting at anchor,2026-07-27 08:00:00,6.5,Murban Crude / Bunkers,25.1947,56.293
+AEFJR,Fujairah,United Arab Emirates,Tankers,Front Empire,IMO9788332,305000,Waiting at anchor,2026-07-10 08:00:00,3.5,Murban Crude / Bunkers,25.1547,56.4161
+AEFJR,Fujairah,United Arab Emirates,Tankers,Front Siena,IMO9832250,158000,Waiting at anchor,2025-05-23 08:00:00,1.0,Murban Crude / Bunkers,25.13,56.42
+AEFJR,Fujairah,United Arab Emirates,Tankers,G. Dream,IMO9931329,305000,Waiting at anchor,2026-07-24 08:00:00,1.5,Murban Crude / Bunkers,25.1883,56.2852
+AEFJR,Fujairah,United Arab Emirates,Tankers,G. Future,IMO9931331,305000,Waiting at anchor,2026-06-19 08:00:00,3.0,Murban Crude / Bunkers,25.1975,56.3829
+AEFJR,Fujairah,United Arab Emirates,Tankers,Habrut,IMO9500730,305000,Waiting at anchor,2026-08-21 08:00:00,2.0,Murban Crude / Bunkers,25.2098,56.335
+AEFJR,Fujairah,United Arab Emirates,Tankers,London Voyager,IMO9834454,305000,Waiting at anchor,2025-11-06 08:00:00,2.0,Murban Crude / Bunkers,25.1848,56.2817
+AEFJR,Fujairah,United Arab Emirates,Tankers,Lord Byron 21,IMO9889954,158000,Waiting at anchor,2026-01-23 08:00:00,5.5,Murban Crude / Bunkers,25.1729,56.4075
+AEFJR,Fujairah,United Arab Emirates,Tankers,Maran Ajax,IMO9790270,305000,Waiting at anchor,2026-08-03 08:00:00,1.5,Murban Crude / Bunkers,25.1883,56.3948
+AEFJR,Fujairah,United Arab Emirates,Tankers,Minerva Evropi,IMO9785237,158000,Waiting at anchor,2026-08-24 08:00:00,1.5,Murban Crude / Bunkers,25.1883,56.2852
+AEFJR,Fujairah,United Arab Emirates,Tankers,Minerva Symphony,IMO9304605,158000,Waiting at anchor,2026-05-14 08:00:00,6.5,Murban Crude / Bunkers,25.2094,56.35
+AEFJR,Fujairah,United Arab Emirates,Tankers,Morning Hope,IMO9789283,305000,Waiting at anchor,2026-09-05 08:00:00,4.0,Murban Crude / Bunkers,25.2061,56.3153
+AEFJR,Fujairah,United Arab Emirates,Tankers,Moscow Spirit,IMO9418602,158000,Waiting at anchor,2025-08-15 08:00:00,1.0,Murban Crude / Bunkers,25.2098,56.345
+AEFJR,Fujairah,United Arab Emirates,Tankers,Nave Synergy,IMO9513763,305000,Waiting at anchor,2026-07-10 08:00:00,3.0,Murban Crude / Bunkers,25.1499,56.4175
+AEFJR,Fujairah,United Arab Emirates,Tankers,Nave Universe,IMO9515931,305000,Waiting at anchor,2024-07-11 08:00:00,5.0,Murban Crude / Bunkers,25.2061,56.3647
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Aden,IMO9912000,305000,Waiting at anchor,2026-06-26 08:00:00,3.0,Murban Crude / Bunkers,25.2086,56.325
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Era,IMO9900655,305000,Waiting at anchor,2026-06-14 08:00:00,1.0,Murban Crude / Bunkers,25.2098,56.345
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Joviality,IMO9486491,305000,Waiting at anchor,2025-01-26 08:00:00,6.0,Murban Crude / Bunkers,25.1975,56.2971
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Paradise,IMO9398060,305000,Waiting at anchor,2026-09-04 08:00:00,6.0,Murban Crude / Bunkers,25.1975,56.2971
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Peace O/O,IMO9535797,305000,Waiting at anchor,2026-06-21 08:00:00,3.5,Murban Crude / Bunkers,25.2001,56.3785
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Resource,IMO9434620,305000,Waiting at anchor,2026-08-15 08:00:00,4.5,Murban Crude / Bunkers,25.2044,56.3694
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Valor,IMO8919271,305000,Waiting at anchor,2026-08-24 08:00:00,1.5,Murban Crude / Bunkers,25.21,56.34
+AEFJR,Fujairah,United Arab Emirates,Tankers,New Vista,IMO9458614,305000,Waiting at anchor,2026-08-17 08:00:00,2.0,Murban Crude / Bunkers,25.1916,56.391
+AEFJR,Fujairah,United Arab Emirates,Tankers,Nissos Despotiko,IMO9845697,305000,Waiting at anchor,2026-06-06 08:00:00,4.5,Murban Crude / Bunkers,25.2044,56.3694
+AEFJR,Fujairah,United Arab Emirates,Tankers,Nissos Kythnos,IMO9853852,305000,Waiting at anchor,2026-06-05 08:00:00,2.0,Murban Crude / Bunkers,25.1848,56.2817
+AEFJR,Fujairah,United Arab Emirates,Tankers,Ocean Lily,IMO1068877,305000,Waiting at anchor,2026-07-31 08:00:00,1.5,Murban Crude / Bunkers,25.21,56.34
+AEFJR,Fujairah,United Arab Emirates,Tankers,Orbiter,IMO9876438,305000,Waiting at anchor,2026-05-17 08:00:00,4.0,Murban Crude / Bunkers,25.2061,56.3153
+AEFJR,Fujairah,United Arab Emirates,Tankers,TBN,IMO9530618,158000,Waiting at anchor,2026-08-03 08:00:00,6.0,Murban Crude / Bunkers,25.1975,56.2971
+AEFJR,Fujairah,United Arab Emirates,Tankers,Sea Leopard*,IMO9422615,305000,Waiting at anchor,2026-07-17 08:00:00,1.0,Murban Crude / Bunkers,25.1848,56.3983
+AEFJR,Fujairah,United Arab Emirates,Tankers,Silverstone,IMO9878838,305000,Waiting at anchor,2026-08-28 08:00:00,1.5,Murban Crude / Bunkers,25.21,56.34
+AEFJR,Fujairah,United Arab Emirates,Tankers,Siren,IMO9405423,158000,Waiting at anchor,2024-09-30 08:00:00,2.5,Murban Crude / Bunkers,25.2094,56.33
+AEFJR,Fujairah,United Arab Emirates,Tankers,Stallion,IMO6714172,158000,Waiting at anchor,2025-11-21 08:00:00,4.5,Murban Crude / Bunkers,25.2044,56.3694
+AEFJR,Fujairah,United Arab Emirates,Tankers,Statia,IMO9302982,158000,Waiting at anchor,2024-01-21 08:00:00,4.0,Murban Crude / Bunkers,25.1594,56.4144
+AEFJR,Fujairah,United Arab Emirates,Tankers,Thalatta,IMO9702455,158000,Waiting at anchor,2026-06-14 08:00:00,3.5,Murban Crude / Bunkers,25.1547,56.4161
+AEFJR,Fujairah,United Arab Emirates,Tankers,Tianlong,IMO9378369,158000,Waiting at anchor,2026-08-21 08:00:00,2.0,Murban Crude / Bunkers,25.1848,56.2817
+AEFJR,Fujairah,United Arab Emirates,Tankers,Tong Zhou Gong Ji,IMO9646986,305000,Waiting at anchor,2026-08-21 08:00:00,1.5,Murban Crude / Bunkers,25.135,56.4198
+AEFJR,Fujairah,United Arab Emirates,Tankers,Universal Frontier,IMO9829382,305000,Waiting at anchor,2026-08-08 08:00:00,1.0,Murban Crude / Bunkers,25.2098,56.345
+AEFJR,Fujairah,United Arab Emirates,Tankers,Universal Honor,IMO9794812,305000,Waiting at anchor,2026-07-17 08:00:00,2.5,Murban Crude / Bunkers,25.181,56.2784
+AEFJR,Fujairah,United Arab Emirates,Tankers,Universal Leader,IMO9837597,305000,Waiting at anchor,2026-07-20 08:00:00,1.0,Murban Crude / Bunkers,25.1848,56.3983
+AEFJR,Fujairah,United Arab Emirates,Tankers,Xin Long Yang,IMO9761463,305000,Waiting at anchor,2026-08-17 08:00:00,5.0,Murban Crude / Bunkers,25.2024,56.3059
+AEFJR,Fujairah,United Arab Emirates,Tankers,Yasa Southern Cross,IMO9534030,305000,Waiting at anchor,2026-03-20 08:00:00,3.0,Murban Crude / Bunkers,25.1499,56.4175
+AEFJR,Fujairah,United Arab Emirates,Tankers,Yuan Rui Yang,IMO9843326,305000,Waiting at anchor,2026-08-14 08:00:00,3.5,Murban Crude / Bunkers,25.2075,56.3201
+AEFJR,Fujairah,United Arab Emirates,Tankers,Yuan Yang Hu,IMO9398943,305000,Waiting at anchor,2026-07-17 08:00:00,3.5,Murban Crude / Bunkers,25.1547,56.4161
+AEFJR,Fujairah,United Arab Emirates,Tankers,Zourva,IMO9679593,305000,Waiting at anchor,2026-06-26 08:00:00,5.0,Murban Crude / Bunkers,25.1685,56.4101
+CNNGB,Ningbo-Zhoushan,China,Tankers,Aegean Winner,IMO1042524,158000,Operating at berth,2026-09-17 08:00:00,1.7,Iron Ore / LPG,29.8593,121.5669
+CNNGB,Ningbo-Zhoushan,China,Tankers,Agios Sostis,IMO9473133,305000,Operating at berth,2024-02-26 08:00:00,1.3,Iron Ore / LPG,29.8626,121.5686
+CNNGB,Ningbo-Zhoushan,China,Tankers,Alterego,IMO9926697,305000,Operating at berth,2024-03-19 08:00:00,0.5,Iron Ore / LPG,29.85,121.5513
+CNNGB,Ningbo-Zhoushan,China,Tankers,Amjad o/o,IMO9779800,305000,Operating at berth,2025-06-27 08:00:00,1.3,Iron Ore / LPG,29.8531,121.5393
+CNNGB,Ningbo-Zhoushan,China,Tankers,Aragona o/o,IMO9729556,305000,Operating at berth,2025-11-01 08:00:00,0.9,Iron Ore / LPG,29.8538,121.5382
+CNNGB,Ningbo-Zhoushan,China,Tankers,Archangel,IMO9302592,158000,Operating at berth,2024-07-20 08:00:00,0.5,Iron Ore / LPG,29.8675,121.5302
+CNNGB,Ningbo-Zhoushan,China,Tankers,Emeraldway,IMO9907653,158000,Operating at berth,2025-09-22 08:00:00,1.7,Iron Ore / LPG,29.8525,121.5596
+CNNGB,Ningbo-Zhoushan,China,Tankers,Nave Tempo,IMO9876426,305000,Operating at berth,2025-12-14 08:00:00,0.9,Iron Ore / LPG,29.8573,121.5346
+CNNGB,Ningbo-Zhoushan,China,Tankers,Front Orkla o/o,IMO9933664,305000,Operating at berth,2025-07-05 08:00:00,0.9,Iron Ore / LPG,29.8807,121.5331
+CNNGB,Ningbo-Zhoushan,China,Tankers,Ipanema,IMO9996410,158000,Operating at berth,2025-08-19 08:00:00,0.9,Iron Ore / LPG,29.8514,121.5426
+CNNGB,Ningbo-Zhoushan,China,Tankers,Maran Arete,IMO9776547,305000,Operating at berth,2025-01-22 08:00:00,0.5,Iron Ore / LPG,29.8604,121.5675
+CNNGB,Ningbo-Zhoushan,China,Tankers,Plata Glory,IMO9384590,305000,Operating at berth,2024-08-23 08:00:00,1.7,Iron Ore / LPG,29.8593,121.5669
+CNNGB,Ningbo-Zhoushan,China,Tankers,Sanam,IMO9858486,305000,Operating at berth,2024-04-14 08:00:00,1.7,Iron Ore / LPG,29.8785,121.5319
+CNNGB,Ningbo-Zhoushan,China,Tankers,Yasa Scorpion (Exxon),IMO9643271,305000,Operating at berth,2025-02-08 08:00:00,1.3,Iron Ore / LPG,29.8582,121.5662
+CNNGB,Ningbo-Zhoushan,China,Tankers,Al Bahyah,IMO9937799,305000,Waiting at anchor,2025-10-06 08:00:00,1.0,Iron Ore / LPG,29.9248,121.6083
+CNNGB,Ningbo-Zhoushan,China,Tankers,Antarctic,IMO9315185,158000,Waiting at anchor,2025-09-28 08:00:00,5.5,Iron Ore / LPG,29.9401,121.5115
+CNNGB,Ningbo-Zhoushan,China,Tankers,Cardiff Tbn,IMO9776743,158000,Waiting at anchor,2025-01-23 08:00:00,1.5,Iron Ore / LPG,29.9283,121.4952
+CNNGB,Ningbo-Zhoushan,China,Tankers,Gulf Loyalty O/O,IMO9441245,305000,Waiting at anchor,2025-12-05 08:00:00,3.0,Iron Ore / LPG,29.9375,121.5929
+CNNGB,Ningbo-Zhoushan,China,Tankers,Hakusan (Shell),IMO9535058,305000,Waiting at anchor,2026-09-19 08:00:00,6.0,Iron Ore / LPG,29.9486,121.565
+CNNGB,Ningbo-Zhoushan,China,Tankers,Hillah,IMO9890977,305000,Waiting at anchor,2024-09-26 08:00:00,4.5,Iron Ore / LPG,29.9444,121.5206
+CNNGB,Ningbo-Zhoushan,China,Tankers,Maran Capricorn,IMO9389019,305000,Waiting at anchor,2024-04-01 08:00:00,4.0,Iron Ore / LPG,29.9424,121.5841
+CNNGB,Ningbo-Zhoushan,China,Tankers,Nissos Heraclea,IMO9419618,305000,Waiting at anchor,2025-08-23 08:00:00,2.0,Iron Ore / LPG,29.9316,121.601
+CNNGB,Ningbo-Zhoushan,China,Tankers,Ottoman Courtesy,IMO9788708,158000,Waiting at anchor,2024-08-26 08:00:00,3.0,Iron Ore / LPG,29.9486,121.535
+CNNGB,Ningbo-Zhoushan,China,Tankers,Stoic Warrior,IMO1028762,158000,Waiting at anchor,2026-07-27 08:00:00,2.5,Iron Ore / LPG,29.9347,121.597
+CNQDG,Qingdao,China,Tankers,Arosa,IMO9784386,305000,Operating at berth,2024-09-23 08:00:00,1.7,Iron Ore / Crude,36.0625,120.3104
+CNQDG,Qingdao,China,Tankers,Coshonour Lake,IMO9783332,305000,Operating at berth,2025-08-18 08:00:00,1.7,Iron Ore / Crude,36.0738,120.339
+CNQDG,Qingdao,China,Tankers,Front Dee,IMO9723069,305000,Operating at berth,2024-11-16 08:00:00,0.5,Iron Ore / Crude,36.0604,120.3163
+CNQDG,Qingdao,China,Tankers,Front Hawke,IMO9728722,305000,Operating at berth,2025-05-13 08:00:00,1.3,Iron Ore / Crude,36.08,120.3
+CNQDG,Qingdao,China,Tankers,Front Neiden,IMO9877779,305000,Operating at berth,2025-05-29 08:00:00,1.3,Iron Ore / Crude,36.0604,120.3237
+CNQDG,Qingdao,China,Tankers,Seaduchess,IMO9876440,305000,Operating at berth,2024-03-19 08:00:00,0.9,Iron Ore / Crude,36.0715,120.3019
+CNQDG,Qingdao,China,Tankers,Universal Innovator (BP),IMO9829370,305000,Operating at berth,2025-03-28 08:00:00,0.5,Iron Ore / Crude,36.0646,120.3073
+CNQDG,Qingdao,China,Tankers,Vl Brilliant o/o,IMO9683673,305000,Operating at berth,2025-11-07 08:00:00,0.9,Iron Ore / Crude,36.0614,120.3274
+CNQDG,Qingdao,China,Tankers,C. Spirit,IMO9643269,305000,Waiting at anchor,2024-11-06 08:00:00,6.0,Iron Ore / Crude,36.127,120.3847
+CNQDG,Qingdao,China,Tankers,Coswish lake,IMO9804277,305000,Waiting at anchor,2025-06-09 08:00:00,5.0,Iron Ore / Crude,36.1524,120.2859
+CNQDG,Qingdao,China,Tankers,Eagle Veracruz,IMO9933626,305000,Waiting at anchor,2025-10-19 08:00:00,6.5,Iron Ore / Crude,36.131,120.3816
+CNQDG,Qingdao,China,Tankers,Front Princess,IMO9788904,305000,Waiting at anchor,2025-11-09 08:00:00,6.5,Iron Ore / Crude,36.131,120.3816
+CNQDG,Qingdao,China,Tankers,Habshan,IMO9928011,305000,Waiting at anchor,2025-09-01 08:00:00,2.5,Iron Ore / Crude,36.1447,120.367
+CNQDG,Qingdao,China,Tankers,Kassab,IMO9386938,305000,Waiting at anchor,2025-08-13 08:00:00,3.0,Iron Ore / Crude,36.0999,120.3975
+CNQDG,Qingdao,China,Tankers,Leicester o/o,IMO9792266,305000,Waiting at anchor,2025-07-03 08:00:00,3.5,Iron Ore / Crude,36.1501,120.3585
+CNQDG,Qingdao,China,Tankers,Nave Electron,IMO9890989,305000,Waiting at anchor,2025-04-19 08:00:00,4.5,Iron Ore / Crude,36.1544,120.3494
+CNQDG,Qingdao,China,Tankers,Princess Natalie,IMO9457452,305000,Waiting at anchor,2024-12-01 08:00:00,5.0,Iron Ore / Crude,36.1185,120.3901
+CNQDG,Qingdao,China,Tankers,Uqab,IMO9830824,305000,Waiting at anchor,2025-12-25 08:00:00,1.0,Iron Ore / Crude,36.1348,120.3783
+CNQDG,Qingdao,China,Tankers,Water Tiger,IMO9858034,305000,Waiting at anchor,2024-11-27 08:00:00,5.5,Iron Ore / Crude,36.1229,120.3875
+CNQDG,Qingdao,China,Tankers,Xin Shen Yang,IMO9416654,305000,Waiting at anchor,2026-04-02 08:00:00,3.0,Iron Ore / Crude,36.1475,120.3629
+CNRZH,Rizhao,China,Tankers,Front Naver,IMO9877767,305000,Operating at berth,2025-03-23 08:00:00,1.3,Iron Ore,35.4019,119.5385
+DZAZW,Arzew,Algeria,Tankers,Bouboulina,IMO9298753,158000,Operating at berth,2025-05-08 08:00:00,0.5,Sonatrach LNG,35.8331,-0.2993
+DZAZW,Arzew,Algeria,Tankers,Delta Eurydice,IMO9700706,158000,Operating at berth,2026-05-18 08:00:00,1.3,Sonatrach LNG,35.8404,-0.3275
+DZAZW,Arzew,Algeria,Tankers,Delta Kanaris,IMO9429015,158000,Operating at berth,2026-08-24 08:00:00,1.7,Sonatrach LNG,35.8306,-0.305
+DZAZW,Arzew,Algeria,Tankers,Delta Poseidon,IMO9468671,158000,Operating at berth,2025-08-09 08:00:00,0.9,Sonatrach LNG,35.8513,-0.33
+DZAZW,Arzew,Algeria,Tankers,Diamondway,IMO9742895,158000,Operating at berth,2025-02-24 08:00:00,1.3,Sonatrach LNG,35.8426,-0.2914
+DZAZW,Arzew,Algeria,Tankers,Dimitrios,IMO9900007,158000,Operating at berth,2024-02-23 08:00:00,0.9,Sonatrach LNG,35.8463,-0.3296
+DZAZW,Arzew,Algeria,Tankers,Eco Bel Air,IMO9794056,158000,Operating at berth,2025-06-05 08:00:00,0.5,Sonatrach LNG,35.83,-0.3087
+DZAZW,Arzew,Algeria,Tankers,Energy Triumph,IMO9817614,158000,Operating at berth,2024-04-13 08:00:00,1.3,Sonatrach LNG,35.8426,-0.2914
+DZAZW,Arzew,Algeria,Tankers,Fairway,IMO9590319,158000,Operating at berth,2025-08-21 08:00:00,1.7,Sonatrach LNG,35.8354,-0.3237
+DZAZW,Arzew,Algeria,Tankers,Folegandros,IMO9793753,158000,Operating at berth,2025-03-27 08:00:00,1.7,Sonatrach LNG,35.8393,-0.2931
+DZAZW,Arzew,Algeria,Tankers,Gh Holiday,IMO9761528,158000,Operating at berth,2024-05-31 08:00:00,0.9,Sonatrach LNG,35.8302,-0.3125
+DZAZW,Arzew,Algeria,Tankers,Goldway,IMO9742900,158000,Operating at berth,2024-08-17 08:00:00,0.9,Sonatrach LNG,35.8513,-0.33
+DZAZW,Arzew,Algeria,Tankers,Kriti Future,IMO9924326,158000,Operating at berth,2026-08-20 08:00:00,1.3,Sonatrach LNG,35.8304,-0.3063
+DZAZW,Arzew,Algeria,Tankers,Kriti Vigor,IMO9290397,158000,Operating at berth,2024-01-26 08:00:00,0.5,Sonatrach LNG,35.845,-0.2906
+DZAZW,Arzew,Algeria,Tankers,Marlin Sicily,IMO9835848,158000,Operating at berth,2024-10-11 08:00:00,0.5,Sonatrach LNG,35.8319,-0.3185
+DZAZW,Arzew,Algeria,Tankers,Monte Udala,IMO9785823,158000,Operating at berth,2025-05-15 08:00:00,0.5,Sonatrach LNG,35.831,-0.3038
+DZAZW,Arzew,Algeria,Tankers,New Vision,IMO9804459,158000,Operating at berth,2026-07-20 08:00:00,0.9,Sonatrach LNG,35.8314,-0.3174
+DZAZW,Arzew,Algeria,Tankers,Nissos Sikinos,IMO9884033,158000,Operating at berth,2026-03-29 08:00:00,0.9,Sonatrach LNG,35.8513,-0.33
+DZAZW,Arzew,Algeria,Tankers,Nordic Zenith,IMO9588469,158000,Operating at berth,2025-02-23 08:00:00,1.7,Sonatrach LNG,35.8354,-0.2963
+DZAZW,Arzew,Algeria,Tankers,Phaethon,IMO9412098,158000,Operating at berth,2025-10-19 08:00:00,0.5,Sonatrach LNG,35.8525,-0.3298
+DZAZW,Arzew,Algeria,Tankers,Sea Amber,IMO9772931,158000,Operating at berth,2026-09-04 08:00:00,1.7,Sonatrach LNG,35.8438,-0.291
+DZAZW,Arzew,Algeria,Tankers,Sea Coral,IMO9935650,158000,Operating at berth,2026-05-31 08:00:00,0.5,Sonatrach LNG,35.8574,-0.3286
+DZAZW,Arzew,Algeria,Tankers,Seagrace,IMO9934826,158000,Operating at berth,2025-06-07 08:00:00,1.7,Sonatrach LNG,35.8325,-0.3196
+DZAZW,Arzew,Algeria,Tankers,Seaways Colorado,IMO9594767,158000,Operating at berth,2025-01-09 08:00:00,0.9,Sonatrach LNG,35.8302,-0.3125
+DZAZW,Arzew,Algeria,Tankers,Seaways Rio Grande,IMO9593438,158000,Operating at berth,2024-04-15 08:00:00,0.5,Sonatrach LNG,35.8475,-0.3298
+DZAZW,Arzew,Algeria,Tankers,Seaways San Saba,IMO9593426,158000,Operating at berth,2025-06-15 08:00:00,1.7,Sonatrach LNG,35.8325,-0.3196
+DZAZW,Arzew,Algeria,Tankers,Sofia,IMO9461764,158000,Operating at berth,2024-10-03 08:00:00,0.9,Sonatrach LNG,35.8314,-0.3174
+DZAZW,Arzew,Algeria,Tankers,Sonangol Huila,IMO9575565,158000,Operating at berth,2026-06-21 08:00:00,1.3,Sonatrach LNG,35.8475,-0.2902
+DZAZW,Arzew,Algeria,Tankers,Spyros,IMO9877171,158000,Operating at berth,2025-12-07 08:00:00,0.5,Sonatrach LNG,35.8574,-0.3286
+DZAZW,Arzew,Algeria,Tankers,T. Semahat,IMO9804148,158000,Operating at berth,2026-08-20 08:00:00,0.5,Sonatrach LNG,35.8525,-0.3298
+DZAZW,Arzew,Algeria,Tankers,Yannis P.,IMO9411343,158000,Operating at berth,2026-07-03 08:00:00,0.9,Sonatrach LNG,35.8463,-0.3296
+DZAZW,Arzew,Algeria,Tankers,Yasa Polaris,IMO9907457,158000,Operating at berth,2025-04-25 08:00:00,0.5,Sonatrach LNG,35.8304,-0.3137
+DZAZW,Arzew,Algeria,Tankers,Zeus,IMO9886378,158000,Operating at berth,2025-11-21 08:00:00,0.9,Sonatrach LNG,35.8463,-0.3296
+DZAZW,Arzew,Algeria,Tankers,Advantage Smart,IMO1028683,158000,Waiting at anchor,2026-04-17 08:00:00,5.0,Sonatrach LNG,35.9261,-0.2853
+DZAZW,Arzew,Algeria,Tankers,Advantage Start,IMO9466570,158000,Waiting at anchor,2026-02-14 08:00:00,2.5,Sonatrach LNG,35.9294,-0.32
+DZAZW,Arzew,Algeria,Tankers,Advantage Sun,IMO9513141,158000,Waiting at anchor,2025-04-18 08:00:00,3.0,Sonatrach LNG,35.8699,-0.2325
+DZAZW,Arzew,Algeria,Tankers,Aegean Unity,IMO9745237,158000,Waiting at anchor,2026-01-30 08:00:00,3.0,Sonatrach LNG,35.9175,-0.2671
+DZAZW,Arzew,Algeria,Tankers,Coswisdom Lake,IMO9727194,305000,Waiting at anchor,2025-09-14 08:00:00,6.0,Sonatrach LNG,35.9286,-0.295
+DZAZW,Arzew,Algeria,Tankers,Delta Ios,IMO9406685,158000,Waiting at anchor,2025-12-22 08:00:00,6.0,Sonatrach LNG,35.897,-0.2453
+DZAZW,Arzew,Algeria,Tankers,Eagle San Diego,IMO9594834,158000,Waiting at anchor,2025-11-17 08:00:00,5.5,Sonatrach LNG,35.9275,-0.2901
+DZAZW,Arzew,Algeria,Tankers,Elisabeth Maersk,IMO9682980,158000,Waiting at anchor,2026-06-18 08:00:00,3.0,Sonatrach LNG,35.9286,-0.325
+DZAZW,Arzew,Algeria,Tankers,Front Cosmos,IMO9769817,158000,Waiting at anchor,2024-10-05 08:00:00,1.0,Sonatrach LNG,35.9048,-0.2517
+DZAZW,Arzew,Algeria,Tankers,Front Idun,IMO9600944,158000,Waiting at anchor,2025-12-18 08:00:00,5.0,Sonatrach LNG,35.9261,-0.2853
+DZAZW,Arzew,Algeria,Tankers,Front Samara,IMO9845130,158000,Waiting at anchor,2026-08-01 08:00:00,2.0,Sonatrach LNG,35.86,-0.2306
+DZAZW,Arzew,Algeria,Tankers,Front Savannah,IMO9831828,158000,Waiting at anchor,2025-07-04 08:00:00,1.5,Sonatrach LNG,35.9083,-0.3648
+DZAZW,Arzew,Algeria,Tankers,Kimolos,IMO9791145,158000,Waiting at anchor,2026-06-14 08:00:00,3.0,Sonatrach LNG,35.9175,-0.2671
+DZAZW,Arzew,Algeria,Tankers,Kriti Hero,IMO9887308,158000,Waiting at anchor,2026-03-23 08:00:00,4.0,Sonatrach LNG,35.9261,-0.3347
+DZAZW,Arzew,Algeria,Tankers,Loire,IMO9761516,158000,Waiting at anchor,2024-06-20 08:00:00,6.5,Sonatrach LNG,35.9294,-0.3
+DZAZW,Arzew,Algeria,Tankers,Maran Aries,IMO9295000,305000,Waiting at anchor,2024-03-18 08:00:00,3.0,Sonatrach LNG,35.9286,-0.325
+DZAZW,Arzew,Algeria,Tankers,Maran Homer,IMO9761372,158000,Waiting at anchor,2024-07-01 08:00:00,1.5,Sonatrach LNG,35.93,-0.31
+DZAZW,Arzew,Algeria,Tankers,Maran Phoebe,IMO9868156,158000,Waiting at anchor,2026-05-04 08:00:00,2.0,Sonatrach LNG,35.9048,-0.3683
+DZAZW,Arzew,Algeria,Tankers,Maxim,IMO9604079,305000,Waiting at anchor,2025-03-14 08:00:00,2.0,Sonatrach LNG,35.9298,-0.315
+DZAZW,Arzew,Algeria,Tankers,Meltemi 1,IMO9952402,158000,Waiting at anchor,2024-09-07 08:00:00,5.5,Sonatrach LNG,35.9275,-0.2901
+DZAZW,Arzew,Algeria,Tankers,Minerva Georgia,IMO9332157,158000,Waiting at anchor,2026-05-03 08:00:00,4.5,Sonatrach LNG,35.9244,-0.2806
+DZAZW,Arzew,Algeria,Tankers,Monte Ulia,IMO9803285,158000,Waiting at anchor,2026-01-23 08:00:00,2.5,Sonatrach LNG,35.9147,-0.263
+DZAZW,Arzew,Algeria,Tankers,Monte Urbasa,IMO9785835,158000,Waiting at anchor,2024-12-13 08:00:00,5.0,Sonatrach LNG,35.8885,-0.2399
+DZAZW,Arzew,Algeria,Tankers,Nautilus I,IMO9524451,158000,Waiting at anchor,2026-02-16 08:00:00,1.5,Sonatrach LNG,35.9083,-0.2552
+DZAZW,Arzew,Algeria,Tankers,New Energy,IMO9708526,305000,Waiting at anchor,2025-03-17 08:00:00,3.5,Sonatrach LNG,35.9275,-0.3299
+DZAZW,Arzew,Algeria,Tankers,Nordic Hawk,IMO9131149,158000,Waiting at anchor,2025-02-13 08:00:00,1.0,Sonatrach LNG,35.9116,-0.361
+DZAZW,Arzew,Algeria,Tankers,Olympic Fighter,IMO9745263,158000,Waiting at anchor,2026-04-12 08:00:00,6.5,Sonatrach LNG,35.9147,-0.357
+DZAZW,Arzew,Algeria,Tankers,Otis,IMO9408217,158000,Waiting at anchor,2025-05-16 08:00:00,6.5,Sonatrach LNG,35.9294,-0.3
+DZAZW,Arzew,Algeria,Tankers,Paschalis Dd,IMO9765378,158000,Waiting at anchor,2025-09-08 08:00:00,1.5,Sonatrach LNG,35.93,-0.31
+DZAZW,Arzew,Algeria,Tankers,Pertamina Halmahera,IMO9872688,158000,Waiting at anchor,2024-05-24 08:00:00,6.0,Sonatrach LNG,35.9286,-0.295
+DZAZW,Arzew,Algeria,Tankers,Poliegos,IMO9746621,158000,Waiting at anchor,2025-03-29 08:00:00,2.5,Sonatrach LNG,35.901,-0.3716
+DZAZW,Arzew,Algeria,Tankers,Popi P,IMO9934319,158000,Waiting at anchor,2026-04-04 08:00:00,1.0,Sonatrach LNG,35.9116,-0.361
+DZAZW,Arzew,Algeria,Tankers,Seacross,IMO9297890,158000,Waiting at anchor,2026-01-12 08:00:00,6.0,Sonatrach LNG,35.9286,-0.295
+DZAZW,Arzew,Algeria,Tankers,Seaviolet,IMO9790983,158000,Waiting at anchor,2026-06-05 08:00:00,4.5,Sonatrach LNG,35.8841,-0.2376
+DZAZW,Arzew,Algeria,Tankers,Seaways Hatteras,IMO9730414,158000,Waiting at anchor,2024-05-02 08:00:00,5.5,Sonatrach LNG,35.8929,-0.2425
+DZAZW,Arzew,Algeria,Tankers,Seaways Sabine,IMO9594755,158000,Waiting at anchor,2024-08-16 08:00:00,2.5,Sonatrach LNG,35.9294,-0.32
+DZAZW,Arzew,Algeria,Tankers,Sonangol Kalandula,IMO9575553,158000,Waiting at anchor,2025-08-25 08:00:00,6.5,Sonatrach LNG,35.9147,-0.357
+INSIK,Sikka / Jamnagar,India,Tankers,Almi Sky,IMO9579523,158000,Operating at berth,2025-03-24 08:00:00,1.3,Crude Intake,22.41,69.8387
+INSIK,Sikka / Jamnagar,India,Tankers,Almi Sun,IMO9579535,158000,Operating at berth,2025-12-22 08:00:00,1.3,Crude Intake,22.4396,69.8225
+INSIK,Sikka / Jamnagar,India,Tankers,Antartica,IMO9809336,158000,Operating at berth,2024-11-03 08:00:00,0.5,Crude Intake,22.425,69.8594
+INSIK,Sikka / Jamnagar,India,Tankers,Astra Maris,IMO9330874,158000,Operating at berth,2026-06-01 08:00:00,1.7,Crude Intake,22.4154,69.8263
+INSIK,Sikka / Jamnagar,India,Tankers,Atlantic Pioneer,IMO9397145,305000,Operating at berth,2025-07-10 08:00:00,1.3,Crude Intake,22.4146,69.8527
+INSIK,Sikka / Jamnagar,India,Tankers,Atlantic Princess,IMO9899363,158000,Operating at berth,2026-03-19 08:00:00,1.3,Crude Intake,22.411,69.8338
+INSIK,Sikka / Jamnagar,India,Tankers,Boston,IMO9595216,305000,Operating at berth,2025-03-23 08:00:00,1.7,Crude Intake,22.4238,69.821
+INSIK,Sikka / Jamnagar,India,Tankers,C. Genuine,IMO9929663,305000,Operating at berth,2024-01-03 08:00:00,1.3,Crude Intake,22.4275,69.8598
+INSIK,Sikka / Jamnagar,India,Tankers,Carina I,IMO9410234,305000,Operating at berth,2024-09-26 08:00:00,0.9,Crude Intake,22.4263,69.8204
+INSIK,Sikka / Jamnagar,India,Tankers,Carmen,IMO9290086,305000,Operating at berth,2024-01-22 08:00:00,0.9,Crude Intake,22.4173,69.8246
+INSIK,Sikka / Jamnagar,India,Tankers,Dht Europe (Essar),IMO9315159,305000,Operating at berth,2024-08-03 08:00:00,0.5,Crude Intake,22.4275,69.8202
+INSIK,Sikka / Jamnagar,India,Tankers,Desh Ujaala,IMO9297486,305000,Operating at berth,2026-05-12 08:00:00,0.5,Crude Intake,22.4418,69.8238
+INSIK,Sikka / Jamnagar,India,Tankers,Desh Viraat O/O,IMO9371593,305000,Operating at berth,2024-10-14 08:00:00,0.5,Crude Intake,22.4182,69.8238
+INSIK,Sikka / Jamnagar,India,Tankers,Front Eagle,IMO9855343,305000,Operating at berth,2025-12-05 08:00:00,1.3,Crude Intake,22.411,69.8338
+INSIK,Sikka / Jamnagar,India,Tankers,Gem No. 5,IMO9793741,305000,Operating at berth,2024-09-02 08:00:00,1.3,Crude Intake,22.4226,69.8586
+INSIK,Sikka / Jamnagar,India,Tankers,Gladiator,IMO9378864,158000,Operating at berth,2025-12-11 08:00:00,1.7,Crude Intake,22.4238,69.859
+INSIK,Sikka / Jamnagar,India,Tankers,Great Lady,IMO9286138,305000,Operating at berth,2024-02-15 08:00:00,1.3,Crude Intake,22.425,69.8206
+INSIK,Sikka / Jamnagar,India,Tankers,Humble Warrior,IMO9856361,158000,Operating at berth,2026-03-02 08:00:00,0.9,Crude Intake,22.4114,69.8474
+INSIK,Sikka / Jamnagar,India,Tankers,Ioanna O/O,IMO9387566,305000,Operating at berth,2026-01-16 08:00:00,1.3,Crude Intake,22.425,69.8206
+INSIK,Sikka / Jamnagar,India,Tankers,Jag Lalit,IMO9297905,158000,Operating at berth,2024-10-08 08:00:00,1.7,Crude Intake,22.4125,69.8496
+INSIK,Sikka / Jamnagar,India,Tankers,Kokkari*,IMO9337157,305000,Operating at berth,2025-08-28 08:00:00,0.9,Crude Intake,22.4362,69.821
+INSIK,Sikka / Jamnagar,India,Tankers,Legio X Equestris,IMO9912256,305000,Operating at berth,2026-02-27 08:00:00,0.5,Crude Intake,22.4204,69.8575
+INSIK,Sikka / Jamnagar,India,Tankers,Libra Trader,IMO9562673,305000,Operating at berth,2026-01-27 08:00:00,0.5,Crude Intake,22.4275,69.8202
+INSIK,Sikka / Jamnagar,India,Tankers,Madesta,IMO9289726,305000,Operating at berth,2024-07-15 08:00:00,1.3,Crude Intake,22.4119,69.8485
+INSIK,Sikka / Jamnagar,India,Tankers,Marlin Sardinia,IMO9835862,158000,Operating at berth,2024-06-17 08:00:00,0.9,Crude Intake,22.4407,69.8231
+INSIK,Sikka / Jamnagar,India,Tankers,Mur,IMO9288875,305000,Operating at berth,2024-06-09 08:00:00,0.5,Crude Intake,22.4146,69.8273
+INSIK,Sikka / Jamnagar,India,Tankers,Plata Carrier o/o,IMO9358280,305000,Operating at berth,2024-10-14 08:00:00,0.9,Crude Intake,22.4102,69.8425
+INSIK,Sikka / Jamnagar,India,Tankers,Patmos i,IMO9800245,158000,Operating at berth,2024-02-01 08:00:00,0.9,Crude Intake,22.4263,69.8204
+INSIK,Sikka / Jamnagar,India,Tankers,Princess Alexia,IMO9294305,305000,Operating at berth,2024-04-28 08:00:00,1.3,Crude Intake,22.4182,69.8562
+INSIK,Sikka / Jamnagar,India,Tankers,Reliable Warrior,IMO9753557,158000,Operating at berth,2025-07-31 08:00:00,1.7,Crude Intake,22.4154,69.8537
+INSIK,Sikka / Jamnagar,India,Tankers,Sanmar Herald,IMO9330563,305000,Operating at berth,2025-10-09 08:00:00,0.5,Crude Intake,22.4182,69.8238
+INSIK,Sikka / Jamnagar,India,Tankers,Sea Carron,IMO9190608,158000,Operating at berth,2026-08-23 08:00:00,1.7,Crude Intake,22.4106,69.835
+INSIK,Sikka / Jamnagar,India,Tankers,Seaways Raffles,IMO9411032,305000,Operating at berth,2025-07-30 08:00:00,1.7,Crude Intake,22.4385,69.8219
+INSIK,Sikka / Jamnagar,India,Tankers,Shirayuki,IMO9398084,305000,Operating at berth,2025-10-31 08:00:00,1.7,Crude Intake,22.4125,69.8304
+INSIK,Sikka / Jamnagar,India,Tankers,Sinokor tbn,IMO9900678,305000,Operating at berth,2024-09-29 08:00:00,0.9,Crude Intake,22.4138,69.8282
+INSIK,Sikka / Jamnagar,India,Tankers,Suez Protopia,IMO9380893,158000,Operating at berth,2025-08-04 08:00:00,1.7,Crude Intake,22.41,69.84
+INSIK,Sikka / Jamnagar,India,Tankers,Taqah,IMO9501174,305000,Operating at berth,2024-08-08 08:00:00,1.7,Crude Intake,22.4238,69.821
+INSIK,Sikka / Jamnagar,India,Tankers,Xin Wei Yang*,IMO9761475,305000,Operating at berth,2025-11-14 08:00:00,0.5,Crude Intake,22.4418,69.8238
+INSIK,Sikka / Jamnagar,India,Tankers,Adamantios,IMO9905447,305000,Waiting at anchor,2026-03-23 08:00:00,1.5,Crude Intake,22.4883,69.8948
+INSIK,Sikka / Jamnagar,India,Tankers,Alexandros,IMO9905459,305000,Waiting at anchor,2026-08-06 08:00:00,2.0,Crude Intake,22.4916,69.891
+INSIK,Sikka / Jamnagar,India,Tankers,Ashoka*,IMO9346952,305000,Waiting at anchor,2025-10-02 08:00:00,4.5,Crude Intake,22.4641,69.9124
+INSIK,Sikka / Jamnagar,India,Tankers,Copper Spirit,IMO9427639,158000,Waiting at anchor,2025-05-15 08:00:00,3.5,Crude Intake,22.5075,69.8201
+INSIK,Sikka / Jamnagar,India,Tankers,Costas P,IMO9934321,158000,Waiting at anchor,2024-11-28 08:00:00,2.0,Crude Intake,22.4848,69.7817
+INSIK,Sikka / Jamnagar,India,Tankers,Desh Vaibhav O/o,IMO9297498,305000,Waiting at anchor,2024-05-13 08:00:00,4.5,Crude Intake,22.5044,69.8106
+INSIK,Sikka / Jamnagar,India,Tankers,Dht Leopard,IMO9733961,305000,Waiting at anchor,2026-09-09 08:00:00,3.5,Crude Intake,22.4547,69.9161
+INSIK,Sikka / Jamnagar,India,Tankers,Dimitri,IMO9924015,158000,Waiting at anchor,2025-12-18 08:00:00,2.5,Crude Intake,22.5094,69.83
+INSIK,Sikka / Jamnagar,India,Tankers,Hansika,IMO9326067,305000,Waiting at anchor,2024-03-12 08:00:00,2.5,Crude Intake,22.481,69.7784
+INSIK,Sikka / Jamnagar,India,Tankers,Hakkaisan,IMO9376878,305000,Waiting at anchor,2026-06-26 08:00:00,4.0,Crude Intake,22.4594,69.9144
+INSIK,Sikka / Jamnagar,India,Tankers,Kalamos,IMO9560766,305000,Waiting at anchor,2026-05-04 08:00:00,6.5,Crude Intake,22.5094,69.85
+INSIK,Sikka / Jamnagar,India,Tankers,Kitsos,IMO9568809,305000,Waiting at anchor,2024-01-28 08:00:00,3.0,Crude Intake,22.4975,69.8829
+INSIK,Sikka / Jamnagar,India,Tankers,Lucky tbn ,IMO9139898,305000,Waiting at anchor,2025-09-06 08:00:00,3.0,Crude Intake,22.5086,69.825
+INSIK,Sikka / Jamnagar,India,Tankers,Marina,IMO9389021,305000,Waiting at anchor,2026-01-07 08:00:00,4.0,Crude Intake,22.4594,69.9144
+INSIK,Sikka / Jamnagar,India,Tankers,Olympic Future,IMO9271353,158000,Waiting at anchor,2025-01-13 08:00:00,2.0,Crude Intake,22.4848,69.7817
+INSIK,Sikka / Jamnagar,India,Tankers,Ottoman Equity,IMO9404950,158000,Waiting at anchor,2024-05-23 08:00:00,2.0,Crude Intake,22.5098,69.835
+INSIK,Sikka / Jamnagar,India,Tankers,Resilient Warrior,IMO9856359,158000,Waiting at anchor,2026-03-15 08:00:00,1.5,Crude Intake,22.51,69.84
+INSIK,Sikka / Jamnagar,India,Tankers,Seaways Enterprise,IMO9933585,305000,Waiting at anchor,2026-02-19 08:00:00,4.0,Crude Intake,22.5061,69.8153
+INSIK,Sikka / Jamnagar,India,Tankers,Shirayuki*,IMO9060196,305000,Waiting at anchor,2025-09-07 08:00:00,3.5,Crude Intake,22.5075,69.8201
+INSIK,Sikka / Jamnagar,India,Tankers,Suez Enchanted,IMO9318084,158000,Waiting at anchor,2024-09-09 08:00:00,2.0,Crude Intake,22.5098,69.835
+INSIK,Sikka / Jamnagar,India,Tankers,Tara,IMO9511514,305000,Waiting at anchor,2026-04-16 08:00:00,5.0,Crude Intake,22.5061,69.8647
+INSIK,Sikka / Jamnagar,India,Tankers,Tilos I,IMO9800271,158000,Waiting at anchor,2026-07-05 08:00:00,1.5,Crude Intake,22.435,69.9198
+JPCHB,Chiba,Japan,Tankers,Eagle Varna,IMO9597252,305000,Waiting at anchor,2025-03-13 08:00:00,6.0,Petrochemical Feed,35.6675,140.0571
+KRUSN,Ulsan,Korea,Tankers,Landbridge Wisdom,IMO9828780,305000,Operating at berth,2024-11-03 08:00:00,1.3,SK / E1 LPG,35.481,129.3738
+KRUSN,Ulsan,Korea,Tankers,C. Freedom,IMO9643283,305000,Operating at berth,2026-09-01 08:00:00,1.3,SK / E1 LPG,35.4831,129.3693
+KRUSN,Ulsan,Korea,Tankers,C. Glory,IMO9419620,305000,Operating at berth,2024-04-26 08:00:00,1.7,SK / E1 LPG,35.4806,129.375
+KRUSN,Ulsan,Korea,Tankers,C. Innovator,IMO9595618,305000,Operating at berth,2025-04-05 08:00:00,1.7,SK / E1 LPG,35.4854,129.3937
+KRUSN,Ulsan,Korea,Tankers,C. Majesty,IMO9402990,305000,Operating at berth,2026-08-10 08:00:00,1.7,SK / E1 LPG,35.4806,129.385
+KRUSN,Ulsan,Korea,Tankers,Dht Antelope,IMO1055179,305000,Operating at berth,2026-04-01 08:00:00,1.7,SK / E1 LPG,35.4854,129.3937
+KRUSN,Ulsan,Korea,Tankers,Dht Osprey,IMO9734111,305000,Operating at berth,2025-11-30 08:00:00,0.5,SK / E1 LPG,35.4904,129.3975
+KRUSN,Ulsan,Korea,Tankers,Front Alta o/o,IMO9920772,305000,Operating at berth,2024-05-17 08:00:00,0.5,SK / E1 LPG,35.5118,129.3638
+KRUSN,Ulsan,Korea,Tankers,Front Beauly,IMO9937103,305000,Operating at berth,2024-08-02 08:00:00,1.3,SK / E1 LPG,35.4819,129.3885
+KRUSN,Ulsan,Korea,Tankers,Front Duke o/o,IMO9771339,305000,Operating at berth,2024-01-07 08:00:00,1.3,SK / E1 LPG,35.5,129.36
+KRUSN,Ulsan,Korea,Tankers,Hercules I O/O C.Spirit,IMO9723124,305000,Operating at berth,2025-06-05 08:00:00,0.9,SK / E1 LPG,35.4814,129.3874
+KRUSN,Ulsan,Korea,Tankers,Julius Caesar,IMO9912244,305000,Operating at berth,2025-04-07 08:00:00,1.3,SK / E1 LPG,35.4863,129.3654
+KRUSN,Ulsan,Korea,Tankers,Maran Mars,IMO9858046,305000,Operating at berth,2026-08-19 08:00:00,0.9,SK / E1 LPG,35.4802,129.3775
+KRUSN,Ulsan,Korea,Tankers,Advantage Vital,IMO9933561,305000,Waiting at anchor,2025-11-10 08:00:00,2.0,SK / E1 LPG,35.5798,129.375
+KRUSN,Ulsan,Korea,Tankers,Azumasan,IMO9397157,305000,Waiting at anchor,2026-01-19 08:00:00,5.0,SK / E1 LPG,35.5385,129.4501
+KRUSN,Ulsan,Korea,Tankers,C. Challenger,IMO9595620,305000,Waiting at anchor,2026-08-03 08:00:00,4.5,SK / E1 LPG,35.5744,129.3506
+KRUSN,Ulsan,Korea,Tankers,C. Dignity,IMO9421984,305000,Waiting at anchor,2026-07-13 08:00:00,1.0,SK / E1 LPG,35.5,129.46
+KRUSN,Ulsan,Korea,Tankers,C. Mighty,IMO9422158,305000,Waiting at anchor,2026-08-03 08:00:00,6.0,SK / E1 LPG,35.5675,129.3371
+KRUSN,Ulsan,Korea,Tankers,Cosdignity Lake,IMO9727209,305000,Waiting at anchor,2024-01-21 08:00:00,6.5,SK / E1 LPG,35.5794,129.39
+KRUSN,Ulsan,Korea,Tankers,Delta Aigaion,IMO9516923,305000,Waiting at anchor,2025-01-23 08:00:00,1.5,SK / E1 LPG,35.505,129.4598
+KRUSN,Ulsan,Korea,Tankers,Front Duchess O/O,IMO9771341,305000,Waiting at anchor,2025-12-22 08:00:00,1.0,SK / E1 LPG,35.5616,129.329
+KRUSN,Ulsan,Korea,Tankers,Front Humber,IMO9732577,305000,Waiting at anchor,2024-02-18 08:00:00,2.0,SK / E1 LPG,35.5616,129.431
+KRUSN,Ulsan,Korea,Tankers,Front Maine O/O,IMO9898553,305000,Waiting at anchor,2025-12-08 08:00:00,1.0,SK / E1 LPG,35.5548,129.4383
+KRUSN,Ulsan,Korea,Tankers,Front Seoul,IMO9831854,158000,Waiting at anchor,2026-03-19 08:00:00,2.5,SK / E1 LPG,35.5647,129.427
+KRUSN,Ulsan,Korea,Tankers,Front Tweed,IMO9920784,305000,Waiting at anchor,2025-03-09 08:00:00,2.0,SK / E1 LPG,35.5616,129.431
+KRUSN,Ulsan,Korea,Tankers,Front Vefsna O/o,IMO9730098,305000,Waiting at anchor,2025-06-22 08:00:00,4.5,SK / E1 LPG,35.5341,129.4524
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Al Jabriyah Ii,IMO9329708,305000,Operating at berth,2024-09-22 08:00:00,1.7,KPC LPG,29.0687,48.17
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Al Salmi,IMO9534793,305000,Operating at berth,2025-11-21 08:00:00,1.3,KPC LPG,29.0675,48.1698
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Almi Hercules (C'lake),IMO9583732,305000,Operating at berth,2025-08-24 08:00:00,1.7,KPC LPG,29.0506,48.155
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Arzanah,IMO9928023,305000,Operating at berth,2025-09-20 08:00:00,1.3,KPC LPG,29.07,48.13
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Ascona,IMO9828338,305000,Operating at berth,2025-10-04 08:00:00,0.5,KPC LPG,29.0582,48.1338
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Cape Aspro,IMO9391775,305000,Operating at berth,2025-08-09 08:00:00,1.3,KPC LPG,29.0626,48.1686
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Caspar,IMO9926661,305000,Operating at berth,2024-05-02 08:00:00,0.5,KPC LPG,29.0675,48.1302
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Das,IMO9854507,305000,Operating at berth,2025-11-01 08:00:00,0.9,KPC LPG,29.0615,48.1319
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Dht Jaguar*,IMO9733947,305000,Operating at berth,2025-07-03 08:00:00,0.5,KPC LPG,29.0626,48.1314
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Dht Scandinavia,IMO9315147,305000,Operating at berth,2024-12-05 08:00:00,0.9,KPC LPG,29.0615,48.1319
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Eagle Venice,IMO9728710,305000,Operating at berth,2025-03-20 08:00:00,1.7,KPC LPG,29.0554,48.1637
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Eagle Victoria*,IMO9739513,305000,Operating at berth,2024-12-20 08:00:00,1.3,KPC LPG,29.0626,48.1686
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,East Loyalty,IMO9537745,305000,Operating at berth,2024-01-29 08:00:00,1.3,KPC LPG,29.051,48.1438
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Eliza,IMO9387578,305000,Operating at berth,2025-09-14 08:00:00,1.7,KPC LPG,29.0506,48.155
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Front Cloud,IMO9722924,305000,Operating at berth,2024-04-11 08:00:00,0.5,KPC LPG,29.0546,48.1373
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Front Flores,IMO9732565,305000,Operating at berth,2025-08-10 08:00:00,1.3,KPC LPG,29.0626,48.1686
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Front Surna,IMO9728693,305000,Operating at berth,2026-01-03 08:00:00,0.5,KPC LPG,29.0774,48.1314
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Georgios,IMO9389033,305000,Operating at berth,2025-12-13 08:00:00,1.7,KPC LPG,29.0593,48.1669
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Maran Arcturus*,IMO9588299,305000,Operating at berth,2025-08-03 08:00:00,0.9,KPC LPG,29.0502,48.1475
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Maran Aspasia,IMO9879997,158000,Operating at berth,2025-05-30 08:00:00,1.7,KPC LPG,29.0687,48.13
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Maran Libra,IMO9593206,305000,Operating at berth,2024-08-31 08:00:00,0.5,KPC LPG,29.0582,48.1338
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Nave Galactic*,IMO9384617,305000,Operating at berth,2024-10-31 08:00:00,1.7,KPC LPG,29.0638,48.131
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,New Dream,IMO9689976,305000,Operating at berth,2025-06-26 08:00:00,0.9,KPC LPG,29.0502,48.1525
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Nissos Nikouria (Koch),IMO9920760,305000,Operating at berth,2026-02-13 08:00:00,0.5,KPC LPG,29.0604,48.1675
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Plata West*,IMO9053173,305000,Operating at berth,2024-03-28 08:00:00,0.5,KPC LPG,29.0504,48.1463
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Silverstone*,IMO1034187,305000,Operating at berth,2025-09-05 08:00:00,0.5,KPC LPG,29.0504,48.1463
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Texas,IMO9623685,305000,Operating at berth,2025-12-06 08:00:00,0.5,KPC LPG,29.0774,48.1314
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Yiangos,IMO9414931,305000,Operating at berth,2025-06-22 08:00:00,1.7,KPC LPG,29.0506,48.145
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Yiannis Latsis,IMO9923487,305000,Operating at berth,2025-02-14 08:00:00,1.3,KPC LPG,29.051,48.1438
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Al Siddeeq,IMO9853486,305000,Waiting at anchor,2025-12-15 08:00:00,4.0,KPC LPG,29.1461,48.1253
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Atlantic Loyalty,IMO9312509,305000,Waiting at anchor,2025-03-01 08:00:00,4.5,KPC LPG,29.1444,48.1206
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Bukha,IMO9500936,305000,Waiting at anchor,2026-02-28 08:00:00,3.0,KPC LPG,29.1486,48.135
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,C. Progress O/O,IMO9605205,305000,Waiting at anchor,2024-10-11 08:00:00,4.5,KPC LPG,29.1041,48.2224
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Coslucky Lake,IMO9791236,305000,Waiting at anchor,2025-11-17 08:00:00,1.5,KPC LPG,29.1283,48.0952
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Cssc Liao Ning o/o,IMO9875783,305000,Waiting at anchor,2024-10-18 08:00:00,6.0,KPC LPG,29.1375,48.1071
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Felix,IMO9377418,305000,Waiting at anchor,2024-01-27 08:00:00,5.5,KPC LPG,29.1401,48.1115
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Front Forth,IMO9739501,305000,Waiting at anchor,2025-11-23 08:00:00,1.5,KPC LPG,29.1283,48.2048
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Jag Leena,IMO9516105,158000,Waiting at anchor,2025-12-06 08:00:00,1.5,KPC LPG,29.1283,48.2048
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Navigare Terra MAter,IMO9740330,305000,Waiting at anchor,2024-11-21 08:00:00,3.5,KPC LPG,29.1475,48.1301
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Nissos Kea,IMO9920758,305000,Waiting at anchor,2025-10-25 08:00:00,1.0,KPC LPG,29.1498,48.155
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Novo,IMO9633446,158000,Waiting at anchor,2024-10-07 08:00:00,5.0,KPC LPG,29.1085,48.2201
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Olympic Life,IMO9844277,305000,Waiting at anchor,2025-10-25 08:00:00,1.5,KPC LPG,29.1283,48.2048
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Olympic Lyra,IMO9831816,305000,Waiting at anchor,2024-03-08 08:00:00,6.5,KPC LPG,29.121,48.2116
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Padific Loyalty o/o,IMO9573019,305000,Waiting at anchor,2024-11-18 08:00:00,6.5,KPC LPG,29.1494,48.16
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Texas O/O,IMO9704788,305000,Waiting at anchor,2025-10-05 08:00:00,5.0,KPC LPG,29.1424,48.1159
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Vl Prosperity,IMO9683697,305000,Waiting at anchor,2025-06-27 08:00:00,6.5,KPC LPG,29.1347,48.103
+KWMFA,Mina Al Ahmadi,Kuwait,Tankers,Xin Lian Yang,IMO9614050,305000,Waiting at anchor,2024-05-02 08:00:00,5.0,KPC LPG,29.1461,48.1747
+NGBON,Bonny,Nigeria,Tankers,Baker Spirit,IMO9408073,158000,Operating at berth,2024-10-17 08:00:00,1.7,Bonny Light Crude / LNG,4.4306,7.155
+NGBON,Bonny,Nigeria,Tankers,Petalidi,IMO9529475,158000,Operating at berth,2026-07-20 08:00:00,0.9,Bonny Light Crude / LNG,4.4314,7.1674
+NGBON,Bonny,Nigeria,Tankers,Gem,IMO9406001,158000,Operating at berth,2026-05-04 08:00:00,0.5,Bonny Light Crude / LNG,4.4525,7.1402
+NGBON,Bonny,Nigeria,Tankers,Mare Picenum,IMO9449405,158000,Operating at berth,2024-07-27 08:00:00,0.5,Bonny Light Crude / LNG,4.4426,7.1414
+NGBON,Bonny,Nigeria,Tankers,Montreal Spirit,IMO9296389,158000,Operating at berth,2025-06-27 08:00:00,1.3,Bonny Light Crude / LNG,4.45,7.14
+NGBON,Bonny,Nigeria,Tankers,Morning Star,IMO1081116,158000,Operating at berth,2026-07-09 08:00:00,0.9,Bonny Light Crude / LNG,4.4513,7.14
+NGBON,Bonny,Nigeria,Tankers,Ottoman Sincerity,IMO9788710,158000,Operating at berth,2026-02-02 08:00:00,0.9,Bonny Light Crude / LNG,4.4513,7.14
+NGBON,Bonny,Nigeria,Tankers,Front Classic,IMO9759769,158000,Waiting at anchor,2025-05-16 08:00:00,4.0,Bonny Light Crude / LNG,4.5224,7.1941
+NGBON,Bonny,Nigeria,Tankers,Maran Orpheus,IMO9868168,158000,Waiting at anchor,2026-08-24 08:00:00,2.0,Bonny Light Crude / LNG,4.5116,7.211
+NGBON,Bonny,Nigeria,Tankers,Mare Siculum,IMO9457892,158000,Waiting at anchor,2026-06-19 08:00:00,6.0,Bonny Light Crude / LNG,4.497,7.2247
+NGBON,Bonny,Nigeria,Tankers,Oba,IMO9239848,158000,Waiting at anchor,2026-08-20 08:00:00,1.5,Bonny Light Crude / LNG,4.455,7.2398
+NLRTM,Rotterdam,The Netherlands,Tankers,Achilleas,IMO9458494,158000,Operating at berth,2024-03-06 08:00:00,0.5,Crude / Dry Bulk,51.9,4.4713
+NLRTM,Rotterdam,The Netherlands,Tankers,Advantage Sweet,IMO9587192,158000,Operating at berth,2025-06-10 08:00:00,0.5,Crude / Dry Bulk,51.9,4.4713
+NLRTM,Rotterdam,The Netherlands,Tankers,Almi Explorer,IMO9579547,158000,Operating at berth,2025-07-14 08:00:00,1.7,Crude / Dry Bulk,51.9025,4.4796
+NLRTM,Rotterdam,The Netherlands,Tankers,Almi Voyager,IMO9579585,158000,Operating at berth,2025-09-14 08:00:00,0.9,Crude / Dry Bulk,51.9038,4.4818
+NLRTM,Rotterdam,The Netherlands,Tankers,Eagle San Francisco,IMO9795127,158000,Operating at berth,2026-03-14 08:00:00,1.7,Crude / Dry Bulk,51.9006,4.465
+NLRTM,Rotterdam,The Netherlands,Tankers,Effie Maersk,IMO9682978,158000,Operating at berth,2025-07-03 08:00:00,0.5,Crude / Dry Bulk,51.9318,4.4538
+NLRTM,Rotterdam,The Netherlands,Tankers,Kapodistrias 21,IMO9886639,158000,Operating at berth,2024-12-06 08:00:00,1.7,Crude / Dry Bulk,51.9025,4.4796
+NLRTM,Rotterdam,The Netherlands,Tankers,Monte Serantes,IMO9841615,158000,Operating at berth,2026-05-21 08:00:00,0.5,Crude / Dry Bulk,51.9175,4.4502
+NLRTM,Rotterdam,The Netherlands,Tankers,Nordic Moon,IMO9224283,158000,Operating at berth,2026-02-01 08:00:00,1.7,Crude / Dry Bulk,51.9025,4.4796
+NLRTM,Rotterdam,The Netherlands,Tankers,Olympic Luck (Mercuria),IMO9424211,305000,Operating at berth,2026-07-30 08:00:00,0.9,Crude / Dry Bulk,51.9014,4.4626
+NLRTM,Rotterdam,The Netherlands,Tankers,Orpheas,IMO9318149,158000,Operating at berth,2025-09-22 08:00:00,1.7,Crude / Dry Bulk,51.9054,4.4837
+NLRTM,Rotterdam,The Netherlands,Tankers,Sea Sapphire,IMO9935600,158000,Operating at berth,2025-08-09 08:00:00,1.7,Crude / Dry Bulk,51.9006,4.465
+NLRTM,Rotterdam,The Netherlands,Tankers,Sonangol Cabinda,IMO9575589,158000,Operating at berth,2025-10-02 08:00:00,1.7,Crude / Dry Bulk,51.9285,4.4519
+NLRTM,Rotterdam,The Netherlands,Tankers,Stena Surprise,IMO9533995,158000,Operating at berth,2026-01-22 08:00:00,0.5,Crude / Dry Bulk,51.9004,4.4663
+NLRTM,Rotterdam,The Netherlands,Tankers,Vail Spirit,IMO9399478,158000,Operating at berth,2024-12-16 08:00:00,0.5,Crude / Dry Bulk,51.9104,4.4875
+NLRTM,Rotterdam,The Netherlands,Tankers,Alaska,IMO9302607,158000,Waiting at anchor,2025-05-14 08:00:00,1.0,Crude / Dry Bulk,51.92,4.55
+NLRTM,Rotterdam,The Netherlands,Tankers,Front Suez,IMO9831830,158000,Waiting at anchor,2026-05-30 08:00:00,6.5,Crude / Dry Bulk,51.9994,4.48
+NLRTM,Rotterdam,The Netherlands,Tankers,Maran Hermes,IMO9761346,158000,Waiting at anchor,2026-02-27 08:00:00,6.0,Crude / Dry Bulk,51.9986,4.485
+NLRTM,Rotterdam,The Netherlands,Tankers,Marathi,IMO9772357,158000,Waiting at anchor,2024-03-17 08:00:00,2.5,Crude / Dry Bulk,51.9994,4.46
+NLRTM,Rotterdam,The Netherlands,Tankers,Nordic Cross,IMO9438418,158000,Waiting at anchor,2024-12-01 08:00:00,2.0,Crude / Dry Bulk,51.9748,4.4117
+NLRTM,Rotterdam,The Netherlands,Tankers,Pacific,IMO9912141,158000,Waiting at anchor,2025-08-05 08:00:00,5.0,Crude / Dry Bulk,51.9961,4.4947
+NLRTM,Rotterdam,The Netherlands,Tankers,Seaways Kilimanjaro,IMO9563237,305000,Waiting at anchor,2026-01-22 08:00:00,4.0,Crude / Dry Bulk,51.9494,4.5444
+NLRTM,Rotterdam,The Netherlands,Tankers,Sea Pollux,IMO1028384,158000,Waiting at anchor,2026-04-10 08:00:00,2.0,Crude / Dry Bulk,51.9998,4.465
+NLRTM,Rotterdam,The Netherlands,Tankers,Trinity,IMO9730361,158000,Waiting at anchor,2025-06-27 08:00:00,3.5,Crude / Dry Bulk,51.9901,4.5085
+QARLF,Ras Laffan,Qatar,Tankers,Kapsali,IMO9587312,158000,Operating at berth,2026-02-02 08:00:00,0.5,LNG / Field LPG,25.9126,51.5114
+QARLF,Ras Laffan,Qatar,Tankers,Singapore Loyalty,IMO9322293,305000,Operating at berth,2025-07-13 08:00:00,1.3,LNG / Field LPG,25.925,51.5106
+QARLF,Ras Laffan,Qatar,Tankers,South loyalty,IMO9537769,305000,Operating at berth,2025-03-31 08:00:00,1.7,LNG / Field LPG,25.9285,51.5119
+QARLF,Ras Laffan,Qatar,Tankers,Skopelos*,IMO9381720,305000,Waiting at anchor,2025-03-30 08:00:00,1.5,LNG / Field LPG,25.925,51.6098
+RUPRI,Primorsk,Russian Federation,Tankers,Afroditi,IMO9452880,158000,Operating at berth,2025-05-01 08:00:00,1.7,Urals Crude,60.3425,28.6196
+RUPRI,Primorsk,Russian Federation,Tankers,Sikinos I,IMO9800269,158000,Operating at berth,2024-11-14 08:00:00,1.3,Urals Crude,60.355,28.5906
+RUPRI,Primorsk,Russian Federation,Tankers,Evridiki,IMO9318137,158000,Waiting at anchor,2026-01-01 08:00:00,1.0,Urals Crude,60.4148,28.6683
+RUPRI,Primorsk,Russian Federation,Tankers,Prudent Warrior,IMO9753545,158000,Waiting at anchor,2025-12-29 08:00:00,2.0,Urals Crude,60.4216,28.661
+SARRT,Ras Tanura,Saudi Arabia,Tankers,AMPHION,IMO9830795,305000,Operating at berth,2025-01-23 08:00:00,1.7,Arab Light Crude,26.6487,50.14
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Advantage Spice,IMO9419888,158000,Operating at berth,2024-01-05 08:00:00,1.3,Arab Light Crude,26.655,50.1406
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Agios Fanourios I,IMO9759824,305000,Operating at berth,2025-09-13 08:00:00,0.5,Arab Light Crude,26.6574,50.1414
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Agios Nikolas,IMO9845506,305000,Operating at berth,2026-02-27 08:00:00,0.5,Arab Light Crude,26.6475,50.1402
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Almi Galaxy,IMO9579509,158000,Operating at berth,2025-03-22 08:00:00,0.5,Arab Light Crude,26.6574,50.1414
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Almi Horizon,IMO9579494,158000,Operating at berth,2025-05-02 08:00:00,0.5,Arab Light Crude,26.6331,50.1707
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Sake,IMO9320831,305000,Operating at berth,2024-08-18 08:00:00,1.7,Arab Light Crude,26.6487,50.18
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Amalia M,IMO9924003,158000,Operating at berth,2024-04-27 08:00:00,1.3,Arab Light Crude,26.63,50.1587
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Aquila,IMO9521473,305000,Operating at berth,2025-08-30 08:00:00,1.3,Arab Light Crude,26.6596,50.1425
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Atherina,IMO9445473,305000,Operating at berth,2026-02-21 08:00:00,0.5,Arab Light Crude,26.6475,50.1402
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Bahri TBN,IMO9226774,305000,Operating at berth,2024-08-15 08:00:00,1.7,Arab Light Crude,26.6438,50.179
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Cape Benat,IMO9406013,158000,Operating at berth,2025-08-29 08:00:00,1.3,Arab Light Crude,26.6404,50.1425
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Cedar,IMO9907433,158000,Operating at berth,2026-01-17 08:00:00,1.7,Arab Light Crude,26.6354,50.1463
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Chafa,IMO9215036,158000,Operating at berth,2025-10-31 08:00:00,1.7,Arab Light Crude,26.6354,50.1737
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Charvi,IMO9308065,158000,Operating at berth,2024-04-29 08:00:00,0.9,Arab Light Crude,26.6314,50.1674
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Concord,IMO9293129,158000,Operating at berth,2025-04-10 08:00:00,0.9,Arab Light Crude,26.6415,50.1781
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Daba,IMO9501162,305000,Operating at berth,2026-07-04 08:00:00,1.3,Arab Light Crude,26.6319,50.1685
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Delos,IMO7373183,305000,Operating at berth,2026-07-05 08:00:00,1.3,Arab Light Crude,26.6346,50.1727
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Delta Glory,IMO9602617,305000,Operating at berth,2025-02-24 08:00:00,1.3,Arab Light Crude,26.6596,50.1425
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Houston,IMO9596947,305000,Operating at berth,2026-01-26 08:00:00,0.5,Arab Light Crude,26.6304,50.1563
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Eagle Ventura O/O,IMO9933614,305000,Operating at berth,2025-06-09 08:00:00,0.9,Arab Light Crude,26.6338,50.1718
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Eco Beverly Hills,IMO9794068,158000,Operating at berth,2024-11-07 08:00:00,0.9,Arab Light Crude,26.6373,50.1754
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Eco Oceano Ca,IMO9794020,158000,Operating at berth,2025-12-26 08:00:00,0.5,Arab Light Crude,26.6319,50.1515
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Fleves,IMO9597006,158000,Operating at berth,2025-09-04 08:00:00,1.7,Arab Light Crude,26.6325,50.1696
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Front Gander,IMO9937098,305000,Operating at berth,2024-11-24 08:00:00,0.5,Arab Light Crude,26.631,50.1662
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Front Osen o/o,IMO9728708,305000,Operating at berth,2025-10-24 08:00:00,0.9,Arab Light Crude,26.6373,50.1754
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Front Silkeborg,IMO9832274,158000,Operating at berth,2026-01-16 08:00:00,1.7,Arab Light Crude,26.6325,50.1696
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Front Spay,IMO9505131,158000,Operating at berth,2024-06-02 08:00:00,0.9,Arab Light Crude,26.6314,50.1674
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Front Spey,IMO9722936,305000,Operating at berth,2025-03-28 08:00:00,0.5,Arab Light Crude,26.6363,50.1746
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Idemitsu TBN,IMO9562697,305000,Operating at berth,2025-09-01 08:00:00,0.5,Arab Light Crude,26.6426,50.1414
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Grand Bonanza,IMO9915569,305000,Operating at berth,2026-01-02 08:00:00,1.7,Arab Light Crude,26.6325,50.1696
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Hafeet,IMO9928009,305000,Operating at berth,2025-08-02 08:00:00,1.3,Arab Light Crude,26.65,50.14
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Phoenix Jamnagar,IMO9828962,305000,Operating at berth,2024-04-28 08:00:00,1.7,Arab Light Crude,26.6306,50.155
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Jag Lok,IMO9293507,158000,Operating at berth,2025-11-21 08:00:00,0.9,Arab Light Crude,26.6302,50.1625
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Jaya,IMO9410387,305000,Operating at berth,2024-01-22 08:00:00,0.5,Arab Light Crude,26.6475,50.1402
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Kalliopi,IMO9508859,305000,Operating at berth,2024-12-30 08:00:00,1.3,Arab Light Crude,26.6363,50.1454
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Landbridge Fortune,IMO9727211,305000,Operating at berth,2025-06-15 08:00:00,1.3,Arab Light Crude,26.6363,50.1454
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Very Lucky O/O,IMO9826847,305000,Operating at berth,2026-02-02 08:00:00,0.9,Arab Light Crude,26.6513,50.14
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Lesvos,IMO9772321,158000,Operating at berth,2024-03-02 08:00:00,0.5,Arab Light Crude,26.6363,50.1746
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Lita,IMO9819870,305000,Operating at berth,2024-06-23 08:00:00,0.5,Arab Light Crude,26.6574,50.1414
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Long Wind*,IMO9385037,305000,Operating at berth,2026-02-14 08:00:00,0.9,Arab Light Crude,26.6463,50.1404
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Maran Antiope,IMO9901348,305000,Operating at berth,2026-07-05 08:00:00,1.3,Arab Light Crude,26.6596,50.1425
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Marlin Santorini,IMO9835836,158000,Operating at berth,2026-06-28 08:00:00,1.7,Arab Light Crude,26.6306,50.165
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Minerva Tbn,IMO9652031,158000,Operating at berth,2025-11-07 08:00:00,0.9,Arab Light Crude,26.6338,50.1718
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Minerva Vera,IMO9411941,158000,Operating at berth,2025-08-23 08:00:00,0.9,Arab Light Crude,26.6314,50.1526
+SARRT,Ras Tanura,Saudi Arabia,Tankers,New Renown,IMO9759604,305000,Operating at berth,2024-07-25 08:00:00,1.7,Arab Light Crude,26.6354,50.1463
+SARRT,Ras Tanura,Saudi Arabia,Tankers,New Victory,IMO9014418,305000,Operating at berth,2024-07-11 08:00:00,1.3,Arab Light Crude,26.6404,50.1425
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Ocean Loyalty,IMO9375238,305000,Operating at berth,2024-05-25 08:00:00,0.5,Arab Light Crude,26.6574,50.1414
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Olympic Friendship,IMO9745251,158000,Operating at berth,2024-06-20 08:00:00,1.3,Arab Light Crude,26.65,50.14
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Olympus (Exxon),IMO9941661,305000,Operating at berth,2025-04-11 08:00:00,0.9,Arab Light Crude,26.6338,50.1482
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Pertamina Prime,IMO9888508,305000,Operating at berth,2024-08-18 08:00:00,1.3,Arab Light Crude,26.6475,50.1798
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Phoebe,IMO9294331,305000,Operating at berth,2024-01-05 08:00:00,1.7,Arab Light Crude,26.6306,50.165
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Phoenix Vantage,IMO9734109,305000,Operating at berth,2025-12-26 08:00:00,0.9,Arab Light Crude,26.6373,50.1446
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Plata Singapore,IMO9323936,305000,Operating at berth,2025-04-28 08:00:00,0.9,Arab Light Crude,26.6314,50.1526
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Princess Vanya,IMO9629366,305000,Operating at berth,2025-08-30 08:00:00,1.3,Arab Light Crude,26.6331,50.1493
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Psara I,IMO9772333,158000,Operating at berth,2025-03-27 08:00:00,1.7,Arab Light Crude,26.6354,50.1463
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Pserimos,IMO9578658,158000,Operating at berth,2024-09-12 08:00:00,1.7,Arab Light Crude,26.6306,50.165
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Samos,IMO9772345,158000,Operating at berth,2025-01-23 08:00:00,0.5,Arab Light Crude,26.6363,50.1746
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Samurai,IMO9378876,158000,Operating at berth,2024-01-26 08:00:00,0.9,Arab Light Crude,26.6314,50.1526
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Sea Calm,IMO9629378,305000,Operating at berth,2026-01-08 08:00:00,0.9,Arab Light Crude,26.6302,50.1625
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Seabliss,IMO9587207,158000,Operating at berth,2024-03-30 08:00:00,0.9,Arab Light Crude,26.6314,50.1674
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Seaways Everest,IMO9400679,305000,Operating at berth,2024-10-17 08:00:00,1.3,Arab Light Crude,26.6404,50.1425
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Seaways Montauk,IMO9779537,158000,Operating at berth,2025-09-26 08:00:00,0.9,Arab Light Crude,26.6463,50.1796
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Seeb,IMO9500716,305000,Operating at berth,2026-07-05 08:00:00,0.5,Arab Light Crude,26.6319,50.1515
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Shenlong Spirit,IMO9379210,158000,Operating at berth,2024-08-26 08:00:00,0.5,Arab Light Crude,26.6574,50.1414
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Skopelos,IMO7381116,305000,Operating at berth,2025-11-24 08:00:00,0.9,Arab Light Crude,26.6314,50.1526
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Tenjun,IMO9343390,305000,Operating at berth,2024-10-25 08:00:00,1.3,Arab Light Crude,26.6404,50.1425
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Yuan Shan Hu,IMO9417189,305000,Operating at berth,2024-03-07 08:00:00,1.3,Arab Light Crude,26.6596,50.1425
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Aegean Horizon,IMO9326811,158000,Waiting at anchor,2025-08-24 08:00:00,3.5,Arab Light Crude,26.7275,50.1401
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Almi Navigator,IMO9579561,158000,Waiting at anchor,2024-10-19 08:00:00,1.0,Arab Light Crude,26.7048,50.2183
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Baltic Loyalty,IMO9411953,305000,Waiting at anchor,2025-10-20 08:00:00,2.0,Arab Light Crude,26.7298,50.155
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Bunga Kasturi Lima,IMO9327114,305000,Waiting at anchor,2024-08-08 08:00:00,2.5,Arab Light Crude,26.7294,50.15
+SARRT,Ras Tanura,Saudi Arabia,Tankers,C. Creator,IMO9859387,305000,Waiting at anchor,2025-07-13 08:00:00,5.5,Arab Light Crude,26.6929,50.2275
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Century,IMO9293131,158000,Waiting at anchor,2025-10-02 08:00:00,3.0,Arab Light Crude,26.6699,50.2375
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Cosglad Lake,IMO9591284,305000,Waiting at anchor,2024-02-16 08:00:00,4.0,Arab Light Crude,26.6794,50.2344
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Dalian,IMO9595228,305000,Waiting at anchor,2025-09-26 08:00:00,5.0,Arab Light Crude,26.7261,50.1847
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Dalma,IMO9322279,305000,Waiting at anchor,2025-08-07 08:00:00,5.5,Arab Light Crude,26.7275,50.1799
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Delta Apollonia o/o,IMO9516935,305000,Waiting at anchor,2024-12-21 08:00:00,5.5,Arab Light Crude,26.7275,50.1799
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Desh Vibhor*,IMO9610298,305000,Waiting at anchor,2025-08-24 08:00:00,6.5,Arab Light Crude,26.7294,50.17
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Donoussa,IMO9723083,305000,Waiting at anchor,2026-01-30 08:00:00,1.0,Arab Light Crude,26.7048,50.2183
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Eco Malibu,IMO9902823,158000,Waiting at anchor,2024-05-02 08:00:00,1.5,Arab Light Crude,26.7083,50.2148
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Front Clipper,IMO9759771,158000,Waiting at anchor,2025-10-31 08:00:00,6.0,Arab Light Crude,26.7175,50.1171
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Halcyon,IMO9885594,305000,Waiting at anchor,2025-07-25 08:00:00,1.5,Arab Light Crude,26.7083,50.1052
+SARRT,Ras Tanura,Saudi Arabia,Tankers,KASSAB,IMO9783710,158000,Waiting at anchor,2025-07-27 08:00:00,2.5,Arab Light Crude,26.701,50.0984
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Kirkuk O/O,IMO9829655,305000,Waiting at anchor,2024-12-22 08:00:00,5.5,Arab Light Crude,26.6929,50.2275
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Lila Kochi*,IMO9277571,305000,Waiting at anchor,2025-07-17 08:00:00,6.0,Arab Light Crude,26.7286,50.175
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Maran Cleo,IMO9593191,305000,Waiting at anchor,2025-06-26 08:00:00,6.5,Arab Light Crude,26.701,50.2216
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Minerva Marina,IMO9411939,158000,Waiting at anchor,2025-06-22 08:00:00,6.5,Arab Light Crude,26.701,50.2216
+SARRT,Ras Tanura,Saudi Arabia,Tankers,New Andros,IMO9294252,305000,Waiting at anchor,2025-05-26 08:00:00,4.0,Arab Light Crude,26.7224,50.1941
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Nordic Harrier,IMO9131137,158000,Waiting at anchor,2025-12-01 08:00:00,2.5,Arab Light Crude,26.7294,50.15
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Oceanis,IMO9395290,305000,Waiting at anchor,2025-06-07 08:00:00,3.5,Arab Light Crude,26.7201,50.1985
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Orient M,IMO9907225,158000,Waiting at anchor,2025-02-07 08:00:00,1.5,Arab Light Crude,26.73,50.16
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Oriental Ark*,IMO9517344,305000,Waiting at anchor,2026-01-11 08:00:00,1.0,Arab Light Crude,26.7048,50.2183
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Orinocco,IMO9302994,158000,Waiting at anchor,2026-08-06 08:00:00,6.5,Arab Light Crude,26.701,50.2216
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Sea Emerald,IMO9852119,305000,Waiting at anchor,2026-07-05 08:00:00,2.0,Arab Light Crude,26.66,50.2394
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Sea Gem,IMO9602655,305000,Waiting at anchor,2025-01-24 08:00:00,3.5,Arab Light Crude,26.6747,50.2361
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Searacer,IMO7374175,158000,Waiting at anchor,2025-05-05 08:00:00,1.5,Arab Light Crude,26.7083,50.2148
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Sfl Albany,IMO9874246,158000,Waiting at anchor,2026-01-24 08:00:00,1.0,Arab Light Crude,26.7298,50.165
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Sm White Whale2,IMO9854715,305000,Waiting at anchor,2024-04-08 08:00:00,4.5,Arab Light Crude,26.7244,50.1894
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Smyrni,IMO9493779,158000,Waiting at anchor,2025-09-04 08:00:00,2.5,Arab Light Crude,26.701,50.0984
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Sydney Spirit,IMO9594781,158000,Waiting at anchor,2025-10-10 08:00:00,4.0,Arab Light Crude,26.6794,50.2344
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Universal Creator*,IMO9837626,305000,Waiting at anchor,2024-08-25 08:00:00,4.0,Arab Light Crude,26.6794,50.2344
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Vlcc Stephanie,IMO9534042,305000,Waiting at anchor,2025-04-13 08:00:00,5.5,Arab Light Crude,26.6929,50.2275
+SARRT,Ras Tanura,Saudi Arabia,Tankers,West Loyalty,IMO9537757,305000,Waiting at anchor,2024-10-06 08:00:00,4.0,Arab Light Crude,26.7261,50.1353
+SARRT,Ras Tanura,Saudi Arabia,Tankers,Xin Han Yang,IMO9389784,305000,Waiting at anchor,2024-11-29 08:00:00,5.5,Arab Light Crude,26.7201,50.1215
+SAYNB,Yanbu,Saudi Arabia,Tankers,Aegean Marathon,IMO9745225,158000,Operating at berth,2026-04-25 08:00:00,0.9,Arab Medium / Heavy,24.0962,38.041
+SAYNB,Yanbu,Saudi Arabia,Tankers,Amazon,IMO9476654,158000,Operating at berth,2026-07-12 08:00:00,1.3,Arab Medium / Heavy,24.0875,38.0798
+SAYNB,Yanbu,Saudi Arabia,Tankers,C. Grace,IMO9904065,305000,Operating at berth,2026-06-01 08:00:00,1.7,Arab Medium / Heavy,24.0985,38.0419
+SAYNB,Yanbu,Saudi Arabia,Tankers,Caribbean Loyalty,IMO9501150,305000,Operating at berth,2026-03-20 08:00:00,0.9,Arab Medium / Heavy,24.0913,38.04
+SAYNB,Yanbu,Saudi Arabia,Tankers,Desh Ujala,IMO9710322,158000,Operating at berth,2026-04-12 08:00:00,1.3,Arab Medium / Heavy,24.0746,38.0727
+SAYNB,Yanbu,Saudi Arabia,Tankers,Dht Gazelle,IMO1055155,305000,Operating at berth,2026-07-10 08:00:00,1.7,Arab Medium / Heavy,24.07,38.06
+SAYNB,Yanbu,Saudi Arabia,Tankers,Dht Mustang,IMO9823003,305000,Operating at berth,2026-03-09 08:00:00,0.9,Arab Medium / Heavy,24.0738,38.0718
+SAYNB,Yanbu,Saudi Arabia,Tankers,Eleni,IMO9432062,158000,Operating at berth,2026-03-08 08:00:00,0.9,Arab Medium / Heavy,24.0863,38.0796
+SAYNB,Yanbu,Saudi Arabia,Tankers,Erecter*,IMO9315082,305000,Operating at berth,2026-04-24 08:00:00,0.5,Arab Medium / Heavy,24.0704,38.0563
+SAYNB,Yanbu,Saudi Arabia,Tankers,Eurovictory,IMO9352559,305000,Operating at berth,2024-07-05 08:00:00,1.7,Arab Medium / Heavy,24.0793,38.0769
+SAYNB,Yanbu,Saudi Arabia,Tankers,Sri Lanka Prosperity,IMO9575943,305000,Operating at berth,2026-07-05 08:00:00,1.7,Arab Medium / Heavy,24.07,38.06
+SAYNB,Yanbu,Saudi Arabia,Tankers,Faithful Warrior,IMO9750062,158000,Operating at berth,2026-04-04 08:00:00,1.7,Arab Medium / Heavy,24.0838,38.079
+SAYNB,Yanbu,Saudi Arabia,Tankers,Fpmc C Orient,IMO9457531,305000,Operating at berth,2026-07-03 08:00:00,0.5,Arab Medium / Heavy,24.0804,38.0775
+SAYNB,Yanbu,Saudi Arabia,Tankers,Vietnam Prosperity,IMO9709087,305000,Operating at berth,2026-03-20 08:00:00,1.3,Arab Medium / Heavy,24.09,38.04
+SAYNB,Yanbu,Saudi Arabia,Tankers,Front Discovery,IMO9830109,305000,Operating at berth,2026-06-21 08:00:00,1.7,Arab Medium / Heavy,24.0887,38.04
+SAYNB,Yanbu,Saudi Arabia,Tankers,Ghana Prosperity*,IMO9732541,305000,Operating at berth,2026-06-19 08:00:00,1.3,Arab Medium / Heavy,24.0746,38.0727
+SAYNB,Yanbu,Saudi Arabia,Tankers,Gabon Prosperity,IMO9539935,305000,Operating at berth,2026-03-14 08:00:00,0.5,Arab Medium / Heavy,24.1018,38.0438
+SAYNB,Yanbu,Saudi Arabia,Tankers,Kasos,IMO9800257,158000,Operating at berth,2026-08-20 08:00:00,1.3,Arab Medium / Heavy,24.071,38.0538
+SAYNB,Yanbu,Saudi Arabia,Tankers,Leni P.,IMO9594133,158000,Operating at berth,2026-01-29 08:00:00,1.3,Arab Medium / Heavy,24.0704,38.0637
+SAYNB,Yanbu,Saudi Arabia,Tankers,Lila Jamnagar*,IMO9294575,305000,Operating at berth,2026-03-30 08:00:00,0.9,Arab Medium / Heavy,24.0702,38.0575
+SAYNB,Yanbu,Saudi Arabia,Tankers,Lila Kochi,IMO9515436,305000,Operating at berth,2026-06-25 08:00:00,0.9,Arab Medium / Heavy,24.0863,38.0796
+SAYNB,Yanbu,Saudi Arabia,Tankers,Lila Marseille,IMO9418614,158000,Operating at berth,2026-08-29 08:00:00,0.5,Arab Medium / Heavy,24.085,38.0794
+SAYNB,Yanbu,Saudi Arabia,Tankers,Maran Dione,IMO9930806,305000,Operating at berth,2026-03-09 08:00:00,1.3,Arab Medium / Heavy,24.0804,38.0425
+SAYNB,Yanbu,Saudi Arabia,Tankers,Maran Leo,IMO9602473,305000,Operating at berth,2026-08-13 08:00:00,0.9,Arab Medium / Heavy,24.0738,38.0718
+SAYNB,Yanbu,Saudi Arabia,Tankers,Maran Taurus,IMO9519494,305000,Operating at berth,2026-05-11 08:00:00,1.3,Arab Medium / Heavy,24.0746,38.0727
+SAYNB,Yanbu,Saudi Arabia,Tankers,Maran Thetis,IMO9421427,305000,Operating at berth,2026-04-25 08:00:00,1.7,Arab Medium / Heavy,24.0754,38.0463
+SAYNB,Yanbu,Saudi Arabia,Tankers,Minerva Doxa,IMO9304617,158000,Operating at berth,2026-06-12 08:00:00,0.5,Arab Medium / Heavy,24.0782,38.0438
+SAYNB,Yanbu,Saudi Arabia,Tankers,New Aspire*,IMO9486544,305000,Operating at berth,2026-05-09 08:00:00,1.7,Arab Medium / Heavy,24.0706,38.055
+SAYNB,Yanbu,Saudi Arabia,Tankers,New Prospect,IMO9398058,305000,Operating at berth,2026-06-13 08:00:00,1.3,Arab Medium / Heavy,24.0875,38.0798
+SAYNB,Yanbu,Saudi Arabia,Tankers,New Success,IMO9434632,305000,Operating at berth,2026-04-19 08:00:00,0.5,Arab Medium / Heavy,24.085,38.0794
+SAYNB,Yanbu,Saudi Arabia,Tankers,New Vanguard*,IMO9445631,305000,Operating at berth,2026-07-17 08:00:00,0.5,Arab Medium / Heavy,24.0804,38.0775
+SAYNB,Yanbu,Saudi Arabia,Tankers,Oriental Ark,IMO9424209,305000,Operating at berth,2026-06-26 08:00:00,0.9,Arab Medium / Heavy,24.0738,38.0718
+SAYNB,Yanbu,Saudi Arabia,Tankers,Olympic Trust,IMO9437177,305000,Operating at berth,2026-07-06 08:00:00,1.7,Arab Medium / Heavy,24.0725,38.0504
+SAYNB,Yanbu,Saudi Arabia,Tankers,Patroclus,IMO9413834,158000,Operating at berth,2026-05-31 08:00:00,0.5,Arab Medium / Heavy,24.0804,38.0775
+SAYNB,Yanbu,Saudi Arabia,Tankers,Peru Prosperity,IMO9418066,305000,Operating at berth,2026-05-15 08:00:00,1.3,Arab Medium / Heavy,24.0826,38.0786
+SAYNB,Yanbu,Saudi Arabia,Tankers,Plata West,IMO9400681,305000,Operating at berth,2026-08-15 08:00:00,0.5,Arab Medium / Heavy,24.0719,38.0515
+SAYNB,Yanbu,Saudi Arabia,Tankers,Quantum Harmony,IMO9418054,305000,Operating at berth,2026-08-13 08:00:00,0.5,Arab Medium / Heavy,24.0826,38.0414
+SAYNB,Yanbu,Saudi Arabia,Tankers,Safeen Elizabeth,IMO9524449,158000,Operating at berth,2026-08-15 08:00:00,1.3,Arab Medium / Heavy,24.0746,38.0727
+SAYNB,Yanbu,Saudi Arabia,Tankers,Spring Splendor,IMO9394507,305000,Operating at berth,2026-05-07 08:00:00,1.3,Arab Medium / Heavy,24.0746,38.0727
+SAYNB,Yanbu,Saudi Arabia,Tankers,V. Glory,IMO9849851,305000,Operating at berth,2026-07-24 08:00:00,1.3,Arab Medium / Heavy,24.0875,38.0798
+SAYNB,Yanbu,Saudi Arabia,Tankers,V. Prosperity,IMO9849863,305000,Operating at berth,2026-06-08 08:00:00,0.5,Arab Medium / Heavy,24.085,38.0794
+SAYNB,Yanbu,Saudi Arabia,Tankers,Vl Pioneer,IMO9683661,305000,Operating at berth,2026-07-11 08:00:00,1.7,Arab Medium / Heavy,24.0754,38.0463
+SAYNB,Yanbu,Saudi Arabia,Tankers,Vl Renaissance,IMO9904089,305000,Operating at berth,2026-07-04 08:00:00,0.9,Arab Medium / Heavy,24.0815,38.0781
+SAYNB,Yanbu,Saudi Arabia,Tankers,Xin Hui Yang,IMO9771743,305000,Operating at berth,2026-03-27 08:00:00,0.5,Arab Medium / Heavy,24.071,38.0662
+SAYNB,Yanbu,Saudi Arabia,Tankers,Xin Pu Yang,IMO9416628,305000,Operating at berth,2026-03-13 08:00:00,0.5,Arab Medium / Heavy,24.1018,38.0438
+SAYNB,Yanbu,Saudi Arabia,Tankers,Xin Xia Yang*,IMO9416630,305000,Operating at berth,2026-03-27 08:00:00,0.9,Arab Medium / Heavy,24.0962,38.041
+SAYNB,Yanbu,Saudi Arabia,Tankers,Yuan Peng Yang O/O,IMO9847633,305000,Operating at berth,2026-06-27 08:00:00,0.9,Arab Medium / Heavy,24.0714,38.0674
+SAYNB,Yanbu,Saudi Arabia,Tankers,Aliakmon I,IMO1038884,305000,Waiting at anchor,2026-06-28 08:00:00,4.0,Arab Medium / Heavy,24.1194,38.1344
+SAYNB,Yanbu,Saudi Arabia,Tankers,Costa Rica Prosperity,IMO9534858,305000,Waiting at anchor,2026-06-29 08:00:00,1.0,Arab Medium / Heavy,24.1516,38.009
+SAYNB,Yanbu,Saudi Arabia,Tankers,Dias I,IMO9858474,158000,Waiting at anchor,2026-06-29 08:00:00,2.0,Arab Medium / Heavy,24.1698,38.055
+SAYNB,Yanbu,Saudi Arabia,Tankers,Eurospirit,IMO9203784,158000,Waiting at anchor,2026-05-02 08:00:00,6.5,Arab Medium / Heavy,24.1547,38.013
+SAYNB,Yanbu,Saudi Arabia,Tankers,Fpmc C Intelligence,IMO9397779,305000,Waiting at anchor,2026-04-13 08:00:00,6.5,Arab Medium / Heavy,24.141,38.1216
+SAYNB,Yanbu,Saudi Arabia,Tankers,Fpmc C Jade,IMO9407316,305000,Waiting at anchor,2026-06-15 08:00:00,6.5,Arab Medium / Heavy,24.141,38.1216
+SAYNB,Yanbu,Saudi Arabia,Tankers,Front Tana,IMO9933640,305000,Waiting at anchor,2026-06-21 08:00:00,6.5,Arab Medium / Heavy,24.1547,38.013
+SAYNB,Yanbu,Saudi Arabia,Tankers,He Chang Hai,IMO8536263,305000,Waiting at anchor,2026-03-16 08:00:00,2.5,Arab Medium / Heavy,24.105,38.1386
+SAYNB,Yanbu,Saudi Arabia,Tankers,Malaysia Loyalty,IMO9671550,305000,Waiting at anchor,2026-03-20 08:00:00,2.0,Arab Medium / Heavy,24.1516,38.111
+SAYNB,Yanbu,Saudi Arabia,Tankers,Minerva Kalliope,IMO1020409,158000,Waiting at anchor,2026-08-28 08:00:00,2.5,Arab Medium / Heavy,24.1694,38.05
+SAYNB,Yanbu,Saudi Arabia,Tankers,Mount Fuji,IMO9509011,158000,Waiting at anchor,2026-03-12 08:00:00,1.0,Arab Medium / Heavy,24.1516,38.009
+SAYNB,Yanbu,Saudi Arabia,Tankers,New Giant,IMO9516947,305000,Waiting at anchor,2026-05-24 08:00:00,3.0,Arab Medium / Heavy,24.1575,38.1029
+SAYNB,Yanbu,Saudi Arabia,Tankers,New Horizon,IMO9486520,305000,Waiting at anchor,2026-03-13 08:00:00,2.5,Arab Medium / Heavy,24.105,38.1386
+SAYNB,Yanbu,Saudi Arabia,Tankers,Pantanassa,IMO9424261,305000,Waiting at anchor,2026-08-07 08:00:00,5.5,Arab Medium / Heavy,24.1601,38.0215
+SAYNB,Yanbu,Saudi Arabia,Tankers,Pegasus,IMO9412103,158000,Waiting at anchor,2026-03-15 08:00:00,1.0,Arab Medium / Heavy,24.1698,38.065
+SAYNB,Yanbu,Saudi Arabia,Tankers,Rain Cubic*,IMO9384203,305000,Waiting at anchor,2026-07-25 08:00:00,1.0,Arab Medium / Heavy,24.1448,38.1183
+SAYNB,Yanbu,Saudi Arabia,Tankers,Sea Pearl,IMO9779604,305000,Waiting at anchor,2026-08-30 08:00:00,4.5,Arab Medium / Heavy,24.1644,38.0894
+SAYNB,Yanbu,Saudi Arabia,Tankers,Tejas* ,IMO9266947,305000,Waiting at anchor,2026-03-09 08:00:00,5.0,Arab Medium / Heavy,24.1661,38.0847
+SAYNB,Yanbu,Saudi Arabia,Tankers,Universal Winner,IMO9837602,305000,Waiting at anchor,2026-07-02 08:00:00,1.5,Arab Medium / Heavy,24.1483,38.1148
+SAYNB,Yanbu,Saudi Arabia,Tankers,V. Progress,IMO9845154,305000,Waiting at anchor,2026-07-24 08:00:00,5.0,Arab Medium / Heavy,24.1285,38.1301
+SAYNB,Yanbu,Saudi Arabia,Tankers,Xin Tong Yang,IMO9389758,305000,Waiting at anchor,2026-07-11 08:00:00,5.5,Arab Medium / Heavy,24.1329,38.1275
+SAYNB,Yanbu,Saudi Arabia,Tankers,Yuan Chun Hu,IMO9681209,305000,Waiting at anchor,2026-03-14 08:00:00,2.0,Arab Medium / Heavy,24.1698,38.055
+SAYNB,Yanbu,Saudi Arabia,Tankers,Yuan Kun Yang,IMO9847621,305000,Waiting at anchor,2026-03-13 08:00:00,6.0,Arab Medium / Heavy,24.1686,38.075
+SGSIN,Singapore,Singapore,Tankers,Achilleas*,IMO9398072,305000,Operating at berth,2025-08-07 08:00:00,1.7,Bunkers / Clean Products,1.2693,103.8669
+SGSIN,Singapore,Singapore,Tankers,Andromeda,IMO9943061,305000,Operating at berth,2025-10-11 08:00:00,0.9,Bunkers / Clean Products,1.2614,103.8574
+SGSIN,Singapore,Singapore,Tankers,Bristol,IMO9966829,158000,Operating at berth,2025-02-21 08:00:00,0.9,Bunkers / Clean Products,1.2907,103.8331
+SGSIN,Singapore,Singapore,Tankers,Cap Theodora,IMO9380740,158000,Operating at berth,2024-11-10 08:00:00,0.5,Bunkers / Clean Products,1.26,103.8513
+SGSIN,Singapore,Singapore,Tankers,Constantios,IMO9422366,158000,Operating at berth,2025-05-25 08:00:00,0.9,Bunkers / Clean Products,1.2907,103.8331
+SGSIN,Singapore,Singapore,Tankers,Delos ,IMO1034137,305000,Operating at berth,2026-02-22 08:00:00,1.3,Bunkers / Clean Products,1.285,103.8306
+SGSIN,Singapore,Singapore,Tankers,Delta Amazon,IMO9748916,305000,Operating at berth,2025-02-24 08:00:00,0.5,Bunkers / Clean Products,1.2775,103.8302
+SGSIN,Singapore,Singapore,Tankers,Delta Maria,IMO9700691,158000,Operating at berth,2026-02-03 08:00:00,0.5,Bunkers / Clean Products,1.2682,103.8338
+SGSIN,Singapore,Singapore,Tankers,Dht China,IMO9315161,305000,Operating at berth,2025-12-04 08:00:00,1.3,Bunkers / Clean Products,1.2775,103.8698
+SGSIN,Singapore,Singapore,Tankers,Front Surna (ex Alboran),IMO9876520,305000,Operating at berth,2024-01-26 08:00:00,1.3,Bunkers / Clean Products,1.285,103.8306
+SGSIN,Singapore,Singapore,Tankers,Front tbn,IMO9702070,305000,Operating at berth,2025-02-16 08:00:00,0.9,Bunkers / Clean Products,1.2813,103.83
+SGSIN,Singapore,Singapore,Tankers,Harmonic,IMO9819868,158000,Operating at berth,2026-05-22 08:00:00,1.3,Bunkers / Clean Products,1.2619,103.8585
+SGSIN,Singapore,Singapore,Tankers,Ionic Semeli,IMO1037933,158000,Operating at berth,2026-07-13 08:00:00,1.3,Bunkers / Clean Products,1.2646,103.8627
+SGSIN,Singapore,Singapore,Tankers,Jenggala Nassim,IMO9457907,158000,Operating at berth,2026-05-22 08:00:00,1.7,Bunkers / Clean Products,1.2654,103.8363
+SGSIN,Singapore,Singapore,Tankers,Maran Canopus O/O,IMO9810971,305000,Operating at berth,2024-08-24 08:00:00,1.3,Bunkers / Clean Products,1.2631,103.8393
+SGSIN,Singapore,Singapore,Tankers,Maran Myrto,IMO9192984,158000,Operating at berth,2026-06-14 08:00:00,0.5,Bunkers / Clean Products,1.2874,103.8314
+SGSIN,Singapore,Singapore,Tankers,Nordic Sprinter,IMO9297503,158000,Operating at berth,2025-10-31 08:00:00,1.7,Bunkers / Clean Products,1.2606,103.845
+SGSIN,Singapore,Singapore,Tankers,Ocean Thunder,IMO9416422,158000,Operating at berth,2026-08-08 08:00:00,1.3,Bunkers / Clean Products,1.28,103.83
+SGSIN,Singapore,Singapore,Tankers,Orion ,IMO9735945,158000,Operating at berth,2024-11-22 08:00:00,1.3,Bunkers / Clean Products,1.2663,103.8354
+SGSIN,Singapore,Singapore,Tankers,Sea Onyx,IMO9922108,158000,Operating at berth,2025-03-27 08:00:00,1.7,Bunkers / Clean Products,1.2738,103.869
+SGSIN,Singapore,Singapore,Tankers,Seaways Pecos,IMO9594743,158000,Operating at berth,2024-02-07 08:00:00,1.7,Bunkers / Clean Products,1.2837,103.8304
+SGSIN,Singapore,Singapore,Tankers,Trafigura Tbn,IMO9869045,305000,Operating at berth,2024-06-17 08:00:00,0.5,Bunkers / Clean Products,1.261,103.8562
+SGSIN,Singapore,Singapore,Tankers,Zouzou N.,IMO9410222,158000,Operating at berth,2024-09-23 08:00:00,1.7,Bunkers / Clean Products,1.2738,103.869
+SGSIN,Singapore,Singapore,Tankers,dynacom tbn,IMO9612045,158000,Operating at berth,2024-02-10 08:00:00,1.3,Bunkers / Clean Products,1.2646,103.8627
+SGSIN,Singapore,Singapore,Tankers,Al Agaila,IMO9415404,158000,Waiting at anchor,2025-06-04 08:00:00,2.0,Bunkers / Clean Products,1.3598,103.845
+SGSIN,Singapore,Singapore,Tankers,Al Riqqa,IMO9534808,305000,Waiting at anchor,2026-02-08 08:00:00,2.0,Bunkers / Clean Products,1.3348,103.7917
+SGSIN,Singapore,Singapore,Tankers,Asian Lion,IMO9376751,305000,Waiting at anchor,2026-04-14 08:00:00,2.5,Bunkers / Clean Products,1.331,103.7884
+SGSIN,Singapore,Singapore,Tankers,Crude Zephyrus,IMO9899375,158000,Waiting at anchor,2024-05-17 08:00:00,3.0,Bunkers / Clean Products,1.2999,103.9275
+SGSIN,Singapore,Singapore,Tankers,Beijing Spirit,IMO9418597,158000,Waiting at anchor,2025-10-27 08:00:00,4.5,Bunkers / Clean Products,1.3141,103.9224
+SGSIN,Singapore,Singapore,Tankers,Dht Bauhinia,IMO9315070,305000,Waiting at anchor,2026-06-16 08:00:00,2.5,Bunkers / Clean Products,1.3594,103.84
+SGSIN,Singapore,Singapore,Tankers,Front Tay*,IMO9723095,305000,Waiting at anchor,2025-12-27 08:00:00,2.5,Bunkers / Clean Products,1.3594,103.84
+SGSIN,Singapore,Singapore,Tankers,Gen-ei,IMO9814117,305000,Waiting at anchor,2025-10-04 08:00:00,3.5,Bunkers / Clean Products,1.3575,103.8301
+SGSIN,Singapore,Singapore,Tankers,New Harmony,IMO9603207,305000,Waiting at anchor,2024-07-01 08:00:00,1.5,Bunkers / Clean Products,1.3383,103.7952
+SGSIN,Singapore,Singapore,Tankers,Khk Majesty,IMO9830977,305000,Waiting at anchor,2025-07-31 08:00:00,1.5,Bunkers / Clean Products,1.36,103.85
+SGSIN,Singapore,Singapore,Tankers,Nordic Thunder,IMO9797228,158000,Waiting at anchor,2025-06-28 08:00:00,5.5,Bunkers / Clean Products,1.3229,103.9175
+SGSIN,Singapore,Singapore,Tankers,Olympic Trophy*,IMO9445461,305000,Waiting at anchor,2024-10-13 08:00:00,1.0,Bunkers / Clean Products,1.3348,103.9083
+SGSIN,Singapore,Singapore,Tankers,Tahoe Spirit,IMO9427641,158000,Waiting at anchor,2025-07-24 08:00:00,5.5,Bunkers / Clean Products,1.3575,103.8699
+USCRP,Corpus Christi,United States,Tankers,Cap Quebec,IMO9817107,158000,Operating at berth,2024-02-18 08:00:00,0.9,Permian Crude / LNG,27.8113,-97.41
+USCRP,Corpus Christi,United States,Tankers,Dimitris P,IMO9565950,158000,Operating at berth,2024-11-17 08:00:00,1.7,Permian Crude / LNG,27.8038,-97.409
+USCRP,Corpus Christi,United States,Tankers,Eurovision,IMO9567697,158000,Operating at berth,2026-02-05 08:00:00,1.3,Permian Crude / LNG,27.8004,-97.4075
+USCRP,Corpus Christi,United States,Tankers,Maran Solon,IMO9881691,158000,Operating at berth,2025-10-04 08:00:00,1.7,Permian Crude / LNG,27.8087,-97.37
+USCRP,Corpus Christi,United States,Tankers,Aspen Spirit,IMO9427627,158000,Waiting at anchor,2025-03-18 08:00:00,5.5,Permian Crude / LNG,27.8801,-97.4285
+USCRP,Corpus Christi,United States,Tankers,Apolytares,IMO9419474,305000,Waiting at anchor,2026-05-24 08:00:00,5.0,Permian Crude / LNG,27.8861,-97.3653
+USCRP,Corpus Christi,United States,Tankers,Eva Maersk,IMO9682992,158000,Waiting at anchor,2025-12-21 08:00:00,2.0,Permian Crude / LNG,27.8716,-97.339
+USCRP,Corpus Christi,United States,Tankers,London Spirit,IMO9594779,158000,Waiting at anchor,2025-03-01 08:00:00,6.5,Permian Crude / LNG,27.8747,-97.437
+USCRP,Corpus Christi,United States,Tankers,Monte Urquiola,IMO9803273,158000,Waiting at anchor,2026-02-05 08:00:00,5.0,Permian Crude / LNG,27.8485,-97.3199
+USCRP,Corpus Christi,United States,Tankers,Nordic Cygnus,IMO9818228,158000,Waiting at anchor,2025-03-23 08:00:00,1.5,Permian Crude / LNG,27.89,-97.39
+USCRP,Corpus Christi,United States,Tankers,Nordic Hunter,IMO9131151,158000,Waiting at anchor,2024-10-11 08:00:00,1.0,Permian Crude / LNG,27.8898,-97.385
+USCRP,Corpus Christi,United States,Tankers,San Jacinto,IMO9730373,158000,Waiting at anchor,2025-05-02 08:00:00,1.0,Permian Crude / LNG,27.8716,-97.441
+USHOU,Houston,United States,Tankers,Atlanta Spirit,IMO9578646,158000,Operating at berth,2026-02-06 08:00:00,0.5,WTI / Products / LPG,29.7204,-95.2737
+USHOU,Houston,United States,Tankers,Runner,IMO9749518,158000,Operating at berth,2026-04-02 08:00:00,0.5,WTI / Products / LPG,29.7518,-95.2862
+USHOU,Houston,United States,Tankers,Starway,IMO9900801,158000,Operating at berth,2025-07-03 08:00:00,0.5,WTI / Products / LPG,29.72,-95.2687
+USHOU,Houston,United States,Tankers,Brightway,IMO9588146,158000,Waiting at anchor,2025-05-30 08:00:00,4.5,WTI / Products / LPG,29.8144,-95.2994
+USHOU,Houston,United States,Tankers,Eagle San Pedro,IMO9594858,158000,Waiting at anchor,2025-10-05 08:00:00,5.5,WTI / Products / LPG,29.8101,-95.3085
+USHOU,Houston,United States,Tankers,Saturn Moon,IMO9814430,158000,Waiting at anchor,2024-03-04 08:00:00,4.0,WTI / Products / LPG,29.8124,-95.2359
+USHOU,Houston,United States,Tankers,White Moon,IMO9588158,158000,Waiting at anchor,2026-05-07 08:00:00,1.0,WTI / Products / LPG,29.8016,-95.321
+ZASDB,Saldanha Bay,South Africa,Tankers,Aegean Dream,IMO9645425,158000,Operating at berth,2025-03-15 08:00:00,0.9,Iron Ore,-33.0285,17.9681
+ZASDB,Saldanha Bay,South Africa,Tankers,Mercury Moon,IMO1031032,158000,Operating at berth,2026-02-19 08:00:00,0.9,Iron Ore,-33.0362,17.9382
+ZASDB,Saldanha Bay,South Africa,Tankers,Neptune Moon,IMO9784013,158000,Operating at berth,2024-08-22 08:00:00,1.3,Iron Ore,-33.0354,17.9627
+ZASDB,Saldanha Bay,South Africa,Tankers,Ottoman Tenacity,IMO9590682,158000,Operating at berth,2024-07-01 08:00:00,1.3,Iron Ore,-33.015,17.9306
+ZASDB,Saldanha Bay,South Africa,Tankers,Bold Warrior,IMO1058092,158000,Waiting at anchor,2025-11-07 08:00:00,1.0,Iron Ore,-32.9584,17.899
+ZASDB,Saldanha Bay,South Africa,Tankers,Ithaki Warrior,IMO9765366,158000,Waiting at anchor,2026-03-26 08:00:00,3.5,Iron Ore,-32.9425,17.9301
+ZASDB,Saldanha Bay,South Africa,Tankers,Sunriseway,IMO9907665,158000,Waiting at anchor,2024-05-16 08:00:00,4.5,Iron Ore,-32.9456,17.9206

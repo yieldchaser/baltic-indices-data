@@ -45,6 +45,9 @@ jobs:
     - name: Run Alibra poller and integration
       run: python scripts/alibra_poller.py --integrate
 
+    - name: Run Capital Link shipping indices scraper
+      run: python scripts/scrapers/fetch_capital_link_indices.py
+
     - name: Fetch live ETF quotes
       run: python scripts/fetch_live_etf_quotes.py
 
@@ -52,7 +55,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/indices/bdiy_historical.csv data/indices/cape_historical.csv data/indices/panama_historical.csv data/indices/suprama_historical.csv data/indices/handysize_historical.csv data/indices/cleantanker_historical.csv data/indices/dirtytanker_historical.csv data/futures/bdryff_history.csv data/futures/bwetff_history.csv data/etf/BDRY_Daily.csv data/etf/BWET_Daily.csv data/etf/live_quotes.json data/futures/sgx_cape_futures.csv data/futures/sgx_panamax_futures.csv data/futures/sgx_supramax_futures.csv data/futures/sgx_handysize_futures.csv data/etf/BDRY_flows.csv data/etf/BWET_flows.csv data/flows/BDRY_flows.json data/flows/BWET_flows.json data/flows/all_flows_summary.json docs/data/flows/all_flows_summary.json data/derived/time_charter_rates.csv data/derived/tanker_forward_curves.csv data/derived/tanker_forward_curves_history.csv docs/alibra_data/
+        git add data/indices/bdiy_historical.csv data/indices/cape_historical.csv data/indices/panama_historical.csv data/indices/suprama_historical.csv data/indices/handysize_historical.csv data/indices/cleantanker_historical.csv data/indices/dirtytanker_historical.csv data/indices/capital_link_*.csv data/futures/bdryff_history.csv data/futures/bwetff_history.csv data/etf/BDRY_Daily.csv data/etf/BWET_Daily.csv data/etf/live_quotes.json data/futures/sgx_cape_futures.csv data/futures/sgx_panamax_futures.csv data/futures/sgx_supramax_futures.csv data/futures/sgx_handysize_futures.csv data/etf/BDRY_flows.csv data/etf/BWET_flows.csv data/flows/BDRY_flows.json data/flows/BWET_flows.json data/flows/all_flows_summary.json docs/data/flows/all_flows_summary.json data/derived/time_charter_rates.csv data/derived/tanker_forward_curves.csv data/derived/tanker_forward_curves_history.csv docs/alibra_data/
         if git diff --staged --quiet; then
           echo "No index/flow/alibra changes to commit."
           exit 0

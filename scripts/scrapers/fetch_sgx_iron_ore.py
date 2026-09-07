@@ -458,6 +458,41 @@ def sync_iron_ore_restocking(cont_df):
     df_restock.to_csv(target_path, index=False)
     print(f"  ✔ Synchronized {updated_62} missing CFR 62% values and {updated_65} CFR 65% values in iron_ore_restocking.csv")
 
+def save_merged_history(path, new_df, subset_cols):
+    if new_df.empty:
+        if os.path.exists(path) and os.path.getsize(path) > 0:
+            return pd.read_csv(path)
+        return new_df
+    if os.path.exists(path) and os.path.getsize(path) > 0:
+        try:
+            existing = pd.read_csv(path)
+            combined = pd.concat([existing[subset_cols], new_df[subset_cols]], ignore_index=True)
+            combined = combined.drop_duplicates(subset=['contract', 'date'], keep='last')
+            combined = combined.sort_values(['date', 'contract']).reset_index(drop=True)
+            combined.to_csv(path, index=False)
+            return combined
+        except Exception as e:
+            print(f"Warning: merge failed for {path}: {e}")
+    new_df[subset_cols].to_csv(path, index=False)
+    return new_df
+
+
+def save_merged_continuous(path, cont_df):
+    if cont_df.empty:
+        return cont_df
+    if os.path.exists(path) and os.path.getsize(path) > 0:
+        try:
+            existing = pd.read_csv(path)
+            combined = pd.concat([existing, cont_df], ignore_index=True)
+            combined = combined.drop_duplicates(subset=['date'], keep='last')
+            combined = combined.sort_values('date').reset_index(drop=True)
+            combined.to_csv(path, index=False)
+            return combined
+        except Exception as e:
+            print(f"Warning: merge failed for {path}: {e}")
+    cont_df.to_csv(path, index=False)
+    return cont_df
+
 
 def main():
     parser = argparse.ArgumentParser(description="SGX Iron Ore Derivatives Ingestion & Term Structure Engine")
@@ -491,38 +526,44 @@ def main():
     if not fef_df.empty:
         # Commodities store
         fef_comm_path = os.path.join(COMMODITIES_DIR, 'sgx_iron_ore_62_fef_historical.csv')
-        fef_df[fef_cols].to_csv(fef_comm_path, index=False)
-        print(f"✔ Saved: {fef_comm_path} ({len(fef_df):,} rows)")
+        full_fef_df = save_merged_history(fef_comm_path, fef_df, fef_cols)
+        print(f"✔ Saved: {fef_comm_path} ({len(full_fef_df):,} rows)")
         
         # Futures store (matched to sgx_cape_futures_history.csv)
         fef_fut_hist = os.path.join(FUTURES_DIR, 'sgx_iron_ore_fef_history.csv')
-        fef_df[fef_cols].to_csv(fef_fut_hist, index=False)
-        print(f"✔ Saved: {fef_fut_hist} ({len(fef_df):,} rows)")
+        save_merged_history(fef_fut_hist, fef_df, fef_cols)
+        print(f"✔ Saved: {fef_fut_hist} ({len(full_fef_df):,} rows)")
         
         # Live active contracts snapshot (matched to sgx_cape_futures.csv)
         fef_fut_live = os.path.join(FUTURES_DIR, 'sgx_iron_ore_fef.csv')
-        latest_date = fef_df['date'].max()
-        fef_live_df = fef_df[fef_df['date'] == latest_date]
+        latest_date = full_fef_df['date'].max()
+        fef_live_df = full_fef_df[full_fef_df['date'] == latest_date]
         fef_live_df[fef_cols].to_csv(fef_fut_live, index=False)
         print(f"✔ Saved: {fef_fut_live} ({len(fef_live_df):,} active rows)")
+    else:
+        full_fef_df = pd.DataFrame()
 
     if not m65f_df.empty:
         m65f_comm_path = os.path.join(COMMODITIES_DIR, 'sgx_iron_ore_65_m65f_historical.csv')
-        m65f_df[fef_cols].to_csv(m65f_comm_path, index=False)
-        print(f"✔ Saved: {m65f_comm_path} ({len(m65f_df):,} rows)")
+        full_m65f_df = save_merged_history(m65f_comm_path, m65f_df, fef_cols)
+        print(f"✔ Saved: {m65f_comm_path} ({len(full_m65f_df):,} rows)")
         
         m65f_fut_hist = os.path.join(FUTURES_DIR, 'sgx_iron_ore_m65f_history.csv')
-        m65f_df[fef_cols].to_csv(m65f_fut_hist, index=False)
-        print(f"✔ Saved: {m65f_fut_hist} ({len(m65f_df):,} rows)")
+        save_merged_history(m65f_fut_hist, m65f_df, fef_cols)
+        print(f"✔ Saved: {m65f_fut_hist} ({len(full_m65f_df):,} rows)")
+    else:
+        full_m65f_df = pd.DataFrame()
 
     if not lpf_df.empty:
         lpf_comm_path = os.path.join(COMMODITIES_DIR, 'sgx_iron_ore_lump_lpf_historical.csv')
-        lpf_df[fef_cols].to_csv(lpf_comm_path, index=False)
-        print(f"✔ Saved: {lpf_comm_path} ({len(lpf_df):,} rows)")
+        full_lpf_df = save_merged_history(lpf_comm_path, lpf_df, fef_cols)
+        print(f"✔ Saved: {lpf_comm_path} ({len(full_lpf_df):,} rows)")
         
         lpf_fut_hist = os.path.join(FUTURES_DIR, 'sgx_iron_ore_lump_lpf_history.csv')
-        lpf_df[fef_cols].to_csv(lpf_fut_hist, index=False)
-        print(f"✔ Saved: {lpf_fut_hist} ({len(lpf_df):,} rows)")
+        save_merged_history(lpf_fut_hist, lpf_df, fef_cols)
+        print(f"✔ Saved: {lpf_fut_hist} ({len(full_lpf_df):,} rows)")
+    else:
+        full_lpf_df = pd.DataFrame()
 
     # 4. Construct Forward Curve
     curve_df = build_forward_curve(fef_df, m65f_df, lpf_df)
@@ -549,11 +590,11 @@ def main():
     cont_df = build_continuous_front_month_series(fef_df, m65f_df, lpf_df)
     if not cont_df.empty:
         cont_path = os.path.join(COMMODITIES_DIR, 'sgx_iron_ore_continuous_daily.csv')
-        cont_df.to_csv(cont_path, index=False)
-        print(f"\n✔ Saved: {cont_path} ({len(cont_df):,} trading days from {cont_df['date'].min()} to {cont_df['date'].max()})")
+        full_cont_df = save_merged_continuous(cont_path, cont_df)
+        print(f"\n✔ Saved: {cont_path} ({len(full_cont_df):,} trading days from {full_cont_df['date'].min()} to {full_cont_df['date'].max()})")
         
         # Synchronize iron_ore_restocking.csv
-        sync_iron_ore_restocking(cont_df)
+        sync_iron_ore_restocking(full_cont_df)
 
     print("\n✔ Ingestion and Digestion Completed Successfully with 0 Errors.")
 

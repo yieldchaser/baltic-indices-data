@@ -1,0 +1,87 @@
+[19:50:12] ==============================================================================
+[19:50:12] TimesFM-3 Adversarial Probe — Shipping Freight Backtest
+[19:50:12] ==============================================================================
+[19:50:12] Config: start=2020-01-01 stride=21 contexts=[128, 256] horizons=[5, 21, 63, 64] device=cpu quick=True
+[19:50:12] --- STEP 1: Data schema documentation ---
+[19:50:12] BDI: 10492 rows from 1985-01-04 to 2026-08-10 | freq ~ daily | nulls 0 | usable ctx up to 10492 (patch multiple 32: 10464)
+[19:50:12] BDI gaps: mean 1.45 median 1 max 12 (weekends/holidays ~1-3 days, max at 2011-01-05)
+[19:50:12] BCI (Cape): 4312 rows from 2008-10-06 to 2026-08-10 | gaps mean 1.51 max 12 | overlap with BDI since 2008
+[19:50:12] macro_health_score_backtest: 1984 rows from 2018-03-22 00:00:00 to 2026-08-10 00:00:00 | has regimes: 4 | fwd columns: ['bdi_fwd_1W', 'bdry_fwd_1W', 'bdi_fwd_1M', 'bdry_fwd_1M', 'bdi_fwd_3M', 'bdry_fwd_3M']
+[19:50:12] bdryff_history: cols ['date', 'value'] | example {'date': '28-02-2010', 'value': 3070.39}
+[19:50:12] time_charter_rates: cols 66 weekly (2000-2026) -> NOT used as future covariates (would leak); only for regime analysis
+[19:50:12] iron_ore_restocking: 1255 rows weekly, 1250 with inventory -> weekly, missing daily -> forward-filled if used, but we AVOID as future covariate
+[19:50:12] bunker_prices_daily: ['date', 'port', 'fuel_grade', 'price_usd_mt'] | only from 2026-08, too short for long backtest -> not used as covariate (document leakage risk)
+[19:50:12] --- STEP 2: Build master trading-day series ---
+[19:50:12] Master: 10492 trading days from 1985-01-04 to 2026-08-10 | BCI coverage 4305 (41.0%)
+[19:50:12] QUICK mode: limited to 20 origins (stride 21, contexts [128, 256], horizons [5, 21, 63, 64])
+[19:50:12] --- STEP 4: TimesFM integration attempt ---
+[19:50:12] Import check: HAS_TORCH=True HAS_TIMESFM3=True HAS_LEGACY=True
+[19:50:12] TimesFM: attempting to load checkpoint google/timesfm-3.0-pytorch on cpu (this may download ~GB)...
+[19:50:23] TimesFM: successfully loaded google/timesfm-3.0-pytorch
+[19:50:23] TimesFM state: status=LOADED has_real=True ckpt=google/timesfm-3.0-pytorch load_time=11.0s
+[19:50:23] --- STEP 5: Rolling forecast loop ---
+C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\nanops.py:1632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+[19:52:02] Progress: 7/20 origins, ctx=128, hor=21, elapsed 99.1s, records 550
+[19:53:42] Progress: 13/20 origins, ctx=128, hor=64, elapsed 198.5s, records 1100
+[19:55:14] Progress: 19/20 origins, ctx=256, hor=21, elapsed 291.2s, records 1650
+[19:55:35] Loop finished: 1760 records in 311.7s, avg runtime per TimesFM 0.6283s
+[19:55:35] Saved detailed results to C:\Users\Dell\Github\Shipping\reports\timesfm_probe\results.csv (1760 rows)
+[19:55:35] Mirrored to C:\Users\Dell\Github\Shipping\data\derived\timesfm_probe_results.csv
+[19:55:35] Saved metrics summary to C:\Users\Dell\Github\Shipping\reports\timesfm_probe\metrics_summary.csv (88 rows)
+[19:55:36] Contrarian regime directional accuracy (vs actual [5, 21, 63, 64] ultima): 0.778 over 144 points
+[19:55:36] --- VERIFY mode: sanity checks ---
+[19:55:36] Verify results: {'leakage_check': 'PASS: future covariates are calendar-only (dow/month/ expiry), no future realized values.', 'baseline_naive_sanity': 'PASS', 'seasonal_sanity': 'PASS: seasonal shape (5,) example [227. 227.]', 'dir_acc_sanity': 'PASS', 'mock_sanity': 'PASS', 'pit_check': 'PASS: all forecasts use data <= origin (verified by index slicing).'}
+[19:55:38] Chart saved: C:\Users\Dell\Github\Shipping\reports\timesfm_probe\mae_by_horizon.png
+[19:55:39] Chart saved: C:\Users\Dell\Github\Shipping\reports\timesfm_probe\dir_acc_by_horizon.png
+[19:55:39] --- STEP 9: Generating report.md ---
+[19:55:39] Report written to C:\Users\Dell\Github\Shipping\reports\timesfm_probe\report.md (21236 bytes)
+[19:55:39] 
+==============================================================================
+[19:55:39] PROBE COMPLETE
+[19:55:39] Outputs:
+  results: C:\Users\Dell\Github\Shipping\reports\timesfm_probe\results.csv
+  metrics: C:\Users\Dell\Github\Shipping\reports\timesfm_probe\metrics_summary.csv
+  report: C:\Users\Dell\Github\Shipping\reports\timesfm_probe\report.md
+  mirror: C:\Users\Dell\Github\Shipping\data\derived\timesfm_probe_results.csv
+  run.log: C:\Users\Dell\Github\Shipping\reports\timesfm_probe\run.log
+[19:55:39] TimesFM status: LOADED mock=False records=1760
+[19:55:39] 
+Summary metrics (BDI, collapsed over contexts, sorted by MAE per horizon):
+[19:55:39] horizon | model | covariates | mae | rmse | dir_acc | spearman_ic | win_rate_vs_naive
+[19:55:39] -------------------------------------------------------------------------------------
+[19:55:39] 5 | timesfm | with_cov | 95.727 | 109.593 | 0.800 | 0.430 | 0.720
+[19:55:39] 5 | timesfm | targets_only | 98.897 | 112.471 | 0.775 | 0.288 | 0.720
+[19:55:39] 5 | naive | none | 130.440 | 146.290 | 0.000 | nan | 0.500
+[19:55:39] 5 | ar1 | none | 161.020 | 183.559 | 0.660 | 0.236 | 0.540
+[19:55:39] 5 | ma90 | none | 544.697 | 550.586 | 0.470 | nan | 0.100
+[19:55:39] 5 | drift | none | 546.619 | 555.425 | 0.470 | 0.026 | 0.090
+[19:55:39] 5 | hist_mean | none | 651.855 | 657.249 | 0.485 | nan | 0.100
+[19:55:39] 5 | seasonal | none | 850.870 | 859.570 | 0.490 | 0.320 | 0.130
+[19:55:39] 21 | timesfm | with_cov | 287.884 | 339.797 | 0.702 | 0.078 | 0.661
+[19:55:39] 21 | timesfm | targets_only | 293.739 | 342.675 | 0.725 | 0.241 | 0.668
+[19:55:39] 21 | naive | none | 340.776 | 390.826 | 0.000 | nan | 0.500
+[19:55:39] 21 | ma90 | none | 578.537 | 614.123 | 0.486 | nan | 0.250
+[19:55:39] 21 | drift | none | 617.942 | 657.285 | 0.461 | 0.032 | 0.244
+[19:55:39] 21 | hist_mean | none | 632.184 | 669.984 | 0.535 | nan | 0.282
+[19:55:39] 21 | ar1 | none | 659.776 | 779.060 | 0.612 | 0.080 | 0.386
+[19:55:39] 21 | seasonal | none | 905.107 | 949.746 | 0.526 | 0.082 | 0.210
+[19:55:39] 63 | timesfm | targets_only | 488.782 | 580.488 | 0.635 | 0.040 | 0.571
+[19:55:39] 63 | timesfm | with_cov | 511.884 | 606.720 | 0.600 | -0.042 | 0.552
+[19:55:39] 63 | naive | none | 517.494 | 602.546 | 0.000 | nan | 0.500
+[19:55:39] 63 | ma90 | none | 630.193 | 697.699 | 0.552 | nan | 0.371
+[19:55:39] 63 | hist_mean | none | 677.478 | 747.936 | 0.516 | nan | 0.325
+[19:55:39] 63 | drift | none | 718.486 | 788.625 | 0.546 | 0.097 | 0.333
+[19:55:39] 63 | seasonal | none | 999.111 | 1087.651 | 0.476 | 0.232 | 0.258
+[19:55:39] 63 | ar1 | none | 1832.087 | 2118.644 | 0.555 | 0.141 | 0.258
+[19:55:39] 64 | timesfm | targets_only | 493.478 | 586.257 | 0.635 | 0.035 | 0.571
+[19:55:39] 64 | timesfm | with_cov | 505.863 | 600.964 | 0.605 | 0.005 | 0.555
+[19:55:39] 64 | naive | none | 520.795 | 606.812 | 0.000 | nan | 0.500
+[19:55:39] 64 | ma90 | none | 633.083 | 701.753 | 0.553 | nan | 0.371
+[19:55:39] 64 | hist_mean | none | 680.391 | 751.689 | 0.516 | nan | 0.325
+[19:55:39] 64 | drift | none | 722.523 | 793.587 | 0.546 | 0.098 | 0.334
+[19:55:39] 64 | seasonal | none | 997.365 | 1087.185 | 0.478 | 0.236 | 0.260
+[19:55:39] 64 | ar1 | none | 1858.921 | 2149.353 | 0.553 | 0.139 | 0.256
+[19:55:39] 
+TimesFM actually ran empirically? True (status LOADED)
+[19:55:39] EVIDENCE: Real TimesFM-3 checkpoint loaded and executed; metrics above are empirical.

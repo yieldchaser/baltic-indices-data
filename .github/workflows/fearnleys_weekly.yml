@@ -2,9 +2,10 @@ name: Fearnleys Weekly TC Update
 
 on:
   schedule:
-    # Fearnleys publishes weekly TC editions on Wednesdays; run after
-    # Tuesday-night publication settles.
-    - cron: '45 6 * * 3'
+    # Fearnleys publishes weekly TC editions on Wednesdays (tankers AM, dry bulk PM).
+    # Run Wednesday afternoon at 15:45 UTC and Thursday morning catch-up at 07:45 UTC.
+    - cron: '45 15 * * 3'
+    - cron: '45 7 * * 4'
   workflow_dispatch:
 
 permissions:

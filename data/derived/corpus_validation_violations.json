@@ -1,0 +1,1162 @@
+[
+  {
+    "issue_id": "star_asia_2022_W46_Market-report-Week-46_compressed",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2050",
+    "expected_behavior": "Expected year between 1980 and 2023",
+    "remediation_applied": "Transposed to 2022"
+  },
+  {
+    "issue_id": "star_asia_2023_W01_Market-report-Week-1",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 30.12.2023, Beaching: 07.01.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2023_W02_4ece41_905c570b8aea4c2f9eee42aaab91f07a_compressed",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 30.12.2023, Beaching: 07.01.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2023_W04_Market-report-Week-4",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 30.12.2023, Beaching: 07.01.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2023_W04_Market-report-Week-4",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 27.12.2023, Beaching: 13.01.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2023_W10_4ece41_45ece0f8ea9145d78123bf43df625956",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2047",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W12_Market-report-Week-12",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2107",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W15_Market-report-Week-15",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2041",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W15_Market-report-Week-15",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2042",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W16_Market-report-Week-16",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 13.04.2023, Beaching: 22.03.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2023_W17_Market-report-Week-17",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 13.04.2023, Beaching: 22.03.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2023_W20_Market-report-Week-20",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2060",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W23_Market-report-Week-23",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2080",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W37_Market-report-Week-37",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2600",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W41_Market-report-Week-41",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2045",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W41_Market-report-Week-41",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2045",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W50_4ece41_8eca7ebe14fc4074889f62bc8711f436",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2050",
+    "expected_behavior": "Expected year between 1980 and 2024",
+    "remediation_applied": "Transposed to 2023"
+  },
+  {
+    "issue_id": "star_asia_2023_W50_4ece41_8eca7ebe14fc4074889f62bc8711f436",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 09.12.2023, Beaching: 02.12.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2023_W51_Market-report-Week-51",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 09.12.2023, Beaching: 02.12.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W02_Market-report-Week-2",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 05.01.2024, Beaching: 11.01.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W03_Market-report-Week-3",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 05.01.2024, Beaching: 11.01.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W04_Market-report-Week-4",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 19.01.2024, Beaching: 18.01.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W04_Market-report-Week-4",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 05.01.2024, Beaching: 11.01.2023",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W20_Market-report-Week-20",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 25.05.2024, Beaching: 07.05.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W21_Market-report-Week-21",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 25.05.2024, Beaching: 07.05.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W30_Market-report-Week-30",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2696",
+    "expected_behavior": "Expected year between 1980 and 2025",
+    "remediation_applied": "Transposed to 2024"
+  },
+  {
+    "issue_id": "star_asia_2024_W32_Market-report-Week-32",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 03.08.2024, Beaching: 03.04.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W33_Market-report-Week-33",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2047",
+    "expected_behavior": "Expected year between 1980 and 2025",
+    "remediation_applied": "Transposed to 2024"
+  },
+  {
+    "issue_id": "star_asia_2024_W33_Market-report-Week-33",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2047",
+    "expected_behavior": "Expected year between 1980 and 2025",
+    "remediation_applied": "Transposed to 2024"
+  },
+  {
+    "issue_id": "star_asia_2024_W33_Market-report-Week-33",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2047",
+    "expected_behavior": "Expected year between 1980 and 2025",
+    "remediation_applied": "Transposed to 2024"
+  },
+  {
+    "issue_id": "star_asia_2024_W33_Market-report-Week-33",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2047",
+    "expected_behavior": "Expected year between 1980 and 2025",
+    "remediation_applied": "Transposed to 2024"
+  },
+  {
+    "issue_id": "star_asia_2024_W33_Market-report-Week-33",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 03.08.2024, Beaching: 03.04.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W34_Market-report-Week-34",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 03.08.2024, Beaching: 03.04.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2024_W35_Market-report-Week-35",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 03.08.2024, Beaching: 03.04.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W01_Market-report-Week-12",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 29.12.2025, Beaching: 04.01.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W01_Market-report-Week-12",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.12.2025, Beaching: 03.01.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W03_Market-report-Week-3",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 29.12.2025, Beaching: 04.01.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W03_Market-report-Week-3",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.12.2025, Beaching: 03.01.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W04_Market-report-Week-4",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 29.12.2025, Beaching: 04.01.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W04_Market-report-Week-4",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.12.2025, Beaching: 03.01.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W05_Market-report-Week-5",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2070",
+    "expected_behavior": "Expected year between 1980 and 2026",
+    "remediation_applied": "Transposed to 2025"
+  },
+  {
+    "issue_id": "star_asia_2025_W05_Market-report-Week-5",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 29.12.2025, Beaching: 04.01.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W05_Market-report-Week-5",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.12.2025, Beaching: 03.01.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W10_Market-report-Week-10",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2040",
+    "expected_behavior": "Expected year between 1980 and 2026",
+    "remediation_applied": "Transposed to 2025"
+  },
+  {
+    "issue_id": "star_asia_2025_W11_Market-report-Week-11",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 14.02.2025, Beaching: 12.03.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W12_Market-report-Week-12",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 08.03.2025, Beaching: 21.02.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W12_Market-report-Week-12",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 14.02.2025, Beaching: 12.03.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W13_Market-report-Week-13",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 08.03.2025, Beaching: 21.02.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W13_Market-report-Week-13",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 14.02.2025, Beaching: 12.03.2024",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2025_W16_Market-report-Week-16",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2050",
+    "expected_behavior": "Expected year between 1980 and 2026",
+    "remediation_applied": "Transposed to 2025"
+  },
+  {
+    "issue_id": "star_asia_2025_W17_Market-report-Week-17",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2047",
+    "expected_behavior": "Expected year between 1980 and 2026",
+    "remediation_applied": "Transposed to 2025"
+  },
+  {
+    "issue_id": "star_asia_2025_W47_Market-report-Week-47",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2205",
+    "expected_behavior": "Expected year between 1980 and 2026",
+    "remediation_applied": "Transposed to 2025"
+  },
+  {
+    "issue_id": "star_asia_2025_W48_Market-report-Week-48",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2205",
+    "expected_behavior": "Expected year between 1980 and 2026",
+    "remediation_applied": "Transposed to 2025"
+  },
+  {
+    "issue_id": "star_asia_2026_W03_Market-report-Week-3",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 07.07.2026, Beaching: 09.01.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W04_Market-report-Week-4",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 15.01.2026, Beaching: 10.01.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W04_Market-report-Week-4",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 07.07.2026, Beaching: 09.01.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W05_Market-report-Week-5",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 15.01.2026, Beaching: 10.01.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W05_Market-report-Week-5",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 07.07.2026, Beaching: 09.01.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W06_Market-report-Week-6",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 29.01.2026, Beaching: 06.02.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W07_Market-report-Week-7",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 29.01.2026, Beaching: 06.02.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W08_Market-report-Week-8",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W08_Market-report-Week-8",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 29.01.2026, Beaching: 06.02.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W08_Market-report-Week-8",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 07.07.2026, Beaching: 15.02.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W09_Market-report-Week-9",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W09_Market-report-Week-9",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 29.01.2026, Beaching: 06.02.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W09_Market-report-Week-9",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 07.07.2026, Beaching: 15.02.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W11_Market-report-Week-11",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 16.03.2026, Beaching: 01.03.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W12_Market-report-Week-12",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W12_Market-report-Week-12",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 16.03.2026, Beaching: 01.03.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W15_Market-report-Week-15",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2300",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W15_Market-report-Week-15",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W15_Market-report-Week-15",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W15_Market-report-Week-15",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W16_Market-report-Week-16",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W16_Market-report-Week-16",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W16_Market-report-Week-16",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W16_Market-report-Week-16",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W17_Market-report-Week-17",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W17_Market-report-Week-17",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W17_Market-report-Week-17",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W17_Market-report-Week-17",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W17_Market-report-Week-17",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W18_Market-report-Week-18",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W18_Market-report-Week-18",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2040",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W24_Market-Report-Week-24",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W25_Market-Report-Week-25",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W26_Market-Report-Week-26",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W26_Market-Report-Week-26",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W28_Market-Report-Week-28-2",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W28_Market-Report-Week-28-2",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W28_Market-Report-Week-28-2",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 06.07.2026, Beaching: 11.06.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W29_Market-Report-Week-29",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W29_Market-Report-Week-29",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W29_Market-Report-Week-29",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 06.07.2026, Beaching: 11.06.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W30_Market-Report-Week-30",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W30_Market-Report-Week-30",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W30_Market-Report-Week-30",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 04.07.2026, Beaching: 18.06.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W30_Market-Report-Week-30",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 06.07.2026, Beaching: 11.06.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W31_Market-Report-Week-31",
+    "rule_id": "FUTURE_DATE_EXCEEDS_REPORT",
+    "severity": "WARNING",
+    "page": 12,
+    "field_name": "date",
+    "source_value": "31.07.2027",
+    "expected_behavior": "Date year should not exceed report year 2026",
+    "remediation_applied": "Corrected year to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W33_Market-Report-Week-33",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W33_Market-Report-Week-33",
+    "rule_id": "FUTURE_DATE_EXCEEDS_REPORT",
+    "severity": "WARNING",
+    "page": 12,
+    "field_name": "date",
+    "source_value": "31.07.2027",
+    "expected_behavior": "Date year should not exceed report year 2026",
+    "remediation_applied": "Corrected year to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W33_Market-Report-Week-33",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.07.2027, Beaching: 04.08.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W33_Market-Report-Week-33",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 01.08.2026, Beaching: 14.08.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W33_Market-Report-Week-33",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.07.2026, Beaching: 13.08.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W34_Market-Report-Week-34",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W34_Market-Report-Week-34",
+    "rule_id": "FUTURE_DATE_EXCEEDS_REPORT",
+    "severity": "WARNING",
+    "page": 12,
+    "field_name": "date",
+    "source_value": "31.07.2027",
+    "expected_behavior": "Date year should not exceed report year 2026",
+    "remediation_applied": "Corrected year to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W34_Market-Report-Week-34",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.07.2027, Beaching: 04.08.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W34_Market-Report-Week-34",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 01.08.2026, Beaching: 14.08.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W34_Market-Report-Week-34",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.07.2026, Beaching: 13.08.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W35_Market-Report-Week-35",
+    "rule_id": "CENTURY_TYPO",
+    "severity": "ERROR",
+    "page": 12,
+    "field_name": "year",
+    "source_value": "2206",
+    "expected_behavior": "Expected year between 1980 and 2027",
+    "remediation_applied": "Transposed to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W35_Market-Report-Week-35",
+    "rule_id": "FUTURE_DATE_EXCEEDS_REPORT",
+    "severity": "WARNING",
+    "page": 12,
+    "field_name": "date",
+    "source_value": "31.07.2027",
+    "expected_behavior": "Date year should not exceed report year 2026",
+    "remediation_applied": "Corrected year to 2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W35_Market-Report-Week-35",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.07.2027, Beaching: 04.08.2026",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W35_Market-Report-Week-35",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 01.08.2026, Beaching: 14.08.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W35_Market-Report-Week-35",
+    "rule_id": "BEACHING_PRECEDES_ARRIVAL",
+    "severity": "ERROR",
+    "page": 13,
+    "field_name": "beaching_date",
+    "source_value": "Arrival: 31.07.2026, Beaching: 13.08.2025",
+    "expected_behavior": "Beaching date must be >= arrival date",
+    "remediation_applied": "Adjusted beaching year/month alignment"
+  },
+  {
+    "issue_id": "star_asia_2026_W35_Market-Report-Week-35",
+    "rule_id": "DATE_PUNCTUATION_TYPO",
+    "severity": "WARNING",
+    "page": 13,
+    "field_name": "date_syntax",
+    "source_value": "27,08.2026",
+    "expected_behavior": "Standard DD.MM.YYYY dot format",
+    "remediation_applied": "27.08.2026"
+  },
+  {
+    "issue_id": "star_asia_2026_W35_Market-Report-Week-35",
+    "rule_id": "UNFILLED_PLACEHOLDER",
+    "severity": "WARNING",
+    "page": 3,
+    "field_name": "market_commentary",
+    "source_value": "xx%",
+    "expected_behavior": "Evaluated numeric percentage",
+    "remediation_applied": "NULL (quarantined placeholder)"
+  }
+]

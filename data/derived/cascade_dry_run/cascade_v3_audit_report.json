@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-06T06:39:10.768788+00:00",
+  "pipeline_version": "V3 - Self-Ensembling VLM + Intersection Trajectory Engine + Dynamic Weights",
+  "metrics": {
+    "total_points": 147,
+    "avg_confidence_v1": 86.7,
+    "avg_confidence_v2": 91.4,
+    "avg_confidence_v3": 92.843537414966,
+    "pass_rate_v1_pct": 17.7,
+    "pass_rate_v2_pct": 78.9,
+    "pass_rate_v3_pct": 76.19047619047619,
+    "review_rate_v1_pct": 82.3,
+    "review_rate_v2_pct": 21.1,
+    "review_rate_v3_pct": 23.809523809523807,
+    "intersection_zones_detected": 55,
+    "intersection_zones_resolved": 20,
+    "regressions_count": 23
+  },
+  "output_csv": "data/derived/cascade_dry_run\\star_asia_chart_v3_reconciled.csv"
+}
