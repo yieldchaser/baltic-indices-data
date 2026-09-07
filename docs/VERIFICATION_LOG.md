@@ -13,6 +13,52 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-07 07:55 UTC — `agent/muse-spark` @ `36a331f3b` — **PASS WITH CHANGES. One defect blocks the live run: the tie-out passes tables it did not verify.**
+
+Four directives from the Decision 2 queue, checked one at a time.
+
+| # | Directive | Status |
+|---|---|---|
+| 1 | Strip hosted venues, PaddleOCR-only, `enable_mkldnn=False` mandatory | **DONE**. `reocr_pilot.yml` and `ci_support.py` deleted (392 lines). Grep for `ollama|nvidia|nim|api_key|OPENROUTER|GROQ` over `reocr_pilot.py` returns only prose in the header explaining the removal. `enable_mkldnn=False` on both `PaddleOCR(...)` constructions (lines 96, 100), with the CPU-crash reason cited inline. |
+| 2 | Hash-dedupe 35 → 26, logos out, freed slots to real charts | **DONE**. `pilot_image_set.jsonl` is 26 entries. Two logos deliberately retained and labelled `LOGO-CONTROL`, which is better than dropping them — they exercise the empty-result path. |
+| 3 | Arithmetic tie-out replaces separator-only correction | **BUILT, DEFECTIVE — see below.** Separator detection is correctly demoted to a flag (`"reason": "separator_suspect"`, line 783); it no longer rewrites digits. That half is right. |
+| 4 | Local 26-image run reported before any paid venue | **NOT DONE, honestly reported.** Paddle deps are not installed on that machine; the doc says so plainly instead of claiming completion. No objection — this is the correct way to report incomplete work. |
+
+**Standing checks, all clean:** `git diff c5bfe7fb5..36a331f3b -- scripts/validate_knowledge.py` is empty (`CONTENT_GATE_MEDIAN_FLOOR` still 120, CG1 override still the only sanctioned change). Zero writes under `knowledge/trees/`, `knowledge/derived/`, `knowledge/chunks/`, `knowledge/manifests/`.
+
+**Dry-run reproduced independently** by the reviewer from a clean `git archive` of `36a331f3b`, not from the agent's reported output: `status: accepted`, `selftest: PASS`, `planted_34_438_rejected: true`, `naive_34_438_rejected: true`, `truth_31_438_accepted: true`. The fixture ground truth is now `31,438` throughout, with the subtotal proof carried in the code. GT1 is closed.
+
+### The defect: `check_tieout` returns "tie-out holds" on tables it never checked
+
+`check_tieout` (lines 349-400) builds `comp_rows` as *every other row of the same width* and then, per column, aborts with `continue` the moment any one component cell fails `_parse_int_thousands`. A skipped column contributes nothing, and the function falls through to `return True, True, "tie-out holds (components sum to printed total)"`.
+
+So an unparseable cell does not mark the column indeterminate — it silently converts the whole check into a pass, under a message asserting the arithmetic was verified.
+
+Reviewer-run, against this exact commit:
+
+```
+planted error, no header   -> (True, False, 'tieout_mismatch col=1 total=50729 components-sum=53729')
+planted error + header row -> (True, True,  'tie-out holds (components sum to printed total)')
+planted error + one ? cell -> (True, True,  'tie-out holds (components sum to printed total)')
+```
+
+Same planted `34,438`. Adding `['System','4Q19']` on top is enough to make the harness bless it. The fixture passes only because it carries no header row — real extracted tables nearly always do, and stage 2 is explicitly allowed to emit `?` for illegible cells (line 82), which is the same trigger. **The stronger the table, the more likely the check is disabled.** This is worse than having no tie-out: it produces a false assurance in the audit trail.
+
+A related generalisation gap, lower severity, currently masked by the same abort path: `_TOTAL_WORDS` contains `"system"`, and a real Vale table has several system rows (Northern, Southeastern, Southern) that are each totals of their own components. `comp_rows` = "all other rows" would sum across sibling groups and false-fail. Today the header row aborts the column before that happens; fixing the defect above exposes it.
+
+**Required before the live 26-image run:**
+
+1. Never return `ok=True` for a column that was skipped. Track per-column outcomes and return `applicable=False` with `"indeterminate"` when no column was fully judged. A table where nothing could be checked must not read as verified.
+2. Drop non-numeric rows from `comp_rows` (a header row has no parseable integer in any column) instead of aborting the column they appear in.
+3. Scope `comp_rows` to the rows belonging to that total — the contiguous run beneath it up to the next total-word row — not every same-width row in the table.
+4. Add three fixtures alongside the Vale one: planted error + header row, planted error + one `?` cell, and a two-total table. Each must reject or report indeterminate. The current fixture set cannot catch this class, which is why it shipped.
+
+Cheap variant if the run is time-pressed: `check_tieout` may keep its current logic provided a skipped column forces `applicable=False`. That alone converts a false pass into an honest "not verified" and unblocks the run; items 2-4 can follow.
+
+The direction of travel on this branch is right — hosted venues gone, separator correction demoted to a flag, ground truth fixed, incomplete work reported as incomplete. The verifier just has to fail closed, which is the whole reason it exists.
+
+---
+
 ## 2026-09-07 06:55 UTC — `agent/antigravity` @ `767060f84` — **COMPLIED. Directive satisfied.**
 
 Handover commit, docs only, zero build files. Checked line by line:
@@ -473,7 +519,7 @@ this file again.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-07 07:40 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 07:55 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -557,7 +603,7 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 
 | branch | head | last push | state |
 |---|---|---|---|
-| `agent/muse-spark` | `e705ac894` | 2026-09-06 23:32 UTC | **PASS**. Decision 1 COMPLETE and now merged to `main`. CG1 override landed (global floor untouchable). Decision 2 pilot harness built, 35 images, dry-run proven — **needs a CI run against a real vision model to produce any actual finding**. |
+| `agent/muse-spark` | `36a331f3b` | 2026-09-07 07:48 UTC | **PASS WITH CHANGES**. All-local lane landed: hosted venues stripped, PaddleOCR with `enable_mkldnn=False`, pilot set deduped 35→26, fixture truth corrected to `31,438`, separator detection demoted to a flag. Validator untouched, zero `knowledge/` writes, dry-run reproduced independently. **Blocking defect:** `check_tieout` returns "tie-out holds" for tables where a header row or a single illegible cell aborted the column — it passes the planted `34,438`. Must fail closed (return indeterminate) before the live 26-image run. Item 4 of the queue (live run) not yet executed; honestly reported as such. |
 | `agent/antigravity` | `767060f84` | 2026-09-07 06:21 UTC | **HANDOVER COMPLETE.** Reverted its log edits and restored B1-B9 verbatim; handover spec in `docs/GRAPH_LAYER_ANTIGRAVITY.md`. Lane respected, no build commits. B1-B9 open on merits; process finding closed. |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
