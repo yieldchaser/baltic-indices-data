@@ -13,6 +13,8 @@
   <script src="data/etf/snapshots/scenario_snapshots.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -3132,6 +3134,850 @@
       .intel-col + .intel-col { border-left: none; border-top: 1px solid var(--border); }
       .brief-card-header { flex-direction: column; gap: 8px; }
       .brief-card-title { font-size: 18px; }
+    }
+
+    /* ===== TRACKING & GEOSPATIAL TERMINAL STYLES ===== */
+    .tracking-hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .tracking-title-wrap h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tracking-title-wrap .tracking-sub {
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    .tracking-live-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: rgba(63, 185, 80, 0.12);
+      border: 1px solid rgba(63, 185, 80, 0.3);
+      border-radius: 20px;
+      color: #3fb950;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    .tracking-live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #3fb950;
+      box-shadow: 0 0 8px #3fb950;
+      animation: trackingBlink 1.5s infinite;
+    }
+    @keyframes trackingBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .tracking-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .tracking-kpi-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s;
+    }
+    .tracking-kpi-card:hover {
+      border-color: var(--accent);
+    }
+    .tracking-kpi-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tracking-kpi-val {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'IBM Plex Mono', monospace;
+      margin: 4px 0 2px 0;
+    }
+    .tracking-kpi-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .tracking-kpi-sub.warn { color: var(--yellow); }
+    .tracking-kpi-sub.alert { color: var(--red); }
+    .tracking-kpi-sub.good { color: var(--green); }
+    .tracking-kpi-sub.accent { color: var(--accent); }
+
+    .tracking-toolbar {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .tracking-tool-left, .tracking-tool-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tracking-pill, .tracking-status-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .tracking-pill:hover, .tracking-status-btn:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+    .tracking-pill.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 0 8px rgba(77, 154, 255, 0.35);
+    }
+    .tracking-status-btn.active {
+      background: #1c2838;
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .tracking-select {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      outline: none;
+      cursor: pointer;
+      max-width: 220px;
+    }
+    .tracking-input {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      outline: none;
+      width: 210px;
+      transition: border-color 0.15s;
+    }
+    .tracking-input:focus {
+      border-color: var(--accent);
+    }
+    .tracking-layer-chk {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      margin-left: 4px;
+    }
+    .tracking-layer-chk input[type="checkbox"] {
+      cursor: pointer;
+      accent-color: var(--accent);
+    }
+
+    .tracking-workstation {
+      display: flex;
+      gap: 16px;
+      align-items: stretch;
+      min-height: 740px;
+    }
+    .tracking-left-pane {
+      width: 480px;
+      min-width: 420px;
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .tracking-right-pane {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .tracking-subview-nav {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      background: #0d131a;
+    }
+    .tracking-subview-btn {
+      flex: 1;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 10px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .tracking-subview-btn:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .tracking-subview-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      background: rgba(77, 154, 255, 0.06);
+    }
+
+    .tracking-subview-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .tracking-table-wrap {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 660px;
+    }
+    .tracking-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      text-align: left;
+    }
+    .tracking-table th {
+      position: sticky;
+      top: 0;
+      background: #141c26;
+      color: var(--text-muted);
+      padding: 8px 10px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      z-index: 5;
+      letter-spacing: 0.03em;
+    }
+    .tracking-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #141b24;
+      color: var(--text);
+      vertical-align: middle;
+    }
+    .vessel-row {
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .vessel-row:hover {
+      background: rgba(77, 154, 255, 0.07);
+    }
+    .vessel-row.selected {
+      background: rgba(77, 154, 255, 0.16);
+      border-left: 3px solid var(--accent);
+    }
+
+    .status-badge-berth {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(63, 185, 80, 0.15);
+      color: #3fb950;
+      font-weight: 600;
+      font-size: 10px;
+      border: 1px solid rgba(63, 185, 80, 0.3);
+      white-space: nowrap;
+    }
+    .status-badge-anchor {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(227, 179, 65, 0.15);
+      color: #e3b341;
+      font-weight: 600;
+      font-size: 10px;
+      border: 1px solid rgba(227, 179, 65, 0.3);
+      white-space: nowrap;
+    }
+    .class-badge {
+      display: inline-block;
+      padding: 1px 5px;
+      border-radius: 3px;
+      background: #1c2333;
+      color: var(--text-muted);
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .tracking-table-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      border-top: 1px solid var(--border);
+      background: #0e141c;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .tracking-page-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .tracking-page-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    /* CHOKEPOINTS DIRECTORY LIST */
+    .chokepoint-dir-list {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 700px;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .cp-dir-card {
+      background: #0d1219;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .cp-dir-card:hover {
+      border-color: var(--accent);
+      background: #121922;
+      transform: translateY(-1px);
+    }
+    .cp-dir-card.selected {
+      border-color: var(--accent);
+      background: rgba(77, 154, 255, 0.1);
+      box-shadow: 0 0 10px rgba(77, 154, 255, 0.2);
+    }
+    .cp-dir-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .cp-dir-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .cp-status-tag {
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .cp-status-tag.rerouting {
+      background: rgba(248, 81, 73, 0.18);
+      color: #f85149;
+      border: 1px solid rgba(248, 81, 73, 0.4);
+    }
+    .cp-status-tag.restricted {
+      background: rgba(240, 136, 62, 0.18);
+      color: #f0883e;
+      border: 1px solid rgba(240, 136, 62, 0.4);
+    }
+    .cp-status-tag.surge {
+      background: rgba(163, 113, 247, 0.18);
+      color: #a371f7;
+      border: 1px solid rgba(163, 113, 247, 0.4);
+    }
+    .cp-status-tag.high-density {
+      background: rgba(77, 154, 255, 0.18);
+      color: #4d9aff;
+      border: 1px solid rgba(77, 154, 255, 0.4);
+    }
+    .cp-status-tag.normal {
+      background: rgba(63, 185, 80, 0.15);
+      color: #3fb950;
+      border: 1px solid rgba(63, 185, 80, 0.3);
+    }
+    .cp-dir-metrics {
+      display: flex;
+      gap: 12px;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .cp-metric-chip strong {
+      color: #fff;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    /* DISTANCE & REROUTING CALCULATOR */
+    .dist-calc-panel {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      overflow-y: auto;
+    }
+    .dist-input-row {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .dist-input-row label {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .dist-select, .dist-input {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 7px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      outline: none;
+    }
+    .dist-calc-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 12px;
+      cursor: pointer;
+      margin-top: 4px;
+      transition: background 0.15s;
+    }
+    .dist-calc-btn:hover {
+      background: #3983e8;
+    }
+    .dist-results-card {
+      background: #0e141c;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .dist-res-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #1c2333;
+    }
+    .dist-res-row span { color: var(--text-muted); }
+    .dist-res-row strong { color: #fff; font-family: 'IBM Plex Mono', monospace; }
+
+    /* LEAFLET MAP WORKSPACE */
+    #trackingMapContainer {
+      height: 560px;
+      min-height: 520px;
+      position: relative;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      background: #06090e;
+    }
+    #trackingMap {
+      width: 100%;
+      height: 100%;
+      background: #06090e;
+    }
+
+    /* Dark theme overrides for Leaflet */
+    .leaflet-container {
+      background: #06090e !important;
+      font-family: 'IBM Plex Sans', -apple-system, sans-serif !important;
+    }
+    .leaflet-bar {
+      border: 1px solid var(--border) !important;
+      border-radius: 4px !important;
+      overflow: hidden;
+    }
+    .leaflet-bar a {
+      background: #111820 !important;
+      color: #d4dce8 !important;
+      border-bottom: 1px solid var(--border) !important;
+    }
+    .leaflet-bar a:hover {
+      background: #1b2432 !important;
+      color: #fff !important;
+    }
+    .leaflet-popup-content-wrapper {
+      background: #111820 !important;
+      color: #d4dce8 !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 8px !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+      padding: 0 !important;
+      overflow: hidden;
+    }
+    .leaflet-popup-content {
+      margin: 0 !important;
+      line-height: 1.4 !important;
+    }
+    .leaflet-popup-tip {
+      background: #111820 !important;
+      border: 1px solid var(--border) !important;
+    }
+
+    /* Map Overlays */
+    .map-active-hud {
+      position: absolute;
+      top: 12px;
+      left: 60px;
+      z-index: 1000;
+      background: rgba(17, 24, 32, 0.9);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      pointer-events: auto;
+    }
+    .map-legend-overlay {
+      position: absolute;
+      bottom: 16px;
+      left: 12px;
+      z-index: 1000;
+      background: rgba(17, 24, 32, 0.9);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      pointer-events: auto;
+    }
+    .map-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-muted);
+    }
+    .map-legend-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+    .map-legend-dot.berth { background: #3fb950; box-shadow: 0 0 5px #3fb950; }
+    .map-legend-dot.anchor { background: #e3b341; box-shadow: 0 0 5px #e3b341; }
+    .map-legend-dot.reroute { background: #f85149; box-shadow: 0 0 5px #f85149; }
+    .map-legend-dot.strait { background: #4d9aff; box-shadow: 0 0 5px #4d9aff; }
+    .map-coords-overlay {
+      position: absolute;
+      bottom: 16px;
+      right: 12px;
+      z-index: 1000;
+      background: rgba(17, 24, 32, 0.85);
+      border: 1px solid var(--border);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-family: 'IBM Plex Mono', monospace;
+      color: var(--text-muted);
+    }
+
+    /* Custom SVG Markers */
+    .vessel-marker-berth, .vessel-marker-anchor {
+      background: none !important;
+      border: none !important;
+    }
+    .vessel-dot {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .anchor-pulse {
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(227, 179, 65, 0.3);
+      animation: anchorPulse 2s infinite ease-out;
+    }
+    @keyframes anchorPulse {
+      0% { transform: scale(0.6); opacity: 0.8; }
+      100% { transform: scale(1.8); opacity: 0; }
+    }
+
+    .chokepoint-beacon-pin {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(17, 24, 32, 0.95);
+      border: 2px solid var(--cp-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px var(--cp-glow);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .chokepoint-beacon-pin:hover {
+      transform: scale(1.25);
+    }
+    .cp-pulse-ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 1.5px solid var(--cp-color);
+      opacity: 0.7;
+      animation: cpSonar 2.5s infinite cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    @keyframes cpSonar {
+      0% { transform: scale(0.8); opacity: 0.9; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+    .cp-inner-dot {
+      color: var(--cp-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .port-hub-pin {
+      background: #1c2838;
+      border: 1.5px solid var(--accent);
+      border-radius: 12px;
+      padding: 1px 7px;
+      box-shadow: 0 0 8px rgba(77, 154, 255, 0.4);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+    .port-hub-pin:hover {
+      transform: scale(1.15);
+      background: var(--accent);
+    }
+    .port-hub-badge {
+      font-size: 10px;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    /* Signal Ocean-style Vessel Particulars Popup Card */
+    .signal-vessel-popup {
+      padding: 14px;
+      min-width: 250px;
+      font-size: 11px;
+    }
+    .signal-vessel-head {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+    }
+    .signal-vessel-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .signal-vessel-sub {
+      color: var(--text-muted);
+      font-size: 11px;
+      margin-top: 2px;
+    }
+    .signal-vessel-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 12px;
+      margin-bottom: 10px;
+    }
+    .signal-field-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .signal-field-val {
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .signal-vessel-btn {
+      width: 100%;
+      background: #1c2838;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      padding: 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 11px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.15s;
+    }
+    .signal-vessel-btn:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* LOWER CHOKEPOINT & CANAL TRANSIT ANALYTICS DRAWER */
+    .chokepoint-drawer {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .cp-drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+    .cp-drawer-title-wrap h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cp-drawer-title-wrap .cp-region {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .cp-kpis-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px;
+    }
+    .cp-kpi-tile {
+      background: #0d1219;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 12px;
+    }
+    .cp-kpi-tile-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .cp-kpi-tile-val {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'IBM Plex Mono', monospace;
+      margin-top: 2px;
+    }
+    .cp-kpi-tile-sub {
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+    .cp-controls-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .cp-btn-group {
+      display: flex;
+      gap: 4px;
+    }
+    .cp-toggle-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .cp-toggle-btn:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+    .cp-toggle-btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .cp-narrative-note {
+      font-size: 11px;
+      color: var(--text-muted);
+      background: #0a0e14;
+      border-left: 3px solid var(--accent);
+      padding: 6px 10px;
+      border-radius: 0 4px 4px 0;
+      line-height: 1.4;
     }
 
 
@@ -8455,6 +9301,7 @@
     <button class="tab-btn" data-tab="etfs">ETFs</button>
     <button class="tab-btn" data-tab="signals">Signals</button>
     <button class="tab-btn" data-tab="intelligence">Intelligence</button>
+    <button class="tab-btn" data-tab="tracking">Tracking</button>
   </div>
   </div><!-- /tabs-bar-outer -->
 
@@ -11662,6 +12509,278 @@ if (intelTabsContainer) {
       </div>
 
     </div><!-- /tab-intelligence -->
+
+    <div class="tab-panel" id="tab-tracking">
+      <!-- HERO HEADER -->
+      <div class="tracking-hero">
+        <div class="tracking-title-wrap">
+          <h2>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="22" y1="12" x2="18" y2="12"></line>
+              <line x1="6" y1="12" x2="2" y2="12"></line>
+              <line x1="12" y1="6" x2="12" y2="2"></line>
+              <line x1="12" y1="22" x2="12" y2="18"></line>
+            </svg>
+            Global Tracking &amp; Strategic Chokepoints Terminal
+          </h2>
+          <div class="tracking-sub">Live Global Port Lineups, AIS Vessel Concentrations &amp; Strategic Maritime Chokepoints Intelligence</div>
+        </div>
+        <div class="tracking-live-tag">
+          <span class="tracking-live-dot"></span>
+          LIVE AIS DATA FEED
+        </div>
+      </div>
+
+      <!-- 6-KPI HUD STRIP -->
+      <div class="tracking-kpi-grid">
+        <div class="tracking-kpi-card">
+          <div class="tracking-kpi-label">Monitored Vessels <span>🚢</span></div>
+          <div class="tracking-kpi-val" id="hudTrackedHulls">740</div>
+          <div class="tracking-kpi-sub accent">27 Global Strategic Hubs</div>
+        </div>
+        <div class="tracking-kpi-card">
+          <div class="tracking-kpi-label">Waiting at Anchor <span>⚓</span></div>
+          <div class="tracking-kpi-val" id="hudWaitingAnchor" style="color:var(--yellow);">306</div>
+          <div class="tracking-kpi-sub warn">Congestion Bottlenecks</div>
+        </div>
+        <div class="tracking-kpi-card">
+          <div class="tracking-kpi-label">Operating at Berth <span>🏗️</span></div>
+          <div class="tracking-kpi-val" id="hudOperatingBerth" style="color:var(--green);">434</div>
+          <div class="tracking-kpi-sub good">Active Loading / Discharging</div>
+        </div>
+        <div class="tracking-kpi-card">
+          <div class="tracking-kpi-label">Strategic Chokepoints <span>🌐</span></div>
+          <div class="tracking-kpi-val" id="hudChokepointsCount">28</div>
+          <div class="tracking-kpi-sub">Canals, Straits &amp; Passages</div>
+        </div>
+        <div class="tracking-kpi-card">
+          <div class="tracking-kpi-label">Red Sea / Bab el-Mandeb <span>⚠️</span></div>
+          <div class="tracking-kpi-val" id="hudRedSeaDiverted" style="color:var(--red);">-73.1%</div>
+          <div class="tracking-kpi-sub alert">vs Pre-Houthi Crisis Baseline</div>
+        </div>
+        <div class="tracking-kpi-card">
+          <div class="tracking-kpi-label">Cape of Good Hope <span>🌊</span></div>
+          <div class="tracking-kpi-val" id="hudCapeSurge" style="color:#a371f7;">+75.6%</div>
+          <div class="tracking-kpi-sub accent">+14.5 Days Ton-Mile Surge</div>
+        </div>
+      </div>
+
+      <!-- FILTER & SLICER TOOLBAR -->
+      <div class="tracking-toolbar">
+        <div class="tracking-tool-left">
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-right:4px;">CLASS:</div>
+          <button class="tracking-pill active" data-class="all" onclick="setTrackingClass('all')">All Classes</button>
+          <button class="tracking-pill" data-class="Tanker" onclick="setTrackingClass('Tanker')">Tankers</button>
+          <button class="tracking-pill" data-class="Dry Bulk" onclick="setTrackingClass('Dry Bulk')">Dry Bulk</button>
+          <button class="tracking-pill" data-class="LPG" onclick="setTrackingClass('LPG')">LPG</button>
+          <button class="tracking-pill" data-class="LNG" onclick="setTrackingClass('LNG')">LNG</button>
+
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:8px; margin-right:4px;">STATUS:</div>
+          <button class="tracking-status-btn active" data-status="all" onclick="setTrackingStatus('all')">All</button>
+          <button class="tracking-status-btn" data-status="Waiting at anchor" onclick="setTrackingStatus('Waiting at anchor')">At Anchor</button>
+          <button class="tracking-status-btn" data-status="Operating at berth" onclick="setTrackingStatus('Operating at berth')">At Berth</button>
+
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:12px; margin-right:4px;">LAYERS:</div>
+          <label class="tracking-layer-chk"><input type="checkbox" id="layerVessels" checked onchange="toggleTrackingLayer('vessels')"> AIS Vessels</label>
+          <label class="tracking-layer-chk"><input type="checkbox" id="layerChokepoints" checked onchange="toggleTrackingLayer('chokepoints')"> Chokepoints</label>
+          <label class="tracking-layer-chk"><input type="checkbox" id="layerPorts" checked onchange="toggleTrackingLayer('ports')"> Ports</label>
+          <label class="tracking-layer-chk"><input type="checkbox" id="layerRiskZones" checked onchange="toggleTrackingLayer('riskZones')"> Risk Zones</label>
+        </div>
+        <div class="tracking-tool-right">
+          <select id="trackingPortSelect" class="tracking-select" onchange="onTrackingPortChange()">
+            <option value="all">All Monitored Ports (27 Hubs)</option>
+          </select>
+          <input type="text" id="trackingSearchInput" class="tracking-input" placeholder="Search vessel, IMO, cargo..." oninput="onTrackingSearchInput()">
+        </div>
+      </div>
+
+      <!-- WORKSTATION (SPLIT PANE: LEFT TABLE/DIRECTORIES, RIGHT MAP/DRAWER) -->
+      <div class="tracking-workstation">
+        <!-- Left Pane: Lineup, Chokepoint Directory, Distance Tool -->
+        <div class="tracking-left-pane">
+          <div class="tracking-subview-nav">
+            <button id="subnavLineup" class="tracking-subview-btn active" onclick="setTrackingSubView('lineup')">
+              Port Lineup (<span id="lineupCountBadge">740</span>)
+            </button>
+            <button id="subnavChokepoints" class="tracking-subview-btn" onclick="setTrackingSubView('chokepoints')">
+              Chokepoints Ledger (28)
+            </button>
+            <button id="subnavDistance" class="tracking-subview-btn" onclick="setTrackingSubView('distance')">
+              Distance &amp; Routing
+            </button>
+          </div>
+
+          <!-- Subview 1: Port Lineup -->
+          <div id="subviewLineup" class="tracking-subview-content" style="display:flex;">
+            <div class="tracking-table-wrap">
+              <table class="tracking-table">
+                <thead>
+                  <tr>
+                    <th>Vessel / IMO</th>
+                    <th>Class</th>
+                    <th>Port</th>
+                    <th>Wait</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="trackingTableBody">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+            <div class="tracking-table-footer">
+              <span id="trackingPageInfo">Showing 1–50 of 740</span>
+              <div style="display:flex; gap:6px;">
+                <button id="btnTrackingPrev" class="tracking-page-btn" onclick="prevTrackingPage()">Prev</button>
+                <button id="btnTrackingNext" class="tracking-page-btn" onclick="nextTrackingPage()">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subview 2: Chokepoints Ledger Directory -->
+          <div id="subviewChokepoints" class="tracking-subview-content" style="display:none;">
+            <div id="chokepointDirList" class="chokepoint-dir-list">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Subview 3: Distance & Routing Calculator -->
+          <div id="subviewDistance" class="tracking-subview-content" style="display:none;">
+            <div class="dist-calc-panel">
+              <div style="font-size:12px; font-weight:700; color:#fff;">Maritime Routing &amp; Cape Delay Calculator</div>
+              <div class="dist-input-row">
+                <label for="distOriginPort">Origin Port / Terminal</label>
+                <select id="distOriginPort" class="dist-select" onchange="runDistanceCalculation()">
+                  <option value="SARRT" selected>Ras Tanura (Saudi Arabia - Persian Gulf)</option>
+                  <option value="AEFJR">Fujairah (UAE - Bunker Hub)</option>
+                  <option value="SGSIN">Singapore (Strait of Malacca)</option>
+                  <option value="INSIK">Sikka / Jamnagar (India)</option>
+                  <option value="USHOU">Houston (US Gulf Coast)</option>
+                  <option value="AUPHE">Port Hedland (Australia - Iron Ore)</option>
+                  <option value="DZAZW">Arzew (Algeria - LNG)</option>
+                </select>
+              </div>
+              <div class="dist-input-row">
+                <label for="distDestPort">Destination Port / Hub</label>
+                <select id="distDestPort" class="dist-select" onchange="runDistanceCalculation()">
+                  <option value="NLRTM" selected>Rotterdam (Netherlands - ARA Range)</option>
+                  <option value="CNQDG">Qingdao (China)</option>
+                  <option value="CNNGB">Ningbo-Zhoushan (China)</option>
+                  <option value="KRUSN">Ulsan (Korea)</option>
+                  <option value="JPYOK">Yokohama (Japan)</option>
+                  <option value="USCRP">Corpus Christi (US Gulf)</option>
+                </select>
+              </div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <div class="dist-input-row">
+                  <label for="distSpeedKnots">Speed (knots)</label>
+                  <input type="number" id="distSpeedKnots" class="dist-input" value="13.0" step="0.5" min="8" max="22" oninput="runDistanceCalculation()">
+                </div>
+                <div class="dist-input-row">
+                  <label for="distBunkerBurn">Burn Rate (MT/d)</label>
+                  <input type="number" id="distBunkerBurn" class="dist-input" value="32.0" step="1" min="10" max="100" oninput="runDistanceCalculation()">
+                </div>
+              </div>
+              <button class="dist-calc-btn" onclick="plotDistanceRouteOnMap()">Plot Maritime Route Path</button>
+              <div id="distResultsCard" class="dist-results-card">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Pane: Interactive Leaflet Map & Chokepoint Transit Analytics Drawer -->
+        <div class="tracking-right-pane">
+          <!-- Leaflet Map Container -->
+          <div id="trackingMapContainer">
+            <div class="map-active-hud">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+              <span id="mapHudDetail">740 vessels rendered across 27 ports</span>
+            </div>
+
+            <div class="map-legend-overlay">
+              <div class="map-legend-item"><span class="map-legend-dot berth"></span> At Berth (Discharging/Loading)</div>
+              <div class="map-legend-item"><span class="map-legend-dot anchor"></span> At Anchor (Waiting)</div>
+              <div class="map-legend-item"><span class="map-legend-dot strait"></span> Strategic Maritime Chokepoint</div>
+              <div class="map-legend-item"><span class="map-legend-dot reroute"></span> High-Risk Conflict Rerouting Zone</div>
+            </div>
+
+            <div id="mapCoordsOverlay" class="map-coords-overlay">Lat: 20.00°, Lon: 45.00°</div>
+
+            <!-- Map Canvas -->
+            <div id="trackingMap"></div>
+          </div>
+
+          <!-- Lower Drawer: Chokepoint & Strategic Canal Transit Analytics -->
+          <div class="chokepoint-drawer" id="chokepointAnalyticsDrawer">
+            <div class="cp-drawer-header">
+              <div class="cp-drawer-title-wrap">
+                <h3>
+                  <span id="cpDrawerName">Bab el-Mandeb Strait</span>
+                  <span id="cpDrawerStatusTag" class="cp-status-tag rerouting">ACTIVE REROUTING</span>
+                </h3>
+                <div class="cp-region" id="cpDrawerRegion">Red Sea / Gulf of Aden · Global Container &amp; Crude Artery</div>
+              </div>
+              <div class="cp-btn-group">
+                <button class="cp-toggle-btn active" data-range="all" onclick="setChokepointRange('all')">Max (2019-2026)</button>
+                <button class="cp-toggle-btn" data-range="3y" onclick="setChokepointRange('3y')">3Y</button>
+                <button class="cp-toggle-btn" data-range="1y" onclick="setChokepointRange('1y')">1Y</button>
+                <button class="cp-toggle-btn" data-range="90d" onclick="setChokepointRange('90d')">90D Daily</button>
+              </div>
+            </div>
+
+            <div class="cp-narrative-note" id="cpDrawerNote">
+              <strong>Red Sea Rerouting Crisis</strong>: Houthi strikes force Asia-Europe vessels to bypass Suez/Bab el-Mandeb, steaming around the Cape of Good Hope (+3,500 NM, +14.5 days).
+            </div>
+
+            <div class="cp-kpis-strip">
+              <div class="cp-kpi-tile">
+                <div class="cp-kpi-tile-label">7D Transit Rate</div>
+                <div class="cp-kpi-tile-val" id="cpKpiDaily">22.4 / day</div>
+                <div class="cp-kpi-tile-sub" id="cpKpiBaseline">Baseline: 70.2 / day</div>
+              </div>
+              <div class="cp-kpi-tile">
+                <div class="cp-kpi-tile-label">Baseline Disruption</div>
+                <div class="cp-kpi-tile-val alert" id="cpKpiDiverted">-73.1%</div>
+                <div class="cp-kpi-tile-sub">Structural Diversion</div>
+              </div>
+              <div class="cp-kpi-tile">
+                <div class="cp-kpi-tile-label">Cape Voyage Delay</div>
+                <div class="cp-kpi-tile-val warn" id="cpKpiDaysAdded">+14.5 Days</div>
+                <div class="cp-kpi-tile-sub">via Cape of Good Hope</div>
+              </div>
+              <div class="cp-kpi-tile">
+                <div class="cp-kpi-tile-label">Tonne-Mile Expansion</div>
+                <div class="cp-kpi-tile-val" id="cpKpiTonneMile" style="color:#a371f7;">+28.4%</div>
+                <div class="cp-kpi-tile-sub">Absorbs Excess Fleet Supply</div>
+              </div>
+            </div>
+
+            <div class="cp-controls-bar">
+              <div class="cp-btn-group">
+                <button class="cp-toggle-btn active" data-metric="total" onclick="setChokepointMetric('total')">All Vessels</button>
+                <button class="cp-toggle-btn" data-metric="tanker" onclick="setChokepointMetric('tanker')">Tankers</button>
+                <button class="cp-toggle-btn" data-metric="bulk" onclick="setChokepointMetric('bulk')">Dry Bulk</button>
+                <button class="cp-toggle-btn" data-metric="container" onclick="setChokepointMetric('container')">Containers</button>
+                <button class="cp-toggle-btn" data-metric="capacity" onclick="setChokepointMetric('capacity')">Capacity (DWT)</button>
+              </div>
+              <div style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">
+                Source: AIS Daily Transit Observation &amp; IMF PortWatch (2019–2026)
+              </div>
+            </div>
+
+            <div style="height:220px; position:relative; width:100%;">
+              <canvas id="chokepointChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /tab-tracking -->
+
   <!-- /main -->
 
 
@@ -11713,6 +12832,9 @@ if (intelTabsContainer) {
       tanker_forward_curves_history: [],
       lngCharter: [],
       lng_charter: [],
+      portLineups: [],
+      chokepointSummary: null,
+      chokepointMetrics: [],
       tceMatrix: null,
       tce_matrix: null,
       wciTracker: [],
@@ -13069,6 +14191,38 @@ if (intelTabsContainer) {
           }).filter(row => row.date != null);
         });
 
+        const portLineupsPromise = safeFetch('data/geospatial/port_lineups_active.csv', 'Active Port Lineups', [], r => {
+          DATA.portLineups = (r || []).map(row => ({
+            port_locode: (row.port_locode || '').trim(),
+            portname: (row.portname || '').trim(),
+            country: (row.country || '').trim(),
+            asset_class: (row.asset_class || '').trim(),
+            vessel_name: (row.vessel_name || '').trim(),
+            imo_number: (row.imo_number || '').trim(),
+            dwt: parseInt(row.dwt, 10) || 0,
+            operational_status: (row.operational_status || '').trim(),
+            arrival_timestamp: (row.arrival_timestamp || '').trim(),
+            days_waiting: parseFloat(row.days_waiting) || 0,
+            cargo_type: (row.cargo_type || '').trim(),
+            lat: parseFloat(row.lat) || 0,
+            lon: parseFloat(row.lon) || 0
+          }));
+        });
+
+        const chokepointSummaryPromise = fetch('data/congestion/chokepoint_geo_summary.json')
+          .then(res => res.ok ? res.json() : null)
+          .then(data => {
+            DATA.chokepointSummary = data;
+          })
+          .catch(err => {
+            console.warn('[chokepointSummary fetch error]', err);
+            DATA.chokepointSummary = null;
+          });
+
+        const chokepointMetricsPromise = safeFetch('data/derived/chokepoint_transit_metrics.csv', 'Chokepoint Transit Metrics', [], r => {
+          DATA.chokepointMetrics = r || [];
+        });
+
         const allPromisesList = [
           ...indexPromises,
           bdryPromise, bwetPromise, bdryPdPromise, bwetPdPromise,
@@ -13081,6 +14235,7 @@ if (intelTabsContainer) {
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
           sgxOreForwardPromise,
+          portLineupsPromise, chokepointSummaryPromise, chokepointMetricsPromise,
           ...sgxPromises
         ];
 
@@ -17398,9 +18553,13 @@ if (intelTabsContainer) {
       if (tabId === 'monthly-dash') renderMonthlyDash(currentProduct);
       if (tabId === 'signals') renderSignalsTab(currentProduct);
       if (tabId === 'intelligence') renderIntelligenceTab();
+      if (tabId === 'tracking') renderTrackingTab();
 
       // Trigger requestAnimationFrame resize and redraw on all charts in active tab to prevent 0px canvas squishing
       requestAnimationFrame(() => {
+        if (tabId === 'tracking' && window.trackingMap && typeof window.trackingMap.invalidateSize === 'function') {
+          try { window.trackingMap.invalidateSize(); } catch (err) {}
+        }
         const activePanel = document.getElementById(`tab-${tabId}`);
         if (activePanel) {
           const canvases = activePanel.querySelectorAll('canvas');
@@ -31801,6 +32960,957 @@ if (intelTabsContainer) {
     } else {
       initEtfQAController();
     }
+
+// =====================================================================
+// GLOBAL TRACKING & GEOSPATIAL TERMINAL ENGINE
+// =====================================================================
+
+var trackingMap = null;
+var trackingMapInitialized = false;
+var vesselMarkersLayer = null;
+var chokepointMarkersLayer = null;
+var portMarkersLayer = null;
+var riskZonesLayer = null;
+var activeRoutePolyline = null;
+
+var trackingSelectedClass = 'all';
+var trackingSelectedStatus = 'all';
+var trackingSelectedPort = 'all';
+var trackingSearchQuery = '';
+var trackingCurrentPage = 1;
+var TRACKING_PAGE_SIZE = 50;
+
+var trackingActiveSubView = 'lineup';
+var trackingActiveChokepointId = 'bab_el_mandeb';
+var trackingActiveChokepointRange = 'all';
+var trackingActiveChokepointMetric = 'total';
+var chokepointChartInstance = null;
+
+var PORT_COORDINATES = {
+  'AEFJR': { name: 'Fujairah', country: 'United Arab Emirates', lat: 25.151, lon: 56.344 },
+  'SARRT': { name: 'Ras Tanura', country: 'Saudi Arabia', lat: 26.664, lon: 50.167 },
+  'DZAZW': { name: 'Arzew', country: 'Algeria', lat: 35.879, lon: -0.306 },
+  'SAYNB': { name: 'Yanbu', country: 'Saudi Arabia', lat: 24.103, lon: 38.069 },
+  'INSIK': { name: 'Sikka / Jamnagar', country: 'India', lat: 22.447, lon: 69.841 },
+  'KWMFA': { name: 'Mina Al Ahmadi', country: 'Kuwait', lat: 29.089, lon: 48.150 },
+  'SGSIN': { name: 'Singapore', country: 'Singapore', lat: 1.298, lon: 103.854 },
+  'CNNGB': { name: 'Ningbo-Zhoushan', country: 'China', lat: 29.891, lon: 121.552 },
+  'NLRTM': { name: 'Rotterdam', country: 'Netherlands', lat: 51.937, lon: 4.476 },
+  'KRUSN': { name: 'Ulsan', country: 'Korea', lat: 35.519, lon: 129.395 },
+  'CNQDG': { name: 'Qingdao', country: 'China', lat: 36.107, lon: 120.348 },
+  'USHOU': { name: 'Houston', country: 'United States', lat: 29.756, lon: -95.279 },
+  'BRSSZ': { name: 'Santos', country: 'Brazil', lat: -23.943, lon: -46.332 },
+  'USCRP': { name: 'Corpus Christi', country: 'United States', lat: 27.853, lon: -97.392 },
+  'NGBON': { name: 'Bonny', country: 'Nigeria', lat: 4.460, lon: 7.171 },
+  'QARLF': { name: 'Ras Laffan', country: 'Qatar', lat: 25.931, lon: 51.539 },
+  'ZASDB': { name: 'Saldanha Bay', country: 'South Africa', lat: -32.995, lon: 17.936 },
+  'CNRZH': { name: 'Rizhao', country: 'China', lat: 35.444, lon: 119.518 },
+  'RUPRI': { name: 'Primorsk', country: 'Russian Federation', lat: 60.383, lon: 28.635 },
+  'CNJGT': { name: 'Tangshan (Jingtang)', country: 'China', lat: 39.197, lon: 119.000 },
+  'USSPG': { name: 'Sabine Pass', country: 'United States', lat: 29.728, lon: -93.871 },
+  'JPCHB': { name: 'Chiba', country: 'Japan', lat: 35.673, lon: 140.074 },
+  'AUDRW': { name: 'Darwin', country: 'Australia', lat: -12.459, lon: 130.820 },
+  'AUPHE': { name: 'Port Hedland', country: 'Australia', lat: -20.310, lon: 118.550 },
+  'AUNCL': { name: 'Newcastle', country: 'Australia', lat: -32.877, lon: 151.848 },
+  'JPYOK': { name: 'Yokohama', country: 'Japan', lat: 35.520, lon: 139.689 },
+  'ZARCB': { name: 'Richards Bay', country: 'South Africa', lat: -28.742, lon: 32.135 }
+};
+
+function renderTrackingTab() {
+  window.renderTrackingTab = renderTrackingTab;
+  if (!DATA.loaded) return;
+
+  // Initialize Map if not already created
+  if (!trackingMapInitialized) {
+    initTrackingMap();
+  } else if (trackingMap && typeof trackingMap.invalidateSize === 'function') {
+    setTimeout(function() { trackingMap.invalidateSize(); }, 80);
+  }
+
+  // Populate Port Select Options if empty
+  populateTrackingPortOptions();
+
+  // Populate HUD Stats
+  updateTrackingHUD();
+
+  // Render Chokepoints Directory
+  renderChokepointsDirectory();
+
+  // Render Lineup Table
+  renderTrackingTable();
+
+  // Populate initial Chokepoint Analytics
+  openChokepointAnalytics(trackingActiveChokepointId);
+
+  // Initialize Distance Calculator default
+  runDistanceCalculation();
+}
+
+function initTrackingMap() {
+  if (typeof L === 'undefined') {
+    console.warn('[TrackingMap] Leaflet not loaded yet, retrying...');
+    setTimeout(initTrackingMap, 200);
+    return;
+  }
+  var container = document.getElementById('trackingMap');
+  if (!container) return;
+
+  try {
+    trackingMap = L.map('trackingMap', {
+      center: [20, 45],
+      zoom: 3,
+      minZoom: 2,
+      maxZoom: 16,
+      zoomControl: true,
+      attributionControl: false
+    });
+
+    window.trackingMap = trackingMap;
+
+    // CartoDB Dark Matter tile layer (matches dark theme #0a0e14 perfectly)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19,
+      subdomains: 'abcd'
+    }).addTo(trackingMap);
+
+    // Marker layers
+    vesselMarkersLayer = L.layerGroup().addTo(trackingMap);
+    chokepointMarkersLayer = L.layerGroup().addTo(trackingMap);
+    portMarkersLayer = L.layerGroup().addTo(trackingMap);
+    riskZonesLayer = L.layerGroup().addTo(trackingMap);
+
+    // Track coordinates on mousemove
+    trackingMap.on('mousemove', function(e) {
+      var el = document.getElementById('mapCoordsOverlay');
+      if (el && e.latlng) {
+        el.textContent = 'Lat: ' + e.latlng.lat.toFixed(2) + '°, Lon: ' + e.latlng.lng.toFixed(2) + '°';
+      }
+    });
+
+    // Plot all layers
+    plotRiskZones();
+    plotChokepointMarkers();
+    plotPortHubMarkers();
+    plotVesselMarkers();
+
+    trackingMapInitialized = true;
+    setTimeout(function() { trackingMap.invalidateSize(); }, 150);
+  } catch (err) {
+    console.error('[initTrackingMap error]', err);
+  }
+}
+
+function populateTrackingPortOptions() {
+  var sel = document.getElementById('trackingPortSelect');
+  if (!sel || sel.options.length > 1) return;
+
+  var counts = {};
+  (DATA.portLineups || []).forEach(function(v) {
+    var key = v.port_locode || v.portname;
+    counts[key] = (counts[key] || 0) + 1;
+  });
+
+  var sortedKeys = Object.keys(counts).sort(function(a, b) {
+    return counts[b] - counts[a];
+  });
+
+  sortedKeys.forEach(function(locode) {
+    var pMeta = PORT_COORDINATES[locode] || {};
+    var name = pMeta.name || locode;
+    var opt = document.createElement('option');
+    opt.value = locode;
+    opt.textContent = name + ' (' + counts[locode] + ' vessels)';
+    sel.appendChild(opt);
+  });
+}
+
+function updateTrackingHUD() {
+  var vessels = DATA.portLineups || [];
+  var total = vessels.length;
+  var waiting = vessels.filter(function(v) { return v.operational_status === 'Waiting at anchor'; }).length;
+  var berth = vessels.filter(function(v) { return v.operational_status === 'Operating at berth'; }).length;
+
+  var hTotal = document.getElementById('hudTrackedHulls');
+  var hWaiting = document.getElementById('hudWaitingAnchor');
+  var hBerth = document.getElementById('hudOperatingBerth');
+  var hChoke = document.getElementById('hudChokepointsCount');
+  var hRedSea = document.getElementById('hudRedSeaDiverted');
+  var hCape = document.getElementById('hudCapeSurge');
+
+  if (hTotal) hTotal.textContent = total ? total.toLocaleString() : '740';
+  if (hWaiting) hWaiting.textContent = waiting ? waiting.toLocaleString() : '306';
+  if (hBerth) hBerth.textContent = berth ? berth.toLocaleString() : '434';
+  if (hChoke) hChoke.textContent = '28';
+  if (hRedSea) hRedSea.textContent = '-73.1%';
+  if (hCape) hCape.textContent = '+75.6%';
+}
+
+function filterTrackingData() {
+  var vessels = DATA.portLineups || [];
+  var query = (trackingSearchQuery || '').toLowerCase().trim();
+
+  return vessels.filter(function(v) {
+    // Class filter
+    if (trackingSelectedClass !== 'all') {
+      var vClass = (v.asset_class || '').toLowerCase();
+      var target = trackingSelectedClass.toLowerCase();
+      if (!vClass.includes(target) && target !== vClass) return false;
+    }
+
+    // Status filter
+    if (trackingSelectedStatus !== 'all') {
+      if (v.operational_status !== trackingSelectedStatus) return false;
+    }
+
+    // Port filter
+    if (trackingSelectedPort !== 'all') {
+      if (v.port_locode !== trackingSelectedPort && v.portname !== trackingSelectedPort) return false;
+    }
+
+    // Search query
+    if (query) {
+      var match = (v.vessel_name || '').toLowerCase().includes(query) ||
+                  (v.imo_number || '').toLowerCase().includes(query) ||
+                  (v.portname || '').toLowerCase().includes(query) ||
+                  (v.country || '').toLowerCase().includes(query) ||
+                  (v.cargo_type || '').toLowerCase().includes(query);
+      if (!match) return false;
+    }
+
+    return true;
+  });
+}
+
+function renderTrackingTable() {
+  var tbody = document.getElementById('trackingTableBody');
+  var pageInfo = document.getElementById('trackingPageInfo');
+  var countBadge = document.getElementById('lineupCountBadge');
+  if (!tbody) return;
+
+  var filtered = filterTrackingData();
+  var total = filtered.length;
+  if (countBadge) countBadge.textContent = total;
+
+  var totalPages = Math.ceil(total / TRACKING_PAGE_SIZE) || 1;
+  if (trackingCurrentPage > totalPages) trackingCurrentPage = totalPages;
+  if (trackingCurrentPage < 1) trackingCurrentPage = 1;
+
+  var start = (trackingCurrentPage - 1) * TRACKING_PAGE_SIZE;
+  var end = Math.min(start + TRACKING_PAGE_SIZE, total);
+  var paged = filtered.slice(start, end);
+
+  if (pageInfo) pageInfo.textContent = 'Showing ' + (total ? start + 1 : 0) + '–' + end + ' of ' + total;
+
+  var prevBtn = document.getElementById('btnTrackingPrev');
+  var nextBtn = document.getElementById('btnTrackingNext');
+  if (prevBtn) prevBtn.disabled = (trackingCurrentPage <= 1);
+  if (nextBtn) nextBtn.disabled = (trackingCurrentPage >= totalPages);
+
+  tbody.innerHTML = '';
+  if (!paged.length) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:20px; color:var(--text-muted);">No vessels match current filters.</td></tr>';
+    return;
+  }
+
+  paged.forEach(function(v) {
+    var tr = document.createElement('tr');
+    tr.className = 'vessel-row';
+    tr.id = 'vessel-row-' + v.imo_number;
+
+    var statusClass = (v.operational_status === 'Operating at berth') ? 'status-badge-berth' : 'status-badge-anchor';
+    var statusText = (v.operational_status === 'Operating at berth') ? 'At Berth' : 'At Anchor';
+    var waitText = (v.days_waiting > 0) ? v.days_waiting.toFixed(1) + 'd' : '—';
+
+    tr.innerHTML = '<td>' +
+      '<div style="font-weight:700; color:#fff;">' + escapeHtml(v.vessel_name) + '</div>' +
+      '<div style="font-size:10px; color:var(--text-muted); font-family:\'IBM Plex Mono\', monospace;">' + escapeHtml(v.imo_number) + ' · ' + (v.dwt ? (v.dwt/1000).toFixed(0) + 'k DWT' : '') + '</div>' +
+      '</td>' +
+      '<td><span class="class-badge">' + escapeHtml(v.asset_class || 'Tanker') + '</span></td>' +
+      '<td><div style="font-weight:500;">' + escapeHtml(v.portname) + '</div><div style="font-size:10px; color:var(--text-muted);">' + escapeHtml(v.country) + '</div></td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (v.days_waiting > 3 ? 'var(--yellow)' : 'var(--text)') + ';">' + waitText + '</td>' +
+      '<td><span class="' + statusClass + '">' + statusText + '</span></td>';
+
+    tr.addEventListener('click', function() {
+      selectVessel(v);
+    });
+
+    tbody.appendChild(tr);
+  });
+}
+
+function prevTrackingPage() {
+  if (trackingCurrentPage > 1) {
+    trackingCurrentPage--;
+    renderTrackingTable();
+  }
+}
+
+function nextTrackingPage() {
+  var total = filterTrackingData().length;
+  var totalPages = Math.ceil(total / TRACKING_PAGE_SIZE);
+  if (trackingCurrentPage < totalPages) {
+    trackingCurrentPage++;
+    renderTrackingTable();
+  }
+}
+
+function setTrackingClass(cls) {
+  trackingSelectedClass = cls;
+  document.querySelectorAll('.tracking-pill').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.class === cls);
+  });
+  trackingCurrentPage = 1;
+  renderTrackingTable();
+  plotVesselMarkers();
+}
+
+function setTrackingStatus(status) {
+  trackingSelectedStatus = status;
+  document.querySelectorAll('.tracking-status-btn').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.status === status);
+  });
+  trackingCurrentPage = 1;
+  renderTrackingTable();
+  plotVesselMarkers();
+}
+
+function onTrackingPortChange() {
+  var sel = document.getElementById('trackingPortSelect');
+  if (!sel) return;
+  trackingSelectedPort = sel.value;
+  trackingCurrentPage = 1;
+  renderTrackingTable();
+  plotVesselMarkers();
+
+  // Center map on selected port if specific port selected
+  if (trackingSelectedPort !== 'all' && trackingMap) {
+    var pMeta = PORT_COORDINATES[trackingSelectedPort];
+    if (pMeta) {
+      trackingMap.flyTo([pMeta.lat, pMeta.lon], 9, { duration: 1.2 });
+      var hudDetail = document.getElementById('mapHudDetail');
+      if (hudDetail) hudDetail.textContent = pMeta.name + ' (' + pMeta.country + ') — Focused Port View';
+    }
+  } else if (trackingMap) {
+    trackingMap.flyTo([20, 45], 3, { duration: 1.2 });
+    var hudDetailAll = document.getElementById('mapHudDetail');
+    if (hudDetailAll) hudDetailAll.textContent = '740 vessels rendered across 27 ports';
+  }
+}
+
+function onTrackingSearchInput() {
+  var input = document.getElementById('trackingSearchInput');
+  if (!input) return;
+  trackingSearchQuery = input.value;
+  trackingCurrentPage = 1;
+  renderTrackingTable();
+}
+
+function setTrackingSubView(subview) {
+  trackingActiveSubView = subview;
+  var views = ['lineup', 'chokepoints', 'distance'];
+  views.forEach(function(v) {
+    var btn = document.getElementById('subnav' + v.charAt(0).toUpperCase() + v.slice(1));
+    var el = document.getElementById('subview' + v.charAt(0).toUpperCase() + v.slice(1));
+    if (btn) btn.classList.toggle('active', v === subview);
+    if (el) el.style.display = (v === subview) ? 'flex' : 'none';
+  });
+
+  if (subview === 'chokepoints') {
+    renderChokepointsDirectory();
+  }
+}
+
+function toggleTrackingLayer(layerName) {
+  if (!trackingMap) return;
+  var chk = document.getElementById('layer' + layerName.charAt(0).toUpperCase() + layerName.slice(1));
+  var isChecked = chk ? chk.checked : true;
+
+  if (layerName === 'vessels' && vesselMarkersLayer) {
+    if (isChecked) trackingMap.addLayer(vesselMarkersLayer);
+    else trackingMap.removeLayer(vesselMarkersLayer);
+  } else if (layerName === 'chokepoints' && chokepointMarkersLayer) {
+    if (isChecked) trackingMap.addLayer(chokepointMarkersLayer);
+    else trackingMap.removeLayer(chokepointMarkersLayer);
+  } else if (layerName === 'ports' && portMarkersLayer) {
+    if (isChecked) trackingMap.addLayer(portMarkersLayer);
+    else trackingMap.removeLayer(portMarkersLayer);
+  } else if (layerName === 'riskZones' && riskZonesLayer) {
+    if (isChecked) trackingMap.addLayer(riskZonesLayer);
+    else trackingMap.removeLayer(riskZonesLayer);
+  }
+}
+
+function plotVesselMarkers() {
+  if (!trackingMap || !vesselMarkersLayer) return;
+  vesselMarkersLayer.clearLayers();
+
+  var vessels = filterTrackingData();
+
+  // Create markers
+  vessels.forEach(function(v) {
+    if (!v.lat || !v.lon) return;
+
+    var isBerth = (v.operational_status === 'Operating at berth');
+    var iconHtml = isBerth
+      ? '<div class="vessel-dot berth"><svg width="12" height="12" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5" fill="#3fb950" stroke="#0a0e14" stroke-width="1.5"/><circle cx="7" cy="7" r="2" fill="#fff"/></svg></div>'
+      : '<div class="vessel-dot anchor"><div class="anchor-pulse"></div><svg width="12" height="12" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5" fill="#e3b341" stroke="#0a0e14" stroke-width="1.5"/><circle cx="7" cy="7" r="2" fill="#000"/></svg></div>';
+
+    var customIcon = L.divIcon({
+      className: isBerth ? 'vessel-marker-berth' : 'vessel-marker-anchor',
+      html: iconHtml,
+      iconSize: [14, 14],
+      iconAnchor: [7, 7],
+      popupAnchor: [0, -8]
+    });
+
+    var marker = L.marker([v.lat, v.lon], { icon: customIcon });
+
+    // Signal Ocean-style popup card
+    var popupContent = '<div class="signal-vessel-popup">' +
+      '<div class="signal-vessel-head">' +
+      '<div class="signal-vessel-title">' +
+      '<span>' + escapeHtml(v.vessel_name) + '</span>' +
+      '<span class="' + (isBerth ? 'status-badge-berth' : 'status-badge-anchor') + '">' + (isBerth ? 'At Berth' : 'At Anchor') + '</span>' +
+      '</div>' +
+      '<div class="signal-vessel-sub">' + escapeHtml(v.asset_class || 'Tanker') + ' · ' + (v.dwt ? (v.dwt/1000).toFixed(0) + 'k DWT' : '') + ' · ' + escapeHtml(v.imo_number) + '</div>' +
+      '</div>' +
+      '<div class="signal-vessel-grid">' +
+      '<div><div class="signal-field-label">Port Location</div><div class="signal-field-val">' + escapeHtml(v.portname) + '</div></div>' +
+      '<div><div class="signal-field-label">Country</div><div class="signal-field-val">' + escapeHtml(v.country) + '</div></div>' +
+      '<div><div class="signal-field-label">Days Waiting</div><div class="signal-field-val" style="color:' + (v.days_waiting > 3 ? 'var(--yellow)' : '#fff') + '">' + (v.days_waiting ? v.days_waiting.toFixed(1) + ' Days' : '0 Days') + '</div></div>' +
+      '<div><div class="signal-field-label">Cargo Type</div><div class="signal-field-val" style="font-size:10px;">' + escapeHtml(v.cargo_type || 'Crude / Bulk') + '</div></div>' +
+      '<div><div class="signal-field-label">Coordinates</div><div class="signal-field-val" style="font-family:\'IBM Plex Mono\', monospace; font-size:10px;">' + v.lat.toFixed(3) + '°, ' + v.lon.toFixed(3) + '°</div></div>' +
+      '<div><div class="signal-field-label">Arrival Time</div><div class="signal-field-val" style="font-size:10px;">' + escapeHtml(v.arrival_timestamp ? v.arrival_timestamp.split(' ')[0] : '—') + '</div></div>' +
+      '</div>' +
+      '<button class="signal-vessel-btn" onclick="focusPort(\'' + v.port_locode + '\')">Center on Port Anchorage</button>' +
+      '</div>';
+
+    marker.bindPopup(popupContent, { maxWidth: 300 });
+
+    marker.on('click', function() {
+      highlightTableRow(v.imo_number);
+    });
+
+    vesselMarkersLayer.addLayer(marker);
+  });
+}
+
+function selectVessel(v) {
+  if (!v || !trackingMap) return;
+  highlightTableRow(v.imo_number);
+  trackingMap.flyTo([v.lat, v.lon], 11, { duration: 1.0 });
+
+  var hudDetail = document.getElementById('mapHudDetail');
+  if (hudDetail) {
+    hudDetail.textContent = v.vessel_name + ' (' + v.asset_class + ', ' + (v.dwt/1000).toFixed(0) + 'k DWT) · ' + v.operational_status;
+  }
+}
+
+function highlightTableRow(imo) {
+  document.querySelectorAll('.vessel-row').forEach(function(r) {
+    r.classList.remove('selected');
+  });
+  var row = document.getElementById('vessel-row-' + imo);
+  if (row) {
+    row.classList.add('selected');
+    row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+function focusPort(locode) {
+  var sel = document.getElementById('trackingPortSelect');
+  if (sel) {
+    sel.value = locode;
+    onTrackingPortChange();
+  }
+}
+
+function plotChokepointMarkers() {
+  if (!trackingMap || !chokepointMarkersLayer) return;
+  chokepointMarkersLayer.clearLayers();
+
+  var summary = DATA.chokepointSummary;
+  var chokepoints = summary && summary.chokepoints ? summary.chokepoints : [];
+
+  chokepoints.forEach(function(cp) {
+    var color = '#4d9aff';
+    var glow = 'rgba(77, 154, 255, 0.4)';
+    if (cp.disruption_status === 'ACTIVE_REROUTING' || cp.disruption_status === 'LOW_UTILIZATION') {
+      color = '#f85149';
+      glow = 'rgba(248, 81, 73, 0.5)';
+    } else if (cp.disruption_status === 'RESTRICTED_SLOTS' || cp.disruption_status === 'NORMAL_RESTRICTED') {
+      color = '#f0883e';
+      glow = 'rgba(240, 136, 62, 0.5)';
+    } else if (cp.disruption_status === 'SURGING_VOLUME') {
+      color = '#a371f7';
+      glow = 'rgba(163, 113, 247, 0.5)';
+    }
+
+    var iconHtml = '<div class="chokepoint-beacon-pin" style="--cp-color:' + color + '; --cp-glow:' + glow + ';">' +
+      '<div class="cp-pulse-ring"></div>' +
+      '<div class="cp-inner-dot">' +
+      '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">' +
+      '<circle cx="12" cy="12" r="10"></circle>' +
+      '<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>' +
+      '<path d="M2 12h20"></path>' +
+      '</svg>' +
+      '</div>' +
+      '</div>';
+
+    var customIcon = L.divIcon({
+      className: 'chokepoint-beacon-icon',
+      html: iconHtml,
+      iconSize: [24, 24],
+      iconAnchor: [12, 12],
+      popupAnchor: [0, -14]
+    });
+
+    var marker = L.marker([cp.lat, cp.lon], { icon: customIcon });
+
+    var popupHtml = '<div class="signal-vessel-popup" style="min-width:240px;">' +
+      '<div class="signal-vessel-head">' +
+      '<div class="signal-vessel-title"><span>' + escapeHtml(cp.name) + '</span><span class="cp-status-tag ' + getStatusClass(cp.disruption_status) + '">' + escapeHtml(cp.disruption_status.replace(/_/g, ' ')) + '</span></div>' +
+      '<div class="signal-vessel-sub">' + escapeHtml(cp.region) + '</div>' +
+      '</div>' +
+      '<div class="signal-vessel-grid">' +
+      '<div><div class="signal-field-label">Daily Transits (7D)</div><div class="signal-field-val">' + cp.avg_7d + ' / day</div></div>' +
+      '<div><div class="signal-field-label">Baseline Change</div><div class="signal-field-val" style="color:' + (cp.baseline_change_pct < 0 ? 'var(--red)' : 'var(--green)') + '">' + (cp.baseline_change_pct > 0 ? '+' : '') + cp.baseline_change_pct + '%</div></div>' +
+      '<div><div class="signal-field-label">Category</div><div class="signal-field-val">' + escapeHtml(cp.category) + '</div></div>' +
+      '<div><div class="signal-field-label">Rerouting Impact</div><div class="signal-field-val" style="font-size:10px;">' + escapeHtml(cp.rerouting_via) + '</div></div>' +
+      '</div>' +
+      '<button class="signal-vessel-btn" onclick="openChokepointAnalytics(\'' + cp.id + '\')">Open Detailed Transit Analytics</button>' +
+      '</div>';
+
+    marker.bindPopup(popupHtml, { maxWidth: 320 });
+
+    marker.on('click', function() {
+      openChokepointAnalytics(cp.id);
+    });
+
+    chokepointMarkersLayer.addLayer(marker);
+  });
+}
+
+function getStatusClass(status) {
+  if (status === 'ACTIVE_REROUTING' || status === 'LOW_UTILIZATION') return 'rerouting';
+  if (status === 'RESTRICTED_SLOTS' || status === 'NORMAL_RESTRICTED') return 'restricted';
+  if (status === 'SURGING_VOLUME') return 'surge';
+  if (status === 'HIGH_DENSITY') return 'high-density';
+  return 'normal';
+}
+
+function plotPortHubMarkers() {
+  if (!trackingMap || !portMarkersLayer) return;
+  portMarkersLayer.clearLayers();
+
+  var portCounts = {};
+  (DATA.portLineups || []).forEach(function(v) {
+    var code = v.port_locode;
+    if (!portCounts[code]) {
+      portCounts[code] = { count: 0, waiting: 0, lat: v.lat, lon: v.lon, name: v.portname, country: v.country };
+    }
+    portCounts[code].count++;
+    if (v.operational_status === 'Waiting at anchor') portCounts[code].waiting++;
+  });
+
+  Object.entries(portCounts).forEach(function([code, p]) {
+    var pMeta = PORT_COORDINATES[code];
+    var lat = pMeta ? pMeta.lat : p.lat;
+    var lon = pMeta ? pMeta.lon : p.lon;
+    if (!lat || !lon) return;
+
+    var iconHtml = '<div class="port-hub-pin" title="' + escapeHtml(p.name) + ': ' + p.count + ' vessels (' + p.waiting + ' waiting)">' +
+      '<span class="port-hub-badge">' + p.count + '</span>' +
+      '</div>';
+
+    var customIcon = L.divIcon({
+      className: 'port-hub-marker-icon',
+      html: iconHtml,
+      iconSize: [30, 20],
+      iconAnchor: [15, 10],
+      popupAnchor: [0, -10]
+    });
+
+    var marker = L.marker([lat, lon], { icon: customIcon });
+
+    var popupHtml = '<div class="signal-vessel-popup" style="min-width:220px;">' +
+      '<div class="signal-vessel-head">' +
+      '<div class="signal-vessel-title"><span>' + escapeHtml(p.name) + '</span><span class="status-badge-berth">' + p.count + ' Ships</span></div>' +
+      '<div class="signal-vessel-sub">' + escapeHtml(p.country) + ' (' + code + ')</div>' +
+      '</div>' +
+      '<div class="signal-vessel-grid">' +
+      '<div><div class="signal-field-label">Waiting at Anchor</div><div class="signal-field-val warn">' + p.waiting + ' vessels</div></div>' +
+      '<div><div class="signal-field-label">Operating at Berth</div><div class="signal-field-val good">' + (p.count - p.waiting) + ' vessels</div></div>' +
+      '</div>' +
+      '<button class="signal-vessel-btn" onclick="focusPort(\'' + code + '\')">Filter Lineup to ' + escapeHtml(p.name) + '</button>' +
+      '</div>';
+
+    marker.bindPopup(popupHtml);
+    portMarkersLayer.addLayer(marker);
+  });
+}
+
+function plotRiskZones() {
+  if (!trackingMap || !riskZonesLayer) return;
+  riskZonesLayer.clearLayers();
+
+  // 1. Red Sea / Gulf of Aden Conflict & Drone Threat Area
+  var redSeaPolygon = [
+    [29.5, 32.5],
+    [27.0, 35.0],
+    [15.5, 42.0],
+    [12.2, 43.4],
+    [11.5, 51.0],
+    [15.0, 53.5],
+    [17.0, 42.0],
+    [24.0, 36.5],
+    [29.5, 32.5]
+  ];
+
+  L.polygon(redSeaPolygon, {
+    color: '#f85149',
+    fillColor: '#f85149',
+    fillOpacity: 0.12,
+    weight: 1.5,
+    dashArray: '4, 4'
+  }).bindTooltip('⚠️ Red Sea High-Risk Geopolitical Area (Bab el-Mandeb / Gulf of Aden)', { sticky: true }).addTo(riskZonesLayer);
+
+  // 2. Strait of Hormuz / Persian Gulf Monitored Energy Corridor
+  var hormuzPolygon = [
+    [24.0, 52.0],
+    [27.5, 50.0],
+    [30.0, 48.0],
+    [28.0, 56.5],
+    [25.0, 58.0],
+    [24.0, 52.0]
+  ];
+
+  L.polygon(hormuzPolygon, {
+    color: '#e3b341',
+    fillColor: '#e3b341',
+    fillOpacity: 0.10,
+    weight: 1.5,
+    dashArray: '4, 4'
+  }).bindTooltip('🛡️ Strait of Hormuz Strategic Energy Corridor (21M bpd oil flow)', { sticky: true }).addTo(riskZonesLayer);
+}
+
+function renderChokepointsDirectory() {
+  var container = document.getElementById('chokepointDirList');
+  if (!container) return;
+
+  var summary = DATA.chokepointSummary;
+  var chokepoints = summary && summary.chokepoints ? summary.chokepoints : [];
+  if (!chokepoints.length) {
+    container.innerHTML = '<div style="color:var(--text-muted); padding:16px;">Loading chokepoints ledger...</div>';
+    return;
+  }
+
+  container.innerHTML = '';
+  chokepoints.forEach(function(cp) {
+    var card = document.createElement('div');
+    card.className = 'cp-dir-card' + (cp.id === trackingActiveChokepointId ? ' selected' : '');
+    card.id = 'cp-card-' + cp.id;
+
+    var statusCls = getStatusClass(cp.disruption_status);
+    var chgText = (cp.baseline_change_pct > 0 ? '+' : '') + cp.baseline_change_pct + '%';
+
+    card.innerHTML = '<div class="cp-dir-card-header">' +
+      '<div class="cp-dir-title">' + escapeHtml(cp.name) + '</div>' +
+      '<span class="cp-status-tag ' + statusCls + '">' + escapeHtml(cp.disruption_status.replace(/_/g, ' ')) + '</span>' +
+      '</div>' +
+      '<div style="font-size:10px; color:var(--text-muted); margin-bottom:4px;">' + escapeHtml(cp.region) + '</div>' +
+      '<div class="cp-dir-metrics">' +
+      '<div class="cp-metric-chip"><strong>' + cp.avg_7d + '</strong> transits/day</div>' +
+      '<div class="cp-metric-chip" style="color:' + (cp.baseline_change_pct < 0 ? 'var(--red)' : 'var(--green)') + ';">' + chgText + ' vs baseline</div>' +
+      '</div>';
+
+    card.addEventListener('click', function() {
+      openChokepointAnalytics(cp.id);
+      if (trackingMap) {
+        trackingMap.flyTo([cp.lat, cp.lon], 6, { duration: 1.0 });
+      }
+    });
+
+    container.appendChild(card);
+  });
+}
+
+function openChokepointAnalytics(chokepointId) {
+  trackingActiveChokepointId = chokepointId || 'bab_el_mandeb';
+
+  // Highlight directory card
+  document.querySelectorAll('.cp-dir-card').forEach(function(c) {
+    c.classList.remove('selected');
+  });
+  var activeCard = document.getElementById('cp-card-' + trackingActiveChokepointId);
+  if (activeCard) activeCard.classList.add('selected');
+
+  var summary = DATA.chokepointSummary;
+  var chokepoints = summary && summary.chokepoints ? summary.chokepoints : [];
+  var cp = chokepoints.find(function(c) { return c.id === trackingActiveChokepointId; });
+  if (!cp) return;
+
+  // Header
+  var nameEl = document.getElementById('cpDrawerName');
+  var regionEl = document.getElementById('cpDrawerRegion');
+  var tagEl = document.getElementById('cpDrawerStatusTag');
+  var noteEl = document.getElementById('cpDrawerNote');
+
+  if (nameEl) nameEl.textContent = cp.name;
+  if (regionEl) regionEl.textContent = cp.region + ' · ' + cp.strategic_importance;
+  if (tagEl) {
+    tagEl.className = 'cp-status-tag ' + getStatusClass(cp.disruption_status);
+    tagEl.textContent = cp.disruption_status.replace(/_/g, ' ');
+  }
+  if (noteEl) {
+    if (cp.id === 'bab_el_mandeb' || cp.id === 'suez_canal') {
+      noteEl.innerHTML = '<strong>Red Sea Rerouting Crisis</strong>: Houthi strikes force Asia-Europe vessels to bypass Suez/Bab el-Mandeb, steaming around the Cape of Good Hope (+3,500 NM, +14.5 days).';
+    } else if (cp.id === 'cape_good_hope') {
+      noteEl.innerHTML = '<strong>Cape Rerouting Surge</strong>: Circumnavigating Africa absorbs excess fleet capacity, expanding global ton-mile demand and lifting container and tanker TCE earnings.';
+    } else if (cp.id === 'panama_canal') {
+      noteEl.innerHTML = '<strong>Panama Water Recovery</strong>: Gatun Lake water draft restrictions have progressively normalized from 2023 drought troughs, recovering to ~32 transits/day.';
+    } else {
+      noteEl.textContent = cp.strategic_importance + ' Primary routing alternative: ' + cp.rerouting_via;
+    }
+  }
+
+  // 4 KPIs
+  var kpiDaily = document.getElementById('cpKpiDaily');
+  var kpiBase = document.getElementById('cpKpiBaseline');
+  var kpiDiv = document.getElementById('cpKpiDiverted');
+  var kpiDays = document.getElementById('cpKpiDaysAdded');
+  var kpiTonMile = document.getElementById('cpKpiTonneMile');
+
+  if (kpiDaily) kpiDaily.textContent = cp.avg_7d + ' / day';
+  if (kpiBase) kpiBase.textContent = 'Baseline: ' + cp.normal_baseline_daily + ' / day';
+
+  if (kpiDiv) {
+    var divPct = cp.baseline_change_pct;
+    kpiDiv.textContent = (divPct > 0 ? '+' : '') + divPct + '%';
+    kpiDiv.className = 'cp-kpi-tile-val ' + (divPct < 0 ? 'alert' : 'good');
+  }
+
+  // Metrics from chokepoint metrics table if present
+  var mRow = (DATA.chokepointMetrics || []).find(function(m) {
+    return (m.chokepoint || '').toLowerCase().includes(cp.name.toLowerCase().split(' ')[0]);
+  });
+
+  if (kpiDays) {
+    kpiDays.textContent = mRow ? '+' + parseFloat(mRow.avg_rerouting_voyage_days_added).toFixed(1) + ' Days' : (cp.id === 'bab_el_mandeb' || cp.id === 'suez_canal' ? '+14.5 Days' : '+0.0 Days');
+  }
+  if (kpiTonMile) {
+    kpiTonMile.textContent = mRow ? '+' + parseFloat(mRow.implied_tonne_mile_expansion_pct).toFixed(1) + '%' : (cp.id === 'bab_el_mandeb' || cp.id === 'suez_canal' ? '+28.4%' : '+0.0%');
+  }
+
+  // Render Time Series Chart
+  renderChokepointChart(cp);
+}
+
+function setChokepointRange(range) {
+  trackingActiveChokepointRange = range;
+  document.querySelectorAll('.cp-drawer-header .cp-toggle-btn').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.range === range);
+  });
+  var summary = DATA.chokepointSummary;
+  var cp = summary && summary.chokepoints ? summary.chokepoints.find(function(c) { return c.id === trackingActiveChokepointId; }) : null;
+  if (cp) renderChokepointChart(cp);
+}
+
+function setChokepointMetric(metric) {
+  trackingActiveChokepointMetric = metric;
+  document.querySelectorAll('.cp-controls-bar .cp-toggle-btn').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.metric === metric);
+  });
+  var summary = DATA.chokepointSummary;
+  var cp = summary && summary.chokepoints ? summary.chokepoints.find(function(c) { return c.id === trackingActiveChokepointId; }) : null;
+  if (cp) renderChokepointChart(cp);
+}
+
+function renderChokepointChart(cp) {
+  var canvas = document.getElementById('chokepointChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+
+  var range = trackingActiveChokepointRange;
+  var metric = trackingActiveChokepointMetric;
+
+  var labels = [];
+  var data = [];
+
+  if (range === '90d') {
+    // High-resolution daily series (June–August 2026)
+    var daily = cp.recent_daily_series || [];
+    labels = daily.map(function(r) { return r.d; });
+    if (metric === 'total') data = daily.map(function(r) { return r.tot; });
+    else if (metric === 'tanker') data = daily.map(function(r) { return r.tnk; });
+    else if (metric === 'bulk') data = daily.map(function(r) { return r.blk; });
+    else if (metric === 'container') data = daily.map(function(r) { return r.cnt; });
+    else if (metric === 'capacity') data = daily.map(function(r) { return Math.round(r.cap / 1000); });
+  } else {
+    // Monthly series (2019–2026)
+    var monthly = cp.monthly_series || [];
+    if (range === '1y') monthly = monthly.slice(-12);
+    else if (range === '3y') monthly = monthly.slice(-36);
+
+    labels = monthly.map(function(r) { return r.m; });
+    if (metric === 'total') data = monthly.map(function(r) { return r.tot_avg; });
+    else if (metric === 'tanker') data = monthly.map(function(r) { return r.tnk_avg; });
+    else if (metric === 'bulk') data = monthly.map(function(r) { return r.blk_avg; });
+    else if (metric === 'container') data = monthly.map(function(r) { return r.cnt_avg; });
+    else if (metric === 'capacity') data = monthly.map(function(r) { return Math.round(r.cap_dwt / 1000); });
+  }
+
+  var metricLabel = 'Daily Average Transits';
+  var color = '#4d9aff';
+  if (metric === 'tanker') { metricLabel = 'Tanker Transits'; color = '#e3b341'; }
+  else if (metric === 'bulk') { metricLabel = 'Dry Bulk Transits'; color = '#3fb950'; }
+  else if (metric === 'container') { metricLabel = 'Container Transits'; color = '#a371f7'; }
+  else if (metric === 'capacity') { metricLabel = 'Daily Capacity (kt DWT)'; color = '#f0883e'; }
+
+  if (chokepointChartInstance) {
+    chokepointChartInstance.destroy();
+  }
+
+  var ctx = canvas.getContext('2d');
+  chokepointChartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: metricLabel + ' (' + cp.name + ')',
+        data: data,
+        borderColor: color,
+        backgroundColor: color + '15',
+        fill: true,
+        tension: 0.25,
+        borderWidth: 2,
+        pointRadius: range === '90d' ? 1.5 : 2.5,
+        pointHoverRadius: 5
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          display: true,
+          labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 } }
+        },
+        tooltip: {
+          backgroundColor: '#111820',
+          borderColor: '#1c2333',
+          borderWidth: 1,
+          titleColor: '#fff',
+          bodyColor: '#d4dce8',
+          callbacks: {
+            label: function(item) {
+              return ' ' + item.dataset.label + ': ' + item.formattedValue + (metric === 'capacity' ? ' kt' : ' vessels');
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: 'rgba(28, 35, 51, 0.4)' },
+          ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 }
+        },
+        y: {
+          grid: { color: 'rgba(28, 35, 51, 0.5)' },
+          ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 } }
+        }
+      }
+    }
+  });
+}
+
+function calculateGreatCircleDistance(lat1, lon1, lat2, lon2) {
+  var R = 3440.065; // Earth radius in nautical miles
+  var dLat = (lat2 - lat1) * Math.PI / 180;
+  var dLon = (lon2 - lon1) * Math.PI / 180;
+  var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+          Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return Math.round(R * c);
+}
+
+function runDistanceCalculation() {
+  var origCode = document.getElementById('distOriginPort')?.value || 'SARRT';
+  var destCode = document.getElementById('distDestPort')?.value || 'NLRTM';
+  var speed = parseFloat(document.getElementById('distSpeedKnots')?.value || '13.0');
+  var burnRate = parseFloat(document.getElementById('distBunkerBurn')?.value || '32.0');
+
+  var p1 = PORT_COORDINATES[origCode] || { name: origCode, lat: 26.6, lon: 50.1 };
+  var p2 = PORT_COORDINATES[destCode] || { name: destCode, lat: 51.9, lon: 4.4 };
+
+  var directNm = calculateGreatCircleDistance(p1.lat, p1.lon, p2.lat, p2.lon);
+
+  // Maritime waterway adjustments
+  var isEuropeAsia = (origCode === 'SARRT' || origCode === 'AEFJR' || origCode === 'SGSIN' || origCode === 'INSIK') && (destCode === 'NLRTM');
+  var canalRouteNm = isEuropeAsia ? (origCode === 'SARRT' ? 6400 : (origCode === 'AEFJR' ? 6250 : 8300)) : Math.round(directNm * 1.15);
+  var capeRouteNm = isEuropeAsia ? (canalRouteNm + 3500) : Math.round(directNm * 1.35);
+
+  var canalDays = (canalRouteNm / (speed * 24)).toFixed(1);
+  var capeDays = (capeRouteNm / (speed * 24)).toFixed(1);
+  var diffDays = (capeDays - canalDays).toFixed(1);
+  var diffFuel = Math.round(diffDays * burnRate);
+
+  var resCard = document.getElementById('distResultsCard');
+  if (!resCard) return;
+
+  resCard.innerHTML = '<div style="font-weight:700; color:#fff; font-size:12px; margin-bottom:4px;">Routing Comparison: ' + escapeHtml(p1.name) + ' → ' + escapeHtml(p2.name) + '</div>' +
+    '<div class="dist-res-row"><span>Direct Great Circle:</span><strong>' + directNm.toLocaleString() + ' NM</strong></div>' +
+    '<div class="dist-res-row"><span>Standard Route (Suez / Canal):</span><strong>' + canalRouteNm.toLocaleString() + ' NM (' + canalDays + ' days)</strong></div>' +
+    '<div class="dist-res-row"><span style="color:#a371f7;">Rerouted Route (Cape of Good Hope):</span><strong style="color:#a371f7;">' + capeRouteNm.toLocaleString() + ' NM (' + capeDays + ' days)</strong></div>' +
+    '<div class="dist-res-row"><span style="color:var(--yellow);">Transit Voyage Delay:</span><strong style="color:var(--yellow);">+' + diffDays + ' Days Added</strong></div>' +
+    '<div class="dist-res-row"><span>Additional Bunker Consumption:</span><strong>+' + diffFuel.toLocaleString() + ' MT VLSFO</strong></div>';
+}
+
+function plotDistanceRouteOnMap() {
+  if (!trackingMap) return;
+  var origCode = document.getElementById('distOriginPort')?.value || 'SARRT';
+  var destCode = document.getElementById('distDestPort')?.value || 'NLRTM';
+
+  var p1 = PORT_COORDINATES[origCode] || { lat: 26.6, lon: 50.1 };
+  var p2 = PORT_COORDINATES[destCode] || { lat: 51.9, lon: 4.4 };
+
+  if (activeRoutePolyline) {
+    trackingMap.removeLayer(activeRoutePolyline);
+  }
+
+  // Create polyline via waypoints (simulating sea routing)
+  var waypoints = [
+    [p1.lat, p1.lon],
+    [12.58, 43.33], // Bab el-Mandeb
+    [30.58, 32.57], // Suez
+    [35.96, -5.60], // Gibraltar
+    [p2.lat, p2.lon]
+  ];
+
+  activeRoutePolyline = L.polyline(waypoints, {
+    color: '#4d9aff',
+    weight: 3,
+    dashArray: '6, 6',
+    opacity: 0.8
+  }).addTo(trackingMap);
+
+  trackingMap.fitBounds(activeRoutePolyline.getBounds(), { padding: [40, 40] });
+
+  var hudDetail = document.getElementById('mapHudDetail');
+  if (hudDetail) {
+    hudDetail.textContent = 'Active Voyage Route Plotted: ' + origCode + ' → ' + destCode;
+  }
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 
 
   </script>

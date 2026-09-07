@@ -245,7 +245,7 @@ Harvested from SEE Capital Markets / Zagreb Stock Exchange covering 21 years of 
 | `data/etf/raw_holdings/` | CSV | 0.2 MB | **1,125** | Daily Archive | Exact broker lot-level holding statements showing individual Capesize, Panamax, and Supramax FFA contract expirations. |
 | [`data/derived/timesfm_probe_results.csv`](file:///c:/Users/Dell/Github/Shipping/data/derived/timesfm_probe_results.csv) | CSV | 1.4 MB | **1,760** | 2020–2024 | Google TimesFM zero-shot foundation time-series forecasting probe results across Baltic freight indices. |
 
-*Website Status*: 0% rendered in `index.html`.
+*Website Status*: **Partially Rendered (Live)** — Full daily transit history across 28 maritime chokepoints (`chokepoint_transits_daily.csv`), active port lineups across 27 global hubs (`port_lineups_active.csv`), and rerouting analytics (`chokepoint_transit_metrics.csv`) are now actively rendered in the dedicated top-level **Tracking** tab (`#tab-tracking`) with an interactive Leaflet dark-mode map, vessel particulars cards, and Chokepoint Transit Analytics Drawer.
 
 ---
 
