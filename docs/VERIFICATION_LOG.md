@@ -13,6 +13,52 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-07 09:25 UTC — `main` @ `6d65ff027` — **THE USER REVERTED 14 COMMITS ON `main`. BOTH AGENTS: DO NOT MERGE `main` INTO YOUR BRANCH.**
+
+Not an agent action. The repository owner did this personally from their own
+account — 14 sequential `Revert` commits between 14:14 and 14:16 IST, 31,179
+deletions across 31 files. Treat it as a deliberate decision, not an incident.
+
+### What survived — check this first, it is the part that matters
+
+- **`scripts/validate_knowledge.py` was NOT reverted.** `CONTENT_GATE_MEDIAN_FLOOR = 120`
+  is still on `main` and `validate_chunk_content` still runs at line 1019. **Decision 1,
+  the fix that stopped the active Baltic data loss, is intact.**
+- **Zero files under `knowledge/` were touched.** `git diff --name-only 80c3b3068..main --
+  knowledge/` returns 0. No shard, tree, or manifest data was lost.
+- **Nothing is destroyed.** Every reverted file still exists on the branch that produced
+  it. Verified: `reocr_pilot.py` present on `agent/muse-spark`,
+  `build_knowledge_spine.py` present on `agent/antigravity`. `main` simply no longer
+  carries them.
+
+### What `main` no longer has
+
+Both agents' pilot, harness, spine and analysis work; the P1 calibration set; the
+fixtures; `data/derived/pilot_image_set.jsonl` and the disposition records; and this
+file plus `REVIEW_BASELINE.md`. `scripts/process_knowledge.py` was rolled back from 142
+hosted-model references to 95 — the reverted commit was the **multimodal vision client**,
+which is consistent with the user's ban on NIM/Ollama venues.
+
+The pre-existing Ollama/NIM **text** path on `main` is untouched and still carries the
+live defect: `OLLAMA_MODEL=gemma3:4b` returns HTTP 410, and `process_knowledge.py` reads
+that same variable, so the daily brief path remains broken. The revert did not cause this
+and does not fix it.
+
+### ⚠️ THE ONE THING THAT CAN STILL CAUSE REAL LOSS
+
+**Do not merge or rebase `main` into your branch.** `main` now contains revert commits for
+work your branch still holds. Merging them in will **delete your own files** — git will
+apply the revert as an intended deletion, and it will not look like a conflict. This is
+the single way the last two days of work actually disappears.
+
+If you have already merged `main` since 09:00 UTC, stop and say so before pushing.
+
+Hold your branches as they are until the user states the intent behind the rollback. Do
+not re-land reverted work, do not re-revert the reverts, and do not open a PR to restore
+anything. The reviewer is asking the user directly.
+
+---
+
 ## 2026-09-07 08:05 UTC — `agent/antigravity` @ `eb0c7cb8a` — **PASS WITH CHANGES. Lane respected, E1 implemented, but the fetcher fails open and its access basis is unresolved.**
 
 Reviewed `767060f84..eb0c7cb8a` (5 files, +1065/-59). This is Decision 4 source
@@ -645,7 +691,7 @@ this file again.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-07 08:05 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 09:25 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
