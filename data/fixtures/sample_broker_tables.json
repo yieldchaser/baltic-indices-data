@@ -1,0 +1,79 @@
+[
+  {
+    "fixture_id": "ssy_capesize_rates_sample",
+    "fixture_type": "text_and_table",
+    "broker": "ssy",
+    "table_category": "rates",
+    "source_file": "reports/fixtures/sample_ssy_capesize.pdf",
+    "page_number": 2,
+    "table_index": 0,
+    "headers": ["Route", "Vessel Class", "Rate ($/day)", "Weekly Change"],
+    "rows": [
+      ["T/C Tubarao-Qingdao (C3)", "Capesize 180k", "24.50", "+1.25"],
+      ["T/C West Australia-Qingdao (C5)", "Capesize 180k", "10.20", "+0.45"],
+      ["T/C Bolivar-Rotterdam (C7)", "Capesize 180k", "12.80", "-0.30"],
+      ["Transatlantic Round Voyage (C8_14)", "Capesize 180k", "28500", "+2200"],
+      ["China-Japan Transpacific RV (C10_14)", "Capesize 180k", "22400", "+1500"]
+    ]
+  },
+  {
+    "fixture_id": "allied_snp_secondhand_sample",
+    "fixture_type": "dense_multi_table",
+    "broker": "allied",
+    "table_category": "snp",
+    "source_file": "reports/fixtures/sample_allied_snp.pdf",
+    "page_number": 4,
+    "table_index": 1,
+    "headers": ["Vessel Name", "DWT", "Built", "Yard", "Buyers", "Price ($m)"],
+    "rows": [
+      ["CAPE PROVIDENCE", "180,200", "2011", "Daehan", "Greek buyers", "31.50"],
+      ["PACIFIC OAK", "82,000", "2016", "Sanoyas", "Far Eastern", "26.00"],
+      ["NORDIC BRASILIA", "115,000", "2019", "Daehan", "Undisclosed", "58.00"],
+      ["NEW AMITY", "55,600", "2008", "Mitsui", "Middle Eastern", "14.20"]
+    ]
+  },
+  {
+    "fixture_id": "allied_snp_collapsed_bad_sample",
+    "fixture_type": "dense_multi_table_collapsed_bad",
+    "broker": "allied",
+    "table_category": "snp",
+    "source_file": "reports/fixtures/sample_allied_snp_collapsed.pdf",
+    "page_number": 4,
+    "table_index": 2,
+    "headers": ["Vessel Info", "Price"],
+    "rows": [
+      ["CAPE PROVIDENCE 180200 DWT 2011", "31.50"],
+      ["PACIFIC OAK 82000 DWT 2016", "26.00"]
+    ]
+  },
+  {
+    "fixture_id": "allied_snp_column_shifted_bad_sample",
+    "fixture_type": "dense_multi_table_shifted_bad",
+    "broker": "allied",
+    "table_category": "snp",
+    "source_file": "reports/fixtures/sample_allied_snp_shifted.pdf",
+    "page_number": 4,
+    "table_index": 3,
+    "headers": ["Vessel Name", "DWT", "Built", "Yard", "Buyers", "Price ($m)"],
+    "rows": [
+      ["CAPE PROVIDENCE", "Greek buyers", "2011", "Daehan", "31.50", "180200"]
+    ]
+  },
+  {
+    "fixture_id": "breakwave_china_coal_chart_sample",
+    "fixture_type": "chart_heavy",
+    "broker": "breakwave",
+    "table_category": "rates",
+    "source_file": "reports/breakwave/2020/assets/2020-10-07_chinas-coal-black-box-for-shipping_img_arrowcoalprices_3cef6f2a9103.png",
+    "page_number": 1,
+    "table_index": 0,
+    "headers": ["Date", "Domestic Qinhuangdao 5500 kcal/kg (RMB/t)", "Newcastle FOB ($/t)"],
+    "rows": [
+      ["2020-01-03", "555.0", "67.5"],
+      ["2020-03-06", "540.0", "64.0"],
+      ["2020-05-08", "475.0", "52.5"],
+      ["2020-07-03", "580.0", "55.0"],
+      ["2020-09-04", "595.0", "51.0"]
+    ]
+  }
+]
