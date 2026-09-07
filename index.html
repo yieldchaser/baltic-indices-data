@@ -12520,12 +12520,12 @@
         <table class="fearn-table" id="fearnCharterersTable">
           <thead>
             <tr>
-              <th style="width:30px;">#</th>
-              <th>Charterer</th>
-              <th>Sector</th>
-              <th style="text-align:right;">Fixtures</th>
-              <th style="text-align:right;">Share %</th>
-              <th>Primary Route</th>
+              <th style="width:30px;" data-tooltip="League table rank sorted by total recorded fixture count.">#</th>
+              <th data-tooltip="Commercial chartering principal, oil major, mining house, or grain trader.">Charterer</th>
+              <th data-tooltip="Primary shipping sector (Dry Bulk or Tankers).">Sector</th>
+              <th style="text-align:right;" data-tooltip="Total verified commercial fixtures recorded in the Fearnleys database.">Fixtures</th>
+              <th style="text-align:right;" data-tooltip="Percentage share of all recorded market fixtures across the sector.">Share %</th>
+              <th data-tooltip="Primary or most frequent loading origin / discharge destination corridor.">Primary Route</th>
             </tr>
           </thead>
           <tbody id="fearnCharterersTableBody">
@@ -12540,20 +12540,20 @@
   <div>
     <div class="fearn-search-box">
       <div style="font-size:11px;font-weight:600;color:var(--text);">Recent Commercial Fixture Stream</div>
-      <input type="text" class="fearn-input" id="fearnFixtureSearchInput" placeholder="Filter by vessel, charterer, or route..." oninput="filterRecentFixtures(this.value)">
+      <input type="text" class="fearn-input" id="fearnFixtureSearchInput" placeholder="Filter by vessel, charterer, or route..." oninput="filterRecentFixtures(this.value)" data-tooltip="Filter live fixture reports by vessel name, charterer (e.g. 'Trafigura', 'Rio Tinto'), or loading route.">
       <span style="font-size:10px;color:var(--text-muted);margin-left:auto;" id="fearnFixtureCountLabel">Showing latest 100 deals</span>
     </div>
     <div class="fearn-table-wrap" style="max-height:240px;overflow-y:auto;">
       <table class="fearn-table" id="fearnRecentFixturesTable">
         <thead>
           <tr>
-            <th>Date</th>
-            <th>Vessel Name</th>
-            <th>Segment</th>
-            <th>Charterer</th>
-            <th>Route / Corridor</th>
-            <th>Freight Rate</th>
-            <th>Laycan</th>
+            <th data-tooltip="Fixture reporting or fixture conclusion date.">Date</th>
+            <th data-tooltip="Fixed commercial cargo vessel.">Vessel Name</th>
+            <th data-tooltip="Vessel deadweight size class.">Segment</th>
+            <th data-tooltip="Commercial charterer fixing the vessel.">Charterer</th>
+            <th data-tooltip="Origin loading port to destination discharge area or voyage code.">Route / Corridor</th>
+            <th data-tooltip="Agreed freight rate (Worldscale WS, $/ton, or $/day time charter equivalent).">Freight Rate</th>
+            <th data-tooltip="Laycan window (agreed vessel arrival dates at load port).">Laycan</th>
           </tr>
         </thead>
         <tbody id="fearnRecentFixturesBody">
@@ -13047,13 +13047,13 @@
     </div>
     <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
       <div id="fearnAssetSegToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
-        <button class="toggle-btn active" id="btnAssetCape" onclick="switchFearnAssetSeg('capesize')">Capesize</button>
-        <button class="toggle-btn" id="btnAssetKam" onclick="switchFearnAssetSeg('kamsarmax')">Kamsarmax</button>
-        <button class="toggle-btn" id="btnAssetUltra" onclick="switchFearnAssetSeg('ultramax')">Ultramax</button>
-        <button class="toggle-btn" id="btnAssetVlcc" onclick="switchFearnAssetSeg('vlcc')">VLCC</button>
-        <button class="toggle-btn" id="btnAssetSuez" onclick="switchFearnAssetSeg('suezmax')">Suezmax</button>
-        <button class="toggle-btn" id="btnAssetAfra" onclick="switchFearnAssetSeg('aframax')">Aframax</button>
-        <button class="toggle-btn" id="btnAssetMr" onclick="switchFearnAssetSeg('mr')">MR</button>
+        <button class="toggle-btn active" id="btnAssetCape" onclick="switchFearnAssetSeg('capesize')" data-tooltip="Capesize bulkers (~180,000 DWT) asset valuation series (5Y, 10Y, Resale, Newbuilding parity).">Capesize</button>
+        <button class="toggle-btn" id="btnAssetKam" onclick="switchFearnAssetSeg('kamsarmax')" data-tooltip="Kamsarmax / Panamax bulkers (~82,000 DWT) asset valuation series (5Y, 10Y, Resale, Newbuilding parity).">Kamsarmax</button>
+        <button class="toggle-btn" id="btnAssetUltra" onclick="switchFearnAssetSeg('ultramax')" data-tooltip="Ultramax / Supramax bulkers (~64,000 DWT) asset valuation series (5Y, 10Y, Resale, Newbuilding parity).">Ultramax</button>
+        <button class="toggle-btn" id="btnAssetVlcc" onclick="switchFearnAssetSeg('vlcc')" data-tooltip="Very Large Crude Carriers (~300,000 DWT) asset valuation series (5Y, 10Y, Resale, Newbuilding parity).">VLCC</button>
+        <button class="toggle-btn" id="btnAssetSuez" onclick="switchFearnAssetSeg('suezmax')" data-tooltip="Suezmax crude tankers (~160,000 DWT) asset valuation series (5Y, 10Y, Resale, Newbuilding parity).">Suezmax</button>
+        <button class="toggle-btn" id="btnAssetAfra" onclick="switchFearnAssetSeg('aframax')" data-tooltip="Aframax crude &amp; LR2 product tankers (~115,000 DWT) asset valuation series (5Y, 10Y, Resale, Newbuilding parity).">Aframax</button>
+        <button class="toggle-btn" id="btnAssetMr" onclick="switchFearnAssetSeg('mr')" data-tooltip="Medium Range product tankers (~50,000 DWT) asset valuation series (5Y, 10Y, Resale, Newbuilding parity).">MR</button>
       </div>
       <span class="kpi-badge" id="fearnAssetCurBadge">Valuation: —</span>
     </div>
@@ -13101,20 +13101,20 @@
     <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
       <span class="kpi-badge">2,592 Deals ($69.8B USD)</span>
       <div id="fearnSnpSegToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
-        <button class="toggle-btn active" id="btnSnpAll" onclick="setSnpFilter('all')">All Deals</button>
-        <button class="toggle-btn" id="btnSnpBulk" onclick="setSnpFilter('bulk')">Dry Bulk (1,691)</button>
-        <button class="toggle-btn" id="btnSnpTank" onclick="setSnpFilter('tank')">Tankers (901)</button>
+        <button class="toggle-btn active" id="btnSnpAll" onclick="setSnpFilter('all')" data-tooltip="View all 2,592 recorded secondhand sale and purchase transactions across dry bulk and tanker sectors.">All Deals</button>
+        <button class="toggle-btn" id="btnSnpBulk" onclick="setSnpFilter('bulk')" data-tooltip="Filter for 1,691 verified dry bulk carrier transactions (Capesize, Kamsarmax, Ultramax, Handysize).">Dry Bulk (1,691)</button>
+        <button class="toggle-btn" id="btnSnpTank" onclick="setSnpFilter('tank')" data-tooltip="Filter for 901 verified tanker transactions (VLCC, Suezmax, Aframax, MR, Product/Chemical).">Tankers (901)</button>
       </div>
     </div>
   </div>
 
   <div class="fearn-search-box" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-    <input type="text" class="fearn-input" id="fearnSnpSearchInput" placeholder="Search by vessel, shipyard, or buyer..." oninput="filterSnpDeals(this.value)" style="max-width:320px;">
+    <input type="text" class="fearn-input" id="fearnSnpSearchInput" placeholder="Search by vessel, shipyard, or buyer..." oninput="filterSnpDeals(this.value)" style="max-width:320px;" data-tooltip="Search verified S&amp;P records by vessel name, shipyard (e.g. 'Jiangnan', 'Hyundai'), or buyer entity.">
     <div style="display:flex;align-items:center;gap:8px;margin-left:auto;">
       <span style="font-size:10px;color:var(--text-muted);" id="fearnSnpCountLabel">Showing 1–50 of 2,592 deals</span>
-      <button class="cp-page-btn" id="btnFearnSnpPrev" onclick="prevFearnSnpPage()" style="padding:2px 8px;font-size:11px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:3px;cursor:pointer;">Prev</button>
+      <button class="cp-page-btn" id="btnFearnSnpPrev" onclick="prevFearnSnpPage()" style="padding:2px 8px;font-size:11px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:3px;cursor:pointer;" data-tooltip="Previous 50 verified S&amp;P deal transactions.">Prev</button>
       <span style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;" id="fearnSnpPageInfo">1 / 52</span>
-      <button class="cp-page-btn" id="btnFearnSnpNext" onclick="nextFearnSnpPage()" style="padding:2px 8px;font-size:11px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:3px;cursor:pointer;">Next</button>
+      <button class="cp-page-btn" id="btnFearnSnpNext" onclick="nextFearnSnpPage()" style="padding:2px 8px;font-size:11px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:3px;cursor:pointer;" data-tooltip="Next 50 verified S&amp;P deal transactions.">Next</button>
     </div>
   </div>
 
@@ -13122,16 +13122,16 @@
     <table class="fearn-table" id="fearnSnpTable">
       <thead>
         <tr>
-          <th>Date</th>
-          <th>Vessel Name</th>
-          <th>Segment</th>
-          <th style="text-align:right;">Built</th>
-          <th>Shipyard</th>
-          <th style="text-align:right;">DWT</th>
-          <th style="text-align:right;">Price ($M)</th>
-          <th style="text-align:right;">Implied $/DWT</th>
-          <th>Buyer Entity</th>
-          <th>Comments</th>
+          <th data-tooltip="Date the sale &amp; purchase transaction was confirmed/reported.">Date</th>
+          <th data-tooltip="Commercial vessel name at time of sale.">Vessel Name</th>
+          <th data-tooltip="Vessel sector and deadweight tonnage class.">Segment</th>
+          <th style="text-align:right;" data-tooltip="Original year of vessel delivery from builder shipyard.">Built</th>
+          <th data-tooltip="Shipbuilder and yard facility that constructed the vessel.">Shipyard</th>
+          <th style="text-align:right;" data-tooltip="Deadweight cargo carrying tonnage capacity.">DWT</th>
+          <th style="text-align:right;" data-tooltip="Gross agreed transaction price in Millions USD ($M).">Price ($M)</th>
+          <th style="text-align:right;" data-tooltip="Implied steel valuation per deadweight tonne ($/DWT).">Implied $/DWT</th>
+          <th data-tooltip="Purchasing shipowner, fund, or trading house.">Buyer Entity</th>
+          <th data-tooltip="Transaction terms, surveys passed, scrubber/BWTS equipment, or time charter attachment details.">Comments</th>
         </tr>
       </thead>
       <tbody id="fearnSnpTableBody">
@@ -13159,9 +13159,9 @@
               <div class="chart-title" id="scrappageTitle" data-tooltip=" " data-tt-type="concept-scrappage">Global Ship Demolition & Scrap Matrix ($/LDT)</div>
               <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
                 <div id="scrapTypeToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
-                  <button class="toggle-btn active" id="scrapBtnDry" onclick="setScrapType('dry')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;">Dry Bulkers</button>
-                  <button class="toggle-btn" id="scrapBtnTanker" onclick="setScrapType('tanker')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Tankers</button>
-                  <button class="toggle-btn" id="scrapBtnAll" onclick="setScrapType('all')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">All Yards</button>
+                  <button class="toggle-btn active" id="scrapBtnDry" onclick="setScrapType('dry')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;" data-tooltip="Ship demolition scrap prices for dry bulk tonnage ($/LDT).">Dry Bulkers</button>
+                  <button class="toggle-btn" id="scrapBtnTanker" onclick="setScrapType('tanker')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);" data-tooltip="Ship demolition scrap prices for tanker tonnage ($/LDT).">Tankers</button>
+                  <button class="toggle-btn" id="scrapBtnAll" onclick="setScrapType('all')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);" data-tooltip="Ship demolition scrap prices across all vessel categories and demo centers (India, Pakistan, Bangladesh, Turkey).">All Yards</button>
                 </div>
                 <div id="scrapBadge" class="kpi-badge">India Scrap: —</div>
               </div>
@@ -13822,14 +13822,14 @@ if (intelTabsContainer) {
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; background:#0e141c; padding:8px 12px; border:1px solid var(--border); border-radius:4px;">
               <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
                 <div style="font-size:11px; color:var(--text-muted); font-weight:600;">SECTOR:</div>
-                <button class="cp-toggle-btn active" id="btnStressSectorAll" onclick="setPortStressSector('all')">All</button>
-                <button class="cp-toggle-btn" id="btnStressSectorDry" onclick="setPortStressSector('Dry Bulk')">Dry Bulk</button>
-                <button class="cp-toggle-btn" id="btnStressSectorTank" onclick="setPortStressSector('Tankers')">Tankers</button>
-                <button class="cp-toggle-btn" id="btnStressSectorLNG" onclick="setPortStressSector('LNG')">LNG</button>
-                <button class="cp-toggle-btn" id="btnStressSectorLPG" onclick="setPortStressSector('LPG')">LPG</button>
+                <button class="cp-toggle-btn active" id="btnStressSectorAll" onclick="setPortStressSector('all')" data-tooltip="Display all 41 monitored global commodity loading and discharge hubs.">All</button>
+                <button class="cp-toggle-btn" id="btnStressSectorDry" onclick="setPortStressSector('Dry Bulk')" data-tooltip="Filter for major Capesize and Panamax dry bulk terminals (iron ore, coal, grain, bauxite).">Dry Bulk</button>
+                <button class="cp-toggle-btn" id="btnStressSectorTank" onclick="setPortStressSector('Tankers')" data-tooltip="Filter for primary crude and product tanker hubs (VLCC, Suezmax, Aframax terminals).">Tankers</button>
+                <button class="cp-toggle-btn" id="btnStressSectorLNG" onclick="setPortStressSector('LNG')" data-tooltip="Filter for global LNG liquefaction export terminals and regasification import hubs.">LNG</button>
+                <button class="cp-toggle-btn" id="btnStressSectorLPG" onclick="setPortStressSector('LPG')" data-tooltip="Filter for VLGC and LPG export/import refrigeration complexes.">LPG</button>
               </div>
               <div style="display:flex; gap:6px; align-items:center;">
-                <input type="text" id="portStressSearchInput" class="tracking-input" placeholder="Search port, country..." oninput="onPortStressSearchInput()" style="width:180px;">
+                <input type="text" id="portStressSearchInput" class="tracking-input" placeholder="Search port, country..." oninput="onPortStressSearchInput()" style="width:180px;" data-tooltip="Search by port name (e.g. Singapore, Port Hedland, Ras Tanura), UN/LOCODE, country, or commodity segment.">
               </div>
             </div>
 
@@ -13838,12 +13838,12 @@ if (intelTabsContainer) {
               <table class="tracking-table">
                 <thead>
                   <tr>
-                    <th>Port / Hub</th>
-                    <th>Class</th>
-                    <th>Weekly Influx</th>
-                    <th>5Y Baseline</th>
-                    <th>Deviation (Z)</th>
-                    <th>Status</th>
+                    <th data-tooltip="Strategic maritime terminal, country, and UN/LOCODE identifier.">Port / Hub</th>
+                    <th data-tooltip="Commodity cargo segment served by this terminal (Dry Bulk, Tankers, LNG, LPG).">Class</th>
+                    <th data-tooltip="Number of commercial vessel port calls observed in the latest trailing week.">Weekly Influx</th>
+                    <th data-tooltip="Expected 5-year rolling seasonal average arrivals for this week of the year.">5Y Baseline</th>
+                    <th data-tooltip="Z-Score standard deviation from seasonal mean. Positive (&gt; +1.5&sigma;) indicates congestion squeeze; negative (&lt; -1.5&sigma;) indicates supply outage.">Deviation (Z)</th>
+                    <th data-tooltip="Operational rating: Normal Baseline, Congestion Squeeze (&ge; +1.5&sigma;), or Cargo Outage (&le; -1.5&sigma;).">Status</th>
                   </tr>
                 </thead>
                 <tbody id="portStressTableBody">
@@ -13860,9 +13860,10 @@ if (intelTabsContainer) {
                   <div style="font-size:11px; color:var(--text-muted);" id="portStressChartSub">5-Year Rolling Seasonal Mean &amp; Operating Envelope Band (2019–2026)</div>
                 </div>
                 <div style="display:flex; gap:6px; align-items:center;">
-                  <button class="cp-toggle-btn active" data-stress-range="all" onclick="setPortStressRange('all')">Max (8Y)</button>
-                  <button class="cp-toggle-btn" data-stress-range="3y" onclick="setPortStressRange('3y')">3Y</button>
-                  <button class="cp-toggle-btn" data-stress-range="1y" onclick="setPortStressRange('1y')">1Y</button>
+                  <button class="cp-toggle-btn active" data-stress-range="all" onclick="setPortStressRange('all')" data-tooltip="Full 8-year weekly arrival history from IMF PortWatch (2019–2026).">Max (8Y)</button>
+                  <button class="cp-toggle-btn" data-stress-range="5y" onclick="setPortStressRange('5y')" data-tooltip="5-year rolling seasonal envelope and baseline arrival envelope (2021–2026).">5Y</button>
+                  <button class="cp-toggle-btn" data-stress-range="3y" onclick="setPortStressRange('3y')" data-tooltip="3-year seasonal operating band (2023–2026).">3Y</button>
+                  <button class="cp-toggle-btn" data-stress-range="1y" onclick="setPortStressRange('1y')" data-tooltip="Trailing 12-month weekly port arrival volume vs seasonal baseline.">1Y</button>
                 </div>
               </div>
               <div class="chart-canvas-wrap" style="height:250px; position:relative; width:100%;">
@@ -13908,10 +13909,11 @@ if (intelTabsContainer) {
                 <div class="cp-region" id="cpDrawerRegion">Red Sea / Gulf of Aden · Global Container &amp; Crude Artery</div>
               </div>
               <div class="cp-btn-group">
-                <button class="cp-toggle-btn active" data-range="all" onclick="setChokepointRange('all')">Max (2019-2026)</button>
-                <button class="cp-toggle-btn" data-range="3y" onclick="setChokepointRange('3y')">3Y</button>
-                <button class="cp-toggle-btn" data-range="1y" onclick="setChokepointRange('1y')">1Y</button>
-                <button class="cp-toggle-btn" data-range="90d" onclick="setChokepointRange('90d')">90D Daily</button>
+                <button class="cp-toggle-btn active" data-range="all" onclick="setChokepointRange('all')" data-tooltip="Full historical transit observation series from AIS and IMF PortWatch (2019–2026).">Max (2019-2026)</button>
+                <button class="cp-toggle-btn" data-range="5y" onclick="setChokepointRange('5y')" data-tooltip="5-year historical transit trend (2021–2026).">5Y</button>
+                <button class="cp-toggle-btn" data-range="3y" onclick="setChokepointRange('3y')" data-tooltip="3-year transit trend capturing Red Sea &amp; Panama Canal disruption cycles (2023–2026).">3Y</button>
+                <button class="cp-toggle-btn" data-range="1y" onclick="setChokepointRange('1y')" data-tooltip="Trailing 12-month monthly transit volume.">1Y</button>
+                <button class="cp-toggle-btn" data-range="90d" onclick="setChokepointRange('90d')" data-tooltip="High-resolution daily transit tracking (last 90 days).">90D Daily</button>
               </div>
             </div>
 
@@ -13944,11 +13946,11 @@ if (intelTabsContainer) {
 
             <div class="cp-controls-bar">
               <div class="cp-btn-group">
-                <button class="cp-toggle-btn active" data-metric="total" onclick="setChokepointMetric('total')">All Vessels</button>
-                <button class="cp-toggle-btn" data-metric="tanker" onclick="setChokepointMetric('tanker')">Tankers</button>
-                <button class="cp-toggle-btn" data-metric="bulk" onclick="setChokepointMetric('bulk')">Dry Bulk</button>
-                <button class="cp-toggle-btn" data-metric="container" onclick="setChokepointMetric('container')">Containers</button>
-                <button class="cp-toggle-btn" data-metric="capacity" onclick="setChokepointMetric('capacity')">Capacity (DWT)</button>
+                <button class="cp-toggle-btn active" data-metric="total" onclick="setChokepointMetric('total')" data-tooltip="Total commercial vessel transits across all vessel categories.">All Vessels</button>
+                <button class="cp-toggle-btn" data-metric="tanker" onclick="setChokepointMetric('tanker')" data-tooltip="Crude, product, and chemical tanker transits.">Tankers</button>
+                <button class="cp-toggle-btn" data-metric="bulk" onclick="setChokepointMetric('bulk')" data-tooltip="Capesize, Panamax, Supramax, and Handysize dry bulk carrier transits.">Dry Bulk</button>
+                <button class="cp-toggle-btn" data-metric="container" onclick="setChokepointMetric('container')" data-tooltip="Container ship transits and liner capacity.">Containers</button>
+                <button class="cp-toggle-btn" data-metric="capacity" onclick="setChokepointMetric('capacity')" data-tooltip="Aggregate deadweight capacity (k DWT) transiting the chokepoint.">Capacity (DWT)</button>
               </div>
               <div style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">
                 Source: AIS Daily Transit Observation &amp; IMF PortWatch (2019–2026)
@@ -14044,16 +14046,16 @@ if (intelTabsContainer) {
         <!-- Left Pane: 4 Subviews -->
         <div class="bunkers-left-pane">
           <div class="bunkers-subview-nav">
-            <button id="subnavBunkersSpot" class="bunkers-subview-btn active" onclick="setBunkersSubView('spot')">
+            <button id="subnavBunkersSpot" class="bunkers-subview-btn active" onclick="setBunkersSubView('spot')" data-tooltip="Global spot bunker prices across 221 ports covering VLSFO, MGO, and HSFO.">
               Spot Prices (221)
             </button>
-            <button id="subnavBunkersForward" class="bunkers-subview-btn" onclick="setBunkersSubView('forward')">
+            <button id="subnavBunkersForward" class="bunkers-subview-btn" onclick="setBunkersSubView('forward')" data-tooltip="12-month forward derivative price curves and Hi-5 spreads across key bunkering hubs.">
               12M Forward Curves
             </button>
-            <button id="subnavBunkersVolumes" class="bunkers-subview-btn" onclick="setBunkersSubView('volumes')">
+            <button id="subnavBunkersVolumes" class="bunkers-subview-btn" onclick="setBunkersSubView('volumes')" data-tooltip="Monthly bunker sales volumes, grade breakdown, and demand trends in major bunkering hubs.">
               Physical Volumes
             </button>
-            <button id="subnavBunkersScrubber" class="bunkers-subview-btn" onclick="setBunkersSubView('scrubber')">
+            <button id="subnavBunkersScrubber" class="bunkers-subview-btn" onclick="setBunkersSubView('scrubber')" data-tooltip="Scrubber premium payback economics, Hi-5 spreads, and EU ETS carbon compliance costs.">
               Scrubber &amp; EU ETS
             </button>
           </div>
@@ -14064,12 +14066,12 @@ if (intelTabsContainer) {
               <table class="bunkers-table">
                 <thead>
                   <tr>
-                    <th>Port / Hub</th>
-                    <th>Region</th>
-                    <th>VLSFO</th>
-                    <th>MGO</th>
-                    <th>HSFO</th>
-                    <th>Spread (vs SG)</th>
+                    <th data-tooltip="Bunkering port or marine fuel supply terminal.">Port / Hub</th>
+                    <th data-tooltip="Geographical trading zone.">Region</th>
+                    <th data-tooltip="Very Low Sulphur Fuel Oil (0.5% max sulphur) price in $/MT.">VLSFO</th>
+                    <th data-tooltip="Marine Gas Oil (0.1% max sulphur) distillate price in $/MT.">MGO</th>
+                    <th data-tooltip="High Sulphur Fuel Oil (3.5% max sulphur) price in $/MT.">HSFO</th>
+                    <th data-tooltip="Fuel price differential relative to Singapore benchmark hub ($/MT).">Spread (vs SG)</th>
                   </tr>
                 </thead>
                 <tbody id="bunkersTableBodyAll">
@@ -14080,8 +14082,8 @@ if (intelTabsContainer) {
             <div class="bunkers-table-footer">
               <span id="bunkersPageInfo">Showing 1–50 of 221 ports</span>
               <div style="display:flex; gap:6px;">
-                <button id="btnBunkersPrev" class="tracking-page-btn" onclick="prevBunkersPage()">Prev</button>
-                <button id="btnBunkersNext" class="tracking-page-btn" onclick="nextBunkersPage()">Next</button>
+                <button id="btnBunkersPrev" class="tracking-page-btn" onclick="prevBunkersPage()" data-tooltip="Previous 50 bunker ports.">Prev</button>
+                <button id="btnBunkersNext" class="tracking-page-btn" onclick="nextBunkersPage()" data-tooltip="Next 50 bunker ports.">Next</button>
               </div>
             </div>
           </div>
@@ -14090,7 +14092,7 @@ if (intelTabsContainer) {
           <div id="bunkersSubviewForward" class="bunkers-subview-content" style="display:none;">
             <div style="padding:10px 14px; background:#0e141c; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
               <div style="font-size:11px; font-weight:600; color:var(--text-muted);">FORWARD HUB:</div>
-              <select id="bunkersForwardHubSelect" class="tracking-select" onchange="onBunkersForwardHubChange()">
+              <select id="bunkersForwardHubSelect" class="tracking-select" onchange="onBunkersForwardHubChange()" data-tooltip="Select forward pricing terminal benchmark.">
                 <option value="Singapore" selected>Singapore (Global Bunker Benchmark)</option>
                 <option value="Rotterdam">Rotterdam (ARA Range)</option>
                 <option value="Fujairah">Fujairah (Middle East Gulf)</option>
@@ -14103,11 +14105,11 @@ if (intelTabsContainer) {
               <table class="bunkers-table">
                 <thead>
                   <tr>
-                    <th>Contract</th>
-                    <th>IFO380 ($/MT)</th>
-                    <th>VLSFO ($/MT)</th>
-                    <th>MGO ($/MT)</th>
-                    <th>Hi-5 Spread</th>
+                    <th data-tooltip="Forward delivery settlement maturity month.">Contract</th>
+                    <th data-tooltip="High Sulphur Fuel Oil 380 cSt forward swap price ($/MT).">IFO380 ($/MT)</th>
+                    <th data-tooltip="Very Low Sulphur Fuel Oil 0.5% forward swap price ($/MT).">VLSFO ($/MT)</th>
+                    <th data-tooltip="Marine Gas Oil 0.1% forward swap price ($/MT).">MGO ($/MT)</th>
+                    <th data-tooltip="VLSFO minus IFO380 forward scrubber spread ($/MT).">Hi-5 Spread</th>
                   </tr>
                 </thead>
                 <tbody id="bunkersForwardTableBody">
@@ -14124,7 +14126,7 @@ if (intelTabsContainer) {
           <div id="bunkersSubviewVolumes" class="bunkers-subview-content" style="display:none;">
             <div style="padding:10px 14px; background:#0e141c; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
               <div style="font-size:11px; font-weight:600; color:var(--text-muted);">DELIVERY PORT:</div>
-              <select id="bunkersVolHubSelect" class="tracking-select" onchange="onBunkersVolHubChange()">
+              <select id="bunkersVolHubSelect" class="tracking-select" onchange="onBunkersVolHubChange()" data-tooltip="Select bunker volume reporting port authority.">
                 <option value="Singapore" selected>Singapore (MPA Official Volumes)</option>
                 <option value="Rotterdam">Rotterdam (Port Authority Deliveries)</option>
               </select>
@@ -14133,10 +14135,10 @@ if (intelTabsContainer) {
               <table class="bunkers-table">
                 <thead>
                   <tr>
-                    <th>Period</th>
-                    <th>Frequency</th>
-                    <th>Volume (Metric Tonnes)</th>
-                    <th>Metric Type</th>
+                    <th data-tooltip="Reported calendar delivery month.">Period</th>
+                    <th data-tooltip="Reporting cadence (Monthly official port authority statistics).">Frequency</th>
+                    <th data-tooltip="Total bunker fuel delivered in metric tonnes (MT).">Volume (Metric Tonnes)</th>
+                    <th data-tooltip="Fuel delivery breakdown category.">Metric Type</th>
                   </tr>
                 </thead>
                 <tbody id="bunkersVolumesTableBody">
@@ -14155,11 +14157,11 @@ if (intelTabsContainer) {
               <table class="bunkers-table">
                 <thead>
                   <tr>
-                    <th>Port / Hub</th>
-                    <th>Hi-5 Spread</th>
-                    <th>Cape TCE Bonus</th>
-                    <th>VLCC TCE Bonus</th>
-                    <th>EU ETS Cost</th>
+                    <th data-tooltip="Key bunkering port or regional terminal.">Port / Hub</th>
+                    <th data-tooltip="Price premium of VLSFO over HSFO ($/MT).">Hi-5 Spread</th>
+                    <th data-tooltip="Daily earnings premium for scrubber-fitted Capesize vessel ($/day).">Cape TCE Bonus</th>
+                    <th data-tooltip="Daily earnings premium for scrubber-fitted VLCC vessel ($/day).">VLCC TCE Bonus</th>
+                    <th data-tooltip="Estimated EU ETS carbon compliance cost per metric tonne of bunker fuel consumed.">EU ETS Cost</th>
                   </tr>
                 </thead>
                 <tbody id="bunkersScrubberTableBody">
@@ -14207,7 +14209,7 @@ if (intelTabsContainer) {
                 </div>
               </div>
               <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
-                <select id="bunkerChartPortSelect" class="tracking-select" onchange="onBunkerChartPortSelect()">
+                <select id="bunkerChartPortSelect" class="tracking-select" onchange="onBunkerChartPortSelect()" data-tooltip="Select bunker supply port or regional benchmark to plot.">
                   <option value="Americas Average">Americas Average (Benchmark)</option>
                   <option value="APAC Average">APAC Average (Benchmark)</option>
                   <option value="EMEA Average">EMEA Average (Benchmark)</option>
@@ -14227,20 +14229,20 @@ if (intelTabsContainer) {
                   <option value="Busan">Busan</option>
                 </select>
                 <div class="cp-btn-group">
-                  <button class="cp-toggle-btn active" data-range="all" onclick="setBunkerChartRange('all')">Max (3Y)</button>
-                  <button class="cp-toggle-btn" data-range="1y" onclick="setBunkerChartRange('1y')">1Y</button>
-                  <button class="cp-toggle-btn" data-range="6m" onclick="setBunkerChartRange('6m')">6M</button>
+                  <button class="cp-toggle-btn active" data-range="all" onclick="setBunkerChartRange('all')" data-tooltip="Full 3-year daily spot price series (2023–2026).">Max (3Y)</button>
+                  <button class="cp-toggle-btn" data-range="1y" onclick="setBunkerChartRange('1y')" data-tooltip="Trailing 12-month spot price trend.">1Y</button>
+                  <button class="cp-toggle-btn" data-range="6m" onclick="setBunkerChartRange('6m')" data-tooltip="Trailing 6-month recent bunker price action.">6M</button>
                 </div>
               </div>
             </div>
 
             <div class="cp-controls-bar">
               <div class="cp-btn-group">
-                <button class="cp-toggle-btn active" data-grade="vlsfo" onclick="setBunkerChartGrade('vlsfo')">VLSFO (0.5%)</button>
-                <button class="cp-toggle-btn" data-grade="mgo" onclick="setBunkerChartGrade('mgo')">MGO (0.1%)</button>
-                <button class="cp-toggle-btn" data-grade="hsfo" onclick="setBunkerChartGrade('hsfo')">HSFO (IFO380)</button>
-                <button class="cp-toggle-btn" data-grade="hi5" onclick="setBunkerChartGrade('hi5')">Hi-5 Spread</button>
-                <button class="cp-toggle-btn" data-grade="bio" onclick="setBunkerChartGrade('bio')">Biofuel (B24)</button>
+                <button class="cp-toggle-btn active" data-grade="vlsfo" onclick="setBunkerChartGrade('vlsfo')" data-tooltip="Very Low Sulphur Fuel Oil 0.5% max sulphur spot price ($/MT).">VLSFO (0.5%)</button>
+                <button class="cp-toggle-btn" data-grade="mgo" onclick="setBunkerChartGrade('mgo')" data-tooltip="Marine Gas Oil 0.1% max sulphur distillate spot price ($/MT).">MGO (0.1%)</button>
+                <button class="cp-toggle-btn" data-grade="hsfo" onclick="setBunkerChartGrade('hsfo')" data-tooltip="High Sulphur Fuel Oil IFO380 spot price ($/MT).">HSFO (IFO380)</button>
+                <button class="cp-toggle-btn" data-grade="hi5" onclick="setBunkerChartGrade('hi5')" data-tooltip="Hi-5 spread: price premium of VLSFO over HSFO ($/MT).">Hi-5 Spread</button>
+                <button class="cp-toggle-btn" data-grade="bio" onclick="setBunkerChartGrade('bio')" data-tooltip="B24 biofuel blend spot price ($/MT).">Biofuel (B24)</button>
               </div>
               <div style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">
                 Source: Ship &amp; Bunker RPC Spot History (482k records, 2023–2026)
@@ -14313,26 +14315,28 @@ if (intelTabsContainer) {
       </div>
 
       <!-- WORKSTATION CONTROLS TOOLBAR -->
+      <!-- WORKSTATION CONTROLS TOOLBAR -->
       <div class="offshore-toolbar">
         <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
           <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-right:4px;">SEGMENT:</div>
-          <button class="cp-toggle-btn active" id="btnOffshoreSegAll" onclick="setOffshoreSegment('all')">All Segments</button>
-          <button class="cp-toggle-btn" id="btnOffshoreSegLargeAHTS" onclick="setOffshoreSegment('large_ahts')">Large AHTS</button>
-          <button class="cp-toggle-btn" id="btnOffshoreSegMedAHTS" onclick="setOffshoreSegment('med_ahts')">Med AHTS</button>
-          <button class="cp-toggle-btn" id="btnOffshoreSegLargePSV" onclick="setOffshoreSegment('large_psv')">Large PSV</button>
-          <button class="cp-toggle-btn" id="btnOffshoreSegMedPSV" onclick="setOffshoreSegment('med_psv')">Med PSV</button>
+          <button class="cp-toggle-btn active" id="btnOffshoreSegAll" onclick="setOffshoreSegment('all')" data-tooltip="View aggregate North Sea spot dayrates and fleet utilization across all 4 OSV vessel classes (AHTS and PSV).">All Segments</button>
+          <button class="cp-toggle-btn" id="btnOffshoreSegLargeAHTS" onclick="setOffshoreSegment('large_ahts')" data-tooltip="Large AHTS (&gt;22,000 BHP) — Ultra-deepwater anchor handling, rig towing, and harsh-environment positioning operations.">Large AHTS</button>
+          <button class="cp-toggle-btn" id="btnOffshoreSegMedAHTS" onclick="setOffshoreSegment('med_ahts')" data-tooltip="Medium AHTS (&lt;22,000 BHP) — Midwater and shallow-water mooring operations and general offshore tug support.">Med AHTS</button>
+          <button class="cp-toggle-btn" id="btnOffshoreSegLargePSV" onclick="setOffshoreSegment('large_psv')" data-tooltip="Large PSV (&gt;900 m² deck) — Deepwater platform production supply, bulk fluids, chemicals, and drill mud transport.">Large PSV</button>
+          <button class="cp-toggle-btn" id="btnOffshoreSegMedPSV" onclick="setOffshoreSegment('med_psv')" data-tooltip="Medium PSV (&lt;900 m² deck) — Continental shelf supply runs, deck cargo, and routine offshore field support.">Med PSV</button>
 
           <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:12px; margin-right:4px;">METRIC:</div>
-          <button class="cp-toggle-btn active" id="btnOffshoreMetricRates" onclick="setOffshoreMetric('rates')">Dayrates (£/day)</button>
-          <button class="cp-toggle-btn" id="btnOffshoreMetricUtil" onclick="setOffshoreMetric('util')">Fleet Utilisation (%)</button>
-          <button class="cp-toggle-btn" id="btnOffshoreMetricDual" onclick="setOffshoreMetric('dual')">Dual View</button>
+          <button class="cp-toggle-btn active" id="btnOffshoreMetricRates" onclick="setOffshoreMetric('rates')" data-tooltip="Display monthly average spot dayrates in GBP (£/day) with shaded historical high/low operational ranges.">Dayrates (£/day)</button>
+          <button class="cp-toggle-btn" id="btnOffshoreMetricUtil" onclick="setOffshoreMetric('util')" data-tooltip="Display monthly fleet utilization percentage across active working vessels.">Fleet Utilisation (%)</button>
+          <button class="cp-toggle-btn" id="btnOffshoreMetricDual" onclick="setOffshoreMetric('dual')" data-tooltip="Dual-axis synchronized view: overlays spot dayrates (£/day) on left axis against fleet utilization (%) on right axis.">Dual View</button>
         </div>
 
         <div style="display:flex; gap:6px; align-items:center;">
           <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-right:4px;">RANGE:</div>
-          <button class="cp-toggle-btn active" id="btnOffshoreRangeAll" onclick="setOffshoreRange('all')">Max (8Y)</button>
-          <button class="cp-toggle-btn" id="btnOffshoreRange3y" onclick="setOffshoreRange('3y')">3Y</button>
-          <button class="cp-toggle-btn" id="btnOffshoreRange1y" onclick="setOffshoreRange('1y')">1Y</button>
+          <button class="cp-toggle-btn active" id="btnOffshoreRangeAll" onclick="setOffshoreRange('all')" data-tooltip="Full 8-year historical archive from Seabrokers Seabreeze reports (May 2018–August 2026).">Max (8Y)</button>
+          <button class="cp-toggle-btn" id="btnOffshoreRange5y" onclick="setOffshoreRange('5y')" data-tooltip="Medium-term 5-year cyclical lookback (2021–2026).">5Y</button>
+          <button class="cp-toggle-btn" id="btnOffshoreRange3y" onclick="setOffshoreRange('3y')" data-tooltip="3-year rolling trend capturing post-2022 market tightness and dayrate acceleration (2023–2026).">3Y</button>
+          <button class="cp-toggle-btn" id="btnOffshoreRange1y" onclick="setOffshoreRange('1y')" data-tooltip="Trailing 12-month short-term spot chartering momentum (2025–2026).">1Y</button>
         </div>
       </div>
 
@@ -14365,18 +14369,18 @@ if (intelTabsContainer) {
                 </svg>
                 Monthly OSV Dayrate Ledger (<span id="offshoreLedgerCountBadge">371</span>)
               </div>
-              <input type="text" id="offshoreSearchInput" class="tracking-input" placeholder="Filter month or vessel..." oninput="onOffshoreSearchInput()" style="width:160px;">
+              <input type="text" id="offshoreSearchInput" class="tracking-input" placeholder="Filter month or vessel..." oninput="onOffshoreSearchInput()" style="width:160px;" data-tooltip="Filter ledger records by month (e.g. '2026-08') or vessel category (e.g. 'AHTS', 'PSV').">
             </div>
             <div class="offshore-table-wrap">
               <table class="offshore-table">
                 <thead>
                   <tr>
-                    <th>Report Month</th>
-                    <th>Vessel Category</th>
-                    <th>Avg Dayrate (£)</th>
-                    <th>High / Low Range</th>
-                    <th>YoY (%)</th>
-                    <th>Util (%)</th>
+                    <th data-tooltip="Seabreeze publication month of the dayrate assessment.">Report Month</th>
+                    <th data-tooltip="Offshore Support Vessel class, deck area, and BHP rating.">Vessel Category</th>
+                    <th data-tooltip="Average monthly spot fixture rate recorded in GBP (£) per day.">Avg Dayrate (£)</th>
+                    <th data-tooltip="Reported minimum and maximum dayrates fixed during the calendar month.">High / Low Range</th>
+                    <th data-tooltip="Year-over-year rate change comparing current month against same month in prior year.">YoY (%)</th>
+                    <th data-tooltip="Working fleet utilization rate during the month.">Util (%)</th>
                   </tr>
                 </thead>
                 <tbody id="offshoreLedgerTableBody">
@@ -14387,8 +14391,8 @@ if (intelTabsContainer) {
             <div class="tracking-table-footer" style="padding:8px 12px; background:#0e141c; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
               <span id="offshorePageInfo" style="font-size:11px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">Showing 1–50 of 371 records</span>
               <div style="display:flex; gap:6px;">
-                <button id="btnOffshorePrev" class="tracking-page-btn" onclick="prevOffshorePage()">Prev</button>
-                <button id="btnOffshoreNext" class="tracking-page-btn" onclick="nextOffshorePage()">Next</button>
+                <button id="btnOffshorePrev" class="tracking-page-btn" onclick="prevOffshorePage()" data-tooltip="Previous 50 ledger entries.">Prev</button>
+                <button id="btnOffshoreNext" class="tracking-page-btn" onclick="nextOffshorePage()" data-tooltip="Next 50 ledger entries.">Next</button>
               </div>
             </div>
           </div>
@@ -36538,6 +36542,7 @@ function renderChokepointChart(cp) {
     var monthly = cp.monthly_series || [];
     if (range === '1y') monthly = monthly.slice(-12);
     else if (range === '3y') monthly = monthly.slice(-36);
+    else if (range === '5y') monthly = monthly.slice(-60);
 
     labels = monthly.map(function(r) { return r.m; });
     if (metric === 'total') data = monthly.map(function(r) { return r.tot_avg; });
@@ -40087,6 +40092,7 @@ function setOffshoreRange(r) {
   OFFSHORE_STATE.range = r;
   const btnMap = {
     all: 'btnOffshoreRangeAll',
+    '5y': 'btnOffshoreRange5y',
     '3y': 'btnOffshoreRange3y',
     '1y': 'btnOffshoreRange1y'
   };
@@ -40158,6 +40164,7 @@ function renderOffshoreMainChart() {
     if (!series) return [];
     if (range === '1y') return series.slice(-12);
     if (range === '3y') return series.slice(-36);
+    if (range === '5y') return series.slice(-60);
     return series;
   };
 
@@ -40421,23 +40428,22 @@ function renderOffshoreReports() {
   if (badge) badge.textContent = data.reports.length;
 
   container.innerHTML = data.reports.map(rep => {
+    const reportUrl = rep.pdf_url || rep.card_url;
+    const sizeStr = rep.file_size_mb ? rep.file_size_mb + ' MB' : (rep.size_kb ? Math.round(rep.size_kb) + ' KB' : '');
     return `<div class="offshore-report-card">
       <div style="font-weight:700; font-size:12px; color:#fff; line-height:1.3; margin-bottom:3px;">
         ${rep.title}
       </div>
       <div style="display:flex; justify-content:space-between; font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace; margin-bottom:8px;">
         <span>${rep.date}</span>
-        <span>${rep.file_size_mb ? rep.file_size_mb + ' MB' : (rep.size_kb ? Math.round(rep.size_kb) + ' KB' : '')}</span>
+        <span>${sizeStr}</span>
       </div>
       <div style="display:flex; gap:6px;">
-        <a href="${rep.pdf_url}" target="_blank" rel="noopener" class="offshore-pdf-btn">
+        <a href="${reportUrl}" target="_blank" rel="noopener" class="offshore-pdf-btn" data-tooltip="Download official Seabreeze monthly market intelligence report (PDF).">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
           </svg>
           PDF
-        </a>
-        <a href="${rep.card_url}" target="_blank" rel="noopener" class="offshore-pdf-btn" style="background:#111820; border-color:var(--border);">
-          Web
         </a>
       </div>
     </div>`;
@@ -40641,6 +40647,7 @@ function renderPortStressEnvelopeChart() {
   let rawSeries = hubData.series;
   if (range === '1y') rawSeries = rawSeries.slice(-52);
   else if (range === '3y') rawSeries = rawSeries.slice(-156);
+  else if (range === '5y') rawSeries = rawSeries.slice(-260);
 
   const labels = rawSeries.map(pt => pt.d);
   const callsData = rawSeries.map(pt => pt.c);

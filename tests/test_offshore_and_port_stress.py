@@ -140,3 +140,29 @@ def test_frontend_offshore_and_port_stress_elements_present():
     assert "type === 'port-stress-cell'" in html
     assert "type === 'port-stress-summary-hud'" in html
 
+    # 5Y range buttons across sections
+    assert 'id="btnOffshoreRange5y"' in html
+    assert 'data-stress-range="5y"' in html
+    assert 'data-range="5y"' in html
+
+    # Offshore controls have tooltips
+    assert 'id="btnOffshoreSegAll"' in html
+    assert 'btnOffshoreSegAll" onclick="setOffshoreSegment(\'all\')" data-tooltip=' in html
+    assert 'btnOffshoreMetricRates" onclick="setOffshoreMetric(\'rates\')" data-tooltip=' in html
+    assert 'btnOffshoreRangeAll" onclick="setOffshoreRange(\'all\')" data-tooltip=' in html
+    assert 'id="offshoreSearchInput"' in html
+    assert 'offshoreSearchInput" class="tracking-input" placeholder="Filter month or vessel..." oninput="onOffshoreSearchInput()" style="width:160px;" data-tooltip=' in html
+
+    # Seabreeze reports: single PDF button, no redundant Web button
+    assert 'data-tooltip="Download official Seabreeze monthly market intelligence report (PDF)."' in html
+    assert '<a href="${rep.card_url}" target="_blank" rel="noopener" class="offshore-pdf-btn" style="background:#111820; border-color:var(--border);">\n          Web' not in html
+
+    # Fearnleys Asset Valuations & S&P Deal Ledger tooltips
+    assert 'id="btnAssetCape"' in html
+    assert 'btnAssetCape" onclick="switchFearnAssetSeg(\'capesize\')" data-tooltip=' in html
+    assert 'id="btnSnpAll"' in html
+    assert 'btnSnpAll" onclick="setSnpFilter(\'all\')" data-tooltip=' in html
+    assert 'id="fearnSnpSearchInput"' in html
+    assert 'id="fearnSnpSearchInput" placeholder="Search by vessel, shipyard, or buyer..." oninput="filterSnpDeals(this.value)" style="max-width:320px;" data-tooltip=' in html
+
+
