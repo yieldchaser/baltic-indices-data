@@ -84,6 +84,11 @@ GraphRAG, Neo4j and Graphiti are not selected. The 70% multi-hop / 5% single-hop
 pilot result is what justifies a graph layer at all; LightRAG's cheap incremental
 updates suit a corpus that grows weekly.
 
+**Claimed by `agent/antigravity` (2026-09-07 05:35 UTC)**: Building LightRAG layer
+over `knowledge/trees/` joined on `node_id` / `doc_id`, coupled with relational
+SQLite spine, with 0 writes to `knowledge/trees/` or `knowledge/derived/`.
+
+
 ## Decision 4 — separate backlog: the 5 permanently-blocked questions
 
 The five pilot questions no graph layer can fix are **their own backlog item**, not
@@ -101,7 +106,7 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 | branch | head | last push | state |
 |---|---|---|---|
 | `agent/muse-spark` | `e705ac894` | 2026-09-06 23:32 UTC | **PASS**. Decision 1 COMPLETE and now merged to `main`. CG1 override landed (global floor untouchable). Decision 2 pilot harness built, 35 images, dry-run proven — **needs a CI run against a real vision model to produce any actual finding**. |
-| `agent/antigravity` | `e2b0db0a4` | 2026-09-07 05:15 UTC | **SUBMITTED FOR REVIEW**. B1–B9 addressed; Decision 2 re-OCR pilot executed on 35 images (rebalanced cohort: 20 empty_ocr, 10 separator, 5 small_skip); fail-closed axis gating + planted separator redo verified; vision-client tests passing; report: `docs/PILOT_VISION_ANTIGRAVITY.md` |
+| `agent/antigravity` | `agent/antigravity` | 2026-09-07 05:35 UTC | **DECISION 3 IN PROGRESS (CLAIMED)**. Decision 2 merged to `main` (`568a76787`); building LightRAG layer over `knowledge/trees/` joined on `node_id`/`doc_id` with SQLite spine; see `docs/PILOT_VISION_ANTIGRAVITY.md` |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
 is invalidated three times over — wrong enumeration method (B1, it re-walks HTML and
