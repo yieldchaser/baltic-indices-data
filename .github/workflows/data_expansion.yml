@@ -52,10 +52,12 @@ jobs:
           if [ -f scripts/geospatial/build_chokepoint_cache.py ]; then python scripts/geospatial/build_chokepoint_cache.py; fi
           if [ -f scripts/geospatial/build_vessel_trajectories_cache.py ]; then python scripts/geospatial/build_vessel_trajectories_cache.py; fi
 
-      - name: Bunker prices collector
+      - name: Bunker prices collector & Bunker Cache
         continue-on-error: true
         timeout-minutes: 20
-        run: if [ -f scripts/expansion_bunker_prices.py ]; then python scripts/expansion_bunker_prices.py; fi
+        run: |
+          if [ -f scripts/expansion_bunker_prices.py ]; then python scripts/expansion_bunker_prices.py; fi
+          if [ -f scripts/bunkers/build_bunker_cache.py ]; then python scripts/bunkers/build_bunker_cache.py; fi
 
       - name: Commit and push changes
         run: |

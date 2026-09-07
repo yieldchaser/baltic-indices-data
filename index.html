@@ -4761,6 +4761,309 @@
     border: 1px solid rgba(88,166,255,0.35);
     color: var(--accent);
   }
+    /* ===== BUNKERS & MARINE ENERGY TERMINAL STYLES ===== */
+    .bunkers-hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .bunkers-title-wrap h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .bunkers-title-wrap .bunkers-sub {
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    .bunkers-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .bunkers-kpi-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s, transform 0.15s;
+      cursor: help;
+    }
+    .bunkers-kpi-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .bunkers-kpi-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .bunkers-kpi-val {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'IBM Plex Mono', monospace;
+      margin: 4px 0 2px 0;
+    }
+    .bunkers-kpi-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .bunkers-kpi-sub.warn { color: var(--yellow); }
+    .bunkers-kpi-sub.good { color: var(--green); }
+    .bunkers-kpi-sub.alert { color: var(--red); }
+    .bunkers-kpi-sub.purple { color: #a371f7; }
+    .bunkers-kpi-sub.cyan { color: #00e5ff; }
+
+    .bunkers-toolbar {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .bunkers-tool-left, .bunkers-tool-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .bunkers-pill {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .bunkers-pill:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+    .bunkers-pill.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 0 8px rgba(77, 154, 255, 0.35);
+    }
+    .bunkers-input {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      outline: none;
+      width: 220px;
+      transition: border-color 0.15s;
+    }
+    .bunkers-input:focus {
+      border-color: var(--accent);
+    }
+
+    .bunkers-workstation {
+      display: flex;
+      gap: 16px;
+      align-items: stretch;
+      min-height: 740px;
+    }
+    .bunkers-left-pane {
+      width: 500px;
+      min-width: 440px;
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .bunkers-right-pane {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .bunkers-subview-nav {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      background: #0d131a;
+    }
+    .bunkers-subview-btn {
+      flex: 1;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 10px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .bunkers-subview-btn:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .bunkers-subview-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      background: rgba(77, 154, 255, 0.06);
+    }
+
+    .bunkers-subview-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .bunkers-table-wrap {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 660px;
+    }
+    .bunkers-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      text-align: left;
+    }
+    .bunkers-table th {
+      position: sticky;
+      top: 0;
+      background: #141c26;
+      color: var(--text-muted);
+      padding: 8px 10px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      z-index: 5;
+      letter-spacing: 0.03em;
+    }
+    .bunkers-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #141b24;
+      color: var(--text);
+      vertical-align: middle;
+    }
+    .bunkers-port-row {
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .bunkers-port-row:hover {
+      background: rgba(77, 154, 255, 0.07);
+    }
+    .bunkers-port-row.selected {
+      background: rgba(77, 154, 255, 0.16);
+      border-left: 3px solid var(--accent);
+    }
+
+    .bunkers-table-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      border-top: 1px solid var(--border);
+      background: #0e141c;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* MAP CONTAINER */
+    #bunkerGeoMapContainer {
+      height: 480px;
+      min-height: 440px;
+      position: relative;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      background: #06090e;
+    }
+    #bunkerGeoMap {
+      width: 100%;
+      height: 100%;
+      background: #06090e;
+    }
+
+    /* LOWER CHART & CONTROLS DRAWER */
+    .bunkers-chart-drawer {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .bunkers-drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+    .bunkers-drawer-title-wrap h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .bunkers-drawer-title-wrap .bunkers-drawer-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .bunkers-pin-apac {
+      background: #00e5ff;
+      border: 1.5px solid #0a0e14;
+      border-radius: 50%;
+      box-shadow: 0 0 6px rgba(0, 229, 255, 0.6);
+    }
+    .bunkers-pin-emea {
+      background: #4d9aff;
+      border: 1.5px solid #0a0e14;
+      border-radius: 50%;
+      box-shadow: 0 0 6px rgba(77, 154, 255, 0.6);
+    }
+    .bunkers-pin-americas {
+      background: #e3b341;
+      border: 1.5px solid #0a0e14;
+      border-radius: 50%;
+      box-shadow: 0 0 6px rgba(227, 179, 65, 0.6);
+    }
+
 </style>
 </head>
 
@@ -9302,6 +9605,7 @@
     <button class="tab-btn" data-tab="signals">Signals</button>
     <button class="tab-btn" data-tab="intelligence">Intelligence</button>
     <button class="tab-btn" data-tab="tracking">Tracking</button>
+    <button class="tab-btn" data-tab="bunkers">Bunkers</button>
   </div>
   </div><!-- /tabs-bar-outer -->
 
@@ -12534,32 +12838,32 @@ if (intelTabsContainer) {
 
       <!-- 6-KPI HUD STRIP -->
       <div class="tracking-kpi-grid">
-        <div class="tracking-kpi-card">
+        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Monitored Fleet Hulls" data-tt-val="740 Active Vessels" data-tt-desc="Continuous AIS hull tracking across 27 primary global loading terminals and discharge anchorages.">
           <div class="tracking-kpi-label">Monitored Vessels <span>🚢</span></div>
           <div class="tracking-kpi-val" id="hudTrackedHulls">740</div>
           <div class="tracking-kpi-sub accent">27 Global Strategic Hubs</div>
         </div>
-        <div class="tracking-kpi-card">
+        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Waiting at Anchor" data-tt-val="306 Vessels" data-tt-desc="Vessels anchored awaiting berth availability, customs clearance, or discharge windows. Measures port congestion.">
           <div class="tracking-kpi-label">Waiting at Anchor <span>⚓</span></div>
           <div class="tracking-kpi-val" id="hudWaitingAnchor" style="color:var(--yellow);">306</div>
           <div class="tracking-kpi-sub warn">Congestion Bottlenecks</div>
         </div>
-        <div class="tracking-kpi-card">
+        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Operating at Berth" data-tt-val="434 Vessels" data-tt-desc="Vessels actively loading or discharging dry bulk and tanker parcels at terminal jetties.">
           <div class="tracking-kpi-label">Operating at Berth <span>🏗️</span></div>
           <div class="tracking-kpi-val" id="hudOperatingBerth" style="color:var(--green);">434</div>
           <div class="tracking-kpi-sub good">Active Loading / Discharging</div>
         </div>
-        <div class="tracking-kpi-card">
+        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Strategic Maritime Chokepoints" data-tt-val="28 Passages" data-tt-desc="Critical international canals and straits monitored for transit volume, draft constraints, and geopolitical diversions.">
           <div class="tracking-kpi-label">Strategic Chokepoints <span>🌐</span></div>
           <div class="tracking-kpi-val" id="hudChokepointsCount">28</div>
           <div class="tracking-kpi-sub">Canals, Straits &amp; Passages</div>
         </div>
-        <div class="tracking-kpi-card">
+        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Bab el-Mandeb / Red Sea Diversion" data-tt-val="-73.1% Transit Volume" data-tt-desc="Structural avoidance of Southern Red Sea transit corridor following maritime security incidents, diverting tonnage around Africa.">
           <div class="tracking-kpi-label">Red Sea / Bab el-Mandeb <span>⚠️</span></div>
           <div class="tracking-kpi-val" id="hudRedSeaDiverted" style="color:var(--red);">-73.1%</div>
           <div class="tracking-kpi-sub alert">vs Pre-Houthi Crisis Baseline</div>
         </div>
-        <div class="tracking-kpi-card">
+        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Cape of Good Hope Rerouting Surge" data-tt-val="+75.6% Transit Volume" data-tt-desc="Massive vessel rerouting around the southern tip of Africa adding 10-15 sailing days and absorbing fleet ton-mile capacity.">
           <div class="tracking-kpi-label">Cape of Good Hope <span>🌊</span></div>
           <div class="tracking-kpi-val" id="hudCapeSurge" style="color:#a371f7;">+75.6%</div>
           <div class="tracking-kpi-sub accent">+14.5 Days Ton-Mile Surge</div>
@@ -12815,6 +13119,289 @@ if (intelTabsContainer) {
       </div>
     </div><!-- /tab-tracking -->
 
+    <div class="tab-panel" id="tab-bunkers">
+      <!-- HERO HEADER -->
+      <div class="bunkers-hero">
+        <div class="bunkers-title-wrap">
+          <h2>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);">
+              <path d="M3 2v20"></path>
+              <path d="M19 13v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path>
+              <path d="M13 2v5a2 2 0 0 0 2 2h4"></path>
+              <circle cx="18" cy="18" r="3"></circle>
+            </svg>
+            Global Bunker Fuel &amp; Marine Energy Terminal
+          </h2>
+          <div class="bunkers-sub">Daily Spot Indications across 221 Ports, 12M Forward Delivery Curves, Scrubber TCE Economics &amp; FuelEU / EU ETS Carbon Compliance</div>
+        </div>
+        <div class="tracking-live-tag">
+          <span class="tracking-live-dot"></span>
+          SHIP &amp; BUNKER / TIDEFORM BENCHMARKS
+        </div>
+      </div>
+
+      <!-- 6-KPI MACRO FUEL STRIP -->
+      <div class="bunkers-kpi-grid">
+        <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="VLSFO" data-tt-title="Global VLSFO Composite">
+          <div class="bunkers-kpi-label">Global VLSFO (0.5% S) <span>🛢️</span></div>
+          <div class="bunkers-kpi-val" id="bunkerKpiVlsfo">$865.50</div>
+          <div class="bunkers-kpi-sub good" id="bunkerKpiVlsfoSub">-$3.50 · Primary IMO 2020 Compliance Fuel</div>
+        </div>
+        <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="IFO380" data-tt-title="Global IFO380 / HSFO Composite">
+          <div class="bunkers-kpi-label">Global HSFO / IFO380 <span>⚙️</span></div>
+          <div class="bunkers-kpi-val" id="bunkerKpiHsfo">$663.50</div>
+          <div class="bunkers-kpi-sub alert" id="bunkerKpiHsfoSub">+$2.00 · High Sulfur Scrubber-Fitted Fuel</div>
+        </div>
+        <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="MGO" data-tt-title="Global MGO Composite">
+          <div class="bunkers-kpi-label">Global MGO (0.1% S) <span>⚡</span></div>
+          <div class="bunkers-kpi-val" id="bunkerKpiMgo">$1,464.50</div>
+          <div class="bunkers-kpi-sub good" id="bunkerKpiMgoSub">-$8.00 · ECA Zone &amp; Port Auxiliary Marine Gasoil</div>
+        </div>
+        <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-scrubber-cell" data-tt-title="Singapore Hi-5 Scrubber Spread">
+          <div class="bunkers-kpi-label">Singapore Hi-5 Spread <span>📊</span></div>
+          <div class="bunkers-kpi-val" id="bunkerKpiHi5" style="color:#a371f7;">$205.50</div>
+          <div class="bunkers-kpi-sub purple" id="bunkerKpiHi5Sub">Cape TCE +$9,248/d · Payback ~8.5 Mos</div>
+        </div>
+        <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="EUA" data-tt-title="EU ETS Maritime Carbon Allowance">
+          <div class="bunkers-kpi-label">EU ETS Carbon EUA <span>🌱</span></div>
+          <div class="bunkers-kpi-val" id="bunkerKpiEts" style="color:var(--yellow);">€72.50</div>
+          <div class="bunkers-kpi-sub warn" id="bunkerKpiEtsSub">Voyage Penalty: ~$1,850/d on EU MRV Routes</div>
+        </div>
+        <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="VOL" data-tt-title="Singapore Physical Sales Volume">
+          <div class="bunkers-kpi-label">Singapore Bunkering <span>⚓</span></div>
+          <div class="bunkers-kpi-val" id="bunkerKpiVol" style="color:#00e5ff;">4.56M MT</div>
+          <div class="bunkers-kpi-sub cyan" id="bunkerKpiVolSub">+5.8% YoY · Official MPA Singapore Delivery</div>
+        </div>
+      </div>
+
+      <!-- FILTER & SLICER TOOLBAR -->
+      <div class="bunkers-toolbar">
+        <div class="bunkers-tool-left">
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-right:4px;">REGION:</div>
+          <button class="bunkers-pill active" data-region="all" onclick="setBunkerRegion('all')">All Regions (221 Ports)</button>
+          <button class="bunkers-pill" data-region="APAC" onclick="setBunkerRegion('APAC')">Asia-Pacific (APAC)</button>
+          <button class="bunkers-pill" data-region="EMEA" onclick="setBunkerRegion('EMEA')">Europe, MidEast, Africa</button>
+          <button class="bunkers-pill" data-region="Americas" onclick="setBunkerRegion('Americas')">Americas</button>
+
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:12px; margin-right:4px;">GRADE:</div>
+          <button class="bunkers-pill active" data-grade="all" onclick="setBunkerGrade('all')">All Grades</button>
+          <button class="bunkers-pill" data-grade="VLSFO" onclick="setBunkerGrade('VLSFO')">VLSFO</button>
+          <button class="bunkers-pill" data-grade="MGO" onclick="setBunkerGrade('MGO')">MGO</button>
+          <button class="bunkers-pill" data-grade="IFO380" onclick="setBunkerGrade('IFO380')">HSFO</button>
+          <button class="bunkers-pill" data-grade="BIO" onclick="setBunkerGrade('BIO')">Biofuels</button>
+        </div>
+        <div class="bunkers-tool-right">
+          <input type="text" id="bunkersSearchInput" class="bunkers-input" placeholder="Search port, country, code..." oninput="onBunkersSearchInput()">
+        </div>
+      </div>
+
+      <!-- WORKSTATION: SPLIT PANE -->
+      <div class="bunkers-workstation">
+        <!-- Left Pane: 4 Subviews -->
+        <div class="bunkers-left-pane">
+          <div class="bunkers-subview-nav">
+            <button id="subnavBunkersSpot" class="bunkers-subview-btn active" onclick="setBunkersSubView('spot')">
+              Spot Prices (221)
+            </button>
+            <button id="subnavBunkersForward" class="bunkers-subview-btn" onclick="setBunkersSubView('forward')">
+              12M Forward Curves
+            </button>
+            <button id="subnavBunkersVolumes" class="bunkers-subview-btn" onclick="setBunkersSubView('volumes')">
+              Physical Volumes
+            </button>
+            <button id="subnavBunkersScrubber" class="bunkers-subview-btn" onclick="setBunkersSubView('scrubber')">
+              Scrubber &amp; EU ETS
+            </button>
+          </div>
+
+          <!-- Subview 1: 221 Ports Spot Matrix -->
+          <div id="bunkersSubviewSpot" class="bunkers-subview-content" style="display:flex;">
+            <div class="bunkers-table-wrap">
+              <table class="bunkers-table">
+                <thead>
+                  <tr>
+                    <th>Port / Hub</th>
+                    <th>Region</th>
+                    <th>VLSFO</th>
+                    <th>MGO</th>
+                    <th>HSFO</th>
+                    <th>Spread (vs SG)</th>
+                  </tr>
+                </thead>
+                <tbody id="bunkersTableBodyAll">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+            <div class="bunkers-table-footer">
+              <span id="bunkersPageInfo">Showing 1–50 of 221 ports</span>
+              <div style="display:flex; gap:6px;">
+                <button id="btnBunkersPrev" class="tracking-page-btn" onclick="prevBunkersPage()">Prev</button>
+                <button id="btnBunkersNext" class="tracking-page-btn" onclick="nextBunkersPage()">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subview 2: 12-Month Forward Curves -->
+          <div id="bunkersSubviewForward" class="bunkers-subview-content" style="display:none;">
+            <div style="padding:10px 14px; background:#0e141c; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
+              <div style="font-size:11px; font-weight:600; color:var(--text-muted);">FORWARD HUB:</div>
+              <select id="bunkersForwardHubSelect" class="tracking-select" onchange="onBunkersForwardHubChange()">
+                <option value="Singapore" selected>Singapore (Global Bunker Benchmark)</option>
+                <option value="Rotterdam">Rotterdam (ARA Range)</option>
+                <option value="Fujairah">Fujairah (Middle East Gulf)</option>
+                <option value="Busan">Busan (Northeast Asia)</option>
+                <option value="Hong Kong">Hong Kong (Pearl River Delta)</option>
+                <option value="Kaohsiung">Kaohsiung (Taiwan Strait)</option>
+              </select>
+            </div>
+            <div class="bunkers-table-wrap">
+              <table class="bunkers-table">
+                <thead>
+                  <tr>
+                    <th>Contract</th>
+                    <th>IFO380 ($/MT)</th>
+                    <th>VLSFO ($/MT)</th>
+                    <th>MGO ($/MT)</th>
+                    <th>Hi-5 Spread</th>
+                  </tr>
+                </thead>
+                <tbody id="bunkersForwardTableBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+            <div style="font-size:10px; color:var(--text-muted); padding:8px 12px; background:#0a0e14; border-top:1px solid var(--border); font-family:'IBM Plex Mono', monospace;">
+              Source: Bunker Index 12-Month Forward Delivery Curve Engine
+            </div>
+          </div>
+
+          <!-- Subview 3: Physical Sales Volumes -->
+          <div id="bunkersSubviewVolumes" class="bunkers-subview-content" style="display:none;">
+            <div style="padding:10px 14px; background:#0e141c; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
+              <div style="font-size:11px; font-weight:600; color:var(--text-muted);">DELIVERY PORT:</div>
+              <select id="bunkersVolHubSelect" class="tracking-select" onchange="onBunkersVolHubChange()">
+                <option value="Singapore" selected>Singapore (MPA Official Volumes)</option>
+                <option value="Rotterdam">Rotterdam (Port Authority Deliveries)</option>
+              </select>
+            </div>
+            <div class="bunkers-table-wrap">
+              <table class="bunkers-table">
+                <thead>
+                  <tr>
+                    <th>Period</th>
+                    <th>Frequency</th>
+                    <th>Volume (Metric Tonnes)</th>
+                    <th>Metric Type</th>
+                  </tr>
+                </thead>
+                <tbody id="bunkersVolumesTableBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+            <div style="font-size:10px; color:var(--text-muted); padding:8px 12px; background:#0a0e14; border-top:1px solid var(--border); font-family:'IBM Plex Mono', monospace;">
+              Source: Maritime and Port Authority of Singapore &amp; Havenbedrijf Rotterdam
+            </div>
+          </div>
+
+          <!-- Subview 4: Scrubber Economics & EU ETS -->
+          <div id="bunkersSubviewScrubber" class="bunkers-subview-content" style="display:none;">
+            <div class="bunkers-table-wrap">
+              <table class="bunkers-table">
+                <thead>
+                  <tr>
+                    <th>Port / Hub</th>
+                    <th>Hi-5 Spread</th>
+                    <th>Cape TCE Bonus</th>
+                    <th>VLCC TCE Bonus</th>
+                    <th>EU ETS Cost</th>
+                  </tr>
+                </thead>
+                <tbody id="bunkersScrubberTableBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+            <div style="font-size:10px; color:var(--text-muted); padding:8px 12px; background:#0a0e14; border-top:1px solid var(--border); font-family:'IBM Plex Mono', monospace;">
+              Capesize assumed at 45 MT/d burn; VLCC at 55 MT/d burn; EU ETS @ €72.50/MT CO2
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Pane: Map & Chart Drawer -->
+        <div class="bunkers-right-pane">
+          <!-- Bunker Map -->
+          <div id="bunkerGeoMapContainer">
+            <div class="map-active-hud">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+              <span id="bunkerMapHudDetail">221 Global Bunker Supply Ports Active</span>
+            </div>
+
+            <div class="map-legend-overlay">
+              <div class="map-legend-item"><span class="map-legend-dot" style="background:#00e5ff;"></span> APAC Supply Ports</div>
+              <div class="map-legend-item"><span class="map-legend-dot" style="background:#4d9aff;"></span> EMEA / Europe Ports</div>
+              <div class="map-legend-item"><span class="map-legend-dot" style="background:#e3b341;"></span> Americas Ports</div>
+            </div>
+
+            <div id="bunkerGeoMap"></div>
+          </div>
+
+          <!-- Chart Drawer -->
+          <div class="bunkers-chart-drawer">
+            <div class="bunkers-drawer-header">
+              <div class="bunkers-drawer-title-wrap">
+                <h3>
+                  <span id="bunkerChartPortTitle">Singapore Bunker Price History</span>
+                  <span class="tracking-live-tag" style="font-size:9px; padding:2px 6px;" id="bunkerChartTag">VLSFO / MGO / HSFO / BIO</span>
+                </h3>
+                <div class="bunkers-drawer-sub" id="bunkerChartPortSub">
+                  8.5-Year Multi-Grade Historical Series (2018–2026) with Hi-5 Scrubber Spread
+                </div>
+              </div>
+              <div style="display:flex; gap:6px; align-items:center;">
+                <select id="bunkerChartPortSelect" class="tracking-select" onchange="onBunkerChartPortSelect()">
+                  <option value="Singapore" selected>Singapore</option>
+                  <option value="Rotterdam">Rotterdam</option>
+                  <option value="Fujairah">Fujairah</option>
+                  <option value="Houston">Houston</option>
+                  <option value="Santos">Santos</option>
+                  <option value="Gibraltar">Gibraltar</option>
+                  <option value="Zhoushan">Zhoushan</option>
+                </select>
+                <div class="cp-btn-group">
+                  <button class="cp-toggle-btn active" data-range="all" onclick="setBunkerChartRange('all')">Max (2018-2026)</button>
+                  <button class="cp-toggle-btn" data-range="3y" onclick="setBunkerChartRange('3y')">3Y</button>
+                  <button class="cp-toggle-btn" data-range="1y" onclick="setBunkerChartRange('1y')">1Y</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cp-controls-bar">
+              <div class="cp-btn-group">
+                <button class="cp-toggle-btn active" data-grade="vlsfo" onclick="setBunkerChartGrade('vlsfo')">VLSFO (0.5%)</button>
+                <button class="cp-toggle-btn" data-grade="mgo" onclick="setBunkerChartGrade('mgo')">MGO (0.1%)</button>
+                <button class="cp-toggle-btn" data-grade="hsfo" onclick="setBunkerChartGrade('hsfo')">HSFO (IFO380)</button>
+                <button class="cp-toggle-btn" data-grade="hi5" onclick="setBunkerChartGrade('hi5')">Hi-5 Spread</button>
+                <button class="cp-toggle-btn" data-grade="bio" onclick="setBunkerChartGrade('bio')">Biofuel (B24)</button>
+              </div>
+              <div style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">
+                Source: Ship &amp; Bunker RPC Spot History (482k records, 2018–2026)
+              </div>
+            </div>
+
+            <div style="height:230px; position:relative; width:100%;">
+              <canvas id="bunkerMainChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /tab-bunkers -->
+
+
   <!-- /main -->
 
 
@@ -12869,6 +13456,7 @@ if (intelTabsContainer) {
       portLineups: [],
       vesselTrajectories: {},
       bunkerPrices: [],
+      bunkerSummary: null,
       chokepointSummary: null,
       chokepointMetrics: [],
       tceMatrix: null,
@@ -14278,6 +14866,16 @@ if (intelTabsContainer) {
           }));
         });
 
+        const bunkerSummaryPromise = fetch('data/bunkers/bunker_frontend_summary.json')
+          .then(res => res.ok ? res.json() : null)
+          .then(data => {
+            DATA.bunkerSummary = data;
+          })
+          .catch(err => {
+            console.warn('[bunkerSummary fetch error]', err);
+            DATA.bunkerSummary = null;
+          });
+
         const allPromisesList = [
           ...indexPromises,
           bdryPromise, bwetPromise, bdryPdPromise, bwetPdPromise,
@@ -14290,7 +14888,7 @@ if (intelTabsContainer) {
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
           sgxOreForwardPromise,
-          portLineupsPromise, vesselTrajectoriesPromise, bunkerPricesPromise, chokepointSummaryPromise, chokepointMetricsPromise,
+          portLineupsPromise, vesselTrajectoriesPromise, bunkerPricesPromise, bunkerSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
           ...sgxPromises
         ];
 
@@ -18609,11 +19207,15 @@ if (intelTabsContainer) {
       if (tabId === 'signals') renderSignalsTab(currentProduct);
       if (tabId === 'intelligence') renderIntelligenceTab();
       if (tabId === 'tracking') renderTrackingTab();
+      if (tabId === 'bunkers') renderBunkersTab();
 
       // Trigger requestAnimationFrame resize and redraw on all charts in active tab to prevent 0px canvas squishing
       requestAnimationFrame(() => {
         if (tabId === 'tracking' && window.trackingMap && typeof window.trackingMap.invalidateSize === 'function') {
           try { window.trackingMap.invalidateSize(); } catch (err) {}
+        }
+        if (tabId === 'bunkers' && window.bunkerGeoMap && typeof window.bunkerGeoMap.invalidateSize === 'function') {
+          try { window.bunkerGeoMap.invalidateSize(); } catch (err) {}
         }
         const activePanel = document.getElementById(`tab-${tabId}`);
         if (activePanel) {
@@ -36204,6 +36806,98 @@ function escapeHtml(str) {
           if (sub) html += `<div class="rt-row"><span class="rt-label">Capital Basis</span><span class="rt-val">${sub}</span></div>`;
           html += `<div class="rt-note">Simulates mark-to-market dollar return on your exact share capital given modeled futures rate changes.</div>`;
         }
+        else if (type === 'bunker-kpi') {
+          const grade = target.getAttribute('data-tt-grade') || 'VLSFO';
+          const title = target.getAttribute('data-tt-title') || 'Bunker Fuel Metric';
+          const summary = window.DATA && DATA.bunkerSummary;
+          const k = summary && summary.kpis;
+
+          html = `<div class="rt-title">${title}</div>`;
+          if (grade === 'VLSFO') {
+            const val = k ? '$' + k.global_vlsfo.toFixed(2) + '/MT' : '$865.50/MT';
+            html += `<div class="rt-row"><span class="rt-label">Global Benchmark</span><span class="rt-val" style="color:#3fb950;font-weight:700;">${val}</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Specification</span><span class="rt-val">Very Low Sulfur Fuel Oil (&le;0.50% S)</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Regulatory Mandate</span><span class="rt-val">IMO 2020 Global Sulfur Cap Compliant</span></div>`;
+            html += `<div class="rt-note">Universal marine fuel consumed by non-scrubber merchant vessels outside Emission Control Areas (ECAs).</div>`;
+          } else if (grade === 'IFO380') {
+            const val = k ? '$' + k.global_hsfo.toFixed(2) + '/MT' : '$663.50/MT';
+            html += `<div class="rt-row"><span class="rt-label">Global Benchmark</span><span class="rt-val" style="color:var(--accent);font-weight:700;">${val}</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Specification</span><span class="rt-val">High Sulfur Fuel Oil (&le;3.50% S)</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Scrubber Requirement</span><span class="rt-val" style="color:#e3b341;">EGCS / Scrubber Mandatory</span></div>`;
+            html += `<div class="rt-note">Heavy fuel oil permitted only on vessels equipped with exhaust gas cleaning scrubbers. Major cost-saving driver when Hi-5 spread widens.</div>`;
+          } else if (grade === 'MGO') {
+            const val = k ? '$' + k.global_mgo.toFixed(2) + '/MT' : '$1,464.50/MT';
+            html += `<div class="rt-row"><span class="rt-label">Global Benchmark</span><span class="rt-val" style="color:#e3b341;font-weight:700;">${val}</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Specification</span><span class="rt-val">Marine Gasoil / LSMGO (&le;0.10% S)</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Operating Areas</span><span class="rt-val">Baltic, North Sea, North American ECAs &amp; In-Port</span></div>`;
+            html += `<div class="rt-note">Distillate fuel mandatory inside designated Emission Control Areas (0.10% sulfur) and during EU port stays.</div>`;
+          } else if (grade === 'EUA') {
+            const val = k ? '€' + k.eu_ets_carbon_eur.toFixed(2) + '/t' : '€72.50/t';
+            html += `<div class="rt-row"><span class="rt-label">Carbon Allowance</span><span class="rt-val" style="color:var(--yellow);font-weight:700;">${val}</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Scope</span><span class="rt-val">EU MRV Shipping Voyages (5,000+ GT)</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Phase-In Schedule</span><span class="rt-val">40% in 2024, 70% in 2025, 100% in 2026</span></div>`;
+            html += `<div class="rt-note">Vessels sailing to, from, or between EU ports must surrender European Union Allowances (EUAs) for 3.114 tonnes of CO2 emitted per tonne of bunker fuel consumed.</div>`;
+          } else if (grade === 'VOL') {
+            const val = k ? (k.singapore_monthly_vol_mt / 1000000).toFixed(2) + 'M MT' : '4.50M MT';
+            html += `<div class="rt-row"><span class="rt-label">Singapore MPA Volume</span><span class="rt-val" style="color:#00e5ff;font-weight:700;">${val}</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Global Share</span><span class="rt-val">~22% of World Seaborne Bunker Deliveries</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Official Source</span><span class="rt-val">Maritime and Port Authority of Singapore (MPA)</span></div>`;
+            html += `<div class="rt-note">Official physical monthly delivered sales volume statistics across Singapore anchorage bunkering berths.</div>`;
+          }
+        }
+        else if (type === 'bunker-port-cell') {
+          const port = target.getAttribute('data-tt-port') || 'Port';
+          const region = target.getAttribute('data-tt-region') || '';
+          const vlsfo = parseFloat(target.getAttribute('data-tt-vlsfo'));
+          const spread = parseFloat(target.getAttribute('data-tt-spread'));
+
+          html = `<div class="rt-title">${port} Bunker Port Assessment</div>`;
+          if (region) html += `<div class="rt-row"><span class="rt-label">Trading Basin</span><span class="rt-val" style="color:#58a6ff;">${region}</span></div>`;
+          if (!isNaN(vlsfo) && vlsfo > 0) {
+            html += `<div class="rt-row"><span class="rt-label">Delivered VLSFO</span><span class="rt-val" style="color:#3fb950;font-weight:700;">$${vlsfo.toFixed(2)}/MT</span></div>`;
+          }
+          if (!isNaN(spread)) {
+            const spreadCls = spread > 0 ? 'neg' : 'pos';
+            const spreadTxt = (spread > 0 ? '+' : '') + spread.toFixed(1) + ' $/MT';
+            html += `<div class="rt-row"><span class="rt-label">Spread vs Singapore</span><span class="rt-val ${spreadCls}">${spreadTxt}</span></div>`;
+          }
+          html += `<div class="rt-note">Delivered physical bunker price. Negative spread means fuel is cheaper than Singapore; positive spread indicates a location premium. Click row to inspect 2018–2026 historical monthly series and forward curves.</div>`;
+        }
+        else if (type === 'bunker-fwd-cell') {
+          const title = target.getAttribute('data-tt-title') || 'Forward Bunker Contract';
+          const month = target.getAttribute('data-tt-month') || '';
+          const vlsfo = parseFloat(target.getAttribute('data-tt-vlsfo'));
+          const hsfo = parseFloat(target.getAttribute('data-tt-hsfo'));
+          const spread = (!isNaN(vlsfo) && !isNaN(hsfo)) ? (vlsfo - hsfo) : null;
+
+          html = `<div class="rt-title">${title}</div>`;
+          if (month) html += `<div class="rt-row"><span class="rt-label">Contract Tenor</span><span class="rt-val" style="color:var(--accent);">${month}</span></div>`;
+          if (!isNaN(vlsfo) && vlsfo > 0) html += `<div class="rt-row"><span class="rt-label">VLSFO Forward</span><span class="rt-val" style="color:#3fb950;font-weight:700;">$${vlsfo.toFixed(2)}/MT</span></div>`;
+          if (!isNaN(hsfo) && hsfo > 0) html += `<div class="rt-row"><span class="rt-label">HSFO Forward</span><span class="rt-val">$${hsfo.toFixed(2)}/MT</span></div>`;
+          if (spread != null) html += `<div class="rt-row"><span class="rt-label">Implied Hi-5 Spread</span><span class="rt-val" style="color:#a371f7;font-weight:700;">$${spread.toFixed(2)}/MT</span></div>`;
+          html += `<div class="rt-note">Cleared forward paper swap for future bunker delivery. Enables vessel operators and charterers to hedge voyage fuel price risk.</div>`;
+        }
+        else if (type === 'bunker-scrubber-cell') {
+          const port = target.getAttribute('data-tt-port') || 'Singapore';
+          const hi5 = parseFloat(target.getAttribute('data-tt-hi5')) || 205.5;
+          const cape = target.getAttribute('data-tt-cape') || '9,248';
+          const vlcc = target.getAttribute('data-tt-vlcc') || '13,358';
+
+          html = `<div class="rt-title">${port} Scrubber TCE Economics</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Hi-5 Fuel Spread (VLSFO − HSFO)</span><span class="rt-val" style="color:#a371f7;font-weight:700;">$${hi5.toFixed(2)}/MT</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Capesize Scrubber TCE Boost</span><span class="rt-val pos" style="font-weight:700;">+$${cape}/day</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">VLCC Scrubber TCE Boost</span><span class="rt-val pos" style="font-weight:700;">+$${vlcc}/day</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Typical Fuel Burn</span><span class="rt-val">Capesize ~45 MT/d · VLCC ~65 MT/d</span></div>`;
+          html += `<div class="rt-note">Formula: <strong>Daily Bunker Burn (MT) × Hi-5 Spread ($/MT)</strong>. A scrubber-fitted vessel burns cheaper HSFO, converting the fuel price spread directly into daily earnings outperformance.</div>`;
+        }
+        else if (type === 'tracking-hud') {
+          const title = target.getAttribute('data-tt-title') || 'Vessel Tracking Metric';
+          const val = target.getAttribute('data-tt-val') || '';
+          const desc = target.getAttribute('data-tt-desc') || '';
+          html = `<div class="rt-title">${title}</div>`;
+          if (val) html += `<div class="rt-row"><span class="rt-label">Live Status</span><span class="rt-val" style="color:var(--accent);font-weight:700;">${val}</span></div>`;
+          if (desc) html += `<div class="rt-note">${desc}</div>`;
+        }
         else {
           html = '';
         }
@@ -36501,6 +37195,579 @@ function escapeHtml(str) {
         el.setAttribute('data-tooltip', description);
       });
     }
+// =====================================================================
+// GLOBAL BUNKERS & MARINE ENERGY TERMINAL ENGINE
+// =====================================================================
+
+var bunkerGeoMap = null;
+var bunkerGeoMapInitialized = false;
+var bunkerMarkersLayer = null;
+
+var bunkersSelectedRegion = 'all';
+var bunkersSelectedGrade = 'all';
+var bunkersSearchQuery = '';
+var bunkersCurrentPage = 1;
+var BUNKERS_PAGE_SIZE = 50;
+
+var bunkersActiveSubView = 'spot';
+var bunkersChartPort = 'Singapore';
+var bunkersChartRange = 'all';
+var bunkersChartGrade = 'vlsfo';
+var bunkerMainChartInstance = null;
+
+function renderBunkersTab() {
+  window.renderBunkersTab = renderBunkersTab;
+  if (!DATA.loaded) return;
+
+  var summary = DATA.bunkerSummary;
+  if (!summary) return;
+
+  // Initialize Map if not already created
+  if (!bunkerGeoMapInitialized) {
+    initBunkerGeoMap();
+  } else if (bunkerGeoMap && typeof bunkerGeoMap.invalidateSize === 'function') {
+    setTimeout(function() { bunkerGeoMap.invalidateSize(); }, 80);
+  }
+
+  // Update HUD KPIs
+  updateBunkersHUD();
+
+  // Render Subviews
+  renderBunkersSpotTable();
+  renderBunkersForwardTable();
+  renderBunkersVolumesTable();
+  renderBunkersScrubberTable();
+
+  // Render Main Chart
+  renderBunkerMainChart();
+}
+
+function initBunkerGeoMap() {
+  if (typeof L === 'undefined') {
+    setTimeout(initBunkerGeoMap, 200);
+    return;
+  }
+  var container = document.getElementById('bunkerGeoMap');
+  if (!container) return;
+
+  try {
+    bunkerGeoMap = L.map('bunkerGeoMap', {
+      center: [20, 20],
+      zoom: 2,
+      minZoom: 2,
+      maxZoom: 14,
+      zoomControl: true,
+      attributionControl: false
+    });
+
+    window.bunkerGeoMap = bunkerGeoMap;
+
+    // CartoDB Dark Matter tile layer
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19,
+      subdomains: 'abcd'
+    }).addTo(bunkerGeoMap);
+
+    bunkerMarkersLayer = L.layerGroup().addTo(bunkerGeoMap);
+
+    plotBunkerPortMarkers();
+
+    bunkerGeoMapInitialized = true;
+    setTimeout(function() { bunkerGeoMap.invalidateSize(); }, 150);
+  } catch (err) {
+    console.error('[initBunkerGeoMap error]', err);
+  }
+}
+
+function updateBunkersHUD() {
+  var summary = DATA.bunkerSummary;
+  if (!summary || !summary.kpis) return;
+
+  var k = summary.kpis;
+  var elVlsfo = document.getElementById('bunkerKpiVlsfo');
+  var elHsfo = document.getElementById('bunkerKpiHsfo');
+  var elMgo = document.getElementById('bunkerKpiMgo');
+  var elHi5 = document.getElementById('bunkerKpiHi5');
+  var elEts = document.getElementById('bunkerKpiEts');
+  var elVol = document.getElementById('bunkerKpiVol');
+
+  if (elVlsfo) elVlsfo.textContent = '$' + k.global_vlsfo.toFixed(2);
+  if (elHsfo) elHsfo.textContent = '$' + k.global_hsfo.toFixed(2);
+  if (elMgo) elMgo.textContent = '$' + k.global_mgo.toFixed(2);
+  if (elHi5) elHi5.textContent = '$' + k.singapore_hi5.toFixed(2);
+  if (elEts) elEts.textContent = '€' + k.eu_ets_carbon_eur.toFixed(2);
+  if (elVol) elVol.textContent = (k.singapore_monthly_vol_mt / 1000000).toFixed(2) + 'M MT';
+}
+
+function plotBunkerPortMarkers() {
+  if (!bunkerGeoMap || !bunkerMarkersLayer) return;
+  bunkerMarkersLayer.clearLayers();
+
+  var summary = DATA.bunkerSummary;
+  var ports = summary && summary.ports ? summary.ports : [];
+
+  ports.forEach(function(p) {
+    if (!p.lat || !p.lon) return;
+
+    var colorClass = 'bunkers-pin-emea';
+    if (p.region === 'APAC') colorClass = 'bunkers-pin-apac';
+    else if (p.region === 'Americas') colorClass = 'bunkers-pin-americas';
+
+    var iconHtml = '<div class="' + colorClass + '" style="width:10px; height:10px; cursor:pointer;" title="' + escapeHtml(p.name) + '"></div>';
+
+    var customIcon = L.divIcon({
+      className: 'bunker-port-pin-icon',
+      html: iconHtml,
+      iconSize: [10, 10],
+      iconAnchor: [5, 5],
+      popupAnchor: [0, -6]
+    });
+
+    var marker = L.marker([p.lat, p.lon], { icon: customIcon });
+
+    var vlsfoStr = p.vlsfo ? '$' + p.vlsfo.toFixed(2) : '—';
+    var mgoStr = p.mgo ? '$' + p.mgo.toFixed(2) : '—';
+    var hsfoStr = p.ifo380 ? '$' + p.ifo380.toFixed(2) : '—';
+    var hi5Str = p.hi5_spread ? '$' + p.hi5_spread.toFixed(2) : '—';
+
+    var spreadSgText = p.spread_vs_singapore > 0 ? '+' + p.spread_vs_singapore.toFixed(1) : p.spread_vs_singapore.toFixed(1);
+
+    var popupHtml = '<div class="signal-vessel-popup" style="min-width:230px;">' +
+      '<div class="signal-vessel-head">' +
+      '<div class="signal-vessel-title"><span>' + escapeHtml(p.name) + '</span><span class="class-badge">' + escapeHtml(p.region) + '</span></div>' +
+      '<div class="signal-vessel-sub">' + escapeHtml(p.country || p.code) + ' · Bunker Supply Port</div>' +
+      '</div>' +
+      '<div class="signal-vessel-grid">' +
+      '<div><div class="signal-field-label">VLSFO (0.5%)</div><div class="signal-field-val" style="color:#3fb950;">' + vlsfoStr + '</div></div>' +
+      '<div><div class="signal-field-label">MGO (0.1%)</div><div class="signal-field-val" style="color:#e3b341;">' + mgoStr + '</div></div>' +
+      '<div><div class="signal-field-label">HSFO (IFO380)</div><div class="signal-field-val">' + hsfoStr + '</div></div>' +
+      '<div><div class="signal-field-label">Hi-5 Spread</div><div class="signal-field-val" style="color:#a371f7;">' + hi5Str + '</div></div>' +
+      '<div><div class="signal-field-label">Spread vs SG</div><div class="signal-field-val">' + spreadSgText + ' $/MT</div></div>' +
+      '<div><div class="signal-field-label">Updated</div><div class="signal-field-val" style="font-size:10px;">' + escapeHtml(p.latest_date) + '</div></div>' +
+      '</div>' +
+      '<button class="signal-vessel-btn" onclick="focusBunkerPort(\'' + escapeHtml(p.name) + '\')">Load Port Historical Curve</button>' +
+      '</div>';
+
+    marker.bindPopup(popupHtml, { maxWidth: 280 });
+
+    marker.on('click', function() {
+      selectBunkerPort(p);
+    });
+
+    bunkerMarkersLayer.addLayer(marker);
+  });
+}
+
+function filterBunkersData() {
+  var summary = DATA.bunkerSummary;
+  var ports = summary && summary.ports ? summary.ports : [];
+  var q = (bunkersSearchQuery || '').toLowerCase().trim();
+
+  return ports.filter(function(p) {
+    if (bunkersSelectedRegion !== 'all') {
+      if (p.region !== bunkersSelectedRegion) return false;
+    }
+
+    if (bunkersSelectedGrade !== 'all') {
+      if (bunkersSelectedGrade === 'VLSFO' && !p.vlsfo) return false;
+      if (bunkersSelectedGrade === 'MGO' && !p.mgo) return false;
+      if (bunkersSelectedGrade === 'IFO380' && !p.ifo380) return false;
+      if (bunkersSelectedGrade === 'BIO' && !p.bio) return false;
+    }
+
+    if (q) {
+      var match = (p.name || '').toLowerCase().includes(q) ||
+                  (p.code || '').toLowerCase().includes(q) ||
+                  (p.region || '').toLowerCase().includes(q) ||
+                  (p.country || '').toLowerCase().includes(q);
+      if (!match) return false;
+    }
+
+    return true;
+  });
+}
+
+function renderBunkersSpotTable() {
+  var tbody = document.getElementById('bunkersTableBodyAll');
+  var pageInfo = document.getElementById('bunkersPageInfo');
+  if (!tbody) return;
+
+  var filtered = filterBunkersData();
+  var total = filtered.length;
+
+  var totalPages = Math.ceil(total / BUNKERS_PAGE_SIZE) || 1;
+  if (bunkersCurrentPage > totalPages) bunkersCurrentPage = totalPages;
+  if (bunkersCurrentPage < 1) bunkersCurrentPage = 1;
+
+  var start = (bunkersCurrentPage - 1) * BUNKERS_PAGE_SIZE;
+  var end = Math.min(start + BUNKERS_PAGE_SIZE, total);
+  var paged = filtered.slice(start, end);
+
+  if (pageInfo) pageInfo.textContent = 'Showing ' + (total ? start + 1 : 0) + '–' + end + ' of ' + total + ' ports';
+
+  var prevBtn = document.getElementById('btnBunkersPrev');
+  var nextBtn = document.getElementById('btnBunkersNext');
+  if (prevBtn) prevBtn.disabled = (bunkersCurrentPage <= 1);
+  if (nextBtn) nextBtn.disabled = (bunkersCurrentPage >= totalPages);
+
+  tbody.innerHTML = '';
+  if (!paged.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No bunker ports match current filters.</td></tr>';
+    return;
+  }
+
+  paged.forEach(function(p) {
+    var tr = document.createElement('tr');
+    tr.className = 'bunkers-port-row' + (p.name === bunkersChartPort ? ' selected' : '');
+    tr.id = 'bunker-row-' + p.name.replace(/\s+/g, '-');
+
+    var vlsfoText = p.vlsfo ? '$' + p.vlsfo.toFixed(2) : '—';
+    var mgoText = p.mgo ? '$' + p.mgo.toFixed(2) : '—';
+    var hsfoText = p.ifo380 ? '$' + p.ifo380.toFixed(2) : '—';
+    var spreadText = p.spread_vs_singapore != null ? (p.spread_vs_singapore > 0 ? '+' : '') + p.spread_vs_singapore.toFixed(1) : '—';
+
+    tr.setAttribute('data-tooltip', ' ');
+    tr.setAttribute('data-tt-type', 'bunker-port-cell');
+    tr.setAttribute('data-tt-port', p.name);
+    tr.setAttribute('data-tt-region', p.region);
+    tr.setAttribute('data-tt-vlsfo', p.vlsfo || 0);
+    tr.setAttribute('data-tt-spread', p.spread_vs_singapore || 0);
+    tr.setAttribute('data-tt-title', p.name + ' (' + p.region + ')');
+
+    tr.innerHTML = '<td>' +
+      '<div style="font-weight:700; color:#fff;">' + escapeHtml(p.name) + '</div>' +
+      '<div style="font-size:10px; color:var(--text-muted); font-family:\'IBM Plex Mono\', monospace;">' + escapeHtml(p.code) + ' · ' + escapeHtml(p.country) + '</div>' +
+      '</td>' +
+      '<td><span class="class-badge">' + escapeHtml(p.region) + '</span></td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; font-weight:600; color:' + (p.vlsfo ? '#3fb950' : 'var(--text-muted)') + ';">' + vlsfoText + '</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (p.mgo ? '#e3b341' : 'var(--text-muted)') + ';">' + mgoText + '</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace;">' + hsfoText + '</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (p.spread_vs_singapore > 0 ? 'var(--red)' : 'var(--green)') + ';">' + spreadText + '</td>';
+
+    tr.addEventListener('click', function() {
+      selectBunkerPort(p);
+    });
+
+    tbody.appendChild(tr);
+  });
+}
+
+function selectBunkerPort(p) {
+  if (!p) return;
+  bunkersChartPort = p.name;
+
+  // Highlight table row
+  document.querySelectorAll('.bunkers-port-row').forEach(function(r) { r.classList.remove('selected'); });
+  var row = document.getElementById('bunker-row-' + p.name.replace(/\s+/g, '-'));
+  if (row) row.classList.add('selected');
+
+  // Fly map
+  if (bunkerGeoMap && p.lat && p.lon) {
+    bunkerGeoMap.flyTo([p.lat, p.lon], 6, { duration: 1.0 });
+    var hud = document.getElementById('bunkerMapHudDetail');
+    if (hud) hud.textContent = p.name + ' (' + p.region + ') — Focused Port Fuel Indications';
+  }
+
+  // Update chart
+  renderBunkerMainChart();
+}
+
+function focusBunkerPort(portName) {
+  var summary = DATA.bunkerSummary;
+  var ports = summary && summary.ports ? summary.ports : [];
+  var p = ports.find(function(item) { return item.name.toLowerCase() === portName.toLowerCase(); });
+  if (p) selectBunkerPort(p);
+}
+
+function prevBunkersPage() {
+  if (bunkersCurrentPage > 1) {
+    bunkersCurrentPage--;
+    renderBunkersSpotTable();
+  }
+}
+
+function nextBunkersPage() {
+  var total = filterBunkersData().length;
+  var totalPages = Math.ceil(total / BUNKERS_PAGE_SIZE);
+  if (bunkersCurrentPage < totalPages) {
+    bunkersCurrentPage++;
+    renderBunkersSpotTable();
+  }
+}
+
+function setBunkerRegion(region) {
+  bunkersSelectedRegion = region;
+  document.querySelectorAll('.bunkers-toolbar .bunkers-pill[data-region]').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.region === region);
+  });
+  bunkersCurrentPage = 1;
+  renderBunkersSpotTable();
+}
+
+function setBunkerGrade(grade) {
+  bunkersSelectedGrade = grade;
+  document.querySelectorAll('.bunkers-toolbar .bunkers-pill[data-grade]').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.grade === grade);
+  });
+  bunkersCurrentPage = 1;
+  renderBunkersSpotTable();
+}
+
+function onBunkersSearchInput() {
+  var input = document.getElementById('bunkersSearchInput');
+  if (!input) return;
+  bunkersSearchQuery = input.value;
+  bunkersCurrentPage = 1;
+  renderBunkersSpotTable();
+}
+
+function setBunkersSubView(subview) {
+  bunkersActiveSubView = subview;
+  var views = ['spot', 'forward', 'volumes', 'scrubber'];
+  views.forEach(function(v) {
+    var btn = document.getElementById('subnavBunkers' + v.charAt(0).toUpperCase() + v.slice(1));
+    var el = document.getElementById('bunkersSubview' + v.charAt(0).toUpperCase() + v.slice(1));
+    if (btn) btn.classList.toggle('active', v === subview);
+    if (el) el.style.display = (v === subview) ? 'flex' : 'none';
+  });
+}
+
+function renderBunkersForwardTable() {
+  var tbody = document.getElementById('bunkersForwardTableBody');
+  var sel = document.getElementById('bunkersForwardHubSelect');
+  if (!tbody || !sel) return;
+
+  var hub = sel.value || 'Singapore';
+  var summary = DATA.bunkerSummary;
+  var fwdCurves = summary && summary.forward_curves_12m ? summary.forward_curves_12m[hub] : [];
+
+  tbody.innerHTML = '';
+  if (!fwdCurves || !fwdCurves.length) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:16px; color:var(--text-muted);">No forward curve quotes available for ' + escapeHtml(hub) + '</td></tr>';
+    return;
+  }
+
+  fwdCurves.forEach(function(r) {
+    var tr = document.createElement('tr');
+    tr.setAttribute('data-tooltip', ' ');
+    tr.setAttribute('data-tt-type', 'bunker-fwd-cell');
+    tr.setAttribute('data-tt-month', r.month);
+    tr.setAttribute('data-tt-vlsfo', r.vlsfo);
+    tr.setAttribute('data-tt-hsfo', r.ifo380);
+    tr.setAttribute('data-tt-title', hub + ' Forward: ' + r.month);
+
+    tr.innerHTML = '<td><div style="font-weight:700; color:#fff; font-family:\'IBM Plex Mono\', monospace;">' + escapeHtml(r.month) + '</div><div style="font-size:10px; color:var(--text-muted);">M+' + r.offset + ' Delivery</div></td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace;">$' + r.ifo380.toFixed(2) + '</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; font-weight:600; color:#3fb950;">$' + r.vlsfo.toFixed(2) + '</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:#e3b341;">$' + r.mgo.toFixed(2) + '</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:#a371f7; font-weight:700;">$' + r.spread.toFixed(2) + '</td>';
+
+    tbody.appendChild(tr);
+  });
+}
+
+function onBunkersForwardHubChange() {
+  renderBunkersForwardTable();
+}
+
+function renderBunkersVolumesTable() {
+  var tbody = document.getElementById('bunkersVolumesTableBody');
+  var sel = document.getElementById('bunkersVolHubSelect');
+  if (!tbody || !sel) return;
+
+  var hub = sel.value || 'Singapore';
+  var summary = DATA.bunkerSummary;
+  var vols = summary && summary.physical_volumes ? summary.physical_volumes[hub] : [];
+
+  tbody.innerHTML = '';
+  if (!vols || !vols.length) {
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:16px; color:var(--text-muted);">No sales volume data available.</td></tr>';
+    return;
+  }
+
+  vols.slice(0, 36).forEach(function(r) {
+    var tr = document.createElement('tr');
+    tr.innerHTML = '<td><div style="font-weight:700; color:#fff; font-family:\'IBM Plex Mono\', monospace;">' + escapeHtml(r.period) + '</div></td>' +
+      '<td><span class="class-badge">' + escapeHtml(r.freq) + '</span></td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; font-weight:600; color:#00e5ff;">' + r.volume_mt.toLocaleString() + ' MT</td>' +
+      '<td style="font-size:10px; color:var(--text-muted);">' + escapeHtml(r.metric.replace(/_/g, ' ')) + '</td>';
+
+    tbody.appendChild(tr);
+  });
+}
+
+function onBunkersVolHubChange() {
+  renderBunkersVolumesTable();
+}
+
+function renderBunkersScrubberTable() {
+  var tbody = document.getElementById('bunkersScrubberTableBody');
+  if (!tbody) return;
+
+  var summary = DATA.bunkerSummary;
+  var scrubberRows = summary && summary.scrubber_economics ? summary.scrubber_economics : [];
+
+  tbody.innerHTML = '';
+  scrubberRows.forEach(function(r) {
+    var tr = document.createElement('tr');
+    tr.setAttribute('data-tooltip', ' ');
+    tr.setAttribute('data-tt-type', 'bunker-scrubber-cell');
+    tr.setAttribute('data-tt-port', r.port);
+    tr.setAttribute('data-tt-hi5', r.hi5);
+    tr.setAttribute('data-tt-cape', r.cape_tce_premium);
+    tr.setAttribute('data-tt-vlcc', r.vlcc_tce_premium);
+    tr.setAttribute('data-tt-title', r.port + ' Scrubber Economics');
+
+    tr.innerHTML = '<td><div style="font-weight:700; color:#fff;">' + escapeHtml(r.port) + '</div><div style="font-size:10px; color:var(--text-muted);">' + escapeHtml(r.region) + '</div></td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; font-weight:700; color:#a371f7;">$' + r.hi5.toFixed(2) + '</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:var(--green);">+$' + r.cape_tce_premium.toLocaleString() + '/d</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:var(--green);">+$' + r.vlcc_tce_premium.toLocaleString() + '/d</td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:var(--yellow); font-size:10px;">$' + r.eu_ets_penalty_usd.toLocaleString() + '/d</td>';
+
+    tbody.appendChild(tr);
+  });
+}
+
+function setBunkerChartRange(range) {
+  bunkersChartRange = range;
+  document.querySelectorAll('.bunkers-drawer-header .cp-toggle-btn').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.range === range);
+  });
+  renderBunkerMainChart();
+}
+
+function setBunkerChartGrade(grade) {
+  bunkersChartGrade = grade;
+  document.querySelectorAll('.bunkers-chart-drawer .cp-controls-bar .cp-toggle-btn').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.grade === grade);
+  });
+  renderBunkerMainChart();
+}
+
+function onBunkerChartPortSelect() {
+  var sel = document.getElementById('bunkerChartPortSelect');
+  if (sel) {
+    bunkersChartPort = sel.value;
+    renderBunkerMainChart();
+  }
+}
+
+function renderBunkerMainChart() {
+  var canvas = document.getElementById('bunkerMainChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+
+  var summary = DATA.bunkerSummary;
+  var monthlyMap = summary && summary.monthly_series ? summary.monthly_series : {};
+
+  // Find series for port or fallback to Singapore
+  var series = monthlyMap[bunkersChartPort] || monthlyMap['Singapore'] || [];
+
+  var range = bunkersChartRange;
+  if (range === '1y') series = series.slice(-12);
+  else if (range === '3y') series = series.slice(-36);
+
+  var labels = series.map(function(r) { return r.m; });
+  var grade = bunkersChartGrade;
+
+  var data = [];
+  var color = '#3fb950';
+  var labelName = 'VLSFO Spot ($/MT)';
+
+  if (grade === 'vlsfo') {
+    data = series.map(function(r) { return r.vlsfo; });
+    color = '#3fb950';
+    labelName = 'VLSFO (0.5% S)';
+  } else if (grade === 'mgo') {
+    data = series.map(function(r) { return r.mgo; });
+    color = '#e3b341';
+    labelName = 'MGO (0.1% S)';
+  } else if (grade === 'hsfo') {
+    data = series.map(function(r) { return r.hsfo; });
+    color = '#4d9aff';
+    labelName = 'HSFO (IFO380)';
+  } else if (grade === 'hi5') {
+    data = series.map(function(r) { return r.hi5; });
+    color = '#a371f7';
+    labelName = 'Hi-5 Scrubber Spread ($/MT)';
+  } else if (grade === 'bio') {
+    data = series.map(function(r) { return r.bio || (r.vlsfo ? r.vlsfo * 1.25 : null); });
+    color = '#00e5ff';
+    labelName = 'Biofuel Blend (B24 Drop-in)';
+  }
+
+  // Update title
+  var titleEl = document.getElementById('bunkerChartPortTitle');
+  var subEl = document.getElementById('bunkerChartPortSub');
+  if (titleEl) titleEl.textContent = bunkersChartPort + ' ' + labelName;
+  if (subEl) subEl.textContent = 'Monthly Historical Fuel Series (2018–2026) · Ship & Bunker Benchmark Archive';
+
+  var sel = document.getElementById('bunkerChartPortSelect');
+  if (sel && sel.value !== bunkersChartPort) {
+    sel.value = bunkersChartPort;
+  }
+
+  if (bunkerMainChartInstance) {
+    bunkerMainChartInstance.destroy();
+  }
+
+  var ctx = canvas.getContext('2d');
+  bunkerMainChartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: labelName + ' (' + bunkersChartPort + ')',
+        data: data,
+        borderColor: color,
+        backgroundColor: color + '15',
+        fill: true,
+        tension: 0.2,
+        borderWidth: 2,
+        pointRadius: range === '1y' ? 3 : 2,
+        pointHoverRadius: 5
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          display: true,
+          labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 } }
+        },
+        tooltip: {
+          backgroundColor: '#111820',
+          borderColor: '#1c2333',
+          borderWidth: 1,
+          titleColor: '#fff',
+          bodyColor: '#d4dce8',
+          callbacks: {
+            label: function(item) {
+              return ' ' + item.dataset.label + ': $' + item.formattedValue + ' / MT';
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: 'rgba(28, 35, 51, 0.4)' },
+          ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 }
+        },
+        y: {
+          grid: { color: 'rgba(28, 35, 51, 0.5)' },
+          ticks: {
+            color: '#7a8494',
+            font: { family: 'IBM Plex Mono', size: 10 },
+            callback: function(v) { return '$' + v; }
+          }
+        }
+      }
+    }
+  });
+}
+
+
     if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initTooltipTranslations); }
     else { initTooltipTranslations(); }
   </script>
