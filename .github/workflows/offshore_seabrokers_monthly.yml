@@ -1,0 +1,79 @@
+name: Offshore Seabreeze Monthly Pipeline
+
+on:
+  schedule:
+    # Run twice weekly (Monday & Thursday at 06:30 UTC)
+    - cron: '30 6 * * 1,4'
+    # Run daily during the first week of the month (1st–8th at 08:00 UTC) when new Seabreeze editions drop
+    - cron: '0 8 1-8 * *'
+  workflow_dispatch:
+    inputs:
+      force_all:
+        description: 'Force re-download and re-digest all reports: true | false'
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: offshore-seabrokers-pipeline
+  cancel-in-progress: false
+
+jobs:
+  offshore-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements_knowledge.txt
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pymupdf pandas numpy lxml
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "offshore-bot"
+          git config user.email "bot@shipping"
+
+      - name: Pull latest
+        run: git pull --rebase --autostash origin main || true
+
+      - name: Run Seabrokers Harvester & Cache Builder
+        run: |
+          if [ "${{ github.event.inputs.force_all }}" = "true" ]; then
+            python scripts/scrapers/fetch_seabrokers_reports.py --all
+          else
+            python scripts/scrapers/fetch_seabrokers_reports.py --auto
+          fi
+
+      - name: Commit and Push Offshore Updates
+        run: |
+          git add data/reports/seabrokers/ reports/seabrokers/ reports/seabrokers_catalog.json data/reports/seabrokers_catalog.json data/derived/seabrokers_osv_dayrates.csv data/derived/offshore_summary.json || true
+          if git diff --staged --quiet; then
+            echo "No new Seabreeze reports or offshore rate changes to commit."
+            exit 0
+          fi
+
+          git commit -m "data(offshore): ingest latest Seabreeze market report and dayrate series [skip ci]"
+
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin HEAD:main; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+            echo "Push race on attempt $attempt. Retrying in 10s..."
+            sleep 10
+          done
+
+          echo "Failed to push after 3 attempts."
+          exit 1

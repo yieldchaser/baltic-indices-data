@@ -166,3 +166,28 @@ def test_frontend_offshore_and_port_stress_elements_present():
     assert 'id="fearnSnpSearchInput" placeholder="Search by vessel, shipyard, or buyer..." oninput="filterSnpDeals(this.value)" style="max-width:320px;" data-tooltip=' in html
 
 
+def test_offshore_automation_pipeline_configured():
+    """Verify GitHub Actions workflow and automated ingestion engine for Seabreeze reports."""
+    workflow_path = ROOT / ".github" / "workflows" / "offshore_seabrokers_monthly.yml"
+    assert workflow_path.exists(), f"Missing automated workflow: {workflow_path}"
+
+    with open(workflow_path, "r", encoding="utf-8") as f:
+        wf_content = f.read()
+
+    assert "fetch_seabrokers_reports.py --auto" in wf_content
+    assert "data/derived/offshore_summary.json" in wf_content
+    assert "cron:" in wf_content
+    assert "workflow_dispatch:" in wf_content
+
+    # Verify fetch script exposes automated mode and cache rebuilding
+    fetch_script = ROOT / "scripts" / "scrapers" / "fetch_seabrokers_reports.py"
+    assert fetch_script.exists()
+    with open(fetch_script, "r", encoding="utf-8") as f:
+        fetch_content = f.read()
+
+    assert "--auto" in fetch_content
+    assert "rebuild_cache" in fetch_content
+    assert "build_offshore_cache" in fetch_content
+
+
+

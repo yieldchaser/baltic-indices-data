@@ -31,6 +31,8 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8")
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
 DATA_DIR = os.path.join(REPO_ROOT, "data")
 REPORTS_DIR = os.path.join(REPO_ROOT, "reports")
 SEABROKERS_REPORTS_DIR = os.path.join(REPORTS_DIR, "seabrokers")
@@ -427,6 +429,18 @@ def download_and_digest_reports(entries: list, limit=None):
         combined.sort_values(by=["date", "category"], ascending=[False, True], inplace=True)
         combined.to_csv(RATES_CSV_PATH, index=False)
         print(f"[+] Saved {len(combined)} dayrate records to {RATES_CSV_PATH}")
+        rebuild_cache()
+
+
+def rebuild_cache():
+    """Triggers the offshore cache builder to compile data/derived/offshore_summary.json."""
+    try:
+        from scripts.offshore.build_offshore_cache import main as build_cache
+        print("[*] Rebuilding pre-aggregated offshore frontend cache (data/derived/offshore_summary.json)...")
+        build_cache()
+        print("[+] Offshore summary cache rebuild complete.")
+    except Exception as e:
+        print(f"[!] Warning: Failed to rebuild offshore cache: {e}")
 
 
 def save_catalog(entries: list):
@@ -471,6 +485,7 @@ def print_dry_run_summary(entries: list):
 
 def main():
     parser = argparse.ArgumentParser(description="Harvest Seabrokers Seabreeze Monthly Reports")
+    parser.add_argument("--auto", action="store_true", help="Automated pipeline: detect uningested reports, download, extract rates, update catalog, and rebuild cache")
     parser.add_argument("--dry-run", action="store_true", help="Crawl archive and verify PDF links without downloading")
     parser.add_argument("--download", action="store_true", help="Download PDFs and digest into Markdown")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of reports to download/digest")
@@ -483,14 +498,43 @@ def main():
     entries = resolve_pdf_urls_concurrently(entries, max_workers=args.workers)
     save_catalog(entries)
 
+    if args.auto:
+        # Check for uningested or missing reports
+        unprocessed = []
+        for e in entries:
+            pdf_fn = f"{e['date']}_{e['slug']}.pdf"
+            pdf_p = os.path.join(PDF_STORAGE_DIR, pdf_fn)
+            md_fn = f"{e['date']}_{e['slug']}.md"
+            md_p = os.path.join(SEABROKERS_REPORTS_DIR, md_fn)
+            if not os.path.exists(pdf_p) or not os.path.exists(md_p) or os.path.getsize(pdf_p) < 1000:
+                unprocessed.append(e)
+
+        if unprocessed:
+            print(f"[*] Discovered {len(unprocessed)} new/uningested Seabreeze report(s) to process:")
+            for u in unprocessed:
+                print(f"    - [{u['date']}] {u['title']}")
+            download_and_digest_reports(unprocessed)
+            save_catalog(entries)
+            rebuild_cache()
+            print(f"[+] Automated ingestion complete for {len(unprocessed)} report(s).")
+        else:
+            print(f"[+] All {len(entries)} Seabreeze reports are already downloaded and digested.")
+            cache_file = os.path.join(DERIVED_DIR, "offshore_summary.json")
+            if not os.path.exists(cache_file):
+                rebuild_cache()
+            else:
+                print("[+] Offshore frontend cache is present and synchronized.")
+        return 0
+
     if args.dry_run or (not args.download and not args.all):
         print_dry_run_summary(entries)
-        print("[*] Dry run complete. To download and digest reports, rerun with --download or --all.")
+        print("[*] Dry run complete. To download and digest reports, rerun with --download, --all, or --auto.")
         return 0
 
     limit = None if args.all else (args.limit or 5)
     download_and_digest_reports(entries, limit=limit)
     save_catalog(entries)
+    rebuild_cache()
     print("[+] All done!")
     return 0
 
