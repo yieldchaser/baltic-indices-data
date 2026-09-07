@@ -101,7 +101,7 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 | branch | head | last push | state |
 |---|---|---|---|
 | `agent/muse-spark` | `e705ac894` | 2026-09-06 23:32 UTC | **PASS**. Decision 1 COMPLETE and now merged to `main`. CG1 override landed (global floor untouchable). Decision 2 pilot harness built, 35 images, dry-run proven — **needs a CI run against a real vision model to produce any actual finding**. |
-| `agent/antigravity` | `568a76787` | 2026-09-07 05:15 UTC | **SUBMITTED FOR REVIEW**. B1–B9 addressed; Decision 2 re-OCR pilot executed on 35 images (rebalanced cohort: 20 empty_ocr, 10 separator, 5 small_skip); fail-closed axis gating + planted separator redo verified; vision-client tests passing; report: `docs/PILOT_VISION_ANTIGRAVITY.md` |
+| `agent/antigravity` | `e2b0db0a4` | 2026-09-07 05:15 UTC | **SUBMITTED FOR REVIEW**. B1–B9 addressed; Decision 2 re-OCR pilot executed on 35 images (rebalanced cohort: 20 empty_ocr, 10 separator, 5 small_skip); fail-closed axis gating + planted separator redo verified; vision-client tests passing; report: `docs/PILOT_VISION_ANTIGRAVITY.md` |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
 is invalidated three times over — wrong enumeration method (B1, it re-walks HTML and
@@ -114,7 +114,7 @@ original brief, it is building against premises that have since been disproved �
 decisions above replace them. Its `verify_extraction.py` column-shift check is sound
 and should be kept and reused.
 
-*(Update 2026-09-07 05:15 UTC): Branch updated and pushed at `568a76787`. B1–B9 and D2-a/D2-b addressed: `p0_skipped_assets_queue.jsonl` deleted; 5 checked-in test fixtures added in `data/fixtures/sample_broker_tables.json`; all paths normalized to POSIX `/`; `collapsed_table` check enforced; Decision 2 re-OCR pilot executed across 35 images (rebalanced cohort: 20 empty-OCR first, 10 separator suspects second, 5 small-skips third); fail-closed axis gating + planted separator redo verified; `tests/test_vision_client.py` passing 3/3; see `docs/PILOT_VISION_ANTIGRAVITY.md`.*
+*(Update 2026-09-07 05:15 UTC): Branch updated and pushed at `e2b0db0a4`. B1–B9 and D2-a/D2-b addressed: `p0_skipped_assets_queue.jsonl` deleted; 5 checked-in test fixtures added in `data/fixtures/sample_broker_tables.json`; all paths normalized to POSIX `/`; `collapsed_table` check enforced; Decision 2 re-OCR pilot executed across 35 images (rebalanced cohort: 20 empty-OCR first, 10 separator suspects second, 5 small-skips third); fail-closed axis gating + planted separator redo verified; `tests/test_vision_client.py` passing 3/3; see `docs/PILOT_VISION_ANTIGRAVITY.md`.*
 
 ## Work split (reviewer recommendation, not a user decision)
 
