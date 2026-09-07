@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__root",
+  "doc_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry",
+  "parent_id": null,
+  "title": "Bulk report - Week 20",
+  "section_path": [
+    "Bulk report - Week 20"
+  ],
+  "section_path_text": "Bulk report - Week 20",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Capesize\nThe market enjoyed a convincingly firmer week overall, with sentiment steadily improving across both basins as reduced vessel availability and sustained cargo flow gradually shifted the balance back in owners' favour. While the Pacific opened in a relatively stable and subdued manner, consistent miner presence on C5 throughout the week provided an important underlying floor to rates. Activity ultimately firmed midweek as fixtures pushed towards the high $15s, although charterer resistance re-emerged into Thursday amid a quieter Ascension Day-affected session, with rates easing back closer to $15.00.",
+  "keywords": [
+    "capesize",
+    "panamax",
+    "supramax",
+    "handysize",
+    "china",
+    "brazil",
+    "australia",
+    "atlantic",
+    "pacific",
+    "west_africa",
+    "europe",
+    "us_gulf"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 850,
+  "source_path": "reports/baltic/dry/2026/2026-05-15_W20_bulk-report-week-20_dry.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__s01_capesize",
+      "doc_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__root",
+      "title": "Capesize",
+      "section_path": [
+        "Capesize"
+      ],
+      "section_path_text": "Capesize",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The market enjoyed a convincingly firmer week overall, with sentiment steadily improving across both basins as reduced vessel availability and sustained cargo flow gradually shifted the balance back in owners' favour. While the Pacific opened in a relatively stable and subdued manner, consistent miner presence on C5 throughout the week provided an important underlying floor to rates.",
+      "keywords": [
+        "china",
+        "brazil",
+        "atlantic",
+        "pacific",
+        "west_africa",
+        "back",
+        "high",
+        "activity"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 246,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__s02_panamax",
+      "doc_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__root",
+      "title": "Panamax",
+      "section_path": [
+        "Panamax"
+      ],
+      "section_path_text": "Panamax",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The Panamax market maintained strong upward momentum this week, with the P5TC rising from $20,548 on Monday to $22,691 by Friday. In the Atlantic, firm owner sentiment persisted, largely driven by robust fronthaul levels, tightening vessel supply, and continued grain exports from North and East Coast South America, while mineral demand showed signs of gradual improvement.",
+      "keywords": [
+        "panamax",
+        "australia",
+        "atlantic",
+        "pacific",
+        "grain",
+        "activity",
+        "demand",
+        "firm"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 168,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__s03_ultramax_supramax",
+      "doc_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__root",
+      "title": "Ultramax/Supramax",
+      "section_path": [
+        "Ultramax/Supramax"
+      ],
+      "section_path_text": "Ultramax/Supramax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "It was a rather settled week overall for the sector with no significant changes. The Atlantic remained relatively calm although with the Ascension Day holiday it was a slow affair.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "west_africa",
+        "europe",
+        "us_gulf",
+        "steel",
+        "was",
+        "dwt"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 241,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__s04_handysize",
+      "doc_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry",
+      "parent_id": "baltic_dry_2026-05-15_2026_05_15_w20_bulk_report_week_20_dry__root",
+      "title": "Handysize",
+      "section_path": [
+        "Handysize"
+      ],
+      "section_path_text": "Handysize",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "The Handy market remained mixed but broadly firmer over this week, with overall gains driven mainly by stronger sentiment and healthier cargo demand in Asia, while the Atlantic basin stayed quieter and more positional. The Continent and Mediterranean saw limited fresh activity and only minor rate changes, while the South Atlantic and US Gulf were mostly steady, with some softening emerging toward the end of the period.",
+      "keywords": [
+        "handysize",
+        "brazil",
+        "australia",
+        "atlantic",
+        "europe",
+        "us_gulf",
+        "dwt",
+        "fixed"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 177,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

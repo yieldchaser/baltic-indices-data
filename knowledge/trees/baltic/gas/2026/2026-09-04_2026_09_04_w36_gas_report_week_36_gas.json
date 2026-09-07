@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-09-04_2026_09_04_w36_gas_report_week_36_gas__root",
+  "doc_id": "baltic_gas_2026-09-04_2026_09_04_w36_gas_report_week_36_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 36",
+  "section_path": [
+    "Gas report - Week 36"
+  ],
+  "section_path_text": "Gas report - Week 36",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market remained under pressure this week, although the Atlantic basin showed some signs of stabilisation. September laycans are now largely covered and attention has begun to shift towards October requirements, with spot enquiry gradually emerging. However, vessel availability remains elevated across both basins, continuing to weigh on freight levels.",
+  "keywords": [
+    "capesize",
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day.",
+    "route"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 478,
+  "source_path": "reports/baltic/gas/2026/2026-09-04_W36_gas-report-week-36_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-09-04_2026_09_04_w36_gas_report_week_36_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-09-04_2026_09_04_w36_gas_report_week_36_gas",
+      "parent_id": "baltic_gas_2026-09-04_2026_09_04_w36_gas_report_week_36_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market remained under pressure this week, although the Atlantic basin showed some signs of stabilisation. September laycans are now largely covered and attention has begun to shift towards October requirements, with spot enquiry gradually emerging.",
+      "keywords": [
+        "lng",
+        "australia",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 262,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-09-04_2026_09_04_w36_gas_report_week_36_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-09-04_2026_09_04_w36_gas_report_week_36_gas",
+      "parent_id": "baltic_gas_2026-09-04_2026_09_04_w36_gas_report_week_36_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market strengthened this week, supported by a strong arbitrage, tight vessel availability and ongoing Panama Canal restrictions. With voyages increasingly being routed via the Cape of Good Hope, tonnage availability remains constrained, providing support to freight levels.",
+      "keywords": [
+        "capesize",
+        "lpg",
+        "atlantic",
+        "gas",
+        "route",
+        "availability",
+        "day.",
+        "supported"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 210,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

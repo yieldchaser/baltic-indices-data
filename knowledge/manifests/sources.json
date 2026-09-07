@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-07T12:31:58Z",
+  "generated_at": "2026-09-07T14:03:59Z",
   "counts": {
     "breakwave": {
       "drybulk": 209,
       "tankers": 78
     },
     "baltic": {
-      "dry": 606,
-      "tanker": 608,
-      "gas": 217,
-      "container": 98,
-      "ningbo": 542
+      "dry": 640,
+      "tanker": 642,
+      "gas": 251,
+      "container": 132,
+      "ningbo": 543
     },
     "breakwave_insights": {
       "insights": 3174
@@ -24,7 +24,7 @@
       "shipbuilding": 374
     },
     "broker_reports": {
-      "broker_report": 113
+      "broker_report": 116
     },
     "poten": {
       "tankers": 30

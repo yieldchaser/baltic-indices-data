@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_tanker_2026-08-14_2026_08_14_w33_tanker_report_week_33_tanker__root",
+  "doc_id": "baltic_tanker_2026-08-14_2026_08_14_w33_tanker_report_week_33_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 33",
+  "section_path": [
+    "Tanker report - Week 33"
+  ],
+  "section_path_text": "Tanker report - Week 33",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nLR2\nThe TC1 75kt MEG/Japan index dropped a modest 5 points this week to WS517. A voyage west also dropped a little, -$43,700 on the TC20 90kt MEG/UK-Continent index to $8.72 million. In Europe the TC15 80kt Mediterranean/East index came off $160,000 to $5.32 million, the corresponding TCE is now at just over $27,500/day on Baltic description round trip via Suez.",
+  "keywords": [
+    "panamax",
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "atlantic",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan",
+    "day"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 878,
+  "source_path": "reports/baltic/tanker/2026/2026-08-14_W33_tanker-report-week-33_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2026-08-14_2026_08_14_w33_tanker_report_week_33_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2026-08-14_2026_08_14_w33_tanker_report_week_33_tanker",
+      "parent_id": "baltic_tanker_2026-08-14_2026_08_14_w33_tanker_report_week_33_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LR2\nThe TC1 75kt MEG/Japan index dropped a modest 5 points this week to WS517. A voyage west also dropped a little, -$43,700 on the TC20 90kt MEG/UK-Continent index to $8.72 million.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "day",
+        "tce"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 528,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2026-08-14_2026_08_14_w33_tanker_report_week_33_tanker__s02_dirty",
+      "doc_id": "baltic_tanker_2026-08-14_2026_08_14_w33_tanker_report_week_33_tanker",
+      "parent_id": "baltic_tanker_2026-08-14_2026_08_14_w33_tanker_report_week_33_tanker__root",
+      "title": "Dirty",
+      "section_path": [
+        "Dirty"
+      ],
+      "section_path_text": "Dirty",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The dirty tanker market posted a generally positive performance this week, led by a significant improvement in Suezmax earnings and continued strength across many Atlantic Basin routes. While VLCC returns eased from the exceptionally high levels seen at the end of the previous week, overall sentiment remained firm and supported by healthy cargo activity.",
+      "keywords": [
+        "panamax",
+        "handysize",
+        "vlcc",
+        "suezmax",
+        "aframax",
+        "atlantic",
+        "meg",
+        "west_africa"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 346,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

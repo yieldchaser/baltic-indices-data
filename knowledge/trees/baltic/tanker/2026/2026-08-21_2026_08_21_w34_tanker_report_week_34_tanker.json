@@ -1,0 +1,146 @@
+{
+  "node_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__root",
+  "doc_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker",
+  "parent_id": null,
+  "title": "Tanker report - Week 34",
+  "section_path": [
+    "Tanker report - Week 34"
+  ],
+  "section_path_text": "Tanker report - Week 34",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "Clean\nLR2\nThe TC1 75kt MEG/Japan index strengthened this week, climbing 24.45 points to WS536.67 as sentiment improved in the East. A voyage west also firmed, with the TC20 90kt MEG/UK-Continent index increasing by $462,500 to $9.43 million. In Europe, the TC15 80kt Mediterranean/East index gained $250,000 to $5.59 million, with the corresponding Baltic round-trip TCE rising by $3,433 to $31,436/day via Suez.",
+  "keywords": [
+    "handysize",
+    "vlcc",
+    "suezmax",
+    "aframax",
+    "china",
+    "atlantic",
+    "pacific",
+    "meg",
+    "west_africa",
+    "europe",
+    "us_gulf",
+    "japan"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 1244,
+  "source_path": "reports/baltic/tanker/2026/2026-08-21_W34_tanker-report-week-34_tanker.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__s01_clean",
+      "doc_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker",
+      "parent_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__root",
+      "title": "Clean",
+      "section_path": [
+        "Clean"
+      ],
+      "section_path_text": "Clean",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "LR2\nThe TC1 75kt MEG/Japan index strengthened this week, climbing 24.45 points to WS536.67 as sentiment improved in the East. A voyage west also firmed, with the TC20 90kt MEG/UK-Continent index increasing by $462,500 to $9.43 million.",
+      "keywords": [
+        "handysize",
+        "atlantic",
+        "meg",
+        "europe",
+        "us_gulf",
+        "japan",
+        "tce",
+        "points"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 489,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__s02_vlcc",
+      "doc_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker",
+      "parent_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__root",
+      "title": "VLCC",
+      "section_path": [
+        "VLCC"
+      ],
+      "section_path_text": "VLCC",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The rate for the TD3C route (270,000mt Middle East Gulf to China) is now assessed 88 points firmer than last Friday, at WS570, which corresponds to a daily round-trip TCE of close to $585,000 for the standard Baltic VLCC. TD34 (Gulf of Oman/China) was 46 points higher than a week ago at WS216.67, giving a round-trip TCE of over $197,800/day.",
+      "keywords": [
+        "vlcc",
+        "china",
+        "atlantic",
+        "meg",
+        "west_africa",
+        "us_gulf",
+        "tce",
+        "gulf"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 196,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__s03_suezmax",
+      "doc_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker",
+      "parent_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__root",
+      "title": "Suezmax",
+      "section_path": [
+        "Suezmax"
+      ],
+      "section_path_text": "Suezmax",
+      "level": 1,
+      "ordinal": 3,
+      "summary": "In the Suezmax sector the rate for the 130,000mt Nigeria/UK Continent voyage (TD20) rose 69 points to WS328.89, which translates into a daily round-trip TCE of over $165,000. The TD27 route (Guyana to UK Continent basis 130,000mt) rose about 67 points to WS326.11, giving a daily round trip TCE of close to $165,900.",
+      "keywords": [
+        "suezmax",
+        "europe",
+        "points",
+        "tce",
+        "daily",
+        "rose",
+        "round-trip",
+        "almost"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 213,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__s04_aframax",
+      "doc_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker",
+      "parent_id": "baltic_tanker_2026-08-21_2026_08_21_w34_tanker_report_week_34_tanker__root",
+      "title": "Aframax",
+      "section_path": [
+        "Aframax"
+      ],
+      "section_path_text": "Aframax",
+      "level": 1,
+      "ordinal": 4,
+      "summary": "In the North Sea, the rate for the 80,000mt Cross-UK Continent route (TD7) improved by a point, at the WS203 level, showing a daily round-trip TCE of about $93,200 basis Hound Point to Wilhelmshaven. In the Mediterranean, the rate for 80,000mt Cross-Mediterranean (TD19) firmed by 23 points to just shy of WS250.",
+      "keywords": [
+        "china",
+        "atlantic",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "crude_oil",
+        "tce",
+        "point"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 333,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

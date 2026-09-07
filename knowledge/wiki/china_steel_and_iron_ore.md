@@ -5,9 +5,9 @@ categories:
 - drybulk
 - insights
 - iron_ore
-document_count: 95
+document_count: 90
 evidence_count: 250
-generated_at: '2026-09-07T12:32:51Z'
+generated_at: '2026-09-07T14:04:42Z'
 latest_evidence_date: '2026-09-04'
 page_type: topic_wiki
 related_topics:
@@ -23,7 +23,7 @@ topic_id: china_steel_and_iron_ore
 ---
 
 ## Summary
-China-driven steel and iron ore demand, port inventories, import trends, and the dry-bulk demand implications that flow through capesize and broader freight markets. The current wiki page is grounded in 250 cited sections from 95 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-09-04, with the strongest recurring markers being china, steel, iron_ore, iron ore, brazil. Primary coverage comes from categories such as dry, dry_charter, drybulk, insights, iron_ore.
+China-driven steel and iron ore demand, port inventories, import trends, and the dry-bulk demand implications that flow through capesize and broader freight markets. The current wiki page is grounded in 250 cited sections from 90 documents across baltic, breakwave, breakwave_insights, hellenic. Recent evidence runs through 2026-09-04, with the strongest recurring markers being china, steel, iron_ore, iron ore, brazil. Primary coverage comes from categories such as dry, dry_charter, drybulk, insights, iron_ore.
 
 ## Why It Matters
 China-driven steel and iron ore demand, port inventories, import trends, and the dry-bulk demand implications that flow through capesize and broader freight markets.
@@ -36,28 +36,28 @@ China-driven steel and iron ore demand, port inventories, import trends, and the
 - 2026-09-04 | hellenic iron_ore | Main: Iron ore futures traded firmer on Friday. The DCE most-traded I2701 contract settled at 727 yuan/mt, up1.04% from the previous session. [doc_id: hellenic_iron_ore_2026-09-04_2026_09_04_mmi_daily_iron_ore_index_report_september_4_2026 | section_id: hellenic_iron_ore_2026-09-04_2026_09_04_mmi_daily_iron_ore_index_report_september_4_2026__s01_main | pages n/a]
 - 2026-09-04 | hellenic iron_ore | Linked asset: 2026-09-04_mmi-daily-iron-ore-index-report-september-4-2026_04092026chinese2455_bd8739ebf420.jpg: Source asset: reports/hellenic/iron_ore/2026/assets/2026-09-04_mmi-daily-iron-ore-index-report-september-4-2026_04092026chinese2455_bd8739ebf420.jpg Linked image asset: 2026-09-04_mmi-daily-iron-ore-index-report-september-4-2026_04092026chinese2455_bd8739ebf420.jpg Image metadata: JPEG 1600x743 mode=RGB Embedded info: dpi: (96, 96) [structured table] | Index | Fe Content | Price | Change | Change% | MTD | YTD | Low? | | Price | Change | Change% | MTD | YTD | Low? [doc_id: hellenic_iron_ore_2026-09-04_2026_09_04_mmi_daily_iron_ore_index_report_september_4_2026 | section_id: hellenic_iron_ore_2026-09-04_2026_09_04_mmi_daily_iron_ore_index_report_september_4_2026__s02_linked_asset_2026_09_04_mmi_daily_iron_ore_index_report_september_4_2026_04092026chinese2455_bd8739ebf420_jpg | pages n/a]
 - 2026-09-04 | breakwave_insights insights | Main: By Ulf Bergman Iron ore prices have experienced a modest renaissance since the beginning of August. The September futures listed on the Singapore Exchange (SGX) have gained around six per cent since the beginning of last month. [doc_id: breakwave_insights_insights_2026-09-04_2026_09_04_iron_ore_prices_recover_as_seaborne_volumes_lose_momentum | section_id: breakwave_insights_insights_2026-09-04_2026_09_04_iron_ore_prices_recover_as_seaborne_volumes_lose_momentum__s01_main | pages n/a]
-- 2026-09-04 | baltic dry | Panamax-Kamsarmax: This week saw continued strength in the Panamax market, with positive sentiment driving rate gains across both the Atlantic and Pacific basins, and pushing the P5TC steadily higher throughout the week. In the Atlantic, transatlantic and fronthaul activity remained active, supported by sustained demand for September cargoes, although concerns emerged later in the week regarding limited cargo replenishment and increasing tonnage availability. [doc_id: baltic_dry_2026-09-04_2026_09_04_bulk_report_week_36_dry | section_id: baltic_dry_2026-09-04_2026_09_04_bulk_report_week_36_dry__s02_panamax_kamsarmax | pages n/a]
+- 2026-09-04 | baltic dry | Panamax-Kamsarmax: This week saw continued strength in the Panamax market, with positive sentiment driving rate gains across both the Atlantic and Pacific basins, and pushing the P5TC steadily higher throughout the week. In the Atlantic, transatlantic and fronthaul activity remained active, supported by sustained demand for September cargoes, although concerns emerged later in the week regarding limited cargo replenishment and increasing tonnage availability. [doc_id: baltic_dry_2026-09-04_2026_09_04_w36_bulk_report_week_36_dry | section_id: baltic_dry_2026-09-04_2026_09_04_w36_bulk_report_week_36_dry__s02_panamax_kamsarmax | pages n/a]
 
 ## Historical Patterns
-- Coverage span: 2026-07-24 to 2026-09-04 across 1 calendar years.
+- Coverage span: 2026-07-29 to 2026-09-04 across 1 calendar years.
 - Most-covered years: 2026: 250
-- Recurring evidence markers: china, steel, iron_ore, iron ore, brazil, capesize
+- Recurring evidence markers: china, steel, iron_ore, iron ore, brazil, australia
 
 ## Cross-Source View
-- Source coverage: breakwave_insights: 137, hellenic: 82, baltic: 25, breakwave: 6
-- Category coverage: insights: 137, iron_ore: 76, dry: 25, dry_charter: 6, drybulk: 6
-- Tone distribution: constructive: 130, neutral: 69, cautiously_bearish: 51
+- Source coverage: breakwave_insights: 126, hellenic: 74, baltic: 44, breakwave: 6
+- Category coverage: insights: 126, iron_ore: 69, dry: 44, drybulk: 6, dry_charter: 5
+- Tone distribution: constructive: 134, neutral: 65, cautiously_bearish: 51
 - Related topics: dry_bulk_market, capesize
 
 ## Key Documents
 - 2026-09-04 | MMI Daily Iron Ore Index Report September 4 2026 [doc_id: hellenic_iron_ore_2026-09-04_2026_09_04_mmi_daily_iron_ore_index_report_september_4_2026 | section_id: hellenic_iron_ore_2026-09-04_2026_09_04_mmi_daily_iron_ore_index_report_september_4_2026__s03_linked_asset_2026_09_04_mmi_daily_iron_ore_index_report_september_4_2026_mmi_daily_iron_ore_report_for_4th_se_829a4c3e179d_pdf | pages n/a]
 - 2026-09-04 | Iron Ore Prices Recover as Seaborne Volumes Lose Momentum [doc_id: breakwave_insights_insights_2026-09-04_2026_09_04_iron_ore_prices_recover_as_seaborne_volumes_lose_momentum | section_id: breakwave_insights_insights_2026-09-04_2026_09_04_iron_ore_prices_recover_as_seaborne_volumes_lose_momentum__s03_second_half_seaborne_iron_ore_exports_off_to_a_soft_start | pages n/a]
+- 2026-09-04 | Bulk report - Week 36 [doc_id: baltic_dry_2026-09-04_2026_09_04_w36_bulk_report_week_36_dry | section_id: baltic_dry_2026-09-04_2026_09_04_w36_bulk_report_week_36_dry__s02_panamax_kamsarmax | pages n/a]
 - 2026-09-04 | Bulk report - Week 36 [doc_id: baltic_dry_2026-09-04_2026_09_04_bulk_report_week_36_dry | section_id: baltic_dry_2026-09-04_2026_09_04_bulk_report_week_36_dry__s02_panamax_kamsarmax | pages n/a]
 - 2026-09-04 | Coal, Coal, Coal [doc_id: breakwave_insights_insights_2026-09-04_2026_09_04_coal_coal_coal | section_id: breakwave_insights_insights_2026-09-04_2026_09_04_coal_coal_coal__s01_main | pages n/a]
 - 2026-09-04 | Hormuz 2027: Reopening or Prolonged Disruption? [doc_id: breakwave_insights_insights_2026-09-04_2026_09_04_hormuz_2027_reopening_or_prolonged_disruption | section_id: breakwave_insights_insights_2026-09-04_2026_09_04_hormuz_2027_reopening_or_prolonged_disruption__s01_main | pages n/a]
 - 2026-09-03 | MMI Daily Iron Ore Index Report September 3 2026 [doc_id: hellenic_iron_ore_2026-09-03_2026_09_03_mmi_daily_iron_ore_index_report_september_3_2026 | section_id: hellenic_iron_ore_2026-09-03_2026_09_03_mmi_daily_iron_ore_index_report_september_3_2026__s03_linked_asset_2026_09_03_mmi_daily_iron_ore_index_report_september_3_2026_mmi_daily_iron_ore_report_for_3th_se_26e10406d1cd_pdf | pages n/a]
 - 2026-09-03 | Metals struggle as economic growth concerns mount [doc_id: breakwave_insights_insights_2026-09-03_2026_09_03_metals_struggle_as_economic_growth_concerns_mount | section_id: breakwave_insights_insights_2026-09-03_2026_09_03_metals_struggle_as_economic_growth_concerns_mount__s04_linked_asset_2026_09_03_metals_struggle_as_economic_growth_concerns_mount_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_5c9dcb58af7d_png | pages n/a]
-- 2026-09-03 | Record Decline in Chinese Thermal Coal Stockpiles [doc_id: breakwave_insights_insights_2026-09-03_2026_09_03_record_decline_in_chinese_thermal_coal_stockpiles | section_id: breakwave_insights_insights_2026-09-03_2026_09_03_record_decline_in_chinese_thermal_coal_stockpiles__s02_linked_asset_2026_09_03_record_decline_in_chinese_thermal_coal_stockpiles_img_chart_fd4104b6dd44_jpg | pages n/a]
 
 ## Related Topics
 - dry_bulk_market

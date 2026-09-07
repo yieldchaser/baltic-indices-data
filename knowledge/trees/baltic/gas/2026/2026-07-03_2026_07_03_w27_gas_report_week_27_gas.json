@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-07-03_2026_07_03_w27_gas_report_week_27_gas__root",
+  "doc_id": "baltic_gas_2026-07-03_2026_07_03_w27_gas_report_week_27_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 27",
+  "section_path": [
+    "Gas report - Week 27"
+  ],
+  "section_path_text": "Gas report - Week 27",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG market has had a softer feel to it this week. On the BLNG1 Australia-Japan route, rates have eased by $4,000/day week-on-week to settle at $71,000/day. The BLNG2 US Gulf-Continent route marginally moved downwards from $90,100/day last Friday to $89,000/day today.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "day",
+    "route",
+    "day.",
+    "end",
+    "tce"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 344,
+  "source_path": "reports/baltic/gas/2026/2026-07-03_W27_gas-report-week-27_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-07-03_2026_07_03_w27_gas_report_week_27_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-07-03_2026_07_03_w27_gas_report_week_27_gas",
+      "parent_id": "baltic_gas_2026-07-03_2026_07_03_w27_gas_report_week_27_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG market has had a softer feel to it this week. On the BLNG1 Australia-Japan route, rates have eased by $4,000/day week-on-week to settle at $71,000/day.",
+      "keywords": [
+        "lng",
+        "australia",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "day",
+        "route"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 161,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-07-03_2026_07_03_w27_gas_report_week_27_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-07-03_2026_07_03_w27_gas_report_week_27_gas",
+      "parent_id": "baltic_gas_2026-07-03_2026_07_03_w27_gas_report_week_27_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG freight market saw a rebound in rates this week with a modest flurry of activity in the USG towards the end of the week. On the BLPG1 Ras Tanura-Chiba route, rates settled end of the week at $262.50, with TCE earnings closing at $264,164/day.",
+      "keywords": [
+        "lpg",
+        "gas",
+        "route",
+        "day.",
+        "end",
+        "tce",
+        "blpg3",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 177,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}

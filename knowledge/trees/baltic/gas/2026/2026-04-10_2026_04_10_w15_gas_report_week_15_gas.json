@@ -1,0 +1,90 @@
+{
+  "node_id": "baltic_gas_2026-04-10_2026_04_10_w15_gas_report_week_15_gas__root",
+  "doc_id": "baltic_gas_2026-04-10_2026_04_10_w15_gas_report_week_15_gas",
+  "parent_id": null,
+  "title": "Gas report - Week 15",
+  "section_path": [
+    "Gas report - Week 15"
+  ],
+  "section_path_text": "Gas report - Week 15",
+  "level": 0,
+  "ordinal": 0,
+  "summary": "LNG\nThe LNG spot market remained relatively stable this week, with limited fresh enquiry across both basins balanced by a similarly tight vessel list. This equilibrium kept rates largely stable, with only minor movements recorded. On the BLNG1 Australia-Japan route, 174k cbm vessels eased $4,800 week-on-week to settle at $74,400/day, reflecting slightly softer Pacific sentiment.",
+  "keywords": [
+    "lng",
+    "lpg",
+    "australia",
+    "atlantic",
+    "pacific",
+    "europe",
+    "us_gulf",
+    "japan",
+    "gas",
+    "route",
+    "day.",
+    "day"
+  ],
+  "page_start": null,
+  "page_end": null,
+  "token_count": 369,
+  "source_path": "reports/baltic/gas/2026/2026-04-10_W15_gas-report-week-15_gas.html",
+  "source_url": null,
+  "children": [
+    {
+      "node_id": "baltic_gas_2026-04-10_2026_04_10_w15_gas_report_week_15_gas__s01_lng",
+      "doc_id": "baltic_gas_2026-04-10_2026_04_10_w15_gas_report_week_15_gas",
+      "parent_id": "baltic_gas_2026-04-10_2026_04_10_w15_gas_report_week_15_gas__root",
+      "title": "LNG",
+      "section_path": [
+        "LNG"
+      ],
+      "section_path_text": "LNG",
+      "level": 1,
+      "ordinal": 1,
+      "summary": "The LNG spot market remained relatively stable this week, with limited fresh enquiry across both basins balanced by a similarly tight vessel list. This equilibrium kept rates largely stable, with only minor movements recorded.",
+      "keywords": [
+        "lng",
+        "australia",
+        "pacific",
+        "europe",
+        "us_gulf",
+        "japan",
+        "gas",
+        "day"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 197,
+      "section_type": null,
+      "children": []
+    },
+    {
+      "node_id": "baltic_gas_2026-04-10_2026_04_10_w15_gas_report_week_15_gas__s02_lpg",
+      "doc_id": "baltic_gas_2026-04-10_2026_04_10_w15_gas_report_week_15_gas",
+      "parent_id": "baltic_gas_2026-04-10_2026_04_10_w15_gas_report_week_15_gas__root",
+      "title": "LPG",
+      "section_path": [
+        "LPG"
+      ],
+      "section_path_text": "LPG",
+      "level": 1,
+      "ordinal": 2,
+      "summary": "The LPG market strengthened this week, with sentiment in the US Gulf remaining very firm amid limited vessel availability and continued chartering interest. Tight conditions in the Atlantic basin drove rates higher across the key routes.",
+      "keywords": [
+        "lpg",
+        "atlantic",
+        "us_gulf",
+        "gas",
+        "route",
+        "tce",
+        "day.",
+        "earnings"
+      ],
+      "page_start": null,
+      "page_end": null,
+      "token_count": 166,
+      "section_type": null,
+      "children": []
+    }
+  ]
+}
