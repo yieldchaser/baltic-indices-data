@@ -44,6 +44,45 @@ class ExtractionVerifier:
 
     VALID_CATEGORIES = {"snp", "demolition", "rates", "fixtures", "fleet_orderbook", "valuations", "generic"}
 
+    TEMPLATE_SCHEMAS: Dict[str, Dict[str, Any]] = {
+        "allied_snp": {
+            "min_cols": 5,
+            "expected_cols": 6,
+            "required_keys": ["vessel", "dwt"],
+            "min_rows": 1,
+        },
+        "allied_demolition": {
+            "min_cols": 4,
+            "expected_cols": 5,
+            "required_keys": ["vessel", "ldt"],
+            "min_rows": 1,
+        },
+        "ssy_rates": {
+            "min_cols": 3,
+            "expected_cols": 4,
+            "required_keys": ["route"],
+            "min_rows": 1,
+        },
+        "snp": {
+            "min_cols": 4,
+            "expected_cols": None,
+            "required_keys": ["vessel"],
+            "min_rows": 1,
+        },
+        "demolition": {
+            "min_cols": 4,
+            "expected_cols": None,
+            "required_keys": [],
+            "min_rows": 1,
+        },
+        "rates": {
+            "min_cols": 2,
+            "expected_cols": None,
+            "required_keys": [],
+            "min_rows": 1,
+        },
+    }
+
     def __init__(self, audit_log_path: Optional[Path] = None):
         self.audit_log_path = audit_log_path
         self.stats: Dict[str, Dict[str, int]] = {}
@@ -54,17 +93,17 @@ class ExtractionVerifier:
         expected_rows: Optional[int] = None,
         expected_cols: Optional[int] = None
     ) -> VerificationResult:
-        source_file = table_data.get("source_file", "unknown")
+        source_file = str(table_data.get("source_file", "unknown")).replace("\\", "/")
         page_num = table_data.get("page_number", 1)
         table_idx = table_data.get("table_index", 0)
-        broker = table_data.get("broker", "unknown")
-        category = table_data.get("table_category", "generic")
+        broker = str(table_data.get("broker", "unknown")).lower()
+        category = str(table_data.get("table_category", "generic")).lower()
         headers = table_data.get("headers", [])
         rows = table_data.get("rows", [])
 
         issues: List[VerificationIssue] = []
 
-        # 1. Structural count checks
+        # 1. Structural count and schema checks
         if not rows:
             issues.append(VerificationIssue("ERROR", "empty_table", "Table contains 0 extracted data rows"))
 
@@ -72,6 +111,20 @@ class ExtractionVerifier:
             issues.append(VerificationIssue("ERROR", "missing_headers", "Table contains no headers"))
 
         col_count = len(headers)
+
+        # Template-level expected column checks (fixes B6)
+        template_key = f"{broker}_{category}"
+        schema = self.TEMPLATE_SCHEMAS.get(template_key) or self.TEMPLATE_SCHEMAS.get(category)
+        if schema:
+            min_cols = schema.get("min_cols", 1)
+            if col_count < min_cols:
+                issues.append(VerificationIssue(
+                    "ERROR", "collapsed_table",
+                    f"Table has {col_count} columns, but schema for '{category}' requires at least {min_cols} columns (collapsed table)"
+                ))
+            if expected_cols is None and schema.get("expected_cols") is not None:
+                expected_cols = schema["expected_cols"]
+
         if expected_cols is not None and abs(col_count - expected_cols) > 0:
             issues.append(VerificationIssue("ERROR", "col_count_mismatch", f"Expected {expected_cols} columns, got {col_count}"))
 

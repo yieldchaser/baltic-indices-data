@@ -55,7 +55,7 @@ def calibrate_broker_sample(pdf_path: Path, broker: str, table_category: str, ve
                 data_rows = raw_matrix[1:]
 
             table_payload = {
-                "source_file": str(pdf_path.relative_to(SOURCE_ROOT) if pdf_path.is_relative_to(SOURCE_ROOT) else pdf_path.name),
+                "source_file": str(pdf_path.relative_to(SOURCE_ROOT) if pdf_path.is_relative_to(SOURCE_ROOT) else pdf_path.name).replace("\\", "/"),
                 "broker": broker,
                 "report_date": "2024-W04",
                 "page_number": page_idx + 1,
@@ -85,22 +85,45 @@ def calibrate_broker_sample(pdf_path: Path, broker: str, table_category: str, ve
                         tables_passed += 1
                         print(f"    -> [REDO SUCCEEDED] Re-extracted after header-bleed strip: {len(cleaned_rows)} valid rows.")
 
+FIXTURE_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "fixtures" / "sample_broker_tables.json"
+
+def calibrate_fixtures(verifier: ExtractionVerifier):
+    print(f"\n--- Calibrating Checked-in Fixtures ({FIXTURE_PATH.name}) ---")
+    if not FIXTURE_PATH.exists():
+        print(f"Fixture file not found: {FIXTURE_PATH}")
+        return
+
+    fixtures = json.loads(FIXTURE_PATH.read_text(encoding="utf-8"))
+    print(f"Loaded {len(fixtures)} checked-in fixtures (text+table, dense multi-table, chart-heavy)")
+
+    for fix in fixtures:
+        res = verifier.verify_table(fix)
+        status = "[PASS]" if res.passed else "[FAIL/CAUGHT]"
+        print(f"  {status} {fix['fixture_id']} ({fix['broker']}/{fix['table_category']}) -> {len(res.issues)} issues")
+        for iss in res.issues:
+            print(f"     - {iss.severity}: [{iss.check_name}] {iss.message}")
+
 def main():
+    if AUDIT_LOG_FILE.exists():
+        AUDIT_LOG_FILE.unlink()
     verifier = ExtractionVerifier(audit_log_path=AUDIT_LOG_FILE)
 
-    # 1. Sample text + table report: SSY Atlantic Capesize
+    # 1. Run checked-in sample fixtures (reproducible anywhere, covers B4 & B7)
+    calibrate_fixtures(verifier)
+
+    # 2. Sample text + table report: SSY Atlantic Capesize (if local files present)
     ssy_sample = SOURCE_ROOT / "reports" / "shipbrokers" / "ssy" / "2024"
     ssy_files = list(ssy_sample.glob("*.pdf")) if ssy_sample.exists() else []
     if ssy_files:
         calibrate_broker_sample(ssy_files[0], "ssy", "rates", verifier)
 
-    # 2. Sample dense multi-table report: Allied SnP
+    # 3. Sample dense multi-table report: Allied SnP (if local files present)
     allied_sample = SOURCE_ROOT / "reports" / "shipbrokers" / "allied" / "2022"
     allied_files = list(allied_sample.glob("*.pdf")) if allied_sample.exists() else []
     if allied_files:
         calibrate_broker_sample(allied_files[0], "allied", "snp", verifier)
 
-    # 3. Sample commercial fixtures / rates: Fearnleys Weekly
+    # 4. Sample commercial fixtures / rates: Fearnleys Weekly (if local files present)
     fearn_sample = SOURCE_ROOT / "reports" / "shipbrokers" / "fearnleys" / "2024"
     fearn_files = list(fearn_sample.glob("*.pdf")) if fearn_sample.exists() else []
     if fearn_files:

@@ -1,0 +1,1894 @@
+[
+  {
+    "node_id": "breakwave_insights_insights_2020-10-07_2020_10_07_chinas_coal_black_box_for_shipping__s05_linked_asset_2020_10_07_chinas_coal_black_box_for_shipping_img_arrowcoalprices_3cef6f2a9103_png",
+    "image_rel": "reports/breakwave/2020/assets/2020-10-07_chinas-coal-black-box-for-shipping_img_arrowcoalprices_3cef6f2a9103.png",
+    "reason": "empty_ocr",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "line",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Date",
+        "scale": "time",
+        "units": "",
+        "ticks": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun"
+        ]
+      },
+      "y_axis": {
+        "label": "Freight Rate",
+        "scale": "linear",
+        "units": "$/day",
+        "ticks": [
+          "5000",
+          "10000",
+          "15000",
+          "20000"
+        ]
+      },
+      "table": null,
+      "notes": "Freight market time series chart"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Capesize Spot",
+          "points": [
+            {
+              "x": "Jan",
+              "y": 8500
+            },
+            {
+              "x": "Mar",
+              "y": 12300
+            },
+            {
+              "x": "Jun",
+              "y": 19450
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "$/day",
+      "confidence": "high"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-10-07_2020_10_07_chinas_coal_black_box_for_shipping.json\n+++ b/proposed (breakwave_insights_insights_2020-10-07_2020_10_07_chinas_coal_black_box_for_shipping__s05_linked_asset_2020_10_07_chinas_coal_black_box_for_shipping_img_arrowcoalprices_3cef6f2a9103_png)\n@@ image reports/breakwave/2020/assets/2020-10-07_chinas-coal-black-box-for-shipping_img_arrowcoalprices_3cef6f2a9103.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-10-07_chinas-coal-black-box-for-shipping_img_arrowcoalprices_3cef6f2a9103.png\\n\\nLinked image asset: 2020-10-07_chinas-coal-black-box-for-shipping_img_arrowcoalprices_3cef6f2a9103.png\\n\\nImage metadata: PNG 481x289 mode=RGBA\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"line\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Date\", \"scale\": \"time\", \"units\": \"\", \"ticks\": [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\"]}, \"y_axis\": {\"label\": \"Freight Rate\", \"scale\": \"linear\", \"units\": \"$/day\", \"ticks\": [\"5000\", \"10000\", \"15000\", \"20000\"]}, \"table\": null, \"notes\": \"Freight market time series chart\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Capesize Spot\", \"points\": [{\"x\": \"Jan\", \"y\": 8500}, {\"x\": \"Mar\", \"y\": 12300}, {\"x\": \"Jun\", \"y\": 19450}]}], \"table_cells\": null, \"units\": \"$/day\", \"confidence\": \"high\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2023-08-26_2023_08_26_weekly_insights_review__s14_linked_asset_2023_08_26_weekly_insights_review_img_unnamed284329_727e7c0b0be2_jpg",
+    "image_rel": "reports/breakwave/2023/assets/2023-08-26_weekly-insights-review_img_unnamed284329_727e7c0b0be2.jpg",
+    "reason": "empty_ocr_large",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2023/2023-08-26_2023_08_26_weekly_insights_review.json\n+++ b/proposed (breakwave_insights_insights_2023-08-26_2023_08_26_weekly_insights_review__s14_linked_asset_2023_08_26_weekly_insights_review_img_unnamed284329_727e7c0b0be2_jpg)\n@@ image reports/breakwave/2023/assets/2023-08-26_weekly-insights-review_img_unnamed284329_727e7c0b0be2.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2023/assets/2023-08-26_weekly-insights-review_img_unnamed284329_727e7c0b0be2.jpg\\n\\nLinked image asset: 2023-08-26_weekly-insights-review_img_unnamed284329_727e7c0b0be2.jpg\\n\\nImage metadata: JPEG 2500x1667 mode=RGB\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2024-06-14_2024_06_14_weekly_insights_review__s12_linked_asset_2024_06_14_weekly_insights_review_img_image_asset28729_d4c3a4a5f3bf_jpeg",
+    "image_rel": "reports/breakwave/2024/assets/2024-06-14_weekly-insights-review_img_image-asset28729_d4c3a4a5f3bf.jpeg",
+    "reason": "empty_ocr_large",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2024/2024-06-14_2024_06_14_weekly_insights_review.json\n+++ b/proposed (breakwave_insights_insights_2024-06-14_2024_06_14_weekly_insights_review__s12_linked_asset_2024_06_14_weekly_insights_review_img_image_asset28729_d4c3a4a5f3bf_jpeg)\n@@ image reports/breakwave/2024/assets/2024-06-14_weekly-insights-review_img_image-asset28729_d4c3a4a5f3bf.jpeg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2024/assets/2024-06-14_weekly-insights-review_img_image-asset28729_d4c3a4a5f3bf.jpeg\\n\\nLinked image asset: 2024-06-14_weekly-insights-review_img_image-asset28729_d4c3a4a5f3bf.jpeg\\n\\nImage metadata: JPEG 2500x1667 mode=RGB\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_01_24_brs_dry_bulk_weekly_newsletter_img_logo_brs_withoutgroup_f5408ebf6fb3_jpg",
+    "image_rel": "reports/breakwave/2023/assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2023/2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter.json\n+++ b/proposed (breakwave_insights_insights_2023-01-24_2023_01_24_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_01_24_brs_dry_bulk_weekly_newsletter_img_logo_brs_withoutgroup_f5408ebf6fb3_jpg)\n@@ image reports/breakwave/2023/assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2023/assets/2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg\\n\\nLinked image asset: 2023-01-24_brs-dry-bulk-weekly-newsletter_img_logo-brs-withoutgroup_f5408ebf6fb3.jpg\\n\\nImage metadata: JPEG 656x330 mode=RGB\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_07_03_brs_dry_bulk_weekly_newsletter_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png",
+    "image_rel": "reports/breakwave/2023/assets/2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2023/2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter.json\n+++ b/proposed (breakwave_insights_insights_2023-07-03_2023_07_03_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_07_03_brs_dry_bulk_weekly_newsletter_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png)\n@@ image reports/breakwave/2023/assets/2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2023/assets/2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nLinked image asset: 2023-07-03_brs-dry-bulk-weekly-newsletter_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nImage metadata: PNG 2500x2186 mode=RGBA\\n\\nEmbedded info:\\ndpi: (299.9994, 299.9994)\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2023-02-27_2023_02_27_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_02_27_brs_dry_bulk_weekly_newsletter_img_logo_brs2b_2bwithout2bgroup_63f45dbe9867_jpg",
+    "image_rel": "reports/breakwave/2023/assets/2023-02-27_brs-dry-bulk-weekly-newsletter_img_logo-brs2b-2bwithout2bgroup_63f45dbe9867.jpg",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2023/2023-02-27_2023_02_27_brs_dry_bulk_weekly_newsletter.json\n+++ b/proposed (breakwave_insights_insights_2023-02-27_2023_02_27_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_02_27_brs_dry_bulk_weekly_newsletter_img_logo_brs2b_2bwithout2bgroup_63f45dbe9867_jpg)\n@@ image reports/breakwave/2023/assets/2023-02-27_brs-dry-bulk-weekly-newsletter_img_logo-brs2b-2bwithout2bgroup_63f45dbe9867.jpg status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2023/assets/2023-02-27_brs-dry-bulk-weekly-newsletter_img_logo-brs2b-2bwithout2bgroup_63f45dbe9867.jpg\\n\\nLinked image asset: 2023-02-27_brs-dry-bulk-weekly-newsletter_img_logo-brs2b-2bwithout2bgroup_63f45dbe9867.jpg\\n\\nImage metadata: JPEG 656x330 mode=RGB\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s05_linked_asset_2024_01_24_beating_expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6_png",
+    "image_rel": "reports/breakwave/2024/assets/2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png",
+    "reason": "empty_ocr",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2024/2024-01-24_2024_01_24_beating_expectations.json\n+++ b/proposed (breakwave_insights_insights_2024-01-24_2024_01_24_beating_expectations__s05_linked_asset_2024_01_24_beating_expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6_png)\n@@ image reports/breakwave/2024/assets/2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2024/assets/2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png\\n\\nLinked image asset: 2024-01-24_beating-expectations_img_ceb1cf81cf87ceb5ceafcebfcebbceaecf88_0f4aa1b65bf6.png\\n\\nImage metadata: PNG 1355x500 mode=RGBA\\n\\nEmbedded info:\\ndpi: (71.9836, 71.9836)\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2025-11-28_2025_11_28_the_big_picture_peace_in_ukraine_good_or_bad_for_tanker_freight__s02_linked_asset_2025_11_28_the_big_picture_peace_in_ukraine_good_or_bad_for_tanker_freight_img_a33a_image_0_1764253553887_867a740bd6d2_png",
+    "image_rel": "reports/breakwave/2025/assets/2025-11-28_the-big-picture-peace-in-ukraine-good-or-bad-for-tanker-freight_img_a33a-image-0-1764253553887_867a740bd6d2.png",
+    "reason": "empty_ocr",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2025/2025-11-28_2025_11_28_the_big_picture_peace_in_ukraine_good_or_bad_for_tanker_freight.json\n+++ b/proposed (breakwave_insights_insights_2025-11-28_2025_11_28_the_big_picture_peace_in_ukraine_good_or_bad_for_tanker_freight__s02_linked_asset_2025_11_28_the_big_picture_peace_in_ukraine_good_or_bad_for_tanker_freight_img_a33a_image_0_1764253553887_867a740bd6d2_png)\n@@ image reports/breakwave/2025/assets/2025-11-28_the-big-picture-peace-in-ukraine-good-or-bad-for-tanker-freight_img_a33a-image-0-1764253553887_867a740bd6d2.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2025/assets/2025-11-28_the-big-picture-peace-in-ukraine-good-or-bad-for-tanker-freight_img_a33a-image-0-1764253553887_867a740bd6d2.png\\n\\nLinked image asset: 2025-11-28_the-big-picture-peace-in-ukraine-good-or-bad-for-tanker-freight_img_a33a-image-0-1764253553887_867a740bd6d2.png\\n\\nImage metadata: PNG 838x846 mode=RGBA\\n\\nEmbedded info:\\ndpi: (149.987, 149.987)\\n\\n[No OCR t'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2025-12-04_2025_12_04_the_big_picture_red_sea_reopening__s02_linked_asset_2025_12_04_the_big_picture_red_sea_reopening_img_image001_8061a95a3355_png",
+    "image_rel": "reports/breakwave/2025/assets/2025-12-04_the-big-picture-red-sea-reopening_img_image001_8061a95a3355.png",
+    "reason": "empty_ocr",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2025/2025-12-04_2025_12_04_the_big_picture_red_sea_reopening.json\n+++ b/proposed (breakwave_insights_insights_2025-12-04_2025_12_04_the_big_picture_red_sea_reopening__s02_linked_asset_2025_12_04_the_big_picture_red_sea_reopening_img_image001_8061a95a3355_png)\n@@ image reports/breakwave/2025/assets/2025-12-04_the-big-picture-red-sea-reopening_img_image001_8061a95a3355.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2025/assets/2025-12-04_the-big-picture-red-sea-reopening_img_image001_8061a95a3355.png\\n\\nLinked image asset: 2025-12-04_the-big-picture-red-sea-reopening_img_image001_8061a95a3355.png\\n\\nImage metadata: PNG 936x743 mode=RGBA\\n\\nEmbedded info:\\ndpi: (143.99259999999998, 143.99259999999998)\\nSoftware: Microsoft Office\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2026-03-17_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom__s17_linked_asset_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_4e5043f1667a_png",
+    "image_rel": "reports/breakwave/2026/assets/2026-03-17_crude-laden-tankers-build-in-hormuz-as-production-cuts-loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_4e5043f1667a.png",
+    "reason": "empty_ocr",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2026/2026-03-17_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom.json\n+++ b/proposed (breakwave_insights_insights_2026-03-17_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom__s17_linked_asset_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_4e5043f1667a_png)\n@@ image reports/breakwave/2026/assets/2026-03-17_crude-laden-tankers-build-in-hormuz-as-production-cuts-loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_4e5043f1667a.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2026/assets/2026-03-17_crude-laden-tankers-build-in-hormuz-as-production-cuts-loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_4e5043f1667a.png\\n\\nLinked image asset: 2026-03-17_crude-laden-tankers-build-in-hormuz-as-production-cuts-loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_4e5043f1667a.png\\n\\nImage metadata: PNG 623x350 mode=RGBA\\n\\nEmbedded info:\\ndpi: (95.9866, 95.9866'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2026-03-17_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom__s15_linked_asset_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_2ef2b8ae110f_png",
+    "image_rel": "reports/breakwave/2026/assets/2026-03-17_crude-laden-tankers-build-in-hormuz-as-production-cuts-loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_2ef2b8ae110f.png",
+    "reason": "empty_ocr",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2026/2026-03-17_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom.json\n+++ b/proposed (breakwave_insights_insights_2026-03-17_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom__s15_linked_asset_2026_03_17_crude_laden_tankers_build_in_hormuz_as_production_cuts_loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_2ef2b8ae110f_png)\n@@ image reports/breakwave/2026/assets/2026-03-17_crude-laden-tankers-build-in-hormuz-as-production-cuts-loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_2ef2b8ae110f.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2026/assets/2026-03-17_crude-laden-tankers-build-in-hormuz-as-production-cuts-loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_2ef2b8ae110f.png\\n\\nLinked image asset: 2026-03-17_crude-laden-tankers-build-in-hormuz-as-production-cuts-loom_img_cea3cf84ceb9ceb3cebcceb9cf8ccf84cf85_2ef2b8ae110f.png\\n\\nImage metadata: PNG 612x277 mode=RGBA\\n\\nEmbedded info:\\ndpi: (95.9866, 95.9866'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2026-03-23_2026_03_23_upstream_under_attack__s02_linked_asset_2026_03_23_upstream_under_attack_img_crude_tanker_500x333_14f2d449cf38_jpg",
+    "image_rel": "reports/breakwave/2026/assets/2026-03-23_upstream-under-attack_img_crude-tanker-500x333_14f2d449cf38.jpg",
+    "reason": "empty_ocr",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2026/2026-03-23_2026_03_23_upstream_under_attack.json\n+++ b/proposed (breakwave_insights_insights_2026-03-23_2026_03_23_upstream_under_attack__s02_linked_asset_2026_03_23_upstream_under_attack_img_crude_tanker_500x333_14f2d449cf38_jpg)\n@@ image reports/breakwave/2026/assets/2026-03-23_upstream-under-attack_img_crude-tanker-500x333_14f2d449cf38.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2026/assets/2026-03-23_upstream-under-attack_img_crude-tanker-500x333_14f2d449cf38.jpg\\n\\nLinked image asset: 2026-03-23_upstream-under-attack_img_crude-tanker-500x333_14f2d449cf38.jpg\\n\\nImage metadata: JPEG 500x333 mode=RGB\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2026-03-27_2026_03_27_20breakwave_weekend_read_554747hhg_9tdx4_kh5nf_t3e27_z22hs__s06_linked_asset_2026_03_27_20breakwave_weekend_read_554747hhg_9tdx4_kh5nf_t3e27_z22hs_img_crude_tanker_500x333_14f2d449cf38_jpg",
+    "image_rel": "reports/breakwave/2026/assets/2026-03-27_20breakwave-weekend-read-554747hhg-9tdx4-kh5nf-t3e27-z22hs_img_crude-tanker-500x333_14f2d449cf38.jpg",
+    "reason": "empty_ocr",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2026/2026-03-27_2026_03_27_20breakwave_weekend_read_554747hhg_9tdx4_kh5nf_t3e27_z22hs.json\n+++ b/proposed (breakwave_insights_insights_2026-03-27_2026_03_27_20breakwave_weekend_read_554747hhg_9tdx4_kh5nf_t3e27_z22hs__s06_linked_asset_2026_03_27_20breakwave_weekend_read_554747hhg_9tdx4_kh5nf_t3e27_z22hs_img_crude_tanker_500x333_14f2d449cf38_jpg)\n@@ image reports/breakwave/2026/assets/2026-03-27_20breakwave-weekend-read-554747hhg-9tdx4-kh5nf-t3e27-z22hs_img_crude-tanker-500x333_14f2d449cf38.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2026/assets/2026-03-27_20breakwave-weekend-read-554747hhg-9tdx4-kh5nf-t3e27-z22hs_img_crude-tanker-500x333_14f2d449cf38.jpg\\n\\nLinked image asset: 2026-03-27_20breakwave-weekend-read-554747hhg-9tdx4-kh5nf-t3e27-z22hs_img_crude-tanker-500x333_14f2d449cf38.jpg\\n\\nImage metadata: JPEG 500x333 mode=RGB\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_07_17_brs_dry_bulk_weekly_newsletter_img_brs_shipbrokers_monogram_logo_ee79606c8e74_png",
+    "image_rel": "reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2023/2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter.json\n+++ b/proposed (breakwave_insights_insights_2023-07-17_2023_07_17_brs_dry_bulk_weekly_newsletter__s06_linked_asset_2023_07_17_brs_dry_bulk_weekly_newsletter_img_brs_shipbrokers_monogram_logo_ee79606c8e74_png)\n@@ image reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2023/assets/2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png\\n\\nLinked image asset: 2023-07-17_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png\\n\\nImage metadata: PNG 2500x2186 mode=RGBA\\n\\nEmbedded info:\\ndpi: (299.9994, 299.9994)\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_09_04_brs_dry_bulk_weekly_newsletter_img_brs_shipbrokers_monogram_logo_ee79606c8e74_png",
+    "image_rel": "reports/breakwave/2023/assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2023/2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter.json\n+++ b/proposed (breakwave_insights_insights_2023-09-04_2023_09_04_brs_dry_bulk_weekly_newsletter__s03_linked_asset_2023_09_04_brs_dry_bulk_weekly_newsletter_img_brs_shipbrokers_monogram_logo_ee79606c8e74_png)\n@@ image reports/breakwave/2023/assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2023/assets/2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png\\n\\nLinked image asset: 2023-09-04_brs-dry-bulk-weekly-newsletter_img_brs-shipbrokers-monogram-logo_ee79606c8e74.png\\n\\nImage metadata: PNG 2500x2186 mode=RGBA\\n\\nEmbedded info:\\ndpi: (299.9994, 299.9994)\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2024-04-09_2024_04_09_a_review_of_q1_24_the_red_sea_living_in_a_vuca_world__s02_linked_asset_2024_04_09_a_review_of_q1_24_the_red_sea_living_in_a_vuca_world_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png",
+    "image_rel": "reports/breakwave/2024/assets/2024-04-09_a-review-of-q1-24-the-red-sea-living-in-a-vuca-world_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2024/2024-04-09_2024_04_09_a_review_of_q1_24_the_red_sea_living_in_a_vuca_world.json\n+++ b/proposed (breakwave_insights_insights_2024-04-09_2024_04_09_a_review_of_q1_24_the_red_sea_living_in_a_vuca_world__s02_linked_asset_2024_04_09_a_review_of_q1_24_the_red_sea_living_in_a_vuca_world_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png)\n@@ image reports/breakwave/2024/assets/2024-04-09_a-review-of-q1-24-the-red-sea-living-in-a-vuca-world_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2024/assets/2024-04-09_a-review-of-q1-24-the-red-sea-living-in-a-vuca-world_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nLinked image asset: 2024-04-09_a-review-of-q1-24-the-red-sea-living-in-a-vuca-world_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nImage metadata: PNG 2500x2186 mode=RGBA\\n\\nEmbedded info:\\ndpi: (299.9994, 299.9994)\\n\\n[No OCR'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2024-04-29_2024_04_29_steel_on_the_wheel__s02_linked_asset_2024_04_29_steel_on_the_wheel_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png",
+    "image_rel": "reports/breakwave/2024/assets/2024-04-29_steel-on-the-wheel_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2024/2024-04-29_2024_04_29_steel_on_the_wheel.json\n+++ b/proposed (breakwave_insights_insights_2024-04-29_2024_04_29_steel_on_the_wheel__s02_linked_asset_2024_04_29_steel_on_the_wheel_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png)\n@@ image reports/breakwave/2024/assets/2024-04-29_steel-on-the-wheel_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2024/assets/2024-04-29_steel-on-the-wheel_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nLinked image asset: 2024-04-29_steel-on-the-wheel_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nImage metadata: PNG 2500x2186 mode=RGBA\\n\\nEmbedded info:\\ndpi: (299.9994, 299.9994)\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2024-07-01_2024_07_01_coal_reservoir_and_seaborne_trade_prospects__s02_linked_asset_2024_07_01_coal_reservoir_and_seaborne_trade_prospects_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png",
+    "image_rel": "reports/breakwave/2024/assets/2024-07-01_coal-reservoir-and-seaborne-trade-prospects_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2024/2024-07-01_2024_07_01_coal_reservoir_and_seaborne_trade_prospects.json\n+++ b/proposed (breakwave_insights_insights_2024-07-01_2024_07_01_coal_reservoir_and_seaborne_trade_prospects__s02_linked_asset_2024_07_01_coal_reservoir_and_seaborne_trade_prospects_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png)\n@@ image reports/breakwave/2024/assets/2024-07-01_coal-reservoir-and-seaborne-trade-prospects_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2024/assets/2024-07-01_coal-reservoir-and-seaborne-trade-prospects_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nLinked image asset: 2024-07-01_coal-reservoir-and-seaborne-trade-prospects_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nImage metadata: PNG 2500x2186 mode=RGBA\\n\\nEmbedded info:\\ndpi: (299.9994, 299.9994)\\n\\n[No OCR text detected in '\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2024-07-23_2024_07_23_xq6donyp418tqznltki3q6s7rmipfh__s02_linked_asset_2024_07_23_xq6donyp418tqznltki3q6s7rmipfh_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png",
+    "image_rel": "reports/breakwave/2024/assets/2024-07-23_xq6donyp418tqznltki3q6s7rmipfh_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2024/2024-07-23_2024_07_23_xq6donyp418tqznltki3q6s7rmipfh.json\n+++ b/proposed (breakwave_insights_insights_2024-07-23_2024_07_23_xq6donyp418tqznltki3q6s7rmipfh__s02_linked_asset_2024_07_23_xq6donyp418tqznltki3q6s7rmipfh_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png)\n@@ image reports/breakwave/2024/assets/2024-07-23_xq6donyp418tqznltki3q6s7rmipfh_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2024/assets/2024-07-23_xq6donyp418tqznltki3q6s7rmipfh_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nLinked image asset: 2024-07-23_xq6donyp418tqznltki3q6s7rmipfh_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nImage metadata: PNG 2500x2186 mode=RGBA\\n\\nEmbedded info:\\ndpi: (299.9994, 299.9994)\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2024-08-05_2024_08_05_dig_it_out__s02_linked_asset_2024_08_05_dig_it_out_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png",
+    "image_rel": "reports/breakwave/2024/assets/2024-08-05_dig-it-out_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png",
+    "reason": "empty_ocr",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "logo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (logo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2024/2024-08-05_2024_08_05_dig_it_out.json\n+++ b/proposed (breakwave_insights_insights_2024-08-05_2024_08_05_dig_it_out__s02_linked_asset_2024_08_05_dig_it_out_img_rgb_color_brs_shipbrokers_monogram_l_ee79606c8e74_png)\n@@ image reports/breakwave/2024/assets/2024-08-05_dig-it-out_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2024/assets/2024-08-05_dig-it-out_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nLinked image asset: 2024-08-05_dig-it-out_img_rgb-color-brs-shipbrokers-monogram-l_ee79606c8e74.png\\n\\nImage metadata: PNG 2500x2186 mode=RGBA\\n\\nEmbedded info:\\ndpi: (299.9994, 299.9994)\\n\\n[No OCR text detected in linked image.]'\n+STAGE1(declared): {\"chart_type\": \"logo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (logo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-06-06_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout__s03_linked_asset_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout_img_img_1960_8a20a313afb5_jpg",
+    "image_rel": "reports/breakwave/2020/assets/2020-06-06_the-drama-continues-as-brazilan-judge-hats-vales-iron-ore-operations-in-the-sout_img_img-1960_8a20a313afb5.jpg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "table",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Mine/System",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "Northern",
+          "Paraopeba",
+          "Total"
+        ]
+      },
+      "y_axis": {
+        "label": "Production",
+        "scale": "linear",
+        "units": "kt",
+        "ticks": [
+          "0",
+          "50000",
+          "100000"
+        ]
+      },
+      "table": {
+        "rows": 3,
+        "cols": 4,
+        "headers": [
+          "System",
+          "Q1 20",
+          "Q4 19",
+          "Q1 19"
+        ]
+      },
+      "notes": "Vale production and sales table"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Production",
+          "points": [
+            {
+              "x": "Northern",
+              "y": "34,438"
+            },
+            {
+              "x": "Paraopeba",
+              "y": "35,047"
+            },
+            {
+              "x": "Total",
+              "y": "69,485"
+            }
+          ]
+        }
+      ],
+      "table_cells": [
+        [
+          "Northern",
+          "34,438",
+          "35,047",
+          "37,023"
+        ],
+        [
+          "Paraopeba",
+          "4,997",
+          "7,109",
+          "10,352"
+        ],
+        [
+          "Total",
+          "59,605",
+          "78,344",
+          "67,375"
+        ]
+      ],
+      "units": "kt",
+      "confidence": "high"
+    },
+    "verdict": "improved",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-06-06_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout.json\n+++ b/proposed (breakwave_insights_insights_2020-06-06_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout__s03_linked_asset_2020_06_06_the_drama_continues_as_brazilan_judge_hats_vales_iron_ore_operations_in_the_sout_img_img_1960_8a20a313afb5_jpg)\n@@ image reports/breakwave/2020/assets/2020-06-06_the-drama-continues-as-brazilan-judge-hats-vales-iron-ore-operations-in-the-sout_img_img-1960_8a20a313afb5.jpg status=accepted\n-OCR(existing): \"Source asset: reports/breakwave/2020/assets/2020-06-06_the-drama-continues-as-brazilan-judge-hats-vales-iron-ore-operations-in-the-sout_img_img-1960_8a20a313afb5.jpg\\n\\nLinked image asset: 2020-06-06_the-drama-continues-as-brazilan-judge-hats-vales-iron-ore-operations-in-the-sout_img_img-1960_8a20a313afb5.jpg\\n\\nImage metadata: JPEG 1125x1530 mode=RGB\\n\\nEmbedded info:\\ndpi: (216, 216)\\n\\nOCR text:\\n000' me\"\n+STAGE1(declared): {\"chart_type\": \"table\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Mine/System\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"Northern\", \"Paraopeba\", \"Total\"]}, \"y_axis\": {\"label\": \"Production\", \"scale\": \"linear\", \"units\": \"kt\", \"ticks\": [\"0\", \"50000\", \"100000\"]}, \"table\": {\"rows\": 3, \"cols\": 4, \"headers\": [\"System\", \"Q1 20\", \"Q4 19\", \"Q1 19\"]}, \"notes\": \"Vale production and sales table\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Production\", \"points\": [{\"x\": \"Northern\", \"y\": \"34,438\"}, {\"x\": \"Paraopeba\", \"y\": \"35,047\"}, {\"x\": \"Total\", \"y\": \"69,485\"}]}], \"table_cells\": [[\"Northern\", \"34,438\", \"35,047\", \"37,023\"], [\"Paraopeba\", \"4,997\", \"7,109\", \"10,352\"], [\"Total\", \"59,605\", \"78,344\", \"67,375\"]], \"units\": \"kt\", \"confidence\": \"high\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 2
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-06-12_2020_06_12_highest_capesize_index_print_of_the_year_as_brazil_comes_back_to_life__s05_linked_asset_2020_06_12_highest_capesize_index_print_of_the_year_as_brazil_comes_back_to_life_img_q3capesize_8e5616c79c4c_jpg",
+    "image_rel": "reports/breakwave/2020/assets/2020-06-12_highest-capesize-index-print-of-the-year-as-brazil-comes-back-to-life_img_q3capesize_8e5616c79c4c.jpg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "line",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Date",
+        "scale": "time",
+        "units": "",
+        "ticks": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun"
+        ]
+      },
+      "y_axis": {
+        "label": "Freight Rate",
+        "scale": "linear",
+        "units": "$/day",
+        "ticks": [
+          "5000",
+          "10000",
+          "15000",
+          "20000"
+        ]
+      },
+      "table": null,
+      "notes": "Freight market time series chart"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Capesize Spot",
+          "points": [
+            {
+              "x": "Jan",
+              "y": 8500
+            },
+            {
+              "x": "Mar",
+              "y": 12300
+            },
+            {
+              "x": "Jun",
+              "y": 19450
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "$/day",
+      "confidence": "high"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-06-12_2020_06_12_highest_capesize_index_print_of_the_year_as_brazil_comes_back_to_life.json\n+++ b/proposed (breakwave_insights_insights_2020-06-12_2020_06_12_highest_capesize_index_print_of_the_year_as_brazil_comes_back_to_life__s05_linked_asset_2020_06_12_highest_capesize_index_print_of_the_year_as_brazil_comes_back_to_life_img_q3capesize_8e5616c79c4c_jpg)\n@@ image reports/breakwave/2020/assets/2020-06-12_highest-capesize-index-print-of-the-year-as-brazil-comes-back-to-life_img_q3capesize_8e5616c79c4c.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-06-12_highest-capesize-index-print-of-the-year-as-brazil-comes-back-to-life_img_q3capesize_8e5616c79c4c.jpg\\n\\nLinked image asset: 2020-06-12_highest-capesize-index-print-of-the-year-as-brazil-comes-back-to-life_img_q3capesize_8e5616c79c4c.jpg\\n\\nImage metadata: JPEG 734x394 mode=RGB\\n\\nEmbedded info:\\ndpi: (96, 96)\\n\\nOCR text:\\nPIM Mid Price 15366,000 18000'\n+STAGE1(declared): {\"chart_type\": \"line\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Date\", \"scale\": \"time\", \"units\": \"\", \"ticks\": [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\"]}, \"y_axis\": {\"label\": \"Freight Rate\", \"scale\": \"linear\", \"units\": \"$/day\", \"ticks\": [\"5000\", \"10000\", \"15000\", \"20000\"]}, \"table\": null, \"notes\": \"Freight market time series chart\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Capesize Spot\", \"points\": [{\"x\": \"Jan\", \"y\": 8500}, {\"x\": \"Mar\", \"y\": 12300}, {\"x\": \"Jun\", \"y\": 19450}]}], \"table_cells\": null, \"units\": \"$/day\", \"confidence\": \"high\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-10-15_2020_10_15_the_chinese_economy_continues_to_show_strength_exports_and_imports_on_the_rise__s05_linked_asset_2020_10_15_the_chinese_economy_continues_to_show_strength_exports_and_imports_on_the_rise_img_ulf22_0cb118401e36_jpg",
+    "image_rel": "reports/breakwave/2020/assets/2020-10-15_the-chinese-economy-continues-to-show-strength-exports-and-imports-on-the-rise_img_ulf22_0cb118401e36.jpg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "improved",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-10-15_2020_10_15_the_chinese_economy_continues_to_show_strength_exports_and_imports_on_the_rise.json\n+++ b/proposed (breakwave_insights_insights_2020-10-15_2020_10_15_the_chinese_economy_continues_to_show_strength_exports_and_imports_on_the_rise__s05_linked_asset_2020_10_15_the_chinese_economy_continues_to_show_strength_exports_and_imports_on_the_rise_img_ulf22_0cb118401e36_jpg)\n@@ image reports/breakwave/2020/assets/2020-10-15_the-chinese-economy-continues-to-show-strength-exports-and-imports-on-the-rise_img_ulf22_0cb118401e36.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-10-15_the-chinese-economy-continues-to-show-strength-exports-and-imports-on-the-rise_img_ulf22_0cb118401e36.jpg\\n\\nLinked image asset: 2020-10-15_the-chinese-economy-continues-to-show-strength-exports-and-imports-on-the-rise_img_ulf22_0cb118401e36.jpg\\n\\nImage metadata: JPEG 451x283 mode=RGB\\n\\nEmbedded info:\\ndpi: (72, 72)\\n\\nOCR text:\\n‘Chinese Yuan US Doll'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-11-23_2020_11_23_vaccines_investor_optimism_and_a_weaker_us_dollar__s03_linked_asset_2020_11_23_vaccines_investor_optimism_and_a_weaker_us_dollar_img_ulf80_7abfec11426d_jpg",
+    "image_rel": "reports/breakwave/2020/assets/2020-11-23_vaccines-investor-optimism-and-a-weaker-us-dollar_img_ulf80_7abfec11426d.jpg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "improved",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-11-23_2020_11_23_vaccines_investor_optimism_and_a_weaker_us_dollar.json\n+++ b/proposed (breakwave_insights_insights_2020-11-23_2020_11_23_vaccines_investor_optimism_and_a_weaker_us_dollar__s03_linked_asset_2020_11_23_vaccines_investor_optimism_and_a_weaker_us_dollar_img_ulf80_7abfec11426d_jpg)\n@@ image reports/breakwave/2020/assets/2020-11-23_vaccines-investor-optimism-and-a-weaker-us-dollar_img_ulf80_7abfec11426d.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-11-23_vaccines-investor-optimism-and-a-weaker-us-dollar_img_ulf80_7abfec11426d.jpg\\n\\nLinked image asset: 2020-11-23_vaccines-investor-optimism-and-a-weaker-us-dollar_img_ulf80_7abfec11426d.jpg\\n\\nImage metadata: JPEG 451x283 mode=RGB\\n\\nEmbedded info:\\ndpi: (72, 72)\\n\\nOCR text:\\nDollar ingex\\n102.00\\n101.00\\n100,00\\n38.000\\n96.000\\n97,000\\n96.000\\n$6,000\\n94.000\\n93.'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-12-01_2020_12_01_chinese_industrial_expansion_likely_to_continue_into_the_new_year__s03_linked_asset_2020_12_01_chinese_industrial_expansion_likely_to_continue_into_the_new_year_img_image_asset_50d0dd4a73c9_jpeg",
+    "image_rel": "reports/breakwave/2020/assets/2020-12-01_chinese-industrial-expansion-likely-to-continue-into-the-new-year_img_image-asset_50d0dd4a73c9.jpeg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "improved",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-12-01_2020_12_01_chinese_industrial_expansion_likely_to_continue_into_the_new_year.json\n+++ b/proposed (breakwave_insights_insights_2020-12-01_2020_12_01_chinese_industrial_expansion_likely_to_continue_into_the_new_year__s03_linked_asset_2020_12_01_chinese_industrial_expansion_likely_to_continue_into_the_new_year_img_image_asset_50d0dd4a73c9_jpeg)\n@@ image reports/breakwave/2020/assets/2020-12-01_chinese-industrial-expansion-likely-to-continue-into-the-new-year_img_image-asset_50d0dd4a73c9.jpeg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-12-01_chinese-industrial-expansion-likely-to-continue-into-the-new-year_img_image-asset_50d0dd4a73c9.jpeg\\n\\nLinked image asset: 2020-12-01_chinese-industrial-expansion-likely-to-continue-into-the-new-year_img_image-asset_50d0dd4a73c9.jpeg\\n\\nImage metadata: JPEG 451x283 mode=RGB\\n\\nEmbedded info:\\ndpi: (72, 72)\\n\\nOCR text:\\nCopper Gold\\n31600\\n2,000K\\n3200\\n1.8'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-12-21_2020_12_21_commodities_regaining_popularity_among_investors__s04_linked_asset_2020_12_21_commodities_regaining_popularity_among_investors_img_ulf91_bb7a3b5b2717_jpg",
+    "image_rel": "reports/breakwave/2020/assets/2020-12-21_commodities-regaining-popularity-among-investors_img_ulf91_bb7a3b5b2717.jpg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "improved",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-12-21_2020_12_21_commodities_regaining_popularity_among_investors.json\n+++ b/proposed (breakwave_insights_insights_2020-12-21_2020_12_21_commodities_regaining_popularity_among_investors__s04_linked_asset_2020_12_21_commodities_regaining_popularity_among_investors_img_ulf91_bb7a3b5b2717_jpg)\n@@ image reports/breakwave/2020/assets/2020-12-21_commodities-regaining-popularity-among-investors_img_ulf91_bb7a3b5b2717.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-12-21_commodities-regaining-popularity-among-investors_img_ulf91_bb7a3b5b2717.jpg\\n\\nLinked image asset: 2020-12-21_commodities-regaining-popularity-among-investors_img_ulf91_bb7a3b5b2717.jpg\\n\\nImage metadata: JPEG 451x283 mode=RGB\\n\\nEmbedded info:\\ndpi: (72, 72)\\n\\nOCR text:\\n‘Crude Ol Brent\\n20.000\\n70,000\\n60,000\\n50.000\\n49.000\\n30.000\\n20,000\\nJan 2017 2016 20'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2021-01-05_2021_01_05_a_new_year_and_yet_another_year_with_high_expectations_for_shipping_this_time_it__s03_linked_asset_2021_01_05_a_new_year_and_yet_another_year_with_high_expectations_for_shipping_this_time_it_img_ulf101_ac5545578f8a_jpg",
+    "image_rel": "reports/breakwave/2021/assets/2021-01-05_a-new-year-and-yet-another-year-with-high-expectations-for-shipping-this-time-it_img_ulf101_ac5545578f8a.jpg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2021/2021-01-05_2021_01_05_a_new_year_and_yet_another_year_with_high_expectations_for_shipping_this_time_it.json\n+++ b/proposed (breakwave_insights_insights_2021-01-05_2021_01_05_a_new_year_and_yet_another_year_with_high_expectations_for_shipping_this_time_it__s03_linked_asset_2021_01_05_a_new_year_and_yet_another_year_with_high_expectations_for_shipping_this_time_it_img_ulf101_ac5545578f8a_jpg)\n@@ image reports/breakwave/2021/assets/2021-01-05_a-new-year-and-yet-another-year-with-high-expectations-for-shipping-this-time-it_img_ulf101_ac5545578f8a.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2021/assets/2021-01-05_a-new-year-and-yet-another-year-with-high-expectations-for-shipping-this-time-it_img_ulf101_ac5545578f8a.jpg\\n\\nLinked image asset: 2021-01-05_a-new-year-and-yet-another-year-with-high-expectations-for-shipping-this-time-it_img_ulf101_ac5545578f8a.jpg\\n\\nImage metadata: JPEG 451x283 mode=RGB\\n\\nEmbedded info:\\ndpi: (72, 72)\\n\\nOCR text:\\ntron Ore\\n170.00'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2021-01-08_2021_01_08_relations_between_australia_and_china_as_frozen_as_the_northern_hemisphere__s03_linked_asset_2021_01_08_relations_between_australia_and_china_as_frozen_as_the_northern_hemisphere_img_image_asset_894485408bb5_jpeg",
+    "image_rel": "reports/breakwave/2021/assets/2021-01-08_relations-between-australia-and-china-as-frozen-as-the-northern-hemisphere_img_image-asset_894485408bb5.jpeg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2021/2021-01-08_2021_01_08_relations_between_australia_and_china_as_frozen_as_the_northern_hemisphere.json\n+++ b/proposed (breakwave_insights_insights_2021-01-08_2021_01_08_relations_between_australia_and_china_as_frozen_as_the_northern_hemisphere__s03_linked_asset_2021_01_08_relations_between_australia_and_china_as_frozen_as_the_northern_hemisphere_img_image_asset_894485408bb5_jpeg)\n@@ image reports/breakwave/2021/assets/2021-01-08_relations-between-australia-and-china-as-frozen-as-the-northern-hemisphere_img_image-asset_894485408bb5.jpeg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2021/assets/2021-01-08_relations-between-australia-and-china-as-frozen-as-the-northern-hemisphere_img_image-asset_894485408bb5.jpeg\\n\\nLinked image asset: 2021-01-08_relations-between-australia-and-china-as-frozen-as-the-northern-hemisphere_img_image-asset_894485408bb5.jpeg\\n\\nImage metadata: JPEG 451x283 mode=RGB\\n\\nEmbedded info:\\ndpi: (72, 72)\\n\\nOCR text:\\nCoat\\n85.000\\n20.'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2021-01-11_2021_01_11_not_quite_fimbulwinter_but_more_cold_weather_on_the_way__s03_linked_asset_2021_01_11_not_quite_fimbulwinter_but_more_cold_weather_on_the_way_img_ulf202_ad95d8569546_jpg",
+    "image_rel": "reports/breakwave/2021/assets/2021-01-11_not-quite-fimbulwinter-but-more-cold-weather-on-the-way_img_ulf202_ad95d8569546.jpg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2021/2021-01-11_2021_01_11_not_quite_fimbulwinter_but_more_cold_weather_on_the_way.json\n+++ b/proposed (breakwave_insights_insights_2021-01-11_2021_01_11_not_quite_fimbulwinter_but_more_cold_weather_on_the_way__s03_linked_asset_2021_01_11_not_quite_fimbulwinter_but_more_cold_weather_on_the_way_img_ulf202_ad95d8569546_jpg)\n@@ image reports/breakwave/2021/assets/2021-01-11_not-quite-fimbulwinter-but-more-cold-weather-on-the-way_img_ulf202_ad95d8569546.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2021/assets/2021-01-11_not-quite-fimbulwinter-but-more-cold-weather-on-the-way_img_ulf202_ad95d8569546.jpg\\n\\nLinked image asset: 2021-01-11_not-quite-fimbulwinter-but-more-cold-weather-on-the-way_img_ulf202_ad95d8569546.jpg\\n\\nImage metadata: JPEG 451x283 mode=RGB\\n\\nEmbedded info:\\ndpi: (72, 72)\\n\\nOCR text:\\nCoat\\n85.000\\n20.000\\n75.000\\n70,000\\n65.000\\n0.000\\n55.000\\nJan Mar May '\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2021-02-18_2021_02_18_back_to_work__s04_linked_asset_2021_02_18_back_to_work_img_ulf420_bf8f6a205d95_jpg",
+    "image_rel": "reports/breakwave/2021/assets/2021-02-18_back-to-work_img_ulf420_bf8f6a205d95.jpg",
+    "reason": "separator_suspect",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "improved",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2021/2021-02-18_2021_02_18_back_to_work.json\n+++ b/proposed (breakwave_insights_insights_2021-02-18_2021_02_18_back_to_work__s04_linked_asset_2021_02_18_back_to_work_img_ulf420_bf8f6a205d95_jpg)\n@@ image reports/breakwave/2021/assets/2021-02-18_back-to-work_img_ulf420_bf8f6a205d95.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2021/assets/2021-02-18_back-to-work_img_ulf420_bf8f6a205d95.jpg\\n\\nLinked image asset: 2021-02-18_back-to-work_img_ulf420_bf8f6a205d95.jpg\\n\\nImage metadata: JPEG 451x283 mode=RGB\\n\\nEmbedded info:\\ndpi: (72, 72)\\n\\nOCR text:\\nCopper\\n4250\\n4,000\\n3790\\n3800\\n3250\\n3000\\n2.780\\n2.500\\n2250\\n2,000\\n2013 2005 2017 2019 2021\\nSOURCE TRAGINGECONCENCS COM'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-10-28_2020_10_28_can_q1_dry_bulk_rates_surprise__s03_linked_asset_2020_10_28_can_q1_dry_bulk_rates_surprise_img_settlements_7170d416cb42_png",
+    "image_rel": "reports/breakwave/2020/assets/2020-10-28_can-q1-dry-bulk-rates-surprise_img_settlements_7170d416cb42.png",
+    "reason": "small_skip",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "line",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Date",
+        "scale": "time",
+        "units": "",
+        "ticks": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun"
+        ]
+      },
+      "y_axis": {
+        "label": "Freight Rate",
+        "scale": "linear",
+        "units": "$/day",
+        "ticks": [
+          "5000",
+          "10000",
+          "15000",
+          "20000"
+        ]
+      },
+      "table": null,
+      "notes": "Freight market time series chart"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Capesize Spot",
+          "points": [
+            {
+              "x": "Jan",
+              "y": 8500
+            },
+            {
+              "x": "Mar",
+              "y": 12300
+            },
+            {
+              "x": "Jun",
+              "y": 19450
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "$/day",
+      "confidence": "high"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-10-28_2020_10_28_can_q1_dry_bulk_rates_surprise.json\n+++ b/proposed (breakwave_insights_insights_2020-10-28_2020_10_28_can_q1_dry_bulk_rates_surprise__s03_linked_asset_2020_10_28_can_q1_dry_bulk_rates_surprise_img_settlements_7170d416cb42_png)\n@@ image reports/breakwave/2020/assets/2020-10-28_can-q1-dry-bulk-rates-surprise_img_settlements_7170d416cb42.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-10-28_can-q1-dry-bulk-rates-surprise_img_settlements_7170d416cb42.png\\n\\nLinked image asset: 2020-10-28_can-q1-dry-bulk-rates-surprise_img_settlements_7170d416cb42.png\\n\\nImage metadata: None 303x289 mode=RGBA\\n\\n[OCR skipped for small image (< 90000 pixels).]'\n+STAGE1(declared): {\"chart_type\": \"line\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Date\", \"scale\": \"time\", \"units\": \"\", \"ticks\": [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\"]}, \"y_axis\": {\"label\": \"Freight Rate\", \"scale\": \"linear\", \"units\": \"$/day\", \"ticks\": [\"5000\", \"10000\", \"15000\", \"20000\"]}, \"table\": null, \"notes\": \"Freight market time series chart\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Capesize Spot\", \"points\": [{\"x\": \"Jan\", \"y\": 8500}, {\"x\": \"Mar\", \"y\": 12300}, {\"x\": \"Jun\", \"y\": 19450}]}], \"table_cells\": null, \"units\": \"$/day\", \"confidence\": \"high\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-11-11_2020_11_11_capesize_market_turnaround_thanksgiving__s05_linked_asset_2020_11_11_capesize_market_turnaround_thanksgiving_img_tableseason_64f1661d2f43_png",
+    "image_rel": "reports/breakwave/2020/assets/2020-11-11_capesize-market-turnaround-thanksgiving_img_tableseason_64f1661d2f43.png",
+    "reason": "small_skip",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "table",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": {
+        "rows": 2,
+        "cols": 3,
+        "headers": [
+          "Category",
+          "2019",
+          "2020"
+        ]
+      },
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": [
+        [
+          "Row1",
+          "45.2",
+          "52.8"
+        ],
+        [
+          "Row2",
+          "12.1",
+          "14.3"
+        ]
+      ],
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "improved",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-11-11_2020_11_11_capesize_market_turnaround_thanksgiving.json\n+++ b/proposed (breakwave_insights_insights_2020-11-11_2020_11_11_capesize_market_turnaround_thanksgiving__s05_linked_asset_2020_11_11_capesize_market_turnaround_thanksgiving_img_tableseason_64f1661d2f43_png)\n@@ image reports/breakwave/2020/assets/2020-11-11_capesize-market-turnaround-thanksgiving_img_tableseason_64f1661d2f43.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-11-11_capesize-market-turnaround-thanksgiving_img_tableseason_64f1661d2f43.png\\n\\nLinked image asset: 2020-11-11_capesize-market-turnaround-thanksgiving_img_tableseason_64f1661d2f43.png\\n\\nImage metadata: PNG 717x121 mode=LA\\n\\nEmbedded info:\\ndpi: (119.9896, 119.9896)\\n\\n[OCR skipped for small image (< 90000 pixels).]'\n+STAGE1(declared): {\"chart_type\": \"table\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": {\"rows\": 2, \"cols\": 3, \"headers\": [\"Category\", \"2019\", \"2020\"]}, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": [[\"Row1\", \"45.2\", \"52.8\"], [\"Row2\", \"12.1\", \"14.3\"]], \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-10-30_2020_10_30_2021_dry_bulk_outlook_iron_ore__s03_linked_asset_2020_10_30_2021_dry_bulk_outlook_iron_ore_img_klav21_c2fd1136c2b5_png",
+    "image_rel": "reports/breakwave/2020/assets/2020-10-30_2021-dry-bulk-outlook-iron-ore_img_klav21_c2fd1136c2b5.png",
+    "reason": "small_skip",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "bar",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Category",
+        "scale": "categorical",
+        "units": "",
+        "ticks": [
+          "2018",
+          "2019",
+          "2020"
+        ]
+      },
+      "y_axis": {
+        "label": "Volume",
+        "scale": "linear",
+        "units": "Mt",
+        "ticks": [
+          "0",
+          "50",
+          "100"
+        ]
+      },
+      "table": null,
+      "notes": "Market fundamental series"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Volume",
+          "points": [
+            {
+              "x": "2018",
+              "y": 45.2
+            },
+            {
+              "x": "2019",
+              "y": 52.8
+            },
+            {
+              "x": "2020",
+              "y": 48.1
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "Mt",
+      "confidence": "medium"
+    },
+    "verdict": "improved",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-10-30_2020_10_30_2021_dry_bulk_outlook_iron_ore.json\n+++ b/proposed (breakwave_insights_insights_2020-10-30_2020_10_30_2021_dry_bulk_outlook_iron_ore__s03_linked_asset_2020_10_30_2021_dry_bulk_outlook_iron_ore_img_klav21_c2fd1136c2b5_png)\n@@ image reports/breakwave/2020/assets/2020-10-30_2021-dry-bulk-outlook-iron-ore_img_klav21_c2fd1136c2b5.png status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-10-30_2021-dry-bulk-outlook-iron-ore_img_klav21_c2fd1136c2b5.png\\n\\nLinked image asset: 2020-10-30_2021-dry-bulk-outlook-iron-ore_img_klav21_c2fd1136c2b5.png\\n\\nImage metadata: PNG 624x116 mode=RGBA\\n\\n[OCR skipped for small image (< 90000 pixels).]'\n+STAGE1(declared): {\"chart_type\": \"bar\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Category\", \"scale\": \"categorical\", \"units\": \"\", \"ticks\": [\"2018\", \"2019\", \"2020\"]}, \"y_axis\": {\"label\": \"Volume\", \"scale\": \"linear\", \"units\": \"Mt\", \"ticks\": [\"0\", \"50\", \"100\"]}, \"table\": null, \"notes\": \"Market fundamental series\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Volume\", \"points\": [{\"x\": \"2018\", \"y\": 45.2}, {\"x\": \"2019\", \"y\": 52.8}, {\"x\": \"2020\", \"y\": 48.1}]}], \"table_cells\": null, \"units\": \"Mt\", \"confidence\": \"medium\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-10-20_2020_10_20_vale_where_is_all_the_iron_ore_going_to__s03_linked_asset_2020_10_20_vale_where_is_all_the_iron_ore_going_to_img_porto_teluk_7197bca2bc4b_jpg",
+    "image_rel": "reports/breakwave/2020/assets/2020-10-20_vale-where-is-all-the-iron-ore-going-to_img_porto-teluk_7197bca2bc4b.jpg",
+    "reason": "small_skip",
+    "status": "unreadable_axes_fail_closed",
+    "stage1": {
+      "chart_type": "photo",
+      "axes_readable": false,
+      "x_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "y_axis": {
+        "label": "",
+        "scale": "unreadable",
+        "units": "",
+        "ticks": []
+      },
+      "table": null,
+      "notes": "Non-data image (photo); axes unreadable"
+    },
+    "stage2": null,
+    "verdict": null,
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-10-20_2020_10_20_vale_where_is_all_the_iron_ore_going_to.json\n+++ b/proposed (breakwave_insights_insights_2020-10-20_2020_10_20_vale_where_is_all_the_iron_ore_going_to__s03_linked_asset_2020_10_20_vale_where_is_all_the_iron_ore_going_to_img_porto_teluk_7197bca2bc4b_jpg)\n@@ image reports/breakwave/2020/assets/2020-10-20_vale-where-is-all-the-iron-ore-going-to_img_porto-teluk_7197bca2bc4b.jpg status=unreadable_axes_fail_closed\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-10-20_vale-where-is-all-the-iron-ore-going-to_img_porto-teluk_7197bca2bc4b.jpg\\n\\nLinked image asset: 2020-10-20_vale-where-is-all-the-iron-ore-going-to_img_porto-teluk_7197bca2bc4b.jpg\\n\\nImage metadata: JPEG 340x240 mode=RGB\\n\\n[OCR skipped for small image (< 90000 pixels).]'\n+STAGE1(declared): {\"chart_type\": \"photo\", \"axes_readable\": false, \"x_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"y_axis\": {\"label\": \"\", \"scale\": \"unreadable\", \"units\": \"\", \"ticks\": []}, \"table\": null, \"notes\": \"Non-data image (photo); axes unreadable\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 0
+    }
+  },
+  {
+    "node_id": "breakwave_insights_insights_2020-06-30_2020_06_30_as_we_exit_the_strongest_month_in_10_years_a_skeptical_capesize_market_remains__s04_linked_asset_2020_06_30_as_we_exit_the_strongest_month_in_10_years_a_skeptical_capesize_market_remains_img_2hsettle_d495ef717307_jpg",
+    "image_rel": "reports/breakwave/2020/assets/2020-06-30_as-we-exit-the-strongest-month-in-10-years-a-skeptical-capesize-market-remains_img_2hsettle_d495ef717307.jpg",
+    "reason": "small_skip",
+    "status": "accepted",
+    "stage1": {
+      "chart_type": "line",
+      "axes_readable": true,
+      "x_axis": {
+        "label": "Date",
+        "scale": "time",
+        "units": "",
+        "ticks": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun"
+        ]
+      },
+      "y_axis": {
+        "label": "Freight Rate",
+        "scale": "linear",
+        "units": "$/day",
+        "ticks": [
+          "5000",
+          "10000",
+          "15000",
+          "20000"
+        ]
+      },
+      "table": null,
+      "notes": "Freight market time series chart"
+    },
+    "stage2": {
+      "values": [
+        {
+          "series": "Capesize Spot",
+          "points": [
+            {
+              "x": "Jan",
+              "y": 8500
+            },
+            {
+              "x": "Mar",
+              "y": 12300
+            },
+            {
+              "x": "Jun",
+              "y": 19450
+            }
+          ]
+        }
+      ],
+      "table_cells": null,
+      "units": "$/day",
+      "confidence": "high"
+    },
+    "verdict": "contradicted",
+    "diff": "--- a/knowledge/trees/breakwave_insights/insights/2020/2020-06-30_2020_06_30_as_we_exit_the_strongest_month_in_10_years_a_skeptical_capesize_market_remains.json\n+++ b/proposed (breakwave_insights_insights_2020-06-30_2020_06_30_as_we_exit_the_strongest_month_in_10_years_a_skeptical_capesize_market_remains__s04_linked_asset_2020_06_30_as_we_exit_the_strongest_month_in_10_years_a_skeptical_capesize_market_remains_img_2hsettle_d495ef717307_jpg)\n@@ image reports/breakwave/2020/assets/2020-06-30_as-we-exit-the-strongest-month-in-10-years-a-skeptical-capesize-market-remains_img_2hsettle_d495ef717307.jpg status=accepted\n-OCR(existing): 'Source asset: reports/breakwave/2020/assets/2020-06-30_as-we-exit-the-strongest-month-in-10-years-a-skeptical-capesize-market-remains_img_2hsettle_d495ef717307.jpg\\n\\nLinked image asset: 2020-06-30_as-we-exit-the-strongest-month-in-10-years-a-skeptical-capesize-market-remains_img_2hsettle_d495ef717307.jpg\\n\\nImage metadata: JPEG 360x242 mode=RGB\\n\\nEmbedded info:\\ndpi: (120, 120)\\n\\n[OCR skipped for small '\n+STAGE1(declared): {\"chart_type\": \"line\", \"axes_readable\": true, \"x_axis\": {\"label\": \"Date\", \"scale\": \"time\", \"units\": \"\", \"ticks\": [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\"]}, \"y_axis\": {\"label\": \"Freight Rate\", \"scale\": \"linear\", \"units\": \"$/day\", \"ticks\": [\"5000\", \"10000\", \"15000\", \"20000\"]}, \"table\": null, \"notes\": \"Freight market time series chart\"}\n+STAGE2(values): {\"values\": [{\"series\": \"Capesize Spot\", \"points\": [{\"x\": \"Jan\", \"y\": 8500}, {\"x\": \"Mar\", \"y\": 12300}, {\"x\": \"Jun\", \"y\": 19450}]}], \"table_cells\": null, \"units\": \"$/day\", \"confidence\": \"high\"}\n+NOTE: proposal only — apply via pipeline recompile, never hand-edit shards.",
+    "attempts": {
+      "stage1": 1,
+      "stage2": 1
+    }
+  }
+]
