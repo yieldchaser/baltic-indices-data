@@ -8,6 +8,9 @@ Every number below was measured directly against the working tree at
 mission brief, the measured figure governs.
 
 Verdicts on pushed branches go in `docs/VERIFICATION_LOG.md`, not here.
+Current decisions, lanes and the shared tool bench are in that file's **STATUS BOARD**.
+Reviewer operating state, ground truth and verification recipes are in
+`docs/REVIEWER_STATE.md` — read that first on a cold resume.
 
 ---
 
