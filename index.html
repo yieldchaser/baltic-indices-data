@@ -5252,6 +5252,323 @@
   margin-top: 2px;
 }
 
+/* =========================================================================
+   OFFSHORE & OSV TERMINAL & PORT STRESS MATRIX STYLES
+   ========================================================================= */
+.offshore-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+.offshore-title-wrap h2 {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 4px;
+}
+.offshore-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.offshore-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.offshore-kpi-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.offshore-kpi-card:hover {
+  border-color: var(--accent);
+}
+.offshore-kpi-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.offshore-kpi-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.offshore-kpi-sub {
+  font-size: 11px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--text-muted);
+}
+.offshore-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.offshore-workstation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.offshore-chart-drawer {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+}
+.offshore-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.offshore-split-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 16px;
+}
+.offshore-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.offshore-panel-header {
+  padding: 12px 16px;
+  background: #0e141c;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offshore-panel-title {
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.offshore-table-wrap {
+  overflow-x: auto;
+  max-height: 480px;
+}
+.offshore-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.offshore-table th {
+  background: #0d1117;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.offshore-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #161b22;
+  color: var(--text-normal);
+}
+.offshore-table tr:hover {
+  background: rgba(88, 166, 255, 0.05);
+}
+.offshore-reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  padding: 14px;
+  max-height: 480px;
+  overflow-y: auto;
+}
+.offshore-report-card {
+  background: #111822;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.offshore-report-card:hover {
+  border-color: #58a6ff;
+  transform: translateY(-1px);
+}
+.offshore-report-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.offshore-report-meta {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-family: 'IBM Plex Mono', monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offshore-download-btn {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(88, 166, 255, 0.12);
+  color: #58a6ff;
+  text-decoration: none;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+.offshore-download-btn:hover {
+  background: #58a6ff;
+  color: #0d1117;
+}
+
+/* Tracking Sub-Navigation Bar */
+.tracking-subnav-bar {
+  display: flex;
+  background: #0d1117;
+  border-bottom: 1px solid var(--border);
+  padding: 0 16px;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.tracking-subnav-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.tracking-subnav-btn:hover {
+  color: #fff;
+}
+.tracking-subnav-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Port Stress Matrix Styles */
+.port-stress-hud {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.port-stress-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+.port-stress-card-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.stress-badge-surge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  background: rgba(248, 81, 73, 0.15);
+  color: #f85149;
+  border: 1px solid rgba(248, 81, 73, 0.4);
+  border-radius: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+.stress-badge-collapse {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  background: rgba(227, 179, 65, 0.15);
+  color: #e3b341;
+  border: 1px solid rgba(227, 179, 65, 0.4);
+  border-radius: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+.stress-badge-normal {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  background: rgba(63, 185, 80, 0.12);
+  color: #3fb950;
+  border: 1px solid rgba(63, 185, 80, 0.3);
+  border-radius: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+}
+.port-stress-grid-wrap {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 16px;
+}
+.port-stress-table-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.port-stress-envelope-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
 </style>
 </head>
 
@@ -9794,6 +10111,7 @@
     <button class="tab-btn" data-tab="intelligence">Intelligence</button>
     <button class="tab-btn" data-tab="tracking">Tracking</button>
     <button class="tab-btn" data-tab="bunkers">Bunkers</button>
+    <button class="tab-btn" data-tab="offshore">Offshore</button>
   </div>
   </div><!-- /tabs-bar-outer -->
 
@@ -13307,6 +13625,9 @@ if (intelTabsContainer) {
             <button id="subnavDistance" class="tracking-subview-btn" onclick="setTrackingSubView('distance')">
               Distance &amp; Routing
             </button>
+            <button id="subnavStress" class="tracking-subview-btn" onclick="setTrackingSubView('stress')">
+              Port Squeeze &amp; Stress (41 Hubs)
+            </button>
           </div>
 
           <!-- Subview 1: Port Lineup -->
@@ -13414,6 +13735,84 @@ if (intelTabsContainer) {
               <button class="dist-calc-btn" onclick="plotDistanceRouteOnMap()">Plot Maritime Route Path</button>
               <div id="distResultsCard" class="dist-results-card">
                 <!-- Populated dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Subview 5: Port Stress Matrix & 5Y Arrival Envelopes -->
+          <div id="trackingSubviewStress" class="tracking-subview-content" style="display:none; flex-direction:column; gap:12px; height:100%; overflow-y:auto; padding:12px;">
+            <div class="port-stress-hud">
+              <div class="port-stress-card" data-tooltip=" " data-tt-type="port-stress-summary-hud" data-tt-title="Monitored Strategic Hubs" data-tt-val="41 Global Ports" data-tt-desc="Continuous daily arrival volume tracking across 41 primary loading and discharge hubs.">
+                <div style="font-size:11px; color:var(--text-muted); font-weight:600;">Monitored Hubs</div>
+                <div class="port-stress-card-val" id="hudStressTotal">50</div>
+                <div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Dry Bulk, Tankers, LNG, LPG</div>
+              </div>
+              <div class="port-stress-card" data-tooltip=" " data-tt-type="port-stress-summary-hud" data-tt-title="Tonnage Squeeze Alerts" data-tt-val="Active Surges" data-tt-desc="Ports where weekly vessel arrivals exceed +1.5 standard deviations above 5-year seasonal norm, triggering berthing queues and congestion demurrage.">
+                <div style="font-size:11px; color:var(--text-muted); font-weight:600;">Surge Squeeze Alerts</div>
+                <div class="port-stress-card-val" id="hudStressSurge" style="color:var(--red);">0</div>
+                <div style="font-size:10px; color:var(--red); margin-top:2px;">Z-Score &ge; +1.5&sigma; (Congestion)</div>
+              </div>
+              <div class="port-stress-card" data-tooltip=" " data-tt-type="port-stress-summary-hud" data-tt-title="Supply Outage Alerts" data-tt-val="Active Collapses" data-tt-desc="Ports where arrivals fall below -1.5 standard deviations, indicating cargo supply outage, weather shutdown, or rail derailment.">
+                <div style="font-size:11px; color:var(--text-muted); font-weight:600;">Supply Outage Alerts</div>
+                <div class="port-stress-card-val" id="hudStressCollapse" style="color:var(--yellow);">20</div>
+                <div style="font-size:10px; color:var(--yellow); margin-top:2px;">Z-Score &le; -1.5&sigma; (Outages)</div>
+              </div>
+              <div class="port-stress-card" data-tooltip=" " data-tt-type="port-stress-summary-hud" data-tt-title="Normal Operating Envelope" data-tt-val="Within Baseline" data-tt-desc="Vessel influx within normal 5-year historical operating bands.">
+                <div style="font-size:11px; color:var(--text-muted); font-weight:600;">Normal Operating Band</div>
+                <div class="port-stress-card-val" id="hudStressNormal" style="color:var(--green);">30</div>
+                <div style="font-size:10px; color:var(--green); margin-top:2px;">Within &plusmn;1.5&sigma; Baseline</div>
+              </div>
+            </div>
+
+            <!-- Toolbar -->
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; background:#0e141c; padding:8px 12px; border:1px solid var(--border); border-radius:4px;">
+              <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
+                <div style="font-size:11px; color:var(--text-muted); font-weight:600;">SECTOR:</div>
+                <button class="cp-toggle-btn active" id="btnStressSectorAll" onclick="setPortStressSector('all')">All</button>
+                <button class="cp-toggle-btn" id="btnStressSectorDry" onclick="setPortStressSector('Dry Bulk')">Dry Bulk</button>
+                <button class="cp-toggle-btn" id="btnStressSectorTank" onclick="setPortStressSector('Tankers')">Tankers</button>
+                <button class="cp-toggle-btn" id="btnStressSectorLNG" onclick="setPortStressSector('LNG')">LNG</button>
+                <button class="cp-toggle-btn" id="btnStressSectorLPG" onclick="setPortStressSector('LPG')">LPG</button>
+              </div>
+              <div style="display:flex; gap:6px; align-items:center;">
+                <input type="text" id="portStressSearchInput" class="tracking-input" placeholder="Search port, country..." oninput="onPortStressSearchInput()" style="width:180px;">
+              </div>
+            </div>
+
+            <!-- Matrix Table -->
+            <div class="tracking-table-wrap" style="max-height:280px;">
+              <table class="tracking-table">
+                <thead>
+                  <tr>
+                    <th>Port / Hub</th>
+                    <th>Class</th>
+                    <th>Weekly Influx</th>
+                    <th>5Y Baseline</th>
+                    <th>Deviation (Z)</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="portStressTableBody">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 5-Year Seasonal Envelope Chart Drawer -->
+            <div class="offshore-chart-drawer" id="portStressEnvelopeContainer" style="margin-top:4px;">
+              <div class="offshore-drawer-header">
+                <div>
+                  <div style="font-size:13px; font-weight:700; color:#fff;" id="portStressChartTitle">Singapore (Tankers) Seasonal Influx Envelope</div>
+                  <div style="font-size:11px; color:var(--text-muted);" id="portStressChartSub">5-Year Rolling Seasonal Mean &amp; Operating Envelope Band (2019–2026)</div>
+                </div>
+                <div style="display:flex; gap:6px; align-items:center;">
+                  <button class="cp-toggle-btn active" data-stress-range="all" onclick="setPortStressRange('all')">Max (8Y)</button>
+                  <button class="cp-toggle-btn" data-stress-range="3y" onclick="setPortStressRange('3y')">3Y</button>
+                  <button class="cp-toggle-btn" data-stress-range="1y" onclick="setPortStressRange('1y')">1Y</button>
+                </div>
+              </div>
+              <div class="chart-canvas-wrap" style="height:250px; position:relative; width:100%;">
+                <canvas id="portStressEnvelopeChart"></canvas>
               </div>
             </div>
           </div>
@@ -13801,7 +14200,163 @@ if (intelTabsContainer) {
         </div>
       </div>
     </div><!-- /tab-bunkers -->
+ 
+    <!-- =====================================================================
+         TAB: OFFSHORE & OSV TERMINAL (SEABROKERS INTELLIGENCE)
+         ===================================================================== -->
+    <div class="tab-panel" id="tab-offshore">
+      <!-- HERO HEADER -->
+      <div class="offshore-hero">
+        <div class="offshore-title-wrap">
+          <h2>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);">
+              <path d="M12 2v20M2 18h20M5 18l3-10h8l3 10M9 8h6M10 4h4"/>
+            </svg>
+            Offshore &amp; OSV Energy Services Terminal
+          </h2>
+          <div class="offshore-sub">Seabrokers Seabreeze Market Intelligence: North Sea &amp; Global Anchor Handling (AHTS) and Platform Supply (PSV) Dayrates, Utilization &amp; Asset Dynamics</div>
+        </div>
+        <div class="tracking-live-tag">
+          <span class="tracking-live-dot"></span>
+          97 MONTHS SEABREEZE ARCHIVE (2018–2026)
+        </div>
+      </div>
 
+      <!-- 4-CARD KPI RIBBON -->
+      <div class="offshore-kpi-grid">
+        <div class="offshore-kpi-card" data-tooltip=" " data-tt-type="offshore-kpi-card" data-tt-segment="large_ahts" onclick="setOffshoreSegment('large_ahts')">
+          <div class="offshore-kpi-label">
+            <span>Large AHTS (&gt;22,000 BHP)</span>
+            <span class="osv-badge" style="background:rgba(240,136,62,0.15); color:#f0883e; border:1px solid rgba(240,136,62,0.3); border-radius:4px; padding:1px 5px; font-size:9px;">DEEPWATER</span>
+          </div>
+          <div class="offshore-kpi-val" id="offshoreKpiRateLargeAHTS" style="color:#f0883e;">£96,015 / d</div>
+          <div class="offshore-kpi-sub" id="offshoreKpiSubLargeAHTS">YoY: <strong style="color:var(--green);">+499.2%</strong> · Util: <strong>73%</strong></div>
+        </div>
+        <div class="offshore-kpi-card" data-tooltip=" " data-tt-type="offshore-kpi-card" data-tt-segment="med_ahts" onclick="setOffshoreSegment('med_ahts')">
+          <div class="offshore-kpi-label">
+            <span>Medium AHTS (&lt;22,000 BHP)</span>
+            <span class="osv-badge" style="background:rgba(227,179,65,0.15); color:#e3b341; border:1px solid rgba(227,179,65,0.3); border-radius:4px; padding:1px 5px; font-size:9px;">MIDWATER</span>
+          </div>
+          <div class="offshore-kpi-val" id="offshoreKpiRateMedAHTS" style="color:#e3b341;">£62,332 / d</div>
+          <div class="offshore-kpi-sub" id="offshoreKpiSubMedAHTS">YoY: <strong style="color:var(--green);">+292.1%</strong> · Util: <strong>46%</strong></div>
+        </div>
+        <div class="offshore-kpi-card" data-tooltip=" " data-tt-type="offshore-kpi-card" data-tt-segment="large_psv" onclick="setOffshoreSegment('large_psv')">
+          <div class="offshore-kpi-label">
+            <span>Large PSV (&gt;900 m²)</span>
+            <span class="osv-badge" style="background:rgba(88,166,255,0.15); color:#58a6ff; border:1px solid rgba(88,166,255,0.3); border-radius:4px; padding:1px 5px; font-size:9px;">DECK &gt;900m²</span>
+          </div>
+          <div class="offshore-kpi-val" id="offshoreKpiRateLargePSV" style="color:#58a6ff;">£21,445 / d</div>
+          <div class="offshore-kpi-sub" id="offshoreKpiSubLargePSV">YoY: <strong style="color:var(--green);">+261.9%</strong> · Util: <strong>79%</strong></div>
+        </div>
+        <div class="offshore-kpi-card" data-tooltip=" " data-tt-type="offshore-kpi-card" data-tt-segment="med_psv" onclick="setOffshoreSegment('med_psv')">
+          <div class="offshore-kpi-label">
+            <span>Medium PSV (&lt;900 m²)</span>
+            <span class="osv-badge" style="background:rgba(63,185,80,0.15); color:#3fb950; border:1px solid rgba(63,185,80,0.3); border-radius:4px; padding:1px 5px; font-size:9px;">DECK &lt;900m²</span>
+          </div>
+          <div class="offshore-kpi-val" id="offshoreKpiRateMedPSV" style="color:#3fb950;">£18,000 / d</div>
+          <div class="offshore-kpi-sub" id="offshoreKpiSubMedPSV">YoY: <strong style="color:var(--green);">+280.0%</strong> · Util: <strong>82%</strong></div>
+        </div>
+      </div>
+
+      <!-- WORKSTATION CONTROLS TOOLBAR -->
+      <div class="offshore-toolbar">
+        <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-right:4px;">SEGMENT:</div>
+          <button class="cp-toggle-btn active" id="btnOffshoreSegAll" onclick="setOffshoreSegment('all')">All Segments</button>
+          <button class="cp-toggle-btn" id="btnOffshoreSegLargeAHTS" onclick="setOffshoreSegment('large_ahts')">Large AHTS</button>
+          <button class="cp-toggle-btn" id="btnOffshoreSegMedAHTS" onclick="setOffshoreSegment('med_ahts')">Med AHTS</button>
+          <button class="cp-toggle-btn" id="btnOffshoreSegLargePSV" onclick="setOffshoreSegment('large_psv')">Large PSV</button>
+          <button class="cp-toggle-btn" id="btnOffshoreSegMedPSV" onclick="setOffshoreSegment('med_psv')">Med PSV</button>
+
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:12px; margin-right:4px;">METRIC:</div>
+          <button class="cp-toggle-btn active" id="btnOffshoreMetricRates" onclick="setOffshoreMetric('rates')">Dayrates (£/day)</button>
+          <button class="cp-toggle-btn" id="btnOffshoreMetricUtil" onclick="setOffshoreMetric('util')">Fleet Utilisation (%)</button>
+          <button class="cp-toggle-btn" id="btnOffshoreMetricDual" onclick="setOffshoreMetric('dual')">Dual View</button>
+        </div>
+
+        <div style="display:flex; gap:6px; align-items:center;">
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-right:4px;">RANGE:</div>
+          <button class="cp-toggle-btn active" id="btnOffshoreRangeAll" onclick="setOffshoreRange('all')">Max (8Y)</button>
+          <button class="cp-toggle-btn" id="btnOffshoreRange3y" onclick="setOffshoreRange('3y')">3Y</button>
+          <button class="cp-toggle-btn" id="btnOffshoreRange1y" onclick="setOffshoreRange('1y')">1Y</button>
+        </div>
+      </div>
+
+      <!-- WORKSTATION BODY -->
+      <div class="offshore-workstation">
+        <!-- Main Interactive Chart Drawer -->
+        <div class="offshore-chart-drawer">
+          <div class="offshore-drawer-header">
+            <div>
+              <h3 style="margin:0 0 4px; font-size:14px; font-weight:700; color:#fff;" id="offshoreChartTitle">North Sea &amp; Global OSV Dayrates (2018–2026)</h3>
+              <div style="font-size:11px; color:var(--text-muted);" id="offshoreChartSub">Monthly Spot Benchmark Series · Seabrokers Seabreeze Archive</div>
+            </div>
+            <div style="font-size:11px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;" id="offshoreChartLegendInfo">
+              Spot Rates in GBP (£/day) · High/Low Ranges Shaded
+            </div>
+          </div>
+          <div class="chart-canvas-wrap" style="height:320px; position:relative; width:100%;">
+            <canvas id="offshoreMainChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Split Grid: Left Ledger Table, Right Intelligence Reports Feed -->
+        <div class="offshore-split-grid">
+          <!-- Left: Dayrate Ledger Table -->
+          <div class="offshore-panel">
+            <div class="offshore-panel-header">
+              <div class="offshore-panel-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>
+                </svg>
+                Monthly OSV Dayrate Ledger (<span id="offshoreLedgerCountBadge">371</span>)
+              </div>
+              <input type="text" id="offshoreSearchInput" class="tracking-input" placeholder="Filter month or vessel..." oninput="onOffshoreSearchInput()" style="width:160px;">
+            </div>
+            <div class="offshore-table-wrap">
+              <table class="offshore-table">
+                <thead>
+                  <tr>
+                    <th>Report Month</th>
+                    <th>Vessel Category</th>
+                    <th>Avg Dayrate (£)</th>
+                    <th>High / Low Range</th>
+                    <th>YoY (%)</th>
+                    <th>Util (%)</th>
+                  </tr>
+                </thead>
+                <tbody id="offshoreLedgerTableBody">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+            <div class="tracking-table-footer" style="padding:8px 12px; background:#0e141c; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
+              <span id="offshorePageInfo" style="font-size:11px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">Showing 1–50 of 371 records</span>
+              <div style="display:flex; gap:6px;">
+                <button id="btnOffshorePrev" class="tracking-page-btn" onclick="prevOffshorePage()">Prev</button>
+                <button id="btnOffshoreNext" class="tracking-page-btn" onclick="nextOffshorePage()">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Seabreeze Reports Directory -->
+          <div class="offshore-panel">
+            <div class="offshore-panel-header">
+              <div class="offshore-panel-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--yellow);">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+                </svg>
+                Seabreeze Intelligence Publications (<span id="offshoreReportsCountBadge">97</span>)
+              </div>
+              <span style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">PDF DOWNLOADS</span>
+            </div>
+            <div class="offshore-reports-grid" id="offshoreReportsGrid">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /tab-offshore -->
 
   <!-- /main -->
 
@@ -13860,6 +14415,8 @@ if (intelTabsContainer) {
       bunkerSummary: null,
       chokepointSummary: null,
       fearnleysSummary: null,
+      offshoreSummary: null,
+      portStressSummary: null,
       chokepointMetrics: [],
       tceMatrix: null,
       tce_matrix: null,
@@ -15288,6 +15845,26 @@ if (intelTabsContainer) {
             DATA.bunkerSummary = null;
           });
 
+        const offshoreSummaryPromise = fetch('data/derived/offshore_summary.json')
+          .then(res => res.ok ? res.json() : null)
+          .then(data => {
+            DATA.offshoreSummary = data;
+          })
+          .catch(err => {
+            console.warn('[offshoreSummary fetch error]', err);
+            DATA.offshoreSummary = null;
+          });
+
+        const portStressSummaryPromise = fetch('data/derived/port_stress_summary.json')
+          .then(res => res.ok ? res.json() : null)
+          .then(data => {
+            DATA.portStressSummary = data;
+          })
+          .catch(err => {
+            console.warn('[portStressSummary fetch error]', err);
+            DATA.portStressSummary = null;
+          });
+
         const allPromisesList = [
           ...indexPromises,
           bdryPromise, bwetPromise, bdryPdPromise, bwetPdPromise,
@@ -15300,7 +15877,7 @@ if (intelTabsContainer) {
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
           sgxOreForwardPromise,
-          portLineupsPromise, vesselTrajectoriesPromise, bunkerPricesPromise, bunkerSummaryPromise, fearnleysSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
+          portLineupsPromise, vesselTrajectoriesPromise, bunkerPricesPromise, bunkerSummaryPromise, fearnleysSummaryPromise, offshoreSummaryPromise, portStressSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
           ...sgxPromises
         ];
 
@@ -19620,6 +20197,7 @@ if (intelTabsContainer) {
       if (tabId === 'intelligence') renderIntelligenceTab();
       if (tabId === 'tracking') renderTrackingTab();
       if (tabId === 'bunkers') renderBunkersTab();
+      if (tabId === 'offshore') renderOffshoreTab();
 
       // Trigger requestAnimationFrame resize and redraw on all charts in active tab to prevent 0px canvas squishing
       requestAnimationFrame(() => {
@@ -35014,10 +35592,12 @@ function onTrackingSearchInput() {
 
 function setTrackingSubView(subview) {
   trackingActiveSubView = subview;
-  var views = ['lineup', 'chokepoints', 'bunkers', 'distance'];
+  var views = ['lineup', 'chokepoints', 'bunkers', 'distance', 'stress'];
   views.forEach(function(v) {
     var btn = document.getElementById('subnav' + v.charAt(0).toUpperCase() + v.slice(1));
-    var el = document.getElementById('subview' + v.charAt(0).toUpperCase() + v.slice(1));
+    var el = (v === 'stress')
+      ? document.getElementById('trackingSubviewStress')
+      : document.getElementById('subview' + v.charAt(0).toUpperCase() + v.slice(1));
     if (btn) btn.classList.toggle('active', v === subview);
     if (el) el.style.display = (v === subview) ? 'flex' : 'none';
   });
@@ -35026,6 +35606,8 @@ function setTrackingSubView(subview) {
     renderChokepointsDirectory();
   } else if (subview === 'bunkers') {
     renderBunkersSubView();
+  } else if (subview === 'stress') {
+    renderPortStressSubView();
   }
 }
 
@@ -38133,6 +38715,89 @@ function escapeHtml(str) {
           if (d.buyer) html += `<div class="rt-row"><span class="rt-label">Acquiring Counterparty</span><span class="rt-val" style="color:#fff;">${d.buyer}</span></div>`;
           if (d.comment) html += `<div class="rt-note">${d.comment}</div>`;
         }
+        else if (type === 'offshore-kpi-card') {
+          const segKey = target.getAttribute('data-tt-segment') || 'large_ahts';
+          const data = window.DATA && DATA.offshoreSummary;
+          const cat = (data && data.categories) ? data.categories[segKey] : null;
+          if (cat) {
+            const rateGbp = Math.round(cat.latest_dayrate_gbp || 0);
+            const rateUsd = Math.round(rateGbp * 1.28);
+            const yoy = cat.yoy_change_pct != null ? (cat.yoy_change_pct >= 0 ? '+' : '') + cat.yoy_change_pct.toFixed(1) + '%' : '—';
+            const yoyCls = (cat.yoy_change_pct || 0) >= 0 ? 'pos' : 'neg';
+            const mom = cat.mom_pct != null ? (cat.mom_pct >= 0 ? '+' : '') + cat.mom_pct.toFixed(1) + '%' : null;
+            const momCls = (cat.mom_pct || 0) >= 0 ? 'pos' : 'neg';
+            html = `<div class="rt-title">${cat.name || cat.label} — Spot Benchmark</div>`;
+            html += `<div class="rt-row"><span class="rt-label">Latest Dayrate</span><span class="rt-val" style="color:var(--accent);font-weight:700;">£${rateGbp.toLocaleString()} / d (~$${rateUsd.toLocaleString()})</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">YoY Momentum</span><span class="rt-val ${yoyCls}">${yoy}</span></div>`;
+            if (mom) html += `<div class="rt-row"><span class="rt-label">MoM Velocity</span><span class="rt-val ${momCls}">${mom}</span></div>`;
+            if (cat.utilization_pct != null) html += `<div class="rt-row"><span class="rt-label">Fleet Utilisation</span><span class="rt-val">${cat.utilization_pct}%</span></div>`;
+            if (cat.hi_52w) html += `<div class="rt-row"><span class="rt-label">52-Week Range</span><span class="rt-val">£${Math.round(cat.lo_52w || 0).toLocaleString()} – £${Math.round(cat.hi_52w).toLocaleString()}</span></div>`;
+            if (cat.all_time_hi) html += `<div class="rt-row"><span class="rt-label">All-Time Peak</span><span class="rt-val" style="color:#f0883e;">£${Math.round(cat.all_time_hi).toLocaleString()} / d</span></div>`;
+            html += `<div class="rt-note">Direct monthly broker assessments from Seabrokers Seabreeze intelligence archive (2018–2026). Click to isolate segment.</div>`;
+          }
+        }
+        else if (type === 'offshore-ledger-row') {
+          const date = target.getAttribute('data-tt-date') || '';
+          const cat = target.getAttribute('data-tt-cat') || 'OSV Category';
+          const rate = parseFloat(target.getAttribute('data-tt-rate')) || 0;
+          const min = parseFloat(target.getAttribute('data-tt-min')) || 0;
+          const max = parseFloat(target.getAttribute('data-tt-max')) || 0;
+          const yoy = parseFloat(target.getAttribute('data-tt-yoy'));
+          const util = parseFloat(target.getAttribute('data-tt-util'));
+
+          html = `<div class="rt-title">${cat} · ${date}</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Average Fixture Rate</span><span class="rt-val" style="color:var(--accent);font-weight:700;">£${Math.round(rate).toLocaleString()} / d</span></div>`;
+          if (rate > 0) html += `<div class="rt-row"><span class="rt-label">Est. USD Value</span><span class="rt-val">$${Math.round(rate * 1.28).toLocaleString()} / d (1.28x)</span></div>`;
+          if (min > 0 && max > 0) html += `<div class="rt-row"><span class="rt-label">Reported Spot Range</span><span class="rt-val">£${Math.round(min).toLocaleString()} – £${Math.round(max).toLocaleString()}</span></div>`;
+          if (!isNaN(yoy)) {
+            const yCls = yoy >= 0 ? 'pos' : 'neg';
+            html += `<div class="rt-row"><span class="rt-label">Year-over-Year Delta</span><span class="rt-val ${yCls}">${yoy >= 0 ? '+' : ''}${yoy.toFixed(1)}%</span></div>`;
+          }
+          if (!isNaN(util) && util > 0) {
+            html += `<div class="rt-row"><span class="rt-label">Fleet Working Utilisation</span><span class="rt-val">${Math.round(util)}%</span></div>`;
+          }
+          html += `<div class="rt-note">Published in Seabrokers Seabreeze monthly offshore market intelligence report.</div>`;
+        }
+        else if (type === 'port-stress-cell') {
+          const port = target.getAttribute('data-tt-port') || 'Strategic Maritime Hub';
+          const country = target.getAttribute('data-tt-country') || '';
+          const sector = target.getAttribute('data-tt-sector') || 'Dry Bulk';
+          const stress = target.getAttribute('data-tt-stress') || 'NORMAL';
+          const zscore = parseFloat(target.getAttribute('data-tt-zscore'));
+          const calls = parseFloat(target.getAttribute('data-tt-calls'));
+          const meanVal = parseFloat(target.getAttribute('data-tt-mean'));
+          const minVal = parseFloat(target.getAttribute('data-tt-min'));
+          const maxVal = parseFloat(target.getAttribute('data-tt-max'));
+          const wow = parseFloat(target.getAttribute('data-tt-wow'));
+
+          const badgeColor = stress === 'SURGE' ? 'var(--red)' : (stress === 'COLLAPSE' ? 'var(--yellow)' : 'var(--green)');
+          const statusText = stress === 'SURGE' ? 'CONGESTION SURGE (Queueing Risk)' : (stress === 'COLLAPSE' ? 'SUPPLY OUTAGE / WEATHER SLOWDOWN' : 'NORMAL 5-YEAR SEASONAL BAND');
+
+          html = `<div class="rt-title">${port}${country ? ' (' + country + ')' : ''} · ${sector}</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Stress Classification</span><span class="rt-val" style="color:${badgeColor};font-weight:700;">${statusText}</span></div>`;
+          if (!isNaN(zscore)) {
+            const zCls = zscore >= 1.5 ? 'neg' : (zscore <= -1.5 ? 'neg' : 'pos');
+            html += `<div class="rt-row"><span class="rt-label">Deviation Z-Score</span><span class="rt-val ${zCls}">${zscore >= 0 ? '+' : ''}${zscore.toFixed(2)}σ vs 5Y Normal</span></div>`;
+          }
+          if (!isNaN(calls)) html += `<div class="rt-row"><span class="rt-label">Live Weekly Calls</span><span class="rt-val" style="color:var(--accent);font-weight:700;">${calls.toFixed(1)} calls / week</span></div>`;
+          if (!isNaN(meanVal)) html += `<div class="rt-row"><span class="rt-label">5-Year Seasonal Mean</span><span class="rt-val">${meanVal.toFixed(1)} calls / week</span></div>`;
+          if (!isNaN(minVal) && !isNaN(maxVal)) html += `<div class="rt-row"><span class="rt-label">5-Year Operating Envelope</span><span class="rt-val">[${Math.round(minVal)} – ${Math.round(maxVal)} calls / week]</span></div>`;
+          if (!isNaN(wow)) {
+            const wCls = wow >= 0 ? 'pos' : 'neg';
+            html += `<div class="rt-row"><span class="rt-label">Week-on-Week Change</span><span class="rt-val ${wCls}">${wow >= 0 ? '+' : ''}${wow.toFixed(1)}%</span></div>`;
+          }
+          html += `<div class="rt-note">Derived from IMF PortWatch satellite AIS arrivals and 5-year empirical distribution envelopes. Click row to render historical envelope chart.</div>`;
+        }
+        else if (type === 'port-stress-summary-hud') {
+          const title = target.getAttribute('data-tt-title') || 'Port Stress Metric';
+          const val = target.getAttribute('data-tt-val') || '';
+          const desc = target.getAttribute('data-tt-desc') || '';
+          html = `<div class="rt-title">${title}</div>`;
+          if (val) html += `<div class="rt-row"><span class="rt-label">Metric Value</span><span class="rt-val" style="color:var(--accent);font-weight:700;">${val}</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Coverage</span><span class="rt-val">41 Strategic Maritime Ports</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Data Frequency</span><span class="rt-val">Weekly Calibrated AIS Influx</span></div>`;
+          if (desc) html += `<div class="rt-note">${desc}</div>`;
+        }
         else {
           html = '';
         }
@@ -39026,6 +39691,751 @@ function renderBunkerMainChart() {
   });
 }
 
+/* =============================================================================
+   OFFSHORE & OSV TERMINAL ENGINE (SEABROKERS SEABREEZE)
+   ============================================================================= */
+
+window.OFFSHORE_STATE = {
+  segment: 'all',
+  metric: 'rates',
+  range: 'all',
+  page: 0,
+  pageSize: 25,
+  search: '',
+  chartInstance: null
+};
+
+function renderOffshoreTab() {
+  if (!window.DATA || !DATA.offshoreSummary) return;
+  renderOffshoreKPIs();
+  renderOffshoreMainChart();
+  renderOffshoreLedgerTable();
+  renderOffshoreReports();
+}
+
+function renderOffshoreKPIs() {
+  const data = window.DATA && DATA.offshoreSummary;
+  if (!data || !data.categories) return;
+  const cats = data.categories;
+
+  const map = {
+    large_ahts: { rateId: 'offshoreKpiRateLargeAHTS', subId: 'offshoreKpiSubLargeAHTS' },
+    med_ahts: { rateId: 'offshoreKpiRateMedAHTS', subId: 'offshoreKpiSubMedAHTS' },
+    large_psv: { rateId: 'offshoreKpiRateLargePSV', subId: 'offshoreKpiSubLargePSV' },
+    med_psv: { rateId: 'offshoreKpiRateMedPSV', subId: 'offshoreKpiSubMedPSV' }
+  };
+
+  Object.entries(map).forEach(([k, ids]) => {
+    const c = cats[k];
+    if (!c) return;
+    const rateEl = document.getElementById(ids.rateId);
+    const subEl = document.getElementById(ids.subId);
+    if (rateEl) {
+      rateEl.textContent = '£' + Math.round(c.latest_dayrate_gbp || 0).toLocaleString() + ' / d';
+    }
+    if (subEl) {
+      const yoy = c.yoy_change_pct != null ? (c.yoy_change_pct >= 0 ? '+' : '') + c.yoy_change_pct.toFixed(1) + '%' : '—';
+      const yoyColor = (c.yoy_change_pct || 0) >= 0 ? 'var(--green)' : 'var(--red)';
+      const util = c.utilization_pct != null ? c.utilization_pct + '%' : '—';
+      subEl.innerHTML = `YoY: <strong style="color:${yoyColor};">${yoy}</strong> · Util: <strong>${util}</strong>`;
+    }
+  });
+}
+
+function setOffshoreSegment(seg) {
+  OFFSHORE_STATE.segment = seg;
+  const btnMap = {
+    all: 'btnOffshoreSegAll',
+    large_ahts: 'btnOffshoreSegLargeAHTS',
+    med_ahts: 'btnOffshoreSegMedAHTS',
+    large_psv: 'btnOffshoreSegLargePSV',
+    med_psv: 'btnOffshoreSegMedPSV'
+  };
+  Object.entries(btnMap).forEach(([k, id]) => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('active', k === seg);
+  });
+  document.querySelectorAll('.offshore-kpi-card').forEach(card => {
+    const cSeg = card.getAttribute('data-tt-segment');
+    card.classList.toggle('active-kpi', cSeg === seg);
+  });
+  OFFSHORE_STATE.page = 0;
+  renderOffshoreMainChart();
+  renderOffshoreLedgerTable();
+}
+
+function setOffshoreMetric(m) {
+  OFFSHORE_STATE.metric = m;
+  const btnMap = {
+    rates: 'btnOffshoreMetricRates',
+    util: 'btnOffshoreMetricUtil',
+    dual: 'btnOffshoreMetricDual'
+  };
+  Object.entries(btnMap).forEach(([k, id]) => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('active', k === m);
+  });
+  renderOffshoreMainChart();
+}
+
+function setOffshoreRange(r) {
+  OFFSHORE_STATE.range = r;
+  const btnMap = {
+    all: 'btnOffshoreRangeAll',
+    '3y': 'btnOffshoreRange3y',
+    '1y': 'btnOffshoreRange1y'
+  };
+  Object.entries(btnMap).forEach(([k, id]) => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('active', k === r);
+  });
+  renderOffshoreMainChart();
+}
+
+function onOffshoreSearchInput() {
+  const input = document.getElementById('offshoreSearchInput');
+  OFFSHORE_STATE.search = (input ? input.value : '').trim().toLowerCase();
+  OFFSHORE_STATE.page = 0;
+  renderOffshoreLedgerTable();
+}
+
+function prevOffshorePage() {
+  if (OFFSHORE_STATE.page > 0) {
+    OFFSHORE_STATE.page--;
+    renderOffshoreLedgerTable();
+  }
+}
+
+function nextOffshorePage() {
+  OFFSHORE_STATE.page++;
+  renderOffshoreLedgerTable();
+}
+
+function renderOffshoreMainChart() {
+  const canvas = document.getElementById('offshoreMainChart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const summary = window.DATA && DATA.offshoreSummary;
+  if (!summary || !summary.categories) return;
+
+  const cats = summary.categories;
+  const seg = OFFSHORE_STATE.segment;
+  const metric = OFFSHORE_STATE.metric;
+  const range = OFFSHORE_STATE.range;
+
+  const titleEl = document.getElementById('offshoreChartTitle');
+  const subEl = document.getElementById('offshoreChartSub');
+  const legendInfo = document.getElementById('offshoreChartLegendInfo');
+
+  const catMeta = {
+    large_ahts: { name: 'Large AHTS (>22,000 BHP)', color: '#f0883e' },
+    med_ahts: { name: 'Medium AHTS (<22,000 BHP)', color: '#e3b341' },
+    large_psv: { name: 'Large PSV (>900 m²)', color: '#58a6ff' },
+    med_psv: { name: 'Medium PSV (<900 m²)', color: '#3fb950' }
+  };
+
+  if (titleEl) {
+    if (seg === 'all') {
+      titleEl.textContent = 'North Sea & Global OSV Market Trajectory (2018–2026)';
+    } else {
+      titleEl.textContent = `${catMeta[seg].name} — Market Cycle Profile`;
+    }
+  }
+  if (subEl) {
+    const metricText = metric === 'rates' ? 'Monthly Spot Dayrates (£/day)' : (metric === 'util' ? 'Working Fleet Utilisation (%)' : 'Dual Overlay: Dayrates (£/day) & Fleet Utilisation (%)');
+    subEl.textContent = `${metricText} · Seabrokers Seabreeze Archive`;
+  }
+  if (legendInfo) {
+    legendInfo.textContent = metric === 'rates' ? 'Dayrates in GBP (£/day)' : (metric === 'util' ? 'Utilisation 0–100%' : 'Left: Dayrates (£/d) · Right: Util (%)');
+  }
+
+  const filterSeriesByRange = (series) => {
+    if (!series) return [];
+    if (range === '1y') return series.slice(-12);
+    if (range === '3y') return series.slice(-36);
+    return series;
+  };
+
+  const sampleCatKey = seg === 'all' ? 'large_ahts' : seg;
+  const sampleSeries = filterSeriesByRange(cats[sampleCatKey]?.series || []);
+  const labels = sampleSeries.map(pt => pt.label || pt.date.slice(0, 7));
+
+  const datasets = [];
+
+  if (seg === 'all') {
+    Object.entries(catMeta).forEach(([k, meta]) => {
+      const s = filterSeriesByRange(cats[k]?.series || []);
+      if (metric === 'rates') {
+        datasets.push({
+          label: meta.name,
+          data: s.map(pt => pt.avg_dayrate),
+          borderColor: meta.color,
+          backgroundColor: meta.color + '15',
+          borderWidth: 2,
+          pointRadius: range === '1y' ? 3 : 1.5,
+          tension: 0.25,
+          yAxisID: 'y'
+        });
+      } else if (metric === 'util') {
+        datasets.push({
+          label: meta.name,
+          data: s.map(pt => pt.utilization_pct),
+          borderColor: meta.color,
+          backgroundColor: meta.color + '15',
+          borderWidth: 2,
+          pointRadius: range === '1y' ? 3 : 1.5,
+          tension: 0.25,
+          yAxisID: 'y'
+        });
+      } else {
+        datasets.push({
+          label: `${meta.name} Dayrate`,
+          data: s.map(pt => pt.avg_dayrate),
+          borderColor: meta.color,
+          borderWidth: 2,
+          pointRadius: 1.5,
+          tension: 0.25,
+          yAxisID: 'y'
+        });
+      }
+    });
+  } else {
+    const meta = catMeta[seg];
+    const s = filterSeriesByRange(cats[seg]?.series || []);
+
+    if (metric === 'rates' || metric === 'dual') {
+      datasets.push({
+        label: `${meta.name} Avg Dayrate (£)`,
+        data: s.map(pt => pt.avg_dayrate),
+        borderColor: meta.color,
+        backgroundColor: meta.color + '20',
+        borderWidth: 2.5,
+        pointRadius: range === '1y' ? 4 : 2,
+        tension: 0.2,
+        fill: false,
+        yAxisID: 'y'
+      });
+      datasets.push({
+        label: 'Reported Max Rate (£)',
+        data: s.map(pt => pt.max_dayrate),
+        borderColor: meta.color + '60',
+        borderDash: [3, 3],
+        borderWidth: 1,
+        pointRadius: 0,
+        fill: false,
+        yAxisID: 'y'
+      });
+      datasets.push({
+        label: 'Reported Min Rate (£)',
+        data: s.map(pt => pt.min_dayrate),
+        borderColor: meta.color + '40',
+        backgroundColor: meta.color + '10',
+        borderDash: [3, 3],
+        borderWidth: 1,
+        pointRadius: 0,
+        fill: '-1',
+        yAxisID: 'y'
+      });
+    }
+
+    if (metric === 'util' || metric === 'dual') {
+      datasets.push({
+        label: `${meta.name} Working Utilisation (%)`,
+        data: s.map(pt => pt.utilization_pct),
+        borderColor: '#a371f7',
+        backgroundColor: '#a371f715',
+        borderWidth: 2,
+        pointRadius: range === '1y' ? 3 : 2,
+        tension: 0.2,
+        yAxisID: metric === 'dual' ? 'y1' : 'y'
+      });
+    }
+  }
+
+  if (OFFSHORE_STATE.chartInstance) {
+    OFFSHORE_STATE.chartInstance.destroy();
+    OFFSHORE_STATE.chartInstance = null;
+  }
+
+  const isDual = metric === 'dual';
+  const scales = {
+    x: {
+      grid: { color: 'rgba(28, 35, 51, 0.4)' },
+      ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 12 }
+    },
+    y: {
+      type: 'linear',
+      position: 'left',
+      grid: { color: 'rgba(28, 35, 51, 0.5)' },
+      grace: '8%',
+      ticks: {
+        color: '#7a8494',
+        font: { family: 'IBM Plex Mono', size: 10 },
+        callback: function(v) {
+          return metric === 'util' ? v + '%' : '£' + Number(v).toLocaleString();
+        }
+      }
+    }
+  };
+
+  if (isDual) {
+    scales.y1 = {
+      type: 'linear',
+      position: 'right',
+      min: 0,
+      max: 100,
+      grid: { drawOnChartArea: false },
+      ticks: {
+        color: '#a371f7',
+        font: { family: 'IBM Plex Mono', size: 10 },
+        callback: function(v) { return v + '%'; }
+      }
+    };
+  }
+
+  OFFSHORE_STATE.chartInstance = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          display: true,
+          labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 }, boxWidth: 12 }
+        },
+        tooltip: {
+          backgroundColor: '#111820',
+          borderColor: '#1c2333',
+          borderWidth: 1,
+          titleColor: '#fff',
+          bodyColor: '#d4dce8',
+          callbacks: {
+            label: function(item) {
+              const val = item.parsed.y;
+              if (item.dataset.yAxisID === 'y1' || metric === 'util') {
+                return ' ' + item.dataset.label + ': ' + val + '%';
+              }
+              const valUsd = Math.round(val * 1.28);
+              return ' ' + item.dataset.label + ': £' + Math.round(val).toLocaleString() + ' / d (~$' + valUsd.toLocaleString() + ')';
+            }
+          }
+        }
+      },
+      scales
+    }
+  });
+}
+
+function renderOffshoreLedgerTable() {
+  const tbody = document.getElementById('offshoreLedgerTableBody');
+  if (!tbody) return;
+  const data = window.DATA && DATA.offshoreSummary;
+  if (!data || !data.all_ledger) return;
+
+  const seg = OFFSHORE_STATE.segment;
+  const search = OFFSHORE_STATE.search;
+
+  let records = data.all_ledger;
+  if (seg !== 'all') {
+    records = records.filter(r => r.category_key === seg);
+  }
+  if (search) {
+    records = records.filter(r => {
+      const txt = `${r.date} ${r.label || ''} ${r.category_name || ''} ${r.short_name || ''}`.toLowerCase();
+      return txt.includes(search);
+    });
+  }
+
+  const countBadge = document.getElementById('offshoreLedgerCountBadge');
+  if (countBadge) countBadge.textContent = records.length;
+
+  const totalPages = Math.ceil(records.length / OFFSHORE_STATE.pageSize);
+  if (OFFSHORE_STATE.page >= totalPages && totalPages > 0) {
+    OFFSHORE_STATE.page = totalPages - 1;
+  }
+  const page = OFFSHORE_STATE.page;
+  const pageSize = OFFSHORE_STATE.pageSize;
+  const start = page * pageSize;
+  const end = Math.min(start + pageSize, records.length);
+  const paged = records.slice(start, end);
+
+  const infoEl = document.getElementById('offshorePageInfo');
+  if (infoEl) {
+    infoEl.textContent = records.length ? `Showing ${start + 1}–${end} of ${records.length} records` : 'No matching records';
+  }
+  const prevBtn = document.getElementById('btnOffshorePrev');
+  const nextBtn = document.getElementById('btnOffshoreNext');
+  if (prevBtn) prevBtn.disabled = page <= 0;
+  if (nextBtn) nextBtn.disabled = end >= records.length;
+
+  if (!paged.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:18px; color:var(--text-muted);">No records match the active criteria.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = paged.map(r => {
+    const yoy = r.yoy_change_pct != null ? (r.yoy_change_pct >= 0 ? '+' : '') + r.yoy_change_pct.toFixed(1) + '%' : '—';
+    const yoyCls = (r.yoy_change_pct || 0) >= 0 ? 'pos' : 'neg';
+    const util = r.utilization_pct != null ? r.utilization_pct + '%' : '—';
+    const rangeStr = (r.min_dayrate && r.max_dayrate) ? `£${Math.round(r.min_dayrate).toLocaleString()} – £${Math.round(r.max_dayrate).toLocaleString()}` : '—';
+
+    return `<tr class="offshore-ledger-row" data-tooltip=" " data-tt-type="offshore-ledger-row"
+      data-tt-date="${r.date}"
+      data-tt-cat="${r.category_name || r.category_key}"
+      data-tt-rate="${r.avg_dayrate}"
+      data-tt-min="${r.min_dayrate || 0}"
+      data-tt-max="${r.max_dayrate || 0}"
+      data-tt-yoy="${r.yoy_change_pct || ''}"
+      data-tt-util="${r.utilization_pct || ''}">
+      <td style="font-family:'IBM Plex Mono', monospace; font-weight:600; color:var(--text);">${r.label || r.date}</td>
+      <td>
+        <span style="font-weight:600; color:#fff;">${r.category_name || r.category_key}</span>
+        <span style="font-size:10px; color:var(--text-muted); display:block;">${r.type || 'OSV'}</span>
+      </td>
+      <td style="font-family:'IBM Plex Mono', monospace; font-weight:700; color:var(--accent);">£${Math.round(r.avg_dayrate).toLocaleString()} / d</td>
+      <td style="font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--text-muted);">${rangeStr}</td>
+      <td class="${yoyCls}" style="font-weight:600; font-family:'IBM Plex Mono', monospace;">${yoy}</td>
+      <td>
+        <span style="display:inline-block; padding:2px 6px; border-radius:3px; background:rgba(88,166,255,0.1); color:#58a6ff; font-family:'IBM Plex Mono', monospace; font-size:11px; font-weight:600;">
+          ${util}
+        </span>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function renderOffshoreReports() {
+  const container = document.getElementById('offshoreReportsGrid');
+  if (!container) return;
+  const data = window.DATA && DATA.offshoreSummary;
+  if (!data || !data.reports) return;
+
+  const badge = document.getElementById('offshoreReportsCountBadge');
+  if (badge) badge.textContent = data.reports.length;
+
+  container.innerHTML = data.reports.map(rep => {
+    return `<div class="offshore-report-card">
+      <div style="font-weight:700; font-size:12px; color:#fff; line-height:1.3; margin-bottom:3px;">
+        ${rep.title}
+      </div>
+      <div style="display:flex; justify-content:space-between; font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace; margin-bottom:8px;">
+        <span>${rep.date}</span>
+        <span>${rep.file_size_mb ? rep.file_size_mb + ' MB' : (rep.size_kb ? Math.round(rep.size_kb) + ' KB' : '')}</span>
+      </div>
+      <div style="display:flex; gap:6px;">
+        <a href="${rep.pdf_url}" target="_blank" rel="noopener" class="offshore-pdf-btn">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+          </svg>
+          PDF
+        </a>
+        <a href="${rep.card_url}" target="_blank" rel="noopener" class="offshore-pdf-btn" style="background:#111820; border-color:var(--border);">
+          Web
+        </a>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+/* =============================================================================
+   GLOBAL PORT STRESS MATRIX & 5-YEAR ARRIVAL ENVELOPES (IMF PORTWATCH)
+   ============================================================================= */
+
+window.PORT_STRESS_STATE = {
+  sector: 'all',
+  search: '',
+  range: 'all',
+  selectedPortKey: null,
+  chartInstance: null
+};
+
+function renderPortStressSubView() {
+  const summary = window.DATA && DATA.portStressSummary;
+  if (!summary) return;
+
+  const sm = summary.summary || {};
+  const totalEl = document.getElementById('hudStressTotal');
+  const surgeEl = document.getElementById('hudStressSurge');
+  const collapseEl = document.getElementById('hudStressCollapse');
+  const normalEl = document.getElementById('hudStressNormal');
+
+  if (totalEl) totalEl.textContent = sm.total_monitored || 50;
+  if (surgeEl) surgeEl.textContent = sm.surge_alerts || 0;
+  if (collapseEl) collapseEl.textContent = sm.collapse_alerts || 20;
+  if (normalEl) normalEl.textContent = sm.normal_hubs || 30;
+
+  if (!PORT_STRESS_STATE.selectedPortKey && summary.hubs && summary.hubs.length) {
+    const defaultHub = summary.hubs.find(h => h.key.toLowerCase().includes('auphe')) || summary.hubs[0];
+    PORT_STRESS_STATE.selectedPortKey = defaultHub.key;
+  }
+
+  renderPortStressTable();
+  renderPortStressEnvelopeChart();
+}
+
+function setPortStressSector(sec) {
+  PORT_STRESS_STATE.sector = sec;
+  const btnMap = {
+    all: 'btnStressSectorAll',
+    'Dry Bulk': 'btnStressSectorDry',
+    'Tankers': 'btnStressSectorTank',
+    'LNG': 'btnStressSectorLNG',
+    'LPG': 'btnStressSectorLPG'
+  };
+  Object.entries(btnMap).forEach(([k, id]) => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('active', k === sec);
+  });
+
+  const summary = window.DATA && DATA.portStressSummary;
+  if (summary && summary.hubs) {
+    const filtered = sec === 'all' ? summary.hubs : summary.hubs.filter(h => h.asset_class === sec);
+    if (filtered.length && !filtered.some(h => h.key === PORT_STRESS_STATE.selectedPortKey)) {
+      PORT_STRESS_STATE.selectedPortKey = filtered[0].key;
+    }
+  }
+
+  renderPortStressTable();
+  renderPortStressEnvelopeChart();
+}
+
+function setPortStressRange(r) {
+  PORT_STRESS_STATE.range = r;
+  document.querySelectorAll('[data-stress-range]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-stress-range') === r);
+  });
+  renderPortStressEnvelopeChart();
+}
+
+function onPortStressSearchInput() {
+  const input = document.getElementById('portStressSearchInput');
+  PORT_STRESS_STATE.search = (input ? input.value : '').trim().toLowerCase();
+  renderPortStressTable();
+}
+
+function selectPortStressHub(key) {
+  PORT_STRESS_STATE.selectedPortKey = key;
+  document.querySelectorAll('#portStressTableBody tr').forEach(tr => {
+    tr.classList.toggle('selected-row', tr.getAttribute('data-port-key') === key);
+  });
+  renderPortStressEnvelopeChart();
+}
+
+function renderPortStressTable() {
+  const tbody = document.getElementById('portStressTableBody');
+  if (!tbody) return;
+  const data = window.DATA && DATA.portStressSummary;
+  if (!data || !data.hubs) return;
+
+  const sec = PORT_STRESS_STATE.sector;
+  const search = PORT_STRESS_STATE.search;
+
+  let hubs = data.hubs;
+  if (sec !== 'all') {
+    hubs = hubs.filter(h => h.asset_class === sec);
+  }
+  if (search) {
+    hubs = hubs.filter(h => {
+      const txt = `${h.name} ${h.locode} ${h.country} ${h.asset_class}`.toLowerCase();
+      return txt.includes(search);
+    });
+  }
+
+  if (!hubs.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:18px; color:var(--text-muted);">No hubs match the active filter.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = hubs.map(h => {
+    const isSelected = h.key === PORT_STRESS_STATE.selectedPortKey;
+    let badgeHtml = '';
+    if (h.stress_flag === 'COLLAPSE') {
+      badgeHtml = `<span style="background:rgba(227,179,65,0.15); color:#e3b341; border:1px solid rgba(227,179,65,0.3); border-radius:4px; padding:2px 6px; font-size:10px; font-weight:700;">OUTAGE / SLOWDOWN</span>`;
+    } else if (h.stress_flag === 'SURGE') {
+      badgeHtml = `<span style="background:rgba(248,81,73,0.15); color:#f85149; border:1px solid rgba(248,81,73,0.3); border-radius:4px; padding:2px 6px; font-size:10px; font-weight:700;">CONGESTION SURGE</span>`;
+    } else {
+      badgeHtml = `<span style="background:rgba(63,185,80,0.15); color:#3fb950; border:1px solid rgba(63,185,80,0.3); border-radius:4px; padding:2px 6px; font-size:10px; font-weight:700;">NORMAL BAND</span>`;
+    }
+
+    const zSign = h.zscore >= 0 ? '+' : '';
+    const zCls = h.zscore >= 1.5 ? 'neg' : (h.zscore <= -1.5 ? 'neg' : 'pos');
+
+    return `<tr class="port-stress-row ${isSelected ? 'selected-row' : ''}"
+      data-port-key="${h.key}"
+      onclick="selectPortStressHub('${h.key}')"
+      data-tooltip=" "
+      data-tt-type="port-stress-cell"
+      data-tt-port="${h.name} (${h.locode})"
+      data-tt-country="${h.country}"
+      data-tt-sector="${h.asset_class}"
+      data-tt-stress="${h.stress_flag}"
+      data-tt-zscore="${h.zscore}"
+      data-tt-calls="${h.weekly_calls}"
+      data-tt-mean="${h.hist_mean}"
+      data-tt-min="${h.hist_min}"
+      data-tt-max="${h.hist_max}"
+      data-tt-wow="${h.wow_change}">
+      <td>
+        <div style="font-weight:700; color:#fff;">${h.name}</div>
+        <div style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">${h.locode} · ${h.country}</div>
+      </td>
+      <td>
+        <span style="font-size:11px; font-weight:600; color:#58a6ff;">${h.asset_class}</span>
+      </td>
+      <td style="font-family:'IBM Plex Mono', monospace; font-weight:700; color:var(--accent);">
+        ${h.weekly_calls.toFixed(1)} <span style="font-size:10px; color:var(--text-muted); font-weight:400;">calls/wk</span>
+      </td>
+      <td style="font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--text-muted);">
+        ${h.hist_mean.toFixed(1)} [${Math.round(h.hist_min)}–${Math.round(h.hist_max)}]
+      </td>
+      <td class="${zCls}" style="font-family:'IBM Plex Mono', monospace; font-weight:700;">
+        ${zSign}${h.zscore.toFixed(2)}σ
+      </td>
+      <td>${badgeHtml}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderPortStressEnvelopeChart() {
+  const canvas = document.getElementById('portStressEnvelopeChart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const summary = window.DATA && DATA.portStressSummary;
+  if (!summary || !summary.ports_series) return;
+
+  const key = PORT_STRESS_STATE.selectedPortKey;
+  if (!key) return;
+
+  const seriesMap = summary.ports_series;
+  let hubData = seriesMap[key];
+  if (!hubData) {
+    const matchedKey = Object.keys(seriesMap).find(k => k.toLowerCase() === key.toLowerCase());
+    if (matchedKey) hubData = seriesMap[matchedKey];
+  }
+  if (!hubData || !hubData.series) return;
+
+  const hubMeta = summary.hubs.find(h => h.key.toLowerCase() === key.toLowerCase()) || {
+    name: hubData.port_name,
+    asset_class: hubData.asset_class,
+    hist_min: 0,
+    hist_max: 0
+  };
+
+  const titleEl = document.getElementById('portStressChartTitle');
+  const subEl = document.getElementById('portStressChartSub');
+  if (titleEl) {
+    titleEl.textContent = `${hubMeta.name} (${hubMeta.asset_class}) 5-Year Arrival Envelope`;
+  }
+  if (subEl) {
+    subEl.textContent = `Weekly Calls vs 5Y Seasonal Normal Band [${Math.round(hubMeta.hist_min)}–${Math.round(hubMeta.hist_max)} calls/wk] · IMF PortWatch`;
+  }
+
+  const range = PORT_STRESS_STATE.range;
+  let rawSeries = hubData.series;
+  if (range === '1y') rawSeries = rawSeries.slice(-52);
+  else if (range === '3y') rawSeries = rawSeries.slice(-156);
+
+  const labels = rawSeries.map(pt => pt.d);
+  const callsData = rawSeries.map(pt => pt.c);
+  const meanData = rawSeries.map(pt => pt.mean);
+  const maxData = rawSeries.map(pt => pt.max);
+  const minData = rawSeries.map(pt => pt.min);
+
+  if (PORT_STRESS_STATE.chartInstance) {
+    PORT_STRESS_STATE.chartInstance.destroy();
+    PORT_STRESS_STATE.chartInstance = null;
+  }
+
+  PORT_STRESS_STATE.chartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Live Weekly Calls',
+          data: callsData,
+          borderColor: '#58a6ff',
+          backgroundColor: '#58a6ff20',
+          borderWidth: 2,
+          pointRadius: range === '1y' ? 2.5 : 1,
+          pointHoverRadius: 5,
+          tension: 0.15,
+          fill: false,
+          order: 1
+        },
+        {
+          label: '5Y Seasonal Mean',
+          data: meanData,
+          borderColor: '#e3b341',
+          borderWidth: 1.5,
+          borderDash: [4, 4],
+          pointRadius: 0,
+          fill: false,
+          order: 2
+        },
+        {
+          label: '5Y Historical Max Band',
+          data: maxData,
+          borderColor: 'rgba(63, 185, 80, 0.4)',
+          borderWidth: 1,
+          pointRadius: 0,
+          fill: false,
+          order: 3
+        },
+        {
+          label: '5Y Historical Min Band',
+          data: minData,
+          borderColor: 'rgba(63, 185, 80, 0.4)',
+          backgroundColor: 'rgba(63, 185, 80, 0.08)',
+          borderWidth: 1,
+          pointRadius: 0,
+          fill: '-1',
+          order: 4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          display: true,
+          labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 }, boxWidth: 12 }
+        },
+        tooltip: {
+          backgroundColor: '#111820',
+          borderColor: '#1c2333',
+          borderWidth: 1,
+          titleColor: '#fff',
+          bodyColor: '#d4dce8',
+          callbacks: {
+            label: function(item) {
+              return ' ' + item.dataset.label + ': ' + Number(item.parsed.y).toFixed(1) + ' calls / week';
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: 'rgba(28, 35, 51, 0.4)' },
+          ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 }
+        },
+        y: {
+          grid: { color: 'rgba(28, 35, 51, 0.5)' },
+          grace: '8%',
+          ticks: {
+            color: '#7a8494',
+            font: { family: 'IBM Plex Mono', size: 10 },
+            callback: function(v) { return v + ' calls'; }
+          }
+        }
+      }
+    }
+  });
+}
 
     if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initTooltipTranslations); }
     else { initTooltipTranslations(); }

@@ -372,7 +372,7 @@ Harvested directly from the IMF PortWatch ArcGIS REST API Gateway (`https://serv
 *Quantitative Matrix Engine*: [`scripts/compute_port_stress_matrix.py`](file:///c:/Users/Dell/Github/Shipping/scripts/compute_port_stress_matrix.py).  
 *Hub Universe*: 41 hubs across Dry Bulk (16), Tankers (11), LPG (11), and LNG (12).  
 
-*Website Status*: 0% rendered in `index.html`.
+*Website Status*: **100% rendered in `index.html`** (Tracking Tab -> Port Stress Subview with 4-card HUD, Sector filtering across Dry Bulk/Tankers/LNG/LPG, live matrix table with Z-scores, and Chart.js 5-Year seasonal envelope bands with shaded normal operating corridors across 50 hub-segment combinations).
 
 ---
 
@@ -422,8 +422,9 @@ To bridge this massive disconnect and make these assets accessible in the browse
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │ PRIORITY ORDER FOR UI EXPANSION                                                        │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│ PHASE 1: "Offshore & OSV" Tab                                                          │
-│   • Render AHTS & PSV monthly dayrates (£/day) and fleet utilization from Seabrokers.  │
+│ PHASE 1: "Offshore & OSV" Tab [COMPLETED]                                              │
+│   • Rendered: AHTS & PSV monthly dayrates (£/day), fleet utilization, and 97 Seabreeze │
+│     publications in dedicated top-level Offshore Terminal.                             │
 │                                                                                        │
 │ PHASE 2: "Global Bunkers & Demolition" Tab                                             │
 │   • 221-port world bunker fuel pricing matrix & $/LDT scrap steel demolition floor.    │
