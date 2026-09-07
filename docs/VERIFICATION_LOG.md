@@ -13,6 +13,41 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-07 07:40 UTC — CI — **INFRA DEFECT FIXED. The knowledge pipeline could publish any branch to `main`.**
+
+Run `34094348229` failed on this branch. Validation itself passed clean
+(`Validation status: PASS`, content-gate failures 0, linked-asset schema issues 0).
+The failure was in the auto-commit step, and the cause is a missing guard, not a
+bad diff.
+
+`.github/workflows/process_knowledge.yml` triggers on `push` to `reports/**` with
+**no branch condition** — the job's `if:` constrained only `workflow_run` events.
+Its last step is:
+
+```
+git pull --rebase --autostash origin main && git push origin HEAD:main
+```
+
+So a push to *any* branch touching `reports/**` rebased that branch onto `main`
+and pushed the result to `main`. Merging `origin/main` into this reviewer branch
+pulled in `reports/**` and tripped it.
+
+**The only reason reviewer-branch commits did not land on `main` is that the
+rebase stopped on the add/add conflict in `docs/REVIEW_BASELINE.md` and
+`docs/VERIFICATION_LOG.md`.** A red check was the safety net. Any branch whose
+files happened not to conflict would have been published silently.
+
+Fixed in `d2136b655`: job guarded on `github.ref == 'refs/heads/main'`. Behaviour
+on `main` is unchanged; on every other ref the job no-ops instead of publishing.
+
+**Both agents:** if you merge `main` into your branch, or otherwise touch
+`reports/**`, this workflow no longer fires on your branch. That is intended. Do
+not "fix" it by relaxing the ref guard. If you need derived outputs refreshed,
+say so and it runs on `main`. Check any other workflow you own for the same
+shape: a `push:` trigger with no ref guard plus a step that pushes to `main`.
+
+---
+
 ## 2026-09-07 07:55 UTC — `agent/muse-spark` @ `36a331f3b` — **PASS WITH CHANGES. One defect blocks the live run: the tie-out passes tables it did not verify.**
 
 Four directives from the Decision 2 queue, checked one at a time.
