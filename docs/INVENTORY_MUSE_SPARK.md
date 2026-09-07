@@ -24,7 +24,7 @@ breakwave_insights/hellenic/broker_reports/poten/books only; `data/Capital_Link_
 | reports/broker_reports | 105 | md only |
 | reports/drewry | 548 | 0 local PDFs — md + ais_manifest.csv only |
 | reports/drybulk | 209 | breakwave drybulk (209 PDF) |
-| reports/hellenic | 14052 | incl 3948 tracked PDFs; 6,895 jpg+png page images |
+| reports/hellenic | 14052 | incl 3948 tracked PDFs; 6,890 jpg+png page images |
 | reports/panama_canal | 1 | |
 | reports/poten | 30 | opinions, metadata-only |
 | reports/seabrokers | 97 | md |
@@ -65,10 +65,7 @@ Repo-wide by extension (measured, cost-model relevant): **pdf 4,475** · **jpg+p
 json 9,080 · jsonl 88 · py 119.
 
 Counting method: count with `git -c core.quotepath=false ls-files`, because default
-quotepath octal-quotes non-ASCII filenames and naive matching misses them — quotepath=false
-gives the HIGHER correct figures. Default quotepath undercounts images by 5 octal-quoted
-.jpg (+5 vs default: hellenic 6,895; reports-only 21,528; repo-wide 21,532);
-it also misses octal-quoted `.pdf` matches.
+quotepath octal-quotes non-ASCII filenames (3 files) and naive `.pdf` matching misses them.
 
 ## 2. Binding definition: "unprocessed" (ledger-diff, not filesystem walk)
 
@@ -158,8 +155,8 @@ whose `paths` sub-keys cover breakwave/baltic/breakwave_insights/hellenic/broker
   **4,475 PDFs repo-wide** (reports-only 4,328: hellenic 3,948, drybulk 209, breakwave 81,
   tankers 78, top-level 11). Per-page OCR budgets aimed at PDFs are ~8x oversized and
   aimed at the wrong modality.
-- The real volume is **21,528 page images under `reports/`** (breakwave 14,633 + hellenic 6,895 jpg+png)
-  + 4 outside `reports/` (`assets/Picture1-4.png`) = **21,532 repo-wide**, plus **9,264 HTML**. Budget the vision pass for images, not PDFs.
+- The real volume is **21,532 page images** (breakwave 14,633 + hellenic 6,890 jpg+png
+  under `reports/`) + **9,264 HTML**. Budget the vision pass for images, not PDFs.
 - Brief "19,801 KG shards sitting unused" vs measured: `knowledge/` = 19,799 files, of which
   **8,850 tree shards are actively maintained section hierarchies** (see section 6).
 - Brief "332 tabular datasets" vs measured: 294 CSV + 17 XLSX on disk. Reconcile, don't inherit.
