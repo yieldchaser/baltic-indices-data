@@ -10261,44 +10261,44 @@
           <!-- 7b. SGX Iron Ore Forward Term Structure (FEF 62% vs M65F 65% & Lump Premium) -->
           <div class="chart-container mb-20" id="ironOreForwardContainer" style="margin-top:4px;">
             <div class="chart-header">
-              <div class="chart-title" id="ironOreFwdTitle" data-tooltip="SGX Iron Ore Forward Term Structure - Singapore Exchange official cleared forward curves across 40 delivery tenors (prompt to Dec 2029). Tracks TSI 62% Fe (FEF), Fastmarkets 65% Fe Carajas (M65F), and Platts Lump Premium (LPF). High-grade 65/62 spread directly drives Brazilian Capesize C3 long-haul ton-mile expansion." data-tt-type="concept-sgx-iron-ore">SGX Iron Ore Forward Term Structure (62% FEF vs 65% M65F &amp; Lump)</div>
+              <div class="chart-title" id="ironOreFwdTitle" data-tooltip="SGX Iron Ore Forward Term Structure - Singapore Exchange official cleared forward curves across 40 delivery tenors (prompt to Dec 2029). Tracks TSI 62% Fe (FEF), Fastmarkets 65% Fe Carajas (M65F), and Platts Lump Premium (LPF). High-grade 65/62 spread directly drives Brazilian Capesize C3 long-haul ton-mile expansion." data-tt-type="concept-sgx-iron-ore">SGX Iron Ore Forward Term Structure (62% FEF vs 65% M65F &amp; Lump) <span class="badge" style="font-size:10px;font-weight:600;padding:2px 6px;border-radius:4px;background:rgba(88,166,255,0.12);color:#58a6ff;border:1px solid rgba(88,166,255,0.25);margin-left:6px;">40 Tenors</span></div>
               <div class="flex-row" style="gap:6px;align-items:center;flex-wrap:wrap;">
                 <div style="display:flex;gap:4px;flex-wrap:wrap;">
-                  <button class="toggle-btn active" id="oreFwdBtn62" onclick="setOreFwdProduct('62')">62% Standard (FEF)</button>
-                  <button class="toggle-btn" id="oreFwdBtn65" onclick="setOreFwdProduct('65')">65% Carajas (M65F)</button>
-                  <button class="toggle-btn" id="oreFwdBtnSpread" onclick="setOreFwdProduct('spread')">65/62 Spread</button>
-                  <button class="toggle-btn" id="oreFwdBtnLump" onclick="setOreFwdProduct('lump')">Lump (LPF)</button>
-                  <button class="toggle-btn" id="oreFwdBtnAll" onclick="setOreFwdProduct('all')">All Curves</button>
+                  <button class="toggle-btn active" id="oreFwdBtn62" onclick="setOreFwdProduct('62')" data-tooltip="TSI 62% Fe Standard benchmark futures forward curve (FEF)">62% Standard (FEF)</button>
+                  <button class="toggle-btn" id="oreFwdBtn65" onclick="setOreFwdProduct('65')" data-tooltip="Fastmarkets 65% Fe Carajás high-grade forward curve (M65F)">65% Carajas (M65F)</button>
+                  <button class="toggle-btn" id="oreFwdBtnSpread" onclick="setOreFwdProduct('spread')" data-tooltip="65/62 Carajás high-grade spread term structure (M65F minus FEF in $/tonne)">65/62 Spread</button>
+                  <button class="toggle-btn" id="oreFwdBtnLump" onclick="setOreFwdProduct('lump')" data-tooltip="Platts Lump Premium forward curve for blast furnace direct-charge ($/dmtu)">Lump (LPF)</button>
+                  <button class="toggle-btn" id="oreFwdBtnAll" onclick="setOreFwdProduct('all')" data-tooltip="Overlay 62% Standard, 65% Carajás, and quality spread across dual axes">All Curves</button>
                 </div>
                 <div style="display:flex;gap:4px;padding-left:8px;border-left:1px solid var(--border);align-items:center;">
                   <span style="font-size:11px;color:var(--text-muted);">vs</span>
-                  <button class="toggle-btn" id="oreFwdComp1w" onclick="setOreFwdComp('1w')">1W ago</button>
-                  <button class="toggle-btn" id="oreFwdComp2w" onclick="setOreFwdComp('2w')">2W ago</button>
-                  <button class="toggle-btn" id="oreFwdComp1m" onclick="setOreFwdComp('1m')">1M ago</button>
-                  <button class="toggle-btn" id="oreFwdComp3m" onclick="setOreFwdComp('3m')">3M ago</button>
-                  <button class="toggle-btn active" id="oreFwdCompNone" onclick="setOreFwdComp('none')">No Compare</button>
+                  <button class="toggle-btn" id="oreFwdComp1w" onclick="setOreFwdComp('1w')" data-tooltip="Overlay forward curve snapshot from 1 week ago">1W ago</button>
+                  <button class="toggle-btn" id="oreFwdComp2w" onclick="setOreFwdComp('2w')" data-tooltip="Overlay forward curve snapshot from 2 weeks ago">2W ago</button>
+                  <button class="toggle-btn" id="oreFwdComp1m" onclick="setOreFwdComp('1m')" data-tooltip="Overlay forward curve snapshot from 1 month ago">1M ago</button>
+                  <button class="toggle-btn" id="oreFwdComp3m" onclick="setOreFwdComp('3m')" data-tooltip="Overlay forward curve snapshot from 3 months ago">3M ago</button>
+                  <button class="toggle-btn active" id="oreFwdCompNone" onclick="setOreFwdComp('none')" data-tooltip="Hide historical forward curve comparison overlay">No Compare</button>
                 </div>
               </div>
             </div>
             <!-- Iron Ore Forward HUD Strip -->
             <div id="ironOreFwdHudStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
-              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Prompt Month Settlement Price ($/dmt CFR China, TSI 62% Fe Fines)">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;cursor:help;" data-tooltip="Prompt Month Settlement Price ($/dmt CFR China, TSI 62% Fe Fines)" data-tt-type="sgx-fwd-prompt">
                 <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Prompt 62% Settle</div>
                 <div id="ioFwdHudPrompt" style="font-size:14px;font-weight:700;color:var(--accent);">$99.65/t</div>
               </div>
-              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Carajas High-Grade Premium Spread ($/t, Fastmarkets 65% minus TSI 62%)">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;cursor:help;" data-tooltip="Carajas High-Grade Premium Spread ($/t, Fastmarkets 65% minus TSI 62%)" data-tt-type="sgx-fwd-spread">
                 <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">65/62 Carajás Spread</div>
                 <div id="ioFwdHudSpread" style="font-size:14px;font-weight:700;color:#3fb950;">+$15.32/t</div>
               </div>
-              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Platts Lump Premium ($/dmtu, direct-charge blast furnace material without sintering)">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;cursor:help;" data-tooltip="Platts Lump Premium ($/dmtu, direct-charge blast furnace material without sintering)" data-tt-type="sgx-fwd-lump">
                 <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Prompt Lump Premium</div>
                 <div id="ioFwdHudLump" style="font-size:14px;font-weight:700;color:#e3b341;">$0.2440/dmtu</div>
               </div>
-              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:150px;" data-tooltip="Term Structure Curve Regime (Prompt vs Deferred slope)">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:150px;cursor:help;" data-tooltip="Term Structure Curve Regime (Prompt vs Deferred slope)" data-tt-type="sgx-fwd-regime">
                 <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Curve Regime</div>
                 <div id="ioFwdHudRegime" style="font-size:14px;font-weight:700;color:#58a6ff;">Backwardated (-$0.55/t)</div>
               </div>
-              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;" data-tooltip="Total Aggregate Open Interest across all cleared forward tenors">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;cursor:help;" data-tooltip="Total Aggregate Open Interest across all cleared forward tenors" data-tt-type="sgx-fwd-oi">
                 <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Total Curve OI</div>
                 <div id="ioFwdHudOI" style="font-size:14px;font-weight:700;color:var(--text);">1,214,843 lots</div>
               </div>
@@ -10315,10 +10315,10 @@
           <!-- SGX Iron Ore Contract History (shown on click) -->
           <div class="chart-container mb-20" id="ironOreHistoryPanel" style="display:none;">
             <div class="chart-header">
-              <div class="chart-title" id="ironOreHistoryTitle">Iron Ore Contract Settlement History</div>
+              <div class="chart-title" id="ironOreHistoryTitle" data-tooltip="Historical daily cleared settlement prices and traded volume bars for the selected SGX Iron Ore forward delivery contract." data-tt-type="sgx-contract-history">Iron Ore Contract Settlement History</div>
               <div class="flex-row" style="gap:8px;align-items:center;">
                 <span id="ironOreHistoryBadge" style="font-size:11px;padding:3px 10px;border-radius:4px;font-weight:600;"></span>
-                <button class="toggle-btn" onclick="document.getElementById('ironOreHistoryPanel').style.display='none';destroyChart('ironOreHistoryChart');">Close</button>
+                <button class="toggle-btn" onclick="closeOreHistory()" data-tooltip="Close contract settlement history drilldown">Close</button>
               </div>
             </div>
             <div id="ironOreHistoryMessage" style="display:none;color:var(--text-muted);font-size:13px;padding:16px 0;"></div>
@@ -20706,6 +20706,11 @@ if (intelTabsContainer) {
     }
 
     function scrollToIronOreForward() {
+      const sec = document.getElementById('signals-sec-tech');
+      if (sec && sec.classList.contains('collapsed')) {
+        sec.classList.remove('collapsed');
+        renderSectionCharts('signals-sec-tech', window.currentProduct || 'bdiy');
+      }
       const el = document.getElementById('ironOreForwardContainer');
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -25612,16 +25617,35 @@ if (intelTabsContainer) {
       if (!panel || !canvas) return;
 
       panel.style.display = '';
+
+      var histKey = 'iron_ore_fef';
       var ticker = row.fef_ticker || 'FEF';
+      var prodName = 'TSI 62% Fe Standard';
+      var prodColor = '#58a6ff';
+      var prodUnit = '$/dmt';
+
+      if (_oreFwdProduct === '65') {
+        histKey = 'iron_ore_m65f';
+        ticker = row.m65f_ticker || row.fef_ticker;
+        prodName = 'Fastmarkets 65% Fe Carajás';
+        prodColor = '#e3b341';
+      } else if (_oreFwdProduct === 'lump') {
+        histKey = 'iron_ore_lump_lpf';
+        ticker = row.lpf_ticker || row.fef_ticker;
+        prodName = 'Platts Lump Premium';
+        prodColor = '#a371f7';
+        prodUnit = '$/dmtu';
+      }
+
       var tenor = row.tenor || '';
-      titleEl.textContent = 'SGX Iron Ore Contract History - ' + tenor + ' (' + ticker + ')';
+      titleEl.textContent = 'SGX Iron Ore Contract History — ' + prodName + ' ' + tenor + ' (' + ticker + ')';
 
       badgeEl.textContent = 'Active Forward Contract · ' + (row.delivery_month || '') + ' ' + (row.delivery_year || '');
       badgeEl.style.cssText = 'font-size:11px;padding:3px 10px;border-radius:4px;font-weight:600;' +
-        'background:rgba(56,139,253,0.15);color:#58a6ff;border:1px solid rgba(56,139,253,0.3);';
+        'background:' + prodColor + '22;color:' + prodColor + ';border:1px solid ' + prodColor + '55;';
 
-      loadOreHistory('iron_ore_fef').then(function () {
-        var hist = DATA.sgxHistory ? (DATA.sgxHistory['iron_ore_fef'] || []) : [];
+      loadOreHistory(histKey).then(function () {
+        var hist = DATA.sgxHistory ? (DATA.sgxHistory[histKey] || []) : [];
         var contractRows = hist.filter(function (h) { return h.contract === ticker; });
 
         if (contractRows.length < 2) {
@@ -25647,10 +25671,10 @@ if (intelTabsContainer) {
             labels: hLabels,
             datasets: [
               {
-                label: ticker + ' Daily Settlement ($/dmt)',
+                label: ticker + ' Daily Settlement (' + prodUnit + ')',
                 data: hPrices,
-                borderColor: '#58a6ff',
-                backgroundColor: 'rgba(88,166,255,0.15)',
+                borderColor: prodColor,
+                backgroundColor: prodColor + '22',
                 borderWidth: 2,
                 pointRadius: 2,
                 fill: true,
@@ -25679,7 +25703,7 @@ if (intelTabsContainer) {
                   title: function (c) { return c[0].label; },
                   label: function (c) {
                     if (c.dataset.type === 'bar') return ' Volume: ' + fmt(c.parsed.y, 0) + ' lots';
-                    return ' Settlement: $' + fmt(c.parsed.y, 2) + '/t';
+                    return ' Settlement: $' + (prodUnit === '$/dmtu' ? fmt(c.parsed.y, 4) : fmt(c.parsed.y, 2)) + (prodUnit === '$/dmtu' ? '/dmtu' : '/t');
                   }
                 }
               }
@@ -25688,8 +25712,8 @@ if (intelTabsContainer) {
               x: { grid: { color: '#151a22' }, ticks: { font: { size: 10 }, maxTicksLimit: 12 } },
               y: {
                 grid: { color: '#151a22' },
-                ticks: { font: { size: 10 }, callback: function (v) { return '$' + fmt(v, 1); } },
-                title: { display: true, text: '$/dmt CFR China', color: '#8b949e', font: { size: 11 } }
+                ticks: { font: { size: 10 }, callback: function (v) { return '$' + (prodUnit === '$/dmtu' ? fmt(v, 3) : fmt(v, 1)); } },
+                title: { display: true, text: prodUnit + ' CFR China', color: '#8b949e', font: { size: 11 } }
               },
               yVol: {
                 position: 'right',
@@ -25705,6 +25729,13 @@ if (intelTabsContainer) {
       });
     }
     window.renderIronOreContractHistory = renderIronOreContractHistory;
+
+    function closeOreHistory() {
+      var panel = document.getElementById('ironOreHistoryPanel');
+      if (panel) panel.style.display = 'none';
+      destroyChart('ironOreHistoryChart');
+    }
+    window.closeOreHistory = closeOreHistory;
 
     // -------------------------------------------------------
     // FREIGHT MOMENTUM REGIME
@@ -32230,6 +32261,64 @@ if (intelTabsContainer) {
           html = `<div class="rt-title">Capesize Freight to Ore Landed Cost Ratio</div>`;
           html += `<div style="font-size:11px;color:#8b949e;margin-bottom:8px;line-height:1.35;"><strong>Formula</strong>: (Capesize Spot Freight $/ton / CFR 62% Fe Ore $/dmt) × 100%.</div>`;
           html += `<div style="font-size:11px;color:#8b949e;margin-bottom:8px;line-height:1.35;">Measures ocean transport burden on total landed ore price. High ratios (&gt;25%) indicate shipping constraints; low ratios (&lt;15%) leave substantial headroom for freight expansion.</div>`;
+        }
+        else if (type === 'concept-sgx-iron-ore') {
+          html = `<div class="rt-title">SGX Iron Ore Forward Term Structure</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Exchange Benchmark</span><span class="rt-val">Singapore Exchange (SGX)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Forward Tenors</span><span class="rt-val">40 Monthly Tenors (Prompt to Dec 2029)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Standard Lot</span><span class="rt-val">100 DMT / Lot (Cash Cleared)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Tracked Curves</span><span class="rt-val">TSI 62%, Fastmarkets 65%, Lump (LPF)</span></div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:8px 0 4px;line-height:1.4;"><strong>Macro Shipping Multiplier</strong>: Widening 65/62 Carajás spread incentivizes Chinese mills to import Brazilian ore (~11,000 nm, 38 days) over Australian ore (~3,500 nm, 12 days), driving a massive ~3.1x ton-mile expansion for Capesize shipping demand.</div>`;
+          html += `<div class="rt-note">Click any contract point on the curve to inspect its full historical daily settlement lifecycle and traded volume bars.</div>`;
+        }
+        else if (type === 'restock-sgx-slope' || type === 'sgx-fwd-regime') {
+          html = `<div class="rt-title">SGX Forward Slope &amp; Curve Regime</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Metric</span><span class="rt-val">Prompt Month M2 − M1 Spread</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Pricing Base</span><span class="rt-val">USD / Dry Metric Tonne CFR China</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Clearing Provenance</span><span class="rt-val">SGX TSI 62% Iron Ore Futures</span></div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:8px 0 4px;line-height:1.4;"><strong>Backwardation (Negative Slope)</strong>: Spot/prompt commands a premium over forward contracts. Strong signal of prompt physical ore scarcity at Chinese ports, mill raw material deficit, and urgent demand for seaborne Capesize arrivals.</div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:0 0 4px;line-height:1.4;"><strong>Contango (Positive Slope)</strong>: Forward contracts trade above prompt spot. Indicates comfortable port inventories or softening near-term blast furnace run rates.</div>`;
+          html += `<div class="rt-note">Live continuous pricing updated from official Singapore Exchange daily settlements.</div>`;
+        }
+        else if (type === 'restock-carajas-premium' || type === 'sgx-fwd-spread') {
+          html = `<div class="rt-title">Carajás 65% vs Standard 62% Fe Spread</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Quality Spread</span><span class="rt-val">Fastmarkets 65% minus TSI 62%</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Normal Range</span><span class="rt-val">$12.00 – $18.00 / tonne</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Long-Haul Multiplier</span><span class="rt-val pos">~3.1x Ton-Mile Distance</span></div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:8px 0 4px;line-height:1.4;"><strong>Blast Furnace Economics</strong>: High-grade 65% Fe Carajás fines (Vale Northern System) reduce coke consumption and blast furnace emissions. High steel mill profitability widens this spread.</div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:0 0 4px;line-height:1.4;"><strong>Capesize Voyage Impact</strong>: Tubarão–Qingdao (C3 route) consumes ~38 days vs ~12 days from Port Hedland (C5 route). Spreads above $14/t spur Brazilian export demand, absorbing Capesize fleet capacity.</div>`;
+          html += `<div class="rt-note">Direct institutional paper spread traded on SGX under ticker M65F minus FEF.</div>`;
+        }
+        else if (type === 'sgx-fwd-prompt') {
+          html = `<div class="rt-title">Prompt Month 62% Settle Price</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Product</span><span class="rt-val">TSI Iron Ore CFR China (62% Fe)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">SGX Contract</span><span class="rt-val">FEF Front Month (100 DMT/lot)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Settlement Mode</span><span class="rt-val">Cash Settled against TSI Monthly Avg</span></div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:8px 0 4px;line-height:1.4;"><strong>Global Pricing Anchor</strong>: Cleared daily settlement for the prompt futures delivery contract. Serves as the international benchmark for seaborne iron ore supply agreements.</div>`;
+          html += `<div class="rt-note">Official Singapore Exchange daily clearing settlement price.</div>`;
+        }
+        else if (type === 'sgx-fwd-lump') {
+          html = `<div class="rt-title">SGX Platts Lump Premium (LPF)</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Pricing Base</span><span class="rt-val">USD / Dry Metric Tonne Unit ($/dmtu)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Underlying Index</span><span class="rt-val">S&amp;P Global Platts Lump Premium</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Contract Code</span><span class="rt-val">SGX LPF (100 DMT/lot)</span></div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:8px 0 4px;line-height:1.4;"><strong>Direct-Charge Advantage</strong>: Lump ore goes straight into blast furnaces without sintering. Premium surges when Tangshan and northern Chinese provinces mandate sinter furnace production cuts to curb winter smog.</div>`;
+          html += `<div class="rt-note">Multiply $/dmtu by Fe content (~62.5%) to calculate per-tonne premium (~$15.25/t at $0.244/dmtu).</div>`;
+        }
+        else if (type === 'sgx-fwd-oi') {
+          html = `<div class="rt-title">Forward Curve Open Interest</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Market Metric</span><span class="rt-val">Total Active Open Positions</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Underlying Volume</span><span class="rt-val">&gt;120 Million Metric Tonnes</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Liquidity Profile</span><span class="rt-val pos">Institutional Deep Tier-1</span></div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:8px 0 4px;line-height:1.4;"><strong>Commercial Hedging</strong>: Represents active forward hedging by global miners (Vale, BHP, Rio Tinto, Fortescue), trading houses, and mills. High OI confirms deep price discovery across the curve.</div>`;
+          html += `<div class="rt-note">Aggregate sum of open interest across all 40 cleared forward contract expiries.</div>`;
+        }
+        else if (type === 'sgx-contract-history') {
+          html = `<div class="rt-title">Contract Settlement Lifecycle</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Data Frequency</span><span class="rt-val">Daily Cleared Settlement &amp; Volume</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Exchange Source</span><span class="rt-val">SGX Derivatives Clearing</span></div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:8px 0 4px;line-height:1.4;">Displays the daily historical closing price trajectory and daily trading volume bars for this specific contract tenor since it began trading on the exchange.</div>`;
+          html += `<div class="rt-note">Click "Close" or another tenor point on the curve above to switch contracts.</div>`;
         }
         else if (type === 'lpg-spot-tc-spread') {
           const seg = (target.getAttribute('data-tt-seg') || 'vlgc').toUpperCase();
