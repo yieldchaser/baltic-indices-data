@@ -34,26 +34,10 @@
   },
   "effective_max_cap": 28,
   "exclusion_reason": "LINKED_ASSET_SOURCES = baltic/breakwave_insights/hellenic; only these sources are replayed (docs_replayed 8416); book/breakwave/broker_reports/poten (434) excluded by construction, never entering collect_linked_asset_sections; adapt_baltic never calls the collector so baltic replays zeros. Verified: 8416+434=8850 = documents.jsonl rows; excluded breakdown verified against documents.jsonl (book 12, poten 30, broker_reports 105, breakwave 287 = drybulk 209 + tankers 78).",
-  "failed_by_attribution": {
-    "inferential": 7,
-    "logged": 79,
-    "unlogged": 5
-  },
   "failed_by_reason": {
     "PDFSyntaxError": 86,
     "unknown_extraction_failure": 4,
     "unresolvable_relative_ref": 1
-  },
-  "failed_by_source_attribution": {
-    "baltic": {},
-    "breakwave_insights": {
-      "inferential": 7,
-      "logged": 55,
-      "unlogged": 5
-    },
-    "hellenic": {
-      "logged": 24
-    }
   },
   "failed_by_source_reason": {
     "baltic": {},
@@ -73,8 +57,8 @@
   },
   "failed_unknown": 4,
   "head": {
-    "full": "918ebe0b65b5a4d57704d37f112d3fb0efbfbc7b",
-    "short": "918ebe0b6"
+    "full": "35b510e8e65ad6c7097a6549c01c6618211ced58",
+    "short": "35b510e8e"
   },
   "ingested_null_node_records": 0,
   "inputs": {

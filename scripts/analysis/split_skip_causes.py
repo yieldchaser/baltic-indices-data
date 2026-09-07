@@ -63,22 +63,6 @@ non-content) carry null by construction. ``node_id`` is the tree-shard
 linked-asset section matched by ``Source asset:`` rel, falling back to the
 section ``Linked asset: {filename}`` title for shards whose summary lacks the
 rel prefix (e.g. CNBC-linked html text assets); or null.
-
-Attribution semantics (E2): every record carries ``attribution`` describing
-its errors.jsonl coverage. ``errors.jsonl`` logs at most one exception entry
-per parent doc (join key: errors ``file`` == documents ``source_path``; per-
-asset file names are never logged), so a parent entry shared by several
-failed sibling assets can only directly attest ONE of them. Within each doc,
-in replay order, the first failed asset carrying the parent's exception class
-is ``logged``; further failed siblings sharing that single entry are
-``inferential`` (same ``reason``, weaker evidence: ``.pdf`` mirror + doc
-failed tally, consistent magic bytes — not a per-asset log line). ``failed``
-records whose parent doc has no errors.jsonl entry at all are ``unlogged``
-(the 4 ``unknown_extraction_failure`` + 1 ``unresolvable_relative_ref``;
-the resolve-miss branch raises nothing, so there is nothing to log).
-``ingested``/``skipped`` carry null (not applicable). Deterministic: replay
-order is fixed candidate order, so logged-vs-inferential is stable run to
-run; the gate tallies are unaffected (``reason`` values unchanged).
 """
 
 from __future__ import annotations
@@ -446,9 +430,6 @@ def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
     by_rel, by_name = section_index
     seen_paths = set()
     sections_len = 0
-    # E2: errors.jsonl holds at most one exception entry per parent doc, so
-    # only the first failed sibling attributed to it is directly logged.
-    reason_consumed = False
     for raw, tag in tagged:
         href = norm_space(raw)
         kind = asset_kind_for(tag, href)
@@ -456,21 +437,21 @@ def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
             counts["per_doc_cap"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "skipped", "reason": "per_doc_cap",
-                           "reason_unknown": False, "attribution": None,
+                           "reason_unknown": False,
                            "local_mirror_rel": None, "node_id": None})
             continue
         if not href:  # L2338-2340
             counts["empty_href"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "skipped", "reason": "empty_href",
-                           "reason_unknown": False, "attribution": None,
+                           "reason_unknown": False,
                            "local_mirror_rel": None, "node_id": None})
             continue
         if looks_like_non_content_link(href):  # L2341-2343
             counts["non_content_link"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "skipped", "reason": "non_content_link",
-                           "reason_unknown": False, "attribution": None,
+                           "reason_unknown": False,
                            "local_mirror_rel": None, "node_id": None})
             continue
         linked_path = resolve_archive_link_path(html_path, href)
@@ -481,14 +462,14 @@ def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
                 events.append({"href": href, "asset_kind": kind,
                                "disposition": "skipped",
                                "reason": "unresolvable_external",
-                               "reason_unknown": False, "attribution": None,
+                               "reason_unknown": False,
                                "local_mirror_rel": None, "node_id": None})
             else:  # L2350-2351 failed branch (no exception: resolve miss)
                 counts[FAILED_UNRESOLVABLE_REASON] += 1
                 events.append({"href": href, "asset_kind": kind,
                                "disposition": "failed",
                                "reason": FAILED_UNRESOLVABLE_REASON,
-                               "reason_unknown": False, "attribution": "unlogged",
+                               "reason_unknown": False,
                                "local_mirror_rel": None, "node_id": None})
             continue
         linked_rel = relpath_posix(linked_path)
@@ -496,7 +477,7 @@ def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
             counts["duplicate_path"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "skipped", "reason": "duplicate_path",
-                           "reason_unknown": False, "attribution": None,
+                           "reason_unknown": False,
                            "local_mirror_rel": linked_rel, "node_id": None})
             continue
         seen_paths.add(linked_rel)
@@ -506,23 +487,15 @@ def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
             counts["_ingested"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "ingested", "reason": None,
-                           "reason_unknown": False, "attribution": None,
+                           "reason_unknown": False,
                            "local_mirror_rel": linked_rel,
                            "node_id": node_id})
         else:  # L2376-2382 failed (raised or empty: no section)
             reason = error_reason or FAILED_UNKNOWN_REASON
             counts[reason] += 1
-            if error_reason is None:
-                attribution = "unlogged"
-            elif not reason_consumed:
-                attribution = "logged"
-                reason_consumed = True
-            else:
-                attribution = "inferential"
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "failed", "reason": reason,
                            "reason_unknown": error_reason is None,
-                           "attribution": attribution,
                            "local_mirror_rel": linked_rel, "node_id": None})
     return counts, events
 
@@ -653,7 +626,6 @@ def main(argv=None) -> int:
                 "disposition": event["disposition"],
                 "reason": event["reason"],
                 "reason_unknown": event["reason_unknown"],
-                "attribution": event["attribution"],
                 "local_mirror_rel": event["local_mirror_rel"],
                 "node_id": event["node_id"],
             }
@@ -701,10 +673,6 @@ def main(argv=None) -> int:
     failed_by_source_reason = {
         source: collections.Counter() for source in LINKED_ASSET_SOURCES
     }
-    failed_by_attribution = collections.Counter()
-    failed_by_source_attribution = {
-        source: collections.Counter() for source in LINKED_ASSET_SOURCES
-    }
     failed_unknown = 0
     seen_skip_doc = set()
     seen_fail_doc = set()
@@ -717,8 +685,6 @@ def main(argv=None) -> int:
         elif event["disposition"] == "failed":
             failed_by_reason[event["reason"]] += 1
             failed_by_source_reason[event["source"]][event["reason"]] += 1
-            failed_by_attribution[event["attribution"]] += 1
-            failed_by_source_attribution[event["source"]][event["attribution"]] += 1
             if event["reason_unknown"]:
                 failed_unknown += 1
             if event["doc_id"] not in seen_fail_doc:
@@ -833,16 +799,6 @@ def main(argv=None) -> int:
             source: dict(sorted(failed_by_source_reason[source].items()))
             for source in LINKED_ASSET_SOURCES
         },
-        "failed_by_attribution": dict(sorted(
-            (str(key), value) for key, value in failed_by_attribution.items()
-        )),
-        "failed_by_source_attribution": {
-            source: dict(sorted(
-                (str(key), value)
-                for key, value in failed_by_source_attribution[source].items()
-            ))
-            for source in LINKED_ASSET_SOURCES
-        },
         "failed_unknown": failed_unknown,
         "docs_with_failed": {s: replay_docs_with_failed.get(s, 0) for s in LINKED_ASSET_SOURCES},
         "total_docs_with_failed": total_failed_docs,
@@ -887,14 +843,11 @@ def main(argv=None) -> int:
 
     disp_totals = collections.Counter()
     disp_reasons = collections.Counter()
-    disp_attribution = collections.Counter()
     disp_mirror_present = collections.Counter()
     disp_node_matched = 0
     for event in all_events:
         disp_totals[event["disposition"]] += 1
         disp_reasons[event["reason"] if event["reason"] else "<null>"] += 1
-        if event["disposition"] == "failed":
-            disp_attribution[event["attribution"]] += 1
         mirror = event["local_mirror_rel"]
         if mirror:
             exists = (REPO_ROOT / PurePosixPath(mirror).as_posix()).is_file()
@@ -969,7 +922,6 @@ def main(argv=None) -> int:
         )
     )
     print("wrote %s" % DISPOSITIONS_OUT)
-    print("failed_attribution=%s" % dict(sorted(disp_attribution.items())))
     return 0 if reconciled else 1
 
 
