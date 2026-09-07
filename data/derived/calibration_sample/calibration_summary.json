@@ -1,26 +1,20 @@
 {
-  "total_tables_inspected": 15,
-  "total_passed": 3,
-  "total_failed": 12,
-  "overall_pass_rate_pct": 20.0,
+  "total_tables_inspected": 10,
+  "total_passed": 6,
+  "total_failed": 4,
+  "overall_pass_rate_pct": 60.0,
   "by_broker": {
     "ssy": {
-      "total": 3,
-      "passed": 1,
-      "failed": 2,
-      "issues_count": 2
-    },
-    "allied": {
-      "total": 11,
-      "passed": 1,
-      "failed": 10,
-      "issues_count": 87
-    },
-    "breakwave": {
-      "total": 1,
-      "passed": 1,
+      "total": 2,
+      "passed": 2,
       "failed": 0,
       "issues_count": 0
+    },
+    "allied": {
+      "total": 8,
+      "passed": 4,
+      "failed": 4,
+      "issues_count": 68
     }
   }
 }
