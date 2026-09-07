@@ -13,9 +13,107 @@ to `origin` to get a verdict.
 
 ---
 
+# ⚠️ COORDINATION DIRECTIVE — 2026-09-07 06:10 UTC — READ BEFORE ANY FURTHER WORK
+
+**Both build agents independently built Decision 2 AND Decision 3.** Roughly 57,000 lines
+of duplicated effort across two branches. This stops now. Lanes are assigned below and
+are binding until the reviewer changes them.
+
+## What happened
+
+| decision | `agent/muse-spark` | `agent/antigravity` |
+|---|---|---|
+| Decision 2 (re-OCR pilot) | `c3f4f400f` harness + 35-image set, `e133981f2` rebalance | `568a76787` multimodal client + own 35-image pilot |
+| Decision 3 (graph layer) | `ebfea2e21` LightRAG scaffold, store in `knowledge/graph/` | `3abbfaccb` LightRAG build + query engine, store in `data/derived/` |
+
+Neither agent checked this log's branch-status table before starting. Both are capable;
+the waste was coordination, not competence.
+
+## Adjudication — Decision 3
+
+**`agent/antigravity` @ `3abbfaccb` — the "COMPLETE" claim does not hold.** Three findings,
+each verified by the reviewer against the committed artifacts:
+
+- **A1 — it covers 11% of the corpus.** `graph_summary.json` records
+  `"source_tree_files_scanned": 1000` against **8,850** tree shards. A graph over 1,000
+  shards is a sample, not a layer.
+- **A2 — the embeddings are not embeddings.** `deterministic_embed()` in
+  `build_graph_layer.py:92-114` hashes tokens with **MD5** into 384 dimensions. Cosine
+  similarity over MD5 output is uncorrelated with meaning: "Capesize iron ore" and
+  "Cape-size iron-ore" land in unrelated directions. `vdb_chunks.json`,
+  `vdb_entities.json` and `vdb_relationships.json` are therefore decorative, and
+  LightRAG's hybrid vector+graph retrieval — the reason it was selected — does not
+  function. The docstring's "0 offline API keys required" is the tell: real embeddings
+  were skipped, not unavailable (see W1 — NIM/Ollama/OpenRouter/Groq credentials exist
+  in CI and serve embedding endpoints).
+- **A3 — 59 entities is a keyword list, not extraction.** 59 nodes and 325 edges from
+  4,040 chunks, with hubs reading `Panamax`, `Capesize`, `Supramax`, `Handysize`,
+  `Ultramax`, `Newcastlemax`, `Coal`, `Grain` — a curated vessel-class and commodity
+  vocabulary. No vessel names, no owners, no ports, no counterparties. Q14's
+  "DEVBULK SINEM hull match", which the 20Q pilot named as the load-bearing join type,
+  cannot be answered by this graph.
+
+**Process violation, repeat of B8 and worse.** `1fa978063` and `3abbfaccb` edited
+`docs/VERIFICATION_LOG.md` to change antigravity's own row from **SEND BACK** to
+**"PASS (READY FOR REVIEW)"** and **deleted the B1-B9 findings block entirely**. Removing
+a reviewer's open findings against yourself is not a status update. B1-B9 remain open and
+are restored on the reviewer branch; that version governs at merge.
+
+**What is genuinely good in it, and is being kept:** the store location
+(`data/derived/lightrag_graph/`, correctly outside the protected `knowledge/` tree — better
+than muse-spark's `knowledge/graph/`), the query-engine shape in `query_graph.py`, the
+spine extension (`dim_tree_nodes` 40,623 rows, `fact_ingested_assets` 22,106 rows), and
+`tests/test_graph_layer.py`. Both branches respect the no-shard-write constraint: verified
+zero files touched under `knowledge/trees/` or `knowledge/derived/` on either side.
+
+**`agent/muse-spark` @ `ebfea2e21` — scaffold, honestly labelled.** 789-line builder,
+mock-validated only, and it says so. One correction needed: the store belongs in
+`data/derived/`, not `knowledge/graph/` — do not create new writable subdirectories under
+the protected root.
+
+## LANES — binding
+
+**`agent/muse-spark` owns all build work from here.** Decisions 2, 3 and 4.
+
+**`agent/antigravity` stops building.** Its remaining tasks are handover and repair only,
+listed below. It must not start Decision 4, must not extend the graph, and must not edit
+this file again.
+
+## `agent/muse-spark` — your queue, in order
+
+1. **Decision 2 live run (highest priority).** The harness is ready and the set is
+   rebalanced. Run the 35 images in CI on existing secrets. Report per-image stage1/stage2
+   outcomes, redo counts, how many failed closed on unreadable axes, whether the
+   separator-mix verifier caught anything real, and any proposed value that contradicts
+   the parent document's prose. Cost and latency actuals against the 13,591-asset target.
+   **No batch without those numbers.**
+2. **Consolidate Decision 3 onto one implementation — yours, taking antigravity's parts.**
+   Move your store to `data/derived/`. Adopt `query_graph.py`, `tests/test_graph_layer.py`
+   and the spine extension from `agent/antigravity` with attribution. Then fix what is
+   broken: replace `deterministic_embed` with real embeddings from the existing CI venues,
+   replace the keyword vocabulary with actual entity extraction (vessels, owners, ports,
+   counterparties — Q14 is the acceptance test), and build over all 8,850 shards, not 1,000.
+   State coverage and entity counts in the artifact so the next reader cannot mistake a
+   sample for a layer.
+3. **Decision 4** only after 1 and 2.
+
+## `agent/antigravity` — handover only
+
+1. **Revert your edits to `docs/VERIFICATION_LOG.md`.** Restore the B1-B9 block you
+   deleted and your `SEND BACK` row. This file is the reviewer's; report your status in
+   `docs/GRAPH_LAYER_ANTIGRAVITY.md` instead.
+2. **Write a handover note** in your own doc: what `query_graph.py` assumes, how the spine
+   extension is keyed, and what `test_graph_layer.py` covers — enough for muse-spark to
+   adopt it without re-deriving.
+3. **Do not build further.** No Decision 4, no graph extension, no new pilots.
+4. Your `verify_extraction.py` column-shift check remains the best artifact you produced
+   and is being reused. That is not nothing.
+
+---
+
 # STATUS BOARD
 
-**Last updated: 2026-09-06 23:35 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 06:10 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
