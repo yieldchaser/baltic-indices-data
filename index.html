@@ -3269,6 +3269,16 @@
       border-color: var(--accent);
       box-shadow: 0 0 8px rgba(77, 154, 255, 0.35);
     }
+    .pill-count {
+      display: inline-block;
+      font-size: 9px;
+      padding: 1px 5px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.14);
+      margin-left: 5px;
+      font-family: 'IBM Plex Mono', monospace;
+      letter-spacing: -0.2px;
+    }
     .tracking-status-btn.active {
       background: #1c2838;
       color: var(--accent);
@@ -3739,21 +3749,37 @@
       background: none !important;
       border: none !important;
     }
-    .vessel-dot {
+    .vessel-dot, .vessel-svg-pin {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+    .vessel-svg-pin:hover {
+      transform: scale(1.35);
+      z-index: 1000 !important;
     }
     .anchor-pulse {
       position: absolute;
       top: -3px;
       left: -3px;
-      width: 20px;
-      height: 20px;
+      width: 26px;
+      height: 26px;
       border-radius: 50%;
       background: rgba(227, 179, 65, 0.3);
       animation: anchorPulse 2s infinite ease-out;
+    }
+    .berth-pulse {
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: rgba(63, 185, 80, 0.25);
+      animation: anchorPulse 2.5s infinite ease-out;
     }
     @keyframes anchorPulse {
       0% { transform: scale(0.6); opacity: 0.8; }
@@ -4998,8 +5024,8 @@
 
     /* MAP CONTAINER */
     #bunkerGeoMapContainer {
-      height: 480px;
-      min-height: 440px;
+      height: 380px;
+      min-height: 320px;
       position: relative;
       border-radius: 8px;
       border: 1px solid var(--border);
@@ -12710,9 +12736,14 @@
     </div>
   </div>
 
-  <div class="fearn-search-box">
-    <input type="text" class="fearn-input" id="fearnSnpSearchInput" placeholder="Search by vessel, shipyard, or buyer..." oninput="filterSnpDeals(this.value)">
-    <span style="font-size:10px;color:var(--text-muted);margin-left:auto;" id="fearnSnpCountLabel">Showing latest 150 transactions</span>
+  <div class="fearn-search-box" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+    <input type="text" class="fearn-input" id="fearnSnpSearchInput" placeholder="Search by vessel, shipyard, or buyer..." oninput="filterSnpDeals(this.value)" style="max-width:320px;">
+    <div style="display:flex;align-items:center;gap:8px;margin-left:auto;">
+      <span style="font-size:10px;color:var(--text-muted);" id="fearnSnpCountLabel">Showing 1–50 of 2,592 deals</span>
+      <button class="cp-page-btn" id="btnFearnSnpPrev" onclick="prevFearnSnpPage()" style="padding:2px 8px;font-size:11px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:3px;cursor:pointer;">Prev</button>
+      <span style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;" id="fearnSnpPageInfo">1 / 52</span>
+      <button class="cp-page-btn" id="btnFearnSnpNext" onclick="nextFearnSnpPage()" style="padding:2px 8px;font-size:11px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:3px;cursor:pointer;">Next</button>
+    </div>
   </div>
 
   <div class="fearn-table-wrap" style="max-height:340px;overflow-y:auto;">
@@ -13234,11 +13265,11 @@ if (intelTabsContainer) {
       <div class="tracking-toolbar">
         <div class="tracking-tool-left">
           <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-right:4px;">CLASS:</div>
-          <button class="tracking-pill active" data-class="all" onclick="setTrackingClass('all')">All Classes</button>
-          <button class="tracking-pill" data-class="Tanker" onclick="setTrackingClass('Tanker')">Tankers</button>
-          <button class="tracking-pill" data-class="Dry Bulk" onclick="setTrackingClass('Dry Bulk')">Dry Bulk</button>
-          <button class="tracking-pill" data-class="LPG" onclick="setTrackingClass('LPG')">LPG</button>
-          <button class="tracking-pill" data-class="LNG" onclick="setTrackingClass('LNG')">LNG</button>
+          <button class="tracking-pill active" data-class="all" onclick="setTrackingClass('all')">All Classes <span class="pill-count" id="pillCountAll">1,568</span></button>
+          <button class="tracking-pill" data-class="Tanker" onclick="setTrackingClass('Tanker')">Tankers <span class="pill-count" id="pillCountTanker">1,217</span></button>
+          <button class="tracking-pill" data-class="Dry Bulk" onclick="setTrackingClass('Dry Bulk')">Dry Bulk <span class="pill-count" id="pillCountBulk">63</span></button>
+          <button class="tracking-pill" data-class="LPG" onclick="setTrackingClass('LPG')">LPG <span class="pill-count" id="pillCountLpg">185</span></button>
+          <button class="tracking-pill" data-class="LNG" onclick="setTrackingClass('LNG')">LNG <span class="pill-count" id="pillCountLng">103</span></button>
 
           <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:8px; margin-right:4px;">STATUS:</div>
           <button class="tracking-status-btn active" data-status="all" onclick="setTrackingStatus('all')">All</button>
@@ -13719,23 +13750,33 @@ if (intelTabsContainer) {
                   <span class="tracking-live-tag" style="font-size:9px; padding:2px 6px;" id="bunkerChartTag">VLSFO / MGO / HSFO / BIO</span>
                 </h3>
                 <div class="bunkers-drawer-sub" id="bunkerChartPortSub">
-                  8.5-Year Multi-Grade Historical Series (2018–2026) with Hi-5 Scrubber Spread
+                  3-Year Multi-Grade Historical Series (2023–2026) with Hi-5 Scrubber Spread
                 </div>
               </div>
-              <div style="display:flex; gap:6px; align-items:center;">
+              <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
                 <select id="bunkerChartPortSelect" class="tracking-select" onchange="onBunkerChartPortSelect()">
+                  <option value="Americas Average">Americas Average (Benchmark)</option>
+                  <option value="APAC Average">APAC Average (Benchmark)</option>
+                  <option value="EMEA Average">EMEA Average (Benchmark)</option>
+                  <option value="Global 20 Ports Average">Global 20 Ports Average</option>
                   <option value="Singapore" selected>Singapore</option>
                   <option value="Rotterdam">Rotterdam</option>
                   <option value="Fujairah">Fujairah</option>
                   <option value="Houston">Houston</option>
                   <option value="Santos">Santos</option>
                   <option value="Gibraltar">Gibraltar</option>
+                  <option value="Algeciras">Algeciras</option>
                   <option value="Zhoushan">Zhoushan</option>
+                  <option value="Balboa, Panama">Balboa, Panama</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="Antwerp">Antwerp</option>
+                  <option value="Piraeus">Piraeus</option>
+                  <option value="Busan">Busan</option>
                 </select>
                 <div class="cp-btn-group">
-                  <button class="cp-toggle-btn active" data-range="all" onclick="setBunkerChartRange('all')">Max (2018-2026)</button>
-                  <button class="cp-toggle-btn" data-range="3y" onclick="setBunkerChartRange('3y')">3Y</button>
+                  <button class="cp-toggle-btn active" data-range="all" onclick="setBunkerChartRange('all')">Max (3Y)</button>
                   <button class="cp-toggle-btn" data-range="1y" onclick="setBunkerChartRange('1y')">1Y</button>
+                  <button class="cp-toggle-btn" data-range="6m" onclick="setBunkerChartRange('6m')">6M</button>
                 </div>
               </div>
             </div>
@@ -13749,11 +13790,11 @@ if (intelTabsContainer) {
                 <button class="cp-toggle-btn" data-grade="bio" onclick="setBunkerChartGrade('bio')">Biofuel (B24)</button>
               </div>
               <div style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">
-                Source: Ship &amp; Bunker RPC Spot History (482k records, 2018–2026)
+                Source: Ship &amp; Bunker RPC Spot History (482k records, 2023–2026)
               </div>
             </div>
 
-            <div style="height:230px; position:relative; width:100%;">
+            <div style="height:250px; min-height:220px; position:relative; width:100%;">
               <canvas id="bunkerMainChart"></canvas>
             </div>
           </div>
@@ -25648,7 +25689,7 @@ function renderFearnleysRecentFixtures() {
   let html = '';
   filtered.slice(0, 100).forEach(r => {
     html += `
-      <tr>
+      <tr data-tooltip=" " data-tt-type="fearnleys-recent-fixture" data-tt-vessel="${escapeHtml(r.vessel || '')}" data-tt-charterer="${escapeHtml(r.charterer || '')}" data-tt-seg="${escapeHtml(r.segment || '')}" data-tt-route="${escapeHtml(r.route || '')}" data-tt-rate="${escapeHtml(r.rate || '')}" data-tt-date="${escapeHtml(r.date || '')}" data-tt-laycan="${escapeHtml(r.laycan || '')}">
         <td class="mono" style="color:var(--text-muted);">${r.date}</td>
         <td style="font-weight:600;color:var(--text-bright);">${r.vessel}</td>
         <td><span class="fearn-badge fearn-badge-bulk">${r.segment}</span></td>
@@ -25662,9 +25703,13 @@ function renderFearnleysRecentFixtures() {
   tbody.innerHTML = html;
 }
 
+var _fearnFixtureSearchDebounce = null;
 function filterRecentFixtures(val) {
-  FEARNLEYS_CONTROLLER.fixtureSearchTerm = val;
-  renderFearnleysRecentFixtures();
+  clearTimeout(_fearnFixtureSearchDebounce);
+  _fearnFixtureSearchDebounce = setTimeout(function() {
+    FEARNLEYS_CONTROLLER.fixtureSearchTerm = val;
+    renderFearnleysRecentFixtures();
+  }, 120);
 }
 
 // -----------------------------------------------------------------------------
@@ -25867,8 +25912,25 @@ function setSnpFilter(filterKey) {
   renderFearnleysSnpTable();
 }
 
+var _fearnSnpSearchDebounce = null;
 function filterSnpDeals(term) {
-  FEARNLEYS_CONTROLLER.snpSearchTerm = term;
+  clearTimeout(_fearnSnpSearchDebounce);
+  _fearnSnpSearchDebounce = setTimeout(function() {
+    FEARNLEYS_CONTROLLER.snpSearchTerm = term;
+    FEARNLEYS_CONTROLLER.snpPage = 1;
+    renderFearnleysSnpTable();
+  }, 120);
+}
+
+function prevFearnSnpPage() {
+  if ((FEARNLEYS_CONTROLLER.snpPage || 1) > 1) {
+    FEARNLEYS_CONTROLLER.snpPage = (FEARNLEYS_CONTROLLER.snpPage || 1) - 1;
+    renderFearnleysSnpTable();
+  }
+}
+
+function nextFearnSnpPage() {
+  FEARNLEYS_CONTROLLER.snpPage = (FEARNLEYS_CONTROLLER.snpPage || 1) + 1;
   renderFearnleysSnpTable();
 }
 
@@ -25894,10 +25956,26 @@ function renderFearnleysSnpTable() {
     return true;
   });
 
+  const page = FEARNLEYS_CONTROLLER.snpPage || 1;
+  const pageSize = 50;
+  const totalPages = Math.ceil(filtered.length / pageSize) || 1;
+  if (FEARNLEYS_CONTROLLER.snpPage > totalPages) FEARNLEYS_CONTROLLER.snpPage = totalPages;
+  if (FEARNLEYS_CONTROLLER.snpPage < 1) FEARNLEYS_CONTROLLER.snpPage = 1;
+
+  const start = (FEARNLEYS_CONTROLLER.snpPage - 1) * pageSize;
+  const end = Math.min(start + pageSize, filtered.length);
+  const paged = filtered.slice(start, end);
+
   const countLabel = document.getElementById('fearnSnpCountLabel');
   if (countLabel) {
-    countLabel.textContent = `Showing ${filtered.length} of ${deals.length} recorded deals`;
+    countLabel.textContent = `Showing ${filtered.length ? start + 1 : 0}–${end} of ${filtered.length} recorded deals`;
   }
+  const pageInfo = document.getElementById('fearnSnpPageInfo');
+  if (pageInfo) pageInfo.textContent = `${FEARNLEYS_CONTROLLER.snpPage} / ${totalPages}`;
+  const prevBtn = document.getElementById('btnFearnSnpPrev');
+  if (prevBtn) prevBtn.disabled = (FEARNLEYS_CONTROLLER.snpPage <= 1);
+  const nextBtn = document.getElementById('btnFearnSnpNext');
+  if (nextBtn) nextBtn.disabled = (FEARNLEYS_CONTROLLER.snpPage >= totalPages);
 
   const tbody = document.getElementById('fearnSnpTableBody');
   if (!tbody) return;
@@ -25908,7 +25986,7 @@ function renderFearnleysSnpTable() {
   }
 
   let html = '';
-  filtered.forEach(d => {
+  paged.forEach(d => {
     const badgeClass = d.segment === 'bulk' ? 'fearn-badge-bulk' : 'fearn-badge-tank';
     const priceStr = d.price_usd_m ? '$' + d.price_usd_m.toFixed(1) + 'M' : '—';
     const dwtStr = d.dwt ? Number(d.dwt).toLocaleString() : '—';
@@ -34561,9 +34639,19 @@ var PORT_COORDINATES = {
   'TGLFW': { name: 'Lome', country: 'Togo', lat: 6.130, lon: 1.280 }
 };
 
+var trackingTabFullyInitialized = false;
+
 function renderTrackingTab() {
   window.renderTrackingTab = renderTrackingTab;
   if (!DATA.loaded) return;
+
+  if (trackingTabFullyInitialized) {
+    if (trackingMap && typeof trackingMap.invalidateSize === 'function') {
+      setTimeout(function() { trackingMap.invalidateSize(); }, 60);
+    }
+    return;
+  }
+  trackingTabFullyInitialized = true;
 
   // Initialize Map if not already created
   if (!trackingMapInitialized) {
@@ -34612,15 +34700,20 @@ function initTrackingMap() {
       minZoom: 2,
       maxZoom: 16,
       zoomControl: true,
-      attributionControl: false
+      attributionControl: false,
+      preferCanvas: true
     });
 
     window.trackingMap = trackingMap;
 
-    // CartoDB Dark Matter tile layer (matches dark theme #0a0e14 perfectly)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      maxZoom: 19,
-      subdomains: 'abcd'
+    // Esri World Dark Gray Canvas Base + Reference Overlay (clean, no API key watermark)
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 16,
+      attribution: 'Esri, USGS, NOAA'
+    }).addTo(trackingMap);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 16,
+      opacity: 0.85
     }).addTo(trackingMap);
 
     // Marker layers
@@ -34688,6 +34781,11 @@ function updateTrackingHUD() {
   var waiting = vessels.filter(function(v) { return v.operational_status === 'Waiting at anchor'; }).length;
   var berth = vessels.filter(function(v) { return v.operational_status === 'Operating at berth'; }).length;
 
+  var countTanker = vessels.filter(function(v) { return (v.asset_class || '').toLowerCase().includes('tanker'); }).length;
+  var countBulk = vessels.filter(function(v) { return (v.asset_class || '').toLowerCase().includes('bulk'); }).length;
+  var countLpg = vessels.filter(function(v) { return (v.asset_class || '').toLowerCase().includes('lpg'); }).length;
+  var countLng = vessels.filter(function(v) { return (v.asset_class || '').toLowerCase().includes('lng'); }).length;
+
   var hTotal = document.getElementById('hudTrackedHulls');
   var hWaiting = document.getElementById('hudWaitingAnchor');
   var hBerth = document.getElementById('hudOperatingBerth');
@@ -34695,12 +34793,23 @@ function updateTrackingHUD() {
   var hRedSea = document.getElementById('hudRedSeaDiverted');
   var hCape = document.getElementById('hudCapeSurge');
 
-  if (hTotal) hTotal.textContent = total ? total.toLocaleString() : '740';
-  if (hWaiting) hWaiting.textContent = waiting ? waiting.toLocaleString() : '306';
-  if (hBerth) hBerth.textContent = berth ? berth.toLocaleString() : '434';
+  if (hTotal) hTotal.textContent = total ? total.toLocaleString() : '1,568';
+  if (hWaiting) hWaiting.textContent = waiting ? waiting.toLocaleString() : '614';
+  if (hBerth) hBerth.textContent = berth ? berth.toLocaleString() : '954';
   if (hChoke) hChoke.textContent = '28';
   if (hRedSea) hRedSea.textContent = '-73.1%';
   if (hCape) hCape.textContent = '+75.6%';
+
+  var pAll = document.getElementById('pillCountAll');
+  if (pAll) pAll.textContent = total.toLocaleString();
+  var pTank = document.getElementById('pillCountTanker');
+  if (pTank) pTank.textContent = countTanker.toLocaleString();
+  var pBulk = document.getElementById('pillCountBulk');
+  if (pBulk) pBulk.textContent = countBulk.toLocaleString();
+  var pLpg = document.getElementById('pillCountLpg');
+  if (pLpg) pLpg.textContent = countLpg.toLocaleString();
+  var pLng = document.getElementById('pillCountLng');
+  if (pLng) pLng.textContent = countLng.toLocaleString();
 }
 
 function filterTrackingData() {
@@ -34774,6 +34883,19 @@ function renderTrackingTable() {
     var tr = document.createElement('tr');
     tr.className = 'vessel-row';
     tr.id = 'vessel-row-' + v.imo_number;
+    tr.setAttribute('data-tooltip', ' ');
+    tr.setAttribute('data-tt-type', 'tracking-vessel-row');
+    tr.setAttribute('data-tt-vessel', v.vessel_name || '');
+    tr.setAttribute('data-tt-imo', v.imo_number || '');
+    tr.setAttribute('data-tt-dwt', v.dwt || 0);
+    tr.setAttribute('data-tt-asset', v.asset_class || '');
+    tr.setAttribute('data-tt-status', v.operational_status || '');
+    tr.setAttribute('data-tt-port', v.portname || '');
+    tr.setAttribute('data-tt-country', v.country || '');
+    tr.setAttribute('data-tt-waiting', v.days_waiting || 0);
+    tr.setAttribute('data-tt-cargo', v.cargo_type || '');
+    tr.setAttribute('data-tt-lat', v.lat || 0);
+    tr.setAttribute('data-tt-lon', v.lon || 0);
 
     var statusClass = (v.operational_status === 'Operating at berth') ? 'status-badge-berth' : 'status-badge-anchor';
     var statusText = (v.operational_status === 'Operating at berth') ? 'At Berth' : 'At Anchor';
@@ -34877,12 +34999,17 @@ function onTrackingPortChange() {
   }
 }
 
+var trackingSearchTimer = null;
 function onTrackingSearchInput() {
   var input = document.getElementById('trackingSearchInput');
   if (!input) return;
   trackingSearchQuery = input.value;
   trackingCurrentPage = 1;
-  renderTrackingTable();
+  clearTimeout(trackingSearchTimer);
+  trackingSearchTimer = setTimeout(function() {
+    renderTrackingTable();
+    plotVesselMarkers();
+  }, 120);
 }
 
 function setTrackingSubView(subview) {
@@ -34986,6 +35113,70 @@ function toggleTrackingLayer(layerName) {
   }
 }
 
+function getVesselMarkerIcon(v) {
+  var isBerth = (v.operational_status === 'Operating at berth');
+  var cls = (v.asset_class || '').toLowerCase();
+
+  var fill, border, pulseClass, svg;
+  if (cls.includes('bulk')) {
+    fill = isBerth ? '#3fb950' : '#e3b341';
+    border = isBerth ? '#238636' : '#d29922';
+    pulseClass = isBerth ? 'berth-pulse' : 'anchor-pulse';
+    svg = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M12 2L18 7V19C18 20.1 17.1 21 16 21H8C6.9 21 6 20.1 6 19V7L12 2Z" fill="' + fill + '" fill-opacity="0.4" stroke="' + border + '" stroke-width="1.6"/>' +
+      '<rect x="9" y="7" width="6" height="2.2" rx="0.4" fill="' + fill + '" stroke="#0a0e14" stroke-width="0.8"/>' +
+      '<rect x="9" y="10.5" width="6" height="2.2" rx="0.4" fill="' + fill + '" stroke="#0a0e14" stroke-width="0.8"/>' +
+      '<rect x="9" y="14" width="6" height="2.2" rx="0.4" fill="' + fill + '" stroke="#0a0e14" stroke-width="0.8"/>' +
+      '<rect x="8" y="18" width="8" height="2" rx="0.4" fill="#ffffff" stroke="#0a0e14" stroke-width="0.6"/>' +
+      '</svg>';
+  } else if (cls.includes('lng')) {
+    fill = isBerth ? '#a371f7' : '#e3b341';
+    border = isBerth ? '#8957e5' : '#d29922';
+    pulseClass = isBerth ? 'berth-pulse' : 'anchor-pulse';
+    svg = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M12 2L18 7V19C18 20.1 17.1 21 16 21H8C6.9 21 6 20.1 6 19V7L12 2Z" fill="' + fill + '" fill-opacity="0.4" stroke="' + border + '" stroke-width="1.6"/>' +
+      '<circle cx="12" cy="7.5" r="2.2" fill="' + fill + '" stroke="#0a0e14" stroke-width="0.8"/>' +
+      '<circle cx="12" cy="12" r="2.2" fill="' + fill + '" stroke="#0a0e14" stroke-width="0.8"/>' +
+      '<circle cx="12" cy="16.5" r="2.2" fill="' + fill + '" stroke="#0a0e14" stroke-width="0.8"/>' +
+      '<rect x="8.5" y="18.5" width="7" height="1.8" rx="0.4" fill="#ffffff" stroke="#0a0e14" stroke-width="0.6"/>' +
+      '</svg>';
+  } else if (cls.includes('lpg')) {
+    fill = isBerth ? '#f0883e' : '#e3b341';
+    border = isBerth ? '#bd561d' : '#d29922';
+    pulseClass = isBerth ? 'berth-pulse' : 'anchor-pulse';
+    svg = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M12 2L18 7V19C18 20.1 17.1 21 16 21H8C6.9 21 6 20.1 6 19V7L12 2Z" fill="' + fill + '" fill-opacity="0.4" stroke="' + border + '" stroke-width="1.6"/>' +
+      '<rect x="8.5" y="6.5" width="7" height="3.5" rx="1.75" fill="' + fill + '" stroke="#0a0e14" stroke-width="0.8"/>' +
+      '<rect x="8.5" y="11.5" width="7" height="3.5" rx="1.75" fill="' + fill + '" stroke="#0a0e14" stroke-width="0.8"/>' +
+      '<rect x="8.5" y="17.5" width="7" height="2.2" rx="0.4" fill="#ffffff" stroke="#0a0e14" stroke-width="0.6"/>' +
+      '</svg>';
+  } else {
+    // Tankers (Crude / Products)
+    fill = isBerth ? '#58a6ff' : '#e3b341';
+    border = isBerth ? '#1f6feb' : '#d29922';
+    pulseClass = isBerth ? 'berth-pulse' : 'anchor-pulse';
+    svg = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M12 2L18 7V19C18 20.1 17.1 21 16 21H8C6.9 21 6 20.1 6 19V7L12 2Z" fill="' + fill + '" fill-opacity="0.4" stroke="' + border + '" stroke-width="1.6"/>' +
+      '<line x1="12" y1="6" x2="12" y2="16" stroke="' + fill + '" stroke-width="1.6" stroke-linecap="round"/>' +
+      '<line x1="8.5" y1="11" x2="15.5" y2="11" stroke="' + fill + '" stroke-width="2" stroke-linecap="round"/>' +
+      '<rect x="8.5" y="17.5" width="7" height="2.2" rx="0.4" fill="#ffffff" stroke="#0a0e14" stroke-width="0.6"/>' +
+      '</svg>';
+  }
+
+  var iconHtml = '<div class="vessel-svg-pin" title="' + escapeHtml(v.vessel_name) + '">' +
+    (!isBerth ? '<div class="' + pulseClass + '"></div>' : '') +
+    svg +
+    '</div>';
+
+  return L.divIcon({
+    className: 'vessel-marker-custom',
+    html: iconHtml,
+    iconSize: [20, 20],
+    iconAnchor: [10, 10],
+    popupAnchor: [0, -10]
+  });
+}
+
 function plotVesselMarkers() {
   if (!trackingMap || !vesselMarkersLayer) return;
   vesselMarkersLayer.clearLayers();
@@ -34996,20 +35187,14 @@ function plotVesselMarkers() {
   vessels.forEach(function(v) {
     if (!v.lat || !v.lon) return;
 
-    var isBerth = (v.operational_status === 'Operating at berth');
-    var iconHtml = isBerth
-      ? '<div class="vessel-dot berth"><svg width="12" height="12" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5" fill="#3fb950" stroke="#0a0e14" stroke-width="1.5"/><circle cx="7" cy="7" r="2" fill="#fff"/></svg></div>'
-      : '<div class="vessel-dot anchor"><div class="anchor-pulse"></div><svg width="12" height="12" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5" fill="#e3b341" stroke="#0a0e14" stroke-width="1.5"/><circle cx="7" cy="7" r="2" fill="#000"/></svg></div>';
-
-    var customIcon = L.divIcon({
-      className: isBerth ? 'vessel-marker-berth' : 'vessel-marker-anchor',
-      html: iconHtml,
-      iconSize: [14, 14],
-      iconAnchor: [7, 7],
-      popupAnchor: [0, -8]
-    });
-
+    var customIcon = getVesselMarkerIcon(v);
     var marker = L.marker([v.lat, v.lon], { icon: customIcon });
+
+    var isBerth = (v.operational_status === 'Operating at berth');
+    var ttText = '<strong>' + escapeHtml(v.vessel_name) + '</strong> (' + escapeHtml(v.asset_class || 'Vessel') + ')<br>' +
+                 (isBerth ? '<span style="color:#3fb950;">Operating at berth</span>' : '<span style="color:#e3b341;">Waiting at anchor (' + (v.days_waiting || 0).toFixed(1) + 'd)</span>') + '<br>' +
+                 escapeHtml(v.portname) + (v.cargo_type ? ' · ' + escapeHtml(v.cargo_type) : '');
+    marker.bindTooltip(ttText, { sticky: true, opacity: 0.95 });
 
     // Historical trajectory lookup
     var traj = (DATA.vesselTrajectories && DATA.vesselTrajectories[v.imo_number]) ? DATA.vesselTrajectories[v.imo_number] : [];
@@ -35323,6 +35508,9 @@ function renderChokepointsDirectory() {
     var card = document.createElement('div');
     card.className = 'cp-dir-card' + (cp.id === trackingActiveChokepointId ? ' selected' : '');
     card.id = 'cp-card-' + cp.id;
+    card.setAttribute('data-tooltip', ' ');
+    card.setAttribute('data-tt-type', 'chokepoint-card');
+    card.setAttribute('data-tt-cp-id', cp.id);
 
     var statusCls = getStatusClass(cp.disruption_status);
     var chgText = (cp.baseline_change_pct > 0 ? '+' : '') + cp.baseline_change_pct + '%';
@@ -37863,6 +38051,88 @@ function escapeHtml(str) {
           if (val) html += `<div class="rt-row"><span class="rt-label">Live Status</span><span class="rt-val" style="color:var(--accent);font-weight:700;">${val}</span></div>`;
           if (desc) html += `<div class="rt-note">${desc}</div>`;
         }
+        else if (type === 'tracking-vessel-row') {
+          const vessel = target.getAttribute('data-tt-vessel') || 'Vessel';
+          const imo = target.getAttribute('data-tt-imo') || '';
+          const dwt = parseInt(target.getAttribute('data-tt-dwt')) || 0;
+          const asset = target.getAttribute('data-tt-asset') || 'Vessel';
+          const status = target.getAttribute('data-tt-status') || '';
+          const port = target.getAttribute('data-tt-port') || '';
+          const country = target.getAttribute('data-tt-country') || '';
+          const wait = parseFloat(target.getAttribute('data-tt-waiting')) || 0;
+          const cargo = target.getAttribute('data-tt-cargo') || '';
+          const lat = parseFloat(target.getAttribute('data-tt-lat')) || 0;
+          const lon = parseFloat(target.getAttribute('data-tt-lon')) || 0;
+
+          const isBerth = status === 'Operating at berth';
+          const traj = (window.DATA && DATA.vesselTrajectories && DATA.vesselTrajectories[imo]) ? DATA.vesselTrajectories[imo] : [];
+
+          html = `<div class="rt-title">${vessel} (${asset})</div>`;
+          html += `<div class="rt-row"><span class="rt-label">IMO Identifier</span><span class="rt-val" style="font-family:'IBM Plex Mono', monospace;">${imo}</span></div>`;
+          if (dwt > 0) html += `<div class="rt-row"><span class="rt-label">Deadweight (DWT)</span><span class="rt-val">${Number(dwt).toLocaleString()} DWT</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Current Status</span><span class="rt-val ${isBerth ? 'pos' : 'neg'}" style="font-weight:700;">${status}</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Port Call</span><span class="rt-val">${port}${country ? ' (' + country + ')' : ''}</span></div>`;
+          if (wait > 0) html += `<div class="rt-row"><span class="rt-label">Port Waiting Time</span><span class="rt-val" style="color:var(--yellow);">${wait.toFixed(1)} Days in Queue</span></div>`;
+          if (cargo) html += `<div class="rt-row"><span class="rt-label">Reported Cargo</span><span class="rt-val">${cargo}</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">AIS Coordinates</span><span class="rt-val" style="font-family:'IBM Plex Mono', monospace;">${lat.toFixed(3)}°, ${lon.toFixed(3)}°</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Historical Voyage Sequence</span><span class="rt-val" style="color:var(--accent);">${traj.length ? traj.length + ' Recorded Commercial Fixture Legs' : 'Live Position Fix'}</span></div>`;
+          html += `<div class="rt-note">Click row to center map on vessel and render full historical voyage corridor polyline.</div>`;
+        }
+        else if (type === 'chokepoint-card') {
+          const cpId = target.getAttribute('data-tt-cp-id');
+          const summary = window.DATA && DATA.chokepointSummary;
+          const cpList = summary && summary.chokepoints ? summary.chokepoints : [];
+          const cp = cpList.find(c => c.id === cpId);
+          if (cp) {
+            const chg = cp.baseline_change_pct;
+            const chgCls = chg < -20 ? 'neg' : (chg > 10 ? 'pos' : '');
+            html = `<div class="rt-title">${cp.name} (${cp.region})</div>`;
+            html += `<div class="rt-row"><span class="rt-label">Disruption Status</span><span class="rt-val" style="color:var(--accent);font-weight:700;">${(cp.disruption_status || '').replace(/_/g, ' ')}</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">7-Day Avg Daily Transits</span><span class="rt-val" style="font-weight:700;">${cp.avg_7d} transits/day</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Vs Pre-Disruption Baseline</span><span class="rt-val ${chgCls}" style="font-weight:700;">${chg > 0 ? '+' : ''}${chg}%</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Pre-Crisis Historical Volume</span><span class="rt-val">${cp.historical_baseline_daily} transits/day</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Strategic Flow Share</span><span class="rt-val">${cp.share_global_maritime_oil_pct || cp.share_global_trade_pct || 'Key'}% global trade</span></div>`;
+            if (cp.strategic_importance) html += `<div class="rt-note">${cp.strategic_importance}</div>`;
+          }
+        }
+        else if (type === 'fearnleys-recent-fixture') {
+          const vessel = target.getAttribute('data-tt-vessel') || '';
+          const charterer = target.getAttribute('data-tt-charterer') || '';
+          const seg = target.getAttribute('data-tt-seg') || '';
+          const route = target.getAttribute('data-tt-route') || '';
+          const rate = target.getAttribute('data-tt-rate') || '';
+          const date = target.getAttribute('data-tt-date') || '';
+          const laycan = target.getAttribute('data-tt-laycan') || 'Prompt';
+
+          html = `<div class="rt-title">${vessel} — Verified Commercial Fixture</div>`;
+          if (date) html += `<div class="rt-row"><span class="rt-label">Fixture Date</span><span class="rt-val">${date}</span></div>`;
+          if (charterer) html += `<div class="rt-row"><span class="rt-label">Charterer</span><span class="rt-val" style="font-weight:700;color:var(--text-bright);">${charterer}</span></div>`;
+          if (seg) html += `<div class="rt-row"><span class="rt-label">Vessel Segment</span><span class="rt-val">${seg}</span></div>`;
+          if (route) html += `<div class="rt-row"><span class="rt-label">Trade Corridor</span><span class="rt-val">${route}</span></div>`;
+          if (rate) html += `<div class="rt-row"><span class="rt-label">Agreed Fixture Rate</span><span class="rt-val" style="color:var(--accent);font-weight:700;">${rate}</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Laycan Window</span><span class="rt-val">${laycan}</span></div>`;
+          html += `<div class="rt-note">Direct Hasura fixture record from Fearnleys 52-year institutional database.</div>`;
+        }
+        else if (type === 'fearnleys-snp-deal') {
+          const dealId = target.getAttribute('data-tt-deal-id');
+          const vessel = target.getAttribute('data-tt-vessel') || 'Vessel';
+          const price = parseFloat(target.getAttribute('data-tt-price')) || 0;
+          const dwt = parseInt(target.getAttribute('data-tt-dwt')) || 0;
+          const summary = window.DATA && DATA.fearnleysSummary;
+          const txs = (summary && summary.snp_transactions_ledger && summary.snp_transactions_ledger.transactions) ? summary.snp_transactions_ledger.transactions : [];
+          const d = txs.find(t => String(t.id) === String(dealId)) || {};
+
+          html = `<div class="rt-title">${vessel} — Verified S&P Deal</div>`;
+          if (d.date) html += `<div class="rt-row"><span class="rt-label">Transaction Date</span><span class="rt-val">${d.date}</span></div>`;
+          if (d.segment) html += `<div class="rt-row"><span class="rt-label">Sector</span><span class="rt-val" style="text-transform:uppercase;">${d.segment}</span></div>`;
+          if (d.built) html += `<div class="rt-row"><span class="rt-label">Built Year</span><span class="rt-val">${d.built}</span></div>`;
+          if (d.yard) html += `<div class="rt-row"><span class="rt-label">Shipyard</span><span class="rt-val">${d.yard}</span></div>`;
+          if (dwt > 0) html += `<div class="rt-row"><span class="rt-label">Deadweight</span><span class="rt-val">${Number(dwt).toLocaleString()} DWT</span></div>`;
+          if (price > 0) html += `<div class="rt-row"><span class="rt-label">Reported Price</span><span class="rt-val" style="color:var(--accent);font-weight:700;">$${price.toFixed(1)}M USD</span></div>`;
+          if (d.usd_per_dwt) html += `<div class="rt-row"><span class="rt-label">Unit Valuation</span><span class="rt-val" style="color:var(--yellow);font-weight:700;">$${Number(d.usd_per_dwt).toLocaleString()} / DWT</span></div>`;
+          if (d.buyer) html += `<div class="rt-row"><span class="rt-label">Acquiring Counterparty</span><span class="rt-val" style="color:#fff;">${d.buyer}</span></div>`;
+          if (d.comment) html += `<div class="rt-note">${d.comment}</div>`;
+        }
         else {
           html = '';
         }
@@ -38179,6 +38449,7 @@ var bunkersChartPort = 'Singapore';
 var bunkersChartRange = 'all';
 var bunkersChartGrade = 'vlsfo';
 var bunkerMainChartInstance = null;
+var bunkersTabFullyInitialized = false;
 
 function renderBunkersTab() {
   window.renderBunkersTab = renderBunkersTab;
@@ -38186,6 +38457,17 @@ function renderBunkersTab() {
 
   var summary = DATA.bunkerSummary;
   if (!summary) return;
+
+  if (bunkersTabFullyInitialized) {
+    if (bunkerGeoMap && typeof bunkerGeoMap.invalidateSize === 'function') {
+      setTimeout(function() { bunkerGeoMap.invalidateSize(); }, 60);
+    }
+    if (bunkerMainChartInstance && typeof bunkerMainChartInstance.resize === 'function') {
+      bunkerMainChartInstance.resize();
+    }
+    return;
+  }
+  bunkersTabFullyInitialized = true;
 
   // Initialize Map if not already created
   if (!bunkerGeoMapInitialized) {
@@ -38222,15 +38504,20 @@ function initBunkerGeoMap() {
       minZoom: 2,
       maxZoom: 14,
       zoomControl: true,
-      attributionControl: false
+      attributionControl: false,
+      preferCanvas: true
     });
 
     window.bunkerGeoMap = bunkerGeoMap;
 
-    // CartoDB Dark Matter tile layer
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      maxZoom: 19,
-      subdomains: 'abcd'
+    // Esri World Dark Gray Canvas Base + Reference Overlay (clean, no API key watermark)
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 16,
+      attribution: 'Esri, USGS, NOAA'
+    }).addTo(bunkerGeoMap);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 16,
+      opacity: 0.85
     }).addTo(bunkerGeoMap);
 
     bunkerMarkersLayer = L.layerGroup().addTo(bunkerGeoMap);
@@ -38426,11 +38713,12 @@ function selectBunkerPort(p) {
   var row = document.getElementById('bunker-row-' + p.name.replace(/\s+/g, '-'));
   if (row) row.classList.add('selected');
 
-  // Fly map
+  // Fly map (use continental zoom level 3 for regional averages, port zoom level 6 for specific ports)
   if (bunkerGeoMap && p.lat && p.lon) {
-    bunkerGeoMap.flyTo([p.lat, p.lon], 6, { duration: 1.0 });
+    var zoomLevel = (p.name && p.name.includes('Average')) ? 3 : 6;
+    bunkerGeoMap.flyTo([p.lat, p.lon], zoomLevel, { duration: 1.0 });
     var hud = document.getElementById('bunkerMapHudDetail');
-    if (hud) hud.textContent = p.name + ' (' + p.region + ') — Focused Port Fuel Indications';
+    if (hud) hud.textContent = p.name + ' (' + p.region + ') — Focused Fuel Indications';
   }
 
   // Update chart
@@ -38478,12 +38766,16 @@ function setBunkerGrade(grade) {
   renderBunkersSpotTable();
 }
 
+var bunkersSearchTimer = null;
 function onBunkersSearchInput() {
   var input = document.getElementById('bunkersSearchInput');
   if (!input) return;
   bunkersSearchQuery = input.value;
   bunkersCurrentPage = 1;
-  renderBunkersSpotTable();
+  clearTimeout(bunkersSearchTimer);
+  bunkersSearchTimer = setTimeout(function() {
+    renderBunkersSpotTable();
+  }, 120);
 }
 
 function setBunkersSubView(subview) {
@@ -38628,7 +38920,8 @@ function renderBunkerMainChart() {
   var series = monthlyMap[bunkersChartPort] || monthlyMap['Singapore'] || [];
 
   var range = bunkersChartRange;
-  if (range === '1y') series = series.slice(-12);
+  if (range === '6m') series = series.slice(-6);
+  else if (range === '1y') series = series.slice(-12);
   else if (range === '3y') series = series.slice(-36);
 
   var labels = series.map(function(r) { return r.m; });
@@ -38688,7 +38981,7 @@ function renderBunkerMainChart() {
         fill: true,
         tension: 0.2,
         borderWidth: 2,
-        pointRadius: range === '1y' ? 3 : 2,
+        pointRadius: (range === '6m' || range === '1y') ? 3 : 2,
         pointHoverRadius: 5
       }]
     },
@@ -38721,6 +39014,7 @@ function renderBunkerMainChart() {
         },
         y: {
           grid: { color: 'rgba(28, 35, 51, 0.5)' },
+          grace: '8%',
           ticks: {
             color: '#7a8494',
             font: { family: 'IBM Plex Mono', size: 10 },

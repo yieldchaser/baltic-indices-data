@@ -128,7 +128,17 @@ PORT_COORDS = {
 def guess_region_and_coords(port_name, port_code):
     if port_name in PORT_COORDS:
         return PORT_COORDS[port_name]
-    
+
+    p_clean = (port_name or '').strip().lower()
+    if 'americas' in p_clean:
+        return {'lat': 25.0, 'lon': -85.0, 'region': 'Americas', 'country': 'Americas'}
+    if 'apac' in p_clean:
+        return {'lat': 15.0, 'lon': 115.0, 'region': 'APAC', 'country': 'APAC'}
+    if 'emea' in p_clean:
+        return {'lat': 35.0, 'lon': 15.0, 'region': 'EMEA', 'country': 'EMEA'}
+    if 'global' in p_clean:
+        return {'lat': 20.0, 'lon': 20.0, 'region': 'Global', 'country': 'Global'}
+
     # Check by country prefix in code (e.g. US, CN, JP, IT, NO, ES, AU)
     code_clean = (port_code or '').strip().upper()
     prefix = code_clean[:2] if len(code_clean) >= 2 else ''
@@ -271,34 +281,32 @@ def build_bunker_summary():
         'singapore_vol_yoy_pct': +5.8
     }
 
-    # 3. Monthly Historical Time-Series (2018–2026) for Core Hubs
-    target_series_ports = ['Singapore', 'Rotterdam', 'Fujairah', 'Houston', 'Santos', 'Gibraltar', 'Algeciras', 'Zhoushan']
-    sub_master = df_master[df_master['port_name'].isin(target_series_ports)].copy()
-    sub_master['month'] = sub_master['observation_date'].str.slice(0, 7)
-    
-    monthly_series = {}
-    for pname in target_series_ports:
-        p_df = sub_master[sub_master['port_name'] == pname]
-        monthly_series[pname] = []
-        months = sorted(p_df['month'].unique())
-        for m in months:
-            m_df = p_df[p_df['month'] == m]
-            v_avg = sanitize_float(m_df[m_df['grade'] == 'VLSFO']['price_usd'].mean())
-            m_avg = sanitize_float(m_df[m_df['grade'].isin(['MGO', 'LSMGO'])]['price_usd'].mean())
-            h_avg = sanitize_float(m_df[m_df['grade'] == 'IFO380']['price_usd'].mean())
-            s_avg = sanitize_float(m_df[m_df['grade'] == 'SS']['price_usd'].mean())
-            bio_avg = sanitize_float(m_df[m_df['grade'] == 'BIO']['price_usd'].mean())
-            if not s_avg and v_avg and h_avg:
-                s_avg = round(v_avg - h_avg, 2)
+    # 3. Monthly Historical Time-Series (2023–2026) for All Global Ports & Regional Benchmarks
+    print("Computing monthly historical averages across all ports...")
+    df_master['month'] = df_master['observation_date'].str.slice(0, 7)
+    g_m = df_master.groupby(['port_name', 'month', 'grade'])['price_usd'].mean().unstack().reset_index()
 
-            monthly_series[pname].append({
-                'm': m,
+    monthly_series = {}
+    for pname, p_group in g_m.groupby('port_name'):
+        items = []
+        for _, r in p_group.sort_values('month').iterrows():
+            v_avg = sanitize_float(r.get('VLSFO')) if ('VLSFO' in r and pd.notna(r['VLSFO'])) else None
+            m_avg = sanitize_float(r.get('MGO')) if ('MGO' in r and pd.notna(r['MGO'])) else None
+            if m_avg is None and 'LSMGO' in r and pd.notna(r['LSMGO']):
+                m_avg = sanitize_float(r['LSMGO'])
+            h_avg = sanitize_float(r.get('IFO380')) if ('IFO380' in r and pd.notna(r['IFO380'])) else None
+            s_avg = sanitize_float(r.get('SS')) if ('SS' in r and pd.notna(r['SS'])) else (round(v_avg - h_avg, 2) if (v_avg and h_avg) else None)
+            bio_avg = sanitize_float(r.get('BIO')) if ('BIO' in r and pd.notna(r['BIO'])) else None
+
+            items.append({
+                'm': r['month'],
                 'vlsfo': v_avg,
                 'mgo': m_avg,
                 'hsfo': h_avg,
                 'hi5': s_avg,
                 'bio': bio_avg
             })
+        monthly_series[pname] = items
 
     # 4. 12-Month Forward Curves
     fwd_dict = {}

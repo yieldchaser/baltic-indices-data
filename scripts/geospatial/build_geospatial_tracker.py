@@ -49,6 +49,11 @@ PORT_COORDINATES = {
     "CNNGB": {"name": "Ningbo-Zhoushan", "country": "China", "lat": 29.87, "lon": 121.55, "asset": "Dry Bulk", "cargo": "Iron Ore / LPG"},
     "CNRZH": {"name": "Rizhao", "country": "China", "lat": 35.42, "lon": 119.53, "asset": "Dry Bulk", "cargo": "Iron Ore"},
     "CNJGT": {"name": "Tangshan (Jingtang)", "country": "China", "lat": 39.20, "lon": 119.01, "asset": "Dry Bulk", "cargo": "Coking Coal / Ore"},
+    "IDKMT": {"name": "Kalimantan / Taboneo", "country": "Indonesia", "lat": -3.45, "lon": 115.95, "asset": "Dry Bulk", "cargo": "Thermal Coal"},
+    "KRKAN": {"name": "Gwangyang", "country": "Korea", "lat": 34.91, "lon": 127.70, "asset": "Dry Bulk", "cargo": "Iron Ore / Met Coal"},
+    "INPRT": {"name": "Paradip / Vizag", "country": "India", "lat": 20.26, "lon": 86.67, "asset": "Dry Bulk", "cargo": "Coking Coal / Ore"},
+    "TRCKL": {"name": "Canakkale (Marmara)", "country": "Turkey", "lat": 40.15, "lon": 26.40, "asset": "Dry Bulk", "cargo": "Grain / Transit"},
+    "USSWP": {"name": "South West Pass", "country": "United States", "lat": 28.93, "lon": -89.43, "asset": "Dry Bulk", "cargo": "Agri Bulk"},
     "NLRTM": {"name": "Rotterdam", "country": "The Netherlands", "lat": 51.92, "lon": 4.47, "asset": "Tankers", "cargo": "Crude / Dry Bulk"},
 
     # 2. Tanker Hubs (Crude & Product)
@@ -98,8 +103,14 @@ PORT_NAME_ALIASES = {
     "santos": "BRSSZ",
     "qingdao": "CNQDG", "qingdao port": "CNQDG",
     "ningbo": "CNNGB", "zhoushan": "CNNGB", "ningbo-zhoushan": "CNNGB",
+    "cjk": "CNNGB", "shanghai": "CNNGB",
     "rizhao": "CNRZH",
-    "tangshan": "CNJGT", "jingtang": "CNJGT", "caofeidian": "CNJGT",
+    "tangshan": "CNJGT", "jingtang": "CNJGT", "caofeidian": "CNJGT", "tianjin": "CNJGT",
+    "kalimantan": "IDKMT", "taboneo": "IDKMT", "banjarmasin": "IDKMT",
+    "kwangyang": "KRKAN", "gwangyang": "KRKAN",
+    "paradip": "INPRT", "vizag": "INPRT", "visakhapatnam": "INPRT",
+    "canakkale": "TRCKL",
+    "south west pass": "USSWP", "mississippi": "USSWP",
     "rotterdam": "NLRTM",
     "ras tanura": "SARRT",
     "bonny": "NGBON", "bonny offshore": "NGBON",
@@ -110,20 +121,21 @@ PORT_NAME_ALIASES = {
     "primorsk": "RUPRI",
     "yanbu": "SAYNB",
     "sikka": "INSIK", "jamnagar": "INSIK",
-    "port arthur": "USPOA", "nederland": "USPOA",
+    "port arthur": "USPOA", "nederland": "USPOA", "usgc": "USPOA", "usg": "USPOA",
     "beaumont": "USBPT",
     "ras laffan": "QARLF",
-    "juaymah": "SAJUA", "ju'aymah": "SAJUA",
+    "juaymah": "SAJUA", "ju'aymah": "SAJUA", "ag": "SAJUA", "meg": "SAJUA",
     "mina al ahmadi": "KWMFA", "ahmadi": "KWMFA",
     "chiba": "JPCHB",
     "yokohama": "JPYOK",
     "zhanjiang": "CNZHA",
-    "ulsan": "KRUSN",
+    "ulsan": "KRUSN", "busan": "KRUSN",
     "sabine pass": "USSPG", "sabine": "USSPG",
     "cameron": "USCMR", "lake charles": "USCMR",
     "cove point": "USCVP",
     "darwin": "AUDRW",
-    "bintulu": "MYBTU",
+    "nws": "AUDAM",
+    "bintulu": "MYBTU", "bontang": "MYBTU",
     "arzew": "DZAZW",
     "hammerfest": "NOHFT", "melkoya": "NOHFT",
 }
@@ -318,8 +330,8 @@ def build_geospatial_datasets():
                 prev_date = dep_date
                 leg_counter += 1
 
-        # Check last known port for active lineup eligibility (2024-2026 recency)
-        if prev_locode and prev_locode in PORT_COORDINATES and prev_date and prev_date.year >= 2024:
+        # Check last known port for active lineup eligibility (2023-2026 recency)
+        if prev_locode and prev_locode in PORT_COORDINATES and prev_date and prev_date.year >= 2023:
             vessel_lineups[imo_str] = {
                 "vessel_name": vessel_name,
                 "imo_number": imo_str,
