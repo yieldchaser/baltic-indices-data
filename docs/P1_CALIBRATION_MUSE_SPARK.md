@@ -74,57 +74,29 @@ evidence.
 | ~~4~~ | ~~same parent~~ | ~~`…_img_arrow_d2d09ee0d34a.jpg`~~ | ~~JPEG~~ | ~~480×339~~ | ~~25,841~~ |
 | ~~5~~ | ~~same parent~~ | ~~`…_img_image-asset_06e250205128.jpeg`~~ | ~~JPEG~~ | ~~746×468~~ | ~~29,716~~ |
 
-Disposition totals (D1–D4, from `asset_dispositions.jsonl`, 22,106 records =
-ledger discovered): ingested **13,591** (node_id non-null on all 13,591 —
-gate-enforced; all mirrors on disk) vs skipped **8,424**
-(8,341 `unresolvable_external` + 48 `non_content_link` + 35 `duplicate_path`) vs
-**failed 91** (86 `PDFSyntaxError` + 4 `unknown_extraction_failure`
-(`reason_unknown=true`) + 1 `unresolvable_relative_ref`). Failed assets with a
-local mirror present: **90/91** — every extraction failure resolved locally
-(the only mirror-less failure is the `/s/congestions.png` resolve-miss);
-skipped assets with a local mirror: **35/8,424 — exactly the 35
-`duplicate_path` dups** (33 img + 1 link + 1 pdf; all 35 resolve and exist on
-disk); every other skipped asset carries `local_mirror_rel=null` by
-construction (external/non-content never resolve). Matrix
-(`skip_cause_matrix.json`) is aggregated FROM the dispositions in the same run
-(single derivation path); three-way gate ingested 13,591 / skipped 8,424 /
-failed 91 vs ledger, zero per-doc mismatches.
-
-D4 correction: the M1 reselection below (first 5 unique dup pairs, ~~struck as
-superseded~~) sampled the wrong target — dup mirrors are byte-identical to
-their ingested twins, so no unextracted content lives there. Sample C is
-re-pointed at the ingested set + the 91 failures, where unextracted /
-mis-extracted content lives: 3 ingested images with suspect OCR numerics
-(S1–S3 from `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md` §6, committed tree
-shards) + 2 failed PDF assets of the `PDFSyntaxError` class (real local files
-confirmed on disk; both are HTML error pages saved under `.pdf` names —
-`F1` magic `<!DOCTYPE html>`, `F2` IE-conditional bot-challenge page — which
-is why section extraction raised).
-
-| # | Parent doc (truncated) | Asset file | Format | Dimensions (W×H) | Bytes |
-|---|---|---|---|---|---|
-| ~~1~~ | ~~`…_2021_11_10_drybulk_freight_rates_have_been_hammered…`~~ | ~~`…_img_ch328329_45f94b2d443a.png`~~ | ~~PNG~~ | ~~493×456~~ | ~~13,577~~ |
-| ~~2~~ | ~~same parent~~ | ~~`…_img_ch428329_c4f0f1d367e7.png`~~ | ~~PNG~~ | ~~476×473~~ | ~~18,278~~ |
-| ~~3~~ | ~~`…_2022_01_14_recent_developments_in_indian_coal…`~~ | ~~`…_img_chart328929_80a1b052f03e.jpg`~~ | ~~JPEG~~ | ~~674×332~~ | ~~24,933~~ |
-| ~~4~~ | ~~`…_2022_04_11_large_number_of_coal_mine_deaths…`~~ | ~~`…_img_chart2282429_8c9bdb6b9c8a.jpg`~~ | ~~JPEG~~ | ~~679×216~~ | ~~31,423~~ |
-| ~~5~~ | ~~`…_2022_07_21_signal_dry_bulk_weekly_report`~~ | ~~`…_img_unnamed284629_5be730eb0f80.png`~~ | ~~PNG~~ | ~~2000×800~~ | ~~181,930~~ |
+Disposition totals (from `asset_dispositions.jsonl`, 22,106 records =
+ledger discovered): ingested **13,681** (all mirrors on disk; 13,584 with
+matching tree node, 97 extract-failed with null node) vs skipped **8,425**
+(8,341 `unresolvable_external` + 48 `non_content_link` + 35 `duplicate_path` +
+1 ledger-failed `/s/congestions.png`, null reason). Skipped assets with a
+local mirror present: **35/8,425 — exactly the 35 `duplicate_path` dups**
+(33 img + 1 link + 1 pdf; all 35 resolve and exist on disk); every other
+skipped asset carries `local_mirror_rel=null` by construction
+(external/non-content never resolve).
 
 M1 outcome (a) — reselected Sample C from true-skipped local assets: the only
 true-skipped images on disk are the `duplicate_path` dups (27 unique
 doc+mirror pairs, all breakwave_insights; the 2 `unresolvable_external` img
 records have no mirror). First 5 unique pairs in ledger order (each dup's
-ingested twin in the same doc carries the cited node) are struck above —
-superseded by the D4 set below.
+ingested twin in the same doc carries the cited node):
 
-D4 Sample C (current): unextracted / mis-extracted content.
-
-| # | Kind | Parent doc | Asset file (local mirror) | Format | Size | Disposition evidence |
+| # | Parent doc | Asset file (local mirror) | Format | Dimensions (W×H) | Bytes | Ingested-twin node (tail) |
 |---|---|---|---|---|---|---|
-| C1 | ingested, suspect OCR | `…_2020_06_06_…_the_drama_continues…` (Vale iron-ore table, audit S1) | `…_img_img-1960_8a20a313afb5.jpg` | JPEG | 1125×1530, 210,372 | `disposition=ingested`, node `…_img_img_1960_8a20a313afb5_jpg`; suspect `34.438` amid comma-thousands siblings |
-| C2 | ingested, suspect OCR | `…_2020_06_12_…_highest_capesize_index…` (Q3 capesize chart, audit S2) | `…_img_q3capesize_8e5616c79c4c.jpg` | JPEG | 734×394, 24,293 | `disposition=ingested`, node `…_img_q3capesize_8e5616c79c4c_jpg`; suspects `15366,000` vs `15200.035` vs `9407.00` + `Avorage` |
-| C3 | ingested, suspect OCR | `…_2020_11_23_…_vaccines_investor_optimism…` (dollar-index chart, audit S3) | `…_img_ulf80_7abfec11426d.jpg` | JPEG | 451×283, 16,720 | `disposition=ingested`, node `…_img_ulf80_7abfec11426d_jpg`; suspects `100,00` amid dot-decimals, `97,000`/`$6,000` amid dot-3-decimals |
-| F1 | failed extraction | `breakwave_insights_…_2022_05_30_…_russias_seaborne_oil_flows_changing_patterns` | `reports/breakwave/pdfs/2022-05-30_…_the-future-of-saudi-price-discrimina_0d4f8cd656a6.pdf` | `.pdf` name, HTML body | 121,703 | `disposition=failed`, `reason=PDFSyntaxError`, mirror on disk |
-| F2 | failed extraction | `breakwave_insights_…_2022_12_09_…_china_reopening_boosts_sentiment…` | `reports/breakwave/pdfs/2022-12-09_…_china-commodity-trade-data-november-_1bb3ed9ffda4.pdf` | `.pdf` name, HTML body | 5,174 | `disposition=failed`, `reason=PDFSyntaxError`, mirror on disk |
+| 1 | `…_2021_11_10_drybulk_freight_rates_have_been_hammered…` | `…_img_ch328329_45f94b2d443a.png` | PNG | 493×456 | 13,577 | `…_img_ch328329_45f94b2d443a_png` |
+| 2 | same parent | `…_img_ch428329_c4f0f1d367e7.png` | PNG | 476×473 | 18,278 | `…_img_ch428329_c4f0f1d367e7_png` |
+| 3 | `…_2022_01_14_recent_developments_in_indian_coal…` | `…_img_chart328929_80a1b052f03e.jpg` | JPEG | 674×332 | 24,933 | `…_img_chart328929_80a1b052f03e_jpg` |
+| 4 | `…_2022_04_11_large_number_of_coal_mine_deaths…` | `…_img_chart2282429_8c9bdb6b9c8a.jpg` | JPEG | 679×216 | 31,423 | `…_img_chart2282429_8c9bdb6b9c8a_jpg` |
+| 5 | `…_2022_07_21_signal_dry_bulk_weekly_report` | `…_img_unnamed284629_5be730eb0f80.png` | PNG | 2000×800 | 181,930 | `…_img_unnamed284629_5be730eb0f80_png` |
 
 - Two-stage vision pass executable here? **No — BLOCKED.** Environment check (`Get-ChildItem Env:` + named lookups, names only, no values read): `REDUCTO_API_KEY`, `LLAMA_CLOUD_API_KEY`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` (and bare `REDUCTO`/`LLAMA`/`ANTHROPIC`/`OPENAI`) all **ABSENT**. Native libs (PIL/pymupdf) can stage assets — survey, dedupe, dimension/format triage — but chart datapoint reading needs a vision model that is not provisioned in this sandbox.
 - Exact unblock requirement: provision **one** of (a) an Anthropic/OpenAI API key for direct two-stage vision, or (b) a Reducto/LlamaCloud key for managed async parse; plus written approval of per-image egress budget (scope footnote below) before any batch run.
@@ -143,7 +115,7 @@ D4 Sample C (current): unextracted / mis-extracted content.
 |---|---|---|
 | A hellenic demolition p6 (5×10) | **PASS** | 1 FAIL → redo → PASS, 0 issues; bleed clean |
 | B 10-Q p6 BDRY futures (9×4) | **PASS** | PASS, 0 issues; bleed clean; subtotal tie-out exact |
-| C chart set, D4: 3 ingested suspect-OCR images (S1–S3) + 2 failed PDFSyntaxError PDFs (F1–F2) | **ASSESSED / vision BLOCKED** | n/a (no extraction claimed); readiness verdict + deferred protocol recorded |
+| C chart set, reselected from true-skipped dups (5 images) | **ASSESSED / vision BLOCKED** | n/a (no extraction claimed); readiness verdict + deferred protocol recorded |
 
 Harness session summary: 3 tables inspected, 2 passed, 1 failed (the intentional first-attempt FAIL), i.e. both final tables PASS.
 

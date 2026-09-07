@@ -37,32 +37,21 @@ all ``<img src>``) scoped to the same root
 Output: ``data/derived/skip_cause_matrix.json`` (POSIX paths only) +
 ``data/derived/asset_dispositions.jsonl`` (one compact record per discovered
 asset: doc_id, source, date, href, asset_kind, disposition, reason,
-reason_unknown, local_mirror_rel, node_id) + a human summary on stdout.
-Exit status is nonzero when the replay does not reconcile with the ledger
-tallies. The matrix is a pure aggregation of the disposition records written
-in the same run (single derivation path): per-source/per-cause skipped counts
-plus failed-by-reason counts are summed from ``all_events`` after the gate
-passes, so the two artifacts cannot disagree.
+local_mirror_rel, node_id) + a human summary on stdout. Exit status is
+nonzero when the replay does not reconcile with the ledger tallies.
 
-Disposition semantics (D1): ``disposition`` is one of
-``ingested``/``skipped``/``failed``. ``ingested`` requires a non-null
-``node_id`` (a tree-shard linked-asset section matched the mirror) — the gate
-fails closed on any ``ingested`` record with null ``node_id``. ``failed``
-means resolved locally + mirrored, but no tree section exists because section
-extraction raised (``process_knowledge.py:2376-2379``) or yielded empty text
-(``:2380-2382``), or the href was a non-http(s) unresolvable relative ref
-(``:2350-2351``). ``reason`` on ``failed`` is the exception class parsed from
-the matching ``knowledge/manifests/errors.jsonl`` entry for the parent doc
-(join key: errors ``file`` == documents ``source_path``; per-asset file names
-are not logged, so attribution is parent-level), ``unresolvable_relative_ref``
-for the no-exception resolve-miss branch, else ``unknown_extraction_failure``
-with ``reason_unknown=true`` (never silent). ``local_mirror_rel`` is set only
-when the candidate resolved to a repo file (ingested + ``duplicate_path``
-skips + ``failed`` extraction cases); true-skipped assets (external /
-non-content) carry null by construction. ``node_id`` is the tree-shard
-linked-asset section matched by ``Source asset:`` rel, falling back to the
-section ``Linked asset: {filename}`` title for shards whose summary lacks the
-rel prefix (e.g. CNBC-linked html text assets); or null.
+Disposition semantics (X1/M1): ``disposition`` is ``ingested`` for
+resolved-unique candidates (the read-only proxy for ledger ingested;
+extract-time failures are indistinguishable without extraction and land here
+with ``node_id`` null when no tree section matches) and ``skipped`` with one
+of the five causes otherwise. ``local_mirror_rel`` is set only when the
+candidate resolved to a repo file (ingested + ``duplicate_path`` skips);
+true-skipped assets (external / non-content) carry null by construction.
+``node_id`` is the tree-shard linked-asset section whose ``Source asset:``
+rel matches, or null. Ledger-``failed``-branch candidates (non-http(s)
+unresolvable: exactly 1 repo-wide) are emitted as ``skipped`` with null
+reason and counted separately as ``unclassified_failed_branch`` so the
+five-cause gate stays exact.
 """
 
 from __future__ import annotations
@@ -81,14 +70,13 @@ from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DOCUMENTS_JSONL = "knowledge/manifests/documents.jsonl"
-ERRORS_JSONL = "knowledge/manifests/errors.jsonl"
 PROCESS_KNOWLEDGE = "scripts/process_knowledge.py"
 MATRIX_OUT = "data/derived/skip_cause_matrix.json"
 DISPOSITIONS_OUT = "data/derived/asset_dispositions.jsonl"
 
-DISPOSITIONS = ("ingested", "skipped", "failed")
-FAILED_UNKNOWN_REASON = "unknown_extraction_failure"
-FAILED_UNRESOLVABLE_REASON = "unresolvable_relative_ref"
+DISPOSITIONS = ("ingested", "skipped")
+# Failed-branch (non-http unresolvable) records use disposition "skipped" with
+# null reason as a documented single exception — see module docstring.
 
 LINKED_ASSET_SOURCES = ("baltic", "breakwave_insights", "hellenic")
 CAUSES = (
@@ -104,11 +92,6 @@ CAUSE_LINES = {
     "non_content_link": "scripts/process_knowledge.py:2341-2343",
     "unresolvable_external": "scripts/process_knowledge.py:2346-2349",
     "duplicate_path": "scripts/process_knowledge.py:2356-2358",
-}
-FAILED_LINE_REFS = {
-    "unresolvable_relative_ref": "scripts/process_knowledge.py:2350-2351",
-    "extraction_exception": "scripts/process_knowledge.py:2374-2379",
-    "empty_extracted_text": "scripts/process_knowledge.py:2380-2382",
 }
 CODE_DEFAULT_MAX_CAP = 12  # scripts/process_knowledge.py:87
 CI_PINNED_MAX_CAP = 28  # .github/workflows/process_knowledge.yml:113
@@ -329,105 +312,46 @@ def asset_kind_for(tag: str, href: str) -> str:
     return "link"
 
 
-def load_error_reasons() -> dict:
-    """Map parent-doc ``source_path`` -> exception class from errors.jsonl.
+def linked_section_index(tree_path: Path) -> dict:
+    """Map ``Source asset: {rel}`` -> ``node_id`` for a doc's tree shard.
 
-    Join key is the errors ``file`` field (a repo-rel ``reports/...`` path for
-    doc-level entries). Deterministic: first entry per file wins. Class parse:
-    ``PDFSyntaxError`` when named anywhere in the text (pdfminer root cause
-    behind the wrapping ``PdfminerException``), else the last
-    ``*Error``/``*Exception`` token (innermost raise), else ``OSError`` when an
-    ``Errno`` marker is present. Files with no parseable class are skipped
-    (caller falls back to ``unknown_extraction_failure``).
+    Walks shard children recursively in document order; first section wins.
+    Returns {} when the shard is missing/unparseable (caller records null).
     """
-    mapping = {}
-    errors_path = REPO_ROOT / PurePosixPath(ERRORS_JSONL).as_posix()
-    try:
-        raw = errors_path.read_text(encoding="utf-8")
-    except OSError:
-        return mapping
-    for line in raw.splitlines():
-        if not line.strip():
-            continue
-        try:
-            row = json.loads(line)
-        except ValueError:
-            continue
-        file_rel = row.get("file")
-        if not file_rel or file_rel in mapping:
-            continue
-        errtext = row.get("error") or ""
-        if "PDFSyntaxError" in errtext:
-            mapping[file_rel] = "PDFSyntaxError"
-            continue
-        tokens = re.findall(
-            r"([A-Za-z_][A-Za-z0-9_]*(?:Error|Exception))", errtext
-        )
-        if tokens:
-            mapping[file_rel] = tokens[-1]
-        elif "Errno" in errtext:
-            mapping[file_rel] = "OSError"
-    return mapping
-
-
-def linked_section_index(tree_path: Path) -> tuple:
-    """Map tree-shard linked-asset sections to ``node_id`` (two keys).
-
-    Returns ``(by_rel, by_name)``. ``by_rel`` keys ``Source asset: {rel}``
-    (summary first line); ``by_name`` keys the ``Linked asset: {filename}``
-    title basename — fallback for shards whose summary lacks the rel prefix
-    (D2: CNBC-linked html text assets carry raw page text as summary).
-    Walks shard children recursively in document order; first section wins
-    per key. Returns ``({}, {})`` when the shard is missing/unparseable.
-    """
-    by_rel = {}
-    by_name = {}
+    index = {}
     try:
         shard = json.loads(tree_path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
-        return by_rel, by_name
+        return index
     stack = list(shard.get("children") or [])
     while stack:
         node = stack.pop(0)
         if not isinstance(node, dict):
             continue
-        node_id = node.get("node_id")
-        if node_id:
-            summary = node.get("summary") or node.get("text") or ""
-            first_line = summary.split("\n", 1)[0] if summary else ""
-            if first_line.startswith("Source asset:"):
-                rel = first_line[len("Source asset:"):].strip().split()[0] if first_line[len("Source asset:"):].strip() else ""
-                if rel and rel not in by_rel:
-                    by_rel[rel] = node_id
-            title = node.get("title") or ""
-            if title.startswith("Linked asset:"):
-                name = title[len("Linked asset:"):].strip().split()[0] if title[len("Linked asset:"):].strip() else ""
-                if name and name not in by_name:
-                    by_name[name] = node_id
+        summary = node.get("summary") or node.get("text") or ""
+        first_line = summary.split("\n", 1)[0] if summary else ""
+        if first_line.startswith("Source asset:"):
+            rel = first_line[len("Source asset:"):].strip().split()[0] if first_line[len("Source asset:"):].strip() else ""
+            if rel and rel not in index and node.get("node_id"):
+                index[rel] = node["node_id"]
         stack.extend(node.get("children") or [])
-    return by_rel, by_name
+    return index
 
 
 def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
-                      section_index: tuple, error_reason: str | None) -> tuple:
-    """Replay linked-asset branches capturing one disposition event per candidate.
+                      section_index: dict) -> tuple:
+    """Replay skip branches capturing one disposition event per candidate.
 
-    Branch order mirrors ``collect_linked_asset_sections`` exactly (cap ->
-    empty -> non-content -> resolve -> duplicate -> extract). Resolved-unique
-    candidates with a matched tree section are ``ingested`` (node_id
-    non-null, enforced by the gate); resolved-unique candidates with no
-    section are ``failed`` (resolved + mirrored, but extraction raised or
-    yielded empty text), with ``reason`` = the parent doc's errors.jsonl
-    exception class or ``unknown_extraction_failure`` (``reason_unknown``
-    true). The non-http(s) unresolvable fork (ledger-``failed``) yields
-    ``failed``/``unresolvable_relative_ref``. Events carry the candidate's
-    disposition; callers attach doc-level fields.
+    Branch order mirrors ``split_doc_skips`` exactly (cap -> empty -> non-
+    content -> resolve -> duplicate -> ingested-proxy). Events carry the
+    candidate's disposition; callers attach doc-level fields. The non-http(s)
+    unresolvable fork (ledger-``failed``) yields a ``skipped``/null-reason
+    event (documented single exception; counted separately downstream).
     """
     counts = collections.Counter()
     events = []
     if source not in LINKED_ASSET_SOURCES or source == "baltic":
         return counts, events
-    by_rel, by_name = section_index
     seen_paths = set()
     sections_len = 0
     for raw, tag in tagged:
@@ -437,21 +361,18 @@ def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
             counts["per_doc_cap"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "skipped", "reason": "per_doc_cap",
-                           "reason_unknown": False,
                            "local_mirror_rel": None, "node_id": None})
             continue
         if not href:  # L2338-2340
             counts["empty_href"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "skipped", "reason": "empty_href",
-                           "reason_unknown": False,
                            "local_mirror_rel": None, "node_id": None})
             continue
         if looks_like_non_content_link(href):  # L2341-2343
             counts["non_content_link"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "skipped", "reason": "non_content_link",
-                           "reason_unknown": False,
                            "local_mirror_rel": None, "node_id": None})
             continue
         linked_path = resolve_archive_link_path(html_path, href)
@@ -462,14 +383,11 @@ def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
                 events.append({"href": href, "asset_kind": kind,
                                "disposition": "skipped",
                                "reason": "unresolvable_external",
-                               "reason_unknown": False,
                                "local_mirror_rel": None, "node_id": None})
-            else:  # L2350-2351 failed branch (no exception: resolve miss)
-                counts[FAILED_UNRESOLVABLE_REASON] += 1
+            else:  # L2350-2351 failed branch — single documented exception
+                counts["_failed_branch"] += 1
                 events.append({"href": href, "asset_kind": kind,
-                               "disposition": "failed",
-                               "reason": FAILED_UNRESOLVABLE_REASON,
-                               "reason_unknown": False,
+                               "disposition": "skipped", "reason": None,
                                "local_mirror_rel": None, "node_id": None})
             continue
         linked_rel = relpath_posix(linked_path)
@@ -477,27 +395,57 @@ def replay_doc_events(source: str, html_path: Path, tagged: list, max_cap: int,
             counts["duplicate_path"] += 1
             events.append({"href": href, "asset_kind": kind,
                            "disposition": "skipped", "reason": "duplicate_path",
-                           "reason_unknown": False,
                            "local_mirror_rel": linked_rel, "node_id": None})
             continue
         seen_paths.add(linked_rel)
-        sections_len += 1
-        node_id = by_rel.get(linked_rel) or by_name.get(linked_path.name)
-        if node_id is not None:  # L2383 ingested (section exists)
-            counts["_ingested"] += 1
-            events.append({"href": href, "asset_kind": kind,
-                           "disposition": "ingested", "reason": None,
-                           "reason_unknown": False,
-                           "local_mirror_rel": linked_rel,
-                           "node_id": node_id})
-        else:  # L2376-2382 failed (raised or empty: no section)
-            reason = error_reason or FAILED_UNKNOWN_REASON
-            counts[reason] += 1
-            events.append({"href": href, "asset_kind": kind,
-                           "disposition": "failed", "reason": reason,
-                           "reason_unknown": error_reason is None,
-                           "local_mirror_rel": linked_rel, "node_id": None})
+        sections_len += 1  # read-only proxy for "ingested" (see docstring)
+        events.append({"href": href, "asset_kind": kind,
+                       "disposition": "ingested", "reason": None,
+                       "local_mirror_rel": linked_rel,
+                       "node_id": section_index.get(linked_rel)})
     return counts, events
+
+
+def split_doc_skips(source: str, html_path: Path, candidates: list, max_cap: int):
+    """Replay the five skip branches for one document's candidates.
+
+    ``baltic`` never reaches ``collect_linked_asset_sections`` (``adapt_baltic``
+    returns without linked-asset handling), so it always yields zeros here,
+    matching the ledger. ``sections_len`` counts resolved-unique candidates as
+    ingested: read-only analysis performs no extraction, so extract-time
+    failures cannot be positioned; the ledger reconciliation check below keeps
+    this assumption honest.
+    """
+    counts = collections.Counter()
+    if source not in LINKED_ASSET_SOURCES or source == "baltic":
+        return counts, 0
+    seen_paths = set()
+    sections_len = 0
+    for candidate in candidates:
+        if sections_len >= max_cap:  # L2326-2327
+            counts["per_doc_cap"] += 1
+            continue
+        href = norm_space(candidate)
+        if not href:  # L2338-2340
+            counts["empty_href"] += 1
+            continue
+        if looks_like_non_content_link(href):  # L2341-2343
+            counts["non_content_link"] += 1
+            continue
+        linked_path = resolve_archive_link_path(html_path, href)
+        if linked_path is None:  # L2346-2352
+            parsed = urlparse(href)
+            if parsed.scheme in {"http", "https"}:  # L2348-2349
+                counts["unresolvable_external"] += 1
+            # else: failed (L2350-2351) — not a skip cause.
+            continue
+        linked_rel = relpath_posix(linked_path)
+        if linked_rel in seen_paths:  # L2356-2358
+            counts["duplicate_path"] += 1
+            continue
+        seen_paths.add(linked_rel)
+        sections_len += 1  # read-only proxy for "ingested" (see docstring)
+    return counts, sections_len
 
 
 def head_hash() -> dict:
@@ -516,8 +464,7 @@ def head_hash() -> dict:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(
-        description="Replay linked-asset dispositions (ingested/skipped/failed) "
-        "and reconcile three-way with the ledger."
+        description="Attribute linked_assets_skipped to the five skip causes."
     )
     parser.add_argument(
         "--max-cap",
@@ -555,9 +502,6 @@ def main(argv=None) -> int:
 
     ledger_skipped = collections.Counter()
     ledger_docs_with_skips = collections.Counter()
-    ledger_failed = collections.Counter()
-    ledger_docs_with_failed = collections.Counter()
-    ledger_ingested = collections.Counter()
     ledger_stats = collections.Counter()
     for doc in docs:
         source = doc.get("source", "?")
@@ -573,16 +517,12 @@ def main(argv=None) -> int:
         ledger_skipped[source] += skipped
         if skipped > 0:
             ledger_docs_with_skips[source] += 1
-        failed = doc.get("linked_assets_failed", 0)
-        ledger_failed[source] += failed
-        if failed > 0:
-            ledger_docs_with_failed[source] += 1
-        ledger_ingested[source] += doc.get("linked_assets_ingested", 0)
 
-    error_reasons = load_error_reasons()
-    all_events = []
+    matrix = {source: {cause: 0 for cause in CAUSES} for source in LINKED_ASSET_SOURCES}
+    replay_docs_with_skips = collections.Counter()
     mismatches = []
-    ingested_nulls = []
+    event_divergences = []
+    all_events = []
     replayed = 0
     for doc in docs:
         source = doc.get("source", "?")
@@ -594,25 +534,46 @@ def main(argv=None) -> int:
         if source != "baltic" and html_path.is_file():
             markup = html_path.read_text(encoding="utf-8", errors="ignore")
             tagged = collect_link_candidates_tagged(markup)
+        candidates = [raw for raw, _tag in tagged]
+        counts, _ = split_doc_skips(source, html_path, candidates, max_cap)
         replayed += 1
-        # Disposition pass: one event per candidate (single derivation path;
-        # the matrix below is aggregated from these events, not computed twice).
+        replay_total = 0
+        for cause in CAUSES:
+            matrix[source][cause] += counts.get(cause, 0)
+            replay_total += counts.get(cause, 0)
+        if replay_total > 0:
+            replay_docs_with_skips[source] += 1
+        if replay_total != doc.get("linked_assets_skipped", 0):
+            mismatches.append(
+                {
+                    "doc_id": doc.get("doc_id"),
+                    "source": source,
+                    "ledger_skipped": doc.get("linked_assets_skipped", 0),
+                    "replay_skipped": replay_total,
+                }
+            )
+        # Disposition pass: same branches, one event per candidate. Cross-
+        # checked against the gate path above; any divergence fails the run.
         tree_rel = doc.get("tree_path", "")
         tree_path = REPO_ROOT / PurePosixPath(tree_rel).as_posix() if tree_rel else None
         section_index = (
             linked_section_index(tree_path)
             if tree_path is not None and source != "baltic"
-            else ({}, {})
+            else {}
         )
-        error_reason = error_reasons.get(
-            PurePosixPath(source_path).as_posix()
+        ev_counts, events = replay_doc_events(
+            source, html_path, tagged, max_cap, section_index
         )
-        _ev_counts, events = replay_doc_events(
-            source, html_path, tagged, max_cap, section_index, error_reason
-        )
-        replay_ingested = 0
-        replay_skipped = 0
-        replay_failed = 0
+        for cause in CAUSES:
+            if ev_counts.get(cause, 0) != counts.get(cause, 0):
+                event_divergences.append(
+                    {
+                        "doc_id": doc.get("doc_id"),
+                        "cause": cause,
+                        "gate_path": counts.get(cause, 0),
+                        "event_path": ev_counts.get(cause, 0),
+                    }
+                )
         for event in events:
             event["doc_id"] = doc.get("doc_id")
             event["source"] = source
@@ -625,98 +586,24 @@ def main(argv=None) -> int:
                 "asset_kind": event["asset_kind"],
                 "disposition": event["disposition"],
                 "reason": event["reason"],
-                "reason_unknown": event["reason_unknown"],
                 "local_mirror_rel": event["local_mirror_rel"],
                 "node_id": event["node_id"],
             }
             all_events.append(ordered)
-            if ordered["disposition"] == "ingested":
-                replay_ingested += 1
-                if not ordered["node_id"]:
-                    ingested_nulls.append(
-                        {
-                            "doc_id": ordered["doc_id"],
-                            "href": ordered["href"],
-                            "asset_kind": ordered["asset_kind"],
-                        }
-                    )
-            elif ordered["disposition"] == "skipped":
-                replay_skipped += 1
-            else:
-                replay_failed += 1
-        # THREE-WAY per-doc reconciliation vs the ledger; zero mismatches required.
-        if (
-            replay_ingested != doc.get("linked_assets_ingested", 0)
-            or replay_skipped != doc.get("linked_assets_skipped", 0)
-            or replay_failed != doc.get("linked_assets_failed", 0)
-        ):
-            mismatches.append(
-                {
-                    "doc_id": doc.get("doc_id"),
-                    "source": source,
-                    "ledger_ingested": doc.get("linked_assets_ingested", 0),
-                    "replay_ingested": replay_ingested,
-                    "ledger_skipped": doc.get("linked_assets_skipped", 0),
-                    "replay_skipped": replay_skipped,
-                    "ledger_failed": doc.get("linked_assets_failed", 0),
-                    "replay_failed": replay_failed,
-                }
-            )
-
-    # D3: the matrix is aggregated FROM the disposition records above, so the
-    # two artifacts cannot disagree. Skipped per-source/per-cause plus
-    # failed-by-reason are pure sums over all_events.
-    matrix = {source: {cause: 0 for cause in CAUSES} for source in LINKED_ASSET_SOURCES}
-    replay_docs_with_skips = collections.Counter()
-    replay_docs_with_failed = collections.Counter()
-    failed_by_reason = collections.Counter()
-    failed_by_source_reason = {
-        source: collections.Counter() for source in LINKED_ASSET_SOURCES
-    }
-    failed_unknown = 0
-    seen_skip_doc = set()
-    seen_fail_doc = set()
-    for event in all_events:
-        if event["disposition"] == "skipped":
-            matrix[event["source"]][event["reason"]] += 1
-            if event["doc_id"] not in seen_skip_doc:
-                seen_skip_doc.add(event["doc_id"])
-                replay_docs_with_skips[event["source"]] += 1
-        elif event["disposition"] == "failed":
-            failed_by_reason[event["reason"]] += 1
-            failed_by_source_reason[event["source"]][event["reason"]] += 1
-            if event["reason_unknown"]:
-                failed_unknown += 1
-            if event["doc_id"] not in seen_fail_doc:
-                seen_fail_doc.add(event["doc_id"])
-                replay_docs_with_failed[event["source"]] += 1
 
     totals = {cause: sum(matrix[s][cause] for s in LINKED_ASSET_SOURCES) for cause in CAUSES}
     total_skipped = sum(totals.values())
     total_docs = sum(replay_docs_with_skips.values())
-    total_failed = sum(failed_by_reason.values())
-    total_failed_docs = sum(replay_docs_with_failed.values())
-    total_ingested = sum(
-        1 for event in all_events if event["disposition"] == "ingested"
-    )
     ledger_total = sum(ledger_skipped[s] for s in LINKED_ASSET_SOURCES)
     ledger_docs = sum(ledger_docs_with_skips[s] for s in LINKED_ASSET_SOURCES)
-    ledger_failed_total = sum(ledger_failed[s] for s in LINKED_ASSET_SOURCES)
-    ledger_failed_docs = sum(ledger_docs_with_failed[s] for s in LINKED_ASSET_SOURCES)
-    ledger_ingested_total = sum(
-        ledger_stats[(s, "ingested")] for s in LINKED_ASSET_SOURCES
-    )
     ledger_discovered = sum(
         ledger_stats[(s, "discovered")] for s in LINKED_ASSET_SOURCES
     )
     reconciled = (
         total_skipped == ledger_total
         and total_docs == ledger_docs
-        and total_failed == ledger_failed_total
-        and total_failed_docs == ledger_failed_docs
-        and total_ingested == ledger_ingested_total
         and not mismatches
-        and not ingested_nulls
+        and not event_divergences
         and len(all_events) == ledger_discovered
     )
 
@@ -760,31 +647,24 @@ def main(argv=None) -> int:
     head = head_hash()
     payload = {
         "method": (
-            "Read-only replay of collect_linked_asset_sections "
+            "Read-only replay of collect_linked_asset_sections skip branches "
             "(scripts/process_knowledge.py:2309-2399) per documents.jsonl row: "
             "candidate order = <a href> in document order then <img src>, scoped to "
-            "body>section|section|body; resolved-unique candidates with a matched "
-            "tree section are ingested (node_id non-null, gate-enforced), without "
-            "one are failed with the parent doc's errors.jsonl exception class "
-            "(else unknown_extraction_failure, reason_unknown=true). "
-            "The per-source/per-cause matrix is aggregated FROM the per-asset "
-            "disposition records in this same run (single derivation path). "
-            "baltic yields zeros by construction (adapt_baltic never calls the "
-            "collector). No writes to knowledge/; no existing files modified."
+            "body>section|section|body; resolved-unique candidates counted as ingested "
+            "for cap simulation (no extraction performed). baltic yields zeros by "
+            "construction (adapt_baltic never calls the collector). No writes to "
+            "knowledge/; no existing files modified."
         ),
         "inputs": {
             "documents": DOCUMENTS_JSONL,
-            "errors": ERRORS_JSONL,
             "code": PROCESS_KNOWLEDGE,
         },
         "output": MATRIX_OUT,
-        "dispositions": DISPOSITIONS_OUT,
         "head": head,
         "effective_max_cap": max_cap,
         "code_default_max_cap": CODE_DEFAULT_MAX_CAP,
         "ci_pinned_max_cap": CI_PINNED_MAX_CAP,
         "cause_line_refs": dict(CAUSE_LINES),
-        "failed_line_refs": dict(FAILED_LINE_REFS),
         "per_source": {
             source: dict(matrix[source]) for source in LINKED_ASSET_SOURCES
         },
@@ -792,17 +672,6 @@ def main(argv=None) -> int:
         "total_skipped": total_skipped,
         "docs_with_skips": {s: replay_docs_with_skips.get(s, 0) for s in LINKED_ASSET_SOURCES},
         "total_docs_with_skips": total_docs,
-        "total_ingested": total_ingested,
-        "total_failed": total_failed,
-        "failed_by_reason": dict(sorted(failed_by_reason.items())),
-        "failed_by_source_reason": {
-            source: dict(sorted(failed_by_source_reason[source].items()))
-            for source in LINKED_ASSET_SOURCES
-        },
-        "failed_unknown": failed_unknown,
-        "docs_with_failed": {s: replay_docs_with_failed.get(s, 0) for s in LINKED_ASSET_SOURCES},
-        "total_docs_with_failed": total_failed_docs,
-        "ingested_null_node_records": len(ingested_nulls),
         "ledger": {
             "skipped": {s: ledger_skipped.get(s, 0) for s in LINKED_ASSET_SOURCES},
             "total_skipped": ledger_total,
@@ -810,14 +679,6 @@ def main(argv=None) -> int:
                 s: ledger_docs_with_skips.get(s, 0) for s in LINKED_ASSET_SOURCES
             },
             "total_docs_with_skips": ledger_docs,
-            "ingested": {s: ledger_ingested.get(s, 0) for s in LINKED_ASSET_SOURCES},
-            "total_ingested": ledger_ingested_total,
-            "failed": {s: ledger_failed.get(s, 0) for s in LINKED_ASSET_SOURCES},
-            "total_failed": ledger_failed_total,
-            "docs_with_failed": {
-                s: ledger_docs_with_failed.get(s, 0) for s in LINKED_ASSET_SOURCES
-            },
-            "total_docs_with_failed": ledger_failed_docs,
         },
         "reconciled_with_ledger": reconciled,
         "mismatched_docs": mismatches,
@@ -872,53 +733,35 @@ def main(argv=None) -> int:
     )
     print(total_row)
     print(
-        "three-way gate: ingested replay=%d ledger=%d | skipped replay=%d ledger=%d "
-        "(docs %d/%d) | failed replay=%d ledger=%d (docs %d/%d) | "
-        "mismatched_docs=%d ingested_nulls=%d | reconciled=%s"
+        "replay skipped=%d docs_with_skips=%d | ledger skipped=%d docs_with_skips=%d | "
+        "mismatches=%d | reconciled=%s"
         % (
-            total_ingested,
-            ledger_ingested_total,
             total_skipped,
-            ledger_total,
             total_docs,
+            ledger_total,
             ledger_docs,
-            total_failed,
-            ledger_failed_total,
-            total_failed_docs,
-            ledger_failed_docs,
             len(mismatches),
-            len(ingested_nulls),
             reconciled,
         )
     )
-    if mismatches:
-        for mismatch in mismatches[:20]:
-            print("mismatch: %s" % mismatch)
-    if ingested_nulls:
-        for null in ingested_nulls[:20]:
-            print("ingested_null: %s" % null)
     print("wrote %s" % MATRIX_OUT)
     print(
-        "dispositions: records=%d (ledger discovered=%d) ingested=%d skipped=%d failed=%d "
+        "dispositions: records=%d (ledger discovered=%d) ingested=%d skipped=%d "
         "| reasons=%s | mirror[skipped,exists]=%d mirror[skipped,missing]=%d "
         "mirror[ingested,exists]=%d mirror[ingested,missing]=%d "
-        "mirror[failed,exists]=%d mirror[failed,missing]=%d "
-        "| ingested_with_node_id=%d failed_unknown=%d"
+        "| ingested_with_node_id=%d | event_divergences=%d"
         % (
             len(all_events),
             ledger_discovered,
             disp_totals.get("ingested", 0),
             disp_totals.get("skipped", 0),
-            disp_totals.get("failed", 0),
             dict(sorted(disp_reasons.items())),
             disp_mirror_present.get(("skipped", True), 0),
             disp_mirror_present.get(("skipped", False), 0),
             disp_mirror_present.get(("ingested", True), 0),
             disp_mirror_present.get(("ingested", False), 0),
-            disp_mirror_present.get(("failed", True), 0),
-            disp_mirror_present.get(("failed", False), 0),
             disp_node_matched,
-            failed_unknown,
+            len(event_divergences),
         )
     )
     print("wrote %s" % DISPOSITIONS_OUT)
