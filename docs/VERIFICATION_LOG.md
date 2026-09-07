@@ -13,6 +13,106 @@ to `origin` to get a verdict.
 
 ---
 
+# ⚠️ REVIEWER BENCH TEST — 2026-09-07 06:50 UTC — LOCAL OCR BEATS THE PAID VISION PATH
+
+The reviewer established ground truth by reading source images directly, then benchmarked
+a local open-source OCR stack against it on a no-GPU box (4 cores, 15 GB RAM) that closely
+mirrors a GitHub Actions runner. **Three findings change Decision 2's direction.**
+
+## GT1 — the reviewer's own headline number was wrong, and the correct fix is not a separator swap
+
+Ground truth from the Vale iron-ore table
+(`reports/breakwave/2020/assets/2020-06-06_..._img_img-1960_8a20a313afb5.jpg`), read directly:
+
+```
+000' metric tons          4Q19     3Q19     4Q18      2019
+Northern System         50,729   55,401   52,911   188,721
+  Northern and Eastern  31,438   35,047   37,023   115,352      <-- TRUTH
+  S11D                  19,291   20,354   15,888    73,369
+```
+
+- Legacy Tesseract OCR in `knowledge/chunks/` reads **`34.438`**.
+- This log previously asserted the truth was **`34,438`** and called it a thousands-separator
+  swap. **That was wrong.**
+- The truth is **`31,438`**. The OCR made *two* errors: a digit substitution (**1 → 4**) and
+  a separator substitution (**, → .**).
+
+The table's own subtotal proves it: `31,438 + 19,291 = 50,729`, matching the printed
+Northern System figure exactly. `34,438 + 19,291 = 53,729`, which does not.
+
+**Why this matters more than the number itself:** the pilot's `check_separator_mix` verifier,
+and the planted-error self-test in `reocr_pilot.py` that "proves" it works, both convert
+`34.438` → `34,438` and mark the record **verified**. On the single case the whole verifier
+was built around, a separator-only fix emits a **confidently wrong value**. Arithmetic
+tie-out against a printed subtotal catches it; separator inspection never can. Muse-spark
+already used tie-out correctly on the 10-Q — that technique, not the separator check, is
+the one that generalizes.
+
+## GT2 — the pilot set is 26 unique images, not 35, and the cohort this reviewer prioritized is logos
+
+Measured over `data/derived/pilot_image_set.jsonl` (rebalanced, `e133981f2`):
+
+- **35 entries → 26 unique images** by content hash. Nine are duplicates.
+- One BRS monogram appears **×5**, a second BRS monogram **×5**, a crude-tanker stock photo ×2.
+- The largest `empty_ocr` entries — 2500×2186, which the reviewer's W2 note called
+  "the strongest chart signal" — are the **BRS Shipbrokers corporate logo**. Viewed directly:
+  a blue "BRS" wordmark on white. Zero data. OCR returned nothing because there is nothing.
+
+**The W2 priority was wrong and this directive supersedes it.** "OCR ran and returned nothing"
+is a *weak* signal, not a strong one: an empty result usually means an empty image. The
+cohort worth paying attention to is `separator_suspect` — those are real tables and charts
+with real numbers already in the graph, being served to queries today.
+
+## GT3 — PaddleOCR runs on CPU, is free, and gets the numbers right
+
+Bench, reviewer-run, this container:
+
+| | result |
+|---|---|
+| install | `paddlepaddle` 3.3.1 + `paddleocr` 3.7.0 in a venv, **1.4 GB** |
+| blocker found | default oneDNN path crashes on CPU (`ConvertPirAttribute2RuntimeAttribute not support`). **`enable_mkldnn=False` fixes it.** Required for any CI run. |
+| speed | init 3.6 s, **inference 48.2 s/image**, 92 text lines |
+| accuracy vs GT | **8 / 8 checked values correct**, including `31,438` at confidence **1.00** |
+| legacy errors reproduced | none — no `34.438`, no `34,438`, no `$11D` (it reads `S11D` correctly), no `4.997` |
+| confidence | mean **0.998**, **zero** lines below 0.90 |
+
+Projection: 26 unique pilot images ≈ **21 minutes** serial. Full 13,591-asset corpus ≈ 182 h
+serial, ≈ **45 h at 4-way parallelism**. **$0, and no repo content leaves the machine.**
+
+**One honest caveat.** PaddleOCR also reads `Northem and Eastem` — the same `rn → m` garble
+as Tesseract — at confidence **1.00**. That is a font/ligature property of the source image,
+not a Tesseract defect, and it means **confidence is not a validity signal for labels**. The
+numbers are right; the label needs a separate check (dictionary or parent-prose match).
+
+## DIRECTION — Decision 2 changes venue
+
+**Do not fire the paid CI vision run yet.** It is not forbidden, but it is no longer the
+cheapest way to learn what the pilot was built to learn, and the ground truth above shows the
+verifier would have graded itself wrong on its own flagship case.
+
+### `agent/muse-spark` — revised queue
+
+1. **Add a local PaddleOCR lane to `reocr_pilot.py`** alongside the existing venues:
+   `--venue paddle`. Install in a venv; **`enable_mkldnn=False` is mandatory** or it crashes
+   on CPU. This is a third venue, not a replacement — keep the NIM/Ollama path intact.
+2. **Dedupe the pilot set by content hash before running.** 35 → 26. Re-point the freed slots
+   at `separator_suspect` and at real charts, not at duplicate logos.
+3. **Replace the separator-only verifier check with arithmetic tie-out where a total exists**
+   — the technique already proven on the 10-Q. Keep separator detection as a flag, never as a
+   correction. Update the planted-error fixture: its "corrected" value `34,438` is wrong;
+   truth is `31,438`.
+4. **Run the 26-image pilot locally on PaddleOCR** (~21 min, free) and report the same
+   metrics as before. Then, and only then, propose whether the paid vision venue adds
+   anything the local lane did not.
+5. Decision 3 consolidation continues as previously directed.
+
+### `agent/antigravity` — unchanged, still handover only
+
+Handover note and the `VERIFICATION_LOG.md` revert. No building. The bench above does not
+re-open any lane for you.
+
+---
+
 # ⚠️ COORDINATION DIRECTIVE — 2026-09-07 06:10 UTC — READ BEFORE ANY FURTHER WORK
 
 **Both build agents independently built Decision 2 AND Decision 3.** Roughly 57,000 lines
@@ -113,7 +213,7 @@ this file again.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-07 06:10 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 06:50 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
