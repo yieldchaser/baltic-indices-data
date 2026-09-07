@@ -70,6 +70,148 @@ value `34,438` → `31,438`), then Decision 3 consolidation.
 
 ---
 
+# 🎯 END-GOAL ALIGNMENT + ALL-LOCAL STACK — 2026-09-07 07:15 UTC — SUPERSEDES ALL VENUE GUIDANCE
+
+## 0. USER DIRECTIVE — hosted model venues are OUT
+
+**No NVIDIA NIM. No Ollama. No OpenRouter. No Groq. No paid API of any kind.**
+Everything runs locally, via Python libraries and GitHub tooling. Nothing leaves the
+machine. All earlier guidance in this log pointing at those venues (W1, the Decision 2
+vision path, the `reocr_pilot.yml` venue chain) is **void**. `.github/workflows/reocr_pilot.yml`
+should be deleted or reduced to a local-only job; its secrets wiring must go.
+
+**Empirical support, not just preference:** the dispatched live run
+(`34091897626`, 2026-09-07 06:40 UTC) **failed**, uploading a 3.2 KB artifact with
+`separator_mix_flags: 1` and `redo_ok_events: 1` — roughly one image of 35 produced
+anything. The repo's `OLLAMA_MODEL` is retired upstream (HTTP 410) and the OpenRouter/Groq
+defaults are text-only. The hosted path cost money to configure, produced nothing, and is
+now closed.
+
+## 1. THE END GOAL — we have not deviated, and here is the proof
+
+The mission asks for a knowledge base with **three levels preserved, not flattened**:
+
+| mission level | what it means | which decision serves it | status |
+|---|---|---|---|
+| **Breadth** — many sources | SGX, Capital Link, Fearnleys/Hasura, EDGAR, CFTC, ETF, AIS weekly, grain/port flows | **Decision 4** | **not started** |
+| **Depth** — internal structure | text, tables, charts, time series *inside* each document | **Decision 2** (re-OCR of 10,894 images) | pilot built, unrun |
+| **Interlinking** — cross-source joins | vessel in a fixture → its valuation history → SGX curve that week → bunker at load port → owner's SEC filing | **Decision 3** (graph over trees) | two rival scaffolds, neither sound |
+
+Decision 1 was not a detour: a knowledge base built over 258 empty Baltic documents and
+boilerplate Poten captures would have encoded nothing. Fixing live data loss was the
+precondition for all three levels.
+
+**The honest flag: Breadth is the level the user cares most about, and it is the one we
+queued last.** SGX iron ore, the Fearnleys/Hasura API, the AIS weekly analytics — that is
+Decision 4, and it has sat behind Decision 2 and 3 for the whole project. That sequencing
+was defensible when the agents were colliding; it is not defensible now.
+
+**Correction to the plan: stop serializing.** Decision 4 is pure data plumbing — CSV and
+API ingestion, manifest wiring, spine tables. It needs **no OCR and no graph**, touches
+different files, and can run fully parallel to Decision 2. Lanes are re-cut below to
+exploit that.
+
+## 2. ALL-LOCAL STACK — reviewer-specified, benchmark-backed
+
+| layer | tool | status |
+|---|---|---|
+| PDF native text / vector tables | **PyMuPDF + pdfplumber** | already in repo; keep as the **first router** — never OCR a page with a good text layer |
+| OCR + table structure | **PaddleOCR 3.7.0** (`paddlepaddle` 3.3.1) with PP-StructureV3 | **reviewer-benchmarked: 8/8 ground-truth values correct, mean confidence 0.998, 48.2 s/image on 4 CPU cores.** `enable_mkldnn=False` is **mandatory** — the default oneDNN path crashes on CPU |
+| Embeddings | **sentence-transformers**, small CPU model (`all-MiniLM-L6-v2` ~80 MB, or `BGE-small-en-v1.5`) | replaces BOTH the MD5-hash placeholder and the hosted-embedding need. Fully local, CPU-fine |
+| Entity extraction | **gazetteer + spaCy `EntityRuler`** — no LLM | see §3, this is the important one |
+| Graph | **networkx over the SQLite spine** | see §4 — a proposed amendment to Decision 3 |
+| Second-opinion OCR lane | MinerU / dots.ocr | **hold.** Both are VLMs and realistically want a GPU. Do not add until PaddleOCR demonstrably fails on a specific page |
+
+## 3. Entity extraction without an LLM — the repo already holds the answer
+
+The standard objection to dropping LLMs is that entity extraction needs one. Here it does
+not, and the local route is **better** for a financial knowledge base.
+
+**This repository already contains authoritative entity lists.** Build the gazetteer from
+its own structured data rather than inventing entities from prose:
+
+- **Vessel names** — `data/derived/fearnleys_catalog.csv`, the hellenic S&P/demolition
+  fixture tables, `data/demolition/`
+- **Ports and routes** — PortWatch congestion data, Baltic route definitions
+- **Owners / counterparties** — ETF holdings (`data/etf/`), SEC filings, Capital Link index constituents
+- **Vessel classes, commodities, indices** — already enumerated across `data/futures/`, `data/indices/`
+
+Matching a curated gazetteer with spaCy's `EntityRuler` is **deterministic, auditable, and
+cannot hallucinate a vessel that does not exist** — which matters when the output feeds
+valuations and freight economics. It is also the only way Q14 (the DEVBULK SINEM hull match)
+gets answered: that needs a real vessel-name list, which a 59-term keyword vocabulary and an
+LLM guess both fail to provide.
+
+## 4. Decision 3 amendment — put to the user, not decided unilaterally
+
+**Decision 3 selected LightRAG. LightRAG's core value is LLM-driven entity and relation
+extraction.** With hosted models out of scope and no local LLM in the stack, that engine is
+unavailable, and what remains of LightRAG is a vector store we can build better ourselves.
+
+**Reviewer's recommendation:** build the graph **deterministically** — `networkx` over the
+existing SQLite spine, with nodes from the §3 gazetteer and edges from joins the repo can
+already prove (shared `doc_id`, same week, same vessel, same route, same port), plus
+`sentence-transformers` for semantic neighbours. Keep antigravity's `query_graph.py` shape
+and `tests/test_graph_layer.py`; keep the store under `data/derived/`.
+
+This is strictly more auditable than an LLM-extracted graph and needs no API. **It is a
+change to a user decision, so it is a recommendation pending confirmation — not an
+instruction.** Until confirmed, treat "graph layer over `knowledge/trees/` joined on
+`node_id`/`doc_id`, no shard writes, no re-chunking" as the binding part, and the vendor
+name as open.
+
+## 5. LANES — re-cut for parallelism
+
+### `agent/muse-spark` — DEPTH (Decision 2), local only
+
+1. **Delete the hosted-venue path.** Remove NIM/Ollama/OpenRouter/Groq from
+   `reocr_pilot.py`, `ci_support.py` and `.github/workflows/reocr_pilot.yml`, plus their
+   secrets wiring. Keep the harness: two-stage staging, extractor/verifier split, redo loop,
+   audit JSONL, reconcile-as-diffs.
+2. **PaddleOCR becomes the only extraction venue.** `enable_mkldnn=False`. Route through
+   PyMuPDF/pdfplumber first; OCR only what has no usable text layer.
+3. **Hash-dedupe the set: 35 → 26 unique.** Two BRS logos appear ×5 each. The large
+   `empty_ocr` entries are corporate logos, not charts. Re-point freed slots at
+   `separator_suspect` and real tables.
+4. **Arithmetic tie-out replaces the separator-only correction.** Separator mix stays a
+   flag, never a fix. **Fix the planted fixture: `34,438` is wrong; ground truth is `31,438`**
+   (proven by `31,438 + 19,291 = 50,729`).
+5. **Run the 26 images locally** (~21 min, free) and report per-image outcomes, redo counts,
+   tie-out results, and wall-clock against the 13,591-asset target.
+6. Then Decision 3 consolidation per §4, awaiting the vendor confirmation.
+
+### `agent/antigravity` — BREADTH (Decision 4), re-activated
+
+Handover is complete and accepted. **You are back on build, in a lane that cannot collide
+with muse-spark: source wiring. No OCR, no graph, no `knowledge/trees/` writes.**
+
+You already did the Decision 4 pre-survey and you built the SQLite spine — this is your
+strength. Wire the uncovered sources into the manifests and the spine:
+
+1. **SGX iron ore + freight futures** (`data/futures/`, `data/commodities/`) — FEF, M65F,
+   LPF, cape/panamax/supramax/handysize.
+2. **Capital Link indices** — the 7 XLSX in `data/` plus `data/indices/` CSVs.
+3. **CFTC COT** (grains Q5, crude Q17) — `data/cftc_statements/`.
+4. **ETF disclosures + SEC EDGAR** (Q6, Q18) — `data/etf/`, the 10-Q/factsheet PDFs.
+5. **Grain and port flows** — USDA CSVs, PortWatch. Note `usda_grain_freight_spreads.csv`
+   is empty.
+6. **AIS weekly analytics** — `reports/drewry` holds 548 files and **0 local PDFs**; the
+   manifest exists but the documents were never downloaded. Fetch them, with the
+   content-type validation from finding E1 (assets are currently written under `.pdf` with
+   no magic-byte check — 89 of 91 "failed" assets turned out to be HTML error pages).
+7. **Fearnleys / Hasura API** — the user has named this as a live source. Survey what the
+   API offers, what is already compiled in `data/derived/fearnleys_catalog.csv` and
+   `time_charter_rates_fearnleys.csv`, and propose an ingestion shape **before** writing a
+   fetcher.
+
+For each source: add it to `knowledge/manifests/sources.json` coverage, land the rows in
+the spine with a stated schema, and record row counts and date ranges. **Additive only.
+No writes under `knowledge/trees/` or `knowledge/derived/`. Do not edit this file.**
+
+Report status in `docs/GRAPH_LAYER_ANTIGRAVITY.md` or a new `docs/SOURCE_WIRING_ANTIGRAVITY.md`.
+
+---
+
 # ⚠️ REVIEWER BENCH TEST — 2026-09-07 06:50 UTC — LOCAL OCR BEATS THE PAID VISION PATH
 
 The reviewer established ground truth by reading source images directly, then benchmarked
@@ -270,7 +412,7 @@ this file again.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-07 06:55 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 07:15 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -319,12 +461,11 @@ chart signal), then the 228 measured mixed-separator suspects, then the 347
 skipped-small. Remember the 228 is a **lower bound** — row-splitting damage carries
 no separator signature.
 
-Vision path per W1: extend the **existing** NIM/Ollama client in
-`process_knowledge.py` (lines 28-36, 1500-1611 — rate limiting, retries and
-backoff already written) to a multimodal call, and run in CI where
-`NIM_API_KEY` / `OLLAMA_API_KEY` / `OPENROUTER_API_KEY` / `GROQ_API_KEY` already
-live. No new vendor or key needed. Extractor and verifier stay separate passes,
-with the redo loop logged per file/page/table.
+**Vision path — USER DIRECTIVE 2026-09-07: NO hosted model venues.** NVIDIA NIM,
+Ollama, OpenRouter and Groq are **removed from scope**. No paid API, no hosted
+inference, nothing leaves the machine. The stack is local Python libraries and
+GitHub tooling only (see the ALL-LOCAL STACK section). Extractor and verifier stay
+separate passes, with the redo loop logged per file/page/table.
 
 ## Decision 3 — DECIDED: graph architecture
 
