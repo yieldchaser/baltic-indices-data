@@ -16,6 +16,11 @@ Rate-limit + retry/backoff mirrors process_knowledge.py client behavior
 (min-interval gate, Retry-After honor, exp backoff on 429/rate-limit else
 linear backoff, cap + jitter), reimplemented compactly here.
 
+Live-run guardrails (env, 0 = off): PILOT_ABORT_429 aborts the run after N
+rate-limit hits (writes partial audit/results/reconcile, exit 3);
+PILOT_MAX_TOTAL_CALLS aborts after N venue calls. Every successful venue
+call logs a venue_ok audit event with latency_ms + vendor usage block.
+
 Deps: stdlib + requests + PIL only.
 """
 from __future__ import annotations
@@ -78,8 +83,18 @@ MAX_BACKOFF_SEC = float(os.environ.get("PILOT_MAX_BACKOFF_SEC", "15.0"))
 REQUEST_TIMEOUT_SEC = float(os.environ.get("PILOT_REQUEST_TIMEOUT_SEC", "90"))
 MAX_IMAGE_BYTES = int(os.environ.get("PILOT_MAX_IMAGE_BYTES", "8000000"))
 REDO_LIMIT = int(os.environ.get("PILOT_REDO_LIMIT", "1"))  # extra attempts per stage
+# Live-run guardrails (CI opts in via env; 0 = off, preserves dry-run behavior).
+PILOT_ABORT_429 = int(os.environ.get("PILOT_ABORT_429", "0"))  # abort run after this many 429/rate-limit hits
+PILOT_MAX_TOTAL_CALLS = int(os.environ.get("PILOT_MAX_TOTAL_CALLS", "0"))  # abort after this many venue calls
 
 _last_call_ts = 0.0
+_LAST_USAGE: dict = {}  # usage block of the most recent venue call (OpenAI usage or ollama eval counts)
+_RATE_LIMIT_HITS = 0
+_TOTAL_CALLS = 0
+
+
+class PilotAborted(RuntimeError):
+    """Raised when a live-run guardrail (429 cap / total-call budget) trips."""
 
 
 def utcnow() -> str:
@@ -230,7 +245,11 @@ def _post_json(url: str, payload: dict, headers: dict) -> dict:
 
 def call_venue(venue: str, prompt: str, b64: str, mime: str) -> str:
     """Single attempt (no retry). Returns text or raises VenueCallError."""
-    global _last_call_ts
+    global _last_call_ts, _TOTAL_CALLS, _LAST_USAGE
+    if PILOT_MAX_TOTAL_CALLS and _TOTAL_CALLS >= PILOT_MAX_TOTAL_CALLS:
+        raise PilotAborted(
+            f"total venue-call budget exhausted ({_TOTAL_CALLS}>={PILOT_MAX_TOTAL_CALLS})")
+    _TOTAL_CALLS += 1
     _gate()
     try:
         if venue == "ollama":
@@ -252,10 +271,20 @@ def call_venue(venue: str, prompt: str, b64: str, mime: str) -> str:
             data = _post_json(url, build_openai_compat_payload(model, prompt, b64, mime), headers)
             choices = data.get("choices") or []
             text = (((choices[0].get("message") if choices else {}) or {}).get("content") or "").strip()
+        try:  # stash token usage for cost accounting (best effort, vendor shapes vary)
+            u = data.get("usage") or {}
+            if not u and isinstance(data.get("message"), dict):  # ollama /api/chat
+                u = {"prompt_tokens": data.get("prompt_eval_count", 0),
+                     "completion_tokens": data.get("eval_count", 0)}
+            _LAST_USAGE = dict(u) if isinstance(u, dict) else {}
+        except Exception:
+            _LAST_USAGE = {}
         _last_call_ts = time.monotonic()
         if not text:
             raise VenueCallError("empty completion")
         return text
+    except PilotAborted:
+        raise
     except VenueCallError:
         _last_call_ts = time.monotonic()
         raise
@@ -263,17 +292,35 @@ def call_venue(venue: str, prompt: str, b64: str, mime: str) -> str:
 
 def call_with_retry(venue: str, prompt: str, b64: str, mime: str,
                     audit, rec_id: str, stage: str) -> str | None:
+    global _RATE_LIMIT_HITS
     for attempt in range(MAX_RETRIES):
+        t0 = time.monotonic()
         try:
-            return call_venue(venue, prompt, b64, mime)
+            out = call_venue(venue, prompt, b64, mime)
+        except PilotAborted:
+            raise
         except VenueCallError as exc:
             audit.append({"ts": utcnow(), "record": rec_id, "stage": stage,
                           "event": "venue_error", "attempt": attempt,
                           "error": str(exc)[:300]})
+            if _is_rate_limit(str(exc)):
+                _RATE_LIMIT_HITS += 1
+                if PILOT_ABORT_429 and _RATE_LIMIT_HITS >= PILOT_ABORT_429:
+                    audit.append({"ts": utcnow(), "record": rec_id, "stage": stage,
+                                  "event": "run_abort_429",
+                                  "hits": _RATE_LIMIT_HITS, "cap": PILOT_ABORT_429})
+                    raise PilotAborted(
+                        f"aborting: {_RATE_LIMIT_HITS} rate-limit hits >= cap {PILOT_ABORT_429}")
             if attempt < MAX_RETRIES - 1:
                 _backoff(attempt, str(exc))
             else:
                 return None
+        else:
+            audit.append({"ts": utcnow(), "record": rec_id, "stage": stage,
+                          "event": "venue_ok", "attempt": attempt,
+                          "latency_ms": int((time.monotonic() - t0) * 1000),
+                          "usage": dict(_LAST_USAGE)})
+            return out
     return None
 
 
@@ -699,8 +746,14 @@ def main(argv=None) -> int:
     print(f"venue={venue} images={len(records)}", file=sys.stderr)
     existing = fill_ocr_from_trees(REPO_ROOT, records)
     results = []
-    for rec in records:
-        results.append(process_record(rec, venue, None, audit, existing))
+    aborted = None
+    try:
+        for rec in records:
+            results.append(process_record(rec, venue, None, audit, existing))
+    except PilotAborted as exc:
+        aborted = str(exc)
+        audit.append({"ts": utcnow(), "record": "*", "stage": "run",
+                      "event": "run_aborted", "error": aborted})
     with open(audit_path, "w", encoding="utf-8") as f:
         for ev in audit:
             f.write(json.dumps(ev, ensure_ascii=False) + "\n")
@@ -713,8 +766,14 @@ def main(argv=None) -> int:
     by_status: dict[str, int] = {}
     for r in results:
         by_status[r["status"]] = by_status.get(r["status"], 0) + 1
-    print(json.dumps({"mode": "live", "venue": venue, "n": len(results),
-                      "by_status": by_status}, indent=2))
+    summary = {"mode": "live", "venue": venue, "n": len(results),
+               "by_status": by_status, "total_calls": _TOTAL_CALLS,
+               "rate_limit_hits": _RATE_LIMIT_HITS}
+    if aborted:
+        summary["aborted"] = aborted
+        print(json.dumps(summary, indent=2))
+        return 3
+    print(json.dumps(summary, indent=2))
     return 0
 
 
