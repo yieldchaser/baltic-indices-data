@@ -308,6 +308,81 @@ def build_bunker_summary():
             })
         monthly_series[pname] = items
 
+    # 3b. High-Resolution Daily Time-Series (Trailing ~1 Year) for Benchmark Ports & Regional Averages
+    print("Computing high-resolution daily series for benchmark ports...")
+    BENCHMARK_DAILY_PORTS = [
+        'Americas Average', 'APAC Average', 'EMEA Average', 'Global 20 Ports Average',
+        'Global 4 Ports Average', 'Global Average Bunker Price', 'Singapore', 'Rotterdam',
+        'Fujairah', 'Houston', 'Santos', 'Gibraltar', 'Algeciras', 'Zhoushan',
+        'Balboa, Panama', 'LA / Long Beach', 'Antwerp', 'Piraeus', 'Busan', 'Hong Kong',
+        'New York', 'Tokyo', 'Las Palmas', 'Durban', 'Colombo', 'Shanghai', 'Ningbo',
+        'Qingdao', 'Istanbul', 'Huelva', 'Seattle', 'Vancouver', 'Philadelphia',
+        'Valparaiso', 'Khor Al Fakkan'
+    ]
+    max_date = df_master['observation_date'].max()
+    cutoff_date = (pd.to_datetime(max_date) - pd.DateOffset(days=380)).strftime('%Y-%m-%d')
+    df_daily_bench = df_master[(df_master['observation_date'] >= cutoff_date) & (df_master['port_name'].isin(BENCHMARK_DAILY_PORTS))]
+    g_d = df_daily_bench.groupby(['port_name', 'observation_date', 'grade'])['price_usd'].first().unstack().reset_index()
+
+    daily_series = {}
+    for pname, p_group in g_d.groupby('port_name'):
+        items = []
+        for _, r in p_group.sort_values('observation_date').iterrows():
+            v = sanitize_float(r.get('VLSFO')) if ('VLSFO' in r and pd.notna(r['VLSFO'])) else None
+            m = sanitize_float(r.get('MGO')) if ('MGO' in r and pd.notna(r['MGO'])) else None
+            if m is None and 'LSMGO' in r and pd.notna(r['LSMGO']):
+                m = sanitize_float(r['LSMGO'])
+            h = sanitize_float(r.get('IFO380')) if ('IFO380' in r and pd.notna(r['IFO380'])) else None
+            s = sanitize_float(r.get('SS')) if ('SS' in r and pd.notna(r['SS'])) else (round(v - h, 2) if (v and h) else None)
+            bio_val = sanitize_float(r.get('BIO')) if ('BIO' in r and pd.notna(r['BIO'])) else None
+            items.append({
+                'd': str(r['observation_date']),
+                'vlsfo': v,
+                'mgo': m,
+                'hsfo': h,
+                'hi5': s,
+                'bio': bio_val
+            })
+        daily_series[pname] = items
+
+    # Overlay latest daily records from df_daily for dates > max_date
+    port_map_daily = {
+        'singapore': 'Singapore',
+        'rotterdam': 'Rotterdam',
+        'fujairah': 'Fujairah',
+        'houston': 'Houston',
+        'santos': 'Santos',
+        'new_york': 'New York',
+        'hong_kong': 'Hong Kong',
+        'la_/_long_beach': 'LA / Long Beach',
+        'americas_average': 'Americas Average',
+        'apac_average': 'APAC Average',
+        'emea_average': 'EMEA Average',
+        'global_20_ports_average': 'Global 20 Ports Average',
+        'global_4_ports_average': 'Global 4 Ports Average',
+        'global_average_bunker_price': 'Global Average Bunker Price'
+    }
+
+    for (p_key, date_val), grp in df_daily[df_daily['date'] > max_date].groupby(['port', 'date']):
+        target_port = port_map_daily.get(p_key)
+        if target_port and target_port in daily_series:
+            v, m, h = None, None, None
+            for _, r in grp.iterrows():
+                g = str(r['fuel_grade']).upper()
+                val = sanitize_float(r['price_usd_mt'])
+                if g == 'VLSFO': v = val
+                elif g == 'MGO': m = val
+                elif g == 'IFO380': h = val
+            s = round(v - h, 2) if (v and h) else None
+            daily_series[target_port].append({
+                'd': str(date_val),
+                'vlsfo': v,
+                'mgo': m,
+                'hsfo': h,
+                'hi5': s,
+                'bio': None
+            })
+
     # 4. 12-Month Forward Curves
     fwd_dict = {}
     for port in df_fwd['port'].unique():
@@ -377,6 +452,7 @@ def build_bunker_summary():
         'kpis': kpis,
         'ports': list(ports_dict.values()),
         'monthly_series': monthly_series,
+        'daily_series': daily_series,
         'forward_curves_12m': fwd_dict,
         'physical_volumes': volumes_dict,
         'scrubber_economics': scrubber_table,

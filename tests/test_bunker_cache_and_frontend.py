@@ -20,6 +20,15 @@ def test_bunker_frontend_summary_json_exists():
     assert "physical_volumes" in data
     assert "scrubber_economics" in data
     assert "monthly_series" in data
+    assert "daily_series" in data
+
+    # Verify benchmark daily series
+    daily_series = data["daily_series"]
+    assert "Singapore" in daily_series
+    assert "Rotterdam" in daily_series
+    assert len(daily_series["Singapore"]) > 200
+    assert "d" in daily_series["Singapore"][0]
+    assert "vlsfo" in daily_series["Singapore"][0]
 
     # Verify 221 ports
     ports = data["ports"]

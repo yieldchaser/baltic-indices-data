@@ -14214,28 +14214,41 @@ if (intelTabsContainer) {
               </div>
               <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
                 <select id="bunkerChartPortSelect" class="tracking-select" onchange="onBunkerChartPortSelect()" data-tooltip="Select bunker supply port or regional benchmark to plot.">
-                  <option value="Americas Average">Americas Average (Benchmark)</option>
+                  <option value="Global Average Bunker Price">Global Average Bunker Price</option>
+                  <option value="Global 20 Ports Average">Global 20 Ports Average</option>
+                  <option value="Global 4 Ports Average">Global 4 Ports Average</option>
                   <option value="APAC Average">APAC Average (Benchmark)</option>
                   <option value="EMEA Average">EMEA Average (Benchmark)</option>
-                  <option value="Global 20 Ports Average">Global 20 Ports Average</option>
+                  <option value="Americas Average">Americas Average (Benchmark)</option>
                   <option value="Singapore" selected>Singapore</option>
                   <option value="Rotterdam">Rotterdam</option>
                   <option value="Fujairah">Fujairah</option>
                   <option value="Houston">Houston</option>
-                  <option value="Santos">Santos</option>
                   <option value="Gibraltar">Gibraltar</option>
                   <option value="Algeciras">Algeciras</option>
                   <option value="Zhoushan">Zhoushan</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="Busan">Busan</option>
+                  <option value="Tokyo">Tokyo</option>
+                  <option value="Shanghai">Shanghai</option>
+                  <option value="Ningbo">Ningbo</option>
+                  <option value="Qingdao">Qingdao</option>
                   <option value="Balboa, Panama">Balboa, Panama</option>
-                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="LA / Long Beach">LA / Long Beach</option>
+                  <option value="New York">New York</option>
+                  <option value="Santos">Santos</option>
                   <option value="Antwerp">Antwerp</option>
                   <option value="Piraeus">Piraeus</option>
-                  <option value="Busan">Busan</option>
+                  <option value="Istanbul">Istanbul</option>
+                  <option value="Las Palmas">Las Palmas</option>
+                  <option value="Durban">Durban</option>
+                  <option value="Colombo">Colombo</option>
+                  <option value="Vancouver">Vancouver</option>
                 </select>
                 <div class="cp-btn-group">
-                  <button class="cp-toggle-btn active" data-range="all" onclick="setBunkerChartRange('all')" data-tooltip="Full 3-year daily spot price series (2023–2026).">Max (3Y)</button>
-                  <button class="cp-toggle-btn" data-range="1y" onclick="setBunkerChartRange('1y')" data-tooltip="Trailing 12-month spot price trend.">1Y</button>
-                  <button class="cp-toggle-btn" data-range="6m" onclick="setBunkerChartRange('6m')" data-tooltip="Trailing 6-month recent bunker price action.">6M</button>
+                  <button class="cp-toggle-btn active" data-range="all" onclick="setBunkerChartRange('all')" data-tooltip="3-Year monthly macro historical series (2023–2026).">Max (3Y)</button>
+                  <button class="cp-toggle-btn" data-range="1y" onclick="setBunkerChartRange('1y')" data-tooltip="Trailing 12-month high-resolution daily spot series.">1Y (Daily)</button>
+                  <button class="cp-toggle-btn" data-range="6m" onclick="setBunkerChartRange('6m')" data-tooltip="Trailing 6-month high-resolution daily spot series.">6M (Daily)</button>
                 </div>
               </div>
             </div>
@@ -39957,19 +39970,30 @@ function renderBunkerMainChart() {
   if (!canvas || typeof Chart === 'undefined') return;
 
   var summary = DATA.bunkerSummary;
+  var dailyMap = summary && summary.daily_series ? summary.daily_series : {};
   var monthlyMap = summary && summary.monthly_series ? summary.monthly_series : {};
 
-  // Find series for port or fallback to Singapore
-  var series = monthlyMap[bunkersChartPort] || monthlyMap['Singapore'] || [];
-
   var range = bunkersChartRange;
-  if (range === '6m') series = series.slice(-6);
-  else if (range === '1y') series = series.slice(-12);
-  else if (range === '3y') series = series.slice(-36);
+  var hasDaily = dailyMap[bunkersChartPort] && dailyMap[bunkersChartPort].length > 0;
+  var isDaily = (range === '6m' || range === '1y') && hasDaily;
 
-  var labels = series.map(function(r) { return r.m; });
+  var series = [];
+  var labels = [];
+
+  if (isDaily) {
+    var fullDaily = dailyMap[bunkersChartPort];
+    var daysCount = range === '6m' ? 130 : 265;
+    series = fullDaily.slice(-daysCount);
+    labels = series.map(function(r) { return r.d; });
+  } else {
+    series = monthlyMap[bunkersChartPort] || monthlyMap['Singapore'] || [];
+    if (range === '6m') series = series.slice(-6);
+    else if (range === '1y') series = series.slice(-12);
+    else if (range === '3y' || range === 'all') series = series.slice(-36);
+    labels = series.map(function(r) { return r.m; });
+  }
+
   var grade = bunkersChartGrade;
-
   var data = [];
   var color = '#3fb950';
   var labelName = 'VLSFO Spot ($/MT)';
@@ -39996,11 +40020,18 @@ function renderBunkerMainChart() {
     labelName = 'Biofuel Blend (B24 Drop-in)';
   }
 
-  // Update title
+  // Update title & subtitle
   var titleEl = document.getElementById('bunkerChartPortTitle');
   var subEl = document.getElementById('bunkerChartPortSub');
   if (titleEl) titleEl.textContent = bunkersChartPort + ' ' + labelName;
-  if (subEl) subEl.textContent = 'Monthly Historical Fuel Series (2018–2026) · Ship & Bunker Benchmark Archive';
+  if (subEl) {
+    if (isDaily) {
+      var periodText = range === '6m' ? 'Trailing 6 Months' : 'Trailing 1 Year';
+      subEl.innerHTML = '<span style="color:#00e5ff; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[DAILY HIGH-RES · ' + series.length + ' QUOTES]</span> ' + periodText + ' · Ship &amp; Bunker RPC Live Archive';
+    } else {
+      subEl.innerHTML = '<span style="color:#a371f7; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[MONTHLY MACRO]</span> 3-Year Historical Fuel Series (2023–2026) · Ship &amp; Bunker Benchmark Archive';
+    }
+  }
 
   var sel = document.getElementById('bunkerChartPortSelect');
   if (sel && sel.value !== bunkersChartPort) {
@@ -40022,9 +40053,9 @@ function renderBunkerMainChart() {
         borderColor: color,
         backgroundColor: color + '15',
         fill: true,
-        tension: 0.2,
+        tension: isDaily ? 0.1 : 0.2,
         borderWidth: 2,
-        pointRadius: (range === '6m' || range === '1y') ? 3 : 2,
+        pointRadius: isDaily ? 1.5 : 3,
         pointHoverRadius: 5
       }]
     },
@@ -40044,6 +40075,11 @@ function renderBunkerMainChart() {
           titleColor: '#fff',
           bodyColor: '#d4dce8',
           callbacks: {
+            title: function(items) {
+              if (!items || !items.length) return '';
+              var d = items[0].label;
+              return (isDaily ? 'Date: ' : 'Month: ') + d;
+            },
             label: function(item) {
               return ' ' + item.dataset.label + ': $' + item.formattedValue + ' / MT';
             }
@@ -40053,7 +40089,7 @@ function renderBunkerMainChart() {
       scales: {
         x: {
           grid: { color: 'rgba(28, 35, 51, 0.4)' },
-          ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 }
+          ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: isDaily ? 12 : 14 }
         },
         y: {
           grid: { color: 'rgba(28, 35, 51, 0.5)' },
