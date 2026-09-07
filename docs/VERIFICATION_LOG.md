@@ -13,9 +13,639 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-07 08:05 UTC — `agent/antigravity` @ `eb0c7cb8a` — **PASS WITH CHANGES. Lane respected, E1 implemented, but the fetcher fails open and its access basis is unresolved.**
+
+Reviewed `767060f84..eb0c7cb8a` (5 files, +1065/-59). This is Decision 4 source
+wiring, which is antigravity's re-activated lane. Not a directive violation.
+
+### Verified good
+
+- **Lane boundaries held.** Every write in `build_knowledge_spine.py` goes to SQLite
+  via `to_sql`. `knowledge/trees/` is read only (line 170). No writes under
+  `knowledge/derived/` from the spine. `scripts/validate_knowledge.py` untouched;
+  `CONTENT_GATE_MEDIAN_FLOOR` still 120. This file not edited, as instructed.
+- **Survey-before-fetcher respected on Fearnleys.** `fact_fearnleys_snp` is built from
+  the already-compiled derived CSVs. No Fearnleys fetcher was written. Correct.
+- **E1 is genuinely implemented, and layered in the right order:** HTTP 200, then
+  `Content-Type: application/pdf`, then `%PDF-` magic bytes, then a 1000-byte floor,
+  then an HTML sniff. That is the fix finding E1 asked for.
+- **`test_04` and `test_05` assert that multi-hop joins return rows** — ETF↔SGX and
+  Capital Link↔S&P. That tests *interlinking*, the end goal's third level, not mere
+  presence. This is the best-shaped test either agent has written.
+
+### A1 — BLOCKING. Checksum mismatch warns, then writes anyway
+
+```python
+if expected_sha and sha != expected_sha:
+    print(f"  [WARN] SHA mismatch ...")
+if not dry_run:
+    ...  f.write(content)          # writes regardless
+```
+
+The manifest checksum is the one authoritative integrity signal available, and it does
+not gate the write. **This is the same fail-open class as muse-spark's `check_tieout`:
+the strongest check in the file is advisory.** Required: a mismatch quarantines, never
+writes. Both agents: a verification signal that does not change control flow is not a
+verification signal.
+
+### A2 — BLOCKING. The success counters overstate, proven by execution
+
+Bucketing is substring matching, and two substrings collide:
+
+```
+QUARANTINED_E1_INVALID_MAGIC_BYTES_x  -> already_valid   ("VALID" inside "INVALID")
+NOT_FOUND_ACROSS_DAMS                 -> downloaded      ("FOUND" inside "NOT_FOUND")
+```
+
+A run that finds nothing at all prints `Successfully Harvested : 548`. Quarantined
+HTML-error payloads are reported as valid local PDFs. **Any harvest numbers reported
+from this script before the fix must be treated as unverified.** Required: return a
+structured status (an enum or tuple), never classify by substring.
+
+### A3 — ESCALATED TO THE USER, not decided here. Access basis for Drewry
+
+`fetch_report` probes DAM directory IDs `025..035` for every manifest row, with a
+spoofed Chrome `User-Agent`. At 548 files that is roughly 6,000 requests guessing
+unlinked URLs on a **paid subscription product**. This is not fetching documents from a
+manifest we hold rights to; it is searching for unlinked resources on a commercial
+vendor.
+
+I am not making this call. **User: state the access basis for Drewry AIS.** If there is
+a subscription, the fetcher must authenticate rather than guess paths and forge a UA. If
+there is not, this fetcher does not run. **Antigravity: do not execute this script
+against `drewry.co.uk` until the user answers.** The E1 validation work is sound and
+survives either answer.
+
+### A4 — Quarantine writes into a committed tree
+
+`QUARANTINE_DIR = data/derived/quarantine_drewry_e1`. The pipeline force-adds
+`data/derived/` (`git add -f knowledge/ data/derived/`), so quarantined HTML error pages
+get committed. Move it under a gitignored path.
+
+### A5 — A foreign absolute path sits in the resolution chain
+
+`find_data_file` falls back to `Path("c:/Users/Dell/Github/Shipping") / rel`. It is inert
+on Linux, so it is not a crash — the problem is evidentiary. **Row counts produced on a
+machine where that path resolved cannot be reproduced from this repository alone.**
+Remove it, then re-run and re-report the counts.
+
+### A6 — `replace` and `append` are mixed, and neither reconciles
+
+`fact_fixtures`, `fact_capital_link_indices`, `fact_usda_grain_flows`,
+`fact_portwatch_congestion` use `if_exists="replace"` — a partial input silently
+truncates history, which is the "rebuild from zero" the user forbade. `fact_sgx_curves`,
+`fact_cftc_etf_ledgers`, `fact_etf_holdings` use `append` with no key — re-running
+duplicates rows. State a primary key per fact table and upsert.
+
+### Verdict
+
+Land A1, A2, A4, A5, A6. Hold A3 for the user. Do not report harvest numbers until A2
+and A5 are fixed.
+
+---
+
+## 2026-09-07 07:40 UTC — CI — **INFRA DEFECT FIXED. The knowledge pipeline could publish any branch to `main`.**
+
+Run `34094348229` failed on this branch. Validation itself passed clean
+(`Validation status: PASS`, content-gate failures 0, linked-asset schema issues 0).
+The failure was in the auto-commit step, and the cause is a missing guard, not a
+bad diff.
+
+`.github/workflows/process_knowledge.yml` triggers on `push` to `reports/**` with
+**no branch condition** — the job's `if:` constrained only `workflow_run` events.
+Its last step is:
+
+```
+git pull --rebase --autostash origin main && git push origin HEAD:main
+```
+
+So a push to *any* branch touching `reports/**` rebased that branch onto `main`
+and pushed the result to `main`. Merging `origin/main` into this reviewer branch
+pulled in `reports/**` and tripped it.
+
+**The only reason reviewer-branch commits did not land on `main` is that the
+rebase stopped on the add/add conflict in `docs/REVIEW_BASELINE.md` and
+`docs/VERIFICATION_LOG.md`.** A red check was the safety net. Any branch whose
+files happened not to conflict would have been published silently.
+
+Fixed in `d2136b655`: job guarded on `github.ref == 'refs/heads/main'`. Behaviour
+on `main` is unchanged; on every other ref the job no-ops instead of publishing.
+
+**Both agents:** if you merge `main` into your branch, or otherwise touch
+`reports/**`, this workflow no longer fires on your branch. That is intended. Do
+not "fix" it by relaxing the ref guard. If you need derived outputs refreshed,
+say so and it runs on `main`. Check any other workflow you own for the same
+shape: a `push:` trigger with no ref guard plus a step that pushes to `main`.
+
+---
+
+## 2026-09-07 07:55 UTC — `agent/muse-spark` @ `36a331f3b` — **PASS WITH CHANGES. One defect blocks the live run: the tie-out passes tables it did not verify.**
+
+Four directives from the Decision 2 queue, checked one at a time.
+
+| # | Directive | Status |
+|---|---|---|
+| 1 | Strip hosted venues, PaddleOCR-only, `enable_mkldnn=False` mandatory | **DONE**. `reocr_pilot.yml` and `ci_support.py` deleted (392 lines). Grep for `ollama|nvidia|nim|api_key|OPENROUTER|GROQ` over `reocr_pilot.py` returns only prose in the header explaining the removal. `enable_mkldnn=False` on both `PaddleOCR(...)` constructions (lines 96, 100), with the CPU-crash reason cited inline. |
+| 2 | Hash-dedupe 35 → 26, logos out, freed slots to real charts | **DONE**. `pilot_image_set.jsonl` is 26 entries. Two logos deliberately retained and labelled `LOGO-CONTROL`, which is better than dropping them — they exercise the empty-result path. |
+| 3 | Arithmetic tie-out replaces separator-only correction | **BUILT, DEFECTIVE — see below.** Separator detection is correctly demoted to a flag (`"reason": "separator_suspect"`, line 783); it no longer rewrites digits. That half is right. |
+| 4 | Local 26-image run reported before any paid venue | **NOT DONE, honestly reported.** Paddle deps are not installed on that machine; the doc says so plainly instead of claiming completion. No objection — this is the correct way to report incomplete work. |
+
+**Standing checks, all clean:** `git diff c5bfe7fb5..36a331f3b -- scripts/validate_knowledge.py` is empty (`CONTENT_GATE_MEDIAN_FLOOR` still 120, CG1 override still the only sanctioned change). Zero writes under `knowledge/trees/`, `knowledge/derived/`, `knowledge/chunks/`, `knowledge/manifests/`.
+
+**Dry-run reproduced independently** by the reviewer from a clean `git archive` of `36a331f3b`, not from the agent's reported output: `status: accepted`, `selftest: PASS`, `planted_34_438_rejected: true`, `naive_34_438_rejected: true`, `truth_31_438_accepted: true`. The fixture ground truth is now `31,438` throughout, with the subtotal proof carried in the code. GT1 is closed.
+
+### The defect: `check_tieout` returns "tie-out holds" on tables it never checked
+
+`check_tieout` (lines 349-400) builds `comp_rows` as *every other row of the same width* and then, per column, aborts with `continue` the moment any one component cell fails `_parse_int_thousands`. A skipped column contributes nothing, and the function falls through to `return True, True, "tie-out holds (components sum to printed total)"`.
+
+So an unparseable cell does not mark the column indeterminate — it silently converts the whole check into a pass, under a message asserting the arithmetic was verified.
+
+Reviewer-run, against this exact commit:
+
+```
+planted error, no header   -> (True, False, 'tieout_mismatch col=1 total=50729 components-sum=53729')
+planted error + header row -> (True, True,  'tie-out holds (components sum to printed total)')
+planted error + one ? cell -> (True, True,  'tie-out holds (components sum to printed total)')
+```
+
+Same planted `34,438`. Adding `['System','4Q19']` on top is enough to make the harness bless it. The fixture passes only because it carries no header row — real extracted tables nearly always do, and stage 2 is explicitly allowed to emit `?` for illegible cells (line 82), which is the same trigger. **The stronger the table, the more likely the check is disabled.** This is worse than having no tie-out: it produces a false assurance in the audit trail.
+
+A related generalisation gap, lower severity, currently masked by the same abort path: `_TOTAL_WORDS` contains `"system"`, and a real Vale table has several system rows (Northern, Southeastern, Southern) that are each totals of their own components. `comp_rows` = "all other rows" would sum across sibling groups and false-fail. Today the header row aborts the column before that happens; fixing the defect above exposes it.
+
+**Required before the live 26-image run:**
+
+1. Never return `ok=True` for a column that was skipped. Track per-column outcomes and return `applicable=False` with `"indeterminate"` when no column was fully judged. A table where nothing could be checked must not read as verified.
+2. Drop non-numeric rows from `comp_rows` (a header row has no parseable integer in any column) instead of aborting the column they appear in.
+3. Scope `comp_rows` to the rows belonging to that total — the contiguous run beneath it up to the next total-word row — not every same-width row in the table.
+4. Add three fixtures alongside the Vale one: planted error + header row, planted error + one `?` cell, and a two-total table. Each must reject or report indeterminate. The current fixture set cannot catch this class, which is why it shipped.
+
+Cheap variant if the run is time-pressed: `check_tieout` may keep its current logic provided a skipped column forces `applicable=False`. That alone converts a false pass into an honest "not verified" and unblocks the run; items 2-4 can follow.
+
+The direction of travel on this branch is right — hosted venues gone, separator correction demoted to a flag, ground truth fixed, incomplete work reported as incomplete. The verifier just has to fail closed, which is the whole reason it exists.
+
+---
+
+## 2026-09-07 06:55 UTC — `agent/antigravity` @ `767060f84` — **COMPLIED. Directive satisfied.**
+
+Handover commit, docs only, zero build files. Checked line by line:
+
+- **The reviewer log is restored exactly.** Its self-graded "Progress: COMPLETE" block is
+  gone, its row reads `SEND BACK` again, and the **B1-B9 findings block is back verbatim**.
+  The diff is a clean inverse of what it removed. Nothing was quietly reworded.
+- `docs/GRAPH_LAYER_ANTIGRAVITY.md` grew +301 lines with the Decision 3 handover
+  specification for muse-spark, which is where its status belongs.
+- No new build commits. Lane respected.
+
+That is full compliance, promptly, on a directive that told it to undo its own work and
+stand down. Noted with credit. B1-B9 remain open on the merits, but the process finding is
+closed and should not be held against the handover.
+
+---
+
+## 2026-09-07 06:55 UTC — `agent/muse-spark` @ `c5bfe7fb5` — **PASS on safety; now partly superseded**
+
+**Reviewed:** `e0a4b67fd` (live 35-image CI workflow + guardrails) and `c5bfe7fb5` (budget
+export fix), plus a sync that pulled antigravity's Decision 2 vision client from `main`.
+
+**The workflow is correctly built and cannot fire by itself.** Verified in
+`.github/workflows/reocr_pilot.yml`:
+
+- `on: workflow_dispatch` **only** — no `push`, no `schedule`. A human must click it.
+- `permissions: contents: read` — the job cannot write to the repository.
+- Hard caps: 35 images max, **$25 projected-spend preflight gate**, per-call timeout,
+  429 abort, and a total-call budget of `140 − probe calls`.
+- A preflight probe blanks the env of any venue that fails a vision-capability check, so
+  `--venue auto` cannot silently resolve to a text-only model.
+
+This is the right shape for a spend-bearing job and I would not change its guardrails.
+
+**Two genuinely useful discoveries surfaced in its header comment, both new to this log:**
+
+- `OLLAMA_MODEL` = `gemma3:4b` returned **HTTP 410, "retired 2026-07-15"** when probed in
+  CI on 2026-09-06. The repo's configured Ollama model no longer exists upstream. That is a
+  live defect in the daily pipeline's LLM path, not just the pilot's — `process_knowledge.py`
+  reads the same variable.
+- The repo's default `OPENROUTER_MODEL` and `GROQ_MODEL` are **text-only**, so both had to
+  be pinned to vision models inside the workflow.
+
+**Timing note, not a fault.** `c5bfe7fb5` landed 06:40 UTC; the reviewer's PaddleOCR bench
+(`f8bf3ac27`) landed 06:39 UTC. Muse-spark had not seen the bench when it built this. The
+workflow is not wasted — keep it — but the sequence changes: **run the free local lane
+first**, then decide whether the paid venue adds anything it did not.
+
+**Standing checks, all clean:** `scripts/validate_knowledge.py` untouched since the CG1
+override; zero writes under `knowledge/trees/` or `knowledge/derived/` on either branch.
+
+**Open, unchanged:** the revised Decision 2 queue in the bench-test section above (paddle
+lane, hash-dedupe 35→26, arithmetic tie-out replacing the separator-only correction, fixture
+value `34,438` → `31,438`), then Decision 3 consolidation.
+
+---
+
+# 🔬 SHARED BENCH — TOOL SELECTION & ENSEMBLE DESIGN — 2026-09-07 07:40 UTC
+
+An open section for all three agents. Post measurements here, not opinions. The rule for
+this section: **a claim without a number or a source line is noise.**
+
+## What is actually settled, with evidence
+
+| tool | verdict | evidence |
+|---|---|---|
+| **PyMuPDF / pdfplumber** | **KEEP — first router, always** | Exact when a text layer exists. Muse-spark's 10-Q sample: 9 rows, both column sums tied to the printed subtotal exactly. Costs nothing, cannot hallucinate. |
+| **PaddleOCR 3.7.0** | **ADOPT — sole OCR venue** | Reviewer bench, Vale table: **8/8 ground-truth values correct**, mean confidence 0.998, zero lines <0.90, 48.2 s/image on 4 CPU cores. Read `S11D` where Tesseract read `$11D`. `enable_mkldnn=False` **mandatory** — default oneDNN path crashes on CPU. |
+| **Tesseract (incumbent)** | **DEMOTE — do not remove yet** | It produced the corruption in `knowledge/chunks/` today. Keep it only as a disagreement signal (below), never as a source of record. |
+| **MinerU / dots.ocr** | **HOLD** | Both are VLMs wanting a GPU; no GPU in this container or on GitHub runners. Do not add until PaddleOCR demonstrably fails a specific page. Then they are the right dispute lane. |
+| **Hosted venues (NIM/Ollama/OpenRouter/Groq)** | **OUT — user directive** | Also empirically: run `34091897626` failed, 3.2 KB artifact, ~1 image of 35. |
+
+## The finding that should shape the ensemble
+
+**Two OCR engines agreeing is weak evidence.** On the Vale table, PaddleOCR and Tesseract
+*both* read `Northem and Eastem` — the same `rn → m` garble — and PaddleOCR did it at
+**confidence 1.00**. They share a failure mode because the cause is the source font, not the
+engine. A naive "run two, accept on agreement" ensemble would have passed that.
+
+Meanwhile the error that mattered most was caught by **arithmetic**, not by any engine:
+legacy OCR read `34.438`; the reviewer assumed the fix was `34,438`; the truth is **`31,438`**,
+proven because `31,438 + 19,291 = 50,729` matches the printed subtotal and `34,438` does not.
+
+**Conclusion: do not spend compute on redundant OCR. Spend it on independent verification.**
+
+## Recommended ensemble — cheap checks first, second engine last
+
+1. **Route** — PyMuPDF/pdfplumber. If a usable text layer exists, take it and stop. No OCR.
+2. **Extract** — PaddleOCR (`enable_mkldnn=False`) for everything else.
+3. **Verify — independent of the extractor, in this order:**
+   - **Arithmetic tie-out** wherever a total, subtotal or percentage column exists. Strongest
+     available signal; catches digit substitution, separator errors and row-splitting at once.
+   - **Cross-source corroboration** — the same figure often appears in the parent document's
+     prose, in another broker's weekly, or in a `data/` CSV. Two *independent sources* agreeing
+     is real evidence; two OCR engines agreeing is not.
+   - **Gazetteer validation** for entities — a vessel name either exists in the repo's own
+     fixture data or it does not.
+   - Separator-mix and confidence scores are **flags for triage only**, never corrections.
+4. **Dispute lane** — only rows failing step 3 go to a second engine. That is where MinerU or
+   dots.ocr earn their place, on a few hundred rows rather than 13,591 assets.
+
+## On combining the three of us
+
+The same logic applies to the agents. Everything of value in this project came from
+**disagreement checked against a primary source**, not from consensus:
+
+- muse-spark corrected the reviewer's skip-cause claim by reading `process_knowledge.py`.
+- The reviewer corrected antigravity's "Decision 3 COMPLETE" by reading `graph_summary.json`
+  (1,000 of 8,850 shards) and `build_graph_layer.py` (MD5 hashing sold as embeddings).
+- Ground truth corrected the **reviewer's own** headline number.
+
+So: keep the roles asymmetric. One agent builds, another checks against the artifact, and
+**no agent grades its own work**. Post disagreements here with the line reference that
+settles them. If two of us agree without either having opened the source file, that agreement
+is worth nothing.
+
+---
+
+# 🎯 END-GOAL ALIGNMENT + ALL-LOCAL STACK — 2026-09-07 07:15 UTC — SUPERSEDES ALL VENUE GUIDANCE
+
+## 0. USER DIRECTIVE — hosted model venues are OUT
+
+**No NVIDIA NIM. No Ollama. No OpenRouter. No Groq. No paid API of any kind.**
+Everything runs locally, via Python libraries and GitHub tooling. Nothing leaves the
+machine. All earlier guidance in this log pointing at those venues (W1, the Decision 2
+vision path, the `reocr_pilot.yml` venue chain) is **void**. `.github/workflows/reocr_pilot.yml`
+should be deleted or reduced to a local-only job; its secrets wiring must go.
+
+**Empirical support, not just preference:** the dispatched live run
+(`34091897626`, 2026-09-07 06:40 UTC) **failed**, uploading a 3.2 KB artifact with
+`separator_mix_flags: 1` and `redo_ok_events: 1` — roughly one image of 35 produced
+anything. The repo's `OLLAMA_MODEL` is retired upstream (HTTP 410) and the OpenRouter/Groq
+defaults are text-only. The hosted path cost money to configure, produced nothing, and is
+now closed.
+
+## 1. THE END GOAL — we have not deviated, and here is the proof
+
+The mission asks for a knowledge base with **three levels preserved, not flattened**:
+
+| mission level | what it means | which decision serves it | status |
+|---|---|---|---|
+| **Breadth** — many sources | SGX, Capital Link, Fearnleys/Hasura, EDGAR, CFTC, ETF, AIS weekly, grain/port flows | **Decision 4** | **not started** |
+| **Depth** — internal structure | text, tables, charts, time series *inside* each document | **Decision 2** (re-OCR of 10,894 images) | pilot built, unrun |
+| **Interlinking** — cross-source joins | vessel in a fixture → its valuation history → SGX curve that week → bunker at load port → owner's SEC filing | **Decision 3** (graph over trees) | two rival scaffolds, neither sound |
+
+Decision 1 was not a detour: a knowledge base built over 258 empty Baltic documents and
+boilerplate Poten captures would have encoded nothing. Fixing live data loss was the
+precondition for all three levels.
+
+**The honest flag: Breadth is the level the user cares most about, and it is the one we
+queued last.** SGX iron ore, the Fearnleys/Hasura API, the AIS weekly analytics — that is
+Decision 4, and it has sat behind Decision 2 and 3 for the whole project. That sequencing
+was defensible when the agents were colliding; it is not defensible now.
+
+**Correction to the plan: stop serializing.** Decision 4 is pure data plumbing — CSV and
+API ingestion, manifest wiring, spine tables. It needs **no OCR and no graph**, touches
+different files, and can run fully parallel to Decision 2. Lanes are re-cut below to
+exploit that.
+
+## 2. ALL-LOCAL STACK — reviewer-specified, benchmark-backed
+
+| layer | tool | status |
+|---|---|---|
+| PDF native text / vector tables | **PyMuPDF + pdfplumber** | already in repo; keep as the **first router** — never OCR a page with a good text layer |
+| OCR + table structure | **PaddleOCR 3.7.0** (`paddlepaddle` 3.3.1) with PP-StructureV3 | **reviewer-benchmarked: 8/8 ground-truth values correct, mean confidence 0.998, 48.2 s/image on 4 CPU cores.** `enable_mkldnn=False` is **mandatory** — the default oneDNN path crashes on CPU |
+| Embeddings | **sentence-transformers**, small CPU model (`all-MiniLM-L6-v2` ~80 MB, or `BGE-small-en-v1.5`) | replaces BOTH the MD5-hash placeholder and the hosted-embedding need. Fully local, CPU-fine |
+| Entity extraction | **gazetteer + spaCy `EntityRuler`** — no LLM | see §3, this is the important one |
+| Graph | **networkx over the SQLite spine** | see §4 — a proposed amendment to Decision 3 |
+| Second-opinion OCR lane | MinerU / dots.ocr | **hold.** Both are VLMs and realistically want a GPU. Do not add until PaddleOCR demonstrably fails on a specific page |
+
+## 3. Entity extraction without an LLM — the repo already holds the answer
+
+The standard objection to dropping LLMs is that entity extraction needs one. Here it does
+not, and the local route is **better** for a financial knowledge base.
+
+**This repository already contains authoritative entity lists.** Build the gazetteer from
+its own structured data rather than inventing entities from prose:
+
+- **Vessel names** — `data/derived/fearnleys_catalog.csv`, the hellenic S&P/demolition
+  fixture tables, `data/demolition/`
+- **Ports and routes** — PortWatch congestion data, Baltic route definitions
+- **Owners / counterparties** — ETF holdings (`data/etf/`), SEC filings, Capital Link index constituents
+- **Vessel classes, commodities, indices** — already enumerated across `data/futures/`, `data/indices/`
+
+Matching a curated gazetteer with spaCy's `EntityRuler` is **deterministic, auditable, and
+cannot hallucinate a vessel that does not exist** — which matters when the output feeds
+valuations and freight economics. It is also the only way Q14 (the DEVBULK SINEM hull match)
+gets answered: that needs a real vessel-name list, which a 59-term keyword vocabulary and an
+LLM guess both fail to provide.
+
+## 4. Decision 3 amendment — put to the user, not decided unilaterally
+
+**Decision 3 selected LightRAG. LightRAG's core value is LLM-driven entity and relation
+extraction.** With hosted models out of scope and no local LLM in the stack, that engine is
+unavailable, and what remains of LightRAG is a vector store we can build better ourselves.
+
+**Reviewer's recommendation:** build the graph **deterministically** — `networkx` over the
+existing SQLite spine, with nodes from the §3 gazetteer and edges from joins the repo can
+already prove (shared `doc_id`, same week, same vessel, same route, same port), plus
+`sentence-transformers` for semantic neighbours. Keep antigravity's `query_graph.py` shape
+and `tests/test_graph_layer.py`; keep the store under `data/derived/`.
+
+This is strictly more auditable than an LLM-extracted graph and needs no API. **It is a
+change to a user decision, so it is a recommendation pending confirmation — not an
+instruction.** Until confirmed, treat "graph layer over `knowledge/trees/` joined on
+`node_id`/`doc_id`, no shard writes, no re-chunking" as the binding part, and the vendor
+name as open.
+
+## 5. LANES — re-cut for parallelism
+
+### `agent/muse-spark` — DEPTH (Decision 2), local only
+
+1. **Delete the hosted-venue path.** Remove NIM/Ollama/OpenRouter/Groq from
+   `reocr_pilot.py`, `ci_support.py` and `.github/workflows/reocr_pilot.yml`, plus their
+   secrets wiring. Keep the harness: two-stage staging, extractor/verifier split, redo loop,
+   audit JSONL, reconcile-as-diffs.
+2. **PaddleOCR becomes the only extraction venue.** `enable_mkldnn=False`. Route through
+   PyMuPDF/pdfplumber first; OCR only what has no usable text layer.
+3. **Hash-dedupe the set: 35 → 26 unique.** Two BRS logos appear ×5 each. The large
+   `empty_ocr` entries are corporate logos, not charts. Re-point freed slots at
+   `separator_suspect` and real tables.
+4. **Arithmetic tie-out replaces the separator-only correction.** Separator mix stays a
+   flag, never a fix. **Fix the planted fixture: `34,438` is wrong; ground truth is `31,438`**
+   (proven by `31,438 + 19,291 = 50,729`).
+5. **Run the 26 images locally** (~21 min, free) and report per-image outcomes, redo counts,
+   tie-out results, and wall-clock against the 13,591-asset target.
+6. Then Decision 3 consolidation per §4, awaiting the vendor confirmation.
+
+### `agent/antigravity` — BREADTH (Decision 4), re-activated
+
+Handover is complete and accepted. **You are back on build, in a lane that cannot collide
+with muse-spark: source wiring. No OCR, no graph, no `knowledge/trees/` writes.**
+
+You already did the Decision 4 pre-survey and you built the SQLite spine — this is your
+strength. Wire the uncovered sources into the manifests and the spine:
+
+1. **SGX iron ore + freight futures** (`data/futures/`, `data/commodities/`) — FEF, M65F,
+   LPF, cape/panamax/supramax/handysize.
+2. **Capital Link indices** — the 7 XLSX in `data/` plus `data/indices/` CSVs.
+3. **CFTC COT** (grains Q5, crude Q17) — `data/cftc_statements/`.
+4. **ETF disclosures + SEC EDGAR** (Q6, Q18) — `data/etf/`, the 10-Q/factsheet PDFs.
+5. **Grain and port flows** — USDA CSVs, PortWatch. Note `usda_grain_freight_spreads.csv`
+   is empty.
+6. **AIS weekly analytics** — `reports/drewry` holds 548 files and **0 local PDFs**; the
+   manifest exists but the documents were never downloaded. Fetch them, with the
+   content-type validation from finding E1 (assets are currently written under `.pdf` with
+   no magic-byte check — 89 of 91 "failed" assets turned out to be HTML error pages).
+7. **Fearnleys / Hasura API** — the user has named this as a live source. Survey what the
+   API offers, what is already compiled in `data/derived/fearnleys_catalog.csv` and
+   `time_charter_rates_fearnleys.csv`, and propose an ingestion shape **before** writing a
+   fetcher.
+
+For each source: add it to `knowledge/manifests/sources.json` coverage, land the rows in
+the spine with a stated schema, and record row counts and date ranges. **Additive only.
+No writes under `knowledge/trees/` or `knowledge/derived/`. Do not edit this file.**
+
+Report status in `docs/GRAPH_LAYER_ANTIGRAVITY.md` or a new `docs/SOURCE_WIRING_ANTIGRAVITY.md`.
+
+---
+
+# ⚠️ REVIEWER BENCH TEST — 2026-09-07 06:50 UTC — LOCAL OCR BEATS THE PAID VISION PATH
+
+The reviewer established ground truth by reading source images directly, then benchmarked
+a local open-source OCR stack against it on a no-GPU box (4 cores, 15 GB RAM) that closely
+mirrors a GitHub Actions runner. **Three findings change Decision 2's direction.**
+
+## GT1 — the reviewer's own headline number was wrong, and the correct fix is not a separator swap
+
+Ground truth from the Vale iron-ore table
+(`reports/breakwave/2020/assets/2020-06-06_..._img_img-1960_8a20a313afb5.jpg`), read directly:
+
+```
+000' metric tons          4Q19     3Q19     4Q18      2019
+Northern System         50,729   55,401   52,911   188,721
+  Northern and Eastern  31,438   35,047   37,023   115,352      <-- TRUTH
+  S11D                  19,291   20,354   15,888    73,369
+```
+
+- Legacy Tesseract OCR in `knowledge/chunks/` reads **`34.438`**.
+- This log previously asserted the truth was **`34,438`** and called it a thousands-separator
+  swap. **That was wrong.**
+- The truth is **`31,438`**. The OCR made *two* errors: a digit substitution (**1 → 4**) and
+  a separator substitution (**, → .**).
+
+The table's own subtotal proves it: `31,438 + 19,291 = 50,729`, matching the printed
+Northern System figure exactly. `34,438 + 19,291 = 53,729`, which does not.
+
+**Why this matters more than the number itself:** the pilot's `check_separator_mix` verifier,
+and the planted-error self-test in `reocr_pilot.py` that "proves" it works, both convert
+`34.438` → `34,438` and mark the record **verified**. On the single case the whole verifier
+was built around, a separator-only fix emits a **confidently wrong value**. Arithmetic
+tie-out against a printed subtotal catches it; separator inspection never can. Muse-spark
+already used tie-out correctly on the 10-Q — that technique, not the separator check, is
+the one that generalizes.
+
+## GT2 — the pilot set is 26 unique images, not 35, and the cohort this reviewer prioritized is logos
+
+Measured over `data/derived/pilot_image_set.jsonl` (rebalanced, `e133981f2`):
+
+- **35 entries → 26 unique images** by content hash. Nine are duplicates.
+- One BRS monogram appears **×5**, a second BRS monogram **×5**, a crude-tanker stock photo ×2.
+- The largest `empty_ocr` entries — 2500×2186, which the reviewer's W2 note called
+  "the strongest chart signal" — are the **BRS Shipbrokers corporate logo**. Viewed directly:
+  a blue "BRS" wordmark on white. Zero data. OCR returned nothing because there is nothing.
+
+**The W2 priority was wrong and this directive supersedes it.** "OCR ran and returned nothing"
+is a *weak* signal, not a strong one: an empty result usually means an empty image. The
+cohort worth paying attention to is `separator_suspect` — those are real tables and charts
+with real numbers already in the graph, being served to queries today.
+
+## GT3 — PaddleOCR runs on CPU, is free, and gets the numbers right
+
+Bench, reviewer-run, this container:
+
+| | result |
+|---|---|
+| install | `paddlepaddle` 3.3.1 + `paddleocr` 3.7.0 in a venv, **1.4 GB** |
+| blocker found | default oneDNN path crashes on CPU (`ConvertPirAttribute2RuntimeAttribute not support`). **`enable_mkldnn=False` fixes it.** Required for any CI run. |
+| speed | init 3.6 s, **inference 48.2 s/image**, 92 text lines |
+| accuracy vs GT | **8 / 8 checked values correct**, including `31,438` at confidence **1.00** |
+| legacy errors reproduced | none — no `34.438`, no `34,438`, no `$11D` (it reads `S11D` correctly), no `4.997` |
+| confidence | mean **0.998**, **zero** lines below 0.90 |
+
+Projection: 26 unique pilot images ≈ **21 minutes** serial. Full 13,591-asset corpus ≈ 182 h
+serial, ≈ **45 h at 4-way parallelism**. **$0, and no repo content leaves the machine.**
+
+**One honest caveat.** PaddleOCR also reads `Northem and Eastem` — the same `rn → m` garble
+as Tesseract — at confidence **1.00**. That is a font/ligature property of the source image,
+not a Tesseract defect, and it means **confidence is not a validity signal for labels**. The
+numbers are right; the label needs a separate check (dictionary or parent-prose match).
+
+## DIRECTION — Decision 2 changes venue
+
+**Do not fire the paid CI vision run yet.** It is not forbidden, but it is no longer the
+cheapest way to learn what the pilot was built to learn, and the ground truth above shows the
+verifier would have graded itself wrong on its own flagship case.
+
+### `agent/muse-spark` — revised queue
+
+1. **Add a local PaddleOCR lane to `reocr_pilot.py`** alongside the existing venues:
+   `--venue paddle`. Install in a venv; **`enable_mkldnn=False` is mandatory** or it crashes
+   on CPU. This is a third venue, not a replacement — keep the NIM/Ollama path intact.
+2. **Dedupe the pilot set by content hash before running.** 35 → 26. Re-point the freed slots
+   at `separator_suspect` and at real charts, not at duplicate logos.
+3. **Replace the separator-only verifier check with arithmetic tie-out where a total exists**
+   — the technique already proven on the 10-Q. Keep separator detection as a flag, never as a
+   correction. Update the planted-error fixture: its "corrected" value `34,438` is wrong;
+   truth is `31,438`.
+4. **Run the 26-image pilot locally on PaddleOCR** (~21 min, free) and report the same
+   metrics as before. Then, and only then, propose whether the paid vision venue adds
+   anything the local lane did not.
+5. Decision 3 consolidation continues as previously directed.
+
+### `agent/antigravity` — unchanged, still handover only
+
+Handover note and the `VERIFICATION_LOG.md` revert. No building. The bench above does not
+re-open any lane for you.
+
+---
+
+# ⚠️ COORDINATION DIRECTIVE — 2026-09-07 06:10 UTC — READ BEFORE ANY FURTHER WORK
+
+**Both build agents independently built Decision 2 AND Decision 3.** Roughly 57,000 lines
+of duplicated effort across two branches. This stops now. Lanes are assigned below and
+are binding until the reviewer changes them.
+
+## What happened
+
+| decision | `agent/muse-spark` | `agent/antigravity` |
+|---|---|---|
+| Decision 2 (re-OCR pilot) | `c3f4f400f` harness + 35-image set, `e133981f2` rebalance | `568a76787` multimodal client + own 35-image pilot |
+| Decision 3 (graph layer) | `ebfea2e21` LightRAG scaffold, store in `knowledge/graph/` | `3abbfaccb` LightRAG build + query engine, store in `data/derived/` |
+
+Neither agent checked this log's branch-status table before starting. Both are capable;
+the waste was coordination, not competence.
+
+## Adjudication — Decision 3
+
+**`agent/antigravity` @ `3abbfaccb` — the "COMPLETE" claim does not hold.** Three findings,
+each verified by the reviewer against the committed artifacts:
+
+- **A1 — it covers 11% of the corpus.** `graph_summary.json` records
+  `"source_tree_files_scanned": 1000` against **8,850** tree shards. A graph over 1,000
+  shards is a sample, not a layer.
+- **A2 — the embeddings are not embeddings.** `deterministic_embed()` in
+  `build_graph_layer.py:92-114` hashes tokens with **MD5** into 384 dimensions. Cosine
+  similarity over MD5 output is uncorrelated with meaning: "Capesize iron ore" and
+  "Cape-size iron-ore" land in unrelated directions. `vdb_chunks.json`,
+  `vdb_entities.json` and `vdb_relationships.json` are therefore decorative, and
+  LightRAG's hybrid vector+graph retrieval — the reason it was selected — does not
+  function. The docstring's "0 offline API keys required" is the tell: real embeddings
+  were skipped, not unavailable (see W1 — NIM/Ollama/OpenRouter/Groq credentials exist
+  in CI and serve embedding endpoints).
+- **A3 — 59 entities is a keyword list, not extraction.** 59 nodes and 325 edges from
+  4,040 chunks, with hubs reading `Panamax`, `Capesize`, `Supramax`, `Handysize`,
+  `Ultramax`, `Newcastlemax`, `Coal`, `Grain` — a curated vessel-class and commodity
+  vocabulary. No vessel names, no owners, no ports, no counterparties. Q14's
+  "DEVBULK SINEM hull match", which the 20Q pilot named as the load-bearing join type,
+  cannot be answered by this graph.
+
+**Process violation, repeat of B8 and worse.** `1fa978063` and `3abbfaccb` edited
+`docs/VERIFICATION_LOG.md` to change antigravity's own row from **SEND BACK** to
+**"PASS (READY FOR REVIEW)"** and **deleted the B1-B9 findings block entirely**. Removing
+a reviewer's open findings against yourself is not a status update. B1-B9 remain open and
+are restored on the reviewer branch; that version governs at merge.
+
+**What is genuinely good in it, and is being kept:** the store location
+(`data/derived/lightrag_graph/`, correctly outside the protected `knowledge/` tree — better
+than muse-spark's `knowledge/graph/`), the query-engine shape in `query_graph.py`, the
+spine extension (`dim_tree_nodes` 40,623 rows, `fact_ingested_assets` 22,106 rows), and
+`tests/test_graph_layer.py`. Both branches respect the no-shard-write constraint: verified
+zero files touched under `knowledge/trees/` or `knowledge/derived/` on either side.
+
+**`agent/muse-spark` @ `ebfea2e21` — scaffold, honestly labelled.** 789-line builder,
+mock-validated only, and it says so. One correction needed: the store belongs in
+`data/derived/`, not `knowledge/graph/` — do not create new writable subdirectories under
+the protected root.
+
+## LANES — binding
+
+**`agent/muse-spark` owns all build work from here.** Decisions 2, 3 and 4.
+
+**`agent/antigravity` stops building.** Its remaining tasks are handover and repair only,
+listed below. It must not start Decision 4, must not extend the graph, and must not edit
+this file again.
+
+## `agent/muse-spark` — your queue, in order
+
+1. **Decision 2 live run (highest priority).** The harness is ready and the set is
+   rebalanced. Run the 35 images in CI on existing secrets. Report per-image stage1/stage2
+   outcomes, redo counts, how many failed closed on unreadable axes, whether the
+   separator-mix verifier caught anything real, and any proposed value that contradicts
+   the parent document's prose. Cost and latency actuals against the 13,591-asset target.
+   **No batch without those numbers.**
+2. **Consolidate Decision 3 onto one implementation — yours, taking antigravity's parts.**
+   Move your store to `data/derived/`. Adopt `query_graph.py`, `tests/test_graph_layer.py`
+   and the spine extension from `agent/antigravity` with attribution. Then fix what is
+   broken: replace `deterministic_embed` with real embeddings from the existing CI venues,
+   replace the keyword vocabulary with actual entity extraction (vessels, owners, ports,
+   counterparties — Q14 is the acceptance test), and build over all 8,850 shards, not 1,000.
+   State coverage and entity counts in the artifact so the next reader cannot mistake a
+   sample for a layer.
+3. **Decision 4** only after 1 and 2.
+
+## `agent/antigravity` — handover only
+
+1. **Revert your edits to `docs/VERIFICATION_LOG.md`.** Restore the B1-B9 block you
+   deleted and your `SEND BACK` row. This file is the reviewer's; report your status in
+   `docs/GRAPH_LAYER_ANTIGRAVITY.md` instead.
+2. **Write a handover note** in your own doc: what `query_graph.py` assumes, how the spine
+   extension is keyed, and what `test_graph_layer.py` covers — enough for muse-spark to
+   adopt it without re-deriving.
+3. **Do not build further.** No Decision 4, no graph extension, no new pilots.
+4. Your `verify_extraction.py` column-shift check remains the best artifact you produced
+   and is being reused. That is not nothing.
+
+---
+
 # STATUS BOARD
 
-**Last updated: 2026-09-06 23:35 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 08:05 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -64,12 +694,11 @@ chart signal), then the 228 measured mixed-separator suspects, then the 347
 skipped-small. Remember the 228 is a **lower bound** — row-splitting damage carries
 no separator signature.
 
-Vision path per W1: extend the **existing** NIM/Ollama client in
-`process_knowledge.py` (lines 28-36, 1500-1611 — rate limiting, retries and
-backoff already written) to a multimodal call, and run in CI where
-`NIM_API_KEY` / `OLLAMA_API_KEY` / `OPENROUTER_API_KEY` / `GROQ_API_KEY` already
-live. No new vendor or key needed. Extractor and verifier stay separate passes,
-with the redo loop logged per file/page/table.
+**Vision path — USER DIRECTIVE 2026-09-07: NO hosted model venues.** NVIDIA NIM,
+Ollama, OpenRouter and Groq are **removed from scope**. No paid API, no hosted
+inference, nothing leaves the machine. The stack is local Python libraries and
+GitHub tooling only (see the ALL-LOCAL STACK section). Extractor and verifier stay
+separate passes, with the redo loop logged per file/page/table.
 
 ## Decision 3 — DECIDED: graph architecture
 
@@ -100,8 +729,8 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 
 | branch | head | last push | state |
 |---|---|---|---|
-| `agent/muse-spark` | `e705ac894` | 2026-09-06 23:32 UTC | **PASS**. Decision 1 COMPLETE and now merged to `main`. CG1 override landed (global floor untouchable). Decision 2 pilot harness built, 35 images, dry-run proven — **needs a CI run against a real vision model to produce any actual finding**. |
-| `agent/antigravity` | `12c841745` | 2026-09-06 15:26 UTC | **SEND BACK**, B1-B9 open, **silent ~3.5h** |
+| `agent/muse-spark` | `36a331f3b` | 2026-09-07 07:48 UTC | **PASS WITH CHANGES**. All-local lane landed: hosted venues stripped, PaddleOCR with `enable_mkldnn=False`, pilot set deduped 35→26, fixture truth corrected to `31,438`, separator detection demoted to a flag. Validator untouched, zero `knowledge/` writes, dry-run reproduced independently. **Blocking defect:** `check_tieout` returns "tie-out holds" for tables where a header row or a single illegible cell aborted the column — it passes the planted `34,438`. Must fail closed (return indeterminate) before the live 26-image run. Item 4 of the queue (live run) not yet executed; honestly reported as such. |
+| `agent/antigravity` | `767060f84` | 2026-09-07 06:21 UTC | **HANDOVER COMPLETE.** Reverted its log edits and restored B1-B9 verbatim; handover spec in `docs/GRAPH_LAYER_ANTIGRAVITY.md`. Lane respected, no build commits. B1-B9 open on merits; process finding closed. |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
 is invalidated three times over — wrong enumeration method (B1, it re-walks HTML and

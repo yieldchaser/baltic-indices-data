@@ -33,10 +33,14 @@ concurrency:
 
 jobs:
   process:
+    # This job's final step pushes HEAD:main. Without a ref guard, ANY push to
+    # ANY branch touching reports/** rebases that branch onto main and pushes it
+    # there. Feature-branch pushes must never reach main via CI.
     if: >
-      github.event_name != 'workflow_run' ||
-      (github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.head_branch == 'main')
+      github.ref == 'refs/heads/main' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_branch == 'main'))
     runs-on: ubuntu-latest
 
     steps:
