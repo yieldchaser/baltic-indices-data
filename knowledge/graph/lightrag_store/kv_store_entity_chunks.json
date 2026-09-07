@@ -1,0 +1,750 @@
+{
+  "Australia": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "Australia"
+  },
+  "China": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "China"
+  },
+  "Dampier": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-075e559d3d600577163589b4c957dab8"
+    ],
+    "count": 3,
+    "update_time": 1788759050,
+    "_id": "Dampier"
+  },
+  "Japan": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e"
+    ],
+    "count": 5,
+    "update_time": 1788759050,
+    "_id": "Japan"
+  },
+  "NoPac": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "NoPac"
+  },
+  "WCSA": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "WCSA"
+  },
+  "USD 18,500": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "USD 18,500"
+  },
+  "WS 120,": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "WS 120,"
+  },
+  "BDI 3,186,": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "BDI 3,186,"
+  },
+  "USD 36,5": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "USD 36,5"
+  },
+  "USD 39": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "USD 39"
+  },
+  "USD 20": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "USD 20"
+  },
+  "Week 35 2026": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "Week 35 2026"
+  },
+  "28 Aug 2026": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 25,
+    "update_time": 1788759052,
+    "_id": "28 Aug 2026"
+  },
+  "2026-08-29": {
+    "chunk_ids": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82",
+      "chunk-0a1c30044575d58734b2a7ac07ff275f",
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-417be6df11670b738ec868c9c1d1b84d",
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-5608586fc26501ea159f1fc7f579624e",
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2",
+      "chunk-125a52f68ec1ee1952599a786106976e"
+    ],
+    "count": 12,
+    "update_time": 1788759052,
+    "_id": "2026-08-29"
+  },
+  "Port Hedland": {
+    "chunk_ids": [
+      "chunk-0a1c30044575d58734b2a7ac07ff275f"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "Port Hedland"
+  },
+  "Tubarao": {
+    "chunk_ids": [
+      "chunk-0a1c30044575d58734b2a7ac07ff275f"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "Tubarao"
+  },
+  "USD 14.15": {
+    "chunk_ids": [
+      "chunk-0a1c30044575d58734b2a7ac07ff275f"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "USD 14.15"
+  },
+  "USD 37.25": {
+    "chunk_ids": [
+      "chunk-0a1c30044575d58734b2a7ac07ff275f"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "USD 37.25"
+  },
+  "Panama": {
+    "chunk_ids": [
+      "chunk-555504f5efaabb279c6228379fecdbd5"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "Panama"
+  },
+  "Singapore": {
+    "chunk_ids": [
+      "chunk-555504f5efaabb279c6228379fecdbd5",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c"
+    ],
+    "count": 3,
+    "update_time": 1788759051,
+    "_id": "Singapore"
+  },
+  "USD 16,000": {
+    "chunk_ids": [
+      "chunk-555504f5efaabb279c6228379fecdbd5"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "USD 16,000"
+  },
+  "India": {
+    "chunk_ids": [
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 2,
+    "update_time": 1788759052,
+    "_id": "India"
+  },
+  "Indonesia": {
+    "chunk_ids": [
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5",
+      "chunk-31326fbcc02fd26077ce0166531c669e"
+    ],
+    "count": 3,
+    "update_time": 1788759050,
+    "_id": "Indonesia"
+  },
+  "USD 19,000": {
+    "chunk_ids": [
+      "chunk-8b13db8162fc07483856264e4978f920"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "USD 19,000"
+  },
+  "USD 15,000": {
+    "chunk_ids": [
+      "chunk-8b13db8162fc07483856264e4978f920",
+      "chunk-e1e550bccb25269949c151a5dedadbe5"
+    ],
+    "count": 2,
+    "update_time": 1788759049,
+    "_id": "USD 15,000"
+  },
+  "Taiwan": {
+    "chunk_ids": [
+      "chunk-e1e550bccb25269949c151a5dedadbe5"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "Taiwan"
+  },
+  "USD 15,800": {
+    "chunk_ids": [
+      "chunk-e1e550bccb25269949c151a5dedadbe5"
+    ],
+    "count": 1,
+    "create_time": 1788759049,
+    "update_time": 1788759049,
+    "_id": "USD 15,800"
+  },
+  "Mount Dampier": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 2,
+    "update_time": 1788759050,
+    "_id": "Mount Dampier"
+  },
+  "Efraim A": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 2,
+    "update_time": 1788759050,
+    "_id": "Efraim A"
+  },
+  "Amaryllis": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 2,
+    "update_time": 1788759050,
+    "_id": "Amaryllis"
+  },
+  "African Wagtail": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "African Wagtail"
+  },
+  "Lila Mundra": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Lila Mundra"
+  },
+  "Marianna": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Marianna"
+  },
+  "Spar Scorpio": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 2,
+    "update_time": 1788759050,
+    "_id": "Spar Scorpio"
+  },
+  "Arklow Spirit": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 2,
+    "update_time": 1788759050,
+    "_id": "Arklow Spirit"
+  },
+  "Korea": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8",
+      "chunk-31326fbcc02fd26077ce0166531c669e"
+    ],
+    "count": 2,
+    "update_time": 1788759050,
+    "_id": "Korea"
+  },
+  "Week 35 (21 Aug to 28 Aug 2026)": {
+    "chunk_ids": [
+      "chunk-075e559d3d600577163589b4c957dab8"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Week 35 (21 Aug to 28 Aug 2026)"
+  },
+  "Hellstugutinden": {
+    "chunk_ids": [
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-de06bc33acde03d1f16f45179a542164"
+    ],
+    "count": 2,
+    "update_time": 1788759050,
+    "_id": "Hellstugutinden"
+  },
+  "Seasenator": {
+    "chunk_ids": [
+      "chunk-31326fbcc02fd26077ce0166531c669e",
+      "chunk-de06bc33acde03d1f16f45179a542164"
+    ],
+    "count": 2,
+    "update_time": 1788759050,
+    "_id": "Seasenator"
+  },
+  "Mumbai": {
+    "chunk_ids": [
+      "chunk-31326fbcc02fd26077ce0166531c669e"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Mumbai"
+  },
+  "Pakistan": {
+    "chunk_ids": [
+      "chunk-760cad6b715a75661b365db662ba7e81",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 2,
+    "update_time": 1788759052,
+    "_id": "Pakistan"
+  },
+  "2026-08-31": {
+    "chunk_ids": [
+      "chunk-8bd18faff72881ef9c33327c3feb75ca",
+      "chunk-00f382703528cdfd85bbd665df6198b3",
+      "chunk-a83a48a32214dce5a9878e805d7820f7",
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1",
+      "chunk-de06bc33acde03d1f16f45179a542164",
+      "chunk-37d974b463e563a7c7ae614ed576b7c0",
+      "chunk-66c17b3a3a04412a327157e878195f25",
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-eaf339c228c241fb0104029483562ca9",
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-4b16bdc573b67cebf43c929ef22611d9",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 13,
+    "update_time": 1788759052,
+    "_id": "2026-08-31"
+  },
+  "BDI: 3,186": {
+    "chunk_ids": [
+      "chunk-00f382703528cdfd85bbd665df6198b3"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "BDI: 3,186"
+  },
+  "Princess Eternity": {
+    "chunk_ids": [
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Princess Eternity"
+  },
+  "Ebury Trader": {
+    "chunk_ids": [
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Ebury Trader"
+  },
+  "Sidra": {
+    "chunk_ids": [
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Sidra"
+  },
+  "Amanah Halmahera Amc": {
+    "chunk_ids": [
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Amanah Halmahera Amc"
+  },
+  "Glory Bridge": {
+    "chunk_ids": [
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Glory Bridge"
+  },
+  "Hippolyta": {
+    "chunk_ids": [
+      "chunk-de06bc33acde03d1f16f45179a542164"
+    ],
+    "count": 1,
+    "create_time": 1788759050,
+    "update_time": 1788759050,
+    "_id": "Hippolyta"
+  },
+  "Crimsom Saturn": {
+    "chunk_ids": [
+      "chunk-66c17b3a3a04412a327157e878195f25"
+    ],
+    "count": 1,
+    "create_time": 1788759051,
+    "update_time": 1788759051,
+    "_id": "Crimsom Saturn"
+  },
+  "Athena": {
+    "chunk_ids": [
+      "chunk-66c17b3a3a04412a327157e878195f25"
+    ],
+    "count": 1,
+    "create_time": 1788759051,
+    "update_time": 1788759051,
+    "_id": "Athena"
+  },
+  "Lyra Tanker": {
+    "chunk_ids": [
+      "chunk-7b63c874bd3a542659eabd99a0946af0"
+    ],
+    "count": 1,
+    "create_time": 1788759051,
+    "update_time": 1788759051,
+    "_id": "Lyra Tanker"
+  },
+  "Turkey": {
+    "chunk_ids": [
+      "chunk-7b63c874bd3a542659eabd99a0946af0",
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4",
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 3,
+    "update_time": 1788759052,
+    "_id": "Turkey"
+  },
+  "Brazil": {
+    "chunk_ids": [
+      "chunk-eaf339c228c241fb0104029483562ca9"
+    ],
+    "count": 1,
+    "create_time": 1788759051,
+    "update_time": 1788759051,
+    "_id": "Brazil"
+  },
+  "Week 35": {
+    "chunk_ids": [
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2"
+    ],
+    "count": 1,
+    "create_time": 1788759052,
+    "update_time": 1788759052,
+    "_id": "Week 35"
+  },
+  "Bangladesh": {
+    "chunk_ids": [
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "count": 1,
+    "create_time": 1788759052,
+    "update_time": 1788759052,
+    "_id": "Bangladesh"
+  }
+}

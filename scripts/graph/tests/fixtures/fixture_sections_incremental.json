@@ -1,0 +1,127 @@
+[
+ {
+  "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s23_indicative_prices",
+  "doc_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+  "parent_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__root",
+  "title": "INDICATIVE PRICES",
+  "section_path": [
+   "INDICATIVE PRICES"
+  ],
+  "section_path_text": "INDICATIVE PRICES",
+  "level": 1,
+  "ordinal": 23,
+  "summary": "***st th***\nBulkers | Tankers\n--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---\nSize | Age | Week 35 | Week 34 | ± % | Size | Age | Week 35 | Week 34 | ± %\nCapesize 180k | Resale | 83 | 81 | 2,47% | VLCC 310k | Resale | 181 | 182 | -0,55%\nCapesize 180k | 5 years | 72 | 71 | 1,41% | VLCC 310k | 5 years | 156,5 | 157,5 | -0,63%\nCapesize 180k | 10 years | 56,5 | 55,5 | 1,80% | VLCC 300k | 10 years | 131,5 | 132,5 | -0,75%\nCapesize 176k | 15 years | 36,5 | 36,5 | 0,00% | VLCC 300k | 15 years | 99,5 | 99,5 | 0,00%\nKamsarmax 82k | Resale | 45,5 | 45 | 1,11% | Suezmax 160k | Resale | 129 | 119 | 8,40%\nKamsarmax 82k | 5 years | 40,5 | 39,5 | 2,53% | Suezmax 160k | 5 years | 107,5 | 99,5 | 8,04%\nKamsarmax 82k | 10 years | 31 | 30 | 3,33% | Suezmax 150k | 10 years | 83,5 | 83,5 | 0,00%\nKamsarmax 82k | 15 years | 21,5 | 21 | 2,38% | Suezmax 150k | 15 years | 65,5 | 65,5 | 0,00%\nUltramax 64k | Resale | 43 | 43 | 0,00% | Aframax 110k | Resale | 94 | 94 | 0,00%\nUltramax 63k | 5 years | 38 | 38 | 0,00% | Aframax 110k | 5 years | 84,5 | 84,5 | 0,00%\nUltramax 61k | 10 years | 29 | 28,5 | 1,75% | Aframax 105k | 10 years | 72 | 72 | 0,00%\nSupramax 56k | 15 years | 18 | 18 | 0,00% | Afra",
+  "keywords": [
+   "capesize",
+   "supramax",
+   "handysize",
+   "vlcc",
+   "suezmax",
+   "aframax",
+   "years",
+   "resale"
+  ],
+  "token_count": 832,
+  "batch": "incremental"
+ },
+ {
+  "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s29_shipping_indicative_share_value",
+  "doc_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+  "parent_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__root",
+  "title": "SHIPPING INDICATIVE SHARE VALUE",
+  "section_path": [
+   "SHIPPING INDICATIVE SHARE VALUE"
+  ],
+  "section_path_text": "SHIPPING INDICATIVE SHARE VALUE",
+  "level": 1,
+  "ordinal": 29,
+  "summary": "***st*** ***th***\nStock Prices - Shipping Companies\n--- | --- | --- | --- | ---\nCompany | Stock Exchange | 27-Aug | 20-Aug | ± (%)\nDiana Shipping Inc (DSX) | NYSE | 2,69 | 2,65 | 1,51%\nEuroseas Ltd (ESEA) | NASDAQ | 76,44 | 75,02 | 1,89%\nNavios Maritime Partners LP (NMM) | NYSE | 88,40 | 85,32 | 3,61%\nStar Bulk Carriers Corp (SBLK) | NASDAQ | 30,42 | 30,06 | 1,20%\nSeanergy Maritime Holdings Corp (SHIP) | NASDAQ | 17,66 | 16,92 | 4,37%\nSafe Bulkers Inc (SB) | NYSE | 8,42 | 8,28 | 1,69%\nStock Prices-Wet\n--- | --- | --- | --- | ---\nCompany | Stock Exchange | 27-Aug | 20-Aug | ± (%)\nCapital Clean Energy Carriers Corp (CCEC) | NASDAQ | 22,78 | 22,65 | 0,57%\nTOP Ships Inc (TOPS) | NASDAQ | 0,79 | 0,79 | 0,00%\nStock Prices-Other\n--- | --- | --- | --- | ---\nCompany | Stock Exchange | 27-Aug | 20-Aug | ± (%)\nDanaos Corp (DAC) | NYSE | 151,25 | 148,70 | 1,71%\nStealthGas Inc (GASS) | NASDAQ | 9,48 | 9,52 | -0,42%\nRio Tinto PLC (RIO) | NYSE | 104,78 | 102,17 | 2,55%\nVale SA (VALE) | NYSE | 15,31 | 14,23 | 7,59%\nArcher-Daniels-Midland Co (ADM) | NYSE | 79,10 | 81,70 | -3,18%\nBHP Group Ltd (BHP) | NYSE | 96,37 | 93,63 | 2,93%\nCONTACT DETAILS\n--- | --- | --- | --- | --- | ---\nADVANCED SHIPPING & ",
+  "keywords": [
+   "container",
+   "brazil",
+   "gas",
+   "mob",
+   "aug",
+   "nyse",
+   "department",
+   "nasdaq"
+  ],
+  "token_count": 1214,
+  "batch": "incremental"
+ },
+ {
+  "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s17_current_market_snapshot_usd_ldt",
+  "doc_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35",
+  "parent_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__root",
+  "title": "Current Market Snapshot (USD / LDT)",
+  "section_path": [
+   "Current Market Snapshot (USD / LDT)"
+  ],
+  "section_path_text": "Current Market Snapshot (USD / LDT)",
+  "level": 1,
+  "ordinal": 17,
+  "summary": "DESTINATION | TANKERS | BULKERS | GENERAL CARGO | CONTAINERS | OUTLOOK / SENTIMENTS\n--- | --- | --- | --- | --- | ---\nALANG, INDIA | $440-450 | $430-440 | $420-430 | $470-480 | STABLE /\nCHATTOGRAM, BANGLADESH | $490-500 | $460-470 | $450-460 | $500-510 | BULLISH /\nGADDANI, PAKISTAN | $520-530 | $510-520 | $490-500 | $540-550 | BULLISH /\nALIAGA, TURKEY* | $300-310 | $290-300 | $270-280 | $310-320 | STABLE /\n** Turkey prices for non-EU ships. US$20-30/ton less.* *All prices are USD per light displacement tonnage (long ton), net prices offered by recycling yards.",
+  "keywords": [
+   "container",
+   "india",
+   "japan",
+   "prices",
+   "are",
+   "cargo",
+   "quality",
+   "all"
+  ],
+  "token_count": 328,
+  "batch": "incremental"
+ },
+ {
+  "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s29_crude_oil_natural_gas",
+  "doc_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35",
+  "parent_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__root",
+  "title": "Crude Oil & Natural Gas",
+  "section_path": [
+   "Crude Oil & Natural Gas"
+  ],
+  "section_path_text": "Crude Oil & Natural Gas",
+  "level": 1,
+  "ordinal": 29,
+  "summary": "INDEX | UNITS | PRICE | CHANGE | % CHANGE | CONTRACT\n--- | --- | --- | --- | --- | ---\nWTI Crude Oil (Nymex) | USD / bbl. | 82.98 | -0.55 | -0.66% | OCT 2026\nBrent Crude (ICE) | USD / bbl.",
+  "keywords": [
+   "crude_oil",
+   "gas",
+   "crude",
+   "oct",
+   "usd",
+   "bbl.",
+   "change",
+   "nymex"
+  ],
+  "token_count": 189,
+  "batch": "incremental"
+ },
+ {
+  "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s30_exchange_rates",
+  "doc_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35",
+  "parent_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__root",
+  "title": "Exchange Rates",
+  "section_path": [
+   "Exchange Rates"
+  ],
+  "section_path_text": "Exchange Rates",
+  "level": 1,
+  "ordinal": 30,
+  "summary": "CURRENCY PAIR | AUGUST 21 | AUGUST 28 | WoW %\n--- | --- | --- | ---\nUSD / CNY (China) | 6.72 | 6.72 | 0.00%\nUSD / BDT (Bangladesh) | 122.24 | 123.28 | -0.85%\nUSD / INR (India) | 95.74 | 95.51 | +0.24%\nUSD / PKR (Pakistan) | 277.57 | 277.50 | +0.03%\nUSD / TRY (Turkey) | 48.01 | 48.14 | -0.27%",
+  "keywords": [
+   "china",
+   "india",
+   "usd",
+   "august",
+   "bangladesh",
+   "bdt",
+   "cny",
+   "currency"
+  ],
+  "token_count": 139,
+  "batch": "incremental"
+ }
+]

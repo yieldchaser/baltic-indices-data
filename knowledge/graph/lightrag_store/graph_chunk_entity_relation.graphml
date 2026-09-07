@@ -1,0 +1,925 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Australia">
+  <data key="d0">Australia</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="China">
+  <data key="d0">China</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="Dampier">
+  <data key="d0">Dampier</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Japan">
+  <data key="d0">Japan</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="NoPac">
+  <data key="d0">NoPac</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="WCSA">
+  <data key="d0">WCSA</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 18,500">
+  <data key="d0">USD 18,500</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="WS 120,">
+  <data key="d0">WS 120,</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="BDI 3,186,">
+  <data key="d0">BDI 3,186,</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 36,5">
+  <data key="d0">USD 36,5</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 39">
+  <data key="d0">USD 39</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 20">
+  <data key="d0">USD 20</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="Week 35 2026">
+  <data key="d0">Week 35 2026</data>
+  <data key="d1">week_date</data>
+  <data key="d2">Reporting week or date in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="28 Aug 2026">
+  <data key="d0">28 Aug 2026</data>
+  <data key="d1">week_date</data>
+  <data key="d2">Reporting week or date in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="2026-08-29">
+  <data key="d0">2026-08-29</data>
+  <data key="d1">week_date</data>
+  <data key="d2">Reporting week or date in report text</data>
+  <data key="d3">chunk-cb3c5b1e405c012d65239756df15ad82&lt;SEP&gt;chunk-0a1c30044575d58734b2a7ac07ff275f&lt;SEP&gt;chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-417be6df11670b738ec868c9c1d1b84d&lt;SEP&gt;chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-5608586fc26501ea159f1fc7f579624e&lt;SEP&gt;chunk-09a1144e82bd7cddba74a756fa4cebd2&lt;SEP&gt;chunk-125a52f68ec1ee1952599a786106976e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="Port Hedland">
+  <data key="d0">Port Hedland</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-0a1c30044575d58734b2a7ac07ff275f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="Tubarao">
+  <data key="d0">Tubarao</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-0a1c30044575d58734b2a7ac07ff275f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 14.15">
+  <data key="d0">USD 14.15</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-0a1c30044575d58734b2a7ac07ff275f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 37.25">
+  <data key="d0">USD 37.25</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-0a1c30044575d58734b2a7ac07ff275f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="Panama">
+  <data key="d0">Panama</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-555504f5efaabb279c6228379fecdbd5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="Singapore">
+  <data key="d0">Singapore</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-555504f5efaabb279c6228379fecdbd5&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759051</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 16,000">
+  <data key="d0">USD 16,000</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-555504f5efaabb279c6228379fecdbd5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="India">
+  <data key="d0">India</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="Indonesia">
+  <data key="d0">Indonesia</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 19,000">
+  <data key="d0">USD 19,000</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-8b13db8162fc07483856264e4978f920</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 15,000">
+  <data key="d0">USD 15,000</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-8b13db8162fc07483856264e4978f920&lt;SEP&gt;chunk-e1e550bccb25269949c151a5dedadbe5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="Taiwan">
+  <data key="d0">Taiwan</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-e1e550bccb25269949c151a5dedadbe5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="USD 15,800">
+  <data key="d0">USD 15,800</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-e1e550bccb25269949c151a5dedadbe5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759049</data>
+  <data key="d6"></data>
+</node>
+<node id="Mount Dampier">
+  <data key="d0">Mount Dampier</data>
+  <data key="d1">vessel</data>
+  <data key="d2">ear | Price | Buyer | Comments Capesize | Mount Dampier | 181.469 | 2011 | Imabari, Japan | 11/2026 | MAN-B&amp;W | - | xs $ 38m | European | Scrubber fitted Kamsarmax | Efraim A | 82.174 | 2010 |&lt;SEP&gt;MOUNT DAMPIER | CAPE | 181,469 | 2011 / JAPAN | 38.0 | MERCURIA ENERGY GROUP HOLDING LTD</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Efraim A">
+  <data key="d0">Efraim A</data>
+  <data key="d1">vessel</data>
+  <data key="d2">| European | Scrubber fitted Kamsarmax | Efraim A | 82.174 | 2010 | Tsuneishi Zhoushan, China | 05/2030 | MAN-B&amp;W | - | $ 20m | Undisclosed Ultramax | Amaryllis | 63.500 | 2013 | Yangzh&lt;SEP&gt;EFRAIM A | KMAX | 82,174 | 2010 / CHINA | 20.0 | UNDISCLOSED</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Amaryllis">
+  <data key="d0">Amaryllis</data>
+  <data key="d1">vessel</data>
+  <data key="d2">-B&amp;W | - | $ 20m | Undisclosed Ultramax | Amaryllis | 63.500 | 2013 | Yangzhou, China | 08/2028 | MAN-B&amp;W | 4x35T | Low-Mid $ 24m | Chinese Supramax | African Wagtail | 58.340 | 2013 | DA&lt;SEP&gt;AMARYLLIS | UMAX | 63,500 | 2013 / CHINA | 24.4 | CHINESE BUYERS</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="African Wagtail">
+  <data key="d0">African Wagtail</data>
+  <data key="d1">vessel</data>
+  <data key="d2">x35T | Low-Mid $ 24m | Chinese Supramax | African Wagtail | 58.340 | 2013 | DACKS, China | 10/2028 | MAN-B&amp;W | 4x30,5T | xs $ 20m | Undisclosed | DD 10/2026 Supramax | Lila Mundra | 57.269 | 20</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Lila Mundra">
+  <data key="d0">Lila Mundra</data>
+  <data key="d1">vessel</data>
+  <data key="d2">20m | Undisclosed | DD 10/2026 Supramax | Lila Mundra | 57.269 | 2009 | Stx Dalian, China | 05/2029 | MAN-B&amp;W | 4x30T | $ 12,5m | Undisclosed Supramax | Marianna | 55.753 | 2010 | IHI, Japa</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Marianna">
+  <data key="d0">Marianna</data>
+  <data key="d1">vessel</data>
+  <data key="d2">4x30T | $ 12,5m | Undisclosed Supramax | Marianna | 55.753 | 2010 | IHI, Japan | 03/2030 | Wartsila | 4x35T | $ 17m | Undisclosed Supramax | Spar Scorpio | 53.565 | 2006 | Chengxi, Chin</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Spar Scorpio">
+  <data key="d0">Spar Scorpio</data>
+  <data key="d1">vessel</data>
+  <data key="d2">| 4x35T | $ 17m | Undisclosed Supramax | Spar Scorpio | 53.565 | 2006 | Chengxi, China | 10/2026 | MAN-B&amp;W | 4x36T | Low-Mid $ 11m | Chinese Handysize | Arklow Spirit | 36.000 | 2013 | Dae&lt;SEP&gt;SPAR SCORPIO | SMAX | 53,565 | 2006 / CHINA | 11.25 | CHINESE BUYERS</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Arklow Spirit">
+  <data key="d0">Arklow Spirit</data>
+  <data key="d1">vessel</data>
+  <data key="d2">36T | Low-Mid $ 11m | Chinese Handysize | Arklow Spirit | 36.000 | 2013 | Dae Sun, Korea | 12/2028 | MAN-B&amp;W | 4x30T | $ 16,6m | Undisclosed | DD 10/2026 Keywords: capesize, supramax, handysi&lt;SEP&gt;ARKLOW SPIRIT | HANDY | 34,905 | 2013 / S. KOREA | 16.6 | UNDISCLOSED</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Korea">
+  <data key="d0">Korea</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-31326fbcc02fd26077ce0166531c669e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Week 35 (21 Aug to 28 Aug 2026)">
+  <data key="d0">Week 35 (21 Aug to 28 Aug 2026)</data>
+  <data key="d1">week_date</data>
+  <data key="d2">Reporting week or date in report text</data>
+  <data key="d3">chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Hellstugutinden">
+  <data key="d0">Hellstugutinden</data>
+  <data key="d1">vessel</data>
+  <data key="d2">--- | --- | --- | --- | --- | --- VLCC | Hellstugutinden | 299.095 | 2003 | Universal, Japan | 11/2028 | B&amp;W | $ 57m | Indonesian | DD 10/2026 Aframax | Seasenator | 105.715 | 2007 | Namura &amp; S&lt;SEP&gt;HELLSTUGUTINDEN | VLCC | 299,095 | 2003 / JAPAN | 57.0 | INDONESIAN BUYERS</data>
+  <data key="d3">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Seasenator">
+  <data key="d0">Seasenator</data>
+  <data key="d1">vessel</data>
+  <data key="d2">$ 57m | Indonesian | DD 10/2026 Aframax | Seasenator | 105.715 | 2007 | Namura &amp; Sasebo, Japan | 01/2027 | MAN-B&amp;W | High $ 30's | Undisclosed MR | Mumbai | 46.818 | 2003 | Hyundai Mipo, Ko&lt;SEP&gt;SEASENATOR | AFRA | 105,715 | 2007 / JAPAN | 30.0 | UNDISCLOSED</data>
+  <data key="d3">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Mumbai">
+  <data key="d0">Mumbai</data>
+  <data key="d1">vessel</data>
+  <data key="d2">MAN-B&amp;W | High $ 30's | Undisclosed MR | Mumbai | 46.818 | 2003 | Hyundai Mipo, Korea | 10/2028 | B&amp;W | $ 10,4m | Undisclosed | DD 10/2026 Keywords: vlcc, aframax, japan, undisclosed,</data>
+  <data key="d3">chunk-31326fbcc02fd26077ce0166531c669e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Pakistan">
+  <data key="d0">Pakistan</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-760cad6b715a75661b365db662ba7e81&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="2026-08-31">
+  <data key="d0">2026-08-31</data>
+  <data key="d1">week_date</data>
+  <data key="d2">Reporting week or date in report text</data>
+  <data key="d3">chunk-8bd18faff72881ef9c33327c3feb75ca&lt;SEP&gt;chunk-00f382703528cdfd85bbd665df6198b3&lt;SEP&gt;chunk-a83a48a32214dce5a9878e805d7820f7&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164&lt;SEP&gt;chunk-37d974b463e563a7c7ae614ed576b7c0&lt;SEP&gt;chunk-66c17b3a3a04412a327157e878195f25&lt;SEP&gt;chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-eaf339c228c241fb0104029483562ca9&lt;SEP&gt;chunk-fc7b3b5471b80965aca4d589ee6b681c&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-4b16bdc573b67cebf43c929ef22611d9&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="BDI: 3,186">
+  <data key="d0">BDI: 3,186</data>
+  <data key="d1">rate_index</data>
+  <data key="d2">Freight/price/index level quoted in report text</data>
+  <data key="d3">chunk-00f382703528cdfd85bbd665df6198b3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Princess Eternity">
+  <data key="d0">Princess Eternity</data>
+  <data key="d1">vessel</data>
+  <data key="d2">PRINCESS ETERNITY | CAPE | 182,263 | 2022 / JAPAN | 78.0 | UNDISCLOSED</data>
+  <data key="d3">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Ebury Trader">
+  <data key="d0">Ebury Trader</data>
+  <data key="d1">vessel</data>
+  <data key="d2">EBURY TRADER | SMAX | 56,603 | 2011 / CHINA | 13.0 | CHINESE BUYERS</data>
+  <data key="d3">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Sidra">
+  <data key="d0">Sidra</data>
+  <data key="d1">vessel</data>
+  <data key="d2">SIDRA | SMAX | 56,140 | 2012 / JAPAN | 19.2 | INDONESIAN BUYERS</data>
+  <data key="d3">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Amanah Halmahera Amc">
+  <data key="d0">Amanah Halmahera Amc</data>
+  <data key="d1">vessel</data>
+  <data key="d2">AMANAH HALMAHERA AMC | SMAX | 56,020 | 2003 / JAPAN | UNDISCLOSED | CHINESE BUYER</data>
+  <data key="d3">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Glory Bridge">
+  <data key="d0">Glory Bridge</data>
+  <data key="d1">vessel</data>
+  <data key="d2">GLORY BRIDGE | SMAX | 50,077 | 2001 / JAPAN | 7.5 | CHINESE BUYERS</data>
+  <data key="d3">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Hippolyta">
+  <data key="d0">Hippolyta</data>
+  <data key="d1">vessel</data>
+  <data key="d2">HIPPOLYTA | VLCC | 320,013 | 2011 / CHINA | N/A | SINOKOR MARITIME</data>
+  <data key="d3">chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759050</data>
+  <data key="d6"></data>
+</node>
+<node id="Crimsom Saturn">
+  <data key="d0">Crimsom Saturn</data>
+  <data key="d1">vessel</data>
+  <data key="d2">CRIMSOM SATURN | WOOD CHIP CARRIER | 9,759 | 2001 / JAPAN | 496 | DELIVERED CHATTOGRAM, ABOUT 200 TONS ROBS INCLUDED. BURSA | TANKER | 15,945 | 1999 / JAPAN | 479 | DELIVERED CHATTOGRAM</data>
+  <data key="d3">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759051</data>
+  <data key="d6"></data>
+</node>
+<node id="Athena">
+  <data key="d0">Athena</data>
+  <data key="d1">vessel</data>
+  <data key="d2">ATHENA | TANKER | 2,557 | 1992 / JAPAN | 540 | DELIVERED CHATTOGRAM</data>
+  <data key="d3">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759051</data>
+  <data key="d6"></data>
+</node>
+<node id="Lyra Tanker">
+  <data key="d0">Lyra Tanker</data>
+  <data key="d1">vessel</data>
+  <data key="d2">LYRA TANKER</data>
+  <data key="d3">chunk-7b63c874bd3a542659eabd99a0946af0</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759051</data>
+  <data key="d6"></data>
+</node>
+<node id="Turkey">
+  <data key="d0">Turkey</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-7b63c874bd3a542659eabd99a0946af0&lt;SEP&gt;chunk-b6e5ab5f936523281bec4ef76f83f6a4&lt;SEP&gt;chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="Brazil">
+  <data key="d0">Brazil</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-eaf339c228c241fb0104029483562ca9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759051</data>
+  <data key="d6"></data>
+</node>
+<node id="Week 35">
+  <data key="d0">Week 35</data>
+  <data key="d1">week_date</data>
+  <data key="d2">Reporting week or date in report text</data>
+  <data key="d3">chunk-09a1144e82bd7cddba74a756fa4cebd2</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<node id="Bangladesh">
+  <data key="d0">Bangladesh</data>
+  <data key="d1">route_port</data>
+  <data key="d2">Port/route mentioned in market report text</data>
+  <data key="d3">chunk-a00408efd6447f4a99cef6e9fd0b2e51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1788759052</data>
+  <data key="d6"></data>
+</node>
+<edge source="Australia" target="Mount Dampier">
+  <data key="d7">2.0</data>
+  <data key="d8">Mount Dampier trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Efraim A">
+  <data key="d7">2.0</data>
+  <data key="d8">Efraim A trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Amaryllis">
+  <data key="d7">1.0</data>
+  <data key="d8">Amaryllis trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Hellstugutinden">
+  <data key="d7">2.0</data>
+  <data key="d8">Hellstugutinden trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Seasenator">
+  <data key="d7">2.0</data>
+  <data key="d8">Seasenator trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Mumbai">
+  <data key="d7">1.0</data>
+  <data key="d8">Mumbai trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Princess Eternity">
+  <data key="d7">1.0</data>
+  <data key="d8">Princess Eternity trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Hippolyta">
+  <data key="d7">1.0</data>
+  <data key="d8">Hippolyta trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Crimsom Saturn">
+  <data key="d7">1.0</data>
+  <data key="d8">Crimsom Saturn trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Athena">
+  <data key="d7">1.0</data>
+  <data key="d8">Athena trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Australia" target="Lyra Tanker">
+  <data key="d7">1.0</data>
+  <data key="d8">Lyra Tanker trading via Australia</data>
+  <data key="d9">TRADE_CALL</data>
+  <data key="d10">chunk-7b63c874bd3a542659eabd99a0946af0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Mount Dampier">
+  <data key="d7">2.0</data>
+  <data key="d8">Mount Dampier reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Efraim A">
+  <data key="d7">2.0</data>
+  <data key="d8">Efraim A reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Amaryllis">
+  <data key="d7">1.0</data>
+  <data key="d8">Amaryllis reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Hellstugutinden">
+  <data key="d7">2.0</data>
+  <data key="d8">Hellstugutinden reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Seasenator">
+  <data key="d7">2.0</data>
+  <data key="d8">Seasenator reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Mumbai">
+  <data key="d7">1.0</data>
+  <data key="d8">Mumbai reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Princess Eternity">
+  <data key="d7">1.0</data>
+  <data key="d8">Princess Eternity reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Hippolyta">
+  <data key="d7">1.0</data>
+  <data key="d8">Hippolyta reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Crimsom Saturn">
+  <data key="d7">1.0</data>
+  <data key="d8">Crimsom Saturn reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Athena">
+  <data key="d7">1.0</data>
+  <data key="d8">Athena reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USD 18,500" target="Lyra Tanker">
+  <data key="d7">1.0</data>
+  <data key="d8">Lyra Tanker reported at USD 18,500</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-7b63c874bd3a542659eabd99a0946af0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Mount Dampier">
+  <data key="d7">2.0</data>
+  <data key="d8">Mount Dampier reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Efraim A">
+  <data key="d7">2.0</data>
+  <data key="d8">Efraim A reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Amaryllis">
+  <data key="d7">1.0</data>
+  <data key="d8">Amaryllis reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Hellstugutinden">
+  <data key="d7">2.0</data>
+  <data key="d8">Hellstugutinden reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Seasenator">
+  <data key="d7">2.0</data>
+  <data key="d8">Seasenator reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Mumbai">
+  <data key="d7">1.0</data>
+  <data key="d8">Mumbai reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Princess Eternity">
+  <data key="d7">1.0</data>
+  <data key="d8">Princess Eternity reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Hippolyta">
+  <data key="d7">1.0</data>
+  <data key="d8">Hippolyta reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Crimsom Saturn">
+  <data key="d7">1.0</data>
+  <data key="d8">Crimsom Saturn reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Athena">
+  <data key="d7">1.0</data>
+  <data key="d8">Athena reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="WS 120," target="Lyra Tanker">
+  <data key="d7">1.0</data>
+  <data key="d8">Lyra Tanker reported at WS 120,</data>
+  <data key="d9">REPORTED_RATE</data>
+  <data key="d10">chunk-7b63c874bd3a542659eabd99a0946af0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Mount Dampier">
+  <data key="d7">2.0</data>
+  <data key="d8">Mount Dampier reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Efraim A">
+  <data key="d7">2.0</data>
+  <data key="d8">Efraim A reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8&lt;SEP&gt;chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Amaryllis">
+  <data key="d7">1.0</data>
+  <data key="d8">Amaryllis reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-075e559d3d600577163589b4c957dab8</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Hellstugutinden">
+  <data key="d7">2.0</data>
+  <data key="d8">Hellstugutinden reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Seasenator">
+  <data key="d7">2.0</data>
+  <data key="d8">Seasenator reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e&lt;SEP&gt;chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Mumbai">
+  <data key="d7">1.0</data>
+  <data key="d8">Mumbai reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-31326fbcc02fd26077ce0166531c669e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Princess Eternity">
+  <data key="d7">1.0</data>
+  <data key="d8">Princess Eternity reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-66154a5a7923a8a05a9295c62d39f2c1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Hippolyta">
+  <data key="d7">1.0</data>
+  <data key="d8">Hippolyta reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-de06bc33acde03d1f16f45179a542164</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Crimsom Saturn">
+  <data key="d7">1.0</data>
+  <data key="d8">Crimsom Saturn reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Athena">
+  <data key="d7">1.0</data>
+  <data key="d8">Athena reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-66c17b3a3a04412a327157e878195f25</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Week 35 2026" target="Lyra Tanker">
+  <data key="d7">1.0</data>
+  <data key="d8">Lyra Tanker reported in Week 35 2026</data>
+  <data key="d9">REPORTED_IN_WEEK</data>
+  <data key="d10">chunk-7b63c874bd3a542659eabd99a0946af0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1788759051</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

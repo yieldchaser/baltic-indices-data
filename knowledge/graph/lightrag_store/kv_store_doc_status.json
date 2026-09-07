@@ -1,0 +1,402 @@
+{
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s02_market_report_content": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s02_market_report_content doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_tra...",
+    "content_length": 1091,
+    "created_at": "2026-09-07T05:30:49.473718+00:00",
+    "updated_at": "2026-09-07T05:30:49.605342+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110049_54f69197",
+    "content_hash": "400508949bc6329010b84760aa6df78b",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-cb3c5b1e405c012d65239756df15ad82"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s03_capesize": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s03_capesize doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_s...",
+    "content_length": 669,
+    "created_at": "2026-09-07T05:30:49.625339+00:00",
+    "updated_at": "2026-09-07T05:30:49.684630+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110049_014017d3",
+    "content_hash": "616147de1b86156f8072d9cf03cd7b83",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-0a1c30044575d58734b2a7ac07ff275f"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s04_kamsarmax_panamax": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s04_kamsarmax_panamax doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading...",
+    "content_length": 618,
+    "created_at": "2026-09-07T05:30:49.705147+00:00",
+    "updated_at": "2026-09-07T05:30:49.772267+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110049_84bdaf5c",
+    "content_hash": "85617f0f0ffae482776352978d602ac4",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-555504f5efaabb279c6228379fecdbd5"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s05_ultramax_supramax": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s05_ultramax_supramax doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading...",
+    "content_length": 780,
+    "created_at": "2026-09-07T05:30:49.790797+00:00",
+    "updated_at": "2026-09-07T05:30:49.861800+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110049_a3bb9db9",
+    "content_hash": "6bb06cc325a223336496719346a1ddc8",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-8b13db8162fc07483856264e4978f920"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s06_handymax_handysize": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s06_handymax_handysize doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_tradin...",
+    "content_length": 695,
+    "created_at": "2026-09-07T05:30:49.887334+00:00",
+    "updated_at": "2026-09-07T05:30:49.964912+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110049_df3541a7",
+    "content_hash": "3af4759d6ee58554be8aa1d60571f74c",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-e1e550bccb25269949c151a5dedadbe5"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s11_reported_sales": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s11_reported_sales doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_we...",
+    "content_length": 1517,
+    "created_at": "2026-09-07T05:30:49.982920+00:00",
+    "updated_at": "2026-09-07T05:30:50.075426+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110049_d2fd26ef",
+    "content_hash": "bdc869627b14d674b668c53ac3a26630",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-075e559d3d600577163589b4c957dab8"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s12_tankers": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s12_tankers doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_sh...",
+    "content_length": 828,
+    "created_at": "2026-09-07T05:30:50.091957+00:00",
+    "updated_at": "2026-09-07T05:30:50.165962+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_6c6869f0",
+    "content_hash": "ca77cbcb539f4f687e7f7d12f6c965b3",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-31326fbcc02fd26077ce0166531c669e"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s14_newbuilding": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s14_newbuilding doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekl...",
+    "content_length": 1193,
+    "created_at": "2026-09-07T05:30:50.184969+00:00",
+    "updated_at": "2026-09-07T05:30:50.237476+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_87c763a5",
+    "content_hash": "b13f485f545a4c4ac81fcbfd186938c2",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-417be6df11670b738ec868c9c1d1b84d"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s22_demolition_sales": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s22_demolition_sales doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_...",
+    "content_length": 501,
+    "created_at": "2026-09-07T05:30:50.254477+00:00",
+    "updated_at": "2026-09-07T05:30:50.306006+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_500039c7",
+    "content_hash": "63cfe979440f7bfc45d86f09570a93a6",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-760cad6b715a75661b365db662ba7e81"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s26_key_indicators": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s26_key_indicators doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_we...",
+    "content_length": 607,
+    "created_at": "2026-09-07T05:30:50.323007+00:00",
+    "updated_at": "2026-09-07T05:30:50.374549+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_38249404",
+    "content_hash": "4b7636fa49023001fa652a0a106c35ce",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-5608586fc26501ea159f1fc7f579624e"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s03_market_overview": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s03_market_overview doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_m...",
+    "content_length": 900,
+    "created_at": "2026-09-07T05:30:50.392071+00:00",
+    "updated_at": "2026-09-07T05:30:50.445071+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_4d6e2e1a",
+    "content_hash": "426f03997d80c9dd6e6edfb9a89b42dd",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-8bd18faff72881ef9c33327c3feb75ca"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s04_dry_bulk_bdi_3_186_12_14_w_o_w": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s04_dry_bulk_bdi_3_186_12_14_w_o_w doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipb...",
+    "content_length": 1024,
+    "created_at": "2026-09-07T05:30:50.468075+00:00",
+    "updated_at": "2026-09-07T05:30:50.538982+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_e8b6efa9",
+    "content_hash": "aaebda4b4fea9a6aa86694f5a3f5f017",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-00f382703528cdfd85bbd665df6198b3"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s05_segment_highlights": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s05_segment_highlights doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekl...",
+    "content_length": 827,
+    "created_at": "2026-09-07T05:30:50.559982+00:00",
+    "updated_at": "2026-09-07T05:30:50.631120+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_d5de683e",
+    "content_hash": "dbbf65faf1ba852f65e044fffc2c3600",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-a83a48a32214dce5a9878e805d7820f7"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s08_sale_purchase_reported_fixtures": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s08_sale_purchase_reported_fixtures doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_ship...",
+    "content_length": 1573,
+    "created_at": "2026-09-07T05:30:50.660652+00:00",
+    "updated_at": "2026-09-07T05:30:50.853425+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_9cb0d8a7",
+    "content_hash": "a36a47e44dff7d2f44c69b56340c5cd1",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-66154a5a7923a8a05a9295c62d39f2c1"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s13_sale_purchase_reported_fixtures": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s13_sale_purchase_reported_fixtures doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_ship...",
+    "content_length": 825,
+    "created_at": "2026-09-07T05:30:50.886968+00:00",
+    "updated_at": "2026-09-07T05:30:51.041848+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110050_dec0f6d8",
+    "content_hash": "405cd1422d92090e0b0ab8c6cb0fdcb6",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-de06bc33acde03d1f16f45179a542164"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s16_vessel_type_teu_year_built_price_usd_m_buyer": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s16_vessel_type_teu_year_built_price_usd_m_buyer doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_s...",
+    "content_length": 860,
+    "created_at": "2026-09-07T05:30:51.078380+00:00",
+    "updated_at": "2026-09-07T05:30:51.195389+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110051_5332609b",
+    "content_hash": "e548fe097eb2cff4cfa3625acf0c1e4c",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-37d974b463e563a7c7ae614ed576b7c0"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s19_reported_sales": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s19_reported_sales doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_ma...",
+    "content_length": 748,
+    "created_at": "2026-09-07T05:30:51.231389+00:00",
+    "updated_at": "2026-09-07T05:30:51.372467+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110051_2608bfea",
+    "content_hash": "f146ae9dedccbeeedb52010f6f70b989",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-66c17b3a3a04412a327157e878195f25"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s24_lyra_tanker_4_990_21_08_2026": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s24_lyra_tanker_4_990_21_08_2026 doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbro...",
+    "content_length": 876,
+    "created_at": "2026-09-07T05:30:51.407712+00:00",
+    "updated_at": "2026-09-07T05:30:51.543419+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110051_5af157fb",
+    "content_hash": "2bf0c69f7b79e93b497d5504a3e5d5b4",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-7b63c874bd3a542659eabd99a0946af0"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s27_iron_ore": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s27_iron_ore doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_r...",
+    "content_length": 651,
+    "created_at": "2026-09-07T05:30:51.581868+00:00",
+    "updated_at": "2026-09-07T05:30:51.693941+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110051_910349de",
+    "content_hash": "f0cc295d4502382170d8d13862c93269",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-eaf339c228c241fb0104029483562ca9"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s31_bunker_prices_usd_ton": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s31_bunker_prices_usd_ton doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_we...",
+    "content_length": 1154,
+    "created_at": "2026-09-07T05:30:51.727381+00:00",
+    "updated_at": "2026-09-07T05:30:51.807904+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110051_07bb9c54",
+    "content_hash": "e8930457f7ed11184ef02ac16956a44f",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-fc7b3b5471b80965aca4d589ee6b681c"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s23_indicative_prices": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s23_indicative_prices doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading...",
+    "content_length": 1605,
+    "created_at": "2026-09-07T05:30:51.978410+00:00",
+    "updated_at": "2026-09-07T05:30:52.051506+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110051_21b4f38f",
+    "content_hash": "62aa9ee6bd21f1ee2ced2aadee0aef0d",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-09a1144e82bd7cddba74a756fa4cebd2"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s29_shipping_indicative_share_value": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s29_shipping_indicative_share_value doc_id=broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_sh...",
+    "content_length": 1636,
+    "created_at": "2026-09-07T05:30:52.074125+00:00",
+    "updated_at": "2026-09-07T05:30:52.138197+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110052_e336c743",
+    "content_hash": "99b363a590d698dc81dbeba10949d4b5",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-125a52f68ec1ee1952599a786106976e"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s17_current_market_snapshot_usd_ldt": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s17_current_market_snapshot_usd_ldt doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_ship...",
+    "content_length": 1010,
+    "created_at": "2026-09-07T05:30:52.159435+00:00",
+    "updated_at": "2026-09-07T05:30:52.226970+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110052_9ff2e491",
+    "content_hash": "92b1b00554ce3c12ca25e7c304678e6c",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-b6e5ab5f936523281bec4ef76f83f6a4"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s29_crude_oil_natural_gas": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s29_crude_oil_natural_gas doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_we...",
+    "content_length": 593,
+    "created_at": "2026-09-07T05:30:52.253974+00:00",
+    "updated_at": "2026-09-07T05:30:52.330769+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110052_df77b1ad",
+    "content_hash": "1fa2247528a9ebd69b21abb690936e5f",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-4b16bdc573b67cebf43c929ef22611d9"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  },
+  "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s30_exchange_rates": {
+    "status": "processed",
+    "content_summary": "[node_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s30_exchange_rates doc_id=broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_ma...",
+    "content_length": 677,
+    "created_at": "2026-09-07T05:30:52.356762+00:00",
+    "updated_at": "2026-09-07T05:30:52.429301+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260907_110052_cfa4db8b",
+    "content_hash": "e4a5ada87599d68d9660c38919b43aa9",
+    "metadata": {},
+    "chunks_list": [
+      "chunk-a00408efd6447f4a99cef6e9fd0b2e51"
+    ],
+    "chunks_count": 1,
+    "error_msg": ""
+  }
+}

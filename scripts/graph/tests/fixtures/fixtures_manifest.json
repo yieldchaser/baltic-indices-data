@@ -1,0 +1,13 @@
+{
+ "source_tree_files": [
+  "knowledge/trees/broker_reports/broker_report/2026/2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke.json",
+  "knowledge/trees/broker_reports/broker_report/2026/2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35.json"
+ ],
+ "source_sha1": {
+  "knowledge/trees/broker_reports/broker_report/2026/2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke.json": "7c0e7efcddefb4e025c40101b441ff8e5d65e1c4",
+  "knowledge/trees/broker_reports/broker_report/2026/2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35.json": "fcdb24e859767cb95373719f245c79c940609cc0"
+ },
+ "initial_count": 20,
+ "incremental_count": 5,
+ "note": "verbatim tree sections (node_id/summary/keywords unmodified); loader text = title + section_path + summary + keywords"
+}

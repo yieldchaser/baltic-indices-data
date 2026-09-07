@@ -1,0 +1,293 @@
+{
+ "lightrag_version": "1.5.7",
+ "phases": {
+  "initial": {
+   "inserted": 20,
+   "graph": {
+    "nodes": 55,
+    "edges": 44
+   },
+   "store_files": 12,
+   "store_bytes": 565917,
+   "entities_total": 55,
+   "relations_total": 44,
+   "entities_without_source": 0,
+   "entities_spanning_both_docs": 17,
+   "vessels_spanning_both_docs": [
+    {
+     "entity": "Mount Dampier",
+     "type": "vessel",
+     "docs": [
+      "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+      "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35"
+     ],
+     "n_sources": 2
+    },
+    {
+     "entity": "Efraim A",
+     "type": "vessel",
+     "docs": [
+      "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+      "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35"
+     ],
+     "n_sources": 2
+    },
+    {
+     "entity": "Amaryllis",
+     "type": "vessel",
+     "docs": [
+      "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+      "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35"
+     ],
+     "n_sources": 2
+    },
+    {
+     "entity": "Spar Scorpio",
+     "type": "vessel",
+     "docs": [
+      "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+      "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35"
+     ],
+     "n_sources": 2
+    },
+    {
+     "entity": "Arklow Spirit",
+     "type": "vessel",
+     "docs": [
+      "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+      "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35"
+     ],
+     "n_sources": 2
+    },
+    {
+     "entity": "Hellstugutinden",
+     "type": "vessel",
+     "docs": [
+      "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+      "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35"
+     ],
+     "n_sources": 2
+    },
+    {
+     "entity": "Seasenator",
+     "type": "vessel",
+     "docs": [
+      "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke",
+      "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35"
+     ],
+     "n_sources": 2
+    }
+   ]
+  },
+  "incremental": {
+   "inserted": 5,
+   "graph": {
+    "nodes": 57,
+    "edges": 44
+   },
+   "chunks_total": 25,
+   "original_chunks_preserved": true,
+   "original_nodes_kept": 55,
+   "original_nodes_lost": [],
+   "new_nodes": 2,
+   "store_files": 12,
+   "store_bytes": 669239
+  },
+  "query": {
+   "question": "Which vessels were reported sold in week 35 and at what prices?",
+   "answer_chars": 3250,
+   "answer": "Reported vessels in the retrieved graph context: - Mount Dampier: ear | Price | Buyer | Comments Capesize | Mount Dampier | 181.469 | 2011 | Imabari, Japan | 11/2026 | MAN-B&W | - | xs $ 38m | European | Scrubber fitted Kamsar - Crimsom Saturn: CRIMSOM SATURN | WOOD CHIP CARRIER | 9,759 | 2001 / JAPAN | 496 | DELIVERED CHATTOGRAM, ABOUT 200 TONS ROBS INCLUDED. BURSA | TANKER | 15,945 | 1999 / JAPAN | 4 - Glory Bridge: GLORY BRIDGE | SMAX | 50,077 | 2001 / JAPAN | 7.5 | CHINESE BUYERS - Princess Eternity: PRINCESS ETERNITY | CAPE | 182,263 | 2022 / JAPAN | 78.0 | UNDISCLOSED - Efraim A:  | European | Scrubber fitted Kamsarmax | Efraim A | 82.174 | 2010 |<SEP>MOUNT DAMPIER | CAPE | 181,469 | 2011 / JAPAN | 38.0 | MERCURIA ENERGY GROUP HOLDING LT - Amaryllis: B&W | - | $ 20m | Undisclosed\\nUltramax | Amaryllis | 63.500 | 2013 | Yangzhou, China | 08/2028 | MAN-B&W | 4x35T | Low-Mid $ 24m | Chinese\\nSupramax | African  - African Wagtail: 35T | Low-Mid $ 24m | Chinese\\nSupramax | African Wagtail | 58.340 | 2013 | DACKS, China | 10/2028 | MAN-B&W | 4x30,5T | xs $ 20m | Undisclosed | DD 10/2026\\nSu - Lila Mundra: 0m | Undisclosed | DD 10/2026\\nSupramax | Lila Mundra | 57.269 | 2009 | Stx D",
+   "citations": [
+    {
+     "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s02_market_report_content",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s03_capesize",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s04_kamsarmax_panamax",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s06_handymax_handysize",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s11_reported_sales",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s22_demolition_sales",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-29_advanced_shipping_29_08_2026_advanced_shipping_trading_weekly_shipping_marke__s29_shipping_indicative_share_value",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s03_market_overview",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s04_dry_bulk_bdi_3_186_12_14_w_o_w",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s05_segment_highlights",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s08_sale_purchase_reported_fixtures",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s13_sale_purchase_reported_fixtures",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s16_vessel_type_teu_year_built_price_usd_m_buyer",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s17_current_market_snapshot_usd_ldt",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s19_reported_sales",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s24_lyra_tanker_4_990_21_08_2026",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s27_iron_ore",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s29_crude_oil_natural_gas",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s30_exchange_rates",
+     "graph_backed": true
+    },
+    {
+     "node_id": "broker_reports_broker_report_2026-08-31_general_broker_31_08_2026_star_asia_shipbroking_weekly_market_report_week_35__s31_bunker_prices_usd_ton",
+     "graph_backed": true
+    }
+   ]
+  },
+  "fail_closed": {
+   "ollama": "fail-closed OK: backend 'ollama' fail-closed: missing required env OLLAMA_BASE_URL, OLLAMA_MODEL (no keys in sandbox; refusing to call a live LLM without explicit configuration)",
+   "nim": "fail-closed OK: backend 'nim' fail-closed: missing required env NIM_API_KEY (or NVIDIA_API_KEY alias) (no keys in sandbox; refusing to call a live LLM without explicit configuration)",
+   "openrouter": "fail-closed OK: backend 'openrouter' fail-closed: missing required env OPENROUTER_API_KEY (no keys in sandbox; refusing to call a live LLM without explicit configuration)"
+  }
+ },
+ "fixture_doc_ids": 25,
+ "store_hashes_before": {
+  "graph_chunk_entity_relation.graphml": {
+   "bytes": 48020,
+   "sha1": "2ee03d9c023b372f2af88d22a510d2ec374a95a0"
+  },
+  "kv_store_doc_status.json": {
+   "bytes": 17852,
+   "sha1": "8f001683af02c292650f1f446655da8eae706b70"
+  },
+  "kv_store_entity_chunks.json": {
+   "bytes": 20781,
+   "sha1": "bc9036c5cd4f0c5e1e655301d36b09b9670d6488"
+  },
+  "kv_store_full_docs.json": {
+   "bytes": 26762,
+   "sha1": "dc4190b43006d990a5ca2fa30138eaf2ac78b38a"
+  },
+  "kv_store_full_entities.json": {
+   "bytes": 13643,
+   "sha1": "a94705437c57708de327ffc66a2530b3aa2c9c3d"
+  },
+  "kv_store_full_relations.json": {
+   "bytes": 12309,
+   "sha1": "ae9fa3c8f06f86b10b8c2aee829cf0b526178c6e"
+  },
+  "kv_store_llm_response_cache.json": {
+   "bytes": 228124,
+   "sha1": "228b7cc75a00bf6d16420a50b5b86a5b4745e5e6"
+  },
+  "kv_store_relation_chunks.json": {
+   "bytes": 10723,
+   "sha1": "b4331bdd11902b984f81183b017f6054015157cc"
+  },
+  "kv_store_text_chunks.json": {
+   "bytes": 28739,
+   "sha1": "aa55c48604a474c6e7dd57fca05a2fe52011bb08"
+  },
+  "vdb_chunks.json": {
+   "bytes": 41314,
+   "sha1": "4aab90588ba2770964027789b68f1e41d21039fc"
+  },
+  "vdb_entities.json": {
+   "bytes": 69306,
+   "sha1": "8bbd757c94fe2dc2e2fdacf066682c5767ba2d38"
+  },
+  "vdb_relationships.json": {
+   "bytes": 48344,
+   "sha1": "145db362d8af474f7611f2bfe17fc42e9833b950"
+  }
+ },
+ "store_hashes_after": {
+  "graph_chunk_entity_relation.graphml": {
+   "bytes": 51314,
+   "sha1": "2035ab7b1835d2a9bee146e42e8d1010c4f97e63"
+  },
+  "kv_store_doc_status.json": {
+   "bytes": 22334,
+   "sha1": "0acb43eac2493284bb2c496867b34bddff83f169"
+  },
+  "kv_store_entity_chunks.json": {
+   "bytes": 23739,
+   "sha1": "a1f5356f63fb793d2b0cf1d7fee668efbd8e26af"
+  },
+  "kv_store_full_docs.json": {
+   "bytes": 34562,
+   "sha1": "efd441e3ea92175018f6263cff24406fde190025"
+  },
+  "kv_store_full_entities.json": {
+   "bytes": 16874,
+   "sha1": "0430dddfa3ab9bc52d176c737f44720df7e093ec"
+  },
+  "kv_store_full_relations.json": {
+   "bytes": 14447,
+   "sha1": "5db713193298ad67731e29c308b4db2f01d9338d"
+  },
+  "kv_store_llm_response_cache.json": {
+   "bytes": 283417,
+   "sha1": "95bb4cebd3867acd3b01ea711df5531437294c34"
+  },
+  "kv_store_relation_chunks.json": {
+   "bytes": 10723,
+   "sha1": "b4331bdd11902b984f81183b017f6054015157cc"
+  },
+  "kv_store_text_chunks.json": {
+   "bytes": 37015,
+   "sha1": "56fd1816588da837a328457c5532d16c62927364"
+  },
+  "vdb_chunks.json": {
+   "bytes": 52769,
+   "sha1": "f763a927198469ccf31f72756e25f9b17c85a754"
+  },
+  "vdb_entities.json": {
+   "bytes": 73701,
+   "sha1": "1280a5e6f99839d3b95b89b7f0b9a28f66a4d735"
+  },
+  "vdb_relationships.json": {
+   "bytes": 48344,
+   "sha1": "5f6b45dd167aec604f06c56b0ac14075f6fb5139"
+  }
+ },
+ "git_status_violations_before": [],
+ "git_status_violations_after": [],
+ "store_total_bytes": 669239
+}

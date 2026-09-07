@@ -9,6 +9,7 @@
 - Antigravity files (harness/spine/queue) untouched.
 - Antigravity silent at 12c841745 with no validator/scraper files — no overlap.
 - Decision 2 (PHASE A, 2026-09-07): re-OCR/structuring pilot 20-50 images, extractor≠verifier, redo loop, reconcile-not-overwrite; harness `scripts/pilot/reocr_pilot.py`, set `data/derived/pilot_image_set.jsonl`, report `docs/PILOT_REOCR_MUSE_SPARK.md` — this branch only, no pilot files on antigravity branch.
+- Decision 3 (2026-09-07): LightRAG layer over `knowledge/trees/` joined on `node_id`/`doc_id` (SQLite spine untouched, no re-chunk/re-shard/overwrite); scaffold `scripts/graph/lightrag_build.py`, mock store `knowledge/graph/lightrag_store/` (12 files, 674,101 B on disk; 669,239 B at build snapshot, drift = query-phase `kv_store_llm_response_cache.json` appends), fixtures + validation log `scripts/graph/tests/fixtures/`, report `docs/LIGHTRAG_MUSE_SPARK.md` — mock validation: 20 sections → 55 entities/44 relations, 7 vessels joined across both docs, +5 incremental with 0 nodes lost, query citations all graph-backed, live backends fail-closed — this branch only, no batch run (scaffold + validation, rollout NOT authorized).
 
 - Author: muse-spark
 - Date: 2026-09-06
