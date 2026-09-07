@@ -5064,6 +5064,168 @@
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
     }
 
+
+/* FEARNLEYS HASURA INSTITUTIONAL TERMINAL STYLING */
+.fearn-kpi-strip {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.fearn-kpi-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  flex: 1;
+  min-width: 130px;
+  cursor: help;
+  transition: border-color 0.15s ease;
+}
+.fearn-kpi-card:hover {
+  border-color: var(--text-muted);
+}
+.fearn-kpi-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.fearn-kpi-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+.fearn-kpi-sub {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.fearn-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+  text-transform: uppercase;
+}
+.fearn-badge-bulk {
+  background: rgba(88, 166, 255, 0.15);
+  color: #58a6ff;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
+.fearn-badge-tank {
+  background: rgba(240, 136, 62, 0.15);
+  color: #f0883e;
+  border: 1px solid rgba(240, 136, 62, 0.3);
+}
+.fearn-badge-gas {
+  background: rgba(56, 139, 253, 0.15);
+  color: #79c0ff;
+  border: 1px solid rgba(56, 139, 253, 0.3);
+}
+.fearn-table-wrap {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  overflow-x: auto;
+}
+.fearn-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  text-align: left;
+}
+.fearn-table th {
+  background: var(--card);
+  padding: 6px 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.fearn-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+  white-space: nowrap;
+  color: var(--text);
+}
+.fearn-table tr:hover td {
+  background: var(--hover);
+}
+.fearn-table .mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+.fearn-search-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.fearn-input {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  padding: 5px 10px;
+  outline: none;
+  min-width: 220px;
+}
+.fearn-input:focus {
+  border-color: var(--accent);
+}
+.fearn-ribbon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.fearn-ribbon-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: help;
+  transition: border-color 0.15s;
+}
+.fearn-ribbon-card:hover {
+  border-color: var(--text-muted);
+}
+.fearn-ribbon-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.fearn-ribbon-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.fearn-ribbon-sub {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 2px;
+}
+
 </style>
 </head>
 
@@ -11840,6 +12002,25 @@
               <button class="toggle-btn" id="signalsViewAll" onclick="setSignalsViewMode('all')">View All Sectors (Overlaid)</button>
             </div>
           </div>
+          <!-- FEARNPULSE 56-YEAR 1Y TIME CHARTER UNIVERSE (1970-2026) RIBBON -->
+<div class="chart-container mb-20" id="fearnleysTceRibbonCard">
+  <div class="chart-header" style="flex-wrap:wrap;gap:8px;">
+    <div class="chart-title" data-tooltip="FearnPulse 56-Year Institutional Benchmark Time Charter Series (1970–2026) — systematic multi-decade 1-Year TC freight assessments across Capesize, Panamax, Supramax, Handysize, VLCC, Suezmax, and Aframax harvested from Fearnleys Hasura database.">
+      <div class="icon-tile icon-tile-gold icon-tile-sm" style="display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      &nbsp;FearnPulse 56-Year Historical 1Y Time Charter Benchmarks (1970–2026)
+    </div>
+    <div style="display:flex;align-items:center;gap:6px;">
+      <span class="kpi-badge" style="font-family:'IBM Plex Mono',monospace;">56Y Archive: 1970–2026</span>
+    </div>
+  </div>
+  <div style="font-size:11px;color:var(--text-muted);margin-bottom:10px;">
+    Long-term cyclical historical anchor from Fearnleys Hasura GraphQL backend. Hover over any segment badge to inspect 56-year rank, all-time high, all-time low, and distance from 2008 supercycle peak.
+  </div>
+  <div class="fearn-ribbon-grid" id="fearnleysTceRibbonGrid">
+    <!-- Populated dynamically by JS -->
+  </div>
+</div>
+
           <!-- Time Charter spot vs term curve -->
           <div class="chart-container mb-20">
             <div class="chart-header">
@@ -11904,6 +12085,86 @@
             <div id="tceMatrixTableWrap" style="overflow-x:auto;margin-top:10px;"></div>
             <div id="tceRowDrilldownWrap" style="display:none;margin-top:12px;padding:12px 16px;background:rgba(22,27,34,0.7);border:1px solid var(--border);border-radius:6px;font-size:12px;"></div>
           </div>
+
+          <!-- FEARNLEYS 52-YEAR COMMERCIAL FIXTURE ANALYTICS & CHARTERER LEAGUE TABLE -->
+<div class="chart-container mb-20" id="fearnleysFixturesContainer">
+  <div class="chart-header" style="flex-wrap:wrap;gap:8px;">
+    <div class="chart-title" data-tooltip="Fearnleys 52-Year Commercial Charter Fixture Archive (1974–2026) — 537,164 recorded commercial fixture contracts across Dry Bulk (413k), Tankers (109.5k), LNG/LPG (13.7k), and RoRo.">
+      <div class="icon-tile icon-tile-accent icon-tile-sm" style="display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+      &nbsp;Commercial Fixture Analytics &amp; Top Charterers League Table (1974–2026)
+    </div>
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+      <span class="kpi-badge" id="fearnTotalFixturesBadge">537,164 Fixtures</span>
+      <span class="kpi-badge" style="color:#58a6ff;">413k Bulk</span>
+      <span class="kpi-badge" style="color:#f0883e;">109.5k Tankers</span>
+      <span class="kpi-badge" style="color:#79c0ff;">13.7k Gas</span>
+    </div>
+  </div>
+
+  <!-- Dual pane: Volume Chart on Left, League Table on Right -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(360px, 1fr));gap:16px;margin-bottom:16px;">
+    <!-- Volume chart pane -->
+    <div>
+      <div style="font-size:11px;font-weight:600;color:var(--text);margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;">
+        <span>Annual Commercial Fixture Volume by Sector (1980–2026)</span>
+        <span style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;">Deals / Year</span>
+      </div>
+      <div class="chart-canvas-wrap" style="height:280px;"><canvas id="fearnFixtureVolumeChart"></canvas></div>
+    </div>
+
+    <!-- League Table pane -->
+    <div>
+      <div style="font-size:11px;font-weight:600;color:var(--text);margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;">
+        <span>Top Charterers League Table (By Recorded Deals)</span>
+        <span style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;">Market Share %</span>
+      </div>
+      <div class="fearn-table-wrap" style="max-height:280px;overflow-y:auto;">
+        <table class="fearn-table" id="fearnCharterersTable">
+          <thead>
+            <tr>
+              <th style="width:30px;">#</th>
+              <th>Charterer</th>
+              <th>Sector</th>
+              <th style="text-align:right;">Fixtures</th>
+              <th style="text-align:right;">Share %</th>
+              <th>Primary Route</th>
+            </tr>
+          </thead>
+          <tbody id="fearnCharterersTableBody">
+            <!-- Populated dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filterable Recent Fixture Flow -->
+  <div>
+    <div class="fearn-search-box">
+      <div style="font-size:11px;font-weight:600;color:var(--text);">Recent Commercial Fixture Stream</div>
+      <input type="text" class="fearn-input" id="fearnFixtureSearchInput" placeholder="Filter by vessel, charterer, or route..." oninput="filterRecentFixtures(this.value)">
+      <span style="font-size:10px;color:var(--text-muted);margin-left:auto;" id="fearnFixtureCountLabel">Showing latest 100 deals</span>
+    </div>
+    <div class="fearn-table-wrap" style="max-height:240px;overflow-y:auto;">
+      <table class="fearn-table" id="fearnRecentFixturesTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Vessel Name</th>
+            <th>Segment</th>
+            <th>Charterer</th>
+            <th>Route / Corridor</th>
+            <th>Freight Rate</th>
+            <th>Laycan</th>
+          </tr>
+        </thead>
+        <tbody id="fearnRecentFixturesBody">
+          <!-- Populated dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
           <!-- Tanker 22-Month Forward Curves & Eco Spreads -->
           <div class="chart-container mb-20" id="tankerForwardContainer">
@@ -12378,6 +12639,105 @@
               </div>
             </div>
           </div>
+
+          <!-- 50-YEAR SECONDHAND ASSET VALUATIONS VS NEWBUILDING REPLACEMENT COST (1976-2026) -->
+<div class="chart-container mb-20" id="fearnleysAssetValuationContainer">
+  <div class="chart-header" style="flex-wrap:wrap;gap:8px;">
+    <div class="chart-title" data-tooltip="Fearnleys 50-Year Historical Secondhand Vessel Valuations (1976–2026) — systematic asset price tracking for 5-Year Old, 10-Year Old, and Resale tonnage plotted against Newbuilding replacement costs and scrap steel floors.">
+      <div class="icon-tile icon-tile-gold icon-tile-sm" style="display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+      &nbsp;50-Year Secondhand Asset Valuations vs Newbuilding Parity (1976–2026)
+    </div>
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+      <div id="fearnAssetSegToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
+        <button class="toggle-btn active" id="btnAssetCape" onclick="switchFearnAssetSeg('capesize')">Capesize</button>
+        <button class="toggle-btn" id="btnAssetKam" onclick="switchFearnAssetSeg('kamsarmax')">Kamsarmax</button>
+        <button class="toggle-btn" id="btnAssetUltra" onclick="switchFearnAssetSeg('ultramax')">Ultramax</button>
+        <button class="toggle-btn" id="btnAssetVlcc" onclick="switchFearnAssetSeg('vlcc')">VLCC</button>
+        <button class="toggle-btn" id="btnAssetSuez" onclick="switchFearnAssetSeg('suezmax')">Suezmax</button>
+        <button class="toggle-btn" id="btnAssetAfra" onclick="switchFearnAssetSeg('aframax')">Aframax</button>
+        <button class="toggle-btn" id="btnAssetMr" onclick="switchFearnAssetSeg('mr')">MR</button>
+      </div>
+      <span class="kpi-badge" id="fearnAssetCurBadge">Valuation: —</span>
+    </div>
+  </div>
+
+  <!-- Valuation HUD Strip -->
+  <div class="fearn-kpi-strip" id="fearnAssetHudStrip">
+    <div class="fearn-kpi-card" id="cardAsset5y" data-tooltip=" " data-tt-type="fearnleys-asset-value" data-tt-tier="5y">
+      <div class="fearn-kpi-label">5-Year Old Benchmark</div>
+      <div class="fearn-kpi-val" id="valAsset5y">—</div>
+      <div class="fearn-kpi-sub" id="subAsset5y">50Y Rank: —</div>
+    </div>
+    <div class="fearn-kpi-card" id="cardAssetResale" data-tooltip=" " data-tt-type="fearnleys-asset-value" data-tt-tier="resale">
+      <div class="fearn-kpi-label">Prompt Resale Value</div>
+      <div class="fearn-kpi-val" id="valAssetResale">—</div>
+      <div class="fearn-kpi-sub" id="subAssetResale">Prompt Delivery</div>
+    </div>
+    <div class="fearn-kpi-card" id="cardAsset10y" data-tooltip=" " data-tt-type="fearnleys-asset-value" data-tt-tier="10y">
+      <div class="fearn-kpi-label">10-Year Old Benchmark</div>
+      <div class="fearn-kpi-val" id="valAsset10y">—</div>
+      <div class="fearn-kpi-sub" id="subAsset10y">Mid-Life Valuation</div>
+    </div>
+    <div class="fearn-kpi-card" id="cardAssetNb" data-tooltip=" " data-tt-type="fearnleys-asset-value" data-tt-tier="newbuilding">
+      <div class="fearn-kpi-label">Newbuilding Price (Ceiling)</div>
+      <div class="fearn-kpi-val" id="valAssetNb">—</div>
+      <div class="fearn-kpi-sub" id="subAssetNb">Yard Delivery (2-3Y)</div>
+    </div>
+    <div class="fearn-kpi-card" id="cardAssetParity" data-tooltip=" " data-tt-type="fearnleys-asset-value" data-tt-tier="parity">
+      <div class="fearn-kpi-label">5Y / Newbuild Parity</div>
+      <div class="fearn-kpi-val" id="valAssetParity">—</div>
+      <div class="fearn-kpi-sub" id="subAssetParity">&gt;85% = Overheated</div>
+    </div>
+  </div>
+
+  <div class="chart-canvas-wrap" style="height:320px;"><canvas id="fearnAssetCycleChart"></canvas></div>
+</div>
+
+<!-- FEARNLEYS SECONDHAND S&P DEAL LEDGER -->
+<div class="chart-container mb-20" id="fearnleysSnpLedgerContainer">
+  <div class="chart-header" style="flex-wrap:wrap;gap:8px;">
+    <div class="chart-title" data-tooltip="Fearnleys Verified Secondhand Vessel Sale &amp; Purchase (S&amp;P) Deal Ledger — 2,592 recorded transactions representing $69.8 Billion in asset turnover.">
+      <div class="icon-tile icon-tile-teal icon-tile-sm" style="display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+      &nbsp;Secondhand S&amp;P Deal Ledger (2,592 Verified Transactions)
+    </div>
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+      <span class="kpi-badge">2,592 Deals ($69.8B USD)</span>
+      <div id="fearnSnpSegToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
+        <button class="toggle-btn active" id="btnSnpAll" onclick="setSnpFilter('all')">All Deals</button>
+        <button class="toggle-btn" id="btnSnpBulk" onclick="setSnpFilter('bulk')">Dry Bulk (1,691)</button>
+        <button class="toggle-btn" id="btnSnpTank" onclick="setSnpFilter('tank')">Tankers (901)</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="fearn-search-box">
+    <input type="text" class="fearn-input" id="fearnSnpSearchInput" placeholder="Search by vessel, shipyard, or buyer..." oninput="filterSnpDeals(this.value)">
+    <span style="font-size:10px;color:var(--text-muted);margin-left:auto;" id="fearnSnpCountLabel">Showing latest 150 transactions</span>
+  </div>
+
+  <div class="fearn-table-wrap" style="max-height:340px;overflow-y:auto;">
+    <table class="fearn-table" id="fearnSnpTable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Vessel Name</th>
+          <th>Segment</th>
+          <th style="text-align:right;">Built</th>
+          <th>Shipyard</th>
+          <th style="text-align:right;">DWT</th>
+          <th style="text-align:right;">Price ($M)</th>
+          <th style="text-align:right;">Implied $/DWT</th>
+          <th>Buyer Entity</th>
+          <th>Comments</th>
+        </tr>
+      </thead>
+      <tbody id="fearnSnpTableBody">
+        <!-- Populated dynamically -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
 
           <!-- USDA US vs Brazil Landed Soybean Transportation Costs to China -->
           <div class="chart-container mb-20" id="landedCostContainer">
@@ -13458,6 +13818,7 @@ if (intelTabsContainer) {
       bunkerPrices: [],
       bunkerSummary: null,
       chokepointSummary: null,
+      fearnleysSummary: null,
       chokepointMetrics: [],
       tceMatrix: null,
       tce_matrix: null,
@@ -14866,6 +15227,16 @@ if (intelTabsContainer) {
           }));
         });
 
+        const fearnleysSummaryPromise = fetch('data/derived/fearnleys_summary.json')
+          .then(res => res.ok ? res.json() : null)
+          .then(data => {
+            DATA.fearnleysSummary = data;
+          })
+          .catch(err => {
+            console.warn('[fearnleysSummary fetch error]', err);
+            DATA.fearnleysSummary = null;
+          });
+
         const bunkerSummaryPromise = fetch('data/bunkers/bunker_frontend_summary.json')
           .then(res => res.ok ? res.json() : null)
           .then(data => {
@@ -14888,7 +15259,7 @@ if (intelTabsContainer) {
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
           sgxOreForwardPromise,
-          portLineupsPromise, vesselTrajectoriesPromise, bunkerPricesPromise, bunkerSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
+          portLineupsPromise, vesselTrajectoriesPromise, bunkerPricesPromise, bunkerSummaryPromise, fearnleysSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
           ...sgxPromises
         ];
 
@@ -19204,7 +19575,7 @@ if (intelTabsContainer) {
       }
       if (tabId === 'yearly-dash') renderYearlyDash(currentProduct);
       if (tabId === 'monthly-dash') renderMonthlyDash(currentProduct);
-      if (tabId === 'signals') renderSignalsTab(currentProduct);
+      if (tabId === 'signals') { renderSignalsTab(currentProduct); if (typeof initFearnleysTerminal === 'function') initFearnleysTerminal(); }
       if (tabId === 'intelligence') renderIntelligenceTab();
       if (tabId === 'tracking') renderTrackingTab();
       if (tabId === 'bunkers') renderBunkersTab();
@@ -25056,7 +25427,514 @@ if (intelTabsContainer) {
     window.renderTonMileSimChart = renderTonMileSimChart;
 
     var _signalsDebounceTimer = null;
-    function renderSignalsTab(productKey) {
+    
+// =============================================================================
+// FEARNLEYS HASURA COMMERCIAL INTELLIGENCE FRONTEND ENGINE
+// =============================================================================
+
+var FEARNLEYS_CONTROLLER = {
+  currentAssetSeg: 'capesize',
+  currentSnpFilter: 'all',
+  snpSearchTerm: '',
+  fixtureSearchTerm: '',
+  fixtureChart: null,
+  assetChart: null,
+  initialized: false
+};
+
+function initFearnleysTerminal() {
+  const summary = window.DATA && DATA.fearnleysSummary;
+  if (!summary) {
+    // Retry shortly if data still fetching
+    setTimeout(() => {
+      if (window.DATA && DATA.fearnleysSummary && !FEARNLEYS_CONTROLLER.initialized) {
+        initFearnleysTerminal();
+      }
+    }, 500);
+    return;
+  }
+
+  if (FEARNLEYS_CONTROLLER.initialized) return;
+  FEARNLEYS_CONTROLLER.initialized = true;
+
+  try {
+    renderFearnleysTceRibbon();
+    renderFearnleysFixtureAnalytics();
+    renderFearnleysAssetCycles(FEARNLEYS_CONTROLLER.currentAssetSeg);
+    renderFearnleysSnpTable();
+  } catch (err) {
+    console.error('[Fearnleys Terminal Init Error]', err);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 1. 56-YEAR 1Y TIME CHARTER RIBBON
+// -----------------------------------------------------------------------------
+function renderFearnleysTceRibbon() {
+  const summary = DATA.fearnleysSummary;
+  if (!summary || !summary.tce_benchmarks_56y) return;
+
+  const stats = summary.tce_benchmarks_56y.stats || {};
+  const container = document.getElementById('fearnleysTceRibbonGrid');
+  if (!container) return;
+
+  const segments = [
+    { key: 'capesize', name: 'Capesize 1Y', dept: 'BULK' },
+    { key: 'panamax', name: 'Panamax 1Y', dept: 'BULK' },
+    { key: 'supramax', name: 'Supramax 1Y', dept: 'BULK' },
+    { key: 'handysize', name: 'Handysize 1Y', dept: 'BULK' },
+    { key: 'vlcc', name: 'VLCC 1Y', dept: 'TANK' },
+    { key: 'suezmax', name: 'Suezmax 1Y', dept: 'TANK' },
+    { key: 'aframax', name: 'Aframax 1Y', dept: 'TANK' }
+  ];
+
+  let html = '';
+  segments.forEach(seg => {
+    const s = stats[seg.key] || {};
+    const curr = s.current ? '$' + Number(s.current).toLocaleString() : '—';
+    const pct = s.pct_56y != null ? s.pct_56y.toFixed(1) + '%' : '—';
+    const ath = s.ath ? '$' + Number(s.ath).toLocaleString() : '—';
+    const badgeClass = seg.dept === 'BULK' ? 'fearn-badge-bulk' : 'fearn-badge-tank';
+
+    html += `
+      <div class="fearn-ribbon-card" data-tooltip=" " data-tt-type="fearnleys-56y-tce" data-tt-seg="${seg.key}">
+        <div class="fearn-ribbon-title">
+          <span>${seg.name}</span>
+          <span class="fearn-badge ${badgeClass}">${seg.dept}</span>
+        </div>
+        <div class="fearn-ribbon-val">${curr}</div>
+        <div class="fearn-ribbon-sub">56Y %ile: <strong style="color:var(--text);">${pct}</strong></div>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+}
+
+// -----------------------------------------------------------------------------
+// 2. COMMERCIAL FIXTURE ANALYTICS & LEAGUE TABLE
+// -----------------------------------------------------------------------------
+function renderFearnleysFixtureAnalytics() {
+  const summary = DATA.fearnleysSummary;
+  if (!summary || !summary.fixtures_analytics) return;
+
+  const f = summary.fixtures_analytics;
+
+  // Render Volume Chart
+  const ctx = document.getElementById('fearnFixtureVolumeChart');
+  if (ctx && f.annual_volume && f.annual_volume.length > 0) {
+    if (FEARNLEYS_CONTROLLER.fixtureChart) {
+      FEARNLEYS_CONTROLLER.fixtureChart.destroy();
+    }
+
+    const years = f.annual_volume.map(v => v.year);
+    const bulkData = f.annual_volume.map(v => v.bulk);
+    const tankData = f.annual_volume.map(v => v.tank);
+    const gasData = f.annual_volume.map(v => v.gas);
+
+    FEARNLEYS_CONTROLLER.fixtureChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: years,
+        datasets: [
+          {
+            label: 'Dry Bulk',
+            data: bulkData,
+            backgroundColor: '#58a6ff',
+            stack: 'combined'
+          },
+          {
+            label: 'Tankers',
+            data: tankData,
+            backgroundColor: '#f0883e',
+            stack: 'combined'
+          },
+          {
+            label: 'Gas (LNG/LPG)',
+            data: gasData,
+            backgroundColor: '#79c0ff',
+            stack: 'combined'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: { boxWidth: 10, font: { size: 10, family: 'IBM Plex Sans' }, color: '#8b949e' }
+          },
+          tooltip: {
+            mode: 'index',
+            intersect: false
+          }
+        },
+        scales: {
+          x: {
+            stacked: true,
+            grid: { display: false },
+            ticks: { font: { size: 10, family: 'IBM Plex Mono' }, color: '#8b949e', maxTicksLimit: 12 }
+          },
+          y: {
+            stacked: true,
+            grid: { color: 'rgba(48,54,61,0.5)' },
+            ticks: {
+              font: { size: 10, family: 'IBM Plex Mono' },
+              color: '#8b949e',
+              callback: v => v >= 1000 ? (v / 1000).toFixed(0) + 'k' : v
+            }
+          }
+        }
+      }
+    });
+  }
+
+  // Render League Table
+  const tableBody = document.getElementById('fearnCharterersTableBody');
+  if (tableBody && f.top_charterers) {
+    let tbody = '';
+    f.top_charterers.forEach(ch => {
+      const badgeClass = ch.dept === 'BULK' ? 'fearn-badge-bulk' : (ch.dept === 'GAS' ? 'fearn-badge-gas' : 'fearn-badge-tank');
+      tbody += `
+        <tr data-tooltip=" " data-tt-type="fearnleys-fixture-kpi" data-tt-charterer="${ch.charterer}">
+          <td class="mono" style="color:var(--text-muted);font-weight:600;">#${ch.rank}</td>
+          <td style="font-weight:600;color:var(--text-bright);">${ch.charterer}</td>
+          <td><span class="fearn-badge ${badgeClass}">${ch.dept}</span></td>
+          <td class="mono" style="text-align:right;">${Number(ch.fixtures).toLocaleString()}</td>
+          <td class="mono" style="text-align:right;color:var(--accent);">${ch.market_share_pct.toFixed(2)}%</td>
+          <td style="color:var(--text-muted);font-size:10px;">${ch.primary_route}</td>
+        </tr>
+      `;
+    });
+    tableBody.innerHTML = tbody;
+  }
+
+  // Render Initial Recent Fixtures
+  renderFearnleysRecentFixtures();
+}
+
+function renderFearnleysRecentFixtures() {
+  const summary = DATA.fearnleysSummary;
+  if (!summary || !summary.fixtures_analytics) return;
+
+  const fixtures = summary.fixtures_analytics.recent_fixtures || [];
+  const term = (FEARNLEYS_CONTROLLER.fixtureSearchTerm || '').trim().toLowerCase();
+
+  const filtered = fixtures.filter(r => {
+    if (!term) return true;
+    return (
+      (r.vessel && r.vessel.toLowerCase().includes(term)) ||
+      (r.charterer && r.charterer.toLowerCase().includes(term)) ||
+      (r.route && r.route.toLowerCase().includes(term)) ||
+      (r.segment && r.segment.toLowerCase().includes(term))
+    );
+  });
+
+  const countLabel = document.getElementById('fearnFixtureCountLabel');
+  if (countLabel) {
+    countLabel.textContent = `Showing ${filtered.length} of ${fixtures.length} recent deals`;
+  }
+
+  const tbody = document.getElementById('fearnRecentFixturesBody');
+  if (!tbody) return;
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:14px;">No matching fixtures found for "${term}"</td></tr>`;
+    return;
+  }
+
+  let html = '';
+  filtered.slice(0, 100).forEach(r => {
+    html += `
+      <tr>
+        <td class="mono" style="color:var(--text-muted);">${r.date}</td>
+        <td style="font-weight:600;color:var(--text-bright);">${r.vessel}</td>
+        <td><span class="fearn-badge fearn-badge-bulk">${r.segment}</span></td>
+        <td style="font-weight:600;">${r.charterer}</td>
+        <td style="font-size:10px;color:var(--text-muted);">${r.route}</td>
+        <td class="mono" style="color:var(--accent);">${r.rate}</td>
+        <td class="mono" style="color:var(--text-muted);">${r.laycan || 'Prompt'}</td>
+      </tr>
+    `;
+  });
+  tbody.innerHTML = html;
+}
+
+function filterRecentFixtures(val) {
+  FEARNLEYS_CONTROLLER.fixtureSearchTerm = val;
+  renderFearnleysRecentFixtures();
+}
+
+// -----------------------------------------------------------------------------
+// 3. 50-YEAR ASSET VALUATION CYCLES VS NEWBUILDINGS
+// -----------------------------------------------------------------------------
+function switchFearnAssetSeg(segKey) {
+  FEARNLEYS_CONTROLLER.currentAssetSeg = segKey;
+
+  const btnMap = {
+    capesize: 'btnAssetCape',
+    kamsarmax: 'btnAssetKam',
+    ultramax: 'btnAssetUltra',
+    vlcc: 'btnAssetVlcc',
+    suezmax: 'btnAssetSuez',
+    aframax: 'btnAssetAfra',
+    mr: 'btnAssetMr'
+  };
+
+  Object.entries(btnMap).forEach(([k, btnId]) => {
+    const el = document.getElementById(btnId);
+    if (!el) return;
+    if (k === segKey) {
+      el.classList.add('active');
+      el.style.background = 'var(--accent)';
+      el.style.color = '#fff';
+    } else {
+      el.classList.remove('active');
+      el.style.background = 'var(--card)';
+      el.style.color = 'var(--text-muted)';
+    }
+  });
+
+  renderFearnleysAssetCycles(segKey);
+}
+
+function renderFearnleysAssetCycles(segKey) {
+  const summary = DATA.fearnleysSummary;
+  if (!summary || !summary.asset_valuations_50y) return;
+
+  const assetData = summary.asset_valuations_50y[segKey];
+  if (!assetData) return;
+
+  const stats = assetData.stats || {};
+
+  // Update HUD values
+  const v5y = stats['5y'] ? '$' + stats['5y'].current + 'M' : '—';
+  const r5y = stats['5y'] ? '50Y %ile: ' + stats['5y'].pct_hist.toFixed(1) + '%' : '50Y Rank: —';
+  const vRes = stats['resale'] ? '$' + stats['resale'].current + 'M' : '—';
+  const v10y = stats['10y'] ? '$' + stats['10y'].current + 'M' : '—';
+  const r10y = stats['10y'] ? '50Y %ile: ' + stats['10y'].pct_hist.toFixed(1) + '%' : 'Mid-Life Valuation';
+  const vNb = stats['newbuilding'] ? '$' + stats['newbuilding'].current + 'M' : '—';
+
+  let parityStr = '—';
+  let paritySub = '5Y / Newbuild';
+  if (stats['5y'] && stats['newbuilding'] && stats['newbuilding'].current > 0) {
+    const p = (stats['5y'].current / stats['newbuilding'].current) * 100.0;
+    parityStr = p.toFixed(1) + '%';
+    paritySub = p > 85 ? 'Overheated (>85%)' : 'Normal Cycle';
+  }
+
+  const el5y = document.getElementById('valAsset5y');
+  const elSub5y = document.getElementById('subAsset5y');
+  const elRes = document.getElementById('valAssetResale');
+  const el10y = document.getElementById('valAsset10y');
+  const elSub10y = document.getElementById('subAsset10y');
+  const elNb = document.getElementById('valAssetNb');
+  const elParity = document.getElementById('valAssetParity');
+  const elSubParity = document.getElementById('subAssetParity');
+  const elCurBadge = document.getElementById('fearnAssetCurBadge');
+
+  if (el5y) el5y.textContent = v5y;
+  if (elSub5y) elSub5y.textContent = r5y;
+  if (elRes) elRes.textContent = vRes;
+  if (el10y) el10y.textContent = v10y;
+  if (elSub10y) elSub10y.textContent = r10y;
+  if (elNb) elNb.textContent = vNb;
+  if (elParity) elParity.textContent = parityStr;
+  if (elSubParity) elSubParity.textContent = paritySub;
+  if (elCurBadge) elCurBadge.textContent = `${assetData.label}: 5Y ${v5y} | Resale ${vRes} | NB ${vNb}`;
+
+  // Render Multi-Decade Asset Curve
+  const ctx = document.getElementById('fearnAssetCycleChart');
+  if (!ctx || !assetData.history || assetData.history.length === 0) return;
+
+  if (FEARNLEYS_CONTROLLER.assetChart) {
+    FEARNLEYS_CONTROLLER.assetChart.destroy();
+  }
+
+  const labels = assetData.history.map(h => h.date_str || h.date);
+  const data5y = assetData.history.map(h => h['5y']);
+  const data10y = assetData.history.map(h => h['10y']);
+  const dataResale = assetData.history.map(h => h['resale']);
+  const dataNb = assetData.history.map(h => h['newbuilding']);
+
+  FEARNLEYS_CONTROLLER.assetChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Prompt Resale ($M)',
+          data: dataResale,
+          borderColor: '#e3b341',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          pointRadius: 0,
+          tension: 0.1
+        },
+        {
+          label: '5-Year Old Benchmark ($M)',
+          data: data5y,
+          borderColor: '#58a6ff',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          pointRadius: 0,
+          tension: 0.1
+        },
+        {
+          label: '10-Year Old Benchmark ($M)',
+          data: data10y,
+          borderColor: '#8b949e',
+          backgroundColor: 'transparent',
+          borderWidth: 1.5,
+          pointRadius: 0,
+          borderDash: [3, 3],
+          tension: 0.1
+        },
+        {
+          label: 'Newbuilding Price (Replacement Ceiling)',
+          data: dataNb,
+          borderColor: '#f0883e',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          pointRadius: 0,
+          tension: 0.1
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: { boxWidth: 10, font: { size: 10, family: 'IBM Plex Sans' }, color: '#8b949e' }
+        },
+        tooltip: {
+          mode: 'index',
+          intersect: false,
+          callbacks: {
+            label: ctx => `${ctx.dataset.label}: $${ctx.parsed.y}M`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: { font: { size: 10, family: 'IBM Plex Mono' }, color: '#8b949e', maxTicksLimit: 14 }
+        },
+        y: {
+          grid: { color: 'rgba(48,54,61,0.5)' },
+          ticks: {
+            font: { size: 10, family: 'IBM Plex Mono' },
+            color: '#8b949e',
+            callback: v => '$' + v + 'M'
+          }
+        }
+      }
+    }
+  });
+}
+
+// -----------------------------------------------------------------------------
+// 4. SECONDHAND S&P DEAL LEDGER
+// -----------------------------------------------------------------------------
+function setSnpFilter(filterKey) {
+  FEARNLEYS_CONTROLLER.currentSnpFilter = filterKey;
+
+  const btnMap = {
+    all: 'btnSnpAll',
+    bulk: 'btnSnpBulk',
+    tank: 'btnSnpTank'
+  };
+
+  Object.entries(btnMap).forEach(([k, btnId]) => {
+    const el = document.getElementById(btnId);
+    if (!el) return;
+    if (k === filterKey) {
+      el.classList.add('active');
+      el.style.background = 'var(--accent)';
+      el.style.color = '#fff';
+    } else {
+      el.classList.remove('active');
+      el.style.background = 'var(--card)';
+      el.style.color = 'var(--text-muted)';
+    }
+  });
+
+  renderFearnleysSnpTable();
+}
+
+function filterSnpDeals(term) {
+  FEARNLEYS_CONTROLLER.snpSearchTerm = term;
+  renderFearnleysSnpTable();
+}
+
+function renderFearnleysSnpTable() {
+  const summary = DATA.fearnleysSummary;
+  if (!summary || !summary.snp_deals) return;
+
+  const deals = summary.snp_deals.recent_deals || [];
+  const filter = FEARNLEYS_CONTROLLER.currentSnpFilter;
+  const search = (FEARNLEYS_CONTROLLER.snpSearchTerm || '').trim().toLowerCase();
+
+  const filtered = deals.filter(d => {
+    if (filter === 'bulk' && d.segment !== 'bulk') return false;
+    if (filter === 'tank' && d.segment !== 'tank') return false;
+    if (search) {
+      const match =
+        (d.vessel && d.vessel.toLowerCase().includes(search)) ||
+        (d.yard && d.yard.toLowerCase().includes(search)) ||
+        (d.buyer && d.buyer.toLowerCase().includes(search)) ||
+        (d.comment && d.comment.toLowerCase().includes(search));
+      if (!match) return false;
+    }
+    return true;
+  });
+
+  const countLabel = document.getElementById('fearnSnpCountLabel');
+  if (countLabel) {
+    countLabel.textContent = `Showing ${filtered.length} of ${deals.length} recorded deals`;
+  }
+
+  const tbody = document.getElementById('fearnSnpTableBody');
+  if (!tbody) return;
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="10" style="text-align:center;color:var(--text-muted);padding:14px;">No matching S&P transactions found.</td></tr>`;
+    return;
+  }
+
+  let html = '';
+  filtered.forEach(d => {
+    const badgeClass = d.segment === 'bulk' ? 'fearn-badge-bulk' : 'fearn-badge-tank';
+    const priceStr = d.price_usd_m ? '$' + d.price_usd_m.toFixed(1) + 'M' : '—';
+    const dwtStr = d.dwt ? Number(d.dwt).toLocaleString() : '—';
+    const usdPerDwtStr = d.usd_per_dwt ? '$' + Number(d.usd_per_dwt).toLocaleString() : '—';
+
+    html += `
+      <tr data-tooltip=" " data-tt-type="fearnleys-snp-deal" data-tt-deal-id="${d.id}" data-tt-vessel="${d.vessel}" data-tt-price="${d.price_usd_m || 0}" data-tt-dwt="${d.dwt || 0}">
+        <td class="mono" style="color:var(--text-muted);">${d.date}</td>
+        <td style="font-weight:600;color:var(--text-bright);">${d.vessel}</td>
+        <td><span class="fearn-badge ${badgeClass}">${d.segment}</span></td>
+        <td class="mono" style="text-align:right;">${d.built || '—'}</td>
+        <td style="font-size:10px;color:var(--text-muted);">${d.yard}</td>
+        <td class="mono" style="text-align:right;">${dwtStr}</td>
+        <td class="mono" style="text-align:right;font-weight:600;color:var(--accent);">${priceStr}</td>
+        <td class="mono" style="text-align:right;color:#e3b341;">${usdPerDwtStr}</td>
+        <td style="font-weight:500;">${d.buyer}</td>
+        <td style="font-size:10px;color:var(--text-muted);max-width:180px;overflow:hidden;text-overflow:ellipsis;" title="${d.comment}">${d.comment || '—'}</td>
+      </tr>
+    `;
+  });
+
+  tbody.innerHTML = html;
+}
+
+
+function renderSignalsTab(productKey) {
       // Bump generation immediately to abort any in-flight section renders
       _signalsRenderGen++;
 
@@ -25079,6 +25957,13 @@ if (intelTabsContainer) {
         renderSectionCharts('signals-sec-tech', productKey);
         renderSectionCharts('signals-sec-physical', productKey);
         renderSectionCharts('signals-sec-capital', productKey);
+          try {
+            if (typeof initFearnleysTerminal === 'function') {
+              initFearnleysTerminal();
+            }
+          } catch (e) {
+            console.error('[renderSignalsTab Fearnleys]', e);
+          }
       }, 15);
     }
 
@@ -34764,7 +35649,87 @@ function escapeHtml(str) {
         const title = target.getAttribute('data-tt-title') || 'Metric Detail';
         let html = `<div class="rt-title">${title}</div>`;
 
-        if (type === 'heatmap-cell') {
+        if (type === 'fearnleys-56y-tce') {
+          const segKey = target.getAttribute('data-tt-seg');
+          const summary = window.DATA && DATA.fearnleysSummary;
+          const s = (summary && summary.tce_benchmarks_56y && summary.tce_benchmarks_56y.stats) ? summary.tce_benchmarks_56y.stats[segKey] : null;
+          if (s) {
+            html = `<div class="rt-title">${s.label} — 56-Year Historical Benchmark</div>`;
+            html += `<div class="rt-row"><span class="rt-label">Current 1Y TC Rate</span><span class="rt-val" style="color:var(--accent);">$${Number(s.current).toLocaleString()}/day</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">56-Year Historical Percentile</span><span class="rt-val">${s.pct_56y.toFixed(1)}% (${s.start_year}–2026)</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">All-Time Peak (ATH)</span><span class="rt-val" style="color:#f0883e;">$${Number(s.ath).toLocaleString()}/day (${s.ath_date})</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">All-Time Trough (ATL)</span><span class="rt-val">$${Number(s.atl).toLocaleString()}/day (${s.atl_date})</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">5-Year Rolling Average</span><span class="rt-val">$${Number(s.avg_5y).toLocaleString()}/day</span></div>`;
+            const distAth = s.ath > 0 ? (((s.current - s.ath) / s.ath) * 100.0).toFixed(1) : 0;
+            html += `<div class="rt-row"><span class="rt-label">Distance from Supercycle ATH</span><span class="rt-val neg">${distAth}%</span></div>`;
+            html += `<div class="rt-note">Direct Hasura harvest from FearnPulse 56-year institutional archive. Calibrated over ${s.count} weekly broker assessments.</div>`;
+            return html;
+          }
+        }
+        else if (type === 'fearnleys-asset-value') {
+          const tier = target.getAttribute('data-tt-tier');
+          const segKey = (window.FEARNLEYS_CONTROLLER && FEARNLEYS_CONTROLLER.currentAssetSeg) || 'capesize';
+          const summary = window.DATA && DATA.fearnleysSummary;
+          const a = (summary && summary.asset_valuations_50y) ? summary.asset_valuations_50y[segKey] : null;
+          if (a) {
+            const stats = a.stats || {};
+            html = `<div class="rt-title">${a.label} — Secondhand Asset Valuation Cycle</div>`;
+            if (stats['5y']) {
+              html += `<div class="rt-row"><span class="rt-label">5-Year Old Benchmark</span><span class="rt-val">$${stats['5y'].current}M USD (${stats['5y'].pct_hist.toFixed(1)}th %ile)</span></div>`;
+              html += `<div class="rt-row"><span class="rt-label">5Y All-Time High</span><span class="rt-val" style="color:#f0883e;">$${stats['5y'].ath}M USD</span></div>`;
+            }
+            if (stats['resale']) {
+              html += `<div class="rt-row"><span class="rt-label">Prompt Resale Value</span><span class="rt-val" style="color:#e3b341;">$${stats['resale'].current}M USD</span></div>`;
+            }
+            if (stats['10y']) {
+              html += `<div class="rt-row"><span class="rt-label">10-Year Old Benchmark</span><span class="rt-val">$${stats['10y'].current}M USD</span></div>`;
+            }
+            if (stats['newbuilding']) {
+              html += `<div class="rt-row"><span class="rt-label">Newbuilding Price (Replacement)</span><span class="rt-val" style="color:#58a6ff;">$${stats['newbuilding'].current}M USD</span></div>`;
+            }
+            if (stats['5y'] && stats['newbuilding'] && stats['newbuilding'].current > 0) {
+              const parity = ((stats['5y'].current / stats['newbuilding'].current) * 100.0).toFixed(1);
+              html += `<div class="rt-row"><span class="rt-label">5Y / Newbuild Parity Ratio</span><span class="rt-val" style="color:${parity > 85 ? '#f85149' : '#3fb950'};">${parity}%</span></div>`;
+            }
+            html += `<div class="rt-note">Fearnleys 50-year valuation benchmark series (1976–2026). When 5Y secondhand prices approach Newbuilding price (>85%), shipyards face speculative orderbook surges.</div>`;
+            return html;
+          }
+        }
+        else if (type === 'fearnleys-fixture-kpi') {
+          const chName = target.getAttribute('data-tt-charterer');
+          const summary = window.DATA && DATA.fearnleysSummary;
+          const chList = (summary && summary.fixtures_analytics) ? summary.fixtures_analytics.top_charterers : [];
+          const ch = chList.find(c => c.charterer === chName);
+          if (ch) {
+            html = `<div class="rt-title">${ch.charterer} — Commercial Charterer Intelligence</div>`;
+            html += `<div class="rt-row"><span class="rt-label">Global League Rank</span><span class="rt-val">#${ch.rank} of All Recorded Charterers</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Total Commercial Fixtures</span><span class="rt-val">${Number(ch.fixtures).toLocaleString()} verified contracts</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Global Market Share</span><span class="rt-val" style="color:var(--accent);">${ch.market_share_pct.toFixed(2)}%</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Primary Fleet Segment</span><span class="rt-val">${ch.primary_segment} (${ch.dept})</span></div>`;
+            html += `<div class="rt-row"><span class="rt-label">Dominant Trade Corridor</span><span class="rt-val">${ch.primary_route}</span></div>`;
+            html += `<div class="rt-note">Aggregated across 537,164 individual commercial fixtures from Fearnleys 52-year fixture ledger (1974–2026).</div>`;
+            return html;
+          }
+        }
+        else if (type === 'fearnleys-snp-deal') {
+          const vessel = target.getAttribute('data-tt-vessel');
+          const price = parseFloat(target.getAttribute('data-tt-price'));
+          const dwt = parseInt(target.getAttribute('data-tt-dwt'));
+          const usdPerDwt = (price > 0 && dwt > 0) ? Math.round((price * 1000000) / dwt) : null;
+          html = `<div class="rt-title">${vessel} — Verified S&amp;P Transaction</div>`;
+          if (price > 0) {
+            html += `<div class="rt-row"><span class="rt-label">Reported Sale Price</span><span class="rt-val" style="color:var(--accent);">$${price.toFixed(1)}M USD</span></div>`;
+          }
+          if (dwt > 0) {
+            html += `<div class="rt-row"><span class="rt-label">Vessel Deadweight (DWT)</span><span class="rt-val">${Number(dwt).toLocaleString()} DWT</span></div>`;
+          }
+          if (usdPerDwt) {
+            html += `<div class="rt-row"><span class="rt-label">Implied Asset Metric</span><span class="rt-val" style="color:#e3b341;">$${Number(usdPerDwt).toLocaleString()} / DWT</span></div>`;
+          }
+          html += `<div class="rt-note">From Fearnleys Secondhand S&amp;P Deal Ledger (2,592 recorded transactions totaling $69.8B USD).</div>`;
+          return html;
+        }
+        else if (type === 'heatmap-cell') {
           const month = parseInt(target.getAttribute('data-tt-month'));
           // 1. Rank calculation
           const history = [];

@@ -29,7 +29,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests pandas beautifulsoup4 lxml openpyxl
+        run: pip install requests pandas beautifulsoup4 lxml openpyxl pyarrow fastparquet
 
       - name: Pull latest before run
         run: git pull --rebase --autostash origin main
@@ -58,6 +58,12 @@ jobs:
         run: |
           if [ -f scripts/expansion_bunker_prices.py ]; then python scripts/expansion_bunker_prices.py; fi
           if [ -f scripts/bunkers/build_bunker_cache.py ]; then python scripts/bunkers/build_bunker_cache.py; fi
+
+      - name: Fearnleys Hasura Daily Sync & Cache
+        continue-on-error: true
+        timeout-minutes: 10
+        run: |
+          if [ -f scripts/fearnleys/daily_fearnleys_sync.py ]; then python scripts/fearnleys/daily_fearnleys_sync.py; fi
 
       - name: Commit and push changes
         run: |
