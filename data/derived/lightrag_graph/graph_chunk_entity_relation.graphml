@@ -1,0 +1,3086 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d11" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d10" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d9" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d8" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d7" for="edge" attr.name="description" attr.type="string"/>
+<key id="d6" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Gas">
+  <data key="d0">Gas</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Arabian Gulf">
+  <data key="d0">Arabian Gulf</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-8e52dc8ca9785fba6fa7859245b6aa69</data>
+  <data key="d4">2025-10-03_2025_10_03_gas_report_week_40_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Crude Oil">
+  <data key="d0">Crude Oil</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-75a90af803b33328c67b20ce9326971b</data>
+  <data key="d4">2026-03-20_2026_gas_report_week_12_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Bunker Fuel">
+  <data key="d0">Bunker Fuel</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-75a90af803b33328c67b20ce9326971b</data>
+  <data key="d4">2026-03-20_2026_gas_report_week_12_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Container Ship">
+  <data key="d0">Container Ship</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'Main'</data>
+  <data key="d3">chunk-35d5276383f7a811d26eb66fd1fbf933</data>
+  <data key="d4">2018-07-06_2018_07_06_ningbo_containerised_freight_index111111_ningbo.json</data>
+  <data key="d5">1788760044</data>
+</node>
+<node id="Pacific">
+  <data key="d0">Pacific</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Post-Panamax">
+  <data key="d0">Post-Panamax</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'Panamax'</data>
+  <data key="d3">chunk-0d3e742af94bd216bfc163c482690225</data>
+  <data key="d4">2014-04-07_2016_bulk_report_week50_dry.json</data>
+  <data key="d5">1788760040</data>
+</node>
+<node id="Coal">
+  <data key="d0">Coal</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'Panamax-Kamsarmax'</data>
+  <data key="d3">chunk-aad091bc2b3f1f16e15bb0272e460d48</data>
+  <data key="d4">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Rotterdam">
+  <data key="d0">Rotterdam</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Handysize'</data>
+  <data key="d3">chunk-bddcc9281bb289e07d13f261b8f4d064</data>
+  <data key="d4">2023-12-15_2023_12_15_bulk_report_week_50_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Singapore">
+  <data key="d0">Singapore</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-05deaa0ef8d4b06916ac3cf3a82937df</data>
+  <data key="d4">2023-11-24_2023_11_24_gas_report_week_47_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Supramax">
+  <data key="d0">Supramax</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'Ultramax/Supramax'</data>
+  <data key="d3">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d4">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Handysize">
+  <data key="d0">Handysize</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'Handysize'</data>
+  <data key="d3">chunk-502a88483091347c890bc5c312d3b80b</data>
+  <data key="d4">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="BSI">
+  <data key="d0">BSI</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Ultramax/Supramax'</data>
+  <data key="d3">chunk-54ba9522f14a4c9ac0b73fd03397a933</data>
+  <data key="d4">2022-07-08_2022_07_08_bulk_report_week_27_dry.json</data>
+  <data key="d5">1788760041</data>
+</node>
+<node id="BHSI">
+  <data key="d0">BHSI</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Handysize'</data>
+  <data key="d3">chunk-3d304bbeb0603ca76b39db434be654fc</data>
+  <data key="d4">2024-02-23_2024_02_23_bulk_report_week_8_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Panamax">
+  <data key="d0">Panamax</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-c326ce10ef6ee3fce3a9f33fcb24b506</data>
+  <data key="d4">2023-12-01_2023_12_01_gas_report_week_48_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Grain">
+  <data key="d0">Grain</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-f556356af0f92a43c71be48efdddc8dd</data>
+  <data key="d4">2025-02-07_2025_02_07_gas_report_week_6_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="US Gulf">
+  <data key="d0">US Gulf</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Capesize">
+  <data key="d0">Capesize</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="China">
+  <data key="d0">China</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Main'</data>
+  <data key="d3">chunk-35d5276383f7a811d26eb66fd1fbf933</data>
+  <data key="d4">2018-07-06_2018_07_06_ningbo_containerised_freight_index111111_ningbo.json</data>
+  <data key="d5">1788760044</data>
+</node>
+<node id="Australia">
+  <data key="d0">Australia</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Brazil">
+  <data key="d0">Brazil</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-7cb56b2a6dc6bf814664a85f148c9344</data>
+  <data key="d4">2025-05-02_2025_05_02_gas_report_week_18_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Atlantic">
+  <data key="d0">Atlantic</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Bauxite">
+  <data key="d0">Bauxite</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'Handysize'</data>
+  <data key="d3">chunk-00b755c43c3e01017d9fb21b48d8b153</data>
+  <data key="d4">2026-07-31_2026_bulk_report_week_31_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Santos">
+  <data key="d0">Santos</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Ultramax/Supramax'</data>
+  <data key="d3">chunk-a8b957a07e3fbe6277a9c3544f317cd3</data>
+  <data key="d4">2024-09-27_2024_09_27_bulk_report_week_39_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Iron Ore">
+  <data key="d0">Iron Ore</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-c0959c18bc5006df5939cfa8062133c1</data>
+  <data key="d4">2026-07-10_2026_bulk_report_week_28_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="C3 Route">
+  <data key="d0">C3 Route</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-a847950203c8294fe39287f445aa3c24</data>
+  <data key="d4">2026-04-24_2026_bulk_report_week_17_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="C5 Route">
+  <data key="d0">C5 Route</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-8c9ce61636cbb89ed524a5f62198ae6a</data>
+  <data key="d4">2026-08-21_2026_08_21_bulk_report_week_34_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Newcastlemax">
+  <data key="d0">Newcastlemax</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-a8830f400d0071cd952abfccaba2d7bb</data>
+  <data key="d4">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d5">1788760041</data>
+</node>
+<node id="Scrap Metal">
+  <data key="d0">Scrap Metal</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'Handysize'</data>
+  <data key="d3">chunk-bcf206f6f09553c8cb5dff6b1ff598f6</data>
+  <data key="d4">2026-08-07_2026_bulk_report_week_32_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="BPI">
+  <data key="d0">BPI</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Panamax'</data>
+  <data key="d3">chunk-3a5f872923d4a8f409ea12a7fd672d28</data>
+  <data key="d4">2026-02-06_2026_bulk_report_week_6_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Ultramax">
+  <data key="d0">Ultramax</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'Ultramax/Supramax'</data>
+  <data key="d3">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d4">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Port Hedland">
+  <data key="d0">Port Hedland</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Bulk report - Week 7'</data>
+  <data key="d3">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d4">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="BDI">
+  <data key="d0">BDI</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Main'</data>
+  <data key="d3">chunk-d28e095865e6f59b4232389ab42c8ccb</data>
+  <data key="d4">2018-03-01_2018_03_01_bulk_report_week5_dry.json</data>
+  <data key="d5">1788760040</data>
+</node>
+<node id="West Africa">
+  <data key="d0">West Africa</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-80ac43c13e491eb5119336c17c9cf718</data>
+  <data key="d4">2024-11-29_2024_11_29_gas_report_week_48_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Vale">
+  <data key="d0">Vale</data>
+  <data key="d1">COMPANY</data>
+  <data key="d2">Company referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-779447742cd90469d1fccc7d6913a8da</data>
+  <data key="d4">2020-12-18_2020_12_18_bulk_report_week_51_dry.json</data>
+  <data key="d5">1788760041</data>
+</node>
+<node id="BCI">
+  <data key="d0">BCI</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-d0bc3afbe8182c3ab23e6ac51ba16413</data>
+  <data key="d4">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Qingdao">
+  <data key="d0">Qingdao</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-74626663d94c894530ccf10d5731d707</data>
+  <data key="d4">2024-03-22_2024_03_22_bulk_report_week_12_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Steel">
+  <data key="d0">Steel</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'Handysize'</data>
+  <data key="d3">chunk-294157767caff6f422ff62c2740b5298</data>
+  <data key="d4">2026-08-14_2026_08_14_bulk_report_week_33_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Kamsarmax">
+  <data key="d0">Kamsarmax</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'Panamax-Kamsarmax'</data>
+  <data key="d3">chunk-aad091bc2b3f1f16e15bb0272e460d48</data>
+  <data key="d4">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="Rio Tinto">
+  <data key="d0">Rio Tinto</data>
+  <data key="d1">COMPANY</data>
+  <data key="d2">Company referenced in tree section 'Bulk report - Week 20'</data>
+  <data key="d3">chunk-31f23a8bdab9866bc6f2a0ef7e287aa2</data>
+  <data key="d4">2024-05-17_2024_05_17_bulk_report_week_20_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="BHP">
+  <data key="d0">BHP</data>
+  <data key="d1">COMPANY</data>
+  <data key="d2">Company referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-c75a4ad17dfd13c9e8baf513c2d7cdc0</data>
+  <data key="d4">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Dampier">
+  <data key="d0">Dampier</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Bulk report - Week 7'</data>
+  <data key="d3">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d4">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Tubarao">
+  <data key="d0">Tubarao</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Bulk report - Week 47'</data>
+  <data key="d3">chunk-419fd08ab76ef1412f8ef617abc33b26</data>
+  <data key="d4">2020-11-20_2020_11_20_bulk_report_week_47_dry.json</data>
+  <data key="d5">1788760041</data>
+</node>
+<node id="Clarksons">
+  <data key="d0">Clarksons</data>
+  <data key="d1">BROKER</data>
+  <data key="d2">Shipbroker / market reporting source in 'Main'</data>
+  <data key="d3">chunk-5624ab42b95a9e1aca530e64b902487d</data>
+  <data key="d4">2017-09-01_2017_bulk_report_week35_dry.json</data>
+  <data key="d5">1788760040</data>
+</node>
+<node id="VLOC">
+  <data key="d0">VLOC</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'Bulk Report - Week 41'</data>
+  <data key="d3">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d4">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d5">1788760040</data>
+</node>
+<node id="Swissmarine">
+  <data key="d0">Swissmarine</data>
+  <data key="d1">COMPANY</data>
+  <data key="d2">Company referenced in tree section 'Bulk report - Week 44'</data>
+  <data key="d3">chunk-7bb4bf7d567263414d70daacb19a29c6</data>
+  <data key="d4">2017-11-03_2017_bulk_report_week44_dry.json</data>
+  <data key="d5">1788760040</data>
+</node>
+<node id="Genco">
+  <data key="d0">Genco</data>
+  <data key="d1">COMPANY</data>
+  <data key="d2">Company referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-c15d86693698858591374206374b270f</data>
+  <data key="d4">2017-11-10_2017_bulk_report_week45_dry.json</data>
+  <data key="d5">1788760040</data>
+</node>
+<node id="Ponta da Madeira">
+  <data key="d0">Ponta da Madeira</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Bulk report - Week 11'</data>
+  <data key="d3">chunk-c60d581020e5cf0c54aa4bcae690b27a</data>
+  <data key="d4">2018-03-16_2018_bulk_report_week11_dry.json</data>
+  <data key="d5">1788760040</data>
+</node>
+<node id="FFA Forward Curves">
+  <data key="d0">FFA Forward Curves</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Panamax'</data>
+  <data key="d3">chunk-a9332ccd5c37f16133b3093d85c2c201</data>
+  <data key="d4">2025-10-17_2025_10_17_bulk_report_week_42_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Oldendorff">
+  <data key="d0">Oldendorff</data>
+  <data key="d1">COMPANY</data>
+  <data key="d2">Company referenced in tree section 'Bulk report - Week 26'</data>
+  <data key="d3">chunk-bc7c5c08de32a156ef8286da6b18195e</data>
+  <data key="d4">2018-06-29_2018_bulk_report_week26_dry.json</data>
+  <data key="d5">1788760040</data>
+</node>
+<node id="Soybeans">
+  <data key="d0">Soybeans</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'Supramax'</data>
+  <data key="d3">chunk-739f1e38ef4db0c01bf16d440b6f3c93</data>
+  <data key="d4">2018-12-14_2018_bulk_report_week50_dry.json</data>
+  <data key="d5">1788760041</data>
+</node>
+<node id="ECSA">
+  <data key="d0">ECSA</data>
+  <data key="d1">PORT_REGION</data>
+  <data key="d2">Port or trading region referenced in tree section 'Panamax'</data>
+  <data key="d3">chunk-01c5c326ed5851314a32b985844fd82c</data>
+  <data key="d4">2025-07-11_2025_07_11_bulk_report_week_28_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="C5TC">
+  <data key="d0">C5TC</data>
+  <data key="d1">INDEX_BENCHMARK</data>
+  <data key="d2">Market rate index referenced in tree section 'Capesize'</data>
+  <data key="d3">chunk-3aa583a76bfe4ac41d8c9b435b768817</data>
+  <data key="d4">2026-03-20_2026_bulk_report_week_12_dry.json</data>
+  <data key="d5">1788760042</data>
+</node>
+<node id="Saudi Aramco">
+  <data key="d0">Saudi Aramco</data>
+  <data key="d1">COMPANY</data>
+  <data key="d2">Company referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-a56d2b28812ba492e6305898134175f6</data>
+  <data key="d4">2024-04-19_2024_04_19_gas_report_week_16_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="VLGC">
+  <data key="d0">VLGC</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-3305bf364d6db7d750c47f306b17aa03</data>
+  <data key="d4">2026-08-21_2026_08_21_gas_report_week_34_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="LPG Carrier">
+  <data key="d0">LPG Carrier</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="LPG">
+  <data key="d0">LPG</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'LPG'</data>
+  <data key="d3">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="LNG Carrier">
+  <data key="d0">LNG Carrier</data>
+  <data key="d1">VESSEL_CLASS</data>
+  <data key="d2">Vessel class referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<node id="LNG">
+  <data key="d0">LNG</data>
+  <data key="d1">COMMODITY</data>
+  <data key="d2">Commodity cargo referenced in tree section 'LNG'</data>
+  <data key="d3">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d4">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d5">1788760043</data>
+</node>
+<edge source="Gas" target="Container Ship">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-9a3a2dea4ce24ea31aba72e332a09037</data>
+  <data key="d10">2022-03-11_2022_03_11_bulk_report_week_10_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Gas" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Gas" target="Supramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-becf814f19db4dc732838473c139c213</data>
+  <data key="d10">2023-07-21_2023_07_21_bulk_report_week_29_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Gas" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-c326ce10ef6ee3fce3a9f33fcb24b506</data>
+  <data key="d10">2023-12-01_2023_12_01_gas_report_week_48_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Gas" target="Handysize">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-d39e953d2e9c4bcdfe0f712ed93279a9</data>
+  <data key="d10">2024-05-10_2024_05_10_bulk_report_week_19_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Gas" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-becf814f19db4dc732838473c139c213</data>
+  <data key="d10">2023-07-21_2023_07_21_bulk_report_week_29_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Gas" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI index reflects trade flows of Gas</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-6d450b64e7cac4edb1ea53469ab7bf77</data>
+  <data key="d10">2025-09-26_2025_09_26_bulk_report_week_39_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Gas" target="Saudi Aramco">
+  <data key="d6">1.0</data>
+  <data key="d7">Saudi Aramco produces or commercializes Gas</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-a56d2b28812ba492e6305898134175f6</data>
+  <data key="d10">2024-04-19_2024_04_19_gas_report_week_16_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Gas" target="VLGC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLGC carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-3305bf364d6db7d750c47f306b17aa03</data>
+  <data key="d10">2026-08-21_2026_08_21_gas_report_week_34_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Gas" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Gas" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier carries Gas freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Arabian Gulf" target="Container Ship">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-ad91d1a9c624b3546bed6071d5e4dc39</data>
+  <data key="d10">2021-08-27_2021_08_27_bulk_report_week_34_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Arabian Gulf" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-da1a510f9d4f2dd2eee66eeed6dd62a2</data>
+  <data key="d10">2026-02-13_2026_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Arabian Gulf" target="Supramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-da1a510f9d4f2dd2eee66eeed6dd62a2</data>
+  <data key="d10">2026-02-13_2026_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Arabian Gulf" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-8142320137350e370f9b2cdb4af727d2</data>
+  <data key="d10">2023-12-15_2023_12_15_gas_report_week_50_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Arabian Gulf" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-3fd9c4a53c72a096810b121d4bcba8d0</data>
+  <data key="d10">2023-12-01_2023_12_01_gas_report_week_48_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Arabian Gulf" target="Handysize">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-ccb79f295e5e0d2043ed420ef41d18d1</data>
+  <data key="d10">2026-06-19_2026_bulk_report_week_25_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Arabian Gulf" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLOC calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Arabian Gulf" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-7bb4bf7d567263414d70daacb19a29c6</data>
+  <data key="d10">2017-11-03_2017_bulk_report_week44_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Arabian Gulf" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4145d432ae5fa1d5b8360c3e82c17858</data>
+  <data key="d10">2025-10-03_2025_10_03_gas_report_week_40_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Arabian Gulf" target="VLGC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLGC calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0b2ff96152609ae4a86a81ef9ecdb1c0</data>
+  <data key="d10">2025-03-21_2025_03_21_gas_report_week_12_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Arabian Gulf" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to Arabian Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-8e52dc8ca9785fba6fa7859245b6aa69</data>
+  <data key="d10">2025-10-03_2025_10_03_gas_report_week_40_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Crude Oil" target="Container Ship">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship carries Crude Oil freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-1cf22c850542c15cc4215b9544bd664d</data>
+  <data key="d10">2026-07-10_2026_container_report_week_28_container.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Crude Oil" target="Handysize">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Crude Oil freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-08b413ef1331ab92edb6e7165b583e07</data>
+  <data key="d10">2025-10-10_2025_10_10_bulk_report_week_41_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Crude Oil" target="Supramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Crude Oil freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-953244a50a18c16f1d3845507b3b7168</data>
+  <data key="d10">2020-03-13_2020_03_13_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Crude Oil" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax carries Crude Oil freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-953244a50a18c16f1d3845507b3b7168</data>
+  <data key="d10">2020-03-13_2020_03_13_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Crude Oil" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Crude Oil freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-53a4970a29f045bafa11de30abced466</data>
+  <data key="d10">2025-04-11_2025_04_11_bulk_report_week_15_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Crude Oil" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Crude Oil freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-6216f8951a4ffbea2d9a04e350ebc428</data>
+  <data key="d10">2023-01-06_2023_01_06_gas_report_week_1_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Crude Oil" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route index reflects trade flows of Crude Oil</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-6f4c371121f44bef15192dd50a6707ab</data>
+  <data key="d10">2026-03-13_2026_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Crude Oil" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier carries Crude Oil freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-75a90af803b33328c67b20ce9326971b</data>
+  <data key="d10">2026-03-20_2026_gas_report_week_12_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Crude Oil" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier carries Crude Oil freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-8695cb965df726405611c68306dd423a</data>
+  <data key="d10">2026-03-20_2026_03_20_gas_report_week_12_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Bunker Fuel" target="Container Ship">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship carries Bunker Fuel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-b6127ec1aac81d4b3986dd51ec7b734d</data>
+  <data key="d10">2026-08-21_2026_08_21_container_report_week_34_container.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Bunker Fuel" target="BHP">
+  <data key="d6">1.0</data>
+  <data key="d7">BHP produces or commercializes Bunker Fuel</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-c4eb89c12fa86e3ade2ec436fd6f0404</data>
+  <data key="d10">2016_bulk_report_week72016_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Bunker Fuel" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto produces or commercializes Bunker Fuel</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-8dc78b685e6bcb799e8b4dbdbdee4e7d</data>
+  <data key="d10">2015-05-15_2015_week_20_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Bunker Fuel" target="Supramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Bunker Fuel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-17e8d969929eb539d075ed348260781c</data>
+  <data key="d10">2026-03-13_2026_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Bunker Fuel" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Bunker Fuel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-2ff4de62fcc3c6b15c58dff0b8f109a8</data>
+  <data key="d10">2026-07-31_2026_bulk_report_week_31_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Bunker Fuel" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Bunker Fuel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-171c9f21d659624128c146542c651fa2</data>
+  <data key="d10">2026-03-20_2026_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Bunker Fuel" target="Handysize">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Bunker Fuel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-a3f5d0b28a93d8449334c94dbd4b83d0</data>
+  <data key="d10">2026-03-13_2026_03_13_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Bunker Fuel" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route index reflects trade flows of Bunker Fuel</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-6f4c371121f44bef15192dd50a6707ab</data>
+  <data key="d10">2026-03-13_2026_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Bunker Fuel" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale produces or commercializes Bunker Fuel</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-02f6f0fbf18253a00ead5cbd45dd2f19</data>
+  <data key="d10">2019-02-15_2019_bulk_report_week7_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Bunker Fuel" target="BPI">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI index reflects trade flows of Bunker Fuel</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-f2b384619eb5b7443a2c8209318a7dd6</data>
+  <data key="d10">2019-12-24_2020_bulk_report_week1_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Bunker Fuel" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax carries Bunker Fuel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-17e8d969929eb539d075ed348260781c</data>
+  <data key="d10">2026-03-13_2026_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Bunker Fuel" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier carries Bunker Fuel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-75a90af803b33328c67b20ce9326971b</data>
+  <data key="d10">2026-03-20_2026_gas_report_week_12_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Container Ship" target="Grain">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-3c2f78a1b4c08b18a39e08ffa0431074</data>
+  <data key="d10">2025-09-12_2025_09_12_container_report_week_37_container.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Container Ship" target="Brazil">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-595be93bf2764dea238c6aad2038b7c2</data>
+  <data key="d10">2022-03-04_2022_03_04_bulk_report_week_9_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="Atlantic">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-2aeb158a45fd4fb25e2fc8d62f5ae54d</data>
+  <data key="d10">2022-03-11_2022_03_11_bulk_report_week_10_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="China">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-35d5276383f7a811d26eb66fd1fbf933</data>
+  <data key="d10">2018-07-06_2018_07_06_ningbo_containerised_freight_index111111_ningbo.json</data>
+  <data key="d11">1788760044</data>
+</edge>
+<edge source="Container Ship" target="Pacific">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-9a3a2dea4ce24ea31aba72e332a09037</data>
+  <data key="d10">2022-03-11_2022_03_11_bulk_report_week_10_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="Steel">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship carries Steel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-ad91d1a9c624b3546bed6071d5e4dc39</data>
+  <data key="d10">2021-08-27_2021_08_27_bulk_report_week_34_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI rate index benchmarks Container Ship earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-f692110c05e09c382779889e11ca7d27</data>
+  <data key="d10">2021-08-27_2021_08_27_bulk_report_week_34_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="Coal">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship carries Coal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-9a3a2dea4ce24ea31aba72e332a09037</data>
+  <data key="d10">2022-03-11_2022_03_11_bulk_report_week_10_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="Australia">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-9a3a2dea4ce24ea31aba72e332a09037</data>
+  <data key="d10">2022-03-11_2022_03_11_bulk_report_week_10_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="Singapore">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-2aeb158a45fd4fb25e2fc8d62f5ae54d</data>
+  <data key="d10">2022-03-11_2022_03_11_bulk_report_week_10_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="US Gulf">
+  <data key="d6">1.0</data>
+  <data key="d7">Container Ship calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-2aeb158a45fd4fb25e2fc8d62f5ae54d</data>
+  <data key="d10">2022-03-11_2022_03_11_bulk_report_week_10_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Container Ship" target="BHSI">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI rate index benchmarks Container Ship earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-2aeb158a45fd4fb25e2fc8d62f5ae54d</data>
+  <data key="d10">2022-03-11_2022_03_11_bulk_report_week_10_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Pacific" target="Handysize">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0a785d6ababb8f17baf19e29acfd152e</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Pacific" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-f395df7b73b105985d8da192ffb8e7eb</data>
+  <data key="d10">2025-08-08_2025_08_08_gas_report_week_32_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Pacific" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-3fd9c4a53c72a096810b121d4bcba8d0</data>
+  <data key="d10">2023-12-01_2023_12_01_gas_report_week_48_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Pacific" target="Supramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Pacific" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Pacific" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-aad091bc2b3f1f16e15bb0272e460d48</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Pacific" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLOC calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Pacific" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-a8830f400d0071cd952abfccaba2d7bb</data>
+  <data key="d10">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Pacific" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-9b962c57283f007d6ddbc5a6e8ad523b</data>
+  <data key="d10">2026-03-27_2026_03_27_gas_report_week_13_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Pacific" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to Pacific</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Post-Panamax" target="Atlantic">
+  <data key="d6">1.0</data>
+  <data key="d7">Post-Panamax calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0d3e742af94bd216bfc163c482690225</data>
+  <data key="d10">2014-04-07_2016_bulk_report_week50_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Coal" target="Handysize">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Coal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-ccb79f295e5e0d2043ed420ef41d18d1</data>
+  <data key="d10">2026-06-19_2026_bulk_report_week_25_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Coal" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Coal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-aad091bc2b3f1f16e15bb0272e460d48</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Coal" target="Supramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Coal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-edc539bd0a7e22b1dd53e9bec994fdcb</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Coal" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Coal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-aad091bc2b3f1f16e15bb0272e460d48</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Coal" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale produces or commercializes Coal</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-7b8d9e8a0c62dd0d278aca20e833bb32</data>
+  <data key="d10">2019-02-22_2019_bulk_report_week8_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Coal" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto produces or commercializes Coal</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-8dc78b685e6bcb799e8b4dbdbdee4e7d</data>
+  <data key="d10">2015-05-15_2015_week_20_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Coal" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax carries Coal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-aad091bc2b3f1f16e15bb0272e460d48</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Coal" target="BHP">
+  <data key="d6">1.0</data>
+  <data key="d7">BHP produces or commercializes Coal</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-60948553bdab348be7261ce47a4a5343</data>
+  <data key="d10">2017-02-17_2017_bulk_report_week7_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Coal" target="BPI">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI index reflects trade flows of Coal</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-053c6426776a4ea4dcbc7c013580293e</data>
+  <data key="d10">2019-11-08_2019_bulk_report_week45_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Coal" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax carries Coal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-edc539bd0a7e22b1dd53e9bec994fdcb</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Coal" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI index reflects trade flows of Coal</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-cbb1a7e0524207bdb0871a2632028b75</data>
+  <data key="d10">2026-08-07_2026_bulk_report_week_32_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Coal" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax carries Coal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-9a2653cfec28527507a63026aa80a08a</data>
+  <data key="d10">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Coal" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route index reflects trade flows of Coal</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-e375c7fef65bb2ec5fdc71cdd5318cc3</data>
+  <data key="d10">2026-05-08_2026_bulk_report_week_19_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Coal" target="BSI">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI index reflects trade flows of Coal</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-0f29bb94d71a2792f229bb48579673cb</data>
+  <data key="d10">2021-12-17_2021_12_17_bulk_report_week_50_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Coal" target="BHSI">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI index reflects trade flows of Coal</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-167f2e2a6f560452222580ca5bd7962b</data>
+  <data key="d10">2022-05-13_2022_05_13_bulk_report_week_19_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Coal" target="FFA Forward Curves">
+  <data key="d6">1.0</data>
+  <data key="d7">FFA Forward Curves index reflects trade flows of Coal</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-db05004db3034af6129714cf4b3ff58e</data>
+  <data key="d10">2023-07-28_2023_07_28_bulk_report_week_30_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Coal" target="C3 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C3 Route index reflects trade flows of Coal</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-3c6397922363e80044e073d41fa3ca11</data>
+  <data key="d10">2024-09-13_2024_09_13_bulk_report_week_37_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Rotterdam" target="Handysize">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Rotterdam</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-bddcc9281bb289e07d13f261b8f4d064</data>
+  <data key="d10">2023-12-15_2023_12_15_bulk_report_week_50_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Rotterdam" target="Supramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Rotterdam</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0c400871af441a1e4f98259b31ab3834</data>
+  <data key="d10">2019-03-01_2019_bulk_report_week9_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Rotterdam" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Rotterdam</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0c400871af441a1e4f98259b31ab3834</data>
+  <data key="d10">2019-03-01_2019_bulk_report_week9_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Rotterdam" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Rotterdam</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0c400871af441a1e4f98259b31ab3834</data>
+  <data key="d10">2019-03-01_2019_bulk_report_week9_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Rotterdam" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax calls or trades to Rotterdam</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0a87c98a5308bf108a3e3c29e47d5a95</data>
+  <data key="d10">2016-07-22_2016_bulk_report_week29_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Singapore" target="Handysize">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-502a88483091347c890bc5c312d3b80b</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Singapore" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-1675d8d56b0a247ab92a97097d7096f4</data>
+  <data key="d10">2026-08-14_2026_08_14_bulk_report_week_33_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Singapore" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-d3beae2d1be553a167e62e292e680e48</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Singapore" target="Supramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-40c8361ebbca114541efab0c9ad2bef4</data>
+  <data key="d10">2026-07-31_2026_bulk_report_week_31_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Singapore" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-d3beae2d1be553a167e62e292e680e48</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Singapore" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-40c8361ebbca114541efab0c9ad2bef4</data>
+  <data key="d10">2026-07-31_2026_bulk_report_week_31_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Singapore" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-9a2653cfec28527507a63026aa80a08a</data>
+  <data key="d10">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Singapore" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-d105c8f3748c66e351d8d385f73c3802</data>
+  <data key="d10">2023-11-24_2023_11_24_gas_report_week_47_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Singapore" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to Singapore</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-05deaa0ef8d4b06916ac3cf3a82937df</data>
+  <data key="d10">2023-11-24_2023_11_24_gas_report_week_47_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="Atlantic">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-edc539bd0a7e22b1dd53e9bec994fdcb</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="Australia">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-7419827caf476ad0b2c952bed630d9be</data>
+  <data key="d10">2026-06-12_2026_bulk_report_week_24_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="Brazil">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-e74d2bbc0b5ea73e5ae9d48dc8182499</data>
+  <data key="d10">2026-03-27_2026_03_27_bulk_report_week_13_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="China">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="US Gulf">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="BSI">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-54ba9522f14a4c9ac0b73fd03397a933</data>
+  <data key="d10">2022-07-08_2022_07_08_bulk_report_week_27_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Supramax" target="BHSI">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-e7da1b14e8c4c28663d971de8090c27b</data>
+  <data key="d10">2019-09-13_2019_bulk_report_week37_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Supramax" target="Iron Ore">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Iron Ore freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-0850476b9d89180a5c305666102766d9</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="C3 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C3 Route rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a6191bc81392de1e8ad4002640d6c980</data>
+  <data key="d10">2026-03-20_2026_03_20_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a3f5d0b28a93d8449334c94dbd4b83d0</data>
+  <data key="d10">2026-03-13_2026_03_13_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="Scrap Metal">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Scrap Metal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-738b4b0986e131184de160339d58cc76</data>
+  <data key="d10">2026-06-19_2026_bulk_report_week_25_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="Port Hedland">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Port Hedland</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d10">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="BDI">
+  <data key="d6">1.0</data>
+  <data key="d7">BDI rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-d28e095865e6f59b4232389ab42c8ccb</data>
+  <data key="d10">2018-03-01_2018_03_01_bulk_report_week5_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Supramax" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale charters or operates Supramax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-4ba28de25b1160d1a611a7ccae8c8731</data>
+  <data key="d10">2020-12-18_2020_12_18_bulk_report_week_51_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Supramax" target="West Africa">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to West Africa</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-cbfe52c8923b20e1c8422ca636b6c453</data>
+  <data key="d10">2026-07-10_2026_bulk_report_week_28_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="Qingdao">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Qingdao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-af3302df81a550e3f59dc20a274a3f91</data>
+  <data key="d10">2024-03-22_2024_03_22_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-dea9a329c352e841371ef2c885745a84</data>
+  <data key="d10">2026-02-06_2026_02_06_bulk_report_week_6_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="Steel">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Steel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-d2cef0e7427734bb51fd9994120fddfb</data>
+  <data key="d10">2026-05-15_2026_bulk_report_week_20_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="BHP">
+  <data key="d6">1.0</data>
+  <data key="d7">BHP charters or operates Supramax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-0850476b9d89180a5c305666102766d9</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto charters or operates Supramax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-31f23a8bdab9866bc6f2a0ef7e287aa2</data>
+  <data key="d10">2024-05-17_2024_05_17_bulk_report_week_20_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="Dampier">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Dampier</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d10">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="Grain">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Supramax" target="Tubarao">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Tubarao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-419fd08ab76ef1412f8ef617abc33b26</data>
+  <data key="d10">2020-11-20_2020_11_20_bulk_report_week_47_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Supramax" target="BPI">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-81a3a80bdc0224a58320ff152c2a0c44</data>
+  <data key="d10">2016-10-28_2016_bulk_report_week43_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Supramax" target="FFA Forward Curves">
+  <data key="d6">1.0</data>
+  <data key="d7">FFA Forward Curves rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-06f8210645f95411e00e3829363b2d2c</data>
+  <data key="d10">2024-10-25_2024_10_25_bulk_report_week_43_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="Swissmarine">
+  <data key="d6">1.0</data>
+  <data key="d7">Swissmarine charters or operates Supramax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-7bb4bf7d567263414d70daacb19a29c6</data>
+  <data key="d10">2017-11-03_2017_bulk_report_week44_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Supramax" target="Genco">
+  <data key="d6">1.0</data>
+  <data key="d7">Genco charters or operates Supramax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-6cedd503177a9d8e2eb78aa7fb4c8bd2</data>
+  <data key="d10">2017-11-10_2017_bulk_report_week45_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Supramax" target="Ponta da Madeira">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Ponta da Madeira</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-c60d581020e5cf0c54aa4bcae690b27a</data>
+  <data key="d10">2018-03-16_2018_bulk_report_week11_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Supramax" target="Bauxite">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Bauxite freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-430f06ad0a885374033bee6bcde8d3d0</data>
+  <data key="d10">2018-08-03_2018_bulk_report_week31_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Supramax" target="Oldendorff">
+  <data key="d6">1.0</data>
+  <data key="d7">Oldendorff charters or operates Supramax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-bc7c5c08de32a156ef8286da6b18195e</data>
+  <data key="d10">2018-06-29_2018_bulk_report_week26_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Supramax" target="Soybeans">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax carries Soybeans freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-739f1e38ef4db0c01bf16d440b6f3c93</data>
+  <data key="d10">2018-12-14_2018_bulk_report_week50_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Supramax" target="Santos">
+  <data key="d6">1.0</data>
+  <data key="d7">Supramax calls or trades to Santos</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-a8b957a07e3fbe6277a9c3544f317cd3</data>
+  <data key="d10">2024-09-27_2024_09_27_bulk_report_week_39_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Supramax" target="C5TC">
+  <data key="d6">1.0</data>
+  <data key="d7">C5TC rate index benchmarks Supramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a6191bc81392de1e8ad4002640d6c980</data>
+  <data key="d10">2026-03-20_2026_03_20_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="China">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-2affec4abeb9565d2370994016fcea76</data>
+  <data key="d10">2026-06-05_2026_bulk_report_week_23_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="Atlantic">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-502a88483091347c890bc5c312d3b80b</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="Brazil">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-6484bc5b704417e6aef5e56caf544d06</data>
+  <data key="d10">2026-07-10_2026_bulk_report_week_28_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="Australia">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-b0ec11fa5ae08d045e0868316d88c219</data>
+  <data key="d10">2026-08-21_2026_08_21_bulk_report_week_34_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="US Gulf">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-502a88483091347c890bc5c312d3b80b</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="BSI">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-cd5ab03dc76ad124054571b1113b4664</data>
+  <data key="d10">2018-11-16_2018_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Handysize" target="BHSI">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-3d304bbeb0603ca76b39db434be654fc</data>
+  <data key="d10">2024-02-23_2024_02_23_bulk_report_week_8_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="Iron Ore">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Iron Ore freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-0850476b9d89180a5c305666102766d9</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="C3 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C3 Route rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a6191bc81392de1e8ad4002640d6c980</data>
+  <data key="d10">2026-03-20_2026_03_20_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a3f5d0b28a93d8449334c94dbd4b83d0</data>
+  <data key="d10">2026-03-13_2026_03_13_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="Scrap Metal">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Scrap Metal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-bcf206f6f09553c8cb5dff6b1ff598f6</data>
+  <data key="d10">2026-08-07_2026_bulk_report_week_32_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="Port Hedland">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Port Hedland</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d10">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="BDI">
+  <data key="d6">1.0</data>
+  <data key="d7">BDI rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-d28e095865e6f59b4232389ab42c8ccb</data>
+  <data key="d10">2018-03-01_2018_03_01_bulk_report_week5_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Handysize" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale charters or operates Handysize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-4ba28de25b1160d1a611a7ccae8c8731</data>
+  <data key="d10">2020-12-18_2020_12_18_bulk_report_week_51_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Handysize" target="West Africa">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to West Africa</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-fb68a2be8cbf05029b9a17e2f5829ec5</data>
+  <data key="d10">2026-01-23_2026_bulk_report_week_4_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="Qingdao">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Qingdao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-af3302df81a550e3f59dc20a274a3f91</data>
+  <data key="d10">2024-03-22_2024_03_22_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-dea9a329c352e841371ef2c885745a84</data>
+  <data key="d10">2026-02-06_2026_02_06_bulk_report_week_6_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="BHP">
+  <data key="d6">1.0</data>
+  <data key="d7">BHP charters or operates Handysize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-0850476b9d89180a5c305666102766d9</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto charters or operates Handysize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-31f23a8bdab9866bc6f2a0ef7e287aa2</data>
+  <data key="d10">2024-05-17_2024_05_17_bulk_report_week_20_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="Dampier">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Dampier</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d10">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="Grain">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-0a785d6ababb8f17baf19e29acfd152e</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="Tubarao">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Tubarao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-419fd08ab76ef1412f8ef617abc33b26</data>
+  <data key="d10">2020-11-20_2020_11_20_bulk_report_week_47_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Handysize" target="BPI">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-81a3a80bdc0224a58320ff152c2a0c44</data>
+  <data key="d10">2016-10-28_2016_bulk_report_week43_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Handysize" target="FFA Forward Curves">
+  <data key="d6">1.0</data>
+  <data key="d7">FFA Forward Curves rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-06f8210645f95411e00e3829363b2d2c</data>
+  <data key="d10">2024-10-25_2024_10_25_bulk_report_week_43_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="Swissmarine">
+  <data key="d6">1.0</data>
+  <data key="d7">Swissmarine charters or operates Handysize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-7bb4bf7d567263414d70daacb19a29c6</data>
+  <data key="d10">2017-11-03_2017_bulk_report_week44_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Handysize" target="Genco">
+  <data key="d6">1.0</data>
+  <data key="d7">Genco charters or operates Handysize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-6cedd503177a9d8e2eb78aa7fb4c8bd2</data>
+  <data key="d10">2017-11-10_2017_bulk_report_week45_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Handysize" target="Ponta da Madeira">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Ponta da Madeira</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-c60d581020e5cf0c54aa4bcae690b27a</data>
+  <data key="d10">2018-03-16_2018_bulk_report_week11_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Handysize" target="Steel">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Steel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-294157767caff6f422ff62c2740b5298</data>
+  <data key="d10">2026-08-14_2026_08_14_bulk_report_week_33_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="Bauxite">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize carries Bauxite freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-00b755c43c3e01017d9fb21b48d8b153</data>
+  <data key="d10">2026-07-31_2026_bulk_report_week_31_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Handysize" target="Oldendorff">
+  <data key="d6">1.0</data>
+  <data key="d7">Oldendorff charters or operates Handysize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-bc7c5c08de32a156ef8286da6b18195e</data>
+  <data key="d10">2018-06-29_2018_bulk_report_week26_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Handysize" target="Santos">
+  <data key="d6">1.0</data>
+  <data key="d7">Handysize calls or trades to Santos</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-7888da2ae04e8cf498743214e6098365</data>
+  <data key="d10">2023-09-29_2023_09_29_bulk_report_week_39_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Handysize" target="C5TC">
+  <data key="d6">1.0</data>
+  <data key="d7">C5TC rate index benchmarks Handysize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a6191bc81392de1e8ad4002640d6c980</data>
+  <data key="d10">2026-03-20_2026_03_20_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="BSI" target="Steel">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI index reflects trade flows of Steel</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-54ba9522f14a4c9ac0b73fd03397a933</data>
+  <data key="d10">2022-07-08_2022_07_08_bulk_report_week_27_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="BSI" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-66a14ce4881bc35f7bd046dfd4fcca5e</data>
+  <data key="d10">2016-12-30_2016_bulk_report_week52016_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="BSI" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-620d7a257863b98616bebffe814f64c2</data>
+  <data key="d10">2019-09-27_2019_bulk_report_week39_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="BSI" target="Soybeans">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI index reflects trade flows of Soybeans</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-739f1e38ef4db0c01bf16d440b6f3c93</data>
+  <data key="d10">2018-12-14_2018_bulk_report_week50_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="BSI" target="Grain">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI index reflects trade flows of Grain</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-65dfaf2fd6af9390970b5c55bfd52a4f</data>
+  <data key="d10">2020-09-04_2020_09_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="BSI" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">BSI rate index benchmarks Ultramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-54ba9522f14a4c9ac0b73fd03397a933</data>
+  <data key="d10">2022-07-08_2022_07_08_bulk_report_week_27_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="BHSI" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-deea857e87810c797365babb6a6658e3</data>
+  <data key="d10">2021-06-04_2021_06_04_bulk_report_week_22_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="BHSI" target="Panamax">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-bb08cdfa795a0fde485ff9280257f562</data>
+  <data key="d10">2018-01-12_2018_bulk_report_week2_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="BHSI" target="Steel">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI index reflects trade flows of Steel</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-065efd07569bd25609ce37a6fa0ff824</data>
+  <data key="d10">2024-01-05_2024_01_05_bulk_report_week_1_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="BHSI" target="Grain">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI index reflects trade flows of Grain</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-065efd07569bd25609ce37a6fa0ff824</data>
+  <data key="d10">2024-01-05_2024_01_05_bulk_report_week_1_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="BHSI" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI rate index benchmarks Ultramax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-8cfd1daf6315eeb087d359047b4390ca</data>
+  <data key="d10">2018-06-08_2018_bulk_report_week23_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="BHSI" target="Bauxite">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI index reflects trade flows of Bauxite</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-839f8281ac66fd25dac300f18928d0b1</data>
+  <data key="d10">2022-12-02_2022_12_02_bulk_report_week_48_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="BHSI" target="Scrap Metal">
+  <data key="d6">1.0</data>
+  <data key="d7">BHSI index reflects trade flows of Scrap Metal</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-4b7b182b0fd8d36ef832341576688127</data>
+  <data key="d10">2019-02-22_2019_bulk_report_week8_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Panamax" target="China">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Panamax" target="Brazil">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-d3beae2d1be553a167e62e292e680e48</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Panamax" target="Australia">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-a68dc41adf286779b7f78f3c1321e14b</data>
+  <data key="d10">2023-11-10_2023_11_10_gas_report_week_45_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Panamax" target="Grain">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-a68dc41adf286779b7f78f3c1321e14b</data>
+  <data key="d10">2023-11-10_2023_11_10_gas_report_week_45_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Panamax" target="Atlantic">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-3fd9c4a53c72a096810b121d4bcba8d0</data>
+  <data key="d10">2023-12-01_2023_12_01_gas_report_week_48_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Panamax" target="US Gulf">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Panamax" target="Bauxite">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Bauxite freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-ddcf637076b3734ad695199cf2fc119c</data>
+  <data key="d10">2021-08-13_2021_08_13_bulk_report_week_32_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Panamax" target="Santos">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Santos</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-9c1a90083511b021abe68170f21d1c5e</data>
+  <data key="d10">2023-10-27_2023_10_27_bulk_report_week_43_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="Iron Ore">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Iron Ore freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-0850476b9d89180a5c305666102766d9</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="C3 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C3 Route rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a6191bc81392de1e8ad4002640d6c980</data>
+  <data key="d10">2026-03-20_2026_03_20_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a3f5d0b28a93d8449334c94dbd4b83d0</data>
+  <data key="d10">2026-03-13_2026_03_13_bulk_report_week_11_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="Scrap Metal">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Scrap Metal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-9fbb0963e73b89537ef475a022f4c010</data>
+  <data key="d10">2015-09-04_2015_bulk_report_week36_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Panamax" target="BPI">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-3a5f872923d4a8f409ea12a7fd672d28</data>
+  <data key="d10">2026-02-06_2026_bulk_report_week_6_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="West Africa">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to West Africa</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-c43d6a82a6b96ab970db6369cc54474e</data>
+  <data key="d10">2025-11-14_2025_11_14_bulk_report_week_46_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="Steel">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries Steel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-e82cb99dbda9b6698f26c0bd6b97910d</data>
+  <data key="d10">2020-03-27_2020_03_27_bulk_report_week_13_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Panamax" target="BDI">
+  <data key="d6">1.0</data>
+  <data key="d7">BDI rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-d28e095865e6f59b4232389ab42c8ccb</data>
+  <data key="d10">2018-03-01_2018_03_01_bulk_report_week5_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Panamax" target="Port Hedland">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Port Hedland</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d10">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale charters or operates Panamax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-4ba28de25b1160d1a611a7ccae8c8731</data>
+  <data key="d10">2020-12-18_2020_12_18_bulk_report_week_51_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Panamax" target="Qingdao">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Qingdao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-af3302df81a550e3f59dc20a274a3f91</data>
+  <data key="d10">2024-03-22_2024_03_22_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-dea9a329c352e841371ef2c885745a84</data>
+  <data key="d10">2026-02-06_2026_02_06_bulk_report_week_6_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="BHP">
+  <data key="d6">1.0</data>
+  <data key="d7">BHP charters or operates Panamax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-0850476b9d89180a5c305666102766d9</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto charters or operates Panamax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-31f23a8bdab9866bc6f2a0ef7e287aa2</data>
+  <data key="d10">2024-05-17_2024_05_17_bulk_report_week_20_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="Dampier">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Dampier</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d10">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="Tubarao">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Tubarao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-419fd08ab76ef1412f8ef617abc33b26</data>
+  <data key="d10">2020-11-20_2020_11_20_bulk_report_week_47_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Panamax" target="Swissmarine">
+  <data key="d6">1.0</data>
+  <data key="d7">Swissmarine charters or operates Panamax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-7bb4bf7d567263414d70daacb19a29c6</data>
+  <data key="d10">2017-11-03_2017_bulk_report_week44_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Panamax" target="Genco">
+  <data key="d6">1.0</data>
+  <data key="d7">Genco charters or operates Panamax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-6cedd503177a9d8e2eb78aa7fb4c8bd2</data>
+  <data key="d10">2017-11-10_2017_bulk_report_week45_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Panamax" target="Ponta da Madeira">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to Ponta da Madeira</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-c60d581020e5cf0c54aa4bcae690b27a</data>
+  <data key="d10">2018-03-16_2018_bulk_report_week11_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Panamax" target="FFA Forward Curves">
+  <data key="d6">1.0</data>
+  <data key="d7">FFA Forward Curves rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a9332ccd5c37f16133b3093d85c2c201</data>
+  <data key="d10">2025-10-17_2025_10_17_bulk_report_week_42_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="Oldendorff">
+  <data key="d6">1.0</data>
+  <data key="d7">Oldendorff charters or operates Panamax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-bc7c5c08de32a156ef8286da6b18195e</data>
+  <data key="d10">2018-06-29_2018_bulk_report_week26_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Panamax" target="ECSA">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax calls or trades to ECSA</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-01c5c326ed5851314a32b985844fd82c</data>
+  <data key="d10">2025-07-11_2025_07_11_bulk_report_week_28_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="C5TC">
+  <data key="d6">1.0</data>
+  <data key="d7">C5TC rate index benchmarks Panamax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a6191bc81392de1e8ad4002640d6c980</data>
+  <data key="d10">2026-03-20_2026_03_20_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Panamax" target="LNG">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries LNG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-3fd9c4a53c72a096810b121d4bcba8d0</data>
+  <data key="d10">2023-12-01_2023_12_01_gas_report_week_48_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Panamax" target="LPG">
+  <data key="d6">1.0</data>
+  <data key="d7">Panamax carries LPG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-c326ce10ef6ee3fce3a9f33fcb24b506</data>
+  <data key="d10">2023-12-01_2023_12_01_gas_report_week_48_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Grain" target="BDI">
+  <data key="d6">1.0</data>
+  <data key="d7">BDI index reflects trade flows of Grain</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-5e7636d6586f5abe2bddce542138f87a</data>
+  <data key="d10">2015-02-06_2015_week_6_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Grain" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-456a62bb86b1451f59101506bbaa0dee</data>
+  <data key="d10">2026-08-14_2026_08_14_bulk_report_week_33_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Grain" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Grain" target="BPI">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI index reflects trade flows of Grain</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-0cc6000d7b75c41b13c14079ece2db7b</data>
+  <data key="d10">2025-11-28_2025_11_28_bulk_report_week_48_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Grain" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-a68dc41adf286779b7f78f3c1321e14b</data>
+  <data key="d10">2023-11-10_2023_11_10_gas_report_week_45_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Grain" target="FFA Forward Curves">
+  <data key="d6">1.0</data>
+  <data key="d7">FFA Forward Curves index reflects trade flows of Grain</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-a9332ccd5c37f16133b3093d85c2c201</data>
+  <data key="d10">2025-10-17_2025_10_17_bulk_report_week_42_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Grain" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route index reflects trade flows of Grain</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-01fd8233273ecb2da2dbfead10607db4</data>
+  <data key="d10">2026-01-09_2026_01_09_bulk_report_week_2_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Grain" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI index reflects trade flows of Grain</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-92780d5165e06cf588043e0b69d6c583</data>
+  <data key="d10">2024-11-08_2024_11_08_bulk_report_week_45_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Grain" target="VLGC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLGC carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-a68dc41adf286779b7f78f3c1321e14b</data>
+  <data key="d10">2023-11-10_2023_11_10_gas_report_week_45_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Grain" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-3083f3759b0764353969c08377a704f4</data>
+  <data key="d10">2025-02-07_2025_02_07_gas_report_week_6_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Grain" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier carries Grain freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-f556356af0f92a43c71be48efdddc8dd</data>
+  <data key="d10">2025-02-07_2025_02_07_gas_report_week_6_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="US Gulf" target="Capesize">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-f395df7b73b105985d8da192ffb8e7eb</data>
+  <data key="d10">2025-08-08_2025_08_08_gas_report_week_32_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="US Gulf" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-c65c3b11dd4062ac95267658eb2ae23e</data>
+  <data key="d10">2015-06-19_2015_week_25_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="US Gulf" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="US Gulf" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-d3beae2d1be553a167e62e292e680e48</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="US Gulf" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-bb7ae24b0143bb791e2973aaf19ffc2a</data>
+  <data key="d10">2026-04-24_2026_gas_report_week_17_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="US Gulf" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to US Gulf</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="Atlantic">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="Brazil">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-e58565e612bc6feae4de01d568e13a00</data>
+  <data key="d10">2024-03-22_2024_03_22_gas_report_week_12_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="China">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0f4e13638d861fbed8279328ecaac94f</data>
+  <data key="d10">2024-03-22_2024_03_22_gas_report_week_12_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="Australia">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-f395df7b73b105985d8da192ffb8e7eb</data>
+  <data key="d10">2025-08-08_2025_08_08_gas_report_week_32_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="Santos">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Santos</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-14a7a751cc1ae6ce73175e1b487a5143</data>
+  <data key="d10">2015-04-10_2015_week_15_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Capesize" target="Iron Ore">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Iron Ore freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-c0959c18bc5006df5939cfa8062133c1</data>
+  <data key="d10">2026-07-10_2026_bulk_report_week_28_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="C3 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C3 Route rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a847950203c8294fe39287f445aa3c24</data>
+  <data key="d10">2026-04-24_2026_bulk_report_week_17_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-8c9ce61636cbb89ed524a5f62198ae6a</data>
+  <data key="d10">2026-08-21_2026_08_21_bulk_report_week_34_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="Scrap Metal">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Scrap Metal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-9fbb0963e73b89537ef475a022f4c010</data>
+  <data key="d10">2015-09-04_2015_bulk_report_week36_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Capesize" target="BPI">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-817aec26af18a29af756417d5dc77553</data>
+  <data key="d10">2021-06-04_2021_06_04_bulk_report_week_22_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Capesize" target="West Africa">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to West Africa</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-cc202fb4dcdb571ac64e8507c4ca597e</data>
+  <data key="d10">2026-07-17_2026_bulk_report_week_29_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="BDI">
+  <data key="d6">1.0</data>
+  <data key="d7">BDI rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-d28e095865e6f59b4232389ab42c8ccb</data>
+  <data key="d10">2018-03-01_2018_03_01_bulk_report_week5_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Capesize" target="Port Hedland">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Port Hedland</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d10">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale charters or operates Capesize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-779447742cd90469d1fccc7d6913a8da</data>
+  <data key="d10">2020-12-18_2020_12_18_bulk_report_week_51_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Capesize" target="Steel">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Steel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-9e79890251070e58a8ce1de7eae63115</data>
+  <data key="d10">2024-06-21_2024_06_21_bulk_report_week_25_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-d0bc3afbe8182c3ab23e6ac51ba16413</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="Qingdao">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Qingdao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-74626663d94c894530ccf10d5731d707</data>
+  <data key="d10">2024-03-22_2024_03_22_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto charters or operates Capesize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-31f23a8bdab9866bc6f2a0ef7e287aa2</data>
+  <data key="d10">2024-05-17_2024_05_17_bulk_report_week_20_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="BHP">
+  <data key="d6">1.0</data>
+  <data key="d7">BHP charters or operates Capesize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-c75a4ad17dfd13c9e8baf513c2d7cdc0</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="Dampier">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Dampier</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5f8a303bac44d40ba070ea5f49a570fd</data>
+  <data key="d10">2025-02-14_2025_02_14_bulk_report_week_7_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="Tubarao">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Tubarao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-419fd08ab76ef1412f8ef617abc33b26</data>
+  <data key="d10">2020-11-20_2020_11_20_bulk_report_week_47_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Capesize" target="Swissmarine">
+  <data key="d6">1.0</data>
+  <data key="d7">Swissmarine charters or operates Capesize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-7bb4bf7d567263414d70daacb19a29c6</data>
+  <data key="d10">2017-11-03_2017_bulk_report_week44_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Capesize" target="Genco">
+  <data key="d6">1.0</data>
+  <data key="d7">Genco charters or operates Capesize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-c15d86693698858591374206374b270f</data>
+  <data key="d10">2017-11-10_2017_bulk_report_week45_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Capesize" target="FFA Forward Curves">
+  <data key="d6">1.0</data>
+  <data key="d7">FFA Forward Curves rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-06f8210645f95411e00e3829363b2d2c</data>
+  <data key="d10">2024-10-25_2024_10_25_bulk_report_week_43_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="Ponta da Madeira">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to Ponta da Madeira</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-c60d581020e5cf0c54aa4bcae690b27a</data>
+  <data key="d10">2018-03-16_2018_bulk_report_week11_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Capesize" target="Bauxite">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries Bauxite freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-1ca2e729fd6204c04a6e2e1ac2e92959</data>
+  <data key="d10">2020-01-31_2020_bulk_report_week5_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Capesize" target="Oldendorff">
+  <data key="d6">1.0</data>
+  <data key="d7">Oldendorff charters or operates Capesize tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-bc7c5c08de32a156ef8286da6b18195e</data>
+  <data key="d10">2018-06-29_2018_bulk_report_week26_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Capesize" target="ECSA">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize calls or trades to ECSA</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-d88f29b85179949b693a2d43a182029a</data>
+  <data key="d10">2019-12-06_2019_bulk_report_week49_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Capesize" target="C5TC">
+  <data key="d6">1.0</data>
+  <data key="d7">C5TC rate index benchmarks Capesize earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-3aa583a76bfe4ac41d8c9b435b768817</data>
+  <data key="d10">2026-03-20_2026_bulk_report_week_12_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Capesize" target="LPG">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries LPG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Capesize" target="LNG">
+  <data key="d6">1.0</data>
+  <data key="d7">Capesize carries LNG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-f395df7b73b105985d8da192ffb8e7eb</data>
+  <data key="d10">2025-08-08_2025_08_08_gas_report_week_32_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="China" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-a8830f400d0071cd952abfccaba2d7bb</data>
+  <data key="d10">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="China" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-4e8c192e4c8034ee86f9158a904c7082</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="China" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-d3beae2d1be553a167e62e292e680e48</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="China" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLOC calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="China" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-e6e724d026b527a11dcf1ae0e11db46f</data>
+  <data key="d10">2025-10-31_2025_10_31_gas_report_week_44_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="China" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to China</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-f88e69c0e84e0c52d89ff192d9f4ab20</data>
+  <data key="d10">2025-10-31_2025_10_31_gas_report_week_44_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Australia" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-a8830f400d0071cd952abfccaba2d7bb</data>
+  <data key="d10">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Australia" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-aad091bc2b3f1f16e15bb0272e460d48</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Australia" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-7419827caf476ad0b2c952bed630d9be</data>
+  <data key="d10">2026-06-12_2026_bulk_report_week_24_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Australia" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLOC calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Australia" target="VLGC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLGC calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-a68dc41adf286779b7f78f3c1321e14b</data>
+  <data key="d10">2023-11-10_2023_11_10_gas_report_week_45_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Australia" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-9b962c57283f007d6ddbc5a6e8ad523b</data>
+  <data key="d10">2026-03-27_2026_03_27_gas_report_week_13_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Australia" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to Australia</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Brazil" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-a8830f400d0071cd952abfccaba2d7bb</data>
+  <data key="d10">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Brazil" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-bbf315fb1b5a16f4b11774ae9354459c</data>
+  <data key="d10">2025-12-12_2025_12_12_bulk_report_week_50_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Brazil" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLOC calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Brazil" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-d3beae2d1be553a167e62e292e680e48</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Brazil" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-7cb56b2a6dc6bf814664a85f148c9344</data>
+  <data key="d10">2025-05-02_2025_05_02_gas_report_week_18_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Brazil" target="VLGC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLGC calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0b2ff96152609ae4a86a81ef9ecdb1c0</data>
+  <data key="d10">2025-03-21_2025_03_21_gas_report_week_12_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Brazil" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to Brazil</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-ca792f8a41b15addc7af3961179f5ad7</data>
+  <data key="d10">2025-05-02_2025_05_02_gas_report_week_18_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Atlantic" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-9a2653cfec28527507a63026aa80a08a</data>
+  <data key="d10">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Atlantic" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-edc539bd0a7e22b1dd53e9bec994fdcb</data>
+  <data key="d10">2026-08-28_2026_08_28_bulk_report_week_35_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Atlantic" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-aad091bc2b3f1f16e15bb0272e460d48</data>
+  <data key="d10">2026-10-04_2026_10_04_bulk_report_week_36_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Atlantic" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLOC calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Atlantic" target="VLGC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLGC calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-0b2ff96152609ae4a86a81ef9ecdb1c0</data>
+  <data key="d10">2025-03-21_2025_03_21_gas_report_week_12_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Atlantic" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Atlantic" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to Atlantic</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Bauxite" target="BPI">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI index reflects trade flows of Bauxite</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-5e7636d6586f5abe2bddce542138f87a</data>
+  <data key="d10">2015-02-06_2015_week_6_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Bauxite" target="BDI">
+  <data key="d6">1.0</data>
+  <data key="d7">BDI index reflects trade flows of Bauxite</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-5e7636d6586f5abe2bddce542138f87a</data>
+  <data key="d10">2015-02-06_2015_week_6_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Bauxite" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">Kamsarmax carries Bauxite freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-5aab34e54262cc92bb9a892e4a01d9c0</data>
+  <data key="d10">2017-06-02_2017_bulk_report_week22_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Bauxite" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale produces or commercializes Bauxite</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-cd4baeb51c8253ba84fd6cf75b0ab9a9</data>
+  <data key="d10">2018-05-18_2018_bulk_report_week20_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Bauxite" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI index reflects trade flows of Bauxite</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-1ca2e729fd6204c04a6e2e1ac2e92959</data>
+  <data key="d10">2020-01-31_2020_bulk_report_week5_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Santos" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to Santos</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-a8b957a07e3fbe6277a9c3544f317cd3</data>
+  <data key="d10">2024-09-27_2024_09_27_bulk_report_week_39_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Iron Ore" target="BHP">
+  <data key="d6">1.0</data>
+  <data key="d7">BHP produces or commercializes Iron Ore</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-c75a4ad17dfd13c9e8baf513c2d7cdc0</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Iron Ore" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto produces or commercializes Iron Ore</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-e8e28c5190467a3b7d96ae4ad0e6980c</data>
+  <data key="d10">2017-02-03_2017_bulk_report_week5_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Iron Ore" target="C5 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route index reflects trade flows of Iron Ore</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-750d86125d6409433450321ddc5ff113</data>
+  <data key="d10">2025-07-04_2025_07_04_bulk_report_week_27_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Iron Ore" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale produces or commercializes Iron Ore</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-f749e7f28cf3e7feb2755f8dea975da0</data>
+  <data key="d10">2018-10-19_2018_bulk_report_week42_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Iron Ore" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI index reflects trade flows of Iron Ore</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-c75a4ad17dfd13c9e8baf513c2d7cdc0</data>
+  <data key="d10">2025-10-03_2025_10_03_bulk_report_week_40_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="Iron Ore" target="C3 Route">
+  <data key="d6">1.0</data>
+  <data key="d7">C3 Route index reflects trade flows of Iron Ore</data>
+  <data key="d8">correlation, macro, freight</data>
+  <data key="d9">chunk-77661ab6ef19c8e0f13b21d993272765</data>
+  <data key="d10">2022-01-14_2022_01_14_bulk_report_week_2_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Iron Ore" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax carries Iron Ore freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-e306d192bd2f913d3f77730bde52e6ee</data>
+  <data key="d10">2024-06-28_2024_06_28_bulk_report_week_26_dry.json</data>
+  <data key="d11">1788760042</data>
+</edge>
+<edge source="C3 Route" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">C3 Route rate index benchmarks Newcastlemax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-7c2142a5e25495cb6d3510e8afdf2c37</data>
+  <data key="d10">2017-09-22_2017_bulk_report_week38_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="C5 Route" target="Newcastlemax">
+  <data key="d6">1.0</data>
+  <data key="d7">C5 Route rate index benchmarks Newcastlemax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-a8830f400d0071cd952abfccaba2d7bb</data>
+  <data key="d10">2019-11-15_2019_bulk_report_week46_dry.json</data>
+  <data key="d11">1788760041</data>
+</edge>
+<edge source="Newcastlemax" target="Qingdao">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Qingdao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-7c2142a5e25495cb6d3510e8afdf2c37</data>
+  <data key="d10">2017-09-22_2017_bulk_report_week38_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Newcastlemax" target="Port Hedland">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Port Hedland</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-c65c3b11dd4062ac95267658eb2ae23e</data>
+  <data key="d10">2015-06-19_2015_week_25_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Newcastlemax" target="BHP">
+  <data key="d6">1.0</data>
+  <data key="d7">BHP charters or operates Newcastlemax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-c65c3b11dd4062ac95267658eb2ae23e</data>
+  <data key="d10">2015-06-19_2015_week_25_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Newcastlemax" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto charters or operates Newcastlemax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-c65c3b11dd4062ac95267658eb2ae23e</data>
+  <data key="d10">2015-06-19_2015_week_25_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Newcastlemax" target="Tubarao">
+  <data key="d6">1.0</data>
+  <data key="d7">Newcastlemax calls or trades to Tubarao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-7c2142a5e25495cb6d3510e8afdf2c37</data>
+  <data key="d10">2017-09-22_2017_bulk_report_week38_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Newcastlemax" target="BCI">
+  <data key="d6">1.0</data>
+  <data key="d7">BCI rate index benchmarks Newcastlemax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-7c2142a5e25495cb6d3510e8afdf2c37</data>
+  <data key="d10">2017-09-22_2017_bulk_report_week38_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Newcastlemax" target="Vale">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale charters or operates Newcastlemax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-7c2142a5e25495cb6d3510e8afdf2c37</data>
+  <data key="d10">2017-09-22_2017_bulk_report_week38_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Newcastlemax" target="Swissmarine">
+  <data key="d6">1.0</data>
+  <data key="d7">Swissmarine charters or operates Newcastlemax tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-7bb4bf7d567263414d70daacb19a29c6</data>
+  <data key="d10">2017-11-03_2017_bulk_report_week44_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Scrap Metal" target="Ultramax">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax carries Scrap Metal freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-738b4b0986e131184de160339d58cc76</data>
+  <data key="d10">2026-06-19_2026_bulk_report_week_25_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="BPI" target="Kamsarmax">
+  <data key="d6">1.0</data>
+  <data key="d7">BPI rate index benchmarks Kamsarmax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-ca23372d0b35deaf10b98a2cbc8b696d</data>
+  <data key="d10">2017-04-28_2017_bulk_report_week17_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Ultramax" target="West Africa">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax calls or trades to West Africa</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-cbfe52c8923b20e1c8422ca636b6c453</data>
+  <data key="d10">2026-07-10_2026_bulk_report_week_28_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Ultramax" target="Steel">
+  <data key="d6">1.0</data>
+  <data key="d7">Ultramax carries Steel freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-d2cef0e7427734bb51fd9994120fddfb</data>
+  <data key="d10">2026-05-15_2026_bulk_report_week_20_dry.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="West Africa" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier calls or trades to West Africa</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-b566d4c4e542c4fd9342fc7b118b56f3</data>
+  <data key="d10">2024-04-19_2024_04_19_gas_report_week_16_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="West Africa" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier calls or trades to West Africa</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-80ac43c13e491eb5119336c17c9cf718</data>
+  <data key="d10">2024-11-29_2024_11_29_gas_report_week_48_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Vale" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">Vale charters or operates VLOC tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Qingdao" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLOC calls or trades to Qingdao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Steel" target="Rio Tinto">
+  <data key="d6">1.0</data>
+  <data key="d7">Rio Tinto produces or commercializes Steel</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-e40aa056cba58716e8f485fbde661b15</data>
+  <data key="d10">2016-07-08_2016_bulk_report_week27_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Kamsarmax" target="FFA Forward Curves">
+  <data key="d6">1.0</data>
+  <data key="d7">FFA Forward Curves rate index benchmarks Kamsarmax earnings</data>
+  <data key="d8">benchmarks, index, freight_rates</data>
+  <data key="d9">chunk-beb6d86011e0bfbba944c44e1c2f2ed6</data>
+  <data key="d10">2017-12-13_2018_bulk_report_week1_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Tubarao" target="VLOC">
+  <data key="d6">1.0</data>
+  <data key="d7">VLOC calls or trades to Tubarao</data>
+  <data key="d8">route, call, trade_lane</data>
+  <data key="d9">chunk-5212a4f060299bbf7574ffc121fe52ed</data>
+  <data key="d10">2017-10-13_2017_bulk_report_week41_dry.json</data>
+  <data key="d11">1788760040</data>
+</edge>
+<edge source="Saudi Aramco" target="LPG">
+  <data key="d6">1.0</data>
+  <data key="d7">Saudi Aramco produces or commercializes LPG</data>
+  <data key="d8">produces, exports, trading</data>
+  <data key="d9">chunk-a56d2b28812ba492e6305898134175f6</data>
+  <data key="d10">2024-04-19_2024_04_19_gas_report_week_16_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="Saudi Aramco" target="LPG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">Saudi Aramco charters or operates LPG Carrier tonnage</data>
+  <data key="d8">charterer, operator, fixture</data>
+  <data key="d9">chunk-a56d2b28812ba492e6305898134175f6</data>
+  <data key="d10">2024-04-19_2024_04_19_gas_report_week_16_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="VLGC" target="LNG">
+  <data key="d6">1.0</data>
+  <data key="d7">VLGC carries LNG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-a68dc41adf286779b7f78f3c1321e14b</data>
+  <data key="d10">2023-11-10_2023_11_10_gas_report_week_45_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="VLGC" target="LPG">
+  <data key="d6">1.0</data>
+  <data key="d7">VLGC carries LPG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-3305bf364d6db7d750c47f306b17aa03</data>
+  <data key="d10">2026-08-21_2026_08_21_gas_report_week_34_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="LPG Carrier" target="LNG">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier carries LNG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-9b962c57283f007d6ddbc5a6e8ad523b</data>
+  <data key="d10">2026-03-27_2026_03_27_gas_report_week_13_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="LPG Carrier" target="LPG">
+  <data key="d6">1.0</data>
+  <data key="d7">LPG Carrier carries LPG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-b3f80c24c4c94a3d6316fb9112021d3a</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="LPG" target="LNG Carrier">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier carries LPG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-9b962c57283f007d6ddbc5a6e8ad523b</data>
+  <data key="d10">2026-03-27_2026_03_27_gas_report_week_13_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+<edge source="LNG Carrier" target="LNG">
+  <data key="d6">1.0</data>
+  <data key="d7">LNG Carrier carries LNG freight</data>
+  <data key="d8">transports, shipping, cargo</data>
+  <data key="d9">chunk-db37539e4c1475143d7c9da0bf319348</data>
+  <data key="d10">2026-10-04_2026_10_04_gas_report_week_36_gas.json</data>
+  <data key="d11">1788760043</data>
+</edge>
+</graph></graphml>

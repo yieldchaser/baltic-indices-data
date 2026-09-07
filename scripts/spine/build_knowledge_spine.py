@@ -37,20 +37,19 @@ def init_db(conn: sqlite3.Connection):
     );
     """)
 
-    # 2. P0 Skipped Assets Queue Table
+    # 2. Ingested Assets Table (linking trees to physical mirror assets)
     cur.execute("""
-    CREATE TABLE IF NOT EXISTS fact_skipped_assets (
+    CREATE TABLE IF NOT EXISTS fact_ingested_assets (
         asset_id TEXT PRIMARY KEY,
-        parent_doc_id TEXT,
-        parent_date TEXT,
-        source TEXT,
-        category TEXT,
+        node_id TEXT,
+        doc_id TEXT,
         asset_url TEXT,
-        asset_type TEXT,
-        local_path TEXT,
+        asset_kind TEXT,
+        local_mirror_rel TEXT,
         is_resolved_local BOOLEAN,
-        status TEXT,
-        FOREIGN KEY(parent_doc_id) REFERENCES dim_tree_nodes(doc_id)
+        disposition TEXT,
+        FOREIGN KEY(node_id) REFERENCES dim_tree_nodes(node_id),
+        FOREIGN KEY(doc_id) REFERENCES dim_tree_nodes(doc_id)
     );
     """)
 
@@ -152,15 +151,21 @@ def load_tree_nodes(conn: sqlite3.Connection):
     for tf in tree_files:
         try:
             data = json.loads(tf.read_text(encoding="utf-8"))
-            records.append((
-                data.get("node_id"),
-                data.get("doc_id"),
-                data.get("parent_id"),
-                data.get("title"),
-                data.get("source_path"),
-                data.get("token_count"),
-                json.dumps(data.get("keywords", []))
-            ))
+            stack = [data]
+            while stack:
+                n = stack.pop()
+                nid = n.get("node_id")
+                if nid:
+                    records.append((
+                        nid,
+                        n.get("doc_id"),
+                        n.get("parent_id"),
+                        n.get("title"),
+                        str(n.get("source_path", "")).replace("\\", "/"),
+                        n.get("token_count"),
+                        json.dumps(n.get("keywords", []))
+                    ))
+                stack.extend(n.get("children") or [])
         except Exception:
             continue
 
@@ -170,38 +175,39 @@ def load_tree_nodes(conn: sqlite3.Connection):
     VALUES (?, ?, ?, ?, ?, ?, ?)
     """, records)
     conn.commit()
-    print(f"Loaded {len(records)} tree root nodes into dim_tree_nodes")
+    print(f"Loaded {len(records)} tree section nodes into dim_tree_nodes")
 
-def load_p0_assets(conn: sqlite3.Connection):
-    p = REPO_ROOT / "data" / "derived" / "p0_skipped_assets_queue.jsonl"
+def load_ingested_assets(conn: sqlite3.Connection):
+    p = REPO_ROOT / "data" / "derived" / "asset_dispositions.jsonl"
     if not p.exists():
         return
-    print(f"Loading P0 skipped assets queue from {p}...")
+    print(f"Loading ingested assets from {p}...")
     records = []
     with open(p, "r", encoding="utf-8") as f:
         for line in f:
+            if not line.strip():
+                continue
             d = json.loads(line)
+            mirror = str(d.get("local_mirror_rel") or d.get("mirror_rel") or "").replace("\\", "/")
             records.append((
-                d.get("asset_id"),
-                d.get("parent_doc_id"),
-                d.get("parent_date"),
-                d.get("source"),
-                d.get("category"),
+                d.get("asset_url") or f"{d.get('doc_id')}_{len(records)}",
+                d.get("node_id"),
+                d.get("doc_id"),
                 d.get("asset_url"),
-                d.get("asset_type"),
-                d.get("local_path"),
-                d.get("is_resolved_local"),
-                d.get("status")
+                d.get("asset_kind"),
+                mirror,
+                bool(mirror and (REPO_ROOT / mirror).exists()),
+                d.get("disposition")
             ))
 
     cur = conn.cursor()
     cur.executemany("""
-    INSERT OR REPLACE INTO fact_skipped_assets 
-    (asset_id, parent_doc_id, parent_date, source, category, asset_url, asset_type, local_path, is_resolved_local, status)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    INSERT OR REPLACE INTO fact_ingested_assets 
+    (asset_id, node_id, doc_id, asset_url, asset_kind, local_mirror_rel, is_resolved_local, disposition)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     """, records)
     conn.commit()
-    print(f"Loaded {len(records)} assets into fact_skipped_assets")
+    print(f"Loaded {len(records)} assets into fact_ingested_assets")
 
 def load_equities(conn: sqlite3.Connection):
     p = SOURCE_ROOT / "data" / "equities" / "maritime_universe_catalog.csv"
@@ -254,7 +260,8 @@ def load_sgx_sample(conn: sqlite3.Connection, limit: int = 50000):
 def create_indexes(conn: sqlite3.Connection):
     cur = conn.cursor()
     cur.execute("CREATE INDEX IF NOT EXISTS idx_tree_doc_id ON dim_tree_nodes(doc_id);")
-    cur.execute("CREATE INDEX IF NOT EXISTS idx_asset_parent ON fact_skipped_assets(parent_doc_id);")
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_asset_node ON fact_ingested_assets(node_id);")
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_asset_doc ON fact_ingested_assets(doc_id);")
     cur.execute("CREATE INDEX IF NOT EXISTS idx_fix_date ON fact_fixtures(fixture_date);")
     cur.execute("CREATE INDEX IF NOT EXISTS idx_fix_vessel ON fact_fixtures(vessel_name);")
     cur.execute("CREATE INDEX IF NOT EXISTS idx_fix_charterer ON fact_fixtures(charterer);")
@@ -265,22 +272,22 @@ def create_indexes(conn: sqlite3.Connection):
     print("Created high-speed query indexes.")
 
 def test_multihop_tree_join(conn: sqlite3.Connection):
-    print("\n--- Multi-Hop Join: Research Tree Node -> Chart Asset -> Market Fixture ---")
+    print("\n--- Multi-Hop Join: Research Tree Node -> Ingested Asset -> Market Fixture ---")
     query = """
     SELECT 
         t.doc_id,
         t.title,
-        a.asset_id,
-        a.local_path,
+        a.node_id,
+        a.local_mirror_rel,
         f.fixture_date,
         f.vessel_name,
         f.charterer,
         f.rate
     FROM dim_tree_nodes t
-    JOIN fact_skipped_assets a ON a.parent_doc_id = t.doc_id
-    JOIN fact_fixtures f ON f.fixture_date = a.parent_date
+    JOIN fact_ingested_assets a ON a.doc_id = t.doc_id
+    JOIN fact_fixtures f ON f.fixture_date = SUBSTR(t.doc_id, INSTR(t.doc_id, '2020-'), 10)
     WHERE a.is_resolved_local = 1
-      AND f.commodity LIKE '%Iron Ore%'
+      AND t.doc_id LIKE '%2020-06-04%'
     LIMIT 3;
     """
     cur = conn.cursor()
@@ -289,7 +296,7 @@ def test_multihop_tree_join(conn: sqlite3.Connection):
     print(f"Found {len(rows)} fully cross-linked multi-hop connections:")
     for r in rows:
         print("  -> Title:", r[1])
-        print("     Local Chart Path:", r[3])
+        print("     Local Chart Mirror:", r[3])
         print(f"     Connected Fixture: {r[4]} | {r[5]} ({r[6]}) at rate {r[7]}\n")
 
 def main():
@@ -297,7 +304,7 @@ def main():
     conn = sqlite3.connect(DB_PATH)
     init_db(conn)
     load_tree_nodes(conn)
-    load_p0_assets(conn)
+    load_ingested_assets(conn)
     load_equities(conn)
     load_port_stress(conn)
     load_fixtures_sample(conn, limit=100000)

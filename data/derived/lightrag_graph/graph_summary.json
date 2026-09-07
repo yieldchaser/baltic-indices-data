@@ -1,0 +1,75 @@
+{
+  "build_timestamp": "2026-09-07 05:47:24 UTC",
+  "source_tree_files_scanned": 1000,
+  "total_chunks_indexed": 4040,
+  "total_graph_nodes": 59,
+  "total_graph_edges": 325,
+  "top_connected_hubs": [
+    {
+      "entity": "Panamax",
+      "connections": 43
+    },
+    {
+      "entity": "Capesize",
+      "connections": 43
+    },
+    {
+      "entity": "Supramax",
+      "connections": 41
+    },
+    {
+      "entity": "Handysize",
+      "connections": 40
+    },
+    {
+      "entity": "Ultramax",
+      "connections": 20
+    },
+    {
+      "entity": "Newcastlemax",
+      "connections": 19
+    },
+    {
+      "entity": "Coal",
+      "connections": 18
+    },
+    {
+      "entity": "Grain",
+      "connections": 17
+    },
+    {
+      "entity": "Container Ship",
+      "connections": 16
+    },
+    {
+      "entity": "LPG Carrier",
+      "connections": 16
+    },
+    {
+      "entity": "LNG Carrier",
+      "connections": 14
+    },
+    {
+      "entity": "Atlantic",
+      "connections": 13
+    },
+    {
+      "entity": "Kamsarmax",
+      "connections": 13
+    },
+    {
+      "entity": "Bunker Fuel",
+      "connections": 12
+    },
+    {
+      "entity": "Australia",
+      "connections": 12
+    }
+  ],
+  "storage_artifacts": {
+    "graphml": "graph_chunk_entity_relation.graphml",
+    "vdb_entities": "vdb_entities.json",
+    "vdb_relationships": "vdb_relationships.json",
+    "vdb_chunks": "vdb_chunks.json"
+  }
+}
