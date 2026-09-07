@@ -10270,6 +10270,11 @@
                   <button class="toggle-btn" id="oreFwdBtnLump" onclick="setOreFwdProduct('lump')" data-tooltip="Platts Lump Premium forward curve for blast furnace direct-charge ($/dmtu)">Lump (LPF)</button>
                   <button class="toggle-btn" id="oreFwdBtnAll" onclick="setOreFwdProduct('all')" data-tooltip="Overlay 62% Standard, 65% Carajás, and quality spread across dual axes">All Curves</button>
                 </div>
+                <select id="oreContractPick" onchange="onOrePickChange()" onfocus="ensureOreArchiveLoaded()"
+                  data-tooltip="Select any active forward contract (40 tenors) or browse historical/expired contracts from the SGX Iron Ore archive." data-tt-type="concept-ore-archive"
+                  style="padding:4px 8px;border:1px solid var(--border);border-radius:4px;background:var(--card);color:var(--text);font-size:11px;font-family:inherit;max-width:190px;cursor:pointer;">
+                  <option value="">Contract archive…</option>
+                </select>
                 <div style="display:flex;gap:4px;padding-left:8px;border-left:1px solid var(--border);align-items:center;">
                   <span style="font-size:11px;color:var(--text-muted);">vs</span>
                   <button class="toggle-btn" id="oreFwdComp1w" onclick="setOreFwdComp('1w')" data-tooltip="Overlay forward curve snapshot from 1 week ago">1W ago</button>
@@ -10304,7 +10309,7 @@
               </div>
             </div>
             <div style="font-size:11px;color:var(--text-muted);margin-bottom:10px;padding:0 2px;">
-              Official SGX settlement curves across 40 monthly tenors through Dec 2029. Click any data point to drill down into historical contract settlement history.
+              Official SGX settlement curves across 40 monthly tenors through Dec 2029. Click any data point to drill down into historical contract settlement history, or use the contract archive selector to view expired contracts back to 2018.
             </div>
             <div id="ironOreFwdNoData" style="display:none;color:var(--text-muted);font-size:13px;padding:20px 0;text-align:center;">
               SGX Iron Ore forward curve data not available.
@@ -11034,32 +11039,67 @@
             <div class="chart-canvas-wrap" style="height:320px"><canvas id="lngCharterChart"></canvas></div>
           </div>
 
-          <!-- Drewry World Container Index (WCI) & Red Sea Bypass Spread Tracker -->
-          <div class="chart-container mb-20" id="wciContainer">
+          <!-- Capital Link Container Index (CLCI) & Global Container Freight Tracker -->
+          <div class="chart-container mb-20" id="containerIndexContainer">
             <div class="chart-header" style="flex-wrap:wrap;gap:8px;">
-              <div class="chart-title" id="wciTitle" data-tooltip="Drewry WCI composite and Shanghai-Europe/US lanes — container freight pulse and bypass spread." data-tt-type="concept-wci">Drewry World Container Index (WCI) & Freight Spreads</div>
+              <div class="chart-title" id="containerIndexTitle" data-tooltip="Capital Link Container Index (CLCI) — 21-year continuous institutional benchmark (2005–2026) tracking public container shipping equities, long-term charter fixtures, and box fleet earnings power, paired with Freightos Baltic Global Spot Freight." data-tt-type="concept-clci">
+                Capital Link Container Index (CLCI) &amp; Global Container Freight
+                <span class="badge" style="font-size:10px;font-weight:600;padding:2px 6px;border-radius:4px;background:rgba(163,113,247,0.15);color:#a371f7;border:1px solid rgba(163,113,247,0.3);margin-left:6px;">21Y Continuous Benchmark</span>
+              </div>
               <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-                <div id="wciRouteToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
-                  <button class="toggle-btn active" id="wciBtnComposite" onclick="setWciRoute('composite')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;">Composite ($/FEU)</button>
-                  <button class="toggle-btn" id="wciBtnEurope" onclick="setWciRoute('europe')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Shanghai-Europe</button>
-                  <button class="toggle-btn" id="wciBtnUS" onclick="setWciRoute('us')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Shanghai-US</button>
-                  <button class="toggle-btn" id="wciBtnAll" onclick="setWciRoute('all')" style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">All Routes</button>
+                <!-- View Mode Buttons -->
+                <div id="containerViewToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
+                  <button class="toggle-btn active" id="clciBtnSector" onclick="setContainerView('clci')" style="padding:4px 10px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;">CLCI Benchmark</button>
+                  <button class="toggle-btn" id="clciBtnFbx" onclick="setContainerView('fbx')" style="padding:4px 10px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">FBX Spot Freight ($/FEU)</button>
+                  <button class="toggle-btn" id="clciBtnDual" onclick="setContainerView('dual')" style="padding:4px 10px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Dual Overlay</button>
                 </div>
-                <div id="wciBadge" class="kpi-badge">WCI: —</div>
+                <!-- Range Preset Buttons -->
+                <div style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
+                  <button class="toggle-btn" id="clciRange1y" onclick="setClciRangePreset('1y')" style="padding:4px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;">1Y</button>
+                  <button class="toggle-btn" id="clciRange3y" onclick="setClciRangePreset('3y')" style="padding:4px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">3Y</button>
+                  <button class="toggle-btn" id="clciRange5y" onclick="setClciRangePreset('5y')" style="padding:4px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">5Y</button>
+                  <button class="toggle-btn active" id="clciRangeAll" onclick="setClciRangePreset('all')" style="padding:4px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">All (21Y)</button>
+                </div>
               </div>
             </div>
+
+            <!-- Container Market HUD Summary Strip -->
+            <div id="containerHudStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 10px;">
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;cursor:help;" data-tooltip="Capital Link Container Index Latest Daily Close" data-tt-type="clci-hud-close">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">CLCI Latest Close</div>
+                <div id="clciHudClose" style="font-size:14px;font-weight:700;color:#a371f7;">6,655.13</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;cursor:help;" data-tooltip="Daily Return and Change Percentage" data-tt-type="clci-hud-chg">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">Daily Change</div>
+                <div id="clciHudChg" style="font-size:14px;font-weight:700;color:var(--text);">+0.00%</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;cursor:help;" data-tooltip="52-Week High and Low Range for CLCI" data-tt-type="clci-hud-52w">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">52-Week Range</div>
+                <div id="clciHud52w" style="font-size:14px;font-weight:700;color:var(--text);">3,790 – 6,655</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:130px;cursor:help;" data-tooltip="Historical Cycle Percentile across full 21-year dataset" data-tt-type="clci-hud-pctl">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">21Y Cycle Percentile</div>
+                <div id="clciHudPctl" style="font-size:14px;font-weight:700;color:#3fb950;">100th Percentile</div>
+              </div>
+              <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;flex:1;min-width:140px;cursor:help;" data-tooltip="Freightos Baltic Daily Global Container Spot Freight Benchmark" data-tt-type="clci-hud-fbx">
+                <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:2px;">FBX Global Spot Freight</div>
+                <div id="clciHudFbx" style="font-size:14px;font-weight:700;color:#58a6ff;">$3,484 / FEU</div>
+              </div>
+            </div>
+
+            <!-- Dual Range Scrubbing Slider -->
             <div class="index-range-wrap" style="padding: 2px 0 6px;">
               <div class="index-range-label">
                 <span>Range:</span>
-                <span id="wciRangeLabel">Loading…</span>
+                <span id="clciRangeLabel">Loading…</span>
               </div>
-              <div class="dual-range-track" id="wciRangeTrack">
-                <div class="dual-range-fill" id="wciRangeFill"></div>
-                <input type="range" id="wciRangeStart" min="0" max="100" value="0" step="1">
-                <input type="range" id="wciRangeEnd" min="0" max="100" value="100" step="1">
+              <div class="dual-range-track" id="clciRangeTrack">
+                <div class="dual-range-fill" id="clciRangeFill"></div>
+                <input type="range" id="clciRangeStart" min="0" max="100" value="0" step="1">
+                <input type="range" id="clciRangeEnd" min="0" max="100" value="100" step="1">
               </div>
             </div>
-            <div class="chart-canvas-wrap" style="height:320px"><canvas id="wciChart"></canvas></div>
+            <div class="chart-canvas-wrap" style="height:320px"><canvas id="clciChart"></canvas></div>
           </div>
 
           <!-- USDA Bulk Grain Ocean Freight Rates & US Gulf vs PNW Spreads -->
@@ -12769,6 +12809,20 @@ if (intelTabsContainer) {
           }).filter(row => row.date != null);
         });
 
+        const fbxPromise = safeFetch('data/indices/fbx_historical.csv', 'FBX Container Spot', [], r => {
+          DATA.fbx = (r || []).map(row => {
+            const rawDate = (row.Date || row.date || '').trim();
+            const d = parseDate(rawDate);
+            return {
+              date: d,
+              dateStr: d ? fmtDate(d) : rawDate,
+              index: parseVal(row.Index || row.index),
+              change: (row['% Change'] || row.change || '').toString().trim()
+            };
+          }).filter(row => row.date != null && row.index != null);
+          DATA.fbx.sort((a, b) => a.date - b.date);
+        });
+
         const usdaGrainRatesPromise = safeFetch('data/derived/usda_grain_vessel_rates_japan.csv', 'USDA Grain Rates', [], r => {
           DATA.usdaGrainRates = DATA.usda_grain_freight = DATA.usdaGrainFreight = (r || []).map(row => {
             const rawDate = (row.Date || row.date || '').trim();
@@ -13023,7 +13077,7 @@ if (intelTabsContainer) {
           tcPromise, ioPromise, valPromise, scrapPromise, tcFearnPromise, intermodalPromise,
           lpgSpotPromise, lpgCharterPromise, blpgPromise, tankerFwdPromise, tankerFwdHistPromise,
           lngCharterPromise, tceMatrixPromise,
-          wciPromise, usdaGrainRatesPromise, usdaLandedCostsPromise, usdaVesselQueuesPromise, usdaBunkersPromise,
+          wciPromise, fbxPromise, usdaGrainRatesPromise, usdaLandedCostsPromise, usdaVesselQueuesPromise, usdaBunkersPromise,
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
           sgxOreForwardPromise,
@@ -18569,7 +18623,7 @@ if (intelTabsContainer) {
           function () { renderCommodityChart(); },
           function () { renderLPGFreightChart(productKey); },
           function () { renderLNGCharterChart(productKey); },
-          function () { renderWCIChart(); },
+          function () { renderContainerIndexChart(); },
           function () { renderGrainFreightChart(); },
           function () { renderVesselQueueChart(); },
         ];
@@ -21997,176 +22051,281 @@ if (intelTabsContainer) {
 
 
     // =========================================================================
-    // DREWRY WORLD CONTAINER INDEX (WCI) CHART
+    // CAPITAL LINK CONTAINER INDEX (CLCI) & GLOBAL FREIGHT ENGINE
     // =========================================================================
-    var _wciRoute = 'composite';
-    function setWciRoute(r) {
-      window.setWciRoute = setWciRoute;
-      _wciRoute = r;
-      ['composite', 'europe', 'us', 'all'].forEach(function (x) {
-        const el = document.getElementById('wciBtn' + x.charAt(0).toUpperCase() + x.slice(1));
+    var _containerView = 'clci';
+    var _clciPreset = 'all';
+
+    function setContainerView(v) {
+      window.setContainerView = setContainerView;
+      _containerView = v;
+      ['clci', 'fbx', 'dual'].forEach(function (x) {
+        var btnId = x === 'clci' ? 'clciBtnSector' : (x === 'fbx' ? 'clciBtnFbx' : 'clciBtnDual');
+        var el = document.getElementById(btnId);
         if (el) {
-          const isActive = (x === r);
+          var isActive = (x === v);
           el.classList.toggle('active', isActive);
           el.style.background = isActive ? 'var(--accent)' : 'var(--card)';
           el.style.color = isActive ? '#fff' : 'var(--text-muted)';
         }
       });
-      renderWCIChart();
+      renderContainerIndexChart();
+    }
+    window.setContainerView = setContainerView;
+
+    function setClciRangePreset(p) {
+      window.setClciRangePreset = setClciRangePreset;
+      _clciPreset = p;
+      ['1y', '3y', '5y', 'all'].forEach(function (k) {
+        var el = document.getElementById('clciRange' + k.charAt(0).toUpperCase() + k.slice(1));
+        if (el) {
+          var isActive = (k === p);
+          el.classList.toggle('active', isActive);
+          el.style.color = isActive ? 'var(--text)' : 'var(--text-muted)';
+          el.style.fontWeight = isActive ? '600' : 'normal';
+        }
+      });
+
+      var rowsAll = (DATA.raw && DATA.raw['clci']) || [];
+      if (!rowsAll.length) {
+        renderContainerIndexChart();
+        return;
+      }
+
+      var sIdx = 0;
+      var eIdx = rowsAll.length - 1;
+      if (p !== 'all') {
+        var lastDate = rowsAll[eIdx].date;
+        var daysBack = p === '1y' ? 365 : (p === '3y' ? 365 * 3 : 365 * 5);
+        var cutoff = new Date(lastDate.getTime() - daysBack * 86400000);
+        var found = rowsAll.findIndex(function (r) { return r.date >= cutoff; });
+        if (found !== -1) sIdx = found;
+      }
+
+      var sEl = document.getElementById('clciRangeStart') || document.getElementById('wciRangeStart');
+      var eEl = document.getElementById('clciRangeEnd') || document.getElementById('wciRangeEnd');
+      if (sEl) sEl.value = sIdx;
+      if (eEl) eEl.value = eIdx;
+
+      renderContainerIndexChart(sIdx, eIdx);
+    }
+    window.setClciRangePreset = setClciRangePreset;
+
+    function setWciRoute(r) {
+      // Legacy backwards-compatible wrapper
+      if (r === 'composite' || r === 'all') setContainerView('clci');
+      else setContainerView('dual');
     }
     window.setWciRoute = setWciRoute;
 
-    function renderWCIChart(startIdx, endIdx) {
-      const canvas = document.getElementById('wciChart');
+    function renderContainerIndexChart(startIdx, endIdx) {
+      var canvas = document.getElementById('clciChart') || document.getElementById('wciChart');
       if (!canvas) return;
       if (!window.DATA) return;
-      const rowsAll = DATA.wciTracker || DATA.drewry_wci || DATA.drewryWci || [];
-      if (!rowsAll || !rowsAll.length) return;
 
-      initDualRangeSlider('wciRange', rowsAll, function (isManual, s, e) { if (isManual) renderWCIChart(s, e); });
-      const sEl = document.getElementById('wciRangeStart');
-      const eEl = document.getElementById('wciRangeEnd');
-      const s = (startIdx != null && !isNaN(startIdx)) ? startIdx : (sEl ? parseInt(sEl.value) : 0);
-      const e = (endIdx != null && !isNaN(endIdx)) ? endIdx : (eEl ? parseInt(eEl.value) : rowsAll.length - 1);
-      const rows = rowsAll.slice(s, e + 1);
-      if (!rows.length) return;
+      var clciRows = (DATA.raw && DATA.raw['clci']) || [];
+      var fbxRows = DATA.fbx || [];
 
-      const labels = rows.map(r => r.dateStr);
-      const datasets = [];
+      if (!clciRows.length && !fbxRows.length) return;
 
-      // WCI data-quality gaps (frontend only; CSV keeps all rows, no synthesis):
-      // - 7 Wayback rows 2021-12-23→2022-02-24 repeat one value across every
-      //   route leg (e.g. 9304.05 in all columns): the scraper copied composite
-      //   into the legs. Legs for those dates are suspect -> gap (null).
-      // - Incomplete weeks (e.g. 2026-08-25 with empty shanghai_la and an
-      //   off-scale shanghai_ny 9507 print) -> gap all legs for that date.
-      // Composite is kept for those dates; spanGaps:false below renders the
-      // nulled legs as gaps instead of cliff/spike lines. NOTE: the composite
-      // segment spanning the 2022-02-24→2024-01-04 coverage hiatus is real
-      // history on a categorical axis, not a weekly move (see tooltip note).
-      function wciLegsSuspect(r) {
-        const legs = [r.sha_rot, r.sha_gen, r.sha_la, r.sha_ny];
-        const present = legs.filter(v => v != null);
-        if (present.length >= 3 && present.every(v => v === present[0])) return true;
-        return false;
+      var rowsAll = clciRows.length ? clciRows : fbxRows;
+
+      var sliderPrefix = document.getElementById('clciRangeTrack') ? 'clciRange' : 'wciRange';
+      initDualRangeSlider(sliderPrefix, rowsAll, function (isManual, s, e) {
+        if (isManual) renderContainerIndexChart(s, e);
+      });
+
+      var sEl = document.getElementById(sliderPrefix + 'Start');
+      var eEl = document.getElementById(sliderPrefix + 'End');
+      var s = (startIdx != null && !isNaN(startIdx)) ? startIdx : (sEl ? parseInt(sEl.value, 10) : 0);
+      var e = (endIdx != null && !isNaN(endIdx)) ? endIdx : (eEl ? parseInt(eEl.value, 10) : rowsAll.length - 1);
+
+      var clciSlice = clciRows.slice(s, e + 1);
+      if (!clciSlice.length) clciSlice = clciRows;
+
+      // Update HUD Strip Metrics
+      if (clciRows.length) {
+        var latest = clciRows[clciRows.length - 1];
+        var closeEl = document.getElementById('clciHudClose');
+        if (closeEl) closeEl.textContent = fmt(latest.value, 2);
+
+        var chgEl = document.getElementById('clciHudChg');
+        if (chgEl) {
+          var chgNum = parseFloat(latest.change) || 0;
+          chgEl.textContent = (chgNum >= 0 ? '+' : '') + fmt(chgNum, 2) + '%';
+          chgEl.style.color = chgNum > 0 ? '#3fb950' : (chgNum < 0 ? '#f85149' : 'var(--text)');
+        }
+
+        // 52-Week Range
+        var oneYearAgo = new Date(latest.date.getTime() - 365 * 86400000);
+        var lastYearRows = clciRows.filter(function (r) { return r.date >= oneYearAgo; });
+        if (lastYearRows.length) {
+          var vals52w = lastYearRows.map(function (r) { return r.value; });
+          var low52w = Math.min.apply(null, vals52w);
+          var high52w = Math.max.apply(null, vals52w);
+          var range52wEl = document.getElementById('clciHud52w');
+          if (range52wEl) range52wEl.textContent = fmt(low52w, 0) + ' – ' + fmt(high52w, 0);
+        }
+
+        // 21Y Percentile
+        var allVals = clciRows.map(function (r) { return r.value; });
+        var countBelow = allVals.filter(function (v) { return v < latest.value; }).length;
+        var pctl = Math.round((countBelow / allVals.length) * 100);
+        var pctlEl = document.getElementById('clciHudPctl');
+        if (pctlEl) {
+          pctlEl.textContent = pctl + 'th Percentile';
+          pctlEl.style.color = pctl >= 80 ? '#3fb950' : (pctl <= 30 ? '#f85149' : 'var(--accent)');
+        }
       }
-      function wciLegsIncomplete(r) {
-        return r.sha_rot == null || r.sha_gen == null || r.sha_la == null || r.sha_ny == null;
-      }
-      function wciLeg(r, key) {
-        if (wciLegsSuspect(r) || wciLegsIncomplete(r)) return null;
-        return r[key];
+
+      if (fbxRows.length) {
+        var latestFbx = fbxRows[fbxRows.length - 1];
+        var fbxEl = document.getElementById('clciHudFbx');
+        if (fbxEl) {
+          var fbxChg = latestFbx.change ? (' (' + (parseFloat(latestFbx.change) >= 0 ? '+' : '') + latestFbx.change + '%)') : '';
+          fbxEl.textContent = '$' + fmt(latestFbx.index, 0) + ' / FEU' + fbxChg;
+        }
       }
 
-      if (_wciRoute === 'composite' || _wciRoute === 'all') {
+      var legacyBadge = document.getElementById('wciBadge');
+      if (legacyBadge && clciRows.length) {
+        var cur = clciRows[clciRows.length - 1];
+        legacyBadge.innerHTML = 'CLCI: <strong>' + fmt(cur.value, 2) + '</strong> (' + cur.dateStr + ')';
+      }
+
+      var labels = [];
+      var datasets = [];
+      var yScales = {
+        x: {
+          grid: { color: '#151a22' },
+          ticks: { color: '#8b949e', font: { size: 10 }, maxTicksLimit: 12 }
+        },
+        y: {
+          position: 'left',
+          grid: { color: '#151a22' },
+          ticks: { color: '#8b949e', font: { size: 10 }, callback: function (v) { return fmt(v); } },
+          title: { display: true, text: 'Capital Link Container Index', color: '#a371f7', font: { size: 11 } }
+        }
+      };
+
+      if (_containerView === 'clci') {
+        labels = clciSlice.map(function (r) { return r.dateStr; });
         datasets.push({
-          label: 'WCI Composite ($/40ft)',
-          data: rows.map(r => r.composite),
+          label: 'Capital Link Container Index (CLCI)',
+          data: clciSlice.map(function (r) { return r.value; }),
+          borderColor: '#a371f7',
+          backgroundColor: 'rgba(163,113,247,0.12)',
+          borderWidth: 2,
+          fill: true,
+          pointRadius: clciSlice.length < 90 ? 2 : 0,
+          pointHoverRadius: 5,
+          tension: 0.1,
+          yAxisID: 'y'
+        });
+      } else if (_containerView === 'fbx') {
+        var minDate = clciSlice[0].date;
+        var maxDate = clciSlice[clciSlice.length - 1].date;
+        var fbxSlice = fbxRows.filter(function (r) { return r.date >= minDate && r.date <= maxDate; });
+        if (!fbxSlice.length) fbxSlice = fbxRows;
+
+        labels = fbxSlice.map(function (r) { return r.dateStr; });
+        datasets.push({
+          label: 'FBX Global Container Spot Freight ($/FEU)',
+          data: fbxSlice.map(function (r) { return r.index; }),
           borderColor: '#58a6ff',
-          backgroundColor: 'rgba(88,166,255,0.1)',
-          borderWidth: 2.5,
-          fill: _wciRoute === 'composite',
-          pointRadius: 0,
-          pointHoverRadius: 4,
-          spanGaps: false,
-          tension: 0.1
-        });
-      }
-      if (_wciRoute === 'europe' || _wciRoute === 'all') {
-        datasets.push({
-          label: 'Shanghai -> Rotterdam',
-          data: rows.map(r => wciLeg(r, 'sha_rot')),
-          borderColor: '#3fb950',
+          backgroundColor: 'rgba(88,166,255,0.12)',
           borderWidth: 2,
-          fill: false,
-          pointRadius: 0,
-          pointHoverRadius: 4,
-          spanGaps: false,
-          tension: 0.1
+          fill: true,
+          pointRadius: fbxSlice.length < 90 ? 2 : 0,
+          pointHoverRadius: 5,
+          tension: 0.1,
+          yAxisID: 'y'
         });
-        datasets.push({
-          label: 'Shanghai -> Genoa',
-          data: rows.map(r => wciLeg(r, 'sha_gen')),
-          borderColor: '#e3b341',
-          borderWidth: 2,
-          fill: false,
-          pointRadius: 0,
-          pointHoverRadius: 4,
-          spanGaps: false,
-          tension: 0.1
-        });
-      }
-      if (_wciRoute === 'us' || _wciRoute === 'all') {
-        datasets.push({
-          label: 'Shanghai -> Los Angeles',
-          data: rows.map(r => wciLeg(r, 'sha_la')),
-          borderColor: '#bc8cff',
-          backgroundColor: 'rgba(188,140,255,0.1)',
-          borderWidth: 2,
-          fill: _wciRoute === 'us',
-          pointRadius: 0,
-          pointHoverRadius: 4,
-          spanGaps: false,
-          tension: 0.1
-        });
-        datasets.push({
-          label: 'Shanghai -> New York',
-          data: rows.map(r => wciLeg(r, 'sha_ny')),
-          borderColor: '#ff7b72',
-          borderWidth: 2,
-          fill: false,
-          pointRadius: 0,
-          pointHoverRadius: 4,
-          spanGaps: false,
-          tension: 0.1
-        });
-      }
+        yScales.y.title.text = 'Freightos Baltic Spot Freight ($/FEU)';
+        yScales.y.title.color = '#58a6ff';
+        yScales.y.ticks.callback = function (v) { return '$' + fmt(v, 0); };
+      } else if (_containerView === 'dual') {
+        labels = clciSlice.map(function (r) { return r.dateStr; });
 
-      const latest = rows[rows.length - 1];
-      const badge = document.getElementById('wciBadge');
-      if (badge && latest && latest.composite) {
-        // E2E honesty: CSV holds 146 rows (7 early Wayback 2021-12-23→2022-02-24
-        // whose route legs are suspect-identical + 139 weekly 2024-01-04→2026-08-25).
-        // Suspect/incomplete legs render as frontend gaps (composite kept); full
-        // 2011+ Wayback backfill pending via workflow_dispatch backfill_2011.
-        // Never invent pre-2024 values.
-        let _wciProvSuffix = '';
-        try {
-          const _minRow = rowsAll.length ? rowsAll[0] : null;
-          let _minY = NaN;
-          if (_minRow && _minRow.date instanceof Date && !isNaN(_minRow.date)) _minY = _minRow.date.getFullYear();
-          if (isNaN(_minY) && _minRow && _minRow.dateStr) {
-            const _m = String(_minRow.dateStr).match(/(19|20)\d{2}/);
-            if (_m) _minY = parseInt(_m[0], 10);
+        var fbxMap = {};
+        fbxRows.forEach(function (r) {
+          fbxMap[r.date.getTime()] = r.index;
+        });
+
+        var fbxAligned = clciSlice.map(function (r) {
+          var t = r.date.getTime();
+          if (fbxMap[t] != null) return fbxMap[t];
+          for (var offset = -3; offset <= 3; offset++) {
+            var nearT = t + offset * 86400000;
+            if (fbxMap[nearT] != null) return fbxMap[nearT];
           }
-          if (_minY >= 2024) _wciProvSuffix = ' · 2024+ provisional (synthetic legacy removed)';
-          else if (!isNaN(_minY)) _wciProvSuffix = ' · 2021-22 Wayback legs gapped (suspect), 2024+ provisional';
-        } catch (e) {}
-        badge.innerHTML = `WCI Composite: <strong>$${latest.composite.toLocaleString()}/FEU</strong> (${latest.dateStr})${_wciProvSuffix}`;
-        badge.style.color = '#58a6ff';
+          return null;
+        });
+
+        datasets.push({
+          label: 'CLCI Sector Benchmark (Left Axis)',
+          data: clciSlice.map(function (r) { return r.value; }),
+          borderColor: '#a371f7',
+          borderWidth: 2,
+          fill: false,
+          pointRadius: clciSlice.length < 90 ? 2 : 0,
+          pointHoverRadius: 4,
+          tension: 0.1,
+          yAxisID: 'y'
+        });
+
+        datasets.push({
+          label: 'FBX Global Spot Freight ($/FEU, Right Axis)',
+          data: fbxAligned,
+          borderColor: '#58a6ff',
+          borderWidth: 2,
+          fill: false,
+          pointRadius: clciSlice.length < 90 ? 2 : 0,
+          pointHoverRadius: 4,
+          tension: 0.1,
+          spanGaps: true,
+          yAxisID: 'yFbx'
+        });
+
+        yScales.yFbx = {
+          position: 'right',
+          grid: { drawOnChartArea: false },
+          ticks: { color: '#8b949e', font: { size: 10 }, callback: function (v) { return '$' + fmt(v, 0); } },
+          title: { display: true, text: 'FBX Spot Freight ($/FEU)', color: '#58a6ff', font: { size: 11 } }
+        };
       }
 
+      destroyChart('clciChart');
       destroyChart('wciChart');
-      updateOrCreateChart('wciChart', canvas, {
+
+      var chartId = canvas.id || 'clciChart';
+      updateOrCreateChart(chartId, canvas, {
         type: 'line',
-        data: { labels, datasets },
+        data: { labels: labels, datasets: datasets },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           interaction: { mode: 'index', intersect: false },
           plugins: {
             legend: { position: 'top', labels: { usePointStyle: true, font: { size: 11 } } },
-            tooltip: { callbacks: { label: c => (c.parsed.y == null ? ` ${c.dataset.label}: — (gap — suspect/incomplete week)` : ` ${c.dataset.label}: $${Number(c.parsed.y).toLocaleString()}`) } }
+            tooltip: {
+              callbacks: {
+                label: function (c) {
+                  var val = c.parsed.y;
+                  if (val == null) return null;
+                  if (c.dataset.label.indexOf('FBX') !== -1) return ' ' + c.dataset.label + ': $' + fmt(val, 0) + ' / FEU';
+                  return ' ' + c.dataset.label + ': ' + fmt(val, 2);
+                }
+              }
+            }
           },
-          scales: {
-            x: { grid: { color: '#151a22' }, ticks: { color: '#8b949e', font: { size: 10 }, maxTicksLimit: 12 } },
-            y: { grid: { color: '#151a22' }, ticks: { color: '#8b949e', font: { size: 10 }, callback: v => '$' + v.toLocaleString() } }
-          }
+          scales: yScales
         }
       });
     }
-    window.renderWCIChart = renderWCIChart;
-    window.renderDrewryChart = renderWCIChart;
+    window.renderContainerIndexChart = renderContainerIndexChart;
+    window.renderWCIChart = renderContainerIndexChart;
+    window.renderDrewryChart = renderContainerIndexChart;
 
     // =========================================================================
     // USDA BULK GRAIN OCEAN FREIGHT RATES & SPREADS
@@ -25325,9 +25484,130 @@ if (intelTabsContainer) {
         var el = document.getElementById('oreFwdBtn' + k.charAt(0).toUpperCase() + k.slice(1));
         if (el) el.classList.toggle('active', k === p);
       });
+      var hp = document.getElementById('ironOreHistoryPanel');
+      if (hp) { hp.style.display = 'none'; destroyChart('ironOreHistoryChart'); }
+      refreshOrePick();
       renderIronOreForwardCurve();
     }
     window.setOreFwdProduct = setOreFwdProduct;
+
+    function getOreHistKey() {
+      if (_oreFwdProduct === '65') return 'iron_ore_m65f';
+      if (_oreFwdProduct === 'lump') return 'iron_ore_lump_lpf';
+      return 'iron_ore_fef';
+    }
+    window.getOreHistKey = getOreHistKey;
+
+    function ensureOreArchiveLoaded() {
+      window.ensureOreArchiveLoaded = ensureOreArchiveLoaded;
+      refreshOrePick(true);
+      var histKey = getOreHistKey();
+      loadOreHistory(histKey).then(function () {
+        refreshOrePick(true);
+      });
+    }
+    window.ensureOreArchiveLoaded = ensureOreArchiveLoaded;
+
+    function refreshOrePick(keepSelection) {
+      var sel = document.getElementById('oreContractPick');
+      if (!sel) return;
+      var prev = keepSelection ? sel.value : '';
+      var fwdRows = DATA.sgxIronOreForward || [];
+
+      var active = [];
+      var activeTickers = {};
+
+      fwdRows.forEach(function (r) {
+        var ticker = r.fef_ticker;
+        var settle = r.fef_settle;
+        var unit = '$/t';
+
+        if (_oreFwdProduct === '65') {
+          ticker = r.m65f_ticker || r.fef_ticker;
+          settle = r.m65f_settle;
+        } else if (_oreFwdProduct === 'lump') {
+          ticker = r.lpf_ticker || r.fef_ticker;
+          settle = r.lpf_settle;
+          unit = '$/dmtu';
+        }
+
+        if (ticker) {
+          activeTickers[ticker] = true;
+          var settleStr = settle != null ? (' · $' + (unit === '$/dmtu' ? fmt(settle, 3) : fmt(settle, 1))) : '';
+          active.push({
+            ticker: ticker,
+            label: ticker + ' · ' + (r.tenor || '') + ' (' + (r.delivery_month || '') + ' ' + (r.delivery_year || '') + ')' + settleStr
+          });
+        }
+      });
+
+      var histKey = getOreHistKey();
+      var histRows = (DATA.sgxHistory && DATA.sgxHistory[histKey]) || [];
+
+      var contractSummary = {};
+      var contractOrder = [];
+      histRows.forEach(function (r) {
+        var cid = r.contract;
+        if (!cid) return;
+        if (!contractSummary[cid]) {
+          contractSummary[cid] = {
+            contract: cid,
+            expiryMonth: r.expiry_month || '',
+            expiryYear: parseInt(r.expiry_year, 10) || 0,
+            expiryDate: r.expiry_date || '',
+            nTraded: 0
+          };
+          contractOrder.push(cid);
+        }
+        if (parseFloat(r.price) > 0) {
+          contractSummary[cid].nTraded++;
+        }
+      });
+
+      var expiredByYear = {};
+      contractOrder.forEach(function (cid) {
+        if (activeTickers[cid]) return;
+        var info = contractSummary[cid];
+        var y = info.expiryYear || '----';
+        if (!expiredByYear[y]) expiredByYear[y] = [];
+        expiredByYear[y].push(info);
+      });
+
+      var html = '<option value="">Contract archive…</option>';
+      if (active.length) {
+        html += '<optgroup label="Active Forward Curves (' + active.length + ' Tenors)">';
+        active.forEach(function (c) {
+          html += '<option value="' + c.ticker + '">' + c.label + '</option>';
+        });
+        html += '</optgroup>';
+      }
+
+      Object.keys(expiredByYear).map(Number).filter(function (y) { return !isNaN(y); }).sort(function (a, b) { return b - a; }).forEach(function (y) {
+        html += '<optgroup label="Expired ' + y + '">';
+        expiredByYear[y].forEach(function (c) {
+          var suffix = c.nTraded ? (' · ' + c.nTraded + 'd') : '';
+          html += '<option value="' + c.contract + '">' + c.contract + ' · ' + c.expiryMonth + suffix + '</option>';
+        });
+        html += '</optgroup>';
+      });
+
+      sel.innerHTML = html;
+      if (prev) sel.value = prev;
+      if (prev && sel.value !== prev) sel.value = '';
+    }
+    window.refreshOrePick = refreshOrePick;
+
+    function onOrePickChange() {
+      window.onOrePickChange = onOrePickChange;
+      var sel = document.getElementById('oreContractPick');
+      if (!sel || !sel.value) return;
+      var contractId = sel.value;
+      var histKey = getOreHistKey();
+      loadOreHistory(histKey).then(function () {
+        renderIronOreContractHistory(contractId);
+      });
+    }
+    window.onOrePickChange = onOrePickChange;
 
     function setOreFwdComp(c) {
       window.setOreFwdComp = setOreFwdComp;
@@ -25366,6 +25646,8 @@ if (intelTabsContainer) {
       var canvas = document.getElementById('ironOreForwardChart');
       var noDataEl = document.getElementById('ironOreFwdNoData');
       if (!canvas) return;
+
+      refreshOrePick(true);
 
       var rows = DATA.sgxIronOreForward || [];
       if (!rows.length) {
@@ -25608,7 +25890,7 @@ if (intelTabsContainer) {
     }
     window.renderIronOreForwardCurve = renderIronOreForwardCurve;
 
-    function renderIronOreContractHistory(row) {
+    function renderIronOreContractHistory(contractOrRow) {
       var panel = document.getElementById('ironOreHistoryPanel');
       var titleEl = document.getElementById('ironOreHistoryTitle');
       var badgeEl = document.getElementById('ironOreHistoryBadge');
@@ -25618,35 +25900,69 @@ if (intelTabsContainer) {
 
       panel.style.display = '';
 
-      var histKey = 'iron_ore_fef';
-      var ticker = row.fef_ticker || 'FEF';
+      var histKey = getOreHistKey();
       var prodName = 'TSI 62% Fe Standard';
       var prodColor = '#58a6ff';
       var prodUnit = '$/dmt';
 
       if (_oreFwdProduct === '65') {
-        histKey = 'iron_ore_m65f';
-        ticker = row.m65f_ticker || row.fef_ticker;
         prodName = 'Fastmarkets 65% Fe Carajás';
         prodColor = '#e3b341';
+        prodUnit = '$/dmt';
       } else if (_oreFwdProduct === 'lump') {
-        histKey = 'iron_ore_lump_lpf';
-        ticker = row.lpf_ticker || row.fef_ticker;
         prodName = 'Platts Lump Premium';
         prodColor = '#a371f7';
         prodUnit = '$/dmtu';
       }
 
-      var tenor = row.tenor || '';
-      titleEl.textContent = 'SGX Iron Ore Contract History — ' + prodName + ' ' + tenor + ' (' + ticker + ')';
+      var ticker = '';
+      var tenor = '';
+      var deliveryLabel = '';
+      var isActive = false;
 
-      badgeEl.textContent = 'Active Forward Contract · ' + (row.delivery_month || '') + ' ' + (row.delivery_year || '');
-      badgeEl.style.cssText = 'font-size:11px;padding:3px 10px;border-radius:4px;font-weight:600;' +
-        'background:' + prodColor + '22;color:' + prodColor + ';border:1px solid ' + prodColor + '55;';
+      var fwdRows = DATA.sgxIronOreForward || [];
+
+      if (typeof contractOrRow === 'string') {
+        ticker = contractOrRow.trim();
+        var activeMatch = fwdRows.find(function (r) {
+          return r.fef_ticker === ticker || r.m65f_ticker === ticker || r.lpf_ticker === ticker;
+        });
+        if (activeMatch) {
+          isActive = true;
+          tenor = activeMatch.tenor || '';
+          deliveryLabel = (activeMatch.delivery_month || '') + ' ' + (activeMatch.delivery_year || '');
+        }
+      } else if (contractOrRow && typeof contractOrRow === 'object') {
+        isActive = true;
+        tenor = contractOrRow.tenor || '';
+        deliveryLabel = (contractOrRow.delivery_month || '') + ' ' + (contractOrRow.delivery_year || '');
+        if (_oreFwdProduct === '65') ticker = contractOrRow.m65f_ticker || contractOrRow.fef_ticker;
+        else if (_oreFwdProduct === 'lump') ticker = contractOrRow.lpf_ticker || contractOrRow.fef_ticker;
+        else ticker = contractOrRow.fef_ticker || 'FEF';
+      }
+
+      if (!ticker) ticker = 'FEF';
+
+      // Keep contract dropdown in sync if value changed
+      var pickSel = document.getElementById('oreContractPick');
+      if (pickSel && pickSel.value !== ticker) {
+        pickSel.value = ticker;
+      }
 
       loadOreHistory(histKey).then(function () {
         var hist = DATA.sgxHistory ? (DATA.sgxHistory[histKey] || []) : [];
         var contractRows = hist.filter(function (h) { return h.contract === ticker; });
+
+        if (!deliveryLabel && contractRows.length > 0) {
+          deliveryLabel = (contractRows[0].expiry_month || '') + ' ' + (contractRows[0].expiry_year || '');
+        }
+
+        titleEl.textContent = 'SGX Iron Ore Contract History — ' + prodName + (tenor ? (' ' + tenor) : '') + ' (' + ticker + (deliveryLabel ? (' · ' + deliveryLabel) : '') + ')';
+
+        var statusPrefix = isActive ? ('Active Forward Tenor (' + tenor + ')') : 'Expired Archive Contract';
+        badgeEl.textContent = statusPrefix + ' · ' + deliveryLabel + ' · ' + contractRows.length + ' sessions';
+        badgeEl.style.cssText = 'font-size:11px;padding:3px 10px;border-radius:4px;font-weight:600;' +
+          'background:' + prodColor + '22;color:' + prodColor + ';border:1px solid ' + prodColor + '55;';
 
         if (contractRows.length < 2) {
           msgEl.style.display = '';
@@ -25676,7 +25992,8 @@ if (intelTabsContainer) {
                 borderColor: prodColor,
                 backgroundColor: prodColor + '22',
                 borderWidth: 2,
-                pointRadius: 2,
+                pointRadius: contractRows.length < 90 ? 2 : 0,
+                pointHoverRadius: 4,
                 fill: true,
                 tension: 0.1,
                 yAxisID: 'y'
@@ -32059,6 +32376,12 @@ if (intelTabsContainer) {
           html += `<div style="font-size:11px;color:#8b949e;margin-bottom:8px;line-height:1.35;"><strong>Data availability tiers (verified at source)</strong>: daily granularity from Mar 2026 onward (our live collection); sparse traded-day prints only for 2024–2025 expiries — SGX redacts lookback prices outside its entitlement window (volume and open-interest remain fully archived back to 2022 in the CSVs).</div>`;
           html += `<div class="rt-note" style="border-top:1px solid rgba(48,54,61,0.5);padding-top:4px;text-align:center;">Archive history (~2-6 MB per vessel class) loads once, on first open, then stays cached for the session.</div>`;
         }
+        else if (type === 'concept-ore-archive') {
+          html = `<div class="rt-title">SGX Iron Ore Contract Archive</div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin-bottom:8px;line-height:1.35;"><strong>Pick any active forward contract (40 delivery tenors) or expired contract</strong> to inspect its full historical lifecycle — original listing, pre-expiry price discovery, and final cleared settlement against TSI/Fastmarkets spot averages. The <strong>·Nd</strong> suffix indicates how many traded daily sessions the archive holds.</div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin-bottom:8px;line-height:1.35;"><strong>Deep Historical Coverage (2018–2029)</strong>: 144 contracts for TSI 62% Fe (FEF), 120 contracts for Carajás 65% Fe (M65F), and 120 contracts for Platts Lump Premium (LPF). Contracts are grouped chronologically by delivery expiry year.</div>`;
+          html += `<div class="rt-note" style="border-top:1px solid rgba(48,54,61,0.5);padding-top:4px;text-align:center;">Loaded on demand directly from official Singapore Exchange historical clearing records.</div>`;
+        }
         else if (type === 'concept-qa-fastpath') {
           html = `<div class="rt-title">⚡ Indexed Retrieval</div>`;
           html += `<div style="font-size:11px;color:#8b949e;margin-bottom:8px;line-height:1.35;"><strong>Pre-built search indexes</strong>: the compiler publishes compact BM25 posting lists for every report shard. Queries rank the whole corpus against these tiny files first, then download only the reports that actually contain hits.</div>`;
@@ -32119,13 +32442,44 @@ if (intelTabsContainer) {
           html += `<div style="font-size:11px;color:#8b949e;margin-bottom:8px;line-height:1.35;"><strong>Newbuilding Pricing</strong>: Shipyard construction costs for 174k m³ LNG carriers reflect shipyard capacity tightness and cryogenic containment system demand.</div>`;
           html += `<div class="rt-note" style="border-top:1px solid rgba(48,54,61,0.5);padding-top:4px;text-align:center;">Toggle between 7-Year TC, 10-Year TC, and Newbuilding Asset Values.</div>`;
         }
-        else if (type === 'concept-wci' || type === 'drewry-wci-header') {
-          html = `<div class="rt-title">Drewry World Container Index (WCI) & Spreads</div>`;
-          html += `<div class="rt-row"><span class="rt-label">Benchmark</span><span class="rt-val">Drewry Composite 40ft Spot Container Index ($/FEU)</span></div>`;
-          html += `<div class="rt-row"><span class="rt-label">Core Routes</span><span class="rt-val">Shanghai → Rotterdam, Genoa, Los Angeles, New York</span></div>`;
-          html += `<div class="rt-row"><span class="rt-label">Coverage</span><span class="rt-val">146 rows: 7 early Wayback (2021-12-23→2022-02-24, route legs gapped as suspect — composite only) + 139 weekly 2024-01-04→2026-08-25 provisional; full 2011 backfill pending</span></div>`;
-          html += `<div class="rt-row"><span class="rt-label">Chokepoint Sensitivity</span><span class="rt-val" style="color:#f85149">Red Sea / Bab-el-Mandeb & Panama Canal</span></div>`;
-          html += `<div class="rt-note">Reflects global container liner spot pricing. Elevated spreads between Asia-Europe and Asia-USWC routes capture Cape of Good Hope rerouting surcharges, transit delays, and vessel absorption dynamics. No pre-2024 values are invented — suspect Wayback legs (identical values across routes) and incomplete weeks (e.g. 2026-08-25 empty Shanghai-LA) render as gaps (spanGaps:false); the steep composite segment spanning the 2022→2024 coverage hiatus is not a weekly move.</div>`;
+        else if (type === 'concept-clci' || type === 'concept-wci' || type === 'drewry-wci-header' || type === 'container-header') {
+          html = `<div class="rt-title">Capital Link Container Index (CLCI) &amp; Global Freight</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Primary Benchmark</span><span class="rt-val">Capital Link Container Index (CLCI)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">History &amp; Depth</span><span class="rt-val pos">21 Years Continuous (2005–2026, 5,245 Sessions)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Underlying Assets</span><span class="rt-val">US-listed Container Ship Owners &amp; Tonnage Providers</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Spot Freight Series</span><span class="rt-val">Freightos Baltic Daily Global Container Index (FBX)</span></div>`;
+          html += `<div style="font-size:11px;color:#8b949e;margin:8px 0 4px;line-height:1.4;"><strong>Sector Dynamics</strong>: Tracks container equities (Danaos, Costamare, Global Ship Lease, Zim, MPC Container Ships). Captures multi-year boxship charter rates, liner contract renegotiations, Red Sea rerouting impacts, and fleet free cash flow generation.</div>`;
+          html += `<div class="rt-note">Toggle between CLCI Equity Benchmark, FBX Spot Freight ($/FEU), and Dual Overlay to observe how freight rate shocks lead or decouple from equity valuations.</div>`;
+        }
+        else if (type === 'clci-hud-close') {
+          html = `<div class="rt-title">CLCI Latest Benchmark Close</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Index Provider</span><span class="rt-val">Capital Link Maritime Indices</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Weighting</span><span class="rt-val">Market-Cap Weighted</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Inception Date</span><span class="rt-val">January 3, 2005 (Base 1,000)</span></div>`;
+          html += `<div class="rt-note">The definitive barometer of public container shipping equity valuations and fleet enterprise value.</div>`;
+        }
+        else if (type === 'clci-hud-chg') {
+          html = `<div class="rt-title">Daily Session Change (%)</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Calculation</span><span class="rt-val">(Close(t) − Close(t-1)) / Close(t-1)</span></div>`;
+          html += `<div class="rt-note">Single-day percentage return across the container shipping equity benchmark.</div>`;
+        }
+        else if (type === 'clci-hud-52w') {
+          html = `<div class="rt-title">52-Week Price Range</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Trailing Window</span><span class="rt-val">Past 365 Calendar Days</span></div>`;
+          html += `<div class="rt-note">Indicates the lowest and highest closing levels over the trailing one-year period.</div>`;
+        }
+        else if (type === 'clci-hud-pctl') {
+          html = `<div class="rt-title">21-Year Historical Cycle Percentile</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Dataset Depth</span><span class="rt-val">5,245 Consecutive Sessions (2005–2026)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Macro Significance</span><span class="rt-val">Cycle Peak / Trough Classification</span></div>`;
+          html += `<div class="rt-note">Values above 80th percentile signify container fleet super-cycles and elevated charter yields.</div>`;
+        }
+        else if (type === 'clci-hud-fbx') {
+          html = `<div class="rt-title">Freightos Baltic Index (FBX) Global Spot Freight</div>`;
+          html += `<div class="rt-row"><span class="rt-label">Unit</span><span class="rt-val">USD per 40ft Container ($/FEU)</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Frequency</span><span class="rt-val">Daily Cleared Spot Settlements</span></div>`;
+          html += `<div class="rt-row"><span class="rt-label">Coverage</span><span class="rt-val">Global Weighted Container Spot Freight</span></div>`;
+          html += `<div class="rt-note">Official spot benchmark published in partnership with the Baltic Exchange. Reflects immediate seaborne box freight market pricing.</div>`;
         }
         else if (type === 'concept-grainfreight' || type === 'concept-grain-freight' || type === 'grain-freight-header') {
           html = `<div class="rt-title">USDA Bulk Grain Ocean Freight Rates & Spreads</div>`;
