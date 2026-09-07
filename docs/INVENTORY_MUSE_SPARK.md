@@ -140,11 +140,7 @@ is not a real PDF); 2x `[Errno 36] File name too long` on breakwave HTML asset U
 (No /Root object).
 
 Genuinely uncovered sources (each verified absent from `knowledge/manifests/sources.json`,
-whose `paths` sub-keys cover breakwave/baltic/breakwave_insights/hellenic/broker_reports/poten/books only).
-Scope clarifier (B9): `knowledge/manifests/documents.jsonl` covers `reports/` sources only
-(verified: all 8,850 rows carry a `reports/...` `source_path`, zero `data/` entries), so
-`data/` holdings are a separate scope measured in rows, not documents — no `data/` CSV row
-count in this document is a document count or an output of the ledger diff.
+whose `paths` sub-keys cover breakwave/baltic/breakwave_insights/hellenic/broker_reports/poten/books only):
 
 - SGX iron ore/freight futures (`data/futures/sgx_iron_ore_fef/m65f/lpf*.csv` + cape/panamax/supramax/handysize present on disk).
 - 7 Capital Link index XLSX in `data/` (CLDBI/CLCI/CLTI/CLMI/CLMFI/CLLG/CLMLP).
@@ -268,14 +264,3 @@ node ids, not as a substitute for them. Additive only.**
 ## 12. Next action for muse-spark
 
 P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1 sample calibration on the hellenic demolition PDF + 10-Q + factsheet.
-
-## 13. Sequencing: cause-split ownership (muse-spark) → queue rebuild (antigravity)
-
-- muse-spark owns the skipped-queue cause-split instrumentation: `scripts/analysis/split_skip_causes.py`
-  (stdlib-only read-only replay of the five `collect_linked_asset_sections` skip branches) plus its
-  output `data/derived/skip_cause_matrix.json` (per-source × per-cause, reconciled: 8,424 skipped /
-  3,167 docs, zero per-doc mismatches vs `documents.jsonl`).
-- antigravity's P0 queue rebuild consumes `data/derived/skip_cause_matrix.json` as its cause-split
-  input; it does not re-derive the split.
-- Verifier reuse (antigravity `ExtractionVerifier` harness) continues, but its pass rate is not
-  inherited as a quality signal until per-template expected-column-count assertions exist (B6).
