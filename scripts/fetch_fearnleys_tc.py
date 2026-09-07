@@ -33,7 +33,7 @@ VARIABLES = {
     ],
     "rateTypes": ["BULK", "TANK"],
     "rateSubtypes": ["TC", "1 Year T/C"],
-    "dateFrom": "2000-01-01",
+    "dateFrom": "1970-01-01",
     "dateTo": "2026-12-31",
 }
 

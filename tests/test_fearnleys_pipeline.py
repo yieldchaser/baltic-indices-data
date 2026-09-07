@@ -178,6 +178,10 @@ def test_frontend_fearnleys_elements_present():
     required_strings = [
         'id="fearnleysTceRibbonCard"',
         'id="fearnleysTceRibbonGrid"',
+        'id="fearnleysTce56yChart"',
+        'id="fearnTceSegToggle"',
+        'id="fearnTceRangeToggle"',
+        'id="fearnTceScaleToggle"',
         'id="fearnleysFixturesContainer"',
         'id="fearnFixtureVolumeChart"',
         'id="fearnCharterersTable"',
@@ -192,9 +196,26 @@ def test_frontend_fearnleys_elements_present():
         'data-tt-type="fearnleys-snp-deal"',
         'initFearnleysTerminal',
         'FEARNLEYS_CONTROLLER',
+        'renderFearnleysTce56yChart',
+        'switchFearnTceSeg',
+        'switchFearnTceRange',
+        'switchFearnTceScale',
         'DATA.fearnleysSummary',
         'fetch(\'data/derived/fearnleys_summary.json\')',
     ]
 
     for req in required_strings:
         assert req in html, f"Missing required string in index.html: {req}"
+
+
+def test_56y_chart_data_span():
+    """Verifies that 56-year dataset actually spans from 1970 to 2026."""
+    with open(SUMMARY_JSON, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    series = data["tce_benchmarks_56y"]["monthly_series"]
+    assert len(series) >= 680, f"Expected ~681 months, got {len(series)}"
+    assert series[0]["date"] == "1970-01", f"First monthly date must be 1970-01, got {series[0]['date']}"
+    assert series[0]["panamax"] is not None and series[0]["panamax"] > 0, "Panamax must have 1970 data"
+    assert series[-1]["date"] >= "2026-08", f"Latest monthly date should reach 2026, got {series[-1]['date']}"
+

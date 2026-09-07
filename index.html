@@ -5224,11 +5224,17 @@
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 8px 10px;
-  cursor: help;
-  transition: border-color 0.15s;
+  cursor: pointer;
+  transition: all 0.15s ease;
 }
 .fearn-ribbon-card:hover {
   border-color: var(--text-muted);
+  transform: translateY(-1px);
+}
+.fearn-ribbon-card.active {
+  border-color: var(--accent);
+  background: rgba(88, 166, 255, 0.08);
+  box-shadow: 0 0 8px rgba(88, 166, 255, 0.25);
 }
 .fearn-ribbon-title {
   font-size: 11px;
@@ -12346,29 +12352,77 @@
               <button class="toggle-btn" id="signalsViewAll" onclick="setSignalsViewMode('all')">View All Sectors (Overlaid)</button>
             </div>
           </div>
-          <!-- FEARNPULSE 56-YEAR 1Y TIME CHARTER UNIVERSE (1970-2026) RIBBON -->
+          <!-- FEARNPULSE 56-YEAR 1Y TIME CHARTER UNIVERSE (1970-2026) RIBBON & MULTI-DECADE CHART -->
 <div class="chart-container mb-20" id="fearnleysTceRibbonCard">
   <div class="chart-header" style="flex-wrap:wrap;gap:8px;">
     <div class="chart-title" data-tooltip="FearnPulse 56-Year Institutional Benchmark Time Charter Series (1970–2026) — systematic multi-decade 1-Year TC freight assessments across Capesize, Panamax, Supramax, Handysize, VLCC, Suezmax, and Aframax harvested from Fearnleys Hasura database.">
       <div class="icon-tile icon-tile-gold icon-tile-sm" style="display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
       &nbsp;FearnPulse 56-Year Historical 1Y Time Charter Benchmarks (1970–2026)
     </div>
-    <div style="display:flex;align-items:center;gap:6px;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
       <span class="kpi-badge" style="font-family:'IBM Plex Mono',monospace;">56Y Archive: 1970–2026</span>
     </div>
   </div>
   <div style="font-size:11px;color:var(--text-muted);margin-bottom:10px;">
-    Long-term cyclical historical anchor from Fearnleys Hasura GraphQL backend. Hover over any segment badge to inspect 56-year rank, all-time high, all-time low, and distance from 2008 supercycle peak.
+    Long-term cyclical historical anchor from Fearnleys Hasura GraphQL backend. Click any segment card to isolate the 56-year historical curve below, or hover to inspect all-time highs, lows, and 56-year percentile rankings.
   </div>
   <div class="fearn-ribbon-grid" id="fearnleysTceRibbonGrid">
     <!-- Populated dynamically by JS -->
+  </div>
+
+  <!-- 56Y Historical Time Charter Chart Toolbar -->
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;padding:6px 10px;background:var(--bg);border:1px solid var(--border);border-radius:6px;">
+    <!-- Sector Filter Buttons -->
+    <div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
+      <span style="font-size:11px;font-weight:600;color:var(--text-muted);margin-right:4px;">Sector:</span>
+      <div id="fearnTceSegToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;flex-wrap:wrap;">
+        <button class="toggle-btn active" id="btnTceAll" onclick="switchFearnTceSeg('all')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;">All Sectors</button>
+        <button class="toggle-btn" id="btnTceCapesize" onclick="switchFearnTceSeg('capesize')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Capesize (1977)</button>
+        <button class="toggle-btn" id="btnTcePanamax" onclick="switchFearnTceSeg('panamax')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Panamax (1970)</button>
+        <button class="toggle-btn" id="btnTceSupramax" onclick="switchFearnTceSeg('supramax')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Supramax</button>
+        <button class="toggle-btn" id="btnTceHandysize" onclick="switchFearnTceSeg('handysize')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Handysize</button>
+        <button class="toggle-btn" id="btnTceVlcc" onclick="switchFearnTceSeg('vlcc')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">VLCC</button>
+        <button class="toggle-btn" id="btnTceSuezmax" onclick="switchFearnTceSeg('suezmax')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Suezmax</button>
+        <button class="toggle-btn" id="btnTceAframax" onclick="switchFearnTceSeg('aframax')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Aframax</button>
+      </div>
+    </div>
+
+    <!-- Range & Scale Controls -->
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:4px;">
+        <span style="font-size:11px;font-weight:600;color:var(--text-muted);">Range:</span>
+        <div id="fearnTceRangeToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
+          <button class="toggle-btn active" id="btnTceRangeMax" onclick="switchFearnTceRange('max')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;">Max (56Y 1970–2026)</button>
+          <button class="toggle-btn" id="btnTceRange30y" onclick="switchFearnTceRange('30y')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">30Y</button>
+          <button class="toggle-btn" id="btnTceRange10y" onclick="switchFearnTceRange('10y')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">10Y</button>
+          <button class="toggle-btn" id="btnTceRange5y" onclick="switchFearnTceRange('5y')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">5Y</button>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:4px;">
+        <span style="font-size:11px;font-weight:600;color:var(--text-muted);">Scale:</span>
+        <div id="fearnTceScaleToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
+          <button class="toggle-btn active" id="btnTceScaleLinear" onclick="switchFearnTceScale('linear')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:11px;font-family:inherit;">Linear</button>
+          <button class="toggle-btn" id="btnTceScaleLog" onclick="switchFearnTceScale('log')" style="padding:2px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;border-left:1px solid var(--border);">Log</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 56Y Canvas Wrap -->
+  <div class="chart-canvas-wrap" style="height:350px;position:relative;">
+    <canvas id="fearnleysTce56yChart"></canvas>
+  </div>
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;">
+    <span>Continuous monthly 1Y Time Charter freight assessments from Fearnleys Hasura database (1970–2026).</span>
+    <span id="fearnTceChartDataSpan">Showing 1970–2026 (681 months)</span>
   </div>
 </div>
 
           <!-- Time Charter spot vs term curve -->
           <div class="chart-container mb-20">
             <div class="chart-header">
-              <div class="chart-title" id="tcChartTitle" data-tooltip="Spot vs Period Time Charter Rates (TCE $/day) — overlays spot earnings against fixed period charter rates (4/6M, 1Y, 2Y, 3Y, 5Y) to identify term structure regimes. Spot > Period TC = Backwardation/tightness; Spot < Period TC = Contango/overcapacity." data-tt-type="concept-timecharter">Time Charter Curve (Spot vs Term Rates)</div>
+              <div class="chart-title" id="tcChartTitle" data-tooltip="Spot vs Period Time Charter Rates (TCE $/day) — overlays daily spot earnings against fixed period charter rates (4/6M, 1Y, 2Y, 3Y, 5Y) to identify term structure regimes. Spot > Period TC = Backwardation/tightness; Spot < Period TC = Contango/overcapacity. Daily Baltic spot freight publishing begins in 2000." data-tt-type="concept-timecharter">Daily Spot vs Period Term Arbitrage (2000–2026)</div>
               <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
                 <div id="tcTenorToggle" style="display:inline-flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:11px;">
                   <button class="toggle-btn" id="tcTenor4_6m" onclick="setTcTenor('4_6m')" data-tooltip=" " data-tt-type="concept-tc-tenor" data-tt-tenor="4_6m" style="padding:3px 8px;border:none;cursor:pointer;background:var(--card);color:var(--text-muted);font-size:11px;font-family:inherit;">4/6M</button>
@@ -26054,10 +26108,14 @@ if (intelTabsContainer) {
 var FEARNLEYS_CONTROLLER = {
   currentAssetSeg: 'capesize',
   currentSnpFilter: 'all',
+  currentTceSeg: 'all',
+  currentTceRange: 'max',
+  currentTceScale: 'linear',
   snpSearchTerm: '',
   fixtureSearchTerm: '',
   fixtureChart: null,
   assetChart: null,
+  tce56yChart: null,
   initialized: false
 };
 
@@ -26078,6 +26136,7 @@ function initFearnleysTerminal() {
 
   try {
     renderFearnleysTceRibbon();
+    renderFearnleysTce56yChart();
     renderFearnleysFixtureAnalytics();
     renderFearnleysAssetCycles(FEARNLEYS_CONTROLLER.currentAssetSeg);
     renderFearnleysSnpTable();
@@ -26087,7 +26146,7 @@ function initFearnleysTerminal() {
 }
 
 // -----------------------------------------------------------------------------
-// 1. 56-YEAR 1Y TIME CHARTER RIBBON
+// 1. 56-YEAR 1Y TIME CHARTER RIBBON & MULTI-DECADE CYCLE CHART
 // -----------------------------------------------------------------------------
 function renderFearnleysTceRibbon() {
   const summary = DATA.fearnleysSummary;
@@ -26112,11 +26171,11 @@ function renderFearnleysTceRibbon() {
     const s = stats[seg.key] || {};
     const curr = s.current ? '$' + Number(s.current).toLocaleString() : '—';
     const pct = s.pct_56y != null ? s.pct_56y.toFixed(1) + '%' : '—';
-    const ath = s.ath ? '$' + Number(s.ath).toLocaleString() : '—';
     const badgeClass = seg.dept === 'BULK' ? 'fearn-badge-bulk' : 'fearn-badge-tank';
+    const isActive = FEARNLEYS_CONTROLLER.currentTceSeg === seg.key ? ' active' : '';
 
     html += `
-      <div class="fearn-ribbon-card" data-tooltip=" " data-tt-type="fearnleys-56y-tce" data-tt-seg="${seg.key}">
+      <div class="fearn-ribbon-card${isActive}" id="fearnRibbonCard_${seg.key}" onclick="switchFearnTceSeg('${seg.key}')" data-tooltip=" " data-tt-type="fearnleys-56y-tce" data-tt-seg="${seg.key}">
         <div class="fearn-ribbon-title">
           <span>${seg.name}</span>
           <span class="fearn-badge ${badgeClass}">${seg.dept}</span>
@@ -26128,6 +26187,252 @@ function renderFearnleysTceRibbon() {
   });
 
   container.innerHTML = html;
+}
+
+function switchFearnTceSeg(segKey) {
+  if (FEARNLEYS_CONTROLLER.currentTceSeg === segKey && segKey !== 'all') {
+    FEARNLEYS_CONTROLLER.currentTceSeg = 'all';
+  } else {
+    FEARNLEYS_CONTROLLER.currentTceSeg = segKey;
+  }
+
+  const btnMap = {
+    all: 'btnTceAll',
+    capesize: 'btnTceCapesize',
+    panamax: 'btnTcePanamax',
+    supramax: 'btnTceSupramax',
+    handysize: 'btnTceHandysize',
+    vlcc: 'btnTceVlcc',
+    suezmax: 'btnTceSuezmax',
+    aframax: 'btnTceAframax'
+  };
+
+  Object.entries(btnMap).forEach(([k, btnId]) => {
+    const el = document.getElementById(btnId);
+    if (!el) return;
+    if (k === FEARNLEYS_CONTROLLER.currentTceSeg) {
+      el.classList.add('active');
+      el.style.background = 'var(--accent)';
+      el.style.color = '#fff';
+    } else {
+      el.classList.remove('active');
+      el.style.background = 'var(--card)';
+      el.style.color = 'var(--text-muted)';
+    }
+  });
+
+  ['capesize', 'panamax', 'supramax', 'handysize', 'vlcc', 'suezmax', 'aframax'].forEach(k => {
+    const card = document.getElementById('fearnRibbonCard_' + k);
+    if (!card) return;
+    if (k === FEARNLEYS_CONTROLLER.currentTceSeg) {
+      card.classList.add('active');
+    } else {
+      card.classList.remove('active');
+    }
+  });
+
+  renderFearnleysTce56yChart();
+}
+
+function switchFearnTceRange(rangeKey) {
+  FEARNLEYS_CONTROLLER.currentTceRange = rangeKey;
+
+  const btnMap = {
+    max: 'btnTceRangeMax',
+    '30y': 'btnTceRange30y',
+    '10y': 'btnTceRange10y',
+    '5y': 'btnTceRange5y'
+  };
+
+  Object.entries(btnMap).forEach(([k, btnId]) => {
+    const el = document.getElementById(btnId);
+    if (!el) return;
+    if (k === rangeKey) {
+      el.classList.add('active');
+      el.style.background = 'var(--accent)';
+      el.style.color = '#fff';
+    } else {
+      el.classList.remove('active');
+      el.style.background = 'var(--card)';
+      el.style.color = 'var(--text-muted)';
+    }
+  });
+
+  renderFearnleysTce56yChart();
+}
+
+function switchFearnTceScale(scaleKey) {
+  FEARNLEYS_CONTROLLER.currentTceScale = scaleKey;
+
+  const btnMap = {
+    linear: 'btnTceScaleLinear',
+    log: 'btnTceScaleLog'
+  };
+
+  Object.entries(btnMap).forEach(([k, btnId]) => {
+    const el = document.getElementById(btnId);
+    if (!el) return;
+    if (k === scaleKey) {
+      el.classList.add('active');
+      el.style.background = 'var(--accent)';
+      el.style.color = '#fff';
+    } else {
+      el.classList.remove('active');
+      el.style.background = 'var(--card)';
+      el.style.color = 'var(--text-muted)';
+    }
+  });
+
+  renderFearnleysTce56yChart();
+}
+
+function renderFearnleysTce56yChart() {
+  const summary = window.DATA && DATA.fearnleysSummary;
+  if (!summary || !summary.tce_benchmarks_56y) return;
+
+  const tce = summary.tce_benchmarks_56y;
+  const rawSeries = tce.monthly_series || [];
+  if (!rawSeries.length) return;
+
+  const ctx = document.getElementById('fearnleysTce56yChart');
+  if (!ctx) return;
+
+  let minDate = '1970-01';
+  if (FEARNLEYS_CONTROLLER.currentTceRange === '30y') minDate = '1996-01';
+  else if (FEARNLEYS_CONTROLLER.currentTceRange === '10y') minDate = '2016-01';
+  else if (FEARNLEYS_CONTROLLER.currentTceRange === '5y') minDate = '2021-01';
+
+  const series = rawSeries.filter(pt => pt.date >= minDate);
+  if (!series.length) return;
+
+  const spanEl = document.getElementById('fearnTceChartDataSpan');
+  if (spanEl) {
+    spanEl.textContent = 'Showing ' + series[0].date + ' to ' + series[series.length - 1].date + ' (' + series.length + ' months)';
+  }
+
+  const TCE_SEG_SPECS = [
+    { key: 'capesize', label: 'Capesize 1Y', color: '#58a6ff' },
+    { key: 'panamax', label: 'Panamax 1Y (1970)', color: '#3fb950' },
+    { key: 'supramax', label: 'Supramax 1Y', color: '#bc8cff' },
+    { key: 'handysize', label: 'Handysize 1Y', color: '#79c0ff' },
+    { key: 'vlcc', label: 'VLCC 1Y', color: '#f0883e' },
+    { key: 'suezmax', label: 'Suezmax 1Y', color: '#d29922' },
+    { key: 'aframax', label: 'Aframax 1Y', color: '#ff7b72' }
+  ];
+
+  const labels = series.map(pt => pt.date);
+  const datasets = [];
+
+  if (FEARNLEYS_CONTROLLER.currentTceSeg === 'all') {
+    TCE_SEG_SPECS.forEach(spec => {
+      const hasData = series.some(pt => pt[spec.key] != null);
+      if (!hasData) return;
+      datasets.push({
+        label: spec.label,
+        data: series.map(pt => pt[spec.key]),
+        borderColor: spec.color,
+        backgroundColor: 'transparent',
+        borderWidth: 1.8,
+        pointRadius: 0,
+        pointHoverRadius: 4,
+        tension: 0.1,
+        spanGaps: true
+      });
+    });
+  } else {
+    const selectedKey = FEARNLEYS_CONTROLLER.currentTceSeg;
+    const spec = TCE_SEG_SPECS.find(s => s.key === selectedKey) || TCE_SEG_SPECS[0];
+    const stats = (tce.stats && tce.stats[selectedKey]) || {};
+
+    datasets.push({
+      label: spec.label + ' Rate',
+      data: series.map(pt => pt[selectedKey]),
+      borderColor: spec.color,
+      backgroundColor: spec.color + '15',
+      fill: true,
+      borderWidth: 2.5,
+      pointRadius: 0,
+      pointHoverRadius: 5,
+      tension: 0.1,
+      spanGaps: true
+    });
+
+    if (stats.ath && stats.ath > 0) {
+      datasets.push({
+        label: 'All-Time High ($' + Number(stats.ath).toLocaleString() + '/d)',
+        data: Array(series.length).fill(stats.ath),
+        borderColor: 'rgba(240, 136, 62, 0.75)',
+        borderDash: [5, 4],
+        borderWidth: 1.4,
+        pointRadius: 0,
+        fill: false
+      });
+    }
+
+    if (stats.avg_5y && stats.avg_5y > 0) {
+      datasets.push({
+        label: '5Y Average ($' + Number(stats.avg_5y).toLocaleString() + '/d)',
+        data: Array(series.length).fill(stats.avg_5y),
+        borderColor: 'rgba(139, 148, 158, 0.75)',
+        borderDash: [3, 3],
+        borderWidth: 1.2,
+        pointRadius: 0,
+        fill: false
+      });
+    }
+  }
+
+  if (FEARNLEYS_CONTROLLER.tce56yChart) {
+    FEARNLEYS_CONTROLLER.tce56yChart.destroy();
+  }
+
+  const isLog = FEARNLEYS_CONTROLLER.currentTceScale === 'log';
+
+  FEARNLEYS_CONTROLLER.tce56yChart = new Chart(ctx, {
+    type: 'line',
+    data: { labels: labels, datasets: datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: { boxWidth: 10, font: { size: 10, family: 'IBM Plex Sans' }, color: '#8b949e' }
+        },
+        tooltip: {
+          mode: 'index',
+          intersect: false,
+          callbacks: {
+            title: function(items) { return items && items[0] ? 'Date: ' + items[0].label : ''; },
+            label: function(ctx) {
+              if (ctx.raw == null) return null;
+              return ctx.dataset.label + ': $' + Number(ctx.raw).toLocaleString() + '/day';
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            font: { size: 10, family: 'IBM Plex Mono' },
+            color: '#8b949e',
+            maxTicksLimit: 14
+          }
+        },
+        y: {
+          type: isLog ? 'logarithmic' : 'linear',
+          grid: { color: 'rgba(48,54,61,0.5)' },
+          ticks: {
+            font: { size: 10, family: 'IBM Plex Mono' },
+            color: '#8b949e',
+            callback: function(v) { return '$' + (v >= 1000 ? (v / 1000).toFixed(0) + 'k' : v); }
+          }
+        }
+      }
+    }
+  });
 }
 
 // -----------------------------------------------------------------------------
