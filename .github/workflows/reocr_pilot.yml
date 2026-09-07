@@ -68,9 +68,8 @@ jobs:
           PILOT_REDO_LIMIT: '1'
           PILOT_MIN_INTERVAL_SEC: '1.5'
           PILOT_ABORT_429: '8'
-          # PROBE_CALLS was exported by preflight via $GITHUB_ENV, so the
-          # expression below resolves at step start: budget = 140 - probes.
-          PILOT_MAX_TOTAL_CALLS: ${{ 140 - env.PROBE_CALLS }}
+          # PILOT_MAX_TOTAL_CALLS (= 140 - probe calls) is exported by the
+          # preflight step via $GITHUB_ENV and inherited here automatically.
 
       - name: Build cost/latency accounting
         if: always()

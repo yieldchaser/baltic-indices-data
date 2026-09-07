@@ -222,6 +222,7 @@ def cmd_preflight() -> int:
     else:
         blank.update(GROQ_MODEL=PINNED_MODELS["groq"])
     blank["PROBE_CALLS"] = str(probe_calls)
+    blank["PILOT_MAX_TOTAL_CALLS"] = str(TOTAL_CALL_BUDGET - probe_calls)
     gh_env(blank)
     print(json.dumps(choice, indent=2))
     return 0
