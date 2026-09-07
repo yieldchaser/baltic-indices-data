@@ -56,7 +56,7 @@ fix vs the sibling: the repeated-header diagnostic is sorted.
 - Bleed check: PASS — money-market block (Invesco/MONEY MARKET, lines 7–13) and tanker futures block (West Africa/Middle East Gulf, lines 38–59) both absent from extracted rows.
 - Arithmetic tie-out (extra, outside harness): Σ unrealized = **−2,157,385** and Σ notional = **43,916,630**, both exactly equal to the printed subtotal line `$ (2,157,385) $ 43,916,630 100%`.
 
-## Sample C (chart-heavy) — RESELECTED from true-skipped (vision pass sandbox-blocked; project path open per W1 below)
+## Sample C (chart-heavy) — RESELECTED from true-skipped (vision pass BLOCKED)
 
 X1 correction: the survey below (first 5 image-type entries in ledger order,
 ~~struck as invalid~~) sampled **ingested** assets, not skipped ones —
@@ -126,8 +126,8 @@ D4 Sample C (current): unextracted / mis-extracted content.
 | F1 | failed extraction | `breakwave_insights_…_2022_05_30_…_russias_seaborne_oil_flows_changing_patterns` | `reports/breakwave/pdfs/2022-05-30_…_the-future-of-saudi-price-discrimina_0d4f8cd656a6.pdf` | `.pdf` name, HTML body | 121,703 | `disposition=failed`, `reason=PDFSyntaxError`, mirror on disk |
 | F2 | failed extraction | `breakwave_insights_…_2022_12_09_…_china_reopening_boosts_sentiment…` | `reports/breakwave/pdfs/2022-12-09_…_china-commodity-trade-data-november-_1bb3ed9ffda4.pdf` | `.pdf` name, HTML body | 5,174 | `disposition=failed`, `reason=PDFSyntaxError`, mirror on disk |
 
-- Two-stage vision pass executable here? **No — sandbox-blocked (W1 correction, verified 2026-09-06).** Environment check (`Get-ChildItem Env:` + named lookups, names only, no values read): `REDUCTO_API_KEY`, `LLAMA_CLOUD_API_KEY`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` (and bare `REDUCTO`/`LLAMA`/`ANTHROPIC`/`OPENAI`) all **ABSENT in this sandbox** — a sandbox-only fact, not a project block. The project-level path exists: CI secrets `NIM_API_KEY` + `OLLAMA_BASE_URL`/`OLLAMA_API_KEY`/`OLLAMA_MODEL` are wired into the knowledge pipeline (`.github/workflows/daily_knowledge_update.yml:66-79`, `.github/workflows/process_knowledge.yml:90-99`; `OPENROUTER_API_KEY`/`GROQ_API_KEY` project secrets are wired to the brief workflow, `.github/workflows/daily_brief.yml:64-65`, consumed by `scripts/generate_brief.py:94-108`), and `scripts/process_knowledge.py:28-38` already runs an NIM/Ollama client (`_call_ollama_once`, `:1519-1561`; `_call_nim_once`, `:1607-1614`) whose payloads are text-only (`"messages": [{"role": "user", "content": prompt}]`, `:1524` and `:1612`; zero `image_url`/multipart matches in either client, `scripts/generate_brief.py` included — its only `vision` hit is the word "revisions"). Native libs (PIL/pymupdf) can stage assets — survey, dedupe, dimension/format triage — but chart datapoint reading needs a vision model that is not provisioned in this sandbox.
-- Exact unblock requirement (W1, spec only — **NOT authorization to run a batch**): add a multimodal call path (`image_url`/multipart) to the existing NIM/Ollama client + a CI run against a vision-capable model + written approval of per-image egress budget (scope footnote below) before any batch run.
+- Two-stage vision pass executable here? **No — BLOCKED.** Environment check (`Get-ChildItem Env:` + named lookups, names only, no values read): `REDUCTO_API_KEY`, `LLAMA_CLOUD_API_KEY`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` (and bare `REDUCTO`/`LLAMA`/`ANTHROPIC`/`OPENAI`) all **ABSENT**. Native libs (PIL/pymupdf) can stage assets — survey, dedupe, dimension/format triage — but chart datapoint reading needs a vision model that is not provisioned in this sandbox.
+- Exact unblock requirement: provision **one** of (a) an Anthropic/OpenAI API key for direct two-stage vision, or (b) a Reducto/LlamaCloud key for managed async parse; plus written approval of per-image egress budget (scope footnote below) before any batch run.
 - Deferred chart protocol (spec, not execution): **stage 1 — axis/scale-first**: per image, record chart type, x/y axis labels, units, scale (linear/log), legend entries, and source-text cross-reference; a stage-1 record with unreadable axes FAILS closed and blocks stage 2. **Stage 2 — datapoints-second**: transcribe series values with (x, y, unit) triples, each triple citing its stage-1 axis record; totals/endpoint values tied back to the parent document's prose numbers where stated. Both stages carry `parent_doc_id` + image `node_id` attribution end-to-end.
 
 ## Redo-loop log
@@ -143,7 +143,7 @@ D4 Sample C (current): unextracted / mis-extracted content.
 |---|---|---|
 | A hellenic demolition p6 (5×10) | **PASS** | 1 FAIL → redo → PASS, 0 issues; bleed clean |
 | B 10-Q p6 BDRY futures (9×4) | **PASS** | PASS, 0 issues; bleed clean; subtotal tie-out exact |
-| C chart set, D4: 3 ingested suspect-OCR images (S1–S3) + 2 failed PDFSyntaxError PDFs (F1–F2) | **ASSESSED / vision sandbox-blocked (W1 project path recorded above; no batch authorized)** | n/a (no extraction claimed); readiness verdict + deferred protocol recorded |
+| C chart set, D4: 3 ingested suspect-OCR images (S1–S3) + 2 failed PDFSyntaxError PDFs (F1–F2) | **ASSESSED / vision BLOCKED** | n/a (no extraction claimed); readiness verdict + deferred protocol recorded |
 
 Harness session summary: 3 tables inspected, 2 passed, 1 failed (the intentional first-attempt FAIL), i.e. both final tables PASS.
 

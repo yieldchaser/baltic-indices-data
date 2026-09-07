@@ -223,7 +223,7 @@ node ids, not as a substitute for them. Additive only.**
 - READY: pypdf 6.14.2 / pymupdf 1.28.2 / pdfplumber / pandas / openpyxl / torch.
 - ABSENT: docling / camelot / transformers / ocrmypdf / tesseract / ghostscript / java.
 - NO API keys (Reducto / LlamaCloud / Anthropic / OpenAI all absent) — Reducto/LlamaParse
-  evaluation is sandbox-BLOCKED until the §7-W1 unblock lands. **W1-note (2026-09-06): sandbox-only fact — CI carries `NIM_API_KEY` + `OLLAMA_*` (knowledge pipeline, `daily_knowledge_update.yml:66-79` / `process_knowledge.yml:90-99`) and `OPENROUTER`/`GROQ` keys (brief workflow, `daily_brief.yml:64-65`); existing NIM/Ollama client payloads are text-only (`process_knowledge.py:1524` / `:1612`); unblock = multimodal call path + CI vision-model run + spend approval, NOT a batch authorization (see INGESTED_IMAGE_AUDIT §7).**
+  evaluation is BLOCKED until keys are provisioned.
 - Docling install is possible (torch present) but OCR deps missing.
 - All sampled PDFs have text layers, so native extraction suffices for phase-1 samples.
 - Drewry AIS PDFs are not local (manifest-only) — must download before chart-pipeline
@@ -298,8 +298,8 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   `duplicate_path` dups (33 img + 1 link + 1 pdf). X1: the old P1 §C survey
   sampled ingested assets (all 5 carry tree node ids) — struck. M1 outcome
   (a): Sample C reselected from true-skipped local dup images (27 unique
-   pairs); details in `docs/P1_CALIBRATION_MUSE_SPARK.md` §C, whose readiness
-   verdict + deferred protocol + sandbox-blocked status stand (W1 project path open per INGESTED_IMAGE_AUDIT §7; no batch authorized).
+  pairs); details in `docs/P1_CALIBRATION_MUSE_SPARK.md` §C, whose readiness
+  verdict + deferred protocol + BLOCKED status stand.
 - M2: P1 fixtures committed under `calibration/p1/` (`p1_pass1.py`,
   `p1_pass2.py`, both JSON outputs + audit JSONL; paths scrubbed to POSIX
   repo-relative; reruns reproduce the recorded counts exactly).
@@ -325,7 +325,7 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   until `process_knowledge.py` is next touched.
 - New evidence (no scope commitment): ingested-image profile + 3 OCR
   suspects in `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md`; reprocessing scope
-   awaits user call; vision sandbox-blocked (no API-key names in sandbox env; project-level path per INGESTED_IMAGE_AUDIT §7 W1 — CI NIM/Ollama secrets + multimodal call-path addition, NOT a batch authorization). Reviewer V1–V4
+  awaits user call; vision BLOCKED (no API-key names in env). Reviewer V1–V4
   follow-ups closed 2026-09-06 in the same file (§8 + §V3 appendix, no commits).
 
 ## 16. Reviewer PASS-WITH-CHANGES close-out D1–D4 (2026-09-06, this branch, no commits)
@@ -347,8 +347,8 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   same run (single derivation path) plus new `failed_by_reason` /
   ledger-failed cross-check fields; all N3 fields retained.
 - D4: P1 §C re-pointed at ingested + failures (3 suspect-OCR images S1–S3 +
-   2 `PDFSyntaxError` PDFs, files confirmed on disk); old rows struck,
-   protocol + sandbox-blocked status stand (W1, as above).
+  2 `PDFSyntaxError` PDFs, files confirmed on disk); old rows struck,
+  protocol + BLOCKED stand.
 - E1/E2 (D1–D4 PASS entry, evidence/spec only, no commits): 7 inferential `PDFSyntaxError` attributions flagged via new `attribution` field (`split_skip_causes.py` regen, gate green, deterministic) + single OOXML recovery candidate identified, not recovered — see `docs/INGESTED_IMAGE_AUDIT_MUSE_SPARK.md` §9.
 
 ## 17. Pilot 20Q pointer (2026-09-06, this branch, no commits)

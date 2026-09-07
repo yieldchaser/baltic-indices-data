@@ -36,7 +36,7 @@ graph-vendor choice, any re-OCR scope, or any P0-queue reversal. Verdict labels:
   `chunk_probes*.py`, `manifest_probe*.py`, `text_probe*.py`, `final_nums.py`).
 - Quoted chunk `text` verbatim for latest-week docs to test OCR readability.
 - Checked `index.html` `fetch(` targets (8) and process env for vision vendor keys
-  (names only — NONE found in this sandbox; project-level vision path per INGESTED_IMAGE_AUDIT §7 W1 — CI NIM/Ollama secrets + multimodal call-path addition, NOT a batch authorization).
+  (names only — NONE found; vision stays BLOCKED per INGESTED_IMAGE_AUDIT §7).
 - Marked `uncertain` wherever the evidence is thin instead of guessing.
 
 Corpus snapshot reused from INVENTORY: 8,850 docs / 101,967 chunks / 31,228 sections;
@@ -333,7 +333,7 @@ Cross-cutting quality notes (not verdicts, but load-bearing for the graph call):
   (dry estimates `..._02092026dry_a472ff592510_jpg`; valuations matrix
   `..._010920264ffg_3f4fc98878b7_jpg` = unreadable; tanker estimates partly
   usable; broker `Ro:erdam`) — but clean fallbacks exist (PDF-text legs,
-   matrix/scrappage/bunker CSVs). Vision sandbox-blocked (env check: no vendor keys in sandbox; project path open per audit §7 W1).
+  matrix/scrappage/bunker CSVs). Vision BLOCKED (env check: no vendor keys).
 - Poten latest (2026-08-24) is nav-boilerplate-only (JS-render miss), contaminating
   Q8 (blocking) and the Poten legs of Q11 (non-blocking).
 - Coverage gaps re-verified: `sources.json` paths omit drewry/SGX/CapitalLink/
@@ -359,7 +359,7 @@ Grading:
 - The 5 blocked questions (25%) are NOT fixable by any graph layer: 4 need source
   wiring (CFTC COT, 10-Q/factsheets/EDGAR, SGX/CapitalLink UI+manifest wiring,
   SNP-catalog build) and 1 needs extraction repair (Poten JS-render; vision
-   re-OCR for the image-OCR suspects needs the audit §7-W1 unblock (multimodal call path + CI vision-model run + spend approval; no batch authorized)). Sequence wiring +
+  re-OCR for the image-OCR suspects stays BLOCKED on keys). Sequence wiring +
   repairs before/with the layer; do not let the layer mask the blocks.
 - Non-commitment restated: this grades *retrieval need* (70/5/20/5). It does not
   select LightRAG vs GraphRAG vs Neo4j vs Graphiti, does not scope any batch, and
