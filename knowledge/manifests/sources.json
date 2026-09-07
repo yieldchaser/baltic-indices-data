@@ -31,6 +31,71 @@
     },
     "books": {
       "book": 12
+    },
+    "futures": {
+      "sgx_cape": 192296,
+      "sgx_panamax": 76436,
+      "sgx_supramax": 192793,
+      "sgx_handysize": 92435,
+      "sgx_iron_ore_fef": 95534,
+      "sgx_iron_ore_m65f": 61552,
+      "sgx_iron_ore_lump_lpf": 41476,
+      "bdryff": 4153,
+      "bwetff": 2454
+    },
+    "indices": {
+      "capital_link_master": 5245,
+      "capital_link_clci": 5244,
+      "capital_link_cldbi": 5230,
+      "capital_link_cllg": 5230,
+      "capital_link_clmi": 5230,
+      "capital_link_clmfi": 5230,
+      "capital_link_clmlp": 5143,
+      "capital_link_clti": 5228
+    },
+    "cftc_statements": {
+      "bdry_monthly_ledger": 100,
+      "bwet_monthly_ledger": 38,
+      "statement_text_audit": 138,
+      "raw_pdf": 138
+    },
+    "etf": {
+      "bdry_holdings_history": 897,
+      "bwet_holdings_history": 638,
+      "bdry_flows": 2117,
+      "bwet_flows": 837,
+      "bdry_liquidity": 2126,
+      "bwet_liquidity": 839,
+      "sec_filings": 1,
+      "disclosures_pdf": 7
+    },
+    "flows": {
+      "usda_fas_export_sales": 68181,
+      "usda_grain_vessel_loading": 3113,
+      "usda_grain_loading_queues": 3117,
+      "usda_bulk_grain_rates": 138,
+      "usda_brazil_ocean_freight": 138,
+      "usda_landed_costs": 650,
+      "usda_grain_rates_japan": 368,
+      "usda_us_brazil_cost_spreads": 80
+    },
+    "congestion": {
+      "portwatch_congestion": 36361,
+      "port_calls_daily": 40370,
+      "port_calls_daily_v2": 36361,
+      "chokepoint_transits": 78372
+    },
+    "drewry_ais": {
+      "ais_manifest": 274,
+      "opinions_and_wci": 548
+    },
+    "fearnleys": {
+      "fixtures": 537164,
+      "rates": 305098,
+      "broker_comments": 11713,
+      "snp_transactions": 2592,
+      "catalog_routes": 356,
+      "weekly_reports": 175
     }
   },
   "paths": {
@@ -64,6 +129,72 @@
     },
     "poten": {
       "tankers": "reports/poten"
+    },
+    "futures": {
+      "sgx_cape": "data/futures/sgx_cape_futures_history.csv",
+      "sgx_panamax": "data/futures/sgx_panamax_futures_history.csv",
+      "sgx_supramax": "data/futures/sgx_supramax_futures_history.csv",
+      "sgx_handysize": "data/futures/sgx_handysize_futures_history.csv",
+      "sgx_iron_ore_fef": "data/futures/sgx_iron_ore_fef_history.csv",
+      "sgx_iron_ore_m65f": "data/futures/sgx_iron_ore_m65f_history.csv",
+      "sgx_iron_ore_lump_lpf": "data/futures/sgx_iron_ore_lump_lpf_history.csv",
+      "bdryff": "data/futures/bdryff_history.csv",
+      "bwetff": "data/futures/bwetff_history.csv"
+    },
+    "indices": {
+      "capital_link_master": "data/indices/capital_link_indices_master.csv",
+      "capital_link_clci": "data/indices/capital_link_container_clci.csv",
+      "capital_link_cldbi": "data/indices/capital_link_drybulk_cldbi.csv",
+      "capital_link_cllg": "data/indices/capital_link_lng_lpg_cllg.csv",
+      "capital_link_clmi": "data/indices/capital_link_maritime_clmi.csv",
+      "capital_link_clmfi": "data/indices/capital_link_mixed_fleet_clmfi.csv",
+      "capital_link_clmlp": "data/indices/capital_link_mlp_clmlp.csv",
+      "capital_link_clti": "data/indices/capital_link_tanker_clti.csv",
+      "capital_link_excel": "data"
+    },
+    "cftc_statements": {
+      "bdry_monthly_ledger": "data/cftc_statements/parsed/bdry_monthly_cftc_ledger.csv",
+      "bwet_monthly_ledger": "data/cftc_statements/parsed/bwet_monthly_cftc_ledger.csv",
+      "statement_text_audit": "data/cftc_statements/parsed/statement_text_audit.csv",
+      "raw_pdf": "data/cftc_statements/raw_pdf"
+    },
+    "etf": {
+      "bdry_holdings_history": "data/etf/bdry_holdings_history.csv",
+      "bwet_holdings_history": "data/etf/bwet_holdings_history.csv",
+      "bdry_flows": "data/etf/BDRY_flows.csv",
+      "bwet_flows": "data/etf/BWET_flows.csv",
+      "bdry_liquidity": "data/etf/bdry_liquidity.csv",
+      "bwet_liquidity": "data/etf/bwet_liquidity.csv",
+      "sec_filings": "data/etf/sec_filings",
+      "disclosures_pdf": "docs"
+    },
+    "flows": {
+      "usda_fas_export_sales": "data/commodities/usda_fas_outstanding_export_sales.csv",
+      "usda_grain_vessel_loading": "data/commodities/usda_grain_vessel_loading.csv",
+      "usda_grain_loading_queues": "data/commodities/usda_grain_vessel_loading_queues.csv",
+      "usda_bulk_grain_rates": "data/commodities/usda_bulk_grain_ocean_rates.csv",
+      "usda_brazil_ocean_freight": "data/commodities/usda_brazil_ocean_freight.csv",
+      "usda_landed_costs": "data/commodities/usda_us_vs_brazil_landed_costs.csv",
+      "usda_grain_rates_japan": "data/derived/usda_grain_vessel_rates_japan.csv",
+      "usda_us_brazil_cost_spreads": "data/derived/usda_us_vs_brazil_cost_spreads.csv"
+    },
+    "congestion": {
+      "portwatch_congestion": "data/congestion/portwatch_port_congestion.csv",
+      "port_calls_daily": "data/congestion/port_calls_daily.csv",
+      "port_calls_daily_v2": "data/congestion/port_calls_daily_v2.csv",
+      "chokepoint_transits": "data/congestion/chokepoint_transits_daily.csv"
+    },
+    "drewry_ais": {
+      "ais_manifest": "reports/drewry/ais_manifest.csv",
+      "opinions_and_wci": "reports/drewry"
+    },
+    "fearnleys": {
+      "fixtures": "data/derived/fearnleys_fixtures_full.csv",
+      "rates": "data/derived/fearnpulse_rates_full.csv",
+      "broker_comments": "data/derived/fearnleys_broker_comments.csv",
+      "snp_transactions": "data/derived/fearnleys_snp_transactions.csv",
+      "catalog_routes": "data/derived/fearnleys_catalog.csv",
+      "weekly_reports": "reports/fearnleys"
     }
   }
 }
