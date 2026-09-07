@@ -85,21 +85,44 @@ python scripts/pilot/reocr_pilot.py --set data/derived/pilot_image_set.jsonl \
 
 Bounded set manifest (≤50, POSIX paths, `doc_id` + `node_id` + `image_rel` +
 `shard_hint` + reason code + note). All 35 mirrors verified present on disk.
-Priority per board: 86 empty-OCR first (deduped — 74 share one monogram's bytes,
-so 2 reps stand in for the family), then separator suspects (S1–S3), then
-skipped-small (V3 sample).
+
+**D2-a rebalance (2026-09-07):** the first cut inverted the board's priority
+order (18 small_skip vs 14 top-cohort). The new mix restores board order as a
+**decision, not drift**: empty_ocr is the primary cohort (OCR ran and returned
+nothing — likeliest silent content loss per audit §10/W2), separator_suspect
+second (retrieval-layer damage needing vision check), small_skip last and
+small by design. small_skip is retained at 5 rather than 0 for uncertainty
+learning: V3 grades 16/20 as cannot-confirm-without-vision, so five
+hand-picked cannot-confirm cases test whether the <90000px skip threshold is
+hiding tables. Separator is expanded 3→8 because the 228 is a lower bound on
+retrieval-layer damage (audit §6/V2 — the regex catches only the
+mixed-separator class) and suspects are cheap to include at 8 total images.
 
 | Reason | n | Contents |
 |---|---|---|
 | `empty_ocr_large` | 2 | **both** 2500x1667 OCR-empty JPEGs (2023-08-26 `unnamed284329`, 2024-06-14 `image-asset28729`) |
-| `empty_ocr` | 12 | 10 distinct non-monogram empties (arrowcoalprices graphic, 2 BRS logos, greek-label png, 2× 2025 big-picture, 2× 2026 hormuz, 2× crude-tanker photo class) + 2 monogram-dup reps (2023-07-03, 2025-01-31) |
-| `separator_suspect` | 3 | **S1** Vale iron-ore table, **S2** Q3 capesize chart, **S3** dollar-index chart (exact node_ids from INGESTED_IMAGE_AUDIT §6) |
-| `small_skip` | 18 | V3 #1 (logo control), #2, #3, #4, #5, #7, #8, #9, #10, #11, #12, **#13 tableseason (name says table)**, #14, #15, #16, #17, #19 (portrait control), #20 (dup thumbnail, 2nd doc) |
-| **Total** | **35** | within the 20–50 band; 74-way monogram dup collapses to 2 reps by design |
+| `empty_ocr` | 20 | all 10 remaining non-monogram empty classes (arrowcoalprices graphic, 2 BRS logos, greek-label png, 2× 2025 big-picture, 2× 2026 hormuz, 2× crude-tanker photo class = 12 rows incl. the 2 large above → 12 non-monogram rows) + 10 monogram-dup reps (earliest 5 of the 44-instance v1 family + earliest 5 of the 30-instance v2 family, ledger order — both byte-variants now represented; prior cut covered v1 only) |
+| `separator_suspect` | 8 | **S1** Vale iron-ore table, **S2** Q3 capesize chart, **S3** dollar-index chart (kept) + **S4–S8** top-5 non-S rows of the 228 mixed-separator scan by separator-mix signal (S4 2025-04-18 fleet-by-class table mix=19, S5 2026-02-06 BDI spot-price summary mix=12, S6/S7/S8 commodities-wrap tables mix=9 each; ranking = mixed-sep class first, then min(#dot3,#com3) desc, then total hits desc, ledger-order tiebreak) |
+| `small_skip` | 5 | V3#13 tableseason kept (NAME SAYS TABLE, most suspicious) + V3#2 (`2hsettle`, name says settlement table) + V3#8 (`settlements`, name says settlements table) + V3#9/#10 (Klaveness-strip pair, same outlook-iron-ore doc — tests strip-series recoverability). All five graded cannot-confirm-without-vision; learning value: a hit on any filename-says-table case reopens the skip threshold, a hit on the klav pair reopens the whole outlook series, all-no-data confirms the skip stands. |
+| **Total** | **35** | within the 20–50 band; empty cohort (22) is now the majority per board order |
 
-Coverage of the 86: the 12 distinct byte-classes are all represented (74
-monograms → 2 reps + full list recorded in §V3/§10 of the audit); expanding to
-all 86 would burn 74 calls on byte-identical pixels and breach the 50-cap.
+Selection rules (deterministic, from `asset_dispositions.jsonl` ledger order
+joined to tree-node summaries): empty = every `[No OCR text detected]`
+instance outside the 74-monogram dup family (12 rows, all byte-classes
+covered) + earliest-5-per-monogram-byte-variant (10 rows); separator = S1–S3
+by fiat + exact rerun of the audit §6 regex scan (187 mixed-sep + 41
+dot3+dot2 = 228, reproduced 2026-09-07) ranked as above; small_skip = V3
+table-named first (#13, #2, #8) + one strip-series pair (#9/#10). Every row
+carries its parent `node_id`, POSIX `image_rel`, and `shard_hint`; all 35
+mirrors verified on disk at rebalance time.
+
+Coverage of the 86: all 13 distinct byte-classes represented (11 singleton
+classes fully enumerated + both monogram byte-variants with 5 reps each);
+expanding to all 86 would burn 74 calls on near-identical pixels and breach
+the 50-cap. No dry-run regen needed: the dry-run (§4) ran a recorded-fixture
+mock (`FIXTURE/mock.png`, node `FIXTURE__vale_table__s03`) and never read the
+set — `audit.jsonl`/`results.json`/`reconcile.diff` reference no set rows, so
+no dry-run artifact references a changed row.
 
 ## 4. Dry-run results (fixture mock, no network)
 
@@ -184,7 +207,9 @@ does). Labels `improved` vs `contradicted` come from the number-set cross-check.
 ## 9. Files touched (no commits)
 
 - NEW `scripts/pilot/reocr_pilot.py` — pilot harness (stdlib + requests + PIL).
-- NEW `data/derived/pilot_image_set.jsonl` — 35-record pilot set manifest.
+- NEW `data/derived/pilot_image_set.jsonl` — 35-record pilot set manifest
+  (D2-a rebalance 2026-09-07: 14/3/18 → 22 empty / 8 separator / 5 small_skip;
+  harness untouched, dry-run artifacts unchanged per §3).
 - NEW `docs/PILOT_REOCR_MUSE_SPARK.md` — this report.
 - EDIT `docs/INVENTORY_MUSE_SPARK.md` §0 — Decision-2 claim line (1 bullet).
 - `data/derived/pilot_reocr_out/` — dry-run artifacts (audit/results/diff).
