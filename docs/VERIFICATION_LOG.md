@@ -15,7 +15,7 @@ to `origin` to get a verdict.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-06 22:15 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-06 23:35 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
@@ -100,7 +100,7 @@ Do not let the graph layer mask these. A graph over missing legs answers nothing
 
 | branch | head | last push | state |
 |---|---|---|---|
-| `agent/muse-spark` | `2d494bf23` | 2026-09-06 22:00 UTC | **PASS**. **Decision 1 COMPLETE** — 1.1 gate, 1.2 Baltic, 1.3 Poten all landed; gate reads 0/17 with thresholds never touched. Ready for Decision 2 (re-OCR pilot). |
+| `agent/muse-spark` | `e705ac894` | 2026-09-06 23:32 UTC | **PASS**. Decision 1 COMPLETE and now merged to `main`. CG1 override landed (global floor untouchable). Decision 2 pilot harness built, 35 images, dry-run proven — **needs a CI run against a real vision model to produce any actual finding**. |
 | `agent/antigravity` | `12c841745` | 2026-09-06 15:26 UTC | **SEND BACK**, B1-B9 open, **silent ~3.5h** |
 
 **`agent/antigravity`:** no push since its SEND BACK. Its `p0_skipped_assets_queue.jsonl`
@@ -118,6 +118,85 @@ and should be kept and reused.
 
 Decisions 1 and 2 touch the same file (`process_knowledge.py` / `validate_knowledge.py`).
 Split by decision, not by file, and land Decision 1 before anyone starts Decision 2.
+
+---
+
+## 2026-09-06 23:35 UTC — `agent/muse-spark` @ `e705ac894` — **PASS**. CG1 implemented; Decision 2 pilot built and dry-run proven.
+
+**Reviewed:** `7594db0c2` (CG1 per-source floor override), `c3f4f400f` (Decision 2 re-OCR pilot, `scripts/pilot/reocr_pilot.py` +722 lines, 35-image set), `e705ac894` (main sync).
+
+**Also observed: Decision 1 has landed on `main`** — `56fd43900`, `99a4c17c1`, `55de4b82b` plus the pipeline's own `74df30450 knowledge: update`. The gate, the Baltic fix and the Poten fix are now in the trunk, not just on a branch.
+
+### CG1 — implemented as option 1, correctly
+
+The one edit to `scripts/validate_knowledge.py` since `2d494bf23` is the CG1 override, which this reviewer recommended. Checked against the standing rule:
+
+- **`CONTENT_GATE_MEDIAN_FLOOR` is still 120.** Untouched.
+- The override is a scoped dict, `{("baltic","ningbo"): 40}`, resolved by `content_gate_median_floor_for()`.
+- It applies **only to the median rule**. Stub-rate and boilerplate are unchanged for ningbo, and the docstring says so explicitly: *"callers for stub-rate / boilerplate must NOT use this."*
+- Gate re-run with the override: **17 groups, 0 failures.**
+
+### CG1-a — the branch documented a weakening this reviewer had not spelled out
+
+Credit where it is due: the comment block states plainly that *"median-override alone would NOT have caught the 2026 stubs (stub tails med 33-46; note 46 > 40)"*. Reviewer confirmed it:
+
+| ningbo's original stub state | under override 40 |
+|---|---|
+| median 46 | 46 < 40? **no — median rule does not fire** |
+| stub-rate 88% | 0.88 ≥ 0.80? **fires** |
+
+So ningbo's G1-class protection has gone from **two independent grounds to one**, and that one has an **8-percentage-point margin**. Concretely, a future ningbo regression producing ~75% stubs at a median of ~45 would now pass **both** rules and go undetected.
+
+That is the accepted cost of not false-firing on a source whose natural median is 74, and it was the trade this reviewer recommended — but the residual belongs on the record rather than in a code comment alone. If ningbo capture quality is ever in doubt, the check is a manual median comparison against its 74-character historical baseline, not the gate.
+
+### Decision 2 pilot — conforms to every board constraint
+
+Checked item by item against the STATUS BOARD:
+
+| requirement | status |
+|---|---|
+| Pilot 20-50 images, no full batch | **35 images** in `data/derived/pilot_image_set.jsonl` |
+| Existing NIM/Ollama client, no new vendor | Same env names as `process_knowledge.py` (`OLLAMA_BASE_URL/API_KEY/MODEL`, `NIM_API_KEY/MODEL/BASE_URL`), plus `OPENROUTER_*` and `GROQ_*` — **all four CI secrets, no new vendor or key** |
+| Two-stage, axis-first, stage 1 fails closed | `STAGE1_PROMPT` declares structure/scale; `STAGE2_PROMPT` opens *"The declared scale is:"*, consuming stage 1's output; `verify_stage1` gates before stage 2 runs |
+| Extractor and verifier separate | Distinct `verify_stage1` / `verify_stage2` functions; verification never re-calls the model |
+| Redo loop logged | `STAGE1_REDO_PROMPT` / `STAGE2_REDO_PROMPT`, with per-attempt JSONL in `audit.jsonl` |
+| Additive only | *"never writes to `knowledge/`"*; output is a reconcile **diff** |
+| Rate limiting / retry | `_gate()`, `_backoff()`, `MAX_RETRIES`, retry-after parsing |
+
+Two touches worth naming:
+
+**The verifier is self-tested against a planted error.** `MockVenue` returns a stage-2 answer containing `34.438` — the exact Vale mis-separated value from finding S1 — then a corrected one. The dry-run audit shows the loop working end to end:
+
+```
+stage1 attempt 0  ok=true
+stage2 attempt 0  ok=false  ["separator_mix suspect: dot-thousands and comma-thousands/decimal mix"]
+stage2 attempt 1  ok=true
+```
+
+final value `34,438`. A harness that proves it catches the specific error class the project exists to fix is materially better evidence than one that merely runs.
+
+**It closes P-a by policy.** Every reconcile diff ends: *"proposal only — apply via pipeline recompile, never hand-edit shards."* That is the hand-edit from the previous verdict turned into a standing rule.
+
+### D2-a — the cohort mix inverts the board's priority order
+
+The board ordered the pilot set: 86 OCR-attempted-but-empty **first**, then the 228 separator suspects, then the 347 skipped-small. The committed set is:
+
+| cohort | count |
+|---|---|
+| `small_skip` | **18** |
+| `empty_ocr` | 12 |
+| `empty_ocr_large` | 2 |
+| `separator_suspect` | 3 |
+
+The largest allocation goes to the **lowest**-priority cohort. There is a real argument for it — the 347-small group is where V3 graded 16 of 20 "cannot confirm without vision", so it carries the most uncertainty per image, and a pilot's job is to learn rather than to harvest. But the board stated an order, this inverts it, and the deviation is not argued anywhere in the commit.
+
+Not blocking: 14 of 35 (40%) still go to the top-priority cohort, so it is under-weighted rather than ignored. Either re-balance toward `empty_ocr`, or state the learning-value rationale so the deviation is a decision rather than a drift.
+
+### D2-b — the limitation that matters most
+
+**Nothing here has been run against a real vision model.** The proof is a dry-run against `MockVenue` with canned responses. That validates the harness — control flow, staging, verification, redo, audit, diff generation — and validates nothing about extraction accuracy, because no image has been read.
+
+That is the correct place to stop given the sandbox has no keys, and the branch does not overclaim. But it means the pilot's actual finding is still ahead of it: **the 35-image run has to happen in CI**, where the credentials live, before any conclusion about re-OCR quality, cost, or batch readiness is available. The current state is "harness ready", not "pilot complete".
 
 ---
 
