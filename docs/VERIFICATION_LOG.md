@@ -13,6 +13,97 @@ to `origin` to get a verdict.
 
 ---
 
+## 2026-09-07 08:05 UTC — `agent/antigravity` @ `eb0c7cb8a` — **PASS WITH CHANGES. Lane respected, E1 implemented, but the fetcher fails open and its access basis is unresolved.**
+
+Reviewed `767060f84..eb0c7cb8a` (5 files, +1065/-59). This is Decision 4 source
+wiring, which is antigravity's re-activated lane. Not a directive violation.
+
+### Verified good
+
+- **Lane boundaries held.** Every write in `build_knowledge_spine.py` goes to SQLite
+  via `to_sql`. `knowledge/trees/` is read only (line 170). No writes under
+  `knowledge/derived/` from the spine. `scripts/validate_knowledge.py` untouched;
+  `CONTENT_GATE_MEDIAN_FLOOR` still 120. This file not edited, as instructed.
+- **Survey-before-fetcher respected on Fearnleys.** `fact_fearnleys_snp` is built from
+  the already-compiled derived CSVs. No Fearnleys fetcher was written. Correct.
+- **E1 is genuinely implemented, and layered in the right order:** HTTP 200, then
+  `Content-Type: application/pdf`, then `%PDF-` magic bytes, then a 1000-byte floor,
+  then an HTML sniff. That is the fix finding E1 asked for.
+- **`test_04` and `test_05` assert that multi-hop joins return rows** — ETF↔SGX and
+  Capital Link↔S&P. That tests *interlinking*, the end goal's third level, not mere
+  presence. This is the best-shaped test either agent has written.
+
+### A1 — BLOCKING. Checksum mismatch warns, then writes anyway
+
+```python
+if expected_sha and sha != expected_sha:
+    print(f"  [WARN] SHA mismatch ...")
+if not dry_run:
+    ...  f.write(content)          # writes regardless
+```
+
+The manifest checksum is the one authoritative integrity signal available, and it does
+not gate the write. **This is the same fail-open class as muse-spark's `check_tieout`:
+the strongest check in the file is advisory.** Required: a mismatch quarantines, never
+writes. Both agents: a verification signal that does not change control flow is not a
+verification signal.
+
+### A2 — BLOCKING. The success counters overstate, proven by execution
+
+Bucketing is substring matching, and two substrings collide:
+
+```
+QUARANTINED_E1_INVALID_MAGIC_BYTES_x  -> already_valid   ("VALID" inside "INVALID")
+NOT_FOUND_ACROSS_DAMS                 -> downloaded      ("FOUND" inside "NOT_FOUND")
+```
+
+A run that finds nothing at all prints `Successfully Harvested : 548`. Quarantined
+HTML-error payloads are reported as valid local PDFs. **Any harvest numbers reported
+from this script before the fix must be treated as unverified.** Required: return a
+structured status (an enum or tuple), never classify by substring.
+
+### A3 — ESCALATED TO THE USER, not decided here. Access basis for Drewry
+
+`fetch_report` probes DAM directory IDs `025..035` for every manifest row, with a
+spoofed Chrome `User-Agent`. At 548 files that is roughly 6,000 requests guessing
+unlinked URLs on a **paid subscription product**. This is not fetching documents from a
+manifest we hold rights to; it is searching for unlinked resources on a commercial
+vendor.
+
+I am not making this call. **User: state the access basis for Drewry AIS.** If there is
+a subscription, the fetcher must authenticate rather than guess paths and forge a UA. If
+there is not, this fetcher does not run. **Antigravity: do not execute this script
+against `drewry.co.uk` until the user answers.** The E1 validation work is sound and
+survives either answer.
+
+### A4 — Quarantine writes into a committed tree
+
+`QUARANTINE_DIR = data/derived/quarantine_drewry_e1`. The pipeline force-adds
+`data/derived/` (`git add -f knowledge/ data/derived/`), so quarantined HTML error pages
+get committed. Move it under a gitignored path.
+
+### A5 — A foreign absolute path sits in the resolution chain
+
+`find_data_file` falls back to `Path("c:/Users/Dell/Github/Shipping") / rel`. It is inert
+on Linux, so it is not a crash — the problem is evidentiary. **Row counts produced on a
+machine where that path resolved cannot be reproduced from this repository alone.**
+Remove it, then re-run and re-report the counts.
+
+### A6 — `replace` and `append` are mixed, and neither reconciles
+
+`fact_fixtures`, `fact_capital_link_indices`, `fact_usda_grain_flows`,
+`fact_portwatch_congestion` use `if_exists="replace"` — a partial input silently
+truncates history, which is the "rebuild from zero" the user forbade. `fact_sgx_curves`,
+`fact_cftc_etf_ledgers`, `fact_etf_holdings` use `append` with no key — re-running
+duplicates rows. State a primary key per fact table and upsert.
+
+### Verdict
+
+Land A1, A2, A4, A5, A6. Hold A3 for the user. Do not report harvest numbers until A2
+and A5 are fixed.
+
+---
+
 ## 2026-09-07 07:40 UTC — CI — **INFRA DEFECT FIXED. The knowledge pipeline could publish any branch to `main`.**
 
 Run `34094348229` failed on this branch. Validation itself passed clean
@@ -554,7 +645,7 @@ this file again.
 
 # STATUS BOARD
 
-**Last updated: 2026-09-07 07:55 UTC.** Read this before starting work. These are
+**Last updated: 2026-09-07 08:05 UTC.** Read this before starting work. These are
 **user decisions**, confirmed directly — not reviewer recommendations, not open
 questions. They supersede any earlier framing in this log or in
 `REVIEW_BASELINE.md`. Verdict entries below the board are history; the board is
