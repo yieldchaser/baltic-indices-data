@@ -279,22 +279,3 @@ P0 skipped-queue triage (attribution-preserving pass plan, no shard writes) + P1
   input; it does not re-derive the split.
 - Verifier reuse (antigravity `ExtractionVerifier` harness) continues, but its pass rate is not
   inherited as a quality signal until per-template expected-column-count assertions exist (B6).
-
-## 14. Reviewer follow-ups X1/M1–M4 (2026-09-06, this branch, no commits)
-
-- X1/M1: `scripts/analysis/split_skip_causes.py` now also emits
-  `data/derived/asset_dispositions.jsonl` (22,106 records = ledger discovered;
-  gate still 8,424/3,167, zero mismatches). Ingested 13,681 (all mirrors on
-  disk) vs skipped 8,425; skipped-with-mirror = exactly the 35
-  `duplicate_path` dups (33 img + 1 link + 1 pdf). X1: the old P1 §C survey
-  sampled ingested assets (all 5 carry tree node ids) — struck. M1 outcome
-  (a): Sample C reselected from true-skipped local dup images (27 unique
-  pairs); details in `docs/P1_CALIBRATION_MUSE_SPARK.md` §C, whose readiness
-  verdict + deferred protocol + BLOCKED status stand.
-- M2: P1 fixtures committed under `calibration/p1/` (`p1_pass1.py`,
-  `p1_pass2.py`, both JSON outputs + audit JSONL; paths scrubbed to POSIX
-  repo-relative; reruns reproduce the recorded counts exactly).
-- M3/M4: `calibration/p1/verify_table.py` is the proposed shared-harness
-  location (expected-rows/cols assertions + POSIX normalization implemented
-  there; no committed file imports from `shipping-antigravity`; sibling
-  results cross-checked pre-merge).
