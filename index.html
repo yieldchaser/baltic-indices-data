@@ -4671,14 +4671,12 @@
     color: var(--text);
   }
 
-  /* HEATMAP VIEW SELECTOR ROW ROW */
+  /* HEATMAP VIEW SELECTOR ROW */
   .heatmap-view-row {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
-    padding-right: 4px;
+    margin-bottom: 12px;
   }
   .heatmap-view-row label {
     font-size: 12px;
@@ -21780,22 +21778,25 @@ if (intelTabsContainer) {
       var w20  = _computeWinRate(productKey, periods, getPAvg, allYears, 20);
       var wAll = _computeWinRate(productKey, periods, getPAvg, allYears, 0);
 
-      var html = '<table class="rt-table" style="min-width:' + minWidth + 'px;border-collapse:collapse;font-size:12px;">';
+      // heatmap-table class: full styling (borders, sticky th, centered cells).
+      // width:100% so the matrix fills its panel instead of hugging left
+      // with a dead right side at wide viewports.
+      var html = '<table class="heatmap-table" style="width:100%;min-width:' + minWidth + 'px;">';
       html += '<thead><tr>';
-      html += '<th style="text-align:left;padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">' + headerNoun + '</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">10Y Win Rate</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">20Y Win Rate</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">All-Time Win Rate</th>';
+      html += '<th style="text-align:left;">' + headerNoun + '</th>';
+      html += '<th>10Y Win Rate</th>';
+      html += '<th>20Y Win Rate</th>';
+      html += '<th>All-Time Win Rate</th>';
       html += '</tr></thead><tbody>';
 
       periods.forEach(function (p, pi) {
         var r10 = w10[p], r20 = w20[p], rAll = wAll[p];
         var fmt = function (r) { return r != null ? (r * 100).toFixed(0) + '%' : '-'; };
         html += '<tr class="rt-row" data-tt-type="seasonal-winrate-matrix" data-tooltip="Historical win-rate for ' + labels[pi] + ' across different lookback windows. Win = ' + unitWord + ' avg higher than prior ' + unitWord + ' avg.">';
-        html += '<td style="padding:6px 10px;color:var(--text);font-weight:600;">' + labels[pi] + '</td>';
-        html += '<td style="' + _winRateCellStyle(r10) + 'padding:6px 10px;text-align:center;">' + fmt(r10) + '</td>';
-        html += '<td style="' + _winRateCellStyle(r20) + 'padding:6px 10px;text-align:center;">' + fmt(r20) + '</td>';
-        html += '<td style="' + _winRateCellStyle(rAll) + 'padding:6px 10px;text-align:center;">' + fmt(rAll) + '</td>';
+        html += '<td class="year-col" style="text-align:left;">' + labels[pi] + '</td>';
+        html += '<td style="' + _winRateCellStyle(r10) + '">' + fmt(r10) + '</td>';
+        html += '<td style="' + _winRateCellStyle(r20) + '">' + fmt(r20) + '</td>';
+        html += '<td style="' + _winRateCellStyle(rAll) + '">' + fmt(rAll) + '</td>';
         html += '</tr>';
       });
       html += '</tbody></table>';
