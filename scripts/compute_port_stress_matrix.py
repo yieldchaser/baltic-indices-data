@@ -30,6 +30,14 @@ DERIVED_DIR = ROOT / "data" / "derived"
 DERIVED_DIR.mkdir(parents=True, exist_ok=True)
 
 # Port Universe Mapping with Asset Dimensions
+# CANONICAL HUB TRUTH (Wave-1): this list is the SINGLE SOURCE of the port
+# universe — 50 monitored port-asset series across 41 physical UN/LOCODE hubs
+# (16 Dry Bulk + 11 Tankers + 11 LPG + 12 LNG rows; 9 physical ports repeat
+# across asset classes: NLRTM, CNQDG, CNNGB, USHOU, USCRP, AUDAM, AUGLT, QARLF,
+# NGBON). scripts/congestion/port_universe.py re-exports this list (no copy);
+# scripts/congestion/build_port_stress_cache.py derives purely from the
+# port_stress_matrix.csv this script writes; the frontend renders summary.hubs
+# with display fallback `sm.total_monitored || 50` (no hardcoded hub list).
 PORT_METADATA = [
     # Dry Bulk Hubs
     {"portid": "port955", "locode": "AUPHE", "name": "Port Hedland", "country": "Australia", "asset_class": "Dry Bulk", "call_col": "portcalls_dry_bulk"},
@@ -89,6 +97,10 @@ PORT_METADATA = [
     {"portid": "port449", "locode": "NOHFT", "name": "Hammerfest (Snohvit LNG)", "country": "Norway", "asset_class": "LNG", "call_col": "portcalls_tanker"},
     {"portid": "port155", "locode": "NGBON", "name": "Bonny (NLNG)", "country": "Nigeria", "asset_class": "LNG", "call_col": "portcalls_tanker"},
 ]
+
+# Canonical counts derived from the single-source list above (no hardcoding).
+CANONICAL_SERIES_COUNT = len(PORT_METADATA)  # 50 port-asset series
+CANONICAL_PHYSICAL_HUBS = len({e["locode"] for e in PORT_METADATA})  # 41 physical hubs
 
 
 def load_raw_port_calls() -> pd.DataFrame:

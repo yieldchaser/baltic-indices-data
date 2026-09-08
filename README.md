@@ -24,7 +24,7 @@ The production analytical dashboard is served directly from this repository via 
 
 ```mermaid
 flowchart LR
-    A["📡 <b>Data Sources</b><br/>Baltic, Breakwave, Hellenic,<br/>Amplify, SGX, ComexStat, PPA,<br/>US EIA, IMF PortWatch, EU ETS"] --> B["⚙️ <b>GitHub Actions</b><br/>15 Automated Workflows<br/>(Scheduled Crons + Ingestion)"]
+    A["📡 <b>Data Sources</b><br/>Baltic, Breakwave, Hellenic,<br/>Amplify, SGX, ComexStat, PPA,<br/>US EIA, IMF PortWatch, EU ETS"] --> B["⚙️ <b>GitHub Actions</b><br/>17 Automated Workflows<br/>(Scheduled Crons + Ingestion)"]
     B --> C["🗄️ <b>Storage Layer</b><br/>data/ (51+ CSV/JSON Series)<br/>knowledge/ (RAG Corpus)"]
     C --> D["🌐 <b>Web Terminal</b><br/>index.html Dashboard &<br/>Browser RAG Assistant"]
 ```
@@ -225,9 +225,9 @@ Multi-year macro cycles and decade-scale benchmark tracking.
 
 ---
 
-### 📊 Quarterly Tab
+### 🗓️ Seasonality Tab
 
-Seasonal quarterly regimes and path dependency.
+Quarterly, monthly, and heatmap seasonality in one workspace (all three sections render together).
 
 - **Win Rate KPI Cards**: Historical probability each quarter beats the prior quarter (Q1–Q4).
 - **Quarterly Spaghetti Chart**: Q1/Q2/Q3/Q4 across all years rebased to 100 at the start of Q1 to expose path dependency.
@@ -237,9 +237,7 @@ Seasonal quarterly regimes and path dependency.
 
 ---
 
-### 🗓️ Monthly Tab
-
-Intra-year monthly progression and momentum shifts.
+**Monthly** — intra-year progression and momentum shifts.
 
 - **Monthly Win Rate KPI Cards**: Historical probability of each calendar month being positive across multi-decade history.
 - **Monthly Spaghetti Chart**: Index trajectory across all 12 calendar months for each historical year.
@@ -249,9 +247,7 @@ Intra-year monthly progression and momentum shifts.
 
 ---
 
-### 🌡️ Heatmaps Tab
-
-High-density seasonal momentum matrices.
+**Heatmaps** — high-density seasonal momentum matrices.
 
 - **Monthly Performance Heatmap**: Year $\times$ Month, absolute value or MoM % return toggle with CSV download.
 - **Quarterly Heatmap**: Year $\times$ Quarter, absolute value or QoQ % return toggle with CSV download.
@@ -405,6 +401,39 @@ Executive macro desk and deep research workspace.
   - **🌐 Live Web Grounding (Optional)**: When an API key is configured, the Q&A assistant can query the live web for breaking maritime news, freight prints, and geopolitical updates via the provider's native web tooling.
   - **🔬 Deep Research Mode**: Context scaling up to 60 ranked passages (~32,000+ tokens) across 10-year historical report archives.
   - **Scope Filtering**: Breakwave, Baltic, Hellenic, Iron Ore, Shipbuilding, and Domain Textbooks.
+
+---
+
+### 🏗️ Fearnleys Desk Tab
+
+Full Hasura-sourced rate history: 294 series / 356 catalog ids, 32,085 monthly points.
+
+- **Rate Browser**: Desk pills (Tanker, Dry TC, LNG, LPG, Newbuilding, S&P), grouped series picker, Max/10Y/5Y/2Y ranges, live stat cards (latest, MoM, ATH/ATL, history percentile).
+- **Broker Voice**: Latest commentary with desk filter + search; full 11,709-comment archive lazy-loads per desk (tanker/dry/gas/S&P chunks).
+- **Backtest Lab**: Macro health score history with per-regime 1M forward-hit pills (realized outcomes, not forecasts).
+
+---
+
+### 🛰️ Tracking Tab
+
+Live vessel lineup, congestion, and chokepoint telemetry (1,568 hulls across 36 ports; tanker-skewed snapshot, disclosed in-UI).
+
+- **Live HUD**: Hull/DWT counts, anchor/berth split, Red Sea diversion + Cape surge from live feeds (no hardcoded fallbacks; missing feed shows —).
+- **Lineup table**: Anchored-since sorting, wait/arrival/DWT sorts, DWT size filter, hull↔DWT lens, KPI-as-filter cards, queue build/clear signal.
+- **Chokepoint directory**: 28 chokepoints with tonnage + Gen Cargo / Ro-Ro sector toggles, 5Y envelopes, Suez-vs-Cape delta estimates (labeled diagnostic).
+- **Voyage-leg economics**: Per-IMO last-leg transit/distance/speed in tooltips (2,657 IMOs, 100% lineup overlap; absent where unrecorded).
+
+---
+
+### 🛢️ Bunkers Tab
+
+Global bunker fuel terminal: 221-port spot matrix with live composite deltas, 12M forward curves (6 hubs), Singapore/Rotterdam physical volumes (labeled 2-port), scrubber economics, BIX benchmark strip, LNG/MEOH/EUA alt-fuel view.
+
+---
+
+### ⚓ Offshore Tab
+
+Monthly Seabreeze OSV ingestion: segment-filtered dayrate KPIs (Large/Med AHTS, PSV) with YoY coloring, 5Y average envelopes with min/max bands, utilization overlay, searchable 25/page ledger, report cards with direct PDF deep-links.
 
 ---
 
@@ -645,7 +674,7 @@ flowchart LR
 
 ## 6. Automated GitHub Actions Workflows
 
-The repository maintains itself via 15 idempotent GitHub Actions workflows:
+The repository maintains itself via 17 idempotent GitHub Actions workflows:
 
 | Workflow File | Cron Schedule | Triggers | Execution Script Sequence | Function & Output |
 | :--- | :--- | :--- | :--- | :--- |
@@ -669,7 +698,7 @@ The repository maintains itself via 15 idempotent GitHub Actions workflows:
 
 ## 7. Codebase Inventory & Python Scripts Reference (`scripts/`)
 
-The repository contains 69 specialized Python modules across quantitative pricing, data ingestion, governance, and verification:
+The repository contains 150+ specialized Python modules across quantitative pricing, data ingestion, governance, and verification (major modules inventoried below):
 
 | Script Name | Size | Primary Role & Description |
 | :--- | :--- | :--- |
@@ -726,6 +755,10 @@ The repository contains 69 specialized Python modules across quantitative pricin
 | [`migrate_historical_archives_and_manifest.py`](file:///c:/Users/Dell/Github/Shipping/scripts/migrate_historical_archives_and_manifest.py) | 3.8 KB | Historical archive migration helper. |
 | [`fetch_fearnleys_tc.py`](file:///c:/Users/Dell/Github/Shipping/scripts/fetch_fearnleys_tc.py) | 3.7 KB | Fearnleys Hasura API time charter rate fetcher. |
 | [`test_accounting_integrity_guards.py`](file:///c:/Users/Dell/Github/Shipping/scripts/test_accounting_integrity_guards.py) | 3.3 KB | Accounting invariant and cash balance guard tests. |
+| [`build_series_cache.py`](file:///c:/Users/Dell/Github/Shipping/scripts/fearnleys/build_series_cache.py) | 3.4 KB | Per-label monthly means + ATH/ATL/percentile cache (294 series) for the Fearnleys desk browser. |
+| [`build_vessel_leg_economics.py`](file:///c:/Users/Dell/Github/Shipping/scripts/geospatial/build_vessel_leg_economics.py) | 2.8 KB | Latest voyage leg per IMO (2,657) for Tracking tooltips; derived avg kn, omitted where unrecorded. |
+| [`build_comment_chunks.py`](file:///c:/Users/Dell/Github/Shipping/scripts/fearnleys/build_comment_chunks.py) | 2.8 KB | Broker-comment archive chunker (11,709 rows → 4 per-desk lazy-load JSONs). |
+| [`port_universe.py`](file:///c:/Users/Dell/Github/Shipping/scripts/congestion/port_universe.py) | 2.5 KB | Single-source port-asset hub universe (50 series / 41 physical hubs) shared by stress builders. |
 | [`append_daily_holdings.py`](file:///c:/Users/Dell/Github/Shipping/scripts/append_daily_holdings.py) | 2.3 KB | Daily ETF holdings appending utility. |
 | [`knowledge_hash.py`](file:///c:/Users/Dell/Github/Shipping/scripts/knowledge_hash.py) | 1.2 KB | Incremental hashing helper for knowledge builds. |
 
@@ -763,7 +796,7 @@ python scripts/update_etf_holdings.py
 # 4. Verify Cryptographic SHA-256 Provenance & Production Artifact Integrity
 python scripts/verify_production_artifact_integrity.py
 
-# 5. Run Full Automated Test Suites (85/85 Passed)
+# 5. Run Full Automated Test Suites (87/87 Passed)
 python scratch/run_all_test_suites.py
 python scripts/test_decision_ticket_workflow.py
 

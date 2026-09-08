@@ -330,6 +330,8 @@ def main():
         'n_container': ['sum', 'mean'],
         'n_dry_bulk': ['sum', 'mean'],
         'n_tanker': ['sum', 'mean'],
+        'n_general_cargo': ['sum', 'mean'],
+        'n_roro': ['sum', 'mean'],
         'n_cargo': ['sum', 'mean'],
         'capacity': ['sum', 'mean']
     }).reset_index()
@@ -340,6 +342,8 @@ def main():
         'n_container_sum', 'n_container_avg',
         'n_dry_bulk_sum', 'n_dry_bulk_avg',
         'n_tanker_sum', 'n_tanker_avg',
+        'n_general_cargo_sum', 'n_general_cargo_avg',
+        'n_roro_sum', 'n_roro_avg',
         'n_cargo_sum', 'n_cargo_avg',
         'capacity_sum', 'capacity_avg'
     ]
@@ -375,6 +379,8 @@ def main():
                 'cnt_avg': round(float(mrow['n_container_avg']), 1) if not pd.isna(mrow['n_container_avg']) else 0,
                 'blk_avg': round(float(mrow['n_dry_bulk_avg']), 1) if not pd.isna(mrow['n_dry_bulk_avg']) else 0,
                 'tnk_avg': round(float(mrow['n_tanker_avg']), 1) if not pd.isna(mrow['n_tanker_avg']) else 0,
+                'gc_avg': round(float(mrow['n_general_cargo_avg']), 1) if not pd.isna(mrow['n_general_cargo_avg']) else 0,
+                'roro_avg': round(float(mrow['n_roro_avg']), 1) if not pd.isna(mrow['n_roro_avg']) else 0,
                 'cap_dwt': int(mrow['capacity_avg']) if not pd.isna(mrow['capacity_avg']) else 0
             })
 
@@ -387,6 +393,8 @@ def main():
                 'cnt': int(drow['n_container']) if not pd.isna(drow['n_container']) else 0,
                 'blk': int(drow['n_dry_bulk']) if not pd.isna(drow['n_dry_bulk']) else 0,
                 'tnk': int(drow['n_tanker']) if not pd.isna(drow['n_tanker']) else 0,
+                'gc': int(drow['n_general_cargo']) if not pd.isna(drow['n_general_cargo']) else 0,
+                'roro': int(drow['n_roro']) if not pd.isna(drow['n_roro']) else 0,
                 'cap': int(drow['capacity']) if not pd.isna(drow['capacity']) else 0
             })
 
@@ -411,6 +419,8 @@ def main():
             'latest_container': int(latest_row['n_container']) if not pd.isna(latest_row['n_container']) else 0,
             'latest_dry_bulk': int(latest_row['n_dry_bulk']) if not pd.isna(latest_row['n_dry_bulk']) else 0,
             'latest_tanker': int(latest_row['n_tanker']) if not pd.isna(latest_row['n_tanker']) else 0,
+            'latest_general_cargo': int(latest_row['n_general_cargo']) if not pd.isna(latest_row['n_general_cargo']) else 0,
+            'latest_roro': int(latest_row['n_roro']) if not pd.isna(latest_row['n_roro']) else 0,
             'latest_capacity': int(latest_row['capacity']) if not pd.isna(latest_row['capacity']) else 0,
             'avg_7d': val_7d,
             'avg_30d': val_30d,

@@ -64,6 +64,28 @@ jobs:
         timeout-minutes: 10
         run: |
           if [ -f scripts/fearnleys/daily_fearnleys_sync.py ]; then python scripts/fearnleys/daily_fearnleys_sync.py; fi
+          if [ -f scripts/fearnleys/build_comment_chunks.py ]; then python scripts/fearnleys/build_comment_chunks.py; fi
+
+      - name: Geospatial voyage tracker (idempotent, additive-only)
+        # Rebuilds lineup/voyage/UI-vector caches from existing fixture data only.
+        # Idempotent: deterministic hashes + drop_duplicates; never deletes data/.
+        # Graceful-fail: guarded by file-exists checks + continue-on-error.
+        continue-on-error: true
+        timeout-minutes: 20
+        run: |
+          if [ -f scripts/geospatial/build_geospatial_tracker.py ]; then python scripts/geospatial/build_geospatial_tracker.py; fi
+          if [ -f scripts/geospatial/build_vessel_leg_economics.py ]; then python scripts/geospatial/build_vessel_leg_economics.py; fi
+
+      - name: Port stress matrix + cache (idempotent, additive-only)
+        # compute_port_stress_matrix reads data/congestion/port_calls_daily.csv
+        # (written by the PortWatch step above) and rewrites only its own two
+        # outputs; build_port_stress_cache derives only from that matrix CSV.
+        # Idempotent: pure recompute from the same inputs; graceful-fail guarded.
+        continue-on-error: true
+        timeout-minutes: 20
+        run: |
+          if [ -f scripts/compute_port_stress_matrix.py ]; then python scripts/compute_port_stress_matrix.py; fi
+          if [ -f scripts/congestion/build_port_stress_cache.py ]; then python scripts/congestion/build_port_stress_cache.py; fi
 
       - name: Commit and push changes
         run: |

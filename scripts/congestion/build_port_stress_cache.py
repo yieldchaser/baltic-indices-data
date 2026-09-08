@@ -134,6 +134,22 @@ def main():
 
     hubs_latest.sort(key=sort_severity)
 
+    # Wave-1 hub-truth validation (non-fatal): compare observed counts against
+    # the canonical universe (50 series / 41 physical hubs, single-sourced
+    # from scripts/compute_port_stress_matrix.py via port_universe.py).
+    # importlib-by-path: no package (__init__.py) assumptions, never fatal.
+    try:
+        import importlib.util
+
+        _pu_path = Path(__file__).resolve().parent / "port_universe.py"
+        _spec = importlib.util.spec_from_file_location("port_universe", _pu_path)
+        _pu = importlib.util.module_from_spec(_spec)
+        _spec.loader.exec_module(_pu)
+        _pu.validate_hub_counts(len(hubs_latest), len({h["locode"] for h in hubs_latest}))
+        logging.info("Hub counts match canonical truth: %d series / %d physical hubs.", _pu.SERIES_COUNT, _pu.PHYSICAL_HUB_COUNT)
+    except Exception as e:  # noqa: BLE001 — validation must never break the cache
+        logging.warning("Hub validation skipped/drifted vs canonical truth: %s", e)
+
     output_payload = {
         "metadata": {
             "source": "IMF PortWatch Daily AIS Gateway & Tonnage Squeeze Engine",

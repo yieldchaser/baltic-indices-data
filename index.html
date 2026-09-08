@@ -4860,6 +4860,7 @@
     .bunkers-toolbar {
       background: var(--card);
       border: 1px solid var(--border);
+      border-left: 3px solid #e3b341;
       border-radius: 8px;
       padding: 10px 14px;
       display: flex;
@@ -5006,9 +5007,11 @@
     .bunkers-port-row:hover {
       background: rgba(77, 154, 255, 0.07);
     }
-    .bunkers-port-row.selected {
+    .bunkers-port-row.selected td {
       background: rgba(77, 154, 255, 0.16);
-      border-left: 3px solid var(--accent);
+    }
+    .bunkers-port-row.selected td:first-child {
+      box-shadow: inset 3px 0 0 var(--accent);
     }
 
     .bunkers-table-footer {
@@ -5088,6 +5091,92 @@
       border: 1.5px solid rgba(255, 255, 255, 0.85);
       border-radius: 50%;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    /* BNKR own HUD idiom (tracking uses blue): amber rail + mono tag */
+    .bnkr-tag {
+      display: inline-block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      color: #0d1117;
+      background: #e3b341;
+      border-radius: 3px;
+      padding: 1px 6px;
+      letter-spacing: 0.06em;
+    }
+    .bunkers-prov {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-family: 'IBM Plex Mono', monospace;
+      padding: 6px 2px 0 2px;
+    }
+    /* BIX benchmark strip */
+    .bix-strip-wrap {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid #a371f7;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+    }
+    .bix-strip-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .bix-strip {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .bix-chip-group {
+      display: flex;
+      gap: 6px;
+      align-items: stretch;
+      flex: 1;
+      min-width: 200px;
+    }
+    .bix-chip-ix {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      color: #a371f7;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      text-align: center;
+      min-width: 14px;
+    }
+    .bix-chip {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 5px 8px;
+      flex: 1;
+      min-width: 96px;
+      cursor: help;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .bix-chip:hover { border-color: #a371f7; }
+    .bix-g { font-size: 9px; color: var(--text-muted); font-weight: 700; letter-spacing: 0.05em; }
+    .bix-p { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 700; color: #fff; }
+    .bix-d { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text-muted); }
+    .bix-d.up { color: var(--red); }
+    .bix-d.dn { color: var(--green); }
+    .bix-chart-box { height: 110px; position: relative; margin-top: 8px; }
+    .bunkers-spark {
+      font-family: 'IBM Plex Mono', monospace;
+      color: #7a8494;
+      letter-spacing: 1px;
+      font-size: 11px;
+      line-height: 1.1;
     }
 
 
@@ -10108,12 +10197,11 @@
   <div class="tabs-bar">
     <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
     <button class="tab-btn" data-tab="yearly-dash">Yearly</button>
-    <button class="tab-btn" data-tab="quarterly">Quarterly</button>
-    <button class="tab-btn" data-tab="monthly-dash">Monthly</button>
-    <button class="tab-btn" data-tab="heatmaps">Heatmaps</button>
+    <button class="tab-btn" data-tab="seasonality">Seasonality</button>
     <button class="tab-btn" data-tab="indices">Indices</button>
     <button class="tab-btn" data-tab="etfs">ETFs</button>
     <button class="tab-btn" data-tab="signals">Signals</button>
+    <button class="tab-btn" data-tab="fearnleys">Fearnleys</button>
     <button class="tab-btn" data-tab="intelligence">Intelligence</button>
     <button class="tab-btn" data-tab="tracking">Tracking</button>
     <button class="tab-btn" data-tab="bunkers">Bunkers</button>
@@ -10470,7 +10558,8 @@
     <!-- ===== TAB: MONTHLY DASHBOARD ===== -->
 
     <!-- ===== TAB: QUARTERLY ===== -->
-    <div class="tab-panel" id="tab-quarterly">
+    <div class="tab-panel" id="tab-seasonality">
+      <!-- SECTION: Quarterly -->
       <!-- Win-Rate KPI Cards -->
       <div class="win-rate-row mb-20" id="winRateRow" data-tooltip="Probability of Expansion - historical 'Hit Rate' for this specific period. 60%+ signifies a high-conviction seasonal tailwind backed by decades of data."></div>
 
@@ -10522,12 +10611,8 @@
           <div id="quarterlyWinRateMatrix"></div>
         </div>
       </div>
-    </div>
 
-    <!-- ===== TAB: INDICES ===== -->
-
-    <!-- ===== TAB: MONTHLY ===== -->
-    <div class="tab-panel" id="tab-monthly-dash">
+      <!-- SECTION: Monthly -->
       <!-- Win-Rate KPI Cards -->
       <div class="win-rate-row mb-20" id="monthlyWinRateRow" data-tooltip="Monthly Win Rate — historical probability of each calendar month generating positive return based on multi-decade history."></div>
 
@@ -10575,12 +10660,8 @@
           <div id="monthlyWinRateMatrix"></div>
         </div>
       </div>
-    </div>
 
-    <!-- ===== TAB: SIGNALS ===== -->
-
-    <!-- ===== TAB: HEATMAPS ===== -->
-    <div class="tab-panel" id="tab-heatmaps">
+      <!-- SECTION: Heatmaps -->
       <div class="heatmap-view-row">
         <label for="heatmapViewSelect" data-tooltip="View Mode toggle - Absolute Values show raw index levels (useful for spotting price floors/ceilings). % Change mode converts each cell to the Month-over-Month or Quarter-over-Quarter % return, making seasonal momentum patterns immediately obvious.">Heatmap View:</label>
         <select id="heatmapViewSelect" onchange="onHeatmapViewChange()">
@@ -10611,8 +10692,6 @@
         </div>
       </div>
     </div>
-
-    <!-- ===== TAB: QUARTERLY ===== -->
 
     <!-- ===== TAB: INDICES ===== -->
     <div class="tab-panel" id="tab-indices">
@@ -11089,6 +11168,11 @@
                 <input type="range" class="deconst-slider" id="deconstSliderSuez" data-tooltip="<div class='rt-title'>Suezmax TD20 Rate Shock</div><div class='rt-row'><span class='rt-label'>Vessel Size</span><span class='rt-val'>150,000-160,000 DWT Suezmax Crude Tanker</span></div><div class='rt-row'><span class='rt-label'>Major Route</span><span class='rt-val'>West Africa to UK-Continent</span></div><div class='rt-note'>Applies a macro percentage shock to all Suezmax crude tanker futures contracts.</div>" min="-50" max="100" value="0" step="1" onmousedown="window._isSliderDragging=true" onmouseup="window._isSliderDragging=false" onchange="window._isSliderDragging=false; onDeconstSliderInput()" oninput="onDeconstSliderInput()" style="width:100%;">
               </div>
             </div>
+            <div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; padding:6px 10px; border-top:1px solid var(--border); font-size:10px; font-family:'IBM Plex Mono', monospace; color:var(--text-muted);">
+              <span id="queueSignalBadge">Queue signal: —</span>
+              <span id="lineupTotalsLine">— hulls · — DWT</span>
+            </div>
+            <div id="coverageFootnote" style="padding:4px 10px 8px; font-size:10px; color:var(--text-muted); line-height:1.4;"></div>
           </div>
 
           <!-- Right Column: One-Click Macro Presets & Reverse Price Solver -->
@@ -13357,6 +13441,51 @@
 
     </div>
 
+    <!-- ===== TAB: FEARNLEYS DESK ===== -->
+    <div class="tab-panel" id="tab-fearnleys">
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title" data-tooltip="Fearnleys desk — all 294 rate series with monthly history (tanker WS spots, TC curves, LNG/LPG, newbuildings, S&P age curves). Pick a desk, then a series. Stats recompute from the cached monthly history.">Fearnleys Rate Browser <span id="fearnDeskCoverage" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;" id="fearnTypePills"></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+          <select id="fearnLabelSelect" class="tracking-select" style="min-width:320px;max-width:100%;" onchange="onFearnLabelChange()"></select>
+          <div style="display:flex;gap:4px;" id="fearnRangeBtns">
+            <button class="tracking-status-btn" data-range="24" onclick="setFearnRange('24')">2Y</button>
+            <button class="tracking-status-btn" data-range="60" onclick="setFearnRange('60')">5Y</button>
+            <button class="tracking-status-btn" data-range="120" onclick="setFearnRange('120')">10Y</button>
+            <button class="tracking-status-btn active" data-range="max" onclick="setFearnRange('max')">Max</button>
+          </div>
+        </div>
+        <div class="tracking-kpi-grid" id="fearnStatCards"></div>
+        <div class="chart-canvas-wrap" style="height:340px;margin-top:10px;"><canvas id="fearnMainChart"></canvas></div>
+        <div id="fearnSeriesNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+      </div>
+
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title" data-tooltip="Broker voice — latest Fearnleys written commentary (tanker, dry bulk, S&P, gas). Full 11,714-comment archive lives in data/derived/fearnleys_broker_comments.csv.">Broker Voice <span id="fearnVoiceCount" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+          <select id="fearnVoiceType" class="tracking-select" onchange="onFearnVoiceChange()">
+            <option value="all">All desks</option>
+          </select>
+          <input type="text" id="fearnVoiceSearch" class="tracking-input" placeholder="Search commentary..." oninput="onFearnVoiceChange()">
+          <button id="fearnArchiveBtn" class="tracking-status-btn" onclick="loadFearnArchive()" data-tooltip="Lazy-load the full per-desk comment archive (11,709 rows in 4 chunks) for deeper search.">Load full archive</button>
+        </div>
+        <div id="fearnVoiceStream" style="display:flex;flex-direction:column;gap:8px;max-height:520px;overflow-y:auto;"></div>
+      </div>
+
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title" data-tooltip="Backtest lab — macro health score history with forward BDI returns by regime. Point-in-time composite; forwards are realized outcomes, not forecasts.">Backtest Lab <span style="font-size:11px;color:var(--text-muted);font-weight:400;">score vs realized forwards</span></div>
+        </div>
+        <div id="fearnRegimePills" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;"></div>
+        <div class="chart-canvas-wrap" style="height:300px;"><canvas id="fearnBacktestChart"></canvas></div>
+        <div id="fearnBacktestNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+      </div>
+    </div>
+
     <!-- ── Intelligence Tab ──────────────────────────────────────────────── -->
 
     <!-- ===== TAB: INTELLIGENCE ===== -->
@@ -13599,21 +13728,21 @@ if (intelTabsContainer) {
         </div>
       </div>
 
-      <!-- 6-KPI HUD STRIP -->
+      <!-- 6-KPI HUD STRIP (values overwritten live by updateTrackingHUD; shell defaults = last verified snapshot) -->
       <div class="tracking-kpi-grid">
-        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Monitored Fleet Hulls" data-tt-val="740 Active Vessels" data-tt-desc="Continuous AIS hull tracking across 27 primary global loading terminals and discharge anchorages.">
+        <div class="tracking-kpi-card" style="cursor:pointer;" onclick="trackingHudFilter('all')" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Monitored Fleet Hulls" data-tt-val="1,568 Active Vessels" data-tt-desc="Continuous AIS hull tracking across 36 ports in the live lineup snapshot. Click to clear status filter.">
           <div class="tracking-kpi-label">Monitored Vessels <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><line x1="12" y1="1" x2="12" y2="10"/></svg></span></div>
-          <div class="tracking-kpi-val" id="hudTrackedHulls">740</div>
-          <div class="tracking-kpi-sub accent">27 Global Strategic Hubs</div>
+          <div class="tracking-kpi-val" id="hudTrackedHulls">1,568</div>
+          <div class="tracking-kpi-sub accent" id="hudTrackedHullsSub">36 Ports · 325.4M DWT</div>
         </div>
-        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Waiting at Anchor" data-tt-val="306 Vessels" data-tt-desc="Vessels anchored awaiting berth availability, customs clearance, or discharge windows. Measures port congestion.">
+        <div class="tracking-kpi-card" style="cursor:pointer;" onclick="trackingHudFilter('Waiting at anchor')" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Waiting at Anchor" data-tt-val="619 Vessels" data-tt-desc="Vessels anchored awaiting berth availability, customs clearance, or discharge windows. Measures port congestion. Click to filter lineup to anchored queue.">
           <div class="tracking-kpi-label">Waiting at Anchor <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><circle cx="12" cy="5" r="3"/><line x1="12" y1="8" x2="12" y2="21"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M5 12l2 2"/><path d="M19 12l-2 2"/></svg></span></div>
-          <div class="tracking-kpi-val" id="hudWaitingAnchor" style="color:var(--yellow);">306</div>
-          <div class="tracking-kpi-sub warn">Congestion Bottlenecks</div>
+          <div class="tracking-kpi-val" id="hudWaitingAnchor" style="color:var(--yellow);">619</div>
+          <div class="tracking-kpi-sub warn" id="hudWaitingAnchorSub">Congestion Bottlenecks</div>
         </div>
-        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Operating at Berth" data-tt-val="434 Vessels" data-tt-desc="Vessels actively loading or discharging dry bulk and tanker parcels at terminal jetties.">
+        <div class="tracking-kpi-card" style="cursor:pointer;" onclick="trackingHudFilter('Operating at berth')" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Operating at Berth" data-tt-val="949 Vessels" data-tt-desc="Vessels actively loading or discharging dry bulk and tanker parcels at terminal jetties. Click to filter lineup to berth operations.">
           <div class="tracking-kpi-label">Operating at Berth <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span></div>
-          <div class="tracking-kpi-val" id="hudOperatingBerth" style="color:var(--green);">434</div>
+          <div class="tracking-kpi-val" id="hudOperatingBerth" style="color:var(--green);">949</div>
           <div class="tracking-kpi-sub good">Active Loading / Discharging</div>
         </div>
         <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Strategic Maritime Chokepoints" data-tt-val="28 Passages" data-tt-desc="Critical international canals and straits monitored for transit volume, draft constraints, and geopolitical diversions.">
@@ -13621,15 +13750,15 @@ if (intelTabsContainer) {
           <div class="tracking-kpi-val" id="hudChokepointsCount">28</div>
           <div class="tracking-kpi-sub">Canals, Straits &amp; Passages</div>
         </div>
-        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Bab el-Mandeb / Red Sea Diversion" data-tt-val="-73.1% Transit Volume" data-tt-desc="Structural avoidance of Southern Red Sea transit corridor following maritime security incidents, diverting tonnage around Africa.">
+        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Bab el-Mandeb / Red Sea Diversion" data-tt-val="-73.1% Transit Volume" data-tt-desc="Live diverted share from chokepoint transit metrics (Bab el-Mandeb vs pre-disruption baseline). Recomputed on every data load — no hardcoded fallback.">
           <div class="tracking-kpi-label">Red Sea / Bab el-Mandeb <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span></div>
           <div class="tracking-kpi-val" id="hudRedSeaDiverted" style="color:var(--red);">-73.1%</div>
-          <div class="tracking-kpi-sub alert">vs Pre-Houthi Crisis Baseline</div>
+          <div class="tracking-kpi-sub alert" id="hudRedSeaDivertedSub">vs Pre-Disruption Baseline</div>
         </div>
-        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Cape of Good Hope Rerouting Surge" data-tt-val="+75.6% Transit Volume" data-tt-desc="Massive vessel rerouting around the southern tip of Africa adding 10-15 sailing days and absorbing fleet ton-mile capacity.">
+        <div class="tracking-kpi-card" data-tooltip=" " data-tt-type="tracking-hud" data-tt-title="Cape of Good Hope Rerouting Surge" data-tt-val="+75.6% Transit Volume" data-tt-desc="Live surge share from chokepoint summary rerouting-crisis telemetry. Recomputed on every data load — no hardcoded fallback.">
           <div class="tracking-kpi-label">Cape of Good Hope <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span></div>
           <div class="tracking-kpi-val" id="hudCapeSurge" style="color:#a371f7;">+75.6%</div>
-          <div class="tracking-kpi-sub accent">+14.5 Days Ton-Mile Surge</div>
+          <div class="tracking-kpi-sub accent" id="hudCapeSurgeSub">+14.5 Days Ton-Mile Surge</div>
         </div>
       </div>
 
@@ -13648,6 +13777,24 @@ if (intelTabsContainer) {
           <button class="tracking-status-btn" data-status="Waiting at anchor" onclick="setTrackingStatus('Waiting at anchor')">At Anchor</button>
           <button class="tracking-status-btn" data-status="Operating at berth" onclick="setTrackingStatus('Operating at berth')">At Berth</button>
 
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:8px; margin-right:4px;">SORT:</div>
+          <select id="trackingSortMode" class="tracking-select" onchange="onTrackingSortChange()" data-tooltip="Wait-queue order: longest wait, newest / oldest arrival (anchored-since), or largest DWT.">
+            <option value="wait_desc" selected>Longest Wait</option>
+            <option value="arrival_desc">Newest Arrival</option>
+            <option value="arrival_asc">Oldest Arrival</option>
+            <option value="dwt_desc">Largest DWT</option>
+          </select>
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:8px; margin-right:4px;">SIZE:</div>
+          <select id="trackingDwtFilter" class="tracking-select" onchange="onTrackingDwtChange()" data-tooltip="Deadweight filter: isolate Panamax+, Capesize/VLCC, or U-VLCC hulls.">
+            <option value="0" selected>Any DWT</option>
+            <option value="40000">Panamax+ (≥40k)</option>
+            <option value="60000">Kamsar+ (≥60k)</option>
+            <option value="100000">Capesize+ (≥100k)</option>
+            <option value="200000">VLCC+ (≥200k)</option>
+          </select>
+          <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:8px; margin-right:4px;">LENS:</div>
+          <button id="btnTonnageLens" class="tracking-status-btn" onclick="toggleTonnageLens()" data-tooltip="Toggle hull-count vs deadweight-tonnage lens for pills, HUD, and lineup totals.">Hulls</button>
+
           <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-left:12px; margin-right:4px;">LAYERS:</div>
           <label class="tracking-layer-chk"><input type="checkbox" id="layerVessels" checked onchange="toggleTrackingLayer('vessels')"> AIS Vessels</label>
           <label class="tracking-layer-chk"><input type="checkbox" id="layerChokepoints" checked onchange="toggleTrackingLayer('chokepoints')"> Chokepoints</label>
@@ -13656,7 +13803,7 @@ if (intelTabsContainer) {
         </div>
         <div class="tracking-tool-right">
           <select id="trackingPortSelect" class="tracking-select" onchange="onTrackingPortChange()">
-            <option value="all">All Monitored Ports (27 Hubs)</option>
+            <option value="all">All Monitored Ports (36 Hubs)</option>
           </select>
           <input type="text" id="trackingSearchInput" class="tracking-input" placeholder="Search vessel, IMO, cargo..." oninput="onTrackingSearchInput()">
         </div>
@@ -13668,7 +13815,7 @@ if (intelTabsContainer) {
         <div class="tracking-left-pane">
           <div class="tracking-subview-nav">
             <button id="subnavLineup" class="tracking-subview-btn active" onclick="setTrackingSubView('lineup')">
-              Port Lineup (<span id="lineupCountBadge">740</span>)
+              Port Lineup (<span id="lineupCountBadge">1,568</span>)
             </button>
             <button id="subnavChokepoints" class="tracking-subview-btn" onclick="setTrackingSubView('chokepoints')">
               Chokepoints Ledger (28)
@@ -13680,7 +13827,7 @@ if (intelTabsContainer) {
               Distance &amp; Routing
             </button>
             <button id="subnavStress" class="tracking-subview-btn" onclick="setTrackingSubView('stress')">
-              Port Squeeze &amp; Stress (41 Hubs)
+              Port Squeeze &amp; Stress (50 Hubs · 41 Ports)
             </button>
           </div>
 
@@ -13693,6 +13840,7 @@ if (intelTabsContainer) {
                     <th>Vessel / IMO</th>
                     <th>Class</th>
                     <th>Port</th>
+                    <th>Anchored Since</th>
                     <th>Wait</th>
                     <th>Status</th>
                   </tr>
@@ -13703,7 +13851,7 @@ if (intelTabsContainer) {
               </table>
             </div>
             <div class="tracking-table-footer">
-              <span id="trackingPageInfo">Showing 1–50 of 740</span>
+              <span id="trackingPageInfo">Showing 1–25 of 1,568</span>
               <div style="display:flex; gap:6px;">
                 <button id="btnTrackingPrev" class="tracking-page-btn" onclick="prevTrackingPage()">Prev</button>
                 <button id="btnTrackingNext" class="tracking-page-btn" onclick="nextTrackingPage()">Next</button>
@@ -13882,7 +14030,7 @@ if (intelTabsContainer) {
                 <circle cx="12" cy="12" r="10"></circle>
                 <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
               </svg>
-              <span id="mapHudDetail">740 vessels rendered across 27 ports</span>
+              <span id="mapHudDetail">1,568 vessels rendered across 36 ports</span>
             </div>
 
             <div class="map-legend-overlay">
@@ -13918,7 +14066,7 @@ if (intelTabsContainer) {
             </div>
 
             <div class="cp-narrative-note" id="cpDrawerNote">
-              <strong>Red Sea Rerouting Crisis</strong>: Houthi strikes force Asia-Europe vessels to bypass Suez/Bab el-Mandeb, steaming around the Cape of Good Hope (+3,500 NM, +14.5 days).
+              <strong>Red Sea Rerouting Crisis</strong>: Houthi strikes force Asia-Europe vessels to bypass Suez/Bab el-Mandeb, steaming around the Cape of Good Hope (est. +14.5 days, editorial_estimate_diagnostic).
             </div>
 
             <div class="cp-kpis-strip">
@@ -13950,6 +14098,8 @@ if (intelTabsContainer) {
                 <button class="cp-toggle-btn" data-metric="tanker" onclick="setChokepointMetric('tanker')" data-tooltip="Crude, product, and chemical tanker transits.">Tankers</button>
                 <button class="cp-toggle-btn" data-metric="bulk" onclick="setChokepointMetric('bulk')" data-tooltip="Capesize, Panamax, Supramax, and Handysize dry bulk carrier transits.">Dry Bulk</button>
                 <button class="cp-toggle-btn" data-metric="container" onclick="setChokepointMetric('container')" data-tooltip="Container ship transits and liner capacity.">Containers</button>
+                <button class="cp-toggle-btn" data-metric="gencargo" onclick="setChokepointMetric('gencargo')" data-tooltip="General-cargo / multipurpose transits (daily CSV sector).">Gen Cargo</button>
+                <button class="cp-toggle-btn" data-metric="roro" onclick="setChokepointMetric('roro')" data-tooltip="Ro-Ro / vehicle-carrier transits (daily CSV sector).">Ro-Ro</button>
                 <button class="cp-toggle-btn" data-metric="capacity" onclick="setChokepointMetric('capacity')" data-tooltip="Aggregate deadweight capacity (k DWT) transiting the chokepoint.">Capacity (DWT)</button>
               </div>
               <div style="font-size:10px; color:var(--text-muted); font-family:'IBM Plex Mono', monospace;">
@@ -13978,11 +14128,12 @@ if (intelTabsContainer) {
             </svg>
             Global Bunker Fuel &amp; Marine Energy Terminal
           </h2>
-          <div class="bunkers-sub">Daily Spot Indications across 221 Ports, 12M Forward Delivery Curves, Scrubber TCE Economics &amp; FuelEU / EU ETS Carbon Compliance</div>
+          <div class="bunkers-sub">Daily Spot Indications across 221 Ports, 12M Forward Delivery Curves, Scrubber TCE Economics &amp; FuelEU / EU ETS Carbon Compliance · One truth: DATA.bunkerSummary</div>
         </div>
         <div class="tracking-live-tag">
           <span class="tracking-live-dot"></span>
-          SHIP &amp; BUNKER / TIDEFORM BENCHMARKS
+          <span class="bnkr-tag">BNKR</span>
+          SHIP &amp; BUNKER · TIDEFORM BENCHMARKS
         </div>
       </div>
 
@@ -13990,23 +14141,23 @@ if (intelTabsContainer) {
       <div class="bunkers-kpi-grid">
         <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="VLSFO" data-tt-title="Global VLSFO Composite">
           <div class="bunkers-kpi-label">Global VLSFO (0.5% S) <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span></div>
-          <div class="bunkers-kpi-val" id="bunkerKpiVlsfo">$865.50</div>
-          <div class="bunkers-kpi-sub good" id="bunkerKpiVlsfoSub">-$3.50 · Primary IMO 2020 Compliance Fuel</div>
+          <div class="bunkers-kpi-val" id="bunkerKpiVlsfo">$875.00</div>
+          <div class="bunkers-kpi-sub good" id="bunkerKpiVlsfoSub">-$1.50 D/D (09-07 vs 09-03) · Primary IMO 2020 Compliance Fuel</div>
         </div>
         <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="IFO380" data-tt-title="Global IFO380 / HSFO Composite">
           <div class="bunkers-kpi-label">Global HSFO / IFO380 <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span></div>
-          <div class="bunkers-kpi-val" id="bunkerKpiHsfo">$663.50</div>
-          <div class="bunkers-kpi-sub alert" id="bunkerKpiHsfoSub">+$2.00 · High Sulfur Scrubber-Fitted Fuel</div>
+          <div class="bunkers-kpi-val" id="bunkerKpiHsfo">$669.50</div>
+          <div class="bunkers-kpi-sub alert" id="bunkerKpiHsfoSub">+$2.50 D/D (09-07 vs 09-03) · High Sulfur Scrubber-Fitted Fuel</div>
         </div>
         <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="MGO" data-tt-title="Global MGO Composite">
           <div class="bunkers-kpi-label">Global MGO (0.1% S) <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span></div>
-          <div class="bunkers-kpi-val" id="bunkerKpiMgo">$1,464.50</div>
-          <div class="bunkers-kpi-sub good" id="bunkerKpiMgoSub">-$8.00 · ECA Zone &amp; Port Auxiliary Marine Gasoil</div>
+          <div class="bunkers-kpi-val" id="bunkerKpiMgo">$1,504.00</div>
+          <div class="bunkers-kpi-sub alert" id="bunkerKpiMgoSub">+$3.00 D/D (09-07 vs 09-03) · ECA Zone &amp; Port Auxiliary Marine Gasoil</div>
         </div>
         <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-scrubber-cell" data-tt-title="Singapore Hi-5 Scrubber Spread">
           <div class="bunkers-kpi-label">Singapore Hi-5 Spread <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span></div>
           <div class="bunkers-kpi-val" id="bunkerKpiHi5" style="color:#a371f7;">$205.50</div>
-          <div class="bunkers-kpi-sub purple" id="bunkerKpiHi5Sub">Cape TCE +$9,248/d · Payback ~8.5 Mos</div>
+          <div class="bunkers-kpi-sub alert" id="bunkerKpiHi5Sub">+$50.50 7D (SS 09-04 vs 08-28) · Cape TCE +$9,248/d · Payback ~8.5 Mos</div>
         </div>
         <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="EUA" data-tt-title="EU ETS Maritime Carbon Allowance">
           <div class="bunkers-kpi-label">EU ETS Carbon EUA <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span></div>
@@ -14015,14 +14166,24 @@ if (intelTabsContainer) {
         </div>
         <div class="bunkers-kpi-card" data-tooltip=" " data-tt-type="bunker-kpi" data-tt-grade="VOL" data-tt-title="Singapore Physical Sales Volume">
           <div class="bunkers-kpi-label">Singapore Bunkering <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;"><circle cx="12" cy="5" r="3"/><line x1="12" y1="8" x2="12" y2="21"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M5 12l2 2"/><path d="M19 12l-2 2"/></svg></span></div>
-          <div class="bunkers-kpi-val" id="bunkerKpiVol" style="color:#00e5ff;">4.56M MT</div>
-          <div class="bunkers-kpi-sub cyan" id="bunkerKpiVolSub">+5.8% YoY · Official MPA Singapore Delivery</div>
+          <div class="bunkers-kpi-val" id="bunkerKpiVol" style="color:#00e5ff;">4.73M MT</div>
+          <div class="bunkers-kpi-sub alert" id="bunkerKpiVolSub">-3.8% YoY · MPA Singapore 2026-07 Monthly Delivery</div>
         </div>
       </div>
+      <div class="bunkers-prov">PROVENANCE · levels + Δ live from kpis{} (bunker_frontend_summary.json, obs 2026-09-07): global Δ = daily composite 09-07 vs 09-03 · Hi-5 7D Δ = SG SS master 09-04 vs 08-28 · vol = MPA SG 2026-07 monthly, YoY vs 2025-07 · EU ETS €72.50 static screening assumption (no live feed).</div>
 
-      <!-- FILTER & SLICER TOOLBAR -->
+      <!-- BIX BENCHMARK STRIP (benchmarks_bix: 5 indices × 3 grades, obs 2026-09-04) -->
+      <div class="bix-strip-wrap">
+        <div class="bix-strip-head"><span class="bnkr-tag">BIX</span><span id="bunkerBixHead">Bunker Index benchmarks · 5 regions × VLSFO / IFO380 / MGO · obs 2026-09-04</span></div>
+        <div class="bix-strip" id="bunkerBixStrip"><!-- Populated by renderBunkersBixStrip() --></div>
+        <div class="bix-chart-box"><canvas id="bunkerBixChart"></canvas></div>
+        <div class="bunkers-prov">Source: benchmarks_bix[] via bunker_bix_macro_benchmarks.csv · Δ = change_usd (change_pct) · hover chip = low_usd–high_usd range · chart = BIX_World VLSFO + IFO380, trailing 10 obs.</div>
+      </div>
+
+      <!-- FILTER & SLICER TOOLBAR (BNKR idiom: amber rail, mono micro-labels) -->
       <div class="bunkers-toolbar">
         <div class="bunkers-tool-left">
+          <span class="bnkr-tag">BNKR</span>
           <div style="font-size:11px; font-weight:600; color:var(--text-muted); margin-right:4px;">REGION:</div>
           <button class="bunkers-pill active" data-region="all" onclick="setBunkerRegion('all')">All Regions (221 Ports)</button>
           <button class="bunkers-pill" data-region="APAC" onclick="setBunkerRegion('APAC')">Asia-Pacific (APAC)</button>
@@ -14058,6 +14219,9 @@ if (intelTabsContainer) {
             <button id="subnavBunkersScrubber" class="bunkers-subview-btn" onclick="setBunkersSubView('scrubber')" data-tooltip="Scrubber premium payback economics, Hi-5 spreads, and EU ETS carbon compliance costs.">
               Scrubber &amp; EU ETS
             </button>
+            <button id="subnavBunkersAltfuels" class="bunkers-subview-btn" onclick="setBunkersSubView('altfuels')" data-tooltip="Verified LNG, methanol and EUA carbon indications — non-null ports only, never zero-filled.">
+              Alt Fuels (LNG·MEOH·EUA)
+            </button>
           </div>
 
           <!-- Subview 1: 221 Ports Spot Matrix -->
@@ -14076,6 +14240,7 @@ if (intelTabsContainer) {
                     <th data-tooltip="Marine Gas Oil (0.1% max sulphur) distillate price in $/MT.">MGO</th>
                     <th id="bunkersThCol5" data-tooltip="High Sulphur Fuel Oil (3.5% max sulphur) price in $/MT.">HSFO</th>
                     <th data-tooltip="Fuel price differential relative to Singapore benchmark hub ($/MT).">Spread (vs SG)</th>
+                    <th data-tooltip="VLSFO delta: pipeline change_7d when live, else MoM-from-monthly_series fallback (labeled MoM*) + 12-month VLSFO sparkline and range.">Δ + 12M Spark</th>
                   </tr>
                 </thead>
                 <tbody id="bunkersTableBodyAll">
@@ -14126,10 +14291,10 @@ if (intelTabsContainer) {
             </div>
           </div>
 
-          <!-- Subview 3: Physical Sales Volumes -->
+          <!-- Subview 3: Physical Sales Volumes (2 PORTS ONLY) -->
           <div id="bunkersSubviewVolumes" class="bunkers-subview-content" style="display:none;">
             <div style="padding:10px 14px; background:#0e141c; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
-              <div style="font-size:11px; font-weight:600; color:var(--text-muted);">DELIVERY PORT:</div>
+              <div style="font-size:11px; font-weight:600; color:var(--text-muted);">DELIVERY PORT — <span style="color:#e3b341;">2 PORTS ONLY</span> (SG monthly · RTM quarterly):</div>
               <select id="bunkersVolHubSelect" class="tracking-select" onchange="onBunkersVolHubChange()" data-tooltip="Select bunker volume reporting port authority.">
                 <option value="Singapore" selected>Singapore (MPA Official Volumes)</option>
                 <option value="Rotterdam">Rotterdam (Port Authority Deliveries)</option>
@@ -14151,7 +14316,33 @@ if (intelTabsContainer) {
               </table>
             </div>
             <div style="font-size:10px; color:var(--text-muted); padding:8px 12px; background:#0a0e14; border-top:1px solid var(--border); font-family:'IBM Plex Mono', monospace;">
-              Source: Maritime and Port Authority of Singapore &amp; Havenbedrijf Rotterdam
+              Source: Maritime and Port Authority of Singapore (monthly) &amp; Havenbedrijf Rotterdam (quarterly) · Coverage: 2 of 221 ports — no other port reports verified physical volumes.
+            </div>
+          </div>
+
+          <!-- Subview 5: Alt Fuels — LNG / Methanol / EUA (non-null ports only, never zero-filled) -->
+          <div id="bunkersSubviewAltfuels" class="bunkers-subview-content" style="display:none;">
+            <div style="padding:7px 12px; background:rgba(0, 229, 255, 0.06); border-bottom:1px solid rgba(0, 229, 255, 0.2); font-size:11px; color:#c9d1d9;" id="bunkersAltFuelsCap">
+              Verified alt-fuel indications — non-null ports only.
+            </div>
+            <div class="bunkers-table-wrap">
+              <table class="bunkers-table">
+                <thead>
+                  <tr>
+                    <th data-tooltip="Port with at least one verified alt-fuel indication.">Port / Hub</th>
+                    <th data-tooltip="Liquefied natural gas bunker indication ($/MT). Null = no verified quote, never zero.">LNG</th>
+                    <th data-tooltip="Methanol bunker indication ($/MT). Null = no verified quote, never zero.">MEOH</th>
+                    <th data-tooltip="EU Allowance carbon price. Null = no verified quote, never zero.">EUA</th>
+                    <th data-tooltip="B24 biofuel blend ($/MT) for reference.">B24 Bio</th>
+                  </tr>
+                </thead>
+                <tbody id="bunkersAltFuelsTableBody">
+                  <!-- Populated by renderBunkersAltFuels() -->
+                </tbody>
+              </table>
+            </div>
+            <div style="font-size:10px; color:var(--text-muted); padding:8px 12px; background:#0a0e14; border-top:1px solid var(--border); font-family:'IBM Plex Mono', monospace;">
+              Source: DATA.bunkerSummary ports[].lng/.meoh/.eua/.bio (Ship &amp; Bunker RPC) · '—' = null (no verified indication), never 0-filled.
             </div>
           </div>
 
@@ -14486,10 +14677,13 @@ if (intelTabsContainer) {
       lng_charter: [],
       portLineups: [],
       vesselTrajectories: {},
+      voyageLegs: {},
       bunkerPrices: [],
       bunkerSummary: null,
       chokepointSummary: null,
       fearnleysSummary: null,
+      fearnleysSeries: null,
+      macroBacktest: [],
       offshoreSummary: null,
       portStressSummary: null,
       chokepointMetrics: [],
@@ -14505,7 +14699,6 @@ if (intelTabsContainer) {
       usda_landed_costs: [],
       usdaLandedCost: [],
       landed_cost: [],
-      usdaCostSpreads: [],
       usdaVesselQueues: [],
       usda_vessel_queues: [],
       usdaBunkers: [],
@@ -15658,16 +15851,17 @@ if (intelTabsContainer) {
 
         const usdaBunkersPromise = safeFetch('data/derived/usda_bunker_fuel_daily.csv', 'USDA Bunker Prices', [], r => {
           DATA.usdaBunkers = DATA.usda_bunkers = (r || []).map(row => {
-            const y = row.Year, m = row.Month, day = row.Day;
-            const dateStr = `${y}-${String(m).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-            const d = parseDateISO(dateStr);
+            // USDA ships Day as MM/DD/YYYY with Month as a name; parse Day directly.
+            const rawDay = (row.Day || '').trim();
+            const d = parseDate(rawDay) || parseDateISO(rawDay);
+            const dateStr = d ? fmtDate(d) : rawDay;
             return {
               date: d,
               dateStr: dateStr,
               vlsfo: parseFloat(row['VLSFO Fuel Oil, IMO 2020 Grade, 0.5%'] || 0) || null,
               mgo: parseFloat(row['Marine Gas Oil'] || 0) || null,
               ifo180: parseFloat(row['Intermdiate Fuel Oil, 180cSt'] || 0) || null,
-              ifo380: parseFloat(row['Intermediate Fuel Oil, 380cSt'] || 0) || null,
+              ifo380: parseFloat(row['Intermdiate Fuel Oil, 380cSt'] || 0) || null,
             };
           }).filter(row => row.date != null);
         });
@@ -15763,9 +15957,12 @@ if (intelTabsContainer) {
               exportDryBulkKt: parseFloat(row.export_dry_bulk_kt) || null,
               importTankerKt: parseFloat(row.import_tanker_kt) || null,
               exportTankerKt: parseFloat(row.export_tanker_kt) || null,
-              vesselsAnchored: parseInt(row.vessels_at_anchorage, 10) || null,
-              avgWaitingDays: parseFloat(row.avg_waiting_days) || null,
-              waitingDays7dma: parseFloat(row.waiting_days_7dma) || null,
+              // Wave-1 fix: source CSV has no vessels_at_anchorage / avg_waiting_days
+              // columns (see portwatch header). Snapshot-derived queue depth is
+              // enriched post-load by enrichPortwatchSnapshot() from live lineups.
+              vesselsAnchored: null,
+              avgWaitingDays: null,
+              waitingDays7dma: null,
             };
           }).filter(row => row.date != null);
         });
@@ -15860,12 +16057,24 @@ if (intelTabsContainer) {
             dwt: parseInt(row.dwt, 10) || 0,
             operational_status: (row.operational_status || '').trim(),
             arrival_timestamp: (row.arrival_timestamp || '').trim(),
+            arrival_date: parseDateISO((row.arrival_timestamp || '').trim()) || parseDate((row.arrival_timestamp || '').trim()),
             days_waiting: parseFloat(row.days_waiting) || 0,
             cargo_type: (row.cargo_type || '').trim(),
             lat: parseFloat(row.lat) || 0,
             lon: parseFloat(row.lon) || 0
           }));
         });
+
+        // Wave-1 Tracking: per-IMO voyage-leg economics cache (transit_days/distance_nm
+        // from vessel_voyage_tracks_master; matched by IMO, never synthesised).
+        const voyageLegsPromise = fetch('data/derived/vessel_leg_economics.json')
+          .then(res => res.ok ? res.json() : {})
+          .then(data => { DATA.voyageLegs = data || {}; })
+          .catch(err => { console.warn('[voyageLegs fetch error]', err); DATA.voyageLegs = {}; });
+
+
+
+
 
         const chokepointSummaryPromise = fetch('data/congestion/chokepoint_geo_summary.json')
           .then(res => res.ok ? res.json() : null)
@@ -15910,6 +16119,35 @@ if (intelTabsContainer) {
             DATA.fearnleysSummary = null;
           });
 
+        // Wave-2 Fearnleys desk: per-label monthly series cache (294 labels).
+        const fearnleysSeriesPromise = fetch('data/derived/fearnleys_series_monthly.json')
+          .then(res => res.ok ? res.json() : null)
+          .then(data => {
+            DATA.fearnleysSeries = data;
+          })
+          .catch(err => {
+            console.warn('[fearnleysSeries fetch error]', err);
+            DATA.fearnleysSeries = null;
+          });
+
+        // Wave-2 Fearnleys desk: macro health backtest (score + fwd returns by regime).
+        const macroBacktestPromise = safeFetch('data/derived/macro_health_score_backtest.csv', 'Macro Health Backtest', [], r => {
+          var out = [];
+          (r || []).forEach(function (row) {
+            var d = (row.date || '').trim();
+            if (!d) return;
+            out.push({
+              d: d,
+              score: parseFloat(row.total_score),
+              regime: (row.regime || '').trim(),
+              bdi: parseFloat(row.bdi) || null,
+              f1m: parseFloat(row.bdi_fwd_1M),
+              f3m: parseFloat(row.bdi_fwd_3M)
+            });
+          });
+          DATA.macroBacktest = out;
+        });
+
         const bunkerSummaryPromise = fetch('data/bunkers/bunker_frontend_summary.json')
           .then(res => res.ok ? res.json() : null)
           .then(data => {
@@ -15952,7 +16190,7 @@ if (intelTabsContainer) {
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
           sgxOreForwardPromise,
-          portLineupsPromise, vesselTrajectoriesPromise, bunkerPricesPromise, bunkerSummaryPromise, fearnleysSummaryPromise, offshoreSummaryPromise, portStressSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
+          portLineupsPromise, vesselTrajectoriesPromise, voyageLegsPromise, bunkerPricesPromise, bunkerSummaryPromise, fearnleysSummaryPromise, fearnleysSeriesPromise, macroBacktestPromise, offshoreSummaryPromise, portStressSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
           ...sgxPromises
         ];
 
@@ -17636,7 +17874,7 @@ if (intelTabsContainer) {
         // charts (renderQDAreaComp1, renderQDBarChart, renderQDDataGrid) remain.
         function () { renderQDBarChart(productKey); },
         function () { renderQDDataGrid(productKey); },
-        function () { renderQDDataGrid(productKey); },
+        function () { renderQuarterlyWinRateMatrix(productKey); },
       ];
       // Synchronous Batch 1 (0ms latency), Batch 2 in RAF
       for (let i = 0; i < 3 && i < fns.length; i++) {
@@ -20251,8 +20489,7 @@ if (intelTabsContainer) {
       }
 
       if (tabId === 'dashboard') renderDashboard(currentProduct);
-      if (tabId === 'heatmaps') renderHeatmaps(currentProduct);
-      if (tabId === 'quarterly') renderQuarterlyTab(currentProduct);
+      if (tabId === 'seasonality') { renderQuarterlyTab(currentProduct); renderMonthlyDash(currentProduct); renderHeatmaps(currentProduct); }
       if (tabId === 'indices' && !indicesRendered) { renderIndicesTab(); indicesRendered = true; }
       if (tabId === 'etfs') {
         renderETFTab();
@@ -20267,8 +20504,8 @@ if (intelTabsContainer) {
         } catch (e) { console.error('[ETFTab Engine]', e); }
       }
       if (tabId === 'yearly-dash') renderYearlyDash(currentProduct);
-      if (tabId === 'monthly-dash') renderMonthlyDash(currentProduct);
       if (tabId === 'signals') { renderSignalsTab(currentProduct); if (typeof initFearnleysTerminal === 'function') initFearnleysTerminal(); }
+      if (tabId === 'fearnleys') renderFearnleysTab();
       if (tabId === 'intelligence') renderIntelligenceTab();
       if (tabId === 'tracking') renderTrackingTab();
       if (tabId === 'bunkers') renderBunkersTab();
@@ -20307,10 +20544,8 @@ if (intelTabsContainer) {
       currentProduct = this.value;
       if (!DATA.loaded) return;
       if (currentTab === 'dashboard') renderDashboard(currentProduct);
-      if (currentTab === 'heatmaps') renderHeatmaps(currentProduct);
-      if (currentTab === 'quarterly') renderQuarterlyTab(currentProduct);
+      if (currentTab === 'seasonality') { renderQuarterlyTab(currentProduct); renderMonthlyDash(currentProduct); renderHeatmaps(currentProduct); }
       if (currentTab === 'yearly-dash') renderYearlyDash(currentProduct);
-      if (currentTab === 'monthly-dash') renderMonthlyDash(currentProduct);
       if (currentTab === 'signals') renderSignalsTab(currentProduct);
       if (currentTab === 'intelligence') renderIntelligenceTab();
       if (currentTab === 'etfs') {
@@ -21311,76 +21546,49 @@ if (intelTabsContainer) {
       return 'background:rgba(210,153,34,0.15);color:#d29922;font-weight:600;';
     }
 
-    function renderQuarterlyWinRateMatrix(productKey) {
-      var el = document.getElementById('quarterlyWinRateMatrix');
+    function _renderWinRateMatrix(elId, periods, labels, getPAvg, productKey, unitWord, headerNoun, minWidth) {
+      var el = document.getElementById(elId);
       if (!el) return;
-      var qs = ['Q1', 'Q2', 'Q3', 'Q4'];
       var allYears = getProductYears(productKey);
       if (!allYears || !allYears.length) { el.innerHTML = ''; return; }
 
-      var getPAvg = function (pk, y, q) { return getQAvgCached(pk, y, q); };
+      var w10  = _computeWinRate(productKey, periods, getPAvg, allYears, 10);
+      var w20  = _computeWinRate(productKey, periods, getPAvg, allYears, 20);
+      var wAll = _computeWinRate(productKey, periods, getPAvg, allYears, 0);
 
-      var w10  = _computeWinRate(productKey, qs, getPAvg, allYears, 10);
-      var w20  = _computeWinRate(productKey, qs, getPAvg, allYears, 20);
-      var wAll = _computeWinRate(productKey, qs, getPAvg, allYears, 0);
-
-      var html = '<table class="rt-table" style="min-width:320px;border-collapse:collapse;font-size:12px;">';
+      var html = '<table class="rt-table" style="min-width:' + minWidth + 'px;border-collapse:collapse;font-size:12px;">';
       html += '<thead><tr>';
-      html += '<th style="text-align:left;padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">Quarter</th>';
+      html += '<th style="text-align:left;padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">' + headerNoun + '</th>';
       html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">10Y Win Rate</th>';
       html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">20Y Win Rate</th>';
       html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">All-Time Win Rate</th>';
       html += '</tr></thead><tbody>';
 
-      qs.forEach(function (q) {
-        var r10 = w10[q], r20 = w20[q], rAll = wAll[q];
+      periods.forEach(function (p, pi) {
+        var r10 = w10[p], r20 = w20[p], rAll = wAll[p];
         var fmt = function (r) { return r != null ? (r * 100).toFixed(0) + '%' : '-'; };
-        html += '<tr class="rt-row" data-tt-type="seasonal-winrate-matrix" data-tooltip="Historical win-rate for ' + q + ' across different lookback windows. Win = quarter avg higher than previous quarter avg.">';
-        html += '<td style="padding:6px 10px;color:var(--text);font-weight:600;">' + q + '</td>';
+        html += '<tr class="rt-row" data-tt-type="seasonal-winrate-matrix" data-tooltip="Historical win-rate for ' + labels[pi] + ' across different lookback windows. Win = ' + unitWord + ' avg higher than prior ' + unitWord + ' avg.">';
+        html += '<td style="padding:6px 10px;color:var(--text);font-weight:600;">' + labels[pi] + '</td>';
         html += '<td style="' + _winRateCellStyle(r10) + 'padding:6px 10px;text-align:center;">' + fmt(r10) + '</td>';
         html += '<td style="' + _winRateCellStyle(r20) + 'padding:6px 10px;text-align:center;">' + fmt(r20) + '</td>';
         html += '<td style="' + _winRateCellStyle(rAll) + 'padding:6px 10px;text-align:center;">' + fmt(rAll) + '</td>';
         html += '</tr>';
       });
       html += '</tbody></table>';
-      html += '<div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Win = quarter average above prior quarter average. <span style="color:#3fb950">&gt;60%</span> = seasonally bullish. <span style="color:#f85149">&lt;40%</span> = seasonally bearish.</div>';
+      html += '<div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Win = ' + unitWord + ' average above prior ' + unitWord + ' average. <span style="color:#3fb950">&gt;60%</span> = seasonally bullish. <span style="color:#f85149">&lt;40%</span> = seasonally bearish.</div>';
       el.innerHTML = html;
     }
 
+    function renderQuarterlyWinRateMatrix(productKey) {
+      var qs = ['Q1', 'Q2', 'Q3', 'Q4'];
+      var getPAvg = function (pk, y, q) { return getQAvgCached(pk, y, q); };
+      _renderWinRateMatrix('quarterlyWinRateMatrix', qs, qs, getPAvg, productKey, 'quarter', 'Quarter', 320);
+    }
+
     function renderMonthlyWinRateMatrix(productKey) {
-      var el = document.getElementById('monthlyWinRateMatrix');
-      if (!el) return;
       var months = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-      var allYears = getProductYears(productKey);
-      if (!allYears || !allYears.length) { el.innerHTML = ''; return; }
-
       var getPAvg = function (pk, y, m) { return getMAvgCached(pk, y, m); };
-
-      var w10  = _computeWinRate(productKey, months, getPAvg, allYears, 10);
-      var w20  = _computeWinRate(productKey, months, getPAvg, allYears, 20);
-      var wAll = _computeWinRate(productKey, months, getPAvg, allYears, 0);
-
-      var html = '<table class="rt-table" style="min-width:400px;border-collapse:collapse;font-size:12px;">';
-      html += '<thead><tr>';
-      html += '<th style="text-align:left;padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">Month</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">10Y Win Rate</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">20Y Win Rate</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">All-Time Win Rate</th>';
-      html += '</tr></thead><tbody>';
-
-      months.forEach(function (m) {
-        var r10 = w10[m], r20 = w20[m], rAll = wAll[m];
-        var fmt = function (r) { return r != null ? (r * 100).toFixed(0) + '%' : '-'; };
-        html += '<tr class="rt-row" data-tt-type="seasonal-winrate-matrix" data-tooltip="Historical win-rate for ' + MONTH_NAMES[m] + ' across different lookback windows. Win = month avg higher than prior month avg.">';
-        html += '<td style="padding:6px 10px;color:var(--text);font-weight:600;">' + MONTH_NAMES[m] + '</td>';
-        html += '<td style="' + _winRateCellStyle(r10) + 'padding:6px 10px;text-align:center;">' + fmt(r10) + '</td>';
-        html += '<td style="' + _winRateCellStyle(r20) + 'padding:6px 10px;text-align:center;">' + fmt(r20) + '</td>';
-        html += '<td style="' + _winRateCellStyle(rAll) + 'padding:6px 10px;text-align:center;">' + fmt(rAll) + '</td>';
-        html += '</tr>';
-      });
-      html += '</tbody></table>';
-      html += '<div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Win = month average above prior month average. <span style="color:#3fb950">&gt;60%</span> = seasonally bullish. <span style="color:#f85149">&lt;40%</span> = seasonally bearish.</div>';
-      el.innerHTML = html;
+      _renderWinRateMatrix('monthlyWinRateMatrix', months, MONTH_NAMES, getPAvg, productKey, 'month', 'Month', 400);
     }
 
     // =====================================================================
@@ -35503,7 +35711,14 @@ var trackingSelectedStatus = 'all';
 var trackingSelectedPort = 'all';
 var trackingSearchQuery = '';
 var trackingCurrentPage = 1;
-var TRACKING_PAGE_SIZE = 50;
+var TRACKING_PAGE_SIZE = 25;
+var trackingSortMode = 'wait_desc';
+var trackingMinDwt = 0;
+var trackingTonnageLens = false;
+// Provenance tag for any Tracking figure derived outside direct observation
+// (Suez-vs-Cape delta, queue-pressure signal). Never presented as measured fact.
+var TRACKING_EST_PROVENANCE = 'editorial_estimate_diagnostic';
+window.TRACKING_PROVENANCE = { derived_estimate: TRACKING_EST_PROVENANCE };
 
 var trackingActiveSubView = 'lineup';
 var trackingActiveChokepointId = 'bab_el_mandeb';
@@ -35679,16 +35894,124 @@ function populateTrackingPortOptions() {
   });
 }
 
-function updateTrackingHUD() {
-  var vessels = DATA.portLineups || [];
-  var total = vessels.length;
-  var waiting = vessels.filter(function(v) { return v.operational_status === 'Waiting at anchor'; }).length;
-  var berth = vessels.filter(function(v) { return v.operational_status === 'Operating at berth'; }).length;
+function fmtDwtMt(dwt) {
+  if (!dwt) return '—';
+  if (dwt >= 1000000) return (dwt / 1000000).toFixed(1) + 'M DWT';
+  return Math.round(dwt / 1000) + 'k DWT';
+}
 
-  var countTanker = vessels.filter(function(v) { return (v.asset_class || '').toLowerCase().includes('tanker'); }).length;
-  var countBulk = vessels.filter(function(v) { return (v.asset_class || '').toLowerCase().includes('bulk'); }).length;
-  var countLpg = vessels.filter(function(v) { return (v.asset_class || '').toLowerCase().includes('lpg'); }).length;
-  var countLng = vessels.filter(function(v) { return (v.asset_class || '').toLowerCase().includes('lng'); }).length;
+function trackingLiveCounts() {
+  var vessels = DATA.portLineups || [];
+  var waiting = 0, berth = 0, dwtTotal = 0, dwtWait = 0, waitSum = 0;
+  var ports = {}, cls = { tanker: 0, bulk: 0, lpg: 0, lng: 0 }, clsDwt = { tanker: 0, bulk: 0, lpg: 0, lng: 0 };
+  vessels.forEach(function(v) {
+    if (v.operational_status === 'Waiting at anchor') { waiting++; dwtWait += (v.dwt || 0); }
+    if (v.operational_status === 'Operating at berth') berth++;
+    dwtTotal += (v.dwt || 0);
+    waitSum += (v.days_waiting || 0);
+    ports[v.port_locode || v.portname] = true;
+    var c = (v.asset_class || '').toLowerCase();
+    var k = c.includes('tanker') ? 'tanker' : (c.includes('bulk') ? 'bulk' : (c.includes('lpg') ? 'lpg' : (c.includes('lng') ? 'lng' : null)));
+    if (k) { cls[k]++; clsDwt[k] += (v.dwt || 0); }
+  });
+  return {
+    total: vessels.length, waiting: waiting, berth: berth,
+    dwtTotal: dwtTotal, dwtWait: dwtWait,
+    avgWait: vessels.length ? waitSum / vessels.length : 0,
+    waitShare: vessels.length ? waiting / vessels.length : 0,
+    nPorts: Object.keys(ports).length,
+    cls: cls, clsDwt: clsDwt
+  };
+}
+
+function trackingReroutingTelemetry() {
+  // Live Red Sea / Cape figures from DATA. No hardcoded fallbacks: missing feeds -> null ('—').
+  var out = { divertedPct: null, divertedSrc: null, capePct: null, capeSrc: null, daysAdded: null, daysSrc: null, tonneMilePct: null };
+  (DATA.chokepointMetrics || []).forEach(function(m) {
+    var nm = (m.chokepoint || '').toLowerCase();
+    if (nm.includes('bab-el-mandeb') || nm.includes('bab el')) {
+      if (m.diverted_pct != null && m.diverted_pct !== '') { out.divertedPct = parseFloat(m.diverted_pct); out.divertedSrc = 'chokepoint_transit_metrics.csv (Bab-el-Mandeb)'; }
+      if (m.avg_rerouting_voyage_days_added != null && m.avg_rerouting_voyage_days_added !== '') { out.daysAdded = parseFloat(m.avg_rerouting_voyage_days_added); out.daysSrc = 'chokepoint_transit_metrics.csv'; }
+      if (m.implied_tonne_mile_expansion_pct != null && m.implied_tonne_mile_expansion_pct !== '') out.tonneMilePct = parseFloat(m.implied_tonne_mile_expansion_pct);
+    }
+  });
+  var meta = DATA.chokepointSummary && DATA.chokepointSummary.meta;
+  if (meta && meta.rerouting_crisis) {
+    if (meta.rerouting_crisis.cape_of_good_hope_surge_pct != null) { out.capePct = parseFloat(meta.rerouting_crisis.cape_of_good_hope_surge_pct); out.capeSrc = 'chokepoint_geo_summary.json rerouting_crisis'; }
+    if (out.daysAdded == null && meta.rerouting_crisis.implied_additional_voyage_days != null) { out.daysAdded = parseFloat(meta.rerouting_crisis.implied_additional_voyage_days); out.daysSrc = 'chokepoint_geo_summary.json rerouting_crisis'; }
+    if (out.tonneMilePct == null && meta.rerouting_crisis.implied_tonne_mile_expansion_pct != null) out.tonneMilePct = parseFloat(meta.rerouting_crisis.implied_tonne_mile_expansion_pct);
+  }
+  return out;
+}
+
+function getTrackingQueueSignal(c) {
+  // Snapshot-only queue pressure diagnostic (single lineup vintage, no time series).
+  if (!c.total) return { label: 'NO DATA', color: 'var(--text-muted)' };
+  if (c.avgWait >= 2.5 && c.waitShare >= 0.35) return { label: 'QUEUE BUILDING', color: 'var(--red)' };
+  if (c.avgWait <= 1.5 && c.waitShare <= 0.30) return { label: 'QUEUE CLEARING', color: 'var(--green)' };
+  return { label: 'QUEUE STEADY', color: 'var(--yellow)' };
+}
+
+function enrichPortwatchSnapshot() {
+  // Fill the (otherwise unmappable) queue-depth fields on the latest PortWatch row
+  // per port from the live lineup snapshot, matched by portname.
+  var byPort = {};
+  (DATA.portLineups || []).forEach(function(v) {
+    var k = (v.portname || '').toLowerCase();
+    if (!byPort[k]) byPort[k] = { anchored: 0, waitSum: 0, n: 0 };
+    if (v.operational_status === 'Waiting at anchor') byPort[k].anchored++;
+    byPort[k].waitSum += (v.days_waiting || 0);
+    byPort[k].n++;
+  });
+  var latestByPort = {};
+  (DATA.portwatchCongestion || DATA.portCongestion || []).forEach(function(r) {
+    var k = (r.portName || '').toLowerCase();
+    if (!latestByPort[k] || (r.date && latestByPort[k].date && r.date > latestByPort[k].date)) latestByPort[k] = r;
+  });
+  Object.keys(byPort).forEach(function(k) {
+    var row = latestByPort[k];
+    if (row) {
+      row.vesselsAnchored = byPort[k].anchored;
+      row.avgWaitingDays = byPort[k].n ? Math.round((byPort[k].waitSum / byPort[k].n) * 10) / 10 : null;
+      row.provenance = 'lineup_snapshot_enriched';
+    }
+  });
+}
+
+function trackingHudFilter(status) {
+  // KPI-as-filter: HUD cards drive the lineup status filter.
+  setTrackingStatus(status === 'all' ? 'all' : status);
+}
+
+function toggleTonnageLens() {
+  trackingTonnageLens = !trackingTonnageLens;
+  var btn = document.getElementById('btnTonnageLens');
+  if (btn) {
+    btn.textContent = trackingTonnageLens ? 'DWT' : 'Hulls';
+    btn.classList.toggle('active', trackingTonnageLens);
+  }
+  updateTrackingHUD();
+  renderTrackingTable();
+}
+
+function onTrackingSortChange() {
+  var sel = document.getElementById('trackingSortMode');
+  trackingSortMode = sel ? sel.value : 'wait_desc';
+  trackingCurrentPage = 1;
+  renderTrackingTable();
+}
+
+function onTrackingDwtChange() {
+  var sel = document.getElementById('trackingDwtFilter');
+  trackingMinDwt = sel ? parseInt(sel.value, 10) || 0 : 0;
+  trackingCurrentPage = 1;
+  renderTrackingTable();
+  plotVesselMarkers();
+}
+
+function updateTrackingHUD() {
+  var c = trackingLiveCounts();
+  var t = trackingReroutingTelemetry();
 
   var hTotal = document.getElementById('hudTrackedHulls');
   var hWaiting = document.getElementById('hudWaitingAnchor');
@@ -35697,23 +36020,66 @@ function updateTrackingHUD() {
   var hRedSea = document.getElementById('hudRedSeaDiverted');
   var hCape = document.getElementById('hudCapeSurge');
 
-  if (hTotal) hTotal.textContent = total ? total.toLocaleString() : '1,568';
-  if (hWaiting) hWaiting.textContent = waiting ? waiting.toLocaleString() : '614';
-  if (hBerth) hBerth.textContent = berth ? berth.toLocaleString() : '954';
-  if (hChoke) hChoke.textContent = '28';
-  if (hRedSea) hRedSea.textContent = '-73.1%';
-  if (hCape) hCape.textContent = '+75.6%';
+  if (hTotal) hTotal.textContent = c.total ? (trackingTonnageLens ? fmtDwtMt(c.dwtTotal) : c.total.toLocaleString()) : '—';
+  if (hWaiting) hWaiting.textContent = c.total ? (trackingTonnageLens ? fmtDwtMt(c.dwtWait) : c.waiting.toLocaleString()) : '—';
+  if (hBerth) hBerth.textContent = c.total ? c.berth.toLocaleString() : '—';
+  var nChoke = (DATA.chokepointSummary && DATA.chokepointSummary.chokepoints) ? DATA.chokepointSummary.chokepoints.length : 0;
+  if (hChoke) hChoke.textContent = nChoke ? String(nChoke) : '—';
+  if (hRedSea) hRedSea.textContent = (t.divertedPct != null) ? ('-' + Math.abs(t.divertedPct).toFixed(1) + '%') : '—';
+  if (hCape) hCape.textContent = (t.capePct != null) ? ('+' + Math.abs(t.capePct).toFixed(1) + '%') : '—';
 
-  var pAll = document.getElementById('pillCountAll');
-  if (pAll) pAll.textContent = total.toLocaleString();
-  var pTank = document.getElementById('pillCountTanker');
-  if (pTank) pTank.textContent = countTanker.toLocaleString();
-  var pBulk = document.getElementById('pillCountBulk');
-  if (pBulk) pBulk.textContent = countBulk.toLocaleString();
-  var pLpg = document.getElementById('pillCountLpg');
-  if (pLpg) pLpg.textContent = countLpg.toLocaleString();
-  var pLng = document.getElementById('pillCountLng');
-  if (pLng) pLng.textContent = countLng.toLocaleString();
+  var sub0 = document.getElementById('hudTrackedHullsSub');
+  if (sub0) sub0.textContent = c.total ? (c.nPorts + ' Ports · ' + fmtDwtMt(c.dwtTotal)) : 'awaiting lineup feed';
+  var subW = document.getElementById('hudWaitingAnchorSub');
+  if (subW) subW.textContent = c.total ? ('avg ' + c.avgWait.toFixed(1) + 'd wait · ' + Math.round(c.waitShare * 100) + '% queued') : 'awaiting lineup feed';
+  var subR = document.getElementById('hudRedSeaDivertedSub');
+  if (subR) subR.textContent = t.divertedSrc ? ('vs baseline · ' + t.divertedSrc.split(' (')[0]) : 'feed unavailable';
+  var subC = document.getElementById('hudCapeSurgeSub');
+  if (subC) subC.textContent = (t.daysAdded != null) ? ('+' + t.daysAdded.toFixed(1) + ' Days Ton-Mile Surge') : 'feed unavailable';
+
+  // Keep tooltip bus live (data-tt pattern): refresh data-tt-val on HUD cards.
+  document.querySelectorAll('[data-tt-type="tracking-hud"]').forEach(function(card) {
+    var title = card.getAttribute('data-tt-title') || '';
+    if (title.includes('Fleet Hulls')) card.setAttribute('data-tt-val', (c.total ? c.total.toLocaleString() : '—') + ' Active Vessels · ' + fmtDwtMt(c.dwtTotal));
+    else if (title.includes('Waiting at Anchor')) card.setAttribute('data-tt-val', (c.total ? c.waiting.toLocaleString() : '—') + ' Vessels · avg ' + c.avgWait.toFixed(1) + 'd');
+    else if (title.includes('Operating at Berth')) card.setAttribute('data-tt-val', (c.total ? c.berth.toLocaleString() : '—') + ' Vessels');
+    else if (title.includes('Bab el-Mandeb')) card.setAttribute('data-tt-val', (t.divertedPct != null ? '-' + Math.abs(t.divertedPct).toFixed(1) + '% Transit Volume' : 'feed unavailable'));
+    else if (title.includes('Cape of Good Hope')) card.setAttribute('data-tt-val', (t.capePct != null ? '+' + Math.abs(t.capePct).toFixed(1) + '% Transit Volume' : 'feed unavailable'));
+  });
+
+  var pill = function(id, n, dwt) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = trackingTonnageLens ? fmtDwtMt(dwt) : (n != null ? n.toLocaleString() : '—');
+  };
+  pill('pillCountAll', c.total, c.dwtTotal);
+  pill('pillCountTanker', c.cls.tanker, c.clsDwt.tanker);
+  pill('pillCountBulk', c.cls.bulk, c.clsDwt.bulk);
+  pill('pillCountLpg', c.cls.lpg, c.clsDwt.lpg);
+  pill('pillCountLng', c.cls.lng, c.clsDwt.lng);
+
+  // Queue build/clear signal + lineup totals + tanker-bias coverage footnote.
+  var q = getTrackingQueueSignal(c);
+  var qEl = document.getElementById('queueSignalBadge');
+  if (qEl) {
+    qEl.innerHTML = 'Queue signal: <strong style="color:' + q.color + ';">' + q.label + '</strong>' +
+      ' <span style="color:var(--text-muted);">(snapshot ' + TRACKING_EST_PROVENANCE + ' · ' +
+      c.waiting.toLocaleString() + ' waiting · avg ' + c.avgWait.toFixed(1) + 'd)</span>';
+  }
+  var totEl = document.getElementById('lineupTotalsLine');
+  if (totEl) totEl.textContent = c.total.toLocaleString() + ' hulls · ' + fmtDwtMt(c.dwtTotal) + (trackingMinDwt ? (' · ≥' + Math.round(trackingMinDwt / 1000) + 'k DWT') : '');
+  var fnEl = document.getElementById('coverageFootnote');
+  if (fnEl && c.total) {
+    var tankerPct = Math.round((c.cls.tanker / c.total) * 100);
+    var bulkPct = (c.cls.bulk / c.total * 100).toFixed(1);
+    fnEl.innerHTML = 'Coverage note: lineup snapshot is tanker-skewed (' + tankerPct + '% Tankers, ' +
+      bulkPct + '% Dry Bulk of ' + c.total.toLocaleString() + ' hulls). Dry-bulk congestion is covered via ' +
+      'Port Squeeze &amp; Stress envelopes, PortWatch calls/tonnage, and the DWT size filter.';
+  }
+
+  var hudDetail = document.getElementById('mapHudDetail');
+  if (hudDetail && trackingSelectedPort === 'all') {
+    hudDetail.textContent = c.total.toLocaleString() + ' vessels rendered across ' + c.nPorts + ' ports';
+  }
 }
 
 function filterTrackingData() {
@@ -35738,6 +36104,9 @@ function filterTrackingData() {
       if (v.port_locode !== trackingSelectedPort && v.portname !== trackingSelectedPort) return false;
     }
 
+    // DWT / size filter (dry-bulk coverage: isolate Capesize/VLCC hulls)
+    if (trackingMinDwt > 0 && (v.dwt || 0) < trackingMinDwt) return false;
+
     // Search query
     if (query) {
       var match = (v.vessel_name || '').toLowerCase().includes(query) ||
@@ -35752,15 +36121,35 @@ function filterTrackingData() {
   });
 }
 
+function sortTrackingData(rows) {
+  var mode = trackingSortMode || 'wait_desc';
+  var arr = rows.slice();
+  var tsOf = function(v) { return v.arrival_date ? v.arrival_date.getTime() : (v.arrival_timestamp || ''); };
+  if (mode === 'wait_desc') arr.sort(function(a, b) { return (b.days_waiting || 0) - (a.days_waiting || 0); });
+  else if (mode === 'arrival_desc') arr.sort(function(a, b) { return tsOf(b) > tsOf(a) ? 1 : (tsOf(b) < tsOf(a) ? -1 : 0); });
+  else if (mode === 'arrival_asc') arr.sort(function(a, b) { return tsOf(a) > tsOf(b) ? 1 : (tsOf(a) < tsOf(b) ? -1 : 0); });
+  else if (mode === 'dwt_desc') arr.sort(function(a, b) { return (b.dwt || 0) - (a.dwt || 0); });
+  return arr;
+}
+
+function fmtAnchoredSince(v) {
+  if (v.arrival_date && !isNaN(v.arrival_date.getTime())) {
+    var M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return M[v.arrival_date.getMonth()] + ' ' + v.arrival_date.getDate();
+  }
+  var s = (v.arrival_timestamp || '').slice(0, 10);
+  return s || '—';
+}
+
 function renderTrackingTable() {
   var tbody = document.getElementById('trackingTableBody');
   var pageInfo = document.getElementById('trackingPageInfo');
   var countBadge = document.getElementById('lineupCountBadge');
   if (!tbody) return;
 
-  var filtered = filterTrackingData();
+  var filtered = sortTrackingData(filterTrackingData());
   var total = filtered.length;
-  if (countBadge) countBadge.textContent = total;
+  if (countBadge) countBadge.textContent = total.toLocaleString();
 
   var totalPages = Math.ceil(total / TRACKING_PAGE_SIZE) || 1;
   if (trackingCurrentPage > totalPages) trackingCurrentPage = totalPages;
@@ -35779,7 +36168,7 @@ function renderTrackingTable() {
 
   tbody.innerHTML = '';
   if (!paged.length) {
-    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:20px; color:var(--text-muted);">No vessels match current filters.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No vessels match current filters.</td></tr>';
     return;
   }
 
@@ -35798,12 +36187,22 @@ function renderTrackingTable() {
     tr.setAttribute('data-tt-country', v.country || '');
     tr.setAttribute('data-tt-waiting', v.days_waiting || 0);
     tr.setAttribute('data-tt-cargo', v.cargo_type || '');
+    tr.setAttribute('data-tt-arrival', v.arrival_timestamp || '');
+    var leg = (DATA.voyageLegs && DATA.voyageLegs[v.imo_number]) ? DATA.voyageLegs[v.imo_number] : null;
+    if (leg) {
+      if (leg.transit_days) tr.setAttribute('data-tt-leg-days', leg.transit_days);
+      if (leg.distance_nm) tr.setAttribute('data-tt-leg-dist', leg.distance_nm);
+      if (leg.avg_speed_kn) tr.setAttribute('data-tt-leg-speed', leg.avg_speed_kn);
+      if (leg.leg_port) tr.setAttribute('data-tt-leg-port', leg.leg_port);
+      if (leg.leg_date) tr.setAttribute('data-tt-leg-date', leg.leg_date);
+    }
     tr.setAttribute('data-tt-lat', v.lat || 0);
     tr.setAttribute('data-tt-lon', v.lon || 0);
 
     var statusClass = (v.operational_status === 'Operating at berth') ? 'status-badge-berth' : 'status-badge-anchor';
     var statusText = (v.operational_status === 'Operating at berth') ? 'At Berth' : 'At Anchor';
     var waitText = (v.days_waiting > 0) ? v.days_waiting.toFixed(1) + 'd' : '—';
+    var anchoredText = fmtAnchoredSince(v);
 
     tr.innerHTML = '<td>' +
       '<div style="font-weight:700; color:#fff;">' + escapeHtml(v.vessel_name) + '</div>' +
@@ -35811,6 +36210,7 @@ function renderTrackingTable() {
       '</td>' +
       '<td><span class="class-badge">' + escapeHtml(v.asset_class || 'Tanker') + '</span></td>' +
       '<td><div style="font-weight:500;">' + escapeHtml(v.portname) + '</div><div style="font-size:10px; color:var(--text-muted);">' + escapeHtml(v.country) + '</div></td>' +
+      '<td style="font-family:\'IBM Plex Mono\', monospace; font-size:11px; color:var(--text-muted);" title="' + escapeHtml(v.arrival_timestamp || '') + '">' + anchoredText + '</td>' +
       '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (v.days_waiting > 3 ? 'var(--yellow)' : 'var(--text)') + ';">' + waitText + '</td>' +
       '<td><span class="' + statusClass + '">' + statusText + '</span></td>';
 
@@ -35938,31 +36338,70 @@ function setTrackingSubView(subview) {
 }
 
 function renderBunkersSubView() {
+  // ONE-TRUTH SYNC: legacy Tracking mini-view reads DATA.bunkerSummary — the same
+  // store as the BUNKERS tab. Legacy DATA.bunkerPrices is fallback only.
   var tbody = document.getElementById('bunkersTableBody');
   var titleEl = document.getElementById('bunkersPortTitle');
   var subEl = document.getElementById('bunkersPortSub');
   if (!tbody) return;
 
-  var prices = DATA.bunkerPrices || [];
-  if (!prices.length) {
-    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:16px; color:var(--text-muted);">Loading bunker price feeds...</td></tr>';
-    return;
-  }
+  var summary = DATA.bunkerSummary;
+  var ports = summary && summary.ports ? summary.ports : [];
 
   var selPort = (trackingSelectedPort || 'all').toLowerCase();
   var pMeta = PORT_COORDINATES[trackingSelectedPort] || {};
   var pName = pMeta.name || trackingSelectedPort;
 
   if (titleEl) {
-    titleEl.textContent = (selPort !== 'all') ? pName + ' Bunker Indications' : 'Global Bunker Benchmark Matrix';
+    titleEl.textContent = (selPort !== 'all') ? pName + ' Bunker Indications · synced from BUNKERS tab' : 'Global Bunker Benchmark Matrix · synced from BUNKERS tab';
   }
   if (subEl) {
     subEl.textContent = (selPort !== 'all')
-      ? 'Direct port indications & nearby bunker replenishment pricing (USD/MT).'
-      : 'Spot marine fuel prices across key bunkering hubs (Singapore, Rotterdam, Fujairah, Houston, Santos).';
+      ? 'One truth: DATA.bunkerSummary — full 221-port matrix, curves & volumes in the BUNKERS tab.'
+      : 'One truth: DATA.bunkerSummary — spot marine fuel prices across key bunkering hubs (Singapore, Rotterdam, Fujairah, Houston, Santos).';
   }
 
   tbody.innerHTML = '';
+
+  if (ports.length) {
+    // Pick ports: selected-port match wins, else benchmark hubs.
+    var chosen = [];
+    if (selPort !== 'all') {
+      var cleanP = pName.toLowerCase().replace(/[^a-z]/g, '');
+      chosen = ports.filter(function(pt) {
+        var pn = pt.name.toLowerCase().replace(/[^a-z]/g, '');
+        return pn.includes(cleanP) || cleanP.includes(pn);
+      });
+    }
+    if (!chosen.length) {
+      var bench = ['Singapore', 'Rotterdam', 'Fujairah', 'Houston', 'Santos', 'APAC Average', 'EMEA Average', 'Americas Average'];
+      chosen = bench.map(function(nm) {
+        for (var i = 0; i < ports.length; i++) { if (ports[i].name === nm) return ports[i]; }
+        return null;
+      }).filter(function(x) { return x; });
+    }
+    chosen.slice(0, 8).forEach(function(p) {
+      [['VLSFO', p.vlsfo, 'status-badge-berth'], ['MGO', p.mgo, 'status-badge-anchor'], ['IFO380', p.ifo380, 'class-badge']].forEach(function(g) {
+        if (g[1] == null) return;
+        var tr = document.createElement('tr');
+        var d = (typeof bunkerPortDelta === 'function') ? bunkerPortDelta(p.name) : null;
+        var dTxt = d ? ((d.v > 0 ? '+' : '') + d.v.toFixed(2) + ' ' + d.tag) : '—';
+        tr.innerHTML = '<td><div style="font-weight:600; color:#fff;">' + escapeHtml(p.name) + '</div></td>' +
+          '<td><span class="' + g[2] + '">' + g[0] + '</span></td>' +
+          '<td style="font-family:\'IBM Plex Mono\', monospace; font-weight:700; color:#fff;">$' + g[1].toFixed(2) + ' <span style="font-size:10px; color:var(--text-muted);">' + escapeHtml(dTxt) + '</span></td>' +
+          '<td style="font-family:\'IBM Plex Mono\', monospace; color:var(--text-muted); font-size:10px;">' + escapeHtml(p.latest_date) + '</td>';
+        tbody.appendChild(tr);
+      });
+    });
+    return;
+  }
+
+  // Fallback: legacy flat feed (pre-summary cache or fetch failure)
+  var prices = DATA.bunkerPrices || [];
+  if (!prices.length) {
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:16px; color:var(--text-muted);">Loading bunker price feeds...</td></tr>';
+    return;
+  }
 
   // Filter prices: prioritize selected port or show all
   var displayPrices = [];
@@ -36553,6 +36992,8 @@ function renderChokepointChart(cp) {
     else if (metric === 'tanker') data = daily.map(function(r) { return r.tnk; });
     else if (metric === 'bulk') data = daily.map(function(r) { return r.blk; });
     else if (metric === 'container') data = daily.map(function(r) { return r.cnt; });
+    else if (metric === 'gencargo') data = daily.map(function(r) { return r.gc || 0; });
+    else if (metric === 'roro') data = daily.map(function(r) { return r.roro || 0; });
     else if (metric === 'capacity') data = daily.map(function(r) { return Math.round(r.cap / 1000); });
   } else {
     // Monthly series (2019–2026)
@@ -36566,6 +37007,8 @@ function renderChokepointChart(cp) {
     else if (metric === 'tanker') data = monthly.map(function(r) { return r.tnk_avg; });
     else if (metric === 'bulk') data = monthly.map(function(r) { return r.blk_avg; });
     else if (metric === 'container') data = monthly.map(function(r) { return r.cnt_avg; });
+    else if (metric === 'gencargo') data = monthly.map(function(r) { return r.gc_avg || 0; });
+    else if (metric === 'roro') data = monthly.map(function(r) { return r.roro_avg || 0; });
     else if (metric === 'capacity') data = monthly.map(function(r) { return Math.round(r.cap_dwt / 1000); });
   }
 
@@ -36574,6 +37017,8 @@ function renderChokepointChart(cp) {
   if (metric === 'tanker') { metricLabel = 'Tanker Transits'; color = '#e3b341'; }
   else if (metric === 'bulk') { metricLabel = 'Dry Bulk Transits'; color = '#3fb950'; }
   else if (metric === 'container') { metricLabel = 'Container Transits'; color = '#a371f7'; }
+  else if (metric === 'gencargo') { metricLabel = 'General-Cargo Transits'; color = '#79c0ff'; }
+  else if (metric === 'roro') { metricLabel = 'Ro-Ro Transits'; color = '#d2a8ff'; }
   else if (metric === 'capacity') { metricLabel = 'Daily Capacity (kt DWT)'; color = '#f0883e'; }
 
   if (chokepointChartInstance) {
@@ -38983,6 +39428,18 @@ function escapeHtml(str) {
           html += `<div class="rt-row"><span class="rt-label">Port Call</span><span class="rt-val">${port}${country ? ' (' + country + ')' : ''}</span></div>`;
           if (wait > 0) html += `<div class="rt-row"><span class="rt-label">Port Waiting Time</span><span class="rt-val" style="color:var(--yellow);">${wait.toFixed(1)} Days in Queue</span></div>`;
           if (cargo) html += `<div class="rt-row"><span class="rt-label">Reported Cargo</span><span class="rt-val">${cargo}</span></div>`;
+          const arrival = target.getAttribute('data-tt-arrival') || '';
+          if (arrival) html += `<div class="rt-row"><span class="rt-label">Anchored Since</span><span class="rt-val" style="font-family:'IBM Plex Mono', monospace;">${arrival.slice(0, 10)}</span></div>`;
+          const legDays = target.getAttribute('data-tt-leg-days') || '';
+          if (legDays) {
+            const legDist = target.getAttribute('data-tt-leg-dist') || '';
+            const legSpeed = target.getAttribute('data-tt-leg-speed') || '';
+            const legPort = target.getAttribute('data-tt-leg-port') || '';
+            const legDate = target.getAttribute('data-tt-leg-date') || '';
+            let legTxt = legDays + 'd transit' + (legDist ? ' · ' + Number(legDist).toLocaleString() + ' NM' : '') + (legSpeed ? ' · ' + legSpeed + ' kn avg' : '');
+            html += `<div class="rt-row"><span class="rt-label">Last Voyage Leg</span><span class="rt-val">${legTxt}</span></div>`;
+            if (legPort) html += `<div class="rt-row"><span class="rt-label">Leg Origin</span><span class="rt-val">${legPort}${legDate ? ' · ' + legDate.slice(0, 10) : ''}</span></div>`;
+          }
           html += `<div class="rt-row"><span class="rt-label">AIS Coordinates</span><span class="rt-val" style="font-family:'IBM Plex Mono', monospace;">${lat.toFixed(3)}°, ${lon.toFixed(3)}°</span></div>`;
           html += `<div class="rt-row"><span class="rt-label">Historical Voyage Sequence</span><span class="rt-val" style="color:var(--accent);">${traj.length ? traj.length + ' Recorded Commercial Fixture Legs' : 'Live Position Fix'}</span></div>`;
           html += `<div class="rt-note">Click row to center map on vessel and render full historical voyage corridor polyline.</div>`;
@@ -39471,11 +39928,15 @@ function renderBunkersTab() {
   // Update HUD KPIs
   updateBunkersHUD();
 
+  // BIX benchmark strip + chart (benchmarks_bix already in JSON)
+  renderBunkersBixStrip();
+
   // Render Subviews
   renderBunkersSpotTable();
   renderBunkersForwardTable();
   renderBunkersVolumesTable();
   renderBunkersScrubberTable();
+  renderBunkersAltFuels();
 
   // Render Main Chart
   renderBunkerMainChart();
@@ -39528,6 +39989,11 @@ function updateBunkersHUD() {
   if (!summary || !summary.kpis) return;
 
   var k = summary.kpis;
+  function fmtChg(v) { return (v > 0 ? '+$' : (v < 0 ? '-$' : '$')) + Math.abs(v).toFixed(2); }
+  function setSub(id, txt, cls) {
+    var el = document.getElementById(id);
+    if (el) { el.textContent = txt; el.className = 'bunkers-kpi-sub ' + cls; }
+  }
   var elVlsfo = document.getElementById('bunkerKpiVlsfo');
   var elHsfo = document.getElementById('bunkerKpiHsfo');
   var elMgo = document.getElementById('bunkerKpiMgo');
@@ -39541,6 +40007,17 @@ function updateBunkersHUD() {
   if (elHi5) elHi5.textContent = '$' + k.singapore_hi5.toFixed(2);
   if (elEts) elEts.textContent = '€' + k.eu_ets_carbon_eur.toFixed(2);
   if (elVol) elVol.textContent = (k.singapore_monthly_vol_mt / 1000000).toFixed(2) + 'M MT';
+
+  // Live deltas from kpis chg fields (provenance in labels; obs windows from kpis obs fields)
+  var gObs = (k.global_obs || '').slice(5), gPrev = (k.global_prev_obs || '').slice(5);
+  setSub('bunkerKpiVlsfoSub', fmtChg(k.global_vlsfo_chg) + ' D/D (' + gObs + ' vs ' + gPrev + ') · Primary IMO 2020 Compliance Fuel', k.global_vlsfo_chg <= 0 ? 'good' : 'alert');
+  setSub('bunkerKpiHsfoSub', fmtChg(k.global_hsfo_chg) + ' D/D (' + gObs + ' vs ' + gPrev + ') · High Sulfur Scrubber-Fitted Fuel', k.global_hsfo_chg <= 0 ? 'good' : 'alert');
+  setSub('bunkerKpiMgoSub', fmtChg(k.global_mgo_chg) + ' D/D (' + gObs + ' vs ' + gPrev + ') · ECA Zone & Port Auxiliary Marine Gasoil', k.global_mgo_chg <= 0 ? 'good' : 'alert');
+  var hObs = (k.hi5_obs || '').slice(5), hPrev = (k.hi5_prev_obs || '').slice(5);
+  setSub('bunkerKpiHi5Sub', fmtChg(k.singapore_hi5_chg) + ' 7D (SS ' + hObs + ' vs ' + hPrev + ') · Cape TCE +$' + Math.round(k.cape_scrubber_tce_bonus).toLocaleString() + '/d · Payback ~' + k.scrubber_payback_months + ' Mos', k.singapore_hi5_chg <= 0 ? 'purple' : 'alert');
+  setSub('bunkerKpiEtsSub', 'Voyage Penalty: ~$' + Math.round(k.eu_ets_daily_penalty_usd).toLocaleString() + '/d on EU MRV Routes (static screen)', 'warn');
+  var yoy = k.singapore_vol_yoy_pct;
+  setSub('bunkerKpiVolSub', (yoy > 0 ? '+' : '') + yoy.toFixed(1) + '% YoY · MPA Singapore ' + (k.singapore_vol_period || '') + ' Monthly Delivery', yoy >= 0 ? 'cyan' : 'alert');
 }
 
 function plotBunkerPortMarkers() {
@@ -39586,6 +40063,11 @@ function plotBunkerPortMarkers() {
     var hsfoStr = p.ifo380 ? '$' + p.ifo380.toFixed(2) : '—';
     var hi5Str = p.hi5_spread ? '$' + p.hi5_spread.toFixed(2) : '—';
     var bioStr = p.bio ? '$' + p.bio.toFixed(2) : '—';
+    var altBits = [];
+    if (p.lng != null) altBits.push('LNG $' + p.lng.toFixed(2));
+    if (p.meoh != null) altBits.push('MEOH $' + p.meoh.toFixed(2));
+    if (p.eua != null) altBits.push('EUA $' + p.eua.toFixed(2));
+    var altRow = altBits.length ? '<div><div class="signal-field-label">Alt Fuels (verified)</div><div class="signal-field-val" style="color:#00e5ff; font-size:10px;">' + escapeHtml(altBits.join(' · ')) + '</div></div>' : '';
 
     var spreadSgText = p.spread_vs_singapore > 0 ? '+' + p.spread_vs_singapore.toFixed(1) : (p.spread_vs_singapore != null ? p.spread_vs_singapore.toFixed(1) : '—');
 
@@ -39599,6 +40081,7 @@ function plotBunkerPortMarkers() {
       '<div><div class="signal-field-label">MGO (0.1%)</div><div class="signal-field-val" style="color:#e3b341;">' + mgoStr + '</div></div>' +
       '<div><div class="signal-field-label">HSFO (IFO380)</div><div class="signal-field-val">' + hsfoStr + '</div></div>' +
       '<div><div class="signal-field-label">Biofuel (B24)</div><div class="signal-field-val" style="color:#00e5ff;">' + bioStr + '</div></div>' +
+      altRow +
       '<div><div class="signal-field-label">Hi-5 Spread</div><div class="signal-field-val" style="color:#a371f7;">' + hi5Str + '</div></div>' +
       '<div><div class="signal-field-label">Spread vs SG</div><div class="signal-field-val">' + spreadSgText + ' $/MT</div></div>' +
       '<div><div class="signal-field-label">Updated</div><div class="signal-field-val" style="font-size:10px;">' + escapeHtml(p.latest_date) + '</div></div>' +
@@ -39643,6 +40126,41 @@ function filterBunkersData() {
 
     return true;
   });
+}
+
+function bunkerPortDelta(portName) {
+  // Provenance: change_7d is pipeline-owned; while 0.0/absent fall back to
+  // MoM-from-monthly_series (VLSFO), always labeled. Never fabricated.
+  var summary = DATA.bunkerSummary;
+  var ports = summary && summary.ports ? summary.ports : [];
+  var p = null;
+  for (var i = 0; i < ports.length; i++) { if (ports[i].name === portName) { p = ports[i]; break; } }
+  var live = (p && typeof p.change_7d === 'number') ? p.change_7d : 0;
+  if (live) return { v: live, tag: '7D', src: 'pipeline change_7d' };
+  var ms = summary && summary.monthly_series ? summary.monthly_series[portName] : null;
+  if (ms && ms.length >= 2) {
+    var a = null, b = null, k;
+    for (k = ms.length - 1; k >= 0 && a === null; k--) { if (ms[k].vlsfo != null) a = ms[k].vlsfo; }
+    for (k = ms.length - 2; k >= 0 && b === null; k--) { if (ms[k].vlsfo != null) b = ms[k].vlsfo; }
+    if (a != null && b != null) return { v: Math.round((a - b) * 100) / 100, tag: 'MoM*', src: 'monthly_series VLSFO MoM fallback (* = not pipeline 7D)' };
+  }
+  return null;
+}
+
+function bunkerSpark12M(portName) {
+  // Unicode sparkline over trailing-12 monthly VLSFO + 12M range (monthly_series provenance).
+  var summary = DATA.bunkerSummary;
+  var ms = summary && summary.monthly_series ? summary.monthly_series[portName] : null;
+  if (!ms || !ms.length) return { spark: '—', range: null };
+  var vals = ms.slice(-12).map(function(r) { return r.vlsfo; }).filter(function(v) { return v != null; });
+  if (vals.length < 2) return { spark: '—', range: null };
+  var mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals);
+  var blocks = ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'];
+  var sp = vals.map(function(v) {
+    var t = (mx > mn) ? (v - mn) / (mx - mn) : 0.5;
+    return blocks[Math.min(7, Math.floor(t * 8))];
+  }).join('');
+  return { spark: sp, range: [mn, mx], n: vals.length };
 }
 
 function renderBunkersSpotTable() {
@@ -39710,7 +40228,7 @@ function renderBunkersSpotTable() {
 
   tbody.innerHTML = '';
   if (!paged.length) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No bunker ports match current filters. <button onclick="setBunkerGrade(\'all\'); setBunkerRegion(\'all\');" style="background:none; border:none; color:var(--accent); text-decoration:underline; cursor:pointer;">Reset filters</button></td></tr>';
+    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:20px; color:var(--text-muted);">No bunker ports match current filters. <button onclick="setBunkerGrade(\'all\'); setBunkerRegion(\'all\');" style="background:none; border:none; color:var(--accent); text-decoration:underline; cursor:pointer;">Reset filters</button></td></tr>';
     return;
   }
 
@@ -39739,6 +40257,20 @@ function renderBunkersSpotTable() {
 
     var col5Style = bunkersSelectedGrade === 'BIO' ? 'font-family:\'IBM Plex Mono\', monospace; font-weight:600; color:#00e5ff;' : 'font-family:\'IBM Plex Mono\', monospace;';
 
+    var d = bunkerPortDelta(p.name);
+    var dHtml;
+    if (d) {
+      var dCol = d.v > 0 ? 'var(--red)' : (d.v < 0 ? 'var(--green)' : 'var(--text-muted)');
+      var dSign = d.v > 0 ? '+' : '';
+      dHtml = '<span style="font-family:\'IBM Plex Mono\', monospace; font-weight:700; color:' + dCol + ';" title="Δ source: ' + d.src + '">' + dSign + d.v.toFixed(2) + '</span>' +
+        ' <span style="font-size:9px; color:var(--text-muted); font-family:\'IBM Plex Mono\', monospace;">' + d.tag + '</span>';
+    } else {
+      dHtml = '<span style="color:var(--text-muted);">—</span>';
+    }
+    var sp = bunkerSpark12M(p.name);
+    var sparkTitle = sp.range ? ('VLSFO trailing-' + sp.n + 'M range $' + sp.range[0].toFixed(0) + '–$' + sp.range[1].toFixed(0) + ' (monthly_series)') : 'No monthly history';
+    var sparkHtml = '<div class="bunkers-spark" title="' + sparkTitle + '">' + escapeHtml(sp.spark) + '</div>';
+
     tr.innerHTML = '<td>' +
       '<div style="font-weight:700; color:#fff;">' + escapeHtml(p.name) + '</div>' +
       '<div style="font-size:10px; color:var(--text-muted); font-family:\'IBM Plex Mono\', monospace;">' + escapeHtml(p.code) + ' · ' + escapeHtml(p.country) + '</div>' +
@@ -39747,7 +40279,8 @@ function renderBunkersSpotTable() {
       '<td style="font-family:\'IBM Plex Mono\', monospace; font-weight:600; color:' + (p.vlsfo ? '#3fb950' : 'var(--text-muted)') + ';">' + vlsfoText + '</td>' +
       '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (p.mgo ? '#e3b341' : 'var(--text-muted)') + ';">' + mgoText + '</td>' +
       '<td style="' + col5Style + '">' + col5Text + '</td>' +
-      '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (p.spread_vs_singapore > 0 ? 'var(--red)' : 'var(--green)') + ';">' + spreadText + '</td>';
+      '<td style="font-family:\'IBM Plex Mono\', monospace; color:' + (p.spread_vs_singapore > 0 ? 'var(--red)' : 'var(--green)') + ';">' + spreadText + '</td>' +
+      '<td><div>' + dHtml + '</div>' + sparkHtml + '</td>';
 
     tr.addEventListener('click', function() {
       selectBunkerPort(p);
@@ -39836,13 +40369,14 @@ function onBunkersSearchInput() {
 
 function setBunkersSubView(subview) {
   bunkersActiveSubView = subview;
-  var views = ['spot', 'forward', 'volumes', 'scrubber'];
+  var views = ['spot', 'forward', 'volumes', 'scrubber', 'altfuels'];
   views.forEach(function(v) {
     var btn = document.getElementById('subnavBunkers' + v.charAt(0).toUpperCase() + v.slice(1));
     var el = document.getElementById('bunkersSubview' + v.charAt(0).toUpperCase() + v.slice(1));
     if (btn) btn.classList.toggle('active', v === subview);
     if (el) el.style.display = (v === subview) ? 'flex' : 'none';
   });
+  if (subview === 'altfuels') renderBunkersAltFuels();
 }
 
 function renderBunkersForwardTable() {
@@ -39911,6 +40445,115 @@ function renderBunkersVolumesTable() {
 
 function onBunkersVolHubChange() {
   renderBunkersVolumesTable();
+}
+
+var bunkerBixChartInstance = null;
+
+function renderBunkersBixStrip() {
+  // BIX benchmark strip + chart straight from summary.benchmarks_bix
+  // (change_usd/change_pct/low_usd/high_usd provenance). No fabricated prices.
+  var host = document.getElementById('bunkerBixStrip');
+  if (!host) return;
+  var summary = DATA.bunkerSummary;
+  var bix = summary && summary.benchmarks_bix ? summary.benchmarks_bix : [];
+  if (!bix.length) {
+    host.innerHTML = '<span style="color:var(--text-muted); font-size:11px;">No BIX benchmark series in cache.</span>';
+    return;
+  }
+  var order = ['BIX_World', 'BIX_World3', 'BIX_APAC', 'BIX_EMEA', 'BIX_Americas'];
+  var grades = ['VLSFO', 'IFO380', 'MGO'];
+  var latest = {};
+  bix.forEach(function(r) {
+    var k = r.index + '|' + r.grade;
+    if (!latest[k] || r.date > latest[k].date) latest[k] = r;
+  });
+  var obsDate = '';
+  var html = '';
+  order.forEach(function(ix) {
+    html += '<div class="bix-chip-group"><div class="bix-chip-ix">' + escapeHtml(ix.replace('BIX_', '')) + '</div>';
+    grades.forEach(function(g) {
+      var r = latest[ix + '|' + g];
+      if (!r) return;
+      if (!obsDate || r.date > obsDate) obsDate = r.date;
+      var cls = r.change > 0 ? 'up' : (r.change < 0 ? 'dn' : '');
+      var sgn = r.change > 0 ? '+' : '';
+      var psgn = r.change_pct > 0 ? '+' : '';
+      html += '<div class="bix-chip" title="' + escapeHtml(ix + ' ' + g + ' · obs ' + r.date + ' · 30D range $' + r.low.toFixed(0) + '–$' + r.high.toFixed(0) + ' (low_usd–high_usd)') + '">' +
+        '<span class="bix-g">' + escapeHtml(g) + '</span>' +
+        '<span class="bix-p">$' + r.price.toFixed(2) + '</span>' +
+        '<span class="bix-d ' + cls + '">' + sgn + r.change.toFixed(2) + ' (' + psgn + r.change_pct.toFixed(2) + '%)</span></div>';
+    });
+    html += '</div>';
+  });
+  host.innerHTML = html;
+  var head = document.getElementById('bunkerBixHead');
+  if (head && obsDate) head.textContent = 'Bunker Index benchmarks · 5 regions × VLSFO / IFO380 / MGO · obs ' + obsDate;
+  renderBunkerBixChart();
+}
+
+function renderBunkerBixChart() {
+  var cv = document.getElementById('bunkerBixChart');
+  if (!cv || typeof Chart === 'undefined') return;
+  var summary = DATA.bunkerSummary;
+  var bix = summary && summary.benchmarks_bix ? summary.benchmarks_bix : [];
+  var wV = bix.filter(function(r) { return r.index === 'BIX_World' && r.grade === 'VLSFO'; }).sort(function(a, b) { return a.date < b.date ? -1 : 1; });
+  var wH = bix.filter(function(r) { return r.index === 'BIX_World' && r.grade === 'IFO380'; }).sort(function(a, b) { return a.date < b.date ? -1 : 1; });
+  if (!wV.length) return;
+  var labels = wV.map(function(r) { return r.date.slice(5); });
+  var mapH = {};
+  wH.forEach(function(r) { mapH[r.date] = r.price; });
+  if (bunkerBixChartInstance) bunkerBixChartInstance.destroy();
+  bunkerBixChartInstance = new Chart(cv.getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        { label: 'BIX_World VLSFO', data: wV.map(function(r) { return r.price; }), borderColor: '#3fb950', backgroundColor: 'rgba(63,185,80,0.08)', fill: true, tension: 0.2, borderWidth: 1.5, pointRadius: 2 },
+        { label: 'BIX_World IFO380', data: wV.map(function(r) { return (mapH[r.date] != null ? mapH[r.date] : null); }), borderColor: '#4d9aff', backgroundColor: 'transparent', fill: false, tension: 0.2, borderWidth: 1.5, pointRadius: 2, spanGaps: true }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { display: true, labels: { color: '#d4dce8', font: { size: 10 }, boxWidth: 12 } } },
+      scales: {
+        x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { size: 9 } } },
+        y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { size: 9 }, callback: function(v) { return '$' + v; } } }
+      }
+    }
+  });
+}
+
+function renderBunkersAltFuels() {
+  // Alt-fuel subview: LNG / MEOH / EUA — non-null ports ONLY, '—' for nulls, never zero-filled.
+  var tbody = document.getElementById('bunkersAltFuelsTableBody');
+  if (!tbody) return;
+  var summary = DATA.bunkerSummary;
+  var ports = summary && summary.ports ? summary.ports : [];
+  var rows = ports.filter(function(p) { return p.lng != null || p.meoh != null || p.eua != null; });
+  function cell(v, unit) {
+    if (v == null) return '<span style="color:var(--text-muted);" title="null — no verified indication (never 0-filled)">—</span>';
+    return '<span style="font-family:\'IBM Plex Mono\', monospace; font-weight:600; color:#00e5ff;">$' + v.toFixed(2) + '</span>';
+  }
+  var nLng = rows.filter(function(p) { return p.lng != null; }).length;
+  var nMeoh = rows.filter(function(p) { return p.meoh != null; }).length;
+  var nEua = rows.filter(function(p) { return p.eua != null; }).length;
+  var cap = document.getElementById('bunkersAltFuelsCap');
+  if (cap) cap.textContent = 'Verified alt-fuel indications — ' + rows.length + ' of ' + ports.length + ' ports (LNG: ' + nLng + ' · MEOH: ' + nMeoh + ' · EUA: ' + nEua + '). Null = no quote, never 0.';
+  var nav = document.getElementById('subnavBunkersAltfuels');
+  if (nav) nav.textContent = 'Alt Fuels (' + rows.length + ')';
+  tbody.innerHTML = '';
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:16px; color:var(--text-muted);">No verified LNG / MEOH / EUA indications in cache.</td></tr>';
+    return;
+  }
+  rows.forEach(function(p) {
+    var tr = document.createElement('tr');
+    tr.innerHTML = '<td><div style="font-weight:700; color:#fff;">' + escapeHtml(p.name) + '</div>' +
+      '<div style="font-size:10px; color:var(--text-muted); font-family:\'IBM Plex Mono\', monospace;">' + escapeHtml(p.code) + ' · ' + escapeHtml(p.region) + ' · ' + escapeHtml(p.latest_date) + '</div></td>' +
+      '<td>' + cell(p.lng) + '</td><td>' + cell(p.meoh) + '</td><td>' + cell(p.eua) + '</td><td>' + cell(p.bio) + '</td>';
+    tbody.appendChild(tr);
+  });
 }
 
 function renderBunkersScrubberTable() {
@@ -40025,11 +40668,15 @@ function renderBunkerMainChart() {
   var subEl = document.getElementById('bunkerChartPortSub');
   if (titleEl) titleEl.textContent = bunkersChartPort + ' ' + labelName;
   if (subEl) {
+    var nDailyPorts = Object.keys(dailyMap).length;
+    var nAllPorts = (summary && summary.ports ? summary.ports.length : 221);
     if (isDaily) {
       var periodText = range === '6m' ? 'Trailing 6 Months' : 'Trailing 1 Year';
       subEl.innerHTML = '<span style="color:#00e5ff; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[DAILY HIGH-RES · ' + series.length + ' QUOTES]</span> ' + periodText + ' · Ship &amp; Bunker RPC Live Archive';
+    } else if (hasDaily) {
+      subEl.innerHTML = '<span style="color:#a371f7; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[MONTHLY MACRO]</span> 3-Year Historical Fuel Series (2023–2026) · Ship &amp; Bunker Benchmark Archive · Daily available via 6M/1Y (' + nDailyPorts + '/' + nAllPorts + ' ports)';
     } else {
-      subEl.innerHTML = '<span style="color:#a371f7; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[MONTHLY MACRO]</span> 3-Year Historical Fuel Series (2023–2026) · Ship &amp; Bunker Benchmark Archive';
+      subEl.innerHTML = '<span style="color:#e3b341; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[MONTHLY FALLBACK · no daily series for ' + escapeHtml(bunkersChartPort) + ' — ' + (nAllPorts - nDailyPorts) + '/' + nAllPorts + ' ports monthly-only]</span> 3-Year Monthly Series · Ship &amp; Bunker Benchmark Archive';
     }
   }
 
@@ -40118,6 +40765,304 @@ window.OFFSHORE_STATE = {
   search: '',
   chartInstance: null
 };
+
+// =====================================================================
+// FEARNLEYS DESK TAB (Wave-2): full 294-series browser + broker voice + backtest lab
+// =====================================================================
+var FEARN_STATE = { type: 'TANK', label: null, range: 'max', voiceType: 'all', voiceQ: '', init: false, archive: null, archiveLoading: false };
+var fearnMainChartInstance = null;
+var fearnBacktestChartInstance = null;
+
+function fearnSeriesCache() {
+  var c = window.DATA && DATA.fearnleysSeries;
+  return (c && c.labels) ? c : null;
+}
+
+function renderFearnleysTab() {
+  if (!DATA.loaded) return;
+  var cache = fearnSeriesCache();
+  var cov = document.getElementById('fearnDeskCoverage');
+  if (cov) {
+    cov.textContent = cache ? ('· ' + cache.meta.labels_cached + ' series / ' + cache.meta.catalog_ids + ' catalog ids · ' + cache.meta.monthly_points.toLocaleString() + ' monthly pts') : '· cache unavailable';
+  }
+  if (!cache) return;
+  if (!FEARN_STATE.init) {
+    var types = {};
+    Object.keys(cache.labels).forEach(function (l) { types[cache.labels[l].type] = true; });
+    var order = ['TANK', 'BULK', 'LNG', 'LPG', 'NEWBUILDING', 'S&P'];
+    var pills = Object.keys(types).sort(function (a, b) {
+      var ia = order.indexOf(a), ib = order.indexOf(b);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    });
+    if (pills.indexOf('TANK') < 0) pills.unshift('TANK');
+    var pillHtml = pills.map(function (t) {
+      var n = Object.keys(cache.labels).filter(function (l) { return cache.labels[l].type === t; }).length;
+      return '<button class="tracking-status-btn' + (t === FEARN_STATE.type ? ' active' : '') + '" data-ftype="' + t + '" onclick="setFearnType(\'' + t + '\')">' + t + ' (' + n + ')</button>';
+    }).join('');
+    document.getElementById('fearnTypePills').innerHTML = pillHtml;
+    // default label: longest-history series of default desk
+    FEARN_STATE.label = fearnDefaultLabel(cache, FEARN_STATE.type);
+    FEARN_STATE.init = true;
+  }
+  populateFearnLabels(cache);
+  renderFearnStats(cache);
+  renderFearnMainChart(cache);
+  initFearnVoiceFilters();
+  renderFearnVoice();
+  renderFearnBacktest();
+}
+
+function fearnDefaultLabel(cache, type) {
+  var best = null, bestN = -1;
+  Object.keys(cache.labels).forEach(function (l) {
+    var s = cache.labels[l];
+    if (s.type === type && s.n > bestN) { bestN = s.n; best = l; }
+  });
+  return best || Object.keys(cache.labels)[0];
+}
+
+function setFearnType(t) {
+  FEARN_STATE.type = t;
+  FEARN_STATE.label = fearnDefaultLabel(fearnSeriesCache(), t);
+  document.querySelectorAll('#fearnTypePills .tracking-status-btn').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-ftype') === t);
+  });
+  var cache = fearnSeriesCache();
+  populateFearnLabels(cache);
+  renderFearnStats(cache);
+  renderFearnMainChart(cache);
+}
+
+function populateFearnLabels(cache) {
+  var sel = document.getElementById('fearnLabelSelect');
+  if (!sel || !cache) return;
+  var names = Object.keys(cache.labels).filter(function (l) { return cache.labels[l].type === FEARN_STATE.type; });
+  names.sort(function (a, b) { return cache.labels[b].n - cache.labels[a].n; });
+  if (names.indexOf(FEARN_STATE.label) < 0) FEARN_STATE.label = names[0];
+  sel.innerHTML = names.map(function (l) {
+    var s = cache.labels[l];
+    return '<option value="' + escapeHtml(l) + '"' + (l === FEARN_STATE.label ? ' selected' : '') + '>' + escapeHtml(s.route || l) + ' · ' + s.unit + ' · ' + s.n + 'm</option>';
+  }).join('');
+}
+
+function onFearnLabelChange() {
+  var sel = document.getElementById('fearnLabelSelect');
+  FEARN_STATE.label = sel ? sel.value : FEARN_STATE.label;
+  var cache = fearnSeriesCache();
+  renderFearnStats(cache);
+  renderFearnMainChart(cache);
+}
+
+function setFearnRange(r) {
+  FEARN_STATE.range = r;
+  document.querySelectorAll('#fearnRangeBtns .tracking-status-btn').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-range') === String(r));
+  });
+  renderFearnMainChart(fearnSeriesCache());
+}
+
+function fearnSlice(m) {
+  if (FEARN_STATE.range === 'max') return m;
+  var n = parseInt(FEARN_STATE.range, 10) || m.length;
+  return m.slice(-n);
+}
+
+function renderFearnStats(cache) {
+  var el = document.getElementById('fearnStatCards');
+  var note = document.getElementById('fearnSeriesNote');
+  if (!el || !cache) return;
+  var s = cache.labels[FEARN_STATE.label];
+  if (!s) { el.innerHTML = ''; return; }
+  var chg = s.chg_pct, chgStyle = chg == null ? '' : (chg >= 0 ? 'color:var(--green);' : 'color:var(--red);');
+  var chgTxt = chg == null ? '—' : ((chg >= 0 ? '+' : '') + chg.toFixed(2) + '% MoM');
+  var cards = [
+    { l: 'Latest (' + s.last + ')', v: Number(s.latest).toLocaleString(undefined, { maximumFractionDigits: 2 }) + ' ' + s.unit, sub: s.route || '' },
+    { l: 'MoM Change', v: chgTxt, sub: 'vs ' + (s.m.length > 1 ? s.m[s.m.length - 2][0] : '—'), style: chgStyle },
+    { l: 'All-Time High', v: Number(s.ath).toLocaleString(undefined, { maximumFractionDigits: 2 }), sub: s.ath_date, id: '' },
+    { l: 'All-Time Low', v: Number(s.atl).toLocaleString(undefined, { maximumFractionDigits: 2 }), sub: s.first + ' → ' + s.last, id: '' },
+    { l: 'History Percentile', v: s.pct_rank.toFixed(1) + 'th', sub: 'latest vs ' + s.n + ' months', id: '' },
+    { l: 'Unit / Subtype', v: s.unit, sub: s.subtype, id: '' }
+  ];
+  el.innerHTML = cards.map(function (c) {
+    return '<div class="tracking-kpi-card"><div class="tracking-kpi-label">' + c.l + '</div>' +
+      '<div class="tracking-kpi-val" style="font-size:20px;' + (c.style || '') + '">' + escapeHtml(String(c.v)) + '</div>' +
+      '<div class="tracking-kpi-sub">' + escapeHtml(String(c.sub || '')) + '</div></div>';
+  }).join('');
+  if (note) note.textContent = 'Source: scripts/fearnpulse_rates_full.csv monthly means · ' + s.n + ' months ' + s.first + ' → ' + s.last + ' · WS routes in Worldscale points, TC in $/day unless labeled.';
+}
+
+function renderFearnMainChart(cache) {
+  var canvas = document.getElementById('fearnMainChart');
+  if (!canvas || typeof Chart === 'undefined' || !cache) return;
+  var s = cache.labels[FEARN_STATE.label];
+  if (!s) return;
+  var pts = fearnSlice(s.m);
+  if (fearnMainChartInstance) { fearnMainChartInstance.destroy(); fearnMainChartInstance = null; }
+  var ctx = canvas.getContext('2d');
+  fearnMainChartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: pts.map(function (p) { return p[0]; }),
+      datasets: [{
+        label: (s.route || FEARN_STATE.label) + ' (' + s.unit + ')',
+        data: pts.map(function (p) { return p[1]; }),
+        borderColor: '#4d9aff', backgroundColor: '#4d9aff15',
+        fill: true, tension: 0.2, borderWidth: 2, pointRadius: 0, pointHoverRadius: 4
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: true, labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 } } },
+        tooltip: {
+          backgroundColor: '#111820', borderColor: '#1c2333', borderWidth: 1,
+          titleColor: '#fff', bodyColor: '#d4dce8',
+          callbacks: { label: function (item) { return ' ' + item.dataset.label + ': ' + item.formattedValue; } }
+        }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 } },
+        y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 } } }
+      }
+    }
+  });
+}
+
+function fearnVoiceComments() {
+  var s = window.DATA && DATA.fearnleysSummary && DATA.fearnleysSummary.broker_sentiment;
+  return (s && s.recent_comments) ? s.recent_comments : [];
+}
+
+var FEARN_VOICE_TYPES = ['VLCC Weekly Comment', 'Suezmax Weekly Comment', 'Aframax Weekly Comment', 'Capesize Weekly Comment', 'Panamax Weekly Comment', 'Supramax Weekly Comment', 'Chartering Weekly Comment', 'SnP Weekly Comment', 'LNG Market Report', 'Gas Market Weekly Comment - Eastern Market', 'Gas Market Weekly Comment - Western Market', 'Gas Market Report', 'Daily BLPG Report', 'BITR-1', 'BITR-2', 'BITR-3', 'CROSS MED', 'WAFR/UKC', 'WAFR/USG', 'MEG/EAST', 'BOT/WEST', 'CEYHAN/USG', 'BLSEA/MED'];
+
+function initFearnVoiceFilters() {
+  var sel = document.getElementById('fearnVoiceType');
+  if (!sel || sel.options.length > 1) return;
+  var types = {};
+  FEARN_VOICE_TYPES.forEach(function (t) { types[t] = true; });
+  fearnVoiceComments().forEach(function (c) { if (c.type) types[c.type] = true; });
+  Object.keys(types).sort().forEach(function (t) {
+    var o = document.createElement('option');
+    o.value = t; o.textContent = t;
+    sel.appendChild(o);
+  });
+}
+
+function onFearnVoiceChange() {
+  var t = document.getElementById('fearnVoiceType');
+  var q = document.getElementById('fearnVoiceSearch');
+  FEARN_STATE.voiceType = t ? t.value : 'all';
+  FEARN_STATE.voiceQ = q ? q.value.toLowerCase() : '';
+  renderFearnVoice();
+}
+
+function renderFearnVoice() {
+  var box = document.getElementById('fearnVoiceStream');
+  var cnt = document.getElementById('fearnVoiceCount');
+  if (!box) return;
+  var all = (FEARN_STATE.archive && FEARN_STATE.archive.rows) ? FEARN_STATE.archive.rows : fearnVoiceComments();
+  var rows = all.filter(function (c) {
+    if (FEARN_STATE.voiceType !== 'all' && c.type !== FEARN_STATE.voiceType) return false;
+    if (FEARN_STATE.voiceQ && ((c.text || '') + ' ' + (c.name || '')).toLowerCase().indexOf(FEARN_STATE.voiceQ) < 0) return false;
+    return true;
+  });
+  if (cnt) cnt.textContent = FEARN_STATE.archive ? ('· ' + rows.length + ' of ' + all.length + ' full-archive rows') : ('· latest ' + rows.length + ' of ' + all.length + ' cached (11,709 in per-desk archive)');
+  box.innerHTML = rows.map(function (c) {
+    return '<div style="border:1px solid var(--border);border-radius:8px;padding:10px 12px;background:var(--card);">' +
+      '<div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px;">' +
+      '<span style="font-weight:700;font-size:12px;">' + escapeHtml(c.name || c.type || 'Comment') + '</span>' +
+      '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;color:var(--text-muted);">' + escapeHtml(c.date || '') + '</span>' +
+      '<span style="font-size:10px;color:var(--accent);">' + escapeHtml(c.subtype || '') + '</span></div>' +
+      '<div style="font-size:12px;line-height:1.5;">' + escapeHtml(c.text || '') + '</div></div>';
+  }).join('') || '<div style="color:var(--text-muted);font-size:12px;">No commentary matches current filters.</div>';
+}
+
+function fearnVoiceDeskFor(type) {
+  var t = type || 'all';
+  if (t === 'all') return ['tanker', 'dry', 'gas', 'snp'];
+  if (/VLCC|Aframax|Suezmax|BITR|WAFR|MEG\/EAST|CROSS|BOT\/WEST|Tank|CEYHAN|BLSEA/i.test(t)) return ['tanker'];
+  if (/Capesize|Panamax|Supramax|Chartering|Dry|Container/i.test(t)) return ['dry'];
+  if (/LNG|Gas|BLPG|LPG/i.test(t)) return ['gas'];
+  return ['snp'];
+}
+
+function loadFearnArchive() {
+  if (FEARN_STATE.archiveLoading) return;
+  var btn = document.getElementById('fearnArchiveBtn');
+  var desks = fearnVoiceDeskFor(FEARN_STATE.voiceType).filter(function (d) {
+    return !(FEARN_STATE.archive && FEARN_STATE.archive.desks && FEARN_STATE.archive.desks[d]);
+  });
+  if (!desks.length) { renderFearnVoice(); return; }
+  FEARN_STATE.archiveLoading = true;
+  if (btn) btn.textContent = 'Loading archive…';
+  var chain = Promise.resolve();
+  desks.forEach(function (d) {
+    chain = chain.then(function () {
+      return fetch('data/derived/fearnleys_comments_' + d + '.json')
+        .then(function (res) { return res.ok ? res.json() : []; })
+        .then(function (rows) {
+          FEARN_STATE.archive = FEARN_STATE.archive || { rows: [], desks: {} };
+          (rows || []).forEach(function (r) {
+            FEARN_STATE.archive.rows.push({ date: r.d, type: r.t, name: r.n, text: r.x, subtype: '' });
+          });
+          FEARN_STATE.archive.desks[d] = true;
+        })
+        .catch(function (err) { console.warn('[fearnArchive fetch error]', d, err); });
+    });
+  });
+  chain.then(function () {
+    FEARN_STATE.archive.rows.sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+    FEARN_STATE.archiveLoading = false;
+    if (btn) btn.textContent = 'Archive: ' + FEARN_STATE.archive.rows.length.toLocaleString() + ' rows';
+    renderFearnVoice();
+  });
+}
+
+function renderFearnBacktest() {
+  var canvas = document.getElementById('fearnBacktestChart');
+  var pills = document.getElementById('fearnRegimePills');
+  var note = document.getElementById('fearnBacktestNote');
+  var rows = (window.DATA && DATA.macroBacktest) || [];
+  if (pills) {
+    var byReg = {};
+    rows.forEach(function (r) {
+      if (!byReg[r.regime]) byReg[r.regime] = { n: 0, f1: [] };
+      byReg[r.regime].n++;
+      if (isFinite(r.f1m)) byReg[r.regime].f1.push(r.f1m);
+    });
+    pills.innerHTML = Object.keys(byReg).sort().map(function (rg) {
+      var g = byReg[rg];
+      var hit = g.f1.length ? (g.f1.filter(function (v) { return v > 0; }).length / g.f1.length * 100) : NaN;
+      return '<span class="tracking-status-btn" style="cursor:default;">' + escapeHtml(rg) + ' · ' + g.n + ' obs · 1M fwd hit ' + (isFinite(hit) ? hit.toFixed(0) + '%' : '—') + '</span>';
+    }).join('');
+  }
+  if (note) note.textContent = rows.length ? ('n=' + rows.length + ' daily scores ' + rows[0].d + ' → ' + rows[rows.length - 1].d + ' · data/derived/macro_health_score_backtest.csv · forwards realized, not forecasts') : 'backtest feed unavailable';
+  if (!canvas || typeof Chart === 'undefined' || !rows.length) return;
+  if (fearnBacktestChartInstance) { fearnBacktestChartInstance.destroy(); fearnBacktestChartInstance = null; }
+  var ctx = canvas.getContext('2d');
+  fearnBacktestChartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: rows.map(function (r) { return r.d; }),
+      datasets: [{
+        label: 'Macro Health Score',
+        data: rows.map(function (r) { return r.score; }),
+        borderColor: '#e3b341', backgroundColor: '#e3b34115',
+        fill: true, tension: 0.2, borderWidth: 2, pointRadius: 0, pointHoverRadius: 4
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { display: true, labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 } } } },
+      scales: {
+        x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 } },
+        y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 } } }
+      }
+    }
+  });
+}
 
 function renderOffshoreTab() {
   if (!window.DATA || !DATA.offshoreSummary) return;

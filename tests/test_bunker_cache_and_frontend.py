@@ -58,6 +58,77 @@ def test_bunker_frontend_summary_json_exists():
     assert kpis["eu_ets_carbon_eur"] > 0
     assert kpis["singapore_monthly_vol_mt"] > 1000000
 
+def test_bunker_kpis_live_chg_provenance():
+    """Wave-1: KPI levels/deltas derived from owned CSVs, never stale hardcodes."""
+    import csv
+    with open("data/bunkers/bunker_frontend_summary.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    kpis = data["kpis"]
+    for field in ["global_vlsfo_chg", "global_hsfo_chg", "global_mgo_chg",
+                  "singapore_hi5_chg", "global_obs", "global_prev_obs",
+                  "hi5_obs", "hi5_prev_obs", "singapore_vol_period"]:
+        assert field in kpis, f"Missing live KPI field: {field}"
+
+    # Cross-check global composite vs bunker_prices_daily.csv latest/prev obs
+    rows = list(csv.DictReader(open("data/bunkers/bunker_prices_daily.csv")))
+    g = [r for r in rows if r["port"] == "global_average_bunker_price"]
+    dates = sorted(set(r["date"] for r in g))
+    px = {(r["date"], r["fuel_grade"]): float(r["price_usd_mt"]) for r in g}
+    latest, prev = dates[-1], dates[-2]
+    assert kpis["global_obs"] == latest
+    assert kpis["global_vlsfo"] == px[(latest, "VLSFO")]
+    assert kpis["global_mgo"] == px[(latest, "MGO")]
+    assert kpis["global_hsfo"] == px[(latest, "IFO380")]
+    assert kpis["global_vlsfo_chg"] == round(px[(latest, "VLSFO")] - px[(prev, "VLSFO")], 2)
+    assert kpis["global_mgo_chg"] == round(px[(latest, "MGO")] - px[(prev, "MGO")], 2)
+    assert kpis["global_hsfo_chg"] == round(px[(latest, "IFO380")] - px[(prev, "IFO380")], 2)
+
+    # Cross-check Singapore monthly volume + YoY vs physical volumes CSV
+    vol = list(csv.DictReader(open("data/bunkers/bunker_physical_sales_volumes.csv")))
+    sgm = sorted([r for r in vol if r["port"] == "Singapore" and r["metric"] == "Sales_Monthly_MT"],
+                 key=lambda r: r["period"])
+    assert kpis["singapore_monthly_vol_mt"] == float(sgm[-1]["volume_mt"])
+    assert kpis["singapore_vol_period"] == sgm[-1]["period"]
+
+def test_bunker_bix_coverage():
+    """Wave-1: BIX strip source — 150 rows, 5 indices x 3 grades, change/high/low present."""
+    with open("data/bunkers/bunker_frontend_summary.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    bix = data["benchmarks_bix"]
+    assert len(bix) == 150, f"Expected 150 BIX rows, got {len(bix)}"
+    assert set(x["index"] for x in bix) == {"BIX_World", "BIX_World3", "BIX_APAC", "BIX_EMEA", "BIX_Americas"}
+    assert set(x["grade"] for x in bix) == {"VLSFO", "IFO380", "MGO"}
+    for r in bix:
+        for field in ["date", "index", "grade", "price", "change", "change_pct", "low", "high"]:
+            assert field in r, f"BIX row missing {field}"
+        assert r["price"] > 0 and r["low"] > 0 and r["high"] >= r["low"]
+
+def test_bunker_altfuels_no_zerofill():
+    """Wave-1: LNG/MEOH/EUA parsed; non-null only; nulls are None, never 0-filled as data."""
+    with open("data/bunkers/bunker_frontend_summary.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    ports = data["ports"]
+    for key in ["lng", "meoh", "eua"]:
+        nn = [p for p in ports if p.get(key) is not None]
+        assert len(nn) >= 1, f"No verified {key.upper()} indications"
+        for p in nn:
+            assert p[key] > 0, f"{key} zero-filled at {p['name']}"
+    for p in ports:
+        for key in ["lng", "meoh", "eua", "bio"]:
+            assert p.get(key) is None or p[key] > 0, f"{key} invalid at {p['name']}: {p.get(key)}"
+
+def test_bunker_coverage_honesty():
+    """Wave-1: 35 daily ports -> 186 monthly-only; volumes SG+RTM only."""
+    with open("data/bunkers/bunker_frontend_summary.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    n_ports = len(data["ports"])
+    n_daily = len(data["daily_series"])
+    assert n_ports == 221
+    assert n_daily == 35, f"Expected 35 daily ports, got {n_daily}"
+    assert n_ports - n_daily == 186, "monthly-only fallback count must be 186"
+    assert set(data["physical_volumes"].keys()) == {"Singapore", "Rotterdam"}
+    assert len(data["forward_curves_12m"]) == 6
+
 def test_build_bunker_cache_script():
     script_path = "scripts/bunkers/build_bunker_cache.py"
     assert os.path.exists(script_path), f"Missing build script: {script_path}"
@@ -94,3 +165,39 @@ def test_index_html_bunkers_integration():
     assert "bunkerSummary: null" in c
     assert "data/bunkers/bunker_frontend_summary.json" in c
     assert "renderBunkersTab()" in c
+
+def test_index_html_bunkers_wave1():
+    """Wave-1 rebuild markers: one-truth sync, BIX strip, alt fuels, live deltas,
+    MoM fallback, selected-row fix, honesty labels, BNKR idiom."""
+    with open("index.html", "r", encoding="utf-8") as f:
+        c = f.read()
+
+    # (1) legacy Tracking mini-view synced to one truth
+    assert "ONE-TRUTH SYNC" in c
+    assert "synced from BUNKERS tab" in c
+    # (2) BIX benchmark strip/chart from benchmarks_bix
+    assert 'id="bunkerBixStrip"' in c
+    assert 'id="bunkerBixChart"' in c
+    assert "renderBunkersBixStrip" in c
+    assert "benchmarks_bix" in c
+    # (3) alt-fuel subview, non-null only, never zero-filled
+    assert 'id="bunkersSubviewAltfuels"' in c
+    assert 'id="bunkersAltFuelsTableBody"' in c
+    assert "renderBunkersAltFuels" in c
+    assert "never zero-filled" in c
+    # (4) live KPI deltas from kpis chg fields
+    assert "bunkerKpiVlsfoSub" in c and "global_vlsfo_chg" in c
+    assert "singapore_vol_period" in c
+    # (5) spot deltas + sparklines with labeled MoM fallback
+    assert "bunkerPortDelta" in c and "bunkerSpark12M" in c
+    assert "MoM*" in c
+    # (6) selected-row CSS fix (border-left on <tr> is dead under border-collapse)
+    assert ".bunkers-port-row.selected td" in c
+    assert "box-shadow: inset 3px 0 0 var(--accent)" in c
+    # (7) honest coverage labels
+    assert "2 PORTS ONLY" in c
+    assert "MONTHLY FALLBACK" in c
+    assert "monthly-only" in c
+    # (8) BNKR HUD idiom distinct from tracking
+    assert "bnkr-tag" in c
+    assert "BNKR" in c

@@ -38,14 +38,16 @@ jobs:
       - name: Pull latest before run
         run: git pull --rebase --autostash origin main
 
-      - name: Run Fearnleys TC collector
-        run: python scripts/fetch_fearnleys_tc.py
+      - name: Run Fearnleys TC collector + series cache
+        run: |
+          python scripts/fetch_fearnleys_tc.py
+          if [ -f scripts/fearnleys/build_series_cache.py ]; then python scripts/fearnleys/build_series_cache.py; fi
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/derived/time_charter_rates_fearnleys.csv
+          git add data/derived/time_charter_rates_fearnleys.csv data/derived/fearnleys_series_monthly.json
           if git diff --staged --quiet; then
             echo "No Fearnleys TC changes to commit."
             exit 0
