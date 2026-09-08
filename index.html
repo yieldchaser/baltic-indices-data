@@ -172,33 +172,38 @@
       100% { left: -210px; }
     }
 
+    /* Ships sized to the 58px header: full hulls visible (no mid-waterline
+       clipping -> no pixel-debris look), low opacity so title stays readable
+       when they sail past, and z-index below the h1 chip. */
+    #pirateShip,
+    #pirateShip2,
+    #ghostShip,
+    #ghostShip2 {
+      width: 88px;
+      top: 3px;
+      opacity: 0.45;
+      z-index: 0;
+    }
+
     #pirateShip {
-      width: 134px;
       position: absolute;
-      top: -4px;
       animation: ship-sail 55s linear infinite, floatShip 2.8s ease-in-out infinite;
     }
 
     #pirateShip2 {
-      width: 134px;
       position: absolute;
-      top: -4px;
       animation: ship-sail 55s linear infinite, floatShip 2.8s ease-in-out infinite;
       animation-delay: -13.75s, -0.5s;
     }
 
     #ghostShip {
-      width: 134px;
       position: absolute;
-      top: -4px;
       animation: ship-sail 55s linear infinite, floatShip 3.5s ease-in-out infinite;
       animation-delay: -27.5s, -1s;
     }
 
     #ghostShip2 {
-      width: 134px;
       position: absolute;
-      top: -4px;
       animation: ship-sail 55s linear infinite, floatShip 3.5s ease-in-out infinite;
       animation-delay: -41.25s, -1.5s;
     }
@@ -227,6 +232,10 @@
       gap: 8px;
       text-transform: uppercase;
       letter-spacing: 0.08em;
+      background: var(--card);
+      padding: 6px 14px;
+      border-radius: 8px;
+      box-shadow: 0 0 0 6px var(--card);
     }
 
     .header h1 span.logo {
