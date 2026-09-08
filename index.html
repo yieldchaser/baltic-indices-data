@@ -41594,12 +41594,32 @@ function renderFearnFx() {
   if (!tape || !tape.rows || !facets) return;
   FDESK.tape = tape; FDESK.facets = facets;
   var meta = document.getElementById('fearnFxMeta');
-  if (meta) meta.textContent = tape.rows.length.toLocaleString() + ' rows · ' + (tape.meta.first || '') + ' → ' + (tape.meta.last || '') + ' · total archive ' + facets.total_rows.toLocaleString();
+  if (meta) {
+    // Per-desk publication window: flag departments whose tape slice is
+    // historical (stopped publishing before the live cutoff) so their button
+    // shows honest coverage instead of a dead-end "No fixtures match".
+    var cutoffLive = tape.meta.last ? (function () {
+      var t = new Date(tape.meta.last + 'T00:00:00Z').getTime();
+      return t - 45 * 86400000;
+    })() : 0;
+    var deptLast = {};
+    tape.rows.forEach(function (r) {
+      var t = r.d ? new Date(r.d + 'T00:00:00Z').getTime() : 0;
+      if (!deptLast[r.dp] || t > deptLast[r.dp]) deptLast[r.dp] = t;
+    });
+    FDESK.fxArchiveDepts = {};
+    Object.keys(deptLast).forEach(function (d) {
+      if (d && deptLast[d] < cutoffLive) FDESK.fxArchiveDepts[d] = deptLast[d];
+    });
+    meta.textContent = tape.rows.length.toLocaleString() + ' rows · ' + (tape.meta.first || '') + ' → ' + (tape.meta.last || '') + ' · total archive ' + facets.total_rows.toLocaleString();
+  }
   var deps = document.getElementById('fearnFxDeps');
   if (deps && !deps.innerHTML) {
     var dc = {}; (facets.dept || []).forEach(function (p) { dc[p[0]] = p[1]; });
     deps.innerHTML = FEARnFX_DEPTS.filter(function (d) { return d === 'ALL' || dc[d]; }).map(function (d) {
-      return '<button class="tracking-status-btn' + (d === FDESK.fxDept ? ' active' : '') + '" data-dep="' + d + '" onclick="setFearnFxDept(\'' + d + '\')">' + d + (dc[d] ? ' (' + dc[d].toLocaleString() + ')' : '') + '</button>';
+      var arch = FDESK.fxArchiveDepts && FDESK.fxArchiveDepts[d];
+      var badge = arch ? ' <span style="font-size:8px;color:var(--text-muted);font-weight:400;">· archived ' + new Date(arch).toISOString().slice(0, 7) + '</span>' : '';
+      return '<button class="tracking-status-btn' + (d === FDESK.fxDept ? ' active' : '') + '" data-dep="' + d + '" onclick="setFearnFxDept(\'' + d + '\')"' + (arch ? ' data-tooltip="Desk stopped publishing ' + new Date(arch).toISOString().slice(0, 10) + ' — showing its final 45 days of activity."' : '') + '>' + d + (dc[d] ? ' (' + dc[d].toLocaleString() + ')' : '') + badge + '</button>';
     }).join('');
   }
   var league = document.getElementById('fearnFxLeague');

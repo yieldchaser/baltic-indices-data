@@ -75,9 +75,22 @@ def main():
         json.dump(facets, f, separators=(",", ":"))
     print(f"  {FACETS}: {round(os.path.getsize(FACETS) / 1024, 1)} KB")
 
-    # Tape: last N days
-    cutoff = df[dcol].max() - pd.Timedelta(days=TAPE_DAYS)
-    tape = df[df[dcol] >= cutoff]
+    # Tape: last N days — anchored per department. Live desks (published
+    # within TAPE_DAYS of the real max) get the trailing window; departments
+    # that STOPPED publishing (e.g. TANKPRO, last obs 2026-02-19) would render
+    # a permanently-empty "No fixtures match" tape under a raw 45d cut, so
+    # they get their final TAPE_DAYS of activity instead (archived-desk
+    # display, same doctrine as archived rate series).
+    cutoff_live = real_max - pd.Timedelta(days=TAPE_DAYS)
+    last_pub = df.groupby("department")[dcol].max()
+    live_depts = set(last_pub[last_pub >= cutoff_live].index)
+
+    parts = []
+    for dept, g in df.groupby("department"):
+        anchor = real_max if dept in live_depts else last_pub[dept]
+        parts.append(g[g[dcol] >= anchor - pd.Timedelta(days=TAPE_DAYS)])
+    tape = pd.concat(parts).sort_values(dcol)
+    cutoff = cutoff_live
     want = [c for c in ["department", "segment", "vessel_name", "charterer", "route",
                         "commodity", "rate_numeric", "period", "laycan", "comment"]
             if c in tape.columns]
