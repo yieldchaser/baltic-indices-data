@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T16:21:35Z",
-  "current_date": "2026-09-07",
-  "warning_count": 0,
+  "generated_at": "2026-09-08T12:49:15Z",
+  "current_date": "2026-09-08",
+  "warning_count": 3,
   "high_severity_count": 0,
   "status_counts": {
     "sources": {
@@ -11,7 +11,139 @@
     "topics": {
       "healthy": 10
     },
-    "divergences": {}
+    "divergences": {
+      "watch": 3
+    }
   },
-  "warnings": []
+  "warnings": [
+    {
+      "severity": "watch",
+      "kind": "topic_divergence",
+      "key": "oil_and_opec",
+      "message": "Oil and OPEC shows recent tone divergence: breakwave reads constructive while baltic reads neutral.",
+      "details": {
+        "topic_id": "oil_and_opec",
+        "title": "Oil and OPEC",
+        "severity": "watch",
+        "score_diff": 0.83,
+        "source_scores": [
+          {
+            "source": "baltic",
+            "avg_tone_score": -0.08,
+            "dominant_tone": "neutral",
+            "doc_count": 6,
+            "latest_date": "2026-09-04"
+          },
+          {
+            "source": "hellenic",
+            "avg_tone_score": 0.12,
+            "dominant_tone": "neutral",
+            "doc_count": 6,
+            "latest_date": "2026-09-02"
+          },
+          {
+            "source": "breakwave_insights",
+            "avg_tone_score": 0.33,
+            "dominant_tone": "constructive",
+            "doc_count": 6,
+            "latest_date": "2026-09-07"
+          },
+          {
+            "source": "breakwave",
+            "avg_tone_score": 0.75,
+            "dominant_tone": "constructive",
+            "doc_count": 5,
+            "latest_date": "2026-09-08"
+          }
+        ],
+        "message": "Oil and OPEC shows recent tone divergence: breakwave reads constructive while baltic reads neutral."
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_divergence",
+      "key": "tanker_market",
+      "message": "Tanker Market shows recent tone divergence: breakwave reads constructive while baltic reads neutral.",
+      "details": {
+        "topic_id": "tanker_market",
+        "title": "Tanker Market",
+        "severity": "watch",
+        "score_diff": 0.83,
+        "source_scores": [
+          {
+            "source": "baltic",
+            "avg_tone_score": -0.08,
+            "dominant_tone": "neutral",
+            "doc_count": 6,
+            "latest_date": "2026-09-04"
+          },
+          {
+            "source": "hellenic",
+            "avg_tone_score": 0.38,
+            "dominant_tone": "constructive",
+            "doc_count": 6,
+            "latest_date": "2026-09-05"
+          },
+          {
+            "source": "breakwave_insights",
+            "avg_tone_score": 0.54,
+            "dominant_tone": "constructive",
+            "doc_count": 6,
+            "latest_date": "2026-09-07"
+          },
+          {
+            "source": "breakwave",
+            "avg_tone_score": 0.75,
+            "dominant_tone": "constructive",
+            "doc_count": 3,
+            "latest_date": "2026-09-08"
+          }
+        ],
+        "message": "Tanker Market shows recent tone divergence: breakwave reads constructive while baltic reads neutral."
+      }
+    },
+    {
+      "severity": "watch",
+      "kind": "topic_divergence",
+      "key": "vlcc_and_suezmax",
+      "message": "VLCC and Suezmax shows recent tone divergence: breakwave reads constructive while baltic reads neutral.",
+      "details": {
+        "topic_id": "vlcc_and_suezmax",
+        "title": "VLCC and Suezmax",
+        "severity": "watch",
+        "score_diff": 0.83,
+        "source_scores": [
+          {
+            "source": "baltic",
+            "avg_tone_score": -0.08,
+            "dominant_tone": "neutral",
+            "doc_count": 6,
+            "latest_date": "2026-09-04"
+          },
+          {
+            "source": "hellenic",
+            "avg_tone_score": 0.12,
+            "dominant_tone": "neutral",
+            "doc_count": 6,
+            "latest_date": "2026-09-02"
+          },
+          {
+            "source": "breakwave_insights",
+            "avg_tone_score": 0.33,
+            "dominant_tone": "constructive",
+            "doc_count": 6,
+            "latest_date": "2026-09-07"
+          },
+          {
+            "source": "breakwave",
+            "avg_tone_score": 0.75,
+            "dominant_tone": "constructive",
+            "doc_count": 5,
+            "latest_date": "2026-09-08"
+          }
+        ],
+        "message": "VLCC and Suezmax shows recent tone divergence: breakwave reads constructive while baltic reads neutral."
+      }
+    }
+  ]
 }
