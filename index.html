@@ -21778,15 +21778,15 @@ if (intelTabsContainer) {
       var w20  = _computeWinRate(productKey, periods, getPAvg, allYears, 20);
       var wAll = _computeWinRate(productKey, periods, getPAvg, allYears, 0);
 
-      // heatmap-table class: full styling (borders, sticky th, centered cells).
-      // width:100% so the matrix fills its panel instead of hugging left
-      // with a dead right side at wide viewports.
-      var html = '<table class="heatmap-table" style="width:100%;min-width:' + minWidth + 'px;">';
+      // Dense fixed-width matrix: Quarter column compact, win-rate columns
+      // equal-width; table does NOT stretch to 100% (chips float in vast
+      // empty cells at wide viewports). Centered via margin auto.
+      var html = '<table class="heatmap-table" style="margin:0 auto;min-width:' + minWidth + 'px;">';
       html += '<thead><tr>';
-      html += '<th style="text-align:left;">' + headerNoun + '</th>';
-      html += '<th>10Y Win Rate</th>';
-      html += '<th>20Y Win Rate</th>';
-      html += '<th>All-Time Win Rate</th>';
+      html += '<th style="text-align:left;width:110px;">' + headerNoun + '</th>';
+      html += '<th style="min-width:130px;">10Y Win Rate</th>';
+      html += '<th style="min-width:130px;">20Y Win Rate</th>';
+      html += '<th style="min-width:150px;">All-Time Win Rate</th>';
       html += '</tr></thead><tbody>';
 
       periods.forEach(function (p, pi) {
