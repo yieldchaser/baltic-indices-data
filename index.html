@@ -10197,9 +10197,7 @@
   <div class="tabs-bar">
     <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
     <button class="tab-btn" data-tab="yearly-dash">Yearly</button>
-    <button class="tab-btn" data-tab="quarterly">Quarterly</button>
-    <button class="tab-btn" data-tab="monthly-dash">Monthly</button>
-    <button class="tab-btn" data-tab="heatmaps">Heatmaps</button>
+    <button class="tab-btn" data-tab="seasonality">Seasonality</button>
     <button class="tab-btn" data-tab="indices">Indices</button>
     <button class="tab-btn" data-tab="etfs">ETFs</button>
     <button class="tab-btn" data-tab="signals">Signals</button>
@@ -10559,7 +10557,8 @@
     <!-- ===== TAB: MONTHLY DASHBOARD ===== -->
 
     <!-- ===== TAB: QUARTERLY ===== -->
-    <div class="tab-panel" id="tab-quarterly">
+    <div class="tab-panel" id="tab-seasonality">
+      <!-- SECTION: Quarterly -->
       <!-- Win-Rate KPI Cards -->
       <div class="win-rate-row mb-20" id="winRateRow" data-tooltip="Probability of Expansion - historical 'Hit Rate' for this specific period. 60%+ signifies a high-conviction seasonal tailwind backed by decades of data."></div>
 
@@ -10611,12 +10610,8 @@
           <div id="quarterlyWinRateMatrix"></div>
         </div>
       </div>
-    </div>
 
-    <!-- ===== TAB: INDICES ===== -->
-
-    <!-- ===== TAB: MONTHLY ===== -->
-    <div class="tab-panel" id="tab-monthly-dash">
+      <!-- SECTION: Monthly -->
       <!-- Win-Rate KPI Cards -->
       <div class="win-rate-row mb-20" id="monthlyWinRateRow" data-tooltip="Monthly Win Rate — historical probability of each calendar month generating positive return based on multi-decade history."></div>
 
@@ -10664,12 +10659,8 @@
           <div id="monthlyWinRateMatrix"></div>
         </div>
       </div>
-    </div>
 
-    <!-- ===== TAB: SIGNALS ===== -->
-
-    <!-- ===== TAB: HEATMAPS ===== -->
-    <div class="tab-panel" id="tab-heatmaps">
+      <!-- SECTION: Heatmaps -->
       <div class="heatmap-view-row">
         <label for="heatmapViewSelect" data-tooltip="View Mode toggle - Absolute Values show raw index levels (useful for spotting price floors/ceilings). % Change mode converts each cell to the Month-over-Month or Quarter-over-Quarter % return, making seasonal momentum patterns immediately obvious.">Heatmap View:</label>
         <select id="heatmapViewSelect" onchange="onHeatmapViewChange()">
@@ -10700,8 +10691,6 @@
         </div>
       </div>
     </div>
-
-    <!-- ===== TAB: QUARTERLY ===== -->
 
     <!-- ===== TAB: INDICES ===== -->
     <div class="tab-panel" id="tab-indices">
@@ -14662,7 +14651,6 @@ if (intelTabsContainer) {
       usda_landed_costs: [],
       usdaLandedCost: [],
       landed_cost: [],
-      usdaCostSpreads: [],
       usdaVesselQueues: [],
       usda_vessel_queues: [],
       usdaBunkers: [],
@@ -15815,16 +15803,17 @@ if (intelTabsContainer) {
 
         const usdaBunkersPromise = safeFetch('data/derived/usda_bunker_fuel_daily.csv', 'USDA Bunker Prices', [], r => {
           DATA.usdaBunkers = DATA.usda_bunkers = (r || []).map(row => {
-            const y = row.Year, m = row.Month, day = row.Day;
-            const dateStr = `${y}-${String(m).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-            const d = parseDateISO(dateStr);
+            // USDA ships Day as MM/DD/YYYY with Month as a name; parse Day directly.
+            const rawDay = (row.Day || '').trim();
+            const d = parseDate(rawDay) || parseDateISO(rawDay);
+            const dateStr = d ? fmtDate(d) : rawDay;
             return {
               date: d,
               dateStr: dateStr,
               vlsfo: parseFloat(row['VLSFO Fuel Oil, IMO 2020 Grade, 0.5%'] || 0) || null,
               mgo: parseFloat(row['Marine Gas Oil'] || 0) || null,
               ifo180: parseFloat(row['Intermdiate Fuel Oil, 180cSt'] || 0) || null,
-              ifo380: parseFloat(row['Intermediate Fuel Oil, 380cSt'] || 0) || null,
+              ifo380: parseFloat(row['Intermdiate Fuel Oil, 380cSt'] || 0) || null,
             };
           }).filter(row => row.date != null);
         });
@@ -17808,7 +17797,7 @@ if (intelTabsContainer) {
         // charts (renderQDAreaComp1, renderQDBarChart, renderQDDataGrid) remain.
         function () { renderQDBarChart(productKey); },
         function () { renderQDDataGrid(productKey); },
-        function () { renderQDDataGrid(productKey); },
+        function () { renderQuarterlyWinRateMatrix(productKey); },
       ];
       // Synchronous Batch 1 (0ms latency), Batch 2 in RAF
       for (let i = 0; i < 3 && i < fns.length; i++) {
@@ -20423,8 +20412,7 @@ if (intelTabsContainer) {
       }
 
       if (tabId === 'dashboard') renderDashboard(currentProduct);
-      if (tabId === 'heatmaps') renderHeatmaps(currentProduct);
-      if (tabId === 'quarterly') renderQuarterlyTab(currentProduct);
+      if (tabId === 'seasonality') { renderQuarterlyTab(currentProduct); renderMonthlyDash(currentProduct); renderHeatmaps(currentProduct); }
       if (tabId === 'indices' && !indicesRendered) { renderIndicesTab(); indicesRendered = true; }
       if (tabId === 'etfs') {
         renderETFTab();
@@ -20479,10 +20467,8 @@ if (intelTabsContainer) {
       currentProduct = this.value;
       if (!DATA.loaded) return;
       if (currentTab === 'dashboard') renderDashboard(currentProduct);
-      if (currentTab === 'heatmaps') renderHeatmaps(currentProduct);
-      if (currentTab === 'quarterly') renderQuarterlyTab(currentProduct);
+      if (currentTab === 'seasonality') { renderQuarterlyTab(currentProduct); renderMonthlyDash(currentProduct); renderHeatmaps(currentProduct); }
       if (currentTab === 'yearly-dash') renderYearlyDash(currentProduct);
-      if (currentTab === 'monthly-dash') renderMonthlyDash(currentProduct);
       if (currentTab === 'signals') renderSignalsTab(currentProduct);
       if (currentTab === 'intelligence') renderIntelligenceTab();
       if (currentTab === 'etfs') {
@@ -21483,76 +21469,49 @@ if (intelTabsContainer) {
       return 'background:rgba(210,153,34,0.15);color:#d29922;font-weight:600;';
     }
 
-    function renderQuarterlyWinRateMatrix(productKey) {
-      var el = document.getElementById('quarterlyWinRateMatrix');
+    function _renderWinRateMatrix(elId, periods, labels, getPAvg, productKey, unitWord, headerNoun, minWidth) {
+      var el = document.getElementById(elId);
       if (!el) return;
-      var qs = ['Q1', 'Q2', 'Q3', 'Q4'];
       var allYears = getProductYears(productKey);
       if (!allYears || !allYears.length) { el.innerHTML = ''; return; }
 
-      var getPAvg = function (pk, y, q) { return getQAvgCached(pk, y, q); };
+      var w10  = _computeWinRate(productKey, periods, getPAvg, allYears, 10);
+      var w20  = _computeWinRate(productKey, periods, getPAvg, allYears, 20);
+      var wAll = _computeWinRate(productKey, periods, getPAvg, allYears, 0);
 
-      var w10  = _computeWinRate(productKey, qs, getPAvg, allYears, 10);
-      var w20  = _computeWinRate(productKey, qs, getPAvg, allYears, 20);
-      var wAll = _computeWinRate(productKey, qs, getPAvg, allYears, 0);
-
-      var html = '<table class="rt-table" style="min-width:320px;border-collapse:collapse;font-size:12px;">';
+      var html = '<table class="rt-table" style="min-width:' + minWidth + 'px;border-collapse:collapse;font-size:12px;">';
       html += '<thead><tr>';
-      html += '<th style="text-align:left;padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">Quarter</th>';
+      html += '<th style="text-align:left;padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">' + headerNoun + '</th>';
       html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">10Y Win Rate</th>';
       html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">20Y Win Rate</th>';
       html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">All-Time Win Rate</th>';
       html += '</tr></thead><tbody>';
 
-      qs.forEach(function (q) {
-        var r10 = w10[q], r20 = w20[q], rAll = wAll[q];
+      periods.forEach(function (p, pi) {
+        var r10 = w10[p], r20 = w20[p], rAll = wAll[p];
         var fmt = function (r) { return r != null ? (r * 100).toFixed(0) + '%' : '-'; };
-        html += '<tr class="rt-row" data-tt-type="seasonal-winrate-matrix" data-tooltip="Historical win-rate for ' + q + ' across different lookback windows. Win = quarter avg higher than previous quarter avg.">';
-        html += '<td style="padding:6px 10px;color:var(--text);font-weight:600;">' + q + '</td>';
+        html += '<tr class="rt-row" data-tt-type="seasonal-winrate-matrix" data-tooltip="Historical win-rate for ' + labels[pi] + ' across different lookback windows. Win = ' + unitWord + ' avg higher than prior ' + unitWord + ' avg.">';
+        html += '<td style="padding:6px 10px;color:var(--text);font-weight:600;">' + labels[pi] + '</td>';
         html += '<td style="' + _winRateCellStyle(r10) + 'padding:6px 10px;text-align:center;">' + fmt(r10) + '</td>';
         html += '<td style="' + _winRateCellStyle(r20) + 'padding:6px 10px;text-align:center;">' + fmt(r20) + '</td>';
         html += '<td style="' + _winRateCellStyle(rAll) + 'padding:6px 10px;text-align:center;">' + fmt(rAll) + '</td>';
         html += '</tr>';
       });
       html += '</tbody></table>';
-      html += '<div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Win = quarter average above prior quarter average. <span style="color:#3fb950">&gt;60%</span> = seasonally bullish. <span style="color:#f85149">&lt;40%</span> = seasonally bearish.</div>';
+      html += '<div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Win = ' + unitWord + ' average above prior ' + unitWord + ' average. <span style="color:#3fb950">&gt;60%</span> = seasonally bullish. <span style="color:#f85149">&lt;40%</span> = seasonally bearish.</div>';
       el.innerHTML = html;
     }
 
+    function renderQuarterlyWinRateMatrix(productKey) {
+      var qs = ['Q1', 'Q2', 'Q3', 'Q4'];
+      var getPAvg = function (pk, y, q) { return getQAvgCached(pk, y, q); };
+      _renderWinRateMatrix('quarterlyWinRateMatrix', qs, qs, getPAvg, productKey, 'quarter', 'Quarter', 320);
+    }
+
     function renderMonthlyWinRateMatrix(productKey) {
-      var el = document.getElementById('monthlyWinRateMatrix');
-      if (!el) return;
       var months = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-      var allYears = getProductYears(productKey);
-      if (!allYears || !allYears.length) { el.innerHTML = ''; return; }
-
       var getPAvg = function (pk, y, m) { return getMAvgCached(pk, y, m); };
-
-      var w10  = _computeWinRate(productKey, months, getPAvg, allYears, 10);
-      var w20  = _computeWinRate(productKey, months, getPAvg, allYears, 20);
-      var wAll = _computeWinRate(productKey, months, getPAvg, allYears, 0);
-
-      var html = '<table class="rt-table" style="min-width:400px;border-collapse:collapse;font-size:12px;">';
-      html += '<thead><tr>';
-      html += '<th style="text-align:left;padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">Month</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">10Y Win Rate</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">20Y Win Rate</th>';
-      html += '<th style="padding:6px 10px;color:var(--text-muted);border-bottom:1px solid var(--border);">All-Time Win Rate</th>';
-      html += '</tr></thead><tbody>';
-
-      months.forEach(function (m) {
-        var r10 = w10[m], r20 = w20[m], rAll = wAll[m];
-        var fmt = function (r) { return r != null ? (r * 100).toFixed(0) + '%' : '-'; };
-        html += '<tr class="rt-row" data-tt-type="seasonal-winrate-matrix" data-tooltip="Historical win-rate for ' + MONTH_NAMES[m] + ' across different lookback windows. Win = month avg higher than prior month avg.">';
-        html += '<td style="padding:6px 10px;color:var(--text);font-weight:600;">' + MONTH_NAMES[m] + '</td>';
-        html += '<td style="' + _winRateCellStyle(r10) + 'padding:6px 10px;text-align:center;">' + fmt(r10) + '</td>';
-        html += '<td style="' + _winRateCellStyle(r20) + 'padding:6px 10px;text-align:center;">' + fmt(r20) + '</td>';
-        html += '<td style="' + _winRateCellStyle(rAll) + 'padding:6px 10px;text-align:center;">' + fmt(rAll) + '</td>';
-        html += '</tr>';
-      });
-      html += '</tbody></table>';
-      html += '<div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Win = month average above prior month average. <span style="color:#3fb950">&gt;60%</span> = seasonally bullish. <span style="color:#f85149">&lt;40%</span> = seasonally bearish.</div>';
-      el.innerHTML = html;
+      _renderWinRateMatrix('monthlyWinRateMatrix', months, MONTH_NAMES, getPAvg, productKey, 'month', 'Month', 400);
     }
 
     // =====================================================================
