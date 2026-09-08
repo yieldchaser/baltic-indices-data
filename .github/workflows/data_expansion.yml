@@ -64,6 +64,7 @@ jobs:
         timeout-minutes: 10
         run: |
           if [ -f scripts/fearnleys/daily_fearnleys_sync.py ]; then python scripts/fearnleys/daily_fearnleys_sync.py; fi
+          if [ -f scripts/fearnleys/build_comment_chunks.py ]; then python scripts/fearnleys/build_comment_chunks.py; fi
 
       - name: Geospatial voyage tracker (idempotent, additive-only)
         # Rebuilds lineup/voyage/UI-vector caches from existing fixture data only.

@@ -13471,6 +13471,7 @@
             <option value="all">All desks</option>
           </select>
           <input type="text" id="fearnVoiceSearch" class="tracking-input" placeholder="Search commentary..." oninput="onFearnVoiceChange()">
+          <button id="fearnArchiveBtn" class="tracking-status-btn" onclick="loadFearnArchive()" data-tooltip="Lazy-load the full per-desk comment archive (11,709 rows in 4 chunks) for deeper search.">Load full archive</button>
         </div>
         <div id="fearnVoiceStream" style="display:flex;flex-direction:column;gap:8px;max-height:520px;overflow-y:auto;"></div>
       </div>
@@ -40768,7 +40769,7 @@ window.OFFSHORE_STATE = {
 // =====================================================================
 // FEARNLEYS DESK TAB (Wave-2): full 294-series browser + broker voice + backtest lab
 // =====================================================================
-var FEARN_STATE = { type: 'TANK', label: null, range: 'max', voiceType: 'all', voiceQ: '', init: false };
+var FEARN_STATE = { type: 'TANK', label: null, range: 'max', voiceType: 'all', voiceQ: '', init: false, archive: null, archiveLoading: false };
 var fearnMainChartInstance = null;
 var fearnBacktestChartInstance = null;
 
@@ -40933,10 +40934,13 @@ function fearnVoiceComments() {
   return (s && s.recent_comments) ? s.recent_comments : [];
 }
 
+var FEARN_VOICE_TYPES = ['VLCC Weekly Comment', 'Suezmax Weekly Comment', 'Aframax Weekly Comment', 'Capesize Weekly Comment', 'Panamax Weekly Comment', 'Supramax Weekly Comment', 'Chartering Weekly Comment', 'SnP Weekly Comment', 'LNG Market Report', 'Gas Market Weekly Comment - Eastern Market', 'Gas Market Weekly Comment - Western Market', 'Gas Market Report', 'Daily BLPG Report', 'BITR-1', 'BITR-2', 'BITR-3', 'CROSS MED', 'WAFR/UKC', 'WAFR/USG', 'MEG/EAST', 'BOT/WEST', 'CEYHAN/USG', 'BLSEA/MED'];
+
 function initFearnVoiceFilters() {
   var sel = document.getElementById('fearnVoiceType');
   if (!sel || sel.options.length > 1) return;
   var types = {};
+  FEARN_VOICE_TYPES.forEach(function (t) { types[t] = true; });
   fearnVoiceComments().forEach(function (c) { if (c.type) types[c.type] = true; });
   Object.keys(types).sort().forEach(function (t) {
     var o = document.createElement('option');
@@ -40957,13 +40961,13 @@ function renderFearnVoice() {
   var box = document.getElementById('fearnVoiceStream');
   var cnt = document.getElementById('fearnVoiceCount');
   if (!box) return;
-  var all = fearnVoiceComments();
+  var all = (FEARN_STATE.archive && FEARN_STATE.archive.rows) ? FEARN_STATE.archive.rows : fearnVoiceComments();
   var rows = all.filter(function (c) {
     if (FEARN_STATE.voiceType !== 'all' && c.type !== FEARN_STATE.voiceType) return false;
     if (FEARN_STATE.voiceQ && ((c.text || '') + ' ' + (c.name || '')).toLowerCase().indexOf(FEARN_STATE.voiceQ) < 0) return false;
     return true;
   });
-  if (cnt) cnt.textContent = '· latest ' + rows.length + ' of ' + all.length + ' cached (11,714 total in repo CSV)';
+  if (cnt) cnt.textContent = FEARN_STATE.archive ? ('· ' + rows.length + ' of ' + all.length + ' full-archive rows') : ('· latest ' + rows.length + ' of ' + all.length + ' cached (11,709 in per-desk archive)');
   box.innerHTML = rows.map(function (c) {
     return '<div style="border:1px solid var(--border);border-radius:8px;padding:10px 12px;background:var(--card);">' +
       '<div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px;">' +
@@ -40972,6 +40976,47 @@ function renderFearnVoice() {
       '<span style="font-size:10px;color:var(--accent);">' + escapeHtml(c.subtype || '') + '</span></div>' +
       '<div style="font-size:12px;line-height:1.5;">' + escapeHtml(c.text || '') + '</div></div>';
   }).join('') || '<div style="color:var(--text-muted);font-size:12px;">No commentary matches current filters.</div>';
+}
+
+function fearnVoiceDeskFor(type) {
+  var t = type || 'all';
+  if (t === 'all') return ['tanker', 'dry', 'gas', 'snp'];
+  if (/VLCC|Aframax|Suezmax|BITR|WAFR|MEG\/EAST|CROSS|BOT\/WEST|Tank|CEYHAN|BLSEA/i.test(t)) return ['tanker'];
+  if (/Capesize|Panamax|Supramax|Chartering|Dry|Container/i.test(t)) return ['dry'];
+  if (/LNG|Gas|BLPG|LPG/i.test(t)) return ['gas'];
+  return ['snp'];
+}
+
+function loadFearnArchive() {
+  if (FEARN_STATE.archiveLoading) return;
+  var btn = document.getElementById('fearnArchiveBtn');
+  var desks = fearnVoiceDeskFor(FEARN_STATE.voiceType).filter(function (d) {
+    return !(FEARN_STATE.archive && FEARN_STATE.archive.desks && FEARN_STATE.archive.desks[d]);
+  });
+  if (!desks.length) { renderFearnVoice(); return; }
+  FEARN_STATE.archiveLoading = true;
+  if (btn) btn.textContent = 'Loading archive…';
+  var chain = Promise.resolve();
+  desks.forEach(function (d) {
+    chain = chain.then(function () {
+      return fetch('data/derived/fearnleys_comments_' + d + '.json')
+        .then(function (res) { return res.ok ? res.json() : []; })
+        .then(function (rows) {
+          FEARN_STATE.archive = FEARN_STATE.archive || { rows: [], desks: {} };
+          (rows || []).forEach(function (r) {
+            FEARN_STATE.archive.rows.push({ date: r.d, type: r.t, name: r.n, text: r.x, subtype: '' });
+          });
+          FEARN_STATE.archive.desks[d] = true;
+        })
+        .catch(function (err) { console.warn('[fearnArchive fetch error]', d, err); });
+    });
+  });
+  chain.then(function () {
+    FEARN_STATE.archive.rows.sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+    FEARN_STATE.archiveLoading = false;
+    if (btn) btn.textContent = 'Archive: ' + FEARN_STATE.archive.rows.length.toLocaleString() + ' rows';
+    renderFearnVoice();
+  });
 }
 
 function renderFearnBacktest() {

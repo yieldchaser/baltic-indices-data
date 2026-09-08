@@ -61,5 +61,34 @@ def test_fearnleys_frontend_markers():
         "function renderFearnleysTab()", "function renderFearnMainChart(cache)",
         "function renderFearnVoice()", "function renderFearnBacktest()",
         "setFearnType(", "setFearnRange(", "fearnMainChart", "fearnBacktestChart",
+        "loadFearnArchive()", "fearnArchiveBtn", "fearnleys_comments_",
     ]:
         assert marker in HTML, marker
+
+
+def test_comment_chunks_complete_and_idempotent():
+    import hashlib
+    run_script("scripts/fearnleys/build_comment_chunks.py")
+    total = 0
+    for desk in ["tanker", "dry", "gas", "snp"]:
+        p = ROOT / "data" / "derived" / f"fearnleys_comments_{desk}.json"
+        rows = json.loads(p.read_text(encoding="utf-8"))
+        assert len(rows) > 100, (desk, len(rows))
+        r0 = rows[0]
+        assert set(r0) == {"d", "t", "n", "x"}, set(r0)
+        assert r0["d"] >= "2026-01-01", r0["d"]  # newest-first
+        total += len(rows)
+    assert total == 11709, total
+    # spot-check one row against the source CSV
+    src = pd.read_csv(ROOT / "data" / "derived" / "fearnleys_broker_comments.csv",
+                      usecols=["date", "comment_type", "text"])
+    src = src[(src["date"].astype(str) != "") & (src["text"].fillna("") != "")]
+    assert total == len(src)
+    hashes = {}
+    for desk in ["tanker", "dry", "gas", "snp"]:
+        p = ROOT / "data" / "derived" / f"fearnleys_comments_{desk}.json"
+        hashes[desk] = hashlib.sha256(p.read_bytes()).hexdigest()
+    run_script("scripts/fearnleys/build_comment_chunks.py")
+    for desk in ["tanker", "dry", "gas", "snp"]:
+        p = ROOT / "data" / "derived" / f"fearnleys_comments_{desk}.json"
+        assert hashlib.sha256(p.read_bytes()).hexdigest() == hashes[desk]
