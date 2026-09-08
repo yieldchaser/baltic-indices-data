@@ -4867,7 +4867,6 @@
     .bunkers-toolbar {
       background: var(--card);
       border: 1px solid var(--border);
-      border-left: 3px solid #e3b341;
       border-radius: 8px;
       padding: 10px 14px;
       display: flex;
@@ -5128,7 +5127,6 @@
     .bix-strip-wrap {
       background: var(--card);
       border: 1px solid var(--border);
-      border-left: 3px solid #a371f7;
       border-radius: 8px;
       padding: 10px 14px;
       margin-bottom: 14px;
@@ -41167,11 +41165,11 @@ function renderFearnOverview() {
     var prCol = pr >= 80 ? 'var(--green)' : (pr >= 40 ? 'var(--yellow,#e3b341)' : 'var(--red)');
     var sec = deskOf[t] != null ? deskOf[t] : 9;
     var st = fearnStatusOf(s);
-    return '<div class="tracking-kpi-card fearn-kpi-click" data-sec="' + sec + '" onclick="switchFearnSection(' + sec + ')" style="cursor:pointer;border-left:2px solid ' + col + ';" title="' + escapeHtml(s.k) + '">' +
-      '<div class="tracking-kpi-label" style="display:flex;justify-content:space-between;gap:6px;"><span>' + escapeHtml(t) + ' · ' + escapeHtml(s.unit) + '</span>' + fearnStatusBadge(st) + '</div>' +
+    return '<div class="tracking-kpi-card fearn-kpi-click" data-sec="' + sec + '" onclick="switchFearnSection(' + sec + ')" style="cursor:pointer;" title="' + escapeHtml(s.k) + '">' +
+      '<div class="tracking-kpi-label" style="display:flex;justify-content:space-between;gap:6px;"><span style="color:' + col + ';font-weight:700;">' + escapeHtml(t) + '</span><span style="text-transform:none;letter-spacing:0;">' + escapeHtml(s.unit) + '</span>' + fearnStatusBadge(st) + '</div>' +
       '<div class="tracking-kpi-val" style="font-size:19px;">' + (s.latest == null ? '—' : Number(s.latest).toLocaleString(undefined, { maximumFractionDigits: 2 })) + '</div>' +
       '<div class="tracking-kpi-sub" style="' + chgStyle + '">' + chgTxt + '</div>' +
-      '<div style="height:3px;background:rgba(28,35,51,0.8);border-radius:2px;margin:6px 0 4px;"><div style="height:3px;width:' + Math.max(2, Math.min(100, pr)).toFixed(0) + '%;background:' + prCol + ';border-radius:2px;"></div></div>' +
+      '<div style="height:3px;background:rgba(28,35,51,0.8);border-radius:2px;margin:6px 0 4px;"><div style="height:3px;width:' + Math.max(2, Math.min(100, pr)).toFixed(0) + '%;background:' + prCol + ';opacity:0.75;border-radius:2px;"></div></div>' +
       '<div style="font-size:9px;color:var(--text-muted);font-family:\'IBM Plex Mono\',monospace;">P' + pr.toFixed(0) + ' · ' + s.n + 'm ' + s.first + '→' + s.last + '</div>' +
       '<div style="margin-top:4px;"><svg width="100%" height="40" viewBox="0 0 100 40" preserveAspectRatio="none"><polyline points="' + pts + '" fill="none" stroke="' + col + '" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg></div>' +
       '<div style="font-size:9px;color:var(--text-muted);margin-top:2px;font-family:\'IBM Plex Mono\',monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + escapeHtml(s.route || s.k) + '</div>' +
@@ -41181,7 +41179,14 @@ function renderFearnOverview() {
   if (note) {
     var tankWs = keys.filter(function (k) { return labels[k].type === 'TANK' && labels[k].unit === 'ws' && labels[k].n >= 3; }).length;
     var arch = keys.filter(function (k) { return fearnStatusOf(labels[k]) === 'ARCHIVED'; }).length;
-    note.innerHTML = 'TANK is the only daily-native desk (149/165 series daily since 2018-05, cadence gap 1d); LNG/BULK/S&amp;P/NB are weekly or thinner — monthly display compresses ≈294,521 raw obs (TANK ≈27×). ws/tce unit twins interleave; this desk prefers ws for TANK spot displays. ' + arch + ' archived labels (incl. LNG CALCULATED/MARKET blocks, TANK Baltic/BITR/Equinor, LPG BLPG — frozen 2023) live in the Series Museum only.' + (tankWs ? ' ' + tankWs + ' ws spot routes on §3.' : '');
+    var seg = [
+      'TANK is the only daily-native desk (149/165 series daily since 2018-05, gap 1d); LNG/BULK/S&amp;P/NB are weekly or thinner — monthly display compresses ≈294,521 raw obs (TANK ≈27×).',
+      'ws/tce unit twins interleave; ws preferred for TANK spot displays.' + (tankWs ? ' ' + tankWs + ' ws spot routes on §3.' : ''),
+      arch + ' archived labels (LNG CALCULATED/MARKET, TANK Baltic/BITR/Equinor, LPG BLPG — frozen 2023) live in the Series Museum only.'
+    ];
+    note.innerHTML = seg.map(function (s) {
+      return '<span style="color:var(--text-muted);">' + s + '</span>';
+    }).join('<span style="color:var(--border);padding:0 8px;">·</span>');
   }
 }
 
