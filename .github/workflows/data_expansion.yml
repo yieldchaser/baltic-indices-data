@@ -73,6 +73,7 @@ jobs:
         timeout-minutes: 20
         run: |
           if [ -f scripts/geospatial/build_geospatial_tracker.py ]; then python scripts/geospatial/build_geospatial_tracker.py; fi
+          if [ -f scripts/geospatial/build_vessel_leg_economics.py ]; then python scripts/geospatial/build_vessel_leg_economics.py; fi
 
       - name: Port stress matrix + cache (idempotent, additive-only)
         # compute_port_stress_matrix reads data/congestion/port_calls_daily.csv
