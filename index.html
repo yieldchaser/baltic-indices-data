@@ -10201,6 +10201,7 @@
     <button class="tab-btn" data-tab="indices">Indices</button>
     <button class="tab-btn" data-tab="etfs">ETFs</button>
     <button class="tab-btn" data-tab="signals">Signals</button>
+    <button class="tab-btn" data-tab="fearnleys">Fearnleys</button>
     <button class="tab-btn" data-tab="intelligence">Intelligence</button>
     <button class="tab-btn" data-tab="tracking">Tracking</button>
     <button class="tab-btn" data-tab="bunkers">Bunkers</button>
@@ -13440,6 +13441,50 @@
 
     </div>
 
+    <!-- ===== TAB: FEARNLEYS DESK ===== -->
+    <div class="tab-panel" id="tab-fearnleys">
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title" data-tooltip="Fearnleys desk — all 294 rate series with monthly history (tanker WS spots, TC curves, LNG/LPG, newbuildings, S&P age curves). Pick a desk, then a series. Stats recompute from the cached monthly history.">Fearnleys Rate Browser <span id="fearnDeskCoverage" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;" id="fearnTypePills"></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+          <select id="fearnLabelSelect" class="tracking-select" style="min-width:320px;max-width:100%;" onchange="onFearnLabelChange()"></select>
+          <div style="display:flex;gap:4px;" id="fearnRangeBtns">
+            <button class="tracking-status-btn" data-range="24" onclick="setFearnRange('24')">2Y</button>
+            <button class="tracking-status-btn" data-range="60" onclick="setFearnRange('60')">5Y</button>
+            <button class="tracking-status-btn" data-range="120" onclick="setFearnRange('120')">10Y</button>
+            <button class="tracking-status-btn active" data-range="max" onclick="setFearnRange('max')">Max</button>
+          </div>
+        </div>
+        <div class="tracking-kpi-grid" id="fearnStatCards"></div>
+        <div class="chart-canvas-wrap" style="height:340px;margin-top:10px;"><canvas id="fearnMainChart"></canvas></div>
+        <div id="fearnSeriesNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+      </div>
+
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title" data-tooltip="Broker voice — latest Fearnleys written commentary (tanker, dry bulk, S&P, gas). Full 11,714-comment archive lives in data/derived/fearnleys_broker_comments.csv.">Broker Voice <span id="fearnVoiceCount" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+          <select id="fearnVoiceType" class="tracking-select" onchange="onFearnVoiceChange()">
+            <option value="all">All desks</option>
+          </select>
+          <input type="text" id="fearnVoiceSearch" class="tracking-input" placeholder="Search commentary..." oninput="onFearnVoiceChange()">
+        </div>
+        <div id="fearnVoiceStream" style="display:flex;flex-direction:column;gap:8px;max-height:520px;overflow-y:auto;"></div>
+      </div>
+
+      <div class="chart-container mb-20">
+        <div class="chart-header">
+          <div class="chart-title" data-tooltip="Backtest lab — macro health score history with forward BDI returns by regime. Point-in-time composite; forwards are realized outcomes, not forecasts.">Backtest Lab <span style="font-size:11px;color:var(--text-muted);font-weight:400;">score vs realized forwards</span></div>
+        </div>
+        <div id="fearnRegimePills" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;"></div>
+        <div class="chart-canvas-wrap" style="height:300px;"><canvas id="fearnBacktestChart"></canvas></div>
+        <div id="fearnBacktestNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+      </div>
+    </div>
+
     <!-- ── Intelligence Tab ──────────────────────────────────────────────── -->
 
     <!-- ===== TAB: INTELLIGENCE ===== -->
@@ -14636,6 +14681,8 @@ if (intelTabsContainer) {
       bunkerSummary: null,
       chokepointSummary: null,
       fearnleysSummary: null,
+      fearnleysSeries: null,
+      macroBacktest: [],
       offshoreSummary: null,
       portStressSummary: null,
       chokepointMetrics: [],
@@ -16071,6 +16118,35 @@ if (intelTabsContainer) {
             DATA.fearnleysSummary = null;
           });
 
+        // Wave-2 Fearnleys desk: per-label monthly series cache (294 labels).
+        const fearnleysSeriesPromise = fetch('data/derived/fearnleys_series_monthly.json')
+          .then(res => res.ok ? res.json() : null)
+          .then(data => {
+            DATA.fearnleysSeries = data;
+          })
+          .catch(err => {
+            console.warn('[fearnleysSeries fetch error]', err);
+            DATA.fearnleysSeries = null;
+          });
+
+        // Wave-2 Fearnleys desk: macro health backtest (score + fwd returns by regime).
+        const macroBacktestPromise = safeFetch('data/derived/macro_health_score_backtest.csv', 'Macro Health Backtest', [], r => {
+          var out = [];
+          (r || []).forEach(function (row) {
+            var d = (row.date || '').trim();
+            if (!d) return;
+            out.push({
+              d: d,
+              score: parseFloat(row.total_score),
+              regime: (row.regime || '').trim(),
+              bdi: parseFloat(row.bdi) || null,
+              f1m: parseFloat(row.bdi_fwd_1M),
+              f3m: parseFloat(row.bdi_fwd_3M)
+            });
+          });
+          DATA.macroBacktest = out;
+        });
+
         const bunkerSummaryPromise = fetch('data/bunkers/bunker_frontend_summary.json')
           .then(res => res.ok ? res.json() : null)
           .then(data => {
@@ -16113,7 +16189,7 @@ if (intelTabsContainer) {
           brazilExportsPromise, ppaIronOrePromise, minerShipmentsPromise, eiaExportsPromise,
           portCongestionPromise, euCarbonPromise, tonMilePromise, newcastleCoalPromise, reqExportsPromise,
           sgxOreForwardPromise,
-          portLineupsPromise, vesselTrajectoriesPromise, voyageLegsPromise, bunkerPricesPromise, bunkerSummaryPromise, fearnleysSummaryPromise, offshoreSummaryPromise, portStressSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
+          portLineupsPromise, vesselTrajectoriesPromise, voyageLegsPromise, bunkerPricesPromise, bunkerSummaryPromise, fearnleysSummaryPromise, fearnleysSeriesPromise, macroBacktestPromise, offshoreSummaryPromise, portStressSummaryPromise, chokepointSummaryPromise, chokepointMetricsPromise,
           ...sgxPromises
         ];
 
@@ -20427,8 +20503,8 @@ if (intelTabsContainer) {
         } catch (e) { console.error('[ETFTab Engine]', e); }
       }
       if (tabId === 'yearly-dash') renderYearlyDash(currentProduct);
-      if (tabId === 'monthly-dash') renderMonthlyDash(currentProduct);
       if (tabId === 'signals') { renderSignalsTab(currentProduct); if (typeof initFearnleysTerminal === 'function') initFearnleysTerminal(); }
+      if (tabId === 'fearnleys') renderFearnleysTab();
       if (tabId === 'intelligence') renderIntelligenceTab();
       if (tabId === 'tracking') renderTrackingTab();
       if (tabId === 'bunkers') renderBunkersTab();
@@ -40688,6 +40764,260 @@ window.OFFSHORE_STATE = {
   search: '',
   chartInstance: null
 };
+
+// =====================================================================
+// FEARNLEYS DESK TAB (Wave-2): full 294-series browser + broker voice + backtest lab
+// =====================================================================
+var FEARN_STATE = { type: 'TANK', label: null, range: 'max', voiceType: 'all', voiceQ: '', init: false };
+var fearnMainChartInstance = null;
+var fearnBacktestChartInstance = null;
+
+function fearnSeriesCache() {
+  var c = window.DATA && DATA.fearnleysSeries;
+  return (c && c.labels) ? c : null;
+}
+
+function renderFearnleysTab() {
+  if (!DATA.loaded) return;
+  var cache = fearnSeriesCache();
+  var cov = document.getElementById('fearnDeskCoverage');
+  if (cov) {
+    cov.textContent = cache ? ('· ' + cache.meta.labels_cached + ' series / ' + cache.meta.catalog_ids + ' catalog ids · ' + cache.meta.monthly_points.toLocaleString() + ' monthly pts') : '· cache unavailable';
+  }
+  if (!cache) return;
+  if (!FEARN_STATE.init) {
+    var types = {};
+    Object.keys(cache.labels).forEach(function (l) { types[cache.labels[l].type] = true; });
+    var order = ['TANK', 'BULK', 'LNG', 'LPG', 'NEWBUILDING', 'S&P'];
+    var pills = Object.keys(types).sort(function (a, b) {
+      var ia = order.indexOf(a), ib = order.indexOf(b);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    });
+    if (pills.indexOf('TANK') < 0) pills.unshift('TANK');
+    var pillHtml = pills.map(function (t) {
+      var n = Object.keys(cache.labels).filter(function (l) { return cache.labels[l].type === t; }).length;
+      return '<button class="tracking-status-btn' + (t === FEARN_STATE.type ? ' active' : '') + '" data-ftype="' + t + '" onclick="setFearnType(\'' + t + '\')">' + t + ' (' + n + ')</button>';
+    }).join('');
+    document.getElementById('fearnTypePills').innerHTML = pillHtml;
+    // default label: longest-history series of default desk
+    FEARN_STATE.label = fearnDefaultLabel(cache, FEARN_STATE.type);
+    FEARN_STATE.init = true;
+  }
+  populateFearnLabels(cache);
+  renderFearnStats(cache);
+  renderFearnMainChart(cache);
+  initFearnVoiceFilters();
+  renderFearnVoice();
+  renderFearnBacktest();
+}
+
+function fearnDefaultLabel(cache, type) {
+  var best = null, bestN = -1;
+  Object.keys(cache.labels).forEach(function (l) {
+    var s = cache.labels[l];
+    if (s.type === type && s.n > bestN) { bestN = s.n; best = l; }
+  });
+  return best || Object.keys(cache.labels)[0];
+}
+
+function setFearnType(t) {
+  FEARN_STATE.type = t;
+  FEARN_STATE.label = fearnDefaultLabel(fearnSeriesCache(), t);
+  document.querySelectorAll('#fearnTypePills .tracking-status-btn').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-ftype') === t);
+  });
+  var cache = fearnSeriesCache();
+  populateFearnLabels(cache);
+  renderFearnStats(cache);
+  renderFearnMainChart(cache);
+}
+
+function populateFearnLabels(cache) {
+  var sel = document.getElementById('fearnLabelSelect');
+  if (!sel || !cache) return;
+  var names = Object.keys(cache.labels).filter(function (l) { return cache.labels[l].type === FEARN_STATE.type; });
+  names.sort(function (a, b) { return cache.labels[b].n - cache.labels[a].n; });
+  if (names.indexOf(FEARN_STATE.label) < 0) FEARN_STATE.label = names[0];
+  sel.innerHTML = names.map(function (l) {
+    var s = cache.labels[l];
+    return '<option value="' + escapeHtml(l) + '"' + (l === FEARN_STATE.label ? ' selected' : '') + '>' + escapeHtml(s.route || l) + ' · ' + s.unit + ' · ' + s.n + 'm</option>';
+  }).join('');
+}
+
+function onFearnLabelChange() {
+  var sel = document.getElementById('fearnLabelSelect');
+  FEARN_STATE.label = sel ? sel.value : FEARN_STATE.label;
+  var cache = fearnSeriesCache();
+  renderFearnStats(cache);
+  renderFearnMainChart(cache);
+}
+
+function setFearnRange(r) {
+  FEARN_STATE.range = r;
+  document.querySelectorAll('#fearnRangeBtns .tracking-status-btn').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-range') === String(r));
+  });
+  renderFearnMainChart(fearnSeriesCache());
+}
+
+function fearnSlice(m) {
+  if (FEARN_STATE.range === 'max') return m;
+  var n = parseInt(FEARN_STATE.range, 10) || m.length;
+  return m.slice(-n);
+}
+
+function renderFearnStats(cache) {
+  var el = document.getElementById('fearnStatCards');
+  var note = document.getElementById('fearnSeriesNote');
+  if (!el || !cache) return;
+  var s = cache.labels[FEARN_STATE.label];
+  if (!s) { el.innerHTML = ''; return; }
+  var chg = s.chg_pct, chgStyle = chg == null ? '' : (chg >= 0 ? 'color:var(--green);' : 'color:var(--red);');
+  var chgTxt = chg == null ? '—' : ((chg >= 0 ? '+' : '') + chg.toFixed(2) + '% MoM');
+  var cards = [
+    { l: 'Latest (' + s.last + ')', v: Number(s.latest).toLocaleString(undefined, { maximumFractionDigits: 2 }) + ' ' + s.unit, sub: s.route || '' },
+    { l: 'MoM Change', v: chgTxt, sub: 'vs ' + (s.m.length > 1 ? s.m[s.m.length - 2][0] : '—'), style: chgStyle },
+    { l: 'All-Time High', v: Number(s.ath).toLocaleString(undefined, { maximumFractionDigits: 2 }), sub: s.ath_date, id: '' },
+    { l: 'All-Time Low', v: Number(s.atl).toLocaleString(undefined, { maximumFractionDigits: 2 }), sub: s.first + ' → ' + s.last, id: '' },
+    { l: 'History Percentile', v: s.pct_rank.toFixed(1) + 'th', sub: 'latest vs ' + s.n + ' months', id: '' },
+    { l: 'Unit / Subtype', v: s.unit, sub: s.subtype, id: '' }
+  ];
+  el.innerHTML = cards.map(function (c) {
+    return '<div class="tracking-kpi-card"><div class="tracking-kpi-label">' + c.l + '</div>' +
+      '<div class="tracking-kpi-val" style="font-size:20px;' + (c.style || '') + '">' + escapeHtml(String(c.v)) + '</div>' +
+      '<div class="tracking-kpi-sub">' + escapeHtml(String(c.sub || '')) + '</div></div>';
+  }).join('');
+  if (note) note.textContent = 'Source: scripts/fearnpulse_rates_full.csv monthly means · ' + s.n + ' months ' + s.first + ' → ' + s.last + ' · WS routes in Worldscale points, TC in $/day unless labeled.';
+}
+
+function renderFearnMainChart(cache) {
+  var canvas = document.getElementById('fearnMainChart');
+  if (!canvas || typeof Chart === 'undefined' || !cache) return;
+  var s = cache.labels[FEARN_STATE.label];
+  if (!s) return;
+  var pts = fearnSlice(s.m);
+  if (fearnMainChartInstance) { fearnMainChartInstance.destroy(); fearnMainChartInstance = null; }
+  var ctx = canvas.getContext('2d');
+  fearnMainChartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: pts.map(function (p) { return p[0]; }),
+      datasets: [{
+        label: (s.route || FEARN_STATE.label) + ' (' + s.unit + ')',
+        data: pts.map(function (p) { return p[1]; }),
+        borderColor: '#4d9aff', backgroundColor: '#4d9aff15',
+        fill: true, tension: 0.2, borderWidth: 2, pointRadius: 0, pointHoverRadius: 4
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: true, labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 } } },
+        tooltip: {
+          backgroundColor: '#111820', borderColor: '#1c2333', borderWidth: 1,
+          titleColor: '#fff', bodyColor: '#d4dce8',
+          callbacks: { label: function (item) { return ' ' + item.dataset.label + ': ' + item.formattedValue; } }
+        }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 } },
+        y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 } } }
+      }
+    }
+  });
+}
+
+function fearnVoiceComments() {
+  var s = window.DATA && DATA.fearnleysSummary && DATA.fearnleysSummary.broker_sentiment;
+  return (s && s.recent_comments) ? s.recent_comments : [];
+}
+
+function initFearnVoiceFilters() {
+  var sel = document.getElementById('fearnVoiceType');
+  if (!sel || sel.options.length > 1) return;
+  var types = {};
+  fearnVoiceComments().forEach(function (c) { if (c.type) types[c.type] = true; });
+  Object.keys(types).sort().forEach(function (t) {
+    var o = document.createElement('option');
+    o.value = t; o.textContent = t;
+    sel.appendChild(o);
+  });
+}
+
+function onFearnVoiceChange() {
+  var t = document.getElementById('fearnVoiceType');
+  var q = document.getElementById('fearnVoiceSearch');
+  FEARN_STATE.voiceType = t ? t.value : 'all';
+  FEARN_STATE.voiceQ = q ? q.value.toLowerCase() : '';
+  renderFearnVoice();
+}
+
+function renderFearnVoice() {
+  var box = document.getElementById('fearnVoiceStream');
+  var cnt = document.getElementById('fearnVoiceCount');
+  if (!box) return;
+  var all = fearnVoiceComments();
+  var rows = all.filter(function (c) {
+    if (FEARN_STATE.voiceType !== 'all' && c.type !== FEARN_STATE.voiceType) return false;
+    if (FEARN_STATE.voiceQ && ((c.text || '') + ' ' + (c.name || '')).toLowerCase().indexOf(FEARN_STATE.voiceQ) < 0) return false;
+    return true;
+  });
+  if (cnt) cnt.textContent = '· latest ' + rows.length + ' of ' + all.length + ' cached (11,714 total in repo CSV)';
+  box.innerHTML = rows.map(function (c) {
+    return '<div style="border:1px solid var(--border);border-radius:8px;padding:10px 12px;background:var(--card);">' +
+      '<div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px;">' +
+      '<span style="font-weight:700;font-size:12px;">' + escapeHtml(c.name || c.type || 'Comment') + '</span>' +
+      '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;color:var(--text-muted);">' + escapeHtml(c.date || '') + '</span>' +
+      '<span style="font-size:10px;color:var(--accent);">' + escapeHtml(c.subtype || '') + '</span></div>' +
+      '<div style="font-size:12px;line-height:1.5;">' + escapeHtml(c.text || '') + '</div></div>';
+  }).join('') || '<div style="color:var(--text-muted);font-size:12px;">No commentary matches current filters.</div>';
+}
+
+function renderFearnBacktest() {
+  var canvas = document.getElementById('fearnBacktestChart');
+  var pills = document.getElementById('fearnRegimePills');
+  var note = document.getElementById('fearnBacktestNote');
+  var rows = (window.DATA && DATA.macroBacktest) || [];
+  if (pills) {
+    var byReg = {};
+    rows.forEach(function (r) {
+      if (!byReg[r.regime]) byReg[r.regime] = { n: 0, f1: [] };
+      byReg[r.regime].n++;
+      if (isFinite(r.f1m)) byReg[r.regime].f1.push(r.f1m);
+    });
+    pills.innerHTML = Object.keys(byReg).sort().map(function (rg) {
+      var g = byReg[rg];
+      var hit = g.f1.length ? (g.f1.filter(function (v) { return v > 0; }).length / g.f1.length * 100) : NaN;
+      return '<span class="tracking-status-btn" style="cursor:default;">' + escapeHtml(rg) + ' · ' + g.n + ' obs · 1M fwd hit ' + (isFinite(hit) ? hit.toFixed(0) + '%' : '—') + '</span>';
+    }).join('');
+  }
+  if (note) note.textContent = rows.length ? ('n=' + rows.length + ' daily scores ' + rows[0].d + ' → ' + rows[rows.length - 1].d + ' · data/derived/macro_health_score_backtest.csv · forwards realized, not forecasts') : 'backtest feed unavailable';
+  if (!canvas || typeof Chart === 'undefined' || !rows.length) return;
+  if (fearnBacktestChartInstance) { fearnBacktestChartInstance.destroy(); fearnBacktestChartInstance = null; }
+  var ctx = canvas.getContext('2d');
+  fearnBacktestChartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: rows.map(function (r) { return r.d; }),
+      datasets: [{
+        label: 'Macro Health Score',
+        data: rows.map(function (r) { return r.score; }),
+        borderColor: '#e3b341', backgroundColor: '#e3b34115',
+        fill: true, tension: 0.2, borderWidth: 2, pointRadius: 0, pointHoverRadius: 4
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { display: true, labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 } } } },
+      scales: {
+        x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 } },
+        y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 } } }
+      }
+    }
+  });
+}
 
 function renderOffshoreTab() {
   if (!window.DATA || !DATA.offshoreSummary) return;
