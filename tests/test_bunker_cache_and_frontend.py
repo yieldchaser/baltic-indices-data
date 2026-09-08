@@ -118,14 +118,16 @@ def test_bunker_altfuels_no_zerofill():
             assert p.get(key) is None or p[key] > 0, f"{key} invalid at {p['name']}: {p.get(key)}"
 
 def test_bunker_coverage_honesty():
-    """Wave-1: 35 daily ports -> 186 monthly-only; volumes SG+RTM only."""
+    """Coverage-driven daily series: every port with >=120 trailing observations
+    earns a daily series (180/221 as of 2026-09); the rest stay monthly-only.
+    Floor guards against coverage regressions; volumes SG+RTM only."""
     with open("data/bunkers/bunker_frontend_summary.json", "r", encoding="utf-8") as f:
         data = json.load(f)
     n_ports = len(data["ports"])
     n_daily = len(data["daily_series"])
     assert n_ports == 221
-    assert n_daily == 35, f"Expected 35 daily ports, got {n_daily}"
-    assert n_ports - n_daily == 186, "monthly-only fallback count must be 186"
+    assert n_daily >= 170, f"Daily-series coverage regressed: {n_daily}/221"
+    assert n_daily < n_ports, "monthly-only fallback must remain for sparse ports"
     assert set(data["physical_volumes"].keys()) == {"Singapore", "Rotterdam"}
     assert len(data["forward_curves_12m"]) == 6
 

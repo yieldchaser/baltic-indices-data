@@ -385,8 +385,14 @@ def build_bunker_summary():
             })
         monthly_series[pname] = items
 
-    # 3b. High-Resolution Daily Time-Series (Trailing ~1 Year) for Benchmark Ports & Regional Averages
-    print("Computing high-resolution daily series for benchmark ports...")
+    # 3b. High-Resolution Daily Time-Series (Trailing ~1 Year)
+    # Coverage-driven: every port whose master-history trailing window carries
+    # >= MIN_DAILY_OBS distinct observation dates earns a daily series (the RPC
+    # spot engine publishes business-daily prices for most of the 221-port
+    # network; only sparse ports stay monthly-only). The fixed 35-port
+    # benchmark allowlist is folded in so previously-daily ports can't regress.
+    print("Computing high-resolution daily series (coverage-driven)...")
+    MIN_DAILY_OBS = 120  # ~6 months of business days in the 380d window
     BENCHMARK_DAILY_PORTS = [
         'Americas Average', 'APAC Average', 'EMEA Average', 'Global 20 Ports Average',
         'Global 4 Ports Average', 'Global Average Bunker Price', 'Singapore', 'Rotterdam',
@@ -398,7 +404,16 @@ def build_bunker_summary():
     ]
     max_date = df_master['observation_date'].max()
     cutoff_date = (pd.to_datetime(max_date) - pd.DateOffset(days=380)).strftime('%Y-%m-%d')
-    df_daily_bench = df_master[(df_master['observation_date'] >= cutoff_date) & (df_master['port_name'].isin(BENCHMARK_DAILY_PORTS))]
+    df_window = df_master[df_master['observation_date'] >= cutoff_date]
+    obs_per_port = df_window.groupby('port_name')['observation_date'].nunique()
+    coverage_ports = set(obs_per_port[obs_per_port >= MIN_DAILY_OBS].index)
+    daily_ports = coverage_ports | set(BENCHMARK_DAILY_PORTS)
+    dropped = sorted(set(obs_per_port.index) - daily_ports)
+    print(f"Daily-series ports: {len(daily_ports)} "
+          f"(coverage >= {MIN_DAILY_OBS} obs: {len(coverage_ports)}, "
+          f"benchmark allowlist extras: {len(daily_ports - coverage_ports)}); "
+          f"monthly-only: {len(dropped)}")
+    df_daily_bench = df_window[df_window['port_name'].isin(daily_ports)]
     g_d = df_daily_bench.groupby(['port_name', 'observation_date', 'grade'])['price_usd'].first().unstack().reset_index()
 
     daily_series = {}
