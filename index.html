@@ -13453,24 +13453,237 @@
 
     <!-- ===== TAB: FEARNLEYS DESK ===== -->
     <div class="tab-panel" id="tab-fearnleys">
-      <div class="chart-container mb-20">
-        <div class="chart-header">
-          <div class="chart-title" data-tooltip="Fearnleys desk — all 294 rate series with monthly history (tanker WS spots, TC curves, LNG/LPG, newbuildings, S&P age curves). Pick a desk, then a series. Stats recompute from the cached monthly history.">Fearnleys Rate Browser <span id="fearnDeskCoverage" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
-        </div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;" id="fearnTypePills"></div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
-          <select id="fearnLabelSelect" class="tracking-select" style="min-width:320px;max-width:100%;" onchange="onFearnLabelChange()"></select>
-          <div style="display:flex;gap:4px;" id="fearnRangeBtns">
-            <button class="tracking-status-btn" data-range="24" onclick="setFearnRange('24')">2Y</button>
-            <button class="tracking-status-btn" data-range="60" onclick="setFearnRange('60')">5Y</button>
-            <button class="tracking-status-btn" data-range="120" onclick="setFearnRange('120')">10Y</button>
-            <button class="tracking-status-btn active" data-range="max" onclick="setFearnRange('max')">Max</button>
+      <div id="fearnSubNav" style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:14px;padding:6px 0;border-bottom:1px solid var(--border);"></div>
+
+      <!-- S1 OVERVIEW -->
+      <div class="fearn-sec" id="fearnSec1" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">Desk Overview <span id="fearnDeskCoverage" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;">highest-n series per desk · click a tile to jump to its section</div>
           </div>
+          <div class="tracking-kpi-grid" id="fearnKpiGrid"></div>
+          <div id="fearnOverviewNote" style="font-size:10px;color:var(--text-muted);padding:8px 2px 0;font-family:'IBM Plex Mono',monospace;line-height:1.6;"></div>
         </div>
-        <div class="tracking-kpi-grid" id="fearnStatCards"></div>
-        <div class="chart-canvas-wrap" style="height:340px;margin-top:10px;"><canvas id="fearnMainChart"></canvas></div>
-        <div id="fearnSeriesNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
       </div>
+
+      <!-- S2 TC RATES -->
+      <div class="fearn-sec" id="fearnSec2" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">Time-Charter Rates by Class <span style="font-size:11px;color:var(--text-muted);font-weight:400;">· 2Y+ weekly only since 2021</span></div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;" id="fearnTcMeta"></div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <select id="fearnTcClass" class="tracking-select" style="min-width:200px;" onchange="onFearnTcClass()"></select>
+            <span style="font-size:10px;color:var(--text-muted);">4-6M &amp; 1Y weekly back to 2000 · 2Y/3Y published weekly from 2021 — gaps are honest, no interpolation</span>
+          </div>
+          <div class="chart-canvas-wrap" style="height:380px;"><canvas id="fearnTcChart"></canvas></div>
+          <div style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;">Source: data/derived/fearnleys_desk_tenor.json (Fearnleys TC assessment, USD/day)</div>
+        </div>
+      </div>
+
+      <!-- S3 TANKER ROUTES -->
+      <div class="fearn-sec" id="fearnSec3" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">Tanker Spot Routes (WS) <span id="fearnTankBadge"></span></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <select id="fearnTankRoute" class="tracking-select" style="min-width:320px;max-width:100%;" onchange="onFearnTankRoute()"></select>
+          </div>
+          <div class="tracking-kpi-grid" id="fearnTankStats"></div>
+          <div class="chart-canvas-wrap" style="height:340px;margin-top:10px;"><canvas id="fearnTankChart"></canvas></div>
+          <div id="fearnTankNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+      </div>
+
+      <!-- S4 NEWBUILDING -->
+      <div class="fearn-sec" id="fearnSec4" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">Newbuilding Prices <span style="font-size:11px;color:var(--text-muted);font-weight:400;">· monthly means, USD M</span></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <div style="display:flex;gap:4px;flex-wrap:wrap;" id="fearnNbPills"></div>
+            <button class="tracking-status-btn" id="fearnNbIdxBtn" onclick="toggleFearnNbIndex()">Index (first = 100)</button>
+          </div>
+          <div class="chart-canvas-wrap" style="height:380px;"><canvas id="fearnNbChart"></canvas></div>
+          <div id="fearnNbNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+      </div>
+
+      <!-- S5 S&P AND ASSETS -->
+      <div class="fearn-sec" id="fearnSec5" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">S&amp;P &amp; Asset Curves <span style="font-size:11px;color:var(--text-muted);font-weight:400;">· tenor ladder + demolition overlay</span></div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;" id="fearnAcMeta"></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <select id="fearnAcClass" class="tracking-select" style="min-width:260px;" onchange="onFearnAcClass()"></select>
+            <span style="font-size:10px;color:var(--text-muted);">solid = age-tenor ladder (USD M) · dashed = scrap India ($/ldt, right axis)</span>
+          </div>
+          <div class="chart-canvas-wrap" style="height:360px;"><canvas id="fearnAcChart"></canvas></div>
+        </div>
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">NB-vs-5y Parity <span style="font-size:11px;color:var(--text-muted);font-weight:400;">· 5y-old secondhand value as % of newbuild price</span></div>
+          </div>
+          <div class="chart-canvas-wrap" style="height:300px;"><canvas id="fearnAcParity"></canvas></div>
+          <div id="fearnAcParityNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+      </div>
+
+      <!-- S6 LNG DESK -->
+      <div class="fearn-sec" id="fearnSec6" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">LNG Desk <span style="font-size:11px;color:var(--text-muted);font-weight:400;">· grouped by subtype · gas_extra overlay on right axis</span></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <select id="fearnLngSelect" class="tracking-select" style="min-width:360px;max-width:100%;" onchange="onFearnGasSel('LNG')"></select>
+          </div>
+          <div class="tracking-kpi-grid" id="fearnLngStats"></div>
+          <div class="chart-canvas-wrap" style="height:340px;margin-top:10px;"><canvas id="fearnLngChart"></canvas></div>
+          <div id="fearnLngNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+      </div>
+
+      <!-- S7 LPG DESK -->
+      <div class="fearn-sec" id="fearnSec7" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">LPG Desk <span style="font-size:11px;color:var(--text-muted);font-weight:400;">· grouped by subtype · BLPG archived block lives in Museum only</span></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <select id="fearnLpgSelect" class="tracking-select" style="min-width:360px;max-width:100%;" onchange="onFearnGasSel('LPG')"></select>
+          </div>
+          <div class="tracking-kpi-grid" id="fearnLpgStats"></div>
+          <div class="chart-canvas-wrap" style="height:340px;margin-top:10px;"><canvas id="fearnLpgChart"></canvas></div>
+          <div id="fearnLpgNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+      </div>
+
+      <!-- S8 FIXTURES TAPE -->
+      <div class="fearn-sec" id="fearnSec8" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">Fixtures Tape <span style="font-size:11px;color:var(--text-muted);font-weight:400;">· Coverage 2024 forward</span></div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;" id="fearnFxMeta"></div>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px;">
+            <div style="display:flex;gap:4px;flex-wrap:wrap;" id="fearnFxDeps"></div>
+            <input type="text" id="fearnFxSearch" class="tracking-input" placeholder="Search vessel / charterer / route / commodity..." style="min-width:280px;flex:1;max-width:420px;" oninput="onFearnFxSearch()">
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <div style="flex:1;min-width:0;">
+              <div class="tracking-table-wrap" style="max-height:560px;overflow-y:auto;">
+                <table class="tracking-table" style="font-size:11px;">
+                  <thead><tr><th>Date</th><th>Dept</th><th>Segment</th><th>Vessel</th><th>Charterer</th><th>Commodity</th><th>Period</th><th>Laycan</th><th style="text-align:right;">Rate</th><th>Comment</th></tr></thead>
+                  <tbody id="fearnFxBody"><tr><td colspan="10" style="text-align:center;color:var(--text-muted);padding:14px;">Loading tape…</td></tr></tbody>
+                </table>
+              </div>
+              <div style="display:flex;gap:12px;align-items:center;padding:8px 2px;">
+                <span id="fearnFxCount" style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;"></span>
+                <span id="fearnFxPager" style="font-size:11px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;"></span>
+              </div>
+            </div>
+            <div style="width:260px;flex-shrink:0;display:flex;flex-direction:column;gap:10px;">
+              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;background:var(--card);">
+                <div style="font-size:10px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">YTD Charterer League</div>
+                <div id="fearnFxLeague" style="font-size:11px;line-height:1.9;"></div>
+              </div>
+              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;background:var(--card);">
+                <div style="font-size:10px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Dept Counts (all-time)</div>
+                <div id="fearnFxDeptBars" style="font-size:11px;line-height:1.9;"></div>
+              </div>
+              <div style="border:1px solid var(--border);border-radius:8px;padding:10px;background:var(--card);">
+                <div style="font-size:10px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Fixtures / Month (24m)</div>
+                <canvas id="fearnFxMonthly" style="width:100%;height:70px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <div id="fearnFxNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+      </div>
+
+      <!-- S9 SERIES MUSEUM -->
+      <div class="fearn-sec" id="fearnSec9" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">Fearnleys Rate Browser <span id="fearnBrowserCoverage" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;">pick a desk, then a series · stats recompute from cached monthly history</div>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;" id="fearnTypePills"></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <select id="fearnLabelSelect" class="tracking-select" style="min-width:320px;max-width:100%;" onchange="onFearnLabelChange()"></select>
+            <div style="display:flex;gap:4px;" id="fearnRangeBtns">
+              <button class="tracking-status-btn" data-range="24" onclick="setFearnRange('24')">2Y</button>
+              <button class="tracking-status-btn" data-range="60" onclick="setFearnRange('60')">5Y</button>
+              <button class="tracking-status-btn" data-range="120" onclick="setFearnRange('120')">10Y</button>
+              <button class="tracking-status-btn active" data-range="max" onclick="setFearnRange('max')">Max</button>
+            </div>
+          </div>
+          <div class="tracking-kpi-grid" id="fearnStatCards"></div>
+          <div class="chart-canvas-wrap" style="height:340px;margin-top:10px;"><canvas id="fearnMainChart"></canvas></div>
+          <div id="fearnSeriesNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title">Series Museum <span id="fearnMusCount" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;">ACTIVE ≤45d · STALE 45–365d · ARCHIVED &gt;365d vs file max month · click a card for full history</div>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <div style="display:flex;gap:4px;flex-wrap:wrap;" id="fearnMusTypes"></div>
+            <input type="text" id="fearnMusSearch" class="tracking-input" placeholder="Search labels..." style="min-width:220px;flex:1;max-width:360px;" oninput="onFearnMusSearch()">
+          </div>
+          <div id="fearnMusWall" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;"></div>
+        </div>
+      </div>
+
+      <!-- S10 BROKER VOICE -->
+      <div class="fearn-sec" id="fearnSec10" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title" data-tooltip="Broker voice — latest Fearnleys written commentary (tanker, dry bulk, S&P, gas). Full 11,714-comment archive lives in data/derived/fearnleys_broker_comments.csv.">Broker Voice <span id="fearnVoiceCount" style="font-size:11px;color:var(--text-muted);font-weight:400;"></span></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+            <select id="fearnVoiceType" class="tracking-select" onchange="onFearnVoiceChange()">
+              <option value="all">All desks</option>
+            </select>
+            <input type="text" id="fearnVoiceSearch" class="tracking-input" placeholder="Search commentary..." oninput="onFearnVoiceChange()">
+            <button id="fearnArchiveBtn" class="tracking-status-btn" onclick="loadFearnArchive()" data-tooltip="Lazy-load the full per-desk comment archive (11,709 rows in 4 chunks) for deeper search.">Load full archive</button>
+          </div>
+          <div id="fearnVoiceStream" style="display:flex;flex-direction:column;gap:8px;max-height:520px;overflow-y:auto;"></div>
+        </div>
+      </div>
+
+      <!-- S11 BACKTEST LAB -->
+      <div class="fearn-sec" id="fearnSec11" style="display:none;">
+        <div class="chart-container mb-20">
+          <div class="chart-header">
+            <div class="chart-title" data-tooltip="Backtest lab — macro health score history with forward BDI returns by regime. Point-in-time composite; forwards are realized outcomes, not forecasts.">Backtest Lab <span style="font-size:11px;color:var(--text-muted);font-weight:400;">score vs realized forwards</span></div>
+          </div>
+          <div id="fearnRegimePills" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;"></div>
+          <div class="chart-canvas-wrap" style="height:300px;"><canvas id="fearnBacktestChart"></canvas></div>
+          <div id="fearnBacktestNote" style="font-size:10px;color:var(--text-muted);padding:6px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+      </div>
+
+      <!-- MUSEUM MODAL -->
+      <div id="fearnMusModal" style="display:none;position:fixed;inset:0;background:rgba(1,4,9,0.82);z-index:1000;align-items:center;justify-content:center;" onclick="if(event.target===this)closeFearnMusModal()">
+        <div style="width:min(960px,94vw);max-height:90vh;overflow-y:auto;background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:16px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px;">
+            <div id="fearnMusTitle" style="font-weight:700;font-size:14px;font-family:'IBM Plex Mono',monospace;"></div>
+            <button class="tracking-status-btn" onclick="closeFearnMusModal()">Close ✕</button>
+          </div>
+          <div id="fearnMusStats" class="tracking-kpi-grid" style="margin-bottom:10px;"></div>
+          <div class="chart-canvas-wrap" style="height:320px;"><canvas id="fearnMusChart"></canvas></div>
+          <div id="fearnMusNote" style="font-size:10px;color:var(--text-muted);padding:8px 2px 0;font-family:'IBM Plex Mono',monospace;"></div>
+        </div>
+      </div>
+    </div>
 
       <div class="chart-container mb-20">
         <div class="chart-header">
@@ -40804,6 +41017,853 @@ window.OFFSHORE_STATE = {
 };
 
 // =====================================================================
+// FEARNLEYS SECTIONED DESK ENGINE — 11 sub-nav sections over the wave-3 caches
+// Sections: 1 Overview · 2 TC Rates · 3 Tanker Routes · 4 Newbuilding ·
+// 5 S&P & Assets · 6 LNG · 7 LPG · 8 Fixtures Tape · 9 Series Museum ·
+// 10 Broker Voice · 11 Backtest Lab
+// =====================================================================
+var FDESK_SECTIONS = [
+  { id: 1,  name: 'Overview',       icon: '▦' },
+  { id: 2,  name: 'TC Rates',       icon: '∿' },
+  { id: 3,  name: 'Tanker Routes',  icon: '⛽' },
+  { id: 4,  name: 'Newbuilding',    icon: '🏗' },
+  { id: 5,  name: 'S&P & Assets',   icon: '⚓' },
+  { id: 6,  name: 'LNG Desk',       icon: '🔥' },
+  { id: 7,  name: 'LPG Desk',       icon: '🛢' },
+  { id: 8,  name: 'Fixtures Tape',  icon: '▤' },
+  { id: 9,  name: 'Series Museum',  icon: '🏛' },
+  { id: 10, name: 'Broker Voice',   icon: '✎' },
+  { id: 11, name: 'Backtest Lab',   icon: '⚡' }
+];
+
+var FDESK = {
+  sec: 1,
+  secInit: {},
+  fdecksLoaded: {}, tenor: null, tcClass: 'Capesize', tcChart: null,
+  tankRoute: null, tankChart: null,
+  nb: null, nbFamily: 'bulk', nbIndex: false, nbChart: null,
+  ac: null, acClass: 'VLCC', acChart: null, acParityChart: null,
+  lng: null, lpg: null, gasExtra: null, lngChart: null, lpgChart: null,
+  tape: null, facets: null, fxPage: 0, fxQ: '', fxDept: 'ALL', fxMonthly: null,
+  musType: 'ALL', musQ: '', musChart: null,
+  museumOnlySubtypes: ['CALCULATED', 'MARKET', 'BLPG', 'EQUINOR', 'BALTIC INDEX', 'SUEZMAX-MARKET']
+};
+
+// ---------- cache lazy-loaders ----------
+function fearnLoadJson(url, key, cb) {
+  if (DATA[key]) { if (cb) cb(true); return; }
+  fetch(url)
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) { DATA[key] = j; if (cb) cb(true); })
+    .catch(function (e) { console.warn('[fearn load]', url, e); DATA[key] = DATA[key] || null; if (cb) cb(false); });
+}
+function fearnLoadDeskCaches(cb) {
+  var need = [['fearnleys_desk_tenor.json', 'fearnDeskTenor'], ['fearnleys_nb_prices.json', 'fearnNbPrices'], ['fearnleys_asset_curves.json', 'fearnAssetCurves'], ['fearnleys_gas_extra.json', 'fearnGasExtra']];
+  var left = need.length;
+  need.forEach(function (p) {
+    if (DATA[p[1]]) { left--; return; }
+    fearnLoadJson('data/derived/' + p[0], p[1], function () { if (--left === 0 && cb) cb(); });
+  });
+  if (left === 0 && cb) cb();
+}
+
+// ---------- month math ----------
+function fearnMmAdd(ym, k) {
+  var p = String(ym).split('-'), y = parseInt(p[0], 10), m = parseInt(p[1], 10) - 1 + k;
+  y += Math.floor(m / 12); m = ((m % 12) + 12) % 12;
+  return y + '-' + (m < 9 ? '0' : '') + (m + 1);
+}
+function fearnMmDiff(a, b) {
+  var p = String(a).split('-'), q = String(b).split('-');
+  return (parseInt(p[0], 10) * 12 + parseInt(p[1], 10)) - (parseInt(q[0], 10) * 12 + parseInt(q[1], 10));
+}
+function fearnStatusOf(s) {
+  if (!s || s.n == null) return 'ARCHIVED';
+  var d = fearnMmDiff(s.maxym || FDESK.maxym || s.last, s.last);
+  if (d <= 1) return 'ACTIVE';       // ≤45d ≈ one month step
+  if (d <= 12) return 'STALE';       // 45–365d ≈ one year
+  return 'ARCHIVED';
+}
+function fearnStatusBadge(st) {
+  var col = st === 'ACTIVE' ? 'var(--green)' : (st === 'STALE' ? 'var(--yellow,#e3b341)' : 'var(--text-muted)');
+  return '<span style="font-size:9px;font-weight:700;letter-spacing:0.5px;padding:1px 6px;border-radius:9px;border:1px solid ' + col + ';color:' + col + ';white-space:nowrap;">' + st + '</span>';
+}
+
+// ---------- sub-nav ----------
+function initFearnSubNav() {
+  var nav = document.getElementById('fearnSubNav');
+  if (!nav) return;
+  if (!nav.innerHTML) {
+    nav.innerHTML = FDESK_SECTIONS.map(function (s) {
+      return '<button class="tracking-status-btn" data-fsec="' + s.id + '" onclick="switchFearnSection(' + s.id + ')" style="font-size:11px;">' + s.icon + ' ' + s.name + '</button>';
+    }).join('');
+  }
+  document.querySelectorAll('#fearnSubNav [data-fsec]').forEach(function (b) {
+    b.classList.toggle('active', parseInt(b.getAttribute('data-fsec'), 10) === FDESK.sec);
+  });
+}
+function switchFearnSection(id) {
+  FDESK.sec = id;
+  for (var i = 1; i <= 11; i++) {
+    var el = document.getElementById('fearnSec' + i);
+    if (el) el.style.display = (i === id) ? '' : 'none';
+  }
+  document.querySelectorAll('#fearnSubNav [data-fsec]').forEach(function (b) {
+    b.classList.toggle('active', parseInt(b.getAttribute('data-fsec'), 10) === id);
+  });
+  renderFearnSection(id);
+}
+function renderFearnSection(id) {
+  if (!DATA.loaded) return;
+  if (FDESK.secInit[id]) return;
+  var done = function (fn) {
+    return function () {
+      try { fn(); FDESK.secInit[id] = true; }
+      catch (e) { console.warn('[fearn section ' + id + ' render error]', e); }
+    };
+  };
+  if (id === 1) return done(renderFearnOverview)();
+  if (id === 2) { fearnLoadDeskCaches(done(renderFearnTc)); return; }
+  if (id === 3) return done(renderFearnTank)();
+  if (id === 4) { fearnLoadDeskCaches(done(renderFearnNb)); return; }
+  if (id === 5) { fearnLoadDeskCaches(done(renderFearnAc)); return; }
+  if (id === 6) { fearnLoadDeskCaches(done(function () { renderFearnGas('LNG'); })); return; }
+  if (id === 7) { fearnLoadDeskCaches(done(function () { renderFearnGas('LPG'); })); return; }
+  if (id === 8) { fearnLoadJson('data/derived/fearnleys_fixtures_tape.json', 'fearnFixturesTape', function () { fearnLoadJson('data/derived/fearnleys_fixtures_facets.json', 'fearnFixturesFacets', done(renderFearnFx)); }); return; }
+  if (id === 9) return done(renderFearnMuseum)();
+  if (id === 10) return done(function () { initFearnVoiceFilters(); renderFearnVoice(); })();
+  if (id === 11) return done(renderFearnBacktest)();
+}
+
+// ---------- S1 OVERVIEW ----------
+function renderFearnOverview() {
+  var cache = fearnSeriesCache();
+  var cov = document.getElementById('fearnDeskCoverage');
+  if (cov) cov.textContent = cache ? ('· ' + cache.meta.labels_cached + ' series / ' + cache.meta.catalog_ids + ' catalog ids · ' + cache.meta.monthly_points.toLocaleString() + ' monthly pts') : '· cache unavailable';
+  if (!cache) return;
+  var labels = cache.labels, keys = Object.keys(labels);
+  var fileMax = '0000-00';
+  keys.forEach(function (k) { if (labels[k].last > fileMax) fileMax = labels[k].last; });
+  FDESK.maxym = fileMax;
+
+  var deskOf = { TANK: 3, BULK: 2, LNG: 6, LPG: 7, NEWBUILDING: 4, 'S&P': 5, counts: 1 };
+  var COLORS = { TANK: '#4d9aff', BULK: '#3fb950', LNG: '#8957e5', LPG: '#e3b341', NEWBUILDING: '#f778ba', 'S&P': '#39c5cf', counts: '#7a8494' };
+  var perType = {};
+  keys.forEach(function (k) {
+    var s = labels[k];
+    if (s.n < 3) return;
+    (perType[s.type] = perType[s.type] || []).push(Object.assign({ k: k }, s));
+  });
+  var order = ['TANK', 'BULK', 'LNG', 'LPG', 'NEWBUILDING', 'S&P', 'counts'];
+  var picks = [];
+  Object.keys(perType).forEach(function (t) {
+    perType[t].sort(function (a, b) { return b.n - a.n; });
+    picks = picks.concat(perType[t].slice(0, 3));
+  });
+  picks.sort(function (a, b) { return b.n - a.n; });
+  picks = picks.slice(0, 16);
+  picks.sort(function (a, b) { return (order.indexOf(a.type) < 0 ? 99 : order.indexOf(a.type)) - (order.indexOf(b.type) < 0 ? 99 : order.indexOf(b.type)); });
+
+  var grid = document.getElementById('fearnKpiGrid');
+  if (grid) grid.innerHTML = picks.map(function (s) {
+    var t = s.type, col = COLORS[t] || '#4d9aff';
+    var m36 = s.m.slice(-36), mn = Infinity, mx = -Infinity;
+    m36.forEach(function (p) { if (p[1] < mn) mn = p[1]; if (p[1] > mx) mx = p[1]; });
+    var rng = (mx - mn) || 1;
+    var pts = m36.map(function (p, i) {
+      var x = m36.length > 1 ? (i / (m36.length - 1) * 98 + 1) : 50;
+      var y = 39 - (p[1] - mn) / rng * 36;
+      return x.toFixed(1) + ',' + y.toFixed(1);
+    }).join(' ');
+    var chg = s.chg_pct, chgStyle = chg == null ? '' : (chg >= 0 ? 'color:var(--green);' : 'color:var(--red);');
+    var chgTxt = chg == null ? '—' : ((chg >= 0 ? '+' : '') + chg.toFixed(2) + '% MoM');
+    var pr = (s.pct_rank == null ? 0 : s.pct_rank);
+    var prCol = pr >= 80 ? 'var(--green)' : (pr >= 40 ? 'var(--yellow,#e3b341)' : 'var(--red)');
+    var sec = deskOf[t] != null ? deskOf[t] : 9;
+    var st = fearnStatusOf(s);
+    return '<div class="tracking-kpi-card fearn-kpi-click" data-sec="' + sec + '" onclick="switchFearnSection(' + sec + ')" style="cursor:pointer;border-left:2px solid ' + col + ';" title="' + escapeHtml(s.k) + '">' +
+      '<div class="tracking-kpi-label" style="display:flex;justify-content:space-between;gap:6px;"><span>' + escapeHtml(t) + ' · ' + escapeHtml(s.unit) + '</span>' + fearnStatusBadge(st) + '</div>' +
+      '<div class="tracking-kpi-val" style="font-size:19px;">' + (s.latest == null ? '—' : Number(s.latest).toLocaleString(undefined, { maximumFractionDigits: 2 })) + '</div>' +
+      '<div class="tracking-kpi-sub" style="' + chgStyle + '">' + chgTxt + '</div>' +
+      '<div style="height:3px;background:rgba(28,35,51,0.8);border-radius:2px;margin:6px 0 4px;"><div style="height:3px;width:' + Math.max(2, Math.min(100, pr)).toFixed(0) + '%;background:' + prCol + ';border-radius:2px;"></div></div>' +
+      '<div style="font-size:9px;color:var(--text-muted);font-family:\'IBM Plex Mono\',monospace;">P' + pr.toFixed(0) + ' · ' + s.n + 'm ' + s.first + '→' + s.last + '</div>' +
+      '<div style="margin-top:4px;"><svg width="100%" height="40" viewBox="0 0 100 40" preserveAspectRatio="none"><polyline points="' + pts + '" fill="none" stroke="' + col + '" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg></div>' +
+      '<div style="font-size:9px;color:var(--text-muted);margin-top:2px;font-family:\'IBM Plex Mono\',monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + escapeHtml(s.route || s.k) + '</div>' +
+      '</div>';
+  }).join('');
+  var note = document.getElementById('fearnOverviewNote');
+  if (note) {
+    var tankWs = keys.filter(function (k) { return labels[k].type === 'TANK' && labels[k].unit === 'ws' && labels[k].n >= 3; }).length;
+    var arch = keys.filter(function (k) { return fearnStatusOf(labels[k]) === 'ARCHIVED'; }).length;
+    note.innerHTML = 'TANK is the only daily-native desk (149/165 series daily since 2018-05, cadence gap 1d); LNG/BULK/S&amp;P/NB are weekly or thinner — monthly display compresses ≈294,521 raw obs (TANK ≈27×). ws/tce unit twins interleave; this desk prefers ws for TANK spot displays. ' + arch + ' archived labels (incl. LNG CALCULATED/MARKET blocks, TANK Baltic/BITR/Equinor, LPG BLPG — frozen 2023) live in the Series Museum only.' + (tankWs ? ' ' + tankWs + ' ws spot routes on §3.' : '');
+  }
+}
+
+// ---------- S2 TC RATES ----------
+function renderFearnTc() {
+  var d = DATA.fearnDeskTenor;
+  if (!d || !d.rows) return;
+  FDESK.tenor = d;
+  var sel = document.getElementById('fearnTcClass');
+  if (sel && !sel.options.length) {
+    var classes = {}; d.rows.forEach(function (r) { classes[r[1]] = true; });
+    sel.innerHTML = Object.keys(classes).sort().map(function (c) { return '<option value="' + escapeHtml(c) + '"' + (c === FDESK.tcClass ? ' selected' : '') + '>' + escapeHtml(c) + '</option>'; }).join('');
+  }
+  var TENOR_COLORS = { '4-6M': '#4d9aff', '1Y': '#3fb950', '2Y': '#e3b341', '3Y': '#f778ba' };
+  var cls = sel ? sel.value : FDESK.tcClass;
+  FDESK.tcClass = cls;
+  var byTenor = {};
+  d.rows.forEach(function (r) { if (r[1] === cls) (byTenor[r[2]] = byTenor[r[2]] || []).push(r); });
+  var tenors = Object.keys(byTenor).sort(function (a, b) { return ['4-6M', '1Y', '2Y', '3Y'].indexOf(a) - ['4-6M', '1Y', '2Y', '3Y'].indexOf(b); });
+  var allDates = {};
+  d.rows.forEach(function (r) { if (r[1] === cls) allDates[r[0]] = true; });
+  var dates = Object.keys(allDates).sort();
+  var dateIdx = {}; dates.forEach(function (dt, i) { dateIdx[dt] = i; });
+  var datasets = tenors.map(function (t) {
+    var vals = new Array(dates.length).fill(null);
+    byTenor[t].forEach(function (r) { vals[dateIdx[r[0]]] = r[3]; });
+    return {
+      label: t, data: vals,
+      borderColor: TENOR_COLORS[t] || '#8b949e', backgroundColor: 'transparent',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, tension: 0.15, spanGaps: false
+    };
+  });
+  var meta = document.getElementById('fearnTcMeta');
+  if (meta) {
+    var tn = tenors.map(function (t) { return t + ' n=' + byTenor[t].length; }).join(' · ');
+    meta.textContent = cls + ' · ' + tn + ' · ' + dates.length + ' print dates · gaps = no published print (no interpolation)';
+  }
+  if (typeof Chart === 'undefined') return;
+  var canvas = document.getElementById('fearnTcChart');
+  if (!canvas) return;
+  if (FDESK.tcChart) { FDESK.tcChart.destroy(); FDESK.tcChart = null; }
+  FDESK.tcChart = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: { labels: dates, datasets: datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      normalized: true,
+      interaction: { mode: 'nearest', axis: 'x', intersect: false },
+      plugins: {
+        legend: { display: true, labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 } } },
+        tooltip: { backgroundColor: '#111820', borderColor: '#1c2333', borderWidth: 1, titleColor: '#fff', bodyColor: '#d4dce8', callbacks: { label: function (it) { return ' ' + it.dataset.label + ': $' + Number(it.parsed.y).toLocaleString() + '/day'; } } }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14, autoSkip: true, maxRotation: 0 } },
+        y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, callback: function (v) { return v >= 1000 ? (v / 1000) + 'k' : v; } } }
+      }
+    }
+  });
+}
+function onFearnTcClass() { FDESK.secInit[2] = false; renderFearnTc(); }
+
+// ---------- S3 TANKER ROUTES ----------
+function renderFearnTank() {
+  var cache = fearnSeriesCache();
+  if (!cache) return;
+  var labels = cache.labels;
+  var wsKeys = Object.keys(labels).filter(function (k) { return labels[k].type === 'TANK' && labels[k].unit === 'ws' && labels[k].n >= 3; });
+  wsKeys.sort(function (a, b) { return labels[b].n - labels[a].n; });
+  var sel = document.getElementById('fearnTankRoute');
+  if (!wsKeys.length) return;
+  if (!FDESK.tankRoute || wsKeys.indexOf(FDESK.tankRoute) < 0) FDESK.tankRoute = wsKeys[0];
+  if (sel && !sel.options.length) {
+    sel.innerHTML = wsKeys.map(function (k) {
+      var s = labels[k];
+      return '<option value="' + escapeHtml(k) + '"' + (k === FDESK.tankRoute ? ' selected' : '') + '>' + escapeHtml(s.route) + ' · ' + s.n + 'm · last ' + s.last + '</option>';
+    }).join('');
+  }
+  var s = labels[FDESK.tankRoute];
+  var badge = document.getElementById('fearnTankBadge');
+  if (badge) badge.innerHTML = ' <span style="font-size:10px;font-weight:700;color:var(--green);border:1px solid var(--green);border-radius:9px;padding:1px 7px;">DAILY native · since 2018-05 · cadence gap 1d</span> <span style="font-size:10px;color:var(--text-muted);">plotted monthly (≈27× obs compression)</span>';
+  var chg = s.chg_pct, chgStyle = chg == null ? '' : (chg >= 0 ? 'color:var(--green);' : 'color:var(--red);');
+  var pr = s.pct_rank == null ? 0 : s.pct_rank;
+  var prCol = pr >= 80 ? 'var(--green)' : (pr >= 40 ? 'var(--yellow,#e3b341)' : 'var(--red)');
+  var el = document.getElementById('fearnTankStats');
+  if (el) el.innerHTML = [
+    { l: 'Latest (' + s.last + ')', v: Number(s.latest).toLocaleString() + ' ws', sub: escapeHtml(s.route) },
+    { l: 'MoM', v: chg == null ? '—' : ((chg >= 0 ? '+' : '') + chg.toFixed(2) + '%'), sub: 'vs prev month', style: chgStyle },
+    { l: 'Percentile', v: pr.toFixed(1) + 'th', sub: 'of ' + s.n + ' months' },
+    { l: 'Range', v: Number(s.atl).toLocaleString() + ' – ' + Number(s.ath).toLocaleString(), sub: 'ATL → ATH' + (s.ath_date ? ' (' + s.ath_date + ')' : '') }
+  ].map(function (c) {
+    return '<div class="tracking-kpi-card"><div class="tracking-kpi-label">' + c.l + '</div>' +
+      '<div class="tracking-kpi-val" style="font-size:20px;' + (c.style || '') + '">' + c.v + '</div>' +
+      '<div class="tracking-kpi-sub">' + c.sub + '</div>' +
+      (c.l === 'Percentile' ? '<div style="height:3px;background:rgba(28,35,51,0.8);border-radius:2px;margin-top:6px;"><div style="height:3px;width:' + pr.toFixed(0) + '%;background:' + prCol + ';border-radius:2px;"></div></div>' : '') +
+      '</div>';
+  }).join('');
+  var pts = s.m.slice(-120);
+  var ctx2 = document.getElementById('fearnTankChart');
+  if (!ctx2 || typeof Chart === 'undefined') return;
+  if (FDESK.tankChart) { FDESK.tankChart.destroy(); FDESK.tankChart = null; }
+  FDESK.tankChart = new Chart(ctx2.getContext('2d'), {
+    type: 'line',
+    data: { labels: pts.map(function (p) { return p[0]; }), datasets: [{ label: s.route + ' (ws)', data: pts.map(function (p) { return p[1]; }), borderColor: '#4d9aff', backgroundColor: '#4d9aff15', fill: true, tension: 0.2, borderWidth: 2, pointRadius: 0, pointHoverRadius: 4 }] },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 11 } } }, tooltip: { callbacks: { label: function (it) { return ' ' + it.formattedValue + ' ws'; } } } },
+      scales: { x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 } }, y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 } } } }
+    }
+  });
+  var note = document.getElementById('fearnTankNote');
+  if (note) note.textContent = 'ws/tce twins interleave in the source pulse — ws preferred here for spot display · ' + wsKeys.length + ' ws spot routes · Source: fearnpulse monthly cache';
+}
+function onFearnTankRoute() {
+  var sel = document.getElementById('fearnTankRoute');
+  FDESK.tankRoute = sel ? sel.value : FDESK.tankRoute;
+  FDESK.secInit[3] = false; renderFearnTank();
+}
+
+// ---------- S4 NEWBUILDING ----------
+function renderFearnNb() {
+  var nb = DATA.fearnNbPrices;
+  if (!nb || !nb.series) return;
+  FDESK.nb = nb;
+  var fams = {};
+  Object.keys(nb.series).forEach(function (k) { (fams[k.split('|')[0]] = fams[k.split('|')[0]] || []).push(k); });
+  var pills = document.getElementById('fearnNbPills');
+  if (pills && !pills.innerHTML) {
+    pills.innerHTML = ['bulk', 'tanker', 'gas', 'other'].filter(function (f) { return fams[f]; }).map(function (f) {
+      return '<button class="tracking-status-btn' + (f === FDESK.nbFamily ? ' active' : '') + '" data-fam="' + f + '" onclick="setFearnNbFamily(\'' + f + '\')">' + f + ' (' + fams[f].length + ')</button>';
+    }).join('');
+  }
+  var idxBtn = document.getElementById('fearnNbIdxBtn');
+  if (idxBtn) { idxBtn.classList.toggle('active', FDESK.nbIndex); idxBtn.textContent = FDESK.nbIndex ? 'USD M (levels)' : 'Index (first = 100)'; }
+  var keys = (fams[FDESK.nbFamily] || []).slice().sort();
+  var PALETTE = ['#4d9aff', '#3fb950', '#e3b341', '#f778ba', '#8957e5', '#39c5cf', '#ff7b72', '#79c0ff'];
+  var datasets = keys.map(function (k, i) {
+    var rows = nb.series[k];
+    var base = rows.length ? rows[0][1] : null;
+    var vals = rows.map(function (p) { return FDESK.nbIndex && base ? (p[1] / base * 100) : p[1]; });
+    return { label: k.split('|')[1], data: vals, borderColor: PALETTE[i % PALETTE.length], backgroundColor: 'transparent', borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, tension: 0.15 };
+  });
+  var labels = keys.length ? nb.series[keys[0]].map(function (p) { return p[0]; }) : [];
+  var note = document.getElementById('fearnNbNote');
+  if (note) {
+    var spans = keys.map(function (k) { var r = nb.series[k]; return r.length ? (r[0][0] + '→' + r[r.length - 1][0]) : '—'; });
+    note.textContent = 'Index mode rebases each class to its own first point = 100 (class-specific start months) · ' + keys.map(function (k, i) { return k.split('|')[1] + ' ' + spans[i]; }).join(' · ');
+  }
+  if (typeof Chart === 'undefined') return;
+  var canvas = document.getElementById('fearnNbChart');
+  if (!canvas) return;
+  if (FDESK.nbChart) { FDESK.nbChart.destroy(); FDESK.nbChart = null; }
+  FDESK.nbChart = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: { labels: labels, datasets: datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 10 }, boxWidth: 12 } },
+        tooltip: { backgroundColor: '#111820', borderColor: '#1c2333', borderWidth: 1, callbacks: { label: function (it) { return ' ' + it.dataset.label + ': ' + (FDESK.nbIndex ? it.formattedValue : '$' + it.formattedValue + 'M'); } } }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 } },
+        y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 } } }
+      }
+    }
+  });
+}
+function setFearnNbFamily(f) {
+  FDESK.nbFamily = f;
+  document.querySelectorAll('#fearnNbPills [data-fam]').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-fam') === f); });
+  renderFearnNb();
+}
+function toggleFearnNbIndex() { FDESK.nbIndex = !FDESK.nbIndex; renderFearnNb(); }
+
+// ---------- S5 S&P & ASSETS ----------
+function renderFearnAc() {
+  var ac = DATA.fearnAssetCurves;
+  if (!ac || !ac.classes) return;
+  FDESK.ac = ac;
+  var classes = Object.keys(ac.classes).sort();
+  if (!FDESK.acClass || classes.indexOf(FDESK.acClass) < 0) FDESK.acClass = classes.indexOf('Capesize') >= 0 ? 'Capesize' : classes[0];
+  var sel = document.getElementById('fearnAcClass');
+  if (sel && !sel.options.length) {
+    sel.innerHTML = classes.map(function (c) { return '<option value="' + escapeHtml(c) + '"' + (c === FDESK.acClass ? ' selected' : '') + '>' + escapeHtml(c) + '</option>'; }).join('');
+  }
+  var cls = sel ? sel.value : FDESK.acClass;
+  FDESK.acClass = cls;
+  var tenors = Object.keys(ac.classes[cls] || {}).sort();
+  if (!tenors.length) {
+    var meta0 = document.getElementById('fearnAcMeta');
+    if (meta0) meta0.textContent = cls + ' — no published base curves in this cache; CN/JP variant classes or PRICES-only classes carry the data. Pick another class.';
+    if (FDESK.acChart) { FDESK.acChart.destroy(); FDESK.acChart = null; }
+    if (FDESK.acParityChart) { FDESK.acParityChart.destroy(); FDESK.acParityChart = null; }
+    var pn0 = document.getElementById('fearnAcParityNote');
+    if (pn0) pn0.textContent = 'no curves for ' + cls;
+    return;
+  }
+  var scrapKey = /^Cap|^Kam|^Ultra|^Panamax|^Handy|^Newcastle|^Supramax/i.test(cls) ? 'dry_india' : 'tanker_india';
+  var TENOR_COLORS = { 'DRY-5': '#4d9aff', 'DRY-10': '#3fb950', 'DRY-15': '#e3b341', 'DRY-RESALE': '#f778ba', 'DRY-5-CN': '#79c0ff', 'DRY-10-CN': '#39c5cf', 'DRY-15-CN': '#d2a8ff', 'DRY-RESALE-CN': '#ffa198', 'DRY-5-JP': '#a5d6ff', 'DRY-10-JP': '#7ee787', 'DRY-15-JP': '#f2cc60', 'DRY-RESALE-JP': '#ffab70', 'WET-5': '#4d9aff', 'WET-10': '#3fb950', 'WET-RESALE': '#f778ba', PRICES: '#8b949e' };
+  var allDates = {};
+  tenors.forEach(function (t) { (ac.classes[cls][t] || []).forEach(function (p) { allDates[p[0]] = true; }); });
+  if (ac.scrap && ac.scrap[scrapKey]) (ac.scrap[scrapKey] || []).forEach(function (p) { allDates[p[0]] = true; });
+  var dates = Object.keys(allDates).sort();
+  var dateIdx = {}; dates.forEach(function (dt, i) { dateIdx[dt] = i; });
+  var datasets = tenors.map(function (t) {
+    var vals = new Array(dates.length).fill(null);
+    (ac.classes[cls][t] || []).forEach(function (p) { vals[dateIdx[p[0]]] = p[1]; });
+    return { label: t, data: vals, borderColor: TENOR_COLORS[t] || '#8b949e', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 0, tension: 0.15, spanGaps: false };
+  });
+  if (ac.scrap && ac.scrap[scrapKey]) {
+    var svals = new Array(dates.length).fill(null);
+    ac.scrap[scrapKey].forEach(function (p) { if (dateIdx[p[0]] != null) svals[dateIdx[p[0]]] = p[1]; });
+    datasets.push({
+      label: 'scrap ' + scrapKey + ' ($/ldt, right)', data: svals,
+      borderColor: '#ff7b72', backgroundColor: 'transparent', borderWidth: 1.5, borderDash: [5, 4], pointRadius: 0, tension: 0.15, spanGaps: false, yAxisID: 'y2'
+    });
+  }
+  var meta = document.getElementById('fearnAcMeta');
+  if (meta) meta.textContent = cls + ' · ' + tenors.join(' / ') + ' · scrap: ' + scrapKey;
+  var canvas = document.getElementById('fearnAcChart');
+  if (canvas && typeof Chart !== 'undefined') {
+    if (FDESK.acChart) { FDESK.acChart.destroy(); FDESK.acChart = null; }
+    FDESK.acChart = new Chart(canvas.getContext('2d'), {
+      type: 'line',
+      data: { labels: dates, datasets: datasets },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        normalized: true,
+        interaction: { mode: 'nearest', axis: 'x', intersect: false },
+        plugins: { legend: { labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 10 }, boxWidth: 12 } }, tooltip: { callbacks: { label: function (it) { return ' ' + it.dataset.label + ': ' + it.formattedValue; } } } },
+        scales: {
+          x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 12, autoSkip: true, maxRotation: 0 } },
+          y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, callback: function (v) { return v >= 1000 ? (v / 1000) + 'k' : v; } } },
+          y2: { position: 'right', grid: { drawOnChartArea: false }, ticks: { color: '#ff7b72', font: { family: 'IBM Plex Mono', size: 10 } } }
+        }
+      }
+      });
+  }
+  // NB-vs-5y parity: 5y / NB per common month, ×100
+  var pc = parityFor(cls);
+  var pCanvas = document.getElementById('fearnAcParity');
+  if (pCanvas && typeof Chart !== 'undefined') {
+    if (FDESK.acParityChart) { FDESK.acParityChart.destroy(); FDESK.acParityChart = null; }
+    FDESK.acParityChart = new Chart(pCanvas.getContext('2d'), {
+      type: 'line',
+      data: {
+        labels: pc.map(function (p) { return p[0]; }),
+        datasets: [{
+          label: cls + ' 5y as % of NB', data: pc.map(function (p) { return p[1]; }),
+          borderColor: '#e3b341', backgroundColor: '#e3b34115', fill: true, borderWidth: 2, pointRadius: 0, tension: 0.2
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { labels: { color: '#d4dce8' } }, tooltip: { callbacks: { label: function (it) { return ' ' + it.formattedValue + '%'; } } } },
+        scales: { x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 12 } }, y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, callback: function (v) { return v + '%'; } } } }
+      }
+    });
+  }
+  var pn = document.getElementById('fearnAcParityNote');
+  if (pn) {
+    var last = pc.length ? pc[pc.length - 1] : null;
+    pn.textContent = pc.length ? (cls + ' · 5y/NB last ' + last[0] + ': ' + last[1].toFixed(1) + '% · >100% = secondhand trades above newbuild (ordering incentive fades), <60% = orderbook pressure zone') : ('no NB+5y overlap for ' + cls);
+  }
+}
+function parityFor(cls) {
+  var ac = DATA.fearnAssetCurves; if (!ac) return [];
+  var c = ac.classes[cls] || {};
+  var nbKey = Object.keys(c).indexOf('PRICES') >= 0 ? 'PRICES' : null;
+  var fKey = Object.keys(c).filter(function (t) { return /(^|-)5/.test(t) && !/RESALE/.test(t); })[0];
+  if (!nbKey || !fKey) {
+    // fall back to nb_prices for NB leg
+    var nb = DATA.fearnNbPrices;
+    if (!nb) return [];
+    var nk = Object.keys(nb.series).filter(function (k) { return k.split('|')[1] === cls; })[0];
+    if (!nk || !fKey) return [];
+    var nbm = {}; nb.series[nk].forEach(function (p) { nbm[p[0]] = p[1]; });
+    var out = [];
+    (c[fKey] || []).forEach(function (p) { if (nbm[p[0]]) out.push([p[0], p[1] / nbm[p[0]] * 100]); });
+    return out;
+  }
+  var nm = {}, fm = {};
+  (c[nbKey] || []).forEach(function (p) { nm[p[0]] = p[1]; });
+  (c[fKey] || []).forEach(function (p) { fm[p[0]] = p[1]; });
+  var out = [];
+  Object.keys(fm).sort().forEach(function (m) { if (nm[m]) out.push([m, fm[m] / nm[m] * 100]); });
+  return out;
+}
+function onFearnAcClass() { FDESK.secInit[5] = false; renderFearnAc(); }
+
+// ---------- S6/S7 GAS DESKS ----------
+function renderFearnGas(kind) {
+  var cache = fearnSeriesCache();
+  if (!cache) return;
+  var labels = cache.labels;
+  var archivedSub = FDESK.museumOnlySubtypes;
+  var keys = Object.keys(labels).filter(function (k) {
+    var s = labels[k];
+    if (s.type !== kind || s.n < 3) return false;
+    return archivedSub.indexOf(s.subtype) < 0;
+  });
+  keys.sort(function (a, b) { return (labels[a].subtype + labels[a].route).localeCompare(labels[b].subtype + labels[b].route) || labels[b].n - labels[a].n; });
+  var stateKey = kind === 'LNG' ? 'lng' : 'lpg';
+  var selId = kind === 'LNG' ? 'fearnLngSelect' : 'fearnLpgSelect';
+  var sel = document.getElementById(selId);
+  if (!keys.length) return;
+  if (!FDESK[stateKey] || keys.indexOf(FDESK[stateKey]) < 0) {
+    var pref = keys.filter(function (k) { return labels[k].subtype === 'BROKER'; });
+    FDESK[stateKey] = (pref.length ? pref : keys)[0];
+  }
+  if (sel && !sel.options.length) {
+    var bySub = {};
+    keys.forEach(function (k) { (bySub[labels[k].subtype] = bySub[labels[k].subtype] || []).push(k); });
+    sel.innerHTML = Object.keys(bySub).sort().map(function (sub) {
+      return '<optgroup label="' + escapeHtml(sub) + '">' + bySub[sub].map(function (k) {
+        return '<option value="' + escapeHtml(k) + '"' + (k === FDESK[stateKey] ? ' selected' : '') + '>' + escapeHtml(labels[k].route) + ' · ' + labels[k].n + 'm</option>';
+      }).join('') + '</optgroup>';
+    }).join('');
+  }
+  var s = labels[FDESK[stateKey]];
+  var ms = s.m;
+  var liveChg = null, liveBase = null;
+  if (ms.length >= 2) {
+    var lastp = ms[ms.length - 1], prevp = ms[ms.length - 2];
+    if (lastp[1] && prevp[1]) {
+      liveChg = (lastp[1] - prevp[1]) / prevp[1] * 100;
+      liveBase = prevp[0];
+    }
+  }
+  var chg = liveChg != null ? liveChg : s.chg_pct;
+  var chgStyle = chg == null ? '' : (chg >= 0 ? 'color:var(--green);' : 'color:var(--red);');
+  var pr = s.pct_rank == null ? 0 : s.pct_rank;
+  var prCol = pr >= 80 ? 'var(--green)' : (pr >= 40 ? 'var(--yellow,#e3b341)' : 'var(--red)');
+  var el = document.getElementById(kind === 'LNG' ? 'fearnLngStats' : 'fearnLpgStats');
+  if (el) el.innerHTML = [
+    { l: 'Latest (' + s.last + ')', v: Number(s.latest).toLocaleString(undefined, { maximumFractionDigits: 2 }), sub: s.unit + ' · ' + escapeHtml(s.route) },
+    { l: 'MoM (' + (liveBase || 'vs prev') + ')', v: chg == null ? '—' : ((chg >= 0 ? '+' : '') + chg.toFixed(2) + '%'), sub: s.subtype, style: chgStyle },
+    { l: 'ATH / ATL', v: Number(s.ath).toLocaleString(undefined, { maximumFractionDigits: 1 }) + ' / ' + Number(s.atl).toLocaleString(undefined, { maximumFractionDigits: 1 }), sub: 'ATH ' + (s.ath_date || '—') },
+    { l: 'Percentile', v: pr.toFixed(1) + 'th', sub: s.n + ' months ' + s.first + '→' + s.last }
+  ].map(function (c) {
+    return '<div class="tracking-kpi-card"><div class="tracking-kpi-label">' + c.l + '</div>' +
+      '<div class="tracking-kpi-val" style="font-size:19px;' + (c.style || '') + '">' + c.v + '</div>' +
+      '<div class="tracking-kpi-sub">' + c.sub + '</div>' +
+      (c.l === 'Percentile' ? '<div style="height:3px;background:rgba(28,35,51,0.8);border-radius:2px;margin-top:6px;"><div style="height:3px;width:' + pr.toFixed(0) + '%;background:' + prCol + ';border-radius:2px;"></div></div>' : '') +
+      '</div>';
+  }).join('');
+
+  var overlay = null;
+  var gx = DATA.fearnGasExtra;
+  if (gx) {
+    if (kind === 'LNG' && gx.lng_charter) {
+      var ok = Object.keys(gx.lng_charter).filter(function (c) { return /tc$/.test(c); });
+      overlay = { title: 'LNGC TC overlay (right axis, $/day)', colors: ['#f778ba', '#d2a8ff'], cols: ok, data: gx.lng_charter };
+    } else if (kind === 'LPG' && gx.lpg_tc) {
+      overlay = { title: 'LPG TC overlay (right axis, $/day)', colors: ['#f778ba', '#d2a8ff', '#ffa198'], cols: Object.keys(gx.lpg_tc), data: gx.lpg_tc };
+    }
+  }
+  var pts = s.m.slice(-120);
+  var canvas = document.getElementById(kind === 'LNG' ? 'fearnLngChart' : 'fearnLpgChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+  var instKey = kind === 'LNG' ? 'lngChart' : 'lpgChart';
+  if (FDESK[instKey]) { FDESK[instKey].destroy(); FDESK[instKey] = null; }
+  var datasets = [{
+    label: s.route + ' (' + s.unit + ')', data: pts.map(function (p) { return p[1]; }),
+    borderColor: '#4d9aff', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 0, tension: 0.2, yAxisID: 'y'
+  }];
+  if (overlay) {
+    var s0 = pts.length ? pts[0][0] : '', s1 = pts.length ? pts[pts.length - 1][0] : '';
+    var ymIx = {}; pts.forEach(function (p, i) { ymIx[p[0]] = i; });
+    overlay.cols.forEach(function (c, i) {
+      var gvals = new Array(pts.length).fill(null);
+      (overlay.data[c] || []).forEach(function (p) {
+        if (p[0] >= s0 && p[0] <= s1 && ymIx[p[0]] != null) gvals[ymIx[p[0]]] = p[1];
+      });
+      datasets.push({
+        label: c.replace(/_/g, ' '), data: gvals,
+        borderColor: overlay.colors[i % overlay.colors.length], backgroundColor: 'transparent', borderWidth: 1.5, borderDash: [5, 4], pointRadius: 0, tension: 0.2, spanGaps: false, yAxisID: 'y2'
+      });
+    });
+  }
+  FDESK[instKey] = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: { labels: pts.map(function (p) { return p[0]; }), datasets: datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      normalized: true,
+      interaction: { mode: 'nearest', axis: 'x', intersect: false },
+      plugins: {
+        legend: { labels: { color: '#d4dce8', font: { family: 'IBM Plex Sans', size: 10 }, boxWidth: 12 } },
+        tooltip: { callbacks: { label: function (it) { return ' ' + it.dataset.label + ': ' + it.formattedValue; } } }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 12, autoSkip: true, maxRotation: 0 } },
+        y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, callback: function (v) { return v >= 1000 ? (v / 1000) + 'k' : v; } } },
+        y2: overlay ? { position: 'right', grid: { drawOnChartArea: false }, ticks: { color: '#f778ba', font: { family: 'IBM Plex Mono', size: 10 }, callback: function (v) { return v >= 1000 ? (v / 1000) + 'k' : v; } } } : undefined
+      }
+    }
+  });
+  var note = document.getElementById(kind === 'LNG' ? 'fearnLngNote' : 'fearnLpgNote');
+  if (note) {
+    var archN = Object.keys(labels).filter(function (k) { return labels[k].type === kind && archivedSub.indexOf(labels[k].subtype) >= 0; }).length;
+    note.textContent = kind + ' is weekly/thinner native (daily only 2018-05→2023-02, frozen) — monthly display here · ' + keys.length + ' live labels grouped by subtype · ' + archN + ' archived labels (frozen 2023) live in Museum only' + (overlay ? ' · ' + overlay.title : '');
+  }
+}
+function onFearnGasSel(kind) {
+  var sel = document.getElementById(kind === 'LNG' ? 'fearnLngSelect' : 'fearnLpgSelect');
+  if (kind === 'LNG') FDESK.lng = sel ? sel.value : FDESK.lng; else FDESK.lpg = sel ? sel.value : FDESK.lpg;
+  FDESK.secInit[kind === 'LNG' ? 6 : 7] = false;
+  renderFearnGas(kind);
+}
+
+// ---------- S8 FIXTURES TAPE ----------
+var FEARnFX_DEPTS = ['ALL', 'BULK', 'TANK', 'TANKPRO', 'LNG', 'LPG', 'RoRo'];
+function renderFearnFx() {
+  var tape = DATA.fearnFixturesTape, facets = DATA.fearnFixturesFacets;
+  if (!tape || !tape.rows || !facets) return;
+  FDESK.tape = tape; FDESK.facets = facets;
+  var meta = document.getElementById('fearnFxMeta');
+  if (meta) meta.textContent = tape.rows.length.toLocaleString() + ' rows · ' + (tape.meta.first || '') + ' → ' + (tape.meta.last || '') + ' · total archive ' + facets.total_rows.toLocaleString();
+  var deps = document.getElementById('fearnFxDeps');
+  if (deps && !deps.innerHTML) {
+    var dc = {}; (facets.dept || []).forEach(function (p) { dc[p[0]] = p[1]; });
+    deps.innerHTML = FEARnFX_DEPTS.filter(function (d) { return d === 'ALL' || dc[d]; }).map(function (d) {
+      return '<button class="tracking-status-btn' + (d === FDESK.fxDept ? ' active' : '') + '" data-dep="' + d + '" onclick="setFearnFxDept(\'' + d + '\')">' + d + (dc[d] ? ' (' + dc[d].toLocaleString() + ')' : '') + '</button>';
+    }).join('');
+  }
+  var league = document.getElementById('fearnFxLeague');
+  if (league && !league.innerHTML) {
+    var lg = (facets.ytd_charterer_league || []).filter(function (p) { return p[0] !== '—'; }).slice(0, 12);
+    league.innerHTML = lg.map(function (p, i) {
+      return '<div style="display:flex;justify-content:space-between;gap:8px;"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"><span style="color:var(--text-muted);font-family:\'IBM Plex Mono\',monospace;">#' + (i + 1) + '</span> ' + escapeHtml(p[0]) + '</span><span style="font-family:\'IBM Plex Mono\',monospace;color:var(--accent);">' + p[1].toLocaleString() + '</span></div>';
+    }).join('') || '<div style="color:var(--text-muted);">—</div>';
+  }
+  var db = document.getElementById('fearnFxDeptBars');
+  if (db && !db.innerHTML) {
+    var maxd = 1;
+    (facets.dept || []).forEach(function (p) { if (p[0] !== '—' && p[1] > maxd) maxd = p[1]; });
+    db.innerHTML = (facets.dept || []).filter(function (p) { return p[0] !== '—'; }).slice(0, 7).map(function (p) {
+      return '<div style="margin-bottom:4px;"><div style="display:flex;justify-content:space-between;"><span>' + escapeHtml(p[0]) + '</span><span style="font-family:\'IBM Plex Mono\',monospace;color:var(--text-muted);">' + p[1].toLocaleString() + '</span></div><div style="height:4px;background:rgba(28,35,51,0.8);border-radius:2px;"><div style="height:4px;width:' + (p[1] / maxd * 100).toFixed(1) + '%;background:var(--accent);border-radius:2px;"></div></div></div>';
+    }).join('');
+  }
+  var mc = document.getElementById('fearnFxMonthly');
+  if (mc && !FDESK.fxMonthly) {
+    var mm = (facets.monthly_counts || []).slice(-24);
+    var mx = 1; mm.forEach(function (p) { if (p[1] > mx) mx = p[1]; });
+    var bw = 100 / Math.max(mm.length, 1);
+    var bars = mm.map(function (p, i) {
+      var h = p[1] / mx * 66;
+      return '<rect x="' + (i * bw + bw * 0.15).toFixed(2) + '" y="' + (68 - h).toFixed(1) + '" width="' + (bw * 0.7).toFixed(2) + '" height="' + h.toFixed(1) + '" fill="#4d9aff"></rect>';
+    }).join('');
+    mc.innerHTML = '<svg viewBox="0 0 100 70" preserveAspectRatio="none" style="width:100%;height:100%;">' + bars + '</svg>';
+    FDESK.fxMonthly = true;
+  }
+  renderFearnFxTable();
+  var note = document.getElementById('fearnFxNote');
+  if (note) note.textContent = 'Coverage 2024 forward · earlier years are sparse department scraps · rate numeric where parseable (92% text/RNR historically — kept in comment, em-dash when null) · deduped on date+vessel+charterer+route';
+}
+function fearnFxFiltered() {
+  var tape = FDESK.tape; if (!tape) return [];
+  var q = FDESK.fxQ.trim().toLowerCase();
+  return tape.rows.filter(function (r) {
+    if (FDESK.fxDept !== 'ALL' && r.dp !== FDESK.fxDept) return false;
+    if (!q) return true;
+    return ((r.v || '') + ' ' + (r.c || '') + ' ' + (r.rt || '') + ' ' + (r.cm || '')).toLowerCase().indexOf(q) >= 0;
+  });
+}
+function renderFearnFxTable() {
+  var body = document.getElementById('fearnFxBody');
+  if (!body) return;
+  var rows = fearnFxFiltered();
+  var PAGE = 200, pages = Math.max(1, Math.ceil(rows.length / PAGE));
+  if (FDESK.fxPage >= pages) FDESK.fxPage = pages - 1;
+  if (FDESK.fxPage < 0) FDESK.fxPage = 0;
+  var start = FDESK.fxPage * PAGE;
+  var slice = rows.slice(start, start + PAGE);
+  var DEP_COLORS = { BULK: '#e3b341', TANK: '#f778ba', TANKPRO: '#ffa198', LNG: '#8957e5', LPG: '#39c5cf', RoRo: '#7ee787' };
+  body.innerHTML = slice.map(function (r) {
+    var rate = (r.r == null || r.r === '') ? '<span style="color:var(--text-muted);">—</span>' : Number(r.r).toLocaleString();
+    var dc = DEP_COLORS[r.dp] || '#8b949e';
+    return '<tr>' +
+      '<td class="mono" style="color:var(--text-muted);white-space:nowrap;">' + escapeHtml(r.d || '') + '</td>' +
+      '<td><span style="font-size:9px;font-weight:700;padding:1px 5px;border-radius:8px;border:1px solid ' + dc + ';color:' + dc + ';">' + escapeHtml(r.dp || '—') + '</span></td>' +
+      '<td style="white-space:nowrap;">' + escapeHtml(r.sg || '—') + '</td>' +
+      '<td style="font-weight:600;color:var(--text-bright);">' + escapeHtml(r.v || '—') + '</td>' +
+      '<td>' + escapeHtml(r.c || '—') + '</td>' +
+      '<td>' + escapeHtml(r.cm || '—') + '</td>' +
+      '<td class="mono" style="white-space:nowrap;">' + escapeHtml(r.p || '—') + '</td>' +
+      '<td class="mono" style="white-space:nowrap;">' + escapeHtml(r.lc || '—') + '</td>' +
+      '<td class="mono" style="text-align:right;color:var(--accent);">' + rate + '</td>' +
+      '<td style="font-size:10px;color:var(--text-muted);max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + escapeHtml(r.x || '') + '</td>' +
+      '</tr>';
+  }).join('') || '<tr><td colspan="10" style="text-align:center;color:var(--text-muted);padding:14px;">No fixtures match.</td></tr>';
+  var count = document.getElementById('fearnFxCount');
+  if (count) count.textContent = rows.length.toLocaleString() + ' of ' + (FDESK.tape ? FDESK.tape.rows.length.toLocaleString() : 0) + ' tape rows';
+  var pager = document.getElementById('fearnFxPager');
+  if (pager) pager.innerHTML = 'page ' + (FDESK.fxPage + 1) + '/' + pages + ' <button class="tracking-status-btn" onclick="fearnFxPage(-1)" style="padding:1px 7px;">◀</button> <button class="tracking-status-btn" onclick="fearnFxPage(1)" style="padding:1px 7px;">▶</button>';
+}
+function fearnFxPage(delta) { FDESK.fxPage += delta; renderFearnFxTable(); }
+function setFearnFxDept(d) {
+  FDESK.fxDept = d; FDESK.fxPage = 0;
+  document.querySelectorAll('#fearnFxDeps [data-dep]').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-dep') === d); });
+  renderFearnFxTable();
+}
+var _fearnFxDebounce = null;
+function onFearnFxSearch() {
+  clearTimeout(_fearnFxDebounce);
+  _fearnFxDebounce = setTimeout(function () {
+    FDESK.fxQ = (document.getElementById('fearnFxSearch') || {}).value || '';
+    FDESK.fxPage = 0;
+    renderFearnFxTable();
+  }, 140);
+}
+
+// ---------- S9 SERIES MUSEUM ----------
+function renderFearnMuseum() {
+  var cache = fearnSeriesCache();
+  if (!cache) return;
+  var labels = cache.labels, keys = Object.keys(labels);
+  var cov = document.getElementById('fearnBrowserCoverage');
+  if (cov && !cov.textContent) cov.textContent = '· ' + cache.meta.labels_cached + ' series / ' + cache.meta.catalog_ids + ' catalog ids · ' + cache.meta.monthly_points.toLocaleString() + ' monthly pts';
+  if (!FDESK.maxym) {
+    var fileMax = '0000-00';
+    keys.forEach(function (k) { if (labels[k].last > fileMax) fileMax = labels[k].last; });
+    FDESK.maxym = fileMax;
+  }
+  // browser pills (kept from old desk)
+  if (!FEARN_STATE.init) {
+    FEARN_STATE.init = true;
+    FEARN_STATE.label = fearnDefaultLabel(cache, FEARN_STATE.type);
+  }
+  var types = {};
+  keys.forEach(function (l) { types[labels[l].type] = true; });
+  var order = ['TANK', 'BULK', 'LNG', 'LPG', 'NEWBUILDING', 'S&P'];
+  var pills = Object.keys(types).sort(function (a, b) { var ia = order.indexOf(a), ib = order.indexOf(b); return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib); });
+  var pillHtml = pills.map(function (t) {
+    var n = keys.filter(function (l) { return labels[l].type === t; }).length;
+    return '<button class="tracking-status-btn' + (t === FEARN_STATE.type ? ' active' : '') + '" data-ftype="' + t + '" onclick="setFearnType(\'' + t + '\')">' + t + ' (' + n + ')</button>';
+  }).join('');
+  var pillBox = document.getElementById('fearnTypePills');
+  if (pillBox) pillBox.innerHTML = pillHtml;
+  populateFearnLabels(cache);
+  renderFearnStats(cache);
+  renderFearnMainChart(cache);
+  // museum wall
+  var mt = document.getElementById('fearnMusTypes');
+  if (mt && !mt.innerHTML) {
+    mt.innerHTML = ['ALL'].concat(pills).map(function (t) {
+      return '<button class="tracking-status-btn' + (t === FDESK.musType ? ' active' : '') + '" data-mtype="' + t + '" onclick="setFearnMusType(\'' + t + '\')">' + t + '</button>';
+    }).join('');
+  }
+  renderFearnMusWall();
+}
+function renderFearnMusWall() {
+  var cache = fearnSeriesCache();
+  if (!cache) return;
+  var labels = cache.labels;
+  var q = FDESK.musQ.trim().toLowerCase();
+  var keys = Object.keys(labels).filter(function (k) {
+    var s = labels[k];
+    if (s.n < 3) return false;
+    if (FDESK.musType !== 'ALL' && s.type !== FDESK.musType) return false;
+    if (q && (k + ' ' + (s.subtype || '') + ' ' + (s.route || '')).toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+  keys.sort(function (a, b) { return labels[b].n - labels[a].n; });
+  var counts = { ACTIVE: 0, STALE: 0, ARCHIVED: 0 };
+  var wall = document.getElementById('fearnMusWall');
+  if (!wall) return;
+  var html = keys.map(function (k) {
+    var s = labels[k], st = fearnStatusOf(s);
+    counts[st]++;
+    var col = st === 'ACTIVE' ? 'var(--green)' : (st === 'STALE' ? 'var(--yellow,#e3b341)' : 'var(--text-muted)');
+    var pr = s.pct_rank == null ? 0 : s.pct_rank;
+    var prCol = pr >= 80 ? 'var(--green)' : (pr >= 40 ? 'var(--yellow,#e3b341)' : 'var(--red)');
+    var m36 = s.m.slice(-36), mn = Infinity, mx = -Infinity;
+    m36.forEach(function (p) { if (p[1] < mn) mn = p[1]; if (p[1] > mx) mx = p[1]; });
+    var rng = (mx - mn) || 1;
+    var pts = m36.map(function (p, i) {
+      var x = m36.length > 1 ? (i / (m36.length - 1) * 98 + 1) : 50;
+      var y = 30 - (p[1] - mn) / rng * 27;
+      return x.toFixed(1) + ',' + y.toFixed(1);
+    }).join(' ');
+    var chip = st === 'ARCHIVED' ? '<span style="font-size:9px;color:' + col + ';font-family:\'IBM Plex Mono\',monospace;">discontinued ' + s.last + '</span>' : '';
+    return '<div class="tracking-kpi-card" style="cursor:pointer;" onclick="openFearnMusModal(\'' + k.replace(/'/g, "\\'") + '\')" title="' + escapeHtml(k) + '">' +
+      '<div style="display:flex;justify-content:space-between;gap:4px;align-items:center;margin-bottom:3px;">' + fearnStatusBadge(st) + '<span style="font-size:9px;color:var(--text-muted);font-family:\'IBM Plex Mono\',monospace;">' + escapeHtml(s.type) + '</span></div>' +
+      '<div style="font-size:11px;font-weight:600;color:var(--text-bright);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + escapeHtml(s.route || k) + '</div>' +
+      '<div style="font-size:9px;color:var(--text-muted);margin-bottom:4px;">' + escapeHtml(s.subtype || '') + ' · ' + s.unit + ' · ' + s.n + 'm</div>' +
+      '<svg width="100%" height="32" viewBox="0 0 100 32" preserveAspectRatio="none"><polyline points="' + pts + '" fill="none" stroke="' + col + '" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>' +
+      '<div style="display:flex;justify-content:space-between;font-size:9px;color:var(--text-muted);font-family:\'IBM Plex Mono\',monospace;margin-top:3px;"><span>' + s.first + '→' + s.last + '</span><span style="color:' + prCol + ';">P' + pr.toFixed(0) + '</span></div>' +
+      chip +
+      '</div>';
+  }).join('');
+  wall.innerHTML = html || '<div style="color:var(--text-muted);font-size:12px;grid-column:1/-1;">No series match.</div>';
+  var cnt = document.getElementById('fearnMusCount');
+  if (cnt) cnt.textContent = '· ' + keys.length + ' of ' + Object.keys(labels).filter(function (k) { return labels[k].n >= 3; }).length + ' shown · ACTIVE ' + counts.ACTIVE + ' · STALE ' + counts.STALE + ' · ARCHIVED ' + counts.ARCHIVED + ' (n<3 stubs hidden)';
+}
+function setFearnMusType(t) {
+  FDESK.musType = t;
+  document.querySelectorAll('#fearnMusTypes [data-mtype]').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-mtype') === t); });
+  renderFearnMusWall();
+}
+var _fearnMusDebounce = null;
+function onFearnMusSearch() {
+  clearTimeout(_fearnMusDebounce);
+  _fearnMusDebounce = setTimeout(function () {
+    FDESK.musQ = (document.getElementById('fearnMusSearch') || {}).value || '';
+    renderFearnMusWall();
+  }, 140);
+}
+function openFearnMusModal(key) {
+  var cache = fearnSeriesCache();
+  if (!cache || !cache.labels[key]) return;
+  var s = cache.labels[key], st = fearnStatusOf(s);
+  var modal = document.getElementById('fearnMusModal');
+  if (modal) { modal.style.display = 'flex'; }
+  var t = document.getElementById('fearnMusTitle');
+  if (t) t.textContent = key + ' · ' + fearnStatusOf(s);
+  var chg = s.chg_pct, chgStyle = chg == null ? '' : (chg >= 0 ? 'color:var(--green);' : 'color:var(--red);');
+  var pr = s.pct_rank == null ? 0 : s.pct_rank;
+  var stats = document.getElementById('fearnMusStats');
+  if (stats) stats.innerHTML = [
+    { l: 'Latest (' + s.last + ')', v: Number(s.latest).toLocaleString(undefined, { maximumFractionDigits: 2 }) + ' ' + s.unit, sub: s.subtype + ' · ' + (s.route || '') },
+    { l: 'MoM', v: chg == null ? '—' : ((chg >= 0 ? '+' : '') + chg.toFixed(2) + '%'), sub: '', style: chgStyle },
+    { l: 'n / span', v: s.n + ' months', sub: s.first + ' → ' + s.last },
+    { l: 'ATH', v: Number(s.ath).toLocaleString(undefined, { maximumFractionDigits: 2 }), sub: s.ath_date || '' },
+    { l: 'ATL', v: Number(s.atl).toLocaleString(undefined, { maximumFractionDigits: 2 }), sub: '' },
+    { l: 'Percentile', v: pr.toFixed(1) + 'th', sub: 'status ' + st }
+  ].map(function (c) {
+    return '<div class="tracking-kpi-card"><div class="tracking-kpi-label">' + c.l + '</div>' +
+      '<div class="tracking-kpi-val" style="font-size:18px;' + (c.style || '') + '">' + c.v + '</div>' +
+      '<div class="tracking-kpi-sub">' + escapeHtml(String(c.sub || '')) + '</div></div>';
+  }).join('');
+  var canvas = document.getElementById('fearnMusChart');
+  if (canvas && typeof Chart !== 'undefined') {
+    if (FDESK.musChart) { FDESK.musChart.destroy(); FDESK.musChart = null; }
+    FDESK.musChart = new Chart(canvas.getContext('2d'), {
+      type: 'line',
+      data: {
+        labels: s.m.map(function (p) { return p[0]; }),
+        datasets: [{ label: key + ' (' + s.unit + ')', data: s.m.map(function (p) { return p[1]; }), borderColor: '#4d9aff', backgroundColor: '#4d9aff15', fill: true, tension: 0.2, borderWidth: 2, pointRadius: 0, pointHoverRadius: 4 }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { labels: { color: '#d4dce8', font: { size: 10 } } } },
+        scales: { x: { grid: { color: 'rgba(28,35,51,0.4)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 }, maxTicksLimit: 14 } }, y: { grid: { color: 'rgba(28,35,51,0.5)' }, ticks: { color: '#7a8494', font: { family: 'IBM Plex Mono', size: 10 } } } }
+      }
+    });
+  }
+  var note = document.getElementById('fearnMusNote');
+  if (note) note.textContent = st === 'ARCHIVED' ? ('Discontinued — last print ' + s.last + ' (archived >365d vs file max ' + (FDESK.maxym || '') + '). Full label: ' + key) : ('Full label: ' + key + ' · Source: fearnpulse monthly cache');
+}
+function closeFearnMusModal() {
+  var modal = document.getElementById('fearnMusModal');
+  if (modal) modal.style.display = 'none';
+  if (FDESK.musChart) { FDESK.musChart.destroy(); FDESK.musChart = null; }
+}
+
+// ---------- wiring into the tab renderer ----------
+function renderFearnDesk() {
+  initFearnSubNav();
+  if (!FDESK.secInit[FDESK.sec]) renderFearnSection(FDESK.sec);
+}
+
+// =====================================================================
 // FEARNLEYS DESK TAB (Wave-2): full 294-series browser + broker voice + backtest lab
 // =====================================================================
 var FEARN_STATE = { type: 'TANK', label: null, range: 'max', voiceType: 'all', voiceQ: '', init: false, archive: null, archiveLoading: false };
@@ -40817,36 +41877,8 @@ function fearnSeriesCache() {
 
 function renderFearnleysTab() {
   if (!DATA.loaded) return;
-  var cache = fearnSeriesCache();
-  var cov = document.getElementById('fearnDeskCoverage');
-  if (cov) {
-    cov.textContent = cache ? ('· ' + cache.meta.labels_cached + ' series / ' + cache.meta.catalog_ids + ' catalog ids · ' + cache.meta.monthly_points.toLocaleString() + ' monthly pts') : '· cache unavailable';
-  }
-  if (!cache) return;
-  if (!FEARN_STATE.init) {
-    var types = {};
-    Object.keys(cache.labels).forEach(function (l) { types[cache.labels[l].type] = true; });
-    var order = ['TANK', 'BULK', 'LNG', 'LPG', 'NEWBUILDING', 'S&P'];
-    var pills = Object.keys(types).sort(function (a, b) {
-      var ia = order.indexOf(a), ib = order.indexOf(b);
-      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
-    });
-    if (pills.indexOf('TANK') < 0) pills.unshift('TANK');
-    var pillHtml = pills.map(function (t) {
-      var n = Object.keys(cache.labels).filter(function (l) { return cache.labels[l].type === t; }).length;
-      return '<button class="tracking-status-btn' + (t === FEARN_STATE.type ? ' active' : '') + '" data-ftype="' + t + '" onclick="setFearnType(\'' + t + '\')">' + t + ' (' + n + ')</button>';
-    }).join('');
-    document.getElementById('fearnTypePills').innerHTML = pillHtml;
-    // default label: longest-history series of default desk
-    FEARN_STATE.label = fearnDefaultLabel(cache, FEARN_STATE.type);
-    FEARN_STATE.init = true;
-  }
-  populateFearnLabels(cache);
-  renderFearnStats(cache);
-  renderFearnMainChart(cache);
-  initFearnVoiceFilters();
-  renderFearnVoice();
-  renderFearnBacktest();
+  initFearnSubNav();
+  switchFearnSection(FDESK.sec);
 }
 
 function fearnDefaultLabel(cache, type) {
