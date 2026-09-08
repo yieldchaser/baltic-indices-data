@@ -5067,6 +5067,12 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      min-height: 24px;
+    }
+    .bunkers-drawer-title-wrap h3 #bunkerChartPortTitle:empty::before {
+      content: 'Select a port';
+      color: var(--text-muted);
+      font-weight: 400;
     }
     .bunkers-drawer-title-wrap .bunkers-drawer-sub {
       font-size: 11px;
@@ -5130,16 +5136,18 @@
       font-family: 'IBM Plex Mono', monospace;
     }
     .bix-strip {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 10px;
-      flex-wrap: wrap;
+    }
+    @media (max-width: 1100px) {
+      .bix-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     .bix-chip-group {
       display: flex;
       gap: 6px;
       align-items: stretch;
-      flex: 1;
-      min-width: 200px;
+      min-width: 0;
     }
     .bix-chip-ix {
       font-family: 'IBM Plex Mono', monospace;
@@ -5151,23 +5159,25 @@
       transform: rotate(180deg);
       text-align: center;
       min-width: 14px;
+      max-width: 16px;
+      overflow: hidden;
     }
     .bix-chip {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 4px;
       padding: 5px 8px;
-      flex: 1;
-      min-width: 96px;
+      min-width: 0;
       cursor: help;
       display: flex;
       flex-direction: column;
       gap: 1px;
+      overflow: hidden;
     }
+    .bix-p { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 700; color: #fff; white-space: nowrap; }
+    .bix-d { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .bix-chip:hover { border-color: #a371f7; }
     .bix-g { font-size: 9px; color: var(--text-muted); font-weight: 700; letter-spacing: 0.05em; }
-    .bix-p { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 700; color: #fff; }
-    .bix-d { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text-muted); }
     .bix-d.up { color: var(--red); }
     .bix-d.dn { color: var(--green); }
     .bix-chart-box { height: 110px; position: relative; margin-top: 8px; }
@@ -14432,6 +14442,7 @@ if (intelTabsContainer) {
                   <option value="Piraeus">Piraeus</option>
                   <option value="Istanbul">Istanbul</option>
                   <option value="Las Palmas">Las Palmas</option>
+                  <option value="Barcelona">Barcelona</option>
                   <option value="Durban">Durban</option>
                   <option value="Colombo">Colombo</option>
                   <option value="Vancouver">Vancouver</option>
@@ -36912,7 +36923,9 @@ function openChokepointAnalytics(chokepointId) {
   }
   if (noteEl) {
     if (cp.id === 'bab_el_mandeb' || cp.id === 'suez_canal') {
-      noteEl.innerHTML = '<strong>Red Sea Rerouting Crisis</strong>: Houthi strikes force Asia-Europe vessels to bypass Suez/Bab el-Mandeb, steaming around the Cape of Good Hope (+3,500 NM, +14.5 days).';
+      var daysTxt = trackingReroutingTelemetry().daysAdded;
+      var daysStr = (daysTxt != null) ? ('~+' + daysTxt.toFixed(1) + ' days (editorial_estimate_diagnostic)') : '+10-14 days (range estimate)';
+      noteEl.innerHTML = '<strong>Red Sea Rerouting Crisis</strong>: Houthi strikes force Asia-Europe vessels to bypass Suez/Bab el-Mandeb, steaming around the Cape of Good Hope (' + daysStr + ').';
     } else if (cp.id === 'cape_good_hope') {
       noteEl.innerHTML = '<strong>Cape Rerouting Surge</strong>: Circumnavigating Africa absorbs excess fleet capacity, expanding global ton-mile demand and lifting container and tanker TCE earnings.';
     } else if (cp.id === 'panama_canal') {
@@ -40641,6 +40654,30 @@ function renderBunkerMainChart() {
   var color = '#3fb950';
   var labelName = 'VLSFO Spot ($/MT)';
 
+  // Grade availability guard: if the selected grade has no quotes for this
+  // port's series, fall back to the best-covered grade and say so (never an
+  // empty/null-only series — that rendered as a blank $0-$1.2 chart).
+  function countNonNull(rows, key) {
+    return rows.filter(function(r) { return r && r[key] != null; }).length;
+  }
+  var gradeKeys = { vlsfo: 'vlsfo', mgo: 'mgo', hsfo: 'hsfo', hi5: 'hi5', bio: 'bio' };
+  var gKey = gradeKeys[grade] || 'vlsfo';
+  var gradeFallback = null;
+  if (series.length && countNonNull(series, gKey) === 0) {
+    var prefs = grade === 'vlsfo' ? ['hsfo', 'mgo'] : (grade === 'mgo' ? ['vlsfo', 'hsfo'] : ['vlsfo', 'hsfo']);
+    for (var pi = 0; pi < prefs.length; pi++) {
+      if (countNonNull(series, prefs[pi]) > 0) { gradeFallback = prefs[pi]; break; }
+    }
+    if (gradeFallback) {
+      gKey = gradeFallback;
+      grade = gradeFallback;
+      if (gradeFallback === 'vlsfo') { color = '#3fb950'; labelName = 'VLSFO (0.5% S)'; }
+      else if (gradeFallback === 'mgo') { color = '#e3b341'; labelName = 'MGO (0.1% S)'; }
+      else { color = '#4d9aff'; labelName = 'HSFO (IFO380)'; }
+    }
+  }
+  var gradeFallbackNote = gradeFallback ? ('<span style="color:#7a8494;"> [selected grade has no quotes for this port — showing best-covered grade]</span>') : '';
+
   if (grade === 'vlsfo') {
     data = series.map(function(r) { return r.vlsfo; });
     color = '#3fb950';
@@ -40676,7 +40713,7 @@ function renderBunkerMainChart() {
     } else if (hasDaily) {
       subEl.innerHTML = '<span style="color:#a371f7; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[MONTHLY MACRO]</span> 3-Year Historical Fuel Series (2023–2026) · Ship &amp; Bunker Benchmark Archive · Daily available via 6M/1Y (' + nDailyPorts + '/' + nAllPorts + ' ports)';
     } else {
-      subEl.innerHTML = '<span style="color:#e3b341; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[MONTHLY FALLBACK · no daily series for ' + escapeHtml(bunkersChartPort) + ' — ' + (nAllPorts - nDailyPorts) + '/' + nAllPorts + ' ports monthly-only]</span> 3-Year Monthly Series · Ship &amp; Bunker Benchmark Archive';
+      subEl.innerHTML = '<span style="color:#e3b341; font-weight:600; font-family:\'IBM Plex Mono\', monospace;">[MONTHLY FALLBACK · no daily series for ' + escapeHtml(bunkersChartPort) + ' — ' + (nAllPorts - nDailyPorts) + '/' + nAllPorts + ' ports monthly-only]</span> 3-Year Monthly Series · Ship &amp; Bunker Benchmark Archive' + gradeFallbackNote;
     }
   }
 
