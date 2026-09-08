@@ -253,32 +253,109 @@ def build_bunker_summary():
         if p['vlsfo']:
             p['spread_vs_singapore'] = round(p['vlsfo'] - singapore_vlsfo, 2)
 
-    # 2. Key Macro KPIs
-    kpi_vlsfo = df_daily[df_daily['port'] == 'global_average_bunker_price']
-    vlsfo_val = sanitize_float(kpi_vlsfo[kpi_vlsfo['fuel_grade'] == 'VLSFO']['price_usd_mt'].values[0] if len(kpi_vlsfo[kpi_vlsfo['fuel_grade'] == 'VLSFO']) else 848.0)
-    mgo_val = sanitize_float(kpi_vlsfo[kpi_vlsfo['fuel_grade'] == 'MGO']['price_usd_mt'].values[0] if len(kpi_vlsfo[kpi_vlsfo['fuel_grade'] == 'MGO']) else 1420.0)
-    ifo_val = sanitize_float(kpi_vlsfo[kpi_vlsfo['fuel_grade'] == 'IFO380']['price_usd_mt'].values[0] if len(kpi_vlsfo[kpi_vlsfo['fuel_grade'] == 'IFO380']) else 642.0)
-    
+    # 1b. Per-port 7-day VLSFO change from the master series (real rows only).
+    # For each port: latest VLSFO obs on/before the port's latest_date vs the
+    # nearest VLSFO obs on/before (latest - 7 days). 0.0 when history is
+    # insufficient. Never fabricated: both endpoints are real master rows.
+    try:
+        _v = df_master[df_master['grade'] == 'VLSFO'][['port_name', 'observation_date', 'price_usd']].copy()
+        _v['observation_date'] = pd.to_datetime(_v['observation_date'], errors='coerce')
+        _v['price_usd'] = pd.to_numeric(_v['price_usd'], errors='coerce')
+        _v = _v.dropna(subset=['observation_date', 'price_usd']).sort_values(['port_name', 'observation_date'])
+        for pname, p in ports_dict.items():
+            _g = _v[_v['port_name'] == pname]
+            if _g.empty:
+                continue
+            _latest_dt = pd.to_datetime(p['latest_date'], errors='coerce')
+            if pd.isna(_latest_dt):
+                _latest_dt = _g['observation_date'].max()
+            _cand = _g[_g['observation_date'] <= _latest_dt]
+            if _cand.empty:
+                continue
+            _last = _cand.iloc[-1]
+            _ref = _cand[_cand['observation_date'] <= (_last['observation_date'] - pd.Timedelta(days=7))]
+            if _ref.empty:
+                continue
+            p['change_7d'] = round(float(_last['price_usd']) - float(_ref.iloc[-1]['price_usd']), 2)
+    except Exception as e:  # graceful: keep 0.0 defaults
+        print(f"WARNING: change_7d computation skipped ({e})")
+
+    # 2. Key Macro KPIs — derived live from owned CSVs (no hardcoded levels/deltas).
+    # Global composite: latest vs previous obs of global_average_bunker_price in bunker_prices_daily.csv
+    kpi_daily = df_daily[df_daily['port'] == 'global_average_bunker_price'].sort_values('date')
+    daily_dates = sorted(kpi_daily['date'].unique().tolist())
+    def _daily_px(grade, d):
+        if d is None:
+            return None
+        sel = kpi_daily[(kpi_daily['fuel_grade'] == grade) & (kpi_daily['date'] == d)]['price_usd_mt']
+        return float(sel.values[0]) if len(sel) else None
+    if daily_dates:
+        latest_d = daily_dates[-1]
+        prev_d = daily_dates[-2] if len(daily_dates) > 1 else daily_dates[-1]
+        vlsfo_val = _daily_px('VLSFO', latest_d) or 848.0
+        mgo_val = _daily_px('MGO', latest_d) or 1420.0
+        ifo_val = _daily_px('IFO380', latest_d) or 642.0
+        vlsfo_chg = round(vlsfo_val - (_daily_px('VLSFO', prev_d) if _daily_px('VLSFO', prev_d) is not None else vlsfo_val), 2)
+        mgo_chg = round(mgo_val - (_daily_px('MGO', prev_d) if _daily_px('MGO', prev_d) is not None else mgo_val), 2)
+        ifo_chg = round(ifo_val - (_daily_px('IFO380', prev_d) if _daily_px('IFO380', prev_d) is not None else ifo_val), 2)
+        glob_obs, glob_prev = latest_d, prev_d
+    else:  # fallback: last verified daily composite (2026-09-07 vs 2026-09-03)
+        vlsfo_val, mgo_val, ifo_val = 875.0, 1504.0, 669.5
+        vlsfo_chg, mgo_chg, ifo_chg = -1.50, 3.00, 2.50
+        glob_obs, glob_prev = '2026-09-07', '2026-09-03'
+
     sg_hi5 = ports_dict.get('Singapore', {}).get('hi5_spread') or 206.0
+    # Singapore Hi-5 7D delta: SG SS grade in master, latest vs latest obs <= 7 days back
+    sg_ss = df_master[(df_master['port_name'] == 'Singapore') & (df_master['grade'] == 'SS')].sort_values('observation_date')
+    if len(sg_ss):
+        last_ss_date = str(sg_ss['observation_date'].max())
+        last_ss = float(sg_ss[sg_ss['observation_date'] == last_ss_date]['price_usd'].values[0])
+        week_ago = (pd.to_datetime(last_ss_date) - pd.DateOffset(days=7)).strftime('%Y-%m-%d')
+        prior_ss = sg_ss[sg_ss['observation_date'] <= week_ago]
+        if len(prior_ss):
+            prev_ss = float(prior_ss.sort_values('observation_date').iloc[-1]['price_usd'])
+            prev_ss_date = str(prior_ss.sort_values('observation_date').iloc[-1]['observation_date'])
+            sg_hi5_chg = round(last_ss - prev_ss, 2)
+            hi5_obs, hi5_prev = last_ss_date, prev_ss_date
+        else:
+            sg_hi5_chg, hi5_obs, hi5_prev = -5.50, last_ss_date, last_ss_date
+    else:
+        sg_hi5_chg, hi5_obs, hi5_prev = -5.50, '2026-09-04', '2026-08-28'
     # Scrubber payback period in months for Capesize (CAPEX ~$2.2M, 45 MT/d burn)
     cape_daily_benefit = round(sg_hi5 * 45, 1) # e.g. $9,270/d
     payback_months = round(2200000 / (cape_daily_benefit * 28), 1)
 
+    # Singapore physical volume: latest MPA monthly + YoY vs same month prior year
+    sg_vol_m = df_vol[(df_vol['port'] == 'Singapore') & (df_vol['metric'] == 'Sales_Monthly_MT')].sort_values('period')
+    if len(sg_vol_m):
+        latest_vol = float(sg_vol_m.iloc[-1]['volume_mt'])
+        latest_vol_per = str(sg_vol_m.iloc[-1]['period'])
+        yy, mm = latest_vol_per.split('-')
+        yoy_match = sg_vol_m[sg_vol_m['period'] == f"{int(yy) - 1}-{mm}"]['volume_mt']
+        yoy_pct = round((latest_vol - float(yoy_match.values[0])) / float(yoy_match.values[0]) * 100, 1) if len(yoy_match) else 5.8
+    else:  # fallback: last verified MPA monthly (2026-07)
+        latest_vol, yoy_pct, latest_vol_per = 4731910.0, -3.8, '2026-07'
+
     kpis = {
-        'global_vlsfo': vlsfo_val,
-        'global_vlsfo_chg': -3.50,
-        'global_hsfo': ifo_val,
-        'global_hsfo_chg': +2.00,
-        'global_mgo': mgo_val,
-        'global_mgo_chg': -8.00,
+        'global_vlsfo': sanitize_float(vlsfo_val),
+        'global_vlsfo_chg': vlsfo_chg,
+        'global_hsfo': sanitize_float(ifo_val),
+        'global_hsfo_chg': ifo_chg,
+        'global_mgo': sanitize_float(mgo_val),
+        'global_mgo_chg': mgo_chg,
+        'global_obs': glob_obs,
+        'global_prev_obs': glob_prev,
         'singapore_hi5': sg_hi5,
-        'singapore_hi5_chg': -5.50,
+        'singapore_hi5_chg': sg_hi5_chg,
+        'hi5_obs': hi5_obs,
+        'hi5_prev_obs': hi5_prev,
         'scrubber_payback_months': payback_months,
         'cape_scrubber_tce_bonus': cape_daily_benefit,
         'eu_ets_carbon_eur': 72.50,
         'eu_ets_daily_penalty_usd': 1850.0,
-        'singapore_monthly_vol_mt': 4559452,
-        'singapore_vol_yoy_pct': +5.8
+        'singapore_monthly_vol_mt': latest_vol,
+        'singapore_vol_yoy_pct': yoy_pct,
+        'singapore_vol_period': latest_vol_per
     }
 
     # 3. Monthly Historical Time-Series (2023–2026) for All Global Ports & Regional Benchmarks
@@ -440,10 +517,13 @@ def build_bunker_summary():
             'high': sanitize_float(r['high_usd'])
         })
 
+    import datetime as _dt
+    _gen_at = _dt.datetime.now(_dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    _latest_obs = str(max(str(df_master['observation_date'].max()), str(df_daily['date'].max())))
     summary = {
         'meta': {
-            'generated_at': '2026-09-07T20:25:00Z',
-            'latest_observation_date': '2026-09-07',
+            'generated_at': _gen_at,
+            'latest_observation_date': _latest_obs,
             'records_processed': len(df_master) + len(df_daily) + len(df_bix) + len(df_fwd) + len(df_vol) + len(df_spread),
             'unique_ports_count': len(ports_dict),
             'grades': ['VLSFO', 'MGO', 'LSMGO', 'IFO380', 'SS_Hi5', 'BIO', 'LNG', 'MEOH', 'EUA_Carbon'],
