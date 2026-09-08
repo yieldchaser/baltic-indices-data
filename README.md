@@ -796,7 +796,7 @@ python scripts/update_etf_holdings.py
 # 4. Verify Cryptographic SHA-256 Provenance & Production Artifact Integrity
 python scripts/verify_production_artifact_integrity.py
 
-# 5. Run Full Automated Test Suites (85/85 Passed)
+# 5. Run Full Automated Test Suites (87/87 Passed)
 python scratch/run_all_test_suites.py
 python scripts/test_decision_ticket_workflow.py
 
